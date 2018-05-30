@@ -1,0 +1,50 @@
+digraph G {
+ratio="fill";
+ size="8.3,11.7!";
+ margin=0;
+rankdir=LR;
+ graph [pad="0.5", ranksep="0.525", nodesep="0.05"];
+splines=line;
+node [shape=box, style=rounded, shadow_offset=7, shadow_blur=5,width=2,height=0.05];
+
+all  -> Assignments;
+        Assignments -> Accounts;
+                       Accounts -> "Futuresystems,\nGithub,\nChameleoncloud,\nPiazza";
+                       Accounts -> Survey;
+        Assignments -> "Writing Assignments";
+                       "Writing Assignments" -> Biography;
+                       "Writing Assignments" -> Plagiarizm;
+                       "Writing Assignments" -> Abstract;
+                       "Writing Assignments" -> Chapter;                       
+                       "Writing Assignments" -> "Project Report";                                                                     
+        Assignments -> "Prg Assignment";
+                       "Prg Assignment" -> REST;
+                       "Prg Assignment" -> Project;
+all  -> "Programming";
+        "Programming" -> Python;
+                                Python -> Language;
+                                Python -> pyenv;
+                                Python -> pip;
+        "Programming" -> "Advanced Python";                                
+                                "Advanced Python" -> "Numpy";
+                                "Advanced Python" -> "scipy";
+                                "Advanced Python" -> "scikit learn";
+                                "Advanced Python" -> "OpenCV";
+                                "Advanced Python" -> "FaceDetection";
+                                "Advanced Python" -> "Fingerprint";
+                                "Advanced Python" -> "CMD5";
+        "Programming" -> "Linux";
+                     "Linux" -> commands;
+                     "Linux" -> Makefile;
+                     "Linux" -> ssh;                
+all -> "Scientific Writing";
+        "Scientific Writing" -> Tutorial -> "markdown";
+                                Tutorial -> "pandoc";
+                                Tutorial -> "(MacDown)";                                
+        "Scientific Writing" -> "LaTeX";
+                                "LaTeX" -> bibtex;
+                                "LaTeX" -> jabref;
+                                "LaTeX" -> emacs;
+                                "LaTeX" -> pdflatex;
+
+}

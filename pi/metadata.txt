@@ -1,0 +1,13 @@
+---
+title:
+- type: main
+  text: Cloud Clusters Class Handbook, Raspberry Pi
+creator:
+- role: editor
+  text: Editor Gregor von Laszewski
+description: Practical creation of cloud clusters for Raspberry Pi's
+rights: (c) Gregor von Laszewski, 2018
+language: en-US
+stylesheet: template/epub.css
+cover-image: cover/cover.jpg
+...

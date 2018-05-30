@@ -1,0 +1,121 @@
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: normal;
+  src:url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: bold;
+  src:url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: x-small;  
+  src:url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  src:url("../fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  src:url("../fonts/Oswald-Bold.ttf");
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: lighter;
+  src:url("../fonts/Oswald-Light.ttf");
+}
+
+body {
+  margin: 1%;
+  text-align: justify;
+  font-family: OpenSans;
+  font-size: x-small;  
+  line-height: 1.25;
+}
+pre {
+    font-family: monospace;
+    font-size: xx-small;
+    background-color: rgb(242, 242, 242);
+}
+code {
+    font-family: monospace;
+    font-size: xx-small;
+    background-color: rgb(242, 242, 242);
+}
+h3 { text-align: left; }
+h4 { text-align: left; }
+h5 { text-align: left; }
+h6 { text-align: left; }
+h1 {
+    text-align: left;
+    font-family: OpenSans;
+    border-bottom: 2px solid black;
+    page-break-before: always;
+}
+h2 {
+    text-align: left;    
+    font-family: OpenSans;
+    border-bottom: 1px solid black;
+}
+h3, h4, h5, h6 {
+    font-family: OpenSans;
+}
+h1.title { }
+h2.author { }
+h3.date { }
+ol.toc { padding: 0; margin-left: 1em; }
+ol.toc li { list-style-type: none; margin: 0; padding: 0; }
+
+p { margin-left: 5%; }
+ul { margin-left: 5%; }
+ol { margin-left: 5%; }
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    border-spacing: 0;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+table th {
+    padding: 3px 10px;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+table td {
+    padding: 3px 10px;
+    border-top: none;
+    border-left: none;
+#    border-bottom: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+blockquote { 
+	font-style: italic;
+	border-left: 4px solid rgb(242, 242, 242);
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.smalltable {
+    font-size: 50%;
+}

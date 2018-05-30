@@ -1,0 +1,63 @@
+
+  [
+
+    [Prerequisits Review
+       [Python
+          [Language, \ngreen]
+          [pyenv\\
+           pip, \ngreen]
+       ]
+       [Advanced Python
+          [Numpy\\
+           Scipy\\
+           OpenCV, \ngrey]
+          [Face Detection
+           Fingerprint, \ngrey]
+          [CMD5, \ngrey]
+       ]
+       [ssh
+          [Keys, \ngreen]
+       ]
+       [Linux
+          [Commands, \ngreen]
+       ]
+    ]
+    [IaaS
+       [VM
+           [Virtual Box, \ngreen]
+           [Openstack, \ngreen]
+           [QEMU, \ngrey]
+           [KVM, \ngrey]
+       ]
+       [Containe
+           [Docker\\
+            Docker Swarm\\
+            Kubernetes, \ngreen]
+       ]
+    ]
+    [PaaS
+        [MapReduce
+           [Hadoop\\
+            Spark, \ngreen]
+           [Harp\\
+            Twister, \ngreen]
+        ]
+        [Servers
+           [REST, \ngreen]
+           [MQTT, \ngreen]
+        ]
+    ]
+    [SaaS
+        [e616\\
+         Application
+           [Physics, \nwhite]
+           [Helath Care, \nwhite]
+           [Life Style, \nwhite]
+           [Sensors, \nwhite]
+           [Sports, \nwhite]
+           [Web Search \\
+            Text Minining, \nwhite]
+        ]
+    ]
+  ]
+}

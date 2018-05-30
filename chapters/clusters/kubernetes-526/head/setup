@@ -1,0 +1,36 @@
+#!/bin/sh
+
+INTERNAL="eth0"
+EXTERNAL="wlan0"
+
+echo "Installing Dependencies ..."
+apt-get update
+apt-get install -qy dnsmasq clusterssh iptables-persistent
+
+echo "Setting Up Head Node ..."
+
+echo "Creating Static IP ..."
+\cp -n /etc/dhcpcd.conf /etc/dhcpcd.conf.old
+\cp dhcpcd.conf /etc/dhcpcd.conf
+
+echo "Configuring DHCP Server ..."
+\cp -n /etc/dnsmasq.conf /etc/dnsmasq.conf.old
+\cp dnsmasq.conf /etc/dnsmasq.conf
+
+echo "Setting Up Cluster SSH .."
+\cp clusters /etc/clusters
+
+echo "Setup NAT Forwarding ..."
+# uncomment ipv4 fowarding
+sed -i -e "/net.ipv4.ip_forward=1/s/^#//" /etc/sysctl.conf
+
+echo "Creating IP Tables ..."
+sudo iptables -t nat -A POSTROUTING -o $EXTERNAL -j MASQUERADE
+sudo iptables -t nat -A POSTROUTING -o $INTERNAL -j MASQUERADE
+sudo iptables -A FORWARD -i $INTERNAL -o $EXTERNAL -j ACCEPT #-m state --state RELATED,ESTABLISHED  #TODO remove if unnecessary
+sudo iptables -A FORWARD -i $EXTERNAL -o $INTERNAL -j ACCEPT
+# make rules permanent
+iptables-save > /etc/iptables/rules.v4
+
+###TODO SSH keys
+###TODO update, install software
