@@ -1,0 +1,4 @@
+apiVersion: kubeadm.k8s.io/v1alpha1
+kind: MasterConfiguration
+controllerManagerExtraArgs:
+  pod-eviction-timeout: 10s

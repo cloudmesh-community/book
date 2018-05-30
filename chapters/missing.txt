@@ -1,0 +1,19 @@
+all in in and
+doc -> latex
+
+art
+bigdata
+cloud
+data
+faas
+hadoop
+i524
+icloud
+mapreduce
+new
+os
+preface
+
+
+
+

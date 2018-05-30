@@ -1,0 +1,30 @@
+digraph G {
+ratio="fill";
+ margin=0;
+rankdir=LR;
+ graph [pad="0.5", ranksep="0.525", nodesep="0.05"];
+splines=line;
+node [shape=box, style=rounded, shadow_offset=7, shadow_blur=5,width=2,height=0.05];
+
+E516 -> "IaaS";
+        "IaaS" -> VM;
+                  VM -> "Virtual Box";
+                  VM -> "OpenStack";
+                  VM -> "QEMU";
+                  VM -> "KVM";
+                  VM -> "AWS";
+                  VM -> "Azure";
+                  VM -> "Google";                                                      
+        "IaaS" -> Container;
+                  Container -> Docker;
+                  Container -> "Docker Swarm";
+                  Container -> "Kubernetes";
+E516 -> PaaS;
+        PaaS -> MapReduce;
+                MapReduce -> "Hadoop\nSpark";
+        PaaS ->        Servers;
+                Servers -> REST;
+                Servers -> MQTT;
+                Servers -> graphQL;                                
+
+}

@@ -1,0 +1,27 @@
+digraph G {
+ratio="fill";
+ margin=0;
+rankdir=LR;
+ graph [pad="0.5", ranksep="0.525", nodesep="0.05"];
+splines=line;
+node [shape=box, style=rounded, shadow_offset=7, shadow_blur=5,width=2,height=0.05];
+
+i523 -> "IaaS";
+        "IaaS" -> VM;
+                  VM -> "Virtual Box";
+                  VM -> "OpenStack";
+i523 -> PaaS;
+        PaaS -> MapReduce;
+                MapReduce -> "Hadoop\nSpark";
+        PaaS ->        Servers;
+                Servers -> REST;
+i523 -> SaaS;
+        SaaS -> Applications;
+                Applications -> Physics;
+                Applications -> "Helath Care";
+                Applications -> "Life Style";
+                Applications -> Sensors;
+                Applications -> Sports;
+                Applications -> "Web Search\nText Minining"
+
+}
