@@ -376,3 +376,10 @@ dot:
 	dot -Tpng ../chapters/class/graph-i523.dot -o ../chapters/class/images/graph-i523.png
 	dot -Tpng ../chapters/class/graph-i524.dot -o ../chapters/class/images/graph-i524.png
 	dot -Tpng ../chapters/class/graph-e516.dot -o ../chapters/class/images/graph-e516.png
+
+publish: epub
+	cp dest/$(FILENAME).epub ..
+	git add ../$(FILENAME).epub
+	git commit -m "update epub" ../$(FILENAME).epub
+	git push
+
