@@ -8,7 +8,7 @@ ifeq ($(UNAME), Darwin)
 OPEN_EPUB=open
 endif
 ifeq ($(UNAME), Linux)
-OPEN_EPUB=calibre
+OPEN_EPUB=xdg-open
 endif
 
 ######################################################################
