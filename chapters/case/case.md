@@ -89,6 +89,20 @@ What will you check before pressing the start button to ensure safety?
 
 ![](images/case-a.png)
 
+## Connections
+
+Some ideas
+
+* <http://www.instructables.com/id/How-to-Make-Anything-Using-Acrylic-and-Machine-Sc/>
+* <http://skpang.co.uk/blog/archives/152>
+* <http://www.uugear.com/product/acrylic-case-for-zero4u-and-raspberry-pi-zero-clear/>
+* <https://www.phidgets.com/docs/T-Slot_Primer>
+* <https://www.modmypi.com/blog/piot-relay-zero-case-assembly-instructions>
+
+WOuld be good for lego technic if in right distance and right height
+
+* <https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9048>
+
 ## Resources
 
 * Fusion 360 <https://www.autodesk.com/products/fusion-360/overview>
