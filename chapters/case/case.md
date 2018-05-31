@@ -13,6 +13,17 @@ section for case documentation
 
 * <https://www.autodesk.com/products/fusion-360/overview>
 
+Can freecad or a similar tool also be used?
+
+* <https://www.freecadweb.org/>
+  * documentation <https://www.freecadweb.org/wiki/Main_Page>
+
+A better approach may acy=tually to use 
+
+* <http://www.openscad.org/>
+
+this may require programming, but it may be easier to do as we have so view things to design
+
 ### Cutting: Using Fusion 360 and a Laser Cutter
 
 ### Preparing and Using the Laser Cutter
