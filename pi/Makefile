@@ -1,4 +1,15 @@
+
 FILENAME=vonLaszewski-cloud-cluster-pi
+
+OS=$(shell uname)
+UNAME := $(shell uname)
+
+ifeq ($(UNAME), Darwin)
+OPEN_EPUB=open
+endif
+ifeq ($(UNAME), Linux)
+OPEN_EPUB=calibre
+endif
 
 ######################################################################
 # BEGIN BOOK CLASS
@@ -352,7 +363,7 @@ list:
 	@find . -name "*.md"	| sed -e 's/^/ /' | sed 's/$$/\\/'
 
 view:
-	open dest/$(FILENAME).epub
+	$(OPEN_EPUB) dest/$(FILENAME).epub
 
 todo:
 	../bin/todo.py > dest/todo.md
