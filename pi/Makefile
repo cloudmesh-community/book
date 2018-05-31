@@ -306,7 +306,7 @@ epub: dot refernces todo
 	rsync -r cover dest
 	rsync -r ../template dest
 	rsync -r ../template/fonts dest
-	rsync -r ../chapters/images dest/chapters
+	rsync -r ../chapters dest
 	../bin/markup-all.py
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md

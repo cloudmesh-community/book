@@ -6,6 +6,8 @@ from pprint import pprint
 
 import fnmatch
 
+gitbase = "https://github.com/cloudmesh-community/book/edit/master/chapter/"
+
 def mkdir_p(newdir):
     """works the way a good mkdir should :)
         - already exists, silently complete
@@ -46,7 +48,7 @@ def convert(filename):
     with open(filename, 'r') as f:
         content = f.read()
 
-    link = '[[:cloud:](https://github.com/cloudmesh/book/edit/master/cloud-clusters/' + filename + ')]{style="float:right"}'
+    link = '[[:cloud:](' + gitbase + filename + ')]{style="float:right"}'
     gitcoderoot = 'https://github.com/cloudmesh/book/tree/master/examples'
     lines = content.split("\n")
     if "{github}" not in lines[0]:
