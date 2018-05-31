@@ -62,3 +62,9 @@ It has the following Features:
 Detailed information obout it are avialable at
 
 * <https://www.raspberrypi.org/documentation/hardware/raspberrypi/README.md>
+
+## Links
+
+Usefull information about Raspberry Pi:
+
+* <https://www.raspberrypi.org/>
