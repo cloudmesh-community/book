@@ -21,6 +21,7 @@ Can freecad or a similar tool also be used?
 A better approach may acy=tually to use 
 
 * <http://www.openscad.org/>
+* <http://www.openscad.org/cheatsheet/>
 * <https://github.com/RigacciOrg/openscad-rpi-library>
 * <https://www.youtube.com/watch?v=WQd5db9lsQk>
 
@@ -81,6 +82,12 @@ f. An exhaust warning will appear. Select OK. The job will start.
 Questions raised:
 What is the importance of setting cutting parameters?
 What will you check before pressing the start button to ensure safety?
+
+## First case
+
+[scad file](images/case-a.scad)
+
+![](images/case-a.png)
 
 ## Resources
 
