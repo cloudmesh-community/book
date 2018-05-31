@@ -4,26 +4,47 @@ TODO: look ad word document.  reformat this and make sure to put in relevant inf
 
 section for case documentation
 
-Designing in CAD for Laser 
+* material based on McKay, modified ...
+* do not plagiarize
 
-Cutting: Using Fusion 360 and a Laser Cutter
+### Designing in CAD for Laser 
 
-Preparing and Using the Laser Cutter
+### Fusion 360
+
+* <https://www.autodesk.com/products/fusion-360/overview>
+
+### Cutting: Using Fusion 360 and a Laser Cutter
+
+### Preparing and Using the Laser Cutter
+
 Turning on laser cutter
+
 Instructor demonstrates how to turn the laser cutter on and carry out other preparations to learners while operating the laser cutter.
-a. Turnthelasercutteron
-Use key to turn on the laser cutter.
-b. Turning on exhaust fan
-1) Turning the exhaust fan on
-The fan is a separately switched unit.
-Turn on the switch on the wall next to the laser cutter.
-Question is raised: What is the possible risk of not ensuring the exhaust fan is running during laser cutter operation?
-c. Puttingcuttingmaterialontothelasercutterbed
-The instructor puts the cutting material onto the laser cutter bed.
-Question is raised: What will you do if the cutting material is smaller than the honeycomb bed? How will you place it?
+
+1. Turn the laser cutteron. 
+
+   Use key to turn on the laser cutter.
+
+3. Turning the exhaust fan on.  T
+
+   The fan is a separately switched unit. Turn on the switch on the wall next to the laser cutter.
+
+   Question is raised: What is the possible risk of not ensuring the exhaust fan is running during laser cutter operation?
+   
+   TODO: Insead of doing this question, just provide the answer
+
+3. Putting cutting material onto the laser cutterbed
+
+   The instructor puts the cutting material onto the laser cutter bed.
+   
+   Question is raised: What will you do if the cutting material is smaller than the honeycomb bed? How will you place it?
 Operating the panel
 
+   TODO: Insead of doing this question, just provide the answer
+
 ![Figure: Control Panel](images/control-panel-laser-cutter.png)
+
+FIX FORMAT .....
 
 Instructor will demonstrate the use of each button. The middle top one is on- hold button, one can press it to save the power of the laser cutter.
 The start/pause button can be used to pause a job in the middle. Once you start from a paused state the job resumes.
@@ -51,5 +72,6 @@ What will you check before pressing the start button to ensure safety?
 ## Resources
 
 * Fusion 360 <https://www.autodesk.com/products/fusion-360/overview>
-
-Q: are there free alternatives for fusion 360?
+* Q: are there free alternatives for fusion 360?
+* Q: what is brand of lasercutter
+* Q: if we have brand is there a link to a pdf or online manual 
