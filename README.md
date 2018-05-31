@@ -47,10 +47,10 @@ Once you have installed pandoc you can create the book with our simple
 and call make in the source dir
 
 ```bash
-$ mkdir -p ~/githum/cloudmesh
-$ cd ~/githum/cloudmesh
-$ git clone https://github.com/cloudmesh/book.git
-$ cd cloud-clusters
+$ mkdir -p ~/github/cloudmesh
+$ cd ~/github/cloudmesh
+$ git clone https://github.com/cloudmesh-community/book.git
+$ cd book/pi
 $ make
 ```
 In case you need to use latex you need to download the full
