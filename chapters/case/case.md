@@ -21,6 +21,8 @@ Can freecad or a similar tool also be used?
 A better approach may acy=tually to use 
 
 * <http://www.openscad.org/>
+* <https://github.com/RigacciOrg/openscad-rpi-library>
+* <https://www.youtube.com/watch?v=WQd5db9lsQk>
 
 this may require programming, but it may be easier to do as we have so view things to design
 
