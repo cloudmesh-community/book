@@ -89,6 +89,12 @@ What will you check before pressing the start button to ensure safety?
 
 ![](images/case-a.png)
 
+## 100 trial
+
+[100-pis](images/100-pis.scad)
+
+![](images/100-pis.png)
+
 ## Connections
 
 Some ideas
