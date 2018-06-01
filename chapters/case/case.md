@@ -98,6 +98,12 @@ Some ideas
 * <http://www.uugear.com/product/acrylic-case-for-zero4u-and-raspberry-pi-zero-clear/>
 * <https://www.phidgets.com/docs/T-Slot_Primer>
 * <https://www.modmypi.com/blog/piot-relay-zero-case-assembly-instructions>
+* <https://www.ponoko.com/blog/how-to-make/how-to-make-snug-joints-in-acrylic/>
+* <https://www.bit-tech.net/guides/modding/a_modders_guide_to_acrylic/3/>
+* <http://store.curiousinventor.com/blog/how-to-make-cheap-lasercut-custom-boxes-for-your-diy-electronics/>
+* <http://discuss.arachnidlabs.com/t/easier-lasercut-boxes-with-custom-brackets/177>
+* <https://makezine.com/2012/04/13/cnc-panel-joinery-notebook/>
+* <https://makezine.com/2015/10/29/skill-builder-acrylic/>
 
 WOuld be good for lego technic if in right distance and right height
 
