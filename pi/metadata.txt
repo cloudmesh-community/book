@@ -1,7 +1,7 @@
 ---
 title:
 - type: main
-  text: Cloud Clusters Class Handbook, Raspberry Pi
+  text: Cloud Clusters With Raspberry Pi's
 creator:
 - role: editor
   text: Editor Gregor von Laszewski
