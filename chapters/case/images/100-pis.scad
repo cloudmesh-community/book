@@ -129,7 +129,7 @@ module raspberrypi_3_model_b_holes() {
 module network(){
     // 114 x 86 x 26 mm
     // https://www.amazon.com/NETGEAR-Ethernet-Unmanaged-Internet-Splitter/dp/B00KFD0SEA/ref=pd_cp_147_1?_encoding=UTF8&pd_rd_i=B00KFD0SEA&pd_rd_r=07d8d6d0-6545-11e8-884b-f548ab926653&pd_rd_w=twuai&pd_rd_wg=KWnuX&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=80460301815383741&pf_rd_r=7HRPGYWCB196SF54SYQV&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=7HRPGYWCB196SF54SYQV&dpID=316sFs-UFNL&preST=_SX300_QL70_&dpSrc=detail
-    color("silver") cube([114,86,26]);
+      color("silver") cube([158,100,25]);
 }
 
 module pibank (x,y){
@@ -146,7 +146,7 @@ translate([0,0, (5 * 20 + 20) * b]) pibank(5, 5);
 }
 
 //module powerplug() {
-//    color("grey") cube([10, 7, 2.54]);
+//    color("grey") cube([100, 70, 25.4]);
 //}
 //network();
 //translate ([0,0, 40]) powerplug();
