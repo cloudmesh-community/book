@@ -1,6 +1,34 @@
-## Case
+## IU 100 Node Cluster Case :construction:
 
-TODO: look ad word document.  reformat this and make sure to put in relevant information. The questions raised should be excersises?
+At Indiana University we have currently about 100 Raspberry Pi's
+available for students that work with us as part of classes.
+
+Our goal for the use of these PI's is multitude.
+
+First, we naturally like that all PI's could be used together in a
+large cluster. Second we like that student teams up to 3 students can
+use a samll cluster of between 6 - 5 Pi's and use them to providsion
+their own OS. Third, we like to crate a case and shelf structure that
+allows this modular utilization of the cluster while breaking it down
+easily, but also assembeling or adding to the cluster easily.
+
+This section will document our efforts to support this. The section is
+heavely under construction and currently two STEM students work on the
+case. They are joined by an independent study student ofer the summer
+that looks at the software for this cluster.
+
+To simplify management we will be using github for managing tasks, but
+we will start collecting these tasks here. At this time the STEM
+students are using still a google docs document till they migrate to
+this or their own github.
+
+The outline of the section is as follows :construction:
+
+### Takss for STEM students
+
+
+TODO: look ad word document.  reformat this and make sure to put in
+relevant information. The questions raised should be excersises?
 
 section for case documentation
 
@@ -9,23 +37,43 @@ section for case documentation
 
 ### Designing in CAD for Laser 
 
-### Fusion 360
-
-* <https://www.autodesk.com/products/fusion-360/overview>
-
-Can freecad or a similar tool also be used?
-
-* <https://www.freecadweb.org/>
-  * documentation <https://www.freecadweb.org/wiki/Main_Page>
-
-A better approach may acy=tually to use 
+We believe the best program for us to design a case for the cluster is
+OpenSCAD. Links and tutorials to the software can be found here:
 
 * <http://www.openscad.org/>
 * <http://www.openscad.org/cheatsheet/>
 * <https://github.com/RigacciOrg/openscad-rpi-library>
 * <https://www.youtube.com/watch?v=WQd5db9lsQk>
 
+Although OpenSCAD requires programming, it seems to be easier than
+creating the 
+
 this may require programming, but it may be easier to do as we have so view things to design
+
+
+
+
+#### IU Maker Lab standard Software
+
+In order for us to design a case we need to utilize a 3D CAD
+program. The IU maker lab recommends to use Fusion 360 which is
+available from 
+
+* <https://www.autodesk.com/products/fusion-360/overview>
+
+#### Alternative Free Software
+
+However it does require a license and alternative that can be used for
+free. This includes FreeCAD 
+
+* FreeCAD Software <https://www.freecadweb.org/>
+* Freccad Documentation <https://www.freecadweb.org/wiki/Main_Page>
+
+This program allows you to design the layout of a 3D case via a
+sophisticated GUI just like Fusion 360. 
+
+
+
 
 ### Cutting: Using Fusion 360 and a Laser Cutter
 
@@ -94,6 +142,18 @@ What will you check before pressing the start button to ensure safety?
 [100-pis](images/100-pis.scad)
 
 ![](images/100-pis.png)
+
+## Parts
+
+[100-pis](images/parts.scad)
+
+![](images/parts.png)
+
+
+## 3D Model RAspbery PI
+
+* STL <https://www.thingiverse.com/thing:1701186>
+* <https://grabcad.com/library/raspberry-pi-3-reference-design-model-b-rpi-raspberrypi-raspberry-pi-2>
 
 ## Connections
 
