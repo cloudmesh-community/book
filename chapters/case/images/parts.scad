@@ -147,7 +147,7 @@ for (j=[0:y-1]) {
 //}
 
 module powerplug() {
-    color("grey") cube([100, 70, 25.4]);
+    color("grey") cube([70, 100, 25.4]);
 }
 network();
 translate ([0,0, 40]) powerplug();
