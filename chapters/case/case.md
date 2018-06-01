@@ -134,7 +134,7 @@ can replicate thes steps next time.
    1. Send the file to the Job Control by opening the saved file in
       Adobe Illustrator. TODO: how do we get the SCAD file into it,
       which format do we need. You click print and set the printer to
-      “Trotec Laser Cutter”.
+      "Trotec Laser Cutter".
    2. Set laser cutting parameter will be set to width and height of
       the cutting area in the size column. By clicking the
       “Preferences” tab, one can adjust the settings of different
