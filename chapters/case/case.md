@@ -212,3 +212,10 @@ WOuld be good for lego technic if in right distance and right height
 * Q: are there free alternatives for fusion 360?
 * Q: what is brand of lasercutter
 * Q: if we have brand is there a link to a pdf or online manual 
+
+
+
+## edu
+
+* What is laser cutting. <https://www.youtube.com/watch?v=SIjUVCho_xU>
+  Disclaimer: distributed by a company selling laser cutters
