@@ -140,15 +140,44 @@ for (j=[0:y-1]) {
 }
 }
 
-// for (b=[0:4]) {
-
-//translate([0,0, (5 * 20 + 20) * b]) pibank(5, 5);
-
-//}
+module wall(x,y, thickness, angle, x0, y0, z0){
+    color([0.3,0.3,0,0.3]) translate ([x0+thickness, y0, z0]) rotate([0, angle, 0])  cube([x, y, thickness]);
+}
 
 module powerplug() {
     color("grey") cube([70, 100, 25.4]);
 }
-network();
-translate ([0,0, 40]) powerplug();
-translate ([0,0, 80]) board_raspberrypi_3_model_b();
+
+
+module case_a(width, height, depth, thickness){
+//floor
+    wall (width - 2 * thickness, depth, thickness, 0, 0, 0, 0);
+    
+// floor 2
+    netheight = 35;
+    wall (width - 2 * thickness, depth, thickness, 0, 0, 0, netheight, 0);
+
+//top
+
+    difference(){
+        //top
+        d = 15;
+        wall (width - 2 * thickness, depth, thickness, 0, 0, 0, height-thickness);
+        translate([d,d,0]) wall (width - 2 * thickness - 2* d, depth - 2 * d, thickness, 0, 0, 0, height-thickness);
+        }
+//left
+    wall (height, depth, thickness, -90, 0, 0, 0);
+    
+//right
+    wall (height, depth, thickness, -90, width -thickness, 0, 0);
+    
+    
+    
+}
+
+case_a(170, 120, 100, 3);
+
+translate ([150,0,35  +3]) rotate ([0,-90,0]) pibank(1,5);
+
+translate ([6,3, 3]) network();
+translate ([30,0, 35+ 3]) rotate ([0,-90,0]) powerplug();
