@@ -1,14 +1,9 @@
 ## Exercise
 
-### Single Raspberry Pi
-
-
-## Single Pi :o:
-
-TODO: improve the link
+### Single Raspberry Pi Temperature
 
 You have been presented in Section
-[Cluster Case With Cooling (5 Pi)](#temp-cluster)
+[Cluster Case With Cooling (5 Pi)](#cluster-case-with-cooling-5-pi)
 with a table that
 compares tempreatures. Your task is to identify issues with the
 experiment and the table. Furthermore we like you to rerun a

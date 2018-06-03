@@ -71,7 +71,7 @@ for about $20. However, for that amount of money it may just be worth
 while to get Pi 3's instead of zero's. Nevertheless the formfactor is
 rather appealing.
 
-## Cluster Case With Cooling (5 Pi) 
+## Cluster Case With Cooling (5 Pi) {#temp-cluster}
 
 Many instructions on the Web exist describing how to build clusters with
 3 or more Pi's. One of the considerations that we have to think about is

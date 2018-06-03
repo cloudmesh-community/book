@@ -1,14 +1,14 @@
 # Raspberry PI
 
-Raspberry PIs are a convenient cheap compute platform that allow us to
+[Raspberry PI's](https://www.raspberrypi.org/) are a convenient cheap
+compute platform that allow us to
+
 explore setting up cloud clusters with varous software that otherwise
 woudl not be accessible to most. The point is not to create a comnplex
 compute platform, but to create a *testbed* in which we can explore
 configuration aspects and prepare benchmarks that are run on larger
-and expensive cloud environments.
-
-In addition Raspbery Pis can be used as a simple Linux terminal to log
-into other machines.
+and expensive cloud environments. In addition Raspbery Pis can be used
+as a simple Linux terminal to log into other machines.
 
 We will give a small introduction to the platform next.
 
@@ -63,8 +63,3 @@ Detailed information obout it are avialable at
 
 * <https://www.raspberrypi.org/documentation/hardware/raspberrypi/README.md>
 
-## Links
-
-Usefull information about Raspberry Pi:
-
-* <https://www.raspberrypi.org/>
