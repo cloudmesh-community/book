@@ -59,7 +59,8 @@ def convert(filename):
     filename = filename.replace("../", "")
     with open("dest/" + filename, 'w') as f:
         f.write(content)
-
+        f.write("\n")
+        
 files = recursive_glob(rootdir="../chapters")
 
         
