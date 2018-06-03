@@ -257,6 +257,7 @@ CHAPTER_PI=\
  chapters/pi/case.md\
  chapters/case/case.md\
  chapters/pi/links.md\
+ chapters/pi/exercise.md\
  chapters/login-node.md\
  chapters/sd-card.md\
  chapters/linux.md\
@@ -334,7 +335,8 @@ epub: dot refernces todo
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 	../bin/section.py 1 ":construction::construction::construction::construction::construction::construction::construction::construction::construction::construction::construction:" > dest/chapters/SECTION-DRAFT.md
-	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt $(INDEX)
+	cd dest; iconv -t utf-8 $(INDEX) > all.md
+	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
 refernces:
 	mkdir -p dest
