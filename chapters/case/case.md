@@ -7,13 +7,13 @@ Our goal for the use of these PI's is multitude.
 
 First, we naturally like that all PI's could be used together in a
 large cluster. Second we like that student teams up to 3 students can
-use a samll cluster of between 6 - 5 Pi's and use them to providsion
+use a small cluster of between 6 - 5 Pi's and use them to provision
 their own OS. Third, we like to crate a case and shelf structure that
 allows this modular utilization of the cluster while breaking it down
-easily, but also assembeling or adding to the cluster easily.
+easily, but also assembling or adding to the cluster easily.
 
 This section will document our efforts to support this. The section is
-heavely under construction and currently two STEM students work on the
+heavily under construction and currently two STEM students work on the
 case. They are joined by an independent study student ofer the summer
 that looks at the software for this cluster.
 
@@ -24,11 +24,11 @@ this or their own github.
 
 The outline of the section is as follows :construction:
 
-### Takss for STEM students
+### Tasks for STEM students
 
 
 TODO: look ad word document.  reformat this and make sure to put in
-relevant information. The questions raised should be excersises?
+relevant information. The questions raised should be exercises?
 
 section for case documentation
 
@@ -49,7 +49,7 @@ Although OpenSCAD requires programming, it seems to be easier than
 creating the design with a GUI based CAD program.
 
 For this reason we will be using SCAD but mention other CAD software
-next, that we however will not use for our case dedign.
+next, that we however will not use for our case design.
 
 
 The IU Maker Lab standard Software is Fusion 360 which is
@@ -61,7 +61,7 @@ However it does require a license and alternative that can be used for
 free. This includes FreeCAD 
 
 * FreeCAD Software <https://www.freecadweb.org/>
-* Freccad Documentation <https://www.freecadweb.org/wiki/Main_Page>
+* FrecCAD Documentation <https://www.freecadweb.org/wiki/Main_Page>
 
 This program allows you to design the layout of a 3D case via a
 sophisticated GUI just like Fusion 360. 
@@ -86,7 +86,7 @@ Once you have access you will be trained by ...
 The first step includes to turning on laser cutter. An instructor 
 
 First an instructor will demonstrate how to turn the laser cutter on
-and carry out other preparation taskson how to operate the laser
+and carry out other preparation tasks on how to operate the laser
 cutter. Please get familiar but do not yet touch any buttons from the
 laser cutter.
 
@@ -94,7 +94,7 @@ laser cutter.
 
 TODO Safety googles ...
 
-Next the instructur will give you a walk through of the machine so you
+Next the instructor will give you a walk through of the machine so you
 can replicate thes steps next time.
 
 1. Turn the laser cutter on: Use key to turn on the laser cutter.
@@ -126,7 +126,7 @@ can replicate thes steps next time.
    place the focusing tool on the laser head. Then carefully raise the
    cutting bed. When the focusing tool touches the material on the bed
    it will fall off indicating the laser is focused. You must be
-   careful to not rais ethe bed too fast in order not to damage the
+   careful to not raise the bed too fast in order not to damage the
    laser head.
 6. Now we need to send the file to the job control software and
    initiate cutting
@@ -144,7 +144,7 @@ can replicate thes steps next time.
       Control software and discover the job is in the queue on the
       right of screen.
       
-   4. Next drag the file to be cut on to the Job Control worksurface
+   4. Next drag the file to be cut on to the Job Control work surface
       and setit up in the upper right corner.
    5. Select the Play arrow in JobControl
    6. An exhaust warning will appear. Select OK. The job will start.
@@ -160,7 +160,7 @@ We have designed the following cases
 TBD
 
 Right now we just put some templates here to showcase we can actually
-generate the cases. More detalis will be added here soon.
+generate the cases. More details will be added here soon.
 
 ##### First case
 
@@ -201,8 +201,9 @@ Some ideas
 * <http://discuss.arachnidlabs.com/t/easier-lasercut-boxes-with-custom-brackets/177>
 * <https://makezine.com/2012/04/13/cnc-panel-joinery-notebook/>
 * <https://makezine.com/2015/10/29/skill-builder-acrylic/>
+* <https://www.picocluster.com/>
 
-WOuld be good for lego technic if in right distance and right height
+Would be good for lego technic if in right distance and right height
 
 * <https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9048>
 
@@ -219,3 +220,4 @@ WOuld be good for lego technic if in right distance and right height
 
 * What is laser cutting. <https://www.youtube.com/watch?v=SIjUVCho_xU>
   Disclaimer: distributed by a company selling laser cutters
+
