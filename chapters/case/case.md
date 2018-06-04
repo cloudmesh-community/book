@@ -24,16 +24,11 @@ this or their own github.
 
 The outline of the section is as follows :construction:
 
-### Tasks for STEM students
-
-
-TODO: look ad word document.  reformat this and make sure to put in
-relevant information. The questions raised should be exercises?
-
-section for case documentation
-
-* material based on McKay, modified ...
-* do not plagiarize
+First we provide an introduction to which tools to use for designing a
+case. This is followed by some examples that may lead to a case design.
+Next we provide an introduction on how to use the Laser cutter
+at IU. The last part of this section includes a list of links and some
+images of clusters designed by others.
 
 ### Designing in CAD for Laser 
 
@@ -67,23 +62,67 @@ This program allows you to design the layout of a 3D case via a
 sophisticated GUI just like Fusion 360. 
 
 
+### IU cluster Case design
+
+We have designed the following cases
+
+TBD
+
+Right now we just put some templates here to showcase we can actually
+generate the cases. More details will be added here soon.
+
+Obviously you need to be able to have some walls and shelfs for the case. The
+following SCAD file shows how to use a simple cube to do that. This is
+just a start as the design does not include any connectors.
+
+[scad file](images/case-a.scad)
+
+![](images/case-a.png)
+
+Next we show you how to use some predefined Raspbery PI boards in SCAD
+and use for loops to create rows and columns of 5 PIs each.
+
+[100-pis](images/100-pis.scad)
+
+![](images/100-pis.png)
+
+In the last design we showcase how the basis of a 5 node cluster could
+start. Naturally many other thing s need to be improved. Such as the
+connectors, and the proper width. However this SCAD will provide you
+with a good start to improve your SCAD programming abilities and come
+up with a final design.
+
+[100-pis](images/parts.scad)
+
+![](images/parts.png)
+
+Once you have designed the 5 node cluster, you will also need to
+design a shelf in which you can place them. Power plugs need to be
+added. so you can power the PI within the cluster.
 
 ### Using the Laser Cutter
+
+First, you will need an overview of what a laser cutter is. There are
+many good resources about this on youtube. One such video is provided
+by a company that salls laser cutters:
+
+* <https://www.youtube.com/watch?v=SIjUVCho_xU>
+
+Disclaimer: While pointing to this video we do not endorse the
+product. We do not own this particular brand.
+
 
 After you have designed your case, you can create it on the laser
 cutter available at Indiana University. The laser cutter is located at
 
 * TBD
 
-and operated by
+and operated by ISE. You can get access to it by contacting Christian
+McKay. Once you have access you will be trained by ...
 
-* McKay
+TODO: add contact
 
-You can get access to it by contacting ...
-
-Once you have access you will be trained by ...
-
-The first step includes to turning on laser cutter. An instructor 
+The first step includes to turning on laser cutter. 
 
 First an instructor will demonstrate how to turn the laser cutter on
 and carry out other preparation tasks on how to operate the laser
@@ -153,42 +192,19 @@ Questions raised:
 * What is the importance of setting cutting parameters?
 * What will you check before pressing the start button to ensure safety?
 
-### IU cluster Case design
 
-We have designed the following cases
+### Cases and Parts Designed by the Community
 
-TBD
-
-Right now we just put some templates here to showcase we can actually
-generate the cases. More details will be added here soon.
-
-##### First case
-
-[scad file](images/case-a.scad)
-
-![](images/case-a.png)
-
-#### 100 trial
-
-[100-pis](images/100-pis.scad)
-
-![](images/100-pis.png)
-
-#### Parts
-
-[100-pis](images/parts.scad)
-
-![](images/parts.png)
-
-
-## 3D Model RAspbery PI
+A 3D model of the Raspbery PI is available at
 
 * STL <https://www.thingiverse.com/thing:1701186>
 * <https://grabcad.com/library/raspberry-pi-3-reference-design-model-b-rpi-raspberrypi-raspberry-pi-2>
 
-## Connections
+These models are important as they allow us to use them in the CAD
+drawings to identify proper placement.
 
-Some ideas
+Certainly we need to identify how to connect the walls of the
+case. The following links provide some ideas for such connections.
 
 * <http://www.instructables.com/id/How-to-Make-Anything-Using-Acrylic-and-Machine-Sc/>
 * <http://skpang.co.uk/blog/archives/152>
@@ -203,21 +219,12 @@ Some ideas
 * <https://makezine.com/2015/10/29/skill-builder-acrylic/>
 * <https://www.picocluster.com/>
 
-Would be good for lego technic if in right distance and right height
+Some also used lego technics such as
 
 * <https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9048>
 
-## Resources
+We also previously indicated that the width of the mounting holes on a
+PI is about 7 spaces wide, making it possible to create a lego technic
+case.
 
-* Fusion 360 <https://www.autodesk.com/products/fusion-360/overview>
-* Q: are there free alternatives for fusion 360?
-* Q: what is brand of lasercutter
-* Q: if we have brand is there a link to a pdf or online manual 
-
-
-
-## edu
-
-* What is laser cutting. <https://www.youtube.com/watch?v=SIjUVCho_xU>
-  Disclaimer: distributed by a company selling laser cutters
 
