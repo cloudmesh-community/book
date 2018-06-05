@@ -30,7 +30,7 @@ Next we provide an introduction on how to use the Laser cutter
 at IU. The last part of this section includes a list of links and some
 images of clusters designed by others.
 
-### Designing in CAD for Laser 
+### Designing a Case with CAD
 
 We believe the best program for us to design a case for the cluster is
 OpenSCAD. Links and tutorials to the software can be found here:
@@ -41,18 +41,17 @@ OpenSCAD. Links and tutorials to the software can be found here:
 * <https://www.youtube.com/watch?v=WQd5db9lsQk>
 
 Although OpenSCAD requires programming, it seems to be easier than
-creating the design with a GUI based CAD program.
+creating the design with a GUI based CAD program.  For this reason we
+will be using SCAD.
 
-For this reason we will be using SCAD but mention other CAD software
-next, that we however will not use for our case design.
-
-
-The IU Maker Lab standard Software is Fusion 360 which is
-available from 
+Other CAD software may be accessible to you also. However will not use
+for our case design. This includes the IU Maker Lab standard Software
+is Fusion 360 which is available from
 
 * <https://www.autodesk.com/products/fusion-360/overview>
 
-However it does require a license and alternative that can be used for
+As it does require a license it may not be accessible to many
+students. However you can use alternative that can be used for
 free. This includes FreeCAD 
 
 * FreeCAD Software <https://www.freecadweb.org/>
@@ -188,8 +187,9 @@ can replicate thes steps next time.
    5. Select the Play arrow in JobControl
    6. An exhaust warning will appear. Select OK. The job will start.
 
-Questions raised:
-* What is the importance of setting cutting parameters?
+Questions to be integarted:
+
+* What is the importance of setting cutting parameters? 
 * What will you check before pressing the start button to ensure safety?
 
 
@@ -224,7 +224,7 @@ Some also used lego technics such as
 * <https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9048>
 
 We also previously indicated that the width of the mounting holes on a
-PI is about 7 spaces wide, making it possible to create a lego technic
+Pi is about 7 spaces wide, making it possible to create a lego technic
 case.
 
 

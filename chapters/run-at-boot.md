@@ -5,17 +5,17 @@ at boot time.  A number of different methods exist to run commands and
 programs at boot time.
 
 
-We will be focussing here only a few of them
+We will be focusing here only a few of them
 
 ### rc.local
 
 On your Pi you will find under `/etc/rc.local` a file in which you can
 list programs that are started up at boot time. The programs should
-success fuly run and exit with the status 0, and they must not
-continiously run in which case they need to be started in background.
+success fully run and exit with the status 0, and they must not
+continuously run in which case they need to be started in background.
 
 To make sure you do not forget it, simply add the following line at
-the end of yoru program
+the end of your program
 
     exit 0
 
@@ -25,7 +25,7 @@ use the absolute file path.
 ### Crontab
 
 
-Crontab is a service the scheduls jobs that can run at
+Crontab is a service the schedules jobs that can run at
 various times repeatedly.  For example we can use corontab to run
 commands every hour, every day, every half hour or other time
 intervals or at reboot.
@@ -40,7 +40,7 @@ To use crontab follow these steps
    ```
    
    If you are doing this for the first time, you will be asked to chose
-   an editor. Please, choose your favourite editor
+   an editor. Please, choose your favorite editor
 2. To run the program at boot time, add the following line to the at the end
    of the file
 
@@ -57,15 +57,15 @@ home directory at `/home/pi/test.py`. Once you add it to crontab with
 it will be run at boot time
 
 It is important to provide the absolute path to the file. In case your
-file produces outpiut you need to redirect it into a file
+file produces output you need to redirect it into a file
 
       @reboot python /home/pi/test.py > /home/pi/test.log
 
 
-* When the reabpberry pi reboots, the program will run automatically.
+* When the raspberry pi reboots, the program will run automatically.
 
 
-### Refernces
+### References
 
 A good introduction to the various methods is provided at
 
