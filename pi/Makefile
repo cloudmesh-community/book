@@ -78,12 +78,9 @@ CHAPTER_IN=\
  chapters/in/hadoop-comet.md\
  chapters/in/hadoop-rdma.md\
  chapters/in/hadoop-ubunto.md\
- chapters/in/linux.md\
  chapters/in/old.md\
  chapters/in/pyenv-anaconda.md\
  chapters/in/python-cmd.md\
- chapters/in/refcards.md\
- chapters/in/ssh.md\
  chapters/in/ubuntu.md\
  chapters/in/virtualbox.md\
  chapters/in/vis.md\
@@ -260,8 +257,10 @@ CHAPTER_PI=\
  chapters/pi/exercise.md\
  chapters/login-node.md\
  chapters/sd-card.md\
- chapters/linux.md\
- chapters/ssh/ssh.md\
+ chapters/linux/linux.md\
+ chapters/linux/ssh.md\
+ chapters/linux/ssh2.md\
+ chapters/linux/refcards.md\
  chapters/raspberry/config-display.md\
  chapters/raspberry/motherboard-led.md\
  chapters/run-at-boot.md\
