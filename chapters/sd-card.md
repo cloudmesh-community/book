@@ -1,4 +1,4 @@
-## Install Raspbian on an SD card
+## Install Raspbian on a SD card
 
 For many projects we need to install an Operating system on an SD
 card. We have chose the OS **Raspbian** as it is widely
@@ -26,15 +26,11 @@ recommend to keep it in the `~/Download` directory.
 Once the image is downloaded you copy it with etcher onto the SD-card.
 
 2. Place an SD Card into a SD card reader we recommend a 32GB card.
-
 3. Attach the card reader to the computer
-
 4. Open Etcher and select the downloaded `.img` or `.zip`
    file which you will likely find in the `~/Download` folder if you
    followed our previous steps
-
 5. Select the SD card to write the image to.
-
 6. Review selections and click *Flash!* to begin writing data to the SD
   card.
 
@@ -89,27 +85,27 @@ Once the image is downloaded you copy it with etcher onto the SD-card.
 
 ### Exercises
 
-E.SD-Card.1
+SD-Card.1
 
-> Improve the Ubuntu SD-card documentation
+: Improve the Ubuntu SD-card documentation
 
-E.SD-Card.2
+SD-Card.2
 
-> Could a script be written that does the entire process via a python
-> or shell command in Ubuntu.
+: Could a script be written that does the entire process via a python
+  or shell command in Ubuntu.
 
-E.SD-Card.2
+SD-Card.2
 
-> Could a script be written that does the entire process via a python
-> or shell command in OSX?
+: Could a script be written that does the entire process via a python
+  or shell command in OSX?
 
-E.SD-Card.3
+SD-Card.3
 
-> could a script be written that does the entire process via a python
-> or shell command in gitbash?
+: could a script be written that does the entire process via a python
+  or shell command in gitbash?
 
-E.SD-Card.4
+SD-Card.4
 
-> In general the Ubuntu documentation is complex, how can it be
-> simplified?
+: In general the Ubuntu documentation is complex, how can it be
+  simplified?
 

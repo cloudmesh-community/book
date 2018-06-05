@@ -50,8 +50,9 @@ to explore. For more information simply type man and the name of the
 command.
 
 <div class="smalltable">
+
 | Command    | Description   |
-| --------------------------------- | --------------------------------- |
+| ------------------------------ | ---------------------------------------------------------------------- |
 | man *command*                     | manual page for the *command*     |
 | apropos *text*                    | list all commands that have text in it  |
 | ls                                | Directory listing                 |
@@ -70,8 +71,8 @@ command.
 | less *a*                          | print paged content of file *a*   |
 | head -5 *a*                       | Display first 5 lines of file *a* |
 | tail -5 *a*                       | Display last 5 lines of file *a*  |
-| `du -hs .`                        | show in human readable form the space used by the current directory |
-| `df -h`                           | show the details of the disk file system |
+| du -hs .                       | show in human readable form the space used by the current directory |
+| df -h                           | show the details of the disk file system |
 | wc *filename*                     | counts the word in a file         |
 | sort *filename*                   | sorts the file                    |
 | uniq *filename*                   | displays only uniq entries in the file |
@@ -115,9 +116,9 @@ command.
 | chmod go-rwx *file*               | changes the permission of the file                              |
 | chown *username* *file*           | changes the ownership of the file |
 | chgrp *group* *file*              | changes the group of a file       |
-| `fgrep "text" filename`           | searches the text in the given     file                              |
-| `grep -R "xyz" .`                 | recursively searches for xyz in    all files                         |
-| `find . -name "*.py"`             | find all files with `.py` at the   end                               |
+| fgrep "text" filename           | searches the text in the given file                              |
+| grep -R "xyz" .                 | recursively searches for xyz in all files                         |
+| find . -name "*.py"             | find all files with .py at the end                               |
 | ps                                | list the running processes        |
 | kill -9 1234                      | kill the process with the id 1234 |
 | at                                | que commands for later execution                    |
@@ -139,14 +140,15 @@ command.
 | traceroute                        | print the route packets take to network host                      |
 | ifconfig                          | configure network interface parameters                     |
 | host                              | DNS lookup utility                     |
-| whois                             | Internet domain name and network number directory service                      |
+| whois                             | Internet domain name and network number directory service  |
 | dig                               | DNS lookup utility                      |
 | wget                              | non-interactive network downloader                      |
 | curl                              | transfer a URL                      |
 | ssh                               | remote login program                      |
 | scp                               | remote file copy program                      |
 | sftp                              | secure file transfer program                      |
-<div>
+
+</div>
 
 ## Multi-command execution
 
@@ -187,7 +189,7 @@ short cuts.
 ## .bashrc and .bash_profile
 
 Usage of a particular command and all the attributes associated with it,
-use `man` command. Avoid using `rm -r` command to delete files
+use 'man' command. Avoid using `rm -r` command to delete files
 recursively. A good way to avoid accidental deletion is to include the
 following in your `.bash_profile` file:
 
@@ -198,9 +200,8 @@ alias mv='mv -i'
 alias h='history'
 ```
 
-More Information
+Additional information can be found in the [Refcards](#refcards)
 
-<https://cloudmesh.github.io/classes/lesson/linux/refcards.html>
 
 ## Makefile
 
@@ -255,7 +256,7 @@ In addition we can define variables in a makefile such as
         @echo $(HELLO)
 ```
 
-and can use them in our text with \$ invocations.
+and can use them in our text with $ invocations.
 
 Moreover, in sophisticated Makefiles, we could even make the targets
 dependent on files and a target rules could be defined that only
