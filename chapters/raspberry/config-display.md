@@ -1,4 +1,4 @@
-## Automatic Display Detection [:cloud:](https://github.com/cloudmesh/book/blob/master/cloud-clusters/chapters/raspberry/config-display.md)
+## Automatic Display Detection
 
 ### Purpose 
 
