@@ -25,7 +25,7 @@ generated unique name.
 ---
 
 :warning: This has only been tested on an Ubuntu VM. Both the .img file
-and the mountpoint need to be on Ubuntu VM drives. The mount will fail
+and the mount point need to be on Ubuntu VM drives. The mount will fail
 on a Mac shared drive.
 
 ---
@@ -85,7 +85,7 @@ data:
    passwd:  readline 
 ```
        
-The meaning of the attributes is rather simple. Under images we specify a number of images that we could chose and are downloaded onto the computer that burns the SD-cards if they are not present. The cluster base hostname is defined by the attribute `hostname` and the first workernode to be specified has the postfix defined by start. We define the last number also in the yaml file, while we will look between the start and the end number. The number of leading blanks is defined by the start and end numbers. A special node called `lead` is specified that is the lead noded and all worker nodes are accesible by this lead node. Furthermore. the lead node will be used to monitor the cluster. If the start number includes the lead ode the lead node will be configured. The attribute range specifies which SD-cards are configured. Note this could be a subset of the entire cluster defined by start and end.
+The meaning of the attributes is rather simple. Under images we specify a number of images that we could chose and are downloaded onto the computer that burns the SD-cards if they are not present. The cluster base hostname is defined by the attribute `hostname` and the first worker node to be specified has the postfix defined by start. We define the last number also in the yaml file, while we will look between the start and the end number. The number of leading blanks is defined by the start and end numbers. A special node called `lead` is specified that is the lead node and all worker nodes are accessible by this lead node. Furthermore. the lead node will be used to monitor the cluster. If the start number includes the lead ode the lead node will be configured. The attribute range specifies which SD-cards are configured. Note this could be a subset of the entire cluster defined by start and end.
        
        
 ### Gregor: Manual page cmd5 may be easier than click.
@@ -97,7 +97,7 @@ The meaning of the attributes is rather simple. Under images we specify a number
     modify_sdcard -name NAME puts the given name on the image
     
 
-TODO: Loop to create multiple images, handle exception of existing mountpoint and output directory
+TODO: Loop to create multiple images, handle exception of existing mount point and output directory
 
 - Change the name of the machine
 - [Enable ssh](https://www.raspberrypi.org/documentation/remote-access/ssh/)

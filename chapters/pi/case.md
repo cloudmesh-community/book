@@ -31,7 +31,7 @@ and provide us with such links. Links that may help include:
 
 
 The smallest cluster we came across is actually a hybrid cluster in
-which 4 Pi zeros attached to a Raspberry Pi 3. Thi sis achieved via an
+which 4 Pi zeros attached to a Raspberry Pi 3. This sis achieved via an
 add on board to the Pi 3 allowing to plug in PI=i Zeros:
 
 * <https://clusterhat.com/>
@@ -43,33 +43,26 @@ small cluster.
 According to the Web Site it supports the following features:
 
 -   USB Gadget Mode: Ethernet and Serial Console.
-
 -   Onboard 4 port USB 2.0 hub.
-
 -   Raspberry Pi Zeros powered via Controller Pi GPIO (USB optional).
-
--   Individual Raspberry Pi Zero power controlled via \* Controller Pi
+-   Individual Raspberry Pi Zero power controlled via the Controller Pi
     GPIO (I2C).
-
 -   Connector for Controller Serial Console (FTDI Basic).
-
 -   Controller Pi can be rebooted without interrupting power to Pi Zeros
     (network recovers on boot).
 
-![clusterhat](images/ClusterHAT-v2-supplied-sm.jpg)
-
-Links:
-
-* <https://www.raspberrypi.org/magpi/clusterhat-review-cluster-hat-kit/>
-
-clusterhat on raspberrypi.org
+![Figure: Clusterhat for PI Zero's](images/ClusterHAT-v2-supplied-sm.jpg)
 
 Although this setup seems rather appealing, the issue is with obtaining
 Pi Zeros for the regional price of $5. Typically users can only by one
 for that price and must pay shipping. To by more one has to buy a kit
 for about $20. However, for that amount of money it may just be worth
-while to get Pi 3's instead of zero's. Nevertheless the formfactor is
+while to get Pi 3's instead of zero's. Nevertheless the form factor is
 rather appealing.
+
+Additional information can be found at:
+
+* <https://www.raspberrypi.org/magpi/clusterhat-review-cluster-hat-kit/>
 
 ## Cluster Case With Cooling (5 Pi) {#temp-cluster}
 
@@ -81,19 +74,21 @@ cluster projects cooling is not adequately addressed. Hence we like to
 provide an example that discusses in detail how to add a fan and what
 the fan has for an impact on the temperature.
 
-![](images/IMG16_6273_sweb.jpg){width="50%"}
+![Closed case for 5 Pi's with case](images/IMG16_6273_sweb.jpg){width="50%"}
 
 * <http://climbers.net/sbc/add-fan-raspberry-pi/>
-
 * <http://climbers.net/sbc/diy-raspberry-pi-3-cluster/>
 
 From the above Web page we find the following information as shown in
-Table [\[F:pi-fan\]](#F:pi-fan){reference-type="ref"
-reference="F:pi-fan"}. From the data in the table it is clear that we
+the following table. From the data in the table it is clear that we
 need to keep the Pi from throttling while being in a case by adding a
 fan as obvious from experiment No. 2.
 
-\bigskip
+
+Table: Temperature comparison of fan impact
+
+<div class="smalltable">
+
   No.   Case   Fan   Direction   RPM      Idle    100% Load   Performance
   ----- ------ ----- ----------- -------- ------- ----------- -------------
   1     no     no    \-          \-       41.0C   75.5C       OK (barely)
@@ -103,61 +98,61 @@ fan as obvious from experiment No. 2.
   5     yes    12V   in          1400     32.5C   61.1C       OK
   6     yes    7V    out         800      34.5C   66.4C       OK
 
-  : Temperature comparision of fan impact[]{label="F:pi-fan"}
+</div>
+
+Interesting is also the design of the case that uses snaps instead of
+screws to affix the walls to each other. The case layout can be found at:
+
+* <http://climbers.net/sbc/diy-raspberry-pi-3-cluster-2017/>
+
 
 ## Bitscope Case (40 Pi)
 
 
 A company from Australia called BitScope Designs offers a number of
 cases that leverage their Pi Blade boards allowing up to four Pis to be
-put together and sharing the same power supply. The blades are shown in
-Figure b.1. The rack to place 10 of them is shown in Figure b.2.
+put together and sharing the same power supply. The blades are shown
+in the next Figure. The rack to place 10 of them is shown in the
+Figure after that.
 
-![Bitscope blade for 4 Pi's.](images/04.jpg)
+![Figure: BitScope blade for 4 Pi's.](images/04.jpg)
 
-![40 Pi Blade rack.](images/br40a.png)
+![Figure: 40 Pi Blade rack.](images/br40a.png)
 
-The cost of the balde rack is $ 795.45 + $60.00 shipping + import tax.
+The cost of the blade rack is $ 795.45 + $60.00 shipping + import tax.
 This may originally sound expensive when compared to a single case,
 however as we can store 40 Pis in them and they can share the
-power-supply and reduce cabeling we think this case is quite interesting
+power-supply and reduce cabling we think this case is quite interesting
 overall due to its price-point of $20 per Pi.
 
-## Bitscope Cluster (144 Pi)
+## BitScope Cluster (144 Pi)
 
-
-<https://www.youtube.com/watch?v=78H-4KqVvrg>
+* <https://www.youtube.com/watch?v=78H-4KqVvrg>
 
 Together with LANL a new cluster module that holds 144 Pis is developed.
-This sytem is targeted to be placed into a rack to create a large Pi
-cluster. The cost for such a module is about $15K. Figure
-[\[F:pi-mod-1\]](#F:pi-mod-1){reference-type="ref"
-reference="F:pi-mod-1"} shows the module and
-Figure [\[F:pi-mod-2\]](#F:pi-mod-2){reference-type="ref"
-reference="F:pi-mod-2"} shows how multiple modules can be placed into a
+This system is targeted to be placed into a rack to create a large Pi
+cluster. The cost for such a module is about $15K.
+
+
+The next Figure shows the module.
+
+![BitScope 144 cluster module.](images/cluster-module.png){width="50%"}
+
+The next figure shows how multiple modules can be placed into a
 single rack.
 
-![Bitscope 144 cluster
-module.[]{label="F:pi-mod-1"}](images/cluster-module.png){width="50%"}
 
-![Rack placement of multiple Bitscope 144 cluster
-modules.[]{label="F:pi-mod-2"}](images/rack-overview.png){width="50%"}
-
-### Links
+![Rack placement of multiple BitScope 144 cluster
+modules.](images/rack-overview.png){width="50%"}
 
 Additional information about this form factor can be found at the
 following links:
 
 * <https://cluster.bitscope.com/solutions>
-
 * <https://www.pcper.com/news/General-Tech/BitScope-Unveils-Raspberry-Pi-Cluster-2880-CPU-Cores-LANL-HPC-RD>
-
 * <http://my.bitscope.com/store/>
-
 * <http://my.bitscope.com/store/?p=view\&i=item+7>
-
 * <http://www.newark.com/bitscope/bb04b/quattro-pi-board-raspberry-pi/dp/95Y0643>
-
 * <http://linuxgizmos.com/rpi-expansion-boards-support-up-to-40-pi-clusters/>
 
 ## Build Your Own 5 Node Pi Cluster 
@@ -165,17 +160,17 @@ following links:
 To experiment with building an elementary cluster one does not need to
 have a big budget. Such clusters are often dedicated to research tasks
 and are bound into security protocols that do not allow direct access.
-Instead it is possible to build such a cluster based on Raspberry PI's
+Instead it is possible to build such a cluster based on Raspberry Pi's
 yourself if you are willing to spend the money or if you have access to
-PI's that you may loan from your department.
+Pi's that you may loan from your department.
 
 Table [\[T:picluster-partslist\]](#T:picluster-partslist){reference-type="ref"
 reference="T:picluster-partslist"} lists one such possible parts list
 that will allow you to build a cluster for up to 5 nodes. However make
-sure to buy at least 3 Raspberry PI's with the appropriate memory. At
+sure to buy at least 3 Raspberry Pi's with the appropriate memory. At
 minimum we recommend you get the 32GB SD card. We do not recommend any
 smaller as otherwise you will run out of memory. Additionally, you can
-add memory and disks on te USB ports. If you attach a HDD, make sure it
+add memory and disks on the USB ports. If you attach a HDD, make sure it
 has an external power supply and do not drive it from the USB power as
 otherwise the PI becomes unstable. A fan is at this time not yet
 included.
@@ -202,6 +197,7 @@ Locate setup instructions and write a tutorial in markdown that we will
 include here once it is finished. The tutorial is to be managed on
 github.
 
+<div class="smalltable">
 
 | Price | Description | URL |
 | :- | :------- | :- |
@@ -222,78 +218,27 @@ $19.19 | For Raspberry Pi 3 2 TFT LCD Display, kuman 3.5 Inch 480x320 TFT Touch 
 (1) items were replaced with similar
 (2) item was not available
 
+</div>
+
 ### Assembling the Pi Cluster :o:
 
 TODO: replace the images with one that has white background
 
+<div class="smalltable">
+
 | Figure | Description |
 | ---- | ---- |
-| ![Figure 1](images/heat-sync-top.jpg) |  First, aluminium and copper heat syncs need to be attached to each Pi. The two aluminium heat syncs are attached to the Broadcom chip and the SMSC ethernet controller located on the top of the Pi. The blades of the heat syncs are parallel to the longer side of the Pi as shown inBlack aluminum fanned heat syncs are attached to the top of the pi as shown in Figure 1. |
-| ![Figure 2](images/heat-sync-bottom.jpg) |  Flat copper heat sync is attached to the bottom of the pi as shown in Figure 2. |
-| ![Figure 3](images/pi-cluster-no-wires.jpg) |  After attaching the heat syncs, threaded hexagonal spacer supports are used to connect the Pis together. A fully-assembled 5-node Pi cluster is shown in Figure 3.   |
-| ![Figure 4](images/complete-pi-cluster.jpg) |  Each node of the cluster is then attached to the switch using an ethernet cables and to the power supply using a usb cables. The fully wired cluster is shown in Figure 4.  |
+| ![Figure 1](images/heat-sync-top.jpg) |  First, aluminum and copper heat syncs need to be attached to each Pi. The two aluminum heat syncs are attached to the Broadcom chip and the SMSC Ethernet controller located on the top of the Pi. The blades of the heat syncs are parallel to the longer side of the Pi as shown in black aluminum fanned heat syncs are attached to the top of the pi as shown. |
+| ![Figure 2](images/heat-sync-bottom.jpg) |  Flat copper heat sync is attached to the bottom of the pi as shown. |
+| ![Figure 3](images/pi-cluster-no-wires.jpg) |  After attaching the heat syncs, threaded hexagonal spacer supports are used to connect the Pis together. A fully-assembled 5-node Pi cluster is shown.   |
+| ![Figure 4](images/complete-pi-cluster.jpg) |  Each node of the cluster is then attached to the switch using an Ethernet cables and to the power supply using a USB cables. The fully wired cluster is shown.  |
+
+</div>
 
 
+### Virtual Raspberry Cluster :o:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Small Pi Cluster
-
-In this set of exercises we will be building a small Raspberry Pi
-cluster. All of you will have to do exercise Pi.Cluster.Build as well
-as one of the tasks related to Swarm, kubernetes or Spark.
-
-It is important that you write down all steps very carefully as you are
-expected to use the steps to develop an automated deployment. For your
-cluster. Your tutorial will be tested by other groups and easy of
-installation completness, and correctness will be evaluated. Teams that
-find issues and improve deployment tutorials will receive points. TA's
-will also replicate these steps to identify a fair evaluation without
-bias.
-
-Pi.Cluster.Build
-
-: Build groups of up to 5 people. Make a plan on what needs to be done
-  to build the cluster and develop a schedule.  Include in this plan (a)
-  obtaining the material the hardware build, (b) the installation of the
-  operating system (c) the testing of the system (d) familiarizing with
-  the OS.
-
-Pi.Cluster.DockerSwarm
-
-: Install a docker Swarm cluster on your PI. Develop a tutorial in
-  markdown and mind plagiarism. Contribute your tutorial to this
-  document to get acknowledged and credit. Work with others in class to
-  coordinate a single tutorial.
-
-Pi.Cluster.Kubernetes
-
-: Install a kubernetes cluster on your PI. Develop a tutorial in
-  markdown and mind plagiarism. Contribute your tutorial to this
-  document to get acknowledged and credit. Work with others in class to
-  coordinate a single tutorial.
-
-Pi.Cluster.Spark
-
-: Install a spark cluster on your PI. Develop a tutorial in markdown
-  and mind plagiarism. Contribute your tutorial to this document to get
-  acknowledged and credit. Work with others in class to coordinate a
-  single tutorial.
-
-### Virtual Raspberry Cluster
-
-It should also be possible to craete a virtual raspberry PI cluster
+It should also be possible to create a virtual raspberry PI cluster
 while for example using virtual box. This requires two steps. First the
 deployment of a virtualized Raspberry PI. The following information may
 be useful for this
@@ -301,21 +246,23 @@ be useful for this
 * <http://dbakevlar.com/2015/08/emulating-a-raspberry-pi-on-virtualbox/>
 
 The next step includes the deployment of multiple VMs emulating
-Raspberrys. Naturally each should have its own name so you can
-distinguish them. INstead of just using the GUI, it would be improtant
-to find out how to start them from a commandline as a shell script as
+Raspberry's. Naturally each should have its own name so you can
+distinguish them. Instead of just using the GUI, it would be important
+to find out how to start them from a command line as a shell script as
 well as tear them down.
 
-Next you will need to make sure you can communicate from the PIs to each
+Next you will need to make sure you can communicate from the Pi's to each
 other. This is naturally the same as on a real cluster
 
-provide a tutorial
+TODO: provide a tutorial
 
 This can be chosen as part of your project, but you need to develop a
-cloudmesh command for managing the cluster. THis includes starting and
-stoping as well as checkpointing the cluster from a cloudmesh command.
+cloudmesh command for managing the cluster. This includes starting and
+stopping as well as check-pointing the cluster from a cloudmesh command.
 Furthermore you need to benchmark it and identify how to do this and
 contrast this to other clusters that you may start or have access to.
-Please get in contact with Gregor. THis prject is reserverd for online
-students, as residential students will have access to real Rasperry PI
+Please get in contact with Gregor. This project is reserved for online
+students, as residential students will have access to real Raspberry PI
 hardware.
+
+Please note that this project may have to use QEMU.

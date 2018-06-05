@@ -1,12 +1,12 @@
-## Install Raspbian on an SD card  [:cloud:](https://github.com/cloudmesh/book/blob/master/cloud-clusters/sd-card.md)
+## Install Raspbian on an SD card
 
 For many projects we need to install an Operating system on an SD
 card. We have chose the OS **Raspbian** as it is widely
 supported. Other OS have recently been added to the available OSes for
-the PI, but we will at thsi time not consider them here.
+the PI, but we will at this time not consider them here.
 
 To install the OS on an SD Card you will need another computer. We
-describe next the process if you have either a MAC or an Linux ubuntu
+describe next the process if you have either a MAC or an Linux Ubuntu
 machine. If you have other OSes and like to contribute, please add
 your suggestions.
 
@@ -40,15 +40,15 @@ Once the image is downloaded you copy it with etcher onto the SD-card.
 
 ### Ubuntu
 
-* In the file explorer, right click on the sd card and format the sd card
+* In the file explorer, right click on the SD card and format the SD card
 * Run
 
   ```bash
   $ df -h```
 
   to list all the drives in the computer
-* Insert the sd card and run the command again
-* Now a new entry will be listed which is the sd card
+* Insert the SD card and run the command again
+* Now a new entry will be listed which is the SD card
 * The left column of the results from `df -h` command gives the device name of your SD card.
   It will be listed as something like `/dev/mmcblk0p1` or `/dev/sdX1`,
   where X is a lower case letter indicating the device.
@@ -61,17 +61,17 @@ Once the image is downloaded you copy it with etcher onto the SD-card.
 
   Make sure to use correct name for the card
 * If your card has multiple partitions unmount all partitions
-* Next write the image to the sd card.
+* Next write the image to the SD card.
 * Run the following command:
 
   ```$ dd bs=4M if=<path to .img> of=/dev/mmcblk0 status=progress conv=fsunc```
   
   Make sure `if=` contains the path to image and `of=` contains the name 
-  of the sd card otherwise you may ruin your hard disk
+  of the SD card otherwise you may ruin your hard disk
 
 #### Checking that the image was written properly
 
-* Create an image again from the sd card
+* Create an image again from the SD card
 * Run the following command:
 
   ```$ dd bs=4M if=/dev/sdX of=from-sd-card.img```
@@ -87,7 +87,7 @@ Once the image is downloaded you copy it with etcher onto the SD-card.
   
 * Diff should say that the two files are same
 
-### Excercise
+### Exercises
 
 E.SD-Card.1
 
@@ -110,6 +110,6 @@ E.SD-Card.3
 
 E.SD-Card.4
 
-> In general the ubuntu documentation is complex, how can it be
+> In general the Ubuntu documentation is complex, how can it be
 > simplified?
 
