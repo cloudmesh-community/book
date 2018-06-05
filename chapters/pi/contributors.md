@@ -1,7 +1,6 @@
-## Contributors :o:
+## Contributors
 
-TODO: add fill names
+Contributors are listed in alphabetical order by lastname
 
-* Berthold, Min 
-* Anand
-* Eliyah, Diego
+Diego Ansaldo, Min Chen, Berthold Sobolik, Anand Sriramullu,
+Eliyah Zayin
