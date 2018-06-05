@@ -1,4 +1,4 @@
-## Install Raspbian on an SD card  [:cloud:](https://github.com/cloudmesh/book/blob/master/cloud-clusters/sd-card.md)
+## Install Raspbian on an SD card
 
 For many projects we need to install an Operating system on an SD
 card. We have chose the OS **Raspbian** as it is widely
