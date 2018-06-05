@@ -116,3 +116,19 @@ PI.case.n
 Please reuse the Pi.Case.5 as basis, e.g. it is a shelf in which we
 place the cases. Make sure to organize power and allow for easy access
 to the cases and the pis within the case.
+
+### Cluster Case Lego
+
+Pi.lego 1
+
+: count the connectors and make a more accurate calculation
+
+Pi.lego 2
+
+: design a frame in which the PIs can be placed in groups of 5.
+
+Pi.lego.3
+
+: design a cluster case for the raspberry PI with LDD
+  <https://www.lego.com/en-us/ldd>. YOu do not have to buy the pieces,
+  but just provide the design.
