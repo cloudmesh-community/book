@@ -3,23 +3,23 @@
 [Raspberry PI's](https://www.raspberrypi.org/) are a convenient cheap
 compute platform that allow us to
 
-explore setting up cloud clusters with varous software that otherwise
-woudl not be accessible to most. The point is not to create a comnplex
+explore setting up cloud clusters with various software that otherwise
+would not be accessible to most. The point is not to create a complex
 compute platform, but to create a *testbed* in which we can explore
 configuration aspects and prepare benchmarks that are run on larger
-and expensive cloud environments. In addition Raspbery Pis can be used
+and expensive cloud environments. In addition Raspberry Pis can be used
 as a simple Linux terminal to log into other machines.
 
 We will give a small introduction to the platform next.
 
-## Raspery PI 3 B
+## Raspberry PI 3 B
 
-Till February 2018 the Raspery PI 3 B was the newest model. Within
-thic class we have access to about 100 of them.
+Till February 2018 the Raspberry PI 3 B was the newest model. Within
+this class we have access to about 100 of them.
 
 Figure [Pi3](#F-pi3) shows the Raspberry PI 3 B.
 
-![Figure <a name="F-pi3"></a>: Raspbery PI 3B](images/pi-3.jpg)
+![Figure <a name="F-pi3"></a>: Raspberry PI 3B](images/pi-3.jpg)
 
 * Quad Core 1.2GHz Broadcom BCM2837 64bit CPU
 * 1GB RAM
@@ -36,11 +36,11 @@ Figure [Pi3](#F-pi3) shows the Raspberry PI 3 B.
 ## Raspberry PI 3 B+
 
 We plan to purchase a number of them so we can conduct performance
-experiements and leverage the faster hardware.
+experiments and leverage the faster hardware.
 
 Figure [Pi3+](#F-pi3p) shows the newest Raspberry PI 3 B+.
 
-![Figure <a name="F-pi3p"></a>: Raspbery PI 3 B+](images/pi3bplus.jpg)
+![Figure <a name="F-pi3p"></a>: Raspberry PI 3 B+](images/pi3bplus.jpg)
 
 It has the following Features:
 
@@ -59,7 +59,7 @@ It has the following Features:
 * 5V/2.5A DC power input
 * Power-over-Ethernet (PoE) support (requires separate PoE HAT)
 
-Detailed information obout it are avialable at
+Detailed information about it are available at
 
 * <https://www.raspberrypi.org/documentation/hardware/raspberrypi/README.md>
 

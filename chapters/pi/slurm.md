@@ -1,10 +1,10 @@
 # Slurm
 
-This may be inspiering
+This may be inspiring
 
 * <https://github.com/ajdecon/ansible-pi-cluster/blob/master/README.md>
 
-Instalation
+Installation
 -----------
 
 provide a information

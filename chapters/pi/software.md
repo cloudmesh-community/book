@@ -5,7 +5,7 @@
 In this chapter we will provide information in how to install additional
 software that may not be provided with the default operating system.
 
-### Operatiing Systems
+### Operating Systems
 
 You can run different operating systems on the PI, this includes
 rasbian, NOOBS, Dexter (for Grove PI), or even Windows 10.
@@ -34,9 +34,9 @@ Previously we played a bit with Windows on Raspberry, but it was not
 very well supported. This may have changed by now. Your task will be to
 evaluate its feature and contrast it to other OSes.
 
-There seems to be support on developing PI application on WIndows 10
+There seems to be support on developing PI application on Windows 10
 itself, but as we do not have windows machines, we have not tried this.
-You could escplore and update us.
+You could explore and update us.
 
 provide a mini tutorial
 
@@ -56,7 +56,7 @@ provide a mini tutorial
 
 ### ssh
 
-The most iomportant program for us. describe ho to enable without GUI
+The most important program for us. describe ho to enable without GUI
 
 point to our other ssh section.
 
@@ -75,10 +75,10 @@ provide a mini tutorial
     $ sudo apt-get install python3
     ```
     
-update to current version and try out. measure time it thakes to do
+update to current version and try out. measure time it takes to do
 that, it may take a long time use time commands before and after
 
-make sure you use alst install
+make sure you use alt install
 
 *
 <https://liftcodeplay.com/2017/06/30/how-to-install-python-3-6-on-raspbian-linux-for-raspberry-pi/>
@@ -163,7 +163,7 @@ vi, other?
 
 The hostname is stored in `/etc/hostname`. Edit the file and change it
 to a name such as green00, green01, green02, green03, green04, green05.
-Be consitant with the names. The 00 host shoudl be the top most host in
+Be consistent with the names. The 00 host should be the top most host in
 the cluster.
 
 edit
@@ -175,7 +175,7 @@ after you edited the hostname
     sudo /etc/init.d/hostname.sh start
 
 Ideally we want to find out how to write the hostname after we burn the
-SDcard on the laptop that does the burning
+SD card on the laptop that does the burning
 
 develop a python script to do that
 
@@ -218,7 +218,7 @@ to each file as the last record. " develop a a python script to do that
 
 ### Wireless
 
-Do not use iu secure. Do not leave your passwd on the pi as insecure.
+Do not use IU secure. Do not leave your passwd on the pi as insecure.
 
     sudo nano /etc/network/interfaces
 
@@ -228,11 +228,11 @@ Do not use iu secure. Do not leave your passwd on the pi as insecure.
     wpa-ssid "your-WLAN-SSID"
     wpa-psk "your-WLAN-password"
 
-develop a pthon script to do that
+develop a Python script to do that
 
 ### Update when on network
 
-for now dont put pi on network so do this once we figure out a better
+for now do not put pi on network so do this once we figure out a better
 way
 
     sudo apt-get update
