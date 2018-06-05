@@ -1,18 +1,18 @@
 # Cluster Setup
 
-In this isection we discuss how we setup the cluster. To explore that we
+In this section we discuss how we setup the cluster. To explore that we
 can conduct the setup without monitor, we are collecting in this section
-a variety of tasks in regrads to it and documenting solutions for them.
+a variety of tasks in regards to it and documenting solutions for them.
 Students in the residential or in the online classes that participate in
 cluster building can contribute to this section.
 
 A number of students have been assigned for particular tasks. and will
-be adde dhere by the TA's. It is expected that you conduct your task
+be added here by the TA's. It is expected that you conduct your task
 ASAP.
 
 ## Links
 
-A number of usefule links may help for this task. However be aware that
+A number of useful links may help for this task. However be aware that
 we want to develop a *script* for most of the tasks eliminating input by
 hand. The information here deals to identifying the information needed
 to do so.
@@ -29,20 +29,20 @@ According to
 
 rasp-config writes a file /boot/config.txt. Maybe it is a good idea to
 inspect this file manipulate it and see if there are field we simply
-coudl write and overwrite it on the SDcard. See also
+could write and overwrite it on the SD card. See also
 
 * <https://elinux.org/R-Pi_configuration_file>
 
-## SDCards
+## SD Cards
 
-The cluster will have an SDCard in each of the PIs. To enable them to
-boot an opreating system has to be put on the card. We recommend that
+The cluster will have an SD Card in each of the Pi's. To enable them to
+boot an operating system has to be put on the card. We recommend that
 you use Etcher for doing so which is available for Linux, Windows, and
 OSX. Etcher can be found at
 
 If there are better tools or methods please document.
 
-For your OS, discuss how to install Etcher. Then dicuss how to burn the
+For your OS, discuss how to install Etcher. Then discuss how to burn the
 OS on the SD card.
 
 ### Linux
@@ -60,18 +60,18 @@ Describe this for Windows 10.
 ### Creating Backup
 
 In this task you will be documenting how to create a backup of the image
-on the SDCard.
+on the SD Card.
 
 ### Duplication
 
-Let us assume you have installed a lot of great programs on the SDCard.
+Let us assume you have installed a lot of great programs on the SD Card.
 In a cluster, we need to duplicate this card for each PI in the cluster.
-Is there a way fo us to duplicate the software
+Is there a way for us to duplicate the software
 
 ### Mount the SD Card on the Host System
 
-Describe on how to mount the SDCard on the host system so you can
-manipulate the files on the SDCard
+Describe on how to mount the SD Card on the host system so you can
+manipulate the files on the SD Card
 
 ### Linux
 
@@ -102,25 +102,25 @@ Describe how you enable SSH without a monitor
 ### key
 
 Describe how you can generate a private key at the right location on the
-SDCard. Place your own public key on the SDCard
+SD Card. Place your own public key on the SD Card
 
 Write python programs for this.
 
 ### password
 
-Describe how you can change the password on the SDCard
+Describe how you can change the password on the SD Card
 
 
-## Post confoguration
+## Post configuration
 
-### Netwwork Addresses
+### Network Addresses
 
-Find a way to find all the network addresses from all PIs attached to
+Find a way to find all the network addresses from all Pi's attached to
 the network switch.
 
 ### key
 
-Write a python program that does the follwoing:
+Write a python program that does the following:
 
 1. login with ssh on each PI and call ssh-keygen to generate a
    unique key on each PI.
@@ -168,7 +168,7 @@ power switches
 *
 <https://www.amazon.com/dp/B01DE57SD4/ref=psdc_6396124011_t2_B075WZJL6N>
 
-SDCard Writers
+SD Card Writers
 
 *
 <https://www.amazon.com/Collection-MicroSD-MicroSDHC-MicroSDXC-Kingston/dp/B01IF7TPMS/ref=sr_1_15?s=electronics&ie=UTF8&qid=1518271583&sr=1-15&keywords=Micro+SD+Card+writer>

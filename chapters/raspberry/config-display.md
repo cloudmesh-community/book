@@ -1,12 +1,12 @@
-## Automatic Display Detection [:cloud:](https://github.com/cloudmesh/book/blob/master/cloud-clusters/chapters/raspberry/config-display.md)
+## Automatic Display Detection
 
 ### Purpose 
 
 In case you like to use the Raspberry Pi in your office, at home, or
 in the field, you may find yourself in a situation where different
 monitors with different resolutions are attached. Especially in the
-field it is convenient if the Pi coudl do this adjustment for you and
-use the resolution seigned for the attached device.
+field it is convenient if the Pi could do this adjustment for you and
+use the resolution assigned for the attached device.
 
 In this section we describe such a solution. We will automatically
 detect the resolution based on the monitor attached. Once detected the
@@ -71,7 +71,7 @@ Now you can go in the filed and use the monitor of your choice
 ### Adding new monitors
 
 1. Look at the monitor name
-2. look at the prefered resolution
+2. look at the preferred resolution
 3. create an new elif in the switch
 
 ### Exercises
@@ -79,8 +79,8 @@ Now you can go in the filed and use the monitor of your choice
 E.Display.1:
 
 > Make the displaydetect.py truly discoverable, find a default
-> resolution that you put in to the else statement. Identfy the
-> prefered solution from the script and use that. Parse the apropriate
+> resolution that you put in to the else statement. Identify the
+> preferred solution from the script and use that. Parse the appropriate
 > parameters such as x,y, ans aspect ratio, rotation and other
 > parameters.
 
