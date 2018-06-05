@@ -1,14 +1,22 @@
 
 FILENAME=vonLaszewski-cloud-cluster-pi
 
-OS=$(shell uname)
-UNAME := $(shell uname)
+OS=$(shell ../bin/sysinfo.py)
 
-ifeq ($(UNAME), Darwin)
+ifeq ($(OS), osx)
 OPEN_EPUB=open
+MARKUPALL=../bin/markup-all.py
+MERMAID=mermaid-filter
 endif
-ifeq ($(UNAME), Linux)
+ifeq ($(OS), linux)
 OPEN_EPUB=xdg-open
+MARKUPALL=../bin/markup-all.py
+MERMAID=mermaid-filter
+endif
+ifeq ($(OS), windows)
+OPEN_EPUB=TBD
+MARKUPALL=TBD
+MERMAID=mermaid-filter.cmd
 endif
 
 ######################################################################
@@ -68,6 +76,7 @@ ART=\
  chapters/art/sentient.md
  
 CHAPTER_IN=\
+ chapters/linux/ssh-futuresystems.md\
  chapters/in/ansible.md\
  chapters/in/assignments.md\
  chapters/in/box.md\
@@ -294,16 +303,13 @@ INDEX=\
  $(CHAPTER_REFERENCES)
 
 
-
-
-
 X=\
 	$(CHAPTER_OTHER) \
 	$(CHAPTER_PYTHON) \
   $(CHAPTER_IN) \
   $(CHAPTER_BIGDATA)
 
-MARKDOWN-OPTIONS=-F mermaid-filter -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
+MARKDOWN-OPTIONS=-F $(MERMAID) -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
 CSL=--csl=template/ieee-with-url.csl
 FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
@@ -319,7 +325,7 @@ epub: dot refernces todo
 	rsync -r ../template dest
 	rsync -r ../template/fonts dest
 	rsync -r ../chapters dest
-	../bin/markup-all.py
+	$(MARKUPALL)
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
 	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      
