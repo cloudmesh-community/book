@@ -92,7 +92,7 @@ Pi.Cluster.Spark
 
 ### Cluster Case
 
-IN this exercise you will be designing a cluster case so you can put
+In this exercise you will be designing a cluster case so you can put
 the Pi's in a professional looking case that also protects the
 equipment.
 
@@ -113,9 +113,9 @@ PI.case.5
 
 PI.case.n
 
-Please reuse the Pi.Case.5 as basis, e.g. it is a shelf in which we
-place the cases. Make sure to organize power and allow for easy access
-to the cases and the pis within the case.
+: Please reuse the Pi.Case.5 as basis, e.g. it is a shelf in which we
+  place the cases. Make sure to organize power and allow for easy
+  access to the cases and the pis within the case.
 
 ### Cluster Case Lego
 

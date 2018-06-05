@@ -119,7 +119,7 @@ hand. This is unnecessary as all the steps can be provided by a script.
 
 The reason we want everything scripted is that we like to replicate this
 many many times as we want to replicate a swarm cluster for example on
-100 PIs doing this on 1-4 by hand may be reasonable, but doing this on
+100 Pi's doing this on 1-4 by hand may be reasonable, but doing this on
 100, we have to further automate this.
 
 Using just 4 zeros is a good way to test this automated setup.
