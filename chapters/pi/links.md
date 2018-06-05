@@ -19,9 +19,9 @@ these activities.
 #### Lego
 
 When looking at the placement of the wholes on the Raspberry Pi, the
-width between the wholes on the small side seems to be exactly 7 lego
-technic beam wholes appart. This has the advantage that one could
-build a quick frame form lego pieces such as a
+width between the wholes on the small side seems to be exactly 7 Lego
+technic beam wholes apart. This has the advantage that one could
+build a quick frame form Lego pieces such as a
 
 - 2 * 11 ($0.22) piece
   * <https://www.brickowl.com/catalog/lego-beam-11-32525-64290>
@@ -34,11 +34,11 @@ build a quick frame form lego pieces such as a
 The cost is about $0.25 per piece = $2.74 per pi.
 
 So if we are having 100 pis we end up with $274. However
-we also need still to get screw and lego connectors which we at this
+we also need still to get screw and Lego connectors which we at this
 time have not counted and included in this calculation.
 
 
-Naturally legos have been explored by others
+Naturally Lego's have been explored by others
 
 * [Images on google](https://www.google.com/search?q=raspberry+pi+case+lego+technic&rlz=1C5CHFA_enUS727US727&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwjYwYbni6vbAhWJy4MKHaiiCmYQsAQIMw&biw=1648&bih=883)
 * University of Southampton:
@@ -49,10 +49,10 @@ Naturally legos have been explored by others
   <https://www.reddit.com/r/raspberry_pi/comments/39kwjc/pidra_my_7_headed_rpi_cluster_with_99_lego/>,
   <https://imgur.com/a/rYybo>
 * Lego Technic <https://www.flickr.com/photos/fotero/7954299054/>
-* Old style lego <https://www.uweziegenhagen.de/?p=3155>
+* Old style Lego <https://www.uweziegenhagen.de/?p=3155>
 
 
-Other ideas using legos include:
+Other ideas using Lego's include:
 
 * Compact case: Single board No screws <https://www.youtube.com/watch?v=UYY72a6wWqs>
 * Zero 3D print Thingverse <https://www.thingiverse.com/thing:1427245>
