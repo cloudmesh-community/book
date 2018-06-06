@@ -7,17 +7,17 @@ MARKUPALL=../bin/markup-all.py
 
 ifeq ($(OS), osx)
 OPEN_EPUB=open
-MERMAID=mermaid-filter
+MERMAID=-F mermaid-filter
 COPY=rsync
 endif
 ifeq ($(OS), linux)
 OPEN_EPUB=xdg-open
-MERMAID=mermaid-filter
+MERMAID=-F mermaid-filter
 COPY=rsync
 endif
 ifeq ($(OS), windows)
 OPEN_EPUB=open
-MERMAID=mermaid-filter.cmd
+MERMAID=-F mermaid-filter.cmd
 COPY=cp
 endif
 
@@ -267,7 +267,9 @@ CHAPTER_PI=\
  chapters/pi/preface.md\
  chapters/preface/notation.md\
  chapters/preface/contributors.md\
- chapters/preface/contributing.md\
+ chapters/preface/contributing.md
+
+B=\
  chapters/preface/git.md\
  chapters/pi/board.md\
  chapters/pi/case.md\
@@ -307,7 +309,9 @@ CHAPTER_REFERNCES=\
 
 
 INDEX=\
- $(CHAPTER_PI)\
+ $(CHAPTER_PI)
+
+A=\
  $(MAPREDUCE)\
  $(CHAPTER_PYTHON)\
  $(CHAPTER_REFERENCES)
@@ -319,7 +323,7 @@ X=\
   $(CHAPTER_IN) \
   $(CHAPTER_BIGDATA)
 
-MARKDOWN-OPTIONS=-F $(MERMAID) -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
+MARKDOWN-OPTIONS=$(MERMAID) -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
 CSL=--csl=template/ieee-with-url.csl
 FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
