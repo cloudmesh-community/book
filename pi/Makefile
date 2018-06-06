@@ -274,6 +274,7 @@ CHAPTER_PI=\
  chapters/login-node.md\
  chapters/sd-card.md\
  chapters/linux/linux.md\
+ chapters/SECTION-DRAFT.md\
  chapters/linux/ssh.md\
  chapters/linux/ssh2.md\
  chapters/linux/refcards.md\
