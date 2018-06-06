@@ -259,6 +259,9 @@ CHAPTER_PYTHON=\
  chapters/prg/python-libcloud.md\
  chapters/references.md
 
+DEPRECATED=\
+ chapters/linux/ssh2.md
+
 CHAPTER_PI=\
  chapters/SECTION-PREFACE.md\
  chapters/pi/preface.md\
@@ -276,7 +279,6 @@ CHAPTER_PI=\
  chapters/linux/linux.md\
  chapters/SECTION-DRAFT.md\
  chapters/linux/ssh.md\
- chapters/linux/ssh2.md\
  chapters/linux/refcards.md\
  chapters/raspberry/config-display.md\
  chapters/raspberry/motherboard-led.md\

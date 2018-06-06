@@ -1,16 +1,16 @@
 # Secure Shell
 
-Secure Shell is a network protocoll allowing users to securely connect
+Secure Shell is a network protocol allowing users to securely connect
 to remote resources over the internet. In many services we need to use
 SSH to assure that we protect he messages send between the
 communicating entities. Secure Shell is based on public key
-technology requiering to generat ea public-private keypair on the
+technology requiring to generat ea public-private key pair on the
 computer. The public key will than be uploaded to the remote machine
-and whan a connection is establisched during authentication the public
-private keypair is tested. If they match authetication is granted. As
+and whan a connection is established during authentication the public
+private key pair is tested. If they match authentication is granted. As
 many users may have to share a computer it is possible to add a list
 of public keys so that a number of computers can connect to a server
-that hosts such a list. This mechnism builds the basis for networked
+that hosts such a list. This mechanism builds the basis for networked
 computers.
 
 In this section we will introduce you to some of the commands to
@@ -29,7 +29,7 @@ copied to another machine.
 ## ssh-keygen
 
 The first thing you will need to do is to create a public private
-keypair. Before you do this check whether there are already keys on
+key pair. Before you do this check whether there are already keys on
 the computer you are using:
 	
 	ls ~/.ssh
@@ -38,7 +38,7 @@ If there are files named id_rsa.pub or id_dsa.pub, then the keys are set up
 already, and we can skip the generating keys step. However you must
 know the passphrase of the key. If you forgot it you will need to
 recreate the key. However you will lose any ability to connect with
-the old key to the respurces to which you uploaded the public key. So
+the old key to the resources to which you uploaded the public key. So
 be careful.
 
 To generate a key pair use the command
@@ -55,7 +55,7 @@ $ ssh-keygen -t rsa -C <comment>
 The comment will remind you where the key has been created, you could
 for example use the hostname on which you created the key. 
 
-In the follwoing text we will use *localname* to indicate the username
+In the following text we will use *localname* to indicate the username
 on your computer on which you execute the command.
 
 The command requires the interaction of the user. The first question
@@ -84,7 +84,7 @@ passwordless keys, but such systems need to be properly protected.
 
 ---
 
-:warning: *Not using passhrases poses a security risk!*
+:warning: *Not using passphrases poses a security risk!*
 
 ---
 
@@ -174,8 +174,8 @@ You will see the following output once you have completed that step:
 ## ssh-add
 
 Often you wil find wrong information about passphrases on the internet
-and peopel recommending you not to use one. However it is in almost
-all cases better to craete a keypair and use `ssh-add` to add the key to
+and people recommending you not to use one. However it is in almost
+all cases better to create a key pair and use `ssh-add` to add the key to
 the current session so it can be used in behalf of you. This is
 accomplished with an agent.
 
@@ -276,8 +276,8 @@ terminal.
 
 ### SSH on Windows
 
-In case you need access to ssh Microsoft has furtunately updated their
-software to be able to run it directly from the Winodws commandline
+In case you need access to ssh Microsoft has fortunately updated their
+software to be able to run it directly from the Windows commandline
 including PowerShell.
 
 However it is as far as we know not activated by default so you need to
@@ -311,7 +311,7 @@ type it in the commandshell or PowerShell
 Naturally you can now use it just as on Linux or OSX. and use it to
 login to other resources
 
-    PS C:\Users\gregor> ssh myname@computer.example.com
+    PS C:\Users\gregor> ssh myname@example.com
 
 ### Access a Remote Machine
 
@@ -320,7 +320,7 @@ machine. To dod so the public key needs to be added to the
 `authorized_keys` file on the remote machine.
 
 
-The easiets way to do tis is to use the command
+The easiest way to do tis is to use the command
 `ssh-copy-id`.
 
 	$ ssh-copy-id user@host
@@ -548,9 +548,9 @@ No blank passphrases
     chameleon cloud resources, we may elect to give you an *F* for the
     assignment in question. There are some exceptions, but they will be
     clearly communicated to you in class. You will as part of your cloud
-    drivers license test explain how you gain access to futuresystmes
+    drivers license test explain how you gain access to futuresystems
     and chameleon to explicitly explain this point and provide us with
-    reasosns what you can not do.
+    reasons what you can not do.
 
 A key for each server
 
@@ -582,8 +582,6 @@ keep an offline backup, put encrypt the drive
 
 -   [The Secure Shell: The Definitive Guide, 2 Ed (O'Reilly and
     Associates)](http://shop.oreilly.com/product/9780596008956.do)
-
--   [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
 ### Exercises
 
