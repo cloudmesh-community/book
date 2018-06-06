@@ -15,6 +15,10 @@ Previous github locations include:
 * <https://github.com/cloudmesh-community>
 * <https://gitlab.com/cloudmesh_fall2016>
 
+Previous book githubs include
+
+* <https://github.com/cloudmesh/book>
+
 Exercises
 ---------
 
