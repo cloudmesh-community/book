@@ -76,14 +76,14 @@ just a start as the design does not include any connectors.
 
 [scad file](images/case-a.scad)
 
-![](images/case-a.png)
+![Figure: TBD](images/case-a.png)
 
 Next we show you how to use some predefined Raspbery PI boards in SCAD
 and use for loops to create rows and columns of 5 PIs each.
 
 [100-pis](images/100-pis.scad)
 
-![](images/100-pis.png)
+![Figure: TBD](images/100-pis.png)
 
 In the last design we showcase how the basis of a 5 node cluster could
 start. Naturally many other thing s need to be improved. Such as the
@@ -93,7 +93,7 @@ up with a final design.
 
 [100-pis](images/parts.scad)
 
-![](images/parts.png)
+![FIGURE: TBD](images/parts.png)
 
 Once you have designed the 5 node cluster, you will also need to
 design a shelf in which you can place them. Power plugs need to be
