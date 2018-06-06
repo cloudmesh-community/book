@@ -16,7 +16,8 @@ computers.
 In this section we will introduce you to some of the commands to
 utilize secure shell. We will reuse this technology in other sections
 to for example create a network of workstations to which we can log in
-from your laptop.
+from your laptop. For more information please also consult with the
+[SSH Manual](http://openssh.com/manual.html).
 
 ---
 
@@ -40,16 +41,45 @@ recreate the key. However you will lose any ability to connect with
 the old key to the respurces to which you uploaded the public key. So
 be careful.
 
-To generate a key pair use the command:
+To generate a key pair use the command
+[ssh-keygen](http://linux.die.net/man/1/ssh-keygen).  This program is
+commonly available on most UNIX systems and most recently even
+Windows 10. 
+
+To generate the key, please type:
 
 ```bash
-$ ssh-keygen -b 2048 -t rsa -C <your comment>
+$ ssh-keygen -t rsa -C <comment>
 ```
 
 The comment will remind you where the key has been created, you could
-for example use the hostname on which you created the Key. The command
-will ask you to enter a *passphrase*. In most cases you **MUST**
-provide one. Only for some system related services you may create
+for example use the hostname on which you created the key. 
+
+In the follwoing text we will use *localname* to indicate the username
+on your computer on which you execute the command.
+
+The command requires the interaction of the user. The first question
+is:
+
+    Enter file in which to save the key (/home/localname/.ssh/id_rsa): 
+
+We recommend using the default location ~/.ssh/ and the default name
+id_rsa. To do so, just press the enter key.
+
+
+The second and third question is to protect your ssh key with a
+passphrase. This passphrase will protect your key because you need to
+type it when you want to use it. Thus, you can either type a passphrase
+or press enter to leave it without passphrase. To avoid security
+problems, you **MUST** chose a passphrase.
+
+ It will ask you for the location and name of the new key. It will
+also ask you for a passphrase, which you **MUST** provide. Please use
+a strong passphrase to protect it appropriately. Some may advise you
+(including teachers and TA's) to not use passphrases.  This is
+**WRONG** as it allows someone that gains access to your computer to
+also gain access to all resources that have the public key.
+Only for some system related services you may create
 passwordless keys, but such systems need to be properly protected.
 
 ---
@@ -58,11 +88,50 @@ passwordless keys, but such systems need to be properly protected.
 
 ---
 
-Once you enter the passphrase and hit Enter, your public and private key will be
-stored in the `~/.ssh` folder. The following files will be created:
+Make sure to not just type
+return for an empty passphrase:
 
-* `id_rsa.pub`, which is your public key
-* `id_rsa`, which is your private key
+    Enter passphrase (empty for no passphrase):
+
+and:
+
+    Enter same passphrase again:
+
+If executed correctly, you will see some output similar to:
+
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/home/localname/.ssh/id_rsa): 
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved in /home/localname/.ssh/id_rsa.
+    Your public key has been saved in /home/localname/.ssh/id_rsa.pub.
+    The key fingerprint is:
+    34:87:67:ea:c2:49:ee:c2:81:d2:10:84:b1:3e:05:59 localname@indiana.edu
+
+    +--[ RSA 2048]----+
+    |.+...Eo= .       |
+    | ..=.o + o +o    |
+    |O.  = ......     |
+    | = .   . .       |
+    +-----------------+
+
+Once, you have generated your key, you should have them in the `.ssh`
+directory. You can check it by:
+
+    $ cat ~/.ssh/id_rsa.pub
+
+If everything is normal, you will see something like:
+
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCXJH2iG2FMHqC6T/U7uB8kt
+    6KlRh4kUOjgw9sc4Uu+Uwe/kshuispauhfsjhfm,anf6787sjgdkjsgl+EwD0
+    thkoamyi0VvhTVZhj61pTdhyl1t8hlkoL19JVnVBPP5kIN3wVyNAJjYBrAUNW
+    4dXKXtmfkXp98T3OW4mxAtTH434MaT+QcPTcxims/hwsUeDAVKZY7UgZhEbiE
+    xxkejtnRBHTipi0W03W05TOUGRW7EuKf/4ftNVPilCO4DpfY44NFG1xPwHeim
+    Uk+t9h48pBQj16FrUCp0rS02Pj+4/9dNeS1kmNJu5ZYS8HVRhvuoTXuAY/UVc
+    ynEPUegkp+qYnR user@myemail.edu
+
+The directory `~/.ssh` will also contain the private key `id_rsa` which you
+must not share or copy to another computer.
 
 ---
 
@@ -85,22 +154,21 @@ id_rsa.pub
 known_hosts
 ```
 
-* The `id_rsa` file is your private key. Keep this on your computer and
-  do not share this file.
+In case you need to change your change passphrase, you can simply run
+`ssh-keygen -p` command. Then specify the location of your current key,
+and input (old and) new passphrases. There is no need to re-generate
+keys:
 
-* The `id_rsa.pub` file is your public key. This is what you share with
-  machines you want to connect to. When the machine you try to connect
-  to matches up your public and private key, it will allow you to
-  connect.
+    ssh-keygen -p
 
-To view public key:
+You will see the following output once you have completed that step:
 
-	$ cat ~/.ssh/id_rsa.pub
-	
-It should be in the form:
-
-    ssh-rsa <LONG STRING OF RANDOM CHARACTERS> <your comment>
-
+    Enter file in which the key is (/home/localname/.ssh/id_rsa):
+    Enter old passphrase:
+    Key has comment '/home/localname/.ssh/id_rsa'
+    Enter new passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved with the new passphrase.
 
 
 ## ssh-add
@@ -163,7 +231,87 @@ The command line options of `ssh-add` are as follows:
 | `-X` | Unlocks the agent. This asks for a password to unlock. |
 | `-x` | Locks the agent. This asks for a password; the password is required for unlocking the agent. When the agent is locked, it cannot be used for authentication. |
 
+SSH Add and Agent
+-----------------
 
+To not always type in your password, you can use `ssh-add` as
+previously discussed
+
+It prompts the user for a private key passphrase and add it to a list of
+keys managed by the ssh-agent. Once it is in this list, you will not be
+asked for the passphrase as long as the agent is running.with your
+public key. To use the key across terminal shells you can start an ssh agent.
+
+To start the agent please use the following command:
+
+    eval `ssh-agent`
+
+It is important that you use the backquote, located under the tilde
+(US keyboard), rather than the single quote. Once the agent is started
+it will print a PID that you can use to interact with later
+
+To add the key use the command
+
+    ssh-add
+
+To remove the agent use the command
+
+    kill $SSH_AGENT_PID
+
+To execute the command upon logout, place it in your `.bash_logout`
+(assuming you use bash).
+
+
+### Using SSH on Mac OS X
+
+Mac OS X comes with an ssh client. In order to use it you need to open
+the `Terminal.app` application. Go to `Finder`, then click `Go` in the
+menu bar at the top of the screen. Now click `Utilities` and then open
+the `Terminal` application.
+
+### Using SSH on Linux
+
+All Linux versions come with ssh and can be used right from the
+terminal.
+
+### SSH on Windows
+
+In case you need access to ssh Microsoft has furtunately updated their
+software to be able to run it directly from the Winodws commandline
+including PowerShell.
+
+However it is as far as we know not activated by default so you need to
+follow some setup scripts. Also this software is considered beta and its
+development and issues can be found at
+
+<https://github.com/PowerShell/Win32-OpenSSH>
+<https://github.com/PowerShell/Win32-OpenSSH/issues>
+What you have to do is to install it by going to
+
+    Settings > Apps
+
+and click
+
+    Manage optional features
+
+under
+
+    Apps & features
+
+
+Next, Click on the `Add feature`. You will be presented with a list in
+which you scroll down, till you find `OpenSSH Client (Beta)`. Click on
+it and invoke `Install`.
+
+After the install has completed, you can use the `ssh` command. Just
+type it in the commandshell or PowerShell
+
+    PS C:\Users\gregor> ssh
+
+Naturally you can now use it just as on Linux or OSX. and use it to
+login to other resources
+
+    PS C:\Users\gregor> ssh myname@computer.example.com
 
 ### Access a Remote Machine
 
@@ -386,3 +534,71 @@ Next we provide an example on how to use a config file
 
 
 
+### Tips
+
+
+Use SSH keys
+
+-   You will need to use ssh keys to access remote machines
+
+No blank passphrases
+
+-   In most cases you must use a passphrase with your key. In fact if we
+    find that you use passwordless keys to futuresystems and to
+    chameleon cloud resources, we may elect to give you an *F* for the
+    assignment in question. There are some exceptions, but they will be
+    clearly communicated to you in class. You will as part of your cloud
+    drivers license test explain how you gain access to futuresystmes
+    and chameleon to explicitly explain this point and provide us with
+    reasosns what you can not do.
+
+A key for each server
+
+-   Under no circumstances copy the same private key on multiple
+    servers. THis violates security best practices. Create for each
+    server a new private key and use their public keys to gain access to
+    the appropriate server.
+
+Use SSH agent
+
+-   So as to not to type in all the time the passphrase for a key, we
+    recommend using ssh-agent to manage the login. This will be part of
+    your cloud drivers license.
+
+    But shut down the ssh-agent if not in use
+
+keep an offline backup, put encrypt the drive
+
+-   You may for some of our projects need to make backups of private
+    keys on other servers you set up. If you like to make a backup you
+    can do so on a USB stick, but make sure that access to the stick is
+    encrypted. Do not stor anything else on that key and look it in a
+    safe place. If you lose the stick, recreate all keys on all
+    machines.
+
+
+### Refernces
+
+
+-   [The Secure Shell: The Definitive Guide, 2 Ed (O'Reilly and
+    Associates)](http://shop.oreilly.com/product/9780596008956.do)
+
+-   [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
+
+### Exercises
+
+SSH.1
+
+: create an SSH key pair
+
+SSH.2
+
+: upload the public key to git repository you use. Create a fork in
+  git and use your ssh key to clone and commit to it
+
+SSH.3
+
+: Get an account on futuresystems.org (if you are authorized to do
+  so). Upload your key to <https://futuresystems.org>. Login to
+  india.futuresystems.org. Note that this could take some time as
+  administrators need to approve you. Be patient.
