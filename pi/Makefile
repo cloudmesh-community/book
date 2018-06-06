@@ -362,7 +362,7 @@ ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(INDEX) > all.md
 endif
 ifeq ($(OS), linux)
-	cd dest; iconv -t utf-8 $(INDEX) -o all.md
+	cd dest; cat $(INDEX) > all.md
 endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
