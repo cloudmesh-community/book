@@ -246,6 +246,10 @@ To start the agent please use the following command:
 
     eval `ssh-agent`
 
+or use
+
+    eval "$(ssh-agent -s)"
+
 It is important that you use the backquote, located under the tilde
 (US keyboard), rather than the single quote. Once the agent is started
 it will print a PID that you can use to interact with later
@@ -260,6 +264,18 @@ To remove the agent use the command
 
 To execute the command upon logout, place it in your `.bash_logout`
 (assuming you use bash).
+
+On OSX you can also add the key permanently to the keychain if you do
+toe following:
+
+    ssh-add -K ~/.ssh/id_rsa
+
+Modify the file `.ssh/config` and add the following lines:
+
+    Host *
+      UseKeychain yes
+      AddKeysToAgent yes
+      IdentityFile ~/.ssh/id_rsa
 
 
 ### Using SSH on Mac OS X
@@ -577,7 +593,7 @@ keep an offline backup, put encrypt the drive
     machines.
 
 
-### Refernces
+### References
 
 
 -   [The Secure Shell: The Definitive Guide, 2 Ed (O'Reilly and
