@@ -3,20 +3,22 @@ FILENAME=vonLaszewski-cloud-cluster-pi
 
 OS=$(shell ../bin/sysinfo.py)
 
+MARKUPALL=../bin/markup-all.py
+
 ifeq ($(OS), osx)
 OPEN_EPUB=open
-MARKUPALL=../bin/markup-all.py
 MERMAID=mermaid-filter
+COPY=rsync
 endif
 ifeq ($(OS), linux)
 OPEN_EPUB=xdg-open
-MARKUPALL=../bin/markup-all.py
 MERMAID=mermaid-filter
+COPY=rsync
 endif
 ifeq ($(OS), windows)
 OPEN_EPUB=open
-MARKUPALL=../bin/markup-all.py
 MERMAID=mermaid-filter.cmd
+COPY=cp
 endif
 
 ######################################################################
@@ -258,7 +260,11 @@ CHAPTER_PYTHON=\
  chapters/references.md
 
 CHAPTER_PI=\
+ chapters/SECTION-PREFACE.md\
+ chapters/preface/preface.md\
  chapters/pi/contributors.md\
+ chapters/preface/contributing.md\
+ chapters/preface/git.md\
  chapters/pi/board.md\
  chapters/pi/case.md\
  chapters/case/case.md\
@@ -320,12 +326,13 @@ RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/containe
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
 epub: dot refernces todo
-	cp metadata.txt dest
-	cp -r cover dest
-	cp -r ../template dest
-	cp -r ../template/fonts dest
-	cp -r ../chapters dest	
+	$(COPY) metadata.txt dest
+	$(COPY) -r cover dest
+	$(COPY) -r ../template dest
+	$(COPY) -r ../template/fonts dest
+	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
+	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
 	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      
