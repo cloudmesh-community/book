@@ -31,6 +31,7 @@ RUN apt-get update -q && apt-get install -qy \
     chromium-browser \
     yarn
 
+
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
@@ -42,23 +43,21 @@ RUN groupadd --gid 1000 cm \
 RUN adduser cm sudo
 
 
-RUN touch /package.json
-
-RUN npm install minimatch@3.0.2 --save-dev
-
-RUN npm install -g  raghur/mermaid-filter#e227ecc mermaid phantomjs
-
 
 RUN wget -q https://github.com/jgm/pandoc/releases/download/2.2.1/pandoc-2.2.1-linux.tar.gz
 
 RUN tar xvzf pandoc-2.2.1-linux.tar.gz --strip-components 1 -C /usr/local
 
-#RUN npm install --global mermaid-filter
+
+RUN npm install --global mermaid-filter
+RUN npm install -g minimatch
 
 USER cm
 
 WORKDIR /home/cm
 
 RUN git clone https://github.com/cloudmesh-community/book.git
+
+WORKDIR /home/cm/book/pi
 
 
