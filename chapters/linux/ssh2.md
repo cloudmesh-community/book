@@ -1,5 +1,4 @@
-SSH
-===
+# SSH
 
 If you do not know what ssh is we recommend that you [read up on
 it](http://openssh.com/manual.html). However, the simple material
@@ -16,8 +15,7 @@ provide a public ssh key to FutureSystem. We explain how to generate a
 ssh key, upload it to the FutureSystem portal and log onto the
 resources. This manual covers UNIX, Mac OS X, as well as Windows 10.
 
-Generate a SSH key
-------------------
+## Generate a SSH key
 
 First we must generate a ssh key with the tool
 [ssh-keygen](http://linux.die.net/man/1/ssh-keygen). This program is
@@ -97,8 +95,7 @@ If everything is normal, you will see something like:
     Uk+t9h48pBQj16FrUCp0rS02Pj+4/9dNeS1kmNJu5ZYS8HVRhvuoTXuAY/UVc
     ynEPUegkp+qYnR user@myemail.edu
 
-Add or Replace Passphrase
--------------------------
+## Add or Replace Passphrase
 
 In case you need to change your change passphrase, you can simply run
 `ssh-keygen -p` command. Then specify the location of your current key,
@@ -149,10 +146,12 @@ SSH Config
 ----------
 
 \TODO{describe ssh config}
+
 SSH Port Forwarding
 -------------------
 
 \TODO{describe port forwarding}
+
 Upload the key to gitlab
 ------------------------
 
@@ -162,6 +161,7 @@ In case you use gitlab Follow the instructions provided here to upload
 the public key
 
 <http://docs.gitlab.com/ce/ssh/README.html>
+
 Using SSH on Mac OS X
 ---------------------
 
@@ -285,6 +285,7 @@ reference="F:putty-key"}).
        {images/chameleon/putty2.png}
        {Key generation window}
        {F:putty-key}
+
 To generate a key you click the *Generate* button which is blue. The
 PuTTY Key Generator (see
 Figure [\[F:putty-pass\]](#F:putty-pass){reference-type="ref"
@@ -297,6 +298,7 @@ must enter a "Key passphrase" and then confirm the passphrase.
        {images/chameleon/putty3.png}
        {Key generation window}
        {F:putty-pass}
+
 Next you need to save both the public and private keys into a file of
 your choice using the "Save public key" and "Save private key" buttons.
 We suggest you name something obvious like "public\_key.pub" and
@@ -350,25 +352,15 @@ of packages can be found at
 Packages of interest include
 
 -   emacs: choco install emacs
-
 -   pandoc: choco install pandoc
-
 -   LaTeX: choco install miktex
-
 -   jabref: choco install jabref
-
 -   pycharm: choco install pycharm-community
-
 -   lyx: choco install lyx
-
 -   python 2: choco install python2
-
 -   python 3: choco install python
-
 -   pip: choco install pip
-
 -   virtualbox: choco install virtualbox
-
 -   vagrant: choco install vagrant
 
 Before installing any of them evaluate if you need them and identify
@@ -428,13 +420,18 @@ Refernces
 Exercises
 ---------
 
-[\[E:SSH.1\]]{#E:SSH.1 label="E:SSH.1"} create an SSH key pair
+SSH.1
 
-[\[E:SSH.2\]]{#E:SSH.2 label="E:SSH.2"} upload the public key to git
-repository you use. Create a fork in git and use your ssh key to clone
-and commit to it
+: create an SSH key pair
 
-[\[E:SSH.3\]]{#E:SSH.3 label="E:SSH.3"} Get an account on
-futuresystems.org (if you are authorized to do so). Upload your key to
-futuresystems.org. Login to india.futuresystems.org. Note that this
-could take some time as administrators need to approve you. Be patient.
+SSH.2
+
+: upload the public key to git repository you use. Create a fork in
+  git and use your ssh key to clone and commit to it
+
+SSH.3
+
+: Get an account on futuresystems.org (if you are authorized to do
+  so). Upload your key to <https://futuresystems.org>. Login to
+  india.futuresystems.org. Note that this could take some time as
+  administrators need to approve you. Be patient.
