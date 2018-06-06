@@ -14,8 +14,8 @@ MARKUPALL=../bin/markup-all.py
 MERMAID=mermaid-filter
 endif
 ifeq ($(OS), windows)
-OPEN_EPUB=TBD
-MARKUPALL=TBD
+OPEN_EPUB=open
+MARKUPALL=../bin/markup-all.py
 MERMAID=mermaid-filter.cmd
 endif
 
@@ -320,11 +320,11 @@ RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/containe
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
 epub: dot refernces todo
-	rsync metadata.txt dest
-	rsync -r cover dest
-	rsync -r ../template dest
-	rsync -r ../template/fonts dest
-	rsync -r ../chapters dest
+	cp metadata.txt dest
+	cp -r cover dest
+	cp -r ../template dest
+	cp -r ../template/fonts dest
+	cp -r ../chapters dest	
 	$(MARKUPALL)
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
