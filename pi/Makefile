@@ -362,7 +362,12 @@ epub: dot refernces todo
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 	../bin/section.py 1 ":construction::construction::construction::construction::construction::construction::construction::construction::construction::construction::construction:" > dest/chapters/SECTION-DRAFT.md
+ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(INDEX) > all.md
+endif
+ifeq ($(OS), linux)
+	cd dest; iconv -t utf-8 $(INDEX) -o all.md
+endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
 refernces:
