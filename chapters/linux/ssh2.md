@@ -19,8 +19,7 @@ resources. This manual covers UNIX, Mac OS X, as well as Windows 10.
 
 First we must generate a ssh key with the tool
 [ssh-keygen](http://linux.die.net/man/1/ssh-keygen). This program is
-commonly available on most UNIX syste
-ms (this includes Cygwin if you
+commonly available on most UNIX systems (this includes Cygwin if you
 installed the ssh module or use our pre-generated cygwin executable). It
 will ask you for the location and name of the new key. It will also ask
 you for a passphrase, which you **MUST** provide. Please use a strong
@@ -435,3 +434,10 @@ SSH.3
   so). Upload your key to <https://futuresystems.org>. Login to
   india.futuresystems.org. Note that this could take some time as
   administrators need to approve you. Be patient.
+
+SSH.4
+
+: What is the output of a key that has a passphrase when executing the
+  following command. Test it out on your key
+
+      $ grep ENCRYPTED ~/.ssh/id_rsa
