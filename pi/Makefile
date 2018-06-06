@@ -274,9 +274,7 @@ CHAPTER_PI=\
  chapters/pi/preface.md\
  chapters/preface/notation.md\
  chapters/preface/contributors.md\
- chapters/preface/contributing.md
-
-B=\
+ chapters/preface/contributing.md\
  chapters/preface/git.md\
  chapters/pi/board.md\
  chapters/pi/case.md\
@@ -316,9 +314,7 @@ CHAPTER_REFERNCES=\
 
 
 INDEX=\
- $(CHAPTER_PI)
-
-A=\
+ $(CHAPTER_PI)\
  $(MAPREDUCE)\
  $(CHAPTER_PYTHON)\
  $(CHAPTER_REFERENCES)
