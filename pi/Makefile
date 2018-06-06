@@ -2,9 +2,13 @@
 FILENAME=vonLaszewski-cloud-cluster-pi
 
 OS=$(shell ../bin/sysinfo.py)
+DOCKER=$(shell ../bin/isdocker.py)
 
 MARKUPALL=../bin/markup-all.py
 
+#
+# removing mermaid filter from linux as we do not yet know how to use it in docker
+#
 ifeq ($(OS), osx)
 OPEN_EPUB=open
 MERMAID=-F mermaid-filter
@@ -19,6 +23,9 @@ ifeq ($(OS), windows)
 OPEN_EPUB=open
 MERMAID=-F mermaid-filter.cmd
 COPY=cp
+endif
+ifeq ($(DOCKER), True)
+MERMAID=
 endif
 
 ######################################################################
