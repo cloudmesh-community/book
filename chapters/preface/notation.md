@@ -1,4 +1,3 @@
-
 ## Notation
 
 :cloud:

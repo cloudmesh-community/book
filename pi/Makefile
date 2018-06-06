@@ -261,7 +261,8 @@ CHAPTER_PYTHON=\
 
 CHAPTER_PI=\
  chapters/SECTION-PREFACE.md\
- chapters/preface/preface.md\
+ chapters/pi/preface.md\
+ chapters/preface/notation.md\
  chapters/pi/contributors.md\
  chapters/preface/contributing.md\
  chapters/preface/git.md\

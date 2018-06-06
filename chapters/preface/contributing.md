@@ -4,7 +4,7 @@ The document is written in markdown and managed with a Makefile
 developed by Gregor von Laszewski. Contributing  content is easy as
 everything is stored in github in the following directory:
 
-* <https://github.com/cloudmesh/book/tree/master/cloud-clusters>
+* <https://github.com/cloudmesh-community/book/tree/master/>
 
 Content can be contributed via pull requests that are either created
 while you directly edit the content via the github Web interface, or a
@@ -48,8 +48,13 @@ Contrib.3:
     down/copy the times you get:
 
         echo "CLONE"
-        time git clone https://github.com/cloudmesh/book.git
-        cd cloud-cluster 
+        time git clone https://github.com/cloudmesh-community/book.git
+
+    Next change in to the directory that containes the make file for
+    your volume you like to compile. Let us assume you like to compile
+    the volume pi. Than do the following
+    
+        cd pi
         make clean
         echo MAKE
         time make
@@ -68,9 +73,10 @@ Contrib.3:
     We are only interested in the real time you measured. In addition provide also deatiled information
     about your computer, e.g.:
 
+        volume: pi
         computer: MacBook Pro, 15-in, 2016, 2.9GHz, 16GB, 2133Mhz, LPDDR3
-        CLONE: 0m36.662s
-        MAKE: 0m27.853s
+        clone: 0m36.662s
+        make: 0m27.853s
 
     You will submit this information in a FORM and will be graded upon
     submission. 
