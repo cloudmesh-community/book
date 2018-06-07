@@ -288,6 +288,7 @@ CHAPTER_PI=\
  chapters/pi/exercise.md\
  chapters/login-node.md\
  chapters/os/ubuntu-usb-osx.md\
+ chapters/SECTION-ONE-PI.md\
  chapters/sd-card.md\
  chapters/linux/linux.md\
  chapters/SECTION-DRAFT.md\
@@ -349,6 +350,7 @@ epub: dot refernces todo
 	$(COPY) -r ../template/fonts dest
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
+	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md

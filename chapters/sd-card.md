@@ -1,9 +1,10 @@
 ## Install Raspbian on a SD card
 
-For many projects we need to install an Operating system on an SD
-card. We have chose the OS **Raspbian** as it is widely
-supported. Other OS have recently been added to the available OSes for
-the PI, but we will at this time not consider them here.
+For many Raspberry Pi related projects we need to install an Operating
+system on an SD card. We use **Raspbian** as the OS as it is widely
+supported. Other OS have recently been added to the available list of
+operating systems for the PI, but we will at this time not consider
+them here.
 
 To install the OS on an SD Card you will need another computer. We
 describe next the process if you have either a MAC or an Linux Ubuntu
@@ -16,7 +17,6 @@ First, we assume you have Etcher installed on your OSX machine
 
 * You just need to download Etcher and install it. YOU can find the program at
   <https://etcher.io/>
-
 
 Next, you need to download the image and place it in a directory. We
 recommend to keep it in the `~/Download` directory.
@@ -33,6 +33,25 @@ Once the image is downloaded you copy it with etcher onto the SD-card.
 5. Select the SD card to write the image to.
 6. Review selections and click *Flash!* to begin writing data to the SD
   card.
+
+### Windows 10
+
+First you need to download the rasbian OS from
+
+* <https://downloads.raspberrypi.org/raspbian_latest>
+
+On windows 10 an easy way to create an SD card is to use etcher. You can download it s form
+
+* <https://etcher.io/>
+
+and chse to download it for Windows. You have a couple of options and
+we recommend that you use the 64 bit Installer version if your OS supports it.
+Once you download it, start Etcher and select the unzipped Raspbian
+image file. Now select the drive of the SD card. click Burn and your
+image will be written to the SD card. You can monitor the progress an
+once it is completed the SD card will automatically unmount. Use it
+now in your Raspberry Pi.
+
 
 ### Ubuntu
 
@@ -102,10 +121,10 @@ SD-Card.2
 SD-Card.3
 
 : could a script be written that does the entire process via a python
-  or shell command in gitbash?
+  or shell command in gitbash for Windows?
 
 SD-Card.4
 
 : In general the Ubuntu documentation is complex, how can it be
-  simplified?
+  simplified? Maybe through automation?
 
