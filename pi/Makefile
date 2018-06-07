@@ -296,9 +296,9 @@ CHAPTER_PI=\
  chapters/sd-card.md\
  chapters/pi/software.md\
  chapters/linux/linux.md\
- chapters/SECTION-DRAFT.md\
  chapters/linux/ssh.md\
  chapters/linux/refcards.md\
+ chapters/SECTION-DRAFT.md\
  chapters/raspberry/config-display.md\
  chapters/raspberry/motherboard-led.md\
  chapters/run-at-boot.md\
@@ -412,14 +412,14 @@ refernces:
 	cat ../bib/*.bib > dest/references.bib
 
 html:
-	pandoc $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) -o $(FILENAME).html metadata.txt $(INDEX)
+	cd dest; pandoc $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) -o $(FILENAME).html metadata.txt $(INDEX)
 
 pdf:
-	pandoc -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography refernces.bib --csl=ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
+	cd dest; pandoc -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
 
 tex:
-	pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography refernces.bib --csl=ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)
-	pdflatex content.tex
+	cd dest; pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)
+	cd dest; pdflatex content.tex
 
 
 clean:
