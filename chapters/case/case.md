@@ -206,22 +206,29 @@ drawings to identify proper placement.
 Certainly we need to identify how to connect the walls of the
 case. The following links provide some ideas for such connections.
 
-* <http://www.instructables.com/id/How-to-Make-Anything-Using-Acrylic-and-Machine-Sc/>
-* <http://skpang.co.uk/blog/archives/152>
-* <http://www.uugear.com/product/acrylic-case-for-zero4u-and-raspberry-pi-zero-clear/>
-* <https://www.phidgets.com/docs/T-Slot_Primer>
-* <https://www.modmypi.com/blog/piot-relay-zero-case-assembly-instructions>
-* <https://www.ponoko.com/blog/how-to-make/how-to-make-snug-joints-in-acrylic/>
-* <https://www.bit-tech.net/guides/modding/a_modders_guide_to_acrylic/3/>
-* <http://store.curiousinventor.com/blog/how-to-make-cheap-lasercut-custom-boxes-for-your-diy-electronics/>
-* <http://discuss.arachnidlabs.com/t/easier-lasercut-boxes-with-custom-brackets/177>
-* <https://makezine.com/2012/04/13/cnc-panel-joinery-notebook/>
-* <https://makezine.com/2015/10/29/skill-builder-acrylic/>
-* <https://www.picocluster.com/>
-
-Some also used lego technics such as
-
-* <https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9048>
+* T-nut design: A convenient connector using screws ant nuts to
+  connect walls in 90 degree angles [[link]](http://www.instructables.com/id/How-to-Make-Anything-Using-Acrylic-and-Machine-Sc/)
+* How To: Make Cheap LaserCut Custom Boxes for Your DIY Electronics,
+  includes t-bolt design [[link]](http://store.curiousinventor.com/blog/how-to-make-cheap-lasercut-custom-boxes-for-your-diy-electronics/)  
+* A tutorial on how to make snug joints. It has some good tips of
+  placing circles as stress relieve points [[link]](https://www.ponoko.com/blog/how-to-make/how-to-make-snug-joints-in-acrylic/)
+* Screw only: A design to just scuse screws to connext the walls. The
+  disadvantage is that the receiving ends need to be cut by a ahand tool. [[link]](http://skpang.co.uk/blog/archives/152)
+* A sample design that just uses groves, so this would have to be
+  glued. [[link]](http://www.uugear.com/product/acrylic-case-for-zero4u-and-raspberry-pi-zero-clear/)
+* Another design with groves that needs to be glued [[link]](https://www.modmypi.com/blog/piot-relay-zero-case-assembly-instructions)
+* A guide to handle acrylic [[link]](https://www.bit-tech.net/guides/modding/a_modders_guide_to_acrylic/3/)
+* Some special breackets which could be 3 D printed. These breackets
+  have the advantage that only slots and holes need to be placed
+  [[link]](http://discuss.arachnidlabs.com/t/easier-lasercut-boxes-with-custom-brackets/177). 
+* Although CNC, here are some connector ideasthat could be replicated
+  or modified
+  for acrylic [[link]](https://makezine.com/2012/04/13/cnc-panel-joinery-notebook/)
+* Some tips for working with acrylic in general [[link]](https://makezine.com/2015/10/29/skill-builder-acrylic/)
+* [[link]](https://www.picocluster.com/)
+* A design based on metal beams to create the outside. This may be
+  more expensive, but stable [[link]](https://www.phidgets.com/docs/T-Slot_Primer)
+* Some also used lego technics [[link]](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9048)
 
 We also previously indicated that the width of the mounting holes on a
 Pi is about 7 spaces wide, making it possible to create a lego technic
