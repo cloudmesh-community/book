@@ -270,8 +270,12 @@ CHAPTER_PYTHON=\
 DEPRECATED=\
  chapters/linux/ssh2.md
 
+REVIEW=\
+ chapters/pi/software2.md
+
 DRAFT=\
  chapters/os/ubuntu-usb-osx.md
+
 
 CHAPTER_PI=\
  chapters/SECTION-PREFACE.md\
@@ -290,6 +294,8 @@ CHAPTER_PI=\
  chapters/os/ubuntu-usb-osx.md\
  chapters/SECTION-ONE-PI.md\
  chapters/sd-card.md\
+ chapters/pi/software.md\
+ chapters/pi/setup.md\
  chapters/linux/linux.md\
  chapters/SECTION-DRAFT.md\
  chapters/linux/ssh.md\
@@ -307,10 +313,7 @@ CHAPTER_PI=\
  chapters/clusters/kubernetes-526/readme-kube.md\
  chapters/clusters/kubernetes-417/pi-kubernetes.md\
  chapters/clusters/pi-spark.md\
- chapters/clusters/pi-software.md\
  chapters/pi/slurm.md\
- chapters/pi/setup.md\
- chapters/pi/software.md\
  chapters/SECTION-hadoop.md\
  chapters/SECTION-yarn.md\
  chapters/SECTION-spark.md\
