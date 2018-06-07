@@ -1,163 +1,79 @@
-# Software
+## Software
 
-## Operating System
+### Password
 
-In this chapter we will provide information in how to install additional
-software that may not be provided with the default operating system.
+Before you bring your Raspbery Pi on the networks, you need to reset
+the password. This can be done by starting the terminal and typing in
+it the command
 
-### Operating Systems
+    $ passwd
 
-You can run different operating systems on the PI, this includes
-rasbian, NOOBS, Dexter (for Grove PI), or even Windows 10.
+The original password is `raspberrypi` and every one knows it. SO if
+you put your pi on the network it is easily compromized. Hence, change
+your password first.
 
-We would like to get feedback on what OS is best suited for which task.
+### Locale
 
-#### Rasbian
+You want to also set your system to use your language ssttings for the
+keyboard. you can do this isn the terminal with 
 
-provide a mini tutorial
+    raspi-config 
 
-#### NOOBS
+or
 
-provide a mini tutorial
+    sudo dpkg-reconfigure locales
 
-#### Dexter
+or using the GUI.
 
-provide a mini tutorial
 
-#### Other Linux
+### Wireless Network
 
-provide a mini tutorial
+The easiest way to continue is to have a wireles network you can
+connect to. We do not recommend that you use for example your IU
+credentials hence we wil not use the network called `IU
+secure`. Instead we will be using on campus the ATT wireless network.
+If your are not at IU please use your own wierless network at
+home. You can configure it via the GUI.
 
-#### Windows IOT
+In case you like to edit the information at a later time or at this
+time you can aslo use an editor.  Edit the file `interfcaes` file with
 
-Previously we played a bit with Windows on Raspberry, but it was not
-very well supported. This may have changed by now. Your task will be to
-evaluate its feature and contrast it to other OSes.
+    sudo nano /etc/network/interfaces
 
-There seems to be support on developing PI application on Windows 10
-itself, but as we do not have windows machines, we have not tried this.
-You could explore and update us.
+change the following
 
-provide a mini tutorial
+    auto wlan0
+    allow-hotplug wlan0
+    iface wlan0 inet dhcp
+    wpa-ssid "your-WLAN-SSID"
+    wpa-psk "your-WLAN-password"
 
-## Editors
+and replace the values with the once you have. To save the file use 
 
-### emacs
+    Ctrl-o Y Enter Save changes.
+    Ctrl-x Quit nano.
 
-provide a mini tutorial
+TODO: what will the file look like for ATT-wifi
 
-### vim
+Furthermore, if you are at iu and use att-wify, you need to go with
+your web browser to `http:\\iu.edu` and click on the connect
+button. Sometimes that butten is not visible so you need to scroll to it.
 
-provide a mini tutorial
+### Update
 
-### gedit
+We want to update the software and make sure
+everyting is up to date. This is done with 
 
-provide a mini tutorial
+    $ sudo apt-get update
 
-### ssh
-
-The most important program for us. describe ho to enable without GUI
-
-point to our other ssh section.
-
-make sure to describe how to not copy private keys !!! and instead use
-ssh keygen on each machine, gather all pub keys and distribute
-
-write a cloudmesh command for this (may already exist)
-
-provide a mini tutorial
-
-## Python 3
-
-provide a mini tutorial
+To develop easily we need a number of programs on our Pi. Programs can
+be installed with the command
 
 ```bash
-    $ sudo apt-get install python3
-    ```
-    
-update to current version and try out. measure time it takes to do
-that, it may take a long time use time commands before and after
+$ apt-get install <program>
+```
 
-make sure you use alt install
-
-*
-<https://liftcodeplay.com/2017/06/30/how-to-install-python-3-6-on-raspbian-linux-for-raspberry-pi/>
-
-can we remove the source after install to safe space?
-
-## Python IDLE
-
-Click Menu \> Programming \> Python 3 (IDLE), and you'll get a new
-window called 'Python 3.4.2 Shell:'. This Shell works just like Python
-on the command line. Enter print("Hello World") to see the message.
-
-provide a mini tutorial
-
-## Docker
-
-see go, maybe there are other better resources.
-
-provide a mini tutorial
-
-## Go
-
-* <https://blog.alexellis.io/golang-docker-rpi/>
-
-provide a mini tutorial
-
-provide a mini tutorial
-
-### Eclipse
-
-provide a mini tutorial
-
-### Adafruit Web IDE
-
-* <https://learn.adafruit.com/webide/overview>
-
-provide a mini tutorial
-
-### Coder
-
-* <https://googlecreativelab.github.io/coder/>
-
-provide a mini tutorial
-
-## Computing
-
-
-### Numpy
-
-Refer to other section in book and describe what is different
-
-provide a mini tutorial
-
-### Scipy
-
-Refer to other section in book and describe what is different
-
-provide a mini tutorial
-
-### Image Processing
-
-Refer to other section in book and describe what is different
-
-provide a mini tutorial
-
-### DHCP Server
-
-* <http://www.noveldevices.co.uk/rp-dhcp-server>
-
-## Gregor's Notes
-
-
-This section contains some unordered notes by Gregor that you may want
-to look at and integrate into proper sections:
-
-### editor
-
-find an editor that is installed and can be used on commandline nano,
-vi, other?
+where `<program>` is the name of the software we like to install.
 
 ### hostname
 
@@ -179,143 +95,89 @@ SD card on the laptop that does the burning
 
 develop a python script to do that
 
-### Gather the mac addresses
+### Remote access via ssh
 
-Is there a better way?
+To enable ssh on the pi you need to say
 
-    /sys/class/net/<interface-name>/address
+    $ sudo systemctl enable ssh
+    $ sudo systemctl start ssh
 
-    cat /sys/class/net/eth0/address
-    cat /sys/class/net/wlan0/address
-    ifconfig eth0
+Naturally you need to do a bit more such as plaing your public key in
+the authorized_keys file explained later, but for now we will just
+activate ssh.
+    
 
-develop a python script to do that
+### Editors
 
-### Enable sshd
+Naturally we need a useful editor. We have made good experience with
+emacs as it supports a variety of different formats and is also
+available for OSX and Windows.
 
-Not tested
+You can install it with
 
-    sudo mv /boot/boot_enable_ssh.rc /boot/boot.rc
-    sudo reboot
+```bash
+$ apt-get install <program>
+```
 
-* <http://www.noveldevices.co.uk/rp-ssh>
+Other editors include `vim`, `gedit` and so on. If you are concerned
+about space, use `vi` which is preinstalled. If you like to use other
+editors use the command we can install them respectively with 
 
-Not sure if this is needed:
+```bash
+$ apt-get install vim
+$ apt-get install gedit
+...
+```
 
-" You may find that you can connect to your Pi with SSH but the session
-hangs after a successful logon. This is usually caused because of a
-network QoS mismatch that affects certain switches and routers but you
-can correct this by editing the two files
+## Python 3
 
-    /etc/ssh/ssh_config
-    /etc/ssh/sshd_config
+Raspbian comes by default with Python 2. However, more and more
+libraries become available in Python 3 and you can install it with 
 
-and adding
+```bash
+$ sudo apt-get install python3
+```
 
-    IPQoS 0x00
+If this does not work you can also compile the newest version as
+follows
 
-to each file as the last record. " develop a a python script to do that
+```bash
+$ sudo apt-get install build-essential checkinstall
+$ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev
+$ sudo apt-get install libssl-dev libsqlite3-dev tk-dev libgdbm-dev
+$ sudo apt-get install libc6-dev libbz2-dev
+cd /usr/src
+wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
+sudo tar xzf Python-3.6.5.tgz
+d Python-3.6.5
+sudo -s
+bash configure
+make altinstall
+exit
+```
+    
+## Python IDLE
 
-### Wireless
+Click Menu -> Programming -> Python 3 (IDLE), and you'll get a new
+window called 'Python 3.6.5 Shell:'. This Shell works just like Python
+on the command line. Enter print("Hello World") to see the message.
 
-Do not use IU secure. Do not leave your passwd on the pi as insecure.
+## Go
 
-    sudo nano /etc/network/interfaces
+To install go use
 
-    auto wlan0
-    allow-hotplug wlan0
-    iface wlan0 inet dhcp
-    wpa-ssid "your-WLAN-SSID"
-    wpa-psk "your-WLAN-password"
+```bash
+$ wget https://storage.googleapis.com/golang/go1.9.linux-armv6l.tar.gz
+$ sudo tar -C /usr/local -xzf go1.9.linux-armv6l.tar.gz
+$ export PATH=$PATH:/usr/local/go/bin
+```
 
-develop a Python script to do that
+If you like to have it included every time you start a terminal please
+plase the line
 
-### Update when on network
+```export PATH=$PATH:/usr/local/go/bin```
 
-for now do not put pi on network so do this once we figure out a better
-way
+in your ~/.profile file and reboot.
 
-    sudo apt-get update
-    sudo apt-get install emacs
+Now you are also able to program go on your Pi.
 
-### USB stick
-
-    cat /var/log/messages
-
-find sda\*
-
-Make sure to find the right name.
-
-    sudo fdisk /dev/<device-name>
-    sudo mkfs -t vfat /dev/<device-name>
-    mkdir ~/<mount-point>
-    sudo mount /dev/<device-name> ~/<mount-point>
-
-### Locale
-
-set locale to US so you can use keyboard
-
-    raspi-config 
-
-or
-
-    sudo dpkg-reconfigure locales
-
-develop a python script to do that
-
-### DHCP server on 00
-
-    sudo apt-get update
-    sudo apt-get install isc-dhcp-server
-    sudo nano /etc/network/interfaces
-
-Change it to
-
-    iface eth0 inet static
-    address <the-IP-address-of-your-Pi-that-will-be-the-DHCP-server>
-    netmask <the-subnet-mask-of-your-LAN>
-    gateway <the-IP-address-of-your-LAN-gateway>
-    sudo nano /etc/dhcp/dhcpd.conf
-
-uncomment the info so the server can start
-
-    subnet <starting-IP-address-of-your-network> netmask <starting-IP-address-of-your-network> {
-
-         range <first-IP-address-of-your-DHCP-address-range> <last-IP-address-of-your-DHCP-address-range>;
-
-         option routers <the-IP-address-of-your-gateway-or-router>;
-
-         option broadcast-address <the-broadcast-IP-address-for-your-network>;
-
-    }
-
-edit /etc/default/isc-dhcp-server
-
-    DHCPD_CONF=/etc/dhcp/dhcpd.conf
-    DHCPD_PID=/var/run/dhcpd.pid
-    INTERFACES="eth0"
-
-    sudo service isc-dhcp-server restart
-
-### Temperature
-
-    cat /sys/class/thermal/thermal_zone0/temp
-
-### graphana
-
-could be helpful to monitor cluster/clusters
-
-* <https://github.com/grafana/grafana>
-
-* <https://github.com/weaveworks/grafanalib>
-
-there are many more, just search. we have not tested them example with
-yaml
-
-* <https://github.com/jakubplichta/grafana-dashboard-builder>
-
-light scheme
-
-in /etc/grafana/grafana.ini uncomment line and set
-
-    default_theme = light 
