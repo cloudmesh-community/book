@@ -15,8 +15,8 @@ Naturally you need to have a github.com account and login. After you
 have found a text that you like to improve, please edit it via the
 Web interface and than generate a pull request. We will than review the
 request and approve or comment on it. To make it even easier the ebook
-contains cloud symbols that indicate the start of an individual
-page. You can simply click on it and you will be automatically
+contains cloud symbols (:cloud:) that indicate the start of a document 
+that you can modify. You can simply click on it and you will be automatically
 redirected the the file for editing. As you can see it is rather
 simple.
 
