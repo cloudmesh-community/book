@@ -20,6 +20,8 @@ Figure [Pi3](#F-pi3) shows the Raspberry PI 3 B.
 
 ![Figure <a name="F-pi3"></a>: Raspberry PI 3B](images/pi-3.jpg)
 
+The board has the following properties:
+
 * Quad Core 1.2GHz Broadcom BCM2837 64bit CPU
 * 1GB RAM
 * BCM43438 wireless LAN and Bluetooth Low Energy (BLE) on board
@@ -41,7 +43,7 @@ Figure [Pi3+](#F-pi3p) shows the newest Raspberry PI 3 B+.
 
 ![Figure <a name="F-pi3p"></a>: Raspberry PI 3 B+](images/pi3bplus.jpg)
 
-It has the following Features:
+The board has the following properties:
 
 * Broadcom BCM2837B0, Cortex-A53 (ARMv8) 64-bit SoC @ 1.4GHz
 * 1GB LPDDR2 SDRAM
