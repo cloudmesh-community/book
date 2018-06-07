@@ -22,21 +22,16 @@ institutions.
 
 Furthermore, Microsoft has recently made significant progress in
 supporting Linux on their OS. We recommend that you install it and
-use. Alternatively we recommend that you use `gitbash` to have a Linux
-like experience. Please inform yourself about gitbash and install it.
+use. Alternatively we recommend that you use git for windows which you
+can get from this [link](https://gitforwindows.org/).
 
+## Older Version of Windows or Windows 10 Home
 
-## Older Version of Windows or Windows Home
-
-Older versions of Windows are not supported and if you take one of our
-classes, we will not support you or answer any questions about it. We
-know that these version do not work for more advanced features that
-cloud programs rely on and thus we recommend you update your OS. For
-example we wasted in one case 4 hours of support just because a
-student did not want to tell us that they were using an old version of
-Windows. Please trust us and **do not use such an OS**. You safe yourself
-many hours of work. Instead use a bootable USB stick or buy yourself a
-raspberry PI in case you can not upgrade your OS.
+Older versions of Windows or Windows 10 Home **are not supported**.
+Please trust us and **do not use such an OS**. If yo uhave such an OS
+we recommend for example an upgrade or to just use an OS that you can
+boot from a USB stick. There are for example many tutorials available
+that explain how to create a USB stick that boots Ubuntu.
 
 ## Raspberry PI
 

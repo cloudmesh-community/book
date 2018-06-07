@@ -191,18 +191,19 @@ OLD=\
  chapters/cloud/saas.md\
 
 
+TWISTER=\
+ chapters/mapreduce/twister-installation.md\
+ chapters/mapreduce/twister.md\
+ chapters/mapreduce/twister2-example.md\
+ chapters/mapreduce/harp.md\
+
 MAPREDUCE=\
  chapters/hadoop/hadoop-installation.md\
  chapters/mapreduce/hadoop-installation.md\
  chapters/mapreduce/hadoop-lectures.md\
- chapters/mapreduce/harp.md\
  chapters/mapreduce/spark-installation.md\
  chapters/mapreduce/spark-lectures.md\
  chapters/mapreduce/spark-streaming.md\
- chapters/mapreduce/twister-installation.md\
- chapters/mapreduce/twister.md\
- chapters/mapreduce/twister2-example.md\
- chapters/os/ubuntu-usb-osx.md\
  chapters/new/go.md\
  chapters/new/amqp.md\
  chapters/new/osx-tricks.md\
@@ -270,7 +271,7 @@ DEPRECATED=\
  chapters/linux/ssh2.md
 
 DRAFT=\
- chapters/pi/case.md
+ chapters/os/ubuntu-usb-osx.md
 
 CHAPTER_PI=\
  chapters/SECTION-PREFACE.md\
@@ -286,6 +287,7 @@ CHAPTER_PI=\
  chapters/pi/links.md\
  chapters/pi/exercise.md\
  chapters/login-node.md\
+ chapters/os/ubuntu-usb-osx.md\
  chapters/sd-card.md\
  chapters/linux/linux.md\
  chapters/SECTION-DRAFT.md\

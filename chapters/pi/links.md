@@ -23,13 +23,11 @@ width between the wholes on the small side seems to be exactly 7 Lego
 technic beam wholes apart. This has the advantage that one could
 build a quick frame form Lego pieces such as a
 
-- 2 * 11 ($0.22) piece
-  * <https://www.brickowl.com/catalog/lego-beam-11-32525-64290>
-- 2 * two piece * 4 * 4 ($0.192)
-  * <https://www.brickowl.com/catalog/lego-beam-2-43857>
+- 2 * 11 ($0.22) piece [[link]](https://www.brickowl.com/catalog/lego-beam-11-32525-64290)
+- 2 * two piece * 4 * 4 ($0.192) [[link]](https://www.brickowl.com/catalog/lego-beam-2-43857)
 - A number of connector pins
-  * <https://www.brickowl.com/catalog/lego-technic-pin-with-lengthwise-friction-ridges-and-center-slots-2780>
-  * <https://www.brickowl.com/catalog/lego-long-pin-with-friction-6558>
+  [[link]](https://www.brickowl.com/catalog/lego-technic-pin-with-lengthwise-friction-ridges-and-center-slots-2780)
+  [[link]](https://www.brickowl.com/catalog/lego-long-pin-with-friction-6558)
   
 The cost is about $0.25 per piece = $2.74 per pi.
 
@@ -42,26 +40,25 @@ Naturally Lego's have been explored by others
 
 * [Images on google](https://www.google.com/search?q=raspberry+pi+case+lego+technic&rlz=1C5CHFA_enUS727US727&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwjYwYbni6vbAhWJy4MKHaiiCmYQsAQIMw&biw=1648&bih=883)
 * University of Southampton:
-  <https://www.theregister.co.uk/2012/09/12/raspberry_pi_supercomputer/>
+  [[link]](https://www.theregister.co.uk/2012/09/12/raspberry_pi_supercomputer/)
   Instructions are no longer at the original link
-  TODO: can they be found
 * Lego Technic:
-  <https://www.reddit.com/r/raspberry_pi/comments/39kwjc/pidra_my_7_headed_rpi_cluster_with_99_lego/>,
-  <https://imgur.com/a/rYybo>
-* Lego Technic <https://www.flickr.com/photos/fotero/7954299054/>
-* Old style Lego <https://www.uweziegenhagen.de/?p=3155>
+  [[link]](https://www.reddit.com/r/raspberry_pi/comments/39kwjc/pidra_my_7_headed_rpi_cluster_with_99_lego/),
+  [[link]](https://imgur.com/a/rYybo)
+* Lego Technic [[link]](https://www.flickr.com/photos/fotero/7954299054/)
+* Old style Lego [[link]](https://www.uweziegenhagen.de/?p=3155)
 
 
 Other ideas using Lego's include:
 
-* Compact case: Single board No screws <https://www.youtube.com/watch?v=UYY72a6wWqs>
-* Zero 3D print Thingverse <https://www.thingiverse.com/thing:1427245>
-* B+ 3D Pi case <https://www.thingiverse.com/thing:1007347>
+* Compact case: Single board No screws [[link]](https://www.youtube.com/watch?v=UYY72a6wWqs)
+* Zero 3D print Thingverse [[link]](https://www.thingiverse.com/thing:1427245)
+* B+ 3D Pi case [[link]](https://www.thingiverse.com/thing:1007347)
 
 Other interesting but not cluster related links include
 
-* Lego hat <https://www.elektor.de/lego-rpi-board-159010-91>
-* Brick Pi <https://www.dexterindustries.com/shop/brickpi-advanced-for-raspberry-pi/>
+* Lego hat [[link]](https://www.elektor.de/lego-rpi-board-159010-91)
+* Brick Pi [[link]](https://www.dexterindustries.com/shop/brickpi-advanced-for-raspberry-pi/)
 
 #### Beast by resion.io
 
@@ -69,9 +66,9 @@ This company has provided some larger designs for Raspberry Pi clusters
 and tries to create a modular system to put a number of Pis on plates
 that than can be connected.
 
-* <https://www.youtube.com/watch?v=A5VsfcnfeR0>
-* <https://resin.io/blog/the-evolution-of-the-beast-continues/?utm_content=buffer11bf2&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer>
-* <https://resin.io/blog/good-better-beast-week-2/>
+* Beast 3 [[link]](https://www.youtube.com/watch?v=A5VsfcnfeR0)
+* Beast 2 [[link]](https://resin.io/blog/the-evolution-of-the-beast-continues/?utm_content=buffer11bf2&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+* Beast 2 Tile [[link]](https://resin.io/blog/good-better-beast-week-2/)
 
 
 ### Clusters
@@ -79,18 +76,18 @@ that than can be connected.
 
 Additional links which could be useful include:
 
-* <https://github.com/sdsc/sandbox-cluster-guide>
-* <https://thenewstack.io/6-common-errors-when-building-a-raspberry-pi-cluster/>
-* <http://www.mindkits.co.nz/blog/5-Most-Popular-Raspberry-Pi-Cluster-Supercomputer-Projects>
-* <https://www.networkworld.com/article/3156748/computers/10-amazing-raspberry-pi-clusters.html>
-* <https://projects.raspberrypi.org/en/projects/build-an-octapi>
+* SDSC Raspberry Pi2 MPI and Tiled Wall Viz Cluster [[link]](https://github.com/sdsc/sandbox-cluster-guide)
+* Six Common Errors When Building a Raspberry Pi Cluster [[link]](https://thenewstack.io/6-common-errors-when-building-a-raspberry-pi-cluster/)
+* 5 Most Popular Raspberry Pi Cluster Supercomputer Projects [[link]](http://www.mindkits.co.nz/blog/5-Most-Popular-Raspberry-Pi-Cluster-Supercomputer-Projects)
+* 10 amazing Raspberry Pi clusters [[link]](https://www.networkworld.com/article/3156748/computers/10-amazing-raspberry-pi-clusters.html)
+* Build an OctaPi [[link]](https://projects.raspberrypi.org/en/projects/build-an-octapi)
 
 An older document on how to create an MPI cluster is located at
 
-* Pi 2 MPI cluster, Boise State <http://coen.boisestate.edu/ece/files/2013/05/Creating.a.Raspberry.Pi-Based.Beowulf.Cluster_v2.pdf>
+* Pi 2 MPI cluster, Boise State [[link]](http://coen.boisestate.edu/ece/files/2013/05/Creating.a.Raspberry.Pi-Based.Beowulf.Cluster_v2.pdf)
 
 #### Swarm
 
 How to set up docker swarm is documented here
 
-* <https://medium.com/@bossjones/how-i-setup-a-raspberry-pi-3-cluster-using-the-new-docker-swarm-mode-in-29-minutes-aa0e4f3b1768>
+* Pi Docker Cluster [[link]](https://medium.com/@bossjones/how-i-setup-a-raspberry-pi-3-cluster-using-the-new-docker-swarm-mode-in-29-minutes-aa0e4f3b1768)
