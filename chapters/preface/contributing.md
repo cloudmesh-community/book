@@ -4,7 +4,7 @@ The document is written in markdown and managed with a Makefile
 developed by Gregor von Laszewski. Contributing  content is easy as
 everything is stored in github in the following directory:
 
-* <https://github.com/cloudmesh-community/book/tree/master/>
+* <https://github.com/cloudmesh-community/book/>
 
 Content can be contributed via pull requests that are either created
 while you directly edit the content via the github Web interface, or a
