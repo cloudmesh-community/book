@@ -300,9 +300,9 @@ CHAPTER_PI=\
  chapters/linux/ssh.md\
  chapters/linux/refcards.md\
  chapters/raspberry/config-display.md\
- chapters/SECTION-DRAFT.md\
  chapters/raspberry/motherboard-led.md\
  chapters/run-at-boot.md\
+ chapters/SECTION-DRAFT.md\
  chapters/clusters/pi-now.md\
  chapters/pi/setup.md\
  chapters/modify-pi-image.md\
@@ -370,7 +370,6 @@ epub: dot refernces todo
 	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
-	../bin/section.py 1 ":construction::construction::construction::construction::construction::construction::construction::construction::construction::construction::construction:" > dest/chapters/SECTION-DRAFT.md
 ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(INDEX) > all.md
 endif
@@ -400,7 +399,6 @@ draft: dot refernces todo
 	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
-	../bin/section.py 1 ":construction::construction::construction::construction::construction::construction::construction::construction::construction::construction::construction:" > dest/chapters/SECTION-DRAFT.md
 ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(DRAFT) > all.md
 endif
