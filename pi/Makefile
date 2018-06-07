@@ -276,6 +276,7 @@ CHAPTER_PI=\
  chapters/preface/contributors.md\
  chapters/preface/contributing.md\
  chapters/preface/git.md\
+ chapters/preface/exercises.md\
  chapters/pi/board.md\
  chapters/pi/case.md\
  chapters/case/case.md\

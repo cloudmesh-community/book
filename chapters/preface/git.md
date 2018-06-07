@@ -19,11 +19,3 @@ Previous book githubs include
 
 * <https://github.com/cloudmesh/book>
 
-Exercises
----------
-
-Github.1:
-
-:   Create a Github account and fill out the survey to communicate the
-    account name to us
-
