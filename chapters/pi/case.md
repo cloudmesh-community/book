@@ -1,7 +1,7 @@
 # Pi Cluster Form Factor 
 
 In this chapter we will discuss a number of opportunities to build small
-scale compute and cluster resources using Raspberry Pi's.
+scale compute and cloud cluster resources using Raspberry Pi's.
 
 This includes the following:
 
