@@ -252,6 +252,36 @@ Initialise. Instead, select Eject and remove the USB device.
 
 See exercise Development.Server.1
 
+Material for this directions were taken from a detailed tutorial
+[[link]](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0)
+
+
+First you will need to install Rufus, which is a free program to
+create bootable USB drives on windows. Rufus is available at
+
+* <https://rufus.akeo.ie/>
+
+
+Next you need to launch Rufus, insert the USB stick, and observe that
+it is added to Rufus.
+Select the Device on which you like to place ubuntu. Be careful that
+you do not bya accident use a wrong device.
+
+Select the partition scheme and target system type set as MBR
+partition scheme for UEFI.  (in case you have older hardware try MBR
+Partition Scheme for BIOS or UEFI instead).
+
+Select the ubuntu iso file.
+
+Next press the `Start` button so we activate the write process. This
+will take quite a while. Select `Write in ISO Image mode
+(Recommended)`
+
+Once the process is completed, try booting from it. How to activate
+the boot in your system depends on your hardware and vendor. Please
+consult with your documentation.
+
+
 ### Exercise
 
 Development.Server.1
