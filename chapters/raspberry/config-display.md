@@ -1,6 +1,11 @@
-## Automatic Display Detection
+# Display Management
 
-### Purpose 
+## VNC :o:
+
+TODO: This section has to be found and reintegrated here
+
+
+## Automatic Display Detection
 
 In case you like to use the Raspberry Pi in your office, at home, or
 in the field, you may find yourself in a situation where different
@@ -13,11 +18,16 @@ detect the resolution based on the monitor attached. Once detected the
 config file will be rewritten if necessary and the Pi will be rebooted
 with the correct resolution in the configuration file.
 
+:warning: In order for your monitor to work, you will need to add it
+to the script we provide. Use the following program and add
+appropriate cases for your monitor
+
+    /usr/bin/tvservice -d /boot/edid.dat
+    /usr/bin/edidparser /boot/edid.dat
+
 ### How it works
 
 To achieve this we have developed the file 
-
-
 [displaydetect.py](https://raw.githubusercontent.com/cloudmesh/cloudmesh.pi/master/displaydetect.py)
 that automatically detects and set the display for the pi. To
 integrate it in the Rasbian OS please follow these steps 
@@ -74,14 +84,19 @@ Now you can go in the filed and use the monitor of your choice
 2. look at the preferred resolution
 3. create an new elif in the switch
 
-### Exercises
+## Exercises
 
-E.Display.1:
 
-> Make the displaydetect.py truly discoverable, find a default
-> resolution that you put in to the else statement. Identify the
-> preferred solution from the script and use that. Parse the appropriate
-> parameters such as x,y, ans aspect ratio, rotation and other
-> parameters.
+Display.1:
+
+: Configure your Raspberry Pi so you can access it via VNC.
+
+Display.2:
+
+: Make the displaydetect.py truly discoverable, find a default
+  resolution that you put in to the else statement. Identify the
+  preferred solution from the script and use that. Parse the appropriate
+  parameters such as x,y, ans aspect ratio, rotation and other
+  parameters.
 
 

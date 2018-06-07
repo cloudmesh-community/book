@@ -285,6 +285,7 @@ CHAPTER_PI=\
  chapters/preface/contributing.md\
  chapters/preface/git.md\
  chapters/preface/exercises.md\
+ chapters/preface/outline.md\
  chapters/pi/board.md\
  chapters/pi/case.md\
  chapters/case/case.md\
@@ -298,8 +299,8 @@ CHAPTER_PI=\
  chapters/linux/linux.md\
  chapters/linux/ssh.md\
  chapters/linux/refcards.md\
- chapters/SECTION-DRAFT.md\
  chapters/raspberry/config-display.md\
+ chapters/SECTION-DRAFT.md\
  chapters/raspberry/motherboard-led.md\
  chapters/run-at-boot.md\
  chapters/clusters/pi-now.md\
@@ -342,6 +343,7 @@ FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
+CSS_HTML=--css=template/pandoc.css
 RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case"
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
@@ -412,7 +414,7 @@ refernces:
 	cat ../bib/*.bib > dest/references.bib
 
 html:
-	cd dest; pandoc $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) -o $(FILENAME).html metadata.txt $(INDEX)
+	cd dest; pandoc $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).html metadata.txt $(INDEX)
 
 pdf:
 	cd dest; pandoc -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
