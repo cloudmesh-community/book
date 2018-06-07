@@ -295,7 +295,6 @@ CHAPTER_PI=\
  chapters/SECTION-ONE-PI.md\
  chapters/sd-card.md\
  chapters/pi/software.md\
- chapters/pi/setup.md\
  chapters/linux/linux.md\
  chapters/SECTION-DRAFT.md\
  chapters/linux/ssh.md\
@@ -304,6 +303,7 @@ CHAPTER_PI=\
  chapters/raspberry/motherboard-led.md\
  chapters/run-at-boot.md\
  chapters/clusters/pi-now.md\
+ chapters/pi/setup.md\
  chapters/modify-pi-image.md\
  chapters/pi/pi-passwordreset.md\
  chapters/clusters/pxe.md\
