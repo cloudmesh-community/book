@@ -2,7 +2,11 @@
 
 
 The following people have contributed to some chapters and documents
-hosted on. If you find your name missing, please let us know or better
+hosted at 
+
+* <https://github.com/cloudmesh-community/book>
+
+If you find your name missing, please let us know or better
 create a pull request, and we add you.
 
 We like to thank the following contributors in alphabetical order by
