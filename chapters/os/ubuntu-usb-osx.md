@@ -30,25 +30,25 @@ to execute the command for the version of ubuntu you like to use.
 
 Your folde will look something like this
 
-    ls -1
+    $ ls -1
 
         ubuntu-18.04-desktop-amd64.iso
 
 You will need to generate an image with the following
 command
 
-    hdiutil convert ubuntu-18.04-desktop-amd64.iso -format UDRW -o ubuntu-18.04-desktop-amd64.img
+    $ hdiutil convert ubuntu-18.04-desktop-amd64.iso -format UDRW -o ubuntu-18.04-desktop-amd64.img
 
 OSX will append a .dmg behind the name. At this time **do not** plug in
 your usb stick. Just issue the command
 
-    diskutil list
+    $ diskutil list
 
 Observe the output. Now plug in the USB stick. Wait till the USB stick
 registers in the Finder. If this does not work find a new USB stick or
 format it. Execute the command
 
-    diskutil list
+    $ diskutil list
 
 and observer the output again. Another device will register and you will
 see something like
@@ -65,7 +65,7 @@ Please note in this example the device path and number is recognized as
 It also says external, which is a good sign as the USB stick is
 external. Next, we need to unmount the device with
 
-    diskutil unmountDisk /dev/diskN
+    $ diskutil unmountDisk /dev/diskN
 
 where you replace the number N with the disk number that you found for
 the device. In our example it would be 2. If you see the error "Unmount
@@ -82,11 +82,11 @@ saying it again instead of you destroying your system. This command also
 requires sudo access so you will either have to be in the sudo group, or
 use
 
-    su <your administrator name>
+    $ su <your administrator name>
 
 login and than execute the command under root.
 
-    sudo dd if=ubuntu-18.04-desktop-amd64.img.dmg of=/dev/diskN bs=1m
+    $ sudo dd if=ubuntu-18.04-desktop-amd64.img.dmg of=/dev/diskN bs=1m
 
 (Not tested: Using /dev/rdisk instead of /dev/disk may be faster
 according to the ubuntu documentation)
@@ -104,7 +104,7 @@ You will see an error window popping up telling you: **The disk inserted
 was not readbale by this compute**. Please, leave the window as is and
 instead type in on the terminal.
 
-    diskutil eject /dev/diskN
+    $ diskutil eject /dev/diskN
 
 Now remove the flash drive, and press in the error window **Ignore**\
 Now you have a flash drive with ubuntu installed and you can boot from
@@ -118,17 +118,17 @@ You will need a plug for USB keyboard, USB mouse, and network cable.
 
 There are some issue from this point on.
 
-    sudo apt-get update
+    $ sudo apt-get update
 
 Add universe to the window for application updates
 
 see <https://help.ubuntu.com/community/Repositories/Ubuntu>
 
-    sudo apt-get install vnc4server
+    $ sudo apt-get install vnc4server
 
 Start the server and set up a password
 
-    vncserver
+    $ vncserver
 
 The next section is untested and needs verification.
 
@@ -158,7 +158,7 @@ applications settings.
 
 Next you need to issue in the command terminal
 
-    sudo apt-get update
+    $ sudo apt-get update
 
 You will likely see some warnings with number 95 which you can ignore.
 Please report your experience and we update this page based on your
@@ -286,6 +286,7 @@ consult with your documentation.
 
 Development.Server.1
 
-: If you are in need to buut from a USB stick in Windows, please
-  provide a tutorial similar to the one provided by OSX. It does not
-  matter if you chose a GUI or a commandline option via gitbash.
+: If you are in need to but from a USB stick in Windows, please verify
+  and expand on our tutorial similar to the one provided by OSX. It
+  does not matter if you chose a GUI or a commandline option via
+  gitbash.
