@@ -1,4 +1,4 @@
-# Login Server
+# Development Compute Server
 
 While interacting with clusters we need a computer from which we can
 log into the cluster. Such a computer could be your Laptop hosting OSX
