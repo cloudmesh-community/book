@@ -1,4 +1,9 @@
-# Display Management
+# Visual Feedback Management
+
+Now that we have a Pi configured we need to make sure that we can
+send sometimes visual clues about its operations. This can be done via
+displays and LEDs. In case no display is available we can even connect
+to the PI with a virtual display redirection.
 
 ## VNC :o:
 
