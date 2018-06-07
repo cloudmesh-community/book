@@ -269,6 +269,9 @@ CHAPTER_PYTHON=\
 DEPRECATED=\
  chapters/linux/ssh2.md
 
+DRAFT=\
+ chapters/pi/case.md
+
 CHAPTER_PI=\
  chapters/SECTION-PREFACE.md\
  chapters/pi/preface.md\
@@ -364,6 +367,36 @@ ifeq ($(OS), osx)
 endif
 ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md
+endif
+	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
+
+draft: dot refernces todo
+	$(COPY) metadata.txt dest
+	$(COPY) -r cover dest
+	$(COPY) -r ../template dest
+	$(COPY) -r ../template/fonts dest
+	$(COPY) -r ../chapters dest	
+	$(MARKUPALL)
+	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
+	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
+	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      
+	../bin/section.py 1 "Docker" > dest/chapters/SECTION-docker.md
+	../bin/section.py 1 "Docker Swarm" > dest/chapters/SECTION-docker-swarm.md  
+	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-kubernetes.md
+	../bin/section.py 1 "Hadoop" > dest/chapters/SECTION-hadoop.md
+	../bin/section.py 1 "Yarn" > dest/chapters/SECTION-yarn.md  
+	../bin/section.py 1 "Spark" > dest/chapters/SECTION-spark.md        
+	../bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
+	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
+	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
+	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
+	../bin/section.py 1 ":construction::construction::construction::construction::construction::construction::construction::construction::construction::construction::construction:" > dest/chapters/SECTION-DRAFT.md
+ifeq ($(OS), osx)
+	cd dest; iconv -t utf-8 $(DRAFT) > all.md
+endif
+ifeq ($(OS), linux)
+	cd dest; cat $(DRAFT) > all.md
 endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
