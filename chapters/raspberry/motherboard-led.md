@@ -1,4 +1,3 @@
-
 ## Motherboard LED
 
 The Raspberry pi contains an LED that can also be used to provide us
