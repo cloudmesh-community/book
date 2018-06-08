@@ -133,7 +133,7 @@ Interactive Examples
 --------------------
 
 Here we need a new image to work on. Let's run the following command.
-This will pull the necessary repositories from docker hub, as we don't
+This will pull the necessary repositories from docker hub, as we donot
 have most of the dependencies related to it. This can take a few minutes
 to download everything.
 
@@ -189,7 +189,7 @@ In the final stage we put sample values and check the predictions on the
 cluster. In addition to that feed the data using SparseVector format and
 we add the kmeans initialization mode, the error margin and the
 palatalization. We put the step size as 5 for this example. In the
-previous one we didn't specify any parameters.
+previous one we didnot specify any parameters.
 
 The predict term predicts the cluster id which it belongs to.
 

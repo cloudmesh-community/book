@@ -180,7 +180,7 @@ document update from source with altinstall
 
 ### Install scientific Libraries
 
-check if they are already installed we don't have enough space to
+check if they are already installed we donot have enough space to
 install all of these.
 
     sudo apt-get install python-numpy python-matplotlib python-scipy python-sklearn python-pandas

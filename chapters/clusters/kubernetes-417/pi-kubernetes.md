@@ -5,7 +5,7 @@ The steps are:
 
 a. Setting up static IP
 b. Secure ssh key setup for communication
-c. Kubenetes cluster setup
+c. Kubernetes cluster setup
 d. Automating the process
 
 Cluster needs:
@@ -25,7 +25,7 @@ Some Pi kits come with pre installed SD card if not then:
 2. Download the package from: <https://www.raspberrypi.org/downloads/noobs/>
 3. Download and unzip the package and copy it to the SD card
    (Copy only the files inside NOOBS_{version})
-4. Connect the power cable, keybboard and mouse to the Pi
+4. Connect the power cable, keyboard and mouse to the Pi
 5. Insert the SD card and the installed will walk you through the
    installation process
 6. Once the installation is through make sure the time and keyboard
@@ -118,7 +118,7 @@ effect.
   
 ## Cluster setup
 
-First install Dockerwith 
+First install Docker with 
   
   ``
   curl -sSL get.docker.com | sh && \

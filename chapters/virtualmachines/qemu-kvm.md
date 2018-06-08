@@ -121,7 +121,7 @@ To create an image file with the size of 10GB and `qcow2` format
 Note that a new file called "testing-image.img" is now created at your
 home folder (or the place where you run the terminal). Note also that
 the size of this file is not 10 Gigabytes, it's around 150KB only; QEMU
-won't use any space unless needed by the virtual operating system, but
+will not use any space unless needed by the virtual operating system, but
 it will set the maximum allowed space for that image to 10 Gigabytes
 only.
 

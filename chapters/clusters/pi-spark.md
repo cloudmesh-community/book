@@ -10,14 +10,14 @@ TODO:
 
 We provide step-by-step instructions on installing a Spark cluster on
 a pre-installed hadoop on a cluster of raspberry pi. To start we
-assume you have Haddop installed. THis is achieved by following the
+assume you have Hadoop installed. THis is achieved by following the
 instructions provided 
 in
 
 * <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
 
 to
-install Haddop on Pi cluster. Verify that the cluster is properly
+install Hadoop on Pi cluster. Verify that the cluster is properly
 installed. After that proceed by going to the home directory
 
 ```bash

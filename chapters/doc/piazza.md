@@ -230,7 +230,7 @@ Ten steps to getting your question answered on piazza
     (folders sort the posts by topics).
 
 5.  Select a title that briefly and accurately describes your problem. A
-    title like "Help!" or "Computer won't work" will often get ignored.
+    title like "Help!" or "Computer will not work" will often get ignored.
     Almost any problem can be titled with a few key words that will
     raise interest in somebody who is familiar with the subject. A
     corollary to this is to avoid using all caps or a lot of exclamation

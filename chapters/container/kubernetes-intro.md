@@ -135,7 +135,7 @@ Minikube](https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-wind
 
 After downloading these two executables place them in the cloudmesh
 directory we earlier created. Rename the `minikube-windows-amd64.exe` to
-`minikube.exe`. Makesure minikube.exe and kubectl.exe lie in the same
+`minikube.exe`. Make sure minikube.exe and kubectl.exe lie in the same
 directory.
 
 ##### Linux

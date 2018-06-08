@@ -166,7 +166,7 @@ happens in this example.
 
     def abort_if_cluster_doesnt_exist(computer_id):
         if computer_id not in COMPUTERS:
-            abort(404, message="Computer {} doesn't exist".format(computer_id))
+            abort(404, message="Computer {} doesnot exist".format(computer_id))
 
     parser = reqparse.RequestParser()
     parser.add_argument('processor')
@@ -715,7 +715,7 @@ want to save another record you must have entries with unique emails. In
 order to make this dynamic you can include a input reading by using the
 terminal to get the student data first and instead of the static data
 you can use the user input data from the terminal to get dynamic data.
-But for this exercise we don't expect that or any other form data
+But for this exercise we donot expect that or any other form data
 functionality.
 
 In order to get the saved data, you can comment the record saving

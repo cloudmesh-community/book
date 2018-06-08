@@ -3,7 +3,7 @@
 If you do not know what ssh is we recommend that you [read up on
 it](http://openssh.com/manual.html). However, the simple material
 presented here will help you get started quickly. It can however not
-replace the more comprehensive documentation. We also remommend that you
+replace the more comprehensive documentation. We also recmommend that you
 read this entire section first before you start past and copy style
 tutorials as this will not allow you to understand the way ssh is used.
 FOr this reason we start with the explanation of ssh and not the setup
@@ -178,7 +178,7 @@ terminal.
 Using SSH on Raspberry Pi 3
 ---------------------------
 
-Install Rasbian on an SD card, and boot up your system. Before putting
+Install Raspbian on an SD card, and boot up your system. Before putting
 it on the network, reset the default user password with the `passwd`
 command.Now you can use the terminal and use ssh just like on any Linux
 computer.
@@ -197,15 +197,15 @@ to setup key pairs and access the contents of your public key, please
 feel free to use it.
 
 On Windows you have a couple of options on running Linux commands such
-as ssh. At this time it may be worth while to try the OpenSSH CLient
+as ssh. At this time it may be worth while to try the OpenSSH Client
 available for Windows, although it is in beta. If you like to use other
 methods we have included alternatives.
 
 ### OpenSSH Client (Beta)
 
 \TODO{provide us with screenshots of the  windows.}
-In case you need access to ssh Microsoft has furtunately updated their
-software to be able to run it directly from the Winodws commandline
+In case you need access to ssh Microsoft has fortunately updated their
+software to be able to run it directly from the Windows commandline
 including PowerShell.
 
 However it is as far as we know not activated by default so you need to
@@ -264,7 +264,7 @@ from windows.
 <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>
 Although PuTTY has been out there for many years and served the
 community well, it is not following the standard ssh command line syntax
-when invoced from a command shell.
+when invoked from a command shell.
 
     putty -ssh user@host.name
 
@@ -313,9 +313,9 @@ use the public key and upload it to systems you like to login to.
 
 ### Chocolatey
 
-Another approach is to use it in Powershell with the help of chopolatey.
+Another approach is to use it in Powershell with the help of chocolatey.
 Other options may be better suited for you and we leave it up to you to
-make this decission.
+make this decision.
 
 Chocolatey is a software management tool that mimics the install
 experience that you have on Linux and OSX. It has a repository with many
@@ -381,7 +381,7 @@ No blank passphrases
     clearly communicated to you in class. You will as part of your cloud
     drivers license test explain how you gain access to futuresystmes
     and chameleon to explicitly explain this point and provide us with
-    reasosns what you can not do.
+    reasons what you can not do.
 
 A key for each server
 

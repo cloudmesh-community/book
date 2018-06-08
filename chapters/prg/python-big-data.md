@@ -213,7 +213,7 @@ There is a lot more to working with `pandas`, `numpy` and `matplotlib`
 than we can show you here, but hopefully this example has piqued your
 curiosity.
 
-Don't worry if you don't understand everything in this example. For a
+Donot worry if you donot understand everything in this example. For a
 more detailed explanation on these modules and the examples we did,
 please take a look at the tutorials below. The `numpy` and `pandas`
 tutorials are mandatory if you want to be able to use these modules, and

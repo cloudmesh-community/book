@@ -1,7 +1,7 @@
 # Raspberry PI
 
 [Raspberry PI's](https://www.raspberrypi.org/) are a convenient cheap
-compute platform that allow us to explore create cloud clusters 
+compute platform that allow us to explore create cloud clusters
 with various software that otherwise
 would not be accessible to most. The point is not to create a complex
 compute platform, but to create a *testbed* in which we can explore
@@ -18,7 +18,7 @@ this class we have access to about 100 of them.
 
 Figure [Pi3](#F-pi3) shows the Raspberry PI 3 B.
 
-![Figure <a name="F-pi3"></a>: Raspberry PI 3B](images/pi-3.jpg)
+![Figure <a name="F-pi3"></a>: Raspberry PI 3B](./images/pi-3.jpg)
 
 The board has the following properties:
 
@@ -63,4 +63,3 @@ The board has the following properties:
 Detailed information about it are available at
 
 * <https://www.raspberrypi.org/documentation/hardware/raspberrypi/README.md>
-

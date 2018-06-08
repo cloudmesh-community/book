@@ -16,7 +16,7 @@ minimum amount of packages.
 	https://etcher.io/
 
 Now follow the instructions in Etcher to flash Raspbian image on the
-SD card.  Plbefore ejecting the SD card.
+SD card.  Before ejecting the SD card do the following.
 
 ## Enable SSH on the SD Card :o:
 
@@ -42,7 +42,7 @@ For security reasons, please change the default password of the user
 pi using the passwd command.
 
 Note: If you want to change the hostname of the Pi, Use an editor and
-change the hostname raspberrypi in:
+change the hostname Raspberry Pi in:
 
 		* /etc/hosts
 		* /etc/hostname

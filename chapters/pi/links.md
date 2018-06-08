@@ -20,7 +20,7 @@ these activities.
 
 When looking at the placement of the wholes on the Raspberry Pi, the
 width between the wholes on the small side seems to be exactly 7 Lego
-technic beam wholes apart. This has the advantage that one could
+Technic beam wholes apart. This has the advantage that one could
 build a quick frame form Lego pieces such as a
 
 - 2 * 11 ($0.22) piece [[link]](https://www.brickowl.com/catalog/lego-beam-11-32525-64290)

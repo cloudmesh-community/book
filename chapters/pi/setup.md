@@ -158,7 +158,7 @@ Type vnc://xxx.xxx.xxx.xxx (where xxx.xxx.xxx.xxx is the IP address that you dis
 Click [Connect]. This will launch the Screen Sharing application, and
 with a little luck, you should see this image.
 
-Addon Hardware
+Add-on Hardware
 --------------
 
 recently ordered add on hardware
