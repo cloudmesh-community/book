@@ -1,7 +1,7 @@
 # Raspberry PI
 
 [Raspberry PI's](https://www.raspberrypi.org/) are a convenient cheap
-compute platform that allow us to explore creeate cloud clusters 
+compute platform that allow us to explore create cloud clusters 
 with various software that otherwise
 would not be accessible to most. The point is not to create a complex
 compute platform, but to create a *testbed* in which we can explore

@@ -28,7 +28,7 @@ We assume that you downloaded the iso from ubuntu to a folder called
 to convert the is to an image file. This is done as follows and you need
 to execute the command for the version of ubuntu you like to use.
 
-Your folde will look something like this
+Your folder will look something like this
 
     $ ls -1
 
@@ -167,11 +167,11 @@ feedback.
 ### Ubuntu on a USB stick for OSX via GUI
 
 An alternative to the Command Line solution to create an USB stick with
-bootable UBuntu on is to use the OSX GUI. This method is more complex
+bootable Ubuntu on is to use the OSX GUI. This method is more complex
 than the command line solution. In addition as we are learning about
 cloud computing in this book, it is of advantage to learn how to do this
 from commandline as the replication of the approach via commandline is
-easier and more scalable. However for completness, we have also included
+easier and more scalable. However for completeness, we have also included
 here the GUI-based method.
 
 The material in this section was copied and modified from

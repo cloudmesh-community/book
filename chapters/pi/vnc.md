@@ -10,7 +10,7 @@ with the VNC update.*
 
 We had some issues with the installed version of VNC that is customized
 for connecting a Laptop via the ethernet cable to the PI. However as we
-connect wirelessly, our setup is slightly diffrent. The easiset way that
+connect wirelessly, our setup is slightly different. The easiest way that
 we found is to update the Raspbian OS as follows. In a terminal type
 
     sudo apt-get update
@@ -18,7 +18,7 @@ we found is to update the Raspbian OS as follows. In a terminal type
     sudo apt-get install realvnc-vnc-viewer
 
 Next you enable the VNC server in the configuration panel via the
-Rasbian GUI by selecting
+Raspbian GUI by selecting
 
      Menu > 
         Preferences > 
@@ -29,7 +29,7 @@ Here you toggle the VNC service to enabled. As we are already at it in
 our setup we enabled all other services, especially those that deal with
 Grove sensor related bins and wires.
 
-Next reboot and double check if the settings are preseved after the
+Next reboot and double check if the settings are preserved after the
 reboot
 
 #### Install VNC on OSX

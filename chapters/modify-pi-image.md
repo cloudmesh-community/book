@@ -30,7 +30,7 @@ on a Mac shared drive.
 
 ---
 
-First create a directory and download the [latest build of Rasbian Lite](https://downloads.raspberrypi.org/raspbian_lite_latest). The last step is to download a script that is located at 
+First create a directory and download the [latest build of Raspbian Lite](https://downloads.raspberrypi.org/raspbian_lite_latest). The last step is to download a script that is located at 
 
 * <https://github.com/cloudmesh-community/hid-sp18-419/blob/master/project-code/pi-config/make-pi-images.py>
 

@@ -25,7 +25,7 @@ called *iso*. Next we open a terminal and cd into the folder
 follows and you need to execute the command for the version of ubuntu
 you like to use.
 
-Your folde will look something like this 
+Your folder will look something like this 
 
 	ls -1
 	
@@ -45,7 +45,7 @@ command
 
 OSX will append a .dmg behind the name. When considering the OS and
 you only want to use one, we recommend that you use the latest
-OS. Please let us know if we need to update the verion numbers. Check
+OS. Please let us know if we need to update the version numbers. Check
 with the ubuntu Web page.
 
 At this time do not plug in your usb stick. Just issue the command 
@@ -59,7 +59,7 @@ or format it. Execute the command
 	diskutil list
 
 
-and observer the output again. Another devce will register and you
+and observer the output again. Another device will register and you
 will see something like
 
 	/dev/disk2 (external, physical):
@@ -87,7 +87,7 @@ successful, you will see
 The next step is dangerous and you need to make sure you follow it. So
 please do not copy and paste, but read first, reflect and only if you
 understand it execute it. We know we say this all the time, but better
-saying it again instead of you destryoing your system. This command
+saying it again instead of you destroying your system. This command
 also requires sudo access so you will either have to be in the sudo
 group, or use
 
@@ -105,19 +105,19 @@ Ubuntu's Web page also gives the following tips:
 * "If you see the error dd: Invalid number '1m', you are using GNU dd. Use the same command but replace bs=1m with bs=1M."
 * "If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. Start Disk Utility.app and unmount the volume (don't eject)."
 
-You will see an error window popping up telling you: **The disk inserted was not readbale by this compute**. Please, leave the window as is  and instead type in on the terminal.
+You will see an error window popping up telling you: **The disk inserted was not readable by this compute**. Please, leave the window as is  and instead type in on the terminal.
 
 
 	diskutil eject /dev/diskN
 	
 Now remove the flash drive, and press in the error window **Ignore**	
-Now you have a falsh drive with ubuntu installed and you can boot from it. To do so, please 
+Now you have a flash drive with ubuntu installed and you can boot from it. To do so, please 
 
 **restart your Mac and press option key**
 
 while the Mac is restarting to choose the USB-Stick
 
-You will need a plug for USB keyboard, USB mouse, and netwwork cable.
+You will need a plug for USB keyboard, USB mouse, and network cable.
 
 There are some issue from this point on.
 
@@ -148,7 +148,7 @@ with the USB stick inserted while you press the Option/alt key.
 
 The launch *Startup Manager* will be started showing a list of bootable
 devices connected to the machine. Your USB stick should appear as
-gold/yellow and labelled *EFI Boot*. Use your curser keys to move to
+gold/yellow and labelled *EFI Boot*. Use your courser keys to move to
 the most right EFI boot device in that list (likely the USB stick) and
 press ENTER. YOu can also use the mouse.
 
@@ -161,7 +161,7 @@ For more information on how to setup ubuntu see:
 
 * <https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0>
 
-After you have booted and looged in, you need to update the
+After you have booted and logged in, you need to update the
 distribution. We recommend that you switch on Universe in the
 applications settings.
 
@@ -177,11 +177,11 @@ your feedback.
 ## Ubuntu on a USB stick for OSX via GUI
 
 An alternative to the Command Line solution to create an USB stick
-with bootable UBuntu on is to use the OSX GUI. This method is more
+with bootable Ubuntu on is to use the OSX GUI. This method is more
 complex than the command line solution. In addition as we are learning
 about cloud computing in this book, it is of advantage to learn how
 to do this from commandline as the replication of the approach via
-commandline is easier and more scalable. However for completness, we
+commandline is easier and more scalable. However for completeness, we
 have also included here the GUI-based method.
 
 The material in this section was copied and modified from

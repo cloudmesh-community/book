@@ -320,7 +320,7 @@ Ansible III: Ansible Galaxy
 ===========================
 
 By finishing the first two chapters, you should be able to compose
-Ansible projects to install, configure or do other maintenances on your
+Ansible projects to install, configure or do other maintenance on your
 software packages. We introduced the powerful component `Roles` in the
 previous chapters, and emphasized the concepts of modularize and
 re-usability. With these preparations, we are ready to start working on
