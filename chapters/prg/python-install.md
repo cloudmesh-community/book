@@ -35,14 +35,10 @@ switch between multiple versions of Python
 (<https://github.com/yyuu/pyenv>). To summarize:
 
 -   users to change the global Python version on a per-user basis;
-
 -   users to enable support for per-project Python versions;
-
 -   easy version changes without complex environment variable
     management;
-
 -   to search installed commands across different python versions;
-
 -   integrate with tox (<https://tox.readthedocs.io/>).
 
 ##### Instalation without pyenv
@@ -52,14 +48,14 @@ want or can use pyenv, we recommend you download and install python
 2.7.13 and 3.6.4[^2] from python.org
 (<https://www.python.org/downloads/>)
 
-##### Disabeling wrong python installs on OSX
+##### Disabling wrong python installs on OSX
 
 While working with students we have seen at times that they take other
 classes either at universities or online that teach them how to program
 in python. Unfortunately, although they seem to do that they often
 ignore to teach you how to properly install python. I just recently had
 a students that had installed python 7 times on his OSX machine, while
-another student had 3 different installations, all of which confliced
+another student had 3 different installations, all of which conflicted
 with each other as they were not set up properly.
 
 We recommend that you inspect if you have a files such as `~/.bashrc` or
@@ -293,7 +289,7 @@ We do not recommend that you use anaconda or miniconda as it may
 :   interfere with your default python interpreters and setup.
 
 Please note that beginners to pyton should always use anaconda or
-miniconda only afterthey have installed pyenv and use it. For this class
+miniconda only after they have installed pyenv and use it. For this class
 neither anaconda nor miniconda is required. In fact we do not recommend
 it. We keep this section as we know that other classes at IU may use
 anaconda. We are not aware if these classes teach you the right way to
@@ -301,11 +297,10 @@ install it, with *pyenv*.
 
 #### Miniconda
 
-This section about miniconda is experimental and has not
-
-:   been tested. We are looking for contributors that help completing
-    it. If you use anaconda or miniconda we recommend to manage it via
-    pyenv.
+:warning: This section about miniconda is experimental and has not been 
+tested. We are looking for contributors that help completing
+it. If you use anaconda or miniconda we recommend to manage it via
+pyenv.
 
 To install mini conda you can use the following commands:
 
@@ -331,10 +326,9 @@ To install cloudmesh cmd5 please use:
 
 #### Anaconda
 
-This section about anaconda is experimental and has not
-
-:   been tested. We are looking for contributors that help completing
-    it.
+:warning: his section about anaconda is experimental and has not
+been tested. We are looking for contributors that help completing
+it.
 
 You can add anaconda to your pyenv with the following commands:
 

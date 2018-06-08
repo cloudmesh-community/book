@@ -158,7 +158,7 @@ European Bioinformatics Institute and contrast to Facebook and Walmart.
 
 #### Implications for Scientific Method
 
-We discuss the emergences of a new fourth methodology for scientific
+We discuss the emergencies of a new fourth methodology for scientific
 research based on data driven inquiry. We contrast this with third \~\~
 computation or simulation based discovery - methodology which emerged
 itself some 25 years ago.

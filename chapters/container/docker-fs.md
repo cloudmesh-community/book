@@ -25,7 +25,7 @@ If your access to the india host has been verified, try to login to the
 docker swarm head node. To conveniently do this let us define some Linux
 environment variables to simplify the access and the material presented
 here. YOu can place them even in your `.bashrc` or `.bash_profile` so
-the information gets populated whnever you start a new terminal.
+the information gets populated whenever you start a new terminal.
 
     export ECHO=149.165.150.76
     export FS_USER=<put your futersystem here>
@@ -134,7 +134,7 @@ image, e.g., a ubuntu image from the docker cloud. Then you could:
 
 In reality, the first approach is probably useful when you are in the
 phase of develop and debug your application/service. Once you have the
-step by step instructions developped the latter approach is the
+step by step instructions developed the latter approach is the
 recommended way.
 
 Publish the image to the docker cloud by following this documentation:

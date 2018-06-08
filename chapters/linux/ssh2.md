@@ -245,7 +245,7 @@ A list of supported commands is available at
 <https://cygwin.com/packages/package_list.html>
 Please be minded that in order for cygwin to function easily the Windows
 user name should not include spaces. However, as the setup in windows
-encourages to use the full name whne you buy and setup a machine it may
+encourages to use the full name when you buy and setup a machine it may
 not be convenient to use. However, we just recommend that you create
 yourself a new username and use this if you like to use cygwin.
 
@@ -309,7 +309,7 @@ including "ssh-rsa". This will be used when importing the key pair to
 Openstack.
 
 At this time, the public key has been created and copied. Now you can
-use the public key and upload it to systems you like to ligin to.
+use the public key and upload it to systems you like to login to.
 
 ### Chocolatey
 
@@ -321,12 +321,12 @@ Chocolatey is a software management tool that mimics the install
 experience that you have on Linux and OSX. It has a repository with many
 packages. The packages are maintained by the community and you need to
 evaluate security implications when installing packages hosted on
-chocolatey just as you have to do if you install software on LInux and
-OSX from their reporsitories. Please be aware that there could be
+chocolatey just as you have to do if you install software on Linux and
+OSX from their repositories. Please be aware that there could be
 malicious code offered in the chocolatey repository although the
 distributors try to remove them.
 
-The installation is sufficently explained at
+The installation is sufficiently explained at
 
 <https://chocolatey.org/install>
 Once installed you have a command choco and you should make sure you
@@ -403,12 +403,12 @@ keep an offline backup, put encrypt the drive
 -   You may for some of our projects need to make backups of private
     keys on other servers you set up. If you like to make a backup you
     can do so on a USB stick, but make sure that access to the stick is
-    encrypted. Do not stor anything else on that key and look it in a
+    encrypted. Do not store anything else on that key and look it in a
     safe place. If you lose the stick, recreate all keys on all
     machines.
 
 
-Refernces
+References
 ---------
 
 -   [The Secure Shell: The Definitive Guide, 2 Ed (O'Reilly and

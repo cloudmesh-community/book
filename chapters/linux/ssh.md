@@ -4,9 +4,9 @@ Secure Shell is a network protocol allowing users to securely connect
 to remote resources over the internet. In many services we need to use
 SSH to assure that we protect he messages send between the
 communicating entities. Secure Shell is based on public key
-technology requiring to generat ea public-private key pair on the
+technology requiring to generate a public-private key pair on the
 computer. The public key will than be uploaded to the remote machine
-and whan a connection is established during authentication the public
+and when a connection is established during authentication the public
 private key pair is tested. If they match authentication is granted. As
 many users may have to share a computer it is possible to add a list
 of public keys so that a number of computers can connect to a server
@@ -363,7 +363,7 @@ command that we described earlier.
 
 ## SSH Port Forwarding :o:
 
-:warning: this section has not beem vetted yet
+:warning: this section has not been vetted yet
 
 TODO: Add images to illustrate the concepts
 
@@ -588,7 +588,7 @@ keep an offline backup, put encrypt the drive
 -   You may for some of our projects need to make backups of private
     keys on other servers you set up. If you like to make a backup you
     can do so on a USB stick, but make sure that access to the stick is
-    encrypted. Do not stor anything else on that key and look it in a
+    encrypted. Do not store anything else on that key and look it in a
     safe place. If you lose the stick, recreate all keys on all
     machines.
 

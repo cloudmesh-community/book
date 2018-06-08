@@ -4,7 +4,7 @@ Installation of Spark
 In this section we will discuss how to install Spark 2.3.0 in Ubuntu
 16.04.
 
-Prerequisits
+Prerequisites
 ------------
 
 We assume that you have ssh, and rsync installed and use emacs as
@@ -42,7 +42,7 @@ Here we use Spark packaged with Hadoop. In this package Spark uses
 Hadoop 2.7.0 in the packaged version. Note that in
 Section [\[s:hadoop-local-installation\]](#s:hadoop-local-installation){reference-type="ref"
 reference="s:hadoop-local-installation"} we use for the vanilla Hadoop
-instalation Hadoop 3.0.0.
+installation Hadoop 3.0.0.
 
 Create the base directories and go to the directory.
 

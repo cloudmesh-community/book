@@ -7,12 +7,12 @@ docker_kubernetes_install.sh script.
 
 ### Install docker
 In order to install kubernetes you first need to have docker installed. This is 
-very strait foward.
+very strait forward.
 
 ### Disable swap memory
 Docker has an issue (in my opinion sever) in that it is **not compatible with 
-SWAP memory**, therefore it is neeeded to disable it. This might create some 
-issues, if you encounter them you should try to rebbot the cluster again, if 
+SWAP memory**, therefore it is needed to disable it. This might create some 
+issues, if you encounter them you should try to reboot the cluster again, if 
 that fails change line 16 in the script from
 
 orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=1"
@@ -30,7 +30,7 @@ rebooted.
 
 ## For the nodes
 
-All of the above needs to be done in each node aswell. The script
+All of the above needs to be done in each node as well. The script
 copy_dk_kub_install_script_to_nodes.sh should copy the needed script to each of 
 them and run it. It is set up to work with 4 nodes named rp\<number\> with pi as 
 the username (the numbers start at 1 because the head node is rp0). Changing 

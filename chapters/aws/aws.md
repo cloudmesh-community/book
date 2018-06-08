@@ -4,7 +4,8 @@
 
 ## AWS Products
 
-Amazon Web Services offers a large number of prodicst that are centered around their cloud services. These services have grown considerably over the years from the core offerning realted to virtual machine (EC2) and datastorage (S3). An overview of them is provided by Amazon in the following document:
+Amazon Web Services offers a large number of prodicst that are centered around their cloud services. These services have grown considerably over the years from the core 
+offering realted to virtual machine (EC2) and datastorage (S3). An overview of them is provided by Amazon in the following document:
 
 * <https://d0.awsstatic.com/whitepapers/aws-overview.pdf>
 
@@ -13,11 +14,11 @@ We list the product in screenshots from their Product Web page panel in Figure \
 \begin{figure}
 ![](images/aws-products-1.png)
 ![](images/aws-products-2.png)
-\caption{AWS Productcs}
+\caption{AWS Products}
 \label{F:aws-products}
 \end{figure}
 
-Sevice offerings are grouped by categories:
+Service offerings are grouped by categories:
 
 * Compute
 * Storage
@@ -34,14 +35,15 @@ Sevice offerings are grouped by categories:
 * AR and VR
 * Application Integration
 * Customer Engagement
-* Buisiness Productivity
+* Business Productivity
 * Desktop and App Streaming
 * Internet of Things
 * Game Development
 * Software
 * Aws Core Management
 
-Within each category you have several products. When chosing products form AWS it is best to start with the overview paper and identify products that can be of benefit to you. For our porpose we focus on the traditional Compute and Storage offerings.
+Within each category you have several products. When choosing products form AWS it is best to start with the overview paper and identify products that can be of benefit to you. For our 
+purpose we focus on the traditional Compute and Storage offerings.
 
 ## Locations
 

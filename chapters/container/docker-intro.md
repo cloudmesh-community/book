@@ -1,4 +1,4 @@
-Intorduction to Docker
+Introduction to Docker
 ======================
 
 Docker is the company driving the container movement and the only

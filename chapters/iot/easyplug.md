@@ -44,7 +44,7 @@ EEPROM storage capacity|    16 MHz
 
 Tools -> Arduino/Genuin Arduino
 
-port oon OSX will loock something like this:
+port oon OSX will lock something like this:
 
 * /dev/cu.usbmodem1461
 

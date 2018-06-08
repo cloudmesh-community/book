@@ -2,8 +2,8 @@ apiVersion: kubeadm.k8s.io/v1alpha1
 kind: MasterConfiguration
 controllerManagerExtraArgs:
   #if node is taken out of network admin will kick it 
-  #out and redisbrute the workload
+  #out and redistribute the workload
   pod-eviction-timeout: 10s 
-  #if node is unresposive will kick it 
-  #out and redisbrute the workload
+  #if node is unresponsive will kick it
+  #out and redistribute the workload
   mode-monitor-grace-period: 20s

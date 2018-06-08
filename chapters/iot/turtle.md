@@ -74,7 +74,7 @@ coordinates: Install the corresponding polygon shape.
 name is an arbitrary string and shape is a (compound) Shape object:
 Install the corresponding compound shape.
 
-Add a turtle shape to TurtleScreen's shapelist. Only thusly registered
+Add a turtle shape to TurtleScreen's shapelist. Only the registered
 shapes can be used by issuing the command shape(shapename).
 
 Links

@@ -11,7 +11,7 @@ unchanged uniform paper format. As we do such cheating attempts are
 easy to detect.
 
 To avoid all this, we have adopted a the following simple **proven**
-approach implemented by hundrets of students successfully.
+approach implemented by hundreds of students successfully.
 
 1.  We provide you with a **high quality** report template format that
     you **must not change**. It is a slight improvement to a template
@@ -99,7 +99,7 @@ with each other in case yo work in a team.
 
 ### Timemanagement
 
-Obviously doin a project takes time
+Obviously doing a project takes time
 
 1.  It takes time to read the information
 2.  It takes time understand the information
@@ -216,7 +216,7 @@ observed over time done by students developing reports.
 35. Make sure to add your hid as a prefix to the bibtex label.
 
 36. howpublished does not contain urls, for that we use a url attribute.
-    IN how published you put a noun in that discribbes what it is. E.g.
+    IN how published you put a noun in that describes what it is. E.g.
     Webpage, Git repository, ...
 
 ### Exercise
@@ -263,7 +263,7 @@ Report.10:
 
 Report.11:
 
-:   Review in a grammar book propper usage of "a" and "the".
+:   Review in a grammar book proper usage of "a" and "the".
 
 Report.11:
 

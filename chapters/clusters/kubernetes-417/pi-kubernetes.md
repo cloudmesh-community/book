@@ -39,7 +39,7 @@ The hostname can be given by clicking the top right
 
 `wifi icon> network setting>`
 
-The windown can be launched by
+The window can be launched by
 
 ```bash
     $ raspi-config
@@ -67,7 +67,7 @@ config `/etc/dhcpcd.conf`
 
 :warning: TODO no I in the text
 
-I have added the following aletrnatively eth0 block can be added if
+I have added the following alternatively eth0 block can be added if
 wired setup is preferred
 
 ```
@@ -106,7 +106,7 @@ effect.
     ```
 
   With the static ip setup and ssh enabled you should be able to ssh
-  in to the Pi. For passwordless acess setup the SSH key as per the
+  in to the Pi. For passwordless access setup the SSH key as per the
   following step
 
 * Generate the ssh key; make sure you give a passcode:
@@ -154,7 +154,7 @@ Setup kubeadm with
   sudo apt-get install -qy kubeadm
 ```
   
-The process till now stays the same for both workes and master
+The process till now stays the same for both workers and master
   
 ## Master setup
   
@@ -197,6 +197,6 @@ Use `get nodes` in the master to check the status
   
 ## Troubleshooting 
 
-During the development of this tytorial its been experienced that
-Kubernetes cluster needs atleast one master and three worker nodes.
+During the development of this tutorial its been experienced that
+Kubernetes cluster needs at least one master and three worker nodes.
 Using less resources will lead to slow processor

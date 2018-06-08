@@ -8,7 +8,7 @@ Creating an SD Card
 
 First, install Etcher from [etcher.io](https://etcher.io/) which allows
 you to flash images onto the SD card. When flashing make sure you only
-attach one USB SD card reader/wroiter or use the build in SD card slot
+attach one USB SD card reader/writer or use the build in SD card slot
 provided in some Mac's.
 
 The version of etcher we used is
@@ -30,7 +30,7 @@ DexterOS:
 
 The video is published on the Dexter Web site.
 
-### Dexter Rasbian
+### Dexter Raspbian
 
 Dexter provides a special image that contains the drivers and sample
 programs for the GrovePi shield. We had some issues installing it on a

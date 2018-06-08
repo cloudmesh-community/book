@@ -8,7 +8,7 @@ TODO:
 - [x] The original text contained too many sections which has been changed
 - [ ] Some text in teh later part is unclear
 
-We provide step-by-step instructions on insalling a Spark cluster on
+We provide step-by-step instructions on installing a Spark cluster on
 a pre-installed hadoop on a cluster of raspberry pi. To start we
 assume you have Haddop installed. THis is achieved by following the
 instructions provided 
@@ -55,7 +55,7 @@ sudo mkdir -p /opt/spark-2.3.0
 sudo chown -R hduser:hadoop /opt/spark-2.3.0 
 ```
 
-Unzip the tar fle into desitnaiton folder
+Unzip the tar fle into destination folder
 
 ```bash tar -xzf spark-2.3.0-bin-hadoop2.7.tgz -C /opt/spark-2.3.0 --strip-components=1 ```
 
@@ -117,7 +117,7 @@ Add the hostnames to the file
 
 ## Test Setup	
 
-Run `spark-shell` from the command line. You will have succeded if you
+Run `spark-shell` from the command line. You will have succeed if you
 see something like this
 
 ```bash 

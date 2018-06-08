@@ -73,7 +73,7 @@ Step 7: Creating the swarm
     $ sudo docker swarm join --token SWMTKN-abc...manager...xyz 
     ```
       
-:warning: There seems to be some issue with indentation or incomplet documentation from here on
+:warning: There seems to be some issue with indentation or incomplete documentation from here on
 
 `IP Address of the node` to join node as a manager
 

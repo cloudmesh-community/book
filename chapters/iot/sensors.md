@@ -11,7 +11,7 @@ example for such a class can be found at:
 Compass
 -------
 
-TODO: which compas sensor
+TODO: which compass sensor
 
 The default pins are defined in variants/nodemcu/pins\_arduino.h as GPIO
 

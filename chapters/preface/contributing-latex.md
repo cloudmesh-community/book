@@ -8,7 +8,7 @@ of the document is rather simple.
 
 We assume you are using a an OS on which you have installed and can
 execute pdflatex. Operating systems such as Linux, OSX, or Windows can
-be set up for it. On WIndows we recommend that you also install bitbash
+be set up for it. On Windows we recommend that you also install bitbash
 and have make installed.
 
 We assume that you are familiar with git and have git installed.
@@ -24,7 +24,7 @@ If you use windows you can install git for windows
 your classes directory.
 
 It is important that you have set up git correctly, otherwise your pull
-requeste may not show up properly. First you need to initialize your
+request may not show up properly. First you need to initialize your
 directory for use with Git:
 
     git init
@@ -51,9 +51,9 @@ fork from the web browser.
 
     git clone https://github.com/cloudmesh/book
 
-Next we need to swithc into the development branch called *dev*
+Next we need to switch into the development branch called *dev*
 
-Using the GITUSERNAME will gurantee that you first If you clone, you
+Using the GITUSERNAME will guarantee that you first If you clone, you
 need to make sure you clone from your fork.
 
 Once you have cloned and forked, you will find in the directory `book`
@@ -97,14 +97,14 @@ issue a pull request for your work to be integrated into the original
 repository by clicking the *Pull Request* field in the right hand corner
 beneath the topics.
 
-### Adding bibligraphic references
+### Adding bibliographic references
 
-We use a single refrence file formated in *bibtex*. The file is located
-in docs/source/refs.bib. We use sphinx-bibtex to manage the refernces in
+We use a single reference file formated in *bibtex*. The file is located
+in docs/source/refs.bib. We use sphinx-bibtex to manage the references in
 rst pages. However, it has the disadvantage that we can only have on
 refrence section per bib file. In order to simplify management as we may
-cite the same refernces in differnt files it is not useful to develop a
-bib file for each rst file. INstead we developed the following pragmatic
+cite the same references in different files it is not useful to develop a
+bib file for each rst file. Instead we developed the following pragmatic
 approach.
 
 Here is the process that we automatically apply in the *Makefile*
@@ -119,7 +119,7 @@ Here is the process that we automatically apply in the *Makefile*
 
 -   In gitignore we have a rule that excludes them
 
-The only thing you have to do in order to use refernces is to make the
+The only thing you have to do in order to use references is to make the
 index unique and to add a section such as the following to your
 document:
 
@@ -131,8 +131,8 @@ document:
        :cited:
        :labelprefix: filename
 
-Please note the unique filename. To properly geberate the citations we
-remommend you use:
+Please note the unique filename. To properly generate the citations we
+recommend you use:
 
     make clean; make
 
@@ -154,7 +154,7 @@ do always create small pull request. They are easier to
 
 :   accept. If you create many different changes in many different
     locations in files the likelihood is that we reject the pull request
-    and you have to split it up and redu, costing time on your side.
+    and you have to split it up and redo, costing time on your side.
     This is part of learning how we use git.
 
 <!-- -->
@@ -224,4 +224,4 @@ EContrib.4:
 EContrib.5:
 
 :   Why do we ask you to do multiple pull requests? What could be the
-    consequence if you make hundrets of changes in one pull request?
+    consequence if you make hundreds of changes in one pull request?

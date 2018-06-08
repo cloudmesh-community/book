@@ -274,18 +274,13 @@ Python-based ecosystem of open-source software for mathematics, science,
 and engineering. In particular, these are some of the core packages:
 
 -   NumPy
-
 -   IPython
-
 -   Pandas
-
 -   Matplotlib
-
 -   Sympy
-
 -   SciPy library
 
-It is thus an agglomeration of useful pacakes and will prbably sufice
+It is thus an agglomeration of useful pacakes and will probably suffice
 for your projects in case you use Python.
 
 #### ggplot
@@ -307,17 +302,14 @@ plots.
 
 -   Gallery:
     <http://stanford.edu/~mwaskom/software/seaborn/examples/index.html>
-
 -   Original Tutorial:
     <http://stanford.edu/~mwaskom/software/seaborn/tutorial.html>
-
 -   Additional Tutorial:
     <https://stanford.edu/~mwaskom/software/seaborn/tutorial/distributions.html>
 
 Here are some examples from a previous class:
 
 -   <https://github.com/bigdata-i523/hid231/blob/master/experiment/seaborn/seaborn-exercises.ipynb>
-
 -   <https://github.com/bigdata-i523/hid231/blob/master/experiment/learning-jupyter/learning_jupyter_notebook.ipynb>
 
 [\[E:ipynb-export\]]{#E:ipynb-export label="E:ipynb-export"} Take these
@@ -358,7 +350,7 @@ It also allows to present the data in a table.
 
 #### REST
 
--   django REST FRamework <http://www.django-rest-framework.org/>
+-   django REST Framework <http://www.django-rest-framework.org/>
 
 -   flask
     <https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask>

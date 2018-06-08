@@ -14,7 +14,7 @@ Python 2.7.x can be used to do this tutorial
 
 ### Ubuntu and OSX
 
-Please use our instructions on installying pyenv.
+Please use our instructions on installing pyenv.
 
 ### Windows
 
@@ -25,7 +25,7 @@ MSI](https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi)
 
 After installing python add an environmental variable by pressing
 Windows Key + Pause and Select Advanced system settings. Then add an
-environment varible for system variables for the variable PATH which is
+environment variable for system variables for the variable PATH which is
 already there. And in that add the new variable
 
     C:\Python27
@@ -398,7 +398,7 @@ f7c6a4710ad2 prakhar1989/static-site "./wrapper.sh"             5d ago     Exite
 1f90a411c746 hello-world             "/hello"                  11d ago     Exited (0) 11d ago          everent_raman
 ```
 
-#### Deleting Docker Conatiner first and then remove Docker Image
+#### Deleting Docker Container first and then remove Docker Image
 
 ``` {basicstyle="\tiny\ttfamily"}
 $ docker images

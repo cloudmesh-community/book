@@ -259,15 +259,11 @@ We have however in regards to using other python version additional
 bonus projects such as
 
 -   deploy run and document cloudmesh on ironpython
-
 -   deploy run and document cloudmesh on anaconda, develop script to
     generate a conda package form github
-
 -   deploy run and document cloudmesh on canopy, develop script to
     generate a conda package form github
-
 -   deploy run and document cloudmesh on ironpython
-
 -   other documentation that would be useful
 
 Resources
@@ -284,39 +280,24 @@ learning](https://wiki.python.org/moin/BeginnersGuide/Programmers) as
 well. Additional resources include:
 
 -   <https://virtualenvwrapper.readthedocs.io>
-
 -   <https://github.com/yyuu/pyenv>
-
 -   <https://amaral.northwestern.edu/resources/guides/pyenv-tutorial>
-
 -   <https://godjango.com/96-django-and-python-3-how-to-setup-pyenv-for-multiple-pythons/>
-
 -   <https://www.accelebrate.com/blog/the-many-faces-of-python-and-how-to-manage-them/>
-
 -   <http://ivory.idyll.org/articles/advanced-swc/>
-
 -   <http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html>
-
 -   <http://www.youtube.com/watch?v=0vJJlVBVTFg>
-
 -   <http://www.korokithakis.net/tutorials/python/>
-
 -   <http://www.afterhoursprogramming.com/tutorial/Python/Introduction/>
-
 -   <http://www.greenteapress.com/thinkpython/thinkCSpy.pdf>
-
 -   <https://docs.python.org/3.3/tutorial/modules.html>
-
 -   <https://www.learnpython.org/en/Modules/_and/_Packages>
-
 -   <https://docs.python.org/2/library/datetime.html>
-
 -   <https://chrisalbon.com/python/strings/_to/_datetime.html>
 
 A very long list of useful information are also available from
 
 -   <https://github.com/vinta/awesome-python>
-
 -   <https://github.com/rasbt/python_reference>
 
 This list may be useful as it also contains links to data visualization
