@@ -241,7 +241,6 @@ MAPREDUCE=\
  chapters/iot/sensors.md\
  chapters/iot/tools.md\
  chapters/iot/turtle.md\
- chapters/iot/vnc.md\
  chapters/msg/mqtt.md\
  chapters/msg/graphql.md\
  chapters/rest/rest.md\
@@ -300,6 +299,7 @@ CHAPTER_PI=\
  chapters/linux/ssh.md\
  chapters/linux/refcards.md\
  chapters/raspberry/config-display.md\
+ chapters/pi/vnc.md\
  chapters/raspberry/motherboard-led.md\
  chapters/run-at-boot.md\
  chapters/SECTION-DRAFT.md\
