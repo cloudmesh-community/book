@@ -87,7 +87,7 @@ without configuring an SSH key.
 
 Next is 'Networking', where you select which network should be
 associated with the instance. Click the + next to your your project's
-private network (PROJECT\_NAME-net), not ext-net.
+private network (PROJECT_NAME-net), not ext-net.
 
 ![image](images/openstack_alamo_networking.png){width="0.8\columnwidth"}
 

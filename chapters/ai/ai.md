@@ -195,14 +195,14 @@ columns can not be normalized in the way described above.
 
 We can now use built in functions to calculate the nearest neighbors in
 order to compare to our results attained from the above exercise. In
-case you did not notice the selected\_player\_distance array is an array
+case you did not notice the selected_player_distance array is an array
 that lists all the Euclidean distances. We will use this later to see if
 the same result is obtained by using the built in functions. First we
 will import the necessary libraries shown below.
 
     from scipy.spatial import distance
 
-If you inspected the the selected\_player\_distance array you would have
+If you inspected the the selected_player_distance array you would have
 noticed that there were several NaN's present this was due to having an
 incomplete dataset and must be avoided. The following bit of code will
 replace all NA entries with zeros.

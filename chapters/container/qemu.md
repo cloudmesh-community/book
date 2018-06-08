@@ -33,7 +33,7 @@ for Linux on x86 hardware containing virtualization extensions (Intel VT
 or AMD-V). It consists of a loadable kernel module, kvm.ko, that
 provides the core virtualization infrastructure and a processor specific
 module, kvm-intel.ko or kvm-amd.ko. The home page of KVM is here:
-https://www.linux-kvm.org/page/Main\_Page
+https://www.linux-kvm.org/page/Main_Page
 
 KVM stands for Kernel Virtual Machine, and it is a module of the Linux
 kernel which allows a program to access and make use of the
@@ -70,7 +70,7 @@ disk. From the perspective of the guest OS, it actually is a hard disk,
 and it can create its own filesystem on the virtual disk.
 
 You can download a few guest OS images from the [QEMU
-website](https://wiki.qemu.org/Testing/System_Images). System\_Images,
+website](https://wiki.qemu.org/Testing/System_Images). System_Images,
 including a simple 8 MB image of a Linux distro (which is meant
 primarily for testing; note that it lacks the e1000 driver and therefore
 cannot do networking out-of-the-box). To run it, download and unzip the
@@ -243,7 +243,7 @@ General
 
 -   Official website for `libvirt` is here: https://libvirt.org/
 
--   Home page of KVM is here: https://www.linux-kvm.org/page/Main\_Page
+-   Home page of KVM is here: https://www.linux-kvm.org/page/Main_Page
 
 -   QEMU home page: https://www.qemu.org/
 

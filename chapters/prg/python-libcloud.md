@@ -36,7 +36,7 @@ Some advanced cloud features do not work.
 
 ### Features
 
--   https://libcloud.readthedocs.io/en/latest/supported\_providers.html
+-   https://libcloud.readthedocs.io/en/latest/supported_providers.html
 
     Provider    list nodes  create node reboot node destroy node    list images list sizes  deploy node
     Azure Virtual machines  yes yes yes yes yes yes yes
@@ -86,7 +86,7 @@ https://libcloud.readthedocs.io/en/latest/compute/pricing.html
 out of date
 
 Currently only way to update pricing is programmatically using
-libcloud.pricing.download\_pricing\_file() function. By default this
+libcloud.pricing.download_pricing_file() function. By default this
 function retrieves the latest pricing file from our git repository and
 saves it to \~/.libcloud.pricing.json
 
@@ -100,7 +100,7 @@ TBD
 
 ### keypair
 
-https://libcloud.readthedocs.io/en/latest/compute/key\_pair\_management.html
+https://libcloud.readthedocs.io/en/latest/compute/key_pair_management.html
 
 ### Data
 
@@ -144,6 +144,6 @@ https://libcloud.readthedocs.io/en/latest/dns/index.html
 
 https://libcloud.readthedocs.io/en/latest/container/index.html
 
-https://libcloud.readthedocs.io/en/latest/container/supported\_providers.html
+https://libcloud.readthedocs.io/en/latest/container/supported_providers.html
 
 docker amazon google kubernetes rancher joynet?

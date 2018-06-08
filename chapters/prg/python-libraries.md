@@ -168,7 +168,7 @@ Python programming language containing a large number of packages
 \[link\]. The nice think about pipy is that many packages can be
 installed with the program 'pip'.
 
-To do so you have to locate the \<package\_name\> for example with the
+To do so you have to locate the \<package_name\> for example with the
 search function in pypi and say on the commandline:
 
 ``` {.bash}
@@ -176,7 +176,7 @@ $ pip install <package_name>
 ```
 
 where `package_name` is the string name of the package. an example would
-be the package called cloudmesh\_client which you can install with:
+be the package called cloudmesh_client which you can install with:
 
 ``` {.bash}
 $ pip install cloudmesh_client

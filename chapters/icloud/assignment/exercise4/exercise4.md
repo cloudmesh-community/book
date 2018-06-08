@@ -22,7 +22,7 @@ occurrences[]{label="fig:wordcounttablescheme"}](section/icloud/assignment/exerc
 Deliverables
 ------------
 
-Zip your source code and report in a file named username\_exercise4.zip
+Zip your source code and report in a file named username_exercise4.zip
 
 Evaluation
 ----------

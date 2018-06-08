@@ -591,10 +591,10 @@ earlier.
 
 Whenever you are creating an instance in Chameleon, you will have an
 option to select the Public Key you just imported. Once selected, this
-public key will be inserted into the instance's \~/.ssh/known\_hosts
+public key will be inserted into the instance's \~/.ssh/known_hosts
 file. When a user attempts to connect to the instance, the private key
 provided by the user will be validated against this public key in the
-known\_hosts file.
+known_hosts file.
 
 ###### Connect to an instance from your terminal
 
@@ -628,7 +628,7 @@ passphrases are not necessary!
 
 Save both the public and private keys into a file of your choice using
 the "Save public key" and "Save private key" buttons; name them
-something obvious like "public\_key" and "private\_key" so that you can
+something obvious like "public_key" and "private_key" so that you can
 distinguish between the two.
 
 Before closing this window, select the entire public key and copy it

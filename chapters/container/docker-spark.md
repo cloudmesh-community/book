@@ -98,7 +98,7 @@ Let's run a sample KMeans example. This is already built with Spark.
 Here we specify the data data set from a local folder inside the image
 and we run the sample class KMeans in the sample package. The sample
 data set used is inside the sample-data folder. Spark has it's own
-format for machine learning datasets. Here the kmeans\_data.txt file
+format for machine learning datasets. Here the kmeans_data.txt file
 contains the KMeans dataset.
 
     ./bin/spark-submit --class sample.KMeans --master execution-context:org.apache.spark.tez.TezJobExecutionContext --conf update-classpath=true ./lib/spark-native-yarn-samples-1.0.jar /sample-data/kmeans_data.txt

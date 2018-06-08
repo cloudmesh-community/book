@@ -64,11 +64,11 @@ paradigm of *serverless computing*.
 As an example, the following command creates a service and deploy it to
 the swarm cluster:
 
-> docker service create --name notebook\_test -p 9001:8888
+> docker service create --name notebook_test -p 9001:8888
 > jupyter/datascience-notebook start-notebook.sh
-> --NotebookApp.password=NOTEBOOK\_PASS\_HASH
+> --NotebookApp.password=NOTEBOOK_PASS_HASH
 
-The NOTEBOOK\_PASS\_HASH can be generated in python:
+The NOTEBOOK_PASS_HASH can be generated in python:
 
     >>> import IPython
     >>> IPython.lib.passwd("YOUR_SELECTED_PASSWROD")

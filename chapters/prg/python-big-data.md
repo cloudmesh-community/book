@@ -32,7 +32,7 @@ ahead and download the remaining three files with `wget`.
 
 In this example, we will use three modules, `numpy`, `pandas` and
 `matplotlib`. If you set up `virtualenv` as described in the Python
-tutorial \<python\_intro\>, the first two of these are already installed
+tutorial \<python_intro\>, the first two of these are already installed
 for you. To install `matplotlib`, make sure you've activated your
 `virtualenv` and use `pip`:
 
@@ -54,7 +54,7 @@ the Python interpreter and load the citations data for Q1 2016
     >>> data = pd.read_csv('2016-first-quarter-citations.csv')
 
 If the first `import` statement seems confusing, take a look at the
-Python tutorial \<python\_intro\>. The next three `import` statements
+Python tutorial \<python_intro\>. The next three `import` statements
 load each of the modules we will use in this example. The final line
 uses Pandas' `read_csv` function to load the data into a Pandas
 `DataFrame` data structure.

@@ -8,7 +8,7 @@ For this exercise you will implement PageRank on Harp framework.
 Deliverables
 ------------
 
-Zip your source code and output as username\_harp-pagerank.zip. Please
+Zip your source code and output as username_harp-pagerank.zip. Please
 submit this file to the Canvas Assignments page.
 
 Evaluation

@@ -10,7 +10,7 @@ scratch (See [Useful Links](#link_exercise8)).
 Deliverables
 ------------
 
-Zip your source code and report as username\_mbkmeans.zip. Please submit
+Zip your source code and report as username_mbkmeans.zip. Please submit
 this file to the Canvas Assignments page.
 
 Evaluation

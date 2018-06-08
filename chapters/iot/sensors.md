@@ -13,7 +13,7 @@ Compass
 
 TODO: which compass sensor
 
-The default pins are defined in variants/nodemcu/pins\_arduino.h as GPIO
+The default pins are defined in variants/nodemcu/pins_arduino.h as GPIO
 
     SDA=4 
     SCL=5
