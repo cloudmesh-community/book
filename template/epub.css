@@ -65,8 +65,13 @@ h6 { text-align: left; }
 h1 {
     text-align: left;
     font-family: OpenSans;
+    border-top: 2px solid black;
     border-bottom: 2px solid black;
+    border-left: 12px solid black;
+    border-right: 2px solid black;   
     page-break-before: always;
+    background-color: WhiteSmoke;
+    padding: 2px;
 }
 h2 {
     text-align: left;    
