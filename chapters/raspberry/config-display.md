@@ -5,10 +5,6 @@ send sometimes visual clues about its operations. This can be done via
 displays and LEDs. In case no display is available we can even connect
 to the PI with a virtual display redirection.
 
-## VNC :o:
-
-TODO: This section has to be found and reintegrated here
-
 
 ## Automatic Display Detection
 
