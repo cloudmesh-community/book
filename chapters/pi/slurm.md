@@ -1,4 +1,4 @@
-# Slurm
+# SLURM
 
 This may be inspiring
 

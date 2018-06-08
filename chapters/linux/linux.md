@@ -271,7 +271,7 @@ at <http://www.cs.jhu.edu/~joanne/unixRC.pdf>.
 ### Makefiles on Windows
 
 Makefiles can easily be accessed also on windows while installing
-gitbash. Please reer to the internet or search in this handbook for more
+gitbash. Please use to the internet or search in this handbook for more
 information about gitbash.
 
 ## Exercises

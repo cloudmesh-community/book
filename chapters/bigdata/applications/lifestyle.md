@@ -71,7 +71,7 @@ web pages etc. We present this as "yet another optimization problem".
 
 We give a general discussion of recommender systems and point out that
 they are particularly valuable in long tail of tems (to be recommended)
-that aren't commonly known. We pose them as a rating system and relate
+that arenot commonly known. We pose them as a rating system and relate
 them to information retrieval rating systems. We can contrast
 recommender systems based on user profile and context; the most familiar
 collaborative filtering of others ranking; item properties; knowledge

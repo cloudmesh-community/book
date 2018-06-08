@@ -40,7 +40,7 @@ To install a vnc server of your liking on your Mac. You find one at
 
 Be sure to download the version of the VNC Viewer for the computer you
 are going to use to virtually control the Pi (there is a version listed
-for Raspberry Pi-- don't download this one. For us this is the Mac
+for Raspberry Pi-- donot download this one. For us this is the Mac
 version.)
 
 #### Run VNC Viewer on OSX

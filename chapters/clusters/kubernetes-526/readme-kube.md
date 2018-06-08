@@ -42,7 +42,7 @@ This can be done on the command line using:
 
     sudo raspi-config
     
-Or on the desktop by going to Menu -> Preferences -> Raspbery Pi Configuration
+Or on the desktop by going to Menu -> Preferences -> Raspberry Pi Configuration
 
 Or by modifying **/etc/hostname**
 
@@ -128,7 +128,7 @@ Now you can run commands to all clusters by:
 
 ## Installing kubernetes
 
-First install doker, disable swap, install kubeadm
+First install docker, disable swap, install kubeadm
 
 All the following steps are made automatically by the 
 docker_kubernetes_install.sh script.
@@ -160,7 +160,7 @@ rebooted.
 
 ---
 
-:warning: **All of this will be done by the script, don't worry** (maybe worry)
+:warning: **All of this will be done by the script, donot worry** (maybe worry)
 
 ---
 

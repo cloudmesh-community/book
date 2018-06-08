@@ -119,7 +119,7 @@ public class DataAnalysis extends Configured implements Tool {
 		//"#_INPUTFILE_# -p 95 -o 49 -t 100"
 		String cmdArgs = args[7] ;
 		
-		int numReduceTasks = 0;// We don't need reduce here.
+		int numReduceTasks = 0;// We donot need reduce here.
  
 		launch(numReduceTasks, programDir, execName, workingDir , 
 			databaseArchive, databaseName,inputDir,	outputDir, cmdArgs);

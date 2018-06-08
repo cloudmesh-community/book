@@ -55,7 +55,7 @@ and replace the values with the once you have. To save the file use
 
 TODO: what will the file look like for ATT-wifi
 
-Furthermore, if you are at iu and use att-wify, you need to go with
+Furthermore, if you are at iu and use ATT-wifi, you need to go with
 your web browser to `http:\\iu.edu` and click on the connect
 button. Sometimes that button is not visible so you need to scroll to it.
 
@@ -120,7 +120,7 @@ $ apt-get install <program>
 ```
 
 Other editors include `vim`, `gedit` and so on. If you are concerned
-about space, use `vi` which is preinstalled. If you like to use other
+about space, use `vi` which is pre-installed. If you like to use other
 editors use the command we can install them respectively with 
 
 ```bash

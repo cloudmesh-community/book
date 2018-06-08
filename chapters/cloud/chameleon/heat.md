@@ -95,7 +95,7 @@ launch a complex appliance, you only need to follow these steps:
 
 This will take you to the Stacks page within the Orchestration menu.
 This page will show the current list of stacks, with controls to manage
-them and create new ones. Since we haven't launched any yet, this list
+them and create new ones. Since we havenot launched any yet, this list
 will be empty for now.
 
 We will now create a new stack, which corresponds to the launch of a
@@ -108,10 +108,10 @@ We will deploy the NFS appliance described earlier; it will consist of a
 server node and two client nodes. Change the template source field to
 URL, and paste the URL of the [NFS share
 template](https://www.chameleoncloud.org/appliances/api/appliances/25/template)
-(if you don't have it in your clipboard anymore you will need to go back
+(if you donot have it in your clipboard anymore you will need to go back
 to the appliance and get it by clicking on "Get template" again).
 
-Don't change the environment source settings, and click "Next".
+Donot change the environment source settings, and click "Next".
 
 The next screen allows your to enter input values to your Heat template.
 Choose a name for your stack (e.g. my-nfs-cluster). Ignore the "Creation
@@ -143,7 +143,7 @@ group composed of two instances). The server's floating IP (the public
 IP assigned to a resource) is represented by an IP in a circle; an IP in
 a circle is also used to represent the association of the IP with the
 NFS server instance (not the greatest idea to use the same symbol for
-both the IP and the association -- we agree but can't do much about it
+both the IP and the association -- we agree but canot do much about it
 at the moment). Blow off some steam by dragging the visualization across
 the screen, it can be rather fun!
 
@@ -708,19 +708,19 @@ these pattern will be possible:
 
 -   The server has to be deployed first, and once it is deployed, the
     clients can be launched and contextualized with information from the
-    server. The server won't know about the clients unless there is a
+    server. The server will not know about the clients unless there is a
     mechanism (not managed by Heat) for the client to contact the
     server.
 
 -   The clients have to be deployed first, and once they are deployed,
     the server can be launched and contextualized with information from
-    the clients. The clients won't know about the server unless there is
+    the clients. The clients will not know about the server unless there is
     a mechanism (not managed by Heat) for the server to contact the
     clients.
 
 This limitation was already apparent in our NFS share appliance: this is
 why the server instance exports the file system to all bare-metal
-instances on Chameleon, because it doesn't know which specific IP
+instances on Chameleon, because it doesnot know which specific IP
 addresses are allocated to the clients.
 
 This limitation is even more important if the deployment is not

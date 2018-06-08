@@ -79,7 +79,7 @@ external. Next, we need to unmoundt the device with
 where you replace the number N with the disk number that you found for
 the device. In our example it would be 2. If you see the error
 "Unmount of diskN failed: at least one volume could not be unmounted",
-start Disk Utility.app and unmount the volume (don't eject). If it was
+start Disk Utility.app and unmount the volume (donot eject). If it was
 successful, you will see
 
 	Unmount of all volumes on disk2 was successful
@@ -103,7 +103,7 @@ according to the ubuntu documentation)
 Ubuntu's Web page also gives the following tips:
 
 * "If you see the error dd: Invalid number '1m', you are using GNU dd. Use the same command but replace bs=1m with bs=1M."
-* "If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. Start Disk Utility.app and unmount the volume (don't eject)."
+* "If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. Start Disk Utility.app and unmount the volume (donot eject)."
 
 You will see an error window popping up telling you: **The disk inserted was not readable by this compute**. Please, leave the window as is  and instead type in on the terminal.
 
@@ -261,7 +261,7 @@ it has finished, Etcher will report on the successful process.
 \begin{WARNING}
 
 After the write process has completed, macOS may inform you that *The
-disk you inserted was not readable by this computer*. Don't select
+disk you inserted was not readable by this computer*. Donot select
 Initialise. Instead, select Eject and remove the USB device.
 
 \end{WARNING}

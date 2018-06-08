@@ -75,7 +75,7 @@ Is there a better way?
 
 develop a python script to do that
 
-### Enable sshd
+### Enable SSH
 
 Not tested
 
@@ -151,7 +151,7 @@ edit /etc/default/isc-dhcp-server
 
     cat /sys/class/thermal/thermal_zone0/temp
 
-### graphana
+### grafana
 
 could be helpful to monitor cluster/clusters
 

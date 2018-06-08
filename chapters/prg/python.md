@@ -495,7 +495,7 @@ Python lists can contain duplicates as you saw above:
 names = ['Albert', 'Jane', 'Liz', 'John', 'Abby', 'Liz']
 ```
 
-When we don't want this to be the case, we can use a
+When we donot want this to be the case, we can use a
 [set](https://docs.python.org/2/library/stdtypes.html#set):
 
 ```python
@@ -533,7 +533,7 @@ and now we have
 
 `['Lincoln', 'John', 'Albert', 'Liz', 'Lindsay'])`
 
-You should not assume this is the case in general. That is, don't make
+You should not assume this is the case in general. That is, donot make
 any assumptions about the order of elements in a set when it is
 converted to any type of sequential data structure.
 
@@ -640,7 +640,7 @@ Both methods return lists. Notice, however, that the order in which the
 elements appear in the returned lists (Age, Name, Class) is different
 from the order in which we listed the elements when we declared the
 dictionary initially (Name, Age, Class). It is important to keep this in
-mind: **you can't make any assumptions about the order in which the
+mind: **you canot make any assumptions about the order in which the
 elements of a dictionary will be returned by the keys() and values()
 methods**.
 

@@ -31,7 +31,7 @@ appropriate cases for your monitor
 To achieve this we have developed the file 
 [displaydetect.py](https://raw.githubusercontent.com/cloudmesh/cloudmesh.pi/master/displaydetect.py)
 that automatically detects and set the display for the pi. To
-integrate it in the Rasbian OS please follow these steps 
+integrate it in the Raspbian OS please follow these steps 
 
 1. Install the display detect script. Run this as root:
 
@@ -83,7 +83,7 @@ Now you can go in the filed and use the monitor of your choice
 
 1. Look at the monitor name
 2. look at the preferred resolution
-3. create an new elif in the switch
+3. create an new condition in the switch
 
 ## Exercises
 

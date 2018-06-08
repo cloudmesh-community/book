@@ -95,7 +95,7 @@ ordered from smallest to largest distances, naturally the smallest
 distances are the most similar. You may notice that the values of
 horsepower are significantly larger in magnitude than the values
 associated with racing stripes. This could be problematic in many real
-world scenarios where the columns associated with large values don't
+world scenarios where the columns associated with large values donot
 have as direct of an impact as horsepower does on the variable we are
 trying to predict--a car being fast. In the case where each column value
 has equal predictive power data normalization should be performed. This

@@ -143,7 +143,7 @@ project deployments.
 
 We are going to use a top-down fashion in this example. We first start
 from a playbook that is already good to go. You can execute this
-playbook (don't do it yet) to get R installed in your remote hosts. We
+playbook (donot do it yet) to get R installed in your remote hosts. We
 then further complicate this concise playbook by introducing
 functionalities to do the same tasks but in different ways. Although
 these detours are not necessary in this simply case, it helps you grasp

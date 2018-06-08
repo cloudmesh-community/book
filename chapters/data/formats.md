@@ -4,7 +4,7 @@ Data Formats
 YAML
 ----
 
-The term *YAML* stand for "YAML Ain't Markup Language". According to the
+The term *YAML* stand for "YAML Ainot Markup Language". According to the
 Web Page at
 
 * <http://yaml.org/>

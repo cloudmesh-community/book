@@ -184,7 +184,7 @@ We suggest that when you build the cluster to do it on a table with a
 large white paper or board, or a tablecloth and take pictures of the
 various stages of the build so we can include it in this document.
 
-Initially we just put Rasbian as Operating system on the SD cards and
+Initially we just put Raspbian as Operating system on the SD cards and
 test out each PI. To do so you will naturally need an SD card writer
 that you can hook up to your computer if it does not have one. As you
 will have to potentially do this more than once it is not recommended to

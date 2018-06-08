@@ -169,7 +169,7 @@ itself some 25 years ago.
 
 There is big science such as particle physics where a single experiment
 has 3000 people collaborate!.Then there are individual investigators who
-don't generate a lot of data each but together they add up to Big data.
+donot generate a lot of data each but together they add up to Big data.
 
 -   [:clapper: Long Tail of Science (2:10)](http://youtu.be/dwzEKEGYhqE)
 

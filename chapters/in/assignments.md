@@ -605,11 +605,11 @@ last week in class):
 
 -   \(B) In addition to this I recommend that you
 
-    -   \(1) find on the network how to put Rasbian on an SD card, create your
+    -   \(1) find on the network how to put Raspbian on an SD card, create your
         self an md file for this as this may be different for different
         operating systems.
 
-    -   \(2) download rasbian on your machine so you can burn it as you will get
+    -   \(2) download Raspbian on your machine so you can burn it as you will get
         5 sd cards
 
         In the lab, those that finish most of the swagger service will
@@ -617,10 +617,10 @@ last week in class):
 
     -   \(3) in the lab you will be first thing change the password to each of
         them before you put them on the network. Maybe there is a way to do this
-        directly from your computer after you have put rasbian on the sd card.
+        directly from your computer after you have put Raspbian on the sd card.
         But I do not know if that's possible.
 
-    -   \(4) figure out how to configure Rasbian without a monitor, while just
+    -   \(4) figure out how to configure Raspbian without a monitor, while just
         using an SDcard and your laptop, write an md file
 
 In case of questions, lets engage in a discussion. If you have md files

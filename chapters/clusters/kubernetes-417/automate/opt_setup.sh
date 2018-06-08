@@ -6,5 +6,5 @@ sudo apt-get install git
 mkdir /~/cloudmesh
 echo installing git
 git clone https://github.com/cloudmesh-community/hid-sp18-417.git
-cd *417/tutotial/dhcp
+cd *417/tutorial/dhcp
 echo running initial dhcp setup

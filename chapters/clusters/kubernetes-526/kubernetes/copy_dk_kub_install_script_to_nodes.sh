@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#
+# TODO: spelling error: kubernetes
+#
+
 #copying the script to nodes
 for number in {1..4}
 	do 
