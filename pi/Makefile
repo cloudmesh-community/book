@@ -284,7 +284,7 @@ CHAPTER_PI=\
     chapters/preface/contributing.md\
     chapters/preface/git.md\
     chapters/preface/exercises.md\
-    chapters/preface/outline.md\
+ chapters/preface/outline.md\
  chapters/pi/board.md\
  chapters/pi/case.md\
      chapters/case/case.md\
@@ -337,7 +337,7 @@ X=\
   $(CHAPTER_IN) \
   $(CHAPTER_BIGDATA)
 
-MARKDOWN-OPTIONS=$(MERMAID) -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
+MARKDOWN-OPTIONS=$(MERMAID) -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
 CSL=--csl=template/ieee-with-url.csl
 FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
@@ -356,7 +356,7 @@ epub: dot refernces todo
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
-	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
 	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      

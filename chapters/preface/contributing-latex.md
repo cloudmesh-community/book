@@ -110,13 +110,10 @@ approach.
 Here is the process that we automatically apply in the *Makefile*
 
 -   We identify all rst files that have the cite command in it.
-
 -   We copy the refs.bib file into the same directory as the originating
     rst file. Lets assume the file is called *filename.rst*
-
 -   We than rename in the file for this directory to *filename-tmp.bib*
     indicating it is not checked into github
-
 -   In gitignore we have a rule that excludes them
 
 The only thing you have to do in order to use references is to make the
