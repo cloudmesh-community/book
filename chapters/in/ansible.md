@@ -288,7 +288,7 @@ Accordingly, we will update our 'example.yml':
       roles:
         - r
 
-As shown, we specify a 'vars\_files' telling the script that the file
+As shown, we specify a 'vars_files' telling the script that the file
 'vars.yml' is going to supply variable values, whose keys are denoted by
 Double curly brackets like in 'roles/r/tasks/main.yml':
 
@@ -575,7 +575,7 @@ value. You may use `apt` or `yum` module which is one of the packaging
 modules to install software. You can find an entire list of modules
 here: <http://docs.ansible.com/list_of_all_modules.html>
 
-### Module apt\_key: add repository keys
+### Module apt_key: add repository keys
 
 We need to import the MongoDB public GPG Key. This is going to be a
 first task in our playbook.:
@@ -584,7 +584,7 @@ first task in our playbook.:
       - name: Import the public key used by the package management system
         apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=7F0CEB10 state=present
 
-### Module apt\_repository: add repositories
+### Module apt_repository: add repositories
 
 Next add the MongoDB repository to apt:
 

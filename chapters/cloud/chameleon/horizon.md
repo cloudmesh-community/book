@@ -21,7 +21,7 @@ on your machine and are happy to use it, click on "Import Key Pair".
 If you chose to import a key pair, you will be asked to enter a name for
 the key pair, for example laptop. In the "Public Key" box, copy the
 content of your SSH public key. Typically it will be at
-\~/.ssh/id\_rsa.pub. On Mac OS X, you can run in a terminal:
+\~/.ssh/id_rsa.pub. On Mac OS X, you can run in a terminal:
  `cat ~/.ssh/id_rsa.pub  pbcopy`\
 It copies the content of the public key to your copy/paste buffer. Then
 you can simply paste in the "Public Key" box.
@@ -92,7 +92,7 @@ Interact with resources
 -----------------------
 
 Now you should be able to connect to the instance via SSH using the cc
-account. In a terminal, type ssh cc@\<floating\_ip\>, in our example
+account. In a terminal, type ssh cc@\<floating_ip\>, in our example
 this would be `ssh cc@130.202.88.241`
 
 SSH will probably tell you:

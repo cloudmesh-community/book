@@ -68,9 +68,9 @@ user-defined command prompt. After you have executed your program,
 commands defined in your class can be used. Take note of the following
 in this example:
 
--   The methods of the class of the form do\_xxx implement the shell
+-   The methods of the class of the form do_xxx implement the shell
     commands, with xxx being the name of the command. For example, in
-    the HelloWorld class, the function do\_greet maps to the greet on
+    the HelloWorld class, the function do_greet maps to the greet on
     the command line.
 
 -   The EOF command is a special command that is executed when you press
@@ -78,7 +78,7 @@ in this example:
 
 -   As soon as any command method returns True the shell application
     exits. Thus, in this example the shell is exited by pressing CTRL-D,
-    since the do\_EOF method is the only one that returns True.
+    since the do_EOF method is the only one that returns True.
 
 -   The shell application is started by calling the cmdloop method of
     the class.
@@ -160,7 +160,7 @@ Help Messages
 -------------
 
 Notice that all commands presently show up as undocumented. To remedy
-this, we can define help\_ methods for each command:
+this, we can define help_ methods for each command:
 
     from __future__ import print_function, division
     import cmd

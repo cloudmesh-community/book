@@ -102,7 +102,7 @@ beneath the topics.
 We use a single reference file formated in *bibtex*. The file is located
 in docs/source/refs.bib. We use sphinx-bibtex to manage the references in
 rst pages. However, it has the disadvantage that we can only have on
-refrence section per bib file. In order to simplify management as we may
+reference section per bib file. In order to simplify management as we may
 cite the same references in different files it is not useful to develop a
 bib file for each rst file. Instead we developed the following pragmatic
 approach.

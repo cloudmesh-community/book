@@ -26,7 +26,7 @@ Step 3:
 Step 4:
 
 -   Paste your ssh key into the box marked Key. Use a text editor to
-    open the "id\_rsa.pub". Copy the entire contents of this file into
+    open the "id_rsa.pub". Copy the entire contents of this file into
     the ssh key field as part of your profile information. Many errors
     are introduced by users in this step as they do not paste and copy
     correctly.

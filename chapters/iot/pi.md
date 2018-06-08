@@ -62,7 +62,7 @@ Raspbian for Robots. This is a Raspbian based os that is compatible with
 the GrovePi board. It also comes with pre-installed Dexter Industries
 software.
 
-1.  First, download the most recent Dexter\_Industries\_jessie.zip file
+1.  First, download the most recent Dexter_Industries_jessie.zip file
     from
     [here](https://sourceforge.net/projects/dexterindustriesraspbianflavor/).
 

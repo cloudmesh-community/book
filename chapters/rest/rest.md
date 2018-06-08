@@ -756,7 +756,7 @@ configuration. HATEOS explains how REST API endpoints are defined and it
 provides a clear description on how the API can be consumed through
 these terms:
 
-\_links
+_links
 
 :   . Links describe the relation of current resource being accessed to
     the rest of the resources. It is like if we have a set of links to

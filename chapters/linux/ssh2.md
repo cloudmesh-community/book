@@ -300,8 +300,8 @@ must enter a "Key passphrase" and then confirm the passphrase.
 
 Next you need to save both the public and private keys into a file of
 your choice using the "Save public key" and "Save private key" buttons.
-We suggest you name something obvious like "public\_key.pub" and
-"private\_key" so that you can distinguish between the two.
+We suggest you name something obvious like "public_key.pub" and
+"private_key" so that you can distinguish between the two.
 
 Before closing this window, select the entire public key and copy it
 with "Control-C". Please note that everything should be copied,

@@ -74,7 +74,7 @@ familiar with from the Intro to Python
 
 ---
 
-\<python\_intro\>
+\<python_intro\>
 
 
 tutorial to make the script easy to run from the command line.

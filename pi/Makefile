@@ -278,30 +278,30 @@ DRAFT=\
 
 CHAPTER_PI=\
  chapters/SECTION-PREFACE.md\
- chapters/pi/preface.md\
- chapters/preface/notation.md\
- chapters/preface/contributors.md\
- chapters/preface/contributing.md\
- chapters/preface/git.md\
- chapters/preface/exercises.md\
- chapters/preface/outline.md\
+    chapters/pi/preface.md\
+    chapters/preface/notation.md\
+    chapters/preface/contributors.md\
+    chapters/preface/contributing.md\
+    chapters/preface/git.md\
+    chapters/preface/exercises.md\
+    chapters/preface/outline.md\
  chapters/pi/board.md\
  chapters/pi/case.md\
- chapters/case/case.md\
- chapters/pi/links.md\
+     chapters/case/case.md\
+     chapters/pi/links.md\
  chapters/pi/exercise.md\
  chapters/login-node.md\
- chapters/os/ubuntu-usb-osx.md\
+     chapters/os/ubuntu-usb-osx.md\
  chapters/SECTION-ONE-PI.md\
- chapters/sd-card.md\
- chapters/pi/software.md\
- chapters/linux/linux.md\
- chapters/linux/ssh.md\
- chapters/linux/refcards.md\
- chapters/raspberry/config-display.md\
- chapters/pi/vnc.md\
- chapters/raspberry/motherboard-led.md\
- chapters/run-at-boot.md\
+     chapters/sd-card.md\
+     chapters/pi/software.md\
+     chapters/linux/linux.md\
+     chapters/linux/ssh.md\
+     chapters/linux/refcards.md\
+     chapters/pi/config-display.md\
+     chapters/pi/vnc.md\
+     chapters/pi/motherboard-led.md\
+     chapters/run-at-boot.md\
  chapters/SECTION-DRAFT.md\
  chapters/clusters/pi-now.md\
  chapters/pi/setup.md\
