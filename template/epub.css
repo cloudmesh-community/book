@@ -73,6 +73,15 @@ h1 {
     background-color: WhiteSmoke;
     padding: 2px;
 }
+.part {
+    /* border-top: 12px solid transparent;*/
+    /* text-decoration: overline;*/
+    /* text-overline-width: 100%; */
+    font-size: 100%;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-top: 2px;
+}
 h2 {
     text-align: left;    
     font-family: OpenSans;
