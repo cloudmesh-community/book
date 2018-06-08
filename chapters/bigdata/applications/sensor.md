@@ -100,7 +100,7 @@ autonomous local power units where good use is made of waste heat.
 ### Resources
 
 \TODO{These resources have not all been checked to see if they still
-  exist this is curretnly in progress}
+  exist this is currently in progress}
 -   <https://www.gesoftware.com/minds-and-machines>
 -   <https://www.gesoftware.com/predix>
 -   <https://www.gesoftware.com/sites/default/files/the-industrial-internet/index.html>

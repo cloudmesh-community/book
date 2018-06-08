@@ -177,19 +177,28 @@ dynamic fashion.
 
 #### Exercises
 
-[\[E:CMD5.1:\]]{#E:CMD5.1: label="E:CMD5.1:"} Install cmd5 on your
-computer.
+CMD5.1
 
-[\[E:CMD5.2:\]]{#E:CMD5.2: label="E:CMD5.2:"} Write a new command with
-your firstname as the command name.
+: Install cmd5 on your computer.
 
-[\[E:CMD5.3:\]]{#E:CMD5.3: label="E:CMD5.3:"} Write a new command and
-experiment with docopt syntax and argument interpretation of the dict
-with if conditions.
+CMD5.2
 
-[\[E:CMD5.4:\]]{#E:CMD5.4: label="E:CMD5.4:"} If you have useful
-extensions that you like us to add by default, please work with us.
+: Write a new command with
+  your firstname as the command name.
 
-[\[E:CMD5.5\]]{#E:CMD5.5 label="E:CMD5.5"} At this time one needs to
-quote in some commands the `"` in the shell command line. Develop and
-test code that fixes this.
+CMD5.3
+
+: Write a new command and
+  experiment with docopt syntax and argument interpretation of the dict
+  with if conditions.
+
+CMD5.4
+
+: If you have useful
+  extensions that you like us to add by default, please work with us.
+
+CMD5.5 
+
+: At this time one needs to
+  quote in some commands the `"` in the shell command line. Develop and
+  test code that fixes this.

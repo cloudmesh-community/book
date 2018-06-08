@@ -192,5 +192,5 @@ nodes.
 * [kubernetes/docker_kubernites_install.sh](kubernetes/docker_kubernites_install.sh)
 * [kubernetes/issues_todo.md](kubernetes/issues_todo.md)
 * [kubernetes/kube_install_and_config_readme.md](kubernetes/kube_install_and_config_readme.md)
-* [kubernetes/usefull_links.txt](kubernetes/usefull_links.txt)
+* [kubernetes/useful_links.txt](kubernetes/usefull_links.txt)
 

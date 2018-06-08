@@ -37,7 +37,7 @@ following:
             computation
 
 Only one submission per group is required for Project 1. It is due time
-at 11:59 pm on Feburary 5.
+at 11:59 pm on February 5.
 
 -   Project 1 \<files/project1.pdf\>
 

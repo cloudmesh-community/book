@@ -44,8 +44,8 @@ your post and that a record of the post is created in piazza.
 
 From time to time we get the question why we are not using or
 uploading the assignment deadlines and the assignment descriptions to
-CANVAS. The reason for this is manyfold. First, our class has
-**different dealines for different students** within the same
+CANVAS. The reason for this is manifold. First, our class has
+**different deadlines for different students** within the same
 class. This is not supported by CANVAS and if we would use CANVAS it
 leads to confusion. Second, we are teaching cloud computing. **CANVAS
 is not a tool that you likely will use after graduating.** Thus we are
@@ -56,7 +56,7 @@ achieved by using github issues. In fact in some classes you will be
 use. You will see that managing the assignments in github is
 **superior** to CANVAS. Naturally, you can not make that assessment if
 you are not trying it. Thus one of the mandatory assignments is that
-you use github for all course deliverables.
+you use github for all course deliverable.
 
 However, if you still want to manage your tasks in CANVAS, you can do
 so. CANVAS allows you to create custom events, so if you see an
@@ -86,7 +86,7 @@ session.
 
 To support you we have established an open policy of sharing
 information not only as part of the class material and your
-deliverables, but also as part of how we conduct support. We establish
+deliverable, but also as part of how we conduct support. We establish
 the following principals:
 
 * Online hours are prioritized for online students, residential
@@ -176,7 +176,7 @@ You will be responsible to set up and maintaining the notebook.md and
 update it accordingly. We suggest that you prepare sections such as:
 Logistic, Theory, Practice, Writing and put in bullet form what you have
 done into these sections during the week. We can see from the github
-logs when you changed the notbook.md file to monitor progress. **The
+logs when you changed the notebook.md file to monitor progress. **The
 management of the notebook will be part of your discussion grade**.
 
 The format of the notebook is very simple and must follow these rules:
@@ -188,7 +188,7 @@ The format of the notebook is very simple and must follow these rules:
     Have each bullet point its own date
 -   if you have done the activity in a period than add the second date
     to it yyyy/mm/dd - yyyy/mm/dd
--   If you refer to section numbers in your notebook, please aslo add
+-   If you refer to section numbers in your notebook, please also add
     the section title as the section numbers may change in case we need
     to add content
 
@@ -448,11 +448,11 @@ team member has not contributed, this is far to late to do any
 adjustment to the team. It is in your responsibility to manage the
 team.  You can build different teams throughout the semester for
 different tasks. Please communicate clearly and timely with your class
-mates. We have unfortunatley very often seen the issue that a team has
+mates. We have unfortunately very often seen the issue that a team has
 not read the handbook and instead of delivering a superior project or
 document the quality was poor as the both team members did not work
 and assumed the other one would do the work for them naturally it is a
-desastourous plan to have others work for you and instead do little
+disastrous plan to have others work for you and instead do little
 work while delegating your tasks and overburden your team members. 
 
 

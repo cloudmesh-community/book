@@ -43,7 +43,7 @@ Docker is running, and you can access it via a terminal.
 Installation for Ubuntu
 -----------------------
 
-In order to instal Docker community edition for Ubuntu, you first have
+In order to install Docker community edition for Ubuntu, you first have
 to register the repository from where you can download it. This can be
 achieved as follows:
 

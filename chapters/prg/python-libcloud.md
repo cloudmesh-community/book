@@ -1,8 +1,6 @@
 Python Libcloud
 ---------------
 
-\index{Python!libcloud}
-
 ### Install
 
     pip install apache-libcloud
@@ -17,8 +15,9 @@ Some advanced cloud features do not work.
 
     import libcloud
 
-    cls = libcloud.get_driver(libcloud.DriverType.COMPUTE,
-                              libcloud.DriverType.COMPUTE.OPENSTACK)
+    cls = libcloud.get_driver(
+        libcloud.DriverType.COMPUTE,
+        libcloud.DriverType.COMPUTE.OPENSTACK)
 
     driver = cls('username', 'api key')
 
@@ -27,24 +26,17 @@ Some advanced cloud features do not work.
 
 ### Providers
 
--   https://libcloud.readthedocs.io/en/latest/supported\_providers.html
-
--   Azure
-    https://libcloud.readthedocs.io/en/latest/compute/drivers/azure.html,
-    https://libcloud.readthedocs.io/en/latest/compute/drivers/azure\_arm.html
--   AWS EC2
-    https://libcloud.readthedocs.io/en/latest/compute/drivers/ec2.html
--   Google Compute Engine
-    https://libcloud.readthedocs.io/en/latest/compute/drivers/gce.html
--   OpenStack
-    https://libcloud.readthedocs.io/en/latest/compute/drivers/openstack.html
--   libvirt https://libvirt.org/
+-   [List of  Providers](https://libcloud.readthedocs.io/en/latest/supported\_providers.html)
+-   [Azure](https://libcloud.readthedocs.io/en/latest/compute/drivers/azure.html),
+    [Azure](https://libcloud.readthedocs.io/en/latest/compute/drivers/azure_arm.html)
+-   [AWS EC2](https://libcloud.readthedocs.io/en/latest/compute/drivers/ec2.html)
+-   [Google Compute Engine](https://libcloud.readthedocs.io/en/latest/compute/drivers/gce.html)
+-   [OpenStack](https://libcloud.readthedocs.io/en/latest/compute/drivers/openstack.html)
+-   [libvirt](https://libvirt.org/)
 
 ### Features
 
 -   https://libcloud.readthedocs.io/en/latest/supported\_providers.html
-
-<!-- -->
 
     Provider    list nodes  create node reboot node destroy node    list images list sizes  deploy node
     Azure Virtual machines  yes yes yes yes yes yes yes
@@ -61,14 +53,22 @@ https://libcloud.readthedocs.io/en/latest/compute/index.html\#terminology
 
 Compute
 
-Node - represents a cloud or virtual server. NodeSize - represents node
+Node - represents a cloud or virtual server. 
+
+NodeSize - represents node
 hardware configuration. Usually this is amount of the available RAM,
 bandwidth, CPU speed and disk size. Most of the drivers also expose an
-hourly price (in dollars) for the Node of this size. NodeImage -
-represents an operating system image. NodeLocation - represents a
-physical location where a server can be. NodeState - represents a node
+hourly price (in dollars) for the Node of this size. 
+
+NodeImage -
+represents an operating system image. 
+
+NodeLocation - represents a
+physical location where a server can be. 
+
+NodeState - represents a node
 state. Standard states are: running, rebooting, terminated, pending,
-stopped, suspended, paused, erro, unknown.
+stopped, suspended, paused, error, unknown.
 
 Security
 
@@ -108,12 +108,12 @@ https://libcloud.readthedocs.io/en/latest/compute/key\_pair\_management.html
 
 -   Google cloud storage
 -   Azure Blobs
--   Local STorage
+-   Local Storage
 -   OPenstack swift
 -   Amazon S3
 -   Ceph
 
-#### Object Storrage
+#### Object Storage
 
 https://libcloud.readthedocs.io/en/latest/storage/index.html
 

@@ -2,7 +2,7 @@
 
 ## Issues 
 
-Docker doesn't actually works yet
+Docker does not actually works yet
 
 ## Todo
 

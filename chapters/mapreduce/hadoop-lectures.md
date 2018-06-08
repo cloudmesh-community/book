@@ -17,7 +17,7 @@ Hadoop and core components of Hadoop.
   A](https://drive.google.com/file/d/1CmtoDDio-CYT9g4bsjclVfukA5TsIc8n/view?usp=sharing)
 
 
-Hadioop and MapReduce
+Hadoop and MapReduce
 ---------------------
 
 In this section we discuss about the usage Hadoop MapReduce

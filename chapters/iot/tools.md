@@ -25,7 +25,7 @@ Tools
 -   [pyCharm](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=mac&code=PCC):
     is an Integrated Development Environment for Python.
 
--   *Matplotlib*: Matplotlib is a libarry that allows us to create nice
+-   *Matplotlib*: Matplotlib is a library that allows us to create nice
     graphs in python. As we typically install python with virtualenv, we
     need to configure matplotlib properly to use it. The easiest way to
     do this is to execute the following commands. After you run them you
@@ -54,7 +54,7 @@ Tools
 Markdown
 --------
 
-MarkDown is a format convention that produces nicely formated text with
+MarkDown is a format convention that produces nicely formatted text with
 simple ASCII text. Markdown has very good support for editors that
 render the final output in a view window next to the editor pane. Two
 such editors are
@@ -65,7 +65,7 @@ such editors are
 -   [pyCharm](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=mac&code=PCC):
     We have successfully used Vladimir Schhneiders [Markdown Navigator
     plugin](https://plugins.jetbrains.com/plugin/7896-markdown-navigator).
-    Once installes you click on a .md file pycharm will automatically
+    Once installed you click on a .md file pycharm will automatically
     ask to install the plugins from Markdown for you.
 
 A detailed set of syntax rules can be found at: **BUG: LINK TO MARKDOWN
@@ -73,7 +73,7 @@ SYNTAX MISSING**
 
 The following are some basic examples
 
--   To *empazise* a text you use `*empasize*`
+-   To *emphasise* a text you use `*emphasize*`
 
 -   To make text **bold** use `**bold**`
 
@@ -149,7 +149,7 @@ Bash
 
 Bash is preinstalled in OSX. A *bash* script contains *commands* in
 plain text. In order to create a bash script please decide for a
-convenient name. Ltes assume we name our script *myscript*. Than you can
+convenient name. Let us assume we name our script *myscript*. Than you can
 create and edit such a script with
 
     $ touch myscript.sh
@@ -187,11 +187,11 @@ into the terminal. You will see it prints
 Arduino
 -------
 
-This instalation is optional. In the event that there is a TTY error,
+This installation is optional. In the event that there is a TTY error,
 you will need to install Arduino, since your Mac may be missing some
 drivers that are included in Arduino. Simply go to
 [Arduino](https://www.arduino.cc/en/guide/macOSX) and follow the
-instalation instructions.
+installation instructions.
 
 OSX Terminal
 ------------

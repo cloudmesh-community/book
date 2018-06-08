@@ -41,7 +41,7 @@ Managing Your Own Calendar
 From time to time we get the question from a very small number of
 students why we are not using or uploading the assignment deadlines and
 the assignment descriptions to CANVAS. The reason for this is manyfold.
-First, our class has different dealines for different students within
+First, our class has different deadlines for different students within
 the same class. This is not supported by CANVAS and if we would use
 CANVAS leads to confusion and clearly shows the limitation of CANVAS.
 Second, we are teaching cloud computing. CANVAS is not a tool that you
@@ -59,7 +59,7 @@ However, if you still want to manage your tasks in CANVAS, you can do
 so. CANVAS allows you to create custom events, so if you see an
 assignment in piazza or the handbook, you are more than welcome to add
 that task yourself to your own CANVAS tasks. As we have only a very
-small number of assignments this will not pase a problem either for
+small number of assignments this will not pose a problem either for
 graduate or undergraduate. Being able to organize your deadlines and
 assignment with industry accepted tools is part of your general learning
 experience at IU.
@@ -188,7 +188,7 @@ You will be responsible to set up and maintaining the notebook.md and
 update it accordingly. We suggest that you prepare sections such as:
 Logistic, Theory, Practice, Writing and put in bullet form what you have
 done into these sections during the week. We can see from the github
-logs when you changed the notbook.md file to monitor progress. The
+logs when you changed the notebook.md file to monitor progress. The
 management of the notebook will be part of your discussion grade.
 
 The format of the notebook is very simple markdown format and must
@@ -237,7 +237,7 @@ This class is a full term class of 16 weeks.
 The semester calendar is posted at
 
 * <http://registrar.indiana.edu/official-calendar/official-calendar-spring.shtml>
-The class beginns Mon, Jan 8th and ends Fri, May 4th
+The class begins Mon, Jan 8th and ends Fri, May 4th
 
 Incomplete
 ----------

@@ -15,7 +15,7 @@ Python pickle allows you to save data in a python native format into a
 file that can later be read in by other programs. However, the data
 format may not be portable among different python versions thus the
 format is often not suitable to store information. Instead we recommend
-for standrad data to use either json or yaml.
+for standard data to use either json or yaml.
 
 ``` {.python}
 import pickle
@@ -58,7 +58,7 @@ with open('filename.txt','r') as file:
     lines = file.read().splitlines()
 ```
 
-This cam aslo be done with the build in `readlines` function
+This cam also be done with the build in `readlines` function
 
 ``` {.python}
 lines = open('filename.txt','r').readlines()
@@ -112,8 +112,8 @@ df = data.parse('Sheet1')
 #### YAML
 
 YAML is a very important format as it allows you easily to structure
-data in hierarchical fileds It is frequently used to coordinate programs
-while using yaml as the specification for configuration fils, but also
+data in hierarchical fields It is frequently used to coordinate programs
+while using yaml as the specification for configuration files, but also
 data files. To read in a yaml file the following code can be used
 
 ``` {.python}

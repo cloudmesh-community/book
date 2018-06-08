@@ -248,7 +248,7 @@ there would be faster solution methods.
 #### Resources
 
 \TODO{These resources have not all been checked to see if they still
-  exist this is curretnly in progress}
+  exist this is currently in progress}
 -   <http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial>
 -   <http://www.ifi.uzh.ch/ce/teaching/spring2012/16-Recommender-Systems_Slides.pdf>
 -   <https://www.kaggle.com/>

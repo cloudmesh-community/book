@@ -7,10 +7,10 @@ The content form this section originates from see:
 
 Markdown is a simple markup language, however there is no precise
 standard defined for it and implementations may have features not
-supported by other implementations. Nevertheless, it provieds as imple
-and easy way to quicly develop clean looking documents.
+supported by other implementations. Nevertheless, it provides a simple
+and easy way to quickly develop clean looking documents.
 
-There are severla tools that make markdown attractive allowing to write
+There are several tools that make markdown attractive allowing to write
 the text in one window while at the same time seeing the rendered out
 put in another.
 
@@ -18,7 +18,7 @@ This includes
 
 Macdown
 
-:   An editor for mardown targeted on OSX
+:   An editor for markdown targeted on OSX
 
 To convert the markdown to other formats with `pandoc`
 
@@ -76,7 +76,7 @@ Macdown
 
 Haropad
 
-: Haropad is a cross platform markdown editor. It taskes donation for
+: Haropad is a cross platform markdown editor. It asks for donation for
   its further development. It can be downloaded from
   <http://pad.haroopress.com/>
 
@@ -128,7 +128,7 @@ specify the output format
 In our example we converted the md file to latex.
 
 As this document is created with pandoc we encourage you to review our
-Makefile to see how we use some more advanced featuers
+Makefile to see how we use some more advanced features
 
 
 ### Mermaid
@@ -143,7 +143,7 @@ A markdown plugin for pandoc is available
 
   * [live editor](https://mermaidjs.github.io/mermaid-live-editor/)
 
-Instalation is done with
+Installation is done with
 
 ```bash
 $ npm install --global mermaid-filter
@@ -181,7 +181,7 @@ graph LR
 
 ### Advanced Pandoc
 
-pnadoc can integrate extensions and filters. We have not made yet use
+pandoc can integrate extensions and filters. We have not made yet use
 of them but like to explore them over time.
 
 Packages of interest include:

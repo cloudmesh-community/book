@@ -852,7 +852,7 @@ IP and hostnames from other instances in the deployment.
 
 There are two SoftwareConfig resources.
 
-The first SoftwareConfig, export\_hosts, uses the facter tool to extract
+The first SoftwareConfig, export\_hosts, uses the factor tool to extract
 IP address and hostname into a single line (in the format expected for
 /etc/hosts) and writes it to a special path
 (\${heat\_outputs\_path}.hosts). This prompts Heat to assign the content

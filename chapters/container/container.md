@@ -26,7 +26,7 @@ serverless computing will increase in importance over the next years
 Docker
 ------
 
-In order for us to use containers, we go beyond the historial motivation
+In order for us to use containers, we go beyond the historical motivation
 that was introduced in a previous section and focus on Docker a
 predominant technology for containers on Windows, Linux, and OSX
 

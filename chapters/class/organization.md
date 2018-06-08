@@ -140,7 +140,7 @@ and edit your programs there and when satisfied run them on a cloud.
 We also like to remind you that this course does not require you to
 purchase expensive text books, thus the money you safe on this could be
 used in upgrading your hardware or renting yourself from your own money
-time on AWS. Hoever, be careful with the cloud its easy to spend lots of
+time on AWS. However, be careful with the cloud its easy to spend lots of
 money there if you are not careful.
 
 ### Self Discipline
@@ -169,7 +169,7 @@ sense prevales.
 ### Fun
 
 I hope you have fun and are able to integrate in the projects your own
-thoughts and interrests.
+thoughts and interests.
 
 We have quotes form students such as
 
@@ -186,7 +186,7 @@ or
 
 Furthermore you should know that the way we teach the class has also
 been adopted in STEM classes. As a result a team coached by Gregor von
-Laszewski won an award at the FLL Robotics World Championchip. The
+Laszewski won an award at the FLL Robotics World Championship. The
 certainly had lots of fun and integrated their own ideas into the
 project that won the award.
 
@@ -210,7 +210,7 @@ In this class we have three parallel tracks.
 
 ### Track 1: Practice
 
-Trak 1 introduces you to using python for Big Data. We recommend that
+Track 1 introduces you to using python for Big Data. We recommend that
 you do know a programming language for any of our courses. Learning a
 programming language is not part of the hours you spend for this
 class. It is an additional time requirement that you must plan
@@ -261,7 +261,7 @@ still have to conduct the programming assignments.
 You will be writing a paper that is 2 pages long possibly within a
 team. In case you work in a team you have to produce as many papers as
 you have team members.  We like to avoid that all students take the
-same topic. We will use github to avoid that everyone choses same
+same topic. We will use github to avoid that everyone chooses same
 topic. Knowing how to write is a preparation fo your project or term
 paper.
 
@@ -279,7 +279,7 @@ important aspects.
 ### Track 4: Term Paper/Project
 
 The major deliverable of the course is a term project or paper. The
-exact details will be posted on the Web pagein this document.  The
+exact details will be posted on the Web page in this document.  The
 important part is that you start on this project once you are
 sufficiently familiar with Track 1-3. However you can also use the
 project to for example learn python and engage in a goal oriented

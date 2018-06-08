@@ -2,11 +2,11 @@ Installation of Hadoop
 ======================
 
 In this section we use Hadoop 3.0.1 and we install Hadoop locally in
-Ubuntu 16.04. We also describe the instalation of the Yarn resource
+Ubuntu 16.04. We also describe the installation of the Yarn resource
 manager. We assume that you have ssh, and rsync installed and use emacs
 as editor.
 
-Prerequisits
+Prerequisites
 ------------
 
     sudo apt-get install ssh
@@ -44,7 +44,7 @@ hadoop user.
 
 Follow the instructions as provided in the commandline. When you see the
 following console input, press ENTER. Here only we will create password
-less keys. IN general this is not a good idead, but for this case we
+less keys. IN general this is not a good idea, but for this case we
 make an exception.
 
     Enter file in which to save the key (/home/hduser/.ssh/id_rsa):

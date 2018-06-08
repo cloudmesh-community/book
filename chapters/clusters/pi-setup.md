@@ -1,7 +1,7 @@
 
 ## Preparing the SD card :o:
 
-TODO: We should at thsi time assume we have an OS.
+TODO: We should at this time assume we have an OS.
 
 Download the latest Raspbian Jessie Lite image from
 

@@ -127,8 +127,8 @@ Reference Architecture (NBDRA) which is introduced in the NBDIF: Volume
 
 This presentation was given at the *2nd NIST Big Data Public Working
 Group (NBD-PWG) Workshop* in Washington DC in June 2017. It explains our
-thoughts on deriving automatically a refernce architecture form the
-Refernce Architecture Interface specifications directly from the
+thoughts on deriving automatically a reference architecture form the
+Reference Architecture Interface specifications directly from the
 document.
 
 The workshop Web page is located at

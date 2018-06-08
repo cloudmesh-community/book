@@ -2,7 +2,8 @@
 
 :cloud:
 
-> If you click on the :cloud: in a heading, you can go directly to the document in github that contains the next content. This is copnvenient to fix errors or make additions to the content.
+> If you click on the :cloud: in a heading, you can go directly to the document in github that contains the next content. 
+This is convenient to fix errors or make additions to the content.
 
 $
 
@@ -14,14 +15,14 @@ $
 
 [@las14cloudmeshmultiple]
 
-> Refernces are indicated with a number and are included in the
-> refernce chapter [@las14cloudmeshmultiple]
+> References are indicated with a number and are included in the
+> reference chapter [@las14cloudmeshmultiple]
 
 
 :o:
 
 > Chapters marked with an :o: are not yet complete or have some issue
-> that we know about. THese chapters need to be fixed.
+> that we know about. These chapters need to be fixed.
 
 
 [:clapper: REST 36:02](https://youtu.be/xjFuA6q5N_U)
@@ -32,7 +33,8 @@ $
 
 ---
 
-:bulb: *Notes are indicated with a bulb and are wriiten in itallic and suroundd by bars* 
+:bulb: *Notes are indicated with a bulb and are written in itallic and 
+surrounded by bars* 
 
 ---
 

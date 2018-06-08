@@ -7,7 +7,7 @@ Introduction
 -   [Electronics](http://www.instructables.com/id/Basic-Electronics): An
     introduction to the basic principals of electronics.
 
--   [Volatage](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law):
+-   [Voltage](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law):
     An introduction to the physics of electricity.
 
 -   [Unix](https://info-ee.eps.surrey.ac.uk/Teaching/Unix/index.html):
@@ -79,7 +79,7 @@ here:
 Light Sensor
 ------------
 
-The light sensor measures ligh intensity and returns a value between 0
+The light sensor measures light intensity and returns a value between 0
 and 1023. Connect the light sensor to an analog port. The default port
 is A0. The analog port allows the light sensor to return a range of
 values. The `LightSensor` class can be found here:
@@ -107,7 +107,7 @@ Barometer
 ---------
 
 Connect the barometer to an I2C port. In addition to pressure, the
-GrovePi barometer measures temperature in Fahrenheit and Celcius. The
+GrovePi barometer measures temperature in Fahrenheit and Celsius. The
 `Barometer` class can be found here.
 
 -   [Barometer
@@ -151,7 +151,7 @@ Connect the heartbeat sensor to an I2C port. The heartbeat sensor
 returns the heart rate of the wearer. The `HeartbeatSensor` class can be
 found here:
 
--   [HearbeatSensor
+-   [HeartbeatSensor
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/heartbeat.py)
 
 \centering
@@ -195,7 +195,7 @@ The `MoistureSensor` class can be found here:
 \centering
 ![Moisture Sensor](images/grovepi/moisture.jpg)
 
-An example of the implimentation of the moisture sensor from Dexter
+An example of the implementation of the moisture sensor from Dexter
 Industries can be found
 [here](https://github.com/DexterInd/GrovePi/blob/master/Projects/plant_monitor/plant_project.py).
 The program is meant to measure the environmental conditions that affect

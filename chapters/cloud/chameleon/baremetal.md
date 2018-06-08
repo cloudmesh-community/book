@@ -14,7 +14,7 @@ The bare-metal user guide comes in two editions. The first is how to use
 Chameleon resources via the web interface, the recommended choice for
 new users to quickly learn how to use our testbed:
 
-**[Get started with Chamelon using the web
+**[Get started with Chameleon using the web
 interface](https://www.chameleoncloud.org/discover-resources)**
 
 1.  [Discover

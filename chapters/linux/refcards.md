@@ -1,7 +1,7 @@
 # Refcards
 
-We present you with a list of useful short refrence cards. This cards
-can be extremly useful to remind yourself about some important commands
+We present you with a list of useful short reference cards. This cards
+can be extremely useful to remind yourself about some important commands
 and features. Having them could simplify your interaction with the
 systems, We not only collected here some refcards about Linux, but also
 about other useful tools and services.
@@ -25,7 +25,7 @@ the contribution section).
 * [Openstack](http://docs.openstack.org/user-guide/cli_cheat_sheet.html)
 * [Openstack](http://cmias.free.fr/IMG/pdf/rc208_010d-openstack_2.pdf)
 * [RST](https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.pdf)
-* [Numpi/Pandas](http://www.cheat-sheets.org/saved-copy/NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf)
+* [Numpy/Pandas](http://www.cheat-sheets.org/saved-copy/NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf)
 * [CheatSheets](http://www.cheat-sheets.org/)
 * [PythonTutorial](http://fivedots.coe.psu.ac.th/Software.coe/learnPython/Cheat%20Sheets/python2.pdf)
 * [Python](http://www.cheat-sheets.org/saved-copy/PQRC-2.4-A4-latest.pdf)

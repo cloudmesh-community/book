@@ -29,7 +29,7 @@ A good document about piazza is available at
 Piazza is one of the recommended IU supported technologies within
 CANVAS. It replaces the CANVAS discussion groups with superior
 technology targeted to support large student classes while also
-focussing on student engagement.
+focusing on student engagement.
 
 To access piazza you can have the following situations provided in the
 next four subsections. Please read *ALL*\* of them **CAREFULLY**, decide
@@ -99,7 +99,7 @@ I post the official response form the CANVAS team here: "When a student
 clicks the Piazza link in your course navigation, they will be
 authenticated through to Piazza. If the student already has a Piazza
 account that matches their default Canvas email, they will simply be
-enrolled in the Piazza course. If the student doesn't have an account,
+enrolled in the Piazza course. If the student does not have an account,
 Canvas sends the pertinent information (default email address primarily)
 to Piazza, Piazza creates the student's account and enrolls the student
 in the Piazza course. There is nothing you need to do to."
@@ -238,7 +238,7 @@ Ten steps to getting your question answered on piazza
 
 6.  In the post, briefly describe the problem in a paragraph. Leave out
     unnecessary details. Save everybody time by listing any solutions
-    that you have tried but didn't work. Avoid using screenshots if they
+    that you have tried but did not work. Avoid using screenshots if they
     are not needed. (I mention this again).
 
 7.  In case of a technical issue describe relevant system details. For
@@ -315,7 +315,7 @@ THe folders may vary from class and we can add new folders if
 needed. Please let us know.
 
 We provide next a list of example folders that we have used in
-previous classes and list their purpose. Please helo us to add folders
+previous classes and list their purpose. Please help us to add folders
 form your class.
 
   Folder       Description
@@ -340,7 +340,7 @@ form your class.
 
 In addition to these general folders we also have two folders which
 **MUST NOT BE USED BY ANY STUDENT TO POST CONTENT**. These folders serve
-to communicate your assignments and are used internally between Grgeor
+to communicate your assignments and are used internally between Gregor
 and the TA's.
 
 *assignments*:

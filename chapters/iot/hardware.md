@@ -132,7 +132,7 @@ Sensor Kit
 ----------
 
 It is fun to attach sensors to your IoT board. There are many kits
-ab\]vailable and we encourage you to do comparisions. One such kit is
+abvailable and we encourage you to do comparisions. One such kit is
 
 -   \$29.99 [Elegoo 37
     Sensors](https://www.amazon.com/Elegoo-Upgraded-Modules-Tutorial-Arduino/dp/B01MG49ZQ5/ref=sr_1_7?s=electronics&ie=UTF8&qid=1499251441&sr=1-7&keywords=elegoo)
@@ -230,7 +230,7 @@ these sections.
 
 ### Small Footprint Battery Power
 
-The following board providesto the Raspberry Pi a lithium battery power
+The following board provides to the Raspberry Pi a lithium battery power
 pack expansion board. It is powered by two 18650 Li-ion batteries
 providing steady. A 4-LED indicator indicates the level of charge. The
 board costs \$16.99.

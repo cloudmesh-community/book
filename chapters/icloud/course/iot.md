@@ -8,7 +8,7 @@ Ph.D. candidate Supun Kamburugamuva goes over the so-called Internet of
 Things as well as strategies and tools developed for Distributed Stream
 Processing.
 
-[:clapper: Everday Data (9:31)](https://www.youtube.com/watch?v=brv48Tg7Zyw)
+[:clapper: Everyday Data (9:31)](https://www.youtube.com/watch?v=brv48Tg7Zyw)
 
 [:scroll: Everyday Data (4)](https://drive.google.com/open?id=1EDHy5HonB6ZA38qle1sqkCjktFSQqnci)
 

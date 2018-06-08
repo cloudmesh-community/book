@@ -34,7 +34,7 @@ plagiarism. An example is provided for Indiana University
 > (Faculty Council, May 2, 1961; University Faculty Council, March 11,
 > 1975; Board of Trustees, July 11, 1975)"
 
-Faculty members at Universitys are also bound by policies that mandate
+Faculty members at Universities are also bound by policies that mandate
 reporting. At Indiana University the following policy applies (for a
 complete policy see the Web page):
 
@@ -102,11 +102,11 @@ education" [@www-iu-plagiarism]. This includes:
     books, dictionary links, references for learning more about
     plagiarism
 
-Furthermore, a number of tutorials are offerd by Indiana University
+Furthermore, a number of tutorials are offered by Indiana University
 [Instructional Systems Technology Department](http://education.indiana.edu/graduate/programs/instructional-systems/index.html)
 Web pages dealing with plagiarism. These include:
 
-*   [Plagiarsim Tutorial](https://www.indiana.edu/~academy/firstPrinciples/choice.html)
+*   [Plagiarism Tutorial](https://www.indiana.edu/~academy/firstPrinciples/choice.html)
 *   [Understanding Plagiarism](https://www.indiana.edu/~tedfrick/plagiarism/)
 
 

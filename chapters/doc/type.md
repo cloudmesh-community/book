@@ -3,7 +3,7 @@ Communicating Research in Other Ways
 
 Naturally, writing papers is not the only way to communicate your
 research with others. We find that today we see additional pathways for
-cumminication includine blogs, twitter, facebook, e-mail, Web pages, and
+communication includine blogs, twitter, facebook, e-mail, Web pages, and
 electronic notebooks. Let us refisit some of them and identify when they
 are helpful.
 
@@ -33,7 +33,7 @@ Disadvantages:
 ### Sphinx
 
 Sphinx (<http://www.sphinx-doc.org/>) is a tool that to create
-integrated documentation from a markup language whlie.
+integrated documentation from a markup language.
 
 Advantages:
 
@@ -41,8 +41,8 @@ Advantages:
 -   integrates well with directory structure
 -   powerful markup language (reStructuredText)
 -   can be hosted on github via github pages
--   can integare other renderers such as Markdown
--   automatic table of content, tebale of index
+-   can integrate other renderers such as Markdown
+-   automatic table of content, table of index
 -   code documentation integration
 -   search
 -   written in python and using bash, so extensions and custom
@@ -101,4 +101,4 @@ Advantages:
 Disadvantages:
 
 -   larger framework
--   must leverages existing deployments of spak, hadoop
+-   must leverages existing deployments of spark, hadoop

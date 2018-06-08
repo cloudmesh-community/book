@@ -3,7 +3,7 @@ Resources
 
 In any case please visit the Chameleon Web page as there is also more
 information about other topics that we may not care about. Furthermore
-we do not use Advanced Appliences, but use ansible instead as it is
+we do not use Advanced Appliances, but use ansible instead as it is
 independent from OpenStack and can be used with other frameworks.
 
 If you prefer you can also go to the Chameleon Web site using the
@@ -14,10 +14,10 @@ find errors or like to contribute tho this documentation.
 Chameleon cloud promotes insecure use of ssh while suggesting passphrase
 less keys. This is **very dangerous** due to the fact that somone could
 gain access to your computer and if a password less key is stolen easy
-access to other systems can be achieved. INstead you must use whenever
-possible passphrases and use ssh agend and ssh add!
+access to other systems can be achieved. Instead you must use whenever
+possible passphrases and use ssh agent and ssh add!
 
-Hence do not use their advise that is mantioned multiple times in their
+Hence do not use their advise that is mentioned multiple times in their
 documentation. Follow ours!
 
 The links to Chameleons Documentation

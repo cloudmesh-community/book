@@ -1,8 +1,6 @@
 Draft: Enhanced Cloudmesh
 -------------------------
 
- 
-
 In this chapter we will be using some advanced Python features to
 enhance Cloudmesh. Cloudmesh is supposed to easily manage multiple
 clouds. We will be explicitly using python 3 and do not worry about
@@ -156,7 +154,7 @@ format from a virtual machine we can easily create flattened out data
 structures, by simple connecting the attribute names and separate them
 by `_`.
 
-Let us assome we want to store an object of the following form:
+Let us assume we want to store an object of the following form:
 
     element = {
        'id': 1,
@@ -247,4 +245,4 @@ with Cloud(cloud) as c:
 
 It is obvious that through this abstraction we can formulate a templated
 behavior such as starting a virtual machine and through the switch of a
-ingle variable (`cloud`) issue the command on other clouds.
+single variable (`cloud`) issue the command on other clouds.
