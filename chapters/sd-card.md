@@ -12,7 +12,7 @@ machine. If you have other OSes and like to contribute, please add
 your suggestions.
 
 The processes described here only work for a few SD cards and are not
-suitable for burning hundrets of SD cards as we would need for a
+suitable for burning hundreds of SD cards as we would need for a
 cluster consisting out of many PI's.
 
 ### OSX
@@ -40,7 +40,7 @@ Once the image is downloaded you copy it with etcher onto the SD-card.
 
 ### Windows 10
 
-First you need to download the rasbian OS from
+First you need to download the raspbian OS from
 
 * <https://downloads.raspberrypi.org/raspbian_latest>
 
@@ -49,7 +49,7 @@ can download it s form
 
 * <https://etcher.io/>
 
-and chse to download it for Windows. You have a couple of options and
+and chose to download it for Windows. You have a couple of options and
 we recommend that you use the 64 bit Installer version if your OS
 supports it.  Once you download it, start Etcher and select the
 unzipped Raspbian image file. Now select the drive of the SD

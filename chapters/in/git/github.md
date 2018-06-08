@@ -12,7 +12,7 @@ commandline (Section [1.12](#s:git-commands){reference-type="ref"
 reference="s:git-commands"}). Than we will introduce you how you can
 contribute to this set of documentations with pull requests.
 
-Obverview {#s:github}
+Overview {#s:github}
 ---------
 
 Github is a code repository that allows the development of code and
@@ -24,7 +24,7 @@ github Web page. An interactive tutorial is for example available at
 
 However, although these tutorials are helpful in many cases they do not
 address some cases. For example, you have already a repository set up by
-yoru organization and you do not have to completely initialize it. Thus
+your organization and you do not have to completely initialize it. Thus
 do not just replicate the commands in the tutorial, or the once we
 present here before not evaluating their consequences. In general make
 sure you verify if the command does what you expect **before** you
@@ -225,7 +225,7 @@ You can set the editor to emacs with:
 Naturally if you happen to want to use other editors you can configure
 them by specifying the command that starts them up. You will also need
 to decide if you want to push branches individually or all branches at
-the same time. It will be up to you to make what whill work for you
+the same time. It will be up to you to make what will work for you
 best. We found that the following seems to work best:
 
     git config --global push.default matching
@@ -267,7 +267,7 @@ content to the github repository.
 
 Tip: Please use only **lowercase** characters in the directory names and
 no special characters such as `@ ; / _` and spaces. In general we
-recommend that you avoid using directoru names with capital letters
+recommend that you avoid using directory names with capital letters
 spaces and \_ in them. This will simplify your documentation efforts and
 make the URLs from git more readable. Also while on some OS's the
 directories *MyDirectory* is different from *mydirectory* on OSX it is
@@ -331,9 +331,9 @@ files across different operating systems.
 In case you work in a team, on a submission, the document will only be
 submitted in the author and hid that is listed first. All other readmes,
 will have for that particular artifact a `duplicate: yes` entry to
-indicate that this submission is managed elswhere. The team will be
+indicate that this submission is managed elsewhere. The team will be
 responsible to manage their own pull requests, but if the team desires
-we can grant access for all memebers to a repository by a user. Please
+we can grant access for all members to a repository by a user. Please
 be aware that you must make sure you coordinate with your team.
 
 We will not accept submission of homework as pdf documents or tar files.
@@ -341,7 +341,7 @@ All assignments must be submitted as code and the reports in native
 latex and in github. We have a script that will automatically create the
 PDF and include it in a proceedings. There is no exception from this
 rule and all reports not compilable will be returned without review and
-if not submitted within the deadline receive a panelty.
+if not submitted within the deadline receive a penalty.
 
 Please check with your instructor on the format of the README.yaml file
 as it could be different for your class.
@@ -411,7 +411,7 @@ and push the changes to your fork:
     $ git rebase origin/master
     $ git push
 
-Then reapply your changes to refs.bib - simply use the backedup version
+Then reapply your changes to refs.bib - simply use the backed up version
 and use the editor to redo the changes.
 
 At this stage, only refs.bib is changed:
@@ -422,7 +422,7 @@ should show the changes only in refs.bib. Commit this change using:
 
     $ git commit -a -m "new:usr: <message>"
 
-And finally push the last commited change:
+And finally push the last committed change:
 
     $ git push
 
@@ -436,20 +436,14 @@ is registered with the upstream repository.
 ### Resources
 
 -   [Pro Git book](https://git-scm.com/book/en/v2)
-
 -   [Official tutorial](https://git-scm.com/docs/gittutorial)
-
 -   [Official documentation](https://git-scm.com/doc)
-
 -   [TutorialsPoint on git](http://www.tutorialspoint.com/git/)
-
 -   [Try git online](https://try.github.io)
-
 -   [GitHub resources for learning
     git](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
     Note: this is for github and not for gitlab. However as it is for gt
     the only thing you have to do is replace hihub, for gitlab.
-
 -   [Atlassian tutorials for
     git](https://www.atlassian.com/git/tutorials/)
 
@@ -458,19 +452,14 @@ remember that you may not use bitbucket as the repository, so ignore
 those tutorials. We found the following useful
 
 -   What is git: <https://www.atlassian.com/git/tutorials/what-is-git>
-
 -   Installing git:
     <https://www.atlassian.com/git/tutorials/install-git>
-
 -   git config:
     <https://www.atlassian.com/git/tutorials/setting-up-a-repository#git-config>
-
 -   git clone:
     <https://www.atlassian.com/git/tutorials/setting-up-a-repository#git-clone>
-
 -   saving changes:
     <https://www.atlassian.com/git/tutorials/saving-changes>
-
 -   collaborating with git:
     <https://www.atlassian.com/git/tutorials/syncing>
 
@@ -554,7 +543,7 @@ assignee
 :   an assignee is the person that is responsible for making sure the
     task is executed or on track if a team works on it. Often projects
     allow only one assignee, but in certain cases it is useful to assign
-    a grou, and the group identifies if the task can be split up and
+    a group, and the group identifies if the task can be split up and
     assigns them through check-boxed todo's.
 
 comments
@@ -619,7 +608,7 @@ is controlled by configuring it in *your settings*, where you can set
 the preferences for participating projects as well as projects you
 decide to watch. To access the notifications you can simply look at them
 in the *notification* screen. In this screen when you press the `?` you
-will see a number of commands that allow you to controll the
+will see a number of commands that allow you to control the
 notification when pressing on one of them.
 
 ### cc
@@ -629,7 +618,7 @@ the `@` sign and their github user name.
 
 ### Interacting with issues
 
-Github has the ability to serach issues with a search query and a search
+Github has the ability to search issues with a search query and a search
 language that you can find out more about it at
 
 <https://guides.github.com/features/issues/#search>

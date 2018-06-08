@@ -15,7 +15,7 @@ In this video we introduce FutureGrid a precurser to FutureSystems.
 
 [:clapper: Systems 12:12 FutureGid](http://youtu.be/RibpNSyd4qg)
 
-At thsi time we are replacing several of the older systems. To use these
+At this time we are replacing several of the older systems. To use these
 new systems you need to ask for access through them via our portal.
 
 Creating Portal Account

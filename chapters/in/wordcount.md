@@ -130,7 +130,7 @@ A first serial implementation of wordcount is straightforward:
 Serial Implementation Using map and reduce
 ------------------------------------------
 
-We can improve the serial plementation in anticipation of parallelizing
+We can improve the serial implementation in anticipation of parallelizing
 the program by making use of Python's `map` and `reduce` functions.
 
 In short, you can use `map` to apply the same function to the members of
@@ -265,7 +265,7 @@ amount of CPU time spent in user-mode code (outside the kernel) within
 the process, that is, only actual CPU time used in executing the
 process.
 
-Run the three different programs (serial, seria w/ map and reduce,
+Run the three different programs (serial, serial w/ map and reduce,
 parallel) and answer the following questions:
 
 1.  Is there any performance difference between the different versions

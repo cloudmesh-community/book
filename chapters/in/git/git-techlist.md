@@ -2,7 +2,7 @@ How to use Git in this class
 ============================
 
 
-Let us use the first homework 'TechList 1' as an example to illstrate
+Let us use the first homework 'TechList 1' as an example to illustrate
 why and how we choose Git as a essential tool in this class.
 
 In the 'Technologies' section on the class website, we will
@@ -70,7 +70,7 @@ Step 7
 
 When you complete your work, it is the time to submit your homework back
 to the graders. Do this in two steps. First, you have to 'push' your
-local disk copy to the repo you created under your acount in step 4).
+local disk copy to the repo you created under your account in step 4).
 Follow closely after this link
 <https://github.com/cloudmesh/classes#submitting-changes> to get your
 local disk and your personal remote a.k.a. the 'origin' synchronized.

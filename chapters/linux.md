@@ -259,7 +259,7 @@ and can use them in our text with \$ invocations.
 
 Moreover, in sophisticated Makefiles, we could even make the targets
 dependent on files and a target rules could be defined that only
-compiles those files that have changed since our last invokation of the
+compiles those files that have changed since our last invocation of the
 Makefile, saving potentially a lot of time. However, for our work here
 we just use the most elementary makefiles.
 
@@ -270,7 +270,7 @@ at <http://www.cs.jhu.edu/~joanne/unixRC.pdf>.
 ### Makefiles on Windows
 
 Makefiles can easily be accessed also on windows while installing
-gitbash. Please reer to the internet or search in this handbook for more
+gitbash. Please reed to the internet or search in this handbook for more
 information about gitbash.
 
 ## Exercises

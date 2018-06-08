@@ -7,12 +7,12 @@ recommend that you use the current version of ubuntu and do not install
 or reuse a version that you have set up years ago.
 
 As access to cloud resources requires some basic knowledge of linux and
-security we will restrict access to our cloud services to thopse that
+security we will restrict access to our cloud services to those that
 have demonstrated responsible use on their own computers. Naturally as
-it is your own computer you must make sure you follwo proper security.
+it is your own computer you must make sure you follow proper security.
 We have seen in the past students carelessly working with virtual
 machines and introducing security vulnerabilities on our clouds just
-becasue "it was not their computer." Hence, we will allow using of cloud
+because "it was not their computer." Hence, we will allow using of cloud
 resources only if you have demonstrated that you responsibly use a linux
 virtual machine on your own computer. Only after you have successfully
 used ubuntu in a virtual machine you will be allowed to use virtual
@@ -32,7 +32,7 @@ our cloud. This will require you to make sure a TA can replicate it.
 
 Let us now focus on using virtual box.
 
-Instalation
+Installation
 -----------
 
 First you will need to install virtualbox. It is easy to install and
@@ -76,7 +76,7 @@ If you specify your machine too small you will not be able to install
 the development environment. Gregor used on his machine 8GB RAM and 25GB
 diskspace.
 
-Please let us know the smalest configuration that works.
+Please let us know the smallest configuration that works.
 
 Guest additions
 ---------------

@@ -2,19 +2,19 @@
 
 ### Password
 
-Before you bring your Raspbery Pi on the networks, you need to reset
+Before you bring your Raspberry Pi on the networks, you need to reset
 the password. This can be done by starting the terminal and typing in
 it the command
 
     $ passwd
 
 The original password is `raspberrypi` and every one knows it. SO if
-you put your pi on the network it is easily compromized. Hence, change
+you put your pi on the network it is easily compromised. Hence, change
 your password first.
 
 ### Locale
 
-You want to also set your system to use your language ssttings for the
+You want to also set your system to use your language settings for the
 keyboard. you can do this isn the terminal with 
 
     raspi-config 
@@ -28,15 +28,15 @@ or using the GUI.
 
 ### Wireless Network
 
-The easiest way to continue is to have a wireles network you can
+The easiest way to continue is to have a wireless network you can
 connect to. We do not recommend that you use for example your IU
 credentials hence we wil not use the network called `IU
 secure`. Instead we will be using on campus the ATT wireless network.
-If your are not at IU please use your own wierless network at
+If your are not at IU please use your own wireless network at
 home. You can configure it via the GUI.
 
 In case you like to edit the information at a later time or at this
-time you can aslo use an editor.  Edit the file `interfcaes` file with
+time you can also use an editor.  Edit the file `interfcaes` file with
 
     sudo nano /etc/network/interfaces
 
@@ -57,12 +57,12 @@ TODO: what will the file look like for ATT-wifi
 
 Furthermore, if you are at iu and use att-wify, you need to go with
 your web browser to `http:\\iu.edu` and click on the connect
-button. Sometimes that butten is not visible so you need to scroll to it.
+button. Sometimes that button is not visible so you need to scroll to it.
 
 ### Update
 
 We want to update the software and make sure
-everyting is up to date. This is done with 
+everything is up to date. This is done with 
 
     $ sudo apt-get update
 
@@ -102,7 +102,7 @@ To enable ssh on the pi you need to say
     $ sudo systemctl enable ssh
     $ sudo systemctl start ssh
 
-Naturally you need to do a bit more such as plaing your public key in
+Naturally you need to do a bit more such as placing your public key in
 the authorized_keys file explained later, but for now we will just
 activate ssh.
     
@@ -173,7 +173,7 @@ $ export PATH=$PATH:/usr/local/go/bin
 ```
 
 If you like to have it included every time you start a terminal please
-plase the line
+please the line
 
 ```export PATH=$PATH:/usr/local/go/bin```
 

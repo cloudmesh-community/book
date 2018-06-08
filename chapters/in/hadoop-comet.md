@@ -6,7 +6,7 @@ Hadoop SDSC
 Overview
 --------
 
-Users can run Hadoop on Gordon using the myHadoop infrastucture, which
+Users can run Hadoop on Gordon using the myHadoop infrastructure, which
 integrates configuration and Hadoop cluster setup within Gordon's normal
 job-scheduling environment. The Hadoop File System (HDFS) is built using
 the high-performance flash drives (SSDs) mounted on each compute node
