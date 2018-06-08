@@ -1,4 +1,4 @@
-## Exercises - Preface
+## Exercises
 
 Preface.1:
 
