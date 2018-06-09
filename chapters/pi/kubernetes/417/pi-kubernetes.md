@@ -42,13 +42,13 @@ The hostname can be given by clicking the top right
 The window can be launched by
 
 ```bash
-    $ raspi-config
+$ raspi-config
 ```
 
 command i the terminal or by:
 
 ```
-    $ sudo nano /etc/hostname
+$ sudo nano /etc/hostname
 ```
     
 static IP similarly can be given by
@@ -161,7 +161,7 @@ The process till now stays the same for both workers and master
 In the master node initiate the master:
   
 ```
-    $ sudo kubeadm init --token-ttl=0 --apiserver-advertise-address=<internal master ip>
+$ sudo kubeadm init --token-ttl=0 --apiserver-advertise-address=<internal master ip>
 ```
   
 This will initiate the kubectl head. At the end of the this process,
@@ -169,21 +169,21 @@ there should be an echo with the following text. Save this join token
 as you will joining the workers later:
 
 ```
-    $ kubeadm join --token <token> --discovery-token-ca-cert-hash <ca hash>
+$ kubeadm join --token <token> --discovery-token-ca-cert-hash <ca hash>
 ```
 
 Once the master is initiated, now set up the kubectl admin config
 
 ```
-  mkdir -p $HOME/.kube
-  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+$ mkdir -p $HOME/.kube
+$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
 The final step is setting up the networking. I have used weave.
 
 ```
-  kubectl apply -f \
+$ kubectl apply -f \
  "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 ```
   
@@ -192,8 +192,12 @@ The final step is setting up the networking. I have used weave.
 After Kubernetes installation, join the workers using the saved join token.
   
 Use `get nodes` in the master to check the status
-  
-  `kubectl get pods --namespace=kube-system` can be used to check the pod status of the cluster
+
+```bash
+$ kubectl get pods --namespace=kube-system`
+```
+
+can be used to check the pod status of the cluster
   
 ## Troubleshooting 
 

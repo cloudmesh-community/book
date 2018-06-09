@@ -77,24 +77,25 @@ nodes.
 
 ## Files 526
 
-* [526/bin/adm_kub_config.yaml](526/bin/adm_kub_config.yaml)
-* [526/bin/config_kub.sh](526/bin/config_kub.sh)
-* [526/bin/copy_dk_kub_install_script_to_nodes.sh](526/bin/copy_dk_kub_install_script_to_nodes.sh)
-* [526/bin/docker_kubernites_install.sh](526/bin/docker_kubernites_install.sh)
-* [526/bin/issues_todo.md](526/bin/issues_todo.md)
-* [526/bin/kube_install_and_config_readme.md](526/bin/kube_install_and_config_readme.md)
-* [526/bin/useful_links.txt](526/bin/usefull_links.txt)
+* [adm_kub_config.yaml](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/526/bin/adm_kub_config.yaml)
+* [config_kub.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes//526/bin/config_kub.sh)
+* [copy_dk_kub_install_script_to_nodes.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/526/bin/copy_dk_kub_install_script_to_nodes.sh)
+* [docker_kubernites_install.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/526/bin/docker_kubernites_install.sh)
+* [issues_todo.md](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/526/bin/issues_todo.md)
+* [kube_install_and_config_readme.md](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/526/bin/kube_install_and_config_readme.md)
+* [useful_links.txt](526/bin/usefull_links.txt)
 
 ## Files 417
 
-* [README.md](README.md)
-* [dhcp_setup.sh](417/bin/dhcp_setup.sh)
-* [docker_setup.sh](417/bin/docker_setup.sh)
+
+* [README.md](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/README.md)
+* [dhcp_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/dhcp_setup.sh)
+* [docker_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/docker_setup.sh)
 * [join](417/bin/join)
-* [kube_head_setup.sh](417/bin/kube_head_setup.sh)
-* [kube_worker_setup.sh](417/bin/kube_worker_setup.sh)
-* [kubeadm_conf.yaml](417/bin/kubeadm_conf.yaml)
-* [opt_setup.sh](417/bin/opt_setup.sh)
+* [kube_head_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/kube_head_setup.sh)
+* [kube_worker_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/kube_worker_setup.sh)
+* [kubeadm_conf.yaml](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/kubeadm_conf.yaml)
+* [opt_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/opt_setup.sh)
 
 
 ## Refernces
