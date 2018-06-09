@@ -273,9 +273,9 @@ REVIEW=\
  chapters/pi/software2.md
 
 DRAFT=\
- chapters/clusters/pi-kubernetes.md\
- chapters/clusters/kubernetes-526/readme-kube.md\
- chapters/clusters/kubernetes-417/pi-kubernetes.md\
+ chapters/pi/kubernetes/pi-kubernetes.md\
+ chapters/pi/kubernetes/526/readme-kube.md\
+ chapters/pi/kubernetes/417/pi-kubernetes.md\
 
 
 CHAPTER_PI=\
