@@ -273,8 +273,9 @@ REVIEW=\
  chapters/pi/software2.md
 
 DRAFT=\
- chapters/clusters/pi-docker.md\
- chapters/clusters/pi-dockerswarm.md
+ chapters/clusters/pi-kubernetes.md\
+ chapters/clusters/kubernetes-526/readme-kube.md\
+ chapters/clusters/kubernetes-417/pi-kubernetes.md\
 
 
 CHAPTER_PI=\
@@ -303,6 +304,8 @@ CHAPTER_PI=\
      chapters/pi/vnc.md\
      chapters/pi/motherboard-led.md\
      chapters/run-at-boot.md\
+ chapters/clusters/pi-docker.md
+
 
 OTHER=\
  chapters/SECTION-DRAFT.md\
@@ -312,8 +315,6 @@ OTHER=\
  chapters/pi/pi-passwordreset.md\
  chapters/clusters/pxe.md\
  chapters/clusters/pi-configure-cluster.md\
- chapters/clusters/kubernetes-526/readme-kube.md\
- chapters/clusters/kubernetes-417/pi-kubernetes.md\
  chapters/clusters/pi-spark.md\
  chapters/pi/slurm.md\
  chapters/SECTION-hadoop.md\
