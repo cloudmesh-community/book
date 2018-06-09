@@ -99,11 +99,12 @@ Once you have designed the 5 node cluster, you will also need to
 design a shelf in which you can place them. Power plugs need to be
 added. so you can power the PI within the cluster.
 
-### Using the Laser Cutter
+### Laser Cutter
 
-First, you will need an overview of what a laser cutter is. There are
-many good resources about this on youtube. One such video is provided
-by a company that sells laser cutters:
+With a laser cutter we can create very precise cases.  First, you will
+need an overview of what a laser cutter is. There are many good
+resources about this on youtube. One such video is provided by a
+company that sells laser cutters:
 
 * <https://www.youtube.com/watch?v=SIjUVCho_xU>
 
