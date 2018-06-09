@@ -24,7 +24,7 @@ Menu -> Preferences -> Mouse and Keyboard Settings -> Keyboard tab -> Variant ->
 
 Most importantly you need to change the password
 
-    passwd
+    $ passwd
     
 Enter new password via prompts.
 
@@ -40,7 +40,7 @@ Change hostname of each raspberry pi (in descending order).
 
 This can be done on the command line using:
 
-    sudo raspi-config
+    $ sudo raspi-config
     
 Or on the desktop by going to Menu -> Preferences -> Raspberry Pi Configuration
 
@@ -50,14 +50,14 @@ Or by modifying **/etc/hostname**
 
 Install Dependencies:
 
-    apt-get update
-    apt-get install -qy dnsmasq clusterssh iptables-persistent
+    $ apt-get update
+    $ apt-get install -qy dnsmasq clusterssh iptables-persistent
 
 #### Create Static IP
 
 Copy old config (-n flag prevents overwrite):
 
-    \cp -n /etc/dhcpcd.conf /etc/dhcpcd.conf.old
+    $ \cp -n /etc/dhcpcd.conf /etc/dhcpcd.conf.old
     
 To update DHCP configuration, add the following to **/etc/dhcpd.conf**:
  
@@ -74,7 +74,7 @@ To update DHCP configuration, add the following to **/etc/dhcpd.conf**:
 
 Copy old config (-n flag prevents overwrite):
 
-    \cp -n /etc/dnsmasq.conf /etc/dnsmasq.conf.old
+    $ \cp -n /etc/dnsmasq.conf /etc/dnsmasq.conf.old
     
 To update DNS configuration, add the following to **/etc/dhcpd.conf**
     
@@ -93,26 +93,24 @@ To Setup NAT Forwarding, uncomment the following line in **/etc/sysctl.conf**:
 
 Create IP Tables:
 
-    sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
-    sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-    sudo iptables -A FORWARD -i $INTERNAL -o wlan0 -j ACCEPT
-    sudo iptables -A FORWARD -i $EXTERNAL -o eth0 -j ACCEPT
+    $ sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+    $ sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+    $ sudo iptables -A FORWARD -i $INTERNAL -o wlan0 -j ACCEPT
+    $ sudo iptables -A FORWARD -i $EXTERNAL -o eth0 -j ACCEPT
 
 Make rules permanent:
 
-    iptables-save > /etc/iptables/rules.v4
+    $ iptables-save > /etc/iptables/rules.v4
 
 ### SSH Configuration
 
-**Note: Gregor says this is not best practice**
-
 Generate SSH keys:
 
-    ssh-keygen -t rsa
+    $ ssh-keygen -t rsa
     
 Copy key to each compute node:
 
-    ssh-copy-id <hostname>
+    $ ssh-copy-id <hostname>
     
 For hostnames rp1-4 (final node names will be: rp0, rp1, rp2, rp3, rp4).
 
@@ -120,9 +118,9 @@ For hostnames rp1-4 (final node names will be: rp0, rp1, rp2, rp3, rp4).
 
 To update Cluster SSH configuration, add the following to **/etc/clusters**:
 
-    rpcluster rp1 rp2 rp3 rp4
+    $ rpcluster rp1 rp2 rp3 rp4
 
 Now you can run commands to all clusters by:
 
-    cssh rpcluster
+    $ cssh rpcluster
 
