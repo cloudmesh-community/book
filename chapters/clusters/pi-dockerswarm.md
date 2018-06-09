@@ -1,124 +1,107 @@
-## Docker Swarm :o:
+## Docker Swarm
+manager
+Swarm is a native clustering and scheduling tool for Docker. Instead of just managing containers on a single server, we can manage containers on a set of servers. The containers will be automatically scheduled on the pool of servers making them apear as a single resource. We will set up and use Docker on a number of Raspberry Pi's install Docker on them and register them into a Docker Swarm.
 
-Swarm is native clustering and scheduling tool for the docker. In the
-context of swarm, a cluster is a pool of Docker hosts that acts as a
-bit like a single large docker host. You can also run swarm services
-and standalone containers on the same Docker instances. Set up and use
-Docker on Raspberry Pi In this tutorial, we are going to see how to
-take several Raspberry Pi devices, cluster them using Docker Swarm and
-deploying containers to Swarm.
+## Creating a Network of Pi's with docker
 
-Elsewhere: Step 1: Assembling the hardware :o:
+In Section ??? we explained how to set up a network of PI's. Here we assume that we start from such a network. The Pi's have all different names, and are registered on the network. Each Pi has the public key installled from the machine where you will login from for setting up the swarm.
 
-* We must assemble the cluster which requires the following
-  components: Raspberry pi 3, standoff spacers, USB cables, USB
-  charging hubs and SD cards. With this we can build the hardware for
-  our PI cluster.
-	
-Elsewhere: Step 2: Install Raspbian Jessie on the SD cards :o:
+Let us assume the names of the hosts are stored in a shell variable called 
 
-* Download Raspbian Jessie from <http://downloads.raspberrypi.org/raspbian/images/raspbian-2017-07-05/>
-* Insert SD card into computer
-* Flash the SD card with disk image of jessie
+	hostnames = (red00 red01 red02 red03 red04)
 
-Elsewhere: Step 3: Configure Raspbian :o:
+Natuarlly, we want to install on these machines docker and register them to the swarm. A variety of tools exist to simplify this process, such as 
 
-* Enable SSH
+* parallel shell <https://github.com/vallard/psh>
+* cloudmesh parallel (TODO: find the link)
 
-  * Navigate to the boot directory of SD card 
-  * Create an empty file called SSH
-  * Insert card onto the PI and power on
-
-* Set up the WIFI for the PI
-* When the PI is connected to the WIFI we would be able to SSH into the PI
-
-Elsewhere: Step 4: Figure out the IP Address of each node
-
-* We can use nmap to scan our local network to find the devices that are connected
-
-Elsewhere: Step 5: Change the hostname for each node
-
-* The default hostname is `raspberrypi`
-* Though the computer can be reached with help of the IP its better to set a 
-  hostname for each node for ease of use. 
-
-Step 6: Install Docker on each node
-* Run the code below to install docker on each node
+For now we use this simple shell program to install docker on each of the hosts in the hostnames
 
   ```bash
-  for host in hostname; do
-        ssh pi@$host curl -sSL https://get.docker.com | sh; done
+  hostnames = (red00 red01 red02 red03 red04)
+  for host in "${hostnames[@]}"
+  do
+        ssh pi@$host curl -sSL https://get.docker.com | sh
+  done
   ```
-        
-Step 7: Creating the swarm
+
+Save this script in a file called `docker-install.sh` and set the executable rights with 
+
+	chmod u+x docker-install.sh
+	   
+When we execute it with 
+
+	$ docker-install.sh
+	
+It will sequentially install docker on each host. This is not very efficient and only works for a small number of hosts.
 
 
+## Registering the Pi to the Swarm
 
-* create swarm on a single node (this node will be a manager node) 
+Next we need to run on one of the nodes the management node for the swarm to whcih all others servers register as workers. Although we could run on this node als a worker, we will just run the manager on it as we want to avoid overloading it and make sure it operates smoothly.
 
-  * ssh into the node and run this command
-
-    ```bash 
-	$ sudo docker swarm init --advertise-addr "IP Address of the node"
-    ```
-    
-* The previous command's output (token) can be used to join other nodes to the 
-  swarm as a worker or manager.
-* Join any more node as a managers or workers
-  
-  * SSH into the required node
-  * Run 
-
-    ```bash
-    $ sudo docker swarm join --token SWMTKN-abc...manager...xyz 
-    ```
-      
-:warning: There seems to be some issue with indentation or incomplete documentation from here on
-
-`IP Address of the node` to join node as a manager
-
-Next, run
+We select the first host in our hostlist for it called `red00` Let us assume the host has the ipaddress `<manager-ip-address>`. We can log into this computer and execute the command
 
 ```bash
-  $ sudo docker swarm join --token SWMTKN-abc...worker...xyz HOST
+$ sudo docker swarm init --advertise-addr <manager-ip-address>:2377
 ```
-  
-`IP Address of the node` to join node as a worker
+This command will print out a token that we can use on the workers to register with our swarm. The tocken will look something like:
 
-Finally, we can run
+	SWMTKN-abc...xyz
+
+Let us use the term <token> to indicate the token. To register a worker a two step process is used. 
+
+If you ever forget the token, you simply can use the following command on the manager
+
+	$ docker swarm join-token worker
+
+It will print out the command that you will have to execute on a worker.
 
 ```bash
-sudo docker node ls
+$ sudo docker swarm join --token SWMTKN-abc...manager...xyz <manager-ip-address>:2377
 ```
 
-command to check the status all the 
-nodes.
+To see the list of nodes, you can use the command
 
-
-## TODO
-
-
-:warning: this should be automatized with a yaml file and a python
-script. Get in contact with Gregor
-
-```yaml
-master: <IP>
-worker:
-- <ip01>
-- <ip02>
-- <ip03>
+```bash
+I $ sudo docker node ls
 ```
 
-cms swarm create [--config cms-swarm.yaml]
 
-* uses .yaml in the current dir, or in ~/.cloudmesh
+## Exercise
 
-cms swarm kill
+Swarm.1
 
-* kills the swarm
+: Your task is is to identify technologies to execute the instalation 
+  in parallel. Suitable technologies include
 
-cms swarm ls
+  * psh
+  * ansible
+  * puppet
+  * python threads
+  * cloudmesh
 
-* gives details about the swarm
+  We like that the class is split up in groups and each group develops this
+  solution. Naturally you can test this first with not installing docker, but
+  with a simple command such as `uname -a`
+  
+Swarm.2
 
+: Develop a python cloudmesh command called 
 
+  `cms swarm config hostnames.yaml`
+  
+  where the yaml file loosk something like  
+
+  ```yaml
+  manager: <IP>
+  worker:
+  - <ip01>
+  - <ip02>
+  - <ip03>
+  ```
+
+  Similarly create other convenient functions such as 
+  
+  * `cms swarm kill`, which kills the swarm
+  * `cms swarm ls`, which gives details about the swarm
