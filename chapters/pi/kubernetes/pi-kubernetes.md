@@ -1,16 +1,20 @@
-## kubernetes
+# Kubernetes
+
+In this section we discuss how to set up a kubernetes cluster on a
+number of Raspberry Pi's.
 
 
-Resources Needed: 
+## Resources Needed
 
 We recommend that the cluster will have at least one master and three
-worker nodes. Using less resources will lead to slow processor Please
-give us feedback on this and let us know hwat works for you.
+worker nodes. Using less resources so the system is not unnecessarily
+slow. Please give us feedback on this and let us know hwat works for
+you. so we integrate your feedback.
 
 We assume that you have installed docker and disabled swap
 
-TODO: describe how to disable swap
 
+TODO: describe how to disable swap
 
 
 First install docker, disable swap, install kubeadm
@@ -71,15 +75,27 @@ manually.  We plan on making this script independent on the number of
 nodes.
 
 
-## Files
+## Files 526
 
-* [kubernetes/adm_kub_config.yaml](kubernetes/adm_kub_config.yaml)
-* [kubernetes/config_kub.sh](kubernetes/config_kub.sh)
-* [kubernetes/copy_dk_kub_install_script_to_nodes.sh](kubernetes/copy_dk_kub_install_script_to_nodes.sh)
-* [kubernetes/docker_kubernites_install.sh](kubernetes/docker_kubernites_install.sh)
-* [kubernetes/issues_todo.md](kubernetes/issues_todo.md)
-* [kubernetes/kube_install_and_config_readme.md](kubernetes/kube_install_and_config_readme.md)
-* [kubernetes/useful_links.txt](kubernetes/usefull_links.txt)
+* [526/bin/adm_kub_config.yaml](526/bin/adm_kub_config.yaml)
+* [526/bin/config_kub.sh](526/bin/config_kub.sh)
+* [526/bin/copy_dk_kub_install_script_to_nodes.sh](526/bin/copy_dk_kub_install_script_to_nodes.sh)
+* [526/bin/docker_kubernites_install.sh](526/bin/docker_kubernites_install.sh)
+* [526/bin/issues_todo.md](526/bin/issues_todo.md)
+* [526/bin/kube_install_and_config_readme.md](526/bin/kube_install_and_config_readme.md)
+* [526/bin/useful_links.txt](526/bin/usefull_links.txt)
+
+## Files 417
+
+* [README.md](README.md)
+* [dhcp_setup.sh](417/bin/dhcp_setup.sh)
+* [docker_setup.sh](417/bin/docker_setup.sh)
+* [join](417/bin/join)
+* [kube_head_setup.sh](417/bin/kube_head_setup.sh)
+* [kube_worker_setup.sh](417/bin/kube_worker_setup.sh)
+* [kubeadm_conf.yaml](417/bin/kubeadm_conf.yaml)
+* [opt_setup.sh](417/bin/opt_setup.sh)
+
 
 ## Refernces
 
