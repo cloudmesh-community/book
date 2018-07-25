@@ -82,5 +82,3 @@ $ make view
 ```
 
 
-
-# test
