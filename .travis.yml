@@ -1,7 +1,7 @@
 install:
-  sudo apt-get update
-  sudo apt-get install pandoc
-  sudo apt-get install graphviz
+  - sudo apt-get update
+  - sudo apt-get install pandoc
+  - sudo apt-get install graphviz
 
 script:
-  cd big-data-applications;  make
+  - cd big-data-applications;  make
