@@ -5,4 +5,5 @@ install:
 
 script:
   - cd big-data-applications
+  - pandoc --version
   - make
