@@ -3,21 +3,37 @@
 In this section we discuss how to set up a kubernetes cluster on a
 number of Raspberry Pi's.
 
-
 ## Resources Needed
 
 We recommend that the cluster will have at least one master and three
-worker nodes. Using less resources so the system is not unnecessarily
-slow. Please give us feedback on this and let us know hwat works for
-you. so we integrate your feedback.
+worker nodes. Using less resources may make the system is not
+unnecessarily slow. In particular we have one dedicated master. We use
+three nodes to allow for testing the distribution of containers. (It
+may work with two, but we have not tested it). Please give us feedback
+on this and let us know hwat works for you. so we integrate your
+feedback.
 
-We assume that you have installed docker and disabled swap
+### Install Docker
 
 
-TODO: describe how to disable swap
+
+### Disable Swap Space
 
 
-First install docker, disable swap, install kubeadm
+Rasbian Jessie is using `systemd`. We need to try if we can disable
+swap with systemd:
+
+    sudo systemctl disable dphys-swapfile
+
+To check if this works use 
+
+    sudo systemctl status dphys-swapfile 
+
+Naturally we need to reboot and check again to see if the change is permanent.
+
+
+
+
 
 All the following steps are made automatically by the 
 `docker_kubernetes_install.sh` script.
@@ -26,6 +42,8 @@ All the following steps are made automatically by the
 
 In order to install kubernetes you first need to have docker installed. This is 
 very strait forward.
+
+
 
 ### Disable swap memory
 
@@ -85,12 +103,19 @@ nodes.
 * [kube_install_and_config_readme.md](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/526/bin/kube_install_and_config_readme.md)
 * [useful_links.txt](526/bin/usefull_links.txt)
 
+
+## Final
+
+Install docker, switch of swapp, add it to the boot configuration.
+
+* [docker_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/install_docker.sh)
+
+
 ## Files 417
 
 
 * [README.md](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/README.md)
 * [dhcp_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/dhcp_setup.sh)
-* [docker_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/docker_setup.sh)
 * [join](417/bin/join)
 * [kube_head_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/kube_head_setup.sh)
 * [kube_worker_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/kube_worker_setup.sh)
