@@ -4,4 +4,5 @@ install:
   - sudo apt-get install graphviz
 
 script:
-  - cd big-data-applications;  make
+  - cd big-data-applications
+  - make
