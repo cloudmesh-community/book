@@ -2,5 +2,4 @@ install:
   sudo apt-get install pandoc
 
 script:
-  cd big-data-applications
-  make
+  cd big-data-applications;  make
