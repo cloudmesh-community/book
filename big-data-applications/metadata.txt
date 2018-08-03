@@ -4,9 +4,9 @@ title:
   text: Big Data Applications
 creator:
 - role: editor
-  text: Editor Gregor von Laszewski
-description: Practical creation of cloud clusters for Raspberry Pi's
-rights: (c) Gregor von Laszewski, 2018
+  text: Editor Geoffrey C. Fox, Gregor von Laszewski, Fugang Wang
+description: Big Data Applications
+rights: (c) Geoffrey C. Fox, Gregor von Laszewski, 2018
 language: en-US
 stylesheet: template/epub.css
 cover-image: cover/cover.jpg

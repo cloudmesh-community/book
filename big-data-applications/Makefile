@@ -109,10 +109,9 @@ CHAPTER_IN=\
 ######################################################################
 
 CHAPTER_BIGDATA=\
+ chapters/class/SECTION.md\
+ chapters/class/fall2018.md\
  chapters/bigdata/SECTION.md\
- chapters/bigdata//algorithms/technology.md\
- chapters/bigdata//algorithms/clustering.md\
- chapters/bigdata//algorithms/plotviz.md\
  chapters/bigdata//applications/overview.md\
  chapters/bigdata//applications/physics.md\
  chapters/bigdata//applications/lifestyle.md\
@@ -122,6 +121,9 @@ CHAPTER_BIGDATA=\
  chapters/bigdata//applications/sensor.md\
  chapters/bigdata//applications/web.md\
  chapters/bigdata//applications/health.md\
+ chapters/bigdata//algorithms/technology.md\
+ chapters/bigdata//algorithms/clustering.md\
+ chapters/bigdata//algorithms/plotviz.md\
 
 ######################################################################
 # i516
