@@ -46,6 +46,7 @@ The course has the following objectives:
   cloud
 * Learn how edge computing is enhancing cloud services and
   infrastructure
+* Lern how to set up a cloud based on using commodity hardware
 
 ## Learning Outcomes
 
