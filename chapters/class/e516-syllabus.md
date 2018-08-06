@@ -101,6 +101,20 @@ the entire semester.
 
 (*) Project, and Tutorial assignments are long term assignmenst and must be worked on on a weekly basis. They are providing the major part of the course grade.
 
+- all times are in EST
+
+Additional Lectures will be added that allow easy management of the project. These lectures can be taken any time when needed
+
+| Proposed Date(a)        | Unit    | Title             | Description
+| -------------- | ------- | ----------------- | --------------
+| anytime        | 1       | Plagiarizm      | How to avoid plagiarizm and cheating
+| anytime        | 1       | Project Github      | Who to use the project Github
+| anytime        | 1       | Writing a Project Report      | Who to write a high quality Project report following our template
+| anytime        | 1       | Bibliography Management      | Who to easily manage bibliographies for your Project Report
+
+
+
+
 ## Assessment
 
 This course is focussing on the principal "Learning by Doing" which is
@@ -165,26 +179,30 @@ models used. It is best to complete the course within one semester.
 |  #  | Event |     | Date 
 | --- | ----- | --- | --- 
 |    | Full Term           | | 16 Weeks |
-|   | *Begins*	          | | Mon, 08/20 |
-| 1 | **Bio, Notebook**   | assigned | Mon, 08/20 |
-| 1 | **Bio, Notebook**   | due  | Mon, 08/27 9am |
-| 2 | **Tutorial**    | assigned | Mon. 09/3, due Fri 9am |
-| 2 | **Chapter**         | assigned | Mon, Aug 27 during class |
-| 4 | **Project**         | selection    | Mon, Sept 3 |
-|   | *Labor Day*	      |  | Mon, Sept 3 |
-| 4 | **Project** | update | Oct 5, 9am EST |
-|   | *Fall Break*	      | | Oct 5 - Oct 7 |
-|   | *Auto W*	          | | Sun, Oct 21 |
-| 4 | **Project** | update | Nov 2, 9am EST |
-| 4 | **Tutorial** | due | Nov 2, 9am EST |
-| 4 | **Chapter** | due | Nov 2, 9am EST |
-|   | *Thanksgiving*	  |    | Nov 18 - Nov 25 |
-| 4 | **Project**         | due	       | Nov 26 |
-| 4 | **Project** (no penalty) | improvements | Nov 26 - Dec 3 |
-| 4 | **Project** (with penalty) | improvements | Dec 4 - Dec 7|
-| 4 | *Grading*	          |  | Dec 1 - Dec 14 |
-|   | *Ends*	          |  | Fri, Dec 14 |
+|   | *Begins*	          | | Mon 08/20 |
+| 1 | **Bio, Notebook**   | assigned | Mon 08/20 |
+| 1 | **Bio, Notebook**   | due  | Mon 08/27 9am |
+| 2 | **Tutorial**    | assigned | Mon 09/3|
+| 2 | **Chapter**         | assigned | Mon 09/03 |
+| 4 | **Project**         | selection or proposal  | Mon 09/3 |
+|   | *Labor Day*	      |  | Mon 09/03 |
+| 4 | **Project** | update | 10/05, 9am EST |
+|   | *Fall Break*	      | | 10/05 - 10/07 |
+|   | *Auto W*	          | | Sun 10/21 |
+| 4 | **Project** | update | 11/02 9am EST |
+| 4 | **Tutorial** | due | 11/022 9am EST |
+| 4 | **Chapter** | due | 11/02 9am EST |
+|   | *Thanksgiving*	  |    | 11/18 - 11/25 |
+| 4 | **Project**         | due	       | 11/26 |
+| 4 | **Project** (no penalty) | improvements | 11/26 - 12/03 |
+| 4 | **Project** (with penalty) | improvements | 12/04 - 12/07|
+| 4 | *Grading*	          |  | 12/01 - 12/14 |
+|   | *Ends*	          |  | Fri 12/14 |
+|   | grade submission to school | | Fri 12/14 |
+|   | grade posting by registrar | | 12/31 |
 
+* TA's must be available till all grades have been submitted. 
 * Bio: a formal 3 paragraph Bio
 * Notebook: a markdown in which you record your progress of
   this class in bullet form
+* all times are in EST
