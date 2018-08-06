@@ -67,33 +67,37 @@ The course has the following objectives:
 
 
 
-| Unit    | Title             | Description
-| ------- | ----------------- | --------------
-| 1       | Introduction      | Definition of Cloud Computing
-|         |                   | Tools and Services
-|         |                   | Data Center
-| 2       | Infrastructure    | Infrastructure as a Service
-|         |                   | OpenStack, Azure, AWS
-| 3       | Virtualization    | Qemu, KVM, Virtual machines
-|         |                   | Containers, Docker, Kubernetes
-| 3       | Programming       | Python for Cloud Computing, LibCloud
-|         |                   | Github as a Cloud Service
-|         |                   | REST Services, Eve, OpenAPI
-|         |                   | Map/Reduce, Hadoop, Spark
-|         |                   | Messaging with MQTT
-|         |                   | GraphQL
-|         |                   | Go for the Cloud
-| 4       | Edge Computing    | Edge Computing and the Cloud
-| 5       | Tutorial          | Contribute a significant tutorial to the class in preparation for the project documentation
-| 6       | Project Type A    | Build a cloud out of Raspberry PIs
-|         |                   | Kubernetes, Hadoop, SLURM + OpenAPI Service, 
-|         | Project Type B    | Build a Significant OpenAPI REST Service
-|         | Project Type C    | Build an Edge Service Interfacing with a Cloud
-|         | Project Type D    | Your own Project Type A, B, or C (upon approval)
+| Proposed Date(a)        | Unit    | Title             | Description
+| -------------- | ------- | ----------------- | --------------
+| 08/24     | 1       | Introduction      | Definition of Cloud Computing
+| 08/31     |         |                   | Tools and Services
+| 09/03     |         |                   | Data Center, NIST Big Data Reference Architecture
+| 09/10     | 2       | Infrastructure    | Infrastructure as a Service
+| 09/17     |         |                   | OpenStack, Azure, AWS
+| 09/24     | 3       | Virtualization    | Qemu, KVM, Virtual machines
+| 10/01     |         |                   | Containers, Docker, Kubernetes
+| 10/08     | 3       | Programming       | Python for Cloud Computing, LibCloud
+| 10/08     |         |                   | Github as a Cloud Service
+| 10/15     |         |                   | REST Services, Eve, OpenAPI
+| 10/22     |         |                   | Map/Reduce, Hadoop, Spark
+| 10/29     |         |                   | Messaging with MQTT
+| 11/05     |         |                   | GraphQL
+| 11/19|         |                   | Go for the Cloud I
+| 11/19|         |                   | Go for the Cloud II
+| 12/03| 4       | Edge Computing    | Edge Computing and the Cloud
+| 09/03-11/26* | 5       | Tutorial          | Contribute a significant tutorial to the class in preparation for the project documentation
+| 09/03-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
+| 09/03-11/26* |         |                   | Kubernetes, Hadoop, SLURM + OpenAPI Service, 
+| 09/03-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
+| 09/03-11/26* |         | Project Type C    | Build an Edge Service Interfacing with a Cloud
+| 09/03-11/26* |         | Project Type D    | Your own Project Type A, B, or C (upon approval)
 
 Students need only to do one project. The project is conducted thought
 the entire semester.
 
+(a) Dates may change as the semester evolves
+
+(*) Project, and Tutorial assignments are long term assignmenst and must be worked on on a weekly basis. They are providing the major part of the course grade.
 
 ## Assessment
 
@@ -159,10 +163,10 @@ models used. It is best to complete the course within one semester.
 |  #  | Event |     | Date 
 | --- | ----- | --- | --- 
 |    | Full Term           | | 16 Weeks |
-|   | *Begins*	          | | Mon, Aug 20 |
-| 1 | **Bio, Notebook**   | assigned | Mon, Aug 20 |
-| 1 | **Bio, Notebook**   | due  | Mon, Aug 27 9am |
-| 2 | **Tutorial**    | assigned | 2 weekly, due Fri 9am |
+|   | *Begins*	          | | Mon, 08/20 |
+| 1 | **Bio, Notebook**   | assigned | Mon, 08/20 |
+| 1 | **Bio, Notebook**   | due  | Mon, 08/27 9am |
+| 2 | **Tutorial**    | assigned | Mon. 09/3, due Fri 9am |
 | 2 | **Chapter**         | assigned | Mon, Aug 27 during class |
 | 4 | **Project**         | selection    | Mon, Sept 3 |
 |   | *Labor Day*	      |  | Mon, Sept 3 |
