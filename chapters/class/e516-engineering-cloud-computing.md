@@ -113,9 +113,9 @@ Additional Lectures will be added that allow easy management of the project. The
 | Proposed Date(a)        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | anytime        | 1       | Plagiarizm      | How to avoid plagiarizm and cheating
-| anytime        | 1       | Project Github      | Who to use the project Github
-| anytime        | 1       | Writing a Project Report      | Who to write a high quality Project report following our template
-| anytime        | 1       | Bibliography Management      | Who to easily manage bibliographies for your Project Report
+| anytime        | 1       | Project Github      | How to use the project Github
+| anytime        | 1       | Writing a Project Report      | How to write a high quality Project report following our template
+| anytime        | 1       | Bibliography Management      | How to easily manage bibliographies for your Project Report
 
 
 
