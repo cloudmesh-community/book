@@ -15,6 +15,8 @@
   of 200 Raspberry PIs. Online students can opt to purchase one or
   more based on our materials list that we will release throughout the
   semester. All students will have access to a cloud.
+* This page is maintained and updated at 
+  <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-syllabus.md>
 
 ## Course Description
 
