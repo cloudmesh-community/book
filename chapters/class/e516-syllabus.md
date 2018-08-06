@@ -89,7 +89,8 @@ The course has the following objectives:
 | 11/19|         |                   | Go for the Cloud I
 | 11/19|         |                   | Go for the Cloud II
 | 12/03| 4       | Edge Computing    | Edge Computing and the Cloud
-| 09/03-11/26* | 5       | Tutorial          | Contribute a significant tutorial to the class in preparation for the project documentation
+| 09/03-11/26* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
+| 09/03-11/26* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
 | 09/03-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
 | 09/03-11/26* |         |                   | Kubernetes, Hadoop, SLURM + OpenAPI Service, 
 | 09/03-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
