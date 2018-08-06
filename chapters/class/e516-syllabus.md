@@ -180,27 +180,28 @@ models used. It is best to complete the course within one semester.
 
 ### Calendar 
 
-|  #  | Event |     | Date 
+|  Assignment #  | Event |     | Date 
 | --- | ----- | --- | --- 
 |    | Full Term           | | 16 Weeks |
 |   | *Begins*	          | | Mon 08/20 |
-| 1 | **Bio, Notebook**   | assigned | Mon 08/20 |
-| 1 | **Bio, Notebook**   | due  | Mon 08/27 9am |
-| 2 | **Tutorial**    | assigned | Mon 09/3|
-| 2 | **Chapter**         | assigned | Mon 09/03 |
-| 4 | **Project**         | selection or proposal  | Mon 09/3 |
+| 1, 2 | **Bio, Notebook**   | assigned | Mon 08/20 |
+| 1, 2 | **Bio, Notebook**   | due  | Mon 08/27 9am |
+| 3 | **Tutorial**    | assigned | Mon 09/3|
+| 4 | **Chapter**         | assigned | Mon 09/03 |
+| 5 | **Project**         | selection or proposal  | Mon 09/3 |
 |   | *Labor Day*	      |  | Mon 09/03 |
-| 4 | **Project** | update | 10/05, 9am EST |
+| 5 | **Project** | update | 10/05, 9am EST |
 |   | *Fall Break*	      | | 10/05 - 10/07 |
 |   | *Auto W*	          | | Sun 10/21 |
-| 4 | **Project** | update | 11/02 9am EST |
-| 4 | **Tutorial** | due | 11/022 9am EST |
+| 5 | **Project** | update | 11/02 9am EST |
+| 3 | **Tutorial** | due | 11/022 9am EST |
 | 4 | **Chapter** | due | 11/02 9am EST |
 |   | *Thanksgiving*	  |    | 11/18 - 11/25 |
-| 4 | **Project**         | due	       | 11/26 |
-| 4 | **Project** (no penalty) | improvements | 11/26 - 12/03 |
-| 4 | **Project** (with penalty) | improvements | 12/04 - 12/07|
-| 4 | *Grading*	          |  | 12/01 - 12/14 |
+| 5 | **Project**         | due	       | 11/26 |
+| 5 | **Project** (no penalty) | improvements | 11/26 - 12/03 |
+| 5 | **Project** (with penalty) | improvements | 12/04 - 12/07|
+|   | **Final Deliverables due**  |  | 12/07|
+|   | *Grading*	          |  | 12/01 - 12/14 |
 |   | *Ends*	          |  | Fri 12/14 |
 |   | grade submission to school | | Fri 12/14 |
 |   | grade posting by registrar | | 12/31 |
@@ -209,4 +210,5 @@ models used. It is best to complete the course within one semester.
 * Bio: a formal 3 paragraph Bio
 * Notebook: a markdown in which you record your progress of
   this class in bullet form
-* all times are in EST
+* All times are in EST
+* Dependent on class progress Comprehension Assignments may be added
