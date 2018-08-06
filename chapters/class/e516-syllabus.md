@@ -133,17 +133,18 @@ include a simple deployment and runtime instruction set.
 The main deliverable of the class is a project. The project is
 assessed through the following artifacts:
 
-* (a) a deployment and install instruction, 
-* (b) a project report, 
-* (c) a working project that can be reproduced by a third party 
-* (d) a code developed by the project team distributed in github.com
-* (e) project progress
-* Each week the project progress is reported and will be integrated
-into the final grade.
+* (a) Deployment and install instructions, 
+* (b) Project report, 
+* (c) Working project code that can be installed and executed in reproducable manner by a third party 
+* (d) Code developed by the project team distributed in github.com
+* (e) Project progress notes checked into github throughout the semester. Each 
+  week the project progress is reported and will be integrated
+  sinto the final grade.
+* (f) three discusssions or progress reports with the instructors about your project
 
 The grade distribution is as follows 
 
-* 10% comprehension activities
+* 10% Comprehension Activities
 * 10% Tutorial
 * 10% Chapter
 * 70% Project
