@@ -16,7 +16,8 @@
   more based on our materials list that we will release throughout the
   semester. All students will have access to a cloud.
 * This page is maintained and updated at 
-  [e516: Engineering Cloud Computin](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md)
+  [e516: Engineering Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md)
+* Course Description URL: <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md>
 
 ## Course Description
 
