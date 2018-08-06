@@ -131,7 +131,7 @@ students. This is done in preparation for the project that must
 include a simple deployment and runtime instruction set.
 
 The main deliverable of the class is a project. The project is
-assessed through four artifact:
+assessed through the following artifacts:
 
 * (a) a deployment and install instruction, 
 * (b) a project report, 
