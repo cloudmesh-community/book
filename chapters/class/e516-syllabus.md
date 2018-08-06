@@ -9,11 +9,12 @@
   enhance your knowledge from online resources and additional
   literature. You will need access to a "modern" computer that allows
   using virtual machines and/or containers. If such a system is not
-  available to you can also use for some of the work one or more
-  Raspberry's PI. All residential students will have access to a total
+  available to you can also use cloud vms we provide and if you opt 
+  to do so one or more Raspberry's PI. All residential students will 
+  have access to a total
   of 200 Raspberry PIs. Online students can opt to purchase one or
   more based on our materials list that we will release throughout the
-  semester. All students will have access to an OpenStack Cloud.
+  semester. All students will have access to a cloud.
 
 ## Course Description
 
@@ -45,6 +46,7 @@ The course has the following objectives:
   cloud
 * Learn how edge computing is enhancing cloud services and
   infrastructure
+* Lern how to set up a cloud based on using commodity hardware
 
 ## Learning Outcomes
 
