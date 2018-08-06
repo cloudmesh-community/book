@@ -1,4 +1,4 @@
-# e516: Engeneering Cloud Computing
+# e516: Engineering Cloud Computing
 
 * Indiana University
 * Fall 2018
