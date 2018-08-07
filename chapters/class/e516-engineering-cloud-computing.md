@@ -91,8 +91,8 @@ The course has the following objectives:
 | 11/19|         |                   | Go for the Cloud I
 | 11/19|         |                   | Go for the Cloud II
 | 12/03| 4       | Edge Computing    | Edge Computing and the Cloud
-| 09/03-11/26* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
-| 09/03-11/26* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
+| 09/03-11/02* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
+| 09/03-11/02* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
 | 09/03-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
 | 09/03-11/26* |         |                   | Kubernetes, Hadoop, SLURM + OpenAPI Service, 
 | 09/03-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
@@ -198,7 +198,7 @@ models used. It is best to complete the course within one semester.
 |   | *Fall Break*	      | | 10/05 - 10/07 |
 |   | *Auto W*	          | | Sun 10/21 |
 | 5 | **Project** | update | 11/02 9am EST |
-| 3 | **Tutorial** | due | 11/022 9am EST |
+| 3 | **Tutorial** | due | 11/02 9am EST |
 | 4 | **Chapter** | due | 11/02 9am EST |
 |   | *Thanksgiving*	  |    | 11/18 - 11/25 |
 | 5 | **Project**         | due	       | 11/26 |
