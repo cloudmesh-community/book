@@ -104,7 +104,7 @@ the entire semester.
 
 (a) Dates may change as the semester evolves
 
-(*) The project is a long term assignmenst and must be ideally woring on it on a weekly basis. It is the major part of the course grade.
+(*) The project is a long term assignmenst (and are ideally worked  on weeklyby residential students). It is the major part of the course grade.  
 
 (*) Tutorials prepare you for documenting a technical aspect related to cloud computing. It is a preparation for a document that explains how to execute your project in a reproducable manner. 
 
