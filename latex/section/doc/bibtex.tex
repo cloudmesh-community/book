@@ -1,0 +1,1191 @@
+% chktex-file 36
+% chktex-file 9
+% chktex-file 8
+
+\FILENAME\
+
+\section{Integrating Bibliographies}
+\label{S:bibliographies}
+\index{Bibliography}
+\index{bibtex}
+\index{biber}
+
+Bibliography management in \LaTeX\ is one of the many features that
+motivate many researchers to make \LaTeX\ the tool of choice to write
+academic papers. There are numerous bibliography styles available that
+allow easy adaptation to differen journal and proceedings style. As
+such, it includes styles for bibliographies formated in ACM and IEEE
+style.
+
+\subsection{biber}
+
+\TODO{Describe use of biber instead of bibtex}
+
+\subsection{bibtex}
+
+This section assumes we use the standard bibtex program to integrate
+citations into a \LaTeX\ paper.
+
+An example to use the IEEE style for a paper includes to set
+the style to IEEEtran before you add the reference:
+
+\begin{verbatim}
+\bibliographystyle{IEEEtran}
+\bibliography{references.bib}
+\end{verbatim}
+
+To properly create PDF papers which using bibtex, we have to make sure
+that all indexes, citations, references and labels are updated. This
+is done with the help of the following commands assuming your file is
+called \verb|file.tex|
+
+\begin{verbatim}
+pdflatex  file
+bibtex file
+pdflatex  file
+pdflatex  file
+\end{verbatim}
+
+
+\begin{IU}
+At IU you are required to use our template, which includes a Makefile
+and either calls the above three commands or used latexmk
+\end{IU}
+
+The reason for the multiple execution of the \LaTeX\ program is to update
+all cross-references correctly. In case you are not interested in
+updating the library every time in the writing progress just postpone it
+till the end. Missing citations are viewed as \verb|[?]|.
+
+Two programs stand out when managing bibliographies: emacs and jabref:
+
+  \URL{http://www.jabref.org/}
+
+Other programs such as Mendeley, Zotero, and even endnote integrate with
+bibtex. However their support is limited, so we recommend that you just
+use jabref as it is free and runs on all platforms.
+
+\subsection{jabref}
+\label{s:jabref}
+
+\TODO{Tyler: include cite for jabref, bibtex, biber at appropriate
+  location in this section. Add them to the bib file.}
+
+Practical experience with many generations of students shows that
+\textit{jabref} is a very simple to use bibliography manager for \LaTeX\ and
+other systems. It can create a multitude of bibliography file formats
+and allows upload in other online bibliography managers.
+
+For information on how to install and use jabref please go to 
+\url{http://www.jabref.org/}. There you will find the appropriate
+download link.
+
+We provide also a convenient video on how to use jabref and show
+several methods on how to add entries easily to your bibliography database.
+
+\video{Bibliography}{1:41}{jabref}{https://youtu.be/QVbifcLgMic}
+
+
+
+\section{Entry types}
+
+In this section we will explain how to find and properly generate
+bibliographic entries. We are using bibtex for this as it is easy to
+use and generates reasonable entries that can be included in
+papers. What we like to achieve in this section is not to just show
+you a final entry, but to document the process on how that entry was
+derived. This will allow you to replicate or learn from the process to
+apply to your own entries. As part of this we copy and paste
+information found via Web searches.
+
+We will address a number of important reference types which includes:
+
+\begin{itemize}
+
+\item
+  wikipedia entries
+\item
+  github (see Section~\ref{s:e:source-code-references})
+\item
+  books
+\item
+  articles in a scientific journal (see Section~\ref{s:e:article-in-a-journal})
+\item
+  articles in a conference (see Section~\ref{s:e:article-in-a-conference-proceedings})
+\item
+  articles in magazines (non scientific)
+\item
+  blogs
+\end{itemize}
+
+\subsection{Source Code References}
+\label{s:e:source-code-references}
+\index{Bibtex!Source code}
+
+Often, we need to cite a source code from a publicly hosted
+repository. Such repositories are frequently used and include, for
+example github, bitbucket, sourceforge, or your Universities code
+repository as long as it is publicly reachable. As changes can occur on
+these repositories, it is important that the date of access is listed in
+the entry or even the release version of the source code.
+
+Let us without bias chose a random source dode entry that has been
+contributed by a student as follows:
+
+\begin{verbatim}
+@Misc{gonzalez_2015,
+  Title =  {Buildstep},
+  Author =     {Gonzalez, Jose and Lindsay, Jeff},
+  HowPublished = {Web Page},
+  Month =  {Jul},
+  Note =   {Accessed: 2017-1-24},
+  Year =   2015,
+  Key =        {www-buildstep},
+  Url =        {https://github.com/progrium/buildstep}
+}
+\end{verbatim}
+
+Is this entry correct? Let us analyse. But first we need to undersrand
+the semantics of the fields.
+
+\subsubsection{What are the Different entry Types and Fields}
+
+You see that the entry contains a number of fields. An extensive
+explanation of these fields can be found at 
+
+Please see \url{https://en.wikipedia.org/wiki/BibTeX}
+
+We provide for this example a comprehensive discussions of the fields
+used. For other examples we suggest you refer to the document to
+identify what needs to be filled out.
+
+\subsubsection{Entry type Misc}\label{s:e:entry-type-misc}
+\index{Bibtex!Field!Misc}
+
+First, it seems appropriate to use a \emph{@misc} entry. We correctly
+identify this is a misc entry as it is online available. More recent
+version of bibtex include also the type \emph{@online} for it. However,
+in order to maintain compatibility to older formats we chose simply Misc
+here and if we really would need to we could replace it easily.
+
+\subsubsection{Label}\label{s:e:label}
+\index{Bibtex!Field!Label}
+
+Typically the bibliography label should contain 3 letters from an
+author name, short year and the short name of the publication to
+provide maximum information regarding the publication. However in this
+case the project is hosted on github, so creating the label based on
+just the github location seems more logical. Thus our label that we
+propose is given by 
+
+\verb|github-progrium-buildstep|
+
+
+Under no circumstances should you use underscores as they can have unintended
+consequences in programs we use to create papers for our classes. Just
+use a minus sign instead. As it is hosted on github we also want the
+githubname and the projectname. As you can see we just derived it from
+the URL.
+
+\begin{IU}
+When managing bibliography entries with large numbers of collaborators
+it is advisable that all bibliography labels be initially be prefixed
+with an id for the collaborator. In our case we use the HID. Thus in
+our case we will have the following label.
+
+\verb|hid-sp18-000-github-progrium-buildstep|
+
+\end{IU}
+
+
+\subsubsection{Author}\label{s:e:author}
+\index{Bibtex!Field!Author}
+
+Normally we can write in the author fiels the names of the authors
+separated by the work and. IT is important tu use the word \verb|and|
+but not use a comma. However, this only works if the lastname does not
+contain a space in it. In order to avoid confusing the system, we
+recommend therefore to write all names in the form
+\verb|Lastname, Firstname Middle Initials|
+
+Thus we find in our example
+
+\verb|  Author =     {Gonzalez, Jose and Lindsay, Jeff},|
+
+\begin{WARNING}
+Please note the word and between authors and not a comma. Commas are
+only used to distinguish between lastname and firstname.
+\end{WARNING}
+
+
+\subsubsection{Key}\label{s:e:key}
+\index{Bibtex!Field!Key}
+
+In this case the key field can be removed as the entry has an author
+field entry. If there was no author field, we use the key to specify
+the alphabetical ordering based on the specified key. Note that a key is
+not the label. In fact in our original entry the key field was wrongly
+used and the student did not understand that the key is used for
+sorting.
+
+\subsubsection{Howpublished}\label{s:e:howpublished}
+\index{Bibtex!Field!Howpublished}
+
+Since the source is a github project repository, the howpublished field
+shall hold the value \verb|{Code Repository}|. If the
+url specified was a normal webpage, the \verb|{Web Page}| entry would be
+valid.
+
+\subsubsection{Month}\label{s:e:month}
+\index{Bibtex!Field!Month}
+
+To allow internationalization of the month we use the first 3 letters
+in the english language for the month. Thus it is 
+\verb|month = jul|. Note that there are no brackets around the month.
+
+\subsubsection{Owner}\label{s:e:owner}
+\index{Bibtex!Field!Owner}
+
+In class we introduced the convention to put the student HID in it. If
+multiple students contributed, add them with space separation.
+
+\subsubsection{Accessed}\label{s:e:accessed}
+\index{Bibtex!Field!Accessed}
+
+As some styles do not support the accessed field, we simply include it in
+the note field. This is absolutely essential as code can change and when
+we read the code we looked at a particular snapshot in time. In addition
+it is often necessary to record the actual version of the code or the branch.
+Typically for github entries, it is best to just use the month and
+year field as some styles check for it.
+
+\subsubsection{Final Entry}
+
+Filling out as many fields as possible with information for this entry
+we get:
+
+\begin{verbatim}
+@Misc{github-progrium-buildstep,
+  Title =  {Buildstep},
+  Author =     {Jose Gonzalez and Jeff Lindsay},
+  HowPublished = {Code Repository},
+  Year =   {2015},
+  Month =  jul,
+  Note =   {Accessed: 2017-1-24, master branch},
+  Url =    {https://github.com/progrium/buildstep},
+  Owner =  {S17-IO-3025},
+}
+\end{verbatim}
+
+We are using the release date in the year and month field as this
+project uses this for organizing releases. However, other project may
+have release versions so you would have in addition to using the data
+also to include the version in the note field such as:
+
+\begin{verbatim}
+Note =     {Version: 1.2.3, Accessed: 2017-1-24},
+\end{verbatim}
+
+
+\subsection{Pedigree}
+
+Often it is advantageous to document the pedigree of the bibtex
+entries. Eg, how did you derive the final entry? To do so you can
+simply add a field such as \verb|bibsource| and include in it all
+links you used to gather the final entry. However, we believe that the
+effort to curate an entry is sufficient to manage your own
+bibliography which you should freely distribute and constitute an own
+contribution. 
+
+\subsection{Article in a Journal}
+\label{s:e:article-in-a-journal}
+\index{Bibtex!Article}
+
+Many online bibtex entries that you will find are wrong or
+incomplete. Often you may find via google a bibtex entry that may need
+some more research. Let us assume your first google query returns a
+publication and you cite it such as this:
+
+\begin{verbatim}
+@Unpublished{unpublished-google-sawzall,
+    Title = {{Interpreting the Data: Parallel Analysis with Sawzall}},
+    Author = {{Rob Pike, Sean Dorward, Robert Griesemer, Sean Quinlan}},
+    Note = {accessed 2017-01-28},
+    Month = {October},
+    Year = {2005},
+    Owner = {for the purpose of this discussion removed},
+    Timestamp = {2017.01.31}
+}
+\end{verbatim}
+
+Could we improve this entry to achieve your best? We observe:
+
+\begin{enumerate}
+\item
+  The author field has a wrong entry as the \verb|,| is to be replaced by an
+  \verb|and|.
+\item
+  The author field has authors and thus must not have a \{\{ \}\}
+\item
+  The url is missing, as the simple google search actually finds a PDF
+  document.
+\end{enumerate}
+
+Let us investigate a bit more while searching for the title. We find
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi}}
+\item
+  \url{https://www.google.com/url?sa=t\&rct=j\&q}=\&esrc=s\&source=web\&cd=1\&ved=0ahUKEwj\_ytSA-PDRAhUH8IMKHaomC-oQFggaMAA\&url=https\%3A\%2F\%2Fresearch.google.com\%2Farchive\%2Fsawzall-sciprog.pdf\&usg=AFQjCNHSSfKBwbxVAVPQ0td4rTjitKucpA\&sig2=vbiVzi36B3gGFjIzlUKBDA\&bvm=bv.146073913,d.amc
+\item
+  \url{https://research.google.com/pubs/pub61.html}
+\item
+  \url{http://dl.acm.org/citation.cfm?id=1239658}
+\end{enumerate}
+
+Let us look at (A)
+
+As you can see from the url this is actually some redirection to a google
+web page which probably is replaced by B as its from google research. So
+let us look at (B)
+
+Now when you look at the link we find the url
+\url{https://research.google.com/archive/sawzall-sciprog.pdf} which
+redirects you to the PDF paper.
+
+When we go to (B) we find surprisingly a bibtex entry as follows:
+
+\begin{verbatim}
+@article{61,
+  title = {Interpreting the Data: Parallel Analysis with Sawzall},
+  author = {Rob Pike and Sean Dorward and Robert Griesemer and Sean Quinlan},
+  year = 2005,
+  URL = {https://research.google.com/archive/sawzall.html},
+  journal = {Scientific Programming Journal},
+  pages = {277--298},
+  volume = {13}
+}
+\end{verbatim}
+
+Now we could say let us be satisfied, but (C) seems to be even more
+interesting as its from a major publisher. So lats just make sure we
+look at (C)
+
+If you go to (C), you find under the colored box entitled Tools and
+Resources a link called \textbf{bibtex}. Thus it seems a good idea to
+click on it. This will give you:
+
+\begin{verbatim}
+@article{Pike:2005:IDP:1239655.1239658,
+    author = {Pike, Rob and Dorward, Sean and Griesemer, Robert and Quinlan, Sean},
+    title = {Interpreting the Data: Parallel Analysis with Sawzall},
+    journal = {Sci. Program.},
+    issue_date = {October 2005},
+    volume = {13},
+    number = {4},
+    month = oct,
+    year = {2005},
+    issn = {1058-9244},
+    pages = {277--298},
+    numpages = {22},
+    url = {http://dx.doi.org/10.1155/2005/962135},
+    doi = {10.1155/2005/962135},
+    acmid = {1239658},
+    publisher = {IOS Press},
+    address = {Amsterdam, The Netherlands, The Netherlands},
+}
+\end{verbatim}
+
+Now we seem to be at a position to combine our search result as neither
+entry is sufficient. As the doi number properly specifies a paper (look
+up what a doi is) we can replace the url with one that we find online,
+such as the one we found in (A) Next we see that all field sin B are
+already covered in C, so we take (C) and add the url. Now as the label is
+great and uniform for ACM, but for us a bit less convenient as its
+difficult to remember, we just change it while for example using
+authors, title, and year information. Let us also make sure to do mostly
+lowercase in the label just as a convention. Thus our entry looks like:
+
+\begin{verbatim}
+@article{pike05swazall,
+    author = {Pike, Rob and Dorward, Sean and Griesemer, Robert and Quinlan, Sean},
+    title = {Interpreting the Data: Parallel Analysis with Sawzall},
+    journal = {Sci. Program.},
+    issue_date = {October 2005},
+    volume = {13},
+    number = {4},
+    month = oct,
+    year = {2005},
+    issn = {1058-9244},
+    pages = {277--298},
+    numpages = {22},
+    url = {https://research.google.com/archive/sawzall-sciprog.pdf},
+    doi = {10.1155/2005/962135},
+    acmid = {1239658},
+    publisher = {IOS Press},
+    address = {Amsterdam, The Netherlands, The Netherlands},
+}
+\end{verbatim}
+
+As you can see properly specifying a reference takes multiple google
+queries and merging of the results you find from various returns. As
+you still have time to correct things I advise that you check your
+references and correct them. If the original reference would have been
+graded it would have been graded with a ``fail'' instead of a ``pass''.
+
+Naturally you need to judge if you can integrate the URL or not, often
+papers exist in a prepublication and you must make sure to cite the
+version you used. IN fact if you have the prepublicAtion, you should
+obtain the final manuscript as it could contain significant
+corrections to the previous draft. In other cases the prepublication
+may just be fine and you could for your own references keep the
+url. FOr the final publication you probably want to make sure that the
+doi is used. FOr the collection of your references, adding the url
+could be useful.
+
+\subsection{Article in a Conference Proceedings}
+\label{s:e:article-in-a-conference-proceedings}
+\index{Bibtex!InProceedings}
+
+Now let us look at another obvious example that needs improvement:
+
+\begin{verbatim}
+@InProceedings{wettinger-any2api,
+  Title      = {Any2API - Automated APIfication},
+  Author     = {Wettinger, Johannes and
+                Uwe Breitenb{\"u}cher
+                and Frank Leymann},
+  Booktitle  = {Proceedings of the 5th International
+                Conference on Cloud Computing and
+                Services Science},
+  Year       = {2015},
+  Pages      = {475-486},
+  Publisher  = {SciTePress},
+  ISSN       = {2326-7550},
+  Owner      = {S17-IO-3005},
+  Url        = {https://pdfs.semanticscholar.org/1cd4/4b87be8cf68ea5c4c642d38678a7b40a86de.pdf}
+}
+\end{verbatim}
+
+As you can see this entry seems to define all required fields, so we
+could be tempted to stop here. But its good to double check. Let us do
+some queries against ACM and google scholar. Let us just type in the
+title, and if this is in a proceedings they should return hopefully a
+predefined bibtex record for us.
+
+Let us query:
+
+\begin{verbatim}
+google: googlescholar Any2API Automated APIfication
+\end{verbatim}
+
+We get:
+
+\begin{itemize}
+
+\item
+  \url{https://scholar.google.de/citations?view_op=view_citation\&hl=en\&user=j6lIXt0AAAAJ\&citation_for_view=j6lIXt0AAAAJ:8k81kl-MbHgC}
+\end{itemize}
+
+On that page we see
+\href{https://scholar.google.com/scholar_lookup?title=Automated+drug+dispensing+system+reduces+medication+errors+in+an+intensive+care+setting\&author=Chapuis\&publication_year=2010\#}{Cite}
+
+So we find a PDF at
+\url{https://pdfs.semanticscholar.org/1cd4/4b87be8cf68ea5c4c642d38678a7b40a86de.pdf}
+
+Let us click on this and the document includes a bibtex entry such as:
+
+\begin{verbatim}
+@inproceedings{Wettinger2015, 
+  author= {Johannes Wettinger and Uwe Breitenb{\"u}cher and Frank
+       Leymann},
+  title = {Any2API - Automated APIfication},
+  booktitle = {Proceedings of the 5th International Conference on Cloud
+       Computing and Service Science (CLOSER)},
+  year = {2015},
+  pages = {475--486},
+  publisher = {SciTePress}
+} 
+\end{verbatim}
+
+Now let us add the URL and owner:
+
+\begin{verbatim}
+@inproceedings{Wettinger2015, 
+  author= {Johannes Wettinger and Uwe Breitenb{\"u}cher and Frank
+       Leymann},
+  title = {Any2API - Automated APIfication},
+  booktitle = {Proceedings of the 5th International Conference on Cloud
+       Computing and Service Science (CLOSER)},
+  year = {2015},
+  pages = {475--486},
+  publisher = {SciTePress},
+  url ={https://pdfs.semanticscholar.org/1cd4/4b87be8cf68ea5c4c642d38678a7b40a86de.pdf},
+  owner = {S17-IO-3005},
+} 
+\end{verbatim}
+
+Should we be satisfied? No, even our original information we gathered
+provided more information. So let us continue. Let us issue additional
+google searches with ACM or IEEE and the title. When doing the IEEE in the
+example we find an entry called
+
+\href{http://dblp.uni-trier.de\%2Fpers\%2Fl\%2FLeymann\%3AFrank\&usg=AFQjCNHCu-66qxWH0zRlPLr4DA8jIo5V-g\&sig2=1vYdnGOEiMcLBEMpbeBA7g}{dlp:
+Frank Leyman}
+
+Let us look at it and we find two entries:
+
+\begin{verbatim}
+@inproceedings{DBLP:conf/closer/WettingerBL15,
+  author    = {Johannes Wettinger and
+       Uwe Breitenb{\"{u}}cher and
+       Frank Leymann},
+  title     = {{ANY2API} - Automated APIfication - Generating APIs for Executables
+       to Ease their Integration and Orchestration for Cloud Application
+       Deployment Automation},
+  booktitle = {{CLOSER} 2015 - Proceedings of the 5th International Conference on
+       Cloud Computing and Services Science, Lisbon, Portugal, 20-22 May,
+       2015.},
+  pages     = {475--486},
+  year      = {2015},
+  crossref  = {DBLP:conf/closer/2015},
+  url       = {http://dx.doi.org/10.5220/0005472704750486},
+  doi       = {10.5220/0005472704750486},
+  timestamp = {Tue, 04 Aug 2015 09:28:21 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/closer/WettingerBL15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@proceedings{DBLP:conf/closer/2015,
+  editor    = {Markus Helfert and
+       Donald Ferguson and
+       V{\'{\i}}ctor M{\'{e}}ndez Mu{\-{n}}oz},
+  title     = {{CLOSER 2015 - Proceedings of the 5th International Conference on
+       Cloud Computing and Services Science, Lisbon, Portugal, 20-22 May,
+       2015}},
+  publisher = {SciTePress},
+  year      = {2015},
+  isbn      = {978-989-758-104-5},
+  timestamp = {Tue, 04 Aug 2015 09:17:34 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/closer/2015},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+\end{verbatim}
+
+So let us look at the entry and see how to get a better one for our
+purpose and combine them. When using jabref, you see optional and
+required fields, we want to add as many as possible, regardless if
+optional or required, so Let us do that. We write it here in ASCII as it
+is easier to document and can also be done in emacs:
+
+\begin{verbatim}
+@InProceedings{,
+  author =   {},
+  title =    {},
+  OPTcrossref =  {},
+  OPTkey =   {},
+  OPTbooktitle = {},
+  OPTyear =      {},
+  OPTeditor =    {},
+  OPTvolume =    {},
+  OPTnumber =    {},
+  OPTseries =    {},
+  OPTpages =     {},
+  OPTmonth =     {},
+  OPTaddress =   {},
+  OPTorganization = {},
+  OPTpublisher = {},
+  OPTnote =      {},
+  OPTannote =    {},
+  url = {}
+}
+\end{verbatim}
+
+Now we copy and fill out the \textbf{form} from our various searches:
+
+\begin{verbatim}
+@InProceedings{Wettinger2015any2api,    
+  author    = {Johannes Wettinger and
+     Uwe Breitenb{\"{u}}cher and
+     Frank Leymann},
+  title     = {{ANY2API - Automated APIfication - Generating APIs for Executables
+     to Ease their Integration and Orchestration for Cloud Application
+     Deployment Automation}},
+  booktitle = {{CLOSER 2015 - Proceedings of the 5th International Conference on
+       Cloud Computing and Services Science}},
+  year =     {2015},
+  editor    = {Markus Helfert and
+       Donald Ferguson and
+       V{\'{\i}}ctor M{\'{e}}ndez Mu{\-{n}}oz},
+  publisher = {SciTePress},
+  isbn      = {978-989-758-104-5},
+  pages = {475--486},
+  month = {20-22 May},
+  address =      {Lisbon, Portugal},
+  doi       = {10.5220/0005472704750486},
+  url ={https://pdfs.semanticscholar.org/1cd4/4b87be8cf68ea5c4c642d38678a7b40a86de.pdf},
+  owner = {S17-IO-3005},
+}
+\end{verbatim}
+
+
+For the rest of the section we provide just some simple examples.
+
+\subsection{InProceedings}\label{s:e:inproceedings}
+\index{Bibtex!InProceedings}
+
+Please fill out
+
+\begin{verbatim}
+@InProceedings{,
+  author =       {},
+  title =        {},
+  OPTcrossref =  {},
+  OPTkey =       {},
+  OPTbooktitle = {},
+  OPTyear =      {},
+  OPTeditor =    {},
+  OPTvolume =    {},
+  OPTnumber =    {},
+  OPTseries =    {},
+  OPTpages =     {},
+  OPTmonth =     {},
+  OPTaddress =   {},
+  OPTorganization = {},
+  OPTpublisher = {},
+  OPTnote =      {},
+  OPTannote =    {},
+  url = {}
+}
+\end{verbatim}
+
+\begin{verbatim}
+@inproceedings{vonLaszewski15tas,
+  author =     {DeLeon, Robert L. and Furlani, Thomas R. and Gallo,
+                  Steven M. and White, Joseph P. and Jones, Matthew
+                  D. and Patra, Abani and Innus, Martins and Yearke,
+                  Thomas and Palmer, Jeffrey T. and Sperhac, Jeanette
+                  M. and Rathsam, Ryan and Simakov, Nikolay and von
+                  Laszewski, Gregor and Wang, Fugang},
+  title =  {{TAS View of XSEDE Users and Usage}},
+  booktitle =  {Proceedings of the 2015 XSEDE Conference: Scientific
+                  Advancements Enabled by Enhanced
+                  Cyberinfrastructure},
+  series =     {XSEDE '15},
+  year =   2015,
+  isbn =   {978-1-4503-3720-5},
+  location =   {St. Louis, Missouri},
+  pages =  {21:1--21:8},
+  articleno =  21,
+  numpages =   8,
+  url =        {http://doi.acm.org/10.1145/2792745.2792766},
+  doi =        {10.1145/2792745.2792766},
+  acmid =  2792766,
+  publisher =  {ACM},
+  address =    {New York, NY, USA},
+  keywords =   {HPC, SUPReMM, TAS, XDMoD, XSEDE usage, XSEDE users},
+}
+\end{verbatim}
+
+\subsection{TechReport}\label{s:e:techreport}
+\index{Bibtex!TechReport}
+
+Please fill out
+
+\begin{verbatim}
+@TechReport{,
+  author =       {},
+  title =        {},
+  institution =  {},
+  year =         {},
+  OPTkey =       {},
+  OPTtype =      {},
+  OPTnumber =    {},
+  OPTaddress =   {},
+  OPTmonth =     {},
+  OPTnote =      {},
+  OPTannote =    {},
+  url = {}    
+}
+\end{verbatim}
+
+\begin{verbatim}
+@TechReport{las05exp,
+  title =  {{The Java CoG Kit Experiment Manager}},
+  Author =     {von Laszewski, Gregor},
+  Institution =    {Argonne National Laboratory},
+  Year =   2005,
+  Month =  jun,
+  Number =     {P1259},
+  url = {https://laszewski.github.io/papers/vonLaszewski-exp.pdf}
+}
+\end{verbatim}
+
+\subsection{Article}
+\index{Bibtex!Article}
+
+Please fill out
+
+\begin{verbatim}
+@Article{,
+  author =       {},
+  title =        {},
+  journal =      {},
+  year =         {},
+  OPTkey =       {},
+  OPTvolume =    {},
+  OPTnumber =    {},
+  OPTpages =     {},
+  OPTmonth =     {},
+  OPTnote =      {},
+  OPTannote =    {},,
+  url = {}
+}
+\end{verbatim}
+
+\begin{verbatim}
+@Article{las05gridhistory,
+  title =  {{The Grid-Idea and Its Evolution}},
+  author =     {von Laszewski, Gregor},
+  journal =    {Journal of Information Technology},
+  year =   2005,
+  month =  jun,
+  number =     6,
+  pages =  {319-329},
+  volume =     47,
+  doi =        {10.1524/itit.2005.47.6.319},
+  url = {https://laszewski.github.io/papers/vonLaszewski-grid-idea.pdf}
+}
+\end{verbatim}
+
+\subsection{Proceedings}\label{s:e:proceedings}
+\index{Bibtex!Proceedings}
+
+Please fill out
+
+\begin{verbatim}
+@Proceedings{,
+  title =        {},
+  year =         {},
+  OPTkey =       {},
+  OPTbooktitle = {},
+  OPTeditor =    {},
+  OPTvolume =    {},
+  OPTnumber =    {},
+  OPTseries =    {},
+  OPTaddress =   {},
+  OPTmonth =     {},
+  OPTorganization = {},
+  OPTpublisher = {},
+  OPTnote =      {},
+  OPTannote =    {},
+  url = {}
+}
+\end{verbatim}
+
+\begin{verbatim}
+@Proceedings{las12fedcloud-proc,
+  title =  {{FederatedClouds '12: Proceedings of the 2012
+                  Workshop on Cloud Services, Federation, and the 8th
+                  Open Cirrus Summit}},
+  year =   2012,
+  address =    {New York, NY, USA},
+  editor =     {vonLaszewski, Gregor and Robert Grossman and Michael
+                  Kozuchand Rick McGeerand Dejan Milojicic},
+  publisher =  {ACM},
+  iSBN =   {978-1-4503-1754-2},
+  location =   {San Jose, California, USA},
+  url =
+                  {http://dl.acm.org/citation.cfm?id=2378975&picked=prox&cfid=389635474&cftoken=32712991}
+}
+\end{verbatim}
+
+\subsection{Wikipedia Entry}\label{s:e:wikipedia-entry}
+\index{Bibtex!Wikipedia Entry}
+
+Please fill out
+
+\begin{verbatim}
+@Misc{,
+  OPTkey =       {},
+  OPTauthor =    {},
+  OPTtitle =     {},
+  OPThowpublished = {},
+  OPTmonth =     {},
+  OPTyear =      {},
+  OPTnote =      {},
+  OPTannote =    {},
+  url = {}
+}
+\end{verbatim}
+
+\begin{verbatim}
+@Misc{www-ode-wikipedia,
+  Title =  {Apache ODE},
+  HowPublished = {Web Page},
+  Note =   {Accessed: 2017-2-11},
+  Key =        {Apache ODE},
+  Url =        {https://en.wikipedia.org/wiki/Apache_ODE}
+}
+\end{verbatim}
+
+\subsection{Blogs}\label{blogs}
+\index{Bibtex!Blog}
+
+Please fill out
+
+\begin{verbatim}
+@Misc{,
+  OPTkey =       {},
+  OPTauthor =    {},
+  OPTtitle =     {},
+  OPThowpublished = {},
+  OPTmonth =     {},
+  OPTyear =      {},
+  OPTnote =      {},
+  OPTannote =    {},
+  OPTurl = {}
+}
+\end{verbatim}
+
+\begin{verbatim}
+@Misc{www-clarridge-discoproject-blog,
+  title =  {Disco - A Powerful Erlang and Python Map/Reduce
+                  Framework},
+  uthor =  {Clarridge, Tait},
+  howpublished = {Blog},
+  month =  may,
+  note =   {Accessed: 25-feb-2017},
+  year =   2014,
+  url =  {http://www.taitclarridge.com/techlog/2014/05/disco-a-powerful-erlang-and-python-mapreduce-framework.html}
+}
+\end{verbatim}
+
+\subsection{Web Page}\label{s:e:web-page}
+\index{Bibtex!Web Page}
+
+Please fill out
+
+\begin{verbatim}
+@Misc{, 
+  OPTkey =       {}, 
+  OPTauthor =    {}, 
+  OPTtitle =     {}, 
+  OPThowpublished = {}, 
+  OPTmonth =     {}, 
+  OPTyear =      {}, 
+  OPTnote =      {},
+  OPTannote =    {},
+  url = {}
+}
+\end{verbatim}
+
+\begin{verbatim}
+@Misc{www-cloudmesh-classes,
+  OPTkey =       {},
+  author =    {von Laszewski, Gregor},
+  title =     {Cloudmesh Classes},
+  howpublished = {Web Page},
+  OPTmonth =     {},
+  OPTyear =      {},
+  OPTnote =      {},
+  OPTannote =    {},
+  url = {https://cloudmesh.github.io/classes/}
+}
+\end{verbatim}
+
+\begin{verbatim}
+@Misc{www-awslambda,
+  title =  {AWS Lambda},
+  author =     {{Amazon}},
+  key =        {AWS Lambda},
+  howpublished = {Web Page},
+  url =        {https://aws.amazon.com/lambda/faqs/}
+}
+\end{verbatim}
+
+\subsection{Book}\label{s:e:book}
+\index{Bibtex!book}
+
+Given the following entry. What is the proper entry for this book.
+Provide rationale:
+
+\begin{verbatim}
+@Book{netty-book,
+    Title = {Netty in Action},
+    Author = {Maurer, Norman and Wolfthal, Marvin},
+    Publisher = {Manning Publications},
+    Year = {2016},
+}
+\end{verbatim}
+
+To obtain the record of a book you can look at many information sources.
+The can include:
+
+\begin{itemize}
+
+\item
+  \url{https://www.manning.com/books/netty-in-action}
+\item
+  \url{https://www.amazon.com/Netty-Action-Norman-Maurer/dp/1617291471}
+\item
+  \url{http://www.barnesandnoble.com/w/netty-in-action-norman-maurer/1117342155?ean=9781617291470\#productInfoTabs}
+\item
+  \url{http://www.powells.com/book/netty-in-action-9781617291470/1-0}
+\end{itemize}
+
+Furthermore, we need to consider the entry of a book, we simply look it
+up in emacs where we find the following but add the owner and the url
+field:
+
+\begin{verbatim}
+@Book{,
+  ALTauthor =      {},
+  ALTeditor =      {},
+  title =      {},
+  publisher =      {},
+  year =   {},
+  OPTkey =     {},
+  OPTvolume =      {},
+  OPTnumber =      {},
+  OPTseries =      {},
+  OPTaddress =     {},
+  OPTedition =     {},
+  OPTmonth =   {},
+  OPTnote =    {},
+  OPTannote =      {},
+  ownwer =       {},
+  url = {}
+}
+\end{verbatim}
+
+In summary we find the following fields:
+
+\begin{description}
+\item[Required fields:]
+author/editor, title, publisher, year
+\item[Optional fields:]
+volume/number, series, address, edition, month, note, key
+\end{description}
+
+We apply the following to fill out the fields which is the standard
+definition as defined by \LaTeX.
+
+\begin{description}
+\item[address:]
+The address is the Publisher's address. Usually just the city, but can
+be the full address for lesser-known publishers.
+\item[author:]
+The name(s) of the author(s) (in the case of more than one author,
+separated by and) Names can be written in one of two forms: Donald E.
+Knuth or Knuth, Donald E. or van Halen, Eddie. Please note that Eddie
+van Halen would result in a wrong name. For our purpose we keep nobelity
+titles part of the last name.
+\item[edition:]
+The edition of a book, long form (such as ``First'' or ``Second'')
+\item[editor:]
+The name(s) of the editor(s)
+\item[key:]
+A hidden field used for specifying or overriding the alphabetical order
+of entries (when the ``author'' and ``editor'' fields are missing). Note
+that this is very different from the key that is used to cite or
+cross-reference the entry.
+\item[label:]
+The label field should contain three letters from the auth field, a
+short year reference and a short name of the publication to provide the
+maximum information regarding the publication. Underscores should be
+replaced with dashes or removed completely.
+\item[month:]
+The month of publication or, if unpublished, the month of creation. Use
+three-letter abbreviations for this field in order to account for
+languages that do not capitalize month names. Additional information for
+the day can be included as follows: \verb|aug#~``10,''|
+\item[publisher:]
+The publisher's name
+\item[series:]
+The series of books the book was published in (e.g. ``The Hardy Boys''
+or ``Lecture Notes in Computer Science'')
+\item[title:]
+The title of the work. As the capitalization depends on the bibliography
+style and the language used we typically use camel case. To force
+capitalization of a word or its first letter you can use the curly
+braces, `\{ \}'. To keep the title in camel case simple use title =
+\{\{My Title\}\}
+\item[type:]
+The field overriding the default type of publication (e.g. ``Research
+Note'' for techreport, ``\{PhD\} dissertation'' for phdthesis,
+``Section'' for inbook/incollection) volume The volume of a journal or
+multi-volume book year The year of publication (or, if unpublished, the
+year of creation)
+\end{description}
+
+While applying the above rules and tips we summarize what we have done
+for this entry:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Search for the book by title/Author on ACM (\url{http://dl.acm.org/})
+  or Amazon or barnesandnoble or upcitemdb (\url{http://upcitemdb.com}).
+  These services return bibtex entrie that you can improve.
+\item
+  Hence one option is t get the ISBN of the book. For ``Mesos in
+  action'' from upcitemdb we got the ISBN as ``9781617 292927''. This is
+  the 13 digit ISBN. The first 3 digits (GS1 code) can be skipped. Using
+  the rest of 10 digits ``1617 292927'', Add in JabRef in Optional
+  Fields-\textgreater{}ISBN.
+
+  However it is fine to youst specify the full number.
+
+  We can also return a bibtex entry generated while using Click on the
+  ``Get BibTex from ISBN''.
+
+  Now we get more information on this book entry from ISBN. We can opt
+  either the original or newly searched entry for the below bibtex
+  fields or merge as appropriate. URL may not match from where we
+  initially read the book, however there is option to put your original
+  url or newly searched url. EAN, Edition, Pages,url,published date etc.
+  Do a search on amazon for ``ASIN''. Can skip if not available.
+  Sometime we get ASIN for a different publication, maybe a paperback
+  ASIN=\{B01MT311CU\} We can add it as it becomes easier to search
+\end{enumerate}
+
+\begin{description}
+\item[doi:]
+If you can find a doi numer you should also add it. IN this case we
+could not locate one.
+\end{description}
+
+As a result we obtain the entry:
+
+\begin{verbatim}
+@Book{netty-book,
+  title = {Netty in Action},
+  publisher = {Manning Publications Co.},
+  year = {2015},
+  author = {Maurer, Norman and Wolfthal, Marvin Allen},
+  address = {Greenwich, CT, USA},
+  edition = {1st},
+  isbn = {1617291471},
+  asin = {1617291471},
+  date = {2015-12-23},
+  ean = {9781617291470},
+  owner = {S17-IO-3022 S17-IO-3010 S17-IO-3012},
+  pages = {296},
+  url = {http://www.ebook.de/de/product/21687528/norman_maurer_netty_in_action.html},
+}
+\end{verbatim}
+
+\section{Integrating Bibtex entries into Other Systems}
+
+We have not tested any of this
+
+\subsection{jabref and MSWord}
+\index{Bibtex!MSWord}
+
+According to others it is possible to integrate jabref references
+directly into MSWord. 
+For more information please see:
+\URL{https://www.paulkiddie.com/2009/07/jabref-exports-to-word-2007-xml/}
+
+
+\subsection{Bibtex import to MSWord}\label{bibtex-import-to-msword}
+
+\subsubsection{XML import}
+\index{Bibtex!MSWord}
+
+Please give feedback if you used this.
+
+see:
+\URL{http://blog.pengyifan.com/using-bibtex-in-ms-word-2015-mac-os/}
+
+\begin{enumerate}
+
+\item  In JabRef, export the bibliography in MS Word 2008 xml format
+
+\item  Name the file Sources.xml (case sensitive)
+\item   In OSX with MS Word 2015: Go to
+  \verb|/Library/Containers/com.microsoft.word/Data/Library/Application Support/Microsoft/Office.|
+\item  Rename the original Sources.xml file to Sources.xml.bak
+\item  Copy the generated Sources.xml in this folder
+\item  Restart MS Word.
+
+\end{enumerate}
+
+We do not know what needs to be done in case you need to make changes to
+the references. Please report back your experiences. To avoid issues we
+recommend that you use \LaTeX~and not MSWord.
+
+\subsubsection{BibTex4Word}
+\index{bibtex4word}
+
+We have not tried this:
+
+\URL{http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html}
+
+
+You are highly recommended to use Jabref for bibliography management in
+this class. Here is an introductory video on Jabref:
+\url{https://youtu.be/roi7vezNmfo?t=8m6s}
+
+\section{Other Reference Managers}
+
+Please note that you should first decide which reference manager you
+like to use. In case you for example install zotero and mendeley, that
+may not work with word or other programs.
+
+\subsection{Endnote}
+\index{Endnote}
+
+Endnote os a reference manager that works with Windows. Many people use
+Endnote. However, in the past, Endnote has caused complications when
+dealing with collaborative management of references. Its price is
+considerable. We have lost many hours of work because of instability of
+Endnote in some cases. As a student, you may be able to use Endnote for
+free at Indiana University.
+
+\URL{http://endnote.com/}
+
+
+\subsection{Mendeley}
+\index{Mendeley}
+
+Mendeley is a free reference manager compatible with Windows Word 2013,
+Mac Word 2011, LibreOffice, BibTeX. Videos on how to use it are
+available at:
+
+\URL{https://community.mendeley.com/guides/videos}
+
+
+Installation instructions are available at
+
+\URL{https://www.mendeley.com/features/reference-manager/}
+
+
+When dealing with large databases, we found the integration of Mendeley
+into word slow.
+
+\subsection{Zotero}
+\index{Zotero}
+
+Zotero is a free tool to help you collect, organize, cite, and share
+your research sources. Documentation is available at
+
+\URL{https://www.zotero.org/support/}
+
+The download link is available from
+
+\URL{https://www.zotero.org/}
+
+
+We have limited experience with Zotero
+
+\subsection{Paperpile}
+\index{Paperpile}
+
+Paper pile is a Web based reference management tool that integrates
+with Google docs. It can export the database as bibtex. Paperpile is a
+commercial tool costing about \$36 a year for academic users. For
+others it is about 3 times as expensive.
+
+\URL{https://paperpile.com}

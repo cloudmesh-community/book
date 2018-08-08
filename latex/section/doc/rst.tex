@@ -1,0 +1,230 @@
+\FILENAME\
+
+\section{reStructuredText}\label{restructuredtext}
+
+reStructuredText (RST) purpose is to provide an easy-to-read,
+what-you-see-is-what-you-get plaintext markup syntax and parser system.
+With its help you can develop documentation not only for stand aone
+documentation, simple web pages, an in-line program documentation (such
+as Python). RST is extensible and new features can be added. It is used
+in sphinx as one of its supported formats.
+
+\subsection{Links}\label{links}
+
+\begin{itemize}
+
+\item
+  RST Sphinx documentation:
+  \url{http://www.sphinx-doc.org/en/stable/rest.html}
+\item
+  RST Syntax: \url{http://docutils.sourceforge.net/rst.html}
+\item
+  Important extensions: \url{http://sphinx-doc.org/ext/todo.html}
+\end{itemize}
+
+Cheatcheat:
+\smallskip
+
+  \URL{http://github.com/ralsina/rst-cheatsheet/raw/master/rst-cheatsheet.pdf}
+  \URL{http://docutils.sourceforge.net/docs/ref/rst/directives.html}
+
+\subsection{Source}\label{source}
+
+The source for this page is located at
+
+  \URL{https://raw.githubusercontent.com/cloudmesh/classes/master/docs/source/lesson/doc/rst.rst}
+
+This way you can look at the source on how we create this page.
+
+\subsection{Sections}\label{sections}
+
+\# with overline, for parts \verb|*| with overline, for chapters \verb|=|, for
+sections \verb|-|, for subsections \verb|^|, for subsubsections \verb|"|, for paragraphs
+
+RST allows to specify a number of sections. You can do this with the
+various underlines:
+
+\begin{verbatim}
+*********************
+Chapter
+*********************
+Section
+=====================
+Subsection
+---------------------
+Subsubsection
+^^^^^^^^^^^^^^^^^^^^^
+Paragraph
+~~~~~~~~~~~~~~~~~~~~~
+\end{verbatim}
+
+\subsection{Listtable}\label{listtable}
+
+\begin{verbatim}
+.. csv-table:: Eye colors
+   :header: "Name", "Firstname", "eyes"
+   :widths: 20, 20, 10
+
+   "von Laszewski", "Gregor", "gray"
+\end{verbatim}
+
+\subsection{Exceltable}\label{exceltable}
+
+we have integrated Excel table from
+\url{http://pythonhosted.org//sphinxcontrib-exceltable/} intou our
+sphinx allowing the definition of more elaborate tables specified in
+excel. Howere the most convenient way may be to use list-tables. The
+documentation to list tables can be found at
+\url{http://docutils.sourceforge.net/docs/ref/rst/directives.html\#list-table}
+
+\subsection{Boxes}\label{boxes}
+
+\subsubsection{Seealso}\label{seealso}
+
+\begin{verbatim}
+.. seealso:: This is a simple **seealso** note. 
+\end{verbatim}
+
+\subsubsection{Note}\label{note}
+
+This is a \textbf{note} box.
+
+\begin{verbatim}
+.. note::  This is a **note** box.
+\end{verbatim}
+
+\subsubsection{Warning}\label{warning}
+
+note the space between the directive and the text
+
+\begin{verbatim}
+.. warning:: note the space between the directive and the text
+\end{verbatim}
+
+\subsubsection{Others}\label{others}
+
+This is an \textbf{attention} box.
+
+\begin{verbatim}
+.. attention:: This is an **attention** box.
+\end{verbatim}
+
+This is a \textbf{caution} box.
+
+\begin{verbatim}
+.. caution:: This is a **caution** box.
+\end{verbatim}
+
+This is a \textbf{danger} box.
+
+\begin{verbatim}
+.. danger:: This is a **danger** box.
+\end{verbatim}
+
+This is a \textbf{error} box.
+
+\begin{verbatim}
+.. error:: This is a **error** box.
+\end{verbatim}
+
+This is a \textbf{hint} box.
+
+\begin{verbatim}
+.. hint:: This is a **hint** box.
+\end{verbatim}
+
+This is an \textbf{important} box.
+
+\begin{verbatim}
+.. important:: This is an **important** box.
+\end{verbatim}
+
+This is a \textbf{tip} box.
+
+\begin{verbatim}
+.. tip:: This is a **tip** box.
+\end{verbatim}
+
+\subsection{Sidebar directive}\label{sidebar-directive}
+
+It is possible to create sidebar using the following code:
+
+\begin{verbatim}
+.. sidebar:: Sidebar Title
+    :subtitle: Optional Sidebar Subtitle
+
+    Subsequent indented lines comprise
+    the body of the sidebar, and are
+    interpreted as body elements.
+\end{verbatim}
+
+\textbf{Sidebar Title: Optional Sidebar Subtitle}
+
+Subsequent indented lines comprise the body of the sidebar, and are
+interpreted as body elements.
+
+\subsection{Sphinx Prompt}\label{sphinx-prompt}
+
+\begin{verbatim}
+.. prompt:: bash, cloudmesh$
+
+   wget -O cm-setup.sh http://bit.ly/cloudmesh-client-xenial
+   sh cm-setup.sh
+\end{verbatim}
+
+\subsection{Programm examples}\label{programm-examples}
+
+You can include code examples and bash commands with two colons.
+
+This is an example for python:
+
+\begin{verbatim}
+print ("Hallo World")
+\end{verbatim}
+
+This is an example for a shell command:
+
+\begin{verbatim}
+$ ls -lisa
+\end{verbatim}
+
+\subsection{Hyperlinks}\label{hyperlinks}
+
+Direct links to html pages can ve done with:
+
+\begin{verbatim}
+`This is a link to an html page <hadoop.html>`_
+\end{verbatim}
+
+Note that this page could be generated from an rst page
+
+Links to the FG portal need to be formulated with the portal tag:
+
+\begin{verbatim}
+:portal:`List to FG projects </projects/all>`
+\end{verbatim}
+
+In case a subsection has a link declared you can use \verb|:ref:|. This is the
+prefered way as it can be used to point even to subsections:
+
+\begin{verbatim}
+:ref:`Connecting private network VMs  clusters <_s_vpn>` 
+\end{verbatim}
+
+A html link can be created anywhere in the document but must be unique.
+for example if you place:
+
+\begin{verbatim}
+.. _s_vpn:
+\end{verbatim}
+
+in the text it will create a target to which the above link points when
+you click on it
+
+\subsection{Todo}\label{todo}
+
+\begin{verbatim}
+.. todo:: an example
+\end{verbatim}
+
+\includegraphics[width=\columnwidth]{images/todo.png}

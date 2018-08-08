@@ -1,0 +1,115 @@
+\chapter{Help}
+
+\section{Compiling Cloudmesh Handbook}\label{s:help-compile-handbook}
+
+You must fork the github repository from here :
+\URL{https://github.com/cloudmesh/book}
+
+Then you must only work in the master branch.  And you must install
+latex in your machine to compile it. We assume you have installed
+latex before trying this tutorial.
+
+Our handbook is conveniently designed so that new sections can be
+added easily. This includes the support of draft chapters that use the
+same style as the handbook.
+
+To facilitate the draft documentation phase, we created a \LaTeX~file
+called single.tex that has also a target in the \verb|Makefile|.
+
+We will walk you through the process of adding a new section to the handbook
+
+Let us assume the section is placed in the directory
+
+\begin{lstlisting}
+  section/machine-learning/kmeans.tex 
+\end{lstlisting}
+
+First, we must add this folder path to the Makefile. To not effect the
+existing makefile and to test it we copy the original makefile to a
+convenient one that you can remember such as
+
+\begin{lstlisting}
+  cp Makefile Makefile.albert
+\end{lstlisting}
+
+Here let us assume that Albert is the author who is going to
+collaborate to handbook.
+
+Then open the new Makefile.kmeans and add the following target to the
+makefile:
+
+\begin{lstlisting}
+albert: dest 
+	latexmk -jobname=albert $(FLAGS) -pvc -view=pdf albert
+\end{lstlisting}  
+%$
+
+As the kmeans.tex file is in a new directory, we need to add the
+directory name to the place where the LaTeX output files are placed.
+Find in the dest target the alphabetical location where  this folder
+belongs and add it.DO not remove the other folder names indicated by
+...
+
+
+\begin{lstlisting}
+dest:
+    ...
+    mkdir -p dest/format
+    mkdir -p dest/machine-learning
+    mkdir -p dest/notebooks
+    ...
+\end{lstlisting}
+
+Next, save the Makefile.albert.
+Now copy the file called single.tex to albert.tex. 
+
+\begin{lstlisting}
+cp single.tex albert.tex
+\end{lstlisting}
+
+As we want to review the section we must however  add it to this latex
+file with the section name included
+
+\begin{lstlisting}
+\include{section/machine-learning/kmeans}
+\end{lstlisting}
+
+You may select to outcomment other sections.
+Now you can compile the file with 
+
+Sample kmeans.tex file is shown below. And also make sure you include
+all the images needed in the image folder inside the repository folder.
+Do not create image folders within other folders, pleaese use the given
+folder to include images. 
+
+Sample kmeans.tex can be found here :
+\URL{https://github.com/cloudmesh/book/blob/master/section/container/docker-kubernetes-installation.tex}
+
+
+%%%%%%%%%%%%%
+
+Sample albert.tex can be found here :
+\URL{https://github.com/cloudmesh/book/blob/master/single.tex}
+
+\begin{lstlisting}
+make -f Makefile.albert albert
+\end{lstlisting}
+
+
+The above command will make the file, create a pdf file, and if you
+have configured latexmk properly pop up the PDF in your configured PDF
+browser. If not, you can find it in the dest folder at for our example
+at 
+
+\begin{lstlisting}
+dest/kmeans-main.pdf
+\end{lstlisting}
+
+
+To configure your pdf browser you can for example use in ubuntu
+
+\begin{lstlisting}
+ sudo apt-get install xpdf
+\end{lstlisting}
+
+
