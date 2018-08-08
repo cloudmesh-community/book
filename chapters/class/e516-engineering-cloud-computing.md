@@ -124,7 +124,9 @@ Additional Lectures will be added that allow easy management of the project. The
 | anytime        | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) 
 | anytime        |         | Writing a Project Report      | How to write a high quality Project report following our template
 | anytime        |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
-| anytime        | 1       | Project Github      | How to use the project Github
+| anytime        | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) 
+| anytime        |         | Class Github      | How to use the class Github
+| anytime        |         | Class Piazza      | How to use the class Piazza
 
 If you follow our template writing the report is like filling out a
 simple form. 
