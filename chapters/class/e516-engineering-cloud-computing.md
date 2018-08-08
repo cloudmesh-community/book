@@ -116,14 +116,14 @@ how to execute your project in a reproducable manner to others.
 
 Additional Lectures will be added that allow easy management of the project. These lectures can be taken any time when needed
 
-| Proposed Date(a)        | Unit    | Title             | Description
+| Proposed Date        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | anytime        | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub)
 | anytime        |         | Plagiarizm      | How to avoid plagiarizm and cheating
 | anytime        |         | Markdown        | How to use markdown
 | anytime        | 1       | Scientific Writing II 
-| anytime        | 1       | Writing a Project Report      | How to write a high quality Project report following our template
-| anytime        | 1       | Bibliography Management      | How to easily manage bibliographies for your Project Report
+| anytime        |         | Writing a Project Report      | How to write a high quality Project report following our template
+| anytime        |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
 | anytime        | 1       | Project Github      | How to use the project Github
 
 If you follow our template writing the report is like filling out a
