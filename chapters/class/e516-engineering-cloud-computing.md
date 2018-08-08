@@ -104,9 +104,13 @@ the entire semester.
 
 (a) Dates may change as the semester evolves
 
-(*) The project is a long term assignment (and are ideally worked  on weekly by residential students). It is the major part of the course grade.  
+(*) The project is a long term assignment (and are ideally worked on
+weekly by residential students). It is the major part of the course
+grade.
 
-(*) Tutorials prepare you for documenting a technical aspect related to cloud computing. It is a preparation for a document that explains how to execute your project in a reproducable manner. 
+(*) Tutorials prepare you for documenting a technical aspect related
+to cloud computing. It is a preparation for a document that explains
+how to execute your project in a reproducable manner to others.
 
 - all times are in EST
 
@@ -139,7 +143,8 @@ The main deliverable of the class is a project. The project is
 assessed through the following artifacts:
 
 * (a) Deployment and install instructions, 
-* (b) Project report, 
+* (b) Project report (typically 2-3 pages per month, tutorial and
+  chapters can be reused if possible), 
 * (c) Working project code that can be installed and executed in reproducable manner by a third party 
 * (d) Code developed by the project team distributed in github.com
 * (e) Project progress notes checked into github throughout the semester. Each 
@@ -161,9 +166,9 @@ the principal of "Learning by Doing" at all stages throughout the
 semester.
 
 The class will not have a regular midterm, but it is expected that you
-have worked on your project and can provide a presentation outlining
-the goals of the project and how you will achieve these goals till the
-end of the semester.
+have worked on your project and can provide a snapshot of the progress
+outlining the goals of the project and how you will achieve these
+goals till the end of the semester.
 
 The final Project is due Dec. 1st. Issues with your project ought to
 have been discussed before this deadline with the TA's The TAs will in
