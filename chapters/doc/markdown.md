@@ -137,11 +137,14 @@ Mermaide is a graph generation tool that lets you create graphs and
 diagrams with the help of a description language. It includes graphviz
 and UML like diagrams, as well as gantt charts
 
+A live editor is available at 
+
+  * [Mermaid live editor](https://mermaidjs.github.io/mermaid-live-editor/)
+
 A markdown plugin for pandoc is available
 
-* Mermaide <https://github.com/raghur/mermaid-filter>
-
-  * [live editor](https://mermaidjs.github.io/mermaid-live-editor/)
+* Mermaide 
+* <https://github.com/raghur/mermaid-filter>
 
 Installation is done with
 

@@ -1,4 +1,4 @@
-# e516: Engeneering Cloud Computing
+# e516: Engineering Cloud Computing
 
 * Indiana University
 * Fall 2018
@@ -16,7 +16,9 @@
   more based on our materials list that we will release throughout the
   semester. All students will have access to a cloud.
 * This page is maintained and updated at 
-  <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-syllabus.md>
+  [e516: Engineering Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md)
+* Course Description URL: 
+  <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md>
 
 ## Course Description
 
@@ -89,8 +91,8 @@ The course has the following objectives:
 | 11/19|         |                   | Go for the Cloud I
 | 11/19|         |                   | Go for the Cloud II
 | 12/03| 4       | Edge Computing    | Edge Computing and the Cloud
-| 09/03-11/26* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
-| 09/03-11/26* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
+| 09/03-11/02* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
+| 09/03-11/02* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
 | 09/03-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
 | 09/03-11/26* |         |                   | Kubernetes, Hadoop, SLURM + OpenAPI Service, 
 | 09/03-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
@@ -102,7 +104,9 @@ the entire semester.
 
 (a) Dates may change as the semester evolves
 
-(*) Project, and Tutorial assignments are long term assignmenst and must be worked on on a weekly basis. They are providing the major part of the course grade.
+(*) The project is a long term assignment (and are ideally worked  on weekly by residential students). It is the major part of the course grade.  
+
+(*) Tutorials prepare you for documenting a technical aspect related to cloud computing. It is a preparation for a document that explains how to execute your project in a reproducable manner. 
 
 - all times are in EST
 
@@ -111,9 +115,9 @@ Additional Lectures will be added that allow easy management of the project. The
 | Proposed Date(a)        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | anytime        | 1       | Plagiarizm      | How to avoid plagiarizm and cheating
-| anytime        | 1       | Project Github      | Who to use the project Github
-| anytime        | 1       | Writing a Project Report      | Who to write a high quality Project report following our template
-| anytime        | 1       | Bibliography Management      | Who to easily manage bibliographies for your Project Report
+| anytime        | 1       | Project Github      | How to use the project Github
+| anytime        | 1       | Writing a Project Report      | How to write a high quality Project report following our template
+| anytime        | 1       | Bibliography Management      | How to easily manage bibliographies for your Project Report
 
 
 
@@ -186,21 +190,21 @@ models used. It is best to complete the course within one semester.
 |   | *Begins*	          | | Mon 08/20 |
 | 1, 2 | **Bio, Notebook**   | assigned | Mon 08/20 |
 | 1, 2 | **Bio, Notebook**   | due  | Mon 08/27 9am |
-| 3 | **Tutorial**    | assigned | Mon 09/3|
+| 3 | **Tutorial**    | assigned | Mon 09/03 |
 | 4 | **Chapter**         | assigned | Mon 09/03 |
-| 5 | **Project**         | selection or proposal  | Mon 09/3 |
+| 5 | **Project**         | selection or proposal  | Mon 09/03 |
 |   | *Labor Day*	      |  | Mon 09/03 |
-| 5 | **Project** | update | 10/05, 9am EST |
+| 5 | **Project** | update | 10/05 9am EST |
 |   | *Fall Break*	      | | 10/05 - 10/07 |
 |   | *Auto W*	          | | Sun 10/21 |
 | 5 | **Project** | update | 11/02 9am EST |
-| 3 | **Tutorial** | due | 11/022 9am EST |
+| 3 | **Tutorial** | due | 11/02 9am EST |
 | 4 | **Chapter** | due | 11/02 9am EST |
 |   | *Thanksgiving*	  |    | 11/18 - 11/25 |
-| 5 | **Project**         | due	       | 11/26 |
-| 5 | **Project** (no penalty) | improvements | 11/26 - 12/03 |
-| 5 | **Project** (with penalty) | improvements | 12/04 - 12/07|
-|   | **Final Deliverables due**  |  | 12/07|
+| 5 | **Project**         | due	       | 11/26 9am EST |
+| 5 | **Project** (no penalty) | improvements | 11/26 - 12/03 9am EST |
+| 5 | **Project** (with penalty) | improvements | 12/04 - 12/07 9am EST |
+|   | **Final Deliverables due**  |  | 12/07 9am EST|
 |   | *Grading*	          |  | 12/01 - 12/14 |
 |   | *Ends*	          |  | Fri 12/14 |
 |   | grade submission to school | | Fri 12/14 |
