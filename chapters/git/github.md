@@ -1,5 +1,4 @@
-Github {#C:github}
-======
+# Github
 
 In some classes the material may be openly shared in code repositories.
 This includes class material, papers and project. Hence, we need some
@@ -12,8 +11,7 @@ commandline (Section [1.12](#s:git-commands){reference-type="ref"
 reference="s:git-commands"}). Than we will introduce you how you can
 contribute to this set of documentations with pull requests.
 
-Overview {#s:github}
----------
+## Overview {#s:github}
 
 Github is a code repository that allows the development of code and
 documents with many contributors in a distributed fashion. There are
@@ -42,8 +40,7 @@ reading the documentation we recommend these videos
 
 Next, we introduce some important concepts used in github.
 
-Upload Key
-----------
+## Upload Key
 
 Before you can work with a repository in an easy fashion you need to
 upload a public key in order to access your repository. Naturally, you
@@ -375,8 +372,11 @@ Contributing to the Document
   and not the master}
 ### Clone
 
-    $ git remote add upstream https://github.com/cloudmesh/book
-
+```
+$ git remote add upstream \
+      https://github.com/cloudmesh-community/book
+      ```
+      
 ### Merge
 
 As we are allowing contribution by the community, they are best managed
@@ -385,8 +385,11 @@ newest status before you issue a pul request.
 
 Make sure you have upstream repo defined:
 
-    $ git remote add upstream https://github.com/cloudmesh/book
-
+```
+$ git remote add upstream \
+      https://github.com/cloudmesh-community/book
+```
+    
 Now Get latest from upstream:
 
     $ git rebase upstream/master
