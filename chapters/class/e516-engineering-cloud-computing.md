@@ -127,7 +127,7 @@ Additional Lectures will be added that allow easy management of the project. The
 | anytime        | 1       | Project Github      | How to use the project Github
 
 If you follow our template writing the report is like filling out a
-form. 
+simple form. 
 
 
 ## Assessment
