@@ -118,7 +118,7 @@ Additional Lectures will be added that allow easy management of the project. The
 
 | Proposed Date(a)        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
-| anytime        | 1       | Scientific Writing I
+| anytime        | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub)
 | anytime        |         | Plagiarizm      | How to avoid plagiarizm and cheating
 | anytime        |         | Markdown        | How to use markdown
 | anytime        | 1       | Scientific Writing II 
