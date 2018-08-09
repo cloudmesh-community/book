@@ -33,10 +33,10 @@ choosing best answer.
 
 Files:
 
--   <{gitcode}/kmeans/xmean.py>
--   <{gitcode}/kmeans/sample.csv>
--   <{gitcode}/kmeans/parallel-kmeans.py>
--   <{gitcode}/kmeans/kmeans-extra.py>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/xmean.py>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/sample.csv>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/parallel-kmeans.py>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/kmeans-extra.py>
 
 #### K-means in Python
 
@@ -97,7 +97,7 @@ this simple 2 map version can be generalized to scalable parallelism.
 
 Files:
 
-- <{gitcode}/kmeans/parallel-kmeans.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/parallel-kmeans.py>
 
 #### MapReduce Kmeans in Python
 
@@ -116,8 +116,8 @@ for general web pages by extracting the secret from Google.
 
 Files:
 
-- <{gitcode}/page-rank/pagerank1.py>
-- <{gitcode}/page-rank/pagerank2.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/page-rank/pagerank1.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/page-rank/pagerank2.py>
 
 #### Calculate PageRank from Web Linkage Matrix
 

@@ -16,12 +16,12 @@ testing sets are introduced with training set pre-labelled.
 
 Files:
 
-- <{gitcode}/knn/kNN.py>
-- <{gitcode}/knn/kNN_Driver.py>
-- <{gitcode}/knn/dating_test_set2.txt>
-- <{gitcode}/knn/clusterFinal-M3-C3Dating-ReClustered.pviz>
-- <{gitcode}/knn/dating_rating_original_labels.pviz>
-- <{gitcode}/knn/clusterFinal-M30-C28.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/kNN.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/kNN_Driver.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/dating_test_set2.txt>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/clusterFinal-M3-C3Dating-ReClustered.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/dating_rating_original_labels.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/clusterFinal-M30-C28.pviz>
 
 ### Python k'th Nearest Neighbor Algorithms
 
@@ -60,10 +60,10 @@ use of annealing to avoid this and value of heuristic algorithms.
 
 Files:
 
--   <{gitcode}/plotviz/fungi_lsu_3_15_to_3_26_zeroidx.pviz>
--   <{gitcode}/plotviz/datingrating_originallabels.pviz>
--   <{gitcode}/plotviz/clusterFinal-M30-C28.pviz>
--   <{gitcode}/plotviz/clusterfinal_m3_c3dating_reclustered.pviz>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/fungi_lsu_3_15_to_3_26_zeroidx.pviz>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/datingrating_originallabels.pviz>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/clusterFinal-M30-C28.pviz>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/clusterfinal_m3_c3dating_reclustered.pviz>
 
 ### Kmeans Clustering
 
