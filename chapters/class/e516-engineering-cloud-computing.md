@@ -19,6 +19,8 @@
   [e516: Engineering Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md)
 * Course Description URL: 
   <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md>
+* Registrar
+* Registrar information and Other related classes: https://github.com/cloudmesh-community/book/blob/master/chapters/class/fall2018.md
 
 ## Course Description
 
