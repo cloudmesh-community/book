@@ -74,7 +74,7 @@ The course has the following objectives:
 
 
 <div class="smalltable">
-  
+
 | Proposed Date(a)        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | 08/24     | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
@@ -101,7 +101,6 @@ The course has the following objectives:
 | 09/03-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
 | 09/03-11/26* |         | Project Type C    | Build an Edge Service Interfacing with a Cloud
 | 09/03-11/26* |         | Project Type D    | Your own Project Type A, B, or C (upon approval)
-
 </div>
 
 Students need only to do one project. The project is conducted thought
@@ -122,6 +121,7 @@ how to execute your project in a reproducable manner to others.
 Additional Lectures will be added that allow easy management of the project. These lectures can be taken any time when needed
 
 <div class="smalltable">
+
 | Proposed Date        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | anytime        | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub)
@@ -228,6 +228,7 @@ models used. It is best to complete the course within one semester.
 |   | *Ends*	          |  | Fri 12/14 |
 |   | grade submission to school | | Fri 12/14 |
 |   | grade posting by registrar | | 12/31 |
+
 </div>
 
 * TA's must be available till all grades have been submitted. 
