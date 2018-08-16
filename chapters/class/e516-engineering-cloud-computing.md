@@ -76,7 +76,8 @@ The course has the following objectives:
 <div class="smalltable">
 | Proposed Date(a)        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
-| 08/24     | 1       | Introduction      | Definition of Cloud Computing
+| 08/24     | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
+| 08/24     |         |                   | Definition of Cloud Computing
 | 08/31     |         |                   | Tools and Services
 | 09/03     |         |                   | Data Center, NIST Big Data Reference Architecture
 | 09/10     | 2       | Infrastructure    | Infrastructure as a Service
