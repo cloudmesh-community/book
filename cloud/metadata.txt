@@ -1,0 +1,13 @@
+---
+title:
+- type: main
+  text: Big Data Applications
+creator:
+- role: editor
+  text: Gregor von Laszewski
+description: Big Data Applications
+rights: (c) Gregor von Laszewski, 2018
+language: en-US
+stylesheet: template/epub.css
+cover-image: cover/cover.jpg
+...
