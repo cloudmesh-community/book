@@ -73,7 +73,7 @@ The course has the following objectives:
 ## Course Sylabus
 
 
-
+<div class="smalltable">
 | Proposed Date(a)        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | 08/24     | 1       | Introduction      | Definition of Cloud Computing
@@ -99,6 +99,7 @@ The course has the following objectives:
 | 09/03-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
 | 09/03-11/26* |         | Project Type C    | Build an Edge Service Interfacing with a Cloud
 | 09/03-11/26* |         | Project Type D    | Your own Project Type A, B, or C (upon approval)
+</div>
 
 Students need only to do one project. The project is conducted thought
 the entire semester.
@@ -117,6 +118,7 @@ how to execute your project in a reproducable manner to others.
 
 Additional Lectures will be added that allow easy management of the project. These lectures can be taken any time when needed
 
+<div class="smalltable">
 | Proposed Date        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | anytime        | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub)
@@ -128,6 +130,7 @@ Additional Lectures will be added that allow easy management of the project. The
 | anytime        | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) 
 | anytime        |         | Class Github      | How to use the class Github
 | anytime        |         | Class Piazza      | How to use the class Piazza
+</div>
 
 If you follow our template writing the report is like filling out a
 simple form. 
@@ -196,6 +199,7 @@ models used. It is best to complete the course within one semester.
 
 ### Calendar 
 
+<div class="smalltable">
 |  Assignment #  | Event |     | Date 
 | --- | ----- | --- | --- 
 |    | Full Term           | | 16 Weeks |
@@ -221,6 +225,7 @@ models used. It is best to complete the course within one semester.
 |   | *Ends*	          |  | Fri 12/14 |
 |   | grade submission to school | | Fri 12/14 |
 |   | grade posting by registrar | | 12/31 |
+</div>
 
 * TA's must be available till all grades have been submitted. 
 * Bio: a formal 3 paragraph Bio

@@ -198,7 +198,7 @@ This guide is adapted from
 
 -   <http://www.techsupportalert.com/content/how-ask-question-when-you-want-technical-help.htm>
 
-Ten steps to getting your question answered on piazza
+Steps to getting your question answered on piazza
 
 1.  Before you even go to ask a question, think through what your
     problem is. Write down how you are going to describe it. Think about

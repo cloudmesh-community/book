@@ -42,10 +42,14 @@ CHAPTER_PREFIX=\
 # chapters/preface/issues.md
 
 CHAPTER_GIT=\
- chapters/preface/notation.md\
- chapters/git/github.md\
- chapters/doc/piazza.md\
- chapters/preface/git.md
+	chapters/SECTION-PREFACE.md\
+  chapters/preface/notation.md\
+  chapters/doc/communicate.md\
+	chapters/SECTION-COMMUNICATION.md\
+  chapters/doc/piazza.md\
+	#chapters/SECTION-GIT.md\
+  chapters/git/github.md\
+  chapters/preface/git.md
 
 ######################################################################
 # END BOOK CLASS
@@ -79,9 +83,11 @@ prepare: dot refernces todo
 	$(COPY) -r ../template/fonts dest
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
-	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
+	../bin/section.py 1 "Communication Services" > dest/chapters/SECTION-COMMUNICATION.md
+	# ../bin/section.py 1 "Git" > dest/chapters/SECTION-GIT.md
 	$(COPY) preface.md dest/chapters/doc/preface.md
 
 epub:
