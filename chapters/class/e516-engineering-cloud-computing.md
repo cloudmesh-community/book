@@ -133,6 +133,7 @@ Additional Lectures will be added that allow easy management of the project. The
 | anytime        | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) 
 | anytime        |         | Class Github      | How to use the class Github
 | anytime        |         | Class Piazza      | How to use the class Piazza
+
 </div>
 
 If you follow our template writing the report is like filling out a
@@ -203,6 +204,7 @@ models used. It is best to complete the course within one semester.
 ### Calendar 
 
 <div class="smalltable">
+  
 |  Assignment #  | Event |     | Date 
 | --- | ----- | --- | --- 
 |    | Full Term           | | 16 Weeks |
