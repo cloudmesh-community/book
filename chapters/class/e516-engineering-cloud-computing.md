@@ -74,6 +74,7 @@ The course has the following objectives:
 
 
 <div class="smalltable">
+  
 | Proposed Date(a)        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | 08/24     | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
@@ -100,6 +101,7 @@ The course has the following objectives:
 | 09/03-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
 | 09/03-11/26* |         | Project Type C    | Build an Edge Service Interfacing with a Cloud
 | 09/03-11/26* |         | Project Type D    | Your own Project Type A, B, or C (upon approval)
+
 </div>
 
 Students need only to do one project. The project is conducted thought
