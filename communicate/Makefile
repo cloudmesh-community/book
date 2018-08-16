@@ -49,7 +49,8 @@ CHAPTER_GIT=\
   chapters/doc/piazza.md\
 	#chapters/SECTION-GIT.md\
   chapters/git/github.md\
-  chapters/preface/git.md
+  chapters/preface/git.md\
+  chapters/SECTIONN-REFERENCES.md
 
 ######################################################################
 # END BOOK CLASS
@@ -84,6 +85,7 @@ prepare: dot refernces todo
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
 	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "References" > dest/chapters/SECTION-REFERENCES.md
 	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 	../bin/section.py 1 "Communication Services" > dest/chapters/SECTION-COMMUNICATION.md

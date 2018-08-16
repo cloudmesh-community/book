@@ -7,10 +7,11 @@ instructors, but also for students to contribute. Each question has a
 single answer edited by the students of the class and if needed an
 instructors' answer that is collaboratively edited by the instructors.
 
-Due to this wiki-style Q&A, when a student has a question, one does not
-have to look through long e-mail threads but instead can look at the
-answer. For details that lead up to the answer you are highly encouraged
-to also look at some comments that lead up to the answer.
+Due to this wiki-style question and answer, when a student has a
+question, one does not have to look through long e-mail threads but
+instead can look at the answer. For details that lead up to the answer
+you are highly encouraged to also look at some comments that lead up
+to the answer.
 
 An advertisement video from Piazza summarizes the features:
 
@@ -32,7 +33,7 @@ technology targeted to support large student classes while also
 focusing on student engagement.
 
 To access piazza you can have the following situations provided in the
-next four subsections. Please read *ALL*\* of them **CAREFULLY**, decide
+next four subsections. Please read **ALL** of them **CAREFULLY**, decide
 which applies tou you and follow the instructions. If you have
 improvements to this instructions, please let us know.
 
@@ -306,12 +307,12 @@ created
 
 We are using Piazza in a curated fashion.  This means that we try to
 file posts into folders and delete messages that are not relevant or
-do not provide any additional information. IT also means that if you
-see an error in the post that students and instructors should improve
-it. THis may include spelling errors.
+do not provide any additional information. It also means that if you
+see an error in the post that students and instructors have provided,
+you should improve it. This may include spelling errors.
 
-As part of this we are introducing a number of folders.
-THe folders may vary from class and we can add new folders if
+As part of the curation we are introducing a number of folders.
+The folders may vary from class and we can add new folders if
 needed. Please let us know.
 
 We provide next a list of example folders that we have used in
@@ -320,19 +321,13 @@ form your class.
 
   Folder       Description
   ------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  logistics    Any question and discussion related to the logistics of the course
+  logistics    Any question and discussion related to the logistics of the course.
   lectures     Any question and discussion related to the lectures.
-  p            Any question and discussion related to paper.
-  p1           Any question and discussion related to paper 1.
-  p2           Any question and discussion related to paper 2.
-  t            Any question and discussion related to tutorial.  
-  t1           Any question and discussion related to tutorial 1.
-  t2           Any question and discussion related to tutorial 2.
-  project      Any question and discussion related to iot projects.
-  term-paper   Any question and discussion related to the term project.
+  project      Any question and discussion related to the project.
+  chapter      Any question and discussion related to the chapter assignment
+  tutorial     Any question and discussion related to the tutorial assignment.
   python       Any question and discussion related to python.
   pi           Any question and discussion related to the Raspberry Pi 3. We are not using older Raspberry Pi's and therefore can not comment to them.
-  8266         Any question and discussion related to the esp8266.
   bio          A homework folder in which you only publish your bio. The bio needs to be published as a *note*. This assignment also serves us to see if you are in piazza. Please do this assignment ASSAP. You need to post a formal bio. See the many great examples in the folder.
   help         If you need help and none of the other folders fits, please use this folder. If information from here will result into new Web page content it will be added and marked into the folder *resolved*. See the *resolved* folder for more detail.
   resolved     Sometimes we move some general help messages to the resolved folder in case the help message results into information that is posted on our class Web page. We than will add a link to where in the class Web page this question was answered. The TAs will aggressively try to put information into the Web page.
@@ -341,7 +336,8 @@ form your class.
 In addition to these general folders we also have two folders which
 **MUST NOT BE USED BY ANY STUDENT TO POST CONTENT**. These folders serve
 to communicate your assignments and are used internally between Gregor
-and the TA's.
+and the TA's. Please do not mark any questions about assignments with
+the assignments folder, but instead use help
 
 *assignments*:
 
@@ -351,12 +347,6 @@ and the TA's.
     given. In case students have questions about assignments they should
     not use the *assignments* folder, but the *help* folder. TAs are
     instructed to correct wrongly filed messages in folders.
-
-*ta*:
-
-:   Any question and discussion you have for the ta's. Typically you
-    should however use the folder *help*. Gregor use most often the *ta*
-    folder for internal coordination with the tas.
 
 In case you decide to post privately and the information is useful for
 others also, the message will be published to the class.
@@ -401,3 +391,8 @@ Piazza.3
 Piazza.4
 
 :   Please watch the Video about Piazza
+
+Piazza.5
+
+: Why is it important to not just read the piazza e-mail, but to visit
+  the post by using the `<click here>` feature in the mail?
