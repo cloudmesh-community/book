@@ -131,8 +131,9 @@ CHAPTER_BIGDATA=\
 
 CHAPTER_516=\
   chapters/preface/notation.md\
+  chapters/cloud/gregor.md\
   chapters/class/e516-engineering-cloud-computing.md\
-	chapters/SECTION-REFERENCES.md
+  chapters/SECTION-REFERENCES.md
 
 CHAPTER_OTHER=\
  chapters/icloud//course/old-fundamentals.md\
