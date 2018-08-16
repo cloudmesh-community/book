@@ -130,8 +130,9 @@ CHAPTER_BIGDATA=\
 ######################################################################
 
 CHAPTER_516=\
- chapters/preface/notation.md\
-  chapters/class/e516-engineering-cloud-computing.md
+  chapters/preface/notation.md\
+  chapters/class/e516-engineering-cloud-computing.md\
+	chapters/SECTION-REFERENCES.md
 
 CHAPTER_OTHER=\
  chapters/icloud//course/old-fundamentals.md\
@@ -375,6 +376,7 @@ prepare: dot refernces todo
 	$(MARKUPALL)
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "References" > dest/chapters/SECTION-REFERENCES.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
 	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      
