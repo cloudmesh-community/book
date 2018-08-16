@@ -122,6 +122,7 @@ how to execute your project in a reproducable manner to others.
 Additional Lectures will be added that allow easy management of the project. These lectures can be taken any time when needed
 
 <div class="smalltable">
+  
 | Proposed Date        | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | anytime        | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub)
@@ -133,6 +134,7 @@ Additional Lectures will be added that allow easy management of the project. The
 | anytime        | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) 
 | anytime        |         | Class Github      | How to use the class Github
 | anytime        |         | Class Piazza      | How to use the class Piazza
+
 </div>
 
 If you follow our template writing the report is like filling out a
@@ -203,6 +205,7 @@ models used. It is best to complete the course within one semester.
 ### Calendar 
 
 <div class="smalltable">
+  
 |  Assignment #  | Event |     | Date 
 | --- | ----- | --- | --- 
 |    | Full Term           | | 16 Weeks |
@@ -228,6 +231,7 @@ models used. It is best to complete the course within one semester.
 |   | *Ends*	          |  | Fri 12/14 |
 |   | grade submission to school | | Fri 12/14 |
 |   | grade posting by registrar | | 12/31 |
+
 </div>
 
 * TA's must be available till all grades have been submitted. 
