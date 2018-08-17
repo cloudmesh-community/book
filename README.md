@@ -10,6 +10,7 @@ Quick links.
 
 * epub: [Class Communication](vonLaszewski-communicate.epub)
 * epub: [Scientific Writing](vonLaszewski-writing-1.epub)
+* pdf:  [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf)
 
 ## Files
 
