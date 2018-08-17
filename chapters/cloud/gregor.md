@@ -16,4 +16,4 @@ work he is involved in is done as open source projects.
 It is recommended that you watch the following introduction video:
 
 [:scroll: Research Interest Dr. Gregor von Laszewski
-(14:13)](https://drive.google.com/open?id=hcN1KvbTN2Y)
+(14:13)](https://www.youtube.com/watch?v=hcN1KvbTN2Y)
