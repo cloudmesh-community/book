@@ -361,13 +361,13 @@ templates you will see that the result will be highly professional.
 For more information please see our two publications:
 
 
-*
-[Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub),
-which will introduce you to how to avoid plagiarism and cheating, and
-use markdown.
-*
-[Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf)
-=, which will introduce you to how to write a high quality Project
-report following our template and how to easily manage bibliographies for your Project Report
+* [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub),
+  which will introduce you to how to avoid plagiarism and cheating,
+  and use markdown.
+
+* [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf),
+  which will introduce you to how to write a high quality Project
+  report following our template and how to easily manage
+  bibliographies for your Project Report
 
 These skills will be extremely useful for many other classes you may take.
