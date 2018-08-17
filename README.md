@@ -1,3 +1,11 @@
+# Publications for classes
+
+## e516
+
+* epub: [Cloud Computing](vonLaszewski-cloud.epub)
+
+
+
 ## Files
 
 ### Build files and dirs
