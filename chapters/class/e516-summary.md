@@ -2,13 +2,14 @@
 
 Presentation about this Document
 
-<iframe src="https://indiana-my.sharepoint.com/personal/gvonlasz_iu_edu/_layouts/15/Doc.aspx?sourcedoc={6e3309e3-a843-467d-9bdd-a46d900538b2}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="1026px" height="793px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+* [:clapper: Introduction](https://www.youtube.com/watch?v=w3o2EHaFx3o)
+
 
 ## Introduction
 
 ### Research participation
 
-Research activities by Gregor von Laszewksi are directly related to
+Research activities by Gregor von Laszewski are directly related to
 this course allowing you to not only learn about cloudcomputing, but
 practically participate in ongoing cloud research. Besides the
 research topics provided, you cann also suggest your own as part of a
