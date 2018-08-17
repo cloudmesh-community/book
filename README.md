@@ -9,7 +9,7 @@ Quick links.
 ## Others
 
 * epub: [Class Communication](vonLaszewski-communicate.epub)
-* epub: [Scientifi Writing](vonLaszewski-writing-1.epub)
+* epub: [Scientific Writing](vonLaszewski-writing-1.epub)
 
 ## Files
 
