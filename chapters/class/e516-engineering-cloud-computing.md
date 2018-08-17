@@ -75,7 +75,7 @@ The course has the following objectives:
 
 <div class="smalltable">
 
-| Proposed Date(a)        | Unit    | Title             | Description
+| Dates          | Unit    | Title             | Description
 | -------------- | ------- | ----------------- | --------------
 | 08/24     | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
 | 08/24     |         |                   | Definition of Cloud Computing
@@ -106,9 +106,9 @@ The course has the following objectives:
 Students need only to do one project. The project is conducted thought
 the entire semester.
 
-(a) Dates may change as the semester evolves
+* Dates may change as the semester evolves
 
-(*) The project is a long term assignment (and are ideally worked on
+* The project is a long term assignment (and are ideally worked on
 weekly by residential students). It is the major part of the course
 grade.
 
@@ -122,17 +122,17 @@ Additional Lectures will be added that allow easy management of the project. The
 
 <div class="smalltable">
 
-| Proposed Date        | Unit    | Title             | Description
-| -------------- | ------- | ----------------- | --------------
-| anytime        | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub)
-| anytime        |         | Plagiarizm      | How to avoid plagiarizm and cheating
-| anytime        |         | Markdown        | How to use markdown
-| anytime        | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) 
-| anytime        |         | Writing a Project Report      | How to write a high quality Project report following our template
-| anytime        |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
-| anytime        | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) 
-| anytime        |         | Class Github      | How to use the class Github
-| anytime        |         | Class Piazza      | How to use the class Piazza
+| Date     | Unit    | Title             | Description
+| -------- | ------- | ----------------- | --------------
+| anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
+| anytime  |         | Plagiarizm      | How to avoid plagiarizm and cheating
+| anytime  |         | Markdown        | How to use markdown
+| anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |
+| anytime  |         | Writing a Project Report      | How to write a high quality Project report following our template
+| anytime  |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
+| anytime  | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) |
+| anytime  |         | Class Github      | How to use the class Github
+| anytime  |         | Class Piazza      | How to use the class Piazza
 
 </div>
 
@@ -156,15 +156,15 @@ include a simple deployment and runtime instruction set.
 The main deliverable of the class is a project. The project is
 assessed through the following artifacts:
 
-* (a) Deployment and install instructions, 
-* (b) Project report (typically 2-3 pages per month, tutorial and
-  chapters can be reused if possible), 
-* (c) Working project code that can be installed and executed in reproducable manner by a third party 
-* (d) Code developed by the project team distributed in github.com
-* (e) Project progress notes checked into github throughout the semester. Each 
-  week the project progress is reported and will be integrated
-  sinto the final grade.
-* (f) three discusssions or progress reports with the instructors about your project
+1. Deployment and install instructions, 
+2. Project report (typically 2-3 pages per month, tutorial and
+   chapters can be reused if possible), 
+3. Working project code that can be installed and executed in reproducable manner by a third party 
+4. Code developed by the project team distributed in github.com
+5. Project progress notes checked into github throughout the semester. Each 
+   week the project progress is reported and will be integrated
+   sinto the final grade.
+6. three discusssions or progress reports with the instructors about your project
 
 The grade distribution is as follows 
 
