@@ -2,9 +2,14 @@
 
 ## e516
 
+Quick links.
+
 * epub: [Cloud Computing](vonLaszewski-cloud.epub)
 
+## Others
 
+* epub: [Class Communication](vonLaszewski-communicate.epub)
+* epub: [Scientifi Writing](vonLaszewski-writing-1.epub)
 
 ## Files
 
