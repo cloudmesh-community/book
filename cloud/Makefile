@@ -1,5 +1,5 @@
 
-FILENAME=vonLaszewski-cloudcomputing
+FILENAME=vonLaszewski-cloud
 
 OS=$(shell ../bin/sysinfo.py)
 DOCKER=$(shell ../bin/isdocker.py)
