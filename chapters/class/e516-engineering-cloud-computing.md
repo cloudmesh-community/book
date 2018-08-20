@@ -4,6 +4,7 @@
 * Fall 2018
 * Faculty: Dr. Gregor von Laszewski (laszewski@gmail.com)
 * Credits: 3
+* First class released: Aug. 22, 2018
 * Prerequisite(s): Knowledge of a programming language, the ability to
   pick up other programming languages as needed, willingness to
   enhance your knowledge from online resources and additional
