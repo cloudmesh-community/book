@@ -4,6 +4,8 @@
 * Fall 2018
 * Faculty: Dr. Gregor von Laszewski (laszewski@gmail.com)
 * Credits: 3
+* First online class released: Aug. 22, 2018
+* Resifential students Discussion:   11:15A-12:15P  Fridays  I2 150, bring your laptops
 * Prerequisite(s): Knowledge of a programming language, the ability to
   pick up other programming languages as needed, willingness to
   enhance your knowledge from online resources and additional
