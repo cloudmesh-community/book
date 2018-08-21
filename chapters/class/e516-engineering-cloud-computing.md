@@ -81,7 +81,7 @@ E516 Summary
 | -------------- | ------- | ----------------- | --------------
 | 08/24     | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
 | 08/24     | 1       | Introduction      | [Class summary](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md)
-| 08/24     |         |                   | Definition of Cloud Computing
+| 08/24     |         |                   | [Definition of Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md)
 | 08/31     |         |                   | Tools and Services
 | 09/03     |         |                   | Data Center, NIST Big Data Reference Architecture
 | 09/10     | 2       | Infrastructure    | Infrastructure as a Service
