@@ -25,6 +25,19 @@ A good document about piazza is available at
 
 -   <https://piazza.com/pdfs/piazza_product_introduction.pdf>
 
+### NEW: Bug In CANVAS for accessing Piazza!
+
+There is a bug in CANVAS that might effect your access to Piazza.
+We enrolled most of the students in 516 and related classes based on 
+your e-mails, but we had issues with some of you indicating that 
+you may not have yet activated your piazza accounts. 
+
+FIrst check if you can access https://piazza.com/iu/fall2018/516
+
+If you can not, you may have to create apiazza account under YOUREMAIL@iu.edu
+Once this has been activated, send a mail to laszewski@gmail.com, with your 
+iu.edu email so I can check with you if it works.
+
 ### Access to Piazza from Canvas
 
 Piazza is one of the recommended IU supported technologies within
