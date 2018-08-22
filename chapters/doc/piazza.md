@@ -49,6 +49,16 @@ This link is used also for the undergraduates and the CS students
 If you have any issues with enrolling in Piazza, please contact us
 in the office hours.
 
+In Piazza we always use the `@iu.edu` account.
+
+The accounts `yourid@indiana.edu` and `yourid@iu.edu`, even though
+they are they organizational IU accounts, are considered as two
+different accounts for Piazza. If you have used in piazza previously
+the `@indiana.edu` account, you will need to use the @iu.edu account
+instead.  This is the prefered account for external services that IU
+offers.  To do that please git to piazza and than in the settings for
+my other courses. After you added my @iu.edu merge the @iu.edu and
+@indiana.edu account.
  
 ### Piazza for other classes
 
