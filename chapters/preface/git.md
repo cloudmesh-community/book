@@ -14,6 +14,7 @@ Previous github locations include:
 
 * <https://github.com/cloudmesh-community>
 * <https://gitlab.com/cloudmesh_fall2016>
+* <https://github.com/bigdata-i523>
 
 Previous book githubs include
 
