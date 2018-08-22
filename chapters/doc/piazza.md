@@ -37,6 +37,21 @@ next four subsections. Please read **ALL** of them **CAREFULLY**, decide
 which applies tou you and follow the instructions. If you have
 improvements to this instructions, please let us know.
 
+### Piazza for 516
+
+Due to a bug in canvas the piazza location for 516 could not be
+crosslisted to CANVAS. Thus we simply add the following link to it
+
+https://piazza.com/iu/fall2018/516
+
+This link is used also for the undergraduates and the CS students
+
+If you ahave any issues with enrolling in Piazza, please contact us
+in the office hours.
+
+ 
+### Piazza for other classes
+
 #### Situation: You have never logged into piazza
 
 First, Click the Piazza link on the left navigation of your Canvas
