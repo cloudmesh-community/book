@@ -316,7 +316,7 @@ README.yaml file is valid. In addition you can use programs such as
 This file is used to integrate your assignments into a proceedings. An
 example is provided at
 
-* <https://github.com/bigdata-i523/sample-hid000/blob/master/README.yml>
+* <https://github.com/cloudmesh-community/hid-sample/blob/master/README.yml>
 
 Any derivation from this format will not allow us to see your homework
 as our automated scripts will use the README.yml to detect them. Make
@@ -347,7 +347,7 @@ To see an example for the notebook.md file, you can visit our sample
 hid, and browse to the notebook.md file. Alternatively you can visit the
 following link
 
-* <https://github.com/bigdata-i523/sample-hid000/blob/master/notebook.md>
+* <https://github.com/cloudmesh-community/hid-sample/blob/master/notebook.md>
 
 The purpose of the notebook md file is to record what you did in the
 class to us. We will use this file at the end of the class to make sure
@@ -368,14 +368,13 @@ course.
 Contributing to the Document
 ----------------------------
 
-\TODO{This section has to be redone as we use class specific clones
-  and not the master}
+
 ### Clone
 
 ```
 $ git remote add upstream \
       https://github.com/cloudmesh-community/book
-      ```
+```
       
 ### Merge
 
