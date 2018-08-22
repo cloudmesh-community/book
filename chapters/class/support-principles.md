@@ -1,3 +1,9 @@
+# list of materials
+
+* pdf
+* latex
+* new github
+
 # responsibilities tas
 
 staff piazza
