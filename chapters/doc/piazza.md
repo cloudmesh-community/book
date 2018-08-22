@@ -15,7 +15,7 @@ to the answer.
 
 An advertisement video from Piazza summarizes the features:
 
--   <https://www.youtube.com/watch?v=2jLSiN8E18w>
+* [:clapper: Piazza Overview from Piazza](https://www.youtube.com/watch?v=2jLSiN8E18w)
 
 Piazza Support with a lot of information is available at:
 
@@ -54,11 +54,13 @@ In Piazza we always use the `@iu.edu` account.
 The accounts `yourid@indiana.edu` and `yourid@iu.edu`, even though
 they are they organizational IU accounts, are considered as two
 different accounts for Piazza. If you have used in piazza previously
-the `@indiana.edu` account, you will need to use the @iu.edu account
-instead.  This is the prefered account for external services that IU
-offers.  To do that please git to piazza and than in the settings for
-my other courses. After you added my @iu.edu merge the @iu.edu and
-@indiana.edu account.
+the `@indiana.edu` account, you will need to use the `@iu.edu` account
+instead as this is the preferred account for external services that IU
+offers.  To do that please go to piazza and than go to the settings
+within piazza.  Here you add your `@iu.edu` and merge it with your
+existing `@indiana.edu` account. This can also be done with any other
+account you may have used in case it was not the `@iu.edu` account.
+
  
 ### Piazza for other classes
 
@@ -358,11 +360,11 @@ form your class.
   resolved     Sometimes we move some general help messages to the resolved folder in case the help message results into information that is posted on our class Web page. We than will add a link to where in the class Web page this question was answered. The TAs will aggressively try to put information into the Web page.
   discussion   Any content that deserves its separate discussion and is not covered in the above folder.
 
-In addition to these general folders we also have two folders which
+In addition to these general folders we also have some folders which
 **MUST NOT BE USED BY ANY STUDENT TO POST CONTENT**. These folders serve
 to communicate your assignments and are used internally between Gregor
 and the TA's. Please do not mark any questions about assignments with
-the assignments folder, but instead use help
+the `assignments` folder, but instead use `help`.
 
 *assignments*:
 
