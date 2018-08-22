@@ -1,19 +1,6 @@
-Skip to content
 
-Search or jump to...
+# Introduction to Cloud Computing
 
-Pull requests Issues Marketplace Explore \@laszewsk Sign out 8 4 29
-cloudmesh/book Code Issues 60 Pull requests 1 Projects 0 Wiki Insights
-Settings book/section/icloud/course/fundamentals.tex f61200c on Mar 27
-\@laszewsk laszewsk remove many non ascii chars \@laszewsk \@lee212
-\@vibhatha
-
-359 lines (263 sloc) 14 KB
-
- 
-
-Introduction to Cloud Computing {#s:icloud-fundamentals}
-===============================
 
 This introduction to Cloud Computing covers all aspects of the field
 drawing on industry and academic advances. It makes use of analyses from
@@ -21,8 +8,8 @@ the Gartner group on future Industry trends. The presentation is broken
 into 21 parts starting with a survey of all the material covered. Note
 this first part is A while the substance of the talk is in parts B to U.
 
-Introduction - Part A {#s:cloud-fundamentals-a}
----------------------
+## Introduction - Part A {#s:cloud-fundamentals-a}
+
 
 -   Parts B to D **define cloud computing**, its key concepts and how it
     is situated in the data center space
@@ -79,15 +66,17 @@ Introduction - Part A {#s:cloud-fundamentals-a}
 
 -   Part U covers **fault-tolerance**
 
-\video{Cloud}{14:48}{Introduction - Part A}{https://drive.google.com/open?id=16gPOZ7EK6iaac2B-9KbM3OHITqHT8YxG}
-\slides{Cloud}{7 Slides}{Introduction - Part A}{https://drive.google.com/open?id=17_voZxBdqiLicJKzroQ2DzjW4zvp0VYb}
+* [:clapper: Cloud (14:48) Introduction - Part A](https://drive.google.com/open?id=16gPOZ7EK6iaac2B-9KbM3OHITqHT8YxG)
+* [:scroll: Cloud (7 Slides) Introduction - Part A](https://drive.google.com/open?id=17_voZxBdqiLicJKzroQ2DzjW4zvp0VYb)
+
 This lecture describes the contents of the following 20 parts (B to U).
 
 Introduction - Part B - Defining Clouds I {#s:cloud-fundamentals-b}
 -----------------------------------------
 
-\video{Cloud}{20:22}{Part B - Defining Clouds I}{https://drive.google.com/open?id=1iGv6GG2b2th_RL3kQX6P04Y0AyuUxQcj}
-\slides{Cloud}{13 Slides}{Part B - Defining Clouds I}{https://drive.google.com/open?id=1SJZblEkhjgQBCDaDSiSCaXTLVPx_X8m4}
+* [:clapper: Cloud (20:22) Part B - Defining Clouds I](https://drive.google.com/open?id=1iGv6GG2b2th_RL3kQX6P04Y0AyuUxQcj)
+* [:scroll: Cloud (13 Slides) Part B - Defining Clouds I](https://drive.google.com/open?id=1SJZblEkhjgQBCDaDSiSCaXTLVPx_X8m4)
+
 **B: Defining Clouds I**
 
 -   Basic definition of cloud and two very simple examples of why
@@ -102,8 +91,9 @@ Introduction - Part B - Defining Clouds I {#s:cloud-fundamentals-b}
 Introduction - Part C - Defining Clouds II {#s:cloud-fundamentals-c}
 ------------------------------------------
 
-\video{Cloud}{20:45}{Part C - Defining Clouds II}{https://drive.google.com/open?id=1nU9HlqDe_vEZR1MlOq2XibnoHmaygo-H}
-\slides{Cloud}{11 Slides}{Part C - Defining Clouds II}{https://drive.google.com/open?id=1Thg2yOnKBQKdndgdItpviGw0hhxjY2K2}
+* [:clapper: Cloud (20:45) Part C - Defining Clouds II](https://drive.google.com/open?id=1nU9HlqDe_vEZR1MlOq2XibnoHmaygo-H)
+* [:scroll: Cloud (11 Slides) Part C - Defining Clouds II](https://drive.google.com/open?id=1Thg2yOnKBQKdndgdItpviGw0hhxjY2K2)
+
 **C: Defining Clouds II**
 
 -   Service-oriented architectures: Software services as Message-linked
@@ -119,8 +109,9 @@ Introduction - Part C - Defining Clouds II {#s:cloud-fundamentals-c}
 Introduction - Part D - Defining Clouds III {#s:cloud-fundamentals-d}
 -------------------------------------------
 
-\video{Cloud}{9:08}{Part D - Defining Clouds III}{https://drive.google.com/open?id=1Qayxfwuc_qSeCzaIpHj3-F0N7TONvM5L}
-\slides{Cloud}{9 Slides}{Part D - Defining Clouds III}{https://drive.google.com/open?id=1EsHbUn7xdjTrLXmY8HCIhZqLaWeODD_1}
+* [:clapper: Cloud (9:08) Part D - Defining Clouds III](https://drive.google.com/open?id=1Qayxfwuc_qSeCzaIpHj3-F0N7TONvM5L)
+* [:scroll: Cloud (9 Slides) Part D - Defining Clouds III](https://drive.google.com/open?id=1EsHbUn7xdjTrLXmY8HCIhZqLaWeODD_1)
+
 **D: Defining Clouds III**
 
 -   Cloud Market Share
@@ -132,8 +123,9 @@ Introduction - Part D - Defining Clouds III {#s:cloud-fundamentals-d}
 Introduction - Part E - Virtualization {#s:cloud-fundamentals-e}
 --------------------------------------
 
-\video{Cloud}{11:21}{Part E - Virtualization}{https://drive.google.com/open?id=1EC-eOYuBOV1qMojSg4Mg50doPqjAY0Hr}
-\slides{Cloud}{8 Slides}{Part E - Virtualization}{https://drive.google.com/open?id=1K3RzVlfiwZAqwhCPxNEP8Q1JNxyOZhrv}
+* [:clapper: Cloud (11:21) Part E - Virtualization](https://drive.google.com/open?id=1EC-eOYuBOV1qMojSg4Mg50doPqjAY0Hr)
+* [:scroll: Cloud (8 Slides) Part E - Virtualization](https://drive.google.com/open?id=1K3RzVlfiwZAqwhCPxNEP8Q1JNxyOZhrv)
+
 **E: Virtualization**
 
 -   Virtualization Technologies, Hypervisors and the different
@@ -146,8 +138,9 @@ Introduction - Part E - Virtualization {#s:cloud-fundamentals-e}
 Introduction - Part F - Technology Hypecycle I {#s:cloud-fundamentals-f}
 ----------------------------------------------
 
-\video{Cloud}{13:41}{Part F - Technology Hypecycle I}{https://drive.google.com/open?id=1_M0HDemFmykAq4iPuQ0MHYIW0kffHuMa}
-\slides{Cloud}{11 Slides}{Part F - Technology Hypecycle I}{https://drive.google.com/open?id=18deLUm2zGlHcHHbyVhecwSf52RHAq9VT}
+* [:clapper: Cloud (13:41) Part F - Technology Hypecycle I](https://drive.google.com/open?id=1_M0HDemFmykAq4iPuQ0MHYIW0kffHuMa)
+* [:scroll: Cloud (11 Slides) Part F - Technology Hypecycle I](https://drive.google.com/open?id=18deLUm2zGlHcHHbyVhecwSf52RHAq9VT)
+
 **F:Technology Hypecycle I**
 
 -   Gartner's Hypecycles and especially that for emerging technologies
@@ -166,8 +159,9 @@ Introduction - Part F - Technology Hypecycle I {#s:cloud-fundamentals-f}
 Introduction - Part G - Technology Hypecycle II {#s:cloud-fundamentals-g}
 -----------------------------------------------
 
-\video{Cloud}{16:05}{Part G - Technology Hypecycle II}{https://drive.google.com/open?id=19k6os58_OCCsmbusWQ6z6n9hwVmmd163}
-\slides{Cloud}{15 Slides}{Part G - Technology Hypecycle II}{https://drive.google.com/open?id=1ZD-h-dmQgAFROBEI1KMJROTxPVPAJ_P_}
+* [:clapper: Cloud (16:05) Part G - Technology Hypecycle II](https://drive.google.com/open?id=19k6os58_OCCsmbusWQ6z6n9hwVmmd163)
+* [:scroll: Cloud (15 Slides) Part G - Technology Hypecycle II](https://drive.google.com/open?id=1ZD-h-dmQgAFROBEI1KMJROTxPVPAJ_P_)
+
 **G: Technology Hypecycle II**
 
 -   Emerging Technologies hypecycles and Priority matrix at selected
@@ -182,8 +176,9 @@ Introduction - Part G - Technology Hypecycle II {#s:cloud-fundamentals-g}
 Introduction - Part H - IaaS I {#s:cloud-fundamentals-h}
 ------------------------------
 
-\video{Cloud}{13:22}{Part H - IaaS I}{https://drive.google.com/open?id=1_lH7ou_UQOMMfdSSQLrqZr8yJZIr7rC0}
-\slides{Cloud}{12 Slides}{Part H - IaaS I}{https://drive.google.com/open?id=1WOlwFtHNvFSaQX9WAXBwO2q1qsvBM6Yd}
+* [:clapper: Cloud (13:22) Part H - IaaS I](https://drive.google.com/open?id=1_lH7ou_UQOMMfdSSQLrqZr8yJZIr7rC0)
+* [:scroll: Cloud (12 Slides) Part H - IaaS I](https://drive.google.com/open?id=1WOlwFtHNvFSaQX9WAXBwO2q1qsvBM6Yd)
+
 **H: Cloud Infrastructure I**
 
 -   Comments on trends in the data center and its technologies
@@ -196,8 +191,9 @@ Introduction - Part H - IaaS I {#s:cloud-fundamentals-h}
 Introduction - Part I - IaaS II {#s:cloud-fundamentals-i}
 -------------------------------
 
-\video{Cloud}{13:13}{Part I - IaaS II}{https://drive.google.com/open?id=1UwBzSKK-iHYW7aRCS_f4BoXNYxUb476i}
-\slides{Cloud}{11 Slides}{Part I - IaaS II}{https://drive.google.com/open?id=1_1fL2L-tpjlL7og49XDxH_HLPD6Tupik}
+* [:clapper: Cloud (13:13) Part I - IaaS II](https://drive.google.com/open?id=1UwBzSKK-iHYW7aRCS_f4BoXNYxUb476i)
+* [:scroll: Cloud (11 Slides) Part I - IaaS II](https://drive.google.com/open?id=1_1fL2L-tpjlL7og49XDxH_HLPD6Tupik)
+
 **I: Cloud Infrastructure II**
 
 -   Gartner hypecycle and priority matrix on Infrastructure Strategies
@@ -210,8 +206,9 @@ Introduction - Part I - IaaS II {#s:cloud-fundamentals-i}
 Introduction - Part J - Cloud Software {#s:cloud-fundamentals-j}
 --------------------------------------
 
-\video{Cloud}{37:56}{Part J - Cloud Software}{https://drive.google.com/open?id=1tasT1lJE_7pwowuk0D68M7rgW1gtv3im}
-\slides{Cloud}{15 Slides}{Part J - Cloud Software}{https://drive.google.com/open?id=1DKshrkb2bMOt5p0H2YDkOZhekAFIx5nJ}
+* [:clapper: Cloud (37:56) Part J - Cloud Software](https://drive.google.com/open?id=1tasT1lJE_7pwowuk0D68M7rgW1gtv3im)
+* [:scroll: Cloud (15 Slides) Part J - Cloud Software](https://drive.google.com/open?id=1DKshrkb2bMOt5p0H2YDkOZhekAFIx5nJ)
+
 **J: Cloud Software**
 
 -   HPC-ABDS(High Performance Computing enhanced Apache Big Data Stack)
@@ -232,8 +229,9 @@ Introduction - Part J - Cloud Software {#s:cloud-fundamentals-j}
 Introduction - Part K - Applications I {#s:cloud-fundamentals-k}
 --------------------------------------
 
-\video{Cloud}{11:58}{Part K - Applications I}{https://drive.google.com/open?id=1BzpXNqs3Ai_QlSsjxSV6Q3FevZt1BPj-}
-\slides{Cloud}{16 Slides}{Part K - Applications I}{https://drive.google.com/open?id=1dQbzoVwDoqqnwSO8eHmu_WfiU2FVXtLL}
+* [:clapper: Cloud (11:58) Part K - Applications I](https://drive.google.com/open?id=1BzpXNqs3Ai_QlSsjxSV6Q3FevZt1BPj-)
+* [:scroll: Cloud (16 Slides) Part K - Applications I](https://drive.google.com/open?id=1dQbzoVwDoqqnwSO8eHmu_WfiU2FVXtLL)
+
 **K: Cloud Applications I**
 
 -   Big Data in Industry/Social media; a lot of best examples have NOT
@@ -246,8 +244,9 @@ Introduction - Part K - Applications I {#s:cloud-fundamentals-k}
 Introduction - Part L - Applications II {#s:cloud-fundamentals-l}
 ---------------------------------------
 
-\video{Cloud}{13:03}{Part L - Applications II}{https://drive.google.com/open?id=1pIjcar6SZSelWiR6dv4lhnsmweDarNXR}
-\slides{Cloud}{11 Slides}{Part L - Applications II}{https://drive.google.com/open?id=10bAckYz455Yd5tqDGpwkMZUmDn9FKl0n}
+* [:clapper: Cloud (13:03) Part L - Applications II](https://drive.google.com/open?id=1pIjcar6SZSelWiR6dv4lhnsmweDarNXR)
+* [:scroll: Cloud (11 Slides) Part L - Applications II](https://drive.google.com/open?id=10bAckYz455Yd5tqDGpwkMZUmDn9FKl0n)
+
 **L: Cloud Applications II**
 
 -   Clouds in science where area called cyberinfrastructure;
@@ -259,8 +258,9 @@ Introduction - Part L - Applications II {#s:cloud-fundamentals-l}
 Introduction - Part M - Applications III {#s:cloud-fundamentals-m}
 ----------------------------------------
 
-\video{Cloud}{24:12}{Part M - Applications III}{https://drive.google.com/open?id=16rb0zZafTLoYhT638qc4IRorOk5qgRP-}
-\slides{Cloud}{14 Slides}{Part M - Applications III}{https://drive.google.com/open?id=1TPgbfK6PhWjyr3u115Pq4jTPNPo2JU70}
+* [:clapper: Cloud (24:12) Part M - Applications III](https://drive.google.com/open?id=16rb0zZafTLoYhT638qc4IRorOk5qgRP-)
+* [:scroll: Cloud (14 Slides) Part M - Applications III](https://drive.google.com/open?id=1TPgbfK6PhWjyr3u115Pq4jTPNPo2JU70)
+
 **M: Cloud Applications III**
 
 -   Characterize Applications using NIST approach
@@ -272,8 +272,9 @@ Introduction - Part M - Applications III {#s:cloud-fundamentals-m}
 Introduction - Part N - Parallelism {#s:cloud-fundamentals-n}
 -----------------------------------
 
-\video{Cloud}{35:46}{Part N - Parallelism}{https://drive.google.com/open?id=1apuvCaKlQBZp8FjvqN9It5bJhfXmf1kg}
-\slides{Cloud}{15 Slides}{Part N - Parallelism}{https://drive.google.com/open?id=1lBmpMry2FXwEjf93EMJPNDpw_G-yUcI1}
+* [:clapper: Cloud (35:46) Part N - Parallelism](https://drive.google.com/open?id=1apuvCaKlQBZp8FjvqN9It5bJhfXmf1kg)
+* [:scroll: Cloud (15 Slides) Part N - Parallelism](https://drive.google.com/open?id=1lBmpMry2FXwEjf93EMJPNDpw_G-yUcI1)
+
 **N: Clouds and Parallel Computing**
 
 -   Parallel Computing in general
@@ -285,8 +286,9 @@ Introduction - Part N - Parallelism {#s:cloud-fundamentals-n}
 Introduction - Part O - Storage {#s:cloud-fundamentals-o}
 -------------------------------
 
-\video{Cloud}{19:22}{Part O - Storage}{https://drive.google.com/open?id=1_A51jrlzKYKhQvefXbJPs0J4GiCCQ1et}
-\slides{Cloud}{10 Slides}{Part O - Storage}{https://drive.google.com/open?id=1JvIK-J4HUSvexmNKbBV_fdN8xvGBylR2}
+* [:clapper: Cloud (19:22) Part O - Storage](https://drive.google.com/open?id=1_A51jrlzKYKhQvefXbJPs0J4GiCCQ1et)
+* [:scroll: Cloud (10 Slides) Part O - Storage](https://drive.google.com/open?id=1JvIK-J4HUSvexmNKbBV_fdN8xvGBylR2)
+
 **O: Cloud Storage**
 
 -   Cloud data approaches
@@ -296,8 +298,9 @@ Introduction - Part O - Storage {#s:cloud-fundamentals-o}
 Introduction - Part P - HPC in the Cloud {#s:cloud-fundamentals-p}
 ----------------------------------------
 
-\video{Cloud}{19:29}{Part P - HPC in the Clou}{https://drive.google.com/open?id=1u5z9-GY1Hecp8nR47Gxe8506NnhHduF1}
-\slides{Cloud}{8 Slides}{Part P - HPC in the Clou}{https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF}
+* [:clapper: Cloud (19:29) Part P - HPC in the Clou](https://drive.google.com/open?id=1u5z9-GY1Hecp8nR47Gxe8506NnhHduF1)
+* [:scroll: Cloud (8 Slides) Part P - HPC in the Clou](https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF)
+
 **P: HPC and Clouds**
 
 -   The Branscomb Pyramid
@@ -309,8 +312,9 @@ Introduction - Part P - HPC in the Cloud {#s:cloud-fundamentals-p}
 Introduction - Part Q - Analytics and Simulation {#s:cloud-fundamentals-q}
 ------------------------------------------------
 
-\video{Cloud}{16:19}{Part Q - Analytics and Simulation}{https://drive.google.com/open?id=1vmtpndTlmtV4DzUtl04_nWo9DCR84mIM}
-\slides{Cloud}{10 Slides}{Part Q - Analytics and Simulation}{https://drive.google.com/open?id=1u_rugpZg6m2x0B7r4kifEUxMej71-wMh}
+* [:clapper: Cloud (16:19) Part Q - Analytics and Simulation](https://drive.google.com/open?id=1vmtpndTlmtV4DzUtl04_nWo9DCR84mIM)
+* [:scroll: Cloud (10 Slides) Part Q - Analytics and Simulation](https://drive.google.com/open?id=1u_rugpZg6m2x0B7r4kifEUxMej71-wMh)
+
 **Q: Comparison of Data Analytics with Simulation**
 
 -   Structure of different applications for simulations and Big Data
@@ -322,8 +326,9 @@ Introduction - Part Q - Analytics and Simulation {#s:cloud-fundamentals-q}
 Introduction - Part R - Jobs {#s:cloud-fundamentals-r}
 ----------------------------
 
-\video{Cloud}{4:52}{Part R - Jobs}{https://drive.google.com/open?id=1JMNPLdbS81Hfi5P7irDUy7kna35jpU6j}
-\slides{Cloud}{6 Slides}{Part R - Jobs}{https://drive.google.com/open?id=1Sev0VF7tDZo4Oxa_ghk6b4YhE4iTPkhE}
+* [:clapper: Cloud (4:52) Part R - Jobs](https://drive.google.com/open?id=1JMNPLdbS81Hfi5P7irDUy7kna35jpU6j)
+* [:scroll: Cloud (6 Slides) Part R - Jobs](https://drive.google.com/open?id=1Sev0VF7tDZo4Oxa_ghk6b4YhE4iTPkhE)
+
 **R: Availability of Jobs in different areas**
 
 -   Computer Engineering
@@ -337,8 +342,9 @@ Introduction - Part R - Jobs {#s:cloud-fundamentals-r}
 Introduction - Part S - The Future {#s:cloud-fundamentals-s}
 ----------------------------------
 
-\video{Cloud}{19:46}{Part S - The Future}{https://drive.google.com/open?id=1kgbrDiDNj0DKYi_ICvOXYeFZ32R1JH2_}
-\slides{Cloud}{6 Slides}{Part S - The Future}{https://drive.google.com/open?id=1_LdE64DJqSKI7EmMbSsppHMO6KU4q4Sl}
+* [:clapper: Cloud (19:46) Part S - The Future](https://drive.google.com/open?id=1kgbrDiDNj0DKYi_ICvOXYeFZ32R1JH2_)
+* [:scroll: Cloud (6 Slides) Part S - The Future](https://drive.google.com/open?id=1_LdE64DJqSKI7EmMbSsppHMO6KU4q4Sl)
+
 **S: The Future**
 
 -   Gartner cloud computing hypecycle and priority matrix highlights:
@@ -354,8 +360,9 @@ Introduction - Part S - The Future {#s:cloud-fundamentals-s}
 Introduction - Part T - Security {#s:cloud-fundamentals-t}
 --------------------------------
 
-\video{Cloud}{11:29}{Part T - Security}{https://drive.google.com/open?id=1TQsCuR-2C6D_OJeJH818WO5-OBrA8Spo}
-\slides{Cloud}{13 Slides}{Part T - Security}{https://drive.google.com/open?id=1fVelFbLaUbNXMGS6ENRn4QHLzFitAyUD}
+* [:clapper: Cloud (11:29) Part T - Security](https://drive.google.com/open?id=1TQsCuR-2C6D_OJeJH818WO5-OBrA8Spo)
+* [:scroll: Cloud (13 Slides) Part T - Security](https://drive.google.com/open?id=1fVelFbLaUbNXMGS6ENRn4QHLzFitAyUD)
+
 **T: Security**
 
 -   CIO Perspective
@@ -365,8 +372,9 @@ Introduction - Part T - Security {#s:cloud-fundamentals-t}
 Introduction - Part U - Fault Tolerance {#s:cloud-fundamentals-u}
 ---------------------------------------
 
-\video{Cloud}{9:10}{Part U - Fault Tolerance}{https://drive.google.com/open?id=1jRpkdGCT-sQRb6pOGrW-qG58A_HYfr9W}
-\slides{Cloud}{5 Slides}{Part U - Fault Tolerance}{https://drive.google.com/open?id=1cR9YLcrtUMKINRFNMbdVre8Ydfa-lvAj}
+* [:clapper: Cloud (9:10) Part U - Fault Tolerance](https://drive.google.com/open?id=1jRpkdGCT-sQRb6pOGrW-qG58A_HYfr9W)
+* [:scroll: Cloud (5 Slides) Part U - Fault Tolerance](https://drive.google.com/open?id=1cR9YLcrtUMKINRFNMbdVre8Ydfa-lvAj)
+
 **U: Fault Tolerance**
 
 -   S3 Fault Tolerance

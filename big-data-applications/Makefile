@@ -108,55 +108,60 @@ CHAPTER_IN=\
 # i523
 ######################################################################
 
+ # chapters/class/fall2018.md\
+
 CHAPTER_BIGDATA=\
+ chapters/preface/notation.md\
  chapters/class/SECTION.md\
- chapters/class/fall2018.md\
+ chapters/class/e534-i523.md\
  chapters/bigdata/SECTION.md\
- chapters/bigdata//applications/overview.md\
- chapters/bigdata//applications/physics.md\
- chapters/bigdata//applications/lifestyle.md\
- chapters/bigdata//applications/sport.md\
- chapters/bigdata//applications/cloud.md\
- chapters/bigdata//applications/usecases.md\
- chapters/bigdata//applications/sensor.md\
- chapters/bigdata//applications/web.md\
- chapters/bigdata//applications/health.md\
- chapters/bigdata//algorithms/technology.md\
- chapters/bigdata//algorithms/clustering.md\
- chapters/bigdata//algorithms/plotviz.md\
+ chapters/bigdata/intro-bd.md\
+ chapters/bigdata/intro-cloud.md\
+ chapters/bigdata/applications/overview.md\
+ chapters/bigdata/applications/physics.md\
+ chapters/bigdata/applications/lifestyle.md\
+ chapters/bigdata/applications/sport.md\
+ chapters/bigdata/applications/cloud.md\
+ chapters/bigdata/applications/usecases.md\
+ chapters/bigdata/applications/sensor.md\
+ chapters/bigdata/applications/web.md\
+ chapters/bigdata/applications/health.md\
+ chapters/bigdata/algorithms/technology.md\
+ chapters/bigdata/algorithms/clustering.md\
+ chapters/bigdata/algorithms/plotviz.md\
 
 ######################################################################
 # i516
 ######################################################################
 
 CHAPTER_OTHER=\
- chapters/icloud//course/old-fundamentals.md\
- chapters/icloud//course/iot.md\
- chapters/icloud//course/nosql.md\
- chapters/icloud//course/fundamentals.md\
- chapters/icloud//course/iaas.md\
- chapters/icloud//course/iterative-mapreduce.md\
- chapters/icloud//course/mapreduce.md\
- chapters/icloud//course/selected.draft.md\
- chapters/icloud//course/nosql-new.md\
- chapters/icloud//course/saas.md\
- chapters/icloud//project2.md\
- chapters/icloud//participation.md\
- chapters/icloud//assignment/assignment.md\
- chapters/icloud//assignment/exercise5/exercise5.md\
- chapters/icloud//assignment/exercise2/exercise2.md\
- chapters/icloud//assignment/exercise2/pagerank.md\
- chapters/icloud//assignment/exercise3/exercise3.md\
- chapters/icloud//assignment/exercise4/exercise4.md\
- chapters/icloud//assignment/exercise8/exercise8.md\
- chapters/icloud//assignment/exercise1/exercise1.md\
- chapters/icloud//assignment/exercise6/exercise6.md\
- chapters/icloud//assignment/exercise7/exercise7.md\
- chapters/icloud//assignment/deprecated/exercise-old7/exercise7.md\
- chapters/icloud//syllabus.md\
- chapters/icloud//preface.md\
- chapters/icloud//deprecated.md\
- chapters/icloud//evaluation.md
+ chapters/icloud/course/old-fundamentals.md\
+ chapters/icloud/course/iot.md\
+ chapters/icloud/course/nosql.md\
+ chapters/icloud/course/fundamentals.md\
+ chapters/icloud/course/iaas.md\
+ chapters/icloud/course/iterative-mapreduce.md\
+ chapters/icloud/course/mapreduce.md\
+ chapters/icloud/course/selected.draft.md\
+ chapters/icloud/course/nosql-new.md\
+ chapters/icloud/course/saas.md\
+ chapters/icloud/project2.md\
+ chapters/icloud/participation.md\
+ chapters/icloud/assignment/assignment.md\
+ chapters/icloud/assignment/exercise5/exercise5.md\
+ chapters/icloud/assignment/exercise2/exercise2.md\
+ chapters/icloud/assignment/exercise2/pagerank.md\
+ chapters/icloud/assignment/exercise3/exercise3.md\
+ chapters/icloud/assignment/exercise4/exercise4.md\
+ chapters/icloud/assignment/exercise8/exercise8.md\
+ chapters/icloud/assignment/exercise1/exercise1.md\
+ chapters/icloud/assignment/exercise6/exercise6.md\
+ chapters/icloud/assignment/exercise7/exercise7.md\
+ chapters/icloud/assignment/deprecated/exercise-old7/exercise7.md\
+ chapters/icloud/syllabus.md\
+ chapters/icloud/preface.md\
+ chapters/icloud/deprecated.md\
+ chapters/icloud/evaluation.md
 
 
 
