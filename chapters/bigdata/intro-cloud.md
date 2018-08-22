@@ -13,57 +13,41 @@ this first part is A while the substance of the talk is in parts B to U.
 
 -   Parts B to D **define cloud computing**, its key concepts and how it
     is situated in the data center space
-
 -   The next part E reviews **virtualization** technologies comparing
     containers and hypervisors
-
 -   Part F is the first on **Gartner's Hypecycles** and especially those
     for emerging technologies in 2017 and 2016
-
 -   Part G is the second on **Gartner's Hypecycles** with Emerging
     Technologies hypecycles and the Priority matrix at selected times
     2008-2015
-
 -   Parts H and I cover **Cloud Infrastructure** with Comments on trends
     in the data center and its technologies and the Gartner hypecycle
     and priority matrix on Infrastructure Strategies and Compute
     Infrastructure
-
 -   Part J covers **Cloud Software** with HPC-ABDS(High Performance
     Computing enhanced Apache Big Data Stack) with over 350 software
     packages and how to use each of its 21 layers
-
 -   Part K is first on **Cloud Applications** covering those from
     industry and commercial usage patterns from NIST
-
 -   Part L is second on **Cloud Applications** covering those from
     science where area called cyberinfrastructure; we look at the
     science usage pattern from NIST
-
 -   Part M is third on **Cloud Applications** covering the
     characterization of applications using the NIST approach.
-
 -   Part N covers **Clouds and Parallel Computing** and compares Big
     Data and Simulations
-
 -   Part O covers **Cloud storage**: Cloud data approaches:
     Repositories, File Systems, Data lakes
-
 -   Part P covers **HPC and Clouds** with The Branscomb Pyramid and
     Supercomputers versus clouds
-
 -   Part Q compares **Data Analytics with Simulation** with application
     and software implications
-
 -   Part R compares **Jobs** from Computer Engineering, Clouds, Design
     and Data Science/Engineering
-
 -   Part S covers the **Future** with Gartner cloud computing hypecycle
     and priority matrix, Hyperscale computing, Serverless and FaaS,
     Cloud Native and Microservices
-
 -   Part T covers **Security and Blockchain**
-
 -   Part U covers **fault-tolerance**
 
 * [:clapper: Cloud (14:48) Introduction - Part A](https://drive.google.com/open?id=16gPOZ7EK6iaac2B-9KbM3OHITqHT8YxG)
@@ -81,11 +65,8 @@ Introduction - Part B - Defining Clouds I {#s:cloud-fundamentals-b}
 
 -   Basic definition of cloud and two very simple examples of why
     virtualization is important.
-
 -   How clouds are situated wrt HPC and supercomputers
-
 -   Why multicore chips are important
-
 -   Typical data center
 
 Introduction - Part C - Defining Clouds II {#s:cloud-fundamentals-c}
@@ -98,11 +79,8 @@ Introduction - Part C - Defining Clouds II {#s:cloud-fundamentals-c}
 
 -   Service-oriented architectures: Software services as Message-linked
     computing capabilities
-
 -   The different aaS's: Network, Infrastructure, Platform, Software
-
 -   The amazing services that Amazon AWS and Microsoft Azure have
-
 -   Initial Gartner comments on clouds (they are now the norm) and
     evolution of servers; serverless and microservices
 
@@ -115,9 +93,7 @@ Introduction - Part D - Defining Clouds III {#s:cloud-fundamentals-d}
 **D: Defining Clouds III**
 
 -   Cloud Market Share
-
 -   How important are they?
-
 -   How much money do they make?
 
 Introduction - Part E - Virtualization {#s:cloud-fundamentals-e}
@@ -130,9 +106,7 @@ Introduction - Part E - Virtualization {#s:cloud-fundamentals-e}
 
 -   Virtualization Technologies, Hypervisors and the different
     approaches
-
 -   KVM Xen, Docker and Openstack
-
 -   Several web resources are listed
 
 Introduction - Part F - Technology Hypecycle I {#s:cloud-fundamentals-f}
@@ -145,15 +119,11 @@ Introduction - Part F - Technology Hypecycle I {#s:cloud-fundamentals-f}
 
 -   Gartner's Hypecycles and especially that for emerging technologies
     in 2017 and 2016
-
 -   The phases of hypecycles
-
 -   Priority Matrix with benefits and adoption time
-
 -   Today clouds have got through the cycle (they have emerged) but
     features like blockchain, serverless and machine learning are on
     cycle
-
 -   Hypecycle and Priority Matrix for Data Center Infrastructure 2017
 
 Introduction - Part G - Technology Hypecycle II {#s:cloud-fundamentals-g}
@@ -166,11 +136,8 @@ Introduction - Part G - Technology Hypecycle II {#s:cloud-fundamentals-g}
 
 -   Emerging Technologies hypecycles and Priority matrix at selected
     times 2008-2015
-
 -   Clouds star from 2008 to today
-
 -   They are mixed up with transformational and disruptive changes
-
 -   The route to Digital Business (2015)
 
 Introduction - Part H - IaaS I {#s:cloud-fundamentals-h}
@@ -182,9 +149,7 @@ Introduction - Part H - IaaS I {#s:cloud-fundamentals-h}
 **H: Cloud Infrastructure I**
 
 -   Comments on trends in the data center and its technologies
-
 -   Clouds physically across the world
-
 -   Green computing and fraction of world's computing ecosystem in
     clouds
 
@@ -198,9 +163,7 @@ Introduction - Part I - IaaS II {#s:cloud-fundamentals-i}
 
 -   Gartner hypecycle and priority matrix on Infrastructure Strategies
     and Compute Infrastructure
-
 -   Containers compared to virtual machines
-
 -   The emergence of artificial intelligence as a dominant force
 
 Introduction - Part J - Cloud Software {#s:cloud-fundamentals-j}
@@ -213,18 +176,12 @@ Introduction - Part J - Cloud Software {#s:cloud-fundamentals-j}
 
 -   HPC-ABDS(High Performance Computing enhanced Apache Big Data Stack)
     with over 350 software packages and how to use each of 21 layers
-
 -   Google's software innovations
-
 -   MapReduce in pictures
-
 -   Cloud and HPC software stacks compared
-
 -   Components need to support cloud/distributed system programming
-
 -   Single Program/Instruction Multiple Data SIMD SPMD
 
-.
 
 Introduction - Part K - Applications I {#s:cloud-fundamentals-k}
 --------------------------------------
@@ -236,10 +193,8 @@ Introduction - Part K - Applications I {#s:cloud-fundamentals-k}
 
 -   Big Data in Industry/Social media; a lot of best examples have NOT
     been updated so some slides old but still make the correct points
-
 -   Some of the business usage patterns from NIST
 
-.
 
 Introduction - Part L - Applications II {#s:cloud-fundamentals-l}
 ---------------------------------------
@@ -250,9 +205,7 @@ Introduction - Part L - Applications II {#s:cloud-fundamentals-l}
 **L: Cloud Applications II**
 
 -   Clouds in science where area called cyberinfrastructure;
-
 -   The science usage pattern from NIST
-
 -   Artificial Intelligence from Gartner
 
 Introduction - Part M - Applications III {#s:cloud-fundamentals-m}
@@ -264,9 +217,7 @@ Introduction - Part M - Applications III {#s:cloud-fundamentals-m}
 **M: Cloud Applications III**
 
 -   Characterize Applications using NIST approach
-
 -   Internet of Things
-
 -   Different types of MapReduce
 
 Introduction - Part N - Parallelism {#s:cloud-fundamentals-n}
@@ -278,9 +229,7 @@ Introduction - Part N - Parallelism {#s:cloud-fundamentals-n}
 **N: Clouds and Parallel Computing**
 
 -   Parallel Computing in general
-
 -   Big Data and Simulations Compared
-
 -   What is hard to do?
 
 Introduction - Part O - Storage {#s:cloud-fundamentals-o}
@@ -292,7 +241,6 @@ Introduction - Part O - Storage {#s:cloud-fundamentals-o}
 **O: Cloud Storage**
 
 -   Cloud data approaches
-
 -   Repositories, File Systems, Data lakes
 
 Introduction - Part P - HPC in the Cloud {#s:cloud-fundamentals-p}
@@ -304,9 +252,7 @@ Introduction - Part P - HPC in the Cloud {#s:cloud-fundamentals-p}
 **P: HPC and Clouds**
 
 -   The Branscomb Pyramid
-
 -   Supercomputers versus clouds
-
 -   Science Computing Environments
 
 Introduction - Part Q - Analytics and Simulation {#s:cloud-fundamentals-q}
@@ -318,9 +264,7 @@ Introduction - Part Q - Analytics and Simulation {#s:cloud-fundamentals-q}
 **Q: Comparison of Data Analytics with Simulation**
 
 -   Structure of different applications for simulations and Big Data
-
 -   Software implications
-
 -   Languages
 
 Introduction - Part R - Jobs {#s:cloud-fundamentals-r}
@@ -332,11 +276,8 @@ Introduction - Part R - Jobs {#s:cloud-fundamentals-r}
 **R: Availability of Jobs in different areas**
 
 -   Computer Engineering
-
 -   Clouds
-
 -   Design
-
 -   Data Science/Engineering
 
 Introduction - Part S - The Future {#s:cloud-fundamentals-s}
@@ -350,11 +291,8 @@ Introduction - Part S - The Future {#s:cloud-fundamentals-s}
 -   Gartner cloud computing hypecycle and priority matrix highlights:
 
     -   Hyperscale computing
-
     -   Serverless and FaaS
-
     -   Cloud Native
-
     -   Microservices
 
 Introduction - Part T - Security {#s:cloud-fundamentals-t}
@@ -366,7 +304,6 @@ Introduction - Part T - Security {#s:cloud-fundamentals-t}
 **T: Security**
 
 -   CIO Perspective
-
 -   Blockchain
 
 Introduction - Part U - Fault Tolerance {#s:cloud-fundamentals-u}
@@ -378,7 +315,6 @@ Introduction - Part U - Fault Tolerance {#s:cloud-fundamentals-u}
 **U: Fault Tolerance**
 
 -   S3 Fault Tolerance
-
 -   Application Requirements
 
 © 2018 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub
