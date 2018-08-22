@@ -7,6 +7,15 @@ organize lectures and post lectures online of the once we have
 create mp4 from ppt, work with gregor and geoffrey to post mp4s to youtube
 
 
+* infarstaructur: bo pulashti, grading 516 technology
+* lectures, grading: quianquian, lijiang (534)
+
+# immediate tasks
+
+activate piazza
+activate google through form
+integrate intr task
+
 # 516
 
 ## sharing student work
