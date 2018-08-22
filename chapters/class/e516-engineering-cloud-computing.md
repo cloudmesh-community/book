@@ -1,5 +1,7 @@
 # e516: Engineering Cloud Computing
 
+* Lecture Notes: <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub>
+* Piazza: <https://piazza.com/iu/fall2018/516>
 * Indiana University
 * Fall 2018
 * Faculty: Dr. Gregor von Laszewski (laszewski@gmail.com)
