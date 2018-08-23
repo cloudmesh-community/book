@@ -29,7 +29,7 @@ $
 > Example for a video
 
 
-[:1234: Slides 10](TBD)
+[:scroll: Slides 10](TBD)
 
 > Example for slides
 
