@@ -1,5 +1,15 @@
 # e516: Engineering Cloud Computing
 
+---
+
+**:mortar_board: Learning Outcome**
+
+* This is the syllabus of the class. It will be updated throughout the semester, so look here for changes.
+* Identify if this is the right class for you.
+* Enroll if you want to take this class.
+
+---
+
 * Lecture Notes: <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub>
 * Piazza: <https://piazza.com/iu/fall2018/516>
 * Indiana University
