@@ -7,6 +7,7 @@
 * This is the syllabus of the class. It will be updated throughout the semester, so look here for changes.
 * Identify if this is the right class for you.
 * Enroll if you want to take this class.
+* Avoid an incomplete.
 
 ---
 
