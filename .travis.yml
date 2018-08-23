@@ -1,9 +1,18 @@
 install:
   - sudo apt-get update
-  - sudo apt-get install pandoc
-  - sudo apt-get install graphviz
+  - wget https://hackage.haskell.org/package/pandoc-2.2.3.2/pandoc-2.2.3.2.tar.gz
+  - tar xvzf pandoc-2.2.3.2.tar.gz
+  - cd pandoc-2.2.3.2
+  - stack setup
+  - stack install
+
+env:
+  - PATH=$PATH:~/.local/bin
 
 script:
-  - cd big-data-applications
+  - cd ~/big-data-applications
+  - pandoc --version
+  - make
+  - cd ~/cloud
   - pandoc --version
   - make
