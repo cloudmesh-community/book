@@ -1,5 +1,6 @@
 install:
   - sudo apt-get update
+  - sudo apt-get install graphviz
   - wget https://hackage.haskell.org/package/pandoc-2.2.3.2/pandoc-2.2.3.2.tar.gz
   - wget -qO- https://get.haskellstack.org/ | sh
   - tar xvzf pandoc-2.2.3.2.tar.gz
