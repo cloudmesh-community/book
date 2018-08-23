@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Outcome**
+**:mortar_board: Learning Objectives**
 
 * This is the syllabus of the class. It will be updated throughout the semester, so look here for changes.
 * Identify if this is the right class for you.
