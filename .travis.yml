@@ -11,9 +11,10 @@ env:
   - PATH=$PATH:~/.local/bin
 
 script:
-  - cd ~/big-data-applications
+  - pwd
+  - cd ~/cloudmesh-community/book/big-data-applications
   - pandoc --version
   - make
-  - cd ~/cloud
+  - cd ~/cloudmesh-community/book/cloud
   - pandoc --version
   - make
