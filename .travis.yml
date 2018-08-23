@@ -1,6 +1,7 @@
 install:
   - sudo apt-get update
   - wget https://hackage.haskell.org/package/pandoc-2.2.3.2/pandoc-2.2.3.2.tar.gz
+  - wget -qO- https://get.haskellstack.org/ | sh
   - tar xvzf pandoc-2.2.3.2.tar.gz
   - cd pandoc-2.2.3.2
   - stack setup
