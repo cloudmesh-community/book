@@ -1,5 +1,16 @@
 # Definition of Cloud Computing
 
+---
+
+**:mortar_board: Learning Outcome**
+
+* Compare different definitions of cloud computing.
+* Review the History of cloud computing.
+* Identify trends.
+* The current hot job is *data engineer* which is sought after more than data scientists (a new trend).
+
+---
+
 We are looking at some of the definitions of cloud computing and
 trends in the following presentation.
 
