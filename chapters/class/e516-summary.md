@@ -1,5 +1,16 @@
 # E516 Summary
 
+---
+
+**:mortar_board: Learning Outcome**
+
+* Obtain an overview of the topics we explore.
+* Odentify topics that you are especially interested in.
+* The main deliverable of this class is a project. 
+* You **must** dedicate sufficent time on continious basis for this class.
+
+---
+
 Presentation about this Document
 
 * [:clapper: Introduction](https://www.youtube.com/watch?v=w3o2EHaFx3o)
