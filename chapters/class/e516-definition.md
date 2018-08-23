@@ -7,7 +7,7 @@
 * Compare different definitions of cloud computing.
 * Review the History of cloud computing.
 * Identify trends.
-* The current hot job is *data engineer* which is sought after more than data scientists (a new trend). You have chosen the right course ::-):
+* The current hot job is *data engineer* which is sought after more than data scientists (a new trend). You have chosen the right course :smile:
 
 ---
 
