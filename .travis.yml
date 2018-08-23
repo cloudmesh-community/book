@@ -12,9 +12,9 @@ env:
 
 script:
   - pwd
-  - cd ~/cloudmesh-community/book/big-data-applications
+  - cd ~/build/cloudmesh-community/book/big-data-applications
   - pandoc --version
   - make
-  - cd ~/cloudmesh-community/book/cloud
+  - cd ~/build/cloudmesh-community/book/cloud
   - pandoc --version
   - make
