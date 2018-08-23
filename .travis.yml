@@ -7,6 +7,7 @@ install:
   - cd pandoc-2.2.3.2
   - stack setup
   - stack install
+  - npm install --global mermaid-filter
 
 env:
   - PATH=$PATH:~/.local/bin
