@@ -69,10 +69,6 @@ Leap Detection (L)
 
 : We need to be able to deal with technology Leaps
 
-Rapid evolution (L)
-
-: We notice that in our field technology changes take place almost every 6 month
-
 Learning Willingness (L)
 
 : We need to constantly learn to keep up as technology changes every 6 month
