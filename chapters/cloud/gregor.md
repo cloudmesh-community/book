@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives:**
+**:mortar_board: Learning Objectives**
 
 * Identify intereting topics you can do research in with Dr. von Laszewski.
 * Decide if you also like to do an independent study in addition to the class with him.
