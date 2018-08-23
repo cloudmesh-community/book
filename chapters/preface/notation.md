@@ -33,7 +33,9 @@ $
 
 > Example for slides
 
+:mortar_board:
 
+> A set of learning objectives
 
 ---
 
