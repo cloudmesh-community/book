@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Outcome**
+**:mortar_board: Learning Objectives**
 
 * Obtain an overview of the topics we explore.
 * Odentify topics that you are especially interested in.
