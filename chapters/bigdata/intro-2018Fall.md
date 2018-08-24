@@ -2,7 +2,7 @@
 **Still under work, not ready yet.**
 # E534 Big Data Applications
 
-This is an overview course of Big Data Applications covering a broad range of problems and solutions. It covers cloud computing technologies and includes a project. Also, lgorithms are introduced and illustrated.
+This is an overview course of Big Data Applications covering a broad range of problems and solutions. It covers cloud computing technologies and includes a project. Also, algorithms are introduced and illustrated.
 
 ## Part-I: Course Motivations
 
