@@ -4,13 +4,20 @@
 
 This is an overview course of Big Data Applications covering a broad range of problems and solutions. It covers cloud computing technologies and includes a project. Also, algorithms are introduced and illustrated.
 
-## Part-1: Course Motivations
-
+## Introduction Part-1: General Remarks including Hype curves
 * [:scroll: 1. General Remarks including Hype curves](https://drive.google.com/open?id=0B1YZSKYkpykjeEdNcXBySU40dGc)
+
+- Technology trends
+- Industry reports
+
+## Introduction Part-2: Data Deluge
 * [:clapper: 2. Data Deluge](https://drive.google.com/open?id=0B1YZSKYkpykjYkNlVWQzeE8yRTg)
 * [:scroll: 2. Data Deluge](https://drive.google.com/open?id=0B1YZSKYkpykjTkVXLXhXbTlVVjQ)
+
+ ## Introduction Part-3: Jobs
 * [:clapper: 3. Jobs](https://drive.google.com/open?id=0B1YZSKYkpykjamlVTTBGajA4bU0)
 * [:scroll: 3. Jobs](https://drive.google.com/open?id=0B1YZSKYkpykjdVZGYVVzNzZtNnM)
+
 * [:clapper: 4a. Industry Trends: technology trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)
 * [:scroll: 4a. Industry Trends: technology trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjbkN5OFBYOERWQ3c)
 * [:clapper: 4b. Industry Trends: technology adoption trends](https://drive.google.com/open?id=0B1YZSKYkpykjbVlUb1FvbnE5LXc)
