@@ -4,7 +4,7 @@
 
 This is an overview course of Big Data Applications covering a broad range of problems and solutions. It covers cloud computing technologies and includes a project. Also, algorithms are introduced and illustrated.
 
-## Part-I: Course Motivations
+## Part-1: Course Motivations
 
 * [:scroll: 1. General Remarks including Hype curves](https://drive.google.com/open?id=0B1YZSKYkpykjeEdNcXBySU40dGc)
 * [:clapper: 2. Data Deluge](https://drive.google.com/open?id=0B1YZSKYkpykjYkNlVWQzeE8yRTg)
