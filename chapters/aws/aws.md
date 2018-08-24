@@ -108,4 +108,13 @@ from https://libcloud.apache.org/about.html
 
 ### Boto
 
+
+
+Boto is a Python software development kit developed by Amazon to access its Amazon Web Services (AWS). It allows acces to services such as S3 and EC2. It is using object oriented programming paradigms ta acess the lower level services. The advantage is that it is written by Amazon and thus we assume it will be developed with high quality. However this is also its limitation as in contrast to libcloud it does not support other cloud providers. Hence it bares the risk of vendor lockin.
+
+Documentation about boto can be found at 
+
+* https://boto3.readthedocs.io/en/latest/
 * <https://github.com/boto/boto3>
+
+
