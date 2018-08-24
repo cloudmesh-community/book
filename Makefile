@@ -1,8 +1,8 @@
-all: cloud bigdata
+all: cloud-epub bigdata-epub
 	echo done
 
-cloud:
+cloud-epub:
 	cd cloud; make; make publish
 
-bigdata:
+bigdata-epub:
 	cd big-data-applications; make; make publish
