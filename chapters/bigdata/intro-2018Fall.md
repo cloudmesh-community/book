@@ -15,11 +15,19 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 [:scroll: 2. Data Deluge](https://drive.google.com/open?id=0B1YZSKYkpykjTkVXLXhXbTlVVjQ)
 
--
+- Several examples of rapid data and information growth in different areas
+
+- Value of data and analytics
 ## Introduction Part-3: Jobs
 [:clapper: 3. Jobs](https://drive.google.com/open?id=0B1YZSKYkpykjamlVTTBGajA4bU0)
 
 [:scroll: 3. Jobs](https://drive.google.com/open?id=0B1YZSKYkpykjdVZGYVVzNzZtNnM)
+
+- Jobs opportunities in the areas: data science, clouds and computer science and computer engineering
+
+- Jobs demands in different countries and companies.
+
+- Trends and forecast of jobs demands in the future.
 ## Introduction part-4: Industry trends
 [:clapper: 4a. Industry Trends: technology trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)
 
