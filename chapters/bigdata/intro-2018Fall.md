@@ -58,10 +58,8 @@ This is an overview course of Big Data Applications covering a broad range of pr
  [:clapper: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjamJLNTZvYndyN2M)
  
  [:scroll: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjM0ZIeWgwMkhkcmM)
-## Introduction part-13: Sicence clouds
- [:scroll: 13. Science Clouds
- 
- [Internet of Things: Cloud Applications in Research](https://drive.google.com/open?id=0B1YZSKYkpykjODk2V19LX1Bxc2c)
+## Introduction part-13: Cloud Application in Research
+ [:scroll: 13. Cloud Applications in Research: science clouds and internet of things](https://drive.google.com/open?id=0B1YZSKYkpykjODk2V19LX1Bxc2c)
 ## Introduction part-14: Software Ecosystems: Parallel computing and MapReduce
  [:scroll: 14. Software Ecosystems: Parallel Computing and MapReduce](https://drive.google.com/open?id=0B1YZSKYkpykjNTZhcllDMmJ4NGM)
 ## Introduction part-15: Opportunities at Universities
