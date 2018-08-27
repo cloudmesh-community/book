@@ -54,7 +54,9 @@ This is an overview course of Big Data Applications covering a broad range of pr
 [:clapper: 6b. Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=0B1YZSKYkpykjQzFQSTBpXzJBa28)
 
 [:scroll: 6b. Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=0B1YZSKYkpykjcTE2a2ExdUt2UzQ)
-- Industry adopted clouds which are attractive for data analytics, including big companies examples are Google, Amazon, Microsoft and so on.
+- Industry adopted clouds which are attractive for data analytics, including big companies, examples are Google, Amazon, Microsoft and so on.
+- some examples of development: AWS quarterly revenue, critical capabilities public cloud infrastructure as a service.
+- Blockchain: ledgers redone, blockchain constortia.
 
 ## Introduction part-7: Research Model
 [:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=0B1YZSKYkpykjWXNtTnYxVGR2ZUE)
