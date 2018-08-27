@@ -134,6 +134,7 @@ CHAPTER_516=\
   chapters/cloud/gregor.md\
   chapters/class/e516-engineering-cloud-computing.md\
   chapters/class/e516-summary.md\
+  chapters/class/volumes.md\
   chapters/class/e516-definition.md\
   chapters/SECTION-REFERENCES.md
 
