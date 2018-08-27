@@ -45,7 +45,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 [:scroll: 5. Digital Disruption and Transformation ](https://drive.google.com/open?id=0B1YZSKYkpykjNE9SYmtJeElhN1U)
 
-- the past displaced by digital disruption
+- The past displaced by digital disruption
 ## Introduction part-6: Computing Model
 [:clapper: 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjQS1sNEpOdlh5ZG8)
 
@@ -60,10 +60,12 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 ## Introduction part-7: Research Model
 [:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=0B1YZSKYkpykjWXNtTnYxVGR2ZUE)
+- The 4 paradigm of scientific research: Theory,Experiment and observation,Simulation of theory or model,Data-driven.
 ## Introduction part-8: Data Science Pipeline
  [:clapper: 8. Data Science Pipeline](https://drive.google.com/open?id=0B1YZSKYkpykjbWxXMVBETms0WEU)
  
  [:scroll: 8. Data Science Pipeline](https://drive.google.com/open?id=0B1YZSKYkpykjUVplV1kwVFpkRlE)
+- 
 ## Introduction part-9: Physical as an Application Example 
  [:scroll: 9. Physics as an Application Example](https://drive.google.com/open?id=0B1YZSKYkpykjSDFmdnVhTWxUVVk)
 ## Introduction part-10: Technology Example
