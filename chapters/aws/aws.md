@@ -92,8 +92,29 @@ commands: cp, ls, mb, mv, presign, rb, rm, sync, website
 
 ### libcloud
 
+"Libcloud is a Python library for interacting with many of the popular cloud service providers using a unified API. It was created to make it easy for developers to build products that work between any of the services that it supports.
+
+Resource you can manage with Libcloud are divided in the following categories:
+
+Cloud Servers and Block Storage - services such as Amazon EC2 and Rackspace CloudServers
+Cloud Object Storage and CDN - services such as Amazon S3 and Rackspace CloudFiles
+Load Balancers as a Service - services such as Amazon Elastic Load Balancer and GoGrid LoadBalancers
+DNS as a Service - services such as Amazon Route 53 and Zerigo
+For more information about the features and supported providers, please refer to the [documentation](https://libcloud.readthedocs.org/en/latest/)."
+from https://libcloud.apache.org/about.html
+
+
 * <https://libcloud.apache.org/>
 
 ### Boto
 
+
+
+Boto is a Python software development kit specifically targeting  Amazon Web Services (AWS). It allows acces to services such as S3 and EC2. It is using object oriented programming paradigms ta acess the lower level services. The advantage is that it is written just for  Amazon and thus we assume it will be developed with high quality due to its specialization. However this is also its limitation as in contrast to libcloud it does not support other cloud providers. Hence it bares the risk of vendor lockin. Boto is maintained in github.
+
+Documentation about boto can be found at 
+
+* https://boto3.readthedocs.io/en/latest/
 * <https://github.com/boto/boto3>
+
+

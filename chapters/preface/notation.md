@@ -29,11 +29,13 @@ $
 > Example for a video
 
 
-[:roller: Slides 10](TBD)
+[:scroll: Slides 10](TBD)
 
 > Example for slides
 
+:mortar_board:
 
+> A set of learning objectives
 
 ---
 
