@@ -32,7 +32,7 @@ This has however resulted in a lareg number of duplicated material especially in
 
 ## Project Reports
 
-The goal of the class is to use open ssource technology to also write your technical reports. As a beneficial side product, we are able to disstribute all previous reporst from students to you. IN your reports you will be doing a similar report, but will not use the same topic, without a significant improvement from a report already delivered in that area. 
+The goal of the class is to use open ssource technology to also write your technical reports. As a beneficial side product, we are able to disstribute all previous reporst from students to you. In your reports you will be doing a similar report, but will not use the same topic, without a significant improvement from a report already delivered in that area. 
 For big data we have more than 1000 data sets we point to. I am sure you can do a unique project. For engenering cloud there are recently so many new technologies sthat there is not much chance of an overlap. TA's will review your project proposal, but it is your respnssibility to make ssure they are unique.
 
 Please note that we do not make any quality assumtionss to the publisshed papers. It is up to you to identify outstanding papers.
