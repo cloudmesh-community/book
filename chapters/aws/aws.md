@@ -4,7 +4,7 @@
 
 ## AWS Products
 
-Amazon Web Services offers a large number of prodicst that are centered around their cloud services. These services have grown considerably over the years from the core 
+Amazon Web Services offers a large number of products that are centered around their cloud services. These services have grown considerably over the years from the core 
 offering realted to virtual machine (EC2) and datastorage (S3). An overview of them is provided by Amazon in the following document:
 
 * <https://d0.awsstatic.com/whitepapers/aws-overview.pdf>
