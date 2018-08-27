@@ -9,4 +9,4 @@
 
 This video gives a short introduction to the Azure portal:
 
-[![Get Started with Azure Portal](https://sec.ch9.ms/ch9/9dfa/6a9c2d39-5179-4547-b169-0a67d8319dfa/GetStartedWithAzurePortal_960.jpg)](https://channel9.msdn.com/Blogs/Azure/Get-Started-with-Azure-Portal/player)
+[:clapper: Introduction to Azure Portal](https://channel9.msdn.com/Blogs/Azure/Get-Started-with-Azure-Portal/player)
