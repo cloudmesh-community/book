@@ -1,6 +1,5 @@
 
-
-# Introduction to Cloud Computing
+## Introduction to Cloud Computing
 
 
 This introduction to Cloud Computing covers all aspects of the field

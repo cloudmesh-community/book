@@ -1,5 +1,17 @@
 # Definition of Cloud Computing
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Compare different definitions of cloud computing.
+* Review the History of cloud computing.
+* Identify trends.
+* The current hot job is *data engineer* which is sought after more than data scientists (a new trend). You have chosen the right course :smile:
+* Be TALLL to be successful in cloud computing.
+
+---
+
 We are looking at some of the definitions of cloud computing and
 trends in the following presentation.
 
@@ -57,10 +69,6 @@ Longevity Planning (L)
 Leap Detection (L)
 
 : We need to be able to deal with technology Leaps
-
-Rapid evolution (L)
-
-: We notice that in our field technology changes take place almost every 6 month
 
 Learning Willingness (L)
 
