@@ -29,16 +29,20 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 - Trends and forecast of jobs demands in the future.
 ## Introduction part-4: Industry trends
-[:clapper: 4a. Industry Trends: technology trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)
+[:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)
 
-[:scroll: 4a. Industry Trends: technology trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjbkN5OFBYOERWQ3c)
+[:scroll: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjbkN5OFBYOERWQ3c)
 
-[:clapper: 4b. Industry Trends: technology adoption trends](https://drive.google.com/open?id=0B1YZSKYkpykjbVlUb1FvbnE5LXc)
+[:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=0B1YZSKYkpykjbVlUb1FvbnE5LXc)
 
-[:scroll: 4b. Industry Trends: technology adoption trends](https://drive.google.com/open?id=0B1YZSKYkpykjXzg5dXI3eHVHd1U)
+[:scroll: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=0B1YZSKYkpykjXzg5dXI3eHVHd1U)
 
-[:scroll: 4c. Industry Trends: 2015 onwards](https://drive.google.com/open?id=0B1YZSKYkpykja3RMTmtVVWlQVmc)
+[:scroll: 4c. Industry Trends: Voice and HCI, cars,Deep learning](https://drive.google.com/open?id=0B1YZSKYkpykja3RMTmtVVWlQVmc)
+- Many technology trends through end of 2014 and 2015 onwards, examples in different fields
+
+- Voice and HCI, Cars Evolving and Deep learning 
 ## Introduction part-5: Digital Disruption and Transfromation
+
 [:scroll: 5. Digital Disruption and Transformation ](https://drive.google.com/open?id=0B1YZSKYkpykjNE9SYmtJeElhN1U)
 ## Introduction part-6: Computing Model
 [:clapper: 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjQS1sNEpOdlh5ZG8)
