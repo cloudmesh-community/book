@@ -70,8 +70,10 @@ This is an overview course of Big Data Applications covering a broad range of pr
 - Criteria for Data Science platform.
 ## Introduction part-9: Physical as an Application Example 
  [:scroll: 9. Physics as an Application Example](https://drive.google.com/open?id=0B1YZSKYkpykjSDFmdnVhTWxUVVk)
+ - Physics as an application example.
 ## Introduction part-10: Technology Example
  [:scroll: 10. Technology Example: Recommender Systems I](https://drive.google.com/open?id=0B1YZSKYkpykjd09FN3ZnWEFsQlk)
+ -
 ## Introduction part-11: Exploring data bags and spaces
  [:clapper: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjOXIxTS00NXRJdms)
  
