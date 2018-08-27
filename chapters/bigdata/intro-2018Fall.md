@@ -44,6 +44,8 @@ This is an overview course of Big Data Applications covering a broad range of pr
 ## Introduction part-5: Digital Disruption and Transfromation
 
 [:scroll: 5. Digital Disruption and Transformation ](https://drive.google.com/open?id=0B1YZSKYkpykjNE9SYmtJeElhN1U)
+
+- the past displaced by digital disruption
 ## Introduction part-6: Computing Model
 [:clapper: 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjQS1sNEpOdlh5ZG8)
 
