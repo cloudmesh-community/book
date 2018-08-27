@@ -79,6 +79,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
  [:clapper: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjOXIxTS00NXRJdms)
  
  [:scroll: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjd0d4OWdqRThKaEk)
+ - Distances in funny spaces, about "real" spaces and how to use diatances.
 ## Introduction part-12: Another Example: web search Information Retrieval
  [:clapper: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjamJLNTZvYndyN2M)
  
