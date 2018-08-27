@@ -65,7 +65,9 @@ This is an overview course of Big Data Applications covering a broad range of pr
  [:clapper: 8. Data Science Pipeline](https://drive.google.com/open?id=0B1YZSKYkpykjbWxXMVBETms0WEU)
  
  [:scroll: 8. Data Science Pipeline](https://drive.google.com/open?id=0B1YZSKYkpykjUVplV1kwVFpkRlE)
-- 
+- DIKW process:Data, Information, Knowledge, Wisdom and Decision.
+- Example of Google Maps/navigation. 
+- Criteria for Data Science platform.
 ## Introduction part-9: Physical as an Application Example 
  [:scroll: 9. Physics as an Application Example](https://drive.google.com/open?id=0B1YZSKYkpykjSDFmdnVhTWxUVVk)
 ## Introduction part-10: Technology Example
