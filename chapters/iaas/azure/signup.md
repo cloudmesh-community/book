@@ -15,7 +15,15 @@ After registration you will be  provided with twelf months of free usage of a fe
 
 The services that you have access to include:
 
-TODO: missing information here
+* Linux Virtual Machines (750 Hours)
+* Windows Virtual Machines (750 Hours)
+* Managed Disks (64 GB X 2)
+* Blob Storage (5 GB)
+* File Storage (5 GB)
+* SQL Database (250 GB)
+* Azure Cosmos DB (5 GB)
+* Bandwidth (Data Transfer 15 GB)
+* In case Azure changes the product list, please refer to the official page for a full list of free products: https://azure.microsoft.com/en-us/free/
 
 ## Introduction to the Azure Portal
 
