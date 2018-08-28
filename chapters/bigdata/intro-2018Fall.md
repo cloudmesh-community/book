@@ -77,8 +77,6 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 [:scroll: 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=1IB3slfjTH-ygTNbQHhBQGqDdT9fpdYYp)
 
-[:scroll: 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=1IB3slfjTH-ygTNbQHhBQGqDdT9fpdYYp)
-
 [:scroll: 6a.  without embedded videos: Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=11FDYMV_ySAHQEY5YFlVrFzCoEUbnpWNr)
 
 [:clapper: 6b.  Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=1M8wrsLawFnbyBhAAgWS_fulgzMSIAz3P)
@@ -117,6 +115,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
  [:clapper: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjamJLNTZvYndyN2M)
  
  [:scroll: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjM0ZIeWgwMkhkcmM)
+ 
 ## Introduction part-13: Cloud Application in Research
  [:scroll: 13. Cloud Applications in Research: Science Clouds and Internet of Things](https://drive.google.com/open?id=0B1YZSKYkpykjODk2V19LX1Bxc2c)
 ## Introduction part-14: Software Ecosystems: Parallel computing and MapReduce
