@@ -35,7 +35,7 @@ $
 
 :mortar_board:
 
-> A set of learning objectives with the :mortar_board: emoji
+> A set of learning objectives with the `:mortar_board:` emoji
 
 ---
 
