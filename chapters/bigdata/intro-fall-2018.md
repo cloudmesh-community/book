@@ -114,28 +114,28 @@ A current set is available at:
 
 - Distances in funny spaces, about "real" spaces and how to use diatances.
 
-## Introduction part-12: Another Example: Web Search Information Retrieval 
+## Introduction part-12: Another Example: Web Search Information Retrieval :o:
 
 * [:clapper: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjamJLNTZvYndyN2M)
 * [:scroll: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjM0ZIeWgwMkhkcmM)
  
-## Introduction part-13: Cloud Application in Research
+## Introduction part-13: Cloud Application in Research :o:
 
 * [:scroll: 13. Cloud Applications in Research: Science Clouds and Internet of Things](https://drive.google.com/open?id=0B1YZSKYkpykjODk2V19LX1Bxc2c)
 
-## Introduction part-14: Software Ecosystems: Parallel Computing and MapReduce
+## Introduction part-14: Software Ecosystems: Parallel Computing and MapReduce :o:
 
 * [:scroll: 14. Software Ecosystems: Parallel Computing and MapReduce](https://drive.google.com/open?id=0B1YZSKYkpykjNTZhcllDMmJ4NGM)
 
 <!--
 
-## Introduction part-15: Opportunities at Universities
+## Introduction part-15: Opportunities at Universities :o:
 
 * [:clapper: 15. Opportunities at Universities](https://drive.google.com/open?id=0B1YZSKYkpykjT3lCcFlkT0NSRUk)
 * [:scroll: 15. Opportunities at Universities](https://drive.google.com/open?id=0B1YZSKYkpykjZ1RrZEtaSjNiS0U)
  -->
  
-## Introduction part-15: Conclusions :o:
+## Introduction part-16: Conclusions :o:
 
 * [:clapper: 15. Conclusions](https://drive.google.com/open?id=1r8n-KVp2gnaamjSSsIiK5DLYi5hbAMK-)
 * [:scroll: 15. Conclusions](https://drive.google.com/open?id=1pEkhIhF1syhxY1iZX287-xc7qmBcjBkP)
@@ -144,13 +144,6 @@ A current set is available at:
 - sdom and Decision.
 - Example of Google Maps/navigation. 
 - Criteria for Data Science platform.
-
-## Introduction part-16: Conclusions
-
-
-* [:clapper: 16. Conclusions](https://drive.google.com/open?id=1r8n-KVp2gnaamjSSsIiK5DLYi5hbAMK-)
-* [:scroll: 16. Conclusions](https://drive.google.com/open?id=1pEkhIhF1syhxY1iZX287-xc7qmBcjBkP)
-* [:pencil: 16. Conclusions](https://drive.google.com/open?id=1gt5ClfCnn72bWJxlnbTCAueSJ-25zBC7)
 
 
 
