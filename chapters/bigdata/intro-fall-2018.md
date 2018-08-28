@@ -27,7 +27,6 @@ This is an overview course of Big Data Applications covering a broad range of pr
 * [:pencil: 2.a + 2.b](https://drive.google.com/open?id=1CNZtR1yzNfJ3ezapZbEQl15dEcSPRO-M)
 
 - Several examples of rapid data and information growth in different areas
-
 - Value of data and analytics
 
 ## Introduction Part-3: Jobs
@@ -43,14 +42,12 @@ This is an overview course of Big Data Applications covering a broad range of pr
 ## Introduction part-4: Industry trends
 
 <!--* [:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)-->
-
-* [:pencil: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=144EUUWDjB7KSf2F-lGx83DOxx45eZiVm)
-
 <!--* [:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi)-->
 
+* [:pencil: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=144EUUWDjB7KSf2F-lGx83DOxx45eZiVm)
 * [:scroll: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi)
-* [:pencil: 4b.Industry Trends: 2015 onwards](https://drive.google.com/open?id=1UAYnU6Zy6yhliYk0JGJlf3FsNLUFxBP9)
-* [:pencil: 4c.Industry Trends: Voice and HCI, cars,Deep learning](https://drive.google.com/open?id=1ZAnywdhKqiGpaRtEdcwyEnFWaFt9Mc8u)
+* [:pencil: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=1UAYnU6Zy6yhliYk0JGJlf3FsNLUFxBP9)
+* [:pencil: 4c. Industry Trends: Voice and HCI, cars,Deep learning](https://drive.google.com/open?id=1ZAnywdhKqiGpaRtEdcwyEnFWaFt9Mc8u)
 
 - Many technology trends through end of 2014 and 2015 onwards, examples in different fields
 - Voice and HCI, Cars Evolving and Deep learning 
@@ -90,6 +87,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
 - DIKW process:Data, Information, Knowledge, Wisdom and Decision.
 - Example of Google Maps/navigation. 
 - Criteria for Data Science platform.
+
 ## Introduction part-9: Physical as an Application Example 
 
 * [:scroll: 9. Physics as an Application Example](https://drive.google.com/open?id=0B1YZSKYkpykjSDFmdnVhTWxUVVk)
@@ -107,6 +105,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 * [:clapper: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjOXIxTS00NXRJdms)
 * [:scroll: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjd0d4OWdqRThKaEk)
+
 - Distances in funny spaces, about "real" spaces and how to use diatances.
 
 ## Introduction part-12: Another Example: web search Information Retrieval
