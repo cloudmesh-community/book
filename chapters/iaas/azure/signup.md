@@ -10,8 +10,8 @@ You will see an image such as
 
 ![](images/reg.png)
 
-On that image you click the  `Start free`button to obtainm a free one year account. YOu will have to either create a new Microsoft account or use the one from indiana university which will be your iu id follwoed byt the @iu.edu domain. You will be redirected to the single sign on from IU to proceed. If you use another e-mail you can certainly do that and you free account sis not associated with the IU account. This could beyour skype acount or some other e-mail.
-After registration you will be  provided with twelf months of free usage of a few selected services and $200 credits for 30 days. 
+On that image you click the `Start free` button to obtain a free one year account. You will have to either create a new Microsoft account or use the one from indiana university which will be your iu id follwoed by the @iu.edu domain. You will be redirected to the single sign on from IU to proceed. If you use another e-mail you can certainly do that and you free account sis not associated with the IU account. This could be your skype acount or some other e-mail.
+After registration you will be provided with 12 months of free usage of a few selected services and $200 credits for 30 days. 
 
 The services that you have access to include:
 
@@ -41,7 +41,7 @@ TBD
 
 ## Stopping the VM
 
-It is of utmost important to stop your VMS once they are not in used, or you get continiously charged. The portal allows you to see the list of VM that you run as follows
+It is the most important to stop your VMS once they are not in used, or you get continiously charged. The portal allows you to see the list of VM that you run as follows
 
 TBD
 
