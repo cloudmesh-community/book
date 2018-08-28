@@ -1,4 +1,4 @@
-# Introduction to 534
+# Introduction to the Course
 
 created from https://drive.google.com/drive/folders/0B1YZSKYkpykjbnE5QzRldGxja3M
 
