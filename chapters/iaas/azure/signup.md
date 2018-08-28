@@ -1,6 +1,6 @@
-# Microsoft Azure 
+## Microsoft Azure 
 
-## Registration
+### Registration
 
 In order for you to register in Azure, you will need to go to 
 
@@ -17,13 +17,13 @@ The services that you have access to include:
 
 TODO: missing information here
 
-## Introduction to the Azure Portal
+### Introduction to the Azure Portal
 
 Azure can be accessed via a portal. An introductory video from Microsoft provides you with some elementary information:
 
 [:clapper: Introduction to Azure Portal](https://channel9.msdn.com/Blogs/Azure/Get-Started-with-Azure-Portal/player)
 
-## Starting a VM
+### Starting a VM
 
 Now we like to ntroduce you how to start a VM. Please note that VMS do cost and reduce your free hours on Azure. Hence you need to make sure you carefully review the cahrging rates and chose VM sizes and tyep that minimize your charges. 
 
@@ -31,7 +31,7 @@ A VM can be started through the Portal as follows:
 
 TBD
 
-## Stopping the VM
+### Stopping the VM
 
 It is of utmost important to stop your VMS once they are not in used, or you get continiously charged. The portal allows you to see the list of VM that you run as follows
 
@@ -40,7 +40,7 @@ TBD
 To shut a VM down, please do the following:
 
 
-## Comprehension Exercise
+### Comprehension Exercise
 
 1. What is the difference beteew terminating, shutting down, and suspension? 
 2. Do I get sharged when the VM is suspended, terminated, sut down?

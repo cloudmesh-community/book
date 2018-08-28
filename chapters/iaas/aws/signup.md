@@ -1,11 +1,11 @@
-# Amazon Web Services
+## Amazon Web Services
 
-## Introduction
+### Introduction
 Amazon Web Services (AWS) is a cloud platform that provides a large number os services for individuals and enterprises. You can get an overview of the 
 AWS offering at [Amazon Web Services Overview](aws.md). This section will guide through the processes of creating an AWS account and explain the free tier 
 details so that you can leverage the tools and products available in AWS for your work and research.
 
-## Creating an account
+### Creating an account
 
 In order to create a AWS account you will need the following
 
@@ -29,7 +29,7 @@ right corner in your account. Once you are in the AWS console the services tab i
 
 ![](images/aws_console.png)
 
-## Understanding the free tier
+### Understanding the free tier
 
 AWS provides a set of services free of charge. These free services are to allow new users test and experiment with various AWS services without worrying about any cost. 
 Free services are provided as a product that is free until a certain amount of usage, that is if you exceed those limits you will be charged for the additional usage. However the
@@ -46,7 +46,7 @@ Basically there are two categories in the free tier,
 
 12 months free offer are only good for the first 12 months after you create your AWS account. The always free offer are vaild even after the first 12 months.
 
-## Important Notes
+### Important Notes
 
 When using AWS services make sure you understand how and when you will be charged for. For example if you are using an EC2 to run some application, usage of the instance
 will be calculated from the time you started the instance to the time you stop or terminate the instance. So even if you do not use the application itself, if you are have the instance in 
@@ -54,13 +54,13 @@ an active mode that will be added to the usage hours and you will be billed if y
 in the instance so terminating it would be the most safest option if you do not have any important data stored in the instance. You can look up other such tricky scenarios at [Avoiding Unexpected Charges](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/checklistforunwantedcharges.html)
 to make sure you will not get an unexpected bill
 
-## Introduction to the AWS console
+### Introduction to the AWS console
 
 As we discussed above we can access all the service and product offerings that are provided by AWS from the AWS console. In the following section we will look into how we can 
 start and stop a virtual machine using AWS EC2 service. Please keep in mind that this will reduce time from your free tier limit of 750 hours/month, So be careful when starting EC2 instances and
 make sure to terminate them after you are done.
 
-## Starting a VM
+### Starting a VM
 
 To go to the EC2 services you can click on the services link on the top left corner in the console and then click on EC2 which is listed under "Compute". Then you will see a blue button labeled "Launch instance".
 Click on the button and the cosole will take you to the page shown below. Notice that the check box for "Free tier only" is clicked to make sure the instance type we choose is eligible for the free tier hours.
@@ -75,7 +75,7 @@ all the basic details press the "Review and Launch" button located in the botton
 
 ![](images/instance_type.png)
 
-### Setting up key pair
+#### Setting up key pair
 
 Before we can launch the VM we need to perform one more step. We need to setup a SSH key pair for the new VM. Creating this will allow us to access our VM through SSH. Once you click on the launch button, you will get
 the following dialog box. If you already have a worked with SSH keys and if you already have a key pair you can use it, otherwise you can create a new key pair as we will do. To create a new key pair select the "Create a new key pair"
@@ -94,7 +94,7 @@ Now to get a more detailed view click on the "Running Instances" link. This will
 
 ![](images/running_instance2.png)
 
-## Stopping a VM
+### Stopping a VM
 
 In AWS EC2 you can either stop a VM or ternimate it. If you terminate it you will loose all the data that was stored in the VM as well, simply stopping will save the data for future use if you restart the instance again.
 In order to stop the VM you can select the VM machines you want to stop from the GUI and go to "Actions -> Instance status" and click on stop. This will stop your VM machine.
