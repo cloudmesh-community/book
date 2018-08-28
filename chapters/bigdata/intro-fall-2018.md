@@ -10,8 +10,8 @@ This is an overview course of Big Data Applications covering a broad range of pr
 ## Introduction Part-1: General Remarks including Hype curves
 
 * [:clapper: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1DQKjUXBz1NzDsF1scw3kocivxpCUqfsK)
-* [:scroll: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1vHd10o92iOqxW0yD35DmTWB2XxrGoXF3)
 * [:clapper: 1.b Gartner's Hypecycles with Emerging Technologies hypecycles and the Priority matrix at selected times 2008-2015](https://drive.google.com/open?id=1uqkUXsVAd_Nwp6nuuWyTIUQxtZZvUK1J)
+* [:scroll: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1vHd10o92iOqxW0yD35DmTWB2XxrGoXF3)
 * [:scroll: 1.b Gartner's Hypecycles with Emerging Technologies hypecycles and the Priority matrix at selected times 2008-2015](https://drive.google.com/open?id=18rzv00dUsFeVO6WdWASX6-dc6iVGBjUL)
 * [:pencil: 1.a + 1.b](https://drive.google.com/open?id=1vUxKfC4sQUcEZ7O6H8YCbKV5yDoboedH)
 
@@ -21,8 +21,8 @@ This is an overview course of Big Data Applications covering a broad range of pr
 ## Introduction Part-2: Data Deluge
 
 * [:clapper: 2.a business usage patterns from NIST](https://drive.google.com/open?id=1WMPvAsfESLy3X94SVZjfUlSUplJPYVXA)
-* [:scroll: 2.a business usage patterns from NIST](https://drive.google.com/open?id=1NfWW9yBbqHlJWfrCTuRm_9oPICZtFmuL)
 * [:clapper: 2.b cyberinfrastructure and AI](https://drive.google.com/open?id=1NiyanWoXXPpNGilutPpFBLqFNE948taS)
+* [:scroll: 2.a business usage patterns from NIST](https://drive.google.com/open?id=1NfWW9yBbqHlJWfrCTuRm_9oPICZtFmuL)
 * [:scroll: 2.b cyberinfrastructure and AI](https://drive.google.com/open?id=1Qp-iQp2ejbFEOnVDPN7LoaqSGYcEdF1P)
 * [:pencil: 2.a + 2.b](https://drive.google.com/open?id=1CNZtR1yzNfJ3ezapZbEQl15dEcSPRO-M)
 
@@ -44,7 +44,12 @@ This is an overview course of Big Data Applications covering a broad range of pr
 <!--* [:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)-->
 <!--* [:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi)-->
 
+An older set of trend slides is availabe from:
+
 * [:pencil: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=144EUUWDjB7KSf2F-lGx83DOxx45eZiVm)
+
+A current set is available at:
+
 * [:scroll: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi)
 * [:pencil: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=1UAYnU6Zy6yhliYk0JGJlf3FsNLUFxBP9)
 * [:pencil: 4c. Industry Trends: Voice and HCI, cars,Deep learning](https://drive.google.com/open?id=1ZAnywdhKqiGpaRtEdcwyEnFWaFt9Mc8u)
