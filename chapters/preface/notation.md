@@ -39,6 +39,6 @@ $
 
 ---
 
-:bulb: *Notes are indicated with a bulb and are written in itallic and surounded by bars* 
+:bulb: *Notes are indicated with a bulb and are written in itallic and surounded by bars* using the `:bulb:` emoji
 
 ---
