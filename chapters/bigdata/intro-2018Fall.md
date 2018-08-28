@@ -1,9 +1,11 @@
 
-**Slides without embedded videos tend to have much smaller sizes, therefore can be viewed online**
-
 # E534 Big Data Applications
 
 This is an overview course of Big Data Applications covering a broad range of problems and solutions. It covers cloud computing technologies and includes a project. Also, algorithms are introduced and illustrated.
+
+:scroll: : slides; :pencil: : slides without embedded videos; :clapper: : videos;
+
+**:pencil: tend to have smaller size compared to :scroll:**
 
 ## Introduction Part-1: General Remarks including Hype curves
 
@@ -15,7 +17,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 [:scroll: 1.b Gartner's Hypecycles with Emerging Technologies hypecycles and the Priority matrix at selected times 2008-2015](https://drive.google.com/open?id=18rzv00dUsFeVO6WdWASX6-dc6iVGBjUL)
 
-[:scroll: 1.a + 1.b without embedded videos](https://drive.google.com/open?id=1vUxKfC4sQUcEZ7O6H8YCbKV5yDoboedH)
+[:pencil: 1.a + 1.b](https://drive.google.com/open?id=1vUxKfC4sQUcEZ7O6H8YCbKV5yDoboedH)
 
 - Technology trends
 - Industry reports
@@ -29,7 +31,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 [:scroll: 2.b cyberinfrastructure and AI](https://drive.google.com/open?id=1Qp-iQp2ejbFEOnVDPN7LoaqSGYcEdF1P)
 
-[:scroll: 2.a + 2.b without embedded videos](https://drive.google.com/open?id=1CNZtR1yzNfJ3ezapZbEQl15dEcSPRO-M)
+[:pencil: 2.a + 2.b](https://drive.google.com/open?id=1CNZtR1yzNfJ3ezapZbEQl15dEcSPRO-M)
 
 - Several examples of rapid data and information growth in different areas
 
@@ -39,7 +41,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 [:scroll: 3. Jobs](https://drive.google.com/open?id=1XDookVsbusK5O-_cXMt8slZPuQY65_eB)
 
-[:scroll: 3. without embedded videos](https://drive.google.com/open?id=1B4HioBXvUdj4A4LG7roCPd_KU-njzg6R)
+[:pencil: 3. Jobs](https://drive.google.com/open?id=1B4HioBXvUdj4A4LG7roCPd_KU-njzg6R)
 
 - Jobs opportunities in the areas: data science, clouds and computer science and computer engineering
 
@@ -49,16 +51,16 @@ This is an overview course of Big Data Applications covering a broad range of pr
 ## Introduction part-4: Industry trends
 <!--[:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)-->
 
-[:scroll: 4a. without embedded videos: Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=144EUUWDjB7KSf2F-lGx83DOxx45eZiVm)
+[:pencil: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=144EUUWDjB7KSf2F-lGx83DOxx45eZiVm)
 
 <!--[:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi)-->
 
 [:scroll: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi)
 
 
-[:scroll: 4b. without embedded videos: Industry Trends: 2015 onwards](https://drive.google.com/open?id=1UAYnU6Zy6yhliYk0JGJlf3FsNLUFxBP9)
+[:pencil: 4b.Industry Trends: 2015 onwards](https://drive.google.com/open?id=1UAYnU6Zy6yhliYk0JGJlf3FsNLUFxBP9)
 
-[:scroll: 4c. without embedded videos: Industry Trends: Voice and HCI, cars,Deep learning](https://drive.google.com/open?id=1ZAnywdhKqiGpaRtEdcwyEnFWaFt9Mc8u)
+[:pencil: 4c.Industry Trends: Voice and HCI, cars,Deep learning](https://drive.google.com/open?id=1ZAnywdhKqiGpaRtEdcwyEnFWaFt9Mc8u)
 - Many technology trends through end of 2014 and 2015 onwards, examples in different fields
 
 - Voice and HCI, Cars Evolving and Deep learning 
@@ -68,7 +70,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 [:scroll: 5. Digital Disruption and Transformation ](https://drive.google.com/open?id=1aNCfuUm40vuWdqiEjezWesz9SMI23qxZ)
 
-[:scroll: 5. without embedded videos: Digital Disruption and Transformation ](https://drive.google.com/open?id=1c20hiORYqhcxy1vllKswyCPunFN_njuv)
+[:pencil: 5. Digital Disruption and Transformation ](https://drive.google.com/open?id=1c20hiORYqhcxy1vllKswyCPunFN_njuv)
 
 - The past displaced by digital disruption
 
@@ -77,13 +79,13 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 [:scroll: 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=1IB3slfjTH-ygTNbQHhBQGqDdT9fpdYYp)
 
-[:scroll: 6a.  without embedded videos: Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=11FDYMV_ySAHQEY5YFlVrFzCoEUbnpWNr)
+[:pencil: 6a.  Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=11FDYMV_ySAHQEY5YFlVrFzCoEUbnpWNr)
 
 [:clapper: 6b.  Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=1M8wrsLawFnbyBhAAgWS_fulgzMSIAz3P)
 
 [:scroll: 6b. Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=1SZ1a0ffVWaOmIF5YvXCARjJ-x4SX4JNb)
 
-[:scroll: 6b. without embedded videos: Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=1QRqdzfYmoPT6qkJYMe_zSlx_tKkpAF9G)
+[:pencil: 6b. Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=1QRqdzfYmoPT6qkJYMe_zSlx_tKkpAF9G)
 
 - Industry adopted clouds which are attractive for data analytics, including big companies, examples are Google, Amazon, Microsoft and so on.
 - Some examples of development: AWS quarterly revenue, critical capabilities public cloud infrastructure as a service.
@@ -132,4 +134,4 @@ This is an overview course of Big Data Applications covering a broad range of pr
  
  [:scroll: 15. Conclusions](https://drive.google.com/open?id=1pEkhIhF1syhxY1iZX287-xc7qmBcjBkP)
  
- [:scroll: 15. without embedded videos: Conclusions](https://drive.google.com/open?id=1gt5ClfCnn72bWJxlnbTCAueSJ-25zBC7)
+ [:pencil: 15. Conclusions](https://drive.google.com/open?id=1gt5ClfCnn72bWJxlnbTCAueSJ-25zBC7)
