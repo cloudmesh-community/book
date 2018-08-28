@@ -6,3 +6,7 @@ cloud-epub:
 
 bigdata-epub:
 	cd big-data-applications; make; make publish
+
+communicate-epub:
+	cd communicate; make; make publish
+
