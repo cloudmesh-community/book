@@ -1,6 +1,6 @@
 ## Notation
 
-:cloud:
+:cloud: `:cloud:`
 
 > If you click on the :cloud: in a heading, you can go directly to the document in github that contains the next content. This is copnvenient to fix errors or make additions to the content.
 
@@ -18,27 +18,33 @@ $
 > reference chapter [@las14cloudmeshmultiple]
 
 
-:o:
+:o: `:o:`
 
 > Chapters marked with an :o: are not yet complete or have some issue
 > that we know about. These chapters need to be fixed.
 
 
-[:clapper: REST 36:02](https://youtu.be/xjFuA6q5N_U)
+[:clapper: REST 36:02](https://youtu.be/xjFuA6q5N_U) 
 
-> Example for a video
+> Example for a video with the `:clapper:` emoji
 
 
-[:scroll: Slides 10](TBD)
+[:scroll: Slides 10](TBD) 
 
-> Example for slides
+> Example for slides with the `:scroll:` emoji. These slides may or
+> may not include audio.
+
+[:pencil: Slides 10)[TBD]
+
+Slides without any audio. They may be fasster to download.
+
 
 :mortar_board:
 
-> A set of learning objectives
+> A set of learning objectives with the `:mortar_board:` emoji
 
 ---
 
-:bulb: *Notes are indicated with a bulb and are written in itallic and surounded by bars* 
+:bulb: *Notes are indicated with a bulb and are written in itallic and surounded by bars* using the `:bulb:` emoji
 
 ---

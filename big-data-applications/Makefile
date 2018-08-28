@@ -49,9 +49,10 @@ CHAPTER_DOC=\
  chapters/doc/report.md\
  chapters/doc/type.md
 
+# chapters/class/fall2018.md\
+# chapters/class/SECTION.md\
+
 CHAPTER_CLASS=\
- chapters/class/SECTION.md\
- chapters/class/fall2018.md\
  chapters/class/organization.md\
  chapters/class/syllabus.md\
  chapters/class/policy.md\
@@ -108,13 +109,13 @@ CHAPTER_IN=\
 # i523
 ######################################################################
 
- # chapters/class/fall2018.md\
+# chapters/class/fall2018.md\
+# chapters/class/SECTION.md\
+# chapters/bigdata/SECTION.md\
 
 CHAPTER_BIGDATA=\
  chapters/preface/notation.md\
- chapters/class/SECTION.md\
  chapters/class/e534-i523.md\
- chapters/bigdata/SECTION.md\
  chapters/bigdata/intro-bd.md\
  chapters/bigdata/intro-cloud.md\
  chapters/bigdata/applications/overview.md\
@@ -476,3 +477,5 @@ publish: epub
 	git commit -m "update epub" ../$(FILENAME).epub
 	git push
 
+pdf:
+	ebook-convert dest/$(FILENAME).epub ../$(FILENAME).pdf

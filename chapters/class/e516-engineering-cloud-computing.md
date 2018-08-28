@@ -36,6 +36,10 @@
   <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md>
 * [Registrar information and Other related classes](https://github.com/cloudmesh-community/book/blob/master/chapters/class/fall2018.md)
 
+This is an introductory class. In case you like to do research and
+more dvanced topics, consider taking an independent study with Dr. von
+Laszewski.
+
 ## Course Description
 
 This course covers basic concepts on programming models and tools of
@@ -88,30 +92,29 @@ The course has the following objectives:
 ## Course Sylabus
 
 
-E516 Summary
 
 <div class="smalltable">
 
 | Dates          | Unit    | Title             | Description
-| -------------- | ------- | ----------------- | --------------
-| 08/24     | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
-| 08/24     | 1       | Introduction      | [Class summary](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md)
-| 08/24     |         |                   | [Definition of Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md)
-| 08/31     |         |                   | Tools and Services
-| 09/03     |         |                   | Data Center, NIST Big Data Reference Architecture
-| 09/10     | 2       | Infrastructure    | Infrastructure as a Service
-| 09/17     |         |                   | OpenStack, Azure, AWS
-| 09/24     | 3       | Virtualization    | Qemu, KVM, Virtual machines
-| 10/01     |         |                   | Containers, Docker, Kubernetes
-| 10/08     | 3       | Programming       | Python for Cloud Computing, LibCloud
-| 10/08     |         |                   | Github as a Cloud Service
-| 10/15     |         |                   | REST Services, Eve, OpenAPI
-| 10/22     |         |                   | Map/Reduce, Hadoop, Spark
-| 10/29     |         |                   | Messaging with MQTT
-| 11/05     |         |                   | GraphQL
-| 11/19|         |                   | Go for the Cloud I
-| 11/19|         |                   | Go for the Cloud II
-| 12/03| 4       | Edge Computing    | Edge Computing and the Cloud
+|:------ |:--- |:------- |:---------------------
+| 08/24 :white_check_mark:    | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
+| 08/24 :white_check_mark:    | 1       | Introduction      | [Class summary](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md)
+| 08/24  :white_check_mark:   |         |                   | [Definition of Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md)
+| 08/31 :o:    |         |                   | Tools and Services
+| 09/03 :o:    |         |                   | Data Center, NIST Big Data Reference Architecture
+| 09/10 :o:    | 2       | Infrastructure    | Infrastructure as a Service
+| 09/17 :o:    |         |                   | OpenStack, Azure, AWS
+| 09/24 :o:    | 3       | Virtualization    | Qemu, KVM, Virtual machines
+| 10/01 :o:    |         |                   | Containers, Docker, Kubernetes
+| 10/08 :o:    | 3       | Programming       | Python for Cloud Computing, LibCloud
+| 10/08 :o:    |         |                   | Github as a Cloud Service
+| 10/15 :o:    |         |                   | REST Services, Eve, OpenAPI
+| 10/22 :o:    |         |                   | Map/Reduce, Hadoop, Spark
+| 10/29 :o:    |         |                   | Messaging with MQTT
+| 11/05 :o:    |         |                   | GraphQL
+| 11/19 :o:    |         |                   | Go for the Cloud I
+| 11/19 :o:    |         |                   | Go for the Cloud II
+| 12/03 :o:    | 4       | Edge Computing    | Edge Computing and the Cloud
 | 09/03-11/02* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
 | 09/03-11/02* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
 | 09/03-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
@@ -122,8 +125,15 @@ E516 Summary
 
 </div>
 
+Legend markings
+
+
+* Class released :white_check_mark:
+* Class under development :o:
+
 Students need only to do one project. The project is conducted thought
 the entire semester.
+
 
 * Dates may change as the semester evolves
 
@@ -142,7 +152,7 @@ Additional Lectures will be added that allow easy management of the project. The
 <div class="smalltable">
 
 | Date     | Unit    | Title             | Description
-| -------- | ------- | ----------------- | --------------
+| :------- |:------- |:----------------- |:---------------------------
 | anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
 | anytime  |         | Plagiarizm      | How to avoid plagiarizm and cheating
 | anytime  |         | Markdown        | How to use markdown
