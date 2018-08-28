@@ -9,15 +9,11 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 ## Introduction Part-1: General Remarks including Hype curves
 
-[:clapper: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1DQKjUXBz1NzDsF1scw3kocivxpCUqfsK)
-
-[:scroll: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1vHd10o92iOqxW0yD35DmTWB2XxrGoXF3)
-
-[:clapper: 1.b Gartner's Hypecycles with Emerging Technologies hypecycles and the Priority matrix at selected times 2008-2015](https://drive.google.com/open?id=1uqkUXsVAd_Nwp6nuuWyTIUQxtZZvUK1J)
-
-[:scroll: 1.b Gartner's Hypecycles with Emerging Technologies hypecycles and the Priority matrix at selected times 2008-2015](https://drive.google.com/open?id=18rzv00dUsFeVO6WdWASX6-dc6iVGBjUL)
-
-[:pencil: 1.a + 1.b](https://drive.google.com/open?id=1vUxKfC4sQUcEZ7O6H8YCbKV5yDoboedH)
+* [:clapper: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1DQKjUXBz1NzDsF1scw3kocivxpCUqfsK)
+* [:scroll: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1vHd10o92iOqxW0yD35DmTWB2XxrGoXF3)
+* [:clapper: 1.b Gartner's Hypecycles with Emerging Technologies hypecycles and the Priority matrix at selected times 2008-2015](https://drive.google.com/open?id=1uqkUXsVAd_Nwp6nuuWyTIUQxtZZvUK1J)
+* [:scroll: 1.b Gartner's Hypecycles with Emerging Technologies hypecycles and the Priority matrix at selected times 2008-2015](https://drive.google.com/open?id=18rzv00dUsFeVO6WdWASX6-dc6iVGBjUL)
+* [:pencil: 1.a + 1.b](https://drive.google.com/open?id=1vUxKfC4sQUcEZ7O6H8YCbKV5yDoboedH)
 
 - Technology trends
 - Industry reports
