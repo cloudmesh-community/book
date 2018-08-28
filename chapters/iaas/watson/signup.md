@@ -1,13 +1,13 @@
-# IBM Watson
+## IBM Watson
 
-## Introduction
+### Introduction
 
 [IBM Watson](https://www.ibm.com/watson/index.html) is a machine learning platform that provides machine learning services to user in the cloud.
 The IBM Watson library provides many machine learning services from image processing to natural language processing.
 This section will guide through the processes of creating an IBM Watson account and explain the free tier 
 details so that you can leverage the tools and products available in AWS for your work and research.
 
-## Creating an account
+### Creating an account
 
 * A valid email address
 
@@ -21,7 +21,7 @@ This will activate your IBM Watson account. Once you have accepted the terms and
 
 ![](images/catalog_ibm_watson.png)
 
-## Understanding the free tier
+### Understanding the free tier
 
 IBM watson provides a set of services for free with their Lite account. Since you did not provide any credit/debit card information when creating the account, by default you will
 have a Lite account. The lite plan does apply usage caps for services offered under the plan. If you need to expand and remove such limits you would have to upgrade to a payed account

@@ -136,6 +136,10 @@ CHAPTER_516=\
   chapters/class/e516-summary.md\
   chapters/class/volumes.md\
   chapters/class/e516-definition.md\
+  chapters/iaas/services.md\
+  chapters/iaas/aws/signup.md\
+  chapters/iaas/azure/signup.md\
+  chapters/iaas/watson/signup.md\
   chapters/SECTION-REFERENCES.md
 
 CHAPTER_OTHER=\
