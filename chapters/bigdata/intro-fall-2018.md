@@ -237,7 +237,7 @@ A current set is available at:
 - Example of Google Maps/navigation. 
 - Criteria for Data Science platform.
 
-## Introduction part-16: Conclusions :o:
+## Introduction part-16: Conclusions
 
 
 * [:clapper: 16. Conclusions](https://drive.google.com/open?id=1r8n-KVp2gnaamjSSsIiK5DLYi5hbAMK-)
