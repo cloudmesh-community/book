@@ -1,5 +1,5 @@
 
-# E534 Big Data Applications
+# Introduction to Big Data Applications
 
 This is an overview course of Big Data Applications covering a broad
 range of problems and solutions. It covers cloud computing
