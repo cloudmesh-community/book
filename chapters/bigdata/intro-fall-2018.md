@@ -135,7 +135,7 @@ A current set is available at:
 * [:scroll: 15. Opportunities at Universities](https://drive.google.com/open?id=0B1YZSKYkpykjZ1RrZEtaSjNiS0U)
  -->
  
-## Part-16: Conclusions :o:
+## Part-16: Conclusions
 
 * [:clapper: 15. Conclusions](https://drive.google.com/open?id=1r8n-KVp2gnaamjSSsIiK5DLYi5hbAMK-)
 * [:scroll: 15. Conclusions](https://drive.google.com/open?id=1pEkhIhF1syhxY1iZX287-xc7qmBcjBkP)
