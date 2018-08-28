@@ -1,13 +1,13 @@
 # Cloud Computing :o:
 
 We describe the central role of Parallel computing in Clouds and Big
-Data which is decomposed into lots of ''Little data''running in
+Data which is decomposed into lots of *Little data* running in
 individual cores. Many examples are given and it is stressed that issues
 in parallel computing are seen in day to day life for communication,
 synchronization, load balancing and decomposition. Cyberinfrastructure
 for e-moreorlessanything or moreorlessanything-Informatics and the
 basics of cloud computing are introduced. This includes virtualization
-and the important''as a Service'' components and we go through several
+and the important *as a Service* components and we go through several
 different definitions of cloud computing.
 
 Gartner's Technology Landscape includes hype cycle and priority matrix
