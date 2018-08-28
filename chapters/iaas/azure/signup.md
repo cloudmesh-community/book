@@ -31,22 +31,32 @@ Azure can be accessed via a portal. An introductory video from Microsoft provide
 
 [:clapper: Introduction to Azure Portal](https://channel9.msdn.com/Blogs/Azure/Get-Started-with-Azure-Portal/player)
 
+### Creating a VM
+
+Choose `Create a resource` in the upper left-hand corner of the Azure portal. Select a VM name, and the disk type as SSD, then provide a username. The password must be at least 12 characters long and meet the defined complexity requirements.
+
+![](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/media/quick-create-portal/create-windows-vm-portal-basic-blade.png)
+
+
 ### Starting a VM
 
 Now we like to introduce you how to start a VM. Please note that VMS do cost and reduce your free hours on Azure. Hence you need to make sure you carefully review the charging rates and chose VM sizes and types that minimize your charges.
 
 A VM can be started through the Portal as follows:
 
-TBD
+* On the overview tab, a VM can be started by clicking the `Start` button.
+
+![](images/start-button.png)
 
 ### Stopping the VM
 
 It is the most important to stop your VMS once they are not in used, or you get continuously charged. The portal allows you to see the list of VM that you run as follows
 
-TBD
-
 To shut a VM down, please do the following:
 
+* On the overview tab, a VM can be started by clicking the `Stop` button.
+
+![](images/stop-button.png)
 
 ### Comprehension Exercise
 
