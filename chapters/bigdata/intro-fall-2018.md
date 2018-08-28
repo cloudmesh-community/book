@@ -1,18 +1,19 @@
 
 # E534 Big Data Applications
 
-This is an overview course of Big Data Applications covering a broad range of problems and solutions. It covers cloud computing technologies and includes a project. Also, algorithms are introduced and illustrated.
-
-:scroll: : slides; :pencil: : slides without embedded videos; :clapper: : videos;
+This is an overview course of Big Data Applications covering a broad
+range of problems and solutions. It covers cloud computing
+technologies and includes a project. Also, algorithms are introduced
+and illustrated.
 
 **:pencil: tend to have smaller size compared to :scroll:**
 
-## Introduction Part-1: General Remarks including Hype curves
+## Introduction Part-1: General Remarks Including Hype curves
 
 * [:clapper: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1DQKjUXBz1NzDsF1scw3kocivxpCUqfsK)
-* [:clapper: 1.b Gartner's Hypecycles with Emerging Technologies hypecycles and the Priority matrix at selected times 2008-2015](https://drive.google.com/open?id=1uqkUXsVAd_Nwp6nuuWyTIUQxtZZvUK1J)
+* [:clapper: 1.b Gartner's Hypecycles with Emerging technologies hypecycles and the priority matrix at selected times 2008-2015](https://drive.google.com/open?id=1uqkUXsVAd_Nwp6nuuWyTIUQxtZZvUK1J)
 * [:scroll: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1vHd10o92iOqxW0yD35DmTWB2XxrGoXF3)
-* [:scroll: 1.b Gartner's Hypecycles with Emerging Technologies hypecycles and the Priority matrix at selected times 2008-2015](https://drive.google.com/open?id=18rzv00dUsFeVO6WdWASX6-dc6iVGBjUL)
+* [:scroll: 1.b Gartner's Hypecycles with emerging technologies hypecycles and the priority matrix at selected times 2008-2015](https://drive.google.com/open?id=18rzv00dUsFeVO6WdWASX6-dc6iVGBjUL)
 * [:pencil: 1.a + 1.b](https://drive.google.com/open?id=1vUxKfC4sQUcEZ7O6H8YCbKV5yDoboedH)
 
 - Technology trends
@@ -20,10 +21,10 @@ This is an overview course of Big Data Applications covering a broad range of pr
 
 ## Introduction Part-2: Data Deluge
 
-* [:clapper: 2.a business usage patterns from NIST](https://drive.google.com/open?id=1WMPvAsfESLy3X94SVZjfUlSUplJPYVXA)
-* [:clapper: 2.b cyberinfrastructure and AI](https://drive.google.com/open?id=1NiyanWoXXPpNGilutPpFBLqFNE948taS)
-* [:scroll: 2.a business usage patterns from NIST](https://drive.google.com/open?id=1NfWW9yBbqHlJWfrCTuRm_9oPICZtFmuL)
-* [:scroll: 2.b cyberinfrastructure and AI](https://drive.google.com/open?id=1Qp-iQp2ejbFEOnVDPN7LoaqSGYcEdF1P)
+* [:clapper: 2.a Business usage patterns from NIST](https://drive.google.com/open?id=1WMPvAsfESLy3X94SVZjfUlSUplJPYVXA)
+* [:clapper: 2.b Cyberinfrastructure and AI](https://drive.google.com/open?id=1NiyanWoXXPpNGilutPpFBLqFNE948taS)
+* [:scroll: 2.a Business usage patterns from NIST](https://drive.google.com/open?id=1NfWW9yBbqHlJWfrCTuRm_9oPICZtFmuL)
+* [:scroll: 2.b Cyberinfrastructure and AI](https://drive.google.com/open?id=1Qp-iQp2ejbFEOnVDPN7LoaqSGYcEdF1P)
 * [:pencil: 2.a + 2.b](https://drive.google.com/open?id=1CNZtR1yzNfJ3ezapZbEQl15dEcSPRO-M)
 
 - Several examples of rapid data and information growth in different areas
@@ -39,7 +40,7 @@ This is an overview course of Big Data Applications covering a broad range of pr
 - Jobs demands in different countries and companies.
 - Trends and forecast of jobs demands in the future.
 
-## Introduction part-4: Industry trends
+## Introduction part-4: Industry Trends
 
 <!--* [:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)-->
 <!--* [:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi)-->
@@ -78,7 +79,7 @@ A current set is available at:
 - Some examples of development: AWS quarterly revenue, critical capabilities public cloud infrastructure as a service.
 - Blockchain: ledgers redone, blockchain constortia.
 
-## Introduction part-7: Research Model
+## Introduction part-7: Research Model :o:
 
 * [:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=0B1YZSKYkpykjWXNtTnYxVGR2ZUE)
 
@@ -106,14 +107,14 @@ A current set is available at:
 - Overview of many informatics areas, recommender systems in detail.
 - NETFLIX on personlization, recommendation, datascience.
 
-## Introduction part-11: Exploring data bags and spaces
+## Introduction part-11: Exploring Data Bags and SSpaces
 
 * [:clapper: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjOXIxTS00NXRJdms)
 * [:scroll: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjd0d4OWdqRThKaEk)
 
 - Distances in funny spaces, about "real" spaces and how to use diatances.
 
-## Introduction part-12: Another Example: web search Information Retrieval
+## Introduction part-12: Another Example: Web Search Information Retrieval
 
 * [:clapper: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjamJLNTZvYndyN2M)
 * [:scroll: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjM0ZIeWgwMkhkcmM)
@@ -122,7 +123,7 @@ A current set is available at:
 
 * [:scroll: 13. Cloud Applications in Research: Science Clouds and Internet of Things](https://drive.google.com/open?id=0B1YZSKYkpykjODk2V19LX1Bxc2c)
 
-## Introduction part-14: Software Ecosystems: Parallel computing and MapReduce
+## Introduction part-14: Software Ecosystems: Parallel Computing and MapReduce
 
 * [:scroll: 14. Software Ecosystems: Parallel Computing and MapReduce](https://drive.google.com/open?id=0B1YZSKYkpykjNTZhcllDMmJ4NGM)
 
