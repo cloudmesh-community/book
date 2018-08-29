@@ -85,10 +85,9 @@ The inverse of PUE is the data center infrastructure efficiency (DCIE).
 
 The best value of PUE is 1.0. Any data center musst be higher than this value as offices and other cost surely will arise when we look at the formula
 
-$\mathrm {PUE} ={{\mbox{Total Facility Energy}} \over {\mbox{IT Equipment Energy}}}=1+{{\mbox{Non IT Facility Energy}} \over {\mbox{IT Equipment Energy}}}$
+$\mathrm{PUE} = \frac{\mathrm{Total~Facility~Energy}}{\mathrm{IT~Equipment~Energy}}$
 
-$PUE = Total Facility Energy / IT Equipment Energy$
-$PUE = 1 + Non IT Facility Energy /IT Equipment Energy$
+$\mathrm{PUE} = 1 + \frac{\mathrm{Non~IT~Facility~Energy}}{\mathrm{IT~Equipment~Energy}}$
 
 
 
