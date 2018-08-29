@@ -43,6 +43,11 @@ Slides without any audio. They may be fasster to download.
 
 > A set of learning objectives with the `:mortar_board:` emoji
 
+:question:
+
+> Indicates opportunitiess for comprehension assignments while
+> contributing to this document.
+
 ---
 
 :bulb: *Notes are indicated with a bulb and are written in itallic and surounded by bars* using the `:bulb:` emoji
