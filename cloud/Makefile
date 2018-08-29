@@ -130,7 +130,10 @@ CHAPTER_BIGDATA=\
 ######################################################################
 
 CHAPTER_516=\
-  chapters/preface/notation.md\
+  chapters/cloud/datacenter.md\
+
+
+#  chapters/preface/notation.md\
   chapters/cloud/gregor.md\
   chapters/class/e516-engineering-cloud-computing.md\
   chapters/class/e516-summary.md\
