@@ -47,9 +47,12 @@ If we calculate the total cost, we needd naturally add all costs arissing from b
 
 Table: Cost of the data center
 
-| Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| :?: | :?: | :?: | :?: | :?: | :?: | :?: | :?: | :?: | :?: | :?: | 
+| Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
+|-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
+| :?:         | :?:      | :?:  | :?:               | :?:     | :?:         | :?:                  | :?:                |   |
+|             |          |      |                   |         |             |                      |                    |   |
+|             |          |      |                   |         |             |                      |                    |   |
+
 
 *as adjusted in calculator
 
@@ -77,6 +80,6 @@ The inverse of PUE is the data center infrastructure efficiency (DCIE).
 
 The best value of PUE is 1.0. Any data center musst be higher than this value as offices and other cost surely will arise when we look at the formula
 
-{\displaystyle \mathrm {PUE} ={{\mbox{Total Facility Energy}} \over {\mbox{IT Equipment Energy}}}=1+{{\mbox{Non IT Facility Energy}} \over {\mbox{IT Equipment Energy}}}}
+$\mathrm {PUE} ={{\mbox{Total Facility Energy}} \over {\mbox{IT Equipment Energy}}}=1+{{\mbox{Non IT Facility Energy}} \over {\mbox{IT Equipment Energy}}}$
 
 ---
