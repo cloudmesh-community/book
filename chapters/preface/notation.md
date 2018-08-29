@@ -34,7 +34,7 @@ $
 > Example for slides with the `:scroll:` emoji. These slides may or
 > may not include audio.
 
-[:pencil: Slides 10)[TBD]
+[:pencil: Slides 10](TBD)
 
 Slides without any audio. They may be fasster to download.
 
