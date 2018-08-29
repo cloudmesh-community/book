@@ -130,15 +130,13 @@ CHAPTER_BIGDATA=\
 ######################################################################
 
 CHAPTER_516=\
-  chapters/cloud/datacenter.md\
-
-
-#  chapters/preface/notation.md\
+  chapters/preface/notation.md\
   chapters/cloud/gregor.md\
   chapters/class/e516-engineering-cloud-computing.md\
   chapters/class/e516-summary.md\
   chapters/class/volumes.md\
   chapters/class/e516-definition.md\
+  chapters/cloud/datacenter.md\
   chapters/iaas/services.md\
   chapters/iaas/aws/signup.md\
   chapters/iaas/azure/signup.md\
