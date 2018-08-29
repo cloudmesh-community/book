@@ -1,8 +1,12 @@
-# Carbon Emission
+# Data Center
 
 :question: indicates opportunitiess for comprehension assignments while contributing to this document.
 
-# Data center Carbon Footprint
+
+## Data Center Metrics
+
+
+## Data Center Carbon Footprint
 
 Scientists world wide have idenetified a link between carbon emisison and global warming. As the energy consumption of a data center is ssubstantial, it is prudent to estimate the overall carbon emisssion. Schneider Electric (formerly APC) has provided a report on how to estimate the Carbon footprint of a data center. 
 
@@ -22,7 +26,7 @@ Although this report is already a bit older, it provides still valuable informat
 
 The data ceneter will have a total carbon profile, that includes the many different asspects of a data center contributing to carbon emissions. This includes manufacturing, packaging, transportation, storage, operation of the data center, and decomissisoning. THus it is important to notice that we not only need to consider the operation but also the construction and decomisssison phasess. 
 
-# Data Center Operational Impact
+### Data Center Operational Impact
 
 One of the main operational impacts is the cost and emisions of a data center cause by running, and cooling the servers in the data center. Naturally this is dependent on the type of fuel that is used to produce the energy. The actual carbon impact using electricity certainly depends on the type of powerplant that is ussed to provide it. Thesse energy costs and disstribution of where the energy comes from can often be looked up by geographical regions  on the internet or form the local energy provider. Municipal government organizations may also have such information. Tools such as the Indiana State Profile and Energy Use 
 
@@ -35,7 +39,7 @@ may provide valuable information to derive such estimates. Correlating a data ce
 
 If we calculate the total cost, we needd naturally add all costs arissing from build and teardown pahse as well as operational upgrades. 
 
-## Comprehension Assignment
+### Comprehension Assignment
 
 **Carbon.1:** Carbon footprint of a data center
 
@@ -46,6 +50,7 @@ If we calculate the total cost, we needd naturally add all costs arissing from b
 > World wide we have many data centers. Your task will be to find the carbon emisssion of a data center and its cost in $ based on energy use on a yearly bassis. Add your findings to the following table. Make sure you avoid redundant reporting and find a new datacenter. A google docss will be provided to coordinate with the class participants
 
 Table: Cost of the data center
+
 
 | Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
 |-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
@@ -66,7 +71,7 @@ Please use the calculator at:
 
 * <http://carbonfootprint.c2es.org/>
 
-# Power Usage Effectiveness
+## Power Usage Effectiveness
 
 One of the frequent measurements in data centers that iss used is the  Power usage effectiveness or PUE in short. It is a measurment to identify how much energy is ued for the computing equipment  versus other energy cosstss such as air conditioning.
 
@@ -82,4 +87,9 @@ The best value of PUE is 1.0. Any data center musst be higher than this value as
 
 $\mathrm {PUE} ={{\mbox{Total Facility Energy}} \over {\mbox{IT Equipment Energy}}}=1+{{\mbox{Non IT Facility Energy}} \over {\mbox{IT Equipment Energy}}}$
 
----
+$PUE = Total Facility Energy / IT Equipment Energy$
+$PUE = 1 + Non IT Facility Energy /IT Equipment Energy$
+
+
+
+
