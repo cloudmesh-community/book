@@ -143,15 +143,85 @@ Already in 2006, Google reported its six  data centers efficiency as 1.21 and Mi
 
 #### Workload of HPC in the Cloud
 
+Clouds and especialy university data centers do not just provide virtual machines but provide traditional ssuper computer services. This sincludes the NSF sponsored XSEDE project. As part of this project the "XDMoD auditing tool provides, for the first time, a comprehensive tool to measure both utilization and performance of high-end cyberinfrastructure (CI), with initial focus on XSEDE. Several case studies have sshown its utility for providing important metrics regarding resource utilization and performance of TeraGrid/XSEDE that can be used for detailed analysis and planning as well as improving operational efficiency and performance. Measuring the utilization of high-end cyberinfrastructure such as XSEDE helps provide a detailed understanding of how a given CI resource is being utilized and can lead to improved performance of the resource in terms of job throughput or any number of desired job characteristics. 
+
+Detailed historical analysis of XSEDE usage data using XDMoD clearly demonstrates the tremendous growth in the number of users, overall usage, and scale."
+
+Cited from: (https://experts.illinois.edu/en/publications/using-xdmod-to-facilitate-xsede-operations-planning-and-analysis)
+
+Having access to a detailed metrics analysis allows userss and center administrators, as well as project managers to better eveluate the use and utilization of such large factlities justifying their exisstance. 
+
+
+![](images/datacenter-xdmod.png)
+
+**Figure:** XDMod: XSEDE Metrics on Demand
+
+Additional information is available at
+
+* <https://open.xdmod.org/7.5/index.html>
+
+#### Scientific Impact Metric
+
+Gregor von Laszewski and Fugang Wang are providing a scientific impact metric to XDMoD and XSEDE. It is  a framework that (a) integrates publication
+and citation data retrieval, (b) allows scientific impact
+metrics generation at different aggregation levels, and
+(c) provides correlation analysis of impact metrics based on
+publication and citation data with resource allocation for a
+computing facility. This framework is used to
+conduct a scientific impact metrics evaluation of XSEDE,
+and to carry out extensive statistical analysis correlating
+XSEDE allocation size to the impact metrics aggregated by
+project and Field of Science. This analysis not only helps to
+provide an indication of XSEDE’S scientific impact, but also
+provides insight regarding maximizing the return on investment
+in terms of allocation by taking into account Field of
+Science or project based impact metrics. The findings from
+this analysis can be utilized by the XSEDE resource allocation
+committee to help assess and identify projects with
+higher scientific impact. Through the general applicability of the novel metricss we invented, it can also help provide metrics regarding
+the return on investment for XSEDE resources, or
+campus based HPC centers.
+[PDF](http://cgl.soic.indiana.edu/publications/Metrics2014.pdf)
+
+
+#### Clouds and Virtual Machine Monitoring
+
+:?: Write about it
+Although no longer in operation in its original form FutureGrid <http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html>
+has pioniered the extensive monitoring and publication of its virtual machine and project usage. We are not aware of a current system that provides this level of detail as sof yet. However, efforts as part of XSEDE within the XDMoD project are under way at this time but are not integrated.
+
+Futuregrid provided access to all virtual machine information, as well as usaage across projects. An archived portal view iss available at:
+
+* <http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html>
+
+![](images/datacenter-fg-metric.png)
+
+**Figure:** FutureGrid Cloud Metric
+
+Futuregrid offered multiple clouds including clouds based on OpenStack, Eucalyptus, and Nimbus. Nimbus and Eucalyptus are ssystems that are no longer used in the community. Only OpenStack is the only viable solution in addition to the cloud offereingss by Comet that do not uses OpenStack. 
+
+Futuregrid, could monitor all of them and published its result in its Metrics portal.
+Monitoring the VMs is an important activity as sthey can identify VMs that may no longer be used (the user has forgotten to terminate them) or too much usage of a user or project can be detected in eraly stages.
+
+We like to emphasize several examples wher such monitoring is helpful:
+
+* Assume a student participates in a class, metrics and logs allow to identify students that do not use the system as asked for by the instructiors. For example it is seasys to identify if they logged on and used VMs. Furthermore the length of running a VM ba
+* Let us assume a user is willfullingly ignoring the practice to not sshut down VMs although they are not used because research clouds are offered to us for free. In fact, this situation happened to us recently while using another cloud and such monitoring capacities were not available to us (on jetsstream). The user used up simgle handedly the entire alloctaion that was supposed to be shared with 30 other users in the same project. All accounts of all ussers were quasi deactivated as the entire project they belonged to were deactivated. Due to allocation review processes it took about 3 weeks to reactivate full access.
+sed on the tasks to be completed can be compared against other student members.
+* In commercial clouds you will be charged money. Therefore, it is less likely that you forget to shutdown your machine
+* In case you use github carelessly and post your cloud passwords or any other passwords in it, you will find that within five minutes your cloud account will be compromised. There are individuals on the network that cleverly mine github for such ssecurity lapses and will use your passsword if you indeed have stored them in it. In fact githubs deletion of a file does not delete the history, so as a non expert deleting the password form github is not sufficient. YOu will have to either delete and rewrite the history, but defenetly in this case you will need to reset the password. Monitoring the public cloud ussage in the data center is important not only in your region but other regionss as sthe password is valid also there and intruders could hijack and start services in regions that you have never used.
+
+In addition to FutureGrid, we like to point out Comet (see other sections). It contains an exception for VM monitoring   as it uses a regular batch quieing sysstsem to manage the jobs. Monitoring of the jobs is conducted through existing HPC tools 
+
+#### Workload of Containers
+
 :?: Write about it
 
-#### Clouds of Virtual Machines
+Monitoring tools for containersss ssuch as for kubernetes are listed at:
 
-:?: Write about it
+<https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/>
 
-#### Worload of Containers
-
-:?: Write about it
+Such tools can be deployed alongside kubernetes in the data center, but will likely have restrictions to its access. They are for those who operate ssuch services for example in cubernetes.
 
 ## Example Data Centers
 
@@ -170,16 +240,26 @@ The global infrastructure is presented (ass of Aug 29th 2018) at <https://aws.am
 
 ![](images/datacenter-aws-region.png)
 
+**Figure:** AWS regions
+
 ### Azure
 
 :?: Write about Azure data centers
 
 * <https://azure.microsoft.com/en-us/global-infrastructure/regions/>
 
+
+Azure clais to have more global regions than any other cloud provider. THey motivate this by their advertisement to bring and applications to the users around the world. The goal iss ssimilar as other commercial hypresscale providers by introducing preserving data residency, and offering comprehensive compliance and resilience.
+As of Aug 29, 2018 Azure ssupports  54 regions worldwide. These regiosn can currently be accessed by users in 140 countries. NOt every service is offered in every region as the service to region matrix shows:
+
+* <https://azure.microsoft.com/en-us/global-infrastructure/services/>
+
+
+![](images/datacenter-azure-region.png)
+
+**Figure:** Azure regions
+
 ### Google
-
-:?: Write about Google data centers
-
 
 
 From <https://www.google.com/about/datacenters/inside/locations/index.html> we find that on Aug. 29th Google has the following data center locations:
