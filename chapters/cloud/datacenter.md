@@ -20,7 +20,7 @@
 ## Data Center Metrics
 
 
-## Data Center Carbon Footprint
+### Data Center Carbon Footprint
 
 Scientists world wide have idenetified a link between carbon emisison and global warming. As the energy consumption of a data center is ssubstantial, it is prudent to estimate the overall carbon emisssion. Schneider Electric (formerly APC) has provided a report on how to estimate the Carbon footprint of a data center. 
 
@@ -40,7 +40,7 @@ Although this report is already a bit older, it provides still valuable informat
 
 The data ceneter will have a total carbon profile, that includes the many different asspects of a data center contributing to carbon emissions. This includes manufacturing, packaging, transportation, storage, operation of the data center, and decomissisoning. THus it is important to notice that we not only need to consider the operation but also the construction and decomisssison phasess. 
 
-### Data Center Operational Impact
+#### Data Center Operational Impact
 
 One of the main operational impacts is the cost and emisions of a data center cause by running, and cooling the servers in the data center. Naturally this is dependent on the type of fuel that is used to produce the energy. The actual carbon impact using electricity certainly depends on the type of powerplant that is ussed to provide it. Thesse energy costs and disstribution of where the energy comes from can often be looked up by geographical regions  on the internet or form the local energy provider. Municipal government organizations may also have such information. Tools such as the Indiana State Profile and Energy Use 
 
@@ -85,7 +85,7 @@ Please use the calculator at:
 
 * <http://carbonfootprint.c2es.org/>
 
-## Power Usage Effectiveness
+#### Power Usage Effectiveness
 
 One of the frequent measurements in data centers that iss used is the  Power usage effectiveness or PUE in short. It is a measurment to identify how much energy is ued for the computing equipment  versus other energy cosstss such as air conditioning.
 
@@ -138,15 +138,37 @@ Already in 2006, Google reported its six  data centers efficiency as 1.21 and Mi
 
 > What is the lowest PUE you can find. Provide details about the system as well as the date when the PUE was reported.
 
+
+### Workload Monitoring
+
+#### Workload of HPC in the Cloud
+
+:?: Write about it
+
+#### Clouds of Virtual Machines
+
+:?: Write about it
+
+#### Worload of Containers
+
+:?: Write about it
+
 ## Example Data Centers
 
 In this section we will be giving some data center examples while looking at some of the mayor cloud providers. 
 
 ### AWS
 
-:?: Write about AWS data centers
+AWS focusses on security asspectss of their data centers that include four aspects (<https://aws.amazon.com/compliance/data-center/data-centers/>):
 
-* <https://aws.amazon.com/compliance/data-center/data-centers/>
+* [Perimiter Layer](https://aws.amazon.com/compliance/data-center/perimeter-layer/)
+* [Infrasstructure Layer](https://aws.amazon.com/compliance/data-center/infrastructure-layer/)
+*  [Data Layer](https://aws.amazon.com/compliance/data-center/data-layer/)
+*  [Environmental Layer](https://aws.amazon.com/compliance/data-center/environmental-layer/)
+
+The global infrastructure is presented (ass of Aug 29th 2018) at <https://aws.amazon.com/about-aws/global-infrastructure/> and includes 55 Availability Zones within 18 geographic Regions and 1 Local Region around the world. Plans existsss to add 12 Availability Zones and four additional Regions in Bahrain, Hong Kong SAR, Sweden, and a second AWS GovCloud Region in the US.
+
+![](images/datacenter-aws-region.png)
 
 ### Azure
 
@@ -158,9 +180,60 @@ In this section we will be giving some data center examples while looking at som
 
 :?: Write about Google data centers
 
-* <https://www.google.com/about/datacenters/efficiency/>
-* <https://www.google.com/about/datacenters/inside/locations/index.html>
 
+
+From <https://www.google.com/about/datacenters/inside/locations/index.html> we find that on Aug. 29th Google has the following data center locations:
+
+* **North America:** Berkeley County, South Carolina; Council Bluffs, Iowa; Douglas County, Georgia; Jackson County, Alabama; Lenoir, North Carolina; Mayes County, Oklahoma; Montgomery County, Tennessee; The Dalles, Oregon
+* **South America:** Quilicura, Chile
+* **Asia**: Changhua County, Taiwan; Singapore
+* **Europe:* Dublin, Ireland; Eemshaven, Netherlands; Hamina, Finland; St Ghislain, Belgium
+
+Each data center is advertised with a special environmental impact such as a unique cooling system, or wildlife on premise. Google's data centerss support its service infrastructure and allow hosting as well as sother cloud services sto be offerd to itss cusstomers.
+
+Google highlights its efficiency strategy and methods here:
+
+* <https://www.google.com/about/datacenters/efficiency/>
+
+They summarize their offorts are based on 
+
+* Measureing the PUE
+* Manageing airflow
+* Adjusting the temperature
+* Use free Cooling
+* Optimizing the power distribution
+
+
+![](images/datacenter-google-pue.png)
+
+**Figure:** [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
+
+An important lesson from Google is the PUE boundary. That is the different efficience bassed on the closenesss sof the IT infrastructure to the actual data center building. 
+Thihs indicates that it is important to take at any providers definition of PUE in order not to report numbers that are not comparable between other vendors and are all encompassing.
+
+![](images/datacenter-google-boundary.png)
+
+**Figure:** [Google data center PUE measurement boundaries. The average PUE for all Google data centers is 1.12, although we could boast a PUE as low as 1.06 when using narrower boundaries.](https://www.google.com/about/datacenters/efficiency/internal/)
+ 
+ As a consequence, Google is defining its PUE in detail as follows:
+ 
+ ![](images/datacenter-google-formula.png)
+ 
+where the abbreviationss stand for 
+
+* ESIS = Energy consumption for supporting infrastructure power substations feeding the cooling plant, lighting, office space, and some network equipment
+* EITS = Energy consumption for IT power substations feeding servers, network, storage, and computer room air conditioners (CRACs)
+* ETX = Medium and high voltage transformer losses
+* EHV = High voltage cable losses
+* ELV = Low voltage cable losses
+* EF = Energy consumption from on-site fuels including natural gas & fuel oils
+* ECRAC = CRAC energy consumption
+* EUPS = Energy loss at uninterruptible power supplies (UPSes) which feed servers, network, and storage equipment
+* ENet1 = Network room energy fed from type 1 unit substitution
+ 
+For more details see <https://www.google.com/about/datacenters/efficiency/internal/>
+
+ 
 ### IBM
 
 IBM maintains almost 60 data centers, which are placed globally in 6 regions and 18 availability zones. IBM targets buisinesses while offering local access to its scenters to allow for low latency. IBM states that trough thiss localization users can decide where and how data and workloads and address availability, fault tolerance and sscalability. As IBM is buissiness oriented it also stresses its certified security.
@@ -190,6 +263,10 @@ For cloud Computing the following ssystems are of especial importance although s
 * Comet virtual clusters
 * Jetstrem Openstack
 
+![](images/datacenter-xsede.jpg)
+
+**Figure:** XSEDE disstributed resource infrastucture
+
 #### Comet
 
 The comet machine is a larger clusster and offers bare metal provisioning based on KVM and SLURM. Thus it is a unique system that can run at the same time traditional super computing jobs such as MPI based programs, as well as jobs sthat utilize virtual machiness. With its availability of >46000 cores it provides one of the larges NSF sponsored cloud environment. Through its ability to provide bare metal provisioning and the access to infiniband between all virtual machines it is an ideal machine for exploring performance oriented virtualization techniques.
@@ -216,7 +293,13 @@ An overview of the hardware can be obtained from
 
 ### Indiana University
 
-Indiana Universsity has a data center in which many different systems are housed. This includes not only jetstream, but alsos many other systyems. The ssystems include production, buissiness, and ressearch clusters and servers. On the research cluster side it offers Karst:
+Indiana Universsity has a data center in which many different systems are housed. This includes not only jetstream, but alsos many other systyems. The ssystems include production, buissiness, and ressearch clusters and servers. 
+
+![](images/datacenter-iu.jpg)
+
+**Figure:** IU Data Center
+
+On the research cluster side it offers Karst:
 
 * <https://kb.iu.edu/d/bezu>
 
