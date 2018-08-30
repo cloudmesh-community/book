@@ -1,4 +1,4 @@
-# Data Center
+# Data Center :o:
 
 :question: indicates opportunities for comprehension assignments while
 contributing to this document.
@@ -153,13 +153,13 @@ convenient Carbon estimate calculator based on energy consumption.
 If we calculate the total cost, we need naturally add all costs
 arising from build and teardown phase as well as operational upgrades.
 
-**Comprehension Assignment**
+**Exercises**
 
-**Carbon.1:** Carbon footprint of a data center
+**E.Carbon.1:** Carbon footprint of a data center
 
-> Complete the definitions of the terms used in this section
+> Complete the definitions of the terms used in the relevant section
 
-**Carbon.2:** Carbon footprint of data centers
+**E.Carbon.2:** Carbon footprint of data centers
 
 > World wide we have many data centers. Your task will be to find the
 > carbon emisssion of a data center and its cost in $ based on energy
@@ -185,7 +185,7 @@ arising from build and teardown phase as well as operational upgrades.
 > If you find other estimates for a data center or an entire data
 > center fleet such as AWS world wide, please provide citations.
 
-**Carbon.3:** Your own Carbon footprint
+**E.Carbon.3:** Your own Carbon footprint
 
 > It is interesting to compare and measure your own carbon footprint.
 > We will ask you anonymously to report your carbon footprint via a
@@ -267,11 +267,13 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 2017.
 
 
-**Comprehensssion Assignment**
+**Exercises**
 
-**PUE.1:** Lowest PUE you can find
+**E.PUE.1:** Lowest PUE you can find
 
-> What is the lowest PUE you can find. Provide details about the system as well as the date when the PUE was reported.
+> What is the lowest PUE you can find. 
+> Provide details about the system as well as 
+> the date when the PUE was reported.
 
 
 ### Workload Monitoring
