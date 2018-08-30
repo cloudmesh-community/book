@@ -48,9 +48,16 @@ CHAPTER_516=\
   chapters/git/github.md\
   chapters/linux/linux.md\
 	chapters/prg/SECTION-PYTHON.md\
+  chapters/prg/python-intro.md\
   chapters/prg/python-install.md\
-	chapters/prg/SECTION-PYTHON-LANG.md\
+  chapters/prg/python-interactive.md\
+  chapters/prg/python-editor.md\
+  chapters/prg/SECTION-PYTHON-LANG.md\
   chapters/prg/python.md\
+  chapters/prg/python-libraries.md\
+  chapters/prg/python-data.md\
+  chapters/prg/python-matplotlib.md\
+  chapters/prg/python-cmd5.md\
   chapters/SECTION-REFERENCES.md
 
 
@@ -119,6 +126,8 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/linux/linux.md 2
 	../bin/header.py dest/chapters/prg/python-install.md 1
 	../bin/header.py dest/chapters/prg/python.md 2
+	../bin/header.py dest/chapters/prg/python-libraries.md 2
+	../bin/header.py dest/chapters/prg/python-data.md 1
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md

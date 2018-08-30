@@ -57,16 +57,16 @@ def convert(filename):
         pass
     else:
       if lines[0].startswith("# "):
-          lines[0] = "\n# [" + lines[0][2:] + "]{.part}"        
+          lines[0] = "# [" + lines[0][2:] + "]{.part}"        
       if "{github}" not in lines[0]:
           lines[0] = lines[0] + " {github}"
-    content = "\n".join(lines)
+    content = "\n" + "\n".join(lines)
     content = content.replace("{github}", link)
     content = content.replace("{gitcode}", gitcoderoot)
-    content = content + "\n"
     filename = filename.replace("../", "")
     with open("dest/" + filename, 'w') as f:
         f.write(content)
+        f.write("\n")
         
 files = recursive_glob(rootdir="../chapters")
 

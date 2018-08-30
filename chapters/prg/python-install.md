@@ -20,13 +20,16 @@ If you know which version of python you need you can just use the version that c
 
 However, "real" cloud engeneers with the most flexibility in python versions want to install python via pyenv.
 
+Note: Whnever possible please use for the newest version of Python 2
+or 3. In order not to effect your OS we will use pyenv.
+
 ### Managing custom Python installs
 
 Often you have your own computer and you do not like to change its
 environment to keep it in pristine condition. Python comes with many
 libraries that could for example conflict with libraries that you have
 installed. To avoid this it is bets to work in an isolated python we can
-use tools such as virtualenv, pyenv or pyvenv for 3.7.0[^1]. Which you
+use tools such as virtualenv, pyenv or pyvenv for 3.7.0. Which you
 use depends on you, but we highly recommend pyenv if you can.
 
 #### Managing Multiple Python Versions with Pyenv
@@ -51,7 +54,7 @@ switch between multiple versions of Python
 
 If you need to have more than one python version installed and do not
 want or can use pyenv, we recommend you download and install python
-2.7.15 and 3.7.0[^2] from python.org
+2.7.15 and 3.7.0S from python.org
 (<https://www.python.org/downloads/>)
 
 ##### Disabling wrong python installs on OSX
@@ -157,7 +160,7 @@ entire list please use the command:
     $ pyenv install -l
 
 However, for us we only need to worry about python 2.7.15 and python
-3.7.0[^3]. You can now install different versions of python into your
+3.7.0. You can now install different versions of python into your
 local environment with the following commands:
 
     $ pyenv install 2.7.15
@@ -433,8 +436,3 @@ E.Python.Install.3:
 > Why do you not want to use generally anaconda for cloud computing?
 > WHen is it oc to use anaconda?
 
-[^1]: check for the newest version
-
-[^2]: check for the newest version
-
-[^3]: check for the newest version
