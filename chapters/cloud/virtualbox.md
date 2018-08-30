@@ -1,7 +1,7 @@
 Virtual Box
 ===========
 
-For development purposes we recommend tha you use for this class an
+For development purposes we recommend that you use for this class an
 Ubuntu virtual machine that you set up with the help of virtualbox. We
 recommend that you use the current version of ubuntu and do not install
 or reuse a version that you have set up years ago.
@@ -27,7 +27,7 @@ patient. Only students enrolled in the class can get access to the
 cloud.
 
 If you however have access to other clouds yourself you are welcome to
-use the, However, be reminded that projects need to be reproducable, on
+use the, However, be reminded that projects need to be reproducible, on
 our cloud. This will require you to make sure a TA can replicate it.
 
 Let us now focus on using virtual box.
@@ -115,15 +115,20 @@ here.
 Exercises
 ---------
 
-[\[E:Virtualbox.1\]]{#E:Virtualbox.1 label="E:Virtualbox.1"} Install
-ubuntu desktop on your computer with guest additions.
+E.Virtualbox.1:
 
-[\[E:Virtualbox.2\]]{#E:Virtualbox.2 label="E:Virtualbox.2"} Make sure
-you know how to paste and copy between your host and guest operating
-system.
+> Install ubuntu desktop on your computer with guest additions.
 
-[\[E:Virtualbox.3\]]{#E:Virtualbox.3 label="E:Virtualbox.3"} Install the
-programs defined by the development configuration.
+E.Virtualbox.2:
 
-[\[E:Virtualbox.4\]]{#E:Virtualbox.4 label="E:Virtualbox.4"} Provide us
-with the key combination to copy and paste between Windows and Vbox.
+> Make sure you know how to paste and copy between your host and guest
+> operating system.
+
+E.Virtualbox.3:
+
+> Install the programs defined by the development configuration.
+
+E.Virtualbox.4:
+
+> Provide us with the key combination to copy and paste between
+> Windows and Vbox.
