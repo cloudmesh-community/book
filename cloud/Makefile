@@ -37,6 +37,7 @@ endif
  chapters/iaas/aws/signup.md\
 
 CHAPTER_516=\
+  chapters/version.md\
   chapters/preface/notation.md\
   chapters/class/organization-516.md\
   chapters/cloud/gregor.md\
@@ -121,6 +122,7 @@ prepare: refernces todo
 	$(COPY) -r ../template/fonts dest
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
+	../bin/date.py > dest/chapters/version.md
 	../bin/header.py dest/chapters/git/github.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
 	../bin/header.py dest/chapters/prg/python-install.md 1
