@@ -38,6 +38,7 @@ endif
 
 CHAPTER_516=\
   chapters/preface/notation.md\
+  chapters/class/organization-516.md\
   chapters/cloud/gregor.md\
   chapters/class/e516-engineering-cloud-computing.md\
   chapters/class/e516-summary.md\
@@ -62,8 +63,6 @@ CHAPTER_516=\
   chapters/SECTION-REFERENCES.md
 
 
-#
-
 #   chapters/iaas/services.md\
 
 
@@ -71,7 +70,6 @@ CHAPTER_516=\
 CHAPTER_CLASS=\
  chapters/class/SECTION.md\
  chapters/class/fall2018.md\
- chapters/class/organization.md\
  chapters/class/syllabus.md\
  chapters/class/policy.md\
  chapters/class/assignments.md\
@@ -130,6 +128,7 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/prg/python-libraries.md 2
 	../bin/header.py dest/chapters/prg/python-data.md 1
 	../bin/header.py dest/chapters/cloud/virtualbox.md 2
+	../bin/header.py dest/chapters/class/organization-516.md 2
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
