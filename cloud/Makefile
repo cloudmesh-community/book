@@ -384,8 +384,8 @@ prepare: dot refernces todo
 	$(COPY) -r ../template dest
 	$(COPY) -r ../template/fonts dest
 	$(COPY) -r ../chapters dest	
-	../bin/header.py ../chapters/git/github.md 2
 	$(MARKUPALL)
+	../bin/header.py dest/chapters/git/github.md 2
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md

@@ -241,10 +241,13 @@ a panel SSH key that you can click on which brings you to the window
 allowing you to add a new key. If you have difficulties with this find a
 video from the github foundation that explains this.
 
-## Working with a directory that was provided for you
+## Working with a directory that will be provided for you
 
 In case your course provided you with a github directory, starting and
-working in it is going to be real simple. If you are the only student
+working in it is going to be real simple. Please wait till an
+announcement to the class is send before you ask us quesions about it.
+
+If you are the only student
 working on this you still need to make sure that papers or programs you
 manage in the repository work and do not interfere with scripts that
 instructors may use to check your assignments. Thus it is god to still
