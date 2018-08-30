@@ -141,6 +141,8 @@ CHAPTER_516=\
   chapters/iaas/aws/signup.md\
   chapters/iaas/azure/signup.md\
   chapters/iaas/watson/signup.md\
+  chapters/SECTION-DEVTOOLS.md\
+  chapters/git/github.md\
   chapters/SECTION-REFERENCES.md
 
 CHAPTER_OTHER=\
@@ -382,7 +384,9 @@ prepare: dot refernces todo
 	$(COPY) -r ../template dest
 	$(COPY) -r ../template/fonts dest
 	$(COPY) -r ../chapters dest	
+	../bin/header.py ../chapters/git/github.md 2
 	$(MARKUPALL)
+	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "References" > dest/chapters/SECTION-REFERENCES.md

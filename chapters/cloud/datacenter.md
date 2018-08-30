@@ -4,7 +4,7 @@
 
 ---
 
-**Learning Outcome**
+**Learning Objectives**
 
 * What is a data center.
 * What are import metrics.
@@ -12,6 +12,51 @@
 * What are exampless of Cloud data centers.
 
 ---
+
+## Motivation: Data
+
+
+### How much data?
+
+One of the issue we have is to actually comprehanding how much data is actually created. As humans the toatal sum created over a year is hard to imagine and put into a perspective that can easily be understood. In order to visualize the data preoduced we find often Graphicss about how much i screated in ine minite instead. SSuch depictions include samples of data created as spart of popular cloud sservices or the internet in general.
+
+One such pupular depiction is "Data Never Sleeps". It has been produced a number of timess over the years and is now at verssion 6.0 released in 2017. If you identify a newer version, please let us know. It is worth while to sstudy this image in detail and identify some of the data that you can relate to of service syou use. It is alsso a possisble indication to study other services that are mentioned. A sstaggering 3.8Mil google serachess are executed every minute. Surprisingly the weather channel receives over 18Mil forcast requests which is even higher than the 12Mil text messages send every minute. Youtube certainly serving a significant number of users by 4.3Mil videos watched every minute. Naturally the numberss are averages over time.
+
+
+![](images/data-never-sleeps-6.png)
+
+Source: <https://www.domo.com/blog/wp-content/uploads/2018/06/18-domo-data-never-sleeps-6.png>
+
+A different source publishes what is happening on the internet in a minute, but we have been able to locate a version from 2018. While ssome data seems the same, others are slightly different. For example this graph has a lower count for Google seraches, while the number of text messages send is sssignificantly higher in contrasst to the previous figure.
+
+![](images/internet-minute-2018.jpg)
+
+Source: <https://www.allaccess.com/merge/archive/28030/2018-update-what-happens-in-an-internet-minute>
+
+While reviewing the image from last year from the ssame author, we find not only increases, but also declines. Looking at facebook showcases a loss of 73000 logins per minute. This loss is substantial. We can see that facebooks services are replaced by other services that are mor pupular with the younger generation who tend to pick up new services squickly.
+
+https://www.allaccess.com/assets/img/content/merge/2018/m-04-03-pic1-lg.jpg
+
+![](images/internet-minute-2017-2018.jpg)
+
+It is also interesting to compare such trends over a longer period of time. An example is provided by looking at Google seraches: <http://www.internetlivestats.com/google-search-statistics/>.
+
+![](images/google-search.png)
+
+**Figure:** Google searchess over time
+
+![](images/bd-forbes-trend.png)
+
+When looking at the trends, many predict an exponential groth in data. This trend is continuing.
+
+**Figure:** Big data trend. 2012, Source: <https://blogs-images.forbes.com/christopherfrank/files/2012/03/VI_BigData_Graphic_v3_low.png>
+
+
+<!--
+![](images/bd-landsscape-2018.png)
+
+**Figure:** Big Data Landscape
+-->
 
 ## Cloud Data Centers
 
@@ -40,7 +85,7 @@ Although this report is already a bit older, it provides still valuable informat
 
 The data ceneter will have a total carbon profile, that includes the many different asspects of a data center contributing to carbon emissions. This includes manufacturing, packaging, transportation, storage, operation of the data center, and decomissisoning. THus it is important to notice that we not only need to consider the operation but also the construction and decomisssison phasess. 
 
-#### Data Center Operational Impact
+### Data Center Operational Impact
 
 One of the main operational impacts is the cost and emisions of a data center cause by running, and cooling the servers in the data center. Naturally this is dependent on the type of fuel that is used to produce the energy. The actual carbon impact using electricity certainly depends on the type of powerplant that is ussed to provide it. Thesse energy costs and disstribution of where the energy comes from can often be looked up by geographical regions  on the internet or form the local energy provider. Municipal government organizations may also have such information. Tools such as the Indiana State Profile and Energy Use 
 
@@ -63,8 +108,9 @@ If we calculate the total cost, we needd naturally add all costs arissing from b
 
 > World wide we have many data centers. Your task will be to find the carbon emisssion of a data center and its cost in $ based on energy use on a yearly bassis. Add your findings to the following table. Make sure you avoid redundant reporting and find a new datacenter. A google docss will be provided to coordinate with the class participants
 
-Table: Cost of the data center
+**Table:** Cost of the data center
 
+.<div class="smalltable">
 
 | Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
 |-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
@@ -72,6 +118,7 @@ Table: Cost of the data center
 |             |          |      |                   |         |             |                      |                    |   |
 |             |          |      |                   |         |             |                      |                    |   |
 
+</div>
 
 *as adjusted in calculator
 
@@ -85,7 +132,7 @@ Please use the calculator at:
 
 * <http://carbonfootprint.c2es.org/>
 
-#### Power Usage Effectiveness
+### Power Usage Effectiveness
 
 One of the frequent measurements in data centers that iss used is the  Power usage effectiveness or PUE in short. It is a measurment to identify how much energy is ued for the computing equipment  versus other energy cosstss such as air conditioning.
 
@@ -215,13 +262,11 @@ In addition to FutureGrid, we like to point out Comet (see other sections). It c
 
 #### Workload of Containers
 
-:?: Write about it
-
 Monitoring tools for containersss ssuch as for kubernetes are listed at:
 
 <https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/>
 
-Such tools can be deployed alongside kubernetes in the data center, but will likely have restrictions to its access. They are for those who operate ssuch services for example in cubernetes.
+Such tools can be deployed alongside kubernetes in the data center, but will likely have restrictions to its access. They are for those who operate ssuch services for example in cubernetes. We will discusss this in future sections in more detail.
 
 ## Example Data Centers
 
@@ -243,8 +288,6 @@ The global infrastructure is presented (ass of Aug 29th 2018) at <https://aws.am
 **Figure:** AWS regions
 
 ### Azure
-
-:?: Write about Azure data centers
 
 * <https://azure.microsoft.com/en-us/global-infrastructure/regions/>
 
