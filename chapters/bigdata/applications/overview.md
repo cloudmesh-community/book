@@ -272,7 +272,8 @@ Fruit.
     Cloud Computing and the Long Tail of Science October 2012 Dennis
     Gannon
 -   Dan Reed Roger Barga Dennis Gannon Rich
-    Wolskihttp://research.microsoft.com/en-us/people/barga/sc09\_cloudcomp\_tutorial.pdf
+    Wolski
+    <http://research.microsoft.com/en-us/people/barga/sc09\_cloudcomp_tutorial.pdf>
 -   <http://www.datacenterknowledge.com/archives/2011/05/10/uptime-institute-the-average-pue-is-1-8/>
 -   <http://loosebolts.wordpress.com/2008/12/02/our-vision-for-generation-4-modular-data-centers-one-way-of-getting-it-just-right/>
 -   <http://www.mediafire.com/file/zzqna34282frr2f/koomeydatacenterelectuse2011finalversion.pdf>
