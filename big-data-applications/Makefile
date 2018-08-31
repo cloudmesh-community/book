@@ -120,6 +120,7 @@ CHAPTER_BIGDATA=\
  chapters/bigdata/intro-fall-2018.md\
  chapters/bigdata/applications/overview.md\
  chapters/bigdata/applications/physics.md\
+ chapters/bigdata/applications/radar.md\
  chapters/bigdata/applications/lifestyle.md\
  chapters/bigdata/applications/sport.md\
  chapters/bigdata/applications/cloud.md\
