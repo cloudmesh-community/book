@@ -36,7 +36,7 @@ $
 
 [:pencil: Slides 10](TBD)
 
-Slides without any audio. They may be fasster to download.
+Slides without any audio. They may be faster to download. 
 
 
 :mortar_board:
@@ -45,7 +45,7 @@ Slides without any audio. They may be fasster to download.
 
 :question:
 
-> Indicates opportunitiess for comprehension assignments while
+> Indicates opportunities for comprehension assignments while
 > contributing to this document.
 
 ---
