@@ -249,7 +249,7 @@ Use parse() on every element of the Class_dates string.
 #   datetime.datetime(2017, 9, 8, 0, 0),
 #   datetime.datetime(2017, 9, 15, 0, 0),
 #   datetime.datetime(2017, 9, 22, 0, 0),
-#   datetime.datetime(2017, 9, 29, 0, 0)]  
+#   datetime.datetime(2017, 9, 29, 0, 0)]
 ```
 
 Use parse, but designate that the day is first.
@@ -265,36 +265,40 @@ group of Series objects that share an index (the column names).
 
 ```python
 import pandas as pd
-data = {'class_dates': ['8/25/2017 18:47:05.069722', 
-                        '9/1/2017 18:47:05.119994', 
-                        '9/8/2017 18:47:05.178768', 
-                        '9/15/2017 18:47:05.230071', 
-                        '9/22/2017 18:47:05.230071', 
-                        '9/29/2017 18:47:05.280592'], 
-        'complete': [1, 0, 1, 1, 0, 1]} 
-df = pd.DataFrame(data, columns = ['class_dates', 'complete'])
+data = {
+  'dates': [
+    '8/25/2017 18:47:05.069722', 
+    '9/1/2017 18:47:05.119994', 
+    '9/8/2017 18:47:05.178768', 
+    '9/15/2017 18:47:05.230071', 
+    '9/22/2017 18:47:05.230071', 
+    '9/29/2017 18:47:05.280592'], 
+  'complete': [1, 0, 1, 1, 0, 1]} 
+df = pd.DataFrame(
+  data,
+  columns = ['dates','complete'])
 print(df)
-#                  class_dates  complete
-#  0  8/25/2017 18:47:05.069722         1
-#  1   9/1/2017 18:47:05.119994         0
-#  2   9/8/2017 18:47:05.178768         1
-#  3  9/15/2017 18:47:05.230071         1
-#  4  9/22/2017 18:47:05.230071         0
-#  5  9/29/2017 18:47:05.280592         1
+#                  dates  complete
+#  0  8/25/2017 18:47:05.069722 1
+#  1   9/1/2017 18:47:05.119994 0
+#  2   9/8/2017 18:47:05.178768 1
+#  3  9/15/2017 18:47:05.230071 1
+#  4  9/22/2017 18:47:05.230071 0
+#  5  9/29/2017 18:47:05.280592 1
 ```
 
 Convert `` df[`date`] `` from string to datetime
 
 ```python
 import pandas as pd
-pd.to_datetime(df['class_dates'])
+pd.to_datetime(df['dates'])
 # 0   2017-08-25 18:47:05.069722
 # 1   2017-09-01 18:47:05.119994
 # 2   2017-09-08 18:47:05.178768
 # 3   2017-09-15 18:47:05.230071
 # 4   2017-09-22 18:47:05.230071
 # 5   2017-09-29 18:47:05.280592
-# Name: class_dates, dtype: datetime64[ns]
+# Name: dates, dtype: datetime64[ns]
 ```
 
 Control Statements
@@ -319,7 +323,7 @@ choice using the if keyword. For example:
 ```python
 x = int(input("Guess x:"))
 if x == 4:
-   print('You guessed correctly!')
+   print('Correct!')
 ```
 
 In this example, *You guessed correctly!* will only be printed if the
@@ -329,11 +333,11 @@ multiple conditions using the elif and else keywords.
 ```python
 x = int(input("Guess x:"))
 if x == 4:
-    print('You guessed correctly!')
+    print('Correct!')
 elif abs(4 - x) == 1:
-    print('Wrong guess, but you are close!')
+    print('Wrong, but close!')
 else:
-    print('Wrong guess')
+    print('Wrong, way off!')
 ```
 
 ### Iteration
@@ -388,10 +392,17 @@ To define a list, you simply list its elements between square brackets
 '\[\]':
 
 ```python
-names = ['Albert', 'Jane', 'Liz', 'John', 'Abby']
-names[0] # access the first element of the list
+names = [
+  'Albert',
+  'Jane',
+  'Liz',
+  'John',
+  'Abby']
+# access the first element of the list
+names[0]
 # 'Albert'
-names[2] # access the third element of the list
+# access the third element of the list
+names[2] 
 # 'Liz'
 ```
 
@@ -400,9 +411,11 @@ from the end of the list. Thus, the last element has index *-1*, the
 second before last element has index *-2* and so on:
 
 ```python
-names[-1] # access the last element of the list
+# access the last element of the list
+names[-1] 
 # 'Abby'
-names[-2] # access the second last element of the list
+# access the second last element of the list
+names[-2] 
 # 'John'
 ```
 
@@ -410,7 +423,8 @@ Python also allows you to take whole slices of the list by specifying a
 beginning and end of the slice separated by a colon
 
 ```python
-names[1:-1] # the middle elements, excluding first and last
+# the middle elements, excluding first and last
+names[1:-1] 
 # ['Jane', 'Liz', 'John']
 ```
 
@@ -425,7 +439,8 @@ You can add elements with append':
 ```python
 names.append('Liz')
 names
-# ['Albert', 'Jane', 'Liz', 'John', 'Abby', 'Liz']
+# ['Albert', 'Jane', 'Liz',
+#  'John', 'Abby', 'Liz']
 ```
 
 As you can see, the elements in a list need not be unique.
@@ -435,7 +450,8 @@ Merge two lists with 'extend':
 ```python
 names.extend(['Lindsay', 'Connor'])
 names
-# ['Albert', 'Jane', 'Liz', 'John', 'Abby', 'Liz', 'Lindsay', 'Connor']
+# ['Albert', 'Jane', 'Liz', 'John',
+#  'Abby', 'Liz', 'Lindsay', 'Connor']
 ```
 
 Find the index of the first occurrence of an element with 'index':
@@ -447,7 +463,8 @@ Remove elements by value with 'remove':
 ```python
 names.remove('Abby')
 names
-# ['Albert', 'Jane', 'Liz', 'John', 'Liz', 'Lindsay', 'Connor']
+# ['Albert', 'Jane', 'Liz', 'John',
+#  'Liz', 'Lindsay', 'Connor']
 ```
 
 Remove elements by index with 'pop':
@@ -456,7 +473,8 @@ Remove elements by index with 'pop':
 names.pop(1)
 # 'Jane'
 names
-# ['Albert', 'Liz', 'John', 'Liz', 'Lindsay', 'Connor']
+# ['Albert', 'Liz', 'John',
+#  'Liz', 'Lindsay', 'Connor']
 ```
 
 Notice that pop returns the element being removed, while remove does
@@ -468,11 +486,13 @@ can use insert and 'pop':
 ```python
 names.insert(0, 'Lincoln')
 names
-# ['Lincoln', 'Albert', 'Liz', 'John', 'Liz', 'Lindsay', 'Connor']
+# ['Lincoln', 'Albert', 'Liz',
+#  'John', 'Liz', 'Lindsay', 'Connor']
 names.pop()
 # 'Connor'
 names
-# ['Lincoln', 'Albert', 'Liz', 'John', 'Liz', 'Lindsay']
+# ['Lincoln', 'Albert', 'Liz',
+#  'John', 'Liz', 'Lindsay']
 ```
 
 The Python documentation contains a [full list of list operations]().
@@ -492,7 +512,8 @@ range(2, 10, 2)
 Python lists can contain duplicates as you saw above:
 
 ```python
-names = ['Albert', 'Jane', 'Liz', 'John', 'Abby', 'Liz']
+names = ['Albert', 'Jane', 'Liz',
+         'John', 'Abby', 'Liz']
 ```
 
 When we donot want this to be the case, we can use a
@@ -589,12 +610,25 @@ referred to as *dict*.
 A dictionary represents a key value store:
 
 ```python
-person = {'Name': 'Albert', 'Age': 100, 'Class': 'Scientist'}
+person = {
+  'Name': 'Albert',
+  'Age': 100,
+  'Class': 'Scientist'
+  }
 print("person['Name']: ", person['Name'])
 # person['Name']:  Albert
 print("person['Age']: ", person['Age'])
 # person['Age']:  100
 ```
+
+A conveniet for to print by named attributes is
+
+```
+print("{Name} {Age}'.format(**data)) 
+```
+This form of printing with the format statement and a refernce to data
+increases sreadability of the print statements.
+
 
 You can delete elements with the following commands:
 
@@ -615,7 +649,11 @@ person
 You can iterate over a dict:
 
 ```python
-person = {'Name': 'Albert', 'Age': 100, 'Class': 'Scientist'}
+person = {
+  'Name': 'Albert',
+  'Age': 100,
+  'Class': 'Scientist'
+  }
 for item in person:
   print(item, person[item])
 
@@ -659,9 +697,12 @@ flips:
 
 ```python
 import random
-die_rolls = [random.choice(['heads', 'tails']) for _ in range(10)]
+die_rolls = [
+  random.choice(['heads', 'tails']) for _ in range(10)
+]
 # die_rolls
-# ['heads', 'tails', 'heads', 'tails', 'heads', 'heads', 
+# ['heads', 'tails', 'heads',
+#  'tails', 'heads', 'heads', 
    'tails', 'heads', 'heads', 'heads']
 ```
 
@@ -752,7 +793,8 @@ class). For example, let's see how to define a Triangle class:
 ```python
 class Triangle(object):
 
- def __init__(self, length, width, height, angle1, angle2, angle3):
+  def __init__(self, length, width,
+               height, angle1, angle2, angle3):
      if not self._sides_ok(length, width, height):
          print('The sides of the triangle are invalid.')
      elif not self._angles_ok(angle1, angle2, angle3):
@@ -837,7 +879,9 @@ greater than the difference of the lengths of the other two sides.:
 
     if __name__ == '__main__':
       args = docopt(__doc__)
-      a, b, c = int(args['LENGTH']), int(args['WIDTH']), int(args['HEIGHT'])
+      a, b, c = int(args['LENGTH']),
+                int(args['WIDTH']),
+                int(args['HEIGHT'])
       valid_triangle = \
           a < b + c and a > abs(b - c) and \
           b < a + c and b > abs(a - c) and \

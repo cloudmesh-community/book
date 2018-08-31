@@ -1,4 +1,4 @@
-# Radar :o:
+# Radar
 
 The changing global climate is suspected to have long-term effects on
 much of the world's inhabitants. Among the various effects, the rising

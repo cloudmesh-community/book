@@ -48,6 +48,7 @@ CHAPTER_516=\
   chapters/cloud/datacenter.md\
   chapters/SECTION-DEVTOOLS.md\
   chapters/cloud/virtualbox.md\
+  chapters/cloud/vagrant.md\
   chapters/git/github.md\
   chapters/linux/linux.md\
 	chapters/prg/SECTION-PYTHON.md\
@@ -106,6 +107,7 @@ FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
+CSS=--css=template/pandoc.css
 CSS_HTML=--css=template/pandoc.css
 RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson"
 
@@ -127,6 +129,7 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/linux/linux.md 2
 	../bin/header.py dest/chapters/prg/python-install.md 1
 	../bin/header.py dest/chapters/prg/python.md 2
+	../bin/header.py dest/chapters/cloud/vagrant.md 2
 	../bin/header.py dest/chapters/prg/python-libraries.md 2
 	../bin/header.py dest/chapters/prg/python-data.md 1
 	../bin/header.py dest/chapters/cloud/virtualbox.md 2
