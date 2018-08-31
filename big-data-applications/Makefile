@@ -119,6 +119,7 @@ CHAPTER_IN=\
 
 CHAPTER_BIGDATA=\
  chapters/preface/notation.md\
+ chapters/class/organization-523.md\
  chapters/class/e534-i523.md\
  chapters/bigdata/intro-fall-2018.md\
  chapters/bigdata/applications/physics.md\
