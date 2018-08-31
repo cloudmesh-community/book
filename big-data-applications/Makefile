@@ -114,11 +114,13 @@ CHAPTER_IN=\
 # chapters/bigdata/SECTION.md\
 # chapters/bigdata/intro-cloud.md\
 
+
+# chapters/bigdata/applications/overview.md\
+
 CHAPTER_BIGDATA=\
  chapters/preface/notation.md\
  chapters/class/e534-i523.md\
  chapters/bigdata/intro-fall-2018.md\
- chapters/bigdata/applications/overview.md\
  chapters/bigdata/applications/physics.md\
  chapters/bigdata/applications/radar.md\
  chapters/bigdata/applications/lifestyle.md\
