@@ -78,8 +78,8 @@ This unit is devoted to Python experiments looking at histograms of
 Higgs Boson production with various forms of shape of signal and various
 background and with various event totals.
 
--   \[:scroll: Higgs II
-    (29)\](https://drive.google.com/open?id=0B8936\_ytjfjmUHRpV2g2V28walE}
+-   [:scroll: Higgs II
+    (29)](https://drive.google.com/open?id=0B8936_ytjfjmUHRpV2g2V28walE)
 
 Files:
 
