@@ -122,7 +122,7 @@ A current set is available at:
 - Example of Google Maps/navigation. 
 - Criteria for Data Science platform.
 
-## Part 9: Physical as an Application Example 
+## Part 9: Physics as an Application Example 
 
 [:scroll: 9. Physics as an Application Example](https://drive.google.com/open?id=0B1YZSKYkpykjSDFmdnVhTWxUVVk)
 
