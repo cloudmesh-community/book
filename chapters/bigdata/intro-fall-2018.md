@@ -52,9 +52,9 @@ and illustrated.
 
 ## Part 4: Industry Trends
 
---* [:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)-->
+* [:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)
 
---* [:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi)-->
+* [:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=19IzviYqq92YkvbuPnNoejbOeeLCGtfBi)
 
 
 An older set of trend slides is availabe from:
