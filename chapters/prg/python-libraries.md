@@ -16,6 +16,22 @@ allow us to illustrate the use if virtual environments using the pyenv
 or virtualenv command, and installing and uninstalling PyPi packages
 using pip.
 
+Updateing Pip
+-------------
+
+It is important that you have the newest version of pip installed for your 
+version of python. Let us assume your python is registered with python and 
+you use pyenv, thna you can update 
+pip with 
+
+```bash
+pip install -U pip
+```
+
+without interfeering with a potential system wide installed version of p
+ip that may be needed by the system default version of python. See the 
+setcion about pyenv for more details
+
 Using pip to Install Packages
 -----------------------------
 
