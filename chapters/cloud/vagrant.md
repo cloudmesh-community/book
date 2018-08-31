@@ -1,38 +1,120 @@
 # Vagrant
 
+A convenient tool to interface with Virtual Box is vagrant.Vagrant
+allows us to manage virtual machines directly from the commandline. It
+support also other providers and can be used to start virtual machines
+and even containers. The latest version of vagrant includes the
+ability to automatically fetch a virtual machine image and start it on
+your local computer. It assumes that you have virtual box installed.
+Some key concepts and advertisement are located at
 
-FROM <https://www.vagrantup.com/intro/index.html>:
-"Vagrant is a tool for building and managing virtual machine environments in a single workflow. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
+* <https://www.vagrantup.com/intro/index.html>:
 
-If you are already familiar with the basics of Vagrant, the documentation provides a better reference build for all available features and internals."
+Detailed documentation for it is located
 
-<https://app.vagrantup.com/ubuntu/boxes/bionic64>
+* <https://www.vagrantup.com/docs/index.html>
 
+
+A list of *boxes* is available from 
+
+* <https://app.vagrantup.com/boxes/search>
+
+One image we will typically use is Ubuntu 18.04. PLease note that
+older version may not be suitable for class and we will not support
+any questions about them. This image is located at
+
+* <https://app.vagrantup.com/ubuntu/boxes/bionic64>
+
+## Installation
+
+Vagrant is easy to install. YOu can go to the download page and
+download and install the appropriate version:
+
+* <https://www.vagrantup.com/downloads.html>
+
+### OSX
+
+On MacOS, download the dmg image, and click on it. YOu will find a pkg
+in it that you double click. After installation vagrant is installed in 
+
+* `/usr/local/bin/vagrant`
+
+Make sure `/usr/local/bin` is in your `PATH`
+Start a new  terminal to verify this.
+
+Check it with
 
 ```
-vagrant init ubuntu/bionic64
-vagrant up
-vagrant ssh
+echo $PATH
 ```
 
-Default verssion:
+If it is not in the path put
 
+export PATH=/usr/local/bin:$PATH
+
+in the terminal command or in your `~/.bash_profile`
+
+### Windows
+
+:?: students contribute
+
+### Linux
+
+:?: students contribute
+
+## Usage
+
+To download, start and login into install the 18.04:
+
+```
+host$ vagrant init ubuntu/bionic64
+host$ vagrant up
+host$ vagrant ssh
+```
+
+Once you are loged in you can test the version of python with 
+
+```bash
+vagrant@ubuntu-bionic:~$ sudo apt-get update
 vagrant@ubuntu-bionic:~$ python3 --version
 Python 3.6.5
+```
 
+To install a newer version of python, and pip you can use
 
-sudo apt-get install python3.6
-sudo apt-get install idle-python
-sudo apt-get install python3-pip
+```bash
+vagrant@ubuntu-bionic:~$ sudo apt-get install python3.7
+vagrant@ubuntu-bionic:~$ sudo apt-get install python3-pip
+```
 
-sudo apt-get install python3.7
+To install the light weit idle development environment in case you do
+not want o use pyCharm, please use 
 
-python3.7 --version
+```bash
+vagrant@ubuntu-bionic:~$ sudo apt-get install idle-python
+```
 
+So that you do not have to always use the number 3, you can also set
+an alias with
+
+```bash
 alias python=python3
+```
 
+When you exit the virtual machine with the
 
-vagrant status
-vagrant destroy
-vagrant suspend
-vagrant resume
+```
+exit command
+```
+
+It does not terminate the VM. YOu can use from your host system the
+commands such as 
+
+```bash
+host$ vagrant status
+host$ vagrant destroy
+host$ vagrant suspend
+host$ vagrant resume
+```
+
+to manage the vm.
