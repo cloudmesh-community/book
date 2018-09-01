@@ -118,6 +118,7 @@ CHAPTER_IN=\
 
 
 CHAPTER_BIGDATA=\
+ chapters/authors.md\
  chapters/preface/notation.md\
  chapters/class/organization-523.md\
  chapters/class/e534-i523.md\
@@ -206,6 +207,7 @@ prepare: dot refernces todo
 	$(COPY) -r ../template/fonts dest
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
+	../bin/authors.py > dest/chapters/authors.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
