@@ -70,7 +70,10 @@ latex
 
 A video to showcase such an install is available at:
 
-[:clapper: Virtualbox seconds Video](https://youtu.be/NWibDntN2M4)
+[:clapper: Virtualbox Video](https://youtu.be/NWibDntN2M4)
+
+:warning: Please note that the video shows the version 16.04. You should however 
+use the newest version which at this time is 18.04.
 
 If you specify your machine too small you will not be able to install
 the development environment. Gregor used on his machine 8GB RAM and 25GB
