@@ -147,6 +147,11 @@ command.
 | ssh                               | remote login program                      |
 | scp                               | remote file copy program                      |
 | sftp                              | secure file transfer program                      |
+| watch *command* | run any designated command at regular intervals |
+| awk | program that you can use to select particular records in a file and perform operations on them |
+| sed | stream editor used to perform basic text transformations |
+| xargs | program that can be used to build and execute commands from STDIN |
+| cat *some_file.json* \| python -m json.tool | quick and easy JSON validator |
 
 </div>
 
