@@ -233,7 +233,7 @@ to supercomputing.
 -   [:clapper: Clouds
     (16:04)](https://www.youtube.com/watch?v=trIFW-rucgM){MP4}
 
-### Features of Data Deluge I
+### Aspect of Data Deluge
 
 Data, Information, intelligence algorithms, infrastructure, data
 structure, semantics and knowledge are related. The semantic web and Big
