@@ -96,7 +96,7 @@ easily into for example a terminal or an editor that you run in the Vm.
 
 A video is located at
 
-[:clapper: Virtualbox (4:46 Video)](https://youtu.be/wdCoiNdn2jA)
+[:clapper: Virtualbox (4:46)](https://youtu.be/wdCoiNdn2jA)
 
 Please reboot the machine after installation and configuration.
 
