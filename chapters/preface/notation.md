@@ -60,6 +60,10 @@ Slides without any audio. They may be faster to download.
 > Indicates opportunities for comprehension assignments while
 > contributing to this document.
 
+:warning:
+
+> A warning that we need to look at in more detail.
+
 ---
 
 :bulb: *Notes are indicated with a bulb and are written in itallic and surounded by bars* using the `:bulb:` emoji
