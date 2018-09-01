@@ -265,7 +265,7 @@ Fruit.
 -   [:clapper: Data Analytics (7:28)](http://youtu.be/RPVojR8jrb8)
 -   [:clapper: Data Analytics (6:51)](http://youtu.be/wOSgywqdJDY)
 
-## Resources
+### Resources
 
 -   CSTI General Assembly 2012, Washington, D.C., USA Technical
     Activities Coordinating Committee (TACC) Meeting, Data Management,
