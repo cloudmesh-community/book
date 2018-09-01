@@ -5,7 +5,9 @@ range of problems and solutions. It covers cloud computing
 technologies and includes a project. Also, algorithms are introduced
 and illustrated.
 
-## Part 1: General Remarks Including Hype curves
+## General Remarks Including Hype curves
+
+This is Part 1 of the introduction.
 
 [:clapper: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1DQKjUXBz1NzDsF1scw3kocivxpCUqfsK)
 
@@ -21,7 +23,9 @@ and illustrated.
 - Technology trends
 - Industry reports
 
-## Part 2: Data Deluge
+## Data Deluge
+
+This is Part 2 of the introduction.
 
 [:clapper: 2.a Business usage patterns from NIST](https://drive.google.com/open?id=1WMPvAsfESLy3X94SVZjfUlSUplJPYVXA)
 
@@ -37,7 +41,9 @@ and illustrated.
 - Several examples of rapid data and information growth in different areas
 - Value of data and analytics
 
-## Part 3: Jobs
+## Jobs
+
+This is Part 3 of the introduction.
 
 [:clapper: 3. Jobs](https://drive.google.com/open?id=1tMKNKWa71HZSk9jLNw8jUws9-JlldqZ0)
 
@@ -50,7 +56,9 @@ and illustrated.
 - Jobs demands in different countries and companies.
 - Trends and forecast of jobs demands in the future.
 
-## Part 4: Industry Trends
+## Industry Trends
+
+This is Part 4 of the introduction.
 
 [:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)
 
@@ -74,7 +82,9 @@ A current set is available at:
 - Many technology trends through end of 2014 and 2015 onwards, examples in different fields
 - Voice and HCI, Cars Evolving and Deep learning 
 
-## Part 5: Digital Disruption and Transfromation
+## Digital Disruption and Transfromation
+
+This is Part 5 of the introduction.
 
 [:clapper: 5. Digital Disruption and Transformation ](https://drive.google.com/open?id=1Wo0pf0H_kQNwau6hTO9MccFdx4zHhV-5)
 
@@ -85,7 +95,9 @@ A current set is available at:
 
 - The past displaced by digital disruption
 
-## Part 6: Computing Model
+## Computing Model
+
+This is Part 6 of the introduction.
 
 [:clapper: 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=1Sqfo3sGOig7S7QVqGj3mP6uY8UwP1fVk)
 
@@ -104,14 +116,18 @@ A current set is available at:
 - Some examples of development: AWS quarterly revenue, critical capabilities public cloud infrastructure as a service.
 - Blockchain: ledgers redone, blockchain constortia.
 
-## Part 7: Research Model 
+## Research Model 
+
+This is Part 7 of the introduction.
 
 [:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=0B1YZSKYkpykjWXNtTnYxVGR2ZUE)
 
 
 - The 4 paradigm of scientific research: Theory,Experiment and observation,Simulation of theory or model,Data-driven.
 
-## Part 8: Data Science Pipeline 
+## Data Science Pipeline 
+
+This is Part 8 of the introduction.
 
 [:clapper: 8. Data Science Pipeline](https://drive.google.com/open?id=0B1YZSKYkpykjbWxXMVBETms0WEU)
 
@@ -122,14 +138,19 @@ A current set is available at:
 - Example of Google Maps/navigation. 
 - Criteria for Data Science platform.
 
-## Part 9: Physics as an Application Example 
+## Physics as an Application Example 
+
+This is Part 9 of the introduction.
+
 
 [:scroll: 9. Physics as an Application Example](https://drive.google.com/open?id=0B1YZSKYkpykjSDFmdnVhTWxUVVk)
 
 
 - Physics as an application example.
 
-## Part 10: Technology Example 
+## Technology Example 
+
+This is Part 10 of the introduction.
 
 [:scroll: 10. Technology Example: Recommender Systems I](https://drive.google.com/open?id=0B1YZSKYkpykjd09FN3ZnWEFsQlk)
 
@@ -137,7 +158,9 @@ A current set is available at:
 - Overview of many informatics areas, recommender systems in detail.
 - NETFLIX on personlization, recommendation, datascience.
 
-## Part 11: Exploring Data Bags and Spaces 
+## Exploring Data Bags and Spaces 
+
+This is Part 11 of the introduction.
 
 [:clapper: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjOXIxTS00NXRJdms)
 
@@ -146,26 +169,34 @@ A current set is available at:
 
 - Distances in funny spaces, about "real" spaces and how to use diatances.
 
-## Part 12: Another Example: Web Search Information Retrieval 
+## Another Example: Web Search Information Retrieval 
+
+This is Part 12 of the introduction.
 
 [:clapper: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjamJLNTZvYndyN2M)
 
 [:scroll: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjM0ZIeWgwMkhkcmM)
 
 
-## Part 13: Cloud Application in Research 
+## Cloud Application in Research 
+
+This is Part 13 of the introduction discusssing clcloud applications in research.
 
 [:scroll: 13. Cloud Applications in Research: Science Clouds and Internet of Things](https://drive.google.com/open?id=0B1YZSKYkpykjODk2V19LX1Bxc2c)
 
 
-## Part 14: Software Ecosystems: Parallel Computing and MapReduce 
+## Software Ecosystems: Parallel Computing and MapReduce 
+
+This is Part 14 of the introduction discussing the software ecosysstem
 
 [:scroll: 14. Software Ecosystems: Parallel Computing and MapReduce](https://drive.google.com/open?id=0B1YZSKYkpykjNTZhcllDMmJ4NGM)
 
 
 <!--
 
-## Part 15: Opportunities at Universities 
+## Opportunities at Universities 
+
+This is Part 15 of the introduction.
 
 [:clapper: 15. Opportunities at Universities](https://drive.google.com/open?id=0B1YZSKYkpykjT3lCcFlkT0NSRUk)
 
@@ -173,7 +204,9 @@ A current set is available at:
 
 -->
  
-## Part 15: Conclusions
+## Conclusions
+
+This is Part 15 of the introduction with some conluding remarks.
 
 [:clapper: 15. Conclusions](https://drive.google.com/open?id=1r8n-KVp2gnaamjSSsIiK5DLYi5hbAMK-)
 
