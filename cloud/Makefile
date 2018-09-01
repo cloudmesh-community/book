@@ -38,8 +38,10 @@ endif
 
 CHAPTER_516=\
   chapters/version.md\
+  chapters/authors.md\
   chapters/preface/notation.md\
   chapters/class/organization-516.md\
+  chapters/class/plagiarism.md\
   chapters/cloud/gregor.md\
   chapters/class/e516-engineering-cloud-computing.md\
   chapters/class/e516-summary.md\
@@ -123,6 +125,7 @@ prepare: refernces todo
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
 	../bin/date.py > dest/chapters/version.md
+	../bin/authors.py > dest/chapters/authors.md
 	../bin/header.py dest/chapters/git/github.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
 	../bin/header.py dest/chapters/prg/python-install.md 1
