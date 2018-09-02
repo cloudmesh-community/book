@@ -100,7 +100,13 @@ The course has the following objectives:
 | 08/24 :white_check_mark:    | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
 | 08/24 :white_check_mark:    | 1       | Introduction      | [Class summary](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md)
 | 08/24  :white_check_mark:   |         |                   | [Definition of Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md)
-| 08/31 :o:    |         |                   | Tools and Services
+| 08/31 :white_check_mark:    |         |                   | Tools and Services
+|     |         |                   | [Virtualbox](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualbox.md)
+|     |         |                   | [Vagrant](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/vagrant.md)
+|     |         |                   | [Github](https://github.com/cloudmesh-community/book/blob/master/chapters/git/github.md)
+|     |         |                   | [Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
+|     |         |                   | Python
+| 08/31 :white_check_mark: |         |                   | [Introduction to Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md)
 | 09/03 :o:    |         |                   | Data Center, NIST Big Data Reference Architecture
 | 09/10 :o:    | 2       | Infrastructure    | Infrastructure as a Service
 | 09/17 :o:    |         |                   | OpenStack, Azure, AWS
