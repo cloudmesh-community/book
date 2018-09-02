@@ -199,6 +199,11 @@ area. (<https://journal.uptimeinstitute.com/data-center-staffing/>)
 
 ## Data Center Metrics
 
+One of the important factors for a smooth operation but also for a
+smooth offering of services is to employ metrics that will be able to
+provide significant impacting the operations. Having metrics allows
+the staff to monitor and adapt to dynamic situations but also to plan
+operations.
 
 ### Data Center Carbon Footprint
 
