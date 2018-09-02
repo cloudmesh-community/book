@@ -5,9 +5,10 @@ range of problems and solutions. It covers cloud computing
 technologies and includes a project. Also, algorithms are introduced
 and illustrated.
 
-## General Remarks Including Hype curves
+## General Remarks Including Hype cycles
 
-This is Part 1 of the introduction.
+This is Part 1 of the introduction. We start with some general remarks and 
+take a closer look at the emerging technology hype cycles. 
 
 [:clapper: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1DQKjUXBz1NzDsF1scw3kocivxpCUqfsK)
 
