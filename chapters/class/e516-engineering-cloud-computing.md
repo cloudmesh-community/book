@@ -107,7 +107,14 @@ The course has the following objectives:
 | :white_check_mark:    |         |                   | [Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
 | :white_check_mark:    |         |                   | Python
 | 08/31 :white_check_mark: |         |                   | [Introduction to Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md)
-|     |         |                   | 
+|  :white_check_mark:   |         |                   | [Python Instalation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md)
+|  :white_check_mark:   |         |                   | [Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md)
+|  :white_check_mark:   |         |                   | [Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md)
+|  :white_check_mark:   |         |                   | [Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md)
+|  :white_check_mark:   |         |                   | [Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md)
+|  :white_check_mark:   |         |                   | [Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md)
+|  :white_check_mark:   |         |                   | [Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
+|  :white_check_mark:   |         |                   | [Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
 | 09/03 :o:    |         |                   | Data Center, NIST Big Data Reference Architecture
 | 09/10 :o:    | 2       | Infrastructure    | Infrastructure as a Service
 | 09/17 :o:    |         |                   | OpenStack, Azure, AWS
