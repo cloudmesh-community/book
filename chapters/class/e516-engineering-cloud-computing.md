@@ -103,21 +103,21 @@ The course has the following objectives:
 | :white_check_mark: 08/31    |         |                   | Tools and Services
 | :white_check_mark:    |         |                   | [Virtualbox](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualbox.md), [Vagrant](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/vagrant.md), [Github](https://github.com/cloudmesh-community/book/blob/master/chapters/git/github.md), [Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
 | :white_check_mark:    |         |                   | Python
-| 08/31 :white_check_mark: |         |                   | [Introduction to Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md), [Python Instalation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md), [Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md), [Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md), [Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md), [Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md), [Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md), [Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md), [Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
-| 09/03 :o:    |         |                   | Data Center, NIST Big Data Reference Architecture
-| 09/10 :o:    | 2       | Infrastructure    | Infrastructure as a Service
-| 09/17 :o:    |         |                   | OpenStack, Azure, AWS
-| 09/24 :o:    | 3       | Virtualization    | Qemu, KVM, Virtual machines
-| 10/01 :o:    |         |                   | Containers, Docker, Kubernetes
-| 10/08 :o:    | 3       | Programming       | Python for Cloud Computing, LibCloud
-| 10/08 :o:    |         |                   | Github as a Cloud Service
-| 10/15 :o:    |         |                   | REST Services, Eve, OpenAPI
-| 10/22 :o:    |         |                   | Map/Reduce, Hadoop, Spark
-| 10/29 :o:    |         |                   | Messaging with MQTT
-| 11/05 :o:    |         |                   | GraphQL
-| 11/19 :o:    |         |                   | Go for the Cloud I
-| 11/19 :o:    |         |                   | Go for the Cloud II
-| 12/03 :o:    | 4       | Edge Computing    | Edge Computing and the Cloud
+| :white_check_mark: 08/31  |         |                   | [Introduction to Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md), [Python Instalation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md), [Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md), [Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md), [Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md), [Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md), [Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md), [Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md), [Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
+| :o: 09/03 |         |                   | Data Center, NIST Big Data Reference Architecture
+| :o: 09/10 | 2       | Infrastructure    | Infrastructure as a Service
+| :o: 09/17 |         |                   | OpenStack, Azure, AWS
+| :o: 09/24 | 3       | Virtualization    | Qemu, KVM, Virtual machines
+| :o: 10/01 |         |                   | Containers, Docker, Kubernetes
+| :o: 10/08 | 3       | Programming       | Python for Cloud Computing, LibCloud
+| :o: 10/08 |         |                   | Github as a Cloud Service
+| :o: 10/15 |         |                   | REST Services, Eve, OpenAPI
+| :o: 10/22 |         |                   | Map/Reduce, Hadoop, Spark
+| :o: 10/29 |         |                   | Messaging with MQTT
+| :o: 11/05 |         |                   | GraphQL
+| :o: 11/19 |         |                   | Go for the Cloud I
+| :o: 11/19 |         |                   | Go for the Cloud II
+| :o: 12/03 | 4       | Edge Computing    | Edge Computing and the Cloud
 | 09/03-11/02* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
 | 09/03-11/02* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
 | 09/03-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
