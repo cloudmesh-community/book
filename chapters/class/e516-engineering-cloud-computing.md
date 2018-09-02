@@ -101,20 +101,20 @@ The course has the following objectives:
 | :white_check_mark: 08/24    | 1       | Introduction      | [Class summary](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md)
 | :white_check_mark: 08/24    |         |                   | [Definition of Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md)
 | :white_check_mark: 08/31    |         |                   | Tools and Services
-| :white_check_mark:    |         |                   | [Virtualbox](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualbox.md)
-| :white_check_mark:    |         |                   | [Vagrant](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/vagrant.md)
-| :white_check_mark:    |         |                   | [Github](https://github.com/cloudmesh-community/book/blob/master/chapters/git/github.md)
-| :white_check_mark:    |         |                   | [Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
+| :white_check_mark:    |         |                   | [Virtualbox](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualbox.md),
+[Vagrant](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/vagrant.md),
+[Github](https://github.com/cloudmesh-community/book/blob/master/chapters/git/github.md),
+[Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
 | :white_check_mark:    |         |                   | Python
-| 08/31 :white_check_mark: |         |                   | [Introduction to Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md)
-|  :white_check_mark:   |         |                   | [Python Instalation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md)
-|  :white_check_mark:   |         |                   | [Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md)
-|  :white_check_mark:   |         |                   | [Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md)
-|  :white_check_mark:   |         |                   | [Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md)
-|  :white_check_mark:   |         |                   | [Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md)
-|  :white_check_mark:   |         |                   | [Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md)
-|  :white_check_mark:   |         |                   | [Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
-|  :white_check_mark:   |         |                   | [Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
+| 08/31 :white_check_mark: |         |                   | [Introduction to Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md),
+[Python Instalation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md),
+[Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md),
+[Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md),
+[Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md),
+[Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md),
+[Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md),
+[Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md),
+[Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
 | 09/03 :o:    |         |                   | Data Center, NIST Big Data Reference Architecture
 | 09/10 :o:    | 2       | Infrastructure    | Infrastructure as a Service
 | 09/17 :o:    |         |                   | OpenStack, Azure, AWS
