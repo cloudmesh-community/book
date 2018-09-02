@@ -153,16 +153,16 @@ Additional Lectures will be added that allow easy management of the project. The
 <div class="smalltable">
 
 | Date     | Unit    | Title             | Description
-| :------- |:------- |:----------------- |:---------------------------
-| anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
-| anytime  |         | Plagiarizm      | How to avoid plagiarizm and cheating
-| anytime  |         | Markdown        | How to use markdown
-| anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |
-| anytime  |         | Writing a Project Report      | How to write a high quality Project report following our template
-| anytime  |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
-| anytime  | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) |
-| anytime  |         | Class Github      | How to use the class Github
-| anytime  |         | Class Piazza      | How to use the class Piazza
+| :----------- |:------- |:----------------- |:---------------------------
+| :white_check_mark: anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
+| :white_check_mark: anytime  |         | Plagiarizm      | How to avoid plagiarizm and cheating
+| :white_check_mark: anytime  |         | Markdown        | How to use markdown
+| :white_check_mark: anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |
+| :white_check_mark: anytime  |         | Writing a Project Report      | How to write a high quality Project report following our template
+| :white_check_mark: anytime  |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
+| :white_check_mark: anytime  | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) |
+| :white_check_mark: anytime  |         | Class Github      | How to use the class Github
+| :white_check_mark: anytime  |         | Class Piazza      | How to use the class Piazza
 
 </div>
 

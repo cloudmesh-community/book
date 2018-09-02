@@ -17,6 +17,11 @@ contributing to this document.
 
 ## Motivation: Data
 
+Before we go into the details of a data center we like to motivate why
+we need them.  Here we start with looking at the amont of data that
+recently got created and provide one of many motivational aspects. Not
+all data will or should be stored in data centers. However a
+significant amount of data will be in such centers.
 
 ### How much data?
 
@@ -64,9 +69,11 @@ that facebooks services are replaced by other services that are mor
 popular with the younger generation who tend to pick up new services
 quickly.
 
-https://www.allaccess.com/assets/img/content/merge/2018/m-04-03-pic1-lg.jpg
 
 ![](images/internet-minute-2017-2018.jpg)
+
+Source: <https://www.allaccess.com/assets/img/content/merge/2018/m-04-03-pic1-lg.jpg>
+
 
 It is also interesting to compare such trends over a longer period of
 time. An example is provided by looking at Google searches:
@@ -92,7 +99,103 @@ This trend is continuing.
 
 ## Cloud Data Centers
 
+A *data center* is a facility that hosts the information technology
+related to servers and data serving a large number of customers. data
+centers evolved from the need to originally have large rooms as the
+original computers filled in the early days of the compute revolution
+filled rooms. Once multiple computers were added to such facilities
+super computer centers created for research purposes. With the
+introduction of the internet and offering services such as Web
+hosting large business oriented server rooms were created. The need
+for increased facilities was even accelerated by the development of
+virtualization and servers being rented to customers in shared
+facilities. As the need of web hosting still iss important but has
+been taken over by cloud data centers, the terms internet data center,
+and cloud data center are no longer used to distinguish it. Instead we
+use today just the term *data center*. There may be still an important
+difference between research data centers offered in academia and
+industry that focus on providing computationally potent clusters focus
+on numerical computation. Such data centers are typically centered
+around the governance around a smaller number of users that are either
+part of an organization or a virtual organization. However, we see
+that even in the research community data centers not only host
+supercomputers, but also Web server infrastructure and these days even
+private clouds that support the organizational users. In case of the
+latter we speak about supporting the "long tail about science".
 
+The later is driven by the 80%-20% rule. E.g. 20% of the users use 80%
+of the compute power. This means that the top 20% of scientists are
+served by the leadership class super computers in the nation, while
+the rest are either served by other servers, cloud offerings through
+research and public clouds.
+
+
+## Data Center Infrastructure
+
+Due to the data and the server needs in th cloud and in research such
+data centers may look very different. Some focus on large scale
+computational resources, some on commodity hardware offered to the
+community. The size of them is also very different. WHile a
+supercomputing center as part of a University was one of the largest
+such datacenters two decades ago, they dwarf the centers now deployed
+by industry to server the long tail of customers.
+
+In general a data center will have the following components.
+
+* Facility: the entire data center will be hosted in a building.  The
+  building may have specific requirements related to security,
+  environmental concerns, or even the integration into the local
+  community with for example providing heat to surrounding residences.
+
+* Support infrastructure: This building will include a significant
+  number of support infrastructure that addresses for example
+  continuous power supply, air conditioning, and security For this
+  reason you find in such centers
+  
+  * Uninterruptible Power Sources (UPS) 
+  * Environmental Control Units
+  * Physical Security Systems
+  
+* Information Technology Equipment: Naturally the facility will host the IT equipment including the following:
+
+  * Servers
+  * Network Services
+  * Disks
+  * Data Backup Services
+  
+* Operations staff: The facility will need to be staffed with the various groups that support such data centers. It includes
+
+  * IT Staff
+  * Security and Facility Staff
+  * Support Infrastructure Staff
+
+  With regards to the number of people serving such a facility it is
+  obvious that through automation is quite low. According to
+  (<https://journal.uptimeinstitute.com/data-center-staffing/>) proper
+  data center staffing is a key to a reliable operation.
+  
+![](images/datacenter-staff-impact.jpg)
+  
+Figure Operational Sustainability.  According to Tier Standard:
+Operational Sustainability, the three elements of Operational
+Sustainability are Management and Operations, Building
+Characteristics, and Site
+Location. (<https://journal.uptimeinstitute.com/data-center-staffing/>)
+
+Another interesting observation is the root cause of incidents in a
+data center. Everyone has probably experienced some outage, so it is
+important to identify where they come form in order to prevent
+them. As we see in the Figure *Outage* not every error is caused by an
+operational issue. External, installation, design and manufacturer
+issues are together the largest issue for datacenter incidents.
+
+![](images/datacenter-outage.jpg) 
+
+
+Figure Outage. According to the Uptime Institute Abnormal Incident
+Reports (AIRs) database, the root cause of 39% of data center
+incidents falls into the operational
+area. (<https://journal.uptimeinstitute.com/data-center-staffing/>)
 
 ## Data Center Metrics
 
@@ -299,7 +402,7 @@ Detailed historical analysis of XSEDE usage data using XDMoD clearly
 demonstrates the tremendous growth in the number of users, overall
 usage, and scale."
 
-Cited from: (https://experts.illinois.edu/en/publications/using-xdmod-to-facilitate-xsede-operations-planning-and-analysis)
+Source: <https://experts.illinois.edu/en/publications/using-xdmod-to-facilitate-xsede-operations-planning-and-analysis>
 
 Having access to a detailed metrics analysis allows users and center
 administrators, as well as project managers to better evaluate the use
