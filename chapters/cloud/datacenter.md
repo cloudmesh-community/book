@@ -774,5 +774,34 @@ Hence IU offers very important but needed services
 * Futuresystems for state-of-the-art research experiment environments
   with access to bare metal.
 
+## Server Consolidation 
 
+One of the driving vactors in cloud computing and the rise of large scale data centers is the ability to use server virtualization to place more than one server on the same hardware. Formerly the serices were hosted on their own servers. Today they are managed on the sae hardware although they look to the cusstomer like separate servers. 
 
+As a result we find the following advantages:
+
+* **reduction of administrative and operations cost:**  While we reduce the number of servers and utilize hardware to host multiple on them management cost, space, power, and maintenance cosst are reduced.
+
+* **better resource utilization:** Through load balancing strategies servers can be better utilized while for example increase load so resource ideling is avoided.
+
+* **increased reliability:** As virtualized servers can be snapshotted, and mirrored, these features can be utilized in strategies to increase reliability in case of failure.
+
+* **standardization:** As the servers are deployed in large scale, the infrastructure is implicitly standardized based on server, network, and disk, making mainetnance and replacements easier. This also includes the software that is running on such servers (OS, platform and may even include applications).
+
+## Green Data Centers
+
+Due to the imense number of servers in data centers, as well as the increased workload on its servers, the energy consumption of data centers is large not only to run the servers, but to provide the necessary colling.
+
+In a study a reseracher from Huawai clains that without increase in efficiency for information and communications technology could consume up to 20% of the world wide energy as billions of more consumers and users sof large scale data centers become online. In 2015 the it consumed already roughly 3-5% of the world’s electricity.
+
+![](images/datacenter-energy.png)
+
+Source: <http://www.climatechangenews.com/2017/12/11/tsunami-data-consume-one-fifth-global-electricity-2025/>, <https://www.researchgate.net/publication/320225452/download>
+
+However, such trends are also examined in a detailed study by the US Department of Energy that the use of Energy which however come to a much better prediction while applying best practices learned form building and operating such data cenetress and keeping up with newest technologiess.
+
+<https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf>
+
+The increasse is about 4% see Figure ES-1 of that report.
+
+Nevertheless, even though this increase is predicted to be much smaller than in the other study. We need to be aware that large fluctuation may arise and that the slower increase on enrgy consumption is based on utilizing the best standrads to make the center more energy efficient.
