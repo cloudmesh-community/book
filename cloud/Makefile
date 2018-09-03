@@ -44,6 +44,7 @@ CHAPTER_516=\
   chapters/class/plagiarism.md\
   chapters/cloud/gregor.md\
   chapters/class/e516-engineering-cloud-computing.md\
+  chapters/class/policies.md\
   chapters/class/e516-summary.md\
   chapters/class/volumes.md\
   chapters/class/e516-definition.md\
@@ -135,6 +136,7 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/prg/python-data.md 1
 	../bin/header.py dest/chapters/cloud/virtualbox.md 2
 	../bin/header.py dest/chapters/class/organization-516.md 2
+	../bin/header.py dest/chapters/class/policies.md 2
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
