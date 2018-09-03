@@ -1,7 +1,7 @@
 Python Installation
 -------------------
 
-Python is easy to install and very good instructions for most platforms
+python is easy to install and very good instructions for most platforms
 can be found on the python.org Web page. We will be using Python 2.7.15
 and/or Python 3.7 in our activities.
 
