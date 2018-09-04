@@ -10,7 +10,7 @@ and illustrated.
 This is Part 1 of the introduction. We start with some general remarks and 
 take a closer look at the emerging technology hype cycles. 
 
-[:clapper: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1DQKjUXBz1NzDsF1scw3kocivxpCUqfsK)
+[:clapper: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/file/d/1ITxfyu5tJReRM5KgEaPWgT3MrQiK6wD1)
 
 [:clapper: 1.b Gartner's Hypecycles with Emerging technologies hypecycles and the priority matrix at selected times 2008-2015](https://drive.google.com/open?id=1uqkUXsVAd_Nwp6nuuWyTIUQxtZZvUK1J)
 
