@@ -221,7 +221,7 @@ this emerging field.
 [:scroll: Clouds
 (35)](https://drive.google.com/open?id=0B88HKpainTSfV1FwdktnbTl3T1k)
 
-## Clouds
+### Clouds
 
 We describe cloud data centers with their staggering size with up to a
 million servers in a single data center and centers built modularly from
@@ -233,7 +233,7 @@ to supercomputing.
 -   [:clapper: Clouds
     (16:04)](https://www.youtube.com/watch?v=trIFW-rucgM){MP4}
 
-### Features of Data Deluge I
+### Aspect of Data Deluge
 
 Data, Information, intelligence algorithms, infrastructure, data
 structure, semantics and knowledge are related. The semantic web and Big
@@ -265,14 +265,15 @@ Fruit.
 -   [:clapper: Data Analytics (7:28)](http://youtu.be/RPVojR8jrb8)
 -   [:clapper: Data Analytics (6:51)](http://youtu.be/wOSgywqdJDY)
 
-## Resources
+### Resources
 
 -   CSTI General Assembly 2012, Washington, D.C., USA Technical
     Activities Coordinating Committee (TACC) Meeting, Data Management,
     Cloud Computing and the Long Tail of Science October 2012 Dennis
     Gannon
 -   Dan Reed Roger Barga Dennis Gannon Rich
-    Wolskihttp://research.microsoft.com/en-us/people/barga/sc09\_cloudcomp\_tutorial.pdf
+    Wolski
+    <http://research.microsoft.com/en-us/people/barga/sc09\_cloudcomp_tutorial.pdf>
 -   <http://www.datacenterknowledge.com/archives/2011/05/10/uptime-institute-the-average-pue-is-1-8/>
 -   <http://loosebolts.wordpress.com/2008/12/02/our-vision-for-generation-4-modular-data-centers-one-way-of-getting-it-just-right/>
 -   <http://www.mediafire.com/file/zzqna34282frr2f/koomeydatacenterelectuse2011finalversion.pdf>

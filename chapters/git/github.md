@@ -2,7 +2,7 @@
 
 In some classes the material may be openly shared in code repositories.
 This includes class material, papers and project. Hence, we need some
-mechanism to share content with a large number of students. 
+mechanism to share content with a large number of students.
 
 First, we like to introduce you to git and github.com (Section
 [1.1](#s:github){reference-type="ref" reference="s:github"}). Next, we
@@ -18,7 +18,7 @@ documents with many contributors in a distributed fashion. There are
 many good tutorials about github. Some of them can be found on the
 github Web page. An interactive tutorial is for example available at
 
-* <https://try.github.io/>
+-   <https://try.github.io/>
 
 However, although these tutorials are helpful in many cases they do not
 address some cases. For example, you have already a repository set up by
@@ -30,13 +30,13 @@ execute it.
 
 A more extensive list of tutorials can be found at
 
-* <https://help.github.com/articles/what-are-other-good-resources-for-learning-git-and-github>
+-   <https://help.github.com/articles/what-are-other-good-resources-for-learning-git-and-github>
 
 The github foundation has a number of excellent videos about git. If you
 are unfamiliar with git and you like to watch videos in addition to
 reading the documentation we recommend these videos
 
-* <https://www.youtube.com/user/GitHubGuides/videos>
+-   <https://www.youtube.com/user/GitHubGuides/videos>
 
 Next, we introduce some important concepts used in github.
 
@@ -47,15 +47,13 @@ upload a public key in order to access your repository. Naturally, you
 need to generate a key first which is explained in
 
 \TODO{lessons-ssh-generate-key}
-
 before you upload one. Copy the contents of your `.ssh/id_rsa.pub` file
 and add them to [your github keys](https://github.com/settings/keys).
 
 More information on this topic can be found on the [github Web
 page](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
 
-Fork
-----
+## Fork
 
 Forking is the first step to contributing to projects on GitHub. Forking
 allows you to copy a repository and work on it under your own account.
@@ -65,8 +63,7 @@ open source project.
 
 [:clapper: Git 1:41 Fork](https://www.youtube.com/watch?v=5oJHRbqEofs)
 
-Rebase
-------
+## Rebase
 
 When you start editing your project, you diverge from the original
 version. During your developing, the original version may be updated, or
@@ -83,8 +80,7 @@ happens, human intervention needs to take place to resolve the conflict.
 
 [:clapper: Git 4:20 Rebase](https://www.youtube.com/watch?v=SxzjZtJwOgo)
 
-Remote
-------
+## Remote
 
 Collaborating with others involves managing the remote repositories and
 pushing and pulling data to and from them when you need to share work.
@@ -102,20 +98,19 @@ that things in the master branch are working. If not, just use another
 branch to conduct your changes and merge at a later time. We like you to
 call your development branch  dev.
 
-* <https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes>
+-   <https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes>
 
-Pull Request
-------------
+## Pull Request
 
 Pull requests are a means of starting a conversation about a proposed
 change back into a project. We will be taking a look at the strength of
 conversation, integration options for fuller information about a change,
 and cleanup strategy for when a pull request is finished.
 
-[:clapper: Git 4:26 Pull Request](https://www.youtube.com/watch?v=d5wpJ5VimSU)
+[:clapper: Git 4:26 Pull
+Request](https://www.youtube.com/watch?v=d5wpJ5VimSU)
 
-Branch
-------
+## Branch
 
 Branches are an excellent way to not only work safely on features or
 experiments, but they are also the key element in creating Pull Requests
@@ -124,18 +119,17 @@ delete branches, and how to switch branches in this episode.
 
 [:clapper: Git 2:25 Branch](https://www.youtube.com/watch?v=H5GJfcp3p4Q)
 
-Checkout
---------
+## Checkout
 
 Change where and what you are working on with the checkout command.
 Whether we are switching branches, wanting to look at the working tree
 at a specific commit in history, or discarding edits we want to throw
 away, all of these can be done with the checkout command.
 
-[:clapper: Git 3:11 Checkout](https://www.youtube.com/watch?v=HwrPhOp6-aM)
+[:clapper: Git 3:11
+Checkout](https://www.youtube.com/watch?v=HwrPhOp6-aM)
 
-Merge
------
+## Merge
 
 Once you know branches, merging that work into master is the natural
 next step. Find out how to merge branches, identify and clean up merge
@@ -145,8 +139,7 @@ your feature branch after merges.
 
 [:clapper: Git 3:11 Merge](https://www.youtube.com/watch?v=yyLiplDQtf0)
 
-GUI
----
+## GUI
 
 Using Graphical User Interfaces can supplement your use of the command
 line to get the best of both worlds. GitHub for Windows and GitHub for
@@ -164,8 +157,7 @@ of the people we work with us git from the command line, even if they
 use PyCharm, eclipse, or other tools that have build in git support. You
 can identify a tool that works best for you.
 
-Windows
--------
+## Windows
 
 This is a quick tour of GitHub for Windows. It offers GitHub newcomers a
 brief overview of what this feature-loaded version control tool and an
@@ -173,10 +165,10 @@ equally powerful web application can do for developers, designers, and
 managers using Windows in both the open source and commercial software
 worlds. More: <http://windows.github.com>
 
-[:clapper: Git 1:25 Windows](https://www.youtube.com/watch?v=YBbkvCrfDSo)
+[:clapper: Git 1:25
+Windows](https://www.youtube.com/watch?v=YBbkvCrfDSo)
 
-Git from the Commandline {#s:git-commands}
-------------------------
+## Git from the Commandline {#s:git-commands}
 
 Although github.com provides a powerful GUI and other GUI tools are
 available to interface with github.com, the use of git from the
@@ -187,21 +179,21 @@ systems including Linux, OSX, and Windows. Many great tutorials exist
 that will allow you to complete this task easily. We found the following
 two tutorials sufficient to get the task accomplished:
 
-* <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
-* <https://www.atlassian.com/git/tutorials/install-git>
+-   <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>
+-   <https://www.atlassian.com/git/tutorials/install-git>
 
 Although the later is provided by an alternate repository to github. The
 installation instructions are very nice and are not impacted by it. Once
 you have installed git you need to configure it.
 
-Configuration {#config}
--------------
+## Configuration {#config}
 
 Once you installed Git, you can need to configure it properly. This
 includes setting up your username, email address, line endings, and
 color, along with the settings' associated configuration scopes.
 
-[:clapper: Git 2:47 Configuration](https://www.youtube.com/watch?v=ZChtKFLiaNw)
+[:clapper: Git 2:47
+Configuration](https://www.youtube.com/watch?v=ZChtKFLiaNw)
 
 It is important that make sure that use the `git config` command to
 initialize git for the first time on each new computer system or virtual
@@ -222,8 +214,8 @@ You can set the editor to emacs with:
 Naturally if you happen to want to use other editors you can configure
 them by specifying the command that starts them up. You will also need
 to decide if you want to push branches individually or all branches at
-the same time. It will be up to you to make what will work for you
-best. We found that the following seems to work best:
+the same time. It will be up to you to make what will work for you best.
+We found that the following seems to work best:
 
     git config --global push.default matching
 
@@ -241,8 +233,7 @@ and do not fix it. Overlooking the proper set of the push.default is
 often overlooked. Thus we remind you: **Please read the information on
 the screen when you set up**.
 
-Upload your public key
-----------------------
+## Upload your public key
 
 Please upload your public key to the repository as documented in github,
 while going to your account and find it in settings. There you will find
@@ -250,11 +241,13 @@ a panel SSH key that you can click on which brings you to the window
 allowing you to add a new key. If you have difficulties with this find a
 video from the github foundation that explains this.
 
-Working with a directory that was provided for you
---------------------------------------------------
+## Working with a directory that will be provided for you
 
 In case your course provided you with a github directory, starting and
-working in it is going to be real simple. If you are the only student
+working in it is going to be real simple. Please wait till an
+announcement to the class is send before you ask us quesions about it.
+
+If you are the only student
 working on this you still need to make sure that papers or programs you
 manage in the repository work and do not interfere with scripts that
 instructors may use to check your assignments. Thus it is god to still
@@ -298,8 +291,7 @@ remote repository using:
 
     git pull
 
-README.yml and notebook.md
---------------------------
+## README.yml and notebook.md
 
 In case you take classes e516 and e616 with us you will have to create a
 README.yaml and notebook.md file in the top most directory of your
@@ -311,12 +303,12 @@ easy homework to write a 4 line python script that validates if the
 README.yaml file is valid. In addition you can use programs such as
 `yamllint` which is documented at
 
-* <https://yamllint.readthedocs.io/en/latest/>
+-   <https://yamllint.readthedocs.io/en/latest/>
 
 This file is used to integrate your assignments into a proceedings. An
 example is provided at
 
-* <https://github.com/cloudmesh-community/hid-sample/blob/master/README.yml>
+-   <https://github.com/cloudmesh-community/hid-sample/blob/master/README.yml>
 
 Any derivation from this format will not allow us to see your homework
 as our automated scripts will use the README.yml to detect them. Make
@@ -330,8 +322,8 @@ submitted in the author and hid that is listed first. All other readmes,
 will have for that particular artifact a `duplicate: yes` entry to
 indicate that this submission is managed elsewhere. The team will be
 responsible to manage their own pull requests, but if the team desires
-we can grant access for all members to a repository by a user. Please
-be aware that you must make sure you coordinate with your team.
+we can grant access for all members to a repository by a user. Please be
+aware that you must make sure you coordinate with your team.
 
 We will not accept submission of homework as pdf documents or tar files.
 All assignments must be submitted as code and the reports in native
@@ -347,7 +339,7 @@ To see an example for the notebook.md file, you can visit our sample
 hid, and browse to the notebook.md file. Alternatively you can visit the
 following link
 
-* <https://github.com/cloudmesh-community/hid-sample/blob/master/notebook.md>
+-   <https://github.com/cloudmesh-community/hid-sample/blob/master/notebook.md>
 
 The purpose of the notebook md file is to record what you did in the
 class to us. We will use this file at the end of the class to make sure
@@ -365,17 +357,13 @@ computing, using the services offered by a prominent cloud computing
 service such as github is part of the learning experience of this
 course.
 
-Contributing to the Document
-----------------------------
-
+## Contributing to the Document
 
 ### Clone
 
-```
-$ git remote add upstream \
-      https://github.com/cloudmesh-community/book
-```
-      
+    $ git remote add upstream \
+          https://github.com/cloudmesh-community/book
+
 ### Merge
 
 As we are allowing contribution by the community, they are best managed
@@ -384,11 +372,9 @@ newest status before you issue a pul request.
 
 Make sure you have upstream repo defined:
 
-```
-$ git remote add upstream \
-      https://github.com/cloudmesh-community/book
-```
-    
+    $ git remote add upstream \
+          https://github.com/cloudmesh-community/book
+
 Now Get latest from upstream:
 
     $ git rebase upstream/master
@@ -465,8 +451,7 @@ those tutorials. We found the following useful
 -   collaborating with git:
     <https://www.atlassian.com/git/tutorials/syncing>
 
-Exercises
----------
+## Exercises
 
 [\[E:Github.1\]]{#E:Github.1 label="E:Github.1"} How do you set your
 favorite editor as a default with github config
@@ -485,8 +470,7 @@ in the Web page or a contribution and create a pull request for it.
 [\[E:Gitlab.5\]]{#E:Gitlab.5 label="E:Gitlab.5"} Create a README.yml in
 your github account directory provided for you for class.
 
-Github Issues {#S:git-issues}
--------------
+## Github Issues {#S:git-issues}
 
 [:clapper: Github 8:29 Issues](https://youtu.be/qozgBPQJx0A)
 
@@ -513,7 +497,7 @@ bugs to the project.
 \TODO{Tyler: Include image of the issues on hid-sample}
 A good resource for learning more about issues is provided at
 
-* <https://guides.github.com/features/issues/>
+-   <https://guides.github.com/features/issues/>
 
 ### Git Issue Features
 
@@ -589,7 +573,7 @@ proceeded by the `@` sign. When posting the text in the issue, it will
 trigger a notification to them and allow them to react to it. It is even
 possible to notify entire teams, which are described in more detail at
 
-* <https://help.github.com/articles/about-teams/>
+-   <https://help.github.com/articles/about-teams/>
 
 #### Referencing Issues and Pull requests
 
@@ -610,8 +594,8 @@ is controlled by configuring it in *your settings*, where you can set
 the preferences for participating projects as well as projects you
 decide to watch. To access the notifications you can simply look at them
 in the *notification* screen. In this screen when you press the `?` you
-will see a number of commands that allow you to control the
-notification when pressing on one of them.
+will see a number of commands that allow you to control the notification
+when pressing on one of them.
 
 ### cc
 
