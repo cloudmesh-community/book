@@ -1,3 +1,15 @@
+## epub Readers
+
+This document is distributed in ePub format. Every OS will have a
+ssuitable ePub reader to view the document.
+Such readers can even be integrated into the browser you use, and when
+you click on an ePub publictaion in github it could pop up the
+document in your reader. The way we create the document is through
+scalable markup, that iss you can zoom in and out of a page while the
+content will beautomatically rendered for the selected page size. If
+you ever see a content that does not fit on a page we recommend you
+zoom out with your reader to make sure you can see the entire content.
+
 ## Notation
 
 :cloud: `:cloud:`
@@ -34,14 +46,23 @@ $
 > Example for slides with the `:scroll:` emoji. These slides may or
 > may not include audio.
 
-[:pencil: Slides 10)[TBD]
+[:pencil: Slides 10](TBD)
 
-Slides without any audio. They may be fasster to download.
+Slides without any audio. They may be faster to download. 
 
 
 :mortar_board:
 
 > A set of learning objectives with the `:mortar_board:` emoji
+
+:question:
+
+> Indicates opportunities for comprehension assignments while
+> contributing to this document.
+
+:warning:
+
+> A warning that we need to look at in more detail.
 
 ---
 

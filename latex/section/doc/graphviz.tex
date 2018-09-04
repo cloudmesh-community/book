@@ -1,0 +1,105 @@
+\MDNAME\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DO NOT MODIFY THIS FILE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Graphviz}
+
+\begin{itemize}
+\item
+  \url{https://graphviz.gitlab.io/resources/}
+\end{itemize}
+
+\subsection{Instalation}
+
+\subsubsection{OSX}
+
+On OSX you can install graphviz with
+
+\begin{lstlisting}
+brew install graphviz
+\end{lstlisting}
+
+On OSX there is also a graphviz version available that includes a GUI.
+THe link to this software is:
+
+\begin{itemize}
+\item
+  \url{http://www.pixelglow.com/graphviz/}
+\end{itemize}
+
+It can be downloaded from
+
+\begin{itemize}
+\item
+  \url{http://www.pixelglow.com/downloads/graphviz-1.13-v16.dmg}
+\end{itemize}
+
+There is also an additional tool that is distributed by the community
+that is called doteditor and can be installed with
+
+\begin{lstlisting}
+brew cask install doteditor
+\end{lstlisting}
+
+If you have issues with brew cask install, you can also install it by
+hand while going to
+
+\begin{itemize}
+\item
+  \url{https://vincenthee.github.io/DotEditor/}
+\end{itemize}
+
+Online versions of graphviz are also available, but we have not tested
+them
+
+\begin{itemize}
+\item
+  \url{http://www.webgraphviz.com/}
+\item
+  https://dreampuf.github.io/GraphvizOnline/
+\item
+  http://viz-js.com/
+\item
+  http://graphviz.it/\#/gallery/unix.gv
+\end{itemize}
+
+There are many more
+
+\subsection{Usage}
+
+To use graphvis creadte a dot and run the following command.
+
+\begin{lstlisting}
+dot -Tpng filename.dot -o filename.png
+\end{lstlisting}
+
+This will create a png file. Other formats are also possible such as
+svg, or PDF
+
+\begin{lstlisting}
+dot -Tsvg filename.dot -o filename.svg
+dot -TPDF filename.dot -o filename.pdf
+\end{lstlisting}
+
+For inclsion in latex documents we recommend you create PDF output as it
+has a much better quality and is maller in size than png.
+
+\subsection{The Dot Format}
+
+Put an example dot file here
+
+\subsection{Exercise}
+
+\begin{exercise}
+Develop a REST service that takes a graph as input and returns a rendered version of the graph in a specified format. Make sure you can pass the format as a parameter.
+\end{exercise}
+
+\begin{exercise}
+Develop a REST service that takes a graph as input and returns a URL of the rendered graph while storing the output onto a data server. The data server is another rest service, from which the result can be picked up. 
+\end{exercise}
+
+\begin{exercise}
+For IU students. Develop a REST service that takes a graph as input and returns a URL of the rendered graph while storing the output onto a data server. The data server is another rest service, from which the result can be picked up. Use box and/or google drive that are offered by IU as services. Make sure not to expose your passwords or access keys
+\end{exercise}
+

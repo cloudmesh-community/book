@@ -49,10 +49,10 @@ We provide in the next table a number of useful commands that you want
 to explore. For more information simply type man and the name of the
 command.
 
-<div class="smalltable">
+.<div class="smalltable">
 
 | Command    | Description   |
-| ------------------------------ | ---------------------------------------------------------------------- |
+| --------------------------------- | --------------------------------- |
 | man *command*                     | manual page for the *command*     |
 | apropos *text*                    | list all commands that have text in it  |
 | ls                                | Directory listing                 |
@@ -71,8 +71,8 @@ command.
 | less *a*                          | print paged content of file *a*   |
 | head -5 *a*                       | Display first 5 lines of file *a* |
 | tail -5 *a*                       | Display last 5 lines of file *a*  |
-| du -hs .                       | show in human readable form the space used by the current directory |
-| df -h                           | show the details of the disk file system |
+| `du -hs .`                        | show in human readable form the space used by the current directory |
+| `df -h`                           | show the details of the disk file system |
 | wc *filename*                     | counts the word in a file         |
 | sort *filename*                   | sorts the file                    |
 | uniq *filename*                   | displays only uniq entries in the file |
@@ -116,9 +116,9 @@ command.
 | chmod go-rwx *file*               | changes the permission of the file                              |
 | chown *username* *file*           | changes the ownership of the file |
 | chgrp *group* *file*              | changes the group of a file       |
-| fgrep "text" filename           | searches the text in the given file                              |
-| grep -R "xyz" .                 | recursively searches for xyz in all files                         |
-| find . -name "*.py"             | find all files with .py at the end                               |
+| fgrep *text* *filename*           | searches the text in the given     file                              |
+| grep -R *text* .                 | recursively searches for xyz in    all files                         |
+| find . -name *.py                | find all files with `.py` at the   end                               |
 | ps                                | list the running processes        |
 | kill -9 1234                      | kill the process with the id 1234 |
 | at                                | que commands for later execution                    |
@@ -140,13 +140,18 @@ command.
 | traceroute                        | print the route packets take to network host                      |
 | ifconfig                          | configure network interface parameters                     |
 | host                              | DNS lookup utility                     |
-| whois                             | Internet domain name and network number directory service  |
+| whois                             | Internet domain name and network number directory service                      |
 | dig                               | DNS lookup utility                      |
 | wget                              | non-interactive network downloader                      |
 | curl                              | transfer a URL                      |
 | ssh                               | remote login program                      |
 | scp                               | remote file copy program                      |
 | sftp                              | secure file transfer program                      |
+| watch *command* | run any designated command at regular intervals |
+| awk | program that you can use to select particular records in a file and perform operations on them |
+| sed | stream editor used to perform basic text transformations |
+| xargs | program that can be used to build and execute commands from STDIN |
+| cat *some_file.json* \| python -m json.tool | quick and easy JSON validator |
 
 </div>
 
@@ -172,6 +177,8 @@ To execute command 1 in the background use
 These shortcuts will come in handy. Note that many overlap with emacs
 short cuts.
 
+.<div class="smalltable">
+
 |  Keys       | Description |
 |  ---------- | -------------------------------------------------------- |
 |  Up Arrow   | Show the previous command |
@@ -186,10 +193,12 @@ short cuts.
 |  Ctrl + y   | Paste from the special clipboard |
 |  Ctrl + d   | Logout of current session, similar to exit |
 
-## .bashrc and .bash_profile
+</div>
+
+## bashrc and bash_profile
 
 Usage of a particular command and all the attributes associated with it,
-use 'man' command. Avoid using `rm -r` command to delete files
+use `man` command. Avoid using `rm -r` command to delete files
 recursively. A good way to avoid accidental deletion is to include the
 following in your `.bash_profile` file:
 
@@ -200,8 +209,9 @@ alias mv='mv -i'
 alias h='history'
 ```
 
-Additional information can be found in the [Refcards](#refcards)
+More Information
 
+<https://cloudmesh.github.io/classes/lesson/linux/refcards.html>
 
 ## Makefile
 
@@ -226,7 +236,7 @@ Makefiles include a number of rules that are defined by a target name.
 Let us define a target called hello that prints out the string "Hello
 World".
 
-```makefile
+```
     hello:
         @echo "Hello World"
 ```
@@ -239,7 +249,7 @@ editors will do that also. Please chose your editor of choice. One of
 the best features of targets is that they can depend on other targets.
 Thus, iw we define
 
-```makefile
+```
     hallo: hello
         @echo "Hallo World"
 ```
@@ -249,18 +259,18 @@ you can see this can be very useful for defining simple dependencies.
 
 In addition we can define variables in a makefile such as
 
-```makefile
+```
     HELLO="Hello World"
 
     hello: 
         @echo $(HELLO)
 ```
 
-and can use them in our text with $ invocations.
+and can use them in our text with \$ invocations.
 
 Moreover, in sophisticated Makefiles, we could even make the targets
 dependent on files and a target rules could be defined that only
-compiles those files that have changed since our last invokation of the
+compiles those files that have changed since our last invocation of the
 Makefile, saving potentially a lot of time. However, for our work here
 we just use the most elementary makefiles.
 
@@ -271,42 +281,42 @@ at <http://www.cs.jhu.edu/~joanne/unixRC.pdf>.
 ### Makefiles on Windows
 
 Makefiles can easily be accessed also on windows while installing
-gitbash. Please use to the internet or search in this handbook for more
+gitbash. Please reed to the internet or search in this handbook for more
 information about gitbash.
 
 ## Exercises
 
 E.Linux.1
 
-: Familiarize yourself with the commands
+> Familiarize yourself with the commands
 
 E.Linux.2
 
-: Find more commands that
-  you find useful and add them to this page.
+> Find more commands that
+>  you find useful and add them to this page.
 
 E.Linux.3
 
-: Use the sort command to sort all lines of a file while removing
-  duplicates.
+> Use the sort command to sort all lines of a file while removing
+>  duplicates.
 
 E.Linux.4
 
-: Should there be other commands listed in the table with the Linux commands
-  If so which? Create a pull request for them.
+> Should there be other commands listed in the table with the Linux commands
+>  If so which? Create a pull request for them.
 
 E.Linux.5
 
-: Write a section explaining chmod. Use letters not numbers
+> Write a section explaining chmod. Use letters not numbers
 
 E.Linux.6
 
-: Write a section explaining chown. Use letters not numbers
+> Write a section explaining chown. Use letters not numbers
 
 E.Linux.7
 
-: Write a section explaining su and sudo
+> Write a section explaining su and sudo
 
 E.Linux.8
 
-: Write a section explaining cron, at, and crontab
+> Write a section explaining cron, at, and crontab
