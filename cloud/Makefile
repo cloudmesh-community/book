@@ -39,6 +39,7 @@ endif
 CHAPTER_516=\
   chapters/version.md\
   chapters/authors.md\
+  chapters/preface/create.md\
   chapters/preface/notation.md\
   chapters/class/organization-516.md\
   chapters/class/plagiarism.md\
@@ -126,6 +127,8 @@ prepare: refernces todo
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
 	../bin/date.py > dest/chapters/version.md
+	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
+	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
 	../bin/authors.py > dest/chapters/authors.md
 	../bin/header.py dest/chapters/git/github.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
@@ -137,6 +140,7 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/cloud/virtualbox.md 2
 	../bin/header.py dest/chapters/class/organization-516.md 2
 	../bin/header.py dest/chapters/class/policies.md 2
+	../bin/header.py dest/chapters/preface/create.md 2
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
