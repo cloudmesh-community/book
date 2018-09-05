@@ -1,5 +1,4 @@
-Virtual Box
-===========
+# Virtual Box
 
 For development purposes we recommend that you use for this class an
 Ubuntu virtual machine that you set up with the help of virtualbox. We
