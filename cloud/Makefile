@@ -35,11 +35,6 @@ endif
 #  chapters/iaas/azure/signup.md\
 
 CHAPTER_516=\
-  chapters/iaas/watson/signup.md\
-  chapters/iaas/aws/aws.md\
-  chapters/iaas/azure/azure.md\
-  chapters/iaas/azure/signup.md\
-  chapters/iaas/watson/signup.md\
   chapters/version.md\
   chapters/authors.md\
   chapters/preface/create.md\
@@ -76,8 +71,12 @@ CHAPTER_516=\
   chapters/SECTION-REFERENCES.md
 
 
-#   chapters/iaas/services.md\
-
+DRAFT=\
+  chapters/iaas/services.md\
+  chapters/iaas/aws/aws.md\
+  chapters/iaas/aws/signup.md\
+  chapters/iaas/azure/azure.md\
+  chapters/iaas/watson/signup.md\
 
 
 CHAPTER_CLASS=\
@@ -125,6 +124,9 @@ RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/containe
 all: prepare epub
 	echo done
 
+draft: prepare epubdraft
+	echo done
+
 
 prepare: refernces todo
 	$(COPY) metadata.txt dest
@@ -151,6 +153,10 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/linux/ssh.md 2
 	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
 	../bin/header.py dest/chapters/linux/refcards.md 2
+	../bin/header.py dest/chapters/iaas/aws/aws.md 2
+	../bin/header.py dest/chapters/iaas/aws/signup.md 2
+	../bin/header.py dest/chapters/iaas/azure/azure.md 2
+	../bin/header.py dest/chapters/iaas/watson/signup.md 2
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
@@ -180,7 +186,7 @@ ifeq ($(OS), linux)
 endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
-draft: prepare
+epubdraft: 
 ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(DRAFT) > all.md
 endif
