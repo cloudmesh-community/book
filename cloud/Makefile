@@ -68,6 +68,7 @@ CHAPTER_516=\
   chapters/prg/python-data.md\
   chapters/prg/python-matplotlib.md\
   chapters/prg/python-cmd5.md\
+  chapters/prg/python-cmd.md\
   chapters/SECTION-REFERENCES.md
 
 
@@ -144,6 +145,7 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/linux/linux.md 2
 	../bin/header.py dest/chapters/prg/python-install.md 1
 	../bin/header.py dest/chapters/prg/python.md 2
+	../bin/header.py dest/chapters/prg/python-cmd.md 3
 	../bin/header.py dest/chapters/cloud/vagrant.md 2
 	../bin/header.py dest/chapters/prg/python-libraries.md 2
 	../bin/header.py dest/chapters/prg/python-data.md 1
