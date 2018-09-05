@@ -1,4 +1,4 @@
-# Data Center :o:
+# Data Center
 
 :question: indicates opportunities for comprehension assignments while
 contributing to this document.
@@ -196,6 +196,54 @@ Figure Outage. According to the Uptime Institute Abnormal Incident
 Reports (AIRs) database, the root cause of 39% of data center
 incidents falls into the operational
 area. (<https://journal.uptimeinstitute.com/data-center-staffing/>)
+
+## Data Center Characteristics
+
+Next we identify a number of characteristics when looking at different data centers.
+
+**Variation in Size**: Data centers range in size from small "edge”
+facilities to megascale or hyperscale filling large ware houses.
+
+**Variation in cost per server**: Although many datacenters
+standardize their components, specialized services my be afford not on
+a 1K server, but on a 50K server.
+
+**Variation in Infrastructure:** Servers in centers serve a variation
+  of needs and motivate different infrastructure: Use cases, Web
+  Server, E-mail, Machine Learning, Pleasantly Parallel problem,
+  traditional super computing jobs.
+
+**Energy Cost:** Data centers use a lot of energy. The energy cost
+varies per region.  A motivation to reduce energy use and cost is also
+been trended by environmental awareness, not only by the operators,
+but by the community in which such centers operate.
+
+**Reliability:** Although through operation l efforts the datacenter
+  can be made more reliable, failure still can happen. Examples are
+
+* https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/
+* :?: find more examples
+
+Hence Data Center IaaS advantages include
+
+* Reduced operational cost 
+* Increased reliability
+* Increased scalability
+* Increased flexibility
+* Increased support
+* Rapid deployment
+* Decrease management: Outsourcing expertise that is not related to core business
+
+Datacenter disadvantages include
+
+* Loss of control of the HW
+* Loss of control of the data
+* Model is preferring many users
+* Software to control infrastructure is not accessible
+* Variations in performance due to sharing
+* Integration requires effort beyond login
+* Failures can have a humongous impact
+
 
 ## Data Center Metrics
 
@@ -448,8 +496,6 @@ based HPC centers.
 
 #### Clouds and Virtual Machine Monitoring
 
-:?: Write about it
-
 Although no longer in operation in its original form FutureGrid
 <http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html>
 has pioneered the extensive monitoring and publication of its virtual
@@ -554,6 +600,30 @@ GovCloud Region in the US.
 
 **Figure:** AWS regions
 
+Amazon strives to achieve high availability through muultiple availability zones, 
+improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion.
+
+The regions and number of availability zones are as follows:
+
+Region US East:N. Virginia (6),Ohio (3)
+US WestN. California (3),Oregon (3)
+
+Region: Asia PacificMumbai (2),Seoul (2),Singapore (3),Sydney (3),Tokyo (4),Osaka-Local (1)1
+CanadaCentral (2)
+ChinaBeijing (2),Ningxia (3)
+
+Region: EuropeFrankfurt (3),Ireland (3),London (3),Paris (3)
+South AmericaSão Paulo (3)
+
+Region Gov Cloud:
+AWS GovCloud (US-West) (3)
+  
+New Region (coming soon):
+Bahrain
+Hong KongSAR, China
+Sweden
+AWS GovCloud(US-East)
+
 ### Azure
 
 * <https://azure.microsoft.com/en-us/global-infrastructure/regions/>
@@ -575,6 +645,8 @@ offered in every region as the service to region matrix shows:
 
 **Figure:** Azure regions
 
+
+
 ### Google
 
 
@@ -591,6 +663,9 @@ locations:
 * **Asia**: Changhua County, Taiwan; Singapore
 * **Europe:* Dublin, Ireland; Eemshaven, Netherlands; Hamina, Finland;
   St Ghislain, Belgium
+
+
+![](images/datacenters-google.png)
 
 Each data center is advertised with a special environmental impact
 such as a unique cooling system, or wildlife on premise. Google's data
@@ -774,34 +849,91 @@ Hence IU offers very important but needed services
 * Futuresystems for state-of-the-art research experiment environments
   with access to bare metal.
 
+### Shipping Containers
+
+A few years ago data centers build from shipping containers were very
+popular. This includes several main Cloud providers. Such providers
+have found that they are not the best way to develop centers at scale.
+This includes
+[Microsoft](https://www.datacenterknowledge.com/archives/2016/04/20/microsoft-moves-away-from-data-center-containers)
+and
+[Google](https://blogs.technet.microsoft.com/msdatacenters/2013/04/22/microsofts-itpac-a-perfect-fit-for-off-the-grid-computing-capacity/)
+The current trend however is to build mega or hyperscale data centers.
+
 ## Server Consolidation 
 
-One of the driving vactors in cloud computing and the rise of large scale data centers is the ability to use server virtualization to place more than one server on the same hardware. Formerly the serices were hosted on their own servers. Today they are managed on the sae hardware although they look to the cusstomer like separate servers. 
+One of the driving factors in cloud computing and the rise of large
+scale data centers is the ability to use server virtualization to
+place more than one server on the same hardware. Formerly the serices
+were hosted on their own servers. Today they are managed on the sae
+hardware although they look to the customer like separate servers.
 
 As a result we find the following advantages:
 
-* **reduction of administrative and operations cost:**  While we reduce the number of servers and utilize hardware to host multiple on them management cost, space, power, and maintenance cosst are reduced.
+* **reduction of administrative and operations cost:** While we reduce
+  the number of servers and utilize hardware to host multiple on them
+  management cost, space, power, and maintenance cost are reduced.
 
-* **better resource utilization:** Through load balancing strategies servers can be better utilized while for example increase load so resource ideling is avoided.
+* **better resource utilization:** Through load balancing strategies
+  servers can be better utilized while for example increase load so
+  resource idling is avoided.
 
-* **increased reliability:** As virtualized servers can be snapshotted, and mirrored, these features can be utilized in strategies to increase reliability in case of failure.
+* **increased reliability:** As virtualized servers can be
+  snapshotted, and mirrored, these features can be utilized in
+  strategies to increase reliability in case of failure.
 
-* **standardization:** As the servers are deployed in large scale, the infrastructure is implicitly standardized based on server, network, and disk, making mainetnance and replacements easier. This also includes the software that is running on such servers (OS, platform and may even include applications).
+* **standardization:** As the servers are deployed in large scale, the
+  infrastructure is implicitly standardized based on server, network,
+  and disk, making maintenance and replacements easier. This also
+  includes the software that is running on such servers (OS, platform
+  and may even include applications).
 
-## Green Data Centers
+## Data Center Improvements and Consoidation
 
-Due to the imense number of servers in data centers, as well as the increased workload on its servers, the energy consumption of data centers is large not only to run the servers, but to provide the necessary colling.
+Due to the imense number of servers in data centers, as well as the
+increased workload on its servers, the energy consumption of data
+centers is large not only to run the servers, but to provide the
+necessary cooling. Thus it is important to revisit the impact such
+data centers have on the energy consumption.  One of the studies that
+looked into this is from 2016 and is published by
+[LBNL](https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf)
+In this study the data center electricity consumption back to 2000 is
+analyzed while using previous studies and historical shipment data. A
+forecast is with diffrent assumption is contrastes till 2020
 
-In a study a reseracher from Huawai clains that without increase in efficiency for information and communications technology could consume up to 20% of the world wide energy as billions of more consumers and users sof large scale data centers become online. In 2015 the it consumed already roughly 3-5% of the world’s electricity.
+Figure Energy Forecast depicts "an estimate of total U.S.  data center
+electricity use (servers, storage, network equipment, and
+infrastructure) from 2000-2020".
 
-![](images/datacenter-energy.png)
+While in "2014 the data centers in the U.S. consumed an estimated 70
+billion kWh" or "about 1.8% of total U.S. electricity consumption".
+However, more recent studies find an increase by about 4% from
+2010-2014.  This contrasts a large derivation from the 24% that were
+originally predicted several years ago. The study finds that the
+predicted energy use would be approximately 73 billion kWh in 2020.
 
-Source: <http://www.climatechangenews.com/2017/12/11/tsunami-data-consume-one-fifth-global-electricity-2025/>, <https://www.researchgate.net/publication/320225452/download>
+![](images/datacenter-energy-use.png)
 
-However, such trends are also examined in a detailed study by the US Department of Energy that the use of Energy which however come to a much better prediction while applying best practices learned form building and operating such data cenetress and keeping up with newest technologiess.
+Figure: Energy Forecast 
 
-<https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf>
+Source: https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf
 
-The increasse is about 4% see Figure ES-1 of that report.
+It is clear that the original prediction of large energy consumption
+motivated a trend in industry to provide more energy efficient data
+centers. However if such energy efficiency efforts would not be
+conducted or encouraged we would see a completely different scenario.
 
-Nevertheless, even though this increase is predicted to be much smaller than in the other study. We need to be aware that large fluctuation may arise and that the slower increase on enrgy consumption is based on utilizing the best standrads to make the center more energy efficient.
+The scenarios are identified  that will significantly impact the prediction:
+
+* **improved management** increases energy-efficiency through
+operational operational or technological changes with minimal
+investment. Strategies include improving the least efficient
+components.
+
+* **best practices** increases the energy-efficiency gains that can be obtained
+through the widespread adoption the most efficient technologies and best management
+practices applicable to each data center type. This scenario focuses on maximizing the
+efficiency of each type of data center facility. 
+
+* **hyperscale data centers** where the infrastructure will be moved
+  from smaller data centers to larger *hyperscale* data centers.
