@@ -1,4 +1,6 @@
-# Ubuntu on a USB stick for OSX
+# Ubuntu on a USB stick 
+
+IN some casses you may not want to run ubuntu in virtual box, but just natively on the system. In this case it could be convenient to install ubuntu on a USB stick. Still be aware that you also have write access to the other hard drive. SO be carefule not to touch your main HDD.
 
 ## Ubuntu on a USB stick for OSX via Command Line
 
@@ -29,19 +31,13 @@ Your folder will look something like this
 
 	ls -1
 	
-		ubuntu-16.04.3-desktop-amd64.iso
-		ubuntu-17.10.1-desktop-amd64.iso
+		ubuntu-18.04-desktop-amd64.iso
 
 
-For 17.10.1 you will need to generate an image with the following
+For 18.04 you will need to generate an image with the following
 command
 
-	hdiutil convert ubuntu-17.10.1-desktop-amd64.iso -format UDRW -o ubuntu-17.10.1-desktop-amd64.img
-
-For 16.04.3 you will need to generate an image with the following
-command
-
-	hdiutil convert ubuntu-16.04.3-desktop-amd64.iso -format UDRW -o ubuntu-16.04.3-desktop-amd64.img
+	hdiutil convert ubuntu-18.04-desktop-amd64.iso -format UDRW -o ubuntu-18.04-desktop-amd64.img
 
 OSX will append a .dmg behind the name. When considering the OS and
 you only want to use one, we recommend that you use the latest
@@ -95,15 +91,15 @@ group, or use
 	
 login and than execute the command under root.
 
-	sudo dd if=ubuntu-17.10.1-desktop-amd64.img.dmg of=/dev/diskN bs=1m
+	sudo dd if=ubuntu-18.04-desktop-amd64.img.dmg of=/dev/diskN bs=1m
 
 (Not tested: Using /dev/rdisk instead of /dev/disk may be faster
 according to the ubuntu documentation)
 
 Ubuntu's Web page also gives the following tips:
 
-* "If you see the error dd: Invalid number '1m', you are using GNU dd. Use the same command but replace bs=1m with bs=1M."
-* "If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. Start Disk Utility.app and unmount the volume (donot eject)."
+* "If you see the error dd: Invalid number `1m`, you are using GNU `dd`. Use the same command but replace `bs=1m` with `bs=1M`.
+* "If you see the error `dd: /dev/diskN: Resource busy, make sure the disk is not in use. Start Disk Utility.app and unmount the volume (donot eject).`
 
 You will see an error window popping up telling you: **The disk inserted was not readable by this compute**. Please, leave the window as is  and instead type in on the terminal.
 
@@ -129,6 +125,8 @@ Add universe to the window for application updates
 
 see <https://help.ubuntu.com/community/Repositories/Ubuntu>
 
+To test the universe, you can install for example vnc server but you do not have to 
+if you do not need it.
 
 	sudo apt-get install vnc4server
 
@@ -137,11 +135,8 @@ Start the server and set up a password
 
 	vncserver
 
-\begin{WARNING}
-The next section is untested and needs verification. 
-\end{WARNING}
 
-## Boot from the USB Stick
+### Boot from the USB Stick
 
 To boot from the USB stick, you need to restart or power-on the Mac
 with the USB stick inserted while you press the Option/alt key.
@@ -212,12 +207,9 @@ application, click *Open Anyway* in the same pane.
 
 ### Prepare the USB stick
 
-\begin{WARNING}
 
-The Disk Utility needs to be used with caution as selecting the
+:warning: The Disk Utility needs to be used with caution as selecting the
 wrong device or partition can result in data loss.
-
-\end{WARNING}
 
 Next you need to conduct the following steps which we copied from the
 Ubuntu Web page:
@@ -258,11 +250,8 @@ it has finished, Etcher will report on the successful process.
 
 ![](images/4207a01ff6afea52.png)
 
-\begin{WARNING}
 
-After the write process has completed, macOS may inform you that *The
+:warning: After the write process has completed, macOS may inform you that *The
 disk you inserted was not readable by this computer*. Donot select
 Initialise. Instead, select Eject and remove the USB device.
-
-\end{WARNING}
 
