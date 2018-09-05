@@ -61,7 +61,7 @@ This is Part 3 of the introduction.
 
 This is Part 4 of the introduction.
 
-[:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)
+[:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=1XzLGhioe3jdtuQo1V7d_B3syH00tbHSH)
 
 [:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=18AzztLK0OEgej1g9Gv0jMvMkHIj4REnM)
 
