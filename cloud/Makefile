@@ -33,12 +33,11 @@ endif
 ######################################################################
 
 #  chapters/iaas/azure/signup.md\
-  chapters/iaas/watson/signup.md\
- chapters/iaas/aws/signup.md\
 
 CHAPTER_516=\
   chapters/version.md\
   chapters/authors.md\
+  chapters/preface/create.md\
   chapters/preface/notation.md\
   chapters/class/organization-516.md\
   chapters/class/plagiarism.md\
@@ -50,10 +49,14 @@ CHAPTER_516=\
   chapters/class/e516-definition.md\
   chapters/cloud/datacenter.md\
   chapters/SECTION-DEVTOOLS.md\
+  chapters/linux/refcards.md\
   chapters/cloud/virtualbox.md\
   chapters/cloud/vagrant.md\
   chapters/git/github.md\
   chapters/linux/linux.md\
+  chapters/linux/ssh.md\
+  chapters/linux/ssh-futuresystems.md\
+  chapters/linux/ssh-excerise.md\
 	chapters/prg/SECTION-PYTHON.md\
   chapters/prg/python-intro.md\
   chapters/prg/python-install.md\
@@ -68,8 +71,12 @@ CHAPTER_516=\
   chapters/SECTION-REFERENCES.md
 
 
-#   chapters/iaas/services.md\
-
+DRAFT=\
+  chapters/iaas/services.md\
+  chapters/iaas/aws/aws.md\
+  chapters/iaas/aws/signup.md\
+  chapters/iaas/azure/azure.md\
+  chapters/iaas/watson/signup.md\
 
 
 CHAPTER_CLASS=\
@@ -117,6 +124,9 @@ RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/containe
 all: prepare epub
 	echo done
 
+draft: prepare epubdraft
+	echo done
+
 
 prepare: refernces todo
 	$(COPY) metadata.txt dest
@@ -126,6 +136,8 @@ prepare: refernces todo
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
 	../bin/date.py > dest/chapters/version.md
+	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
+	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
 	../bin/authors.py > dest/chapters/authors.md
 	../bin/header.py dest/chapters/git/github.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
@@ -137,6 +149,14 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/cloud/virtualbox.md 2
 	../bin/header.py dest/chapters/class/organization-516.md 2
 	../bin/header.py dest/chapters/class/policies.md 2
+	../bin/header.py dest/chapters/preface/create.md 2
+	../bin/header.py dest/chapters/linux/ssh.md 2
+	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
+	../bin/header.py dest/chapters/linux/refcards.md 2
+	../bin/header.py dest/chapters/iaas/aws/aws.md 2
+	../bin/header.py dest/chapters/iaas/aws/signup.md 2
+	../bin/header.py dest/chapters/iaas/azure/azure.md 2
+	../bin/header.py dest/chapters/iaas/watson/signup.md 2
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
@@ -166,7 +186,7 @@ ifeq ($(OS), linux)
 endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
-draft: prepare
+epubdraft: 
 ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(DRAFT) > all.md
 endif

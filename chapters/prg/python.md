@@ -456,7 +456,9 @@ names
 
 Find the index of the first occurrence of an element with 'index':
 
-\`\`\`python names.index('Liz') \# 2
+```python 
+names.index('Liz') \# 2
+```
 
 Remove elements by value with 'remove':
 
