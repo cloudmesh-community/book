@@ -33,10 +33,13 @@ endif
 ######################################################################
 
 #  chapters/iaas/azure/signup.md\
-  chapters/iaas/watson/signup.md\
- chapters/iaas/aws/signup.md\
 
 CHAPTER_516=\
+  chapters/iaas/watson/signup.md\
+  chapters/iaas/aws/aws.md\
+  chapters/iaas/azure/azure.md\
+  chapters/iaas/azure/signup.md\
+  chapters/iaas/watson/signup.md\
   chapters/version.md\
   chapters/authors.md\
   chapters/preface/create.md\
