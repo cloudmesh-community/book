@@ -1,8 +1,10 @@
-# Createing the epubs from source :o:
+# Creating the ePubs from source
 
-THis section explains how to create the epub from source.
+Although you will never likely to create the ePub from source, we have included this section for our most advanced contributors and those that update the ePub on github. 
 
-## OSX Requirements
+## OSX Requirements :o:
+
+:warning: thi section has not been tested
 
 This is just a guess I for got how to install all of this, it may be documented in another md file, grep -R for brew
 
@@ -35,16 +37,17 @@ $ npm install --global mermaid-filter
 
 ## Creating a book
 
-Books are organize in directoried. We currently have
+Books are organize in directories. We currently have
 
 ```
-cloud/
-big-data-applications/
+./book/cloud/
+./book/big-data-applications/
 ```
 
-To compile a book go to the directory and make it. Lets assume you like to creat ethe cloud book for 516
+To compile a book go to the directory and make it. Lets assume you like to create the cloud book for 516
 
 ```
+$ git clone https://github.com/cloudmesh-community/book.git
 $ cd cloud
 $ make
 ```
@@ -57,9 +60,9 @@ make view
 
 ## Publishing the book to github
 
-:warning: This task should only be done by those with direct write priviledges. and never be part of a pull request.
+:warning: This task should only be done by those with direct write privileges. and never be part of a pull request.
 
-To publish the buuk say
+To publish the book say
 
 ```
 $ make publish
