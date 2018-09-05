@@ -109,39 +109,49 @@ CHAPTER_IN=\
 # i523
 ######################################################################
 
-# chapters/class/fall2018.md\
-# chapters/class/SECTION.md\
-# chapters/bigdata/SECTION.md\
-# chapters/bigdata/intro-cloud.md\
-
-
-
-
 CHAPTER_BIGDATA=\
- chapters/version.md\
- chapters/authors.md\
- chapters/preface/notation.md\
- chapters/class/organization-523.md\
- chapters/class/plagiarism.md\
- chapters/class/e534-i523.md\
- chapters/class/volumes.md\
- chapters/bigdata/intro-fall-2018.md\
- chapters/bigdata/applications/overview.md\
- chapters/bigdata/applications/physics.md\
- chapters/bigdata/applications/radar.md\
- chapters/bigdata/applications/lifestyle.md\
- chapters/bigdata/applications/sport.md\
- chapters/bigdata/applications/cloud.md\
- chapters/bigdata/applications/usecases.md\
- chapters/bigdata/applications/sensor.md\
- chapters/bigdata/applications/web.md\
- chapters/bigdata/applications/health.md\
- chapters/bigdata/algorithms/technology.md\
- chapters/bigdata/algorithms/clustering.md\
- chapters/bigdata/algorithms/plotviz.md\
+  chapters/version.md\
+  chapters/authors.md\
+  chapters/preface/notation.md\
+  chapters/class/organization-523.md\
+  chapters/class/plagiarism.md\
+  chapters/class/e534-i523.md\
+  chapters/class/volumes.md\
+  chapters/bigdata/intro-fall-2018.md\
+  chapters/bigdata/applications/overview.md\
+  chapters/bigdata/applications/physics.md\
+  chapters/bigdata/applications/radar.md\
+  chapters/bigdata/applications/lifestyle.md\
+  chapters/bigdata/applications/sport.md\
+  chapters/bigdata/applications/cloud.md\
+  chapters/bigdata/applications/usecases.md\
+  chapters/bigdata/applications/sensor.md\
+  chapters/bigdata/applications/web.md\
+  chapters/bigdata/applications/health.md\
+  chapters/bigdata/algorithms/technology.md\
+  chapters/bigdata/algorithms/clustering.md\
+  chapters/bigdata/algorithms/plotviz.md\
+  chapters/SECTION-DEVTOOLS.md\
+  chapters/linux/refcards.md\
+  chapters/cloud/virtualbox.md\
+  chapters/cloud/vagrant.md\
+  chapters/git/github.md\
+  chapters/linux/linux.md\
+  chapters/linux/ssh.md\
+  chapters/linux/ssh-futuresystems.md\
+  chapters/linux/ssh-excerise.md\
+	chapters/prg/SECTION-PYTHON.md\
+  chapters/prg/python-intro.md\
+  chapters/prg/python-install.md\
+  chapters/prg/python-interactive.md\
+  chapters/prg/python-editor.md\
+  chapters/prg/SECTION-PYTHON-LANG.md\
+  chapters/prg/python.md\
+  chapters/prg/python-libraries.md\
+  chapters/prg/python-data.md\
+  chapters/prg/python-matplotlib.md\
+  chapters/prg/python-cmd5.md\
 
-DEPRECATED=\
- chapters/linux/ssh2.md
 
 REVIEW=\
  chapters/pi/software2.md
@@ -150,8 +160,6 @@ DRAFT=\
  chapters/pi/kubernetes/pi-kubernetes.md\
  chapters/pi/kubernetes/526/readme-kube.md\
  chapters/pi/kubernetes/417/pi-kubernetes.md\
-
-
 
 OTHER=\
  chapters/SECTION-DRAFT.md\
@@ -174,6 +182,8 @@ CHAPTER_REFERNCES=\
 
 INDEX=\
  $(CHAPTER_BIGDATA)
+
+
 # $(CHAPTER_PI)
 
 INDEX_OTHER=\
@@ -199,7 +209,10 @@ RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/containe
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
-all: prepare epub other
+all: prepare epub
+	echo done
+
+draft: prepare draftepub
 	echo done
 
 
@@ -211,8 +224,24 @@ prepare: dot refernces todo
 	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
 	../bin/date.py > dest/chapters/version.md
+	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
+	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
 	../bin/authors.py > dest/chapters/authors.md
 	../bin/header.py dest/chapters/class/organization-523.md 2
+	../bin/header.py dest/chapters/git/github.md 2
+	../bin/header.py dest/chapters/linux/linux.md 2
+	../bin/header.py dest/chapters/prg/python-install.md 1
+	../bin/header.py dest/chapters/prg/python.md 2
+	../bin/header.py dest/chapters/cloud/vagrant.md 2
+	../bin/header.py dest/chapters/prg/python-libraries.md 2
+	../bin/header.py dest/chapters/prg/python-data.md 1
+	../bin/header.py dest/chapters/cloud/virtualbox.md 2
+	../bin/header.py dest/chapters/class/policies.md 2
+	../bin/header.py dest/chapters/preface/create.md 2
+	../bin/header.py dest/chapters/linux/ssh.md 2
+	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
+	../bin/header.py dest/chapters/linux/refcards.md 2
+	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
@@ -227,6 +256,7 @@ prepare: dot refernces todo
 	../bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
 	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
+	../bin/section.py 2 "Language" > dest/chapters/prg/SECTION-PYTHON-LANG.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 
 

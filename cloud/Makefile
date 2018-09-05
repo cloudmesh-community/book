@@ -77,6 +77,7 @@ DRAFT=\
   chapters/iaas/aws/signup.md\
   chapters/iaas/azure/azure.md\
   chapters/iaas/watson/signup.md\
+  chapters/iaas/gcloud/gcloud.md\
 
 
 CHAPTER_CLASS=\
@@ -117,7 +118,7 @@ FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
-RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson"
+RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud"
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
@@ -157,6 +158,7 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/iaas/aws/signup.md 2
 	../bin/header.py dest/chapters/iaas/azure/azure.md 2
 	../bin/header.py dest/chapters/iaas/watson/signup.md 2
+	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
