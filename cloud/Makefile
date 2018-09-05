@@ -51,10 +51,14 @@ CHAPTER_516=\
   chapters/class/e516-definition.md\
   chapters/cloud/datacenter.md\
   chapters/SECTION-DEVTOOLS.md\
+  chapters/linux/refcards.md\
   chapters/cloud/virtualbox.md\
   chapters/cloud/vagrant.md\
   chapters/git/github.md\
   chapters/linux/linux.md\
+  chapters/linux/ssh.md\
+  chapters/linux/ssh-futuresystems.md\
+  chapters/linux/ssh-excerise.md\
 	chapters/prg/SECTION-PYTHON.md\
   chapters/prg/python-intro.md\
   chapters/prg/python-install.md\
@@ -141,6 +145,9 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/class/organization-516.md 2
 	../bin/header.py dest/chapters/class/policies.md 2
 	../bin/header.py dest/chapters/preface/create.md 2
+	../bin/header.py dest/chapters/linux/ssh.md 2
+	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
+	../bin/header.py dest/chapters/linux/refcards.md 2
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md

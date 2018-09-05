@@ -32,7 +32,8 @@ book = [
 "Fugang Wang",
 "janumudvari",
 "Juliette Zerick",
-"karankotz"]
+"karankotz",
+"Javier Diaz"]
     
 names = names + book
 names = list(set(names))
