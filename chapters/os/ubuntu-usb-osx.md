@@ -1,11 +1,11 @@
-## Ubuntu on a USB stick
+# Ubuntu on a USB stick
 
 In case you cannot install any programs on your development computer
 most often the easiest way is to use the hardware but boot the OS from
 a USB stick. Make sure you have access to the Bios or your system to
 actually boot from a USB device before you start this activity.
 
-### Ubuntu on a USB stick for OSX via Command Line
+## Ubuntu on a USB stick for OSX via Command Line
 
 The easiest way to create an ubuntu distribution that can be booted
 from an USB stick is done via command line. The original Web page for
@@ -164,7 +164,7 @@ You will likely see some warnings with number 95 which you can ignore.
 Please report your experience and we update this page based on your
 feedback.
 
-### Ubuntu on a USB stick for OSX via GUI
+## Ubuntu on a USB stick for OSX via GUI
 
 An alternative to the Command Line solution to create an USB stick with
 bootable Ubuntu on is to use the OSX GUI. This method is more complex
@@ -181,7 +181,7 @@ The material in this section was copied and modified from
 You will need a USB stick/flash drive. We recommend a 8GB or larger.
 Please let us know if it works for you on larger than 8GB drives.
 
-#### Install Etcher
+### Install Etcher
 
 Etcher is a tool that allows you to easily write an ISO onto a USB
 stick. Etcher is integrated in the OSX GUI environment and allows to
@@ -198,7 +198,7 @@ pane.
 
 ![Figure: Setting](images/49647529d8a4f32b.png)
 
-#### Prepare the USB stick
+### Prepare the USB stick
 
 The Disk Utility needs to be used with caution as selecting the wrong
 device or partition can result in data loss.
@@ -216,7 +216,7 @@ Ubuntu Web page:
 
 ![Figure: Diskutil](images/14c3877ad1c43497.png)
 
-#### Etcher configuration
+### Etcher configuration
 
 Next we use Etcher to configure and write to your USB device as follows
 (copied form the Ubuntu Web page):
@@ -234,7 +234,7 @@ Next we use Etcher to configure and write to your USB device as follows
 
 ![Figure: Etcher complete message](images/3bb88ce0bc88abb3.png)
 
-#### Write to the USB stick
+### Write to the USB stick
 
 When writing to the USB, Etcher will ask you for your password. It will
 write the ISO file, once you confirmed the password.
@@ -248,7 +248,7 @@ After the write process has completed, macOS may inform you that \*The
 disk you inserted was not readable by this computer\*. Donot select
 Initialise. Instead, select Eject and remove the USB device.
 
-### Ubuntu on a USB stick for Windows 10 :o:
+## Ubuntu on a USB stick for Windows 10 :o:
 
 See exercise Development.Server.1
 
@@ -282,11 +282,11 @@ the boot in your system depends on your hardware and vendor. Please
 consult with your documentation.
 
 
-### Exercise
+## Exercise
 
 Development.Server.1
 
-: If you are in need to but from a USB stick in Windows, please verify
+> If you are in need to but from a USB stick in Windows, please verify
   and expand on our tutorial similar to the one provided by OSX. It
   does not matter if you chose a GUI or a commandline option via
   gitbash.
