@@ -35,9 +35,28 @@ endif
 
 #  chapters/iaas/azure/signup.md\
 
+KUBERNETES=\
+ chapters/container/index.md\
+ chapters/container/container.md\
+ chapters/container/docker-fs.md\
+ chapters/container/docker-hadoop-cluster.md\
+ chapters/container/docker-hadoop.md\
+ chapters/container/docker-hadoop3.md\
+ chapters/container/docker-intro.md\
+ chapters/container/docker-local.md\
+ chapters/container/docker-pagerank-example-instruction.md\
+ chapters/container/docker-rest.md\
+ chapters/container/docker-spark.md\
+ chapters/container/docker-swarm.md\
+ chapters/container/exercise.md\
+ chapters/container/glossary.md\
+ chapters/container/kubernetes-fs.md\
+ chapters/container/kubernetes-intro.md\
+ chapters/container/qemu.md\
 
 
 DRAFT=\
+  $(KUBERNETES)\
   chapters/iaas/services.md\
   chapters/iaas/aws/aws.md\
   chapters/iaas/aws/signup.md\

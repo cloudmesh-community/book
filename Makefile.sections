@@ -45,3 +45,28 @@ CHAPTER_516=\
   $(DEVTOOLS)\
   $(PYTHON)\
   chapters/SECTION-REFERENCES.md
+
+CHAPTER_BIGDATA=\
+  $(PREFACE)\
+  chapters/class/organization-523.md\
+  chapters/class/plagiarism.md\
+  chapters/class/policies.md\
+  chapters/class/e534-i523.md\
+  chapters/class/volumes.md\
+  chapters/bigdata/intro-fall-2018.md\
+  chapters/bigdata/applications/overview.md\
+  chapters/bigdata/applications/physics.md\
+  chapters/bigdata/applications/radar.md\
+  chapters/bigdata/applications/lifestyle.md\
+  chapters/bigdata/applications/sport.md\
+  chapters/bigdata/applications/cloud.md\
+  chapters/bigdata/applications/usecases.md\
+  chapters/bigdata/applications/sensor.md\
+  chapters/bigdata/applications/web.md\
+  chapters/bigdata/applications/health.md\
+  chapters/bigdata/algorithms/technology.md\
+  chapters/bigdata/algorithms/clustering.md\
+  chapters/bigdata/algorithms/plotviz.md\
+  $(DEVTOOLS)\
+  $(PYTHON)\
+  chapters/SECTION-REFERENCES.md

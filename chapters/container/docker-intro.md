@@ -1,5 +1,4 @@
-Introduction to Docker
-======================
+# Introduction to Docker
 
 Docker is the company driving the container movement and the only
 container platform provider to address every application across the
@@ -18,8 +17,7 @@ collaboration and innovation. An overview of docker is provided at
 Image Source
 <https://www.docker.com/sites/default/files/Package%20software%40x2.png>
 
-Docker Survey
-=============
+## Docker Survey
 
 In 2016 Docker Inc. surveyed over 500 Docker developers and operations
 experts in various phases of deploying container-based technologies. The

@@ -1,8 +1,6 @@
-Draft: Apache Spark with Docker
-===============================
+# Draft: Apache Spark with Docker
 
-Pull Image from Docker Repository
----------------------------------
+## Pull Image from Docker Repository
 
 We use a Docker image from Docker Hub:
 (https://hub.docker.com/r/sequenceiq/spark/) This repository contains a
@@ -10,8 +8,7 @@ Docker file to build a Docker image with Apache Spark and Hadoop Yarn.
 
     docker pull sequenceiq/spark:1.6.0
 
-Running the Image
------------------
+## Running the Image
 
 In this step, we will launch a Spark container.
 
@@ -23,8 +20,7 @@ In this step, we will launch a Spark container.
 
     docker run -d -h sandbox sequenceiq/spark:1.6.0 -d
 
-Run Spark
----------
+## Run Spark
 
 After a container is launched, we can run Spark in the following two
 modes: (1) yarn-client and (2) yarn-cluster. The differences between the
@@ -39,8 +35,7 @@ https://spark.apache.org/docs/latest/running-on-yarn.html
 
     spark-submit --class org.apache.spark.examples.SparkPi --master yarn-client --driver-memory 1g --executor-memory 1g --executor-cores 1 $SPARK_HOME/lib/spark-examples-1.6.0-hadoop2.6.0.jar
 
-Observe Task Execution from Running Logs of SparkPi
----------------------------------------------------
+## Observe Task Execution from Running Logs of SparkPi
 
 Let us observe Spark task execution by adjusting the parameter of
 SparkPi and the Pi result from the following two commands.
@@ -49,8 +44,7 @@ SparkPi and the Pi result from the following two commands.
 
     spark-submit --class org.apache.spark.examples.SparkPi --master yarn-client --driver-memory 1g --executor-memory 1g --executor-cores 1 $SPARK_HOME/lib/spark-examples-1.6.0-hadoop2.6.0.jar 10000
 
-Write a Word-Count Application with Spark RDD
----------------------------------------------
+## Write a Word-Count Application with Spark RDD
 
 Let us write our own word-count with Spark RDD. After the shell has been
 started, copy and paste the following code in console line by line.
@@ -77,8 +71,7 @@ started, copy and paste the following code in console line by line.
     counts = words.map(lambda word:(word, 1)).reduceByKey(lambda x,y: x+y)
     counts.map(lambda x:x[1]).sum()
 
-Docker Spark Examples
----------------------
+## Docker Spark Examples
 
 ### K-Means Example
 
@@ -129,8 +122,7 @@ the number as a parameter to the programme.
 
     ./bin/spark-submit --class sample.WordCount --master execution-context:org.apache.spark.tez.TezJobExecutionContext --conf update-classpath=true ./lib/spark-native-yarn-samples-1.0.jar /sample-data/wordcount.txt 1
 
-Interactive Examples
---------------------
+## Interactive Examples
 
 Here we need a new image to work on. Let's run the following command.
 This will pull the necessary repositories from docker hub, as we donot

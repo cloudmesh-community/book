@@ -152,7 +152,8 @@ MAPREDUCE=\
  chapters/ai/ai.md\
  chapters/devops/devops.md\
  chapters/devops/travis.md\
- chapters/container/container.md\
+
+chapters/container/container.md\
  chapters/container/docker-fs.md\
  chapters/container/docker-hadoop-cluster.md\
  chapters/container/docker-hadoop.md\
