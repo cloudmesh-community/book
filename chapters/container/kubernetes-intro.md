@@ -1,35 +1,28 @@
-Introduction to Kubernetes
-==========================
+# Introduction to Kubernetes
 
-Topics Covered and Learning Outcome
------------------------------------
 
--   What is Kubernetes?
+## Topics Covered and Learning Outcome
 
--   What are containers?
+---
 
--   Cluster components in Kubernetes
+**:mortar_board: Learning Objectives**
 
--   Basic Units in Kubernetes
+* What is Kubernetes?
+* What are containers?
+* Cluster components in Kubernetes
+* Basic Units in Kubernetes
+* Run an example with Minikube
+* Interactive online tutorial
+* Have a solid understanding of Containers and Kubernetes
+* Understand the Cluster components of Kubernetes
+* Understand the terminology of Kubernetes
+* Gain practical experience with kubernetes
+* With minikube
+* With an interactive online tutorial
 
--   Run an example with Minikube
+---
 
--   Interactive online tutorial
-
--   Have a solid understanding of Containers and Kubernetes
-
--   Understand the CLuster components of Kubernetes
-
--   Understand the terminology of Kubernetes
-
--   Gain practical experience with kubernetes
-
--   With minikube
-
--   With an interactive online tutorial
-
-What is Kubernetes?
--------------------
+## What is Kubernetes?
 
 Kubernetes is an open-source platform designed to automate deploying,
 scaling, and operating application containers.
@@ -38,37 +31,28 @@ scaling, and operating application containers.
 
 With Kubernetes, you can:
 
--   Deploy your applications quickly and predictably.
-
--   Scale your applications on the fly.
-
--   Roll out new features seamlessly.
-
--   Limit hardware usage to required resources only.
-
--   Run applications in public and private clouds.
+* Deploy your applications quickly and predictably.
+* Scale your applications on the fly.
+* Roll out new features seamlessly.
+* Limit hardware usage to required resources only.
+* Run applications in public and private clouds.
 
 Kubernetes is
 
--   Portable: public, private, hybrid, multi-cloud
-
--   Extensible: modular, pluggable, hookable, composable
-
--   Self-healing: auto-placement, auto-restart, auto-replication,
+* Portable: public, private, hybrid, multi-cloud
+* Extensible: modular, pluggable, hookable, composable
+* Self-healing: auto-placement, auto-restart, auto-replication,
     auto-scaling
 
-What are containers?
---------------------
+## What are containers?
 
-\centering
-![Kubernetes Containers](images/why-containers.png){width="80%"}
+![Kubernetes Containers](images/why-containers.png)
 
-Image source:
+Figure: Containers
 
-* <https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg>
+source: <https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg>
 
-Terminology
------------
+## Terminology
 
 Pods:
 
@@ -97,16 +81,14 @@ Deployments:
     create new ReplicaSets, or to remove existing Deployments and adopt
     all their resources with new Deployments.
 
-Kubernetes Architecture
------------------------
+## Kubernetes Architecture
 
 \FIGURE{htb} 
     {1.0}
     {images/kubernetes.png}
     {Kubernetes (Source: Google)}
     {F:tas-arch}
-Minikube
---------
+## Minikube
 
 1.  minikube installation
 
@@ -245,26 +227,25 @@ For all platforms we can use the following command.
 $ minikube stop
 ```
 
-Interactive Tutorial Online
----------------------------
+## Interactive Tutorial Online
 
--   Start cluster
-    https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
+* Start cluster
+  <https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/>
 
--   Deploy app
-    https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive
+* Deploy app
+  <https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive>
 
--   Explore
-    https://kubernetes.io/docs/tutorials/kubernetes-basics/explore-intro/
+* Explore
+  <https://kubernetes.io/docs/tutorials/kubernetes-basics/explore-intro/>
 
--   Expose
-    https://kubernetes.io/docs/tutorials/kubernetes-basics/expose-intro/
+* Expose
+  <https://kubernetes.io/docs/tutorials/kubernetes-basics/expose-intro/>
 
--   Scale
-    https://kubernetes.io/docs/tutorials/kubernetes-basics/scale-intro/
+* Scale
+  <https://kubernetes.io/docs/tutorials/kubernetes-basics/scale-intro/>
 
--   Update
-    https://kubernetes.io/docs/tutorials/kubernetes-basics/update-interactive/
+* Update
+  <https://kubernetes.io/docs/tutorials/kubernetes-basics/update-interactive/>
 
--   MiniKube
-    https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/
+* MiniKube
+  <https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/>

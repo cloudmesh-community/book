@@ -5,21 +5,21 @@ index.md
 
 ## Files that are completed
 
-container.tex
+* container.tex
 
-docker-kubernetes-installation.tex
+* docker-kubernetes-installation.tex
 
-docker.tex -> docker-local.tex
-* wrong filename
-* its about installing docker locally
-* may be finished if we woudl integrate 
+* docker.tex -> docker-local.tex
+  * wrong filename
+  * its about installing docker locally
+  * may be finished if we woudl integrate 
 
-docker-rest.tex
-docker-hadoop.tex -> Hyungro: under development -> lee docker image
-docker-spark.tex -> Bo created image uses some image, can image created
+* docker-rest.tex
+* docker-hadoop.tex -> Hyungro: under development -> lee docker image
+* docker-spark.tex -> Bo created image uses some image, can image created
 
-docker-fs.tex
-kubernetes-fs.md
+* docker-fs.tex
+* kubernetes-fs.md
 
 
 ## Files in draft

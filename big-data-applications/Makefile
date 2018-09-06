@@ -110,48 +110,7 @@ CHAPTER_IN=\
 # i523
 ######################################################################
 
-CHAPTER_BIGDATA=\
-  chapters/version.md\
-  chapters/authors.md\
-  chapters/preface/notation.md\
-  chapters/class/organization-523.md\
-  chapters/class/plagiarism.md\
-  chapters/class/e534-i523.md\
-  chapters/class/volumes.md\
-  chapters/bigdata/intro-fall-2018.md\
-  chapters/bigdata/applications/overview.md\
-  chapters/bigdata/applications/physics.md\
-  chapters/bigdata/applications/radar.md\
-  chapters/bigdata/applications/lifestyle.md\
-  chapters/bigdata/applications/sport.md\
-  chapters/bigdata/applications/cloud.md\
-  chapters/bigdata/applications/usecases.md\
-  chapters/bigdata/applications/sensor.md\
-  chapters/bigdata/applications/web.md\
-  chapters/bigdata/applications/health.md\
-  chapters/bigdata/algorithms/technology.md\
-  chapters/bigdata/algorithms/clustering.md\
-  chapters/bigdata/algorithms/plotviz.md\
-  chapters/SECTION-DEVTOOLS.md\
-  chapters/linux/refcards.md\
-  chapters/cloud/virtualbox.md\
-  chapters/cloud/vagrant.md\
-  chapters/git/github.md\
-  chapters/linux/linux.md\
-  chapters/linux/ssh.md\
-  chapters/linux/ssh-futuresystems.md\
-  chapters/linux/ssh-excerise.md\
-	chapters/prg/SECTION-PYTHON.md\
-  chapters/prg/python-intro.md\
-  chapters/prg/python-install.md\
-  chapters/prg/python-interactive.md\
-  chapters/prg/python-editor.md\
-  chapters/prg/SECTION-PYTHON-LANG.md\
-  chapters/prg/python.md\
-  chapters/prg/python-libraries.md\
-  chapters/prg/python-data.md\
-  chapters/prg/python-matplotlib.md\
-  chapters/prg/python-cmd5.md\
+
 
 
 REVIEW=\
