@@ -1,0 +1,47 @@
+PREFACE=\
+  chapters/version.md\
+  chapters/authors.md\
+  chapters/preface/create.md\
+  chapters/preface/notation.md\
+  chapters/faq.md
+
+DEVTOOLS=\
+  chapters/SECTION-DEVTOOLS.md\
+  chapters/linux/refcards.md\
+  chapters/cloud/virtualbox.md\
+  chapters/cloud/vagrant.md\
+  chapters/os/ubuntu-usb-osx.md\
+  chapters/git/github.md\
+  chapters/linux/linux.md\
+  chapters/linux/ssh.md\
+  chapters/linux/ssh-futuresystems.md\
+  chapters/linux/ssh-excerise.md
+
+PYTHON=\
+	chapters/prg/SECTION-PYTHON.md\
+  chapters/prg/python-intro.md\
+  chapters/prg/python-install.md\
+  chapters/prg/python-interactive.md\
+  chapters/prg/python-editor.md\
+  chapters/prg/SECTION-PYTHON-LANG.md\
+  chapters/prg/python.md\
+  chapters/prg/python-libraries.md\
+  chapters/prg/python-data.md\
+  chapters/prg/python-matplotlib.md\
+  chapters/prg/python-cmd5.md\
+  chapters/prg/python-cmd.md
+
+CHAPTER_516=\
+  $(PREFACE)\
+  chapters/class/organization-516.md\
+  chapters/class/plagiarism.md\
+  chapters/cloud/gregor.md\
+  chapters/class/e516-engineering-cloud-computing.md\
+  chapters/class/policies.md\
+  chapters/class/e516-summary.md\
+  chapters/class/volumes.md\
+  chapters/class/e516-definition.md\
+  chapters/cloud/datacenter.md\
+  $(DEVTOOLS)\
+  $(PYTHON)\
+  chapters/SECTION-REFERENCES.md
