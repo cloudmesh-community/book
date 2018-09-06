@@ -121,11 +121,11 @@ This is Part 6 of the introduction.
 
 This is Part 7 of the introduction.
 
-[:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1eBS5tWafVDnGCUtRsTP2l1fFMITwjn1D)
+[:clapper: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1eBS5tWafVDnGCUtRsTP2l1fFMITwjn1D)
 
 [:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1YBItIADnIZr1wLkYBWWtxsLgVg_9lgoO)
 
-[:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1NSZwndS7DrHgCuyef0KMHguNGfMawKiv)
+[:pencil: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1NSZwndS7DrHgCuyef0KMHguNGfMawKiv)
 
 
 - The 4 paradigm of scientific research: Theory,Experiment and observation,Simulation of theory or model,Data-driven.
