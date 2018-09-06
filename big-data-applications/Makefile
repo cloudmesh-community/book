@@ -1,3 +1,4 @@
+include ../Makefile.sections
 
 FILENAME=vonLaszewski-bigdata-application
 
@@ -215,35 +216,36 @@ all: prepare epub
 draft: prepare draftepub
 	echo done
 
-
-prepare: dot refernces todo
-	$(COPY) metadata.txt dest
-	$(COPY) -r cover dest
-	$(COPY) -r ../template dest
-	$(COPY) -r ../template/fonts dest
-	$(COPY) -r ../chapters dest	
-	$(MARKUPALL)
-	../bin/date.py > dest/chapters/version.md
-	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
-	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
+sectionindent:
 	../bin/authors.py > dest/chapters/authors.md
-	../bin/header.py dest/chapters/class/organization-523.md 2
 	../bin/header.py dest/chapters/git/github.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
 	../bin/header.py dest/chapters/prg/python-install.md 1
 	../bin/header.py dest/chapters/prg/python.md 2
+	../bin/header.py dest/chapters/prg/python-cmd.md 3
 	../bin/header.py dest/chapters/cloud/vagrant.md 2
 	../bin/header.py dest/chapters/prg/python-libraries.md 2
 	../bin/header.py dest/chapters/prg/python-data.md 1
 	../bin/header.py dest/chapters/cloud/virtualbox.md 2
+	../bin/header.py dest/chapters/class/organization-516.md 2
 	../bin/header.py dest/chapters/class/policies.md 2
 	../bin/header.py dest/chapters/preface/create.md 2
 	../bin/header.py dest/chapters/linux/ssh.md 2
 	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
 	../bin/header.py dest/chapters/linux/refcards.md 2
+	../bin/header.py dest/chapters/iaas/aws/aws.md 2
+	../bin/header.py dest/chapters/iaas/aws/signup.md 2
+	../bin/header.py dest/chapters/iaas/azure/azure.md 2
+	../bin/header.py dest/chapters/iaas/watson/signup.md 2
+	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
+	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
+	../bin/header.py dest/chapters/faq.md 2
+
+sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "References" > dest/chapters/SECTION-REFERENCES.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
 	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      
@@ -260,6 +262,21 @@ prepare: dot refernces todo
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 
 
+
+prepare: dot refernces todo
+	$(COPY) metadata.txt dest
+	$(COPY) -r cover dest
+	$(COPY) -r ../template dest
+	$(COPY) -r ../template/fonts dest
+	$(COPY) -r ../chapters dest	
+	$(MARKUPALL)
+	../bin/date.py > dest/chapters/version.md
+	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
+	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
+	make -f Makefile sectionindent
+	make -f Makefile sectionheaders
+
+
 epub: 
 ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(INDEX) > all.md
@@ -269,7 +286,7 @@ ifeq ($(OS), linux)
 endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
-draft: prepare
+draftepub: prepare
 ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(DRAFT) > all.md
 endif
