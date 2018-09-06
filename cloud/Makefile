@@ -39,6 +39,7 @@ CHAPTER_516=\
   chapters/authors.md\
   chapters/preface/create.md\
   chapters/preface/notation.md\
+  chapters/faq.md\
   chapters/class/organization-516.md\
   chapters/class/plagiarism.md\
   chapters/cloud/gregor.md\
@@ -163,6 +164,7 @@ prepare: refernces todo
 	../bin/header.py dest/chapters/iaas/watson/signup.md 2
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
+	../bin/header.py dest/chapters/faq.md 2
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
 	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md

@@ -36,8 +36,14 @@ single file.
 
 We identified that someone after almost three weeks has not looked at
 the ePub and missed valuable information. To force students to look at
-the epub we have removed them. and instead left the link to the
-syllabus that had the same information in it. This way we make sure
-students do not miss important information.
+the epub we have removed the direct links to the md files in piazza
+`Resources` section. Instead we still leave the links to the md file
+sin the syllabus so that you can still get to them from the syllabus.
+This way also room for error is minimized as we only have to update
+one file wit the location and not two.
+
+The little clouds in the ePub are automatically created and provide
+a direct link to the md file for which the content follows.
+
 
 
