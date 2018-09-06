@@ -1,5 +1,4 @@
-Running Docker Locally
-======================
+# Running Docker Locally
 
 The official installation documentation for docker can be found by
 visiting the following Web page:
@@ -21,8 +20,7 @@ reference="s:docker-windows"}) and Ubuntu
 (Section [1.2](#s:docker-ubuntu){reference-type="ref"
 reference="s:docker-ubuntu"}).
 
-Instillation for OSX
---------------------
+## Instillation for OSX
 
 The docker community edition for OSX can be found at the following link
 
@@ -40,8 +38,7 @@ Docker is running, and you can access it via a terminal.
 
 ![Docker integrated in the menu bar on OSX](images/whale-in-menu-bar.png){width="50%"}
 
-Installation for Ubuntu
------------------------
+## Installation for Ubuntu
 
 In order to install Docker community edition for Ubuntu, you first have
 to register the repository from where you can download it. This can be
@@ -72,8 +69,7 @@ $ sudo apt-get install docker-ce
 $ sudo apt-get update
 ```
 
-Draft: Installation for Windows 10
-----------------------------------
+## Draft: Installation for Windows 10
 
 The instructions for Windows have not passed our quality control. We
 look for TAs and student that test out and improve this section.
@@ -113,8 +109,7 @@ will show something like following:
 $ <username>@<yourpc> ~
 ```
 
-Testing the Install
--------------------
+## Testing the Install
 
 To test if it works execute the following commands in a terminal:
 

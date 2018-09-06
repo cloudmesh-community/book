@@ -1,91 +1,90 @@
-Ansible I: Simplest Example
-===========================
+# Ansible
 
- 
+## Introduction to Ansible
 
-Prerequisite
-------------
+Ansible is an open-source IT automation DevOps engine allowing you to manage
+and configure many compute resources in a scalable, consitent and
+reliable way.
 
-In order to conduct this lesson:
+Ansible to automates the following tasks:
 
--   You can install Ubuntu 16.04 virtual machine on VirtualBox
+* **Provisioning:** It ssets up the servers that you will use as part
+  of your infrasstructure.
 
--   You can install software packages via 'apt-get' tool in Ubuntu
+* **Configuration management:** You can change the configuration of an
+application, OS, or device. You can implement security policies and
+other configuration tasks.
+
+* **Service management:** You can start and stop services, install
+updates
+
+* **Application deployment:** You can conduct application deployments
+in an automated fashion that integrate with your DevOps strategies.
+
+
+### Prerequisite
+
+We assume you 
+
+-   can install Ubuntu 18.04 virtual machine on VirtualBox
+
+-   can install software packages via 'apt-get' tool in Ubuntu
     virtual host
 
--   You already reserved a virtual cluster (with at least 1 virtual
+-   already reserved a virtual cluster (with at least 1 virtual
     machine in it) on some cloud. OR you can use VMs installed in
     VirtualBox instead.
 
--   You set up SSH credentials and can login to your virtual machines.
+-   have SSH credentials and can login to your virtual machines.
 
-What can you do with Ansible?
------------------------------
 
-Humans do maintenance and configurations on computers. Essentially, we
-specify a list of operations and a list of target machines where the
-operations apply to. After defining these two critical lists, the
-creative works are done, and the rest labour can be automated. And this
-is what Ansible is used for.
+### Setting up a playbook
 
-Let us develop a sample from scratch, based on this paradigm.
+Let us develop a sample from scratch, based on the paradigms that
+ansible supports. We are going to use Ansible to install Apache server on
+our virtual machines.
 
-A sample use case
------------------
-
-In this example, we are going to use Ansible to install Apache server on
-our VMs.
-
--   install Ansible tool on your machine first
-
+First, we install ansible on our machien and make sure we have an up
+to date OS:
 
     $ sudo apt-get update
     $ sudo apt-get install ansible
 
--   prepare a working environment for your Ansible
+Next, we prepare a working environment for your Ansible example
 
-<!-- -->
-
-    $ mkdir}ansible-apache
+    $ mkdir ansible-apache
     $ cd ansible-apache
 
--   next, we are going to create a local configuration file for Ansible.
-
-When you execute Ansible within this folder, this local configuration
-file is always going to overwrite a system level Ansible configuration.
-It is in general beneficial to keep custom configurations locally unless
-you absolutely believe it should be applied system wide. Create a file
-'ansible.cfg' in this folder, and fill:
+To use ansible we will need a local configuration. When you execute
+Ansible within this folder, this local configuration file is always
+going to overwrite a system level Ansible configuration.  It is in
+general beneficial to keep custom configurations locally unless you
+absolutely believe it should be applied system wide. Create a file
+`inventory.cfg` in this folder, add the following:
 
     [defaults]
-    hostfile = hosts
+    hostfile = hosts.txt
 
-This local configuration file simple tells that the target machines'
-names are given in a file named 'hosts'
+This local configuration file tells that the target machines' names
+are given in a file named `hosts.txt`. Next we will specify hosts in
+the file.
 
-In your assignments, we choose to use `inventory` instead of
-`ansible.cfg`. More details will be given when we introduce
-`ansible-galaxy` in following chapters. At this moment, getting yourself
-familiar with some concepts of configuring the Ansible environment is
-good enough.
-
--   specify hosts in the file
-
-You should have accesses to all VMs listed in this file as part of our
-prerequisites. Create and edit file 'hosts':
+You should have ssh login accesses to all VMs listed in this file as
+part of our prerequisites. Now create and edit file `hosts.txt` with
+the following content:
 
     [apache]
     <server_ip> ansible_ssh_user=<server_username>
 
-The name 'apache' in the brackets defines the server group name. We will
-use this name to refer to all server items in this group next. Fill in
-IP addresses of the virtual machines you launched in your VirtualBox and
-fire up these VMs in you VirtualBox.
+The name `apache` in the brackets defines a server group name. We will
+use this name to refer to all server items in this group. As we intend
+to install and run apache on the server, the name choice seems quite
+appropriate. Fill in the IP addresses of the virtual machines you
+launched in your VirtualBox and fire up these VMs in you VirtualBox.
 
--   compose a playbook
-
-A playbook tells Ansible what to do. it uses YAML Markup syntax. Create
-and edit a file with a proper name e.g. apache.yml as follow:
+To deploy the service, we need to create a playbook. A playbook tells
+Ansible what to do. it uses YAML Markup syntax. Create and edit a file
+with a proper name e.g. `apache.yml` as follow:
 
     ---
     - hosts: apache #comment: apache is the group name we just defined
@@ -95,73 +94,56 @@ and edit a file with a proper name e.g. apache.yml as follow:
           apt: name=apache2 update_cache=yes state=latest
 
 This block defines the target VMs and operations(tasks) need to apply.
-you may wonder what 'apt' means. here comes the concept of Ansible
-modules in next paragraph.
-
-The concept of modules
-----------------------
-
-'apt' is the module used in our sample playbook. it installs packages on
-Ubuntu for us.
+We are using the `apt` attribute to indicate all software packges that
+need to be installed. Dependent on the disstribution of the operating
+system it will find the correct module installer without your
+knowledge. Thus an ansible playbook could also work for multiple
+different OSes. 
 
 Ansible relies on various kinds of modules to fulfil tasks on the remote
 servers. These modules are developed for particular tasks and take in
-related arguments. For instance, when we use 'apt' module, we certainly
+related arguments. For instance, when we use `apt` module, we 
 need to tell which package we intend to install. That is why we provide
-a value for the 'name' argument.
+a value for the `name=` argument. The first `-name` attribute is jsut
+a comment that will be printed when this task is executed. 
 
-Run you playbook
-----------------
+### Run the playbook
 
 In the same folder, execute
 
     ansible-playbook apache.yml --ask-sudo-pass
 
 After a successful run, open a browser and fill in your server IP. you
-should se a 'It works!' Apache2 Ubuntu default page. Make sure the
+should see an 'It works!' Apache2 Ubuntu default page. Make sure the
 security policy on your cloud opens port 80 to let the HTTP traffic go
 through.
 
 Ansible playbook can have more complex and fancy structure and syntaxes.
-Go explore! this sample is based on:
-<https://www.digitalocean.com/community/tutorials/how-to-configure-apache-using-ansible-on-ubuntu-14-04>
+Go explore! This example is based on:
+
+* <https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04>
 
 We are going to offer an advanced Ansible in next chapter.
 
-Ansible II: Roles
-=================
+## Ansible Roles
 
-In this example, we are going to install R package onto your cloud VMs.
-R is a useful statistic programing language commonly used in many
-scientific and statistics computing projects, maybe also the one you
-chose for this class.
-
-In addition to last basic example, we are going to illustrate the
-concept of Ansible Roles, install source code through Github, and make
-use of variables. These are key features you will find useful in your
-project deployments.
+Next we install the R package onto our cloud VMs.  R is a useful
+statistic programing language commonly used in many scientific and
+statistics computing projects, maybe also the one you chose for this
+class.  With this example we illustrate the concept of Ansible Roles,
+install source code through Github, and make use of variables. These
+are key features you will find useful in your project deployments.
 
 We are going to use a top-down fashion in this example. We first start
 from a playbook that is already good to go. You can execute this
-playbook (donot do it yet) to get R installed in your remote hosts. We
-then further complicate this concise playbook by introducing
-functionalities to do the same tasks but in different ways. Although
-these detours are not necessary in this simply case, it helps you grasp
-the power of Ansible and ease your life when they are needed in your
-real projects.
+playbook (donot do it yet, always read the entire section first) to
+get R installed in your remote hosts. We then further complicate this
+concise playbook by introducing functionalities to do the same tasks
+but in different ways. Although these different ways are not necessary
+they help you grasp the power of Ansible and ease your life when they
+are needed in your real projects.
 
-Prerequisite
-------------
-
--   Finished Ansible Lesson I
-
--   Have VMs reserved on cloud and SSH Key setup
-
-A completed playbook
---------------------
-
-From the earlier example, we already can compose a playbook
-'example.yml' that install a software package, for example:
+Let us now create the following playbook with the name `example.yml`:
 
     ---
     - hosts: R_hosts
@@ -170,27 +152,18 @@ From the earlier example, we already can compose a playbook
         - name: install the R package
           apt: name=r-base update_cache=yes state=latest
 
-the hosts are defined in a file 'hosts', which we configured in
-'ansible.cfg':
+The hosts are defined in a file `hosts.txt`, which we configured in
+a file that we now call `ansible.cfg`:
 
     [R_hosts]
     <cloud_server_ip> ansible_ssh_user=<cloud_server_username>
 
-In your assignments, we choose to use `inventory` instead of
-`ansible.cfg`. More details will be given when we introduce
-`ansible-galaxy` in following chapters. At this moment, getting yourself
-familiar with some concepts of configuring the Ansible environment is
-good enough.
+Certainly, this should get the installation job done. But we are going
+to extend it via new features called role next
 
-This should get the installation job done. But we are going to extend it
-via new features next.
-
-Introducing Roles
------------------
-
-Role is an important concept used very often in large Ansible projects.
+Role is an important concept used often in large Ansible projects.
 You divide a series of tasks into different groups. Each group
-corresponds to certain role of the whole project.
+corresponds to certain role within the project. 
 
 For example, if your project is to deploy a web site, you may need to
 install the back end database, the web server that responses HTTP
@@ -198,7 +171,7 @@ requests and the web application itself. They are three different roles
 and should carry out their own installation and configuration tasks.
 
 Even though we only need to install the R package in this example, we
-can still do it by defining a role 'r'. Modify your 'example.yml' to be:
+can still do it by defining a role 'r'. Let us modify our `example.yml` to be:
 
     ---
     - hosts: R_hosts
@@ -206,12 +179,12 @@ can still do it by defining a role 'r'. Modify your 'example.yml' to be:
       roles:
         - r
 
-and create directory structure in your top project directory:
+Now we create a directory structure in your top project directory as follows
 
     $ mkdir -p roles/r/tasks
     $ touch roles/r/tasks/main.yml
 
-edit this 'main.yml' to be:
+Next, we edit the  `main.yml` file and include the following content:
 
     ---
     - name: install the R package
@@ -219,14 +192,14 @@ edit this 'main.yml' to be:
       become: yes
 
 You probably already get the point. We take the 'tasks' section out of
-the one-for-all example.yml and re-organize them into roles. Each role
-specified in example.yml should have its own directory under roles/ and
+the earlier `example.yml` and re-organize them into roles. Each role
+specified in `example.yml` should have its own directory under roles/ and
 the tasks need be done by this role is listed in a file 'tasks/main.yml'
 as above.
 
-Install source code from Github
--------------------------------
+## Using Variables
 
+We demonstrate this feature by installing source code from Github.
 Although R can be installed through the OS package manager (apt-get
 etc.), the software used in your projects may not. Many research
 projects are available by Git instead. Here we are going to show you how
@@ -237,11 +210,12 @@ found at <https://github.com/wch/r-source.git>. We are going to clone it
 to a remote VM's hard drive, build the package and install the binary
 there.
 
-To do so, we need a few new Ansible modules. You may remember from last
-example that Ansible modules assist us to do various kinds of jobs when
-fed correct arguments. No surprise, Ansible has a module 'git' to take
-care of git-related works, and a 'command' module to run shell commands.
-Let's modify 'roles/r/tasks/main.yml' to be:
+To do so, we need a few new Ansible modules. You may remember from the
+last example that Ansible modules assist us to do different tasks
+based on the arguments we pass to it. It will come to no surprise that
+Ansible has a module 'git' to take care of git-related works, and a
+'command' module to run shell commands.  Let us modify
+`roles/r/tasks/main.yml` to be:
 
     ---
     - name: get R package source
@@ -257,29 +231,28 @@ Let's modify 'roles/r/tasks/main.yml' to be:
         - make
         - make install
 
-The role 'r' carries out its two tasks now. One to clone the R source
-code into /tmp/R, the other uses a series of shell commands to build and
+The role `r` will now carry out two tasks. One to clone the R source
+code into `/tmp/R`, the other uses a series of shell commands to build and
 install the packages.
 
-Note that the commands executed by the second task may not be available
-on a fresh VM image. But the point of this example is to show an
-alternative way to install packages, so we conveniently assume
-conditions are all met.
+Note that the commands executed by the second task may not be
+available on a fresh VM image. But the point of this example is to
+show an alternative way to install packages, so we conveniently assume
+the conditions are all met.
 
-Using variables in a separate file
-----------------------------------
+To achieve this we are using variables in a separate file.
 
 We typed several string constants in our Ansible scripts so far. In
 general, it is a good practice to give these values names and use them
 by referring to their names. This way, you complex Ansible project can
 be less error prone. Create a file in the same directory, and name it
-'vars.yml':
+`vars.yml`:
 
     ---
     repository: https://github.com/wch/r-source.git
     tmp: /tmp/R
 
-Accordingly, we will update our 'example.yml':
+Accordingly, we will update our `example.yml`:
 
     ---
     - hosts: R_hosts
@@ -288,9 +261,9 @@ Accordingly, we will update our 'example.yml':
       roles:
         - r
 
-As shown, we specify a 'vars_files' telling the script that the file
-'vars.yml' is going to supply variable values, whose keys are denoted by
-Double curly brackets like in 'roles/r/tasks/main.yml':
+As shown, we specify a `vars_files` telling the script that the file
+`vars.yml` is going to supply variable values, whose keys are denoted by
+Double curly brackets like in `roles/r/tasks/main.yml`:
 
     ---
     - name: get R package source
@@ -306,47 +279,35 @@ Double curly brackets like in 'roles/r/tasks/main.yml':
         - make
         - make install
 
-Summarize
----------
 
-Now, just edit the 'hosts' file with your target VMs' IP addresses and
+Now, just edit the `hosts.txt` file with your target VMs' IP addresses and
 execute the playbook.
 
-You should be able to extend the Ansible playbook for your project.
-Configuration tools like Ansible are important components to master the
-cloud environment. There is much to explore and it's worth it.
+You should be able to extend the Ansible playbook for your
+needs. Configuration tools like Ansible are important components to
+master the cloud environment. 
 
-Ansible III: Ansible Galaxy
-===========================
+## Ansible Galaxy
 
-By finishing the first two chapters, you should be able to compose
-Ansible projects to install, configure or do other maintenance on your
-software packages. We introduced the powerful component `Roles` in the
-previous chapters, and emphasized the concepts of modularize and
-re-usability. With these preparations, we are ready to start working on
-Ansible Galaxy.
-
-Think Ansible Galaxy as of an marketplace, where developers can share
-Ansible Roles to complete their system administration tasks. Roles
-exchanged in Ansible Galaxy community need to follow common conventions
-so that all participants know what to expect. We will illustrate details
-in this chapter.
+Ansible Galaxy is a marketplace, where developers can share Ansible
+Roles to complete their system administration tasks. Roles exchanged
+in Ansible Galaxy community need to follow common conventions so that
+all participants know what to expect. We will illustrate details in
+this chapter.
 
 It is good to follow the Ansible Galaxy standard during your development
 assignment as much as possible, however, you will submit your
 assignments to this class's repository not the global Galaxy community.
 
-Ansible Galaxy helloworld
--------------------------
+### Ansible Galaxy helloworld
 
 Let us start with a simplest case: We will build an Ansible Galaxy
 project. This project will install the Emacs software package on your
 localhost as the target host. It is a "helloworld" project only meant to
 get us familiar with Ansible Galaxy project structures.
 
-### create the directory
-
-Setup your submission directory after you clone and rebased with
+First you need to create a directory.  Setup your submission directory
+after you clone and rebased with
 <https://github.com/cloudmesh/sp17-i524>:
 
     $ git rebase upstream/master
@@ -371,31 +332,29 @@ dot. Here is how it looks like:
 
 ![image](/images/ansible-galaxy-init-structure.png)
 
-### fill in information
-
 Let us fill in information to our project. There are several `main.yml`
 files in different folders, and we will illustrate their usages.
 
 defaults and vars:
 
-:   These folders should hold variables key-value pairs for your
-    playbook scripts. We will leave them empty in this example.
+> These folders should hold variables key-value pairs for your
+> playbook scripts. We will leave them empty in this example.
 
 files:
 
-:   This folder is for files need to be copied to the target hosts. Data
-    files or configuration files can be specified if needed. We will
-    leave it empty too.
+> This folder is for files need to be copied to the target
+> hosts. Data files or configuration files can be specified if
+> needed. We will leave it empty too.
 
 templates:
 
-:   Similar missions to files/, templates is allocated for template
-    files. Keep empty for a simple Emacs installation.
+> Similar missions to files/, templates is allocated for template
+> files. Keep empty for a simple Emacs installation.
 
 handlers:
 
-:   This is reserved for services running on target hosts. For example,
-    to restart a service under certain circumstance.
+> This is reserved for services running on target hosts. For example,
+> to restart a service under certain circumstance.
 
 tasks:
 
@@ -409,8 +368,8 @@ tasks:
 
 meta:
 
-:   Provide necessary metatdata for our Ansible Galaxy project for
-    shipping:
+> Provide necessary metatdata for our Ansible Galaxy project for
+> shipping:
 
         ---
         galaxy_info:
@@ -428,12 +387,10 @@ meta:
 
         dependencies: []
 
-### Test it out
-
-You have your Ansible Galaxy role ready now. To test it as a user, go to
-your HID directory and edit the other two files `inventory` and
-`playbook.yml`, which are already generated for you in directory `tests`
-by the script:
+Next let us test it out. You have your Ansible Galaxy role ready
+now. To test it as a user, go to your HID directory and edit the other
+two files `inventory.txt` and `playbook.yml`, which are already generated
+for you in directory `tests` by the script:
 
     $ ansible-playbook -i ./hosts playbook.yml
 

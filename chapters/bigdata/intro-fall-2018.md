@@ -61,7 +61,7 @@ This is Part 3 of the introduction.
 
 This is Part 4 of the introduction.
 
-[:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=0B1YZSKYkpykjSEplaTdlQTBVWVE)
+[:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=1XzLGhioe3jdtuQo1V7d_B3syH00tbHSH)
 
 [:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=18AzztLK0OEgej1g9Gv0jMvMkHIj4REnM)
 
@@ -121,7 +121,11 @@ This is Part 6 of the introduction.
 
 This is Part 7 of the introduction.
 
-[:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=0B1YZSKYkpykjWXNtTnYxVGR2ZUE)
+[:clapper: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1eBS5tWafVDnGCUtRsTP2l1fFMITwjn1D)
+
+[:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1YBItIADnIZr1wLkYBWWtxsLgVg_9lgoO)
+
+[:pencil: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1NSZwndS7DrHgCuyef0KMHguNGfMawKiv)
 
 
 - The 4 paradigm of scientific research: Theory,Experiment and observation,Simulation of theory or model,Data-driven.
@@ -130,9 +134,9 @@ This is Part 7 of the introduction.
 
 This is Part 8 of the introduction.
 
-[:clapper: 8. Data Science Pipeline](https://drive.google.com/open?id=0B1YZSKYkpykjbWxXMVBETms0WEU)
+[:clapper: 8. Data Science Pipeline](https://drive.google.com/open?id=1x9DzWBXlimMYgm7EKllNlgwqairTzN2a)
 
-[:scroll: 8. Data Science Pipeline](https://drive.google.com/open?id=0B1YZSKYkpykjUVplV1kwVFpkRlE)
+[:scroll: 8. Data Science Pipeline](https://drive.google.com/open?id=17rm2m1v-TaxXIYlR36gqKQqs13XumZNi)
 
 
 - DIKW process:Data, Information, Knowledge, Wisdom and Decision.
@@ -144,7 +148,7 @@ This is Part 8 of the introduction.
 This is Part 9 of the introduction.
 
 
-[:scroll: 9. Physics as an Application Example](https://drive.google.com/open?id=0B1YZSKYkpykjSDFmdnVhTWxUVVk)
+[:scroll: 9. Physics as an Application Example](https://drive.google.com/open?id=1_qAn4LxVZ2i1k53uj47uvTKU-0T84a0O)
 
 
 - Physics as an application example.
@@ -153,7 +157,7 @@ This is Part 9 of the introduction.
 
 This is Part 10 of the introduction.
 
-[:scroll: 10. Technology Example: Recommender Systems I](https://drive.google.com/open?id=0B1YZSKYkpykjd09FN3ZnWEFsQlk)
+[:scroll: 10. Technology Example: Recommender Systems I](https://drive.google.com/open?id=135zSbironJ1h488CzgqF-KsZumYhyGz6)
 
 
 - Overview of many informatics areas, recommender systems in detail.
@@ -163,9 +167,9 @@ This is Part 10 of the introduction.
 
 This is Part 11 of the introduction.
 
-[:clapper: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjOXIxTS00NXRJdms)
+[:clapper: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=1DlmUYwFTRHL0S_vLQqbumvRHEyicyNt7)
 
-[:scroll: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=0B1YZSKYkpykjd0d4OWdqRThKaEk)
+[:scroll: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=1keYELndfvM0r4DeedVLPjMY-AAvBHdns)
 
 
 - Distances in funny spaces, about "real" spaces and how to use diatances.
@@ -174,23 +178,23 @@ This is Part 11 of the introduction.
 
 This is Part 12 of the introduction.
 
-[:clapper: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjamJLNTZvYndyN2M)
+[:clapper: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=1SGUB5kLi6Q0B7h6ZsJELAXrpWyrLaNgl)
 
-[:scroll: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=0B1YZSKYkpykjM0ZIeWgwMkhkcmM)
+[:scroll: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=1Tv5zMBxqqJOfKbNNqwgyZSAVc0WW2d9E)
 
 
 ## Cloud Application in Research 
 
 This is Part 13 of the introduction discusssing clcloud applications in research.
 
-[:scroll: 13. Cloud Applications in Research: Science Clouds and Internet of Things](https://drive.google.com/open?id=0B1YZSKYkpykjODk2V19LX1Bxc2c)
+[:scroll: 13. Cloud Applications in Research: Science Clouds and Internet of Things](https://drive.google.com/open?id=16zqsRbdmptrB14IR2iJbOLQUuQzFcm7i)
 
 
 ## Software Ecosystems: Parallel Computing and MapReduce 
 
 This is Part 14 of the introduction discussing the software ecosysstem
 
-[:scroll: 14. Software Ecosystems: Parallel Computing and MapReduce](https://drive.google.com/open?id=0B1YZSKYkpykjNTZhcllDMmJ4NGM)
+[:scroll: 14. Software Ecosystems: Parallel Computing and MapReduce](https://drive.google.com/open?id=1Hn6ReTxBpowvr0UihdChXZZy0Q_lnBRx)
 
 
 <!--
