@@ -61,15 +61,32 @@ AWS offers a number of compute related services.
 
 ## Serverless Computing with AWS Lambda
 
+
+Serverless computing or FaaS is a new cloud computing paradigm that has
+gained popularity recently. AWS Lambda was one of the first serverless
+computing services that was made available to the public,  Serverless
+computing allows users to run small functions in the cloud without 
+having to worry about resource requirements. More information regarding
+AWS Lambda can be found in the following document
+
 <https://aws.amazon.com/lambda/>
 
 ## Storage
 
-![](images/aws-compute-list.png)
+AWS provides many storage services that users can leverage for developing
+applications and solutions. The list below showcases AWS storage 
+services
 
-### NoSQL with DynamoDB
+![](images/aws-storage-list.png)
 
-* <https://aws.amazon.com/dynamodb/>
+### Database
+
+AWS also provides many data base solutions. AWS has both SQL based
+databases and NoSQL based databases. The list below shows the database
+services that AWS offers. And other database related services
+
+![adsdas](images/aws-databases.png)
+*Image reference - https://aws.amazon.com/products/databases/*
 
 ## App Integration
 
@@ -77,19 +94,21 @@ AWS offers a number of compute related services.
 
 ## Access from the Command Line
 
+AWS also provides an command line interface that can be used to manage
+all the AWS services through simple commands. below are two example 
+commands.
+
 	aws s3 <Command> [<Arg> ...]
 	aws ec2 <Command> [<Arg> ...]
 
+You can find more information regarding the AWS CLI in the following 
+documents.
 
-* <https://aws.amazon.com/cli/>
-* <https://docs.aws.amazon.com/cli/latest/reference/>
+* AWS Command Line: <https://aws.amazon.com/cli/>
+* AWS Command Line referance: <https://docs.aws.amazon.com/cli/latest/reference/>
 
 * EC2: <https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html>
 * S3: <https://docs.aws.amazon.com/cli/latest/reference/s3/index.html>
-
-### S3
-
-commands: cp, ls, mb, mv, presign, rb, rm, sync, website
 
 ## Access from Python
 

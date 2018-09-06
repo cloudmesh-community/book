@@ -1,8 +1,6 @@
-Exercises
-=========
+# Exercises
 
-Docker Swarm Tutorial
----------------------
+## Docker Swarm Tutorial
 
 Develop a tutorial that deploys a Docker Swarm cluster on a number of
 ubuntu machines. Note that this may actually be easier as docker and
@@ -12,8 +10,7 @@ swarm. However we have not checked it or identified if it is useful.
 
 * <https://rominirani.com/docker-swarm-tutorial-b67470cf8872>
 
-Docker Swarm on Google Compute Engine
--------------------------------------
+## Docker Swarm on Google Compute Engine
 
 Develop a tutorial that deploys a Docker Swarm cluster on Google Compute
 Engine. Note that this may actually be easier as docker and docker swarm
@@ -23,8 +20,7 @@ we have not checked it or identified if it is useful.
 
 * <https://rominirani.com/docker-swarm-on-google-compute-engine-364765b400ed>
 
-Single Node Hadoop
-------------------
+## Single Node Hadoop
 
 At
 
@@ -38,8 +34,7 @@ hadoop cluster on a single node.
 \(b) Develop sample applications and tests to test your cluster. You can
 use wordcount or similar.
 
-Single Node Hadoop
-------------------
+## Single Node Hadoop
 
 At
 
@@ -57,8 +52,7 @@ kubernetes
 \(b) Develop sample applications and tests to test your cluster. You can
 use wordcount or similar.
 
-Spark Cluster
--------------
+## Spark Cluster
 
 Develop a high quality tutorial that installes a spark cluster in
 kubernetes. Test your deployment on minikube but also Futuresystems

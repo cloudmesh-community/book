@@ -1,3 +1,4 @@
+include ../Makefile.sections
 
 FILENAME=vonLaszewski-cloud
 
@@ -34,49 +35,34 @@ endif
 
 #  chapters/iaas/azure/signup.md\
 
-CHAPTER_516=\
-  chapters/version.md\
-  chapters/authors.md\
-  chapters/preface/create.md\
-  chapters/preface/notation.md\
-  chapters/class/organization-516.md\
-  chapters/class/plagiarism.md\
-  chapters/cloud/gregor.md\
-  chapters/class/e516-engineering-cloud-computing.md\
-  chapters/class/policies.md\
-  chapters/class/e516-summary.md\
-  chapters/class/volumes.md\
-  chapters/class/e516-definition.md\
-  chapters/cloud/datacenter.md\
-  chapters/SECTION-DEVTOOLS.md\
-  chapters/linux/refcards.md\
-  chapters/cloud/virtualbox.md\
-  chapters/cloud/vagrant.md\
-  chapters/git/github.md\
-  chapters/linux/linux.md\
-  chapters/linux/ssh.md\
-  chapters/linux/ssh-futuresystems.md\
-  chapters/linux/ssh-excerise.md\
-	chapters/prg/SECTION-PYTHON.md\
-  chapters/prg/python-intro.md\
-  chapters/prg/python-install.md\
-  chapters/prg/python-interactive.md\
-  chapters/prg/python-editor.md\
-  chapters/prg/SECTION-PYTHON-LANG.md\
-  chapters/prg/python.md\
-  chapters/prg/python-libraries.md\
-  chapters/prg/python-data.md\
-  chapters/prg/python-matplotlib.md\
-  chapters/prg/python-cmd5.md\
-  chapters/SECTION-REFERENCES.md
+KUBERNETES=\
+ chapters/container/index.md\
+ chapters/container/container.md\
+ chapters/container/docker-fs.md\
+ chapters/container/docker-hadoop-cluster.md\
+ chapters/container/docker-hadoop.md\
+ chapters/container/docker-hadoop3.md\
+ chapters/container/docker-intro.md\
+ chapters/container/docker-local.md\
+ chapters/container/docker-pagerank-example-instruction.md\
+ chapters/container/docker-rest.md\
+ chapters/container/docker-spark.md\
+ chapters/container/docker-swarm.md\
+ chapters/container/exercise.md\
+ chapters/container/glossary.md\
+ chapters/container/kubernetes-fs.md\
+ chapters/container/kubernetes-intro.md\
+ chapters/container/qemu.md\
 
 
 DRAFT=\
+  $(KUBERNETES)\
   chapters/iaas/services.md\
   chapters/iaas/aws/aws.md\
   chapters/iaas/aws/signup.md\
   chapters/iaas/azure/azure.md\
   chapters/iaas/watson/signup.md\
+  chapters/iaas/gcloud/gcloud.md\
 
 
 CHAPTER_CLASS=\
@@ -91,6 +77,54 @@ CHAPTER_CLASS=\
 CHAPTER_SERVICES=\
   chapters/doc/piazza.md\
  chapters/preface/git.md
+
+all: prepare epub
+	echo done
+
+sectionindent:
+	../bin/authors.py > dest/chapters/authors.md
+	../bin/header.py dest/chapters/git/github.md 2
+	../bin/header.py dest/chapters/linux/linux.md 2
+	../bin/header.py dest/chapters/prg/python-install.md 1
+	../bin/header.py dest/chapters/prg/python.md 2
+	../bin/header.py dest/chapters/prg/python-cmd.md 3
+	../bin/header.py dest/chapters/cloud/vagrant.md 2
+	../bin/header.py dest/chapters/prg/python-libraries.md 2
+	../bin/header.py dest/chapters/prg/python-data.md 1
+	../bin/header.py dest/chapters/cloud/virtualbox.md 2
+	../bin/header.py dest/chapters/class/organization-516.md 2
+	../bin/header.py dest/chapters/class/policies.md 2
+	../bin/header.py dest/chapters/preface/create.md 2
+	../bin/header.py dest/chapters/linux/ssh.md 2
+	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
+	../bin/header.py dest/chapters/linux/refcards.md 2
+	../bin/header.py dest/chapters/iaas/aws/aws.md 2
+	../bin/header.py dest/chapters/iaas/aws/signup.md 2
+	../bin/header.py dest/chapters/iaas/azure/azure.md 2
+	../bin/header.py dest/chapters/iaas/watson/signup.md 2
+	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
+	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
+	../bin/header.py dest/chapters/faq.md 2
+
+sectionheaders:
+	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
+	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
+	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "References" > dest/chapters/SECTION-REFERENCES.md
+	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
+	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
+	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      
+	../bin/section.py 1 "Docker" > dest/chapters/SECTION-docker.md
+	../bin/section.py 1 "Docker Swarm" > dest/chapters/SECTION-docker-swarm.md  
+	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-kubernetes.md
+	../bin/section.py 1 "Hadoop" > dest/chapters/SECTION-hadoop.md
+	../bin/section.py 1 "Yarn" > dest/chapters/SECTION-yarn.md  
+	../bin/section.py 1 "Spark" > dest/chapters/SECTION-spark.md        
+	../bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
+	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
+	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
+	../bin/section.py 2 "Language" > dest/chapters/prg/SECTION-PYTHON-LANG.md
+	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 
 ######################################################################
 # END BOOK CLASS
@@ -117,67 +151,34 @@ FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
-RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson"
+RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud"
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
-all: prepare epub
-	echo done
+
 
 draft: prepare epubdraft
 	echo done
 
 
-prepare: refernces todo
+destination:
+	mkdir -p dest
 	$(COPY) metadata.txt dest
 	$(COPY) -r cover dest
 	$(COPY) -r ../template dest
 	$(COPY) -r ../template/fonts dest
 	$(COPY) -r ../chapters dest	
+
+prepare: destination refernces todo
 	$(MARKUPALL)
 	../bin/date.py > dest/chapters/version.md
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
 	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
-	../bin/authors.py > dest/chapters/authors.md
-	../bin/header.py dest/chapters/git/github.md 2
-	../bin/header.py dest/chapters/linux/linux.md 2
-	../bin/header.py dest/chapters/prg/python-install.md 1
-	../bin/header.py dest/chapters/prg/python.md 2
-	../bin/header.py dest/chapters/cloud/vagrant.md 2
-	../bin/header.py dest/chapters/prg/python-libraries.md 2
-	../bin/header.py dest/chapters/prg/python-data.md 1
-	../bin/header.py dest/chapters/cloud/virtualbox.md 2
-	../bin/header.py dest/chapters/class/organization-516.md 2
-	../bin/header.py dest/chapters/class/policies.md 2
-	../bin/header.py dest/chapters/preface/create.md 2
-	../bin/header.py dest/chapters/linux/ssh.md 2
-	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
-	../bin/header.py dest/chapters/linux/refcards.md 2
-	../bin/header.py dest/chapters/iaas/aws/aws.md 2
-	../bin/header.py dest/chapters/iaas/aws/signup.md 2
-	../bin/header.py dest/chapters/iaas/azure/azure.md 2
-	../bin/header.py dest/chapters/iaas/watson/signup.md 2
-	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
-	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
-	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
-	../bin/section.py 1 "References" > dest/chapters/SECTION-REFERENCES.md
-	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
-	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
-	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      
-	../bin/section.py 1 "Docker" > dest/chapters/SECTION-docker.md
-	../bin/section.py 1 "Docker Swarm" > dest/chapters/SECTION-docker-swarm.md  
-	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-kubernetes.md
-	../bin/section.py 1 "Hadoop" > dest/chapters/SECTION-hadoop.md
-	../bin/section.py 1 "Yarn" > dest/chapters/SECTION-yarn.md  
-	../bin/section.py 1 "Spark" > dest/chapters/SECTION-spark.md        
-	../bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
-	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
-	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
-	../bin/section.py 2 "Language" > dest/chapters/prg/SECTION-PYTHON-LANG.md
-	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
+	make -f Makefile sectionindent
+	make -f Makefile sectionheaders
 
 
-epub: 
+epub: prepare
 ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(INDEX) > all.md
 endif
@@ -186,7 +187,7 @@ ifeq ($(OS), linux)
 endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
-epubdraft: 
+epubdraft: prepare
 ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(DRAFT) > all.md
 endif
