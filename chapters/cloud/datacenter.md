@@ -25,7 +25,7 @@ significant amount of data will be in such centers.
 
 ### How much data?
 
-One of the issue we have is to actually comprehending how much data is
+One of the issues we have is to actually comprehending how much data is
 actually created. As humans the total sum created over a year is hard
 to imagine and put into a perspective that can easily be understood.
 In order to visualize the data produced we find often Graphics about
@@ -34,7 +34,7 @@ samples of data created as spart of popular cloud services or the
 internet in general.
 
 One such popular depiction is "Data Never Sleeps". It has been
-produced a number of timess over the years and is now at version 6.0
+produced a number of times over the years and is now at version 6.0
 released in 2017. If you identify a newer version, please let us know.
 It is worth while to study this image in detail and identify some of
 the data that you can relate to of service you use. It is also a
@@ -65,7 +65,7 @@ Source: <https://www.allaccess.com/merge/archive/28030/2018-update-what-happens-
 While reviewing the image from last year from the same author, we find
 not only increases, but also declines. Looking at facebook showcases a
 loss of 73000 logins per minute. This loss is substantial. We can see
-that facebooks services are replaced by other services that are mor
+that facebooks services are replaced by other services that are more
 popular with the younger generation who tend to pick up new services
 quickly.
 
@@ -109,7 +109,7 @@ introduction of the internet and offering services such as Web
 hosting large business oriented server rooms were created. The need
 for increased facilities was even accelerated by the development of
 virtualization and servers being rented to customers in shared
-facilities. As the need of web hosting still iss important but has
+facilities. As the need of web hosting still is important but has
 been taken over by cloud data centers, the terms internet data center,
 and cloud data center are no longer used to distinguish it. Instead we
 use today just the term *data center*. There may be still an important
@@ -135,9 +135,9 @@ research and public clouds.
 Due to the data and the server needs in th cloud and in research such
 data centers may look very different. Some focus on large scale
 computational resources, some on commodity hardware offered to the
-community. The size of them is also very different. WHile a
+community. The size of them is also very different. While a
 supercomputing center as part of a University was one of the largest
-such datacenters two decades ago, they dwarf the centers now deployed
+such data centers two decades ago, they dwarf the centers now deployed
 by industry to server the long tail of customers.
 
 In general a data center will have the following components.
@@ -184,7 +184,7 @@ Location. (<https://journal.uptimeinstitute.com/data-center-staffing/>)
 
 Another interesting observation is the root cause of incidents in a
 data center. Everyone has probably experienced some outage, so it is
-important to identify where they come form in order to prevent
+important to identify where they come from in order to prevent
 them. As we see in the Figure *Outage* not every error is caused by an
 operational issue. External, installation, design and manufacturer
 issues are together the largest issue for datacenter incidents.
@@ -204,7 +204,7 @@ Next we identify a number of characteristics when looking at different data cent
 **Variation in Size**: Data centers range in size from small "edge”
 facilities to megascale or hyperscale filling large ware houses.
 
-**Variation in cost per server**: Although many datacenters
+**Variation in cost per server**: Although many data centers
 standardize their components, specialized services my be afford not on
 a 1K server, but on a 50K server.
 
@@ -218,7 +218,7 @@ varies per region.  A motivation to reduce energy use and cost is also
 been trended by environmental awareness, not only by the operators,
 but by the community in which such centers operate.
 
-**Reliability:** Although through operation l efforts the datacenter
+**Reliability:** Although through operation l efforts the data center
   can be made more reliable, failure still can happen. Examples are
 
 * https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/
@@ -257,7 +257,7 @@ operations.
 
 Scientists world wide have identified a link between carbon emission
 and global warming. As the energy consumption of a data center is
-substantial, it is prudent to estimate the overall carbon emisssion.
+substantial, it is prudent to estimate the overall carbon emission.
 Schneider Electric (formerly APC) has provided a report on how to
 estimate the Carbon footprint of a data center.
 
@@ -354,7 +354,7 @@ Please use the calculator at:
 
 ### Power Usage Effectiveness
 
-One of the frequent measurements in data centers that iss used is the
+One of the frequent measurements in data centers that is used is the
 Power usage effectiveness or PUE in short. It is a measurement to
 identify how much energy is ued for the computing equipment versus
 other energy costs such as air conditioning.
@@ -409,9 +409,9 @@ This metric comes also with some drawbacks:
 * It does not take in consideration recycled energy to for example
   heat other buildings outside of the data center.
 
-Hence ist is prudent not to justs look at the PUE but also at other
+Hence it is prudent not to just look at the PUE but also at other
 metrics that lead to the overall cost and energy usage of the total
-ecosystem the data center iss located in.
+ecosystem the data center is located in.
 
 
 Already in 2006, Google reported its six data centers efficiency as
@@ -505,7 +505,7 @@ XSEDE within the XDMoD project are under way at this time but are not
 integrated.
 
 Futuregrid provided access to all virtual machine information, as well
-as usage across projects. An archived portal view iss available at:
+as usage across projects. An archived portal view is available at:
 
 * <http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html>
 
@@ -550,7 +550,7 @@ We like to emphasize several examples where such monitoring is helpful:
   network that cleverly mine github for such security lapses and will
   use your password if you indeed have stored them in it. In fact
   github's deletion of a file does not delete the history, so as a non
-  expert deleting the password form github is not sufficient. YOu will
+  expert deleting the password form github is not sufficient. You will
   have to either delete and rewrite the history, but definitely in this
   case you will need to reset the password. Monitoring the public cloud
   usage in the data center is important not only in your region but
