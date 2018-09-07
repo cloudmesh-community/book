@@ -22,7 +22,7 @@ Deliverables
 ------------
 
 Zip your source code, results and report in a file named
-username\_exercise5.zip. Submit this file to the Canvas submission page.
+username_exercise5.zip. Submit this file to the Canvas submission page.
 
 -   Complete source code
 

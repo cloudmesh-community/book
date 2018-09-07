@@ -1,5 +1,4 @@
-Class Git
-=========
+## Class Git
 
 This class will use git to manage all assignment submissions. We use the
 publicly available github.com. The class git is hosted at
@@ -15,12 +14,9 @@ Previous github locations include:
 
 * <https://github.com/cloudmesh-community>
 * <https://gitlab.com/cloudmesh_fall2016>
+* <https://github.com/bigdata-i523>
 
-Exercises
----------
+Previous book githubs include
 
-Github.1:
-
-:   Create a Github account and fill out the survey to communicate the
-    account name to us
+* <https://github.com/cloudmesh/book>
 

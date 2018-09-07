@@ -17,7 +17,7 @@ Project 1
 ---------
 
 You will need to complete the source code and write a report. Zip your
-work into a file with the name username\_project1.zip (replace
+work into a file with the name username_project1.zip (replace
 'username' with your Group Contact member's username) and submit the
 following:
 
@@ -37,28 +37,28 @@ following:
             computation
 
 Only one submission per group is required for Project 1. It is due time
-at 11:59 pm on Feburary 5.
+at 11:59 pm on February 5.
 
 -   Project 1 \<files/project1.pdf\>
 
--   Input Data \<files/project1\_input\_data.txt\>
+-   Input Data \<files/project1_input_data.txt\>
 
 Project 2
 ---------
 
 You are required to turn in the following items in a zip file
-(username\_HadoopPageRank.zip) in this assignment:
+(username_HadoopPageRank.zip) in this assignment:
 
 -   The source code of Hadoop PageRank you implemented.
 
 -   
 
-    Technical report (username\_HadoopPageRank\_report.docx) that contains:
+    Technical report (username_HadoopPageRank_report.docx) that contains:
 
     :   -   The description of the main steps and data flow in your
             program.
 
-        -   The output file (username\_HadoopPageRank\_output.txt) which
+        -   The output file (username_HadoopPageRank_output.txt) which
             contains the first 10 urls along with their ranks.
 
 -   Project 2 \<files/project2.pdf\>
@@ -71,11 +71,11 @@ Hadoop (Map only) MapReduce framework and write a report about the data
 flow and your observations of the program.
 
 You are required to turn in the following items in a zip file
-(username\_HadoopBlast.zip) in this assignment:
+(username_HadoopBlast.zip) in this assignment:
 
 -   The source code of Hadoop Blast you implemented.
 
--   Technical report (username \_HadoopBlast\_report.docx) that answers
+-   Technical report (username _HadoopBlast_report.docx) that answers
     the following questions. - What is Hadoop Distributed Cache and how
     is it used in this program? - Write the two lines that put and get
     values from Distributed cache. Also include the method and class
@@ -89,13 +89,13 @@ You are required to turn in the following items in a zip file
     the input files are larger than the default HDFS block size? Briefly
     explain why. \[Hint: you can test what will happen by concatenating
     the same input file multiple times to create a larger input file in
-    the resources/blast\_input folder\] - If you wanted to extend this
+    the resources/blast_input folder\] - If you wanted to extend this
     program such that all output files will be concatenated into a
     single file, what key and value pairs would you need to emit from
     the map task? Also, how would you use these in the reduce that you
     would need to add?
 
--   The 4 output FASTA files -- celllines\_1.fa to celllines\_4.fa.
+-   The 4 output FASTA files -- celllines_1.fa to celllines_4.fa.
 
 Points will be reduced (maximum 0.5 points) if the filename or directory
 structure are different from instructed above.
@@ -112,7 +112,7 @@ follows:
 Project 4
 ---------
 
-Zip your source code and report in a file named username\_project4.zip
+Zip your source code and report in a file named username_project4.zip
 
 The point total for this project is 1.5, where the distribution is as
 follows:
@@ -122,12 +122,12 @@ follows:
 -   Completeness of written report (0.5 points)
 
 Before you start this project, you need to complete the Project4
-Prerequisite\<files/project4\_pre.pdf\> first. The submission folder for
+Prerequisite\<files/project4_pre.pdf\> first. The submission folder for
 it will be published before the lab session.
 
 -   Project 4 \<files/project4.pdf\>
 
--   Project 4 Prerequisite \<files/project4\_pre.pdf\>
+-   Project 4 Prerequisite \<files/project4_pre.pdf\>
 
 Project 5
 ---------
@@ -135,7 +135,7 @@ Project 5
 Write an HBase FreqIndexBuilder program to build an inverted index table
 which has the unique term's occurrences in all documents from the
 clueWeb09 dataset. Zip your source code, results and report in a file
-named username\_project5.zip. Submit this file to the Canvas submission
+named username_project5.zip. Submit this file to the Canvas submission
 page.
 
 -   Complete source code
@@ -184,7 +184,7 @@ map-collective applications. Harp is similar to MapReduce in terms of
 programming with the exception that it provides collective communication
 support across map tasks.
 
-Zip your source code and output as username\_harp-pagerank.zip. Please
+Zip your source code and output as username_harp-pagerank.zip. Please
 submit this file to the Assignments page.
 
 The point total for this project is 6, where the distribution is as
@@ -210,7 +210,7 @@ Do not copy and paste commands from pdf files. Please type them
 Project 8
 ---------
 
-Zip your source code and report as username\_mbkmeans.zip.
+Zip your source code and report as username_mbkmeans.zip.
 
 The point total for this project is 6, where the distribution is as
 follows: - Completeness of your code (5 points) - In the report,

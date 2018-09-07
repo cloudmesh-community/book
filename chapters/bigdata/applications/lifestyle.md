@@ -1,5 +1,4 @@
-e-Commerce and LifeStyle
-------------------------
+# e-Commerce and LifeStyle
 
 Recommender systems operate under the hood of such widely recognized
 sites as Amazon, eBay, Monster and Netflix where everything is a
@@ -36,7 +35,7 @@ clustering results and extension to 28 clusters given. General issues in
 clustering are discussed including local optima, the use of annealing to
 avoid this and value of heuristic algorithms.
 
-### Recommender Systems
+## Recommender Systems
 
 We introduce Recommender systems as an optimization technology used in a
 variety of applications and contexts online. They operate in the
@@ -57,7 +56,7 @@ become such a dominant driver of the world's economy.
 [:scroll: Lifestyle Recommender
 (45)](https://drive.google.com/open?id=0B6wqDMIyK2P7YkIwczVfQlJqVG8)
 
-#### Recommender Systems as an Optimization Problem
+### Recommender Systems as an Optimization Problem
 
 We define a set of general recommender systems as matching of items to
 people or perhaps collections of items to collections of people where
@@ -67,11 +66,11 @@ web pages etc. We present this as "yet another optimization problem".
 [:clapper: Recommender Systems I
 (8:06)](https://www.youtube.com/watch?v=kO023BIW2dw)
 
-#### Recommender Systems Introduction
+### Recommender Systems Introduction
 
 We give a general discussion of recommender systems and point out that
 they are particularly valuable in long tail of tems (to be recommended)
-that aren't commonly known. We pose them as a rating system and relate
+that arenot commonly known. We pose them as a rating system and relate
 them to information retrieval rating systems. We can contrast
 recommender systems based on user profile and context; the most familiar
 collaborative filtering of others ranking; item properties; knowledge
@@ -80,7 +79,7 @@ and hybrid cases mixing some or all of these.
 [:clapper: Recommender Systems Introduction
 (12:56)](https://youtu.be/KbjBKrzFYKg)
 
-#### Kaggle Competitions
+### Kaggle Competitions
 
 We look at Kaggle competitions with examples from web site. In
 particular we discuss an Irvine class project involving ranking jokes.
@@ -89,7 +88,7 @@ particular we discuss an Irvine class project involving ranking jokes.
 Please not that we do not accept any projects using kaggle data for this
 classs.
 
-#### Examples of Recommender Systems
+### Examples of Recommender Systems
 
 We go through a list of 9 recommender systems from the same Irvine
 class.
@@ -97,7 +96,7 @@ class.
 [:clapper: Examples of Recommender Systems
 (1:00)](https://youtu.be/1Eh1epQj-EQ)
 
-#### Netflix on Recommender Systems
+### Netflix on Recommender Systems
 
 We summarize some interesting points from a tutorial from Netflix for
 whom *everything is a recommendation*. Rankings are given in multiple
@@ -124,7 +123,7 @@ household rather than optimizing for individuals in household.
 
 [:clapper: Consumer Data Science (13:04)](https://youtu.be/B8cjaOQ57LI)
 
-#### Other Examples of Recommender Systems
+### Other Examples of Recommender Systems
 
 We continue the discussion of recommender systems and their use in
 e-commerce. More examples are given from Google News, Retail stores and
@@ -148,7 +147,7 @@ what they are with brief examples.
 [:clapper: Recap and Examples of Recommender Systems
 (5:48)](https://www.youtube.com/watch?v=PwS8UE4TDS4)
 
-##### Examples of Recommender Systems
+#### Examples of Recommender Systems
 
 We give 2 examples in more detail: namely Google News and Markdown in
 Retail.
@@ -156,7 +155,7 @@ Retail.
 [:clapper: Examples of Recommender Systems
 (8:34)](https://youtu.be/og07mH9fU0M)
 
-##### Recommender Systems in Yahoo Use Case Example
+#### Recommender Systems in Yahoo Use Case Example
 
 We describe in greatest detail the methods used to optimize Yahoo web
 sites. There are two lessons discussing general approach and a third
@@ -180,7 +179,7 @@ discuss the approach that involves both batch (offline) and on-line
 [:clapper: Case Study of Recommender systems
 (3:21)](https://youtu.be/HrRJWEF8EfU)
 
-##### User-based nearest-neighbor collaborative filtering
+#### User-based nearest-neighbor collaborative filtering
 
 Collaborative filtering is a core approach to recommender systems. There
 is user-based and item-based collaborative filtering and here we discuss
@@ -194,7 +193,7 @@ correlation, used to statistically quantify correlations between users.
 [:clapper: User-based nearest-neighbor collaborative filtering II
 (7:29)](https://youtu.be/U7-qeX2ItPk)
 
-##### Vector Space Formulation of Recommender Systems
+#### Vector Space Formulation of Recommender Systems
 
 We go through recommender systems thinking of them as formulated in a
 funny vector space. This suggests using clustering to make
@@ -203,11 +202,11 @@ recommendations.
 [:clapper: Vector Space Formulation of Recommender Systems new
 (9:06)](https://youtu.be/IlQUZOXlaSU)
 
-#### Resources
+### Resources
 
 -   <http://pages.cs.wisc.edu/~beechung/icml11-tutorial/>
 
-### Item-based Collaborative Filtering and its Technologies
+## Item-based Collaborative Filtering and its Technologies
 
 We move on to item-based collaborative filtering where items are viewed
 as points in a space of users. The Cosine Similarity is introduced, the
@@ -218,7 +217,7 @@ in high dimensions are discussed.
 [:scroll: Lifestyle Filtering
 (18)](https://drive.google.com/open?id=0B6wqDMIyK2P7UExxVFc5YlpOZ28)
 
-#### Item-based Collaborative Filtering
+### Item-based Collaborative Filtering
 
 We covered user-based collaborative filtering in the previous unit. Here
 we start by discussing memory-based real time and model based offline
@@ -234,7 +233,7 @@ issues with new items that do not have a significant number of rankings.
 [:clapper: k Nearest Neighbors and High Dimensional Spaces
 (7:16)](https://youtu.be/SM8EJdAa4mw)
 
-#### k-Nearest Neighbors and High Dimensional Spaces
+### k-Nearest Neighbors and High Dimensional Spaces
 
 We define the k Nearest Neighbor algorithms and present the Python
 software but do not use it. We give examples from Wikipedia and describe
@@ -245,10 +244,10 @@ there would be faster solution methods.
 [:clapper: k Nearest Neighbors and High Dimensional Spaces
 (10:03)](https://youtu.be/2NqUsDGQDy8)
 
-#### Resources
+### Resources
 
 \TODO{These resources have not all been checked to see if they still
-  exist this is curretnly in progress}
+  exist this is currently in progress}
 -   <http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial>
 -   <http://www.ifi.uzh.ch/ce/teaching/spring2012/16-Recommender-Systems_Slides.pdf>
 -   <https://www.kaggle.com/>

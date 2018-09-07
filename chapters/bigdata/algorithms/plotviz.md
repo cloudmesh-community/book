@@ -27,10 +27,10 @@ download and software dependency of Plotviz.
 
 Files:
 
-- <{gitcode}/plotviz/fungi-lsu-3-15-to-3-26-zeroidx.pviz>
-- <{gitcode}/plotviz/datingrating-originallabels.pviz>
-- <{gitcode}/plotviz/clusterFinal-M30-C28.pviz>
-- <{gitcode}/plotviz/clusterfinal-m3-c3dating-reclustered.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/fungi-lsu-3-15-to-3-26-zeroidx.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/datingrating-originallabels.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/clusterFinal-M30-C28.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/clusterfinal-m3-c3dating-reclustered.pviz>
 
 #### Motivation and Introduction to use
 

@@ -1,5 +1,4 @@
-Big Data Use Cases Survey
--------------------------
+# Big Data Use Cases Survey
 
 This section covers 51 values of X and an overall study of Big data that
 emerged from a NIST (National Institute for Standards and Technology)
@@ -12,7 +11,7 @@ process are briefly discussed with a classification of the source of
 parallelism and the high and low level computational structure. We
 describe the key features of this classification.
 
-### NIST Big Data Public Working Group
+## NIST Big Data Public Working Group
 
 This unit covers the NIST Big Data Public Working Group (NBD-PWG)
 Process and summarizes the work of five subgroups: Definitions and
@@ -23,7 +22,7 @@ Use Case Subgroup. The work of latter is continued in next two units.
 [:scroll: Overview
 (45)](https://drive.google.com/open?id=0B8936_ytjfjmODIxNGttU1pveWc)
 
-#### Introduction to NIST Big Data Public Working
+### Introduction to NIST Big Data Public Working
 
 The focus of the (NBD-PWG) is to form a community of interest from
 industry, academia, and government, with the goal of developing a
@@ -38,7 +37,7 @@ flow of data between the stakeholders in a cohesive and secure manner.
 [:clapper: Introduction
 (13:02)](https://www.youtube.com/watch?v=3oKdmuH0N3k)
 
-#### Definitions and Taxonomies Subgroup
+### Definitions and Taxonomies Subgroup
 
 The focus is to gain a better understanding of the principles of Big
 Data. It is important to develop a consensus-based common language and
@@ -59,7 +58,7 @@ terms are discussed.
 [:clapper: Taxonomies
 (7:42)](https://www.youtube.com/watch?v=7eOtuBV8udo)
 
-#### Reference Architecture Subgroup
+### Reference Architecture Subgroup
 
 The focus is to form a community of interest from industry, academia,
 and government, with the goal of developing a consensus-based approach
@@ -75,7 +74,7 @@ components and linkage as well as several exemplars.
 [:clapper: Architecture
 (10:05)](https://www.youtube.com/watch?v=h4ylW0vztDw)
 
-#### Security and Privacy Subgroup
+### Security and Privacy Subgroup
 
 The focus is to form a community of interest from industry, academia,
 and government, with the goal of developing a consensus secure reference
@@ -91,7 +90,7 @@ Sharing, Cyber-security, Government, Military and Education.
 
 [:clapper: Security (9:51)](https://www.youtube.com/watch?v=dHrHk-GvruY)
 
-#### Technology Roadmap Subgroup
+### Technology Roadmap Subgroup
 
 The focus is to form a community of interest from industry, academia,
 and government, with the goal of developing a consensus vision with
@@ -110,7 +109,7 @@ prevent adoption of Big Data; and document vision and recommendations.
 [:clapper: Technology
 (4:14)](https://www.youtube.com/watch?v=va0UCR5gMTA)
 
-#### Interfaces Subgroup
+### Interfaces Subgroup
 
 This subgroup is working on the following document: *NIST Big Data
 Interoperability Framework: Volume 8, Reference Architecture Interface*.
@@ -127,8 +126,8 @@ Reference Architecture (NBDRA) which is introduced in the NBDIF: Volume
 
 This presentation was given at the *2nd NIST Big Data Public Working
 Group (NBD-PWG) Workshop* in Washington DC in June 2017. It explains our
-thoughts on deriving automatically a refernce architecture form the
-Refernce Architecture Interface specifications directly from the
+thoughts on deriving automatically a reference architecture form the
+Reference Architecture Interface specifications directly from the
 document.
 
 The workshop Web page is located at
@@ -156,7 +155,7 @@ forward to a particular time
 
 You are welcome to view other presentations if you are interested.
 
-#### Requirements and Use Case Subgroup
+### Requirements and Use Case Subgroup
 
 The focus is to form a community of interest from industry, academia,
 and government, with the goal of developing a consensus list of Big Data
@@ -175,7 +174,7 @@ systemization are discussed.
 [:clapper: Requirements
 (27:28)](https://www.youtube.com/watch?v=f_vxmx3CmMU)
 
-### 51 Big Data Use Cases
+## 51 Big Data Use Cases
 
 This units consists of one or more slides for each of the 51 use cases -
 typically additional (more than one) slides are associated with
@@ -187,7 +186,7 @@ discussion of topics is given in following unit.
 [:scroll: 51 Use Cases
 (100)](https://drive.google.com/open?id=0B8936_ytjfjmYUlKckhLSUQxMUk)
 
-#### Government Use Cases
+### Government Use Cases
 
 This covers Census 2010 and 2000 - Title 13 Big Data; National Archives
 and Records Administration Accession NARA, Search, Retrieve,
@@ -198,7 +197,7 @@ and Non-Traditional Data in Statistical Survey Response Improvement
 [:clapper: Government Use Cases
 (17:43)](https://www.youtube.com/watch?v=e0ks_BuYUVM)
 
-#### Commercial Use Cases
+### Commercial Use Cases
 
 This covers Cloud Eco-System, for Financial Industries (Banking,
 Securities & Investments, Insurance) transacting business within the
@@ -211,7 +210,7 @@ Simulation driven Materials Genomics.
 [:clapper: Commercial Use Cases
 (17:43)](https://www.youtube.com/watch?v=URy9u8_34ww)
 
-#### Defense Use Cases
+### Defense Use Cases
 
 This covers Large Scale Geospatial Analysis and Visualization; Object
 identification and tracking from Wide Area Large Format Imagery (WALF)
@@ -221,7 +220,7 @@ Intelligence Data Processing and Analysis.
 [:clapper: Defense Use Cases
 (15:43)](https://www.youtube.com/watch?v=FXFfE8zcco8)
 
-#### Healthcare and Life Science Use Cases
+### Healthcare and Life Science Use Cases
 
 This covers Electronic Medical Record (EMR) Data; Pathology
 Imaging/digital pathology; Computational Bioimaging; Genomic
@@ -234,7 +233,7 @@ Disaster Management and Biodiversity and LifeWatch.
 [:clapper: Healthcare and Life Science Use Cases
 (30:11)](https://www.youtube.com/watch?v=uGeYrXENlpU)
 
-#### Deep Learning and Social Networks Use Cases
+### Deep Learning and Social Networks Use Cases
 
 This covers Large-scale Deep Learning; Organizing large-scale,
 unstructured collections of consumer photos; Truthy: Information
@@ -247,7 +246,7 @@ standards.
 [:clapper: Deep Learning and Social Networks Use Cases
 (14:19)](https://www.youtube.com/watch?v=bdWyhT8bvE4)
 
-#### Research Ecosystem Use Cases
+### Research Ecosystem Use Cases
 
 DataNet Federation Consortium DFC; The 'Discinnet process', metadata
 -big data global experiment; Semantic Graph-search on Scientific
@@ -256,7 +255,7 @@ Chemical and Text-based Data and Light source beamlines.
 [:clapper: Research Ecosystem Use Cases
 (9:09)](https://www.youtube.com/watch?v=jjyv4RmMIUU)
 
-#### Astronomy and Physics Use Cases
+### Astronomy and Physics Use Cases
 
 This covers Catalina Real-Time Transient Survey (CRTS): a digital,
 panoramic, synoptic sky survey; DOE Extreme Data from Cosmological Sky
@@ -267,7 +266,7 @@ particle and Belle II High Energy Physics Experiment.
 [:clapper: Astronomy and Physics Use Cases
 (17:33)](https://www.youtube.com/watch?v=MPEe8yDVwAo)
 
-#### Environment, Earth and Polar Science Use Cases
+### Environment, Earth and Polar Science Use Cases
 
 EISCAT 3D incoherent scatter radar system; ENVRI, Common Operations of
 Environmental Research Infrastructure; Radar Data Analysis for CReSIS
@@ -282,14 +281,14 @@ Networks.
 [:clapper: Environment, Earth and Polar Science Use Cases
 (25:29)](https://www.youtube.com/watch?v=YJGk-uvaUCg)
 
-#### Energy Use Case
+### Energy Use Case
 
 This covers Consumption forecasting in Smart Grids.
 
 [:clapper: Energy Use Case
 (4:01)](https://www.youtube.com/watch?v=5y_O-a8_Fbg)
 
-### Features of 51 Big Data Use Cases
+## Features of 51 Big Data Use Cases
 
 This unit discusses the categories used to classify the 51 use-cases.
 These categories include concepts used for parallelism and low and high
@@ -300,7 +299,7 @@ categories.
 [:scroll: Features
 (43)](https://drive.google.com/open?id=0B8936_ytjfjmREJTMHhjMktXRHc)
 
-#### Summary of Use Case Classification
+### Summary of Use Case Classification
 
 This discusses concepts used for parallelism and low and high level
 computational structure. Parallelism can be over People (users or
@@ -323,7 +322,7 @@ data fusion or Knowledge Management; Crowd Sourcing.
 [:clapper: Summary of Use Case Classification
 (23:39)](https://www.youtube.com/watch?v=X0vEmbn1Ld8)
 
-#### Database(SQL) Use Case Classification
+### Database(SQL) Use Case Classification
 
 This discusses classic (SQL) datbase approach to data handling with
 Search&Query and Index features. Comparisons are made to NoSQL
@@ -332,7 +331,7 @@ approaches.
 [:clapper: Database (SQL) Use Case Classification
 (11:13)](https://www.youtube.com/watch?v=jIVdQID11Q4)
 
-#### NoSQL Use Case Classification
+### NoSQL Use Case Classification
 
 This discusses NoSQL (compared in previous lesson) with HDFS, Hadoop and
 Hbase. The Apache Big data stack is introduced and further details of
@@ -341,7 +340,7 @@ comparison with SQL.
 [:clapper: NoSQL Use Case Classification
 (11:20)](https://www.youtube.com/watch?v=uGL8cFPrhoE)
 
-#### Other Use Case Classifications
+### Other Use Case Classifications
 
 This discusses a subset of use case features: GIS, Sensors. the support
 of data analysis and fusion by streaming data between filters.
@@ -365,7 +364,8 @@ Maximization, graphs and Collaborative Filtering.
 
 \TODO{These resources have not all been checked to see if they still
   exist this is curretnly in progress}
-#### Resources
+
+### Resources
 
 -   [NIST Big Data Public Working Group (NBD-PWG)
     Process](https://www.nist.gov/el/cyber-physical-systems/big-data-pwg)

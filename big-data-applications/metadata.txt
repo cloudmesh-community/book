@@ -1,0 +1,13 @@
+---
+title:
+- type: main
+  text: Big Data Applications
+creator:
+- role: editor
+  text: Editor Geoffrey C. Fox, Gregor von Laszewski, Fugang Wang
+description: Big Data Applications
+rights: (c) Geoffrey C. Fox, Gregor von Laszewski, 2018
+language: en-US
+stylesheet: template/epub.css
+cover-image: cover/cover.jpg
+...

@@ -14,7 +14,7 @@ fashion via scripts. Hence, although the Web interface called OpenStack
 Horizon is initially attractive, we should make sure to move on to the
 commandline interfaces. Furthermore, it is often difficult to resolve
 technical issues as the command line tools generate full debugging
-messages in case of issues and copy and past into helo windows is much
+messages in case of issues and copy and past into help windows is much
 easier and efficient than copy and past incomplete screenshots.
 
 Outages
@@ -265,7 +265,7 @@ If your new VM instance is up and running, it needs an external ip
 address which is also called floating IP address. A floating IP allows
 you to get access to this VM from the internet. Note that chameleon has
 a limited number of floating IP addresses and it is best to return them
-if not in use. If chameleon runs out of floating IP adresses, please
+if not in use. If chameleon runs out of floating IP addresses, please
 submit a ticket to chameleon. However in many cases the VM may only need
 a an internal IP address as a default. In case you need to access
 others, you could even tunnel all connections through a single floating

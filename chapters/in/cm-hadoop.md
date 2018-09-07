@@ -34,8 +34,8 @@ CLOUD] [-u NAME] [-i IMAGE] [-f FLAVOR] [-k KEY] [-s NAME]
 [-AI]
 
 Options:
--A --no-activate Don't activate this cluster
--I --no-floating-ip Don't assign floating IPs
+-A --no-activate Donot activate this cluster
+-I --no-floating-ip Donot assign floating IPs
 -n NAME --name=NAME Name of the cluster
 -c COUNT --count=COUNT Number of nodes in the cluster 
 -C NAME --cloud=NAME Name of the cloud 

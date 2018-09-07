@@ -74,13 +74,13 @@ coordinates: Install the corresponding polygon shape.
 name is an arbitrary string and shape is a (compound) Shape object:
 Install the corresponding compound shape.
 
-Add a turtle shape to TurtleScreen's shapelist. Only thusly registered
+Add a turtle shape to TurtleScreen's shapelist. Only the registered
 shapes can be used by issuing the command shape(shapename).
 
 Links
 -----
 
--   http://openbookproject.net/thinkcs/python/english3e/hello\_little\_turtles.html
+-   http://openbookproject.net/thinkcs/python/english3e/hello_little_turtles.html
 
 -   <https://docs.python.org/3/library/turtle.html>
 

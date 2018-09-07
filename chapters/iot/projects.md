@@ -7,7 +7,7 @@ Term project suggestion combining IoT and Big Data:
 
 1.  Recognizing street sign in a car robot with a camera
 
-2.  Regognizing street lines in a car robot with camera
+2.  Recognizing street lines in a car robot with camera
 
 3.  Driving a Robot car swarm without collisions
 

@@ -1,5 +1,4 @@
-Technology for Big Data Applications and Analytics
---------------------------------------------------
+# Technology for Big Data Applications and Analytics
 
 We use the K-means Python code in SciPy package to show real code for
 clustering. After a simple example we generate 4 clusters of distinct
@@ -21,7 +20,7 @@ formulations of the basic matrix equations to finding leading
 eigenvector. The unit is concluded by a calculation of PageRank for
 general web pages by extracting the secret from Google.
 
-### Technologypi: K-means
+## Technologypi: K-means
 
 We use the K-means Python code in SciPy package to show real code for
 clustering. After a simple example we generate 4 clusters of distinct
@@ -33,12 +32,12 @@ choosing best answer.
 
 Files:
 
--   <{gitcode}/kmeans/xmean.py>
--   <{gitcode}/kmeans/sample.csv>
--   <{gitcode}/kmeans/parallel-kmeans.py>
--   <{gitcode}/kmeans/kmeans-extra.py>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/xmean.py>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/sample.csv>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/parallel-kmeans.py>
+-   <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/kmeans-extra.py>
 
-#### K-means in Python
+### K-means in Python
 
 We use the K-means Python code in SciPy package to show real code for
 clustering and applies it a set of 85 two dimensional vectors --
@@ -49,7 +48,7 @@ varying sizes and centered at corners of a square in two dimensions. We
 formally give the K means algorithm better than before and make
 definition consistent with code in SciPy.
 
-#### Analysis of 4 Artificial Clusters
+### Analysis of 4 Artificial Clusters
 
 We present clustering results on the artificial set of 1000 2D points
 described in previous lesson for 3 choices of cluster sizes *small*
@@ -65,14 +64,14 @@ clusters and use this to discuss functions with multiple minima and a
 hill between them. The lesson has both discussion of already produced
 results in slides and interactive use of Python for new runs.
 
-### Technology: MapReduce
+## Technology: MapReduce
 
 We describe the basic architecture of MapReduce and a homely example.
 The discussion of advanced topics includes extension to Iterative
 MapReduce from Indiana University called Twister and a generalized Map
 Collective model. Some measurements of parallel performance are given.
 
-#### Introduction
+### Introduction
 
 This introduction uses an analogy to making fruit punch by slicing and
 blending fruit to illustrate MapReduce. The formal structure of
@@ -80,14 +79,14 @@ MapReduce and Iterative MapReduce is presented with parallel data
 flowing from disks through multiple Map and Reduce phases to be
 inspected by the user.
 
-#### Advanced Topics
+### Advanced Topics
 
 This defines 4 types of MapReduce and the Map Collective model of Qiu.
 The Iterative MapReduce model from Indiana University called Twister is
 described and a few performance measurements on Microsoft Azure are
 presented.
 
-### Technology: Kmeans and MapReduce Parallelism
+## Technology: Kmeans and MapReduce Parallelism
 
 We modify the SciPy K-means code to support a MapReduce execution style
 and runs it in this short unit. This illustrates the key ideas of
@@ -97,9 +96,9 @@ this simple 2 map version can be generalized to scalable parallelism.
 
 Files:
 
-- <{gitcode}/kmeans/parallel-kmeans.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/parallel-kmeans.py>
 
-#### MapReduce Kmeans in Python
+### MapReduce Kmeans in Python
 
 We modify the SciPy K-means code to support a MapReduce execution style
 and runs it in this short unit. This illustrates the key ideas of
@@ -107,7 +106,7 @@ mappers and reducers. With appropriate runtime this code would run in
 parallel but here the *parallel* maps run sequentially. We stress that
 this simple 2 map version can be generalized to scalable parallelism.
 
-### Technology: PageRank
+## Technology: PageRank
 
 We use Python to Calculate PageRank from Web Linkage Matrix showing
 several different formulations of the basic matrix equations to finding
@@ -116,15 +115,15 @@ for general web pages by extracting the secret from Google.
 
 Files:
 
-- <{gitcode}/page-rank/pagerank1.py>
-- <{gitcode}/page-rank/pagerank2.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/page-rank/pagerank1.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/page-rank/pagerank2.py>
 
-#### Calculate PageRank from Web Linkage Matrix
+### Calculate PageRank from Web Linkage Matrix
 
 We take two simple matrices for 6 and 8 web sites respectively to
 illustrate the calculation of PageRank.
 
-#### Calculate PageRank of a Real Page
+### Calculate PageRank of a Real Page
 
 This tiny lesson presents a Python code that finds the Page Rank that
 Google calculates for any page on the web.

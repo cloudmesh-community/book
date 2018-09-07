@@ -1,0 +1,345 @@
+
+\chapterimage{water.png} % Chapter heading image
+
+\chapter{Book Format}
+
+\FILENAME\
+
+This document is prepared using a special enhanced \LaTeX~book format to allow
+easy integration for section and index references, as well as
+citations and other straight forward enhancements that makes it easy
+for students to obtain a document with much of the Lecture material
+included. We provide some examples so that if you like to contribute
+you can do so easily and can use the correct way of doing so.
+
+
+\section{Paragraphs of Text}\index{\LaTeX!Book!Paragraphs of Text}
+
+\lipsum[1] % Dummy text
+
+%------------------------------------------------
+
+\section{Citation}\index{\LaTeX!Book!Citation}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,
+  title=Numbered List,fonttitle=\bfseries}
+This statement requires citation \cite{article_key}; 
+this one is more specific \cite[162]{book_key}.
+\end{tcblisting}
+
+%------------------------------------------------
+
+\section{Lists}\index{\LaTeX!Book!Lists}
+
+Lists are useful to present information in a concise and/or ordered way\footnote{Footnote example...}.
+
+\subsection{Numbered List}\index{\LaTeX!Book!Lists!Numbered List}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,
+  title=Numbered List,fonttitle=\bfseries}
+\begin{enumerate}
+\item The first item
+\item The second item
+\item The third item
+\end{enumerate}
+\end{tcblisting}
+
+\subsection{Bullet Points}\index{\LaTeX!Book!Lists!Bullet Points}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,
+  title=Bullet Points,fonttitle=\bfseries}
+\begin{itemize}
+\item The first item
+\item The second item
+\item The third item
+\end{itemize}
+\end{tcblisting}
+
+\subsection{Descriptions and Definitions}\index{\LaTeX!Book!Lists!Descriptions and Definitions}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,
+  title=Enumerations,fonttitle=\bfseries}
+\begin{description}
+\item[Name] Description
+\item[Word] Definition
+\item[Comment] Elaboration
+\end{description}
+\end{tcblisting}
+
+%-------------------------------------------------------------------------------
+%	CHAPTER 2
+%-------------------------------------------------------------------------------
+
+
+\section{Theorems}\index{\LaTeX!Book!Theorems}
+
+This is an example of theorems.
+
+\subsection{Several equations}\index{\LaTeX!Book!Theorems!Several Equations}
+This is a theorem consisting of several equations.
+
+\begin{lstlisting}
+\begin{theorem}[Name of the theorem]
+In $E=\mathbb{R}^n$ all norms are equivalent. It has the properties:
+\begin{align}
+& \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
+&  ||\sum_{i=1}^n\mathbf{x}_i||\leq \sum_{i=1}^n||\mathbf{x}_i||\quad\text{where $n$ is a finite integer}
+\end{align}
+\end{theorem}
+\end{lstlisting}
+
+\begin{theorem}[Name of the theorem]
+In $E=\mathbb{R}^n$ all norms are equivalent. It has the properties:
+\begin{align}
+& \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
+&  ||\sum_{i=1}^n\mathbf{x}_i||\leq \sum_{i=1}^n||\mathbf{x}_i||\quad\text{where $n$ is a finite integer}
+\end{align}
+\end{theorem}
+
+\subsection{Single Line}\index{\LaTeX!Book!Theorems!Single Line}
+This is a theorem consisting of just one line.
+
+\begin{verbatim}
+\begin{theorem}
+A set $\mathcal{D}(G)$ in dense in $L^2(G)$, $|\cdot|_0$. 
+\end{theorem}
+\end{verbatim}
+
+\begin{theorem}
+A set $\mathcal{D}(G)$ in dense in $L^2(G)$, $|\cdot|_0$. 
+\end{theorem}
+
+%------------------------------------------------
+
+\section{Definitions}\index{\LaTeX!Book!Definitions}
+
+This is an example of a definition. A definition could be mathematical or it could define a concept.
+
+\begin{definition}[Definition name]
+Given a vector space $E$, a norm on $E$ is an application, denoted $||\cdot||$, $E$ in $\mathbb{R}^+=[0,+\infty[$ such that:
+\begin{align}
+& ||\mathbf{x}||=0\ \Rightarrow\ \mathbf{x}=\mathbf{0}\\
+& ||\lambda \mathbf{x}||=|\lambda|\cdot ||\mathbf{x}||\\
+& ||\mathbf{x}+\mathbf{y}||\leq ||\mathbf{x}||+||\mathbf{y}||
+\end{align}
+\end{definition}
+
+%------------------------------------------------
+
+\section{Notations}\index{\LaTeX!Book!Notations}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,  title=Exercise,fonttitle=\bfseries}
+\begin{notation}
+Given an open subset $G$ of $\mathbb{R}^n$, the set of functions $\varphi$ are:
+\begin{enumerate}
+\item Bounded support $G$;
+\item Infinitely differentiable;
+\end{enumerate}
+a vector space is denoted by $\mathcal{D}(G)$. 
+\end{notation}
+\end{tcblisting}
+
+%------------------------------------------------
+
+\section{Remarks}\index{\LaTeX!Book!Remarks}
+
+This is an example of a remark.
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,  title=Exercise,fonttitle=\bfseries}
+\begin{remark}
+The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
+\end{remark}
+\end{tcblisting}
+
+%------------------------------------------------
+
+\section{Corollaries}\index{\LaTeX!Book!Corollaries}
+
+This is an example of a corollary.
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing
+    side text,  title=Exercise,fonttitle=\bfseries}
+\begin{corollary}[Corollary name]
+The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
+\end{corollary}
+\end{tcblisting}
+%------------------------------------------------
+
+\section{Propositions}\index{\LaTeX!Book!Propositions}
+
+These are examples of propositions.
+
+\subsection{Several equations}\index{\LaTeX!Book!Propositions!Several Equations}
+
+
+\begin{proposition}[Proposition name]
+It has the properties:
+\begin{align}
+& \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
+&  ||\sum_{i=1}^n\mathbf{x}_i||\leq \sum_{i=1}^n||\mathbf{x}_i||\quad\text{where $n$ is a finite integer}
+\end{align}
+\end{proposition}
+
+\subsection{Single Line}\index{\LaTeX!Book!Propositions!Single Line}
+
+\begin{proposition} 
+Let $f,g\in L^2(G)$; if $\forall \varphi\in\mathcal{D}(G)$, $(f,\varphi)_0=(g,\varphi)_0$ then $f = g$. 
+\end{proposition}
+
+%------------------------------------------------
+
+\section{Examples}\index{\LaTeX!Book!Examples}
+
+This is an example of examples.
+
+\subsection{Equation and Text}\index{\LaTeX!Book!Examples!Equation and Text}
+
+\begin{example}
+Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
+\begin{equation}
+f(x)=\left\{\begin{aligned} & \mathrm{e}^{|x|} & & \text{si $|x-x^0|\leq 1/2$}\\
+& 0 & & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
+\end{equation}
+The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\intoo{0}{5/2-\sqrt{2}}$.
+\end{example}
+
+\subsection{Paragraph of Text}\index{\LaTeX!Book!Examples!Paragraph of Text}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,  title=Example,fonttitle=\bfseries}
+\begin{example}[Example name]
+\lipsum[1]
+\end{example}
+\end{tcblisting}
+
+%------------------------------------------------
+
+\section{Exercises}\index{\LaTeX!Book!Exercises}
+
+This is an example of an exercise.
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,  title=Exercise,fonttitle=\bfseries}
+\begin{exercise}
+This is a good place to ask a question to test learning progress or further cement ideas into students' minds.
+\end{exercise}
+\end{tcblisting}
+
+%------------------------------------------------
+
+\section{Problems}\index{\LaTeX!Book!Problems}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,  title=Exercise,fonttitle=\bfseries}
+\begin{problem}
+What is the average airspeed velocity of an unladen swallow?
+\end{problem}
+\end{tcblisting}
+
+%------------------------------------------------
+
+\section{Vocabulary}\index{\LaTeX!Book!Vocabulary}
+
+Define a word to improve a students' vocabulary.
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,  title=Exercise,fonttitle=\bfseries}
+\begin{vocabulary}[Word]
+Definition of word.
+\end{vocabulary}
+\end{tcblisting}
+
+\section{Tables}\index{\LaTeX!Book!Table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l l l}
+\toprule
+\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+\midrule
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+\bottomrule
+\end{tabular}
+\caption{Table caption}
+\end{table}
+
+%------------------------------------------------
+
+\section{Figures}\index{\LaTeX!Book!Figure}
+
+\begin{figure}[h]
+\centering\includegraphics[scale=0.5]{placeholder}
+\caption{Figure caption}
+\end{figure}
+
+\subsection{Colored Boxes}
+\index{\LaTeX!Book!Boxes}
+\index{\LaTeX!Book!NOTE}
+\index{\LaTeX!Book!WARNING}
+\index{\LaTeX!Book!IU}
+
+The package \verb|tcolorbox| provides sophisticated support to include
+color boxes. Together with the new environment we can create nice add
+ons to for example include notes.
+
+\URL{http://osl.ugr.es/CTAN/macros/latex/contrib/tcolorbox/tcolorbox.pdf}
+
+We have provided in this document notes as follows
+
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,  title=Note,fonttitle=\bfseries}
+\begin{NOTE}
+This is a note
+\end{NOTE}
+\end{tcblisting}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,  title=Warning,fonttitle=\bfseries}
+\begin{WARNING}
+This is a note
+\end{WARNING}
+\end{tcblisting}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,listing side text,  title=Warning,fonttitle=\bfseries}
+\begin{IU}
+This is a note
+\end{IU}
+\end{tcblisting}
+
+\subsection{Section References}
+
+Section references with the Where command are used to refer to a
+section by label, but be presented with the section number, the title,
+and the page number. It can be augmented with a text, such as in which
+week the section is best to be studied. This is useful for creating a
+customized Syllabus
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,
+    listing side text, title=Warning,fonttitle=\bfseries}
+\WHERE{\YES}{C:linux}{Week 2}
+\end{tcblisting}
+
+\begin{tcblisting}{colback=blue!5!white,colframe=gray!50!blue,
+    listing side text, title=Warning,fonttitle=\bfseries}
+\WHERE{\NO}{C:linux}{Week 2}
+\end{tcblisting}
+
+The checkmark indicate if the lecture has been released for the
+ongoing semester.
+
+\subsection{Partial Compile}
+
+As we use include in the different parts, changes will only effect the
+appropriate part. However, we can also explicitly set in the preamble
+of the document which includes we compile. This is helpful, as the
+document is rather lkarge and we may want to focus on just one or more
+parts without craeting a large document that includes all the parts.
+For this we can use the convenient include only command and add to it
+with comma separated the parts that we want to compile and are
+regularly included within the main document. For example to just work
+on the container part, we simply add the following to the preamble.
+
+\begin{verbatim}
+\documentclass{format/laszewski} 
+
+\includeonly{part/container}
+\end{verbatim}
+
+Once we are satisfied, we either remove the includeonly line, or we
+comment it out.

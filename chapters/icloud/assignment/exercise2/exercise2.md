@@ -10,16 +10,16 @@ Deliverables
 ------------
 
 You are required to turn in the following items in a zip file
-(username\_HadoopPageRank.zip) in this assignment:
+(username_HadoopPageRank.zip) in this assignment:
 
 -   The source code of Hadoop PageRank you implemented.
 
--   Technical report (username\_HadoopPageRank\_report.docx) that
+-   Technical report (username_HadoopPageRank_report.docx) that
     contains:
 
 -   The description of the main steps and data flow in your program.
 
--   The output file (username\_HadoopPageRank\_output.txt) which
+-   The output file (username_HadoopPageRank_output.txt) which
     contains the first 10 urls along with their ranks.
 
 Evaluation

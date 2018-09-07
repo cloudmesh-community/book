@@ -2,14 +2,14 @@ Graphviz
 --------
 
 Graph is a tool that allows you to visualize structural information
-with the help of abstract graphs and networks. It is achhieved while
+with the help of abstract graphs and networks. It is achieved while
 providing the graph with automatic layout algorithms so you can focus
-on the creation of dependencies between nots through edges. The main
+on the creation of dependencies between nodes through edges. The main
 Web page is located at
 
 *   <https://graphviz.gitlab.io/resources/>
 
-### Instalation
+### Installation
 
 On OSX you can install graphviz with
 
@@ -57,8 +57,8 @@ svg, or PDF
     dot -Tsvg filename.dot -o filename.svg
     dot -TPDF filename.dot -o filename.pdf
 
-For inclsion in latex documents we recommend you create PDF output as it
-has a much better quality and is maller in size than png.
+For inclusion in latex documents we recommend you create PDF output as it
+has a much better quality and is smaller in size than png.
 
 ### The Dot Format
 
@@ -66,7 +66,7 @@ An extensive documentation is provided at
 
 * <https://graphviz.gitlab.io/documentation/>
 
-From there we find also the most simpplest Hello World Graph>
+From there we find also the most simplest Hello World Graph>
 
     echo "digraph G {Hello->World}" | dot -Tpng > hello.png
 

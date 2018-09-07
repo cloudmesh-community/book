@@ -21,7 +21,7 @@ Spark RDD Operations
 --------------------
 
 In this section we discuss about the background of RDD operations along
-with other transformation functionalities in Spark.
+with other transformation functionalty in Spark.
 
 \TODO{Gregor: Update Video Hadoop Urls to Youtube Urls}
 

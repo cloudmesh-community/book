@@ -1,6 +1,6 @@
 # Windows Download
 
-Download the Educationl version of Windows from 
+Download the Educational version of Windows from 
 
 * [https://www.microsoft.com/en-us/software-download/vlacademicwindows10iso](https://www.microsoft.com/en-us/software-download/vlacademicwindows10iso)
 

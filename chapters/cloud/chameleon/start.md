@@ -73,7 +73,7 @@ Step 3: Start using Chameleon!
 Now that you have enrolled and once you are added to the project by your
 project lead you can start using chameleon cloud. However be reminded
 that you ought to shut down the resources/VMs whenever they are not in
-use to avoid unnecessary charging. Remember the project has imited time
+use to avoid unnecessary charging. Remember the project has limited time
 on chameleon and any unused time will be charged against the project.
 
 Chameleon provides two types of resources with links to their respective

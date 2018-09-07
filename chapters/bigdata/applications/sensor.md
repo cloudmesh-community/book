@@ -1,5 +1,4 @@
-Sensors
--------
+# Sensors
 
 We start with the Internet of Things IoT giving examples like monitors
 of machine operation, QR codes, surveillance cameras, scientific
@@ -18,7 +17,7 @@ smart electric grid.
 [:scroll: Sensor II
 (44)](https://drive.google.com/open?id=0B8936_ytjfjmelMwSUl6Q1lLV1k)
 
-### Internet of Things
+## Internet of Things
 
 There are predicted to be 24-50 Billion devices on the Internet by 2020;
 these are typically some sort of sensor defined as any source or sink of
@@ -32,21 +31,21 @@ a cloud.
 [:clapper: Internet of Things
 (12:36)](https://www.youtube.com/watch?v=0O0-mz-CWtQ)
 
-### Robotics and IoT
+## Robotics and IoT
 
 Examples of Robots and Drones.
 
 [:clapper: Robotics and IoT Expectations
 (8:05)](https://www.youtube.com/watch?v=ABP0Yygw2Zg)
 
-### Industrial Internet of Things
+## Industrial Internet of Things
 
 We summarize surveys and expectations Industry wide.
 
 [:clapper: Industrial Internet of Things
 (24:02)](https://www.youtube.com/watch?v=kxKzBfd62Og)
 
-### Sensor Clouds
+## Sensor Clouds
 
 We describe the architecture of a Sensor Cloud control environment and
 gives example of interface to an older version of it. The performance of
@@ -55,7 +54,7 @@ number of involved sensors with each delivering data at 1.8 Mbps rate.
 
 [:clapper: Sensor Clouds (4:40)](https://youtu.be/0egT1FsVGrU)
 
-### Earth/Environment/Polar Science data gathered by Sensors
+## Earth/Environment/Polar Science data gathered by Sensors
 
 This lesson gives examples of some sensors in the
 Earth/Environment/Polar Science field. It starts with material from the
@@ -66,14 +65,14 @@ Spectroradiometer instrument on a satellite.
 [:clapper: Earth/Environment/Polar Science data gathered by Sensors
 (4:58)](https://youtu.be/CS2gX7axWfI)
 
-### Ubiquitous/Smart Cities
+## Ubiquitous/Smart Cities
 
 For Ubiquitous/Smart cities we give two examples: Iniquitous Korea and
 smart electrical grids.
 
 [:clapper: Ubiquitous/Smart Cities (1:44)](https://youtu.be/MFFIItQ3SOo)
 
-### U-Korea (U=Ubiquitous)
+## U-Korea (U=Ubiquitous)
 
 Korea has an interesting positioning where it is first worldwide in
 broadband access per capita, e-government, scientific literacy and total
@@ -85,7 +84,7 @@ a 'High-Tech Utopia' New Songdo is given.
 [:clapper: U-Korea (U=Ubiquitous)
 (2:49)](https://www.youtube.com/watch?v=U38zWbSI2n4)
 
-### Smart Grid
+## Smart Grid
 
 The electrical Smart Grid aims to enhance USA's aging electrical
 infrastructure by pervasive deployment of sensors and the integration of
@@ -97,10 +96,10 @@ autonomous local power units where good use is made of waste heat.
 [:clapper: Smart Grid
 (6:04)](https://www.youtube.com/watch?v=UfEiIzaZzI8)
 
-### Resources
+## Resources
 
 \TODO{These resources have not all been checked to see if they still
-  exist this is curretnly in progress}
+  exist this is currently in progress}
 -   <https://www.gesoftware.com/minds-and-machines>
 -   <https://www.gesoftware.com/predix>
 -   <https://www.gesoftware.com/sites/default/files/the-industrial-internet/index.html>

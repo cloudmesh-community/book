@@ -276,7 +276,7 @@ Project Idea: World wide road kill
 ----------------------------------
 
 This project can also be executed as bonus project to gather information
-about the feasability of existing databases.
+about the feasibility of existing databases.
 
 It would be important to identify also how to potentially merge these
 databases into a single world map and derive statistics from them. This
@@ -322,7 +322,7 @@ a with the name Will Smith is the sam as the author of paper 2 with the
 name Will Smith, or William Smith, or W. Smith. AUthor databases are
 either provided in bibtex format, or a database that can not be shared
 outside of this class. YOu may have to add additional information from
-IEEE explorer, rsearch gate, ISI, or other online databases.
+IEEE explorer, research gate, ISI, or other online databases.
 
 Identify further issues and discuss solutions to them. Example, an
 author name changes, the author changes the institution.
@@ -334,16 +334,16 @@ Some ideas:
 -   Develop a graph view application in JS that showcases dependencies
     between coauthors, institutions
 
--   Derive probabilities for the publications written by an auther given
+-   Derive probabilities for the publications written by an author given
     they are the same
 
 -   Utilize dependency graphs as given by online databases
 
--   Utilize the and or topic/abstarct/full text to identify similarity
+-   Utilize the and or topic/abstract/full text to identify similarity
 
 -   Utilize keywords in the title
 
--   Utilize refernces of the paper
+-   Utilize references of the paper
 
 -   Prepare some vizualization of your result
 

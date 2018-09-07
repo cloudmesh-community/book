@@ -88,7 +88,7 @@ Learning Outcomes:
     accounts.
 
 -   Just like in a class the professor communicates to all students and
-    encourages a dialog. PIazza simulates this isn some form for online
+    encourages a dialog. Piazza simulates this isn some form for online
     students. It is important not to just read the piazza e-mails, but
     to actually visit every post you get by using the click here link
     and inspect the post. The answer from students to questions such as
@@ -130,7 +130,7 @@ Learning Outcome:
     hesitate to contact UITS for help if you can not access some
     services. Find first answers in IU Knowledge base.
 
--   Use importan cloud services
+-   Use important cloud services
 
 ### Account Creation
 
@@ -284,7 +284,7 @@ Learning Outcomes:
     google IDs if you also have a non IU google ID set up.
 
 -   Just like in a class the professor communicates to all students and
-    encourages a dialog. PIazza simulates this isn some form for online
+    encourages a dialog. Piazza simulates this isn some form for online
     students. It is important not to just read the piazza e-mails, but
     to actually visit every post you get by using the click here link
     and inspect the post. The answer from students to questions such as
@@ -321,7 +321,7 @@ Learning Outcome:
 
 -   Procrastination in this class does not pay off.
 
--   This assignment was added for those students taht did not do it in
+-   This assignment was added for those students that did not do it in
     the first week. If you procrastinate, you will see that you have
     additional work to do. The administrative tasks must not be late as
     we need to set up and coordinate with you and if not done in time
@@ -605,11 +605,11 @@ last week in class):
 
 -   \(B) In addition to this I recommend that you
 
-    -   \(1) find on the network how to put Rasbian on an SD card, create your
+    -   \(1) find on the network how to put Raspbian on an SD card, create your
         self an md file for this as this may be different for different
         operating systems.
 
-    -   \(2) download rasbian on your machine so you can burn it as you will get
+    -   \(2) download Raspbian on your machine so you can burn it as you will get
         5 sd cards
 
         In the lab, those that finish most of the swagger service will
@@ -617,10 +617,10 @@ last week in class):
 
     -   \(3) in the lab you will be first thing change the password to each of
         them before you put them on the network. Maybe there is a way to do this
-        directly from your computer after you have put rasbian on the sd card.
+        directly from your computer after you have put Raspbian on the sd card.
         But I do not know if that's possible.
 
-    -   \(4) figure out how to configure Rasbian without a monitor, while just
+    -   \(4) figure out how to configure Raspbian without a monitor, while just
         using an SDcard and your laptop, write an md file
 
 In case of questions, lets engage in a discussion. If you have md files
@@ -917,7 +917,7 @@ reference="s:project-format"} and
 [\[s:paper-rules\]](#s:paper-rules){reference-type="ref"
 reference="s:paper-rules"}.
 
-Some project idease for this years class are listed in Section
+Some project ideas for this years class are listed in Section
 [\[s:project-ideas\]](#s:project-ideas){reference-type="ref"
 reference="s:project-ideas"}. Some previous projects are listed in
 previous volumes that you can find in Section
@@ -962,7 +962,7 @@ Assignments I523
 
 ### Open Source Efforts
 
-**Linux Fundation Project Summary** Go to the Web Page of the Linux
+**Linux Foundation Project Summary** Go to the Web Page of the Linux
 Foundation, pick a projects (the TAs may randomly assign it for you).
 For the project write within one week a 1-page summary using our Paper
 format. We recommend that you use sharelatex. Please use
@@ -983,12 +983,12 @@ Learning outcomes:
 
 -   Learn how to use sharelatex
 
--   Learn how ieas it is to write a paper in latex while using our
+-   Learn how easy it is to write a paper in latex while using our
     template
 
 -   Learn how to do citations and organize them in bibtex
 
-**Linux Fundation Project Review** You will be assigned by the TA three
+**Linux Foundation Project Review** You will be assigned by the TA three
 papers (it can not be a paper that you write as part of a group). You
 will write constructive review to improve the technology summary.
 Learning outcomes:
@@ -1002,10 +1002,10 @@ Learning outcomes:
 
 -   Learn how to do citations and organize them in bibtex
 
-**Linux Fundation Project Summary Improvements** Integrate the
+**Linux Foundation Project Summary Improvements** Integrate the
 improvement suggestions in your paper. Your paper will have 3 reviews
 from students. Improve your paper.
 
-**Linux Fundation Project Summary Extension** Integrate the improvement
+**Linux Foundation Project Summary Extension** Integrate the improvement
 suggestions in your paper. Your paper will have 3 reviews from students.
 Improve your paper.

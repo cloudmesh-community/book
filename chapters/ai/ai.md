@@ -95,7 +95,7 @@ ordered from smallest to largest distances, naturally the smallest
 distances are the most similar. You may notice that the values of
 horsepower are significantly larger in magnitude than the values
 associated with racing stripes. This could be problematic in many real
-world scenarios where the columns associated with large values don't
+world scenarios where the columns associated with large values donot
 have as direct of an impact as horsepower does on the variable we are
 trying to predict--a car being fast. In the case where each column value
 has equal predictive power data normalization should be performed. This
@@ -195,14 +195,14 @@ columns can not be normalized in the way described above.
 
 We can now use built in functions to calculate the nearest neighbors in
 order to compare to our results attained from the above exercise. In
-case you did not notice the selected\_player\_distance array is an array
+case you did not notice the selected_player_distance array is an array
 that lists all the Euclidean distances. We will use this later to see if
 the same result is obtained by using the built in functions. First we
 will import the necessary libraries shown below.
 
     from scipy.spatial import distance
 
-If you inspected the the selected\_player\_distance array you would have
+If you inspected the the selected_player_distance array you would have
 noticed that there were several NaN's present this was due to having an
 incomplete dataset and must be avoided. The following bit of code will
 replace all NA entries with zeros.
@@ -240,7 +240,7 @@ Draft: Example Project with SVM
 The following code is set up as an example project and will show how to
 use a RESTful service to download data. Additionally the differences
 between a dynamic and static API will be showcased. First we begin by
-importing the approbate libraries.
+importing the appropriate libraries.
 
     import requests
     from flask import Flask
@@ -292,7 +292,7 @@ browser, preferably google, and following the url below the code.
     if __name__ == '__main__':
         app.run(debug=True)
 
-Now Open the application in your bbrowser with
+Now Open the application in your browser with
 
     http://127.0.0.1:5000/
 
@@ -308,7 +308,7 @@ good practice.
         download_data(url=url, filename='iris.scale')
         return "Data Downloaded"
 
-The following three api endpoints use the data pration and get data
+The following three api endpoints use the data partion and get data
 functions defined above. The partition function splits the datasets into
 two sections--testing and training. In this example the testing portion
 of the dataset is 20 % and the training is 80 % of the dataset. Later we
@@ -463,13 +463,13 @@ show up, this was noticed in the url sections.
     if __name__ == '__main__':
         app.run(debug=True)
 
-Asmentioned above these these are examples of static API endpoints. In
-many scenarios having a dynamic API would be prefered. Lets explore the
+As mentioned above these these are examples of static API endpoints. In
+many scenarios having a dynamic API would be preferred. Lets explore the
 data partition endpoint and modify the code for the static version to
 make a dynamic version. Below is the function definition for the dynamic
-version of the data\_partion function, and not much has changed. The
+version of the data_partion function, and not much has changed. The
 only change made was that stings were appended to the testing and
-training file names for convienece. The ratio will match the user
+training file names for convenience. The ratio will match the user
 defined ratio entered through the url.
 
     def data_partition(filename, ratio):

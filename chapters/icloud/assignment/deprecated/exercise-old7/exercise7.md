@@ -9,7 +9,7 @@ across map tasks.
 Deliverables
 ============
 
-Zip your source code and output as username\_harp-kmeans.zip. Please
+Zip your source code and output as username_harp-kmeans.zip. Please
 submit this file to the Canvas Assignments page.
 
 Evaluation
@@ -30,7 +30,7 @@ Prerequisites
     presentation is in Canvas).
 
 -   Download **simplekmeans** folder from Canvas assignments under
-    **B649\_Project7** folder.
+    **B649_Project7** folder.
 
 -   Copy that folder to **harp2-project-master/harp2-app/src/edu/iu**
 
@@ -55,7 +55,7 @@ however, there are efficient algorithms via an iterative refinement
 approach.
 
 ![Image source:
-https://en.wikipedia.org/wiki/K-means\_clustering](p7-1){width="8cm"
+https://en.wikipedia.org/wiki/K-means_clustering](p7-1){width="8cm"
 height="2cm"}
 
 ![K-Means Clustering for MapReduce](p7-2){width="8cm" height="6cm"}
@@ -105,10 +105,10 @@ Compilation and Running
 -   Then copy the
     **harp2-project-master/harp2-app/build/harp2-app-hadoop-2.6.0.jar**
     to\
-    **\$HADOOP\_HOME**
+    **\$HADOOP_HOME**
 
 -   To run the file, use the following command within
-    **\$HADOOP\_HOME**. This will produce 100 data points and cluster
+    **\$HADOOP_HOME**. This will produce 100 data points and cluster
     them into 12 clusters. We use 3D points. The program will run 2
     parallel map tasks for 20 iterations. Note: you may want to give
     unique directory names for the last two parameters each time that

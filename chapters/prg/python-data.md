@@ -15,9 +15,9 @@ Python pickle allows you to save data in a python native format into a
 file that can later be read in by other programs. However, the data
 format may not be portable among different python versions thus the
 format is often not suitable to store information. Instead we recommend
-for standrad data to use either json or yaml.
+for standard data to use either json or yaml.
 
-``` {.python}
+```python
 import pickle
 
 flavor = {
@@ -31,7 +31,7 @@ pickle.dump( flavor, open( "data.p", "wb" ) )
 
 To read it back in use
 
-``` {.python}
+```python
 flavor = pickle.load( open( "data.p", "rb" ) )
 ```
 
@@ -39,34 +39,34 @@ flavor = pickle.load( open( "data.p", "rb" ) )
 
 To read text files into a variable called content you can use
 
-``` {.python}
+```python
 content = open('filename.txt', 'r').read() 
 ```
 
 You can also use the following code while using the convenient `with`
 statement
 
-``` {.python}
+```python
 with open('filename.txt','r') as file:
     content = file.read()
 ```
 
 To split up the lines of the file into an array you can do
 
-``` {.python}
+```python
 with open('filename.txt','r') as file:
     lines = file.read().splitlines()
 ```
 
-This cam aslo be done with the build in `readlines` function
+This cam also be done with the build in `readlines` function
 
-``` {.python}
+```python
 lines = open('filename.txt','r').readlines()
 ```
 
 In case the file is too big you will want to read the file line by line:
 
-``` {.python}
+```python
 with open('filename.txt','r') as file:
     line = file.readline()
     print (line)
@@ -77,7 +77,7 @@ with open('filename.txt','r') as file:
 Often data is contained in comma separated values (CSV) within a file.
 To read such files you can use the csv package.
 
-``` {.python}
+```python
 import csv
 with open('data.csv', 'rb') as f:
    contents = csv.reader(f)
@@ -87,7 +87,7 @@ for row in content:
 
 Using pandas you can read them as follows.
 
-``` {.python}
+```python
 import pandas as pd
 df = pd.read_csv("example.csv") 
 ```
@@ -102,7 +102,7 @@ looking originally convenient has limitations.
 
 Pandas contains a method to read Excel files
 
-``` {.python}
+```python
 import pandas as pd
 filename = 'data.xlsx'
 data = pd.ExcelFile(file)
@@ -112,11 +112,11 @@ df = data.parse('Sheet1')
 #### YAML
 
 YAML is a very important format as it allows you easily to structure
-data in hierarchical fileds It is frequently used to coordinate programs
-while using yaml as the specification for configuration fils, but also
+data in hierarchical fields It is frequently used to coordinate programs
+while using yaml as the specification for configuration files, but also
 data files. To read in a yaml file the following code can be used
 
-``` {.python}
+```python
 import yaml
 with open('data.yaml', 'r') as f:
     content = yaml.load(f)
@@ -125,7 +125,7 @@ with open('data.yaml', 'r') as f:
 The nice part is that this code can also be used to verify if a file is
 valid yaml. To write data out we can use
 
-``` {.python}
+```python
 with open('data.yml', 'w') as f:
     yaml.dump(data, f, default_flow_style=False)
 ```
@@ -135,7 +135,7 @@ with indentations.
 
 #### JSON
 
-``` {.python}
+```python
 import json
 with open('strings.json') as f:
     content = json.load(f)
@@ -154,7 +154,7 @@ $ pip install rdflib
 
 This will than allow you to read RDF files
 
-``` {.python}
+```python
 from rdflib.graph import Graph
 g = Graph()
 g.parse("filename.rdf", format="format")
@@ -168,7 +168,7 @@ at <https://github.com/RDFLib/rdflib>
 From the Web page we showcase also how to directly process RDF data from
 the Web
 
-``` {.python}
+```python
 import rdflib
 g=rdflib.Graph()
 g.load('http://dbpedia.org/resource/Semantic_Web')
@@ -212,12 +212,15 @@ More details about it are provided in the documentation page
 <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>
 
 \TODO{Students: beautiful soup contribute tutorial}
+
 #### ConfigParser
 
 * <https://pymotw.com/2/ConfigParser/>
+
 #### ConfigDict
 
 * <https://github.com/cloudmesh/cloudmesh.common/blob/master/cloudmesh/common/ConfigDict.py>
+
 ### Encryption
 
 Often we need to protect the information stored in a file. This is
@@ -232,7 +235,7 @@ To illustrate one type of encryption that is non trivial we have chosen
 to demonstrate how to encrypt a file with an ssh key. In case you have
 openssl installed on your system, this can be achieved as follows.
 
-``` {.sh}
+```bash
     #! /bin/sh
 
     # Step 1. Creating a file with data
@@ -256,7 +259,7 @@ decrypts the file. Using the Python os module it is straight forward to
 implement this. However, we are providing in cloudmesh a convenient
 class that makes the use in python very simple.
 
-``` {.python}
+```python
 from cloudmesh.common.ssh.encrypt import EncryptFile
 
 e = EncryptFile('file.txt', 'secret.txt')
@@ -270,7 +273,7 @@ methods `encrypt` and `decrypt`.
 
 ### Database Access
 
-\TODO{Students: define conventional database access tutorial}
+:?: Students: define conventional database access tutorial
 see: <https://www.tutorialspoint.com/python/python_database_access.htm>
 
 ### SQLite
@@ -280,23 +283,29 @@ see: <https://www.tutorialspoint.com/python/python_database_access.htm>
 
 <https://docs.python.org/3/library/sqlite3.html>
 
-#### Exercises
+#### Exercises :o:
 
-[\[E:Encryption.1\]]{#E:Encryption.1 label="E:Encryption.1"} Test out
-the shell script to replicate how this example works
+E:Encryption.1:
 
-[\[E:Encryption.2\]]{#E:Encryption.2 label="E:Encryption.2"} Test out
-the cloudmesh encryption class
+> Test the shell script to replicate how this example works
 
-[\[E:Encryption.3\]]{#E:Encryption.3 label="E:Encryption.3"} What other
-encryption methods exist. Can you provide an example and contribute to
-the section?
+E:Encryption.2:
 
-[\[E:Encryption.4\]]{#E:Encryption.4 label="E:Encryption.4"} What is the
-issue of encryption that make it challenging for Big Data
+Test the cloudmesh encryption class
 
-[\[E:Encryption.5\]]{#E:Encryption.5 label="E:Encryption.5"} Given a
-test dataset with many files text files, how long will it take to
-encrypt and decrypt them on various machines. Write a benchmark that you
-test. Develop this benchmark as a group, test out the time it takes to
-execute it on a variety of platforms.
+E:Encryption.3:
+
+What other encryption methods exist. Can you provide an example and
+contribute to the section?
+
+E:Encryption.4:
+
+> What is the issue of encryption that make it challenging for Big
+> Data
+
+E:Encryption.5:
+
+> Given a test dataset with many files text files, how long will it
+> take to encrypt and decrypt them on various machines. Write a
+> benchmark that you test. Develop this benchmark as a group, test out
+> the time it takes to execute it on a variety of platforms.

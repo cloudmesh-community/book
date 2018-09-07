@@ -8,7 +8,7 @@ For this exercise you will implement PageRank on Harp framework.
 Deliverables
 ------------
 
-Zip your source code and output as username\_harp-pagerank.zip. Please
+Zip your source code and output as username_harp-pagerank.zip. Please
 submit this file to the Canvas Assignments page.
 
 Evaluation
@@ -24,7 +24,7 @@ follows:
 Prerequisites
 -------------
 
-From now on, you don't need the old VM. To avoid any conflict and
+From now on, you donot need the old VM. To avoid any conflict and
 inconvenience, we have prepared a new VM (ubuntu 16.04) for you. The
 link will be posted on canvas. All necessary tools/libaries such Maven,
 JDK, Github, Hadoop 2.6.0, Harp are configured and ready for use.

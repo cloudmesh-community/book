@@ -14,7 +14,7 @@ Simple Streaming Example
 
 In this section, we are going to focus on making a simple streaming
 application using the network in your computer. Here we are going to
-expose a particular port and from that port we are going to continously
+expose a particular port and from that port we are going to continuously
 stream data by user entries and the word count is being calculated as
 the output.
 
@@ -243,7 +243,7 @@ Now add the following content.
 Please replace the local file paths mentioned in this code with a file
 path of your preference depending on your workstation. And also IP
 address must be replaced with your ip address. The log folder path must
-be pre-created and makesure to replace the `registerTempTable` name with
+be pre-created and make sure to replace the `registerTempTable` name with
 respect to the entity that you are referring. This will minimize the
 conflicts among different topics when you need to plot it in a simple
 manner.

@@ -46,7 +46,7 @@ protocols such as UDP. It allows efficient transmission of data to
 various devices listening for the same event, and is scalable as the
 number of devices increase [@mqtt-wiki][@mqtt-official].
 
-The current support for MQTT is conducted as part of the Eclipse Paho
+The current support for MQTT is conducted as part of the Eclipse Phao
 project [@eclipse-mosquitto]. As MQTT is a protocol many different
 clients in various languages exist. This includes languages such as
 Python, C, Java, Lua, and many more.

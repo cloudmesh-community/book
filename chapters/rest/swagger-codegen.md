@@ -155,7 +155,7 @@ section.
 
 ### Fill in the actual implementation
 
-Under the *flaskConnecxion* directory, you will find a *swagger\_server*
+Under the *flaskConnecxion* directory, you will find a *swagger_server*
 directory, under which you will find directories with *models* defined
 and *controllers* code stub resides. The models code are generated from
 the definition in Step 1. On the controller code though, we will need to
@@ -199,7 +199,7 @@ following code:
                     return re.sub(".*model name.*:", "", line, 1)
         return "cannot find cpuinfo"
 
-And then change the **cpu\_get()** function to the following:
+And then change the **cpu_get()** function to the following:
 
     def cpu_get():  # noqa: E501
         """cpu_get
@@ -307,7 +307,7 @@ create ane new python virtual environment and conduct our install.
 
 ### Using the client API to interact with the REST service
 
-Under the directory *swagger\_example/client/cpu* you will find a
+Under the directory *swagger_example/client/cpu* you will find a
 README.md file which serves as an API documentation with example client
 code in it. E.g., if we save the following code into a `.py` file:
 

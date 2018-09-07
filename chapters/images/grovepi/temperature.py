@@ -55,7 +55,7 @@ class Barometer(object):
             pressure = self.bmp.readPressure()/100.0
 
             # To calculate altitude based on an estimated mean sea level pressure
-            # (1013.25 hPa) call the function as follows, but this won't be very accurate
+            # (1013.25 hPa) call the function as follows, but this will not be very accurate
             # altitude = bmp.readAltitude()
 
             # To specify a more accurate altitude, enter the correct mean sea level

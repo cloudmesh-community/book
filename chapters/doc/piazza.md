@@ -7,14 +7,15 @@ instructors, but also for students to contribute. Each question has a
 single answer edited by the students of the class and if needed an
 instructors' answer that is collaboratively edited by the instructors.
 
-Due to this wiki-style Q&A, when a student has a question, one does not
-have to look through long e-mail threads but instead can look at the
-answer. For details that lead up to the answer you are highly encouraged
-to also look at some comments that lead up to the answer.
+Due to this wiki-style question and answer, when a student has a
+question, one does not have to look through long e-mail threads but
+instead can look at the answer. For details that lead up to the answer
+you are highly encouraged to also look at some comments that lead up
+to the answer.
 
 An advertisement video from Piazza summarizes the features:
 
--   <https://www.youtube.com/watch?v=2jLSiN8E18w>
+* [:clapper: Piazza Overview from Piazza](https://www.youtube.com/watch?v=2jLSiN8E18w)
 
 Piazza Support with a lot of information is available at:
 
@@ -29,12 +30,39 @@ A good document about piazza is available at
 Piazza is one of the recommended IU supported technologies within
 CANVAS. It replaces the CANVAS discussion groups with superior
 technology targeted to support large student classes while also
-focussing on student engagement.
+focusing on student engagement.
 
 To access piazza you can have the following situations provided in the
-next four subsections. Please read *ALL*\* of them **CAREFULLY**, decide
+next four subsections. Please read **ALL** of them **CAREFULLY**, decide
 which applies tou you and follow the instructions. If you have
 improvements to this instructions, please let us know.
+
+### Piazza for 516
+
+Due to a bug in canvas the piazza location for 516 could not be
+crosslisted to CANVAS. Thus we simply add the following link to it
+
+* <https://piazza.com/iu/fall2018/516>
+
+This link is used also for the undergraduates and the CS students
+
+If you have any issues with enrolling in Piazza, please contact us
+in the office hours.
+
+In Piazza we always use the `@iu.edu` account.
+
+The accounts `yourid@indiana.edu` and `yourid@iu.edu`, even though
+they are they organizational IU accounts, are considered as two
+different accounts for Piazza. If you have used in piazza previously
+the `@indiana.edu` account, you will need to use the `@iu.edu` account
+instead as this is the preferred account for external services that IU
+offers.  To do that please go to piazza and than go to the settings
+within piazza.  Here you add your `@iu.edu` and merge it with your
+existing `@indiana.edu` account. This can also be done with any other
+account you may have used in case it was not the `@iu.edu` account.
+
+ 
+### Piazza for other classes
 
 #### Situation: You have never logged into piazza
 
@@ -99,7 +127,7 @@ I post the official response form the CANVAS team here: "When a student
 clicks the Piazza link in your course navigation, they will be
 authenticated through to Piazza. If the student already has a Piazza
 account that matches their default Canvas email, they will simply be
-enrolled in the Piazza course. If the student doesn't have an account,
+enrolled in the Piazza course. If the student does not have an account,
 Canvas sends the pertinent information (default email address primarily)
 to Piazza, Piazza creates the student's account and enrolls the student
 in the Piazza course. There is nothing you need to do to."
@@ -198,7 +226,7 @@ This guide is adapted from
 
 -   <http://www.techsupportalert.com/content/how-ask-question-when-you-want-technical-help.htm>
 
-Ten steps to getting your question answered on piazza
+Steps to getting your question answered on piazza
 
 1.  Before you even go to ask a question, think through what your
     problem is. Write down how you are going to describe it. Think about
@@ -230,7 +258,7 @@ Ten steps to getting your question answered on piazza
     (folders sort the posts by topics).
 
 5.  Select a title that briefly and accurately describes your problem. A
-    title like "Help!" or "Computer won't work" will often get ignored.
+    title like "Help!" or "Computer will not work" will often get ignored.
     Almost any problem can be titled with a few key words that will
     raise interest in somebody who is familiar with the subject. A
     corollary to this is to avoid using all caps or a lot of exclamation
@@ -238,7 +266,7 @@ Ten steps to getting your question answered on piazza
 
 6.  In the post, briefly describe the problem in a paragraph. Leave out
     unnecessary details. Save everybody time by listing any solutions
-    that you have tried but didn't work. Avoid using screenshots if they
+    that you have tried but did not work. Avoid using screenshots if they
     are not needed. (I mention this again).
 
 7.  In case of a technical issue describe relevant system details. For
@@ -306,42 +334,37 @@ created
 
 We are using Piazza in a curated fashion.  This means that we try to
 file posts into folders and delete messages that are not relevant or
-do not provide any additional information. IT also means that if you
-see an error in the post that students and instructors should improve
-it. THis may include spelling errors.
+do not provide any additional information. It also means that if you
+see an error in the post that students and instructors have provided,
+you should improve it. This may include spelling errors.
 
-As part of this we are introducing a number of folders.
-THe folders may vary from class and we can add new folders if
+As part of the curation we are introducing a number of folders.
+The folders may vary from class and we can add new folders if
 needed. Please let us know.
 
 We provide next a list of example folders that we have used in
-previous classes and list their purpose. Please helo us to add folders
+previous classes and list their purpose. Please help us to add folders
 form your class.
 
   Folder       Description
   ------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  logistics    Any question and discussion related to the logistics of the course
+  logistics    Any question and discussion related to the logistics of the course.
   lectures     Any question and discussion related to the lectures.
-  p            Any question and discussion related to paper.
-  p1           Any question and discussion related to paper 1.
-  p2           Any question and discussion related to paper 2.
-  t            Any question and discussion related to tutorial.  
-  t1           Any question and discussion related to tutorial 1.
-  t2           Any question and discussion related to tutorial 2.
-  project      Any question and discussion related to iot projects.
-  term-paper   Any question and discussion related to the term project.
+  project      Any question and discussion related to the project.
+  chapter      Any question and discussion related to the chapter assignment
+  tutorial     Any question and discussion related to the tutorial assignment.
   python       Any question and discussion related to python.
   pi           Any question and discussion related to the Raspberry Pi 3. We are not using older Raspberry Pi's and therefore can not comment to them.
-  8266         Any question and discussion related to the esp8266.
   bio          A homework folder in which you only publish your bio. The bio needs to be published as a *note*. This assignment also serves us to see if you are in piazza. Please do this assignment ASSAP. You need to post a formal bio. See the many great examples in the folder.
   help         If you need help and none of the other folders fits, please use this folder. If information from here will result into new Web page content it will be added and marked into the folder *resolved*. See the *resolved* folder for more detail.
   resolved     Sometimes we move some general help messages to the resolved folder in case the help message results into information that is posted on our class Web page. We than will add a link to where in the class Web page this question was answered. The TAs will aggressively try to put information into the Web page.
   discussion   Any content that deserves its separate discussion and is not covered in the above folder.
 
-In addition to these general folders we also have two folders which
+In addition to these general folders we also have some folders which
 **MUST NOT BE USED BY ANY STUDENT TO POST CONTENT**. These folders serve
-to communicate your assignments and are used internally between Grgeor
-and the TA's.
+to communicate your assignments and are used internally between Gregor
+and the TA's. Please do not mark any questions about assignments with
+the `assignments` folder, but instead use `help`.
 
 *assignments*:
 
@@ -351,12 +374,6 @@ and the TA's.
     given. In case students have questions about assignments they should
     not use the *assignments* folder, but the *help* folder. TAs are
     instructed to correct wrongly filed messages in folders.
-
-*ta*:
-
-:   Any question and discussion you have for the ta's. Typically you
-    should however use the folder *help*. Gregor use most often the *ta*
-    folder for internal coordination with the tas.
 
 In case you decide to post privately and the information is useful for
 others also, the message will be published to the class.
@@ -401,3 +418,8 @@ Piazza.3
 Piazza.4
 
 :   Please watch the Video about Piazza
+
+Piazza.5
+
+: Why is it important to not just read the piazza e-mail, but to visit
+  the post by using the `<click here>` feature in the mail?

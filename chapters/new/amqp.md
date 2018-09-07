@@ -24,7 +24,7 @@ Tutorial:
 
 * <http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html>
 
-COmparision
+Comparision
 
 * <http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html>
 * <http://queues.io/>

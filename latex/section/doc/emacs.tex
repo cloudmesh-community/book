@@ -1,0 +1,268 @@
+% chktex-file 1
+
+\FILENAME\
+
+\section{Basic Emacs}
+\label{C:emacs}
+
+One of the most useful short manuals for emacs is the following refrence
+card. It takes some time to use this card efficiently, but the most
+important commands are written on it. Generations of students have
+litterally been just presented with this card and they learned emacs
+from it.
+
+\URL{https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf}
+
+
+There is naturally also additional material available and a great
+manual. You could also look at
+
+\URL{https://www.gnu.org/software/emacs/tour/}
+
+
+From the last page we have summarized the most useful and
+\textbf{simple} features. And present them here. One of the hidden gems
+of emacs is the ability to recreate replay able macros which we include
+here also. You ought to try it and you will find that for data science
+and the cleanup of data emacs (applied to smaller datasets) is a gem.
+
+Notation
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+C & Control\tabularnewline
+M & Esc (meta character)\tabularnewline
+\bottomrule
+\end{longtable}
+
+Here are some other ways on what to do if you have accidentally
+pressed a wrong key:
+
+\begin{itemize}
+\item \verb|C-g| If you pressed a prefix key (e.g. \verb|C-x|) or you invoked
+a command which is now prompting you for input (e.g. Find file:
+\ldots{}), type \verb|C-g|, repeatedly if necessary, to cancel. \verb|C-g| also
+cancels a long-running operation if it appears that Emacs has frozen.
+
+\item \verb|C-/| If you executed a command and Emacs has modified your buffer, use \verb|C-/| to
+undo that change. 
+\end{itemize}
+
+To save the current file say 
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|C-x C-w| & Write the buffer to file \tabularnewline
+\verb|C-x C-s| & Write the buffer to file and quit Emacs \tabularnewline
+\bottomrule
+\end{longtable}
+
+
+Moving around in buffers can be done with cursor keys, or with the
+following key combinations:
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|C-f| & Forward one character\tabularnewline
+\verb|C-n| & Next line\tabularnewline
+\verb|C-b| & Back one character\tabularnewline
+\verb|C-p| & Previous line\tabularnewline
+\bottomrule
+\end{longtable}
+
+Here are some ways to move around in larger increments:
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|C-a| & Beginning of line\tabularnewline
+\verb|M-f| & Forward one word\tabularnewline
+\verb|M-a| & Previous sentence\tabularnewline
+\verb|M-v| & Previous screen\tabularnewline
+\verb|M-<| & Beginning of buffer\tabularnewline
+\verb|C-e| & End of line\tabularnewline
+\verb|M-b| & Back one word\tabularnewline
+\verb|M-e| & Next sentence\tabularnewline
+\verb|C-v| & Next screen\tabularnewline
+\verb|M->| & End of buffer\tabularnewline
+\bottomrule
+\end{longtable}
+
+You can jump directly to a particular line number in a buffer:
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|M-g| g & Jump to specified line\tabularnewline
+\bottomrule
+\end{longtable}
+
+Searching is easy with the following commands
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|C-s| & Incremental search forward\tabularnewline
+\verb|C-r| & Incremental search backward\tabularnewline
+\bottomrule
+\end{longtable}
+
+Replace
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|M-|\% & Query replace\tabularnewline
+\bottomrule
+\end{longtable}
+
+Killing (``cutting'') text
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|C-k| & Kill line\tabularnewline
+\bottomrule
+\end{longtable}
+
+Yanking
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|C-y| & Yanks last killed text\tabularnewline
+\bottomrule
+\end{longtable}
+
+Macros
+
+Keyboard Macros
+
+Keyboard macros are a way to remember a fixed sequence of keys for later
+repetition. They're handy for automating some boring editing tasks.
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|M-x (| & Start recording macro\tabularnewline
+\verb|M-x )| & Stop recording macro\tabularnewline
+\verb|M-x e| & Play back macro once\tabularnewline
+\verb|M-5 C-x-e| & Play back macro 5 times\tabularnewline
+\bottomrule
+\end{longtable}
+
+Modes
+
+``Every buffer has an associated major mode, which alters certain
+behaviors, key bindings, and text display in that buffer. The idea is to
+customize the appearance and features available based on the contents of
+the buffer.'' modes are typically activated by ending such as \verb|.py|,
+\verb|.java|, \verb|.rst|, \ldots{}
+
+\begin{longtable}[]{ll}
+\toprule
+Key & Description\tabularnewline
+\midrule
+\endhead
+\verb|M-x python-mode| & Mode for editing Python files\tabularnewline
+\verb|M-x auto-fill-mode| & Wraps your lines automatically when they get longer
+than 70 characters.\tabularnewline
+\verb|M-x flyspell-mode| & Highlights misspelled words as you type.\tabularnewline
+\bottomrule
+\end{longtable}
+
+
+\subsection{Org Mode}
+
+Emacs has some very advanced fetures that you can activate via a
+mode. One such feature is to organize a TODO list via org-mode.
+
+Instead of us designing our own video, we point to a community
+tutorial such as
+
+\video{Cloud}{18:04}{Emacs org-mode}{https://www.youtube.com/watch?v=Kde5YVUwDTQ}{Youtube}
+
+
+\subsection{Programming Python with Emacs}
+
+Emacs comes by default with syntax hughl lighting for python when you
+edit a \verb|.py| file. This is realy all you need. It also comes with a
+python ide that you can use and customize.
+
+Python auto-completion for Emacs:
+
+  \URL{https://github.com/tkf/emacs-jedi}
+
+
+Some more information is available at
+
+\URL{https://realpython.com/blog/python/emacs-the-best-python-editor/}
+\URL{https://www.emacswiki.org/emacs/PythonProgrammingInEmacs}
+
+\subsection{Emacs Keys in a Terminal}
+
+One of the real great features of knowing emacs is that you can set
+all your editors to emacs shortcuts. This includes pyCharm, but also
+bash. IN bash you simply say 
+
+\begin{verbatim}
+set -o emacs
+\end{verbatim}
+
+in your bash prompt. Additionally, if you do not have a window systems
+configured, you can run emacs directly in the terminal with 
+
+\begin{verbatim}
+emacs -nw
+\end{verbatim}
+
+This you can log in to a remote computer and if it has emacs
+installed. Use it in the terminal. This would replace editors such as
+vi, vim, nano, pico or others that work in a terminal.
+
+\subsection{\LaTeX~and Emacs}
+
+LaTeX is directly supported by emacs and nothinghas to be
+changed. However, a collection of information about additional
+\LaTeX~features for emacs is avalable at
+
+\URL{https://www.emacswiki.org/emacs/LaTeX}
+
+Of interest are for example also 
+
+* \verb|M-x flyspell-mode|: allowing to do spell checking in the window
+* predictive mode: https://www.emacswiki.org/emacs/PredictiveMode
+* preview latex
+* whizzy tex
+
+However instead of previes and whizzy tex we recommend to use
+\url{https://www.emacswiki.org/emacs/LatexMk} which comes preinstalled
+and allows you to do editing in one terminal, while previewing the
+update on change in another window.
+
+LatexMk is all integrated in our report Makefiles and the Book format,
+so you will be able to use this immediately. This is similar to share
+latex, but much faster and without collaborators editing the same file.

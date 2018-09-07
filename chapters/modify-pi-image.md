@@ -30,7 +30,7 @@ on a Mac shared drive.
 
 ---
 
-First create a directory and download the [latest build of Rasbian Lite](https://downloads.raspberrypi.org/raspbian_lite_latest). The last step is to download a script that is located at 
+First create a directory and download the [latest build of Raspbian Lite](https://downloads.raspberrypi.org/raspbian_lite_latest). The last step is to download a script that is located at 
 
 * <https://github.com/cloudmesh-community/hid-sp18-419/blob/master/project-code/pi-config/make-pi-images.py>
 
@@ -74,7 +74,7 @@ First we are creating a configuration file that describes our cluster. It is wri
 data:
    images:
        dexter: https://sourceforge.net/projects/dexterindustriesraspbianflavor/files/latest/download
-       rasbian: https://downloads.raspberrypi.org/raspbian_lite_latest
+       Raspbian: https://downloads.raspberrypi.org/raspbian_lite_latest
    hostname: red
        start: 0001
        end:   0005
@@ -90,7 +90,7 @@ The meaning of the attributes is rather simple. Under images we specify a number
        
 ### Gregor: Manual page cmd5 may be easier than click.
 
-    modify_sdcard -fetch [rasbian|dexter|https://downloads.raspberrypi.org/raspbian_lite_latest]  - fetched the image
+    modify_sdcard -fetch [Raspbian|dexter|https://downloads.raspberrypi.org/raspbian_lite_latest]  - fetched the image
     modify_sdcard -burn IMAGE   - puts the given image on the sd card
     modify_sdcard -ssh [enable|disable] enables or disables ssh 
     modify_sdcard -sshkey [~/.ssh/id_rsa.pub]  puts the default key for login

@@ -1,5 +1,7 @@
 # Glossary
 
+## VM and Container
+
 Dom0
 
 > TBD
@@ -42,7 +44,7 @@ Kernel namespace
 > TBD 
 
 
-# Network
+## Network
 
 Bridged Networking
 
@@ -64,9 +66,7 @@ Network Address Translation (NAT)
 
 > TBD 
 
-Storage
-
-> TBD 
+## Storage
 
 Block Device
 

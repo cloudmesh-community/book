@@ -1,11 +1,9 @@
-Dockerized REST Service
-=======================
+# Dockerized REST Service
 
 We discuss how to use Docker to deploy a REST service designed using
 Python Flask.
 
-Prerequisites
--------------
+## Prerequisites
 
 In order to follow our discussion you will need a system on which you
 can run docker. THis could either be OSX, LInux, or Windows.
@@ -14,7 +12,7 @@ Python 2.7.x can be used to do this tutorial
 
 ### Ubuntu and OSX
 
-Please use our instructions on installying pyenv.
+Please use our instructions on installing pyenv.
 
 ### Windows
 
@@ -25,7 +23,7 @@ MSI](https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi)
 
 After installing python add an environmental variable by pressing
 Windows Key + Pause and Select Advanced system settings. Then add an
-environment varible for system variables for the variable PATH which is
+environment variable for system variables for the variable PATH which is
 already there. And in that add the new variable
 
     C:\Python27
@@ -68,8 +66,7 @@ Hyber V)
 
 Install emacs via chocolatey
 
-Activate Virutal Environment
-----------------------------
+## Activate Virutal Environment
 
 ### Ubuntu and OSX
 
@@ -98,8 +95,7 @@ look something like
 (venv) neo$
 ```
 
-File Structure
---------------
+## File Structure
 
 The File structure takes the following look.
 
@@ -222,8 +218,7 @@ if __name__ == "__main__":
 
 After adding the content save and exit emacs.
 
-Build Docker Image
-------------------
+## Build Docker Image
 
 ### Ubuntu and OSX
 
@@ -259,8 +254,7 @@ Note: Changing any content inside the app folder must be
       updated in the container by rebuilding the image.
 ```
 
-Run Docker Image
-----------------
+## Run Docker Image
 
 Run the following commands to get the REST API hosted on
 <http://127.0.0.1:80>
@@ -398,7 +392,7 @@ f7c6a4710ad2 prakhar1989/static-site "./wrapper.sh"             5d ago     Exite
 1f90a411c746 hello-world             "/hello"                  11d ago     Exited (0) 11d ago          everent_raman
 ```
 
-#### Deleting Docker Conatiner first and then remove Docker Image
+#### Deleting Docker Container first and then remove Docker Image
 
 ``` {basicstyle="\tiny\ttfamily"}
 $ docker images

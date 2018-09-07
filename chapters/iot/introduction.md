@@ -2,7 +2,7 @@ Introduction
 ============
 
 Internet of Things is one of the driving forces in the modernisation of
-todays world. It is based on connecting *things* to the internet to
+today's world. It is based on connecting *things* to the internet to
 create a more aware world that can be interfaced with. This not only
 includes us humans, but any *thing* that can interact with other things.
 It is clear that such a vision of interconnected devices will result in
@@ -10,10 +10,10 @@ billions of devices to communicate with each other. Some of them may
 only communicate small number of items, while others will communicate a
 large amount. Analysis of this data is dependent on the capability of
 the *thing*. If it is to small the analysis can be conducted on a remote
-server or cloud while information to act are fead back from the device.
+server or cloud while information to act are fed back from the device.
 In other cases the device may be completely autonomous and does not
 require any interaction. Yet in other cases the collaborative
-information gathered from such devices is used to derive decissions and
+information gathered from such devices is used to derive decisions and
 actions.
 
 Within this section we are trying to provide you with a small glimpse
@@ -34,7 +34,7 @@ The reasons we chose them is that
 1.  they are cheap,
 
 2.  we can program both in python allowing us to use a single
-    programming langauage for all projects and assignments, and
+    programming language for all projects and assignments, and
 
 3.  they are sufficiently powerful and we can conduct real projects with
     them beyond toy projects.
@@ -68,7 +68,7 @@ Raspberry Pi (easy-moderate, 32GB space limitation):
 
 3.  a robot car with camera
 
-4.  a termerature service
+4.  a temperature service
 
 5.  a docker cluster
 
@@ -90,7 +90,7 @@ In general we think that these platforms provide a wonderful
 introduction into IoT and where it will move to. Such platforms were
 just a decade ago not powerful enough or too expensive. However today
 the provide a serious platform for developers. Sensors are available
-easily as most Android comparible sensors can be used.
+easily as most Android comparable sensors can be used.
 
 Before we jump right into programming the devices, we like to point out
 that we dod not chose to use Arduinos, as their price advantage is no

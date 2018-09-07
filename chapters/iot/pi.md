@@ -2,7 +2,7 @@ Raspberry PI 3
 ==============
 
 
-Raspbery PI for IOT (Gregor)
+Raspberry PI for IOT (Gregor)
 ----------------------------
 
 Hardware
@@ -33,7 +33,7 @@ it in the proper format.
 
 ### Installation of NOOBS
 
-NOOBS is an OS that includes Raspian. The official descrition of
+NOOBS is an OS that includes Raspian. The official description of
 Raspbian can be found
 [here](https://www.raspberrypi.org/downloads/raspbian/). It comes
 pre-packaged with many useful programming tools, and is easy to use.
@@ -62,7 +62,7 @@ Raspbian for Robots. This is a Raspbian based os that is compatible with
 the GrovePi board. It also comes with pre-installed Dexter Industries
 software.
 
-1.  First, download the most recent Dexter\_Industries\_jessie.zip file
+1.  First, download the most recent Dexter_Industries_jessie.zip file
     from
     [here](https://sourceforge.net/projects/dexterindustriesraspbianflavor/).
 
@@ -175,12 +175,12 @@ pip install cloudmesh.pi with
         $ cd cloudmesh.pi
         $ sudo pip3 install .
 
-see how we do this in osx/linux can this be done on raspbery? if not
+see how we do this in osx/linux can this be done on raspberry? if not
 document update from source with altinstall
 
 ### Install scientific Libraries
 
-check if they are already installed we don't have enough space to
+check if they are already installed we donot have enough space to
 install all of these.
 
     sudo apt-get install python-numpy python-matplotlib python-scipy python-sklearn python-pandas
@@ -193,10 +193,10 @@ scikitlearn
 ### cloudmesh.pi (Jon)
 
 cloudmesh.pi is a repository for our GrovePi module classes. These
-classes require Dexter software, so you need to either have Raspian for
+classes require Dexter software, so you need to either have Raspbian for
 Robots or download the software separately.
 
-If you have Raspian for Robots, run the following in your terminal:
+If you have Raspbian for Robots, run the following in your terminal:
 
     cd
     mkdir github

@@ -1,15 +1,11 @@
-Docker and Docker Swarm on FutureSystems
-========================================
-
- 
+# Docker and Docker Swarm on FutureSystems
 
 This section is for IU students only that take classes with us.
 
 This section introduces how to run Docker container on FutureSystems.
 Currently we have deployed Docker swarm on Echo.
 
-Getting Access
---------------
+## Getting Access
 
 You will need an account on FutureSystems and be enrolled in an active
 project. To verify, try to see if you can log into
@@ -25,7 +21,7 @@ If your access to the india host has been verified, try to login to the
 docker swarm head node. To conveniently do this let us define some Linux
 environment variables to simplify the access and the material presented
 here. YOu can place them even in your `.bashrc` or `.bash_profile` so
-the information gets populated whnever you start a new terminal.
+the information gets populated whenever you start a new terminal.
 
     export ECHO=149.165.150.76
     export FS_USER=<put your futersystem here>
@@ -46,8 +42,7 @@ Once logged in to the docker swarm head node, try to run:
 
 to verify `docker run` works.
 
-Creating a service and deploy to the swarm cluster
---------------------------------------------------
+## Creating a service and deploy to the swarm cluster
 
 While `docker run` can start a container and you may even attach to its
 console, the recommended way to use a docker swarm cluster is to create
@@ -64,11 +59,11 @@ paradigm of *serverless computing*.
 As an example, the following command creates a service and deploy it to
 the swarm cluster:
 
-> docker service create --name notebook\_test -p 9001:8888
+> docker service create --name notebook_test -p 9001:8888
 > jupyter/datascience-notebook start-notebook.sh
-> --NotebookApp.password=NOTEBOOK\_PASS\_HASH
+> --NotebookApp.password=NOTEBOOK_PASS_HASH
 
-The NOTEBOOK\_PASS\_HASH can be generated in python:
+The NOTEBOOK_PASS_HASH can be generated in python:
 
     >>> import IPython
     >>> IPython.lib.passwd("YOUR_SELECTED_PASSWROD")
@@ -120,7 +115,7 @@ To stop the service and the container:
 
     docker service rm noteboot_test
 
-### Create your own service
+## Create your own service
 
 You can create your own service and run it. To do so, start from a base
 image, e.g., a ubuntu image from the docker cloud. Then you could:
@@ -134,7 +129,7 @@ image, e.g., a ubuntu image from the docker cloud. Then you could:
 
 In reality, the first approach is probably useful when you are in the
 phase of develop and debug your application/service. Once you have the
-step by step instructions developped the latter approach is the
+step by step instructions developed the latter approach is the
 recommended way.
 
 Publish the image to the docker cloud by following this documentation:
@@ -145,13 +140,13 @@ Please make sure no sensitive information is included in the image to be
 published. Alternatively you could publish the image internally to the
 swarm cluster.
 
-##### Publish an image privately within the swarm cluster
+## Publish an image privately within the swarm cluster
 
 Once the image is published and available to the swarm cluster, you
 could start a new service from the image similar to the Jupyter Notebook
 example.
 
-### Exercises
+## Exercises
 
 Obtain an account on future systems.
 

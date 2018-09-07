@@ -1,16 +1,17 @@
 # Pi Cluster Form Factor 
 
 In this chapter we will discuss a number of opportunities to build small
-scale compute and cluster resources using Raspberry Pi's.
+scale compute and cloud cluster resources using Raspberry Pi's.
 
 This includes the following:
 
-* NAS server with one Raspberry Pi 3
-* Cluster using 1 Raspberry Pi as master and 4 Raspberry Zeros as
-  workers
-* Cluster with at least 3 Raspberry Pi's
-* Cluster with 40 Raspberry Pi's
-* Cluster with 144 Raspberry Pi's
+* [NAS server with one Raspberry Pi 3](#nas-1-pi)
+* [Cluster using 1 Raspberry Pi as master and 4 Raspberry Zeros as
+  workers](#clusterhat-4-zero-1-pi)
+* [Case With Cooling for 5 Pi)](#Cluster-Case-With-Cooling-5-Pi)
+* [Cluster with 40 Raspberry Pi's](#bitscope-case-40-pi)
+* [Cluster with 144 Raspberry Pi's](#bitscope-cluster-144-pi)
+* [Build Your Own 5 Node Pi Cluster](#build-your-own-5-node-pi-cluster)
 
 ## NAS (1 Pi)
 
@@ -91,8 +92,8 @@ Table: Temperature comparison of fan impact
 
   No.   Case   Fan   Direction   RPM      Idle    100% Load   Performance
   ----- ------ ----- ----------- -------- ------- ----------- -------------
-  1     no     no    \-          \-       41.0C   75.5C       OK (barely)
-  2     yes    no    \-          \-       45.0C   82.5C       throttles
+  1     no     no    -           -        41.0C   75.5C       OK (barely)
+  2     yes    no    -           -        45.0C   82.5C       throttles
   3     yes    5V    in          unkown   37.9C   74.5C       OK (barely)
   4     yes    7V    in          800      35.6C   69.5C       OK
   5     yes    12V   in          1400     32.5C   61.1C       OK
@@ -164,8 +165,7 @@ Instead it is possible to build such a cluster based on Raspberry Pi's
 yourself if you are willing to spend the money or if you have access to
 Pi's that you may loan from your department.
 
-Table [\[T:picluster-partslist\]](#T:picluster-partslist){reference-type="ref"
-reference="T:picluster-partslist"} lists one such possible parts list
+Table [Parts](#T:parts) lists one such possible parts list
 that will allow you to build a cluster for up to 5 nodes. However make
 sure to buy at least 3 Raspberry Pi's with the appropriate memory. At
 minimum we recommend you get the 32GB SD card. We do not recommend any
@@ -184,7 +184,7 @@ We suggest that when you build the cluster to do it on a table with a
 large white paper or board, or a tablecloth and take pictures of the
 various stages of the build so we can include it in this document.
 
-Initially we just put rasbian as Operating system on the SD cards and
+Initially we just put Raspbian as Operating system on the SD cards and
 test out each PI. To do so you will naturally need an SD card writer
 that you can hook up to your computer if it does not have one. As you
 will have to potentially do this more than once it is not recommended to
@@ -197,7 +197,7 @@ Locate setup instructions and write a tutorial in markdown that we will
 include here once it is finished. The tutorial is to be managed on
 github.
 
-<div class="smalltable">
+<div name="T:parts" class="smalltable">
 
 | Price | Description | URL |
 | :- | :------- | :- |
@@ -254,7 +254,7 @@ well as tear them down.
 Next you will need to make sure you can communicate from the Pi's to each
 other. This is naturally the same as on a real cluster
 
-TODO: provide a tutorial
+:warning: TODO: provide a tutorial
 
 This can be chosen as part of your project, but you need to develop a
 cloudmesh command for managing the cluster. This includes starting and

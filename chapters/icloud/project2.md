@@ -14,7 +14,7 @@ Hadoop. You will then blend these applications by implementing a
 parallel version of PageRank using the programming interfaces of the
 Hadoop MapReduce framework.
 
-Deliverables
+Deliverable
 
 You are required to turn in the following items in a zip file (username
 HadoopPageRank.zip) in this assignment:

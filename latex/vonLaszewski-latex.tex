@@ -1,0 +1,128 @@
+%-------------------------------------------------------------------------------
+%	DO NOT CHAMGE CONFIGURATION
+%xs
+% \RequirePackage[hyphens]{url}
+\documentclass{format/laszewski}
+
+% \includeonly{part/container}
+
+\newcommand{\cv}{-- check content --}
+\newcommand{\vc}{-- check content --}
+\newcommand{\vb}{-- check content --}
+\newcommand{\pv}{-- check content --}
+\newcommand{\bv}{-- check content --}
+
+%\includeonly{%
+%section/cluster/pi/cluster
+%}
+
+\newcommand{\TITLE}{Scientific Writing II}
+\newcommand{\SUBTITLE}{The Easy Way}
+\newcommand{\AUTHOR}{Gregor von Laszewski}
+\newcommand{\EMAIL}{laszewski@gmail.com}
+\newcommand{\LOCATION}{%
+~\\
+\url{http://cyberaide.org/papers/vonLaszewski-latex.pdf}
+}
+
+%---------------------------------------
+%	BIBLIOGRAPHY AND INDEX
+%-----------------------------------------------------------------------------
+
+\addbibresource{bib/bibliography.bib}
+\addbibresource{bib/refs-jabref.bib}
+\addbibresource{bib/refs-mqtt.bib}
+\addbibresource{tutorial/references.bib}
+\defbibheading{bibempty}{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IMAGE DIRECTORIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{graphicspath}
+
+
+\begin{document}
+
+%
+%	END CONFIGURATION
+%-------------------------------------------------------------------------------
+
+\maketitle
+
+\chapterimage{water.png} % Chapter heading image
+
+%
+
+\pagestyle{fancy}
+
+%-------------------------------------------------------------------------------
+%	EXAMPE FOR INCLUDING FIGURES
+
+%\FIGURE{htb}
+%    {1.0}
+%    {images/kubernetes.jpeg}
+%    {The Architecture of the Framework}
+%    {F:tas-arch}
+
+%
+%	END EXAMPLES
+%------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	TODO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \listoftodos[Todo List]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	PREFACE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \include{part/preface}
+% \include{section/preface/update}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	SCIENTIFIC WRITING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{part/doc}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapterimage{water.png}
+\chapter*{Bibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}}
+
+%------------------------------------------------
+
+%\section*{Articles}
+%\addcontentsline{toc}{section}{Articles}
+%\printbibliography[heading=bibempty,type=article]
+
+%------------------------------------------------
+
+%\section*{Books}
+%\addcontentsline{toc}{section}{Books}
+%\printbibliography[heading=bibempty,type=book]
+
+\section*{References}
+\printbibliography[heading=bibempty]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	INDEX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\phantomsection
+\setlength{\columnsep}{0.75cm}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
+\printindex
+
+%-------------------------------------------------------------------------------
+
+\end{document}

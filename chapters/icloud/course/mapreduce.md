@@ -15,11 +15,9 @@ in-memory support of tasks, data flow separation, and portability.
 
 [:clapper: Apache Data Analysis OpenStack (12:01)](https://www.youtube.com/watch?v=6vkgvGtyv4Q)
 
-[:scroll: Apache Data Analysis OpenStack (1)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE
-)
+[:scroll: Apache Data Analysis OpenStack (1)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: Apache Data Analysis OpenStack - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRM
-emNaZEU)
+[:scroll: Apache Data Analysis OpenStack - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 MapReduce
 ---------
@@ -97,8 +95,7 @@ Hadoop WordCount on VMs
 
 [:scroll: Hadoop WordCount on VMs (17)](https://drive.google.com/open?id=0B88HKpainTSfZENxeUlOcVFUTkU)
 
-[:scroll: Hadoop WordCount on VMs - pptx (17)](https://drive.google.com/open?id=0B88HKpainTSfcVNHWUJaUDRoYU
-k)
+[:scroll: Hadoop WordCount on VMs - pptx (17)](https://drive.google.com/open?id=0B88HKpainTSfcVNHWUJaUDRoYUk)
 
 Programming on a Compute Cluster
 --------------------------------
@@ -113,8 +110,7 @@ and machine failures.
 
 [:scroll: Programming on a Compute Cluster (1)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
-[:scroll: Programming on a Compute Cluster - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0
-l1VHBEdlU)
+[:scroll: Programming on a Compute Cluster - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
 
 How Hadoop Runs on a MapReduceJob
 ---------------------------------
@@ -130,8 +126,7 @@ given at the end.
 
 [:scroll: How Hadoop Runs on a MapReduceJob (8)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
-[:scroll: How Hadoop Runs on a MapReduceJob - pptx (8)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN
-0l1VHBEdlU)
+[:scroll: How Hadoop Runs on a MapReduceJob - pptx (8)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
 
 Literature Review
 -----------------
@@ -198,8 +193,7 @@ types of SIMD. SPMD and MPMD are two other types of model.
 
 [:scroll: SIMD vs MIMD;SPMD vs MPMD (1)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: SIMD vs MIMD;SPMD vsMPMD - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3
-c)
+[:scroll: SIMD vs MIMD;SPMD vsMPMD - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 
 Data Locality
 -------------
@@ -274,5 +268,4 @@ higher energy demands.
 
 [:scroll: Resource Utilization and Speculative Execution (46)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: Resource Utilization and Speculative Execution - pptx (46)](https://drive.google.com/open?id=0B88
-HKpainTSfVGdyVzNjTzdfb3c)
+[:scroll: Resource Utilization and Speculative Execution - pptx (46)](https://drive.google.com/openid=0B88HKpainTSfVGdyVzNjTzdfb3c)

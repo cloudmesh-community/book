@@ -26,7 +26,7 @@ use the absolute file path.
 
 
 Crontab is a service the schedules jobs that can run at
-various times repeatedly.  For example we can use corontab to run
+various times repeatedly.  For example we can use `crontab` to run
 commands every hour, every day, every half hour or other time
 intervals or at reboot.
 

@@ -4,5 +4,6 @@ import sys
 
 x = int(sys.argv[1])
 header=sys.argv[2]
-print (x * '#', header)
-print()
+print (x * '#', header, "\n\n")
+
+
