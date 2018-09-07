@@ -2,21 +2,30 @@
 FILENAME=vonLaszewski-cloud-cluster-pi
 
 OS=$(shell ../bin/sysinfo.py)
+DOCKER=$(shell ../bin/isdocker.py)
 
+MARKUPALL=../bin/markup-all.py
+
+#
+# removing mermaid filter from linux as we do not yet know how to use it in docker
+#
 ifeq ($(OS), osx)
 OPEN_EPUB=open
-MARKUPALL=../bin/markup-all.py
-MERMAID=mermaid-filter
+MERMAID=-F mermaid-filter
+COPY=rsync
 endif
 ifeq ($(OS), linux)
 OPEN_EPUB=xdg-open
-MARKUPALL=../bin/markup-all.py
-MERMAID=mermaid-filter
+MERMAID=-F mermaid-filter
+COPY=rsync
 endif
 ifeq ($(OS), windows)
 OPEN_EPUB=open
-MARKUPALL=../bin/markup-all.py
-MERMAID=mermaid-filter.cmd
+MERMAID=-F mermaid-filter.cmd
+COPY=cp
+endif
+ifeq ($(DOCKER), True)
+MERMAID=
 endif
 
 ######################################################################
@@ -182,18 +191,19 @@ OLD=\
  chapters/cloud/saas.md\
 
 
+TWISTER=\
+ chapters/mapreduce/twister-installation.md\
+ chapters/mapreduce/twister.md\
+ chapters/mapreduce/twister2-example.md\
+ chapters/mapreduce/harp.md\
+
 MAPREDUCE=\
  chapters/hadoop/hadoop-installation.md\
  chapters/mapreduce/hadoop-installation.md\
  chapters/mapreduce/hadoop-lectures.md\
- chapters/mapreduce/harp.md\
  chapters/mapreduce/spark-installation.md\
  chapters/mapreduce/spark-lectures.md\
  chapters/mapreduce/spark-streaming.md\
- chapters/mapreduce/twister-installation.md\
- chapters/mapreduce/twister.md\
- chapters/mapreduce/twister2-example.md\
- chapters/os/ubuntu-usb-osx.md\
  chapters/new/go.md\
  chapters/new/amqp.md\
  chapters/new/osx-tricks.md\
@@ -231,7 +241,6 @@ MAPREDUCE=\
  chapters/iot/sensors.md\
  chapters/iot/tools.md\
  chapters/iot/turtle.md\
- chapters/iot/vnc.md\
  chapters/msg/mqtt.md\
  chapters/msg/graphql.md\
  chapters/rest/rest.md\
@@ -257,36 +266,57 @@ CHAPTER_PYTHON=\
  chapters/prg/python-libcloud.md\
  chapters/references.md
 
+DEPRECATED=\
+ chapters/linux/ssh2.md
+
+REVIEW=\
+ chapters/pi/software2.md
+
+DRAFT=\
+ chapters/pi/kubernetes/pi-kubernetes.md\
+ chapters/pi/kubernetes/526/readme-kube.md\
+ chapters/pi/kubernetes/417/pi-kubernetes.md\
+
+
 CHAPTER_PI=\
- chapters/pi/contributors.md\
+ chapters/SECTION-PREFACE.md\
+    chapters/pi/preface.md\
+    chapters/preface/notation.md\
+    chapters/preface/contributors.md\
+    chapters/preface/contributing.md\
+    chapters/preface/git.md\
+    chapters/preface/exercises.md\
+ chapters/preface/outline.md\
  chapters/pi/board.md\
  chapters/pi/case.md\
- chapters/case/case.md\
- chapters/pi/links.md\
+     chapters/case/case.md\
+     chapters/pi/links.md\
  chapters/pi/exercise.md\
  chapters/login-node.md\
- chapters/sd-card.md\
- chapters/linux/linux.md\
- chapters/linux/ssh.md\
- chapters/linux/ssh2.md\
- chapters/linux/refcards.md\
- chapters/raspberry/config-display.md\
- chapters/raspberry/motherboard-led.md\
- chapters/run-at-boot.md\
+     chapters/os/ubuntu-usb-osx.md\
+ chapters/SECTION-ONE-PI.md\
+     chapters/sd-card.md\
+     chapters/pi/software.md\
+     chapters/linux/linux.md\
+     chapters/linux/ssh.md\
+     chapters/linux/refcards.md\
+     chapters/pi/config-display.md\
+     chapters/pi/vnc.md\
+     chapters/pi/motherboard-led.md\
+     chapters/run-at-boot.md\
+ chapters/clusters/pi-docker.md
+
+
+OTHER=\
+ chapters/SECTION-DRAFT.md\
  chapters/clusters/pi-now.md\
+ chapters/pi/setup.md\
  chapters/modify-pi-image.md\
  chapters/pi/pi-passwordreset.md\
  chapters/clusters/pxe.md\
  chapters/clusters/pi-configure-cluster.md\
- chapters/clusters/pi-docker.md\
- chapters/clusters/pi-dockerswarm.md\
- chapters/clusters/kubernetes-526/readme-kube.md\
- chapters/clusters/kubernetes-417/pi-kubernetes.md\
  chapters/clusters/pi-spark.md\
- chapters/clusters/pi-software.md\
  chapters/pi/slurm.md\
- chapters/pi/setup.md\
- chapters/pi/software.md\
  chapters/SECTION-hadoop.md\
  chapters/SECTION-yarn.md\
  chapters/SECTION-spark.md\
@@ -297,7 +327,10 @@ CHAPTER_REFERNCES=\
 
 
 INDEX=\
- $(CHAPTER_PI)\
+ $(CHAPTER_PI)
+
+INDEX_OTHER=\
+ $(OTHER)\
  $(MAPREDUCE)\
  $(CHAPTER_PYTHON)\
  $(CHAPTER_REFERENCES)
@@ -309,23 +342,30 @@ X=\
   $(CHAPTER_IN) \
   $(CHAPTER_BIGDATA)
 
-MARKDOWN-OPTIONS=-F $(MERMAID) -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
+MARKDOWN-OPTIONS=$(MERMAID) -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
 CSL=--csl=template/ieee-with-url.csl
 FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
+CSS_HTML=--css=template/pandoc.css
 RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case"
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
-epub: dot refernces todo
-	cp metadata.txt dest
-	cp -r cover dest
-	cp -r ../template dest
-	cp -r ../template/fonts dest
-	cp -r ../chapters dest	
+all: prepare epub other
+	echo done
+
+
+prepare: dot refernces todo
+	$(COPY) metadata.txt dest
+	$(COPY) -r cover dest
+	$(COPY) -r ../template dest
+	$(COPY) -r ../template/fonts dest
+	$(COPY) -r ../chapters dest	
 	$(MARKUPALL)
+	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
+	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
 	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      
@@ -339,23 +379,49 @@ epub: dot refernces todo
 	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
-	../bin/section.py 1 ":construction::construction::construction::construction::construction::construction::construction::construction::construction::construction::construction:" > dest/chapters/SECTION-DRAFT.md
+
+
+epub: 
+ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(INDEX) > all.md
+endif
+ifeq ($(OS), linux)
+	cd dest; cat $(INDEX) > all.md
+endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
+
+draft: prepare
+ifeq ($(OS), osx)
+	cd dest; iconv -t utf-8 $(DRAFT) > all.md
+endif
+ifeq ($(OS), linux)
+	cd dest; cat $(DRAFT) > all.md
+endif
+	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
+
+
+other:
+ifeq ($(OS), osx)
+	cd dest; iconv -t utf-8 $(INDEX_OTHER) > all.md
+endif
+ifeq ($(OS), linux)
+	cd dest; cat $(INDEX_OTHER) > all.md
+endif
+	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME)-other.epub metadata.txt all.md
 
 refernces:
 	mkdir -p dest
 	cat ../bib/*.bib > dest/references.bib
 
 html:
-	pandoc $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) -o $(FILENAME).html metadata.txt $(INDEX)
+	cd dest; pandoc $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).html metadata.txt $(INDEX)
 
 pdf:
-	pandoc -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography refernces.bib --csl=ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
+	cd dest; pandoc -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
 
 tex:
-	pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography refernces.bib --csl=ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)
-	pdflatex content.tex
+	cd dest; pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)
+	cd dest; pdflatex content.tex
 
 
 clean:

@@ -14,7 +14,7 @@ easily, but also assembling or adding to the cluster easily.
 
 This section will document our efforts to support this. The section is
 heavily under construction and currently two STEM students work on the
-case. They are joined by an independent study student ofer the summer
+case. They are joined by an independent study student offer the summer
 that looks at the software for this cluster.
 
 To simplify management we will be using github for managing tasks, but
@@ -76,14 +76,14 @@ just a start as the design does not include any connectors.
 
 [scad file](images/case-a.scad)
 
-![](images/case-a.png)
+![Figure: TBD](images/case-a.png)
 
-Next we show you how to use some predefined Raspbery PI boards in SCAD
+Next we show you how to use some predefined Raspberry PI boards in SCAD
 and use for loops to create rows and columns of 5 PIs each.
 
 [100-pis](images/100-pis.scad)
 
-![](images/100-pis.png)
+![Figure: TBD](images/100-pis.png)
 
 In the last design we showcase how the basis of a 5 node cluster could
 start. Naturally many other thing s need to be improved. Such as the
@@ -93,17 +93,18 @@ up with a final design.
 
 [100-pis](images/parts.scad)
 
-![](images/parts.png)
+![FIGURE: TBD](images/parts.png)
 
 Once you have designed the 5 node cluster, you will also need to
 design a shelf in which you can place them. Power plugs need to be
 added. so you can power the PI within the cluster.
 
-### Using the Laser Cutter
+### Laser Cutter
 
-First, you will need an overview of what a laser cutter is. There are
-many good resources about this on youtube. One such video is provided
-by a company that salls laser cutters:
+With a laser cutter we can create very precise cases.  First, you will
+need an overview of what a laser cutter is. There are many good
+resources about this on youtube. One such video is provided by a
+company that sells laser cutters:
 
 * <https://www.youtube.com/watch?v=SIjUVCho_xU>
 
@@ -130,10 +131,10 @@ laser cutter.
 
 ![Figure: Control Panel](images/control-panel-laser-cutter.png)
 
-TODO Safety googles ...
+TODO Safety goggles ...
 
 Next the instructor will give you a walk through of the machine so you
-can replicate thes steps next time.
+can replicate these steps next time.
 
 1. Turn the laser cutter on: Use key to turn on the laser cutter.
 2. Turn the exhaust fan on: The fan is a separately switched
@@ -187,7 +188,7 @@ can replicate thes steps next time.
    5. Select the Play arrow in JobControl
    6. An exhaust warning will appear. Select OK. The job will start.
 
-Questions to be integarted:
+Questions to be integrated:
 
 * What is the importance of setting cutting parameters? 
 * What will you check before pressing the start button to ensure safety?
@@ -195,7 +196,7 @@ Questions to be integarted:
 
 ### Cases and Parts Designed by the Community
 
-A 3D model of the Raspbery PI is available at
+A 3D model of the Raspberry PI is available at
 
 * STL <https://www.thingiverse.com/thing:1701186>
 * <https://grabcad.com/library/raspberry-pi-3-reference-design-model-b-rpi-raspberrypi-raspberry-pi-2>
@@ -206,22 +207,29 @@ drawings to identify proper placement.
 Certainly we need to identify how to connect the walls of the
 case. The following links provide some ideas for such connections.
 
-* <http://www.instructables.com/id/How-to-Make-Anything-Using-Acrylic-and-Machine-Sc/>
-* <http://skpang.co.uk/blog/archives/152>
-* <http://www.uugear.com/product/acrylic-case-for-zero4u-and-raspberry-pi-zero-clear/>
-* <https://www.phidgets.com/docs/T-Slot_Primer>
-* <https://www.modmypi.com/blog/piot-relay-zero-case-assembly-instructions>
-* <https://www.ponoko.com/blog/how-to-make/how-to-make-snug-joints-in-acrylic/>
-* <https://www.bit-tech.net/guides/modding/a_modders_guide_to_acrylic/3/>
-* <http://store.curiousinventor.com/blog/how-to-make-cheap-lasercut-custom-boxes-for-your-diy-electronics/>
-* <http://discuss.arachnidlabs.com/t/easier-lasercut-boxes-with-custom-brackets/177>
-* <https://makezine.com/2012/04/13/cnc-panel-joinery-notebook/>
-* <https://makezine.com/2015/10/29/skill-builder-acrylic/>
-* <https://www.picocluster.com/>
-
-Some also used lego technics such as
-
-* <https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9048>
+* T-nut design: A convenient connector using screws ant nuts to
+  connect walls in 90 degree angles [[link]](http://www.instructables.com/id/How-to-Make-Anything-Using-Acrylic-and-Machine-Sc/)
+* How To: Make Cheap LaserCut Custom Boxes for Your DIY Electronics,
+  includes t-bolt design [[link]](http://store.curiousinventor.com/blog/how-to-make-cheap-lasercut-custom-boxes-for-your-diy-electronics/)  
+* A tutorial on how to make snug joints. It has some good tips of
+  placing circles as stress relieve points [[link]](https://www.ponoko.com/blog/how-to-make/how-to-make-snug-joints-in-acrylic/)
+* Screw only: A design to just use screws to connect the walls. The
+  disadvantage is that the receiving ends need to be cut by a hand tool. [[link]](http://skpang.co.uk/blog/archives/152)
+* A sample design that just uses groves, so this would have to be
+  glued. [[link]](http://www.uugear.com/product/acrylic-case-for-zero4u-and-raspberry-pi-zero-clear/)
+* Another design with groves that needs to be glued [[link]](https://www.modmypi.com/blog/piot-relay-zero-case-assembly-instructions)
+* A guide to handle acrylic [[link]](https://www.bit-tech.net/guides/modding/a_modders_guide_to_acrylic/3/)
+* Some special brackets which could be 3 D printed. These brackets
+  have the advantage that only slots and holes need to be placed
+  [[link]](http://discuss.arachnidlabs.com/t/easier-lasercut-boxes-with-custom-brackets/177). 
+* Although CNC, here are some connector ideas that could be replicated
+  or modified
+  for acrylic [[link]](https://makezine.com/2012/04/13/cnc-panel-joinery-notebook/)
+* Some tips for working with acrylic in general [[link]](https://makezine.com/2015/10/29/skill-builder-acrylic/)
+* [[link]](https://www.picocluster.com/)
+* A design based on metal beams to create the outside. This may be
+  more expensive, but stable [[link]](https://www.phidgets.com/docs/T-Slot_Primer)
+* Some also used lego technics [[link]](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=9048)
 
 We also previously indicated that the width of the mounting holes on a
 Pi is about 7 spaces wide, making it possible to create a lego technic

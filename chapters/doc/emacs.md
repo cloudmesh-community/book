@@ -1,10 +1,10 @@
 Emacs
 -----
 
-One of the most useful short manuals for emacs is the following refrence
+One of the most useful short manuals for emacs is the following reference
 card. It takes some time to use this card efficiently, but the most
 important commands are written on it. Generations of students have
-litterally been just presented with this card and they learned emacs
+literally been just presented with this card and they learned emacs
 from it.
 
 -   <https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf>
@@ -91,7 +91,7 @@ the buffer." modes are typically activated by ending such as `.py`,
 
 ### Org Mode
 
-Emacs has some very advanced fetures that you can activate via a mode.
+Emacs has some very advanced features that you can activate via a mode.
 One such feature is to organize a TODO list via org-mode.
 
 Instead of us designing our own video, we point to a community tutorial
@@ -100,8 +100,8 @@ such as
 \video{Cloud}{18:04}{Emacs org-mode}{https://www.youtube.com/watch?v=Kde5YVUwDTQ}{Youtube}
 ### Programming Python with Emacs
 
-Emacs comes by default with syntax hughl lighting for python when you
-edit a `.py` file. This is realy all you need. It also comes with a
+Emacs comes by default with syntax highlighting for python when you
+edit a `.py` file. This is really all you need. It also comes with a
 python ide that you can use and customize.
 
 Python auto-completion for Emacs:
@@ -133,9 +133,9 @@ nano, pico or others that work in a terminal.
 
 ### LaTeX and Emacs
 
-LaTeX is directly supported by emacs and nothinghas to be changed.
+LaTeX is directly supported by emacs and nothing has to be changed.
 However, a collection of information about additional LaTeX features for
-emacs is avalable at
+emacs is available at
 
 -   <https://www.emacswiki.org/emacs/LaTeX>
 
@@ -144,9 +144,9 @@ Of interest are for example also
 * `M-x flyspell-mode`: allowing to do spell checking in the window
 * predictive mode: https://www.emacswiki.org/emacs/PredictiveMode
 * preview latex
-*whizzy tex
+* whizzy tex
 
-However instead of previes and whizzy tex we recommend to use
+However instead of previews and whizzy tex we recommend to use
 
 -   <https://www.emacswiki.org/emacs/LatexMk>
 

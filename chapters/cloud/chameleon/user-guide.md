@@ -87,7 +87,7 @@ without configuring an SSH key.
 
 Next is 'Networking', where you select which network should be
 associated with the instance. Click the + next to your your project's
-private network (PROJECT\_NAME-net), not ext-net.
+private network (PROJECT_NAME-net), not ext-net.
 
 ![image](images/openstack_alamo_networking.png){width="0.8\columnwidth"}
 
@@ -162,7 +162,7 @@ instructions](http://docs.openstack.org/user-guide/common/cli_install_openstack_
 If using pip, we recommend setting up a virtualenv.
 
 The SSL certificate used by Chameleon is trusted by most operating
-systems, so you shouldn't have to provide any extra options to OpenStack
+systems, so you should not have to provide any extra options to OpenStack
 commands, i.e. "nova list" should work. If your command-line tool
 complains about the certificate, [download the Mozilla CA bundle from
 the cURL website](http://curl.haxx.se/docs/caextract.html) and run the

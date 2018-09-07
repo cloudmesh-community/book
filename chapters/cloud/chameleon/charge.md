@@ -82,7 +82,7 @@ no charges will apply.
 Project Allocation Size
 -----------------------
 
-CUrrently Chameleon is operating on a "soft allocation model" where each
+Currently Chameleon is operating on a "soft allocation model" where each
 project, if approved, will receive a startup allocation of 20,000 SUs
 for six months that can be both recharged (i.e., more SUs can be added)
 and renewed (i.e., the duration can be extended) via submitting a

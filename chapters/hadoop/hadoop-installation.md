@@ -11,13 +11,13 @@ WHAT IS THE DIFFERENCE
 In this section we use Hadoop 3.0.0 and we install Hadoop locally in
 Ubuntu 16.04.
 
-Instalation
+Installation
 -----------
 
 In this section we will document how to install Hadoop along with the
 Yarn resource manager. We assume that you have ssh, and rsync installed.
 
-### Prerequisits
+### Prerequisites
 
     sudo apt-get install ssh
     sudo apt-get install rsync
@@ -51,7 +51,7 @@ hadoop user.
 
 Follow the instructions as provided in the commandline. When you see the
 following console input, press ENTER. Here only we will create password
-less keys. IN general this is not a good idead, but for this case we
+less keys. IN general this is not a good idea, but for this case we
 make an exception.
 
     Enter file in which to save the key (/home/hduser/.ssh/id_rsa):

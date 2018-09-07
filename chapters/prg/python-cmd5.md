@@ -48,7 +48,7 @@ cd ~/github
 
 git clone https://github.com/cloudmesh/cloudmesh.common.git
 git clone https://github.com/cloudmesh/cloudmesh.cmd5.git
-git clone https://github.com/cloudmesh/cloudmesh.sys.git  
+git clone https://github.com/cloudmesh/cloudmesh.sys.git
 
 cd ~/github/cloudmesh.common
 python setup.py install
@@ -64,7 +64,7 @@ pip install .
 ```
 
 The common directory contains some useful libraries, the cmd5 repository
-contains the shell, while the sys directory contains a command to
+>contains the shell, while the sys directory contains a command to
 generate extensions to cloudmesh.
 
 #### Execution
@@ -177,19 +177,25 @@ dynamic fashion.
 
 #### Exercises
 
-[\[E:CMD5.1:\]]{#E:CMD5.1: label="E:CMD5.1:"} Install cmd5 on your
-computer.
+E.CMD5.1
 
-[\[E:CMD5.2:\]]{#E:CMD5.2: label="E:CMD5.2:"} Write a new command with
-your firstname as the command name.
+> Install cmd5 on your computer.
 
-[\[E:CMD5.3:\]]{#E:CMD5.3: label="E:CMD5.3:"} Write a new command and
-experiment with docopt syntax and argument interpretation of the dict
-with if conditions.
+E. CMD5.2
 
-[\[E:CMD5.4:\]]{#E:CMD5.4: label="E:CMD5.4:"} If you have useful
-extensions that you like us to add by default, please work with us.
+> Write a new command with your firstname as the command name.
 
-[\[E:CMD5.5\]]{#E:CMD5.5 label="E:CMD5.5"} At this time one needs to
-quote in some commands the `"` in the shell command line. Develop and
-test code that fixes this.
+E.CMD5.3
+
+> Write a new command and experiment with docopt syntax and argument
+>  interpretation of the dict with if conditions.
+
+E.CMD5.4
+
+> If you have useful extensions that you like us to add by default,
+>  please work with us.
+
+E.CMD5.5 
+
+> At this time one needs to quote in some commands the `"` in the
+> shell command line. Develop and test code that fixes this.

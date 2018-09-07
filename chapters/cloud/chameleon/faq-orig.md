@@ -316,7 +316,7 @@ Account Management Troubleshooting
 Chameleon relies on TACC's Identity Service for account management. If
 you already have a TACC account, possibly
 through [XSEDE](http://www.xsede.org) or directly through TACC, then you
-should use that account to log in to Chameleon. If you don't know your
+should use that account to log in to Chameleon. If you donot know your
 TACC password, you can [reset your
 password](https://www.chameleoncloud.org/password-reset). After
 resetting your password you should be able to log in to Chameleon.
@@ -426,7 +426,7 @@ If you are adding a complex appliance, skip the image ID fields and
 enter your template instead in the dedicated text box.
 
 As always, if you encounter any problems or want to share with us
-additional improvements we should do to the process, please don't
+additional improvements we should do to the process, please donot
 hesitate to [submit a ticket](https://www.chameleoncloud.org/help/). 
 
 ### How can I manage an appliance on Chameleon Appliance Catalog?
@@ -497,7 +497,7 @@ times when no more resources are available. If the error persists,
 please [open a ticket with our help
 desk](https://www.chameleoncloud.org/user/help/).
 
-### Why can't I ping or SSH to my instance?
+### Why canot I ping or SSH to my instance?
 
 While the possibility that the system is being taking over by nanites
 should not be discounted too easily, it is always prudent to first
@@ -591,10 +591,10 @@ earlier.
 
 Whenever you are creating an instance in Chameleon, you will have an
 option to select the Public Key you just imported. Once selected, this
-public key will be inserted into the instance's \~/.ssh/known\_hosts
+public key will be inserted into the instance's \~/.ssh/known_hosts
 file. When a user attempts to connect to the instance, the private key
 provided by the user will be validated against this public key in the
-known\_hosts file.
+known_hosts file.
 
 ###### Connect to an instance from your terminal
 
@@ -628,7 +628,7 @@ passphrases are not necessary!
 
 Save both the public and private keys into a file of your choice using
 the "Save public key" and "Save private key" buttons; name them
-something obvious like "public\_key" and "private\_key" so that you can
+something obvious like "public_key" and "private_key" so that you can
 distinguish between the two.
 
 Before closing this window, select the entire public key and copy it

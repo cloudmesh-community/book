@@ -4,6 +4,7 @@ How to Store Data (NoSQL)
 \TODO{Tyler: use our video and slide macro}
 -   11 Video lectures (1 hour 26 minutes 8 seconds)
 
+
 RDBMS vs. NoSQL
 ---------------
 

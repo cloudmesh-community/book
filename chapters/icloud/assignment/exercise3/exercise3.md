@@ -18,11 +18,11 @@ Deliverables
 ------------
 
 You are required to turn in the following items in a zip file
-(username\_HadoopBlast.zip)
+(username_HadoopBlast.zip)
 
 -   The source code of Hadoop Blast you implemented.
 
--   Technical report (username\_HadoopBlast\_report.docx) that answers
+-   Technical report (username_HadoopBlast_report.docx) that answers
     the following questions.
 
     -   What is Hadoop Distributed Cache and how is it used in this
@@ -43,14 +43,14 @@ You are required to turn in the following items in a zip file
         input files are larger than the default HDFS block size? Briefly
         explain why. \[Hint: you can test what will happen by
         concatenating the same input file multiple times to create a
-        larger input file in the resources/blast\_input folder\]
+        larger input file in the resources/blast_input folder\]
 
     -   If you wanted to extend this program such that all output files
         will be concatenated into a single file, what key and value
         pairs would you need to emit from the map task? Also, how would
         you use these in the reduce that you would need to add?
 
--   The 4 output FASTA files: celllines\_1.fa to celllines\_4.fa.
+-   The 4 output FASTA files: celllines_1.fa to celllines_4.fa.
 
 Evaluation
 ----------
@@ -161,7 +161,7 @@ View the result
 ---------------
 
 The result is generated at
-/root/MoocHomeworks/HadoopBlast/output/HDFS\_blast\_output . There
+/root/MoocHomeworks/HadoopBlast/output/HDFS_blast_output . There
 should be 4 output FASTA files with .fa extension
 
 ``` {.bash language="bash"}

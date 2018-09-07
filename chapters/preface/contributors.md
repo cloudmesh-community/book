@@ -1,23 +1,35 @@
 ## Contributors
 
 
-The following people have contributed to this document. If you find
-your name missing, please let us know or better create a pull request,
-and we add you.
+The following people have contributed to some chapters and documents
+hosted at 
 
-* Detect screen: Fugang Wang
+* <https://github.com/cloudmesh-community/book>
+
+If you find your name missing, please let us know or better
+create a pull request, and we add you.
 
 We like to thank the following contributors in alphabetical order by
 lastname, firstname
 
-* Arnav;
+* Abeykoon, Vibhatha;
+  Ansaldo, Diego;
+  Arnav;
+  Baltson, Tyler;
   Chen, Min;
-  Gianlupi, Juliano 
+  Feng, Bo;
+  Gianlupi, Juliano;
   Goutham, Arra;
   Guo, Yue;
-  Kaul, Naveen
+  Jiang, Miao;
+  Kaul, Naveen;
   Kugan, Uma;
-  Sobolik; Bertolt
-  Whitson, Tim 
+  Lee, Hyungro;
+  Rashmi, Ray;
+  Sobolik, Bertolt;
+  Sriramullu, Anand;
+  Whitson, Tim; 
+  Zayin, Eliyah
+
 
 

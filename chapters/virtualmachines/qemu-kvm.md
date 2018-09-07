@@ -14,7 +14,7 @@ There are various technologies handling machine virtualization for
 resource sharing and CPU architecture emulating. In this tutorial,
 `libvirt`, KVM and QEMU are covered. `libvirt` is a system library for
 virtualization, which provides low-level abstraction. KVM is a
-kernal-based virtualization solution, and QEMU is a suite of emulators.
+kernel-based virtualization solution, and QEMU is a suite of emulators.
 Cloud providers, such as AWS, Azure, and Google, use these technologies
 for compute instance virtualization. OpenStack and Kubernetes also adopt
 these technologies.
@@ -77,7 +77,7 @@ disk. From the perspective of the guest OS, it actually is a hard disk,
 and it can create its own filesystem on the virtual disk.
 
 You can download a few guest OS images from the [QEMU
-website](https://wiki.qemu.org/Testing/System_Images). System\_Images,
+website](https://wiki.qemu.org/Testing/System_Images). System_Images,
 including a simple 8 MB image of a Linux distro (which is meant
 primarily for testing; note that it lacks the e1000 driver and therefore
 cannot do networking out-of-the-box). To run it, download and unzip the
@@ -121,7 +121,7 @@ To create an image file with the size of 10GB and `qcow2` format
 Note that a new file called "testing-image.img" is now created at your
 home folder (or the place where you run the terminal). Note also that
 the size of this file is not 10 Gigabytes, it's around 150KB only; QEMU
-won't use any space unless needed by the virtual operating system, but
+will not use any space unless needed by the virtual operating system, but
 it will set the maximum allowed space for that image to 10 Gigabytes
 only.
 
@@ -244,7 +244,7 @@ General
 
 -   Official website for `libvirt` is here: https://libvirt.org/
 
--   Home page of KVM is here: https://www.linux-kvm.org/page/Main\_Page
+-   Home page of KVM is here: https://www.linux-kvm.org/page/Main_Page
 
 -   QEMU home page: https://www.qemu.org/
 

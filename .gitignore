@@ -1,4 +1,10 @@
+package*.json
+node_modules
 # Byte-compiled / optimized / DLL files
+Makefile.publish
+dest
+.idea
+.#*
 __pycache__/
 *.py[cod]
 *$py.class

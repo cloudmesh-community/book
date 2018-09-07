@@ -32,7 +32,7 @@ ahead and download the remaining three files with `wget`.
 
 In this example, we will use three modules, `numpy`, `pandas` and
 `matplotlib`. If you set up `virtualenv` as described in the Python
-tutorial \<python\_intro\>, the first two of these are already installed
+tutorial \<python_intro\>, the first two of these are already installed
 for you. To install `matplotlib`, make sure you've activated your
 `virtualenv` and use `pip`:
 
@@ -54,7 +54,7 @@ the Python interpreter and load the citations data for Q1 2016
     >>> data = pd.read_csv('2016-first-quarter-citations.csv')
 
 If the first `import` statement seems confusing, take a look at the
-Python tutorial \<python\_intro\>. The next three `import` statements
+Python tutorial \<python_intro\>. The next three `import` statements
 load each of the modules we will use in this example. The final line
 uses Pandas' `read_csv` function to load the data into a Pandas
 `DataFrame` data structure.
@@ -213,7 +213,7 @@ There is a lot more to working with `pandas`, `numpy` and `matplotlib`
 than we can show you here, but hopefully this example has piqued your
 curiosity.
 
-Don't worry if you don't understand everything in this example. For a
+Donot worry if you donot understand everything in this example. For a
 more detailed explanation on these modules and the examples we did,
 please take a look at the tutorials below. The `numpy` and `pandas`
 tutorials are mandatory if you want to be able to use these modules, and
@@ -274,18 +274,13 @@ Python-based ecosystem of open-source software for mathematics, science,
 and engineering. In particular, these are some of the core packages:
 
 -   NumPy
-
 -   IPython
-
 -   Pandas
-
 -   Matplotlib
-
 -   Sympy
-
 -   SciPy library
 
-It is thus an agglomeration of useful pacakes and will prbably sufice
+It is thus an agglomeration of useful pacakes and will probably suffice
 for your projects in case you use Python.
 
 #### ggplot
@@ -307,17 +302,14 @@ plots.
 
 -   Gallery:
     <http://stanford.edu/~mwaskom/software/seaborn/examples/index.html>
-
 -   Original Tutorial:
     <http://stanford.edu/~mwaskom/software/seaborn/tutorial.html>
-
 -   Additional Tutorial:
     <https://stanford.edu/~mwaskom/software/seaborn/tutorial/distributions.html>
 
 Here are some examples from a previous class:
 
 -   <https://github.com/bigdata-i523/hid231/blob/master/experiment/seaborn/seaborn-exercises.ipynb>
-
 -   <https://github.com/bigdata-i523/hid231/blob/master/experiment/learning-jupyter/learning_jupyter_notebook.ipynb>
 
 [\[E:ipynb-export\]]{#E:ipynb-export label="E:ipynb-export"} Take these
@@ -358,7 +350,7 @@ It also allows to present the data in a table.
 
 #### REST
 
--   django REST FRamework <http://www.django-rest-framework.org/>
+-   django REST Framework <http://www.django-rest-framework.org/>
 
 -   flask
     <https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask>

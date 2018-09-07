@@ -45,15 +45,22 @@ def recursive_glob(rootdir='.', pattern='*.md'):
 
     
 def convert(filename):
+    
     with open(filename, 'r') as f:
         content = f.read()
+
 
     link = '[[:cloud:](' + gitbase + filename + ')]{style="float:right"}'
     gitcoderoot = 'https://github.com/cloudmesh/book/tree/master/examples'
     lines = content.split("\n")
-    if "{github}" not in lines[0]:
-        lines[0] = lines[0] + " {github}"
-    content = "\n".join(lines)
+    if "{.unnumbered}" in lines[0]:
+        pass
+    else:
+      if lines[0].startswith("# "):
+          lines[0] = "# [" + lines[0][2:] + "]{.part}"        
+      if "{github}" not in lines[0]:
+          lines[0] = lines[0] + " {github}"
+    content = "\n" + "\n".join(lines)
     content = content.replace("{github}", link)
     content = content.replace("{gitcode}", gitcoderoot)
     filename = filename.replace("../", "")
@@ -70,3 +77,4 @@ for file in files:
         print(file, '->', d)
         mkdir_p(d)
         convert(file)
+        

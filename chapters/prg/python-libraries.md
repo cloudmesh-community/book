@@ -1,5 +1,4 @@
-Installing Libraries
---------------------
+# Python Modules
 
 Often you may need functionality that is not present in Python's
 standard library. In this case you have two option:
@@ -17,6 +16,22 @@ allow us to illustrate the use if virtual environments using the pyenv
 or virtualenv command, and installing and uninstalling PyPi packages
 using pip.
 
+Updateing Pip
+-------------
+
+It is important that you have the newest version of pip installed for your 
+version of python. Let us assume your python is registered with python and 
+you use pyenv, thna you can update 
+pip with 
+
+```bash
+pip install -U pip
+```
+
+without interfeering with a potential system wide installed version of p
+ip that may be needed by the system default version of python. See the 
+setcion about pyenv for more details
+
 Using pip to Install Packages
 -----------------------------
 
@@ -29,13 +44,13 @@ created a package solving it.
 In order to install package from PyPI, use the pip command. We can
 search for PyPI for packages:
 
-``` {.bash}
+```bash
 $ pip search --trusted-host pypi.python.org autopep8 pylint
 ```
 
 It appears that the top two results are what we want so install them:
 
-``` {.bash}
+```bash
 $ pip install --trusted-host pypi.python.org autopep8 pylint
 ```
 
@@ -54,8 +69,8 @@ GUI
 
 Install guizero with the following command:
 
-``` {.bash}
-sudo pip3 install guizero
+```bash
+sudo pip install guizero
 ```
 
 For a comprehensive tutorial on guizero, [click
@@ -65,7 +80,7 @@ here](https://lawsie.github.io/guizero/howto/).
 
 You can install Kivy on OSX as followes:
 
-``` {.bash}
+```bash
 brew install pkg-config sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer
 pip install -U Cython
 pip install kivy
@@ -80,7 +95,7 @@ repository. Which you can fine here
 To run the program, please download it or execute it in cloudmesh.robot
 as follows:
 
-``` {.bash}
+```bash
 cd cloudmesh.robot/projects/kivy
 python swim.py
 ```
@@ -94,13 +109,13 @@ Formatting and Checking Python Code
 
 First, get the bad code:
 
-``` {.bash}
+```bash
 $ wget --no-check-certificate http://git.io/pXqb -O bad_code_example.py
 ```
 
 Examine the code:
 
-``` {.bash}
+```bash
 $ emacs bad_code_example.py
 ```
 
@@ -114,7 +129,7 @@ Using autopep8
 
 We can now run the bad code through autopep8 to fix formatting problems:
 
-``` {.bash}
+```bash
 $ autopep8 bad_code_example.py >code_example_autopep8.py
 ```
 
@@ -125,7 +140,7 @@ It is a good idea to develop a habit of using autopep8 in your
 python-development workflow. For instance: use autopep8 to check a file,
 and if it passes, make any changes in place using the -i flag:
 
-``` {.bash}
+```bash
 $ autopep8 file.py    # check output to see of passes
 $ autopep8 -i file.py # update in place
 ```
@@ -147,7 +162,7 @@ This is only important if you use Futuresystems resources.
 In order to use Python you must log into your FutureSystems account.
 Then at the shell prompt execute the following command:
 
-``` {.bash}
+```bash
 $ module load python
 ```
 
@@ -161,24 +176,23 @@ Ecosystem
 
 ### pypi
 
-Link: [pypi](https://pypi.python.org/pypi)
-
 The Python Package Index is a large repository of software for the
-Python programming language containing a large number of packages
-\[link\]. The nice think about pipy is that many packages can be
-installed with the program 'pip'.
+Python programming language containing a large number of packages,
+many of which can be found on
+[pypi](https://pypi.python.org/pypi). The nice thing about pipy is
+that many packages can be installed with the program 'pip'.
 
-To do so you have to locate the \<package\_name\> for example with the
+To do so you have to locate the \<package_name\> for example with the
 search function in pypi and say on the commandline:
 
-``` {.bash}
+```bash
 $ pip install <package_name>
 ```
 
 where `package_name` is the string name of the package. an example would
-be the package called cloudmesh\_client which you can install with:
+be the package called cloudmesh_client which you can install with:
 
-``` {.bash}
+```bash
 $ pip install cloudmesh_client
 ```
 
@@ -259,15 +273,11 @@ We have however in regards to using other python version additional
 bonus projects such as
 
 -   deploy run and document cloudmesh on ironpython
-
 -   deploy run and document cloudmesh on anaconda, develop script to
     generate a conda package form github
-
 -   deploy run and document cloudmesh on canopy, develop script to
     generate a conda package form github
-
 -   deploy run and document cloudmesh on ironpython
-
 -   other documentation that would be useful
 
 Resources
@@ -284,39 +294,24 @@ learning](https://wiki.python.org/moin/BeginnersGuide/Programmers) as
 well. Additional resources include:
 
 -   <https://virtualenvwrapper.readthedocs.io>
-
 -   <https://github.com/yyuu/pyenv>
-
 -   <https://amaral.northwestern.edu/resources/guides/pyenv-tutorial>
-
 -   <https://godjango.com/96-django-and-python-3-how-to-setup-pyenv-for-multiple-pythons/>
-
 -   <https://www.accelebrate.com/blog/the-many-faces-of-python-and-how-to-manage-them/>
-
 -   <http://ivory.idyll.org/articles/advanced-swc/>
-
 -   <http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html>
-
 -   <http://www.youtube.com/watch?v=0vJJlVBVTFg>
-
 -   <http://www.korokithakis.net/tutorials/python/>
-
 -   <http://www.afterhoursprogramming.com/tutorial/Python/Introduction/>
-
 -   <http://www.greenteapress.com/thinkpython/thinkCSpy.pdf>
-
 -   <https://docs.python.org/3.3/tutorial/modules.html>
-
 -   <https://www.learnpython.org/en/Modules/_and/_Packages>
-
 -   <https://docs.python.org/2/library/datetime.html>
-
 -   <https://chrisalbon.com/python/strings/_to/_datetime.html>
 
 A very long list of useful information are also available from
 
 -   <https://github.com/vinta/awesome-python>
-
 -   <https://github.com/rasbt/python_reference>
 
 This list may be useful as it also contains links to data visualization
@@ -335,25 +330,26 @@ Then hit Go.
 Exercises
 ---------
 
-[\[E:Python.1\]]{#E:Python.1 label="E:Python.1"} Write a python program
-called iterate.py that accepts an integer n from the command line. Pass
-this integer to a function called iterate.
+Python.Lib.1:
 
-The iterate function should then iterate from 1 to n. If the i-th number
-is a multiple of three, print *multiple of 3*, if a multiple of 5 print
-*multiple of 5*, if a multiple of both print *multiple of 3 and 5*, else
-print the value.
+> Write a python program called iterate.py that accepts an integer n
+> from the command line. Pass this integer to a function called iterate.
 
-[\[E:Python.2\]]{#E:Python.2 label="E:Python.2"}
+> The iterate function should then iterate from 1 to n. If the i-th number
+> is a multiple of three, print *multiple of 3*, if a multiple of 5 print
+> *multiple of 5*, if a multiple of both print *multiple of 3 and 5*, else
+> print the value.
 
-1.  Create a pyenv or virtualenv \~/ENV
+E:Python.Lib.2:
 
-2.  Modify your \~/.bashrc shell file to activate your environment upon
-    login.
+> 1.  Create a pyenv or virtualenv ~/ENV
 
-3.  Install the docopt python package using pip
+> 2.  Modify your ~/.bashrc shell file to activate your environment upon
+>     login.
 
-4.  Write a program that uses docopt to define a commandline program.
-    Hint: modify the iterate program.
+> 3.  Install the docopt python package using pip
 
-5.  Demonstrate the program works and submit the code and output.
+> 4.  Write a program that uses docopt to define a commandline program.
+>    Hint: modify the iterate program.
+
+> 5.  Demonstrate the program works and submit the code and output.

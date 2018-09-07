@@ -1,3 +1,17 @@
+# Publications for classes
+
+## e516
+
+Quick links.
+
+* epub: [Cloud Computing](vonLaszewski-cloud.epub)
+
+## Others
+
+* epub: [Class Communication](vonLaszewski-communicate.epub)
+* epub: [Scientific Writing](vonLaszewski-writing-1.epub)
+* pdf:  [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf)
+
 ## Files
 
 ### Build files and dirs
@@ -40,6 +54,7 @@ $ brew install node.
 $ brew install graphviz
 $ npm install --global mermaid-filter
 $ brew install pandoc
+$ brew install pandoc-citeproc
 ```
 
 Once you have installed pandoc you can create the book with our simple
@@ -80,6 +95,5 @@ or simply
 ```bash
 $ make view
 ```
-
 
 

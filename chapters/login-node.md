@@ -1,4 +1,4 @@
-# Login Server
+# Development Compute Server
 
 While interacting with clusters we need a computer from which we can
 log into the cluster. Such a computer could be your Laptop hosting OSX
@@ -18,25 +18,22 @@ that you either purchase a full version of Windows 10 and upgrade to
 it, or you obtain the educational version. Please make sure that you
 do a backup of all your data before you start. The educational version
 of Windows is freely available to students from many educational
-institutions.
+institutions. When you upgrade, use the 64 bit version. Make sure your
+computer supports this.
 
 Furthermore, Microsoft has recently made significant progress in
 supporting Linux on their OS. We recommend that you install it and
-use. Alternatively we recommend that you use `gitbash` to have a Linux
-like experience. Please inform yourself about gitbash and install it.
+use. Alternatively we recommend that you use git for windows which you
+can get from this [link](https://gitforwindows.org/).
 
+## Older Version of Windows or Windows 10 Home
 
-## Older Version of Windows or Windows Home
-
-Older versions of Windows are not supported and if you take one of our
-classes, we will not support you or answer any questions about it. We
-know that these version do not work for more advanced features that
-cloud programs rely on and thus we recommend you update your OS. For
-example we wasted in one case 4 hours of support just because a
-student did not want to tell us that they were using an old version of
-Windows. Please trust us and **do not use such an OS**. You safe yourself
-many hours of work. Instead use a bootable USB stick or buy yourself a
-raspberry PI in case you can not upgrade your OS.
+Older versions of Windows or Windows 10 Home **are not supported**.
+Please trust us and **do not use such an OS**. We recommend you
+upgrade or to just use an OS that you can boot from a USB stick. There
+are for example many tutorials available that explain how to create a
+USB stick that boots Ubuntu. When you upgrade, use the 64 bit
+version. Make sure your computer supports this.
 
 ## Raspberry PI
 
@@ -48,6 +45,7 @@ cable, and $5 for a power plug (never use your Laptop as power source
 as it may damage your laptop), you can get started for about $50. As
 you may want to protect you PI, you can also get a cheap case for
 about $8. When it comes to the power supply, make sure to buy one that
-has a power switch included. This helps when rebooting.
+has a power switch included. This helps when rebooting. To enable this
+solution please see Section [A Single Pi](#a-single-pi).
 
 

@@ -77,7 +77,7 @@ Next build the OpenMPI 3.0.0,
       ./configure --prefix=$BUILD --enable-mpi-java
       make;make install
 
-Make sure the installation is successfull by executing,
+Make sure the installation is successful by executing,
 
       mpirun --version
 
@@ -129,5 +129,5 @@ In order to build packages run the following commands,
 
       bazel build --config=ubuntu //scripts/package:tarpkgs
 
-You can exctract the bazel-bin/scripts/package/twister2-client.tar.gz to
+You can extract the bazel-bin/scripts/package/twister2-client.tar.gz to
 run Twister2.

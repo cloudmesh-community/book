@@ -4,13 +4,13 @@ Interactive Python
 Python can be used interactively. You can enter the interactive mode by
 entering the interactive loop by executing the command:
 
-``` {.python}
+```python
 $ python
 ```
 
 You will see something like the following:
 
-``` {.python}
+```python
 Python 2.7.13 (default, Nov 19 2016, 06:48:10)
 [GCC 5.4.0 20160609] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
@@ -49,7 +49,7 @@ interactive python is to get the type of a value using type():
 
 You can also ask for help about something using help():
 
-``` {.python}
+```python
 >>> help(int)
 >>> help(list)
 >>> help(str)
@@ -58,6 +58,20 @@ You can also ask for help about something using help():
 Using help() opens up a help message within a pager. To navigate you can
 use the spacebar to go down a page w to go up a page, the arrow keys to
 go up/down line-by-line, or q to exit.
+
+Interpreter
+-----------
+
+Although the interactive mode provides a convenient tool to test
+things out you will see quickly that for our class we want to use the
+python interpreter from the commandline. Let us assume the program is
+called `prg.py`. Once you have written it in that file you simply can call it with
+
+```bash
+python prg.py
+```
+
+It is important to name the program with meaningfull names.
 
 Python 3 Features in Python 2
 -----------------------------
@@ -68,7 +82,7 @@ syntax when it is supported also in python 2. One of the most used
 functions is the print statement that has in python 3 parentheses. To
 enable it in python 2 you just need to import this function:
 
-``` {.python}
+```python
 >>> from __future__ import print_function, division
 ```
 
@@ -81,7 +95,7 @@ reflects Python's underlying philosophy.
 Other functions such as the division also behave differently. Thus we
 use
 
-``` {.python}
+```python 
 >>> from __future__ import division
 ```
 
@@ -91,12 +105,12 @@ newcomer to the language might find more intuitive. In Python 2,
 division / is *floor division* when the arguments are integers, meaning
 that the following
 
-``` {.python}
+```python 
 (5 / 2 == 2) is True
 ```
 
 In Python 3, division / is a floating point division, thus
 
-``` {.python}
+```python 
 (5 / 2 == 2.5) is True
 ```

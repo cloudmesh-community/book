@@ -1,0 +1,12 @@
+\documentclass{article}
+
+\include{graphicx}
+\newcommand{\tightlist}{}
+
+\begin{document}
+\immediate\write18{pandoc markdown-latex.md -o markdown-latex.tex}
+
+\input{markdown-latex}
+
+\end{document}
+

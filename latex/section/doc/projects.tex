@@ -1,0 +1,326 @@
+\chapter{Projects}
+\label{c:projects}
+\index{Projects}
+\FILENAME\
+
+\section{Class: E516}\label{s:e516-project}
+
+\subsection{Scope of Project}
+
+The objective of the project is to define a clear problem statement
+and create a framework to address that problem. This framework must
+include a docker packaged service that includes all necessary
+dependencies necessary to perform the analysis. For example if you are
+using a machine learning algorithm your docker packaged service will
+include the machine learning algorithm which works on a particular
+dataset providing clustered ,classified or regression outputs to the
+user. The final objective is to obtain results in form of graphs or
+tabular mode. In selecting a dataset, you can use a dataset from a
+public dataset like 
+\URL{https://archive.ics.uci.edu/ml/datasets.html}
+and pick a suitable dataset according to your problem statement. Final
+results must be exposed via a REST service. For instance if it is a
+classification problem, the should have the capability of entering a
+new test data set or single data point (meaning a single record) via a
+REST API endpoint and get the expected output in form of a JSON
+object. UI creation is an optional task. This is the overall
+expectation of the project.
+
+\subsection{Deliverables}
+
+\begin{itemize}
+\item Finding a Data Set Size(A good judgement of the datasize would
+  be 100 MB < datasize < 500MB): (Estimated Time 1 hour)
+\item Cleaned Up Data Set: (Estimated Time 0.5 Week)
+\item Spark Mllib or Scikit Learn ML Algorithm Application: (Estimated
+  Time 0.5 Week) (You can use any other library you prefer)
+\item Clustering or Regression or Classification results in Graphical
+  Format (Matplotlib) (GUI optional, save graphs as png). Otherwise
+  you can do some analysis on the dataset the way you propose to do
+  and this way must be explicitly discussed with Professor Gregor. :
+  (Estimated Time 5 days)
+\item Swagger or Flask  Rest Service  to send  a sample data  set and  get output
+  (terminal output is enough): (Estimated Time 1 day) (Completing with Swagger Bonus points)
+\item Take results in a constant environment (ex: Chameleon Cloud or
+  your PC) provide system configuration: (Estimated Time 2 days)
+\item Create a Makefile with running, setting up, sample test case
+  running commands: (Estimated Time 1 hour)
+\item requirement.txt file for pip installation: (Estimated Time < 1 hour)
+\item Package with Docker: (Estimated Time 10 hour)
+\item 8 Page Report including (Abstract, Introduction, Project
+  Procedure, Technology Usage, Results(Training Time breakdown, Data
+  cleaning time breakdown, system set up time, time taken to system
+  launch, define the performance of the machine you're taking
+  results), Conclusion ,Work Distribution (if you have team members): (40 hours)
+\item Dockerfile to run your project. (Your project must run in the
+  docker environment, working project within docker is required).
+\end{itemize}
+
+Total Estimated Time : 3 weeks.
+
+\subsubsection{Grading Scheme}
+
+\begin{itemize}
+\item Working Project Inside Docker + Dockerfile : 60\%
+\item Project Report : 40\%
+\end{itemize}
+
+\subsection{Helpful Chapters}
+
+You can learn how to use docker, referring to section
+\ref{S:docker-local}.  Using docker in Chameleon clouds can be learn
+via section \ref{S:docker-fg}.  Need more clarification regarding
+steps in data cleaning and data processing, refer the section
+\ref{s:e222-proj-exp}.
+
+
+\section{Class: E616}\label{s:e616-project}
+
+\subsection{Scope of Project}
+
+The objective of the project is to define a clear problem statement
+and create a framework to address that problem. This framework must
+include a docker packaged service that includes all necessary
+dependencies necessary to perform the analysis. For example if you are using a
+machine learning algorithm your docker packaged service will include the
+machine learning algorithm which works on a particular dataset
+providing clustered ,classified or regression outputs to the user. The
+final objective is to obtain results in form of graphs or tabular
+mode. In selecting a dataset, you can use a dataset from a public
+dataset like \URL{https://archive.ics.uci.edu/ml/datasets.html} and
+pick a suitable dataset according to your problem statement. Final
+results must be exposed via a REST service. For instance if it is a
+classification problem, the should have the capability of entering a
+new test data set or single data point (meaning a single record) via a
+REST API endpoint and get the expected output in form of a JSON
+object. UI creation is an optional task. This is the overall
+expectation of the project. 
+
+\subsection{Deliverables}
+
+\begin{itemize}
+\item Finding a Data Set Size(A good judgement of the datasize would
+  be 100 MB < datasize < 500MB): (Estimated Time 1 hour)
+\item Cleaned Up Data Set: (Estimated Time 0.5 Week)
+\item Spark Mllib or Scikit Learn ML Algorithm Application: (Estimated
+  Time 0.5 Week) (You can use any other library you prefer)
+\item Clustering or Regression or Classification results in Graphical
+  Format (Matplotlib) (GUI optional, save graphs as png). Otherwise
+  you can do some analysis on the dataset the way you propose to do
+  and this way must be explicitly discussed with Professor Gregor. :
+  (Estimated Time 5 days)
+\item Swagger or Flask  Rest Service  to send  a sample data  set and  get output
+  (terminal output is enough): (Estimated Time 1 day) (Completing with
+  Swagger Bonus points)
+\item Take results in a constant environment (ex: Chameleon Cloud or
+  your PC) provide system configuration: (Estimated Time 2 days)
+\item Create a Makefile with running, setting up, sample test case
+  running commands: (Estimated Time 1 hour)
+\item requirement.txt file for pip installation: (Estimated Time < 1 hour)
+\item Package with Docker: (Estimated Time 10 hour)
+\item 8 Page Report including (Abstract, Introduction, Project
+  Procedure, Technology Usage, Results(Training Time breakdown, Data
+  cleaning time breakdown, system set up time, time taken to system
+  launch, define the performance of the machine you're taking
+  results), Conclusion ,Work Distribution (if you have team members): (40 hours)
+\item Dockerfile to run your project. (Your project must run in the
+  docker environment, working project within docker is required).
+\end{itemize}
+
+Total Estimated Time : 3 weeks.
+
+\subsection{Helpful Chapters}
+
+You can learn how to use docker, referring to section
+\ref{S:docker-local}.  Using docker in Chameleon clouds can be learn
+via section \ref{S:docker-fg}.  Need more clarification regarding
+steps in data cleaning and data processing, refer the section
+\ref{s:e222-proj-exp}.
+
+\subsubsection{Grading Scheme}
+
+\begin{itemize}
+\item Working Project Inside Docker + Dockerfile : 60\%
+\item Project Report : 40\%
+\end{itemize}
+
+\section{Class: i524}\label{s:i524-project}
+
+\subsection{Scope of Project}
+
+The objective of the project is to define a clear problem statement
+and create a framework to address that problem. This framework must
+include a docker packaged service that includes all necessary
+dependencies necessary to perform the analysis. For example if you are
+using a machine learning algorithm your docker packaged service will
+include the machine learning algorithm which works on a particular
+dataset providing clustered ,classified or regression outputs to the
+user. The final objective is to obtain results in form of graphs or
+tabular mode. In selecting a dataset, you can use a dataset from a
+public dataset like \URL{https://archive.ics.uci.edu/ml/datasets.html}
+and pick a suitable dataset according to your problem statement. Final
+results must be exposed via a REST service. For instance if it is a
+classification problem, the should have the capability of entering a
+new test data set or single data point (meaning a single record) via a
+REST API endpoint and get the expected output in form of a JSON
+object. UI creation is an optional task. This is the overall
+expectation of the project.
+
+\subsection{Deliverables}
+
+\begin{itemize}
+\item Finding a Data Set Size(A good judgement of the datasize would
+  be 100 MB < datasize < 500MB): (Estimated Time 1 hour)
+\item Cleaned Up Data Set: (Estimated Time 0.5 Week)
+\item Spark Mllib or Scikit Learn ML Algorithm Application: (Estimated
+  Time 0.5 Week) (You can use any other library you prefer)
+\item Clustering or Regression or Classification results in Graphical
+  Format (Matplotlib) (GUI optional, save graphs as png). Otherwise
+  you can do some analysis on the dataset the way you propose to do
+  and this way must be explicitly discussed with Professor Gregor. :
+  (Estimated Time 5 days)
+\item Swagger or Flask  Rest Service  to send  a sample data  set and  get output
+  (terminal output is enough): (Estimated Time 1 day) (Completing with Swagger Bonus points)
+\item Take results in a constant environment (ex: Chameleon Cloud or
+  your PC) provide system configuration: (Estimated Time 2 days)
+\item Create a Makefile with running, setting up, sample test case
+  running commands: (Estimated Time 1 hour)
+\item requirement.txt file for pip installation: (Estimated Time < 1 hour)
+\item Package with Docker: (Estimated Time 10 hour)
+\item 8 Page Report including (Abstract, Introduction, Project
+  Procedure, Technology Usage, Results(Training Time breakdown, Data
+  cleaning time breakdown, system set up time, time taken to system
+  launch, define the performance of the machine you're taking
+  results), Conclusion ,Work Distribution (if you have team members): (40 hours)
+\item Dockerfile to run your project. (Your project must run in the
+  docker environment, working project within docker is required).
+\end{itemize}
+
+Total Estimated Time : 3 weeks.
+
+\subsection{Helpful Chapters}
+
+You can learn how to use docker, referring to section
+\ref{S:docker-local}.  Using docker in Chameleon clouds can be learn
+via section \ref{S:docker-fg}.  Need more clarification regarding
+steps in data cleaning and data processing, refer the section
+\ref{s:e222-proj-exp}.
+
+\subsubsection{Grading Scheme}
+
+\begin{itemize}
+\item Working Project Inside Docker + Dockerfile : 60\%
+\item Project Report : 40\%
+\end{itemize}
+
+\section{Class: E222}\label{s:classe22-proj}
+
+For the final project in this class you need to do the following.
+
+\begin{itemize}
+\item Find a dataset : A sample data repository can be found at the
+  link below however you are free to use data from elsewhere, like
+  scikit learn libraries. 
+  \URL{https://archive.ics.uci.edu/ml/datasets.html}
+\item Use Scikit Learn Library to run Machine Learning algorithm
+  depending on your problem.
+\item Do some classifications, clustering or a regression calculation
+  using a machine learning algorithm.
+\item Use the results from classification to draw charts. You can use
+  matplotlib to do this.
+\item Use REST api to tun ML algorithm i.e. in k-means the user
+  should be able to change the cluster number (k) through a RESTful
+  service.
+\item Use Flask Rest API to expose the data to the viewers. So people
+  can send a data set and get the outputs as a json object.
+\end{itemize}
+
+\begin{comment}
+\subsection{Simple Explained Project}\label{s:e222-proj-exp}
+
+First select a simple data set like Adult data set from the above Data
+Repository. If you read through the description in the data set, you
+can find out that this data set is a classifiable data set. And also
+it says there are 14 attributes per each data sample and there are
+48842 data points with multiple classes. For the classification
+problem, you can use an algorithm like Support Vector Machines and do
+the classification using scikit learn SVM
+\URL{http://scikit-learn.org/stable/modules/svm.html}. Or you can view
+this problem as a regression problem if you want to predict the age of
+a particular person
+\URL{http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html}.
+
+First you need to clean up the data. For instance consider the following data point in the data set. 
+
+\begin{lstlisting}
+32,  Private, 205019, Assoc-acdm, 12, Never-married, Sales, Not-in-family, Black, Male, 0, 0, 50, United-States, <=50K
+\end{lstlisting}
+
+The expected output for this set of features is the age 32.
+
+In your programme first you need to separate age column to a separate
+file like y.csv and keep features in a file called, x.csv.
+\begin{lstlisting}
+Features: Private, 205019, Assoc-acdm, 12, Never-married, Sales, Not-in-family, Black, Male, 0, 0, 50, United-States, <=50K
+Expected Output : 32
+\end{lstlisting}
+
+So you will be feeding x.csv as feature data and y.csv as
+corresponding outputs. We do this because, the ML algorithms only
+understand numbers.
+
+But there is an important thing that you need to do when cleaning up
+the data in the early stages of the project. Choose numerical values
+for string fields.  For instance workclass or the first attribute in
+the feature vector.  workclass: Private, Self-emp-not-inc,
+Self-emp-inc, Federal-gov, Local-gov, State-gov, Without-pay,
+Never-worked.  You can pick values as Private = 0, Self-emp-not-inc =
+1, etc. Data preprocessing will take a longer time, but that has to be done. 
+
+
+Then we need to show these data to the user in form of tabular or
+chart representation. For this purpose you should use Python Pandas
+and Matplotlib.  Now you have completed 80 percent of your
+project. Then you must give a functionality to users. Now you need to
+feed these data to the Linear Regression algorithm and get results and
+then use matplotlib to show the regression curve. User submits a datapoint
+in form of the original data format.
+
+\begin{lstlisting}
+User Input: Private, 205019, Assoc-acdm, 12, Never-married, Sales, Not-in-family, Black, Male, 0, 0, 50, United-States, <=50K
+Expected Output : 12
+Predicted Output : 12.5
+\end{lstlisting}
+
+This way you can compare the accuracy of your training model.
+\end{comment}
+
+\subsection{Deliverables}
+
+\begin{itemize}
+\item Find and clean up data set 
+\item Scikit Learn ML Algorithm Application to cleaned up data set
+\item Clustering or Regression or Classification results in Graphical
+  Format (Matplotlib) (GUI not needed, save graphs as png)
+\item Flask Rest service to tune ML algorithm
+\item Flask  Rest Service  to send  a sample data  set and  get output
+  (terminal output is enough)
+\item Create a Makefile with running, setting up, sample test case
+  running commands
+\item requirement.txt file for pip installation
+\item Package with Docker
+\item Report including (Abstract, Introduction, Project
+  Procedure, Technology Usage, Results, Work Distribution (if you have
+  team members)
+\end{itemize}
+
+The remainder of this semester will be used to complete this
+project. 
+
+\subsubsection{Grading Scheme}
+
+\begin{itemize}
+\item Working Project Inside Docker + Dockerfile : 60\%
+\item Project Report : 40\%
+\end{itemize}
+

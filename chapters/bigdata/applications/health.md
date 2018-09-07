@@ -1,5 +1,4 @@
-Health Informatics
-------------------
+# Health Informatics
 
 [:scroll: Health Informatics
 (131)](https://drive.google.com/open?id=0B6wqDMIyK2P7UGRJNmlkYkNkQk0)
@@ -21,7 +20,7 @@ health including wearables. A study looks at 4 scenarios for healthcare
 in 2032. Two are positive, one middle of the road and one negative. The
 final topic is Genomics, Proteomics and Information Visualization.
 
-### Big Data and Health
+## Big Data and Health
 
 This lesson starts with general aspects of Big Data and Health including
 listing subareas where Big data important. Data sizes are given in
@@ -31,7 +30,7 @@ movement, with sizes and access to European Bioinformatics Institute.
 [:clapper: Big Data and Health
 (10:02)](https://www.youtube.com/watch?v=ZkM-yZJQ1Cg)
 
-### Status of Healthcare Today
+## Status of Healthcare Today
 
 This covers trends of costs and type of healthcare with low cost genomes
 and an aging population. Social media and government Brain initiative.
@@ -39,7 +38,7 @@ and an aging population. Social media and government Brain initiative.
 [:clapper: Status of Healthcare Today
 (16:09)](https://www.youtube.com/watch?v=x9TpdMBqYrk)
 
-### Telemedicine (Virtual Health)
+## Telemedicine (Virtual Health)
 
 This describes increasing use of telemedicine and how we tried and
 failed to do this in 1994.
@@ -47,23 +46,23 @@ failed to do this in 1994.
 [:clapper: Telemedicine
 (8:21)](https://www.youtube.com/watch?v=Pe4CVXQaL_U)
 
-### Medical Big Data in the Clouds
+## Medical Big Data in the Clouds
 
 An impressive exemplar Cloud-based medicine system from Potsdam.
 
 [:clapper: Medical Big Data in the Clouds
 (15:02)](https://www.youtube.com/watch?v=GldSVijkJcM)
 
-#### Medical image Big Data
+### Medical image Big Data
 
 [:clapper: Midical Image Big Data
 (6:33)](https://www.youtube.com/watch?v=GOcVtwx2R2k)
 
-#### Clouds and Health
+### Clouds and Health
 
 [:clapper: Clouds and Health (4:35)](http://youtu.be/9Whkl_UPS5g)
 
-#### McKinsey Report on the big-data revolution in US health care
+### McKinsey Report on the big-data revolution in US health care
 
 This lesson covers 9 aspects of the McKinsey report. These are the
 convergence of multiple positive changes has created a tipping point for
@@ -83,7 +82,7 @@ transformation; Companies must develop a range of big data capabilities.
 [:clapper: McKinsey Report
 (14:53)](https://www.youtube.com/watch?v=fu-TWnIk980)
 
-#### Microsoft Report on Big Data in Health
+### Microsoft Report on Big Data in Health
 
 This lesson identifies data sources as Clinical Data, Pharma & Life
 Science Data, Patient & Consumer Data, Claims & Cost Data and
@@ -93,7 +92,7 @@ analytics and Social analytics.
 [:clapper: Microsoft Report on Big Data in Health
 (2:26)](http://youtu.be/PjffvVgj1PE)
 
-#### EU Report on Redesigning health in Europe for 2020
+### EU Report on Redesigning health in Europe for 2020
 
 This lesson summarizes an EU Report on Redesigning health in Europe for
 2020. The power of data is seen as a lever for change in My Data, My
@@ -104,7 +103,7 @@ health and wealth.
 [:clapper: EU Report on Redesigning health in Europe for 2020
 (5:00)](http://youtu.be/9mbt_ZSs0iw)
 
-#### Medicine and the Internet of Things
+### Medicine and the Internet of Things
 
 The Internet of Things will have great impact on health including
 telemedicine and wearables. Examples are given.
@@ -112,7 +111,7 @@ telemedicine and wearables. Examples are given.
 [:clapper: Medicine and the Internet of Things
 (8:17)](https://www.youtube.com/watch?v=Jk3EeFzZnuU)
 
-#### Extrapolating to 2032
+### Extrapolating to 2032
 
 A study looks at 4 scenarios for healthcare in 2032. Two are positive,
 one middle of the road and one negative.
@@ -120,7 +119,7 @@ one middle of the road and one negative.
 [:clapper: Extrapolating to 2032
 (15:13)](https://www.youtube.com/watch?v=a5G4HACeokg)
 
-#### Genomics, Proteomics and Information Visualization
+### Genomics, Proteomics and Information Visualization
 
 A study of an Azure application with an Excel frontend and a cloud BLAST
 backend starts this lesson. This is followed by a big data analysis of
@@ -163,7 +162,7 @@ trees.
 [:scroll: Proteomics and Information Visualization
 (131)](https://drive.google.com/open?id=0B8936_ytjfjmX0lEMWhMX2kwRHc)
 
-#### Resources
+### Resources
 
 -   <https://wiki.nci.nih.gov/display/CIP/CIP+Survey+of+Biomedical+Imaging+Archives>
 -   [http://grids.ucs.indiana.edu/ptliupages/publications/Where\\%20does\\%20all\\%20the\\%20data\\%20come\\%20from\\%20v7.pdf](http://grids.ucs.indiana.edu/ptliupages/publications/Where\%20does\%20all\%20the\%20data\%20come\%20from\%20v7.pdf)

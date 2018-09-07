@@ -82,7 +82,7 @@ If you are adding a complex appliance, skip the image ID fields and
 enter your template instead in the dedicated text box.
 
 As always, if you encounter any problems or want to share with us
-additional improvements we should do to the process, please don't
+additional improvements we should do to the process, please donot
 hesitate to [submit a ticket](https://www.chameleoncloud.org/help/).
 
 ### How can I manage an appliance on Appliance Catalog?
@@ -152,7 +152,7 @@ times when no more resources are available. If the error persists,
 please [open a ticket with our help
 desk](https://www.chameleoncloud.org/user/help/).
 
-### Why can't I ping or SSH to my instance?
+### Why canot I ping or SSH to my instance?
 
 While the possibility that the system is being taking over by nanites
 should not be discounted too easily, it is always prudent to first check

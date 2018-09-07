@@ -2,17 +2,26 @@ Python Installation
 -------------------
 
 Python is easy to install and very good instructions for most platforms
-can be found on the python.org Web page. We will be using Python 2.7.13
-and/or Python 3 in our activities.
+can be found on the python.org Web page. We will be using Python 2.7.15
+and/or Python 3.7 in our activities.
 
 To manage python modules, it is useful to have
 [pip](https://pypi.python.org/pypi/pip) package installation tool on
 your system.
 
-In the tutorial, we assume that you have a computer with python
+We assume that you have a computer with python
 installed. However, we also recommend that for the class you use
 Python's virtualenv (see below) to isolate your development Python from
 the system installed Python.
+
+While in other classes yo may have been taught to use anaconda, this is not a tool that ought to be used in a cloud class. The reason for this is that it installs many packages that you are likely not to use. In fact installing anaconda on your VM will wast space and time and you shold look into other installs. 
+
+If you know which version of python you need you can just use the version that comes either with your OS, and if that is outdated install a new version from python.or.
+
+However, "real" cloud engeneers with the most flexibility in python versions want to install python via pyenv.
+
+Note: Whnever possible please use for the newest version of Python 2
+or 3. In order not to effect your OS we will use pyenv.
 
 ### Managing custom Python installs
 
@@ -20,7 +29,7 @@ Often you have your own computer and you do not like to change its
 environment to keep it in pristine condition. Python comes with many
 libraries that could for example conflict with libraries that you have
 installed. To avoid this it is bets to work in an isolated python we can
-use tools such as virtualenv, pyenv or pyvenv for 3.6.4[^1]. Which you
+use tools such as virtualenv, pyenv or pyvenv for 3.7.0. Which you
 use depends on you, but we highly recommend pyenv if you can.
 
 #### Managing Multiple Python Versions with Pyenv
@@ -35,31 +44,27 @@ switch between multiple versions of Python
 (<https://github.com/yyuu/pyenv>). To summarize:
 
 -   users to change the global Python version on a per-user basis;
-
 -   users to enable support for per-project Python versions;
-
 -   easy version changes without complex environment variable
     management;
-
 -   to search installed commands across different python versions;
-
 -   integrate with tox (<https://tox.readthedocs.io/>).
 
 ##### Instalation without pyenv
 
 If you need to have more than one python version installed and do not
 want or can use pyenv, we recommend you download and install python
-2.7.13 and 3.6.4[^2] from python.org
+2.7.15 and 3.7.0S from python.org
 (<https://www.python.org/downloads/>)
 
-##### Disabeling wrong python installs on OSX
+##### Disabling wrong python installs on OSX
 
 While working with students we have seen at times that they take other
 classes either at universities or online that teach them how to program
 in python. Unfortunately, although they seem to do that they often
 ignore to teach you how to properly install python. I just recently had
 a students that had installed python 7 times on his OSX machine, while
-another student had 3 different installations, all of which confliced
+another student had 3 different installations, all of which conflicted
 with each other as they were not set up properly.
 
 We recommend that you inspect if you have a files such as `~/.bashrc` or
@@ -116,7 +121,7 @@ To install pyenv with homebrew execute in the terminal:
 
 ##### Install pyenv on Ubuntu
 
-The following steps will install pyenv in a new ubuntu 16.04
+The following steps will install pyenv in a new ubuntu 18.04
 distribution.
 
 Start up a terminal and execute in the terminal the following commands.
@@ -154,16 +159,16 @@ entire list please use the command:
 
     $ pyenv install -l
 
-However, for us we only need to worry about python 2.7.13 and python
-3.6.4[^3]. You can now install different versions of python into your
+However, for us we only need to worry about python 2.7.15 and python
+3.7.0. You can now install different versions of python into your
 local environment with the following commands:
 
-    $ pyenv install 2.7.13
-    $ pyenv install 3.6.4
+    $ pyenv install 2.7.15
+    $ pyenv install 3.7.0
 
 You can set the global python default version with:
 
-    $ pyenv global 2.7.13
+    $ pyenv global 2.7.15
 
 Type the following to determine which version you activated:
 
@@ -176,11 +181,11 @@ Type the following to determine which versions you have available:
 Associate a specific environment name with a certain python version, use
 the following commands:
 
-    $ pyenv virtualenv 2.7.13 ENV2
-    $ pyenv virtualenv 3.6.4 ENV3
+    $ pyenv virtualenv 2.7.15 ENV2
+    $ pyenv virtualenv 3.7.0 ENV3
 
-In the example above, ENV2 would represent python 2.7.13 while ENV3
-would represent python 3.6.4. Often it is easier to type the alias
+In the example above, ENV2 would represent python 2.7.15 while ENV3
+would represent python 3.7.0. Often it is easier to type the alias
 rather than the explicit version.
 
 ##### Set up the Shell
@@ -210,11 +215,11 @@ We recommend that you do this towards the end of your file.
 After setting up the different environments, switching between them is
 now easy. Simply use the following commands:
 
-    (2.7.13) $ pyenv activate ENV2
+    (2.7.15) $ pyenv activate ENV2
     (ENV2) $ pyenv activate ENV3
     (ENV3) $ pyenv activate ENV2
     (ENV2) $ pyenv deactivate ENV2
-    (2.7.13) $ 
+    (2.7.15) $ 
 
 To make it even easier, you can add the following lines to your
 `.bash_profile` file:
@@ -233,14 +238,7 @@ versions of python simply by typing:
 Pyenv maintains locally a list of available python versions. To see the
 list use the command
 
-    pyenv install -l
-
-To obtain the newest list please use the command
-
-    cd ~/.pyenv/plugins/python-build/../.. && git pull
-
-Now when you call
-
+    pyenv update
     pyenv install -l
 
 You will see the updated list.
@@ -254,18 +252,16 @@ onto the ENV3 environment. Than you need to execute the following steps:
 
     pyenv deactivate
     pyenv uninstall ENV3
-    pyenv install 3.6.4
-    pyenv virtualenv 3.6.4 ENV3
+    pyenv install 3.7.0
+    pyenv virtualenv 3.7.0 ENV3
     ENV3
     pip install pip -U
-    \begin{lstlisting}
 
-    With the pi install command, we make sure we have the neweste version
-    of pip. In case you get an error, you may have to update xcode as follows and
-    try again:
+With the pi install command, we make sure we have the newest version
+of pip. In case you get an error, you may have to update xcode as 
+follows and try again:
 
-    \begin{lstlisting}
-    xcode-select --install
+      xcode-select --install
 
 After you installed it you can activate it by typing `ENV3`. Naturally
 this requires that you added it to your bash environment as discussed in
@@ -276,7 +272,7 @@ reference="s:set-up-the-shell"}.
 
 If you need to have more than one python version installed and do not
 want or can use pyenv, we recommend you download and install python
-2.7.13 and 3.6.4 from python.org (<https://www.python.org/downloads/>)
+2.7.15 and 3.7.0 from python.org (<https://www.python.org/downloads/>)
 
 #### Make sure pip is up to date
 
@@ -293,7 +289,7 @@ We do not recommend that you use anaconda or miniconda as it may
 :   interfere with your default python interpreters and setup.
 
 Please note that beginners to pyton should always use anaconda or
-miniconda only afterthey have installed pyenv and use it. For this class
+miniconda only after they have installed pyenv and use it. For this class
 neither anaconda nor miniconda is required. In fact we do not recommend
 it. We keep this section as we know that other classes at IU may use
 anaconda. We are not aware if these classes teach you the right way to
@@ -301,11 +297,10 @@ install it, with *pyenv*.
 
 #### Miniconda
 
-This section about miniconda is experimental and has not
-
-:   been tested. We are looking for contributors that help completing
-    it. If you use anaconda or miniconda we recommend to manage it via
-    pyenv.
+:warning: This section about miniconda is experimental and has not been 
+tested. We are looking for contributors that help completing
+it. If you use anaconda or miniconda we recommend to manage it via
+pyenv.
 
 To install mini conda you can use the following commands:
 
@@ -331,10 +326,9 @@ To install cloudmesh cmd5 please use:
 
 #### Anaconda
 
-This section about anaconda is experimental and has not
-
-:   been tested. We are looking for contributors that help completing
-    it.
+:warning: This section about anaconda is experimental and has not
+been tested. We are looking for contributors that help completing
+it.
 
 You can add anaconda to your pyenv with the following commands:
 
@@ -370,10 +364,10 @@ installed:
 
     pyenv versions
     system
-    2.7.13
-    2.7.13/envs/ENV2
-    3.6.4
-    3.6.4/envs/ENV3
+    2.7.15
+    2.7.15/envs/ENV2
+    3.7.0
+    3.7.0/envs/ENV3
     ENV2 
     ENV3
     * anaconda3-4.3.1 (set by PYENV_VERSION environment variable)
@@ -397,18 +391,9 @@ To install cloudmesh cmd5 please use:
     $ pip install cloudmesh.cmd5
     $ pip install cloudmesh.sys
 
-##### Exercise
-
-Write installation instructions for an operating system of your choice
-and add to this documentation.
-
-Replicate the steps above, so you can type in ENV2 and ENV3 in your
-terminals to switch between python 2 and 3.
-
 #### virtualenv
 
-environment while using virtualenv,. Documentation about it can be found
-at:
+Documentation about it can be found at:
 
     * https://virtualenv.pypa.io
 
@@ -434,8 +419,20 @@ you can put this command in your `.bashrc` or `.bash_profile` files so
 you do not forget to activate it. Instructions for this can be found in
 our lesson on Linux `bashrc`.
 
-[^1]: check for the newest version
+##### Exercises
 
-[^2]: check for the newest version
+E.Python.Install.0:
 
-[^3]: check for the newest version
+> Write installation instructions for an operating system of your choice
+> and add to this documentation.
+
+E.Python.Install.1:
+
+> Replicate the steps to install pyenv, so you can type in ENV2 and ENV3 in your
+> terminals to switch between python 2 and 3.
+
+E.Python.Install.3:
+
+> Why do you not want to use generally anaconda for cloud computing?
+> WHen is it oc to use anaconda?
+

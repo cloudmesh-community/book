@@ -34,7 +34,7 @@ S Architecture in practice
 ### Snowwhite and the Seven$^{+1}$ Dwarfs
 
 The ISE department at Indiana University has obtained eight dendrites
-that were assambled by a number of students so they can be used in class
+that were assembled by a number of students so they can be used in class
 and in research projects. These dendrites can be accessed in Smith
 Research Center and allow students and faculty members to experiment
 with them. They are bare dendrites and have no electronics on them.
@@ -42,14 +42,14 @@ Hence, you will need a hardware device to interact with.
 
 The reason we named them *Snowwhite and the Seven$^{+1}$ Dwarfs* is
 based on the fact that the dendrites are white, and they need to be
-interact with somone. Beacuse of the white color we name the controll
+interact with someone. Because of the white color we name the controll
 unit snowwhite. The dendrites that are interacting with it are called
 dwarfs as this just fits to the name snowwhite. As we actually have 8
 and not 7 we added $^{+1}$.
 
 We do not recommend to directly attach the wires to boards, as they will
 draw too much power and destroy the boards. Instead you will need a
-relay that you controll that itself controlls the dendrite These can be:
+relay that you control that itself controls the dendrite These can be:
 
 Arduino:
 
@@ -65,14 +65,14 @@ Raspberry Pi
 :   We recommend to use a Raspberry Pi as it has a great operating
     system and is more suited for additional analysis of data within an
     Edge Computing network than the other two choices. It also allows
-    you to use python which is clearly a pluss as most of the material
+    you to use python which is clearly a plus as most of the material
     presented here are in Python.
 
 \centering
 ![Snowwhite and the Seven$^{+1}$
 Dwarfs[]{label="F:snowwhite"}](images/snowwhite.jpg){width="\columnwidth"}
 
-### Liddy Hall Installation
+### Luddy Hall Installation
 
 architecture drawing
 
@@ -94,15 +94,15 @@ Test environment (8 dendrites)
 
 ##### Liddy Hall
 
-Andreas dsecribes how we program them
+Andreas describes how we program them
 
 (Andreas provides)
 
 than we use cloudmesh to interface with them, maybe we need to just show
 how we integrate them into mqtt (this is snowhwite) and than we can
-progrem them from another pi
+program them from another pi
 
-Test environment Liddy hall
+Test environment Luddy hall
 
 Alternative Boards
 ------------------
@@ -128,7 +128,7 @@ in a very small footprint, capable of implementing many types of
 projects. All programming is done via the USB port." Source:
 <https://www.pjrc.com/teensy/>
 
-Current state of programming (whateverthey have)
+Current state of programming (whatever they have)
 
 Which version
 
@@ -150,7 +150,7 @@ Sentinent.2.1
 
 Sentinent.2.2
 
-:   If you do prefer using another board, the option may exist do develp
+:   If you do prefer using another board, the option may exist do develop
     an interface for the sensor or actuator for this device. If OO
     programming is not available for that board, a clean design based on
     functions must be provided. However we believe this is mor complex
@@ -164,7 +164,7 @@ Sentinent.3.1
 
 Sentinent.3.2
 
-:   Hook up the dendrites to mqtt and controll them
+:   Hook up the dendrites to mqtt and control them
 
 Sentinent.4
 
@@ -174,7 +174,7 @@ Sentient.5
 
 :   Explore the Page at
     <https://www.intorobotics.com/alternative-arduino-boards/> that
-    lists a number of PI/Arduino alteranative boards provide a non
+    lists a number of PI/Arduino alternative boards provide a non
     plagiarized table for this chapter and evaluate which could be
     viable alternatives. If you have one of them we like you to provide
     a documentation on how to integrate them with the dendrites.

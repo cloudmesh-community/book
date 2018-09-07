@@ -95,7 +95,7 @@ launch a complex appliance, you only need to follow these steps:
 
 This will take you to the Stacks page within the Orchestration menu.
 This page will show the current list of stacks, with controls to manage
-them and create new ones. Since we haven't launched any yet, this list
+them and create new ones. Since we havenot launched any yet, this list
 will be empty for now.
 
 We will now create a new stack, which corresponds to the launch of a
@@ -108,19 +108,19 @@ We will deploy the NFS appliance described earlier; it will consist of a
 server node and two client nodes. Change the template source field to
 URL, and paste the URL of the [NFS share
 template](https://www.chameleoncloud.org/appliances/api/appliances/25/template)
-(if you don't have it in your clipboard anymore you will need to go back
+(if you donot have it in your clipboard anymore you will need to go back
 to the appliance and get it by clicking on "Get template" again).
 
-Don't change the environment source settings, and click "Next".
+Donot change the environment source settings, and click "Next".
 
 The next screen allows your to enter input values to your Heat template.
 Choose a name for your stack (e.g. my-nfs-cluster). Ignore the "Creation
 Timeout" and "Rollback On Failure" settings. You also need to enter your
 Chameleon password. Then, you need to select a value for the three
-parameters of the template: for key\_name, choose your SSH key pair
+parameters of the template: for key_name, choose your SSH key pair
 (this key pair will authorize access on each deployed instances, both
-server and client). For nfs\_client\_count, change the default value of
-1 to 2. For reservation\_id, choose your reservation created earlier.
+server and client). For nfs_client_count, change the default value of
+1 to 2. For reservation_id, choose your reservation created earlier.
 Finally, click "Launch".
 
 ![image](images/Launch-NFS-Stack.png){width="\columnwidth"}
@@ -143,7 +143,7 @@ group composed of two instances). The server's floating IP (the public
 IP assigned to a resource) is represented by an IP in a circle; an IP in
 a circle is also used to represent the association of the IP with the
 NFS server instance (not the greatest idea to use the same symbol for
-both the IP and the association -- we agree but can't do much about it
+both the IP and the association -- we agree but canot do much about it
 at the moment). Blow off some steam by dragging the visualization across
 the screen, it can be rather fun!
 
@@ -189,18 +189,18 @@ The resources section is the most important part of the template: it
 defines which OpenStack resources to create and configure. Inside this
 section you can see four resources defined:
 
--   nfs\_server\_floating\_ip
+-   nfs_server_floating_ip
 
--   nfs\_server
+-   nfs_server
 
--   nfs\_server\_ip\_association
+-   nfs_server_ip_association
 
--   nfs\_clients
+-   nfs_clients
 
-The first resource, nfs\_server\_floating\_ip, creates a floating IP on
+The first resource, nfs_server_floating_ip, creates a floating IP on
 the ext-net public network. It is not attached to any instance yet.
 
-The second resource, nfs\_server, creates the NFS server instance (an
+The second resource, nfs_server, creates the NFS server instance (an
 instance is defined with the type `OS::Nova::Server` in Heat). It is a
 bare-metal instance (`flavor: baremetal`) using the CC-CentOS7 image and
 connected to the private network named sharednet1. We set the keypair to
@@ -209,10 +209,10 @@ function. Similarly, the reservation to use is passed to the scheduler.
 Finally, a user-data script is given to the instance, which configures
 it as an NFS server exporting /exports/example to Chameleon instances.
 
-The nfs\_server\_ip\_association resource associates the floating IP
+The nfs_server_ip_association resource associates the floating IP
 created earlier with the NFS server instance.
 
-Finally, the nfs\_clients resource defines a resource group containing
+Finally, the nfs_clients resource defines a resource group containing
 instance configured to be NFS clients and mount the directory exported
 by the NFS server defined earlier. The IP of the NFS server is gathered
 using the `get_attr` function, and placed into user-data using the
@@ -343,16 +343,16 @@ appliance](https://www.chameleoncloud.org/appliances/26/) is reproduced
 below. It is similar to the NFS share appliance, except that it deploys
 only a single client. You can see that it has four resources defined:
 
--   nfs\_server\_floating\_ip
+-   nfs_server_floating_ip
 
--   nfs\_server
+-   nfs_server
 
--   nfs\_server\_ip\_association
+-   nfs_server_ip_association
 
--   nfs\_client
+-   nfs_client
 
-The nfs\_client instance mounts the NFS directory shared by the
-nfs\_server instance, just like in our earlier example.
+The nfs_client instance mounts the NFS directory shared by the
+nfs_server instance, just like in our earlier example.
 
     # This describes what is deployed by this template.
     description: NFS server and client deployed with Heat on Chameleon
@@ -430,7 +430,7 @@ page](https://www.chameleoncloud.org/appliances/26/) to your local
 machine, and open it in your favorite text editor.
 
 We will customize the template to add a second NFS client by creating a
-new resource called another\_nfs\_client. Add the following text to your
+new resource called another_nfs_client. Add the following text to your
 template inside the resources section. Make sure to respect the level of
 indentation, which is important in YAML.
 
@@ -472,7 +472,7 @@ So instead, we leverage another construct from Heat: resource groups.
 Resource groups allow to define one kind of resource and request it to
 be created any number of times.
 
-Remove the nfs\_client and another\_client resources from your
+Remove the nfs_client and another_client resources from your
 customized template, and replace them with the following:
 
       nfs_clients:
@@ -580,7 +580,7 @@ composed of the following sections:
 
 ### Heat template version
 
-Each Heat template has to include the heat\_template\_version key with a
+Each Heat template has to include the heat_template_version key with a
 valid version of HOT (Heat Orchestration Template). Chameleon bare-metal
 supports any HOT version up to 2015-10-15, which corresponds to
 OpenStack Liberty. The [Heat
@@ -666,7 +666,7 @@ etc. The outputs declaration is using the following format:
         description: Description of the second output
         value: second_output_value
 
-Generally values will be calls to get\_attr, get\_param, or some other
+Generally values will be calls to get_attr, get_param, or some other
 function to get information from parameters or resources deployed by the
 template and return them in the proper format to the user.
 
@@ -708,19 +708,19 @@ these pattern will be possible:
 
 -   The server has to be deployed first, and once it is deployed, the
     clients can be launched and contextualized with information from the
-    server. The server won't know about the clients unless there is a
+    server. The server will not know about the clients unless there is a
     mechanism (not managed by Heat) for the client to contact the
     server.
 
 -   The clients have to be deployed first, and once they are deployed,
     the server can be launched and contextualized with information from
-    the clients. The clients won't know about the server unless there is
+    the clients. The clients will not know about the server unless there is
     a mechanism (not managed by Heat) for the server to contact the
     clients.
 
 This limitation was already apparent in our NFS share appliance: this is
 why the server instance exports the file system to all bare-metal
-instances on Chameleon, because it doesn't know which specific IP
+instances on Chameleon, because it doesnot know which specific IP
 addresses are allocated to the clients.
 
 This limitation is even more important if the deployment is not
@@ -852,19 +852,19 @@ IP and hostnames from other instances in the deployment.
 
 There are two SoftwareConfig resources.
 
-The first SoftwareConfig, export\_hosts, uses the facter tool to extract
+The first SoftwareConfig, export_hosts, uses the factor tool to extract
 IP address and hostname into a single line (in the format expected for
 /etc/hosts) and writes it to a special path
-(\${heat\_outputs\_path}.hosts). This prompts Heat to assign the content
+(\${heat_outputs_path}.hosts). This prompts Heat to assign the content
 of this file to the output with the name hosts.
 
-The second SoftwareConfig, populate\_hosts, takes as input a variable
+The second SoftwareConfig, populate_hosts, takes as input a variable
 named hosts, and applies a script that reads the variable from the
-environment, parses it with ast.literal\_eval (as it is formatted as a
+environment, parses it with ast.literal_eval (as it is formatted as a
 Python dict), and writes each value of the dictionary to /etc/hosts.
 
-The SoftwareDeploymentGroup resources export\_hosts\_sdg and
-populate\_hosts\_sdg apply each SoftwareConfig to the instance
+The SoftwareDeploymentGroup resources export_hosts_sdg and
+populate_hosts_sdg apply each SoftwareConfig to the instance
 ResourceGroup with the correct configuration.
 
 Finally, the instance ResourceGroup is configured so that each instance

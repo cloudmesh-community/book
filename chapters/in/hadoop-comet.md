@@ -6,7 +6,7 @@ Hadoop SDSC
 Overview
 --------
 
-Users can run Hadoop on Gordon using the myHadoop infrastucture, which
+Users can run Hadoop on Gordon using the myHadoop infrastructure, which
 integrates configuration and Hadoop cluster setup within Gordon's normal
 job-scheduling environment. The Hadoop File System (HDFS) is built using
 the high-performance flash drives (SSDs) mounted on each compute node
@@ -48,7 +48,7 @@ and configure lines and that ppn should always be used.
     export HADOOP_HOME="/opt/hadoop"
     export HADOOP_CONF_DIR="/home/$USER/config"
 
-The only variable that is user specific is the HADOOP\_CONF\_DIR. This
+The only variable that is user specific is the HADOOP_CONF_DIR. This
 is where the configuration files for the Hadoop cluster will be copied.
 Make sure this is a location readable by all the nodes in the cluster
 (i.e. a global location).
@@ -66,12 +66,12 @@ charge:
 To ensure that the IPoIB (IP over InfiniBand) interface is used for the
 network, the following lines should be added to the script:
 
-    sed 's/$/.ibnet0/' $PBS\_NODEFILE > $PBS_O_WORKDIR/hadoophosts.txt
+    sed 's/$/.ibnet0/' $PBS_NODEFILE > $PBS_O_WORKDIR/hadoophosts.txt
     export PBS_NODEFILEZ=$PBS_O_WORKDIR/hadoophosts.txt
 
 This adds the ibnet0 interface to the node list. The myHadoop
 configuration script looks for the list in the file pointed to by
-PBS\_NODEFILEZ. Without these lines, Hadoop would use the much slower
+PBS_NODEFILEZ. Without these lines, Hadoop would use the much slower
 1GbE management network.
 
 - Setting up the myHadoop configuration files
