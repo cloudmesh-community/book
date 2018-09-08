@@ -1,4 +1,4 @@
-# MQTT :o:
+# MQTT
 
 
 With the increase importance of cloud computing and the increased number
@@ -273,7 +273,7 @@ Open a terminal and use homebrew to install mosquito and than you can install pa
 	
 You need to start the mosquito service buy hand to use it.
 
-#### Advanced Service install
+### MacOS Advanced Service install
 
 :warning: We recommend that this is only be done if you truly need a
 production system. For our class you will not need this.
@@ -308,7 +308,7 @@ $ sudo apt-get install mosquitto mosquitto-clients
 $ pip install paho-mqtt
 ```
 
-### Raspberry Pi Setup
+### Raspberry Pi Setup :o:
 
 #### Broker 
 

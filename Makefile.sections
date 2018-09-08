@@ -46,6 +46,8 @@ CHAPTER_516=\
   chapters/cloud/datacenter.md\
   $(DEVTOOLS)\
   $(PYTHON)\
+  chapters/MSG.md\
+  chapters/msg/mqtt.md\
   chapters/SECTION-REFERENCES.md
 
 CHAPTER_BIGDATA=\

@@ -112,7 +112,7 @@ The course has the following objectives:
 | :o: 10/08 |         |                   | Github as a Cloud Service
 | :o: 10/15 |         |                   | REST Services, Eve, OpenAPI
 | :o: 10/22 |         |                   | Map/Reduce, Hadoop, Spark
-| :o: 10/29 |         |                   | Messaging with MQTT
+| :o: 10/29 |         |                   | [Gregor von Laszewsk](https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md) 
 | :o: 11/05 |         |                   | GraphQL
 | :o: 11/19 |         |                   | Go for the Cloud I
 | :o: 11/19 |         |                   | Go for the Cloud II
