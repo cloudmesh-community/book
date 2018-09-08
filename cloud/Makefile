@@ -63,6 +63,9 @@ DRAFT=\
   chapters/iaas/azure/azure.md\
   chapters/iaas/watson/signup.md\
   chapters/iaas/gcloud/gcloud.md\
+  chapters/msg/mqtt.md\
+  chapters/msg/mqtt1.md\
+  chapters/msg/mqtt2.md\
 
 
 CHAPTER_CLASS=\
@@ -84,6 +87,7 @@ all: prepare epub
 sectionindent:
 	../bin/authors.py > dest/chapters/authors.md
 	../bin/header.py dest/chapters/git/github.md 2
+	../bin/header.py dest/chapters/open.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
 	../bin/header.py dest/chapters/prg/python-install.md 1
 	../bin/header.py dest/chapters/prg/python.md 2

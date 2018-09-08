@@ -274,7 +274,7 @@ methods `encrypt` and `decrypt`.
 
 ### Database Access
 
-:?: Students: define conventional database access tutorial
+:o: Students: define conventional database access tutorial
 see: <https://www.tutorialspoint.com/python/python_database_access.htm>
 
 ### SQLite
