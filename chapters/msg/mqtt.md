@@ -256,17 +256,17 @@ enterprise and production environments. A good example is the use of EMQ
 reliable MQTT broker for enterprise-grade applications
 [@erlang-mqtt-broker].
 
-## Inastalation
+## Installation
 
-The instalation of an MQTT server based on paho is very simple.
+The installation of an MQTT server based on paho is very simple.
 
 ### MacOS install
 
-On OSX yo need to first install msoquito, which is easiests to install with `brew`
+On OSX yo need to first install mosquito, which is easiest to install with `brew`
 
-Step 1: Installing Mosquitto clients
+Step 1: Installing Mosquito clients
 
-Open a terminal and use homebrew to install mosquito and than you can install phao with pip
+Open a terminal and use homebrew to install mosquito and than you can install paho with pip
 
 	brew install mosquitto
 	pip install paho-mqtt
@@ -275,9 +275,11 @@ You need to start the mosquito service buy hand to use it.
 
 #### Advanced Service install
 
-:warning: We recommend that thsi is only be done if you truly need a production system. For our class you will not need this.
+:warning: We recommend that this is only be done if you truly need a
+production system. For our class you will not need this.
 	
-You can integrate moasquto service on boot, while adding it via LaunchAgents. This can be achieved by linking it as follows:
+You can integrate mosquito service on boot, while adding it via
+LaunchAgents. This can be achieved by linking it as follows:
 
 
 	ln -sfv /usr/local/opt/mosquitto/*.plist ~/Library/LaunchAgents
@@ -317,7 +319,7 @@ You will need to add the mosquito repository to the known repositories as follow
     sudo wget http://repo.mosquitto.org/debian/mosquitto-jessie.list
     apt-get update
 
-Mosquitto is installed by implementing the following command:
+Mosquito is installed by implementing the following command:
 
     apt-get install mosquito
 
@@ -394,7 +396,7 @@ The code for the project is available at
 ### Requirements and Setup
 
 The setup used three different machines. A laptop or a desktop running
-the MQTT broker, and two raspberry pis configured with raspbean
+the MQTT broker, and two raspberry pis configured with raspbian
 operating system. Eclipse Paho MQTT client was setup on each of the
 raspberry pis [@python-paho-mqtt]. Additionally all three devices were
 connected to an isolated local network.
