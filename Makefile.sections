@@ -1,4 +1,5 @@
 PREFACE=\
+  chapters/SECTION-PREFACE.md\
   chapters/version.md\
   chapters/authors.md\
   chapters/preface/create.md\
@@ -32,6 +33,7 @@ PYTHON=\
   chapters/prg/python-cmd.md
 
 CHAPTER_516=\
+  chapters/assignment.md\
   $(PREFACE)\
   chapters/class/organization-516.md\
   chapters/class/plagiarism.md\

@@ -1,4 +1,3 @@
-GraphQL
-=======
+# GraphQL
 
-To be contributed by Averill Cate 
+To be contributed

@@ -1,5 +1,4 @@
-MQTT
-====
+# MQTT :o:
 
 
 With the increase importance of cloud computing and the increased number
@@ -14,15 +13,14 @@ Security aspects to relay this data is highly important. We will
 introduce a service called MQTT, which is a common, easy to use, queuing
 protocol that helps meet these requirements.
 
-Introduction
-------------
+## Introduction
 
 As Cloud Computing and Internet of Things (IoT) applications and sensor
 networks become commonplace and more and more devices are being
 connected, there is an increased need to allow these devices to
 communicate quickly and securely. In many cases these edge devices have
 very limited memory and need to conserve power. The computing power on
-some of these devices is so limited that the sensory data need to be
+some of these devices is limited so that the sensory data need to be
 analyzed remotely. Furthermore, they may not even have enough computing
 capacity to process traditional HTTP web requests
 efficiently [@mqtt-vs-http][@hivemq-website] or these traditional
@@ -32,7 +30,7 @@ receiving responses to and from the device frequently, which may not be
 efficient on small circuits or embedded chips on edge computing
 sensors [@mqtt-vs-http].
 
-Message Queue Telemetry Transport (MQTT) is a lightweight machine to
+*Message Queue Telemetry Transport* (MQTT) is a lightweight machine to
 machine (M2M) messaging protocol, based on a client/server
 publish-subscribe model. It provides a a simple service allowing us to
 communicate between sensors, and services based on a subscription model.
@@ -46,6 +44,12 @@ protocols such as UDP. It allows efficient transmission of data to
 various devices listening for the same event, and is scalable as the
 number of devices increase [@mqtt-wiki][@mqtt-official].
 
+MQTT is becoming more popular than ever before
+with the increasing use of mobile device and smartphone applications
+such as Facebook's Messenger and Amazon Web Services. This protocol is
+used in WIFI or low bandwidth network. MQTT does not require any
+connection with the content of the message.
+
 The current support for MQTT is conducted as part of the Eclipse Phao
 project [@eclipse-mosquitto]. As MQTT is a protocol many different
 clients in various languages exist. This includes languages such as
@@ -55,13 +59,16 @@ The current standard of MQTT is available at
 
 <http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.pdf>
 
-Publish Subscribe Model
------------------------
+## Publish Subscribe Model
 
-MQTT works via a publish-subscribe model that contains 3 entities: (1) a
+MQTT works via a publish-subscribe model that contains 3 entities: (1) aRaspberry Pi
 publisher, that sends a message, (2) a broker, that maintains queue of
 all messages based on topics and (3) multiple subscribers that subscribe
 to various topics they are interested in [@how-mqtt-works].
+
+![](images/mqtt.png)
+
+**Figure:** MQTT publish subscriber model
 
 This allows for decoupling of functionality at various levels. The
 publisher and subscriber do not need to be close to each other and do
@@ -83,11 +90,14 @@ where each part represents a different topic level. This is a common
 model introduced in file systems but also in internet URLs.
 
 A topic looks therefore as follows:
-*topic-level0/topic-level1/topic-level2*.
+
+```
+topic-level0/topic-level1/topic-level2.
+```
 
 Subscribers can subscribe to different topics via the broker.
-Subscribing to *topic-level0* allows the subscriber to receive all
-messages that are associated with topics that start with *topic-level0*.
+Subscribing to `topic-level0` allows the subscriber to receive all
+messages that are associated with topics that start with `topic-level0`.
 This allows subscribers to filter what messages to receive based on the
 topic hierarchy. Thus, when a publisher publishes a message related to a
 topic to the broker, the message is forwarded to all the clients that
@@ -154,8 +164,7 @@ QoS Level 3:
 The various levels of quality of service allow the use of this protocol
 with different service level expectations.
 
-Secure MQTT Services
---------------------
+## Secure MQTT Services
 
 MQTT specification uses TCP/IP to deliver the messaged to the
 subscribers, but it does not provide security by default to enable
@@ -210,8 +219,7 @@ of clients and it can become impractical to authorize everyone, clients
 may be grouped and the authorizations may be checked for each
 group [@ibm-mqtt-security].
 
-Integration with Other Services
--------------------------------
+## Integration with Other Services
 
 As the individual IoT devices perform their respective functions in the
 sensor network, a lot of data is generated which needs to be processed.
@@ -239,8 +247,8 @@ ELK stack.
     ELK stack as shown in [@mqtt-elasticsearch-setup]
     and [@kibana-mqtt-analysis].
 
-MQTT in Production
-------------------
+## MQTT in Production
+
 
 When using optimized MQTT broker services, MQTT can be utilized for
 enterprise and production environments. A good example is the use of EMQ
@@ -248,55 +256,131 @@ enterprise and production environments. A good example is the use of EMQ
 reliable MQTT broker for enterprise-grade applications
 [@erlang-mqtt-broker].
 
-Simple Usecase
---------------
+## Inastalation
+
+The instalation of an MQTT server based on paho is very simple.
+
+### MacOS install
+
+On OSX yo need to first install msoquito, which is easiests to install with `brew`
+
+Step 1: Installing Mosquitto clients
+
+Open a terminal and use homebrew to install mosquito and than you can install phao with pip
+
+	brew install mosquitto
+	pip install paho-mqtt
+	
+You need to start the mosquito service buy hand to use it.
+
+#### Advanced Service install
+
+:warning: We recommend that thsi is only be done if you truly need a production system. For our class you will not need this.
+	
+You can integrate moasquto service on boot, while adding it via LaunchAgents. This can be achieved by linking it as follows:
+
+
+	ln -sfv /usr/local/opt/mosquitto/*.plist ~/Library/LaunchAgents
+
+Next you need to restart the server as follows:
+
+	launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mosquitto.plist
+
+Now you can test the installation and ensure the server is running
+successfully.  Open a new command window and start a listener.
+
+	mosquitto_sub -t topic/state
+
+To test teh setup you can in another window, send a message to the listener.
+
+	mosquitto_pub -t topic/state -m "Hello World"
+
+This ensures the server is running.
+
+### Ubuntu install
+
+On ubuntu you need to first install mosquito, than with pip you install `paho-mqt`
+
+```
+$ sudo apt-get install mosquitto mosquitto-clients
+$ pip install paho-mqtt
+```
+
+### Raspberry Pi Setup
+
+#### Broker 
+
+You will need to add the mosquito repository to the known repositories as follows:
+
+    wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
+    sudo apt-key add mosquitto-repo.gpg.key
+    sudo wget http://repo.mosquitto.org/debian/mosquitto-jessie.list
+    apt-get update
+
+Mosquitto is installed by implementing the following command:
+
+    apt-get install mosquito
+
+
+#### Client
+
+The MQTT client needs to be installed on raspberry pi by running the
+following command:
+
+    apt-get install mosquitto-clients
+    
+## Server Usecase
 
 In this example we are demonstrating how to set up a MQTT broker, a
-client and a subscriber.
+client and a subscriber while just using regular servers and clients. 
+The code of this example is located at:
 
 * <https://github.com/bigdata-i523/sample-hid000/tree/master/experiment/mqtt>
-A test program that starts a MQTT broker and client is provided next,
-showcasing how simple the interactions are while using a higher level
+
+A test program that starts a MQTT broker and client showcases how simple the interactions between the publisher and subscribers are while using a higher level
 API such as provided through the python client library of Paho.
 
-    import paho.mqtt.client as mqtt 
-    import time
+```
+import paho.mqtt.client as mqtt 
+import time
 
 
-    def on_message(client, userdata, message):
-        print("message received ", str(message.payload.decode("utf-8")))
-        print("message topic=", message.topic)
-        print("message qos=", message.qos)
-        print("message retain flag=", message.retain)
+def on_message(client, userdata, message):
+    print("message received ", 
+          str(message.payload.decode("utf-8")))
+    print("message topic=", message.topic)
+    print("message qos=", message.qos)
+    print("message retain flag=", message.retain)
 
-    def on_log(client, userdata, level, buf):
-        print("log: ",buf)
+def on_log(client, userdata, level, buf):
+    print("log: ",buf)
 
-    broker_address="localhost"    
-    # broker_address="test.mosquitto.org"
-    # broker_address="broker.hivemq.com"
-    # broker_address="iot.eclipse.org"
+broker_address="localhost"    
+# broker_address="test.mosquitto.org"
+# broker_address="broker.hivemq.com"
+# broker_address="iot.eclipse.org"
 
-    print("creating new instance")
-    client = mqtt.Client("i523") #create new instance
-    client.on_log=on_log
-    client.on_message=on_message #attach function to callback
+print("creating new instance")
+client = mqtt.Client("i523") #create new instance
+client.on_log=on_log
+client.on_message=on_message #attach function to callback
 
-    print("connecting to broker")
-    client.connect(broker_address) #connect to broker
-    client.loop_start() #start the loop
+print("connecting to broker")
+client.connect(broker_address) #connect to broker
+client.loop_start() #start the loop
 
-    print("Subscribing to topic","robot/leds/led1")
-    client.subscribe("robot/leds/led1")
+print("Subscribing to topic","robot/leds/led1")
+client.subscribe("robot/leds/led1")
 
-    print("Publishing message to topic","robot/leds/led1")
-    client.publish("robot/leds/led1","OFF")
+print("Publishing message to topic","robot/leds/led1")
+client.publish("robot/leds/led1","OFF")
 
-    time.sleep(4) # wait
-    client.loop_stop() #stop the loop
+time.sleep(4) # wait
+client.loop_stop() #stop the loop
 
-IoT Use Case
-------------
+```
+
+## IoT Use Case with a Raspberry PI
 
 MQTT can be used in a variety of applications. This section explores a
 particular use case of the protocol. A small network was set up with
@@ -328,7 +412,7 @@ easily used with the grove modules.
 
 ### Results
 
-The two raspberry pis subscribe connect to the broker and subscribe with
+The two Raspberry Pis subscribe connect to the broker and subscribe with
 different topics. The raspberry pis wait for any messages from the
 broker. A publisher program that connects to the broker publishes
 messages to the broker for the topics that the two raspberry pis had
@@ -352,8 +436,7 @@ sensors can be captured with the help of a data collector which may
 itself be a different subscriber, that performs analytics or
 visualizations on this data.
 
-Conclusion
-----------
+## Conclusion
 
 We see that as the number of connected devices increases and their
 applications become commonplace, MQTT allows different devices to
@@ -367,19 +450,26 @@ services to allow collection and analysis of data. A small environment
 was simulated that used MQTT broker and clients running on raspberry pis
 to control actuators
 
-Exercises
----------
+## Exercises
 
-Develop a temperature broker, that collects the temperature from a
+E.MQTT.1: 
+
+> Develop a temperature broker, that collects the temperature from a
 number of machines and clients can subscribe to the data and visualize
 it.
 
-Develop a CPU load broker, that collects the cpu load from a number of
+E.MQTT.2:
+
+> Develop a CPU load broker, that collects the cpu load from a number of
 machines and clients can subscribe to the data and visualize it.
 
-Develop a broker with a variety of topics that collects data from a
+E.MQTT.3:
+
+> Develop a broker with a variety of topics that collects data from a
 Raspberry Pi or Raspberry PI cluster and visualize it.
 
-Explore hosted services for MQTT while at the same time remembering that
+E.MQTT.4:
+
+> Explore hosted services for MQTT while at the same time remembering that
 they could pose a security risk. Can any of the online services be used
 to monitor a cluster safely?
