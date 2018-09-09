@@ -48,6 +48,7 @@ CHAPTER_516=\
   $(PYTHON)\
   chapters/MSG.md\
   chapters/msg/mqtt.md\
+  chapters/msg/graphql.md\
   chapters/SECTION-REFERENCES.md
 
 CHAPTER_BIGDATA=\

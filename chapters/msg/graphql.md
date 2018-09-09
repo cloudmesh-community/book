@@ -2,9 +2,9 @@
 
 To be contributed by
 
-Mihir
-Vineet
+* Mihir
+* Vineet
 
-PLese put the URL to where you do your draft here:
+Please put the URL to where you do your draft here:
 
 * <URL>
