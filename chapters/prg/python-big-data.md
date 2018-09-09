@@ -213,7 +213,7 @@ There is a lot more to working with `pandas`, `numpy` and `matplotlib`
 than we can show you here, but hopefully this example has piqued your
 curiosity.
 
-Donot worry if you donot understand everything in this example. For a
+Do not worry if you do not understand everything in this example. For a
 more detailed explanation on these modules and the examples we did,
 please take a look at the tutorials below. The `numpy` and `pandas`
 tutorials are mandatory if you want to be able to use these modules, and
@@ -280,7 +280,7 @@ and engineering. In particular, these are some of the core packages:
 -   Sympy
 -   SciPy library
 
-It is thus an agglomeration of useful pacakes and will probably suffice
+It is thus an agglomeration of useful packages and will probably suffice
 for your projects in case you use Python.
 
 #### ggplot
@@ -417,7 +417,7 @@ notebook.md parser
 this command be generalized to provide not only information for a
 student but to provide information for the class. Example: can we
 identify preferred days of when the notebooks are checked in. Can we
-identify a list of students that have not updated the notebok for a
+identify a list of students that have not updated the notebook for a
 week? Can we identify the list of student s that have updated the
 notebook for a week?
 

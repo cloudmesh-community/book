@@ -22,6 +22,6 @@ pandoc filename.md -o fiename.pptx
 ```
 
 and you will convert the markdown to a simple powerpoint that you can
-than improve. The initial improvement is best doen in the overview
+than improve. The initial improvement is best done in the overview
 mode of powerpoint so you can organize the bullet points and slides
-better incase the pagination is not done right.
+better in case the pagination is not done right.

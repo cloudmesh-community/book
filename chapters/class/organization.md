@@ -17,7 +17,7 @@ availability and a doodle poll.
 Figures  *Components of the Class i523, e534* and *Components of the
 Class e516, e534 and e616* showcase the different parts of the class.
 Please note that the in i523 and i524 the project can be substituted
-for a term paper only that does not require programmning. As this is a
+for a term paper only that does not require programming. As this is a
 significant reduction in work and goals for that class the project
 report will be down graded by a full grade to adjust for this. If you
 have taken a previous class you are able to continue your previous
@@ -147,7 +147,7 @@ money there if you are not careful.
 
 As this class has no graded tests and only few graded homework, we like
 that you deliver an **exceptional** project report or paper. Instead of
-focussing on preparing for tests we provide you with the opportunity to
+focusing on preparing for tests we provide you with the opportunity to
 **explore** without the pressure of grades. However you should not give
 up or take the easy way out or it will effect you in your project
 execution. Also, to achieve your best do not just say: *We do not have a
@@ -163,7 +163,7 @@ It will be up to you to assess what you want to deliver before handing
 it in to us. Self assessment or a check with other students is a real
 good way to do that. You should not expect to get an A if you yourself
 are not convinced about your project or are unsure about it. Common
-sense prevales.
+sense prevails.
 
 
 ### Fun

@@ -42,7 +42,7 @@ EEPROM storage capacity|    16 MHz
 
 ## Connect
 
-Tools -> Arduino/Genuin Arduino
+Tools -> Arduino/Genuine Arduino
 
 port oon OSX will lock something like this:
 

@@ -125,7 +125,7 @@ the number as a parameter to the programme.
 ## Interactive Examples
 
 Here we need a new image to work on. Let's run the following command.
-This will pull the necessary repositories from docker hub, as we donot
+This will pull the necessary repositories from docker hub, as we do not
 have most of the dependencies related to it. This can take a few minutes
 to download everything.
 
@@ -143,7 +143,7 @@ You will see the following output in the browser, (Use Google Chrome)
 
 \centering
 ![Jupyter Notebook in
-Browswer](images/docker-spark-jup-1.png){width="100%"}
+Browser](images/docker-spark-jup-1.png){width="100%"}
 
 First navigate to the work folder. Let us create a new python file here.
 Click python3 in the new menu.
@@ -181,7 +181,7 @@ In the final stage we put sample values and check the predictions on the
 cluster. In addition to that feed the data using SparseVector format and
 we add the kmeans initialization mode, the error margin and the
 palatalization. We put the step size as 5 for this example. In the
-previous one we didnot specify any parameters.
+previous one we did not specify any parameters.
 
 The predict term predicts the cluster id which it belongs to.
 

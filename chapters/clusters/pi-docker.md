@@ -35,13 +35,13 @@ $ sudo apt-get update
 $ curl -sSL https://get.docker.com | sh
 ```
 
-In order for us to start the docker deamon at the next boot, we add it as follows:
+In order for us to start the docker daemon at the next boot, we add it as follows:
 			
 ```bash
 $ sudo systemctl enable docker
 ```
     
-Now if we reboot, the Docker deamon will start. In case you like to avoid the firts reboot, you can use the command:
+Now if we reboot, the Docker daemon will start. In case you like to avoid the first reboot, you can use the command:
 
 ```bash
 $ sudo systemctl start docker
@@ -68,17 +68,17 @@ message.
 
 ## Docker Swarm
 
-Swarm is a native clustering and scheduling tool for Docker. Instead of just managing containers on a single server, we can manage containers on a set of servers. The containers will be automatically scheduled on the pool of servers making them apear as a single resource. We will set up and use Docker on a number of Raspberry Pi's install Docker on them and register them into a Docker Swarm.
+Swarm is a native clustering and scheduling tool for Docker. Instead of just managing containers on a single server, we can manage containers on a set of servers. The containers will be automatically scheduled on the pool of servers making them appear as a single resource. We will set up and use Docker on a number of Raspberry Pi's install Docker on them and register them into a Docker Swarm.
 
 ## Creating a Network of Pi's with docker
 
-In Section ??? we explained how to set up a network of PI's. Here we assume that we start from such a network. The Pi's have all different names, and are registered on the network. Each Pi has the public key installled from the machine where you will login from for setting up the swarm.
+In Section ??? we explained how to set up a network of PI's. Here we assume that we start from such a network. The Pi's have all different names, and are registered on the network. Each Pi has the public key installed from the machine where you will login from for setting up the swarm.
 
 Let us assume the names of the hosts are stored in a shell variable called 
 
 	hostnames = (red00 red01 red02 red03 red04)
 
-Natuarlly, we want to install on these machines docker and register them to the swarm. A variety of tools exist to simplify this process, such as 
+Naturally, we want to install on these machines docker and register them to the swarm. A variety of tools exist to simplify this process, such as 
 
 * parallel shell <https://github.com/vallard/psh>
 * cloudmesh parallel (TODO: find the link)
@@ -106,14 +106,14 @@ It will sequentially install docker on each host. This is not very efficient and
 
 ## Registering the Pi to the Swarm
 
-Next we need to run on one of the nodes the management node for the swarm to whcih all others servers register as workers. Although we could run on this node als a worker, we will just run the manager on it as we want to avoid overloading it and make sure it operates smoothly.
+Next we need to run on one of the nodes the management node for the swarm to which all others servers register as workers. Although we could run on this node als a worker, we will just run the manager on it as we want to avoid overloading it and make sure it operates smoothly.
 
 We select the first host in our hostlist for it called `red00` Let us assume the host has the ipaddress `<manager-ip-address>`. We can log into this computer and execute the command
 
 ```bash
 $ sudo docker swarm init --advertise-addr <manager-ip-address>:2377
 ```
-This command will print out a token that we can use on the workers to register with our swarm. The tocken will look something like:
+This command will print out a token that we can use on the workers to register with our swarm. The token will look something like:
 
 	SWMTKN-abc...xyz
 
@@ -173,7 +173,7 @@ The following table is copied from the [docker manual](https://github.com/docker
 
 Swarm.1
 
-: Your task is is to identify technologies to execute the instalation 
+: Your task is is to identify technologies to execute the Installation 
   in parallel. Suitable technologies include
 
   * psh
@@ -192,7 +192,7 @@ Swarm.2
 
   `cms swarm config hostnames.yaml`
   
-  where the yaml file loosk something like  
+  where the yaml file looks something like  
 
   ```yaml
   manager: <ip00>

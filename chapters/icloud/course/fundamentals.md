@@ -316,9 +316,9 @@ In this section we focus on HPC and Cloud while covering the following topics:
 -   Supercomputers versus clouds
 -   Science Computing Environments
 
-[:clapper: HPC in the Clou (19:29) - Part P](https://drive.google.com/open?id=1u5z9-GY1Hecp8nR47Gxe8506NnhHduF1)
+[:clapper: HPC in the Cloud (19:29) - Part P](https://drive.google.com/open?id=1u5z9-GY1Hecp8nR47Gxe8506NnhHduF1)
 
-[:scroll: Slides HPC in the Clou (8) -  Part P](https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF)
+[:scroll: Slides HPC in the Cloud (8) -  Part P](https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF)
 
 Part Q - Analytics and Simulation
 ------------------------------------------------

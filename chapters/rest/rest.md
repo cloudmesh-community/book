@@ -109,7 +109,7 @@ REST programming language support:
 
 REST documentation based tools:
 
-:   These tools are primarily focussing on documenting REST
+:   These tools are primarily focusing on documenting REST
     specifications. Such tools include Swagger, which we will explore in
     more detail.
 
@@ -126,13 +126,13 @@ REST design support tools:
 Flask RESTful Services
 ----------------------
 
-Flask is a mocro services framework allowing to write web services in
+Flask is a micro services framework allowing to write web services in
 python quickly. One of its extensions is Flask-RESTful. It adds for
 building REST APIs based on a class definition making it relatively
 simple. Through tis interface we can than integrate with your existing
-Object Relational Modles and libraries. As Flask-RESTful leverages the
+Object Relational Models and libraries. As Flask-RESTful leverages the
 main features from Flask an extensive set of documentation is available
-allowing you to get started quickly and thouroghly. The Web page
+allowing you to get started quickly and thoroughly. The Web page
 contains extensive documentation:
 
 * <https://flask-restful.readthedocs.io/en/latest/>
@@ -140,7 +140,7 @@ contains extensive documentation:
 We will provide a simple example that showcases some *hard coded* data
 to be served as a rest service. It will be easy to replace this for
 example with functions and methods that obtain such information
-dynamically from the operationg system.
+dynamically from the operating system.
 
 This example has not been tested., We like that the E222 class defines a
 beautiful example to contribute to this section. and explains what
@@ -166,7 +166,7 @@ happens in this example.
 
     def abort_if_cluster_doesnt_exist(computer_id):
         if computer_id not in COMPUTERS:
-            abort(404, message="Computer {} doesnot exist".format(computer_id))
+            abort(404, message="Computer {} does not exist".format(computer_id))
 
     parser = reqparse.RequestParser()
     parser.add_argument('processor')
@@ -490,7 +490,7 @@ In this case how many child resources are available through our API?
 
 Develop a REST service with Eve and start and stop it
 
-Define curl calls to store data into the service and retrive it.
+Define curl calls to store data into the service and retrieve it.
 
 Write a Makefile and in it a target clean that cleans the data base.
 Develop additional targets such as start and stop, that start and stop
@@ -656,7 +656,7 @@ In contrast to our earlier example, we are not using the jsonify object,
 but create explicitly a response that we return to the clients. The
 response includes a header that we return the information in json
 format, a status of 200, which means the object was returned
-sucessfully, and the actual data.
+successfully, and the actual data.
 
 ### WRONG: Consuming REST API Using a Client Application
 
@@ -715,11 +715,11 @@ want to save another record you must have entries with unique emails. In
 order to make this dynamic you can include a input reading by using the
 terminal to get the student data first and instead of the static data
 you can use the user input data from the terminal to get dynamic data.
-But for this exercise we donot expect that or any other form data
+But for this exercise we do not expect that or any other form data
 functionality.
 
 In order to get the saved data, you can comment the record saving
-function and uncoment the get all function. In python commenting is done
+function and uncomment the get all function. In python commenting is done
 by using `#`.
 
 This client is using the **requests** python library to send GET, POST
@@ -780,7 +780,7 @@ title
 
 parent
 
-:   . The term parent referes to the very initial link or an API
+:   . The term parent refers to the very initial link or an API
     endpoint in a particular RESTful web service. Generally this is
     denoted with the primary address like http://example.com/api/v1/.
 
@@ -809,7 +809,7 @@ Pagenation information can be included in the `_meta` field.
 
 #### Filtering
 
-CLients can submit query strings to the rest service to retrieve
+Clients can submit query strings to the rest service to retrieve
 resources based on a filter. This also allows sorting of the results
 queried. One nice feature about using mongo as a backend database is
 that Eve not only allows python conditional expressions, but also mongo
@@ -917,7 +917,7 @@ need to install it as follows:
 
 We have provided a convenient Makefile that currently only works for
 OSX. It will be easy for you to adapt it to Linux. Certainly you can
-look at the targes in the makefile and replicate them one by one.
+look at the targets in the makefile and replicate them one by one.
 Important targets are deploy and test.
 
 When using the makefile you can start the services with:
@@ -928,7 +928,7 @@ When using the makefile you can start the services with:
 IT will start two terminals. IN one you will see the mongo service, in
 the other you will see the eve service. The eve service will take a file
 called sample.settings.py that is base on sample.json for the start of
-the eve service. The mongo servide is configured in such a way that it
+the eve service. The mongo service is configured in such a way that it
 only accepts incoming connections from the local host which will be
 sufficient for our case. The mongo data is written into the
 `$USER/.cloudmesh` directory, so make sure it exists.
@@ -970,7 +970,7 @@ typing:
     which evegenie
 
 If you see the path evegenie is installed. With evegenie installed its
-usaage is simple:
+usage is simple:
 
     $ evegenie
 
@@ -980,7 +980,7 @@ usaage is simple:
 
 It takes a json file as input and writes out a settings file for the use
 in eve. Lets assume the file is called sample.json, than the settings
-file will be called sample.settings.py. Having the evegenie programm
+file will be called sample.settings.py. Having the evegenie program
 will allow us to generate the settings files easily. You can include
 them into your project and leverage the Makefile targets to start the
 services in your project. In case you generate new objects, make sure
@@ -994,7 +994,7 @@ Towards cmd5 extensions to manage eve and mongo
 Naturally it is of advantage to have in cms administration commands to
 manage mongo and eve from cmd instead of targets in the Makefile. Hence,
 we **propose** that the class develops such an extension. We will create
-in the repository the extension called admin and hobe that students
+in the repository the extension called admin and hope that students
 through collaborative work and pull requests complete such an admin
 command.
 
@@ -1008,7 +1008,7 @@ coordinate with each other.
 
 The implementation based on what we provided in the Make file seems
 straight forward. A great extension is to load the objects definitions
-or eve e.g. settings.py not from the class, but forma place in
+or eve e.g. settings.py not from the class, but from a place in
 .cloudmesh. I propose to place the file at:
 
     .cloudmesh/db/settings.py

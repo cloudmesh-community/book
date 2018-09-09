@@ -153,7 +153,7 @@ swarm is allowed.
 
 Deployment projects must include a repeatable deployment framework that
 uses cmd5 and ansible. When using ansible it should be called from a
-custoom cmd5 program.
+custom cmd5 program.
 
 ### Example projects
 
@@ -211,7 +211,7 @@ discussed in the team for completeness.
 Using argparse and other python commandline interface environments is
 not allowed.
 
-Deployment project will not only deply the farmewor, but either provide
+Deployment project will not only deploy the framework, but either provide
 a sophisticated benchmark while doing a simple analysis using the
 deployed software.
 
@@ -232,7 +232,7 @@ analysis code in your README.
 
 ### Requirements
 
-An analytocs project may focus on a sophisticated and academically
+An analytics project may focus on a sophisticated and academically
 correct usage of an analytics of data. It must be significant and not
 just a simple replication of what others have done before.
 
@@ -292,7 +292,7 @@ android that allows a user while driving to
 
 -   have a button on the phone that allows the gps coordinates to be
     collected and allow upload either live, or when the user presses
-    another butten.
+    another button.
 
 -   have provisions in the application that allow you to augment the
     data
@@ -314,12 +314,12 @@ something similar, maybe potholes ..
 Gregor would like to get this project or at least the database search
 query staffed.
 
-Project Idea: Author disambiguty problem
+Project Idea: Author disambiguity problem
 ----------------------------------------
 
 Given millions of publications how do we identify if an author of paper
 a with the name Will Smith is the sam as the author of paper 2 with the
-name Will Smith, or William Smith, or W. Smith. AUthor databases are
+name Will Smith, or William Smith, or W. Smith. Author databases are
 either provided in bibtex format, or a database that can not be shared
 outside of this class. YOu may have to add additional information from
 IEEE explorer, research gate, ISI, or other online databases.

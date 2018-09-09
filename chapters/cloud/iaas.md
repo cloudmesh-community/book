@@ -117,7 +117,7 @@ detailed VMware example.
 -   Slide: [PDF (Page
     58-65)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
-Clusters and Resource Mgmt.
+Clusters and Resource Management.
 ---------------------------
 
 Characteristics of VM clusters are listed, including the ability to run

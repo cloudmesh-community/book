@@ -256,7 +256,7 @@ Open up a terminal,
       jupyter notebook
 
 Then in the browser the jupyter notebook is being loaded. There create a
-new Ipython notebook called twittersparkstremer.
+new IPython notebook called twittersparkstremer.
 
 Then add the following content.
 

@@ -30,7 +30,7 @@ Two reason:
 
 2. The TAs will evaluate the FAQs every day at the end of the day and
    integrate those that need to be in this list at that time. Hence it
-   may take up to 24 hours for FAQs to apear here.
+   may take up to 24 hours for FAQs to appear here.
 
 Once an FAQ is in the book answered (it may actually be part of
 another section, TAs will mark the FAQ in piazza, so you can make sure
@@ -96,7 +96,7 @@ so if you kwon reply ti this
 
 This is an important tip and I recommend that you read it.
 
-We will add throughout the semester some technical lecture notes. Thes
+We will add throughout the semester some technical lecture notes. These
 notes contain tutorial-like information on how to run certain things
 on a computer. What we have seen in the past with some students is
 that they do not read the text between the sections that look like you

@@ -132,7 +132,7 @@ sectionheaders:
 	../bin/section.py 1 "Yarn" > dest/chapters/SECTION-yarn.md  
 	../bin/section.py 1 "Spark" > dest/chapters/SECTION-spark.md        
 	../bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
-	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
+	../bin/section.py 1 "Scientific Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 2 "Language" > dest/chapters/prg/SECTION-PYTHON-LANG.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
@@ -182,7 +182,7 @@ destination:
 	$(COPY) -r ../template/fonts dest
 	$(COPY) -r ../chapters dest	
 
-prepare: destination refernces todo
+prepare: destination references todo
 	$(MARKUPALL)
 	../bin/date.py > dest/chapters/version.md
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
@@ -210,7 +210,7 @@ endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
 
-refernces:
+references:
 	mkdir -p dest
 	cat ../bib/*.bib > dest/references.bib
 

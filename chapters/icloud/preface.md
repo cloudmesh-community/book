@@ -103,7 +103,7 @@ the course.
 
 -   Written Assignments (10%)
 
--   Excersizes (30%) - 8 Excersizes:
+-   Exercises (30%) - 8 Exercises:
 
     -   Hadoop Statistics (5)
 

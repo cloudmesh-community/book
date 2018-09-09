@@ -85,7 +85,7 @@ Markdown plus
 : Markdown with lots of extensions. We are not supporting all of the
   extensions at this time. We just use mostly regular markdown.
   It is located at <https://mdp.tylingsoft.com/>. The source code is
-  on gitub <https://github.com/tylingsoft/markdown-plus>. A
+  on github <https://github.com/tylingsoft/markdown-plus>. A
   precompiled version is available for $15. A possible local install
   could be working as follows (untested)
 
@@ -133,7 +133,7 @@ Makefile to see how we use some more advanced features
 
 ### Mermaid
 
-Mermaide is a graph generation tool that lets you create graphs and
+Mermaid is a graph generation tool that lets you create graphs and
 diagrams with the help of a description language. It includes graphviz
 and UML like diagrams, as well as gantt charts
 
@@ -143,7 +143,7 @@ A live editor is available at
 
 A markdown plugin for pandoc is available
 
-* Mermaide 
+* Mermaid 
 * <https://github.com/raghur/mermaid-filter>
 
 Installation is done with

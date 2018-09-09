@@ -1,8 +1,8 @@
 # Creating the ePubs from source
 
-Although you will never likely to create the ePub from source, we have
+Although you will never likely to create the epub from source, we have
 included this section for our most advanced contributors and those
-that update the ePub on github.
+that update the epub on github.
 
 ## OSX Requirements :o:
 

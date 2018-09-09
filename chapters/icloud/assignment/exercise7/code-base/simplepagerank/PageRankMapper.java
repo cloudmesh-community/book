@@ -36,7 +36,7 @@ public class PageRankMapper extends CollectiveMapper<String, String, LongWritabl
 		noIterations = conf.getInt(PageRankConstants.NUM_ITERATONS, 0);
 	}
 	/* Each mapCollective task handles one adjacency matrix in a split
-	 * key: file offset. We donot really use the key
+	 * key: file offset. We do not really use the key
 	 * value: <sourceUrl targetUrl-list>
 	 */
 	public void mapCollective( KeyValReader reader, Context context) throws IOException, InterruptedException {

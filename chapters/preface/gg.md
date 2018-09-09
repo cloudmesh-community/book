@@ -34,7 +34,7 @@ Chameleon Cloud IU google Piazza, \] \] \] \[Scientific Writing
 \[Assignments \[Project Report, \] \[2 p. Paper, \] \[Abstracts, \] \]
 \[LaTeX \[bibtex\
 jabref [\[s:a\]](#s:a){reference-type="ref" reference="s:a"}\
-LaTeX, \] \] \] \[Prerequisits Review \[Python \[Language, \] \[pyenv\
+LaTeX, \] \] \] \[Prerequisites Review \[Python \[Language, \] \[pyenv\
 pip, \] \] \[Advanced Python \[Numpy\
 Scipy\
 OpenCV, \] \[Face Detection Fingerprint, \] \[CMD5, \] \] \[ssh \[Keys,
@@ -46,6 +46,6 @@ Hadoop\
 Spark, \] \[E516\
 Harp\
 Twister, \] \] \[Servers \[REST, \] \[MQTT, \] \] \] \[SaaS
-\[Applications \[Physics, \] \[Helath Care, \] \[Life Style, \]
+\[Applications \[Physics, \] \[Healthcare, \] \[Life Style, \]
 \[Sensors, \] \[Sports, \] \[Web Search\
-Text Minining, \] \] \] \]
+Text Mining, \] \] \] \]

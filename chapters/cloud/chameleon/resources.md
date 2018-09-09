@@ -12,7 +12,7 @@ found in this document. We would like to get your feedback in case you
 find errors or like to contribute tho this documentation.
 
 Chameleon cloud promotes insecure use of ssh while suggesting passphrase
-less keys. This is **very dangerous** due to the fact that somone could
+less keys. This is **very dangerous** due to the fact that someone could
 gain access to your computer and if a password less key is stolen easy
 access to other systems can be achieved. Instead you must use whenever
 possible passphrases and use ssh agent and ssh add!

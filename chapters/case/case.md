@@ -55,7 +55,7 @@ students. However you can use alternative that can be used for
 free. This includes FreeCAD 
 
 * FreeCAD Software <https://www.freecadweb.org/>
-* FrecCAD Documentation <https://www.freecadweb.org/wiki/Main_Page>
+* FreeCAD Documentation <https://www.freecadweb.org/wiki/Main_Page>
 
 This program allows you to design the layout of a 3D case via a
 sophisticated GUI just like Fusion 360. 
@@ -184,7 +184,7 @@ can replicate these steps next time.
       right of screen.
       
    4. Next drag the file to be cut on to the Job Control work surface
-      and setit up in the upper right corner.
+      and set it up in the upper right corner.
    5. Select the Play arrow in JobControl
    6. An exhaust warning will appear. Select OK. The job will start.
 

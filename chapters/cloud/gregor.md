@@ -1,20 +1,20 @@
-# Research Interrests
+# Research Interests
 
 ---
 
 **:mortar_board: Learning Objectives**
 
-* Identify intereting topics you can do research in with Dr. von Laszewski.
+* Identify interesting topics you can do research in with Dr. von Laszewski.
 * Decide if you also like to do an independent study in addition to the class with him.
 * For online students that have a job he recommends not to take more than 6 credit hours per week.
 * For full time residential students (graduates) he recommends not to take more than 9 credit hours per week.
 
 ---
 
-In this lecture we are presenting some of the research interrests of
+In this lecture we are presenting some of the research interests of
 Gregor von Laszewski, the instructor of this class.
 
-This inclodes:
+This Includes:
 
 * Cloud Computing
 * Cloud and Big Data Computing Architectures

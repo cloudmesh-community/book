@@ -108,7 +108,7 @@ Some remarks are given on heuristics; why are they so important why
 getting exact answers is often not so important?
 
 \TODO{These resources have not all been checked to see if they still
-  exist this is curretnly in progress}
+  exist this is currently in progress}
 
 ## Resources
 

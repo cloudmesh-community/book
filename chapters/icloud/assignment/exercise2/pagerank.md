@@ -11,7 +11,7 @@ requires iterative calculations to converge. An iteration of PageRank
 calculates the new access probability for each webpage based on values
 calculated in the previous iteration. The process will repeat until the number
 of current iterations is bigger than predefined maximum iterations, or the
-Euclidian distance between rank values in two subsequent iterations is less
+Euclidean distance between rank values in two subsequent iterations is less
 than a predefined threshold that controls the accuracy of the output results.
 
 ## Docker Run

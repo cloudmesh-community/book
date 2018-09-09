@@ -1,6 +1,6 @@
 # Automated Headless Configuration of a Pi Cluster :o:
 
-Our goal is perform the following configuraton automatically:
+Our goal is perform the following configuration automatically:
 
 * [Enable ssh](https://www.raspberrypi.org/documentation/remote-access/ssh/) 
 permanently (initial ssh access will be enabled when we burn the SD cards)
@@ -33,7 +33,7 @@ TODO: New version of isc-dhcp-server. Find out if INTERFACES in
 
 TODO: Switch is eth8 when internet sharing is off, names show up, and
 IP addresses are on different subnet. When internet sharing is on,
-names donot show up. How should DHCP and network be setup? What is the
+names do not show up. How should DHCP and network be setup? What is the
 use case? Below is output of `arp -a` with internet sharing.  I turned
 it on so that installations via apt-get would work:
 

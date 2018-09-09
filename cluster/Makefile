@@ -271,17 +271,17 @@ FILENAME=vonlaszewski-cloud-cluster
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
-epub: dot refernces todo
+epub: dot references todo
 	mkdir -p dest/chapters/prg
 	bin/markup-all.py
 	bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
-	bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
+	bin/section.py 1 "Scientific Writing" > dest/chapters/doc/SECTION.md
 	bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 	bin/section.py 1 ":construction::construction::construction::construction::construction::construction::construction::construction::construction::construction::construction:" > dest/chapters/SECTION-DRAFT.md
 	pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt $(INDEX)
 
-refernces:
+references:
 	mkdir -p dest
 	cat ../bib/refs-mqtt.bib bib/references.bib ../bib/bibliography.bib > dest/references.bib
 
@@ -289,10 +289,10 @@ html:
 	pandoc $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) -o $(FILENAME).html metadata.txt $(INDEX)
 
 pdf:
-	pandoc -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography refernces.bib --csl=ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
+	pandoc -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
 
 tex:
-	pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography refernces.bib --csl=ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)
+	pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography references.bib --csl=ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)
 	pdflatex content.tex
 
 

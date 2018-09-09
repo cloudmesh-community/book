@@ -3,13 +3,13 @@
 ## Introduction to Ansible
 
 Ansible is an open-source IT automation DevOps engine allowing you to manage
-and configure many compute resources in a scalable, consitent and
+and configure many compute resources in a scalable, consistent and
 reliable way.
 
 Ansible to automates the following tasks:
 
-* **Provisioning:** It ssets up the servers that you will use as part
-  of your infrasstructure.
+* **Provisioning:** It sets up the servers that you will use as part
+  of your infrastructure.
 
 * **Configuration management:** You can change the configuration of an
 application, OS, or device. You can implement security policies and
@@ -44,7 +44,7 @@ Let us develop a sample from scratch, based on the paradigms that
 ansible supports. We are going to use Ansible to install Apache server on
 our virtual machines.
 
-First, we install ansible on our machien and make sure we have an up
+First, we install ansible on our machine and make sure we have an up
 to date OS:
 
     $ sudo apt-get update
@@ -94,8 +94,8 @@ with a proper name e.g. `apache.yml` as follow:
           apt: name=apache2 update_cache=yes state=latest
 
 This block defines the target VMs and operations(tasks) need to apply.
-We are using the `apt` attribute to indicate all software packges that
-need to be installed. Dependent on the disstribution of the operating
+We are using the `apt` attribute to indicate all software packages that
+need to be installed. Dependent on the distribution of the operating
 system it will find the correct module installer without your
 knowledge. Thus an ansible playbook could also work for multiple
 different OSes. 
@@ -104,7 +104,7 @@ Ansible relies on various kinds of modules to fulfil tasks on the remote
 servers. These modules are developed for particular tasks and take in
 related arguments. For instance, when we use `apt` module, we 
 need to tell which package we intend to install. That is why we provide
-a value for the `name=` argument. The first `-name` attribute is jsut
+a value for the `name=` argument. The first `-name` attribute is just
 a comment that will be printed when this task is executed. 
 
 ### Run the playbook
@@ -136,7 +136,7 @@ are key features you will find useful in your project deployments.
 
 We are going to use a top-down fashion in this example. We first start
 from a playbook that is already good to go. You can execute this
-playbook (donot do it yet, always read the entire section first) to
+playbook (do not do it yet, always read the entire section first) to
 get R installed in your remote hosts. We then further complicate this
 concise playbook by introducing functionalities to do the same tasks
 but in different ways. Although these different ways are not necessary
@@ -368,7 +368,7 @@ tasks:
 
 meta:
 
-> Provide necessary metatdata for our Ansible Galaxy project for
+> Provide necessary metadata for our Ansible Galaxy project for
 > shipping:
 
         ---
