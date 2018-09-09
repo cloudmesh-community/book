@@ -70,209 +70,187 @@ Please see
 [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub)
 for more details.
 
-### Tools and Services
+### Topics covered in this class
 
-* Piazza
-* Github
 
-### Definition of Cloud Computing
+* Tools and Services
 
-* NIST definition
-* History of Clouds
-* Technologies enabling Clouds
-* Service Model
+  * Piazza
+  * Github
 
-  * IaaS
-  * PaaS
-  * SaaS
+* Definition of Cloud Computing
 
-### Data Centers 
+  * NIST definition
+  * History of Clouds
+  * Technologies enabling Clouds
+  * Service Model
 
-* Evolution of the Data Center
-* Today's Data Center
-* Academic Data Centers
+    * IaaS
+    * PaaS
+    * SaaS
 
-### NIST Big Data Reference Architecture
+* Data Centers 
 
-* Composable Services
+  * Evolution of the Data Center
+  * Today's Data Center
+  * Academic Data Centers
+
 * NIST Big Data Reference Architecture
+  
+  * Composable Services
+  * NIST Big Data Reference Architecture
 
   * You can contribute!
   * You can benefit!
 
-## Infrastructure
+* Infrastructure
 
-### Infrastructure as a Service
+  * Infrastructure as a Service
 
-* What is infrastructure
-* How to manage infrastructure
-* How to use infrastructure
-  * GUI vs commandline vs programming
-* Overview of commercial and educational IaaS 
+    * What is infrastructure
+    * How to manage infrastructure
+    * How to use infrastructure
+    * GUI vs commandline vs programming
+    * Overview of commercial and educational IaaS 
 
-#### OpenStack
+  * OpenStack
 
-* What is OpenStack?
-* How can you use OpenStack?
-* ChameleonCloud
+    * What is OpenStack?
+    * How can you use OpenStack?
+    * ChameleonCloud
 
-#### Azure
+  * Azure
 
-* What is Azure?
-* How can you use Azure?
+    * What is Azure?
+    * How can you use Azure?
 
-#### AWS
+  * AWS
 
-* What is AWS?
-* How can you use AWS?
+    * What is AWS?
+    * How can you use AWS?
 
-#### Google
+  * Google
 
-* What is Google?
-* How can you use Google?
+    * What is Google?
+    * How can you use Google?
 
-#### Watson
+  * Watson
 
-*We may not have time to cover this topic*
+    * We may not have time to cover this topic*
 
-* What is AWS?
-* How can you use AWS?
+    * What is Watson?
+    * How can you use Watson?
 
+* Virtualization
 
-## Virtualization
+  * Introduction to virtualization
 
-* Introduction to virtualization
+    * Qemu
+    * KVM 
+    
+  * Virtual machines
 
-### Qemu
+    * Virtual Box
+    * Vagrant
 
-* Introduction to Qemu
+  * Containers
 
-### KVM
+    * Introduction to Containers
+    * Docker
 
-* Introduction to KVM
+      * Introduction to Docker
+      * Dockerfiles
+      * Dockerhub
+      * Create your own docker images
 
-### Virtual machines
+  * Kubernetes
 
-* Virtual Box
-* Vagrant
+    * Managing containers in kubernetes
 
-### Containers
+* Programming
 
-* Introduction to Containers
+  * Python for Cloud Computing
 
-#### Docker
+    * Python 2 and Python 3
+    * Introduction to Python
+    * Classes
+    * DocOpts
+    * CMD, CMD5
+    * YAML
+    * JSON
+    * Module Management
+    * setup.py
+    * Hosting code on github
+    * Installing code from github
 
+  * LibCloud
 
-* Introduction to Docker
-* Dockerfiles
-* Dockerhub
-* Create your own docker images
+    * Introduction to libcloud
+    * Managing vms
 
-#### Kubernetes
+  * REST Services
 
-* Managing containers in kubernetes
+    * Github as a Cloud Service
 
-## Programming
+      * Accessing Github REST services
+      * Mine Github
 
-### Python for Cloud Computing
+    * Eve
 
-* Python 2 and Python 3
-* Introduction to Python
-* Classes
-* DocOpts
-* CMD, CMD5
-* YAML
-* JSON
-* Module Management
-* setup.py
-* Hosting code on github
-* Installing code from github
+      * Using Eve to develop REST services
+      * Integrating swagger docs into Eve
 
-#### LibCloud
+  * OpenAPI
 
-* Introduction to lib cloud
-* Managing
+    * Abstracting REST services
+    * OpenAPI Specification
+    * Generating code from OpenAPI
 
+* Map/Reduce
 
+  * Hadoop
+  * Spark
 
-### REST Services
+* Messaging
 
-#### Github as a Cloud Service
+  * MQTT
+  * GraphQL
+  
+* Go for the Cloud Computing
 
-* Accessing Github REST services
-* Mine Github
+  * Introduction to Go
+  * Developing REST Services with Go
+  * Go and Kubernetes
 
-#### Eve
+* Julia for Cloud Computing
 
-* Using Eve to develop REST services
-* Integrating swagger docs into Eve
-
-#### OpenAPI
-
-* Abstracting REST services
-* OpenAPI Specification
-* Generating code from OpenAPI
-
-## Map/Reduce
-
-* Map Reduce
-
-### Hadoop
-
-* Overview of Hadoop
-
-### Spark
-
-* Overview of Spark
-
-## Messaging
-
-### MQTT
-
-* MQTT Services
-* MQTT in the cloud
-* Develop your own MQTT Service
-
-## GraphQL
-
-* Introduction to GraphQL
-* Advantages and disadvantages of GraphQL
-
-## Go for the Cloud Computing
-
-* Introduction to Go
-* Developing REST Services with Go
-* Go and Kubernetes
-
-## Julia for Cloud Computing
-
-We may not have time to cover this topic. However this could be chosen
+  * :warning: We may not have time to cover this topic. However this could be chosen
 by a student as Chapter and tutorial contribution.
 
-* Language motivation
-* DocOpts with Julia
-* Distributed computing with Julia
-* Cloud Computing with Julia
-* Reimplementing cloudmesh with Julia
-* Accessing MongoDB
-* REST services in Julia
-* Containers and Julia
+  * Language motivation
+  * DocOpts with Julia
+  * Distributed computing with Julia
+  * Cloud Computing with Julia
+  * Reimplementing cloudmesh with Julia
+  * Accessing MongoDB
+  * REST services in Julia
+  * Containers and Julia
 
-## Edge Computing and the Cloud
+* Edge Computing and the Cloud
 
-* Introduction to PI as Edge device
-* Streaming data from a PI
-* Sensors
-* Autonomous Robot Boat (Can be chosen as Project)
+  * Introduction to PI as Edge device
+  * Streaming data from a PI
+  * Sensors
+  * Autonomous Robot Boat (Can be chosen as Project)
 
-## Other topics
+* Other topics
 
-Optional but very fun and useful:
+  Optional but very fun and useful:
 
-* Maker Lab introduction for residential students.
-* Maker Lab certification to operate the laser cutter
-* Creating a case for the Raspberry Pi cluster
-* Creating laser cut peaces for the Robot boat
+  * Maker Lab introduction for residential students.
+  * Maker Lab certification to operate the laser cutter
+  * Creating a case for the Raspberry Pi cluster
+  * Creating laser cut peaces for the Robot boat
 
 We try to set up a 1-2 hour class with certification on Wednesday or
 Thursday Aug. 22 or Aug. 23, 2018. Certification means you could go to
