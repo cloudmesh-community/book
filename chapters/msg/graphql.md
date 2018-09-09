@@ -1,4 +1,4 @@
-# GraphQL
+# GraphQL :o:
 
 To be contributed by
 
