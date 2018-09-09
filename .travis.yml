@@ -1,9 +1,27 @@
 install:
   - sudo apt-get update
-  - sudo apt-get install pandoc
   - sudo apt-get install graphviz
+  - wget https://hackage.haskell.org/package/pandoc-2.2.3.2/pandoc-2.2.3.2.tar.gz
+  - git clone https://github.com/jgm/pandoc-citeproc.git
+  - wget -qO- https://get.haskellstack.org/ | sh
+  - tar xvzf pandoc-2.2.3.2.tar.gz
+  - cd pandoc-2.2.3.2
+  - stack setup
+  - stack install
+  - cd ..
+  - cd pandoc-citeproc
+  - stack setup
+  - stack install
+  - npm install --global mermaid-filter
+
+env:
+  - PATH=$PATH:~/.local/bin
 
 script:
-  - cd big-data-applications
+  - pwd
+  - cd ~/build/cloudmesh-community/book/big-data-applications
+  - pandoc --version
+  - make
+  - cd ~/build/cloudmesh-community/book/cloud
   - pandoc --version
   - make

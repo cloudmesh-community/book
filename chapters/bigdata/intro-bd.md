@@ -1,6 +1,6 @@
-# Introduction to 534
+# Introduction to the Course
 
-created from https://drive.google.com/drive/folders/0B1YZSKYkpykjbnE5QzRldGxja3M
+created from <https://drive.google.com/drive/folders/0B1YZSKYkpykjbnE5QzRldGxja3M>
 
 * [:scroll: 1](https://drive.google.com/open?id=0B1YZSKYkpykjeEdNcXBySU40dGc)
 * [:clapper: 2](https://drive.google.com/open?id=0B1YZSKYkpykjYkNlVWQzeE8yRTg)

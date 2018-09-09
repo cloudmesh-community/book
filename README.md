@@ -54,6 +54,7 @@ $ brew install node.
 $ brew install graphviz
 $ npm install --global mermaid-filter
 $ brew install pandoc
+$ brew install pandoc-citeproc
 ```
 
 Once you have installed pandoc you can create the book with our simple

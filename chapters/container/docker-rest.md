@@ -1,11 +1,9 @@
-Dockerized REST Service
-=======================
+# Dockerized REST Service
 
 We discuss how to use Docker to deploy a REST service designed using
 Python Flask.
 
-Prerequisites
--------------
+## Prerequisites
 
 In order to follow our discussion you will need a system on which you
 can run docker. THis could either be OSX, LInux, or Windows.
@@ -68,8 +66,7 @@ Hyber V)
 
 Install emacs via chocolatey
 
-Activate Virutal Environment
-----------------------------
+## Activate Virutal Environment
 
 ### Ubuntu and OSX
 
@@ -98,8 +95,7 @@ look something like
 (venv) neo$
 ```
 
-File Structure
---------------
+## File Structure
 
 The File structure takes the following look.
 
@@ -222,8 +218,7 @@ if __name__ == "__main__":
 
 After adding the content save and exit emacs.
 
-Build Docker Image
-------------------
+## Build Docker Image
 
 ### Ubuntu and OSX
 
@@ -259,8 +254,7 @@ Note: Changing any content inside the app folder must be
       updated in the container by rebuilding the image.
 ```
 
-Run Docker Image
-----------------
+## Run Docker Image
 
 Run the following commands to get the REST API hosted on
 <http://127.0.0.1:80>
