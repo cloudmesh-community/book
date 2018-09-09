@@ -110,7 +110,8 @@ sectionindent:
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
 	../bin/header.py dest/chapters/MSG.md 2
-	../bin/header.py dest/prg/go-language.md 2
+	../bin/header.py dest/chapters/prg/go-language.md 1
+	../bin/header.py dest/chapters/prg/julia-language.md 1
 	../bin/header.py dest/chapters/msg/mqtt.md 2
 	../bin/header.py dest/chapters/msg/graphql.md 2
 

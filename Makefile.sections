@@ -47,6 +47,7 @@ CHAPTER_516=\
   $(DEVTOOLS)\
   $(PYTHON)\
   chapters/prg/go-language.md\
+  chapters/prg/julia-language.md\
   chapters/MSG.md\
   chapters/msg/mqtt.md\
   chapters/msg/graphql.md\
