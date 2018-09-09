@@ -18,10 +18,10 @@ i523 -> PaaS;
 i523 -> SaaS;
         SaaS -> Applications;
                 Applications -> Physics;
-                Applications -> "Helath Care";
+                Applications -> "Healthcare";
                 Applications -> "Life Style";
                 Applications -> Sensors;
                 Applications -> Sports;
-                Applications -> "Web Search\nText Minining"
+                Applications -> "Web Search\nText Mining"
 
 }

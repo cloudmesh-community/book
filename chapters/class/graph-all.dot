@@ -13,7 +13,7 @@ all  -> Assignments;
                        Accounts -> Survey;
         Assignments -> "Writing Assignments";
                        "Writing Assignments" -> Biography;
-                       "Writing Assignments" -> Plagiarizm;
+                       "Writing Assignments" -> Plagiarism;
                        "Writing Assignments" -> Abstract;
                        "Writing Assignments" -> Chapter;                       
                        "Writing Assignments" -> "Project Report";                                                                     
