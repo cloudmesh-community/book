@@ -28,7 +28,7 @@ copy of the "cloudmesh/technologies" repository.
 ## Clone your copy
 Now that you have your fork created, we can go ahead and clone it into
 our machine. Instructions on how to clone a repository can be found in the
-Github documentaion - [Cloning a repository](https://help.github.com/articles/cloning-a-repository/).
+Github documentation - [Cloning a repository](https://help.github.com/articles/cloning-a-repository/).
 Make sure that you clone your version of the technologies repo.
 
 ## Adding an upstream 
@@ -50,7 +50,7 @@ To make sure you have added it correctly execute the following command
 git remote -v
 ```
 
-You should see something simillar to the following as the output
+You should see something similar to the following as the output
 
 ```console
 origin	https://github.com/pulasthi/technologies.git (fetch)
@@ -75,7 +75,7 @@ copy
 Now make the needed changes commit and push, the changes will be pushed
 to your copy of the repo i Github, not the "cloudmesh/technologies" repo.
 
-## Creating a pull reqest
+## Creating a pull request
 
 Once we have changes pushed, you can go into your repository in Github to
 create a pull request. As seen in the image below, you have an button named

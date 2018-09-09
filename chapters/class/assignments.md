@@ -61,7 +61,7 @@ Term Paper:
   publishable either in a workshop or as part of the handbook. Not all
   classes allow you to do a term paper, but require you to do a
   project. Please confirm with your class. For the classes listed here
-  the term paper wil result in a quater reduction in grade for the
+  the term paper wil result in a quarter reduction in grade for the
   entire class not just the paper. Remember tables and figures do not
   count towards the paper length. A term paper has the following
   length.
@@ -91,7 +91,7 @@ Project Report:
 
 Project Code:
 
-: This is the **documented** and **reproducable** code and scripts
+: This is the **documented** and **reproducible** code and scripts
   that allows a TA do replicate the project. In case you use images
   they must be created from scratch locally and may not be uploaded to
   services such as dockerhub. You can however reuse vendor uploaded
@@ -117,7 +117,7 @@ Work Breakdown:
     document. It also includes explicit URLs to the git history that
     documents the statistics to demonstrate not only one student has
     worked on the project. If you can not provide such a statistic or
-    all checkins have been made by a single student, the project has
+    all check-ins have been made by a single student, the project has
     shown that they have not properly used git. Thus points will be
     deducted from the project. Furthermore, if we detect that a student
     has not contributed to a project we may invite the student to give a
@@ -144,11 +144,11 @@ For due dates see the [calendar](#calendar) section.
 ### Assignment 0 - Organization and Communication
 
 In order for us to communicate with you and you being able to use the
-class reources we need you to register with various systems.  THis
-needs to be done immediatly as it takes a while to get the systems set
+class resources we need you to register with various systems.  THis
+needs to be done immediately as it takes a while to get the systems set
 up. It also requires approval steps that take some time and are not
 immediate, thus do not just start this assignment on the due
-date. Procrastenation will not help you.
+date. Procrastination will not help you.
 
 #### Account setup and survey
 
@@ -157,7 +157,7 @@ Please do the following:
 Get access to piazza:
 
 1. We have provided a detailed section about [piazza](#piazza) for you
-   to explain how to get access to piazza. Please reveiew this section
+   to explain how to get access to piazza. Please review this section
    carefully and create an account or use your existing piazza account
    to access the class piazza.
 
@@ -195,7 +195,7 @@ some time ...
 
 7. **Wait till your HID directory on github.com is created**. Please
    do not send us e-mail, we will look at the survey within 1-2
-   buisiness days (Mon - Fri 9am-5pm EST) we will create your
+   business days (Mon - Fri 9am-5pm EST) we will create your
    repository on github. Make sure to check on github as you will need
    to accept the invitation to gain access to the
    repository. github.com will also send you an e-mail. Check your
@@ -362,7 +362,7 @@ This assignment has the following outcomes
    project. Hence, it is good to know how to do that.
 3. Learn using gitissues
 4. Learn how to self coordinate lots of tasks in a large group
-5. Learn how to create pull requests via the git userinterface
+5. Learn how to create pull requests via the git user interface
 6. Learn how to use markdown which will be also used in your project
    to document how to replicate your project
 
@@ -431,7 +431,7 @@ portion of your grade of your class grade.  Please locate your class
 number and read up on the section relevant for your class.
 
 Please see our [Terminology](#terminology) Section about basic
-requirements. The Report format is discussed in teh Scientifif Writing
+requirements. The Report format is discussed in the Scientific Writing
 Section.
 
 Projects do require you to produce code for all classes the following
@@ -486,7 +486,7 @@ Code:
     results. You are expected to integrate cmd5, which we teach in
     class. In addition you can use or are expected to us DOCKERFILES,
     ansible, or shell scripts. It is not permissible to use GUI based
-    DevOps preinstalled frameworks. Everything must be installable and
+    DevOps pre-installed frameworks. Everything must be installable and
     reproducible form the command line.
 
 Cloud Resources:

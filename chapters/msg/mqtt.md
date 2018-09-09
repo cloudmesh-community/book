@@ -426,7 +426,7 @@ were observed. Eclipse IoT MQTT broker (*iot.eclipse.org*) was also
 tried which also did not result in any significant delays.
 
 Thus it is observed that two raspberry pis can be easily controlled
-using MQTT. This system can be extended to incude arbitrary number of
+using MQTT. This system can be extended to include arbitrary number of
 raspberry pis and other devices that subscribe to the broker. If a
 device fails, or the connection from one device is broken, other devices
 are not affected and continue to perform the same.

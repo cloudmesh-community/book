@@ -6,8 +6,8 @@ rankdir=LR;
 splines=line;
 node [shape=box, style=rounded, shadow_offset=7, shadow_blur=5,width=2,height=0.05];
 
-e222 -> "Arificial Inteligence";
-        "Arificial Inteligence" -> "AI Theory & Practice";
+e222 -> "Artificial Intelligence";
+        "Artificial Intelligence" -> "AI Theory & Practice";
                                    "AI Theory & Practice" -> "Unsupervised Learning";
                                    "AI Theory & Practice" -> "Deep Learning";
                                    "AI Theory & Practice" -> "Forecasting";

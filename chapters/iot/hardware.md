@@ -56,7 +56,7 @@ less powerful and do not contain built-in Bluetooth or WiFi.
 
 -   \$7.99 [Power
     Adapter](https://www.amazon.com/Enokay-Supply-Raspberry-Charger-Adapter/dp/B01MZX466R/ref=sr_1_3?ie=UTF8&qid=1498443576&sr=8-3&keywords=raspberry+pi+power+adapter+micro+usb+switch)
-    This is an aftermarket poweradapter. Lots uof us use this one.
+    This is an aftermarket power adapter. Lots uof us use this one.
 
 -   \$6.99 [HDMI
     cable](https://www.amazon.com/AmazonBasics-High-Speed-HDMI-Cable-Standard/dp/B014I8SSD0/ref=sr_1_3?ie=UTF8&qid=1499253502&sr=8-3&keywords=hdmi+cable)
@@ -132,7 +132,7 @@ Sensor Kit
 ----------
 
 It is fun to attach sensors to your IoT board. There are many kits
-abvailable and we encourage you to do comparisions. One such kit is
+available and we encourage you to do comparisons. One such kit is
 
 -   \$29.99 [Elegoo 37
     Sensors](https://www.amazon.com/Elegoo-Upgraded-Modules-Tutorial-Arduino/dp/B01MG49ZQ5/ref=sr_1_7?s=electronics&ie=UTF8&qid=1499251441&sr=1-7&keywords=elegoo)

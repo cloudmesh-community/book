@@ -2,10 +2,10 @@
 
 :warning: This section is under development. It is contributed by Qianqian
 
-Go is a computer languge developed by Goole with the goal 
+Go is a computer language developed by Google with the goal 
 to "build simple, 
 reliable, and efficient software". 
-The lenguage is open source and the main Web page is
+The language is open source and the main Web page is
 
 
 https://golang.org/

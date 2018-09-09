@@ -19,7 +19,7 @@ in 1969 by Ken Thompson and Dennis Ritchie of Bell Laboratories and
 rewritten in C. An important part of UNIX is what is called the *kernel*
 which allows the software to talk to the hardware and utilize it.
 
-In 1991 Linus Trovalds started developing a Linux Kernel that was
+In 1991 Linus Torvalds started developing a Linux Kernel that was
 initially targeted for PC's. This made it possible to run it on Laptops
 and was later on further developed by making it a full Operating system
 replacement for UNIX.
@@ -96,7 +96,7 @@ command.
 | sleep                             | suspends execution for an          interval of time specified in      seconds                           |
 | uptime                            | displays how long the system has   been running                      |
 | time *command*                    | times the command execution in     seconds                           |
-| find */ \[-name\] file-name.txt*  | searches a specified path or       directory with a given expression  that tells the find utility what   to find, if used as shown the      find utility woud search the       entire drive for a file named      file-name.txt                     |
+| find */ \[-name\] file-name.txt*  | searches a specified path or       directory with a given expression  that tells the find utility what   to find, if used as shown the      find utility would search the       entire drive for a file named      file-name.txt                     |
 | diff                              | compares files line by line       |
 | hostname                          | prints the name of the current     host system                       |
 | which                             | locates a program file in the      users path                        |
@@ -135,7 +135,7 @@ command.
 | time *command*                    | prints the sys, real and user      time                              |
 | shutdown -h "shut down"           | shutdown the computer                      |
 | ping                              | ping a host                     |
-| netstat                           | show network statu                    |
+| netstat                           | show network status                    |
 | hostname                          | print name of current host system                      |
 | traceroute                        | print the route packets take to network host                      |
 | ifconfig                          | configure network interface parameters                     |

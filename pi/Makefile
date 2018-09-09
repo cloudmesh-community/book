@@ -357,7 +357,7 @@ all: prepare epub other
 	echo done
 
 
-prepare: dot refernces todo
+prepare: dot references todo
 	$(COPY) metadata.txt dest
 	$(COPY) -r cover dest
 	$(COPY) -r ../template dest
@@ -376,7 +376,7 @@ prepare: dot refernces todo
 	../bin/section.py 1 "Yarn" > dest/chapters/SECTION-yarn.md  
 	../bin/section.py 1 "Spark" > dest/chapters/SECTION-spark.md        
 	../bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
-	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
+	../bin/section.py 1 "Scientific Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 
@@ -409,7 +409,7 @@ ifeq ($(OS), linux)
 endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME)-other.epub metadata.txt all.md
 
-refernces:
+references:
 	mkdir -p dest
 	cat ../bib/*.bib > dest/references.bib
 

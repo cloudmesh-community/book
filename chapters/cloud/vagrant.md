@@ -72,7 +72,7 @@ host$ vagrant up
 host$ vagrant ssh
 ```
 
-Once you are loged in you can test the version of python with 
+Once you are logged in you can test the version of python with 
 
 ```bash
 vagrant@ubuntu-bionic:~$ sudo apt-get update
@@ -87,7 +87,7 @@ vagrant@ubuntu-bionic:~$ sudo apt-get install python3.7
 vagrant@ubuntu-bionic:~$ sudo apt-get install python3-pip
 ```
 
-To install the light weit idle development environment in case you do
+To install the light weight idle development environment in case you do
 not want o use pyCharm, please use 
 
 ```bash

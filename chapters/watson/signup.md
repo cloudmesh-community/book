@@ -16,7 +16,7 @@ You will then be asked to provide some basic details including your email addres
 
 ![](images/ibmwatson_signup.png)
 
-Once you have submited the signup form an confirmation email will be sent to your email account, check your inbox and click on the confirm account link in the email you receive.
+Once you have submitted the signup form an confirmation email will be sent to your email account, check your inbox and click on the confirm account link in the email you receive.
 This will activate your IBM Watson account. Once you have accepted the terms and conditions you will be taken to the product and service catalog of IBM Watson as shown in the image below.
 
 ![](images/catalog_ibm_watson.png)

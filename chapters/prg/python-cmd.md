@@ -1,10 +1,10 @@
 # cmd Module
 
-If you consider using this module, you may instead want to use cloudmesh cmd5 instead as it provides some very noce features that are not included in cmd. However to do the basics, cmd will do.
+If you consider using this module, you may instead want to use cloudmesh cmd5 instead as it provides some very nice features that are not included in cmd. However to do the basics, cmd will do.
 
 The Python cmd module is useful for any more involved command-line
 application. It is used in the [Cloudmesh
-Project](http://cloudmesh.github.io/), for example, and students have found it helpful in their projects to develop quickly high qiuality command line tools with documentation so that others can replicate and use the programs.  The Python
+Project](http://cloudmesh.github.io/), for example, and students have found it helpful in their projects to develop quickly high quality command line tools with documentation so that others can replicate and use the programs.  The Python
 cmd module contains a public class, Cmd, designed to be used as a base class for command processors such as interactive shells and other
 command interpreters.
 

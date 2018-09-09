@@ -99,7 +99,7 @@ Source: <https://www.domo.com/blog/data-never-sleeps-4-0/>
 -->
 
 
-# Refernces
+# References
 
 * <https://hbr.org/2013/12/analytics-30>
 * <https://www.linkedin.com/pulse/evolution-analytics-10-20-30-shankar-meganatha>

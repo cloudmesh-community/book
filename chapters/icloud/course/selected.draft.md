@@ -7,7 +7,7 @@ Cloud and MapReduce
 This lecture gives a brief introduction of Infrastructure as a Service
 (IaaS), Platform as a Service (PaaS), and Software as a Service (PaaS)
 and MapReduce on clusters. Google systems are also described regarding
-to paralle processing and MapReduce communication patterns are explained
+to parallel processing and MapReduce communication patterns are explained
 like Embarrassingly Parallel, Classical MapReduce, Iterative Reductions
 and Loosely Synchronous e.g. MPI.
 
@@ -47,7 +47,7 @@ Walk Through MapReduce: Hadoop Tasks
 -------------------------------------------------
 
 This lecture gives a walk through explanation of map and reduce task
-under Hadoop and HDFS framwork. Map stage starts with Hadoop Distributed
+under Hadoop and HDFS framework. Map stage starts with Hadoop Distributed
 File System (HDFS) where stores key value pairs assigned to the data
 blocks. In the next stage, the combiner reduces data size and the
 partitioner determines distribution of keys among reducers. Intermediate
@@ -117,7 +117,7 @@ Embarrassingly Parallel Example, Basic Local Alignment Search Tool (BLAST)
 --------------------------------------------------------------------------
 
 The bioinformatics tool, BLAST (Basic Local Alignment Sequence Tool) is
-a good example of embarrassingl parallel. This lecture shows an use case
+a good example of embarrassingly parallel. This lecture shows an use case
 with data collected from the Seattle Children's Hospital to find similar
 sequences in databases in parallel. Blast introduction starts at 2:12.
 BLAST can be parallelized in several ways: query

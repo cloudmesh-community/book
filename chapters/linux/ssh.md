@@ -293,10 +293,10 @@ terminal.
 
 ### Using SSH on Raspberry Pi 3
 
-SSH is available on Rasbian. However, to ssh into the PI you have to
+SSH is available on Raspbian. However, to ssh into the PI you have to
 activate it via the configuration menu. For a more automated
-configuration, we will provide oreinformation in the Rasspberrry PI
-section.k
+configuration, we will provide more information in the Raspberry PI
+section.
 
 ### SSH on Windows :o:
 
@@ -346,7 +346,7 @@ login to other resources
 
 ## SSH and putty
 
-We no longer recommend the usse of putty and instead you should be
+We no longer recommend the use of putty and instead you should be
 using SSH over Powershell for this class.
 
 ### Access a Remote Machine

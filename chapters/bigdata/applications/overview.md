@@ -162,13 +162,13 @@ research based on data driven inquiry. We contrast this with third \~\~
 computation or simulation based discovery - methodology which emerged
 itself some 25 years ago.
 
--   [:clapper: Scientifuc Methods (5:07)](http://youtu.be/srEbOAmU_g8)
+-   [:clapper: Scientific Methods (5:07)](http://youtu.be/srEbOAmU_g8)
 
 ### Long Tail of Science
 
 There is big science such as particle physics where a single experiment
 has 3000 people collaborate!.Then there are individual investigators who
-donot generate a lot of data each but together they add up to Big data.
+do not generate a lot of data each but together they add up to Big data.
 
 -   [:clapper: Long Tail of Science (2:10)](http://youtu.be/dwzEKEGYhqE)
 

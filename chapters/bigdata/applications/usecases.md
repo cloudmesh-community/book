@@ -324,7 +324,7 @@ data fusion or Knowledge Management; Crowd Sourcing.
 
 ### Database(SQL) Use Case Classification
 
-This discusses classic (SQL) datbase approach to data handling with
+This discusses classic (SQL) database approach to data handling with
 Search&Query and Index features. Comparisons are made to NoSQL
 approaches.
 
@@ -363,7 +363,7 @@ Maximization, graphs and Collaborative Filtering.
 (17:25)](https://www.youtube.com/watch?v=ewqoFGxyQmc)
 
 \TODO{These resources have not all been checked to see if they still
-  exist this is curretnly in progress}
+  exist this is currently in progress}
 
 ### Resources
 
