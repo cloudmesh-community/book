@@ -605,24 +605,24 @@ improved continuity with replication between regions, meeting compliance and dat
 
 The regions and number of availability zones are as follows:
 
-Region US East:N. Virginia (6),Ohio (3)
-US WestN. California (3),Oregon (3)
+Region US East: N. Virginia (6), Ohio (3)
+US West N. California (3), Oregon (3)
 
-Region: Asia PacificMumbai (2),Seoul (2),Singapore (3),Sydney (3),Tokyo (4),Osaka-Local (1)1
-CanadaCentral (2)
-ChinaBeijing (2),Ningxia (3)
+Region: Asia Pacific Mumbai (2), Seoul (2), Singapore (3), Sydney (3), Tokyo (4), Osaka-Local (1)1
+Canada Central (2)
+China Beijing (2), Ningxia (3)
 
-Region: EuropeFrankfurt (3),Ireland (3),London (3),Paris (3)
-South AmericaSão Paulo (3)
+Region: Europe Frankfurt (3), Ireland (3), London (3), Paris (3)
+South America São Paulo (3)
 
 Region Gov Cloud:
 AWS GovCloud (US-West) (3)
   
 New Region (coming soon):
 Bahrain
-Hong KongSAR, China
+Hong Kong SAR, China
 Sweden
-AWS GovCloud(US-East)
+AWS GovCloud (US-East)
 
 ### Azure
 
