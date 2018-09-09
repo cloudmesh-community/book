@@ -46,6 +46,7 @@ CHAPTER_516=\
   chapters/cloud/datacenter.md\
   $(DEVTOOLS)\
   $(PYTHON)\
+  chapters/prg/go-language.md\
   chapters/MSG.md\
   chapters/msg/mqtt.md\
   chapters/msg/graphql.md\
