@@ -8,7 +8,7 @@ of the document is rather simple.
 
 We assume you are using a an OS on which you have installed and can
 execute pdflatex. Operating systems such as Linux, OSX, or Windows can
-be set up for it. On Windows we recommend that you also install bitbash
+be set up for it. On Windows we recommend that you also install gitbash
 and have make installed.
 
 We assume that you are familiar with git and have git installed.
@@ -99,7 +99,7 @@ beneath the topics.
 
 ### Adding bibliographic references
 
-We use a single reference file formated in *bibtex*. The file is located
+We use a single reference file formatted in *bibtex*. The file is located
 in docs/source/refs.bib. We use sphinx-bibtex to manage the references in
 rst pages. However, it has the disadvantage that we can only have on
 reference section per bib file. In order to simplify management as we may

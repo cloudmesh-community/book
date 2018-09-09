@@ -95,7 +95,7 @@ Hadoop Extensions
 
 A model of MapReduce shows its structure. Dryad is Microsoft's version
 of parallel processing. Twister is an iterative map-reduce framework, as
-are Haloop, Spark and Pregel. A comparison of their features and
+are Hadoop, Spark and Pregel. A comparison of their features and
 capabilities is included.
 
 [:clapper: Hadoop Extensions (5:37)](https://www.youtube.com/watch?v=gS7TImRZZ1g)
@@ -218,7 +218,7 @@ Coding and Iterative Alternatives
 
 A more detailed look is taken at the code used to run Twister K-means.
 MapReduce has many programs designed around its setup, including other
-iterative versions like Haloop, Pregel, and Spark. Twister can extend
+iterative versions like Hadoop, Pregel, and Spark. Twister can extend
 the use of traditional MapReduce to more complex applications.
 
 [:clapper: Coding and Iterative Alternatives (5:14)](https://www.youtube.com/watch?v=QTCpiwnwjvo)

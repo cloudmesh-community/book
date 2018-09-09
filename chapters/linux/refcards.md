@@ -9,7 +9,7 @@ about other useful tools and services.
 If you like to add new topics, let us know via your contribution (see
 the contribution section).
 
-Cheatcheats
+CheatSheets
 
 * [CheatSheets](http://www.cheat-sheets.org/)
 
@@ -19,7 +19,7 @@ Editors
 * [Vi](http://www.ks.uiuc.edu/Training/Tutorials/Reference/virefcard.pdf)
 * [Vim](http://michaelgoerz.net/refcards/vimqrc.pdf)
 
-Documantation
+Documentation
 
 * [LaTeX](https://wch.github.io/latexsheet/latexsheet.pdf)
 * [RST](https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.pdf)

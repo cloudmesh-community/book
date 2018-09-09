@@ -518,7 +518,7 @@ names = ['Albert', 'Jane', 'Liz',
          'John', 'Abby', 'Liz']
 ```
 
-When we donot want this to be the case, we can use a
+When we do not want this to be the case, we can use a
 [set](https://docs.python.org/2/library/stdtypes.html#set):
 
 ```python
@@ -556,7 +556,7 @@ and now we have
 
 `['Lincoln', 'John', 'Albert', 'Liz', 'Lindsay'])`
 
-You should not assume this is the case in general. That is, donot make
+You should not assume this is the case in general. That is, do not make
 any assumptions about the order of elements in a set when it is
 converted to any type of sequential data structure.
 
@@ -623,13 +623,13 @@ print("person['Age']: ", person['Age'])
 # person['Age']:  100
 ```
 
-A conveniet for to print by named attributes is
+A convenient for to print by named attributes is
 
 ```
 print("{Name} {Age}'.format(**data)) 
 ```
-This form of printing with the format statement and a refernce to data
-increases sreadability of the print statements.
+This form of printing with the format statement and a reference to data
+increases readability of the print statements.
 
 
 You can delete elements with the following commands:
@@ -680,7 +680,7 @@ Both methods return lists. Notice, however, that the order in which the
 elements appear in the returned lists (Age, Name, Class) is different
 from the order in which we listed the elements when we declared the
 dictionary initially (Name, Age, Class). It is important to keep this in
-mind: **you canot make any assumptions about the order in which the
+mind: **you cannot make any assumptions about the order in which the
 elements of a dictionary will be returned by the keys() and values()
 methods**.
 

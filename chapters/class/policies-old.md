@@ -286,7 +286,7 @@ classes have different assignments, make sure to include whatever is
 relevant for that class and add the appropriate URLs to artifacts into
 the class github.com
 
-Here is the process for how to deal with incomplets at IU:
+Here is the process for how to deal with incompletes at IU:
 
 * <http://registrar.indiana.edu/grades/grade-values/grade-of-incomplete.shtml>
 
@@ -436,7 +436,7 @@ For more information on this topic please see:
 
 In most cases we allow all assignments to be done in teams of up to
 three team members but not more. However, please confirm with the
-instructor as he may cahnge this. Im portant in case of team work is
+instructor as he may change this. Important in case of team work is
 that a team doe not just hand in a project that would be normally done
 by one student. It is obvious that all team members must equally
 contribute and make sure the deliverables are multiplied by the number

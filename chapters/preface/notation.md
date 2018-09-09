@@ -1,9 +1,9 @@
 ## epub Readers
 
-This document is distributed in ePub format. Every OS will have a
-ssuitable ePub reader to view the document.
+This document is distributed in epub format. Every OS will have a
+suitable epub reader to view the document.
 Such readers can even be integrated into the browser you use, and when
-you click on an ePub publictaion in github it could pop up the
+you click on an epub publication in github it could pop up the
 document in your reader. The way we create the document is through
 scalable markup, that iss you can zoom in and out of a page while the
 content will beautomatically rendered for the selected page size. If
@@ -14,7 +14,7 @@ zoom out with your reader to make sure you can see the entire content.
 
 :cloud: `:cloud:`
 
-> If you click on the :cloud: in a heading, you can go directly to the document in github that contains the next content. This is copnvenient to fix errors or make additions to the content.
+> If you click on the :cloud: in a heading, you can go directly to the document in github that contains the next content. This is convenient to fix errors or make additions to the content.
 
 $
 
@@ -66,6 +66,6 @@ Slides without any audio. They may be faster to download.
 
 ---
 
-:bulb: *Notes are indicated with a bulb and are written in itallic and surounded by bars* using the `:bulb:` emoji
+:bulb: *Notes are indicated with a bulb and are written in italic and surrounded by bars* using the `:bulb:` emoji
 
 ---

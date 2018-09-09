@@ -22,7 +22,7 @@ address as shown in the image below
 
 ![](images/ibmwatson_signup.png)
 
-Once you have submited the signup form an confirmation email will be
+Once you have submitted the signup form an confirmation email will be
 sent to your email account, check your inbox and click on the confirm
 account link in the email you receive. This will activate your IBM
 Watson account. Once you have accepted the terms and conditions you

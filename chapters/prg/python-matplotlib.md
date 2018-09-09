@@ -23,7 +23,7 @@ linspace option in numpy. The first two parameters are the starting and
 ending points, these must be scalars. The third parameter is optional and
 defines the number of samples to be generated between the starting and
 ending points, this value must be an integer. Additional parameters for
-the linespace utility can be found here:
+the linspace utility can be found here:
 
 ```python
 x = np.linspace(-np.pi, np.pi, 16)
@@ -121,7 +121,7 @@ plt.legend(loc='upper right')
 plt.show()
 ```
 
-An example of a barchart is preceded below using data from
+An example of a bar chart is preceded below using data from
  [\[T:fast-cars\]](#T:fast-cars){reference-type="ref"
 reference="T:fast-cars"}.
 

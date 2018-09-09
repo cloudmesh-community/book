@@ -18,7 +18,7 @@ contributing to this document.
 ## Motivation: Data
 
 Before we go into the details of a data center we like to motivate why
-we need them.  Here we start with looking at the amont of data that
+we need them.  Here we start with looking at the amount of data that
 recently got created and provide one of many motivational aspects. Not
 all data will or should be stored in data centers. However a
 significant amount of data will be in such centers.
@@ -30,7 +30,7 @@ actually created. As humans the total sum created over a year is hard
 to imagine and put into a perspective that can easily be understood.
 In order to visualize the data produced we find often Graphics about
 how much i created in one minute instead. Such depictions include
-samples of data created as spart of popular cloud services or the
+samples of data created as a part of popular cloud services or the
 internet in general.
 
 One such popular depiction is "Data Never Sleeps". It has been
@@ -65,7 +65,7 @@ Source: <https://www.allaccess.com/merge/archive/28030/2018-update-what-happens-
 While reviewing the image from last year from the same author, we find
 not only increases, but also declines. Looking at facebook showcases a
 loss of 73000 logins per minute. This loss is substantial. We can see
-that facebooks services are replaced by other services that are more
+that facebook services are replaced by other services that are more
 popular with the younger generation who tend to pick up new services
 quickly.
 
@@ -81,11 +81,11 @@ time. An example is provided by looking at Google searches:
 
 ![](images/google-search.png)
 
-**Figure:** Google searchess over time
+**Figure:** Google searches over time
 
 ![](images/bd-forbes-trend.png)
 
-When looking at the trends, many predict an exponential groth in data.
+When looking at the trends, many predict an exponential growth in data.
 This trend is continuing.
 
 **Figure:** Big data trend. 2012, Source: <https://blogs-images.forbes.com/christopherfrank/files/2012/03/VI_BigData_Graphic_v3_low.png>
@@ -281,7 +281,7 @@ many different aspects of a data center contributing to carbon
 emissions. This includes manufacturing, packaging, transportation,
 storage, operation of the data center, and decommissioning. Thus it is
 important to notice that we not only need to consider the operation
-but also the construction and decomisssison phases.
+but also the construction and decommission phases.
 
 ### Data Center Operational Impact
 
@@ -318,7 +318,7 @@ arising from build and teardown phase as well as operational upgrades.
 **E.Carbon.2:** Carbon footprint of data centers
 
 > World wide we have many data centers. Your task will be to find the
-> carbon emisssion of a data center and its cost in $ based on energy
+> carbon emission of a data center and its cost in $ based on energy
 > use on a yearly basis. Add your findings to the following table.
 > Make sure you avoid redundant reporting and find a new datacenter. A
 > google doc will be provided to coordinate with the class
@@ -369,7 +369,7 @@ PUE was published in 2016 as a global standard under
 
 The inverse of PUE is the data center infrastructure efficiency (DCIE).
 
-The best value of PUE is 1.0. Any data center musst be higher than
+The best value of PUE is 1.0. Any data center must be higher than
 this value as offices and other cost surely will arise when we look at
 the formula
 
@@ -399,8 +399,8 @@ other.
 This metric comes also with some drawbacks:
 
 * It does not integrate for example climate based differences, such as
-  that the energy susse to cool a data center in colder climates siss
-  less than in wormer climats. However, this may actually be a good
+  that the energy use to cool a data center in colder climates is
+  less than in warmer climates. However, this may actually be a good
   side-effect as this will likely result in less cooling needs sand
   therefor energy costs.
 * It also forces large data centers with many shared servers in
@@ -416,7 +416,7 @@ ecosystem the data center is located in.
 
 Already in 2006, Google reported its six data centers efficiency as
 1.21 and Microsoft as 1.22 which at that time were considered very
-efficient. However over time these target has shifted and todays data
+efficient. However over time these target has shifted and today's data
 centers achieve much lower values. The Green IT Cube in Darmstadt,
 Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 500 company achieved with 30000 SuperMicro blades a PUE of 1.06 in
@@ -531,11 +531,11 @@ We like to emphasize several examples where such monitoring is helpful:
   identify students that do not use the system as asked for by the
   instructors. For example it is easy to identify if they logged on and
   used VMs. Furthermore the length of running a VM ba
-* Let us assume a user with willfull ignorance does not
+* Let us assume a user with willful ignorance does not
   shut down VMs although they are not used because research clouds are
   offered to us for free. In fact, this situation happened to us
   recently while using another cloud and such monitoring capacities were
-  not available to us (on jetsstream). The user used up simple handedly
+  not available to us (on jetstream). The user used up simple handedly
   the entire allocation that was supposed to be shared with 30 other
   users in the same project. All accounts of all users were quasi
   deactivated as the entire project they belonged to were deactivated.
@@ -580,7 +580,7 @@ looking at some of the mayor cloud providers.
 
 ### AWS
 
-AWS focusses on security aspects of their data centers that include
+AWS focuses on security aspects of their data centers that include
 four aspects
 (<https://aws.amazon.com/compliance/data-center/data-centers/>):
 
@@ -600,7 +600,7 @@ GovCloud Region in the US.
 
 **Figure:** AWS regions
 
-Amazon strives to achieve high availability through muultiple availability zones, 
+Amazon strives to achieve high availability through multiple availability zones, 
 improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion.
 
 The regions and number of availability zones are as follows:
@@ -690,7 +690,7 @@ They summarize their offers are based on
 **Figure:** [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
 
 An important lesson from Google is the PUE boundary. That is the
-different efficience bassed on the closeness sof the IT infrastructure
+different efficiency based on the closeness sof the IT infrastructure
 to the actual data center building. This indicates that it is
 important to take at any providers definition of PUE in order not to
 report numbers that are not comparable between other vendors and are
@@ -742,7 +742,7 @@ A special service offering is provided by Watson.
 
 * <https://www.ibm.com/watson/>
 
-which is focussing on AI based services. It includes PaaS services for
+which is focusing on AI based services. It includes PaaS services for
 deep learning, but also services that are offered to the healthcare
 and other communities as SaaS
 
@@ -825,15 +825,15 @@ On the research cluster side it offers Karst:
 * <https://kb.iu.edu/d/bezu>
 
 One of the special systems located in the data center and managed by
-the Digital Science Center is calles Futuresystems, which provides a
+the Digital Science Center is called Futuresystems, which provides a
 great resource for the advanced students of Indiana University
-focussing on data engineering. While systems such as Jetstream and
+focusing on data engineering. While systems such as Jetstream and
 Chameleon cloud specialize in production ready cloud environments,
 Futuresystems, allows the researchers to experiment with
 state-of-the-art distributed systems environments supporting research.
 It is available with Comet and thus could also serve as an on-ramp to
 using larger scale resources on comet while experimenting with the
-setup on Futuressystems.
+setup on Futuresystems.
 
 Such an offering is logical as researchers in the data engineering
 track want to further develop systems such as Hadoop, SPark, or
@@ -864,7 +864,7 @@ The current trend however is to build mega or hyperscale data centers.
 
 One of the driving factors in cloud computing and the rise of large
 scale data centers is the ability to use server virtualization to
-place more than one server on the same hardware. Formerly the serices
+place more than one server on the same hardware. Formerly the services
 were hosted on their own servers. Today they are managed on the sae
 hardware although they look to the customer like separate servers.
 
@@ -888,9 +888,9 @@ As a result we find the following advantages:
   includes the software that is running on such servers (OS, platform
   and may even include applications).
 
-## Data Center Improvements and Consoidation
+## Data Center Improvements and Consolidation
 
-Due to the imense number of servers in data centers, as well as the
+Due to the immense number of servers in data centers, as well as the
 increased workload on its servers, the energy consumption of data
 centers is large not only to run the servers, but to provide the
 necessary cooling. Thus it is important to revisit the impact such
@@ -899,7 +899,7 @@ looked into this is from 2016 and is published by
 [LBNL](https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf)
 In this study the data center electricity consumption back to 2000 is
 analyzed while using previous studies and historical shipment data. A
-forecast is with diffrent assumption is contrastes till 2020
+forecast is with different assumption is contrasts till 2020
 
 Figure Energy Forecast depicts "an estimate of total U.S.  data center
 electricity use (servers, storage, network equipment, and

@@ -95,7 +95,7 @@ launch a complex appliance, you only need to follow these steps:
 
 This will take you to the Stacks page within the Orchestration menu.
 This page will show the current list of stacks, with controls to manage
-them and create new ones. Since we havenot launched any yet, this list
+them and create new ones. Since we have not launched any yet, this list
 will be empty for now.
 
 We will now create a new stack, which corresponds to the launch of a
@@ -108,10 +108,10 @@ We will deploy the NFS appliance described earlier; it will consist of a
 server node and two client nodes. Change the template source field to
 URL, and paste the URL of the [NFS share
 template](https://www.chameleoncloud.org/appliances/api/appliances/25/template)
-(if you donot have it in your clipboard anymore you will need to go back
+(if you do not have it in your clipboard anymore you will need to go back
 to the appliance and get it by clicking on "Get template" again).
 
-Donot change the environment source settings, and click "Next".
+Do not change the environment source settings, and click "Next".
 
 The next screen allows your to enter input values to your Heat template.
 Choose a name for your stack (e.g. my-nfs-cluster). Ignore the "Creation
@@ -143,7 +143,7 @@ group composed of two instances). The server's floating IP (the public
 IP assigned to a resource) is represented by an IP in a circle; an IP in
 a circle is also used to represent the association of the IP with the
 NFS server instance (not the greatest idea to use the same symbol for
-both the IP and the association -- we agree but canot do much about it
+both the IP and the association -- we agree but cannot do much about it
 at the moment). Blow off some steam by dragging the visualization across
 the screen, it can be rather fun!
 
@@ -720,7 +720,7 @@ these pattern will be possible:
 
 This limitation was already apparent in our NFS share appliance: this is
 why the server instance exports the file system to all bare-metal
-instances on Chameleon, because it doesnot know which specific IP
+instances on Chameleon, because it does not know which specific IP
 addresses are allocated to the clients.
 
 This limitation is even more important if the deployment is not

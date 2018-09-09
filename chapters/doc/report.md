@@ -97,7 +97,7 @@ development. Thus we do not encourage using of sharelatex and
 overleaf. Instead we recommend you use git directly and communicate
 with each other in case yo work in a team.
 
-### Timemanagement
+### Time management
 
 Obviously doing a project takes time
 
