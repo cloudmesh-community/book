@@ -114,6 +114,8 @@ sectionindent:
 	../bin/header.py dest/chapters/prg/julia-language.md 1
 	../bin/header.py dest/chapters/msg/mqtt.md 2
 	../bin/header.py dest/chapters/msg/graphql.md 2
+	../bin/header.py dest/chapters/faq.md 1
+	../bin/header.py dest/chapters/faq-516.md 2
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
@@ -135,6 +137,7 @@ sectionheaders:
 	../bin/section.py 2 "Language" > dest/chapters/prg/SECTION-PYTHON-LANG.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 	../bin/section.py 1 "Messaging" > dest/chapters/MSG.md
+	../bin/section.py 1 "FAQ" > dest/chapters/SECTION-FAQ.md
 
 ######################################################################
 # END BOOK CLASS
