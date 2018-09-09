@@ -27,6 +27,17 @@ Portable Cloud Programming with Go Cloud
 
 * <https://blog.golang.org/go-cloud>
 
+## REST services in GO
+
+List here the rest services frameworks
+
+* <https://nordicapis.com/7-frameworks-to-build-a-rest-api-in-go/>
+* with mongo <https://hackernoon.com/build-restful-api-in-go-and-mongodb-5e7f2ec4be94>
+* <https://tutorialedge.net/golang/consuming-restful-api-with-go/>
+
+### Gorilla
+
+* <https://www.codementor.io/codehakase/building-a-restful-api-with-golang-a6yivzqdo>
 
 ## OpenStack from Go
 
