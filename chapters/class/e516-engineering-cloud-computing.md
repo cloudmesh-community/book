@@ -104,7 +104,7 @@ The course has the following objectives:
 | :white_check_mark: 08/31   |         |                   | Python: [Introduction](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md), [Installation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md), [Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md), [Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md), [Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md), [Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md), [Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md), [Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md), [Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
 | :white_check_mark: 09/03 |         |                   | [Data Center](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/datacenter.md)
 | :o: 09/10 |         |                   | NIST Big Data Reference Architecture
-| :o: 09/10 | 2       | Infrastructure    | Infrastructure as a Service
+| :o: 09/11 | 2       | Infrastructure    | Infrastructure as a Service
 | :o: 09/17 |         |                   | OpenStack, Azure, AWS
 | :o: 09/24 | 3       | Virtualization    | Qemu, KVM, Virtual machines
 | :o: 10/01 |         |                   | Containers, Docker, Kubernetes
@@ -112,18 +112,18 @@ The course has the following objectives:
 | :o: 10/08 |         |                   | Github as a Cloud Service
 | :o: 10/15 |         |                   | REST Services, Eve, OpenAPI
 | :o: 10/22 |         |                   | Map/Reduce, Hadoop, Spark
-| :o: 10/29 |         |                   | Messaging with MQTT
-| :o: 11/05 |         |                   | GraphQL
-| :o: 11/19 |         |                   | Go for the Cloud I
-| :o: 11/19 |         |                   | Go for the Cloud II
+| :white_check_mark: 10/29 |         |                   | [MQTT](#mqtt)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md) 
+| :o: 11/05 |         |                   | [Graphql](https://github.com/cloudmesh-community/book/blob/master/chapters/msg/graphql.md) 
+| :o: 11/19 |         |                   | [Go Language](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md)
+| :o: 11/19 |         |                   | [Go for the Cloud](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md)
 | :o: 12/03 | 4       | Edge Computing    | Edge Computing and the Cloud
-| 09/03-11/02* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
-| 09/03-11/02* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
-| 09/03-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
-| 09/03-11/26* |         |                   | Kubernetes, Hadoop, SLURM + OpenAPI Service, 
-| 09/03-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
-| 09/03-11/26* |         | Project Type C    | Build an Edge Service Interfacing with a Cloud
-| 09/03-11/26* |         | Project Type D    | Your own Project Type A, B, or C (upon approval)
+| 09/13-11/02* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
+| 09/13-11/02* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
+| 09/17-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
+| 09/17-11/26* |         |                   | Kubernetes, Hadoop, SLURM + OpenAPI Service, 
+| 09/17-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
+| 09/17-11/26* |         | Project Type C    | Build an Edge Service Interfacing with a Cloud
+| 09/17-11/26* |         | Project Type D    | Your own Project Type A, B, or C (upon approval)
 
 </div>
 

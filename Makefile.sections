@@ -1,4 +1,5 @@
 PREFACE=\
+  chapters/SECTION-PREFACE.md\
   chapters/version.md\
   chapters/authors.md\
   chapters/preface/create.md\
@@ -32,6 +33,7 @@ PYTHON=\
   chapters/prg/python-cmd.md
 
 CHAPTER_516=\
+  chapters/assignment.md\
   $(PREFACE)\
   chapters/class/organization-516.md\
   chapters/class/plagiarism.md\
@@ -44,6 +46,14 @@ CHAPTER_516=\
   chapters/cloud/datacenter.md\
   $(DEVTOOLS)\
   $(PYTHON)\
+  chapters/prg/go-language.md\
+  chapters/prg/julia-language.md\
+  chapters/MSG.md\
+  chapters/msg/mqtt.md\
+  chapters/msg/graphql.md\
+  chapters/SECTION-FAQ.md\
+  chapters/faq.md\
+  chapters/faq-516.md\
   chapters/SECTION-REFERENCES.md
 
 CHAPTER_BIGDATA=\
@@ -69,4 +79,7 @@ CHAPTER_BIGDATA=\
   chapters/bigdata/algorithms/plotviz.md\
   $(DEVTOOLS)\
   $(PYTHON)\
+  chapters/SECTION-FAQ.md\
+  chapters/faq.md\
+  chapters/faq-523.md\
   chapters/SECTION-REFERENCES.md
