@@ -110,7 +110,9 @@ sectionindent:
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
 	../bin/header.py dest/chapters/MSG.md 2
+	../bin/header.py dest/prg/go-language.md 2
 	../bin/header.py dest/chapters/msg/mqtt.md 2
+	../bin/header.py dest/chapters/msg/graphql.md 2
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
