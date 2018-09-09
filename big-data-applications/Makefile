@@ -199,6 +199,7 @@ sectionindent:
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
+	../bin/header.py dest/chapters/faq-523.md 2
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
@@ -219,7 +220,7 @@ sectionheaders:
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 2 "Language" > dest/chapters/prg/SECTION-PYTHON-LANG.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
-
+	../bin/section.py 1 "FAQ" > dest/chapters/SECTION-FAQ.md
 
 
 prepare: dot refernces todo

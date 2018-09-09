@@ -9,7 +9,17 @@ FAQ is only for one class we will be especially mark it.
 
 ## Where to find the FAQ as markdown?
 
-https://github.com/cloudmesh-community/book/blob/master/chapters/faq.md
+General FAQs are in
+
+* <https://github.com/cloudmesh-community/book/blob/master/chapters/faq.md>
+
+For 516 we have also
+
+* <https://github.com/cloudmesh-community/book/blob/master/chapters/faq-516.md>
+
+For 523 we have
+
+* <https://github.com/cloudmesh-community/book/blob/master/chapters/faq-523.md>
 
 
 ## Why are some FAQs that are on piazza not here?
@@ -32,18 +42,18 @@ as there could be information in it that you otherwise missed.
 No. The class book will be our main source of information not just a
 single file.
 
-## 516: Why have the individual lectures been removed from the resources section?
+## How do I find all FAQs on Piazza?
 
-We identified that someone after almost three weeks has not looked at
-the ePub and missed valuable information. To force students to look at
-the epub we have removed the direct links to the md files in piazza
-`Resources` section. Instead we still leave the links to the md file
-sin the syllabus so that you can still get to them from the syllabus.
-This way also room for error is minimized as we only have to update
-one file wit the location and not two.
+Two ways exist
 
-The little clouds in the ePub are automatically created and provide
-a direct link to the md file for which the content follows.
+a) Please visit your class piazza. You will find a "faq" tag in your
+piazza window. Click on it and all posts marked with FAQ will show up,
 
+b) In the search field type in FAQ. All posts with the text FAQ in it
+will be listed. 
 
+## FAQ: has SOIC computers I can use remotely?
 
+See: <https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559>
+
+ 

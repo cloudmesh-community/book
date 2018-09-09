@@ -51,6 +51,9 @@ CHAPTER_516=\
   chapters/MSG.md\
   chapters/msg/mqtt.md\
   chapters/msg/graphql.md\
+  chapters/SECTION-FAQ.md\
+  chapters/faq.md\
+  chapters/faq-516.md\
   chapters/SECTION-REFERENCES.md
 
 CHAPTER_BIGDATA=\
@@ -76,4 +79,7 @@ CHAPTER_BIGDATA=\
   chapters/bigdata/algorithms/plotviz.md\
   $(DEVTOOLS)\
   $(PYTHON)\
+  chapters/SECTION-FAQ.md\
+  chapters/faq.md\
+  chapters/faq-523.md\
   chapters/SECTION-REFERENCES.md
