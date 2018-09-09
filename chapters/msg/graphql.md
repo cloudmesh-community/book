@@ -5,6 +5,4 @@ To be contributed by
 * Mihir
 * Vineet
 
-Please put the URL to where you do your draft here:
-
-* <URL>
+**Draft URL : https://github.com/cloudmesh-community/fa18-516-21/blob/master/chapter/graphql.md**
