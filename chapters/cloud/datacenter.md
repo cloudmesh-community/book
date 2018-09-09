@@ -945,9 +945,9 @@ To reduce energy consumption in data centers and reduce cost of cooling Microsof
 * **Phase 1 (August to November 2015)** Microsoft deployed a vessel which was operated in Pacific coast of United States.
 
 ![](images/project-natick-phase1.png)
-The “Leona Philpot” prototype was deployed off the central coast of California on Aug. 10, 2015.
+**Figure:** The “Leona Philpot” prototype was deployed off the central coast of California on Aug. 10, 2015.
 
-Credit: Microsoft (https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/)
+**Credit:** Microsoft (https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/)
 
 In Phase 1 Microsoft was succssfuly able to deploy and operate vessel underwater. The vessel was able to tackle cooling issues and effect of biofouling as well.
 
@@ -958,12 +958,17 @@ This vessel consumed computer power equivalent to 300 Desktop PCs and was of 380
 * **Phase 2 (June 2018)** Microsoft deployed another vessel at the European Marine Energy Center in UK for 90 days.
 
 ![](images/project-natick-phase2.png)
-The "Northern Isles" prototype being deployed near Scotland
+**Figure:** The "Northern Isles" prototype being deployed near Scotland
 
-Credit: Microsoft (https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/)
+**Credit:** Microsoft (https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/)
 
 Phase 2 vessel was 40ft long and had 12 racks containing 864 servers. Microsoft also powered this data center using 100% renewable energy. Also this data ceter can operate without maintenance for 5 years. 
 
 For cooling Microsoft had put infrastructure which would pipe sea water through radiators in back on server racks and then move water back in to ocean.
 
 Estimated lifespan of a Natick datacenter is around 20 years and after that it can be retrieved and recycled.
+
+**References:**
+* https://www.nytimes.com/2016/02/01/technology/microsoft-plumbs-oceans-depths-to-test-underwater-data-center.html
+* https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/
+* https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/
