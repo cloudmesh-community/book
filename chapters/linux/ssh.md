@@ -1,17 +1,17 @@
 # Secure Shell
 
-Secure Shell is a network protocol allowing users to securely connect
-to remote resources over the internet. In many services we need to use
-SSH to assure that we protect he messages send between the
-communicating entities. Secure Shell is based on public key
-technology requiring to generate a public-private key pair on the
-computer. The public key will than be uploaded to the remote machine
-and when a connection is established during authentication the public
-private key pair is tested. If they match authentication is granted. As
-many users may have to share a computer it is possible to add a list
-of public keys so that a number of computers can connect to a server
-that hosts such a list. This mechanism builds the basis for networked
-computers.
+[Secure Shell](http://openssh.com/manual.html) is a network protocol
+allowing users to securely connect to remote resources over the
+internet. In many services we need to use SSH to assure that we
+protect he messages send between the communicating entities. Secure
+Shell is based on public key technology requiring to generate a
+public-private key pair on the computer. The public key will than be
+uploaded to the remote machine and when a connection is established
+during authentication the public private key pair is tested. If they
+match authentication is granted. As many users may have to share a
+computer it is possible to add a list of public keys so that a number
+of computers can connect to a server that hosts such a list. This
+mechanism builds the basis for networked computers.
 
 In this section we will introduce you to some of the commands to
 utilize secure shell. We will reuse this technology in other sections
@@ -22,7 +22,8 @@ from your laptop. For more information please also consult with the
 ---
 
 :warning: Whatever others tell you, the private key should never be
-copied to another machine.
+copied to another machine. YOu almost always want to have a passphrase
+protecting your key.
 
 ---
 
@@ -290,7 +291,21 @@ the `Terminal` application.
 All Linux versions come with ssh and can be used right from the
 terminal.
 
-### SSH on Windows
+### Using SSH on Raspberry Pi 3
+
+SSH is available on Rasbian. However, to ssh into the PI you have to
+activate it via the configuration menu. For a more automated
+configuration, we will provide oreinformation in the Rasspberrry PI
+section.k
+
+### SSH on Windows :o:
+
+:warning: THis section is outdated and should be replaced with
+information from SSH in powershell
+
+* <https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/>
+
+
 
 In case you need access to ssh Microsoft has fortunately updated their
 software to be able to run it directly from the Windows commandline
@@ -328,6 +343,11 @@ Naturally you can now use it just as on Linux or OSX. and use it to
 login to other resources
 
     PS C:\Users\gregor> ssh myname@example.com
+
+## SSH and putty
+
+We no longer recommend the usse of putty and instead you should be
+using SSH over Powershell for this class.
 
 ### Access a Remote Machine
 
@@ -599,20 +619,3 @@ keep an offline backup, put encrypt the drive
 -   [The Secure Shell: The Definitive Guide, 2 Ed (O'Reilly and
     Associates)](http://shop.oreilly.com/product/9780596008956.do)
 
-### Exercises
-
-SSH.1
-
-: create an SSH key pair
-
-SSH.2
-
-: upload the public key to git repository you use. Create a fork in
-  git and use your ssh key to clone and commit to it
-
-SSH.3
-
-: Get an account on futuresystems.org (if you are authorized to do
-  so). Upload your key to <https://futuresystems.org>. Login to
-  india.futuresystems.org. Note that this could take some time as
-  administrators need to approve you. Be patient.

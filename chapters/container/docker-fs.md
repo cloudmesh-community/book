@@ -1,15 +1,11 @@
-Docker and Docker Swarm on FutureSystems
-========================================
-
- 
+# Docker and Docker Swarm on FutureSystems
 
 This section is for IU students only that take classes with us.
 
 This section introduces how to run Docker container on FutureSystems.
 Currently we have deployed Docker swarm on Echo.
 
-Getting Access
---------------
+## Getting Access
 
 You will need an account on FutureSystems and be enrolled in an active
 project. To verify, try to see if you can log into
@@ -46,8 +42,7 @@ Once logged in to the docker swarm head node, try to run:
 
 to verify `docker run` works.
 
-Creating a service and deploy to the swarm cluster
---------------------------------------------------
+## Creating a service and deploy to the swarm cluster
 
 While `docker run` can start a container and you may even attach to its
 console, the recommended way to use a docker swarm cluster is to create
@@ -120,7 +115,7 @@ To stop the service and the container:
 
     docker service rm noteboot_test
 
-### Create your own service
+## Create your own service
 
 You can create your own service and run it. To do so, start from a base
 image, e.g., a ubuntu image from the docker cloud. Then you could:
@@ -145,13 +140,13 @@ Please make sure no sensitive information is included in the image to be
 published. Alternatively you could publish the image internally to the
 swarm cluster.
 
-##### Publish an image privately within the swarm cluster
+## Publish an image privately within the swarm cluster
 
 Once the image is published and available to the swarm cluster, you
 could start a new service from the image similar to the Jupyter Notebook
 example.
 
-### Exercises
+## Exercises
 
 Obtain an account on future systems.
 

@@ -1,5 +1,16 @@
 # e516: Engineering Cloud Computing
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* This is the syllabus of the class. It will be updated throughout the semester, so look here for changes.
+* Identify if this is the right class for you.
+* Enroll if you want to take this class.
+* Avoid an incomplete.
+
+---
+
 * Lecture Notes: <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub>
 * Piazza: <https://piazza.com/iu/fall2018/516>
 * Indiana University
@@ -24,6 +35,10 @@
 * Course Description URL: 
   <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md>
 * [Registrar information and Other related classes](https://github.com/cloudmesh-community/book/blob/master/chapters/class/fall2018.md)
+
+This is an introductory class. In case you like to do research and
+more dvanced topics, consider taking an independent study with Dr. von
+Laszewski.
 
 ## Course Description
 
@@ -77,42 +92,50 @@ The course has the following objectives:
 ## Course Sylabus
 
 
-E516 Summary
 
 <div class="smalltable">
 
 | Dates          | Unit    | Title             | Description
-| -------------- | ------- | ----------------- | --------------
-| 08/24     | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
-| 08/24     | 1       | Introduction      | [Class summary](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md)
-| 08/24     |         |                   | [Definition of Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md)
-| 08/31     |         |                   | Tools and Services
-| 09/03     |         |                   | Data Center, NIST Big Data Reference Architecture
-| 09/10     | 2       | Infrastructure    | Infrastructure as a Service
-| 09/17     |         |                   | OpenStack, Azure, AWS
-| 09/24     | 3       | Virtualization    | Qemu, KVM, Virtual machines
-| 10/01     |         |                   | Containers, Docker, Kubernetes
-| 10/08     | 3       | Programming       | Python for Cloud Computing, LibCloud
-| 10/08     |         |                   | Github as a Cloud Service
-| 10/15     |         |                   | REST Services, Eve, OpenAPI
-| 10/22     |         |                   | Map/Reduce, Hadoop, Spark
-| 10/29     |         |                   | Messaging with MQTT
-| 11/05     |         |                   | GraphQL
-| 11/19|         |                   | Go for the Cloud I
-| 11/19|         |                   | Go for the Cloud II
-| 12/03| 4       | Edge Computing    | Edge Computing and the Cloud
-| 09/03-11/02* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
-| 09/03-11/02* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
-| 09/03-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
-| 09/03-11/26* |         |                   | Kubernetes, Hadoop, SLURM + OpenAPI Service, 
-| 09/03-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
-| 09/03-11/26* |         | Project Type C    | Build an Edge Service Interfacing with a Cloud
-| 09/03-11/26* |         | Project Type D    | Your own Project Type A, B, or C (upon approval)
+|:------ |:--- |:------- |:---------------------
+| :white_check_mark: 08/24    | 1       | Introduction      | [Gregor von Laszewski](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md)
+| :white_check_mark: 08/24    | 1       | Introduction      | [Class summary](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md)
+| :white_check_mark: 08/24    |         |                   | [Definition of Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md)
+| :white_check_mark: 08/31    |         |                   | Tools and Services: [Virtualbox](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualbox.md), [Vagrant](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/vagrant.md), [Github](https://github.com/cloudmesh-community/book/blob/master/chapters/git/github.md), [Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
+| :white_check_mark: 08/31   |         |                   | Python: [Introduction](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md), [Instalation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md), [Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md), [Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md), [Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md), [Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md), [Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md), [Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md), [Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
+| :white_check_mark: 09/03 |         |                   | [Data Center](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/datacenter.md)
+| :o: 09/10 |         |                   | NIST Big Data Reference Architecture
+| :o: 09/11 | 2       | Infrastructure    | Infrastructure as a Service
+| :o: 09/17 |         |                   | OpenStack, Azure, AWS
+| :o: 09/24 | 3       | Virtualization    | Qemu, KVM, Virtual machines
+| :o: 10/01 |         |                   | Containers, Docker, Kubernetes
+| :o: 10/08 | 3       | Programming       | Python for Cloud Computing, LibCloud
+| :o: 10/08 |         |                   | Github as a Cloud Service
+| :o: 10/15 |         |                   | REST Services, Eve, OpenAPI
+| :o: 10/22 |         |                   | Map/Reduce, Hadoop, Spark
+| :white_check_mark: 10/29 |         |                   | [MQTT](#mqtt)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md) 
+| :o: 11/05 |         |                   | [Graphql](https://github.com/cloudmesh-community/book/blob/master/chapters/msg/graphql.md) 
+| :o: 11/19 |         |                   | [Go Language](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md)
+| :o: 11/19 |         |                   | [Go for the Cloud](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md)
+| :o: 12/03 | 4       | Edge Computing    | Edge Computing and the Cloud
+| 09/13-11/02* | 5       | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content.
+| 09/13-11/02* | 5       | Chapter          | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content.
+| 09/17-11/26* | 6       | Project Type A    | Build a cloud out of Raspberry PIs
+| 09/17-11/26* |         |                   | Kubernetes, Hadoop, SLURM + OpenAPI Service, 
+| 09/17-11/26* |         | Project Type B    | Build a Significant OpenAPI REST Service
+| 09/17-11/26* |         | Project Type C    | Build an Edge Service Interfacing with a Cloud
+| 09/17-11/26* |         | Project Type D    | Your own Project Type A, B, or C (upon approval)
 
 </div>
 
+Legend markings
+
+
+* Class released :white_check_mark:
+* Class under development :o:
+
 Students need only to do one project. The project is conducted thought
 the entire semester.
+
 
 * Dates may change as the semester evolves
 
@@ -131,16 +154,16 @@ Additional Lectures will be added that allow easy management of the project. The
 <div class="smalltable">
 
 | Date     | Unit    | Title             | Description
-| -------- | ------- | ----------------- | --------------
-| anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
-| anytime  |         | Plagiarizm      | How to avoid plagiarizm and cheating
-| anytime  |         | Markdown        | How to use markdown
-| anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |
-| anytime  |         | Writing a Project Report      | How to write a high quality Project report following our template
-| anytime  |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
-| anytime  | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) |
-| anytime  |         | Class Github      | How to use the class Github
-| anytime  |         | Class Piazza      | How to use the class Piazza
+| :----------- |:------- |:----------------- |:---------------------------
+| :white_check_mark: anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
+| :white_check_mark: anytime  |         | Plagiarizm      | How to avoid plagiarizm and cheating
+| :white_check_mark: anytime  |         | Markdown        | How to use markdown
+| :white_check_mark: anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |
+| :white_check_mark: anytime  |         | Writing a Project Report      | How to write a high quality Project report following our template
+| :white_check_mark: anytime  |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
+| :white_check_mark: anytime  | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) |
+| :white_check_mark: anytime  |         | Class Github      | How to use the class Github
+| :white_check_mark: anytime  |         | Class Piazza      | How to use the class Piazza
 
 </div>
 

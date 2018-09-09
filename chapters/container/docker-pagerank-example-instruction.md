@@ -1,9 +1,8 @@
-Docker Pagerank
-===============
+# Docker Pagerank
 
 Place holder for PageRank Example in the docker hadoop section, needs to be merged to docker-hadoop.tex
 
-### Use the automated script
+## Use the automated script
 * We make the steps of compiling java source, archiving class files, load input files and run the program into one single script. To execute it with the input file: PageRankDataGenerator/pagerank5000g50.input.0, using 5000 urls and 1 iteration:
 		
 		cd /cloudmesh/pagerank

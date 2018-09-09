@@ -1,8 +1,4 @@
 # Using Kubernetes on FutureSystems
-\label{s:kubernetes-fs}
-
-\index{Kubernetes!Futuresystems}
-\index{Futuresystems!Kubernetes}
 
 This section introduces you on how to use the Kubernetes cluster
 on FutureSystems.  Currently we have deployed kubernetes on our
@@ -127,7 +123,9 @@ We se somthing like this
 
 please note that we have given a unique name.
 
-\begin{IU}
+---
+
+For IU students:
 
 You could use your username or if you use one of our classes your
 hid. The number part will typically be suficient.  For class users
@@ -138,7 +136,7 @@ we want you to shut down such services if they are not in use. Failure
 to do so may result in termination of the service without notice, and
 in the worst case revocation of your priveledges to use *echo*.
 
-\end{IU}
+---
 
 In our example you will find the port on which our service is exposed
 and remaped to. We find the port **30275** in the value
@@ -153,14 +151,14 @@ you should see the 'Welcome to nginx' page.
 
 ## Exercises
 
-\begin{exercise}
-Explore more complex service examples.
-\end{exercise}
+E.kubernetes.fs.1:
 
-\begin{exercise}
-Explore constructing a complex web app with multiple services.
-\end{exercise}
+> Explore more complex service examples.
 
-\begin{exercise}
-Define a deployment with a yaml file declaratively.
-\end{exercise}
+E.kubernetes.fs.2:
+
+> Explore constructing a complex web app with multiple services.
+
+E.kubernetes.fs.3:
+
+> Define a deployment with a yaml file declaratively.

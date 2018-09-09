@@ -1,5 +1,4 @@
-Apache Hadoop using Docker
-==========================
+# Apache Hadoop using Docker
 
 In this section we will explore the Map/Reduce framework using Hadoop
 provided through a Docker container. The example that we use in this
@@ -7,11 +6,9 @@ session is similar to WordCount but simple calculations are added
 e.g. minimum, maximum, average and standard deviation values using
 several input files which contain float numbers.
 
-Draft: Creating the Hadoop Container
-------------------------------------
+## Draft: Creating the Hadoop Container
 
-Hadoop from Docker
-------------------
+## Hadoop from Docker
 
 Build a docker image by Dockerfile from:
 
@@ -20,8 +17,7 @@ Build a docker image by Dockerfile from:
     wget https://raw.githubusercontent.com/cloudmesh/book/master/examples/docker/hadoop/Dockerfile
     docker build -t cloudmesh/hadoop .
 
-Start a Hadoop container
-------------------------
+## Start a Hadoop container
 
     docker run -it cloudmesh/hadoop /etc/bootstrap.sh -bash
     %docker run -it lee212/e222 /etc/bootstrap.sh -bash
@@ -29,8 +25,7 @@ Start a Hadoop container
 It may take a few minutes at first to download image layers which are
 about 847MB.
 
-Statistical Example with Hadoop
--------------------------------
+## Statistical Example with Hadoop
 
 After a container is launched, the interactive shell prompt is given to
 run hadoop application which we have an example to get Min/Max/Avg/Std

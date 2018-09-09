@@ -1,5 +1,4 @@
-Sports
-------
+# Sports
 
 Sports sees significant growth in analytics with pervasive statistics
 shifting to more sophisticated measures. We start with baseball as game
@@ -11,7 +10,7 @@ Wearables and consumer sports/recreation. The importance of spatial
 visualization is discussed. We look at other Sports: Soccer, Olympics,
 NFL Football, Basketball, Tennis and Horse Racing.
 
-### Basic Sabermetrics
+## Basic Sabermetrics
 
 This unit discusses baseball starting with the movie Moneyball and the
 2002-2003 Oakland Athletics. Unlike sports like basketball and soccer,
@@ -24,7 +23,7 @@ sophisticated measures like Wins Above Replacement.
 [:scroll: Overview
 (40)](https://drive.google.com/open?id=0B8936_ytjfjmbWt6bGZuTFJ4TFE)
 
-#### Introduction and Sabermetrics (Baseball Informatics) Lesson
+### Introduction and Sabermetrics (Baseball Informatics) Lesson
 
 Introduction to all Sports Informatics, Moneyball The 2002-2003 Oakland
 Athletics, Diamond Dollars economic model of baseball, Performance -
@@ -33,7 +32,7 @@ Dollar relationship, Value of a Win.
 [:clapper: Introduction and Sabermetrics (Baseball Informatics) Lesson
 (31:4)](https://www.youtube.com/watch?v=Dd4zV__G5Q8)
 
-#### Basic Sabermetrics
+### Basic Sabermetrics
 
 Different Types of Baseball Data, Sabermetrics, Overview of all data,
 Details of some statistics based on basic data, OPS, wOBA, ERA, ERC,
@@ -42,7 +41,7 @@ FIP, UZR.
 [:clapper: Basic Sabermetrics
 (26:53)](https://www.youtube.com/watch?v=L0X-RQJZKrs)
 
-#### Wins Above Replacement
+### Wins Above Replacement
 
 Wins above Replacement WAR, Discussion of Calculation, Examples,
 Comparisons of different methods, Coefficient of Determination, Another,
@@ -51,7 +50,7 @@ Sabermetrics Example, Summary of Sabermetrics.
 [:clapper: Wins Above Replacement
 (30:43)](https://www.youtube.com/watch?v=D6PHqPor4LA)
 
-### Advanced Sabermetrics
+## Advanced Sabermetrics
 
 This unit discusses 'advanced sabermetrics' covering advances possible
 from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.
@@ -59,7 +58,7 @@ from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.
 [:scroll: Sporta II
 (41)](https://drive.google.com/open?id=0B8936_ytjfjmUDh0Y01GbW9tWnc)
 
-#### Pitching Clustering
+### Pitching Clustering
 
 A Big Data Pitcher Clustering method introduced by Vince Gennaro, Data
 from Blog and video at 2013 SABR conference.
@@ -67,7 +66,7 @@ from Blog and video at 2013 SABR conference.
 [:clapper: Pitching Clustering
 (20:59)](https://www.youtube.com/watch?v=rZ9-b54aEvw)
 
-#### Pitcher Quality
+### Pitcher Quality
 
 Results of optimizing match ups, Data from video at 2013 SABR
 conference.
@@ -75,14 +74,14 @@ conference.
 [:clapper: Pitcher Quality
 (10:02)](https://www.youtube.com/watch?v=OkkUaySvXOY)
 
-### PITCHf/X
+## PITCHf/X
 
 Examples of use of PITCHf/X.
 
 [:clapper: PITCHf/X
 (10:39)](https://www.youtube.com/watch?v=m7IXhsHgQmE)
 
-#### Other Video Data Gathering in Baseball
+### Other Video Data Gathering in Baseball
 
 FIELDf/X, MLBAM, HITf/X, COMMANDf/X.
 
@@ -98,35 +97,35 @@ Olympics, NFL Football, Basketball, Tennis and Horse Racing.
 [:scroll: Sport Sports III
 (44)](https://drive.google.com/open?id=0B8936_ytjfjmUGdpUzFaRzhyWXM)
 
-#### Wearables
+### Wearables
 
 Consumer Sports, Stake Holders, and Multiple Factors.
 
 [:clapper: Wearables
 (22:2)](https://www.youtube.com/watch?v=F_cPq6xIXw0)
 
-#### Soccer and the Olympics
+### Soccer and the Olympics
 
 Soccer, Tracking Players and Balls, Olympics.
 
 [:clapper: Soccer and the Olympics
 (8:28)](https://www.youtube.com/watch?v=AiZneaLJMTs)
 
-#### Spatial Visualization in NFL and NBA
+### Spatial Visualization in NFL and NBA
 
 NFL, NBA, and Spatial Visualization.
 
 [:clapper: Spatial Visualization in NFL and NBA
 (15:19)](https://www.youtube.com/watch?v=Uorh3RJLC1s)
 
-#### Tennis and Horse Racing
+### Tennis and Horse Racing
 
 Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 
 [:clapper: Tennis and Horse Racing
 (8:52)](https://www.youtube.com/watch?v=2P-pismFSrI)
 
-#### Resources
+### Resources
 
 \TODO{These resources have not all been checked to see if they still
   exist this is curretnly in progress}

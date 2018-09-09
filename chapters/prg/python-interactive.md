@@ -59,6 +59,20 @@ Using help() opens up a help message within a pager. To navigate you can
 use the spacebar to go down a page w to go up a page, the arrow keys to
 go up/down line-by-line, or q to exit.
 
+Interpreter
+-----------
+
+Although the interactive mode provides a convenient tool to test
+things out you will see quickly that for our class we want to use the
+python interpreter from the commandline. Let us assume the program is
+called `prg.py`. Once you have written it in that file you simply can call it with
+
+```bash
+python prg.py
+```
+
+It is important to name the program with meaningfull names.
+
 Python 3 Features in Python 2
 -----------------------------
 

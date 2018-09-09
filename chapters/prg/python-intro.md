@@ -67,7 +67,7 @@ be ready to learn more about the various Python library modules.
 
 In order to conduct this lesson you need
 
--   A computer with Python 2.7.13 or 3.6.2
+-   A computer with Python 2.7.15 or 3.7.0
 -   Familiarity with command line usage
 -   A text editor such as [PyCharm](https://www.jetbrains.com/pycharm/),
     emacs, vi or others. You should identity which works best for you
