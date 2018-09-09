@@ -134,6 +134,7 @@ The easiest is to use yamllint:
 ```
 $ pip install yamllint
 $ yamllint README.yml
+```
 
 A python script to check it is available at
 
