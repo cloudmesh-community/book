@@ -221,7 +221,7 @@ but by the community in which such centers operate.
 **Reliability:** Although through operation l efforts the data center
   can be made more reliable, failure still can happen. Examples are
 
-* https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/
+* <https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/>
 * :?: find more examples
 
 Hence Data Center IaaS advantages include
@@ -916,7 +916,7 @@ predicted energy use would be approximately 73 billion kWh in 2020.
 
 Figure: Energy Forecast 
 
-Source: https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf
+Source: <https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf>
 
 It is clear that the original prediction of large energy consumption
 motivated a trend in industry to provide more energy efficient data
@@ -940,35 +940,75 @@ efficiency of each type of data center facility.
 
 ## Project Natick
 
-To reduce energy consumption in data centers and reduce cost of cooling Microsoft has developed **Project Natick**. To tackle this problem Microsoft has built underwater datacenter. Another benefit of this project is that data center can be deployed in large bodies of water to serve customers residing in that area so it helps to reduce latency by reducing distance to users and therefore increasing data trasfer speed. There are two phases of this project. 
+To reduce energy consumption in data centers and reduce cost of
+cooling Microsoft has developed **Project Natick**. To tackle this
+problem Microsoft has built underwater datacenter. Another benefit of
+this project is that data center can be deployed in large bodies of
+water to serve customers residing in that area so it helps to reduce
+latency by reducing distance to users and therefore increasing data
+transfer speed. There are two phases of this project.
 
-* **Phase 1 (August to November 2015)** Microsoft deployed a vessel which was operated in Pacific coast of United States.
+The project was executed in two phases.
+
+Phase 1 was executed between August to November 2015.  In this phase
+Microsoft was successfully able to deploy and operate vessel
+underwater. The vessel was able to tackle cooling issues and effect of
+biofouling as well. Biofouling is referred to as the fouling of pipes
+and underwater surfaces by organisms such as barnacles and algae.
+
+The PUE (Power Usage Effectiveness) of Phase1 vessel was 1.07 which is
+very efficient and a perfect WUE (Water Usage Effectiveness) of
+exactly 0, while land data centers consume ~ 4.8 liters of water per
+KWH. This vessel consumed computer power equivalent to 300 Desktop PCs
+and was of 38000 lbs and it operated for 105 days.
 
 ![](images/project-natick-phase1.png)
-**Figure:** The “Leona Philpot” prototype was deployed off the central coast of California on Aug. 10, 2015.
 
-**Credit:** Microsoft (https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/)
+**Figure:** The *Leona Philpot* prototype was deployed off the central
+coast of California on Aug. 10, 2015. Source: [Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/)
 
-In Phase 1 Microsoft was succssfuly able to deploy and operate vessel underwater. The vessel was able to tackle cooling issues and effect of biofouling as well.
 
-PUE (Power Usage Effectiveness) of Phase1 vessel was 1.07 which is very efficient and a perfect WUE (Water Usage Effectiveness) of exactly 0, while land data centers consume ~ 4.8 liters of water per KWH
+The phase 2 started in June 2018 and lasted for 90 days. Microsoft
+deployed a vessel at the European Marine Energy Center in UK.
 
-This vessel consumed computer power equivalent to 300 Desktop PCs and was of 38000 lbs and it operated for 105 days.
+The phase 2 vessel was 40ft long and had 12 racks containing 864
+servers. Microsoft powered this data center using 100% renewable
+energy. This data ceter is claimed to be able to operate without
+maintenance for 5 years. For cooling Microsoft used infrastructure
+which pipes sea water through radiators in back on server racks and
+then move water back in to ocean.
 
-* **Phase 2 (June 2018)** Microsoft deployed another vessel at the European Marine Energy Center in UK for 90 days.
+The total estimated lifespan of a Natick datacenter is around 20 years, after
+which it will be retrieved and recycled.
+
 
 ![](images/project-natick-phase2.png)
-**Figure:** The "Northern Isles" prototype being deployed near Scotland
 
-**Credit:** Microsoft (https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/)
+**Figure:** The *Northern Isles* prototype being deployed near
+Scotland. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/)
 
-Phase 2 vessel was 40ft long and had 12 racks containing 864 servers. Microsoft also powered this data center using 100% renewable energy. Also this data ceter can operate without maintenance for 5 years. 
+Although the cooling provides a significant benefit while using
+seawater, it is clear that long time studies need to be conducted with
+this approach and not just studies over a very short period of
+time. The reason for this is not just the measurement of a PUE factor
+or the impact of algae on the infrastructure, but also how such a
+vessel impacts the actual ecosystem itself.
 
-For cooling Microsoft had put infrastructure which would pipe sea water through radiators in back on server racks and then move water back in to ocean.
+Some thought on this include:
 
-Estimated lifespan of a Natick datacenter is around 20 years and after that it can be retrieved and recycled.
+1. How doe the vesil increase the surrounding water temperature and
+   effects the ecosystem
+2. If places in saltwater, corrosion can occur that may not only
+   effect the vesel, but also the ecosystem
+3. Positive effects could also be created on ecosystems, which is for
+   example demonstrated by creation of artificial reefs. However if
+   the structure has to be removed after 20 years, which impat has it
+   than on the ecosystem. 
 
 **References:**
-* https://www.nytimes.com/2016/02/01/technology/microsoft-plumbs-oceans-depths-to-test-underwater-data-center.html
-* https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/
-* https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/
+
+:o: TODO we will use also bibtex fro references
+
+* <https://www.nytimes.com/2016/02/01/technology/microsoft-plumbs-oceans-depths-to-test-underwater-data-center.html>
+* <https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/>
+* <https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/>
