@@ -2,8 +2,7 @@ Introduction to ![Go Logo](https://upload.wikimedia.org/wikipedia/commons/2/23/G
 ----------------------
 
 Portions of this lesson have been adapted from the [official Go 
-Documentation](https://golang.org/doc/) copyright [Python
-Software Foundation](http://www.python.org/).
+Documentation](https://golang.org/doc/).
 
 The Go programming language is an open source project to make programmers more productive.
 
@@ -52,7 +51,7 @@ In order to conduct this lesson you need
 
 -   A computer with Go 1.10 or above
 -   Familiarity with command line usage
--   A text editor such as [Atom](https://atom.io/packages/go-plus), [GoLand](https://www.jetbrains.com/go)
+-   A text editor such as [Atom](https://atom.io/packages/go-plus), [GoLand](https://www.jetbrains.com/go), 
    [vim](https://github.com/fatih/vim-go) or others. You should identity which works best for you
     and set it up.
 
