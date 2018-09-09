@@ -40,7 +40,7 @@ Tools
 -   [Markdown](https://blog.ghost.org/markdown/) (from Markdown)
 
 -   [AquaEmacs](http://oracc.museum.upenn.edu/doc/help/usingemacs/aquamacs/)
-    (from Aquaemacs)
+    (from Aquamacs)
 
 -   [Marvelmind](http://marvelmind.com/) (from Marvelmind if you have
     marvelmind positioning sensors which are optional)
@@ -123,7 +123,7 @@ often used as it integrates nicely with the OSX GUI interface.
 
 *Aquamacs* is a program for Mac devices which allows the user to edit
 text, HTML, LaTeX, C++, Java, Python, R, Perl, Ruby, PHP, and more.
-Aquaemacs integrates well with OSX and provides many functions through a
+Aquamacs integrates well with OSX and provides many functions through a
 menu. You will mostly be using the File, Edit, menus or toolbar icons.
 
 Emacs provides convenient keyboard shortcuts, most of which are
@@ -147,7 +147,7 @@ to get out without issue. Other Keyboard Shortcuts include:
 Bash
 ----
 
-Bash is preinstalled in OSX. A *bash* script contains *commands* in
+Bash is pre-installed in OSX. A *bash* script contains *commands* in
 plain text. In order to create a bash script please decide for a
 convenient name. Let us assume we name our script *myscript*. Than you can
 create and edit such a script with

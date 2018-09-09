@@ -10,7 +10,7 @@ There are various technologies handling machine virtualization for
 resource sharing and CPU architecture emulating. In this tutorial,
 `libvirt`, KVM and QEMU are covered. `libvirt` is a system library for
 virtualization, which provides low-level abstraction. KVM is a
-kernal-based virtualization solution, and QEMU is a suite of emulators.
+kernel-based virtualization solution, and QEMU is a suite of emulators.
 Cloud providers, such as AWS, Azure, and Google, use these technologies
 for compute instance virtualization. OpenStack and Kubernetes also adopt
 these technologies.

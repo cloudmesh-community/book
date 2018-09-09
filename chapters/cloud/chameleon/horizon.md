@@ -98,7 +98,7 @@ this would be `ssh cc@130.202.88.241`
 SSH will probably tell you:
 
     The authenticity of host \textquotesingle{}130.202.88.241
-    (130.202.88.241) canot be established. RSA key fingerprint 
+    (130.202.88.241) cannot be established. RSA key fingerprint 
     is 5b:ca:f0:63:6f:22:c6:96:9f:c0:4a:d8:5e:dd:fd:eb. 
     Are you sure you want to continue connecting (yes/no)?
 

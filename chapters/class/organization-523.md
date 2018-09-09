@@ -19,7 +19,7 @@ different parts of the class.  If you have taken a previous class with
 us you are able to continue your previous project upon approval. It
 must however be a significant improvement.  Please note that the in
 i523 and i524 the project and it's report can be substituted by a
-longer term paper that does not require programmning. As this is a
+longer term paper that does not require programming. As this is a
 significant reduction in work and goals, for that class, the maximum
 grade in this case for the entire class can only be an A-.
 
@@ -136,7 +136,7 @@ money there if you are not careful.
 
 As this class has no graded tests and only few graded homework, we like
 that you deliver an **exceptional** project report or paper. Instead of
-focussing on preparing for tests we provide you with the opportunity to
+focusing on preparing for tests we provide you with the opportunity to
 **explore** without the pressure of grades. However you should not give
 up or take the easy way out or it will effect you in your project
 execution. Also, to achieve your best do not just say: *We do not have a
@@ -152,7 +152,7 @@ It will be up to you to assess what you want to deliver before handing
 it in to us. Self assessment or a check with other students is a real
 good way to do that. You should not expect to get an A if you yourself
 are not convinced about your project or are unsure about it. Common
-sense prevales.
+sense prevails.
 
 
 ### Fun
@@ -230,7 +230,7 @@ the specified areas. Some lectures may be used in multiple classes.
 
 ### Track 3: Writing
 
-You have a choice in thiss class between writing a two page review
+You have a choice in this class between writing a two page review
 paper about a big data technology or application (area), or contribute
 a chapter to this document. We explain next the difference:
 
@@ -251,13 +251,13 @@ to write papers in MSWord in order for you to achieve your
 best. Papers and Project reports must be written in LaTeX
 
 **Chapter:** The chapter is essentially similar to a review paper, but
-is written in markdown and can be added to the lecture notess. A
+is written in markdown and can be added to the lecture notes. A
 chapter should be formulated in a consistent form and is equivalent in
 length (number of words) to those of the 2 page paper. Bibliography
 management is conducted in bibtex and can e used in the markdown
 document.
 
-Important in both cases is that you stay focussed. You can assume that
+Important in both cases is that you stay focused. You can assume that
 if you write a document about "Big Data in Baseball", you do not spend
 1.5 pages sto describe what big data is and only half a page where
 baseball fits in. What you should do is focus on the topic. A chapter

@@ -28,7 +28,7 @@ sh dhcp_setup.sh <hostname> <nodeIP> <routerIP> <dnsIP>
 # docker_setup.sh
 
 Now Install docker and turn off the swap memory.
-This shell will reboot the node per recommendation of the refereneces. 
+This shell will reboot the node per recommendation of the references. 
 
 ``
 sh docker_setup.sh

@@ -17,7 +17,7 @@
   12      [142](https://github.com/cloudmesh/book/issues/142)   Chapter: OpenWisk                                                   None
   13      [141](https://github.com/cloudmesh/book/issues/141)   Raspberry pi applications                                           None
   14      [140](https://github.com/cloudmesh/book/issues/140)   Install docker swarm on single node                                 bfeng
-  15      [139](https://github.com/cloudmesh/book/issues/139)   Mini Kube instalation tutorial ubuntu osx                           bfeng
+  15      [139](https://github.com/cloudmesh/book/issues/139)   Mini Kube Installation tutorial ubuntu osx                           bfeng
   16      [138](https://github.com/cloudmesh/book/issues/138)   IU Survey                                                           None
   17      [137](https://github.com/cloudmesh/book/issues/137)   Post Survey                                                         None
   18      [136](https://github.com/cloudmesh/book/issues/136)   Lectures E222: to be given                                          miaojiang1987

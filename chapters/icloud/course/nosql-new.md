@@ -52,7 +52,7 @@ where each document is an object. Each document stores one or more
 fields and within the field a value is stored in the form of an array,
 string date etc. In comparison to relational databases that distribute
 the records across columns that are connected with keys the document
-model sotres records and their associated data in a single document. A
+model stores records and their associated data in a single document. A
 key advantage to this model is that is reduces the need for JOIN
 operations that can be computationally expensive. Two examples of
 document databases are MongoDB and CouchDB.
@@ -133,7 +133,7 @@ HBase and connecting to it.
 Draft: MongoDB
 --------------
 
-MongoDB belongs to the documnet model described above. Within a typical
+MongoDB belongs to the document model described above. Within a typical
 MongoDB server there are often multiple databases. Each database is a
 physical container of collections with its own set of files within the
 file system. A collection is a set of MongoDB documents similar to a

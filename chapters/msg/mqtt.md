@@ -248,8 +248,8 @@ enterprise and production environments. A good example is the use of EMQ
 reliable MQTT broker for enterprise-grade applications
 [@erlang-mqtt-broker].
 
-Simple Usecase
---------------
+Simple Use case
+---------------
 
 In this example we are demonstrating how to set up a MQTT broker, a
 client and a subscriber.
@@ -310,7 +310,7 @@ The code for the project is available at
 ### Requirements and Setup
 
 The setup used three different machines. A laptop or a desktop running
-the MQTT broker, and two raspberry pis configured with raspbean
+the MQTT broker, and two raspberry pis configured with raspbian
 operating system. Eclipse Paho MQTT client was setup on each of the
 raspberry pis [@python-paho-mqtt]. Additionally all three devices were
 connected to an isolated local network.
@@ -340,7 +340,7 @@ were observed. Eclipse IoT MQTT broker (*iot.eclipse.org*) was also
 tried which also did not result in any significant delays.
 
 Thus it is observed that two raspberry pis can be easily controlled
-using MQTT. This system can be extended to incude arbitrary number of
+using MQTT. This system can be extended to include arbitrary number of
 raspberry pis and other devices that subscribe to the broker. If a
 device fails, or the connection from one device is broken, other devices
 are not affected and continue to perform the same.

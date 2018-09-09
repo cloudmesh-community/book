@@ -70,7 +70,7 @@ web pages etc. We present this as "yet another optimization problem".
 
 We give a general discussion of recommender systems and point out that
 they are particularly valuable in long tail of tems (to be recommended)
-that arenot commonly known. We pose them as a rating system and relate
+that are not commonly known. We pose them as a rating system and relate
 them to information retrieval rating systems. We can contrast
 recommender systems based on user profile and context; the most familiar
 collaborative filtering of others ranking; item properties; knowledge
@@ -86,7 +86,7 @@ particular we discuss an Irvine class project involving ranking jokes.
 
 [:clapper: Kaggle Competitions: (3:36)](https://youtu.be/DFH7GPrbsJA)
 Please not that we do not accept any projects using kaggle data for this
-classs.
+classes.
 
 ### Examples of Recommender Systems
 

@@ -245,7 +245,7 @@ video from the github foundation that explains this.
 
 In case your course provided you with a github directory, starting and
 working in it is going to be real simple. Please wait till an
-announcement to the class is send before you ask us quesions about it.
+announcement to the class is send before you ask us questions about it.
 
 If you are the only student
 working on this you still need to make sure that papers or programs you
@@ -318,7 +318,7 @@ and do not include spaces. This will simplify your task of managing the
 files across different operating systems.
 
 In case you work in a team, on a submission, the document will only be
-submitted in the author and hid that is listed first. All other readmes,
+submitted in the author and hid that is listed first. All other readme files,
 will have for that particular artifact a `duplicate: yes` entry to
 indicate that this submission is managed elsewhere. The team will be
 responsible to manage their own pull requests, but if the team desires
@@ -431,11 +431,11 @@ is registered with the upstream repository.
 -   [GitHub resources for learning
     git](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
     Note: this is for github and not for gitlab. However as it is for gt
-    the only thing you have to do is replace hihub, for gitlab.
+    the only thing you have to do is replace github, for gitlab.
 -   [Atlassian tutorials for
     git](https://www.atlassian.com/git/tutorials/)
 
-In addition the tutorials from atlasian are a good source. However
+In addition the tutorials from atlassian are a good source. However
 remember that you may not use bitbucket as the repository, so ignore
 those tutorials. We found the following useful
 

@@ -15,7 +15,7 @@ You can add anaconda to your pyenv with the following commands:
     pyenv install anaconda3-4.3.1
 
 Here we install both the version 2 and version 3 python environments
-from anavconda. Please be aware that the install may take several
+from anaconda. Please be aware that the install may take several
 minutes. Make sure to install the latest release which you can find out
 if you leave of the version after the 2 or 3.
 
@@ -42,7 +42,7 @@ Let us now create virtualenv for anaconda:
     $ pyenv virtualenv anaconda2-4.3.1 ANA2
     $ pyenv virtualenv anaconda3-4.3.1 ANA3
 
-Excersise
+Exercises
 =========
 
 Econda.1:

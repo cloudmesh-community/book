@@ -246,8 +246,8 @@ Introduction - Part O - Storage {#s:cloud-fundamentals-o}
 Introduction - Part P - HPC in the Cloud {#s:cloud-fundamentals-p}
 ----------------------------------------
 
-* [:clapper: Cloud (19:29) Part P - HPC in the Clou](https://drive.google.com/open?id=1u5z9-GY1Hecp8nR47Gxe8506NnhHduF1)
-* [:scroll: Cloud (8 Slides) Part P - HPC in the Clou](https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF)
+* [:clapper: Cloud (19:29) Part P - HPC in the Cloud](https://drive.google.com/open?id=1u5z9-GY1Hecp8nR47Gxe8506NnhHduF1)
+* [:scroll: Cloud (8 Slides) Part P - HPC in the Cloud](https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF)
 
 **P: HPC and Clouds**
 

@@ -1,3 +1,3 @@
 # IaaS :o:
 
-This entire ssection is under construction. Do not use yet
+This entire section is under construction. Do not use yet

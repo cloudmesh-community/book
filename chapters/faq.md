@@ -20,7 +20,7 @@ Two reason:
 
 2. The TAs will evaluate the FAQs every day at the end of the day and
    integrate those that need to be in this list at that time. Hence it
-   may take up to 24 hours for FAQs to apear here.
+   may take up to 24 hours for FAQs to appear here.
 
 Once an FAQ is in the book answered (it may actually be part of
 another section, TAs will mark the FAQ in piazza, so you can make sure
@@ -35,14 +35,14 @@ single file.
 ## 516: Why have the individual lectures been removed from the resources section?
 
 We identified that someone after almost three weeks has not looked at
-the ePub and missed valuable information. To force students to look at
+the epub and missed valuable information. To force students to look at
 the epub we have removed the direct links to the md files in piazza
 `Resources` section. Instead we still leave the links to the md file
 sin the syllabus so that you can still get to them from the syllabus.
 This way also room for error is minimized as we only have to update
 one file wit the location and not two.
 
-The little clouds in the ePub are automatically created and provide
+The little clouds in the epub are automatically created and provide
 a direct link to the md file for which the content follows.
 
 

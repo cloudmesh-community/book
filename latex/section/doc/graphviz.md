@@ -3,7 +3,7 @@
 * <https://graphviz.gitlab.io/resources/>
 
 
-## Instalation 
+## Installation 
 
 ### OSX
 
@@ -38,7 +38,7 @@ There are many more
 
 ## Usage
 
-To use graphvis creadte a dot and run the following command.
+To use Graphviz create a dot and run the following command.
 
 	dot -Tpng filename.dot -o filename.png
 
@@ -48,7 +48,7 @@ This will create a png file. Other formats are also possible such as svg, or PDF
 	dot -Tsvg filename.dot -o filename.svg
 	dot -TPDF filename.dot -o filename.pdf
 
-For inclsion in latex documents we recommend you create PDF output as it has a much better quality and is maller in size than png.
+For inclusion in latex documents we recommend you create PDF output as it has a much better quality and is smaller in size than png.
 
 ## The Dot Format
 

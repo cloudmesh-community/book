@@ -70,7 +70,7 @@ external. Next, we need to unmount the device with
 where you replace the number N with the disk number that you found for
 the device. In our example it would be 2. If you see the error "Unmount
 of diskN failed: at least one volume could not be unmounted", start Disk
-Utility.app and unmount the volume (donot eject). If it was successful,
+Utility.app and unmount the volume (do not eject). If it was successful,
 you will see
 
     Unmount of all volumes on disk2 was successful
@@ -98,10 +98,10 @@ Ubuntu's Web page also gives the following tips:
 
 -   "If you see the error dd: /dev/diskN: Resource busy, make sure the
     disk is not in use. Start Disk Utility.app and unmount the volume
-    (donot eject)."
+    (do not eject)."
 
 You will see an error window popping up telling you: **The disk inserted
-was not readbale by this compute**. Please, leave the window as is and
+was not readable by this compute**. Please, leave the window as is and
 instead type in on the terminal.
 
     $ diskutil eject /dev/diskN
@@ -139,7 +139,7 @@ the USB stick inserted while you press the Option/alt key.
 
 The launch *Startup Manager* will be started showing a list of bootable
 devices connected to the machine. Your USB stick should appear as
-gold/yellow and labelled *EFI Boot*. Use your curser keys to move to the
+gold/yellow and labelled *EFI Boot*. Use your cursor keys to move to the
 most right EFI boot device in that list (likely the USB stick) and press
 ENTER. YOu can also use the mouse.
 
@@ -245,7 +245,7 @@ finished, Etcher will report on the successful process.
 ![Figure: Etcher](images/4207a01ff6afea52.png)
 
 After the write process has completed, macOS may inform you that \*The
-disk you inserted was not readable by this computer\*. Donot select
+disk you inserted was not readable by this computer\*. Do not select
 Initialise. Instead, select Eject and remove the USB device.
 
 ## Ubuntu on a USB stick for Windows 10 :o:
