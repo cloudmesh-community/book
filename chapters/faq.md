@@ -1,4 +1,4 @@
-# FAQ
+# FAQ: General
 
 In this section TA's and students can add FAQ's from the piazza. As
 the material especially the programming related one is so useful that
