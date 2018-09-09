@@ -168,7 +168,7 @@ project deployments.
 
 We are going to use a top-down fashion in this example. We first start
 from a playbook that is already good to go. You can execute this
-playbook (donot do it yet) to get R installed in your remote hosts. We
+playbook (do not do it yet) to get R installed in your remote hosts. We
 then further complicate this concise playbook by introducing
 functionalities to do the same tasks but in different ways. Although
 these detours are not necessary in this simply case, it helps you grasp
@@ -361,7 +361,7 @@ cloud environment. There is much to explore and it's worth it.
 \section{Ansible III: Ansible Galaxy}\label{ansible-iii-ansible-galaxy}
 
 By finishing the first two chapters, you should be able to compose
-Ansible projects to install, configure or do other maintenances on your
+Ansible projects to install, configure or do other maintenance on your
 software packages. We introduced the powerful component \texttt{Roles}
 in the previous chapters, and emphasized the concepts of modularize and
 re-usability. With these preparations, we are ready to start working on
@@ -453,7 +453,7 @@ built previously for Emacs installation here:
 
 \begin{description}
 \item[meta:]
-Provide necessary metatdata for our Ansible Galaxy project for shipping:
+Provide necessary metadata for our Ansible Galaxy project for shipping:
 
 \begin{verbatim}
 ---
@@ -676,7 +676,7 @@ Next add the MongoDB repository to apt:
 packages}{Module apt: install packages}}\label{module-apt-install-packages}
 
 We use \texttt{apt} module to install \texttt{mongodb-org} package.
-\texttt{notify} action is added to start \texttt{mongod} after the
+\texttt{notify} action is added to start \texttt{mongodb} after the
 completion of this task. Use the \texttt{update\_cache=yes} option to
 reload the local package database.:
 
