@@ -56,4 +56,121 @@ will be listed.
 
 See: <https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559>
 
+##FAQ: when contributing to the book my name is not listed properly or not at all
+
+The following reasons exist:
+
+1. if its not listed at all your contribution may be in a different
+   repository, please contact Gregor
+
+2. if it does not show up correctly and only shows your github name,
+   which you can see in the contributor section or with
+
  
+```
+git shortlog -s -e
+     2  btpope <42694671+btpope@users.noreply.github.com>
+     1  luoyu357 <luoyu357@gmail.com>
+     1  shilpasingh21 <shilpasingh21@gmail.com>
+```
+ 
+You need to do two things.
+
+First, add your name to the file 
+
+* <https://github.com/cloudmesh-community/book/blob/master/.mailmap>
+
+ 
+
+Second, complete the set up your git on the machine you work with in
+case you use a commandline tool with git init (see our notes on this)
+
+ 
+
+If you use the GUI you may need to go to the account settings and
+associate a first name lastname, I however do not know ho to do that,
+so if you kwon reply ti this
+
+
+## FAQ: How to read the technical sections of the lecture notes
+
+This is an important tip and I recommend that you read it.
+
+We will add throughout the semester some technical lecture notes. Thes
+notes contain tutorial-like information on how to run certain things
+on a computer. What we have seen in the past with some students is
+that they do not read the text between the sections that look like you
+can just execute them. They also may include information that is
+important and should not be overlooked.
+
+Here is the workflow on how to read such technical sections
+
+1. do not execute anything yet
+
+2. read the entire section including the lines between the gray boxes
+
+3. step back and reflect on what you read
+
+4. reread the section, if a section needs more information google for
+   it (things could be overnight updated on the internet, please
+   remember we are just presenting a snapshot in time here)
+
+5. once you have obtained knowledge, decide if the section is relevant
+   for you (e.g. windows sections may not be relevant for MacOS users)
+
+6. carefully execute the relevant portions for you
+
+:warning: AS ALWAYS THERE IS NO GUARANTEE THAT WHAT WE DOCUMENT WORKS
+OR COULD NOT DESTROY SOMETHING. MAKE SURE TO HAVE A BACKUP. IF IN
+DOUBT RUN IN A VIRTUAL MACHINE IF YOU CAN.
+
+## How to check if a yaml file is valid?
+
+In case you need to check an open source public YAML file you can use
+the following
+
+The easiest is to use yamllint:
+
+```
+$ pip install yamllint
+$ yamllint README.yml
+
+A python script to check it is available at
+
+* <https://github.com/cloudmesh-community/fa18-516-21/blob/master/validate_yml.py>
+
+Online checkers are available at
+
+* <https://codebeautify.org/yaml-validator>
+
+A ruby script can do
+
+```
+$ ruby-e "require 'yaml';puts YAML.load_file('./README.yml')"
+```
+
+YAML validation in visual studio can be achieved also
+
+  <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml>
+
+## How do I check if a markdown file is valid?
+
+Markdown is such a simple format that you should not have any
+issue. We recommend that you do a local checkout of the epub and
+compile it and look at your section contribution.
+
+To work on a songel file yo ucan jsut use markdown editors.
+
+A lint program is available at
+
+* <https://github.com/remarkjs/remark-lint>
+
+However I recommend to copy your file into a separate directory and
+check it there as it installs some other programs into the directory
+wher you do the checking.
+
+Editors that students have used include
+
+* Remarkable: <https://remarkableapp.github.io/>
+* Macdown: <https://macdown.uranusjr.com/>
+* Mark Down validation and preview:  <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
