@@ -135,19 +135,9 @@ Documentation about boto can be found at
 "Libcloud is a Python library for interacting with many of the popular
 cloud service providers using a unified API. It was created to make it
 easy for developers to build products that work between any of the
-services that it supports.
-
-Resource you can manage with Libcloud are divided in the following categories:
-
-Cloud Servers and Block Storage - services such as Amazon EC2 and
-Rackspace CloudServers Cloud Object Storage and CDN - services such as
-Amazon S3 and Rackspace CloudFiles Load Balancers as a Service -
-services such as Amazon Elastic Load Balancer and GoGrid LoadBalancers
-DNS as a Service - services such as Amazon Route 53 and Zerigo For
-more information about the features and supported providers, please
-refer to the
-[documentation](https://libcloud.readthedocs.org/en/latest/)."  from
-https://libcloud.apache.org/about.html
+services that it supports. A more detailed description on Libcloud and
+how you can use it to connect with AWS is provided in the [LibCloud section](../libcloud.md)
 
 
-* <https://libcloud.apache.org/>
+For more information about the features and supported providers, please
+refer to the [documentation](https://libcloud.readthedocs.org/en/latest/)

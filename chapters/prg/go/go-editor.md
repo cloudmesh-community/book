@@ -1,0 +1,1 @@
+# Editors Supporting Go :o:
