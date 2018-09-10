@@ -147,11 +147,15 @@ In this section we will look into how we can use the connection created
 as instructed above to perform various services such as creating nodes,
 listing nodes, starting nodes and stopping nodes.
 
-Appropriate authentication code as described in the previous section  is assumed. This will give us an variable named conn which we will use for invoking Services. It is in the next sections not explicitly listed. It is indicated by our ... at the beginning 
+Appropriate authentication code as described in the previous section  is
+assumed. This will give us an variable named conn which we will use for
+invoking Services. It is in the next sections not explicitly listed. 
+It is indicated by our ... at the beginning 
 
 #### Creating Nodes
 
-:o: text missing
+In this section we will look at the code that can be used to create a 
+node in the provider a node which represents a virtual server
 
 ```Python
 ...
@@ -166,7 +170,8 @@ node = conn.create_node(name='yourservername', image=images[0], size=sizes[0])
 
 #### Listing Nodes
 
-:o: text missing
+In this section we will look at the code that can be used to list the
+nodes that have been created in the provider
 
 ```Python
 ...
@@ -175,9 +180,8 @@ print nodes
 ```
 
 #### Starting Nodes
-
-:o: text missing
-
+After the node (Virtual server) has been created the following code can
+be used to start the node
 
 ```Python
 ...
@@ -187,8 +191,8 @@ conn.ex_start(node=node)
 ```
 
 #### Stoping Nodes
-
-:o: text missing
+When needed the following command can be used to stop a node that has 
+been started
 
 ```Python
 ...
