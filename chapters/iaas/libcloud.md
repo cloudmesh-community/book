@@ -201,3 +201,29 @@ node = [n for n in nodes if 'yourservername' in n.name][0]
 conn.ex_stop(node=node)
 ```
 
+## Python Program to Manage Clouds
+As you have noticed since the authentication can change from cloud 
+services to cloud service it would be much easier to use a simple 
+python script to automatically handle the differences in the code.
+
+We have provided such a python script which you can leverage to manage 
+different cloud providers. You can find the python script and the 
+corresponding .yaml file in the cloudmesh-community github repository.
+
+Python Script - <https://github.com/cloudmesh-community/cm/blob/master/cm.py>
+Yaml File - <https://github.com/cloudmesh-community/cm/blob/master/cloudmesh.yaml>
+
+<b>When using the script and yaml file please keep in mind the following 
+steps to make sure you do not share your private keys and passwords on
+your publicly accessible Github account.<b>
+
+1. Create a folder in your computer that is not within a git clone that 
+you have made. For example maybe you can use a new directory on your
+desktop
+
+2. Copy the cm.py and cloudmesh.ymal files into this folder. Just to make
+sure you are not working with the files under the git repo you should delete
+the cloudmesh.yaml file in that is in your local git repo.
+
+3. change the needed fields in the ymal file and use the python script to
+access the cloud services using libcloud. 
