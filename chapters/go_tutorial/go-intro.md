@@ -1,5 +1,6 @@
-Introduction to ![Go Logo](https://upload.wikimedia.org/wikipedia/commons/2/23/Go_Logo_Aqua.svg)
-----------------------
+#Introduction to Go 
+
+![Go Logo](https://upload.wikimedia.org/wikipedia/commons/2/23/Go_Logo_Aqua.svg)
 
 Portions of this lesson have been adapted from the [official Go 
 Documentation](https://golang.org/doc/).
