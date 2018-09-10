@@ -126,6 +126,9 @@ sectionindent:
 	../bin/header.py dest/chapters/faq.md 1
 	../bin/header.py dest/chapters/faq-516.md 2
 	../bin/header.py dest/chapters/SECTION-DEVTOOLS.md 1
+	../bin/header.py dest/chapters/rest/swagger-codegen.md 2
+	../bin/header.py dest/chapters/rest/swagger-spec.md 2
+	../bin/header.py dest/chapters/rest/swagger.md 2
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
