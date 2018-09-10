@@ -1,4 +1,4 @@
-# NIST Big Data Referenece Architecture :o:
+# NIST Big Data Referenece Architecture
 
 One of the major technical areas in the cloud is to define
 architectures that can work with Big Data. For this reason NIST has
