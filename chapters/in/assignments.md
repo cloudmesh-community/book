@@ -337,7 +337,7 @@ Learning Outcome:
 label="E:616-big-data-and-collaboration"} **Big data and
 collaboration.** due Feb 2018
 
-The purpose of this assignment is multifold; test the ability of Google
+The purpose of this assignment is manifold; test the ability of Google
 docs to be used in collaborative fashion by more than a small group and
 report on the experience. Good Things and bad things, learn on how to
 use Google docs with headings and table of contents learn how to gather
@@ -715,7 +715,7 @@ So we just use the same framework, which is very convenient!
 
 Now let us get back to the swagger service generation:
 
-One of the goals of this project is to create a REPRODUCABLE framework
+One of the goals of this project is to create a REPRODUCIBLE framework
 for generating the services. It is not enough to just develop a swagger
 service. You will need to generate the service from a shell script
 and/or makefile. As both technologies are available on any computer
@@ -997,7 +997,7 @@ Learning outcomes:
 
 -   Learn how to use sharelatex
 
--   Learn how ieas it is to write a paper in latex while using our
+-   Learn how easy it is to write a paper in latex while using our
     template
 
 -   Learn how to do citations and organize them in bibtex

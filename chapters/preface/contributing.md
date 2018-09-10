@@ -8,7 +8,7 @@ everything is stored in github in the following directory:
 
 Content can be contributed via pull requests that are either created
 while you directly edit the content via the github Web interface, or a
-cloned version of the document. sddd
+cloned version of the document. 
 
 For simplicity we focus on contribution via the Web interface.
 Naturally you need to have a github.com account and login. After you

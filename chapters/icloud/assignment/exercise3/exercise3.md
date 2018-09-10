@@ -122,7 +122,7 @@ HDFS.
 Sketch for Hadoop Blast
 -----------------------
 
-You need to complete one file in the provided pacakge inside
+You need to complete one file in the provided package inside
 \"cgl/hadoop/apps/runner\": RunnerMap.java. Code snapshots are shown
 below.
 

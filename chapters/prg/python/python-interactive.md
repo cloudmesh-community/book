@@ -71,7 +71,7 @@ called `prg.py`. Once you have written it in that file you simply can call it wi
 python prg.py
 ```
 
-It is important to name the program with meaningfull names.
+It is important to name the program with meaningful names.
 
 Python 3 Features in Python 2
 -----------------------------

@@ -18,7 +18,7 @@
 * Faculty: Dr. Gregor von Laszewski (laszewski@gmail.com)
 * Credits: 3
 * First online class released: Aug. 22, 2018
-* Resifential students Discussion:   11:15A-12:15P  Fridays  I2 150, bring your laptops
+* Residential students Discussion:   11:15A-12:15P  Fridays  I2 150, bring your laptops
 * Prerequisite(s): Knowledge of a programming language, the ability to
   pick up other programming languages as needed, willingness to
   enhance your knowledge from online resources and additional
@@ -37,7 +37,7 @@
 * [Registrar information and Other related classes](https://github.com/cloudmesh-community/book/blob/master/chapters/class/fall2018.md)
 
 This is an introductory class. In case you like to do research and
-more dvanced topics, consider taking an independent study with Dr. von
+more advanced topics, consider taking an independent study with Dr. von
 Laszewski.
 
 ## Course Description
@@ -70,7 +70,7 @@ The course has the following objectives:
   cloud
 * Learn how edge computing is enhancing cloud services and
   infrastructure
-* Lern how to set up a cloud based on using commodity hardware
+* Learn how to set up a cloud based on using commodity hardware
 
 ## Learning Outcomes
 
@@ -89,7 +89,7 @@ The course has the following objectives:
   contribute collaboratively to develop tutorials for clouds.
 
 
-## Course Sylabus
+## Course Syllabus
 
 
 
@@ -101,7 +101,7 @@ The course has the following objectives:
 | :white_check_mark: 08/24    | 1       | Introduction      | [Class summary](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md)
 | :white_check_mark: 08/24    |         |                   | [Definition of Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md)
 | :white_check_mark: 08/31    |         |                   | Tools and Services: [Virtualbox](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualbox.md), [Vagrant](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/vagrant.md), [Github](https://github.com/cloudmesh-community/book/blob/master/chapters/git/github.md), [Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
-| :white_check_mark: 08/31   |         |                   | Python: [Introduction](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md), [Instalation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md), [Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md), [Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md), [Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md), [Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md), [Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md), [Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md), [Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
+| :white_check_mark: 08/31   |         |                   | Python: [Introduction](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md), [Installation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md), [Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md), [Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md), [Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md), [Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md), [Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md), [Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md), [Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
 | :white_check_mark: 09/03 |         |                   | [Data Center](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/datacenter.md)
 | :o: 09/10 |         |                   | NIST Big Data Reference Architecture
 | :o: 09/11 | 2       | Infrastructure    | Infrastructure as a Service
@@ -145,7 +145,7 @@ grade.
 
 (*) Tutorials prepare you for documenting a technical aspect related
 to cloud computing. It is a preparation for a document that explains
-how to execute your project in a reproducable manner to others.
+how to execute your project in a reproducible manner to others.
 
 - all times are in EST
 
@@ -156,7 +156,7 @@ Additional Lectures will be added that allow easy management of the project. The
 | Date     | Unit    | Title             | Description
 | :----------- |:------- |:----------------- |:---------------------------
 | :white_check_mark: anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
-| :white_check_mark: anytime  |         | Plagiarizm      | How to avoid plagiarizm and cheating
+| :white_check_mark: anytime  |         | Plagiarism      | How to avoid plagiarism and cheating
 | :white_check_mark: anytime  |         | Markdown        | How to use markdown
 | :white_check_mark: anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |
 | :white_check_mark: anytime  |         | Writing a Project Report      | How to write a high quality Project report following our template
@@ -173,7 +173,7 @@ simple form.
 
 ## Assessment
 
-This course is focussing on the principal "Learning by Doing" which is
+This course is focusing on the principal "Learning by Doing" which is
 assessed by simple graded and non-graded act-ivies. The assessment may
 include comprehension of the material taught, programming assignments,
 participation in online discussion forums, or the contribution of
@@ -190,12 +190,12 @@ assessed through the following artifacts:
 1. Deployment and install instructions, 
 2. Project report (typically 2-3 pages per month, tutorial and
    chapters can be reused if possible), 
-3. Working project code that can be installed and executed in reproducable manner by a third party 
+3. Working project code that can be installed and executed in reproducible manner by a third party 
 4. Code developed by the project team distributed in github.com
 5. Project progress notes checked into github throughout the semester. Each 
    week the project progress is reported and will be integrated
-   sinto the final grade.
-6. three discusssions or progress reports with the instructors about your project
+   into the final grade.
+6. three discussions or progress reports with the instructors about your project
 
 The grade distribution is as follows 
 

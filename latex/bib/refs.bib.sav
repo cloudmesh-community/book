@@ -8133,7 +8133,7 @@ Url = { http://spark.apache.org/mllib/ }
                   the wikipedia page(Heat - OpenStack). Author field
                   is missing(Should be {Wikipedia} or specific author
                   if any. Key field(a unique key that overrides the
-                  ordering of the bib entry incase of missing
+                  ordering of the bib entry in case of missing
                   author/editor fields) is missing.Month/year of the
                   wikipedia page should be added.},
   Title =        {Heat - Openstack},
@@ -8149,7 +8149,7 @@ Url = { http://spark.apache.org/mllib/ }
                   the webpage(An Introduction to OpenStack
                   Heat). Author field is missing. Key field(a unique
                   key that overrides the ordering of the bib entry
-                  incase of missing author/editor fields) is
+                  in case of missing author/editor fields) is
                   missing.Month/year of the blog should be added.},
   Title =        {An introduction to Openstack Heat},
   Author =       {Scott Lowe},
@@ -8167,7 +8167,7 @@ Url = { http://spark.apache.org/mllib/ }
                   the wikipedia page(Java Message Service). Author
                   field is missing(Should be {Wikipedia} or specific
                   author if any. Key field(a unique key that overrides
-                  the ordering of the bib entry incase of missing
+                  the ordering of the bib entry in case of missing
                   author/editor fields) is missing.Month/year of the
                   wikipedia page should be added.},
   Title =        {Java Message Service - Wikipedia},
@@ -8182,7 +8182,7 @@ Url = { http://spark.apache.org/mllib/ }
   review =       {The title should be given as given in the title of
                   the webpage(The Java EE 6 Tutorial). Author field is
                   missing. Key field(a unique key that overrides the
-                  ordering of the bib entry incase of missing
+                  ordering of the bib entry in case of missing
                   author/editor fields) is missing.Month/year of the
                   webpage should be added.},
   Title =        {The Java EE 6 Tutorial},
@@ -8198,7 +8198,7 @@ Url = { http://spark.apache.org/mllib/ }
   review =       {The title should be given as given in the title of
                   the webpage(Apache Storm - Concepts). Author field
                   is missing. Key field(a unique key that overrides
-                  the ordering of the bib entry incase of missing
+                  the ordering of the bib entry in case of missing
                   author/editor fields) is missing.Month/year of the
                   webpage should be added.},
   Title =        {Apache Storm - Concepts},
@@ -8212,7 +8212,7 @@ Url = { http://spark.apache.org/mllib/ }
 
 @InProceedings{storm-paper-IJCTT,
   review =       {Key field(a unique key that overrides the ordering
-                  of the bib entry incase of missing author/editor
+                  of the bib entry in case of missing author/editor
                   fields) is missing. Address of the Author/Editor's
                   should be included.Page number or range of page
                   number corresponding to this title has to be
@@ -8232,7 +8232,7 @@ Url = { http://spark.apache.org/mllib/ }
                   the webpage(A Simple API for Grid
                   Applications). Author field is missing. Key field(a
                   unique key that overrides the ordering of the bib
-                  entry incase of missing author/editor fields) is
+                  entry in case of missing author/editor fields) is
                   missing.Month/year of the webpage should be added.},
   Title =        {A Simple API for Grid Applications},
   Author =       {Tom Goodale and Shantenu Jha and Hartmut Kaiser and
@@ -8248,7 +8248,7 @@ Url = { http://spark.apache.org/mllib/ }
 
 @InProceedings{saga-paper,
   review =       {Key field(a unique key that overrides the ordering
-                  of the bib entry incase of missing author/editor
+                  of the bib entry in case of missing author/editor
                   fields) is missing. Address of the Author/Editor's
                   should be included.Page number or range of page
                   number corresponding to this title has to be
@@ -8267,7 +8267,7 @@ Url = { http://spark.apache.org/mllib/ }
 
 @Misc{www-agaveapi-features,
   review =       {Author field is missing. Key field(a unique key that
-                  overrides the ordering of the bib entry incase of
+                  overrides the ordering of the bib entry in case of
                   missing author/editor fields) is missing.Month/year
                   of the webpage should be added.},
   Title =        {Agave API Home – Features Tab},
@@ -8280,7 +8280,7 @@ Url = { http://spark.apache.org/mllib/ }
 
 @InProceedings{agave-paper,
   review =       {Key field(a unique key that overrides the ordering
-                  of the bib entry incase of missing author/editor
+                  of the bib entry in case of missing author/editor
                   fields) is missing. Address of the Author/Editor's
                   should be included.Page number or range of page
                   number corresponding to this title has to be

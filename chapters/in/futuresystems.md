@@ -5,13 +5,13 @@ FutureSystems
 This section gives an overview of the FutureSystems that are available
 as part of the DSC infrastructure. We cover the creation of
 FutureSystems Account, Uploading SSH Key and how to instantiate and log
-into Virtual Machine and accessing Ipython are covered. In the end we
+into Virtual Machine and accessing IPython are covered. In the end we
 discuss about running Python and Java on Virtual Machine.
 
 FutureSystems evolved from FutureGrid
 -------------------------------------
 
-In this video we introduce FutureGrid a precurser to FutureSystems.
+In this video we introduce FutureGrid a precursor to FutureSystems.
 
 [:clapper: Systems 12:12 FutureGid](http://youtu.be/RibpNSyd4qg)
 
@@ -177,7 +177,7 @@ Figure [\[F:victor\]](#F:victor){reference-type="ref"
 reference="F:victor"}).
 
 
-![Cabeling of Victor[]{label="F:victor"}](images/victor.jpg){width="90%"}
+![Cabling of Victor[]{label="F:victor"}](images/victor.jpg){width="90%"}
 
 ### PI Cluster
 

@@ -33,7 +33,7 @@ it in the proper format.
 
 ### Installation of NOOBS
 
-NOOBS is an OS that includes Raspian. The official description of
+NOOBS is an OS that includes Raspbian. The official description of
 Raspbian can be found
 [here](https://www.raspberrypi.org/downloads/raspbian/). It comes
 pre-packaged with many useful programming tools, and is easy to use.
@@ -180,7 +180,7 @@ document update from source with altinstall
 
 ### Install scientific Libraries
 
-check if they are already installed we donot have enough space to
+check if they are already installed we do not have enough space to
 install all of these.
 
     sudo apt-get install python-numpy python-matplotlib python-scipy python-sklearn python-pandas
@@ -409,7 +409,7 @@ source \~/.profile
 
 workon cv
 
-comandline has (cv) in front
+command line has (cv) in front
 
     pip install numpy
 

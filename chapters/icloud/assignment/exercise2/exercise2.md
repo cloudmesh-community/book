@@ -48,7 +48,7 @@ Markov Chain which requires iterative calculations to converge. An
 iteration of PageRank calculates the new access probability for each
 webpage based on values calculated in the previous iteration. The
 process will repeat until the number of current iterations is bigger
-than predefined maximum iterations, or the Euclidian distance between
+than predefined maximum iterations, or the Euclidean distance between
 rank values in two subsequent iterations is less than a predefined
 threshold that controls the accuracy of the output results.
 
@@ -174,7 +174,7 @@ processing.
 Code for Hadoop PageRank
 ========================
 
-You need to complete two files in the provided pacakge inside
+You need to complete two files in the provided package inside
 \"indiana/cgl/hadoop/pagerank/\": PageRankMap.java and
 PageRankReduce.java. Code snapshots are shown below.
 

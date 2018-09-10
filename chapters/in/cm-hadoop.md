@@ -34,8 +34,8 @@ CLOUD] [-u NAME] [-i IMAGE] [-f FLAVOR] [-k KEY] [-s NAME]
 [-AI]
 
 Options:
--A --no-activate Donot activate this cluster
--I --no-floating-ip Donot assign floating IPs
+-A --no-activate Do not activate this cluster
+-I --no-floating-ip Do not assign floating IPs
 -n NAME --name=NAME Name of the cluster
 -c COUNT --count=COUNT Number of nodes in the cluster 
 -C NAME --cloud=NAME Name of the cloud 
@@ -311,7 +311,7 @@ without password. To achieve that, we need to execute
 ### Word Count Example on Spark
 
 Now with the cluster ready, let's run a simple Spark job, Word Count, on
-one of William Shakespear's work. Use `cm vm ssh` to log into the
+one of William Shakespeare's work. Use `cm vm ssh` to log into the
 `Namenode` of the Spark cluster. It should be the first node of the
 cluster:
 

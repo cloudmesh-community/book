@@ -16,21 +16,21 @@ allow us to illustrate the use if virtual environments using the pyenv
 or virtualenv command, and installing and uninstalling PyPi packages
 using pip.
 
-Updateing Pip
+Updating Pip
 -------------
 
 It is important that you have the newest version of pip installed for your 
 version of python. Let us assume your python is registered with python and 
-you use pyenv, thna you can update 
+you use pyenv, than you can update 
 pip with 
 
 ```bash
 pip install -U pip
 ```
 
-without interfeering with a potential system wide installed version of p
+without interfering with a potential system wide installed version of p
 ip that may be needed by the system default version of python. See the 
-setcion about pyenv for more details
+section about pyenv for more details
 
 Using pip to Install Packages
 -----------------------------
@@ -78,7 +78,7 @@ here](https://lawsie.github.io/guizero/howto/).
 
 ### Kivy
 
-You can install Kivy on OSX as followes:
+You can install Kivy on OSX as follows:
 
 ```bash
 brew install pkg-config sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer
@@ -146,12 +146,12 @@ $ autopep8 -i file.py # update in place
 ```
 
 If you use pyCharm you have the ability to use a similar function while
-p;ressing on Inspect Code.
+pressing on Inspect Code.
 
 Writing Python 3 Compatible Code
 --------------------------------
 
-To write python 2 and 3 compatib;e code we recommend that you take a
+To write python 2 and 3 compatible code we recommend that you take a
 look at: <http://python-future.org/compatible_idioms.html>
 
 Using Python on FutureSystems
@@ -179,7 +179,7 @@ Ecosystem
 The Python Package Index is a large repository of software for the
 Python programming language containing a large number of packages,
 many of which can be found on
-[pypi](https://pypi.python.org/pypi). The nice thing about pipy is
+[pypi](https://pypi.python.org/pypi). The nice thing about pypi is
 that many packages can be installed with the program 'pip'.
 
 To do so you have to locate the \<package_name\> for example with the
@@ -254,11 +254,11 @@ if you want to use canopy all this is up to you. However the homework
 and project requires you to make your program portable to python.org. If
 you know how to do that even if you use canopy, anaconda, or any other
 python version that is fine. Graders will test your programs on a
-python.org installation and not canpoy, anaconda, ironpython while using
+python.org installation and not canopy, anaconda, ironpython while using
 virtualenv. It is obvious why. If you do not know that answer you may
 want to think about that every time they test a program they need to do
 a new virtualenv and run vanilla python in it. If we were to run two
-instals in the same system, this will not work as we do not know if one
+installs in the same system, this will not work as we do not know if one
 student will cause a side effect for another. Thus we as instructors do
 not just have to look at your code but code of hundreds of students with
 different setups. This is a non scalable solution as every time we test

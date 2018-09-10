@@ -62,7 +62,7 @@ pages with particular number of URL's linking out or in to page.
 
 ### Information Retrieval
 
-[:clapper: Information Retrival (6:06)](https://youtu.be/KtWhk2cdRa4)
+[:clapper: Information Retrieval (6:06)](https://youtu.be/KtWhk2cdRa4)
 
 Information retrieval is introduced A comparison is given between
 semantic searches as in databases and the full text search that is base
@@ -87,7 +87,7 @@ important Bag of Words representation.
 
 ### Information Retrieval (Web Search) Components
 
-[:clapper: Fundametal Principals of Web Search
+[:clapper: Fundamental Principals of Web Search
 (5:06)](https://youtu.be/EGsnonXgb3Y)
 
 This describes queries in context of an Information Retrieval
@@ -164,7 +164,7 @@ enhancing relevance.
 
 ### Link Structure Analysis including PageRank
 
-[:clapper: Realated Applications
+[:clapper: Related Applications
 (17:24)](https://www.youtube.com/watch?v=ApDu-7_1LYk)
 
 The value of links and the concepts of Hubs and Authorities are

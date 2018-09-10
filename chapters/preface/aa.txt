@@ -1,7 +1,7 @@
 
   [
 
-    [Prerequisits Review
+    [Prerequisites Review
        [Python
           [Language, \ngreen]
           [pyenv\\
@@ -51,12 +51,12 @@
         [e616\\
          Application
            [Physics, \nwhite]
-           [Helath Care, \nwhite]
+           [Healthcare, \nwhite]
            [Life Style, \nwhite]
            [Sensors, \nwhite]
            [Sports, \nwhite]
            [Web Search \\
-            Text Minining, \nwhite]
+            Text Mining, \nwhite]
         ]
     ]
   ]

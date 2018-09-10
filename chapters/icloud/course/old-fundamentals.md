@@ -28,7 +28,7 @@ Data Intensive Sciences
 
 Some time is spent analyzing the current age of vast data growth, where
 business, science, and consumer activity has seen an explosion of stored
-data measured in exobytes. In response to this, the way we conduct
+data measured in exabyte. In response to this, the way we conduct
 scientific research has also undergone an upgrade. However, the average
 scientist would rather focus on their own research rather than spend
 time trying to learn different methods of cloud and supercomputing.

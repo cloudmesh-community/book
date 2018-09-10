@@ -9,7 +9,7 @@ Highlights include:
 -   automatic help page generation
 -   supports of lazy loading of subcommands at runtime
 
-The following example take from the clik Web page at
+The following example take from the click Web page at
 
 -   <http://click.pocoo.org/>
 

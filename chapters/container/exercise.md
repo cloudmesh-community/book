@@ -54,7 +54,7 @@ use wordcount or similar.
 
 ## Spark Cluster
 
-Develop a high quality tutorial that installes a spark cluster in
+Develop a high quality tutorial that installs a spark cluster in
 kubernetes. Test your deployment on minikube but also Futuresystems
 echo.
 
