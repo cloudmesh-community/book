@@ -38,7 +38,7 @@ reference="E:e616-iu-google-services"}) Piazza, \] \] \[Survey
 ([\[a:survey-entry\]](#a:survey-entry){reference-type="ref"
 reference="a:survey-entry"})\] \[Writing Assignments \[Bio
 ([\[a:616-bio\]](#a:616-bio){reference-type="ref"
-reference="a:616-bio"}), \] \[Plagiarizm
+reference="a:616-bio"}), \] \[Plagiarism
 ([\[S:plagiarism\]](#S:plagiarism){reference-type="ref"
 reference="S:plagiarism"}) , \] \[Project Report
 ([\[E:project\]](#E:project){reference-type="ref"
@@ -63,7 +63,7 @@ reference="C:latex"}) \[bibtex
 jabref ([\[s:jabref\]](#s:jabref){reference-type="ref"
 reference="s:jabref"})\
 LaTeX ([\[C:latex\]](#C:latex){reference-type="ref"
-reference="C:latex"}), \] \] \] \[Prerequisits Review \[Python
+reference="C:latex"}), \] \] \] \[Prerequisites Review \[Python
 ([\[C:python\]](#C:python){reference-type="ref" reference="C:python"})
 \[Language
 ([\[C:python-language\]](#C:python-language){reference-type="ref"
@@ -127,7 +127,7 @@ Applications ([\[p:bigdata\]](#p:bigdata){reference-type="ref"
 reference="p:bigdata"})([\[s:nist-usecase\]](#s:nist-usecase){reference-type="ref"
 reference="s:nist-usecase"}) \[Physics
 ([\[c:physics\]](#c:physics){reference-type="ref"
-reference="c:physics"}), \] \[Helath Care
+reference="c:physics"}), \] \[Healthcare
 ([\[c:health-informatics\]](#c:health-informatics){reference-type="ref"
 reference="c:health-informatics"}), \] \[Life Style
 ([\[c:e-commerce\]](#c:e-commerce){reference-type="ref"
@@ -136,6 +136,6 @@ reference="c:e-commerce"}), \] \[Sensors
 reference="s:a-sensors"}), \] \[Sports
 ([\[c:sports\]](#c:sports){reference-type="ref" reference="c:sports"}),
 \] \[Web Search\
-Text Minining
+Text Mining
 ([\[s:web-search-and-text-mining\]](#s:web-search-and-text-mining){reference-type="ref"
 reference="s:web-search-and-text-mining"}), \] \] \] \]

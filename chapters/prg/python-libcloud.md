@@ -109,7 +109,7 @@ https://libcloud.readthedocs.io/en/latest/compute/key_pair_management.html
 -   Google cloud storage
 -   Azure Blobs
 -   Local Storage
--   OPenstack swift
+-   Openstack swift
 -   Amazon S3
 -   Ceph
 

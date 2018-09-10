@@ -1,7 +1,7 @@
 Turtle Graphics
 ===============
 
-Python comes with a nice demonstartion program that allows you to learn
+Python comes with a nice demonstration program that allows you to learn
 some simple programming concepts while moving a turtle on the screen. It
 can be started with
 

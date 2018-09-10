@@ -4,7 +4,7 @@ SSH on Windows
 
 For this class we recommend that you use a virtual machine via virtual
 box and use the Linux ssh instructions. The information here is just
-provided for completness and no support will be offered for native
+provided for completeness and no support will be offered for native
 windows support.
 
 Windows users need to have some special software to be able to use the

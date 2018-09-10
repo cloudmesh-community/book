@@ -298,7 +298,7 @@ Node
           message:
             type: string
 
-Refernces
+References
 ---------
 
 [The official OpenAPI 2.0

@@ -199,6 +199,7 @@ sectionindent:
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
+	../bin/header.py dest/chapters/faq-523.md 2
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
@@ -215,14 +216,14 @@ sectionheaders:
 	../bin/section.py 1 "Yarn" > dest/chapters/SECTION-yarn.md  
 	../bin/section.py 1 "Spark" > dest/chapters/SECTION-spark.md        
 	../bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
-	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
+	../bin/section.py 1 "Scientific Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 2 "Language" > dest/chapters/prg/SECTION-PYTHON-LANG.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
+	../bin/section.py 1 "FAQ" > dest/chapters/SECTION-FAQ.md
 
 
-
-prepare: dot refernces todo
+prepare: dot references todo
 	$(COPY) metadata.txt dest
 	$(COPY) -r cover dest
 	$(COPY) -r ../template dest
@@ -264,7 +265,7 @@ ifeq ($(OS), linux)
 endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME)-other.epub metadata.txt all.md
 
-refernces:
+references:
 	mkdir -p dest
 	cat ../bib/*.bib > dest/references.bib
 

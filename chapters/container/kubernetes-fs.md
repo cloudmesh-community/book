@@ -13,7 +13,7 @@ login to echo. To verify, if you have access try to see if you can log
 into india.futuresystems.org. You need to be a member of a valid
 FutureSystems project.
 
-If you have verified that you haveaccess to the india, you can now try
+If you have verified that you have access to the india, you can now try
 to login to the kubernetes cluster head node with the same username
 and key:
 
@@ -26,7 +26,7 @@ To login to echo use the command
 
     ssh FS_USERNAME@149.165.150.85
 
-where FS_USERUSER is the username you have on futureSystems.
+where FS_USERNAME is the username you have on futureSystems.
 
 **NOTE: If you have access to india but not the kubernetes software, your 
 project may not have been authorized to access the kubernetes cluster.
@@ -110,11 +110,11 @@ We will see the response
 
     service "nginx-external" exposed
 
-To find the exposed ip adresses, we simply issue the command
+To find the exposed ip addresses, we simply issue the command
     
     kubectl get svc
 
-We se somthing like this
+We se something like this
 
     NAME          TYPE      CLUSTER-IP    EXTERN PORT(S)      AGE
                                           AL-IP
@@ -128,18 +128,18 @@ please note that we have given a unique name.
 For IU students:
 
 You could use your username or if you use one of our classes your
-hid. The number part will typically be suficient.  For class users
+hid. The number part will typically be sufficient.  For class users
 that do not use the hid in the name we will terminate all instances
 without notification. In addition, we like you explicitly to add
 "-ext" to every container that is exposed to the internet. Naturally
 we want you to shut down such services if they are not in use. Failure
 to do so may result in termination of the service without notice, and
-in the worst case revocation of your priveledges to use *echo*.
+in the worst case revocation of your privileges to use *echo*.
 
 ---
 
 In our example you will find the port on which our service is exposed
-and remaped to. We find the port **30275** in the value
+and remapped to. We find the port **30275** in the value
 **80:30275/TCP** in the ports column for the running container.
 
 Now if we visit this URL, which is the public IP of the head node

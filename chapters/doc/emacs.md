@@ -150,7 +150,7 @@ However instead of previews and whizzy tex we recommend to use
 
 -   <https://www.emacswiki.org/emacs/LatexMk>
 
-which comes preinstalled and allows you to do editing in one terminal,
+which comes pre-installed and allows you to do editing in one terminal,
 while previewing the update on change in another window.
 
 LatexMk is all integrated in our report Makefiles and the Book format,

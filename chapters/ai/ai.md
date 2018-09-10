@@ -50,7 +50,7 @@ test is the sign test where values are assigned a positive or negative
 sign based on being above or below the median. In k-NN predictions are
 made about unknown values by matching the unknown values with similar
 known values. Naturally the determination of 'similar' is of fundamental
-importance. This is done through the application of the euclidian
+importance. This is done through the application of the Euclidean
 distance calculation given by the following equation:
 
 $${d(\mathbf{i},\mathbf{j})} = {d(\mathbf{j},\mathbf{i})} = \sqrt{{(i_1 - j_1)^2 + (i_2 - j_2)^2 +... (i_n - j_n)^2 } }  = \sqrt{\sum_{n=1}^n(i_n - j_n)^2}$$
@@ -80,7 +80,7 @@ so decided to put analytics to work. Since a Mustang has roughly 300
 horse power the closet car in our dataset to this is the Tesla Roadster
 and since the Tesla is fast we would predict the Mustang to be fast.
 Remember this is completely dependent on the authors initial
-classification of wether a car is fast or not. Clearly the Lamborghini
+classification of whether a car is fast or not. Clearly the Lamborghini
 and the Bugatti are fast but maybe the Tesla is not fast therefore
 giving an incorrect answer. An example calculation using the Mustang and
 the Tesla is given below:
@@ -90,12 +90,12 @@ $${d(\mathbf{i},\mathbf{j})}  = \sqrt{{(300 - 288)^2 + (1 - 0)^2 } }  = 12.04$$
 We were able to determine the closest, or first nearest neighbor by
 inspection of this data, however with a more robust dataset this may not
 be the case. In these situations to find the nearest neighbor the
-euclidian distance is calculated for every unique row entry and then
+Euclidean distance is calculated for every unique row entry and then
 ordered from smallest to largest distances, naturally the smallest
 distances are the most similar. You may notice that the values of
 horsepower are significantly larger in magnitude than the values
 associated with racing stripes. This could be problematic in many real
-world scenarios where the columns associated with large values donot
+world scenarios where the columns associated with large values do not
 have as direct of an impact as horsepower does on the variable we are
 trying to predict--a car being fast. In the case where each column value
 has equal predictive power data normalization should be performed. This
@@ -111,7 +111,7 @@ could have given the dataset in
  [\[T:fast-cars\]](#T:fast-cars){reference-type="ref"
 reference="T:fast-cars"} ?
 
-Calculate the Euclidian Distances for all five row entries with respect
+Calculate the Euclidean Distances for all five row entries with respect
 to the Mustang.
 
 Normalize the data and recalculate the first and second nearest
@@ -150,7 +150,7 @@ column player is first selected followed by the player name.
     selected_player = nba[nba["player"] == "LastName FirstName"].iloc[0]
 
 The next step is to remove any non-numeric columns from our analysis
-since we are using the euclidian distance to calculate proximity and
+since we are using the Euclidean distance to calculate proximity and
 strings can not be evaluated in such a way. One thing you can do if you
 have columns that have values like yes and no is assign zeros and ones
 accordingly. In our case we will only select the columns with numeric
@@ -160,14 +160,14 @@ values.
     'x3pa', 'x3p.', 'x2p', 'x2pa', 'x2p.', 'efg.', 'ft', 'fta', 'ft.',
     'orb', 'drb', 'trb', 'ast', 'stl', 'blk', 'tov', 'pf', 'pts']
 
-We now have everything we need to calculate the euclidian distance,
+We now have everything we need to calculate the Euclidean distance,
 there are built in functions available in python to calculate this
 however we will define our own as it is a straight forward computation.
 It is also good practice to define your own functions whenever possible.
 
     def euclidean_distance(row):
         """
-        Define our own euclidean distance function
+        Define our own Euclidean distance function
         """
         euc_distance = 0
         for k in numeric_columns:
@@ -175,7 +175,7 @@ It is also good practice to define your own functions whenever possible.
         return math.sqrt(euc_distance)
 
 Applying our function using the following command will determine the
-euclidian distance between the selected player and all other players in
+Euclidean distance between the selected player and all other players in
 the dataset.
 
     selected_player_distance = nba.apply(euclidean_distance, axis=1)
@@ -209,7 +209,7 @@ replace all NA entries with zeros.
 
     nba_normalized.fillna(0, inplace=True)
 
-Using the built in euclidian distance to determine the euclidian
+Using the built in Euclidean distance to determine the Euclidean
 distances of all players in the data set to our selected player.
 
      player_normalized = nba_normalized[nba["player"] == "LastName FirstName"]
@@ -308,7 +308,7 @@ good practice.
         download_data(url=url, filename='iris.scale')
         return "Data Downloaded"
 
-The following three api endpoints use the data partion and get data
+The following three api endpoints use the data partition and get data
 functions defined above. The partition function splits the datasets into
 two sections--testing and training. In this example the testing portion
 of the dataset is 20 % and the training is 80 % of the dataset. Later we
@@ -467,7 +467,7 @@ As mentioned above these these are examples of static API endpoints. In
 many scenarios having a dynamic API would be preferred. Lets explore the
 data partition endpoint and modify the code for the static version to
 make a dynamic version. Below is the function definition for the dynamic
-version of the data_partion function, and not much has changed. The
+version of the data_partition function, and not much has changed. The
 only change made was that stings were appended to the testing and
 training file names for convenience. The ratio will match the user
 defined ratio entered through the url.

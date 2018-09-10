@@ -27,7 +27,7 @@ off. Starting a paper a day or even in the week before the deadline will
 allow you not to achieve your best. Late Projects or term papers will
 receive a 10% grade reduction.
 
-If we see it nessesarry additional assignments will be added. Instead
+If we see it necessary additional assignments will be added. Instead
 of tests the assignments have build in checks for you understanding
 the topics. 
 
@@ -66,5 +66,4 @@ Discussion about Grades
 -----------------------
 
 Should it be necessary a discussion about a grade must not be taking
-place via e-mail nor via piazza. You must use a private postbut ise
-aprivate post in piazza to the instructors. 
+place via e-mail nor via piazza. You must use a private post but post it to the instructors only. 

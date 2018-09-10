@@ -1,7 +1,7 @@
 Sentient Architecture
 =====================
 
-![Sentinent Architecture: Source:
+![Sentient Architecture: Source:
 <https://nicolatriscott.files.wordpress.com/2016/03/caaqt-euyam-jpm.jpg>](images/sentient.jpeg){width="\columnwidth"}
 
 Introduction
@@ -42,7 +42,7 @@ Hence, you will need a hardware device to interact with.
 
 The reason we named them *Snowwhite and the Seven$^{+1}$ Dwarfs* is
 based on the fact that the dendrites are white, and they need to be
-interact with someone. Because of the white color we name the controll
+interact with someone. Because of the white color we name the control
 unit snowwhite. The dendrites that are interacting with it are called
 dwarfs as this just fits to the name snowwhite. As we actually have 8
 and not 7 we added $^{+1}$.
@@ -76,7 +76,7 @@ Dwarfs[]{label="F:snowwhite"}](images/snowwhite.jpg){width="\columnwidth"}
 
 architecture drawing
 
-Sentinent Cloudmesh
+Sentient Cloudmesh
 -------------------
 
 Gregor provides introduction to cloudmesh (probably just pointer to
@@ -92,14 +92,14 @@ Towards the Cloudmesh Parallel S development environment
 
 Test environment (8 dendrites)
 
-##### Liddy Hall
+##### Luddy Hall
 
 Andreas describes how we program them
 
 (Andreas provides)
 
 than we use cloudmesh to interface with them, maybe we need to just show
-how we integrate them into mqtt (this is snowhwite) and than we can
+how we integrate them into mqtt (this is snowwhite) and than we can
 program them from another pi
 
 Test environment Luddy hall
@@ -135,20 +135,20 @@ Which version
 Exercises
 ---------
 
-Sentinent.1
+Sentient.1
 
-:   Build dendrite. In this excersise you will be building a dendrite
+:   Build dendrite. In this exercise you will be building a dendrite
     that you can add to the available pool of dendrites.
 
-Sentinent.2.1
+Sentient.2.1
 
-:   Develop cloudmesh sensor/actuary. In this excersise you will be
+:   Develop cloudmesh sensor/actuary. In this exercise you will be
     developing an actuator ar sensor interface in object oriented
     programming methodology. You can see many examples in cloudmesh.py
     on github,com. You will pick a sensor you have access to and that is
     not already included in cloudmesh.pi.
 
-Sentinent.2.2
+Sentient.2.2
 
 :   If you do prefer using another board, the option may exist do develop
     an interface for the sensor or actuator for this device. If OO
@@ -156,17 +156,17 @@ Sentinent.2.2
     functions must be provided. However we believe this is mor complex
     than using the Pi.
 
-Sentinent.3.1
+Sentient.3.1
 
 :   Develop an mqtt based event publisher and subscription service. Use
     first LEDs to test your service before you hook up relays and
     dendrites.
 
-Sentinent.3.2
+Sentient.3.2
 
 :   Hook up the dendrites to mqtt and control them
 
-Sentinent.4
+Sentient.4
 
 :   Develop sensors that interact with the dendrites
 

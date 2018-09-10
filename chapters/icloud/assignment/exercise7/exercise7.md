@@ -24,9 +24,9 @@ follows:
 Prerequisites
 -------------
 
-From now on, you donot need the old VM. To avoid any conflict and
+From now on, you do not need the old VM. To avoid any conflict and
 inconvenience, we have prepared a new VM (ubuntu 16.04) for you. The
-link will be posted on canvas. All necessary tools/libaries such Maven,
+link will be posted on canvas. All necessary tools/libraries such Maven,
 JDK, Github, Hadoop 2.6.0, Harp are configured and ready for use.
 Intellij is installed as well. You can also use your own VM. But you
 will need to setup those tools/libraries by yourself. Some tutorials are

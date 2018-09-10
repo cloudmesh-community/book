@@ -38,7 +38,7 @@ Quick links.
 
 ## Creating the Document
 
-Thid document is for the ebooks only
+This document is for the ebooks only
 
 The documentation is very easy to create as it relies on pandoc. To
 install it you can do the following:
@@ -73,7 +73,7 @@ version. For OSX this is
 
 * <http://www.tug.org/mactex/mactex-download.html>
 
-The Raspbery PI is to small to run LaTeX, so use it to log into a
+The Raspberry PI is to small to run LaTeX, so use it to log into a
 remot resource and run it there.
 
 

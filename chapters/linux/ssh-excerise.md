@@ -13,7 +13,7 @@ E.SSH.2:
 E.SSH.3:
 
 > The images in the futuresystems ssh section are a bit outdated.
-> Please update them. Make sure to blend out your ussername and
+> Please update them. Make sure to blend out your username and
 > fingerprints in the images. or invent some ...
 
 E.SSH.4 

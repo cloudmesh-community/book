@@ -78,7 +78,7 @@ all: prepare epub
 	echo done
 
 
-prepare: dot refernces todo
+prepare: dot references todo
 	$(COPY) metadata.txt dest
 	$(COPY) -r cover dest
 	$(COPY) -r ../template dest
@@ -87,7 +87,7 @@ prepare: dot refernces todo
 	$(MARKUPALL)
 	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "References" > dest/chapters/SECTIONN-REFERENCES.md
-	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
+	../bin/section.py 1 "Scientific Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 	../bin/section.py 1 "Communication Services" > dest/chapters/SECTION-COMMUNICATION.md
 	../bin/section.py 1 "Powerpoint" > dest/chapters/SECTION-PPT.md
@@ -104,7 +104,7 @@ ifeq ($(OS), linux)
 endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
-refernces:
+references:
 	mkdir -p dest
 	cat ../bib/*.bib > dest/references.bib
 

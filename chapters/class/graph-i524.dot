@@ -30,13 +30,13 @@ E516 -> PaaS;
 e523 -> SaaS;
         SaaS -> Applications;
                 Applications -> Physics;
-                Applications -> "Helath Care";
+                Applications -> "Healthcare";
                 Applications -> "Life Style";
                 Applications -> Sensors;
                 Applications -> Sports;
-                Applications -> "Web Search\nText Minining"
-e222 -> "Arificial Inteligence";
-        "Arificial Inteligence" -> "AI Theory & Practice";
+                Applications -> "Web Search\nText Mining"
+e222 -> "Artificial Intelligence";
+        "Artificial Intelligence" -> "AI Theory & Practice";
                                    "AI Theory & Practice" -> "Unsupervised Learning";
                                    "AI Theory & Practice" -> "Deep Learning";
                                    "AI Theory & Practice" -> "Forecasting";
