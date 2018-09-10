@@ -1,5 +1,4 @@
-Swagger Specification
-=====================
+# OPenAPI Specification
 
 Swagger provides through its specification the definition of REST
 services through a YAML or JSON document.
@@ -167,8 +166,7 @@ Node
 
 :   as part of a cluster.
 
-The Virtual Cluster example API Definition
-------------------------------------------
+## The Virtual Cluster example API Definition
 
 ### Terminology
 
@@ -298,8 +296,7 @@ Node
           message:
             type: string
 
-References
----------
+## References
 
 [The official OpenAPI 2.0
 Documentation](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md)

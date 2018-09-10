@@ -1,4 +1,4 @@
-# NIST Big Data Referenece Architecture :o:
+# NIST Big Data Referenece Architecture
 
 One of the major technical areas in the cloud is to define
 architectures that can work with Big Data. For this reason NIST has
@@ -305,3 +305,7 @@ Through the interplay between these services data consumer sand data producers c
 ## Fabric
 
 Security and general management are part of the governing fabric in which such an architecture is deployed.
+
+## Intrface definitions
+
+The interface definitions for the BDRA are specified in Volume 8. We are in the second phase of our document specification while we switch from our pure Resource descripyion to an OpenAPI specification. Before we can provide more details we need to introduce you to REST which is an essential technology for many moder cloud computing services.
