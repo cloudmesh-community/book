@@ -3,8 +3,8 @@ Communicating Research in Other Ways
 
 Naturally, writing papers is not the only way to communicate your
 research with others. We find that today we see additional pathways for
-communication includine blogs, twitter, facebook, e-mail, Web pages, and
-electronic notebooks. Let us refisit some of them and identify when they
+communication including blogs, twitter, facebook, e-mail, Web pages, and
+electronic notebooks. Let us revisit some of them and identify when they
 are helpful.
 
 ### Blogs
@@ -37,7 +37,7 @@ integrated documentation from a markup language.
 
 Advantages:
 
--   output formats: html, LaTeX, PDF, ePub
+-   output formats: html, LaTeX, PDF, epub
 -   integrates well with directory structure
 -   powerful markup language (reStructuredText)
 -   can be hosted on github via github pages
@@ -83,7 +83,7 @@ Disadvantage:
 
 -   mostly encourages short documents
 -   mark up language is limited
--   editing in ASCII is complex and Web editing is prefered
+-   editing in ASCII is complex and Web editing is preferred
 
 #### Apache Zeppilin
 

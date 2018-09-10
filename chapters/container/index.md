@@ -12,7 +12,7 @@ index.md
 * docker.tex -> docker-local.tex
   * wrong filename
   * its about installing docker locally
-  * may be finished if we woudl integrate 
+  * may be finished if we would integrate 
 
 * docker-rest.tex
 * docker-hadoop.tex -> Hyungro: under development -> lee docker image

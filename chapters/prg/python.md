@@ -518,7 +518,7 @@ names = ['Albert', 'Jane', 'Liz',
          'John', 'Abby', 'Liz']
 ```
 
-When we donot want this to be the case, we can use a
+When we do not want this to be the case, we can use a
 [set](https://docs.python.org/2/library/stdtypes.html#set):
 
 ```python
@@ -556,7 +556,7 @@ and now we have
 
 `['Lincoln', 'John', 'Albert', 'Liz', 'Lindsay'])`
 
-You should not assume this is the case in general. That is, donot make
+You should not assume this is the case in general. That is, do not make
 any assumptions about the order of elements in a set when it is
 converted to any type of sequential data structure.
 
@@ -623,13 +623,13 @@ print("person['Age']: ", person['Age'])
 # person['Age']:  100
 ```
 
-A conveniet for to print by named attributes is
+A convenient for to print by named attributes is
 
 ```
 print("{Name} {Age}'.format(**data)) 
 ```
-This form of printing with the format statement and a refernce to data
-increases sreadability of the print statements.
+This form of printing with the format statement and a reference to data
+increases readability of the print statements.
 
 
 You can delete elements with the following commands:
@@ -680,7 +680,7 @@ Both methods return lists. Notice, however, that the order in which the
 elements appear in the returned lists (Age, Name, Class) is different
 from the order in which we listed the elements when we declared the
 dictionary initially (Name, Age, Class). It is important to keep this in
-mind: **you canot make any assumptions about the order in which the
+mind: **you cannot make any assumptions about the order in which the
 elements of a dictionary will be returned by the keys() and values()
 methods**.
 
@@ -864,37 +864,38 @@ they define a valid triangle. A triangle is valid if the length of each
 side is less than the sum of the lengths of the other two sides and
 greater than the difference of the lengths of the other two sides.:
 
-``` """Usage: check_triangle.py \[-h\] LENGTH WIDTH HEIGHT
+```
+"""Usage: check_triangle.py \[-h\] LENGTH WIDTH HEIGHT
 
-    Check if a triangle is valid.
+Check if a triangle is valid.
 
-    Arguments:
-      LENGTH     The length of the triangle.
-      WIDTH      The width of the traingle.
-      HEIGHT     The height of the triangle.
+Arguments:
+  LENGTH     The length of the triangle.
+  WIDTH      The width of the traingle.
+  HEIGHT     The height of the triangle.
 
-    Options:
-    -h --help
-    """
-    from __future__ import print_function, division
-    from docopt import docopt
+Options:
+-h --help
+"""
+from __future__ import print_function, division
+from docopt import docopt
 
-    if __name__ == '__main__':
-      args = docopt(__doc__)
-      a, b, c = int(args['LENGTH']),
-                int(args['WIDTH']),
-                int(args['HEIGHT'])
-      valid_triangle = \
-          a < b + c and a > abs(b - c) and \
-          b < a + c and b > abs(a - c) and \
-          c < a + b and c > abs(a - b)
-      print('Triangle with sides %d, %d and %d is valid: %r' % (
-          a, b, c, valid_triangle
-      ))
+if __name__ == '__main__':
+  arguments = docopt(__doc__)
+  a, b, c = int(arguments['LENGTH']),
+            int(arguments['WIDTH']),
+            int(arguments['HEIGHT'])
+  valid_triangle = \
+      a < b + c and a > abs(b - c) and \
+      b < a + c and b > abs(a - c) and \
+      c < a + b and c > abs(a - b)
+  print('Triangle with sides %d, %d and %d is valid: %r' % (
+      a, b, c, valid_triangle
+  ))
 ```
       
 
-Assuming we save the program in a file called check_triangle.py, we can
+Assuming we save the program in a file called `check_triangle.py`, we can
 run it like so:
 
 ```bash
@@ -930,17 +931,41 @@ Let us break this down a bit.
     capabilities](https://docs.python.org/2/library/string.html#format-string-syntax)
     to insert values into the string we are displaying.
 
-Lambda Expressions
-------------------
+## Lambda Expressions
 
-:?:
+:o: Students can contribute this section
 
-Generators
-----------
+## Generators
 
-:?:
+:o: Students can contribute this section 
 
-Non Blocking Threads
---------------------
+## Non Blocking Threads
 
-:?:
+:o: Students can contribute this section
+
+## Subprocess
+
+:o: Students can contribute this section
+
+## Queue
+
+:o: Students can contribute this section
+
+see:
+* https://docs.python.org/3/library/queue.html
+
+## Scheduler
+
+:o: Students can contribute this section
+
+see:
+* https://docs.python.org/3/library/sched.html
+
+## Python SSL
+
+:o: Students can contribute this section
+
+see:
+* https://docs.python.org/3/library/ssl.html
+* also demonstrate how you could just use supprocess ... to contarst 
+

@@ -14,13 +14,13 @@ installed. However, we also recommend that for the class you use
 Python's virtualenv (see below) to isolate your development Python from
 the system installed Python.
 
-While in other classes yo may have been taught to use anaconda, this is not a tool that ought to be used in a cloud class. The reason for this is that it installs many packages that you are likely not to use. In fact installing anaconda on your VM will wast space and time and you shold look into other installs. 
+While in other classes yo may have been taught to use anaconda, this is not a tool that ought to be used in a cloud class. The reason for this is that it installs many packages that you are likely not to use. In fact installing anaconda on your VM will wast space and time and you should look into other installs. 
 
 If you know which version of python you need you can just use the version that comes either with your OS, and if that is outdated install a new version from python.or.
 
-However, "real" cloud engeneers with the most flexibility in python versions want to install python via pyenv.
+However, "real" cloud engineers with the most flexibility in python versions want to install python via pyenv.
 
-Note: Whnever possible please use for the newest version of Python 2
+Note: whenever possible please use for the newest version of Python 2
 or 3. In order not to effect your OS we will use pyenv.
 
 ### Managing custom Python installs
@@ -29,13 +29,13 @@ Often you have your own computer and you do not like to change its
 environment to keep it in pristine condition. Python comes with many
 libraries that could for example conflict with libraries that you have
 installed. To avoid this it is bets to work in an isolated python we can
-use tools such as virtualenv, pyenv or pyvenv for 3.7.0. Which you
+use tools such as virtualenv, pyenv or pyenv for 3.7.0. Which you
 use depends on you, but we highly recommend pyenv if you can.
 
 #### Managing Multiple Python Versions with Pyenv
 
 Python has several versions that are used by the community. This
-includes Python 2 and Python 3, but alls different management of the
+includes Python 2 and Python 3, but all different management of the
 python libraries. As each OS may have their own version of python
 installed. It is not recommended that you modify that version. Instead
 you may want to create a localized python installation that you as a
@@ -50,7 +50,7 @@ switch between multiple versions of Python
 -   to search installed commands across different python versions;
 -   integrate with tox (<https://tox.readthedocs.io/>).
 
-##### Instalation without pyenv
+##### Installation without pyenv
 
 If you need to have more than one python version installed and do not
 want or can use pyenv, we recommend you download and install python
@@ -245,7 +245,7 @@ You will see the updated list.
 
 ### Updating to a new version of Python with pyenv
 
-Naturally pyyhon itself evolves and new versions will become available
+Naturally python itself evolves and new versions will become available
 via pyenv. To facilitate such a new version you need to first install
 it. into pyenv. Let us assume you had an old version of python installed
 onto the ENV3 environment. Than you need to execute the following steps:
@@ -288,7 +288,7 @@ We do not recommend that you use anaconda or miniconda as it may
 
 :   interfere with your default python interpreters and setup.
 
-Please note that beginners to pyton should always use anaconda or
+Please note that beginners to python should always use anaconda or
 miniconda only after they have installed pyenv and use it. For this class
 neither anaconda nor miniconda is required. In fact we do not recommend
 it. We keep this section as we know that other classes at IU may use
@@ -344,7 +344,7 @@ command:
 
     $ ANA
 
-Terminology in annaconda could lead to confusion. Thus we like to point
+Terminology in anaconda could lead to confusion. Thus we like to point
 out that the version number of anaconda is unrelated to the python
 version. Furthermore, anaconda uses the term root not for the root user,
 but for the originating directory in which the anaconda program is

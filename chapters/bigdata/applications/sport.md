@@ -128,7 +128,7 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 ### Resources
 
 \TODO{These resources have not all been checked to see if they still
-  exist this is curretnly in progress}
+  exist this is currently in progress}
 -   <http://www.sloansportsconference.com/?page_id=481&sort_cate=Research%20Paper>
 -   <http://www.slideshare.net/Tricon_Infotech/big-data-for-big-sports>
 -   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling>

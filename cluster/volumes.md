@@ -1,11 +1,11 @@
 # Volumes
 
 > Note: In our previous effort Volumes were simply chapters in a big
-> handboog. Other than Vol. 6, which are at this time 3 separate volumes
+> handbook. Other than Vol. 6, which are at this time 3 separate volumes
 > of about 700 pages total.
 
 
-Cloud Computing and Big Data aere recent trends that require
+Cloud Computing and Big Data are recent trends that require
 comprehensive overview but also detailed knowledge about technologies
 and applications. Over the last two years we have collected material
 as part of our educational activities which go well above 2000 pages
@@ -57,7 +57,7 @@ classes and each student is required to contribute to this volume.
 Typically we ask that about 10 technologies will be added or
 improved per student. It may be a good idea for those with out a
 project to add 20-30 more technologies to not reduce the class grade
-by a quater grade. This would be equivalent to a project.
+by a quarter grade. This would be equivalent to a project.
 
 We have about 640 but we think that 350 need to be redone due to
 possible violation of quoting while just copying the text as it was
@@ -88,7 +88,7 @@ HPC. Chapters include
 
 The classical things with python programming examples. While the
 previous volume only talks about deployment, this volume talks about
-usage and programability. Naturally we could merge the volumes or
+usage and programmability. Naturally we could merge the volumes or
 split them up differently. As we manage the chapters in the same
 dir and mix and match is possible.
 

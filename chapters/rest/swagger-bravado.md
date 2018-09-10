@@ -25,7 +25,7 @@ After you have installed the bravado packages, here is a simple example for you 
 	pet = client.pet.getPetById(petId=42).result()
 
 This piece of code shows an example that how to setup a bravado client and test its property. If you were lucky, and pet Id with 42 was present, you will get back a result. It will be a dynamically created instance of bravado.model.Pet with attributes category, etc. You can even try pet.category.id or pet.tags[0].
-A sample respnse should be:
+A sample response should be:
 
 	Pet(category=Category(id=0L, name=u''), status=u'', name=u'', tags=[Tag(id=0L, name=u'')], photoUrls=[u''], id=2)
 
@@ -57,7 +57,7 @@ Here is example code on how to request authentication from client side:
 
 
 ### Asynchronous client
-Bravado also provides an out of the box asynchronous http client with an optional timeout parameter. Before you could utilize the function as an asynchronous http client, you need to install your libray as following command:
+Bravado also provides an out of the box asynchronous http client with an optional timeout parameter. Before you could utilize the function as an asynchronous http client, you need to install your library as following command:
 
 	$ pip install bravado[fido]
 
@@ -105,7 +105,7 @@ You can get the result as this:
 
 ## Configuration
 ### Configuration on Client Side
-You can configure certain behaviours when creating a SwaggerClient. Here is a sample skelecton code for configuration:
+You can configure certain behaviours when creating a SwaggerClient. Here is a sample skeleton code for configuration:
 
 	from bravado.client import SwaggerClient, SwaggerFormat
 

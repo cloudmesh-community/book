@@ -94,7 +94,7 @@ Table: Temperature comparison of fan impact
   ----- ------ ----- ----------- -------- ------- ----------- -------------
   1     no     no    -           -        41.0C   75.5C       OK (barely)
   2     yes    no    -           -        45.0C   82.5C       throttles
-  3     yes    5V    in          unkown   37.9C   74.5C       OK (barely)
+  3     yes    5V    in          unknown   37.9C   74.5C       OK (barely)
   4     yes    7V    in          800      35.6C   69.5C       OK
   5     yes    12V   in          1400     32.5C   61.1C       OK
   6     yes    7V    out         800      34.5C   66.4C       OK

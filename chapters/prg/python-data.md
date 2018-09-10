@@ -141,9 +141,10 @@ with open('strings.json') as f:
     content = json.load(f)
 ```
 
-#### XML
+#### XML :o:
 
-\TODO{Tutorial: Please contribute a XML python tutorial.}
+Please contribute a XML python section
+
 #### RDF
 
 To read RDF files you will need to install RDFlib with
@@ -273,7 +274,7 @@ methods `encrypt` and `decrypt`.
 
 ### Database Access
 
-:?: Students: define conventional database access tutorial
+:o: Students: define conventional database access tutorial
 see: <https://www.tutorialspoint.com/python/python_database_access.htm>
 
 ### SQLite

@@ -8,7 +8,7 @@ clusters and as part of the classes taught it IU.
 
 :cloud:
 
-> If you click on the :cloud: in a heading, you can go directly to the document in github that contains the next content. This is copnvenient to fix errors or make additions to the content.
+> If you click on the :cloud: in a heading, you can go directly to the document in github that contains the next content. This is convenient to fix errors or make additions to the content.
 
 $
 
@@ -38,7 +38,7 @@ $
 
 ---
 
-:bulb: *Notes are indicated with a bulb and are written in itallic and surounded by bars* 
+:bulb: *Notes are indicated with a bulb and are written in italic and surrounded by bars* 
 
 ---
 

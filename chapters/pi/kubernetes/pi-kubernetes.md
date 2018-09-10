@@ -10,7 +10,7 @@ worker nodes. Using less resources may make the system is not
 unnecessarily slow. In particular we have one dedicated master. We use
 three nodes to allow for testing the distribution of containers. (It
 may work with two, but we have not tested it). Please give us feedback
-on this and let us know hwat works for you. so we integrate your
+on this and let us know what works for you. so we integrate your
 feedback.
 
 ### Install Docker
@@ -20,7 +20,7 @@ feedback.
 ### Disable Swap Space
 
 
-Rasbian Jessie is using `systemd`. We need to try if we can disable
+Raspbian Jessie is using `systemd`. We need to try if we can disable
 swap with systemd:
 
     sudo systemctl disable dphys-swapfile
@@ -69,7 +69,7 @@ rebooted.
 
 ---
 
-:warning: **All of this will be done by the script, donot worry** (maybe worry)
+:warning: **All of this will be done by the script, do not worry** (maybe worry)
 
 ---
 
@@ -106,7 +106,7 @@ nodes.
 
 ## Final
 
-Install docker, switch of swapp, add it to the boot configuration.
+Install docker, switch of swap, add it to the boot configuration.
 
 * [docker_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/install_docker.sh)
 
@@ -123,7 +123,7 @@ Install docker, switch of swapp, add it to the boot configuration.
 * [opt_setup.sh](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/bin/opt_setup.sh)
 
 
-## Refernces
+## References
 
 * <https://gist.github.com/alexellis/fdbc90de7691a1b9edb545c17da2d975>
 * <https://cloud.google.com/solutions/real-time/kubernetes-redis-bigquery>

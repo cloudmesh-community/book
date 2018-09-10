@@ -63,6 +63,9 @@ DRAFT=\
   chapters/iaas/azure/azure.md\
   chapters/iaas/watson/signup.md\
   chapters/iaas/gcloud/gcloud.md\
+  chapters/msg/mqtt.md\
+  chapters/msg/mqtt1.md\
+  chapters/msg/mqtt2.md\
 
 
 CHAPTER_CLASS=\
@@ -84,6 +87,7 @@ all: prepare epub
 sectionindent:
 	../bin/authors.py > dest/chapters/authors.md
 	../bin/header.py dest/chapters/git/github.md 2
+	../bin/header.py dest/chapters/open.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
 	../bin/header.py dest/chapters/prg/python-install.md 1
 	../bin/header.py dest/chapters/prg/python.md 2
@@ -105,6 +109,13 @@ sectionindent:
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
+	../bin/header.py dest/chapters/MSG.md 2
+	../bin/header.py dest/chapters/prg/go-language.md 1
+	../bin/header.py dest/chapters/prg/julia-language.md 1
+	../bin/header.py dest/chapters/msg/mqtt.md 2
+	../bin/header.py dest/chapters/msg/graphql.md 2
+	../bin/header.py dest/chapters/faq.md 1
+	../bin/header.py dest/chapters/faq-516.md 2
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
@@ -121,10 +132,12 @@ sectionheaders:
 	../bin/section.py 1 "Yarn" > dest/chapters/SECTION-yarn.md  
 	../bin/section.py 1 "Spark" > dest/chapters/SECTION-spark.md        
 	../bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
-	../bin/section.py 1 "Scientifc Writing" > dest/chapters/doc/SECTION.md
+	../bin/section.py 1 "Scientific Writing" > dest/chapters/doc/SECTION.md
 	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
 	../bin/section.py 2 "Language" > dest/chapters/prg/SECTION-PYTHON-LANG.md
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
+	../bin/section.py 1 "Messaging" > dest/chapters/MSG.md
+	../bin/section.py 1 "FAQ" > dest/chapters/SECTION-FAQ.md
 
 ######################################################################
 # END BOOK CLASS
@@ -151,7 +164,7 @@ FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
-RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud"
+RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud:chapters/msg"
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
@@ -169,7 +182,7 @@ destination:
 	$(COPY) -r ../template/fonts dest
 	$(COPY) -r ../chapters dest	
 
-prepare: destination refernces todo
+prepare: destination references todo
 	$(MARKUPALL)
 	../bin/date.py > dest/chapters/version.md
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
@@ -197,7 +210,7 @@ endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
 
-refernces:
+references:
 	mkdir -p dest
 	cat ../bib/*.bib > dest/references.bib
 

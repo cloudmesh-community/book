@@ -20,7 +20,7 @@ We describe briefly some class policies.
 
 From time to time we get the question from a very small number of
 students why we are not using or uploading the assignment deadlines and
-the assignment descriptions to CANVAS. The reason for this is manyfold.
+the assignment descriptions to CANVAS. The reason for this is manifold.
 First, our class has different deadlines for different students within
 the same class. This is not supported by CANVAS and if we would use
 CANVAS leads to confusion and clearly shows the limitation of CANVAS.
@@ -157,14 +157,14 @@ The format of the notebook is very simple markdown format and must
 follow these rules:
 
 - use headings with the # character and have a space after the #
-  Use `# Week X: mm/dd/yyyy - mm/dd/yyyy` as sthe subject line for
+  Use `# Week X: mm/dd/yyyy - mm/dd/yyyy` as the subject line for
   each week
 
 - use bullets in each topic.
 
 - Do not refer to section numbers form the epub in your notebook
   as they can change. Instead use the section name or headline and
-  possibly a URL. When using URLS in md format they must be enclodesin
+  possibly a URL. When using URLS in md format they must be enclosed in
   `<>` or `[text](URL)`
 
 Please examine carefully the sample note book is available at:
@@ -347,7 +347,7 @@ class. Please note also that we could reject an assignment if it is
 identified to no longer reflect the state-of-the-art. All previously
 submitted assignments such as papers, tutorials and so on will be
 reviewed on this criterion. For example, let us assume you developed a
-tutorial on technology vist version x. Let us assume that since you
+tutorial on technology visit version x. Let us assume that since you
 completed this task a version x+1 comes out. It will be your
 obligation to update the deliverable. This is also true if the
 tutorial has been graded previously. The incomplete and the change of
@@ -355,7 +355,7 @@ the software have at this time negated the originally assigned grade.
 In most cases the changes may be small. In other cases the changes
 could be substantial. Hence avoid an incomplete.
 
-Here is the process for how to deal with incomplets at IU are
+Here is the process for how to deal with incompletes at IU are
 documented:
 
 * <http://registrar.indiana.edu/grades/grade-values/grade-of-incomplete.shtml>

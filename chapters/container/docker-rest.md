@@ -6,7 +6,7 @@ Python Flask.
 ## Prerequisites
 
 In order to follow our discussion you will need a system on which you
-can run docker. THis could either be OSX, LInux, or Windows.
+can run docker. THis could either be OSX, Linux, or Windows.
 
 Python 2.7.x can be used to do this tutorial
 
@@ -59,14 +59,14 @@ Now continue by installing a Virtualenv installation
 $ pip install virtualenv 
 ```
 
-Turn on Hyper-V (Windows Features Turn On and In the list selectHyber V)
+Turn on Hyper-V (Windows Features Turn On and In the list selectHyper V)
 
 Turn on Containers (Windows Features Turn On and In the list select
-Hyber V)
+Hyper V)
 
 Install emacs via chocolatey
 
-## Activate Virutal Environment
+## Activate Virtual Environment
 
 ### Ubuntu and OSX
 
@@ -125,7 +125,7 @@ that, or use pycharm. Do not use notepad++
 emacs requirements.txt
 ```
 
-Include the folllowing content in the requirements.txt file.
+Include the following content in the requirements.txt file.
 
     Flask==0.11.1
 
@@ -267,7 +267,7 @@ $ docker run -p 80:80 -t sample-flask-rest-app
 
 ### Windows
 
-In Windows powershell Run as adminstrator (use the previous powershell
+In Windows powershell Run as administrator (use the previous powershell
 window)
 
 ``` {.bash language="bash"}

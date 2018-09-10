@@ -4,7 +4,7 @@
 
 Amazon Web Services offers a large number of products that are
 centered around their cloud services. These services have grown
-considerably over the years from the core offering realted to virtual
+considerably over the years from the core offering related to virtual
 machine (EC2) and datastorage (S3). An overview of them is provided by
 Amazon in the following document:
 
@@ -105,7 +105,7 @@ You can find more information regarding the AWS CLI in the following
 documents.
 
 * AWS Command Line: <https://aws.amazon.com/cli/>
-* AWS Command Line referance: <https://docs.aws.amazon.com/cli/latest/reference/>
+* AWS Command Line reference: <https://docs.aws.amazon.com/cli/latest/reference/>
 
 * EC2: <https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html>
 * S3: <https://docs.aws.amazon.com/cli/latest/reference/s3/index.html>
@@ -116,8 +116,8 @@ documents.
 ### Boto
 
 Boto is a Python software development kit specifically targeting
-Amazon Web Services (AWS). It allows acces to services such as S3 and
-EC2. It is using object oriented programming paradigms ta acess the
+Amazon Web Services (AWS). It allows access to services such as S3 and
+EC2. It is using object oriented programming paradigms ta access the
 lower level services. The advantage is that it is written just for
 Amazon and thus we assume it will be developed with high quality due
 to its specialization. However this is also its limitation as in

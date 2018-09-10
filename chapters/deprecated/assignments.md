@@ -73,7 +73,7 @@ Implement a command using
 
 -   ECMD5.2 e-cmd5
 
-that is called "hello" that prints hello world. Use docopts to define
+that is called "hello" that prints hello world. Use docopt to define
 the command.
 
 Use cms sys generate command hello

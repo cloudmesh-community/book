@@ -128,7 +128,7 @@ static class WcMapper extends TableMapper<Text, LongWritable> {
 A Reducer collects the intermediate $<$key, value$>$ output from
 multiple map tasks and assembles a single result. Here, the reducer
 function will sum up the occurrence of each word to pairs as $<$word,
-occurrenc$e>$, then write it back to an HBase table with put operations
+occurrence$>$, then write it back to an HBase table with put operations
 which contain the key-value pair information of each word.
 
 *Pseudocode*
