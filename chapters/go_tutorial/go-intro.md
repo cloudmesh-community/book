@@ -24,6 +24,7 @@ Regarding the design philosophy behind the Go language, the following is [an exc
 > Another important principle is to keep the concepts orthogonal. Methods can be implemented for any type; structures represent data while interfaces represent abstraction; and so on. Orthogonality makes it easier to understand what happens when things combine.
 
 Go has lots of good features, the following are some examples.
+
 - compiling language
 - static typing
 - powerful but simplistic concurrency support
@@ -60,6 +61,8 @@ In order to conduct this lesson you need
 
 References
 ----------
+
+:o: please remove for pay resources, we should never need to pay for this
 
   * [golang.org](http://golang.org/doc/#learning)
   * [The Little Go Book](http://openmymind.net/The-Little-Go-Book/)
