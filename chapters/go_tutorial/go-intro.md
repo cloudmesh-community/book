@@ -2,12 +2,14 @@
 
 ![Go Logo](https://upload.wikimedia.org/wikipedia/commons/2/23/Go_Logo_Aqua.svg)
 
+:o: THERE IS LOTS OF ADVERTISEMENT IN THE STATEMENTS YOU COPIED.
+
 Portions of this lesson have been adapted from the [official Go 
 Documentation](https://golang.org/doc/).
 
-The Go programming language is an open source project to make programmers more productive.
+:o: THIS IS ADVERTISEMENT AND JUST A CLAIM: The Go programming language is an open source project to make programmers more productive.
 
-Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
+Go is expressive, concise, clean, and efficient. It's concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
 
 Here is a good blog article discussing [Why should you learn Go?](https://medium.com/exploring-code/why-should-you-learn-go-f607681fad65).
 
