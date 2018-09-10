@@ -211,11 +211,12 @@ different cloud providers. You can find the python script and the
 corresponding .yaml file in the cloudmesh-community github repository.
 
 Python Script - <https://github.com/cloudmesh-community/cm/blob/master/cm.py>
+
 Yaml File - <https://github.com/cloudmesh-community/cm/blob/master/cloudmesh.yaml>
 
 <b>When using the script and yaml file please keep in mind the following 
 steps to make sure you do not share your private keys and passwords on
-your publicly accessible Github account.<b>
+your publicly accessible Github account.</b>
 
 1. Create a folder in your computer that is not within a git clone that 
 you have made. For example maybe you can use a new directory on your
