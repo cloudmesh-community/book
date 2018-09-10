@@ -147,13 +147,13 @@ In this section we will look into how we can use the connection created
 as instructed above to perform various services such as creating nodes,
 listing nodes, starting nodes and stopping nodes.
 
+Appropriate authentication code as described in the previous section  is assumed. This will give us an variable named conn which we will use for invoking Services. It is in the next sections not explicitly listed.
+
 #### Creating Nodes
 
-```Python
-# Appropriate authentication code as described in the above section goes here
-# This will give us an variable named conn which we will use for invoking
-# Services
+:o: text missing
 
+```Python
 # retrieve available images and sizes
 images = conn.list_images()
 
@@ -165,22 +165,19 @@ node = conn.create_node(name='yourservername', image=images[0], size=sizes[0])
 
 #### Listing Nodes
 
-```Python
-# Appropriate authentication code as described in the above section goes here
-# This will give us an variable named conn which we will use for invoking
-# Services
+:o: text missing
 
+```Python
 nodes = conn.list_nodes()
 print nodes
 ```
 
 #### Starting Nodes
 
-```Python
-# Appropriate authentication code as described in the above section goes here
-# This will give us an variable named conn which we will use for invoking
-# Services
+:o: text missing
 
+
+```Python
 nodes = conn.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
 conn.ex_start(node=node)
@@ -188,11 +185,9 @@ conn.ex_start(node=node)
 
 #### Stoping Nodes
 
-```Python
-# Appropriate authentication code as described in the above section goes here
-# This will give us an variable named conn which we will use for invoking
-# Services
+:o: text missing
 
+```Python
 nodes = conn.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
 conn.ex_stop(node=node)
