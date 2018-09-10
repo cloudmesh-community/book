@@ -54,6 +54,14 @@ KUBERNETES=\
  chapters/container/kubernetes-intro.md\
  chapters/container/qemu.md\
 
+GO=\
+  chapters/prg/go/go-intro.md\
+  chapters/prg/go/go-install.md\
+  chapters/prg/go/go-editor.md\
+  chapters/prg/go/go-language.md\
+  chapters/prg/go/go-libraries.md\
+  chapters/prg/go/go-cmd.md
+
 
 DRAFT=\
   $(KUBERNETES)\
@@ -66,6 +74,7 @@ DRAFT=\
   chapters/msg/mqtt.md\
   chapters/msg/mqtt1.md\
   chapters/msg/mqtt2.md\
+  $(GO)
 
 
 CHAPTER_CLASS=\
@@ -110,8 +119,8 @@ sectionindent:
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
 	../bin/header.py dest/chapters/MSG.md 2
-	../bin/header.py dest/chapters/prg/go-language.md 1
-	../bin/header.py dest/chapters/prg/julia-language.md 1
+	../bin/header.py dest/chapters/prg/go/go-language.md 1
+	../bin/header.py dest/chapters/prg/julia/julia-language.md 1
 	../bin/header.py dest/chapters/msg/mqtt.md 2
 	../bin/header.py dest/chapters/msg/graphql.md 2
 	../bin/header.py dest/chapters/faq.md 1
