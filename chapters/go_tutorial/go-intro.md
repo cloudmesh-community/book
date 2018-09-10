@@ -60,7 +60,6 @@ References
 ----------
 
   * [golang.org](http://golang.org/doc/#learning)
-
   * [The Little Go Book](http://openmymind.net/The-Little-Go-Book/)
   * [Exercism.io - Go](http://exercism.io/languages/go) - Online code exercises for Go for practice and mentorship.
   * [Learn Go in an Hour - Video](https://www.youtube.com/watch?v=CF9S4QZuV30) _2015-02-15_
@@ -93,12 +92,14 @@ References
 [wbday3]: http://web.archive.org/web/20160305075151/http://go.googlecode.com/hg-history/release-branch.r60/doc/GoCourseDay3.pdf
 
 Learning resources for specific topics:
-  * [LearnConcurrency](LearnConcurrency) outlines a course of study of Go's concurrency model and patterns.
-  * [LearnErrorHandling](LearnErrorHandling) links to resources about error handling in Go.
-  * [LearnTesting](LearnTesting) links to resources about testing in Go.
-  * [LearnServerProgramming](LearnServerProgramming) links to resources about server programming in Go.
-  * [Hackr.io Golang Tutorials](https://hackr.io/tutorials/learn-golang) - Best Golang tutorials recommended by the programming community.
+
+* [LearnConcurrency](LearnConcurrency) outlines a course of study of Go's concurrency model and patterns.
+* [LearnErrorHandling](LearnErrorHandling) links to resources about error handling in Go.
+* [LearnTesting](LearnTesting) links to resources about testing in Go.
+* [LearnServerProgramming](LearnServerProgramming) links to resources about server programming in Go.
+* [Hackr.io Golang Tutorials](https://hackr.io/tutorials/learn-golang) - Best Golang tutorials recommended by the programming community.
 
 Further reading:
-  * [Newspaper](http://www.newspaper.io) is a topic based newsfeed for slack. Built on Go
+
+* [Newspaper](http://www.newspaper.io) is a topic based newsfeed for slack. Built on Go
 
