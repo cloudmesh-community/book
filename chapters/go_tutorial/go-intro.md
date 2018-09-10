@@ -64,6 +64,14 @@ References
 
 :o: please remove for pay resources, we should never need to pay for this
 
+Gregor recommends Go refernce card:
+
+* <https://github.com/a8m/go-lang-cheat-sheet/blob/master/golang_refcard.pdf>
+* <https://devhints.io/go>
+*  <https://learnxinyminutes.com/docs/go/>
+
+Language Online resources
+
   * [golang.org](http://golang.org/doc/#learning)
   * [The Little Go Book](http://openmymind.net/The-Little-Go-Book/)
   * [Exercism.io - Go](http://exercism.io/languages/go) - Online code exercises for Go for practice and mentorship.
