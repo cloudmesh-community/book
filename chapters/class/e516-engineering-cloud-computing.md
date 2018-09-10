@@ -93,7 +93,7 @@ The course has the following objectives:
 
 
 
-<div class="smalltable">
+.<div class="smalltable">
 
 | Dates          | Unit    | Title             | Description
 |:------ |:--- |:------- |:---------------------
@@ -103,14 +103,14 @@ The course has the following objectives:
 | :white_check_mark: 08/31    |         |                   | Tools and Services: [Virtualbox](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualbox.md), [Vagrant](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/vagrant.md), [Github](https://github.com/cloudmesh-community/book/blob/master/chapters/git/github.md), [Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
 | :white_check_mark: 08/31   |         |                   | Python: [Introduction](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-intro.md), [Installation](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-install.md), [Interactive Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-interactive.md), [Editors](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-editor.md), [Basic Language Features](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python.md), [Libraries](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-libraries.md), [Data Management](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-data.md), [Matplotlib](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md), [Cloudmesh Commandshell CMD5](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python-matplotlib.md)
 | :white_check_mark: 09/03 |         |                   | [Data Center](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/datacenter.md)
-| :o: 09/10 |         |                   | NIST Big Data Reference Architecture
-| :o: 09/11 | 2       | Infrastructure    | Infrastructure as a Service
+| :white_check_mark: 09/10 |         |                   | [NIST Big Data Reference Architecture](#nist-big-data -reference-architecture)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/nist/bdra.md)
+| :o: 09/15 | 2       | Infrastructure    | Infrastructure as a Service
 | :o: 09/17 |         |                   | OpenStack, Azure, AWS
 | :o: 09/24 | 3       | Virtualization    | Qemu, KVM, Virtual machines
 | :o: 10/01 |         |                   | Containers, Docker, Kubernetes
 | :o: 10/08 | 3       | Programming       | Python for Cloud Computing, LibCloud
 | :o: 10/08 |         |                   | Github as a Cloud Service
-| :o: 10/15 |         |                   | REST Services, Eve, OpenAPI
+| :white_check_mark: 09/11 |         |                   | [REST Services](#rest)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/rest/rest.md), [Rest Services with OPenAPI](#rest-services-with-openapi)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger.md), [OpenAPI Spec](#openapi-spec)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-spec.md), [OpenAPI Codegen](#openapi-codegen)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-codegen.md)
 | :o: 10/22 |         |                   | Map/Reduce, Hadoop, Spark
 | :white_check_mark: 10/29 |         |                   | [MQTT](#mqtt)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md) 
 | :o: 11/05 |         |                   | [Graphql](https://github.com/cloudmesh-community/book/blob/master/chapters/msg/graphql.md) 

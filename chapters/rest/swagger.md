@@ -1,5 +1,4 @@
-Rest Services with Swagger
-==========================
+# Rest Services with OpenAPI
 
 Swagger <https://swagger.io/> is a tool for developing API
 specifications based on the OpenAPI Specification (OAS). It allows not
@@ -9,8 +8,7 @@ specification in a variety of languages.
 Swagger itself has a number of tools which together build a framework
 for developing REST services for a variety of languages.
 
-Swagger Tools
-=============
+## Swagger Tools
 
 The major Swagger tools of interest are:
 
@@ -41,14 +39,12 @@ convenient online editor is available which also can be installed
 locally on a variety of operating systems including OSX, Linux, and
 Windows.
 
-Swagger Community Tools
-=======================
+## Swagger Community Tools
 
 notify us about other tools that you find and would like us to mention
 here.
 
-Swagger Toolbox
----------------
+### Swagger Toolbox
 
 Swagger toolbox is a utility that can convert json to swagger compatible
 yaml models. It is hosted online at
