@@ -5,9 +5,9 @@
 **:mortar_board: Learning Objectives**
 
 * Obtain an overview of the topics we explore.
-* Odentify topics that you are especially interested in.
+* Identify topics that you are especially interested in.
 * The main deliverable of this class is a project. 
-* You **must** dedicate sufficent time on continious basis for this class.
+* You **must** dedicate sufficient time on continuous basis for this class.
 
 ---
 
@@ -38,14 +38,14 @@ to enabling services that are just hosted on the cloud or in some
 cases could be hosted on a cloud but may actually use local clusters
 or even your Laptop.
 
-Topics of interrest include:
+Topics of interest include:
 
 * Cloud Computing 
 * Cloud Computing Architectures
 
   * NIST Big Data Architecture
   * Federated Cloud Computing
-  * Mulit Cloud and Hybrid Cloud Architectures
+  * Multi Cloud and Hybrid Cloud Architectures
   * HPC in the Cloud
   
 * Cloud and Edge Computing
@@ -159,7 +159,7 @@ for more details.
     * Docker
 
       * Introduction to Docker
-      * Dokerfiles
+      * Dockerfiles
       * Dockerhub
       * Create your own docker images
 
@@ -171,7 +171,7 @@ for more details.
 
   * Python for Cloud Computing
 
-    * Python 2 and Pyton 3
+    * Python 2 and Python 3
     * Introduction to Python
     * Classes
     * DocOpts
@@ -197,7 +197,7 @@ for more details.
 
     * Eve
 
-      * Using Eve to develop REST serices
+      * Using Eve to develop REST services
       * Integrating swagger docs into Eve
 
   * OpenAPI
@@ -330,7 +330,7 @@ Projects
     OpenAPI REST service.
 
 
-:warning: Tutorials, chapters, and especially Projects are multiweek
+:warning: Tutorials, chapters, and especially Projects are multi-week
 projects. Do not be tempted to think that other classes are more
 important and start with your assignments the week before the
 deadline. 

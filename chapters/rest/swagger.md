@@ -44,7 +44,7 @@ Windows.
 Swagger Community Tools
 =======================
 
-notify us about other tools that you find and woul like us to mention
+notify us about other tools that you find and would like us to mention
 here.
 
 Swagger Toolbox
@@ -60,7 +60,7 @@ The source code to this tool is available on github at
 .
 
 It is important to make sure that the json model is properly configured.
-As such each datatype must be wrapped in "quotes" andthe last element
+As such each datatype must be wrapped in "quotes" and the last element
 must not have a `,` behind it.
 
 In case you have large models, we recommend that you gradually add more
@@ -70,7 +70,7 @@ help you getting started deriving one.
 
 Let us look at a small example. Let us assume we want to create a REST
 service to execute a command on the remote service. We know this may not
-be a good idea if it is not properly secured, so be extra carful. A good
+be a good idea if it is not properly secured, so be extra careful. A good
 way to simulate this is to just use a return string instead of executing
 the command.
 

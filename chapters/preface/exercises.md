@@ -28,7 +28,7 @@ Preface.4:
         echo "CLONE"
         time git clone https://github.com/cloudmesh-community/book.git
 
-    Next change in to the directory that containes the make file for
+    Next change in to the directory that contains the make file for
     your volume you like to compile. Let us assume you like to compile
     the volume pi. Than do the following
     

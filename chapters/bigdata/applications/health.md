@@ -55,7 +55,7 @@ An impressive exemplar Cloud-based medicine system from Potsdam.
 
 ### Medical image Big Data
 
-[:clapper: Midical Image Big Data
+[:clapper: Medical Image Big Data
 (6:33)](https://www.youtube.com/watch?v=GOcVtwx2R2k)
 
 ### Clouds and Health

@@ -81,10 +81,10 @@ file a github issue with the title
 You assign it to all team members in your project. An abstract is
 submitted in that issue that describes what you do in your
 project. THe course number is the number of your course. We will be
-commenting on your project idea. It is yoru responsibility to see if
+commenting on your project idea. It is your responsibility to see if
 this project has already been done. Please do not jut go ahead an copy
-someone leses code, try to do something that you do. However you can
-levergage toolkits such as scikit learn, tensorfolw, and others.
+someone else's code, try to do something that you do. However you can
+leverage toolkits such as scikit learn, tensorflow, and others.
 
 ### Example Ideas
 
@@ -145,7 +145,7 @@ would be a scalability test.
 
 The raspberry PI projects are divided topically by class. 
 In this project you will be developing or leveraging form an existing
-tutorial developed as part of the class. You will be focussing on how to
+tutorial developed as part of the class. You will be focusing on how to
 create for each tem member on one of the following technologies
 
 1. Slurm/mpi 
@@ -160,9 +160,9 @@ create for each tem member on one of the following technologies
 
 You will create a reproducible deployment and work towards the
 implementation of a deployment.  In previous tutorials for the class
-students focussed on setting this up for a small number of nodes. What
+students focused on setting this up for a small number of nodes. What
 we need to do now is to expand this to a scalable solution with many
-hundrets of Pi's in the cluster. Naturally login in by hand on these
+hundreds of Pi's in the cluster. Naturally login in by hand on these
 machines is not suitable, but you need to automatize this process as
 much as possible. Your ideas on how to do this are most welcome. There
 are different strategies, such as burning all SD cards with a program
@@ -196,7 +196,7 @@ the set up procedure is excellent, and includes automated deployment
 scripts with minimal input by hand (this requires programming).
 
 
-#### Project Type C: Reproducable Data Analysis 
+#### Project Type C: Reproducible Data Analysis 
 
 This project requires you to use one cloud IaaS resource such as
 chameleon, Futuresystems Echo, AWS, or Azure. You will be deploying on
@@ -209,7 +209,7 @@ is.
 #### Project Type D: Define Your Own
 
 Define your own project and discuss with us in the Monday meeting with
-Gregor. A good example is a student that has chosen grapQL as the major
+Gregor. A good example is a student that has chosen graphQL as the major
 infrastructure component. He is developing a contributed chapter for the
 handbook, a tutorial, and a deployment and benchmark of data of his
 choice.

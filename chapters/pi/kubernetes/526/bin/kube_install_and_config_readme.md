@@ -26,7 +26,7 @@ orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=memory"
 Finally, to configure kubernetes you'll need kubeadm. Now the Pi needs to be 
 rebooted.
 
-### *All of this will be done by the script, donot worry* (maybe worry)
+### *All of this will be done by the script, do not worry* (maybe worry)
 
 ## For the nodes
 

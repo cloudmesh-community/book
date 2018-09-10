@@ -13,7 +13,7 @@ organize lectures and post lectures online of the once we have
 create mp4 from ppt, work with gregor and geoffrey to post mp4s to youtube
 
 
-* infarstaructur: bo pulashti, grading 516 technology
+* infrastructure: bo pulashti, grading 516 technology
 * lectures, grading: quianquian, lijiang (534)
 
 # immediate tasks
@@ -41,10 +41,10 @@ integrate intr task
 
 * papers submitted as pdf to canvas
 
-* revie intro - gregor
+* review intro - gregor
 * kubernetes futersystems fugang
 
 Review
 
-QianQian see if lectures are comming up, but bbe careful we make some significant mods in 523 intro
+QianQian see if lectures are coming up, but bbe careful we make some significant mods in 523 intro
 

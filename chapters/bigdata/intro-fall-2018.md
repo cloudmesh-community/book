@@ -66,7 +66,7 @@ This is Part 4 of the introduction.
 [:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=18AzztLK0OEgej1g9Gv0jMvMkHIj4REnM)
 
 
-An older set of trend slides is availabe from:
+An older set of trend slides is available from:
 
 [:pencil: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=144EUUWDjB7KSf2F-lGx83DOxx45eZiVm)
 
@@ -83,7 +83,7 @@ A current set is available at:
 - Many technology trends through end of 2014 and 2015 onwards, examples in different fields
 - Voice and HCI, Cars Evolving and Deep learning 
 
-## Digital Disruption and Transfromation
+## Digital Disruption and Transformation
 
 This is Part 5 of the introduction.
 
@@ -106,16 +106,16 @@ This is Part 6 of the introduction.
 
 [:pencil: 6a.  Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=11FDYMV_ySAHQEY5YFlVrFzCoEUbnpWNr)
 
-[:clapper: 6b.  Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=1M8wrsLawFnbyBhAAgWS_fulgzMSIAz3P)
+[:clapper: 6b.  Computing Model: developments after 2014 including Blockchain](https://drive.google.com/open?id=1M8wrsLawFnbyBhAAgWS_fulgzMSIAz3P)
 
-[:scroll: 6b. Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=1SZ1a0ffVWaOmIF5YvXCARjJ-x4SX4JNb)
+[:scroll: 6b. Computing Model: developments after 2014 including Blockchain](https://drive.google.com/open?id=1SZ1a0ffVWaOmIF5YvXCARjJ-x4SX4JNb)
 
-[:pencil: 6b. Computing Model: developments after 2014 including Blockchains](https://drive.google.com/open?id=1QRqdzfYmoPT6qkJYMe_zSlx_tKkpAF9G)
+[:pencil: 6b. Computing Model: developments after 2014 including Blockchain](https://drive.google.com/open?id=1QRqdzfYmoPT6qkJYMe_zSlx_tKkpAF9G)
 
 
 - Industry adopted clouds which are attractive for data analytics, including big companies, examples are Google, Amazon, Microsoft and so on.
 - Some examples of development: AWS quarterly revenue, critical capabilities public cloud infrastructure as a service.
-- Blockchain: ledgers redone, blockchain constortia.
+- Blockchain: ledgers redone, blockchain consortia.
 
 ## Research Model 
 
@@ -161,7 +161,7 @@ This is Part 10 of the introduction.
 
 
 - Overview of many informatics areas, recommender systems in detail.
-- NETFLIX on personlization, recommendation, datascience.
+- NETFLIX on personalization, recommendation, datascience.
 
 ## Exploring Data Bags and Spaces 
 
@@ -172,7 +172,7 @@ This is Part 11 of the introduction.
 [:scroll: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=1keYELndfvM0r4DeedVLPjMY-AAvBHdns)
 
 
-- Distances in funny spaces, about "real" spaces and how to use diatances.
+- Distances in funny spaces, about "real" spaces and how to use distances.
 
 ## Another Example: Web Search Information Retrieval 
 
@@ -185,14 +185,14 @@ This is Part 12 of the introduction.
 
 ## Cloud Application in Research 
 
-This is Part 13 of the introduction discusssing clcloud applications in research.
+This is Part 13 of the introduction discussing cloud applications in research.
 
 [:scroll: 13. Cloud Applications in Research: Science Clouds and Internet of Things](https://drive.google.com/open?id=16zqsRbdmptrB14IR2iJbOLQUuQzFcm7i)
 
 
 ## Software Ecosystems: Parallel Computing and MapReduce 
 
-This is Part 14 of the introduction discussing the software ecosysstem
+This is Part 14 of the introduction discussing the software ecosystem
 
 [:scroll: 14. Software Ecosystems: Parallel Computing and MapReduce](https://drive.google.com/open?id=1Hn6ReTxBpowvr0UihdChXZZy0Q_lnBRx)
 
@@ -211,7 +211,7 @@ This is Part 15 of the introduction.
  
 ## Conclusions
 
-This is Part 15 of the introduction with some conluding remarks.
+This is Part 15 of the introduction with some concluding remarks.
 
 [:clapper: 15. Conclusions](https://drive.google.com/open?id=1r8n-KVp2gnaamjSSsIiK5DLYi5hbAMK-)
 

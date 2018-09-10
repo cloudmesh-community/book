@@ -146,9 +146,9 @@ Table: Plagiarism [@www-plagiarism-pattern]
   
   Name Type Description
   ------------------------------------------------------- ---------------- -------------------------------------------------------------------------------------------------------------------------
-  [Correct Quote](patternCorrectQuote.html)               non-plagiarizm   takes another's words verbatim and acknowledges with quotation marks, full in-text citation with locator, and reference
-  [Proper Paraphrase](patternProperParaphrase.html)       non-plagiarizm   summarizes another's words and acknowledges with in-text citation and reference
-  [Parroted Paraphrase](patternMindlessParaphrase.html)   non-plagiarizm   appears to be paraphrasing, and technically may not be plagiarism ...
+  [Correct Quote](patternCorrectQuote.html)               non-plagiarism   takes another's words verbatim and acknowledges with quotation marks, full in-text citation with locator, and reference
+  [Proper Paraphrase](patternProperParaphrase.html)       non-plagiarism   summarizes another's words and acknowledges with in-text citation and reference
+  [Parroted Paraphrase](patternMindlessParaphrase.html)   non-plagiarism   appears to be paraphrasing, and technically may not be plagiarism ...
 
 
 ### Citation Styles
@@ -159,11 +159,11 @@ styles are often not use in scientific writing and tutorials that use
 them may provide you with information that is not applicable to other
 publications. Hence you need to review the rules for your specific
 publication venue carefully. In some cases this will lead to a
-significant improvement in readbility as well as reduction in space.
+significant improvement in readability as well as reduction in space.
 
 While in APA style you may mention
 
-> "John von Neuman (John von Neuman; 1927) describes a turing machine in his
+> "John von Neumann (John von Neumann; 1927) describes a turing machine in his
 > ground braking paper ... that can do this and that and more.".
 
 However in our community we often focus more on the technology than on

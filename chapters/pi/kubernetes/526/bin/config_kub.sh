@@ -7,4 +7,4 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 echo "configuration should be working. testing by getting nodes"
 kubectl get nodes#i'm not sure if this will work
-echo "donot worry if it says NotReady"
+echo "do not worry if it says NotReady"

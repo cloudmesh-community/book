@@ -25,7 +25,7 @@ to your credit/debit card unless you use the AWS services and exceed the free ti
 ![](images/creditcard_details.png)
 
 After the credit/debit card has been verified AWS will use your phone number to verify your identity. Once you are logged into your account you will be able to sign into the console, from the link on the top
-right corner in your account. Once you are in the AWS console the services tab in the left top corner will allow you to access all the services that are avilable to you through AWS as shown in the image below.
+right corner in your account. Once you are in the AWS console the services tab in the left top corner will allow you to access all the services that are available to you through AWS as shown in the image below.
 
 ![](images/aws_console.png)
 
@@ -34,7 +34,7 @@ right corner in your account. Once you are in the AWS console the services tab i
 AWS provides a set of services free of charge. These free services are to allow new users test and experiment with various AWS services without worrying about any cost. 
 Free services are provided as a product that is free until a certain amount of usage, that is if you exceed those limits you will be charged for the additional usage. However the
 free quotas are typically more than sufficient for testing and learning purposes. For example under the free tier you are able to use 750 hours of EC2 resources per month for the first 12 months
-after account creation. However it is important to make note of important details that are inculded in the limits. For example for the 750 hours of free EC2 usage, you can only use "EC2 Micro" instances, 
+after account creation. However it is important to make note of important details that are included in the limits. For example for the 750 hours of free EC2 usage, you can only use "EC2 Micro" instances, 
 using any other instance type for your EC2 machine will not fall under the free tier agreement and you will be charged for them. To view all the AWS free tier details visit [AWS Free Tier](https://aws.amazon.com/free/)
 
 ![](images/freetier.png)
@@ -44,7 +44,7 @@ Basically there are two categories in the free tier,
 * 12 months free
 * Always free
 
-12 months free offer are only good for the first 12 months after you create your AWS account. The always free offer are vaild even after the first 12 months.
+12 months free offer are only good for the first 12 months after you create your AWS account. The always free offer are valid even after the first 12 months.
 
 ### Important Notes
 
@@ -63,7 +63,7 @@ make sure to terminate them after you are done.
 ### Starting a VM
 
 To go to the EC2 services you can click on the services link on the top left corner in the console and then click on EC2 which is listed under "Compute". Then you will see a blue button labeled "Launch instance".
-Click on the button and the cosole will take you to the page shown below. Notice that the check box for "Free tier only" is clicked to make sure the instance type we choose is eligible for the free tier hours.
+Click on the button and the console will take you to the page shown below. Notice that the check box for "Free tier only" is clicked to make sure the instance type we choose is eligible for the free tier hours.
 The instance type you select defines the properties of the virtual machine you are staring such as RAM, Storage, processing power. However since we are using instance that are free tier eligible
 we will only be able to use "EC2 Micro instances". You can also select a OS that you want to be started as the virtual machine. We will select "Ubuntu Server 16.04 LTS" as our Operating system. press the blue select
 button to do so.
@@ -71,7 +71,7 @@ button to do so.
 ![](images/launch_instance.png)
 
 Once you select the OS type you will be asked to select the instance type. You can notice that only the "t2.micro" is marked as free tier eligible as shown in the image below. Now that you have selected
-all the basic details press the "Review and Launch" button located in the botton right corner. This will give you a summary of your current selections.
+all the basic details press the "Review and Launch" button located in the button right corner. This will give you a summary of your current selections.
 
 ![](images/instance_type.png)
 
@@ -86,7 +86,7 @@ Press this button to start the VM.
 ![](images/keypair.png)
 
 After starting the instance go back to the EC2 dashboard ( Services -> EC2). Now the dashboard will show the number of running instance as shown in the image below. If you do not see is initially, refresh the page after
-a little while, starting the VM may take a little time so the dashboard will not be updated untill the VM starts.
+a little while, starting the VM may take a little time so the dashboard will not be updated until the VM starts.
 
 ![](images/running_instance.png)
 
@@ -96,7 +96,7 @@ Now to get a more detailed view click on the "Running Instances" link. This will
 
 ### Stopping a VM
 
-In AWS EC2 you can either stop a VM or ternimate it. If you terminate it you will loose all the data that was stored in the VM as well, simply stopping will save the data for future use if you restart the instance again.
+In AWS EC2 you can either stop a VM or terminate it. If you terminate it you will loose all the data that was stored in the VM as well, simply stopping will save the data for future use if you restart the instance again.
 In order to stop the VM you can select the VM machines you want to stop from the GUI and go to "Actions -> Instance status" and click on stop. This will stop your VM machine.
 
 ![](images/instance_stop.png)

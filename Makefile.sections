@@ -20,17 +20,17 @@ DEVTOOLS=\
 
 PYTHON=\
 	chapters/prg/SECTION-PYTHON.md\
-  chapters/prg/python-intro.md\
-  chapters/prg/python-install.md\
-  chapters/prg/python-interactive.md\
-  chapters/prg/python-editor.md\
+  chapters/prg/python/python-intro.md\
+  chapters/prg/python/python-install.md\
+  chapters/prg/python/python-interactive.md\
+  chapters/prg/python/python-editor.md\
   chapters/prg/SECTION-PYTHON-LANG.md\
-  chapters/prg/python.md\
-  chapters/prg/python-libraries.md\
-  chapters/prg/python-data.md\
-  chapters/prg/python-matplotlib.md\
-  chapters/prg/python-cmd5.md\
-  chapters/prg/python-cmd.md
+  chapters/prg/python/python.md\
+  chapters/prg/python/python-libraries.md\
+  chapters/prg/python/python-data.md\
+  chapters/prg/python/python-matplotlib.md\
+  chapters/prg/python/python-cmd5.md\
+  chapters/prg/python/python-cmd.md
 
 CHAPTER_516=\
   chapters/assignment.md\
