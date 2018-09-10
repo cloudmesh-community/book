@@ -44,6 +44,7 @@ CHAPTER_516=\
   chapters/class/volumes.md\
   chapters/class/e516-definition.md\
   chapters/cloud/datacenter.md\
+  chapters/nist/bdra.md\
   $(DEVTOOLS)\
   $(PYTHON)\
   chapters/prg/go-language.md\

@@ -118,13 +118,14 @@ sectionindent:
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
-	../bin/header.py dest/chapters/MSG.md 2
+	../bin/header.py dest/chapters/MSG.md 1
 	../bin/header.py dest/chapters/prg/go/go-language.md 1
 	../bin/header.py dest/chapters/prg/julia/julia-language.md 1
 	../bin/header.py dest/chapters/msg/mqtt.md 2
 	../bin/header.py dest/chapters/msg/graphql.md 2
 	../bin/header.py dest/chapters/faq.md 1
 	../bin/header.py dest/chapters/faq-516.md 2
+	../bin/header.py dest/chapters/SECTION-DEVTOOLS.md 1
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
@@ -173,7 +174,7 @@ FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
-RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud:chapters/msg"
+RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud:chapters/msg:chapters/nist"
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
@@ -196,8 +197,9 @@ prepare: destination references todo
 	../bin/date.py > dest/chapters/version.md
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
 	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
-	make -f Makefile sectionindent
 	make -f Makefile sectionheaders
+	make -f Makefile sectionindent
+
 
 
 epub: prepare
