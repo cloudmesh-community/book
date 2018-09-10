@@ -1,9 +1,7 @@
-REST
-====
+# REST
 
 
-Overview of REST
-----------------
+## Overview of REST
 
 This section is accompanied by a video about REST.
 
@@ -123,8 +121,7 @@ REST design support tools:
     generate code from swagger specifications, which we will explore in
     more detail.
 
-Flask RESTful Services
-----------------------
+## Flask RESTful Services
 
 Flask is a micro services framework allowing to write web services in
 python quickly. One of its extensions is Flask-RESTful. It adds for
@@ -215,8 +212,7 @@ happens in this example.
     if __name__ == '__main__':
         app.run(debug=True)
 
-Rest Services with Eve
-----------------------
+## Rest Services with Eve
 
 Next, we will focus on how to make a RESTful web service with Python
 Eve. Eve makes the creation of a REST implementation in python easy.
@@ -798,8 +794,7 @@ information when resources are created as showcased ot
 
 * <http://python-eve.org/features.html>
 
-  Field        Description
-  ------------ ----------------------------------------------------------------------
+##   Field        Description
   `_created`   item creation date.
   `_updated`   item last updated on.
   `_etag`      ETag, to be used for concurrency control and conditional requests.
@@ -858,8 +853,7 @@ provide a section for the handbook.
 Pick one of the extension, research it and provide a small section for
 the handbook so we add it.
 
-Object Management with Eve and Evegenie
----------------------------------------
+## Object Management with Eve and Evegenie
 
 <http://python-eve.org/>
 
@@ -988,8 +982,7 @@ you rerun evegenie, kill all previous windows in which you run eve and
 mongo and restart. In case of changes to objects that you have designed
 and run previously, you need to also delete the mongod database.
 
-Towards cmd5 extensions to manage eve and mongo
------------------------------------------------
+## Towards cmd5 extensions to manage eve and mongo
 
 Naturally it is of advantage to have in cms administration commands to
 manage mongo and eve from cmd instead of targets in the Makefile. Hence,
@@ -1017,11 +1010,9 @@ the location of this file is used when the Service class is initialized
 with None. Prior to starting the service the file needs to be copied
 there. This could be achieved with a set command.
 
-Responses
----------
+## Responses
 
-Django REST Framework
----------------------
+## Django REST Framework
 
 Django REST framework is a large toolkit to develop Web APIs. The
 developers of the framework provide the following reasons for using it:

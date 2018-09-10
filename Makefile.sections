@@ -32,6 +32,9 @@ PYTHON=\
   chapters/prg/python/python-cmd5.md\
   chapters/prg/python/python-cmd.md
 
+
+#   chapters/rest/swagger-bravado.md
+
 CHAPTER_516=\
   chapters/assignment.md\
   $(PREFACE)\
@@ -45,10 +48,14 @@ CHAPTER_516=\
   chapters/class/e516-definition.md\
   chapters/cloud/datacenter.md\
   chapters/nist/bdra.md\
+  chapters/rest/rest.md\
+  chapters/rest/swagger-codegen.md\
+  chapters/rest/swagger-spec.md\
+  chapters/rest/swagger.md\
   $(DEVTOOLS)\
   $(PYTHON)\
-  chapters/prg/go-language.md\
-  chapters/prg/julia-language.md\
+  chapters/prg/go/go-language.md\
+  chapters/prg/julia/julia-language.md\
   chapters/MSG.md\
   chapters/msg/mqtt.md\
   chapters/msg/graphql.md\
