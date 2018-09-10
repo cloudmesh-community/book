@@ -147,13 +147,14 @@ In this section we will look into how we can use the connection created
 as instructed above to perform various services such as creating nodes,
 listing nodes, starting nodes and stopping nodes.
 
-Appropriate authentication code as described in the previous section  is assumed. This will give us an variable named conn which we will use for invoking Services. It is in the next sections not explicitly listed.
+Appropriate authentication code as described in the previous section  is assumed. This will give us an variable named conn which we will use for invoking Services. It is in the next sections not explicitly listed. It is indicated by our ... at the beginning 
 
 #### Creating Nodes
 
 :o: text missing
 
 ```Python
+...
 # retrieve available images and sizes
 images = conn.list_images()
 
@@ -168,6 +169,7 @@ node = conn.create_node(name='yourservername', image=images[0], size=sizes[0])
 :o: text missing
 
 ```Python
+...
 nodes = conn.list_nodes()
 print nodes
 ```
@@ -178,6 +180,7 @@ print nodes
 
 
 ```Python
+...
 nodes = conn.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
 conn.ex_start(node=node)
@@ -188,6 +191,7 @@ conn.ex_start(node=node)
 :o: text missing
 
 ```Python
+...
 nodes = conn.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
 conn.ex_stop(node=node)
