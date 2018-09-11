@@ -9,8 +9,6 @@ service (IaaS) and supports many different programming languages,
 tools and frameworks, including both Microsoft-specific and
 third-party software and systems.
 
-![](images/reg.png)
-
 
 ## Registration
 
