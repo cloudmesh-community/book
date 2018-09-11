@@ -46,10 +46,12 @@ section while curating the service descriotions.
 
 ### AI + Machine Learning
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
 [AI + Machine
 Learning](https://azure.microsoft.com/en-us/overview/ai-platform/ "AI + Machine Learning")
- - Create the next generation of applications using artificial
-   intelligence capabilities for any developer and any scenario
+ - Create applications using artificial
+   intelligence capabilities
 
 -
     [Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/ "Cognitive Services") - Add smart API capabilities
@@ -105,8 +107,9 @@ Learning](https://azure.microsoft.com/en-us/overview/ai-platform/ "AI + Machine 
 
 ### Analytics
 
-[Analytics](https://azure.microsoft.com/en](https://azure.microsoft.com/en-us/services/sql-data-warehouse/
-"SQL Data Warehouse") -us/product-categories/analytics/ "Analytics")
+Source: <https://support.microsoft.com/en-us/allproducts>
+
+[Analytics](https://azure.microsoft.com/en-us/product-categories/analytics/ "Analytics")
  -  Gather, store, process, analyze, and
 visualize data of any variety, volume, or
 velocity
@@ -155,10 +158,11 @@ velocity
 
 ### Compute
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
+Core IaaS 
 [Compute](https://azure.microsoft.com/en-us/product-categories/compute/ "Compute")
- -  Access cloud compute capacity and
-scale on demand---and only pay for the resources you
-use
+access to cloud resources.
 
 -
     [Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/ "Virtual Machines") - Provision Windows and Linux
@@ -208,6 +212,8 @@ use
 
 ### Containers
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
 [Containers](https://azure.microsoft.com/en-us/overview/containers/ "Containers")
  - Develop and manage your containerized applications faster with
 integrated tools
@@ -249,6 +255,8 @@ integrated tools
     more](https://azure.microsoft.com/en-us/services/#containers "See more")
 
 ### Databases
+
+Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Databases](https://azure.microsoft.com/en-us/product-categories/databases/ "Databases")
  - Support rapid growth and innovate faster with secure,
@@ -304,6 +312,8 @@ enterprise-grade, and fully managed database services
 
 ### Developer Tools
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
 [Developer Tools](https://azure.microsoft.com/en-us/product-categories/developer-tools/
 "Developer Tools")
  -  Build, manage, and continuously
@@ -357,6 +367,8 @@ language
 
 ### DevOps
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
 DevOps - Deliver innovation faster with simple, reliable tools for continuous delivery
 
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/
@@ -407,6 +419,8 @@ DevOps - Deliver innovation faster with simple, reliable tools for continuous de
 
 ### Identity
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
 [Identity](https://azure.microsoft.com/en-us/product-categories/identity/ "Identity")
  - Manage user identities and access to protect against advanced
 threats across devices, data, apps, and infrastructure
@@ -436,6 +450,8 @@ threats across devices, data, apps, and infrastructure
 
 ### Integration
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
 [Integration](https://azure.microsoft.com/en-us/product-categories/integration/
 "Integration")
  -  Seamlessly integrate on-premises and
@@ -463,6 +479,8 @@ enterprise
     "See more")
 
 ### Internet of Things
+
+Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Internet of Things](https://azure.microsoft.com/en-us/overview/iot/
 "Internet of Things")
@@ -516,6 +534,8 @@ infrastructure
     more](https://azure.microsoft.com/en-us/services/#iot "See more")
 
 ### Management Tools
+
+Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Management Tools](https://azure.microsoft.com/en-us/product-categories/management-tools/
 "Management Tools")
@@ -572,6 +592,8 @@ management of your Azure services
 
 ### Media
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
 Media  -  Deliver high-quality video
 content anywhere, any time, and on any
 device
@@ -614,6 +636,8 @@ device
 
 ### Microsoft Azure Stack
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
 Microsoft Azure Stack is an extension of Azure---bringing
 the agility and innovation of cloud computing to your
 on-premises environment and enabling the only hybrid cloud
@@ -622,6 +646,8 @@ anywhere. We bring together the best of the edge and cloud
 to deliver Azure services anywhere in your environment.
 
 ### Migration
+
+Source: <https://support.microsoft.com/en-us/allproducts>
 
 -
   [Migration](https://azure.microsoft.com/en](https://azure.microsoft.com/en-us/services/azure-migrate/)
@@ -651,6 +677,7 @@ to deliver Azure services anywhere in your environment.
 
 ### Mobile
 
+Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Mobile](https://azure.microsoft.com/en-us/services/app-service/mobile/) -
 Build and deploy cross-platform and native apps for any mobile device
@@ -683,6 +710,8 @@ Build and deploy cross-platform and native apps for any mobile device
     more](https://azure.microsoft.com/en-us/services/#mobile "See more")
 
 ### Networking
+
+Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Networking](https://azure.microsoft.com/en-us/product-categories/networking/)
  -  Connect cloud and on-premises
@@ -740,6 +769,8 @@ users the best possible experience
 
 ### Security
 
+Source: <https://support.microsoft.com/en-us/allproducts>
+
  Protect your enterprise from advanced threats across hybrid cloud
 workloads
 
@@ -785,6 +816,8 @@ workloads
     more")
 
 ### Storage
+
+Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Storage](https://azure.microsoft.com/en-us/product-categories/storage/
     "Storage")
@@ -838,6 +871,8 @@ workloads
     "See more")
 
 ### Web
+
+Source: <https://support.microsoft.com/en-us/allproducts>
 
 Build, deploy, and scale powerful web applications quickly and
 efficiently
