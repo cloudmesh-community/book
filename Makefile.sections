@@ -55,7 +55,6 @@ CHAPTER_516=\
   chapters/SECTION-IAAS.md\
   chapters/iaas/iaas.md\
   chapters/iaas/aws/aws.md\
-  chapters/iaas/aws/signup.md\
   chapters/iaas/azure/azure.md\
   chapters/iaas/watson/watson.md\
   chapters/iaas/gcloud/gcloud.md\

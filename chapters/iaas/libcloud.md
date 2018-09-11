@@ -214,7 +214,7 @@ node = [n for n in nodes if 'yourservername' in n.name][0]
 conn.ex_stop(node=node)
 ```
 
-## Python Program to Manage Clouds
+## Cloudmesh Community Program to Manage Clouds
 
 As you have noticed since the authentication can change from cloud
 services to cloud service it would be much easier to use a simple
@@ -242,3 +242,30 @@ passwords on your publicly accessible Github account.
 
 3. change the needed fields in the yaml file and use the python script
    to access the cloud services using libcloud.
+
+To illustrate how simple the program is and that it significantly
+improves your management of credentials we provide the follwoing
+code:
+
+```
+from cm import cloudmesh
+
+cm = cloudmesh()
+cm.config()
+driver = cm.get_driver("aws")
+print("driver=", driver)
+```
+
+To switch to a different cloud, you just have to create it in the yaml
+file and use that name.
+
+It will be your task to add more providers to it.
+
+We intent to host the code sometime soon on pypi so you can issue the
+command
+
+```
+pip install cm-community
+```
+
+and this library will be installed for you.

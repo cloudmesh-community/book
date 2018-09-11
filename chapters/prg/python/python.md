@@ -1,5 +1,5 @@
-Statements and Strings
-----------------------
+## Statements and Strings {#spythonlanguage}
+
 
 TODO: some of the python examples assume REPL, but its better to use a
   print statement instead as more general, please fix}
