@@ -52,6 +52,9 @@ CHAPTER_516=\
   chapters/rest/swagger-codegen.md\
   chapters/rest/swagger-spec.md\
   chapters/rest/swagger.md\
+  chapters/SECTION-IAAS.md\
+  chapters/iaas/iaas.md\
+  chapters/iaas/libcloud.md\
   $(DEVTOOLS)\
   $(PYTHON)\
   chapters/prg/go/go-language.md\

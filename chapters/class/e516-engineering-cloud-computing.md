@@ -108,7 +108,7 @@ The course has the following objectives:
 | :o: 09/17 |         |                   | OpenStack, Azure, AWS
 | :o: 09/24 | 3       | Virtualization    | Qemu, KVM, Virtual machines
 | :o: 10/01 |         |                   | Containers, Docker, Kubernetes
-| :o: 10/08 | 3       | Programming       | Python for Cloud Computing, LibCloud
+| :o: 10/08 | 3       | Programming       | Python for Cloud Computing, [Libcloud](#python-libcloud)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/libcloud.md)
 | :o: 10/08 |         |                   | Github as a Cloud Service
 | :white_check_mark: 09/11 |         |                   | [REST Services](#rest)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/rest/rest.md), [Rest Services with OPenAPI](#rest-services-with-openapi)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger.md), [OpenAPI Spec](#openapi-spec)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-spec.md), [OpenAPI Codegen](#openapi-codegen)[:pencil:](https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-codegen.md)
 | :o: 10/22 |         |                   | Map/Reduce, Hadoop, Spark
