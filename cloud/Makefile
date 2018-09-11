@@ -65,12 +65,6 @@ GO=\
 
 DRAFT=\
   $(KUBERNETES)\
-  chapters/iaas/services.md\
-  chapters/iaas/aws/aws.md\
-  chapters/iaas/aws/signup.md\
-  chapters/iaas/azure/azure.md\
-  chapters/iaas/watson/signup.md\
-  chapters/iaas/gcloud/gcloud.md\
   chapters/msg/mqtt.md\
   chapters/msg/mqtt1.md\
   chapters/msg/mqtt2.md\
@@ -131,6 +125,11 @@ sectionindent:
 	../bin/header.py dest/chapters/rest/swagger.md 2
 	../bin/header.py dest/chapters/iaas/libcloud.md 2
 	../bin/header.py dest/chapters/iaas/iaas.md 2
+	../bin/header.py dest/chapters/iaas/iaas.md 2
+	../bin/header.py dest/chapters/iaas/aws/aws.md 2
+	../bin/header.py dest/chapters/iaas/azure/azure.md 2
+	../bin/header.py dest/chapters/iaas/watson/watson.md 2
+	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md

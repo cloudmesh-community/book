@@ -653,10 +653,10 @@ successfully, and the actual data.
 
 :o: This example is not tested. Please provide feedback and improve.
 
-In the Section [1.3.8](#s:rest-api-endpoints){reference-type="ref"
-reference="s:rest-api-endpoints"} we created our own REST API
-application using Python Eve. Now once the service running, a we need to
-learn how to interact with it through clients.
+In the Section [Rest Services with Eve](#rest-services-with-eve) we
+created our own REST API application using Python Eve. Now once the
+service running, a we need to learn how to interact with it through
+clients.
 
 First go back to the working folder:
 
@@ -791,7 +791,7 @@ information when resources are created as showcased ot
 * <http://python-eve.org/features.html>
 
 | Field    |    Description|
-| ---- | ------- |
+| :------ | :------- |
 |  `_created` |  item creation date.
 |  `_updated` |  item last updated on.
 |  `_etag`    |  ETag, to be used for concurrency control and conditional requests.
