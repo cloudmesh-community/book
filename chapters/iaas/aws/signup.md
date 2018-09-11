@@ -1,7 +1,5 @@
 ## Amazon Web Services
 
-### Introduction
-
 Amazon Web Services (AWS) is a cloud platform that provides a large
 number os services for individuals and enterprises. You can get an
 overview of the AWS offering at

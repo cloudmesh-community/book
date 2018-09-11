@@ -125,11 +125,11 @@ sectionindent:
 	../bin/header.py dest/chapters/rest/swagger.md 2
 	../bin/header.py dest/chapters/iaas/libcloud.md 2
 	../bin/header.py dest/chapters/iaas/iaas.md 2
-	../bin/header.py dest/chapters/iaas/iaas.md 2
-	../bin/header.py dest/chapters/iaas/aws/aws.md 2
-	../bin/header.py dest/chapters/iaas/azure/azure.md 2
+	../bin/header.py dest/chapters/iaas/aws/aws.md 1
+	../bin/header.py dest/chapters/iaas/aws/signup.md 1
+	../bin/header.py dest/chapters/iaas/azure/azure.md 1
 	../bin/header.py dest/chapters/iaas/watson/watson.md 2
-	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
+	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 1
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
