@@ -3,8 +3,6 @@
 :question: indicates opportunities for comprehension assignments while
 contributing to this document.
 
-My Contribution: 
-
 ---
 
 **Learning Objectives**
