@@ -623,14 +623,10 @@ to deliver Azure services anywhere in your environment.
 
 ### Migration
 
-[Migration](https://azure.microsoft.com/en](https://azure.microsoft.com/en-us/services/azure-migrate/
-"Azure Migrate") -us/migration/ "Migration")
- -  Simplify and accelerate your
-migration to the cloud
-
 -
-    [Azure Migrate - Easily discover, assess, right-size, and migrate your on-premises VMs to Azure
-    
+  [Migration](https://azure.microsoft.com/en](https://azure.microsoft.com/en-us/services/azure-migrate/)
+  - Simplify and accelerate your migration to the cloud
+
 - [Site Recovery](https://azure.microsoft.com/en-us/services/site-recovery/
     "Site Recovery") - Orchestrate protection and recovery of private
     clouds
@@ -688,7 +684,7 @@ Build and deploy cross-platform and native apps for any mobile device
 
 ### Networking
 
-[Networking](https://azure.microsoft.com/en-us/product-categories/networking/
+[Networking](https://azure.microsoft.com/en-us/product-categories/networking/)
  -  Connect cloud and on-premises
 infrastructure and services to provide your customers and
 users the best possible experience
@@ -744,49 +740,49 @@ users the best possible experience
 
 ### Security
 
-[Security](https://azure.microsoft.com/en-us/services/security-center/
-"Security Center") -us/product-categories/security/ "Security")
- -  Protect your enterprise from advanced
-threats across hybrid cloud workloads
-
--   [Security Center - Unify security management and
-    enable advanced threat protection across hybrid cloud
-    workloads
--   [Key Vault](https://azure.microsoft.com/en-us/services/key-vault/
-    "Key Vault") - Safeguard and maintain control of
-    keys and other
-    secrets
+ Protect your enterprise from advanced threats across hybrid cloud
+workloads
 
 -
-    [Application Gateway](https://azure.microsoft.com/en-us/services/application-gateway/ "Application Gateway") - Build secure, scalable,
-    and highly available web front ends in
-    Azure
+    [Security Center](https://azure.microsoft.com/en-us/services/security-center/) -
+    Unify security management and enable advanced threat protection
+    across hybrid cloud workloads
+    
+- [Key Vault](https://azure.microsoft.com/en-us/services/key-vault/
+  "Key Vault") - Safeguard and maintain control of keys and other
+  secrets
 
 -
-    [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/ "Azure Information Protection") - Better protect
-    your sensitive information---anytime,
-    anywhere
+    [Application Gateway](https://azure.microsoft.com/en-us/services/application-gateway/
+    "Application Gateway") - Build secure, scalable, and highly
+    available web front ends in Azure
+
+-
+    [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/
+    "Azure Information Protection") - Better protect your sensitive
+    information---anytime, anywhere
 
 -
     [VPN Gateway](https://azure.microsoft.com/en-us/services/vpn-gateway/ "VPN Gateway") - Establish secure, cross-premises
     connectivity
--
-    [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/ "Azure Active Directory") - Synchronize
-    on-premises directories and enable single
-    sign-on
 
 -
-    [Azure DDoS Protection](https://azure.microsoft.com/en-us/services/ddos-protection/ "Azure DDoS Protection") - Protect your
-    applications from Distributed Denial of Service (DDoS)
-    attacks
+    [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/
+    "Azure Active Directory") - Synchronize on-premises directories
+    and enable single sign-on
 
 -
-    [Azure Advanced Threat Protection](https://azure.microsoft.com/en-us/features/azure-advanced-threat-protection/ "Azure Advanced Threat Protection") - Detect and
-    investigate advanced attacks on-premises and in the
-    cloud
+    [Azure DDoS Protection](https://azure.microsoft.com/en-us/services/ddos-protection/
+    "Azure DDoS Protection") - Protect your applications from
+    Distributed Denial of Service (DDoS) attacks
 
--   [See
-    more](https://azure.microsoft.com/en-us/services/#security "See more")
+-
+    [Azure Advanced Threat Protection](https://azure.microsoft.com/en-us/features/azure-advanced-threat-protection/
+    "Azure Advanced Threat Protection") - Detect and investigate
+    advanced attacks on-premises and in the cloud
+
+- [See more](https://azure.microsoft.com/en-us/services/#security "See
+    more")
 
 ### Storage
 
@@ -843,13 +839,11 @@ workloads
 
 ### Web
 
-[Web](https://azure.microsoft.com/en](https://azure.microsoft.com/en-us/services/app-service/web/
-"Web Apps")
- -  Build, deploy, and scale powerful web
-applications quickly and efficiently
+Build, deploy, and scale powerful web applications quickly and
+efficiently
 
 -
-    [Web Apps - Quickly create and deploy mission critical web apps at scale
+    [Web Apps](https://azure.microsoft.com/en-us/services/app-service/web/) - Quickly create and deploy mission critical web apps at scale
 
 - [API Management](https://azure.microsoft.com/en-us/services/api-management/
   "API Management") - Publish APIs to developers, partners, and
@@ -868,14 +862,6 @@ applications quickly and efficiently
     [Azure SignalR Service](https://azure.microsoft.com/en-us/services/signalr-service/
     "Azure SignalR Service") - Add real-time web functionalities
     easily
-
-### Free Account
-
-[Free account](https://azure.microsoft.com/en-us/free/ "Free account")
-
--   [Portal](https://portal.azure.com/)
-
-
 
 
 ## Registration
