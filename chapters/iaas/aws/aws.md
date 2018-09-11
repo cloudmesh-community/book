@@ -49,17 +49,76 @@ products that can be of benefit to you. For our purpose we focus on
 the traditional Compute and Storage offerings. We list the products
 that are available In Sep. 2018 next.
 
+###  Virtual Machine Infrastructure as a Services
+
+Amazon offers a large number of services relatesd to virtual machine
+management
+
+
+* [Amazon EC2](https://aws.amazon.com/ec2/?nc2=h_mo)
+* [Amazon EC2 Auto
+Scaling](https://aws.amazon.com/ec2/autoscaling/?nc2=h_mo)
+
+### Container Infrastructure as a Service
+
+Amazon offers the following container based services
+
+* [Amazon Elastic Container Service](https://aws.amazon.com/ecs/?nc2=h_mo)
+* [Amazon Elastic Container Service for
+Kubernetes](https://aws.amazon.com/eks/?nc2=h_mo)
+* [Amazon Elastic Container
+Registry](https://aws.amazon.com/ecr/?nc2=h_mo)
+
+## Storage
+
+Amazon offers the following storage services
+
+* [Amazon Simple Storage Service
+(S3)](https://aws.amazon.com/s3/?nc2=h_mo)
+* [Amazon Elastic Block Store (EBS)](https://aws.amazon.com/ebs/?nc2=h_mo)
+* [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/?nc2=h_mo)
+* [Amazon Glacier](https://aws.amazon.com/glacier/?nc2=h_mo)
+* [AWS Storage Gateway](https://aws.amazon.com/storagegateway/?nc2=h_mo)
+* [AWS Snowball](https://aws.amazon.com/snowball/?nc2=h_mo)
+* [AWS Snowball Edge](https://aws.amazon.com/snowball-edge/?nc2=h_mo)
+* [AWS Snowmobile](https://aws.amazon.com/snowmobile/?nc2=h_mo)
+* [AWS
+Marketplace](https://aws.amazon.com/marketplace/b/2649337011/ref=mkt_ste_l2_S3CDN?page=1&category=2649337011&nc2=h_mo)
+
+## Databases
+
+Amazon offers the following database services
+
+* [Amazon Aurora](https://aws.amazon.com/rds/aurora/?nc2=h_mo)
+* [Amazon RDS](https://aws.amazon.com/rds/?nc2=h_mo)
+* [Amazon DynamoDB](https://aws.amazon.com/dynamodb/?nc2=h_mo)
+* [Amazon ElastiCache](https://aws.amazon.com/elasticache/?nc2=h_mo)
+* [Amazon Redshift](https://aws.amazon.com/redshift/?nc2=h_l3_db)
+* [Amazon Neptune](https://aws.amazon.com/neptune/?nc2=h_mo)
+* [AWS Database Migration Service](https://aws.amazon.com/dms/?nc2=h_mo)
+* [AWS
+Marketplace](https://aws.amazon.com/marketplace/search/results/ref=mkt_ste_l2_database_category?page=1&category=2649364011&nc2=h_mo)
+
+
+### General Compute Services 
+
+In addition to these services a number of additional compute services 
+are offered which you can find in the Appendix.
+
 
 ## Locations
 
 ![](images/aws-locations.png)
 
+**Figure:** AWS Locations
 
 ## Compute
 
 AWS offers a number of compute related services. 
 
 ![](images/aws-compute-list.png)
+
+**Figure:** Compute Services
 
 ## Serverless Computing with AWS Lambda
 
@@ -71,7 +130,7 @@ computing allows users to run small functions in the cloud without
 having to worry about resource requirements. More information regarding
 AWS Lambda can be found in the following document
 
-<https://aws.amazon.com/lambda/>
+* <https://aws.amazon.com/lambda/>
 
 ## Storage
 
@@ -80,6 +139,8 @@ applications and solutions. The list below showcases AWS storage
 services
 
 ![](images/aws-storage-list.png)
+
+**Figure:** Sorage Services
 
 ## Database
 
@@ -90,36 +151,17 @@ services that AWS offers. And other database related services
 ![adsdas](images/aws-databases.png)
 *Image reference - https://aws.amazon.com/products/databases/*
 
+**Figure:** Dtabase services
+
+
 ## App Integration
 
 ![](images/aws-app-integration.png)
 
-## Access from the Command Line
+**Figure:** App Integration Services
 
-AWS also provides an command line interface that can be used to manage
-all the AWS services through simple commands. below are two example 
-commands.
 
-	aws s3 <Command> [<Arg> ...]
-	aws ec2 <Command> [<Arg> ...]
 
-You can find more information regarding the AWS CLI in the following 
-documents.
-
-* AWS Command Line: <https://aws.amazon.com/cli/>
-* AWS Command Line reference:
-  <https://docs.aws.amazon.com/cli/latest/reference/>
-* EC2:
-  <https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html>
-* S3: <https://docs.aws.amazon.com/cli/latest/reference/s3/index.html>
-
-Amazon Web Services (AWS) is a cloud platform that provides a large
-number os services for individuals and enterprises. You can get an
-overview of the AWS offering at
-[Amazon Web Services Overview](aws.md). This section will guide
-through the processes of creating an AWS account and explain the free
-tier details so that you can leverage the tools and products available
-in AWS for your work and research.
 
 ## Creating an account
 
@@ -200,6 +242,33 @@ option if you do not have any important data stored in the instance.
 You can look up other such tricky scenarios at
 [Avoiding Unexpected Charges](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/checklistforunwantedcharges.html)
 to make sure you will not get an unexpected bill
+
+## Access from the Command Line
+
+AWS also provides an command line interface that can be used to manage
+all the AWS services through simple commands. below are two example 
+commands.
+
+	aws s3 <Command> [<Arg> ...]
+	aws ec2 <Command> [<Arg> ...]
+
+You can find more information regarding the AWS CLI in the following 
+documents.
+
+* AWS Command Line: <https://aws.amazon.com/cli/>
+* AWS Command Line reference:
+  <https://docs.aws.amazon.com/cli/latest/reference/>
+* EC2:
+  <https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html>
+* S3: <https://docs.aws.amazon.com/cli/latest/reference/s3/index.html>
+
+Amazon Web Services (AWS) is a cloud platform that provides a large
+number os services for individuals and enterprises. You can get an
+overview of the AWS offering at
+[Amazon Web Services Overview](aws.md). This section will guide
+through the processes of creating an AWS account and explain the free
+tier details so that you can leverage the tools and products available
+in AWS for your work and research.
 
 ## Introduction to the AWS console
 

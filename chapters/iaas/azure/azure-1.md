@@ -1,4 +1,4 @@
-# Microsoft Azure
+# Microsoft Azure :o:
 
 Microsoft Azure is a cloud computing service created by Microsoft. It
 includes computing services and products for building, testing,
@@ -12,7 +12,7 @@ third-party software and systems.
 
 ## Products
 
-Just as  Microsoft offers a large number of services.
+Just as Amazon Microsoft offers a large number of services.
 We included the from Microsoft in Sep. 2018 highlighted services in
 the appendix, with convenient links to them.
 
@@ -44,7 +44,7 @@ We focus next on the
 * data resources
 
 For a more elaborate list please consult our Appendix. To see the
-complete list lease visit the Microsoft Web page via this
+complete list lease visit the Microsft Wev page via this
 [link](https://azure.microsoft.com/en-us/services/#compute).
 
 
@@ -93,7 +93,8 @@ containerized applications. This includes:
 
 -
     [Container Registry](https://azure.microsoft.com/en-us/services/container-registry/
-    "Container Registry") to store and manage container images for deployments
+    "Container Registry") - Store and manage container images across
+    all types of Azure deployments
 
 
 ### Databases
@@ -139,8 +140,8 @@ Storage is offered through a variety of
     database migration to the cloud
 
 - [Redis Cache](https://azure.microsoft.com/en-us/services/cache/
-  "Redis Cache") which provides a Redis Cache as a service to
-  support high-throughput and  low-latency data access
+    "Redis Cache") which provides a Redis Cache as a service to
+    support high-throughput and  low-latency data access
 
 -
     [SQL Server Stretch Database](https://azure.microsoft.com/en-us/services/sql-server-stretch-database/
@@ -162,8 +163,6 @@ will need to go to
 You will see an image such as
 
 ![](images/reg.png)
-
-**Figure:** Registration
 
 On that image you click the `Start free` button to obtain a free one
 year account. You will have to either create a new Microsoft account
@@ -205,7 +204,6 @@ the defined complexity requirements.
 
 ![](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/media/quick-create-portal/create-windows-vm-portal-basic-blade.png)
 
-**Figure:** Creating a VM
 
 ## Starting a VM
 
@@ -221,8 +219,6 @@ A VM can be started through the Portal as follows:
 
 ![](images/start-button.png)
 
-**Figure:** Start button
-
 ## Stopping the VM
 
 It is the most important to stop your VMS once they are not in used,
@@ -234,8 +230,6 @@ To shut a VM down, please do the following:
 * On the overview tab, a VM can be started by clicking the `Stop` button.
 
 ![](images/stop-button.png)
-
-**Figure:** Stop button
 
 ## Exercises
 
