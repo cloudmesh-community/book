@@ -69,9 +69,28 @@ Kubernetes](https://aws.amazon.com/eks/?nc2=h_mo)
 * [Amazon Elastic Container
 Registry](https://aws.amazon.com/ecr/?nc2=h_mo)
 
-## Storage
+### Other Compute Related Services
 
-Amazon offers the following storage services
+In addition to these services a number of additional compute services 
+are offered which you can find in the Appendix. This includes 
+Serverless Computing with AWS Lambda.
+Serverless computing or Function as a Service (FaaS) is a new cloud computing paradigm that has
+gained popularity recently. AWS Lambda was one of the first serverless
+computing services that was made available to the public,  Serverless
+computing allows users to run small functions in the cloud without 
+having to worry about resource requirements. More information regarding
+AWS Lambda can be found in the following document
+
+* <https://aws.amazon.com/lambda/>
+
+
+
+
+### Storage
+
+AWS provides many storage services that users can leverage for developing
+applications and solutions. The list below showcases AWS storage 
+services. Amazon offers the following storage services
 
 * [Amazon Simple Storage Service
 (S3)](https://aws.amazon.com/s3/?nc2=h_mo)
@@ -85,9 +104,12 @@ Amazon offers the following storage services
 * [AWS
 Marketplace](https://aws.amazon.com/marketplace/b/2649337011/ref=mkt_ste_l2_S3CDN?page=1&category=2649337011&nc2=h_mo)
 
-## Databases
+### Databases
 
-Amazon offers the following database services
+
+AWS also provides many data base solutions. AWS has both SQL based
+databases and NoSQL based databases. The list below shows the database
+services that AWS offers. And other database related services
 
 * [Amazon Aurora](https://aws.amazon.com/rds/aurora/?nc2=h_mo)
 * [Amazon RDS](https://aws.amazon.com/rds/?nc2=h_mo)
@@ -100,10 +122,6 @@ Amazon offers the following database services
 Marketplace](https://aws.amazon.com/marketplace/search/results/ref=mkt_ste_l2_database_category?page=1&category=2649364011&nc2=h_mo)
 
 
-### General Compute Services 
-
-In addition to these services a number of additional compute services 
-are offered which you can find in the Appendix.
 
 
 ## Locations
@@ -111,55 +129,6 @@ are offered which you can find in the Appendix.
 ![](images/aws-locations.png)
 
 **Figure:** AWS Locations
-
-## Compute
-
-AWS offers a number of compute related services. 
-
-![](images/aws-compute-list.png)
-
-**Figure:** Compute Services
-
-## Serverless Computing with AWS Lambda
-
-
-Serverless computing or FaaS is a new cloud computing paradigm that has
-gained popularity recently. AWS Lambda was one of the first serverless
-computing services that was made available to the public,  Serverless
-computing allows users to run small functions in the cloud without 
-having to worry about resource requirements. More information regarding
-AWS Lambda can be found in the following document
-
-* <https://aws.amazon.com/lambda/>
-
-## Storage
-
-AWS provides many storage services that users can leverage for developing
-applications and solutions. The list below showcases AWS storage 
-services
-
-![](images/aws-storage-list.png)
-
-**Figure:** Sorage Services
-
-## Database
-
-AWS also provides many data base solutions. AWS has both SQL based
-databases and NoSQL based databases. The list below shows the database
-services that AWS offers. And other database related services
-
-![adsdas](images/aws-databases.png)
-*Image reference - https://aws.amazon.com/products/databases/*
-
-**Figure:** Dtabase services
-
-
-## App Integration
-
-![](images/aws-app-integration.png)
-
-**Figure:** App Integration Services
-
 
 
 
@@ -229,7 +198,7 @@ the first 12 months.
 
 ## Important Notes
 
-When using AWS services make sure you understand how and when you will
+:warning: When using AWS services make sure you understand how and when you will
 be charged for. For example if you are using an EC2 to run some
 application, usage of the instance will be calculated from the time
 you started the instance to the time you stop or terminate the
@@ -243,32 +212,6 @@ You can look up other such tricky scenarios at
 [Avoiding Unexpected Charges](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/checklistforunwantedcharges.html)
 to make sure you will not get an unexpected bill
 
-## Access from the Command Line
-
-AWS also provides an command line interface that can be used to manage
-all the AWS services through simple commands. below are two example 
-commands.
-
-	aws s3 <Command> [<Arg> ...]
-	aws ec2 <Command> [<Arg> ...]
-
-You can find more information regarding the AWS CLI in the following 
-documents.
-
-* AWS Command Line: <https://aws.amazon.com/cli/>
-* AWS Command Line reference:
-  <https://docs.aws.amazon.com/cli/latest/reference/>
-* EC2:
-  <https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html>
-* S3: <https://docs.aws.amazon.com/cli/latest/reference/s3/index.html>
-
-Amazon Web Services (AWS) is a cloud platform that provides a large
-number os services for individuals and enterprises. You can get an
-overview of the AWS offering at
-[Amazon Web Services Overview](aws.md). This section will guide
-through the processes of creating an AWS account and explain the free
-tier details so that you can leverage the tools and products available
-in AWS for your work and research.
 
 ## Introduction to the AWS console
 
@@ -357,6 +300,33 @@ to "Actions -> Instance status" and select terminate, which will
 terminate the VM.
 
 ![](images/stopped_instance.png)
+
+## Access from the Command Line
+
+AWS also provides an command line interface that can be used to manage
+all the AWS services through simple commands. below are two example 
+commands.
+
+	aws s3 <Command> [<Arg> ...]
+	aws ec2 <Command> [<Arg> ...]
+
+You can find more information regarding the AWS CLI in the following 
+documents.
+
+* AWS Command Line: <https://aws.amazon.com/cli/>
+* AWS Command Line reference:
+  <https://docs.aws.amazon.com/cli/latest/reference/>
+* EC2:
+  <https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html>
+* S3: <https://docs.aws.amazon.com/cli/latest/reference/s3/index.html>
+
+Amazon Web Services (AWS) is a cloud platform that provides a large
+number os services for individuals and enterprises. You can get an
+overview of the AWS offering at
+[Amazon Web Services Overview](aws.md). This section will guide
+through the processes of creating an AWS account and explain the free
+tier details so that you can leverage the tools and products available
+in AWS for your work and research.
 
 
 ## Access from Python
