@@ -129,6 +129,8 @@ sectionindent:
 	../bin/header.py dest/chapters/rest/swagger-codegen.md 2
 	../bin/header.py dest/chapters/rest/swagger-spec.md 2
 	../bin/header.py dest/chapters/rest/swagger.md 2
+	../bin/header.py dest/chapters/iaas/libcloud.md 2
+	../bin/header.py dest/chapters/iaas/iaas.md 2
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
@@ -151,6 +153,7 @@ sectionheaders:
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 	../bin/section.py 1 "Messaging" > dest/chapters/MSG.md
 	../bin/section.py 1 "FAQ" > dest/chapters/SECTION-FAQ.md
+	../bin/section.py 1 "Infrastructure as a Service" > dest/chapters/SECTION-IAAS.md
 
 ######################################################################
 # END BOOK CLASS

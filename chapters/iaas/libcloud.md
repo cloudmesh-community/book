@@ -9,8 +9,9 @@ developed for this purpose. Apache Libcloud provides a unified API for
 many of the popular cloud providers and services.
  
  
-Apache Libcloud currently supports many providers, the complete list of 
-providers that are supported can be found at [Supported Providers](https://libcloud.readthedocs.io/en/latest/supported_providers.html)
+Apache Libcloud currently supports many providers, the complete list
+of providers that are supported can be found at
+[Supported Providers](https://libcloud.readthedocs.io/en/latest/supported_providers.html)
  
 However, it is good to keep in mind that the Libcloud API might not
 support some of the advanced features that are provided by some cloud 
@@ -19,25 +20,28 @@ integrated into Libcloud
 
 ## Service categories
 
-Libcloud provides many services and defines several categories to 
-distinguish between the main types of services. The list of categories 
-is as bellow, More details about this list can be found at [Categories](https://libcloud.readthedocs.io/en/latest/index.html)
-The list is extracted from the LibCloud documentation [LibCloud Docs](https://libcloud.readthedocs.io/en/latest/index.html)
+Libcloud provides many services and defines several categories to
+distinguish between the main types of services. The list of categories
+is as bellow, More details about this list can be found at
+[Categories](https://libcloud.readthedocs.io/en/latest/index.html) The
+list is extracted from the LibCloud documentation
+[LibCloud Docs](https://libcloud.readthedocs.io/en/latest/index.html)
 
 * Cloud Servers and Block Storage - services such as Amazon EC2 and 
-Rackspace CloudServers
+  Rackspace CloudServers
 * Cloud Object Storage and CDN - services such as Amazon S3 and 
-Rackspace CloudFiles
+  Rackspace CloudFiles
 * Load Balancers as a Service - services such as Amazon Elastic 
-Load Balancer and GoGrid LoadBalancers
+  Load Balancer and GoGrid LoadBalancers
 * DNS as a Service - services such as Amazon Route 53 and Zerigo
-* Container Services - container virtualization like Docker and Rkt 
-as well as container based services
+* Container Services - container virtualization like Docker and Rkt as
+  well as container based services
 * Backup as a Service - services such as Amazon EBS and OpenStack Freezer
 
 each category has a set of terms that represent various constructs and
 services. For example the following list is the list of terms used in
-for Compute related services, this list is extracted from the [Compute docs](https://libcloud.readthedocs.io/en/latest/compute/index.html)
+for Compute related services, this list is extracted from the
+[Compute docs](https://libcloud.readthedocs.io/en/latest/compute/index.html)
 
 #### Compute
 
@@ -59,9 +63,10 @@ rebooting, terminated, pending, stopped, suspended, paused, erro, unknown.
 * StorageVolume - represents a block storage volume
 * VolumeSnapshot - represents a point in time snapshot of a StorageVolume
 
-You can find more complete information on Libcloud in the official 
-documentations, this article will only provide a brief summary in most 
-part: [Apache Libcloud Documentaions](https://libcloud.readthedocs.io/en/latest/index.html)
+You can find more complete information on Libcloud in the official
+documentations, this article will only provide a brief summary in most
+part:
+[Apache Libcloud Documentaions](https://libcloud.readthedocs.io/en/latest/index.html)
 
 ## Installation
 
@@ -93,20 +98,22 @@ pprint(driver.list_nodes())
 ```
 
 ## Working with cloud services
+
 In the following section we will look into how Libcloud can be used to
-perform various functions in specific cloud providers. One of the main 
-aspects that change between different cloud providers is how authentication
-is done. Because of the unified API most of the other features are
-executed in the same manner.
+perform various functions in specific cloud providers. One of the main
+aspects that change between different cloud providers is how
+authentication is done. Because of the unified API most of the other
+features are executed in the same manner.
 
 ### Authenticating with cloud providers
-Depending on the cloud provider, how Libcloud is granted access to your
-cloud account may differ, below we will look at some such examples
+
+Depending on the cloud provider, how Libcloud is granted access to
+your cloud account may differ, next we will look at some such examples
 
 There are two main steps that are common to all providers
 
-1. Using the get_driver() method to obtain a reference to the cloud 
-provider driver
+1. Using the get_driver() method to obtain a reference to the cloud
+   provider driver
 2. Instantiating the driver with the credentials to access the cloud
 
 After you obtain the connection, it can be used to invoke various services
@@ -114,7 +121,8 @@ After you obtain the connection, it can be used to invoke various services
 
 
 #### Amazon AWS
-Below is how authentication is performed for AWS 
+
+Authentication is performed for AWS as follows
 
 ```Python
 from libcloud.compute.types import Provider
@@ -128,13 +136,15 @@ conn = EC2Driver(EC2_ACCESS_ID, EC2_SECRET_KEY)
 ```
 
 #### Azure
-Below is how authentication is performed for Azure 
+
+Authentication is performed for Azure as follows
 
 ```Python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
 
 # Azure related variables
+
 AZURE_SUBSCRIPTION_ID = 'xxxxxxxx–xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 AZURE_MANAGEMENT_CERT_PATH = 'C:/Demo/azure_cert.pem'
 
@@ -144,18 +154,18 @@ conn = AZDriver(subscription_id=AZURE_SUBSCRIPTION_ID, key_file=AZURE_MANAGEMENT
 
 ### Invoking services
  
-In this section we will look into how we can use the connection created
-as instructed above to perform various services such as creating nodes,
-listing nodes, starting nodes and stopping nodes.
+In this section we will look into how we can use the connection
+created as instructed above to perform various services such as
+creating nodes, listing nodes, starting nodes and stopping nodes.
 
-Appropriate authentication code as described in the previous section  is
-assumed. This will give us an variable named conn which we will use for
-invoking Services. It is in the next sections not explicitly listed. 
-It is indicated by our ... at the beginning 
+Appropriate authentication code as described in the previous section
+is assumed. This will give us an variable named conn which we will use
+for invoking Services. It is in the next sections not explicitly
+listed.  It is indicated by our ... at the beginning
 
 #### Creating Nodes
 
-In this section we will look at the code that can be used to create a 
+In this section we will look at the code that can be used to create a
 node in the provider a node which represents a virtual server
 
 ```Python
@@ -181,6 +191,7 @@ print nodes
 ```
 
 #### Starting Nodes
+
 After the node (Virtual server) has been created the following code can
 be used to start the node
 
@@ -192,6 +203,7 @@ conn.ex_start(node=node)
 ```
 
 #### Stoping Nodes
+
 When needed the following command can be used to stop a node that has 
 been started
 
@@ -203,29 +215,31 @@ conn.ex_stop(node=node)
 ```
 
 ## Python Program to Manage Clouds
-As you have noticed since the authentication can change from cloud 
-services to cloud service it would be much easier to use a simple 
+
+As you have noticed since the authentication can change from cloud
+services to cloud service it would be much easier to use a simple
 python script to automatically handle the differences in the code.
 
-We have provided such a python script which you can leverage to manage 
-different cloud providers. You can find the python script and the 
+We have provided such a python script which you can leverage to manage
+different cloud providers. You can find the python script and the
 corresponding .yaml file in the cloudmesh-community github repository.
 
 Python Script - <https://github.com/cloudmesh-community/cm/blob/master/cm.py>
 
 Yaml File - <https://github.com/cloudmesh-community/cm/blob/master/cloudmesh.yaml>
 
-<b>When using the script and yaml file please keep in mind the following 
-steps to make sure you do not share your private keys and passwords on
-your publicly accessible Github account.</b>
+<b>When using the script and yaml file please keep in mind the
+following steps to make sure you do not share your private keys and
+passwords on your publicly accessible Github account.</b>
 
-1. Create a folder in your computer that is not within a git clone that 
-you have made. For example maybe you can use a new directory on your
-desktop
+1. Create a folder in your computer that is not within a git clone
+   that you have made. For example maybe you can use a new directory
+   on your desktop
 
-2. Copy the cm.py and cloudmesh.ymal files into this folder. Just to make
-sure you are not working with the files under the git repo you should delete
-the cloudmesh.yaml file in that is in your local git repo.
+2. Copy the cm.py and `cloudmesh.yaml` files into this folder. Just to
+   make sure you are not working with the files under the git repo you
+   should delete the cloudmesh.yaml file in that is in your local git
+   repo.
 
-3. change the needed fields in the ymal file and use the python script to
-access the cloud services using libcloud. 
+3. change the needed fields in the yaml file and use the python script
+   to access the cloud services using libcloud.
