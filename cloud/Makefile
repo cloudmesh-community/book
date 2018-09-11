@@ -130,7 +130,8 @@ sectionindent:
 	../bin/header.py dest/chapters/iaas/azure/azure.md 1
 	../bin/header.py dest/chapters/iaas/watson/watson.md 2
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 1
-
+	../bin/header.py dest/chapters/iaas/azure/products.md 2
+	../bin/header.py dest/chapters/iaas/aws/products.md 2
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
@@ -153,6 +154,7 @@ sectionheaders:
 	../bin/section.py 1 "Messaging" > dest/chapters/MSG.md
 	../bin/section.py 1 "FAQ" > dest/chapters/SECTION-FAQ.md
 	../bin/section.py 1 "Infrastructure as a Service" > dest/chapters/SECTION-IAAS.md
+	../bin/section.py 1 "Appendix" > dest/chapters/SECTION-APPENDIX.md
 
 ######################################################################
 # END BOOK CLASS
