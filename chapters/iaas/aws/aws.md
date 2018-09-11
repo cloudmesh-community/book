@@ -345,7 +345,7 @@ it bares the risk of vendor lockin. Boto is maintained in github.
 
 Documentation about boto can be found at 
 
-* https://boto3.readthedocs.io/en/latest/
+* <https://boto3.readthedocs.io/en/latest/>
 * <https://github.com/boto/boto3>
 
 
