@@ -649,9 +649,10 @@ response includes a header that we return the information in json
 format, a status of 200, which means the object was returned
 successfully, and the actual data.
 
-### WRONG: Consuming REST API Using a Client Application :o:
+###  REST API Using a Client Application
 
-\TODO{This example is not tested. Please provide feedback and improve}
+:o: This example is not tested. Please provide feedback and improve.
+
 In the Section [1.3.8](#s:rest-api-endpoints){reference-type="ref"
 reference="s:rest-api-endpoints"} we created our own REST API
 application using Python Eve. Now once the service running, a we need to
