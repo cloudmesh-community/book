@@ -2,6 +2,8 @@
 from __future__ import print_function
 import sys
 import os
+import shutil
+
 
 data = {
     "filename": sys.argv[1],
@@ -22,3 +24,14 @@ os.system("pandoc {filename} --base-header-level={level} -o /tmp/convert.md".for
 os.system ("cp /tmp/convert.md {filename}".format(**data))
 os.system("echo >> {filename}".format(**data))
 
+
+
+convert = open("/tmp/convert.md") 
+line = convert.readline()
+print (line)
+line = line.replace("\\#","#")
+print(line)
+
+to_file = open({filename}".format(**data),mode="w")
+to_file.write(line)
+shutil.copyfileobj(convert, to_file)
