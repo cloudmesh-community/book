@@ -330,7 +330,7 @@ Then hit Go.
 Exercises
 ---------
 
-Python.Lib.1:
+E.Python.Lib.1:
 
 > Write a python program called iterate.py that accepts an integer n
 > from the command line. Pass this integer to a function called iterate.
