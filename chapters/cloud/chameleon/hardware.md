@@ -1,4 +1,4 @@
-# Hardware
+# Chameleon Cloud Hardware
 
 The Chameleon architecture consists of a set of standard cloud units
 (SCUs), each of which is a single rack with 42 compute nodes, 4 storage

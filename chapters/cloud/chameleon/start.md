@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started on Chameleon Cloud
 
 We describe how you can get access to chameleon cloud under the
 assumption that you are a student or a researcher that joins an existing
