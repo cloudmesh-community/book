@@ -44,13 +44,12 @@ CHAMELEON=\
   chapters/SECTION-CHAMELEON.md\
   chapters/cloud/chameleon/resources.md\
   chapters/cloud/chameleon/hardware.md\
-  chapters/cloud/chameleon/cli.md\
-  chapters/cloud/chameleon/user-guide.md\
-  chapters/cloud/chameleon/heat.md\
+  chapters/cloud/chameleon/charge.md\  
   chapters/cloud/chameleon/start.md\
+  chapters/cloud/chameleon/user-guide.md\  
+  chapters/cloud/chameleon/cli.md\
   chapters/cloud/chameleon/horizon.md\
-  chapters/cloud/chameleon/baremetal.md\
-  chapters/cloud/chameleon/charge.md\
+  chapters/cloud/chameleon/heat.md\
   chapters/cloud/chameleon/baremetal.md\
   chapters/cloud/chameleon/faq.md\
 
