@@ -69,11 +69,12 @@ chapter.
 THe following require more work and qualify **if done right as a
 chapter**. PLease suggest chapters you like to contribute:
 
-* GraphQL
+* [GraphQL](#s-graphql)
 * OpenFaaS
 * OpenWhisk
 * Python Concurrent.futures
 * Python Multiprocessing
+* [Scala and Cloud Computing](#scala-and-cloud-computing)
 
 ### Your own suggestion
 
