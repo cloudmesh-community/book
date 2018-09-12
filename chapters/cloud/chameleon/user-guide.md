@@ -1,5 +1,4 @@
-OpenStack Virtual Machines
-==========================
+# OpenStack Virtual Machines
 
 OpenStack is an Infrastructure as a Service (IaaS) platform that allows
 you to create and manage virtual environments. Chameleon provides an
@@ -13,8 +12,7 @@ This tutorial provide basic information about how to use the OpenStack
 web interface and provides some information specific to using OpenStack
 KVM on Chameleon.
 
-Web Interface
--------------
+## Web Interface
 
 An easy way to use OpenStack KVM on Chameleon is via the [OpenStack web
 interface](https://openstack.tacc.chameleoncloud.org/dashboard) also
@@ -25,7 +23,7 @@ about 5 minutes.
 
 The initial log in page appears as:
 
-![image](images/chameleon-login.png){width="0.3\columnwidth"}
+![**Figure:** Chameleon login](images/chameleon-login.png)
 
 After a successful log in, you will see the Overview page as shown
 below. This page provides a summary of your current and recent usage and
@@ -149,8 +147,7 @@ cloud. Feel free to add other rules as necessary.
 
 ![image](images/openstack_alamo_add_secgroup_rule.png){width="0.8\columnwidth"}
 
-OpenStack REST Interfaces
--------------------------
+## OpenStack REST Interfaces
 
 The OpenStack REST Interfaces are supported on Chameleon over secure
 HTTP connections. You can download your OpenStack credentials file from
@@ -168,8 +165,7 @@ complains about the certificate, [download the Mozilla CA bundle from
 the cURL website](http://curl.haxx.se/docs/caextract.html) and run the
 OpenStack client tools with the --os-cacert cacert.pem arguments.
 
-Downloading and uploading data
-------------------------------
+## Downloading and uploading data
 
 You can use the OpenStack command line clients to download data from and
 upload data to Chameleon clouds. Configure your environment by following
