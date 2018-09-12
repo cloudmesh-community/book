@@ -7,12 +7,12 @@ In this subsection we are discussing how to use OpenAPI 2.0 and Swagger
 Codegen to define and develop a REST Service.
 
 We assume you have been familiar with the concept of REST service,
-OpenAPI as discussed in section [Overview of Rest]{#overview-of-rest}.
+OpenAPI as discussed in section [Overview of Rest](#overview-of-rest).
 
 In next section we will further look into the
 Swagger/OpenAPI 2.0
-specification [\[S:swagger-specification\]](#S:swagger-specification){reference-type="ref"
-reference="S:swagger-specification"} and use a slight more complex
+specification [Swagger Specification](#openapi-specification) 
+and use a slight more complex
 example to walk you through the design of a RESTful service following
 the OpenAPI 2.0 specifications.
 
@@ -21,26 +21,26 @@ REST service with Swagger/OpenAPI 2.0 specification and the tools
 related to is. The general steps are:
 
 -   Step 1
-    (Section [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-    reference="s:step-1-define-your-rest-service"}). Define the REST
+    (Section [Step 1: Define Your REST Service](#step-1-define-your-rest-service).
+    Define the REST
     service conforming to Swagger/OpenAPI 2.0 specification. It is a
     YAML document file with the basics of the REST service defined,
     e.g., what resources it has and what actions are supported.
 
 -   Step 2
-    (Section [1.2](#s:step-2-swagger-code-gen){reference-type="ref"
-    reference="s:step-2-swagger-code-gen"}). Use Swagger Codegen to
+    (Section [Step 2: Server Side Stub Code Generation and Implementation](#step-2-server-side-stub-code-generation-and-implementation).
+    Use Swagger Codegen to
     generate the server side stub code. Fill in the actual
     implementation of the business logic portion in the code.
 
 -   Step 3
-    (Section [1.3](#s:step-3-swagger-codegen){reference-type="ref"
-    reference="s:step-3-swagger-codegen"}). Install the server side code
+    (Section [Step 3: Install and Run the REST Service](#step-3-install-and-run-the-rest-service).
+    Install the server side code
     and run it. The service will then be available.
 
 -   Step 4
-    (Section [1.4](#s:step-4-swagger-codegen){reference-type="ref"
-    reference="s:step-4-swagger-codegen"}). Generate client side code.
+    (Section [Step 4: Generate Client Side Code and Verify](#step-4-generate-client-side-code-and-verify).
+    Generate client side code.
     Develop code to call the REST service. Install and run to verify.
 
 ## Step 1: Define Your REST Service
@@ -344,8 +344,7 @@ case please make changes on the API definition accordingly, e.g., the
 E.OpenAPI.1:
 
 > In Section
-> [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-> reference="s:step-1-define-your-rest-service"}, we introduced a
+> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
 > schema.  The question relates to termsOfService: Investigate what
 > the termOfService attribute is and suggest a better value. Discuss
 > on piazza.
@@ -353,24 +352,21 @@ E.OpenAPI.1:
 E.OpenAPI.2:
 
 > In Section
-> [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-> reference="s:step-1-define-your-rest-service"}, we introduced a
+> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
 > schema.  The question relates to model: What is the meaning of model
-> under the definitions
+> under the definitions?
 
 E.OpenAPI.3:
 
 > In Section
-> [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-> reference="s:step-1-define-your-rest-service"}, we introduced a
+> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
 > schema.  The question relates to \$ref: what is the meaning of the
 > \$ref. Discuss on piazza, come up with a student answer in class.
 
 E.OpenAPI.1:
 
 > In Section
-> [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-> reference="s:step-1-define-your-rest-service"}, we introduced a
+> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
 > schema.  What does the response 200 mean. Do you need other
 > responses?
 
