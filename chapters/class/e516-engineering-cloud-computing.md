@@ -107,6 +107,7 @@ The course has the following objectives:
 | :white_check_mark: 09/15 | 2       | Infrastructure    | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/iaas.md)
 | :white_check_mark: 09/17 |         |                   | [Azure](#microsoft-azure) [:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/azure/azure.md), [AWS](#amazon-web-services) [:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md)
 | :o: 09/17 |         |                   | OpenStack
+[Resources](#chameleon-cloud-security-warning)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/resources.md),[Hardware](#chameleon-cloud-hardware)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/hardware.md),[Charge](#chameleon-cloud-charge-rates)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/charge.md),[Quick start](#getting-started-on-chameleon-cloud)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/start.md),[KVM user guide](#openstack-virtual-machines)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/user-guide.md),[CLI](#openstack-command-line-interface)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/cli.md),[Horizon](#openstack-horizon)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/horizon.md),[Heat](#openstack-heat)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/heat.md),[Baremetal](#openstack-baremetal)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/baremetal.md),[FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/faq.md)
 | :o: 09/24 | 3       | Virtualization    | Qemu, KVM, Virtual machines
 | :o: 10/01 |         |                   | Containers, Docker, Kubernetes
 | :white_check_mark: 10/08 | 3       | Programming       | Python for Cloud Computing, [Libcloud](#python-libcloud)[:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/libcloud.md)
@@ -127,6 +128,8 @@ The course has the following objectives:
 | 09/17-11/26* |         | Project Type D    | Your own Project Type A, B, or C (upon approval)
 
 </div>
+
+
 
 Legend markings
 
