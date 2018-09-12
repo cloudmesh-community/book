@@ -87,11 +87,12 @@ CHAPTER_SERVICES=\
 all: prepare epub
 	echo done
 
-#	../bin/header.py dest/chapters/open.md 2
+
 
 sectionindent:
 	../bin/authors.py > dest/chapters/authors.md
-	../bin/header.py dest/chapters/git/github.md 2
+  ../bin/header.py dest/chapters/open.md 2
+  ../bin/header.py dest/chapters/git/github.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
 	../bin/header.py dest/chapters/prg/python-install.md 1
 	../bin/header.py dest/chapters/prg/python.md 2
@@ -109,7 +110,7 @@ sectionindent:
 	../bin/header.py dest/chapters/iaas/aws/aws.md 2
 	../bin/header.py dest/chapters/iaas/aws/signup.md 2
 	../bin/header.py dest/chapters/iaas/azure/azure.md 2
-	../bin/header.py dest/chapters/iaas/watson/signup.md 2
+	../bin/header.py dest/chapters/iaas/watson/watson.md 2
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
