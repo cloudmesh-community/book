@@ -1,4 +1,4 @@
-## Introduction to Python {#spythonintro}
+## Introduction to Python {#s-python-intro}
 
 Portions of this lesson have been adapted from the [official Python
 Tutorial](https://docs.python.org/2/tutorial/) copyright [Python
