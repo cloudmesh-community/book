@@ -3,7 +3,9 @@
 
 ## Overview of REST
 
-Test short refid. This should bring up the [python intro](#s-python-intro)
+Test short refid.
+This should bring up the [python intro](#s-python-intro).
+This should bring up the [graphql](#s-graphql).
 
 This section is accompanied by a video about REST.
 
