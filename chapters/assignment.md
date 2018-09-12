@@ -1,5 +1,4 @@
-
-# [Assignments]{.part} [[:cloud:](https://github.com/cloudmesh-community/book/edit/master/chapter/../chapters/assignment.md)]{style="float:right"}
+# Assignments
 
 For more details see the cours syllabus and overview pages. We give
 here just some summary.
