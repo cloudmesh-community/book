@@ -7,7 +7,7 @@ computing experiments with a high degree of customization and
 repeatability. Typically, an experiment will go through several phases,
 as illustrated in the figure below:
 
-![**Figure** Experimenting with Bare Metal resources on Chameleon cloud](images/baremetal.png)
+![**Figure:** Experimenting with Bare Metal resources on Chameleon cloud](images/baremetal.png)
 
 The bare-metal user guide comes in two editions. The first is how to use
 Chameleon resources via the web interface, the recommended choice for
