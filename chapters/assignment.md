@@ -1,4 +1,5 @@
-# Assignments
+
+# [Assignments]{.part} [[:cloud:](https://github.com/cloudmesh-community/book/edit/master/chapter/../chapters/assignment.md)]{style="float:right"}
 
 For more details see the cours syllabus and overview pages. We give
 here just some summary.
@@ -80,5 +81,6 @@ chapter**. PLease suggest chapters you like to contribute:
 We are happy to work with you on your on suggestions. Please note that
 we also have some additional mateial that is not yet released that
 could be enhanced upon.
+
 
 
