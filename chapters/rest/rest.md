@@ -3,6 +3,8 @@
 
 ## Overview of REST
 
+Test short refid. This should bring up the [python intro](#s-python-intro)
+
 This section is accompanied by a video about REST.
 
 [:clapper: REST 36:02](https://youtu.be/xjFuA6q5N_U)
