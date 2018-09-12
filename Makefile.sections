@@ -89,6 +89,7 @@ CHAPTER_516=\
   $(PYTHON)\
   chapters/prg/go/go-language.md\
   chapters/prg/julia/julia-language.md\
+  chapters/prg/scala/scala.md\
   chapters/MSG.md\
   chapters/msg/mqtt.md\
   chapters/msg/graphql.md\

@@ -96,6 +96,7 @@ sectionindent:
 	../bin/header.py dest/chapters/prg/python/python-install.md 1
 	../bin/header.py dest/chapters/prg/python/python.md 2
 	../bin/header.py dest/chapters/prg/python/python-cmd.md 3
+	../bin/header.py dest/chapters/prg/scala/scala.md 1
 	../bin/header.py dest/chapters/cloud/vagrant.md 2
 	../bin/header.py dest/chapters/prg/python/python-libraries.md 2
 	../bin/header.py dest/chapters/prg/python/python-data.md 1
@@ -108,7 +109,7 @@ sectionindent:
 	../bin/header.py dest/chapters/linux/refcards.md 2
 	../bin/header.py dest/chapters/iaas/aws/aws.md 2
 	../bin/header.py dest/chapters/iaas/azure/azure.md 2
-	../bin/header.py dest/chapters/iaas/watson/watson.md 2
+	../bin/header.py dest/chapters/iaas/watson/watson.md 1
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
