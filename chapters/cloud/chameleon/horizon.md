@@ -1,4 +1,4 @@
-# Horizon Graphical User Interface
+# OpenStack Horizon Graphical User Interface
 
 ## Configure resources
 
