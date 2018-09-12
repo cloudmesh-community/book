@@ -91,7 +91,7 @@ download *CH-\$PROJECTID-openrc.sh* file on your machine (see
 Figure Access and Security). Every time you use nova command line tools, the
 file should be loaded on your terminal.
 
-[**Figure** Access and Security
+![**Figure** Access and Security
 GUI](images/openstack-chameleon-openrc.png)
 
     $ mkdir -p ~/.cloudmesh/chameleon
