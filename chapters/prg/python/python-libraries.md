@@ -352,4 +352,4 @@ E:Python.Lib.2:
 > 4.  Write a program that uses docopt to define a commandline program.
 >    Hint: modify the iterate program.
 
-> 5.  Demonstrate the program works and submit the code and output.
+> 5.  Demonstrate the program works.
