@@ -56,18 +56,17 @@ def convert(filename):
     if "{.unnumbered}" in lines[0]:
         pass
     else:
-      if lines[0].startswith("# "):
-          lines[0] = "# [" + lines[0][2:] + "]{.part}"        
-      if "{github}" not in lines[0]:
-          title = lines[0]
-          refid = None
-          if "{#" in title:
+        title = lines[0]
+        refid = None
+        if "{#" in title:
             title, refid = title.split("{#")
             refid = refid.strip("}")
-          if refid:
-            lines[0] = title + " {github}" + "{#%s}" % refid
-          else:
-            lines[0] = title + " {github}"
+        if "{github}" not in lines[0]:
+            title = title + " {github}"
+        if title.startswith("# "):
+            title = "# [" + title[2:] + "]{.part}"
+        if refid:
+            lines[0] = title + "{#%s}" % refid
     content = "\n" + "\n".join(lines)
     content = content.replace("{github}", link)
     content = content.replace("{gitcode}", gitcoderoot)
