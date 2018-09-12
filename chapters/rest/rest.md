@@ -971,7 +971,7 @@ you rerun evegenie, kill all previous windows in which you run eve and
 mongo and restart. In case of changes to objects that you have designed
 and run previously, you need to also delete the mongod database.
 
-## Towards cmd5 extensions to manage eve and mongo
+## Towards cmd5 extensions to manage eve and mongo :o:
 
 Naturally it is of advantage to have in cms administration commands to
 manage mongo and eve from cmd instead of targets in the Makefile. Hence,
@@ -999,7 +999,7 @@ the location of this file is used when the Service class is initialized
 with None. Prior to starting the service the file needs to be copied
 there. This could be achieved with a set command.
 
-## Responses
+## Responses :o:
 
 ## Django REST Framework
 
