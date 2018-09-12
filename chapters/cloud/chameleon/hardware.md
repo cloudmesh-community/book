@@ -24,7 +24,7 @@ links, to allow users to examine the effects of a distributed cloud.
   TACC/UC Distributed Cloud            100Gbps Internet2 links
   ------------------------------------ ----------------------------
 
-[Detailed information in our Resource Discovery
+[Detailed information in Chameleon cloud Resource Discovery
 Portal](https://www.chameleoncloud.org/user/discovery/)
 
 ## Standard Cloud Units
@@ -47,8 +47,8 @@ core network from each SCU. The total system contains 12 SCUs (10 at
 TACC and 2 at UC) for a total of 13,056 cores, 66 TiB of RAM, and 1.5PB
 of configurable storage in the SCU subsystem.
 
-![Chameleon Cloud
-Racks](images/Chameleon2.jpeg){width="0.5\columnwidth"}
+![**Figure** Chameleon Cloud
+Racks](images/Chameleon2.jpeg)
 
 ## Network
 
@@ -83,7 +83,7 @@ The heterogeneous hardware includes various technologies: GPU and FPGA
 accelerators, SSD and NVMe storage, low-power ARM, Atom, and Xeon
 systems-on-a-chip. With the exception of the low-power
 systems-on-a-chip, each of the additional nodes is a Dell PowerEdge R730
-server with the same CPUs as the R630 servers in our SCUs.
+server with the same CPUs as the R630 servers in the SCUs.
 
 The two storage hierarchy nodes have been designed to enable experiments
 using multiple layers of caching: they are configured with 512 GiB of
@@ -134,5 +134,5 @@ of the bare metal user's guide.
 ## Live updates
 
 You can browse detailed information about the resources offered for bare
-metal reconfiguration in our [Resource Discovery
+metal reconfiguration in the [Resource Discovery
 Portal](https://www.chameleoncloud.org/user/discovery/).
