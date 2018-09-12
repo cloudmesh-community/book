@@ -15,13 +15,13 @@ data = {
 # print ("Adjusting headers {filename} -> {level}".format(**data))
 # print (79 * "=")
 
-os.system("rm -f /tmp/convert.md")
+os.remove("/tmp/convert.md")
 os.system("pandoc {filename} --base-header-level={level} -o /tmp/convert.md".format(**data))
 
 
 # os.system("head  /tmp/convert.md")
 
-os.system ("cp /tmp/convert.md {filename}".format(**data))
+shutil.copyfile("/tmp/convert.md", "{filename}".format(**data))
 os.system("echo >> {filename}".format(**data))
 
 
@@ -32,6 +32,6 @@ print (line)
 line = line.replace("\\#","#")
 print(line)
 
-to_file = open({filename}".format(**data),mode="w")
+to_file = open("{filename}".format(**data),mode="w")
 to_file.write(line)
 shutil.copyfileobj(convert, to_file)
