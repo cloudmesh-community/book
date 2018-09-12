@@ -7,9 +7,9 @@ In this subsection we are discussing how to use OpenAPI 2.0 and Swagger
 Codegen to define and develop a REST Service.
 
 We assume you have been familiar with the concept of REST service,
-OpenAPI as discussed in
-section [\[s:rest-intro\]](#s:rest-intro){reference-type="ref"
-reference="s:rest-intro"}. In next section we will further look into the
+OpenAPI as discussed in section [Overview of Rest]{#overview-of-rest}.
+
+In next section we will further look into the
 Swagger/OpenAPI 2.0
 specification [\[S:swagger-specification\]](#S:swagger-specification){reference-type="ref"
 reference="S:swagger-specification"} and use a slight more complex
