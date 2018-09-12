@@ -98,15 +98,15 @@ You will need to [install the Swagger Codegen
 tool](https://swagger.io/docs/swagger-tools/) if not yet done so. For
 OSX we recommend that you use the homebrew install via
 
-    brew install swagger-codegen
+    $ brew install swagger-codegen
 
 On Ubuntu you can install swagger as follows (update the version as
 needed):
 
-     mkdir ~/swagger
-    cd ~/swagger
-    wget https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/2.3.1/swagger-codegen-cli-2.3.1.jar
-    alias swagger-codegen="java -jar ~/swagger/swagger-codegen-cli-2.3.1.jar"
+    $ mkdir ~/swagger
+    $ cd ~/swagger
+    $ wget https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/2.3.1/swagger-codegen-cli-2.3.1.jar
+    $ alias swagger-codegen="java -jar ~/swagger/swagger-codegen-cli-2.3.1.jar"
 
 Add the alias to your `.bashrc` or `.bash_profile` file. After you start
 a new terminal you can use in that terminal now the command
@@ -128,7 +128,7 @@ After you have the codegen tool ready, and with Java 7 or 8 installed in
 your system, you can run the following to generate the server side stub
 code:
 
-    swagger-codegen generate \
+    $ swagger-codegen generate \
         -i ~/cloudmesh/cpu.yaml \
         -l python-flask \
         -o ~/cloudmesh/swagger_example/server/cpu/flaskConnexion \
@@ -136,7 +136,7 @@ code:
 
 or if you have not created an alias
 
-    java -jar swagger-codegen-cli.jar generate \
+    $ java -jar swagger-codegen-cli.jar generate \
         -i ~/cloudmesh/cpu.yaml \
         -l python-flask \
         -o ~/cloudmesh/swagger_example/server/cpu/flaskConnexion \
@@ -229,29 +229,29 @@ that you run this in a pyenv or a virtualenv environment.
 
 In case you are not using pyenv, please use virtual env as follows:
 
-    virtualenv RESTServer
-    source RESTServer/bin/activate
+    $ virtualenv RESTServer
+    $ source RESTServer/bin/activate
 
 ### Make sure you have the latest pip:
 
-    pip install -U pip
+    $ pip install -U pip
 
 ### Install the requirements of the server side code:
 
-    cd ~/cloudmesh/swagger_example/server/cpu/flaskConnexion
-    pip install -r requirements.txt
+    $ cd ~/cloudmesh/swagger_example/server/cpu/flaskConnexion
+    $ pip install -r requirements.txt
 
 ### Install the server side code package:
 
 Under the same directory, run:
 
-    python setup.py install
+    $ python setup.py install
 
 ### Run the service
 
 Under the same directory:
 
-    python -m swagger_server
+    $ python -m swagger_server
 
 You should see a message like this:
 
@@ -278,7 +278,7 @@ side code.
 Generate the client side code in a similar fashion as we did for the
 server side code:
 
-    java -jar swagger-codegen-cli.jar generate \
+    $ java -jar swagger-codegen-cli.jar generate \
         -i ~/cloudmesh/cpu.yaml \
         -l python \
         -o ~/cloudmesh/swagger_example/client/cpu \
@@ -293,12 +293,12 @@ based client and a python 2 based server showcasing interoperability
 between python versions (although we just use python 2 here). Thus we
 create ane new python virtual environment and conduct our install.
 
-    virtualenv RESTClient
-    source RESTClient/bin/activate
-    pip install -U pip
-    cd swagger_example/client/cpu
-    pip install -r requirements.txt
-    python setup.py install
+    $ virtualenv RESTClient
+    $ source RESTClient/bin/activate
+    $ pip install -U pip
+    $ cd swagger_example/client/cpu
+    $ pip install -r requirements.txt
+    $ python setup.py install
 
 ### Using the client API to interact with the REST service
 
