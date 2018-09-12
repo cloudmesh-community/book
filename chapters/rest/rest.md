@@ -261,8 +261,8 @@ $ sudo apt-get install -y mongodb-org
 
 On OSX you can use the command
 
-    brew update.
-    brew install mongodb
+    $ brew update
+    $ brew install mongodb
 
 ### Windows 10 Installation of MongoDB
 
@@ -560,7 +560,7 @@ entering the following url in the web browser:
 
 You can also open up a second terminal and type in it
 
-    curl http://127.0.0.1:5000/student/alberts
+    $ curl http://127.0.0.1:5000/student/alberts
 
 The following information will be returned:
 
@@ -809,11 +809,11 @@ queries.
 
 A number of examples to conduct such queries include:
 
-    curl -i -g http://eve-demo.herokuapp.com/people?where={%22lastname%22:%20%22Doe%22}
+    $ curl -i -g http://eve-demo.herokuapp.com/people?where={%22lastname%22:%20%22Doe%22}
 
 A python expression
 
-    curl -i http://eve-demo.herokuapp.com/people?where=lastname=="Doe"
+    $ curl -i http://eve-demo.herokuapp.com/people?where=lastname=="Doe"
 
 ### Pretty Printing
 
@@ -823,18 +823,18 @@ or `?pretty=1`
 If this does not work you can always use python to beautify a json
 output with
 
-    curl -i http://localhost/people?pretty
+    $ curl -i http://localhost/people?pretty
 
 or
 
-    curl -i http://localhost/people | python -m json.tool
+    $ curl -i http://localhost/people | python -m json.tool
 
 ### XML
 
 If for some reason you like to retrieve the information in XML you can
 specify this for example through curl with an Accept header
 
-    curl -H "Accept: application/xml" -i http://localhost
+    $ curl -H "Accept: application/xml" -i http://localhost
 
 ### Extensions to Eve
 
@@ -891,13 +891,13 @@ On windows 10, you need to do the following steps:
   container.}
 On OSX you can use home-brew and install it with:
 
-    brew update
-    brew install mongodb
+    $ brew update
+    $ brew install mongodb
 
 In future we may want to add ssl authentication in which case you may
 need to install it as follows:
 
-    brew install mongodb --with-openssl
+    $ brew install mongodb --with-openssl
 
 ### Starting the service
 
@@ -908,7 +908,7 @@ Important targets are deploy and test.
 
 When using the makefile you can start the services with:
 
-    make deploy
+    $ make deploy
 
 IT will start two terminals. IN one you will see the mongo service, in
 the other you will see the eve service. The eve service will take a file
@@ -920,8 +920,7 @@ sufficient for our case. The mongo data is written into the
 
 To test the services you can say:
 
-    {language=bash}
-    make test
+    $ make test
 
 YOu will se a number of json text been written to the screen.
 
@@ -942,16 +941,16 @@ based on it. The improved code is located at:
 
 You clone it and install on your system as follows:
 
-    cd ~/github
-    git clone https://github.com/cloudmesh/evegenie
-    cd evegenie
-    python setup.py install
-    pip install .
+    $ cd ~/github
+    $ git clone https://github.com/cloudmesh/evegenie
+    $ cd evegenie
+    $ python setup.py install
+    $ pip install .
 
 This should install in your system evegenie. YOu can verify this by
 typing:
 
-    which evegenie
+    $ which evegenie
 
 If you see the path evegenie is installed. With evegenie installed its
 usage is simple:
