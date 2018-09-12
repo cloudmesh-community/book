@@ -1,5 +1,4 @@
-Bare Metal
-==========
+# Bare Metal
 
 In this page you will find documentation guiding you through the
 bare-metal deployment features available in Chameleon. Chameleon gives

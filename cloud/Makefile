@@ -131,6 +131,19 @@ sectionindent:
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 1
 	../bin/header.py dest/chapters/iaas/azure/products.md 2
 	../bin/header.py dest/chapters/iaas/aws/products.md 2
+	../bin/header.py dest/chapters/SECTION-CHAMELEON.md 1 
+	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/resources.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/hardware.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/cli.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/faq.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/user-guide.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/heat.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/start.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/horizon.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/charge.md 2
+
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
@@ -154,6 +167,7 @@ sectionheaders:
 	../bin/section.py 1 "FAQ" > dest/chapters/SECTION-FAQ.md
 	../bin/section.py 1 "Infrastructure as a Service" > dest/chapters/SECTION-IAAS.md
 	../bin/section.py 1 "Appendix" > dest/chapters/SECTION-APPENDIX.md
+	../bin/section.py 1 "Chameleon Cloud" > dest/chapters/SECTION-CHAMELEON.md
 
 ######################################################################
 # END BOOK CLASS

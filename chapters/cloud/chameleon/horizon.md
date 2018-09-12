@@ -1,8 +1,6 @@
-Horizon Graphical User Interface
-================================
+# Horizon Graphical User Interface
 
-Configure resources
--------------------
+## Configure resources
 
 Once your lease is started, you are almost ready to start an instance.
 But first, you need to make sure that you will be able to connect to it
@@ -88,8 +86,7 @@ browser to see the floating IP).
 
 ![image](images/Screen-Shot-2016-10-26-at-16-26-54.png){width="0.8\columnwidth"}
 
-Interact with resources
------------------------
+## Interact with resources
 
 Now you should be able to connect to the instance via SSH using the cc
 account. In a terminal, type ssh cc@\<floating_ip\>, in our example
@@ -165,15 +162,13 @@ generally interested in more detail about image management, please refer
 to our [image management
 guide](https://www.chameleoncloud.org/docs/user-guides/ironic/#snapshotting_an_instance).
 
-Use FPGAs
----------
+## Use FPGAs
 
 Consult the [dedicated
 page](https://www.chameleoncloud.org/docs/bare-metal-user-guide/fpga/) if
 you would like to use the FPGAs available on Chameleon.
 
-Next Step
----------
+## Next Step
 
 Now that you have created some resources, it is time to interact with
 them! You will find instructions to the next step by visiting the

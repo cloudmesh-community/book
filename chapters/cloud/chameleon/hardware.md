@@ -1,5 +1,4 @@
-Hardware
-========
+# Hardware
 
 The Chameleon architecture consists of a set of standard cloud units
 (SCUs), each of which is a single rack with 42 compute nodes, 4 storage
@@ -28,8 +27,7 @@ links, to allow users to examine the effects of a distributed cloud.
 [Detailed information in our Resource Discovery
 Portal](https://www.chameleoncloud.org/user/discovery/)
 
-Standard Cloud Units
---------------------
+## Standard Cloud Units
 
 The homogeneous standard cloud unit is a self-contained rack with all
 the components necessary to run a complete cloud infrastructure, and the
@@ -52,8 +50,7 @@ of configurable storage in the SCU subsystem.
 ![Chameleon Cloud
 Racks](images/Chameleon2.jpeg){width="0.5\columnwidth"}
 
-Network
--------
+## Network
 
 Networking is changing rapidly, and the network fabric is as much a part
 of the research focus of Chameleon as the compute or storage. For the
@@ -66,8 +63,7 @@ connected by 40 Gbps Ethernet links, which connect to the backbone
 Infiniband network (56Gbps) is also deployed on one SCU to allow
 exploration of alternate networks.
 
-Shared Storage
---------------
+## Shared Storage
 
 While storage is dynamically provisioned to researchers to be used as an
 experiment needs within the SCUs, Chameleon also provides a shared
@@ -81,8 +77,7 @@ dozen PowerEdge R630 servers as management nodes to provide for login
 access to the resource, data staging, system monitoring, and hosting
 various OpenStack services.
 
-Heterogeneous Compute Hardware
-------------------------------
+## Heterogeneous Compute Hardware
 
 The heterogeneous hardware includes various technologies: GPU and FPGA
 accelerators, SSD and NVMe storage, low-power ARM, Atom, and Xeon
@@ -136,8 +131,7 @@ For more information on how you can reserve these nodes, see the
 section](https://www.chameleoncloud.org/docs/bare-metal-user-guide/#heterogeneous_hardware)
 of the bare metal user's guide.
 
-Live updates
-------------
+## Live updates
 
 You can browse detailed information about the resources offered for bare
 metal reconfiguration in our [Resource Discovery

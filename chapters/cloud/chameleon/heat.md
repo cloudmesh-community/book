@@ -1,5 +1,4 @@
-HEAT
-====
+# HEAT
 
 Deploying an MPI cluster, an OpenStack installation, or any other type
 of cluster in which nodes can take on multiple roles can be complex: you
@@ -20,8 +19,7 @@ of such clusters. We call this image + template combination complex
 appliance because it consists of more than just the image (i.e.,
 appliance).
 
-Supporting Complex Appliances
------------------------------
+## Supporting Complex Appliances
 
 In a nutshell, complex appliances allow you to specify not only what
 image you want to deploy but also on how many nodes you want to deploy
@@ -55,8 +53,7 @@ to use and configure complex appliances on Chameleon; if you would like
 to know more about Heat, please refer to its [official
 documentation](http://docs.openstack.org/developer/heat/).
 
-Chameleon Appliance Catalog
----------------------------
+## Chameleon Appliance Catalog
 
 Our [Appliance Catalog](https://www.chameleoncloud.org/appliances/) has
 several complex appliances for popular technologies that people want to
@@ -68,8 +65,7 @@ representing a group of machines, as shown in the screenshot:
 
 ![image](images/NFS.png){width="0.5\columnwidth"}
 
-Deployment
-----------
+## Deployment
 
 We will explain how to launch a complex appliance based on our [NFS
 share appliance](https://www.chameleoncloud.org/appliances/25/). To
@@ -164,8 +160,7 @@ information about them. In the "Events" tab you will see information
 about the history of the deployment so far. In Template you will see the
 template that was used to deploy this stack.
 
-Heat Template
--------------
+## Heat Template
 
 The NFS share appliance deploys:
 
@@ -322,8 +317,7 @@ the stack to the user.
         description: Private IP addresses of the NFS clients
         value: { get_attr: [nfs_clients, first_address] }
 
-Customizing an existing template
---------------------------------
+## Customizing an existing template
 
 Customizing an existing template is a good way to start developing your
 own. We will use a simpler template than the previous example to start
@@ -561,8 +555,7 @@ At this stage, we have fully recreated the NFS share appliance starting
 from the Hello World one! The next section will explain how to write a
 new template from scratch.
 
-Writing a new template
-----------------------
+## Writing a new template
 
 You may want to write a whole new template, rather than customizing an
 existing one. Each template should follow the same layout and be
@@ -670,8 +663,7 @@ Generally values will be calls to get_attr, get_param, or some other
 function to get information from parameters or resources deployed by the
 template and return them in the proper format to the user.
 
-Sharing new complex appliances
-------------------------------
+## Sharing new complex appliances
 
 If you have written your own complex appliances or substantially
 customized an existing one, we would love if you shared them with our
@@ -692,8 +684,7 @@ string to your appliance. Once submitted, your appliance will be
 reviewed. We will get in touch if a change is needed, but if it's all
 good we will publish it right away!
 
-Advanced topics
----------------
+## Advanced topics
 
 ### All-to-all information exchange
 

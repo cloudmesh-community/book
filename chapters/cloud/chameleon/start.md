@@ -1,12 +1,10 @@
-Getting Started
-===============
+# Getting Started
 
 We describe how you can get access to chameleon cloud under the
 assumption that you are a student or a researcher that joins an existing
 project on Chameleon cloud. You will need to follow the following steps:
 
-Step 1: Create a Chameleon account
-----------------------------------
+## Step 1: Create a Chameleon account
 
 To get started using Chameleon you will need to [create a user
 account](https://www.chameleoncloud.org/register).
@@ -26,8 +24,7 @@ Chameleon testbed supported by the National Science Foundation".
 As part of creating an account you may request PI status. However you
 are not a PI as you will be joining a project.
 
-Step 2: Create or join a project
---------------------------------
+## Step 2: Create or join a project
 
 To use Chameleon, you will need to be associated with a
 [project](https://www.chameleoncloud.org/docs/user-faq/#toc-how-do-i-apply-for-a-chameleon-project-)
@@ -67,8 +64,7 @@ cloud name. You can already apply for an account name, but do not apply
 for a project. If you nevertheless apply for a project, we will hear
 from the administrators and you will receive a point deduction.
 
-Step 3: Start using Chameleon!
-------------------------------
+## Step 3: Start using Chameleon!
 
 Now that you have enrolled and once you are added to the project by your
 project lead you can start using chameleon cloud. However be reminded

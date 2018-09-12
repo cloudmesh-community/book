@@ -1,5 +1,4 @@
-Chameleon OpenStack
-===================
+# Chameleon OpenStack
 
 OpenStack on Chameleon delivers KVM based compute resources to provision
 virtual machines. It provides various image types on which we can deploy
@@ -17,8 +16,7 @@ technical issues as the command line tools generate full debugging
 messages in case of issues and copy and past into help windows is much
 easier and efficient than copy and past incomplete screenshots.
 
-Outages
--------
+## Outages
 
 Any computer system may undergo maintenance. Before filing tickets with
 Chameleon cloud, make sure that the cloud is operational. Outages are
@@ -30,8 +28,7 @@ To be notified by mail, you can subscribe to them at
 
 <https://www.chameleoncloud.org/user/profile/subscriptions/>
 
-Account Creation
-----------------
+## Account Creation
 
 The fist step to get access Chameleon cloud is to create a user account
 if you do not already have one. You can skip to the next section if you
@@ -44,8 +41,7 @@ The register web page is available at:
 For more details, please als consult the chameleon chapter in the
 handbook.
 
-Join a Project
---------------
+## Join a Project
 
 An active project is required to access compute resources. Each class
 has a particular project number that you will need to write down as you
@@ -64,8 +60,7 @@ are that students provide us with the wrong user name or have not
 applied for a chameleon account. Once the instructor has added you, you
 will be able to use VM's on Chameleon cloud.
 
-Usage Restriction
------------------
+## Usage Restriction
 
 As using VM's in a shared environment cost resources, you are
 **REQUIRED** to shut down your resources after you are not using them
@@ -76,8 +71,7 @@ you close the lid of your laptop when not in use. Shutting down the VM
 is similar and avoids that you unnecessarily use resources that others
 could use in a shared environment.
 
-OpenStack RC File
------------------
+## OpenStack RC File
 
 We will use the Nova command line tools for Chameleon OpenStack and to
 authorize our account on the command line tools. To do so, you will need
@@ -176,8 +170,7 @@ sourcing it again. The environment variables are enabled while your
 terminal is alive. In case you have not stored the original RC file in
 the Downloads folder, please copy it from that location instead.
 
-CLI to Manage Virtual Machines
-------------------------------
+## CLI to Manage Virtual Machines
 
 OpenStack provides a commandline tool called *nova* to manage virtual
 machines. To install it please use the command
@@ -203,8 +196,7 @@ You will see an output similar to
     | 1fe5138b-300b-4b30-8d22-e7287... | CC-CentOS7       | ACTIVE |         |
     ...
 
-Creating SSH keys
------------------
+## Creating SSH keys
 
 Naturally you will need an ssh key. If you do not have an existing SSH
 keypair, you can create one. Please see
@@ -215,8 +207,7 @@ more details:
 ssh-keygen -t rsa -C albert@example.edu
 ```
 
-KeyPair Registration
---------------------
+## KeyPair Registration
 
 Once you have completed the installation of nova, you also need to
 register a ssh keypair with openstack to be able to log into the virtual
@@ -241,8 +232,7 @@ You will see an output similar to:
     | $CC_PREFIX-key | cf:04:06:aa:8b:76:af:77:aa:0a:b5:87:ff:0f:ba:97 |
     +-----------------+-------------------------------------------------+
 
-Start a new VM instance
------------------------
+## Start a new VM instance
 
 To start new instances you can use the *nova boot* command. It will
 start a VM instance. You can use some parameters to specify which base
@@ -258,8 +248,7 @@ where the 01 indicates the instance number. Note that we will be
 terminating and deleting any VM in our project that does not follow this
 naming convention.
 
-Floating IP Address
--------------------
+## Floating IP Address
 
 If your new VM instance is up and running, it needs an external ip
 address which is also called floating IP address. A floating IP allows
@@ -305,8 +294,7 @@ ssh cc@129.114.111.37
 Note that *cc* is login name your VM if you start a VM with the official
 Chameleon cloud image.
 
-Termination of VM Instance
---------------------------
+## Termination of VM Instance
 
 If you completed your work on your VM instance, you have to terminate
 your VM and release a floating IP address associated with. For example,
