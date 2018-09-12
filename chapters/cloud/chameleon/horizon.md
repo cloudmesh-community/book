@@ -89,8 +89,10 @@ browser to see the floating IP).
 ## Interact with resources
 
 Now you should be able to connect to the instance via SSH using the cc
-account. In a terminal, type ssh cc@<floating_ip>, in our example
-this would be `ssh cc@130.202.88.241`
+account. In a terminal, type ssh cc@*floating_ip*, in our example
+this would be
+
+    $ ssh cc@130.202.88.241
 
 SSH will probably tell you:
 
