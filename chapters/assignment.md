@@ -55,7 +55,7 @@ The following sections can be contributed by students. Multiple
 sections will count towards your fulfillment of contributing a
 chapter.
 
-* [Lambda Expressions](#lambda-expressions)
+* :new:[Lambda Expressions](#lambda-expressions) - contributed by student
 * [Generators](#generators)
 * [Non Blocking Threads](#non-blocking-threads)
 * [Subprocess](#subprocess)
