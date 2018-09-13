@@ -1,4 +1,4 @@
-Python Installation
+Python Installation {#s-python-install}
 -------------------
 
 Python is easy to install and very good instructions for most platforms
