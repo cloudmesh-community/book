@@ -984,6 +984,14 @@ array of names, i.e. `all_names`.
 
 As you can see, the names are successfully filtered as we expected. 
 
+In Python3, filter function returns a filter object or the iterator which gets lazily evaluated which means neither we can access the elements of the filter object with index nor we can use len() to find the length of the filter object.
+
+	list_a = [1, 2, 3, 4, 5]
+	filter_obj = filter(lambda x: x % 2 == 0, list_a) # filter object <filter at 0x4e45890>
+	even_num = list(filter_obj) # Converts the filer obj to a list
+	print(even_num) # Output: [2, 4]
+	
+
 =======
 In Python, we can have a small usually a single liner anonymous function called Lambda function which can have any number of arguments just like a normal function but with only one expression with no return statement. The result of this expression can be applied to a value. 
 
@@ -1034,7 +1042,27 @@ If we want to write same function using Lambda
 
 	map(lambda x: x*2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
   
-  
+Now, lets see how we can interate over a dictionary using map and lambda
+Lets say we have a dictionary object
+
+	dict_movies = [{'movie': 'avengers', 'comic': 'marvel'}, {'movie': 'superman', 'comic': 'dc'}]
+
+We can iterate over this dictionary and read the elements of it using map and lambda functions in following way:
+
+	map(lambda x : x['movie'], dict_movies)  # Output: ['avengers', 'superman']
+	map(lambda x : x['comic'],  dict_movies)  # Output: ['marvel', 'dc']
+	map(lambda x : x['movie'] == "avengers", dict_movies)  # Output: [True, False]
+	
+In Python3, map function returns an iterator or map object which gets lazily evaluated which means neither we can access the elements of the map object with index nor we can use len() to find the length of the map object.
+We can force convert the map output i.e. the map object to list as shown below:
+
+	map_output = map(lambda x: x*2, [1, 2, 3, 4])
+	print(map_output) # Output: map object: <map object at 0x04D6BAB0>
+	list_map_output = list(map_output)
+	print(list_map_output) # Output: [2, 4, 6, 8]
+	
+
+
 :o: Students can contribute this section
 
 ## Generators
