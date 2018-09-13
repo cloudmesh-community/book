@@ -145,6 +145,7 @@ sectionindent:
 	../bin/header.py dest/chapters/cloud/chameleon/horizon.md 2
 	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
 	../bin/header.py dest/chapters/cloud/chameleon/charge.md 2
+	../bin/header.py dest/chapters/prg/python/opencv/opencv.md 2
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
