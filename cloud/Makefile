@@ -120,6 +120,7 @@ sectionindent:
 	../bin/header.py dest/chapters/prg/julia/julia-language.md 1
 	../bin/header.py dest/chapters/msg/mqtt.md 2
 	../bin/header.py dest/chapters/msg/graphql.md 2
+	../bin/header.py dest/chapters/msg/avro.md 2
 	../bin/header.py dest/chapters/faq.md 1
 	../bin/header.py dest/chapters/faq-516.md 2
 	../bin/header.py dest/chapters/SECTION-DEVTOOLS.md 1
@@ -147,6 +148,7 @@ sectionindent:
 	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
 	../bin/header.py dest/chapters/cloud/chameleon/charge.md 2
 	../bin/header.py dest/chapters/prg/python/opencv/opencv.md 2
+	../bin/header.py dest/chapters/prg/python/opencv/secchi.md 3
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
