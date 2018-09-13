@@ -35,6 +35,8 @@ book = [
     "karankotz",
     "Javier Diaz",
     "Swarnima H. Sowani",
+    "Ravinder Lambadi",
+    "Orly Esteban"
 ]
     
 names = names + book
