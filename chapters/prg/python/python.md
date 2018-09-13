@@ -1,4 +1,4 @@
-## Statements and Strings {#spythonlanguage}
+## Statements and Strings {#s-python-language}
 
 
 TODO: some of the python examples assume REPL, but its better to use a
