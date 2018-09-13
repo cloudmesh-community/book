@@ -61,7 +61,20 @@
         - chapters/container/kubernetes-fs.md
     - chapters/container/exercise.md
     - chapters/container/glossary.md
-    
+
+# MAPREDUCE IS NOT ORGANIZED
+
+- MAPREDUCE:
+    - hadoop-lectures.md
+    - hadoop-installation.md
+    - harp.md
+    - spark-installation.md
+    - spark-lectures.md
+    - spark-streaming.md
+    - spark-udf.md
+    - twister-installation.md
+    - twister.md
+    - twister2-example.md
 
 
 
