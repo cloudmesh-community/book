@@ -154,13 +154,17 @@ The course has the following objectives:
 | 09/17-11/26*                |         | Project Type B    | Build a Significant OpenAPI REST Service |
 | 09/17-11/26*                |         | Project Type C    | Build an Edge Service Interfacing with a Cloud |
 | 09/17-11/26*                |         | Project Type D    | Your own Project Type A, B, or C [upon approval) |
- 
+
+Legend markings
+
+* Class released :white_check_mark:
+* Class under development :o:
+
 </div> 
  
 
 [gregor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md
 [e516-summary.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md
-Legend markings
 [e516-definition.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md
 
 [virtualbox.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualbox.md
@@ -202,9 +206,6 @@ Legend markings
 [go-language.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md
 [go-language.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md
 
-
-* Class released :white_check_mark:
-* Class under development :o:
 
 Students need only to do one project. The project is conducted thought
 the entire semester.
