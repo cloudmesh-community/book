@@ -10,33 +10,33 @@ for line in lines[:-1]:
     names.append(line.strip().split("\t")[1])
 
 book = [
-    "Geoffrey C. Fox",
     "Ankita Rajendra Alshi",
+    "Arnav",
     "Averill Cate, Jr",
     "Bertolt Sobolik",
     "Bo Feng",
     "Fugang Wang",
+    "Fugang Wang",
+    "Geoffrey C. Fox",
     "Gregor von Laszewski",
     "Hyungro Lee",
+    "Javier Diaz",
+    "Juliette Zerick",
     "Miao Jiang",
     "Min Chen",
+    "Orly Esteban",
+    "Ravinder Lambadi",
     "Saber Sheybani",
     "Sandeep Kumar Khandelwal",
     "Silvia Karim",
+    "Swarnima H. Sowani",
     "Tim Whitson",
     "Tyler Balson",
     "Vibhatha Abeykoon",
     "aralshi",
-    "Arnav",
-    "Bertholt Sobolik",
-    "Fugang Wang",
+    "harshadpitkar",
     "janumudvari",
-    "Juliette Zerick",
     "karankotz",
-    "Javier Diaz",
-    "Swarnima H. Sowani",
-    "Ravinder Lambadi",
-    "Orly Esteban"
 ]
     
 names = names + book
