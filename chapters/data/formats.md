@@ -23,8 +23,7 @@ as provided at
 
 * <http://www.yamllint.com/>
 
-An example on how to use yaml in python is provided in
-Figure [\[F:yaml\]](#F:yaml){reference-type="ref" reference="F:yaml"}.
+An example on how to use yaml in python is provided in our next example.
 Please note that YAML is a superset of JSON. Originally YAML was
 designed as a markup language. However as it is not document oriented
 but data oriented it has been recast and it does no longer classify
