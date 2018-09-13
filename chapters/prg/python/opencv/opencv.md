@@ -1,4 +1,4 @@
-OpenCV {#s-opencv} :new:
+OpenCV :new: {#s-opencv}
 ======
 
 OpenCV (Open Source Computer Vision Library) is a library of thousands
