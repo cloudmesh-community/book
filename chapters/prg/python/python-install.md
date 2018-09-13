@@ -145,6 +145,7 @@ You can also install pyenv using curl command in following way:
     curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
     
 Then install its dependencies:
+
     sudo apt-get update && sudo apt-get upgrade
     sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
 
