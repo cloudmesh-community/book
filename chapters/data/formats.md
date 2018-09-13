@@ -1,8 +1,6 @@
-Data Formats
-============
+# Data Formats
 
-YAML
-----
+## YAML
 
 The term *YAML* stand for "YAML Ainot Markup Language". According to the
 Web Page at
@@ -53,8 +51,7 @@ Resources:
 * <https://en.wikipedia.org/wiki/YAML>
 * <http://www.yamllint.com/>
 
-JSON
-----
+## JSON
 
 The term JSON stand for *JavaScript Object Notation*. It is targeted as
 an open-standard file format that emphasizes on integration of
