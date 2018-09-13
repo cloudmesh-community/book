@@ -34,6 +34,13 @@
         - chapters/prg/python/opencv/opencv.md
         - chapters/prg/python/opencv/secchi.md
 
+
+- DATA:
+    - chapters/SECTION-DATA.md
+          - chapters/data/formats.md
+          - chapters/data/mongoengine.md          
+       
+
 - MSG:
     - chapters/MSG.md
         - chapters/msg/mqtt.md
