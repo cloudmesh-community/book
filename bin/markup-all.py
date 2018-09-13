@@ -63,13 +63,12 @@ def convert(filename):
             refid = refid.strip("}")
         if "{github}" not in lines[0]:
             title = title + " {github}"
+        if title.startswith("# "):
+            title = "# [" + title[2:] + "]{.part}"
         if refid:
-            if title.startswith("# "):
-                lines[0] = "# [" + title[2:] + "]{#%s .part}" % refid
-            else:
-                lines[0] = title + "{#%s}" % refid
+            lines[0] = title + "{#%s}" % refid
         else:
-            lines[0] = "# [" + title[2:] + "]{.part}"
+            lines[0] = title
     content = "\n" + "\n".join(lines)
     content = content.replace("{github}", link)
     content = content.replace("{gitcode}", gitcoderoot)
