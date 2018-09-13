@@ -44,7 +44,27 @@ and to get all modules required for test suite, than the run command
 
 	python setup.py install
 
+## Access key
+
+An initial setup is required to be able to access AWS EC2 from BOTO wherein you provide the key and region details. 
+	You can find the key details from IAM console on AWS.
+	
+## BOTO configuration
+
+BOTO can be configured in two ways, either by using the aws configure command if you have AWS Command line interface installed or simply by manually creating and editing the `~/.aws/credentials` file to include below parameters.
+
+	[default]
+	aws_access_key_id = <YOUR_ACCESS_KEY>
+	aws_secret_access_key = <YOUR_SECRET_KEY>
+
+Similar to libcloud, BOTO also requires the region where you would create your EC2 instance, the same can be maintained by creating a config file.
+
+	$ emacs .aws/config
+	[default]
+	region=<region name> # for example us-east
+
 ## EC2 interface of Boto
+
 
 ####  Create connection 
 
@@ -64,6 +84,17 @@ connection = boto3.ec2.connect_to_region('<region name>', aws_access_key_id =
 
 connection object now points to EC2Connection object returned by the function `connect_to_region`.
 
+List EC2 instances
+---------------
+
+The code to list the running instances (if you have some) is very simple:
+
+	import boto3
+	
+	ec2 = boto3.client('ec2')
+	response = ec2.describe_instances()
+	print(response)
+	
 #### Launch a new instance
 
 To launch a new instance with default properties
@@ -94,7 +125,7 @@ running instances.
 Up and running instances can be stopped. Thw `stop_instances` function of connection
 object enables multiple instances to be stopped in one command.
 
-   	connection.stop_instances(instance_ids=['<id1>','<id2>', ...]) 
+	connection.stop_instances(instance_ids=['<id1>','<id2>', ...]) 
     
 
 #### Terminate instance
@@ -104,6 +135,28 @@ function.
 
 	connection.terminate_instances(instance_ids=['<id1>','<id2>', ..]) 
 
+### Reboot instances
+
+The next example showcases how to reboot an instance, which is copied from  <http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html>
+
+	# Code copied form 
+	# http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html
+	import boto3
+	from botocore.exceptions import ClientError
+	
+	ec2 = boto3.client('ec2')
+	
+	try:
+	    ec2.reboot_instances(InstanceIds=['INSTANCE_ID'], DryRun=True)
+	except ClientError as e:
+	    if 'DryRunOperation' not in str(e):
+	        print("You don't have permission to reboot instances.")
+	        raise
+	try:
+	    response = ec2.reboot_instances(InstanceIds=['INSTANCE_ID'], DryRun=False)
+	    print('Success', response)
+	except ClientError as e:
+	    print('Error', e)
 
 
 ## Amazon S3 interface of Boto
@@ -190,5 +243,66 @@ S3Connection object.
 
 ## References 
 
-* <https://github.com/boto/boto>
-* <http://docs.pythonboto.org/en/latest/>
+* <https://github.com/boto/boto3>
+* <https://boto3.readthedocs.io/en/latest/guide/quickstart.html#installation>
+* <http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html>
+
+## Excersises
+
+
+E.boto.cloudmesh.1:
+
+> will will nw create a cloudmesh tool that manages virtual machines on the commandline. For that we copy the code published at 
+
+> * <https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2-example-managing-instances.html>. 
+
+> Modify this code using docopts and look at samples in 
+> 
+> * <https://github.com/cloudmesh-community/cm>
+
+> where we use libcloud. The code from Amazon is.  
+
+```
+import sys
+import boto3
+from botocore.exceptions import ClientError
+
+instance_id = sys.argv[2]
+action = sys.argv[1].upper()
+
+ec2 = boto3.client('ec2')
+
+if action == 'ON':
+    # Do a dryrun first to verify permissions
+    try:
+        ec2.start_instances(InstanceIds=[instance_id], DryRun=True)
+    except ClientError as e:
+        if 'DryRunOperation' not in str(e):
+            raise
+    # Dry run succeeded, run start_instances without dryrun
+    try:
+        response = ec2.start_instances(InstanceIds=[instance_id], DryRun=False)
+        print(response)
+    except ClientError as e:
+        print(e)
+else:
+    # Do a dryrun first to verify permissions
+    try:
+        ec2.stop_instances(InstanceIds=[instance_id], DryRun=True)
+    except ClientError as e:
+        if 'DryRunOperation' not in str(e):
+            raise
+    # Dry run succeeded, call stop_instances without dryrun
+    try:
+        response = ec2.stop_instances(InstanceIds=[instance_id], DryRun=False)
+        print(response)
+    except ClientError as e:
+        print(e)
+```
+E.boto.cloudmesh.2:
+
+> Integrate, start, stop, rebot, and other useful functions
+
+E.boto.cloudmesh.3:
+
+> Discuss the advantages of docopts.
