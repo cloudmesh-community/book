@@ -116,7 +116,14 @@ sectionindent:
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
 	../bin/header.py dest/chapters/MSG.md 1
-	../bin/header.py dest/chapters/prg/go/go-language.md 1
+  ../bin/header.py dest/chapters/prg/go/go-language.md 1
+  ../bin/header.py dest/chapters/prg/go/go-intro.md 2
+  ../bin/header.py dest/chapters/prg/go/go-cmd.md 2
+  ../bin/header.py dest/chapters/prg/go/go-editor.md 2
+  ../bin/header.py dest/chapters/prg/go/go-install.md 2
+  ../bin/header.py dest/chapters/prg/go/go-language.md 2
+  ../bin/header.py dest/chapters/prg/go/go-libraries.md 2
+  ../bin/header.py dest/chapters/prg/go/go-links.md 2
 	../bin/header.py dest/chapters/prg/julia/julia-language.md 1
 	../bin/header.py dest/chapters/msg/mqtt.md 2
 	../bin/header.py dest/chapters/msg/graphql.md 2
