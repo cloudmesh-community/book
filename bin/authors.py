@@ -34,7 +34,7 @@ book = [
     "Juliette Zerick",
     "karankotz",
     "Javier Diaz",
-    "Swarnima H. Sowani"
+    "Swarnima H. Sowani",
 ]
     
 names = names + book
