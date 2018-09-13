@@ -931,8 +931,60 @@ Let us break this down a bit.
     capabilities](https://docs.python.org/2/library/string.html#format-string-syntax)
     to insert values into the string we are displaying.
 
-## Lambda Expressions
+## Lambda Expressions :new:
 
+As oppose to normal functions in Python which are defined using the `def`
+keyword, lambda functions in Python are anonymous functions which do not have a
+name and are defined using the `lambda` keyword. The generic syntax of a lambda
+function is in form of`lambda arguments: expression`, as shown in the following
+example: 
+
+```python
+greeter = lambda x: print('Hello %s!'%x)
+greeter('George')
+```
+As you could probably guess, the result is: 
+
+```python
+>>> greeter('George')
+Hello George!
+```
+
+Now consider the following examples:
+
+```python
+power2 = lambda x: x ** 2 
+```
+The `power2` function defined in the expression above, is equivalent to the
+following definition: 
+
+```python
+def power2(x):
+    return x ** 2 
+```
+
+Lambda functions are useful for when you need a function for a short period of
+time. Note that they can also be very useful when passed as an argument with
+other built-in functions that take a function as an argument, e.g. `filter()` and
+`map()`. In the next example we show how a lambda function can be combined with
+the `filer` function. Consider the array `all_names` which contains five words
+that rhyme together. We want to filter the words that contain the word
+`name`. To achieve this, we pass the function `lambda x: 'name' in x` as the
+first argument. This lambda function returns `True` if the word `name` exists as
+a sub-string in the string `x`. The second argument of `filter` function is the
+array of names, i.e. `all_names`. 
+
+
+```python
+>>> all_names = ['surname', 'rename', 'nickname', 'acclaims', 'defame']
+>>> filtered_names = list(filter(lambda x: 'name' in x, all_names))
+>>> filtered_names
+['surname', 'rename', 'nickname']
+```
+
+As you can see, the names are successfully filtered as we expected. 
+
+=======
 In Python, we can have a small usually a single liner anonymous function called Lambda function which can have any number of arguments just like a normal function but with only one expression with no return statement. The result of this expression can be applied to a value. 
 
 Basic Syntax:
