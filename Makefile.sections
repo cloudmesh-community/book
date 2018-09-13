@@ -31,7 +31,8 @@ PYTHON=\
   chapters/prg/python/python-matplotlib.md\
   chapters/prg/python/python-cmd5.md\
   chapters/prg/python/python-cmd.md \
-  chapters/prg/python/opencv/opencv.md
+  chapters/prg/python/opencv/opencv.md \
+  chapters/prg/python/opencv/secchi.md
 
 
 ######################################################################
@@ -94,6 +95,7 @@ CHAPTER_516=\
   chapters/MSG.md\
   chapters/msg/mqtt.md\
   chapters/msg/graphql.md\
+  chapters/msg/avro.md\
   chapters/SECTION-FAQ.md\
   chapters/faq.md\
   chapters/faq-516.md\

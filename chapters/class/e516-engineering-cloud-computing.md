@@ -114,7 +114,8 @@ The course has the following objectives:
 | :white_check_mark: 08/31    |         |                   | - [Data Management](s-python-data)[:cloud:][python-data.md] |
 | :white_check_mark: 08/31    |         |                   | - [Matplotlib](#matplotlib)[:cloud:][python-matplotlib.md] |
 | :white_check_mark: 08/31    |         |                   | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[:cloud:][python-cmd5.md] |
-| :new: 09/13    |         |                   | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
+| :new: 09/13                 |         |                   | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
+| :new: 09/13                 |         |                   | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
 | :white_check_mark: 09/03    |         |                   | [Data Center][datacenter.md] |
 | :white_check_mark: 09/10    | 4       | Architecture      | [NIST Big Data Reference Architecture](#nist-big-data -reference-architecture)[:cloud:][bdra.md] |
 | :white_check_mark: 09/15    | 5       | Infrastructure    | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
@@ -207,6 +208,7 @@ Legend markings
 [go-language.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md
 [go-language.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md
 [opencv.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/opencv/opencv.md
+[secchi.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/opencv/secchi.md
 
 Students need only to do one project. The project is conducted thought
 the entire semester.

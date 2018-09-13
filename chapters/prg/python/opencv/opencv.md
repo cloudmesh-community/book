@@ -1,5 +1,4 @@
-OpenCV :new: {#s-opencv}
-======
+# OpenCV :new: {#s-opencv}
 
 OpenCV (Open Source Computer Vision Library) is a library of thousands
 of algorithms for various applications in computer vision and machine
@@ -23,7 +22,7 @@ package (scipy.ndimage).
 Installation
 ------------
 
-OpenCV for Python can be installeed on Linux in multiple ways, namely
+OpenCV for Python can be installed on Linux in multiple ways, namely
 PyPI(Python Package Index), Linux package manager (apt-get for Ubuntu),
 Conda package manager, and also building from source. You are
 recommended to use PyPI. Here's the command that you need to run:
@@ -84,7 +83,7 @@ Now you can use:
     import matplotlib.pyplot as plt
     plt.imshow(img)
 
-which resuts in
+which results in
 
 ![**Figure:** Image display](images/opencv/output_5_1.png)
 
@@ -158,6 +157,6 @@ feature detection, object recognition and many more. You can find out
 more about them in their website
 
 [OpenCV](<https://docs.opencv.org/3.0-beta/index.html>
-) was initially developed for C++ and still has a focus on that
+was initially developed for C++ and still has a focus on that
 language, but it is still one of the most valuable image processing
 libraries in Python.
