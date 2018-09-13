@@ -1,4 +1,6 @@
-## Go
+## Go Links
+
+Section provided by Gregor
 
 * <https://cse.sc.edu/~mgv/csce330f16/pres/330f15_BarnhartReevesLee_Go.pptx>
 * <http://www.cis.upenn.edu/~matuszek/cis554-2016/Talks/Golang_Presentation.ppt>
@@ -20,7 +22,7 @@
 
 * <https://www.tiobe.com/tiobe-index/>
 
-### PYPL PopularitY of Programming Language
+### PYPL Popularity of Programming Language
 
 ``The PYPL PopularitY of Programming Language Index is created by analyzing how often language tutorials are searched on Google.
 
