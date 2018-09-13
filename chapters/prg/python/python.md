@@ -933,6 +933,56 @@ Let us break this down a bit.
 
 ## Lambda Expressions
 
+In Python, we can have a small usually a single liner anonymous function called Lambda function which can have any number of arguments just like a normal function but with only one expression with no return statement. The result of this expression can be applied to a value. 
+
+Basic Syntax:
+
+	lambda arguments : expression
+
+For an example: a function in python
+	
+	def multiply(a, b):
+		return a*b
+		
+	#call the function
+	multiply(3*5) #outputs: 15
+	
+Same function can written as Lambda function. This function named as multiply is having 2 arguments and returns their multiplication.
+
+Lambda equivalent for above function would be:
+
+	multiply = Lambda a, b : a*b
+	
+	print multiply(3, 5) #outputs: 15
+	
+Here a and b are the 2 arguments and a*b is the expression whose value is returned as an output.
+
+Also we don't need to assign Lambda function to a variable.
+
+	(lambda a, b : a*b)(3*5)
+	
+Lambda functions are mostly passed as parameter to a function which expects a function objects like in map or filter.
+
+map
+
+Basic Syntax
+
+	map(function_object, iterable1, iterable2,...)
+	
+map functions expects a function object and any number of iterables like list or dictionary. It executes the function_object for each element in the sequence and returns a list of the elements modified by the function object.
+
+Example:
+
+	def multiply(x):
+	return x * 2
+    
+	map(multiply2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
+	
+If we want to write same function using Lambda
+
+	map(lambda x: x*2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
+  
+  
 :o: Students can contribute this section
 
 ## Generators
