@@ -21,6 +21,8 @@ Here is a good blog article discussing [Why should you learn Go?](https://medium
 
 Regarding the design philosophy behind the Go language, the following is [an excerpt from the designers](https://golang.org/doc/faq#principles):
 
+:o: this is way to much copying:
+
 > When Go was designed, Java and C++ were the most commonly used
 > languages for writing servers, at least at Google. We felt that
 > these languages required too much bookkeeping and repetition. Some

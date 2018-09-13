@@ -89,8 +89,8 @@ CHAPTER_516=\
   chapters/iaas/libcloud.md\
   $(DEVTOOLS)\
   $(PYTHON)\
-  chapters/prg/go/go-language.md\
   chapters/prg/go/go-intro.md\
+  chapters/prg/go/go-language.md\
   chapters/prg/go/go-install.md\
   chapters/prg/go/go-editor.md\
   chapters/prg/go/go-cmd.md\
