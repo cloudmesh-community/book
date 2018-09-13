@@ -55,8 +55,11 @@ The following sections can be contributed by students. Multiple
 sections will count towards your fulfillment of contributing a
 chapter.
 
-* :new: [Lambda Expressions](#lambda-expressions) - contributed by student
-* [Generators](#generators)
+Make sure that you claim a section in piazza and add your hid here when you work on it.
+Make sure to add yourself if you know you can complete the section in two days.
+
+* :new: [Lambda Expressions](#lambda-expressions) - already contributed by student
+* :hand: [Generators](#generators) - fa18-516-18 works on this
 * [Non Blocking Threads](#non-blocking-threads)
 * [Subprocess](#subprocess)
 * [Queue](#queue)
