@@ -55,15 +55,19 @@ def expand_def(vardict, varsdict):
     return vardict
 
 def timestamp_node(node):
-    return "{timestamp}|{node}".format(timestamp=time(),
-                                       node=node)
+    # prefix timestamp to tag to preserve the order
+    # alternatively use a data field in Node for sorting
+    #return "{timestamp}|{node}".format(timestamp=time(),
+    #                                   node=node)
+    return node
+
 def create_tree(adict):
     tree = Tree()
     if type(adict) is dict:
         #print ("procdessing dict to tree...")
         root = list(adict.keys())[0]
         #print (root)
-        tree.create_node(timestamp_node(root), root)
+        tree.create_node(timestamp_node(root), root, data=time())
         for node in list(adict.values()):
             #print ("processing a node of the dict values")
             if type(node) is dict:
@@ -74,9 +78,9 @@ def create_tree(adict):
                     newTree = create_tree(item)
                     tree.paste(root, newTree)
             else:
-                tree.create_node(timestamp_node(node), node, parent=root)
+                tree.create_node(timestamp_node(node), node, parent=root, data=time())
     else:
-        tree.create_node(timestamp_node(adict), adict)
+        tree.create_node(timestamp_node(adict), adict, data=time())
     return tree
 
 def main():
@@ -126,18 +130,25 @@ def main():
                 chapkey = realtag.split("$ref:")[1]
                 newtree = Tree(tree=treechap[chapkey],deep=True)
                 for anode in tree.children(node):
-                    origtag = anode.tag.split("|")[1]
+                    origtag = anode.tag
+                    if "|" in origtag:
+                        origtag = anode.tag.split("|")[1]
                     #print (origtag)
-                    newtree.create_node(timestamp_node(origtag), origtag, parent=newtree.root)
-                    #print (newtree)
+                    newtree.create_node(timestamp_node(origtag), origtag, parent=newtree.root, data=time())
+                # find parent node of the node to be replaced
                 parent = tree.parent(node)
+                # use the old timestamp data to preserve insertion order
+                newtree.get_node(newtree.root).data=tree.get_node(node).data
+                # remove old node
                 tree.remove_subtree(node)
+                # replace with new expanded node
                 tree.paste(parent.identifier, newtree)
 
     for title, tree in treebook.items():
-        #tree.show()
+        print ("=" * 80)
+        tree.show(key=lambda x: x.data)
         print ("-" * 80)
-        for node in tree.expand_tree(mode=Tree.DEPTH):
+        for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
             print (node, tree.level(node))
 
 if __name__ == '__main__':
