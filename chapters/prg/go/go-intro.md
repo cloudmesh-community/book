@@ -1,4 +1,4 @@
-#Introduction to Go 
+# Introduction to Go 
 
 ![Go Logo](https://upload.wikimedia.org/wikipedia/commons/2/23/Go_Logo_Aqua.svg)
 
@@ -9,19 +9,44 @@ Documentation](https://golang.org/doc/).
 
 :o: THIS IS ADVERTISEMENT AND JUST A CLAIM: The Go programming language is an open source project to make programmers more productive.
 
-Go is expressive, concise, clean, and efficient. It's concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
+Go is expressive, concise, clean, and efficient. It's concurrency
+mechanisms make it easy to write programs that get the most out of
+multicore and networked machines, while its novel type system enables
+flexible and modular program construction. Go compiles quickly to
+machine code yet has the convenience of garbage collection and the
+power of run-time reflection. It's a fast, statically typed, compiled
+language that feels like a dynamically typed, interpreted language.
 
 Here is a good blog article discussing [Why should you learn Go?](https://medium.com/exploring-code/why-should-you-learn-go-f607681fad65).
 
 Regarding the design philosophy behind the Go language, the following is [an excerpt from the designers](https://golang.org/doc/faq#principles):
-> When Go was designed, Java and C++ were the most commonly used languages for writing servers, at least at Google. We felt that these 
-> languages required too much bookkeeping and repetition. Some programmers reacted by moving towards more dynamic, fluid languages like 
-> Python, at the cost of efficiency and type safety. We felt it should be possible to have the efficiency, the safety, and the fluidity in
-> a single language.
 
-> Go attempts to reduce the amount of typing in both senses of the word. Throughout its design, we have tried to reduce clutter and complexity. There are no forward declarations and no header files; everything is declared exactly once. Initialization is expressive, automatic, and easy to use. Syntax is clean and light on keywords. Stuttering (foo.Foo* myFoo = new(foo.Foo)) is reduced by simple type derivation using the := declare-and-initialize construct. And perhaps most radically, there is no type hierarchy: types just are, they don't have to announce their relationships. These simplifications allow Go to be expressive yet comprehensible without sacrificing, well, sophistication.
+:o: this is way to much copying:
 
-> Another important principle is to keep the concepts orthogonal. Methods can be implemented for any type; structures represent data while interfaces represent abstraction; and so on. Orthogonality makes it easier to understand what happens when things combine.
+> When Go was designed, Java and C++ were the most commonly used
+> languages for writing servers, at least at Google. We felt that
+> these languages required too much bookkeeping and repetition. Some
+> programmers reacted by moving towards more dynamic, fluid languages
+> like Python, at the cost of efficiency and type safety. We felt it
+> should be possible to have the efficiency, the safety, and the
+> fluidity in a single language.
+
+> Go attempts to reduce the amount of typing in both senses of the
+> word. Throughout its design, we have tried to reduce clutter and
+> complexity. There are no forward declarations and no header files;
+> everything is declared exactly once. Initialization is expressive,
+> automatic, and easy to use. Syntax is clean and light on keywords.
+> Stuttering (foo.Foo* myFoo = new(foo.Foo)) is reduced by simple type
+> derivation using the := declare-and-initialize construct. And
+> perhaps most radically, there is no type hierarchy: types just are,
+> they don't have to announce their relationships. These
+> simplifications allow Go to be expressive yet comprehensible without
+> sacrificing, well, sophistication.
+
+> Another important principle is to keep the concepts orthogonal.
+> Methods can be implemented for any type; structures represent data
+> while interfaces represent abstraction; and so on. Orthogonality
+> makes it easier to understand what happens when things combine.
 
 Go has lots of good features, the following are some examples.
 
@@ -32,11 +57,13 @@ Go has lots of good features, the following are some examples.
 - powerful standard libraries
 
 
-Also, Go lang is gaining popularity among the industry and research communities. Here you can find its increasing usage by [companies globally distributed](https://github.com/golang/go/wiki/GoUsers).
+Also, Go lang is gaining popularity among the industry and research
+communities. Here you can find its increasing usage by
+[companies globally distributed](https://github.com/golang/go/wiki/GoUsers).
 
-The material collected here introduces the reader to the basic concepts
-and features of the Go language and system. After you have worked
-through the material you will be able to:
+The material collected here introduces the reader to the basic
+concepts and features of the Go language and system. After you have
+worked through the material you will be able to:
 
 -   use Go
 -   understand the basic syntax of go
@@ -46,8 +73,8 @@ through the material you will be able to:
 
 This tutorial does not attempt to be comprehensive and cover every
 single feature, or even every commonly used feature. Instead, it
-introduces many of Go's most noteworthy features, and will give you
-a good idea of the language's flavor and style. After reading it, you
+introduces many of Go's most noteworthy features, and will give you a
+good idea of the language's flavor and style. After reading it, you
 will be able to read and write Go packages and programs, and you will
 be ready to learn more about the various Go library modules.
 
@@ -62,7 +89,8 @@ In order to conduct this lesson you need
 References
 ----------
 
-:o: please remove for pay resources, we should never need to pay for this
+:o: please remove for pay resources, we should never need to pay for
+this
 
 Gregor recommends Go refernce card:
 

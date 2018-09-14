@@ -110,6 +110,9 @@ Additionally install readline and some compression tools:
 
 ##### Install pyenv on OSX with Homebrew
 
+This is the recommended way of installing pyenv on macOS High Sierra. This method should also be considered if you get the following error:
+"ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?"
+
 We describe here a mechanism of installing pyenv with homebrew. Other
 mechanisms can be found on the pyenv documentation page
 (<https://github.com/yyuu/pyenv-installer>). You must have homebrew

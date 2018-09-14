@@ -31,7 +31,8 @@ PYTHON=\
   chapters/prg/python/python-matplotlib.md\
   chapters/prg/python/python-cmd5.md\
   chapters/prg/python/python-cmd.md \
-  chapters/prg/python/opencv/opencv.md
+  chapters/prg/python/opencv/opencv.md \
+  chapters/prg/python/opencv/secchi.md
 
 
 ######################################################################
@@ -88,12 +89,19 @@ CHAPTER_516=\
   chapters/iaas/libcloud.md\
   $(DEVTOOLS)\
   $(PYTHON)\
+  chapters/prg/go/go-intro.md\
   chapters/prg/go/go-language.md\
+  chapters/prg/go/go-install.md\
+  chapters/prg/go/go-editor.md\
+  chapters/prg/go/go-cmd.md\
+  chapters/prg/go/go-libraries.md\
+  chapters/prg/go/go-links.md\
   chapters/prg/julia/julia-language.md\
   chapters/prg/scala/scala.md\
   chapters/MSG.md\
   chapters/msg/mqtt.md\
   chapters/msg/graphql.md\
+  chapters/msg/avro.md\
   chapters/SECTION-FAQ.md\
   chapters/faq.md\
   chapters/faq-516.md\

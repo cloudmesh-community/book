@@ -4,6 +4,7 @@ FILENAME=vonLaszewski-bigdata-application
 
 OS=$(shell ../bin/sysinfo.py)
 DOCKER=$(shell ../bin/isdocker.py)
+IMAGE_DIRS=$(shell ../bin/find-image-dirs.py)
 
 MARKUPALL=../bin/markup-all.py
 
@@ -165,7 +166,7 @@ FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
-RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case"
+RESOURCE=--resource-path=$(IMAGE_DIRS)
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 

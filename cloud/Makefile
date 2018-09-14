@@ -4,6 +4,7 @@ FILENAME=vonLaszewski-cloud
 
 OS=$(shell ../bin/sysinfo.py)
 DOCKER=$(shell ../bin/isdocker.py)
+IMAGE_DIRS=$(shell ../bin/find-image-dirs.py)
 
 MARKUPALL=../bin/markup-all.py
 
@@ -115,10 +116,17 @@ sectionindent:
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
 	../bin/header.py dest/chapters/MSG.md 1
-	../bin/header.py dest/chapters/prg/go/go-language.md 1
+	../bin/header.py dest/chapters/prg/go/go-intro.md 1
+	../bin/header.py dest/chapters/prg/go/go-language.md 2
+	../bin/header.py dest/chapters/prg/go/go-cmd.md 2
+	../bin/header.py dest/chapters/prg/go/go-editor.md 2
+	../bin/header.py dest/chapters/prg/go/go-install.md 2
+	../bin/header.py dest/chapters/prg/go/go-libraries.md 2
+	../bin/header.py dest/chapters/prg/go/go-links.md 2
 	../bin/header.py dest/chapters/prg/julia/julia-language.md 1
 	../bin/header.py dest/chapters/msg/mqtt.md 2
 	../bin/header.py dest/chapters/msg/graphql.md 2
+	../bin/header.py dest/chapters/msg/avro.md 2
 	../bin/header.py dest/chapters/faq.md 1
 	../bin/header.py dest/chapters/faq-516.md 2
 	../bin/header.py dest/chapters/SECTION-DEVTOOLS.md 1
@@ -146,11 +154,12 @@ sectionindent:
 	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
 	../bin/header.py dest/chapters/cloud/chameleon/charge.md 2
 	../bin/header.py dest/chapters/prg/python/opencv/opencv.md 2
+	../bin/header.py dest/chapters/prg/python/opencv/secchi.md 3
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
-	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "References" > dest/chapters/SECTION-REFERENCES.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
@@ -197,7 +206,8 @@ FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
-RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud:chapters/msg:chapters/nist"
+RESOURCE=--resource-path=$(IMAGE_DIRS)
+#RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud:chapters/msg:chapters/nist"
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 

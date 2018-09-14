@@ -67,6 +67,8 @@ def convert(filename):
             title = "# [" + title[2:] + "]{.part}"
         if refid:
             lines[0] = title + "{#%s}" % refid
+        else:
+            lines[0] = title
     content = "\n" + "\n".join(lines)
     content = content.replace("{github}", link)
     content = content.replace("{gitcode}", gitcoderoot)

@@ -984,6 +984,14 @@ array of names, i.e. `all_names`.
 
 As you can see, the names are successfully filtered as we expected. 
 
+In Python3, filter function returns a filter object or the iterator which gets lazily evaluated which means neither we can access the elements of the filter object with index nor we can use len() to find the length of the filter object.
+
+	list_a = [1, 2, 3, 4, 5]
+	filter_obj = filter(lambda x: x % 2 == 0, list_a) # filter object <filter at 0x4e45890>
+	even_num = list(filter_obj) # Converts the filer obj to a list
+	print(even_num) # Output: [2, 4]
+	
+
 =======
 In Python, we can have a small usually a single liner anonymous function called Lambda function which can have any number of arguments just like a normal function but with only one expression with no return statement. The result of this expression can be applied to a value. 
 
@@ -1088,6 +1096,176 @@ As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively.
 ## Generators
 
 :o: Students can contribute this section
+=======
+Now, lets see how we can interate over a dictionary using map and lambda
+Lets say we have a dictionary object
+
+	dict_movies = [{'movie': 'avengers', 'comic': 'marvel'}, {'movie': 'superman', 'comic': 'dc'}]
+
+We can iterate over this dictionary and read the elements of it using map and lambda functions in following way:
+
+	map(lambda x : x['movie'], dict_movies)  # Output: ['avengers', 'superman']
+	map(lambda x : x['comic'],  dict_movies)  # Output: ['marvel', 'dc']
+	map(lambda x : x['movie'] == "avengers", dict_movies)  # Output: [True, False]
+	
+In Python3, map function returns an iterator or map object which gets lazily evaluated which means neither we can access the elements of the map object with index nor we can use len() to find the length of the map object.
+We can force convert the map output i.e. the map object to list as shown below:
+
+	map_output = map(lambda x: x*2, [1, 2, 3, 4])
+	print(map_output) # Output: map object: <map object at 0x04D6BAB0>
+	list_map_output = list(map_output)
+	print(list_map_output) # Output: [2, 4, 6, 8]
+	
+
+
+:o: Students can contribute this section
+
+## Generators
+
+What are Generators
+
+Before we go to Generators, lets understand what is an Iterator. Iterators are used to iterate over any container mostly lists performing traversal of the container and accessing the data elements. 
+Generators are also Iterators but they can only be interated over once. Thats because Generators do not store the values in memory instead they generate the values on the go. If we want to print those values then we can either simply iterate over them or use the for loop.
+
+Generators with function
+
+For example: we have a function named as multiplyBy10 which prints all the input numbers multiplied by 10. 
+
+	def multiplyBy10(numbers):
+		result = []
+		for i in numbers:
+			result.append(i*10)
+		return result
+		
+	new_numbers = multiplyBy10([1,2,3,4,5])
+	
+	print new_numbers  #Output: [10, 20, 30, 40 ,50]
+	
+Now, if we want to use Generators here then we will make following changes.
+
+	def multiplyBy10(numbers):
+		for i in numbers:
+			yield(i*10)
+		
+	new_numbers = multiplyBy10([1,2,3,4,5])
+	
+	print new_numbers  #Output: Generators object
+	
+In Generators, we use yield() function in place of return(). So when we try to print new_numbers list now, it just prints Generators object. The reason for this is because Generators dont hold any value in memory, it yields one result at a time. So essentially it is just waiting for us to ask for the next result. To print the next result we can just say  print next(new_numbers) , so how it is working is its reading the first value and squaring it and yielding out value 1. Also in this case we can just print next(new_numbers) 5 times to print all numbers and if we do it for 6th time then we will get an error StopIteration which meanns Generators has exausted its limit and it has no 6th element to print.
+
+	print next(new_numbers)  #Output: 1
+	
+	
+Generators using for loop
+
+If we now want to print the complete list of squared values then we can just do:
+
+	def multiplyBy10(numbers):
+		for i in numbers:
+			yield(i*10)
+		
+	new_numbers = multiplyBy10([1,2,3,4,5])
+	
+	for num in new_numbers:
+		print num  
+		
+		
+#Output: 
+10
+20
+30
+40
+50
+
+Generators with List Comprehension
+
+Python has something called List Comprehension, if we use this then we can replace the complete function def with just: 
+
+	new_numbers = [x*10 for x in [1,2,3,4,5]]
+	print new_numbers  #Output: [10, 20, 30, 40 ,50]
+	
+	
+Here the point to note is square brackets [] in line 1 is very important. If we change it to () then again we will start getting Generators object.
+
+	new_numbers = (x*10 for x in [1,2,3,4,5])
+	print new_numbers  #Output: Generators object
+
+We can get the individual elements again from Generators if we do a for loop over new_numbers like we did above. OR we can convert it into a list and then print it.
+
+	new_numbers = (x*10 for x in [1,2,3,4,5])
+	print list(new_numbers)  #Output: [10, 20, 30, 40 ,50]
+	
+But here if we convert this into a list then we loose on performance, which we will just see next.
+
+Why to use Generators
+
+Generators are better with Performance because it does not hold the values in memory and here with above example its not a big deal since we are dealing with small amount of data but just consider a scenario where the records are in millions of data set. And if we try to convert millions of data elements into a list then that will definitely make an impact on memory and performance because everything will in memory.
+
+Lets see an example on how Generators help in Performance.
+First, without Generators, normal function taking 1 million record and returns the result[people] for 1 million.
+
+	names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
+	majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
+
+	print 'Memory (Before): {}Mb'.format(mem_profile.memory_usage_resource()) # prints the memory before we run the function
+	
+	def people_list(people):
+		result = []
+		for i in range(people):
+			person = {
+					'id' : i,
+					'name' : random.choice(names),
+					'major' : randon.choice(majors)
+					}
+			result.append(person)
+		return result
+
+	t1 = time.clock()
+	people = people_list(10000000)
+	t2 = time.clock()		
+
+	print 'Memory (After): {}Mb'.format(mem_profile.memory_usage_resource()) # prints the memory after we run the function
+	print 'Took {} seconds'.format(t2-t1)
+	
+	#Output
+	Memory (Before): 15Mb
+	Memory (After): 318Mb
+	Took 1.2 seconds
+	
+I am just giving approximate values to compare it with next execution but we just try to run it we will see a serious consumption of memory with good amount of time taken.
+	
+	names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
+	majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
+
+	print 'Memory (Before): {}Mb'.format(mem_profile.memory_usage_resource()) # prints the memory before we run the function
+	
+	def people_generator(people):
+		for i in xrange(people):
+			person = {
+					'id' : i,
+					'name' : random.choice(names),
+					'major' : randon.choice(majors)
+					}
+			yield person
+			
+	t1 = time.clock()
+	people = people_list(10000000)
+	t2 = time.clock()		
+
+	print 'Memory (After): {}Mb'.format(mem_profile.memory_usage_resource()) # prints the memory after we run the function
+	print 'Took {} seconds'.format(t2-t1)
+	
+	#Output
+	Memory (Before): 15Mb
+	Memory (After): 15Mb
+	Took 0.01 seconds
+	
+Now after running the same code using Generators, we will see a significant amount of performance boost with alomost 0 Seconds. And the reason behind this is that in case of Generators, we do not keep anything in memory so system just reads 1 at a time and yields that.
+
+
+
+:o: Students can contribute this section 
+
 
 ## Non Blocking Threads
 
