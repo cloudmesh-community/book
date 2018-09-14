@@ -6,10 +6,11 @@ TODO: some of the python examples assume REPL, but its better to use a
 Let us explore the syntax of Python. Type into the interactive loop and
 press Enter:
 
-```python
+``` python
 print("Hello world from Python!")
-# Hello world from Python!
 ```
+
+# Hello world from Python!
 
 What happened: the print function was given a **string** to process. A
 string is a sequence of characters. A **character** can be a alphabetic
@@ -26,27 +27,26 @@ read the line `print ("Hello world from Python!")`, split it into the
 print statement and the `"Hello world from Python!"` string, and then
 executed the line, showing you the output.
 
-Variables
----------
+## Variables
 
 You can store data into a **variable** to access it later. For instance,
 instead of:
 
-```python
+``` python
 print('Hello world from Python!')
 ```
 
 which is a lot to type if you need to do it multiple times, you can
 store the string in a variable for convenient access:
 
-```python
+``` python
 hello = 'Hello world from Python!'
 print(hello)
-# Hello world from Python!
 ```
 
-Data Types
-----------
+# Hello world from Python!
+
+## Data Types
 
 ### Booleans
 
@@ -64,7 +64,7 @@ You can combine booleans with **boolean operators**:
 -   or
 
 
-```python
+``` python
 print(True and True)
 # True
 
@@ -89,7 +89,7 @@ print(False or False)
 The interactive interpreter can also be used as a calculator. For
 instance, say we wanted to compute a multiple of 21:
 
-```python
+``` python
 print(21 * 2)
 # 42
 ```
@@ -102,8 +102,8 @@ point** numbers, or **float** for short).
 The mathematical operators compute the related mathematical operation to
 the provided numbers. Some operators are:
 
-| Operator | Function |
-| --- | -------------- |
+|  Operator | Function |
+| --- | --- | --- |
 | * |   multiplication |
 | / |   division |
 | + |   addition |
@@ -114,7 +114,7 @@ Exponentiation $x^y$ is written as x\*\*y is x to the yth power.
 
 You can combine **float**s and **int**s:
 
-```python
+``` python
 print(3.14 * 42 / 11 + 4 - 2)
 # 13.9890909091
 
@@ -126,7 +126,7 @@ Note that **operator precedence** is important. Using parenthesis to
 indicate affect the order of operations gives a difference results, as
 expected:
 
-```python
+``` python
 print(3.14 * (42 / 11) + 4 - 2)
 # 11.42
 
@@ -137,8 +137,7 @@ print( (1 + 2) * (3 - 4) / 5.0 )
 # -0.6
 ```
 
-Module Management
------------------
+## Module Management
 
 A module allows you to logically organize your Python code. Grouping
 related code into a module makes the code easier to understand and use.
@@ -156,7 +155,7 @@ module. The from...import Statement Python's from statement lets you
 import specific attributes from a module into the current namespace. It
 is preferred to use for each import its own line such as:
 
-```python
+``` python
 import numpy
 import matplotlib
 ```
@@ -172,12 +171,11 @@ Python's from statement lets you import specific attributes from a
 module into the current namespace. The from ... import has the following
 syntax:
 
-```python
+``` python
 from datetime import datetime
 ```
 
-Date Time in Python
--------------------
+## Date Time in Python
 
 The datetime module supplies classes for manipulating dates and times in
 both simple and complex ways. While date and time arithmetic is
@@ -188,61 +186,61 @@ functionality, see also the time and calendar modules.
 The import Statement You can use any Python source file as a module by
 executing an import statement in some other Python source file.
 
-```python
+``` python
 from datetime import datetime
 ```
 
 This module offers a generic date/time string parser which is able to
 parse most known formats to represent a date and/or time.
 
-```python
-    from dateutil.parser import parse
+``` python
+from dateutil.parser import parse
 ```
 
 pandas is an open source Python library for data analysis that needs to
 be imported.
 
-```python
+``` python
 import pandas as pd
 ```
 
 Create a string variable with the class start time
 
-```python
+``` python
 fall_start = '08-21-2018'
 ```
 
 Convert the string to datetime format
 
-```python 
+``` python 
 datetime.strptime(fall_start, '%m-%d-%Y') \#
 datetime.datetime(2017, 8, 21, 0, 0)
 ```
 
 Creating a list of strings as dates
 
-```python
+``` python
 class_dates = ['8/25/2017', '9/1/2017', '9/8/2017', '9/15/2017', '9/22/2017', '9/29/2017']
 ```
 
 Convert Class_dates strings into datetime format and save the list into
 variable a
 
-```python
+``` python
 a = [datetime.strptime(x, '%m/%d/%Y') for x in class_dates]
 ```
 
 Use parse() to attempt to auto-convert common string formats. Parser
 must be a string or character stream, not list.
 
-```python
+``` python
 parse(fall_start)
 # datetime.datetime(2017, 8, 21, 0, 0)
 ```
 
 Use parse() on every element of the Class_dates string.
 
-```python
+``` python
 [parse(x) for x in class_dates] 
 # [datetime.datetime(2017, 8, 25, 0, 0),
 #   datetime.datetime(2017, 9, 1, 0, 0),
@@ -254,7 +252,7 @@ Use parse() on every element of the Class_dates string.
 
 Use parse, but designate that the day is first.
 
-```python
+``` python
 parse (fall_start, dayfirst=True)
 # datetime.datetime(2017, 8, 21, 0, 0)
 ```
@@ -263,7 +261,7 @@ Create a dataframe.A DataFrame is a tabular data structure comprised of
 rows and columns, akin to a spreadsheet, database table. DataFrame as a
 group of Series objects that share an index (the column names).
 
-```python
+``` python
 import pandas as pd
 data = {
   'dates': [
@@ -289,7 +287,7 @@ print(df)
 
 Convert `` df[`date`] `` from string to datetime
 
-```python
+``` python
 import pandas as pd
 pd.to_datetime(df['dates'])
 # 0   2017-08-25 18:47:05.069722
@@ -301,8 +299,7 @@ pd.to_datetime(df['dates'])
 # Name: dates, dtype: datetime64[ns]
 ```
 
-Control Statements
-------------------
+## Control Statements
 
 ### Comparison
 
@@ -310,8 +307,8 @@ Computer programs do not only execute instructions. Occasionally, a
 choice needs to be made. Such as a choice is based on a condition.
 Python has several conditional operators:
 
-| Operator | Function |
-| --- | -------------- |
+## | Operator | Function |
+--- | --- | ---
 | > |   greater than |
 | < |  smaller than |
 | == |   equals |
@@ -320,7 +317,7 @@ Python has several conditional operators:
 Conditions are always combined with variables. A program can make a
 choice using the if keyword. For example:
 
-```python
+``` python
 x = int(input("Guess x:"))
 if x == 4:
    print('Correct!')
@@ -330,7 +327,7 @@ In this example, *You guessed correctly!* will only be printed if the
 variable x equals to four (see table above). Python can also execute
 multiple conditions using the elif and else keywords.
 
-```python
+``` python
 x = int(input("Guess x:"))
 if x == 4:
     print('Correct!')
@@ -345,7 +342,7 @@ else:
 To repeat code, the for keyword can be used. For example, to display the
 numbers from 1 to 10, we could write something like this:
 
-```python
+``` python
 for i in range(1, 11):
    print('Hello!')
 ```
@@ -354,7 +351,7 @@ The second argument to range, *11*, is not inclusive, meaning that the
 loop will only get to *10* before it finishes. Python itself starts
 counting from 0, so this code will also work:
 
-```python
+``` python
 for i in range(0, 10):
    print(i + 1)
 ```
@@ -362,14 +359,14 @@ for i in range(0, 10):
 In fact, the range function defaults to starting value of *0*, so the
 above is equivalent to:
 
-```python
+``` python
 for i in range(10):
    print(i + 1)
 ```
 
 We can also nest loops inside each other:
 
-```python
+``` python
 for i in range(0,10):
     for j in range(0,10):
         print(i,' ',j)
@@ -378,8 +375,7 @@ for i in range(0,10):
 In this case we have two nested loops. The code will iterate over the
 entire coordinate range (0,0) to (9,9)
 
-Datatypes
----------
+## Datatypes
 
 ### Lists
 
@@ -389,9 +385,9 @@ Lists in Python are ordered sequences of elements, where each element
 can be accessed using a 0-based index.
 
 To define a list, you simply list its elements between square brackets
-'\[\]':
+'[ ]':
 
-```python
+``` python
 names = [
   'Albert',
   'Jane',
@@ -410,7 +406,7 @@ You can also use a negative index if you want to start counting elements
 from the end of the list. Thus, the last element has index *-1*, the
 second before last element has index *-2* and so on:
 
-```python
+``` python
 # access the last element of the list
 names[-1] 
 # 'Abby'
@@ -422,7 +418,7 @@ names[-2]
 Python also allows you to take whole slices of the list by specifying a
 beginning and end of the slice separated by a colon
 
-```python
+``` python
 # the middle elements, excluding first and last
 names[1:-1] 
 # ['Jane', 'Liz', 'John']
@@ -436,7 +432,7 @@ list.
 
 You can add elements with append':
 
-```python
+``` python
 names.append('Liz')
 names
 # ['Albert', 'Jane', 'Liz',
@@ -447,7 +443,7 @@ As you can see, the elements in a list need not be unique.
 
 Merge two lists with 'extend':
 
-```python
+``` python
 names.extend(['Lindsay', 'Connor'])
 names
 # ['Albert', 'Jane', 'Liz', 'John',
@@ -456,13 +452,13 @@ names
 
 Find the index of the first occurrence of an element with 'index':
 
-```python 
+``` python 
 names.index('Liz') \# 2
 ```
 
 Remove elements by value with 'remove':
 
-```python
+``` python
 names.remove('Abby')
 names
 # ['Albert', 'Jane', 'Liz', 'John',
@@ -471,7 +467,7 @@ names
 
 Remove elements by index with 'pop':
 
-```python
+``` python
 names.pop(1)
 # 'Jane'
 names
@@ -485,7 +481,7 @@ not.
 If you are familiar with stacks from other programming languages, you
 can use insert and 'pop':
 
-```python
+``` python
 names.insert(0, 'Lincoln')
 names
 # ['Lincoln', 'Albert', 'Liz',
@@ -502,7 +498,7 @@ The Python documentation contains a [full list of list operations]().
 To go back to the range function you used earlier, it simply creates a
 list of numbers:
 
-```python
+``` python
 range(10)
 # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 range(2, 10, 2)
@@ -513,7 +509,7 @@ range(2, 10, 2)
 
 Python lists can contain duplicates as you saw above:
 
-```python
+``` python
 names = ['Albert', 'Jane', 'Liz',
          'John', 'Abby', 'Liz']
 ```
@@ -521,7 +517,7 @@ names = ['Albert', 'Jane', 'Liz',
 When we do not want this to be the case, we can use a
 [set](https://docs.python.org/2/library/stdtypes.html#set):
 
-```python
+``` python
 unique_names = set(names)
 unique_names
 # set(['Lincoln', 'John', 'Albert', 'Liz', 'Lindsay'])
@@ -530,7 +526,7 @@ unique_names
 Keep in mind that the *set* is an unordered collection of objects, thus
 we can not access them by index:
 
-```python
+``` python
 unique_names[0]
 # Traceback (most recent call last):
 #   File "<stdin>", line 1, in <module>
@@ -539,7 +535,7 @@ unique_names[0]
 
 However, we can convert a set to a list easily:
 
-```python
+``` python
 unique_names = list(unique_names) 
 unique_names [`Lincoln', `John', `Albert', `Liz', `Lindsay']
 unique_names[0]
@@ -578,7 +574,7 @@ array, while the set is implemented by a hash table.
 We will demonstrate this with an example. Let's say we have a list and a
 set of the same number of elements (approximately 100 thousand):
 
-```python
+``` python
 import sys, random, timeit
 nums_set = set([random.randint(0, sys.maxint) for _ in range(10**5)])
 nums_list = list(nums_set)
@@ -590,7 +586,7 @@ We will use the [timeit](https://docs.python.org/2/library/timeit.html)
 Python module to time 100 operations that test for the existence of a
 member in either the list or set:
 
-```python
+``` python
 timeit.timeit('random.randint(0, sys.maxint) in nums', 
               setup='import random; nums=%s' % str(nums_set), number=100)
 # 0.0004038810729980469
@@ -611,7 +607,7 @@ referred to as *dict*.
 
 A dictionary represents a key value store:
 
-```python
+``` python
 person = {
   'Name': 'Albert',
   'Age': 100,
@@ -634,7 +630,7 @@ increases readability of the print statements.
 
 You can delete elements with the following commands:
 
-```python
+``` python
 del person['Name'] # remove entry with key 'Name'
 person
 # {'Age': 100, 'Class': 'Scientist'}
@@ -650,7 +646,7 @@ person
 
 You can iterate over a dict:
 
-```python
+``` python
 person = {
   'Name': 'Albert',
   'Age': 100,
@@ -669,7 +665,7 @@ for item in person:
 You can retrieve both the keys and values of a dictionary using the
 keys() and values() methods of the dictionary, respectively:
 
-```python
+``` python
 person.keys()
 # ['Age', 'Name', 'Class']
 person.values()
@@ -680,7 +676,9 @@ Both methods return lists. Notice, however, that the order in which the
 elements appear in the returned lists (Age, Name, Class) is different
 from the order in which we listed the elements when we declared the
 dictionary initially (Name, Age, Class). It is important to keep this in
-mind: **you cannot make any assumptions about the order in which the
+mind: 
+
+:warning: **you cannot make any assumptions about the order in which the
 elements of a dictionary will be returned by the keys() and values()
 methods**.
 
@@ -697,7 +695,7 @@ One application of dictionaries that frequently comes up is counting the
 elements in a sequence. For example, say we have a sequence of coin
 flips:
 
-```python
+``` python
 import random
 die_rolls = [
   random.choice(['heads', 'tails']) for _ in range(10)
@@ -714,7 +712,7 @@ this on your computer since the outcomes of the die rolls are random.
 To compute the probabilities of heads and tails, we could count how many
 heads and tails we have in the list:
 
-```python
+``` python
 counts = {'heads': 0, 'tails': 0}
 for outcome in coin_flips:
    assert outcome in counts
@@ -741,8 +739,7 @@ coin_flips, notice a couple things about this example:
     flips. sum is one of many built-in function you can [read about
     here](https://docs.python.org/2/library/functions.html).
 
-Functions
----------
+## Functions
 
 You can reuse code by putting it inside a function that you can call in
 other parts of your programs. Functions are also a good way of grouping
@@ -750,7 +747,7 @@ code that logically belongs together in one coherent whole. A function
 has a unique name in the program. Once you call a function, it will
 execute its body which consists of one or more lines of code:
 
-```python
+``` python
 def check_triangle(a, b, c):
 return \
     a < b + c and a > abs(b - c) and \
@@ -773,7 +770,7 @@ function calls.
 It is also possible to store the output of a function in a variable, so
 it can be reused.
 
-```python
+``` python
 def check_triangle(a, b, c):
   return \
      a < b + c and a > abs(b - c) and \
@@ -784,15 +781,14 @@ def check_triangle(a, b, c):
     print(result)
 ```
 
-Classes
--------
+## Classes
 
 A class is an encapsulation of data and the processes that work on them.
 The data is represented in member variables, and the processes are
 defined in the methods of the class (methods are functions inside the
 class). For example, let's see how to define a Triangle class:
 
-```python
+``` python
 class Triangle(object):
 
   def __init__(self, length, width,
@@ -827,12 +823,11 @@ we can not cover all of them in a quick tutorial, so please refer to the
 [Python docs on classes and
 OOP](https://docs.python.org/2.7/tutorial/classes.html).
 
-Modules
--------
+## Modules
 
 Now write this simple program and save it:
 
-```python
+``` python
 from __future__ import print_statement, division
 print("Hello world!")
 ```
@@ -865,7 +860,7 @@ side is less than the sum of the lengths of the other two sides and
 greater than the difference of the lengths of the other two sides.:
 
 ```
-"""Usage: check_triangle.py \[-h\] LENGTH WIDTH HEIGHT
+"""Usage: check_triangle.py [-h] LENGTH WIDTH HEIGHT
 
 Check if a triangle is valid.
 
@@ -939,26 +934,26 @@ name and are defined using the `lambda` keyword. The generic syntax of a lambda
 function is in form of`lambda arguments: expression`, as shown in the following
 example: 
 
-```python
+``` pythonAlbert
 greeter = lambda x: print('Hello %s!'%x)
-greeter('George')
+greeter('Albert')
 ```
 As you could probably guess, the result is: 
 
-```python
->>> greeter('George')
-Hello George!
+``` python
+>>> greeter('Albert')
+Hello Albert!
 ```
 
 Now consider the following examples:
 
-```python
+``` python
 power2 = lambda x: x ** 2 
 ```
 The `power2` function defined in the expression above, is equivalent to the
 following definition: 
 
-```python
+``` python
 def power2(x):
     return x ** 2 
 ```
@@ -975,25 +970,35 @@ a sub-string in the string `x`. The second argument of `filter` function is the
 array of names, i.e. `all_names`. 
 
 
-```python
->>> all_names = ['surname', 'rename', 'nickname', 'acclaims', 'defame']
->>> filtered_names = list(filter(lambda x: 'name' in x, all_names))
->>> filtered_names
-['surname', 'rename', 'nickname']
+``` python
+all_names = ['surname', 'rename', 'nickname', 'acclaims', 'defame']
+filtered_names = list(filter(lambda x: 'name' in x, all_names))
+print(filtered_names)
+# ['surname', 'rename', 'nickname']
 ```
 
 As you can see, the names are successfully filtered as we expected. 
 
-In Python3, filter function returns a filter object or the iterator which gets lazily evaluated which means neither we can access the elements of the filter object with index nor we can use len() to find the length of the filter object.
+In Python3, filter function returns a filter object or the iterator
+which gets lazily evaluated which means neither we can access the
+elements of the filter object with index nor we can use len() to find
+the length of the filter object.
 
-	list_a = [1, 2, 3, 4, 5]
-	filter_obj = filter(lambda x: x % 2 == 0, list_a) # filter object <filter at 0x4e45890>
-	even_num = list(filter_obj) # Converts the filer obj to a list
-	print(even_num) # Output: [2, 4]
-	
 
-=======
-In Python, we can have a small usually a single liner anonymous function called Lambda function which can have any number of arguments just like a normal function but with only one expression with no return statement. The result of this expression can be applied to a value. 
+``` python
+list_a = [1, 2, 3, 4, 5]
+filter_obj = filter(lambda x: x % 2 == 0, list_a) 
+# Convert the filer obj to a list
+even_num = list(filter_obj) 
+print(even_num) 
+# Output: [2, 4]
+```	
+
+In Python, we can have a small usually a single liner anonymous
+function called Lambda function which can have any number of arguments
+just like a normal function but with only one expression with no
+return statement. The result of this expression can be applied to a
+value.
 
 Basic Syntax:
 
@@ -1007,21 +1012,25 @@ For an example: a function in python
 	#call the function
 	multiply(3*5) #outputs: 15
 	
-Same function can written as Lambda function. This function named as multiply is having 2 arguments and returns their multiplication.
+Same function can written as Lambda function. This function named as
+multiply is having 2 arguments and returns their multiplication.
 
 Lambda equivalent for above function would be:
 
 	multiply = Lambda a, b : a*b
 	
-	print multiply(3, 5) #outputs: 15
+	print multiply(3, 5) 
+	# outputs: 15
 	
-Here a and b are the 2 arguments and a*b is the expression whose value is returned as an output.
+Here a and b are the 2 arguments and a*b is the expression whose value
+is returned as an output.
 
 Also we don't need to assign Lambda function to a variable.
 
 	(lambda a, b : a*b)(3*5)
 	
-Lambda functions are mostly passed as parameter to a function which expects a function objects like in map or filter.
+Lambda functions are mostly passed as parameter to a function which
+expects a function objects like in map or filter.
 
 map
 
@@ -1029,31 +1038,43 @@ Basic Syntax
 
 	map(function_object, iterable1, iterable2,...)
 	
-map functions expects a function object and any number of iterables like list or dictionary. It executes the function_object for each element in the sequence and returns a list of the elements modified by the function object.
+map functions expects a function object and any number of iterables
+like list or dictionary. It executes the function_object for each
+element in the sequence and returns a list of the elements modified by
+the function object.
 
 Example:
 
-	def multiply(x):
+```python
+def multiply(x):
 	return x * 2
     
-	map(multiply2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
-	
+map(multiply2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
+```
+
 If we want to write same function using Lambda
 
-	map(lambda x: x*2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
-  
+```python
+map(lambda x: x*2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
+``` 
   
 ## Iterators 
 
-In Python, an iterator protocol is defined using two methods: `__iter()__` and `next()`. The former returns the iterator object and latter returns the next element of a sequence. Some advantages of iterators are as follows: 
+In Python, an iterator protocol is defined using two methods:
+`__iter()__` and `next()`. The former returns the iterator object and
+latter returns the next element of a sequence. Some advantages of
+iterators are as follows:
 
 + Readability
 + Supports sequences of infinite length
 + Saving resources
 
-There are several built-in objects in Python which implement iterator protocol, e.g. string, list, dictionary. In the following example, we create a new class that follows the iterator protocol. We then use the class to generate `log2` of numbers:
+There are several built-in objects in Python which implement iterator
+protocol, e.g. string, list, dictionary. In the following example, we
+create a new class that follows the iterator protocol. We then use the
+class to generate `log2` of numbers:
 
-```python
+``` python
 from math import log2 
 
 class LogTwo:
@@ -1081,7 +1102,10 @@ print(next(i))
 print(next(i))
 print(next(i))
 ```
-As you can see, we first create an instance of the class and assign its `__iter()__` function to a variable called `i`. Then by calling the `next()`  function four times, we get the following output: 
+
+As you can see, we first create an instance of the class and assign
+its `__iter()__` function to a variable called `i`. Then by calling
+the `next()` function four times, we get the following output:
 
 ```bash
 $ python iterator.py 
@@ -1095,119 +1119,173 @@ As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively.
 
 ## Generators
 
-:o: Students can contribute this section
-=======
 Now, lets see how we can interate over a dictionary using map and lambda
 Lets say we have a dictionary object
 
-	dict_movies = [{'movie': 'avengers', 'comic': 'marvel'}, {'movie': 'superman', 'comic': 'dc'}]
+```python
+dict_movies = [
+    {'movie':
+     'avengers',
+     'comic':
+     'marvel'},
+    {'movie':
+     'superman',
+     'comic':
+     'dc'}]
+```
 
-We can iterate over this dictionary and read the elements of it using map and lambda functions in following way:
+We can iterate over this dictionary and read the elements of it using
+map and lambda functions in following way:
 
-	map(lambda x : x['movie'], dict_movies)  # Output: ['avengers', 'superman']
-	map(lambda x : x['comic'],  dict_movies)  # Output: ['marvel', 'dc']
-	map(lambda x : x['movie'] == "avengers", dict_movies)  # Output: [True, False]
+```python
+map(lambda x : x['movie'], dict_movies)  # Output: ['avengers', 'superman']
+map(lambda x : x['comic'],  dict_movies)  # Output: ['marvel', 'dc']
+map(lambda x : x['movie'] == "avengers", dict_movies)  
+# Output: [True, False]
+```
 	
-In Python3, map function returns an iterator or map object which gets lazily evaluated which means neither we can access the elements of the map object with index nor we can use len() to find the length of the map object.
-We can force convert the map output i.e. the map object to list as shown below:
+In Python3, map function returns an iterator or map object which gets
+lazily evaluated which means neither we can access the elements of the
+map object with index nor we can use len() to find the length of the
+map object.  We can force convert the map output i.e. the map object
+to list as shown below:
 
-	map_output = map(lambda x: x*2, [1, 2, 3, 4])
-	print(map_output) # Output: map object: <map object at 0x04D6BAB0>
-	list_map_output = list(map_output)
-	print(list_map_output) # Output: [2, 4, 6, 8]
-	
-
-
-:o: Students can contribute this section
+```python
+map_output = map(lambda x: x*2, [1, 2, 3, 4])
+print(map_output) 
+# Output: map object: <map object at 0x04D6BAB0>
+list_map_output = list(map_output)
+print(list_map_output) # Output: [2, 4, 6, 8]
+```	
 
 ## Generators
 
-What are Generators
+Before we go to Generators, lets understand what is an
+Iterator. Iterators are used to iterate over any container mostly
+lists performing traversal of the container and accessing the data
+elements.  Generators are also Iterators but they can only be
+interated over once. Thats because Generators do not store the values
+in memory instead they generate the values on the go. If we want to
+print those values then we can either simply iterate over them or use
+the for loop.
 
-Before we go to Generators, lets understand what is an Iterator. Iterators are used to iterate over any container mostly lists performing traversal of the container and accessing the data elements. 
-Generators are also Iterators but they can only be interated over once. Thats because Generators do not store the values in memory instead they generate the values on the go. If we want to print those values then we can either simply iterate over them or use the for loop.
+### Generators with function
 
-Generators with function
+For example: we have a function named as multiplyBy10 which prints all
+the input numbers multiplied by 10.
 
-For example: we have a function named as multiplyBy10 which prints all the input numbers multiplied by 10. 
-
-	def multiplyBy10(numbers):
-		result = []
-		for i in numbers:
-			result.append(i*10)
-		return result
+```python
+def multiplyBy10(numbers):
+	result = []
+	for i in numbers:
+		result.append(i*10)
+	return result
 		
-	new_numbers = multiplyBy10([1,2,3,4,5])
+new_numbers = multiplyBy10([1,2,3,4,5])
 	
-	print new_numbers  #Output: [10, 20, 30, 40 ,50]
-	
+print new_numbers  #Output: [10, 20, 30, 40 ,50]
+```
+
 Now, if we want to use Generators here then we will make following changes.
 
-	def multiplyBy10(numbers):
-		for i in numbers:
-			yield(i*10)
+```python
+def multiplyBy10(numbers):
+	for i in numbers:
+		yield(i*10)
 		
-	new_numbers = multiplyBy10([1,2,3,4,5])
+new_numbers = multiplyBy10([1,2,3,4,5])
 	
-	print new_numbers  #Output: Generators object
-	
-In Generators, we use yield() function in place of return(). So when we try to print new_numbers list now, it just prints Generators object. The reason for this is because Generators dont hold any value in memory, it yields one result at a time. So essentially it is just waiting for us to ask for the next result. To print the next result we can just say  print next(new_numbers) , so how it is working is its reading the first value and squaring it and yielding out value 1. Also in this case we can just print next(new_numbers) 5 times to print all numbers and if we do it for 6th time then we will get an error StopIteration which meanns Generators has exausted its limit and it has no 6th element to print.
+print new_numbers  #Output: Generators object
+```
 
-	print next(new_numbers)  #Output: 1
-	
-	
-Generators using for loop
+In Generators, we use yield() function in place of return(). So when
+we try to print new_numbers list now, it just prints Generators
+object. The reason for this is because Generators dont hold any value
+in memory, it yields one result at a time. So essentially it is just
+waiting for us to ask for the next result. To print the next result we
+can just say print next(new_numbers) , so how it is working is its
+reading the first value and squaring it and yielding out value 1. Also
+in this case we can just print next(new_numbers) 5 times to print all
+numbers and if we do it for 6th time then we will get an error
+StopIteration which meanns Generators has exausted its limit and it
+has no 6th element to print.
 
-If we now want to print the complete list of squared values then we can just do:
-
-	def multiplyBy10(numbers):
-		for i in numbers:
-			yield(i*10)
-		
-	new_numbers = multiplyBy10([1,2,3,4,5])
+```python
+print next(new_numbers)  #Output: 1
+```
 	
-	for num in new_numbers:
-		print num  
+### Generators using for loop
+
+If we now want to print the complete list of squared values then we
+can just do:
+
+```python
+def multiplyBy10(numbers):
+	for i in numbers:
+		yield(i*10)
 		
-		
-#Output: 
+new_numbers = multiplyBy10([1,2,3,4,5])
+	
+for num in new_numbers:
+	print num  
+
+```				
+
+The output will be:
+
+```
 10
 20
 30
 40
 50
+```
 
-Generators with List Comprehension
+### Generators with List Comprehension
 
-Python has something called List Comprehension, if we use this then we can replace the complete function def with just: 
+Python has something called List Comprehension, if we use this then we
+can replace the complete function def with just:
 
 	new_numbers = [x*10 for x in [1,2,3,4,5]]
 	print new_numbers  #Output: [10, 20, 30, 40 ,50]
 	
 	
-Here the point to note is square brackets [] in line 1 is very important. If we change it to () then again we will start getting Generators object.
+Here the point to note is square brackets [] in line 1 is very
+important. If we change it to () then again we will start getting
+Generators object.
 
 	new_numbers = (x*10 for x in [1,2,3,4,5])
 	print new_numbers  #Output: Generators object
 
-We can get the individual elements again from Generators if we do a for loop over new_numbers like we did above. OR we can convert it into a list and then print it.
+We can get the individual elements again from Generators if we do a
+for loop over new_numbers like we did above. OR we can convert it into
+a list and then print it.
 
 	new_numbers = (x*10 for x in [1,2,3,4,5])
 	print list(new_numbers)  #Output: [10, 20, 30, 40 ,50]
 	
-But here if we convert this into a list then we loose on performance, which we will just see next.
+But here if we convert this into a list then we loose on performance,
+which we will just see next.
 
-Why to use Generators
+### Why to use Generators?
 
-Generators are better with Performance because it does not hold the values in memory and here with above example its not a big deal since we are dealing with small amount of data but just consider a scenario where the records are in millions of data set. And if we try to convert millions of data elements into a list then that will definitely make an impact on memory and performance because everything will in memory.
+Generators are better with Performance because it does not hold the
+values in memory and here with above example its not a big deal since
+we are dealing with small amount of data but just consider a scenario
+where the records are in millions of data set. And if we try to
+convert millions of data elements into a list then that will
+definitely make an impact on memory and performance because everything
+will in memory.
 
-Lets see an example on how Generators help in Performance.
-First, without Generators, normal function taking 1 million record and returns the result[people] for 1 million.
+Lets see an example on how Generators help in Performance.  First,
+without Generators, normal function taking 1 million record and
+returns the result[people] for 1 million.
 
 	names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
 	majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
 
-	print 'Memory (Before): {}Mb'.format(mem_profile.memory_usage_resource()) # prints the memory before we run the function
+    # prints the memory before we run the function
+	print 'Memory (Before): {}Mb'.format(mem_profile.memory_usage_resource()) 
 	
 	def people_list(people):
 		result = []
@@ -1224,7 +1302,8 @@ First, without Generators, normal function taking 1 million record and returns t
 	people = people_list(10000000)
 	t2 = time.clock()		
 
-	print 'Memory (After): {}Mb'.format(mem_profile.memory_usage_resource()) # prints the memory after we run the function
+    # prints the memory after we run the function
+	print 'Memory (After): {}Mb'.format(mem_profile.memory_usage_resource()) 
 	print 'Took {} seconds'.format(t2-t1)
 	
 	#Output
@@ -1232,12 +1311,15 @@ First, without Generators, normal function taking 1 million record and returns t
 	Memory (After): 318Mb
 	Took 1.2 seconds
 	
-I am just giving approximate values to compare it with next execution but we just try to run it we will see a serious consumption of memory with good amount of time taken.
+I am just giving approximate values to compare it with next execution
+but we just try to run it we will see a serious consumption of memory
+with good amount of time taken.
 	
 	names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
 	majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
 
-	print 'Memory (Before): {}Mb'.format(mem_profile.memory_usage_resource()) # prints the memory before we run the function
+    # prints the memory before we run the function
+	print 'Memory (Before): {}Mb'.format(mem_profile.memory_usage_resource()) 
 	
 	def people_generator(people):
 		for i in xrange(people):
@@ -1252,7 +1334,8 @@ I am just giving approximate values to compare it with next execution but we jus
 	people = people_list(10000000)
 	t2 = time.clock()		
 
-	print 'Memory (After): {}Mb'.format(mem_profile.memory_usage_resource()) # prints the memory after we run the function
+    # prints the memory after we run the function
+	print 'Memory (After): {}Mb'.format(mem_profile.memory_usage_resource()) 
 	print 'Took {} seconds'.format(t2-t1)
 	
 	#Output
@@ -1260,12 +1343,10 @@ I am just giving approximate values to compare it with next execution but we jus
 	Memory (After): 15Mb
 	Took 0.01 seconds
 	
-Now after running the same code using Generators, we will see a significant amount of performance boost with alomost 0 Seconds. And the reason behind this is that in case of Generators, we do not keep anything in memory so system just reads 1 at a time and yields that.
-
-
-
-:o: Students can contribute this section 
-
+Now after running the same code using Generators, we will see a
+significant amount of performance boost with alomost 0 Seconds. And
+the reason behind this is that in case of Generators, we do not keep
+anything in memory so system just reads 1 at a time and yields that.
 
 ## Non Blocking Threads
 
