@@ -1,13 +1,13 @@
 - PREFACE:
-    - chapters/SECTION-PREFACE.md
+    - chapters/SECTION-PREFACE.md:
         - chapters/version.md
         - chapters/authors.md
         - chapters/preface/create.md
         - chapters/preface/notation.md
-        - chapters/faq.md
+#        - chapters/faq.md
 
 - DEVTOOLS:
-    - chapters/SECTION-DEVTOOLS.md
+    - chapters/SECTION-DEVTOOLS.md:
         - chapters/linux/refcards.md
         - chapters/cloud/virtualbox.md
         - chapters/cloud/vagrant.md
@@ -19,12 +19,12 @@
         - chapters/linux/ssh-excerise.md
 
 - PYTHON:
-    - chapters/prg/SECTION-PYTHON.md
+    - chapters/prg/SECTION-PYTHON.md:
         - chapters/prg/python/python-intro.md
         - chapters/prg/python/python-install.md
         - chapters/prg/python/python-interactive.md
         - chapters/prg/python/python-editor.md
-    - chapters/prg/SECTION-PYTHON-LANG.md
+    - chapters/prg/SECTION-PYTHON-LANG.md:
         - chapters/prg/python/python.md
         - chapters/prg/python/python-libraries.md
         - chapters/prg/python/python-data.md
@@ -45,15 +45,15 @@
 
 
 - DATA:
-    - chapters/SECTION-DATA.md
+    - chapters/SECTION-DATA.md:
           - chapters/data/formats.md
-          - chapters/data/mongoengine.md          
+          - chapters/data/mongoengine.md
 
-DRAFTS:
+- DRAFTS:
   - chapters/msg/amazon-kenesis-data-streams.md
 
 - MSG:
-    - chapters/MSG.md
+    - chapters/MSG.md:
         - chapters/msg/mqtt.md
         - chapters/msg/graphql.md
         - chapters/msg/avro.md
@@ -62,10 +62,10 @@ DRAFTS:
     - chapters/container/index.md
     - chapters/container/container.md
     - chapters/container/qemu.md
-    - chapters/SECTION-DOCKER.md
+    - chapters/SECTION-DOCKER.md:
         - chapters/container/docker-intro.md
         - chapters/container/docker-local.md
-        - chapters/containers/dockerhub.md    
+        - chapters/containers/dockerhub.md
         - chapters/container/docker-fs.md
         - chapters/container/docker-hadoop-cluster.md
         - chapters/container/docker-hadoop.md
@@ -74,8 +74,8 @@ DRAFTS:
         - chapters/container/docker-rest.md
         - chapters/container/docker-spark.md
     - chapters/container/docker-swarm.md
-    - chapters/SECTION-KUBERNETES.md
-        - chapters/container/kubernetes-intro.md    
+    - chapters/SECTION-KUBERNETES.md:
+        - chapters/container/kubernetes-intro.md
         - chapters/container/kubernetes-fs.md
     - chapters/container/exercise.md
     - chapters/container/glossary.md
@@ -94,8 +94,6 @@ DRAFTS:
     - twister.md
     - twister2-example.md
 
-
-
 ######################################################################
 # chameleon
 ######################################################################
@@ -104,7 +102,7 @@ DRAFTS:
 
 
 - CHAMELEON:
-    - chapters/SECTION-CHAMELEON.md
+    - chapters/SECTION-CHAMELEON.md:
         - chapters/cloud/chameleon/resources.md
         - chapters/cloud/chameleon/hardware.md
         - chapters/cloud/chameleon/charge.md
@@ -124,9 +122,9 @@ DRAFTS:
 
 #-  chapters/rest/swagger-bravado.md
 
-CHAPTER_516:
+- BOOK_516:
     - chapters/assignment.md
-    - PREFACE
+    - $ref:PREFACE:
         - chapters/class/organization-516.md
         - chapters/class/plagiarism.md
         - chapters/cloud/gregor.md
@@ -136,36 +134,36 @@ CHAPTER_516:
         - chapters/class/volumes.md
         - chapters/class/e516-definition.md
     - chapters/cloud/datacenter.md
-    - chapters/nist/bdra.md
+    - chapters/nist/bdra.md:
         - chapters/rest/rest.md
         - chapters/rest/swagger-codegen.md
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
-    - chapters/SECTION-IAAS.md
+    - chapters/SECTION-IAAS.md:
         - chapters/iaas/iaas.md
         - chapters/iaas/aws/aws.md
         - chapters/iaas/azure/azure.md
         - chapters/iaas/watson/watson.md
         - chapters/iaas/gcloud/gcloud.md
         - chapters/iaas/libcloud.md
-        - chapters/iaas/boto.md        
-    - DEVTOOLS
-    - PYTHON
+        - chapters/iaas/boto.md
+    - $ref:DEVTOOLS
+    - $ref:PYTHON
     - chapters/prg/go/go-language.md
     - chapters/prg/julia/julia-language.md
     - chapters/prg/scala/scala.md
-    - MSG
-    - chapters/SECTION-FAQ.md
+    - $ref:MSG
+    - chapters/SECTION-FAQ.md:
         - chapters/faq.md
         - chapters/faq-516.md
-    - chapters/SECTION-APPENDIX.md
+    - chapters/SECTION-APPENDIX.md:
         - chapters/iaas/aws/products.md
         - chapters/iaas/azure/products.md
-        - CHAMELEON
+        - $ref:CHAMELEON
     - chapters/SECTION-REFERENCES.md
 
-- CHAPTER_BIGDATA:
-    - PREFACE
+- BOOK_BIGDATA:
+    - $ref:PREFACE:
         - chapters/class/organization-523.md
         - chapters/class/plagiarism.md
         - chapters/class/policies.md
@@ -185,9 +183,9 @@ CHAPTER_516:
     - chapters/bigdata/algorithms/technology.md
     - chapters/bigdata/algorithms/clustering.md
     - chapters/bigdata/algorithms/plotviz.md
-    - DEVTOOLS
-    - PYTHON
-    - chapters/SECTION-FAQ.md
+    - $ref:DEVTOOLS
+    - $ref:PYTHON
+    - chapters/SECTION-FAQ.md:
         - chapters/faq.md
         - chapters/faq-523.md
     - chapters/SECTION-REFERENCES.md
