@@ -1042,6 +1042,61 @@ If we want to write same function using Lambda
 
 	map(lambda x: x*2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
   
+  
+## Iterators 
+
+In Python, an iterator protocol is defined using two methods: `__iter()__` and `next()`. The former returns the iterator object and latter returns the next element of a sequence. Some advantages of iterators are as follows: 
+
++ Readability
++ Supports sequences of infinite length
++ Saving resources
+
+There are several built-in objects in Python which implement iterator protocol, e.g. string, list, dictionary. In the following example, we create a new class that follows the iterator protocol. We then use the class to generate `log2` of numbers:
+
+```python
+from math import log2 
+
+class LogTwo:
+    "Implements an iterator of log two"
+
+    def __init__(self,last = 0):
+        self.last = last
+
+    def __iter__(self):
+        self.current_num = 1
+        return self 
+
+    def __next__(self):
+        if self.current_num <= self.last:
+            result = log2(self.current_num)
+            self.current_num += 1 
+            return result 
+        else:
+            raise StopIteration
+
+L = LogTwo(5)
+i = iter(L)
+print(next(i))
+print(next(i))
+print(next(i))
+print(next(i))
+```
+As you can see, we first create an instance of the class and assign its `__iter()__` function to a variable called `i`. Then by calling the `next()`  function four times, we get the following output: 
+
+```bash
+$ python iterator.py 
+0.0
+1.0
+1.584962500721156
+2.0
+```
+
+As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively. 
+
+## Generators
+
+:o: Students can contribute this section
+=======
 Now, lets see how we can interate over a dictionary using map and lambda
 Lets say we have a dictionary object
 
@@ -1210,6 +1265,7 @@ Now after running the same code using Generators, we will see a significant amou
 
 
 :o: Students can contribute this section 
+
 
 ## Non Blocking Threads
 
