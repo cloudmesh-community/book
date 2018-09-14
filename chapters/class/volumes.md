@@ -8,7 +8,7 @@ We are maintaining a large list of technologies related to clouds and Big Data a
 
 This repository generates the following epub
 
-* <https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-echnologies.epub>
+* <https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub>
 
 Students that have to contribute as part of their class Technology summaries are asked to produce meaningful, advertisement free summaries of the technology and indicate in some cases if not obvious show they relate to cloud or big data. The length of such summaries is about 300 words. Students of E516 do not have to contribute to this and will instead focuss on programming. Students of I423, I523 and other sections must contribute to it and will get an assignment related to it.
 We post here the existence of this document also for 516 students. They can voluntarily improve or add sections if they like which will go into their discussion credit.
