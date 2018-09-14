@@ -1,4 +1,4 @@
-Python Installation
+Python Installation {#s-python-install}
 -------------------
 
 Python is easy to install and very good instructions for most platforms
@@ -14,7 +14,7 @@ installed. However, we also recommend that for the class you use
 Python's virtualenv (see below) to isolate your development Python from
 the system installed Python.
 
-While in other classes yo may have been taught to use anaconda, this is not a tool that ought to be used in a cloud class. The reason for this is that it installs many packages that you are likely not to use. In fact installing anaconda on your VM will wast space and time and you should look into other installs. 
+While in other classes yo may have been taught to use anaconda, this is not a tool that ought to be used in a cloud class. The reason for this is that it installs many packages that you are likely not to use. In fact installing anaconda on your VM will waste space and time and you should look into other installs. 
 
 If you know which version of python you need you can just use the version that comes either with your OS, and if that is outdated install a new version from python.or.
 
@@ -140,6 +140,15 @@ the command succeeds:
     $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
     $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 
+You can also install pyenv using curl command in following way:
+
+    curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+    
+Then install its dependencies:
+
+    sudo apt-get update && sudo apt-get upgrade
+    sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
+
 Now that you have installed pyenv it is not yet activated in your
 current terminal. The easiest thing to do is to start a new terminal and
 typ in:
@@ -247,7 +256,7 @@ You will see the updated list.
 
 Naturally python itself evolves and new versions will become available
 via pyenv. To facilitate such a new version you need to first install
-it. into pyenv. Let us assume you had an old version of python installed
+it into pyenv. Let us assume you had an old version of python installed
 onto the ENV3 environment. Than you need to execute the following steps:
 
     pyenv deactivate

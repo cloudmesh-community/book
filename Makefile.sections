@@ -30,7 +30,8 @@ PYTHON=\
   chapters/prg/python/python-data.md\
   chapters/prg/python/python-matplotlib.md\
   chapters/prg/python/python-cmd5.md\
-  chapters/prg/python/python-cmd.md
+  chapters/prg/python/python-cmd.md \
+  chapters/prg/python/opencv/opencv.md
 
 
 ######################################################################

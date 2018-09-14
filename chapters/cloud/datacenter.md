@@ -268,7 +268,14 @@ Although this report is already a bit older, it provides still
 valuable information. It defines key terms such as
 
 * Carbon dioxide emissions coefficient (“carbon footprint”) 
-	* :question:
+	
+	With the increasing demand of data, bandwidth and high performance systems, there is substantial amount of power consumption. This leads to high amount of greenhouses gases emission into the atmosphere, released due to any kind of basic activities like driving a vehicle or running a power plant.
+	
+	" The measurement includes power generation plus transmission and distribution losses incurred during delivery of the electricity to its point of use."
+	
+Data centers in total used 91 billion kilowatt-hours (kWh) of electrical energy in 2013, and they will use 139 billion kWh by 2020. Currently, data centers consume up to 3 percent of all global electricity production while producing 200 million metric tons of carbon dioxide. Since world is moving towards cloud, causing more and more data center capacity leading more to power consumption.
+
+
 * Peaker plant
 	* :question:
 * Avoided emissions
