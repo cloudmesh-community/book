@@ -20,17 +20,48 @@ DEVTOOLS=\
 
 PYTHON=\
 	chapters/prg/SECTION-PYTHON.md\
-  chapters/prg/python-intro.md\
-  chapters/prg/python-install.md\
-  chapters/prg/python-interactive.md\
-  chapters/prg/python-editor.md\
+  chapters/prg/python/python-intro.md\
+  chapters/prg/python/python-install.md\
+  chapters/prg/python/python-interactive.md\
+  chapters/prg/python/python-editor.md\
   chapters/prg/SECTION-PYTHON-LANG.md\
-  chapters/prg/python.md\
-  chapters/prg/python-libraries.md\
-  chapters/prg/python-data.md\
-  chapters/prg/python-matplotlib.md\
-  chapters/prg/python-cmd5.md\
-  chapters/prg/python-cmd.md
+  chapters/prg/python/python.md\
+  chapters/prg/python/python-libraries.md\
+  chapters/prg/python/python-data.md\
+  chapters/prg/python/python-matplotlib.md\
+  chapters/prg/python/python-cmd5.md\
+  chapters/prg/python/python-cmd.md \
+  chapters/prg/python/opencv/opencv.md \
+  chapters/prg/python/opencv/secchi.md
+
+
+######################################################################
+# chameleon
+######################################################################
+
+#  chapters/cloud/chameleon/faq-orig.md\
+
+
+CHAMELEON=\
+  chapters/SECTION-CHAMELEON.md\
+  chapters/cloud/chameleon/resources.md\
+  chapters/cloud/chameleon/hardware.md\
+  chapters/cloud/chameleon/charge.md\
+  chapters/cloud/chameleon/start.md\
+  chapters/cloud/chameleon/user-guide.md\
+  chapters/cloud/chameleon/cli.md\
+  chapters/cloud/chameleon/horizon.md\
+  chapters/cloud/chameleon/heat.md\
+  chapters/cloud/chameleon/baremetal.md\
+  chapters/cloud/chameleon/faq.md\
+
+
+######################################################################
+# 516
+######################################################################
+
+
+#   chapters/rest/swagger-bravado.md
 
 CHAPTER_516=\
   chapters/assignment.md\
@@ -44,16 +75,40 @@ CHAPTER_516=\
   chapters/class/volumes.md\
   chapters/class/e516-definition.md\
   chapters/cloud/datacenter.md\
+  chapters/nist/bdra.md\
+  chapters/rest/rest.md\
+  chapters/rest/swagger-codegen.md\
+  chapters/rest/swagger-spec.md\
+  chapters/rest/swagger.md\
+  chapters/SECTION-IAAS.md\
+  chapters/iaas/iaas.md\
+  chapters/iaas/aws/aws.md\
+  chapters/iaas/azure/azure.md\
+  chapters/iaas/watson/watson.md\
+  chapters/iaas/gcloud/gcloud.md\
+  chapters/iaas/libcloud.md\
   $(DEVTOOLS)\
   $(PYTHON)\
-  chapters/prg/go-language.md\
-  chapters/prg/julia-language.md\
+  chapters/prg/go/go-intro.md\
+  chapters/prg/go/go-language.md\
+  chapters/prg/go/go-install.md\
+  chapters/prg/go/go-editor.md\
+  chapters/prg/go/go-cmd.md\
+  chapters/prg/go/go-libraries.md\
+  chapters/prg/go/go-links.md\
+  chapters/prg/julia/julia-language.md\
+  chapters/prg/scala/scala.md\
   chapters/MSG.md\
   chapters/msg/mqtt.md\
   chapters/msg/graphql.md\
+  chapters/msg/avro.md\
   chapters/SECTION-FAQ.md\
   chapters/faq.md\
   chapters/faq-516.md\
+  chapters/SECTION-APPENDIX.md\
+  chapters/iaas/aws/products.md\
+  chapters/iaas/azure/products.md\
+  $(CHAMELEON)\
   chapters/SECTION-REFERENCES.md
 
 CHAPTER_BIGDATA=\

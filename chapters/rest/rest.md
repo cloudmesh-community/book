@@ -1,9 +1,11 @@
-REST
-====
+# REST
 
 
-Overview of REST
-----------------
+## Overview of REST
+
+Test short refid.
+This should bring up the [python intro](#s-python-intro).
+This should bring up the [graphql](#s-graphql).
 
 This section is accompanied by a video about REST.
 
@@ -123,8 +125,7 @@ REST design support tools:
     generate code from swagger specifications, which we will explore in
     more detail.
 
-Flask RESTful Services
-----------------------
+## Flask RESTful Services
 
 Flask is a micro services framework allowing to write web services in
 python quickly. One of its extensions is Flask-RESTful. It adds for
@@ -142,10 +143,11 @@ to be served as a rest service. It will be easy to replace this for
 example with functions and methods that obtain such information
 dynamically from the operating system.
 
-This example has not been tested., We like that the E222 class defines a
+This example has not been tested., We like that the class defines a
 beautiful example to contribute to this section. and explains what
 happens in this example.
 
+```
     from flask import Flask
     from flask_restful import reqparse, abort, Api, Resource
 
@@ -214,9 +216,9 @@ happens in this example.
 
     if __name__ == '__main__':
         app.run(debug=True)
-
-Rest Services with Eve
-----------------------
+```
+        
+## Rest Services with Eve
 
 Next, we will focus on how to make a RESTful web service with Python
 Eve. Eve makes the creation of a REST implementation in python easy.
@@ -235,13 +237,10 @@ recommend pyenv regardless if you use a virtual machine or are working
 directly on your operating system. After you have set up a proper python
 environment, make sure you have the newest version of pip installed with
 
-\smallskip
-    {language=bash}
     $ pip install pip -U
 
 To install Eve, you can say
 
-    {language=bash}
     $ pip install eve
 
 As Eve also needs a backend database, and as MongoDB is an obvious
@@ -252,20 +251,22 @@ Non-SQL database which helps to store light weight data easily.
 
 On Ubuntu you can install MongoDB as follows
 
-    {language=bash}
-    $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-    $ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/
-    mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
-    $ sudo apt-get update
-    $ sudo apt-get install -y mongodb-org
-
+```
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 \
+                   --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+$ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu \
+    xenial/mongodb-org/3.6 multiverse" | \
+    sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+$ sudo apt-get update
+$ sudo apt-get install -y mongodb-org
+```
+    
 ### OSX install of MongoDB
 
 On OSX you can use the command
 
-    {language=bash}
-    brew update.
-    brew install mongodb
+    $ brew update
+    $ brew install mongodb
 
 ### Windows 10 Installation of MongoDB
 
@@ -292,14 +293,12 @@ location and assure it has the right permissions. Make sure that the
 In order to check the MongoDB installation, please run the following
 commands in one terminal:
 
-    {language=bash}
     $ mkdir -p ~/cloudmesh/data/db
     $ mongod --dbpath ~/cloudmesh/data/db
 
 In another terminal we try to connect to mongo and issue a mongo command
 to show the databases:
 
-    {language=bash}
     $ mongo --host 127.0.0.1:27017
     $ show databases
 
@@ -312,7 +311,6 @@ command. simply CTRL-C the running mongod process
 In this section we will focus on creating a simple rest service. To
 organize our work we will create the following directory:
 
-    {language=bash}
     $ mkdir -p ~/cloudmesh/eve
     $ cd ~/cloudmesh/eve
 
@@ -320,34 +318,36 @@ As Eve needs a configuration and it is read in by default from the file
 `settings.py` we place the following content in the file
 `~/cloudmesh/eve/settings.py`:
 
-    MONGO_HOST = 'localhost'
-    MONGO_PORT = 27017
-    MONGO_DBNAME = 'student_db'
-    DOMAIN = {
-        'student': {
-            'schema': {
-                'firstname': {
-                    'type': 'string'
-                },
-                'lastname': {
-                    'type': 'string'
-                },
-                'university': {
-                    'type': 'string'
-                },
-                'email': {
-                    'type': 'string',
-                     'unique': True
-                }
-                'username': {
-                    'type': 'string',
-                     'unique': True
-                }
+```
+MONGO_HOST = 'localhost'
+MONGO_PORT = 27017
+MONGO_DBNAME = 'student_db'
+DOMAIN = {
+    'student': {
+        'schema': {
+            'firstname': {
+                'type': 'string'
+            },
+            'lastname': {
+                'type': 'string'
+            },
+            'university': {
+                'type': 'string'
+            },
+            'email': {
+                'type': 'string',
+                 'unique': True
+            }
+            'username': {
+                'type': 'string',
+                 'unique': True
             }
         }
     }
-    RESOURCE_METHODS = ['GET', 'POST']
-
+}
+RESOURCE_METHODS = ['GET', 'POST']
+```
+    
 The DOMAIN object specifies the format of a `student` object that we are
 using as part of our REST service. In addition we can specify
 `RESOURCE_METHODS` which methods are activated for the REST service.
@@ -382,13 +382,11 @@ terminal while running the commands:
 
 Previously we started the mongoDB service as follows:
 
-    {language=bash}
     $ mongod --dbpath ~/cloudmesh/data/db/
 
 This is done in its own terminal, so we can observe the log messages
 easily. Next we start in another window the Eve service with
 
-    {language=bash}
     $ cd ~/cloudmesh/eve
     $ python run.py
 
@@ -405,7 +403,6 @@ convenient for debugging as it is easier to read than XML.
 Naturally, we need first to put some data into the server. Let us assume
 we add the user Albert Zweistein.
 
-    {language=bash}
     $ curl -H "Content-Type: application/json" -X POST \
            -d '{"firstname":"Albert","lastname":"Zweistein", \
            "school":"ISE","university":"Indiana University", \
@@ -428,7 +425,7 @@ server issue the following command sequence in another terminal:
 Now you can query mongo directly with its shell interface
 
     > show databases
-    > use student_db  
+    > use student_db
     > show tables # query the table names
     > db.student.find().pretty()  # pretty will show the json in a clear way
 
@@ -437,7 +434,6 @@ we show you next how to gain access to the data via mongo while using
 REST calls. We can simply retrieve the information with the help of a
 simple URI:
 
-    {language=bash}
     $ curl http://127.0.0.1:5000/student?firstname=Albert
 
 Naturally, you can formulate other URLs and query attributes that are
@@ -451,13 +447,11 @@ Let us explore how to properly use additional REST API calls. We assume
 you have MongoDB up and running. To query the service itself we can use
 the URI on the Eve port
 
-    {language=bash}
     $ curl -i http://127.0.0.1:5000
 
 Your payload should look like the one below, if your output is not
 formatted like below try adding `?pretty=1`
 
-    {language=bash}
     $ curl -i http://127.0.0.1:5000?pretty=1
 
     HTTP/1.0 200 OK
@@ -498,13 +492,13 @@ the mongoDB but also the Eve REST service
 
 Issue the command
 
-    {language=bash}
     $ curl -i http://127.0.0.1:5000/people
 
 What does the `_links` section describe?
 
 What does the `_items` section describe?
 
+```
     {
         "_items": [],
         "_links": {
@@ -523,7 +517,7 @@ What does the `_items` section describe?
             "page": 1
         }
     }
-
+```
 
 ### Creating REST API Endpoints
 
@@ -534,29 +528,29 @@ eve working directory with
 
 Add the following content to a file called **run2.py**
 
-    from eve import Eve
-    from flask import jsonify
-    import os
-    import getpass
+```
+from eve import Eve
+from flask import jsonify
+import os
+import getpass
+ app = Eve ()
+ @app.route('/student/albert')
+def alberts_information():
+    data = {
+        'firstname': 'Albert',
+        'lastname': 'Zweistsein',
+        'university': 'Indiana University',
+        'email': 'albert@example.com'
+        }
+    try:
+        data['username'] = getpass.getuser()
+    except:
+        data['username'] = 'not-found'
+    return jsonify(**data)
 
-    app = Eve ()
-
-    @app.route('/student/albert')
-    def alberts_information():
-        data = {
-            'firstname': 'Albert',
-            'lastname': 'Zweistsein',
-            'university': 'Indiana University',
-            'email': 'albert@example.com'
-            }
-        try:
-            data['username'] = getpass.getuser()
-        except:
-            data['username'] = 'not-found'
-        return jsonify(**data)
-
-    if __name__ == '__main__':
-        app.run(debug=True, host="127.0.0.1")
+if __name__ == '__main__':
+    app.run(debug=True, host="127.0.0.1")
+```
 
 After creating and saving the file. Run the following command to start
 the service
@@ -570,18 +564,20 @@ entering the following url in the web browser:
 
 You can also open up a second terminal and type in it
 
-    curl http://127.0.0.1:5000/student/alberts
+    $ curl http://127.0.0.1:5000/student/alberts
 
 The following information will be returned:
 
-    {
-      "firstname": "Albert", 
-      "lastname": "Zweistain", 
-      "university": "Indiana University", 
-      "email": "albert@example.com", 
-      "username": "albert"
-    }
-
+```
+{
+  "firstname": "Albert", 
+  "lastname": "Zweistain", 
+  "university": "Indiana University", 
+  "email": "albert@example.com", 
+  "username": "albert"
+}
+```
+    
 This example illustrates how easy it is to create REST services in
 python while combining information from a dict with information
 retrieved from the system. The important part is to understand the
@@ -602,55 +598,54 @@ python class. Create a file called **student.py**. Please, note the get
 method that returns simply the information in the dict for the class. It
 is not related to the REST get function.
 
-    class Student(object):
-        def __init__(self, firstname, lastname, university, email):
-            self.firstname = firstname
-            self.lastname = lastname
-            self.university = university
-            self.email = email
-            self.username = 'undefined'
-
-        def get(self): 
-           return self.__dict__
-
-        def setUsername(self, name):
-           self.username = name
-           return name
+```
+class Student(object):
+    def __init__(self, firstname, lastname, university, email):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.university = university
+        self.email = email
+        self.username = 'undefined'
+     def get(self): 
+       return self.__dict__
+     def setUsername(self, name):
+       self.username = name
+       return name
+```
 
 Next we define a REST service with Eve as shown in the following listing
 
-    from eve import Eve
-    from student import Student
-    import platform
-    import psutil
-    import json
-    from flask import Response
-    import getpass
+```
+from eve import Eve
+from student import Student
+import platform
+import psutil
+import json
+from flask import Response
+import getpass
+ app = Eve()
+  @app.route('/student/albert', methods=['GET'])
+def processor():
+    student = Student("Albert", 
+                      "Zweistein", 
+                      "Indiana University", 
+                      "albert@example.edu")
 
-    app = Eve()
+    response = Response()
+    response.headers["Content-Type"] = "application/json; charset=utf-8"
 
+    try:
+        student.setUsername(getpass.getuser())
+        response.headers["status"] = 200
+    except:
+        response.headers["status"] = 500
 
-    @app.route('/student/albert', methods=['GET'])
-    def processor():
-        student = Student("Albert", 
-                          "Zweistein", 
-                          "Indiana University", 
-                          "albert@example.edu")
+    response.data = json.dumps(student.get())        
+    return response
 
-        response = Response()
-        response.headers["Content-Type"] = "application/json; charset=utf-8"
-
-        try:
-            student.setUsername(getpass.getuser())
-            response.headers["status"] = 200
-        except:
-            response.headers["status"] = 500
-
-        response.data = json.dumps(student.get())        
-        return response
-
-    if __name__ == '__main__':
-        app.run(debug=True, host='127.0.0.1')
+if __name__ == '__main__':
+    app.run(debug=True, host='127.0.0.1')
+```
 
 In contrast to our earlier example, we are not using the jsonify object,
 but create explicitly a response that we return to the clients. The
@@ -658,13 +653,14 @@ response includes a header that we return the information in json
 format, a status of 200, which means the object was returned
 successfully, and the actual data.
 
-### WRONG: Consuming REST API Using a Client Application
+###  REST API Using a Client Application
 
-\TODO{This example is not tested. Please provide feedback and improve}
-In the Section [1.3.8](#s:rest-api-endpoints){reference-type="ref"
-reference="s:rest-api-endpoints"} we created our own REST API
-application using Python Eve. Now once the service running, a we need to
-learn how to interact with it through clients.
+:o: This example is not tested. Please provide feedback and improve.
+
+In the Section [Rest Services with Eve](#rest-services-with-eve) we
+created our own REST API application using Python Eve. Now once the
+service running, a we need to learn how to interact with it through
+clients.
 
 First go back to the working folder:
 
@@ -758,7 +754,7 @@ these terms:
 
 _links
 
-:   . Links describe the relation of current resource being accessed to
+:   Links describe the relation of current resource being accessed to
     the rest of the resources. It is like if we have a set of links to
     the set of objects or service endpoints that we are referring in the
     RESTful web service. Here an endpoint refers to a service call which
@@ -773,20 +769,20 @@ _links
 
 title
 
-:   . The title in the rest endpoint is the name or topic that we are
+:   The title in the rest endpoint is the name or topic that we are
     trying to address. It describes the nature of the object by a single
     word. For instance student, bank-statement, salary,etc can be a
     title.
 
 parent
 
-:   . The term parent refers to the very initial link or an API
+:   The term parent refers to the very initial link or an API
     endpoint in a particular RESTful web service. Generally this is
     denoted with the primary address like http://example.com/api/v1/.
 
 href
 
-:   . The term href refers to the url segment that we use to access the
+:   The term href refers to the url segment that we use to access the
     a particular REST API endpoint. For instance "student?page=1" will
     return the first page of student list by retrieving a particular
     number of items from a remote database or a remote data source. The
@@ -798,12 +794,12 @@ information when resources are created as showcased ot
 
 * <http://python-eve.org/features.html>
 
-  Field        Description
-  ------------ ----------------------------------------------------------------------
-  `_created`   item creation date.
-  `_updated`   item last updated on.
-  `_etag`      ETag, to be used for concurrency control and conditional requests.
-  `_id`        unique item key, also needed to access the individual item endpoint.
+| Field    |    Description|
+| :------ | :------- |
+|  `_created` |  item creation date.
+|  `_updated` |  item last updated on.
+|  `_etag`    |  ETag, to be used for concurrency control and conditional requests.
+|  `_id`      |  unique item key, also needed to access the individual item endpoint.
 
 Pagenation information can be included in the `_meta` field.
 
@@ -817,11 +813,11 @@ queries.
 
 A number of examples to conduct such queries include:
 
-    curl -i -g http://eve-demo.herokuapp.com/people?where={%22lastname%22:%20%22Doe%22}
+    $ curl -i -g http://eve-demo.herokuapp.com/people?where={%22lastname%22:%20%22Doe%22}
 
 A python expression
 
-    curl -i http://eve-demo.herokuapp.com/people?where=lastname=="Doe"
+    $ curl -i http://eve-demo.herokuapp.com/people?where=lastname=="Doe"
 
 ### Pretty Printing
 
@@ -831,18 +827,18 @@ or `?pretty=1`
 If this does not work you can always use python to beautify a json
 output with
 
-    curl -i http://localhost/people?pretty
+    $ curl -i http://localhost/people?pretty
 
 or
 
-    curl -i http://localhost/people | python -m json.tool
+    $ curl -i http://localhost/people | python -m json.tool
 
 ### XML
 
 If for some reason you like to retrieve the information in XML you can
 specify this for example through curl with an Accept header
 
-    curl -H "Accept: application/xml" -i http://localhost
+    $ curl -H "Accept: application/xml" -i http://localhost
 
 ### Extensions to Eve
 
@@ -858,8 +854,7 @@ provide a section for the handbook.
 Pick one of the extension, research it and provide a small section for
 the handbook so we add it.
 
-Object Management with Eve and Evegenie
----------------------------------------
+## Object Management with Eve and Evegenie
 
 <http://python-eve.org/>
 
@@ -872,13 +867,10 @@ This code will have a master branch but will also have a dev branch in
 which we will add gradually more objects. Objects in the dev branch will
 include:
 
--   virtual directories
-
--   virtual clusters
-
--   job sequences
-
--   inventories
+* virtual directories
+* virtual clusters
+* job sequences
+* inventories
 
 You may want to check our active development work in the dev branch.
 However for the purpose of this class the master branch will be
@@ -903,15 +895,13 @@ On windows 10, you need to do the following steps:
   container.}
 On OSX you can use home-brew and install it with:
 
-    {language=bash}
-    brew update
-    brew install mongodb
+    $ brew update
+    $ brew install mongodb
 
 In future we may want to add ssl authentication in which case you may
 need to install it as follows:
 
-    {language=bash}
-    brew install mongodb --with-openssl
+    $ brew install mongodb --with-openssl
 
 ### Starting the service
 
@@ -922,8 +912,7 @@ Important targets are deploy and test.
 
 When using the makefile you can start the services with:
 
-    {language=bash}
-    make deploy
+    $ make deploy
 
 IT will start two terminals. IN one you will see the mongo service, in
 the other you will see the eve service. The eve service will take a file
@@ -935,8 +924,7 @@ sufficient for our case. The mongo data is written into the
 
 To test the services you can say:
 
-    {language=bash}
-    make test
+    $ make test
 
 YOu will se a number of json text been written to the screen.
 
@@ -957,17 +945,16 @@ based on it. The improved code is located at:
 
 You clone it and install on your system as follows:
 
-    {language=bash}
-    cd ~/github
-    git clone https://github.com/cloudmesh/evegenie
-    cd evegenie
-    python setup.py install
-    pip install .
+    $ cd ~/github
+    $ git clone https://github.com/cloudmesh/evegenie
+    $ cd evegenie
+    $ python setup.py install
+    $ pip install .
 
 This should install in your system evegenie. YOu can verify this by
 typing:
 
-    which evegenie
+    $ which evegenie
 
 If you see the path evegenie is installed. With evegenie installed its
 usage is simple:
@@ -988,8 +975,7 @@ you rerun evegenie, kill all previous windows in which you run eve and
 mongo and restart. In case of changes to objects that you have designed
 and run previously, you need to also delete the mongod database.
 
-Towards cmd5 extensions to manage eve and mongo
------------------------------------------------
+## Towards cmd5 extensions to manage eve and mongo :o:
 
 Naturally it is of advantage to have in cms administration commands to
 manage mongo and eve from cmd instead of targets in the Makefile. Hence,
@@ -1017,11 +1003,9 @@ the location of this file is used when the Service class is initialized
 with None. Prior to starting the service the file needs to be copied
 there. This could be achieved with a set command.
 
-Responses
----------
+## Responses :o:
 
-Django REST Framework
----------------------
+## Django REST Framework
 
 Django REST framework is a large toolkit to develop Web APIs. The
 developers of the framework provide the following reasons for using it:

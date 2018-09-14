@@ -1,8 +1,6 @@
-Frequently Asked Questions
-==========================
+# Frequently Asked Questions
 
-General
--------
+## General
 
 ### What is Chameleon?
 
@@ -118,8 +116,7 @@ selecting the organization with whom to log in to GENI, search for
 redirected to the Chameleon Auth Service to log in and then back to the
 GENI Experimenter Portal upon successful login.
 
-Project and Allocation Management
----------------------------------
+## Project and Allocation Management
 
 ### How do I apply for a Chameleon project?
 
@@ -308,8 +305,7 @@ following criteria are used:
     certain that we give allocations to NSF CISE-supported cloud
     computing research!).
 
-Account Management Troubleshooting
-----------------------------------
+## Account Management Troubleshooting
 
 ### When I attempt to create an account it says my email is already registered; why does it happen?
 
@@ -345,8 +341,7 @@ of a project but the allocation is *Pending*, it means your project is
 under review. If you still cannot log in, please [open a ticket with our
 help desk](https://www.chameleoncloud.org/user/help/).
 
-Appliances
-----------
+## Appliances
 
 ### What is an appliance?
 
@@ -467,8 +462,7 @@ against our resource registry, gathering of metrics, etc.
 Since 2016, we also provide and support Ubuntu 14.04 and
 16.04 appliances with the same functionality.
 
-Bare Metal Troubleshooting
---------------------------
+## Bare Metal Troubleshooting
 
 ### Why are my Bare Metal instances failing to launch?
 
@@ -485,8 +479,7 @@ make sure that:
 If you still cannot start instances, please [open a ticket with our help
 desk](https://www.chameleoncloud.org/user/help/).
 
-OpenStack KVM Troubleshooting
------------------------------
+## OpenStack KVM Troubleshooting
 
 ### Why are my OpenStack KVM instances failing to launch?
 
@@ -524,8 +517,7 @@ check for the following issues:
 help desk](https://www.chameleoncloud.org/user/help/), and send us the
 results of the above (and any evidence of nanites you find as well).
 
-Create your own SSH key pairs
------------------------------
+## Create your own SSH key pairs
 
 The following document describes the procedure on how you can create an
 SSH key pair on your Unix, Linux or Windows operating system.

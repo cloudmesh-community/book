@@ -1,5 +1,4 @@
-Swagger Specification
-=====================
+# OpenAPI Specification
 
 Swagger provides through its specification the definition of REST
 services through a YAML or JSON document.
@@ -9,12 +8,12 @@ develop a RESTful service, the first and foremost step is to define the
 API conforming to the OpenAPI specification, and then using codegen
 tools to conveniently generate server side stub code, client code,
 documentations, in the language you desire. In Section
-[\[c:swagger-codegen\]](#c:swagger-codegen){reference-type="ref"
-reference="c:swagger-codegen"} the we have introduced the codegen tool
+[REST Service Generation with OpenAPI](#rest-service-generation-with-openapi)
+we have introduced the codegen tool
 and how to use that to generate server side and client side code and
 documentation. In this
-Section [1.1](#S:vcluster-spec){reference-type="ref"
-reference="S:vcluster-spec"} we will use a slightly more complex example
+Section [The Virtual Cluster example API Definition](#the-virtual-cluster-example-api-definition)
+we will use a slightly more complex example
 to show how to define an API following the OpenAPI 2.0 specification.
 The example is to retrieve virtual cluster (VC) object from the server.
 
@@ -167,8 +166,7 @@ Node
 
 :   as part of a cluster.
 
-The Virtual Cluster example API Definition
-------------------------------------------
+## The Virtual Cluster example API Definition
 
 ### Terminology
 
@@ -298,8 +296,7 @@ Node
           message:
             type: string
 
-References
----------
+## References
 
 [The official OpenAPI 2.0
 Documentation](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md)

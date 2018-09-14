@@ -4,6 +4,7 @@ FILENAME=vonLaszewski-cloud
 
 OS=$(shell ../bin/sysinfo.py)
 DOCKER=$(shell ../bin/isdocker.py)
+IMAGE_DIRS=$(shell ../bin/find-image-dirs.py)
 
 MARKUPALL=../bin/markup-all.py
 
@@ -54,18 +55,21 @@ KUBERNETES=\
  chapters/container/kubernetes-intro.md\
  chapters/container/qemu.md\
 
+GO=\
+  chapters/prg/go/go-intro.md\
+  chapters/prg/go/go-install.md\
+  chapters/prg/go/go-editor.md\
+  chapters/prg/go/go-language.md\
+  chapters/prg/go/go-libraries.md\
+  chapters/prg/go/go-cmd.md
+
 
 DRAFT=\
   $(KUBERNETES)\
-  chapters/iaas/services.md\
-  chapters/iaas/aws/aws.md\
-  chapters/iaas/aws/signup.md\
-  chapters/iaas/azure/azure.md\
-  chapters/iaas/watson/signup.md\
-  chapters/iaas/gcloud/gcloud.md\
   chapters/msg/mqtt.md\
   chapters/msg/mqtt1.md\
   chapters/msg/mqtt2.md\
+  $(GO)
 
 
 CHAPTER_CLASS=\
@@ -84,17 +88,20 @@ CHAPTER_SERVICES=\
 all: prepare epub
 	echo done
 
+
+
 sectionindent:
 	../bin/authors.py > dest/chapters/authors.md
+	../bin/header.py dest/chapters/assignment.md 1
 	../bin/header.py dest/chapters/git/github.md 2
-	../bin/header.py dest/chapters/open.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
-	../bin/header.py dest/chapters/prg/python-install.md 1
-	../bin/header.py dest/chapters/prg/python.md 2
-	../bin/header.py dest/chapters/prg/python-cmd.md 3
+	../bin/header.py dest/chapters/prg/python/python-install.md 1
+	../bin/header.py dest/chapters/prg/python/python.md 2
+	../bin/header.py dest/chapters/prg/python/python-cmd.md 3
+	../bin/header.py dest/chapters/prg/scala/scala.md 1
 	../bin/header.py dest/chapters/cloud/vagrant.md 2
-	../bin/header.py dest/chapters/prg/python-libraries.md 2
-	../bin/header.py dest/chapters/prg/python-data.md 1
+	../bin/header.py dest/chapters/prg/python/python-libraries.md 2
+	../bin/header.py dest/chapters/prg/python/python-data.md 1
 	../bin/header.py dest/chapters/cloud/virtualbox.md 2
 	../bin/header.py dest/chapters/class/organization-516.md 2
 	../bin/header.py dest/chapters/class/policies.md 2
@@ -103,24 +110,56 @@ sectionindent:
 	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
 	../bin/header.py dest/chapters/linux/refcards.md 2
 	../bin/header.py dest/chapters/iaas/aws/aws.md 2
-	../bin/header.py dest/chapters/iaas/aws/signup.md 2
 	../bin/header.py dest/chapters/iaas/azure/azure.md 2
-	../bin/header.py dest/chapters/iaas/watson/signup.md 2
+	../bin/header.py dest/chapters/iaas/watson/watson.md 1
 	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
 	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
 	../bin/header.py dest/chapters/faq.md 2
-	../bin/header.py dest/chapters/MSG.md 2
-	../bin/header.py dest/chapters/prg/go-language.md 1
-	../bin/header.py dest/chapters/prg/julia-language.md 1
+	../bin/header.py dest/chapters/MSG.md 1
+	../bin/header.py dest/chapters/prg/go/go-intro.md 1
+	../bin/header.py dest/chapters/prg/go/go-language.md 2
+	../bin/header.py dest/chapters/prg/go/go-cmd.md 2
+	../bin/header.py dest/chapters/prg/go/go-editor.md 2
+	../bin/header.py dest/chapters/prg/go/go-install.md 2
+	../bin/header.py dest/chapters/prg/go/go-libraries.md 2
+	../bin/header.py dest/chapters/prg/go/go-links.md 2
+	../bin/header.py dest/chapters/prg/julia/julia-language.md 1
 	../bin/header.py dest/chapters/msg/mqtt.md 2
 	../bin/header.py dest/chapters/msg/graphql.md 2
+	../bin/header.py dest/chapters/msg/avro.md 2
 	../bin/header.py dest/chapters/faq.md 1
 	../bin/header.py dest/chapters/faq-516.md 2
+	../bin/header.py dest/chapters/SECTION-DEVTOOLS.md 1
+	../bin/header.py dest/chapters/rest/swagger-codegen.md 2
+	../bin/header.py dest/chapters/rest/swagger-spec.md 2
+	../bin/header.py dest/chapters/rest/swagger.md 2
+	../bin/header.py dest/chapters/iaas/libcloud.md 2
+	../bin/header.py dest/chapters/iaas/iaas.md 2
+	../bin/header.py dest/chapters/iaas/aws/aws.md 1
+	../bin/header.py dest/chapters/iaas/azure/azure.md 1
+	../bin/header.py dest/chapters/iaas/watson/watson.md 2
+	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 1
+	../bin/header.py dest/chapters/iaas/azure/products.md 2
+	../bin/header.py dest/chapters/iaas/aws/products.md 2
+	../bin/header.py dest/chapters/SECTION-CHAMELEON.md 1 
+	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/resources.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/hardware.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/cli.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/faq.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/user-guide.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/heat.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/start.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/horizon.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/charge.md 2
+	../bin/header.py dest/chapters/prg/python/opencv/opencv.md 2
+	../bin/header.py dest/chapters/prg/python/opencv/secchi.md 3
 
 sectionheaders:
 	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
 	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
-	../bin/section.py 1 "[Preface]{.part}" > dest/chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
 	../bin/section.py 1 "References" > dest/chapters/SECTION-REFERENCES.md
 	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
 	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
@@ -138,6 +177,9 @@ sectionheaders:
 	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
 	../bin/section.py 1 "Messaging" > dest/chapters/MSG.md
 	../bin/section.py 1 "FAQ" > dest/chapters/SECTION-FAQ.md
+	../bin/section.py 1 "Infrastructure as a Service" > dest/chapters/SECTION-IAAS.md
+	../bin/section.py 1 "Appendix" > dest/chapters/SECTION-APPENDIX.md
+	../bin/section.py 1 "Chameleon Cloud" > dest/chapters/SECTION-CHAMELEON.md
 
 ######################################################################
 # END BOOK CLASS
@@ -164,7 +206,8 @@ FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
-RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud:chapters/msg"
+RESOURCE=--resource-path=$(IMAGE_DIRS)
+#RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud:chapters/msg:chapters/nist"
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
@@ -187,8 +230,9 @@ prepare: destination references todo
 	../bin/date.py > dest/chapters/version.md
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
 	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
-	make -f Makefile sectionindent
 	make -f Makefile sectionheaders
+	make -f Makefile sectionindent
+
 
 
 epub: prepare
