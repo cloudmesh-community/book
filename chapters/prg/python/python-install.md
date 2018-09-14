@@ -14,7 +14,11 @@ installed. However, we also recommend that for the class you use
 Python's virtualenv (see below) to isolate your development Python from
 the system installed Python.
 
+<<<<<<< HEAD:chapters/prg/python-install.md
+While in other classes yo may have been taught to use anaconda, this is not a tool that ought to be used in a cloud class. The reason for this is that it installs many packages that you are likely not to use. In fact installing anaconda on your VM will wast space and time and you should look into other installs.
+=======
 While in other classes yo may have been taught to use anaconda, this is not a tool that ought to be used in a cloud class. The reason for this is that it installs many packages that you are likely not to use. In fact installing anaconda on your VM will waste space and time and you should look into other installs. 
+>>>>>>> upstream/master:chapters/prg/python/python-install.md
 
 If you know which version of python you need you can just use the version that comes either with your OS, and if that is outdated install a new version from python.or.
 
@@ -110,6 +114,8 @@ Additionally install readline and some compression tools:
 
 ##### Install pyenv on OSX with Homebrew
 
+This is the recommended way of installing pyenv on macOS High Sierra. This method should also be considered if you get the following error:
+"ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?"
 We describe here a mechanism of installing pyenv with homebrew. Other
 mechanisms can be found on the pyenv documentation page
 (<https://github.com/yyuu/pyenv-installer>). You must have homebrew
@@ -228,7 +234,7 @@ now easy. Simply use the following commands:
     (ENV2) $ pyenv activate ENV3
     (ENV3) $ pyenv activate ENV2
     (ENV2) $ pyenv deactivate ENV2
-    (2.7.15) $ 
+    (2.7.15) $
 
 To make it even easier, you can add the following lines to your
 `.bash_profile` file:
@@ -267,7 +273,7 @@ onto the ENV3 environment. Than you need to execute the following steps:
     pip install pip -U
 
 With the pi install command, we make sure we have the newest version
-of pip. In case you get an error, you may have to update xcode as 
+of pip. In case you get an error, you may have to update xcode as
 follows and try again:
 
       xcode-select --install
@@ -306,7 +312,7 @@ install it, with *pyenv*.
 
 #### Miniconda
 
-:warning: This section about miniconda is experimental and has not been 
+:warning: This section about miniconda is experimental and has not been
 tested. We are looking for contributors that help completing
 it. If you use anaconda or miniconda we recommend to manage it via
 pyenv.
@@ -377,7 +383,7 @@ installed:
     2.7.15/envs/ENV2
     3.7.0
     3.7.0/envs/ENV3
-    ENV2 
+    ENV2
     ENV3
     * anaconda3-4.3.1 (set by PYENV_VERSION environment variable)
 
@@ -444,4 +450,3 @@ E.Python.Install.3:
 
 > Why do you not want to use generally anaconda for cloud computing?
 > WHen is it oc to use anaconda?
-
