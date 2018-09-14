@@ -9,10 +9,13 @@ press Enter:
 ``` python
 print("Hello world from Python!")
 ```
+This will print on the terminal
 
-# Hello world from Python!
+```
+Hello world from Python
+```
 
-What happened: the print function was given a **string** to process. A
+What happened? The print function was given a **string** to process. A
 string is a sequence of characters. A **character** can be a alphabetic
 (A through Z, lower and upper case), numeric (any of the digits), white
 space (spaces, tabs, newlines, etc), syntactic directives (comma, colon,
@@ -20,7 +23,7 @@ quotation, exclamation, etc), and so forth. A string is just a sequence
 of the character and typically indicated by surrounding the characters
 in double quotes.
 
-Standard output is discussed in the `../../lesson/linux/shell` lesson.
+Standard output is discussed in the [Section Linux](#linux).
 
 So, what happened when you pressed Enter? The interactive Python program
 read the line `print ("Hello world from Python!")`, split it into the
@@ -44,8 +47,11 @@ hello = 'Hello world from Python!'
 print(hello)
 ```
 
-# Hello world from Python!
+This will print again
 
+```
+Hello world from Python!
+```
 ## Data Types
 
 ### Booleans
@@ -307,7 +313,7 @@ Computer programs do not only execute instructions. Occasionally, a
 choice needs to be made. Such as a choice is based on a condition.
 Python has several conditional operators:
 
-## | Operator | Function |
+| Operator | Function |
 --- | --- | ---
 | > |   greater than |
 | < |  smaller than |
@@ -678,15 +684,15 @@ from the order in which we listed the elements when we declared the
 dictionary initially (Name, Age, Class). It is important to keep this in
 mind: 
 
-:warning: **you cannot make any assumptions about the order in which the
+> :warning: you cannot make any assumptions about the order in which the
 elements of a dictionary will be returned by the keys() and values()
 methods**.
 
-However, you can assume that if you call keys() and values() in
+However, you can assume that if you call `keys()` and `values()` in
 sequence, the order of elements will at least correspond in both
 methods. In the above example Age corresponds to 100, Name to `Albert`,
 and Class to Scientist, and you will observe the same correspondence in
-general as long as *keys() and values() are called one right after the
+general as long as *`keys()` and `values()` are called one right after the
 other*.
 
 ### Counting with Dictionaries
@@ -934,14 +940,13 @@ name and are defined using the `lambda` keyword. The generic syntax of a lambda
 function is in form of`lambda arguments: expression`, as shown in the following
 example: 
 
-``` pythonAlbert
+``` python
 greeter = lambda x: print('Hello %s!'%x)
-greeter('Albert')
+print(greeter('Albert'))
 ```
 As you could probably guess, the result is: 
 
 ``` python
->>> greeter('Albert')
 Hello Albert!
 ```
 
@@ -1002,42 +1007,56 @@ value.
 
 Basic Syntax:
 
-	lambda arguments : expression
+
+``` python
+lambda arguments : expression
+```
 
 For an example: a function in python
 	
-	def multiply(a, b):
-		return a*b
+
+``` python	
+def multiply(a, b):
+	return a*b
 		
-	#call the function
-	multiply(3*5) #outputs: 15
-	
+#call the function
+multiply(3*5) #outputs: 15
+```
+
 Same function can written as Lambda function. This function named as
 multiply is having 2 arguments and returns their multiplication.
 
 Lambda equivalent for above function would be:
 
-	multiply = Lambda a, b : a*b
+``` python
+multiply = Lambda a, b : a*b
 	
-	print multiply(3, 5) 
-	# outputs: 15
+print(multiply(3, 5))
+# outputs: 15
+```
 	
 Here a and b are the 2 arguments and a*b is the expression whose value
 is returned as an output.
 
 Also we don't need to assign Lambda function to a variable.
 
-	(lambda a, b : a*b)(3*5)
-	
+
+``` python
+(lambda a, b : a*b)(3*5)
+```
+
 Lambda functions are mostly passed as parameter to a function which
 expects a function objects like in map or filter.
 
-map
+### map
 
-Basic Syntax
+The basic syntax of the map function is
 
-	map(function_object, iterable1, iterable2,...)
-	
+
+``` python
+map(function_object, iterable1, iterable2,...)
+```
+
 map functions expects a function object and any number of iterables
 like list or dictionary. It executes the function_object for each
 element in the sequence and returns a list of the elements modified by
@@ -1049,13 +1068,15 @@ Example:
 def multiply(x):
 	return x * 2
     
-map(multiply2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
+map(multiply2, [2, 4, 6, 8])  
+# Output [4, 8, 12, 16]
 ```
 
 If we want to write same function using Lambda
 
 ```python
-map(lambda x: x*2, [2, 4, 6, 8])  # Output [4, 8, 12, 16]
+map(lambda x: x*2, [2, 4, 6, 8])  
+# Output [4, 8, 12, 16]
 ``` 
   
 ## Iterators 
@@ -1117,7 +1138,7 @@ $ python iterator.py
 
 As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively. 
 
-## Generators
+## Generators :new:
 
 Now, lets see how we can interate over a dictionary using map and lambda
 Lets say we have a dictionary object
@@ -1158,7 +1179,7 @@ list_map_output = list(map_output)
 print(list_map_output) # Output: [2, 4, 6, 8]
 ```	
 
-## Generators
+## Generators :new:
 
 Before we go to Generators, lets understand what is an
 Iterator. Iterators are used to iterate over any container mostly
@@ -1246,23 +1267,28 @@ The output will be:
 Python has something called List Comprehension, if we use this then we
 can replace the complete function def with just:
 
-	new_numbers = [x*10 for x in [1,2,3,4,5]]
-	print new_numbers  #Output: [10, 20, 30, 40 ,50]
-	
+``` python
+new_numbers = [x*10 for x in [1,2,3,4,5]]
+print new_numbers  #Output: [10, 20, 30, 40 ,50]
+```
 	
 Here the point to note is square brackets [] in line 1 is very
 important. If we change it to () then again we will start getting
 Generators object.
 
-	new_numbers = (x*10 for x in [1,2,3,4,5])
-	print new_numbers  #Output: Generators object
+``` python
+new_numbers = (x*10 for x in [1,2,3,4,5])
+print new_numbers  #Output: Generators object
+```
 
 We can get the individual elements again from Generators if we do a
 for loop over new_numbers like we did above. OR we can convert it into
 a list and then print it.
 
-	new_numbers = (x*10 for x in [1,2,3,4,5])
-	print list(new_numbers)  #Output: [10, 20, 30, 40 ,50]
+``` python
+new_numbers = (x*10 for x in [1,2,3,4,5])
+print list(new_numbers)  #Output: [10, 20, 30, 40 ,50]
+```
 	
 But here if we convert this into a list then we loose on performance,
 which we will just see next.
@@ -1281,68 +1307,75 @@ Lets see an example on how Generators help in Performance.  First,
 without Generators, normal function taking 1 million record and
 returns the result[people] for 1 million.
 
-	names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
-	majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
 
-    # prints the memory before we run the function
-	print 'Memory (Before): {}Mb'.format(mem_profile.memory_usage_resource()) 
-	
-	def people_list(people):
-		result = []
-		for i in range(people):
-			person = {
-					'id' : i,
-					'name' : random.choice(names),
-					'major' : randon.choice(majors)
-					}
-			result.append(person)
-		return result
+``` python
+names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
+majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
 
-	t1 = time.clock()
-	people = people_list(10000000)
-	t2 = time.clock()		
+# prints the memory before we run the function
+memory = mem_profile.memory_usage_resource()
+print ('Memory (Before): {memory}Mb'.format(memory=memory))
+	
+def people_list(people):
+	result = []
+	for i in range(people):
+		person = {
+				'id' : i,
+				'name' : random.choice(names),
+				'major' : randon.choice(majors)
+				}
+		result.append(person)
+	return result
 
-    # prints the memory after we run the function
-	print 'Memory (After): {}Mb'.format(mem_profile.memory_usage_resource()) 
-	print 'Took {} seconds'.format(t2-t1)
+t1 = time.clock()
+people = people_list(10000000)
+t2 = time.clock()		
+
+# prints the memory after we run the function
+memory = mem_profile.memory_usage_resource()
+print ('Memory (After): {memory}Mb'.format(memory=memory))
+print ('Took {time} seconds'.format(time=t2-t1))
 	
-	#Output
-	Memory (Before): 15Mb
-	Memory (After): 318Mb
-	Took 1.2 seconds
-	
+#Output
+Memory (Before): 15Mb
+Memory (After): 318Mb
+Took 1.2 seconds
+```
+
 I am just giving approximate values to compare it with next execution
 but we just try to run it we will see a serious consumption of memory
 with good amount of time taken.
-	
-	names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
-	majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
 
-    # prints the memory before we run the function
-	print 'Memory (Before): {}Mb'.format(mem_profile.memory_usage_resource()) 
-	
-	def people_generator(people):
-		for i in xrange(people):
-			person = {
-					'id' : i,
-					'name' : random.choice(names),
-					'major' : randon.choice(majors)
-					}
-			yield person
+``` python	
+names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
+majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
+
+# prints the memory before we run the function
+memory = mem_profile.memory_usage_resource()
+print ('Memory (Before): {memory}Mb'.format(memory=memory))	
+def people_generator(people):
+	for i in xrange(people):
+		person = {
+				'id' : i,
+				'name' : random.choice(names),
+				'major' : randon.choice(majors)
+				}
+		yield person
 			
-	t1 = time.clock()
-	people = people_list(10000000)
-	t2 = time.clock()		
+t1 = time.clock()
+people = people_list(10000000)
+t2 = time.clock()		
 
-    # prints the memory after we run the function
-	print 'Memory (After): {}Mb'.format(mem_profile.memory_usage_resource()) 
-	print 'Took {} seconds'.format(t2-t1)
+# prints the memory after we run the function
+memory = mem_profile.memory_usage_resource()
+print ('Memory (After): {memory}Mb'.format(memory=memory))print ('Took {time} seconds'.format(time=t2-t1))
 	
-	#Output
-	Memory (Before): 15Mb
-	Memory (After): 15Mb
-	Took 0.01 seconds
-	
+#Output
+Memory (Before): 15Mb
+Memory (After): 15Mb
+Took 0.01 seconds
+```
+
 Now after running the same code using Generators, we will see a
 significant amount of performance boost with alomost 0 Seconds. And
 the reason behind this is that in case of Generators, we do not keep
@@ -1361,20 +1394,21 @@ anything in memory so system just reads 1 at a time and yields that.
 :o: Students can contribute this section
 
 see:
-* https://docs.python.org/3/library/queue.html
+* <https://docs.python.org/3/library/queue.html>
 
 ## Scheduler
 
 :o: Students can contribute this section
 
 see:
-* https://docs.python.org/3/library/sched.html
+* <https://docs.python.org/3/library/sched.html>
 
 ## Python SSL
 
 :o: Students can contribute this section
 
 see:
-* https://docs.python.org/3/library/ssl.html
+
+* <https://docs.python.org/3/library/ssl.html>
 * also demonstrate how you could just use supprocess ... to contarst 
 

@@ -1,4 +1,4 @@
-# Linux
+# Linux {#s-linux}
 
 Now that you have Linux or a Linux like environment (such as `gitbash`)
 on your computer it is time to learn a number of useful commands to
