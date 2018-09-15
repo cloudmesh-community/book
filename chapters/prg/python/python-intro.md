@@ -11,7 +11,8 @@
 * Learn about the `map` function in Python
 * Learn how to start subprocesses and rederect their output
 * Learn more advanced constructs such as multiprocessing and Queues
-* Understand why we do not use anaconda
+* Understand why we do not use `anaconda`
+* Get familiar with `pyenv`
 
 ---
 
