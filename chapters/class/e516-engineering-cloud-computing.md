@@ -103,7 +103,7 @@ The course has the following objectives:
 | :white_check_mark: 08/31    |         |                   | - [Virtual Box](#virtual-box)[:cloud:][virtualbox.md] |
 | :white_check_mark: 08/31    |         |                   | - [Vagrant](#vagrant)[:cloud:][vagrant.md] |
 | :white_check_mark: 08/31    |         |                   | - [Github](#github)[:cloud:][github.md] |
-| :white_check_mark: 08/31    |         |                   | - [Linux](#linux)[:cloud:][linux.md] |
+| :white_check_mark: 08/31    |         |                   | - [Linux](#s-linux)[:cloud:][linux.md] |
 | :white_check_mark: 08/31    | 3       | Python            | **Python:** |
 | :white_check_mark: 08/31    |         |                   | - [Introduction](#s-python-intro)[:cloud:][python-intro.md] |
 | :white_check_mark: 08/31    |         |                   | - [Installation](#s-python-install)[:cloud:][python-install.md] |
@@ -121,8 +121,8 @@ The course has the following objectives:
 | :white_check_mark: 09/15    | 5       | Infrastructure    | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
 | :white_check_mark: 09/17    |         |                   | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
 | :white_check_mark: 09/17    |         |                   | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
-| :o: 09/17                   | 6.a     | Virtualization    | OpenStack Introduction |
-| :o::white_check_mark: 09/17    |         |                   | **Chameleon Cloud:** |
+| :o: 09/17                   |         |                   | - OpenStack Introduction |
+| :o::white_check_mark: 09/17    |         | Chameleon Cloud | - **Chameleon Cloud:** |
 | :o::white_check_mark: 09/17    |         |                   | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
 | :o::white_check_mark: 09/17    |         |                   | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
 | :o::white_check_mark: 09/17    |         |                   | - [Charge](#chameleon-cloud-charge-rates)[:cloud:][charge.md] |

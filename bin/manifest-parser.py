@@ -1,9 +1,24 @@
 #!/usr/bin/env python
+"""Vagrant Manager.
+Usage:
+  manifest-parser.py info
+  manifest-parser.py list
+  manifest-parser.py generate BOOK
+  manifest-parser.py tree BOOK
+
+Options:
+  -h --help     Show this screen.
+
+Description:
+   infor  -- gives general information of the lists
+   
+"""
 
 import oyaml as yaml
 from pprint import pprint
 from treelib import Node, Tree
 from time import time
+from docopt import docopt
 
 def load_manifest(file):
     mfest = None
@@ -83,73 +98,125 @@ def create_tree(adict):
         tree.create_node(timestamp_node(adict), adict, data=time())
     return tree
 
+class manifest(object):
+
+    def __init__(self):
+        self.mfest = load_manifest("../chapters.yaml")
+        self.books = {}
+        self.chaps = {}
+
+        for adef in self.mfest:
+            for defheader, defs in adef.items():
+                if not defheader.startswith("BOOK_"):
+                    self.chaps[defheader] = defs
+                else:
+                    self.books[defheader] = defs
+        #
+        # nested dict approach, not working very well
+        '''
+        for title, bookchaps in self.books.items():
+            print ("BOOK: {title}".format(title=title))
+            print ("+" * 80)
+            book = {title: bookchaps}
+            pprint (book)
+            print ("-" * 80)
+            pprint (expand_def(book, self.chaps))
+            print ("*" * 80)
+        #pprint(books)
+        '''
+
+        #
+        # tree approach, better
+        self.treechap = {}
+        for title, chap in self.chaps.items():
+            self.treechap[title] = create_tree({title: chap})
+
+        self.treebook = {}
+        for title, book in self.books.items():
+            self.treebook[title] = create_tree({title: book})
+
+        for title, tree in self.treebook.items():
+            #tree.show()
+            for node in tree.expand_tree(mode=Tree.DEPTH):
+                #print ("+", node)
+                realtag = node
+                if type(realtag) is Node:
+                    realtag = node.tag
+                if "|" in realtag:
+                    realtag = realtag.split("|")[1]
+                if realtag.startswith("$ref:"):
+                    chapkey = realtag.split("$ref:")[1]
+                    newtree = Tree(tree=self.treechap[chapkey],deep=True)
+                    for anode in tree.children(node):
+                        origtag = anode.tag
+                        if "|" in origtag:
+                            origtag = anode.tag.split("|")[1]
+                        #print (origtag)
+                        newtree.create_node(timestamp_node(origtag), origtag, parent=newtree.root, data=time())
+                    # find parent node of the node to be replaced
+                    parent = tree.parent(node)
+                    # use the old timestamp data to preserve insertion order
+                    newtree.get_node(newtree.root).data=tree.get_node(node).data
+                    # remove old node
+                    tree.remove_subtree(node)
+                    # replace with new expanded node
+                    tree.paste(parent.identifier, newtree)
+
+    def info(self):
+        for title, tree in self.treebook.items():
+            print ("=" * 80)
+            tree.show(key=lambda x: x.data)
+            print ("-" * 80)
+            for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
+                print (node, tree.level(node))
+
+    def list(self):
+        for title, tree in self.treebook.items():
+            print (title)
+
+    def generate(self, book):
+        variables = self.chaps.keys()
+        for title, tree in self.treebook.items():
+            if title == book:
+                # print ("=" * 80)
+                # tree.show(key=lambda x: x.data)
+                # print ("-" * 80)
+                for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
+                    if node not in variables:
+                        print (node, tree.level(node))
+
+    def generate_tree(self, book):
+        for title, tree in self.treebook.items():
+            if title == book:
+                tree.show(key=lambda x: x.data)
+
+
+def process_arguments(arguments):
+    if arguments["info"]:
+        m = manifest()
+        m.info()
+    elif arguments["list"]:
+        m = manifest()
+        m.list()
+    elif arguments["generate"]:
+        book = arguments["BOOK"]
+        m = manifest()
+        m.generate(book)
+    elif arguments["tree"]:
+        book = arguments["BOOK"]
+        m = manifest()
+        m.generate_tree(book)
+
+
+
 def main():
-    mfest = load_manifest("../chapters.yaml")
-    books = {}
-    chaps = {}
-    for adef in mfest:
-        for defheader, defs in adef.items():
-            if not defheader.startswith("BOOK_"):
-                chaps[defheader] = defs
-            else:
-                books[defheader] = defs
-    #
-    # nested dict approach, not working very well
-    '''
-    for title, bookchaps in books.items():
-        print ("BOOK: {title}".format(title=title))
-        print ("+" * 80)
-        book = {title: bookchaps}
-        pprint (book)
-        print ("-" * 80)
-        pprint (expand_def(book, chaps))
-        print ("*" * 80)
-    #pprint(books)
-    '''
+    """
+    TODO: doc
+    :return:
+    """
+    arguments = docopt(__doc__, version='Cloudmesh Book Manager 0.1')
+    process_arguments(arguments)
 
-    #
-    # tree approach, better
-    treechap = {}
-    for title, chap in chaps.items():
-        treechap[title] = create_tree({title: chap})
-
-    treebook = {}
-    for title, book in books.items():
-        treebook[title] = create_tree({title: book})
-
-    for title, tree in treebook.items():
-        #tree.show()
-        for node in tree.expand_tree(mode=Tree.DEPTH):
-            #print ("+", node)
-            realtag = node
-            if type(realtag) is Node:
-                realtag = node.tag
-            if "|" in realtag:
-                realtag = realtag.split("|")[1]
-            if realtag.startswith("$ref:"):
-                chapkey = realtag.split("$ref:")[1]
-                newtree = Tree(tree=treechap[chapkey],deep=True)
-                for anode in tree.children(node):
-                    origtag = anode.tag
-                    if "|" in origtag:
-                        origtag = anode.tag.split("|")[1]
-                    #print (origtag)
-                    newtree.create_node(timestamp_node(origtag), origtag, parent=newtree.root, data=time())
-                # find parent node of the node to be replaced
-                parent = tree.parent(node)
-                # use the old timestamp data to preserve insertion order
-                newtree.get_node(newtree.root).data=tree.get_node(node).data
-                # remove old node
-                tree.remove_subtree(node)
-                # replace with new expanded node
-                tree.paste(parent.identifier, newtree)
-
-    for title, tree in treebook.items():
-        print ("=" * 80)
-        tree.show(key=lambda x: x.data)
-        print ("-" * 80)
-        for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
-            print (node, tree.level(node))
 
 if __name__ == '__main__':
     main()
