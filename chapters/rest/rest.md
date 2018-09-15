@@ -1,6 +1,18 @@
 # REST
 
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Understand REST Servioces.
+* Understand OpenAPI.
+* Develop REST services in Python using Eve.
+* Develop REST services in Python using OpenAPI with swagger.
+
+---
+
+
 ## Overview of REST
 
 Test short refid.
