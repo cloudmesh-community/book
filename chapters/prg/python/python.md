@@ -1078,7 +1078,42 @@ If we want to write same function using Lambda
 map(lambda x: x*2, [2, 4, 6, 8])  
 # Output [4, 8, 12, 16]
 ``` 
-  
+
+### dictionary
+
+Now, lets see how we can interate over a dictionary using map and lambda
+Lets say we have a dictionary object
+
+```python
+dict_movies = [
+    {'movie': 'avengers', 'comic': 'marvel'},
+    {'movie': 'superman', 'comic': 'dc'}]
+```
+
+We can iterate over this dictionary and read the elements of it using
+map and lambda functions in following way:
+
+```python
+map(lambda x : x['movie'], dict_movies)  # Output: ['avengers', 'superman']
+map(lambda x : x['comic'],  dict_movies)  # Output: ['marvel', 'dc']
+map(lambda x : x['movie'] == "avengers", dict_movies)  
+# Output: [True, False]
+```
+	
+In Python3, map function returns an iterator or map object which gets
+lazily evaluated which means neither we can access the elements of the
+map object with index nor we can use len() to find the length of the
+map object.  We can force convert the map output i.e. the map object
+to list as shown below:
+
+```python
+map_output = map(lambda x: x*2, [1, 2, 3, 4])
+print(map_output) 
+# Output: map object: <map object at 0x04D6BAB0>
+list_map_output = list(map_output)
+print(list_map_output) # Output: [2, 4, 6, 8]
+```	
+
 ## Iterators 
 
 In Python, an iterator protocol is defined using two methods:
@@ -1138,46 +1173,6 @@ $ python iterator.py
 
 As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively. 
 
-## Generators :new:
-
-Now, lets see how we can interate over a dictionary using map and lambda
-Lets say we have a dictionary object
-
-```python
-dict_movies = [
-    {'movie':
-     'avengers',
-     'comic':
-     'marvel'},
-    {'movie':
-     'superman',
-     'comic':
-     'dc'}]
-```
-
-We can iterate over this dictionary and read the elements of it using
-map and lambda functions in following way:
-
-```python
-map(lambda x : x['movie'], dict_movies)  # Output: ['avengers', 'superman']
-map(lambda x : x['comic'],  dict_movies)  # Output: ['marvel', 'dc']
-map(lambda x : x['movie'] == "avengers", dict_movies)  
-# Output: [True, False]
-```
-	
-In Python3, map function returns an iterator or map object which gets
-lazily evaluated which means neither we can access the elements of the
-map object with index nor we can use len() to find the length of the
-map object.  We can force convert the map output i.e. the map object
-to list as shown below:
-
-```python
-map_output = map(lambda x: x*2, [1, 2, 3, 4])
-print(map_output) 
-# Output: map object: <map object at 0x04D6BAB0>
-list_map_output = list(map_output)
-print(list_map_output) # Output: [2, 4, 6, 8]
-```	
 
 ## Generators :new:
 
