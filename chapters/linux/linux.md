@@ -1,5 +1,14 @@
 # Linux {#s-linux}
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Be able to know the basic commands to work in a Linux terminal.
+* Get familiar with Linux Commands
+
+---
+
 Now that you have Linux or a Linux like environment (such as `gitbash`)
 on your computer it is time to learn a number of useful commands to
 interact with the system.
