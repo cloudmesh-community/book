@@ -1,5 +1,16 @@
 # Architectures :new: {#s-cloud-architectures}
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Reveiew classical architectural models leading up to cloud computing.
+* Review some mayor cloud architecture views.
+* Visualize the NIST cloud architecture
+* Discuss an architecture for multicloud frameworks.
+
+---
+
 While we have introduce in our introductory section a number of
 definitions for cloud computing, as well as an architectural view for
 clouds based on the "as a Service" model, we will look a bit closer at
