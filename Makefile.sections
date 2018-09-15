@@ -19,7 +19,7 @@ DEVTOOLS=\
   chapters/linux/ssh-excerise.md
 
 PYTHON=\
-	chapters/prg/SECTION-PYTHON.md\
+  chapters/prg/SECTION-PYTHON.md\
   chapters/prg/python/python-intro.md\
   chapters/prg/python/python-install.md\
   chapters/prg/python/python-interactive.md\
