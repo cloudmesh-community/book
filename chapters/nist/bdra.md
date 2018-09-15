@@ -1,5 +1,18 @@
 # NIST Big Data Referenece Architecture
 
+
+---
+
+**:mortar_board: Learning Objectives**
+
+* Obtain an overview of the NIST Big Data Refernce Architecture.
+* Understand REST Servioces.
+* Understand OpenAPI.
+* Develop REST services in Python using Eve.
+* Develop REST services in Python using OpenAPI with swagger.
+
+---
+
 One of the major technical areas in the cloud is to define
 architectures that can work with Big Data. For this reason NIST has
 work now for some time on identifying how to create a data
