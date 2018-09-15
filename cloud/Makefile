@@ -92,6 +92,7 @@ all: prepare epub
 
 sectionindent:
 	../bin/authors.py > dest/chapters/authors.md
+	../bin/header.py dest/chapters/arch.md 1
 	../bin/header.py dest/chapters/assignment.md 1
 	../bin/header.py dest/chapters/git/github.md 2
 	../bin/header.py dest/chapters/linux/linux.md 2
