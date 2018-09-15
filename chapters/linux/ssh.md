@@ -1,5 +1,16 @@
 # Secure Shell
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* This is one of the most important sections of the book, studdy it carefully.
+* learn how to use SSH keys 
+* Learn how to use ssh-add and ssh-keycahin so you only have to type in your password once
+* Understand that each computer needs its own ssh key
+
+---
+
 [Secure Shell](http://openssh.com/manual.html) is a network protocol
 allowing users to securely connect to remote resources over the
 internet. In many services we need to use SSH to assure that we
