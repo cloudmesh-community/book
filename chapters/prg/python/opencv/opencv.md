@@ -1,5 +1,15 @@
 # OpenCV :new: {#s-opencv}
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Provide some simple calculations so we can test cloud services.
+* Show case some elementary OpenCV functions
+* Show an environmental image analysis application using Secchi disks
+
+---
+
 OpenCV (Open Source Computer Vision Library) is a library of thousands
 of algorithms for various applications in computer vision and machine
 learning. It has C++, C, Python, Java and MATLAB interfaces and supports
