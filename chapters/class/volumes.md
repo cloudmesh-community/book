@@ -1,5 +1,19 @@
 # Example Artifacts
 
+
+---
+
+**:mortar_board: Learning Objectives**
+
+* Identify what other studenst have done previously.
+* Look at previous chapters, whcih are collected as technology reviews.
+* Look at previous project reports.
+* Looking at the documents provides you with an initial overview of the scope for the artifacts.
+
+---
+
+As part of this class you will be delivering some artifacts that are being graded. Some of them include writing a *chapter* that can be contributed to the class lecture and a project. To  showcase you some examples take a closer look at teh documents listed in this section. Please also note that you can not duplicate or replicate a students previous work without significant improvements. All material listed here is available online, including all source code.
+
 ## Technology Summaries
 
 We are maintaining a large list of technologies related to clouds and Big Data at 

@@ -1,5 +1,15 @@
 # Introduction
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Review IaaS servise by prominent cloud providers.
+* Understand how to write Python programs on managing virtual machines with libcloud.
+* Understand how to write Python programs on managing data services with libcloud.
+* Experiment with cloud providers while practially testing them. :warning: be carfull with your allocation
+
+---
 
 [NIST](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf) defines the term 
 

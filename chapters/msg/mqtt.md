@@ -1,6 +1,16 @@
 # MQTT
 
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Understand Message systems for the cloud
+* learn about MQTT
+* Learn about GraphQL
+
+---
+
 With the increase importance of cloud computing and the increased number
 of edge devices and their applications, such as sensor networks, it is
 crucial to enable fast communication between the sensing devices and
