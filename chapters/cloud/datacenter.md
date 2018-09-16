@@ -5,7 +5,7 @@ contributing to this document.
 
 ---
 
-**Learning Objectives**
+**:mortar_board: Learning Objectives**
 
 * What is a data center.
 * What are import metrics.

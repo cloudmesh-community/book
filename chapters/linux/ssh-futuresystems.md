@@ -1,5 +1,14 @@
 ## SSH to FutureSystems Resources
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Obtain a FUture system account so you can use kubernetes or dockerswarm or other services offered by FutureSystems.
+* Note that we no longer support OpenStack in FutureSystems.
+
+---
+
 Next, you need to upload the key to the portal. You must be logged into the portal to do so.
 
 Step 1: Log into the portal

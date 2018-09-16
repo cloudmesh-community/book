@@ -115,9 +115,11 @@ The course has the following objectives:
 | :white_check_mark: 08/31    |         |                   | - [Matplotlib](#matplotlib)[:cloud:][python-matplotlib.md] |
 | :white_check_mark: 08/31    |         |                   | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[:cloud:][python-cmd5.md] |
 | :new: 09/13                 |         |                   | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
-| :new: 09/13                 |         |                   | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
+| :new: 09/13                 |         |                   |- [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
 | :white_check_mark: 09/03    |         |                   | [Data Center][datacenter.md] |
-| :white_check_mark: 09/10    | 4       | Architecture      | [NIST Big Data Reference Architecture](#nist-big-data -reference-architecture)[:cloud:][bdra.md] |
+| :white_check_mark: 09/10    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
+| :new: 09/13                 |         |                   | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
+| :white_check_mark: 09/15    |         |                   | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
 | :white_check_mark: 09/15    | 5       | Infrastructure    | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
 | :white_check_mark: 09/17    |         |                   | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
 | :white_check_mark: 09/17    |         |                   | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
@@ -165,6 +167,7 @@ Legend markings
 </div> 
  
 
+[arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
 [gregor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md
 [e516-summary.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md
 [e516-definition.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md

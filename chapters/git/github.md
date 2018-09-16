@@ -1,5 +1,15 @@
 # Github
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Be able to use the github cloud sevices to collaborately develop contents and programs.
+* Be able to use github as part of an open source project.
+
+---
+
+
 In some classes the material may be openly shared in code repositories.
 This includes class material, papers and project. Hence, we need some
 mechanism to share content with a large number of students.
