@@ -132,7 +132,7 @@ draft: prepare epubdraft
 
 images:
 	mkdir -p dest
-	$(COPY) -r ../chapters dest
+	rsync -v -r --include='*.jpeg' --include='*.jpg' --include='*.png' --include='*.JPG' --include='*.PNG' --exclude=".DS_Store" --exclude="*.md"   --exclude="*.tex" --exclude="*.txt" ../chapters dest
 
 destination:
 	mkdir -p dest
