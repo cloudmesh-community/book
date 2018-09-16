@@ -1,4 +1,5 @@
 include ../Makefile.sections
+BOOK=BOOK_516
 
 FILENAME=vonLaszewski-cloud
 
@@ -85,102 +86,40 @@ CHAPTER_SERVICES=\
   chapters/doc/piazza.md\
  chapters/preface/git.md
 
+
 all: prepare epub
 	echo done
 
+update:
+	../bin/manifest-parser.py dep $(BOOK) > ../Makefile.$(BOOK)
+
+include ../Makefile.$(BOOK)
 
 
-sectionindent:
-	../bin/authors.py > dest/chapters/authors.md
-	../bin/header.py dest/chapters/arch.md 1
-	../bin/header.py dest/chapters/assignment.md 1
-	../bin/header.py dest/chapters/git/github.md 2
-	../bin/header.py dest/chapters/linux/linux.md 2
-	../bin/header.py dest/chapters/prg/python/python-install.md 1
-	../bin/header.py dest/chapters/prg/python/python.md 2
-	../bin/header.py dest/chapters/prg/python/python-cmd.md 3
-	../bin/header.py dest/chapters/prg/scala/scala.md 1
-	../bin/header.py dest/chapters/cloud/vagrant.md 2
-	../bin/header.py dest/chapters/prg/python/python-libraries.md 2
-	../bin/header.py dest/chapters/prg/python/python-data.md 1
-	../bin/header.py dest/chapters/cloud/virtualbox.md 2
-	../bin/header.py dest/chapters/class/organization-516.md 2
-	../bin/header.py dest/chapters/class/policies.md 2
-	../bin/header.py dest/chapters/preface/create.md 2
-	../bin/header.py dest/chapters/linux/ssh.md 2
-	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
-	../bin/header.py dest/chapters/linux/refcards.md 2
-	../bin/header.py dest/chapters/iaas/aws/aws.md 2
-	../bin/header.py dest/chapters/iaas/azure/azure.md 2
-	../bin/header.py dest/chapters/iaas/watson/watson.md 1
-	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
-	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
-	../bin/header.py dest/chapters/faq.md 2
-	../bin/header.py dest/chapters/MSG.md 1
-	../bin/header.py dest/chapters/prg/go/go-intro.md 1
-	../bin/header.py dest/chapters/prg/go/go-language.md 2
-	../bin/header.py dest/chapters/prg/go/go-cmd.md 2
-	../bin/header.py dest/chapters/prg/go/go-editor.md 2
-	../bin/header.py dest/chapters/prg/go/go-install.md 2
-	../bin/header.py dest/chapters/prg/go/go-libraries.md 2
-	../bin/header.py dest/chapters/prg/go/go-links.md 2
-	../bin/header.py dest/chapters/prg/julia/julia-language.md 1
-	../bin/header.py dest/chapters/msg/mqtt.md 2
-	../bin/header.py dest/chapters/msg/graphql.md 2
-	../bin/header.py dest/chapters/msg/avro.md 2
-	../bin/header.py dest/chapters/faq.md 1
-	../bin/header.py dest/chapters/faq-516.md 2
-	../bin/header.py dest/chapters/SECTION-DEVTOOLS.md 1
-	../bin/header.py dest/chapters/rest/swagger-codegen.md 2
-	../bin/header.py dest/chapters/rest/swagger-spec.md 2
-	../bin/header.py dest/chapters/rest/swagger.md 2
-	../bin/header.py dest/chapters/iaas/libcloud.md 2
-	../bin/header.py dest/chapters/iaas/iaas.md 2
-	../bin/header.py dest/chapters/iaas/aws/aws.md 1
-	../bin/header.py dest/chapters/iaas/azure/azure.md 1
-	../bin/header.py dest/chapters/iaas/watson/watson.md 2
-	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 1
-	../bin/header.py dest/chapters/iaas/azure/products.md 2
-	../bin/header.py dest/chapters/iaas/aws/products.md 2
-	../bin/header.py dest/chapters/SECTION-CHAMELEON.md 1 
-	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/resources.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/hardware.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/cli.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/faq.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/user-guide.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/heat.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/start.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/horizon.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/charge.md 2
-	../bin/header.py dest/chapters/prg/python/opencv/opencv.md 2
-	../bin/header.py dest/chapters/prg/python/opencv/secchi.md 3
-
-sectionheaders:
-	../bin/section.py 1 "Development Tools and Services" > dest/chapters/SECTION-DEVTOOLS.md
-	../bin/section.py 1 "A Single Pi" > dest/chapters/SECTION-ONE-PI.md
-	../bin/section.py 1 "Preface" > dest/chapters/SECTION-PREFACE.md
-	../bin/section.py 1 "References" > dest/chapters/SECTION-REFERENCES.md
-	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-SSH.md
-	../bin/section.py 1 "PXE" > dest/chapters/SECTION-PXE.md
-	../bin/section.py 1 "SD Card" > dest/chapters/SECTION-sdcard.md      
-	../bin/section.py 1 "Docker" > dest/chapters/SECTION-docker.md
-	../bin/section.py 1 "Docker Swarm" > dest/chapters/SECTION-docker-swarm.md  
-	../bin/section.py 1 "Kubernetes" > dest/chapters/SECTION-kubernetes.md
-	../bin/section.py 1 "Hadoop" > dest/chapters/SECTION-hadoop.md
-	../bin/section.py 1 "Yarn" > dest/chapters/SECTION-yarn.md  
-	../bin/section.py 1 "Spark" > dest/chapters/SECTION-spark.md        
-	../bin/section.py 1 "Big Data Applications" > dest/chapters/bigdata/SECTION.md
-	../bin/section.py 1 "Scientific Writing" > dest/chapters/doc/SECTION.md
-	../bin/section.py 1 "Python" > dest/chapters/prg/SECTION-PYTHON.md
-	../bin/section.py 2 "Language" > dest/chapters/prg/SECTION-PYTHON-LANG.md
-	../bin/section.py 1 "Classes" > dest/chapters/class/SECTION.md
-	../bin/section.py 1 "Messaging" > dest/chapters/MSG.md
-	../bin/section.py 1 "FAQ" > dest/chapters/SECTION-FAQ.md
-	../bin/section.py 1 "Infrastructure as a Service" > dest/chapters/SECTION-IAAS.md
-	../bin/section.py 1 "Appendix" > dest/chapters/SECTION-APPENDIX.md
-	../bin/section.py 1 "Chameleon Cloud" > dest/chapters/SECTION-CHAMELEON.md
+headers:
+	../bin/section.py 1 "Development Tools and Services" > ../chapters/SECTION-DEVTOOLS.md
+	../bin/section.py 1 "A Single Pi" > ../chapters/SECTION-ONE-PI.md
+	../bin/section.py 1 "Preface" > ../chapters/SECTION-PREFACE.md
+	../bin/section.py 1 "References" > ../chapters/SECTION-REFERENCES.md
+	../bin/section.py 1 "Kubernetes" > ../chapters/SECTION-SSH.md
+	../bin/section.py 1 "PXE" > ../chapters/SECTION-PXE.md
+	../bin/section.py 1 "SD Card" > ../chapters/SECTION-sdcard.md      
+	../bin/section.py 1 "Docker" > ../chapters/SECTION-docker.md
+	../bin/section.py 1 "Docker Swarm" > ../chapters/SECTION-docker-swarm.md  
+	../bin/section.py 1 "Kubernetes" > ../chapters/SECTION-kubernetes.md
+	../bin/section.py 1 "Hadoop" > ../chapters/SECTION-hadoop.md
+	../bin/section.py 1 "Yarn" > ../chapters/SECTION-yarn.md  
+	../bin/section.py 1 "Spark" > ../chapters/SECTION-spark.md        
+	../bin/section.py 1 "Big Data Applications" > ../chapters/bigdata/SECTION.md
+	../bin/section.py 1 "Scientific Writing" > ../chapters/doc/SECTION.md
+	../bin/section.py 1 "Python" > ../chapters/prg/SECTION-PYTHON.md
+	../bin/section.py 2 "Language" > ../chapters/prg/SECTION-PYTHON-LANG.md
+	../bin/section.py 1 "Classes" > ../chapters/class/SECTION.md
+	../bin/section.py 1 "Messaging" > ../chapters/MSG.md
+	../bin/section.py 1 "FAQ" > ../chapters/SECTION-FAQ.md
+	../bin/section.py 1 "Infrastructure as a Service" > ../chapters/SECTION-IAAS.md
+	../bin/section.py 1 "Appendix" > ../chapters/SECTION-APPENDIX.md
+	../bin/section.py 1 "Chameleon Cloud" > ../chapters/SECTION-CHAMELEON.md
 
 ######################################################################
 # END BOOK CLASS
@@ -224,16 +163,17 @@ destination:
 	$(COPY) -r cover dest
 	$(COPY) -r ../template dest
 	$(COPY) -r ../template/fonts dest
-	$(COPY) -r ../chapters dest	
 
-prepare: destination references todo
+authors:
+	../bin/authors.py > ../chapters/authors.md
+
+version:
+	../bin/date.py > ../chapters/version.md
+
+prepare: version authors destination chapterlist references todo
 	$(MARKUPALL)
-	../bin/date.py > dest/chapters/version.md
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
 	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
-	make -f Makefile sectionheaders
-	make -f Makefile sectionindent
-
 
 
 epub: prepare
