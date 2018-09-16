@@ -4,6 +4,7 @@ Usage:
   manifest-parser.py info
   manifest-parser.py list
   manifest-parser.py generate BOOK
+  manifest-parser.py dep BOOK
   manifest-parser.py tree BOOK
 
 Options:
@@ -185,11 +186,43 @@ class manifest(object):
                     if node not in variables:
                         print (node, tree.level(node))
 
+    def generate_dependencies(self, book):
+
+        def print_rule(name, level):
+
+            print ("dest/{name}: ../{name}".format(name=name,level=level))
+            print("\t$(COPY) ../{name} dest/{name}".format(name=name,level=level))
+            print("\t../bin/header.py dest/{name} {level}".format(name=name,level=level))
+
+        
+        chapterlist = []
+        variables = self.chaps.keys()
+        for title, tree in self.treebook.items():
+            if title == book:
+                for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
+                    if node not in variables and node != book:
+                        location = "../{name}".format(name=node)
+                        chapterlist.append(location)
+        print("chapterlist: ", " ".join(chapterlist))
+        print ("\t@echo \"updated modified chapters\"")
+        print()
+
+        print()
+        variables = self.chaps.keys()
+        for title, tree in self.treebook.items():
+            if title == book:
+                for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
+                    if node not in variables and node != book:
+                        print_rule (node, tree.level(node))
+                        print()
+
     def generate_tree(self, book):
         for title, tree in self.treebook.items():
             if title == book:
                 tree.show(key=lambda x: x.data)
-
+    
+                
+                
 
 def process_arguments(arguments):
     if arguments["info"]:
@@ -206,6 +239,10 @@ def process_arguments(arguments):
         book = arguments["BOOK"]
         m = manifest()
         m.generate_tree(book)
+    elif arguments["dep"]:
+        book = arguments["BOOK"]
+        m = manifest()
+        m.generate_dependencies(book)
 
 
 
