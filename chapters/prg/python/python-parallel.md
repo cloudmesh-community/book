@@ -109,40 +109,31 @@ We can fix this issue using a `lock`: whenever one of the function is going to i
 
 ```python
 import threading
-```
-**```
+
 increment_by_3_lock = threading.Lock()
-```**
-```python
+
 global counter
 counter = 0 
 
 def incrementer1():
     global counter 
-    for j in range(2):
-```
-**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increment_by_3_lock.acquire(True)**
-```python
+    for j in range(2):    
+        increment_by_3_lock.acquire(True)
         for i in range(3):
             counter += 1 
             print("Greeter 1 incremented the counter by 1")
         print ("Counter is %d"%counter)
-```
-**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increment_by_3_lock.release()**
-```python
+        increment_by_3_lock.release()
+
 def incrementer2():
     global counter 
     for j in range(2):
-```    
- **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increment_by_3_lock.acquire(True)**
-```python
+        increment_by_3_lock.acquire(True)
         for i in range(3):
             counter += 1
             print("Greeter 2 incremented the counter by 1")
         print ("Counter is %d"%counter)
-```
-**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increment_by_3_lock.release()**
-```python
+        increment_by_3_lock.release()
 
 if __name__ == '__main__': 
     t1 = threading.Thread(target = incrementer1)
@@ -150,7 +141,9 @@ if __name__ == '__main__':
 
     t1.start()
     t2.start()
+
 ```
+
 
 No matter how many times you run this code, the output would always be in the correct order: 
 
@@ -386,7 +379,7 @@ Greeter1: Counter is 12
 ```
 The last example related to parallel processing, illustrates the use of both `Value` and `Array`, as well as a technique to pass multiple arguments to a function. Note that the `Process` object does not accept multiple arguments for a function and therefore we need this or similar techniques for passing multiple arguments. Also, this technique can also be used when you want to pass multiple arguments to `map` or `map_async`:
 
-```python`
+```python
 from multiprocessing import Process, Lock, Value, Array
 import time
 from ctypes import c_char_p
@@ -403,7 +396,6 @@ def incrementer1(counter_and_names):
         for i in range(3):
             counter.value += 1 
             time.sleep(0.1)
-
         name_idx = counter.value//3 -1
         print ("Greeter1: Greeting {0}! Counter is {1}".format(names.value[name_idx],counter.value))
         increment_by_3_lock.release()
@@ -422,7 +414,6 @@ def incrementer2(counter_and_names):
 
 
 if __name__ == '__main__': 
-
     counter = Value('i',0)
     names = Array (c_char_p,4)
     names.value = ['James','Tom','Sam', 'Larry']
