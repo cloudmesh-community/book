@@ -107,7 +107,8 @@ Counter is 12
 
 We can fix this issue using a `lock`: whenever one of the function is going to increment the value by 3, it will `acquire()` the lock and when it is done the function will `release()` the lock. This mechanism is illustrated in the following code: 
 
-<pre><code>import threading
+```python
+import threading
 
 increment_by_3_lock = threading.Lock()
 
@@ -117,22 +118,22 @@ counter = 0
 def incrementer1():
     global counter 
     for j in range(2):    
-        <b>increment_by_3_lock.acquire(True)</b>
+        increment_by_3_lock.acquire(True)
         for i in range(3):
             counter += 1 
             print("Greeter 1 incremented the counter by 1")
         print ("Counter is %d"%counter)
-        <b>increment_by_3_lock.release()</b>
+        increment_by_3_lock.release()
 
 def incrementer2():
     global counter 
     for j in range(2):
-        <b>increment_by_3_lock.acquire(True)</b>
+        increment_by_3_lock.acquire(True)
         for i in range(3):
             counter += 1
             print("Greeter 2 incremented the counter by 1")
         print ("Counter is %d"%counter)
-        <b>increment_by_3_lock.release()</b>
+        increment_by_3_lock.release()
 
 if __name__ == '__main__': 
     t1 = threading.Thread(target = incrementer1)
@@ -141,7 +142,7 @@ if __name__ == '__main__':
     t1.start()
     t2.start()
 
-</code></pre>
+```
 
 
 No matter how many times you run this code, the output would always be in the correct order: 
@@ -378,7 +379,7 @@ Greeter1: Counter is 12
 ```
 The last example related to parallel processing, illustrates the use of both `Value` and `Array`, as well as a technique to pass multiple arguments to a function. Note that the `Process` object does not accept multiple arguments for a function and therefore we need this or similar techniques for passing multiple arguments. Also, this technique can also be used when you want to pass multiple arguments to `map` or `map_async`:
 
-<pre><code>
+```python
 from multiprocessing import Process, Lock, Value, Array
 import time
 from ctypes import c_char_p
@@ -395,8 +396,8 @@ def incrementer1(counter_and_names):
         for i in range(3):
             counter.value += 1 
             time.sleep(0.1)
-        <b>name_idx = counter.value//3 -1</b>
-        <b>print ("Greeter1: Greeting {0}! Counter is {1}".format(names.value[name_idx],counter.value))</b>
+        name_idx = counter.value//3 -1
+        print ("Greeter1: Greeting {0}! Counter is {1}".format(names.value[name_idx],counter.value))
         increment_by_3_lock.release()
     
 def incrementer2(counter_and_names):    
@@ -407,8 +408,8 @@ def incrementer2(counter_and_names):
         for i in range(3):
             counter.value += 1
             time.sleep(0.05)
-        <b>name_idx = counter.value//3 -1</b>
-        <b>print ("Greeter2: Greeting {0}! Counter is {1}".format(names.value[name_idx],counter.value))</b>
+        name_idx = counter.value//3 -1
+        print ("Greeter2: Greeting {0}! Counter is {1}".format(names.value[name_idx],counter.value))
         increment_by_3_lock.release()
 
 
@@ -416,11 +417,11 @@ if __name__ == '__main__':
     counter = Value('i',0)
     names = Array (c_char_p,4)
     names.value = ['James','Tom','Sam', 'Larry']
-    t1 = Process(target = incrementer1, args=(<b>(counter,names)</b>,))
-    t2 = Process(target = incrementer2 , args=(<b>(counter,names)</b>,))
+    t1 = Process(target = incrementer1, args=((counter,names),))
+    t2 = Process(target = incrementer2 , args=((counter,names),))
     t2.start()
     t1.start()
-</pre></code>
+```
 
 In this example we created a `multiprocessing.Array()` object and assigned it to a variable called `names`. As we mentioned before, the first argument is the `ctype` data type and since we want to create an array of strings with length of 4 (second argument), we imported the `c_char_p` and passed it as the first argument. 
 
