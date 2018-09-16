@@ -7,7 +7,7 @@ OS=$(shell ../bin/sysinfo.py)
 DOCKER=$(shell ../bin/isdocker.py)
 IMAGE_DIRS=$(shell ../bin/find-image-dirs.py)
 
-MARKUPALL=../bin/markup-all.py
+#MARKUPALL=../bin/markup-all.py
 
 #
 # removing mermaid filter from linux as we do not yet know how to use it in docker
@@ -90,7 +90,7 @@ CHAPTER_SERVICES=\
 all: prepare epub
 	echo done
 
-update: Makefile ../chapter.yaml
+update: Makefile 
 	../bin/manifest-parser.py dep $(BOOK) > ../Makefile.$(BOOK)
 
 include ../Makefile.$(BOOK)
@@ -155,7 +155,8 @@ prepare: version authors destination chapterlist references todo
 
 epub: prepare
 ifeq ($(OS), osx)
-	cd dest; iconv -t utf-8 $(INDEX) > all.md
+	#cd dest; iconv -t utf-8 $(INDEX) > all.md
+	cd dest; cat $(INDEX) > all.md
 endif
 ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md

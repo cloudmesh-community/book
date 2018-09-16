@@ -219,28 +219,28 @@ dest/chapters/prg/go/go-language.md: ../chapters/prg/go/go-language.md
 	../bin/header.py dest/chapters/prg/go/go-language.md 2
 
 dest/chapters/prg/go/go-intro.md: ../chapters/prg/go/go-intro.md
-	../bin/markup-single.py ../chapters/prg/go/go-intro.md 2
-	../bin/header.py dest/chapters/prg/go/go-intro.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-intro.md 3
+	../bin/header.py dest/chapters/prg/go/go-intro.md 3
 
 dest/chapters/prg/go/go-install.md: ../chapters/prg/go/go-install.md
-	../bin/markup-single.py ../chapters/prg/go/go-install.md 2
-	../bin/header.py dest/chapters/prg/go/go-install.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-install.md 3
+	../bin/header.py dest/chapters/prg/go/go-install.md 3
 
 dest/chapters/prg/go/go-editor.md: ../chapters/prg/go/go-editor.md
-	../bin/markup-single.py ../chapters/prg/go/go-editor.md 2
-	../bin/header.py dest/chapters/prg/go/go-editor.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-editor.md 3
+	../bin/header.py dest/chapters/prg/go/go-editor.md 3
 
 dest/chapters/prg/go/go-cmd.md: ../chapters/prg/go/go-cmd.md
-	../bin/markup-single.py ../chapters/prg/go/go-cmd.md 2
-	../bin/header.py dest/chapters/prg/go/go-cmd.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-cmd.md 3
+	../bin/header.py dest/chapters/prg/go/go-cmd.md 3
 
 dest/chapters/prg/go/go-libraries.md: ../chapters/prg/go/go-libraries.md
-	../bin/markup-single.py ../chapters/prg/go/go-libraries.md 2
-	../bin/header.py dest/chapters/prg/go/go-libraries.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-libraries.md 3
+	../bin/header.py dest/chapters/prg/go/go-libraries.md 3
 
 dest/chapters/prg/go/go-links.md: ../chapters/prg/go/go-links.md
-	../bin/markup-single.py ../chapters/prg/go/go-links.md 2
-	../bin/header.py dest/chapters/prg/go/go-links.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-links.md 3
+	../bin/header.py dest/chapters/prg/go/go-links.md 3
 
 dest/chapters/prg/julia/julia-language.md: ../chapters/prg/julia/julia-language.md
 	../bin/markup-single.py ../chapters/prg/julia/julia-language.md 1
