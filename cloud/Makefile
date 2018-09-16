@@ -90,7 +90,7 @@ CHAPTER_SERVICES=\
 all: prepare epub
 	echo done
 
-update: Makefile 
+update: Makefile
 	../bin/manifest-parser.py dep $(BOOK) > ../Makefile.$(BOOK)
 
 include ../Makefile.$(BOOK)
@@ -209,15 +209,21 @@ todo:
 
 issues:
 	python ../bin/issues.py > /tmp/issues.tex
-	pandoc /tmp/issues.tex -o chapters/preface/issues.md
-	bin/header.sh chapters/preface/issues.md 3
-	head -1 chapters/preface/issues.md > /tmp/issues.md
+	pandoc /tmp/issues.tex -o ../chapters/preface/issues.md
+	../bin/header.sh ../chapters/preface/issues.md 3
+	@echo "# Github Issues\n" > /tmp/issues.md
+	@echo "---\n" >> /tmp/issues.md
+	@echo ":warning: The issues are automatically created from Github Issues." >> /tmp/issues.md
+	@echo "Do not modify the table.\n"  >> /tmp/issues.md
+	@echo "---\n" >> /tmp/issues.md
+
+
 	echo "<div class=\"smalltable\">" >> /tmp/issues.md
-	tail -n +2 chapters/preface/issues.md >> /tmp/issues.md
+	tail -n +3 ../chapters/preface/issues.md >> /tmp/issues.md
 	echo  >> /tmp/issues.md
 	echo "</div>" >> /tmp/issues.md
 	echo  >> /tmp/issues.md
-	cp /tmp/issues.md chapters/preface/issues.md
+	cp /tmp/issues.md ../chapters/preface/issues.md
 
 publish: epub
 	cp dest/$(FILENAME).epub ..
