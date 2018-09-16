@@ -1,10 +1,14 @@
+---
+
 - PREFACE:
     - chapters/SECTION-PREFACE.md:
+        - chapters/assignment.md
         - chapters/version.md
         - chapters/authors.md
         - chapters/preface/create.md
+        - chapters/preface/issue.md
         - chapters/preface/notation.md
-#        - chapters/faq.md
+        # - chapters/faq.md
 
 - DEVTOOLS:
     - chapters/SECTION-DEVTOOLS.md:
@@ -46,11 +50,11 @@
 
 - DATA:
     - chapters/SECTION-DATA.md:
-          - chapters/data/formats.md
-          - chapters/data/mongoengine.md
+        - chapters/data/formats.md
+        - chapters/data/mongoengine.md
 
 - DRAFTS:
-  - chapters/msg/amazon-kenesis-data-streams.md
+    - chapters/msg/amazon-kenesis-data-streams.md
 
 - MSG:
     - chapters/MSG.md:
@@ -94,11 +98,11 @@
     - twister.md
     - twister2-example.md
 
-######################################################################
+# #####################################################################
 # chameleon
-######################################################################
+# #####################################################################
 
-#- chapters/cloud/chameleon/faq-orig.md
+# - chapters/cloud/chameleon/faq-orig.md
 
 
 - CHAMELEON:
@@ -115,12 +119,12 @@
         - chapters/cloud/chameleon/faq.md
 
 
-######################################################################
+# #####################################################################
 # 516
-######################################################################
+# #####################################################################
 
 
-#-  chapters/rest/swagger-bravado.md
+# -  chapters/rest/swagger-bravado.md
 
 - BOOK_516:
     - chapters/assignment.md

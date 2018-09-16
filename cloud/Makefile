@@ -155,8 +155,7 @@ prepare: version authors destination chapterlist references todo
 
 epub: prepare
 ifeq ($(OS), osx)
-	#cd dest; iconv -t utf-8 $(INDEX) > all.md
-	cd dest; cat $(INDEX) > all.md
+	cd dest; iconv -t utf-8 $(INDEX) > all.md
 endif
 ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md
