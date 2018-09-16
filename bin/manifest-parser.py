@@ -191,7 +191,8 @@ class manifest(object):
         def print_rule(name, level):
 
             print ("dest/{name}: ../{name}".format(name=name,level=level))
-            print("\t$(COPY) ../{name} dest/{name}".format(name=name,level=level))
+            #print("\t$(COPY) ../{name} dest/{name}".format(name=name,level=level))
+            print("\t../bin/markup-single.py ../{name} {level}".format(name=name,level=level))
             print("\t../bin/header.py dest/{name} {level}".format(name=name,level=level))
 
         
@@ -201,7 +202,7 @@ class manifest(object):
             if title == book:
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
                     if node not in variables and node != book:
-                        location = "../{name}".format(name=node)
+                        location = "dest/{name}".format(name=node)
                         chapterlist.append(location)
         print("chapterlist: ", " ".join(chapterlist))
         print ("\t@echo \"updated modified chapters\"")
