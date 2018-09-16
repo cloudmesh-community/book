@@ -277,11 +277,24 @@ Data centers in total used 91 billion kilowatt-hours (kWh) of electrical energy 
 
 
 * Peaker plant
-	* :question:
+
+	Peaking power plants, also known as peaker plants, and occasionally just "peakers", are power plants that generally run only when there is a high demand, known as peak demand, for electricity.Because they supply power only occasionally, the power supplied commands a much higher price per kilowatt hour than base load power. Peak load power plants are dispatched in combination with base load power plants, which supply a dependable and consistent amount of electricity, to meet the minimum demand.
+	These plants are generally coal-fired which causes a huge amount of CO2 emissions. A peaker plant may operate many hours a day, or it may operate only a few hours per year, depending on the condition of the region's electrical grid. Because of the cost of building an efficient power plant, if a peaker plant is only going to be run for a short or highly variable time, it does not make economic sense to make it as efficient as a base load power plant. In addition, the equipment and fuels used in base load plants are often unsuitable for use in peaker plants because the fluctuating conditions would severely strain the equipment. For these reasons, nuclear, geothermal, waste-to-energy, coal and biomass are rarely, if ever, operated as peaker plants.
+	
 * Avoided emissions
-	* :question:
+
+	Emissions avoidance is the most effective carbon management strategy over a multi-decadal timescale to achieve atmospheric CO2 stabilization and a subsequent decline . This prevents, in the first place, stable underground carbon deposits from entering either the atmosphere or less stable carbon pools on land and in the oceans.
+
+Carbon offsets based on energy efficiency rely on technical efficiencies to reduce energy consumption and therefore reduce CO2 emissions. Such improvements are often achieved by introducing more energy efficient lightening, cooking, heating and cooling systems. These are real emission reduction strategies and have created valid offset projects.
+
+This type of carbon offset provides perhaps the simplest options that will ease the adoption of low carbon practice. When these practices become generally accepted (or compulsory), they will no longer qualify as offsets and further efficiencies will need to be promoted.
+	
 * CO2 (carbon dioxide, or “carbon”) 
-	* :question:
+	
+	Carbon dioxide is the main cause of the greenhouse effect, it is emitted in huge amount into our atmosphere with a life cycle of almost 100 years. Data centers emit during the manufacturing process of all the components that populate a
+data center (servers, UPS, building shell, cooling, etc.) and during operation of data centers (in terms of electricity consumed), the maintenance of the data centers (i.e. replacement of consumables like batteries, capacitors, etc.), and the disposal of the components of the data centers at the end of the lifecycle.
+	Until now, power plants have been allowed to dump unlimited amounts of carbon pollution into the atmosphere — no rules were in effect that limited their emissions of carbon dioxide, the primary driver of global warming. Now, for the first time, the EPA has finalized new rules, or standards, that will reduce carbon emissions from power plants. Known as the Clean Power Plan, these historic standards represent the most significant opportunity in years to help curb the growing consequences of climate change.
+
 
 The data center will have a total carbon profile, that includes the
 many different aspects of a data center contributing to carbon
