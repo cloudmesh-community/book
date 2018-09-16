@@ -57,6 +57,11 @@ Slides without any audio. They may be faster to download.
 
 > A set of learning objectives with the `:mortar_board:` emoji
 
+
+:white_check_mark:
+
+> A section is release when it is marked with a :white_check_mark: in the syllabus
+
 :question:
 
 > Indicates opportunities for comprehension assignments while

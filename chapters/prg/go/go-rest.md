@@ -1,4 +1,4 @@
-# Go CMD :o: {#s-go-cmd}
+# Go REST :o: {#s-go-rest}
 
 ## CMD
 

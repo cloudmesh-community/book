@@ -2,11 +2,10 @@
 
 - PREFACE:
     - chapters/SECTION-PREFACE.md:
-        - chapters/assignment.md
         - chapters/version.md
         - chapters/authors.md
         - chapters/preface/create.md
-        - chapters/preface/issue.md
+        - chapters/preface/issues.md
         - chapters/preface/notation.md
         # - chapters/faq.md
 
@@ -41,11 +40,14 @@
 - GO:
     - chapters/prg/go/go-language.md:
         - chapters/prg/go/go-intro.md
+        - chapters/prg/go/go-links.md
         - chapters/prg/go/go-install.md
         - chapters/prg/go/go-editor.md
         - chapters/prg/go/go-cmd.md
         - chapters/prg/go/go-libraries.md
-        - chapters/prg/go/go-links.md
+        - chapters/prg/go/go-rest.md
+        - chapters/prg/go/go-cloud.md
+
 
 
 - DATA:
@@ -127,8 +129,8 @@
 # -  chapters/rest/swagger-bravado.md
 
 - BOOK_516:
-    - chapters/assignment.md
     - $ref:PREFACE:
+        - chapters/assignment.md
         - chapters/class/organization-516.md
         - chapters/class/plagiarism.md
         - chapters/cloud/gregor.md

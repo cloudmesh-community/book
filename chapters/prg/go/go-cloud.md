@@ -1,4 +1,4 @@
-# Go CMD :o: {#s-go-cmd}
+# Go Cloud :o: {#s-go-cloud}
 
 ## CMD
 

@@ -1,4 +1,4 @@
-# Go Language :o:
+# Go Language :o: {#s-go-language}
 
 :warning: This section is under development. It is contributed by Qianqian
 

@@ -1,4 +1,4 @@
-# Instalation :o:
+# Instalation :o: {#s-go-install}
 
 TBD
 

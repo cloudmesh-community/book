@@ -1,1 +1,1 @@
-# Libraries :o:
+# Libraries :o: {#s-go-libraries}
