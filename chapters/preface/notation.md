@@ -12,6 +12,10 @@ zoom out with your reader to make sure you can see the entire content.
 
 ## Notation
 
+:mortar_board:
+
+> Learning objective
+
 :cloud: `:cloud:`
 
 > If you click on the :cloud: in a heading, you can go directly to the document in github that contains the next content. This is convenient to fix errors or make additions to the content.
