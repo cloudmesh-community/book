@@ -1176,10 +1176,7 @@ As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively.
 
 ## Generators :new:
 
-Before we go to Generators, lets understand what is an
-Iterator. Iterators are used to iterate over any container mostly
-lists performing traversal of the container and accessing the data
-elements.  Generators are also Iterators but they can only be
+Before we go to Generators, please understand Iterators from above. Generators are also Iterators but they can only be
 interated over once. Thats because Generators do not store the values
 in memory instead they generate the values on the go. If we want to
 print those values then we can either simply iterate over them or use
