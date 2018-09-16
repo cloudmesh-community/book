@@ -121,6 +121,7 @@ FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
 RESOURCE=--resource-path=$(IMAGE_DIRS)
+#RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud:chapters/msg:chapters/nist"
 
 #	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
 
@@ -129,6 +130,9 @@ RESOURCE=--resource-path=$(IMAGE_DIRS)
 draft: prepare epubdraft
 	echo done
 
+images:
+	mkdir -p dest
+	$(COPY) -r ../chapters dest
 
 destination:
 	mkdir -p dest
@@ -144,7 +148,7 @@ version:
 	../bin/date.py > ../chapters/version.md
 
 prepare: version authors destination chapterlist references todo
-	$(MARKUPALL)
+	# $(MARKUPALL)
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
 	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
 
