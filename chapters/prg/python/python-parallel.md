@@ -117,22 +117,22 @@ counter = 0
 def incrementer1():
     global counter 
     for j in range(2):    
-     <b>increment_by_3_lock.acquire(True)</b>
+        <b>increment_by_3_lock.acquire(True)</b>
         for i in range(3):
             counter += 1 
             print("Greeter 1 incremented the counter by 1")
         print ("Counter is %d"%counter)
-     <b>increment_by_3_lock.release()</b>
+        <b>increment_by_3_lock.release()</b>
 
 def incrementer2():
     global counter 
     for j in range(2):
-     <b>increment_by_3_lock.acquire(True)</b>
+        <b>increment_by_3_lock.acquire(True)</b>
         for i in range(3):
             counter += 1
             print("Greeter 2 incremented the counter by 1")
         print ("Counter is %d"%counter)
-     <b>increment_by_3_lock.release()</b>
+        <b>increment_by_3_lock.release()</b>
 
 if __name__ == '__main__': 
     t1 = threading.Thread(target = incrementer1)
