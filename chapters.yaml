@@ -35,7 +35,7 @@
         - chapters/prg/python/opencv/secchi.md
 
 - GO:
-    - chapters/prg/go/go-language.md
+    - chapters/prg/go/go-language.md:
         - chapters/prg/go/go-intro.md
         - chapters/prg/go/go-install.md
         - chapters/prg/go/go-editor.md
