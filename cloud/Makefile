@@ -90,7 +90,7 @@ CHAPTER_SERVICES=\
 all: prepare epub
 	echo done
 
-update:
+update: Makefile ../chapter.yaml
 	../bin/manifest-parser.py dep $(BOOK) > ../Makefile.$(BOOK)
 
 include ../Makefile.$(BOOK)
@@ -132,9 +132,9 @@ draft: prepare epubdraft
 
 images:
 	mkdir -p dest
-	rsync -v -r --include='*.jpeg' --include='*.jpg' --include='*.png' --include='*.JPG' --include='*.PNG' --exclude=".DS_Store" --exclude="*.md"   --exclude="*.tex" --exclude="*.txt" ../chapters dest
+	rsync -v -r --include='*.jpeg' --include='*.jpg' --include='*.png' --include='*.JPG' --include='*.PNG' --exclude=".DS_Store" --exclude="*.md"   --exclude="*.tex" --exclude="*.txt" ../chapters dest 
 
-destination:
+destination: 
 	mkdir -p dest
 	$(COPY) metadata.txt dest
 	$(COPY) -r cover dest
