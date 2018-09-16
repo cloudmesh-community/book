@@ -35,13 +35,13 @@
         - chapters/prg/python/opencv/secchi.md
 
 - GO:
-    - chapters/prg/go/go-language.md\
-    - chapters/prg/go/go-intro.md\
-    - chapters/prg/go/go-install.md\
-    - chapters/prg/go/go-editor.md\
-    - chapters/prg/go/go-cmd.md\
-    - chapters/prg/go/go-libraries.md\
-    - chapters/prg/go/go-links.md\
+    - chapters/prg/go/go-language.md
+        - chapters/prg/go/go-intro.md
+        - chapters/prg/go/go-install.md
+        - chapters/prg/go/go-editor.md
+        - chapters/prg/go/go-cmd.md
+        - chapters/prg/go/go-libraries.md
+        - chapters/prg/go/go-links.md
 
 
 - DATA:
@@ -150,7 +150,7 @@
         - chapters/iaas/boto.md
     - $ref:DEVTOOLS
     - $ref:PYTHON
-    - chapters/prg/go/go-language.md
+    - $ref:GO
     - chapters/prg/julia/julia-language.md
     - chapters/prg/scala/scala.md
     - $ref:MSG
