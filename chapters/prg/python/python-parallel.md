@@ -107,42 +107,32 @@ Counter is 12
 
 We can fix this issue using a `lock`: whenever one of the function is going to increment the value by 3, it will `acquire()` the lock and when it is done the function will `release()` the lock. This mechanism is illustrated in the following code: 
 
-```python
-import threading
-```
-**```
+<pre><code>import threading
+
 increment_by_3_lock = threading.Lock()
-```**
-```python
+
 global counter
 counter = 0 
 
 def incrementer1():
     global counter 
-    for j in range(2):
-```
-**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increment_by_3_lock.acquire(True)**
-```python
+    for j in range(2):    
+     <b>increment_by_3_lock.acquire(True)</b>
         for i in range(3):
             counter += 1 
             print("Greeter 1 incremented the counter by 1")
         print ("Counter is %d"%counter)
-```
-**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increment_by_3_lock.release()**
-```python
+     <b>increment_by_3_lock.release()</b>
+
 def incrementer2():
     global counter 
     for j in range(2):
-```    
- **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increment_by_3_lock.acquire(True)**
-```python
+     <b>increment_by_3_lock.acquire(True)</b>
         for i in range(3):
             counter += 1
             print("Greeter 2 incremented the counter by 1")
         print ("Counter is %d"%counter)
-```
-**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;increment_by_3_lock.release()**
-```python
+     <b>increment_by_3_lock.release()</b>
 
 if __name__ == '__main__': 
     t1 = threading.Thread(target = incrementer1)
@@ -150,7 +140,9 @@ if __name__ == '__main__':
 
     t1.start()
     t2.start()
-```
+
+</code></pre>
+
 
 No matter how many times you run this code, the output would always be in the correct order: 
 
