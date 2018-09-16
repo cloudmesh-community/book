@@ -148,8 +148,16 @@ The course has the following objectives:
 | :white_check_mark: 10/29    | 10      | Messaging         | Messaging |
 | :white_check_mark: 10/29    | 11      | Messaging         | - [MQTT](#mqtt)[:cloud:][mqtt.md]  |
 | :o: 11/05                   |         |                   | - [Graphql][graphql.md]  |
-| :o: 11/19                   | 12      | Go                | [Go Language][go-language.md] |
-| :o: 11/19                   |         |                   | [Go for the Cloud][go-language.md] |
+| :o: 11/19                   | 12      | Go                | [Go Introduction](#s-go-intro)[:cloud:][go-intro.md] |
+| :o: 11/19                   |         |                   | - [Go Links](#s-go-links)[:cloud:][go-links.md] |
+| :o: 11/19                   |         |                   | - [Go Install](#s-go-install)[:cloud:][go-install.md] |
+| :white_check_mark: 11/19    |         |                   | - [Go Editors](#s-go-editor)[:cloud:][go-editor.md] |
+| :o: 11/19                   |         |                   | - [Go Language](#s-go-language)[:cloud:][go-language.md] |
+| :o: 11/19                   |         |                   | - [Go Libraries](#s-go-libraries)[:cloud:][go-libraries.md] |
+| :o: 11/19                   |         |                   | - [Go cmd](#s-go-cmd)[:cloud:][go-cmd.md] |
+| :o: 11/19                   |         |                   | - [Go Cloud](#s-go-cloud)[:cloud:][go-cloud.md] |
+| :o: 11/19                   |         |                   | - [Go REST](#s-go-rest)[:cloud][go-rest.md] |
+| :o: 11/19                   |         |                   | - [Go for the Cloud](#s-go-cloud)[:cloud][go-cloud.md] |
 | :o: 12/03                   | 13      | Edge Computing    | Edge Computing and the Cloud |
 | 09/13-11/02*                | A1      | Tutorial          | Contribute a significant tutorial. Do not develop redundant or duplicated content. |
 | 09/13-11/02*                | A2      | Chapter           | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content. |
@@ -207,8 +215,15 @@ Legend markings
 [swagger-spec.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-spec.md
 [swagger-codegen.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-codegen.md
 [mqtt.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md 
-[graphql.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/graphql.md 
-[go-language.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md
+[graphql.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/graphql.md
+[go-cloud.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cloud.md 
+[go-rest.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-rest.md
+[go-intro.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-intro.md
+[go-cmd.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cmd.md
+[go-install.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-install.md
+[go-libraries.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-libraries.md
+[go-editor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-editor.md
+[go-links.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-links.md
 [go-language.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md
 [opencv.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/opencv/opencv.md
 [secchi.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/opencv/secchi.md

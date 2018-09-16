@@ -74,6 +74,12 @@ def expand_def(vardict, varsdict):
     return vardict
 
 
+def minimum_one(n):
+    if n <= 0:
+        return 1
+    else:
+        return n
+
 def timestamp_node(node):
     # prefix timestamp to tag to preserve the order
     # alternatively use a data field in Node for sorting
@@ -177,10 +183,12 @@ class Manifest(object):
             tree.show(key=lambda x: x.data)
             print("-" * 80)
             for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
+                level = minimum_one(tree.level(node) - 1)
+
                 if node not in variables:
-                    print(node, tree.level(node) - 1)
+                    print(node, level)
                 else:
-                    print("#", node, tree.level(node) - 1)
+                    print("#", node, level)
 
     def list(self):
         for title, tree in self.treebook.items():
@@ -195,7 +203,8 @@ class Manifest(object):
                 # print ("-" * 80)
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
                     if node not in variables:
-                        print(node, tree.level(node) - 1)
+                        level = minimum_one(tree.level(node) - 1)
+                        print(node, level)
 
     def generate_dependencies(self, book):
 
@@ -224,7 +233,8 @@ class Manifest(object):
             if title == book:
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
                     if node not in variables and node != book:
-                        print_rule(node, tree.level(node) - 1)
+                        level = minimum_one(tree.level(node) - 1)
+                        print_rule(node, level)
                         print()
 
     def generate_tree(self, book):

@@ -1,4 +1,4 @@
-# Introduction to Go 
+# Introduction to Go {#s-go-intro}
 
 ![Go Logo](https://upload.wikimedia.org/wikipedia/commons/2/23/Go_Logo_Aqua.svg)
 
