@@ -120,7 +120,6 @@ The course has the following objectives:
 | :white_check_mark: 09/10    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
 | :new: 09/13                 |         |                   | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
 | :white_check_mark: 09/15    |         |                   | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-
 | :white_check_mark: 09/15    | 5       | Infrastructure    | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
 | :white_check_mark: 09/17    |         |                   | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
 | :white_check_mark: 09/17    |         |                   | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
