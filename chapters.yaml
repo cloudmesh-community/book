@@ -166,7 +166,7 @@
     - chapters/SECTION-APPENDIX.md:
         - chapters/iaas/aws/products.md
         - chapters/iaas/azure/products.md
-        - $ref:CHAMELEON
+    - $ref:CHAMELEON
     - chapters/SECTION-REFERENCES.md
 
 - BOOK_BIGDATA:

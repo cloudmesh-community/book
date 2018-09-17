@@ -99,12 +99,12 @@ The course has the following objectives:
 | :white_check_mark: 08/24    | 1       | Introduction      | [Gregor von Laszewski](#research-interests)[:cloud:][gregor.md] |
 | :white_check_mark: 08/24    |         |                   | [Class summary](E516 Summary)[:cloud:][e516-summary.md] |
 | :white_check_mark: 08/24    |         |                   | [Definition of Cloud Computing](#definition-of-cloud-computing)[:cloud:][e516-definition.md] |
-| :white_check_mark: 08/31    | 2       | Tools             | **Tools and Services:** |
+| :white_check_mark: 08/31    | 2       | Tools             | **Tools and Services** |
 | :white_check_mark: 08/31    |         |                   | - [Virtual Box](#virtual-box)[:cloud:][virtualbox.md] |
 | :white_check_mark: 08/31    |         |                   | - [Vagrant](#vagrant)[:cloud:][vagrant.md] |
 | :white_check_mark: 08/31    |         |                   | - [Github](#github)[:cloud:][github.md] |
 | :white_check_mark: 08/31    |         |                   | - [Linux](#s-linux)[:cloud:][linux.md] |
-| :white_check_mark: 08/31    | 3       | Python            | **Python:** |
+| :white_check_mark: 08/31    | 3       | Python            | **Python** |
 | :white_check_mark: 08/31    |         |                   | - [Introduction](#s-python-intro)[:cloud:][python-intro.md] |
 | :white_check_mark: 08/31    |         |                   | - [Installation](#s-python-install)[:cloud:][python-install.md] |
 | :white_check_mark: 08/31    |         |                   | - [Interactive Python](#interactve python)[:cloud:][python-interactive.md] |
@@ -117,24 +117,24 @@ The course has the following objectives:
 | :new: 09/13                 |         |                   | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
 | :new: 09/13                 |         |                   |- [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
 | :white_check_mark: 09/03    |         |                   | [Data Center][datacenter.md] |
-| :white_check_mark: 09/10    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
+| :white_check_mark: 09/10    | 4       | Architectures     | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
 | :new: 09/13                 |         |                   | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
 | :white_check_mark: 09/15    |         |                   | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
 | :white_check_mark: 09/15    | 5       | Infrastructure    | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
 | :white_check_mark: 09/17    |         |                   | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
 | :white_check_mark: 09/17    |         |                   | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
 | :o: 09/17                   |         |                   | - OpenStack Introduction |
-| :o::white_check_mark: 09/17    |         | Chameleon Cloud | - **Chameleon Cloud:** |
-| :o::white_check_mark: 09/17    |         |                   | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
-| :o::white_check_mark: 09/17    |         |                   | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
-| :o::white_check_mark: 09/17    |         |                   | - [Charge](#chameleon-cloud-charge-rates)[:cloud:][charge.md] |
-| :o::white_check_mark: 09/17    |         |                   | - [Quick start](#getting-started-on-chameleon-cloud)[:cloud:][start.md] |
-| :o::white_check_mark: 09/17    |         |                   | - [KVM user guide](#openstack-virtual-machines)[:cloud:][user-guide.md] |
-| :o::white_check_mark: 09/17    |         |                   | - [CLI](#openstack-command-line-interface)[:cloud:][cli.md] |
-| :o::white_check_mark: 09/17    |         |                   | - [Horizon](#openstack-horizon)[:cloud:][horizon.md] |
-| :o::white_check_mark: 09/17    |         |                   | - [Heat](#openstack-heat)[:cloud:][heat.md] |
-| :o::white_check_mark: 09/17    |         |                   | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
-| :o::white_check_mark: 09/17    |         |                   | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
+| :o::white_check_mark: 09/17 |         | Chameleon Cloud   | - **Chameleon Cloud** |
+| :o::white_check_mark: 09/17 |         |                   | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
+| :o::white_check_mark: 09/17 |         |                   | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
+| :o::white_check_mark: 09/17 |         |                   | - [Charge](#chameleon-cloud-charge-rates)[:cloud:][charge.md] |
+| :o::white_check_mark: 09/17 |         |                   | - [Quick start](#getting-started-on-chameleon-cloud)[:cloud:][start.md] |
+| :o::white_check_mark: 09/17 |         |                   | - [KVM user guide](#openstack-virtual-machines)[:cloud:][user-guide.md] |
+| :o::white_check_mark: 09/17 |         |                   | - [CLI](#openstack-command-line-interface)[:cloud:][cli.md] |
+| :o::white_check_mark: 09/17 |         |                   | - [Horizon](#openstack-horizon)[:cloud:][horizon.md] |
+| :o::white_check_mark: 09/17 |         |                   | - [Heat](#openstack-heat)[:cloud:][heat.md] |
+| :o::white_check_mark: 09/17 |         |                   | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
+| :o::white_check_mark: 09/17 |         |                   | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
 | :o: 09/24                   | 7.b     | Virtualization    | Qemu, KVM, Virtual machines |
 | :o: 10/01                   |         |                   | Containers, Docker, Kubernetes |
 | :white_check_mark: 10/08    | 8       | Programming       | Python for Cloud Computing, |
