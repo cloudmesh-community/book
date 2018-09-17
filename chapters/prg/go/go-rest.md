@@ -4,7 +4,7 @@
 
 Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services. Web Services that conform to the REST architectural style, or RESTful web services, provide interoperability between computer systems on the Internet. REST-compliant web services allow the requesting systems to access and manipulate textual representations of web resources by using a uniform and predefined set of stateless operations. Other kinds of web services, such as SOAP web services, expose their own arbitrary sets of operations.
 
-# RESTful architectures and implementations bring the following characteristics/benefits to #organizations:
+# RESTful architectures and implementations bring the following characteristics/benefits to organizations:
 
 * Ease of integration - RESTful applications can be easily integrated in the web as they use HTTP methods explicitly
 * Increased Scalability - RESTful interactions are stateless and caching semantics are built into the protocol). 
