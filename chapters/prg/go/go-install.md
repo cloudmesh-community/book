@@ -65,16 +65,20 @@ zip archive that requires you to set some environment variables and an
 MSI installer that configures your installation automatically.
 
 - MSI installer  
-  Open the [MSI file](https://golang.org/dl/) and follow the prompts to install the Go tools. By default, the installer puts the Go distribution in c:\Go.
+  Open the [MSI file](https://golang.org/dl/) and follow the prompts
+  to install the Go tools. By default, the installer puts the Go
+  distribution in c:\Go.
 
-  The installer should put the c:\Go\bin directory in your PATH environment variable. You may need to restart any open command prompts for the change to take effect.
+  The installer should put the c:\Go\bin directory in your PATH
+  environment variable. You may need to restart any open command
+  prompts for the change to take effect.
 
-- Zip archive  
-[Download the zip file](https://golang.org/dl/) and extract it into
-the directory of your choice (we suggest c:\Go).  If you chose a
-directory other than c:\Go, you must set the GOROOT environment
-variable to your chosen path.  Add the bin subdirectory of your Go
-root (for example, c:\Go\bin) to your PATH environment variable.
+- Zip archive [Download the zip file](https://golang.org/dl/) and
+  extract it into the directory of your choice (we suggest c:\Go).  If
+  you chose a directory other than c:\Go, you must set the GOROOT
+  environment variable to your chosen path.  Add the bin subdirectory
+  of your Go root (for example, c:\Go\bin) to your PATH environment
+  variable.
 
 
 ### Setting environment variables under Windows
