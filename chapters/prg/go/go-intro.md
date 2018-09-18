@@ -1,6 +1,7 @@
 # Introduction to Go {#s-go-intro}
 
 TODO: add the [?] as bibtex entries in bib/references-go.bib
+TODO: add md section links where needed to place holder sections
 
 ![Go Logo](https://upload.wikimedia.org/wikipedia/commons/2/23/Go_Logo_Aqua.svg)
 
@@ -26,8 +27,8 @@ that feels like a dynamically typed, interpreted language.
 
 Here is an example article discussing
 [Why should you learn Go?](https://medium.com/exploring-code/why-should-you-learn-go-f607681fad65)[?]. However,
-this article may be a bit biased towards Go and you may want
-to evaluate some of the provided arguments more carefully yourself.
+this article may be a bit biased towards Go and you may want to
+evaluate some of the provided arguments more carefully yourself.
 
 Regarding the design philosophy behind the Go language, the following
 is
@@ -46,8 +47,8 @@ is
 > complexity. There are no forward declarations and no header files;
 > everything is declared exactly once. Initialization is expressive,
 > automatic, and easy to use. Syntax is clean and light on keywords.
-> Stuttering (foo.Foo* myFoo = new(foo.Foo)) is reduced by simple type
-> derivation using the := declare-and-initialize construct. And
+> Stuttering (`foo.Foo* myFoo = new(foo.Foo`)) is reduced by simple type
+> derivation using the `:=` declare-and-initialize construct. And
 > perhaps most radically, there is no type hierarchy: types just are,
 > they don't have to announce their relationships. These
 > simplifications allow Go to be expressive yet comprehensible without
