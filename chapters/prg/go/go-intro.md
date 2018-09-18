@@ -3,7 +3,7 @@
 * :construction: TODO: add the [?] as bibtex entries in bib/references-go.bib
 * :construction: TODO: add md section links where needed to place holder sections
 
-![Go Logo](https://upload.wikimedia.org/wikipedia/commons/2/23/Go_Logo_Aqua.svg)
+![Go Logo](images/Go_Logo_Aqua.svg)
 
 
 Go is a programming language that has been introduced by Google to
