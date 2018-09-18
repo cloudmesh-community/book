@@ -76,9 +76,8 @@ publisher, that sends a message, (2) a broker, that maintains queue of
 all messages based on topics and (3) multiple subscribers that subscribe
 to various topics they are interested in [@how-mqtt-works].
 
-![](images/mqtt.png)
+![MQTT publish subscriber model](images/mqtt.png)
 
-**Figure:** MQTT publish subscriber model
 
 This allows for decoupling of functionality at various levels. The
 publisher and subscriber do not need to be close to each other and do

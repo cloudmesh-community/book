@@ -244,7 +244,7 @@ architectural design process.
 ## Reference Architecture
 
 Next we present the Big data reference architecture. It is Depicted
-in *Figure: NIST-BDRA*. According to the document (Volume 2) the five
+in +@fig:nist-arch. According to the document (Volume 2) the five
 main components representing the central roles include
 
 * System Orchestrator: Defines and integrates the required data
@@ -265,19 +265,16 @@ In addition we recognize two fabrics layers:
 * Security and Privacy Fabric
 * Management Fabric
 
-![](images/nist-arch.png)
+![NIST-BDRA (see Volume 2)](images/nist-arch.png){#fig:nist-arch}
 
-**Figure:** NIST-BDRA (see Volume 2)
 
-WHile looking at the actors depicted in *Figure: NIST Roles* we need
+WHile looking at the actors depicted in +@fig:nist-roles we need
 to be aware that in each of the categories a service can be added.
 Thisis an important distinction to the original depiction in the
 definition as it is clear that an automated service could act in
 behalf of the actors listed in each of the categories.
 
-![](images/nist-roles.png)
-
-**Figure:** NIST Roles (see Volume 2)
+![NIST Roles (see Volume 2)](images/nist-roles.png){#fig:nist-roles}
 
 For a detailed definition wich is beyond the scope of this document we refer to the Volume 2 of the documents. 
 
