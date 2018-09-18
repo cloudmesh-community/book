@@ -10,9 +10,18 @@ The language is open source and the main Web page is
 
 https://golang.org/
 
-* <https://golang.org/>
+  A Go program basically consists of the following parts −
 
-```
+* Package Declaration
+* Import Packages
+* Functions
+* Variables
+* Statements and Expressions
+* Comments
+## Hello world example
+firstly, look at a simple code that would print the words "Hello World" 
+
+```go 
 package main
 
 import "fmt"
