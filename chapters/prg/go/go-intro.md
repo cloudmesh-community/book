@@ -49,7 +49,8 @@ increase in the ranking. This trend is even more prominently depicted
 when looking at google trends.
 
 ![](images/go-trend-legend.png)
-![**Figure:** Google trends for selected programming languages](images/go-trend-legend.png)
+
+![**Figure:** Google trends for selected programming languages](images/go-trend.png)
 
 
 
