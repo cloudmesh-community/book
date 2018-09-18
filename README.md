@@ -62,12 +62,21 @@ Once you have installed pandoc you can create the book with our simple
 and call make in the source dir
 
 ```bash
-$ mkdir -p ~/github/cloudmesh
-$ cd ~/github/cloudmesh
+$ mkdir -p ~/github/cloudmesh-community
+$ cd ~/github/cloudmesh-community
 $ git clone https://github.com/cloudmesh-community/book.git
-$ cd book/pi
+$ cd book
+$ pip install -r requirements
+```
+
+Then chose the book you like to compile. Let us assume the book is in
+the cloud directory. Than you can create it with
+
+```
+$ cd cloud
 $ make
 ```
+
 In case you need to use latex you need to download the full
 version. For OSX this is
 

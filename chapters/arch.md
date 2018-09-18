@@ -22,14 +22,14 @@ implementations.
 
 We start our observation with some a depiction of some of the
 important architectural models motivating the current state of
-information technology services. We provide in the **Figure Evolution
-of Compute Architectures**. The [original figure]
+information technology services we provide in +@fig:evolution-computer-arch.
+The [original figure]
 (http://www.cmlab.csie.ntu.edu.tw/~jimmychad/CN2011/Readings/CloudComputingNewWine.pdf)
 has been updated by von Laszewski to include the mobile computing and
 the internet of things phase that is bringing rapid changes to how we
 perceive and use the cloud in the neer future.
 
-![**Figure:** Evolution of Compute Architectures](images/compute-phase.png)
+![Evolution of Compute Architectures](images/compute-phase.png){#fig:evolution-computer-arch}
 
 We define the following terminology based on the evolution of compute
 architectures:
@@ -193,9 +193,9 @@ services. THis allows a separation of concerns typically between
 infrastructure providers, platform developers, and software architects
 using platforms and or infrastructure services.
 
-The typical triangular diagram is often used to represent it.
+The typical triangular diagram (see +@fig:iaas-triangle) is often used to represent it.
 
-![**Figure:**](images/architecture-iaas.png)
+![Infrastructure as a Service](images/architecture-iaas.png){#fig:iaas-triangle}
 
 ## Product or Functional Based Model
 

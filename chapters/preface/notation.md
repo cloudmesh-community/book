@@ -78,11 +78,16 @@ surrounded by bars* using the `:bulb:` emoji
 
 ---
 
-Figures have a caption and can be refereed to in the epub with 
+Figures have a caption and can be refereed to in the epub simple with a number. We show such a refernce 
+pointer while refering to +@fig:code-example. 
 
-![**Figure:** Code example](images/code.png){#f-code-example}
+![Figure example](images/code.png){#fig:code-example width=1in}
 
-Figures are generally refered to in the text as follows to just give an example
+Figures must be written in the md as 
 
-The code icon is depicted in [Figure code example](#f-code-example)
-Fur our epub figures will not have numbers, as the sections must stay relocatable.
+```
+![Figure example](images/code.png){#fig:code-example width=1in}
+```
+
+You can refer to them with ```+@fig:code-example```. Please note in order for numbering to work 
+figure refernces must include the ```#fig:```
