@@ -53,7 +53,7 @@ swagger generate model --spec={spec}
 
 ## other editors 
 
-* KaiZen-OpenAPI-Editor - Full-featured Eclipse editor for OpenAPI 2.0 and 3.0, also available on Eclipse Marketplace.
+* [KaiZen-OpenAPI-Editor](https://github.com/RepreZen/KaiZen-OpenAPI-Editor)- Full-featured Eclipse editor for OpenAPI 2.0 and 3.0, also available on Eclipse Marketplace.
 * Atom/linter-swagger - This plugin for Atom Linter will lint Swagger 2.0 specifications or OpenAPI 3.0, both JSON and YAML using swagger-parser node package.
 * Swagger Editor - Design, describe, and document your API on the first open source editor fully dedicated to OpenAPI-based APIs.
 * RepreZen API Studio - RepreZen API Studio is an integrated workbench that brings API-first design into focus for your whole team, harmonizes your API designs, and generates APIs that click into client apps.
