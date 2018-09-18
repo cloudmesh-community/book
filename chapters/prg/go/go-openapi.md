@@ -49,6 +49,7 @@ swagger generate model --spec={spec}
 ## trnasfrom specs 
 
 
+## other documentations
 
 
 ## other editors 
