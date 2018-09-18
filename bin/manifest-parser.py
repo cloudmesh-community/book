@@ -223,6 +223,8 @@ class Manifest(object):
                     if node not in variables and node != book:
                         location = "dest/{name}".format(name=node)
                         chapterlist.append(location)
+        print("INDEX=\\\n  " + "\\\n  ".join(chapterlist).replace("dest/",""))
+        print()
         print("chapterlist: ", " ".join(chapterlist))
         print("\t@echo \"updated modified chapters\"")
         print()
