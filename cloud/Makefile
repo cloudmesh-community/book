@@ -12,20 +12,20 @@ IMAGE_DIRS=$(shell ../bin/find-image-dirs.py)
 #
 # removing mermaid filter from linux as we do not yet know how to use it in docker
 #
+
+COPY=rsync
+
 ifeq ($(OS), osx)
 OPEN_EPUB=open
 MERMAID=-F mermaid-filter
-COPY=rsync
 endif
 ifeq ($(OS), linux)
 OPEN_EPUB=xdg-open
 MERMAID=-F mermaid-filter
-COPY=rsync
 endif
 ifeq ($(OS), windows)
 OPEN_EPUB=open
 MERMAID=-F mermaid-filter.cmd
-COPY=cp
 endif
 ifeq ($(DOCKER), True)
 MERMAID=
