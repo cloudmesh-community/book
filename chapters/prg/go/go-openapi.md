@@ -44,4 +44,4 @@ swagger serve https://raw.githubusercontent.com/swagger-api/swagger-spec/master/
 * Senya Editor - Design API specifications fast and effectively​ in your favorite JetBrains IDE.
 # References
 * [go-swagger documentation](https://goswagger.io/)
-* [OpenAPI.Tools](https://openapi.tools)
+* [OpenAPI.Tools](openapi.tools)
