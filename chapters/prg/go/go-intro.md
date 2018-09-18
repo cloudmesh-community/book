@@ -1,4 +1,17 @@
-# Introduction to Go {#s-go-intro}
+# Introduction to Go for Cloud Computing {#s-go-intro}
+
+---
+
+**:mortar_board: Learning Objectives**
+
+* Learn quickly Go under the assumption you know a programming language
+* Work with Go modules modules
+* Contuct some Go examples
+* Learn about REST services in Go
+* Learn how access virtual machines from Go
+* Learn hos to interface with kubernetes in Go
+
+---
 
 * :construction: TODO: add the [?] as bibtex entries in bib/references-go.bib
 * :construction: TODO: add md section links where needed to place holder sections
