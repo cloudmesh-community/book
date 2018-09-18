@@ -1,3 +1,3 @@
-# [References]{.part}
+# [Refernces]{.part}
 
 

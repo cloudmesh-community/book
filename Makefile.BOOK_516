@@ -1,3 +1,92 @@
+INDEX=\
+  chapters/SECTION-PREFACE.md\
+  chapters/version.md\
+  chapters/authors.md\
+  chapters/preface/create.md\
+  chapters/preface/issues.md\
+  chapters/preface/notation.md\
+  chapters/assignment.md\
+  chapters/class/organization-516.md\
+  chapters/class/plagiarism.md\
+  chapters/cloud/gregor.md\
+  chapters/class/e516-engineering-cloud-computing.md\
+  chapters/class/policies.md\
+  chapters/class/e516-summary.md\
+  chapters/class/volumes.md\
+  chapters/class/e516-definition.md\
+  chapters/cloud/datacenter.md\
+  chapters/arch.md\
+  chapters/nist/bdra.md\
+  chapters/rest/rest.md\
+  chapters/rest/swagger-codegen.md\
+  chapters/rest/swagger-spec.md\
+  chapters/rest/swagger.md\
+  chapters/SECTION-IAAS.md\
+  chapters/iaas/iaas.md\
+  chapters/iaas/aws/aws.md\
+  chapters/iaas/azure/azure.md\
+  chapters/iaas/watson/watson.md\
+  chapters/iaas/gcloud/gcloud.md\
+  chapters/iaas/libcloud.md\
+  chapters/iaas/boto.md\
+  chapters/SECTION-DEVTOOLS.md\
+  chapters/linux/refcards.md\
+  chapters/cloud/virtualbox.md\
+  chapters/cloud/vagrant.md\
+  chapters/os/ubuntu-usb-osx.md\
+  chapters/git/github.md\
+  chapters/linux/linux.md\
+  chapters/linux/ssh.md\
+  chapters/linux/ssh-futuresystems.md\
+  chapters/linux/ssh-excerise.md\
+  chapters/prg/SECTION-PYTHON.md\
+  chapters/prg/python/python-intro.md\
+  chapters/prg/python/python-install.md\
+  chapters/prg/python/python-interactive.md\
+  chapters/prg/python/python-editor.md\
+  chapters/prg/SECTION-PYTHON-LANG.md\
+  chapters/prg/python/python.md\
+  chapters/prg/python/python-libraries.md\
+  chapters/prg/python/python-data.md\
+  chapters/prg/python/python-matplotlib.md\
+  chapters/prg/python/python-cmd5.md\
+  chapters/prg/python/python-cmd.md\
+  chapters/prg/python/opencv/opencv.md\
+  chapters/prg/python/opencv/secchi.md\
+  chapters/prg/go/go-language.md\
+  chapters/prg/go/go-intro.md\
+  chapters/prg/go/go-links.md\
+  chapters/prg/go/go-install.md\
+  chapters/prg/go/go-editor.md\
+  chapters/prg/go/go-cmd.md\
+  chapters/prg/go/go-libraries.md\
+  chapters/prg/go/go-rest.md\
+  chapters/prg/go/go-cloud.md\
+  chapters/prg/julia/julia-language.md\
+  chapters/prg/scala/scala.md\
+  chapters/MSG.md\
+  chapters/msg/mqtt.md\
+  chapters/msg/graphql.md\
+  chapters/msg/avro.md\
+  chapters/SECTION-FAQ.md\
+  chapters/faq.md\
+  chapters/faq-516.md\
+  chapters/SECTION-APPENDIX.md\
+  chapters/iaas/aws/products.md\
+  chapters/iaas/azure/products.md\
+  chapters/SECTION-CHAMELEON.md\
+  chapters/cloud/chameleon/resources.md\
+  chapters/cloud/chameleon/hardware.md\
+  chapters/cloud/chameleon/charge.md\
+  chapters/cloud/chameleon/start.md\
+  chapters/cloud/chameleon/user-guide.md\
+  chapters/cloud/chameleon/cli.md\
+  chapters/cloud/chameleon/horizon.md\
+  chapters/cloud/chameleon/heat.md\
+  chapters/cloud/chameleon/baremetal.md\
+  chapters/cloud/chameleon/faq.md\
+  chapters/SECTION-REFERENCES.md
+
 chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/assignment.md dest/chapters/class/organization-516.md dest/chapters/class/plagiarism.md dest/chapters/cloud/gregor.md dest/chapters/class/e516-engineering-cloud-computing.md dest/chapters/class/policies.md dest/chapters/class/e516-summary.md dest/chapters/class/volumes.md dest/chapters/class/e516-definition.md dest/chapters/cloud/datacenter.md dest/chapters/arch.md dest/chapters/nist/bdra.md dest/chapters/rest/rest.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger.md dest/chapters/SECTION-IAAS.md dest/chapters/iaas/iaas.md dest/chapters/iaas/aws/aws.md dest/chapters/iaas/azure/azure.md dest/chapters/iaas/watson/watson.md dest/chapters/iaas/gcloud/gcloud.md dest/chapters/iaas/libcloud.md dest/chapters/iaas/boto.md dest/chapters/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/SECTION-PYTHON-LANG.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/prg/go/go-language.md dest/chapters/prg/go/go-intro.md dest/chapters/prg/go/go-links.md dest/chapters/prg/go/go-install.md dest/chapters/prg/go/go-editor.md dest/chapters/prg/go/go-cmd.md dest/chapters/prg/go/go-libraries.md dest/chapters/prg/go/go-rest.md dest/chapters/prg/go/go-cloud.md dest/chapters/prg/julia/julia-language.md dest/chapters/prg/scala/scala.md dest/chapters/MSG.md dest/chapters/msg/mqtt.md dest/chapters/msg/graphql.md dest/chapters/msg/avro.md dest/chapters/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-516.md dest/chapters/SECTION-APPENDIX.md dest/chapters/iaas/aws/products.md dest/chapters/iaas/azure/products.md dest/chapters/SECTION-CHAMELEON.md dest/chapters/cloud/chameleon/resources.md dest/chapters/cloud/chameleon/hardware.md dest/chapters/cloud/chameleon/charge.md dest/chapters/cloud/chameleon/start.md dest/chapters/cloud/chameleon/user-guide.md dest/chapters/cloud/chameleon/cli.md dest/chapters/cloud/chameleon/horizon.md dest/chapters/cloud/chameleon/heat.md dest/chapters/cloud/chameleon/baremetal.md dest/chapters/cloud/chameleon/faq.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
@@ -303,48 +392,48 @@ dest/chapters/iaas/azure/products.md: ../chapters/iaas/azure/products.md
 	../bin/header.py dest/chapters/iaas/azure/products.md 1
 
 dest/chapters/SECTION-CHAMELEON.md: ../chapters/SECTION-CHAMELEON.md
-	../bin/markup-single.py ../chapters/SECTION-CHAMELEON.md 2
-	../bin/header.py dest/chapters/SECTION-CHAMELEON.md 2
+	../bin/markup-single.py ../chapters/SECTION-CHAMELEON.md 1
+	../bin/header.py dest/chapters/SECTION-CHAMELEON.md 1
 
 dest/chapters/cloud/chameleon/resources.md: ../chapters/cloud/chameleon/resources.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/resources.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/resources.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/resources.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/resources.md 2
 
 dest/chapters/cloud/chameleon/hardware.md: ../chapters/cloud/chameleon/hardware.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/hardware.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/hardware.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/hardware.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/hardware.md 2
 
 dest/chapters/cloud/chameleon/charge.md: ../chapters/cloud/chameleon/charge.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/charge.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/charge.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/charge.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/charge.md 2
 
 dest/chapters/cloud/chameleon/start.md: ../chapters/cloud/chameleon/start.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/start.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/start.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/start.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/start.md 2
 
 dest/chapters/cloud/chameleon/user-guide.md: ../chapters/cloud/chameleon/user-guide.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/user-guide.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/user-guide.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/user-guide.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/user-guide.md 2
 
 dest/chapters/cloud/chameleon/cli.md: ../chapters/cloud/chameleon/cli.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/cli.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/cli.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/cli.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/cli.md 2
 
 dest/chapters/cloud/chameleon/horizon.md: ../chapters/cloud/chameleon/horizon.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/horizon.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/horizon.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/horizon.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/horizon.md 2
 
 dest/chapters/cloud/chameleon/heat.md: ../chapters/cloud/chameleon/heat.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/heat.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/heat.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/heat.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/heat.md 2
 
 dest/chapters/cloud/chameleon/baremetal.md: ../chapters/cloud/chameleon/baremetal.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/baremetal.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/baremetal.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
 
 dest/chapters/cloud/chameleon/faq.md: ../chapters/cloud/chameleon/faq.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/faq.md 3
-	../bin/header.py dest/chapters/cloud/chameleon/faq.md 3
+	../bin/markup-single.py ../chapters/cloud/chameleon/faq.md 2
+	../bin/header.py dest/chapters/cloud/chameleon/faq.md 2
 
 dest/chapters/SECTION-REFERENCES.md: ../chapters/SECTION-REFERENCES.md
 	../bin/markup-single.py ../chapters/SECTION-REFERENCES.md 1

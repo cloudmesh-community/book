@@ -1,5 +1,6 @@
-include ../Makefile.sections
+# include ../Makefile.sections
 BOOK=BOOK_516
+
 
 FILENAME=vonLaszewski-cloud
 
@@ -12,79 +13,25 @@ IMAGE_DIRS=$(shell ../bin/find-image-dirs.py)
 #
 # removing mermaid filter from linux as we do not yet know how to use it in docker
 #
-
-COPY=rsync
-
 ifeq ($(OS), osx)
 OPEN_EPUB=open
 MERMAID=-F mermaid-filter
+COPY=rsync
 endif
 ifeq ($(OS), linux)
 OPEN_EPUB=xdg-open
 MERMAID=-F mermaid-filter
+COPY=rsync
 endif
 ifeq ($(OS), windows)
 OPEN_EPUB=open
 MERMAID=-F mermaid-filter.cmd
+COPY=cp
 endif
 ifeq ($(DOCKER), True)
 MERMAID=
 endif
 
-######################################################################
-# i516
-######################################################################
-
-#  chapters/iaas/azure/signup.md\
-
-KUBERNETES=\
- chapters/container/index.md\
- chapters/container/container.md\
- chapters/container/docker-fs.md\
- chapters/container/docker-hadoop-cluster.md\
- chapters/container/docker-hadoop.md\
- chapters/container/docker-hadoop3.md\
- chapters/container/docker-intro.md\
- chapters/container/docker-local.md\
- chapters/container/docker-pagerank-example-instruction.md\
- chapters/container/docker-rest.md\
- chapters/container/docker-spark.md\
- chapters/container/docker-swarm.md\
- chapters/container/exercise.md\
- chapters/container/glossary.md\
- chapters/container/kubernetes-fs.md\
- chapters/container/kubernetes-intro.md\
- chapters/container/qemu.md\
-
-GO=\
-  chapters/prg/go/go-intro.md\
-  chapters/prg/go/go-install.md\
-  chapters/prg/go/go-editor.md\
-  chapters/prg/go/go-language.md\
-  chapters/prg/go/go-libraries.md\
-  chapters/prg/go/go-cmd.md
-
-
-DRAFT=\
-  $(KUBERNETES)\
-  chapters/msg/mqtt.md\
-  chapters/msg/mqtt1.md\
-  chapters/msg/mqtt2.md\
-  $(GO)
-
-
-CHAPTER_CLASS=\
- chapters/class/SECTION.md\
- chapters/class/fall2018.md\
- chapters/class/syllabus.md\
- chapters/class/policy.md\
- chapters/class/assignments.md\
- chapters/class/grading.md\
- chapters/class/project-ideas.md
-
-CHAPTER_SERVICES=\
-  chapters/doc/piazza.md\
- chapters/preface/git.md
 
 
 all: prepare epub
@@ -95,36 +42,17 @@ update: Makefile
 
 include ../Makefile.$(BOOK)
 
-######################################################################
-# END BOOK CLASS
-######################################################################
-
-CHAPTER_REFERNCES=\
- chapters/references.md
-
-BOOK_CLASS=\
-  $(CHAPTER_PREFIX)\
-  $(CHAPTER_CLASS) \
-  $(CHAPTER_DOC)\
-  $(CHAPTER_SERVICES) \
-  $(CHAPTER_REFERENCES)
+test:
+	echo $(INDEX)
 
 
-INDEX=\
-  $(CHAPTER_516)
-
-
-MARKDOWN-OPTIONS=--filter pandoc-fignos $(MERMAID) -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
+MARKDOWN-OPTIONS=$(MERMAID) -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
 CSL=--csl=template/ieee-with-url.csl
 FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
 CSS=--css=template/epub.css
 RESOURCE=--resource-path=$(IMAGE_DIRS)
-#RESOURCE=--resource-path=".:chapters:chapters/prg:chapters/iot:chapters/container:chapters/os:chapters/mapreduce:chapters/cloud/chameleon:chapters/doc:chapters/preface:chapters/class:chapters/case:chapters/cloud:chapters/iaas/aws:chapters/iaas/azure:chapters/iaas/watson:chapters/iaas/gcloud:chapters/msg:chapters/nist"
-
-#	pandoc ./chapters/prg/python.md -o dest/chapters/prg/python.md --base-header-level=2
-
 
 
 draft: prepare epubdraft
@@ -147,10 +75,16 @@ authors:
 version:
 	../bin/date.py > ../chapters/version.md
 
-prepare: version authors destination chapterlist references todo
+generateimages:
+ifeq (,$(wildcard dest/chapters/images/penguin.jpg))
+	make -f Makefile images
+endif
+
+prepare: generateimages version authors destination chapterlist references todo
 	# $(MARKUPALL)
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
 	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
+
 
 
 fixemoji:
