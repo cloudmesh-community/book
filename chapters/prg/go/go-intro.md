@@ -16,7 +16,7 @@
 * :construction: TODO: add the [?] as bibtex entries in bib/references-go.bib
 * :construction: TODO: add md section links where needed to place holder sections
 
-![Go Logo](images/Go_Logo_Aqua.svg)
+![Go Logo](images/Go-Logo-Aqua.svg)
 
 
 Go is a programming language that has been introduced by Google to
@@ -61,7 +61,7 @@ spot. However it is rated only with 1.081% with a declining rating but
 increase in the ranking. This trend is even more prominently depicted
 when looking at google trends in +@fig:go-trend.
 
-![](images/go-trend-legend.png)
+![Legend](images/go-trend-legend.png)
 
 ![Google trends for selected programming languages](images/go-trend.png){#fig:go-trend}
 
