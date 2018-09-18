@@ -3,9 +3,14 @@
 TODO COULD YOU PLEASE USE MORE READABLE MARKDOWN, E.g. 80 char and
 empty line after sections
 
-## swagger
+## Swagger
+
+We provide in Section ? an extensive overview of Swagger.
 
 Swagger is a simple yet powerful representation of your RESTful API.
+
+THE NEXT SENTENCE IS WITHOUT SUBSTANCE AND COPPIED PROBABLY FROM
+ADVERTISEMENT: 
 With the largest ecosystem of API tooling on the planet, thousands of
 developers are supporting Swagger in almost every modern programming
 language and deployment environment.  With a Swagger-enabled API, you
