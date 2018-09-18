@@ -77,3 +77,12 @@ Slides without any audio. They may be faster to download.
 surrounded by bars* using the `:bulb:` emoji
 
 ---
+
+Figures have a caption and can be refereed to in the epub with 
+
+![**Figure:** Code example](images/code.png){#f-code-example}
+
+Figures are generally refered to in the text as follows to just give an example
+
+The code icon is depicted in [Figure code example](#f-code-example)
+Fur our epub figures will not have numbers, as the sections must stay relocatable.
