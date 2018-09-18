@@ -27,6 +27,8 @@ swagger serve https://raw.githubusercontent.com/swagger-api/swagger-spec/master/
 ## generate an API server 
 ## generate an API client 
 ## generate a spec from the source 
+## generate a data model 
+## trnasfrom specs 
 
 ## other editors 
 
