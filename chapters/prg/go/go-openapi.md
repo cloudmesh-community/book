@@ -19,6 +19,7 @@ go-swagger brings to the go community a complete suite of fully-featured, high-p
 go-swagger is available as binary or docker releases as well as from source: more details.
 ## use cases 
 ## serve specification UI 
+Most basic use-case: serve a UI for your spec:
 ```go
 swagger serve https://raw.githubusercontent.com/swagger-api/swagger-spec/master/examples/v2.0/json/petstore-expanded.json
 ```
