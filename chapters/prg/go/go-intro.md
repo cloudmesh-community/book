@@ -1,7 +1,7 @@
 # Introduction to Go {#s-go-intro}
 
-:construction: TODO: add the [?] as bibtex entries in bib/references-go.bib
-:construction: TODO: add md section links where needed to place holder sections
+* :construction: TODO: add the [?] as bibtex entries in bib/references-go.bib
+* :construction: TODO: add md section links where needed to place holder sections
 
 ![Go Logo](https://upload.wikimedia.org/wikipedia/commons/2/23/Go_Logo_Aqua.svg)
 
@@ -30,7 +30,7 @@ Here is an example article discussing
 this article may be a bit biased towards Go and you may want to
 evaluate some of the provided arguments more carefully yourself.
 
-:construction: TODO: It is highly unusual that we "quote" such a long paragraph from a
+* :construction: TODO: It is highly unusual that we "quote" such a long paragraph from a
 resource. We like to minimize such "quoting". Quoting, in this amount is viewed as
 not a good way of writing a chapter.
 
@@ -66,7 +66,13 @@ is
 According to the [TIOBE](https://www.tiobe.com/tiobe-index/) [?] index
 for programming languages Go has reached for November 2018 the 16th
 spot. However it is rated only with 1.081% with a declining rating but
-increase in the ranking.
+increase in the ranking. This trend is even more prominently depicted
+when looking at google trends.
+
+![](images/go-trend-legend.png)
+![**Figure:** Google trends for selected programming languages](images/go-trend-legend.png)
+
+
 
 ## Organization of the chapter.
 
