@@ -50,6 +50,7 @@ To compile a book go to the directory and make it. Lets assume you like to creat
 ```
 $ git clone https://github.com/cloudmesh-community/book.git
 $ cd cloud
+$ make images
 $ make
 ```
 

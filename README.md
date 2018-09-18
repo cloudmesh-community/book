@@ -74,6 +74,7 @@ the cloud directory. Than you can create it with
 
 ```
 $ cd cloud
+$ make images
 $ make
 ```
 
