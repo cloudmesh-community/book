@@ -30,10 +30,6 @@ Here is an example article discussing
 this article may be a bit biased towards Go and you may want to
 evaluate some of the provided arguments more carefully yourself.
 
-* :construction: TODO: It is highly unusual that we "quote" such a long paragraph from a
-resource. We like to minimize such "quoting". Quoting, in this amount is viewed as
-not a good way of writing a chapter.
-
 Regarding the design philosophy behind the Go language, the following
 is
 [an excerpt from the designers](https://golang.org/doc/faq#principles):
