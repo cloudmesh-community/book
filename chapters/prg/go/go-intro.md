@@ -38,30 +38,13 @@ Regarding the design philosophy behind the Go language, the following
 is
 [an excerpt from the designers](https://golang.org/doc/faq#principles):
 
-> When Go was designed, Java and C++ were the most commonly used
+> *"When Go was designed, Java and C++ were the most commonly used
 > languages for writing servers, at least at Google. We felt that
 > these languages required too much bookkeeping and repetition. Some
 > programmers reacted by moving towards more dynamic, fluid languages
 > like Python, at the cost of efficiency and type safety. We felt it
 > should be possible to have the efficiency, the safety, and the
-> fluidity in a single language.
-
-> Go attempts to reduce the amount of typing in both senses of the
-> word. Throughout its design, we have tried to reduce clutter and
-> complexity. There are no forward declarations and no header files;
-> everything is declared exactly once. Initialization is expressive,
-> automatic, and easy to use. Syntax is clean and light on keywords.
-> Stuttering (`foo.Foo* myFoo = new(foo.Foo`)) is reduced by simple type
-> derivation using the `:=` declare-and-initialize construct. And
-> perhaps most radically, there is no type hierarchy: types just are,
-> they don't have to announce their relationships. These
-> simplifications allow Go to be expressive yet comprehensible without
-> sacrificing, well, sophistication.
-
-> Another important principle is to keep the concepts orthogonal.
-> Methods can be implemented for any type; structures represent data
-> while interfaces represent abstraction; and so on. Orthogonality
-> makes it easier to understand what happens when things combine.
+> fluidity in a single language"* [?].
 
 According to the [TIOBE](https://www.tiobe.com/tiobe-index/) [?] index
 for programming languages Go has reached for November 2018 the 16th
@@ -74,7 +57,7 @@ when looking at google trends.
 
 
 
-## Organization of the chapter.
+## Organization of the chapter
 
 The material presented in this chapter introduces the reader first to
 the basic concepts and features of the Go language and system.  This
