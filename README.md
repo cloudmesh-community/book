@@ -2,20 +2,14 @@
 
 
 Link |  Class | Description
-|------ | ------ | -------------
-[<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub?raw=true)| e516 | Evolving Lecture notes for class 516
-[<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534 | Evolving Lecture notes for class e534, I523, I423
-[<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| e534 | Scientific Writing I for all classes
-[<img src="latex/cover-latex.png" width="100px">](http://cyberaide.org/papers/vonLaszewski-latex.pdf)| e534 | Scientific Writing II for all classes
-[<img src="communicate/cover/cover.jpg" width="100px">](vonLaszewski-communicate.epub?raw=true)| e534 | Scientific Writing II for all classes
+|------ | --- | -------------
+[<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for class E516, E416, B649
+[<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
+[<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| all | Scientific Writing I for all classes
+[<img src="latex/cover-latex.png" width="100px">](http://cyberaide.org/papers/vonLaszewski-latex.pdf)| all | Scientific Writing II for all classes
+[<img src="communicate/cover/cover.jpg" width="100px">](vonLaszewski-communicate.epub?raw=true)| all | Class Communication Services (update version can be found in the Lecture notes for the class)
+![Bibliographies I](bib) | all | BibTeX files directory I
 
-
-
-## Others
-
-* epub: [Class Communication](vonLaszewski-communicate.epub)
-* epub: [Scientific Writing](vonLaszewski-writing-1.epub)
-* pdf:  [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf)
 
 ## Files
 
