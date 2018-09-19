@@ -5,6 +5,7 @@
 Quick links.
 
 * epub: [Cloud Computing](vonLaszewski-cloud.epub)
+![Cover](cloud/cover/cover.jpg){with=1in}
 
 ## Others
 
