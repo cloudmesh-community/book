@@ -6,7 +6,7 @@ Link |  Class | Description
 [<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub?raw=true)| e516 | Evolving Lecture notes for class 516
 [<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534 | Evolving Lecture notes for class e534, I523, I423
 [<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| e534 | Scientific Writing I for all classes
-[<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| e534 | Scientific Writing I for all classes
+[<img src="writing-1/cover/cover.jpg" width="100px">](http://cyberaide.org/papers/vonLaszewski-latex.pdf)| e534 | Scientific Writing I for all classes
 
 
 
