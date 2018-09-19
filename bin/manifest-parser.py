@@ -189,7 +189,7 @@ class Manifest(object):
                 #level = minimum_one(tree.level(node) - 1)
                 level = tree.level(node)
                 if node not in variables:
-                    print(node, level)
+                    print(level * "  ", node, level)
                 else:
                     print("#", node, level)
 
