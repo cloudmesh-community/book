@@ -41,6 +41,17 @@ func main() {
 * The next line fmt.Println(...) is another function available in Go which causes the message "Hello, World!" to be displayed on the screen. Here fmt package has exported Println method which is used to display the message on the screen.
 * Notice the capital P of Println method. In Go language, a name is exported if it starts with capital letter. Exported means the function or variable/constant is accessible to the importer of the respective package.
 
+## Executing a Go Program 
+
+Let us discuss how to save the source code in a file, compile it, and finally execute the program. Please follow the steps given below −
+
+* Open a text editor and add the above-mentioned code.
+* Save the file as hello.go
+* Open the command prompt.
+* Go to the directory where you saved the file.
+* Type go run hello.go and press enter to run your code.
+* If there are no errors in your code, then you will see "Hello World!" printed on the screen.
+
 
 
 Portable Cloud Programming with Go Cloud
