@@ -104,7 +104,7 @@ Step 4: Now go to AWS Lambda from console and hit `Get Started Now` (see +@fig:a
  
 ![AWS Lambda](images/aws_lambda.png){#fig:aws-lambda-lambda}
 
-Step 5: For runtime select Node.js 6.10 and then press “Blank Function.” (see +@fig:aws-lambda-blank)
+Step 5: For runtime select Node.js 6.10 and then press `Blank Function`  (see +@fig:aws-lambda-blank).
  
 ![Blank Function](images/aws_lambda_1.png){#fig:aws-lambda-blank}
 
@@ -140,7 +140,7 @@ Step 10: Create function now (see +@fig:aws-lambda-create)
 
 ![Create](images/aws_lambda_6.png){#fig:aws-lambda-create}
 
-Step 11: First Lambda function is created. To test it, press `Test` (see +@fig:aws-lambda-test)
+Step 11: First Lambda function is created. To test it, press <span style="background-color:blue;color:white">&nbsp;Test&nbsp;</span> (see +@fig:aws-lambda-test)
  
 ![Test](images/aws_lambda_7.png){#fig:aws-lambda-test}
 
