@@ -90,7 +90,7 @@ we can see that there is no special separator among individual statements in GO.
 
 identifier = letter { letter | unicode_digit }.
 
-Go does not allow punctuation characters such as *@, $, #, % and &* within identifiers. Go is a case-sensitive programming language. Thus, _Mahesh and mahesh are two different identifiers in Go_. Here are some examples of acceptable identifiers −
+Go does not allow punctuation characters such as **@, $, #, % and &** within identifiers. Go is a case-sensitive programming language. Thus, **Mahesh and mahesh are two different identifiers in Go**. Here are some examples of acceptable identifiers −
 ```go
 mahesh      kumar   abc   move_name   a_123
 myname50   _temp    j      a23b9      retVal
