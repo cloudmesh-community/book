@@ -3,7 +3,7 @@
 
 Link |  Class | Description
 |------ | ------ | -------------
-[<img src="cloud/cover/cover.jpg" width="100px">](abc)| e516 | Evolving Lecture notes for class 516
+[<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub)| e516 | Evolving Lecture notes for class 516
 
 Quick links.
 
