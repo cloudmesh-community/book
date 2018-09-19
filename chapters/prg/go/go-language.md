@@ -100,6 +100,15 @@ comments are helpful texts but are ingored by compilers, they start with /* and 
 ```go
 /* A new learner in GO */
 ```
+### keywords
+
+The following list shows the reserved words in Go. These reserved words may not be used as constant or variable or any other identifier names.
+
+break   | default    | func   | interface | select 
+case    | defer      | Go     | map       | Struct 
+chan    | else       | Goto   | package   | Switch 
+const	| fallthrough| range  |Type       | var    
+continue| for	     | import | if        | return 
  
  
  
