@@ -85,7 +85,7 @@ fmt.println("I am learning GO programming language!")
 ```
 we can see that there is no special separator among individual statements in GO.
  
- ### identifiers 
+ ### Identifiers 
  A Go identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter _A to Z_ or _a to z_ or an underscore _ followed by zero or more letters, underscores, and digits (0 to 9).
 
 identifier = letter { letter | unicode_digit }.
@@ -95,7 +95,7 @@ Go does not allow punctuation characters such as **@, $, #, % and &** within ide
 mahesh      kumar   abc   move_name   a_123
 myname50   _temp    j      a23b9      retVal
 ``` 
-### comments 
+### Comments 
 comments are helpful texts but are ingored by compilers, they start with /* and end with */ as follow:
 ```go
 /* A new learner in GO */
@@ -104,7 +104,7 @@ comments are helpful texts but are ingored by compilers, they start with /* and 
  
  
  
- ## References
+ # References
  * [Go toturial](https://www.tutorialspoint.com/go/)
  
  
