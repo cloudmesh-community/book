@@ -239,7 +239,7 @@ class Manifest(object):
             if title == book:
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
                     if node not in variables and node != book:
-                        level = minimum_one(tree.level(node) - 1)
+                        level =  level = tree.level(node)
                         print_rule(node, level)
                         print()
 
