@@ -3,3 +3,4 @@ pprint
 oyaml
 treelib
 docopt
+mkdocs
