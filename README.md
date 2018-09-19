@@ -1,15 +1,19 @@
 # Publications for classes
 
+:information_source: ePubs are best read on MacOS with ibooks, on Windows with Microsoft Edge, on Linux with Calibre
 
 Link |  Class | Description
 |------ | --- | -------------
 [<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for class E516, E416, B649
 [<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
-| [<imp src="https://github.com/cloudmesh/technologies/blob/master/cover.jpg" width=100px>](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies |
+[<img src="tech/cover/cover.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies 
 [<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| all | Scientific Writing I for all classes
 [<img src="latex/cover-latex.png" width="100px">](http://cyberaide.org/papers/vonLaszewski-latex.pdf)| all | Scientific Writing II for all classes
 [<img src="communicate/cover/cover.jpg" width="100px">](vonLaszewski-communicate.epub?raw=true)| all | Class Communication Services (update version can be found in the Lecture notes for the class)
-[Bibliographies I](bib) | all | BibTeX files directory I
+[:books: Bibliographies I](bib) | all | BibTeX files directory I as used in all but the Cloud Technologies ePub
+[:books: Bibliographies II - Cloud Technologies](https://github.com/cloudmesh/technologies/tree/master/bib) | all | BibTeX files directory II  as used in the Cloud Technologies ePub
+
+
 
 
 ## Files
