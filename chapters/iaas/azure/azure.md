@@ -1,4 +1,4 @@
-# Microsoft Azure :o:
+# Microsoft Azure
 
 Microsoft Azure is a cloud computing service created by Microsoft. It
 includes computing services and products for building, testing,
@@ -9,8 +9,148 @@ service (IaaS) and supports many different programming languages,
 tools and frameworks, including both Microsoft-specific and
 third-party software and systems.
 
-![](images/reg.png)
 
+## Products
+
+Just as  Microsoft offers a large number of services.
+We included the from Microsoft in Sep. 2018 highlighted services in
+the appendix, with convenient links to them.
+
+The services are organized in the following categories:
+
+-   AI + Machine Learning
+-   Analytics
+-   Compute
+-   Containers
+-   Databases
+-   Developer Tools
+-   DevOps
+-   Identity
+-   Integration
+-   Internet of Things
+-   Management Tools
+-   Media
+-   Migration
+-   Mobile
+-   Networking
+-   Security
+-   Storage
+-   Web
+
+We focus next on the
+
+* compute,
+* container, and
+* data resources
+
+For a more elaborate list please consult our Appendix. To see the
+complete list lease visit the Microsoft Web page via this
+[link](https://azure.microsoft.com/en-us/services/#compute).
+
+
+###  Virtual Machine Infrastructure as a Services 
+
+Source: <https://support.microsoft.com/en-us/allproducts>
+
+Microsoft offers core IaaS 
+[Compute](https://azure.microsoft.com/en-us/product-categories/compute/ "Compute")
+compute resources. This includes the following services:
+
+-
+    [Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/
+    "Virtual Machines") to provision Windows and Linux
+    virtual machines 
+
+-
+    [Virtual Machine Scale Sets](https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/
+    "Virtual Machine Scale Sets") to  manage and scale
+     thousands of Linux and Windows virtual
+    machines
+
+
+### Container Infrastructure as a Service
+
+Microsoft offers
+[Containers](https://azure.microsoft.com/en-us/overview/containers/)
+to allow for the development of 
+containerized applications. This includes:
+
+-
+    [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/)
+    to provide access to Kubernetes as a Service so that deployment, management, and operations of
+    Kubernetes can be conducted on the cloud resources offered.
+
+-
+   [Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/
+    "Service Fabric") to develop microservices and
+    orchestrate containers on Windows or
+    Linux as part of the infrastructure
+
+-
+    [Container Instances](https://azure.microsoft.com/en-us/services/container-instances/
+    "Container Instances") to run containers on Azure without managing
+    servers which seems unrelated to kubernetes
+
+-
+    [Container Registry](https://azure.microsoft.com/en-us/services/container-registry/
+    "Container Registry") to store and manage container images for deployments
+
+
+### Databases
+
+Storage is offered through a variety of
+[Database](https://azure.microsoft.com/en-us/product-categories/databases/
+"Databases") servicess to provide access to enterprise-grade, and fully managed  services.
+
+-
+    [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/
+    "Azure Cosmos DB") is a  globally distributed,
+    multi-model database for any
+    scale
+
+-
+    [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/
+    "Azure SQL Database") is a managed relational SQL database as a
+    service
+
+-
+    [Azure Database for MySQL](https://azure.microsoft.com/en-us/services/mysql/
+    "Azure Database for MySQL") is a managed MySQL database as a
+    service
+
+-
+    [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/
+    "Azure Database for PostgreSQL") is a managed
+    PostgreSQL database service
+
+-
+    [SQL Server on Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/
+    "SQL Server on Virtual Machines") allowing to host enterprise SQL
+    Server apps in the cloud
+
+-
+    [SQL Data Warehouse](https://azure.microsoft.com/en-us/services/sql-data-warehouse/
+    "SQL Data Warehouse") is an elastic data warehouse as a service
+    with enterprise-class features
+
+-
+    [Azure Database Migration Service](https://azure.microsoft.com/en-us/services/database-migration/
+    "Azure Database Migration Service") simplifies on-premises
+    database migration to the cloud
+
+- [Redis Cache](https://azure.microsoft.com/en-us/services/cache/
+  "Redis Cache") which provides a Redis Cache as a service to
+  support high-throughput and  low-latency data access
+
+-
+    [SQL Server Stretch Database](https://azure.microsoft.com/en-us/services/sql-server-stretch-database/
+    "SQL Server Stretch Database") which supports dynamically
+    stretch on-premises SQL server databases to 
+    Azure
+
+### Networking
+
+We will not go much into the network offerings at this time
 
 ## Registration
 
@@ -22,6 +162,8 @@ will need to go to
 You will see an image such as
 
 ![](images/reg.png)
+
+**Figure:** Registration
 
 On that image you click the `Start free` button to obtain a free one
 year account. You will have to either create a new Microsoft account
@@ -63,6 +205,7 @@ the defined complexity requirements.
 
 ![](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/media/quick-create-portal/create-windows-vm-portal-basic-blade.png)
 
+**Figure:** Creating a VM
 
 ## Starting a VM
 
@@ -78,6 +221,8 @@ A VM can be started through the Portal as follows:
 
 ![](images/start-button.png)
 
+**Figure:** Start button
+
 ## Stopping the VM
 
 It is the most important to stop your VMS once they are not in used,
@@ -90,7 +235,17 @@ To shut a VM down, please do the following:
 
 ![](images/stop-button.png)
 
+**Figure:** Stop button
+
 ## Exercises
+
+E.Azure.0:
+
+> Identify all products related to IaaS service offerings and mark
+> them with :star: after the bullet. Do copy the aws.md file into your
+> own repository, do not yet create a pull request. Confirm in a team
+> your findings and agree with each other.
+
 
 E.Azure.1:
 

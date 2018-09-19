@@ -1,5 +1,4 @@
-HEAT
-====
+# OpenStack HEAT
 
 Deploying an MPI cluster, an OpenStack installation, or any other type
 of cluster in which nodes can take on multiple roles can be complex: you
@@ -20,8 +19,7 @@ of such clusters. We call this image + template combination complex
 appliance because it consists of more than just the image (i.e.,
 appliance).
 
-Supporting Complex Appliances
------------------------------
+## Supporting Complex Appliances
 
 In a nutshell, complex appliances allow you to specify not only what
 image you want to deploy but also on how many nodes you want to deploy
@@ -55,8 +53,7 @@ to use and configure complex appliances on Chameleon; if you would like
 to know more about Heat, please refer to its [official
 documentation](http://docs.openstack.org/developer/heat/).
 
-Chameleon Appliance Catalog
----------------------------
+## Chameleon Appliance Catalog
 
 Our [Appliance Catalog](https://www.chameleoncloud.org/appliances/) has
 several complex appliances for popular technologies that people want to
@@ -64,12 +61,11 @@ deploy such as OpenStack or MPI or even more advanced deployments such
 as efficient SR-IOV enabled MPI in KVM virtual machines. We also provide
 common building blocks for cluster architectures, such as an NFS share.
 Complex appliances are identified by a badge in their top-right corner
-representing a group of machines, as shown in the screenshot:
+representing a group of machines, as shown in +@fig:chameleon-nfs.
 
-![image](images/NFS.png){width="0.5\columnwidth"}
+![NFS file share](images/NFS.png){#fig:chameleon-nfs}
 
-Deployment
-----------
+## Deployment
 
 We will explain how to launch a complex appliance based on our [NFS
 share appliance](https://www.chameleoncloud.org/appliances/25/). To
@@ -102,7 +98,7 @@ We will now create a new stack, which corresponds to the launch of a
 template. Click on Launch Stack on the top right. A window will pop up
 like below:
 
-![image](images/Launch-Stack.png){width="\columnwidth"}
+![**Figure:** Select Template](images/Launch-Stack.png)
 
 We will deploy the NFS appliance described earlier; it will consist of a
 server node and two client nodes. Change the template source field to
@@ -123,17 +119,17 @@ server and client). For nfs_client_count, change the default value of
 1 to 2. For reservation_id, choose your reservation created earlier.
 Finally, click "Launch".
 
-![image](images/Launch-NFS-Stack.png){width="\columnwidth"}
+![**Figure:** Launch NFS Stack](images/Launch-NFS-Stack.png)
 
 Your stack should be in status "Create In Progress" for several minutes
 while it first launches the NFS server instance, followed by the NFS
 client instances.
 
-![image](images/Create-In-Progress_zPgOjo4.png){width="\columnwidth"}
+![**Figure:** Create in Progress](images/Create-In-Progress_zPgOjo4.png)
 
 It will then move to the status "Create Complete".
 
-![image](images/Create-Complete_XkoWhlj.png){width="\columnwidth"}
+![**Figure:** Create Complete](images/Create-Complete_XkoWhlj.png)
 
 You can click on the stack name to get more details, including a
 visualization of the deployed resources, as pictured below. The single
@@ -147,7 +143,7 @@ both the IP and the association -- we agree but cannot do much about it
 at the moment). Blow off some steam by dragging the visualization across
 the screen, it can be rather fun!
 
-![image](images/Stack-visualization.png){width="\columnwidth"}
+![**Figure:** Stack Visualization](images/Stack-visualization.png)
 
 You can now ssh to the server using the floating IP just as you do with
 regular instances (use the cc account). The client does not have a
@@ -164,8 +160,7 @@ information about them. In the "Events" tab you will see information
 about the history of the deployment so far. In Template you will see the
 template that was used to deploy this stack.
 
-Heat Template
--------------
+## Heat Template
 
 The NFS share appliance deploys:
 
@@ -322,8 +317,7 @@ the stack to the user.
         description: Private IP addresses of the NFS clients
         value: { get_attr: [nfs_clients, first_address] }
 
-Customizing an existing template
---------------------------------
+## Customizing an existing template
 
 Customizing an existing template is a good way to start developing your
 own. We will use a simpler template than the previous example to start
@@ -336,7 +330,7 @@ Stacks page, select your stack, and then click on the red "Delete
 Stacks" button. You will be asked to confirm, so click on the blue
 "Delete Stacks" button.
 
-![image](images/Delete-Stacks.png){width="\columnwidth"}
+![**Figure:** Delete Stacks](images/Delete-Stacks.png)
 
 The template for the [Hello World complex
 appliance](https://www.chameleoncloud.org/appliances/26/) is reproduced
@@ -460,7 +454,7 @@ customized template. The resulting topology view is shown below: as you
 can see, the two client instances are shown separately since each one is
 defined as a separate resource in the template.
 
-![image](images/NFS-Two-Clients_lFGgizN.png){width="\columnwidth"}
+![**Figure:** NFS with Two Clients](images/NFS-Two-Clients_lFGgizN.png)
 
 You may have realized already that while adding just one additional
 client instance was easy, launching more of them would require to copy /
@@ -537,7 +531,7 @@ list the private IPs assigned to client instances:
 The image below shows the resulting outputs as viewed from the web
 interface. Of course IP addresses will be specific to each deployment.
 
-![image](images/Outputs.png){width="0.5\columnwidth"}
+![**Figure:** Outputs](images/Outputs.png)
 
 Finally, we can add a new parameter to replace the hardcoded number of
 client instances by a value passed to the template. Add the following
@@ -561,8 +555,7 @@ At this stage, we have fully recreated the NFS share appliance starting
 from the Hello World one! The next section will explain how to write a
 new template from scratch.
 
-Writing a new template
-----------------------
+## Writing a new template
 
 You may want to write a whole new template, rather than customizing an
 existing one. Each template should follow the same layout and be
@@ -670,8 +663,7 @@ Generally values will be calls to get_attr, get_param, or some other
 function to get information from parameters or resources deployed by the
 template and return them in the proper format to the user.
 
-Sharing new complex appliances
-------------------------------
+## Sharing new complex appliances
 
 If you have written your own complex appliances or substantially
 customized an existing one, we would love if you shared them with our
@@ -683,7 +675,7 @@ catalog](https://www.chameleoncloud.org/appliances/), and click on the
 button in the top-right corner: "Add an appliance" (you need to be
 logged in to see it).
 
-![image](images/Add-an-appliance.png){width="0.25\columnwidth"}
+![**Figure:** Add an Appliance](images/Add-an-appliance.png)
 
 You will be prompted to enter a name, description, and documentation.
 Instead of providing appliance IDs, copy your template to the dedicated
@@ -692,8 +684,7 @@ string to your appliance. Once submitted, your appliance will be
 reviewed. We will get in touch if a change is needed, but if it's all
 good we will publish it right away!
 
-Advanced topics
----------------
+## Advanced topics
 
 ### All-to-all information exchange
 

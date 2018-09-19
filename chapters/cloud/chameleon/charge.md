@@ -1,5 +1,5 @@
-Charge Rates
-============
+# Chameleon Cloud Charge Rates
+
 
 It is important to fully understand the charge rates of your VM and
 storage use.
@@ -11,9 +11,7 @@ Allocation:
 
 :   Chameleon projects are limited to a per-project allocation currently
     set to 20,000 service units for 6 months. Allocations can be renewed
-    or extended (see [Project and Allocation
-    Management](index.html#toc-project-and-allocation-management)
-    section for more details on Chameleon allocations.)
+    or extended
 
 Lease:
 
@@ -34,8 +32,8 @@ Lease:
     request a one-time exception to create a longer lease. The lease
     must be requested by the PI.
 
-Service Units
--------------
+## Service Units
+
 
 Chameleon allocations can consist of several components of the system.
 Users can request allocation of individual compute nodes, storage
@@ -79,8 +77,7 @@ the system to satisfy the reservation, even if the nodes requested are
 not actually used. A reservation request may be cancelled in which case
 no charges will apply.
 
-Project Allocation Size
------------------------
+## Project Allocation Size
 
 Currently Chameleon is operating on a "soft allocation model" where each
 project, if approved, will receive a startup allocation of 20,000 SUs

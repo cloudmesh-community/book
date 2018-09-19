@@ -1,5 +1,14 @@
 # Vagrant
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Be able to experiment with virtual machines on your computer before you go on a cloud.
+* Simulate a virtual cluster with multiple VMs running on your computer if it is big enough.
+
+---
+
 A convenient tool to interface with Virtual Box is vagrant.Vagrant
 allows us to manage virtual machines directly from the commandline. It
 support also other providers and can be used to start virtual machines

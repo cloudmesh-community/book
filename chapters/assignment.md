@@ -55,8 +55,11 @@ The following sections can be contributed by students. Multiple
 sections will count towards your fulfillment of contributing a
 chapter.
 
-* [Lambda Expressions](#lambda-expressions)
-* [Generators](#generators)
+Make sure that you claim a section in piazza and add your hid here when you work on it.
+Make sure to add yourself if you know you can complete the section in two days.
+
+* :new: [Lambda Expressions](#lambda-expressions) - already contributed by student
+* :hand: [Generators](#generators) - fa18-516-18 works on this
 * [Non Blocking Threads](#non-blocking-threads)
 * [Subprocess](#subprocess)
 * [Queue](#queue)
@@ -69,16 +72,18 @@ chapter.
 THe following require more work and qualify **if done right as a
 chapter**. PLease suggest chapters you like to contribute:
 
-* GraphQL
+* [GraphQL](#s-graphql)
 * OpenFaaS
 * OpenWhisk
 * Python Concurrent.futures
 * Python Multiprocessing
+* [Scala and Cloud Computing](#scala-and-cloud-computing)
 
 ### Your own suggestion
 
 We are happy to work with you on your on suggestions. Please note that
 we also have some additional mateial that is not yet released that
 could be enhanced upon.
+
 
 

@@ -1,16 +1,20 @@
 # Publications for classes
 
-## e516
+:information_source: ePubs are best read on MacOS with ibooks, on Windows with Microsoft Edge, on Linux with Calibre
 
-Quick links.
+Link |  Class | Description
+|------ | --- | -------------
+[<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for class E516, E416, B649
+[<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
+[<img src="tech/cover/cover.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies 
+[<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| all | Scientific Writing I for all classes
+[<img src="latex/cover-latex.png" width="100px">](http://cyberaide.org/papers/vonLaszewski-latex.pdf)| all | Scientific Writing II for all classes
+[<img src="communicate/cover/cover.jpg" width="100px">](vonLaszewski-communicate.epub?raw=true)| all | Class Communication Services (update version can be found in the Lecture notes for the class)
+[:books: Bibliographies I](bib) | all | BibTeX files directory I as used in all but the Cloud Technologies ePub
+[:books: Bibliographies II - Cloud Technologies](https://github.com/cloudmesh/technologies/tree/master/bib) | all | BibTeX files directory II  as used in the Cloud Technologies ePub
 
-* epub: [Cloud Computing](vonLaszewski-cloud.epub)
 
-## Others
 
-* epub: [Class Communication](vonLaszewski-communicate.epub)
-* epub: [Scientific Writing](vonLaszewski-writing-1.epub)
-* pdf:  [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf)
 
 ## Files
 
@@ -62,12 +66,22 @@ Once you have installed pandoc you can create the book with our simple
 and call make in the source dir
 
 ```bash
-$ mkdir -p ~/github/cloudmesh
-$ cd ~/github/cloudmesh
+$ mkdir -p ~/github/cloudmesh-community
+$ cd ~/github/cloudmesh-community
 $ git clone https://github.com/cloudmesh-community/book.git
-$ cd book/pi
+$ cd book
+$ pip install -r requirements
+```
+
+Then chose the book you like to compile. Let us assume the book is in
+the cloud directory. Than you can create it with
+
+```
+$ cd cloud
+$ make images
 $ make
 ```
+
 In case you need to use latex you need to download the full
 version. For OSX this is
 
