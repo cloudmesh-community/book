@@ -1,11 +1,13 @@
 # Publications for classes
 
-## e516
+
+Link |  Class | Description
+|------ | ------ | -------------
+<href a="vonLaszewski-cloud.epub> <img src="cloud/cover/cover.jpg" width="100px"> </href>| e516 | Evolving Lecture notes for class 516
 
 Quick links.
 
 * epub: [Cloud Computing](vonLaszewski-cloud.epub)
-<img src="cloud/cover/cover.jpg" width="100px">
 
 ## Others
 
