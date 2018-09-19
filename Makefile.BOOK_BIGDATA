@@ -82,28 +82,28 @@ dest/chapters/preface/notation.md: ../chapters/preface/notation.md
 	../bin/header.py dest/chapters/preface/notation.md 2
 
 dest/chapters/class/organization-523.md: ../chapters/class/organization-523.md
-	../bin/markup-single.py ../chapters/class/organization-523.md 1
-	../bin/header.py dest/chapters/class/organization-523.md 1
+	../bin/markup-single.py ../chapters/class/organization-523.md 2
+	../bin/header.py dest/chapters/class/organization-523.md 2
 
 dest/chapters/class/plagiarism.md: ../chapters/class/plagiarism.md
-	../bin/markup-single.py ../chapters/class/plagiarism.md 1
-	../bin/header.py dest/chapters/class/plagiarism.md 1
+	../bin/markup-single.py ../chapters/class/plagiarism.md 2
+	../bin/header.py dest/chapters/class/plagiarism.md 2
 
 dest/chapters/class/policies.md: ../chapters/class/policies.md
-	../bin/markup-single.py ../chapters/class/policies.md 1
-	../bin/header.py dest/chapters/class/policies.md 1
+	../bin/markup-single.py ../chapters/class/policies.md 2
+	../bin/header.py dest/chapters/class/policies.md 2
 
 dest/chapters/class/e534-i523.md: ../chapters/class/e534-i523.md
-	../bin/markup-single.py ../chapters/class/e534-i523.md 1
-	../bin/header.py dest/chapters/class/e534-i523.md 1
+	../bin/markup-single.py ../chapters/class/e534-i523.md 2
+	../bin/header.py dest/chapters/class/e534-i523.md 2
 
 dest/chapters/class/volumes.md: ../chapters/class/volumes.md
-	../bin/markup-single.py ../chapters/class/volumes.md 1
-	../bin/header.py dest/chapters/class/volumes.md 1
+	../bin/markup-single.py ../chapters/class/volumes.md 2
+	../bin/header.py dest/chapters/class/volumes.md 2
 
 dest/chapters/bigdata/intro-fall-2018.md: ../chapters/bigdata/intro-fall-2018.md
-	../bin/markup-single.py ../chapters/bigdata/intro-fall-2018.md 1
-	../bin/header.py dest/chapters/bigdata/intro-fall-2018.md 1
+	../bin/markup-single.py ../chapters/bigdata/intro-fall-2018.md 2
+	../bin/header.py dest/chapters/bigdata/intro-fall-2018.md 2
 
 dest/chapters/bigdata/applications/overview.md: ../chapters/bigdata/applications/overview.md
 	../bin/markup-single.py ../chapters/bigdata/applications/overview.md 1
@@ -258,12 +258,12 @@ dest/chapters/SECTION-FAQ.md: ../chapters/SECTION-FAQ.md
 	../bin/header.py dest/chapters/SECTION-FAQ.md 1
 
 dest/chapters/faq.md: ../chapters/faq.md
-	../bin/markup-single.py ../chapters/faq.md 1
-	../bin/header.py dest/chapters/faq.md 1
+	../bin/markup-single.py ../chapters/faq.md 2
+	../bin/header.py dest/chapters/faq.md 2
 
 dest/chapters/faq-523.md: ../chapters/faq-523.md
-	../bin/markup-single.py ../chapters/faq-523.md 1
-	../bin/header.py dest/chapters/faq-523.md 1
+	../bin/markup-single.py ../chapters/faq-523.md 2
+	../bin/header.py dest/chapters/faq-523.md 2
 
 dest/chapters/SECTION-REFERENCES.md: ../chapters/SECTION-REFERENCES.md
 	../bin/markup-single.py ../chapters/SECTION-REFERENCES.md 1
