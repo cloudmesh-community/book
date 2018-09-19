@@ -64,6 +64,16 @@
         - chapters/msg/graphql.md
         - chapters/msg/avro.md
 
+- IAAS:
+    - chapters/SECTION-IAAS.md:
+        - chapters/iaas/iaas.md
+        - chapters/iaas/aws/aws.md
+        - chapters/iaas/azure/azure.md
+        - chapters/iaas/watson/watson.md
+        - chapters/iaas/gcloud/gcloud.md
+        - chapters/iaas/libcloud.md
+        - chapters/iaas/boto.md
+
 - CONTAINER:
     - chapters/container/index.md
     - chapters/container/container.md
@@ -150,14 +160,7 @@
         - chapters/rest/swagger-codegen.md
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
-    - chapters/SECTION-IAAS.md:
-        - chapters/iaas/iaas.md
-        - chapters/iaas/aws/aws.md
-        - chapters/iaas/azure/azure.md
-        - chapters/iaas/watson/watson.md
-        - chapters/iaas/gcloud/gcloud.md
-        - chapters/iaas/libcloud.md
-        - chapters/iaas/boto.md
+    - $ref:IAAS
     _ $ref:SERVERLESS
     - $ref:DEVTOOLS
     - $ref:PYTHON
