@@ -2,6 +2,7 @@
 """Vagrant Manager.
 Usage:
   manifest-parser.py info
+  manifest-parser.py info no BOOK
   manifest-parser.py list
   manifest-parser.py generate BOOK
   manifest-parser.py dep BOOK
@@ -11,8 +12,20 @@ Options:
   -h --help     Show this screen.
 
 Description:
-   infor  -- gives general information of the lists
-   
+   info
+        gives general information of the lists
+
+   info no BOOK
+        prints all entries that are not in the book but in the chapter dir
+
+   dep BOOK
+        generates the entries for the makefile
+
+   tree BOOK
+        list the booktree for debugging purposes
+
+
+
 """
 
 import oyaml as yaml
@@ -21,6 +34,9 @@ from treelib import Node, Tree
 from time import time
 from docopt import docopt
 import sys
+from pathlib import Path
+import glob
+import os
 
 def load_manifest(file):
     mfest = None
@@ -193,6 +209,30 @@ class Manifest(object):
                 else:
                     print("#", node, level)
 
+    def info_no(self, book):
+
+        #
+        # find tree entries
+        #
+        entries = []
+        variables = self.chaps.keys()
+        for title, tree in self.treebook.items():
+            if title == book:
+                for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
+                    level = tree.level(node)
+                    if node not in variables:
+                        entries.append(node)
+
+
+        dir_entries = list(glob.iglob(os.path.join("../chapters", '**', '*.md')))
+        for entry in range(0,len(dir_entries)):
+            dir_entries[entry] = dir_entries[entry].replace("../", "")
+
+        for entry in dir_entries:
+            if entry not in entries:
+                pprint(entry)
+
+
     def list(self):
         for title, tree in self.treebook.items():
             print(title)
@@ -250,7 +290,11 @@ class Manifest(object):
 
 
 def process_arguments(arguments):
-    if arguments["info"]:
+    if arguments["info"] and arguments["no"]:
+        book = arguments["BOOK"]
+        m = Manifest()
+        m.info_no(book)
+    elif arguments["info"]:
         m = Manifest()
         m.info()
     elif arguments["list"]:
