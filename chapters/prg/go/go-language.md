@@ -57,12 +57,25 @@ Let us discuss how to save the source code in a file, compile it, and finally ex
  Make sure the Go compiler is in your path and that you are running it in the directory containing the source file hello.go.
  
  ## Basic Syntax
+  After we konw the program structure of Go, now we can learn more about the building blocks of go programming language. 
  ### Tokens in Go 
  
  A Go program consists of various tokens. A token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following Go statement consists of six tokens −
  ```go
  fmt.Println("Hello, Tomorrow!")
  ```
+ the individual tokens are-
+ 
+ ### Line separator in GO 
+ In a Go program, the line separator key is a statement terminator. compared with C programming language, individual statements in GO don't need a special separator like “;” . The Go compiler internally places “;” as the statement terminator to indicate the end of one logical entity.
+
+For example, let us look at the following statements −
+```go
+fmt.Println("Hello, Tomorrow!")
+fmt.Println("we have a better future!")
+fmt.println("I am learning GO programming language!")
+```
+we can see that there is nothing to separate individual statements in GO.
  
  
  
