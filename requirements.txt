@@ -1,0 +1,5 @@
+pandoc-fignos
+pprint
+oyaml
+treelib
+docopt
