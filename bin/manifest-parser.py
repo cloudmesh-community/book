@@ -29,7 +29,6 @@ def load_manifest(file):
             mfest = yaml.load(fs)
         except yaml.YAMLError as exc:
             print(exc)
-    pprint (mfest)
     return mfest
 
 
