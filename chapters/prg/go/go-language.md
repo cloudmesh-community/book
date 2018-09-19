@@ -34,6 +34,8 @@ func main() {
 	fmt.Println("Hello Tomorrow!")
     }
 ```
+Let us explain in detail about the meaning of different parts of the above program.
+
 * The first line of the program package main defines the package name in which this program should lie. It is a mandatory statement, as Go programs run in packages. The main package is the starting point to run the program. Each package has a path and name associated with it.
 * The next line import "fmt" is a preprocessor command which tells the Go compiler to include the files lying in the package fmt.
 * The next line func main() is the main function where the program execution begins.
