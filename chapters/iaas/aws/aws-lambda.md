@@ -108,7 +108,7 @@ Step 5: For runtime select Node.js 6.10 and then press “Blank Function.” (se
  
 ![Blank Function](images/aws_lambda_1.png){#fig:aws-lambda-blank}
 
-Step 6: Skip this step and press “Next.” (see +@fig:aws-lambda-next)
+Step 6: Skip this step and press `Next`. (see +@fig:aws-lambda-next)
 
 ![Next](images/aws_lambda_2.png){#fig:aws-lambda-next}
  
@@ -117,13 +117,13 @@ Lambda Function, or leave it blank. (see +@fig:aws-lambda-description)
 
 ![Description](images/aws_lambda_3.png){#fig:aws-lambda-desccription}
 
-Lambda function is just a function, named as “handler” here and the
+Lambda function is just a function, named as *handler* here and the
 function takes three parameter - event, context and a callback
 function. The callback will run when the Lambda function is done and
 will return a response or an error message. For the Blank Lambda
-blueprint response is hard-coded as the string ‘Hello from Lambda’.
+blueprint response is hard-coded as the string `Hello from Lambda`.
 
-Step 8: Scroll down, for Role choose “Create new Role from template”, and for Role name use isPalindromeRole or any name.
+Step 8: Scroll down, for Role choose `Create new Role from template`, and for Role name use isPalindromeRole or any name.
 For Policy templates, choose “Simple Microservice” permissions. (see +@fig:aws-lambda-policy)
  
 ![Policy](images/aws_lambda_4.png){#fig:aws-lambda-policy}
@@ -140,26 +140,26 @@ Step 10: Create function now (see +@fig:aws-lambda-create)
 
 ![Create](images/aws_lambda_6.png){#fig:aws-lambda-create}
 
-Step 11: First Lambda function is created. To test it, press “Test” (see +@fig:aws-lambda-test)
+Step 11: First Lambda function is created. To test it, press `Test` (see +@fig:aws-lambda-test)
  
 ![Test](images/aws_lambda_7.png){#fig:aws-lambda-test}
 
-Output will be the hard-coded response of “Hello from Lambda.” from the created Lambda function. (see +@fig:aws-lambda-hello)
+Output will be the hard-coded response of `Hello from Lambda`. from the created Lambda function. (see +@fig:aws-lambda-hello)
  
 ![Hello](images/aws_lambda_8.png){#fig:aws-lambda-hello}
 
-Step 12: Now let’s add our isPalindrome.js function code here to
-Lambda function but instead of return result use callback(null,
-result). Then add a hard-coded string value of abcd on line 3 and
-press “Test.” (see +@fig:aws-lambda-press)
+Step 12: Now let us add our `isPalindrome.js` function code here to
+Lambda function but instead of return result use `callback(null,
+result)`. Then add a hard-coded string value of abcd on line 3 and
+press `Test`. (see +@fig:aws-lambda-press)
 
 ![Press Test](images/aws_lambda_9.png){#fig:aws-lambda-press}
 
-Output returns “abcd is not a Palindrome” (see +@fig:aws-lambda-output)
+Output returns `abcd is not a Palindrome` (see +@fig:aws-lambda-output)
 
 ![Output](images/aws_lambda_10.png){#fig:aws-lambda-output}
 
-Similarly, let’s try with string “abcdcba” and in this case output
-should return “abcdcba is a Palindrome” So our Lambda function is
+Similarly, let us try with string `abcdcba` and in this case output
+should return `abcdcba is a Palindrome`. Thus, our Lambda function is
 behaving as expected.
 
