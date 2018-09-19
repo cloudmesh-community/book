@@ -7,7 +7,7 @@ Link |  Class | Description
 [<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534 | Evolving Lecture notes for class e534, I523, I423
 [<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| e534 | Scientific Writing I for all classes
 [<img src="latex/cover-latex.png" width="100px">](http://cyberaide.org/papers/vonLaszewski-latex.pdf)| e534 | Scientific Writing II for all classes
-[<img src="communication/cover/cover.jpg" width="100px">](vonLaszewski-communication.epub?raw=true)| e534 | Scientific Writing II for all classes
+[<img src="communicate/cover/cover.jpg" width="100px">](vonLaszewski-communicate.epub?raw=true)| e534 | Scientific Writing II for all classes
 
 
 
