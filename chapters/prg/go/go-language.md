@@ -21,7 +21,7 @@ https://golang.org/
 * Statements and Expressions
 * Comments
 
-### An simple example
+### A simple example
 Firstly, look at a simple code that would print the words "Hello Tomorrow" 
 
 ```go 
@@ -53,7 +53,7 @@ Let us discuss how to save the source code in a file, compile it, and finally ex
 * If there are no errors in your code, then you will see "Hello Tomorrow!" printed on the screen.
 
  Make sure the Go compiler is in your path and that you are running it in the directory containing the source file hello.go.
- ## tokens in Go 
+ ## Tokens in Go 
  
  A Go program consists of various tokens. A token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following Go statement consists of six tokens −
  ```go
@@ -64,8 +64,24 @@ Let us discuss how to save the source code in a file, compile it, and finally ex
  
  
  
- ## REFERENCES
+ ## References
  * [Go toturial](https://www.tutorialspoint.com/go/)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
