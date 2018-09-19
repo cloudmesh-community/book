@@ -86,7 +86,7 @@ fmt.println("I am learning GO programming language!")
 we can see that there is no special separator among individual statements in GO.
  
  ### identifiers 
- A Go identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore _ followed by zero or more letters, underscores, and digits (0 to 9).
+ A Go identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter _A to Z_ or _a to z_ or an underscore _ followed by zero or more letters, underscores, and digits (0 to 9).
 
 identifier = letter { letter | unicode_digit }.
 
