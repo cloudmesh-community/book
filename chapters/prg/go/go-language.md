@@ -70,7 +70,7 @@ Let us discuss how to save the source code in a file, compile it, and finally ex
 .
 Println
 (
-   "Hello, World!"
+   "Hello, Tomorrow!"
 )
  ```
  
