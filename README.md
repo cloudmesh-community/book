@@ -3,8 +3,10 @@
 
 Link |  Class | Description
 |------ | ------ | -------------
-[<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub)| e516 | Evolving Lecture notes for class 516
+[<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub?raw=true)| e516 | Evolving Lecture notes for class 516
 
+
+https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub?raw=true
 Quick links.
 
 * epub: [Cloud Computing](vonLaszewski-cloud.epub)
