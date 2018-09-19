@@ -74,7 +74,7 @@ Simple Notification Service (SNS).
 
 Let us create our first Lambda function.
 
-Step 1: Firts, We need an AWS account. This is discussed in Section :warning:.
+Step 1: First, We need an AWS account. This is discussed in Section :warning:.
 
 Step 2: We will be writing a function that we call `isPalindrome`, which will check
 if the string is palindrome or not.
