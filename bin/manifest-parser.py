@@ -161,6 +161,9 @@ class Manifest(object):
                 if realtag.startswith("$ref:"):
                     chapkey = realtag.split("$ref:")[1]
                     newtree = Tree(tree=self.treechap[chapkey], deep=True)
+                    # move up its children to replace totally the root
+                    subtree = newtree.subtree(newtree.children(newtree.root)[0].tag)
+                    newtree = subtree
                     for anode in tree.children(node):
                         origtag = anode.tag
                         if "|" in origtag:
@@ -183,8 +186,8 @@ class Manifest(object):
             tree.show(key=lambda x: x.data)
             print("-" * 80)
             for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
-                level = minimum_one(tree.level(node) - 1)
-
+                #level = minimum_one(tree.level(node) - 1)
+                level = tree.level(node)
                 if node not in variables:
                     print(node, level)
                 else:
@@ -203,7 +206,8 @@ class Manifest(object):
                 # print ("-" * 80)
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
                     if node not in variables:
-                        level = minimum_one(tree.level(node) - 1)
+                        #level = minimum_one(tree.level(node) - 1)
+                        level = tree.level(node)
                         print(node, level)
 
     def generate_dependencies(self, book):
