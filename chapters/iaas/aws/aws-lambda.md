@@ -38,13 +38,16 @@ automatically deploy them using AWS CodePipeline and AWS CodeBuild.
 For more information, see Deploying Lambda-based Applications.
 
 In one of the interviews with Matt Wood, Chief product strategist at
-Amazon Web Services, says "There’s a particular category of usage
-where the developer wants to focus primarily on adding functionality
-to their application, they don’t want to worry about scaling up and
-down (infrastructure), and they want costs that run in line with usage
-of their application, not the utilization of their infrastructure.
-Lambda provides a really good answer for developers looking for that
-sort of focus."
+Amazon Web Services, says 
+
+> "There’s a particular category of usage
+> where the developer wants to focus primarily on adding functionality
+> to their application, they don’t want to worry about scaling up and
+> down (infrastructure), and they want costs that run in line with usage
+> of their application, not the utilization of their infrastructure.
+> Lambda provides a really good answer for developers looking for that
+> sort of focus." :warning: citation missing, could this not be 
+> formulated without this quote?
 
 Ironically, Lambda could be a threat to one of the Amazon's most
 popular EC2. Developers can build apps that run entirely on Lambda
