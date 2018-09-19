@@ -64,7 +64,15 @@ Let us discuss how to save the source code in a file, compile it, and finally ex
  ```go
  fmt.Println("Hello, Tomorrow!")
  ```
- the individual tokens are-
+ the six individual tokens are as follow-
+ ```go
+ fmt
+.
+Println
+(
+   "Hello, World!"
+)
+ ```
  
  ### Line separator in GO 
  In a Go program, the line separator key is a statement terminator. compared with C programming language, individual statements in GO don't need a special separator like “;” . The Go compiler internally places “;” as the statement terminator to indicate the end of one logical entity.
