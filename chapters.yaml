@@ -120,6 +120,10 @@
         - chapters/cloud/chameleon/baremetal.md
         - chapters/cloud/chameleon/faq.md
 
+- SERVERLESS:
+    - chapters/SECTION-SERVERLESS.md:
+        - chapters/iaas/aws/aws-lambda.md
+
 
 # #####################################################################
 # 516
@@ -154,6 +158,7 @@
         - chapters/iaas/gcloud/gcloud.md
         - chapters/iaas/libcloud.md
         - chapters/iaas/boto.md
+    _ $ref:SERVERLESS
     - $ref:DEVTOOLS
     - $ref:PYTHON
     - $ref:GO

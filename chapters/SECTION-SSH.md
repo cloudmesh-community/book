@@ -1,3 +1,3 @@
-# [Kubernetes]{.part}
+# [Secure Shell]{.part}
 
 
