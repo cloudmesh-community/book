@@ -14,33 +14,50 @@ Link |  Class | Description
 [:books: Bibliographies II - Cloud Technologies](https://github.com/cloudmesh/technologies/tree/master/bib) | all | BibTeX files directory II  as used in the Cloud Technologies ePub
 
 
+# Cloudmesh community ePup Publication Framework
+
+:warning: This section is only for those that like to generate their own ePubs based on our framework
+
+ePubs can be easily created as they are build on a template. E good template is provided in the directory `cloud`
+
+You simply copy that directory to your own directory. let us assume we call it `mybook`. Note that we use all loer case letters to avoid complications while misspelling the directory
+
+You will have to edit now the file called Makefile and chamge the value `BOOK_516` to `BOOK_MYBOOK`. Let us assume you use emacs
+
+	$ emacs mybook/Makefile
+
+Now you have to edit the file `chapters.yml` in the book directory and add chapters you like to include in your ePub. 
+See some of the examples we provided for other ebooks. It is now important that you use the same name we used before, e.g. `BOOK_MYBOOK`. Thus create in the yaml file a list of chapters for it. 
+
+	$ emacs chapters.yml
+	$ yamllint chapters.yaml
+
+To avoid any yaml errors, just use `yamllint` to check your file and correct all errors and warnings.
+
+An example would be
+
+```yaml
+- BOOK_MYBOOK:
+     - chapters/linux/refcards.md
+```
+
+To compile the book, you first have to generate an initial Makefile, which you can do with the command
+
+ ../bin/manifest-parser.py dep BOOK_MYBOOK > Makefile.BOOK_MYBOOK
+
+Now the framework is all set up and you can add your new chapters in `./chapters` while refering to them in the `chapters.yaml` file for your book
+
+To create the book simply do the following
+
+	$ cd mybook
+	$ make
+	
+To view it say 
+
+	$ make view
 
 
-## Files
-
-### Build files and dirs
-
-* README.md - this readme
-* bin - some convenient scripts to manipulate the content
-* template - dir with the templates in it including fonts
-
-
-### Bib
-
-* bib - bibliography goes here.
-
-### Chapters
-
-* chapters - all chapters from which we can chose
-
-### Books
-
-* class - class handbook (finished)
-* cluster - cluster handbook (just a collection)
-* pi (just a collection)
-
-
-## Creating the Document
+## Installation Instructions
 
 This document is for the ebooks only
 
@@ -82,32 +99,27 @@ $ make images
 $ make
 ```
 
+In case you like to compile another book just replace the `cloud` we used in the previous step with the book you like. THis includes at this time
+
+* `big-data-applications`
+* `cloud`
+* `communicate`
+* `writing-1`
+
+Draft bpooks include
+
+* `cluster`
+* `pi`
+
+
+
+## LaTeX
+
+The directory `latex` is different and it requires latex to be installed as a PDF is created that showcases you how to efficeintly use LaTeX
+
 In case you need to use latex you need to download the full
 version. For OSX this is
 
 * <http://www.tug.org/mactex/mactex-download.html>
-
-The Raspberry PI is to small to run LaTeX, so use it to log into a
-remot resource and run it there.
-
-
-Go to a dir (example)
-
-```bash
-$ cd pi
-```
-
-To look at the book, open the text with your favorite e-book
-reader. On OSX you can say
-
-```bash
-$ open *.epub
-```
-
-or simply
-
-```bash
-$ make view
-```
 
 
