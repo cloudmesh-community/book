@@ -43,7 +43,7 @@ Let us explain in detail about the meaning of different parts of the above progr
 * The next line fmt.Println(...) is another function available in Go which causes the message "Hello, Tomorrow!" to be displayed on the screen. Here fmt package has exported Println method which is used to display the message on the screen.
 * Notice the capital P of Println method. In Go language, a name is exported if it starts with capital letter. Exported means the function or variable/constant is accessible to the importer of the respective package.
 
-## Executing a Go Program 
+### Executing a Go Program 
 
 Let us discuss how to save the source code in a file, compile it, and finally execute the program. Please follow the steps given below −
 
@@ -55,7 +55,9 @@ Let us discuss how to save the source code in a file, compile it, and finally ex
 * If there are no errors in your code, then you will see "Hello Tomorrow!" printed on the screen.
 
  Make sure the Go compiler is in your path and that you are running it in the directory containing the source file hello.go.
- ## Tokens in Go 
+ 
+ ## Basic Syntax
+ ### Tokens in Go 
  
  A Go program consists of various tokens. A token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following Go statement consists of six tokens −
  ```go
