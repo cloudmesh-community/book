@@ -60,7 +60,7 @@ In Serverless Computing, servers are still there, its just that we
 dont need to manage them.
 
 Another advantage of going serverless is that you no longer need to
-keep a server running all the time. The “server” suddenly appears when
+keep a server running all the time. The *server* suddenly appears when
 you need it, then disappears when you’re done with it. Now you can
 think in terms of functions instead of servers, and all your business
 logic can now live within these functions.
@@ -74,11 +74,10 @@ Simple Notification Service (SNS).
 
 Let us create our first Lambda function.
 
-Step 1: We need an AWS account firstly. We already have a section here
-for that.
+Step 1: Firts, We need an AWS account. This is discussed in Section :warning:.
 
-Step 2: We will be writing a function isPalindrome, which will check
-if the string is Palindrome String or not.
+Step 2: We will be writing a function that we call `isPalindrome`, which will check
+if the string is palindrome or not.
 
 :o: can syntax be improved so we can see the text
 
@@ -90,20 +89,20 @@ const isPalindrome = (string) => {
        `${string} is not a Palindrome`;
               return result;
   };
-  ```
+```
   
-This example is in javascript - isPalindrome.js
+This example we store in a file as javascript named `isPalindrome.js`
 
-Step 3: Creating an AWS Lambda function - isPalindrome. Go to AWS
-Console (see +@fig:aws-lambda-console)
+Step 3: Next we create an AWS Lambda function  `isPalindrome`. Go to AWS
+Console (see +@fig:aws-lambda-console).
 
  
-  ![AWS Console](images/aws_console.png){#fig:aws-lambda-console}
+![AWS Console](images/aws_console.png){#fig:aws-lambda-console}
  
  
-Step 4: Now go to AWS Lambda from console and hit "Get Started Now" (see +@fig:aws-lambda-lambda)
+Step 4: Now go to AWS Lambda from console and hit `Get Started Now` (see +@fig:aws-lambda-lambda)
  
- ![AWS Lambda](images/aws_lambda.png){#fig:aws-lambda-lambda}
+![AWS Lambda](images/aws_lambda.png){#fig:aws-lambda-lambda}
 
 Step 5: For runtime select Node.js 6.10 and then press “Blank Function.” (see +@fig:aws-lambda-blank)
  
@@ -127,7 +126,7 @@ blueprint response is hard-coded as the string ‘Hello from Lambda’.
 Step 8: Scroll down, for Role choose “Create new Role from template”, and for Role name use isPalindromeRole or any name.
 For Policy templates, choose “Simple Microservice” permissions. (see +@fig:aws-lambda-policy)
  
- ![Policy](images/aws_lambda_4.png){#fig:aws-lambda-policy}
+![Policy](images/aws_lambda_4.png){#fig:aws-lambda-policy}
 
 Step 9: For Memory, 128 megabytes is more than enough for our simple
 function. As for the 3 second timeout, this means that — should the
@@ -135,7 +134,7 @@ function not return within 3 seconds — AWS will shut it down and
 return an error. Three seconds is also more than enough. Leave the
 rest of the advanced settings unchanged. (see +@fig:aws-lambda-settings)
 
- ![Advanced Settings](images/aws_lambda_5.png){#fig:aws-lambda-settings}
+![Advanced Settings](images/aws_lambda_5.png){#fig:aws-lambda-settings}
 
 Step 10: Create function now (see +@fig:aws-lambda-create)
 
@@ -143,18 +142,18 @@ Step 10: Create function now (see +@fig:aws-lambda-create)
 
 Step 11: First Lambda function is created. To test it, press “Test” (see +@fig:aws-lambda-test)
  
- ![Test](images/aws_lambda_7.png){#fig:aws-lambda-test}
+![Test](images/aws_lambda_7.png){#fig:aws-lambda-test}
 
 Output will be the hard-coded response of “Hello from Lambda.” from the created Lambda function. (see +@fig:aws-lambda-hello)
  
- ![Hello](images/aws_lambda_8.png){#fig:aws-lambda-hello}
+![Hello](images/aws_lambda_8.png){#fig:aws-lambda-hello}
 
 Step 12: Now let’s add our isPalindrome.js function code here to
 Lambda function but instead of return result use callback(null,
 result). Then add a hard-coded string value of abcd on line 3 and
 press “Test.” (see +@fig:aws-lambda-press)
 
- ![Press Test](images/aws_lambda_9.png){#fig:aws-lambda-press}
+![Press Test](images/aws_lambda_9.png){#fig:aws-lambda-press}
 
 Output returns “abcd is not a Palindrome” (see +@fig:aws-lambda-output)
 
