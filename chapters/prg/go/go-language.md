@@ -31,7 +31,7 @@ import "fmt"
 
 func main() {
    /* This is my first sample program. */
-	fmt.Println("Hello Tomorrow")
+	fmt.Println("Hello Tomorrow!")
     }
 ```
 * The first line of the program package main defines the package name in which this program should lie. It is a mandatory statement, as Go programs run in packages. The main package is the starting point to run the program. Each package has a path and name associated with it.
