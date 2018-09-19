@@ -142,6 +142,7 @@
 
 - BOOK_516:
     - $ref:PREFACE:
+    - chapters/SECTION-OVERVIEW.md:
         - chapters/assignment.md
         - chapters/class/organization-516.md
         - chapters/class/plagiarism.md
@@ -150,7 +151,7 @@
         - chapters/class/policies.md
         - chapters/class/e516-summary.md
         - chapters/class/volumes.md
-        - chapters/class/e516-definition.md
+    - chapters/class/e516-definition.md
     - chapters/cloud/datacenter.md
     - chapters/arch.md
     - chapters/nist/bdra.md:
