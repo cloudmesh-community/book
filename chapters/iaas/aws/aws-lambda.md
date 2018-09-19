@@ -108,7 +108,7 @@ Step 5: For runtime select Node.js 6.10 and then press “Blank Function.” (se
  
 ![Blank Function](images/aws_lambda_1.png){#fig:aws-lambda-blank}
 
-Step 6: Skip this step and press `Next`. (see +@fig:aws-lambda-next)
+Step 6: Skip this step and press <span style="background-color:blue;color:white">&nbsp;Next&nbsp;</span>. (see +@fig:aws-lambda-next)
 
 ![Next](images/aws_lambda_2.png){#fig:aws-lambda-next}
  
