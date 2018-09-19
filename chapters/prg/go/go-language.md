@@ -30,7 +30,7 @@ package main
 import "fmt"
 
 func main() {
-   /* This is my first sample program. */
+   /* This is a very easy program. */
 	fmt.Println("Hello Tomorrow!")
     }
 ```
@@ -83,8 +83,23 @@ fmt.Println("Hello, Tomorrow!")
 fmt.Println("we have a better future!")
 fmt.println("I am learning GO programming language!")
 ```
-we can see that there is nothing to separate individual statements in GO.
+we can see that there is no special separator among individual statements in GO.
  
+ ### identifiers 
+ A Go identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore _ followed by zero or more letters, underscores, and digits (0 to 9).
+
+identifier = letter { letter | unicode_digit }.
+
+Go does not allow punctuation characters such as @, $, and % within identifiers. Go is a case-sensitive programming language. Thus, Manpower and manpower are two different identifiers in Go. Here are some examples of acceptable identifiers −
+```go
+mahesh      kumar   abc   move_name   a_123
+myname50   _temp    j      a23b9      retVal
+``` 
+### comments 
+comments are helpful texts but are ingored by compilers, they start with /* and end with */ as follow:
+```go
+/* A new learner in GO */
+```
  
  
  
