@@ -27,6 +27,8 @@
         - chapters/prg/python/python-install.md
         - chapters/prg/python/python-interactive.md
         - chapters/prg/python/python-editor.md
+
+- PYTHONLANG:
     - chapters/prg/SECTION-PYTHON-LANG.md:
         - chapters/prg/python/python.md
         - chapters/prg/python/python-libraries.md
@@ -163,6 +165,7 @@
     - $ref:SERVERLESS
     - $ref:DEVTOOLS
     - $ref:PYTHON
+    - $ref:PYTHONLANG
     - $ref:GO
     - chapters/prg/julia/julia-language.md
     - chapters/prg/scala/scala.md
@@ -199,6 +202,7 @@
     - chapters/bigdata/algorithms/plotviz.md
     - $ref:DEVTOOLS
     - $ref:PYTHON
+    - $ref:PYTHONLANG
     - chapters/SECTION-FAQ.md:
         - chapters/faq.md
         - chapters/faq-523.md
