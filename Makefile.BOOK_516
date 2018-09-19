@@ -5,6 +5,7 @@ INDEX=\
   chapters/preface/create.md\
   chapters/preface/issues.md\
   chapters/preface/notation.md\
+  c54b6644-bc57-11e8-ac54-784f4351cf0b\
   chapters/SECTION-OVERVIEW.md\
   chapters/assignment.md\
   chapters/class/organization-516.md\
@@ -90,7 +91,7 @@ INDEX=\
   chapters/cloud/chameleon/faq.md\
   chapters/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md  dest/chapters/SECTION-OVERVIEW.md dest/chapters/assignment.md dest/chapters/class/organization-516.md dest/chapters/class/plagiarism.md dest/chapters/cloud/gregor.md dest/chapters/class/e516-engineering-cloud-computing.md dest/chapters/class/policies.md dest/chapters/class/e516-summary.md dest/chapters/class/volumes.md dest/chapters/class/e516-definition.md dest/chapters/cloud/datacenter.md dest/chapters/arch.md dest/chapters/nist/bdra.md dest/chapters/rest/rest.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger.md dest/chapters/SECTION-IAAS.md dest/chapters/iaas/iaas.md dest/chapters/iaas/aws/aws.md dest/chapters/iaas/azure/azure.md dest/chapters/iaas/watson/watson.md dest/chapters/iaas/gcloud/gcloud.md dest/chapters/iaas/libcloud.md dest/chapters/iaas/boto.md dest/chapters/SECTION-SERVERLESS.md dest/chapters/iaas/aws/aws-lambda.md dest/chapters/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/SECTION-PYTHON-LANG.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/prg/go/go-language.md dest/chapters/prg/go/go-intro.md dest/chapters/prg/go/go-links.md dest/chapters/prg/go/go-install.md dest/chapters/prg/go/go-editor.md dest/chapters/prg/go/go-cmd.md dest/chapters/prg/go/go-libraries.md dest/chapters/prg/go/go-rest.md dest/chapters/prg/go/go-cloud.md dest/chapters/prg/julia/julia-language.md dest/chapters/prg/scala/scala.md dest/chapters/MSG.md dest/chapters/msg/mqtt.md dest/chapters/msg/graphql.md dest/chapters/msg/avro.md dest/chapters/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-516.md dest/chapters/SECTION-APPENDIX.md dest/chapters/iaas/aws/products.md dest/chapters/iaas/azure/products.md dest/chapters/SECTION-CHAMELEON.md dest/chapters/cloud/chameleon/resources.md dest/chapters/cloud/chameleon/hardware.md dest/chapters/cloud/chameleon/charge.md dest/chapters/cloud/chameleon/start.md dest/chapters/cloud/chameleon/user-guide.md dest/chapters/cloud/chameleon/cli.md dest/chapters/cloud/chameleon/horizon.md dest/chapters/cloud/chameleon/heat.md dest/chapters/cloud/chameleon/baremetal.md dest/chapters/cloud/chameleon/faq.md dest/chapters/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/c54b6644-bc57-11e8-ac54-784f4351cf0b dest/chapters/SECTION-OVERVIEW.md dest/chapters/assignment.md dest/chapters/class/organization-516.md dest/chapters/class/plagiarism.md dest/chapters/cloud/gregor.md dest/chapters/class/e516-engineering-cloud-computing.md dest/chapters/class/policies.md dest/chapters/class/e516-summary.md dest/chapters/class/volumes.md dest/chapters/class/e516-definition.md dest/chapters/cloud/datacenter.md dest/chapters/arch.md dest/chapters/nist/bdra.md dest/chapters/rest/rest.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger.md dest/chapters/SECTION-IAAS.md dest/chapters/iaas/iaas.md dest/chapters/iaas/aws/aws.md dest/chapters/iaas/azure/azure.md dest/chapters/iaas/watson/watson.md dest/chapters/iaas/gcloud/gcloud.md dest/chapters/iaas/libcloud.md dest/chapters/iaas/boto.md dest/chapters/SECTION-SERVERLESS.md dest/chapters/iaas/aws/aws-lambda.md dest/chapters/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/SECTION-PYTHON-LANG.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/prg/go/go-language.md dest/chapters/prg/go/go-intro.md dest/chapters/prg/go/go-links.md dest/chapters/prg/go/go-install.md dest/chapters/prg/go/go-editor.md dest/chapters/prg/go/go-cmd.md dest/chapters/prg/go/go-libraries.md dest/chapters/prg/go/go-rest.md dest/chapters/prg/go/go-cloud.md dest/chapters/prg/julia/julia-language.md dest/chapters/prg/scala/scala.md dest/chapters/MSG.md dest/chapters/msg/mqtt.md dest/chapters/msg/graphql.md dest/chapters/msg/avro.md dest/chapters/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-516.md dest/chapters/SECTION-APPENDIX.md dest/chapters/iaas/aws/products.md dest/chapters/iaas/azure/products.md dest/chapters/SECTION-CHAMELEON.md dest/chapters/cloud/chameleon/resources.md dest/chapters/cloud/chameleon/hardware.md dest/chapters/cloud/chameleon/charge.md dest/chapters/cloud/chameleon/start.md dest/chapters/cloud/chameleon/user-guide.md dest/chapters/cloud/chameleon/cli.md dest/chapters/cloud/chameleon/horizon.md dest/chapters/cloud/chameleon/heat.md dest/chapters/cloud/chameleon/baremetal.md dest/chapters/cloud/chameleon/faq.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -99,24 +100,28 @@ dest/chapters/SECTION-PREFACE.md: ../chapters/SECTION-PREFACE.md
 	../bin/header.py dest/chapters/SECTION-PREFACE.md 1
 
 dest/chapters/version.md: ../chapters/version.md
-	../bin/markup-single.py ../chapters/version.md 2
-	../bin/header.py dest/chapters/version.md 2
+	../bin/markup-single.py ../chapters/version.md 1
+	../bin/header.py dest/chapters/version.md 1
 
 dest/chapters/authors.md: ../chapters/authors.md
-	../bin/markup-single.py ../chapters/authors.md 2
-	../bin/header.py dest/chapters/authors.md 2
+	../bin/markup-single.py ../chapters/authors.md 1
+	../bin/header.py dest/chapters/authors.md 1
 
 dest/chapters/preface/create.md: ../chapters/preface/create.md
-	../bin/markup-single.py ../chapters/preface/create.md 2
-	../bin/header.py dest/chapters/preface/create.md 2
+	../bin/markup-single.py ../chapters/preface/create.md 1
+	../bin/header.py dest/chapters/preface/create.md 1
 
 dest/chapters/preface/issues.md: ../chapters/preface/issues.md
-	../bin/markup-single.py ../chapters/preface/issues.md 2
-	../bin/header.py dest/chapters/preface/issues.md 2
+	../bin/markup-single.py ../chapters/preface/issues.md 1
+	../bin/header.py dest/chapters/preface/issues.md 1
 
 dest/chapters/preface/notation.md: ../chapters/preface/notation.md
-	../bin/markup-single.py ../chapters/preface/notation.md 2
-	../bin/header.py dest/chapters/preface/notation.md 2
+	../bin/markup-single.py ../chapters/preface/notation.md 1
+	../bin/header.py dest/chapters/preface/notation.md 1
+
+dest/c54b6644-bc57-11e8-ac54-784f4351cf0b: ../c54b6644-bc57-11e8-ac54-784f4351cf0b
+	../bin/markup-single.py ../c54b6644-bc57-11e8-ac54-784f4351cf0b 1
+	../bin/header.py dest/c54b6644-bc57-11e8-ac54-784f4351cf0b 1
 
 dest/chapters/SECTION-OVERVIEW.md: ../chapters/SECTION-OVERVIEW.md
 	../bin/markup-single.py ../chapters/SECTION-OVERVIEW.md 1
@@ -191,172 +196,172 @@ dest/chapters/SECTION-IAAS.md: ../chapters/SECTION-IAAS.md
 	../bin/header.py dest/chapters/SECTION-IAAS.md 1
 
 dest/chapters/iaas/iaas.md: ../chapters/iaas/iaas.md
-	../bin/markup-single.py ../chapters/iaas/iaas.md 2
-	../bin/header.py dest/chapters/iaas/iaas.md 2
+	../bin/markup-single.py ../chapters/iaas/iaas.md 1
+	../bin/header.py dest/chapters/iaas/iaas.md 1
 
 dest/chapters/iaas/aws/aws.md: ../chapters/iaas/aws/aws.md
-	../bin/markup-single.py ../chapters/iaas/aws/aws.md 2
-	../bin/header.py dest/chapters/iaas/aws/aws.md 2
+	../bin/markup-single.py ../chapters/iaas/aws/aws.md 1
+	../bin/header.py dest/chapters/iaas/aws/aws.md 1
 
 dest/chapters/iaas/azure/azure.md: ../chapters/iaas/azure/azure.md
-	../bin/markup-single.py ../chapters/iaas/azure/azure.md 2
-	../bin/header.py dest/chapters/iaas/azure/azure.md 2
+	../bin/markup-single.py ../chapters/iaas/azure/azure.md 1
+	../bin/header.py dest/chapters/iaas/azure/azure.md 1
 
 dest/chapters/iaas/watson/watson.md: ../chapters/iaas/watson/watson.md
-	../bin/markup-single.py ../chapters/iaas/watson/watson.md 2
-	../bin/header.py dest/chapters/iaas/watson/watson.md 2
+	../bin/markup-single.py ../chapters/iaas/watson/watson.md 1
+	../bin/header.py dest/chapters/iaas/watson/watson.md 1
 
 dest/chapters/iaas/gcloud/gcloud.md: ../chapters/iaas/gcloud/gcloud.md
-	../bin/markup-single.py ../chapters/iaas/gcloud/gcloud.md 2
-	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 2
+	../bin/markup-single.py ../chapters/iaas/gcloud/gcloud.md 1
+	../bin/header.py dest/chapters/iaas/gcloud/gcloud.md 1
 
 dest/chapters/iaas/libcloud.md: ../chapters/iaas/libcloud.md
-	../bin/markup-single.py ../chapters/iaas/libcloud.md 2
-	../bin/header.py dest/chapters/iaas/libcloud.md 2
+	../bin/markup-single.py ../chapters/iaas/libcloud.md 1
+	../bin/header.py dest/chapters/iaas/libcloud.md 1
 
 dest/chapters/iaas/boto.md: ../chapters/iaas/boto.md
-	../bin/markup-single.py ../chapters/iaas/boto.md 2
-	../bin/header.py dest/chapters/iaas/boto.md 2
+	../bin/markup-single.py ../chapters/iaas/boto.md 1
+	../bin/header.py dest/chapters/iaas/boto.md 1
 
 dest/chapters/SECTION-SERVERLESS.md: ../chapters/SECTION-SERVERLESS.md
 	../bin/markup-single.py ../chapters/SECTION-SERVERLESS.md 1
 	../bin/header.py dest/chapters/SECTION-SERVERLESS.md 1
 
 dest/chapters/iaas/aws/aws-lambda.md: ../chapters/iaas/aws/aws-lambda.md
-	../bin/markup-single.py ../chapters/iaas/aws/aws-lambda.md 2
-	../bin/header.py dest/chapters/iaas/aws/aws-lambda.md 2
+	../bin/markup-single.py ../chapters/iaas/aws/aws-lambda.md 1
+	../bin/header.py dest/chapters/iaas/aws/aws-lambda.md 1
 
 dest/chapters/SECTION-DEVTOOLS.md: ../chapters/SECTION-DEVTOOLS.md
 	../bin/markup-single.py ../chapters/SECTION-DEVTOOLS.md 1
 	../bin/header.py dest/chapters/SECTION-DEVTOOLS.md 1
 
 dest/chapters/linux/refcards.md: ../chapters/linux/refcards.md
-	../bin/markup-single.py ../chapters/linux/refcards.md 2
-	../bin/header.py dest/chapters/linux/refcards.md 2
+	../bin/markup-single.py ../chapters/linux/refcards.md 1
+	../bin/header.py dest/chapters/linux/refcards.md 1
 
 dest/chapters/cloud/virtualbox.md: ../chapters/cloud/virtualbox.md
-	../bin/markup-single.py ../chapters/cloud/virtualbox.md 2
-	../bin/header.py dest/chapters/cloud/virtualbox.md 2
+	../bin/markup-single.py ../chapters/cloud/virtualbox.md 1
+	../bin/header.py dest/chapters/cloud/virtualbox.md 1
 
 dest/chapters/cloud/vagrant.md: ../chapters/cloud/vagrant.md
-	../bin/markup-single.py ../chapters/cloud/vagrant.md 2
-	../bin/header.py dest/chapters/cloud/vagrant.md 2
+	../bin/markup-single.py ../chapters/cloud/vagrant.md 1
+	../bin/header.py dest/chapters/cloud/vagrant.md 1
 
 dest/chapters/os/ubuntu-usb-osx.md: ../chapters/os/ubuntu-usb-osx.md
-	../bin/markup-single.py ../chapters/os/ubuntu-usb-osx.md 2
-	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
+	../bin/markup-single.py ../chapters/os/ubuntu-usb-osx.md 1
+	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 1
 
 dest/chapters/git/github.md: ../chapters/git/github.md
-	../bin/markup-single.py ../chapters/git/github.md 2
-	../bin/header.py dest/chapters/git/github.md 2
+	../bin/markup-single.py ../chapters/git/github.md 1
+	../bin/header.py dest/chapters/git/github.md 1
 
 dest/chapters/linux/linux.md: ../chapters/linux/linux.md
-	../bin/markup-single.py ../chapters/linux/linux.md 2
-	../bin/header.py dest/chapters/linux/linux.md 2
+	../bin/markup-single.py ../chapters/linux/linux.md 1
+	../bin/header.py dest/chapters/linux/linux.md 1
 
 dest/chapters/linux/ssh.md: ../chapters/linux/ssh.md
-	../bin/markup-single.py ../chapters/linux/ssh.md 2
-	../bin/header.py dest/chapters/linux/ssh.md 2
+	../bin/markup-single.py ../chapters/linux/ssh.md 1
+	../bin/header.py dest/chapters/linux/ssh.md 1
 
 dest/chapters/linux/ssh-futuresystems.md: ../chapters/linux/ssh-futuresystems.md
-	../bin/markup-single.py ../chapters/linux/ssh-futuresystems.md 2
-	../bin/header.py dest/chapters/linux/ssh-futuresystems.md 2
+	../bin/markup-single.py ../chapters/linux/ssh-futuresystems.md 1
+	../bin/header.py dest/chapters/linux/ssh-futuresystems.md 1
 
 dest/chapters/linux/ssh-excerise.md: ../chapters/linux/ssh-excerise.md
-	../bin/markup-single.py ../chapters/linux/ssh-excerise.md 2
-	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
+	../bin/markup-single.py ../chapters/linux/ssh-excerise.md 1
+	../bin/header.py dest/chapters/linux/ssh-excerise.md 1
 
 dest/chapters/prg/SECTION-PYTHON.md: ../chapters/prg/SECTION-PYTHON.md
 	../bin/markup-single.py ../chapters/prg/SECTION-PYTHON.md 1
 	../bin/header.py dest/chapters/prg/SECTION-PYTHON.md 1
 
 dest/chapters/prg/python/python-intro.md: ../chapters/prg/python/python-intro.md
-	../bin/markup-single.py ../chapters/prg/python/python-intro.md 2
-	../bin/header.py dest/chapters/prg/python/python-intro.md 2
+	../bin/markup-single.py ../chapters/prg/python/python-intro.md 1
+	../bin/header.py dest/chapters/prg/python/python-intro.md 1
 
 dest/chapters/prg/python/python-install.md: ../chapters/prg/python/python-install.md
-	../bin/markup-single.py ../chapters/prg/python/python-install.md 2
-	../bin/header.py dest/chapters/prg/python/python-install.md 2
+	../bin/markup-single.py ../chapters/prg/python/python-install.md 1
+	../bin/header.py dest/chapters/prg/python/python-install.md 1
 
 dest/chapters/prg/python/python-interactive.md: ../chapters/prg/python/python-interactive.md
-	../bin/markup-single.py ../chapters/prg/python/python-interactive.md 2
-	../bin/header.py dest/chapters/prg/python/python-interactive.md 2
+	../bin/markup-single.py ../chapters/prg/python/python-interactive.md 1
+	../bin/header.py dest/chapters/prg/python/python-interactive.md 1
 
 dest/chapters/prg/python/python-editor.md: ../chapters/prg/python/python-editor.md
-	../bin/markup-single.py ../chapters/prg/python/python-editor.md 2
-	../bin/header.py dest/chapters/prg/python/python-editor.md 2
+	../bin/markup-single.py ../chapters/prg/python/python-editor.md 1
+	../bin/header.py dest/chapters/prg/python/python-editor.md 1
 
 dest/chapters/prg/SECTION-PYTHON-LANG.md: ../chapters/prg/SECTION-PYTHON-LANG.md
 	../bin/markup-single.py ../chapters/prg/SECTION-PYTHON-LANG.md 1
 	../bin/header.py dest/chapters/prg/SECTION-PYTHON-LANG.md 1
 
 dest/chapters/prg/python/python.md: ../chapters/prg/python/python.md
-	../bin/markup-single.py ../chapters/prg/python/python.md 2
-	../bin/header.py dest/chapters/prg/python/python.md 2
+	../bin/markup-single.py ../chapters/prg/python/python.md 1
+	../bin/header.py dest/chapters/prg/python/python.md 1
 
 dest/chapters/prg/python/python-libraries.md: ../chapters/prg/python/python-libraries.md
-	../bin/markup-single.py ../chapters/prg/python/python-libraries.md 2
-	../bin/header.py dest/chapters/prg/python/python-libraries.md 2
+	../bin/markup-single.py ../chapters/prg/python/python-libraries.md 1
+	../bin/header.py dest/chapters/prg/python/python-libraries.md 1
 
 dest/chapters/prg/python/python-data.md: ../chapters/prg/python/python-data.md
-	../bin/markup-single.py ../chapters/prg/python/python-data.md 2
-	../bin/header.py dest/chapters/prg/python/python-data.md 2
+	../bin/markup-single.py ../chapters/prg/python/python-data.md 1
+	../bin/header.py dest/chapters/prg/python/python-data.md 1
 
 dest/chapters/prg/python/python-matplotlib.md: ../chapters/prg/python/python-matplotlib.md
-	../bin/markup-single.py ../chapters/prg/python/python-matplotlib.md 2
-	../bin/header.py dest/chapters/prg/python/python-matplotlib.md 2
+	../bin/markup-single.py ../chapters/prg/python/python-matplotlib.md 1
+	../bin/header.py dest/chapters/prg/python/python-matplotlib.md 1
 
 dest/chapters/prg/python/python-cmd5.md: ../chapters/prg/python/python-cmd5.md
-	../bin/markup-single.py ../chapters/prg/python/python-cmd5.md 2
-	../bin/header.py dest/chapters/prg/python/python-cmd5.md 2
+	../bin/markup-single.py ../chapters/prg/python/python-cmd5.md 1
+	../bin/header.py dest/chapters/prg/python/python-cmd5.md 1
 
 dest/chapters/prg/python/python-cmd.md: ../chapters/prg/python/python-cmd.md
-	../bin/markup-single.py ../chapters/prg/python/python-cmd.md 2
-	../bin/header.py dest/chapters/prg/python/python-cmd.md 2
+	../bin/markup-single.py ../chapters/prg/python/python-cmd.md 1
+	../bin/header.py dest/chapters/prg/python/python-cmd.md 1
 
 dest/chapters/prg/python/opencv/opencv.md: ../chapters/prg/python/opencv/opencv.md
-	../bin/markup-single.py ../chapters/prg/python/opencv/opencv.md 2
-	../bin/header.py dest/chapters/prg/python/opencv/opencv.md 2
+	../bin/markup-single.py ../chapters/prg/python/opencv/opencv.md 1
+	../bin/header.py dest/chapters/prg/python/opencv/opencv.md 1
 
 dest/chapters/prg/python/opencv/secchi.md: ../chapters/prg/python/opencv/secchi.md
-	../bin/markup-single.py ../chapters/prg/python/opencv/secchi.md 2
-	../bin/header.py dest/chapters/prg/python/opencv/secchi.md 2
+	../bin/markup-single.py ../chapters/prg/python/opencv/secchi.md 1
+	../bin/header.py dest/chapters/prg/python/opencv/secchi.md 1
 
 dest/chapters/prg/go/go-language.md: ../chapters/prg/go/go-language.md
 	../bin/markup-single.py ../chapters/prg/go/go-language.md 1
 	../bin/header.py dest/chapters/prg/go/go-language.md 1
 
 dest/chapters/prg/go/go-intro.md: ../chapters/prg/go/go-intro.md
-	../bin/markup-single.py ../chapters/prg/go/go-intro.md 2
-	../bin/header.py dest/chapters/prg/go/go-intro.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-intro.md 1
+	../bin/header.py dest/chapters/prg/go/go-intro.md 1
 
 dest/chapters/prg/go/go-links.md: ../chapters/prg/go/go-links.md
-	../bin/markup-single.py ../chapters/prg/go/go-links.md 2
-	../bin/header.py dest/chapters/prg/go/go-links.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-links.md 1
+	../bin/header.py dest/chapters/prg/go/go-links.md 1
 
 dest/chapters/prg/go/go-install.md: ../chapters/prg/go/go-install.md
-	../bin/markup-single.py ../chapters/prg/go/go-install.md 2
-	../bin/header.py dest/chapters/prg/go/go-install.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-install.md 1
+	../bin/header.py dest/chapters/prg/go/go-install.md 1
 
 dest/chapters/prg/go/go-editor.md: ../chapters/prg/go/go-editor.md
-	../bin/markup-single.py ../chapters/prg/go/go-editor.md 2
-	../bin/header.py dest/chapters/prg/go/go-editor.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-editor.md 1
+	../bin/header.py dest/chapters/prg/go/go-editor.md 1
 
 dest/chapters/prg/go/go-cmd.md: ../chapters/prg/go/go-cmd.md
-	../bin/markup-single.py ../chapters/prg/go/go-cmd.md 2
-	../bin/header.py dest/chapters/prg/go/go-cmd.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-cmd.md 1
+	../bin/header.py dest/chapters/prg/go/go-cmd.md 1
 
 dest/chapters/prg/go/go-libraries.md: ../chapters/prg/go/go-libraries.md
-	../bin/markup-single.py ../chapters/prg/go/go-libraries.md 2
-	../bin/header.py dest/chapters/prg/go/go-libraries.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-libraries.md 1
+	../bin/header.py dest/chapters/prg/go/go-libraries.md 1
 
 dest/chapters/prg/go/go-rest.md: ../chapters/prg/go/go-rest.md
-	../bin/markup-single.py ../chapters/prg/go/go-rest.md 2
-	../bin/header.py dest/chapters/prg/go/go-rest.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-rest.md 1
+	../bin/header.py dest/chapters/prg/go/go-rest.md 1
 
 dest/chapters/prg/go/go-cloud.md: ../chapters/prg/go/go-cloud.md
-	../bin/markup-single.py ../chapters/prg/go/go-cloud.md 2
-	../bin/header.py dest/chapters/prg/go/go-cloud.md 2
+	../bin/markup-single.py ../chapters/prg/go/go-cloud.md 1
+	../bin/header.py dest/chapters/prg/go/go-cloud.md 1
 
 dest/chapters/prg/julia/julia-language.md: ../chapters/prg/julia/julia-language.md
 	../bin/markup-single.py ../chapters/prg/julia/julia-language.md 1
@@ -371,16 +376,16 @@ dest/chapters/MSG.md: ../chapters/MSG.md
 	../bin/header.py dest/chapters/MSG.md 1
 
 dest/chapters/msg/mqtt.md: ../chapters/msg/mqtt.md
-	../bin/markup-single.py ../chapters/msg/mqtt.md 2
-	../bin/header.py dest/chapters/msg/mqtt.md 2
+	../bin/markup-single.py ../chapters/msg/mqtt.md 1
+	../bin/header.py dest/chapters/msg/mqtt.md 1
 
 dest/chapters/msg/graphql.md: ../chapters/msg/graphql.md
-	../bin/markup-single.py ../chapters/msg/graphql.md 2
-	../bin/header.py dest/chapters/msg/graphql.md 2
+	../bin/markup-single.py ../chapters/msg/graphql.md 1
+	../bin/header.py dest/chapters/msg/graphql.md 1
 
 dest/chapters/msg/avro.md: ../chapters/msg/avro.md
-	../bin/markup-single.py ../chapters/msg/avro.md 2
-	../bin/header.py dest/chapters/msg/avro.md 2
+	../bin/markup-single.py ../chapters/msg/avro.md 1
+	../bin/header.py dest/chapters/msg/avro.md 1
 
 dest/chapters/SECTION-FAQ.md: ../chapters/SECTION-FAQ.md
 	../bin/markup-single.py ../chapters/SECTION-FAQ.md 1
@@ -411,44 +416,44 @@ dest/chapters/SECTION-CHAMELEON.md: ../chapters/SECTION-CHAMELEON.md
 	../bin/header.py dest/chapters/SECTION-CHAMELEON.md 1
 
 dest/chapters/cloud/chameleon/resources.md: ../chapters/cloud/chameleon/resources.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/resources.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/resources.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/resources.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/resources.md 1
 
 dest/chapters/cloud/chameleon/hardware.md: ../chapters/cloud/chameleon/hardware.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/hardware.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/hardware.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/hardware.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/hardware.md 1
 
 dest/chapters/cloud/chameleon/charge.md: ../chapters/cloud/chameleon/charge.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/charge.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/charge.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/charge.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/charge.md 1
 
 dest/chapters/cloud/chameleon/start.md: ../chapters/cloud/chameleon/start.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/start.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/start.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/start.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/start.md 1
 
 dest/chapters/cloud/chameleon/user-guide.md: ../chapters/cloud/chameleon/user-guide.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/user-guide.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/user-guide.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/user-guide.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/user-guide.md 1
 
 dest/chapters/cloud/chameleon/cli.md: ../chapters/cloud/chameleon/cli.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/cli.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/cli.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/cli.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/cli.md 1
 
 dest/chapters/cloud/chameleon/horizon.md: ../chapters/cloud/chameleon/horizon.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/horizon.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/horizon.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/horizon.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/horizon.md 1
 
 dest/chapters/cloud/chameleon/heat.md: ../chapters/cloud/chameleon/heat.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/heat.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/heat.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/heat.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/heat.md 1
 
 dest/chapters/cloud/chameleon/baremetal.md: ../chapters/cloud/chameleon/baremetal.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/baremetal.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/baremetal.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/baremetal.md 1
 
 dest/chapters/cloud/chameleon/faq.md: ../chapters/cloud/chameleon/faq.md
-	../bin/markup-single.py ../chapters/cloud/chameleon/faq.md 2
-	../bin/header.py dest/chapters/cloud/chameleon/faq.md 2
+	../bin/markup-single.py ../chapters/cloud/chameleon/faq.md 1
+	../bin/header.py dest/chapters/cloud/chameleon/faq.md 1
 
 dest/chapters/SECTION-REFERENCES.md: ../chapters/SECTION-REFERENCES.md
 	../bin/markup-single.py ../chapters/SECTION-REFERENCES.md 1
