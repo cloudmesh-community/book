@@ -94,25 +94,24 @@ This example is in javascript - isPalindrome.js
 Step 3: Creating an AWS Lambda function - isPalindrome. Go to AWS
 Console (see +@fig:aws-lambda-console)
 
-:o: add to all steps the see Figure ...
  
   ![AWS Console](images/aws_console.png){#fig:aws-lambda-console}
  
  
-Step 4: Now go to AWS Lambda from console and hit "Get Started Now"
+Step 4: Now go to AWS Lambda from console and hit "Get Started Now" (see +@fig:aws-lambda-lambda)
  
- ![AWS Lambda](images/aws_lambda.png){#fig:aws-lambda-labda}
+ ![AWS Lambda](images/aws_lambda.png){#fig:aws-lambda-lambda}
 
-Step 5: For runtime select Node.js 6.10 and then press “Blank Function.”
+Step 5: For runtime select Node.js 6.10 and then press “Blank Function.” (see +@fig:aws-lambda-blank)
  
 ![Blank Function](images/aws_lambda_1.png){#fig:aws-lambda-blank}
 
-Step 6: Skip this step and press “Next.”
+Step 6: Skip this step and press “Next.” (see +@fig:aws-lambda-next)
 
 ![Next](images/aws_lambda_2.png){#fig:aws-lambda-next}
  
 Step 7: Say Name as `isPalindrome` and put in a description of your new
-Lambda Function, or leave it blank.
+Lambda Function, or leave it blank. (see +@fig:aws-lambda-description)
 
 ![Description](images/aws_lambda_3.png){#fig:aws-lambda-desccription}
 
@@ -123,7 +122,7 @@ will return a response or an error message. For the Blank Lambda
 blueprint response is hard-coded as the string ‘Hello from Lambda’.
 
 Step 8: Scroll down, for Role choose “Create new Role from template”, and for Role name use isPalindromeRole or any name.
-For Policy templates, choose “Simple Microservice” permissions.
+For Policy templates, choose “Simple Microservice” permissions. (see +@fig:aws-lambda-policy)
  
  ![Policy](images/aws_lambda_4.png){#fig:aws-lambda-policy}
 
@@ -131,30 +130,30 @@ Step 9: For Memory, 128 megabytes is more than enough for our simple
 function. As for the 3 second timeout, this means that — should the
 function not return within 3 seconds — AWS will shut it down and
 return an error. Three seconds is also more than enough. Leave the
-rest of the advanced settings unchanged.
+rest of the advanced settings unchanged. (see +@fig:aws-lambda-settings)
 
  ![Advanced Settings](images/aws_lambda_5.png){#fig:aws-lambda-settings}
 
-Step 10: Create function now
+Step 10: Create function now (see +@fig:aws-lambda-create)
 
 ![Create](images/aws_lambda_6.png){#fig:aws-lambda-create}
 
-Step 11: First Lambda function is created. To test it, press “Test”
+Step 11: First Lambda function is created. To test it, press “Test” (see +@fig:aws-lambda-test)
  
  ![Test](images/aws_lambda_7.png){#fig:aws-lambda-test}
 
-Output will be the hard-coded response of “Hello from Lambda.” from the created Lambda function.
+Output will be the hard-coded response of “Hello from Lambda.” from the created Lambda function. (see +@fig:aws-lambda-hello)
  
  ![Hello](images/aws_lambda_8.png){#fig:aws-lambda-hello}
 
 Step 12: Now let’s add our isPalindrome.js function code here to
 Lambda function but instead of return result use callback(null,
 result). Then add a hard-coded string value of abcd on line 3 and
-press “Test.”
+press “Test.” (see +@fig:aws-lambda-press)
 
  ![Press Test](images/aws_lambda_9.png){#fig:aws-lambda-press}
 
-Output returns “abcd is not a Palindrome”
+Output returns “abcd is not a Palindrome” (see +@fig:aws-lambda-output)
 
 ![Output](images/aws_lambda_10.png){#fig:aws-lambda-output}
 
