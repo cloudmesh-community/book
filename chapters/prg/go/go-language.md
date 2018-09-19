@@ -30,10 +30,12 @@ package main
 import "fmt"
 
 func main() {
-   /* This is my first sample program. */
-	fmt.Println("Hello Tomorrow")
+   /* This is a very easy program. */
+	fmt.Println("Hello Tomorrow!")
     }
 ```
+Let us explain in detail about the meaning of different parts of the above program.
+
 * The first line of the program package main defines the package name in which this program should lie. It is a mandatory statement, as Go programs run in packages. The main package is the starting point to run the program. Each package has a path and name associated with it.
 * The next line import "fmt" is a preprocessor command which tells the Go compiler to include the files lying in the package fmt.
 * The next line func main() is the main function where the program execution begins.
@@ -41,7 +43,7 @@ func main() {
 * The next line fmt.Println(...) is another function available in Go which causes the message "Hello, Tomorrow!" to be displayed on the screen. Here fmt package has exported Println method which is used to display the message on the screen.
 * Notice the capital P of Println method. In Go language, a name is exported if it starts with capital letter. Exported means the function or variable/constant is accessible to the importer of the respective package.
 
-## Executing a Go Program 
+### Executing a Go Program 
 
 Let us discuss how to save the source code in a file, compile it, and finally execute the program. Please follow the steps given below −
 
@@ -53,13 +55,51 @@ Let us discuss how to save the source code in a file, compile it, and finally ex
 * If there are no errors in your code, then you will see "Hello Tomorrow!" printed on the screen.
 
  Make sure the Go compiler is in your path and that you are running it in the directory containing the source file hello.go.
- ## Tokens in Go 
+ 
+ ## Basic Syntax
+  After we konw the program structure of Go, now we can learn more about the building blocks of go programming language. 
+ ### Tokens in Go 
  
  A Go program consists of various tokens. A token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following Go statement consists of six tokens −
  ```go
  fmt.Println("Hello, Tomorrow!")
  ```
+ the six individual tokens are as follow-
+ ```go
+ fmt
+.
+Println
+(
+   "Hello, Tomorrow!"
+)
+ ```
  
+ ### Line separator in GO 
+ In a Go program, the line separator key is a statement terminator. compared with C programming language, individual statements in GO don't need a special separator like “;” . The Go compiler internally places “;” as the statement terminator to indicate the end of one logical entity.
+
+For example, let us look at the following statements −
+```go
+fmt.Println("Hello, Tomorrow!")
+fmt.Println("we have a better future!")
+fmt.println("I am learning GO programming language!")
+```
+we can see that there is no special separator among individual statements in GO.
+ 
+ ### identifiers 
+ A Go identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore _ followed by zero or more letters, underscores, and digits (0 to 9).
+
+identifier = letter { letter | unicode_digit }.
+
+Go does not allow punctuation characters such as _@, $, #, % and &_ within identifiers. Go is a case-sensitive programming language. Thus, Mahesh and mahesh are two different identifiers in Go. Here are some examples of acceptable identifiers −
+```go
+mahesh      kumar   abc   move_name   a_123
+myname50   _temp    j      a23b9      retVal
+``` 
+### comments 
+comments are helpful texts but are ingored by compilers, they start with /* and end with */ as follow:
+```go
+/* A new learner in GO */
+```
  
  
  
