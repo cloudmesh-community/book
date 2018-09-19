@@ -7,7 +7,6 @@
         - chapters/preface/create.md
         - chapters/preface/issues.md
         - chapters/preface/notation.md
-        # - chapters/faq.md
 
 - DEVTOOLS:
     - chapters/SECTION-DEVTOOLS.md:
@@ -143,7 +142,7 @@
 # -  chapters/rest/swagger-bravado.md
 
 - BOOK_516:
-    - $ref:PREFACE:
+    - $ref:PREFACE
     - chapters/SECTION-OVERVIEW.md:
         - chapters/assignment.md
         - chapters/class/organization-516.md
