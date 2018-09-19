@@ -24,4 +24,5 @@ script:
   - make
   - cd ~/build/cloudmesh-community/book/cloud
   - pandoc --version
+  - make images    
   - make

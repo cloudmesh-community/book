@@ -52,11 +52,13 @@ if __name__ == '__main__':
 
     print("# Original images are from\n")
     for image in md.images:
-        print("* ", image)
+        print("# ", image)
 
 
     for image in md.images:
-        print(image)
+        print("wget", image)
         destination = "images/" + os.path.basename(image)
-        print(destination)
+        destination = destination.replace("?raw=true", "")
+        img = os.path.basename(image)
+        print ("mv", img, destination)
 
