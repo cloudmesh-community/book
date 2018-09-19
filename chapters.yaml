@@ -48,8 +48,6 @@
         - chapters/prg/go/go-rest.md
         - chapters/prg/go/go-cloud.md
 
-
-
 - DATA:
     - chapters/SECTION-DATA.md:
         - chapters/data/formats.md
@@ -161,7 +159,7 @@
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
     - $ref:IAAS
-    _ $ref:SERVERLESS
+    - $ref:SERVERLESS
     - $ref:DEVTOOLS
     - $ref:PYTHON
     - $ref:GO
