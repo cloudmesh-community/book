@@ -1,4 +1,4 @@
-# Data Formats
+# Data Formats :new:
 
 ## YAML
 
@@ -68,8 +68,7 @@ Resources:
 * <https://en.wikipedia.org/wiki/JSON>
 * <https://www.json.org/>
 
-XML
----
+## XML
 
 XML stands for *Extensible Markup Language*. XML allows to define
 documents with the help of a set of rules in order to make it machine

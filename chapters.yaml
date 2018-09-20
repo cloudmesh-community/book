@@ -26,33 +26,28 @@
         - chapters/prg/python/python-install.md
         - chapters/prg/python/python-interactive.md
         - chapters/prg/python/python-editor.md
-
-- PYTHONLANG:
-    - chapters/prg/SECTION-PYTHON-LANG.md:
         - chapters/prg/python/python.md
-        - chapters/prg/python/python-libraries.md
-        - chapters/prg/python/python-data.md
-        - chapters/prg/python/python-matplotlib.md
-        - chapters/prg/python/python-cmd5.md
-        - chapters/prg/python/python-cmd.md
-        - chapters/prg/python/opencv/opencv.md
-        - chapters/prg/python/opencv/secchi.md
-
+        - chapters/prg/python/python-libraries.md:
+            - chapters/prg/python/python-data.md
+            - chapters/prg/python/python-matplotlib.md
+            - chapters/prg/python/python-cmd5.md
+            - chapters/prg/python/python-cmd.md
+            - chapters/prg/python/opencv/opencv.md
+            - chapters/prg/python/opencv/secchi.md
+            - chapters/SECTION-DATA.md:
+                - chapters/data/formats.md
+                - chapters/data/mongoengine.md
+        
 - GO:
-    - chapters/prg/go/go-language.md:
-        - chapters/prg/go/go-intro.md
-        - chapters/prg/go/go-links.md
+    - chapters/prg/go/go-intro.md:
         - chapters/prg/go/go-install.md
         - chapters/prg/go/go-editor.md
+        - chapters/prg/go/go-language.md
         - chapters/prg/go/go-cmd.md
         - chapters/prg/go/go-libraries.md
         - chapters/prg/go/go-rest.md
         - chapters/prg/go/go-cloud.md
-
-- DATA:
-    - chapters/SECTION-DATA.md:
-        - chapters/data/formats.md
-        - chapters/data/mongoengine.md
+        - chapters/prg/go/go-links.md
 
 - DRAFTS:
     - chapters/msg/amazon-kenesis-data-streams.md
@@ -164,7 +159,6 @@
     - $ref:SERVERLESS
     - $ref:DEVTOOLS
     - $ref:PYTHON
-    - $ref:PYTHONLANG
     - $ref:GO
     - chapters/prg/julia/julia-language.md
     - chapters/prg/scala/scala.md
@@ -201,7 +195,6 @@
     - chapters/bigdata/algorithms/plotviz.md
     - $ref:DEVTOOLS
     - $ref:PYTHON
-    - $ref:PYTHONLANG
     - chapters/SECTION-FAQ.md:
         - chapters/faq.md
         - chapters/faq-523.md

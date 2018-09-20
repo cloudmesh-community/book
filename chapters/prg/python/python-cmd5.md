@@ -1,7 +1,6 @@
-Cloudmesh Command Shell
------------------------
+# Cloudmesh Command Shell
 
-### CMD5
+## CMD5
 
 Python's CMD (<https://docs.python.org/2/library/cmd.html>) is a very
 useful package to create command line shells. However it does not allow
@@ -11,20 +10,20 @@ simplify developing commands by a number of people and to have a dynamic
 plugin mechanism, we developed cmd5. It is a rewrite on our earlier
 efforts in cloudmesh client and cmd3.
 
-#### Resources
+### Resources
 
 The source code for cmd5 is located in github:
 
 -   <https://github.com/cloudmesh/cmd5>
 
-#### Creating a Python Development Environment
+### Creating a Python Development Environment
 
 We recommend that you use a virtualenv either with virtualenv or pyenv.
 This is in detail documented in the
 Section [\[S:managing-multiple-python-versions-with-pyenv\]](#S:managing-multiple-python-versions-with-pyenv){reference-type="ref"
 reference="S:managing-multiple-python-versions-with-pyenv"}.
 
-#### Installation from source
+### Installation from source
 
 Cmd5 can be easily deployed with pip:
 
@@ -67,7 +66,7 @@ The common directory contains some useful libraries, the cmd5 repository
 >contains the shell, while the sys directory contains a command to
 generate extensions to cloudmesh.
 
-#### Execution
+### Execution
 
 To run the shell you can activate it with the cms command. cms stands
 for cloudmesh shell:
@@ -98,7 +97,7 @@ To see the manual page for a specific command, please use:
 
     help COMMANDNAME
 
-#### Create your own Extension
+### Create your own Extension
 
 One of the most important features of CMD5 is its ability to extend it
 with new commands. This is done via packaged name spaces. We recommend
@@ -175,7 +174,7 @@ to introduce a separate help method as would normally be needed in CMD
 while reducing the effort it takes to contribute new commands in a
 dynamic fashion.
 
-#### Exercises
+### Exercises
 
 E.CMD5.1
 

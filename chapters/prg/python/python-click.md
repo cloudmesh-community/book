@@ -1,5 +1,4 @@
-Python Click
-------------
+# Python Click
 
 Click allows developers to create composable command line interfaces. It
 aims to simplify the the process of writing command line tools.
@@ -52,12 +51,12 @@ To obtain the man page you can say:
             --name TEXT      The person to greet.
             --help           Show this message and exit.
 
-### Install
+## Install
 
     pip install click
     pip install click-shell
 
-### Click Shell
+## Click Shell
 
 click-shell is an extension allowing to run click commands in a shell
 
@@ -73,7 +72,7 @@ click-shell is an extension allowing to run click commands in a shell
 
     ...
 
-### Links
+## Links
 
 -   <http://click.pocoo.org>
 -   <https://github.com/clarkperkins/click-shell>
