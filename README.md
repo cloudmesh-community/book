@@ -24,13 +24,17 @@ You simply copy that directory to your own directory. let us assume we call it `
 
 You will have to edit now the file called Makefile and chamge the value `BOOK_516` to `BOOK_MYBOOK`. Let us assume you use emacs
 
-	$ emacs mybook/Makefile
+```bash
+$ emacs mybook/Makefile
+```
 
 Now you have to edit the file `chapters.yml` in the book directory and add chapters you like to include in your ePub. 
 See some of the examples we provided for other ebooks. It is now important that you use the same name we used before, e.g. `BOOK_MYBOOK`. Thus create in the yaml file a list of chapters for it. 
 
-	$ emacs chapters.yml
-	$ yamllint chapters.yaml
+```bash
+$ emacs chapters.yml
+$ yamllint chapters.yaml
+```
 
 To avoid any yaml errors, just use `yamllint` to check your file and correct all errors and warnings.
 
@@ -49,13 +53,16 @@ Now the framework is all set up and you can add your new chapters in `./chapters
 
 To create the book simply do the following
 
-	$ cd mybook
-	$ make
-	
+```bash
+$ cd mybook
+$ make
+```
+
 To view it say 
 
-	$ make view
-
+```bash
+$ make view
+```
 
 ## Installation Instructions
 

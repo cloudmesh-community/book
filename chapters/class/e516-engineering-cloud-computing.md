@@ -120,7 +120,9 @@ The course has the following objectives:
 | :white_check_mark: 09/10    | 4       | Architectures     | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
 | :new: 09/13                 |         |                   | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
 | :white_check_mark: 09/15    |         |                   | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-| :white_check_mark: 09/15    | 5       | Infrastructure    | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
+| :o: 09/24                   | 5       | Virtualization    | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[:cloud:][virtualization.md] |
+| :o: 09/24                   | 5       | Virtualization I  | - [Qemu](#s-virtualization)[:cloud:][qemu.md] |
+| :white_check_mark: 09/15    | 6       | Infrastructure    | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
 | :white_check_mark: 09/17    |         |                   | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
 | :white_check_mark: 09/17    |         |                   | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
 | :o: 09/17                   |         |                   | - OpenStack Introduction |
@@ -135,7 +137,7 @@ The course has the following objectives:
 | :white_check_mark: 09/17    |         |                   | - [Heat](#openstack-heat)[:cloud:][heat.md] |
 | :white_check_mark: 09/17    |         |                   | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
 | :white_check_mark: 09/17    |         |                   | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
-| :o: 09/24                   | 7.b     | Virtualization    | Qemu, KVM, Virtual machines |
+| :o: 09/24                   | 7       | Virtualization  II | Qemu, KVM, Virtual machines |
 | :o: 10/01                   |         |                   | Containers, Docker, Kubernetes |
 | :white_check_mark: 10/08    | 8       | Programming       | Python for Cloud Computing, |
 | :white_check_mark: 10/08    |         |                   | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
@@ -227,6 +229,9 @@ Legend markings
 [go-language.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md
 [opencv.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/opencv/opencv.md
 [secchi.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/opencv/secchi.md
+[virtualization.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualization.md
+[qemu.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/qemu.md
+
 
 Students need only to do one project. The project is conducted thought
 the entire semester.
