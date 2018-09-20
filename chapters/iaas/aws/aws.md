@@ -1,4 +1,4 @@
-# Amazon Web Services :o:
+# Amazon Web Services
 
 ## AWS Products
 
