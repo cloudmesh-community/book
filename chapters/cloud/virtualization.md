@@ -178,22 +178,11 @@ We will be discussing them next.
 
 #### Libvirt
 
-[Libvirt](<https://libvirt.org/api.html>) is an library with an API for managing virtualization solutions such as provided by  KVM and Xen. It provides a common management API for them, allowing uniform, cross-hypervisor interfaces for higher-level management tools. Furthermoe, it  provides APIs for management of virtual networks and storage on the VM Host Server. The configuration of each VM Guest is stored in an XML file [@libvirt]. 
+[Libvirt](<https://libvirt.org/api.html>) is an library with an API for managing virtualization solutions such as provided by  KVM and Xen. It provides a common management API for them, allowing uniform, cross-hypervisor interfaces for higher-level management tools. Furthermoe, it  provides APIs for management of virtual networks and storage on the VM Host Server. The configuration of each VM Guest is stored in an XML file [@libvirt]. The official website for `libvirt` is located at 
 
-#### Libvirt (G)
-
-
-`libvirt` is a library that provides a common API for managing popular
-virtualization solutions, among them KVM and Xen. The library provides a
-normalized management API for these virtualization solutions, allowing a
-stable, cross-hypervisor interface for higher-level management tools.
-The library also provides APIs for management of virtual networks and
-storage on the VM Host Server. The configuration of each VM Guest is
-stored in an XML file. The official website for `libvirt` is located at 
-<https://libvirt.org/>
+* <https://libvirt.org/>
 
 
-SEE ALSO [Virtual Machine Management with KVM and QEMU]{@s-qemu-kvm}
 
 #### QEMU :new:
 
@@ -212,6 +201,8 @@ Useful links include the following:
 * QEMU can be downloaded from <http://www.qemu.org/download/>.
 
 * A collection of images for testing purposes is provided at <https://wiki.qemu.org/Testing/System_Images>
+
+An example for using QEMU is provided in Section [Virtual Machine Management with QEMU]{@s-qemu-kvm}
 
 
 #### KVM (B)
