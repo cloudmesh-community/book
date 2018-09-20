@@ -1,12 +1,19 @@
-# Go CMD :o: {#s-go-cmd}
+# Go CMD :new: {#s-go-cmd}
 
 ## CMD
 
-TBD
+In pthon we have the CMD5 package that allows us to create command
+shells with plugins. In Go we find a community developed package called
+`gosh` (or Go shell). It uses the Go plugin system to
+create  interactive console-based shell programs.
+A shell created with `gosh` contains a collection of Go plugins, each
+of which which implement one
+or more commands. Upon start `gosh` starts, searches the directory
+`./plugins` and loads them so they become available within `gosh`.
 
 * <https://github.com/vladimirvivien/gosh>
 
-## DocOpts :white_check_mark:
+## DocOpts
 
 When we want to design commandline arguments for go programs we have
 many options. However, as our approach is to create documentation
