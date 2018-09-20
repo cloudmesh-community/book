@@ -13,6 +13,7 @@ install:
   - stack setup
   - stack install
   - npm install --global mermaid-filter
+  - pip install pandoc-fignos
 
 env:
   - PATH=$PATH:~/.local/bin
