@@ -59,6 +59,11 @@
         - chapters/msg/graphql.md
         - chapters/msg/avro.md
 
+- HYPERVISOR:
+    - chapters/SECTION-HYPERVISOR.md:
+        - chapters/cloud/virtualization.md:
+            - chapters/cloud/qemu.md        
+
 - IAAS:
     - chapters/SECTION-IAAS.md:
         - chapters/iaas/iaas.md
@@ -156,6 +161,7 @@
         - chapters/rest/swagger-codegen.md
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
+    - $ref:HYPERVISOR
     - $ref:IAAS
     - $ref:SERVERLESS
     - $ref:DEVTOOLS

@@ -1,11 +1,10 @@
-# Virtual Machine Management QEMU {#s-qemu-kvm}
+# Virtual Machine Management with QEMU {#s-qemu-kvm}
 
 In this section we provide a short example on how to use QUEMU.
 We will be starting with the instalation, then create a virtual hard disk, install ubuntu on the disk and start the virtual machine. Next we will demonstrate how we can emulate a Raspery Pi with QEMU. 
 Lastly, we sho how to use virsh.
 
-Install QEMU
-------------
+## Install QEMU
 
 ### To install QEMU on Ubuntu/Linux Mint:
 
@@ -19,8 +18,7 @@ On OSX QEMU can be installed with Homebrew
 
     brew install qemu
 
-Create a Virtual Hard Disk with QEMU
-------------------------------------
+## Create a Virtual Hard Disk with QEMU
 
 To create an image file with the size of 10GB and `qcow2` format
 (default format for QEMU images), run:
@@ -34,8 +32,7 @@ will not use any space unless needed by the virtual operating system, but
 it will set the maximum allowed space for that image to 10 Gigabytes
 only.
 
-Install Ubuntu on the Virtual Hard Disk
----------------------------------------
+## Install Ubuntu on the Virtual Hard Disk
 
 Now that we have created our image file, if we have an ISO file for a
 Linux distribution or any other operating system and we want to test it
@@ -156,18 +153,13 @@ Resources
 
 General
 
--   Official website for `libvirt` is here: https://libvirt.org/
-
--   Home page of KVM is here: https://www.linux-kvm.org/page/Main_Page
-
--   QEMU home page: https://www.qemu.org/
-
--   QEMU User Documentation: https://qemu.weilnetz.de/doc/qemu-doc.html
-
--   Wikipedia page for QEMU: https://en.wikipedia.org/wiki/QEMU
+* Official website for `libvirt` is here: <https://libvirt.org/>
+* Home page of KVM is here: <https://www.linux-kvm.org/page/Main_Page>
+* QEMU home page: <https://www.qemu.org/>
+* QEMU User Documentation: <https://qemu.weilnetz.de/doc/qemu-doc.html>
+* Wikipedia page for QEMU: <https://en.wikipedia.org/wiki/QEMU>
 
 Comparison
 
--   <http://opensourceforu.com/2012/05/virtualisation-faceoff-qemu-virtualbox-vmware-player-parallels-workstation/>
-
--   <https://stackoverflow.com/questions/43704856/what-is-the-difference-qemu-vs-virtualbox>
+* <http://opensourceforu.com/2012/05/virtualisation-faceoff-qemu-virtualbox-vmware-player-parallels-workstation/>
+* <https://stackoverflow.com/questions/43704856/what-is-the-difference-qemu-vs-virtualbox>
