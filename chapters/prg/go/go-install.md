@@ -89,7 +89,7 @@ control panel. Some versions of Windows provide this control panel
 through the "Advanced System Settings" option inside the "System"
 control panel.
 
-# Test your installation
+## Test your installation
 
 Check that Go is installed correctly by setting up a workspace and
 building a simple program, as follows.
@@ -132,7 +132,7 @@ working.
 You can run go install to install the binary into your workspace's bin
 directory or go clean -i to remove it.
 
-# Uninstallation
+## Uninstallation
 
 To remove an existing Go installation from your system delete the go
 directory. This is usually /usr/local/go under Linux, macOS, and
