@@ -1,12 +1,12 @@
-## Parallel Computing in Python {#s-python-parallel}
+# Parallel Computing in Python {#s-python-parallel}
 
 In this module we will review the available Python modules that can be used for parallel computing. The parallel computing can be in form of either multi-threading or multi-processing. In multi-threading approach, the threads run in the same shared memory heap whereas in case of multi-processing, the memory heaps of processes are separate and independent, therefore the communication between the processes are a little bit more complex. 
 
-### Multi-threading in Python 
+## Multi-threading in Python 
 
 Threading in Python is perfect for I/O operations where the process is expected to be idle regularly, e.g. web scraping. This is a very useful feature because several applications and script might spend the majority of their runtime on waiting for network or data I/O. In several cases, e.g. web scraping, the resources, i.e. downloading from different websites, are most of the time independent. Therefore the processor can download in parallel and join the result at the end. 
 
-#### `Thread` vs `Threading`
+### `Thread` vs `Threading`
 
 There are two built-in modules in Python that are related to threading, namely `thread` and `threading`. The former module is deprecated for sometime in `Python 2`, and in `Python 3` it is renamed to `_thread` for the sake of backwards incompatibilities. The `_thread` module provides low-level threading API for multi-threading in Python, whereas the module `threading` builds a high-level threading interface on top of it. 
 
@@ -37,7 +37,7 @@ Hello from Thread  4
 
 In case you are not familiar with the `if __name__ == '__main__:'` statement, what it does is basically making sure that the code nested under this condition will be run only if you run your module as a program and it will not run in case your module is imported in another file.
 
-#### Locks
+### Locks
 
 As mentioned prior, the memory space is shared between the threads. This is at the same time beneficial and problematic: it is beneficial in a sense that the communication between the threads becomes easy, however, you might experience strange outcome if you let several threads change same variable without caution, e.g. thread 2 changes variable `x` while thread 1 is working with it. This is when `lock` comes into play. Using `lock`, you can allow only one thread to work with a variable. In other words, only a single thread can hold the `lock`. If the other threads need to work with that variable, they have to wait until the other thread is done and the variable is "unlocked".
 
@@ -170,11 +170,11 @@ Counter is 12
 
 Using the `Threading` module increases both the overhead associated with thread management as well as the complexity of the program and that is why in many situations, employing `multiprocessing` module might be a better approach. 
 
-### Multi-processing in Python
+## Multi-processing in Python
 
 We already mentioned that multi-threading might not be sufficient in many applications and we might need to use `multiprocessing` sometime, or better to say most of the times. That is why we are dedicating this subsection to this particular module. This module provides you with an API for spawning processes the way you spawn threads using `threading` module. Moreover, there are some functionalities that are not even available in `threading` module, e.g. the `Pool` class which allows you to run a batch of jobs using a *pool* of worker processes. 
 
-#### Process
+### Process
 
 Similar to `threading` module which was employing `thread` (aka `_thread`) under the hood, `multiprocessing` employs the `Process` class. Consider the following example: 
 
@@ -206,11 +206,11 @@ Process 23452: Hello George!
 Process 23453: Hello Dirk!
 Process 23454: Hello David!
 ```
-#### Pool
+### Pool
 
 Consider the `Pool` class as a pool of worker processes. There are several ways for assigning jobs to the `Pool` class and we will introduce the most important ones in this section. These methods are categorized as `blocking` or `non-blocking`. The former means that after calling the API, it blocks the thread/process until it has the result or answer ready and the control returns only when the call completes. In the `non-blockin` on the other hand, the control returns immediately. 
 
-##### Synchronous `Pool.map()`
+#### Synchronous `Pool.map()`
 
 We illustrate the `Pool.map` method by re-implementing our previous greeter example using `Pool.map`:
 
@@ -244,7 +244,7 @@ Done!
 ```
 Note that `Pool.map()` is in `blocking` category and does not return the control to your script until it is done calculating the results. That is why `Done!` is printed after all of the greetings are over.
 
-##### Asynchronous `Pool.map_async()`
+#### Asynchronous `Pool.map_async()`
 
 As the name implies, you can use the `map_async` method, when you want assign many function calls to a pool of worker processes asynchronously. Note that unlike `map`, the order of the results is not guaranteed (as oppose to `map`) and the control is returned immediately. We now implement the previous example using `map_async`: 
 
@@ -277,11 +277,11 @@ Process 30742: Hello Justin!
 ```
 Note that the order of the results are not preserved. Moreover, `Done!` is printer before any of the results, meaning that if we do not use the `wait()` method, you probably will not see the result at all. 
 
-#### Locks
+### Locks
 
 The way `multiprocessing` module implements locks is almost identical to the way the `threading` module does. After importing `Lock` from `multiprocessing` all you need to do is to `acquire` it, do some computation and then `release` the lock. We will clarify the use of `Lock` by providing an example in next section about process communication. 
 
-#### Process Communication
+### Process Communication
 
 Process communication in `multiprocessing` is one of the most important, yet complicated, features for better use of this module. As oppose to `threading`, the `Process` objects will not have access to any shared variable by default, i.e. no shared memory space between the processes by default. This effect is illustrated in the following example: 
 
@@ -328,7 +328,7 @@ As you can see, it is as if the processes does not see each other. Instead of ha
 
 Nevertheless, there are several ways that `Process`es from `multiprocessing` can communicate with each other, including `Pipe`, `Queue`, `Value`, `Array` and `Manager`. `Pipe` and `Queue` are appropriate for inter-process message passing. To be more specific, `Pipe` is useful for process-to-process scenarios while `Queue` is more appropriate for process**es**-toprocess**es** ones. `Value` and `Array` are both used to provide a synchronized access to a shared data (very much like shared memory) and `Managers` can be used on different data types. In the following sub-sections, we cover both `Value` and `Array` since they are both lightweight, yet useful, approaches. 
 
-##### Value 
+#### Value 
 
 The following example re-implements the broken example in the previous section. We fix the strange output, by using both `Lock` and `Value`: 
 

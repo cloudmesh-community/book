@@ -1,5 +1,4 @@
-Data Management {#s-python-data}
----------------
+# Data Management {#s-python-data}
 
 Obviously when dealing with big data we may not only be dealing with
 data in one format but in many different formats. It is important that
@@ -7,9 +6,9 @@ you will be able to master such formats and seamlessly integrate in your
 analysis. Thus we provide some simple examples on which different data
 formats exist and how to use them.
 
-### Formats
+## Formats
 
-#### Pickle
+### Pickle
 
 Python pickle allows you to save data in a python native format into a
 file that can later be read in by other programs. However, the data
@@ -35,7 +34,7 @@ To read it back in use
 flavor = pickle.load( open( "data.p", "rb" ) )
 ```
 
-#### Text Files
+### Text Files
 
 To read text files into a variable called content you can use
 
@@ -72,7 +71,7 @@ with open('filename.txt','r') as file:
     print (line)
 ```
 
-#### CSV Files
+### CSV Files
 
 Often data is contained in comma separated values (CSV) within a file.
 To read such files you can use the csv package.
@@ -98,7 +97,7 @@ also use the `split` function. However, remember it swill split at every
 comma, including those contained in quotes. SO this method although
 looking originally convenient has limitations.
 
-#### Excel spread sheets
+### Excel spread sheets
 
 Pandas contains a method to read Excel files
 
@@ -109,7 +108,7 @@ data = pd.ExcelFile(file)
 df = data.parse('Sheet1')
 ```
 
-#### YAML
+### YAML
 
 YAML is a very important format as it allows you easily to structure
 data in hierarchical fields It is frequently used to coordinate programs
@@ -133,7 +132,7 @@ with open('data.yml', 'w') as f:
 The flow style set to false formats the data in a nice readable fashion
 with indentations.
 
-#### JSON
+### JSON
 
 ```python
 import json
@@ -141,11 +140,11 @@ with open('strings.json') as f:
     content = json.load(f)
 ```
 
-#### XML :o:
+### XML :o:
 
 Please contribute a XML python section
 
-#### RDF
+### RDF
 
 To read RDF files you will need to install RDFlib with
 
@@ -178,7 +177,7 @@ for s,p,o in g:
     print s,p,o
 ```
 
-#### PDF
+### PDF
 
 The Portable Document Format (PDF) has been made available by Adobe
 Inc. royalty free. This has enabled PDF to become a world wide adopted
@@ -204,7 +203,7 @@ pdf-parser.py
 
 If you know about other tools, let us know.
 
-#### HTML
+### HTML
 
 A very powerful library to parse HTML Web pages is provided
 with <https://www.crummy.com/software/BeautifulSoup/>
@@ -214,15 +213,15 @@ More details about it are provided in the documentation page
 
 \TODO{Students: beautiful soup contribute tutorial}
 
-#### ConfigParser
+### ConfigParser
 
 * <https://pymotw.com/2/ConfigParser/>
 
-#### ConfigDict
+### ConfigDict
 
 * <https://github.com/cloudmesh/cloudmesh.common/blob/master/cloudmesh/common/ConfigDict.py>
 
-### Encryption
+## Encryption
 
 Often we need to protect the information stored in a file. This is
 achieved with encryption. There are many methods of supporting
@@ -272,19 +271,19 @@ In our class we initialize it with the locations of the file that is to
 be encrypted and decrypted. To initiate that action just call the
 methods `encrypt` and `decrypt`.
 
-### Database Access
+## Database Access
 
 :o: Students: define conventional database access tutorial
 see: <https://www.tutorialspoint.com/python/python_database_access.htm>
 
-### SQLite
+## SQLite
 
 \TODO{Students: defineSQLite database access tutorial}
 <https://www.sqlite.org/index.html>
 
 <https://docs.python.org/3/library/sqlite3.html>
 
-#### Exercises :o:
+### Exercises :o:
 
 E:Encryption.1:
 

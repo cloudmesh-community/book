@@ -1,4 +1,4 @@
-## Introduction to Python {#s-python-intro}
+# Introduction to Python {#s-python-intro}
 
 ---
 

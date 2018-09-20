@@ -1,6 +1,7 @@
 install:
   - sudo apt-get update
   - sudo apt-get install graphviz
+  - sudo apt-get install python-pip
   - wget https://hackage.haskell.org/package/pandoc-2.2.3.2/pandoc-2.2.3.2.tar.gz
   - git clone https://github.com/jgm/pandoc-citeproc.git
   - wget -qO- https://get.haskellstack.org/ | sh
@@ -13,6 +14,7 @@ install:
   - stack setup
   - stack install
   - npm install --global mermaid-filter
+  - pip install pandoc-fignos
 
 env:
   - PATH=$PATH:~/.local/bin
