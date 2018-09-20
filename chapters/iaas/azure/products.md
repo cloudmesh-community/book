@@ -35,10 +35,9 @@ section while curating the service descriotions.
 Source: <https://support.microsoft.com/en-us/allproducts>
 
 [AI + Machine
-Learning](https://azure.microsoft.com/en-us/overview/ai-platform/ "AI + Machine Learning")
+Learning](https://azure.microsoft.com/en-us/overview/ai-platform/ "AI + Machine Learning")- Create applications using artificial
+intelligence capabilities
 
- - Create applications using artificial
-   intelligence capabilities
 -
     [Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/ "Cognitive Services") - Add smart API capabilities
     to enable contextual
@@ -87,10 +86,10 @@ Learning](https://azure.microsoft.com/en-us/overview/ai-platform/ "AI + Machine 
 
 Source: <https://support.microsoft.com/en-us/allproducts>
 
-[Analytics](https://azure.microsoft.com/en-us/product-categories/analytics/ "Analytics")
- -  Gather, store, process, analyze, and
-visualize data of any variety, volume, or
-velocity
+[Analytics](https://azure.microsoft.com/en-us/product-categories/analytics/
+"Analytics") - Gather, store, process, analyze, and visualize data of
+any variety, volume, or velocity
+
 -
     [SQL Data Warehouse](https://azure.microsoft.com/en-us/services/databricks/
     "Azure Databricks") - Elastic data warehouse as a service with
@@ -131,6 +130,7 @@ Source: <https://support.microsoft.com/en-us/allproducts>
 Core IaaS 
 [Compute](https://azure.microsoft.com/en-us/product-categories/compute/ "Compute")
 access to cloud resources.
+
 -
     [Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/ "Virtual Machines") - Provision Windows and Linux
     virtual machines in
@@ -174,7 +174,8 @@ Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Containers](https://azure.microsoft.com/en-us/overview/containers/ "Containers")
  - Develop and manage your containerized applications faster with
-integrated tools
+ integrated tools
+
 - [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/
   "Azure Kubernetes Service (AKS) - Simplify the deployment,
   management, and operations of Kubernetes")
@@ -203,10 +204,9 @@ integrated tools
 Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Databases](https://azure.microsoft.com/en-us/product-categories/databases/
-"Databases")
-
- - Support rapid growth and innovate faster with secure,
+"Databases") - Support rapid growth and innovate faster with secure,
  enterprise-grade, and fully managed database services
+ 
 -
     [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/ "Azure Cosmos DB") - Globally distributed,
     multi-model database for any
@@ -256,6 +256,7 @@ Source: <https://support.microsoft.com/en-us/allproducts>
 -  Build, manage, and continuously
 deliver cloud applications---using any platform or
 language
+
 -
     [Visual Studio](https://azure.microsoft.com/en-us/products/visual-studio/
     "Visual Studio") - The powerful and flexible environment for
@@ -341,10 +342,9 @@ continuous delivery
 Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Identity](https://azure.microsoft.com/en-us/product-categories/identity/
-"Identity")
-
- - Manage user identities and access to protect against advanced
+"Identity") - Manage user identities and access to protect against advanced
 threats across devices, data, apps, and infrastructure
+
 -
     [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/
     "Azure Active Directory") - Synchronize on-premises directories
@@ -369,11 +369,10 @@ threats across devices, data, apps, and infrastructure
 Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Integration](https://azure.microsoft.com/en-us/product-categories/integration/
-"Integration")
-
- -  Seamlessly integrate on-premises and
+"Integration") -  Seamlessly integrate on-premises and
 cloud-based applications, data, and processes across your
 enterprise
+
 - [Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/
   "Logic Apps") - Automate the access and use of data across clouds
   without writing code
@@ -395,11 +394,10 @@ enterprise
 Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Internet of Things](https://azure.microsoft.com/en-us/overview/iot/
-"Internet of Things")
-
- -  Bring IoT to any device and any
+"Internet of Things") -  Bring IoT to any device and any
 platform, without changing your
 infrastructure
+
 -   [IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/
     "IoT Hub") - Connect, monitor and manage billions
     of IoT
@@ -441,9 +439,9 @@ infrastructure
 Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Management Tools](https://azure.microsoft.com/en-us/product-categories/management-tools/
-"Management Tools")
+"Management Tools") -  Simplify, automate, and optimize the management
+of your Azure services
 
--  Simplify, automate, and optimize the management of your Azure services
 -
     [Microsoft Azure portal](https://azure.microsoft.com/en-us/features/azure-portal/ "Microsoft Azure portal") - Build, manage, and
     monitor all Azure products in a single, unified
@@ -534,9 +532,9 @@ to deliver Azure services anywhere in your environment.
 
 Source: <https://support.microsoft.com/en-us/allproducts>
 
--
-  [Migration](https://azure.microsoft.com/en](https://azure.microsoft.com/en-us/services/azure-migrate/)
+[Migration](https://azure.microsoft.com/en](https://azure.microsoft.com/en-us/services/azure-migrate/)
   - Simplify and accelerate your migration to the cloud
+
 - [Site Recovery](https://azure.microsoft.com/en-us/services/site-recovery/
     "Site Recovery") - Orchestrate protection and recovery of private
     clouds
@@ -636,8 +634,9 @@ your customers and users the best possible experience
 
 Source: <https://support.microsoft.com/en-us/allproducts>
 
- Protect your enterprise from advanced threats across hybrid cloud
+Protect your enterprise from advanced threats across hybrid cloud
 workloads
+ 
 -
     [Security Center](https://azure.microsoft.com/en-us/services/security-center/) -
     Unify security management and enable advanced threat protection
@@ -676,10 +675,9 @@ workloads
 Source: <https://support.microsoft.com/en-us/allproducts>
 
 [Storage](https://azure.microsoft.com/en-us/product-categories/storage/
-    "Storage")
- -  Get secure, massively scalable cloud
-storage for your data, apps, and
-workloads
+    "Storage") - Get secure, massively scalable cloud storage for your
+    data, apps, and workloads
+
 -   [Storage](https://azure.microsoft.com/en-us/services/storage/
     "Storage") - Durable, highly available, and
     massively scalable cloud

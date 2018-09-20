@@ -103,7 +103,8 @@ endif
 
 epubdraft: prepare
 ifeq ($(OS), osx)
-	cd dest; iconv -t utf-8 $(DRAFT) > all.md
+#	cd dest; iconv -t utf-8 $(DRAFT) > all.md
+	cd dest; cat $(DRAFT) > all.md
 endif
 ifeq ($(OS), linux)
 	cd dest; cat $(DRAFT) > all.md
