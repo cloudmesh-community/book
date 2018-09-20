@@ -118,23 +118,24 @@ provided in <https://github.com/gophercloud/gophercloud/blob/master/doc.go>
 
 #### Resources :o:
 
-From <https://github.com/gophercloud/gophercloud/blob/master/doc.go>
-we quote (we will need to rewrite this section as this is excessive quoting):
+Code examples are provided from  <https://github.com/gophercloud/gophercloud/blob/master/doc.go>
 
-"
+As Openstck is providing REST interfaces, gopher cloud leverages thsi
+model. Hence, it provids interfaces to manage REST resources. These
+resources are bound to structs so they can easily be manipulated and
+interfaced with. To for example get the plient with a specific
+`{serverId}` and extract its information we can use the following API
+call:
 
-Resource structs are the domain models that services make use of in order
-to work with and represent the state of API resources:
 
 ```
-  server, err := servers.Get(client, "{serverId}").Extract()
-  ```
+server, err := servers.Get(client, "{serverId}").Extract()
+```
   
-Intermediate Result structs are returned for API operations, which allow
-generic access to the HTTP headers, response body, and any errors associated
-with the network transaction. To turn a result into a usable resource struct,
-you must call the Extract method which is chained to the response, or an
-Extract function from an applicable extension:
+If we need just a subset of the information, we can get an
+intermediate result with just the get method. Than we can obtain
+specific informatiion from the result as needed.
+
 
 ```
 result := servers.Get(client, "{serverId}")
@@ -142,12 +143,13 @@ result := servers.Get(client, "{serverId}")
   // extension:
   config, err := diskconfig.ExtractGet(result)
 ```
-  
-All requests that enumerate a collection return a Pager struct that is used to
-iterate through the results one page at a time. Use the EachPage method on that
-Pager to handle each successive Page in a closure, then use the appropriate
-extraction method from that request's package to interpret that Page as a slice
-of results:
+
+The previous example is based on a single resource. However, if we
+interacts with a list of resources we need to use the `Pager` struct
+so we can itterate over eaxh page. A convenient example is provided
+next. Here we list all servers while itterating over all pages
+returned to us. While calling each page we can invoke special
+operations that are applied to each page.
 
 ```
 err := servers.List(client, nil).EachPage(func (page pagination.Page) (bool, error) {
@@ -161,17 +163,14 @@ err := servers.List(client, nil).EachPage(func (page pagination.Page) (bool, err
 })
 ```
 
-If you want to obtain the entire collection of pages without doing any
-intermediary processing on each page, you can use the AllPages method:
+However, if we just want to provide a list of all servers, we can
+simpley use the `AllPages()` method as follows:
 
 ```
 allPages, err := servers.List(client, nil).AllPages()
 allServers, err := servers.ExtractServers(allPages)
 ```
     
-This top-level package contains utility functions and data types that are used
-throughout the provider and service packages. Of particular note for end users
-are the AuthOptions and EndpointOpts structs.
+Additional methods and resources can be found at
 
-"
-
+* <https://github.com/gophercloud/gophercloud/blob/master/doc.go>
