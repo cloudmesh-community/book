@@ -1,5 +1,17 @@
 # Go REST :o: {#s-go-rest}
 
+
+LINKS FROM GERGOR, THAT WERE NOT MOVED FORM INITIAL DRAFT:
+
+List here the rest services frameworks
+
+* <https://nordicapis.com/7-frameworks-to-build-a-rest-api-in-go/>
+* with mongo <https://hackernoon.com/build-restful-api-in-go-and-mongodb-5e7f2ec4be94>
+* <https://tutorialedge.net/golang/consuming-restful-api-with-go/>
+
+
+
+
 :warning: TODO: we have many pages on rest ... we shoudl not replicate
 but refer. YOu need to get at leas an overview what we already have
 ... so you do not replicate 
@@ -33,6 +45,10 @@ characteristics/benefits to organizations:
 
 
 ## Gorilla
+
+* <https://www.codementor.io/codehakase/building-a-restful-api-with-golang-a6yivzqdo>
+
+
 
 Gorilla is a web toolkit for the Go programming language. Currently
 these packages are available:
