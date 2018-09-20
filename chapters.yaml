@@ -60,9 +60,8 @@
         - chapters/msg/avro.md
 
 - HYPERVISOR:
-    - chapters/SECTION-HYPERVISOR.md:
-        - chapters/cloud/virtualization.md:
-            - chapters/cloud/qemu.md        
+    - chapters/cloud/virtualization.md:
+        - chapters/cloud/qemu.md        
 
 - IAAS:
     - chapters/SECTION-IAAS.md:
