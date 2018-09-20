@@ -12,8 +12,10 @@ for github. If your editor does not support this feature use emacs.
 
 Other editors may include
 
+- [GoLand](https://www.jetbrains.com/go) which however in contrast to
+  PyCharm is not free. However as student and faculty one can get a
+  free license via <https://www.jetbrains.com/student/>
 - [Atom](https://atom.io/packages/go-plus),
-- [GoLand](https://www.jetbrains.com/go),
 - [vim](https://github.com/fatih/vim-go)
 
 If any of the editors support Go and have proper line limit support

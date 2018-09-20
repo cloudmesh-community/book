@@ -2,6 +2,7 @@
 """Vagrant Manager.
 Usage:
   manifest-parser.py info
+  manifest-parser.py info no BOOK
   manifest-parser.py list
   manifest-parser.py generate BOOK
   manifest-parser.py dep BOOK
@@ -11,8 +12,20 @@ Options:
   -h --help     Show this screen.
 
 Description:
-   infor  -- gives general information of the lists
-   
+   info
+        gives general information of the lists
+
+   info no BOOK
+        prints all entries that are not in the book but in the chapter dir
+
+   dep BOOK
+        generates the entries for the makefile
+
+   tree BOOK
+        list the booktree for debugging purposes
+
+
+
 """
 
 import oyaml as yaml
@@ -21,6 +34,9 @@ from treelib import Node, Tree
 from time import time
 from docopt import docopt
 import sys
+from pathlib import Path
+import glob
+import os
 
 def load_manifest(file):
     mfest = None
@@ -161,6 +177,9 @@ class Manifest(object):
                 if realtag.startswith("$ref:"):
                     chapkey = realtag.split("$ref:")[1]
                     newtree = Tree(tree=self.treechap[chapkey], deep=True)
+                    # move up its children to replace totally the root
+                    subtree = newtree.subtree(newtree.children(newtree.root)[0].tag)
+                    newtree = subtree
                     for anode in tree.children(node):
                         origtag = anode.tag
                         if "|" in origtag:
@@ -183,12 +202,36 @@ class Manifest(object):
             tree.show(key=lambda x: x.data)
             print("-" * 80)
             for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
-                level = minimum_one(tree.level(node) - 1)
-
+                #level = minimum_one(tree.level(node) - 1)
+                level = tree.level(node)
                 if node not in variables:
-                    print(node, level)
+                    print(level * "  ", node, level)
                 else:
                     print("#", node, level)
+
+    def info_no(self, book):
+
+        #
+        # find tree entries
+        #
+        entries = []
+        variables = self.chaps.keys()
+        for title, tree in self.treebook.items():
+            if title == book:
+                for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
+                    level = tree.level(node)
+                    if node not in variables:
+                        entries.append(node)
+
+
+        dir_entries = list(glob.iglob(os.path.join("../chapters", '**', '*.md')))
+        for entry in range(0,len(dir_entries)):
+            dir_entries[entry] = dir_entries[entry].replace("../", "")
+
+        for entry in dir_entries:
+            if entry not in entries:
+                pprint(entry)
+
 
     def list(self):
         for title, tree in self.treebook.items():
@@ -203,7 +246,8 @@ class Manifest(object):
                 # print ("-" * 80)
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
                     if node not in variables:
-                        level = minimum_one(tree.level(node) - 1)
+                        #level = minimum_one(tree.level(node) - 1)
+                        level = tree.level(node)
                         print(node, level)
 
     def generate_dependencies(self, book):
@@ -235,7 +279,7 @@ class Manifest(object):
             if title == book:
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
                     if node not in variables and node != book:
-                        level = minimum_one(tree.level(node) - 1)
+                        level = tree.level(node)
                         print_rule(node, level)
                         print()
 
@@ -246,7 +290,11 @@ class Manifest(object):
 
 
 def process_arguments(arguments):
-    if arguments["info"]:
+    if arguments["info"] and arguments["no"]:
+        book = arguments["BOOK"]
+        m = Manifest()
+        m.info_no(book)
+    elif arguments["info"]:
         m = Manifest()
         m.info()
     elif arguments["list"]:
