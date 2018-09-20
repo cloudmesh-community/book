@@ -180,12 +180,6 @@ We will be discussing them next.
 
 #### Libvirt (G)
 
-#### KVM (B)
-
-#### Xen (?)
-
-#### Hyper-V (?)
-
 #### QEMU :new:
 
 QEMU provides two generic functions.  One of them is open source machine emulator and the other is a virtualizer.
@@ -204,6 +198,18 @@ Useful links include the following:
 
 * A collection of images for testing purposes is provided at <https://wiki.qemu.org/Testing/System_Images>
 
+
+#### KVM (B)
+
+#### KVM vs QEMU :new:
+
+KVM includes a fork of the Qemu executable. The QEMU project focuses on hardware emulation and portability. KVM focus on the kernel module and interfacing with the rest of the userspace code.
+KVM comes with a `kvm-qemu` executable tht just like QEMU manages the resourecs while allocating RAM, loading the code. However instead of recompiling the code it spawns a thread which calls the KVM kernel module to switch to guest mode. 
+It than proceeds to execute the VM code. When privileged instructions are found, it switches back to the KVM kernel module, and if necessary, signals the Qemu thread to handle most of the hardware emulation. This means that the guest code is emulated in a posix thread which can be managed with common Linux tools [@kvmvsqemu]. 
+
+#### Xen (?)
+
+#### Hyper-V (?)
 
 
 #### VMWare (?)
