@@ -180,17 +180,19 @@ We will be discussing them next.
 
 #### Libvirt (G)
 
-#### KVM (F)
+#### KVM (B)
 
-#### Xen (F)
+#### Xen (?)
 
-#### Hyper-V (F)
+#### Hyper-V (?)
 
 #### QEMU (G)
 
-#### VMWare (G)
+#### VMWare (?)
+
 
 #### VirtualBox (G)
+
 
 ### Selected Storage Virtualization Software and Tools
 
