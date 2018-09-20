@@ -95,7 +95,7 @@ The course has the following objectives:
 .<div class="smalltable">
 
 | Dates  | Unit | Title  | Description |
-|:------ |:--- |:------- |:---------------------|
+| :------ | :--- | :------- | :--------------------- |
 | :white_check_mark: 08/24    | 1       | Introduction      | [Gregor von Laszewski](#research-interests)[:cloud:][gregor.md] |
 | :white_check_mark: 08/24    |         |                   | [Class summary](E516 Summary)[:cloud:][e516-summary.md] |
 | :white_check_mark: 08/24    |         |                   | [Definition of Cloud Computing](#definition-of-cloud-computing)[:cloud:][e516-definition.md] |
