@@ -41,16 +41,18 @@ GopherCloud is located at
 #### Authentication
 
 To interact with OpenStack, yo will need to first authenticate with
-your OpenSatck cloud. YOu will need to know your username and
+your OpenSatck cloud. You will need to know your username and
 password. However the example that we provide here is on intention
 wrong to showcase you a better way. The example includes a hard coded
 username and password, that actually is supposed to be either read in
 via an interactive process or from a `~/.cloudmesh/cloudmesh.yaml`
 file as we have used in our python cloudmesh code. We will use the
-same format and obtain the information from that file. YOur task will
+same format and obtain the information from that file. Your task will
 be to write a yaml file reader in go, get the information and modify
 the program accordingly while improving this section with a pull
 request.
+
+The example copied form goher cloud looks as follows:
 
 ```
 import (
@@ -66,8 +68,8 @@ opts := gophercloud.AuthOptions{
 }
 ```
 
-An alternative approach is to obtain the values from environment
-variables
+Natirally you can also obtain the values from environment
+variables as pointed out by gopher cloud:
 
 ```
 import (
@@ -94,8 +96,8 @@ client, err := openstack.NewComputeV2(provider, gophercloud.EndpointOpts{
 
 #### Virtual machines
 
-Now that we know we can communicate through the client with the cloud,
-we can create our first virtual machine, where flavor_id and image_id
+Now that we know we can authenticate to the cloud,
+we can create our first virtual machine, where `flavor_id` and `image_id`
 are the approriate flavors and image ids:
 
 
@@ -110,8 +112,8 @@ server, err := servers.Create(client, servers.CreateOpts{
 ```
 
 Additional information can be found in the source code of GoherClient
-which you can easily inspect. Soem useful documentation is also
-provided in
+which you can easily inspect. Some useful documentation is also
+provided in <https://github.com/gophercloud/gophercloud/blob/master/doc.go>
 
 
 #### Resources :o:
