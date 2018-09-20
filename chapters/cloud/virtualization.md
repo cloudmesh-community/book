@@ -155,11 +155,11 @@ The hardware virtualization support enabled by AMD-V and Intel VT technologies i
 
 The term IOMMU is an abbreviation for input–output memory management unit. An IOMMU allows through virtual adresses to interface with physical adresses, allowing external  direct-memory-access–capable IO devices to interface with the main memory [@iommu-1]. AMD's I/O Virtualization Technology (AMD-Vi) was originally called *IOMMU*.
 
-To use Intel's *Virtualization Technology for Directed I/O* (VT-d), both the motherboard chipset and system firmware (BIOS or UEFI) need to fully support the IOMMU I/O virtualization functionality for it to be usable.[@iommu-2]
+To use Intel's *Virtualization Technology for Directed I/O* (VT-d), both the motherboard chipset and system firmware (BIOS or UEFI) need to fully support the IOMMU I/O virtualization functionality for it to be usable [@iommu-2].
 
 
 
-### Selected Virtualization Software and Tools
+### Selected VM Virtualization Software and Tools
 
 A number of noteworthy virtualization software and tools exist which make the development and use of virtualization on the hardware possible. They include
 
@@ -174,7 +174,24 @@ A number of noteworthy virtualization software and tools exist which make the de
 We will be discussing them next.
 
 
-## Libvirt
+#### Libvirt
 
 [Libvirt](<https://libvirt.org/api.html>) is an library with an API for managing virtualization solutions such as provided by  KVM and Xen. It provides a common management API for them, allowing uniform, cross-hypervisor interfaces for higher-level management tools. Furthermoe, it  provides APIs for management of virtual networks and storage on the VM Host Server. The configuration of each VM Guest is stored in an XML file [@libvirt]. 
 
+#### Libvirt (G)
+
+#### KVM (F)
+
+#### Xen (F)
+
+#### Hyper-V (F)
+
+#### QEMU (G)
+
+#### VMWare (G)
+
+#### VirtualBox (G)
+
+### Selected Storage Virtualization Software and Tools
+
+TBD
