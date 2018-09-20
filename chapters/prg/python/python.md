@@ -1,4 +1,6 @@
-## Statements and Strings {#s-python-language}
+# Language {#s-python-language}
+
+## Statements and Strings 
 
 
 TODO: some of the python examples assume REPL, but its better to use a
@@ -72,22 +74,22 @@ You can combine booleans with **boolean operators**:
 
 ``` python
 print(True and True)
-# True
+## True
 
 print(True and False)
-# False
+## False
 
 print(False and False)
-# False
+## False
 
 print(True or True)
-# True
+## True
 
 print(True or False)
-# True
+## True
 
 print(False or False)
-# False
+## False
 ```
 
 ### Numbers
@@ -97,7 +99,7 @@ instance, say we wanted to compute a multiple of 21:
 
 ``` python
 print(21 * 2)
-# 42
+## 42
 ```
 
 We saw here the print statement again. We passed in the result of the
@@ -122,10 +124,10 @@ You can combine **float**s and **int**s:
 
 ``` python
 print(3.14 * 42 / 11 + 4 - 2)
-# 13.9890909091
+## 13.9890909091
 
 print(2**3)
-# 8
+## 8
 ```
 
 Note that **operator precedence** is important. Using parenthesis to
@@ -134,13 +136,13 @@ expected:
 
 ``` python
 print(3.14 * (42 / 11) + 4 - 2)
-# 11.42
+## 11.42
 
 print(1 + 2 * 3 - 4 / 5.0)
-# 6.2
+## 6.2
 
 print( (1 + 2) * (3 - 4) / 5.0 )
-# -0.6
+## -0.6
 ```
 
 ## Module Management
@@ -241,26 +243,26 @@ must be a string or character stream, not list.
 
 ``` python
 parse(fall_start)
-# datetime.datetime(2017, 8, 21, 0, 0)
+## datetime.datetime(2017, 8, 21, 0, 0)
 ```
 
 Use parse() on every element of the Class_dates string.
 
 ``` python
 [parse(x) for x in class_dates] 
-# [datetime.datetime(2017, 8, 25, 0, 0),
-#   datetime.datetime(2017, 9, 1, 0, 0),
-#   datetime.datetime(2017, 9, 8, 0, 0),
-#   datetime.datetime(2017, 9, 15, 0, 0),
-#   datetime.datetime(2017, 9, 22, 0, 0),
-#   datetime.datetime(2017, 9, 29, 0, 0)]
+## [datetime.datetime(2017, 8, 25, 0, 0),
+##   datetime.datetime(2017, 9, 1, 0, 0),
+##   datetime.datetime(2017, 9, 8, 0, 0),
+##   datetime.datetime(2017, 9, 15, 0, 0),
+##   datetime.datetime(2017, 9, 22, 0, 0),
+##   datetime.datetime(2017, 9, 29, 0, 0)]
 ```
 
 Use parse, but designate that the day is first.
 
 ``` python
 parse (fall_start, dayfirst=True)
-# datetime.datetime(2017, 8, 21, 0, 0)
+## datetime.datetime(2017, 8, 21, 0, 0)
 ```
 
 Create a dataframe.A DataFrame is a tabular data structure comprised of
@@ -282,13 +284,13 @@ df = pd.DataFrame(
   data,
   columns = ['dates','complete'])
 print(df)
-#                  dates  complete
-#  0  8/25/2017 18:47:05.069722 1
-#  1   9/1/2017 18:47:05.119994 0
-#  2   9/8/2017 18:47:05.178768 1
-#  3  9/15/2017 18:47:05.230071 1
-#  4  9/22/2017 18:47:05.230071 0
-#  5  9/29/2017 18:47:05.280592 1
+##                  dates  complete
+##  0  8/25/2017 18:47:05.069722 1
+##  1   9/1/2017 18:47:05.119994 0
+##  2   9/8/2017 18:47:05.178768 1
+##  3  9/15/2017 18:47:05.230071 1
+##  4  9/22/2017 18:47:05.230071 0
+##  5  9/29/2017 18:47:05.280592 1
 ```
 
 Convert `` df[`date`] `` from string to datetime
@@ -296,13 +298,13 @@ Convert `` df[`date`] `` from string to datetime
 ``` python
 import pandas as pd
 pd.to_datetime(df['dates'])
-# 0   2017-08-25 18:47:05.069722
-# 1   2017-09-01 18:47:05.119994
-# 2   2017-09-08 18:47:05.178768
-# 3   2017-09-15 18:47:05.230071
-# 4   2017-09-22 18:47:05.230071
-# 5   2017-09-29 18:47:05.280592
-# Name: dates, dtype: datetime64[ns]
+## 0   2017-08-25 18:47:05.069722
+## 1   2017-09-01 18:47:05.119994
+## 2   2017-09-08 18:47:05.178768
+## 3   2017-09-15 18:47:05.230071
+## 4   2017-09-22 18:47:05.230071
+## 5   2017-09-29 18:47:05.280592
+## Name: dates, dtype: datetime64[ns]
 ```
 
 ## Control Statements
@@ -400,12 +402,12 @@ names = [
   'Liz',
   'John',
   'Abby']
-# access the first element of the list
+## access the first element of the list
 names[0]
-# 'Albert'
-# access the third element of the list
+## 'Albert'
+## access the third element of the list
 names[2] 
-# 'Liz'
+## 'Liz'
 ```
 
 You can also use a negative index if you want to start counting elements
@@ -413,21 +415,21 @@ from the end of the list. Thus, the last element has index *-1*, the
 second before last element has index *-2* and so on:
 
 ``` python
-# access the last element of the list
+## access the last element of the list
 names[-1] 
-# 'Abby'
-# access the second last element of the list
+## 'Abby'
+## access the second last element of the list
 names[-2] 
-# 'John'
+## 'John'
 ```
 
 Python also allows you to take whole slices of the list by specifying a
 beginning and end of the slice separated by a colon
 
 ``` python
-# the middle elements, excluding first and last
+## the middle elements, excluding first and last
 names[1:-1] 
-# ['Jane', 'Liz', 'John']
+## ['Jane', 'Liz', 'John']
 ```
 
 As you can see from the example above, the starting index in the slice
@@ -441,8 +443,8 @@ You can add elements with append':
 ``` python
 names.append('Liz')
 names
-# ['Albert', 'Jane', 'Liz',
-#  'John', 'Abby', 'Liz']
+## ['Albert', 'Jane', 'Liz',
+##  'John', 'Abby', 'Liz']
 ```
 
 As you can see, the elements in a list need not be unique.
@@ -452,14 +454,14 @@ Merge two lists with 'extend':
 ``` python
 names.extend(['Lindsay', 'Connor'])
 names
-# ['Albert', 'Jane', 'Liz', 'John',
-#  'Abby', 'Liz', 'Lindsay', 'Connor']
+## ['Albert', 'Jane', 'Liz', 'John',
+##  'Abby', 'Liz', 'Lindsay', 'Connor']
 ```
 
 Find the index of the first occurrence of an element with 'index':
 
 ``` python 
-names.index('Liz') \# 2
+names.index('Liz') \## 2
 ```
 
 Remove elements by value with 'remove':
@@ -467,18 +469,18 @@ Remove elements by value with 'remove':
 ``` python
 names.remove('Abby')
 names
-# ['Albert', 'Jane', 'Liz', 'John',
-#  'Liz', 'Lindsay', 'Connor']
+## ['Albert', 'Jane', 'Liz', 'John',
+##  'Liz', 'Lindsay', 'Connor']
 ```
 
 Remove elements by index with 'pop':
 
 ``` python
 names.pop(1)
-# 'Jane'
+## 'Jane'
 names
-# ['Albert', 'Liz', 'John',
-#  'Liz', 'Lindsay', 'Connor']
+## ['Albert', 'Liz', 'John',
+##  'Liz', 'Lindsay', 'Connor']
 ```
 
 Notice that pop returns the element being removed, while remove does
@@ -490,13 +492,13 @@ can use insert and 'pop':
 ``` python
 names.insert(0, 'Lincoln')
 names
-# ['Lincoln', 'Albert', 'Liz',
-#  'John', 'Liz', 'Lindsay', 'Connor']
+## ['Lincoln', 'Albert', 'Liz',
+##  'John', 'Liz', 'Lindsay', 'Connor']
 names.pop()
-# 'Connor'
+## 'Connor'
 names
-# ['Lincoln', 'Albert', 'Liz',
-#  'John', 'Liz', 'Lindsay']
+## ['Lincoln', 'Albert', 'Liz',
+##  'John', 'Liz', 'Lindsay']
 ```
 
 The Python documentation contains a [full list of list operations]().
@@ -506,9 +508,9 @@ list of numbers:
 
 ``` python
 range(10)
-# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+## [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 range(2, 10, 2)
-# [2, 4, 6, 8]
+## [2, 4, 6, 8]
 ```
 
 ### Sets
@@ -526,7 +528,7 @@ When we do not want this to be the case, we can use a
 ``` python
 unique_names = set(names)
 unique_names
-# set(['Lincoln', 'John', 'Albert', 'Liz', 'Lindsay'])
+## set(['Lincoln', 'John', 'Albert', 'Liz', 'Lindsay'])
 ```
 
 Keep in mind that the *set* is an unordered collection of objects, thus
@@ -534,9 +536,9 @@ we can not access them by index:
 
 ``` python
 unique_names[0]
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-#   TypeError: 'set' object does not support indexing
+## Traceback (most recent call last):
+##   File "<stdin>", line 1, in <module>
+##   TypeError: 'set' object does not support indexing
 ```
 
 However, we can convert a set to a list easily:
@@ -545,7 +547,7 @@ However, we can convert a set to a list easily:
 unique_names = list(unique_names) 
 unique_names [`Lincoln', `John', `Albert', `Liz', `Lindsay']
 unique_names[0]
-# `Lincoln'
+## `Lincoln'
 ```
 
 Notice that in this case, the order of elements in the new list matches
@@ -585,7 +587,7 @@ import sys, random, timeit
 nums_set = set([random.randint(0, sys.maxint) for _ in range(10**5)])
 nums_list = list(nums_set)
 len(nums_set)
-# 100000
+## 100000
 ```
 
 We will use the [timeit](https://docs.python.org/2/library/timeit.html)
@@ -595,10 +597,10 @@ member in either the list or set:
 ``` python
 timeit.timeit('random.randint(0, sys.maxint) in nums', 
               setup='import random; nums=%s' % str(nums_set), number=100)
-# 0.0004038810729980469
+## 0.0004038810729980469
 timeit.timeit('random.randint(0, sys.maxint) in nums', 
               setup='import random; nums=%s' % str(nums_list), number=100)
-# 0.398054122924804
+## 0.398054122924804
 ```
 
 The exact duration of the operations on your system will be different,
@@ -620,9 +622,9 @@ person = {
   'Class': 'Scientist'
   }
 print("person['Name']: ", person['Name'])
-# person['Name']:  Albert
+## person['Name']:  Albert
 print("person['Age']: ", person['Age'])
-# person['Age']:  100
+## person['Age']:  100
 ```
 
 A convenient for to print by named attributes is
@@ -637,17 +639,17 @@ increases readability of the print statements.
 You can delete elements with the following commands:
 
 ``` python
-del person['Name'] # remove entry with key 'Name'
+del person['Name'] ## remove entry with key 'Name'
 person
-# {'Age': 100, 'Class': 'Scientist'}
-person.clear()     # remove all entries in dict
-# person
-# {}
-del person         # delete entire dictionary
+## {'Age': 100, 'Class': 'Scientist'}
+person.clear()     ## remove all entries in dict
+## person
+## {}
+del person         ## delete entire dictionary
 person
-# Traceback (most recent call last):
-#  File "<stdin>", line 1, in <module>
-#  NameError: name 'person' is not defined
+## Traceback (most recent call last):
+##  File "<stdin>", line 1, in <module>
+##  NameError: name 'person' is not defined
 ```
 
 You can iterate over a dict:
@@ -661,9 +663,9 @@ person = {
 for item in person:
   print(item, person[item])
 
-# Age 100
-# Name Albert
-# Class Scientist
+## Age 100
+## Name Albert
+## Class Scientist
 ```
 
 ### Dictionary Keys and Values
@@ -673,9 +675,9 @@ keys() and values() methods of the dictionary, respectively:
 
 ``` python
 person.keys()
-# ['Age', 'Name', 'Class']
+## ['Age', 'Name', 'Class']
 person.values()
-# [100, 'Albert', 'Scientist']
+## [100, 'Albert', 'Scientist']
 ```
 
 Both methods return lists. Notice, however, that the order in which the
@@ -706,9 +708,9 @@ import random
 die_rolls = [
   random.choice(['heads', 'tails']) for _ in range(10)
 ]
-# die_rolls
-# ['heads', 'tails', 'heads',
-#  'tails', 'heads', 'heads', 
+## die_rolls
+## ['heads', 'tails', 'heads',
+##  'tails', 'heads', 'heads', 
    'tails', 'heads', 'heads', 'heads']
 ```
 
@@ -724,10 +726,10 @@ for outcome in coin_flips:
    assert outcome in counts
    counts[outcome] += 1
 print('Probability of heads: %.2f' % (counts['heads'] / len(coin_flips)))
-# Probability of heads: 0.70
+## Probability of heads: 0.70
 
 print('Probability of tails: %.2f' % (counts['tails'] / sum(counts.values())))
-# Probability of tails: 0.30
+## Probability of tails: 0.30
 ```
 
 In addition to how we use the dictionary counts to count the elements of
@@ -979,7 +981,7 @@ array of names, i.e. `all_names`.
 all_names = ['surname', 'rename', 'nickname', 'acclaims', 'defame']
 filtered_names = list(filter(lambda x: 'name' in x, all_names))
 print(filtered_names)
-# ['surname', 'rename', 'nickname']
+## ['surname', 'rename', 'nickname']
 ```
 
 As you can see, the names are successfully filtered as we expected. 
@@ -993,10 +995,10 @@ the length of the filter object.
 ``` python
 list_a = [1, 2, 3, 4, 5]
 filter_obj = filter(lambda x: x % 2 == 0, list_a) 
-# Convert the filer obj to a list
+## Convert the filer obj to a list
 even_num = list(filter_obj) 
 print(even_num) 
-# Output: [2, 4]
+## Output: [2, 4]
 ```	
 
 In Python, we can have a small usually a single liner anonymous
@@ -1032,7 +1034,7 @@ Lambda equivalent for above function would be:
 multiply = Lambda a, b : a*b
 	
 print(multiply(3, 5))
-# outputs: 15
+## outputs: 15
 ```
 	
 Here a and b are the 2 arguments and a*b is the expression whose value
@@ -1069,14 +1071,14 @@ def multiply(x):
 	return x * 2
     
 map(multiply2, [2, 4, 6, 8])  
-# Output [4, 8, 12, 16]
+## Output [4, 8, 12, 16]
 ```
 
 If we want to write same function using Lambda
 
 ```python
 map(lambda x: x*2, [2, 4, 6, 8])  
-# Output [4, 8, 12, 16]
+## Output [4, 8, 12, 16]
 ``` 
 
 ### dictionary
@@ -1094,10 +1096,10 @@ We can iterate over this dictionary and read the elements of it using
 map and lambda functions in following way:
 
 ```python
-map(lambda x : x['movie'], dict_movies)  # Output: ['avengers', 'superman']
-map(lambda x : x['comic'],  dict_movies)  # Output: ['marvel', 'dc']
+map(lambda x : x['movie'], dict_movies)  ## Output: ['avengers', 'superman']
+map(lambda x : x['comic'],  dict_movies)  ## Output: ['marvel', 'dc']
 map(lambda x : x['movie'] == "avengers", dict_movies)  
-# Output: [True, False]
+## Output: [True, False]
 ```
 	
 In Python3, map function returns an iterator or map object which gets
@@ -1109,9 +1111,9 @@ to list as shown below:
 ```python
 map_output = map(lambda x: x*2, [1, 2, 3, 4])
 print(map_output) 
-# Output: map object: <map object at 0x04D6BAB0>
+## Output: map object: <map object at 0x04D6BAB0>
 list_map_output = list(map_output)
-print(list_map_output) # Output: [2, 4, 6, 8]
+print(list_map_output) ## Output: [2, 4, 6, 8]
 ```	
 
 ## Iterators 
@@ -1304,7 +1306,7 @@ returns the result[people] for 1 million.
 names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
 majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
 
-# prints the memory before we run the function
+## prints the memory before we run the function
 memory = mem_profile.memory_usage_resource()
 print ('Memory (Before): {memory}Mb'.format(memory=memory))
 	
@@ -1323,7 +1325,7 @@ t1 = time.clock()
 people = people_list(10000000)
 t2 = time.clock()		
 
-# prints the memory after we run the function
+## prints the memory after we run the function
 memory = mem_profile.memory_usage_resource()
 print ('Memory (After): {memory}Mb'.format(memory=memory))
 print ('Took {time} seconds'.format(time=t2-t1))
@@ -1342,7 +1344,7 @@ with good amount of time taken.
 names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
 majors = ['Math', 'CompScience', 'Arts', 'Business', 'Economics']
 
-# prints the memory before we run the function
+## prints the memory before we run the function
 memory = mem_profile.memory_usage_resource()
 print ('Memory (Before): {memory}Mb'.format(memory=memory))	
 def people_generator(people):
@@ -1358,7 +1360,7 @@ t1 = time.clock()
 people = people_list(10000000)
 t2 = time.clock()		
 
-# prints the memory after we run the function
+## prints the memory after we run the function
 memory = mem_profile.memory_usage_resource()
 print ('Memory (After): {memory}Mb'.format(memory=memory))print ('Took {time} seconds'.format(time=t2-t1))
 	
@@ -1415,8 +1417,8 @@ Basically, when you use communicate() it means that you want to execute the comm
 The most recommended way to launch a process is to use following function with arguments and this will also have a returncode attribute:
 	
 	subprocess.call(args, *, stdin=None, stdout=None, stderr=None, shell=False)
-	# Run the command described by args. 
-	# Wait for command to complete, then return the returncode attribute.
+	## Run the command described by args. 
+	## Wait for command to complete, then return the returncode attribute.
 	
 The behaviour of the shell argument can sometimes be confusing so I’ll try to clear it a bit here.
 
@@ -1467,7 +1469,7 @@ Example 2:
 	>>> filename = input("What file would you like to display?\n")
 	What file would you like to display?
 	non_existent; rm -rf / #
-	>>> call("cat " + filename, shell=True) # Uh-oh. This will end badly...
+	>>> call("cat " + filename, shell=True) ## Uh-oh. This will end badly...
 	
 	shell=False disables all shell based features, but does not suffer from this vulnerability.
 	
@@ -1476,7 +1478,7 @@ Example 2:
 We can get the program output using check_output and store it in a string which we can later print. Method definition is as follows:
 
 	subprocess.check_output(args, *, stdin=None, stderr=None, shell=False, universal_newlines=False)
-	# Run command with arguments and return its output as a byte string.
+	## Run command with arguments and return its output as a byte string.
 
 Example:
 
@@ -1545,7 +1547,7 @@ On Unix, if args is a string, the string is interpreted as the name or path of t
 	>>> args = shlex.split(command_line)
 	>>> print args
 	['/bin/vikings', '-input', 'eggs.txt', '-output', 'spam spam.txt', '-cmd', "echo '$MONEY'"]
-	>>> p = subprocess.Popen(args) # Success!
+	>>> p = subprocess.Popen(args) ## Success!
 	Note in particular that options (such as -input) and arguments (such as eggs.txt) that are separated by whitespace in the shell go in separate list elements, while arguments that need quoting or backslash escaping when used in the shell (such as filenames containing spaces or the echo command shown above) are single list elements.
 
 On Windows, if args is a sequence then it will be converted to a string. This is because the underlying CreateProcess() operates on strings. Parsing the string after conversion uses the following rules:

@@ -1,5 +1,5 @@
-Plotting with matplotlib
--------------------------------
+# Plotting with matplotlib
+
 
 A brief overview of plotting with matplotlib along with examples is
 provided. First matplotlib must be installed, which can be accomplished

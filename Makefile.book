@@ -31,8 +31,15 @@ endif
 all: prepare epub
 	echo done
 
+new: clean update images all
+	echo done
+
+  
 update: Makefile
 	../bin/manifest-parser.py dep $(BOOK) > ../Makefile.$(BOOK)
+
+tree: Makefile
+	../bin/manifest-parser.py tree $(BOOK) 
 
 include ../Makefile.$(BOOK)
 
