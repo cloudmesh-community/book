@@ -186,7 +186,25 @@ We will be discussing them next.
 
 #### Hyper-V (?)
 
-#### QEMU (G)
+#### QEMU :new:
+
+QEMU provides two generic functions.  One of them is open source machine emulator and the other is a virtualizer.
+
+* *Machine emulation:* using it as a machine emulator it runs the OSes and programs designed for one machine on a different machine of potential different architecture. It uses dynamic translation through which  it achieves very good performance.
+
+* *Virtualizer:* Using is as a virtualizer it executes the guest code directly on the host CPU. This enables QEMU to achieve near native performance. 
+
+QEMU supports either XEN or KVM to enable virtualization. With the help of KVM, QEMU can virtualize x86, server and embedded PowerPC, 64-bit POWER, S390, 32-bit and 64-bit ARM, and MIPS guests according to the [QEMU Wiki](https://wiki.qemu.org/Main_Page).
+
+Useful links include the following:
+
+* An extensive manual is provided at <https://qemu.weilnetz.de/doc/qemu-doc.html>.
+
+* QEMU can be downloaded from <http://www.qemu.org/download/>.
+
+* A collection of images for testing purposes is provided at <https://wiki.qemu.org/Testing/System_Images>
+
+
 
 #### VMWare (?)
 
