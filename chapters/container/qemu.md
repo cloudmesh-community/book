@@ -1,93 +1,8 @@
-Virtual Machine Management with KVM and QEMU
-============================================
+# Virtual Machine Management QEMU {#s-qemu-kvm}
 
-Virtualization Technologies
----------------------------
-
-### Overview of Machine Virtualization
-
-There are various technologies handling machine virtualization for
-resource sharing and CPU architecture emulating. In this tutorial,
-`libvirt`, KVM and QEMU are covered. `libvirt` is a system library for
-virtualization, which provides low-level abstraction. KVM is a
-kernel-based virtualization solution, and QEMU is a suite of emulators.
-Cloud providers, such as AWS, Azure, and Google, use these technologies
-for compute instance virtualization. OpenStack and Kubernetes also adopt
-these technologies.
-
-### Libvirt
-
-`libvirt` is a library that provides a common API for managing popular
-virtualization solutions, among them KVM and Xen. The library provides a
-normalized management API for these virtualization solutions, allowing a
-stable, cross-hypervisor interface for higher-level management tools.
-The library also provides APIs for management of virtual networks and
-storage on the VM Host Server. The configuration of each VM Guest is
-stored in an XML file. The official website for `libvirt` is here:
-https://libvirt.org/
-
-### KVM
-
-KVM (for Kernel-based Virtual Machine) is a full virtualization solution
-for Linux on x86 hardware containing virtualization extensions (Intel VT
-or AMD-V). It consists of a loadable kernel module, kvm.ko, that
-provides the core virtualization infrastructure and a processor specific
-module, kvm-intel.ko or kvm-amd.ko. The home page of KVM is here:
-https://www.linux-kvm.org/page/Main_Page
-
-KVM stands for Kernel Virtual Machine, and it is a module of the Linux
-kernel which allows a program to access and make use of the
-virtualization capabilities of modern processors, by exposing the
-`/dev/kvm` interface.
-
-Using KVM, one can run multiple virtual machines running unmodified
-Linux or Windows images. Each virtual machine has private virtualized
-hardware: a network card, disk, graphics adapter, etc.
-
-KVM is open source software. The kernel component of KVM is included in
-mainline Linux, as of 2.6.20.
-
-### QEMU
-
-QEMU is a virtualization technology emulator that allows you to run
-operating systems and Linux distributions easily on your current system
-without the need to install them or burn their ISO files.
-
-When used as a machine emulator, QEMU can run OSes and programs made for
-one machine (e.g. an ARM board) on a different machine (e.g. your own
-PC). By using dynamic translation, it achieves very good performance.
-
-When used as a virtualizer, QEMU achieves near native performance by
-executing the guest code directly on the host CPU. QEMU supports
-virtualization when executing under the Xen hypervisor or using the KVM
-kernel module in Linux. When using KVM, QEMU can virtualize x86, server
-and embedded PowerPC, 64-bit POWER, S390, 32-bit and 64-bit ARM, and
-MIPS guests.
-
-Once QEMU has been installed, it should be ready to run a guest OS from
-a disk image. This image is a file that represents the data on a hard
-disk. From the perspective of the guest OS, it actually is a hard disk,
-and it can create its own filesystem on the virtual disk.
-
-You can download a few guest OS images from the [QEMU
-website](https://wiki.qemu.org/Testing/System_Images). System_Images,
-including a simple 8 MB image of a Linux distro (which is meant
-primarily for testing; note that it lacks the e1000 driver and therefore
-cannot do networking out-of-the-box). To run it, download and unzip the
-image in a folder and run the QEMU command.
-
-### Difference between QEMU and VirtualBox
-
-Both have some features which the other does not have, so this might
-ease the decision. QEMU+KVM is better integrated in Linux, has a smaller
-footprint and should therefore be faster. (Please also note QEMU can run
-without KVM in a plain mode. For example, android development emulators
-run in this mode.)
-
-VirtualBox is a virtualization software limited to x86 and amd64
-architecture. QEMU supports a wide range of hardware and can make use of
-the KVM when running a target architecture which is the same as the host
-architecture.
+In this section we provide a short example on how to use QUEMU.
+We will be starting with the instalation, then create a virtual hard disk, install ubuntu on the disk and start the virtual machine. Next we will demonstrate how we can emulate a Raspery Pi with QEMU. 
+Lastly, we sho how to use virsh.
 
 Install QEMU
 ------------
@@ -215,7 +130,7 @@ https://www.raspberrypi.org/downloads/raspbian/
 
 *Please note QEMU `qemu-system-arm` emulates an ARM architecture.*
 
-Manage VM guests with virsh
+Manage VM guests with virsh :o:
 ---------------------------
 
 `virsh` is a command line interface tool for managing guests and the

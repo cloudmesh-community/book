@@ -144,6 +144,8 @@ performance by intarcting between the OS and the hypervisor. This is done for  c
 
 In this section we cover introduction to underlying virtualization technologies used on some main stream platforms.
 
+Cloud providers, such as AWS, Azure, and Google, and OpenStack use for example QEMU and KVM technologies
+for compute instance virtualization. 
 
 ### Selected Hardware Virtualization Technologies
 
@@ -180,6 +182,19 @@ We will be discussing them next.
 
 #### Libvirt (G)
 
+
+`libvirt` is a library that provides a common API for managing popular
+virtualization solutions, among them KVM and Xen. The library provides a
+normalized management API for these virtualization solutions, allowing a
+stable, cross-hypervisor interface for higher-level management tools.
+The library also provides APIs for management of virtual networks and
+storage on the VM Host Server. The configuration of each VM Guest is
+stored in an XML file. The official website for `libvirt` is located at 
+<https://libvirt.org/>
+
+
+SEE ALSO [Virtual Machine Management with KVM and QEMU]{@s-qemu-kvm}
+
 #### QEMU :new:
 
 QEMU provides two generic functions.  One of them is open source machine emulator and the other is a virtualizer.
@@ -215,9 +230,28 @@ It than proceeds to execute the VM code. When privileged instructions are found,
 #### VMWare (?)
 
 
-#### VirtualBox (G)
+#### VirtualBox :new:
 
+VirtualBox is a free open-source hypervisor for x86 architectures. It is now owned by Oracccle while transitioning from SUN which in turn aquired the original technology from Innotek.
+
+One of the nice features for us is thet VirtualBox is able to create and manageme of guest virtual machines such as  Windows, Linux, BSD, OSx86  and even in part also  macOS (on Apple hardware). Hence it makes it for us a very valuable tool while being able to run virtual machines on a locat desktop or computer to simulkate cloud resources without charging cost. In addition we find command line tols such as vagrant (see Section ?? :o:) that make the use convenient while not having to utilize the GUI or the more complex virtual box comamnd interfaces. A guest additions package allows compatibility with the host OS, to for example allow window management between host and guest OS.
+
+In Section [VirtualBox](@s-virtualbox) we have provided a practical introduction to VirtualBox. 
+
+
+
+#### Comparission of some technologies 
+
+QEMU and KVM are better integrated in Linux and has a smaller footprint. 
+This may result in better performance. VirtualBox is soly targeted as  virtualization software and imited to x86 and amd64.  As Xen uses QEMU it allows hardware virtualization. However, Xen can also  use paravirtualization [@diff-qemu]. In the following table we summarize support for full- and paravirtualization
+
+
+|     | XEN | KVM | VirtualBox | VMWare |
+| --- | ---: | ---: | ---: | ---: |
+| Paravirtualization | yes | no | no | no | 
+|Full virtualization | yes | yes | yes |yes |
 
 ### Selected Storage Virtualization Software and Tools
 
 TBD
+
