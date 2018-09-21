@@ -121,7 +121,7 @@ The course has the following objectives:
 | :new:              | 09/13    |         |                    | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
 | :white_check_mark: | 09/15    |         |                    | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
 | :o:                | 09/24    | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[:cloud:][virtualization.md] |
-| :o:                | 09/24    | 5       | Virtualization I   | - [Qemu](#s-virtualization)[:cloud:][qemu.md] |
+| :new:              | 09/24    | 5       | Virtualization I   | - [Qemu](#s-qemu)[:cloud:][qemu.md] |
 | :white_check_mark: | 09/15    | 6       | Infrastructure     | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
 | :white_check_mark: | 09/17    |         |                    | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
 | :white_check_mark: | 09/17    |         |                    | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
@@ -137,8 +137,7 @@ The course has the following objectives:
 | :white_check_mark: | 09/17    |         |                    | - [Heat](#openstack-heat)[:cloud:][heat.md] |
 | :white_check_mark: | 09/17    |         |                    | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
 | :white_check_mark: | 09/17    |         |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
-| :o:                | 09/24    | 7       | Virtualization  II | Qemu, KVM, Virtual machines |
-| :o:                | 10/01    |         |                    | Containers, Docker, Kubernetes |
+| :o:                | 10/01    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :white_check_mark: | 10/08    | 8       | Programming        | Python for Cloud Computing, |
 | :white_check_mark: | 10/08    |         |                    | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
 | :o:                | 10/08    |         |                    | - Github as a Cloud Service |
