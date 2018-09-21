@@ -350,10 +350,37 @@ which will be covered later in the book.
 More detailed information on Hyper-V can be found at
 <https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-architecture>
 
-#### VMWare (?)
+#### VMWare
 
+VMware is well known for the company bringing hypervisors to the amss
+market. The compnay is now owned by Dell. It has developed the first
+type 2 hypervisor. Today VMWare offer type 1 hypervisors and type 2
+hypervisors [@wikipedia-vmware].
 
-#### VirtualBox :new:
+Because the initial software virtualized "hardware for a video adapter, a network adapter, and hard disk
+adapters" as well as  "pass-through drivers for guest USB,
+serial, and parallel devices" [@wikipedia-vmware] it provided an
+attrctive solution for many to use it to run different OSes on their
+host computers. 
+One important advantage is that it does not rely on virtualization extensions to the x86
+instruction set as it was developed before they became
+availaible. This means it can run on many other platforms. However
+thsi advantage is deminished with the ubiqutous available of these
+features in the hradware.
+
+### Parallels
+
+ANother interesting company offering hypervisors is Parallels. This
+companye has two main products in that regards:
+
+* Parallels Desktop for Mac, which for x86 machines allows users to
+run virtual machines independentluy using Windows, Linux, Solaris.
+
+* Parallels Workstation for Microsoft Windows and Linux users which
+  for x86 machines allows user to run virtual machines independently
+  on the Windows host.
+
+#### VirtualBox
 
 VirtualBox is a free open-source hypervisor for x86 architectures. It
 is now owned by Oracle while transitioning from SUN which in turn
@@ -370,8 +397,26 @@ utilize the GUI or the more complex virtual box command interfaces. A
 guest additions package allows compatibility with the host OS, to for
 example allow window management between host and guest OS.
 
-In Section [VirtualBox](@s-virtualbox) we have provided a practical introduction to VirtualBox. 
+In Section [VirtualBox](#s-virtualbox) we have provided a practical introduction to VirtualBox. 
 
+#### Wine -- Wine is not an emulator
+
+The next software that we introduce is actually not a
+hypervisor. However it is very interesting as a contrast to the other
+approach. The term Wine has been originially introducted as an acronym
+for *Wine Is Not an Emulator*. In contrast to the other approches Wine
+introduces a compatibility layer that allows to run Windows
+applications on a number of POSIX-compliant operating systems. This
+includes Linux, macOS and BSD. In contrast to using a a virtual
+machine or emulator, Wine translates Windows API calls into POSIX
+calls [@wine]. Hence, it allows to pass the Windows API calls directy
+to operating system calls leading to good performance [@wine]. The
+disadvantage of this approach is that in the early days and till today
+some of the underlaying calls may not be ported yet and may lead to
+applications not running. Thos of us that have been in the desir to
+run for example Microsoft Word on Linux or macOS, may remember that
+Wine was the tool we used to do so even before Word was released on
+macOS.
 
 
 #### Comparison of some technologies 
