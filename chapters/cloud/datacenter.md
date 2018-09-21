@@ -651,11 +651,11 @@ AWS GovCloud (US-East)
 
 Azure claims to have more global regions than any other cloud
 provider. They motivate this by their advertisement to bring and
-applications to the users around the world. The goal iss similar as
+applications to the users around the world. The goal is similar as
 other commercial hyprescale providers by introducing preserving data
 residency, and offering comprehensive compliance and resilience. As of
 Aug 29, 2018 Azure supports 54 regions worldwide. These regions can
-currently be accessed by users in 140 countries. NOt every service is
+currently be accessed by users in 140 countries. Not every service is
 offered in every region as the service to region matrix shows:
 
 * <https://azure.microsoft.com/en-us/global-infrastructure/services/>
@@ -690,7 +690,7 @@ locations:
 Each data center is advertised with a special environmental impact
 such as a unique cooling system, or wildlife on premise. Google's data
 centers support its service infrastructure and allow hosting as well
-as other cloud services sto be offered to it's customers.
+as other cloud services to be offered to it's customers.
 
 Google highlights its efficiency strategy and methods here:
 
@@ -710,7 +710,7 @@ They summarize their offers are based on
 **Figure:** [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
 
 An important lesson from Google is the PUE boundary. That is the
-different efficiency based on the closeness sof the IT infrastructure
+different efficiency based on the closeness of the IT infrastructure
 to the actual data center building. This indicates that it is
 important to take at any providers definition of PUE in order not to
 report numbers that are not comparable between other vendors and are
@@ -771,7 +771,7 @@ and other communities as SaaS
 XSEDE is an NSF sponsored large distributed set of clusters,
 supercomputers, data services, and clouds, building a "single virtual
 system that scientists can use to interactively share computing
-resources, data and expertise". The Web page of XSEDE iss located at
+resources, data and expertise". The Web page of XSEDE is located at
 
 * <https://www.xsede.org/>
 
