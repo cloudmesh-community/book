@@ -43,15 +43,7 @@ enterprise resource planning and business transaction procesings.
 
 Mainframe Computing refers to 
 
-> Mainframe is a very large and expensive computer capable of supporting 
-> hundreds, or even thousands, of users simultaneously. In the hierarchy 
-> that starts with a simple microprocessor at the bottom and moves to 
-> supercomputers at the top, mainframes are just below supercomputers. 
-> In some ways, mainframes are more powerful than supercomputers because 
-> they support more simultaneous programs. But supercomputers can execute 
-> a single program faster than a mainframe. The distinction between small 
-> mainframes and minicomputers is vague, depending really on how the 
-> manufacturer wants to market its machines.
+:o: This section can be contributed by a student
 
 ### PC Computing
 
@@ -61,7 +53,7 @@ Windows, MacOSX, or Linux
 
 PC Computing refers to
 
-> an area where consumers predominantly used personal computers to
+> an era where consumers predominantly used personal computers to
 > conduct their work. Such computers were mostly stand alone without
 > network as early networks were not available to consumers.
 
@@ -161,7 +153,7 @@ Mobile Computing refers to
 Internet of Things Computing refers to
 
 > devices that are interconnected via the internet while they are
-> embedded in "things" or common objects. The dives send and receive
+> embedded in *things* or common objects. The dives send and receive
 > data to be integrated into a network with sensors and actuators
 > reacting upon sensory and other data.
 
@@ -185,7 +177,7 @@ Edge Computing refers to
 
 FoG Computing refers to 
 
-> computing conducted in-between the cloud and the edge devices. THis
+> computing conducted in-between the cloud and the edge devices. This
 > could be for example part of a smart network, that hosts a small set
 > of analytics capabilities, so that the data does not have to travel
 > back to the data center, but the edge device is not powerful enough
@@ -205,7 +197,8 @@ services. This allows a separation of concerns typically between
 infrastructure providers, platform developers, and software architects
 using platforms and or infrastructure services.
 
-The typical triangular diagram (see +@fig:iaas-triangle) is often used to represent it.
+The typical triangular diagram (see +@fig:iaas-triangle) is often used
+to represent it.
 
 ![Infrastructure as a Service](images/architecture-iaas.png){#fig:iaas-triangle}
 
