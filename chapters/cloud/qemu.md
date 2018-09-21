@@ -6,24 +6,20 @@ Lastly, we sho how to use virsh.
 
 ## Install QEMU
 
-### To install QEMU on Ubuntu/Linux Mint:
-
 To install QEMU+KVM on Ubuntu/Linux Mint please use
 
-    sudo apt install qemu qemu-kvm libvirt-bin
-
-### To install QEMU on MaxOS:
+    $ sudo apt install qemu qemu-kvm libvirt-bin
 
 On OSX QEMU can be installed with Homebrew
 
-    brew install qemu
+    $ brew install qemu
 
 ## Create a Virtual Hard Disk with QEMU
 
 To create an image file with the size of 10GB and `qcow2` format
 (default format for QEMU images), run:
 
-    qemu-img create -f qcow2 testing-image.img 10G
+    $ qemu-img create -f qcow2 testing-image.img 10G
 
 Note that a new file called `testing-image.img` is now created at your
 home folder (or the place where you run the terminal). Note also that
@@ -101,52 +97,40 @@ Now, if you want to just boot from the image file without the ISO file
 (for example if you have finished installing and now you always want to
 boot the installed system), you can just remove the `-cdrom` option:
 
-    qemu-system-x86_64 -m 1024 -boot d -enable-kvm -smp 3 -net nic -net user -hda testing-image.img
+    $ qemu-system-x86_64 -m 1024 -boot d -enable-kvm -smp 3 -net nic -net user -hda testing-image.img
 
 *Please note QEMU `qemu-system-x86_64` emulates a 64-bit architecture.*
 
 Emulate Raspberry Pi with QEMU
 ------------------------------
 
-### Download a pre-built kernel
+First you have to download a pre-built kernel
 
-    wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.4.34-jessie
+    $ wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.4.34-jessie
 
-### Download the Raspbian image
+Next, you have to download the Raspbian image. Download a `.img` file
+from Raspbian website:
 
-Download a `.img` file from Raspbian website:
-https://www.raspberrypi.org/downloads/raspbian/
+* <https://www.raspberrypi.org/downloads/raspbian/>
 
-### Start the emulator
+To start the emulator type in the following command to have QEMU
+emulate an ARM architecture:
 
-    qemu-system-arm -kernel ./kernel-qemu-4.4.34-jessie -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" -hda raspbian-stretch-lite.img -cpu arm1176 -m 256 -machine versatilepb -no-reboot -serial stdio
 
--   `kernel-qemu-4.4.34-jessie` is the pre-built kernel file.
+```
+$ qemu-system-arm -kernel ./kernel-qemu-4.4.34-jessie \
+    -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" \
+    -hda raspbian-stretch-lite.img \
+    -cpu arm1176 -m 256 -machine versatilepb \
+    -no-reboot -serial stdio
+```
 
--   `raspbian-stretch-lite.img` is the Raspbian image file.
+Pleaee not that
 
-*Please note QEMU `qemu-system-arm` emulates an ARM architecture.*
+* `kernel-qemu-4.4.34-jessie` is the pre-built kernel file.
+* `raspbian-stretch-lite.img` is the Raspbian image file.
 
-Manage VM guests with virsh :o:
----------------------------
 
-`virsh` is a command line interface tool for managing guests and the
-hypervisor.
-
-To initiate a hypervisor session with virsh :
-
-    virsh connect <name>
-
-Where is the machine name of the hypervisor. If you want to initiate a
-read-only connection, append the above command with -readonly.
-
-To display the guest list and their current states with virsh:
-
-    virsh list [ --inactive  |  --all]
-
-The --inactive option lists inactive domains (domains thxsat have been
-defined but are not currently active). The --all domain lists all
-domains, whether active or not.
 
 Resources
 ---------
