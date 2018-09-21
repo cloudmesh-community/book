@@ -233,7 +233,11 @@ We will be discussing them next.
 for managing virtualization solutions such as provided by KVM and
 Xen. It provides a common management API for them, allowing uniform,
 cross-hypervisor interfaces for higher-level management
-tools. Furthermore, it provides APIs for management of virtual networks
+tools. `Libvirt` provides a toolkit to manage virtualization hosts and supports a wide set of languages, such as C, Python, Perl, and Java.
+Drivers are the basic building block for libvirt functionality to support the capability to handle specific hypervisor driver calls. Drivers are discovered and registered during connection processing as part of the `virInitializeAPI`. 
+Each driver has a registration API which loads up the driver specific function references for the libvirt APIs to call. 
+The following is a simplistic view of the hypervisor driver mechanism.
+Furthermore, it provides APIs for management of virtual networks
 and storage on the VM Host Server. The configuration of each VM Guest
 is stored in an XML file [@libvirt]. The official website for
 `libvirt` is located at
@@ -244,6 +248,8 @@ is stored in an XML file [@libvirt]. The official website for
 
 #### QEMU :new:
 
+QEMU is a virtualization technology emulator that allows you to run operating systems and Linux distributions on your current system without installing them or burn their ISO files.
+When used as a machine emulator, QEMU can run OSes and programs made for one machine (e.g. an ARM board) on a different machine (e.g. your own PC). By using dynamic translation, it achieves very good performance.
 QEMU provides two generic functions.  One of them is open source
 machine emulator and the other is a virtualizer.
 
@@ -255,6 +261,8 @@ machine emulator and the other is a virtualizer.
 * *Virtualizer:* Using is as a virtualizer it executes the guest code
   directly on the host CPU. This enables QEMU to achieve near native
   performance.
+
+Once QEMU has been installed, it should be ready to run a guest OS from a disk image. This image is a file that represents the filesystem and OS on a hard disk. From the perspective of the guest OS, it actually is a file on hard disk, and it can create its own filesystem on the virtual disk.
 
 QEMU supports either XEN or KVM to enable virtualization. With the
 help of KVM, QEMU can virtualize x86, server and embedded PowerPC,
