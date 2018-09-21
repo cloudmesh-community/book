@@ -27,7 +27,7 @@ The [original figure]
 (http://www.cmlab.csie.ntu.edu.tw/~jimmychad/CN2011/Readings/CloudComputingNewWine.pdf)
 has been updated by von Laszewski to include the mobile computing and
 the internet of things phase that is bringing rapid changes to how we
-perceive and use the cloud in the neer future.
+perceive and use the cloud in the near future.
 
 ![Evolution of Compute Architectures](images/compute-phase.png){#fig:evolution-computer-arch}
 
@@ -37,9 +37,21 @@ architectures:
 
 ### Mainframe Computing
 
-Mainframe Computing refers to
+Mainframe computing is using the larger and more reliable computers, 
+like IBM System z9, to run the critical applications, bulk data processing, 
+enterprise resource planning and business transaction procesings.
 
-> :o: can be contributed by student
+Mainframe Computing refers to 
+
+> Mainframe is a very large and expensive computer capable of supporting 
+> hundreds, or even thousands, of users simultaneously. In the hierarchy 
+> that starts with a simple microprocessor at the bottom and moves to 
+> supercomputers at the top, mainframes are just below supercomputers. 
+> In some ways, mainframes are more powerful than supercomputers because 
+> they support more simultaneous programs. But supercomputers can execute 
+> a single program faster than a mainframe. The distinction between small 
+> mainframes and minicomputers is vague, depending really on how the 
+> manufacturer wants to market its machines.
 
 ### PC Computing
 
@@ -49,13 +61,13 @@ Windows, MacOSX, or Linux
 
 PC Computing refers to
 
-> an aera where consumers predominantly used personal computers to
+> an area where consumers predominantly used personal computers to
 > conduct their work. Such computers were mostly stand alone without
 > network as early networks were not available to consumers.
 
-### Intranet and ServerComputing
+### Intranet and Server Computing
 
-We refer to Intranet and ServerComputing as an environment in which 
+We refer to Intranet and Server Computing as an environment in which 
 
 > the computers are part of an private network, also called, intranet,
 > that is contained within an enterprise and later on also
@@ -82,7 +94,7 @@ sharing and problem solving in dynamic, multi-institutional virtual
 organizations to enable sophisticated international scientific and
 business-oriented collaborations.
 
-THis definition is certainly including services that are today offered
+This definition is certainly including services that are today offered
 by the Cloud. Hence in the early days of cloud computing there was a
 large debate occurring if cloud is just another term for Grid. In
 [Cloud Computing and Grid Computing 360-Degree Compared]
@@ -122,7 +134,7 @@ Internet Computing refers to
 > the infrastructure that enables sharing of data, within the WWWW community.
 
 Internet computing also comprises early infrastructures such as AOL,
-which poularized the term *you got mail*>
+which poularized the term *you got mail*
 
 ### Cloud Computing
 
@@ -189,7 +201,7 @@ The *as a Service* architecture was one of the earliest definition of
 cloud architecture while focussing on the service aspect provided by
 the cloud. the layers such as IaaS, PaaS, and SaaS provide a layered
 architecture view while separating infrastructure, platform, and
-services. THis allows a separation of concerns typically between
+services. This allows a separation of concerns typically between
 infrastructure providers, platform developers, and software architects
 using platforms and or infrastructure services.
 
@@ -284,8 +296,8 @@ Source: <https://downloads.cloudsecurityalliance.org/assets/research/security-gu
 
 One of the issues we see today is that it is unrealistic to assume
 clouds are only provided by one vendor, or that they have all the same
-interface. Each vendor is advertising their special servicies to
-distinguish themself s from the competitors. For the end user and the
+interface. Each vendor is advertising their special services to
+distinguish themselves from the competitors. For the end user and the
 developer that projects the problem of vendor lockin. However, we need
 to be aware of efforts that allow an easy of such vendor lockin while
 for example providing multi cloud solutions.  Such solutions integrate
@@ -296,7 +308,7 @@ to use multiple cloud vendors at the same time.
 
 One of the earliest such tools is Cloudmesh.org, which is lead by von
 Laszewski. The tool was developed at a time when AWS and Nimbus, and
-Eucalyptus where predominant players. At that tiem OpenStack was just
+Eucalyptus where predominant players. At that time OpenStack was just
 transitioned from a NASA project to a community development.
 
 FutureGrid ws one of the earliest academic cloud offerings to explore
