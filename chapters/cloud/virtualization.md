@@ -144,7 +144,7 @@ To showcase how these technologies relate to each other wil like you
 to review +@fig:vm-taxonomy
 
 
-![Virtualization Taxonomy](images/vm.png){@fig:vm-taxonomy}
+![Virtualization Taxonomy](images/vm.png){#fig:vm-taxonomy}
 
 We summarize the following *hypervisor* types:
 
@@ -290,7 +290,7 @@ operating systems. The full supported guest list can be found at:
 
 The full list of KVM fatures can be found here:
 <http://www.linux-kvm.org/page/KVM_Features>.
-Among them, some cools features include hotplug of hardwares
+Among them, some cools features include hot-plug of hardwares
 even CPU and PCI devices. It supports live migration of VMs too.
 
 ##### KVM vs QEMU :new:
@@ -336,45 +336,45 @@ Windows Server 2008, with a separate free version with limited
 functionality. In later releases it adds more features, e.g., better
 support of Linux guest OS, live migration of VMs, etc.
 
-Hyper-V was getting a lot of popularity comparing to XEN and KVM,
-probably with the increasing presence of Microsoft's Azure cloud
+Hyper-V is still getting a lot of popularity comparing to XEN and KVM
+which we attribute to the increasing presence of Microsoft's Azure cloud
 offering.
 
-![Popularity of KVM, Xen, and Hyper-V according to Google Trends](images/kvm-xen-hyperv-gtrends.png){@fig:hypervisor-gtrends}
+![Popularity of KVM, Xen, and Hyper-V according to Google Trends](images/kvm-xen-hyperv-gtrends.png){#fig:hypervisor-gtrends}
 
-However overall the popularity of hypervisors have been
-decreasing, most likely due to the increasing popularity of more
-lightweighted virtualization solutions, i.e., container technologies,
-which will be covered later in the book.
+However overall the search popularity of hypervisors have been
+decreasing, as other lightweight virtualization solutions, i.e.,
+container technologies become more main stream. We will covered them
+in a later chapter.
 
-More detailed information on Hyper-V can be found at
+More detailed information about Hyper-V can be found at
 <https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-architecture>
 
 #### VMWare
 
 VMware is well known for the company bringing hypervisors to the amss
-market. The compnay is now owned by Dell. It has developed the first
+market. The company is now owned by Dell. It has developed the first
 type 2 hypervisor. Today VMWare offer type 1 hypervisors and type 2
 hypervisors [@wikipedia-vmware].
 
-Because the initial software virtualized "hardware for a video adapter, a network adapter, and hard disk
-adapters" as well as  "pass-through drivers for guest USB,
-serial, and parallel devices" [@wikipedia-vmware] it provided an
-attrctive solution for many to use it to run different OSes on their
-host computers. 
-One important advantage is that it does not rely on virtualization extensions to the x86
-instruction set as it was developed before they became
-availaible. This means it can run on many other platforms. However
-thsi advantage is deminished with the ubiqutous available of these
-features in the hradware.
+Because the initial software virtualized "hardware for a video
+adapter, a network adapter, and hard disk adapters" as well as
+"pass-through drivers for guest USB, serial, and parallel devices"
+[@wikipedia-vmware] it provided an attractive solution for many to use
+it to run different OSes on their host computers.  One important
+advantage is that it does not rely on virtualization extensions to the
+x86 instruction set as it was developed before they became
+available. This means it can run on many other platforms. However this
+advantage is diminished with the ubiquitous available of these
+features in the hardware.
 
 ### Parallels
 
-ANother interesting company offering hypervisors is Parallels. This
-companye has two main products in that regards:
+Another interesting company offering hypervisors is Parallels. This
+company has two main products in that regards:
 
 * Parallels Desktop for Mac, which for x86 machines allows users to
-run virtual machines independentluy using Windows, Linux, Solaris.
+  run virtual machines independently using Windows, Linux, Solaris.
 
 * Parallels Workstation for Microsoft Windows and Linux users which
   for x86 machines allows user to run virtual machines independently
@@ -403,14 +403,14 @@ In Section [VirtualBox](#s-virtualbox) we have provided a practical introduction
 
 The next software that we introduce is actually not a
 hypervisor. However it is very interesting as a contrast to the other
-approach. The term Wine has been originially introducted as an acronym
+approach. The term Wine has been originally introduced as an acronym
 for *Wine Is Not an Emulator*. In contrast to the other approches Wine
 introduces a compatibility layer that allows to run Windows
 applications on a number of POSIX-compliant operating systems. This
 includes Linux, macOS and BSD. In contrast to using a a virtual
 machine or emulator, Wine translates Windows API calls into POSIX
-calls [@wine]. Hence, it allows to pass the Windows API calls directy
-to operating system calls leading to good performance [@wine]. The
+calls [@www-wine]. Hence, it allows to pass the Windows API calls directy
+to operating system calls leading to good performance [@www-wine]. The
 disadvantage of this approach is that in the early days and till today
 some of the underlaying calls may not be ported yet and may lead to
 applications not running. Thos of us that have been in the desir to

@@ -62,7 +62,8 @@
 
 - HYPERVISOR:
     - chapters/cloud/virtualization.md:
-        - chapters/cloud/qemu.md        
+        - chapters/cloud/qemu.md
+        - chapters/cloud/virsh.md                
 
 - IAAS:
     - chapters/SECTION-IAAS.md:
