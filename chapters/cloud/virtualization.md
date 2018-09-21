@@ -275,9 +275,25 @@ An example for using QEMU is provided in Section
 [Virtual Machine Management with QEMU]{@s-qemu-kvm}
 
 
-#### KVM (B)
+#### KVM
 
-#### KVM vs QEMU :new:
+KVM, or Kernel-based Virtual Machine is a popular open-source
+hypervisor solution. It was released as a virtualization solution
+for Linux based systems, and later was merged into Linux Kernel
+since version 2.6.20. It was originally supporting x86 hardware
+with virtualization extensions (Intel VT or AMD-V), but later
+supporting of PowerPC and ARM were added. It supports a variety
+of different guest OSes, e.g., Windows family, Darwin (the core
+of MacOS), in addition to the different distros from various linux
+operating systems. The full supported guest list can be found at:
+<http://www.linux-kvm.org/page/Guest_Support_Status>
+
+The full list of KVM fatures can be found here:
+<http://www.linux-kvm.org/page/KVM_Features>.
+Among them, some cools features include hotplug of hardwares
+even CPU and PCI devices. It supports live migration of VMs too.
+
+##### KVM vs QEMU :new:
 
 KVM includes a fork of the Qemu executable. The QEMU project focuses
 on hardware emulation and portability. KVM focus on the kernel module
@@ -291,10 +307,48 @@ if necessary, signals the Qemu thread to handle most of the hardware
 emulation. This means that the guest code is emulated in a posix
 thread which can be managed with common Linux tools [@kvmvsqemu].
 
-#### Xen (?)
+#### Xen
 
-#### Hyper-V (?)
+Xen is one of the most widely adopted hypervisors by IaaS cloud. It is
+supported by the earliest and still the most popular public cloud 
+offering, i.e., Amazon Web Service (AWS). Eucalyptus, one open-source
+effort to replicate what AWS had to offer, and the then most popular
+private cloud software, supported Xen from the start. And later Openstack,
+the most popular open-source IaaS cloud software at present, also
+supports Xen.
 
+Some notable features of Xen includes:
+
+* Supporting x86-64 and ARM for host architecture.
+
+* Supporting live migration of VMs between different physical hosts
+without losing the availability.
+
+More detailed list can be found at
+<https://wiki.xenproject.org/wiki/Xen_Project_Release_Features>.
+
+
+#### Hyper-V
+
+Hyper-V is a product from Microsoft to support virtualization on
+systems running Windows. Hyper-V was originally released along with
+Windows Server 2008, with a separate free version with limited
+functionality. In later releases it adds more features, e.g., better
+support of Linux guest OS, live migration of VMs, etc.
+
+Hyper-V was getting a lot of popularity comparing to XEN and KVM,
+probably with the increasing presence of Microsoft's Azure cloud
+offering.
+
+![Popularity of KVM, Xen, and Hyper-V according to Google Trends](images/kvm-xen-hyperv-gtrends.png){@fig:hypervisor-gtrends}
+
+However overall the popularity of hypervisors have been
+decreasing, most likely due to the increasing popularity of more
+lightweighted virtualization solutions, i.e., container technologies,
+which will be covered later in the book.
+
+More detailed information on Hyper-V can be found at
+<https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/hyper-v-architecture>
 
 #### VMWare (?)
 
