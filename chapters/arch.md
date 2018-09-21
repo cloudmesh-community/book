@@ -74,7 +74,7 @@ original definition of Grid computing has been summarise as follows:
 
 > A computational Grid is a hardware and software infrastructure that
 > provides dependable, consistent, pervasive, and inexpensive access
-> to high-end computational capabilities.
+> to high-end computational capabilities. [@foster-book]
 
 However, in the paper we also define that Grids were not just about
 computing, but introduced an approach that through the introduction of
