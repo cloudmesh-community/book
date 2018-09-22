@@ -100,16 +100,19 @@
 # MAPREDUCE IS NOT ORGANIZED
 
 - MAPREDUCE:
-    - hadoop-lectures.md
-    - hadoop-installation.md
-    - harp.md
-    - spark-installation.md
-    - spark-lectures.md
-    - spark-streaming.md
-    - spark-udf.md
-    - twister-installation.md
-    - twister.md
-    - twister2-example.md
+    - chapters/mapreduce/hadoop-lectures.md'
+    - chapters/mapreduce/hadoop-installation.md'
+    - chapters/mapreduce/spark-lectures.md'
+    - chapters/mapreduce/spark-installation.md'
+    - chapters/mapreduce/spark-streaming.md'
+    - chapters/mapreduce/spark-udf.md'
+    - chapters/mapreduce/amazon-emr-1.md'
+    - chapters/mapreduce/amazon-emr-2.md'
+    - chapters/mapreduce/twister.md'
+    - chapters/mapreduce/twister-installation.md'
+    - chapters/mapreduce/twister2-example.md'
+    - chapters/mapreduce/harp.md'
+
 
 # #####################################################################
 # chameleon
