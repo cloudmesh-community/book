@@ -24,7 +24,9 @@ with echo via its head node:
 
 To login to echo use the command
 
-    ssh FS_USERNAME@149.165.150.85
+```bash
+$ ssh FS_USERNAME@149.165.150.85
+```
 
 where FS_USERNAME is the username you have on futureSystems.
 
@@ -34,7 +36,9 @@ Send a ticket to FutureSystems ticket system to request this.**
 
 Once you are logged in to the kubernetes cluster head node, try to run:
 
-    kubectl get pods
+```bash
+$ kubectl get pods
+```
 
 This will let you know if you have access to kubernetes and verifies
 if the kubectl command works for you. Naturally it will also list the pods.
@@ -43,13 +47,16 @@ if the kubectl command works for you. Naturally it will also list the pods.
 
 The following command runs an image called nginx with two replicas:
 
-    kubectl run nginx --replicas=2 --image=nginx --port=80
+```bash
+$ kubectl run nginx --replicas=2 --image=nginx --port=80
+```
 
 As a result of this one deployment was created, and two PODs are
 created and started. To see the deployment, please use the command
 
-
-    kubectl get deployment
+```bash
+$ kubectl get deployment
+```
 
 This will result in the following output
 
@@ -59,7 +66,9 @@ This will result in the following output
 
 To see the pods please use the command
 
-    kubectl get pods
+```bash
+$ kubectl get pods
+```
 
 This will result in the following output
 
@@ -69,7 +78,9 @@ This will result in the following output
 
 If we want to see more detailed information we cn use the command
 
-    kubectl get pods -o wide
+```bash
+$ kubectl get pods -o wide
+```
 
 ```
 NAME                   READY STATUS  RESTARTS AGE IP        NODE
@@ -80,8 +91,9 @@ nginx-75...-pxpsz 1/1   Running 0        8m  192.168.255.66 e005
 Please note the IP address field. Now if we try to access the nginx
 homepage with wget (or curl)
 
-
-    wget 192.168.56.2
+```bash
+$ wget 192.168.56.2
+```
 
 we see the following output:
 
@@ -104,15 +116,21 @@ Next we need to start thinking about how we
 access this web server from outside the cluster. We can explicitly
 exposing the service with the following command
 
-    kubectl expose deployment nginx --type=NodePort --name=999-nginx-ext
+```bash
+$ kubectl expose deployment nginx --type=NodePort --name=999-nginx-ext
+```
 
 We will see the response
 
-    service "nginx-external" exposed
+```bash
+$ service "nginx-external" exposed
+```
 
 To find the exposed ip addresses, we simply issue the command
-    
-    kubectl get svc
+
+```bash
+$ kubectl get svc
+```
 
 We se something like this
 
@@ -151,14 +169,14 @@ you should see the 'Welcome to nginx' page.
 
 ## Exercises
 
-E.kubernetes.fs.1:
+E.Kubernetes.fs.1:
 
 > Explore more complex service examples.
 
-E.kubernetes.fs.2:
+E.Kubernetes.fs.2:
 
 > Explore constructing a complex web app with multiple services.
 
-E.kubernetes.fs.3:
+E.Kubernetes.fs.3:
 
 > Define a deployment with a yaml file declaratively.
