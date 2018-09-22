@@ -330,7 +330,7 @@ Now, let ansible-galaxy initialize the directory structure for you:
 The naming convention is to concatenate your name and the role name by a
 dot. Here is how it looks like:
 
-![image](/images/ansible-galaxy-init-structure.png)
+![image](images/ansible-galaxy-init-structure.png)
 
 Let us fill in information to our project. There are several `main.yml`
 files in different folders, and we will illustrate their usages.

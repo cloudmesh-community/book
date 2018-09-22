@@ -21,6 +21,12 @@
         - chapters/linux/ssh-futuresystems.md
         - chapters/linux/ssh-excerise.md
 
+- DEVOPS:
+    - chapters/devops/devops.md:
+        - chapters/devops/travis.md
+        - chapters/devops/ansible.md
+
+
 - PYTHON:
     - chapters/prg/SECTION-PYTHON.md:
         - chapters/prg/python/python-intro.md
@@ -176,7 +182,6 @@
     - chapters/in/old.md
     - chapters/in/box.md
     - chapters/in/cm-hadoop.md
-    - chapters/in/ansible.md
     - chapters/in/datasets.md
     - chapters/in/pyenv-anaconda.md
     - chapters/in/vis.md
@@ -214,6 +219,7 @@
     - $ref:IAAS
     - $ref:SERVERLESS
     - $ref:DEVTOOLS
+    - $ref:DEVOPS    
     - $ref:PYTHON
     - $ref:GO
     - chapters/prg/julia/julia-language.md
