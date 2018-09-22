@@ -145,10 +145,11 @@
 # #####################################################################
 
 - BOOK_DRAFT:
-    - chapters/iaas/openstack/openstack.md
     - $ref:CONTAINER
+    - chapters/iaas/openstack/openstack.md
     - $ref:MAPREDUCE
     - $ref:DRAFTS
+    - chapters/SECTION-REFERENCES.md
 
 # #####################################################################
 # 516

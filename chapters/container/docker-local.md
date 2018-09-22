@@ -9,15 +9,15 @@ Here you will find a variety of packages, one of which will hopefully
 suitable for your operating system. The supported operating systems
 currently include:
 
--   OSX, Windows, Centos, Debian, Fedora, Ubuntu, AWS, Azure
+* OSX, Windows, Centos, Debian, Fedora, Ubuntu, AWS, Azure
 
 Please chose the one most suitable for you. For your convenience we
 provide you with installation instructions for OSX
-(Section [1.1](#s:docker-osx){reference-type="ref"
+(Section [Docker on OSX](#s:docker-osx){reference-type="ref"
 reference="s:docker-osx"}), Windows 10
-(Section [1.3](#s:docker-windows){reference-type="ref"
+(Section [Docker on WIndows](#s:docker-windows){reference-type="ref"
 reference="s:docker-windows"}) and Ubuntu
-(Section [1.2](#s:docker-ubuntu){reference-type="ref"
+(Section [Docker on ubuntu](#s:docker-ubuntu){reference-type="ref"
 reference="s:docker-ubuntu"}).
 
 ## Instillation for OSX
@@ -44,7 +44,7 @@ In order to install Docker community edition for Ubuntu, you first have
 to register the repository from where you can download it. This can be
 achieved as follows:
 
-``` {.bash language="bash"}
+```bash
 $ sudo apt-get update
 $ sudo apt-get install \
     apt-transport-https \
@@ -63,7 +63,7 @@ Now that you have configured the repository location, you can install it
 after you have updated the operating system. The update and install is
 done as follows:
 
-``` {.bash language="bash"}
+```bash
 $ sudo apt-get update
 $ sudo apt-get install docker-ce
 $ sudo apt-get update
@@ -74,11 +74,11 @@ $ sudo apt-get update
 The instructions for Windows have not passed our quality control. We
 look for TAs and student that test out and improve this section.
 
-\TODO{TA: Docker on windows. Please improve and finalize the section}
+:o: TA: Docker on windows. Please improve and finalize the section}
 Before we start we create the following directory:
 
 ```bash
-mkdir $HOME/cloudmesh
+$ mkdir $HOME/cloudmesh
 ```
 
 We also assume you have installed gitbash and use the a git bash
@@ -105,7 +105,7 @@ application and it will load all docker and provide a terminal window in
 which you can execute docker commands. Once the terminal is loaded, it
 will show something like following:
 
-``` {.bash language="bash"}
+```bash
 $ <username>@<yourpc> ~
 ```
 
@@ -113,8 +113,8 @@ $ <username>@<yourpc> ~
 
 To test if it works execute the following commands in a terminal:
 
-``` {.bash language="bash"}
-docker version
+```bash
+$ docker version
 ```
 
 You should see an output similar to
@@ -140,24 +140,27 @@ You should see an output similar to
 
 To see if you can run a container use
 
-``` {.bash language="bash"}
-docker run hello-world
+```bash
+$ docker run hello-world
 ```
 
 Once executed you should see an output similar to
 
-``` {.bash language="bash"}
+```bash
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 78445dd45222: Pull complete 
 Digest: sha256:c5515758d4c5e1e838e9cd307f6c6a .....
-Status: Downloaded newer image for hello-world:latest
+Status: Downloaded newer image for
+        hello-world:latest
 
 Hello from Docker!
-This message shows that your installation appears to 
-be working correctly.
+This message shows that your installation appears
+to be working correctly.
 
-To generate this message, Docker took the following steps:
+To generate this message, Docker took the following
+steps:
+
 1. The Docker client contacted the Docker daemon.
 2. The Docker daemon pulled the "hello-world" image 
    from the Docker Hub.
@@ -167,12 +170,14 @@ To generate this message, Docker took the following steps:
 4. The Docker daemon streamed that output to the Docker 
    client, which sent it to your terminal.
 
-To try something more ambitious, you can run an Ubuntu container 
-with:
+To try something more ambitious, you can run an Ubuntu
+container with:
 
 $ docker run -it ubuntu bash
 
-Share images, automate workflows, and more with a free Docker ID:
+Share images, automate workflows, and more with a
+free Docker ID:
+
 https://cloud.docker.com/
 
 For more examples and ideas, visit:

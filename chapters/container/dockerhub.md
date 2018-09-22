@@ -1,21 +1,20 @@
- 
-
 # Docker Hub {#s:dockerhub}
 
 Docker Hub is a cloud-based registry service which provides a
 "centralized resource for container image discovery, distribution and
-change management, user and team collaboration, and workflow automation
-throughout the development
-pipeline" [@hid-sp18-405-tutorial-dockerhub-overview]. There are both
-private and public repositories. Private repository can only be used by
-people within their own organization.
+change management, user and team collaboration, and workflow
+automation throughout the development
+pipeline" [@hid-sp18-405-tutorial-dockerhub-overview]. There are both
+private and public repositories. Private repository can only be used
+by people within their own organization.
 
 Docker Hub is "hardcoded into Docker as the default registry", which
 means that the docker pull command will initialize the download
-automatically from Docker
-Hub [@hid-sp18-405-tutorial-dockerhub-blog-use]. It allows users to
-download (pull), build, test and store their images for easy deployment
-on any host they may have [@hid-sp18-405-tutorial-dockerhub-overview].
+automatically from Docker Hub
+[@hid-sp18-405-tutorial-dockerhub-blog-use]. It allows users to
+download (pull), build, test and store their images for easy
+deployment on any host they may
+have [@hid-sp18-405-tutorial-dockerhub-overview].
 
 ## Create Docker ID and Log In 
 
@@ -30,7 +29,9 @@ For the rest of the tutorial we assume that you use the environment
 variable DUSER to indicate you username. It is easiset if you set it in
 your shell with
 
-    export DUSER=<PUT YOUR DOCKER USERNAME HERE> 
+```bash
+$ export DUSER=<PUT YOUR DOCKER USERNAME HERE> 
+```
 
 ## Searching for Docker Images
 
@@ -40,15 +41,19 @@ One way is to use the Docker command line tool. You could open an
 terminal and run the *docker search* command. For example, the following
 command searches for centOS images:
 
-    docker search centos
+```bash
+docker search centos
+```
 
 you will see output similar to:
 
-    | NAME            | DESCRIPTION        | STAR | OFFICIAL | AUTOMATED |
-    |-----------------|--------------------|------|----------|-----------|
-    | centos          | Official CentOS    | 4130 | [OK]     |           |
-    | ansible/centos7 | Ansible on Centos7 | 105  |          | [OK]      |
-    ...
+```
+| NAME            | DESCRIPTION        | STAR | OFFICIAL | AUTOMATED |
+|-----------------|--------------------|------|----------|-----------|
+| centos          | Official CentOS    | 4130 | [OK]     |           |
+| ansible/centos7 | Ansible on Centos7 | 105  |          | [OK]      |
+...
+```
 
 Official repositories are public, certified repositories from vendors
 and contributors to Docker. They contain Docker images from vendors like
@@ -68,27 +73,36 @@ right image that fits your needs.
 A particular image (take centos as an example) could be pulled using the
 following command:
 
-    docker pull centos
-
+```bash
+$ docker pull centos
+```
 Tags could be used to specify the image to pull. By default the tag is
 latest, therefore the previous command is the same as the following:
 
-    docker pull centos:latest
+```bash
+$ docker pull centos:latest
+```
 
 You could use a different tag:
 
-    docker pull centos:6
+```bash
+$ docker pull centos:6
+```
 
 To check the existing local docker images, run the following command:
 
-    docker images
+```bash
+$ docker images
+```
 
 The results show:
 
-    | REPOSITORY | TAG    | IMAGE ID     | CREATED     | SIZE  |
-    |------------|--------|--------------|-------------|-------|
-    | centos     | latest | 26cb1244b171 | 2 weeks ago | 195MB |
-    | centos     | 6      | 2d194b392dd1 | 2 weeks ago | 195MB |
+```
+| REPOSITORY | TAG    | IMAGE ID     | CREATED     | SIZE  |
+|------------|--------|--------------|-------------|-------|
+| centos     | latest | 26cb1244b171 | 2 weeks ago | 195MB |
+| centos     | 6      | 2d194b392dd1 | 2 weeks ago | 195MB |
+```
 
 ## Create Repositories
 
@@ -112,7 +126,7 @@ followed:
 
 -   Log into Docker Hub from the command line by specifying the username
 
-          docker login --username=$DUSER
+          $ docker login --username=$DUSER
 
     Enter the password when prompted. If everything worked you will get
     a message similar to:
@@ -121,7 +135,7 @@ followed:
 
 -   Check image ID using:
 
-          docker images
+          $ docker images
 
     the result looks similar to:
 
@@ -135,7 +149,7 @@ followed:
 
 -   Tag the image
 
-          docker tag 1f26a5f7a1b4 $DUSER/cloudmesh:firsttry
+          $ docker tag 1f26a5f7a1b4 $DUSER/cloudmesh:firsttry
 
     In general, a good choice for a tag is something that will help you
     understand what this container should be used in conjunction with,
@@ -152,7 +166,7 @@ followed:
 
 -   Push the image to the repository
 
-          docker push $DUSER/cloudmesh
+          $ docker push $DUSER/cloudmesh
 
     It shows something similar to:
 
@@ -181,18 +195,12 @@ followed:
 
 ## Resources
 
--   The offical [Overview of Docker
-    Hub](https://docs.docker.com/docker-hub/#use-official-repositories)
-    [@hid-sp18-405-tutorial-dockerhub-overview]
-
--   Information about using docker repositories can be found at
-    [Repositories on Docker
-    Hub](https://docs.docker.com/docker-hub/repos/)
-    [@hid-sp18-405-tutorial-dockerhub-repository]
-
--   [How to Use
-    DockerHub](https://www.linux.com/blog/learn/intro-to-linux/2018/1/how-use-dockerhub)
-    [@hid-sp18-405-tutorial-dockerhub-blog-use]
-
--   [Docker Tutorial
-    Series](https://rominirani.com/docker-tutorial-series-part-4-docker-hub-b51fb545dd8e)[@hid-sp18-405-tutorial-dockerhub-series-part-4]
+* The offical
+  [Overview of Docker Hub](https://docs.docker.com/docker-hub/#use-official-repositories)
+  [@hid-sp18-405-tutorial-dockerhub-overview]
+* Information about using docker repositories can be found at
+  [Repositories on Docker Hub](https://docs.docker.com/docker-hub/repos/)
+  [@hid-sp18-405-tutorial-dockerhub-repository]
+* [How to Use DockerHub](https://www.linux.com/blog/learn/intro-to-linux/2018/1/how-use-dockerhub)
+  [@hid-sp18-405-tutorial-dockerhub-blog-use]
+* [Docker Tutorial Series](https://rominirani.com/docker-tutorial-series-part-4-docker-hub-b51fb545dd8e)[@hid-sp18-405-tutorial-dockerhub-series-part-4]

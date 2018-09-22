@@ -1,20 +1,116 @@
 INDEX=\
-  chapters/iaas/openstack/openstack.md\
+  chapters/SECTION-CONTAINER.md\
   chapters/container/index.md\
+  chapters/container/container.md\
+  chapters/SECTION-DOCKER.md\
+  chapters/container/docker-intro.md\
+  chapters/container/docker-local.md\
+  chapters/container/dockerhub.md\
+  chapters/container/docker-fs.md\
+  chapters/container/docker-hadoop-cluster.md\
+  chapters/container/docker-hadoop.md\
+  chapters/container/docker-hadoop3.md\
+  chapters/container/docker-pagerank-example-instruction.md\
+  chapters/container/docker-rest.md\
+  chapters/container/docker-spark.md\
+  chapters/container/docker-swarm.md\
+  chapters/SECTION-KUBERNETES.md\
+  chapters/container/kubernetes-intro.md\
+  chapters/container/kubernetes-fs.md\
+  chapters/container/exercise.md\
+  chapters/container/glossary.md\
+  chapters/iaas/openstack/openstack.md\
   chapters/mapreduce/hadoop-lectures.md\
-  chapters/msg/amazon-kenesis-data-streams.md
+  chapters/msg/amazon-kenesis-data-streams.md\
+  chapters/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/iaas/openstack/openstack.md dest/chapters/container/index.md dest/chapters/mapreduce/hadoop-lectures.md dest/chapters/msg/amazon-kenesis-data-streams.md
+chapterlist:  dest/chapters/SECTION-CONTAINER.md dest/chapters/container/index.md dest/chapters/container/container.md dest/chapters/SECTION-DOCKER.md dest/chapters/container/docker-intro.md dest/chapters/container/docker-local.md dest/chapters/container/dockerhub.md dest/chapters/container/docker-fs.md dest/chapters/container/docker-hadoop-cluster.md dest/chapters/container/docker-hadoop.md dest/chapters/container/docker-hadoop3.md dest/chapters/container/docker-pagerank-example-instruction.md dest/chapters/container/docker-rest.md dest/chapters/container/docker-spark.md dest/chapters/container/docker-swarm.md dest/chapters/SECTION-KUBERNETES.md dest/chapters/container/kubernetes-intro.md dest/chapters/container/kubernetes-fs.md dest/chapters/container/exercise.md dest/chapters/container/glossary.md dest/chapters/iaas/openstack/openstack.md dest/chapters/mapreduce/hadoop-lectures.md dest/chapters/msg/amazon-kenesis-data-streams.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
+
+dest/chapters/SECTION-CONTAINER.md: ../chapters/SECTION-CONTAINER.md
+	../bin/markup-single.py ../chapters/SECTION-CONTAINER.md 1
+	../bin/header.py dest/chapters/SECTION-CONTAINER.md 1
+
+dest/chapters/container/index.md: ../chapters/container/index.md
+	../bin/markup-single.py ../chapters/container/index.md 2
+	../bin/header.py dest/chapters/container/index.md 2
+
+dest/chapters/container/container.md: ../chapters/container/container.md
+	../bin/markup-single.py ../chapters/container/container.md 2
+	../bin/header.py dest/chapters/container/container.md 2
+
+dest/chapters/SECTION-DOCKER.md: ../chapters/SECTION-DOCKER.md
+	../bin/markup-single.py ../chapters/SECTION-DOCKER.md 2
+	../bin/header.py dest/chapters/SECTION-DOCKER.md 2
+
+dest/chapters/container/docker-intro.md: ../chapters/container/docker-intro.md
+	../bin/markup-single.py ../chapters/container/docker-intro.md 3
+	../bin/header.py dest/chapters/container/docker-intro.md 3
+
+dest/chapters/container/docker-local.md: ../chapters/container/docker-local.md
+	../bin/markup-single.py ../chapters/container/docker-local.md 3
+	../bin/header.py dest/chapters/container/docker-local.md 3
+
+dest/chapters/container/dockerhub.md: ../chapters/container/dockerhub.md
+	../bin/markup-single.py ../chapters/container/dockerhub.md 3
+	../bin/header.py dest/chapters/container/dockerhub.md 3
+
+dest/chapters/container/docker-fs.md: ../chapters/container/docker-fs.md
+	../bin/markup-single.py ../chapters/container/docker-fs.md 3
+	../bin/header.py dest/chapters/container/docker-fs.md 3
+
+dest/chapters/container/docker-hadoop-cluster.md: ../chapters/container/docker-hadoop-cluster.md
+	../bin/markup-single.py ../chapters/container/docker-hadoop-cluster.md 3
+	../bin/header.py dest/chapters/container/docker-hadoop-cluster.md 3
+
+dest/chapters/container/docker-hadoop.md: ../chapters/container/docker-hadoop.md
+	../bin/markup-single.py ../chapters/container/docker-hadoop.md 3
+	../bin/header.py dest/chapters/container/docker-hadoop.md 3
+
+dest/chapters/container/docker-hadoop3.md: ../chapters/container/docker-hadoop3.md
+	../bin/markup-single.py ../chapters/container/docker-hadoop3.md 3
+	../bin/header.py dest/chapters/container/docker-hadoop3.md 3
+
+dest/chapters/container/docker-pagerank-example-instruction.md: ../chapters/container/docker-pagerank-example-instruction.md
+	../bin/markup-single.py ../chapters/container/docker-pagerank-example-instruction.md 3
+	../bin/header.py dest/chapters/container/docker-pagerank-example-instruction.md 3
+
+dest/chapters/container/docker-rest.md: ../chapters/container/docker-rest.md
+	../bin/markup-single.py ../chapters/container/docker-rest.md 3
+	../bin/header.py dest/chapters/container/docker-rest.md 3
+
+dest/chapters/container/docker-spark.md: ../chapters/container/docker-spark.md
+	../bin/markup-single.py ../chapters/container/docker-spark.md 3
+	../bin/header.py dest/chapters/container/docker-spark.md 3
+
+dest/chapters/container/docker-swarm.md: ../chapters/container/docker-swarm.md
+	../bin/markup-single.py ../chapters/container/docker-swarm.md 2
+	../bin/header.py dest/chapters/container/docker-swarm.md 2
+
+dest/chapters/SECTION-KUBERNETES.md: ../chapters/SECTION-KUBERNETES.md
+	../bin/markup-single.py ../chapters/SECTION-KUBERNETES.md 2
+	../bin/header.py dest/chapters/SECTION-KUBERNETES.md 2
+
+dest/chapters/container/kubernetes-intro.md: ../chapters/container/kubernetes-intro.md
+	../bin/markup-single.py ../chapters/container/kubernetes-intro.md 3
+	../bin/header.py dest/chapters/container/kubernetes-intro.md 3
+
+dest/chapters/container/kubernetes-fs.md: ../chapters/container/kubernetes-fs.md
+	../bin/markup-single.py ../chapters/container/kubernetes-fs.md 3
+	../bin/header.py dest/chapters/container/kubernetes-fs.md 3
+
+dest/chapters/container/exercise.md: ../chapters/container/exercise.md
+	../bin/markup-single.py ../chapters/container/exercise.md 2
+	../bin/header.py dest/chapters/container/exercise.md 2
+
+dest/chapters/container/glossary.md: ../chapters/container/glossary.md
+	../bin/markup-single.py ../chapters/container/glossary.md 2
+	../bin/header.py dest/chapters/container/glossary.md 2
 
 dest/chapters/iaas/openstack/openstack.md: ../chapters/iaas/openstack/openstack.md
 	../bin/markup-single.py ../chapters/iaas/openstack/openstack.md 1
 	../bin/header.py dest/chapters/iaas/openstack/openstack.md 1
-
-dest/chapters/container/index.md: ../chapters/container/index.md
-	../bin/markup-single.py ../chapters/container/index.md 1
-	../bin/header.py dest/chapters/container/index.md 1
 
 dest/chapters/mapreduce/hadoop-lectures.md: ../chapters/mapreduce/hadoop-lectures.md
 	../bin/markup-single.py ../chapters/mapreduce/hadoop-lectures.md 1
@@ -23,4 +119,8 @@ dest/chapters/mapreduce/hadoop-lectures.md: ../chapters/mapreduce/hadoop-lecture
 dest/chapters/msg/amazon-kenesis-data-streams.md: ../chapters/msg/amazon-kenesis-data-streams.md
 	../bin/markup-single.py ../chapters/msg/amazon-kenesis-data-streams.md 1
 	../bin/header.py dest/chapters/msg/amazon-kenesis-data-streams.md 1
+
+dest/chapters/SECTION-REFERENCES.md: ../chapters/SECTION-REFERENCES.md
+	../bin/markup-single.py ../chapters/SECTION-REFERENCES.md 1
+	../bin/header.py dest/chapters/SECTION-REFERENCES.md 1
 
