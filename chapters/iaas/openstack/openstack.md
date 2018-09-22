@@ -1,4 +1,4 @@
-# OpenStack
+# OpenStack :new:
 
 ## Introduction
 
@@ -113,36 +113,38 @@ This list just includes the open stack services. Additionally, there are several
  Add-Ons to Services and Bridges for Adjacent Tech listed in the 
  services page at - [OpenStack Services](https://www.openstack.org/software/project-navigator/openstack-components#openstack-services).
  
- Among all the service components that are available for OpenStack,
+## Core Services
+
+Among all the service components that are available for OpenStack,
  there are 9 services that are considered to be *Core* services, these
  services are essential to any OpenStack deployment.
  
-####  Nova - Compute
+###  Nova - Compute
  
 Nova is provides services to manage virtual machines in cloud 
 environments. It is also capble of handing other compute resources such
 as containers and is highly scalable. 
 
-#### Glance - Image Services
+### Glance - Image Services
 
 Glance adds image services capabilities to OpenStack, this allows open
 stack users to manage virtual machine images and provides services such 
 as image registration and discovery.
 
-#### Swift - Object Storage
+### Swift - Object Storage
 
 Swift allows developers refer to files and other data similar to object
 references. All actual storage and management is handled by Swift
 so the developers do not need to worry about were to store data and files
 
-#### Cinder - Block Storage
+### Cinder - Block Storage
 
 Cinder provides block storage management capabilities to OpenStack,
 Cinder supports several block storage devices underneath and provides an
 unified API so that developers do not need to worry or think about what
 device is been used underneath. 
 
-#### Neutron - Networking
+### Neutron - Networking
 
 Neutron provides networking capabilities to OpenStack. It allows the
 creation and management of various networks that are used as the
@@ -151,13 +153,13 @@ multi-tenancy and scale to large deployments with ease. Extension
 frameworks for Neutron allow users to deploy more advance network
 features such as VPN's, firewalls, load-balancer, etc. 
 
-#### Horizon - Dashboard
+### Horizon - Dashboard
 
 Horizon is the graphical user interface(GUI) for OpenStack, which 
 developers can use to manage and monitor their OpenStack deployment.
 
 
-#### Keystone - Identity Service
+### Keystone - Identity Service
 
 Keystone is the identity management services in OpenStack, it keeps a 
 list of users and maps all the access rights for each user for all the
@@ -165,14 +167,14 @@ cloud services that are available in the OpenStack deployment. Keystone
 supports several authentication mechanisms such as classical user name
 password based authentication and token based systems
 
-#### Ceilometer - Telemetry
+### Ceilometer - Telemetry
 
 Ceilometer provides developers with billing and usage services that
 allow developers to bill end users based on each individuals usage
 amounts. It also records and saves usage values of the cloud for each
 user so that anything that needs verification can be done.
 
-##### Heat - Orchestration
+### Heat - Orchestration
 
 Heat is the orchestration component of OpenStack. It allows developers
 to use a requirement files that define the resources requirements for 
@@ -183,18 +185,16 @@ cloud application, which can later be referenced when needed.
 
 ### Libcloud
 
-"Libcloud is a Python library for interacting with many of the popular
-cloud service providers using a unified API. It was created to make it
-easy for developers to build products that work between any of the
-services that it supports." [CITEMISSING] A more detailed description on Libcloud and
-how you can use it to connect with OpenStack is provided in the Section 
-[Python libcloud](#python-libcloud).
+Libcloud provides for some selected functionalitya a reasonable interface to OpenStack. More information is provided in Section
+[Python libcloud](#python-libcloud). More advanced resources are exposed through REST interfaces that may not be available in Libcloud. To access them new client libraroes that are not included in libcloud need to be developed. Such functionality was exposed for example in FutureGrid to access cloud metric data.
 
 
 ### DevStack
  
- DevStack is a set of scripts that can be used by developers to manage
- and maintain their OpenStack development. This was developed to 
+It is very convenient to be able to set up an OpenSTack depoyment for development purposes on our own single computer.
+
+DevStack is a set of scripts that can be used by developers to manage
+ and maintain their OpenStack development. DevStack was developed to 
  increase the ease of use for developers. It is very useful to 
  setup a developer environment where you can test your deployment. More
  detailed information regarding DevStack can be found in their official

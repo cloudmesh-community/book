@@ -72,6 +72,7 @@
         - chapters/iaas/azure/azure.md
         - chapters/iaas/watson/watson.md
         - chapters/iaas/gcloud/gcloud.md
+        - chapters/iaas/openstack/openstack.md
         - chapters/iaas/libcloud.md
         - chapters/iaas/boto.md
 
