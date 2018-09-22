@@ -230,10 +230,13 @@ class Manifest(object):
         dir_entries = list(glob.iglob(os.path.join("../chapters", '**', '*.md')))
         for entry in range(0,len(dir_entries)):
             dir_entries[entry] = dir_entries[entry].replace("../", "")
-        print (79 * "-")
+        print ("#", 79 * "#")
+        print ("#", "Md files not includes in", book)
+        print ("#", 79 * "#")        
+        print ("- MISSING_{}:".format(book))
         for entry in dir_entries:
             if entry not in entries:
-                pprint(entry)
+                print("    -", entry)
 
 
     def list(self):
