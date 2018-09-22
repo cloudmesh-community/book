@@ -934,7 +934,7 @@ Let us break this down a bit.
     capabilities](https://docs.python.org/2/library/string.html#format-string-syntax)
     to insert values into the string we are displaying.
 
-## Lambda Expressions :new:
+## Lambda Expressions
 
 As oppose to normal functions in Python which are defined using the `def`
 keyword, lambda functions in Python are anonymous functions which do not have a
