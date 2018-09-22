@@ -1,5 +1,5 @@
 # include ../Makefile.sections
-BOOK=BOOK_516
+BOOK=BOOK_DRAFT
 
 
 FILENAME=vonLaszewski-cloud
