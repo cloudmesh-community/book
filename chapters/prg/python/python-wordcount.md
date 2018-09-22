@@ -153,7 +153,8 @@ With this in mind, we can reimplement the wordcount example as follows:
 
     '''Usage: wordcount_mapreduce.py [-h] DATA_DIR
 
-    Read a collection of .txt documents and count how many times each word
+    Read a collection of .txt documents and count how
+    many times each word
     appears in the collection.
 
     Arguments: 
@@ -194,7 +195,9 @@ With this in mind, we can reimplement the wordcount example as follows:
        if not os.path.exists(args['DATA_DIR']):
           raise ValueError('Invalid data directory: %s' % args['DATA_DIR'])
 
-       per_doc_counts = map(count_words, glob.glob(os.path.join(args['DATA_DIR'], '*.txt')))
+          per_doc_counts = map(count_words,
+                               glob.glob(os.path.join(args['DATA_DIR'],
+                               '*.txt')))
        counts = reduce(merge_counts, [{}] + per_doc_counts)
        logging.debug(counts)
 
@@ -231,7 +234,10 @@ parallelize the implementation using Python's `multiprocessing` API:
        num_processes = int(args['NUM_PROCESSES'])
 
        pool = Pool(processes=num_processes)
-       per_doc_counts = pool.map(count_words, glob.glob(os.path.join(args['DATA_DIR'], '*.txt')))
+
+       per_doc_counts = pool.map(count_words,
+                                 glob.glob(os.path.join(args['DATA_DIR'],
+                                 '*.txt')))
        counts = reduce(merge_counts, [{}] + per_doc_counts)
        logging.debug(counts)
 
@@ -267,7 +273,7 @@ E.python.wordcount.1:
 >    improvement? (this will depend on your machine architecture)
 
 
-# References
+## References
 
 * [Map, Filter and Reduce](http://book.pythontips.com/en/latest/map_filter.html)
 * [multiprocessing API](https://docs.python.org/2/library/multiprocessing.html)
