@@ -17,7 +17,7 @@ or more commands. Upon start `gosh` starts, searches the directory
 
 When we want to design commandline arguments for go programs we have
 many options. However, as our approach is to create documentation
-first, docopts provides also a good apprach for Go. The gode for it is
+first, docopts provides also a good apprach for Go. The code for it is
 located at
 
 * <https://github.com/docopt/docopt.go>

@@ -38,7 +38,7 @@
             - chapters/SECTION-DATA.md:
                 - chapters/data/formats.md
                 - chapters/data/mongoengine.md
-        - chapters/python/prg/python/python-wordcount.md                      
+        - chapters/prg/python/python-wordcount.md                      
 
 - GO:
     - chapters/prg/go/go-intro.md:
