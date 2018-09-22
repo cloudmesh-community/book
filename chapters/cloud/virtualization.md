@@ -1,4 +1,4 @@
-# Virtualization :o: {#s-virtualization}
+# Virtualization {#s-virtualization}
 
 
 ---
