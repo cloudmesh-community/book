@@ -47,30 +47,30 @@ are listed under each group. The list is referenced from the OpenStack
 documentation - [OpenStack Service List](https://www.openstack.org/software/project-navigator/openstack-components#openstack-services)
 
 
-#### Compute
+Compute
 
  * NOVA - Compute Service
  * ZUN - Containers Service
  * QINLING - Functions Service
 
-#### Bare Metal
+Bare Metal
 
  * IRONIC - Bare Metal Provisioning Service
  * CYBORG - Accelerators resource management
 
-#### Storage
+Storage
 
  * SWIFT - Object store
  * CINDER - Block Storage
  * MANILA - Shared filesystems
  
-#### Networking
+Networking
 
  * NEUTRON - Networking
  * OCTAVIA - Load balancer
  * DESIGNATE - DNS service
  
-#### Shared Services
+Shared Services
 
  * KEYSTONE - Identity service
  * GLANCE - Image service
@@ -78,7 +78,7 @@ documentation - [OpenStack Service List](https://www.openstack.org/software/proj
  * KARBOR - Application Data Protection as a Service
  * SEARCHLIGHT - Indexing and Search
  
-#### Orchestration
+Orchestration
 
  * HEAT - Orchestration
  * SENLIN - Clustering service
@@ -87,35 +87,35 @@ documentation - [OpenStack Service List](https://www.openstack.org/software/proj
  * BLAZAR - Resource reservation service
  * AODH - Alarming Service
 
-#### Workload Provisioning
+Workload Provisioning
 
  * MAGNUM - Container Orchestration Engine Provisioning
  * SAHARA - Big Data Processing Framework Provisioning
  * TROVE - Database as a Service
 
-#### Application Lifecycle
+Application Lifecycle
 
  * MASAKARI - Instances High Availability Service
  * MURANO - Application Catalog
  * SOLUM - Software Development Lifecycle Automation
  * FREEZER - Backup, Restore, and Disaster Recovery
 
-#### API Proxies
+API Proxies
 
  * EC2API - EC2 API proxy
 
-#### Web Frontend
+Web Frontend
 
  * HORIZON - Dashboard
  
  
- The list above is just for open stack services, additionally there are
+ This list just includes the open stack services. Additionally, there are
  several other major component groups such as Operational Services, 
  Add-Ons to Services and Bridges for Adjacent Tech listed in the 
  services page at - [OpenStack Services](https://www.openstack.org/software/project-navigator/openstack-components#openstack-services).
  
  Among all the service components that are available for OpenStack,
- there are 9 services that are considered to be "Core" services, these
+ there are 9 services that are considered to be *Core* services, these
  services are essential to any OpenStack deployment.
  
 ####  Nova - Compute
@@ -187,7 +187,7 @@ cloud application, which can later be referenced when needed.
 "Libcloud is a Python library for interacting with many of the popular
 cloud service providers using a unified API. It was created to make it
 easy for developers to build products that work between any of the
-services that it supports." A more detailed description on Libcloud and
+services that it supports." [CITEMISSING] A more detailed description on Libcloud and
 how you can use it to connect with OpenStack is provided in the Section 
 [Python libcloud](#python-libcloud).
 
