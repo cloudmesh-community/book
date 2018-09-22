@@ -1,8 +1,4 @@
-# DocOpts :o: {#s-python-docopts}
-
-A student can contribute
-
-## DocOpts
+# DocOpts {#s-python-docopts}
 
 When we want to design commandline arguments for python programs we have
 many options. However, as our approach is to create documentation
@@ -51,4 +47,6 @@ if __name__ == '__main__':
     print(arguments)
 ```
 
-Another good feature of using docopts is that we can use the same verbal description in other programming languages as showcased in this book.
+Another good feature of using docopts is that we can use the same
+verbal description in other programming languages as showcased in this
+book.
