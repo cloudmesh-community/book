@@ -1,0 +1,26 @@
+INDEX=\
+  chapters/iaas/openstack/openstack.md\
+  chapters/container/index.md\
+  chapters/mapreduce/hadoop-lectures.md\
+  chapters/msg/amazon-kenesis-data-streams.md
+
+chapterlist:  dest/chapters/iaas/openstack/openstack.md dest/chapters/container/index.md dest/chapters/mapreduce/hadoop-lectures.md dest/chapters/msg/amazon-kenesis-data-streams.md
+	@echo "updated modified chapters"
+
+
+dest/chapters/iaas/openstack/openstack.md: ../chapters/iaas/openstack/openstack.md
+	../bin/markup-single.py ../chapters/iaas/openstack/openstack.md 1
+	../bin/header.py dest/chapters/iaas/openstack/openstack.md 1
+
+dest/chapters/container/index.md: ../chapters/container/index.md
+	../bin/markup-single.py ../chapters/container/index.md 1
+	../bin/header.py dest/chapters/container/index.md 1
+
+dest/chapters/mapreduce/hadoop-lectures.md: ../chapters/mapreduce/hadoop-lectures.md
+	../bin/markup-single.py ../chapters/mapreduce/hadoop-lectures.md 1
+	../bin/header.py dest/chapters/mapreduce/hadoop-lectures.md 1
+
+dest/chapters/msg/amazon-kenesis-data-streams.md: ../chapters/msg/amazon-kenesis-data-streams.md
+	../bin/markup-single.py ../chapters/msg/amazon-kenesis-data-streams.md 1
+	../bin/header.py dest/chapters/msg/amazon-kenesis-data-streams.md 1
+
