@@ -38,14 +38,14 @@
             - chapters/SECTION-DATA.md:
                 - chapters/data/formats.md
                 - chapters/data/mongoengine.md
-        
+
 - GO:
     - chapters/prg/go/go-intro.md:
         - chapters/prg/go/go-install.md
         - chapters/prg/go/go-editor.md
         - chapters/prg/go/go-language.md
         - chapters/prg/go/go-libraries.md
-        - chapters/prg/go/go-cmd.md        
+        - chapters/prg/go/go-cmd.md
         - chapters/prg/go/go-rest.md
         - chapters/prg/go/go-openapi.md
         - chapters/prg/go/go-cloud.md
@@ -63,7 +63,7 @@
 - HYPERVISOR:
     - chapters/cloud/virtualization.md:
         - chapters/cloud/qemu.md
-        - chapters/cloud/virsh.md                
+        - chapters/cloud/virsh.md
 
 - IAAS:
     - chapters/SECTION-IAAS.md:
@@ -79,11 +79,10 @@
 - CONTAINER:
     - chapters/container/index.md
     - chapters/container/container.md
-    - chapters/container/qemu.md
     - chapters/SECTION-DOCKER.md:
         - chapters/container/docker-intro.md
         - chapters/container/docker-local.md
-        - chapters/containers/dockerhub.md
+        - chapters/container/dockerhub.md
         - chapters/container/docker-fs.md
         - chapters/container/docker-hadoop-cluster.md
         - chapters/container/docker-hadoop.md
@@ -148,8 +147,7 @@
     - chapters/iaas/openstack/openstack.md
     - $ref:CONTAINER
     - $ref:MAPREDUCE
-    - $ref:DRAFTS    
-
+    - $ref:DRAFTS
 
 # #####################################################################
 # 516
