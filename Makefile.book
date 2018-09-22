@@ -88,8 +88,9 @@ prepare: generateimages version authors destination chapterlist references todo
 
 
 fixemoji:
-	perl -i -pe 's/:white\\_check\\_mark:/:white_check_mark:/g'  dest/all.md
-	perl -i -pe 's/:mortar\\_board:/:mortar_board:/g'  dest/all.md
+#	perl -i -pe 's/:white\\_check\\_mark:/:white_check_mark:/g'  dest/all.md
+#	perl -i -pe 's/:mortar\\_board:/:mortar_board:/g'  dest/all.md
+	echo done
 
 epub: prepare
 ifeq ($(OS), osx)
