@@ -172,7 +172,6 @@
     - chapters/in/hadoop-rdma.md
     - chapters/in/assignments.md
     - chapters/in/hadoop-comet.md
-    - chapters/in/futuresystems.md
     - chapters/in/ubuntu.md
     - chapters/in/old.md
     - chapters/in/box.md
@@ -226,6 +225,7 @@
     - chapters/SECTION-APPENDIX.md:
         - chapters/iaas/aws/products.md
         - chapters/iaas/azure/products.md
+    - chapters/iaas/futuresystems/futuresystems.md        
     - $ref:CHAMELEON
     - chapters/SECTION-REFERENCES.md
 
