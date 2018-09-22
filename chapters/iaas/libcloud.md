@@ -153,6 +153,27 @@ AZDriver = get_driver(Provider.AZURE)
 conn = AZDriver(subscription_id=AZURE_SUBSCRIPTION_ID, key_file=AZURE_MANAGEMENT_CERT_PATH)
 ``` 
 
+#### OpenStack
+
+Authentication is performed for OpenStack as follows
+
+```Python
+from libcloud.compute.providers import get_driver
+from libcloud.compute.types import Provider
+
+OpenstackDriver = get_driver(Provider.OPENSTACK)
+
+#OpenStack related variables
+
+OPENSTACK__AUTH_USERNAME = 'your_user_name'
+OPENSTACK_AUTH_PASSWORD = 'your_auth_password'
+
+conn = OpenStack(OPENSTACK__AUTH_USERNAME, OPENSTACK_AUTH_PASSWORD',
+                   ex_force_auth_url='http://192.168.1.101:5000',
+                   ex_force_auth_version='2.0_password')
+```
+
+
 ### Invoking services
  
 In this section we will look into how we can use the connection
