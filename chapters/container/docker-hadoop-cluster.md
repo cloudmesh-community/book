@@ -1,4 +1,6 @@
-# Draft:Multinode Hadoop Cluster Deployment with Docker Swarm
+# Multinode Hadoop Cluster Deployment with Docker Swarm :o:
+
+:o: TODO the text is incomplete and may duplicate another section?
 
 ## Docker Hadoop 3.0.1
 
@@ -7,11 +9,15 @@ contains examples to run Hadoop such as statistics like WordCount and PageRank.
 
 ### Build
 
-`docker build -t cloudmesh/hadoop:3.0.1 .`
+```bash
+$`docker build -t cloudmesh/hadoop:3.0.1 .`
+```
 
 ### Run
 
+```bash
 `docker run -it cloudmesh/hadoop:3.0.1 /etc/bootstrap.sh -bash`
+```
 
 ### PageRank Example
 
@@ -32,4 +38,6 @@ Increase memory limit in the mapred-site.xml, for example:
 
 ### hdfs Safemode leave command
 
-`hdfs dfsadmin -safemode leave`
+```bash
+$ hdfs dfsadmin -safemode leave`
+```

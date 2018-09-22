@@ -24,16 +24,16 @@ virtual machines. The basic steps are:
 To create virtual machines on your local machine, first create a
 couple of VMs using docker-machine, using the VirtualBox driver:
 
-```
-docker-machine create --driver virtualbox myvm1
-docker-machine create --driver virtualbox myvm2
+```bash
+$ docker-machine create --driver virtualbox myvm1
+$ docker-machine create --driver virtualbox myvm2
 ```
 
 To list the VMs and get their ip addresses.
 Use this command to list the machines and get their IP addresses.
 
-```
-docker-machine ls
+```bash
+$ docker-machine ls
 ```
 
 ## Initialize the Swarm Manager Node and Add Worker Nodes
@@ -44,12 +44,12 @@ is a worker.
 
 ### Instruct `myvm1` to become a swarm manager:
 
-```
-docker swarm init
+```bash
+$ docker swarm init
 ```
 output should be like this:
 
-```
+```bash
 $ docker-machine ssh myvm1 "docker swarm init --advertise-addr <myvm1 ip>"
 ```
 
@@ -57,8 +57,8 @@ Swarm initialized: current node <node ID> is now a manager.
 
 To add a worker to this swarm, run the following command:
 
-```
-  docker swarm join--token <token> <myvm ip>:<port>
+```bash
+$ docker swarm join--token <token> <myvm ip>:<port>
 ```
   
 To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
@@ -67,7 +67,7 @@ To add a manager to this swarm, run 'docker swarm join-token manager' and follow
 
 Copy this command, and send it to `myvm2` via docker-machine ssh to have `myvm2` join your new swarm as a worker:
 
-```
+```bash
 $ docker-machine ssh myvm2 "docker swarm join --token <token> <ip>:2377"
 ```
 
@@ -81,7 +81,7 @@ Run `docker-machine ls` to verify that `myvm1` is now the active machine, as ind
 
 The output should be like this:
 
-```
+```bash
 $ docker-machine ls
 NAME    ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER        ERRORS
 myvm1   *        virtualbox   Running   tcp://192.168.99.100:2376           v17.06.2-ce   
@@ -92,8 +92,8 @@ myvm2   -        virtualbox   Running   tcp://192.168.99.101:2376           v17.
 
 To deploy an application, run the following command to deploy on `myvm1`.
 
-```
-docker stack deploy -c docker-compose.yml getstartedlab
+```bash
+$ docker stack deploy -c docker-compose.yml getstartedlab
 ```
 
 To verify the services (and associated containers) have been distributed between both `myvm1` and `myvm2`.

@@ -1,4 +1,7 @@
-# Introduction to Kubernetes
+# Introduction to Kubernetes :o:
+
+:o: there are some windows commands here, we want linux, but if
+windows useful explain how to run it from bash within windows
 
 
 ## Topics Covered and Learning Outcome
@@ -83,11 +86,8 @@ Deployments:
 
 ## Kubernetes Architecture
 
-\FIGURE{htb} 
-    {1.0}
-    {images/kubernetes.png}
-    {Kubernetes (Source: Google)}
-    {F:tas-arch}
+![Kubernetes (Source: Google)](images/kubernetes.png){#fig:tas-arch}
+
 ## Minikube
 
 1.  minikube installation
@@ -98,8 +98,8 @@ Deployments:
 
 ##### OSX
 
-``` {.bash language="bash"}
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+```bash
+$ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 ```
 
 ##### Windows 10
@@ -122,13 +122,13 @@ directory.
 
 ##### Linux
 
-``` {.bash language="bash"}
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+```bash
+$ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 ```
 
 Installing KVM2 is important for Ubuntu distributions
 
-``` {.bash language="bash"}
+```bash
 $ sudo apt install libvirt-bin qemu-kvm
 $ sudo usermod -a -G libvirtd $(whoami)
 $ newgrp libvirtd
@@ -139,7 +139,7 @@ libraries for windows installation.
 
 Then install the drivers for KVM2,
 
-``` {.bash language="bash"}
+```bash
 $ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-kvm2 && chmod +x docker-machine-driver-kvm2 && sudo mv docker-machine-driver-kvm2 /usr/bin/
 ```
 
@@ -147,14 +147,14 @@ $ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machin
 
 ##### OSX Minikube Start
 
-``` {.bash language="bash"}
+```bash
 $ minikube start
 ```
 
 ##### Ubuntu Minikube Start
 
-``` {.bash language="bash"}
-minikube start --vm-driver=kvm2
+```bash
+$ minikube start --vm-driver=kvm2
 ```
 
 ##### Windows 10 Minikube Start
@@ -165,20 +165,20 @@ administrator. If you are an administrator it will run automatically but
 if you are not please make sure you provide the admin login information
 in the pop up.
 
-``` {.bash language="bash"}
+```bash
 $ cd  C:\Users\<username>\Documents\cloudmesh
 $ .\minikube.exe start --vm-driver="virtualbox"
 ```
 
 ### Create a deployment
 
-``` {.bash language="bash"}
+```bash
 $ kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
 ```
 
 ### Expose the service
 
-``` {.bash language="bash"}
+```bash
 $ kubectl expose deployment hello-minikube --type=NodePort
 ```
 
@@ -186,25 +186,25 @@ $ kubectl expose deployment hello-minikube --type=NodePort
 
 This step is to make sure you have a pod up and running.
 
-``` {.bash language="bash"}
+```bash
 $ kubectl get pod
 ```
 
 ### Call service api
 
-``` {.bash language="bash"}
+```bash
 $ curl $(minikube service hello-minikube --url)
 ```
 
 ### Take a look from Dashboard
 
-``` {.bash language="bash"}
+```bash
 $ minikube dashboard
 ```
 
 If you want to get an interactive dashboard,
 
-``` {.bash language="bash"}
+```bash
 $ .\minikube.exe dashboard --url=true
 http://192.168.99.101:30000
 ```
@@ -214,7 +214,7 @@ provide a GUI dashboard regarding minikube.
 
 ### Delete the service and deployment
 
-``` {.bash language="bash"}
+```bash
 $ kubectl delete service hello-minikube
 $ kubectl delete deployment hello-minikube
 ```
@@ -223,7 +223,7 @@ $ kubectl delete deployment hello-minikube
 
 For all platforms we can use the following command.
 
-``` {.bash language="bash"}
+```bash
 $ minikube stop
 ```
 

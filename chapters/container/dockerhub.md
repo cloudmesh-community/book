@@ -47,13 +47,13 @@ docker search centos
 
 you will see output similar to:
 
-```
 | NAME            | DESCRIPTION        | STAR | OFFICIAL | AUTOMATED |
 |-----------------|--------------------|------|----------|-----------|
 | centos          | Official CentOS    | 4130 | [OK]     |           |
 | ansible/centos7 | Ansible on Centos7 | 105  |          | [OK]      |
+
 ...
-```
+
 
 Official repositories are public, certified repositories from vendors
 and contributors to Docker. They contain Docker images from vendors like
@@ -97,12 +97,11 @@ $ docker images
 
 The results show:
 
-```
 | REPOSITORY | TAG    | IMAGE ID     | CREATED     | SIZE  |
 |------------|--------|--------------|-------------|-------|
 | centos     | latest | 26cb1244b171 | 2 weeks ago | 195MB |
 | centos     | 6      | 2d194b392dd1 | 2 weeks ago | 195MB |
-```
+
 
 ## Create Repositories
 
@@ -121,78 +120,92 @@ space `$DUSER`. Hence the full name is `$DUSER`/cloudtechnology
 
 ## Pushing Images
 
-To push an image to the repository created, the following steps could be
-followed:
+To push an image to the repository created, the following steps can be
+followed.
 
--   Log into Docker Hub from the command line by specifying the username
+First, log into Docker Hub from the command line by specifying the username
 
-          $ docker login --username=$DUSER
+```bash
+$ docker login --username=$DUSER
+```
+          
+Enter the password when prompted. If everything worked you will get
+a message similar to:
 
-    Enter the password when prompted. If everything worked you will get
-    a message similar to:
+```
+Login Succeeded
+```
 
-          Login Succeeded
+Second, Check image ID using:
 
--   Check image ID using:
+```bash
+$ docker images
+```
 
-          $ docker images
+the result looks similar to:
 
-    the result looks similar to:
+| REPOSITORY    | TAG    | IMAGE ID     | CREATED     | SIZE   |
+|---------------|--------|--------------|-------------|--------|
+| cloudmesh-nlp | latest | 1f26a5f7a1b4 | 10 days ago | 1.79GB |
+| centos        | latest | 26cb1244b171 | 2 weeks ago | 195MB  |
+| centos        | latest | 2d194b392dd1 | 2 weeks ago | 195MB  |
 
-          | REPOSITORY    | TAG    | IMAGE ID     | CREATED     | SIZE   |
-          |---------------|--------|--------------|-------------|--------|
-          | cloudmesh-nlp | latest | 1f26a5f7a1b4 | 10 days ago | 1.79GB |
-          | centos        | latest | 26cb1244b171 | 2 weeks ago | 195MB  |
-          | centos        | latest | 2d194b392dd1 | 2 weeks ago | 195MB  |
+and the image with ID 1f26a5f7a1b4 is the one to push to Docker Hub.
 
-    and the image with ID 1f26a5f7a1b4 is the one to push to Docker Hub.
+Third, tag the image
 
--   Tag the image
+```bash
+$ docker tag 1f26a5f7a1b4 $DUSER/cloudmesh:firsttry
+```
 
-          $ docker tag 1f26a5f7a1b4 $DUSER/cloudmesh:firsttry
+In general, a good choice for a tag is something that will help you
+understand what this container should be used in conjunction with, or
+what it represents.
 
-    In general, a good choice for a tag is something that will help you
-    understand what this container should be used in conjunction with,
-    or what it represents.
+Fourth, now the list of images will look something like
 
--   Now the list of images will look something like
+| REPOSITORY       | TAG      | IMAGE ID     | CREATED  | SIZE   |
+|------------------|----------|--------------|----------|--------|
+| cloudmesh-nlp    | latest   | 1f26a5f7a1b4 | 10 d ago | 1.79GB |
+| $DUSER/cloudmesh | firsttry | 1f26a5f7a1b4 | 10 d ago | 1.79GB |
+| centos           | latest   | 26cb1244b171 | 2 w ago  |  195MB |
+| centos           | latest   | 2d194b392dd1 | 2 w ago  |  195MB |
 
-          | REPOSITORY       | TAG      | IMAGE ID     | CREATED  | SIZE   |
-          |------------------|----------|--------------|----------|--------|
-          | cloudmesh-nlp    | latest   | 1f26a5f7a1b4 | 10 d ago | 1.79GB |
-          | $DUSER/cloudmesh | firsttry | 1f26a5f7a1b4 | 10 d ago | 1.79GB |
-          | centos           | latest   | 26cb1244b171 | 2 w ago  |  195MB |
-          | centos           | latest   | 2d194b392dd1 | 2 w ago  |  195MB |
+Fith, push the image to the repository
 
--   Push the image to the repository
+```bash
+$ docker push $DUSER/cloudmesh
+```
 
-          $ docker push $DUSER/cloudmesh
+It shows something similar to:
 
-    It shows something similar to:
+```
+The push refers to repository [docker.io/$DUSER/cloudmesh]
+18f9479cfc2c: Pushed 
+e9ddee98220b: Pushed 
+1d3522002590: Pushed 
+e3ab85ae555e: Pushed 
+bae105d9c555: Pushed 
+6b0c2fb2fe92: Pushed 
+c33cd8954775: Pushed 
+ecafeebb22db: Pushed 
+e0dbd107774a: Pushed 
+8cb07daea6f6: Pushed 
+db584c622b50: Mounted from library/ubuntu 
+52a7ea2bb533: Mounted from library/ubuntu 
+52f389ea437e: Mounted from library/ubuntu 
+88888b9b1b5b: Mounted from library/ubuntu 
+a94e0d5a7c40: Mounted from library/ubuntu 
+firsttry: digest: sha256:305b0f911077d9d6aab4b447b... size: 3463
+```
 
-          The push refers to repository [docker.io/$DUSER/cloudmesh]
-          18f9479cfc2c: Pushed 
-          e9ddee98220b: Pushed 
-          1d3522002590: Pushed 
-          e3ab85ae555e: Pushed 
-          bae105d9c555: Pushed 
-          6b0c2fb2fe92: Pushed 
-          c33cd8954775: Pushed 
-          ecafeebb22db: Pushed 
-          e0dbd107774a: Pushed 
-          8cb07daea6f6: Pushed 
-          db584c622b50: Mounted from library/ubuntu 
-          52a7ea2bb533: Mounted from library/ubuntu 
-          52f389ea437e: Mounted from library/ubuntu 
-          88888b9b1b5b: Mounted from library/ubuntu 
-          a94e0d5a7c40: Mounted from library/ubuntu 
-          firsttry: digest: sha256:305b0f911077d9d6aab4b447b... size: 3463
+Sixth, now the image is available on Docker Hub and everyone can pull it
+since it is a public repository by using command:
 
-    Now the image is available on Docker Hub and everyone can pull it
-    since it is a public repository by using command:
-
-          docker pull $DUSER/cloudmesh
-
+```bash
+$ docker pull $DUSER/cloudmesh
+```
+          
 ## Resources
 
 * The offical

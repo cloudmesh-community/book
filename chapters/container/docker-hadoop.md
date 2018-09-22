@@ -1,4 +1,4 @@
-# Apache Hadoop using Docker
+# Apache Hadoop using Docker {#s-hadoop-docker-2}
 
 In this section we will explore the Map/Reduce framework using Hadoop
 provided through a Docker container. The example that we use in this
@@ -12,16 +12,20 @@ several input files which contain float numbers.
 
 Build a docker image by Dockerfile from:
 
-    mkdir hadoop
-    cd hadoop
-    wget https://raw.githubusercontent.com/cloudmesh/book/master/examples/docker/hadoop/Dockerfile
-    docker build -t cloudmesh/hadoop .
-
+```bash
+$ mkdir hadoop
+$ cd hadoop
+$ wget https://raw.githubusercontent.com/cloudmesh/book/master/examples/docker/hadoop/Dockerfile
+$ docker build -t cloudmesh/hadoop .
+```
+    
 ## Start a Hadoop container
 
-    docker run -it cloudmesh/hadoop /etc/bootstrap.sh -bash
-    %docker run -it lee212/e222 /etc/bootstrap.sh -bash
-
+```bash
+docker run -it cloudmesh/hadoop /etc/bootstrap.sh -bash
+% docker run -it lee212/e222 /etc/bootstrap.sh -bash
+```
+    
 It may take a few minutes at first to download image layers which are
 about 847MB.
 
@@ -52,7 +56,9 @@ average, and standard deviation* of these numbers.
 
 The example is available at:
 
-    cd /cloudmesh/exer1
+```bash
+$ cd /cloudmesh/exer1
+```
 
 ### Input Files
 
@@ -73,10 +79,12 @@ reads each line of a file and updates values to calculate minimum,
 maximum values and Reduce collects mappers to produce average and
 standard deviation values at last.
 
-    export HADOOP_CLASSPATH=`$HADOOP_PREFIX/bin/hadoop classpath`
-    mkdir /cloudmesh/exer1/dest
-    javac -classpath $HADOOP_CLASSPATH -d /cloudmesh/exer1/dest /cloudmesh/exer1/src/exercise/MinMaxAvgStd.java
-
+```bash
+$ export HADOOP_CLASSPATH=`$HADOOP_PREFIX/bin/hadoop classpath`
+$ mkdir /cloudmesh/exer1/dest
+$ javac -classpath $HADOOP_CLASSPATH -d /cloudmesh/exer1/dest /cloudmesh/exer1/src/exercise/MinMaxAvgStd.java
+```
+    
 These commands simply prepare compiling the example code and the
 compiled class files are generated at the *dest* location.
 
@@ -86,33 +94,39 @@ Jar command tool helps archiving classes in a single file which will be
 used when Hadoop runs this example. This is useful because a jar file
 contains all necessary files to run a program.
 
-    cd /cloudmesh/exer1
-    jar -cvf exer1.jar -C ./dest/ .
+```bash
+$ cd /cloudmesh/exer1
+$ jar -cvf exer1.jar -C ./dest/ .
+```
 
 ### HDFS for Input/Output
 
 The input files need to be uploaded to HDFS as Hadoop runs this example
 by reading input files from HDFS.
 
-    export PATH=$PATH:/$HADOOP_PREFIX/bin
-    hadoop fs -mkdir exer1_input
-    hadoop fs -put input_data/* exer1_input
-    hadoop fs -ls exer1_input/
+```bash
+$ export PATH=$PATH:/$HADOOP_PREFIX/bin
+$ hadoop fs -mkdir exer1_input
+$ hadoop fs -put input_data/* exer1_input
+$ hadoop fs -ls exer1_input/
+```
 
 If uploading is completed, you may see file listings like:
 
-    Found 10 items
-    -rw-r--r-- 1 root supergroup  13942 2018-02-28 23:16 exer1_input/data_1000.txt
-    -rw-r--r-- 1 root supergroup 139225 2018-02-28 23:16 exer1_input/data_10000.txt
-    -rw-r--r-- 1 root supergroup  27868 2018-02-28 23:16 exer1_input/data_2000.txt
-    -rw-r--r-- 1 root supergroup  41793 2018-02-28 23:16 exer1_input/data_3000.txt
-    -rw-r--r-- 1 root supergroup  55699 2018-02-28 23:16 exer1_input/data_4000.txt
-    -rw-r--r-- 1 root supergroup  69663 2018-02-28 23:16 exer1_input/data_5000.txt
-    -rw-r--r-- 1 root supergroup  83614 2018-02-28 23:16 exer1_input/data_6000.txt
-    -rw-r--r-- 1 root supergroup  97490 2018-02-28 23:16 exer1_input/data_7000.txt
-    -rw-r--r-- 1 root supergroup 111451 2018-02-28 23:16 exer1_input/data_8000.txt
-    -rw-r--r-- 1 root supergroup 125337 2018-02-28 23:16 exer1_input/data_9000.txt
-
+```
+Found 10 items
+-rw-r--r-- 1 root supergroup  13942 2018-02-28 23:16 exer1_input/data_1000.txt
+-rw-r--r-- 1 root supergroup 139225 2018-02-28 23:16 exer1_input/data_10000.txt
+-rw-r--r-- 1 root supergroup  27868 2018-02-28 23:16 exer1_input/data_2000.txt
+-rw-r--r-- 1 root supergroup  41793 2018-02-28 23:16 exer1_input/data_3000.txt
+-rw-r--r-- 1 root supergroup  55699 2018-02-28 23:16 exer1_input/data_4000.txt
+-rw-r--r-- 1 root supergroup  69663 2018-02-28 23:16 exer1_input/data_5000.txt
+-rw-r--r-- 1 root supergroup  83614 2018-02-28 23:16 exer1_input/data_6000.txt
+-rw-r--r-- 1 root supergroup  97490 2018-02-28 23:16 exer1_input/data_7000.txt
+-rw-r--r-- 1 root supergroup 111451 2018-02-28 23:16 exer1_input/data_8000.txt
+-rw-r--r-- 1 root supergroup 125337 2018-02-28 23:16 exer1_input/data_9000.txt
+```
+    
 ### Run Program with a Single Input File
 
 We are ready to run the program to calculate values from text files.
@@ -120,7 +134,9 @@ First, we simply run the program with a single input file to see how it
 works. `data_1000.txt` contains 1000 lines of floats, we use this file
 here.
 
-    hadoop jar exer1.jar exercise.MinMaxAvgStd exer1_input/data_1000.txt exer1_output_1000
+```bash
+$ hadoop jar exer1.jar exercise.MinMaxAvgStd exer1_input/data_1000.txt exer1_output_1000
+```
 
 The command runs with input parameters which indicate a jar file (the
 program, exer1.jar), exercise.MinMaxAvgStd (package name.class name),
@@ -128,6 +144,7 @@ input file path (`exer1_input/data_1000.txt`) and output file path
 (`exer1_output_1000`).
 
 The sample results that the program produces look like this:
+
 
     18/02/28 23:48:50 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
     18/02/28 23:48:50 INFO input.FileInputFormat: Total input paths to process: 1
@@ -205,7 +222,9 @@ files is 1.
 
 We reads results from HDFS by:
 
-    hadoop fs -cat exer1_output_1000/part-r-00000
+```bash
+$ hadoop fs -cat exer1_output_1000/part-r-00000
+```
 
 The sample output looks like:
 
@@ -223,7 +242,9 @@ larger size (2,000 to 10,000 lines). Input files are already uploaded to
 HDFS. We simply run the program again with a slight change in the
 parameters.
 
-    hadoop jar exer1.jar exercise.MinMaxAvgStd exer1_input/ exer1_output_all
+```bash
+$ hadoop jar exer1.jar exercise.MinMaxAvgStd exer1_input/ exer1_output_all
+```
 
 The command is almost same except that an input path is a directory and
 a new output directory. Note that every time that you run this program,
@@ -308,7 +329,9 @@ of input files to process is 10, see the line two below:
 
 ### Result for Multiple Files
 
-    hadoop fs -cat exer1_output_all/part-r-00000
+```bash
+$ hadoop fs -cat exer1_output_all/part-r-00000
+```
 
 The expected result looks like:
 
@@ -317,8 +340,7 @@ The expected result looks like:
     Avg: 9.514884854468903
     Std: 5.553921579413547
 
-Conclusion
-----------
+## Conclusion
 
 The example program of calculating some values by reading multiple files
 shows how Map/Reduce is written by a Java programming language and how

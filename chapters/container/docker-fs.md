@@ -23,12 +23,16 @@ environment variables to simplify the access and the material presented
 here. YOu can place them even in your `.bashrc` or `.bash_profile` so
 the information gets populated whenever you start a new terminal.
 
-    export ECHO=149.165.150.76
-    export FS_USER=<put your futersystem here>
+```bash
+$ export ECHO=149.165.150.76
+$ export FS_USER=<put your futersystem here>
+```
 
 with the same username and key:
 
-    ssh $FS_USER@$ECHO
+```bash
+$ ssh $FS_USER@$ECHO
+```
 
 However it is much more convenient to
 
@@ -38,7 +42,9 @@ Send a ticket to FutureSystems ticket system to request this.
 
 Once logged in to the docker swarm head node, try to run:
 
-    docker run hello-world
+```bash
+$ docker run hello-world
+```
 
 to verify `docker run` works.
 
@@ -59,15 +65,21 @@ paradigm of *serverless computing*.
 As an example, the following command creates a service and deploy it to
 the swarm cluster:
 
-> docker service create --name notebook_test -p 9001:8888
-> jupyter/datascience-notebook start-notebook.sh
-> --NotebookApp.password=NOTEBOOK_PASS_HASH
+:o: Fugang check the command
 
+```bash
+$ docker service create --name notebook_test -p 9001:8888 \
+    jupyter/datascience-notebook start-notebook.sh
+    --NotebookApp.password=NOTEBOOK_PASS_HASH
+```
+    
 The NOTEBOOK_PASS_HASH can be generated in python:
 
-    >>> import IPython
-    >>> IPython.lib.passwd("YOUR_SELECTED_PASSWROD")
-    'sha1:52679cadb4c9:6762e266af44f86f3d170ca1......'
+```python
+>>> import IPython
+>>> IPython.lib.passwd("YOUR_SELECTED_PASSWROD")
+'sha1:52679cadb4c9:6762e266af44f86f3d170ca1......'
+```
 
 So pass through the string starting with 'sha1:\...\...'.
 
@@ -78,7 +90,9 @@ port inside the container (8888) to an external port of the cluster node
 (9001) so the service could be accessed from the Internet. In this
 example, you can then visit the URL:
 
-> <http://$ECHO:9001>
+```
+http://$ECHO:9001
+```
 
 to access the Jupyter notebook. Using the specified password when you
 create the service to login.
@@ -95,25 +109,35 @@ the time when the service was created.
 
 Some useful related commands:
 
-    docker service ls
+```bash
+$ docker service ls
+```
 
 lists the currently running services.
 
-    docker service ps notebook_test
+```bash
+$ docker service ps notebook_test
+```
 
 lists the detailed info of the container where the service is running.
 
-    docker node ps NODE
+```bash
+$ docker node ps NODE
+```
 
 lists all the running containers of a node.
 
-    docker node ls
+```bash
+$ docker node ls
+```
 
 lists all the nodes in the swarm cluster.
 
 To stop the service and the container:
 
-    docker service rm noteboot_test
+```bash
+$ docker service rm noteboot_test
+```
 
 ## Create your own service
 
@@ -134,7 +158,7 @@ recommended way.
 
 Publish the image to the docker cloud by following this documentation:
 
-> <https://docs.docker.com/docker-cloud/builds/push-images/>
+* <https://docs.docker.com/docker-cloud/builds/push-images/>
 
 Please make sure no sensitive information is included in the image to be
 published. Alternatively you could publish the image internally to the
@@ -148,6 +172,10 @@ example.
 
 ## Exercises
 
-Obtain an account on future systems.
+E.Docker.Futuresystems.1:
 
-Create a REST service with swagger codegen and run it on the echo cloud.
+> Obtain an account on future systems.
+
+E.Docker.Futuresystems.2:
+
+> Create a REST service with swagger codegen and run it on the echo cloud.

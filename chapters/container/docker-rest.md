@@ -1,4 +1,8 @@
-# Dockerized REST Service
+# Dockerized REST Service :o:
+
+:o: EXPLAIN WHY WE NEED 2.7 PYTHON
+:o: test with newer version of python
+:o: move python install in python section
 
 We discuss how to use Docker to deploy a REST service designed using
 Python Flask.
@@ -41,7 +45,7 @@ If you do not have this path please create it, because we will be using
 this place to store all the tools we need. Within the bin folder run the
 following commands using command line tool or cmd.exe in windows.
 
-``` {.bash language="bash"}
+```bash
 $ python get-pip.py
 ```
 
@@ -55,7 +59,7 @@ After adding the variables make sure you use a new cmd.exe.
 
 Now continue by installing a Virtualenv installation
 
-``` {.bash language="bash"}
+```bash
 $ pip install virtualenv 
 ```
 
@@ -70,7 +74,7 @@ Install emacs via chocolatey
 
 ### Ubuntu and OSX
 
-``` {.bash language="bash"}
+```bash
 $ mkdir -p ~/cloudmesh/containers/docker-flask
 $ cd ~/cloudmesh/containers/docker-flask
 $ virtualenv venv
@@ -81,7 +85,7 @@ $ source venv/bin/activate
 
 Using cmd.exe Please replace with your username.
 
-``` {.bash language="bash"}
+```bash
 $ mkdir -p C:\Users\<your_username>\cloudmesh\containers\docker-flask
 $ cd C:\Users\<your_username>\cloudmesh\containers\docker-flask
 $ virtualenv venv
@@ -91,7 +95,7 @@ $ venv/Script/activate
 Now you are inside the created virtual environment. The terminal will
 look something like
 
-``` {.bash language="bash"}
+```bash
 (venv) neo$
 ```
 
@@ -112,7 +116,7 @@ Create requirements.txt file
 
 #### Ubuntu and OSX
 
-``` {.bash language="bash"}
+```bash
 $ emacs requirements.txt
 ```
 
@@ -121,7 +125,7 @@ $ emacs requirements.txt
 Install an editor such as emacs on Windows. YOu can use chocolatey for
 that, or use pycharm. Do not use notepad++
 
-``` {.bash language="bash"}
+```bash
 emacs requirements.txt
 ```
 
@@ -131,7 +135,7 @@ Include the following content in the requirements.txt file.
 
 Now run the following command
 
-``` {.bash language="bash"}
+```bash
 $ pip install -r requirements.txt
 ```
 
@@ -142,13 +146,13 @@ instructions for the deployment of the REST API on docker.
 
 #### Ubuntu and OSX
 
-``` {.bash language="bash"}
+```bash
 $ emacs Dockerfile
 ```
 
 #### Windows
 
-``` {.bash language="bash"}
+```bash
 emacs Dockerfile
 ```
 
@@ -185,19 +189,19 @@ Then we need to creat the main.py file inside the app folder.
 
 #### Ubuntu and OSX
 
-``` {.bash language="bash"}
+```bash
 emacs app/main.py
 ```
 
 #### Windows
 
-``` {.bash language="bash"}
+```bash
 emacs app/main.py
 ```
 
 Then add the following content.
 
-``` {language="python"}
+```python
 from flask import Flask
 
 app = Flask(__name__)
@@ -224,7 +228,7 @@ After adding the content save and exit emacs.
 
 Now run the following commands.
 
-``` {.bash language="bash"}
+```bash
 $ cd ~/cloudmesh/containers/docker-flask
 $ docker build -t sample-flask-rest-app .
 ```
@@ -362,7 +366,7 @@ Go to this URL: <http://127.0.0.1:80>
 
 #### Additional INFO
 
-``` {basicstyle="\tiny\ttfamily"}
+```bash
 $ docker ps -a
 CONTAINER ID IMAGE                     COMMAND                  CREATED             STATUS        PORTS       NAMES
                                                                                            0.0.0.0:80->80/tcp   
