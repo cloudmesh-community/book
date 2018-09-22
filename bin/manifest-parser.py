@@ -216,6 +216,9 @@ class Manifest(object):
         #
         entries = []
         variables = self.chaps.keys()
+        if book not in variables:
+            print ("ERROR: book does not exist")
+        print (variables)
         for title, tree in self.treebook.items():
             if title == book:
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
@@ -227,7 +230,7 @@ class Manifest(object):
         dir_entries = list(glob.iglob(os.path.join("../chapters", '**', '*.md')))
         for entry in range(0,len(dir_entries)):
             dir_entries[entry] = dir_entries[entry].replace("../", "")
-
+        print (79 * "-")
         for entry in dir_entries:
             if entry not in entries:
                 pprint(entry)
