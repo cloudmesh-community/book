@@ -147,9 +147,6 @@
 
 
 - BOOK_DRAFT:
-    - $ref:ERROR
-    
-- GGGG:
     - $ref:CONTAINER
     - $ref:MAPREDUCE
     - chapters/iaas/openstack/openstack.md
