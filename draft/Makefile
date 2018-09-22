@@ -2,6 +2,6 @@
 BOOK=BOOK_DRAFT
 
 
-FILENAME=vonLaszewski-cloud
+FILENAME=vonLaszewski-draft
 
 include ../Makefile.book
