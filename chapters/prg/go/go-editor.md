@@ -1,4 +1,4 @@
-# Editors Supporting Go :new: {#s-go-editor}
+# Editors Supporting Go {#s-go-editor}
 
 A large number of editor compatibilities and plugins are listed at 
 

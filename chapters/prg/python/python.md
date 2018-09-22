@@ -934,7 +934,7 @@ Let us break this down a bit.
     capabilities](https://docs.python.org/2/library/string.html#format-string-syntax)
     to insert values into the string we are displaying.
 
-## Lambda Expressions :new:
+## Lambda Expressions
 
 As oppose to normal functions in Python which are defined using the `def`
 keyword, lambda functions in Python are anonymous functions which do not have a
@@ -1176,7 +1176,7 @@ $ python iterator.py
 As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively. 
 
 
-## Generators :new:
+## Generators
 
 Before we go to Generators, please understand Iterators from above. Generators are also Iterators but they can only be
 interated over once. Thats because Generators do not store the values

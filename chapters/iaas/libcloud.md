@@ -293,8 +293,7 @@ pip install cm-community
 and this library will be installed for you.
 
 
-## Amazon Simple Storage Service S3 via libcloud :hand::new:
-
+## Amazon Simple Storage Service S3 via libcloud :hand:
 
 Next we explain how to use Amazon Web Services (AWS) S3 via
 libcloud. Apache libcloud is a python library that provides
@@ -342,7 +341,7 @@ for the user in that particular region.
 	print d;
 
 
-### list container objects
+### List container objects
 
 List container objects function shows the list of all objects in that
 container. Please note the output could be large depending on the

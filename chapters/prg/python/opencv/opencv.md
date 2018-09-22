@@ -1,4 +1,4 @@
-# OpenCV :new: {#s-opencv}
+# OpenCV {#s-opencv}
 
 ---
 
