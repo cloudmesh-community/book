@@ -77,25 +77,26 @@
         - chapters/iaas/boto.md
 
 - CONTAINER:
-    - chapters/container/index.md
-    - chapters/container/container.md
-    - chapters/SECTION-DOCKER.md:
-        - chapters/container/docker-intro.md
-        - chapters/container/docker-local.md
-        - chapters/container/dockerhub.md
-        - chapters/container/docker-fs.md
-        - chapters/container/docker-hadoop-cluster.md
-        - chapters/container/docker-hadoop.md
-        - chapters/container/docker-hadoop3.md
-        - chapters/container/docker-pagerank-example-instruction.md
-        - chapters/container/docker-rest.md
-        - chapters/container/docker-spark.md
-    - chapters/container/docker-swarm.md
-    - chapters/SECTION-KUBERNETES.md:
-        - chapters/container/kubernetes-intro.md
-        - chapters/container/kubernetes-fs.md
-    - chapters/container/exercise.md
-    - chapters/container/glossary.md
+    - chapters/SECTION-CONTAINER.md:
+        - chapters/container/index.md
+        - chapters/container/container.md
+        - chapters/SECTION-DOCKER.md:
+            - chapters/container/docker-intro.md
+            - chapters/container/docker-local.md
+            - chapters/container/dockerhub.md
+            - chapters/container/docker-fs.md
+            - chapters/container/docker-hadoop-cluster.md
+            - chapters/container/docker-hadoop.md
+            - chapters/container/docker-hadoop3.md
+            - chapters/container/docker-pagerank-example-instruction.md
+            - chapters/container/docker-rest.md
+            - chapters/container/docker-spark.md
+        - chapters/container/docker-swarm.md
+        - chapters/SECTION-KUBERNETES.md:
+            - chapters/container/kubernetes-intro.md
+            - chapters/container/kubernetes-fs.md
+        - chapters/container/exercise.md
+        - chapters/container/glossary.md
 
 # MAPREDUCE IS NOT ORGANIZED
 
