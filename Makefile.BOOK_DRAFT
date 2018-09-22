@@ -22,9 +22,38 @@ INDEX=\
   chapters/mapreduce/hadoop-lectures.md\
   chapters/iaas/openstack/openstack.md\
   chapters/msg/amazon-kenesis-data-streams.md\
+  chapters/pi2/run-at-boot.md\
+  chapters/pi2/sd-card.md\
+  chapters/pi/case.md\
+  chapters/pi/pi-passwordreset.md\
+  chapters/pi/config-display.md\
+  chapters/pi/setup.md\
+  chapters/pi/exercise.md\
+  chapters/pi/software2.md\
+  chapters/pi/software.md\
+  chapters/pi/vnc.md\
+  chapters/pi/motherboard-led.md\
+  chapters/pi/slurm.md\
+  chapters/pi/board.md\
+  chapters/pi/links.md\
+  chapters/pi/preface.md\
+  chapters/in/hadoop-ubunto.md\
+  chapters/in/hadoop-rdma.md\
+  chapters/in/assignments.md\
+  chapters/in/hadoop-comet.md\
+  chapters/in/futuresystems.md\
+  chapters/in/ubuntu.md\
+  chapters/in/old.md\
+  chapters/in/box.md\
+  chapters/in/cm-hadoop.md\
+  chapters/in/ansible.md\
+  chapters/in/datasets.md\
+  chapters/in/pyenv-anaconda.md\
+  chapters/in/vis.md\
+  chapters/in/course1.md\
   chapters/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION-CONTAINER.md dest/chapters/container/index.md dest/chapters/container/container.md dest/chapters/SECTION-KUBERNETES.md dest/chapters/container/kubernetes-intro.md dest/chapters/container/kubernetes-fs.md dest/chapters/container/exercise.md dest/chapters/container/glossary.md dest/chapters/SECTION-DOCKER.md dest/chapters/container/docker-intro.md dest/chapters/container/docker-local.md dest/chapters/container/dockerhub.md dest/chapters/container/docker-fs.md dest/chapters/container/docker-hadoop-cluster.md dest/chapters/container/docker-hadoop.md dest/chapters/container/docker-hadoop3.md dest/chapters/container/docker-pagerank-example-instruction.md dest/chapters/container/docker-spark.md dest/chapters/container/docker-rest.md dest/chapters/container/docker-swarm.md dest/chapters/mapreduce/hadoop-lectures.md dest/chapters/iaas/openstack/openstack.md dest/chapters/msg/amazon-kenesis-data-streams.md dest/chapters/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION-CONTAINER.md dest/chapters/container/index.md dest/chapters/container/container.md dest/chapters/SECTION-KUBERNETES.md dest/chapters/container/kubernetes-intro.md dest/chapters/container/kubernetes-fs.md dest/chapters/container/exercise.md dest/chapters/container/glossary.md dest/chapters/SECTION-DOCKER.md dest/chapters/container/docker-intro.md dest/chapters/container/docker-local.md dest/chapters/container/dockerhub.md dest/chapters/container/docker-fs.md dest/chapters/container/docker-hadoop-cluster.md dest/chapters/container/docker-hadoop.md dest/chapters/container/docker-hadoop3.md dest/chapters/container/docker-pagerank-example-instruction.md dest/chapters/container/docker-spark.md dest/chapters/container/docker-rest.md dest/chapters/container/docker-swarm.md dest/chapters/mapreduce/hadoop-lectures.md dest/chapters/iaas/openstack/openstack.md dest/chapters/msg/amazon-kenesis-data-streams.md dest/chapters/pi2/run-at-boot.md dest/chapters/pi2/sd-card.md dest/chapters/pi/case.md dest/chapters/pi/pi-passwordreset.md dest/chapters/pi/config-display.md dest/chapters/pi/setup.md dest/chapters/pi/exercise.md dest/chapters/pi/software2.md dest/chapters/pi/software.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/slurm.md dest/chapters/pi/board.md dest/chapters/pi/links.md dest/chapters/pi/preface.md dest/chapters/in/hadoop-ubunto.md dest/chapters/in/hadoop-rdma.md dest/chapters/in/assignments.md dest/chapters/in/hadoop-comet.md dest/chapters/in/futuresystems.md dest/chapters/in/ubuntu.md dest/chapters/in/old.md dest/chapters/in/box.md dest/chapters/in/cm-hadoop.md dest/chapters/in/ansible.md dest/chapters/in/datasets.md dest/chapters/in/pyenv-anaconda.md dest/chapters/in/vis.md dest/chapters/in/course1.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -119,6 +148,122 @@ dest/chapters/iaas/openstack/openstack.md: ../chapters/iaas/openstack/openstack.
 dest/chapters/msg/amazon-kenesis-data-streams.md: ../chapters/msg/amazon-kenesis-data-streams.md
 	../bin/markup-single.py ../chapters/msg/amazon-kenesis-data-streams.md 1
 	../bin/header.py dest/chapters/msg/amazon-kenesis-data-streams.md 1
+
+dest/chapters/pi2/run-at-boot.md: ../chapters/pi2/run-at-boot.md
+	../bin/markup-single.py ../chapters/pi2/run-at-boot.md 1
+	../bin/header.py dest/chapters/pi2/run-at-boot.md 1
+
+dest/chapters/pi2/sd-card.md: ../chapters/pi2/sd-card.md
+	../bin/markup-single.py ../chapters/pi2/sd-card.md 1
+	../bin/header.py dest/chapters/pi2/sd-card.md 1
+
+dest/chapters/pi/case.md: ../chapters/pi/case.md
+	../bin/markup-single.py ../chapters/pi/case.md 1
+	../bin/header.py dest/chapters/pi/case.md 1
+
+dest/chapters/pi/pi-passwordreset.md: ../chapters/pi/pi-passwordreset.md
+	../bin/markup-single.py ../chapters/pi/pi-passwordreset.md 1
+	../bin/header.py dest/chapters/pi/pi-passwordreset.md 1
+
+dest/chapters/pi/config-display.md: ../chapters/pi/config-display.md
+	../bin/markup-single.py ../chapters/pi/config-display.md 1
+	../bin/header.py dest/chapters/pi/config-display.md 1
+
+dest/chapters/pi/setup.md: ../chapters/pi/setup.md
+	../bin/markup-single.py ../chapters/pi/setup.md 1
+	../bin/header.py dest/chapters/pi/setup.md 1
+
+dest/chapters/pi/exercise.md: ../chapters/pi/exercise.md
+	../bin/markup-single.py ../chapters/pi/exercise.md 1
+	../bin/header.py dest/chapters/pi/exercise.md 1
+
+dest/chapters/pi/software2.md: ../chapters/pi/software2.md
+	../bin/markup-single.py ../chapters/pi/software2.md 1
+	../bin/header.py dest/chapters/pi/software2.md 1
+
+dest/chapters/pi/software.md: ../chapters/pi/software.md
+	../bin/markup-single.py ../chapters/pi/software.md 1
+	../bin/header.py dest/chapters/pi/software.md 1
+
+dest/chapters/pi/vnc.md: ../chapters/pi/vnc.md
+	../bin/markup-single.py ../chapters/pi/vnc.md 1
+	../bin/header.py dest/chapters/pi/vnc.md 1
+
+dest/chapters/pi/motherboard-led.md: ../chapters/pi/motherboard-led.md
+	../bin/markup-single.py ../chapters/pi/motherboard-led.md 1
+	../bin/header.py dest/chapters/pi/motherboard-led.md 1
+
+dest/chapters/pi/slurm.md: ../chapters/pi/slurm.md
+	../bin/markup-single.py ../chapters/pi/slurm.md 1
+	../bin/header.py dest/chapters/pi/slurm.md 1
+
+dest/chapters/pi/board.md: ../chapters/pi/board.md
+	../bin/markup-single.py ../chapters/pi/board.md 1
+	../bin/header.py dest/chapters/pi/board.md 1
+
+dest/chapters/pi/links.md: ../chapters/pi/links.md
+	../bin/markup-single.py ../chapters/pi/links.md 1
+	../bin/header.py dest/chapters/pi/links.md 1
+
+dest/chapters/pi/preface.md: ../chapters/pi/preface.md
+	../bin/markup-single.py ../chapters/pi/preface.md 1
+	../bin/header.py dest/chapters/pi/preface.md 1
+
+dest/chapters/in/hadoop-ubunto.md: ../chapters/in/hadoop-ubunto.md
+	../bin/markup-single.py ../chapters/in/hadoop-ubunto.md 1
+	../bin/header.py dest/chapters/in/hadoop-ubunto.md 1
+
+dest/chapters/in/hadoop-rdma.md: ../chapters/in/hadoop-rdma.md
+	../bin/markup-single.py ../chapters/in/hadoop-rdma.md 1
+	../bin/header.py dest/chapters/in/hadoop-rdma.md 1
+
+dest/chapters/in/assignments.md: ../chapters/in/assignments.md
+	../bin/markup-single.py ../chapters/in/assignments.md 1
+	../bin/header.py dest/chapters/in/assignments.md 1
+
+dest/chapters/in/hadoop-comet.md: ../chapters/in/hadoop-comet.md
+	../bin/markup-single.py ../chapters/in/hadoop-comet.md 1
+	../bin/header.py dest/chapters/in/hadoop-comet.md 1
+
+dest/chapters/in/futuresystems.md: ../chapters/in/futuresystems.md
+	../bin/markup-single.py ../chapters/in/futuresystems.md 1
+	../bin/header.py dest/chapters/in/futuresystems.md 1
+
+dest/chapters/in/ubuntu.md: ../chapters/in/ubuntu.md
+	../bin/markup-single.py ../chapters/in/ubuntu.md 1
+	../bin/header.py dest/chapters/in/ubuntu.md 1
+
+dest/chapters/in/old.md: ../chapters/in/old.md
+	../bin/markup-single.py ../chapters/in/old.md 1
+	../bin/header.py dest/chapters/in/old.md 1
+
+dest/chapters/in/box.md: ../chapters/in/box.md
+	../bin/markup-single.py ../chapters/in/box.md 1
+	../bin/header.py dest/chapters/in/box.md 1
+
+dest/chapters/in/cm-hadoop.md: ../chapters/in/cm-hadoop.md
+	../bin/markup-single.py ../chapters/in/cm-hadoop.md 1
+	../bin/header.py dest/chapters/in/cm-hadoop.md 1
+
+dest/chapters/in/ansible.md: ../chapters/in/ansible.md
+	../bin/markup-single.py ../chapters/in/ansible.md 1
+	../bin/header.py dest/chapters/in/ansible.md 1
+
+dest/chapters/in/datasets.md: ../chapters/in/datasets.md
+	../bin/markup-single.py ../chapters/in/datasets.md 1
+	../bin/header.py dest/chapters/in/datasets.md 1
+
+dest/chapters/in/pyenv-anaconda.md: ../chapters/in/pyenv-anaconda.md
+	../bin/markup-single.py ../chapters/in/pyenv-anaconda.md 1
+	../bin/header.py dest/chapters/in/pyenv-anaconda.md 1
+
+dest/chapters/in/vis.md: ../chapters/in/vis.md
+	../bin/markup-single.py ../chapters/in/vis.md 1
+	../bin/header.py dest/chapters/in/vis.md 1
+
+dest/chapters/in/course1.md: ../chapters/in/course1.md
+	../bin/markup-single.py ../chapters/in/course1.md 1
+	../bin/header.py dest/chapters/in/course1.md 1
 
 dest/chapters/SECTION-REFERENCES.md: ../chapters/SECTION-REFERENCES.md
 	../bin/markup-single.py ../chapters/SECTION-REFERENCES.md 1

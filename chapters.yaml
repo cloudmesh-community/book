@@ -38,6 +38,7 @@
             - chapters/SECTION-DATA.md:
                 - chapters/data/formats.md
                 - chapters/data/mongoengine.md
+        - chapters/python/prg/python/python-wordcount.md                      
 
 - GO:
     - chapters/prg/go/go-intro.md:
@@ -151,7 +152,37 @@
     - $ref:MAPREDUCE
     - chapters/iaas/openstack/openstack.md
     - $ref:DRAFTS
+    - chapters/pi2/run-at-boot.md
+    - chapters/pi2/sd-card.md
+    - chapters/pi/case.md
+    - chapters/pi/pi-passwordreset.md
+    - chapters/pi/config-display.md
+    - chapters/pi/setup.md
+    - chapters/pi/exercise.md
+    - chapters/pi/software2.md
+    - chapters/pi/software.md
+    - chapters/pi/vnc.md
+    - chapters/pi/motherboard-led.md
+    - chapters/pi/slurm.md
+    - chapters/pi/board.md
+    - chapters/pi/links.md
+    - chapters/pi/preface.md
+    - chapters/in/hadoop-ubunto.md
+    - chapters/in/hadoop-rdma.md
+    - chapters/in/assignments.md
+    - chapters/in/hadoop-comet.md
+    - chapters/in/futuresystems.md
+    - chapters/in/ubuntu.md
+    - chapters/in/old.md
+    - chapters/in/box.md
+    - chapters/in/cm-hadoop.md
+    - chapters/in/ansible.md
+    - chapters/in/datasets.md
+    - chapters/in/pyenv-anaconda.md
+    - chapters/in/vis.md
+    - chapters/in/course1.md
     - chapters/SECTION-REFERENCES.md
+    
 
 # #####################################################################
 # 516
