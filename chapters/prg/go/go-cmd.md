@@ -1,4 +1,4 @@
-# Go CMD :new: {#s-go-cmd}
+# Go CMD {#s-go-cmd}
 
 ## CMD
 
