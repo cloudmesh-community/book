@@ -1,4 +1,4 @@
-# Git Pull Request :new:
+# Git Pull Request
 
 ## Introduction
 
