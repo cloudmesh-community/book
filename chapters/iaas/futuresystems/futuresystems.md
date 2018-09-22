@@ -69,19 +69,12 @@ FutureSystems system resources are located at Indiana University
 (Bloomington). Resources at Indiana University (Bloomington) include a
 
 1.  128-core HP cluster (Bravo),
-
 2.  92-core cloud cluster (Echo),
-
 3.  192-core Tesla GPU cluster (Delta),
-
 4.  3456-core Haswell cluster (Juliet),
-
 5.  126-core NVIDIA K80/Volta GPU cluster (Romeo),
-
 6.  3264-core Knight's Landing cluster (Tango),
-
 7.  480-core Platinum cluster (Tempest),
-
 8.  768-core Platinum cluster (Victor).
 
 Details of the resources are listed in subsequent sections.
@@ -172,12 +165,10 @@ compute nodes consist of SuperMicro X11DPT-PS servers with 2 24-core
 Intel(R) Xeon(R) Platinum 8160 2.10GHz processors, 256GB of memory, 8TB
 of local disk storage, 400GB of NVMe storage, and a Mellanox ConnectX-3
 InfiniBand FDR 56GT/s adapter for high bandwidth, low-latency MPI
-applications. Operating System: RedHat Linux 7.4 (see
-Figure [\[F:victor\]](#F:victor){reference-type="ref"
-reference="F:victor"}).
+applications. Operating System: RedHat Linux 7.4 (see +@fig:victor)
 
 
-![Cabling of Victor[]{label="F:victor"}](images/victor.jpg){width="90%"}
+![Cabling of Victor](images/victor.jpg){#fig:victor}
 
 ### PI Cluster
 
