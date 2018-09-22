@@ -1,15 +1,10 @@
-Word Count with Parallel Python :o:
-===============================
-
-Introduction
-------------
+# Word Count with Parallel Python :new:
 
 We will demonstrate Python's `multiprocessing` API for parallel
 computation by writing a program that counts how many times each word in
 a collection of documents appear.
 
-Generating a Document Collection
---------------------------------
+## Generating a Document Collection
 
 Before we begin, let us write a script that will generate document
 collections by specifying the number of documents and the number of
@@ -20,14 +15,15 @@ consist of random numbers rather than the words of an actual language:
 
     '''Usage: generate_nums.py [-h] NUM_LISTS INTS_PER_LIST MIN_INT MAX_INT DEST_DIR
 
-    Generate random lists of integers and save them as 1.txt, 2.txt, etc.
+    Generate random lists of integers and save them 
+    as 1.txt, 2.txt, etc.
 
     Arguments:
-       NUM_LISTS     The number of lists to create.
-       INTS_PER_LIST The number of integers in each list.
-       MIN_NUM       Each generated integer will be >= MIN_NUM.
-       MAX_NUM       Each generated integer will be <= MAX_NUM.
-       DEST_DIR      A directory where the generated numbers will be stored.
+       NUM_LISTS      The number of lists to create.
+       INTS_PER_LIST  The number of integers in each list.
+       MIN_NUM        Each generated integer will be >= MIN_NUM.
+       MAX_NUM        Each generated integer will be <= MAX_NUM.
+       DEST_DIR       A directory where the generated numbers will be stored.
 
     Options:
       -h --help
@@ -38,7 +34,8 @@ consist of random numbers rather than the words of an actual language:
     from docopt import docopt
 
 
-    def generate_random_lists(num_lists, ints_per_list, min_int, max_int):
+    def generate_random_lists(num_lists, 
+                              ints_per_list, min_int, max_int):
         return [[random.randint(min_int, max_int) \
             for i in range(ints_per_list)] for i in range(num_lists)]
 
@@ -47,16 +44,19 @@ consist of random numbers rather than the words of an actual language:
        args = docopt(__doc__)
        num_lists, ints_per_list, min_int, max_int, dest_dir = [
           int(args['NUM_LISTS']),
-      int(args['INTS_PER_LIST']),
-      int(args['MIN_INT']),
-      int(args['MAX_INT']),
-      args['DEST_DIR']
+          int(args['INTS_PER_LIST']),
+          int(args['MIN_INT']),
+          int(args['MAX_INT']),
+          args['DEST_DIR']
        ]
 
        if not os.path.exists(dest_dir):
           os.makedirs(dest_dir)
 
-       lists = generate_random_lists(num_lists, ints_per_list, min_int, max_int)
+       lists = generate_random_lists(num_lists, 
+                                     ints_per_list, 
+                                     min_int, 
+                                     max_int)
        curr_list = 1
        for lst in lists:
           with open(os.path.join(dest_dir, '%d.txt' % curr_list), 'w') as f:
@@ -66,25 +66,13 @@ consist of random numbers rather than the words of an actual language:
 
 Notice that we are using the
 [docopt](https://pypi.python.org/pypi/docopt) module that you should be
-familiar with from the Intro to Python
-
----
-
-:warning: TODO: add link
-
----
-
-\<python_intro\>
-
-
-tutorial to make the script easy to run from the command line.
+familiar with from the Section [Python DocOpts](#s-python-docopts} to make the script easy to run from the command line.
 
 You can generate a document collection with this script as follows:
 
     python generate_nums.py 1000 10000 0 100 docs-1000-10000
 
-Serial Implementation
----------------------
+## Serial Implementation
 
 A first serial implementation of wordcount is straightforward:
 
@@ -127,8 +115,7 @@ A first serial implementation of wordcount is straightforward:
        counts = wordcount(glob.glob(os.path.join(args['DATA_DIR'], '*.txt')))
        logging.debug(counts)
 
-Serial Implementation Using map and reduce
-------------------------------------------
+## Serial Implementation Using map and reduce
 
 We can improve the serial implementation in anticipation of parallelizing
 the program by making use of Python's `map` and `reduce` functions.
@@ -211,8 +198,7 @@ With this in mind, we can reimplement the wordcount example as follows:
        counts = reduce(merge_counts, [{}] + per_doc_counts)
        logging.debug(counts)
 
-Parallel Implementation
------------------------
+## Parallel Implementation
 
 Drawing on the previous implementation using `map` and `reduce`, we can
 parallelize the implementation using Python's `multiprocessing` API:
@@ -249,8 +235,7 @@ parallelize the implementation using Python's `multiprocessing` API:
        counts = reduce(merge_counts, [{}] + per_doc_counts)
        logging.debug(counts)
 
-Questions
----------
+## Benchmarking
 
 To time each of the examples above, enter it into its own Python file
 and use Linux's `time` command:
@@ -265,26 +250,24 @@ amount of CPU time spent in user-mode code (outside the kernel) within
 the process, that is, only actual CPU time used in executing the
 process.
 
-Run the three different programs (serial, serial w/ map and reduce,
-parallel) and answer the following questions:
+## Excersises
 
-1.  Is there any performance difference between the different versions
-    of the program?
-2.  Does user time significantly differ from real time for any of the
-    versions of the program?
-3.  Experiment with different numbers of processes for the parallel
-    example, starting with 1. What is the performance gain when you goal
-    from 1 to 2 processes? From 2 to 3? When do you stop seeing
-    improvement? (this will depend on your machine architecture)
+E.python.wordcount.1:
 
-Next Steps
-----------
+> Run the three different programs (serial, serial w/ map and reduce,
+> parallel) and answer the following questions:
+> 
+> 1. Is there any performance difference between the different versions
+>    of the program?
+> 2. Does user time significantly differ from real time for any of the
+>    versions of the program?
+> 3. Experiment with different numbers of processes for the parallel
+>    example, starting with 1. What is the performance gain when you goal
+>    from 1 to 2 processes? From 2 to 3? When do you stop seeing
+>    improvement? (this will depend on your machine architecture)
 
-In the next tutorials in this series, we will implement the `wordcount`
-example in Hadoop, Pig, and will deploy it to Chameleon Cloud.
 
-Useful Links
-------------
+# References
 
 * [Map, Filter and Reduce](http://book.pythontips.com/en/latest/map_filter.html)
 * [multiprocessing API](https://docs.python.org/2/library/multiprocessing.html)
