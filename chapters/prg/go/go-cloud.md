@@ -24,7 +24,7 @@ Portable Cloud Programming with Go Cloud:
 * <https://blog.golang.org/go-cloud>
 
 
-## OpenStack from Go (Gregor) :new:
+## OpenStack from Go 
 
 There are multiple API interfaces that allow direct access to
 elementary functionality to controll for example virtual machines in
