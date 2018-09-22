@@ -1,4 +1,4 @@
-# OpenStack :new:
+# OpenStack
 
 ## Introduction
 

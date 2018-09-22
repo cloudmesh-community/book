@@ -1,4 +1,4 @@
-# Architectures :new: {#s-cloud-architectures}
+# Architectures {#s-cloud-architectures}
 
 ---
 

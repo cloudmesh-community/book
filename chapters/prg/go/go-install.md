@@ -1,4 +1,4 @@
-# Installation :new:
+# Installation
 
 In case Go is not installed on your computer it is iease to
 install. Up to date informtion about the install process for your

@@ -114,18 +114,18 @@ The course has the following objectives:
 | :white_check_mark: | 08/31    |         |                    | - [Data Management](s-python-data)[:cloud:][python-data.md] |
 | :white_check_mark: | 08/31    |         |                    | - [Matplotlib](#matplotlib)[:cloud:][python-matplotlib.md] |
 | :white_check_mark: | 08/31    |         |                    | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[:cloud:][python-cmd5.md] |
-| :new:              | 09/13    |         |                    | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
-| :new:              | 09/13    |         |                    | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
+| :white_check_mark: | 09/13    |         |                    | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
+| :white_check_mark: | 09/13    |         |                    | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
 | :white_check_mark: | 09/03    |         |                    | [Data Center][datacenter.md] |
 | :white_check_mark: | 09/10    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-| :new:              | 09/13    |         |                    | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
+| :white_check_mark: | 09/13    |         |                    | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
 | :white_check_mark: | 09/15    |         |                    | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-| :o:                | 09/24    | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[:cloud:][virtualization.md] |
-| :new:              | 09/24    | 5       | Virtualization I   | - [Qemu](#s-qemu)[:cloud:][qemu.md] |
+| :white_check_mark: | 09/24    | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[:cloud:][virtualization.md] |
+| :white_check_mark: | 09/24    | 5       | Virtualization I   | - [Qemu](#s-qemu)[:cloud:][qemu.md] |
 | :white_check_mark: | 09/15    | 6       | Infrastructure     | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
 | :white_check_mark: | 09/17    |         |                    | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
 | :white_check_mark: | 09/17    |         |                    | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
-| :o:                | 09/17    |         |                    | - OpenStack Introduction |
+| :white_check_mark: | 09/17    |         |                    | - [OpenSTack](#s-openstack) [:cloud:][openstack.md] |
 | :white_check_mark: | 09/17    |         | Chameleon Cloud    | - **Chameleon Cloud** |
 | :white_check_mark: | 09/17    |         |                    | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
 | :white_check_mark: | 09/17    |         |                    | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
@@ -205,6 +205,7 @@ Legend markings
 [datacenter.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/datacenter.md
 [bdra.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/nist/bdra.md
 [iaas.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/iaas.md
+[openstack.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/openstack/opensatck.md
 [azure.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/azure/azure.md
 [aws.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md
 [resources.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/resources.md

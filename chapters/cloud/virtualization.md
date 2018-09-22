@@ -158,7 +158,8 @@ We summarize the following *hypervisor* types:
 
 ## Virtualization Approches
 
-Next we look at different virtualization approaches that relate to resource utilization.
+Next we look at different virtualization approaches that relate to
+resource utilization.
 
 ### Full virtualization
 
@@ -178,10 +179,11 @@ hypervisor are called *hypercalls* [@paravsfull-virt].
 
 ## Virtualization Technologies
 
-In this section we cover introduction to underlying virtualization technologies used on some main stream platforms.
+In this section we cover introduction to underlying virtualization
+technologies used on some main stream platforms.
 
-Cloud providers, such as AWS, Azure, and Google, and OpenStack use for example QEMU and KVM technologies
-for compute instance virtualization. 
+Cloud providers, such as AWS, Azure, and Google, and OpenStack use for
+example QEMU and KVM technologies for compute instance virtualization.
 
 ### Selected Hardware Virtualization Technologies
 
@@ -233,25 +235,33 @@ We will be discussing them next.
 for managing virtualization solutions such as provided by KVM and
 Xen. It provides a common management API for them, allowing uniform,
 cross-hypervisor interfaces for higher-level management
-tools. `Libvirt` provides a toolkit to manage virtualization hosts and supports a wide set of languages, such as C, Python, Perl, and Java.
-Drivers are the basic building block for libvirt functionality to support the capability to handle specific hypervisor driver calls. Drivers are discovered and registered during connection processing as part of the `virInitializeAPI`. 
-Each driver has a registration API which loads up the driver specific function references for the libvirt APIs to call. 
-The following is a simplistic view of the hypervisor driver mechanism.
-Furthermore, it provides APIs for management of virtual networks
-and storage on the VM Host Server. The configuration of each VM Guest
-is stored in an XML file [@libvirt]. The official website for
-`libvirt` is located at
+tools. `Libvirt` provides a toolkit to manage virtualization hosts and
+supports a wide set of languages, such as C, Python, Perl, and Java.
+Drivers are the basic building block for libvirt functionality to
+support the capability to handle specific hypervisor driver
+calls. Drivers are discovered and registered during connection
+processing as part of the `virInitializeAPI`.  Each driver has a
+registration API which loads up the driver specific function
+references for the libvirt APIs to call.  The following is a
+simplistic view of the hypervisor driver mechanism.  Furthermore, it
+provides APIs for management of virtual networks and storage on the VM
+Host Server. The configuration of each VM Guest is stored in an XML
+file [@libvirt]. The official website for `libvirt` is located at
 
 * <https://libvirt.org/>
 
 
 
-#### QEMU :new:
+#### QEMU
 
-QEMU is a virtualization technology emulator that allows you to run operating systems and Linux distributions on your current system without installing them or burn their ISO files.
-When used as a machine emulator, QEMU can run OSes and programs made for one machine (e.g. an ARM board) on a different machine (e.g. your own PC). By using dynamic translation, it achieves very good performance.
-QEMU provides two generic functions.  One of them is open source
-machine emulator and the other is a virtualizer.
+QEMU is a virtualization technology emulator that allows you to run
+operating systems and Linux distributions on your current system
+without installing them or burn their ISO files.  When used as a
+machine emulator, QEMU can run OSes and programs made for one machine
+(e.g. an ARM board) on a different machine (e.g. your own PC). By
+using dynamic translation, it achieves very good performance.  QEMU
+provides two generic functions.  One of them is open source machine
+emulator and the other is a virtualizer.
 
 * *Machine emulation:* using it as a machine emulator it runs the OSes
   and programs designed for one machine on a different machine of
@@ -262,7 +272,11 @@ machine emulator and the other is a virtualizer.
   directly on the host CPU. This enables QEMU to achieve near native
   performance.
 
-Once QEMU has been installed, it should be ready to run a guest OS from a disk image. This image is a file that represents the filesystem and OS on a hard disk. From the perspective of the guest OS, it actually is a file on hard disk, and it can create its own filesystem on the virtual disk.
+Once QEMU has been installed, it should be ready to run a guest OS
+from a disk image. This image is a file that represents the filesystem
+and OS on a hard disk. From the perspective of the guest OS, it
+actually is a file on hard disk, and it can create its own filesystem
+on the virtual disk.
 
 QEMU supports either XEN or KVM to enable virtualization. With the
 help of KVM, QEMU can virtualize x86, server and embedded PowerPC,
@@ -301,7 +315,7 @@ The full list of KVM fatures can be found here:
 Among them, some cools features include hot-plug of hardwares
 even CPU and PCI devices. It supports live migration of VMs too.
 
-##### KVM vs QEMU :new:
+##### KVM vs QEMU
 
 KVM includes a fork of the Qemu executable. The QEMU project focuses
 on hardware emulation and portability. KVM focus on the kernel module
@@ -405,7 +419,8 @@ utilize the GUI or the more complex virtual box command interfaces. A
 guest additions package allows compatibility with the host OS, to for
 example allow window management between host and guest OS.
 
-In Section [VirtualBox](#s-virtualbox) we have provided a practical introduction to VirtualBox. 
+In Section [VirtualBox](#s-virtualbox) we have provided a practical
+introduction to VirtualBox.
 
 #### Wine -- Wine is not an emulator
 

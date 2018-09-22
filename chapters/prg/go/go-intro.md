@@ -1,4 +1,4 @@
-# Introduction to Go for Cloud Computing :new: {#s-go-intro}
+# Introduction to Go for Cloud Computing :o: {#s-go-intro}
 
 ---
 

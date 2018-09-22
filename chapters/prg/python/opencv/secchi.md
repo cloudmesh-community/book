@@ -1,4 +1,4 @@
-# Secchi Disk :new: {#s-secchi-disk}
+# Secchi Disk {#s-secchi-disk}
 
 We are developing an autonomous robot boat that you can be part of
 developing within this class. The robot bot is actually measuring
