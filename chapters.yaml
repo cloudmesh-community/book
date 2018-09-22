@@ -80,6 +80,11 @@
     - chapters/SECTION-CONTAINER.md:
         - chapters/container/index.md
         - chapters/container/container.md
+        - chapters/SECTION-KUBERNETES.md:
+            - chapters/container/kubernetes-intro.md
+            - chapters/container/kubernetes-fs.md
+        - chapters/container/exercise.md
+        - chapters/container/glossary.md
         - chapters/SECTION-DOCKER.md:
             - chapters/container/docker-intro.md
             - chapters/container/docker-local.md
@@ -89,14 +94,10 @@
             - chapters/container/docker-hadoop.md
             - chapters/container/docker-hadoop3.md
             - chapters/container/docker-pagerank-example-instruction.md
+            - chapters/container/docker-spark.md            
             - chapters/container/docker-rest.md
-            - chapters/container/docker-spark.md
-        - chapters/container/docker-swarm.md
-        - chapters/SECTION-KUBERNETES.md:
-            - chapters/container/kubernetes-intro.md
-            - chapters/container/kubernetes-fs.md
-        - chapters/container/exercise.md
-        - chapters/container/glossary.md
+            - chapters/container/docker-swarm.md
+        
 
 # MAPREDUCE IS NOT ORGANIZED
 
@@ -144,10 +145,14 @@
 # DRAFT
 # #####################################################################
 
+
 - BOOK_DRAFT:
+    - $ref:ERROR
+    
+- GGGG:
     - $ref:CONTAINER
-    - chapters/iaas/openstack/openstack.md
     - $ref:MAPREDUCE
+    - chapters/iaas/openstack/openstack.md
     - $ref:DRAFTS
     - chapters/SECTION-REFERENCES.md
 

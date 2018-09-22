@@ -5,7 +5,7 @@
 A swarm is a group of machines that are running Docker and joined into
 a cluster. Docker commands are executed on a cluster by a swarm
 manager. The machines in a swarm can be physical or virtual. After
-joining a swarm, they are referred to as **nodes**.
+joining a swarm, they are referred to as *nodes*.
 
 ## Set up your swarm
 
@@ -42,7 +42,7 @@ The first machine acts as the manager, which executes management
 commands and authenticates workers to join the swarm, and the second
 is a worker.
 
-### Instruct `myvm1` to become a swarm manager:
+### Instruct myvm1 to become a swarm manager:
 
 ```bash
 $ docker swarm init
@@ -53,7 +53,7 @@ output should be like this:
 $ docker-machine ssh myvm1 "docker swarm init --advertise-addr <myvm1 ip>"
 ```
 
-Swarm initialized: current node <node ID> is now a manager.
+Swarm initialized: current node `<node ID>` is now a manager.
 
 To add a worker to this swarm, run the following command:
 
@@ -61,11 +61,18 @@ To add a worker to this swarm, run the following command:
 $ docker swarm join--token <token> <myvm ip>:<port>
 ```
   
-To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+To add a manager to this swarm, run
 
-### To construct `myvm2` as a worker node.
+```bash
+$ docker swarm join-token manager'
+```
 
-Copy this command, and send it to `myvm2` via docker-machine ssh to have `myvm2` join your new swarm as a worker:
+and follow the instructions.
+
+### To construct myvm2 as a worker node.
+
+Copy this command, and send it to `myvm2` via docker-machine ssh to
+have `myvm2` join your new swarm as a worker:
 
 ```bash
 $ docker-machine ssh myvm2 "docker swarm join --token <token> <ip>:2377"
@@ -77,15 +84,21 @@ The output should be like this:
 This node joined a swarm as a worker.
 ```
 
-Run `docker-machine ls` to verify that `myvm1` is now the active machine, as indicated by the asterisk next to it.
+Run `docker-machine ls` to verify that `myvm1` is now the active
+machine, as indicated by the asterisk next to it.
 
 The output should be like this:
 
 ```bash
 $ docker-machine ls
+```
+
+The output will look similar to 
+
+```
 NAME    ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER        ERRORS
-myvm1   *        virtualbox   Running   tcp://192.168.99.100:2376           v17.06.2-ce   
-myvm2   -        virtualbox   Running   tcp://192.168.99.101:2376           v17.06.2-ce   
+myvm1   *        virtualbox   Running   tcp://192.168.99.100:2376           v17.06.2-ce
+myvm2   -        virtualbox   Running   tcp://192.168.99.101:2376           v17.06.2-ce
 ```
 
 ## Deploy the application on the swarm manager
@@ -96,15 +109,21 @@ To deploy an application, run the following command to deploy on `myvm1`.
 $ docker stack deploy -c docker-compose.yml getstartedlab
 ```
 
-To verify the services (and associated containers) have been distributed between both `myvm1` and `myvm2`.
+To verify the services and associated containers have been
+distributed between both `myvm1` and `myvm2`.
 
 ```bash
 $ docker stack ps getstartedlab
-
-ID            NAME                  IMAGE                   NODE   DESIRED STATE
-jq2g3qp8nzwx  getstartedlab_web.1   john/get-started:part2  myvm1  Running
-88wgshobzoxl  getstartedlab_web.2   john/get-started:part2  myvm2  Running
-vbb1qbkb0o2z  getstartedlab_web.3   john/get-started:part2  myvm2  Running
-ghii74p9budx  getstartedlab_web.4   john/get-started:part2  myvm1  Running
-0prmarhavs87  getstartedlab_web.5   john/get-started:part2  myvm2  Running
 ```
+
+The output will look similar to 
+
+
+ID     |       NAME        |          IMAGE       |            NODE  |  DESIRED STATE |
+| --- | --- | --- | --- | --- |
+| jq2g... | getstartedlab_web.1 |  john/get-started:part2 | myvm1 | Running |
+| 88wg... | getstartedlab_web.2 |  john/get-started:part2 | myvm2 | Running |
+| vbb1... | getstartedlab_web.3 |  john/get-started:part2 | myvm2 | Running |
+| ghii... | getstartedlab_web.4 |  john/get-started:part2 | myvm1 | Running |
+| 0prm... | getstartedlab_web.5 |  john/get-started:part2 | myvm2 | Running |
+
