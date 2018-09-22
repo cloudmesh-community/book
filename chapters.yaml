@@ -100,18 +100,18 @@
 # MAPREDUCE IS NOT ORGANIZED
 
 - MAPREDUCE:
-    - chapters/mapreduce/hadoop-lectures.md'
-    - chapters/mapreduce/hadoop-installation.md'
-    - chapters/mapreduce/spark-lectures.md'
-    - chapters/mapreduce/spark-installation.md'
-    - chapters/mapreduce/spark-streaming.md'
-    - chapters/mapreduce/spark-udf.md'
-    - chapters/mapreduce/amazon-emr-1.md'
-    - chapters/mapreduce/amazon-emr-2.md'
-    - chapters/mapreduce/twister.md'
-    - chapters/mapreduce/twister-installation.md'
-    - chapters/mapreduce/twister2-example.md'
-    - chapters/mapreduce/harp.md'
+    - chapters/mapreduce/hadoop-lectures.md
+    - chapters/mapreduce/hadoop-installation.md
+    - chapters/mapreduce/spark-lectures.md
+    - chapters/mapreduce/spark-installation.md
+    - chapters/mapreduce/spark-streaming.md
+    - chapters/mapreduce/spark-udf.md
+    - chapters/mapreduce/amazon-emr-1.md
+    - chapters/mapreduce/amazon-emr-2.md
+    - chapters/mapreduce/twister.md
+    - chapters/mapreduce/twister-installation.md
+    - chapters/mapreduce/twister2-example.md
+    - chapters/mapreduce/harp.md
 
 
 # #####################################################################
@@ -137,6 +137,17 @@
 - SERVERLESS:
     - chapters/SECTION-SERVERLESS.md:
         - chapters/iaas/aws/aws-lambda.md
+
+
+# #####################################################################
+# DRAFT
+# #####################################################################
+
+- BOOK_DRAFT:
+    - chapters/iaas/openstack/openstack.md
+    - $ref:CONTAINER
+    - $ref:MAPREDUCE
+    - $ref:DRAFTS    
 
 
 # #####################################################################
