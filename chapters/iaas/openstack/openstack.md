@@ -109,8 +109,7 @@ Web Frontend
  * HORIZON - Dashboard
  
  
- This list just includes the open stack services. Additionally, there are
- several other major component groups such as Operational Services, 
+This list just includes the open stack services. Additionally, there are several other major component groups such as Operational Services, 
  Add-Ons to Services and Bridges for Adjacent Tech listed in the 
  services page at - [OpenStack Services](https://www.openstack.org/software/project-navigator/openstack-components#openstack-services).
  
