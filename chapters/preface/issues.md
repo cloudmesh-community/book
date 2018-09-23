@@ -2,7 +2,7 @@
 
 ---
 
-:warning: The issues are automatically created from Github Issues.
+:warning: The issues are automatically created from Github Issues. Please change them directly in github.
 Do not modify the table.
 
 ---

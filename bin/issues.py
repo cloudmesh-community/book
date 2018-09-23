@@ -34,6 +34,7 @@ def assignee(issue):
 count = 0
 
 if len(issues) > 0:
+    print("")
     print("\section{Github Issues}")
     print()
     print("\\begin{center}")    
@@ -48,3 +49,4 @@ if len(issues) > 0:
             print (line)
     print("\\end{longtable}")
     print("\\end{center}")    
+    print("")
