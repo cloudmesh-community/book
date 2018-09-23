@@ -27,40 +27,48 @@ features:
 
 First we need to make sure the Raspberry Pi is up to date so we can
 install a recent version of docker.  The automated script maintained
-by the Docker project will create a systemd service file and copy the relevant Docker binaries into `/usr/bin/`.
+by the Docker project will create a systemd service file and copy the
+relevant Docker binaries into `/usr/bin/`.
 
 
 ```bash
-$ sudo apt-get update
-$ curl -sSL https://get.docker.com | sh
+pi$ sudo apt-get update
+pi$ curl -sSL https://get.docker.com | sh
 ```
 
-In order for us to start the docker daemon at the next boot, we add it as follows:
+In order for us to start the docker daemon at the next boot, we add it
+as follows:
 			
 ```bash
-$ sudo systemctl enable docker
+pi$ sudo systemctl enable docker
 ```
     
-Now if we reboot, the Docker daemon will start. In case you like to avoid the first reboot, you can use the command:
+Now if we reboot, the Docker daemon will start. In case you like to
+avoid the first reboot, you can use the command:
 
 ```bash
-$ sudo systemctl start docker
+pi$ sudo systemctl start docker
 ```
       
 Naturally you do not have to do this after you reboot the next time.
 
-The Docker client can only be used by `root` or members of the `docker` group.  Thus, let us add the user pi (or your equivalent user) to the docker group using:
+The Docker client can only be used by `root` or members of the
+`docker` group.  Thus, let us add the user pi (or your equivalent
+user) to the docker group using:
 
 ```bash
-$ sudo usermod -aG docker pi
+pi$ sudo usermod -aG docker pi
 ```
 	
-After executing the above command, we log out of the terminal restart it so we are sure the user permissions are available in the shell we use. 
+After executing the above command, we log out of the terminal restart
+it so we are sure the user permissions are available in the shell we
+use.
 
-To test docker is installed successfully, we run the `hello-world` docker image with the command:
+To test docker is installed successfully, we run the `hello-world`
+docker image with the command:
 
 ```bash
-$ docker run hello-world
+pi$ docker run hello-world
 ```
 	
 If Docker is installed properly, we will see a `Hello from Docker!`
@@ -68,30 +76,42 @@ message.
 
 ## Docker Swarm
 
-Swarm is a native clustering and scheduling tool for Docker. Instead of just managing containers on a single server, we can manage containers on a set of servers. The containers will be automatically scheduled on the pool of servers making them appear as a single resource. We will set up and use Docker on a number of Raspberry Pi's install Docker on them and register them into a Docker Swarm.
+Swarm is a native clustering and scheduling tool for Docker. Instead
+of just managing containers on a single server, we can manage
+containers on a set of servers. The containers will be automatically
+scheduled on the pool of servers making them appear as a single
+resource. We will set up and use Docker on a number of Raspberry Pi's
+install Docker on them and register them into a Docker Swarm.
 
 ## Creating a Network of Pi's with docker
 
-In Section ??? we explained how to set up a network of PI's. Here we assume that we start from such a network. The Pi's have all different names, and are registered on the network. Each Pi has the public key installed from the machine where you will login from for setting up the swarm.
+In Section ??? we explained how to set up a network of PI's. Here we
+assume that we start from such a network. The Pi's have all different
+names, and are registered on the network. Each Pi has the public key
+installed from the machine where you will login from for setting up
+the swarm.
 
 Let us assume the names of the hosts are stored in a shell variable called 
 
 	hostnames = (red00 red01 red02 red03 red04)
 
-Naturally, we want to install on these machines docker and register them to the swarm. A variety of tools exist to simplify this process, such as 
+Naturally, we want to install on these machines docker and register
+them to the swarm. A variety of tools exist to simplify this process,
+such as
 
 * parallel shell <https://github.com/vallard/psh>
 * cloudmesh parallel (TODO: find the link)
 
-For now we use this simple shell program to install docker on each of the hosts in the hostnames
+For now we use this simple shell program to install docker on each of
+the hosts in the hostnames
 
-  ```bash
-  hostnames = (red00 red01 red02 red03 red04)
-  for host in "${hostnames[@]}"
-  do
-        ssh pi@$host curl -sSL https://get.docker.com | sh
-  done
-  ```
+```bash
+hostnames = (red00 red01 red02 red03 red04)
+for host in "${hostnames[@]}"
+do
+      ssh pi@$host curl -sSL https://get.docker.com | sh
+done
+```
 
 Save this script in a file called `docker-install.sh` and set the executable rights with 
 
@@ -101,25 +121,36 @@ When we execute it with
 
 	$ docker-install.sh
 	
-It will sequentially install docker on each host. This is not very efficient and only works for a small number of hosts.
+It will sequentially install docker on each host. This is not very
+efficient and only works for a small number of hosts.
 
 
 ## Registering the Pi to the Swarm
 
-Next we need to run on one of the nodes the management node for the swarm to which all others servers register as workers. Although we could run on this node als a worker, we will just run the manager on it as we want to avoid overloading it and make sure it operates smoothly.
+Next we need to run on one of the nodes the management node for the
+swarm to which all others servers register as workers. Although we
+could run on this node als a worker, we will just run the manager on
+it as we want to avoid overloading it and make sure it operates
+smoothly.
 
-We select the first host in our hostlist for it called `red00` Let us assume the host has the ipaddress `<manager-ip-address>`. We can log into this computer and execute the command
+We select the first host in our hostlist for it called `red00` Let us
+assume the host has the ipaddress `<manager-ip-address>`. We can log
+into this computer and execute the command
 
 ```bash
 $ sudo docker swarm init --advertise-addr <manager-ip-address>:2377
 ```
-This command will print out a token that we can use on the workers to register with our swarm. The token will look something like:
+
+This command will print out a token that we can use on the workers to
+register with our swarm. The token will look something like:
 
 	SWMTKN-abc...xyz
 
-Let us use the term `<token>` to indicate the token. To register a worker a two step process is used. 
+Let us use the term `<token>` to indicate the token. To register a
+worker a two step process is used.
 
-If you ever forget the token, you simply can use the following command on the manager
+If you ever forget the token, you simply can use the following command
+on the manager
 
 	$ docker swarm join-token worker
 
@@ -138,7 +169,8 @@ I $ sudo docker node ls
 
 ## Docker Cheat Sheet
 
-The following table is copied from the [docker manual](https://github.com/docker/labs/blob/master/developer-tools/java/chapters/appa-common-commands.adoc)
+The following table is copied from the
+[docker manual](https://github.com/docker/labs/blob/master/developer-tools/java/chapters/appa-common-commands.adoc)
 
 
 <div class="smalltable">

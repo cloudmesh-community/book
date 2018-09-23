@@ -2,7 +2,7 @@
 
 TODO:
 
-- [ ] The tutorial contains some issues
+- [ ] The section contains some issues
 - [ ] It should leverage the NoW setup
 - [ ] A per node setup is used instead of a scripted setup
 - [x] The original text contained too many sections which has been changed
