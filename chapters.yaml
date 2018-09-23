@@ -172,7 +172,16 @@
         - chapters/pi/setup.md
         - chapters/pi/software2.md
         - chapters/pi/slurm.md
-        - chapters/clusters/pi-docker.md
+        - chapters/pi/clusters/pi-docker.md
+    - chapters/SECTION-DRAFT.md:
+        - chapters/pi/cluster/pi-configure-cluster.md
+        - chapters/pi/clusterpi-docker.md
+        - chapters/pi/clusterpi-kubernetes.md
+        - chapters/pi/clusterpi-now.md
+        - chapters/pi/clusterpi-setup.md
+        - chapters/pi/clusterpi-spark.md
+        - chapters/pi/clusterpxe.md
+
     - chapters/SECTION-REFERENCES.md
 
 
