@@ -1,4 +1,4 @@
-# Inotial Setup
+# Initial Setup
 
 ## Password
 
