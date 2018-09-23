@@ -95,11 +95,11 @@ Now you can go in the filed and use the monitor of your choice
 ## Exercises
 
 
-Display.1:
+E.Display.1:
 
 : Configure your Raspberry Pi so you can access it via VNC.
 
-Display.2:
+E.Display.2:
 
 : Make the displaydetect.py truly discoverable, find a default
   resolution that you put in to the else statement. Identify the
