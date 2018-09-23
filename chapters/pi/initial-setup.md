@@ -1,6 +1,6 @@
-## Software
+# Inotial Setup
 
-### Password
+## Password
 
 Before you bring your Raspberry Pi on the networks, you need to reset
 the password. This can be done by starting the terminal and typing in
@@ -12,7 +12,7 @@ The original password is `raspberrypi` and every one knows it. SO if
 you put your pi on the network it is easily compromised. Hence, change
 your password first.
 
-### Locale
+## Locale
 
 You want to also set your system to use your language settings for the
 keyboard. you can do this isn the terminal with 
@@ -26,7 +26,7 @@ or
 or using the GUI.
 
 
-### Wireless Network
+## Wireless Network
 
 The easiest way to continue is to have a wireless network you can
 connect to. We do not recommend that you use for example your IU
@@ -59,7 +59,7 @@ Furthermore, if you are at iu and use ATT-wifi, you need to go with
 your web browser to `http:\\iu.edu` and click on the connect
 button. Sometimes that button is not visible so you need to scroll to it.
 
-### Update
+## Update
 
 We want to update the software and make sure
 everything is up to date. This is done with 
@@ -75,7 +75,7 @@ $ apt-get install <program>
 
 where `<program>` is the name of the software we like to install.
 
-### hostname
+## Hostname
 
 The hostname is stored in `/etc/hostname`. Edit the file and change it
 to a name such as green00, green01, green02, green03, green04, green05.
@@ -95,7 +95,7 @@ SD card on the laptop that does the burning
 
 develop a python script to do that
 
-### Remote access via ssh
+## Remote access via ssh
 
 To enable ssh on the pi you need to say
 
@@ -107,7 +107,7 @@ the authorized_keys file explained later, but for now we will just
 activate ssh.
     
 
-### Editors
+## Editors
 
 Naturally we need a useful editor. We have made good experience with
 emacs as it supports a variety of different formats and is also
@@ -119,11 +119,12 @@ You can install it with
 $ apt-get install <program>
 ```
 
-Other editors include `vim`, `gedit` and so on. If you are concerned
+Other editors include `emacs`, `vim`, `gedit` and so on. If you are concerned
 about space, use `vi` which is pre-installed. If you like to use other
 editors use the command we can install them respectively with 
 
 ```bash
+$ apt-get install emacs
 $ apt-get install vim
 $ apt-get install gedit
 ...
