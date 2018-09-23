@@ -9,6 +9,7 @@ This includes the following:
 * [Cluster using 1 Raspberry Pi as master and 4 Raspberry Zeros as
   workers](#clusterhat-4-zero-1-pi)
 * [Case With Cooling for 5 Pi)](#Cluster-Case-With-Cooling-5-Pi)
+* [Build an Octapi](#s-octapi]
 * [Cluster with 40 Raspberry Pi's](#bitscope-case-40-pi)
 * [Cluster with 144 Raspberry Pi's](#bitscope-cluster-144-pi)
 * [Build Your Own 5 Node Pi Cluster](#build-your-own-5-node-pi-cluster)
@@ -105,6 +106,14 @@ Interesting is also the design of the case that uses snaps instead of
 screws to affix the walls to each other. The case layout can be found at:
 
 * <http://climbers.net/sbc/diy-raspberry-pi-3-cluster-2017/>
+
+## Octapi (8 Pi)
+
+A set of instructions on building an is available at
+
+* <https://projects.raspberrypi.org/en/projects/build-an-octapi>
+
+![Octapi](images/octapi-system.png)
 
 
 ## Bitscope Case (40 Pi)
