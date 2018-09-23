@@ -1,4 +1,4 @@
-## Run Commands at Boot time
+# Run Commands at Boot time
 
 In many cases we need to provide configurations and programs that run
 at boot time.  A number of different methods exist to run commands and
@@ -7,7 +7,7 @@ programs at boot time.
 
 We will be focusing here only a few of them
 
-### rc.local
+## rc.local
 
 On your Pi you will find under `/etc/rc.local` a file in which you can
 list programs that are started up at boot time. The programs should
@@ -22,7 +22,7 @@ the end of your program
 indicating that the start was successful. Programs in rc.local must
 use the absolute file path.
 
-### Crontab
+## Crontab
 
 
 Crontab is a service the schedules jobs that can run at
@@ -63,7 +63,7 @@ file produces output you need to redirect it into a file
 * When the raspberry pi reboots, the program will run automatically.
 
 
-### References
+## References
 
 A good introduction to the various methods is provided at
 
