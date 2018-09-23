@@ -117,21 +117,24 @@ cutter available at Indiana University. The laser cutter is located at
 
 * TBD
 
-and operated by ISE. You can get access to it by contacting Christian
-McKay. Once you have access you will be trained by ...
+and operated by ISE. You can get access to it by contacting the help 
+desk with an email. YOu will need to get certified for operating the 
+laser cutter to use it.
 
-TODO: add contact
+:o: TODO: add contact email
 
-The first step includes to turning on laser cutter. 
+The certification will teach you how to use the laser cutter properly. 
+We will walk you through the steps that you can expect will be tought 
+to you as part of the certification.
 
-First an instructor will demonstrate how to turn the laser cutter on
+The first step includes turning on laser cutter. 
+
+An instructor will demonstrate how to turn the laser cutter on
 and carry out other preparation tasks on how to operate the laser
 cutter. Please get familiar but do not yet touch any buttons from the
 laser cutter.
 
 ![Figure: Control Panel](images/control-panel-laser-cutter.png)
-
-TODO Safety goggles ...
 
 Next the instructor will give you a walk through of the machine so you
 can replicate these steps next time.
