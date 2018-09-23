@@ -173,7 +173,7 @@ issues:
 	../bin/header.sh ../chapters/preface/issues.md 3
 	@echo "# Github Issues\n" > /tmp/issues.md
 	@echo "---\n" >> /tmp/issues.md
-	@echo ":warning: The issues are automatically created from Github Issues." >> /tmp/issues.md
+	@echo ":warning: The issues are automatically created from Github Issues. Please change them directly in github." >> /tmp/issues.md
 	@echo "Do not modify the table.\n"  >> /tmp/issues.md
 	@echo "---\n" >> /tmp/issues.md
 
