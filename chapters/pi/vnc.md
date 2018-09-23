@@ -1,11 +1,11 @@
-## VNC
+# VNC
 
 **Note:** *If you like to connect to your Raspberry from your laptop, we
 recommend to use VNC. If you rather like to connect a monitor and
 keyboard as well as a mouse to the Raspberry, you can skip the steps
 with the VNC update.*
 
-### Setting up VNC
+## Setting up VNC
 
 
 We had some issues with the installed version of VNC that is customized
@@ -32,7 +32,7 @@ Grove sensor related bins and wires.
 Next reboot and double check if the settings are preserved after the
 reboot
 
-#### Install VNC on OSX
+### Install VNC on OSX
 
 To install a vnc server of your liking on your Mac. You find one at
 
@@ -43,7 +43,7 @@ are going to use to virtually control the Pi (there is a version listed
 for Raspberry Pi-- do not download this one. For us this is the Mac
 version.)
 
-#### Run VNC Viewer on OSX
+### Run VNC Viewer on OSX
 
 Once you have downloaded the VNC viewer installed it you can open the
 program. Next you can start vnc viewer and enter the ip address of your

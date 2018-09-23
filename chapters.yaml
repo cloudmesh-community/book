@@ -161,12 +161,12 @@
         - chapters/pi/links.md
     - chapters/pi/exercise.md
     - chapters/SECTION-ONE-PI.md:
-        - chapters/pi2/sd-card.md
-        - chapters/pi/software.md
+        - chapters/pi/sd-card.md
+        - chapters/pi/initial-setup.md
         - chapters/pi/config-display.md
         - chapters/pi/vnc.md
         - chapters/pi/motherboard-led.md
-        - chapters/pi2/run-at-boot.md
+        - chapters/pi/run-at-boot.md
     - chapters/SECTION-TWO-PI.md:
         - chapters/pi/pi-passwordreset.md
         - chapters/pi/setup.md

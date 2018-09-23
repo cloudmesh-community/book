@@ -1,4 +1,4 @@
-## Motherboard LED
+# Motherboard LED
 
 The Raspberry pi contains an LED that can also be used to provide us
 with some information as to the status of the PI. It is usually used
