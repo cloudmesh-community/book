@@ -1,4 +1,4 @@
-# Kubernetes (A)
+# Kubernetes (A) :o:
 
 In this section we discuss how to set up a kubernetes cluster on a
 number of Raspberry Pi's.
