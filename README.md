@@ -5,6 +5,7 @@
 Link |  Class | Description
 |------ | --- | -------------
 [<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for class E516, E416, B649
+[<img src="pi/cover/cover.jpg" width="100px">](vonLaszewski-pi.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for Raspberry PI Clusters for class E516, E416, B649
 [<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
 [<img src="tech/cover/cover.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies 
 [<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| all | Scientific Writing I for all classes
