@@ -14,11 +14,9 @@ We will give a small introduction to the platform next.
 ## Raspberry PI 3 B
 
 Till February 2018 the Raspberry PI 3 B was the newest model. Within
-this class we have access to about 100 of them.
+this class we have access to about 100 of them. The Raspberry PI 3 B is shown in +@fig:pi3 
 
-Figure [Pi3](#F-pi3) shows the Raspberry PI 3 B.
-
-![Figure <a name="F-pi3"></a>: Raspberry PI 3B](./images/pi-3.jpg)
+![Raspberry PI 3B](images/pi-3.jpg){#fig:pi3}
 
 The board has the following properties:
 
@@ -37,11 +35,9 @@ The board has the following properties:
 ## Raspberry PI 3 B+
 
 We plan to purchase a number of them so we can conduct performance
-experiments and leverage the faster hardware.
+experiments and leverage the faster hardware. The newest Raspberry PI 3 B+ is shown in +@fig:pi3.
 
-Figure [Pi3+](#F-pi3p) shows the newest Raspberry PI 3 B+.
-
-![Figure <a name="F-pi3p"></a>: Raspberry PI 3 B+](images/pi3bplus.jpg)
+![Raspberry PI 3 B+](images/pi3bplus.jpg){#fig:pi3bplus}
 
 The board has the following properties:
 
