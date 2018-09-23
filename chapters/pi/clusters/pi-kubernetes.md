@@ -3,6 +3,12 @@
 In this section we discuss how to set up a kubernetes cluster on a
 number of Raspberry Pi's.
 
+## Todo
+
+- [ ] all the simple setup with sd cards, ssh, keys, and so on should be moved to the NOW cluster section. This way we can require simply a NOW and start without duplication on the real kubernetes install.
+- [ ] weh ave two sections of kubernetes contributed by two students. what we need is to merge them and safe the usable things. we need to identify if the setup is significantly different before we can do this.
+- [ ] so before you can work on teh kubernetes section you need to make sure the NOW section is up to date.
+
 ## Resources Needed
 
 We recommend that the cluster will have at least one master and three
