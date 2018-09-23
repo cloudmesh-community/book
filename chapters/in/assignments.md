@@ -262,7 +262,6 @@ in one document and to evaluate if google docs is a good tool for this
 kind of task. Remember we have lots of students and google is used often
 just with small groups.
 
-\smallskip
  [E516 Link to google doc
 $\mapsto$](https://docs.google.com/document/d/1ejzlKYqC3dLac8WXVpcPQsJh1j4BDqRxxgGg1cFQbeQ/edit?usp=sharing)
 
@@ -372,11 +371,11 @@ technology so we know who contributed it. Indicate also if commercial,
 or open source, We are mostly interested in open source activities. Keep
 the list sorted by alphabet. Use a bullet so formatting is preserved
 
-\smallskip
+
 [New Technology List
 $\mapsto$](https://docs.google.com/document/d/1LeHGHTSBbaPXYVor0efhmi5W7JJjS7EQHABHqgRAPuU/edit?usp=sharing)
 
-\smallskip
+
 Example: OpenWhisk, <https://openwhisk.apache.org/>, open source, Gregor
 von Laszewski, e616
 
@@ -432,21 +431,20 @@ Learning outcomes:
 Please review the plagiarism and quoting guidelines chapter in the
 handbook.
 
-\WHERE{\YES}{S:plagiarism}{Week 1}
 The following is an example of how you upload your technology abstracts
 to github.
 
 [Upload Tech Abstract to github
 $\mapsto$](https://github.com/cloudmesh-community/hid-sample/tree/master/technology)
 
-\smallskip
+
 Please direct any questions toward the TA's, additionally there is a
 README available below.
 
  [README
 $\mapsto$](https://github.com/cloudmesh-community/hid-sample/blob/master/technology/README.md)
 
-\smallskip
+
 The report will be generated on Mondays at 9:00 am est and made
 available by 12:00 pm est of the same day.
 

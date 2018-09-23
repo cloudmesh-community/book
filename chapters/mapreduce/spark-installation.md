@@ -1,5 +1,4 @@
-Installation of Spark
-=====================
+# Installation of Spark
 
 In this section we will discuss how to install Spark 2.3.0 in Ubuntu
 16.04.
@@ -166,9 +165,7 @@ installation. Add the following variable in to the spark-env.sh file.
       emacs spark-env.sh
       export SPARK_DIST_CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath)
 
-\centering
-![Spark Web UI - Hadoop
-Path](images/spark-hadoop.png){width="\textwidth" height="\textheight"}
+![Spark Web UI - Hadoop Path](images/spark-hadoop.png)
 
 Test Spark Installation
 -----------------------

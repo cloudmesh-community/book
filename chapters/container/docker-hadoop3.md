@@ -30,7 +30,7 @@ The complete docker image for Hadoop 3.0.1 consumes the storage size of
 $ docker images
 ```
 
-```
+```bash
 REPOSITORY                      TAG                 IMAGE ID            CREATED             SIZE
 cloudmesh/hadoop                3.0.1               ba2c51f94348        20 hours ago        1.5GB
 ```

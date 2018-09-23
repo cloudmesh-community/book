@@ -76,7 +76,7 @@ $ spark-shell --master yarn-client --driver-memory 1g --executor-memory 1g --exe
 
 ### Program in Scala
 
-```
+```scala
 val textFile = sc.textFile("file:///etc/hosts")
 val words = textFile.flatMap(line => line.split("\\s+"))
 val counts = words.map(word => (word, 1)).reduceByKey(_ + _)
@@ -85,8 +85,8 @@ counts.values.sum()
 
 ### Launch PySpark Interactive Shell
 
-```
-pyspark --master yarn-client --driver-memory 1g --executor-memory 1g --executor-cores 1
+```bash
+$ pyspark --master yarn-client --driver-memory 1g --executor-memory 1g --executor-cores 1
 ```
 
 ### Program in Python
@@ -193,8 +193,7 @@ Browser](images/docker-spark-jup-1.png)
 First navigate to the work folder. Let us create a new python file here.
 Click python3 in the new menu.
 
-\centering
-![Create a new python file](images/docker-spark-jup-2.png){width="100%"}
+![Create a new python file](images/docker-spark-jup-2.png)
 
 Now add the following content in the new file. In Jupyter notebook, you
 can enter a python command or python code and press

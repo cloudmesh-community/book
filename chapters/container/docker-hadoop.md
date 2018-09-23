@@ -113,7 +113,7 @@ $ hadoop fs -ls exer1_input/
 
 If uploading is completed, you may see file listings like:
 
-```
+```bash
 Found 10 items
 -rw-r--r-- 1 root supergroup  13942 2018-02-28 23:16 exer1_input/data_1000.txt
 -rw-r--r-- 1 root supergroup 139225 2018-02-28 23:16 exer1_input/data_10000.txt

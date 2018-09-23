@@ -20,13 +20,13 @@ $ ./compileAndExecHadoopPageRank.sh PageRankDataGenerator/pagerank5000g50.input.
 
 Result will look like
 
-```
+```bash
 output.pagerank/part-r-00000
 ```
 
 The head of the result will look like 
 
-```
+```bash
 head output.pagerank/part-r-00000
 ```
 
