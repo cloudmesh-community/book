@@ -1,5 +1,15 @@
 # Raspberry PI Spark Cluster :o:
 
+## Todo
+
+- [ ] all the simple setup with sd cards, ssh, keys, and so on should be moved to the NOW cluster section. This way we can require simply a NOW and start without duplication on the real kubernetes install.
+- [ ] so before you can work on the section you need to make sure the NOW section is up to date.
+- [ ] The section contains some issues
+- [ ] A per node setup is used instead of a scripted setup
+- [ ] Some text in the later part is unclear
+
+## Links
+
 See another effort documented at:
 
 * Edge Computing and Big Data Processing using Raspberry Pi
@@ -8,19 +18,17 @@ Naveen Kaul
 * Benchmarking Hadoop and Spark on Mutiple Platforms
 <http://cyberaide.org/papers/vonLaszewski-cloud-vol-9.pdf#page=27&zoom=100,0,96>
 
-TODO:
 
-- [ ] The section contains some issues
-- [ ] It should leverage the NoW setup
-- [ ] A per node setup is used instead of a scripted setup
-- [x] The original text contained too many sections which has been changed
-- [ ] Some text in teh later part is unclear
+## About 
 
 We provide step-by-step instructions on installing a Spark cluster on
 a pre-installed hadoop on a cluster of raspberry pi. To start we
-assume you have Hadoop installed. THis is achieved by following the
+assume you have Hadoop installed. This is achieved by following the
 instructions provided 
 in
+
+:warning: this link needs to be changed, we also need to identify if the hadoop 
+install for pi is different from the regular hadoop install
 
 * <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
 
@@ -29,7 +37,7 @@ install Hadoop on Pi cluster. Verify that the cluster is properly
 installed. After that proceed by going to the home directory
 
 ```bash
-    $ cd ~
+$ cd ~
 ```
 
 
@@ -59,8 +67,8 @@ wget http://apache.claz.org/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
 Create the folder for storing spark install files
 
 ```bash 
-sudo mkdir -p /opt/spark-2.3.0
-sudo chown -R hduser:hadoop /opt/spark-2.3.0 
+$ sudo mkdir -p /opt/spark-2.3.0
+$ sudo chown -R hduser:hadoop /opt/spark-2.3.0 
 ```
 
 Unzip the tar fle into destination folder
@@ -70,31 +78,31 @@ Unzip the tar fle into destination folder
 Update the `PATH` variable
 
 ```bash 
-echo "export SPARK_HOME=/opt/spark-2.3.0" >> ~\.bashrc
-echo "export PATH=$PATH:$SPARK_HOME/bin" >> ~\.bashrc
-echo "export PATH=$PATH:$SPARK_HOME/sbin" >> ~\.bashrc
-source ~/.bashrc 
+$ echo "export SPARK_HOME=/opt/spark-2.3.0" >> ~\.bashrc
+$ echo "export PATH=$PATH:$SPARK_HOME/bin" >> ~\.bashrc
+$ echo "export PATH=$PATH:$SPARK_HOME/sbin" >> ~\.bashrc
+$ source ~/.bashrc 
 ```
 
 Copy the template from `spark-env.sh.template` to `spark-env.sh`
 
 ```bash 
-cp $SPARK_HOME/spark-env.sh.template $SPARK_HOME/spark-env.sh 
+$ cp $SPARK_HOME/spark-env.sh.template $SPARK_HOME/spark-env.sh 
 ```
 
 Edit spark-env.sh file to change configurations
 
 
 ```bash 
-vi $SPARK_HOME/spark-env.sh 
+$ nano $SPARK_HOME/spark-env.sh 
 ```
 
 Edit slaves file on master node
 
 ```bash 
-cd $SPARK_HOME/conf
-cp slaves.template slaves
-vi slaves
+$ cd $SPARK_HOME/conf
+$ cp slaves.template slaves
+$ nano slaves
 ``` 
 
 Update the configurations
@@ -147,22 +155,22 @@ Alternative to running above steps for each worker node, you can run
 the the following command on each worked node to create spark directory
 
 ```bash 
-sudo mkdir -p /opt/spark-2.3.0`
-sudo chown -R hduser:hadoop /opt/spark-2.3.0
+$ sudo mkdir -p /opt/spark-2.3.0`
+$ sudo chown -R hduser:hadoop /opt/spark-2.3.0
 ```
 
 Run next you can copy the configuration as follows:
 
 ``` bash
-rsync -avxP /opt/spark-2.3.0 hduser@pislave:/opt
+$ rsync -avxP /opt/spark-2.3.0 hduser@pislave:/opt
 ```
 
 Run the previous command only after creating the /opt/spark-2.3.0 on
 all worker nodes
 
 ```bash 
-sudo mkdir -p /opt/spark-2.3.0
-sudo chown -R hduser:hadoop /opt/spark-2.3.0
+$ sudo mkdir -p /opt/spark-2.3.0
+$ sudo chown -R hduser:hadoop /opt/spark-2.3.0
 ```
 
 :warning: this seems duplicated
@@ -171,9 +179,9 @@ Next you need to set the spark home and add it to your path on all
 worker nodes
 
 ```bash 
-echo "export SPARK_HOME=/opt/spark-2.3.0"
-echo "export PATH=$PATH:$SPARK_HOME/bin"
-source ~/.bashrc
+$ echo "export SPARK_HOME=/opt/spark-2.3.0"
+$ echo "export PATH=$PATH:$SPARK_HOME/bin"
+$ source ~/.bashrc
 ```
 
 Finally you need to start the spark server and workers by running the
