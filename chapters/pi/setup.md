@@ -141,14 +141,14 @@ find out how to set up vnc so you can login into the PI and see its GUI
 * <https://www.raspberrypi.org/documentation/remote-access/vnc/>
 
 ```bash
-    alias IP=<IPADDRESSOFPI>
+host$ alias IP=<IPADDRESSOFPI>
+host$ sh pi@$IP
 
-    sh pi@$IP
-    pi@IP's password: 
-    Linux raspberrypi 3.10.25+ #622 PREEMPT Fri Feb 3 20:00:00 GMT 2018 armv6l
-    pi@raspberrypi ~ $ sudo apt-get tightvncserver   # download the VNC server
-    pi@raspberrypi ~ $ tightvncserver                # start the VNC server
-    pi@raspberrypi ~ $ vncserver :0 -geometry 1920x1080 -depth 24  #start a VNC session
+pi@IP's password: 
+Linux raspberrypi 3.10.25+ #622 PREEMPT Fri Feb 3 20:00:00 GMT 2018 armv6l
+pi@raspberrypi ~ $ sudo apt-get tightvncserver   # download the VNC server
+pi@raspberrypi ~ $ tightvncserver                # start the VNC server
+pi@raspberrypi ~ $ vncserver :0 -geometry 1920x1080 -depth 24  #start a VNC session
 ```
 
 
