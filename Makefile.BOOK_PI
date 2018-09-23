@@ -14,27 +14,29 @@ INDEX=\
   chapters/SECTION-ONE-PI.md\
   chapters/pi/sd-card.md\
   chapters/pi/initial-setup.md\
+  chapters/pi/pi-passwordreset.md\
   chapters/pi/config-display.md\
   chapters/pi/vnc.md\
   chapters/pi/motherboard-led.md\
   chapters/pi/run-at-boot.md\
-  chapters/SECTION-TWO-PI.md\
-  chapters/pi/pi-passwordreset.md\
-  chapters/pi/setup.md\
   chapters/pi/software2.md\
+  chapters/SECTION-PI-SETUP.md\
+  chapters/pi/setup.md\
+  chapters/SECTION-PI-CLUSTER-TRADITIONAL.md\
+  chapters/pi/clusters/pi-now.md\
+  chapters/pi/mpi.md\
   chapters/pi/slurm.md\
-  chapters/pi/clusters/pi-docker.md\
+  chapters/pi/clusters/pxe.md\
+  chapters/pi/fortran.md\
   chapters/SECTION-DRAFT.md\
-  chapters/pi/cluster/pi-configure-cluster.md\
-  chapters/pi/clusterpi-docker.md\
-  chapters/pi/clusterpi-kubernetes.md\
-  chapters/pi/clusterpi-now.md\
-  chapters/pi/clusterpi-setup.md\
-  chapters/pi/clusterpi-spark.md\
-  chapters/pi/clusterpxe.md\
+  chapters/pi/clusters/pi-configure-cluster.md\
+  chapters/pi/clusters/pi-docker.md\
+  chapters/pi/clusters/pi-kubernetes.md\
+  chapters/pi/clusters/pi-setup.md\
+  chapters/pi/clusters/pi-spark.md\
   chapters/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/SECTION-ONE-PI.md dest/chapters/pi/sd-card.md dest/chapters/pi/initial-setup.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/SECTION-TWO-PI.md dest/chapters/pi/pi-passwordreset.md dest/chapters/pi/setup.md dest/chapters/pi/software2.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/SECTION-DRAFT.md dest/chapters/pi/cluster/pi-configure-cluster.md dest/chapters/pi/clusterpi-docker.md dest/chapters/pi/clusterpi-kubernetes.md dest/chapters/pi/clusterpi-now.md dest/chapters/pi/clusterpi-setup.md dest/chapters/pi/clusterpi-spark.md dest/chapters/pi/clusterpxe.md dest/chapters/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/SECTION-ONE-PI.md dest/chapters/pi/sd-card.md dest/chapters/pi/initial-setup.md dest/chapters/pi/pi-passwordreset.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/software2.md dest/chapters/SECTION-PI-SETUP.md dest/chapters/pi/setup.md dest/chapters/SECTION-PI-CLUSTER-TRADITIONAL.md dest/chapters/pi/clusters/pi-now.md dest/chapters/pi/mpi.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pxe.md dest/chapters/pi/fortran.md dest/chapters/SECTION-DRAFT.md dest/chapters/pi/clusters/pi-configure-cluster.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/pi/clusters/pi-kubernetes.md dest/chapters/pi/clusters/pi-setup.md dest/chapters/pi/clusters/pi-spark.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -98,6 +100,10 @@ dest/chapters/pi/initial-setup.md: ../chapters/pi/initial-setup.md
 	../bin/markup-single.py ../chapters/pi/initial-setup.md 2
 	../bin/header.py dest/chapters/pi/initial-setup.md 2
 
+dest/chapters/pi/pi-passwordreset.md: ../chapters/pi/pi-passwordreset.md
+	../bin/markup-single.py ../chapters/pi/pi-passwordreset.md 2
+	../bin/header.py dest/chapters/pi/pi-passwordreset.md 2
+
 dest/chapters/pi/config-display.md: ../chapters/pi/config-display.md
 	../bin/markup-single.py ../chapters/pi/config-display.md 2
 	../bin/header.py dest/chapters/pi/config-display.md 2
@@ -114,61 +120,65 @@ dest/chapters/pi/run-at-boot.md: ../chapters/pi/run-at-boot.md
 	../bin/markup-single.py ../chapters/pi/run-at-boot.md 2
 	../bin/header.py dest/chapters/pi/run-at-boot.md 2
 
-dest/chapters/SECTION-TWO-PI.md: ../chapters/SECTION-TWO-PI.md
-	../bin/markup-single.py ../chapters/SECTION-TWO-PI.md 1
-	../bin/header.py dest/chapters/SECTION-TWO-PI.md 1
+dest/chapters/pi/software2.md: ../chapters/pi/software2.md
+	../bin/markup-single.py ../chapters/pi/software2.md 2
+	../bin/header.py dest/chapters/pi/software2.md 2
 
-dest/chapters/pi/pi-passwordreset.md: ../chapters/pi/pi-passwordreset.md
-	../bin/markup-single.py ../chapters/pi/pi-passwordreset.md 2
-	../bin/header.py dest/chapters/pi/pi-passwordreset.md 2
+dest/chapters/SECTION-PI-SETUP.md: ../chapters/SECTION-PI-SETUP.md
+	../bin/markup-single.py ../chapters/SECTION-PI-SETUP.md 1
+	../bin/header.py dest/chapters/SECTION-PI-SETUP.md 1
 
 dest/chapters/pi/setup.md: ../chapters/pi/setup.md
 	../bin/markup-single.py ../chapters/pi/setup.md 2
 	../bin/header.py dest/chapters/pi/setup.md 2
 
-dest/chapters/pi/software2.md: ../chapters/pi/software2.md
-	../bin/markup-single.py ../chapters/pi/software2.md 2
-	../bin/header.py dest/chapters/pi/software2.md 2
+dest/chapters/SECTION-PI-CLUSTER-TRADITIONAL.md: ../chapters/SECTION-PI-CLUSTER-TRADITIONAL.md
+	../bin/markup-single.py ../chapters/SECTION-PI-CLUSTER-TRADITIONAL.md 1
+	../bin/header.py dest/chapters/SECTION-PI-CLUSTER-TRADITIONAL.md 1
+
+dest/chapters/pi/clusters/pi-now.md: ../chapters/pi/clusters/pi-now.md
+	../bin/markup-single.py ../chapters/pi/clusters/pi-now.md 2
+	../bin/header.py dest/chapters/pi/clusters/pi-now.md 2
+
+dest/chapters/pi/mpi.md: ../chapters/pi/mpi.md
+	../bin/markup-single.py ../chapters/pi/mpi.md 2
+	../bin/header.py dest/chapters/pi/mpi.md 2
 
 dest/chapters/pi/slurm.md: ../chapters/pi/slurm.md
 	../bin/markup-single.py ../chapters/pi/slurm.md 2
 	../bin/header.py dest/chapters/pi/slurm.md 2
 
-dest/chapters/pi/clusters/pi-docker.md: ../chapters/pi/clusters/pi-docker.md
-	../bin/markup-single.py ../chapters/pi/clusters/pi-docker.md 2
-	../bin/header.py dest/chapters/pi/clusters/pi-docker.md 2
+dest/chapters/pi/clusters/pxe.md: ../chapters/pi/clusters/pxe.md
+	../bin/markup-single.py ../chapters/pi/clusters/pxe.md 2
+	../bin/header.py dest/chapters/pi/clusters/pxe.md 2
+
+dest/chapters/pi/fortran.md: ../chapters/pi/fortran.md
+	../bin/markup-single.py ../chapters/pi/fortran.md 2
+	../bin/header.py dest/chapters/pi/fortran.md 2
 
 dest/chapters/SECTION-DRAFT.md: ../chapters/SECTION-DRAFT.md
 	../bin/markup-single.py ../chapters/SECTION-DRAFT.md 1
 	../bin/header.py dest/chapters/SECTION-DRAFT.md 1
 
-dest/chapters/pi/cluster/pi-configure-cluster.md: ../chapters/pi/cluster/pi-configure-cluster.md
-	../bin/markup-single.py ../chapters/pi/cluster/pi-configure-cluster.md 2
-	../bin/header.py dest/chapters/pi/cluster/pi-configure-cluster.md 2
+dest/chapters/pi/clusters/pi-configure-cluster.md: ../chapters/pi/clusters/pi-configure-cluster.md
+	../bin/markup-single.py ../chapters/pi/clusters/pi-configure-cluster.md 2
+	../bin/header.py dest/chapters/pi/clusters/pi-configure-cluster.md 2
 
-dest/chapters/pi/clusterpi-docker.md: ../chapters/pi/clusterpi-docker.md
-	../bin/markup-single.py ../chapters/pi/clusterpi-docker.md 2
-	../bin/header.py dest/chapters/pi/clusterpi-docker.md 2
+dest/chapters/pi/clusters/pi-docker.md: ../chapters/pi/clusters/pi-docker.md
+	../bin/markup-single.py ../chapters/pi/clusters/pi-docker.md 2
+	../bin/header.py dest/chapters/pi/clusters/pi-docker.md 2
 
-dest/chapters/pi/clusterpi-kubernetes.md: ../chapters/pi/clusterpi-kubernetes.md
-	../bin/markup-single.py ../chapters/pi/clusterpi-kubernetes.md 2
-	../bin/header.py dest/chapters/pi/clusterpi-kubernetes.md 2
+dest/chapters/pi/clusters/pi-kubernetes.md: ../chapters/pi/clusters/pi-kubernetes.md
+	../bin/markup-single.py ../chapters/pi/clusters/pi-kubernetes.md 2
+	../bin/header.py dest/chapters/pi/clusters/pi-kubernetes.md 2
 
-dest/chapters/pi/clusterpi-now.md: ../chapters/pi/clusterpi-now.md
-	../bin/markup-single.py ../chapters/pi/clusterpi-now.md 2
-	../bin/header.py dest/chapters/pi/clusterpi-now.md 2
+dest/chapters/pi/clusters/pi-setup.md: ../chapters/pi/clusters/pi-setup.md
+	../bin/markup-single.py ../chapters/pi/clusters/pi-setup.md 2
+	../bin/header.py dest/chapters/pi/clusters/pi-setup.md 2
 
-dest/chapters/pi/clusterpi-setup.md: ../chapters/pi/clusterpi-setup.md
-	../bin/markup-single.py ../chapters/pi/clusterpi-setup.md 2
-	../bin/header.py dest/chapters/pi/clusterpi-setup.md 2
-
-dest/chapters/pi/clusterpi-spark.md: ../chapters/pi/clusterpi-spark.md
-	../bin/markup-single.py ../chapters/pi/clusterpi-spark.md 2
-	../bin/header.py dest/chapters/pi/clusterpi-spark.md 2
-
-dest/chapters/pi/clusterpxe.md: ../chapters/pi/clusterpxe.md
-	../bin/markup-single.py ../chapters/pi/clusterpxe.md 2
-	../bin/header.py dest/chapters/pi/clusterpxe.md 2
+dest/chapters/pi/clusters/pi-spark.md: ../chapters/pi/clusters/pi-spark.md
+	../bin/markup-single.py ../chapters/pi/clusters/pi-spark.md 2
+	../bin/header.py dest/chapters/pi/clusters/pi-spark.md 2
 
 dest/chapters/SECTION-REFERENCES.md: ../chapters/SECTION-REFERENCES.md
 	../bin/markup-single.py ../chapters/SECTION-REFERENCES.md 1

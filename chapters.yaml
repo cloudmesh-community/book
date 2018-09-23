@@ -163,24 +163,27 @@
     - chapters/SECTION-ONE-PI.md:
         - chapters/pi/sd-card.md
         - chapters/pi/initial-setup.md
+        - chapters/pi/pi-passwordreset.md        
         - chapters/pi/config-display.md
         - chapters/pi/vnc.md
         - chapters/pi/motherboard-led.md
         - chapters/pi/run-at-boot.md
-    - chapters/SECTION-TWO-PI.md:
-        - chapters/pi/pi-passwordreset.md
+        - chapters/pi/software2.md        
+    - chapters/SECTION-PI-SETUP.md:
         - chapters/pi/setup.md
-        - chapters/pi/software2.md
+    - chapters/SECTION-PI-CLUSTER-TRADITIONAL.md:
+        - chapters/pi/clusters/pi-now.md        
+        - chapters/pi/mpi.md        
         - chapters/pi/slurm.md
-        - chapters/pi/clusters/pi-docker.md
+        - chapters/pi/clusters/pxe.md
+        - chapters/pi/fortran.md
     - chapters/SECTION-DRAFT.md:
-        - chapters/pi/cluster/pi-configure-cluster.md
-        - chapters/pi/clusterpi-docker.md
-        - chapters/pi/clusterpi-kubernetes.md
-        - chapters/pi/clusterpi-now.md
-        - chapters/pi/clusterpi-setup.md
-        - chapters/pi/clusterpi-spark.md
-        - chapters/pi/clusterpxe.md
+        - chapters/pi/clusters/pi-configure-cluster.md
+        - chapters/pi/clusters/pi-docker.md
+        - chapters/pi/clusters/pi-kubernetes.md
+        - chapters/pi/clusters/pi-setup.md
+        - chapters/pi/clusters/pi-spark.md
+
 
     - chapters/SECTION-REFERENCES.md
 
