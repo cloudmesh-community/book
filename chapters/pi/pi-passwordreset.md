@@ -1,9 +1,8 @@
-
-## Change Password on the SD-Card :o:
+# Change Password on the SD-Card :o:
 
 from 418
 
-Gregor: Incomplete description, unclear
+:o: Incomplete description, unclear, possibly duplicated
 
 * Unplug the raspberry pi cluster and remove the SD card from the slot
 * Insert the SD card into a computer, and make sure we should have
