@@ -5,6 +5,13 @@ send sometimes visual clues about its operations. This can be done via
 displays and LEDs. In case no display is available we can even connect
 to the PI with a virtual display redirection.
 
+## Default Display Setup
+
+The raspberry pi comes with a defualt setup and any modern HDMI enabled 
+TV or monitor will most likely work out of the box without any modifications. 
+Just plug the HDMI cable in and start the Pi and you will probably see some 
+boot messages and after a while see the splash screen for your installed 
+operating system.
 
 ## Automatic Display Detection
 
