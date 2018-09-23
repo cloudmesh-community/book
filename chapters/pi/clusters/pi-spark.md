@@ -1,5 +1,13 @@
 # Raspberry PI Spark Cluster :o:
 
+See another effort documented at:
+
+* Edge Computing and Big Data Processing using Raspberry Pi
+Naveen Kaul
+<http://cyberaide.org/papers/vonLaszewski-cloud-vol-9.pdf#page=104&zoom=100,0,96>
+* Benchmarking Hadoop and Spark on Mutiple Platforms
+<http://cyberaide.org/papers/vonLaszewski-cloud-vol-9.pdf#page=27&zoom=100,0,96>
+
 TODO:
 
 - [ ] The section contains some issues
