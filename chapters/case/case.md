@@ -1,6 +1,6 @@
-## IU 100 Node Cluster Case :construction:
+## IU 100 Node Cluster Case :o:
 
-At Indiana University we have currently about 100 Raspberry Pi's
+At Indiana University we have currently about 200 Raspberry Pi's
 available for students that work with us as part of classes.
 
 Our goal for the use of these PI's is multitude.
