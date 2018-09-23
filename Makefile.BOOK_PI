@@ -28,15 +28,16 @@ INDEX=\
   chapters/pi/slurm.md\
   chapters/pi/clusters/pxe.md\
   chapters/pi/fortran.md\
+  chapters/SECTION-PI-CLUSTER-CLOUD.md\
+  chapters/pi/clusters/pi-spark.md\
   chapters/SECTION-DRAFT.md\
   chapters/pi/clusters/pi-configure-cluster.md\
   chapters/pi/clusters/pi-docker.md\
   chapters/pi/clusters/pi-kubernetes.md\
   chapters/pi/clusters/pi-setup.md\
-  chapters/pi/clusters/pi-spark.md\
   chapters/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/SECTION-ONE-PI.md dest/chapters/pi/sd-card.md dest/chapters/pi/initial-setup.md dest/chapters/pi/pi-passwordreset.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/software2.md dest/chapters/SECTION-PI-SETUP.md dest/chapters/pi/setup.md dest/chapters/SECTION-PI-CLUSTER-TRADITIONAL.md dest/chapters/pi/clusters/pi-now.md dest/chapters/pi/mpi.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pxe.md dest/chapters/pi/fortran.md dest/chapters/SECTION-DRAFT.md dest/chapters/pi/clusters/pi-configure-cluster.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/pi/clusters/pi-kubernetes.md dest/chapters/pi/clusters/pi-setup.md dest/chapters/pi/clusters/pi-spark.md dest/chapters/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/SECTION-ONE-PI.md dest/chapters/pi/sd-card.md dest/chapters/pi/initial-setup.md dest/chapters/pi/pi-passwordreset.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/software2.md dest/chapters/SECTION-PI-SETUP.md dest/chapters/pi/setup.md dest/chapters/SECTION-PI-CLUSTER-TRADITIONAL.md dest/chapters/pi/clusters/pi-now.md dest/chapters/pi/mpi.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pxe.md dest/chapters/pi/fortran.md dest/chapters/SECTION-PI-CLUSTER-CLOUD.md dest/chapters/pi/clusters/pi-spark.md dest/chapters/SECTION-DRAFT.md dest/chapters/pi/clusters/pi-configure-cluster.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/pi/clusters/pi-kubernetes.md dest/chapters/pi/clusters/pi-setup.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -156,6 +157,14 @@ dest/chapters/pi/fortran.md: ../chapters/pi/fortran.md
 	../bin/markup-single.py ../chapters/pi/fortran.md 2
 	../bin/header.py dest/chapters/pi/fortran.md 2
 
+dest/chapters/SECTION-PI-CLUSTER-CLOUD.md: ../chapters/SECTION-PI-CLUSTER-CLOUD.md
+	../bin/markup-single.py ../chapters/SECTION-PI-CLUSTER-CLOUD.md 1
+	../bin/header.py dest/chapters/SECTION-PI-CLUSTER-CLOUD.md 1
+
+dest/chapters/pi/clusters/pi-spark.md: ../chapters/pi/clusters/pi-spark.md
+	../bin/markup-single.py ../chapters/pi/clusters/pi-spark.md 2
+	../bin/header.py dest/chapters/pi/clusters/pi-spark.md 2
+
 dest/chapters/SECTION-DRAFT.md: ../chapters/SECTION-DRAFT.md
 	../bin/markup-single.py ../chapters/SECTION-DRAFT.md 1
 	../bin/header.py dest/chapters/SECTION-DRAFT.md 1
@@ -175,10 +184,6 @@ dest/chapters/pi/clusters/pi-kubernetes.md: ../chapters/pi/clusters/pi-kubernete
 dest/chapters/pi/clusters/pi-setup.md: ../chapters/pi/clusters/pi-setup.md
 	../bin/markup-single.py ../chapters/pi/clusters/pi-setup.md 2
 	../bin/header.py dest/chapters/pi/clusters/pi-setup.md 2
-
-dest/chapters/pi/clusters/pi-spark.md: ../chapters/pi/clusters/pi-spark.md
-	../bin/markup-single.py ../chapters/pi/clusters/pi-spark.md 2
-	../bin/header.py dest/chapters/pi/clusters/pi-spark.md 2
 
 dest/chapters/SECTION-REFERENCES.md: ../chapters/SECTION-REFERENCES.md
 	../bin/markup-single.py ../chapters/SECTION-REFERENCES.md 1

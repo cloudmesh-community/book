@@ -177,12 +177,14 @@
         - chapters/pi/slurm.md
         - chapters/pi/clusters/pxe.md
         - chapters/pi/fortran.md
+    - chapters/SECTION-PI-CLUSTER-CLOUD.md:
+        - chapters/pi/clusters/pi-docker.md            
+        - chapters/pi/clusters/pi-spark.md
     - chapters/SECTION-DRAFT.md:
         - chapters/pi/clusters/pi-configure-cluster.md
-        - chapters/pi/clusters/pi-docker.md
         - chapters/pi/clusters/pi-kubernetes.md
         - chapters/pi/clusters/pi-setup.md
-        - chapters/pi/clusters/pi-spark.md
+
 
 
     - chapters/SECTION-REFERENCES.md

@@ -92,6 +92,76 @@ Now you can go in the filed and use the monitor of your choice
 2. look at the preferred resolution
 3. create an new condition in the switch
 
+
+## Using the Laptop as a monitor
+
+In case you do not have a monitor at hand there are various ways on
+using your computer as a monitor fo the Pi. The initial setup is
+recommended to do with an HDMI monitor. There are instructions on the
+Web that will let you set up the PI even without such a monitor, but
+here we go the simpler route to set it up once, so you can access it
+without monitor once you completed the setup.
+
+First, install the remote desktop program on the Pi with
+
+```bash
+pi$ sudo apt-get install xrdp
+```
+
+Second, connect now your Laptop with an an ethernet cable to the
+Laptop. As services start up automatically, you will have to wait for
+a while. till the LAptop has assigned an IP address. Furthermore you
+may need to allow the Laptop to assign DHCP addresses when you plug in
+the ethernet cable.
+
+:o: we could need your help here telling us how you do this for your
+machine.
+
+After some time you will see that the Laptop has assigned an ip
+address
+
+You can run on your Pi, but also on your Laptop (if it supports
+`ifconfig`)
+
+the command
+
+```bash
+pi$ ifconfig
+```
+
+and on your laptop
+
+```bash
+laptop$ ifconfig
+```
+
+
+You will see the typical output from `ifconfig`
+
+look on the pi for the line that starts with
+
+`inet addr`
+
+it will be followed by an ip address such as
+
+`192.168.10.1`
+
+Now you can connect to this address, with the help of a program such
+as *Remote Desktop Connection* on Windows or Bonjour on OSX.
+
+Type in the ip address and you will see the desktop.
+
+In order to avoid always having to do the first step and getting
+different ip addresses, we recommend that you set up a static address
+for the raspberry.
+
+:o: please help identifying how to do this
+
+:warning: We recommend not to use the WiFi and the ethernet adapter at the same
+time as it can come to issues when you boot them up while they are
+both connected.
+ 
+
 ## Exercises
 
 
