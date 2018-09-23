@@ -26,7 +26,8 @@ All options will use the default setting if not specified during cluster
 :   define. Try `cm cluster help` command to see what options
     `cm cluster define` has and means, here is part of the usage
     information: :
-```
+
+```bash
 $ cm cluster help
 
 usage: cluster create [-n NAME] [-c COUNT] [-C
@@ -50,11 +51,12 @@ Options:
 Floating IP is a valuable and limited resource on cloud.
 
 `cm cluster define` will assign floating IP to every node within the
-    cluster by default. Cluster creation will fail if the floating IPs
-    run out on cloud. When you run into error like this, use option `-I`
-    or `--no-floating-ip` to avoid assigning floating IPs during cluster
-    creation:
-```
+cluster by default. Cluster creation will fail if the floating IPs run
+out on cloud. When you run into error like this, use option `-I` or
+`--no-floating-ip` to avoid assigning floating IPs during cluster
+creation:
+
+```bash
 $ cm cluster define --count 3 --no-floating-ip
 ```
 

@@ -90,8 +90,8 @@ port inside the container (8888) to an external port of the cluster node
 (9001) so the service could be accessed from the Internet. In this
 example, you can then visit the URL:
 
-```
-http://$ECHO:9001
+```bash
+$ open http://$ECHO:9001
 ```
 
 to access the Jupyter notebook. Using the specified password when you

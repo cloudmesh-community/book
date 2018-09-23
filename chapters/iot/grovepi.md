@@ -1,5 +1,4 @@
-GrovePi Modules
-===============
+# GrovePi Modules
 
 Introduction
 ------------
@@ -43,7 +42,6 @@ code for the `LED` class can be found here:
 -   [LED
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/led.py)
 
-\centering
 ![LED](images/led.jpg)
 
 Buzzer
@@ -58,7 +56,6 @@ class can be found here:
 -   [Buzzer
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/buzzer.py)
 
-\centering
 ![Buzzer](images/grovepi/buzzer.jpg)
 
 Relay
@@ -73,7 +70,6 @@ here:
 -   [Relay
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/relay.py)
 
-\centering
 ![Relay](images/grovepi/relay.jpg)
 
 Light Sensor
@@ -87,7 +83,6 @@ values. The `LightSensor` class can be found here:
 -   [LightSensor
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/light.py)
 
-\centering
 ![Light Sensor](images/grovepi/light.jpg)
 
 Rotary Angle Sensor
@@ -100,7 +95,6 @@ Connect the sensor to an analog port. Port A0 is the default. The
 -   [RotarySensor
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/rotary.py)
 
-\centering
 ![Rotary Angle Sensor](images/grovepi/rotary.jpg)
 
 Barometer
@@ -113,7 +107,6 @@ GrovePi barometer measures temperature in Fahrenheit and Celsius. The
 -   [Barometer
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/barometer.py)
 
-\centering
 ![Barometer](images/grovepi/barometer.jpg)
 
 Distance Sensor
@@ -128,7 +121,6 @@ here:
 -   [DistanceSensor
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/distance.py)
 
-\centering
 ![Distance Sensor](images/grovepi/distance.jpg)
 
 Temperature Sensor
@@ -141,7 +133,6 @@ the temperature sensor to a digital port. D7 is the default port. The
 -   [TemperatureSensor
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/temperature.py)
 
-\centering
 ![Temperature Sensor](images/grovepi/temperature.jpg)
 
 Heartbeat Sensor
@@ -154,7 +145,6 @@ found here:
 -   [HeartbeatSensor
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/heartbeat.py)
 
-\centering
 ![image](images/grovepi/heartbeat.jpg)
 
 Joystick
@@ -167,7 +157,6 @@ module. The `Joystick` class can be found here:
 -   [Joystick
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/joystick.py)
 
-\centering
 ![image](images/grovepi/joystick.jpg)
 
 LCD Screen
@@ -180,7 +169,6 @@ here:
 -   [LCD
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/lcd.py)
 
-\centering
 ![LCD Screen](images/grovepi/lcd.jpg)
 
 Moisture Sensor
@@ -192,7 +180,6 @@ The `MoistureSensor` class can be found here:
 -   [MoistureSensor
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/moisture.py)
 
-\centering
 ![Moisture Sensor](images/grovepi/moisture.jpg)
 
 An example of the implementation of the moisture sensor from Dexter
@@ -211,5 +198,4 @@ The `WaterSensor` class can be found here:
 -   [WaterSensor
     Class](https://github.com/cloudmesh/cloudmesh.pi/blob/master/cloudmesh/pi/water.py)
 
-\centering
 ![Water Sensor](images/grovepi/water.jpg)

@@ -82,7 +82,7 @@ If we want to see more detailed information we cn use the command
 $ kubectl get pods -o wide
 ```
 
-```
+```bash
 NAME                   READY STATUS  RESTARTS AGE IP        NODE
 nginx-75...-4jnh6 1/1   Running 0        8m  192.168.56.2   e003
 nginx-75...-pxpsz 1/1   Running 0        8m  192.168.255.66 e005

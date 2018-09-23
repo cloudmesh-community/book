@@ -237,14 +237,14 @@ $ docker build -t sample-flask-rest-app .
 
 Run Powershell as administrator and replace with your username.
 
-``` {.bash language="bash"}
+```bash
 cd C:\Users\<your_username>\cloudmesh\containers\docker-flask
 docker build -t sample-flask-rest-app .
 ```
 
 If it builds successfully, you will get the following response
 
-``` {.bash language="bash"}
+```bash
 $ docker build -t sample-flask-rest-app .
 Sending build context to Docker daemon  19.15MB
 Step 1/2: FROM tiangolo/uwsgi-nginx-flask:python2.7
@@ -265,7 +265,7 @@ Run the following commands to get the REST API hosted on
 
 ### Ubuntu and OSX
 
-``` {.bash language="bash"}
+```bash
 $ docker run -p 80:80 -t sample-flask-rest-app
 ```
 
@@ -274,7 +274,7 @@ $ docker run -p 80:80 -t sample-flask-rest-app
 In Windows powershell Run as administrator (use the previous powershell
 window)
 
-``` {.bash language="bash"}
+```bash
 $ docker run -p 80:80 -t sample-flask-rest-app
 ```
 
@@ -283,14 +283,14 @@ please allow that to run.
 
 It will take sometime to load the server once.
 
-``` {.bash language="bash"}
+```bash
 $ docker run -p 80:80 -t sample-flask-rest-app
 ```
 
 If it is loaded and if it runs successfully you will see a response
 similar to
 
-``` {.bash language="bash"}
+```bash
 Checking for script in /app/prestart.sh
 Running script /app/prestart.sh
 Running inside /app/prestart.sh, you could add migrations to this file, e.g.:
@@ -398,7 +398,7 @@ f7c6a4710ad2 prakhar1989/static-site "./wrapper.sh"             5d ago     Exite
 
 #### Deleting Docker Container first and then remove Docker Image
 
-``` {basicstyle="\tiny\ttfamily"}
+```bash
 $ docker images
 REPOSITORY                   TAG                 IMAGE ID            CREATED      SIZE
 sample-flask-rest-app        latest              8b3246425402        8m ago       697MB
@@ -415,7 +415,7 @@ hello-world                  latest              f2a91732366c        3 months ag
 prakhar1989/static-site      latest              f01030e1dcf3        2 years ago   134MB
 ```
 
-``` {basicstyle="\tiny\ttfamily"}
+```bash
 $ docker ps -a
 CONTAINER ID IMAGE                     COMMAND                  CREATED             STATUS   PORTS NAMES
 74b9b994c9bd sample-flask-rest-app   "/entrypoint.sh /sta..." 2m ago  Exited (137) 1m ago    infallible_mahavira
@@ -430,12 +430,12 @@ f7c6a4710ad2 prakhar1989/static-site "./wrapper.sh"           5d ago  Exited (0)
 1f90a411c746 hello-world             "/hello"                 11d ago Exited (0) 11d ago     reverent_raman
 ```
 
-``` {.bash language="bash"}
+```bash
 $ docker rm 74b9b994c9bd
 74b9b994c9bd
 ```
 
-``` {basicstyle="\tiny\ttfamily"}
+```bash
 $ docker ps -a
 CONTAINER ID IMAGE                     COMMAND                  CREATED             STATUS   PORTS NAMES
 dc8cccf22216 35ffca69dcc3            "/entrypoint.sh /sta..." 10m ago Exited (137) 5m ago    romantic_sammet
@@ -449,7 +449,7 @@ f7c6a4710ad2 prakhar1989/static-site "./wrapper.sh"           5d ago     Exited 
 1f90a411c746 hello-world             "/hello"                 11d ago    Exited (0) 11d ago  reverent_raman
 ```
 
-``` {.bash language="bash"}
+```bash
 $ docker images
 REPOSITORY                 TAG       IMAGE ID     CREATED        SIZE
 sample-flask-rest-app      latest    8b3246425402 8m ago  697MB
@@ -466,7 +466,7 @@ hello-world                latest    f2a91732366c 3 months ago   1.85kB
 prakhar1989/static-site    latest    f01030e1dcf3 2 years ago    134MB
 ```
 
-``` {.bash basicstyle="\tiny\ttfamily" language="bash"}
+```bash
 $ docker rmi 8b3246425402
 Untagged: sample-flask-rest-app:latest
 Deleted: sha256:8b3246425402b55aa5c4cf02cc5ad9ebd880b9fef639529b81495e778e3b3246

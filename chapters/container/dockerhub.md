@@ -132,7 +132,7 @@ $ docker login --username=$DUSER
 Enter the password when prompted. If everything worked you will get
 a message similar to:
 
-```
+```bash
 Login Succeeded
 ```
 
@@ -179,7 +179,7 @@ $ docker push $DUSER/cloudmesh
 
 It shows something similar to:
 
-```
+```bash
 The push refers to repository [docker.io/$DUSER/cloudmesh]
 18f9479cfc2c: Pushed 
 e9ddee98220b: Pushed 

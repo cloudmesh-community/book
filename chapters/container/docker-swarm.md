@@ -80,7 +80,7 @@ $ docker-machine ssh myvm2 "docker swarm join --token <token> <ip>:2377"
 
 The output should be like this:
 
-```
+```bash
 This node joined a swarm as a worker.
 ```
 
@@ -95,7 +95,7 @@ $ docker-machine ls
 
 The output will look similar to 
 
-```
+```bash
 NAME    ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER        ERRORS
 myvm1   *        virtualbox   Running   tcp://192.168.99.100:2376           v17.06.2-ce
 myvm2   -        virtualbox   Running   tcp://192.168.99.101:2376           v17.06.2-ce

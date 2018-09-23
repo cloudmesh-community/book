@@ -44,9 +44,7 @@ To use crontab follow these steps
 2. To run the program at boot time, add the following line to the at the end
    of the file
 
-   ```
-   @reboot <command>
-   ```
+        @reboot <command>
 
 
 Let us look at an example and assume we have test.py program in your
