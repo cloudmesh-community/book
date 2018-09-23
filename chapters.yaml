@@ -37,7 +37,7 @@
         - chapters/prg/python/python-libraries.md:
             - chapters/prg/python/python-data.md
             - chapters/prg/python/python-matplotlib.md
-            - chapters/prg/python/python-docopts.md            
+            - chapters/prg/python/python-docopts.md
             - chapters/prg/python/python-cmd5.md
             - chapters/prg/python/python-cmd.md
             - chapters/prg/python/opencv/opencv.md
@@ -45,7 +45,7 @@
             - chapters/SECTION-DATA.md:
                 - chapters/data/formats.md
                 - chapters/data/mongoengine.md
-        - chapters/prg/python/python-wordcount.md                      
+        - chapters/prg/python/python-wordcount.md
 
 - GO:
     - chapters/prg/go/go-intro.md:
@@ -102,10 +102,9 @@
             - chapters/container/docker-hadoop.md
             - chapters/container/docker-hadoop3.md
             - chapters/container/docker-pagerank-example-instruction.md
-            - chapters/container/docker-spark.md            
+            - chapters/container/docker-spark.md
             - chapters/container/docker-rest.md
             - chapters/container/docker-swarm.md
-        
 
 # MAPREDUCE IS NOT ORGANIZED
 
@@ -150,6 +149,36 @@
 
 
 # #####################################################################
+# PI
+# #####################################################################
+
+- BOOK_PI:
+    - $ref:PREFACE
+    - chapters/pi/preface.md
+    - chapters/pi/board.md
+    - chapters/pi/case.md:
+        - chapters/case/case.md
+        - chapters/pi/links.md
+    - chapters/pi/exercise.md
+    - chapters/SECTION-ONE-PI.md:
+        - chapters/sd-card.md
+        - chapters/pi/software.md
+        - chapters/pi/config-display.md
+        - chapters/pi/vnc.md
+        - chapters/pi/motherboard-led.md
+        - chapters/run-at-boot.md
+    - chapters/clusters/pi-docker.md
+    - chapters/SECTION-TWO-PI.md
+        - chapters/pi/pi-passwordreset.md
+        - chapters/pi/setup.md
+        - chapters/pi/exercise.md
+        - chapters/pi/software2.md
+        - chapters/pi/software.md
+        - chapters/pi/slurm.md
+    - chapters/SECTION-REFERENCES.md
+
+
+# #####################################################################
 # DRAFT
 # #####################################################################
 
@@ -187,7 +216,6 @@
     - chapters/in/vis.md
     - chapters/in/course1.md
     - chapters/SECTION-REFERENCES.md
-    
 
 # #####################################################################
 # 516
@@ -219,7 +247,7 @@
     - $ref:IAAS
     - $ref:SERVERLESS
     - $ref:DEVTOOLS
-    - $ref:DEVOPS    
+    - $ref:DEVOPS
     - $ref:PYTHON
     - $ref:GO
     - chapters/prg/julia/julia-language.md
@@ -231,7 +259,7 @@
     - chapters/SECTION-APPENDIX.md:
         - chapters/iaas/aws/products.md
         - chapters/iaas/azure/products.md
-    - chapters/iaas/futuresystems/futuresystems.md        
+    - chapters/iaas/futuresystems/futuresystems.md
     - $ref:CHAMELEON
     - chapters/SECTION-REFERENCES.md
 
