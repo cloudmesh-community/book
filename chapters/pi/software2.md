@@ -5,7 +5,7 @@ here.
 
 * <https://googlecreativelab.github.io/coder/>
 
-provide a mini tutorial
+provide a section
 
 ## Computing
 
@@ -14,19 +14,19 @@ provide a mini tutorial
 
 Refer to other section in book and describe what is different
 
-provide a mini tutorial
+provide a setcion
 
 ### Scipy
 
 Refer to other section in book and describe what is different
 
-provide a mini tutorial
+provide a setcion
 
 ### Image Processing
 
 Refer to other section in book and describe what is different
 
-provide a mini tutorial
+provide a setcion
 
 ### DHCP Server
 
