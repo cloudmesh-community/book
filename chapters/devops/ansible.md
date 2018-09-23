@@ -296,27 +296,23 @@ all participants know what to expect. We will illustrate details in
 this chapter.
 
 It is good to follow the Ansible Galaxy standard during your development
-assignment as much as possible, however, you will submit your
-assignments to this class's repository not the global Galaxy community.
+as much as possible.
 
 ### Ansible Galaxy helloworld
 
 Let us start with a simplest case: We will build an Ansible Galaxy
 project. This project will install the Emacs software package on your
-localhost as the target host. It is a "helloworld" project only meant to
+localhost as the target host. It is a *helloworld* project only meant to
 get us familiar with Ansible Galaxy project structures.
 
-First you need to create a directory.  Setup your submission directory
-after you clone and rebased with
-<https://github.com/cloudmesh/sp17-i524>:
+First you need to create a directory. Let us call it `mongodb`:
 
-    $ git rebase upstream/master
-    $ ./setup galaxy <your HID>
+```bash
+$ mkdir mongodb
+```
 
-It will create a folder named after your HID inside directory galaxy/.
-Your Galaxy related assignments will be completed and submitted there.
 Go ahead and create files `README.md`, `playbook.yml`, `inventory` and a
-subdirectory `roles/` then. playbook.yml is your project playbook. It
+subdirectory `roles/` then  `playbook.yml is your project playbook. It
 should perform the Emacs installation task by executing the
 corresponding role you will develop in the folder 'roles/'. The only
 difference is that we will construct the role with the help of
@@ -328,9 +324,9 @@ Now, let ansible-galaxy initialize the directory structure for you:
     $ ansible-galaxy init <to-be-created-role-name>
 
 The naming convention is to concatenate your name and the role name by a
-dot. Here is how it looks like:
+dot. +@fig:ansible shows how it looks like.
 
-![image](images/ansible-galaxy-init-structure.png)
+![image](images/ansible-galaxy-init-structure.png){#fig:ansible}
 
 Let us fill in information to our project. There are several `main.yml`
 files in different folders, and we will illustrate their usages.
@@ -388,7 +384,7 @@ meta:
         dependencies: []
 
 Next let us test it out. You have your Ansible Galaxy role ready
-now. To test it as a user, go to your HID directory and edit the other
+now. To test it as a user, go to your directory and edit the other
 two files `inventory.txt` and `playbook.yml`, which are already generated
 for you in directory `tests` by the script:
 
@@ -397,24 +393,18 @@ for you in directory `tests` by the script:
 After running this playbook, you should have Emacs installed on
 localhost.
 
-A Complete Ansible Galaxy Project
----------------------------------
+## A Complete Ansible Galaxy Project
 
 We are going to use ansible-galaxy to setup a sample project. This
 sample project will:
 
 -   use a cloud cluster with multiple VMs
-
 -   deploy Apache Spark on this cluster
-
 -   install a particular HPC application
-
 -   prepare raw data for this cluster to process
-
 -   run the experiment and collect results
 
-Ansible: Write a Playbooks for MongoDB
-======================================
+### Ansible: Write a Playbooks for MongoDB
 
 Ansible Playbooks are automated scripts written in YAML data format.
 Instead of using manual commands to setup multiple remote machines, you
@@ -430,10 +420,7 @@ There are also several examples of using Ansible [Playbooks](http://docs.ansible
 :   from basic usage of Ansible Playbooks to advanced usage such as
     applying patches and updates with different roles and groups.
 
-Tutorial: Writing Ansible Playbook
-----------------------------------
-
-In this tutorial, we are going to write a basic playbook of Ansible
+We are going to write a basic playbook of Ansible
 software. Keep in mind that `Ansible` is a main program and `playbook`
 is a template that you would like to use. You may have several playbooks
 in your Ansible.
@@ -444,22 +431,19 @@ As a first example, we are going to write a playbook which installs
 MongoDB server. It includes the following tasks:
 
 -   Import the public key used by the package management system
-
 -   Create a list file for MongoDB
-
 -   Reload local package database
-
 -   Install the MongoDB packages
-
 -   Start MongoDB
 
-This tutorial is based on the manual installation of MongoDB from the
+The material presented here is based on the manual installation of MongoDB from the
 official site:
-<http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/*>
+
+* <http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/*>
 
 We also assume that we install MongoDB on Ubuntu 15.10.
 
-### Enabling Root SSH Access
+#### Enabling Root SSH Access
 
 Some setups of managed nodes may not allow you to log in as root. As
 this may be problematic later, let us create a playbook to resolve this.
@@ -501,7 +485,7 @@ We can run this playbook like so:
     10.23.2.104                : ok=2    changed=1    unreachable=0    failed=0   
     10.23.2.105                : ok=2    changed=1    unreachable=0    failed=0
 
-### Hosts and Users
+#### Hosts and Users
 
 First step is choosing hosts to install MongoDB and a user account to
 run commands (tasks). We start with the following lines in the example
@@ -520,7 +504,7 @@ Indentation is important in YAML format. Do not ignore spaces start
 
 :   with in each line.
 
-### Tasks
+#### Tasks
 
 A list of tasks contains commands or configurations to be executed on
 remote machines in a sequential order. Each task comes with a `name` and
@@ -532,7 +516,7 @@ value. You may use `apt` or `yum` module which is one of the packaging
 modules to install software. You can find an entire list of modules
 here: <http://docs.ansible.com/list_of_all_modules.html>
 
-### Module apt_key: add repository keys
+#### Module apt_key: add repository keys
 
 We need to import the MongoDB public GPG Key. This is going to be a
 first task in our playbook.:
@@ -541,14 +525,14 @@ first task in our playbook.:
       - name: Import the public key used by the package management system
         apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=7F0CEB10 state=present
 
-### Module apt_repository: add repositories
+#### Module apt_repository: add repositories
 
 Next add the MongoDB repository to apt:
 
     - name: Add MongoDB repository
       apt_repository: repo='deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' state=present
 
-### Module apt: install packages
+#### Module apt: install packages
 
 We use `apt` module to install `mongodb-org` package. `notify` action is
 added to start `mongod` after the completion of this task. Use the
@@ -559,7 +543,7 @@ added to start `mongod` after the completion of this task. Use the
       notify:
       - start mongodb
 
-### Module service: manage services
+#### Module service: manage services
 
 We use `handlers` here to start or restart services. It is similar to
 `tasks` but will run only once.:
@@ -568,7 +552,7 @@ We use `handlers` here to start or restart services. It is similar to
       - name: start mongodb
         service: name=mongod state=started
 
-### The Full Playbook
+#### The Full Playbook
 
 Our first playbook looks like this:
 
@@ -589,7 +573,7 @@ Our first playbook looks like this:
         - name: start mongodb
           service: name=mongod state=started
 
-### Running a Playbook
+#### Running a Playbook
 
 We use `ansible-playbook` command to run our playbook:
 
@@ -647,7 +631,7 @@ If you rerun the playbook, you should see that nothing changed:
     10.23.2.104                : ok=4    changed=0    unreachable=0    failed=0   
     10.23.2.105                : ok=4    changed=0    unreachable=0    failed=0
 
-### Sanity Check: Test MongoDB
+#### Sanity Check: Test MongoDB
 
 Let's try to run 'mongo' to enter mongodb shell.:
 
@@ -663,7 +647,7 @@ Let's try to run 'mongo' to enter mongodb shell.:
             http://groups.google.com/group/mongodb-user
     > 
 
-### Terms
+#### Terms
 
 -   Module: Ansible library to run or manage services, packages, files
     or commands.
@@ -677,7 +661,7 @@ Let's try to run 'mongo' to enter mongodb shell.:
 
 -   YAML: Human readable generic data serialization.
 
-### Reference
+#### Reference
 
 The main tutorial from Ansible is here:
 <http://docs.ansible.com/playbooks_intro.html>
@@ -685,22 +669,13 @@ The main tutorial from Ansible is here:
 You can also find an index of the ansible modules here:
 <http://docs.ansible.com/modules_by_category.html>
 
-Ansible Assignment
-==================
+## Exercise
 
 We have shown a couple of examples of using Ansible tools. Before you
-apply it in you final project, we will practice it in this assignment.
-
-Requirements
-------------
-
--   use the `galaxy` directory in the class assignment repository
+apply it in you final project, we will practice it in this exercise.
 
 -   set up the project structure similar to Ansible Galaxy example
-
 -   install MongoDB from the package manager (apt in this class)
-
 -   configure your MongoDB installation to start the service
     automatically
-
 -   use default port and let it serve local client connections only
