@@ -8,7 +8,7 @@ virtualization technology.
 Since the KVM hypervisor is used on this cloud, any virtual machines you
 upload must be compatible with KVM.
 
-This tutorial provide basic information about how to use the OpenStack
+This section provides basic information about how to use the OpenStack
 web interface and provides some information specific to using OpenStack
 KVM on Chameleon.
 

@@ -13,7 +13,7 @@
 OpenCV (Open Source Computer Vision Library) is a library of thousands
 of algorithms for various applications in computer vision and machine
 learning. It has C++, C, Python, Java and MATLAB interfaces and supports
-Windows, Linux, Android and Mac OS. In this tutorial, we will explain
+Windows, Linux, Android and Mac OS. In this section, we will explain
 basic features of this library, including the implementation of a simple
 example.
 
