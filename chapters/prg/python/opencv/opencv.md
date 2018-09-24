@@ -69,7 +69,8 @@ and the result is written to a new image.
 
 The image was downloaded from USC standard database:
 
-\URL{http://sipi.usc.edu/database/database.php?volume=misc&image=9}
+<http://sipi.usc.edu/database/database.php?volume=misc&image=9>
+
 ### Displaying the image
 
 The image is saved in a numpy array. Each pixel is represented with 3

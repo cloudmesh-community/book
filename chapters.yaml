@@ -249,6 +249,9 @@
 # -  chapters/rest/swagger-bravado.md
 
 - BOOK_516:
+    - chapters/SECTION-QUICK516.md:
+        - chapters/quick516.md
+        - chapters/class/e516-syllabus-table.md
     - $ref:PREFACE
     - chapters/SECTION-OVERVIEW.md:
         - chapters/assignment.md
