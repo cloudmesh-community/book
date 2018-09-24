@@ -1,4 +1,5 @@
 pandoc-fignos
+pandoc-mustache
 pprint
 oyaml
 treelib
