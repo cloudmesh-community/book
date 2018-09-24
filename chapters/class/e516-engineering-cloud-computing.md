@@ -90,7 +90,8 @@ The course has the following objectives:
 
 # Syllabus
 
-For the syllabus table please see the [Syllabus Table Section](#s-516-syllabus).
+For the syllabus table please see the
+[Syllabus Table Section](#s-516-syllabus) [:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-syllabus-table.md).
 
 ## Assessment
 
