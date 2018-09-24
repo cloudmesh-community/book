@@ -5,10 +5,12 @@ INDEX=\
   chapters/preface/create.md\
   chapters/preface/issues.md\
   chapters/preface/notation.md\
+  chapters/SECTION-CLOUD-COMPUTING.md\
   chapters/hid-sp18-709/project-paper/report.md\
+  chapters/SECTION-BIGDATA.md\
   chapters/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/hid-sp18-709/project-paper/report.md dest/chapters/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/SECTION-CLOUD-COMPUTING.md dest/chapters/hid-sp18-709/project-paper/report.md dest/chapters/SECTION-BIGDATA.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -36,9 +38,17 @@ dest/chapters/preface/notation.md: ../chapters/preface/notation.md
 	../bin/markup-single.py ../chapters/preface/notation.md 2
 	../bin/header.py dest/chapters/preface/notation.md 2
 
+dest/chapters/SECTION-CLOUD-COMPUTING.md: ../chapters/SECTION-CLOUD-COMPUTING.md
+	../bin/markup-single.py ../chapters/SECTION-CLOUD-COMPUTING.md 1
+	../bin/header.py dest/chapters/SECTION-CLOUD-COMPUTING.md 1
+
 dest/chapters/hid-sp18-709/project-paper/report.md: ../chapters/hid-sp18-709/project-paper/report.md
-	../bin/markup-single.py ../chapters/hid-sp18-709/project-paper/report.md 1
-	../bin/header.py dest/chapters/hid-sp18-709/project-paper/report.md 1
+	../bin/markup-single.py ../chapters/hid-sp18-709/project-paper/report.md 2
+	../bin/header.py dest/chapters/hid-sp18-709/project-paper/report.md 2
+
+dest/chapters/SECTION-BIGDATA.md: ../chapters/SECTION-BIGDATA.md
+	../bin/markup-single.py ../chapters/SECTION-BIGDATA.md 1
+	../bin/header.py dest/chapters/SECTION-BIGDATA.md 1
 
 dest/chapters/SECTION-REFERENCES.md: ../chapters/SECTION-REFERENCES.md
 	../bin/markup-single.py ../chapters/SECTION-REFERENCES.md 1

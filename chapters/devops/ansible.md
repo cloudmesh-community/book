@@ -412,7 +412,7 @@ can utilize Ansible Playbooks to configure your entire systems. YAML
 syntax is easy to read and express the data structure of certain Ansible
 functions. You simply write some tasks, for example, installing
 software, configuring default settings, and starting the software, in a
-Ansible Playbook. With a few examples in this tutorial, you will
+Ansible Playbook. With a few examples in this section, you will
 understand how it works and how to write your own Playbooks.
 
 There are also several examples of using Ansible [Playbooks](http://docs.ansible.com/playbooks.html) from the official site. It covers
@@ -496,8 +496,8 @@ filename of `mongodb.yaml`:
       remote_user: root
       become: yes
 
-In a previous tutorial, we setup two machines with `ansible-test` group
-name. This tutorial uses that two machines for MongoDB installation.
+In a previous section, we setup two machines with `ansible-test` group
+name. We use two machines for MongoDB installation.
 Also, we use `root` account to complete Ansible tasks.
 
 Indentation is important in YAML format. Do not ignore spaces start

@@ -197,7 +197,9 @@
 
 - BOOK_FA18:
     - $ref:PREFACE
-    - chapters/hid-sp18-709/project-paper/report.md
+    - chapters/SECTION-CLOUD-COMPUTING.md:
+        - chapters/hid-sp18-709/project-paper/report.md
+    - chapters/SECTION-BIGDATA.md
     - chapters/SECTION-REFERENCES.md
 
 # #####################################################################
