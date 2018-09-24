@@ -256,6 +256,7 @@
         - chapters/rest/swagger-codegen.md
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
+        - chapters/prg/github.md
     - $ref:HYPERVISOR
     - $ref:IAAS
     - $ref:SERVERLESS

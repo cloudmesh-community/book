@@ -140,7 +140,7 @@ The course has the following objectives:
 | :o:                | 10/01    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :white_check_mark: | 10/08    | 8       | Programming        | Python for Cloud Computing, |
 | :white_check_mark: | 10/08    |         |                    | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
-| :o:                | 10/08    |         |                    | - Github as a Cloud Service |
+| :white_check_mark: | 10/08    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
 | :white_check_mark: | 09/11    |         |                    | - [REST Services](#rest)[:cloud:][rest.md] |
 | :white_check_mark: | 09/11    |         |                    | - [Rest Services with OpenAPI](#rest-services-with-openapi)[:cloud:][swagger.md] |
 | :white_check_mark: | 09/11    |         |                    | - [OpenAPI Spec](#openapi-spec)[:cloud:][swagger-spec.md] |
@@ -238,7 +238,7 @@ Legend markings
 [secchi.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/opencv/secchi.md
 [virtualization.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualization.md
 [qemu.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/qemu.md
-
+[githubprg.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/github.md
 
 Students need only to do one project. The project is conducted thought
 the entire semester.
