@@ -22,15 +22,14 @@ INDEX=\
   chapters/mapreduce/hadoop-lectures.md\
   chapters/iaas/openstack/openstack.md\
   chapters/msg/amazon-kenesis-data-streams.md\
-  chapters/pi2/run-at-boot.md\
-  chapters/pi2/sd-card.md\
+  chapters/pi/run-at-boot.md\
+  chapters/pi/sd-card.md\
   chapters/pi/case.md\
   chapters/pi/pi-passwordreset.md\
   chapters/pi/config-display.md\
   chapters/pi/setup.md\
   chapters/pi/exercise.md\
   chapters/pi/software2.md\
-  chapters/pi/software.md\
   chapters/pi/vnc.md\
   chapters/pi/motherboard-led.md\
   chapters/pi/slurm.md\
@@ -51,7 +50,7 @@ INDEX=\
   chapters/in/course1.md\
   chapters/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION-CONTAINER.md dest/chapters/container/index.md dest/chapters/container/container.md dest/chapters/SECTION-KUBERNETES.md dest/chapters/container/kubernetes-intro.md dest/chapters/container/kubernetes-fs.md dest/chapters/container/exercise.md dest/chapters/container/glossary.md dest/chapters/SECTION-DOCKER.md dest/chapters/container/docker-intro.md dest/chapters/container/docker-local.md dest/chapters/container/dockerhub.md dest/chapters/container/docker-fs.md dest/chapters/container/docker-hadoop-cluster.md dest/chapters/container/docker-hadoop.md dest/chapters/container/docker-hadoop3.md dest/chapters/container/docker-pagerank-example-instruction.md dest/chapters/container/docker-spark.md dest/chapters/container/docker-rest.md dest/chapters/container/docker-swarm.md dest/chapters/mapreduce/hadoop-lectures.md dest/chapters/iaas/openstack/openstack.md dest/chapters/msg/amazon-kenesis-data-streams.md dest/chapters/pi2/run-at-boot.md dest/chapters/pi2/sd-card.md dest/chapters/pi/case.md dest/chapters/pi/pi-passwordreset.md dest/chapters/pi/config-display.md dest/chapters/pi/setup.md dest/chapters/pi/exercise.md dest/chapters/pi/software2.md dest/chapters/pi/software.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/slurm.md dest/chapters/pi/board.md dest/chapters/pi/links.md dest/chapters/pi/preface.md dest/chapters/in/hadoop-ubunto.md dest/chapters/in/hadoop-rdma.md dest/chapters/in/assignments.md dest/chapters/in/hadoop-comet.md dest/chapters/in/ubuntu.md dest/chapters/in/old.md dest/chapters/in/box.md dest/chapters/in/cm-hadoop.md dest/chapters/in/datasets.md dest/chapters/in/pyenv-anaconda.md dest/chapters/in/vis.md dest/chapters/in/course1.md dest/chapters/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION-CONTAINER.md dest/chapters/container/index.md dest/chapters/container/container.md dest/chapters/SECTION-KUBERNETES.md dest/chapters/container/kubernetes-intro.md dest/chapters/container/kubernetes-fs.md dest/chapters/container/exercise.md dest/chapters/container/glossary.md dest/chapters/SECTION-DOCKER.md dest/chapters/container/docker-intro.md dest/chapters/container/docker-local.md dest/chapters/container/dockerhub.md dest/chapters/container/docker-fs.md dest/chapters/container/docker-hadoop-cluster.md dest/chapters/container/docker-hadoop.md dest/chapters/container/docker-hadoop3.md dest/chapters/container/docker-pagerank-example-instruction.md dest/chapters/container/docker-spark.md dest/chapters/container/docker-rest.md dest/chapters/container/docker-swarm.md dest/chapters/mapreduce/hadoop-lectures.md dest/chapters/iaas/openstack/openstack.md dest/chapters/msg/amazon-kenesis-data-streams.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/sd-card.md dest/chapters/pi/case.md dest/chapters/pi/pi-passwordreset.md dest/chapters/pi/config-display.md dest/chapters/pi/setup.md dest/chapters/pi/exercise.md dest/chapters/pi/software2.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/slurm.md dest/chapters/pi/board.md dest/chapters/pi/links.md dest/chapters/pi/preface.md dest/chapters/in/hadoop-ubunto.md dest/chapters/in/hadoop-rdma.md dest/chapters/in/assignments.md dest/chapters/in/hadoop-comet.md dest/chapters/in/ubuntu.md dest/chapters/in/old.md dest/chapters/in/box.md dest/chapters/in/cm-hadoop.md dest/chapters/in/datasets.md dest/chapters/in/pyenv-anaconda.md dest/chapters/in/vis.md dest/chapters/in/course1.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -147,13 +146,13 @@ dest/chapters/msg/amazon-kenesis-data-streams.md: ../chapters/msg/amazon-kenesis
 	../bin/markup-single.py ../chapters/msg/amazon-kenesis-data-streams.md 1
 	../bin/header.py dest/chapters/msg/amazon-kenesis-data-streams.md 1
 
-dest/chapters/pi2/run-at-boot.md: ../chapters/pi2/run-at-boot.md
-	../bin/markup-single.py ../chapters/pi2/run-at-boot.md 1
-	../bin/header.py dest/chapters/pi2/run-at-boot.md 1
+dest/chapters/pi/run-at-boot.md: ../chapters/pi/run-at-boot.md
+	../bin/markup-single.py ../chapters/pi/run-at-boot.md 1
+	../bin/header.py dest/chapters/pi/run-at-boot.md 1
 
-dest/chapters/pi2/sd-card.md: ../chapters/pi2/sd-card.md
-	../bin/markup-single.py ../chapters/pi2/sd-card.md 1
-	../bin/header.py dest/chapters/pi2/sd-card.md 1
+dest/chapters/pi/sd-card.md: ../chapters/pi/sd-card.md
+	../bin/markup-single.py ../chapters/pi/sd-card.md 1
+	../bin/header.py dest/chapters/pi/sd-card.md 1
 
 dest/chapters/pi/case.md: ../chapters/pi/case.md
 	../bin/markup-single.py ../chapters/pi/case.md 1
@@ -178,10 +177,6 @@ dest/chapters/pi/exercise.md: ../chapters/pi/exercise.md
 dest/chapters/pi/software2.md: ../chapters/pi/software2.md
 	../bin/markup-single.py ../chapters/pi/software2.md 1
 	../bin/header.py dest/chapters/pi/software2.md 1
-
-dest/chapters/pi/software.md: ../chapters/pi/software.md
-	../bin/markup-single.py ../chapters/pi/software.md 1
-	../bin/header.py dest/chapters/pi/software.md 1
 
 dest/chapters/pi/vnc.md: ../chapters/pi/vnc.md
 	../bin/markup-single.py ../chapters/pi/vnc.md 1

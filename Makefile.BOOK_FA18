@@ -7,10 +7,11 @@ INDEX=\
   chapters/preface/notation.md\
   chapters/SECTION-CLOUD-COMPUTING.md\
   chapters/hid-sp18-709/project-paper/report.md\
+  chapters/fa18-516-18/project-paper/report.md\
   chapters/SECTION-BIGDATA.md\
   chapters/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/SECTION-CLOUD-COMPUTING.md dest/chapters/hid-sp18-709/project-paper/report.md dest/chapters/SECTION-BIGDATA.md dest/chapters/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/SECTION-CLOUD-COMPUTING.md dest/chapters/hid-sp18-709/project-paper/report.md dest/chapters/fa18-516-18/project-paper/report.md dest/chapters/SECTION-BIGDATA.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -45,6 +46,10 @@ dest/chapters/SECTION-CLOUD-COMPUTING.md: ../chapters/SECTION-CLOUD-COMPUTING.md
 dest/chapters/hid-sp18-709/project-paper/report.md: ../chapters/hid-sp18-709/project-paper/report.md
 	../bin/markup-single.py ../chapters/hid-sp18-709/project-paper/report.md 2
 	../bin/header.py dest/chapters/hid-sp18-709/project-paper/report.md 2
+
+dest/chapters/fa18-516-18/project-paper/report.md: ../chapters/fa18-516-18/project-paper/report.md
+	../bin/markup-single.py ../chapters/fa18-516-18/project-paper/report.md 2
+	../bin/header.py dest/chapters/fa18-516-18/project-paper/report.md 2
 
 dest/chapters/SECTION-BIGDATA.md: ../chapters/SECTION-BIGDATA.md
 	../bin/markup-single.py ../chapters/SECTION-BIGDATA.md 1
