@@ -9,8 +9,8 @@ backgrounds an time schedules. To be most flexible and adress all
 students there are three different ways on how you can take this
 class.
 
-* Way 1: free form. The prefered way for most students. Here you
-  simply look at the Syllabys table and identify whatever section you
+* Way 1: Free form. The preferred way for most students. Here you
+  simply look at the Syllabus table and identify whatever section you
   feel like reding. The sections that are released are marked with
   :white_check_mark:. Note that the book may include sections that are
   not marked in the syllabus. YOu do not have to read such sections.
@@ -22,14 +22,14 @@ class.
   section. Such sections are marked for one week with the icon :new:
   after about three weeks time all :new: icons will be removed. The
   icon is there to help you identifying sections that may have been
-  added to section taht logicly fit better in an earlier section, than
-  lineraly at the end
+  added to section taht logically fit better in an earlier section, than
+  linearly at the end
 
-* Way 3: Weekly guided progress. A small number of student may prefer
+* Way 3: Weekly guided progress. Other students may prefer
   a more guided approach to the class. Thus we will provide here a
   summary of what you can do on a weekly activity to stay up to
-  date. We will add to thie weekly schedule once new items become
-  avialable. We also augment them with experiments/excercises that are not
+  date. We will add to the weekly schedule once new items become
+  available. We also augment them with experiments/exercises that are not
   graded or reviewed, but that you could discuss with the
   TAs. Assignments are not listed in this weekly view and you are
   responsible to identify the schedule for them.
@@ -40,7 +40,7 @@ class.
       Overview; Exercise: Find a computer you can do the class
       programming on (tablet and chrombook will not suffice). If you
       like to do a Raspberry PI project or do not have a computer
-      order a Raspbery PI.
+      order a Raspberry PI.
 
     * Week Sep 3
 
@@ -66,7 +66,7 @@ class.
       choice. At minimum use Virtualbox. To do the assignment Read the
       Infrastructure as a Service Section. Focus on the section for
       the cloud you have chosen; Read up on Chameleon Cloud, start a
-      VM on chameleon cloud; Participate in writhin a new version of
+      VM on chameleon cloud; Participate in within a new version of
       cloudmesh in python which is checked in
       [github :cloud:](https://github.com/cloudmesh-community/cm)
 
