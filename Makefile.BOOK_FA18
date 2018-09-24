@@ -1,0 +1,46 @@
+INDEX=\
+  chapters/SECTION-PREFACE.md\
+  chapters/version.md\
+  chapters/authors.md\
+  chapters/preface/create.md\
+  chapters/preface/issues.md\
+  chapters/preface/notation.md\
+  chapters/hid-sp18-709/project-paper/report.md\
+  chapters/SECTION-REFERENCES.md
+
+chapterlist:  dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/hid-sp18-709/project-paper/report.md dest/chapters/SECTION-REFERENCES.md
+	@echo "updated modified chapters"
+
+
+dest/chapters/SECTION-PREFACE.md: ../chapters/SECTION-PREFACE.md
+	../bin/markup-single.py ../chapters/SECTION-PREFACE.md 1
+	../bin/header.py dest/chapters/SECTION-PREFACE.md 1
+
+dest/chapters/version.md: ../chapters/version.md
+	../bin/markup-single.py ../chapters/version.md 2
+	../bin/header.py dest/chapters/version.md 2
+
+dest/chapters/authors.md: ../chapters/authors.md
+	../bin/markup-single.py ../chapters/authors.md 2
+	../bin/header.py dest/chapters/authors.md 2
+
+dest/chapters/preface/create.md: ../chapters/preface/create.md
+	../bin/markup-single.py ../chapters/preface/create.md 2
+	../bin/header.py dest/chapters/preface/create.md 2
+
+dest/chapters/preface/issues.md: ../chapters/preface/issues.md
+	../bin/markup-single.py ../chapters/preface/issues.md 2
+	../bin/header.py dest/chapters/preface/issues.md 2
+
+dest/chapters/preface/notation.md: ../chapters/preface/notation.md
+	../bin/markup-single.py ../chapters/preface/notation.md 2
+	../bin/header.py dest/chapters/preface/notation.md 2
+
+dest/chapters/hid-sp18-709/project-paper/report.md: ../chapters/hid-sp18-709/project-paper/report.md
+	../bin/markup-single.py ../chapters/hid-sp18-709/project-paper/report.md 1
+	../bin/header.py dest/chapters/hid-sp18-709/project-paper/report.md 1
+
+dest/chapters/SECTION-REFERENCES.md: ../chapters/SECTION-REFERENCES.md
+	../bin/markup-single.py ../chapters/SECTION-REFERENCES.md 1
+	../bin/header.py dest/chapters/SECTION-REFERENCES.md 1
+
