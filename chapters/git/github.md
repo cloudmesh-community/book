@@ -55,9 +55,8 @@ Next, we introduce some important concepts used in github.
 Before you can work with a repository in an easy fashion you need to
 upload a public key in order to access your repository. Naturally, you
 need to generate a key first which is explained in
-
-\TODO{lessons-ssh-generate-key}
-before you upload one. Copy the contents of your `.ssh/id_rsa.pub` file
+the section about ssh key generation (:o: TODO: lessons-ssh-generate-key include link
+) before you upload one. Copy the contents of your `.ssh/id_rsa.pub` file
 and add them to [your github keys](https://github.com/settings/keys).
 
 More information on this topic can be found on the [github Web
@@ -531,7 +530,6 @@ encouraging contributions from others. Furthermore it is also used as
 bug tracker in which not only you, but the community can communicate
 bugs to the project.
 
-\TODO{Tyler: Include image of the issues on hid-sample}
 A good resource for learning more about issues is provided at
 
 -   <https://guides.github.com/features/issues/>

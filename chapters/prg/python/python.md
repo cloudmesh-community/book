@@ -827,7 +827,8 @@ triangle = Triangle(4, 5, 6, 35, 65, 80)
 ```
 
 Python has full object-oriented programming (OOP) capabilities, however
-we can not cover all of them in a quick tutorial, so please refer to the
+we can not cover all of them in this section, so if you need more
+information please refer to the
 [Python docs on classes and
 OOP](https://docs.python.org/2.7/tutorial/classes.html).
 
@@ -909,7 +910,7 @@ Triangle with sides 4, 5 and 6 is valid: True
 Let us break this down a bit.
 
 1.  We are importing the print_function and division modules from
-    python 3 like we did earlier in this tutorial. It's a good idea to
+    python 3 like we did earlier in this section. It's a good idea to
     always include these in your programs.
 2.  We've defined a boolean expression that tells us if the sides that
     were input define a valid triangle. The result of the expression is
