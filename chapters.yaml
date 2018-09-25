@@ -67,6 +67,7 @@
         - chapters/msg/mqtt.md
         - chapters/msg/graphql.md
         - chapters/msg/avro.md
+        - chapters/msg/flink.md        
 
 - HYPERVISOR:
     - chapters/cloud/virtualization.md:
@@ -200,6 +201,7 @@
     - chapters/SECTION-CLOUD-COMPUTING.md:
         - chapters/hid-sp18-709/project-paper/report.md
         - chapters/fa18-516-18/project-paper/report.md
+        - chapters/fa18-516-11/project-paper/report.md
     - chapters/SECTION-BIGDATA.md
     - chapters/SECTION-REFERENCES.md
 
