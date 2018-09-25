@@ -352,7 +352,7 @@ form your class.
   lectures     Any question and discussion related to the lectures.
   project      Any question and discussion related to the project.
   chapter      Any question and discussion related to the chapter assignment
-  tutorial     Any question and discussion related to the tutorial assignment.
+  section     Any question and discussion related to the section assignment.
   python       Any question and discussion related to python.
   pi           Any question and discussion related to the Raspberry Pi 3. We are not using older Raspberry Pi's and therefore can not comment to them.
   bio          A homework folder in which you only publish your bio. The bio needs to be published as a *note*. This assignment also serves us to see if you are in piazza. Please do this assignment ASAP. You need to post a formal bio. See the many great examples in the folder.

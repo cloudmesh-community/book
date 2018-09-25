@@ -1,4 +1,4 @@
-# Amazon EMR Tutorial
+# Amazon EMR
 
 Amazon EMR is a Hadoop framework that allows users to process data on
 the AWS platform using their EC2 technology to spread the load across
@@ -12,14 +12,14 @@ Hadoop cluster. Using EMR allows a user to setup and provision a cluster
 quickly and allows for scalability of compute resources up or down and
 in or out as needed. Interactions with EMR can occur through a web
 service interface or by using the AWS Management Console to launch and
-monitor clusters. In this tutorial, setup and configuration of an EMR
+monitor clusters. In this section, setup and configuration of an EMR
 cluster will be done through the AWS Management Console.
 
 ## Prerequisites
 
 Before proceeding with any steps to create an EMR cluster, you need to
 ensure that you have an AWS account setup. If not, you need to have one
-created before continuing with this tutorial. Afterwards, sign into the
+created before continuing with this section. Afterwards, sign into the
 AWS Management Console. There are two prerequisites that need to be met
 before being able to launch an EMR cluster, setup an S3 bucket and an
 EC2 key pair. The S3 bucket you create will be used for storing the EMR
@@ -39,7 +39,7 @@ selections, click 'Create bucket' [@hid-sp18-521-s3bucket].
 After the S3 bucket has been created, an EC2 key pair then needs to be
 generated which allows you to connect to your EMR cluster over SSH. If
 you already have an existing EC2 key pair that can be used for this
-tutorial as well. In order to generate an EC2 key pair through the AWS
+section as well. In order to generate an EC2 key pair through the AWS
 Management Console, search and navigate to the EC2 section from the
 console home page. In the pane on the left side of the screen, look for
 the 'Network and Security' section and select the 'Key Pairs' option. On
@@ -121,7 +121,7 @@ the required step parameters, click the 'Add' button which will then
 create and run the step on the cluster. This process can be repeated as
 needed and there are additional ways to submit up to 256 active steps
 that can be explored but is beyond the scope of this
-tutorial [@hid-sp18-521-emrprocess].
+section [@hid-sp18-521-emrprocess].
 
 ![**Figure:** Create](images/emr_cluster_create.png)
 
@@ -132,7 +132,7 @@ tutorial [@hid-sp18-521-emrprocess].
 ## Teardown
 
 
-Once completing the steps in the tutorial, it is recommended that you
+Once completing the steps in the section, it is recommended that you
 cleanup what you've created in order to avoid high costs of usage. The
 S3 bucket you created along with the EMR cluster itself will need to be
 removed. Start with the termination of the cluster by going to main EMR
@@ -153,9 +153,9 @@ bucket name you wish to delete and select the 'Delete' button. You will
 then be prompted to enter the name of the bucket you wish to delete and
 select the 'Confirm' button before the deletion occurs. Once your EMR
 cluster has been successfully terminated and all buckets created during
-the tutorial have been deleted, you can then be certain that no
+the section have been deleted, you can then be certain that no
 additional costs will continue to accrue based on the work performed in
-this tutorial [@hid-sp18-521-emrreset].
+this section [@hid-sp18-521-emrreset].
 
 ![**Figure:** Terminate](images/emr_terminate.png)
 

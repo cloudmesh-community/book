@@ -17,16 +17,16 @@ License:
     README.md file which packages are used and which license these
     packages have.
     
-Tutorials:
+Sections:
 
-: Tutorials are written in markdown and include information on a
+: Sections are written in markdown and include information on a
   particular technical issue that is in general helpful for other
-  students. Tutorials must be about a substantial topic and include an
+  students. Sections must be about a substantial topic and include an
   introduction a section that teaches a reader a significant issue, as
-  well as practical code examples. Multiple small tutorials can lead
-  to a substantial contribution. We expect that the tutorial are of
+  well as practical code examples. Multiple small sections can lead
+  to a substantial contribution. We expect that the sections are of
   high quality and can be included in our handbooks. Please be careful
-  of plagiarism and do not just copy the tutorial or code from
+  of plagiarism and do not just copy the sections from tutorials or code or from
   elsewhere.
 
 Technology Paper:
@@ -77,8 +77,8 @@ Project Report:
   the analysis of a topic, but an actual code, with **benchmark** and
   demonstrated application use. Obviously it is longer than a
   technology paper and includes descriptions about reproducibility of
-  the application. A README is provided that describes in tutorial
-  form how others can reproduce your project and run it.  Term papers
+  the application. A README is provided that describes in sectione 
+  how others can reproduce your project and run it.  Term papers
   should have the quality to be publishable either in a workshop or as
   part of the handbook. The format is discussed in the Section
   [Report Format](#report-format).  Remember tables and figures do not

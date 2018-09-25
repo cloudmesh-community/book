@@ -419,7 +419,7 @@ actions**. As you have to take the certification excuses such as "I do
 not know what plagiarism is", "I forgot to include the original
 reference as I ran out of time", do obviously not apply.  This applies
 to all material prepared for class including assignments, exercises,
-code, tutorials, papers, and projects. If there is no time, do not
+code, sections, papers, and projects. If there is no time, do not
 submit and instead of an "F" ask for an incomplete or extension with
 possible grade reduction. In fact if you know you have plagiarized, do
 not even have us review your paper. Do not work on teh assumption

@@ -17,7 +17,7 @@ Warning:
 > original reference as I ran out of time", "I did not understand
 > what plagiarism is" do not apply as we explicitly make
 > the policies clear. This applies to all material prepared for class
-> including assignments, exercises, code, tutorials, papers, and
+> including assignments, exercises, code, sections, tutorials, papers, and
 > projects. If there is no time, do not submit and instead of an F ask
 > for an incomplete. In fact if you know you have plagiarized, do not
 > even have us review your paper.

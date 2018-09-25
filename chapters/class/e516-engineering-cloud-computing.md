@@ -66,7 +66,7 @@ The course has the following objectives:
 * Exploration of Go for cloud computing
 * Demonstrate knowledge of clouds while developing a significant project
 * Explore state-of-the-art cloud technologies and services while
-  providing a tutorial and summary and commenting on its use for the
+  providing a section and summary and commenting on its use for the
   cloud
 * Learn how edge computing is enhancing cloud services and
   infrastructure
@@ -86,7 +86,7 @@ The course has the following objectives:
 * Be able to communicate the results through tutorials, manual, and
   reports.
 * Be able to work in a team to develop collaboratively software or
-  contribute collaboratively to develop tutorials for clouds.
+  contribute collaboratively to develop sections explaining how to use clouds.
 
 # Syllabus
 
@@ -122,7 +122,7 @@ assessed through the following artifacts:
 The grade distribution is as follows 
 
 * 10% Comprehension Activities
-* 10% Tutorial
+* 10% Sections
 * 10% Chapter
 * 70% Project
 
@@ -164,7 +164,7 @@ models used. It is best to complete the course within one semester.
 |   | *Begins*	          | | Mon 08/20 |
 | 1, 2 | **Bio, Notebook**   | assigned | Mon 08/20 |
 | 1, 2 | **Bio, Notebook**   | due  | Mon 08/27 9am |
-| 3 | **Tutorial**    | assigned | Mon 09/03 |
+| 3 | **Sections**    | assigned | Mon 09/03 |
 | 4 | **Chapter**         | assigned | Mon 09/03 |
 | 5 | **Project**         | selection or proposal  | Mon 09/03 |
 |   | *Labor Day*	      |  | Mon 09/03 |
@@ -172,7 +172,7 @@ models used. It is best to complete the course within one semester.
 |   | *Fall Break*	      | | 10/05 - 10/07 |
 |   | *Auto W*	          | | Sun 10/21 |
 | 5 | **Project** | update | 11/02 9am EST |
-| 3 | **Tutorial** | due | 11/02 9am EST |
+| 3 | **Section** | due | 11/02 9am EST |
 | 4 | **Chapter** | due | 11/02 9am EST |
 |   | *Thanksgiving*	  |    | 11/18 - 11/25 |
 | 5 | **Project**         | due	       | 11/26 9am EST |

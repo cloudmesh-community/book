@@ -24,9 +24,13 @@ More information on `expect` can be found [here](https://likegeeks.com/expect-co
 
 ## Setting up DHCP
 
+:warning: this tutorial is insecure! :warning:
+
 TODO: Find out if cluster should be set up with or without internet
 enabled. Tutorial for getting Pi on IU Secure
 [here](https://cs.iupui.edu/~xiaozhon/course_tutorials/Connecting_to_IU_Secure_RPi_Tutorial.pdf).
+
+
 
 TODO: New version of isc-dhcp-server. Find out if INTERFACES in
 /etc/default/isc-dhcp-server should be V4, V6 or both.

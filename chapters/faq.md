@@ -97,7 +97,7 @@ so if you kwon reply ti this
 This is an important tip and I recommend that you read it.
 
 We will add throughout the semester some technical lecture notes. These
-notes contain tutorial-like information on how to run certain things
+notes contain information on how to run certain things
 on a computer. What we have seen in the past with some students is
 that they do not read the text between the sections that look like you
 can just execute them. They also may include information that is
