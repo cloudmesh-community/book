@@ -1,13 +1,9 @@
-# Open API
+# Open API :o:
 
-TODO COULD YOU PLEASE USE MORE READABLE MARKDOWN, E.g. 80 char and
-empty line after sections
+:warning: We have a large section previously on openapi, 
+what needs to be done here is to showcase how to generate go 
+from swagger codegen or other tool and use it
 
-## installing 
-
-go-swagger is available as binary or docker releases as well as from source: more details. 
-
-## use cases 
 
 ## serve specification UI 
 
@@ -22,13 +18,16 @@ swagger serve https://raw.githubusercontent.com/swagger-api/swagger-spec/master/
 swagger validate https://raw.githubusercontent.com/swagger-api/swagger-spec/master/examples/v2.0/json/petstore-expanded.json 
 ```
 
-## generate an API server 
+## Generate a Go OpenAPI server 
 
+:warning: this is incorrect :o:
 ```go 
 swagger generate server [-f ./swagger.json] -A [application-name [--principal [principal-name]]
 ```
 
-## generate an API client 
+## generate a Go OpenAPI client 
+
+:warning: this is incorrect :o:
 
 ```go 
 swagger generate client [-f ./swagger.json] -A [application-name [--principal [principal-name]]
@@ -36,20 +35,19 @@ swagger generate client [-f ./swagger.json] -A [application-name [--principal [p
 
 ## generate a spec from the source 
 
+:warning: this is put here without explanation
+
 ```go 
 swagger generate spec -o ./swagger.json 
 ```
 
 ## generate a data model 
 
+:warning: this is put here without explanation
+
 ```go 
 swagger generate model --spec={spec}
 ```
-
-## trnasfrom specs 
-
-
-## other documentations 
 
 
 ## other editors 
