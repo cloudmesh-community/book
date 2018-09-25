@@ -134,7 +134,7 @@ Install docker, switch of swap, add it to the boot configuration.
 
 # Raspberry Pi Kubernetes Cluster (B) :o:
 
-This tutorial will guide the steps towards setting up a Kubernetes Pi cluster.
+This section will guide the steps towards setting up a Kubernetes Pi cluster.
 The steps are:
 
 a. Setting up static IP

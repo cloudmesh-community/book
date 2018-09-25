@@ -125,7 +125,7 @@ The following is set up for you to execute in a python command prompt
 line by line for instructional purposes.
 
     # This code was adopted from Dataquest - K nearest neighbors in Python:
-    # A tutorial written by: Vik Paruchuri
+    # Written by: Vik Paruchuri
     import pandas
     import math
     with open("/path/to/the/nba_2013.csv", 'r') as csvfile:

@@ -825,7 +825,7 @@ Learning Outcome:
     see the scientific writing section
 
 WE RECOMMEND YOU GET STARTED ON THIS RIGHT AWAY AS YOU ALSO WILL HAVE TO
-DO A TUTORIAL AND THE FINAL PROJECT.
+DO A SECTION AND THE FINAL PROJECT.
 
 Additional details can be found here:
 <https://github.com/cloudmesh-community/hid-sample/blob/master/paper-instructions.md>
@@ -852,19 +852,20 @@ Learning Outcome:
 -   In your final project report it is likely you need to write similar
     to this report 2 pages to introduce the project
 
-### Tutorial
+### Sections
 
-**Tutorial** due March 26, 2018
+**Sections** due March 26, 2018
 
 **This is for online and residential students.**
 
-Residential students with a substantial tutorial such as install a
+Residential students with a substantial number of sections explaining  
+such details as installing a
 kubernetes cluster on PI or docker swarm or some other larger topic are
 exempt from this assignment. However, if you are working towards an A+
-consider adding an additional tutorial.
+consider adding an additional sections.
 
 We like you to pick a technology and develop for this technology a
-tutorial. The tutorial can be written either in markdown or in LaTeX.
+section. The sections can be written either in markdown or in LaTeX.
 However, when we like that you do not use enumerations for steps that
 you document. Instead use sentences such as
 
@@ -887,23 +888,22 @@ indented codeblock in markdown. Please do not add python, bash or other
 markings to your codeblock, as we need real simple markdown if you chose
 that. Make sure text in LaTeX.
 
-We will make additional suggestions for tutorial topics in the document
-in which we collect the tutorial list. We will also indicate for these
-suggesting a maximum number of students able to work together on that
-tutorial.
+We will make additional suggestions for section topics in the document
+in which we collect the section list. We will also indicate for these
+suggesting a maximum number of students able to work together on a section or chapter.
 
- [Tutorial
+ [Section
 List$\mapsto$](https://docs.google.com/document/d/1L2-wYc7S7hb5u6ZNtKpTvlXqKMkqq-B38hlaBCw-eww/edit?usp=sharing)
 
 Learning Outcome:
 
--   Learn how to write in markdown a tutorial like text
+-   Learn how to write in markdown a section
 
 -   Learn how to properly use indentation and verbatim
 
 -   Learn Markdown is not about WYSIWYG
 
--   In your project you will need to provide a tutorial like mark down
+-   In your project you will need to provide 
     section in which you explain to execute your project. This
     assignment helps you on how to do that.
 

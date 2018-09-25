@@ -26,7 +26,7 @@ are truly outstanding.
 Note: we have reduced this year the requirement of writing a 2 page
 paper about a cloud technology. Instead you will be focusing on
 writing about the technology in a markdown file and provide a
-practical tutorial. The volume is about equivalent to a 1.5 page paper.
+practical section. The volume is about equivalent to a 1.5 page paper.
 Please check with Gregor on applicability of your idea.
 
 ![Figure: Components of the Class e516, e534 and e616](images/e516-overview.png){width=100%}
@@ -247,19 +247,19 @@ include naturally Cloud computing.
 
 ### Track 3: Writing
 
-This track will introduce you into how to write a tutorial and
+This track will introduce you into how to write a section and
 conduct proper bibliography management. Knowing how to write is a
 preparation for your term project. 
 
-You will be writing a tutorial of substantial length and
+You will be writing a section of substantial length and
 difficulty. In ACM format this is typically 1.5 pages long. We will
 throughout the class estimate how many word this is. We suggest to do
-the tutorial in a team as this allows one to write about it and
+the section in a team as this allows one to write about it and
 another person to test it.
  We like to avoid that all students take the
 same topic. We will use github to avoid that everyone chooses same
-topic. Knowing how to write a tutorial will be a valuable exercise as
-the TAs will also need a project tutorial in which you describe how to
+topic. Knowing how to write a section will be a valuable exercise as
+the TAs will also need a section in which you describe how to
 execute your project. It also prepares you in a gentle form on writing
 your project report. In general you need to look at previous examples
 for the class to identify project reports.

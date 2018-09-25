@@ -287,6 +287,6 @@ consult with your documentation.
 Development.Server.1
 
 > If you are in need to but from a USB stick in Windows, please verify
-  and expand on our tutorial similar to the one provided by macOS. It
+  and expand on our section similar to the one provided by macOS. It
   does not matter if you chose a GUI or a commandline option via
   gitbash.

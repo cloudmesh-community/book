@@ -159,7 +159,7 @@ create for each tem member on one of the following technologies
 9. Spark
 
 You will create a reproducible deployment and work towards the
-implementation of a deployment.  In previous tutorials for the class
+implementation of a deployment.  In previous  classes
 students focused on setting this up for a small number of nodes. What
 we need to do now is to expand this to a scalable solution with many
 hundreds of Pi's in the cluster. Naturally login in by hand on these

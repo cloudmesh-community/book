@@ -76,8 +76,8 @@ Assignments
 
 |     | Dates  | Unit | Title  | Description |
 | --- |------ | --- | ------- | --------------------- |
-| :white_check_mark: | 09/13-11/02*                | A1      | Tutorial           | Contribute a significant tutorial. Do not develop redundant or duplicated content. |
-| :white_check_mark: | 09/13-11/02*                | A2      | Chapter            | Contribute a significant chapter that may use your tutorial to the class documentation. Do not develop redundant or duplicated content. |
+| :white_check_mark: | 09/13-11/02*                | A1      | section           | Contribute a significant section. Do not develop redundant or duplicated content. |
+| :white_check_mark: | 09/13-11/02*                | A2      | Chapter            | Contribute a significant chapter that may use your section to the class documentation. Do not develop redundant or duplicated content. |
 |  | 09/24-11/26*                | A3      | Project Type A     | Build a cloud out of Raspberry PIs |
 |  | 09/24-11/26*                |         |                    | Kubernetes, Hadoop, SLURM + OpenAPI Service,  |
 |  | 09/24-11/26*                |         | Project Type B     | Build a Significant OpenAPI REST Service |
@@ -160,7 +160,7 @@ the entire semester.
 weekly by residential students). It is the major part of the course
 grade.
 
-(*) Tutorials prepare you for documenting a technical aspect related
+(*) sections prepare you for documenting a technical aspect related
 to cloud computing. It is a preparation for a document that explains
 how to execute your project in a reproducible manner to others.
 

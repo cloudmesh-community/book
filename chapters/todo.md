@@ -114,7 +114,7 @@ use a cluster based on zeros, 3 B, 3B+.
     (or create them) and use it as part of a script to modify Vanilla SD
     cars that contain the vanilla OS on it.
 
-E.g. the tutorial contains many steps that ask to manipulate things by
+E.g. the video contains many steps that ask to manipulate things by
 hand. This is unnecessary as all the steps can be provided by a script.
 
 The reason we want everything scripted is that we like to replicate this
