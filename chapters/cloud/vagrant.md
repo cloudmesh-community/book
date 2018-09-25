@@ -41,7 +41,7 @@ download and install the appropriate version:
 
 * <https://www.vagrantup.com/downloads.html>
 
-### OSX
+### macOS
 
 On MacOS, download the dmg image, and click on it. YOu will find a pkg
 in it that you double click. After installation vagrant is installed in 

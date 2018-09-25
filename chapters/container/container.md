@@ -36,7 +36,7 @@ serverless computing will increase in importance over the next years
 
 In order for us to use containers, we go beyond the historical motivation
 that was introduced in a previous section and focus on Docker a
-predominant technology for containers on Windows, Linux, and OSX
+predominant technology for containers on Windows, Linux, and macOS
 
 [:clapper: Container 40:09 Container C](https://youtu.be/A2b-LrnoMqg)
 

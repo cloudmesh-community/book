@@ -111,7 +111,7 @@ activate ssh.
 
 Naturally we need a useful editor. We have made good experience with
 emacs as it supports a variety of different formats and is also
-available for OSX and Windows.
+available for macOS and Windows.
 
 You can install it with
 

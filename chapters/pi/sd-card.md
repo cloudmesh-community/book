@@ -15,9 +15,9 @@ The processes described here only work for a few SD cards and are not
 suitable for burning hundreds of SD cards as we would need for a
 cluster consisting out of many PI's.
 
-### OSX
+### macOS
 
-First, we assume you have Etcher installed on your OSX machine
+First, we assume you have Etcher installed on your macOS machine
 
 * You just need to download Etcher and install it. YOU can find the program at
   <https://etcher.io/>
@@ -133,7 +133,7 @@ SD-Card.2
 SD-Card.2
 
 : Could a script be written that does the entire process via a python
-  or shell command in OSX?
+  or shell command in macOS?
 
 SD-Card.3
 

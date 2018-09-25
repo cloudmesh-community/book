@@ -32,7 +32,7 @@ Grove sensor related bins and wires.
 Next reboot and double check if the settings are preserved after the
 reboot
 
-### Install VNC on OSX
+### Install VNC on macOS
 
 To install a vnc server of your liking on your Mac. You find one at
 
@@ -43,7 +43,7 @@ are going to use to virtually control the Pi (there is a version listed
 for Raspberry Pi-- do not download this one. For us this is the Mac
 version.)
 
-### Run VNC Viewer on OSX
+### Run VNC Viewer on macOS
 
 Once you have downloaded the VNC viewer installed it you can open the
 program. Next you can start vnc viewer and enter the ip address of your

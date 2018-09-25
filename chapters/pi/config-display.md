@@ -147,7 +147,7 @@ it will be followed by an ip address such as
 `192.168.10.1`
 
 Now you can connect to this address, with the help of a program such
-as *Remote Desktop Connection* on Windows or Bonjour on OSX.
+as *Remote Desktop Connection* on Windows or Bonjour on macOS.
 
 Type in the ip address and you will see the desktop.
 

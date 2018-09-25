@@ -11,11 +11,11 @@ Web page is located at
 
 ### Installation
 
-On OSX you can install graphviz with
+On macOS you can install graphviz with
 
     brew install graphviz
 
-On OSX there is also a graphviz version available that includes a GUI.
+On macOS there is also a graphviz version available that includes a GUI.
 THe link to this software is:
 
 -   <http://www.pixelglow.com/graphviz/>

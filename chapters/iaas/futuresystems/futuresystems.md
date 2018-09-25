@@ -24,7 +24,7 @@ Creating Portal Account
 This lesson explains how to create a portal account, which is the first
 step in gaining access to FutureSystems.
 
-See Lesson 4 and 7 for SSH key generation on Linux, OSX or Windows.
+See Lesson 4 and 7 for SSH key generation on Linux, macOS or Windows.
 
 [:clapper: Python 11:50 FutureGrid Introduction](http://youtu.be/X6zeVEALzTk)
 

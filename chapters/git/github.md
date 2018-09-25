@@ -184,7 +184,7 @@ available to interface with github.com, the use of git from the
 commandline can often be faster and in many cases may be simpler.
 
 Git commandline tools can be easily installed on a variety of operating
-systems including Linux, OSX, and Windows. Many great tutorials exist
+systems including Linux, macOS, and Windows. Many great tutorials exist
 that will allow you to complete this task easily. We found the following
 two tutorials sufficient to get the task accomplished:
 
@@ -269,7 +269,7 @@ no special characters such as `@ ; / _` and spaces. In general we
 recommend that you avoid using directory names with capital letters
 spaces and \_ in them. This will simplify your documentation efforts and
 make the URLs from git more readable. Also while on some OS's the
-directories *MyDirectory* is different from *mydirectory* on OSX it is
+directories *MyDirectory* is different from *mydirectory* on macOS it is
 considered the same and thus renaming from capital to lower case can not
 be done without first renaming it to another directory.
 

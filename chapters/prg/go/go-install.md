@@ -17,5 +17,5 @@ Once downloaded, unpack it with
 $ sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 ```
 
-Packaged installers are also available for OSX, and Windows. They may
+Packaged installers are also available for macOS, and Windows. They may
 provide you with the familiar platform specific instalation methods.

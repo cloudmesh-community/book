@@ -5,7 +5,7 @@ most often the easiest way is to use the hardware but boot the OS from
 a USB stick. Make sure you have access to the Bios or your system to
 actually boot from a USB device before you start this activity.
 
-## Ubuntu on a USB stick for OSX via Command Line
+## Ubuntu on a USB stick for macOS via Command Line
 
 The easiest way to create an ubuntu distribution that can be booted
 from an USB stick is done via command line. The original Web page for
@@ -39,7 +39,7 @@ command
 
     $ hdiutil convert ubuntu-18.04-desktop-amd64.iso -format UDRW -o ubuntu-18.04-desktop-amd64.img
 
-OSX will append a .dmg behind the name. At this time **do not** plug in
+macOS will append a .dmg behind the name. At this time **do not** plug in
 your usb stick. Just issue the command
 
     $ diskutil list
@@ -164,10 +164,10 @@ You will likely see some warnings with number 95 which you can ignore.
 Please report your experience and we update this page based on your
 feedback.
 
-## Ubuntu on a USB stick for OSX via GUI
+## Ubuntu on a USB stick for macOS via GUI
 
 An alternative to the Command Line solution to create an USB stick with
-bootable Ubuntu on is to use the OSX GUI. This method is more complex
+bootable Ubuntu on is to use the macOS GUI. This method is more complex
 than the command line solution. In addition as we are learning about
 cloud computing in this book, it is of advantage to learn how to do this
 from commandline as the replication of the approach via commandline is
@@ -184,7 +184,7 @@ Please let us know if it works for you on larger than 8GB drives.
 ### Install Etcher
 
 Etcher is a tool that allows you to easily write an ISO onto a USB
-stick. Etcher is integrated in the OSX GUI environment and allows to
+stick. Etcher is integrated in the macOS GUI environment and allows to
 drag the iso into it for burning. Etcher can be found at
 
 -   <https://etcher.io/>
@@ -287,6 +287,6 @@ consult with your documentation.
 Development.Server.1
 
 > If you are in need to but from a USB stick in Windows, please verify
-  and expand on our tutorial similar to the one provided by OSX. It
+  and expand on our tutorial similar to the one provided by macOS. It
   does not matter if you chose a GUI or a commandline option via
   gitbash.

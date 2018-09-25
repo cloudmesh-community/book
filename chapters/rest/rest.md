@@ -273,9 +273,9 @@ $ sudo apt-get update
 $ sudo apt-get install -y mongodb-org
 ```
     
-### OSX install of MongoDB
+### macOS install of MongoDB
 
-On OSX you can use the command
+On macOS you can use the command
 
     $ brew update
     $ brew install mongodb
@@ -907,7 +907,7 @@ On windows 10, you need to do the following steps:
   provided by starting it on Windows, or running it in a docker
   container.
   
-On OSX you can use home-brew and install it with:
+On macOS you can use home-brew and install it with:
 
     $ brew update
     $ brew install mongodb
@@ -920,7 +920,7 @@ need to install it as follows:
 ### Starting the service
 
 We have provided a convenient Makefile that currently only works for
-OSX. It will be easy for you to adapt it to Linux. Certainly you can
+macOS. It will be easy for you to adapt it to Linux. Certainly you can
 look at the targets in the makefile and replicate them one by one.
 Important targets are deploy and test.
 

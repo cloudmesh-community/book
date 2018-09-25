@@ -49,7 +49,7 @@ Mainframe Computing refers to
 
 The term PC is short for personal computer. The first PCs were
 introduced by IBM to the market. PCs need an operating system such as
-Windows, MacOSX, or Linux
+Windows, macOS, or Linux
 
 PC Computing refers to
 
