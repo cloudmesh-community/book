@@ -1,7 +1,7 @@
 Tools
 =====
 
--   **Terminal**: On OSX, when you navigate to the search magnification
+-   **Terminal**: On macOS, when you navigate to the search magnification
     glass, you can type in *terminal* to start it. A terminal allows you
     to execute a number of commands to interact with the computer from a
     commandline interface, e.g. the terminal.
@@ -20,7 +20,7 @@ Tools
 
 -   [Homebrew](https://brew.sh) is a *package manager* for OS X which
     lets the user *install software* from *UNIX* and *open source
-    software* that is not included in OSX.
+    software* that is not included in macOS.
 
 -   [pyCharm](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=mac&code=PCC):
     is an Integrated Development Environment for Python.
@@ -35,7 +35,7 @@ Tools
         $ pip install matplotlib
         $ echo "backend : TkAgg" > ~/.matplotlib/matplotlibrc
 
--   [Macdown](https://macdown.uranusjr.com/) a macdown editor for OSX
+-   [Macdown](https://macdown.uranusjr.com/) a macdown editor for macOS
 
 -   [Markdown](https://blog.ghost.org/markdown/) (from Markdown)
 

@@ -38,7 +38,7 @@ could write and overwrite it on the SD card. See also
 The cluster will have an SD Card in each of the Pi's. To enable them to
 boot an operating system has to be put on the card. We recommend that
 you use Etcher for doing so which is available for Linux, Windows, and
-OSX. Etcher can be found at
+macOS. Etcher can be found at
 
 If there are better tools or methods please document.
 
@@ -49,9 +49,9 @@ OS on the SD card.
 
 Describe this for Linux.
 
-### OSX
+### macOS
 
-Describe this for OSX.
+Describe this for macOS.
 
 ### Windows 10
 
@@ -77,9 +77,9 @@ manipulate the files on the SD Card
 
 Describe this for Linux.
 
-### OSX
+### macOS
 
-Describe this for OSX.
+Describe this for macOS.
 
 ### Windows 10
 

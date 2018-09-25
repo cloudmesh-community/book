@@ -67,13 +67,13 @@ want or can use pyenv, we recommend you download and install python
 2.7.15 and 3.7.0S from python.org
 (<https://www.python.org/downloads/>)
 
-#### Disabling wrong python installs on OSX
+#### Disabling wrong python installs on macOS
 
 While working with students we have seen at times that they take other
 classes either at universities or online that teach them how to program
 in python. Unfortunately, although they seem to do that they often
 ignore to teach you how to properly install python. I just recently had
-a students that had installed python 7 times on his OSX machine, while
+a students that had installed python 7 times on his macOS machine, while
 another student had 3 different installations, all of which conflicted
 with each other as they were not set up properly.
 
@@ -85,9 +85,9 @@ character at the beginning of the line, start a new terminal and see if
 the terminal shell still works. Than you can follow our instructions
 here while using an install on pyenv.
 
-#### Install pyenv on OSX from git
+#### Install pyenv on macOS from git
 
-This is our recommended way to install pyenv on OSX:
+This is our recommended way to install pyenv on macOS:
 
     $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
     $ git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
@@ -118,7 +118,7 @@ Additionally install readline and some compression tools:
     brew update
     brew install readline xz
 
-#### Install pyenv on OSX with Homebrew
+#### Install pyenv on macOS with Homebrew
 
 This is the recommended way of installing pyenv on macOS High Sierra. This method should also be considered if you get the following error:
 "ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?"

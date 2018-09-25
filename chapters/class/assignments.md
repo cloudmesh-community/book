@@ -261,8 +261,8 @@ update to 64 bit. Please consult the Windows documentation on
 this. Whatever you do, make a backup first. It may be easier to boot
 from an external HDD directly into ubuntu. 
 
-:warning: OSX users have typically an easy time as all TAs have access
-to OSX machines. However the version must be the latest version. We do
+:warning: macOS users have typically an easy time as all TAs have access
+to macOS machines. However the version must be the latest version. We do
 not support older versions.
 
 ---

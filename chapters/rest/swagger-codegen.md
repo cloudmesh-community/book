@@ -96,7 +96,7 @@ server side stub code easily.
 
 You will need to [install the Swagger Codegen
 tool](https://swagger.io/docs/swagger-tools/) if not yet done so. For
-OSX we recommend that you use the homebrew install via
+macOS we recommend that you use the homebrew install via
 
     $ brew install swagger-codegen
 

@@ -16,7 +16,7 @@ Download the:
 (https://software-download.microsoft.com/sg/Win10_Edu_1709_English_x64.iso?t=7c50c7bb-4075-4d8e-8403-5b6fc212be0e&e=1515917512&h=c05a4453f063caa94253de55f56991e6)
 
 
-Now burn it onto a flash drive for your OS. For OSX you use 
+Now burn it onto a flash drive for your OS. For macOS you use 
 
 * Virtualbox
 * 4GB memory

@@ -741,7 +741,7 @@ We assume that swagger-codegen is a shell variable allowing you to run
 swagger-codegen.
 
 This could be different on different systems. You will be documenting
-this for your system. On OSX this is trivial as you just use brew to
+this for your system. On macOS this is trivial as you just use brew to
 install and
 
     export SWAGGER-CODEGEN=swagger-codegen

@@ -1,13 +1,13 @@
 # Development Compute Server
 
 While interacting with clusters we need a computer from which we can
-log into the cluster. Such a computer could be your Laptop hosting OSX
+log into the cluster. Such a computer could be your Laptop hosting macOS
 or Windows10 as an operating system.
 
-## OSX
+## macOS
 
-OSX is a very good OS to conduct our work. We have done A lot of
-activities on OSX and know it works. To make thinks more UNIX like we
+macOS is a very good OS to conduct our work. We have done A lot of
+activities on macOS and know it works. To make thinks more UNIX like we
 recommend that you use `homebrew`.
 
 ## Windows 10 Education or Pro

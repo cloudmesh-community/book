@@ -10,11 +10,11 @@ Python Flask.
 ## Prerequisites
 
 In order to follow our discussion you will need a system on which you
-can run docker. THis could either be OSX, Linux, or Windows.
+can run docker. THis could either be macOS, Linux, or Windows.
 
 Python 2.7.x can be used to do this tutorial
 
-### Ubuntu and OSX
+### Ubuntu and macOS
 
 Please use our instructions on installing pyenv.
 
@@ -72,7 +72,7 @@ Install emacs via chocolatey
 
 ## Activate Virtual Environment
 
-### Ubuntu and OSX
+### Ubuntu and macOS
 
 ```bash
 $ mkdir -p ~/cloudmesh/containers/docker-flask
@@ -114,7 +114,7 @@ The File structure takes the following look.
 
 Create requirements.txt file
 
-#### Ubuntu and OSX
+#### Ubuntu and macOS
 
 ```bash
 $ emacs requirements.txt
@@ -144,7 +144,7 @@ $ pip install -r requirements.txt
 Then we are going to create thr Dockerfile which includes all the
 instructions for the deployment of the REST API on docker.
 
-#### Ubuntu and OSX
+#### Ubuntu and macOS
 
 ```bash
 $ emacs Dockerfile
@@ -187,7 +187,7 @@ docker image.
 
 Then we need to creat the main.py file inside the app folder.
 
-#### Ubuntu and OSX
+#### Ubuntu and macOS
 
 ```bash
 emacs app/main.py
@@ -224,7 +224,7 @@ After adding the content save and exit emacs.
 
 ## Build Docker Image
 
-### Ubuntu and OSX
+### Ubuntu and macOS
 
 Now run the following commands.
 
@@ -263,7 +263,7 @@ Note: Changing any content inside the app folder must be
 Run the following commands to get the REST API hosted on
 <http://127.0.0.1:80>
 
-### Ubuntu and OSX
+### Ubuntu and macOS
 
 ```bash
 $ docker run -p 80:80 -t sample-flask-rest-app
