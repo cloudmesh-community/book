@@ -47,6 +47,12 @@
                 - chapters/data/mongoengine.md
         - chapters/prg/python/python-wordcount.md
         - chapters/prg/python/dask/dask.md
+        - chapters/prg/python/numpy/numpy.md
+        - chapters/prg/python/scipy/scipy.md
+        - chapters/prg/python/scikit-learn/scikit-learn-k-means.md
+        - chapters/prg/python/random-forest/random-forest.md
+        - chapters/prg/python/fingerprint/fingerprint.md
+        - chapters/prg/python/facedetection/facedetection.md
 
 - GO:
     - chapters/prg/go/go-intro.md:
