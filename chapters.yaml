@@ -74,7 +74,7 @@
         - chapters/msg/mqtt.md
         - chapters/msg/graphql.md
         - chapters/msg/avro.md
-        - chapters/msg/flink.md        
+        - chapters/msg/flink.md
 
 - HYPERVISOR:
     - chapters/cloud/virtualization.md:
@@ -117,18 +117,21 @@
 # MAPREDUCE IS NOT ORGANIZED
 
 - MAPREDUCE:
-    - chapters/mapreduce/hadoop-lectures.md
-    - chapters/mapreduce/hadoop-installation.md
-    - chapters/mapreduce/spark-lectures.md
-    - chapters/mapreduce/spark-installation.md
-    - chapters/mapreduce/spark-streaming.md
-    - chapters/mapreduce/spark-udf.md
-    - chapters/mapreduce/amazon-emr-1.md
-    - chapters/mapreduce/amazon-emr-2.md
-    - chapters/mapreduce/twister.md
-    - chapters/mapreduce/twister-installation.md
-    - chapters/mapreduce/twister2-example.md
-    - chapters/mapreduce/harp.md
+    - chapters/SECTION-hadoop.md:
+        - chapters/mapreduce/hadoop-lectures.md
+        - chapters/mapreduce/hadoop-installation.md
+    - chapters/SECTION-spark.md:
+        - chapters/mapreduce/spark-lectures.md
+        - chapters/mapreduce/spark-installation.md
+        - chapters/mapreduce/spark-streaming.md
+        - chapters/mapreduce/spark-udf.md
+    - chapters/SECTION-hadoop-advanced.md:
+        - chapters/mapreduce/amazon-emr-1.md
+        - chapters/mapreduce/amazon-emr-2.md
+        - chapters/mapreduce/twister.md
+        - chapters/mapreduce/twister-installation.md
+        - chapters/mapreduce/twister2-example.md
+        - chapters/mapreduce/harp.md
 
 
 # #####################################################################
@@ -171,24 +174,24 @@
     - chapters/SECTION-ONE-PI.md:
         - chapters/pi/sd-card.md
         - chapters/pi/initial-setup.md
-        - chapters/pi/pi-passwordreset.md        
+        - chapters/pi/pi-passwordreset.md
         - chapters/pi/config-display.md
         - chapters/pi/vnc.md
         - chapters/pi/motherboard-led.md
         - chapters/pi/run-at-boot.md
-        - chapters/pi/software2.md        
+        - chapters/pi/software2.md
     - chapters/SECTION-PI-SETUP.md:
         - chapters/pi/setup.md
     - chapters/SECTION-PI-CLUSTER-TRADITIONAL.md:
-        - chapters/pi/clusters/pi-now.md        
-        - chapters/pi/mpi.md        
+        - chapters/pi/clusters/pi-now.md
+        - chapters/pi/mpi.md
         - chapters/pi/slurm.md
         - chapters/pi/clusters/pxe.md
         - chapters/pi/fortran.md
     - chapters/SECTION-PI-CLUSTER-CLOUD.md:
-        - chapters/pi/clusters/pi-docker.md            
+        - chapters/pi/clusters/pi-docker.md
         - chapters/pi/clusters/pi-kubernetes.md
-        - chapters/pi/clusters/pi-hadoop.md        
+        - chapters/pi/clusters/pi-hadoop.md
         - chapters/pi/clusters/pi-spark.md
     - chapters/SECTION-DRAFT.md:
         - chapters/pi/clusters/pi-configure-cluster.md
