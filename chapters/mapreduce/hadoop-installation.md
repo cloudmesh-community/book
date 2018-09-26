@@ -1,5 +1,4 @@
-Installation of Hadoop
-======================
+# Installation of Hadoop :o: {#s-hadoop-installation}
 
 In this section we use Hadoop 3.0.1 and we install Hadoop locally in
 Ubuntu 16.04. We also describe the installation of the Yarn resource

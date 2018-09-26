@@ -1,4 +1,4 @@
-# Hadoop
+# Hadoop :o:
 
 Hadoop is an open source framework for storage and processing of large datasets on commodity clusters. Hadoop internally uses its own file system called HDFS (Hadoop Distributed File System).
 
@@ -63,4 +63,3 @@ theoretical background about this problem and we discuss how this can be
 solved using the map reduce concepts.
 
 [:clapper: Hadoop 15:14 Hadoop E](https://drive.google.com/file/d/1k8RHHY8cwgIN7HcoBQyhaSEhuIbWl-Qw/view?usp=sharing)
-

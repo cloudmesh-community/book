@@ -1,4 +1,4 @@
-# Amazon EMR (Elastic Map Reduce)
+# Amazon EMR (Elastic Map Reduce) :o:
 
 Amazon EMR provides a managed Hadoop framework that makes big data processing
 - Easy
@@ -103,7 +103,7 @@ Login to AWS console, go to services and then select EMR. Click on Create Cluste
 - Select Logging check box selected and provide S3 folder location
 - Select launch mode as Cluster
 - Complete software configuration (select hive application)  and click on create cluster
-- 
+-
 ### Create a Hive Cluster - Screen shots
 
 ![Hive Cluser](images/hive_cluster1.JPG)
@@ -123,5 +123,3 @@ Login to AWS console, go to services and then select EMR. Click on Create Cluste
 ![Spark Cluser](images/spark_cluster1.JPG)
 ![Spark Cluser](images/spark_cluster2.JPG)
 ![Spark Cluser](images/spark_cluster3.JPG)
-
-

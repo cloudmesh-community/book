@@ -1,5 +1,4 @@
-Spark Streaming
-===============
+# Spark Streaming :o:
 
 Streaming Concepts
 ------------------
@@ -221,7 +220,7 @@ Now add the following content.
       auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
       twitter_stream = Stream(auth, TweetListener(c_socket))
-      twitter_stream.filter(track=['messi']) # you can change this topic 
+      twitter_stream.filter(track=['messi']) # you can change this topic
 
     if __name__ == "__main__":
       s = socket.socket()         
@@ -303,7 +302,7 @@ Then add the following content.
     count = 0
     while count < 10:
       time.sleep( 20 )
-      top_10_tweets = sqlContext.sql( 'Select tag, count from tweetsmessi' ) #change table name according to your entity 
+      top_10_tweets = sqlContext.sql( 'Select tag, count from tweetsmessi' ) #change table name according to your entity
       top_10_df = top_10_tweets.toPandas()
       display.clear_output(wait=True)  
       #sn.figure( figsize = ( 10, 8 ) )
@@ -318,7 +317,7 @@ Then add the following content.
 Open `Terminal 1`, then do the following
 
       cd ~/cloudmesh/spark/streaming
-      python tweetslistener.py 
+      python tweetslistener.py
 
 It will show that:
 

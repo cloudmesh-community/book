@@ -1,4 +1,4 @@
-# User Defined Functions in Spark
+# User Defined Functions in Spark :o:
 
 
 Apache Spark is a fast and general cluster-computing framework which perform compuatational tasks up to 100x faster than Hadoop MapReduce in memory, or 10x faster on disk for high speed large-scale streaming, machine learning and SQL workloads tasks. Spark offers support for the applications development employing over 80 high-level operators using Java, Scala, Python, and R. Spark powers the combined or standalone use of a stack of libraries including SQL and DataFrames, MLlib for machine learning, GraphX, and Spark Streaming. Spark can be utilized in standalone cluster mode, on EC2, on Hadoop YARN, or on Apache Mesos and it allows data access in HDFS, Cassandra, HBase, Hive, Tachyon, and any Hadoop data source.
@@ -12,26 +12,26 @@ How to intall Spark in Linux, Windows and MacOS.
 How to create and utilize user defined functions(UDF) in Spark using Python.
 
 How to run the provided example using a provided docker file and make file.
-  
+
 ## Resources
 
 * <https://spark.apache.org/>
 * <http://www.scala-lang.org/>
 * <https://docs.databricks.com/spark/latest/spark-sql/udf-in-python.html>
- 
+
 ## Instructions for Spark installation
 
 ###  Linux
 
-First, JDK (Recommanded version 8) should be installed to a path where there is no space. 
+First, JDK (Recommanded version 8) should be installed to a path where there is no space.
 
 * <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
-	
+
 Second, setup environment variables for jdk by addding bin folder path to to user path variable.
 
 	This $ export PATH = $PATH:/usr/local/java8/bin
 
-Next, download and extract Scala pre-built version from 
+Next, download and extract Scala pre-built version from
 
 * <http://www.scala-lang.org/download/>
 
@@ -130,7 +130,7 @@ Finally, for testing the installation, please type the following command.
 
 In this example we convert temperature data from Celsius to Fahrenheit with filtering and sorting
 
-#### Description about data set 
+#### Description about data set
 
 The file **temperature_data.csv** contains temperature data of different wheather stations and it has the following structure.
 
@@ -340,13 +340,13 @@ To install the example using docker plese do the following steps.
 First, you should install docker in to your computer.
 
 Next, git clone the [project ](https://github.com/cloudmesh-community/hid-sp18-409/blob/master/tutorial/) . Alternatively you can also download the docker image from the docker hub. Then you dont need to do docker build.
-  
+
 ```$ docker pull kadupitiya/tutorial```
 
 Then, change the directory to **spark_udfs** folder.
 
 Next, install the service using following make command
-  
+
 ```$ make docker-build```
 
 Finally, start the service using following make command
