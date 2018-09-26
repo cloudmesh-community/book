@@ -935,7 +935,7 @@ Let us break this down a bit.
     capabilities](https://docs.python.org/2/library/string.html#format-string-syntax)
     to insert values into the string we are displaying.
 
-## Lambda Expressions
+## Lambda Expressions {#s-python-lambda}
 
 As oppose to normal functions in Python which are defined using the `def`
 keyword, lambda functions in Python are anonymous functions which do not have a
@@ -1051,7 +1051,7 @@ Also we don't need to assign Lambda function to a variable.
 Lambda functions are mostly passed as parameter to a function which
 expects a function objects like in map or filter.
 
-### map
+### map {#s-python-map}
 
 The basic syntax of the map function is
 

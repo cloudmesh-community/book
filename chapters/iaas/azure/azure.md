@@ -203,7 +203,7 @@ portal. Select a VM name, and the disk type as SSD, then provide a
 username. The password must be at least 12 characters long and meet
 the defined complexity requirements.
 
-![](images/quick-create-portal/create-windows-vm-portal-basic-blade.png)
+![](images/create-windows-vm-portal-basic-blade.png)
 
 **Figure:** Creating a VM
 

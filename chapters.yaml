@@ -119,21 +119,21 @@
 - MAPREDUCE:
     - chapters/SECTION-MAPREDUCE.md:
         - chapters/mapreduce/mapreduce.md    
-    - chapters/SECTION-hadoop.md:
-        - chapters/mapreduce/hadoop-lectures.md
-        - chapters/mapreduce/hadoop-installation.md
-    - chapters/SECTION-spark.md:
-        - chapters/mapreduce/spark-lectures.md
-        - chapters/mapreduce/spark-installation.md
-        - chapters/mapreduce/spark-streaming.md
-        - chapters/mapreduce/spark-udf.md
-    - chapters/SECTION-hadoop-advanced.md:
-        - chapters/mapreduce/amazon-emr-1.md
-        - chapters/mapreduce/amazon-emr-2.md
-        - chapters/mapreduce/twister.md
-        - chapters/mapreduce/twister-installation.md
-        - chapters/mapreduce/twister2-example.md
-        - chapters/mapreduce/harp.md
+        - chapters/SECTION-hadoop.md:
+            - chapters/mapreduce/hadoop-lectures.md
+            - chapters/mapreduce/hadoop-installation.md
+        - chapters/SECTION-spark.md:
+            - chapters/mapreduce/spark-lectures.md
+            - chapters/mapreduce/spark-installation.md
+            - chapters/mapreduce/spark-streaming.md
+            - chapters/mapreduce/spark-udf.md
+        - chapters/SECTION-hadoop-advanced.md:
+            - chapters/mapreduce/amazon-emr-1.md
+            - chapters/mapreduce/amazon-emr-2.md
+            - chapters/mapreduce/twister.md
+            - chapters/mapreduce/twister-installation.md
+            - chapters/mapreduce/twister2-example.md
+            - chapters/mapreduce/harp.md
 
 
 # #####################################################################
@@ -286,8 +286,8 @@
         - chapters/prg/github.md
     - $ref:HYPERVISOR
     - $ref:IAAS
-    - $ref:SERVERLESS
     - $ref:MAPREDUCE
+    - $ref:SERVERLESS
     - $ref:DEVTOOLS
     - $ref:DEVOPS
     - $ref:PYTHON
