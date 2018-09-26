@@ -1,3 +1,3 @@
-# [Hadoop Advanced Topics]{.part}
+# [Advanced Mapreduce Topics]{.part}
 
 
