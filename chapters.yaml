@@ -46,6 +46,7 @@
                 - chapters/data/formats.md
                 - chapters/data/mongoengine.md
         - chapters/prg/python/python-wordcount.md
+        - chapters/prg/python/dask/dask.md
 
 - GO:
     - chapters/prg/go/go-intro.md:

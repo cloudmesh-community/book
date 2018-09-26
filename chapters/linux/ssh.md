@@ -311,7 +311,7 @@ section.
 
 ### SSH on Windows :o:
 
-:warning: THis section is outdated and should be replaced with
+:warning: This section is outdated and should be replaced with
 information from SSH in powershell
 
 * <https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/>
@@ -602,7 +602,7 @@ No blank passphrases
 A key for each server
 
 -   Under no circumstances copy the same private key on multiple
-    servers. THis violates security best practices. Create for each
+    servers. This violates security best practices. Create for each
     server a new private key and use their public keys to gain access to
     the appropriate server.
 
