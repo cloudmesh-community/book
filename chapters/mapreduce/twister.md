@@ -1,7 +1,6 @@
-Twister
-=======
+# Twister :o:
 
-\TODO{TA: complete tiwster documentation}
+:o: TODO TA: complete tiwster documentation
 
 Resources
 ---------

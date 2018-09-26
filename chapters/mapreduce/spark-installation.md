@@ -1,4 +1,4 @@
-# Installation of Spark
+# Installation of Spark :o:
 
 In this section we will discuss how to install Spark 2.3.0 in Ubuntu
 16.04.
@@ -92,7 +92,7 @@ content.
         _\ \/ _ \/ _ `/ __/  '_/
        /___/ .__/\_,_/_/ /_/\_\   version 2.3.0
           /_/
-             
+
     Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_151)
     Type in expressions to have them evaluated.
     Type :help for more information.
@@ -187,7 +187,7 @@ content.
         _\ \/ _ \/ _ `/ __/  '_/
        /___/ .__/\_,_/_/ /_/\_\   version 2.3.0
           /_/
-             
+
     Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_151)
     Type in expressions to have them evaluated.
     Type :help for more information.

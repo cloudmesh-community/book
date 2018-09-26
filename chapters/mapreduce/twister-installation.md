@@ -1,5 +1,4 @@
-Twister2 Installation
-=====================
+# Twister2 Installation :o:
 
 Prerequisites
 -------------

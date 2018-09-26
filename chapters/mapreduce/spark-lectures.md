@@ -1,5 +1,4 @@
-Spark
-=====
+# Spark :o:
 
 This section covers an introduction to Spark that is split up into eight
 parts. We discuss Spark background, RDD operations, Shark, Spark ML,
@@ -55,4 +54,3 @@ experiments.
 
 [:clapper: Spark 26:18 Spark
   D](https://drive.google.com/file/d/1Rv0uThbqTDSuIk_ERfigYo6xs4G8DERi/view?usp=sharing)
-
