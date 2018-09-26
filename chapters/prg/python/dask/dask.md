@@ -39,14 +39,14 @@ following topics:
 
 Foundations: 
 
-* an explanation of what Dask is, how it works, and how to use lower
+: an explanation of what Dask is, how it works, and how to use lower
   level primitives to set up computations. Casual users may wish to
   skip this section, although we consider it useful knowledge for all
   users.
              
 Distributed Features: 
 
-* information on running Dask on the distributed scheduler, which
+: information on running Dask on the distributed scheduler, which
   enables scale-up to distributed settings and enhanced monitoring of
   task operations. The distributed scheduler is now generally the
   recommended engine for executing task work, even on single
@@ -54,25 +54,25 @@ Distributed Features:
              
 Collections: 
 
-* convenient abstractions giving a familiar feel to big data.
+: convenient abstractions giving a familiar feel to big data.
        
        
 Bags: 
 
-* Python iterators with a functional paradigm, such as found in
+: Python iterators with a functional paradigm, such as found in
   func/iter-tools and toolz - generalize lists/generators to big data;
   this will seem very familiar to users of PySpark's RDD
 
 Array: 
 
-* massive multi-dimensional numerical data, with Numpy functionality
+: massive multi-dimensional numerical data, with Numpy functionality
 
 Dataframe: 
 
-* massive tabular data, with Pandas functionality
+: massive tabular data, with Pandas functionality
 
 
-# How Dask Works
+## How Dask Works
 
 Dask is computation tool for larger-than-memory datasets, parallel
 execution or delayed/background execution.
@@ -115,7 +115,7 @@ Here we have used the delayed annotation to show that we want these
 functions to operate lazily - to save the set of inputs and execute
 only on demand.
 
-# Dask Bag 
+## Dask Bag 
 
 Dask-bag excels in processing data that can be represented as a
 sequence of arbitrary inputs. We'll refer to this as "messy" data,
@@ -191,9 +191,9 @@ c
 c.compute()
 ```
 
-For more details on Dask Bag check https://dask.pydata.org/en/latest/bag.html
+For more details on Dask Bag check <https://dask.pydata.org/en/latest/bag.html>
 
-# Concurrency Features
+## Concurrency Features
 
 Dask supports a real-time task framework that extends Python’s
 concurrent.futures interface. This interface is good for arbitrary
@@ -232,9 +232,9 @@ summary.result()
 ```
 
 For more details on Concurrent Features by Dask check
-https://dask.pydata.org/en/latest/futures.html
+<https://dask.pydata.org/en/latest/futures.html>
 
-# Dask Array 
+## Dask Array 
 
 Dask arrays implement a subset of the NumPy interface on large arrays
 using blocked algorithms and task scheduling.  These behave like numpy
@@ -252,9 +252,9 @@ x = da.from_array(f['/big-data'], chunks=(1000, 1000))
 x - x.mean(axis=1).compute()
 ```
 
-For more details on Dask Array check https://dask.pydata.org/en/latest/array.html
+For more details on Dask Array check <https://dask.pydata.org/en/latest/array.html>
 
-# Dask DataFrame
+## Dask DataFrame
 
 A Dask DataFrame is a large parallel dataframe composed of many
 smaller Pandas dataframes, split along the index.  These pandas
@@ -313,9 +313,9 @@ print (dt)
     Name: Serial_No, dtype: float64
     
 
-For more details on Dask DataFrame check https://dask.pydata.org/en/latest/dataframe.html
+For more details on Dask DataFrame check <https://dask.pydata.org/en/latest/dataframe.html>
 
-# Dask DataFrame Storage
+## Dask DataFrame Storage
 
 Efficient storage can dramatically improve performance, particularly
 when operating repeatedly from disk.
@@ -391,9 +391,9 @@ df_hdf = dd.read_hdf(target, '/data')
 df_hdf.head()
 ```
 
-For more information of Dask DataFrame Storage, click http://dask.pydata.org/en/latest/dataframe-create.html
+For more information of Dask DataFrame Storage, click <http://dask.pydata.org/en/latest/dataframe-create.html>
 
-# Links
+## Links
 
 * <https://dask.pydata.org/en/latest/>
 * <http://matthewrocklin.com/blog/work/2017/10/16/streaming-dataframes-1>
