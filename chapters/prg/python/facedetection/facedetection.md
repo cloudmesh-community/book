@@ -7,23 +7,13 @@ Apache Spark and Mesos clusters on multiple compute nodes.
 The example in this tutorial deploys software packages on OpenStack
 using Ansible with its roles.
 
-:o: Images got lost
+![Original](images/image03.png)
 
-Original:
+![Pedestrian Detected](images/image05.png)
 
-![image](images/image03.png)
+![Original](images/image06.png)
 
-Pedestrian Detected:
-
-![image](images/image05.png)
-
-Original
-
-![image](images/image06.png)
-
-Pedestrian and Face/eyes Detected
-
-![image](images/image04.png)
+![Pedestrian and Face/eyes Detected](images/image04.png)
 
 ### Introduction
 
@@ -419,17 +409,17 @@ Now, we detect faces from the first five images using the classifier.
         if cnt == 5:
             break
 
-![image](images/facedetection_59_0.png){width="25%"}
-![image](images/facedetection_59_1.png){width="25%"}
-![image](images/facedetection_59_2.png){width="25%"}
-![image](images/facedetection_59_3.png){width="25%"}
-![image](images/facedetection_59_4.png){width="25%"}
-![image](images/facedetection_59_5.png){width="25%"}
-![image](images/facedetection_59_6.png){width="25%"}
-![image](images/facedetection_59_7.png){width="25%"}
-![image](images/facedetection_59_8.png){width="25%"}
-![image](images/facedetection_59_9.png){width="25%"}
-![image](images/facedetection_59_10.png){width="25%"}
+![](images/facedetection_59_0.png){width="25%"}
+![](images/facedetection_59_1.png){width="25%"}
+![](images/facedetection_59_2.png){width="25%"}
+![](images/facedetection_59_3.png){width="25%"}
+![](images/facedetection_59_4.png){width="25%"}
+![](images/facedetection_59_5.png){width="25%"}
+![](images/facedetection_59_6.png){width="25%"}
+![](images/facedetection_59_7.png){width="25%"}
+![](images/facedetection_59_8.png){width="25%"}
+![](images/facedetection_59_9.png){width="25%"}
+![](images/facedetection_59_10.png){width="25%"}
 
 ### Pedestrian Detection using HOG Descriptor
 
@@ -466,16 +456,16 @@ person from images.
         if cnt == 5:
             break
 
-![image](images/facedetection_62_0.png){width="25%"}
-![image](images/facedetection_62_1.png){width="25%"}
-![image](images/facedetection_62_2.png){width="25%"}
-![image](images/facedetection_62_3.png){width="25%"}
-![image](images/facedetection_62_4.png){width="25%"}
-![image](images/facedetection_62_5.png){width="25%"}
-![image](images/facedetection_62_6.png){width="25%"}
-![image](images/facedetection_62_7.png){width="25%"}
-![image](images/facedetection_62_8.png){width="25%"}
-![image](images/facedetection_62_9.png){width="25%"}
+![](images/facedetection_62_0.png){width="25%"}
+![](images/facedetection_62_1.png){width="25%"}
+![](images/facedetection_62_2.png){width="25%"}
+![](images/facedetection_62_3.png){width="25%"}
+![](images/facedetection_62_4.png){width="25%"}
+![](images/facedetection_62_5.png){width="25%"}
+![](images/facedetection_62_6.png){width="25%"}
+![](images/facedetection_62_7.png){width="25%"}
+![](images/facedetection_62_8.png){width="25%"}
+![](images/facedetection_62_9.png){width="25%"}
 
 ### Processing by Apache Spark
 
