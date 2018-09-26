@@ -128,6 +128,8 @@
             - chapters/mapreduce/spark-streaming.md
             - chapters/mapreduce/spark-udf.md
         - chapters/SECTION-hadoop-advanced.md:
+            - chapters/mapreduce/hadoop-ubuntu.md
+            - chapters/mapreduce/hadoop-comet.md
             - chapters/mapreduce/amazon-emr-1.md
             - chapters/mapreduce/amazon-emr-2.md
             - chapters/mapreduce/twister.md
@@ -221,8 +223,8 @@
 
 - BOOK_DRAFT:
     - $ref:CONTAINER
-    - $ref:MAPREDUCE
-    - chapters/iaas/openstack/openstack.md
+    - chapters/in/cm-hadoop.md
+    - chapters/in/hadoop-comet.md
     - $ref:DRAFTS
     - chapters/pi/run-at-boot.md
     - chapters/pi/sd-card.md
@@ -238,14 +240,12 @@
     - chapters/pi/board.md
     - chapters/pi/links.md
     - chapters/pi/preface.md
-    - chapters/in/hadoop-ubunto.md
+    - chapters/in/hadoop-ubuntu.md
     - chapters/in/hadoop-rdma.md
     - chapters/in/assignments.md
-    - chapters/in/hadoop-comet.md
     - chapters/in/ubuntu.md
     - chapters/in/old.md
     - chapters/in/box.md
-    - chapters/in/cm-hadoop.md
     - chapters/in/datasets.md
     - chapters/in/pyenv-anaconda.md
     - chapters/in/vis.md

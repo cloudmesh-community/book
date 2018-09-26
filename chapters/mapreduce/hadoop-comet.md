@@ -1,10 +1,8 @@
-Hadoop SDSC
-===========
+# Hadoop SDSC :o:
 
- 
+The information here is copied from:
 
-Overview
---------
+* <http://www.sdsc.edu/support/user_guides/tutorials/hadoop.html>
 
 Users can run Hadoop on Gordon using the myHadoop infrastructure, which
 integrates configuration and Hadoop cluster setup within Gordon's normal
@@ -20,8 +18,10 @@ The Hadoop distribution on Gordon is located in /opt/hadoop and usage
 examples are found in /opt/hadoop/contrib/myHadoop. The examples
 include:
 
-\* Simple - a simple setup and usage example \* TestDFS - Depth-first
-search (DFS) benchmark \* TeraSort - sorting benchmark
+* Simple - a simple setup and usage example 
+* TestDFS - Depth-first
+search (DFS) benchmark 
+* TeraSort - sorting benchmark
 
 Configuration and Runtime Details
 ---------------------------------
