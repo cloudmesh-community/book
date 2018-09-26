@@ -72,6 +72,13 @@ INDEX=\
   chapters/data/formats.md\
   chapters/data/mongoengine.md\
   chapters/prg/python/python-wordcount.md\
+  chapters/prg/python/dask/dask.md\
+  chapters/prg/python/numpy/numpy.md\
+  chapters/prg/python/scipy/scipy.md\
+  chapters/prg/python/scikit-learn/scikit-learn-k-means.md\
+  chapters/prg/python/random-forest/random-forest.md\
+  chapters/prg/python/fingerprint/fingerprint.md\
+  chapters/prg/python/facedetection/facedetection.md\
   chapters/prg/go/go-intro.md\
   chapters/prg/go/go-install.md\
   chapters/prg/go/go-editor.md\
@@ -109,7 +116,7 @@ INDEX=\
   chapters/cloud/chameleon/faq.md\
   chapters/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION-QUICK516.md dest/chapters/quick516.md dest/chapters/class/e516-syllabus-table.md dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/SECTION-OVERVIEW.md dest/chapters/assignment.md dest/chapters/class/organization-516.md dest/chapters/class/plagiarism.md dest/chapters/cloud/gregor.md dest/chapters/class/e516-engineering-cloud-computing.md dest/chapters/class/policies.md dest/chapters/class/e516-summary.md dest/chapters/class/volumes.md dest/chapters/class/e516-definition.md dest/chapters/cloud/datacenter.md dest/chapters/arch.md dest/chapters/nist/bdra.md dest/chapters/rest/rest.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger.md dest/chapters/prg/github.md dest/chapters/cloud/virtualization.md dest/chapters/cloud/qemu.md dest/chapters/cloud/virsh.md dest/chapters/SECTION-IAAS.md dest/chapters/iaas/iaas.md dest/chapters/iaas/aws/aws.md dest/chapters/iaas/azure/azure.md dest/chapters/iaas/watson/watson.md dest/chapters/iaas/gcloud/gcloud.md dest/chapters/iaas/openstack/openstack.md dest/chapters/iaas/libcloud.md dest/chapters/iaas/boto.md dest/chapters/SECTION-SERVERLESS.md dest/chapters/iaas/aws/aws-lambda.md dest/chapters/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/git/gitpullreqest.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/devops/devops.md dest/chapters/devops/travis.md dest/chapters/devops/ansible.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/go/go-intro.md dest/chapters/prg/go/go-install.md dest/chapters/prg/go/go-editor.md dest/chapters/prg/go/go-language.md dest/chapters/prg/go/go-libraries.md dest/chapters/prg/go/go-cmd.md dest/chapters/prg/go/go-rest.md dest/chapters/prg/go/go-openapi.md dest/chapters/prg/go/go-cloud.md dest/chapters/prg/go/go-links.md dest/chapters/prg/julia/julia-language.md dest/chapters/prg/scala/scala.md dest/chapters/MSG.md dest/chapters/msg/mqtt.md dest/chapters/msg/graphql.md dest/chapters/msg/avro.md dest/chapters/msg/flink.md dest/chapters/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-516.md dest/chapters/SECTION-APPENDIX.md dest/chapters/iaas/aws/products.md dest/chapters/iaas/azure/products.md dest/chapters/iaas/futuresystems/futuresystems.md dest/chapters/SECTION-CHAMELEON.md dest/chapters/cloud/chameleon/resources.md dest/chapters/cloud/chameleon/hardware.md dest/chapters/cloud/chameleon/charge.md dest/chapters/cloud/chameleon/start.md dest/chapters/cloud/chameleon/user-guide.md dest/chapters/cloud/chameleon/cli.md dest/chapters/cloud/chameleon/horizon.md dest/chapters/cloud/chameleon/heat.md dest/chapters/cloud/chameleon/baremetal.md dest/chapters/cloud/chameleon/faq.md dest/chapters/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION-QUICK516.md dest/chapters/quick516.md dest/chapters/class/e516-syllabus-table.md dest/chapters/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/SECTION-OVERVIEW.md dest/chapters/assignment.md dest/chapters/class/organization-516.md dest/chapters/class/plagiarism.md dest/chapters/cloud/gregor.md dest/chapters/class/e516-engineering-cloud-computing.md dest/chapters/class/policies.md dest/chapters/class/e516-summary.md dest/chapters/class/volumes.md dest/chapters/class/e516-definition.md dest/chapters/cloud/datacenter.md dest/chapters/arch.md dest/chapters/nist/bdra.md dest/chapters/rest/rest.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger.md dest/chapters/prg/github.md dest/chapters/cloud/virtualization.md dest/chapters/cloud/qemu.md dest/chapters/cloud/virsh.md dest/chapters/SECTION-IAAS.md dest/chapters/iaas/iaas.md dest/chapters/iaas/aws/aws.md dest/chapters/iaas/azure/azure.md dest/chapters/iaas/watson/watson.md dest/chapters/iaas/gcloud/gcloud.md dest/chapters/iaas/openstack/openstack.md dest/chapters/iaas/libcloud.md dest/chapters/iaas/boto.md dest/chapters/SECTION-SERVERLESS.md dest/chapters/iaas/aws/aws-lambda.md dest/chapters/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/git/gitpullreqest.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/devops/devops.md dest/chapters/devops/travis.md dest/chapters/devops/ansible.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/dask/dask.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/prg/python/fingerprint/fingerprint.md dest/chapters/prg/python/facedetection/facedetection.md dest/chapters/prg/go/go-intro.md dest/chapters/prg/go/go-install.md dest/chapters/prg/go/go-editor.md dest/chapters/prg/go/go-language.md dest/chapters/prg/go/go-libraries.md dest/chapters/prg/go/go-cmd.md dest/chapters/prg/go/go-rest.md dest/chapters/prg/go/go-openapi.md dest/chapters/prg/go/go-cloud.md dest/chapters/prg/go/go-links.md dest/chapters/prg/julia/julia-language.md dest/chapters/prg/scala/scala.md dest/chapters/MSG.md dest/chapters/msg/mqtt.md dest/chapters/msg/graphql.md dest/chapters/msg/avro.md dest/chapters/msg/flink.md dest/chapters/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-516.md dest/chapters/SECTION-APPENDIX.md dest/chapters/iaas/aws/products.md dest/chapters/iaas/azure/products.md dest/chapters/iaas/futuresystems/futuresystems.md dest/chapters/SECTION-CHAMELEON.md dest/chapters/cloud/chameleon/resources.md dest/chapters/cloud/chameleon/hardware.md dest/chapters/cloud/chameleon/charge.md dest/chapters/cloud/chameleon/start.md dest/chapters/cloud/chameleon/user-guide.md dest/chapters/cloud/chameleon/cli.md dest/chapters/cloud/chameleon/horizon.md dest/chapters/cloud/chameleon/heat.md dest/chapters/cloud/chameleon/baremetal.md dest/chapters/cloud/chameleon/faq.md dest/chapters/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -404,6 +411,34 @@ dest/chapters/data/mongoengine.md: ../chapters/data/mongoengine.md
 dest/chapters/prg/python/python-wordcount.md: ../chapters/prg/python/python-wordcount.md
 	../bin/markup-single.py ../chapters/prg/python/python-wordcount.md 2
 	../bin/header.py dest/chapters/prg/python/python-wordcount.md 2
+
+dest/chapters/prg/python/dask/dask.md: ../chapters/prg/python/dask/dask.md
+	../bin/markup-single.py ../chapters/prg/python/dask/dask.md 2
+	../bin/header.py dest/chapters/prg/python/dask/dask.md 2
+
+dest/chapters/prg/python/numpy/numpy.md: ../chapters/prg/python/numpy/numpy.md
+	../bin/markup-single.py ../chapters/prg/python/numpy/numpy.md 2
+	../bin/header.py dest/chapters/prg/python/numpy/numpy.md 2
+
+dest/chapters/prg/python/scipy/scipy.md: ../chapters/prg/python/scipy/scipy.md
+	../bin/markup-single.py ../chapters/prg/python/scipy/scipy.md 2
+	../bin/header.py dest/chapters/prg/python/scipy/scipy.md 2
+
+dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md: ../chapters/prg/python/scikit-learn/scikit-learn-k-means.md
+	../bin/markup-single.py ../chapters/prg/python/scikit-learn/scikit-learn-k-means.md 2
+	../bin/header.py dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md 2
+
+dest/chapters/prg/python/random-forest/random-forest.md: ../chapters/prg/python/random-forest/random-forest.md
+	../bin/markup-single.py ../chapters/prg/python/random-forest/random-forest.md 2
+	../bin/header.py dest/chapters/prg/python/random-forest/random-forest.md 2
+
+dest/chapters/prg/python/fingerprint/fingerprint.md: ../chapters/prg/python/fingerprint/fingerprint.md
+	../bin/markup-single.py ../chapters/prg/python/fingerprint/fingerprint.md 2
+	../bin/header.py dest/chapters/prg/python/fingerprint/fingerprint.md 2
+
+dest/chapters/prg/python/facedetection/facedetection.md: ../chapters/prg/python/facedetection/facedetection.md
+	../bin/markup-single.py ../chapters/prg/python/facedetection/facedetection.md 2
+	../bin/header.py dest/chapters/prg/python/facedetection/facedetection.md 2
 
 dest/chapters/prg/go/go-intro.md: ../chapters/prg/go/go-intro.md
 	../bin/markup-single.py ../chapters/prg/go/go-intro.md 1

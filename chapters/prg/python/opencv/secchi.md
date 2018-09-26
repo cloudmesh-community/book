@@ -12,7 +12,7 @@ Secchi disk. The use of the Secchi disk is as follows:
 
 One of the things we can do is take a video of the measurement instead
 of a human recording them. Than we can analyse the video automatically
-to see how deep a disk was lowered. THis is a classical image analysis
+to see how deep a disk was lowered. This is a classical image analysis
 program. YOu are encouraged to identify algorithms that can identify
 the depth. The most simplest seems to be to do a histogram at a
 variety of depth steps, and measure when the histogram no longer
