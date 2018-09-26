@@ -76,7 +76,7 @@ Assignments
 
 |     | Dates  | Unit | Title  | Description |
 | --- |------ | --- | ------- | --------------------- |
-| :white_check_mark: | 09/13-11/02*                | A1      | section           | Contribute a significant section. Do not develop redundant or duplicated content. |
+| :white_check_mark: | 09/13-11/02*                | A1      | Sections           | Contribute significant sections. Do not develop redundant or duplicated content. |
 | :white_check_mark: | 09/13-11/02*                | A2      | Chapter            | Contribute a significant chapter that may use your section to the class documentation. Do not develop redundant or duplicated content. |
 |  | 09/24-11/26*                | A3      | Project Type A     | Build a cloud out of Raspberry PIs |
 |  | 09/24-11/26*                |         |                    | Kubernetes, Hadoop, SLURM + OpenAPI Service,  |
@@ -160,13 +160,14 @@ the entire semester.
 weekly by residential students). It is the major part of the course
 grade.
 
-(*) sections prepare you for documenting a technical aspect related
+(*) Sections and chapters prepare you for documenting a technical aspect related
 to cloud computing. It is a preparation for a document that explains
 how to execute your project in a reproducible manner to others.
 
 - all times are in EST
 
-Additional Lectures will be added that allow easy management of the project. These lectures can be taken any time when needed
+Additional lectures will be added that allow easy management of the project. 
+These lectures can be taken any time when needed.
 
 <div class="smalltable">
 
