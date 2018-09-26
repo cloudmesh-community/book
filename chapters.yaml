@@ -117,6 +117,8 @@
 # MAPREDUCE IS NOT ORGANIZED
 
 - MAPREDUCE:
+    - chapters/SECTION-MAPREDUCE.md:
+        - chapters/mapreduce/mapreduce.md    
     - chapters/SECTION-hadoop.md:
         - chapters/mapreduce/hadoop-lectures.md
         - chapters/mapreduce/hadoop-installation.md
