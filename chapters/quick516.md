@@ -78,7 +78,7 @@ class.
       yourself for the project.
 
 
-# Assignments:
+# Assignments
 
 We have there graded assignments all other activities are geard towards
 supporting these assignments.
@@ -90,5 +90,5 @@ here.
 * Chapter contribution
 * Project
 
-Section and chapter prepare you for the project
+Sections and chapter prepare you for the project
 
