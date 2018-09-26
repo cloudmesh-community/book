@@ -5,11 +5,7 @@ Hadoop is an open source framework for storage and processing of large datasets 
 Hadoop Motivation
 -----------------
 
-In this section we discuss about the background of Mapreduce along with
-Hadoop and core components of Hadoop.
-
-[:clapper: Hadoop 19:02 Hadoop
-  A](https://drive.google.com/file/d/1CmtoDDio-CYT9g4bsjclVfukA5TsIc8n/view?usp=sharing)
+The motivation for Haddop was introduced in Section {#s-mapreduce}
 
 
 Hadoop and MapReduce
