@@ -22,7 +22,7 @@ Documentation Specification. It defines a specification to describe and
 document a RESTful service API. It is also known under version 3.0 of
 swagger. However, as the tools for 3.0 are not yet completed, we will
 continue for now to use version swagger 2.0, till the transition has
-been completed. THis is especially of importance, as we need to use the
+been completed. This is especially of importance, as we need to use the
 swagger codegen tool, which currently support only up to specification
 v2. Hence we are at this time using OpenAPI/Swagger v2.0 in our example.
 There are some structure and syntax changes in v3, while the essence is

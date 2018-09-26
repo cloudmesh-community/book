@@ -2,7 +2,7 @@
 
 In this section we want to explore a bit more some features of REST
 services and how to access them. Naturally all many cloud services
-provide such REST sinterfaces. THis is valid for IaaS, PaaS, and SaaS.
+provide such REST sinterfaces. This is valid for IaaS, PaaS, and SaaS.
 
 Instead of using a REST service for IaaS, let us here inspect a REST
 service for the Github.com platform.

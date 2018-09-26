@@ -45,7 +45,8 @@ Books are organize in directories. We currently have
 ./book/big-data-applications/
 ```
 
-To compile a book go to the directory and make it. Lets assume you like to create the cloud book for 516
+To compile a book go to the directory and make it. Lets assume you
+like to create the cloud book for 516
 
 ```
 $ git clone https://github.com/cloudmesh-community/book.git
@@ -93,5 +94,5 @@ alias m='make; make view'
 alias d='make draft; make view'
 ```
 
-THis allows you to typ `m` for the main volume and `q` for the draft.
+This allows you to typ `m` for the main volume and `q` for the draft.
 Please note that all artifacts are written into the dest folder.
