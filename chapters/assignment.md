@@ -45,7 +45,7 @@ As part of the class you will be constributing a **significant**
 chapter that can be used by other students in the class and introduces
 the reader to a general topic, in addition it is expected if
 applicable to develop a practical section demonstrating how to use a
-technology. THe chapter and the practical section can be the same. We
+technology. The chapter and the practical section can be the same. We
 do not like to use the term tutorial in our writeup but sometimes we
 refer to it in our assignments as such.
 
@@ -69,7 +69,7 @@ Make sure to add yourself if you know you can complete the section in two days.
 
 ### Chapters
 
-THe following require more work and qualify **if done right as a
+The following require more work and qualify **if done right as a
 chapter**. PLease suggest chapters you like to contribute:
 
 * [GraphQL](#s-graphql)

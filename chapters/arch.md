@@ -167,7 +167,7 @@ follow the following definitions:
 
 Edge Computing refers to
 
-> computing conducted on the very edge of infrastructure. THis means
+> computing conducted on the very edge of infrastructure. This means
 > that data that is not needed in the data center can be calculated
 > and analyzed on the edge devices instead. No interaction between
 > cloud services is needed. Only the absolute required data is send to
