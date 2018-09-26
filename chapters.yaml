@@ -196,9 +196,6 @@
     - chapters/SECTION-DRAFT.md:
         - chapters/pi/clusters/pi-configure-cluster.md
         - chapters/pi/clusters/pi-setup.md
-
-
-
     - chapters/SECTION-REFERENCES.md
 
 
@@ -288,11 +285,11 @@
     - $ref:HYPERVISOR
     - $ref:IAAS
     - $ref:SERVERLESS
+    - $ref:MAPREDUCE
     - $ref:DEVTOOLS
     - $ref:DEVOPS
     - $ref:PYTHON
     - $ref:GO
-    - $ref:MAPREDUCE
     - chapters/prg/julia/julia-language.md
     - chapters/prg/scala/scala.md
     - $ref:MSG
