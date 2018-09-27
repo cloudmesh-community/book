@@ -1,16 +1,5 @@
 # Apache Hadoop using Docker :o: {#s-hadoop-docker-2}
 
-<!--- 
-
-Disclaimer: If you reached this file via github, it is ok to make a pull request 
-for this file to correct it. However, viewing this file is only done properly 
-in the ePub. Thus we recommend that you go to 
-
-https://github.com/cloudmesh-community/book/blob/master/README.md
-
-and download the appropriate ePub
---->
-
 In this section we will explore the Map/Reduce framework using Hadoop
 provided through a Docker container. The example that we use in this
 session is similar to WordCount but simple calculations are added
