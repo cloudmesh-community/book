@@ -38,6 +38,9 @@ Develop a cm-burn command that creates Raspberry PI OS based on
 manipulation of the file system
 
 * <https://github.com/cloudmesh-community/cm-burn>
+* <https://github.com/cloudmesh-community/cm>
+
+Substential contributions are expected.
 
 ## Section and Chapter Contributions
 
