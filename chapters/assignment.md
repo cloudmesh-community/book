@@ -73,7 +73,7 @@ Make sure to add yourself if you know you can complete the section in two days.
 ### Chapters
 
 The following require more work and qualify **if done right as a
-chapter**. PLease suggest chapters you like to contribute:
+chapter**. Please suggest chapters you like to contribute:
 
 * [GraphQL](#s-graphql)
 * OpenFaaS
