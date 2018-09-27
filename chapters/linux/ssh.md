@@ -309,10 +309,10 @@ activate it via the configuration menu. For a more automated
 configuration, we will provide more information in the Raspberry PI
 section.
 
-### SSH on Windows :o:
+### SSH on Windows :o: :?:
 
 :warning: This section is outdated and should be replaced with
-information from SSH in powershell
+information from SSH in powershell and the new ubuntu running in windows
 
 * <https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/>
 
@@ -392,7 +392,7 @@ command that we described earlier.
 	$ ssh-add
 
 
-## SSH Port Forwarding :o:
+## SSH Port Forwarding :o: :?:
 
 :warning: this section has not been vetted yet
 
@@ -625,7 +625,6 @@ keep an offline backup, put encrypt the drive
 
 
 ### References
-
 
 -   [The Secure Shell: The Definitive Guide, 2 Ed (O'Reilly and
     Associates)](http://shop.oreilly.com/product/9780596008956.do)
