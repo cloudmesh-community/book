@@ -1,6 +1,6 @@
 # Introduction to Kubernetes :o:
 
-[](Comment 
+[](Comment
 
 Disclaimer: If you reached this file via github, it is ok to make a pull request 
 for this file to correct it. However, viewing this file is only done properly 
