@@ -107,7 +107,6 @@
 
 - CONTAINER:
     - chapters/SECTION/SECTION-CONTAINER.md:
-        - chapters/container/index.md
         - chapters/container/container.md
         - chapters/SECTION/SECTION-KUBERNETES.md:
             - chapters/container/kubernetes-intro.md
