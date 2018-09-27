@@ -1,11 +1,5 @@
 # Introduction to Kubernetes :o:
 
-:o: there are some windows commands here, we want linux, but if
-windows useful explain how to run it from bash within windows
-
-
-## Topics Covered and Learning Outcome
-
 ---
 
 **:mortar_board: Learning Objectives**
@@ -24,8 +18,6 @@ windows useful explain how to run it from bash within windows
 * With an interactive online tutorial
 
 ---
-
-## What is Kubernetes?
 
 Kubernetes is an open-source platform designed to automate deploying,
 scaling, and operating application containers.
@@ -49,13 +41,17 @@ Kubernetes is
 
 ## What are containers?
 
-![Kubernetes Containers](images/why-containers.png)
-
-Figure: Containers
+![Kubernetes Containers](images/why-containers.png){#fig:k-containers}
 
 source: <https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg>
 
++@fig:k-containers shows a dipiction of the container architecture
+
+
+
 ## Terminology
+
+In kubernetes we are using teh following terminology
 
 Pods:
 
@@ -86,12 +82,21 @@ Deployments:
 
 ## Kubernetes Architecture
 
-![Kubernetes (Source: Google)](images/kubernetes.png){#fig:tas-arch}
+The architecture of kubernets is shown in +@fig:k-arch.
+
+![Kubernetes (Source: Google)](images/kubernetes.png){#fig:k-arch}
+
 
 ## Minikube
 
-1.  minikube installation
-2.  minikube hello-minikube
+To try out kubernetes on your own computer you can download and
+install minikube. It deploys and runs a  single-node Kubernetes
+cluster inside a VM. Hence it provide a reasonable environment not
+only to try it out, but also for development [[cite]](https://kubernetes.io/docs/setup/minikube/).
+
+In this section we will first discuss how to install minikube and then
+showcase an example.
+
 
 ### Install minikube
 

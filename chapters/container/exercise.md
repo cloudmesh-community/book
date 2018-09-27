@@ -1,9 +1,9 @@
 # Exercises :o:
 
 
-## Docker Swarm Tutorial
+## Docker Swarm Section
 
-Develop a tutorial that deploys a Docker Swarm cluster on a number of
+Develop a section that deploys a Docker Swarm cluster on a number of
 ubuntu machines. Note that this may actually be easier as docker and
 docker swarm are distributed with recent versions of ubuntu. Just in
 case we are providing a link to an effort we found to install docker
@@ -13,7 +13,7 @@ swarm. However we have not checked it or identified if it is useful.
 
 ## Docker Swarm on Google Compute Engine
 
-Develop a tutorial that deploys a Docker Swarm cluster on Google Compute
+Develop a section that deploys a Docker Swarm cluster on Google Compute
 Engine. Note that this may actually be easier as docker and docker swarm
 are distributed with recent versions of ubuntu. Just in case we are
 providing a link to an effort we found to install docker swarm. However
@@ -55,7 +55,7 @@ use wordcount or similar.
 
 ## Spark Cluster
 
-Develop a high quality tutorial that installs a spark cluster in
+Develop a high quality section that installs a spark cluster in
 kubernetes. Test your deployment on minikube but also Futuresystems
 echo.
 

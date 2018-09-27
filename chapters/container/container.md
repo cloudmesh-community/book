@@ -1,4 +1,4 @@
-# Introduction to Containers :o:
+# Introduction to Containers
 
 ---
 
@@ -47,24 +47,12 @@ cluster of containers.
 
 [:clapper: Container 50:14 Container D](https://youtu.be/V41oi2Bh8Cc)
 
-## QEMU and KVM
-
-We discuss the underlying virtualization technologies used by OpenStack
-and public cloud providers, such as AWS, Azure, and Google Cloud.
-
-[:scroll: QEMU-KVM 50 QEMU KVM](https://1drv.ms/p/s!AvpSEd2J24STjBbo4k35C5v-ra8g)
-
 ## Resources
 
-### Container Orchestration Tools: Compare Kubernetes vs Docker Swarm
+* Container Orchestration Tools: Compare Kubernetes vs Docker Swarm <https://platform9.com/blog/compare-kubernetes-vs-docker-swarm/>
+* Gentle introduction to Containers <https://www.slideshare.net/jpetazzo/introduction-docker-linux-containers-lxc>
 
-* <https://platform9.com/blog/compare-kubernetes-vs-docker-swarm/>
-
-### Gentle introduction to Containers
-
-* <https://www.slideshare.net/jpetazzo/introduction-docker-linux-containers-lxc>
-
-### Tutorialspoint
+Tutorialspoint
 
 * <https://www.tutorialspoint.com/docker/index.htm>
 * <https://www.tutorialspoint.com/docker/docker_tutorial.pdf>
