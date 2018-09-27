@@ -1,27 +1,15 @@
-# Review
+# TODO Container section :o:
 
+<!--- 
 
-index.md
+Disclaimer: If you reached this file via github, it is ok to make a pull request 
+for this file to correct it. However, viewing this file is only done properly 
+in the ePub. Thus we recommend that you go to 
 
-## Files that are completed
+https://github.com/cloudmesh-community/book/blob/master/README.md
 
-* container.tex
-
-* docker-kubernetes-installation.tex
-
-* docker.tex -> docker-local.tex
-
-  * wrong filename
-  * its about installing docker locally
-  * may be finished if we would integrate 
-
-* docker-rest.tex
-* docker-hadoop.tex - Hyungro: under development - lee docker image
-* docker-spark.tex - Bo created image uses some image, can image created
-
-* docker-fs.tex
-* kubernetes-fs.md
-
+and download the appropriate ePub
+--->
 
 ## Files in draft
 
@@ -34,9 +22,6 @@ docker-hadoop.tex
 docker-kubernetes-installation.tex
 
 * draft?
-
-
-docker-spark.tex
 
 docker-kubernetes.md
 

@@ -1,5 +1,16 @@
 # Introduction to Kubernetes :o:
 
+<!--- 
+
+Disclaimer: If you reached this file via github, it is ok to make a pull request 
+for this file to correct it. However, viewing this file is only done properly 
+in the ePub. Thus we recommend that you go to 
+
+https://github.com/cloudmesh-community/book/blob/master/README.md
+
+and download the appropriate ePub
+--->
+
 :o: there are some windows commands here, we want linux, but if
 windows useful explain how to run it from bash within windows
 
@@ -91,14 +102,13 @@ Deployments:
 ## Minikube
 
 1.  minikube installation
-
 2.  minikube hello-minikube
 
 ### Install minikube
 
 ##### OSX
 
-```bash
+```console
 $ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 ```
 
@@ -122,13 +132,13 @@ directory.
 
 ##### Linux
 
-```bash
+```console
 $ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 ```
 
 Installing KVM2 is important for Ubuntu distributions
 
-```bash
+```console
 $ sudo apt install libvirt-bin qemu-kvm
 $ sudo usermod -a -G libvirtd $(whoami)
 $ newgrp libvirtd
@@ -139,7 +149,7 @@ libraries for windows installation.
 
 Then install the drivers for KVM2,
 
-```bash
+```console
 $ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-kvm2 && chmod +x docker-machine-driver-kvm2 && sudo mv docker-machine-driver-kvm2 /usr/bin/
 ```
 
@@ -147,13 +157,13 @@ $ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machin
 
 ##### OSX Minikube Start
 
-```bash
+```console
 $ minikube start
 ```
 
 ##### Ubuntu Minikube Start
 
-```bash
+```console
 $ minikube start --vm-driver=kvm2
 ```
 
@@ -165,20 +175,20 @@ administrator. If you are an administrator it will run automatically but
 if you are not please make sure you provide the admin login information
 in the pop up.
 
-```bash
+```console
 $ cd  C:\Users\<username>\Documents\cloudmesh
 $ .\minikube.exe start --vm-driver="virtualbox"
 ```
 
 ### Create a deployment
 
-```bash
+```console
 $ kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
 ```
 
 ### Expose the service
 
-```bash
+```console
 $ kubectl expose deployment hello-minikube --type=NodePort
 ```
 
@@ -186,26 +196,26 @@ $ kubectl expose deployment hello-minikube --type=NodePort
 
 This step is to make sure you have a pod up and running.
 
-```bash
+```console
 $ kubectl get pod
 ```
 
 ### Call service api
 
-```bash
+```console
 $ curl $(minikube service hello-minikube --url)
-```
+``
 
 ### Take a look from Dashboard
 
-```bash
+```console
 $ minikube dashboard
 ```
 
 If you want to get an interactive dashboard,
 
-```bash
-$ .\minikube.exe dashboard --url=true
+```console
+$ minikube dashboard --url=true
 http://192.168.99.101:30000
 ```
 
@@ -214,7 +224,7 @@ provide a GUI dashboard regarding minikube.
 
 ### Delete the service and deployment
 
-```bash
+```console
 $ kubectl delete service hello-minikube
 $ kubectl delete deployment hello-minikube
 ```
@@ -223,7 +233,7 @@ $ kubectl delete deployment hello-minikube
 
 For all platforms we can use the following command.
 
-```bash
+```console
 $ minikube stop
 ```
 
@@ -231,21 +241,15 @@ $ minikube stop
 
 * Start cluster
   <https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/>
-
 * Deploy app
   <https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive>
-
 * Explore
   <https://kubernetes.io/docs/tutorials/kubernetes-basics/explore-intro/>
-
 * Expose
   <https://kubernetes.io/docs/tutorials/kubernetes-basics/expose-intro/>
-
 * Scale
   <https://kubernetes.io/docs/tutorials/kubernetes-basics/scale-intro/>
-
 * Update
   <https://kubernetes.io/docs/tutorials/kubernetes-basics/update-interactive/>
-
 * MiniKube
   <https://kubernetes.io/docs/tutorials/stateless-application/hello-minikube/>

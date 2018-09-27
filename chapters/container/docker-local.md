@@ -1,4 +1,15 @@
-# Running Docker Locally
+# Running Docker Locally :o:
+
+<!--- 
+
+Disclaimer: If you reached this file via github, it is ok to make a pull request 
+for this file to correct it. However, viewing this file is only done properly 
+in the ePub. Thus we recommend that you go to 
+
+https://github.com/cloudmesh-community/book/blob/master/README.md
+
+and download the appropriate ePub
+--->
 
 The official installation documentation for docker can be found by
 visiting the following Web page:

@@ -1,4 +1,15 @@
-# Apache Hadoop Latest (3.0.1) using Docker
+# Apache Hadoop Latest (3.0.1) using Docker :o:
+
+<!--- 
+
+Disclaimer: If you reached this file via github, it is ok to make a pull request 
+for this file to correct it. However, viewing this file is only done properly 
+in the ePub. Thus we recommend that you go to 
+
+https://github.com/cloudmesh-community/book/blob/master/README.md
+
+and download the appropriate ePub
+--->
 
 Apache Hadoop 3.0.1 is the latest release (25 March, 2018) which
 includes significant enhancements over the previous version of Hadoop
