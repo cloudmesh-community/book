@@ -451,6 +451,9 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as 
 > the date when the PUE was reported.
 
+### Hot-Cold Isle :o: :question:
+
+Contribute a section discussing the hot cold isle.
 
 ### Workload Monitoring
 
