@@ -1,4 +1,4 @@
-# Go Cloud :o: :?: {#s-go-cloud}
+# Go Cloud :o: :question: {#s-go-cloud}
 
 ## Golang Openstack Client
 

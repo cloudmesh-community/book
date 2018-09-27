@@ -1,6 +1,6 @@
-# Hadoop RDMA
+# Hadoop RDMA :o: :question:
 
-copied from: <https://www.chameleoncloud.org/appliances/17/docs/>
+This section was copied with permission from: <https://www.chameleoncloud.org/appliances/17/docs/>
 
 The CentOS 7 SR-IOV RDMA-Hadoop appliance is built based on CC-CentOS7
 appliance. In this appliance, it also contains a CentOS 7 Virtual
@@ -8,18 +8,24 @@ Machine image, a VM startup script and a Hadoop cluster launch script,
 so that users can launch VMs with SR-IOV in order to run RDMA-Hadoop
 across these VMs on SR-IOV enabled InfiniBand clusters.
 
-\* Image name: CC-CentOS7-RDMA-Hadoop \* Default user account: cc \*
-Remote access: Key-Based SSH \* Root access: passwordless sudo from the
-cc account \* Chameleon admin access: enabled on the ccadmin account \*
-Cloud-init enabled on boot: yes \* Repositories (Yum): EPEL, RDO
-(OpenStack) \* Installed packages: \* Rebuilt kernel to enable IOMMU \*
-Mellanox SR-IOV drivers for InfiniBand \* KVM hypervisor \* Standard
-development tools such as make, gcc, gfortran, etc. \* Config management
-tools: Puppet, Ansible, Salt \* OpenStack command-line clients \*
-Included VM image name: chameleon-rdma-hadoop-appliance.qcow2 \*
-Included VM startup script: start-vm.sh \* Included Hadoop cluster
-launch script: launch-hadoop-cluster.sh \* Default VM root password:
-nowlab
+* Image name: CC-CentOS7-RDMA-Hadoop
+* Default user account: cc
+* Remote access: Key-Based SSH
+* Root access: passwordless sudo from the cc account
+* Chameleon admin access: enabled on the ccadmin account
+* Cloud-init enabled on boot: yes
+* Repositories (Yum): EPEL, RDO (OpenStack)
+* Installed packages:
+* Rebuilt kernel to enable IOMMU
+* Mellanox SR-IOV drivers for InfiniBand
+* KVM hypervisor
+* Standard development tools such as make, gcc, gfortran, etc.
+* Config management tools: Puppet, Ansible, Salt
+* OpenStack command-line clients
+* Included VM image name: chameleon-rdma-hadoop-appliance.qcow2
+* Included VM startup script: start-vm.sh
+* Included Hadoop cluster launch script: launch-hadoop-cluster.sh
+* Default VM root password: nowlab
 
 Please refer to the bare metal user guide for documentation on how to
 reserve and provision resources using the appliance of
@@ -110,7 +116,8 @@ In order to run RDMA-Hadoop across VMs with SR-IOV, and keep the size of
 VM image small, extra initialization will be executed when launching VM
 automatically, which includes:
 
-\* Detect Mellanox SR-IOV drivers, download and install it if
+
+* Detect Mellanox SR-IOV drivers, download and install it if
 nonexistent \* Detect Java package installed, download and install if
 non-existent \* Detect RDMA-Hadoop package installed, download and
 install if non-existent
@@ -135,7 +142,6 @@ launched VMs and also delete all the created network ports.
 
     If you launched VMs using the start-vm.sh script, you should first manually kill all the VMs. Then, delete all the created network ports using this command:
 
-    \begin{verbatim}
     [user@host]$ neutron port-delete PORT
 
 Please note that it is important to delete unused ports after

@@ -1,4 +1,4 @@
-# Go Language :o: :?: {#s-go-language}
+# Go Language :o: :question: {#s-go-language}
 
 :warning: This section is under development. It is contributed by Bo but stdents can contribute, just make sure you do pull requests often. 
 

@@ -1,4 +1,4 @@
-# Open API :o: :?:
+# Open API :o: :question:
 
 :warning: We have a large section previously on openapi, 
 what needs to be done here is to showcase how to generate go 
