@@ -1,16 +1,5 @@
 # Introduction to Kubernetes :o:
 
-[](Comment
-
-Disclaimer: If you reached this file via github, it is ok to make a pull request 
-for this file to correct it. However, viewing this file is only done properly 
-in the ePub. Thus we recommend that you go to 
-
-https://github.com/cloudmesh-community/book/blob/master/README.md
-
-and download the appropriate ePub
-)
-
 :o: there are some windows commands here, we want linux, but if
 windows useful explain how to run it from bash within windows
 
