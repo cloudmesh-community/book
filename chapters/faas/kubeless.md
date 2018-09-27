@@ -1,4 +1,4 @@
-# Kubeless
+# Kubeless :o:
 
-::o: TODO students can contribute this section
+:o: TODO students can contribute this section
 

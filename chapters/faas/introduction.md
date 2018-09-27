@@ -1,4 +1,4 @@
-## FaaS 
+## FaaS  :o:
 
 * <https://en.wikipedia.org/wiki/Function_as_a_service>
 * <https://github.com/openfaas/faas>
