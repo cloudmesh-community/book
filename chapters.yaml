@@ -161,7 +161,17 @@
 - SERVERLESS:
     - chapters/SECTION-SERVERLESS.md:
         - chapters/iaas/aws/aws-lambda.md
-
+        - chapters/iaas/microsoft-azure-functions.md
+        - chapters/iaas/google-cloud-functions.md        
+        - chapters/faas/openwhisk.md
+        - chapters/faas/openfaas.md
+        - chapters/faas/kubeless.md
+        - chapters/faas/riff.md
+        - chapters/faas/fission.md
+        - chapters/faas/ironfunction.md
+        - chapters/faas/fn.md
+        - chapters/faas/gestalt.md
+        - chapters/faas/openlambda.md        
 
 # #####################################################################
 # PI
