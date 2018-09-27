@@ -1,4 +1,4 @@
-# Microsoft Azure Function
+# Microsoft Azure Function :o:
 
-::o: TODO students can contribute this section
+:o: TODO students can contribute this section
 
