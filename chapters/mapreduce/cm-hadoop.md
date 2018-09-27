@@ -1,5 +1,9 @@
-Hadoop Virtual Cluster Installation
-===================================
+# Hadoop Virtual Cluster Installation :o:
+
+:warning: This version is dependent on an older version of cloudmesh
+
+:o: :TODO: we need to add teh instalation instructions based on this
+version 
 
 Cloudmesh Cluster Installation
 ------------------------------

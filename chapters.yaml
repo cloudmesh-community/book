@@ -8,7 +8,6 @@
         - chapters/in/cloud-usecases.md
         - chapters/in/cm-burn.md
         - chapters/in/compliance.md
-        - chapters/in/hadoop-rdma.md
         - chapters/in/packer.md
         - chapters/in/vis.md
         - chapters/in/visual-studio.md
@@ -142,6 +141,7 @@
             - chapters/mapreduce/spark-streaming.md
             - chapters/mapreduce/spark-udf.md
         - chapters/SECTION-hadoop-advanced.md:
+            - chapters/mapreduce/cm-hadoop.md
             - chapters/mapreduce/hadoop-ubuntu.md
             - chapters/mapreduce/hadoop-comet.md
             - chapters/mapreduce/amazon-emr-1.md
@@ -150,6 +150,8 @@
             - chapters/mapreduce/twister-installation.md
             - chapters/mapreduce/twister2-example.md
             - chapters/mapreduce/harp.md
+            - chapters/mapreduce/hadoop-rdma.md            
+            
 
 
 # #####################################################################
@@ -250,7 +252,6 @@
 
 - BOOK_DRAFT:
     - $ref:CONTAINER
-    - chapters/in/cm-hadoop.md
     - chapters/in/hadoop-comet.md
     - $ref:DRAFTS
     - chapters/pi/run-at-boot.md
@@ -267,8 +268,6 @@
     - chapters/pi/board.md
     - chapters/pi/links.md
     - chapters/pi/preface.md
-    - chapters/in/hadoop-ubuntu.md
-    - chapters/in/hadoop-rdma.md
     - chapters/in/assignments.md
     - chapters/in/ubuntu.md
     - chapters/in/old.md
