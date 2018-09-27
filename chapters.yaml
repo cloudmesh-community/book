@@ -108,22 +108,23 @@
 - CONTAINER:
     - chapters/SECTION/SECTION-CONTAINER.md:
         - chapters/container/container.md
-        - chapters/SECTION/SECTION-KUBERNETES.md:
-            - chapters/container/kubernetes-intro.md
-            - chapters/container/kubernetes-fs.md
-        - chapters/container/exercise.md
         - chapters/SECTION/SECTION-DOCKER.md:
             - chapters/container/docker-intro.md
             - chapters/container/docker-local.md
             - chapters/container/dockerhub.md
             - chapters/container/docker-fs.md
+        - chapters/SECTION/SECTION-DOCKER-PAAS.md:
+            - chapters/container/docker-swarm.md
             - chapters/container/docker-hadoop-cluster.md
             - chapters/container/docker-hadoop.md
             - chapters/container/docker-hadoop3.md
             - chapters/container/docker-pagerank-example-instruction.md
             - chapters/container/docker-spark.md
             - chapters/container/docker-rest.md
-            - chapters/container/docker-swarm.md
+        - chapters/SECTION/SECTION-KUBERNETES.md:
+            - chapters/container/kubernetes-intro.md
+            - chapters/container/kubernetes-fs.md
+        - chapters/container/exercise.md
 
 # MAPREDUCE IS NOT ORGANIZED
 
@@ -141,16 +142,13 @@
         - chapters/SECTION/SECTION-hadoop-advanced.md:
             - chapters/mapreduce/cm-hadoop.md
             - chapters/mapreduce/hadoop-ubuntu.md
-
             - chapters/mapreduce/amazon-emr-1.md
             - chapters/mapreduce/amazon-emr-2.md
             - chapters/mapreduce/twister.md
             - chapters/mapreduce/twister-installation.md
             - chapters/mapreduce/twister2-example.md
             - chapters/mapreduce/harp.md
-            - chapters/mapreduce/hadoop-rdma.md            
-            
-
+            - chapters/mapreduce/hadoop-rdma.md
 
 # #####################################################################
 # chameleon
@@ -309,7 +307,7 @@
     - $ref:HYPERVISOR
     - $ref:IAAS
     - $ref:MAPREDUCE
-    - $ref:CONTAINER    
+    - $ref:CONTAINER
     - $ref:SERVERLESS
     - $ref:DEVTOOLS
     - $ref:DEVOPS
