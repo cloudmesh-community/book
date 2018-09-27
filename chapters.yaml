@@ -1,5 +1,19 @@
 ---
 
+- IN:
+    - chapters/SECTION-INCOMING.md:
+        - chapters/in/azure-services.md
+        - chapters/in/box.md
+        - chapters/in/cloud-foundary.md
+        - chapters/in/cloud-usecases.md
+        - chapters/in/cm-burn.md
+        - chapters/in/compliance.md
+        - chapters/in/hadoop-rdma.md
+        - chapters/in/packer.md
+        - chapters/in/vis.md
+        - chapters/in/visual-studio.md
+        - chapters/in/windows-subsystem-for-linux.md
+
 - PREFACE:
     - chapters/SECTION-PREFACE.md:
         - chapters/version.md
@@ -344,4 +358,5 @@
     - chapters/SECTION-FAQ.md:
         - chapters/faq.md
         - chapters/faq-523.md
+    - $ref:IN        
     - chapters/SECTION-REFERENCES.md

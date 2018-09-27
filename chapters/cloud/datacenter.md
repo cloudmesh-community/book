@@ -222,7 +222,7 @@ but by the community in which such centers operate.
   can be made more reliable, failure still can happen. Examples are
 
 * <https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/>
-* :?: find more examples
+* :question: find more examples
 
 Hence Data Center IaaS advantages include
 
@@ -350,7 +350,7 @@ arising from build and teardown phase as well as operational upgrades.
 
 | Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
 |-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
-| :?:         | :?:      | :?:  | :?:               | :?:     | :?:         | :?:                  | :?:                |   |
+| :question:  | :question: | :question:  | :question:               | :question:     | :question:         | :question:                  | :question:                |   |
 |             |          |      |                   |         |             |                      |                    |   |
 |             |          |      |                   |         |             |                      |                    |   |
 

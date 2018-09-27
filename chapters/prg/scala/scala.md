@@ -1,4 +1,4 @@
-# Scala for Cloud Computing :o: :?:
+# Scala for Cloud Computing :o: :question:
 
 :warning: This section will not be taught es part of this class, 
 However interested students can contribute a chapter.
