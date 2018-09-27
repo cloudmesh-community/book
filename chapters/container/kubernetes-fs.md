@@ -1,5 +1,16 @@
 # Using Kubernetes on FutureSystems
 
+<!--- 
+
+Disclaimer: If you reached this file via github, it is ok to make a pull request 
+for this file to correct it. However, viewing this file is only done properly 
+in the ePub. Thus we recommend that you go to 
+
+https://github.com/cloudmesh-community/book/blob/master/README.md
+
+and download the appropriate ePub
+--->
+
 This section introduces you on how to use the Kubernetes cluster
 on FutureSystems.  Currently we have deployed kubernetes on our
 cluster called *echo*.
