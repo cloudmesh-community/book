@@ -1,4 +1,4 @@
-# GraphQL :o: {#s-graphql}
+# GraphQL :o: :hand: {#s-graphql}
 
 To be contributed by
 

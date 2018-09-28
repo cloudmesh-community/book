@@ -1,3 +1,0 @@
-# [Cloud Computing Projects]{.part}
-
-

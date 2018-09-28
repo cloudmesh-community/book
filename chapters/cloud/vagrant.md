@@ -63,13 +63,13 @@ export PATH=/usr/local/bin:$PATH
 
 in the terminal command or in your `~/.bash_profile`
 
-### Windows
+### Windows :o: :question: 
 
-:?: students contribute
+:question: students contribute
 
-### Linux
+### Linux :o: :question: 
 
-:?: students contribute
+:question: students contribute
 
 ## Usage
 

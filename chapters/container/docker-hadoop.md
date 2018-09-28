@@ -1,4 +1,4 @@
-# Apache Hadoop using Docker {#s-hadoop-docker-2}
+# Apache Hadoop using Docker :o: {#s-hadoop-docker-2}
 
 In this section we will explore the Map/Reduce framework using Hadoop
 provided through a Docker container. The example that we use in this
