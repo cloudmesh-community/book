@@ -224,6 +224,7 @@
     - chapters/SECTION/SECTION-DRAFT.md:
         - chapters/pi/clusters/pi-configure-cluster.md
         - chapters/pi/clusters/pi-setup.md
+        - chapters/pi/car/car-face.md        
     - chapters/SECTION/SECTION-REFERENCES.md
 
 
