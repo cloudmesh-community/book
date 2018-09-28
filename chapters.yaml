@@ -132,8 +132,7 @@
 - MAPREDUCE:
     - chapters/SECTION/SECTION-MAPREDUCE.md:
         - chapters/mapreduce/mapreduce.md
-        - chapters/SECTION/SECTION-hadoop.md:
-            - chapters/mapreduce/hadoop-lectures.md
+        - chapters/mapreduce/hadoop-lectures.md:
             - chapters/mapreduce/hadoop-installation.md
         - chapters/SECTION/SECTION-spark.md:
             - chapters/mapreduce/spark-lectures.md
@@ -142,7 +141,6 @@
             - chapters/mapreduce/spark-udf.md
         - chapters/SECTION/SECTION-hadoop-advanced.md:
             - chapters/mapreduce/cm-hadoop.md
-            - chapters/mapreduce/hadoop-ubuntu.md
             - chapters/mapreduce/amazon-emr-1.md
             - chapters/mapreduce/amazon-emr-2.md
             - chapters/mapreduce/twister.md
@@ -226,6 +224,7 @@
     - chapters/SECTION/SECTION-DRAFT.md:
         - chapters/pi/clusters/pi-configure-cluster.md
         - chapters/pi/clusters/pi-setup.md
+        - chapters/pi/car/car-face.md        
     - chapters/SECTION/SECTION-REFERENCES.md
 
 
