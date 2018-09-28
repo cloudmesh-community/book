@@ -1,4 +1,4 @@
-# IBM Watson :o: :?:
+# IBM Watson :o: :question:
 
 [IBM Watson](https://www.ibm.com/watson/index.html) is a machine
 learning platform that provides machine learning services to user in

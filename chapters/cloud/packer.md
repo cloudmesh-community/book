@@ -1,4 +1,4 @@
-# Packer
+# Packer :hand: :o:
 
 Packer is an open source tool for creating identical machine images 
 for multiple platforms from a single source configuration. Packer is 
