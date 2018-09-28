@@ -7,7 +7,7 @@ User-defined functions (UDFs) are the functions created by developers when the b
 
 This tutorial explains following:
 
-How to intall Spark in Linux, Windows and MacOS.
+How to install Spark in Linux, Windows and MacOS.
 
 How to create and utilize user defined functions(UDF) in Spark using Python.
 
