@@ -1,5 +1,7 @@
 # Installation of Hadoop :o: {#s-hadoop-installation}
 
+:o: TODO: This instruction needs to be changed to work for 18.04 also.
+
 In this section we use Hadoop 3.0.1 and we install Hadoop locally in
 Ubuntu 16.04. We also describe the installation of the Yarn resource
 manager. We assume that you have ssh, and rsync installed and use emacs
@@ -93,8 +95,20 @@ Now execute the following commands to download and install java
 
     mkdir -p ~/cloudmesh/bin
     cd ~/cloudmesh/bin
-    wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.tar.gz"
+    wget -c --header "Cookie: \
+        oraclelicense=accept-securebackup-cookie" \
+        "http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.tar.gz"
     tar xvzf jdk-8u161-linux-x64.tar.gz
+
+:o: why not put a github dir in cloudmesh, with some bin script that
+installes hadoop and jave ... and than keep that up to date. for
+example
+
+```
+cm-hadoop install 
+```
+
+:o it would figure out the os and to the righ things
 
 Installation of Hadoop
 ----------------------
