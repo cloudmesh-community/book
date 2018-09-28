@@ -141,7 +141,6 @@
             - chapters/mapreduce/spark-udf.md
         - chapters/SECTION/SECTION-hadoop-advanced.md:
             - chapters/mapreduce/cm-hadoop.md
-            - chapters/mapreduce/hadoop-ubuntu.md
             - chapters/mapreduce/amazon-emr-1.md
             - chapters/mapreduce/amazon-emr-2.md
             - chapters/mapreduce/twister.md

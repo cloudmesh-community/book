@@ -1,4 +1,4 @@
-# Google IaaS Cloud Services :o: :?:
+# Google IaaS Cloud Services :o: :question:
 
 Google Cloud, offered by Google, is a suite of cloud computing
 services that runs on the same infrastructure that Google uses
