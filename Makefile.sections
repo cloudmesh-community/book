@@ -11,6 +11,7 @@ DEVTOOLS=\
   chapters/linux/refcards.md\
   chapters/cloud/virtualbox.md\
   chapters/cloud/vagrant.md\
+  chapters/cloud/packer.md\
   chapters/os/ubuntu-usb-osx.md\
   chapters/git/github.md\
   chapters/linux/linux.md\
