@@ -1,0 +1,71 @@
+INDEX=\
+  chapters/SECTION/SECTION-PREFACE.md\
+  chapters/version.md\
+  chapters/authors.md\
+  chapters/preface/create.md\
+  chapters/preface/issues.md\
+  chapters/preface/notation.md\
+  chapters/SECTION/SECTION-COMMUNICATION.md\
+  chapters/doc/communicate.md\
+  chapters/doc/piazza.md\
+  chapters/git/github.md\
+  chapters/preface/git.md\
+  chapters/SECTION/SECTION-PPT.md\
+  chapters/doc/ppt.md
+
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/SECTION/SECTION-COMMUNICATION.md dest/chapters/doc/communicate.md dest/chapters/doc/piazza.md dest/chapters/git/github.md dest/chapters/preface/git.md dest/chapters/SECTION/SECTION-PPT.md dest/chapters/doc/ppt.md
+	@echo "updated modified chapters"
+
+
+dest/chapters/SECTION/SECTION-PREFACE.md: ../chapters/SECTION/SECTION-PREFACE.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-PREFACE.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-PREFACE.md 1
+
+dest/chapters/version.md: ../chapters/version.md
+	../bin/markup-single.py ../chapters/version.md 2
+	../bin/header.py dest/chapters/version.md 2
+
+dest/chapters/authors.md: ../chapters/authors.md
+	../bin/markup-single.py ../chapters/authors.md 2
+	../bin/header.py dest/chapters/authors.md 2
+
+dest/chapters/preface/create.md: ../chapters/preface/create.md
+	../bin/markup-single.py ../chapters/preface/create.md 2
+	../bin/header.py dest/chapters/preface/create.md 2
+
+dest/chapters/preface/issues.md: ../chapters/preface/issues.md
+	../bin/markup-single.py ../chapters/preface/issues.md 2
+	../bin/header.py dest/chapters/preface/issues.md 2
+
+dest/chapters/preface/notation.md: ../chapters/preface/notation.md
+	../bin/markup-single.py ../chapters/preface/notation.md 2
+	../bin/header.py dest/chapters/preface/notation.md 2
+
+dest/chapters/SECTION/SECTION-COMMUNICATION.md: ../chapters/SECTION/SECTION-COMMUNICATION.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-COMMUNICATION.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-COMMUNICATION.md 1
+
+dest/chapters/doc/communicate.md: ../chapters/doc/communicate.md
+	../bin/markup-single.py ../chapters/doc/communicate.md 2
+	../bin/header.py dest/chapters/doc/communicate.md 2
+
+dest/chapters/doc/piazza.md: ../chapters/doc/piazza.md
+	../bin/markup-single.py ../chapters/doc/piazza.md 2
+	../bin/header.py dest/chapters/doc/piazza.md 2
+
+dest/chapters/git/github.md: ../chapters/git/github.md
+	../bin/markup-single.py ../chapters/git/github.md 2
+	../bin/header.py dest/chapters/git/github.md 2
+
+dest/chapters/preface/git.md: ../chapters/preface/git.md
+	../bin/markup-single.py ../chapters/preface/git.md 2
+	../bin/header.py dest/chapters/preface/git.md 2
+
+dest/chapters/SECTION/SECTION-PPT.md: ../chapters/SECTION/SECTION-PPT.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-PPT.md 2
+	../bin/header.py dest/chapters/SECTION/SECTION-PPT.md 2
+
+dest/chapters/doc/ppt.md: ../chapters/doc/ppt.md
+	../bin/markup-single.py ../chapters/doc/ppt.md 3
+	../bin/header.py dest/chapters/doc/ppt.md 3
+
