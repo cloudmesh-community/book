@@ -111,7 +111,7 @@ drive at a later time I suggest to get a 6GB/s SSD and not a 3GB/s.
 
 In case of Windows, your could also get yourself a UBS stick or
 external SSD drive and place ubuntu on it. You could than use your
-bios to boot of from that drive. THis way you do not have to modify
+bios to boot of from that drive. This way you do not have to modify
 anything on your computer. This method works very well for most
 computers and allows you to use the maximum memory while for example
 using ubuntu.

@@ -24,7 +24,7 @@ Include here parallel language constructs
 
 * Missing Values
 * Network Streams
-* Parallel COmputing
+* Parallel Computing
 
 ## Interfaceing with the System
 

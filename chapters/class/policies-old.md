@@ -197,7 +197,7 @@ Please examine carefully the sample note book is available at:
 -   <https://github.com/cloudmesh-community/hid-sample/blob/master/notebook.md>
 
 The notebook.md is not a blog and should only contain a summary of what
-you have done in bullet form. PLease also note that you will only get
+you have done in bullet form. Please also note that you will only get
 credit for the notebook on a weekly basis. So if you do not do anything
 in class for that week you still need to add this in that week. As
 this only takes 30 seconds (we timed it) excuses such as *I did not

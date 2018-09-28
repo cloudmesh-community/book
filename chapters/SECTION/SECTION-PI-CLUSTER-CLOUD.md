@@ -1,4 +1,4 @@
-# [Cloud CLousters]{.part}
+# [Cloud Clusters]{.part}
 
 In this chapter we will be looking at a number of clusters that are
 typically associated with cloud computing this includes

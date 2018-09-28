@@ -107,7 +107,7 @@ $ make images
 $ make
 ```
 
-In case you like to compile another book just replace the `cloud` we used in the previous step with the book you like. THis includes at this time
+In case you like to compile another book just replace the `cloud` we used in the previous step with the book you like. This includes at this time
 
 * `big-data-applications`
 * `cloud`

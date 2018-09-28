@@ -940,7 +940,7 @@ To test the services you can say:
 
     $ make test
 
-YOu will se a number of json text been written to the screen.
+You will se a number of json text been written to the screen.
 
 ### Creating your own objects
 

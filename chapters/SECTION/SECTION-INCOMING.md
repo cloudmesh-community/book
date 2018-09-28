@@ -1,6 +1,6 @@
 # [Incoming]{.part}
 
-THis section contains section, chapters and examples from students
+This section contains section, chapters and examples from students
 that have not yet been integrated in the overall structure of the
 document. Please note that we may move them at any time. Make sure to
 sty up to date with the master.

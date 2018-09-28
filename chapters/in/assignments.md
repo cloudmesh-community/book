@@ -165,7 +165,7 @@ $\mapsto$](https://goo.gl/forms/W0MdgoJoY8F6Vt9Q2)
 
 Learning Outcome:
 
--   This class uses cloud computing resources. THe resources listed are
+-   This class uses cloud computing resources. The resources listed are
     the onc e we use. Most importantly you will get a github repository
     created that you will be using for the class at
     <https://github.com/cloudmesh-community>. We can only create your
@@ -278,7 +278,7 @@ Learning Outcomes:
 
 -   As we want to avoid plagiarism within the class, IU google doc is
     used to identify and assign unique assignments to the students.
-    Therefore you need to have access to IU google. YOu can not use your
+    Therefore you need to have access to IU google. You can not use your
     regular google ID. You will need to learn how to manage multiple
     google IDs if you also have a non IU google ID set up.
 
@@ -935,7 +935,7 @@ Learning Outcome:
 -   Learn how to do a project
 
 -   Learn how to avoid checking in unnecessary executables, data and
-    just focus on the source you modify. THis includes not to clone or
+    just focus on the source you modify. This includes not to clone or
     copy other peoples work, but to leverage downloads.
 
 -   Learn how to write a project report

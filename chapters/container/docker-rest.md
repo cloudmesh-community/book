@@ -11,7 +11,7 @@ Python Flask.
 ## Prerequisites
 
 In order to follow our discussion you will need a system on which you
-can run docker. THis could either be macOS, Linux, or Windows.
+can run docker. This could either be macOS, Linux, or Windows.
 
 Python 2.7.x can be used to do this tutorial
 
@@ -123,7 +123,7 @@ $ emacs requirements.txt
 
 #### Windows
 
-Install an editor such as emacs on Windows. YOu can use chocolatey for
+Install an editor such as emacs on Windows. You can use chocolatey for
 that, or use pycharm. Do not use notepad++
 
 ```bash
