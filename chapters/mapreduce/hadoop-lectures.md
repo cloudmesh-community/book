@@ -2,7 +2,7 @@
 
 Hadoop is an open source framework for storage and processing of large datasets on commodity clusters. Hadoop internally uses its own file system called HDFS (Hadoop Distributed File System).
 
-The motivation for Haddop was introduced in Section [Mapreduce]{#s-mapreduce}
+The motivation for Hadoop was introduced in Section [Mapreduce]{#s-mapreduce}
 
 
 Hadoop and MapReduce

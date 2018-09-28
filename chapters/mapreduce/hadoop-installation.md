@@ -3,7 +3,7 @@
 :o: TODO: This instruction needs to be changed to work for 18.04 also.
 
 In this section we use Hadoop 3.0.1 and we install Hadoop locally in
-Ubuntu 16.04. We also describe the installation of the Yarn resource
+Ubuntu 18.04. We also describe the installation of the Yarn resource
 manager. We assume that you have ssh, and rsync installed and use emacs
 as editor.
 
@@ -105,7 +105,7 @@ installes hadoop and jave ... and than keep that up to date. for
 example
 
 ```
-cm-hadoop install 
+cm-hadoop install
 ```
 
 :o it would figure out the os and to the righ things
