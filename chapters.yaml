@@ -187,6 +187,24 @@
         - chapters/faas/spring-cloud-function.md
 
 
+- CHAPTER_GIT:
+    - chapters/SECTION/SECTION-COMMUNICATION.md:
+        - chapters/doc/communicate.md
+        - chapters/doc/piazza.md
+        - chapters/git/github.md
+        - chapters/preface/git.md
+        - chapters/SECTION/SECTION-PPT.md:
+            - chapters/doc/ppt.md
+    - chapters/SECTION/SECTION-REFERENCES.md
+
+# #####################################################################
+# PI
+# #####################################################################
+
+- BOOK_COM:
+    - $ref:PREFACE
+    - $ref:CHAPTER_GIT
+
 # #####################################################################
 # PI
 # #####################################################################
@@ -224,7 +242,7 @@
     - chapters/SECTION/SECTION-DRAFT.md:
         - chapters/pi/clusters/pi-configure-cluster.md
         - chapters/pi/clusters/pi-setup.md
-        - chapters/pi/car/car-face.md        
+        - chapters/pi/car/car-face.md
     - chapters/SECTION/SECTION-REFERENCES.md
 
 
