@@ -162,3 +162,86 @@ Build 'googlecompute' finished.
 You can now click on the list of images in the Google Compute Platform console
 to see your new image. The new image is ready to use for development.
 
+Next, let's add a builder for an AWS AMI. Update the `e516.json` so that the
+contents is as follows:
+
+```
+{
+  "variables": {
+    "google_project_id": null,
+    "image_name":   "ubuntu-1804-dev-e516",
+    "ssh_username": "packer"
+  },
+  "builders": [
+    {
+      "type":         "googlecompute",
+      "account_file": "account.json",
+      "ssh_username": "{{ user `ssh_username` }}",
+      "project_id":   "{{ user `google_project_id` }}",
+      "image_name":   "{{ user `image_name` }}",
+      "source_image": "ubuntu-1804-bionic-v20180911",
+      "zone":         "us-central1-a"
+    },
+    {
+      "type":         "amazon-ebs",
+      "ssh_username": "{{ user `ssh_username` }}",
+      "profile":      "default",
+      "ami_name":   "{{ user `image_name` }}",
+      "source_ami":   "ami-0bbe6b35405ecebdb",
+      "instance_type":"t2.micro",
+      "region":       "us-west-2"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "expect_disconnect": true,
+      "inline": [
+        "sudo apt-get update -y",
+        "sudo apt-get install -y python3.7 python3-pip idle-python3.7",
+        "echo \"alias python='python3'\" > .bash_aliases"
+      ]
+    }
+  ]
+}
+```
+
+Note that we've added the AWS builder in the `builders` section and that
+we've refactored the `ssh_username` and `image_name` to the `variables`
+section since those variable hold values that can be reused in both the
+Google Compute and AWS builders.
+
+Let's rerun packer:
+
+```
+packer build -var 'google_project_id=my_project_id' e516.json
+```
+
+You will see output that states the image already exists in your Google
+Compute account and so packer smartly skips building that image. The output
+also shows the progress of packer as it starts up and provisions the instance
+in AWS. Upon success, packer will create an AMI from the instance and clean
+up after itself:
+
+```
+amazon-ebs output will be in this color.
+googlecompute output will be in this color.
+
+==> googlecompute: Checking image does not exist...
+==> amazon-ebs: Prevalidating AMI Name: ubuntu-1804-dev-e516
+==> googlecompute: Image ubuntu-1804-dev-e516 already exists.
+==> googlecompute: Use the force flag to delete it prior to building.
+Build 'googlecompute' errored: Image ubuntu-1804-dev-e516 already exists.
+Use the force flag to delete it prior to building.
+    amazon-ebs: Found Image ID: ami-0bbe6b35405ecebdb
+==> amazon-ebs: Creating temporary keypair: packer_5bad9d99-f631-1778-1e83-afd19ad0d5cc
+==> amazon-ebs: Creating temporary security group for this instance: packer_5bad9d9b-38c5-252d-0368-74aa75bfb286
+==> amazon-ebs: Authorizing access to port 22 from 0.0.0.0/0 in the temporary security group...
+==> amazon-ebs: Launching a source AWS instance...
+==> amazon-ebs: Adding tags to source instance
+    amazon-ebs: Adding tag: "Name": "Packer Builder"
+    amazon-ebs: Instance ID: i-0d0383f9f84b54051
+```
+
+You can now click on the list of images in the AWS EC2 console to see 
+your new AMI. The new AMI is ready to use for development.
