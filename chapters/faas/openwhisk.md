@@ -1,4 +1,4 @@
-# Apache OpenWhisk:o: :hand: fa18-516-26 {#s-openwhisk}
+# Apache OpenWhisk :o: :hand: fa18-516-26 {#s-openwhisk}
 
 Apache OpenWhisk is a Function as a Service (FaaS), aka Serverless computing, platform used to execute code in response of an events via triggers by managing the infrastructure, servers and scaling. The advantage of OpenWhisk over traditional long-running VM or container approach is that there is lack of resiliency-related overhead in OpenWhisk. OpenWhisk is inherently scalable since the actions are executed on demand. OpenWhisk also helps the developers to focus only on coding by taking care of infrastructure-related tasks like monitoring and patching.
 
