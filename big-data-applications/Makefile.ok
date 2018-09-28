@@ -184,6 +184,7 @@ sectionindent:
 	../bin/header.py dest/chapters/prg/python.md 2
 	../bin/header.py dest/chapters/prg/python-cmd.md 3
 	../bin/header.py dest/chapters/cloud/vagrant.md 2
+	../bin/header.py dest/chapters/cloud/packer.md 2
 	../bin/header.py dest/chapters/prg/python-libraries.md 2
 	../bin/header.py dest/chapters/prg/python-data.md 1
 	../bin/header.py dest/chapters/cloud/virtualbox.md 2
