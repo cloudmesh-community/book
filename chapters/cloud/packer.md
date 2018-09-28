@@ -162,8 +162,14 @@ Build 'googlecompute' finished.
 You can now click on the list of images in the Google Compute Platform console
 to see your new image. The new image is ready to use for development.
 
-Next, let's add a builder for an AWS AMI. Update the `e516.json` so that the
-contents is as follows:
+Next, let's add a builder for an AWS AMI. Before we do that, setup your AWS 
+credentials using the AWS CLI according to the documentation here:
+
+* https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
+
+Ensure your `default` profile is saved under `~/.aws/credentials`.
+
+Update the `e516.json` so that the contents is as follows:
 
 ```
 {
