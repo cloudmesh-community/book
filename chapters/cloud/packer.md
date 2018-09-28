@@ -1,10 +1,9 @@
 # Packer :hand: :o:
 
 Packer is an open source tool for creating identical machine images
-for multiple platforms from a single source configuration. Packer is
-lightweight, runs on every major operating system, and is highly
-performant, creating machine images for multiple platforms in
-parallel.
+for multiple platforms from a single source configuration. Packer runs
+on every major operating system, and creates machine images for
+multiple platforms in parallel form configuration specufications.
 
 Some key concepts are located at
 
@@ -25,8 +24,8 @@ Installation instructions for all platforms is located at
 
 ## Usage
 
-In the previous section, [vagrant](/chapters/cloud/vagrant.md#usage)
-was used to start up an Ubuntu 18.04 virtual machine. Once the VM was
+In the Section [vagrant](/chapters/cloud/vagrant.md#usage) we use
+vagrant to start up an Ubuntu 18.04 virtual machine. Once the VM was
 up and running, vagrant allowed the user to log in and setup the VM
 according to the user's requirements. In that example, the user ran
 commands to install and upgrade software dependencies:
@@ -35,18 +34,19 @@ commands to install and upgrade software dependencies:
 1. installing python3-pip and idle-python
 1. alias `python` to `python3`
 
-Let's assume that the VM is now in a desirable state for the purpose
-of doing development on your class project and you want to distribute
-it to the rest of your team so that you are all using the same
-environment for development. You could simply send your team members a
-copy of your Ubuntu 18.04 VirtualBox VM assuming they will be
-developing on VMs using VirtualBox. However one team member wants to
-develop on Google Cloud Platform, another on AWS and another on
-OpenStack. In this case, they will each need to figure out how to
-import a VirtualBox VM into the respective cloud vendor they're
-utilizing. Packer can help this situation by codifying the state of
-the development environment with a single configuration file which can
-then be used to create images in different cloud environments.
+Let us assume that the VM is now in a desirable state for the purpose
+of doing development on a large number of virtual machines and you
+want to distribute it to the rest of your team or community so that
+all are using the same environment. You could simply send your team
+members a copy of your Ubuntu 18.04 VirtualBox VM assuming they will
+be developing on VMs using VirtualBox. However, let us assume one
+community member wants to develop on Google Cloud Platform, another on
+AWS and another on OpenStack. In this case, they will each need to
+figure out how to import a VirtualBox VM into the respective cloud
+vendor they're utilizing. Packer can help this situation by codifying
+the state of the development environment with a single configuration
+file which can then be used to create images in different cloud
+environments.
 
 Assuming packer has been installed, let's create a packer JSON file
 that will build an Ubuntu 18.04 image and provision it as we did
@@ -60,7 +60,7 @@ documentation at
 
 Save the credential file as `accounts.json`. Also, determine the
 project ID you will use in your Google Cloud Platform account. In this
-example, we will use "my_project_id" for our project ID.
+example, we will use `my_project_id` for our project ID.
 
 Next save the following JSON to a file named `e516.json`:
 
@@ -97,7 +97,7 @@ Next save the following JSON to a file named `e516.json`:
 The packer file format specifies 3 sections, `variables`, `builders`
 and `provisioners`. The `variables` section allows you to declare
 variables that are to be used in the rest of the document. By
-declaring a variable in this section, for example "google_project_id",
+declaring a variable in this section, for example `google_project_id`,
 it allows the user to pass in the value of that variable via the
 packer command line.
 
