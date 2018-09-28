@@ -376,7 +376,7 @@ way to do this is to visit the URL
 
 Towards the upper right corner you will find a link called **Fork**. Click on it and chose 
 into which account you like to fork the original repository. Next you will create a colne 
-from your corked directory. YOU will see in your fork a green clone button. YOu will see a 
+from your corked directory. You will see in your fork a green clone button. You will see a 
 URL that you can copy into your terminal. If the links does not include your username, it is 
 the wrong link.
 
@@ -550,7 +550,7 @@ description
 label
 
 :   a color enhanced label that can be used to easily categorize the
-    issue. YOu can define your own labels.
+    issue. You can define your own labels.
 
 milestone
 

@@ -33,7 +33,7 @@ from your laptop. For more information please also consult with the
 ---
 
 :warning: Whatever others tell you, the private key should never be
-copied to another machine. YOu almost always want to have a passphrase
+copied to another machine. You almost always want to have a passphrase
 protecting your key.
 
 ---

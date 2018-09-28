@@ -13,7 +13,7 @@ class.
   simply look at the Syllabus table and identify whatever section you
   feel like reding. The sections that are released are marked with
   :white_check_mark:. Note that the book may include sections that are
-  not marked in the syllabus. YOu do not have to read such sections.
+  not marked in the syllabus. You do not have to read such sections.
 
 * Way 2: Linear form. The lecture notes are just like a book. We add
   sections in a logical fashion to the book once they become
