@@ -457,5 +457,5 @@ E.Python.Install.1:
 E.Python.Install.3:
 
 > Why do you not want to use generally anaconda for cloud computing?
-> WHen is it oc to use anaconda?
+> When is it ok to use anaconda?
 

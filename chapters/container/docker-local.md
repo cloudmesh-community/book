@@ -15,7 +15,7 @@ Please chose the one most suitable for you. For your convenience we
 provide you with installation instructions for OSX
 (Section [Docker on OSX](#s:docker-osx){reference-type="ref"
 reference="s:docker-osx"}), Windows 10
-(Section [Docker on WIndows](#s:docker-windows){reference-type="ref"
+(Section [Docker on Windows](#s:docker-windows){reference-type="ref"
 reference="s:docker-windows"}) and Ubuntu
 (Section [Docker on ubuntu](#s:docker-ubuntu){reference-type="ref"
 reference="s:docker-ubuntu"}).

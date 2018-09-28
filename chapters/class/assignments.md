@@ -127,7 +127,7 @@ Bibliography:
 
 :   All bibliography has to be provided in a jabref/bibtex file. This is
     regardless if you use LaTeX or Word. There is **NO EXCEPTION** to
-    this rule. PLease be advised doing references right takes some time
+    this rule. Please be advised doing references right takes some time
     so you want to do this early. Please note that exports of Endnote or
     other bibliography management tools do not lead to properly
     formatted bibtex files, despite they claiming to do so. You will
@@ -144,7 +144,7 @@ For due dates see the [calendar](#calendar) section.
 ### Assignment 0 - Organization and Communication
 
 In order for us to communicate with you and you being able to use the
-class resources we need you to register with various systems.  THis
+class resources we need you to register with various systems.  This
 needs to be done immediately as it takes a while to get the systems set
 up. It also requires approval steps that take some time and are not
 immediate, thus do not just start this assignment on the due

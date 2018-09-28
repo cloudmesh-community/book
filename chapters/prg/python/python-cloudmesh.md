@@ -138,7 +138,7 @@ database for storing information about virtual machines and other
 information related to the clouds. Although shelve comes in mind, we
 found out that it is not compatible between python 2 and 3 which may be
 an issue in future. Also when considering services such as mongodb they
-have to be started and properly secured. THis naturally can be done with
+have to be started and properly secured. This naturally can be done with
 containers. We also do not want to use large frameworks such as django
 which come with build in object models as they are not lightweight.
 Hence, we start we just use a file based sql database as provided with

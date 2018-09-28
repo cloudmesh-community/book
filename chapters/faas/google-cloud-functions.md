@@ -1,4 +1,4 @@
-# Google CLoud function :o: :question:
+# Google Cloud function :o: :question:
 
 :o: TODO students can contribute this section
 

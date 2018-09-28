@@ -253,7 +253,7 @@ Steps to getting your question answered on piazza
 
 4.  Place your question or problem in a forum that is relevant to its
     subject. That may seem obvious but anyone who has experience with
-    forums knows that a lot of questions show up in the wrong place. YOu
+    forums knows that a lot of questions show up in the wrong place. You
     will need to identify one or more a fitting piazza "folders"
     (folders sort the posts by topics).
 

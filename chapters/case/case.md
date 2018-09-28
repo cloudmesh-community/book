@@ -118,7 +118,7 @@ cutter available at Indiana University. The laser cutter is located at
 * TBD
 
 and operated by ISE. You can get access to it by contacting the help 
-desk with an email. YOu will need to get certified for operating the 
+desk with an email. You will need to get certified for operating the 
 laser cutter to use it.
 
 :o: TODO: add contact email
