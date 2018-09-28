@@ -29,8 +29,14 @@ endif
 
 
 
-all: prepare epub
+all: splash prepare epub
 	echo done
+
+splash:
+	@echo "# ======================================================================"
+	@echo "# Creating:", $(BOOK)
+	@echo "# Epub    :", $(FILENAME)
+	@echo "# ======================================================================"
 
 new: clean update images all
 	echo done
