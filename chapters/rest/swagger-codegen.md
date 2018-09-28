@@ -339,7 +339,7 @@ case please make changes on the API definition accordingly, e.g., the
 
 ## Exercises
 
-:o: LInks are not yet integrated
+:o: Links are not yet integrated
 
 E.OpenAPI.1:
 

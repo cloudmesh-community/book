@@ -4,7 +4,7 @@
 
 **:mortar_board: Learning Objectives**
 
-* Obtain a FUture system account so you can use kubernetes or dockerswarm or other services offered by FutureSystems.
+* Obtain a Future system account so you can use kubernetes or dockerswarm or other services offered by FutureSystems.
 * Note that we no longer support OpenStack in FutureSystems.
 
 ---

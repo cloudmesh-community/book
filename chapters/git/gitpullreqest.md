@@ -33,7 +33,7 @@ your own copy of the repository to which you can make changes to. To fork
 the Cloudmesh technologies goto [Cloudmesh technologies repo](https://github.com/cloudmesh/technologies)
 and click on the Fork button on the top right corner. Now you can notice
 that instead of `cloudmesh/technologies` the name of the repo says 
-`YOURGITUSERNAME/technologies`, where `YOURGITUSERANAME` is indeed your github user name. IThat is because you are now in your own 
+`YOURGITUSERNAME/technologies`, where `YOURGITUSERANAME` is indeed your github user name. That is because you are now in your own 
 copy of the `cloudmesh/technologies` repository. n our case the user name will be `pulashti`. 
 
 ## Clone your copy

@@ -20,7 +20,7 @@ For 2018 you need to be in the following project:
 If your access to the india host has been verified, try to login to the
 docker swarm head node. To conveniently do this let us define some Linux
 environment variables to simplify the access and the material presented
-here. YOu can place them even in your `.bashrc` or `.bash_profile` so
+here. You can place them even in your `.bashrc` or `.bash_profile` so
 the information gets populated whenever you start a new terminal.
 
 ```bash

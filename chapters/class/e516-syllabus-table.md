@@ -35,7 +35,7 @@ For the Syllabus see teh quick start section.
 | :white_check_mark: | 09/15    | 6       | Infrastructure     | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
 | :white_check_mark: | 09/17    |         |                    | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
 | :white_check_mark: | 09/17    |         |                    | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
-| :white_check_mark: | 09/17    |         |                    | - [OpenSTack](#s-openstack) [:cloud:][openstack.md] |
+| :white_check_mark: | 09/17    |         |                    | - [OpenStack](#s-openstack) [:cloud:][openstack.md] |
 | :white_check_mark: | 09/17    |         | Chameleon Cloud    | - **Chameleon Cloud** |
 | :white_check_mark: | 09/17    |         |                    | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
 | :white_check_mark: | 09/17    |         |                    | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
