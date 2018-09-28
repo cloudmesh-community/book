@@ -134,12 +134,12 @@
         - chapters/mapreduce/mapreduce.md
         - chapters/mapreduce/hadoop-lectures.md:
             - chapters/mapreduce/hadoop-installation.md
-        - chapters/SECTION/SECTION-spark.md:
+        - chapters/SECTION/SECTION-SPARK.md:
             - chapters/mapreduce/spark-lectures.md
             - chapters/mapreduce/spark-installation.md
             - chapters/mapreduce/spark-streaming.md
             - chapters/mapreduce/spark-udf.md
-        - chapters/SECTION/SECTION-hadoop-advanced.md:
+        - chapters/SECTION/SECTION-HADOOP-ADVANCED.md:
             - chapters/mapreduce/cm-hadoop.md
             - chapters/mapreduce/amazon-emr-1.md
             - chapters/mapreduce/amazon-emr-2.md
