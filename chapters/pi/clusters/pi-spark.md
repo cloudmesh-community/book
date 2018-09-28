@@ -1,4 +1,4 @@
-# Raspberry PI Spark Cluster :o:
+# Raspberry PI Spark Cluster :o: :raised_hand: hid: 24
 
 ## Todo
 
