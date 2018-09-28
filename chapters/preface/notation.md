@@ -64,8 +64,27 @@ Slides without any audio. They may be faster to download.
 
 :question:
 
-> Indicates opportunities for comprehension assignments while
-> contributing to this document.
+> Indicates opportunities for contributions.
+
+:hand:
+
+> Indicates sections that are worked on by contributors
+
+:smiley:
+
+> Sections marked by the contributor with a :smiley: when they are
+> ready to be reviewd.
+
+:wave:
+
+> Sections that neeed modifications ar indicated with :wave:. They
+> have been first set to :smiley:
+
+:+1:
+
+> Section that are good to go (graded) are initailly marked with :+1:
+> by the editor/TAs. The icon does not comment on the quality of the contribution.
+
 
 :warning:
 
@@ -91,3 +110,7 @@ Figures must be written in the md as
 
 You can refer to them with ```+@fig:code-example```. Please note in order for numbering to work 
 figure refernces must include the ```#fig:```
+
+Other emojis
+
+> Other emojis can be found at <https://gist.github.com/rxaviers/7360908>

@@ -1,3 +1,0 @@
-# [Serverless Computing :o:]{.part}
-
-

@@ -38,6 +38,9 @@ Develop a cm-burn command that creates Raspberry PI OS based on
 manipulation of the file system
 
 * <https://github.com/cloudmesh-community/cm-burn>
+* <https://github.com/cloudmesh-community/cm>
+
+Substential contributions are expected.
 
 ## Section and Chapter Contributions
 
@@ -70,7 +73,7 @@ Make sure to add yourself if you know you can complete the section in two days.
 ### Chapters
 
 The following require more work and qualify **if done right as a
-chapter**. PLease suggest chapters you like to contribute:
+chapter**. Please suggest chapters you like to contribute:
 
 * [GraphQL](#s-graphql)
 * OpenFaaS

@@ -1,4 +1,4 @@
-# Introduction to Docker
+# Introduction to Docker :o:
 
 Docker is the company driving the container movement and the only
 container platform provider to address every application across the

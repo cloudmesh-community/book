@@ -1,4 +1,5 @@
-# Introduction to Docker Swarm
+# Introduction to Docker Swarm :o:
+
 
 ## Swarm clusters
 

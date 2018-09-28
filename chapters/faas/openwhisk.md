@@ -1,4 +1,6 @@
-# Apache OpenWhisk :o: :hand: {#s-openwhisk}
+# Apache OpenWhisk:o: :hand: {#s-openwhisk}
+
+:o: TODO students can contribute this section
 
 To be contributed by
 

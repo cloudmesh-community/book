@@ -1,4 +1,5 @@
-# Docker Hub {#s:dockerhub}
+# Docker Hub :o: {#s:dockerhub}
+
 
 Docker Hub is a cloud-based registry service which provides a
 "centralized resource for container image discovery, distribution and

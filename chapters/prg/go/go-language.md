@@ -1,6 +1,6 @@
-# Go Language :o: {#s-go-language}
+# Go Language :o: :question: {#s-go-language}
 
-:warning: This section is under development. It is contributed by Qianqian
+:warning: This section is under development. It is contributed by Bo but stdents can contribute, just make sure you do pull requests often. 
 
 Go is a computer language developed by Google with the goal 
 to "build simple, 

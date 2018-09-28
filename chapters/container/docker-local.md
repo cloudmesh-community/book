@@ -1,4 +1,4 @@
-# Running Docker Locally
+# Running Docker Locally :o:
 
 The official installation documentation for docker can be found by
 visiting the following Web page:
