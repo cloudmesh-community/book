@@ -131,8 +131,7 @@
 - MAPREDUCE:
     - chapters/SECTION/SECTION-MAPREDUCE.md:
         - chapters/mapreduce/mapreduce.md
-        - chapters/SECTION/SECTION-hadoop.md:
-            - chapters/mapreduce/hadoop-lectures.md
+        - chapters/mapreduce/hadoop-lectures.md:
             - chapters/mapreduce/hadoop-installation.md
         - chapters/SECTION/SECTION-spark.md:
             - chapters/mapreduce/spark-lectures.md
