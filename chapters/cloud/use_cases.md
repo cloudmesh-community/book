@@ -1,6 +1,10 @@
-# Cloud Computing: Use Cases
+# Cloud Computing: Use Cases :hand:
 
-## Earth Science
+TODO: use bibtex citations
+
+TODO: Fix figures, see notation.md
+
+## Earth Science :hand:
 
 ### Background
 
@@ -8,7 +12,7 @@ The Earth Observing System Data and Information System (EOSDIS) and the Earth
 Science Data and Information System (ESDIS) provide key core capabilities for
 NASA's Earth Science Data Systems (ESDS) Program.
 
-According to https://earthdata.nasa.gov/about, EOSDIS "*provides end-to-end
+According to <https://earthdata.nasa.gov/about>, EOSDIS "*provides end-to-end
 capabilities for managing NASA’s Earth science data from various sources –
 satellites, aircraft, field measurements, and various other programs*" and
 "*provides capabilities for command and control, scheduling, data capture
@@ -35,7 +39,7 @@ on-premise resources and compute as well. The following figure depicts the
 geographic locations of the various on-premise SIPS and DAAC centers that
 generate and distribute the various NASA EOS datasets.
 
-### Big Data
+### Big Data :hand:
 
 Add motivation for a move to the cloud.
 
@@ -44,7 +48,7 @@ Add motivation for a move to the cloud.
 **Figure:** SIPS and DAAC centers. Source: [Baynes et al./NASA's EOSDIS Cumulus](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20180000548.pdf)
 
 
-## Bioinformatics
+## Bioinformatics :hand:
 
 Content goes here.
 
