@@ -46,16 +46,17 @@ As part of the class, we expect you to get familiar with topics related to cloud
 
 Definitions:
 
-* **Section:** A section is a small section that explains a topic that is not yet in the handbook or improves an existing section significantly. It is typically multi-paragraphs long and can even include an example if needed. Example sections that have been provided are for example the Lambda section in the python chapter
+* **Section:** 
+  A section is a small section that explains a topic that is not yet in the handbook or improves an existing section significantly. It is typically multi-paragraphs long and can even include an example if needed. Example sections that have been provided are for example the Lambda section in the python chapter
 
-Sample of student contributed sections include:
+  Sample of student contributed sections include:
 
-* The MIcrosoft under water data center :o: add link
-* [Lambda Expressions](#lambda-expressions)
+  * The Microsoft under water data center :o: add link
+  * [Lambda Expressions](#lambda-expressions)
 
 * **Chapter:** A chapter is a much longer topic and is a coherent description of a topic related to cloud computing. A chapter could either be a review of a topic or a detailed technical contribution. Several Sections (10+) may be a substitute for a chapter.
 
-You will be constributing a **significant**
+  You will be constributing a **significant**
 chapter that can be used by other students in the class and introduces
 the reader to a general topic related to teh topic of the class. In addition it is expected if
 applicable to develop a practical example demonstrating how to use a
@@ -64,12 +65,12 @@ do not like to use the term tutorial in our writeup but sometimes we
 refer to it in our assignments as such. Chapters that focus on theory 
 may not have an example and it can be subsitited by a longer text.
 
-A sample of a student contributed chapter is * [GraphQL](#s-graphql).
+  A sample of a student contributed chapter is * [GraphQL](#s-graphql).
 
-* **Example:** An example is a document that showcases the use of a particular technology. Typically it is a console session or a program. Axamples augment chapters and Sections.
+  * **Example:** An example is a document that showcases the use of a particular technology. Typically it is a console session or a program. Axamples augment chapters and Sections.
 
 
-:warning: It is expected from you that you self identify a section or a 
+  :warning: It is expected from you that you self identify a section or a 
 chapter as this shows competence in the area of cloud computing. If 
 howebver you do not know what to select, you must attend an online hour 
 with us in which we identify sections and chapters with you. The 
