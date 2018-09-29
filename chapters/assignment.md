@@ -106,9 +106,11 @@ could be enhanced upon.
 
 ### Submission of sections and chapters
 
-Simply add them to your README.yml file in your github repo
+Simply add them to your README.yml file in your github repo.
+Add the following to it (I am using a18-516-18 as example)
 
-add the following to iy
+Please look at <https://github.com/cloudmesh-community/fa18-516-18>
+for an example
 
 ```
 section:
