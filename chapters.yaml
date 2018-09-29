@@ -302,10 +302,10 @@
 - BOOK_516:
     - chapters/SECTION/SECTION-QUICK516.md:
         - chapters/quick516.md
+        - chapters/assignment.md        
         - chapters/class/e516-syllabus-table.md
     - $ref:PREFACE
     - chapters/SECTION/SECTION-OVERVIEW.md:
-        - chapters/assignment.md
         - chapters/class/organization-516.md
         - chapters/class/plagiarism.md
         - chapters/cloud/gregor.md

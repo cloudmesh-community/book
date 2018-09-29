@@ -84,7 +84,7 @@ Project Report:
   the analysis of a topic, but an actual code, with **benchmark** and
   demonstrated application use. Obviously it is longer than a
   term paper and includes descriptions about reproducibility of
-  the application. A README is provided that describes in sectione 
+  the application. A README is provided that describes in section 
   how others can reproduce your project and run it.  Term papers
   should have the quality to be publishable either in a workshop or as
   part of the handbook. The format is discussed in the Section

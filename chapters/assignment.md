@@ -18,14 +18,14 @@ As part of the class you will need a number of accounts
 * google Iaas (optional)
 
 In our piazza we have details how to submit them to us. We split the
-submission in multiple subassignments as the github.com and piazza.com
+submission in multiple sub-assignments as the github.com and piazza.com
 are needed within the first week.
 
 ## Virtual Cluster
 
 All students can contribute on the creation of the Virtual Cluster
 that we will be using throughout the class to improve and interface
-with cloud and container farmeworks.
+with cloud and container frameworks.
 
 * <https://github.com/cloudmesh-community/cm>
 
@@ -40,47 +40,59 @@ manipulation of the file system
 * <https://github.com/cloudmesh-community/cm-burn>
 * <https://github.com/cloudmesh-community/cm>
 
-Substential contributions are expected.
+Substantial contributions are expected.
 
-As part of the class, we expect you to get familiar with topics related to cloud computing beyond what we have written in the lecture notes. This is done in Sections, Examples, and Chapters. These assignments are done so you do not have to do other weekly homework or tests. They showcase your understanding of the field.
+As part of the class, we expect you to get familiar with topics
+related to cloud computing beyond what we have written in the lecture
+notes. This is done in Sections, Examples, and Chapters. These
+assignments are done so you do not have to do other weekly homework or
+tests. They showcase your understanding of the field.
 
 Definitions:
 
-* **Section:** 
-  A section is a small section that explains a topic that is not yet in the handbook or improves an existing section significantly. It is typically multi-paragraphs long and can even include an example if needed. Example sections that have been provided are for example the Lambda section in the python chapter
+* **Section:** A section is a small section that explains a topic that
+  is not yet in the handbook or improves an existing section
+  significantly. It is typically multi-paragraphs long and can even
+  include an example if needed. Example sections that have been
+  provided are for example the Lambda section in the python chapter
 
   Sample of student contributed sections include:
 
   * The Microsoft under water data center :o: add link
   * [Lambda Expressions](#lambda-expressions)
 
-* **Chapter:** A chapter is a much longer topic and is a coherent description of a topic related to cloud computing. A chapter could either be a review of a topic or a detailed technical contribution. Several Sections (10+) may be a substitute for a chapter.
+* **Chapter:** A chapter is a much longer topic and is a coherent
+  description of a topic related to cloud computing. A chapter could
+  either be a review of a topic or a detailed technical
+  contribution. Several Sections (10+) may be a substitute for a
+  chapter.
 
-  You will be constributing a **significant**
-chapter that can be used by other students in the class and introduces
-the reader to a general topic related to teh topic of the class. In addition it is expected if
-applicable to develop a practical example demonstrating how to use a
-technology. The chapter and the practical example can be done together. We
-do not like to use the term tutorial in our writeup but sometimes we
-refer to it in our assignments as such. Chapters that focus on theory 
-may not have an example and it can be subsitited by a longer text.
+  You will be contributing a **significant** chapter that can be used
+  by other students in the class and introduces the reader to a
+  general topic related to the topic of the class. In addition it is
+  expected if applicable to develop a practical example demonstrating
+  how to use a technology. The chapter and the practical example can
+  be done together. We do not like to use the term tutorial in our
+  writeup but sometimes we refer to it in our assignments as
+  such. Chapters that focus on theory may not have an example and it
+  can be substituted by a longer text.
 
   A sample of a student contributed chapter is * [GraphQL](#s-graphql).
 
-  * **Example:** An example is a document that showcases the use of a particular technology. Typically it is a console session or a program. Axamples augment chapters and Sections.
+  * **Example:** An example is a document that showcases the use of a particular technology. Typically it is a console session or a program. Examples augment chapters and Sections.
 
 
-  :warning: It is expected from you that you self identify a section or a 
-chapter as this shows competence in the area of cloud computing. If 
-howebver you do not know what to select, you must attend an online hour 
-with us in which we identify sections and chapters with you. The 
-emphasize here is that we do not decite them for you, but we identify 
-them with you.
+  :warning: It is expected from you that you self identify a section
+or a chapter as this shows competence in the area of cloud
+computing. If however you do not know what to select, you must attend
+an online hour with us in which we identify sections and chapters with
+you. The emphasize here is that we do not decide them for you, but we
+identify them with you.
 
-Sample Topics that could form a section or chapter 
-are clearly marked with a :question:. There are plenty in the handbook, 
-but you are welcome to define your own contributions. Discuss them with 
-us in the online hours.
+Sample Topics that could form a section or chapter are clearly marked
+with a :question:. There are plenty in the handbook, but you are
+welcome to define your own contributions. Discuss them with us in the
+online hours.
 
 A list of topics identified by students is maintained in a spreadsheet.
 
