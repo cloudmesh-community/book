@@ -42,6 +42,8 @@ manipulation of the file system
 
 Substential contributions are expected.
 
+## Sections, Chapters, Examples
+
 As part of the class, we expect you to get familiar with topics related to cloud computing beyond what we have written in the lecture notes. This is done in Sections, Examples, and Chapters. These assignments are done so you do not have to do other weekly homework or tests. They showcase your understanding of the field.
 
 Definitions:
