@@ -235,11 +235,10 @@ deliverabl;es will be different:
 
   * Abstract
   * Introduction
-  * Architecture
+  * Design
+    * Architecture
   * Implementation
     * Technologies Used
-  * Design
-  * Implementation
   * Results
     * Deployment Benchmarks
     * Application Benchmarks
@@ -247,9 +246,9 @@ deliverabl;es will be different:
   * Conclusion
   * (Work Breakdown)
 
-- Your paper will not have a *Future Work* section as this implies that
-  you will do work in future, instead you can use an optional
-  "Limitations" section.
+- Your paper will not have a *Future Work* section as this implies
+  that you will do work in future and your paper is incomplte, instead
+  you can use an optional "Limitations" section.
 
 ## Residential Students
 
