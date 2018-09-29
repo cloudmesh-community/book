@@ -13,10 +13,10 @@ TODO: should image from this be used: <https://earthdata.nasa.gov/about>
 
 The material provided in this ePub is related to Cloud Computing. However part of our motivation to use cloud computing is to deal with Big Data. For that purpose we have a separate class which is documented in the following volumes. The first volume provides an overview. The second volume lists some technologies relevant for big data.
 
-Link |  Class | Description
-|------ | --- | -------------
-[<img src="images/cover-523.jpg" width="100px">](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
-[<img src="images/cover-tech.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies 
+| Link |  Class | Description |
+|------ | --- | ------------- |
+| ![images/cover-523.png](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-bigdata-application.epub?raw=true){ width=100px } | e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423 |
+| ![images/cover-tech.png](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true){ width=100px } | e534, I523, I423 | Cloud Technologies |
 
 
 ## Earth Science :hand: :o:
