@@ -1,4 +1,4 @@
-## Assignments
+## Assignments 
 
 
 ### Terminology
@@ -29,19 +29,23 @@ Sections:
   of plagiarism and do not just copy the sections from tutorials or code or from
   elsewhere.
 
-Technology Paper:
+Technology or Review Paper :
 
 : A technology paper is a summary paper about a technology,
   application, or topic that is not yet covered in other technology
-  papers delivered by previous students of this class. It includes
-  useful information that provides an overview of what you are trying
-  to describe and analyses its relationship to the class topic. Be
-  mindful about plagiarism. The paper is written in LaTeX and uses
-  jabref for bibliography management. It uses the same format as your
-  report paper. The format is discussed in the Section 
-  [Report Format](#report-format).
+  papers delivered by previous students of this class. A review paper
+  is a paper that reviews a specific topic related to this class.
+  
+  In either case includes useful information that provides an overview
+  of what you are trying to describe and analyses its relationship to
+  the class topic. Be mindful about plagiarism. The paper is written
+  in LaTeX or Markdown and uses bibtex for bibliography management. It
+  uses the same format as your report paper. The format is discussed
+  in the Section [Report Format](#report-format).
 
-
+  Note: that for the 2018 we decided to just us Markdown and not LaTeX.
+  We will calculate the exact number of words needed.
+  
 Project:
 
 : We refer with the term project to the major activity that you chose
@@ -55,7 +59,7 @@ Term Paper:
 
 : A term paper is an enhanced topic paper (only available for
   I523). The difference is in length and depth of
-  coverage. Comparative or review papers can also be term papers. In
+  coverage. Comparative or review papers can also become term papers. In
   case you chose the term paper, you or your team will pick a topic
   relevant for the class.  Term papers should have the quality to be
   publishable either in a workshop or as part of the handbook. Not all
@@ -70,13 +74,16 @@ Term Paper:
   -   10 pages, two student in the project
   -   12 pages, three student in the project
 
+  We estimate that a single page is between 1000-1200 words.
+  Please note that for 2018 the format will be markdown, so the word
+  count will be used instead. 
   
 Project Report:
 
 : A project report is an enhanced topic paper that includes not just
   the analysis of a topic, but an actual code, with **benchmark** and
   demonstrated application use. Obviously it is longer than a
-  technology paper and includes descriptions about reproducibility of
+  term paper and includes descriptions about reproducibility of
   the application. A README is provided that describes in sectione 
   how others can reproduce your project and run it.  Term papers
   should have the quality to be publishable either in a workshop or as
@@ -88,6 +95,9 @@ Project Report:
   -   8 pages, two students in the project
   -   10 pages, three students in the project
 
+  We estimate that a single page is between 1000-1200 words.
+  Please note that for 2018 the format will be markdown, so the word
+  count will be used instead. 
 
 Project Code:
 

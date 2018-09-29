@@ -10,6 +10,8 @@ INDEX=\
   chapters/class/policies.md\
   chapters/class/e534-i523.md\
   chapters/class/volumes.md\
+  chapters/in/datasets.md\
+  chapters/class/assignments-523.md\
   chapters/bigdata/intro-fall-2018.md\
   chapters/bigdata/applications/overview.md\
   chapters/bigdata/applications/physics.md\
@@ -64,21 +66,10 @@ INDEX=\
   chapters/SECTION/SECTION-FAQ.md\
   chapters/faq.md\
   chapters/faq-523.md\
-  chapters/SECTION/SECTION-INCOMING.md\
-  chapters/in/azure-services.md\
-  chapters/in/box.md\
-  chapters/in/cloud-foundary.md\
-  chapters/in/cloud-usecases.md\
-  chapters/in/cm-burn.md\
-  chapters/in/compliance.md\
-  chapters/in/packer.md\
-  chapters/in/vis.md\
-  chapters/in/visual-studio.md\
-  chapters/in/windows-subsystem-for-linux.md\
   chapters/container/glossary.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/class/organization-523.md dest/chapters/class/plagiarism.md dest/chapters/class/policies.md dest/chapters/class/e534-i523.md dest/chapters/class/volumes.md dest/chapters/bigdata/intro-fall-2018.md dest/chapters/bigdata/applications/overview.md dest/chapters/bigdata/applications/physics.md dest/chapters/bigdata/applications/radar.md dest/chapters/bigdata/applications/lifestyle.md dest/chapters/bigdata/applications/sport.md dest/chapters/bigdata/applications/cloud.md dest/chapters/bigdata/applications/usecases.md dest/chapters/bigdata/applications/sensor.md dest/chapters/bigdata/applications/web.md dest/chapters/bigdata/applications/health.md dest/chapters/bigdata/algorithms/technology.md dest/chapters/bigdata/algorithms/clustering.md dest/chapters/bigdata/algorithms/plotviz.md dest/chapters/SECTION/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/cloud/packer.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/git/gitpullreqest.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/dask/dask.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/prg/python/fingerprint/fingerprint.md dest/chapters/prg/python/facedetection/facedetection.md dest/chapters/SECTION/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-523.md dest/chapters/SECTION/SECTION-INCOMING.md dest/chapters/in/azure-services.md dest/chapters/in/box.md dest/chapters/in/cloud-foundary.md dest/chapters/in/cloud-usecases.md dest/chapters/in/cm-burn.md dest/chapters/in/compliance.md dest/chapters/in/packer.md dest/chapters/in/vis.md dest/chapters/in/visual-studio.md dest/chapters/in/windows-subsystem-for-linux.md dest/chapters/container/glossary.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/class/organization-523.md dest/chapters/class/plagiarism.md dest/chapters/class/policies.md dest/chapters/class/e534-i523.md dest/chapters/class/volumes.md dest/chapters/in/datasets.md dest/chapters/class/assignments-523.md dest/chapters/bigdata/intro-fall-2018.md dest/chapters/bigdata/applications/overview.md dest/chapters/bigdata/applications/physics.md dest/chapters/bigdata/applications/radar.md dest/chapters/bigdata/applications/lifestyle.md dest/chapters/bigdata/applications/sport.md dest/chapters/bigdata/applications/cloud.md dest/chapters/bigdata/applications/usecases.md dest/chapters/bigdata/applications/sensor.md dest/chapters/bigdata/applications/web.md dest/chapters/bigdata/applications/health.md dest/chapters/bigdata/algorithms/technology.md dest/chapters/bigdata/algorithms/clustering.md dest/chapters/bigdata/algorithms/plotviz.md dest/chapters/SECTION/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/cloud/packer.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/git/gitpullreqest.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/dask/dask.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/prg/python/fingerprint/fingerprint.md dest/chapters/prg/python/facedetection/facedetection.md dest/chapters/SECTION/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-523.md dest/chapters/container/glossary.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -125,6 +116,14 @@ dest/chapters/class/e534-i523.md: ../chapters/class/e534-i523.md
 dest/chapters/class/volumes.md: ../chapters/class/volumes.md
 	../bin/markup-single.py ../chapters/class/volumes.md 2
 	../bin/header.py dest/chapters/class/volumes.md 2
+
+dest/chapters/in/datasets.md: ../chapters/in/datasets.md
+	../bin/markup-single.py ../chapters/in/datasets.md 2
+	../bin/header.py dest/chapters/in/datasets.md 2
+
+dest/chapters/class/assignments-523.md: ../chapters/class/assignments-523.md
+	../bin/markup-single.py ../chapters/class/assignments-523.md 2
+	../bin/header.py dest/chapters/class/assignments-523.md 2
 
 dest/chapters/bigdata/intro-fall-2018.md: ../chapters/bigdata/intro-fall-2018.md
 	../bin/markup-single.py ../chapters/bigdata/intro-fall-2018.md 2
@@ -341,50 +340,6 @@ dest/chapters/faq.md: ../chapters/faq.md
 dest/chapters/faq-523.md: ../chapters/faq-523.md
 	../bin/markup-single.py ../chapters/faq-523.md 2
 	../bin/header.py dest/chapters/faq-523.md 2
-
-dest/chapters/SECTION/SECTION-INCOMING.md: ../chapters/SECTION/SECTION-INCOMING.md
-	../bin/markup-single.py ../chapters/SECTION/SECTION-INCOMING.md 1
-	../bin/header.py dest/chapters/SECTION/SECTION-INCOMING.md 1
-
-dest/chapters/in/azure-services.md: ../chapters/in/azure-services.md
-	../bin/markup-single.py ../chapters/in/azure-services.md 2
-	../bin/header.py dest/chapters/in/azure-services.md 2
-
-dest/chapters/in/box.md: ../chapters/in/box.md
-	../bin/markup-single.py ../chapters/in/box.md 2
-	../bin/header.py dest/chapters/in/box.md 2
-
-dest/chapters/in/cloud-foundary.md: ../chapters/in/cloud-foundary.md
-	../bin/markup-single.py ../chapters/in/cloud-foundary.md 2
-	../bin/header.py dest/chapters/in/cloud-foundary.md 2
-
-dest/chapters/in/cloud-usecases.md: ../chapters/in/cloud-usecases.md
-	../bin/markup-single.py ../chapters/in/cloud-usecases.md 2
-	../bin/header.py dest/chapters/in/cloud-usecases.md 2
-
-dest/chapters/in/cm-burn.md: ../chapters/in/cm-burn.md
-	../bin/markup-single.py ../chapters/in/cm-burn.md 2
-	../bin/header.py dest/chapters/in/cm-burn.md 2
-
-dest/chapters/in/compliance.md: ../chapters/in/compliance.md
-	../bin/markup-single.py ../chapters/in/compliance.md 2
-	../bin/header.py dest/chapters/in/compliance.md 2
-
-dest/chapters/in/packer.md: ../chapters/in/packer.md
-	../bin/markup-single.py ../chapters/in/packer.md 2
-	../bin/header.py dest/chapters/in/packer.md 2
-
-dest/chapters/in/vis.md: ../chapters/in/vis.md
-	../bin/markup-single.py ../chapters/in/vis.md 2
-	../bin/header.py dest/chapters/in/vis.md 2
-
-dest/chapters/in/visual-studio.md: ../chapters/in/visual-studio.md
-	../bin/markup-single.py ../chapters/in/visual-studio.md 2
-	../bin/header.py dest/chapters/in/visual-studio.md 2
-
-dest/chapters/in/windows-subsystem-for-linux.md: ../chapters/in/windows-subsystem-for-linux.md
-	../bin/markup-single.py ../chapters/in/windows-subsystem-for-linux.md 2
-	../bin/header.py dest/chapters/in/windows-subsystem-for-linux.md 2
 
 dest/chapters/container/glossary.md: ../chapters/container/glossary.md
 	../bin/markup-single.py ../chapters/container/glossary.md 1

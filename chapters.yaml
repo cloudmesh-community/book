@@ -343,6 +343,7 @@
     - chapters/iaas/futuresystems/futuresystems.md
     - $ref:CHAMELEON
     - chapters/container/glossary.md
+    - $ref:IN    
     - chapters/SECTION/SECTION-REFERENCES.md
 
 - BOOK_BIGDATA:
@@ -352,6 +353,8 @@
         - chapters/class/policies.md
         - chapters/class/e534-i523.md
         - chapters/class/volumes.md
+        - chapters/in/datasets.md
+        - chapters/class/assignments-523.md        
         - chapters/bigdata/intro-fall-2018.md
     - chapters/bigdata/applications/overview.md
     - chapters/bigdata/applications/physics.md
@@ -371,6 +374,5 @@
     - chapters/SECTION/SECTION-FAQ.md:
         - chapters/faq.md
         - chapters/faq-523.md
-    - $ref:IN
     - chapters/container/glossary.md
     - chapters/SECTION/SECTION-REFERENCES.md
