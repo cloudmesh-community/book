@@ -18,6 +18,7 @@ INDEX=\
   chapters/class/e516-summary.md\
   chapters/class/volumes.md\
   chapters/class/e516-definition.md\
+  chapters/cloud/use_cases.md\
   chapters/cloud/datacenter.md\
   chapters/arch.md\
   chapters/nist/bdra.md\
@@ -258,6 +259,10 @@ dest/chapters/class/volumes.md: ../chapters/class/volumes.md
 dest/chapters/class/e516-definition.md: ../chapters/class/e516-definition.md
 	../bin/markup-single.py ../chapters/class/e516-definition.md 1
 	../bin/header.py dest/chapters/class/e516-definition.md 1
+
+dest/chapters/cloud/use_cases.md: ../chapters/cloud/use_cases.md
+	../bin/markup-single.py ../chapters/cloud/use_cases.md 1
+	../bin/header.py dest/chapters/cloud/use_cases.md 1
 
 dest/chapters/cloud/datacenter.md: ../chapters/cloud/datacenter.md
 	../bin/markup-single.py ../chapters/cloud/datacenter.md 1
