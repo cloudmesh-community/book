@@ -1,14 +1,25 @@
-# Cloud Computing: Use Cases :hand:
+# Cloud Computing: Use Cases :hand: :o:
+
+TODO: rename so filenames do no include underscore
 
 TODO: use bibtex citations
 
 TODO: Fix figures, see notation.md
 
-TODO: should this be used: <https://earthdata.nasa.gov/about>
+TODO: should image from this be used: <https://earthdata.nasa.gov/about>
 
-## Earth Science :hand:
 
-### Background
+## Big Data
+
+The material provided in this ePub is related to Cloud Computing. However part of our motivation to use cloud computing is to deal with Big Data. For that purpose we have a separate class which is documented in the following volumes. The first volume provides an overview. The second volume lists some technologies relevant for big data.
+
+Link |  Class | Description
+|------ | --- | -------------
+[<img src="images/cover-523.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
+[<img src="images/cover-tech.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies 
+
+
+## Earth Science :hand: :o:
 
 The Earth Observing System Data and Information System (EOSDIS) and the Earth
 Science Data and Information System (ESDIS) provide key core capabilities for
@@ -41,7 +52,7 @@ on-premise resources and compute as well. The following figure depicts the
 geographic locations of the various on-premise SIPS and DAAC centers that
 generate and distribute the various NASA EOS datasets.
 
-### Big Data :hand:
+### Big Data :hand: :o:
 
 Add motivation for a move to the cloud.
 
@@ -50,7 +61,7 @@ Add motivation for a move to the cloud.
 **Figure:** SIPS and DAAC centers. Source: [Baynes et al./NASA's EOSDIS Cumulus](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20180000548.pdf)
 
 
-## Bioinformatics :hand:
+## Bioinformatics :hand: :o:
 
 Content goes here.
 
