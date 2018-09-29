@@ -15,8 +15,8 @@ The material provided in this ePub is related to Cloud Computing. However part o
 
 Link |  Class | Description
 |------ | --- | -------------
-[<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
-[<img src="tech/cover/cover.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies 
+[<img src="images/cover-523.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
+[<img src="images/cover-tech.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies 
 
 
 ## Earth Science :hand: :o:
