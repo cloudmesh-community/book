@@ -4,6 +4,8 @@ TODO: use bibtex citations
 
 TODO: Fix figures, see notation.md
 
+TODO: should this be used: <https://earthdata.nasa.gov/about>
+
 ## Earth Science :hand:
 
 ### Background
