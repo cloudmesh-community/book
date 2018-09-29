@@ -1,9 +1,4 @@
-# GraphQL :o: :hand: {#s-graphql}
-
-To be contributed by
-
-* Mihir
-* Vineet
+# GraphQL :o: :hand: fa18-516-21 fa18-516-02 {#s-graphql}
 
 The draft of this section is managed at
 
