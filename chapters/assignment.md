@@ -47,10 +47,26 @@ Substential contributions are expected.
 As part of the class you will be constributing a **significant**
 chapter that can be used by other students in the class and introduces
 the reader to a general topic, in addition it is expected if
-applicable to develop a practical section demonstrating how to use a
-technology. The chapter and the practical section can be the same. We
+applicable to develop a practical example demonstrating how to use a
+technology. The chapter and the practical example can be the same. We
 do not like to use the term tutorial in our writeup but sometimes we
 refer to it in our assignments as such.
+
+:warning: it is expected from you that you slf identify a section or a 
+chapter as this shows competence in the area of cloud computing. If 
+howebver you do not know what to select, you must attend an online hour 
+with us in which we identify sections and chapters with you. The 
+emphasize here is that we do not decite them for you, but we identify 
+them with you.
+
+Topics that could form a section or chapter that we like to integrete 
+are clearly marked with a :question: . There are plenty in the handbook, 
+but you are welcome to define your own contributions. Discuss them with 
+us in the online hours.
+
+A list of topics identified by students is maintained in a spreadsheet.
+
+See <https://piazza.com/class/jgxybbf5rnx5qd?cid=201> for details.
 
 ### Sections
 
@@ -88,5 +104,30 @@ We are happy to work with you on your on suggestions. Please note that
 we also have some additional mateial that is not yet released that
 could be enhanced upon.
 
+### Submission of sections and chapters
 
+Simply add them to your README.yml file in your github repo
+
+add the following to iy
+
+```
+section:
+    - title: title of the section 1
+         url: https://github.com/cloudmesh-community/book/chapters/...
+    - title: title of the section 2
+         url: https://github.com/cloudmesh-community/book/chapters/...    
+    - title: title of the section 3
+         url: https://github.com/cloudmesh-community/book/chapters/...         
+chapter:
+    - title: title of the chapter
+         url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md         
+project:
+    - title: title of the project
+         url: url in your hid space or that of your partner
+other:
+    - activity: spell checked md document
+         url: put url here
+```
+
+run yamllint on the README.yml file. YAML errors will give point deductions
 
