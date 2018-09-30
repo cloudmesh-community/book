@@ -120,19 +120,19 @@ enum FuelType {
 }
 ```
 
-:o: TODO: Gregor came till here
-
 ### Interfaces
 
-Similar to any programming language, graphql type system also supports
-interfaces. When a type implements interface, it needs to have all the
-fields defined in that interface.
+Similar to any programming language, the graphql type system also supports
+interfaces. When a type implements an interface, it needs to specify all the
+fields that ar defined through the interface.
 
-As we can see in the following example, Vehicle is an interface which
-declares Id, Name and Wheels fields. This means that Motorcycle and
-Car which implement Vehicle, must have these fields. They may or may
-not have their own additional fields like Make in case of Motorcycle
-and Fuel in case of Car.
+We illustrate this in the following example, where we define simple
+vehicle interface type. The Vehicle interface declares `Id`, `Name`
+and `Wheels` fields. This means that a `Motorcycle` and a Car both
+implement a Vehicle and must have the fields defined in the
+interface. They may or may not have additional fields like we
+demonstrat in our example with the field `Make` in case of Motorcycle
+and Fuel in case of the `Car`.
 
 ```graphql
 interface Vehicle {
@@ -155,6 +155,8 @@ type Car implements Vehicle {
     Fuel: FuelType
 }
 ```
+
+:o: TODO: Gregor came till here
 
 ### Union Types
 
