@@ -313,10 +313,14 @@ The response will be similar to
 
 ### Fragments :o:
 
-To resuse your fields in query you can create Fragments in
-GraphQL. For example
+:o: this section is unclear. Fragments is not properly defined
 
-Query
+Fragement are generally used to split complex queries into chunks and
+reuse of query fields.  To resuse your fields in query you can create
+Fragments in GraphQL. For example
+
+
+To demonstrate this, let us look at the query
 
 ```graphql
 {
@@ -332,7 +336,7 @@ fragment employeeInfo on Employer {
 }
 ```
 
-Response
+The response will look like
 
 ```json
 {
@@ -347,16 +351,20 @@ Response
 }
 ```
 
-Fragement are generally used to split complex queries into chunks and
-reuse of query fields.
 
 ### Variables :o:
 
-Variables are used to pass dynamic values to queries. It is not good
-practice to interpolate dynamic values from user action on client side
-to construct queries. Instead of that GraphQL provides a way to define
+:o: this section needs to be improved as it can not be understood by a
+non graphql expert. for example the term interpolate is not defined.
+
+Variables are used to pass dynamic values to queries. It is not a good
+practice to interpolate dynamic values from a  user action on client side
+to construct queries. Instead, GraphQL provides a way to define
 a variable and pass value for that variable at runtime using
 dictionary.
+
+:o: It is not explained where the variable is defined within
+the query, or if these are two difefrent objects
 
 Query
 
