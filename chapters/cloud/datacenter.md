@@ -988,7 +988,7 @@ and was of 38000 lbs and it operated for 105 days.
 ![](images/project-natick-phase1.png)
 
 **Figure:** The *Leona Philpot* prototype was deployed off the central
-coast of California on Aug. 10, 2015. Source: [Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/)
+coast of California on Aug. 10, 2015. Source: [Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/) [@microsoft-first-datacenter]
 
 
 The phase 2 started in June 2018 and lasted for 90 days. Microsoft
@@ -1008,7 +1008,7 @@ which it will be retrieved and recycled.
 ![](images/project-natick-phase2.png)
 
 **Figure:** The *Northern Isles* prototype being deployed near
-Scotland. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/)
+Scotland. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
 
 Although the cooling provides a significant benefit while using
 seawater, it is clear that long time studies need to be conducted with
@@ -1028,10 +1028,4 @@ Some thought on this include:
    the structure has to be removed after 20 years, which impat has it
    than on the ecosystem. 
 
-**References:**
-
-:o: TODO we will use also bibtex fro references
-
-* <https://www.nytimes.com/2016/02/01/technology/microsoft-plumbs-oceans-depths-to-test-underwater-data-center.html>
-* <https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/>
-* <https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/>
+Find more about this at [@nytimes-datacenter]
