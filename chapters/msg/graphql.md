@@ -876,6 +876,10 @@ Now if you try to query repos from graphql, you will see this error
 Henceforth you need to pass token with every repos query. This token
 needs to be passed as header which the graphiql ui client does not
 support. Hence you can use either of these 2 ways
+
+:o: :TODO: could we not put the token in an env variable and use that, or
+have a secript that does find the token from the file that you use earlier?
+
 * curl command 
 
 ```bash
