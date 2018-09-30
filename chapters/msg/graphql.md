@@ -4,6 +4,11 @@
 sentence seems incomplete. such as Examples available at I will fix
 that pariculare example, but can you fix the other sentences ...
 
+:o: you switch examples, between car and employee, i suggest to make
+examples consistent :o: why not use the example computer and you do ip
+adresses, and OS, and things like that relating it to cloud.
+
+
 ## Introduction
 
 GraphQL is data query language developed by Facebook. 
@@ -225,6 +230,7 @@ we obtain the following response
 }
 ```
 
+
 As we see the response data format exactly looks like the query. This
 way a client knows excatly what data it has to consume. In the previous
 example the `name` field returns the data of type `String`. Clients can also
@@ -259,8 +265,6 @@ returns the response
     }
 }
 ```
-
-:o: TODO: Gregor came till here
 
 ### Arguments :o:
 
@@ -304,6 +308,8 @@ The response will be similar to
     }
 }
 ```
+
+:o: TODO: Gregor came till here
 
 ### Fragments :o:
 
