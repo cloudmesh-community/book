@@ -1,14 +1,5 @@
 # Cloud Computing: Use Cases :hand: :o:
 
-~~TODO: rename so filenames do no include underscore~~ done
-
-~~TODO: use bibtex citations~~ done
-
-~~TODO: Fix figures, see notation.md~~ done
-
-~~TODO: should image from this be used:
-      <https://earthdata.nasa.gov/about>~~ done
-
 ## Big Data
 
 The material provided in this ePub is related to Cloud Computing. However part of our motivation to use cloud computing is to deal with Big Data. For that purpose we have a separate class which is documented in the following volumes. The first volume provides an overview. The second volume lists some technologies relevant for big data.
