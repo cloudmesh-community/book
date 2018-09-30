@@ -23,20 +23,23 @@ provides clear and helpful errors.
 Initially GraphQL was implemented in JavaScript. Today there are
 several other implementations in different language available of
 GraphQLs. We will explore the *graphql-python* implementation in this
-chapter. The GraphQL official documentation is available at
+chapter. The gGraphQL official documentation is available at
 [@graphql-learn]
 
 
 ## GraphQL type system and schema
 
+:o: TODO: no section without initial paragraph
+
 ### Type System
 
-In GraphQL world, query is what we request to graphql server and the
-result will be obtained in exact same structure. It means we will know
-ahead of time what we're going to get as result, nothing less and
-nothing more.
+In GraphQL a query is what we request from a graphql server. The
+result will be obtained in structure defined bby a type and schema. It
+means we will know ahead of time what we arre going to get as result,
+nothing less and nothing more. For this to work, the data is often to
+be assumed structured data.
 
-Here's how a simple graphQL query would look like
+Here is how a simple graphQL query would look like
 
 ```graphql
 {
@@ -50,7 +53,8 @@ Here's how a simple graphQL query would look like
 }
 ```
 
-Response
+The response is
+
 ```json
 {
     "person": {
@@ -68,13 +72,14 @@ Response
 }
 ```
 
-But for this we need to define the types that are going to be honored
-by graphql service so that when the query comes in, it is validated to
-match the schema of these types.
+For this to work, we need to define the types that are going to be
+honored by the graphql service so that when a query is recieved by the
+server, it is firts validated to a schema that defines the types
+contained within the graphql service.
 
-Types are defined as part of each graphql service, in graphql schema
-language which are programming language agnostic. An example of a
-graphql type.
+Hence, types must be defined as part of each graphql service. THey are
+defined with the graphql schema language which is programming language
+agnostic. An example of a graphql type is:
 
 ```graphql
 type Person {
@@ -84,9 +89,12 @@ type Person {
 }
 ```
 
-Note that `!` here means that the field value cannot be
-null. [Person!]! means that the array cannot be null and also none of
-the items in the array can be null.
+Note that the `!` indicates a field value, that cannot be null and
+must have a defined value. `[Person!]!` means that an array is
+returned, but that the array cannot be null and also none of the items
+in the array can be null.
+
+:o: TODO: Gregor came till here
 
 ### Scalar Types
 
