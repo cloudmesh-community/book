@@ -8,21 +8,23 @@ that pariculare example, but can you fix the other sentences ...
 
 GraphQL is data query language developed by Facebook. 
 
-GraphQL allows client to request data they need without thinking about
-API implementation. It makes apps fast and stable because the app has
-control over data it needs. This will also reduce network I/O since
-only necessary data is getting transfered from server to client.
+GraphQL allows clients to request data they need without thinking
+about the API implementation. It makes application devlopment fast and
+stable because the application has control over data it needs and
+format. The benefit of Graphql is also to reduce network I/O since
+only the necessary data is transfered from the server to the client.
 
-Unlike REST APIs which required loading data from multiple URLs,
-GraphQL can get all data the app needs in single request. GraphQL APIs
-are defined in terms of types and fields. Types will help GraphQL to
-ensure that client only asks for what's possible otherwise it provides
-clear and helpful errors.
+Unlike REST APIs which require loading data via multiple URLs, GraphQL
+can get all data the application needs in single request. GraphQL APIs
+are defined in terms of types and fields. Types help GraphQL to ensure
+that client only asks for what is possible and in case of faults
+provides clear and helpful errors.
 
-Initially GraphQL was implemented in JavaScript. Today there are lots
-of implementations available of GraphQL in different languages. We
-will explore graphql-python implementation. GraphQL official
-documentation is available at [@graphql-learn]
+Initially GraphQL was implemented in JavaScript. Today there are
+several other implementations in different language available of
+GraphQLs. We will explore the *graphql-python* implementation in this
+chapter. The GraphQL official documentation is available at
+[@graphql-learn]
 
 
 ## GraphQL type system and schema
