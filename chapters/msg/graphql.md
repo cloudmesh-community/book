@@ -160,8 +160,8 @@ type Car implements Vehicle {
 
 ### Union Types
 
-As the name suggests, union types are union of two or more
-types. Here's how we can define a union type.
+As the name suggests, union types represent the union of two or more
+types. Here is how we can define a union type.
 
 ```graphql
 union VehicleType = Motorcycle | Car
@@ -335,7 +335,7 @@ reuse of query fields.
 
 ### Variables
 
-Variables are used to pass dynamic values to queries. It's not good
+Variables are used to pass dynamic values to queries. It is not good
 practice to interpolate dynamic values from user action on client side
 to construct queries. Instead of that GraphQL provides a way to define
 a variable and pass value for that variable at runtime using
@@ -1148,6 +1148,6 @@ ecosystem. Beauty of it lies in the flexibility and extensiveness it
 provides and also fits well with the microservices architecture which
 many are moving towards. Already big players like Github, Pinterest,
 Intuit, Coursera, Shopify, etc. are using it.  With that being said,
-REST APIs still have it's own place and may prove better choice in
+REST APIs still have it is own place and may prove better choice in
 certain use cases. Both REST and graphql have some tradeoffs which
 need to be understood before being considered.
