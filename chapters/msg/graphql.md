@@ -156,7 +156,6 @@ type Car implements Vehicle {
 }
 ```
 
-:o: TODO: Gregor came till here
 
 ### Union Types
 
@@ -168,11 +167,11 @@ the `|` charater to indicate the union operator.
 union VehicleType = Motorcycle | Car
 ```
 
-Now when we write a graphql query to fetch the `VehicleType` information, we
-can ask some of the common fields and some of the specific fields
-conditionally. In the next example we 
-request `AllVehicleTypes` with common fields like `Id`, `Name` and
-fields specific to either `Motorcycle` or `Car`.
+Now when we write a graphql query to fetch the `VehicleType`
+information, we can ask some of the common fields and some of the
+specific fields conditionally. In the next example we request
+`AllVehicleTypes` with common fields like `Id`, `Name` and fields
+specific to either `Motorcycle` or `Car`.
 
 ```graphql
 {
@@ -191,20 +190,20 @@ fields specific to either `Motorcycle` or `Car`.
 
 ### Input Types :o:
 
+:o: TODO: an introduction paragraph is missing
 
+## GraphQL Query
 
-## GraphQL Query :o:
+An application asks for data from server in form of a GraphQL *query*. A GraphQL
+query can have different fields and arguments. We describe how to use
+them next.
 
-App asks for data from server in form of GraphQL query. A GraphQL
-query can have different fields, arguments etc which is described as
-follow.
+### Fields
 
-### Fields :o:
+A very simple definition of a query is to ask for speific fields
+that belong to an object stored in graphQL.
 
-A very simple definition of GraphQL would be asking for speific fields
-on objects. Check following example
-
-Query
+When asking the query
 
 ```graphql
 {
@@ -214,7 +213,7 @@ Query
 }
 ```
 
-Response 
+we obtain the following response
 
 ```json
 {
@@ -226,12 +225,12 @@ Response
 }
 ```
 
-As we can see data format exactly looks like the query. This way
-client knows excatly what data it has to consume. In previous example
-"name" fields returns data of type "String". Client can also ask for
-an object. For example
+As we see the response data format exactly looks like the query. This
+way a client knows excatly what data it has to consume. In the previous
+example the `name` field returns the data of type `String`. Clients can also
+ask for an object representing any match within the graphQL database.
 
-Query
+For example the query
 
 ```graphql
 {
@@ -244,7 +243,7 @@ Query
 }
 ```
 
-Response
+returns the response
 
 ```json
 {
@@ -260,6 +259,8 @@ Response
     }
 }
 ```
+
+:o: TODO: Gregor came till here
 
 ### Arguments :o:
 
