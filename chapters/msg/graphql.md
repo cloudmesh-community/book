@@ -1,4 +1,4 @@
-# GraphQL
+# GraphQL :o:
 
 :o: TODO: use full sentences, there are several ocasions where a
 sentence seems incomplete. such as Examples available at I will fix
@@ -158,7 +158,7 @@ type Car implements Vehicle {
 
 :o: TODO: Gregor came till here
 
-### Union Types
+### Union Types :o:
 
 As the name suggests, union types represent the union of two or more
 types. Here is how we can define a union type.
@@ -188,17 +188,17 @@ fields specific to either Motorcycle or Car.
 }
 ```
 
-### Input Types
+### Input Types :o:
 
 
 
-## GraphQL Query
+## GraphQL Query :o:
 
 App asks for data from server in form of GraphQL query. A GraphQL
 query can have different fields, arguments etc which is described as
 follow.
 
-### Fields
+### Fields :o:
 
 A very simple definition of GraphQL would be asking for speific fields
 on objects. Check following example
@@ -260,7 +260,7 @@ Response
 }
 ```
 
-### Arguments
+### Arguments :o:
 
 Unlike REST services where you can pass parameters via query
 parameters(GET) or request body(POST) in your request, in GraphQL you
@@ -294,7 +294,7 @@ Response
 }
 ```
 
-### Fragments
+### Fragments :o:
 
 To resuse your fields in query you can create Fragments in
 GraphQL. For example
@@ -333,7 +333,7 @@ Response
 Fragement are generally used to split complex queries into chunks and
 reuse of query fields.
 
-### Variables
+### Variables :o:
 
 Variables are used to pass dynamic values to queries. It is not good
 practice to interpolate dynamic values from user action on client side
@@ -374,7 +374,7 @@ Response
 }
 ```
 
-### Directives
+### Directives :o:
 
 Directives are used to change structure of queries at runtime using
 variables. Directive can be attached to field or fragment
@@ -423,7 +423,7 @@ Response
 }
 ```
 
-### Mutations
+### Mutations :o:
 
 Mutations are used to modify server side data. 
 
@@ -461,14 +461,14 @@ Response
 }
 ```
 
-### Query Validation
+### Query Validation :o:
 
 Because of use of types in GraphQL query we can know whether query is
 valid or not before executing it. It can be achieved using validator
 provided by GraphQL implementation. To use validator you need to write
 test cases and use validator to validate schema
 
-## Django Django is a very popular full-blown python web framework
+## Django Django is a very popular full-blown python web framework :o:
 
 which is fast and comes with a lot of boilerplate code. Django is
 matured and has a huge community support as against flask which is
@@ -477,14 +477,14 @@ applications. Django has inbuilt support for Object Relational Mapping
 which is based on Database Code-First approach. Please refer
 [@www-djangoproject] for more Django information.
 
-## GraphQL Implementations
+## GraphQL Implementations :o:
 
 GraphQL is supported in Python, JavaScript, Java, Ruby, C#, Go, PHP,
 Erlang, Scala, Go, Groovy, Elixir.
 
-## GraphQL-python (Graphene) Example
+## GraphQL-python (Graphene) Example :o:
 
-### Getting Started
+### Getting Started :o:
 
 To start with GraphQL server implementation in python we will create
 virtual environment for project to keep all the dependencies isolated
@@ -542,7 +542,7 @@ GRAPHENE = {
 }
 ```
 
-### GraphQL server implementation
+### GraphQL server implementation :o:
 
 Now django seperates project into apps. Here we will have one app for
 Users and one for Repos. Django provides support for SQLite so we will
@@ -637,7 +637,7 @@ class Query(repos.schema.Query, graphene.ObjectType):
 
 schema = graphene.Schema(query=Query)
 ```
-### Querying implemented GraphQL server
+### Querying implemented GraphQL server :o:
 
 Schema is created now to query it we will use GraphiQL which is
 playground for graphql queries. Open cloudmeshrepo/urls.py and append
@@ -712,7 +712,7 @@ In the right pane you will see following output
 }
 ```
 
-### Mutation example
+### Mutation example :o:
 
 Similar to Query you can add mutation to create your own data. Add a
 Create class for new repo object which will inherit from graphene's
@@ -779,7 +779,7 @@ And this will not just create a new repo but also get the newly added repo
 }
 ```
 
-### GraphQL Authentication
+### GraphQL Authentication :o:
 
 There a few ways of adding authentication to your graphql server
 
@@ -794,7 +794,7 @@ There a few ways of adding authentication to your graphql server
 * Add JSON Web Token authentication to graphql server, since most of
   the applications these days are stateless.
 
-### JSON Web Authentication
+### JSON Web Authentication :o:
 
 This is a more secure and sophisticated way of authentication. Client
 has to provide username and password to mutate a token which has
@@ -938,7 +938,7 @@ $ wget https://github.com/cloudmesh-community/book/tree/master/examples/graphql
 $ cd grpahql
 ```
 
-### GitHub API v4
+### GitHub API v4 :o:
 
 GitHub has implemented API v4 using graphql which allows you to query
 or mutate data for which you have access. To access GitHub API v4
@@ -1099,9 +1099,9 @@ Response
 
 Official documentation of Github API v4 is available at [@github-v4]
 
-## Pros and Cons of Using GraphQL
+## Advantages and Disadvantages of Using GraphQL :o:
 
-### Pros
+### Advantages :o:
 
 * Unlike REST APIs, only the required data is fetched, nothing more
   nothing less, which minimizes the data transferred over network
@@ -1127,7 +1127,7 @@ type Car {
   is growing. Many graphql editors, IDEs and packages are getting
   added day by day.
   
-### Cons
+### Disadvantages :o:
 
 * Graphql query can get very complex. Client may not necessarily know
   how expensive the queries can be for server to go and gather the
@@ -1141,7 +1141,7 @@ type Car {
   hence it is difficult.
 
 
-## Conclusion
+## Conclusion :o:
 
 In general there are many reasons to have graphql in our software
 ecosystem. Beauty of it lies in the flexibility and extensiveness it
