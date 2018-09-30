@@ -264,12 +264,21 @@ returns the response
 
 ### Arguments :o:
 
-Unlike REST services where you can pass parameters via query
-parameters(GET) or request body(POST) in your request, in GraphQL you
-can provide every field an argument which makes easy for fetching
-data. These arguments can be of scalar type, enumeration type etc.
+Unlike REST services where you can pass parameters as part of a
+request via query parameters through *GET* or a request body thorough
+*POST*, in GraphQL you can provide to every field an argument
+restrictiong the data returned to only the information that you
+need. This reduces the traffic for returning the information that is
+needed without doing the postprocessing on the client.  The
+restricting arguments can be of scalar type, enumeration type and
+others.
 
-Query
+Let use look at an example where through a query we only aske for
+emplyees with the age of 29.
+
+:o: TODO: as age discrimination in the US is serious, we want to come
+up with a better example. Or describe a scenario where fecthing the 29
+year olds makes sense. Maybe we can do department?
 
 ```graphql
 {
@@ -280,7 +289,7 @@ Query
 }
 ```
 
-Response
+The response will be similar to
 
 ```json
 {
