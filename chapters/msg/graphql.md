@@ -158,20 +158,21 @@ type Car implements Vehicle {
 
 :o: TODO: Gregor came till here
 
-### Union Types :o:
+### Union Types
 
 As the name suggests, union types represent the union of two or more
-types. Here is how we can define a union type.
+types. Here is how we can define a union type. As you can see we use
+the `|` charater to indicate the union operator.
 
 ```graphql
 union VehicleType = Motorcycle | Car
 ```
 
-Now when we write a graphql query to fetch VehicleType information, we
+Now when we write a graphql query to fetch the `VehicleType` information, we
 can ask some of the common fields and some of the specific fields
-conditionally. Check following example of graphql query which is
-requesting for AllVehicleTypes with common fields like Id, Name and
-fields specific to either Motorcycle or Car.
+conditionally. In the next example we 
+request `AllVehicleTypes` with common fields like `Id`, `Name` and
+fields specific to either `Motorcycle` or `Car`.
 
 ```graphql
 {
