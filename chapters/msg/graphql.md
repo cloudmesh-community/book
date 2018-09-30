@@ -500,29 +500,37 @@ validate such tests for the.
 
 :o: this section is unclear
 
-:o: TODO: Gregor came till here
+:o: TODO: Gregor came till here he wills top here. again, maybe we can
+uset the same examples in the intro and the example ...
 
-## Django Django is a very popular python web framework :o:
+## Django for graphQL
 
-which is fast and comes with a lot of boilerplate code. Django is
-matured and has a huge community support as against flask which is
-very new, still evolving and generally considered for only small
-applications. Django has inbuilt support for Object Relational Mapping
+Django is a very popular python web framework which includes a lot of
+boilerplate code. Due to this its footprint is larger than other
+services, such as Flask, but provide a lot of build in features. Django is
+mature and has a larger community than that of flask.
+Django has inbuilt support for Object Relational Mapping
 which is based on Database Code-First approach. Please refer
-[@www-djangoproject] for more Django information.
+[@www-djangoproject] for more Django information. Database suport
+however can also be easily added to falsk through plugins.
+
+:o: the purpose of this section is unclear at this time. Django nd
+flask have advantages and disadvantages.
 
 ## GraphQL Implementations :o:
 
 GraphQL is supported in Python, JavaScript, Java, Ruby, C#, Go, PHP,
 Erlang, Scala, Go, Groovy, Elixir.
 
+:o: this is unclear, as we need to distinguish server and client
+
 ## GraphQL-python (Graphene) Example :o:
 
-### Getting Started :o:
+:o: In this example we will ... intro missing
 
 To start with GraphQL server implementation in python we will create
 virtual environment for project to keep all the dependencies isolated
-from other projects and system. To leave it execute "deactivate"
+from other projects and system. To leave it execute *deactivate*
 command in shell. Always remember to activate virtual environment.
 
 * :o: TODO: mkdir -p  example/graphql
@@ -534,8 +542,8 @@ command in shell. Always remember to activate virtual environment.
 
 
 ```bash
-mkdir python-graphql-example
-cd python-graphql-example
+mkdir -p example/graphql
+cd example/graphql
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -626,10 +634,23 @@ github's API https://api.github.com/users/cloudmesh-community/repos.
 
 ```python
 from repos.models import Repo
-Repo.objects.create(name="boat",full_name="cloudmesh-community/boat",url="https://github.com/cloudmesh-community/boat",description="S.T.A.R. boat")
-Repo.objects.create(name="book",full_name="cloudmesh-community/book",url="https://github.com/cloudmesh-community/book",description="Gregor von Laszewski")
-Repo.objects.create(name="cm",full_name="cloudmesh-community/cm",url="https://github.com/cloudmesh-community/cm",description="Cloudmesh v4")
-Repo.objects.create(name="cm-burn",full_name="cloudmesh-community/cm-burn",url="https://github.com/cloudmesh-community/cm-burn",description="Burns many SD cards so we can build a Raspberry PI cluster")
+Repo.objects.create(
+    name="boat",
+    full_name="cloudmesh-community/boat",
+    url="https://github.com/cloudmesh-community/boat",
+    description="S.T.A.R. boat")
+Repo.objects.create(
+    name="book",full_name="cloudmesh-community/book",
+    url="https://github.com/cloudmesh-community/book",
+    description="Gregor von Laszewski")
+Repo.objects.create(name="cm",
+    full_name="cloudmesh-community/cm",
+    url="https://github.com/cloudmesh-community/cm",
+    description="Cloudmesh v4")
+Repo.objects.create(name="cm-burn",
+    full_name="cloudmesh-community/cm-burn",
+    url="https://github.com/cloudmesh-community/cm-burn",
+    description="Burns many SD cards so we can build a Raspberry PI cluster")
 exit()
 ```
 
@@ -693,11 +714,11 @@ Start your server using following command
 python manage.py runserver
 ```
 
-Now open
+Now open the URL
 
 * <http://localhost:8000/graphql>
 
-URL in your broweser. You will see GraphiQL. In the left pane add
+in your broweser. You will see GraphiQL. In the left pane add the
 following query
 
 ```graphql
@@ -748,8 +769,8 @@ In the right pane you will see following output
 
 ### Mutation example :o:
 
-Similar to Query you can add mutation to create your own data. Add a
-Create class for new repo object which will inherit from graphene's
+Similar to a query you can add mutation to create your own data. Add a
+*Create* class for new repo object which will inherit from graphene's
 Mutation class. This class will accept new repo properties as
 Arguments. Please see the following code snippet
 
@@ -815,7 +836,7 @@ And this will not just create a new repo but also get the newly added repo
 
 ### GraphQL Authentication :o:
 
-There a few ways of adding authentication to your graphql server
+There a few ways to add authentication to your graphql server
 
 * Add a REST Api endpoint which will take care of authenticating the
   user and only the logged in users can make graphql queries. This
@@ -926,15 +947,17 @@ Henceforth you need to pass token with every repos query. This token
 needs to be passed as header which the graphiql ui client does not
 support. Hence you can use either of these 2 ways
 
-:o: :TODO: could we not put the token in an env variable and use that, or
-have a secript that does find the token from the file that you use earlier?
+:o: :TODO: could we not put the token in an env variable and use that,
+or have a secript that does find the token from the file that you use
+earlier?
 
 * curl command 
 
 ```bash
+export TOKEN=eyJ0eXAiOiJKV1.... (cut to fit in line)
 curl -X POST \
 -H "Content-Type: application/json;" \
--H "Authorization: JWT eyJ0eXAiOiJKV1.... (cut to fit in line)" \
+-H "Authorization: JWT $TOKEN" \
 -d '{"query": "{ repos { url } }"}' \
 http://localhost:8000/graphql/
 ```
@@ -942,7 +965,15 @@ http://localhost:8000/graphql/
 Result obtained from running this command: 
 
 ```
-{"data":{"repos":[{"url":"https://github.com/cloudmesh-community/boat"},{"url":"https://github.com/cloudmesh-community/book"},{"url":"https://github.com/cloudmesh-community/cm"},{"url":"https://github.com/cloudmesh-community/cm-burn"},{"url":"https://github.com/cloudmesh-community/vineet-test-1"},{"url":"https://github.com/cloudmesh-community/vineet-test"}]}}
+{"data":{"repos":[
+  {"url":"https://github.com/cloudmesh-community/boat"},
+  {"url":"https://github.com/cloudmesh-community/book"},
+  {"url":"https://github.com/cloudmesh-community/cm"},
+  {"url":"https://github.com/cloudmesh-community/cm-burn"},
+  {"url":"https://github.com/cloudmesh-community/vineet-test-1"},
+  {"url":"https://github.com/cloudmesh-community/vineet-test"}
+  ]}
+}
 ```
 
 Clearly as you can see the output is not well formatted and hence not
