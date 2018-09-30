@@ -309,7 +309,7 @@ The response will be similar to
 }
 ```
 
-:o: TODO: Gregor came till here
+
 
 ### Fragments :o:
 
@@ -401,15 +401,19 @@ Response
 
 ### Directives :o:
 
-Directives are used to change structure of queries at runtime using
-variables. Directive can be attached to field or fragment
-inclusion. There are two directives which must be supported by any
+Directives are used to change the structure of queries at runtime using
+variables. Directives can be attached to field or fragment
+inclusion.
+
+:o: grammar makes this too difficult to understand
+
+There are two directives which must be supported by any
 graphql-server implementation
 
 * `@skip (if: Boolean)` - It skips the field if argument is true
 * `@Include (if: Boolean)` - It inclues the field if argument is true
 
-Query
+When using the query
 
 ```graphql
 {
@@ -431,7 +435,7 @@ Query
 }
 ```
 
-Response
+The response will be
 
 ```json
 {
@@ -448,11 +452,10 @@ Response
 }
 ```
 
-### Mutations :o:
+### Mutations
 
-Mutations are used to modify server side data. 
-
-Query
+Mutations are used to modify server side data. To demonstrate this,
+let us look at the query
 
 ```graphql
 mutation CreateEmployeeForEmployer($employer: Employer!, $employee: Employee!) {
@@ -472,8 +475,7 @@ mutation CreateEmployeeForEmployer($employer: Employer!, $employee: Employee!) {
     }
 }
 ```
-
-Response
+The response will be as follows, indicating that an employee has been added.
 
 ```json
 {
@@ -485,6 +487,9 @@ Response
     }
 }
 ```
+
+
+:o: TODO: Gregor came till here
 
 ### Query Validation :o:
 
