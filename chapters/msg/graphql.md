@@ -1,7 +1,8 @@
 # GraphQL
 
 :o: TODO: use full sentences, there are several ocasions where a
-sentence seems incomplete.
+sentence seems incomplete. such as Examples available at I will fix
+that pariculare example, but can you fix the other sentences ...
 
 ## Introduction
 
@@ -904,11 +905,18 @@ and are trusted and verified since they are digitally signed.
 Find more about JWT tockens at [@jwt-tockens] and graphql
 authentication at [@medium-graphql]
 
-Examples available at:
+Examples for graphql are available at:
 
-* <https://github.com/cloudmesh-community/book/tree/master/examples/graphql/>
+* <https://github.com/cloudmesh-community/book/tree/master/examples/graphql/> and [@www-howtographql]
 
-and [@www-howtographql]
+To use them please do:
+
+```bash
+$ mkdir -p cloudmesh-community/example
+$ cd cloudmesh-community/example
+$ wget https://github.com/cloudmesh-community/book/tree/master/examples/graphql
+$ cd grpahql
+```
 
 ### GitHub API v4
 
