@@ -489,16 +489,20 @@ The response will be as follows, indicating that an employee has been added.
 ```
 
 
-:o: TODO: Gregor came till here
+
 
 ### Query Validation :o:
 
-Because of use of types in GraphQL query we can know whether query is
-valid or not before executing it. It can be achieved using validator
-provided by GraphQL implementation. To use validator you need to write
-test cases and use validator to validate schema
+Because of use of types in a GraphQL query we can know whether a query
+is valid or not before executing it. This is achieved through
+validators. To use a validator you need to write test cases and
+validate such tests for the.
 
-## Django Django is a very popular full-blown python web framework :o:
+:o: this section is unclear
+
+:o: TODO: Gregor came till here
+
+## Django Django is a very popular python web framework :o:
 
 which is fast and comes with a lot of boilerplate code. Django is
 matured and has a huge community support as against flask which is
