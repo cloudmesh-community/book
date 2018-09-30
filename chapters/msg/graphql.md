@@ -87,6 +87,7 @@ null. [Person!]! means that the array cannot be null and also none of
 the items in the array can be null.
 
 ### Scalar Types
+
 Graphql supports the following scalar types:
 * String: UTF8 characters
 * Int: 32 bit signed integer
@@ -825,7 +826,7 @@ This will create a token for us to use in our subsequent calls.
 {
   "data": {
     "tokenAuth": {
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiZXhwIjoxNTM4MTk0NTM3LCJvcmlnX2lhdCI6MTUzODE5NDIzN30.5JblR-0QS-WAKmO8t3aZgqu5emPTibNv7hep9wZKdXI"
+      "token": "eyJ0eXAiOiJKV1.... (cut to fit in line)"
     }
   }
 }
@@ -880,7 +881,7 @@ support. Hence you can use either of these 2 ways
 ```bash
 curl -X POST \
 -H "Content-Type: application/json;" \
--H "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwiZXhwIjoxNTM4MTY1ODc1LCJvcmlnX2lhdCI6MTUzODE2NTU3NX0.HUKZeM7GvjPmBUWuoIjUJZFPgf0DQFS3Du4okSdr2I4" \
+-H "Authorization: JWT eyJ0eXAiOiJKV1.... (cut to fit in line)" \
 -d '{"query": "{ repos { url } }"}' \
 http://localhost:8000/graphql/
 ```
