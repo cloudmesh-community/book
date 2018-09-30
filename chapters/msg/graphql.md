@@ -1,5 +1,8 @@
 # GraphQL
 
+:o: TODO: use full sentences, there are several ocasions where a
+sentence seems incomplete.
+
 ## Introduction
 
 GraphQL is data query language developed by Facebook. 
@@ -901,8 +904,10 @@ and are trusted and verified since they are digitally signed.
 Find more about JWT tockens at [@jwt-tockens] and graphql
 authentication at [@medium-graphql]
 
-Examples available at :
-<https://github.com/cloudmesh-community/book/tree/master/examples/graphql-examples/>
+Examples available at:
+
+* <https://github.com/cloudmesh-community/book/tree/master/examples/graphql/>
+
 and [@www-howtographql]
 
 ### GitHub API v4
