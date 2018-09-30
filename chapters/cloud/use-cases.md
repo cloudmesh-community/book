@@ -155,7 +155,7 @@ Central to this is the concept of a **data lake** where data producers, data
 service providers, and end users all adapt their previously on-premise
 resources, infrastructure, and analysis tools over to cloud-native
 implementations. The essential premise is that all stakeholders must buy into
-moving their compute to the data; not the data to their compute.
+moving their compute to the data; no longer moving the data to their compute.
 +@fig:eosdis-data-lake depicts the concept of an EOSDIS data lake and highlights
 the assumptions that [@sds-considerations]:
 
@@ -189,7 +189,7 @@ upon their infrastructure and years of experience scaling web resources for
 millions of users to provide cloud computing services that abstract away the
 underlying technical issues of massive scaling. It would be of great benefit to
 the Earth Science community for all stakeholders to leverage these cloud
-resources in some capacity so as to enable and facilitate continuation of
+resources in some capacity so as to enable and facilitate the continuation of
 science discovery in this age of big data.
 
 ## Bioinformatics :hand: :o:
