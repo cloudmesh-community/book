@@ -94,22 +94,23 @@ must have a defined value. `[Person!]!` means that an array is
 returned, but that the array cannot be null and also none of the items
 in the array can be null.
 
-:o: TODO: Gregor came till here
 
 ### Scalar Types
 
 Graphql supports the following scalar types:
-* String: UTF8 characters
-* Int: 32 bit signed integer
-* Float: Double precision floating point value
-* Boolean: true or false
-* ID: Represents a unique identifier which can be used as a key to fetch the object
+
+* `String`: UTF8 characters
+* `Int`: 32 bit signed integer
+* `Float`: Double precision floating point value
+* `Boolean`: true or false
+* `ID`: Represents a unique identifier which can be used as a key to fetch the object
 
 ### Enumeration Types
 
-Enums also are scalar types which define certain set of restricted
+`Enums` also are scalar types which define a certain set of restricted
 values. When a graphql schema defines a field of enum type, we expect
-that field's value to be one of the enum values only.
+that the field's value be of the type enum values only. An example of
+an enum type is
 
 ```graphql
 enum FuelType {
@@ -118,6 +119,8 @@ enum FuelType {
     Hybrid
 }
 ```
+
+:o: TODO: Gregor came till here
 
 ### Interfaces
 
