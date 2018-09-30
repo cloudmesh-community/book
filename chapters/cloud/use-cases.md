@@ -1,13 +1,13 @@
 # Cloud Computing: Use Cases :hand: :o:
 
-TODO: rename so filenames do no include underscore
+~~TODO: rename so filenames do no include underscore~~ done
 
-TODO: use bibtex citations
+~~TODO: use bibtex citations~~ done
 
-TODO: Fix figures, see notation.md
+~~TODO: Fix figures, see notation.md~~ done
 
-TODO: should image from this be used:
-      <https://earthdata.nasa.gov/about>
+~~TODO: should image from this be used:
+      <https://earthdata.nasa.gov/about>~~ done
 
 ## Big Data
 
@@ -34,31 +34,25 @@ satellites NASA manages. The ESDIS project, on the other hand, manages the
 downstream processes and capabilities which include *"generation of higher level
 (Level 1-4) science data products for EOS missions; archiving and distribution
 of data products from EOS and other satellite missions, as well as aircraft
-and field measurement campaigns"*. +@fig:eosdis-context depicts the overall
-context of EOSDIS and ESDIS.
+and field measurement campaigns"* [@earthdata-about]. +@fig:use-cases-es-esdops
+depicts the overall context of EOSDIS and ESDIS in Earth Science data
+operations [@earthdata-about].
 
-![EOSDIS context](images/eosdis-context.png){#fig:eosdis-context width=1in}
-
-<!---
-**Figure:** EOSDIS context. Source: [John Moses/NSIDC DAAC Users Working Group](https://nsidc.org/sites/nsidc.org/files/files/rpt_esdis_overview_moses.pdf)
---->
+![Earth Science Data Operations](images/use-cases-es-esdops.jpg){#fig:use-cases-es-esdops}
 
 Traditionally, higher level products (those used by end users) are produced by
-the Science Investigator-led Processing System (SIPS) usually hosted and
+a Science Investigator-led Processing System (SIPS) usually hosted and
 operated at on-premise facilities belonging to the Science and Instrument
 Team's affiliate research center. Furthermore, these higher level products are
 then ingested and cataloged by an affiliate Distributed Active Archive Center
 (DAAC) for the purpose of providing public distribution, access, and discovery
 to these datasets. Historically, these DAACs provide their capability using
-on-premise resources and compute as well. +@fig:sips-daac-centers depicts the
-geographic locations of the various on-premise SIPS and DAAC centers that
-generate and distribute the various NASA EOS datasets.
+on-premise resources and compute as well. +@fig:sips-daac-centers
+depicts the geographic locations of the various on-premise SIPSs and DAACs
+that generate and distribute the various NASA EOS datasets
+[@nasa-eosdis-cumulus].
 
-![SIPS & DAAC Centers](images/sips-daac-centers.png){#fig:sips-daac-centers width=1in}
-
-<!---
-**Figure:** SIPS and DAAC centers. Source: [Baynes et al./NASA's EOSDIS Cumulus](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20180000548.pdf)
---->
+![SIPS & DAAC Centers](images/use-cases-es-sips-daac-centers.png){#fig:sips-daac-centers}
 
 ### Big Data :hand: :o:
 
@@ -67,10 +61,3 @@ Add motivation for a move to the cloud.
 ## Bioinformatics :hand: :o:
 
 Content goes here.
-
-**References:**
-
-:o: TODO we will use also bibtex for references
-
-* <https://earthdata.nasa.gov/about>
-* <https://nsidc.org/sites/nsidc.org/files/files/rpt_esdis_overview_moses.pdf>
