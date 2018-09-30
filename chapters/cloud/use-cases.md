@@ -25,7 +25,7 @@ The Earth Observing System Data and Information System (EOSDIS) and the Earth
 Science Data and Information System (ESDIS) provide key core capabilities for
 NASA's Earth Science Data Systems (ESDS) Program.
 
-According to https://earthdata.nasa.gov/about, EOSDIS *"provides end-to-end
+According to <https://earthdata.nasa.gov/about>, EOSDIS *"provides end-to-end
 capabilities for managing NASA’s Earth science data from various sources –
 satellites, aircraft, field measurements, and various other programs*" and
 "*provides capabilities for command and control, scheduling, data capture
