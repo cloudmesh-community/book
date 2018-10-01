@@ -11,24 +11,24 @@ adresses, and OS, and things like that relating it to cloud.
 
 ## Introduction
 
-GraphQL is data query language developed by Facebook. 
+GraphQL is a data query language developed by Facebook. 
 
 GraphQL allows clients to request data they need without thinking
 about the API implementation. It makes application devlopment fast and
-stable because the application has control over data it needs and
-format. The benefit of Graphql is also to reduce network I/O since
-only the necessary data is transfered from the server to the client.
+stable because the application has control over the data it needs and
+its format. The benefit of Graphql is also to reduce network I/O since
+only the necessary data is transfered from server to client.
 
-Unlike REST APIs which require loading data via multiple URLs, GraphQL
-can get all data the application needs in single request. GraphQL APIs
+Unlike REST APIs, which require loading data via multiple URLs, GraphQL
+can get all data, that application needs, in a single request. GraphQL APIs
 are defined in terms of types and fields. Types help GraphQL to ensure
-that client only asks for what is possible and in case of faults
+that client only asks for what is possible and in case of faults,
 provides clear and helpful errors.
 
 Initially GraphQL was implemented in JavaScript. Today there are
 several other implementations in different language available of
 GraphQLs. We will explore the *graphql-python* implementation in this
-chapter. The gGraphQL official documentation is available at
+chapter. The GraphQL official documentation is available at
 [@graphql-learn]
 
 
@@ -38,11 +38,10 @@ chapter. The gGraphQL official documentation is available at
 
 ### Type System
 
-In GraphQL a query is what we request from a graphql server. The
-result will be obtained in structure defined bby a type and schema. It
-means we will know ahead of time what we arre going to get as result,
-nothing less and nothing more. For this to work, the data is often to
-be assumed structured data.
+In GraphQL a query is what we request from the graphql server. The
+result will be obtained in a structure defined by type and schema. It
+means we will know ahead of time what we are going to get as result,
+nothing less and nothing more. For this to work, the data is often assumed to be structured data.
 
 Here is how a simple graphQL query would look like
 
@@ -79,10 +78,10 @@ The response is
 
 For this to work, we need to define the types that are going to be
 honored by the graphql service so that when a query is recieved by the
-server, it is firts validated to a schema that defines the types
+server, it is first validated to a schema that defines the types
 contained within the graphql service.
 
-Hence, types must be defined as part of each graphql service. THey are
+Hence, types must be defined as part of each graphql service. They are
 defined with the graphql schema language which is programming language
 agnostic. An example of a graphql type is:
 
@@ -96,7 +95,7 @@ type Person {
 
 Note that the `!` indicates a field value, that cannot be null and
 must have a defined value. `[Person!]!` means that an array is
-returned, but that the array cannot be null and also none of the items
+returned, but that array cannot be null and also none of the items
 in the array can be null.
 
 
@@ -129,14 +128,14 @@ enum FuelType {
 
 Similar to any programming language, the graphql type system also supports
 interfaces. When a type implements an interface, it needs to specify all the
-fields that ar defined through the interface.
+fields that are defined through the interface.
 
 We illustrate this in the following example, where we define simple
-vehicle interface type. The Vehicle interface declares `Id`, `Name`
-and `Wheels` fields. This means that a `Motorcycle` and a Car both
-implement a Vehicle and must have the fields defined in the
+`Vehicle` interface type. This interface declares `Id`, `Name`
+and `Wheels` fields. This means that a `Motorcycle` and a `Car` both
+of which implement `Vehicle`, and must have the fields defined in the
 interface. They may or may not have additional fields like we
-demonstrat in our example with the field `Make` in case of Motorcycle
+demonstrate in our example with the field `Make` in case of Motorcycle
 and Fuel in case of the `Car`.
 
 ```graphql
@@ -193,19 +192,14 @@ specific to either `Motorcycle` or `Car`.
 }
 ```
 
-### Input Types :o:
-
-:o: TODO: an introduction paragraph is missing
 
 ## GraphQL Query
 
-An application asks for data from server in form of a GraphQL *query*. A GraphQL
-query can have different fields and arguments. We describe how to use
-them next.
+An application asks for data from server in form of a GraphQL *query*. A GraphQL query can have different fields and arguments and in this section we describe how to use them.
 
 ### Fields
 
-A very simple definition of a query is to ask for speific fields
+A very simple definition of a query is to ask for specific fields
 that belong to an object stored in graphQL.
 
 When asking the query
@@ -231,9 +225,9 @@ we obtain the following response
 ```
 
 
-As we see the response data format exactly looks like the query. This
-way a client knows excatly what data it has to consume. In the previous
-example the `name` field returns the data of type `String`. Clients can also
+As we see the response data, format looks exactly like the query. This
+way a client knows exactly what data it has to consume. In the previous
+example, the `name` field returns the data of type `String`. Clients can also
 ask for an object representing any match within the graphQL database.
 
 For example the query
@@ -268,16 +262,15 @@ returns the response
 
 ### Arguments :o:
 
-Unlike REST services where you can pass parameters as part of a
-request via query parameters through *GET* or a request body thorough
-*POST*, in GraphQL you can provide to every field an argument
-restrictiong the data returned to only the information that you
+As you may already know in REST services you can pass parameters as part of a request via query parameters through *GET* or a request body thorough
+*POST*. However in GraphQL, for every field, you provide an argument
+restricting the data returned to only the information that you
 need. This reduces the traffic for returning the information that is
-needed without doing the postprocessing on the client.  The
+needed without doing the postprocessing on the client. These
 restricting arguments can be of scalar type, enumeration type and
 others.
 
-Let use look at an example where through a query we only aske for
+Let use look at an example of a query where we only ask for
 emplyees with the age of 29.
 
 :o: TODO: as age discrimination in the US is serious, we want to come
@@ -315,19 +308,11 @@ The response will be similar to
 
 :o: this section is unclear. Fragments is not properly defined
 
-Fragement are generally used to split complex queries into chunks and
-reuse of query fields.  To resuse your fields in query you can create
-Fragments in GraphQL. For example
+As the query gets bigger and complex, we can use *Fragments* to split it into smaller chunks.  These fragments can then be re-used which can significantly reduce the query query size and also make it more readable. 
 
-
-To demonstrate this, let us look at the query
+A Fragment can be defined as
 
 ```graphql
-{
-    employer(id: 10) {
-        ...employeeInfo
-    }
-}
 fragment employeeInfo on Employer {
     name
     employees {
@@ -335,8 +320,16 @@ fragment employeeInfo on Employer {
     }
 }
 ```
+and can be used in a query like this
+```graphql
+{
+    employer(id: 10) {
+        ...employeeInfo
+    }
+}
+```
 
-The response will look like
+The response for this query will look like
 
 ```json
 {
@@ -357,17 +350,17 @@ The response will look like
 :o: this section needs to be improved as it can not be understood by a
 non graphql expert. for example the term interpolate is not defined.
 
-Variables are used to pass dynamic values to queries. It is not a good
-practice to interpolate dynamic values from a  user action on client side
-to construct queries. Instead, GraphQL provides a way to define
-a variable and pass value for that variable at runtime using
-dictionary.
+Variables are used to pass dynamic values to queries. Instead of passing hard-coded values to a query, variables can be defined for these values. Now these variables can be passed to queries.
 
-:o: It is not explained where the variable is defined within
-the query, or if these are two difefrent objects
+Variables can be defined in the Query variables panel at left bottom of the graphiql client. The variable is defined as a json object and this is how it looks like
 
-Query
+```json
+{
+    "employeeAge": 29
+}
+```
 
+and it can be used in the query like this
 ```graphql
 {
     employees(age: $employeeAge) {
@@ -377,13 +370,7 @@ Query
 }
 ```
 
-```json
-{
-    "employeeAge": 29
-}
-```
-
-Response
+which will fetch response 
 
 ```json
 {
@@ -402,22 +389,22 @@ Response
 ### Directives :o:
 
 Directives are used to change the structure of queries at runtime using
-variables. Directives can be attached to field or fragment
-inclusion.
-
-:o: grammar makes this too difficult to understand
-
-There are two directives which must be supported by any
-graphql-server implementation
+variables. Directives provide a way to describe additional options to graphql executors. Currently core graphql specification supports two directives 
 
 * `@skip (if: Boolean)` - It skips the field if argument is true
-* `@Include (if: Boolean)` - It inclues the field if argument is true
+* `@Include (if: Boolean)` - It includes the field if argument is true
 
-When using the query
+To demonstrate its usage, we define the variable `isAdmin` and assign a value of `true` to it.
+```json
+{
+    "isAdmin": true
+}
+```
+This variable is passed as an argument `showPersonalInfo` to the query. This argument is in turn passed to `@include` directive to determine whether to include the `personalInfo` sub-query.
 
 ```graphql
 {
-    employees(age: $employeeAge) {
+    employees(showPersonalInfo: $isAdmin) {
         name
         age
         personalInfo @Include(if: $showPersonalInfo) {
@@ -427,15 +414,7 @@ When using the query
     }
 }
 ```
-
-```json
-{
-    "employeeAge": 29,
-    "showPersonalInfo": true
-}
-```
-
-The response will be
+Since we have defined `showPersonalInfo` as `true`, the response includes `personalInfo` data.
 
 ```json
 {
@@ -487,8 +466,6 @@ The response will be as follows, indicating that an employee has been added.
     }
 }
 ```
-
-
 
 
 ### Query Validation :o:
