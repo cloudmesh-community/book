@@ -17,7 +17,7 @@ If its integrated mark the checkmark. We need to be carful not to lose info
 
 * [ ] <https://github.com/cloudmesh-community/cm-burn/blob/master/README.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup.md>
-* [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/initial-setup.md>
+* [x] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/initial-setup.md> NOw only contains information for a development environment. needs to be renamed.
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/pi-passwordreset.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/run-at-boot.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/sd-card.md>
