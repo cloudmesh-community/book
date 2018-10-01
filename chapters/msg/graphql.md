@@ -41,7 +41,8 @@ chapter. The GraphQL official documentation is available at
 In GraphQL a query is what we request from the graphql server. The
 result will be obtained in a structure defined by type and schema. It
 means we will know ahead of time what we are going to get as result,
-nothing less and nothing more. For this to work, the data is often assumed to be structured data.
+nothing less and nothing more. For this to work, the data is often 
+assumed to be structured data.
 
 Here is how a simple graphQL query would look like
 
@@ -195,7 +196,9 @@ specific to either `Motorcycle` or `Car`.
 
 ## GraphQL Query
 
-An application asks for data from server in form of a GraphQL *query*. A GraphQL query can have different fields and arguments and in this section we describe how to use them.
+An application asks for data from server in form of a GraphQL *query*. 
+A GraphQL query can have different fields and arguments and in this 
+section we describe how to use them.
 
 ### Fields
 
@@ -227,8 +230,8 @@ we obtain the following response
 
 As we see the response data, format looks exactly like the query. This
 way a client knows exactly what data it has to consume. In the previous
-example, the `name` field returns the data of type `String`. Clients can also
-ask for an object representing any match within the graphQL database.
+example, the `name` field returns the data of type `String`. Clients can 
+also ask for an object representing any match within the graphQL database.
 
 For example the query
 
@@ -262,9 +265,10 @@ returns the response
 
 ### Arguments :o:
 
-As you may already know in REST services you can pass parameters as part of a request via query parameters through *GET* or a request body thorough
-*POST*. However in GraphQL, for every field, you provide an argument
-restricting the data returned to only the information that you
+As you may already know in REST services you can pass parameters as 
+part of a request via query parameters through *GET* or a request body 
+thorough *POST*. However in GraphQL, for every field, you provide an 
+argument restricting the data returned to only the information that you
 need. This reduces the traffic for returning the information that is
 needed without doing the postprocessing on the client. These
 restricting arguments can be of scalar type, enumeration type and
@@ -308,7 +312,9 @@ The response will be similar to
 
 :o: this section is unclear. Fragments is not properly defined
 
-As the query gets bigger and complex, we can use *Fragments* to split it into smaller chunks.  These fragments can then be re-used which can significantly reduce the query query size and also make it more readable. 
+As the query gets bigger and complex, we can use *Fragments* to split 
+it into smaller chunks.  These fragments can then be re-used which can 
+significantly reduce the query query size and also make it more readable. 
 
 A Fragment can be defined as
 
@@ -350,9 +356,13 @@ The response for this query will look like
 :o: this section needs to be improved as it can not be understood by a
 non graphql expert. for example the term interpolate is not defined.
 
-Variables are used to pass dynamic values to queries. Instead of passing hard-coded values to a query, variables can be defined for these values. Now these variables can be passed to queries.
+Variables are used to pass dynamic values to queries. Instead of passing 
+hard-coded values to a query, variables can be defined for these values. 
+Now these variables can be passed to queries.
 
-Variables can be defined in the Query variables panel at left bottom of the graphiql client. The variable is defined as a json object and this is how it looks like
+Variables can be defined in the Query variables panel at left bottom of 
+the graphiql client. The variable is defined as a json object and this 
+is how it looks like
 
 ```json
 {
@@ -389,18 +399,23 @@ which will fetch response
 ### Directives :o:
 
 Directives are used to change the structure of queries at runtime using
-variables. Directives provide a way to describe additional options to graphql executors. Currently core graphql specification supports two directives 
+variables. Directives provide a way to describe additional options to 
+graphql executors. Currently core graphql specification supports two 
+directives 
 
 * `@skip (if: Boolean)` - It skips the field if argument is true
 * `@Include (if: Boolean)` - It includes the field if argument is true
 
-To demonstrate its usage, we define the variable `isAdmin` and assign a value of `true` to it.
+To demonstrate its usage, we define the variable `isAdmin` and assign 
+a value of `true` to it.
 ```json
 {
     "isAdmin": true
 }
 ```
-This variable is passed as an argument `showPersonalInfo` to the query. This argument is in turn passed to `@include` directive to determine whether to include the `personalInfo` sub-query.
+This variable is passed as an argument `showPersonalInfo` to the query. 
+This argument is in turn passed to `@include` directive to determine 
+whether to include the `personalInfo` sub-query.
 
 ```graphql
 {
@@ -414,7 +429,8 @@ This variable is passed as an argument `showPersonalInfo` to the query. This arg
     }
 }
 ```
-Since we have defined `showPersonalInfo` as `true`, the response includes `personalInfo` data.
+Since we have defined `showPersonalInfo` as `true`, the response 
+includes `personalInfo` data.
 
 ```json
 {
