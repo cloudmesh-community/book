@@ -33,60 +33,22 @@ could write and overwrite it on the SD card. See also
 
 * <https://elinux.org/R-Pi_configuration_file>
 
-## SD Cards
+### Creating Backup :question:
 
-The cluster will have an SD Card in each of the Pi's. To enable them to
-boot an operating system has to be put on the card. We recommend that
-you use Etcher for doing so which is available for Linux, Windows, and
-macOS. Etcher can be found at
+:question: In this section we will explain how to create a backup of
+the image from the SD Card in a PI.
 
-If there are better tools or methods please document.
-
-For your OS, discuss how to install Etcher. Then discuss how to burn the
-OS on the SD card.
-
-### Linux
-
-Describe this for Linux.
-
-### macOS
-
-Describe this for macOS.
-
-### Windows 10
-
-Describe this for Windows 10.
-
-### Creating Backup
-
-In this task you will be documenting how to create a backup of the image
-on the SD Card.
-
-### Duplication
+### Duplication :question:
 
 Let us assume you have installed a lot of great programs on the SD Card.
 In a cluster, we need to duplicate this card for each PI in the cluster.
 Is there a way for us to duplicate the software
 
-### Mount the SD Card on the Host System
-
-Describe on how to mount the SD Card on the host system so you can
-manipulate the files on the SD Card
-
-### Linux
-
-Describe this for Linux.
-
-### macOS
-
-Describe this for macOS.
-
-### Windows 10
-
-Describe this for Windows 10.
 
 System Preparation without Monitor
 ----------------------------------
+
+:o: there is lots of duplication here to the ultimate setup
 
 ### hostname
 
