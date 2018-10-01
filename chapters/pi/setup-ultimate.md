@@ -121,18 +121,29 @@ Visit the link
 and download the image into the folder of your choice (we assume
 `~/Download`).
 
-#### Etcher form Windows and macOS
+#### Etcher form Windows and macOS, Linux
 
 
-An easy way to burn a SD Cards on Windows and macOS is with a programm called
-Etcher. Etcher can be downloaded from 
+An easy way to burn a SD Cards on Windows, macOS, and Linux is with a
+programm called Etcher. Etcher can be downloaded from
 
 * <https://etcher.io/>
 
 Chose the download suitable for your OS. On Windows you ahve a couple
 of options. We recommend that you use the 64 bit Installer version if
 your OS supports it. If you have a Windows 32bit OS, it may be time to
-upgrade your computer and/or OS. 
+upgrade your computer and/or OS. Also on Linux you need to make sure
+you distingush between 32bit and 64bit. 
+
+#### Windows 10
+
+Once you download it, start Etcher and select the
+unzipped Raspbian image file. Now select the drive of the SD
+card. click Burn and your image will be written to the SD card. You
+can monitor the progress an once it is completed the SD card will
+automatically unmount. Use it now in your Raspberry Pi.
+
+The process is the same as the one on macOS
 
 
 #### macOS
@@ -149,17 +160,12 @@ Once the image is downloaded you copy it with etcher onto the SD-card.
 6. Hence, review selections carefully and click *Flash!* to begin
   writing data to the SD card.
 
-#### Windows 10
 
-Once you download it, start Etcher and select the
-unzipped Raspbian image file. Now select the drive of the SD
-card. click Burn and your image will be written to the SD card. You
-can monitor the progress an once it is completed the SD card will
-automatically unmount. Use it now in your Raspberry Pi.
+#### Ubuntu from Etcher
 
-The process is the same as the one on macOS
+The process is the same as on macOS.
 
-#### Ubuntu
+#### Ubuntu from Commandline
 
 In Ubuntu we can use the advanced Linux commands to burn the SD Cards
 In the file explorer, right click on the SD card and format the SD
