@@ -17,10 +17,13 @@ If its integrated mark the checkmark. We need to be carful not to lose info
 
 * [ ] <https://github.com/cloudmesh-community/cm-burn/blob/master/README.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup.md>
-* [x] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/initial-setup.md> NOw only contains information for a development environment. needs to be renamed.
+* [x] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup-dev.md>
+  Now only contains information for a development environment. needs
+  to be renamed. Stays in this file for now.
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/pi-passwordreset.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/run-at-boot.md>
-* [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/sd-card.md>
+* [x] deleted <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/sd-card.md>
+  integrated in setup-ultimate
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/clusters/pi-configure-cluster.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/clusters/pi-setup.md>
  
@@ -44,15 +47,168 @@ while not replicationg sections but refer to sections if needed. IF difference b
 
 ## Image Choice
 
-:o: Differentce between Rasbian and Noobs setup
+WHen it comes to the operating system install, we have multiple
+options. One of the options you will find is the instalation of what
+is called NOOBS. NOOBS is actually not an operating system, but it
+installs an operating syste. Nobbs has the feature to install an
+opearting system of choice on the Raspberry. It aslo allows to recover
+from a faulty OS. A good introduction that showcases some of the
+features of NOOBS is available at:
 
-:o: why we just do Rasbian
+* <https://www.raspberrypi.org/blog/introducing-noobs/>
+
+It also provides the necessary tools to modify the `config.txt` file
+that is used at boot time.
+
+However, as we at this time only intend to use Raspbian as the OS,
+there is no need to install NOOBS. If the OS breakes, we simply burn a
+new SD card. Hence the features we gain from NOOBS are not as
+beneficail to us.
+
+Instead we will directly install Rasbian on our SD card and configure
+it appropriately.
+
+* <https://www.raspberrypi.org/downloads/>
+
+## Simulating a Raspberry PI on a Computer
+
+In case you do not have a computer available, you can also install a
+Raspberry Pi in a virtual machine.
+
+* <https://downloads.raspberrypi.org/rpd_x86_latest
+
+You can download the image and start it via virtual box.
 
 ## Setting up a Single Raspberry PI
 
-Discuss here the steps to do that including burning the sd card. IT is fine to use etcher, But there is one solution discussed that does dd which we aslo like to keep.
+We discuss here the steps to set up a single Raspberry while
+installing Raspbian on an SD Card. For this we will use etcher 
+for Windows and macOS. Other solutions such as using command line
+scripts are also available and are demonstrated for example in the
+section about burning SD Cards in Linux.
 
-In this section we discuss how to set up a Raspberry pi by hand. It starts with burnin an SD Card
+### Install Raspbian on a SD card
+
+For many Raspberry Pi related projects we need to install an Operating
+system on an SD card. We use **Raspbian** as the OS as it is widely
+supported. Other OS have recently been added to the available list of
+operating systems for the PI, but we will at this time not consider
+them here.
+
+To install the OS on an SD Card you will need another computer. We
+describe next the process if you have either a MAC or an Linux Ubuntu
+machine.  If you have other OSes and like to contribute, please add
+your suggestions.
+
+The processes described in this section only work for a few SD cards and is not
+suitable for burning hundreds of SD cards as we would need for a
+cluster consisting out of many PI's.
+
+#### macOS
+
+First, we assume you have Etcher installed on your macOS machine
+
+* You just need to download Etcher and install it. YOU can find the program at
+  <https://etcher.io/>
+
+Next, you need to download the image and place it in a directory. We
+recommend to keep it in the `~/Download` directory.
+
+1. Download the image from <https://downloads.raspberrypi.org/raspbian_latest>
+
+Once the image is downloaded you copy it with etcher onto the SD-card.
+
+2. Place an SD Card into a SD card reader we recommend a 32GB card.
+3. Attach the card reader to the computer
+4. Open Etcher and select the downloaded `.img` or `.zip`
+   file which you will likely find in the `~/Download` folder if you
+   followed our previous steps
+5. Select the SD card to write the image to.
+6. Review selections and click *Flash!* to begin writing data to the SD
+  card.
+
+#### Windows 10
+
+First you need to download the raspbian OS from
+
+* <https://downloads.raspberrypi.org/raspbian_latest>
+
+On windows 10 an easy way to create an SD card is to use etcher. You
+can download it s form
+
+* <https://etcher.io/>
+
+and chose to download it for Windows. You have a couple of options and
+we recommend that you use the 64 bit Installer version if your OS
+supports it.  Once you download it, start Etcher and select the
+unzipped Raspbian image file. Now select the drive of the SD
+card. click Burn and your image will be written to the SD card. You
+can monitor the progress an once it is completed the SD card will
+automatically unmount. Use it now in your Raspberry Pi.
+
+
+#### Ubuntu
+
+* In the file explorer, right click on the SD card and format the SD card
+* Run
+
+  ```bash
+  $ df -h
+  ```
+
+  to list all the drives in the computer
+* Insert the SD card and run the command again
+* Now a new entry will be listed which is the SD card
+* The left column of the results from `df -h` command gives the device
+  name of your SD card.  It will be listed as something like
+  `/dev/mmcblk0p1` or `/dev/sdX1`, where X is a lower case letter
+  indicating the device.  The last part (p1 or 1 respectively) is the
+  partition number.
+* Note down the name of the SD card (without the partition)
+* Unmount the card so that the card can not be read from or written to
+* Run the following command: 
+
+  ```bash
+  $ unmount dev/mmcblk0p1
+  ``` 
+
+  Make sure to use correct name for the card
+* If your card has multiple partitions unmount all partitions
+* Next write the image to the SD card.
+* Run the following command:
+
+  ```bash
+  $ dd bs=4M if=<path to .img> of=/dev/mmcblk0 status=progress conv=fsunc
+  ```
+  
+  Make sure `if=` contains the path to image and `of=` contains the name 
+  of the SD card otherwise you may ruin your hard disk
+
+To check, if the image was properly writtne you can do the following:
+
+* Create an image again from the SD card
+* Run the following command:
+
+  ```bash
+  $ dd bs=4M if=/dev/sdX of=from-sd-card.img
+  ```
+
+* Truncate the image to be the same size as that of the raspbian image
+
+  ```bash
+  $ truncate --reference <original raspbian image> from-sd-card.img
+  ```
+  
+* Run diff to see if the two files are same
+* Run the following command:
+
+  ```bash
+  $ diff -s from-sd-card.img <original raspbian image>
+  ```
+  
+* Diff should say that the two files are same
+
+
 
 ### Burn an SD Card
 
@@ -218,3 +374,29 @@ states, so we can get to them if they are registered.
 
 
  
+## Exercises
+
+SD-Card.1
+
+: Improve the Ubuntu SD-card documentation
+
+SD-Card.2
+
+: Could a script be written that does the entire process via a python
+  or shell command in Ubuntu.
+
+SD-Card.2
+
+: Could a script be written that does the entire process via a python
+  or shell command in macOS?
+
+SD-Card.3
+
+: could a script be written that does the entire process via a python
+  or shell command in gitbash for Windows?
+
+SD-Card.4
+
+: In general the Ubuntu documentation is complex, how can it be
+  simplified? Maybe through automation?
+

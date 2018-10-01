@@ -218,8 +218,9 @@
         - chapters/pi/links.md
     - chapters/pi/exercise.md
     - chapters/SECTION/SECTION-ONE-PI.md:
+        - chapters/pi/setup-ultimate.md
         - chapters/pi/sd-card.md
-        - chapters/pi/initial-setup.md
+        - chapters/pi/setup-dev.md
         - chapters/pi/pi-passwordreset.md
         - chapters/pi/config-display.md
         - chapters/pi/vnc.md
@@ -266,12 +267,14 @@
 
 - BOOK_DRAFT:
     - $ref:DRAFTS
+    - chapters/pi/setup-ultimate.md
+    - chapters/pi/setup-dev.md    
     - chapters/pi/run-at-boot.md
     - chapters/pi/sd-card.md
-    - chapters/pi/case.md
     - chapters/pi/pi-passwordreset.md
-    - chapters/pi/config-display.md
     - chapters/pi/setup.md
+    - chapters/pi/case.md
+    - chapters/pi/config-display.md
     - chapters/pi/exercise.md
     - chapters/pi/software2.md
     - chapters/pi/vnc.md
