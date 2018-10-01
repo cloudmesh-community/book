@@ -126,10 +126,10 @@ To develop easily we need a number of programs on our Pi. Programs can
 be installed with the command
 
 ```bash
-$ apt-get install <program>
+$ apt-get install PACKAGE
 ```
 
-where `<program>` is the name of the software we like to install.
+where `PACKAGE` is the name of the software we like to install.
 
 ### Hostname
 
@@ -168,7 +168,7 @@ THis explains how to set up a small cluster by hand discussing how to burn multi
 
 ## Setting up Many Pis for a Cluster
 
-THis discusses how to set things up for many PIs with cm burn, we have multiple scenarios
+This discusses how to set things up for many PIs with cm burn, we have multiple scenarios
 
 ### Setting up a small cluster with cm-burn
 
