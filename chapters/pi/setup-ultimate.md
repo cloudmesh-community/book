@@ -44,9 +44,19 @@ while not replicationg sections but refer to sections if needed. IF difference b
 
 ## Setting up a Single Raspberry PI
 
-Discuss here the steps to do that including burning the sd card. IT is fine to use etcher, BUt there is one solution discussed that does dd which we aslo like to keep
+Discuss here the steps to do that including burning the sd card. IT is fine to use etcher, But there is one solution discussed that does dd which we aslo like to keep.
 
-### Password
+In this section we discuss how to set up a Raspberry pi by hand. It starts with burnin an SD Card
+
+### Burn an SD Card
+
+For moere advanced options see cm-burn which also works for a single card but requires a purchased product. To not have to purcase it we describe here the steps needed to do it be hand.
+
+1. Burning the SD Card is discussed in Section TBD
+2. Section [Password]{#s-pi-setup-password} discusses how to change the password after you booted the PI. :warning: This must be the first thing before you put the PI on the network or otherwise it is broken into qucikly.
+3. ...
+
+### Password {#s-pi-setup-password}
 
 Before you bring your Raspberry Pi on the networks, you need to reset
 the password. This can be done by starting the terminal and typing in
