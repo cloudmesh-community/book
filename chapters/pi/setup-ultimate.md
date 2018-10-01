@@ -119,15 +119,15 @@ and replace the values with the once you have. To save the file use
 
 IU runs several different networks. THis includes IUSecure, Eduroam, and ATT Wifi. 
 The first two would require you to use your IU username and password to be entered 
-in the configuration. Although technically possible we find the method **HIGHLY** 
-insecure and **STRONGLY** advice agains doing so. Let us assume you put your information 
+in the configuration. Although technically possible we find the method :warning: **HIGHLY** 
+insecure and :warning: **STRONGLY** advice agains doing so. Let us assume you put your information 
 on a PI and than somone takes the SDCard from it. THey can than look into the card and 
 steal your password. Obviously this is not advisable. In other cases you may have 
 convigured your software wrong and somone coudl login remotely and lift your password 
 remotely. Obviously this is not advisable.
 
 Regardless, we have seen from instructors the advice to use IUSecure. This is 
-**WRONG**! Do not listen to them about this particular issue and advise them to use an alternative setup
+:warning: **WRONG**! Do not listen to them about this particular issue and advise them to use an alternative setup
 
 One such alternative (which is also not ideal) is to use the free wifi offered by ATT Wifi. It is a bit complex to setup as you need to go to the Web browser to the address <http:\\iu.edu> and click on the connect
 button. Sometimes that button is not visible so you need to scroll down to see it.
