@@ -408,8 +408,41 @@ to them if they are registered.
 
 
 
+# Change Password on the SD-Card
 
- 
+It is possible to reset the password for a PI SD Card. This comesin
+handy when you did forget it or the team that worked on a Pi has left
+the project but valuable information may still beon the PI. To do so,
+You need tou unplug the raspberry pi and remove the SD card from the
+slot.  Next you need to have the ability to mount the file systems. On
+macOS and Windows you can use extFS. Naturally if you have a linux
+machine or another PI, you can use an SD Card reader/writer and muont
+it directly. You will need root access on the machine where you
+execute the password reset.
+
+After you inserted the card, please Locate and edit the `etc/shadow`
+file on the SD card. To create a new password use the command 
+
+```bash
+$ openssl passwd -1 -salt <unique string>
+```
+
+Next, we e must find the line that starts with pi and replace the text
+  between the first and second with the output from the above command
+  we had executed in the `etc/shadow` file
+
+Now you can Eject the SD card from the computer, and insert it into
+the Pi. Boot the raspberry pi and log in to it while using the new
+password. This naturally only works if you allow password login. ON
+many systems we however disable it and use public key authentication
+only. In this case you need to just replace the public key in the
+`authorized_keys` file. Using just keys is obviously more convenient.
+
+Naturally mounting the SD Card and looing in the filesystem would also
+allow you to look at the network setup. That is certainly not good and
+before a PI is returned sensitive information should be cleand from
+the SD Card. 
+
 ## Exercises
 
 SD-Card.1

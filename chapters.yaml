@@ -221,7 +221,6 @@
         - chapters/pi/setup-ultimate.md
         - chapters/pi/sd-card.md
         - chapters/pi/setup-dev.md
-        - chapters/pi/pi-passwordreset.md
         - chapters/pi/config-display.md
         - chapters/pi/vnc.md
         - chapters/pi/motherboard-led.md
@@ -271,7 +270,6 @@
     - chapters/pi/setup-dev.md    
     - chapters/pi/run-at-boot.md
     - chapters/pi/sd-card.md
-    - chapters/pi/pi-passwordreset.md
     - chapters/pi/setup.md
     - chapters/pi/case.md
     - chapters/pi/config-display.md
