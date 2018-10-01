@@ -77,7 +77,7 @@ there is a special master that detects new workers and inventories them with dif
 states, so we can get to them if they are registered.
 
 
-
+### Using Advanced setups with Ansible
 
 
 
