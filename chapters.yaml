@@ -198,7 +198,7 @@
     - chapters/SECTION/SECTION-REFERENCES.md
 
 # #####################################################################
-# PI
+# COMMUNICATION
 # #####################################################################
 
 - BOOK_COM:
@@ -217,14 +217,16 @@
         - chapters/case/case.md
         - chapters/pi/links.md
     - chapters/pi/exercise.md
-    - chapters/SECTION/SECTION-ONE-PI.md:
+    - chapters/SECTION/SECTION-SETUP-SINGLE.md:
         - chapters/pi/setup-ultimate.md
         - chapters/pi/setup-dev.md
         - chapters/pi/config-display.md
         - chapters/pi/vnc.md
         - chapters/pi/motherboard-led.md
         - chapters/pi/run-at-boot.md
-        - chapters/pi/software2.md
+        - chapters/pi/software2.md        
+    - chapters/SECTION/SECTION-ONE-PI.md:
+
     - chapters/SECTION/SECTION-PI-SETUP.md:
         - chapters/pi/setup.md
     - chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md:
