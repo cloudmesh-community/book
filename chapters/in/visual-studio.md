@@ -1,1 +1,1 @@
-# Visual Studio for Cloud COmputing :o: :hand:
+# Visual Studio for Cloud Computing :o: :hand:
