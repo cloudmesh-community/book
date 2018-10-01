@@ -1,4 +1,4 @@
-# Raspberry PI Setup
+# Raspberry PI Setup :o:
 
 This section will be a the start for the replacement for all previous setup instructions. 
 I think we want ultimately the section "PI Network of Workstations" to also use this 
@@ -104,17 +104,38 @@ The processes described in this section only work for a few SD cards and is not
 suitable for burning hundreds of SD cards as we would need for a
 cluster consisting out of many PI's.
 
+#### Download Rasbian
+
+No matter which OS you create the SD Cards on, you will need to
+download the Raspbian OS.
+
+
+Next, you need to download the Rasbian image and place it in a
+directory. As you may reuse the image multiple times, we recommend to
+place it in a location you remember. Let us assume you place it in
+`~/Download` directory.
+Visit the link
+
+* <https://downloads.raspberrypi.org/raspbian_latest>
+
+and download the image into the folder of your choice (we assume
+`~/Download`).
+
+#### Etcher form Windows and macOS
+
+
+An easy way to burn a SD Cards on Windows and macOS is with a programm called
+Etcher. Etcher can be downloaded from 
+
+* <https://etcher.io/>
+
+Chose the download suitable for your OS. On Windows you ahve a couple
+of options. We recommend that you use the 64 bit Installer version if
+your OS supports it. If you have a Windows 32bit OS, it may be time to
+upgrade your computer and/or OS. 
+
+
 #### macOS
-
-First, we assume you have Etcher installed on your macOS machine
-
-* You just need to download Etcher and install it. YOU can find the program at
-  <https://etcher.io/>
-
-Next, you need to download the image and place it in a directory. We
-recommend to keep it in the `~/Download` directory.
-
-1. Download the image from <https://downloads.raspberrypi.org/raspbian_latest>
 
 Once the image is downloaded you copy it with etcher onto the SD-card.
 
@@ -123,99 +144,97 @@ Once the image is downloaded you copy it with etcher onto the SD-card.
 4. Open Etcher and select the downloaded `.img` or `.zip`
    file which you will likely find in the `~/Download` folder if you
    followed our previous steps
-5. Select the SD card to write the image to.
-6. Review selections and click *Flash!* to begin writing data to the SD
-  card.
+5. Select the SD card to write the image to. Be careful, to chose the
+   right location as otherwise you could create unexpected dataloss
+6. Hence, review selections carefully and click *Flash!* to begin
+  writing data to the SD card.
 
 #### Windows 10
 
-First you need to download the raspbian OS from
-
-* <https://downloads.raspberrypi.org/raspbian_latest>
-
-On windows 10 an easy way to create an SD card is to use etcher. You
-can download it s form
-
-* <https://etcher.io/>
-
-and chose to download it for Windows. You have a couple of options and
-we recommend that you use the 64 bit Installer version if your OS
-supports it.  Once you download it, start Etcher and select the
+Once you download it, start Etcher and select the
 unzipped Raspbian image file. Now select the drive of the SD
 card. click Burn and your image will be written to the SD card. You
 can monitor the progress an once it is completed the SD card will
 automatically unmount. Use it now in your Raspberry Pi.
 
+The process is the same as the one on macOS
 
 #### Ubuntu
 
-* In the file explorer, right click on the SD card and format the SD card
-* Run
+In Ubuntu we can use the advanced Linux commands to burn the SD Cards
+In the file explorer, right click on the SD card and format the SD
+card. This is done as follows:
 
-  ```bash
-  $ df -h
-  ```
+1. Run
 
-  to list all the drives in the computer
-* Insert the SD card and run the command again
-* Now a new entry will be listed which is the SD card
-* The left column of the results from `df -h` command gives the device
-  name of your SD card.  It will be listed as something like
-  `/dev/mmcblk0p1` or `/dev/sdX1`, where X is a lower case letter
-  indicating the device.  The last part (p1 or 1 respectively) is the
-  partition number.
-* Note down the name of the SD card (without the partition)
-* Unmount the card so that the card can not be read from or written to
-* Run the following command: 
+   ```bash
+   $ df -h
+   ```
 
-  ```bash
-  $ unmount dev/mmcblk0p1
-  ``` 
+   to list all the drives in the computer
+2. Insert the SD card and run the command again
+3. Now a new entry will be listed which is the SD card
+4. The left column of the results from `df -h` command gives the device
+   name of your SD card.  It will be listed as something like
+   `/dev/mmcblk0p1` or `/dev/sdX1`, where X is a lower case letter
+   indicating the device.  The last part (p1 or 1 respectively) is the
+   partition number.
+5. Write down the name of the SD card (without the partition)
+6. Unmount the card so that the card can not be read from or written
+   to with the following command: 
 
-  Make sure to use correct name for the card
-* If your card has multiple partitions unmount all partitions
-* Next write the image to the SD card.
-* Run the following command:
+   ```bash
+   $ unmount dev/mmcblk0p1
+   ``` 
 
-  ```bash
-  $ dd bs=4M if=<path to .img> of=/dev/mmcblk0 status=progress conv=fsunc
-  ```
+   Make sure to use correct name for the card. If your card has
+   multiple partitions unmount all partitions
+7. Next write the image to the SD card by running the command:
+
+
+   ```bash
+   $ dd bs=4M if=<path to .img> of=/dev/mmcblk0 status=progress conv=fsunc
+   ```
   
-  Make sure `if=` contains the path to image and `of=` contains the name 
-  of the SD card otherwise you may ruin your hard disk
+   Make sure `if=` contains the path to image and `of=` contains the name 
+   of the SD card otherwise you may ruin your hard disk
 
 To check, if the image was properly writtne you can do the following:
 
-* Create an image again from the SD card
-* Run the following command:
+8. Create an image again from the SD card by running the following command:
 
-  ```bash
-  $ dd bs=4M if=/dev/sdX of=from-sd-card.img
-  ```
+   ```bash
+   $ dd bs=4M if=/dev/sdX of=from-sd-card.img
+   ```
 
-* Truncate the image to be the same size as that of the raspbian image
+9. Truncate the image to be the same size as that of the raspbian image
 
-  ```bash
-  $ truncate --reference <original raspbian image> from-sd-card.img
-  ```
+   ```bash
+   $ truncate --reference <original raspbian image> from-sd-card.img
+   ```
   
-* Run diff to see if the two files are same
-* Run the following command:
+10. Run `diff` to see if the two files are same by running the following
+    command:
 
-  ```bash
-  $ diff -s from-sd-card.img <original raspbian image>
-  ```
+   ```bash
+   $ diff -s from-sd-card.img <original raspbian image>
+   ```
   
-* Diff should say that the two files are same
+   If everything iss ok, `diff` should say that the two files are same
 
+In most cases the verification step will not be needed.
 
+### Burn an SD Card with cm-burn
 
-### Burn an SD Card
-
-For moere advanced options see cm-burn which also works for a single card but requires a purchased product. To not have to purcase it we describe here the steps needed to do it be hand.
+For moere advanced options see cm-burn which also works for a single
+card but requires a purchased product. To not have to purcase it we
+describe here the steps needed to do it be hand.
 
 1. Burning the SD Card is discussed in Section TBD
-2. Section [Password]{#s-pi-setup-password} discusses how to change the password after you booted the PI. :warning: This must be the first thing before you put the PI on the network or otherwise it is broken into qucikly.
+2. Section [Password]{#s-pi-setup-password} discusses how to change
+   the password after you booted the PI. :warning: This must be the
+   first thing before you put the PI on the network or otherwise it is
+   broken into qucikly.
 3. ...
 
 ### Password {#s-pi-setup-password}
@@ -273,22 +292,29 @@ and replace the values with the once you have. To save the file use
 
 #### IU specific setups
 
-IU runs several different networks. THis includes IUSecure, Eduroam, and ATT Wifi. 
-The first two would require you to use your IU username and password to be entered 
-in the configuration. Although technically possible we find the method :warning: **HIGHLY** 
-insecure and :warning: **STRONGLY** advice agains doing so. Let us assume you put your information 
-on a PI and than somone takes the SDCard from it. THey can than look into the card and 
-steal your password. Obviously this is not advisable. In other cases you may have 
-convigured your software wrong and somone coudl login remotely and lift your password 
-remotely. Obviously this is not advisable.
+IU runs several different networks. THis includes IUSecure, Eduroam,
+and ATT Wifi.  The first two would require you to use your IU username
+and password to be entered in the configuration. Although technically
+possible we find the method :warning: **HIGHLY** insecure and
+:warning: **STRONGLY** advice agains doing so. Let us assume you put
+your information on a PI and than somone takes the SDCard from
+it. THey can than look into the card and steal your
+password. Obviously this is not advisable. In other cases you may have
+convigured your software wrong and somone coudl login remotely and
+lift your password remotely. Obviously this is not advisable.
 
-Regardless, we have seen from instructors the advice to use IUSecure. This is 
-:warning: **WRONG**! Do not listen to them about this particular issue and advise them to use an alternative setup
+Regardless, we have seen from instructors the advice to use
+IUSecure. This is :warning: **WRONG**! Do not listen to them about
+this particular issue and advise them to use an alternative setup
 
-One such alternative (which is also not ideal) is to use the free wifi offered by ATT Wifi. It is a bit complex to setup as you need to go to the Web browser to the address <http:\\iu.edu> and click on the connect
-button. Sometimes that button is not visible so you need to scroll down to see it.
+One such alternative (which is also not ideal) is to use the free wifi
+offered by ATT Wifi. It is a bit complex to setup as you need to go to
+the Web browser to the address <http:\\iu.edu> and click on the
+connect button. Sometimes that button is not visible so you need to
+scroll down to see it.
 
-We also have an internal network that we will not discuss here, but can be used upon consultation with Dr. von Laszewski.
+We also have an internal network that we will not discuss here, but
+can be used upon consultation with Dr. von Laszewski.
 
 ### Update
 
@@ -339,11 +365,14 @@ activate ssh.
 
 ## Setting up a Small Cluster by Hand
 
-THis explains how to set up a small cluster by hand discussing how to burn multiple cards. It uses the method of booting the pi and using a monitor to set up each of them. starting with passwd
+THis explains how to set up a small cluster by hand discussing how to
+burn multiple cards. It uses the method of booting the pi and using a
+monitor to set up each of them. starting with passwd
 
 ## Setting up Many Pis for a Cluster
 
-This discusses how to set things up for many PIs with cm burn, we have multiple scenarios
+This discusses how to set things up for many PIs with cm burn, we have
+multiple scenarios
 
 ### Setting up a small cluster with cm-burn
 
@@ -361,11 +390,12 @@ here we discuss one lareg cluster setup lets say 100 nodes
 
 ### Setting up a plugable cluster of clusters with cm-burn
 
-Here we discuss a class of students that each ahve 5 node clusters 
-that come in a room to place their clusters in a shelf then they plug it into a 
-power strip and a network, they replace the sd card of the master with a worker sd card
-there is a special master that detects new workers and inventories them with different 
-states, so we can get to them if they are registered.
+Here we discuss a class of students that each ahve 5 node clusters
+that come in a room to place their clusters in a shelf then they plug
+it into a power strip and a network, they replace the sd card of the
+master with a worker sd card there is a special master that detects
+new workers and inventories them with different states, so we can get
+to them if they are registered.
 
 
 ### Using Advanced setups with Ansible
