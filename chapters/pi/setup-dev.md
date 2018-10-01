@@ -1,6 +1,5 @@
-# Setup of a development environment
-    
-rename this file to setup-dev.md
+# Setup of a Development Environment
+
 
 ## Editors
 
