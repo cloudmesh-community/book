@@ -173,7 +173,8 @@ The following table is copied from the
 [docker manual](https://github.com/docker/labs/blob/master/developer-tools/java/chapters/appa-common-commands.adoc)
 
 
-<div class="smalltable">
+.<div class="smalltable">
+	
 | Purpose| Command |
 | ---- | ------------ |
 | **Image** | |
@@ -199,6 +200,7 @@ The following table is copied from the
 | Attach to a container | docker container attach ${CID} |
 | Open a shell in to a container | docker container exec -it ${CID} bash |
 | Get container id for an image by a regular expression | docker container ls | grep gregor | awk '{print $1}' |
+
 </div>
 
 ## Exercise
