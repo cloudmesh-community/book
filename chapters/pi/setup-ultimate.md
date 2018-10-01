@@ -13,7 +13,7 @@ the cm-burn repo that jsut focusses on cm-burn as this is also a stand alone prg
 
 The duplicated setions we are aware of include:
 
-If its integrated is 
+If its integrated mark the checkmark. We need to be carful not to lose info
 
 * [ ] <https://github.com/cloudmesh-community/cm-burn/blob/master/README.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup.md>
@@ -24,6 +24,7 @@ If its integrated is
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/clusters/pi-configure-cluster.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/clusters/pi-setup.md>
  
+There may even be more such documentation as part of student projects. No student that does a PI project MUST DESCRIBE HOW THEY SET UP THE CLUSTER IN THEIR REPORT. THEY ALL MUST IMPROVE OR USE THIS SECTION.
 
 I also see that portions of other files include or can leverage what we do in cm-burn and thsu we can 
 replace that info or morege portions of it such as in and than these sections need to be fixed while using 
