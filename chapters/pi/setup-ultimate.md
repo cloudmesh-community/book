@@ -77,7 +77,13 @@ Raspberry Pi in a virtual machine.
 
 * <https://downloads.raspberrypi.org/rpd_x86_latest
 
-You can download the image and start it via virtual box.
+You can download the image and start it via virtual box. As we work
+with newer PIs we recommend that you set up under Linux virtual machine
+with 64 bit with Other.
+
+Once completed, you will see that it looks something like
+
+![Virtual Raspberry Pi](images/pi-desktop.png)
 
 ## Setting up a Single Raspberry PI
 
