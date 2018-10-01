@@ -11,7 +11,6 @@ INDEX=\
   chapters/case/case.md\
   chapters/pi/links.md\
   chapters/pi/exercise.md\
-  chapters/SECTION/PI-SETUP-SINGLE.md\
   chapters/pi/setup-ultimate.md\
   chapters/pi/setup-dev.md\
   chapters/pi/config-display.md\
@@ -19,7 +18,7 @@ INDEX=\
   chapters/pi/motherboard-led.md\
   chapters/pi/run-at-boot.md\
   chapters/pi/software2.md\
-  chapters/SECTION/SECTION-PI-SETUP.md\
+  chapters/pi/setup-multiple.md\
   chapters/pi/setup.md\
   chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md\
   chapters/pi/clusters/pi-now.md\
@@ -38,7 +37,7 @@ INDEX=\
   chapters/pi/car/car-face.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/SECTION/PI-SETUP-SINGLE.md dest/chapters/pi/setup-ultimate.md dest/chapters/pi/setup-dev.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/software2.md dest/chapters/SECTION/SECTION-PI-SETUP.md dest/chapters/pi/setup.md dest/chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md dest/chapters/pi/clusters/pi-now.md dest/chapters/pi/mpi.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pxe.md dest/chapters/pi/fortran.md dest/chapters/SECTION/SECTION-PI-CLUSTER-CLOUD.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/pi/clusters/pi-kubernetes.md dest/chapters/pi/clusters/pi-hadoop.md dest/chapters/pi/clusters/pi-spark.md dest/chapters/SECTION/SECTION-DRAFT.md dest/chapters/pi/clusters/pi-configure-cluster.md dest/chapters/pi/clusters/pi-setup.md dest/chapters/pi/car/car-face.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/pi/setup-ultimate.md dest/chapters/pi/setup-dev.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/software2.md dest/chapters/pi/setup-multiple.md dest/chapters/pi/setup.md dest/chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md dest/chapters/pi/clusters/pi-now.md dest/chapters/pi/mpi.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pxe.md dest/chapters/pi/fortran.md dest/chapters/SECTION/SECTION-PI-CLUSTER-CLOUD.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/pi/clusters/pi-kubernetes.md dest/chapters/pi/clusters/pi-hadoop.md dest/chapters/pi/clusters/pi-spark.md dest/chapters/SECTION/SECTION-DRAFT.md dest/chapters/pi/clusters/pi-configure-cluster.md dest/chapters/pi/clusters/pi-setup.md dest/chapters/pi/car/car-face.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -90,13 +89,9 @@ dest/chapters/pi/exercise.md: ../chapters/pi/exercise.md
 	../bin/markup-single.py ../chapters/pi/exercise.md 1
 	../bin/header.py dest/chapters/pi/exercise.md 1
 
-dest/chapters/SECTION/PI-SETUP-SINGLE.md: ../chapters/SECTION/PI-SETUP-SINGLE.md
-	../bin/markup-single.py ../chapters/SECTION/PI-SETUP-SINGLE.md 1
-	../bin/header.py dest/chapters/SECTION/PI-SETUP-SINGLE.md 1
-
 dest/chapters/pi/setup-ultimate.md: ../chapters/pi/setup-ultimate.md
-	../bin/markup-single.py ../chapters/pi/setup-ultimate.md 2
-	../bin/header.py dest/chapters/pi/setup-ultimate.md 2
+	../bin/markup-single.py ../chapters/pi/setup-ultimate.md 1
+	../bin/header.py dest/chapters/pi/setup-ultimate.md 1
 
 dest/chapters/pi/setup-dev.md: ../chapters/pi/setup-dev.md
 	../bin/markup-single.py ../chapters/pi/setup-dev.md 2
@@ -122,9 +117,9 @@ dest/chapters/pi/software2.md: ../chapters/pi/software2.md
 	../bin/markup-single.py ../chapters/pi/software2.md 2
 	../bin/header.py dest/chapters/pi/software2.md 2
 
-dest/chapters/SECTION/SECTION-PI-SETUP.md: ../chapters/SECTION/SECTION-PI-SETUP.md
-	../bin/markup-single.py ../chapters/SECTION/SECTION-PI-SETUP.md 1
-	../bin/header.py dest/chapters/SECTION/SECTION-PI-SETUP.md 1
+dest/chapters/pi/setup-multiple.md: ../chapters/pi/setup-multiple.md
+	../bin/markup-single.py ../chapters/pi/setup-multiple.md 1
+	../bin/header.py dest/chapters/pi/setup-multiple.md 1
 
 dest/chapters/pi/setup.md: ../chapters/pi/setup.md
 	../bin/markup-single.py ../chapters/pi/setup.md 2
