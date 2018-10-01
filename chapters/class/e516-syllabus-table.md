@@ -47,7 +47,7 @@ For the Syllabus see teh quick start section.
 | :white_check_mark: | 09/17    |         |                    | - [Heat](#openstack-heat)[:cloud:][heat.md] |
 | :white_check_mark: | 09/17    |         |                    | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
 | :white_check_mark: | 09/17    |         |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
-| :o:                | 10/01    |         | Virtualization  II | Containers, Docker, Kubernetes |
+| :o:                | 10/03    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :white_check_mark: | 10/08    | 8       | Programming        | Python for Cloud Computing, |
 | :white_check_mark: | 10/08    |         |                    | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
 | :white_check_mark: | 10/08    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
