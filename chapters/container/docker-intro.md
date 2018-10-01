@@ -12,7 +12,7 @@ collaboration and innovation. An overview of docker is provided at
 
 * <https://docs.docker.com/engine/docker-overview/>
 
-![Docker Containers](images/docker-container.png) {#fig:cocker-container}
+![Docker Containers](images/docker-container.png){#fig:cocker-container}
 
 Image Source
 <https://www.docker.com/sites/default/files/Package%20software%40x2.png>
