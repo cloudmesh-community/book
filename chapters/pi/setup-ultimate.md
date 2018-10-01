@@ -99,6 +99,52 @@ for Windows and macOS. Other solutions such as using command line
 scripts are also available and are demonstrated for example in the
 section about burning SD Cards in Linux.
 
+
+### Burn an SD Card with cm-burn :o:
+
+A very convenient program to create an SD card for a Raspberry pi is
+using the program `cm-burn`. The program is available from
+
+* <https://github.com/cloudmesh-community/cm>
+
+It can be installed with
+
+```console
+mkdir -p cloudmesh-community
+cd cloudmesh-community
+git clone https://github.com/cloudmesh-community/cm.git
+cd cm
+pip setup.py .
+```
+
+You will now have the program `cm-burn` available. Please note that
+`cm-burn` is provided without any warranties to work and that if you
+damage your system we do not have any liability.
+
+The command is somewhat very special as
+it sets up the Raspberry pi directly on the SD Card without the need
+for rebooting it. The downside is that you need to have an OS that can
+mount the Ext file system. This can be achieved on OSX and Windows
+with a program called `extFS`. However it costs about $40. Detailed
+information on how to use cm-burn is provided at
+
+* <https://github.com/cloudmesh-community/cm/blob/master/README.md>
+
+
+For moere advanced options see cm-burn which also works for a single
+card but requires a purchased product. 
+
+1. Burning the SD Card is discussed in Section TBD
+2. Section [Password]{#s-pi-setup-password} discusses how to change
+   the password after you booted the PI. :warning: This must be the
+   first thing before you put the PI on the network or otherwise it is
+   broken into quickly.
+3. ...
+
+To not have to purchase it we describe here the steps needed to do it
+be hand. THis is discussed in Sections ... :o: list all the sections
+here.
+
 ### Install Raspbian on a SD card
 
 For many Raspberry Pi related projects we need to install an Operating
@@ -242,19 +288,6 @@ To check, if the image was properly written you can do the following:
 
 In most cases the verification step will not be needed.
 
-### Burn an SD Card with cm-burn
-
-For moere advanced options see cm-burn which also works for a single
-card but requires a purchased product. To not have to purchase it we
-describe here the steps needed to do it be hand.
-
-1. Burning the SD Card is discussed in Section TBD
-2. Section [Password]{#s-pi-setup-password} discusses how to change
-   the password after you booted the PI. :warning: This must be the
-   first thing before you put the PI on the network or otherwise it is
-   broken into quickly.
-3. ...
-
 ### Password {#s-pi-setup-password}
 
 Before you bring your Raspberry Pi on the networks, you need to reset
@@ -281,17 +314,13 @@ or
 or using the GUI.
 
 
-### Wireless Network
+### Wireless Network at Home 
 
-The easiest way to continue is to have a wireless network you can
-connect to. We do not recommend that you use for example your IU
-credentials hence we wil not use the network called `IU
-secure`. Instead we will be using on campus the ATT wireless network.
-If your are not at IU please use your own wireless network at
-home. You can configure it via the GUI.
+The easiest way to get internet access and to continue the setup is
+using a wireless network. You can configure it either via the GUI or commandline.
 
-In case you like to edit the information at a later time or at this
-time you can also use an editor.  Edit the file `interfaces` file with
+In case you like to edit the information from commandline edit the
+file `interfaces` file with
 
     pi$ sudo nano /etc/network/interfaces
 
@@ -308,9 +337,9 @@ and replace the values with the once you have. To save the file use
     Ctrl-o Y Enter Save changes.
     Ctrl-x Quit nano.
 
-#### IU specific setups
+### Wireless network at IU
 
-IU runs several different networks. THis includes IUSecure, Eduroam,
+IU runs several different networks. This includes IUSecure, Eduroam,
 and ATT Wifi.  The first two would require you to use your IU username
 and password to be entered in the configuration. Although technically
 possible we find the method :warning: **HIGHLY** insecure and
@@ -341,7 +370,7 @@ everything is up to date. This is done with
 
     pi$ sudo apt-get update
 
-To develop easily we need a number of programs on our Pi. Programs can
+To develop easily we need a number of programs on our Pi. Additional programs can
 be installed with the command
 
 ```bash
@@ -349,6 +378,11 @@ pi$ apt-get install PACKAGE
 ```
 
 where `PACKAGE` is the name of the software we like to install.
+A good example is emacs which can be installed with
+
+```bash
+pi$ apt-get install emacs
+```
 
 ### Hostname
 
@@ -381,30 +415,49 @@ Naturally you need to do a bit more such as placing your public key in
 the authorized_keys file explained later, but for now we will just
 activate ssh.
 
+To access the machine using public keys we recommend that you add your
+public key to the `~pi/.ssh/authorized_keys` file
+
 ## Setting up a Small Cluster by Hand
 
-THis explains how to set up a small cluster by hand discussing how to
+:o: This explains how to set up a small cluster by hand discussing how to
 burn multiple cards. It uses the method of booting the pi and using a
 monitor to set up each of them. starting with passwd
 
-## Setting up Many Pis for a Cluster
+The process described above can be replicated fairly easily for a
+small number of PIs. Just make sure you have a different hostname for
+each Pi. More complex setups are discussed next while for example
+using static IP addresses.
 
-This discusses how to set things up for many PIs with cm burn, we have
-multiple scenarios
 
-### Setting up a small cluster with cm-burn
+### Wireless network addresses by hand
 
-here we discuss the 5 node setup
+:o:
+
+### Static network addresses by hand
+
+:o:
+
+### Mixed wireless and static network
+
+:o:
+
+## Setting up a Small Cluster with cm-burn
+
+This discusses how to set things up for many PIs with `cm-burn`
 
 ### Setting up a large cluster with cm-burn
 
 here we discuss one lareg cluster setup lets say 100 nodes
 
-#### Static network addresses
 
-#### DHCP setup
+### DHCP setup
 
-#### PXE Boot
+:o:
+
+### PXE Boot
+
+:o:
 
 ### Setting up a pluggable cluster of clusters with cm-burn
 
@@ -416,11 +469,11 @@ new workers and inventories them with different states, so we can get
 to them if they are registered.
 
 
-### Using Advanced setups with Ansible
+## Using Advanced setups with Ansible
 
 
 
-# Change Password on the SD-Card
+## Change Password on the SD-Card
 
 It is possible to reset the password for a PI SD Card. This comesin
 handy when you did forget it or the team that worked on a Pi has left
