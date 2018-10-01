@@ -4,14 +4,14 @@ This section will be a the start for the replacement for all previous setup inst
 I think we want ultimately the section "PI Network of Workstations" to also use this 
 or be the final section.
 
-Once the content has either been integrated here or it is determinde that 
+Once the content has either been integrated here or it is determined that 
 the previous file is no longer needed, we will move the other file into a dir 
 deprecated, and remove the file from chapter.yaml.
 
 We will aslo need to manage a second documentation just for CM-burn in 
-the cm-burn repo that jsut focusses on cm-burn as this is also a stand alone prg
+the cm-burn repo that just focusses on cm-burn as this is also a stand alone prg
 
-The duplicated setions we are aware of include:
+The duplicated sections we are aware of include:
 
 If its integrated mark the checkmark. We need to be carful not to lose info
 
@@ -27,7 +27,10 @@ If its integrated mark the checkmark. We need to be carful not to lose info
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/clusters/pi-configure-cluster.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/clusters/pi-setup.md>
  
-There may even be more such documentation as part of student projects. No student that does a PI project MUST DESCRIBE HOW THEY SET UP THE CLUSTER IN THEIR REPORT. THEY ALL MUST IMPROVE OR USE THIS SECTION.
+There may even be more such documentation as part of student
+projects. No student that does a PI project MUST DESCRIBE HOW THEY SET
+UP THE CLUSTER IN THEIR REPORT. THEY ALL MUST IMPROVE OR USE THIS
+SECTION.
 
 I also see that portions of other files include or can leverage what we do in cm-burn and thsu we can 
 replace that info or morege portions of it such as in and than these sections need to be fixed while using 
@@ -38,20 +41,23 @@ our ultimate guide, e.g. make a pointer to it
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/pi-kubernetes.md>
  
 
-As you see everyone duplicated in part the steps. So what we need is a single section that describes 
-the cm-burn procedure, but also the steps needed by hand for those that can not afford the $50 
-investment of the mount prg. 
+As you see everyone duplicated in part the steps. So what we need is a
+single section that describes the cm-burn procedure, but also the
+steps needed by hand for those that can not afford the $50 investment
+of the mount prg.
 
-Next we propose an outline. Help improving the outline than contribute here to this single document 
-while not replicationg sections but refer to sections if needed. IF difference between windows osx and linux, aslo include the differences.
+Next we propose an outline. Help improving the outline than contribute
+here to this single document while not replicating sections but refer
+to sections if needed. IF difference between windows osx and linux,
+aslo include the differences.
 
 ## Image Choice
 
-WHen it comes to the operating system install, we have multiple
-options. One of the options you will find is the instalation of what
+When it comes to the operating system install, we have multiple
+options. One of the options you will find is the installation of what
 is called NOOBS. NOOBS is actually not an operating system, but it
-installs an operating syste. Nobbs has the feature to install an
-opearting system of choice on the Raspberry. It aslo allows to recover
+installs an operating system. Nobbs has the feature to install an
+operating system of choice on the Raspberry. It aslo allows to recover
 from a faulty OS. A good introduction that showcases some of the
 features of NOOBS is available at:
 
@@ -63,7 +69,7 @@ that is used at boot time.
 However, as we at this time only intend to use Raspbian as the OS,
 there is no need to install NOOBS. If the OS breakes, we simply burn a
 new SD card. Hence the features we gain from NOOBS are not as
-beneficail to us.
+beneficial to us.
 
 Instead we will directly install Rasbian on our SD card and configure
 it appropriately.
@@ -110,13 +116,13 @@ The processes described in this section only work for a few SD cards and is not
 suitable for burning hundreds of SD cards as we would need for a
 cluster consisting out of many PI's.
 
-#### Download Rasbian
+#### Download Raspbian
 
 No matter which OS you create the SD Cards on, you will need to
 download the Raspbian OS.
 
 
-Next, you need to download the Rasbian image and place it in a
+Next, you need to download the Raspbian image and place it in a
 directory. As you may reuse the image multiple times, we recommend to
 place it in a location you remember. Let us assume you place it in
 `~/Download` directory.
@@ -139,7 +145,7 @@ Chose the download suitable for your OS. On Windows you ahve a couple
 of options. We recommend that you use the 64 bit Installer version if
 your OS supports it. If you have a Windows 32bit OS, it may be time to
 upgrade your computer and/or OS. Also on Linux you need to make sure
-you distingush between 32bit and 64bit. 
+you distinguish between 32bit and 64bit. 
 
 #### Windows 10
 
@@ -211,7 +217,7 @@ card. This is done as follows:
    Make sure `if=` contains the path to image and `of=` contains the name 
    of the SD card otherwise you may ruin your hard disk
 
-To check, if the image was properly writtne you can do the following:
+To check, if the image was properly written you can do the following:
 
 8. Create an image again from the SD card by running the following command:
 
@@ -239,14 +245,14 @@ In most cases the verification step will not be needed.
 ### Burn an SD Card with cm-burn
 
 For moere advanced options see cm-burn which also works for a single
-card but requires a purchased product. To not have to purcase it we
+card but requires a purchased product. To not have to purchase it we
 describe here the steps needed to do it be hand.
 
 1. Burning the SD Card is discussed in Section TBD
 2. Section [Password]{#s-pi-setup-password} discusses how to change
    the password after you booted the PI. :warning: This must be the
    first thing before you put the PI on the network or otherwise it is
-   broken into qucikly.
+   broken into quickly.
 3. ...
 
 ### Password {#s-pi-setup-password}
@@ -285,7 +291,7 @@ If your are not at IU please use your own wireless network at
 home. You can configure it via the GUI.
 
 In case you like to edit the information at a later time or at this
-time you can also use an editor.  Edit the file `interfcaes` file with
+time you can also use an editor.  Edit the file `interfaces` file with
 
     pi$ sudo nano /etc/network/interfaces
 
@@ -309,10 +315,10 @@ and ATT Wifi.  The first two would require you to use your IU username
 and password to be entered in the configuration. Although technically
 possible we find the method :warning: **HIGHLY** insecure and
 :warning: **STRONGLY** advice agains doing so. Let us assume you put
-your information on a PI and than somone takes the SDCard from
-it. THey can than look into the card and steal your
+your information on a PI and than someone takes the SDCard from
+it. They can than look into the card and steal your
 password. Obviously this is not advisable. In other cases you may have
-convigured your software wrong and somone coudl login remotely and
+configured your software wrong and someone could login remotely and
 lift your password remotely. Obviously this is not advisable.
 
 Regardless, we have seen from instructors the advice to use
@@ -388,7 +394,7 @@ multiple scenarios
 
 ### Setting up a small cluster with cm-burn
 
-here we discuss teh 5 node setup
+here we discuss the 5 node setup
 
 ### Setting up a large cluster with cm-burn
 
@@ -400,12 +406,12 @@ here we discuss one lareg cluster setup lets say 100 nodes
 
 #### PXE Boot
 
-### Setting up a plugable cluster of clusters with cm-burn
+### Setting up a pluggable cluster of clusters with cm-burn
 
-Here we discuss a class of students that each ahve 5 node clusters
+Here we discuss a class of students that each have 5 node clusters
 that come in a room to place their clusters in a shelf then they plug
-it into a power strip and a network, they replace the sd card of the
-master with a worker sd card there is a special master that detects
+it into a power strip and a network, they replace the SD card of the
+master with a worker SD card there is a special master that detects
 new workers and inventories them with different states, so we can get
 to them if they are registered.
 
@@ -418,11 +424,11 @@ to them if they are registered.
 
 It is possible to reset the password for a PI SD Card. This comesin
 handy when you did forget it or the team that worked on a Pi has left
-the project but valuable information may still beon the PI. To do so,
+the project but valuable information may still be on the PI. To do so,
 You need tou unplug the raspberry pi and remove the SD card from the
 slot.  Next you need to have the ability to mount the file systems. On
 macOS and Windows you can use extFS. Naturally if you have a linux
-machine or another PI, you can use an SD Card reader/writer and muont
+machine or another PI, you can use an SD Card reader/writer and mount
 it directly. You will need root access on the machine where you
 execute the password reset.
 
@@ -444,9 +450,9 @@ many systems we however disable it and use public key authentication
 only. In this case you need to just replace the public key in the
 `authorized_keys` file. Using just keys is obviously more convenient.
 
-Naturally mounting the SD Card and looing in the filesystem would also
+Naturally mounting the SD Card and looking in the filesystem would also
 allow you to look at the network setup. That is certainly not good and
-before a PI is returned sensitive information should be cleand from
+before a PI is returned sensitive information should be cleaned from
 the SD Card. 
 
 ## Exercises
