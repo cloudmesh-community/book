@@ -42,6 +42,12 @@ investment of the mount prg.
 Next we propose an outline. Help improving the outline than contribute here to this single document 
 while not replicationg sections but refer to sections if needed. IF difference between windows osx and linux, aslo include the differences.
 
+## Image Choice
+
+:o: Differentce between Rasbian and Noobs setup
+
+:o: why we just do Rasbian
+
 ## Setting up a Single Raspberry PI
 
 Discuss here the steps to do that including burning the sd card. IT is fine to use etcher, But there is one solution discussed that does dd which we aslo like to keep.
