@@ -224,7 +224,7 @@
         - chapters/pi/motherboard-led.md
         - chapters/pi/run-at-boot.md
         - chapters/pi/software2.md
-    - chapters/pi/setup-multiple.md
+    - chapters/pi/setup-multiple.md:
         - chapters/pi/setup.md
     - chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md:
         - chapters/pi/clusters/pi-now.md
