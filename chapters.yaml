@@ -219,7 +219,6 @@
     - chapters/pi/exercise.md
     - chapters/SECTION/SECTION-ONE-PI.md:
         - chapters/pi/setup-ultimate.md
-        - chapters/pi/sd-card.md
         - chapters/pi/setup-dev.md
         - chapters/pi/config-display.md
         - chapters/pi/vnc.md
@@ -269,7 +268,6 @@
     - chapters/pi/setup-ultimate.md
     - chapters/pi/setup-dev.md    
     - chapters/pi/run-at-boot.md
-    - chapters/pi/sd-card.md
     - chapters/pi/setup.md
     - chapters/pi/case.md
     - chapters/pi/config-display.md
