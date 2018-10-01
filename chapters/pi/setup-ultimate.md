@@ -1,4 +1,4 @@
-# Raspberry PI Setup :o:
+# Raspberry PI Setup (Small Number of PIs):o:
 
 This section will be a the start for the replacement for all previous setup instructions. 
 I think we want ultimately the section "PI Network of Workstations" to also use this 
@@ -539,16 +539,6 @@ here we discuss one lareg cluster setup lets say 100 nodes
 
 
 
-### Setting up a pluggable cluster of clusters with cm-burn
-
-Here we discuss a class of students that each have 5 node clusters
-that come in a room to place their clusters in a shelf then they plug
-it into a power strip and a network, they replace the SD card of the
-master with a worker SD card there is a special master that detects
-new workers and inventories them with different states, so we can get
-to them if they are registered.
-
-
 ## Using Advanced setups with Ansible
 
 
@@ -587,6 +577,18 @@ Naturally mounting the SD Card and looking in the filesystem would also
 allow you to look at the network setup. That is certainly not good and
 before a PI is returned sensitive information should be cleaned from
 the SD Card. 
+
+## Creating Backup :question:
+
+:question: In this section we will explain how to create a backup of
+the image from the SD Card in a PI.
+
+## Duplication :question:
+
+Let us assume you have installed a lot of great programs on the SD Card.
+In a cluster, we need to duplicate this card for each PI in the cluster.
+Is there a way for us to duplicate the software
+
 
 ## Exercises
 

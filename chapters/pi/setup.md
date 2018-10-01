@@ -33,17 +33,6 @@ could write and overwrite it on the SD card. See also
 
 * <https://elinux.org/R-Pi_configuration_file>
 
-### Creating Backup :question:
-
-:question: In this section we will explain how to create a backup of
-the image from the SD Card in a PI.
-
-### Duplication :question:
-
-Let us assume you have installed a lot of great programs on the SD Card.
-In a cluster, we need to duplicate this card for each PI in the cluster.
-Is there a way for us to duplicate the software
-
 Add-on Hardware
 --------------
 
