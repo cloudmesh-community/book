@@ -68,7 +68,7 @@ Before you bring your Raspberry Pi on the networks, you need to reset
 the password. This can be done by starting the terminal and typing in
 it the command
 
-    $ passwd
+    pi$ passwd
 
 The original password is `raspberrypi` and every one knows it. SO if
 you put your pi on the network it is easily compromised. Hence, change
@@ -79,11 +79,11 @@ your password first.
 You want to also set your system to use your language settings for the
 keyboard. you can do this isn the terminal with 
 
-    raspi-config 
+    pi$ raspi-config 
 
 or
 
-    sudo dpkg-reconfigure locales
+    pi$ sudo dpkg-reconfigure locales
 
 or using the GUI.
 
@@ -100,7 +100,7 @@ home. You can configure it via the GUI.
 In case you like to edit the information at a later time or at this
 time you can also use an editor.  Edit the file `interfcaes` file with
 
-    sudo nano /etc/network/interfaces
+    pi$ sudo nano /etc/network/interfaces
 
 change the following
 
@@ -126,13 +126,13 @@ button. Sometimes that button is not visible so you need to scroll to it.
 We want to update the software and make sure
 everything is up to date. This is done with 
 
-    $ sudo apt-get update
+    pi$ sudo apt-get update
 
 To develop easily we need a number of programs on our Pi. Programs can
 be installed with the command
 
 ```bash
-$ apt-get install PACKAGE
+pi$ apt-get install PACKAGE
 ```
 
 where `PACKAGE` is the name of the software we like to install.
@@ -146,11 +146,11 @@ the cluster.
 
 edit
 
-    nano /etc/hostname
+    pi$ nano /etc/hostname
 
 after you edited the hostname
 
-    sudo /etc/init.d/hostname.sh start
+    pi$sudo /etc/init.d/hostname.sh start
 
 Ideally we want to find out how to write the hostname after we burn the
 SD card on the laptop that does the burning
@@ -161,8 +161,8 @@ develop a python script to do that
 
 To enable ssh on the pi you need to say
 
-    $ sudo systemctl enable ssh
-    $ sudo systemctl start ssh
+    pi$ sudo systemctl enable ssh
+    pi$ sudo systemctl start ssh
 
 Naturally you need to do a bit more such as placing your public key in
 the authorized_keys file explained later, but for now we will just
