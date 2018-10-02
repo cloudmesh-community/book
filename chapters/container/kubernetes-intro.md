@@ -45,7 +45,7 @@ Kubernetes is
 
 source: <https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg>
 
-+@fig:k-containers shows a dipiction of the container architecture
++@fig:k-containers shows a depiction of the container architecture
 
 
 
