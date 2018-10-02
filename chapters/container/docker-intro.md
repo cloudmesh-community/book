@@ -36,11 +36,20 @@ the docker engine is composed.
 * A command line interface
 
 ![Docker Engine Component Flow](images/engine-components-flow.png){#fig:docker-flow}
- Image Source <https://docs.docker.com/engine/docker-overview/#docker-engine>
+Image Source <https://docs.docker.com/engine/docker-overview/#docker-engine>
 
 
 ## Docker Architecture
 
+The main concept of the docker architecture is based on the simple client-server
+model. Docker clients communicate with the Docker server also known as the 
+Docker daemon to request various resources and services. THe daemon manages 
+all the background tasks that need to be performed to complete client requests.
+Managing and distributing containers, running the containers, bulding 
+containers, etc. are responsibilities of the Docker daemon. +@fig:docker-arch
+shows how the docker architecture is setup. The client module and server can
+run either in the same machine or in separate machines. In the latter case 
+the communication between the client and server are done through the network.
 
 
 ![Docker Architecture](images/docker-architecture.png){#fig:docker-arch}
