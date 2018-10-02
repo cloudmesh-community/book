@@ -18,6 +18,33 @@ Image Source
 <https://www.docker.com/sites/default/files/Package%20software%40x2.png>
 
 +@fig:docker-container shows how docker containers fit into the system
+## Docker platform
+
+Docker provides users and developers with the tools and technologies that are
+needed to manage their application development using containers. Developers 
+can easily setup different environments for development, testing and 
+production. 
+
+## Docker Engine
+
+The Docker engine can be thought of as the core of the docker runtime. The 
+docker engine mainly provides 3 services. +@fig:docker-flow shows how 
+the docker engine is composed.
+
+* A long running server which manages the containers
+* A REST API
+* A command line interface
+
+![Docker Engine Component Flow](images/engine-components-flow.png){#fig:docker-flow}
+ Image Source <https://docs.docker.com/engine/docker-overview/#docker-engine>
+
+
+## Docker Architecture
+
+
+
+![Docker Architecture](images/docker-architecture.png){#fig:docker-arch}
+Image Source <https://docs.docker.com/engine/docker-overview/#docker-architecture>
 
 ## Docker Survey
 
@@ -31,14 +58,3 @@ result is available in the *The Docker Survey 2016* as seen in +@fig:docker-surv
 Image Source
 <https://blog.docker.com/2016/04/the-modern-software-supply-chain-runs-on-docker/>
 
-
-![Docker Engine Component Flow](images/engine-components-flow.png){#fig:docker-flow}
-
-![Docker Architecture](images/docker-architecture.png){#fig:docker-arch}
-Image Source <https://docs.docker.com/engine/docker-overview/>
-
-:o: +@fig:docker-flow
-
-:o: +@fig:docker-arch
-
-:o: add image sources
