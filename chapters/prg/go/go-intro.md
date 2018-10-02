@@ -88,7 +88,7 @@ will add them and mark them appropriately.
 
 * [golang.org](http://golang.org/doc/#learning) [@go-lang].
 * [Go cheat sheet](https://github.com/a8m/go-lang-cheat-sheet) [?].
-* [The Little Go Book](http://openmymind.net/The-Little-Go-Book/) [?].
+* [The Little Go Book](http://openmymind.net/The-Little-Go-Book/) [@seguin].
 * [Learn Go in an Hour - Video](https://www.youtube.com/watch?v=CF9S4QZuV30) _2015-02-15_
 * [Learning to Program in Go](https://www.youtube.com/playlist?list=PLei96ZX_m9sVSEXWwZi8uwd2vqCpEm4m6), a multi-part video training class [?].
 * [Go By Example](http://gobyexample.com/) provides a series of
