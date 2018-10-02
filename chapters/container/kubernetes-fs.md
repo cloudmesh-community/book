@@ -45,14 +45,18 @@ if the kubectl command works for you. Naturally it will also list the pods.
 
 ## Example Use
 
-The following command runs an image called nginx with two replicas:
+The following command runs an image called Nginx with two replicas, Nginx is 
+a popular web sever which is well known as a high performance load balancer.
 
 ```bash
 $ kubectl run nginx --replicas=2 --image=nginx --port=80
 ```
 
 As a result of this one deployment was created, and two PODs are
-created and started. To see the deployment, please use the command
+created and started. If you encounter and error stating that the deployment 
+already exists when executing the previous command that is because the 
+command has already been executed. To see the deployment, please use the 
+command, this command should work even if you noticed the error mentioned.
 
 ```bash
 $ kubectl get deployment
@@ -88,8 +92,9 @@ nginx-75...-4jnh6 1/1   Running 0        8m  192.168.56.2   e003
 nginx-75...-pxpsz 1/1   Running 0        8m  192.168.255.66 e005
 ```
 
-Please note the IP address field. Now if we try to access the nginx
-homepage with wget (or curl)
+Please note the IP address field. Make sure you are using the IP address that
+is listed when you execute the command since the IP address may have changed. 
+Now if we try to access the nginx homepage with wget (or curl)
 
 ```bash
 $ wget 192.168.56.2
@@ -114,10 +119,13 @@ from within the cluster.
 
 Next we need to start thinking about how we
 access this web server from outside the cluster. We can explicitly
-exposing the service with the following command
+exposing the service with the following command. You can change the name that
+is set using ```--name``` to what you want. Given that is adheres to the 
+naming standards. If the name you enter is already in the system your command
+ will return an error saying the service already exists.
 
 ```bash
-$ kubectl expose deployment nginx --type=NodePort --name=999-nginx-ext
+$ kubectl expose deployment nginx --type=NodePort --name=abc-nginx-ext
 ```
 
 We will see the response
@@ -137,7 +145,7 @@ We se something like this
     NAME          TYPE      CLUSTER-IP    EXTERN PORT(S)      AGE
                                           AL-IP
     kubernetes    ClusterIP 10.96.0.1     <none> 443/TCP      8h
-    999-nginx-ext NodePort  10.96.183.189 <none> 80:30275/TCP 6s
+    abc-nginx-ext NodePort  10.110.177.35 <none> 80:31386/TCP 3s
 
 please note that we have given a unique name.
 
@@ -157,16 +165,22 @@ in the worst case revocation of your privileges to use *echo*.
 ---
 
 In our example you will find the port on which our service is exposed
-and remapped to. We find the port **30275** in the value
-**80:30275/TCP** in the ports column for the running container.
+and remapped to. We find the port **31386** in the value
+**80:31386/TCP** in the ports column for the running container.
 
 Now if we visit this URL, which is the public IP of the head node
 followed by the exposed port number
 
-    http://149.165.150.85:30275
+    http://149.165.150.85:31386
 
 you should see the 'Welcome to nginx' page.
 
+Once you have done all the work needed using the service you can delete it using
+the following command.
+
+```bash
+kubectl delete service <service-name>
+```
 ## Exercises
 
 E.Kubernetes.fs.1:
