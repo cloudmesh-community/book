@@ -21,20 +21,23 @@ If your access to the india host has been verified, try to login to the
 docker swarm head node. To conveniently do this let us define some Linux
 environment variables to simplify the access and the material presented
 here. You can place them even in your `.bashrc` or `.bash_profile` so
-the information gets populated whenever you start a new terminal.
+the information gets populated whenever you start a new terminal.If you 
+directly edit the files make sure to execute the ```source``` command to refresh
+ the environment variables for the current session using ```source .bashrc```
+or ```source .bash_profile```. Or you can close the current shell and reopen a 
+new one. 
 
 ```bash
 $ export ECHO=149.165.150.76
 $ export FS_USER=<put your futersystem here>
 ```
 
-with the same username and key:
+Now you can use the two variables that were set to login to the Echo serer, 
+using the following command
 
 ```bash
 $ ssh $FS_USER@$ECHO
 ```
-
-However it is much more convenient to
 
 If you have access to india but not the docker swarm system, your
 project may not have been authorized to access the docker swarm cluster.
