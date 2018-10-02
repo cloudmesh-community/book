@@ -109,7 +109,7 @@ will add them and mark them appropriately.
 * [Golangbot](https://golangbot.com/learn-golang-series/) - Tutorials
   to get started with programming in Go [@Golangbot].
 * [Algorithms to Go](http://yourbasic.org/) - Texts about algorithms
-  and Go, with plenty of code examples [?].
+  and Go, with plenty of code examples [@yourbasic].
 *
   [Go Language Tutorials](https://www.cybrhome.com/topic/go-language-tutorials) - List of Go sites, blogs and tutorials for learning Go language [?].
 * [Golang Development Video Course](https://www.youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY) - A growing list of videos focused purely on Go development [?].
