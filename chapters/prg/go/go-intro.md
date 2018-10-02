@@ -107,7 +107,7 @@ will add them and mark them appropriately.
   complete set of free Go training materials with the goal of
   bringing Go to under-served communities.
 * [Golangbot](https://golangbot.com/learn-golang-series/) - Tutorials
-  to get started with programming in Go [?].
+  to get started with programming in Go [@Golangbot].
 * [Algorithms to Go](http://yourbasic.org/) - Texts about algorithms
   and Go, with plenty of code examples [?].
 *
