@@ -12,12 +12,12 @@ collaboration and innovation. An overview of docker is provided at
 
 * <https://docs.docker.com/engine/docker-overview/>
 
-![Docker Containers](images/docker-container.png){#fig:cocker-container}
+![Docker Containers](images/docker-container.png){#fig:docker-container}
 
 Image Source
 <https://www.docker.com/sites/default/files/Package%20software%40x2.png>
 
-:o: +@fig:cocker-container
++@fig:docker-container shows how docker containers fit into the system
 
 ## Docker Survey
 
@@ -28,10 +28,14 @@ result is available in the *The Docker Survey 2016* as seen in +@fig:docker-surv
 * <https://www.docker.com/survey-2016>
 
 ![Docker Survey Results 2016 ](images/docker-survey.png){#fig:docker-survey}
+Image Source
+<https://blog.docker.com/2016/04/the-modern-software-supply-chain-runs-on-docker/>
+
 
 ![Docker Engine Component Flow](images/engine-components-flow.png){#fig:docker-flow}
 
-![Docker Architecture](images/docker-architecture.pdf){#fig:docker-arch}
+![Docker Architecture](images/docker-architecture.png){#fig:docker-arch}
+Image Source <https://docs.docker.com/engine/docker-overview/>
 
 :o: +@fig:docker-flow
 
