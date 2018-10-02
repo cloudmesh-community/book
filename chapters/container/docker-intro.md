@@ -28,14 +28,15 @@ production.
 ## Docker Engine
 
 The Docker engine can be thought of as the core of the docker runtime. The 
-docker engine mainly provides 3 services. +@fig:docker-flow shows how 
+docker engine mainly provides 3 services. +@fig:engine-components-flow shows how 
 the docker engine is composed.
 
 * A long running server which manages the containers
 * A REST API
 * A command line interface
 
-![Docker Engine Component Flow](images/engine-components-flow.png){#fig:docker-flow}
+![Docker Engine Component Flow](images/engine-components-flow.png){#fig:engine-components-flow}
+
 Image Source <https://docs.docker.com/engine/docker-overview/#docker-engine>
 
 
@@ -53,6 +54,7 @@ the communication between the client and server are done through the network.
 
 
 ![Docker Architecture](images/docker-architecture.png){#fig:docker-arch}
+
 Image Source <https://docs.docker.com/engine/docker-overview/#docker-architecture>
 
 ## Docker Survey
@@ -64,6 +66,6 @@ result is available in the *The Docker Survey 2016* as seen in +@fig:docker-surv
 * <https://www.docker.com/survey-2016>
 
 ![Docker Survey Results 2016 ](images/docker-survey.png){#fig:docker-survey}
-Image Source
-<https://blog.docker.com/2016/04/the-modern-software-supply-chain-runs-on-docker/>
+
+Image Source<https://blog.docker.com/2016/04/the-modern-software-supply-chain-runs-on-docker/>
 
