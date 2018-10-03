@@ -1,4 +1,4 @@
-# Dockefile
+# Dockerfile
 
 In order for us to build containers, we need to know what is in the
 container and how to create an image representing a container. To do
@@ -45,11 +45,8 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-# Make port 80 available to the world outside this container
+# Make port 80 available 
 EXPOSE 80
-
-# Define environment variable
-ENV NAME World
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
@@ -58,8 +55,6 @@ CMD ["python", "app.py"]
 We also create a `requirements.txt` file that we need for installing the
 necessary python packages
 
-requirements.txt
-
 ```
 Flask
 Eve
@@ -67,7 +62,7 @@ Eve
 
 The application we install is using a Redis database and a Flask
 service that includes a visit counter and returns the hostname of the
-fisiting host. IT is stored in the file app.py
+fisiting host. It is stored in the file app.py
 
 ```
 from flask import Flask, jsonify
@@ -93,14 +88,14 @@ if __name__ == '__main__':
 To build the container, we can use the following command:
 
 ```
-docker build -t hello .
+docker build -t students .
 ```
 
 To run the service open a new window and cd into the directory where
 you code is located. Now say
 
 ```
-docker run -d -p 4000:80 hello
+docker run -d -p 4000:80 students
 ``
 
 Your docker container will run and you can visit it by using the

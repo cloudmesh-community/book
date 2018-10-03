@@ -1,4 +1,4 @@
-# Data Formats :new:
+# Data Formats
 
 ## YAML
 
