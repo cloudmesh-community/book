@@ -708,7 +708,7 @@ from .models import Repo
 
 class RepoType(DjangoObjectType):
     class Meta:
-        model = Repo
+        model = Repository
 
 
 class Query(graphene.ObjectType):
@@ -765,7 +765,7 @@ following query
 
 ```graphql
 {
-  repos {
+  repositoriess {
     name
     fullName
     url
@@ -779,7 +779,7 @@ In the right pane you will see following output
 ```json
 {
   "data": {
-    "repos": [
+    "repositories": [
       {
         "name": "boat",
         "fullName": "cloudmesh-community/boat",
@@ -812,12 +812,12 @@ In the right pane you will see following output
 ### Mutation example :o:
 
 Similar to a query you can add mutation to create your own data. Add a
-*Create* class for new repo object which will inherit from graphene's
-Mutation class. This class will accept new repo properties as
+*Create* class for new repository object which will inherit from graphene's
+Mutation class. This class will accept new repository properties as
 Arguments. Please see the following code snippet
 
 ```python
-class CreateRepo(graphene.Mutation):
+class CreateRepository(graphene.Mutation):
     url = graphene.String()
     name = graphene.String()
     full_name = graphene.String()
@@ -830,28 +830,28 @@ class CreateRepo(graphene.Mutation):
         description = graphene.String()
 
     def mutate(self, info, url, name, full_name, description):
-        repo = Repo(url=url, name=name, full_name=full_name, description=description)
-        repo.save()
+        repository = Repository(url=url, name=name, full_name=full_name, description=description)
+        repository.save()
 
-        return CreateRepo(url=repo.url, name=repo.name, full_name=repo.full_name, description=repo.description)
+        return CreateRepository(url=repository.url, name=repository.name, full_name=repository.full_name, description=repository.description)
 ```
 
-Similar to Query, add Mutation class in repo's schema.
+Similar to Query, add Mutation class in repository's schema.
 
 ```python
 class Mutation(graphene.ObjectType):
-    create_repo = CreateRepo.Field()
+    create_repository = CreateRepository.Field()
 ```
 
-Now you can run the following mutation on graphiql to add a new repo
+Now you can run the following mutation on graphiql to add a new repository
 
 ```graphql
 mutation {
-  createRepo (
+  createRepository (
     url: "https://github.com/cloudmesh-community/vineet-test",
     name: "vineet-test",
     fullName: "cloudmesh-community/vineet-test",
-    description: "Test repo"
+    description: "Test repository"
   ) {
     url
     name
@@ -861,16 +861,16 @@ mutation {
 }
 ```
 
-And this will not just create a new repo but also get the newly added repo
+And this will not just create a new repository but also get the newly added repository
 
 ```json
 {
   "data": {
-    "createRepo": {
+    "createRepository": {
       "url": "https://github.com/cloudmesh-community/vineet-test",
       "name": "vineet-test",
       "fullName": "cloudmesh-community/vineet-test",
-      "description": "Test repo"
+      "description": "Test repository"
     }
   }
 }
@@ -919,7 +919,7 @@ AUTHENTICATION_BACKENDS = [
 Add the Token mutation
 
 ```python
-class Mutation(users.schema.Mutation, repos.schema.Mutation, graphene.ObjectType):
+class Mutation(users.schema.Mutation, repositories.schema.Mutation, graphene.ObjectType):
     token_auth = graphql_jwt.ObtainJSONWebToken.Field()
 ```
 
@@ -954,14 +954,14 @@ from graphql_jwt.decorators import login_required
 ...
 
 class Query(graphene.ObjectType):
-    repos = graphene.List(RepoType)
+    repositories = graphene.List(RepositoryType)
 
     @login_required
-    def resolve_repos(self, info, **kwargs):
-        return Repo.objects.all()
+    def resolve_repositories(self, info, **kwargs):
+        return Repository.objects.all()
 ```
 
-Now if you try to query repos from graphql, you will see this error
+Now if you try to query repositories from graphql, you will see this error
 
 ```json
 {
@@ -975,17 +975,17 @@ Now if you try to query repos from graphql, you will see this error
         }
       ],
       "path": [
-        "repos"
+        "repositories"
       ]
     }
   ],
   "data": {
-    "repos": null
+    "repositories": null
   }
 }
 ```
 
-Henceforth you need to pass token with every repos query. This token
+Henceforth you need to pass token with every repositories query. This token
 needs to be passed as header which the graphiql ui client does not
 support. Hence you can use either of these 2 ways
 
@@ -1000,14 +1000,14 @@ export TOKEN=eyJ0eXAiOiJKV1.... (cut to fit in line)
 curl -X POST \
 -H "Content-Type: application/json;" \
 -H "Authorization: JWT $TOKEN" \
--d '{"query": "{ repos { url } }"}' \
+-d '{"query": "{ repositories { url } }"}' \
 http://localhost:8000/graphql/
 ```
 
 Result obtained from running this command: 
 
 ```
-{"data":{"repos":[
+{"data":{"repositories":[
   {"url":"https://github.com/cloudmesh-community/boat"},
   {"url":"https://github.com/cloudmesh-community/book"},
   {"url":"https://github.com/cloudmesh-community/cm"},
@@ -1089,13 +1089,15 @@ Response
 }
 ```
 
-To get your repos add following query
+To get your repositories add following query
+
+:o: is here a name conflict with repositories?
 
 ```graphql
-query($number_of_repos:Int!) {
+query($number_of_repositories:Int!) {
   viewer {
     name
-     repositories(last: $number_of_repos) {
+     repositories(last: $number_of_repositories) {
        nodes {
          name
        }
@@ -1108,7 +1110,7 @@ Define variables
 
 ```json
 {
-   "number_of_repos": 3
+   "number_of_repositories": 3
 }
 ```
 
@@ -1122,13 +1124,13 @@ Response
       "repositories": {
         "nodes": [
           {
-            "name": "*Repo 1*"
+            "name": "*Repository 1*"
           },
           {
-            "name": "*Repo 2*"
+            "name": "*Repository 2*"
           },
           {
-            "name": "*Repo 3*"
+            "name": "*Repository 3*"
           }
         ]
       }
@@ -1143,7 +1145,7 @@ Query
 
 ```graphql
 {
-  repository(owner:"MihirNS", name:"Temp_Repo") {
+  repository(owner:"MihirNS", name:"Temp_Repository") {
     issue(number: 1) {
       id
     }
@@ -1194,9 +1196,9 @@ Response
       "commentEdge": {
         "node": {
           "repository": {
-            "nameWithOwner": "MihirNS/Temp_Repo"
+            "nameWithOwner": "MihirNS/Temp_Repository"
           },
-          "url": "https://github.com/MihirNS/Temp_Repo/issues/1#issuecomment-425620312"
+          "url": "https://github.com/MihirNS/Temp_Repository/issues/1#issuecomment-425620312"
         }
       }
     }
