@@ -162,7 +162,6 @@ type Car implements Vehicle {
 }
 ```
 
-
 ### Union Types
 
 As the name suggests, union types represent the union of two or more
@@ -193,7 +192,6 @@ specific to either `Motorcycle` or `Car`.
     }
 }
 ```
-
 
 ## GraphQL Query
 
@@ -252,7 +250,7 @@ returns the response
 {
     "data": {
         "community": {
-            "name": "Cloudmesh",
+            "name": "cloudmesh-community",
             "repos": [{
                 "name": "S.T.A.R boat"
             }, {
@@ -297,12 +295,13 @@ The response will be similar to
         }, {
             "name": "book",
             "url": "https://github.com/cloudmesh-community/book"
+        }, {
+            "name": "case",
+            "url": "https://github.com/cloudmesh-community/case"
         }]
     }
 }
 ```
-
-
 
 ### Fragments
 
@@ -375,7 +374,6 @@ The response for this query will look like
 }
 ```
 
-
 ### Variables :o:
 
 :o: this section needs to be improved as it can not be understood by a
@@ -385,13 +383,13 @@ Variables are used to pass dynamic values to queries. Instead of passing
 hard-coded values to a query, variables can be defined for these values. 
 Now these variables can be passed to queries.
 
-Variables can be defined in the Query variables panel at left bottom of 
-the graphiql client. The variable is defined as a json object and this 
+**Variables can be defined in the Query variables panel at left bottom of 
+the graphiql client**. The variable is defined as a json object and this 
 is how it looks like
 
 ```json
 {
-    "employeeAge": 29
+    "name": "book"
 }
 ```
 
@@ -399,9 +397,9 @@ and it can be used in the query like this
 
 ```graphql
 {
-    employees(age: $employeeAge) {
+    repo(name: $name) {
         name
-        age
+        url
     }
 }
 ```
@@ -411,13 +409,10 @@ which will fetch response
 ```json
 {
     "data": {
-        "employees": [{
-            "name": "John Doe",
-            "age": 29
-        }, {
-            "name": "Jon Doe",
-            "age": 29
-        }]
+        "repo": {
+            "name": "book",
+            "url": "https://github.com/cloudmesh-community/book"
+        }
     }
 }
 ```
@@ -441,34 +436,32 @@ a value of `true` to it.
 }
 ```
 
-This variable is passed as an argument `showPersonalInfo` to the query. 
+This variable is passed as an argument `showOwnerInfo` to the query. 
 This argument is in turn passed to `@include` directive to determine 
-whether to include the `personalInfo` sub-query.
+whether to include the `ownerInfo` sub-query.
 
 ```graphql
 {
-    employees(showPersonalInfo: $isAdmin) {
+    repos(showOwnerInfo: $isAdmin) {
         name
-        age
-        personalInfo @Include(if: $showPersonalInfo) {
-            address
-            contact
+        url
+        ownerInfo @Include(if: $showOwnerInfo) {
+            name
         }
     }
 }
 ```
-Since we have defined `showPersonalInfo` as `true`, the response 
-includes `personalInfo` data.
+Since we have defined `showOwnerInfo` as `true`, the response 
+includes `ownerInfo` data.
 
 ```json
 {
     "data": {
-        "employees": [{
-            "name": "John Doe",
-            "age": 29,
-            "personalInfo": {
-                "address": "remote",
-                "contact": "123456789"
+        "repos": [{
+            "name": "book",
+            "url": "https://github.com/cloudmesh-community/book",
+            "ownerInfo": {
+                "name": "cloudmesh-community"
             }
         }]
     }
@@ -478,34 +471,35 @@ includes `personalInfo` data.
 ### Mutations
 
 Mutations are used to modify server side data. To demonstrate this,
-let us look at the query
+
+let us look at the query and data to be passed along with it
 
 ```graphql
-mutation CreateEmployeeForEmployer($employer: Employer!, $employee: Employee!) {
-    createEmployee(employer: $employer, employee: $employee) {
+mutation CreateRepoForCommunity($community: Community!, $repo: Repo!) {
+    createRepo(community: $community, repo: $repo) {
         name
-        age
+        url
+    }
+}
+```
+```json
+{
+    "community": "cloudmesh-community",
+    "repo": {
+        "name": "cm-burn",
+        "url": "https://github.com/cloudmesh-community/cm-burn"
     }
 }
 ```
 
-```json
-{
-    "employer": "Abc Company",
-    "employee": {
-        "name": "John Doe",
-        "age": 29
-    }
-}
-```
 The response will be as follow, indicating that an employee has been added.
 
 ```json
 {
     "data": {
-        "createEmployee": {
-            "name": "John Doe",
-            "age": 29
+        "createRepo": {
+            "name": "cm-burn",
+            "url": "https://github.com/cloudmesh-community/cm-burn"
         }
     }
 }
@@ -573,9 +567,8 @@ command in shell. Always remember to activate virtual environment.
 * :o: TODO: whould we just do a wget or culr on the git example dir
   and cd into it?
 * :o: TODO: you remind me that venv is now part of python 3, so we
-  coudl do an alternative install of python 3 with altinstall and
-  document hat in the pythin section instead of using pyenv
-
+  could do an alternative install of python 3 with altinstall and
+  document that in the python section instead of using pyenv
 
 ```bash
 mkdir -p example/graphql
