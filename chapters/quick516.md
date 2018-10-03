@@ -77,6 +77,19 @@ class.
       recommended that you try programming with libcloud! To prepare
       yourself for the project.
 
+    * Oct 8
+
+      Read the section on MQTT in prepartion for Edge Computing. Try
+      to deploy an mqtt server on your computer and use it. Optionally
+      also try a cloud mqtt server.
+      Read the section on GraphQL (if that section is
+      ready). Experiment with GraphQl. Develop an inventory of compute
+      resources in GraphQL, that you populate and quesry. Develop a
+      NIST OpenAPI framework for a computer inventory. Identify
+      adbatages and disadvanteges opf using GraphQL. When are ther
+      instances that GraphQL does not work well (Tip: compare to MongoDB).
+      
+
 
 # Assignments
 
