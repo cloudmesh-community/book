@@ -1,4 +1,4 @@
-# Kubernetes (A) :o:
+# Kubernetes (A) :o: :hand: fa19-516-03
 
 In this section we discuss how to set up a kubernetes cluster on a
 number of Raspberry Pi's.
@@ -6,29 +6,35 @@ number of Raspberry Pi's.
 ## Todo
 
 - [ ] all the simple setup with sd cards, ssh, keys, and so on should be moved to the NOW cluster section. This way we can require simply a NOW and start without duplication on the real kubernetes install.
-- [ ] weh ave two sections of kubernetes contributed by two students. what we need is to merge them and safe the usable things. we need to identify if the setup is significantly different before we can do this.
-- [ ] so before you can work on teh kubernetes section you need to make sure the NOW section is up to date.
+- [ ] we have two sections of kubernetes contributed by two students. What we need is to merge them and safe the usable things. We need to identify if the setup is significantly different before we can do this.
+- [ ] so before you can work on the kubernetes section you need to make sure the NOW section is up to date.
 
 ## Resources Needed
 
 We recommend that the cluster will have at least one master and three
 worker nodes. Using less resources so the system is not unnecessarily
-slow. Please give us feedback on this and let us know hwat works for
-you. so we integrate your feedback.
+slow. Please give us feedback on this and let us know what works for
+you. So we integrate your feedback.
 
 We assume that you have installed docker and disabled swap
 
 First install docker, disable swap, install kubeadm
 
-All the following steps are made automatically by the 
+All the following steps are made automatically by the
 [`526/docker_kubernetes_install.sh`](526/kubernetes/docker_kubernetes_install.sh) script.
 
 ### Install docker
 
-In order to install kubernetes you first need to have docker installed. This is 
-very strait forward.
+In order to install kubernetes you first need to have docker installed. This is
+very straightforward.
 
 ### Disable swap memory
+
+(TODO `fa18-516-03`: Where is this information from? I don't see this online - I
+see that kubernetes does not support swap memory but not Docker. It looks like
+Docker can be configured directly to disable swap memory
+[--memory-swap](https://docs.docker.com/config/containers/resource_constraints/#--memory-swap-details) instead
+of disabling swap for the entire OS.)
 
 Docker is **not compatible with SWAP memory**, therefore we need to disable swap.
 This might create some other issues. If you encounter them you should
