@@ -41,18 +41,24 @@ and schema creation.
 
 In GraphQL a query is what we request from the graphql server. The
 result will be obtained in a structure defined by type and schema. It
-means we will know ahead of time what we are going to get as result,
-nothing less and nothing more. For this to work, the data is often 
-assumed to be structured data.
+means we will know ahead of time what we are going to get as
+result. For this to work, the data is often assumed to be structured
+data.
+
+To demonstrate the type system we use a simple example while looking
+at authors and co-authors of papers. We represent in this example a
+database that containes a number of authors. each author has a
+publication count and a number of coauthors that are identified by
+name. We assume for this simple example that all author names are unique.
 
 Here is how a simple graphQL query would look like
 
 ```graphql
 {
-    person {
+    author {
         name 
-        age
-        friends {
+        publication_count
+        coauthors {
             name
         }
     }
@@ -63,10 +69,10 @@ The response is
 
 ```json
 {
-    "person": {
+    "author": {
         "name": "John Doe",
-        "age": 25,
-        "friends": [
+        "publication_count": 25,
+        "coauthors": [
             {
                 "name": "Mary Jane"
             },
@@ -88,15 +94,15 @@ defined with the graphql schema language which is programming language
 agnostic. An example of a graphql type is:
 
 ```graphql
-type Person {
+type author {
     name: String!
-    age: Int
-    friends: [Person!]!
+    publication_count: Int
+    coauthors: [author!]!
 }
 ```
 
 Note that the `!` indicates a field value, that cannot be null and
-must have a defined value. `[Person!]!` means that an array is
+must have a defined value. `[author!]!` means that an array is
 returned, but that array cannot be null and also none of the items
 in the array can be null.
 
