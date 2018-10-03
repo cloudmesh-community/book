@@ -68,7 +68,25 @@ $ sudo apt-get update
 $ sudo apt-get install docker-ce
 $ sudo apt-get update
 ```
+Once installed execute the following command to make sure the installation is
+ done properly
+ 
+ ```bash
+ $ sudo systemctl status docker
+ ```
+ 
+ This should give you an output similar to below.
+ 
+ ```bash
+  docker.service - Docker Application Container Engine
+    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+    Active: active (running) since Wed 2018-10-03 13:02:04 EDT; 15min ago
+      Docs: https://docs.docker.com
+  Main PID: 6663 (dockerd)
+     Tasks: 39
 
+ ```
+ 
 ## Installation for Windows 10 :o: :question:
 
 The instructions for Windows have not passed our quality control. We
