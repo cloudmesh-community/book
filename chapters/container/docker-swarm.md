@@ -1,7 +1,4 @@
-# Introduction to Docker Swarm :o:
-
-
-## Swarm clusters
+# Docker Swarm :o:
 
 A swarm is a group of machines that are running Docker and joined into
 a cluster. Docker commands are executed on a cluster by a swarm
