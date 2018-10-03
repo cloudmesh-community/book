@@ -215,4 +215,4 @@ the username of the user uploading the image
   [@hid-sp18-405-tutorial-dockerhub-repository]
 * [How to Use DockerHub](https://www.linux.com/blog/learn/intro-to-linux/2018/1/how-use-dockerhub)
   [@hid-sp18-405-tutorial-dockerhub-blog-use]
-* [Docker Tutorial Series](https://rominirani.com/docker-tutorial-series-part-4-docker-hub-b51fb545dd8e)[@hid-sp18-405-tutorial-dockerhub-series-part-4]
+* [Docker Tutorial Series](https://rominirani.com/docker-tutorial-series-part-4-docker-hub-b51fb545dd8e) [@hid-sp18-405-tutorial-dockerhub-series-part-4]
