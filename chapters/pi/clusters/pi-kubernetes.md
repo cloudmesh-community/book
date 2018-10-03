@@ -1,4 +1,4 @@
-# Kubernetes (A) :o: :hand: fa19-516-03
+# Kubernetes (A) :o: :hand: fa18-516-03
 
 In this section we discuss how to set up a kubernetes cluster on a
 number of Raspberry Pi's.
