@@ -708,7 +708,7 @@ from .models import Repository
 
 class RepositoryType(DjangoObjectType):
     class Meta:
-        model = Repositoriesitory
+        model = Repository
 
 
 class Query(graphene.ObjectType):
