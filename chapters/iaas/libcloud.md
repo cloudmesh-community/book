@@ -74,7 +74,7 @@ part:
 Libcloud can be installed via pip. Execute the following command in order
 to install Libcloud
 
-```console
+```bash
 pip install apache-libcloud
 ```
 

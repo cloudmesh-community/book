@@ -116,7 +116,6 @@
             - chapters/container/dockerhub.md
         - chapters/SECTION/SECTION-DOCKER-PAAS.md:
             - chapters/container/docker-swarm.md
-            - chapters/container/docker-rest.md            
             - chapters/container/docker-fs.md
             - chapters/container/docker-hadoop-cluster.md
             - chapters/container/docker-hadoop.md
