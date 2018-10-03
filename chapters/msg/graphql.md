@@ -830,10 +830,15 @@ class CreateRepository(graphene.Mutation):
         description = graphene.String()
 
     def mutate(self, info, url, name, full_name, description):
-        repository = Repository(url=url, name=name, full_name=full_name, description=description)
+        repository = Repository(url=url, name=name,
+                                full_name=full_name,
+                                description=description)
         repository.save()
 
-        return CreateRepository(url=repository.url, name=repository.name, full_name=repository.full_name, description=repository.description)
+        return CreateRepository(url=repository.url,
+            name=repository.name,
+            full_name=repository.full_name,
+            description=repository.description)
 ```
 
 Similar to Query, add Mutation class in repository's schema.
