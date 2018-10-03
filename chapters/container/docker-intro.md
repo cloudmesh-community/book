@@ -1,4 +1,4 @@
-# Introduction to Docker :o:
+# Introduction to Docker
 
 Docker is the company driving the container movement and the only
 container platform provider to address every application across the
@@ -12,10 +12,7 @@ collaboration and innovation. An overview of docker is provided at
 
 * <https://docs.docker.com/engine/docker-overview/>
 
-![Docker Containers](images/docker-container.png){#fig:docker-container}
-
-Image Source
-<https://www.docker.com/sites/default/files/Package%20software%40x2.png>
+![Docker Containers [Image Source](https://www.docker.com/sites/default/files/Package%20software%40x2.png)](images/docker-container.png){#fig:docker-container}
 
 +@fig:docker-container shows how docker containers fit into the system
 ## Docker platform
@@ -35,9 +32,9 @@ the docker engine is composed.
 * A REST API
 * A command line interface
 
-![Docker Engine Component Flow](images/engine-components-flow.png){#fig:engine-components-flow}
+![Docker Engine Component Flow [Image Source](https://docs.docker.com/engine/docker-overview/#docker-engine)](images/engine-components-flow.png){#fig:engine-components-flow}
 
-Image Source <https://docs.docker.com/engine/docker-overview/#docker-engine>
+
 
 
 ## Docker Architecture
@@ -53,9 +50,9 @@ run either in the same machine or in separate machines. In the latter case
 the communication between the client and server are done through the network.
 
 
-![Docker Architecture](images/docker-architecture.png){#fig:docker-arch}
+![Docker Architecture [Image Source](https://docs.docker.com/engine/docker-overview/#docker-architecture)](images/docker-architecture.png){#fig:docker-arch}
 
-Image Source <https://docs.docker.com/engine/docker-overview/#docker-architecture>
+
 
 ## Docker Survey
 
@@ -65,7 +62,7 @@ result is available in the *The Docker Survey 2016* as seen in +@fig:docker-surv
 
 * <https://www.docker.com/survey-2016>
 
-![Docker Survey Results 2016 ](images/docker-survey.png){#fig:docker-survey}
+![Docker Survey Results 2016 [Image Source](https://blog.docker.com/2016/04/the-modern-software-supply-chain-runs-on-docker/)](images/docker-survey.png){#fig:docker-survey}
 
-Image Source<https://blog.docker.com/2016/04/the-modern-software-supply-chain-runs-on-docker/>
+
 
