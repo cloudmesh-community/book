@@ -57,7 +57,6 @@ necessary python packages
 
 ```
 Flask
-Eve
 ```
 
 The application we install is using a Redis database and a Flask
@@ -65,11 +64,10 @@ service that includes a visit counter and returns the hostname of the
 fisiting host. It is stored in the file app.py
 
 ```
-from eve import Eve
-from flask import jsonify
+from flask import Flask, jsonify
 import os
 
-app = Eve ()
+app = Flask(__name__)
 
 @app.route('/student/albert')
 def alberts_information():
@@ -82,7 +80,7 @@ def alberts_information():
     return jsonify(**data)
 
 if __name__ == '__main__':
-    app.run(debug=True, host="127.0.0.1")”
+    app.run(host="0.0.0.0", port=80)
 ```
 
 
