@@ -5,7 +5,7 @@ a cluster. Docker commands are executed on a cluster by a swarm
 manager. The machines in a swarm can be physical or virtual. After
 joining a swarm, they are referred to as *nodes*.
 
-## Set up your swarm
+## Creating a Docker Swarm Cluster
 
 A swarm is made up of multiple nodes, which can be either physical or
 virtual machines. The basic steps are:
@@ -19,41 +19,50 @@ virtual machines. The basic steps are:
 
 ## Create a cluster with VirtualBox
 
-To create virtual machines on your local machine, first create a
-couple of VMs using docker-machine, using the VirtualBox driver:
+In case you do not have access to multiple physical machines, you can
+create a virtual cluster on your machine with the help of virtual
+box. Instead of using `vagrant` we can use the build in docker-machine
+command to start several virtual machines. 
+
+To create tem, use the command as follows:
 
 ```bash
-$ docker-machine create --driver virtualbox myvm1
-$ docker-machine create --driver virtualbox myvm2
+host$ docker-machine create --driver virtualbox myvm1
+host$ docker-machine create --driver virtualbox myvm2
 ```
 
 To list the VMs and get their ip addresses.
 Use this command to list the machines and get their IP addresses.
 
 ```bash
-$ docker-machine ls
+host$ docker-machine ls
 ```
 
 ## Initialize the Swarm Manager Node and Add Worker Nodes
+
+:o: this section is unclear as the `$` does not indicate on which
+machine this is executed
 
 The first machine acts as the manager, which executes management
 commands and authenticates workers to join the swarm, and the second
 is a worker.
 
-### Instruct myvm1 to become a swarm manager:
+To instruct the first vm to become the master, pleas log into the vm
+via ssh and then issue the command 
 
 ```bash
 $ docker swarm init
 ```
-output should be like this:
+The output wil look like this, where `IP-myvm1` is the ip address of the first vm
+
 
 ```bash
-$ docker-machine ssh myvm1 "docker swarm init --advertise-addr <myvm1 ip>"
-```
+$ docker-machine ssh myvm1 "docker swarm init --advertise-addr IP-myvm1"
 
 Swarm initialized: current node `<node ID>` is now a manager.
+```
 
-To add a worker to this swarm, run the following command:
+To add a worker to this swarm, run the following commands
 
 ```bash
 $ docker swarm join--token <token> <myvm ip>:<port>
