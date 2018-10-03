@@ -69,7 +69,7 @@ $ sudo apt-get install docker-ce
 $ sudo apt-get update
 ```
 
-## Draft: Installation for Windows 10
+## Installation for Windows 10 :o: :?:
 
 The instructions for Windows have not passed our quality control. We
 look for TAs and student that test out and improve this section.
