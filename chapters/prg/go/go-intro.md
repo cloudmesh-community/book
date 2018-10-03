@@ -100,7 +100,6 @@ will add them and mark them appropriately.
 * [Go Fragments](http://www.gofragments.net/) - A collection of
     annotated Go code examples [?].
 * [50 Shades of Go: Traps, Gotchas, Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html) [?]
-* [Free Go Language Workshop](https://www.frameworktraining.co.uk/go-language-free-training-workshop/) Framework Training is running regular free BYOD workshops in London, UK [@framework training]
 * [Golang Tutorials](http://golangtutorials.blogspot.com/2011/05/table-of-contents.html) - A free online class [?].
 * [The Go Bridge Foundry](https://github.com/gobridge) [?] - A member of
   the [Bridge Foundry](http://bridgefoundry.org/) [?] family, offering a
