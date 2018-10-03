@@ -1,3 +1,3 @@
-# [Data Libraries :new:]{.part}
+# [Data Libraries]{.part}
 
 
