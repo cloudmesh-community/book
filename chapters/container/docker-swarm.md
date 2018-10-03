@@ -85,7 +85,7 @@ have `myvm2` join your new swarm as a worker:
 $ docker-machine ssh myvm2 "docker swarm join --token <token> <ip>:2377"
 ```
 
-The output should be like this:
+The output will be like this:
 
 ```bash
 This node joined a swarm as a worker.
@@ -94,7 +94,7 @@ This node joined a swarm as a worker.
 Run `docker-machine ls` to verify that `myvm1` is now the active
 machine, as indicated by the asterisk next to it.
 
-The output should be like this:
+The output will be like this:
 
 ```bash
 $ docker-machine ls
