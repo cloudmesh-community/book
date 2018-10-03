@@ -9,7 +9,6 @@ manager. The machines in a swarm can be physical or virtual. After
 joining a swarm, they are referred to as *nodes*.
 
 ## Creating a Docker Swarm Cluster
-
 A swarm is made up of multiple nodes, which can be either physical or
 virtual machines. The basic steps are:
 
@@ -30,8 +29,7 @@ command to start several virtual machines.
 If you do not have `virtualbox` installed on your machine install it on your 
 machine. Additionally you would require `docker-machine` to be installed on your
 local machine. To install `docker-machine` on please follow instructions at 
-the docker documentation - [Install Docker Machine](https://docs.docker
-.com/machine/install-machine/)
+the docker documentation at [Install Docker Machine](https://docs.docker.com/machine/install-machine/)
 
 To create the virtual machines you can use the command as follows:
 
