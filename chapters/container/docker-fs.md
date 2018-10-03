@@ -66,7 +66,8 @@ necessary, are all managed transparently. Thus achieving the new
 paradigm of *serverless computing*.
 
 As an example, the following command creates a service and deploy it to
-the swarm cluster:
+the swarm cluster, if the port is in use the port ```9001``` used in the command
+can be changed to an available port
 
 :o: Fugang check the command
 
