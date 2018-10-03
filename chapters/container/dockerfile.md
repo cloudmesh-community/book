@@ -57,7 +57,6 @@ necessary python packages
 
 ```
 Flask
-Eve
 ```
 
 The application we install is using a Redis database and a Flask
