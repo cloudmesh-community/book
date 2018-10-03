@@ -1,5 +1,11 @@
 # GraphQL :o:
 
+:o: TODO: the initial tutorial uses the term "repo" and
+"repos". However we shoudl provide terminology that is not
+abbreviated. Please verify if the cahnges are ok and fix it in the
+code. The code for now may still feature repo and repos
+
+
 :o: TODO: use full sentences, there are several ocasions where a
 sentence seems incomplete. such as Examples available at I will fix
 that pariculare example, but can you fix the other sentences ...
