@@ -17,7 +17,7 @@ virtual machines. The basic steps are:
    in various contexts. We use VMs to quickly create a two-machine
    cluster and turn it into a swarm.
 
-## Create a cluster with VirtualBox
+## Create a Swarm Cluster with VirtualBox
 
 In case you do not have access to multiple physical machines, you can
 create a virtual cluster on your machine with the help of virtual
