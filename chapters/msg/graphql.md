@@ -34,7 +34,8 @@ chapter. The GraphQL official documentation is available at
 
 ## GraphQL type system and schema
 
-:o: TODO: no section without initial paragraph
+To get started with GraphQL we will first explore GraphQL type system
+and schema creation.
 
 ### Type System
 
@@ -161,7 +162,6 @@ type Car implements Vehicle {
 }
 ```
 
-
 ### Union Types
 
 As the name suggests, union types represent the union of two or more
@@ -193,7 +193,6 @@ specific to either `Motorcycle` or `Car`.
 }
 ```
 
-
 ## GraphQL Query
 
 An application asks for data from server in form of a GraphQL *query*. 
@@ -209,7 +208,7 @@ When asking the query
 
 ```graphql
 {
-    employee {
+    repo {
         name
     }
 }
@@ -220,13 +219,12 @@ we obtain the following response
 ```json
 {
     "data": {
-        "employee": {
-            "name": "John Doe"
+        "repo": {
+            "name": "cm"
         }
     }
 }
 ```
-
 
 As we see the response data, format looks exactly like the query. This
 way a client knows exactly what data it has to consume. In the previous
@@ -237,9 +235,9 @@ For example the query
 
 ```graphql
 {
-    employer {
+    community {
         name
-        employees {
+        repos {
             name
         }
     }
@@ -251,12 +249,12 @@ returns the response
 ```json
 {
     "data": {
-        "employer": {
-            "name": "Abc Company",
-            "employees": [{
-                "name": "John Doe"
+        "community": {
+            "name": "cloudmesh-community",
+            "repos": [{
+                "name": "S.T.A.R boat"
             }, {
-                "name": "Jon Doe"
+                "name": "book"
             }]
         }
     }
@@ -274,18 +272,14 @@ needed without doing the postprocessing on the client. These
 restricting arguments can be of scalar type, enumeration type and
 others.
 
-Let use look at an example of a query where we only ask for
-emplyees with the age of 29.
-
-:o: TODO: as age discrimination in the US is serious, we want to come
-up with a better example. Or describe a scenario where fecthing the 29
-year olds makes sense. Maybe we can do department?
+Lets look at an example of a query where we only ask for first 3 
+repos in cloudmesh community
 
 ```graphql
 {
-    employees(age: 29) {
+    repos(first: 3) {
         name
-        age
+        url
     }
 }
 ```
@@ -295,22 +289,41 @@ The response will be similar to
 ```json
 {
     "data": {
-        "employees": [{
-            "name": "John Doe",
-            "age": 29
+        "repos": [{
+            "name": "boat",
+            "url": "https://github.com/cloudmesh-community/boat"
         }, {
-            "name": "Jon Doe",
-            "age": 29
+            "name": "book",
+            "url": "https://github.com/cloudmesh-community/book"
+        }, {
+            "name": "case",
+            "url": "https://github.com/cloudmesh-community/case"
         }]
     }
 }
 ```
 
+### Fragments
 
+Lets say for example we have a complex query, which has repetitive 
+fields in it.
 
-### Fragments :o:
-
-:o: this section is unclear. Fragments is not properly defined
+```graphql
+{
+    boatRepoExample: repo(name: boat) {
+        name
+        full_name
+        url
+        description
+    }
+    cloudRepoExample: repo(name: cm) {
+        name
+        full_name
+        url
+        description
+    }
+}
+```
 
 As the query gets bigger and complex, we can use *Fragments* to split 
 it into smaller chunks.  These fragments can then be re-used which can 
@@ -319,18 +332,23 @@ significantly reduce the query query size and also make it more readable.
 A Fragment can be defined as
 
 ```graphql
-fragment employeeInfo on Employer {
+fragment repoInfo on Repo {
     name
-    employees {
-        name
-    }
+    full_name
+    url
+    description
 }
 ```
+
 and can be used in a query like this
+
 ```graphql
 {
-    employer(id: 10) {
-        ...employeeInfo
+    boatRepoExample: repo(name: boat) {
+        ...repoInfo
+    }
+    cloudRepoExample: repo(name: cm) {
+        ...repoInfo
     }
 }
 ```
@@ -339,17 +357,22 @@ The response for this query will look like
 
 ```json
 {
-    "employer": {
-        "name": "Abc Company",
-        "employees": [{
-            "name": "John Doe"
-        }, {
-            "name": "Jon Doe"
-        }]
+    "data": {
+        "boatRepoExample": {
+            "name": "boat",
+            "fullName": "cloudmesh-community/boat",
+            "url": "https://github.com/cloudmesh-community/boat",
+            "description": "S.T.A.R. boat"
+        },
+        "cloudRepoExample": {
+            "name": "cm",
+            "fullName": "cloudmesh-community/cm",
+            "url": "https://github.com/cloudmesh-community/cm",
+            "description": "Cloudmesh v4"
+        }
     }
 }
 ```
-
 
 ### Variables :o:
 
@@ -360,22 +383,23 @@ Variables are used to pass dynamic values to queries. Instead of passing
 hard-coded values to a query, variables can be defined for these values. 
 Now these variables can be passed to queries.
 
-Variables can be defined in the Query variables panel at left bottom of 
-the graphiql client. The variable is defined as a json object and this 
+**Variables can be defined in the Query variables panel at left bottom of 
+the graphiql client**. The variable is defined as a json object and this 
 is how it looks like
 
 ```json
 {
-    "employeeAge": 29
+    "name": "book"
 }
 ```
 
 and it can be used in the query like this
+
 ```graphql
 {
-    employees(age: $employeeAge) {
+    repo(name: $name) {
         name
-        age
+        url
     }
 }
 ```
@@ -385,13 +409,10 @@ which will fetch response
 ```json
 {
     "data": {
-        "employees": [{
-            "name": "John Doe",
-            "age": 29
-        }, {
-            "name": "Jon Doe",
-            "age": 29
-        }]
+        "repo": {
+            "name": "book",
+            "url": "https://github.com/cloudmesh-community/book"
+        }
     }
 }
 ```
@@ -408,39 +429,39 @@ directives
 
 To demonstrate its usage, we define the variable `isAdmin` and assign 
 a value of `true` to it.
+
 ```json
 {
     "isAdmin": true
 }
 ```
-This variable is passed as an argument `showPersonalInfo` to the query. 
+
+This variable is passed as an argument `showOwnerInfo` to the query. 
 This argument is in turn passed to `@include` directive to determine 
-whether to include the `personalInfo` sub-query.
+whether to include the `ownerInfo` sub-query.
 
 ```graphql
 {
-    employees(showPersonalInfo: $isAdmin) {
+    repos(showOwnerInfo: $isAdmin) {
         name
-        age
-        personalInfo @Include(if: $showPersonalInfo) {
-            address
-            contact
+        url
+        ownerInfo @Include(if: $showOwnerInfo) {
+            name
         }
     }
 }
 ```
-Since we have defined `showPersonalInfo` as `true`, the response 
-includes `personalInfo` data.
+Since we have defined `showOwnerInfo` as `true`, the response 
+includes `ownerInfo` data.
 
 ```json
 {
     "data": {
-        "employees": [{
-            "name": "John Doe",
-            "age": 29,
-            "personalInfo": {
-                "address": "remote",
-                "contact": "123456789"
+        "repos": [{
+            "name": "book",
+            "url": "https://github.com/cloudmesh-community/book",
+            "ownerInfo": {
+                "name": "cloudmesh-community"
             }
         }]
     }
@@ -450,51 +471,74 @@ includes `personalInfo` data.
 ### Mutations
 
 Mutations are used to modify server side data. To demonstrate this,
-let us look at the query
+
+let us look at the query and data to be passed along with it
 
 ```graphql
-mutation CreateEmployeeForEmployer($employer: Employer!, $employee: Employee!) {
-    createEmployee(employer: $employer, employee: $employee) {
+mutation CreateRepoForCommunity($community: Community!, $repo: Repo!) {
+    createRepo(community: $community, repo: $repo) {
         name
-        age
+        url
+    }
+}
+```
+```json
+{
+    "community": "cloudmesh-community",
+    "repo": {
+        "name": "cm-burn",
+        "url": "https://github.com/cloudmesh-community/cm-burn"
     }
 }
 ```
 
-```json
-{
-    "employer": "Abc Company",
-    "employee": {
-        "name": "John Doe",
-        "age": 29
-    }
-}
-```
-The response will be as follows, indicating that an employee has been added.
+The response will be as follow, indicating that an employee has been added.
 
 ```json
 {
     "data": {
-        "createEmployee": {
-            "name": "John Doe",
-            "age": 29
+        "createRepo": {
+            "name": "cm-burn",
+            "url": "https://github.com/cloudmesh-community/cm-burn"
         }
     }
 }
 ```
 
 
-### Query Validation :o:
+### Query Validation
 
-Because of use of types in a GraphQL query we can know whether a query
-is valid or not before executing it. This is achieved through
-validators. To use a validator you need to write test cases and
-validate such tests for the.
+GraphQL is a language with strong type system. So requesting and providing
+wrong data will generate an error.
 
-:o: this section is unclear
+For example the query
 
-:o: TODO: Gregor came till here he wills top here. again, maybe we can
-uset the same examples in the intro and the example ...
+```graphql
+{
+    repos {
+        name
+        url
+        type
+    }
+}
+```
+
+which will give response
+
+```json
+{
+    "errors": [{
+        "message": "Cannot query field \"type\" on type \"Repo\".",
+        "locations": [{
+            "line": 5,
+            "column": 3
+        }]
+    }]
+}
+```
+
+In application we need to validate user input. If it is invalid we can 
+use GraphQLError class or python exceptions to raise validation errors.
 
 ## Django for graphQL
 
@@ -510,13 +554,6 @@ however can also be easily added to falsk through plugins.
 :o: the purpose of this section is unclear at this time. Django nd
 flask have advantages and disadvantages.
 
-## GraphQL Implementations :o:
-
-GraphQL is supported in Python, JavaScript, Java, Ruby, C#, Go, PHP,
-Erlang, Scala, Go, Groovy, Elixir.
-
-:o: this is unclear, as we need to distinguish server and client
-
 ## GraphQL-python (Graphene) Example :o:
 
 :o: In this example we will ... intro missing
@@ -530,9 +567,8 @@ command in shell. Always remember to activate virtual environment.
 * :o: TODO: whould we just do a wget or culr on the git example dir
   and cd into it?
 * :o: TODO: you remind me that venv is now part of python 3, so we
-  coudl do an alternative install of python 3 with altinstall and
-  document hat in the pythin section instead of using pyenv
-
+  could do an alternative install of python 3 with altinstall and
+  document that in the python section instead of using pyenv
 
 ```bash
 mkdir -p example/graphql
