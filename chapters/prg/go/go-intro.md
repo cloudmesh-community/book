@@ -17,7 +17,7 @@
 Go is a programming language that has been introduced by Google to
 replace the C++ language. Online documentation about go is available
 also from the official Go [Documentation](https://golang.org/doc/)
-[@go-lang] Web page from which our material is derived.
+[@www-go-lang] Web page from which our material is derived.
 
 The language Go has at its goal to be expressive, concise, clean, and
 efficient. It includes concurrency mechanisms with the goal to make it
@@ -86,9 +86,9 @@ will add them and mark them appropriately.
 
 ---
 
-* [golang.org](http://golang.org/doc/#learning) [@go-lang].
+* [golang.org](http://golang.org/doc/#learning) [@www-go-lang].
 * [Go cheat sheet](https://github.com/a8m/go-lang-cheat-sheet) [?].
-* [The Little Go Book](http://openmymind.net/The-Little-Go-Book/) [@seguin].
+* [The Little Go Book](http://openmymind.net/The-Little-Go-Book/) [@go-seguin].
 * [Learn Go in an Hour - Video](https://www.youtube.com/watch?v=CF9S4QZuV30) _2015-02-15_
 * [Learning to Program in Go](https://www.youtube.com/playlist?list=PLei96ZX_m9sVSEXWwZi8uwd2vqCpEm4m6), a multi-part video training class [?].
 * [Go By Example](http://gobyexample.com/) provides a series of
@@ -108,7 +108,7 @@ will add them and mark them appropriately.
 * [Golangbot](https://golangbot.com/learn-golang-series/) - Tutorials
   to get started with programming in Go [?].
 * [Algorithms to Go](http://yourbasic.org/) - Texts about algorithms
-  and Go, with plenty of code examples [@yourbasic].
+  and Go, with plenty of code examples [@www-go-yourbasic].
 *
   [Go Language Tutorials](https://www.cybrhome.com/topic/go-language-tutorials) - List of Go sites, blogs and tutorials for learning Go language [?].
 * [Golang Development Video Course](https://www.youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY) - A growing list of videos focused purely on Go development [?].
