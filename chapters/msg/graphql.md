@@ -635,26 +635,26 @@ use that for demo.
 Go to root dir of project and execute following command
 
 ```bash
-python manage.py startapp repos
+python manage.py startapp repository
 ```
 
-Open repos/models.py and add following line
+Open Repositories/models.py and add following line
 
 ```python
-class Repo(models.Model):
+class Repository(models.Model):
     url = models.URLField()
     name = models.TextField(blank=False)
     full_name = models.TextField(blank=False)
     description = models.TextField(blank=True)
 ```
 
-Now open cloudmeshrepo/settings.py and append following line into
+Now open cloudmeshRepository/settings.py and append following line into
 INSTALLED_APPS
 
 ```python
 INSTALLED_APPS = (
     # After the graphene_django app
-    'repos',
+    'Repositories',
 )
 ```
 
@@ -670,65 +670,65 @@ python manage.py shell
 
 Last command will open python shell. Execute following command inside
 that shell to create some data. following example data we got from
-github's API https://api.github.com/users/cloudmesh-community/repos.
+github's API https://api.github.com/users/cloudmesh-community/Repositories.
 
 :o: TODO: reformat to 80 lines if possible
 
 ```python
-from repos.models import Repo
-Repo.objects.create(
+from Repositories.models import Repository
+Repository.objects.create(
     name="boat",
     full_name="cloudmesh-community/boat",
     url="https://github.com/cloudmesh-community/boat",
     description="S.T.A.R. boat")
-Repo.objects.create(
+Repository.objects.create(
     name="book",full_name="cloudmesh-community/book",
     url="https://github.com/cloudmesh-community/book",
     description="Gregor von Laszewski")
-Repo.objects.create(name="cm",
+Repository.objects.create(name="cm",
     full_name="cloudmesh-community/cm",
     url="https://github.com/cloudmesh-community/cm",
     description="Cloudmesh v4")
-Repo.objects.create(name="cm-burn",
+Repository.objects.create(name="cm-burn",
     full_name="cloudmesh-community/cm-burn",
     url="https://github.com/cloudmesh-community/cm-burn",
     description="Burns many SD cards so we can build a Raspberry PI cluster")
 exit()
 ```
 
-Now create repos/schema.py with following code. This will introduce
-custom type of Repo and query with resolver for repos.
+Now create Repositories/schema.py with following code. This will introduce
+custom type of Repository and query with resolver for Repositories.
 
 ```python
 import graphene
 from graphene_django import DjangoObjectType
 
-from .models import Repo
+from .models import Repository
 
 
-class RepoType(DjangoObjectType):
+class RepositoryType(DjangoObjectType):
     class Meta:
-        model = Repository
+        model = Repositoriesitory
 
 
 class Query(graphene.ObjectType):
-    repos = graphene.List(RepoType)
+    Repositories = graphene.List(RepositoryType)
 
-    def resolve_repos(self, info, **kwargs):
-        return Repo.objects.all()
+    def resolve_Repositories(self, info, **kwargs):
+        return Repository.objects.all()
 ```
 
-Create cloudmeshrepo/schema.py with following code. It just inherits
-query defind in repos app. This way we are able to isolate schema to
+Create cloudmeshRepository/schema.py with following code. It just inherits
+query defind in Repositories app. This way we are able to isolate schema to
 their apps.
 
 ```python
 import graphene
   
-import repos.schema
+import Repositories.schema
 
 
-class Query(repos.schema.Query, graphene.ObjectType):
+class Query(Repositories.schema.Query, graphene.ObjectType):
     pass
 
 
@@ -737,7 +737,7 @@ schema = graphene.Schema(query=Query)
 ### Querying implemented GraphQL server :o:
 
 Schema is created now to query it we will use GraphiQL which is
-playground for graphql queries. Open cloudmeshrepo/urls.py and append
+playground for graphql queries. Open cloudmeshrepository/urls.py and append
 following code
 
 ```python
