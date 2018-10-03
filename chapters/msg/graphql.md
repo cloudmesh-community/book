@@ -22,7 +22,7 @@ GraphQL is a data query language developed by Faceboo%k.
 GraphQL allows clients to request data they need without thinking
 about the API implementation. It makes application devlopment fast and
 stable because the application has control over the data it needs and
-its format. The benefit of Graphql is also to reduce network I/O since
+its format. The benefit of GraphQL is also to reduce network I/O since
 only the necessary data is transfered from server to client.
 
 Unlike REST APIs, which require loading data via multiple URLs, GraphQL
@@ -45,7 +45,7 @@ and schema creation.
 
 ### Type System
 
-In GraphQL a query is what we request from the graphql server. The
+In GraphQL a query is what we request from the GraphQL server. The
 result will be obtained in a structure defined by type and schema. It
 means we will know ahead of time what we are going to get as
 result. For this to work, the data is often assumed to be structured
@@ -57,7 +57,7 @@ database that containes a number of authors. each author has a
 publication count and a number of coauthors that are identified by
 name. We assume for this simple example that all author names are unique.
 
-Here is how a simple graphQL query would look like
+Here is how a simple GraphQL query would look like
 
 ```graphql
 {
@@ -91,13 +91,13 @@ The response is
 ```
 
 For this to work, we need to define the types that are going to be
-honored by the graphql service so that when a query is recieved by the
+honored by the GraphQL service so that when a query is recieved by the
 server, it is first validated to a schema that defines the types
-contained within the graphql service.
+contained within the GraphQL service.
 
-Hence, types must be defined as part of each graphql service. They are
-defined with the graphql schema language which is programming language
-agnostic. An example of a graphql type is:
+Hence, types must be defined as part of each GraphQL service. They are
+defined with the GraphQL schema language which is programming language
+agnostic. An example of a GraphQL type is:
 
 ```graphql
 type author {
@@ -115,7 +115,7 @@ in the array can be null.
 
 ### Scalar Types
 
-Graphql supports the following scalar types:
+GraphQL supports the following scalar types:
 
 * `String`: UTF8 characters
 * `Int`: 32 bit signed integer
@@ -129,7 +129,7 @@ Graphql supports the following scalar types:
 example
 
 `Enums` also are scalar types which define a certain set of restricted
-values. When a graphql schema defines a field of enum type, we expect
+values. When a GraphQL schema defines a field of enum type, we expect
 that the field's value be of the type enum values only. An example of
 an enum type is
 
@@ -143,7 +143,7 @@ enum ContainerTYpe {
 
 ### Interfaces
 
-Similar to any programming language, the graphql type system also supports
+Similar to any programming language, the GraphQL type system also supports
 interfaces. When a type implements an interface, it needs to specify all the
 fields that are defined through the interface.
 
@@ -189,7 +189,7 @@ the `|` charater to indicate the union operator.
 union COmputeType = Container | VirtualMachine
 ```
 
-Now when we write a graphql query to fetch the `ComputeType`
+Now when we write a GraphQL query to fetch the `ComputeType`
 information, we can ask some of the common fields and some of the
 specific fields conditionally. In the next example we request
 `AllComputeTypes` with common fields like `Id`, `Name` and fields
@@ -219,7 +219,7 @@ section we describe how to use them.
 ### Fields
 
 A very simple definition of a query is to ask for specific fields
-that belong to an object stored in graphQL.
+that belong to an object stored in GraphQL.
 
 In the next examples we use data related to repositories in github. 
 
@@ -248,7 +248,7 @@ we obtain the following response
 As we see the response data, format looks exactly like the query. This
 way a client knows exactly what data it has to consume. In the previous
 example, the `name` field returns the data of type `String`. Clients can 
-also ask for an object representing any match within the graphQL database.
+also ask for an object representing any match within the GraphQL database.
 
 For example the query
 
@@ -396,7 +396,7 @@ The response for this query will look like
 ### Variables :o:
 
 :o: this section needs to be improved as it can not be understood by a
-non graphql expert. for example the term interpolate is not defined.
+non GraphQL expert. for example the term interpolate is not defined.
 
 Variables are used to pass dynamic values to queries. Instead of passing 
 hard-coded values to a query, variables can be defined for these values. 
@@ -440,7 +440,7 @@ which will fetch response
 
 Directives are used to change the structure of queries at runtime using
 variables. Directives provide a way to describe additional options to 
-graphql executors. Currently core graphql specification supports two 
+GraphQL executors. Currently core GraphQL specification supports two 
 directives 
 
 * `@skip (if: Boolean)` - It skips the field if argument is true
@@ -559,7 +559,7 @@ which will give response
 In application we need to validate user input. If it is invalid we can 
 use GraphQLError class or python exceptions to raise validation errors.
 
-## Django for graphQL
+## Django for GraphQL
 
 Django is a very popular python web framework which includes a lot of
 boilerplate code. Due to this its footprint is larger than other
@@ -743,7 +743,7 @@ schema = graphene.Schema(query=Query)
 ### Querying implemented GraphQL server :o:
 
 Schema is created now to query it we will use GraphiQL which is
-playground for graphql queries. Open cloudmeshrepository/urls.py and append
+playground for GraphQL queries. Open cloudmeshrepository/urls.py and append
 following code
 
 ```python
@@ -889,17 +889,17 @@ And this will not just create a new repository but also get the newly added repo
 
 ### GraphQL Authentication :o:
 
-There a few ways to add authentication to your graphql server
+There a few ways to add authentication to your GraphQL server
 
 * Add a REST Api endpoint which will take care of authenticating the
-  user and only the logged in users can make graphql queries. This
-  method can also be used to restrict only a subset of graphql
+  user and only the logged in users can make GraphQL queries. This
+  method can also be used to restrict only a subset of GraphQL
   queries. This is ideal for existing applications, which have REST
-  endpoints, and which are trying to migrate over to graphql.
-* Add basic authentication to graphql server which will just accept
+  endpoints, and which are trying to migrate over to GraphQL.
+* Add basic authentication to GraphQL server which will just accept
   credentials in raw format and once authenticated, logged in user can
-  start graphql querying
-* Add JSON Web Token authentication to graphql server, since most of
+  start GraphQL querying
+* Add JSON Web Token authentication to GraphQL server, since most of
   the applications these days are stateless.
 
 ### JSON Web Authentication :o:
@@ -907,10 +907,10 @@ There a few ways to add authentication to your graphql server
 This is a more secure and sophisticated way of authentication. Client
 has to provide username and password to mutate a token which has
 limited expiry time. Once token is generated, it needs to be provided
-with each subsequent graphql api calls which indicates graphql server
+with each subsequent GraphQL api calls which indicates GraphQL server
 of authenticated requests.
 
-To enable JWT authentication in your graphql server, you need to
+To enable JWT authentication in your GraphQL server, you need to
 install django-graphql-jwt. You can add this settings to settings.py
 file.
 
@@ -972,7 +972,7 @@ class Query(graphene.ObjectType):
         return Repository.objects.all()
 ```
 
-Now if you try to query repositories from graphql, you will see this error
+Now if you try to query repositories from GraphQL, you will see this error
 
 ```json
 {
@@ -1032,7 +1032,7 @@ Result obtained from running this command:
 Clearly as you can see the output is not well formatted and hence not
 the preferred way.
 
-* Install graphql client like Insomnia or Altair Advantage of using
+* Install GraphQL client like Insomnia or Altair Advantage of using
   these clients is that they are much user friendly and provide a well
   formatted json output.
 
@@ -1040,10 +1040,10 @@ JWT tokens are bearer tokens which need to be passed in HTTP
 authorization header. JWT tokens are very safe against CSRF attacks
 and are trusted and verified since they are digitally signed.
 
-Find more about JWT tockens at [@jwt-tockens] and graphql
+Find more about JWT tockens at [@jwt-tockens] and GraphQL
 authentication at [@medium-graphql]
 
-Examples for graphql are available at:
+Examples for GraphQL are available at:
 
 * <https://github.com/cloudmesh-community/book/tree/master/examples/graphql/> and [@www-howtographql]
 
@@ -1058,7 +1058,7 @@ $ cd grpahql
 
 ### GitHub API v4 :o:
 
-GitHub has implemented API v4 using graphql which allows you to query
+GitHub has implemented API v4 using GraphQL which allows you to query
 or mutate data for which you have access. To access GitHub API v4
 first we need to install [GraphiQL](https://github.com/skevy/graphiql-app).
 
@@ -1243,19 +1243,19 @@ type Car {
 }
 ``` 
 
-* Graphql is gaining momentum as its community, support and enthusiasm
-  is growing. Many graphql editors, IDEs and packages are getting
+* GraphQL is gaining momentum as its community, support and enthusiasm
+  is growing. Many GraphQL editors, IDEs and packages are getting
   added day by day.
   
 ### Disadvantages :o:
 
-* Graphql query can get very complex. Client may not necessarily know
+* GraphQL query can get very complex. Client may not necessarily know
   how expensive the queries can be for server to go and gather the
   data. This can be overcome by limiting the query depth, recursion,
   etc.
-* Caching gets pretty tricky and messy in case of graphql. In REST,
+* Caching gets pretty tricky and messy in case of GraphQL. In REST,
   you can have seperate API url for each resource requested, caching
-  can be done at this resource level. However in graphql you can have
+  can be done at this resource level. However in GraphQL you can have
   different queries but they can operate over a single API url. This
   means that caching needs to be done at the field level rather, and
   hence it is difficult.
@@ -1263,11 +1263,11 @@ type Car {
 
 ## Conclusion :o:
 
-In general there are many reasons to have graphql in our software
+In general there are many reasons to have GraphQL in our software
 ecosystem. Beauty of it lies in the flexibility and extensiveness it
 provides and also fits well with the microservices architecture which
 many are moving towards. Already big players like Github, Pinterest,
 Intuit, Coursera, Shopify, etc. are using it.  With that being said,
 REST APIs still have it is own place and may prove better choice in
-certain use cases. Both REST and graphql have some tradeoffs which
+certain use cases. Both REST and GraphQL have some tradeoffs which
 need to be understood before being considered.
