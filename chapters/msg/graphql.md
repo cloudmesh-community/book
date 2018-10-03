@@ -11,7 +11,7 @@ adresses, and OS, and things like that relating it to cloud.
 
 ## Introduction
 
-GraphQL is a data query language developed by Facebook. 
+GraphQL is a data query language developed by Faceboo%k. 
 
 GraphQL allows clients to request data they need without thinking
 about the API implementation. It makes application devlopment fast and
@@ -119,16 +119,19 @@ Graphql supports the following scalar types:
 
 ### Enumeration Types
 
+:o: the car example needs to be replaced with a compute resourec
+example
+
 `Enums` also are scalar types which define a certain set of restricted
 values. When a graphql schema defines a field of enum type, we expect
 that the field's value be of the type enum values only. An example of
 an enum type is
 
 ```graphql
-enum FuelType {
-    Petrol
-    Diesel
-    Hybrid
+enum ContainerTYpe {
+    Docker
+    Kubernetes
+    DockerSwarm
 }
 ```
 
@@ -139,34 +142,36 @@ interfaces. When a type implements an interface, it needs to specify all the
 fields that are defined through the interface.
 
 We illustrate this in the following example, where we define simple
-`Vehicle` interface type. This interface declares `Id`, `Name`
-and `Wheels` fields. This means that a `Motorcycle` and a `Car` both
-of which implement `Vehicle`, and must have the fields defined in the
+`ComputeService` interface type. This interface declares `Id`, `Name`
+and `Memory` fields. This means that a `Container` and a `VirtualMachine` both
+of which implement `ComputeService`, and must have the fields defined in the
 interface. They may or may not have additional fields like we
-demonstrate in our example with the field `Make` in case of Motorcycle
-and Fuel in case of the `Car`.
+demonstrate in our example with the field `ContainerBackend` in case of Container
+and `VMBAckend` in case of the `VirtualMachine`.
 
 ```graphql
-interface Vehicle {
+interface ComputeService {
     Id: ID!
     Name: String!
-    Wheels: Int!
+    Memory: Int!
 }
 
-type Motorcycle implements Vehicle {
+type Container implements ComputeService {
     Id: ID!
     Name: String!
-    Wheels: Int!
-    Make: String!
+    Memory: Int!
+    Type: ContainerType!
 }
 
-type Car implements Vehicle {
+type VirtualMachine implements Vehicle {
     Id: ID!
     Name: String!
-    Wheels: Int!
-    Fuel: FuelType
+    Memory: Int!
+    User: String!
 }
 ```
+
+where user indocates the name of the user to log into this vm.
 
 ### Union Types
 
@@ -175,25 +180,25 @@ types. Here is how we can define a union type. As you can see we use
 the `|` charater to indicate the union operator.
 
 ```graphql
-union VehicleType = Motorcycle | Car
+union COmputeType = Container | VirtualMachine
 ```
 
-Now when we write a graphql query to fetch the `VehicleType`
+Now when we write a graphql query to fetch the `ComputeType`
 information, we can ask some of the common fields and some of the
 specific fields conditionally. In the next example we request
-`AllVehicleTypes` with common fields like `Id`, `Name` and fields
-specific to either `Motorcycle` or `Car`.
+`AllComputeTypes` with common fields like `Id`, `Name` and fields
+specific to either `VirtualMachine` or `Container`.
 
 ```graphql
 {
-    AllVehicleTypes {
+    AllComputeTypes {
         Id
         Name
-        ... on Motorcyle {
-            Make
+        ... on VirtualMachine {
+            User
         }
-        ... on Car {
-            Fuel
+        ... on Container {
+            Type
         }
     }
 }
@@ -210,11 +215,13 @@ section we describe how to use them.
 A very simple definition of a query is to ask for specific fields
 that belong to an object stored in graphQL.
 
+In the next examples we use data related to repositories in github. 
+
 When asking the query
 
 ```graphql
 {
-    repo {
+    repository {
         name
     }
 }
@@ -225,7 +232,7 @@ we obtain the following response
 ```json
 {
     "data": {
-        "repo": {
+        "repository": {
             "name": "cm"
         }
     }
@@ -243,7 +250,7 @@ For example the query
 {
     community {
         name
-        repos {
+        repositories {
             name
         }
     }
@@ -257,7 +264,7 @@ returns the response
     "data": {
         "community": {
             "name": "cloudmesh-community",
-            "repos": [{
+            "repositories": [{
                 "name": "S.T.A.R boat"
             }, {
                 "name": "book"
@@ -279,11 +286,11 @@ restricting arguments can be of scalar type, enumeration type and
 others.
 
 Lets look at an example of a query where we only ask for first 3 
-repos in cloudmesh community
+repositories in cloudmesh community
 
 ```graphql
 {
-    repos(first: 3) {
+    repositories(first: 3) {
         name
         url
     }
@@ -295,7 +302,7 @@ The response will be similar to
 ```json
 {
     "data": {
-        "repos": [{
+        "repositories": [{
             "name": "boat",
             "url": "https://github.com/cloudmesh-community/boat"
         }, {
@@ -316,13 +323,13 @@ fields in it.
 
 ```graphql
 {
-    boatRepoExample: repo(name: boat) {
+    boatRepositoryExample: repository(name: boat) {
         name
         full_name
         url
         description
     }
-    cloudRepoExample: repo(name: cm) {
+    cloudRepositoryExample: repository(name: cm) {
         name
         full_name
         url
@@ -338,7 +345,7 @@ significantly reduce the query query size and also make it more readable.
 A Fragment can be defined as
 
 ```graphql
-fragment repoInfo on Repo {
+fragment repositoryInfo on Repository {
     name
     full_name
     url
@@ -350,11 +357,11 @@ and can be used in a query like this
 
 ```graphql
 {
-    boatRepoExample: repo(name: boat) {
-        ...repoInfo
+    boatRepositoryExample: repository(name: boat) {
+        ...repositoryInfo
     }
-    cloudRepoExample: repo(name: cm) {
-        ...repoInfo
+    cloudRepositoryExample: repository(name: cm) {
+        ...repositoryInfo
     }
 }
 ```
@@ -364,13 +371,13 @@ The response for this query will look like
 ```json
 {
     "data": {
-        "boatRepoExample": {
+        "boatRepositoryExample": {
             "name": "boat",
             "fullName": "cloudmesh-community/boat",
             "url": "https://github.com/cloudmesh-community/boat",
             "description": "S.T.A.R. boat"
         },
-        "cloudRepoExample": {
+        "cloudRepositoryExample": {
             "name": "cm",
             "fullName": "cloudmesh-community/cm",
             "url": "https://github.com/cloudmesh-community/cm",
@@ -403,7 +410,7 @@ and it can be used in the query like this
 
 ```graphql
 {
-    repo(name: $name) {
+    repository(name: $name) {
         name
         url
     }
@@ -415,7 +422,7 @@ which will fetch response
 ```json
 {
     "data": {
-        "repo": {
+        "repository": {
             "name": "book",
             "url": "https://github.com/cloudmesh-community/book"
         }
@@ -448,7 +455,7 @@ whether to include the `ownerInfo` sub-query.
 
 ```graphql
 {
-    repos(showOwnerInfo: $isAdmin) {
+    repositories(showOwnerInfo: $isAdmin) {
         name
         url
         ownerInfo @Include(if: $showOwnerInfo) {
@@ -463,7 +470,7 @@ includes `ownerInfo` data.
 ```json
 {
     "data": {
-        "repos": [{
+        "repositories": [{
             "name": "book",
             "url": "https://github.com/cloudmesh-community/book",
             "ownerInfo": {
@@ -481,8 +488,8 @@ Mutations are used to modify server side data. To demonstrate this,
 let us look at the query and data to be passed along with it
 
 ```graphql
-mutation CreateRepoForCommunity($community: Community!, $repo: Repo!) {
-    createRepo(community: $community, repo: $repo) {
+mutation CreateRepositoryForCommunity($community: Community!, $repository: Repository!) {
+    createRepository(community: $community, repository: $repository) {
         name
         url
     }
@@ -491,7 +498,7 @@ mutation CreateRepoForCommunity($community: Community!, $repo: Repo!) {
 ```json
 {
     "community": "cloudmesh-community",
-    "repo": {
+    "repository": {
         "name": "cm-burn",
         "url": "https://github.com/cloudmesh-community/cm-burn"
     }
@@ -503,7 +510,7 @@ The response will be as follow, indicating that a repository has been added.
 ```json
 {
     "data": {
-        "createRepo": {
+        "createRepository": {
             "name": "cm-burn",
             "url": "https://github.com/cloudmesh-community/cm-burn"
         }
@@ -521,7 +528,7 @@ For example the query
 
 ```graphql
 {
-    repos {
+    repositories {
         name
         url
         type
@@ -534,7 +541,7 @@ which will give response
 ```json
 {
     "errors": [{
-        "message": "Cannot query field \"type\" on type \"Repo\".",
+        "message": "Cannot query field \"type\" on type \"Repository\".",
         "locations": [{
             "line": 5,
             "column": 3
@@ -590,8 +597,8 @@ virtual environment. Execute following commands
 pip install graphene==2.0.1 graphene-django==2.0.0 
 pip install django==2.0.2 django-filter==1.1.0
 pip install django-graphql-jwt==0.1.5
-django-admin startproject cloudmeshrepo
-cd cloudmeshrepo
+django-admin startproject cloudmeshrepository
+cd cloudmeshrepository
 python manage.py migrate
 python manage.py runserver
 ```
