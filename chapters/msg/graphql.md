@@ -492,7 +492,7 @@ mutation CreateRepoForCommunity($community: Community!, $repo: Repo!) {
 }
 ```
 
-The response will be as follow, indicating that an employee has been added.
+The response will be as follow, indicating that a repository has been added.
 
 ```json
 {
