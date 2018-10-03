@@ -112,6 +112,7 @@
         - chapters/SECTION/SECTION-DOCKER.md:
             - chapters/container/docker-intro.md
             - chapters/container/docker-local.md
+            - chapters/container/dockerfile.md
             - chapters/container/dockerhub.md
             - chapters/container/docker-fs.md
         - chapters/SECTION/SECTION-DOCKER-PAAS.md:
