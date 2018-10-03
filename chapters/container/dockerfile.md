@@ -62,7 +62,7 @@ Eve
 
 The application we install is using a Redis database and a Flask
 service that includes a visit counter and returns the hostname of the
-fisiting host. IT is stored in the file app.py
+fisiting host. It is stored in the file app.py
 
 ```
 from eve import Eve
