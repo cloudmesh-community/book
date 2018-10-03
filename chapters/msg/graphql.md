@@ -34,7 +34,8 @@ chapter. The GraphQL official documentation is available at
 
 ## GraphQL type system and schema
 
-:o: TODO: no section without initial paragraph
+To get started with GraphQL we will first explore GraphQL type system
+and schema creation.
 
 ### Type System
 
@@ -209,7 +210,7 @@ When asking the query
 
 ```graphql
 {
-    employee {
+    repo {
         name
     }
 }
@@ -220,13 +221,12 @@ we obtain the following response
 ```json
 {
     "data": {
-        "employee": {
-            "name": "John Doe"
+        "repo": {
+            "name": "cm"
         }
     }
 }
 ```
-
 
 As we see the response data, format looks exactly like the query. This
 way a client knows exactly what data it has to consume. In the previous
@@ -237,9 +237,9 @@ For example the query
 
 ```graphql
 {
-    employer {
+    community {
         name
-        employees {
+        repos {
             name
         }
     }
@@ -251,12 +251,12 @@ returns the response
 ```json
 {
     "data": {
-        "employer": {
-            "name": "Abc Company",
-            "employees": [{
-                "name": "John Doe"
+        "community": {
+            "name": "Cloudmesh",
+            "repos": [{
+                "name": "S.T.A.R boat"
             }, {
-                "name": "Jon Doe"
+                "name": "book"
             }]
         }
     }
@@ -274,18 +274,14 @@ needed without doing the postprocessing on the client. These
 restricting arguments can be of scalar type, enumeration type and
 others.
 
-Let use look at an example of a query where we only ask for
-emplyees with the age of 29.
-
-:o: TODO: as age discrimination in the US is serious, we want to come
-up with a better example. Or describe a scenario where fecthing the 29
-year olds makes sense. Maybe we can do department?
+Lets look at an example of a query where we only ask for first 3 
+repos in cloudmesh community
 
 ```graphql
 {
-    employees(age: 29) {
+    repos(first: 3) {
         name
-        age
+        url
     }
 }
 ```
@@ -295,12 +291,12 @@ The response will be similar to
 ```json
 {
     "data": {
-        "employees": [{
-            "name": "John Doe",
-            "age": 29
+        "repos": [{
+            "name": "boat",
+            "url": "https://github.com/cloudmesh-community/boat"
         }, {
-            "name": "Jon Doe",
-            "age": 29
+            "name": "book",
+            "url": "https://github.com/cloudmesh-community/book"
         }]
     }
 }
@@ -308,9 +304,27 @@ The response will be similar to
 
 
 
-### Fragments :o:
+### Fragments
 
-:o: this section is unclear. Fragments is not properly defined
+Lets say for example we have a complex query, which has repetitive 
+fields in it.
+
+```graphql
+{
+    boatRepoExample: repo(name: boat) {
+        name
+        full_name
+        url
+        description
+    }
+    cloudRepoExample: repo(name: cm) {
+        name
+        full_name
+        url
+        description
+    }
+}
+```
 
 As the query gets bigger and complex, we can use *Fragments* to split 
 it into smaller chunks.  These fragments can then be re-used which can 
@@ -319,18 +333,23 @@ significantly reduce the query query size and also make it more readable.
 A Fragment can be defined as
 
 ```graphql
-fragment employeeInfo on Employer {
+fragment repoInfo on Repo {
     name
-    employees {
-        name
-    }
+    full_name
+    url
+    description
 }
 ```
+
 and can be used in a query like this
+
 ```graphql
 {
-    employer(id: 10) {
-        ...employeeInfo
+    boatRepoExample: repo(name: boat) {
+        ...repoInfo
+    }
+    cloudRepoExample: repo(name: cm) {
+        ...repoInfo
     }
 }
 ```
@@ -339,13 +358,19 @@ The response for this query will look like
 
 ```json
 {
-    "employer": {
-        "name": "Abc Company",
-        "employees": [{
-            "name": "John Doe"
-        }, {
-            "name": "Jon Doe"
-        }]
+    "data": {
+        "boatRepoExample": {
+            "name": "boat",
+            "fullName": "cloudmesh-community/boat",
+            "url": "https://github.com/cloudmesh-community/boat",
+            "description": "S.T.A.R. boat"
+        },
+        "cloudRepoExample": {
+            "name": "cm",
+            "fullName": "cloudmesh-community/cm",
+            "url": "https://github.com/cloudmesh-community/cm",
+            "description": "Cloudmesh v4"
+        }
     }
 }
 ```
@@ -371,6 +396,7 @@ is how it looks like
 ```
 
 and it can be used in the query like this
+
 ```graphql
 {
     employees(age: $employeeAge) {
@@ -408,11 +434,13 @@ directives
 
 To demonstrate its usage, we define the variable `isAdmin` and assign 
 a value of `true` to it.
+
 ```json
 {
     "isAdmin": true
 }
 ```
+
 This variable is passed as an argument `showPersonalInfo` to the query. 
 This argument is in turn passed to `@include` directive to determine 
 whether to include the `personalInfo` sub-query.
@@ -470,7 +498,7 @@ mutation CreateEmployeeForEmployer($employer: Employer!, $employee: Employee!) {
     }
 }
 ```
-The response will be as follows, indicating that an employee has been added.
+The response will be as follow, indicating that an employee has been added.
 
 ```json
 {
@@ -484,17 +512,39 @@ The response will be as follows, indicating that an employee has been added.
 ```
 
 
-### Query Validation :o:
+### Query Validation
 
-Because of use of types in a GraphQL query we can know whether a query
-is valid or not before executing it. This is achieved through
-validators. To use a validator you need to write test cases and
-validate such tests for the.
+GraphQL is a language with strong type system. So requesting and providing
+wrong data will generate an error.
 
-:o: this section is unclear
+For example the query
 
-:o: TODO: Gregor came till here he wills top here. again, maybe we can
-uset the same examples in the intro and the example ...
+```graphql
+{
+    repos {
+        name
+        url
+        type
+    }
+}
+```
+
+which will give response
+
+```json
+{
+    "errors": [{
+        "message": "Cannot query field \"type\" on type \"Repo\".",
+        "locations": [{
+            "line": 5,
+            "column": 3
+        }]
+    }]
+}
+```
+
+In application we need to validate user input. If it is invalid we can 
+use GraphQLError class or python exceptions to raise validation errors.
 
 ## Django for graphQL
 
@@ -509,13 +559,6 @@ however can also be easily added to falsk through plugins.
 
 :o: the purpose of this section is unclear at this time. Django nd
 flask have advantages and disadvantages.
-
-## GraphQL Implementations :o:
-
-GraphQL is supported in Python, JavaScript, Java, Ruby, C#, Go, PHP,
-Erlang, Scala, Go, Groovy, Elixir.
-
-:o: this is unclear, as we need to distinguish server and client
 
 ## GraphQL-python (Graphene) Example :o:
 
