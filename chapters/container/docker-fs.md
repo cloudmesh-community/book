@@ -9,15 +9,15 @@ Currently we have deployed Docker swarm on Echo.
 
 You will need an account on FutureSystems and be enrolled in an active
 project. To verify, try to see if you can log into
-india.futuresystems.org. You need to be a member of a valid
+victor.futuresystems.org. You need to be a member of a valid
 FutureSystems project, and had submitted an ssh public key via the
 FutureSystems portal.
 
-For 2018 you need to be in the following project:
+For Fall 2018 you need to be in the following project:
 
-<https://portal.futuresystems.org/project/537>
+<https://portal.futuresystems.org/project/553>
 
-If your access to the india host has been verified, try to login to the
+If your access to the victor host has been verified, try to login to the
 docker swarm head node. To conveniently do this let us define some Linux
 environment variables to simplify the access and the material presented
 here. You can place them even in your `.bashrc` or `.bash_profile` so
