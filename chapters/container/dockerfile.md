@@ -1,7 +1,4 @@
-# Dockefile :o:
-
-:o: TODO: THis section is untested and it would be best to do our own
-REST example.
+# Dockefile
 
 In order for us to build containers, we need to know what is in the
 container and how to create an image representing a container. To do
@@ -22,8 +19,8 @@ It os best to start with an empty directory in which we create a
 Dockerfile.
 
 ```console
-$ mkdir docker-example
-$ cd docker-example
+$ mkdir ~/cloudmesh/docker
+$ cd ~/cloudmesh/docker
 ```
 
 Next, we create an empty file called `Dockerfile`
@@ -32,15 +29,10 @@ Next, we create an empty file called `Dockerfile`
 $ touch Dockerfile
 ```
 
-:warning: :warning: :warning: :warning:
-WE WANT A BETTER EXAMPLE
-:warning: :warning: :warning: :warning:
-
 We copy the following contents into the Dockerfile and after that
 create a simple REST service
 
 ```
-# https://docs.docker.com/get-started/part2/#publish-the-image
 # Use an official Python runtime as a parent image
 FROM python:3.7-slim
 
@@ -69,14 +61,8 @@ necessary python packages
 requirements.txt
 
 ```
-# https://docs.docker.com/get-started/part2/#publish-the-image
 Flask
-Redis
-app.py
-from flask import Flask
-from redis import Redis, RedisError
-import os
-import socket
+Eve
 ```
 
 The application we install is using a Redis database and a Flask
@@ -84,27 +70,24 @@ service that includes a visit counter and returns the hostname of the
 fisiting host. IT is stored in the file app.py
 
 ```
-# https://docs.docker.com/get-started/part2/#publish-the-image
-# Connect to Redis
-redis = Redis(host="redis", db=0, socket_connect_timeout=2, socket_timeout=2)
+from eve import Eve
+from flask import jsonify
+import os
 
-app = Flask(__name__)
+app = Eve ()
 
-@app.route("/")
-def hello():
-    try:
-        visits = redis.incr("counter")
-    except RedisError:
-        visits = "<i>cannot connect to Redis, counter disabled</i>"
+@app.route('/student/albert')
+def alberts_information():
+    data = {
+        'firstname': 'Albert',
+        'lastname': 'Zweistsein',
+        'university': 'Indiana University',
+        'email': 'albert@example.com'
+        }
+    return jsonify(**data)
 
-    html = "<h3>Hello {name}!</h3>" \
-           "<b>Hostname:</b> {hostname}<br/>" \
-           "<b>Visits:</b> {visits}"
-    return html.format(name=os.getenv("NAME", "world"),
-           hostname=socket.gethostname(), visits=visits)
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+if __name__ == '__main__':
+    app.run(debug=True, host="127.0.0.1")”
 ```
 
 
@@ -125,7 +108,7 @@ Your docker container will run and you can visit it by using the
 command
 
 ```
-$ curl http://localhost:4000
+$ curl http://localhost:4000/student/albert
 ```
 
 To stop the container do a
