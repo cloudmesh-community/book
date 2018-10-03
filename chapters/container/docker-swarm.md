@@ -28,7 +28,10 @@ box. Instead of using `vagrant` we can use the built in `docker-machine`
 command to start several virtual machines. 
 
 If you do not have `virtualbox` installed on your machine install it on your 
-machine. 
+machine. Additionally you would require `docker-machine` to be installed on your
+local machine. To install `docker-machine` on please follow instructions at 
+the docker documentation - [Install Docker Machine](https://docs.docker
+.com/machine/install-machine/)
 
 To create the virtual machines you can use the command as follows:
 
