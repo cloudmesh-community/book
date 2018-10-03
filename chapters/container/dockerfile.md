@@ -107,7 +107,7 @@ $ curl http://localhost:4000/student/albert
 To stop the container do a
 
 ```
-$ docker ls
+$ docker ps
 ```
 
 and locate the id of the contehaine 
