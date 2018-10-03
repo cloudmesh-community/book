@@ -102,7 +102,7 @@ showcase an example.
 
 ##### OSX
 
-```console
+```bash
 $ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 ```
 
@@ -126,13 +126,13 @@ directory.
 
 ##### Linux
 
-```console
+```bash
 $ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
 ```
 
 Installing KVM2 is important for Ubuntu distributions
 
-```console
+```bash
 $ sudo apt install libvirt-bin qemu-kvm
 $ sudo usermod -a -G libvirtd $(whoami)
 $ newgrp libvirtd
@@ -143,7 +143,7 @@ libraries for windows installation.
 
 Then install the drivers for KVM2,
 
-```console
+```bash
 $ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machine-driver-kvm2 && chmod +x docker-machine-driver-kvm2 && sudo mv docker-machine-driver-kvm2 /usr/bin/
 ```
 
@@ -151,13 +151,13 @@ $ curl -LO https://storage.googleapis.com/minikube/releases/latest/docker-machin
 
 ##### OSX Minikube Start
 
-```console
+```bash
 $ minikube start
 ```
 
 ##### Ubuntu Minikube Start
 
-```console
+```bash
 $ minikube start --vm-driver=kvm2
 ```
 
@@ -169,20 +169,20 @@ administrator. If you are an administrator it will run automatically but
 if you are not please make sure you provide the admin login information
 in the pop up.
 
-```console
+```bash
 $ cd  C:\Users\<username>\Documents\cloudmesh
 $ .\minikube.exe start --vm-driver="virtualbox"
 ```
 
 ### Create a deployment
 
-```console
+```bash
 $ kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
 ```
 
-### Expose the service
+### Expose the servi
 
-```console
+```bash
 $ kubectl expose deployment hello-minikube --type=NodePort
 ```
 
@@ -190,25 +190,25 @@ $ kubectl expose deployment hello-minikube --type=NodePort
 
 This step is to make sure you have a pod up and running.
 
-```console
+```bash
 $ kubectl get pod
 ```
 
 ### Call service api
 
-```console
+```bash
 $ curl $(minikube service hello-minikube --url)
 ``
 
 ### Take a look from Dashboard
 
-```console
+```bash
 $ minikube dashboard
 ```
 
 If you want to get an interactive dashboard,
 
-```console
+```bash
 $ minikube dashboard --url=true
 http://192.168.99.101:30000
 ```
@@ -218,7 +218,7 @@ provide a GUI dashboard regarding minikube.
 
 ### Delete the service and deployment
 
-```console
+```bash
 $ kubectl delete service hello-minikube
 $ kubectl delete deployment hello-minikube
 ```
@@ -227,7 +227,7 @@ $ kubectl delete deployment hello-minikube
 
 For all platforms we can use the following command.
 
-```console
+```bash
 $ minikube stop
 ```
 
