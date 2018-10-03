@@ -1,4 +1,4 @@
-# Dockerized REST Service 
+# Docker Flask REST Service 
 
 We discuss how to use Docker to deploy a REST service designed using
 Python Flask.
