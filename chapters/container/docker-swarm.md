@@ -24,10 +24,13 @@ virtual machines. The basic steps are:
 
 In case you do not have access to multiple physical machines, you can
 create a virtual cluster on your machine with the help of virtual
-box. Instead of using `vagrant` we can use the build in docker-machine
+box. Instead of using `vagrant` we can use the built in `docker-machine`
 command to start several virtual machines. 
 
-To create tem, use the command as follows:
+If you do not have `virtualbox` installed on your machine install it on your 
+machine. 
+
+To create the virtual machines you can use the command as follows:
 
 ```bash
 host$ docker-machine create --driver virtualbox myvm1
