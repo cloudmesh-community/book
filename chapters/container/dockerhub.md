@@ -32,7 +32,7 @@ variable DOCKERHUB to indicate yourusername. It is easiset if you set it in
 your shell with
 
 ```bash
-$ export DOCKERHUB=<PUT YOUR DOCKER USERNAME HERE> 
+local$ export DOCKERHUB=<PUT YOUR DOCKER USERNAME HERE> 
 ```
 
 ## Searching for Docker Images
@@ -44,8 +44,9 @@ terminal and run the *docker search* command. For example, the following
 command searches for centOS images:
 
 ```bash
-docker search centos
+local$ sudo docker search centos
 ```
+
 
 you will see output similar to:
 
@@ -55,6 +56,18 @@ you will see output similar to:
 | ansible/centos7 | Ansible on Centos7 | 105  |          | [OK]      |
 
 ...
+
+If you do not want to use sudo with docker command each time you need to add 
+the current user into the docker group. You can do that using the following 
+command.
+
+```bash
+local$ sudo usermod -aG docker ${USER}
+local$ su - ${USER}
+```
+
+This will prompt you to enter the password for the current user. Now you 
+should be able to execute the above command without using sudo.
 
 
 Official repositories in dockerhub are public, certified repositories
@@ -76,25 +89,25 @@ A particular image (take centos as an example) can be pulled using the
 following command:
 
 ```bash
-$ docker pull centos
+local$ docker pull centos
 ```
 Tags can be used to specify the image to pull. By default the tag is
 latest, therefore the previous command is the same as the following:
 
 ```bash
-$ docker pull centos:latest
+local$ docker pull centos:latest
 ```
 
 You can use a different tag:
 
 ```bash
-$ docker pull centos:6
+local$ docker pull centos:6
 ```
 
 To check the existing local docker images, run the following command:
 
 ```bash
-$ docker images
+local$ docker images
 ```
 
 The results show:
@@ -117,15 +130,17 @@ When creating a new repository, you can choose to put it in your Docker
 ID namespace, or that of any organization that you are in the owners
 team [@hid-sp18-405-tutorial-dockerhub-repository].
 
-As an example, we created a repository cloudtechnology with the name
-space `$DOCKERHUB`. Hence the full name is `$DOCKERHUB`/cloudtechnology
+As an example, we created a repository cloudtechnology with the namespace 
+`$DOCKERHUB` (here `DOCKERHUB` is your docker hub username). Hence the full name
+ is `$DOCKERHUB`/cloudtechnology
 
 ## Pushing Images
 
 To push an image to the repository created, the following steps can be
 followed.
 
-First, log into Docker Hub from the command line by specifying the username
+First, log into Docker Hub from the command line by specifying the username. 
+If you encounter permission issues please use `sudo` in front of the command
 
 ```bash
 $ docker login --username=$DOCKERHUB
@@ -152,7 +167,8 @@ the result looks similar to:
 | centos        | latest | 26cb1244b171 | 2 weeks ago | 195MB  |
 | centos        | latest | 2d194b392dd1 | 2 weeks ago | 195MB  |
 
-Here, the the image with ID 1f26a5f7a1b4 is the one to push to Docker Hub.
+Here, the the image with ID 1f26a5f7a1b4 is the one to push to Docker Hub. 
+You can choose another image instead if you like.
 
 Third, tag the image
 
@@ -174,13 +190,16 @@ Fourth, now the list of images will look something like
 | centos           | latest   | 26cb1244b171 | 2 w ago  |  195MB |
 | centos           | latest   | 2d194b392dd1 | 2 w ago  |  195MB |
 
-Fith, push the image to the repository
+Fifth, Now you can see an images under the name `$DOCKERHUB/cloudmesh`, we 
+now need to push this image to the repository that we created on the docker hub
+website. For that execute the following command. 
 
 ```bash
 $ docker push $DOCKERHUB/cloudmesh
 ```
 
-It shows something similar to:
+It shows something similar to, to make sure you can check on docker hub if the 
+images that was pushed is listed in the repository that we created.
 
 ```bash
 The push refers to repository [docker.io/$DOCKERHUB/cloudmesh]
