@@ -18,14 +18,14 @@ at
 It os best to start with an empty directory in which we create a
 Dockerfile.
 
-```console
+```bash
 $ mkdir ~/cloudmesh/docker
 $ cd ~/cloudmesh/docker
 ```
 
 Next, we create an empty file called `Dockerfile`
 
-```console
+```bash
 $ touch Dockerfile
 ```
 
@@ -59,11 +59,11 @@ necessary python packages
 Flask
 ```
 
-The application we install is using a Redis database and a Flask
-service that includes a visit counter and returns the hostname of the
-fisiting host. It is stored in the file app.py
+The example application we use here is a student info served via a
+RESTful service implemented using python flask.
+It is stored in the file app.py
 
-```
+```python
 from flask import Flask, jsonify
 import os
 
@@ -86,35 +86,62 @@ if __name__ == '__main__':
 
 To build the container, we can use the following command:
 
-```
+```bash
 docker build -t students .
 ```
 
 To run the service open a new window and cd into the directory where
 you code is located. Now say
 
-```
+```bash
 docker run -d -p 4000:80 students
-``
+```
 
 Your docker container will run and you can visit it by using the
 command
 
-```
+```bash
 $ curl http://localhost:4000/student/albert
 ```
 
 To stop the container do a
 
-```
+```bash
 $ docker ps
 ```
 
-and locate the id of the contehaine 
+and locate the id of the container, e.g., 2a19776ab812, and then run this 
+
+```bash
+$ docker stop 2a19776ab812
+```
+
+To delete the docker container image, you must first sop all instances
+using it and the remove the image. You can see the images with the
+command 
 
 
-docker container stop 2a19776ab812
+```bash
+$ docker images
+```
 
+Then you can locate all containers using that image while looking in
+the IMAGE column or using a simple fgrep in case you have many
+images. stop the containers using that image and that you can say
+
+
+```bash
+$ docker rm 74b9b994c9bd
+```
+
+while the number is the container id
+
+Once you killed all containers using that image, you can remove the
+image with the `rmi` command.
+
+```bash
+$ docker rmi 8b3246425402
+```
 
 ## Refernces
 
