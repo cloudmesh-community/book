@@ -8,7 +8,7 @@ used. Once a `Dockerfile` is created, we can build images from it
 We showcase here the use of a dockerfile on a simple example using a
 REST service.
 
-This example is copied from the officil docker documentation hosted
+This example is copied from the official docker documentation hosted
 at
 
 * <https://docs.docker.com/get-started/part2/#publish-the-image>
@@ -143,9 +143,9 @@ image with the `rmi` command.
 $ docker rmi 8b3246425402
 ```
 
-## Refernces
+## References
 
-The refence documentation about docker files can be found at 
+The reference documentation about docker files can be found at 
 
 * <https://docs.docker.com/engine/reference/builder/>
 
