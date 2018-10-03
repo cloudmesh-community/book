@@ -38,7 +38,7 @@ splash:
 	@echo "# Epub    :", $(FILENAME)
 	@echo "# ======================================================================"
 
-new: clean update images all
+new: clean update images issues all
 	echo done
 
 missing:
