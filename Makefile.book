@@ -148,12 +148,14 @@ html:
 	cd dest; pandoc $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).html metadata.txt $(INDEX)
 
 pdf:
-	cd dest; pandoc $(RESOURCE) --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
+	cd dest; pandoc $(RESOURCE) -V pagestyle:headings -V secnumdepth:5 -V geometry:margin=1in --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
 
 tex:
 	cd dest; pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)
 	cd dest; pdflatex content.tex
 
+bootstrap:
+	cd dest; pandoc   $(RESOURCE) --template ../../template/bootstrap/template.html --css ../../template/bootstrap/template.css --self-contained --toc --toc-depth 2 $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).html metadata.txt $(INDEX)
 
 clean:
 	rm -rf $(FILENAME).*
