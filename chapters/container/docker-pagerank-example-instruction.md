@@ -59,7 +59,7 @@ $ hadoop fs -put PageRankDataGenerator/pagerank5000g50.input.0 input.pagerank
 
 ```bash
 $ hadoop jar dist/HadoopPageRankMooc.jar indiana.cgl.hadoop.pagerank.HadoopPageRank input.pagerank output.pagerank 5000 1
-        ```
+```
         
 Result
 

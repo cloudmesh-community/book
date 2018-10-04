@@ -22,9 +22,9 @@ docker swarm head node. To conveniently do this let us define some Linux
 environment variables to simplify the access and the material presented
 here. You can place them even in your `.bashrc` or `.bash_profile` so
 the information gets populated whenever you start a new terminal.If you 
-directly edit the files make sure to execute the ```source``` command to refresh
- the environment variables for the current session using ```source .bashrc```
-or ```source .bash_profile```. Or you can close the current shell and reopen a 
+directly edit the files make sure to execute the `source` command to refresh
+ the environment variables for the current session using `source .bashrc`
+or `source .bash_profile`. Or you can close the current shell and reopen a 
 new one. 
 
 ```bash
@@ -66,7 +66,7 @@ necessary, are all managed transparently. Thus achieving the new
 paradigm of *serverless computing*.
 
 As an example, the following command creates a service and deploy it to
-the swarm cluster, if the port is in use the port ```9001``` used in the command
+the swarm cluster, if the port is in use the port `9001` used in the command
 can be changed to an available port
 
 :o: Fugang check the command
