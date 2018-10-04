@@ -13,7 +13,7 @@ victor.futuresystems.org. You need to be a member of a valid
 FutureSystems project, and had submitted an ssh public key via the
 FutureSystems portal.
 
-For Fall 2018 you need to be in the following project:
+For Fall 2018 classes at IU you need to be in the following project:
 
 <https://portal.futuresystems.org/project/553>
 
@@ -29,7 +29,7 @@ new one.
 
 ```bash
 $ export ECHO=149.165.150.76
-$ export FS_USER=<put your futersystem here>
+$ export FS_USER=<put your futersystem account name here>
 ```
 
 Now you can use the two variables that were set to login to the Echo serer, 
@@ -39,9 +39,9 @@ using the following command
 $ ssh $FS_USER@$ECHO
 ```
 
-If you have access to india but not the docker swarm system, your
+**Note: If you have access to india but not the docker swarm system, your
 project may not have been authorized to access the docker swarm cluster.
-Send a ticket to FutureSystems ticket system to request this.
+Send a ticket to FutureSystems ticket system to request this.**
 
 Once logged in to the docker swarm head node, try to run:
 
@@ -67,9 +67,8 @@ paradigm of *serverless computing*.
 
 As an example, the following command creates a service and deploy it to
 the swarm cluster, if the port is in use the port `9001` used in the command
-can be changed to an available port
+can be changed to an available port.
 
-:o: Fugang check the command
 
 ```bash
 $ docker service create --name notebook_test -p 9001:8888 \
