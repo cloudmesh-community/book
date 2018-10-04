@@ -1,6 +1,8 @@
-# Hadoop using Docker :o:
+# Hadoop 3.0.3
 
-Apache Hadoop 3.0.1 is the latest release (25 March, 2018) which
+:o: THis section needs to be updated to 3.0.3
+
+This section is based on the hadoop release 3.0.3 which
 includes significant enhancements over the previous version of Hadoop
 2.x.
 
@@ -12,15 +14,17 @@ which are:
 * systemctl
 * Java SE Development Kit 8
 
-## Draft: Building Hadoop 3.0.1 using Docker
+## Building Hadoop 3.0.3 using Docker
 
 Build a docker image by Dockerfile from:
 
+:o: 3.0.3 does not exist yet
+
 ```bash
-$ mkdir hadoop3.0.1
-$ cd hadoop3.0.1
-$ wget https://raw.githubusercontent.com/cloudmesh/book/master/examples/docker/hadoop/3.0.1/Dockerfile
-$ docker build -t cloudmesh/hadoop:3.0.1 .
+$ mkdir hadoop3.0.3
+$ cd hadoop3.0.3
+$ wget https://raw.githubusercontent.com/cloudmesh/book/master/examples/docker/hadoop/3.0.3/Dockerfile
+$ docker build -t cloudmesh/hadoop:3.0.3 .
 ```
     
 The complete docker image for Hadoop 3.0.1 consumes the storage size of

@@ -118,8 +118,8 @@
             - chapters/container/docker-swarm.md
             - chapters/container/docker-fs.md
             - chapters/container/docker-hadoop-cluster.md
+            - chapters/container/docker-hadoop3.md            
             - chapters/container/docker-hadoop.md
-            - chapters/container/docker-hadoop3.md
             - chapters/container/docker-pagerank-example-instruction.md            
             - chapters/container/docker-spark.md
         - chapters/SECTION/SECTION-KUBERNETES.md:
