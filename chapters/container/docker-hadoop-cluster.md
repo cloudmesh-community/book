@@ -1,3 +1,2 @@
-# Multinode Hadoop Cluster Deployment with Docker Swarm :o:
+# Docker Hadoop Cluster 
 
-:o: TODO the text is incomplete and may duplicate another section?
