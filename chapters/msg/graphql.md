@@ -34,7 +34,7 @@ provides clear and helpful errors.
 Initially GraphQL was implemented in JavaScript. Today there are
 several other implementations in different language available of
 GraphQLs. We will explore the *graphql-python* implementation in this
-chapter. The GraphQL official documentation is available at
+chapter. The official documentation of GraphQL is available at
 [@graphql-learn]
 
 
@@ -45,9 +45,9 @@ and schema creation.
 
 ### Type System
 
-In GraphQL a query is what we request from the GraphQL server. The
+In GraphQL a query is what client requests from the GraphQL server. The
 result will be obtained in a structure defined by type and schema. It
-means we will know ahead of time what we are going to get as
+means client will know ahead of time what it is going to get as
 result. For this to work, the data is often assumed to be structured
 data.
 
@@ -100,15 +100,15 @@ defined with the GraphQL schema language which is programming language
 agnostic. An example of a GraphQL type is:
 
 ```graphql
-type author {
+type Author {
     name: String!
     publication_count: Int
-    coauthors: [author!]!
+    coauthors: [Author!]!
 }
 ```
 
 Note that the `!` indicates a field value, that cannot be null and
-must have a defined value. `[author!]!` means that an array is
+must have a defined value. `[Author!]!` means that an array is
 returned, but that array cannot be null and also none of the items
 in the array can be null.
 
@@ -124,9 +124,6 @@ GraphQL supports the following scalar types:
 * `ID`: Represents a unique identifier which can be used as a key to fetch the object
 
 ### Enumeration Types
-
-:o: the car example needs to be replaced with a compute resourec
-example
 
 `Enums` also are scalar types which define a certain set of restricted
 values. When a GraphQL schema defines a field of enum type, we expect
@@ -147,37 +144,35 @@ Similar to any programming language, the GraphQL type system also supports
 interfaces. When a type implements an interface, it needs to specify all the
 fields that are defined through the interface.
 
-We illustrate this in the following example, where we define simple
-`ComputeService` interface type. This interface declares `Id`, `Name`
-and `Memory` fields. This means that a `Container` and a `VirtualMachine` both
-of which implement `ComputeService`, and must have the fields defined in the
-interface. They may or may not have additional fields like we
-demonstrate in our example with the field `ContainerBackend` in case of Container
-and `VMBAckend` in case of the `VirtualMachine`.
+We will illustrate this in the following example, where we define simple
+`ComputeService` interface type. This interface declares `id`, `name`
+and `memory` fields. This means that a `Container` and a `VirtualMachine` both
+of which implement `ComputeService`, must have the fields defined in the
+interface. They may or may not have additional fields like we demonstrate in 
+our example with the field `systemType` of type `ContainerType` in case of 
+`Container` and field `systemType` of type `VMBackend` in case of the `VirtualMachine`.
 
 ```graphql
 interface ComputeService {
-    Id: ID!
-    Name: String!
-    Memory: Int!
+    id: ID!
+    name: String!
+    memory: Int!
 }
 
 type Container implements ComputeService {
-    Id: ID!
-    Name: String!
-    Memory: Int!
-    Type: ContainerType!
+    id: ID!
+    name: String!
+    memory: Int!
+    systemType: ContainerType!
 }
 
-type VirtualMachine implements Vehicle {
-    Id: ID!
-    Name: String!
-    Memory: Int!
-    User: String!
+type VirtualMachine implements ComputeService {
+    id: ID!
+    name: String!
+    memory: Int!
+    systemType: VMBackend!
 }
 ```
-
-where user indocates the name of the user to log into this vm.
 
 ### Union Types
 
@@ -186,25 +181,25 @@ types. Here is how we can define a union type. As you can see we use
 the `|` charater to indicate the union operator.
 
 ```graphql
-union COmputeType = Container | VirtualMachine
+union ComputeType = Container | VirtualMachine
 ```
 
 Now when we write a GraphQL query to fetch the `ComputeType`
 information, we can ask some of the common fields and some of the
 specific fields conditionally. In the next example we request
-`AllComputeTypes` with common fields like `Id`, `Name` and fields
+`AllComputeTypes` with common fields like `id`, `name` and fields
 specific to either `VirtualMachine` or `Container`.
 
 ```graphql
 {
     AllComputeTypes {
-        Id
-        Name
+        id
+        name
         ... on VirtualMachine {
-            User
+            user
         }
         ... on Container {
-            Type
+            type
         }
     }
 }
@@ -280,7 +275,7 @@ returns the response
 }
 ```
 
-### Arguments :o:
+### Arguments
 
 As you may already know in REST services you can pass parameters as 
 part of a request via query parameters through *GET* or a request body 
@@ -395,16 +390,21 @@ The response for this query will look like
 
 ### Variables :o:
 
-:o: this section needs to be improved as it can not be understood by a
-non GraphQL expert. for example the term interpolate is not defined.
+:o: Mihir had updated this - explained variables section, do we need a
+screenshot as well just to show the section in GraphiQL IDE where 
+variables are defined?
 
 Variables are used to pass dynamic values to queries. Instead of passing 
 hard-coded values to a query, variables can be defined for these values. 
 Now these variables can be passed to queries.
 
 **Variables can be defined in the Query variables panel at left bottom of 
-the graphiql client**. The variable is defined as a json object and this 
-is how it looks like
+the graphiql client**, it is an in-browser IDE for GraphQL. There 
+are many implementations of _graphiql_ available. For our chapter we will use
+[GraphiQL](https://github.com/skevy/graphiql-app). Its usage is discussed 
+later in this chapter.
+
+A variable is defined as a json object and this is how it looks like
 
 ```json
 {
@@ -436,7 +436,7 @@ which will fetch response
 }
 ```
 
-### Directives :o:
+### Directives
 
 Directives are used to change the structure of queries at runtime using
 variables. Directives provide a way to describe additional options to 
@@ -470,6 +470,7 @@ whether to include the `ownerInfo` sub-query.
     }
 }
 ```
+
 Since we have defined `showOwnerInfo` as `true`, the response 
 includes `ownerInfo` data.
 
@@ -557,7 +558,7 @@ which will give response
 ```
 
 In application we need to validate user input. If it is invalid we can 
-use GraphQLError class or python exceptions to raise validation errors.
+use `GraphQLError` class or python exceptions to raise validation errors.
 
 ## Django for GraphQL
 
@@ -575,7 +576,10 @@ flask have advantages and disadvantages.
 
 ## GraphQL-python (Graphene) Example :o:
 
-:o: In this example we will ... intro missing
+In this example we will implement a GraphQL server in python. For this
+we will use [Graphene](https://graphene-python.org/) which is library for
+implementing GraphQL APIs in python. We will cover basic server implementation
+with schema and queries to fetch and mutate data.
 
 To start with GraphQL server implementation in python we will create
 virtual environment for project to keep all the dependencies isolated
@@ -584,7 +588,10 @@ command in shell. Always remember to activate virtual environment.
 
 * :o: TODO: mkdir -p  example/graphql
 * :o: TODO: whould we just do a wget or culr on the git example dir
-  and cd into it?
+  and cd into it? - Mihir: There are some _hacks_ available to do this
+  https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo
+  but I don't think that is good approach. Wouldn't it be better if user 
+  just clone repo?
 * :o: TODO: you remind me that venv is now part of python 3, so we
   could do an alternative install of python 3 with altinstall and
   document that in the python section instead of using pyenv
