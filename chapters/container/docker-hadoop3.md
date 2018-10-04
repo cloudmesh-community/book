@@ -1,4 +1,4 @@
-# Apache Hadoop Latest (3.0.1) using Docker :o:
+# Hadoop using Docker :o:
 
 Apache Hadoop 3.0.1 is the latest release (25 March, 2018) which
 includes significant enhancements over the previous version of Hadoop
