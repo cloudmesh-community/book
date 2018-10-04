@@ -4,21 +4,19 @@
 
 This section is based on the hadoop release 3.0.3 which
 includes significant enhancements over the previous version of Hadoop
-2.x.
-
-This section provides a separated Dockerfile to build hadoop 3.0.1 but
-the configurations and examples are same except a few minor changes
-which are:
+2.x. Changes include the use of the following software:
 
 * CentOS 7
 * systemctl
 * Java SE Development Kit 8
 
-## Building Hadoop 3.0.3 using Docker
+A Dockerfile to creat the haddop deployment is available at 
 
-Build a docker image by Dockerfile from:
+*<https://github.com/cloudmesh-community/book/blob/master/examples/docker/hadoop/3.0.3/Dockerfile>
 
-:o: 3.0.3 does not exist yet
+## Building Hadoop using Docker
+
+You can build hadoop from the Dockerfile as follows:
 
 ```bash
 $ mkdir hadoop3.0.3
@@ -36,18 +34,19 @@ $ docker images
 
 ```bash
 REPOSITORY                      TAG                 IMAGE ID            CREATED             SIZE
-cloudmesh/hadoop                3.0.1               ba2c51f94348        20 hours ago        1.5GB
+cloudmesh/hadoop                3.0.3               ba2c51f94348        20 hours ago        1.5GB
 ```
 
 ## Start a Hadoop Container with Interactive Shell
 
 ```bash
-$ docker run -it cloudmesh/hadoop:3.0.1 /etc/bootstrap.sh -bash
+$ docker run -it cloudmesh/hadoop:3.0.3 /etc/bootstrap.sh -bash
 $ %docker run -it lee212/e222 /etc/bootstrap.sh -bash
 ```
 
 The details of the new version is available from the official site here:
-http://hadoop.apache.org/docs/r3.0.1/index.html
+
+* <http://hadoop.apache.org/docs/r3.0.3/index.html>
 
 ## Examples
 
