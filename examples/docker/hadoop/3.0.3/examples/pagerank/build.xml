@@ -1,0 +1,40 @@
+<!-- Build File for VBS Web Service -->
+
+<project name="HadoopPageRank" basedir="." default="generate.jar">
+
+    <property environment="env"/>
+
+    <property name="build.dir" value="build"/>
+	<property name="dist.dir" value="dist"/>
+
+    <path id="customized.classpath">
+	 	<fileset dir="lib/">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="compile.service">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${build.dir}/classes"/>
+
+        <!--First let's compile the classes-->
+        <javac debug="on" 
+               fork="true"
+               destdir="${build.dir}/classes" 
+               srcdir="${basedir}/src"
+               classpathref="customized.classpath">
+        </javac>
+    </target>
+
+    <target name="generate.jar" depends="compile.service">
+		<mkdir dir="${dist.dir}/lib/"/>
+        <jar destfile="${dist.dir}/HadoopPageRankMooc.jar">
+			<fileset dir="${build.dir}/classes"/>
+		</jar>
+    </target>
+
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+	</target>
+</project>

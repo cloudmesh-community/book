@@ -19,9 +19,10 @@ A Dockerfile to creat the haddop deployment is available at
 You can build hadoop from the Dockerfile as follows:
 
 ```bash
-$ mkdir hadoop3.0.3
-$ cd hadoop3.0.3
-$ wget https://raw.githubusercontent.com/cloudmesh-community/book/master/examples/docker/hadoop/3.0.3/Dockerfile
+$ mkdir cloudmesh-community
+$ cd cloudmesh-community
+$ git clone https://github.com/cloudmesh-community/book.git
+$ cd book/examples/docker/hadoop/3.0.3
 $ docker build -t cloudmesh/hadoop:3.0.3 .
 ```
     
@@ -32,8 +33,8 @@ $ docker images
 ```
 
 ```bash
-REPOSITORY                      TAG                 IMAGE ID            CREATED             SIZE
-cloudmesh/hadoop                3.0.3               ba2c51f94348        20 hours ago        1.5GB
+REPOSITORY       TAG   IMAGE ID     CREATED    SIZE
+cloudmesh/hadoop 3.0.3 ba2c51f94348 1 hour ago 1.52GB
 ```
 
 ## Start a Hadoop Container with Interactive Shell
@@ -46,50 +47,37 @@ The details of the new version is available from the official site here:
 
 * <http://hadoop.apache.org/docs/r3.0.3/index.html>
 
+
+## Hadoop Configuration Files 
+
+The configuration files are included in the `conf` folder
+
+## Virtual Memory Limit
+
+IN case you need more memory, you can increase it by cahnging the
+parameters in the file `mapred-site.xml`, for example:
+
+- mapreduce.map.memory.mba to 4096
+- mapreduce.reduce.memory.mb to 8192
+
+## hdfs Safemode leave command
+
+:o: it is unclear what this is
+
+```bash
+$ hdfs dfsadmin -safemode leave`
+```
+
+
 ## Examples
 
 The statistics and PageRank examples are identical to the Section
 [Hadoop 2.7.5 on Docker]({#s-hadoop-docker-2})
 
-
-
-## DUPLICATION
-
-This Dockerfile builds Hadoop Docker container with CentOS base image and
-contains examples to run Hadoop such as statistics like WordCount and PageRank.
-
-### Build
-
-```bash
-$`docker build -t cloudmesh/hadoop:3.0.1 .`
-```
-
-### Run
-
-```bash
-`docker run -it cloudmesh/hadoop:3.0.1 /etc/bootstrap.sh -bash`
-```
+:o: INCLUDE THEM HERE AND ELIMINATE 2.7.5 we only need one haddop
 
 ### PageRank Example
 
 Find instruction and source code to run in the following directory:
 
 `/cloudmesh/pagerank`
-
-### Hadoop Configuration Files
-
-The configuration files are shared with Hadoop 2.7.5.
-
-### Virtual Memory Limit
-
-Increase memory limit in the mapred-site.xml, for example:
-
-- mapreduce.map.memory.mba to 4096
-- mapreduce.reduce.memory.mb to 8192
-
-### hdfs Safemode leave command
-
-```bash
-$ hdfs dfsadmin -safemode leave`
-```
-
