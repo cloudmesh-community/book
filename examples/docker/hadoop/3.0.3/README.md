@@ -25,7 +25,7 @@ Find instruction and source code to run in the following directory:
 
 ### Hadoop Configuration Files
 
-The configuration files are the same as from Hadoop 2.7.5. :o: TODO: this doe snot sound right
+A number of configuration files, are included in the conf folder.
 
 ### Tips
 
