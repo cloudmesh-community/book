@@ -100,9 +100,7 @@ model introduced in file systems but also in internet URLs.
 
 A topic looks therefore as follows:
 
-```
-topic-level0/topic-level1/topic-level2.
-```
+    topic-level0/topic-level1/topic-level2.
 
 Subscribers can subscribe to different topics via the broker.
 Subscribing to `topic-level0` allows the subscriber to receive all
@@ -312,7 +310,7 @@ This ensures the server is running.
 
 On ubuntu you need to first install mosquito, than with pip you install `paho-mqt`
 
-```
+```bash
 $ sudo apt-get install mosquitto mosquitto-clients
 $ pip install paho-mqtt
 ```
@@ -351,7 +349,7 @@ The code of this example is located at:
 A test program that starts a MQTT broker and client showcases how simple the interactions between the publisher and subscribers are while using a higher level
 API such as provided through the python client library of Paho.
 
-```
+```python
 import paho.mqtt.client as mqtt 
 import time
 

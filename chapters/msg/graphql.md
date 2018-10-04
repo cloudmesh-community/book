@@ -1024,7 +1024,7 @@ http://localhost:8000/graphql/
 
 Result obtained from running this command: 
 
-```
+```json
 {"data":{"repositories":[
   {"url":"https://github.com/cloudmesh-community/boat"},
   {"url":"https://github.com/cloudmesh-community/book"},

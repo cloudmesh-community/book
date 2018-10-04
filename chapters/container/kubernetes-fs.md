@@ -120,7 +120,7 @@ from within the cluster.
 Next we need to start thinking about how we
 access this web server from outside the cluster. We can explicitly
 exposing the service with the following command. You can change the name that
-is set using ```--name``` to what you want. Given that is adheres to the 
+is set using `--name` to what you want. Given that is adheres to the 
 naming standards. If the name you enter is already in the system your command
  will return an error saying the service already exists.
 

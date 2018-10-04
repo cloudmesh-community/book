@@ -32,7 +32,7 @@ $ touch Dockerfile
 We copy the following contents into the Dockerfile and after that
 create a simple REST service
 
-```
+```dockerfile
 # Use an official Python runtime as a parent image
 FROM python:3.7-slim
 
@@ -55,9 +55,8 @@ CMD ["python", "app.py"]
 We also create a `requirements.txt` file that we need for installing the
 necessary python packages
 
-```
-Flask
-```
+    Flask
+
 
 The example application we use here is a student info served via a
 RESTful service implemented using python flask.
