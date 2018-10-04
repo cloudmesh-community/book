@@ -1,4 +1,4 @@
-# Introduction to Kubernetes :o:
+# Introduction to Kubernetes
 
 ---
 
@@ -41,17 +41,15 @@ Kubernetes is
 
 ## What are containers?
 
-![Kubernetes Containers](images/why-containers.png){#fig:k-containers}
+![Kubernetes Containers [[Image Source]](https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg)](images/why-containers.png){#fig:k-containers}
 
-source: <https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg>
-
-+@fig:k-containers shows a depiction of the container architecture
++@fig:k-containers shows a depiction of the container architecture.
 
 
 
 ## Terminology
 
-In kubernetes we are using teh following terminology
+In kubernetes we are using the following terminology
 
 Pods:
 
@@ -198,7 +196,7 @@ $ kubectl get pod
 
 ```bash
 $ curl $(minikube service hello-minikube --url)
-``
+```
 
 ### Take a look from Dashboard
 
