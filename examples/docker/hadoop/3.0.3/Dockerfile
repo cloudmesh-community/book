@@ -1,7 +1,7 @@
-# Hadoop 3.0.1
+# Hadoop 3.0.3
 FROM centos
 
-ARG HADOOP_VERSION=3.0.1
+ARG HADOOP_VERSION=3.0.3
 ARG HADOOP_HOME=/usr/local/hadoop
 
 RUN yum update -y && \
