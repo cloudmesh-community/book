@@ -86,14 +86,14 @@ if __name__ == '__main__':
 To build the container, we can use the following command:
 
 ```bash
-docker build -t students .
+local$ docker build -t students .
 ```
 
 To run the service open a new window and cd into the directory where
 you code is located. Now say
 
 ```bash
-docker run -d -p 4000:80 students
+local$ docker run -d -p 4000:80 students
 ```
 
 Your docker container will run and you can visit it by using the

@@ -1,15 +1,15 @@
-# Docker Hadoop 3.0.1
+# Docker Hadoop 3.0.3
 
 This Dockerfile builds Hadoop Docker container with CentOS base image and
 contains examples to run Hadoop such as statistics like WordCount and PageRank.
 
 ## Build
 
-`docker build -t cloudmesh/hadoop:3.0.1 .`
+`docker build -t cloudmesh/hadoop:3.0.3 .`
 
 ## Run
 
-`docker run -it cloudmesh/hadoop:3.0.1 /etc/bootstrap.sh -bash`
+`docker run -it cloudmesh/hadoop:3.0.3 /etc/bootstrap.sh -bash`
 
 ## Statistics
 
@@ -25,7 +25,7 @@ Find instruction and source code to run in the following directory:
 
 ### Hadoop Configuration Files
 
-The configuration files are shared with Hadoop 2.7.5.
+A number of configuration files, are included in the conf folder.
 
 ### Tips
 
