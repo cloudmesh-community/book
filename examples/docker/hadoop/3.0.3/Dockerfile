@@ -54,12 +54,8 @@ COPY conf/init-dfs.sh /tmp
 RUN /tmp/init-dfs.sh
 
 # Statistics Example
-RUN mkdir -p /cloudmesh/exer1
-COPY exer1 /cloudmesh/exer1
-
-# PageRank Example
-RUN mkdir -p /cloudmesh/pagerank
-COPY pagerank /cloudmesh/pagerank
+RUN mkdir -p /cloudmesh/examples
+COPY examples /cloudmesh/examples
 
 COPY conf/bootstrap.sh /etc/bootstrap.sh
 CMD ["/etc/bootstrap.sh", "-d"]
