@@ -26,7 +26,7 @@ RUN ssh-keygen -q -N "" -t rsa -f /etc/ssh/ssh_host_rsa_key && \
 	    sed  -i "/^[^#]*UsePAM/ s/.*/#&/"  /etc/ssh/sshd_config && \
 	    echo "Port 2122" >> /etc/ssh/sshd_config
 
-# Hadoop 3.0.1
+# Hadoop 3.0.3
 RUN curl -s http://apache.cs.utah.edu/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz | tar -xz -C /usr/local && \
 	    ln -s /usr/local/hadoop-${HADOOP_VERSION} ${HADOOP_HOME}
 
