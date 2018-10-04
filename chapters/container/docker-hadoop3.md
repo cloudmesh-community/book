@@ -21,12 +21,11 @@ You can build hadoop from the Dockerfile as follows:
 ```bash
 $ mkdir hadoop3.0.3
 $ cd hadoop3.0.3
-$ wget https://raw.githubusercontent.com/cloudmesh/book/master/examples/docker/hadoop/3.0.3/Dockerfile
+$ wget https://raw.githubusercontent.com/cloudmesh-community/book/master/examples/docker/hadoop/3.0.3/Dockerfile
 $ docker build -t cloudmesh/hadoop:3.0.3 .
 ```
     
-The complete docker image for Hadoop 3.0.1 consumes the storage size of
-1.5GB.
+The complete docker image for Hadoop consumes 1.5GB.
 
 ```bash
 $ docker images
@@ -41,7 +40,6 @@ cloudmesh/hadoop                3.0.3               ba2c51f94348        20 hours
 
 ```bash
 $ docker run -it cloudmesh/hadoop:3.0.3 /etc/bootstrap.sh -bash
-$ %docker run -it lee212/e222 /etc/bootstrap.sh -bash
 ```
 
 The details of the new version is available from the official site here:
