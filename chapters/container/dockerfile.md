@@ -1,4 +1,4 @@
-# Dockerfile
+# Dockerfile {#s-dockerfile}
 
 In order for us to build containers, we need to know what is in the
 container and how to create an image representing a container. To do
