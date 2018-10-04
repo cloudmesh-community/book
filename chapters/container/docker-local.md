@@ -45,17 +45,17 @@ to register the repository from where you can download it. This can be
 achieved as follows:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install \
+local$ sudo apt-get update
+local$ sudo apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
     software-properties-common
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-$ sudo apt-key fingerprint 0EBFCD88
-$ sudo add-apt-repository \
+local$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+local$ sudo apt-key fingerprint 0EBFCD88
+local$ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
+   local$(lsb_release -cs) \
    stable"
 ```
 
@@ -64,15 +64,15 @@ after you have updated the operating system. The update and install is
 done as follows:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install docker-ce
-$ sudo apt-get update
+local$ sudo apt-get update
+local$ sudo apt-get install docker-ce
+local$ sudo apt-get update
 ```
 Once installed execute the following command to make sure the installation is
  done properly
  
  ```bash
- $ sudo systemctl status docker
+ local$ sudo systemctl status docker
  ```
  
  This should give you an output similar to below.
@@ -96,7 +96,7 @@ look for TAs and student that test out and improve this section.
 Before we start we create the following directory:
 
 ```bash
-$ mkdir $HOME/cloudmesh
+local$ mkdir local$HOME/cloudmesh
 ```
 
 We also assume you have installed gitbash and use the a git bash
@@ -107,7 +107,7 @@ To install Docker on Windows, please download the following files
 * <https://download.docker.com/win/stable/Docker\%20for\%20Windows\%20Installer.exe>
 * <https://download.docker.com/win/stable/DockerToolbox.exe>
 
-Move the downloaded files to a directory `$HOME/cloudmesh`
+Move the downloaded files to a directory `local$HOME/cloudmesh`
 
 Place the downloaded exe files in the cloudmesh directory we created
 earlier. First conduct the Docker installation and then continue with
@@ -124,7 +124,7 @@ which you can execute docker commands. Once the terminal is loaded, it
 will show something like following:
 
 ```bash
-$ <username>@<yourpc> ~
+local$ <username>@<yourpc> ~
 ```
 
 ## Testing the Install
@@ -132,7 +132,7 @@ $ <username>@<yourpc> ~
 To test if it works execute the following commands in a terminal:
 
 ```bash
-$ docker version
+local$ docker version
 ```
 
 You should see an output similar to
@@ -159,7 +159,7 @@ You should see an output similar to
 To see if you can run a container use
 
 ```bash
-$ docker run hello-world
+local$ docker run hello-world
 ```
 
 Once executed you should see an output similar to
@@ -191,7 +191,7 @@ steps:
 To try something more ambitious, you can run an Ubuntu
 container with:
 
-$ docker run -it ubuntu bash
+local$ docker run -it ubuntu bash
 
 Share images, automate workflows, and more with a
 free Docker ID:
