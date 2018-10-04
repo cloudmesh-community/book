@@ -95,7 +95,7 @@ to the user path variable.
 	set PATH=%SPARK_HOME%\bin;%PATH%
 
 Next, download the winutils.exe binary and Save winutils.exe binary to
-a directory (c:\hadoop\bin).
+a directory (`c:\hadoop\bin`).
 
 <https://github.com/steveloughran/winutils>
 
