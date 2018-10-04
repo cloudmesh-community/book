@@ -12,5 +12,5 @@ stylesheet: template/epub.css
 cover-image: cover/cover.jpg
 fignos-caption-name: Figure
 fignos-plus-name: Figure
-xnos-number-sections: On
+xnos-number-sections: True
 ...
