@@ -19,14 +19,14 @@ It os best to start with an empty directory in which we create a
 Dockerfile.
 
 ```bash
-$ mkdir ~/cloudmesh/docker
-$ cd ~/cloudmesh/docker
+local$ mkdir ~/cloudmesh/docker
+local$ cd ~/cloudmesh/docker
 ```
 
 Next, we create an empty file called `Dockerfile`
 
 ```bash
-$ touch Dockerfile
+local$ touch Dockerfile
 ```
 
 We copy the following contents into the Dockerfile and after that
@@ -100,19 +100,19 @@ Your docker container will run and you can visit it by using the
 command
 
 ```bash
-$ curl http://localhost:4000/student/albert
+local$ curl http://localhost:4000/student/albert
 ```
 
 To stop the container do a
 
 ```bash
-$ docker ps
+local$ docker ps
 ```
 
 and locate the id of the container, e.g., 2a19776ab812, and then run this 
 
 ```bash
-$ docker stop 2a19776ab812
+local$ docker stop 2a19776ab812
 ```
 
 To delete the docker container image, you must first sop all instances
@@ -121,7 +121,7 @@ command
 
 
 ```bash
-$ docker images
+local$ docker images
 ```
 
 Then you can locate all containers using that image while looking in
@@ -130,7 +130,7 @@ images. stop the containers using that image and that you can say
 
 
 ```bash
-$ docker rm 74b9b994c9bd
+local$ docker rm 74b9b994c9bd
 ```
 
 while the number is the container id
@@ -139,7 +139,7 @@ Once you killed all containers using that image, you can remove the
 image with the `rmi` command.
 
 ```bash
-$ docker rmi 8b3246425402
+local$ docker rmi 8b3246425402
 ```
 
 ## References
