@@ -46,6 +46,8 @@ Technology or Review Paper :
   uses the same format as your report paper. The format is discussed
   in the Section [Report Format](#report-format).
 
+  A technology paper is 2 pages long. This will make it between 2000-2400 words. 
+  
   Note: that for the 2018 we decided to just us Markdown and not LaTeX.
   We will calculate the exact number of words needed.
   
