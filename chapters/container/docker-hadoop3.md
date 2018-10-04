@@ -1,6 +1,4 @@
-# Hadoop 3.0.3
-
-:o: THis section needs to be updated to 3.0.3
+# Hadoop with Docker
 
 This section is based on the hadoop release 3.0.3 which
 includes significant enhancements over the previous version of Hadoop
@@ -71,13 +69,9 @@ $ hdfs dfsadmin -safemode leave`
 
 ## Examples
 
-The statistics and PageRank examples are identical to the Section
-[Hadoop 2.7.5 on Docker]({#s-hadoop-docker-2})
+The statistics and PageRank examples are included in the examples
+directory at
 
-:o: INCLUDE THEM HERE AND ELIMINATE 2.7.5 we only need one haddop
+* <https://github.com/cloudmesh-community/book/tree/master/examples/docker/hadoop/3.0.3/examples>
 
-### PageRank Example
-
-Find instruction and source code to run in the following directory:
-
-`/cloudmesh/pagerank`
+It includes a simple statistics program and a pagerank example.
