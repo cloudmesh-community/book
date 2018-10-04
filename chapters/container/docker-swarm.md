@@ -1,9 +1,17 @@
-# Docker Swarm :o:
+# Docker Swarm
 
 A swarm is a group of machines that are running Docker and joined into
 a cluster. Docker commands are executed on a cluster by a swarm
 manager. The machines in a swarm can be physical or virtual. After
 joining a swarm, they are referred to as *nodes*.
+
+## Terminology
+
+In this section if a command is prefixed with `local$` it means the command is
+to be executed on your local machine. If it is prefixed with either 
+`dsmaster` or `dsworker` that means the command is to be executed from within 
+a virtual machine that was created.
+
 
 ## Creating a Docker Swarm Cluster
 A swarm is made up of multiple nodes, which can be either physical or
@@ -115,7 +123,7 @@ The generic version of the command would be as follows, you need to fill in
 the correct values to values marked as '<>' to execute the command.
   
 ```bash
-$ docker swarm join --token <token> <myvm ip>:<port>
+dsworker$ docker swarm join --token <token> <myvm ip>:<port>
 ```
 You will see an output stating that this machine joined the docker swarm.
 
