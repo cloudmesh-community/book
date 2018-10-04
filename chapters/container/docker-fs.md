@@ -28,15 +28,15 @@ or `source .bash_profile`. Or you can close the current shell and reopen a
 new one. 
 
 ```bash
-$ export ECHO=149.165.150.76
-$ export FS_USER=<put your futersystem account name here>
+local$ export ECHO=149.165.150.76
+local$ export FS_USER=<put your futersystem account name here>
 ```
 
 Now you can use the two variables that were set to login to the Echo serer, 
 using the following command
 
 ```bash
-$ ssh $FS_USER@$ECHO
+local$ ssh $FS_USER@$ECHO
 ```
 
 **Note: If you have access to india but not the docker swarm system, your
@@ -46,7 +46,7 @@ Send a ticket to FutureSystems ticket system to request this.**
 Once logged in to the docker swarm head node, try to run:
 
 ```bash
-$ docker run hello-world
+echo$ docker run hello-world
 ```
 
 to verify `docker run` works.
@@ -69,9 +69,8 @@ As an example, the following command creates a service and deploy it to
 the swarm cluster, if the port is in use the port `9001` used in the command
 can be changed to an available port.
 
-
 ```bash
-$ docker service create --name notebook_test -p 9001:8888 \
+echo$ docker service create --name notebook_test -p 9001:8888 \
     jupyter/datascience-notebook start-notebook.sh
     --NotebookApp.password=NOTEBOOK_PASS_HASH
 ```
@@ -94,7 +93,7 @@ port inside the container (8888) to an external port of the cluster node
 example, you can then visit the URL:
 
 ```bash
-$ open http://$ECHO:9001
+local$ open http://$ECHO:9001
 ```
 
 to access the Jupyter notebook. Using the specified password when you
@@ -113,25 +112,25 @@ the time when the service was created.
 Some useful related commands:
 
 ```bash
-$ docker service ls
+echo$ docker service ls
 ```
 
 lists the currently running services.
 
 ```bash
-$ docker service ps notebook_test
+echo$ docker service ps notebook_test
 ```
 
 lists the detailed info of the container where the service is running.
 
 ```bash
-$ docker node ps NODE
+echo$ docker node ps NODE
 ```
 
 lists all the running containers of a node.
 
 ```bash
-$ docker node ls
+echo$ docker node ls
 ```
 
 lists all the nodes in the swarm cluster.
@@ -139,7 +138,7 @@ lists all the nodes in the swarm cluster.
 To stop the service and the container:
 
 ```bash
-$ docker service rm noteboot_test
+echo$ docker service rm noteboot_test
 ```
 
 ## Create your own service
