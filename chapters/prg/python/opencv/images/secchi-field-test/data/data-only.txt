@@ -1,0 +1,984 @@
+Date	Time	Location	Secchi depth (ft.in)	Secchi Depth (ft)	Turbidity (NTU)	wind	sun	chop	approximate temp (F)	observer	Secchi Depth (in)			
+5/29	12:15 PM	Ss1	6.1	6.08		Moderate breeze	bright	choppy	65		73			
+5/29	12:15 PM	Ss1	7.2	7.17		Moderate breeze	bright	choppy	65		86			
+5/29	12:15 PM	Ss1	6.6	6.50		Moderate breeze	bright	choppy	65		78			
+5/29	12:15 PM	Ss1	6.6	6.50		Moderate breeze	bright	choppy	65		78			
+5/29	12:50	Ss2	6.1	6.08		Moderate breeze	bright	choppy	65		73			
+5/29	12:50	Ss2	7	7.00		Moderate breeze	bright	choppy	65		84			
+5/29	12:50	Ss2	6.1	6.08		Moderate breeze	bright	choppy	65		73			
+5/29	1:30 pm *	ssc	7.9	7.75		Moderate breeze	bright	choppy	65	patty	93			
+5/29	1:30 pm *	ssc	6.4	6.33		Moderate breeze	bright	choppy	65		76			
+5/29	1:30 pm *	ssc	6.8	6.67		Moderate breeze	bright	choppy	65		80			
+5/29	1:30 pm *	ssc	6.8	6.67		Moderate breeze	bright	choppy	65		80			
+5/29	1:30 pm *	ssc	7.4	7.33		Moderate breeze	bright	choppy	65	patty	88			
+5/29	1:30 pm *	ssc	6	6.00		Moderate breeze	bright	choppy	65		72			
+6/8	11:45	ss1	4	4.00		calm	bright	calm	65	mary	48			
+6/8	11:45	ss1	4.7	4.58		calm	bright	calm	65	patty	55			
+6/8	11:45	ss1	4.4	4.33		calm	bright	calm	65	sherry	52			
+6/8	11:30	ss2	5.4	5.33		calm	bright	calm	65	mary	64			
+6/8	11:30	ss2	5.3	5.25		calm	bright	calm	65	patty	63			
+6/8	11:30	ss2	5.4	5.33		calm	bright	calm	65	sherry	64			
+6/8	10:35	ssc	5.1	5.08		gentlebreeze	bright	calm	65	mary	61			
+6/8	10:35	ssc	5.3	5.25		gentlebreeze	bright	calm	65	patty	63			
+6/8	10:35	ssc	5.9	5.75		gentlebreeze	bright	calm	65	sherry	69			
+6/14	6:46 PM	ssc	5.9	5.75	3.76	calm	bright	calm	85	ellen	69			
+6/14	6:46 PM	ssc	5.9	5.75		calm	cloudy	calm		tom	69			
+6/14	6:46 PM	ssc	6.4	6.33		calm	cloudy	calm		kriste	76			
+6/14	7:38 PM	ss1	4.8	4.67	4.03	gentlebreeze	bright	calm		tom	56			
+6/14	7:38 PM	ss1	4	4.00		gentlebreeze	bright	calm		ellen	48			
+6/14	7:38 PM	ss1	4.1	4.08		calm	cloudy	calm		kriste	49			
+6/14	8:05 PM	ss2	4.6	4.50	3.21	calm	cloudy	calm		ellen	54			
+6/14	8:05 PM	ss2	4.5	4.42		calm	cloudy	calm		tom	53			
+6/14	8:05 PM	ss2	4.4	4.33		calm	cloudy	calm	80	ellen	52			
+6/21	6:34 PM	ssc	4.9	4.75	3.34	calm	cloudy	calm	86	tom	57			
+6/21		ssc	4.1	4.08		calm	cloudy	calm		ellen	49			
+6/21		ssc	4.9	4.75		calm	cloudy	calm		kriste	57			
+6/21	6:59 PM	ss1	5.3	5.25	4.01	calm	cloudy	calm		tom	63			
+6/21		ss1	5	5.00		calm	cloudy	calm		kriste	60			
+6/21		ss1	4.9	4.75		calm	cloudy	calm		ellen	57			
+6/21	7:05 PM	ss2	5.6	5.50	3.41	calm	cloudy	calm		tom	66			
+6/21		ss2	5.6	5.50		calm	cloudy	calm		kriste	66			
+6/21		ss2	5.2	5.17		calm	cloudy	calm		ellen	62			
+6/30	6:44 PM	ssc	3.9	3.75	4.77	calm	bright	calm		richard	45			
+6/30		ssc	3.4	3.33		calm	bright	calm		howard	40			
+6/30		ssc	3.7	3.58		calm	bright	calm		ellen	43			
+6/30	7:03 PM	ss1	3	3.00	4.36	gentle	bright	slight		howard	36			
+6/30		ss1	2.4	2.33		gentle	bright	slight		richard	28			
+6/30		ss1	2.8	2.67		gentle	bright	slight		richard	32			
+6/30		ss1	3.6	3.50		gentle	bright	slight		ellen	42			
+6/30		ss1	3.1	3.08		gentle	bright	slight		richard	37			
+6/30	7:24 PM	ss2	3.2	3.17	4.1	moderate	bright	mild		richard	38			
+6/30		ss2	3.8	3.67		moderate	bright	mild		howard	44			
+6/30		ss2	3.5	3.42		moderate	bright	mild		ellen	41			
+7/13	9:10 AM	ssc	5	5.00	3.39	calm	bright	calm		patty	60			
+7/13		ssc	5.2	5.17		calm	bright	calm		howard	62			
+7/13		ssc	4.8	4.67		calm	bright	calm		sherry	56			
+7/13		ss1	4.1	4.08	3.68	light	partly cloudy	slight		patty	49			
+7/13		ss1	4.8	4.67		light	partly cloudy	slight		howard	56			
+7/13		ss1	3.5	3.42		gentle	cloudy	slight		sherry	41			
+7/13		ss2	4.7	4.58	3.55	light	partly cloudy	slight		patty	55			
+7/13		ss2	4.7	4.58		light	partly cloudy	slight		howard	55			
+7/13		ss2	4.7	4.58		light	partly cloudy	slight		sherry	55			
+7/20	9:15 AM	ssc	7.2	7.17	2.44					patty	86			
+7/20		ssc	6.1	6.08						richard	73			
+7/20		ssc	7.1	7.08						howard	85			
+7/20		ss1	5.7	5.58	2.88					patty	67			
+7/20		ss1	5.4	5.33						richard	64			
+7/20		ss1	6.1	6.08						howard	73			
+7/20		ss2	6.6	6.50	3.14					patty	78			
+7/20		ss2	4.8	4.67						richard	56			
+7/20		ss2	5.1	5.08						howard	61			
+7/26	9:13 AM	ssc	5	5.00	3.49	slight	bright 	calm		howard	60			
+7/26		ssc	5.3	5.25		slight	bright 	calm		sherry	63			
+7/26		ssc	4.7	4.58		slight	bright 	calm		mary	55			
+7/26		ss1	5.2	5.17	4.61	slight	bright 	calm		howard	62			
+7/26		ss1	5.3	5.25		slight	bright 	calm		sherry	63			
+7/26		ss1	5	5.00		slight	bright 	calm		mary	60			
+7/26		ss2	5.7	5.58	3.57	slight	bright 	calm		howard	67			
+7/26		ss2	5.5	5.42		slight	bright 	calm		sherry	65			
+7/26		ss2	4.5	4.42		slight	bright 	calm		mary	53			
+8/3	9;30 am	ssc	4.3	4.25	3.69	slight				howard	51			
+8/3		ssc	5.2	5.17		slight				mary	62			
+8/3		ssc	4.4	4.33		slight				patty	52			
+8/3		ss1	4	4.00	4.01	slight				howard	48			
+8/3		ss1	4.2	4.17		slight				mary	50			
+8/3		ss1	4.7	4.58		slight				patty	55			
+8/3		ss2	4.2	4.17	3.63	calm				howard	50			
+8/3		ss2	4.6	4.50		calm				mary	54			
+8/3		ss2	4.8	4.67		calm				patty	56			
+8/10	9:10 AM	ssc	3.1	3.08	4.33	calm	partly cloudy	calm	66	howard	37			
+8/10		ssc	4.3	4.25	4.48	calm	partly cloudy	calm		patty	51			
+8/10		ssc	3.4	3.33	4.22	calm	partly cloudy	calm		sherry	40			
+8/10		ss1	3.8	3.67	4.38	calm	partly cloudy	calm		howard	44			
+8/10		ss1	3.7	3.58	4.68	calm	partly cloudy	calm		patty	43			
+8/10		ss1	3.7	3.58	4.52	calm	partly cloudy	calm		sherry	43			
+8/10		ss2	3.7	3.58	4.63	calm	partly cloudy	calm		howard	43			
+8/10		ss2	3.7	3.58	4.42	calm	partly cloudy	calm		patty	43			
+8/10		ss2	3.1	3.08	4.45	calm	partly cloudy	calm		sherry	37			
+8/17		ssc	4.3	4.25	4.08	calm	partly cloudy			howard				
+8/17		ssc	4.7	4.58						patty				
+8/17		ssc	4.9	4.75						sherry				
+8/17		ss1	4.2	4.17	4.27	light breeze	partly cloudy			howard				
+8/17		ss1	4.6	4.50						patty				
+8/17		ss1	3.11	3.09						sherry				
+8/17		ss2	4.1	4.08	4.53	breeze	partly cloudy			howard				
+8/17		ss2	4	4.00	7.63	calm	sunny			patty				
+8/17		ss2	4.8	4.67		calm	sunny			sherry				
+8/24		ssc	3.4	3.33		calm	sunny			howard				
+8/24		ssc	3	3.00		calm	sunny			patty				
+8/24		ssc	3.1	3.08		calm	sunny			sherry				
+8/24		ss1	3.3	3.25	7.46	calm	sunny			howard				
+8/24		ss1	3	3.00		calm	sunny			patty				
+8/24		ss1	3.7	3.58		calm	sunny			sherry				
+8/24		ss2	3.2	3.17	7.69	calm	sunny			howard				
+8/24		ss2	3.3	3.25		calm	sunny			patty				
+8/24		ss2	3.4	3.33		calm	sunny			sherry				
+8/31		ssc	3.6	3.50	4.46	light breeze	partly cloudy			mary				
+8/31		ssc	4.6	4.50		light breeze	partly cloudy			patty				
+8/31		ssc	3.8	3.67		light breeze	partly cloudy			sherry				
+8/31		ss1	3.6	3.50	4.63	light breeze	partly cloudy			mary				
+8/31		ss1	4.5	4.42		light breeze	partly cloudy			patty				
+8/31		ss1	3.4	3.33		light breeze	partly cloudy			sherry				
+8/31		ss2	3.6	3.50	4.86	light breeze	partly cloudy			mary				
+8/31		ss2	3.2	3.17		light breeze	partly cloudy			patty				
+8/31		ss2	3.7	3.58		light breeze	partly cloudy			sherry				
+9/7		ssc	3.3	3.25	8.87	calm	sunny			howard				
+9/7		ssc	2.4	2.33		calm	sunny			sherry				
+9/7		ssc	2.11	2.09		calm	sunny			mary				
+9/7		ss1	2.7	2.58	10.2	calm	sunny			howard				
+9/7		ss1	2.6	2.50		calm	sunny			sherry				
+9/7		ss1	2.9	2.75		calm	sunny			mary				
+9/7		ss2	2.1	2.08	9.3	calm	sunny			howard				
+9/7		ss2	3.2	3.17		calm	sunny			sherry				
+9/7		ss2	2.1	2.08		calm	sunny			mary				
+9/13		ssc	3.5	3.42	7.13	light wind	raining			mary				
+9/13		ssc	3.6	3.50		light wind	raining			howard				
+9/13		ssc	3.2	3.17		light wind	raining			patty				
+9/13		ss1	2.11	2.09	7.21	light wind	raining			mary				
+9/13		ss1	3.5	3.42		light wind	raining			howard				
+9/13		ss1	3.2	3.17		light wind	raining			patty				
+9/13		ss2	3.4	3.33	5.57	light wind	raining			mary				
+9/13		ss2	3.5	3.42		light wind	raining			howard				
+9/13		ss2	3.9	3.75		light wind	raining			patty				
+9/21		ssc	5	5.00	3.6	calm	sunny			howard				
+9/21		ssc	5.6	5.50		calm	sunny			mary				
+9/21		ssc	5.3	5.25		calm	sunny			sherry				
+9/21		ss1	5.3	5.25	3.62	calm	sunny			howard				
+9/21		ss1	4.8	4.67		calm	sunny			mary				
+9/21		ss1	5.5	5.42		calm	sunny			sherry				
+9/21		ss2	4	4.00	4.65	calm	sunny			howard				
+9/21		ss2	4.4	4.33		calm	sunny			mary				
+9/21		ss2	4.3	4.25		calm	sunny			sherry				
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														

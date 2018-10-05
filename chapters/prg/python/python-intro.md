@@ -1,5 +1,20 @@
-Introduction to Python
-----------------------
+## Introduction to Python {#s-python-intro}
+
+---
+
+**:mortar_board: Learning Objectives**
+
+* Learn quickly Python under the assumption you know a programming language
+* Work with modules
+* Understand docopts and cmd
+* Contuct some python examples to refresh your python knpwledge
+* Learn about the `map` function in Python
+* Learn how to start subprocesses and rederect their output
+* Learn more advanced constructs such as multiprocessing and Queues
+* Understand why we do not use `anaconda`
+* Get familiar with `pyenv`
+
+---
 
 Portions of this lesson have been adapted from the [official Python
 Tutorial](https://docs.python.org/2/tutorial/) copyright [Python

@@ -1,5 +1,19 @@
 # Example Artifacts
 
+
+---
+
+**:mortar_board: Learning Objectives**
+
+* Identify what other studenst have done previously.
+* Look at previous chapters, whcih are collected as technology reviews.
+* Look at previous project reports.
+* Looking at the documents provides you with an initial overview of the scope for the artifacts.
+
+---
+
+As part of this class you will be delivering some artifacts that are being graded. Some of them include writing a *chapter* that can be contributed to the class lecture and a project. To  showcase you some examples take a closer look at teh documents listed in this section. Please also note that you can not duplicate or replicate a students previous work without significant improvements. All material listed here is available online, including all source code.
+
 ## Technology Summaries
 
 We are maintaining a large list of technologies related to clouds and Big Data at 
@@ -8,10 +22,24 @@ We are maintaining a large list of technologies related to clouds and Big Data a
 
 This repository generates the following epub
 
-* <https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-echnologies.epub>
+* <https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub>
 
 Students that have to contribute as part of their class Technology summaries are asked to produce meaningful, advertisement free summaries of the technology and indicate in some cases if not obvious show they relate to cloud or big data. The length of such summaries is about 300 words. Students of E516 do not have to contribute to this and will instead focuss on programming. Students of I423, I523 and other sections must contribute to it and will get an assignment related to it.
 We post here the existence of this document also for 516 students. They can voluntarily improve or add sections if they like which will go into their discussion credit.
+
+Please use the following indicators to mark the progress of summaries that you are working on. 
+
+:smiley: ready for review
+
+:hand: selected by student so others do not select it and we know what is worked on
+
+:wave: needs revision (only assigned by ta, after smiley)
+
+The signs are put as follows. You can view an example at <https://github.com/cloudmesh/technologies/blob/master/chapters/tech/bioconductor.md>
+
+Ex -  Title Of Summary :hand: fa18-xxx-xx
+
+
 
 ## Chapters
 

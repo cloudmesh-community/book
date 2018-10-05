@@ -99,25 +99,6 @@ CHAPTER_OTHER=\
 
 
 
-######################################################################
-# chameleon
-######################################################################
-
-CHAPTER_CHAMELEON=\
- chapters/cloud/chameleon/baremetal.md\
- chapters/cloud/chameleon/resources.md\
- chapters/cloud/chameleon/faq-orig.md\
- chapters/cloud/chameleon/hardware.md\
- chapters/cloud/chameleon/cli.md\
- chapters/cloud/chameleon/faq.md\
- chapters/cloud/chameleon/user-guide.md\
- chapters/cloud/chameleon/heat.md\
- chapters/cloud/chameleon/start.md\
- chapters/cloud/chameleon/faq-orig.md\
- chapters/cloud/chameleon/horizon.md\
- chapters/cloud/chameleon/baremetal.md\
- chapters/cloud/chameleon/charge.md\
-
 OLD=\
  chapters/cloud/iot.md\
  chapters/cloud/nosql.md\
