@@ -105,15 +105,15 @@ section about burning SD Cards in Linux.
 A very convenient program to create an SD card for a Raspberry pi is
 using the program `cm-burn`. The program is available from
 
-* <https://github.com/cloudmesh-community/cm>
+* <https://github.com/cloudmesh-community/cm-burn>
 
 It can be installed with
 
 ```console
 mkdir -p cloudmesh-community
 cd cloudmesh-community
-git clone https://github.com/cloudmesh-community/cm.git
-cd cm
+git clone https://github.com/cloudmesh-community/cm-burn.git
+cd cm-burn
 pip setup.py .
 ```
 
