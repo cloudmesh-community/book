@@ -27,21 +27,21 @@ reference="S:managing-multiple-python-versions-with-pyenv"}.
 
 Cmd5 can be easily deployed with pip:
 
-``` {.bash}
+```bash
 $ pip install cloudmesh.cmd5
 ```
 
 In case you would like to generate easily new cmd5 commands we also
 recommend you install the cloudmesh sys command with:
 
-``` {.bash}
+```bash
 $ pip install cloudmesh.sys
 ```
 
 In case you like to work with the source please clone the following
 directories from github:
 
-``` {.bash}
+```bash
 mkdir -p ~/github
 cd ~/github
 
@@ -71,7 +71,7 @@ generate extensions to cloudmesh.
 To run the shell you can activate it with the cms command. cms stands
 for cloudmesh shell:
 
-``` {.bash}
+```bash
 (ENV2) $ cms
 ```
 
@@ -105,7 +105,7 @@ you name is cloudmesh.mycommand, where mycommand is the name of the
 command that you like to create. This can easily be done while using the
 *sys* command:
 
-``` {.bash}
+```bash
 $ cms sys command generate mycommand
 ```
 
@@ -114,7 +114,7 @@ generate a new directory cloudmesh.mycommand with all the needed files
 to create your own command and register it dynamically with cloudmesh.
 All you have to do is to cd into the directory and install the code:
 
-``` {.bash}
+```bash
 $ cd cloudmesh.mycommand
 $ python setup.py install
 # pip install .

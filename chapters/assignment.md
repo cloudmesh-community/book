@@ -277,24 +277,24 @@ Please look at <https://github.com/cloudmesh-community/fa18-516-18>
 for an example
 
 
-```
-section:
-    - title: title of the section 1
-         url: https://github.com/cloudmesh-community/book/chapters/...
-    - title: title of the section 2
-         url: https://github.com/cloudmesh-community/book/chapters/...    
-    - title: title of the section 3
-         url: https://github.com/cloudmesh-community/book/chapters/...         
-chapter:
-    - title: title of the chapter
-         url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md         
-project:
-    - title: title of the project
-         url: url in your hid space or that of your partner
-other:
-    - activity: spell checked md document
-         url: put url here
-```
+
+    section:
+        - title: title of the section 1
+             url: https://github.com/cloudmesh-community/book/chapters/...
+        - title: title of the section 2
+             url: https://github.com/cloudmesh-community/book/chapters/...    
+        - title: title of the section 3
+             url: https://github.com/cloudmesh-community/book/chapters/...         
+    chapter:
+        - title: title of the chapter
+             url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md         
+    project:
+        - title: title of the project
+             url: url in your hid space or that of your partner
+    other:
+        - activity: spell checked md document
+             url: put url here
+
 
 You **MUST** run yamllint on the README.yml file. YAML errors will
 give point deductions

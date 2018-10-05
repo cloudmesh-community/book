@@ -7,20 +7,31 @@ INDEX=\
   chapters/preface/notation.md\
   chapters/pi/preface.md\
   chapters/pi/board.md\
+  chapters/SECTION/SECTION-IOT.md\
+  chapters/iot/introduction.md\
+  chapters/iot/fundamentals.md\
+  chapters/iot/pi.md\
+  chapters/iot/tools.md\
+  chapters/iot/hardware.md\
+  chapters/iot/sensors.md\
+  chapters/iot/grovepi.md\
+  chapters/iot/dexter.md\
+  chapters/iot/easyplug.md\
+  chapters/iot/esp8266.md\
+  chapters/iot/projects.md\
+  chapters/iot/turtle.md\
   chapters/pi/case.md\
   chapters/case/case.md\
   chapters/pi/links.md\
   chapters/pi/exercise.md\
-  chapters/SECTION/SECTION-ONE-PI.md\
-  chapters/pi/sd-card.md\
-  chapters/pi/initial-setup.md\
-  chapters/pi/pi-passwordreset.md\
+  chapters/pi/setup-ultimate.md\
+  chapters/pi/setup-dev.md\
   chapters/pi/config-display.md\
   chapters/pi/vnc.md\
   chapters/pi/motherboard-led.md\
   chapters/pi/run-at-boot.md\
   chapters/pi/software2.md\
-  chapters/SECTION/SECTION-PI-SETUP.md\
+  chapters/pi/setup-multiple.md\
   chapters/pi/setup.md\
   chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md\
   chapters/pi/clusters/pi-now.md\
@@ -39,7 +50,7 @@ INDEX=\
   chapters/pi/car/car-face.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/SECTION/SECTION-ONE-PI.md dest/chapters/pi/sd-card.md dest/chapters/pi/initial-setup.md dest/chapters/pi/pi-passwordreset.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/software2.md dest/chapters/SECTION/SECTION-PI-SETUP.md dest/chapters/pi/setup.md dest/chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md dest/chapters/pi/clusters/pi-now.md dest/chapters/pi/mpi.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pxe.md dest/chapters/pi/fortran.md dest/chapters/SECTION/SECTION-PI-CLUSTER-CLOUD.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/pi/clusters/pi-kubernetes.md dest/chapters/pi/clusters/pi-hadoop.md dest/chapters/pi/clusters/pi-spark.md dest/chapters/SECTION/SECTION-DRAFT.md dest/chapters/pi/clusters/pi-configure-cluster.md dest/chapters/pi/clusters/pi-setup.md dest/chapters/pi/car/car-face.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/SECTION/SECTION-IOT.md dest/chapters/iot/introduction.md dest/chapters/iot/fundamentals.md dest/chapters/iot/pi.md dest/chapters/iot/tools.md dest/chapters/iot/hardware.md dest/chapters/iot/sensors.md dest/chapters/iot/grovepi.md dest/chapters/iot/dexter.md dest/chapters/iot/easyplug.md dest/chapters/iot/esp8266.md dest/chapters/iot/projects.md dest/chapters/iot/turtle.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/pi/setup-ultimate.md dest/chapters/pi/setup-dev.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/software2.md dest/chapters/pi/setup-multiple.md dest/chapters/pi/setup.md dest/chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md dest/chapters/pi/clusters/pi-now.md dest/chapters/pi/mpi.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pxe.md dest/chapters/pi/fortran.md dest/chapters/SECTION/SECTION-PI-CLUSTER-CLOUD.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/pi/clusters/pi-kubernetes.md dest/chapters/pi/clusters/pi-hadoop.md dest/chapters/pi/clusters/pi-spark.md dest/chapters/SECTION/SECTION-DRAFT.md dest/chapters/pi/clusters/pi-configure-cluster.md dest/chapters/pi/clusters/pi-setup.md dest/chapters/pi/car/car-face.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -75,6 +86,58 @@ dest/chapters/pi/board.md: ../chapters/pi/board.md
 	../bin/markup-single.py ../chapters/pi/board.md 1
 	../bin/header.py dest/chapters/pi/board.md 1
 
+dest/chapters/SECTION/SECTION-IOT.md: ../chapters/SECTION/SECTION-IOT.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-IOT.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-IOT.md 1
+
+dest/chapters/iot/introduction.md: ../chapters/iot/introduction.md
+	../bin/markup-single.py ../chapters/iot/introduction.md 2
+	../bin/header.py dest/chapters/iot/introduction.md 2
+
+dest/chapters/iot/fundamentals.md: ../chapters/iot/fundamentals.md
+	../bin/markup-single.py ../chapters/iot/fundamentals.md 2
+	../bin/header.py dest/chapters/iot/fundamentals.md 2
+
+dest/chapters/iot/pi.md: ../chapters/iot/pi.md
+	../bin/markup-single.py ../chapters/iot/pi.md 2
+	../bin/header.py dest/chapters/iot/pi.md 2
+
+dest/chapters/iot/tools.md: ../chapters/iot/tools.md
+	../bin/markup-single.py ../chapters/iot/tools.md 2
+	../bin/header.py dest/chapters/iot/tools.md 2
+
+dest/chapters/iot/hardware.md: ../chapters/iot/hardware.md
+	../bin/markup-single.py ../chapters/iot/hardware.md 2
+	../bin/header.py dest/chapters/iot/hardware.md 2
+
+dest/chapters/iot/sensors.md: ../chapters/iot/sensors.md
+	../bin/markup-single.py ../chapters/iot/sensors.md 2
+	../bin/header.py dest/chapters/iot/sensors.md 2
+
+dest/chapters/iot/grovepi.md: ../chapters/iot/grovepi.md
+	../bin/markup-single.py ../chapters/iot/grovepi.md 2
+	../bin/header.py dest/chapters/iot/grovepi.md 2
+
+dest/chapters/iot/dexter.md: ../chapters/iot/dexter.md
+	../bin/markup-single.py ../chapters/iot/dexter.md 2
+	../bin/header.py dest/chapters/iot/dexter.md 2
+
+dest/chapters/iot/easyplug.md: ../chapters/iot/easyplug.md
+	../bin/markup-single.py ../chapters/iot/easyplug.md 2
+	../bin/header.py dest/chapters/iot/easyplug.md 2
+
+dest/chapters/iot/esp8266.md: ../chapters/iot/esp8266.md
+	../bin/markup-single.py ../chapters/iot/esp8266.md 2
+	../bin/header.py dest/chapters/iot/esp8266.md 2
+
+dest/chapters/iot/projects.md: ../chapters/iot/projects.md
+	../bin/markup-single.py ../chapters/iot/projects.md 2
+	../bin/header.py dest/chapters/iot/projects.md 2
+
+dest/chapters/iot/turtle.md: ../chapters/iot/turtle.md
+	../bin/markup-single.py ../chapters/iot/turtle.md 2
+	../bin/header.py dest/chapters/iot/turtle.md 2
+
 dest/chapters/pi/case.md: ../chapters/pi/case.md
 	../bin/markup-single.py ../chapters/pi/case.md 1
 	../bin/header.py dest/chapters/pi/case.md 1
@@ -91,21 +154,13 @@ dest/chapters/pi/exercise.md: ../chapters/pi/exercise.md
 	../bin/markup-single.py ../chapters/pi/exercise.md 1
 	../bin/header.py dest/chapters/pi/exercise.md 1
 
-dest/chapters/SECTION/SECTION-ONE-PI.md: ../chapters/SECTION/SECTION-ONE-PI.md
-	../bin/markup-single.py ../chapters/SECTION/SECTION-ONE-PI.md 1
-	../bin/header.py dest/chapters/SECTION/SECTION-ONE-PI.md 1
+dest/chapters/pi/setup-ultimate.md: ../chapters/pi/setup-ultimate.md
+	../bin/markup-single.py ../chapters/pi/setup-ultimate.md 1
+	../bin/header.py dest/chapters/pi/setup-ultimate.md 1
 
-dest/chapters/pi/sd-card.md: ../chapters/pi/sd-card.md
-	../bin/markup-single.py ../chapters/pi/sd-card.md 2
-	../bin/header.py dest/chapters/pi/sd-card.md 2
-
-dest/chapters/pi/initial-setup.md: ../chapters/pi/initial-setup.md
-	../bin/markup-single.py ../chapters/pi/initial-setup.md 2
-	../bin/header.py dest/chapters/pi/initial-setup.md 2
-
-dest/chapters/pi/pi-passwordreset.md: ../chapters/pi/pi-passwordreset.md
-	../bin/markup-single.py ../chapters/pi/pi-passwordreset.md 2
-	../bin/header.py dest/chapters/pi/pi-passwordreset.md 2
+dest/chapters/pi/setup-dev.md: ../chapters/pi/setup-dev.md
+	../bin/markup-single.py ../chapters/pi/setup-dev.md 2
+	../bin/header.py dest/chapters/pi/setup-dev.md 2
 
 dest/chapters/pi/config-display.md: ../chapters/pi/config-display.md
 	../bin/markup-single.py ../chapters/pi/config-display.md 2
@@ -127,9 +182,9 @@ dest/chapters/pi/software2.md: ../chapters/pi/software2.md
 	../bin/markup-single.py ../chapters/pi/software2.md 2
 	../bin/header.py dest/chapters/pi/software2.md 2
 
-dest/chapters/SECTION/SECTION-PI-SETUP.md: ../chapters/SECTION/SECTION-PI-SETUP.md
-	../bin/markup-single.py ../chapters/SECTION/SECTION-PI-SETUP.md 1
-	../bin/header.py dest/chapters/SECTION/SECTION-PI-SETUP.md 1
+dest/chapters/pi/setup-multiple.md: ../chapters/pi/setup-multiple.md
+	../bin/markup-single.py ../chapters/pi/setup-multiple.md 1
+	../bin/header.py dest/chapters/pi/setup-multiple.md 1
 
 dest/chapters/pi/setup.md: ../chapters/pi/setup.md
 	../bin/markup-single.py ../chapters/pi/setup.md 2

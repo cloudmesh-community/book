@@ -52,7 +52,7 @@ request.
 
 The example copied form goher cloud looks as follows:
 
-```
+```go
 import (
   "github.com/gophercloud/gophercloud"
   "github.com/gophercloud/gophercloud/openstack"
@@ -69,7 +69,7 @@ opts := gophercloud.AuthOptions{
 Natirally you can also obtain the values from environment
 variables as pointed out by gopher cloud:
 
-```
+```go
 import (
   "github.com/gophercloud/gophercloud"
   "github.com/gophercloud/gophercloud/openstack"
@@ -86,7 +86,7 @@ To start a virtual machine you need to first identify the location of
 the client for the region you will use. This can be achieved wit the
 command:
 
-```
+```go
 client, err := openstack.NewComputeV2(provider, gophercloud.EndpointOpts{
   Region: os.Getenv("OS_REGION_NAME"),
 })
@@ -99,7 +99,7 @@ we can create our first virtual machine, where `flavor_id` and `image_id`
 are the approriate flavors and image ids:
 
 
-```
+```go
 import "github.com/gophercloud/gophercloud/openstack/compute/v2/servers"
 
 server, err := servers.Create(client, servers.CreateOpts{
@@ -126,7 +126,7 @@ interfaced with. To for example get the plient with a specific
 call:
 
 
-```
+```go
 server, err := servers.Get(client, "{serverId}").Extract()
 ```
   
@@ -135,7 +135,7 @@ intermediate result with just the get method. Than we can obtain
 specific informatiion from the result as needed.
 
 
-```
+```go
 result := servers.Get(client, "{serverId}")
   // Attempt to extract the disk configuration from the OS-DCF disk config
   // extension:
@@ -149,7 +149,7 @@ next. Here we list all servers while itterating over all pages
 returned to us. While calling each page we can invoke special
 operations that are applied to each page.
 
-```
+```go
 err := servers.List(client, nil).EachPage(func (page pagination.Page) (bool, error) {
   s, err := servers.ExtractServers(page)
   if err != nil {
@@ -164,7 +164,7 @@ err := servers.List(client, nil).EachPage(func (page pagination.Page) (bool, err
 However, if we just want to provide a list of all servers, we can
 simpley use the `AllPages()` method as follows:
 
-```
+```go
 allPages, err := servers.List(client, nil).AllPages()
 allServers, err := servers.ExtractServers(allPages)
 ```
