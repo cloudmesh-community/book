@@ -101,7 +101,7 @@ nodes.
 * <https://marcussmallman.io/2018/02/18/diy-rasberry-pi-kubernetes-cluster/>
 
 
-# Raspberry Pi Kubernetes Cluster (B) :o:
+# Raspberry Pi Kubernetes Cluster (B) :o: :hand: fa18-516-03
 
 This section will guide the steps towards setting up a Kubernetes Pi cluster.
 The steps are:
