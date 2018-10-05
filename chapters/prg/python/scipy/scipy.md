@@ -1,4 +1,4 @@
-# Scipy :o: {#s-scipy}
+# Scipy {#s-scipy}
 
 
 SciPy is a library built above numpy and has a number of off the shelf
