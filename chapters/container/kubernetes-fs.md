@@ -1,7 +1,7 @@
 # Using Kubernetes on FutureSystems
 
 This section introduces you on how to use the Kubernetes cluster
-on FutureSystems.  Currently we have deployed kubernetes on our
+on FutureSystems. Currently we have deployed kubernetes on our
 cluster called *echo*.
 
 
@@ -10,31 +10,37 @@ cluster called *echo*.
 You will need an account on FutureSystems and upload the ssh key to
 the FutureSystems portal from the computer from which you want to
 login to echo. To verify, if you have access try to see if you can log
-into india.futuresystems.org. You need to be a member of a valid
+into victor.futuresystems.org. You need to be a member of a valid
 FutureSystems project.
 
-If you have verified that you have access to the india, you can now try
+For Fall 2018 classes at IU you need to be in the following project:
+
+<https://portal.futuresystems.org/project/553>
+
+If you have verified that you have access to the victor, you can now try
 to login to the kubernetes cluster head node with the same username
-and key:
-
-At this time we ask you to use the following IP address to communicate
-with echo via its head node:
-
-    149.165.150.85
-
-To login to echo use the command
+and key. Run these first on your **local machine** to set the username and
+login host:
 
 ```bash
-$ ssh FS_USERNAME@149.165.150.85
+$ export ECHOK8S=149.165.150.85
+$ export FS_USER=<put your futersystem account name here>
 ```
 
-where FS_USERNAME is the username you have on futureSystems.
+Then you can login to the kubernetes head node by running:
 
-**NOTE: If you have access to india but not the kubernetes software, your 
+```bash
+$ ssh $FS_USER@$ECHOK8S
+```
+
+**NOTE: If you have access to victor but not the kubernetes system, your 
 project may not have been authorized to access the kubernetes cluster.
 Send a ticket to FutureSystems ticket system to request this.**
 
-Once you are logged in to the kubernetes cluster head node, try to run:
+Once you are logged in to the kubernetes cluster head node you can run
+commands on the **remote echo kubernetes machine** (all commands below
+except stated otherwise) to use the kubernetes installation there.
+First try to run:
 
 ```bash
 $ kubectl get pods
@@ -45,14 +51,18 @@ if the kubectl command works for you. Naturally it will also list the pods.
 
 ## Example Use
 
-The following command runs an image called nginx with two replicas:
+The following command runs an image called Nginx with two replicas, Nginx is 
+a popular web sever which is well known as a high performance load balancer.
 
 ```bash
 $ kubectl run nginx --replicas=2 --image=nginx --port=80
 ```
 
 As a result of this one deployment was created, and two PODs are
-created and started. To see the deployment, please use the command
+created and started. If you encounter and error stating that the deployment 
+already exists when executing the previous command that is because the 
+command has already been executed. To see the deployment, please use the 
+command, this command should work even if you noticed the error mentioned.
 
 ```bash
 $ kubectl get deployment
@@ -60,9 +70,10 @@ $ kubectl get deployment
 
 This will result in the following output
 
+```text
     NAME      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
     nginx     2         2         2            2           7m
-
+```
 
 To see the pods please use the command
 
@@ -72,9 +83,11 @@ $ kubectl get pods
 
 This will result in the following output
 
+```text
     NAME                   READY STATUS  RESTARTS AGE
     nginx-7587c6fdb6-4jnh6 1/1   Running 0        7m
     nginx-7587c6fdb6-pxpsz 1/1   Running 0        7m
+```
 
 If we want to see more detailed information we cn use the command
 
@@ -82,14 +95,15 @@ If we want to see more detailed information we cn use the command
 $ kubectl get pods -o wide
 ```
 
-```bash
-NAME                   READY STATUS  RESTARTS AGE IP        NODE
-nginx-75...-4jnh6 1/1   Running 0        8m  192.168.56.2   e003
-nginx-75...-pxpsz 1/1   Running 0        8m  192.168.255.66 e005
+```text
+    NAME                   READY STATUS  RESTARTS AGE IP        NODE
+    nginx-75...-4jnh6 1/1   Running 0        8m  192.168.56.2   e003
+    nginx-75...-pxpsz 1/1   Running 0        8m  192.168.255.66 e005
 ```
 
-Please note the IP address field. Now if we try to access the nginx
-homepage with wget (or curl)
+Please note the IP address field. Make sure you are using the IP address that
+is listed when you execute the command since the IP address may have changed. 
+Now if we try to access the nginx homepage with wget (or curl)
 
 ```bash
 $ wget 192.168.56.2
@@ -97,7 +111,7 @@ $ wget 192.168.56.2
 
 we see the following output:
 
-
+```text
     --2018-02-20 14:05:59--  http://192.168.56.2/
     Connecting to 192.168.56.2:80... connected.
     HTTP request sent, awaiting response... 200 OK
@@ -107,22 +121,25 @@ we see the following output:
     index.html    100%[=========>]     612  --.-KB/s    in 0s
     
     2018-02-20 14:05:59 (38.9 MB/s) - 'index.html' saved [612/612]
-
+```
 
 It verifies that the specified image was running, and it is accessible
 from within the cluster.
 
 Next we need to start thinking about how we
 access this web server from outside the cluster. We can explicitly
-exposing the service with the following command
+exposing the service with the following command. You can change the name that
+is set using `--name` to what you want. Given that is adheres to the 
+naming standards. If the name you enter is already in the system your command
+ will return an error saying the service already exists.
 
 ```bash
-$ kubectl expose deployment nginx --type=NodePort --name=999-nginx-ext
+$ kubectl expose deployment nginx --type=NodePort --name=abc-nginx-ext
 ```
 
 We will see the response
 
-```bash
+```text
 $ service "nginx-external" exposed
 ```
 
@@ -134,10 +151,12 @@ $ kubectl get svc
 
 We se something like this
 
+```text
     NAME          TYPE      CLUSTER-IP    EXTERN PORT(S)      AGE
                                           AL-IP
     kubernetes    ClusterIP 10.96.0.1     <none> 443/TCP      8h
-    999-nginx-ext NodePort  10.96.183.189 <none> 80:30275/TCP 6s
+    abc-nginx-ext NodePort  10.110.177.35 <none> 80:31386/TCP 3s
+```
 
 please note that we have given a unique name.
 
@@ -157,15 +176,25 @@ in the worst case revocation of your privileges to use *echo*.
 ---
 
 In our example you will find the port on which our service is exposed
-and remapped to. We find the port **30275** in the value
-**80:30275/TCP** in the ports column for the running container.
+and remapped to. We find the port **31386** in the value
+**80:31386/TCP** in the ports column for the running container.
 
 Now if we visit this URL, which is the public IP of the head node
-followed by the exposed port number
+followed by the exposed port number, from a browser on **your local
+machine**
 
-    http://149.165.150.85:30275
+```text
+    http://149.165.150.85:31386
+```
 
 you should see the 'Welcome to nginx' page.
+
+Once you have done all the work needed using the service you can delete it using
+the following command.
+
+```bash
+$ kubectl delete service <service-name>
+```
 
 ## Exercises
 

@@ -74,7 +74,7 @@ part:
 Libcloud can be installed via pip. Execute the following command in order
 to install Libcloud
 
-```console
+```bash
 pip install apache-libcloud
 ```
 
@@ -125,7 +125,7 @@ After you obtain the connection, it can be used to invoke various services
 
 Authentication is performed for AWS as follows
 
-```Python
+```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
 
@@ -140,7 +140,7 @@ conn = EC2Driver(EC2_ACCESS_ID, EC2_SECRET_KEY)
 
 Authentication is performed for Azure as follows
 
-```Python
+```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
 
@@ -157,7 +157,7 @@ conn = AZDriver(subscription_id=AZURE_SUBSCRIPTION_ID, key_file=AZURE_MANAGEMENT
 
 Authentication is performed for OpenStack as follows
 
-```Python
+```python
 from libcloud.compute.providers import get_driver
 from libcloud.compute.types import Provider
 
@@ -190,7 +190,7 @@ listed.  It is indicated by our ... at the beginning
 In this section we will look at the code that can be used to create a
 node in the provider a node which represents a virtual server
 
-```Python
+```python
 ...
 # retrieve available images and sizes
 images = conn.list_images()
@@ -206,7 +206,7 @@ node = conn.create_node(name='yourservername', image=images[0], size=sizes[0])
 In this section we will look at the code that can be used to list the
 nodes that have been created in the provider
 
-```Python
+```python
 ...
 nodes = conn.list_nodes()
 print nodes
@@ -217,7 +217,7 @@ print nodes
 After the node (Virtual server) has been created the following code can
 be used to start the node
 
-```Python
+```python
 ...
 nodes = conn.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
@@ -229,7 +229,7 @@ conn.ex_start(node=node)
 When needed the following command can be used to stop a node that has 
 been started
 
-```Python
+```python
 ...
 nodes = conn.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
@@ -269,7 +269,7 @@ To illustrate how simple the program is and that it significantly
 improves your management of credentials we provide the follwoing
 code:
 
-```
+```python
 from cm import cloudmesh
 
 cm = cloudmesh()
@@ -286,8 +286,8 @@ It will be your task to add more providers to it.
 We intent to host the code sometime soon on pypi so you can issue the
 command
 
-```
-pip install cm-community
+```bash
+$ pip install cm-community
 ```
 
 and this library will be installed for you.

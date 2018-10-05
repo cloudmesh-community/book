@@ -67,8 +67,8 @@ The following reasons exist:
    which you can see in the contributor section or with
 
  
-```
-git shortlog -s -e
+```bash
+$ git shortlog -s -e
      2  btpope <42694671+btpope@users.noreply.github.com>
      1  luoyu357 <luoyu357@gmail.com>
      1  shilpasingh21 <shilpasingh21@gmail.com>
@@ -131,7 +131,7 @@ the following
 
 The easiest is to use yamllint:
 
-```
+```bash
 $ pip install yamllint
 $ yamllint README.yml
 ```
@@ -146,7 +146,7 @@ Online checkers are available at
 
 A ruby script can do
 
-```
+```bash
 $ ruby-e "require 'yaml';puts YAML.load_file('./README.yml')"
 ```
 

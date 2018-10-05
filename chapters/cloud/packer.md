@@ -121,7 +121,7 @@ the python alias.
 
 To build the image, we now run packer:
 
-```console
+```bash
 $ packer build -var 'google_project_id=my_project_id' e516.json
 ```
 
@@ -129,7 +129,7 @@ You will see output that shows the progress of packer as it starts up
 and provisions the instance. Upon success, packer will create an image
 from the instance and clean up after itself:
 
-```console
+```bash
 $ googlecompute output will be in this color.
 
 ==> googlecompute: Checking image does not exist...

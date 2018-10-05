@@ -108,8 +108,8 @@ Figures must be written in the md as
 ![Figure example](images/code.png){#fig:code-example width=1in}
 ```
 
-You can refer to them with ```+@fig:code-example```. Please note in order for numbering to work 
-figure refernces must include the ```#fig:```
+You can refer to them with `+@fig:code-example`. Please note in order for numbering to work 
+figure refernces must include the `#fig:`
 
 Other emojis
 

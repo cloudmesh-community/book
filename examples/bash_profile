@@ -1,0 +1,75 @@
+######################################################################
+# PYENV
+######################################################################
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=0
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+__pyenv_version_ps1() {
+  local ret=$?;
+  output=$(pyenv version-name)
+  if [[ ! -z $output ]]; then
+    echo -n "($output)"
+  fi
+  return $ret;
+}
+
+PS1="\$(__pyenv_version_ps1) ${PS1}"
+
+alias ENV2="pyenv activate ENV2"
+alias ENV3="pyenv activate ENV3"
+
+######################################################################
+# ALIASES
+######################################################################
+
+open_emacs() {
+    # open -na Aquamacs $*
+    open -a Aquamacs $*    
+}
+
+open_skim() {
+    open -a Skim $*    
+}
+
+alias e=open_emacs
+alias skim=open_skim
+alias s=open_skim
+alias rm='rm -i'
+alias mv='mv -i' 
+alias h='history'
+
+######################################################################
+# GITHUB
+######################################################################
+
+
+cd_github() {
+    cd ~/github/cloudmesh/$1
+}
+
+alias g=cd_github
+
+PATH=$PATH:/usr/local/bin
+export PATH
+
+# Setting PATH for Python 2.7
+# The original version is saved in .bash_profile.pysave
+#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+#export PATH
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+#PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+#export PATH
+
+EDITOR='emacs'
+export EDITOR
+
+
+export PATH="/usr/local/sbin:$PATH"
+
+ENV3

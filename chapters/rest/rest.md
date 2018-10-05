@@ -161,8 +161,9 @@ happens in this example.
 
 ```
     from flask import Flask
-    from flask_restful import reqparse, abort, Api, Resource
-
+    from flask_restful import reqparse, abort
+    from flask_restful import Api, Resource
+    
     app = Flask(__name__)
     api = Api(app)
 
@@ -1000,8 +1001,7 @@ command.
 
 The proposed command is located at:
 
-*
-<https://github.com/cloudmesh/rest/blob/master/cloudmesh/ext/command/admin.py>
+* <https://github.com/cloudmesh/cloudmesh.rest/blob/master/cloudmesh/admin/command/admin.py>
 
 It will be up to the class to implement such a command. Please
 coordinate with each other.
@@ -1011,7 +1011,7 @@ straight forward. A great extension is to load the objects definitions
 or eve e.g. settings.py not from the class, but from a place in
 .cloudmesh. I propose to place the file at:
 
-    .cloudmesh/db/settings.py
+    ~/.cloudmesh/db/settings.py
 
 the location of this file is used when the Service class is initialized
 with None. Prior to starting the service the file needs to be copied
