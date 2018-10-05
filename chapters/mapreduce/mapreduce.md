@@ -47,7 +47,7 @@ stages of its operation:
    chunk of data which is used to calculate output.(see
    +@fig:mapreduce_diagram)
 
-![MAPREDUCE_DIAGRAM](images/mapreduce_diagram.png){#fig:mapreduce_diagram}
+![MAPREDUCE_DIAGRAM :o:](images/mapreduce_diagram.png){#fig:mapreduce_diagram}
 
           
 
@@ -67,7 +67,7 @@ the slave machines which are in themselves a processing unit. So all
 slaves process the data in parallel and the time taken to process the
 data is reduced tremendously. (see +@fig:mapreduce_master_slave)
 
-![MAPREDUCE_MATER_SLAVE](images/mapreduce_master_slave.png){#fig:mapreduce_master_slave}
+![MAPREDUCE_MATER_SLAVE :o:](images/mapreduce_master_slave.png){#fig:mapreduce_master_slave}
 
  
 
@@ -92,7 +92,7 @@ Bear, Camel, Cat, Camel
 7. The final output is then written to a file. (see
    +@fig:mapreduce_wordcount)
 
-![MAPREDUCE_WORDCOUNT](images/mapreduce_wordcount.png){#fig:mapreduce_wordcount}
+![MAPREDUCE_WORDCOUNT :o:](images/mapreduce_wordcount.png){#fig:mapreduce_wordcount}
 
  
 
@@ -152,7 +152,7 @@ introduced which acts as a layer between MapReduce and HDFS and using
 this YARN, many other BigData frameworks can connect to HDFS as
 well. (see +@fig:mapreduce_hadoop_spark)
 
-![MAPREDUCE_HADOOP_SPARK](images/mapreduce_hadoop_spark.png){#fig:mapreduce_hadoop_spark}
+![MAPREDUCE_HADOOP_SPARK :o:](images/mapreduce_hadoop_spark.png){#fig:mapreduce_hadoop_spark}
  
 
 There are many big data frameworks available and there is always a
