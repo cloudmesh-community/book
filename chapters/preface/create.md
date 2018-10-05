@@ -4,9 +4,7 @@ Although you will never likely to create the epub from source, we have
 included this section for our most advanced contributors and those
 that update the epub on github.
 
-## OSX Requirements :o:
-
-:warning: thi section has not been tested
+## OSX Requirements
 
 This is just a guess I for got how to install all of this, it may be
 documented in another md file, grep -R for brew
@@ -52,6 +50,7 @@ To compile a book go to the directory and make it. Lets assume you like to creat
 ```
 $ git clone https://github.com/cloudmesh-community/book.git
 $ cd cloud
+$ make images
 $ make
 ```
 

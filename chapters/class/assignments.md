@@ -293,7 +293,7 @@ tasked to do the following:
 1. You will be downloading and studying the technology abstracts that
    we collected in
 
-   * <https://github.com/cloudmesh/technologies/raw/master/vonLaszewski-cloud-echnologies.epub>
+   * <https://github.com/cloudmesh/technologies/raw/master/vonLaszewski-cloud-technologies.epub>
 
 2. You will be writing new or improving existing technology
    abstracts. A technology abstract is not plagiarized, does at most

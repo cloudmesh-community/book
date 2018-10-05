@@ -1,5 +1,15 @@
 # Github
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Be able to use the github cloud sevices to collaborately develop contents and programs.
+* Be able to use github as part of an open source project.
+
+---
+
+
 In some classes the material may be openly shared in code repositories.
 This includes class material, papers and project. Hence, we need some
 mechanism to share content with a large number of students.
@@ -359,16 +369,43 @@ course.
 
 ## Contributing to the Document
 
-### Clone
+It is relatively easy to contribute to the document if you understand how to use github.
+The first thing you will need to do is to create a fork of the repository. The easiest 
+way to do this is to visit the URL 
 
-    $ git remote add upstream \
-          https://github.com/cloudmesh-community/book
+*  <https://github.com/cloudmesh-community/book>
 
-### Merge
+Towards the upper right corner you will find a link called **Fork**. Click on it and chose 
+into which account you like to fork the original repository. Next you will create a colne 
+from your corked directory. YOU will see in your fork a green clone button. YOu will see a 
+URL that you can copy into your terminal. If the links does not include your username, it is 
+the wrong link.
 
-As we are allowing contribution by the community, they are best managed
-through a merge with our upstream repository so you can update to the
-newest status before you issue a pul request.
+In your terminal you now say 
+
+```bash
+git colne  https://github.com/<yourusername>/book
+```
+
+Now cd into this directory and make your changes.
+
+```
+$ cd book
+```
+
+Use the usual git commands such as ``git add``, ```git commit```, ```git push```
+
+Note you will push into your local directory.
+
+
+
+
+### Stay up to date with the original repo
+
+Form time to time you will see that others are contributing to the original repo. 
+To stay up to date you want to not only sync from your local copy, but also from the original repo.
+To link your repo with what is called the upstream you need to do the following once, so you can issue 
+`git pull` tha also pulls from the upstream
 
 Make sure you have upstream repo defined:
 

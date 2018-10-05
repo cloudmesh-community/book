@@ -1,18 +1,16 @@
-Getting Started
-===============
+# Getting Started on Chameleon Cloud
 
 We describe how you can get access to chameleon cloud under the
 assumption that you are a student or a researcher that joins an existing
 project on Chameleon cloud. You will need to follow the following steps:
 
-Step 1: Create a Chameleon account
-----------------------------------
+## Step 1: Create a Chameleon account
 
 To get started using Chameleon you will need to [create a user
 account](https://www.chameleoncloud.org/register).
 
 You will be asked to agree to the [Chameleon terms and
-conditions](https://www.chameleoncloud.org/terms/view/chameleon-user-terms/)
+conditions](https://www.chameleoncloud.org/terms/view/site-terms/1.00/)
 which, among others, ask you to acknowledge the use of Chameleon in your
 publications.
 
@@ -26,24 +24,23 @@ Chameleon testbed supported by the National Science Foundation".
 As part of creating an account you may request PI status. However you
 are not a PI as you will be joining a project.
 
-Step 2: Create or join a project
---------------------------------
+## Step 2: Create or join a project
 
 To use Chameleon, you will need to be associated with a
-[project](https://www.chameleoncloud.org/docs/user-faq/#toc-how-do-i-apply-for-a-chameleon-project-)
+[project](https://www.chameleoncloud.org/user/projects/new/)
 that is assigned an
-[allocation](https://www.chameleoncloud.org/docs/user-faq/#toc-what-are-the-project-allocation-sizes-and-limits-).
+[allocation](https://chameleoncloud.readthedocs.io/en/latest/getting-started/faq.html?highlight=allocation#project-and-allocation-management).
 This means that you either need to
 
-1.  **[apply for a new
-    project](https://www.chameleoncloud.org/user/projects/new/)** or
+1.  [apply for a new
+    project](https://www.chameleoncloud.org/user/projects/new/) or
 
-2.  **[ask the PI of an existing Chameleon project to add
-    you](https://www.chameleoncloud.org/docs/user-faq/#toc-my-pi-professor-colleague-already-has-a-chameleon-project-how-do-i-get-added-as-a-user-on-the-project-).**
+2.  [ask the PI of an existing Chameleon project to add
+    you](https://chameleoncloud.readthedocs.io/en/latest/getting-started/faq.html?highlight=allocation#my-pi-professor-colleague-already-has-a-chameleon-project-how-do-i-get-added-as-a-user-on-the-project).
 
 A project is headed by a project PI, typically [a faculty member or
 researcher scientist at a scientific
-institution](https://www.chameleoncloud.org/docs/user-faq/#toc-who-is-eligible-to-be-chameleon-pi-and-how-do-i-make-sure-that-my-pi-status-is-reflected-in-my-profile-).
+institution](https://chameleoncloud.readthedocs.io/en/latest/getting-started/faq.html?highlight=allocation#my-pi-professor-colleague-already-has-a-chameleon-project-how-do-i-get-added-as-a-user-on-the-project).
 If you are a student we recommend that you ask your professor to work
 with you on creating a project. Please note that you must not create a
 project by yourself and that you indeed need to work with your
@@ -61,14 +58,15 @@ only your chameleon account name and potentially your organizational
 e-mail, Firstname, and Lastname so they can check you are eligible to
 get access.
 
-Indiana University students that take the e516 and e616 classes will
-have to fill out a google form in which they communicate the chameleon
-cloud name. You can already apply for an account name, but do not apply
-for a project. If you nevertheless apply for a project, we will hear
-from the administrators and you will receive a point deduction.
+:warning: Indiana University students that take the e516 and e616
+classes will have to fill out a google form in which they communicate
+the chameleon cloud name. You can already apply for an account name,
+but do not apply for a project. If you nevertheless apply for a
+project, we will hear from the chameloen cloud administrators. As they
+do not like taht because you have not followed the chameleon cloud
+project policies you will receive a grade deduction for the class.
 
-Step 3: Start using Chameleon!
-------------------------------
+## Step 3: Start using Chameleon
 
 Now that you have enrolled and once you are added to the project by your
 project lead you can start using chameleon cloud. However be reminded
@@ -80,19 +78,19 @@ Chameleon provides two types of resources with links to their respective
 users guides below:
 
 **[Bare Metal User
-Guide](https://www.chameleoncloud.org/docs/bare-metal-user-guide-old/)**
+Guide](https://chameleoncloud.readthedocs.io/en/latest/technical/baremetal.html?highlight=bare%20metal)**
 will tell you how to use Chameleon bare metal resources which provide
 strong isolation and allow you maximum control (reboot to new operating
 system, reboot the kernel, etc.)
 
 **[OpenStack KVM User
-Guide](https://www.chameleoncloud.org/docs/user-guides/openstack-kvm-user-guide/)**
+Guide](https://chameleoncloud.readthedocs.io/en/latest/technical/kvm.html?highlight=kvm)**
 will tell you how to get started with Chameleon's OpenStack KVM cloud
 which is a multi-tenant environment providing weak performance
 isolation.
 
 If you have any questions or encounter any problems, you can check out
-our [User FAQ](https://www.chameleoncloud.org/docs/user-faq/), or
+our [User FAQ](https://chameleoncloud.readthedocs.io/en/latest/getting-started/faq.html?highlight=question), or
 [submit a ticket](https://www.chameleoncloud.org/user/help/).
 
 As part of the classes you will need to first pass a cloud *security*

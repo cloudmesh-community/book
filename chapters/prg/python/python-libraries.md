@@ -1,4 +1,4 @@
-# Python Modules
+# Python Modules {#s-python-modules}
 
 Often you may need functionality that is not present in Python's
 standard library. In this case you have two option:
@@ -330,7 +330,7 @@ Then hit Go.
 Exercises
 ---------
 
-Python.Lib.1:
+E.Python.Lib.1:
 
 > Write a python program called iterate.py that accepts an integer n
 > from the command line. Pass this integer to a function called iterate.
@@ -352,4 +352,4 @@ E:Python.Lib.2:
 > 4.  Write a program that uses docopt to define a commandline program.
 >    Hint: modify the iterate program.
 
-> 5.  Demonstrate the program works and submit the code and output.
+> 5.  Demonstrate the program works.

@@ -1,5 +1,4 @@
-Hardware
-========
+# Chameleon Cloud Hardware
 
 The Chameleon architecture consists of a set of standard cloud units
 (SCUs), each of which is a single rack with 42 compute nodes, 4 storage
@@ -25,11 +24,10 @@ links, to allow users to examine the effects of a distributed cloud.
   TACC/UC Distributed Cloud            100Gbps Internet2 links
   ------------------------------------ ----------------------------
 
-[Detailed information in our Resource Discovery
+[Detailed information in Chameleon cloud Resource Discovery
 Portal](https://www.chameleoncloud.org/user/discovery/)
 
-Standard Cloud Units
---------------------
+## Standard Cloud Units
 
 The homogeneous standard cloud unit is a self-contained rack with all
 the components necessary to run a complete cloud infrastructure, and the
@@ -49,11 +47,9 @@ core network from each SCU. The total system contains 12 SCUs (10 at
 TACC and 2 at UC) for a total of 13,056 cores, 66 TiB of RAM, and 1.5PB
 of configurable storage in the SCU subsystem.
 
-![Chameleon Cloud
-Racks](images/Chameleon2.jpeg){width="0.5\columnwidth"}
+![Chameleon Cloud Racks](images/Chameleon2.jpeg)
 
-Network
--------
+## Network
 
 Networking is changing rapidly, and the network fabric is as much a part
 of the research focus of Chameleon as the compute or storage. For the
@@ -66,8 +62,7 @@ connected by 40 Gbps Ethernet links, which connect to the backbone
 Infiniband network (56Gbps) is also deployed on one SCU to allow
 exploration of alternate networks.
 
-Shared Storage
---------------
+## Shared Storage
 
 While storage is dynamically provisioned to researchers to be used as an
 experiment needs within the SCUs, Chameleon also provides a shared
@@ -81,14 +76,13 @@ dozen PowerEdge R630 servers as management nodes to provide for login
 access to the resource, data staging, system monitoring, and hosting
 various OpenStack services.
 
-Heterogeneous Compute Hardware
-------------------------------
+## Heterogeneous Compute Hardware
 
 The heterogeneous hardware includes various technologies: GPU and FPGA
 accelerators, SSD and NVMe storage, low-power ARM, Atom, and Xeon
 systems-on-a-chip. With the exception of the low-power
 systems-on-a-chip, each of the additional nodes is a Dell PowerEdge R730
-server with the same CPUs as the R630 servers in our SCUs.
+server with the same CPUs as the R630 servers in the SCUs.
 
 The two storage hierarchy nodes have been designed to enable experiments
 using multiple layers of caching: they are configured with 512 GiB of
@@ -136,9 +130,8 @@ For more information on how you can reserve these nodes, see the
 section](https://www.chameleoncloud.org/docs/bare-metal-user-guide/#heterogeneous_hardware)
 of the bare metal user's guide.
 
-Live updates
-------------
+## Live updates
 
 You can browse detailed information about the resources offered for bare
-metal reconfiguration in our [Resource Discovery
+metal reconfiguration in the [Resource Discovery
 Portal](https://www.chameleoncloud.org/user/discovery/).

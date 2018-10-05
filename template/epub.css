@@ -72,6 +72,7 @@ h1 {
     page-break-before: always;
     background-color: WhiteSmoke;
     padding: 2px;
+    font-variant: small-caps;
 }
 .part {
     /* border-top: 12px solid transparent;*/
@@ -86,6 +87,7 @@ h2 {
     text-align: left;    
     font-family: OpenSans;
     border-bottom: 1px solid black;
+    font-variant: small-caps;
 }
 h3, h4, h5, h6 {
     font-family: OpenSans;

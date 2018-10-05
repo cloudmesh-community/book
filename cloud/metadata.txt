@@ -10,4 +10,7 @@ rights: (c) Gregor von Laszewski, 2018
 language: en-US
 stylesheet: template/epub.css
 cover-image: cover/cover.jpg
+fignos-caption-name: Figure
+fignos-plus-name: Figure
+xnos-number-sections: True
 ...
