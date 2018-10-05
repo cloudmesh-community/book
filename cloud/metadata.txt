@@ -1,7 +1,5 @@
 ---
-title:
-- type: main
-  text: Cloud Computing
+title: Cloud Computing
 creator:
 - role: editor
   text: Gregor von Laszewski
@@ -13,4 +11,7 @@ cover-image: cover/cover.jpg
 fignos-caption-name: Figure
 fignos-plus-name: Figure
 xnos-number-sections: True
+keywords: [cloud, container]
+abstract: |
+  This book contains the lecture notes for e516
 ...
