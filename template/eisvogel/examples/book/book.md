@@ -1,16 +1,16 @@
 ---
-title: "Vinaque sanguine metuenti cuiquam Alcyone fixus"
+title: "Cloud Computing Project Proceedings"
 author: [Gregor von Laszewski]
 date: "2018-05-10"
 subject: "Markdown"
 keywords: [Markdown, Example]
-subtitle: "Aesculeae domus vincemur et Veneris adsuetus lapsum"
+subtitle: "Volume 10 -- Fall 2018"
 titlepage: true
 titlepage-color: "06386e"
 titlepage-text-color: "FFFFFF"
 titlepage-rule-color: "FFFFFF"
 titlepage-rule-height: 2
-logo: "logo.pdf"
+logo: "cloudmesh-logo.pdf"
 logo-width: 120
 ...
 
