@@ -1,7 +1,7 @@
 ---
 title: "Vinaque sanguine metuenti cuiquam Alcyone fixus"
-author: [Author Name]
-date: "2017-02-20"
+author: [Gregor von Laszewski]
+date: "2018-05-10"
 subject: "Markdown"
 keywords: [Markdown, Example]
 subtitle: "Aesculeae domus vincemur et Veneris adsuetus lapsum"
