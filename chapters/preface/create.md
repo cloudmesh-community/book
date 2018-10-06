@@ -9,7 +9,7 @@ that update the epub on github.
 This is just a guess I for got how to install all of this, it may be
 documented in another md file, grep -R for brew
 
-```
+```bash
 $ brew install graphviz
 $ brew install pandoc # needs version >2.2.3 of pandoc see travis for
                       # proper install if brew does not work
@@ -19,7 +19,7 @@ $ npm install --global mermaid-filte
 
 ## Ubuntu requirements
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install graphviz
 $ wget https://hackage.haskell.org/package/pandoc-2.2.3.2/pandoc-2.2.3.2.tar.gz
@@ -40,15 +40,15 @@ $ npm install --global mermaid-filter
 
 Books are organize in directories. We currently have
 
-```
-./book/cloud/
-./book/big-data-applications/
-```
+
+    ./book/cloud/
+    ./book/big-data-applications/
+
 
 To compile a book go to the directory and make it. Lets assume you
 like to create the cloud book for 516
 
-```
+```bash
 $ git clone https://github.com/cloudmesh-community/book.git
 $ cd cloud
 $ make images
@@ -57,8 +57,8 @@ $ make
 
 To view it you say
 
-```
-make view
+```bash
+$ make view
 ```
 
 ## Publishing the book to github
@@ -68,7 +68,7 @@ privileges. and never be part of a pull request.
 
 To publish the book say
 
-```
+```bash
 $ make publish
 ```
 
@@ -79,7 +79,7 @@ variable `DRAFT=` to add additional sections and chapters they work
 on, but should not yet been distributed with the main publication.
 Simply add them to the list and say
 
-```
+```bash
 $ make draft
 $ make view
 ```
@@ -89,7 +89,7 @@ to create the draft sections only and view them.
 To conveniently call them in a lazy fashion in a terminal you could
 use the following two aliases.
 
-```
+```bash
 alias m='make; make view'
 alias d='make draft; make view'
 ```

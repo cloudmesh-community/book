@@ -225,7 +225,7 @@ github.
 
 
 | Price | Description | URL |
-| --- | ----------------------------------- | --- |
+| --- | ------------------------------------------------------------------------------------------------------- | --- |
 | $29.99 | Anker 60W 6-Port USB Wall Charger, PowerPort 6 for iPhone 7 / 6s / Plus, iPad Pro / Air 2 / mini, Galaxy S7 / S6 / Edge / Plus, Note 5 / 4, LG, Nexus, HTC and More | [link][p-anker] |
 | $8.90 | Cat 6 Ethernet Cable 1 ft White (6 Pack) - Flat Internet Network Cable - Jadaol Cat 6 Computer Cable short - Cat6 Ethernet Patch Lan Cable With | [link][p-e-cable]|
 | $19.99 <sup>1</sup> | D-link 8-Port Unmanaged Gigabit Switch (GO-SW-8G) | [link][p-switch] |

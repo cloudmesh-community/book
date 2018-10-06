@@ -58,7 +58,7 @@ We see the following functionality:
 As we have learned in our REST section we need to issue GET requests
 to obtain indformation about the issues. Soch as
 
-```
+```bash
 GET /issues
 GET /user/issues
 ```

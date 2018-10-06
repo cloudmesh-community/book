@@ -29,7 +29,7 @@ and field measurement campaigns"* [@earthdata-about]. +@fig:use-cases-es-esdops
 depicts the overall context of EOSDIS and ESDIS in Earth Science data
 operations [@earthdata-about].
 
-![Earth Science Data Operations](images/use-cases-es-esdops.jpg){#fig:use-cases-es-esdops}
+![Earth Science Data Operations [:o:]](images/use-cases-es-esdops.jpg){#fig:use-cases-es-esdops}
 
 Traditionally, higher level products (those used by end users) are produced by
 a Science Investigator-led Processing System (SIPS) usually hosted and
@@ -43,7 +43,7 @@ depicts the geographic locations of the various on-premise SIPSs and DAACs
 that generate and distribute the various NASA EOS datasets
 [@nasa-eosdis-cumulus].
 
-![SIPS & DAAC Centers](images/use-cases-es-sips-daac-centers.png){#fig:sips-daac-centers}
+![SIPS & DAAC Centers [:o:]](images/use-cases-es-sips-daac-centers.png){#fig:sips-daac-centers}
 
 ### Big Data :hand: :o:
 
@@ -75,7 +75,7 @@ complex processes, including ecosystem disturbances, ice-sheet collapse,
 and natural hazards such as earthquakes, tsunamis, volcanoes and
 landslides.* [@nisar-mission]
 
-![NISAR](images/use-cases-es-nisar.png){#fig:nisar-satellite}
+![NISAR [:o:]](images/use-cases-es-nisar.png){#fig:nisar-satellite}
 
 +@fig:mission-data-vols presents the data volume requirements for current
 (OCO-2 & SMAP) and future (NISAR & SWOT) NASA missions and highlights the
@@ -94,7 +94,7 @@ indexing, searching, transferring, and so on all increase exponentially as
 well"* [@nasa-big-data]. +@fig:eosdis-growth shows EOSDIS current holdings
 and projected growth [@nasa-eosdis-cumulus].
 
-![EOSDIS Holdings and Projected Growth](images/use-cases-es-datavols-growth.png){#fig:eosdis-growth}
+![EOSDIS Holdings and Projected Growth [:o:]](images/use-cases-es-datavols-growth.png){#fig:eosdis-growth}
 
 ### Science End Users
 
@@ -159,7 +159,7 @@ the same object store
 directly access, process, and analyze the data in the same object store using
 cloud-native resources
 
-![EOSDIS Data Lake](images/use-cases-es-datalake.png){#fig:eosdis-data-lake}
+![EOSDIS Data Lake [:o:]](images/use-cases-es-datalake.png){#fig:eosdis-data-lake}
 
 Current investigations are underway to determine the technical and cost
 viability of moving to an entirely cloud-native architecture. In particular,

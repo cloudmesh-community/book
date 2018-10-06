@@ -117,7 +117,7 @@ To start the emulator type in the following command to have QEMU
 emulate an ARM architecture:
 
 
-```
+```bash
 $ qemu-system-arm -kernel ./kernel-qemu-4.4.34-jessie \
     -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" \
     -hda raspbian-stretch-lite.img \

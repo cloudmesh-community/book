@@ -489,22 +489,30 @@ those tutorials. We found the following useful
 
 ## Exercises
 
-[\[E:Github.1\]]{#E:Github.1 label="E:Github.1"} How do you set your
-favorite editor as a default with github config
+E.Github.1: 
 
-[\[E:Github.2\]]{#E:Github.2 label="E:Github.2"} What is the difference
-between merge and rebase?
+> How do you set your favorite editor as a default with github config
 
-[\[E:Github.3\]]{#E:Github.3 label="E:Github.3"} Assume you have made a
-change in your local fork, however other users have since committed to
-the master branch, how can you make sure your commit works off from the
-latest information in the master branch?
+E.Github.2:
 
-[\[E:Github.4\]]{#E:Github.4 label="E:Github.4"} Find a spelling error
-in the Web page or a contribution and create a pull request for it.
+> What is the differencebetween merge and rebase?
 
-[\[E:Gitlab.5\]]{#E:Gitlab.5 label="E:Gitlab.5"} Create a README.yml in
-your github account directory provided for you for class.
+E.Github.3:
+
+> Assume you have made a
+> change in your local fork, however other users have since committed to
+> the master branch, how can you make sure your commit works off from the
+> latest information in the master branch?
+
+E.Github.4:
+
+> Find a spelling error
+> in the Web page or a contribution and create a pull request for it.
+
+E.Gitlab.5:
+
+> Create a README.yml in
+> your github account directory provided for you for class.
 
 ## Github Issues {#S:git-issues}
 
