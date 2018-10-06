@@ -398,6 +398,16 @@ Variables are used to pass dynamic values to queries. Instead of passing
 hard-coded values to a query, variables can be defined for these values. 
 Now these variables can be passed to queries.
 
+Variables can be passed to GraphQL queries directly through commandline.
+
+```bash
+curl -X POST \
+-H "Content-Type: application/json;" \
+-d '{"query": "{ repository (name: $name) { name url } }", "variables": \
+{ "name": "book" }}' \
+http://localhost:8000/graphql/
+```
+
 **Variables can be defined in the Query variables panel at left bottom of 
 the graphiql client**, it is an in-browser IDE for GraphQL. There 
 are many implementations of _graphiql_ available. For our chapter we will use
@@ -560,17 +570,6 @@ which will give response
 In application we need to validate user input. If it is invalid we can 
 use `GraphQLError` class or python exceptions to raise validation errors.
 
-## Django for GraphQL
-
-Django is a very popular python web framework which includes a lot of
-boilerplate code. Due to this its footprint is larger than other
-services, such as Flask, but provide a lot of build in features. Django is
-mature and has a larger community than that of flask.
-Django has inbuilt support for Object Relational Mapping
-which is based on Database Code-First approach. Please refer
-[@www-djangoproject] for more Django information. Database suport
-however can also be easily added to falsk through plugins.
-
 :o: the purpose of this section is unclear at this time. Django nd
 flask have advantages and disadvantages.
 
@@ -639,9 +638,18 @@ GRAPHENE = {
 }
 ```
 
+### Django for GraphQL
+
+For the purpose of this example, we will use Django as python web 
+framework. You can even use Flask in place of Django.
+
+Django is a very popular python web framework which already comes with a 
+lot of boilerplate code. It is mature and has a very large community.
+It has inbuilt support for Object Relational Mapping which is based on Database Code-First approach. Please refer [@www-djangoproject] for more Django information. 
+
 ### GraphQL server implementation :o:
 
-Now django seperates project into apps. Here we will have one app for
+Django seperates project into apps. Here we will have one app for
 Users and one for Repos. Django provides support for SQLite so we will
 use that for demo.
 
@@ -747,7 +755,7 @@ class Query(Repositories.schema.Query, graphene.ObjectType):
 
 schema = graphene.Schema(query=Query)
 ```
-### Querying implemented GraphQL server :o:
+### GraphQL Server Querying :o:
 
 Schema is created now to query it we will use GraphiQL which is
 playground for GraphQL queries. Open cloudmeshrepository/urls.py and append
@@ -879,7 +887,8 @@ mutation {
 }
 ```
 
-And this will not just create a new repository but also get the newly added repository
+And this will not just create a new repository but also get the newly 
+added repository
 
 ```json
 {
