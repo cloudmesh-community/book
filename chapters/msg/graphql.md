@@ -1059,10 +1059,6 @@ Henceforth you need to pass token with every repositories query. This token
 needs to be passed as header which the *GraphiQL* ui client does not
 support. Hence you can use either of these 2 ways
 
-:o: :TODO: could we not put the token in an env variable and use that,
-or have a script that does find the token from the file that you use
-earlier?
-
 * curl command 
 
 ```bash
@@ -1098,6 +1094,12 @@ the preferred way.
 JWT tokens are bearer tokens which need to be passed in HTTP
 authorization header. JWT tokens are very safe against CSRF attacks
 and are trusted and verified since they are digitally signed.
+
+JWT tokens can have expiry period. Typically, GraphQL server host 
+provides the token expiry information to client through some kind of 
+documentation. If the token is about to be expired, you can call `refreshToken` mutation and the response would be a refreshed token. 
+However if the token has already expired then you can again request 
+a new token by calling `tokenAuth` mutation.
 
 Find more about JWT tockens at [@jwt-tockens] and GraphQL
 authentication at [@medium-graphql]
