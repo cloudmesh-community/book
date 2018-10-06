@@ -391,7 +391,7 @@ The response for this query will look like
 ### Variables :o:
 
 :o: Mihir had updated this - explained variables section, do we need a
-screenshot as well just to show the section in _GraphiQL_ IDE where 
+screenshot as well just to show the section in *GraphiQL* IDE where 
 variables are defined?
 
 Variables are used to pass dynamic values to queries. Instead of passing 
@@ -413,9 +413,9 @@ the graphiql client**, it is an in-browser IDE for GraphQL. There
 are many implementations of *graphiql* available. For our chapter we will use
 [GraphiQL](https://github.com/skevy/graphiql-app). Its usage is discussed 
 later in this chapter.
-Variables can be defined in the _"Query Variables"_ panel at left bottom of 
-the _GraphiQL_ client, which is an IDE(Interactive Development Environment)
-for GraphQL. There are many implementations of _GraphiQL_ available. For 
+Variables can be defined in the *"Query Variables"* panel at left bottom of 
+the *GraphiQL* client, which is an IDE(Interactive Development Environment)
+for GraphQL. There are many implementations of *GraphiQL* available. For 
 this chapter we will use [GraphiQL](https://github.com/skevy/graphiql-app). 
 Its usage is discussed later in this chapter.
 
@@ -634,7 +634,7 @@ Last command will start server on localhost and you can access it at
 
 * <http://localhost:8000>
 
-It will show you _GraphiQL_ interface. You can execute your queries in it.
+It will show you *GraphiQL* interface. You can execute your queries in it.
 
 If you want to create graphql server from scratch, you can start with following 
 steps
@@ -801,7 +801,7 @@ schema = graphene.Schema(query=Query)
 ```
 ### GraphQL Server Querying :o:
 
-Schema is created now to query it we will use _GraphiQL_ which is
+Schema is created now to query it we will use *GraphiQL* which is
 playground for GraphQL queries. Open cloudmeshrepository/urls.py and append
 following code
 
@@ -825,7 +825,7 @@ Now open the URL
 
 * <http://localhost:8000/graphql>
 
-in your broweser. You will see _GraphiQL_. In the left pane add the
+in your broweser. You will see *GraphiQL*. In the left pane add the
 following query
 
 ```graphql
@@ -913,7 +913,7 @@ class Mutation(graphene.ObjectType):
     create_repository = CreateRepository.Field()
 ```
 
-Now you can run the following mutation on _GraphiQL_ to add a new repository
+Now you can run the following mutation on *GraphiQL* to add a new repository
 
 ```graphql
 mutation {
@@ -1056,7 +1056,7 @@ Now if you try to query repositories from GraphQL, you will see this error
 ```
 
 Henceforth you need to pass token with every repositories query. This token
-needs to be passed as header which the _GraphiQL_ ui client does not
+needs to be passed as header which the *GraphiQL* ui client does not
 support. Hence you can use either of these 2 ways
 
 :o: :TODO: could we not put the token in an env variable and use that,
@@ -1130,7 +1130,7 @@ brew cask install graphiql
 * Now we need OAuth token to access GitHub API. You can generate OAuth
   token by following steps mentioned at
   https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
-* Open _GraphiQL_ app and click edit headers at upper-right corner. Add
+* Open *GraphiQL* app and click edit headers at upper-right corner. Add
   new Header with key "Authorization" and value "Bearer *your token*"
 * Enter "https://api.github.com/graphql" in GraphQL Endpoint textbox
 * Keep method as "POST" only
