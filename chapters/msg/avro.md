@@ -5,10 +5,10 @@ messaging to comunicate between components while serializing and
 deserializing object defined with a schema. In addition it provides
 data structures, remote procedure call (RPC), a container file to
 store persistent data and simple integration with dynamic languages
-[@hid-sp18-405-tutorial-avro-doc]. Avro depends on schemas, which
-are defined with JSON. This facilitates implementation in other
-languages that have the JSON libraries. The key advantages of Avro are
-schema evolution - Avro will handle the missing/extra/modified fields,
+[@hid-sp18-405-tutorial-avro-doc]. Avro depends on schemas, which are
+defined with JSON. This facilitates implementation in other languages
+that have the JSON libraries. The key advantages of Avro are schema
+evolution - Avro will handle the missing/extra/modified fields,
 dynamic typing - serialization and deserialization without code
 generation, untagged data - data encoding and faster data processing
 by allowing data to be written without overhead.
@@ -110,13 +110,13 @@ The code does the following:
 * This above instruction is for Python2. If one is using Python3,
   change
 
-  ```
+  ```python
   schema = avro.schema.parse(open("student.avsc", "rb").read())
   ```
   
   to:
 
-  ```
+  ```python
   schema = avro.schema.Parse(open("student.avsc", "rb").read())
   ```
   
@@ -144,7 +144,7 @@ The code does the following:
 
 The output should look like:
 
-```
+```json
 {'name': 'Albert Zweistein',
  'hid': 'hid-sp18-405', 
  'age': 29,

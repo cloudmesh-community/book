@@ -104,8 +104,8 @@ Now execute the following commands to download and install java
 installes hadoop and jave ... and than keep that up to date. for
 example
 
-```
-cm-hadoop install
+```bash
+$ cm-hadoop install
 ```
 
 :o it would figure out the os and to the righ things

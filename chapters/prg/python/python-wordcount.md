@@ -1,4 +1,4 @@
-# Word Count with Parallel Python :new:
+# Word Count with Parallel Python
 
 We will demonstrate Python's `multiprocessing` API for parallel
 computation by writing a program that counts how many times each word in

@@ -76,16 +76,16 @@ if the string is palindrome or not.
 
 
 
-```
-  function isPalindrome(string) {
+```java
+function isPalindrome(string) {
     const reverse = string.split('').reverse().join('');
     const isPalindrome = (string === reverse);
     const result = isPalindrome ? `${string} is a Palindrome` : `${string} is not a Palindrome`;
     return result;
-  }
+}
   
-  document.write(isPalindrome('abcd'));
-  ```
+document.write(isPalindrome('abcd'));
+```
 
   
 This example we store in a file as javascript named `isPalindrome.js`

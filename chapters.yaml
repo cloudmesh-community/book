@@ -112,16 +112,14 @@
         - chapters/SECTION/SECTION-DOCKER.md:
             - chapters/container/docker-intro.md
             - chapters/container/docker-local.md
+            - chapters/container/dockerfile.md
             - chapters/container/dockerhub.md
-            - chapters/container/docker-fs.md
         - chapters/SECTION/SECTION-DOCKER-PAAS.md:
             - chapters/container/docker-swarm.md
-            - chapters/container/docker-hadoop-cluster.md
+            - chapters/container/docker-fs.md
             - chapters/container/docker-hadoop.md
-            - chapters/container/docker-hadoop3.md
-            - chapters/container/docker-pagerank-example-instruction.md
+            - chapters/container/docker-pagerank-example-instruction.md            
             - chapters/container/docker-spark.md
-            - chapters/container/docker-rest.md
         - chapters/SECTION/SECTION-KUBERNETES.md:
             - chapters/container/kubernetes-intro.md
             - chapters/container/kubernetes-fs.md
@@ -197,8 +195,24 @@
             - chapters/doc/ppt.md
     - chapters/SECTION/SECTION-REFERENCES.md
 
+- IOT:
+    - chapters/SECTION/SECTION-IOT.md:
+        - chapters/iot/introduction.md
+        - chapters/iot/fundamentals.md
+        - chapters/iot/pi.md
+        - chapters/iot/tools.md        
+        - chapters/iot/hardware.md
+        - chapters/iot/sensors.md        
+        - chapters/iot/grovepi.md        
+        - chapters/iot/dexter.md
+        - chapters/iot/easyplug.md
+        - chapters/iot/esp8266.md
+        - chapters/iot/projects.md
+        - chapters/iot/turtle.md
+
+
 # #####################################################################
-# PI
+# COMMUNICATION
 # #####################################################################
 
 - BOOK_COM:
@@ -213,20 +227,19 @@
     - $ref:PREFACE
     - chapters/pi/preface.md
     - chapters/pi/board.md
+    - $ref:IOT    
     - chapters/pi/case.md:
         - chapters/case/case.md
         - chapters/pi/links.md
     - chapters/pi/exercise.md
-    - chapters/SECTION/SECTION-ONE-PI.md:
-        - chapters/pi/sd-card.md
-        - chapters/pi/initial-setup.md
-        - chapters/pi/pi-passwordreset.md
+    - chapters/pi/setup-ultimate.md:
+        - chapters/pi/setup-dev.md
         - chapters/pi/config-display.md
         - chapters/pi/vnc.md
         - chapters/pi/motherboard-led.md
         - chapters/pi/run-at-boot.md
         - chapters/pi/software2.md
-    - chapters/SECTION/SECTION-PI-SETUP.md:
+    - chapters/pi/setup-multiple.md:
         - chapters/pi/setup.md
     - chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md:
         - chapters/pi/clusters/pi-now.md
@@ -266,12 +279,12 @@
 
 - BOOK_DRAFT:
     - $ref:DRAFTS
+    - chapters/pi/setup-ultimate.md
+    - chapters/pi/setup-dev.md    
     - chapters/pi/run-at-boot.md
-    - chapters/pi/sd-card.md
-    - chapters/pi/case.md
-    - chapters/pi/pi-passwordreset.md
-    - chapters/pi/config-display.md
     - chapters/pi/setup.md
+    - chapters/pi/case.md
+    - chapters/pi/config-display.md
     - chapters/pi/exercise.md
     - chapters/pi/software2.md
     - chapters/pi/vnc.md
