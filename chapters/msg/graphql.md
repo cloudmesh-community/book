@@ -410,7 +410,7 @@ http://localhost:8000/graphql/
 
 **Variables can be defined in the Query variables panel at left bottom of 
 the graphiql client**, it is an in-browser IDE for GraphQL. There 
-are many implementations of _graphiql_ available. For our chapter we will use
+are many implementations of *graphiql* available. For our chapter we will use
 [GraphiQL](https://github.com/skevy/graphiql-app). Its usage is discussed 
 later in this chapter.
 
@@ -587,7 +587,7 @@ command in shell. Always remember to activate virtual environment.
 
 * :o: TODO: mkdir -p  example/graphql
 * :o: TODO: whould we just do a wget or culr on the git example dir
-  and cd into it? - Mihir: There are some _hacks_ available to do this
+  and cd into it? - Mihir: There are some *hacks* available to do this
   https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo
   but I don't think that is good approach. Wouldn't it be better if user 
   just clone repo?
