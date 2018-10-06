@@ -53,7 +53,7 @@ data.
 
 To demonstrate the type system we use a simple example while looking
 at authors and co-authors of papers. We represent in this example a
-database that containes a number of authors. each author has a
+database that contains a number of authors. each author has a
 publication count and a number of coauthors that are identified by
 name. We assume for this simple example that all author names are unique.
 
@@ -339,11 +339,11 @@ fields in it.
 }
 ```
 
-As the query gets bigger and complex, we can use *Fragments* to split 
-it into smaller chunks.  These fragments can then be re-used which can 
-significantly reduce the query query size and also make it more readable. 
+As the query gets bigger and complex, we can use `fragment` to split 
+it into smaller chunks.  This `fragment` can then be re-used, which can 
+significantly reduce the query size and also make it more readable. 
 
-A Fragment can be defined as
+A `fragment` can be defined as
 
 ```graphql
 fragment repositoryInfo on Repository {
@@ -391,18 +391,18 @@ The response for this query will look like
 ### Variables :o:
 
 :o: Mihir had updated this - explained variables section, do we need a
-screenshot as well just to show the section in GraphiQL IDE where 
+screenshot as well just to show the section in _GraphiQL_ IDE where 
 variables are defined?
 
 Variables are used to pass dynamic values to queries. Instead of passing 
 hard-coded values to a query, variables can be defined for these values. 
 Now these variables can be passed to queries.
 
-**Variables can be defined in the Query variables panel at left bottom of 
-the graphiql client**, it is an in-browser IDE for GraphQL. There 
-are many implementations of _graphiql_ available. For our chapter we will use
-[GraphiQL](https://github.com/skevy/graphiql-app). Its usage is discussed 
-later in this chapter.
+Variables can be defined in the _"Query Variables"_ panel at left bottom of 
+the _GraphiQL_ client, which is an IDE(Interactive Development Environment)
+for GraphQL. There are many implementations of _GraphiQL_ available. For 
+this chapter we will use [GraphiQL](https://github.com/skevy/graphiql-app). 
+Its usage is discussed later in this chapter.
 
 A variable is defined as a json object and this is how it looks like
 
@@ -525,7 +525,6 @@ The response will be as follow, indicating that a repository has been added.
 }
 ```
 
-
 ### Query Validation
 
 GraphQL is a language with strong type system. So requesting and providing
@@ -573,6 +572,8 @@ however can also be easily added to falsk through plugins.
 
 :o: the purpose of this section is unclear at this time. Django nd
 flask have advantages and disadvantages.
+:o: Mihir: the purpose of this section was to give an overview of
+Django, do we need to explain more?
 
 ## GraphQL-python (Graphene) Example :o:
 
@@ -588,13 +589,51 @@ command in shell. Always remember to activate virtual environment.
 
 * :o: TODO: mkdir -p  example/graphql
 * :o: TODO: whould we just do a wget or culr on the git example dir
-  and cd into it? - Mihir: There are some _hacks_ available to do this
-  https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo
-  but I don't think that is good approach. Wouldn't it be better if user 
-  just clone repo?
+  and cd into it?
+  :o: Mihir - below example is only for creating graphql server 
+  from scratch, I updated section to run example available on github as well
 * :o: TODO: you remind me that venv is now part of python 3, so we
   could do an alternative install of python 3 with altinstall and
   document that in the python section instead of using pyenv
+
+If you have already cloned [book](https://github.com/cloudmesh-community/book) 
+repository. There are two examples available on github, 
+
+* [cloudmeshrepo](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/cloudmeshrepo) - A graphql server example with local database
+* [github](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/github) - A graphql server example using GitHub API v3
+
+For cloudmeshrepo example execute 
+
+```bash
+cd book/examples/graphql/cloudmeshrepo
+```
+
+For github example execute
+
+```bash
+cd book/examples/graphql/github
+```
+
+Then you can execute following steps
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install graphene==2.0.1 graphene-django==2.0.0 
+pip install django==2.0.2 django-filter==1.1.0
+pip install django-graphql-jwt==0.1.5
+python manage.py migrate
+python manage.py runserver
+```
+
+Last command will start server on localhost and you can access it at
+
+* <http://localhost:8000>
+
+It will show you _GraphiQL_ interface. You can execute your queries in it.
+
+If you want to create graphql server from scratch, you can start with following 
+steps
 
 ```bash
 mkdir -p example/graphql
@@ -749,7 +788,7 @@ schema = graphene.Schema(query=Query)
 ```
 ### Querying implemented GraphQL server :o:
 
-Schema is created now to query it we will use GraphiQL which is
+Schema is created now to query it we will use _GraphiQL_ which is
 playground for GraphQL queries. Open cloudmeshrepository/urls.py and append
 following code
 
@@ -773,7 +812,7 @@ Now open the URL
 
 * <http://localhost:8000/graphql>
 
-in your broweser. You will see GraphiQL. In the left pane add the
+in your broweser. You will see _GraphiQL_. In the left pane add the
 following query
 
 ```graphql
@@ -861,7 +900,7 @@ class Mutation(graphene.ObjectType):
     create_repository = CreateRepository.Field()
 ```
 
-Now you can run the following mutation on graphiql to add a new repository
+Now you can run the following mutation on _GraphiQL_ to add a new repository
 
 ```graphql
 mutation {
@@ -960,7 +999,6 @@ This will create a token for us to use in our subsequent calls.
     }
   }
 }
-
 ```
 
 JWT library comes with inbuilt directive called *login_required*
@@ -1004,11 +1042,11 @@ Now if you try to query repositories from GraphQL, you will see this error
 ```
 
 Henceforth you need to pass token with every repositories query. This token
-needs to be passed as header which the graphiql ui client does not
+needs to be passed as header which the _GraphiQL_ ui client does not
 support. Hence you can use either of these 2 ways
 
 :o: :TODO: could we not put the token in an env variable and use that,
-or have a secript that does find the token from the file that you use
+or have a script that does find the token from the file that you use
 earlier?
 
 * curl command 
@@ -1078,7 +1116,7 @@ brew cask install graphiql
 * Now we need OAuth token to access GitHub API. You can generate OAuth
   token by following steps mentioned at
   https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
-* Open GraphiQL app and click edit headers at upper-right corner. Add
+* Open _GraphiQL_ app and click edit headers at upper-right corner. Add
   new Header with key "Authorization" and value "Bearer *your token*"
 * Enter "https://api.github.com/graphql" in GraphQL Endpoint textbox
 * Keep method as "POST" only
