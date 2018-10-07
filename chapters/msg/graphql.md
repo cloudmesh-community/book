@@ -1,23 +1,8 @@
 # GraphQL :o:
 
-:o: TODO: the initial tutorial uses the term "repo" and
-"repos". However we shoudl provide terminology that is not
-abbreviated. Please verify if the cahnges are ok and fix it in the
-code. The code for now may still feature repo and repos
-
-
-:o: TODO: use full sentences, there are several ocasions where a
-sentence seems incomplete. such as Examples available at I will fix
-that pariculare example, but can you fix the other sentences ...
-
-:o: you switch examples, between car and employee, i suggest to make
-examples consistent :o: why not use the example computer and you do ip
-adresses, and OS, and things like that relating it to cloud.
-
-
 ## Introduction
 
-GraphQL is a data query language developed by Faceboo%k. 
+GraphQL is a data query language developed by Facebook.
 
 GraphQL allows clients to request data they need without thinking
 about the API implementation. It makes application devlopment fast and
@@ -36,7 +21,6 @@ several other implementations in different language available of
 GraphQLs. We will explore the *graphql-python* implementation in this
 chapter. The official documentation of GraphQL is available at
 [@graphql-learn]
-
 
 ## GraphQL type system and schema
 
@@ -125,10 +109,10 @@ GraphQL supports the following scalar types:
 
 ### Enumeration Types
 
-`Enums` also are scalar types which define a certain set of restricted
-values. When a GraphQL schema defines a field of enum type, we expect
-that the field's value be of the type enum values only. An example of
-an enum type is
+`enum` is also a scalar type which define a certain set of restricted
+values. When a GraphQL schema defines a field of `enum` type, we expect
+that the field's value be of the type `enum` values only. An example of
+an `enum` type is
 
 ```graphql
 enum ContainerTYpe {
@@ -141,14 +125,14 @@ enum ContainerTYpe {
 ### Interfaces
 
 Similar to any programming language, the GraphQL type system also supports
-interfaces. When a type implements an interface, it needs to specify all the
-fields that are defined through the interface.
+`interface`. When a type implements an `interface`, it needs to specify all the
+fields that are defined through the `interface`.
 
 We will illustrate this in the following example, where we define simple
-`ComputeService` interface type. This interface declares `id`, `name`
+`ComputeService` interface type. This `interface` declares `id`, `name`
 and `memory` fields. This means that a `Container` and a `VirtualMachine` both
 of which implement `ComputeService`, must have the fields defined in the
-interface. They may or may not have additional fields like we demonstrate in 
+`interface`. They may or may not have additional fields like we demonstrate in 
 our example with the field `systemType` of type `ContainerType` in case of 
 `Container` and field `systemType` of type `VMBackend` in case of the `VirtualMachine`.
 
@@ -176,8 +160,8 @@ type VirtualMachine implements ComputeService {
 
 ### Union Types
 
-As the name suggests, union types represent the union of two or more
-types. Here is how we can define a union type. As you can see we use
+As the name suggests, `union` type represent the union of two or more
+types. Here is how we can define a `union` type. As you can see we use
 the `|` charater to indicate the union operator.
 
 ```graphql
@@ -279,7 +263,7 @@ returns the response
 
 As you may already know in REST services you can pass parameters as 
 part of a request via query parameters through *GET* or a request body 
-thorough *POST*. However in GraphQL, for every field, you provide an 
+through *POST*. However in GraphQL, for every field, you provide an 
 argument restricting the data returned to only the information that you
 need. This reduces the traffic for returning the information that is
 needed without doing the postprocessing on the client. These
@@ -389,10 +373,6 @@ The response for this query will look like
 ```
 
 ### Variables :o:
-
-:o: Mihir had updated this - explained variables section, do we need a
-screenshot as well just to show the section in *GraphiQL* IDE where 
-variables are defined?
 
 Variables are used to pass dynamic values to queries. Instead of passing 
 hard-coded values to a query, variables can be defined for these values. 
@@ -581,17 +561,12 @@ virtual environment for project to keep all the dependencies isolated
 from other projects and system. To leave it execute *deactivate*
 command in shell. Always remember to activate virtual environment.
 
-* :o: TODO: mkdir -p  example/graphql
-* :o: TODO: whould we just do a wget or culr on the git example dir
-  and cd into it?
-  :o: Mihir - below example is only for creating graphql server 
-  from scratch, I updated section to run example available on github as well
 * :o: TODO: you remind me that venv is now part of python 3, so we
   could do an alternative install of python 3 with altinstall and
   document that in the python section instead of using pyenv
 
 If you have already cloned [book](https://github.com/cloudmesh-community/book) 
-repository. There are two examples available on github, 
+repository, there are two examples available on github, 
 
 * [cloudmeshrepo](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/cloudmeshrepo) - A graphql server example with local database
 * [github](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/github) - A graphql server example using GitHub API v3
@@ -679,7 +654,8 @@ framework. You can even use Flask in place of Django.
 
 Django is a very popular python web framework which already comes with a 
 lot of boilerplate code. It is mature and has a very large community.
-It has inbuilt support for Object Relational Mapping which is based on Database Code-First approach. Please refer [@www-djangoproject] for more Django information. 
+It has inbuilt support for Object Relational Mapping which is based on Database 
+Code-First approach. Please refer [@www-djangoproject] for more Django information. 
 
 ### GraphQL server implementation :o:
 
@@ -725,7 +701,7 @@ python manage.py shell
 
 Last command will open python shell. Execute following command inside
 that shell to create some data. following example data we got from
-github's API https://api.github.com/users/cloudmesh-community/Repositories.
+github's API https://api.github.com/users/cloudmesh-community/repos.
 
 :o: TODO: reformat to 80 lines if possible
 
@@ -867,9 +843,9 @@ In the right pane you will see following output
 ### Mutation example :o:
 
 Similar to a query you can add mutation to create your own data. Add a
-*Create* class for new repository object which will inherit from graphene's
-Mutation class. This class will accept new repository properties as
-Arguments. Please see the following code snippet
+`CreateRepository` class for new repository object which will inherit 
+from graphene's Mutation class. This class will accept new repository 
+properties as arguments. Please see the following code snippet
 
 ```python
 class CreateRepository(graphene.Mutation):
@@ -896,7 +872,7 @@ class CreateRepository(graphene.Mutation):
             description=repository.description)
 ```
 
-Similar to Query, add Mutation class in repository's schema.
+Similar to Query, add `Mutation` class in repository's schema.
 
 ```python
 class Mutation(graphene.ObjectType):
@@ -941,7 +917,7 @@ added repository
 
 There a few ways to add authentication to your GraphQL server
 
-* Add a REST Api endpoint which will take care of authenticating the
+* Add a REST API endpoint which will take care of authenticating the
   user and only the logged in users can make GraphQL queries. This
   method can also be used to restrict only a subset of GraphQL
   queries. This is ideal for existing applications, which have REST
@@ -1077,9 +1053,9 @@ Result obtained from running this command:
 Clearly as you can see the output is not well formatted and hence not
 the preferred way.
 
-* Install GraphQL client like Insomnia or Altair Advantage of using
-  these clients is that they are much user friendly and provide a well
-  formatted json output.
+* Install GraphQL client like [Insomnia](https://insomnia.rest/graphql/), [Altair](https://altair.sirmuel.design/) or [GraphiQL](https://github.com/skevy/graphiql-app).
+  Advantage of using these clients is that they are much user 
+  friendly and provide a well formatted json output.
 
 JWT tokens are bearer tokens which need to be passed in HTTP
 authorization header. JWT tokens are very safe against CSRF attacks
@@ -1087,30 +1063,22 @@ and are trusted and verified since they are digitally signed.
 
 JWT tokens can have expiry period. Typically, GraphQL server host 
 provides the token expiry information to client through some kind of 
-documentation. If the token is about to be expired, you can call `refreshToken` mutation and the response would be a refreshed token. 
-However if the token has already expired then you can again request 
-a new token by calling `tokenAuth` mutation.
+documentation. If the token is about to be expired, you can call `refreshToken` 
+mutation and the response would be a refreshed token. However if the token 
+has already expired then you can again request a new token by calling 
+`tokenAuth` mutation.
 
 Find more about JWT tockens at [@jwt-tockens] and GraphQL
 authentication at [@medium-graphql]
 
 Examples for GraphQL are available at:
 
-* <https://github.com/cloudmesh-community/book/tree/master/examples/graphql/> and [@www-howtographql]
-
-To use them please do:
-
-```bash
-$ mkdir -p cloudmesh-community/example
-$ cd cloudmesh-community/example
-$ wget https://github.com/cloudmesh-community/book/tree/master/examples/graphql
-$ cd grpahql
-```
+* <https://github.com/cloudmesh-community/book/tree/master/examples/graphql> and [@www-howtographql]
 
 ### GitHub API v4 :o:
 
 GitHub has implemented API v4 using GraphQL which allows you to query
-or mutate data for which you have access. To access GitHub API v4
+or mutate data of repositories for which you have access. To access GitHub API v4
 first we need to install [GraphiQL](https://github.com/skevy/graphiql-app).
 
 For MacOS
@@ -1152,8 +1120,6 @@ Response
 ```
 
 To get your repositories add following query
-
-:o: is here a name conflict with repositories?
 
 ```graphql
 query($number_of_repositories:Int!) {
