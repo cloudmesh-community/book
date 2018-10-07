@@ -25,8 +25,8 @@ To keep things simple we are not providing a general introduction in
 IoT. For that we offer other classes. However, we will introduce you to
 two different devices. These are
 
--   esp8266
--   Raspberry Pi
+* esp8266
+* Raspberry Pi
 
 The reasons we chose them is that
 
@@ -44,12 +44,12 @@ Projects that you can do to test the devices are
 
 esp8266 (easy-moderate, small memory):
 
-1.  a LED blinker
-2.  a dendrite
-3.  a robot fish
-4.  a fish swarm
-5.  a robot swarm
-6.  an activity of your desire
+* a LED blinker
+* a dendrite :o:
+* a robot fish :o:
+* a fish swarm :o:
+* a robot swarm :o:
+* an activity of your desire
 
 Raspberry Pi (easy-moderate, 32GB space limitation):
 
@@ -57,31 +57,47 @@ Raspberry Pi (easy-moderate, 32GB space limitation):
 2.  a robot car
 3.  a robot car with camera
 4.  a temperature service
-5.  a docker cluster
+5.  different clusters
 
+<-!--
 Crazyflie 2.0 (difficult):
 
-1.  programming a drone
-2.  programming a drone swarm
+* programming a drone
+* programming a drone swarm
+->
 
-Please note that for those at IU we do have a Lab in which you can use
-some of the devices pointed out here. You can arrange for accessing
-the infrastructure or you simply can buy it for yourself.
+---
 
-We have a hardware page that summarizes what you need. In case you
-want to work on a swarm, we do have positioning sensors that simplify
-that task.
+*Indiana University*: Please note that for those at IU we do have a
+Lab in which you can use some of the devices pointed out here. You can
+arrange for accessing the infrastructure.
+
+In case you want to work on a swarm, we do have positioning sensors
+that simplify that task.
+
+---
+
+
+Due to the small cost involed in these devices you can buy them
+also simply yourself.
+
+We provide throughout the book lists of had=rdware that you will need
+for the various projects.
+
 
 In general we think that these platforms provide a wonderful
-introduction into IoT and where it will move to. Such platforms were
+introduction into IoT. Such platforms were
 just a decade ago not powerful enough or too expensive. However today
 the provide a serious platform for developers. Sensors are available
 easily as most Android comparable sensors can be used.
 
 Before we jump right into programming the devices, we like to point
-out that we dod not chose to use Arduinos, as their price advantage is
-no longer valid. We also find that esp8266 and Raspberry can interface
+out that we did not chose to use Arduinos much, as their price advantage is
+no longer valid. They also are mostly using C and as we focus in our
+material on python we decided to not spend much time on it.
+
+We also find that esp8266 and Raspberry can interface
 with most sensors. Having the ability to easily use WiFi however is
 our primary reason for using them. Furthermore being able to attach a
-camera to the Raspberry is just superb. Image analysis will be one of
-the near term future drivers for big data.
+camera to the Raspberry is just superb. Image analysis is one of
+the drivers for big data.

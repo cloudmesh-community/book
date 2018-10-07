@@ -114,3 +114,4 @@ figure refernces must include the `#fig:`
 Other emojis
 
 > Other emojis can be found at <https://gist.github.com/rxaviers/7360908>
+
