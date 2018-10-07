@@ -26,7 +26,7 @@ beneficial to operate in multi-threaded fashion meaning parallel
 processing. MapReduce can also take advantage of data locality so that
 we do not loose much on communication of data from place to another.
 
-## MapReduce Algorithm
+## MapReduce Algorithm[3] 
 
 MapReduce can operate on a filesystem, which is an unstructured data
 or a database, a structured data and these are the following three
@@ -192,4 +192,15 @@ is a scalable and fault tolerant, it us good for linear processing.
    batch processing so it cannot live data.
 5. Fault Tolerance Both the systems are fault tolerant so there is no
    need to restart the applications from scratch.
+   
+   
+## References
+
+[1] https://www.ibm.com/analytics/hadoop/mapreduce
+[2] https://en.wikipedia.org/wiki/MapReduce
+[3] https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm
+[4] https://www.edureka.co/blog/mapreduce-tutorial/?utm_source=youtube&utm_campaign=mapreduce-tutorial-161216-wr&utm_medium=description
+[5] https://www.quora.com/What-is-the-difference-between-Hadoop-and-Spark
+[6] https://data-flair.training/blogs/apache-spark-vs-hadoop-mapreduce/
+[7] https://www.youtube.com/watch?v=SqvAaB3vK8U&list=WL&index=25&t=2547s
 
