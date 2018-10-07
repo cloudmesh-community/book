@@ -229,7 +229,7 @@ way a client knows exactly what data it has to consume. In the previous
 example, the `name` field returns the data of type `String`. Clients can 
 also ask for an object representing any match within the GraphQL database.
 
-For example the query
+For example following query
 
 ```graphql
 {
@@ -1091,9 +1091,9 @@ brew cask install graphiql
   token by following steps mentioned at
   https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
 * Open *GraphiQL* app and click edit headers at upper-right corner. Add
-  new Header with key "Authorization" and value "Bearer *your token*"
-* Enter "https://api.github.com/graphql" in GraphQL Endpoint textbox
-* Keep method as "POST" only
+  new header with key *Authorization* and value *Bearer your_token*
+* Enter *https://api.github.com/graphql* in GraphQL endpoint textbox
+* Keep method as *POST* only
 
 To test the changes add following query
 
@@ -1106,7 +1106,7 @@ query {
 }
 ```
 
-Response
+which gives response
 
 ```json
 {
@@ -1134,7 +1134,7 @@ query($number_of_repositories:Int!) {
 }
 ```
 
-Define variables
+and define variables used in query
 
 ```json
 {
@@ -1142,7 +1142,7 @@ Define variables
 }
 ```
 
-Response
+it gives following response
 
 ```json
 {
@@ -1169,7 +1169,7 @@ Response
 
 To add a comment using mutation we need to get issue id 
 
-Query
+For example query
 
 ```graphql
 {
@@ -1181,7 +1181,7 @@ Query
 }
 ```
 
-Response
+it gives following response
 
 ```json
 {
@@ -1198,7 +1198,7 @@ Response
 Now we can use this id as subjectId for mutation to add comment to an
 issue,
 
-Query
+For query
 
 ```graphql
 mutation AddComment {
@@ -1215,7 +1215,7 @@ mutation AddComment {
 }
 ```
 
-Response
+it gives following response
 
 ```json
 {
