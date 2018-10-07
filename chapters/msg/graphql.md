@@ -391,16 +391,31 @@ The response for this query will look like
 ### Variables :o:
 
 :o: Mihir had updated this - explained variables section, do we need a
-screenshot as well just to show the section in _GraphiQL_ IDE where 
+screenshot as well just to show the section in *GraphiQL* IDE where 
 variables are defined?
 
 Variables are used to pass dynamic values to queries. Instead of passing 
 hard-coded values to a query, variables can be defined for these values. 
 Now these variables can be passed to queries.
 
-Variables can be defined in the _"Query Variables"_ panel at left bottom of 
-the _GraphiQL_ client, which is an IDE(Interactive Development Environment)
-for GraphQL. There are many implementations of _GraphiQL_ available. For 
+Variables can be passed to GraphQL queries directly through commandline.
+
+```bash
+curl -X POST \
+-H "Content-Type: application/json;" \
+-d '{"query": "{ repository (name: $name) { name url } }", "variables": \
+{ "name": "book" }}' \
+http://localhost:8000/graphql/
+```
+
+**Variables can be defined in the Query variables panel at left bottom of 
+the graphiql client**, it is an in-browser IDE for GraphQL. There 
+are many implementations of *graphiql* available. For our chapter we will use
+[GraphiQL](https://github.com/skevy/graphiql-app). Its usage is discussed 
+later in this chapter.
+Variables can be defined in the *"Query Variables"* panel at left bottom of 
+the *GraphiQL* client, which is an IDE(Interactive Development Environment)
+for GraphQL. There are many implementations of *GraphiQL* available. For 
 this chapter we will use [GraphiQL](https://github.com/skevy/graphiql-app). 
 Its usage is discussed later in this chapter.
 
@@ -559,17 +574,6 @@ which will give response
 In application we need to validate user input. If it is invalid we can 
 use `GraphQLError` class or python exceptions to raise validation errors.
 
-## Django for GraphQL
-
-Django is a very popular python web framework which includes a lot of
-boilerplate code. Due to this its footprint is larger than other
-services, such as Flask, but provide a lot of build in features. Django is
-mature and has a larger community than that of flask.
-Django has inbuilt support for Object Relational Mapping
-which is based on Database Code-First approach. Please refer
-[@www-djangoproject] for more Django information. Database suport
-however can also be easily added to falsk through plugins.
-
 :o: the purpose of this section is unclear at this time. Django nd
 flask have advantages and disadvantages.
 :o: Mihir: the purpose of this section was to give an overview of
@@ -630,7 +634,7 @@ Last command will start server on localhost and you can access it at
 
 * <http://localhost:8000>
 
-It will show you _GraphiQL_ interface. You can execute your queries in it.
+It will show you *GraphiQL* interface. You can execute your queries in it.
 
 If you want to create graphql server from scratch, you can start with following 
 steps
@@ -678,9 +682,18 @@ GRAPHENE = {
 }
 ```
 
+### Django for GraphQL
+
+For the purpose of this example, we will use Django as python web 
+framework. You can even use Flask in place of Django.
+
+Django is a very popular python web framework which already comes with a 
+lot of boilerplate code. It is mature and has a very large community.
+It has inbuilt support for Object Relational Mapping which is based on Database Code-First approach. Please refer [@www-djangoproject] for more Django information. 
+
 ### GraphQL server implementation :o:
 
-Now django seperates project into apps. Here we will have one app for
+Django seperates project into apps. Here we will have one app for
 Users and one for Repos. Django provides support for SQLite so we will
 use that for demo.
 
@@ -786,9 +799,9 @@ class Query(Repositories.schema.Query, graphene.ObjectType):
 
 schema = graphene.Schema(query=Query)
 ```
-### Querying implemented GraphQL server :o:
+### GraphQL Server Querying :o:
 
-Schema is created now to query it we will use _GraphiQL_ which is
+Schema is created now to query it we will use *GraphiQL* which is
 playground for GraphQL queries. Open cloudmeshrepository/urls.py and append
 following code
 
@@ -812,7 +825,7 @@ Now open the URL
 
 * <http://localhost:8000/graphql>
 
-in your broweser. You will see _GraphiQL_. In the left pane add the
+in your broweser. You will see *GraphiQL*. In the left pane add the
 following query
 
 ```graphql
@@ -900,7 +913,7 @@ class Mutation(graphene.ObjectType):
     create_repository = CreateRepository.Field()
 ```
 
-Now you can run the following mutation on _GraphiQL_ to add a new repository
+Now you can run the following mutation on *GraphiQL* to add a new repository
 
 ```graphql
 mutation {
@@ -918,7 +931,8 @@ mutation {
 }
 ```
 
-And this will not just create a new repository but also get the newly added repository
+And this will not just create a new repository but also get the newly 
+added repository
 
 ```json
 {
@@ -1042,12 +1056,8 @@ Now if you try to query repositories from GraphQL, you will see this error
 ```
 
 Henceforth you need to pass token with every repositories query. This token
-needs to be passed as header which the _GraphiQL_ ui client does not
+needs to be passed as header which the *GraphiQL* ui client does not
 support. Hence you can use either of these 2 ways
-
-:o: :TODO: could we not put the token in an env variable and use that,
-or have a script that does find the token from the file that you use
-earlier?
 
 * curl command 
 
@@ -1085,6 +1095,12 @@ JWT tokens are bearer tokens which need to be passed in HTTP
 authorization header. JWT tokens are very safe against CSRF attacks
 and are trusted and verified since they are digitally signed.
 
+JWT tokens can have expiry period. Typically, GraphQL server host 
+provides the token expiry information to client through some kind of 
+documentation. If the token is about to be expired, you can call `refreshToken` mutation and the response would be a refreshed token. 
+However if the token has already expired then you can again request 
+a new token by calling `tokenAuth` mutation.
+
 Find more about JWT tockens at [@jwt-tockens] and GraphQL
 authentication at [@medium-graphql]
 
@@ -1116,7 +1132,7 @@ brew cask install graphiql
 * Now we need OAuth token to access GitHub API. You can generate OAuth
   token by following steps mentioned at
   https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
-* Open _GraphiQL_ app and click edit headers at upper-right corner. Add
+* Open *GraphiQL* app and click edit headers at upper-right corner. Add
   new Header with key "Authorization" and value "Bearer *your token*"
 * Enter "https://api.github.com/graphql" in GraphQL Endpoint textbox
 * Keep method as "POST" only
