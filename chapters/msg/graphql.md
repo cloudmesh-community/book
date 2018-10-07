@@ -408,12 +408,7 @@ curl -X POST \
 http://localhost:8000/graphql/
 ```
 
-**Variables can be defined in the Query variables panel at left bottom of 
-the graphiql client**, it is an in-browser IDE for GraphQL. There 
-are many implementations of *graphiql* available. For our chapter we will use
-[GraphiQL](https://github.com/skevy/graphiql-app). Its usage is discussed 
-later in this chapter.
-Variables can be defined in the *"Query Variables"* panel at left bottom of 
+Variables can be defined in the *Query Variables* panel at left bottom of 
 the *GraphiQL* client, which is an IDE(Interactive Development Environment)
 for GraphQL. There are many implementations of *GraphiQL* available. For 
 this chapter we will use [GraphiQL](https://github.com/skevy/graphiql-app). 
@@ -573,11 +568,6 @@ which will give response
 
 In application we need to validate user input. If it is invalid we can 
 use `GraphQLError` class or python exceptions to raise validation errors.
-
-:o: the purpose of this section is unclear at this time. Django nd
-flask have advantages and disadvantages.
-:o: Mihir: the purpose of this section was to give an overview of
-Django, do we need to explain more?
 
 ## GraphQL-python (Graphene) Example :o:
 
