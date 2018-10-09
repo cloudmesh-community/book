@@ -16,7 +16,7 @@ includes significant enhancements over the previous version of Hadoop
 * systemctl
 * Java SE Development Kit 8
 
-A Dockerfile to creat the haddop deployment is available at 
+A Dockerfile to creat the haddop deployment is available at
 
 *<https://github.com/cloudmesh-community/book/blob/master/examples/docker/hadoop/3.0.3/Dockerfile>
 
@@ -31,7 +31,7 @@ $ git clone https://github.com/cloudmesh-community/book.git
 $ cd book/examples/docker/hadoop/3.0.3
 $ docker build -t cloudmesh/hadoop:3.0.3 .
 ```
-    
+
 The complete docker image for Hadoop consumes 1.5GB.
 
 ```bash
@@ -48,10 +48,10 @@ To use the image interactively you can start the container as follows:
 ```bash
 $ docker run -it cloudmesh/hadoop:3.0.3 /etc/bootstrap.sh -bash
 ```
-    
+
 It may take a few minutes at first to download image.
-    
-## Hadoop Configuration Files 
+
+## Hadoop Configuration Files
 
 The configuration files are included in the `conf` folder
 
@@ -78,15 +78,15 @@ $ hdfs dfsadmin -safemode leave`
 ## Examples
 
 We included a statistics and a PageRank examples into the
-container. The examples are also available in github at 
+container. The examples are also available in github at
 
 * <https://github.com/cloudmesh-community/book/tree/master/examples/docker/hadoop/3.0.3/examples>
 
-We explain the examples next 
+We explain the examples next
 
 ### Statistical Example with Hadoop
 
-After we launcht the container and use the interactive shell, we can 
+After we launcht the container and use the interactive shell, we can
 run the statistics Hadoop application wich calculates the  minimum,
 maximim, average, and standard derivation from values stored in a
 number of input files.
@@ -104,7 +104,7 @@ The input to the program will be a text file(s) carrying exactly one
 floating point number per line. The result file includes *min, max,
 average, and standard deviation*.
 
-![Caption Missing](images/docker-hadoop-1.png){#fig:docker-hadoop-a}
+![MapReduce example in Docker](images/docker-hadoop-exmaple.png){#fig:docker-hadoop-a}
 
 :o: +@fig:docker-hadoop-a shows something but we are not sure what
 
@@ -140,7 +140,7 @@ $ export HADOOP_CLASSPATH=`$HADOOP_PREFIX/bin/hadoop classpath`
 $ mkdir /cloudmesh/examples/statistics/dest
 $ javac -classpath $HADOOP_CLASSPATH -d /cloudmesh/examples/statistics/dest /cloudmesh/examples/statistics/src/exercise/MinMaxAvgStd.java
 ```
-    
+
 These commands simply prepare compiling the example code and the
 compiled class files are generated at the *dest* location.
 
@@ -186,7 +186,7 @@ Found 10 items
 -rw-r--r-- 1 root supergroup 111451 2018-02-28 23:16 exer1_input/data_8000.txt
 -rw-r--r-- 1 root supergroup 125337 2018-02-28 23:16 exer1_input/data_9000.txt
 ```
-    
+
 #### Run Program with a Single Input File
 
 We are ready to run the program to calculate values from text files.
