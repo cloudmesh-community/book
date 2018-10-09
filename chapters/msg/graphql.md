@@ -654,7 +654,7 @@ INSTALLED_APPS = (
 )
 ```
 
-And at the end of settings.py add following line
+And at the end of `settings.py` add following line
 
 ```python
 GRAPHENE = {
@@ -971,7 +971,7 @@ with each subsequent GraphQL api calls which indicates GraphQL server
 of authenticated requests.
 
 To enable JWT authentication in your GraphQL server, you need to
-install django-graphql-jwt. You can add this settings to settings.py
+install django-graphql-jwt. You can add this settings to `settings.py`
 file.
 
 ```python
