@@ -8,6 +8,38 @@
 - [ ] A per node setup is used instead of a scripted setup
 - [ ] Some text in the later part is unclear
 
+We provide step-by-step instructions on installing a Spark cluster on a cluster of raspberry pis. 
+
+## Prerequisites
+On all the raspberry pi nodes, make sure these prerequisites are completed.
+
+1. Configure passwordless SSH key based authentication:  
+   All the public keys of the nodes must be added to all the nodes' authorized keys files. 
+   You can refer to this [article](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) by DigitalOcean.com for more information on setting up ssh keys. 
+
+2. Install Oracle JDK8 and set the JAVA_HOME.     
+   ```bash 
+   	sudo add-apt-repository ppa:webupd8team/java
+   	sudo apt-get update
+   	sudo apt-get install oracle-java8-installer
+	echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~\.bashrc
+	source ~/.bashrc 
+	``` 
+
+3. Install Scala.  
+   You can install Scala using 
+   ```bash 
+	sudo apt-get install scala 
+	```
+
+3. Add all the hosts in to the /etc/hosts file.  
+   An example /etc/hosts file is shown below. 
+   ```bash 
+	192.168.10.2		pi-master
+	192.168.10.3		pi-slave0
+	192.168.10.4	 	pi-slave1
+	```
+
 
 ## Download 
 
