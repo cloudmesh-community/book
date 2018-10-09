@@ -127,7 +127,7 @@ The topics are subject to change.
 |   |           |     |                    | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
 |   |           |     |                    | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
 |   |           |     |                    | - [OpenStack](#s-openstack) [:cloud:][openstack.md] |
-|   |           |     | Chameleon Cloud    | - **Chameleon Cloud** |
+|   |           |     | Chameleon Cloud    | - Chameleon Cloud |
 |   |           |     |                    | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
 |   |           |     |                    | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
 |   |           |     |                    | - [Charge](#chameleon-cloud-charge-rates)[:cloud:][charge.md] |
@@ -139,28 +139,19 @@ The topics are subject to change.
 |   |           |     |                    | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
 |   |           |     |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
 |   | Week 8    |   8 | Virtualization  II | Containers, Docker, Kubernetes |
-|   | Week 9    | 9   | Programming        | Python for Cloud Computing, |
+|   | Week 9    | 9   | Programming        | Python for Cloud Computing |
 |   |           |     |                    | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
 |   |           |     |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
 |   |           |     |                    | - [REST Services](#rest)[:cloud:][rest.md] |
 |   |           |     |                    | - [Rest Services with OpenAPI](#rest-services-with-openapi)[:cloud:][swagger.md] |
 |   |           |     |                    | - [OpenAPI Spec](#openapi-spec)[:cloud:][swagger-spec.md] |
 |   |           |     |                    | - [OpenAPI Codegen](#openapi-codegen)[:cloud:][swagger-codegen.md] |
-|   |  Week 10  | 10  | Map/Reduce         | Map/Reduce, Hadoop, Spark |
+|   |  Week 10  | 10  | Map/Reduce         | Map/Reduce, Hadoop, Spark, and others |
 |   |  Week 11  | 11  | Messaging          | Messaging |
 |   |  Week 12  | 12  | Messaging          | - [MQTT](#mqtt)[:cloud:][mqtt.md]  |
 |   |           |     |                    | - [Graphql][graphql.md]  |
-|   | Week 13   |  13 | Go                 | [Go Introduction](#s-go-intro)[:cloud:][go-intro.md] |
-|   |           |     |                    | - [Go Links](#s-go-links)[:cloud:][go-links.md] |
-|   |           |     |                    | - [Go Install](#s-go-install)[:cloud:][go-install.md] |
-|   |           |     |                    | - [Go Editors](#s-go-editor)[:cloud:][go-editor.md] |
-|   |           |     |                    | - [Go Language](#s-go-language)[:cloud:][go-language.md] |
-|   |           |     |                    | - [Go Libraries](#s-go-libraries)[:cloud:][go-libraries.md] |
-|   |           |     |                    | - [Go cmd](#s-go-cmd)[:cloud:][go-cmd.md] |
-|   |           |     |                    | - [Go Cloud](#s-go-cloud)[:cloud:][go-cloud.md] |
-|   |           |     |                    | - [Go REST](#s-go-rest)[:cloud][go-rest.md] |
-|   |           |     |                    | - [Go for the Cloud](#s-go-cloud)[:cloud][go-cloud.md] |
-|   | Week 14,15   | 14  | Edge Computing     | Edge Computing and the Cloud |
+|   | Week 13   |  13 | Go                 | Go for the Cloud |
+|   | Week 14,15   | 14  | Edge Computing  | Edge Computing and the Cloud |
 |   | Week 16 | 15 | Project Selection | Project selection for inclusion in the Proceedings |
 
 
@@ -223,9 +214,9 @@ The topics are subject to change.
 [qemu.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/qemu.md
 [githubprg.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/github.md
 
-Students need only to do one project. The project is conducted thought
-the entire semester.
+Students need only to do one project. The project is conducted thought the entire semester.
 
+* Example chapters are indicated with :cloud:
 
 * Dates may change as the semester evolves
 
