@@ -10,11 +10,11 @@ stable because the application has control over the data it needs and
 its format. The benefit of GraphQL is also to reduce network I/O since
 only the necessary data is transfered from server to client.
 
-Unlike REST APIs, which require loading data via multiple URLs, GraphQL
-can get all data, that application needs, in a single request. GraphQL APIs
-are defined in terms of types and fields. Types help GraphQL to ensure
-that client only asks for what is possible and in case of faults,
-provides clear and helpful errors.
+Unlike REST APIs, which require loading data via multiple URLs,
+GraphQL can get all data, that application needs, in a single
+request. GraphQL APIs are defined in terms of types and fields. Types
+help GraphQL to ensure that client only asks for what is possible and
+in case of faults, provides clear and helpful errors.
 
 Initially GraphQL was implemented in JavaScript. Today there are
 several other implementations in different language available of
@@ -39,7 +39,8 @@ To demonstrate the type system we use a simple example while looking
 at authors and co-authors of papers. We represent in this example a
 database that contains a number of authors. each author has a
 publication count and a number of coauthors that are identified by
-name. We assume for this simple example that all author names are unique.
+name. We assume for this simple example that all author names are
+unique.
 
 Here is how a simple GraphQL query would look like
 
@@ -105,14 +106,15 @@ GraphQL supports the following scalar types:
 * `Int`: 32 bit signed integer
 * `Float`: Double precision floating point value
 * `Boolean`: true or false
-* `ID`: Represents a unique identifier which can be used as a key to fetch the object
+* `ID`: Represents a unique identifier which can be used as a key to
+  fetch the object
 
 ### Enumeration Types
 
 `enum` is also a scalar type which define a certain set of restricted
-values. When a GraphQL schema defines a field of `enum` type, we expect
-that the field's value be of the type `enum` values only. An example of
-an `enum` type is
+values. When a GraphQL schema defines a field of `enum` type, we
+expect that the field's value be of the type `enum` values only. An
+example of an `enum` type is
 
 ```graphql
 enum ContainerTYpe {
@@ -124,17 +126,18 @@ enum ContainerTYpe {
 
 ### Interfaces
 
-Similar to any programming language, the GraphQL type system also supports
-`interface`. When a type implements an `interface`, it needs to specify all the
-fields that are defined through the `interface`.
+Similar to any programming language, the GraphQL type system also
+supports `interface`. When a type implements an `interface`, it needs
+to specify all the fields that are defined through the `interface`.
 
-We will illustrate this in the following example, where we define simple
-`ComputeService` interface type. This `interface` declares `id`, `name`
-and `memory` fields. This means that a `Container` and a `VirtualMachine` both
-of which implement `ComputeService`, must have the fields defined in the
-`interface`. They may or may not have additional fields like we demonstrate in 
-our example with the field `systemType` of type `ContainerType` in case of 
-`Container` and field `systemType` of type `VMBackend` in case of the `VirtualMachine`.
+We will illustrate this in the following example, where we define
+simple `ComputeService` interface type. This `interface` declares
+`id`, `name` and `memory` fields. This means that a `Container` and a
+`VirtualMachine` both of which implement `ComputeService`, must have
+the fields defined in the `interface`. They may or may not have
+additional fields like we demonstrate in our example with the field
+`systemType` of type `ContainerType` in case of `Container` and field
+`systemType` of type `VMBackend` in case of the `VirtualMachine`.
 
 ```graphql
 interface ComputeService {
@@ -197,10 +200,10 @@ section we describe how to use them.
 
 ### Fields
 
-A very simple definition of a query is to ask for specific fields
-that belong to an object stored in GraphQL.
+A very simple definition of a query is to ask for specific fields that
+belong to an object stored in GraphQL.
 
-In the next examples we use data related to repositories in github. 
+In the next examples we use data related to repositories in github.
 
 When asking the query
 
@@ -225,9 +228,10 @@ we obtain the following response
 ```
 
 As we see the response data, format looks exactly like the query. This
-way a client knows exactly what data it has to consume. In the previous
-example, the `name` field returns the data of type `String`. Clients can 
-also ask for an object representing any match within the GraphQL database.
+way a client knows exactly what data it has to consume. In the
+previous example, the `name` field returns the data of type
+`String`. Clients can also ask for an object representing any match
+within the GraphQL database.
 
 For example following query
 
@@ -261,16 +265,16 @@ returns the response
 
 ### Arguments
 
-As you may already know in REST services you can pass parameters as 
-part of a request via query parameters through *GET* or a request body 
-through *POST*. However in GraphQL, for every field, you provide an 
-argument restricting the data returned to only the information that you
-need. This reduces the traffic for returning the information that is
-needed without doing the postprocessing on the client. These
+As you may already know in REST services you can pass parameters as
+part of a request via query parameters through *GET* or a request body
+through *POST*. However in GraphQL, for every field, you provide an
+argument restricting the data returned to only the information that
+you need. This reduces the traffic for returning the information that
+is needed without doing the postprocessing on the client. These
 restricting arguments can be of scalar type, enumeration type and
 others.
 
-Lets look at an example of a query where we only ask for first 3 
+Lets look at an example of a query where we only ask for first 3
 repositories in cloudmesh community
 
 ```graphql
@@ -323,9 +327,10 @@ fields in it.
 }
 ```
 
-As the query gets bigger and complex, we can use `fragment` to split 
-it into smaller chunks.  This `fragment` can then be re-used, which can 
-significantly reduce the query size and also make it more readable. 
+As the query gets bigger and complex, we can use `fragment` to split
+it into smaller chunks.  This `fragment` can then be re-used, which
+can significantly reduce the query size and also make it more
+readable.
 
 A `fragment` can be defined as
 
@@ -372,13 +377,14 @@ The response for this query will look like
 }
 ```
 
-### Variables :o:
+### Variables
 
-Variables are used to pass dynamic values to queries. Instead of passing 
-hard-coded values to a query, variables can be defined for these values. 
-Now these variables can be passed to queries.
+Variables are used to pass dynamic values to queries. Instead of
+passing hard-coded values to a query, variables can be defined for
+these values.  Now these variables can be passed to queries.
 
-Variables can be passed to GraphQL queries directly through commandline.
+Variables can be passed to GraphQL queries directly through
+commandline.
 
 ```bash
 curl -X POST \
@@ -388,11 +394,12 @@ curl -X POST \
 http://localhost:8000/graphql/
 ```
 
-Variables can be defined in the *Query Variables* panel at left bottom of 
-the *GraphiQL* client, which is an IDE(Interactive Development Environment)
-for GraphQL. There are many implementations of *GraphiQL* available. For 
-this chapter we will use [GraphiQL](https://github.com/skevy/graphiql-app). 
-Its usage is discussed later in this chapter.
+Variables can be defined in the *Query Variables* panel at left bottom
+of the *GraphiQL* client, which is an IDE(Interactive Development
+Environment) for GraphQL. There are many implementations of *GraphiQL*
+available. For this chapter we will use
+[GraphiQL](https://github.com/skevy/graphiql-app).  Its usage is
+discussed later in this chapter.
 
 A variable is defined as a json object and this is how it looks like
 
@@ -428,15 +435,15 @@ which will fetch response
 
 ### Directives
 
-Directives are used to change the structure of queries at runtime using
-variables. Directives provide a way to describe additional options to 
-GraphQL executors. Currently core GraphQL specification supports two 
-directives 
+Directives are used to change the structure of queries at runtime
+using variables. Directives provide a way to describe additional
+options to GraphQL executors. Currently core GraphQL specification
+supports two directives
 
 * `@skip (if: Boolean)` - It skips the field if argument is true
 * `@Include (if: Boolean)` - It includes the field if argument is true
 
-To demonstrate its usage, we define the variable `isAdmin` and assign 
+To demonstrate its usage, we define the variable `isAdmin` and assign
 a value of `true` to it.
 
 ```json
@@ -546,38 +553,44 @@ which will give response
 }
 ```
 
-In application we need to validate user input. If it is invalid we can 
-use `GraphQLError` class or python exceptions to raise validation errors.
+In application we need to validate user input. If it is invalid we can
+use `GraphQLError` class or Python exceptions to raise validation
+errors.
 
-## GraphQL-python (Graphene) Example :o:
+## GraphQL in Python :o:
 
-In this example we will implement a GraphQL server in python. For this
-we will use [Graphene](https://graphene-python.org/) which is library for
-implementing GraphQL APIs in python. We will cover basic server implementation
-with schema and queries to fetch and mutate data.
+In this example we will implement a GraphQL server in Python. For this
+we will use [Graphene](https://graphene-python.org/) which is a
+library for implementing GraphQL APIs in Python. We will cover a basic
+server implementation with schema and queries to fetch and mutate
+data.
 
-To start with GraphQL server implementation in python we will create
-virtual environment for project to keep all the dependencies isolated
-from other projects and system. To leave it execute *deactivate*
-command in shell. Always remember to activate virtual environment.
+To develop a GraphQL server in Python we will create virtual
+environment for project to keep all the dependencies isolated from
+other projects and system. To do so please follow the deplyment of a
+virtualenv as discussied in the Python section or if you use Python 3
+you could also use `venv`.
 
-* :o: TODO: you remind me that venv is now part of python 3, so we
-  could do an alternative install of python 3 with altinstall and
-  document that in the python section instead of using pyenv
-
-If you have already cloned [book](https://github.com/cloudmesh-community/book) 
-repository, there are two examples available on github, 
-
-* [cloudmeshrepo](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/cloudmeshrepo) - A graphql server example with local database
-* [github](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/github) - A graphql server example using GitHub API v3
-
-For cloudmeshrepo example execute 
+We have two examples that are located in the book repository which you
+can clone with
 
 ```bash
-cd book/examples/graphql/cloudmeshrepo
+$ git clone https://github.com/cloudmesh-community/book
 ```
 
-For github example execute
+The examples itself are located in the directories
+
+* [book/examples/graphql/cloudmeshrepo](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/cloudmeshrepo) - A graphql server example with local database
+* [book/examples/graphql/github](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/github) - A graphql server example using GitHub API v3
+
+To execute the examples you need to go in the specific
+directory. Thus, for  `cloudmeshrepo` say
+
+```bash
+$ cd book/examples/graphql/cloudmeshrepo
+```
+
+and for the github example execute
 
 ```bash
 cd book/examples/graphql/github
@@ -586,50 +599,52 @@ cd book/examples/graphql/github
 Then you can execute following steps
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install graphene==2.0.1 graphene-django==2.0.0 
-pip install django==2.0.2 django-filter==1.1.0
-pip install django-graphql-jwt==0.1.5
-python manage.py migrate
-python manage.py runserver
+$ pip install graphene==2.0.1 graphene-django==2.0.0 
+$ pip install django==2.0.2 django-filter==1.1.0
+$ pip install django-graphql-jwt==0.1.5
+$ python manage.py migrate
+$ python manage.py runserver
 ```
 
-Last command will start server on localhost and you can access it at
+The last command will start a server on localhost and you can access
+it at
 
 * <http://localhost:8000>
 
-It will show you *GraphiQL* interface. You can execute your queries in it.
+It will show you a graphical interface based on *GraphiQL*, allowing
+you to execute your queries in it.
 
-If you want to create graphql server from scratch, you can start with following 
-steps
+## Developing your own GraphQL Server
 
-```bash
-mkdir -p example/graphql
-cd example/graphql
-python3 -m venv venv
-source venv/bin/activate
-```
-
-Now the project has been changed to (venv) so it means we are in
-virtual environment. Execute following commands
+If you want to create GraphQL server while using django as the server
+backend yourself, you can start with following steps
 
 ```bash
-pip install graphene==2.0.1 graphene-django==2.0.0 
-pip install django==2.0.2 django-filter==1.1.0
-pip install django-graphql-jwt==0.1.5
-django-admin startproject cloudmeshrepository
-cd cloudmeshrepository
-python manage.py migrate
-python manage.py runserver
+$ mkdir -p example/graphql
+$ cd example/graphql
+$ pip install graphene==2.0.1 graphene-django==2.0.0 
+$ pip install django==2.0.2 django-filter==1.1.0
+$ pip install django-graphql-jwt==0.1.5
+$ django-admin startproject cloudmeshrepository
+$ cd cloudmeshrepository
+$ python manage.py migrate
+$ python manage.py runserver
 ```
 
-Last command will start server on localhost and you can access it at
+The last command will start a server on th localhost and you can
+access it at the URL
 
 * <http://localhost:8000>
 
-URL. It will show you welcome page for django. Now open settings.py
-file under cloudmeshrepo/cloudmeshrepo folder and append following to
+It will show you the welcome page for django. Now open the file
+
+:o: this seems wrong I thought we want to develop this ourselfs. The
+description does not match the example.
+
+`cloudmeshrepo/cloudmeshrepo/settings.py`
+
+
+file under folder and append following to
 INSTALLED_APPS
 
 ```python
@@ -649,13 +664,14 @@ GRAPHENE = {
 
 ### Django for GraphQL
 
-For the purpose of this example, we will use Django as python web 
-framework. You can even use Flask in place of Django.
+:o: i am confused, now we do this again?
 
-Django is a very popular python web framework which already comes with a 
-lot of boilerplate code. It is mature and has a very large community.
-It has inbuilt support for Object Relational Mapping which is based on Database 
-Code-First approach. Please refer [@www-djangoproject] for more Django information. 
+For the purpose of this example, we will use Django as Python web
+framework.  Django is a popular Python web framework which already
+comes with a lot of boilerplate code. It is mature and has a very
+large community.  It has inbuilt support for Object Relational Mapping
+which is based on Database Code-First approach. Please refer
+[@www-djangoproject] for more Django information.
 
 ### GraphQL server implementation :o:
 
@@ -699,7 +715,7 @@ python manage.py migrate
 python manage.py shell
 ```
 
-Last command will open python shell. Execute following command inside
+Last command will open Python shell. Execute following command inside
 that shell to create some data. following example data we got from
 github's API https://api.github.com/users/cloudmesh-community/repos.
 
@@ -727,8 +743,9 @@ Repository.objects.create(name="cm-burn",
 exit()
 ```
 
-Now create Repositories/schema.py with following code. This will introduce
-custom type of Repository and query with resolver for Repositories.
+Now create Repositories/schema.py with following code. This will
+introduce custom type of Repository and query with resolver for
+Repositories.
 
 ```python
 import graphene
@@ -749,9 +766,9 @@ class Query(graphene.ObjectType):
         return Repository.objects.all()
 ```
 
-Create cloudmeshRepository/schema.py with following code. It just inherits
-query defind in Repositories app. This way we are able to isolate schema to
-their apps.
+Create cloudmeshRepository/schema.py with following code. It just
+inherits query defind in Repositories app. This way we are able to
+isolate schema to their apps.
 
 ```python
 import graphene
@@ -768,8 +785,8 @@ schema = graphene.Schema(query=Query)
 ### GraphQL Server Querying :o:
 
 Schema is created now to query it we will use *GraphiQL* which is
-playground for GraphQL queries. Open cloudmeshrepository/urls.py and append
-following code
+playground for GraphQL queries. Open cloudmeshrepository/urls.py and
+append following code
 
 ```python
 from django.views.decorators.csrf import csrf_exempt
@@ -843,8 +860,8 @@ In the right pane you will see following output
 ### Mutation example :o:
 
 Similar to a query you can add mutation to create your own data. Add a
-`CreateRepository` class for new repository object which will inherit 
-from graphene's Mutation class. This class will accept new repository 
+`CreateRepository` class for new repository object which will inherit
+from graphene's Mutation class. This class will accept new repository
 properties as arguments. Please see the following code snippet
 
 ```python
