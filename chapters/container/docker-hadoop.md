@@ -104,7 +104,7 @@ The input to the program will be a text file(s) carrying exactly one
 floating point number per line. The result file includes *min, max,
 average, and standard deviation*.
 
-![MapReduce example in Docker](images/docker-hadoop-exmaple.png){#fig:docker-hadoop-a}
+![MapReduce example in Docker](images/docker-hadoop-example.png){#fig:docker-hadoop-a}
 
 :o: +@fig:docker-hadoop-a shows something but we are not sure what
 
