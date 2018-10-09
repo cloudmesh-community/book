@@ -1,3 +1,4 @@
+pandoc-tablenos
 pandoc-fignos
 pandoc-mustache
 pprint

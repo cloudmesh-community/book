@@ -1,23 +1,8 @@
 # GraphQL :o:
 
-:o: TODO: the initial tutorial uses the term "repo" and
-"repos". However we shoudl provide terminology that is not
-abbreviated. Please verify if the cahnges are ok and fix it in the
-code. The code for now may still feature repo and repos
-
-
-:o: TODO: use full sentences, there are several ocasions where a
-sentence seems incomplete. such as Examples available at I will fix
-that pariculare example, but can you fix the other sentences ...
-
-:o: you switch examples, between car and employee, i suggest to make
-examples consistent :o: why not use the example computer and you do ip
-adresses, and OS, and things like that relating it to cloud.
-
-
 ## Introduction
 
-GraphQL is a data query language developed by Faceboo%k. 
+GraphQL is a data query language developed by Facebook.
 
 GraphQL allows clients to request data they need without thinking
 about the API implementation. It makes application devlopment fast and
@@ -25,11 +10,11 @@ stable because the application has control over the data it needs and
 its format. The benefit of GraphQL is also to reduce network I/O since
 only the necessary data is transfered from server to client.
 
-Unlike REST APIs, which require loading data via multiple URLs, GraphQL
-can get all data, that application needs, in a single request. GraphQL APIs
-are defined in terms of types and fields. Types help GraphQL to ensure
-that client only asks for what is possible and in case of faults,
-provides clear and helpful errors.
+Unlike REST APIs, which require loading data via multiple URLs,
+GraphQL can get all data, that application needs, in a single
+request. GraphQL APIs are defined in terms of types and fields. Types
+help GraphQL to ensure that client only asks for what is possible and
+in case of faults, provides clear and helpful errors.
 
 Initially GraphQL was implemented in JavaScript. Today there are
 several other implementations in different language available of
@@ -37,6 +22,20 @@ GraphQLs. We will explore the *graphql-python* implementation in this
 chapter. The official documentation of GraphQL is available at
 [@graphql-learn]
 
+## Prerequisits
+
+Before we start we need to install a number of tools that we use
+throughout the chapter
+
+### Install of GraphIQL
+
+move that here and explain brievly what it does but nothing else than
+instalation and
+
+### Install Django
+
+move instalation of django here and describe brievly why you use it
+and in which example (point to section with ref link)
 
 ## GraphQL type system and schema
 
@@ -53,9 +52,10 @@ data.
 
 To demonstrate the type system we use a simple example while looking
 at authors and co-authors of papers. We represent in this example a
-database that containes a number of authors. each author has a
+database that contains a number of authors. each author has a
 publication count and a number of coauthors that are identified by
-name. We assume for this simple example that all author names are unique.
+name. We assume for this simple example that all author names are
+unique.
 
 Here is how a simple GraphQL query would look like
 
@@ -121,14 +121,15 @@ GraphQL supports the following scalar types:
 * `Int`: 32 bit signed integer
 * `Float`: Double precision floating point value
 * `Boolean`: true or false
-* `ID`: Represents a unique identifier which can be used as a key to fetch the object
+* `ID`: Represents a unique identifier which can be used as a key to
+  fetch the object
 
 ### Enumeration Types
 
-`Enums` also are scalar types which define a certain set of restricted
-values. When a GraphQL schema defines a field of enum type, we expect
-that the field's value be of the type enum values only. An example of
-an enum type is
+`enum` is also a scalar type which define a certain set of restricted
+values. When a GraphQL schema defines a field of `enum` type, we
+expect that the field's value be of the type `enum` values only. An
+example of an `enum` type is
 
 ```graphql
 enum ContainerTYpe {
@@ -140,17 +141,18 @@ enum ContainerTYpe {
 
 ### Interfaces
 
-Similar to any programming language, the GraphQL type system also supports
-interfaces. When a type implements an interface, it needs to specify all the
-fields that are defined through the interface.
+Similar to any programming language, the GraphQL type system also
+supports `interface`. When a type implements an `interface`, it needs
+to specify all the fields that are defined through the `interface`.
 
-We will illustrate this in the following example, where we define simple
-`ComputeService` interface type. This interface declares `id`, `name`
-and `memory` fields. This means that a `Container` and a `VirtualMachine` both
-of which implement `ComputeService`, must have the fields defined in the
-interface. They may or may not have additional fields like we demonstrate in 
-our example with the field `systemType` of type `ContainerType` in case of 
-`Container` and field `systemType` of type `VMBackend` in case of the `VirtualMachine`.
+We will illustrate this in the following example, where we define
+simple `ComputeService` interface type. This `interface` declares
+`id`, `name` and `memory` fields. This means that a `Container` and a
+`VirtualMachine` both of which implement `ComputeService`, must have
+the fields defined in the `interface`. They may or may not have
+additional fields like we demonstrate in our example with the field
+`systemType` of type `ContainerType` in case of `Container` and field
+`systemType` of type `VMBackend` in case of the `VirtualMachine`.
 
 ```graphql
 interface ComputeService {
@@ -176,8 +178,8 @@ type VirtualMachine implements ComputeService {
 
 ### Union Types
 
-As the name suggests, union types represent the union of two or more
-types. Here is how we can define a union type. As you can see we use
+As the name suggests, `union` type represent the union of two or more
+types. Here is how we can define a `union` type. As you can see we use
 the `|` charater to indicate the union operator.
 
 ```graphql
@@ -213,10 +215,10 @@ section we describe how to use them.
 
 ### Fields
 
-A very simple definition of a query is to ask for specific fields
-that belong to an object stored in GraphQL.
+A very simple definition of a query is to ask for specific fields that
+belong to an object stored in GraphQL.
 
-In the next examples we use data related to repositories in github. 
+In the next examples we use data related to repositories in github.
 
 When asking the query
 
@@ -241,11 +243,12 @@ we obtain the following response
 ```
 
 As we see the response data, format looks exactly like the query. This
-way a client knows exactly what data it has to consume. In the previous
-example, the `name` field returns the data of type `String`. Clients can 
-also ask for an object representing any match within the GraphQL database.
+way a client knows exactly what data it has to consume. In the
+previous example, the `name` field returns the data of type
+`String`. Clients can also ask for an object representing any match
+within the GraphQL database.
 
-For example the query
+For example following query
 
 ```graphql
 {
@@ -277,16 +280,16 @@ returns the response
 
 ### Arguments
 
-As you may already know in REST services you can pass parameters as 
-part of a request via query parameters through *GET* or a request body 
-thorough *POST*. However in GraphQL, for every field, you provide an 
-argument restricting the data returned to only the information that you
-need. This reduces the traffic for returning the information that is
-needed without doing the postprocessing on the client. These
+As you may already know in REST services you can pass parameters as
+part of a request via query parameters through *GET* or a request body
+through *POST*. However in GraphQL, for every field, you provide an
+argument restricting the data returned to only the information that
+you need. This reduces the traffic for returning the information that
+is needed without doing the postprocessing on the client. These
 restricting arguments can be of scalar type, enumeration type and
 others.
 
-Lets look at an example of a query where we only ask for first 3 
+Lets look at an example of a query where we only ask for first 3
 repositories in cloudmesh community
 
 ```graphql
@@ -339,11 +342,12 @@ fields in it.
 }
 ```
 
-As the query gets bigger and complex, we can use *Fragments* to split 
-it into smaller chunks.  These fragments can then be re-used which can 
-significantly reduce the query query size and also make it more readable. 
+As the query gets bigger and complex, we can use `fragment` to split
+it into smaller chunks.  This `fragment` can then be re-used, which
+can significantly reduce the query size and also make it more
+readable.
 
-A Fragment can be defined as
+A `fragment` can be defined as
 
 ```graphql
 fragment repositoryInfo on Repository {
@@ -388,21 +392,32 @@ The response for this query will look like
 }
 ```
 
-### Variables :o:
+### Variables
 
-:o: Mihir had updated this - explained variables section, do we need a
-screenshot as well just to show the section in GraphiQL IDE where 
-variables are defined?
+Variables are used to pass dynamic values to queries. Instead of
+passing hard-coded values to a query, variables can be defined for
+these values.  Now these variables can be passed to queries.
 
-Variables are used to pass dynamic values to queries. Instead of passing 
-hard-coded values to a query, variables can be defined for these values. 
-Now these variables can be passed to queries.
+Variables can be passed to GraphQL queries directly through
+commandline.
 
-**Variables can be defined in the Query variables panel at left bottom of 
-the graphiql client**, it is an in-browser IDE for GraphQL. There 
-are many implementations of _graphiql_ available. For our chapter we will use
-[GraphiQL](https://github.com/skevy/graphiql-app). Its usage is discussed 
-later in this chapter.
+```bash
+curl -X POST \
+-H "Content-Type: application/json;" \
+-d '{"query": "{ repository (name: $name) { name url } }", "variables": \
+{ "name": "book" }}' \
+http://localhost:8000/graphql/
+```
+
+Variables can be defined in the *Query Variables* panel at left bottom
+of the *GraphiQL* client, which is an IDE(Interactive Development
+Environment) for GraphQL. There are many implementations of *GraphiQL*
+available. For this chapter we will use
+[GraphiQL](https://github.com/skevy/graphiql-app).  Its usage is
+discussed later in this chapter.
+
+:o: I think you want to discuss this earlier .... and move that
+section elsewhere
 
 A variable is defined as a json object and this is how it looks like
 
@@ -438,15 +453,15 @@ which will fetch response
 
 ### Directives
 
-Directives are used to change the structure of queries at runtime using
-variables. Directives provide a way to describe additional options to 
-GraphQL executors. Currently core GraphQL specification supports two 
-directives 
+Directives are used to change the structure of queries at runtime
+using variables. Directives provide a way to describe additional
+options to GraphQL executors. Currently core GraphQL specification
+supports two directives
 
 * `@skip (if: Boolean)` - It skips the field if argument is true
 * `@Include (if: Boolean)` - It includes the field if argument is true
 
-To demonstrate its usage, we define the variable `isAdmin` and assign 
+To demonstrate its usage, we define the variable `isAdmin` and assign
 a value of `true` to it.
 
 ```json
@@ -525,7 +540,6 @@ The response will be as follow, indicating that a repository has been added.
 }
 ```
 
-
 ### Query Validation
 
 GraphQL is a language with strong type system. So requesting and providing
@@ -557,71 +571,98 @@ which will give response
 }
 ```
 
-In application we need to validate user input. If it is invalid we can 
-use `GraphQLError` class or python exceptions to raise validation errors.
+In application we need to validate user input. If it is invalid we can
+use `GraphQLError` class or Python exceptions to raise validation
+errors.
 
-## Django for GraphQL
+## GraphQL in Python :o:
 
-Django is a very popular python web framework which includes a lot of
-boilerplate code. Due to this its footprint is larger than other
-services, such as Flask, but provide a lot of build in features. Django is
-mature and has a larger community than that of flask.
-Django has inbuilt support for Object Relational Mapping
-which is based on Database Code-First approach. Please refer
-[@www-djangoproject] for more Django information. Database suport
-however can also be easily added to falsk through plugins.
+In this example we will implement a GraphQL server in Python. For this
+we will use [Graphene](https://graphene-python.org/) which is a
+library for implementing GraphQL APIs in Python. We will cover a basic
+server implementation with schema and queries to fetch and mutate
+data.
 
-:o: the purpose of this section is unclear at this time. Django nd
-flask have advantages and disadvantages.
+To develop a GraphQL server in Python we will create virtual
+environment for project to keep all the dependencies isolated from
+other projects and system. To do so please follow the deplyment of a
+virtualenv as discussied in the Python section or if you use Python 3
+you could also use `venv`.
 
-## GraphQL-python (Graphene) Example :o:
-
-In this example we will implement a GraphQL server in python. For this
-we will use [Graphene](https://graphene-python.org/) which is library for
-implementing GraphQL APIs in python. We will cover basic server implementation
-with schema and queries to fetch and mutate data.
-
-To start with GraphQL server implementation in python we will create
-virtual environment for project to keep all the dependencies isolated
-from other projects and system. To leave it execute *deactivate*
-command in shell. Always remember to activate virtual environment.
-
-* :o: TODO: mkdir -p  example/graphql
-* :o: TODO: whould we just do a wget or culr on the git example dir
-  and cd into it? - Mihir: There are some _hacks_ available to do this
-  https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo
-  but I don't think that is good approach. Wouldn't it be better if user 
-  just clone repo?
-* :o: TODO: you remind me that venv is now part of python 3, so we
-  could do an alternative install of python 3 with altinstall and
-  document that in the python section instead of using pyenv
+We have two examples that are located in the book repository which you
+can clone with
 
 ```bash
-mkdir -p example/graphql
-cd example/graphql
-python3 -m venv venv
-source venv/bin/activate
+$ git clone https://github.com/cloudmesh-community/book
 ```
 
-Now the project has been changed to (venv) so it means we are in
-virtual environment. Execute following commands
+The examples itself are located in the directories
+
+* [book/examples/graphql/cloudmeshrepo](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/cloudmeshrepo) - A graphql server example with local database
+* [book/examples/graphql/github](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/github) - A graphql server example using GitHub API v3
+
+To execute the examples you need to go in the specific
+directory. Thus, for  `cloudmeshrepo` say
 
 ```bash
-pip install graphene==2.0.1 graphene-django==2.0.0 
-pip install django==2.0.2 django-filter==1.1.0
-pip install django-graphql-jwt==0.1.5
-django-admin startproject cloudmeshrepository
-cd cloudmeshrepository
-python manage.py migrate
-python manage.py runserver
+$ cd book/examples/graphql/cloudmeshrepo
 ```
 
-Last command will start server on localhost and you can access it at
+and for the github example execute
+
+```bash
+cd book/examples/graphql/github
+```
+
+Then you can execute following steps
+
+```bash
+$ pip install graphene==2.0.1 graphene-django==2.0.0 
+$ pip install django==2.0.2 django-filter==1.1.0
+$ pip install django-graphql-jwt==0.1.5
+$ python manage.py migrate
+$ python manage.py runserver
+```
+
+The last command will start a server on localhost and you can access
+it at
 
 * <http://localhost:8000>
 
-URL. It will show you welcome page for django. Now open settings.py
-file under cloudmeshrepo/cloudmeshrepo folder and append following to
+It will show you a graphical interface based on *GraphiQL*, allowing
+you to execute your queries in it.
+
+## Developing your own GraphQL Server
+
+If you want to create GraphQL server while using django as the server
+backend yourself, you can start with following steps
+
+```bash
+$ mkdir -p example/graphql
+$ cd example/graphql
+$ pip install graphene==2.0.1 graphene-django==2.0.0 
+$ pip install django==2.0.2 django-filter==1.1.0
+$ pip install django-graphql-jwt==0.1.5
+$ django-admin startproject cloudmeshrepository
+$ cd cloudmeshrepository
+$ python manage.py migrate
+$ python manage.py runserver
+```
+
+The last command will start a server on th localhost and you can
+access it at the URL
+
+* <http://localhost:8000>
+
+It will show you the welcome page for django. Now open the file
+
+:o: this seems wrong I thought we want to develop this ourselfs. The
+description does not match the example.
+
+`cloudmeshrepo/cloudmeshrepo/settings.py`
+
+
+file under folder and append following to
 INSTALLED_APPS
 
 ```python
@@ -631,7 +672,7 @@ INSTALLED_APPS = (
 )
 ```
 
-And at the end of settings.py add following line
+And at the end of `settings.py` add following line
 
 ```python
 GRAPHENE = {
@@ -639,19 +680,36 @@ GRAPHENE = {
 }
 ```
 
+### Django for GraphQL
+
+:o: i am confused, now we do this again?
+
+For the purpose of this example, we will use Django as Python web
+framework.  Django is a popular Python web framework which already
+comes with a lot of boilerplate code. It is mature and has a very
+large community.  It has inbuilt support for Object Relational Mapping
+which is based on Database Code-First approach. Please refer
+[@www-djangoproject] for more Django information.
+
 ### GraphQL server implementation :o:
 
-Now django seperates project into apps. Here we will have one app for
-Users and one for Repos. Django provides support for SQLite so we will
-use that for demo.
+:o: it os not explained wht you actually do .... a general discussion
+about what the purpose of the example is is missing. Speeling and
+grammar does not use a and the.
+
+Django seperates a project into apps. Here we will have one app for
+Users and one for Repos. To simplify our demo we decided not to use a
+backend such as MongoDB but instead use SQLite.
 
 Go to root dir of project and execute following command
+
+:o: not explained what thsi does
 
 ```bash
 python manage.py startapp repository
 ```
 
-Open Repositories/models.py and add following line
+Open `Repositories/models.py` and add following line
 
 ```python
 class Repository(models.Model):
@@ -661,8 +719,8 @@ class Repository(models.Model):
     description = models.TextField(blank=True)
 ```
 
-Now open cloudmeshRepository/settings.py and append following line into
-INSTALLED_APPS
+Now open the file `cloudmeshRepository/settings.py` and append
+following line into INSTALLED_APPS
 
 ```python
 INSTALLED_APPS = (
@@ -675,17 +733,27 @@ Go to root folder and execute following commands. It will create table
 for new modeld
 
 ```bash
-python manage.py makemigrations
-python manage.py migrate
-
-python manage.py shell
+$ python manage.py makemigrations
+$ python manage.py migrate
 ```
 
-Last command will open python shell. Execute following command inside
-that shell to create some data. following example data we got from
-github's API https://api.github.com/users/cloudmesh-community/Repositories.
+Naturally, for us to demonstrate the server, we need to ingest some
+data into the server. We can easily do this with the django shell
+while calling
 
-:o: TODO: reformat to 80 lines if possible
+```bash
+$ python manage.py shell
+```
+
+Inside the shell, execute following command to create some example
+data. We have taken this data from github's API and used the
+repositories in the cloudmesh community at
+
+* <https://api.github.com/users/cloudmesh-community/repos>.
+
+:o: it woudl be better to have that data in the repository, do a wget
+on the data and uloads it by calling a program instead of using the
+shell
 
 ```python
 from Repositories.models import Repository
@@ -709,8 +777,11 @@ Repository.objects.create(name="cm-burn",
 exit()
 ```
 
-Now create Repositories/schema.py with following code. This will introduce
-custom type of Repository and query with resolver for Repositories.
+Now create teh file `Repositories/schema.py` with following code. This will
+creat a custom type `Repository` and query with resolver for
+Repositories.
+
+:o: what is a resolver, it is not explained
 
 ```python
 import graphene
@@ -718,11 +789,9 @@ from graphene_django import DjangoObjectType
 
 from .models import Repository
 
-
 class RepositoryType(DjangoObjectType):
     class Meta:
         model = Repository
-
 
 class Query(graphene.ObjectType):
     Repositories = graphene.List(RepositoryType)
@@ -731,9 +800,9 @@ class Query(graphene.ObjectType):
         return Repository.objects.all()
 ```
 
-Create cloudmeshRepository/schema.py with following code. It just inherits
-query defind in Repositories app. This way we are able to isolate schema to
-their apps.
+Next create the file `cloudmeshRepository/schema.py` with following
+code. It just inherits the query defind in Repositories app. This way we
+are able to isolate schema to their apps.
 
 ```python
 import graphene
@@ -747,11 +816,12 @@ class Query(Repositories.schema.Query, graphene.ObjectType):
 
 schema = graphene.Schema(query=Query)
 ```
-### Querying implemented GraphQL server :o:
 
-Schema is created now to query it we will use GraphiQL which is
-playground for GraphQL queries. Open cloudmeshrepository/urls.py and append
-following code
+### GraphQL Server Querying :o:
+
+Next, we create a Schema  and use it within *GraphiQL* which is a
+playground for GraphQL queries. Open the file `cloudmeshrepository/urls.py` and
+append following code
 
 ```python
 from django.views.decorators.csrf import csrf_exempt
@@ -763,18 +833,18 @@ urlpatterns = [
 ]
 ```
 
-Start your server using following command
+Start your server using the command
 
 ```bash
-python manage.py runserver
+$ python manage.py runserver
 ```
 
 Now open the URL
 
 * <http://localhost:8000/graphql>
 
-in your broweser. You will see GraphiQL. In the left pane add the
-following query
+in your broweser. You will see *GraphiQL* window. In the left pane you
+can add queries. Let us add the following query
 
 ```graphql
 {
@@ -824,10 +894,13 @@ In the right pane you will see following output
 
 ### Mutation example :o:
 
-Similar to a query you can add mutation to create your own data. Add a
-*Create* class for new repository object which will inherit from graphene's
-Mutation class. This class will accept new repository properties as
-Arguments. Please see the following code snippet
+Similar to a query you can add a mutation to create your own data. To
+achieve this, add a
+`CreateRepository` class for new repository object which will inherit
+from graphene's Mutation class. This class will accept new repository
+properties as arguments. Please see the following code snippet
+
+:o: it is not explained where you do this
 
 ```python
 class CreateRepository(graphene.Mutation):
@@ -854,14 +927,16 @@ class CreateRepository(graphene.Mutation):
             description=repository.description)
 ```
 
-Similar to Query, add Mutation class in repository's schema.
+Similar to A Query, add a `Mutation` class in the repository's schema.
+
+:o: what is the filename
 
 ```python
 class Mutation(graphene.ObjectType):
     create_repository = CreateRepository.Field()
 ```
 
-Now you can run the following mutation on graphiql to add a new repository
+Now you can run the following mutation on *GraphiQL* to add a new repository
 
 ```graphql
 mutation {
@@ -879,7 +954,10 @@ mutation {
 }
 ```
 
-And this will not just create a new repository but also get the newly added repository
+And this will not just create a new repository but also get the newly 
+added repository
+
+:o: this sntence is unclear
 
 ```json
 {
@@ -896,38 +974,41 @@ And this will not just create a new repository but also get the newly added repo
 
 ### GraphQL Authentication :o:
 
-There a few ways to add authentication to your GraphQL server
+There a number of ways to add authentication to your GraphQL server
 
-* Add a REST Api endpoint which will take care of authenticating the
-  user and only the logged in users can make GraphQL queries. This
-  method can also be used to restrict only a subset of GraphQL
-  queries. This is ideal for existing applications, which have REST
-  endpoints, and which are trying to migrate over to GraphQL.
-* Add basic authentication to GraphQL server which will just accept
-  credentials in raw format and once authenticated, logged in user can
-  start GraphQL querying
-* Add JSON Web Token authentication to GraphQL server, since most of
-  the applications these days are stateless.
+* We can add a REST API endpoint which will take care of
+  authenticating the user and only the logged in users can make
+  GraphQL queries. This method can also be used to restrict only a
+  subset of GraphQL queries. This is ideal for existing applications,
+  which have REST endpoints, and which are trying to migrate over to
+  GraphQL.
+* We can add basic authentication to the GraphQL server which will
+  just accept credentials in raw format and once authenticated, logged
+  in user can start GraphQL querying
+* We can add JSON Web Token authentication to GraphQL server, since
+  most of the applications these days are stateless.
 
-### JSON Web Authentication :o:
+### JSON Web Token Authentication :o:
 
-This is a more secure and sophisticated way of authentication. Client
-has to provide username and password to mutate a token which has
-limited expiry time. Once token is generated, it needs to be provided
-with each subsequent GraphQL api calls which indicates GraphQL server
-of authenticated requests.
+Nex we focus on the JSON web token authentication. It is tyically
+prefered as it provides a more secure and sophisticated way of
+authentication. As part of the authentication process, a client has to
+provide a username and a password. A limited life time token is
+generated that is used during the authentication process.  Once the token
+is generated, it needs to be provided with each subsequent GraphQL API
+call to assure the authentication is valid.
 
-To enable JWT authentication in your GraphQL server, you need to
-install django-graphql-jwt. You can add this settings to settings.py
-file.
+The advantage of using frameworks such as the python implementation of
+GraphQL is that it can leverage existing authetication modules, so we
+do not have to develop them ourselfs. One such module is *JSON Web
+Token Authentication* or *JWT Authentication.  To use this module,
+please add it to the `settings.py` file as follows
 
 ```python
 MIDDLEWARE = [
     'graphql_jwt.middleware.JSONWebTokenMiddleware',
 [
-```
 
-```python
 AUTHENTICATION_BACKENDS = [
     'graphql_jwt.backends.JSONWebTokenBackend',
     'django.contrib.auth.backends.ModelBackend',
@@ -936,12 +1017,19 @@ AUTHENTICATION_BACKENDS = [
 
 Add the Token mutation
 
+:o: this is unclear where you do it
+
 ```python
 class Mutation(users.schema.Mutation, repositories.schema.Mutation, graphene.ObjectType):
     token_auth = graphql_jwt.ObtainJSONWebToken.Field()
 ```
 
-Run the server and fire the token mutation providing username and password.
+Run the server and fire the token mutation providing username and
+password.
+
+:o: how do i run it, this is unclear
+
+:o: the next line is unclear, where do I do this
 
 ```graphql
 mutation {
@@ -950,6 +1038,7 @@ mutation {
   }
 }
 ```
+
 This will create a token for us to use in our subsequent calls.
 
 ```json
@@ -960,15 +1049,16 @@ This will create a token for us to use in our subsequent calls.
     }
   }
 }
-
 ```
 
-JWT library comes with inbuilt directive called *login_required*
-You can add this any of your Query resolver to prevent unauthenticated access.
+The JWT library comes with a built-in directive called *login_required*.
+You can add this to any of your Query resolvers to prevent
+unauthenticated access.
+
+:o: this is unclear
 
 ```python
 from graphql_jwt.decorators import login_required
-
 ...
 
 class Query(graphene.ObjectType):
@@ -979,7 +1069,7 @@ class Query(graphene.ObjectType):
         return Repository.objects.all()
 ```
 
-Now if you try to query repositories from GraphQL, you will see this error
+Now if you try to query our repositories from GraphQL, you will see this error
 
 ```json
 {
@@ -1003,15 +1093,17 @@ Now if you try to query repositories from GraphQL, you will see this error
 }
 ```
 
-Henceforth you need to pass token with every repositories query. This token
-needs to be passed as header which the graphiql ui client does not
-support. Hence you can use either of these 2 ways
+Henceforth you need to pass token with every repository query. This token
+needs to be passed as header. Unfortunately, the *GraphiQL* UI client does not
+support this. Hence you can use either a curl query from command line
+or more advanced GraphQL clients that support authentication.
 
-:o: :TODO: could we not put the token in an env variable and use that,
-or have a secript that does find the token from the file that you use
-earlier?
+#### Using Authentication with Curl
 
-* curl command 
+To use authentication with curl, you can pass the token to the
+command. For somplicity we created a TOKEN environment vaiable in with
+we stor the token so it is easier for us to refer to it in our
+examples.
 
 ```bash
 export TOKEN=eyJ0eXAiOiJKV1.... (cut to fit in line)
@@ -1022,7 +1114,7 @@ curl -X POST \
 http://localhost:8000/graphql/
 ```
 
-Result obtained from running this command: 
+The result obtained from running this command is: 
 
 ```json
 {"data":{"repositories":[
@@ -1036,38 +1128,72 @@ Result obtained from running this command:
 }
 ```
 
+To print the output in a nice format we can use python to pretty print
+it ass follows
+
+
+```bash
+curl -X POST \
+-H "Content-Type: application/json;" \
+-H "Authorization: JWT $TOKEN" \
+-d '{"query": "{ repositories { url } }"}' \
+http://localhost:8000/graphql/ | \
+python -m json.tool
+```
+
+
 Clearly as you can see the output is not well formatted and hence not
 the preferred way.
 
-* Install GraphQL client like Insomnia or Altair Advantage of using
-  these clients is that they are much user friendly and provide a well
-  formatted json output.
+#### Advanced GraphQL Clients
+
+To use authentication, you can also install other GraphQL clients such
+as 
+
+* [Insomnia](https://insomnia.rest/graphql/)
+* [Altair](https://altair.sirmuel.design/), or
+* [GraphiQL](https://github.com/skevy/graphiql-app).
+
+#### heading is missing
+
+:o: unclear why the next is not explained earlier, no one will
+understand what a bearer token is, it may also replicate what you said
+before.
 
 JWT tokens are bearer tokens which need to be passed in HTTP
 authorization header. JWT tokens are very safe against CSRF attacks
 and are trusted and verified since they are digitally signed.
 
+JWT tokens can have expiry period. Typically, GraphQL server host 
+provides the token expiry information to client through some kind of 
+documentation. If the token is about to be expired, you can call `refreshToken` 
+mutation and the response would be a refreshed token. However if the token 
+has already expired then you can again request a new token by calling 
+`tokenAuth` mutation.
+
 Find more about JWT tockens at [@jwt-tockens] and GraphQL
 authentication at [@medium-graphql]
 
+:o: this shoudl go in the Resources section if its not just related to
+JWT
+
 Examples for GraphQL are available at:
 
-* <https://github.com/cloudmesh-community/book/tree/master/examples/graphql/> and [@www-howtographql]
-
-To use them please do:
-
-```bash
-$ mkdir -p cloudmesh-community/example
-$ cd cloudmesh-community/example
-$ wget https://github.com/cloudmesh-community/book/tree/master/examples/graphql
-$ cd grpahql
-```
+* <https://github.com/cloudmesh-community/book/tree/master/examples/graphql> and [@www-howtographql]
 
 ### GitHub API v4 :o:
 
+GraphQL has made already an impact in the cloud services community. In
+addition to ??? Github.com is now also providing a GraphQL interface,
+making it an idela example for us.
+
 GitHub has implemented API v4 using GraphQL which allows you to query
-or mutate data for which you have access. To access GitHub API v4
-first we need to install [GraphiQL](https://github.com/skevy/graphiql-app).
+or mutate data of repositories that you can access via
+`github.com`. To demontsrate its use, we will use 
+[GraphiQL](https://github.com/skevy/graphiql-app).
+
+:o: should that not be discussed earlier hpow to install it so we do
+not hav to explain it here
 
 For MacOS
 
@@ -1078,10 +1204,10 @@ brew cask install graphiql
 * Now we need OAuth token to access GitHub API. You can generate OAuth
   token by following steps mentioned at
   https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
-* Open GraphiQL app and click edit headers at upper-right corner. Add
-  new Header with key "Authorization" and value "Bearer *your token*"
-* Enter "https://api.github.com/graphql" in GraphQL Endpoint textbox
-* Keep method as "POST" only
+* Open *GraphiQL* app and click edit headers at upper-right corner. Add
+  new header with key *Authorization* and value *Bearer your_token*
+* Enter *https://api.github.com/graphql* in GraphQL endpoint textbox
+* Keep method as *POST* only
 
 To test the changes add following query
 
@@ -1094,7 +1220,7 @@ query {
 }
 ```
 
-Response
+which gives response
 
 ```json
 {
@@ -1109,8 +1235,6 @@ Response
 
 To get your repositories add following query
 
-:o: is here a name conflict with repositories?
-
 ```graphql
 query($number_of_repositories:Int!) {
   viewer {
@@ -1124,7 +1248,7 @@ query($number_of_repositories:Int!) {
 }
 ```
 
-Define variables
+and define variables used in query
 
 ```json
 {
@@ -1132,7 +1256,7 @@ Define variables
 }
 ```
 
-Response
+it gives following response
 
 ```json
 {
@@ -1159,7 +1283,7 @@ Response
 
 To add a comment using mutation we need to get issue id 
 
-Query
+For example query
 
 ```graphql
 {
@@ -1171,7 +1295,7 @@ Query
 }
 ```
 
-Response
+it gives following response
 
 ```json
 {
@@ -1188,7 +1312,7 @@ Response
 Now we can use this id as subjectId for mutation to add comment to an
 issue,
 
-Query
+For query
 
 ```graphql
 mutation AddComment {
@@ -1205,7 +1329,7 @@ mutation AddComment {
 }
 ```
 
-Response
+it gives following response
 
 ```json
 {
