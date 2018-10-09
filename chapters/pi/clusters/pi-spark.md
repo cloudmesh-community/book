@@ -19,9 +19,9 @@ On all the raspberry pi nodes, make sure these prerequisites are completed.
 
 2. Install Oracle JDK8 and set the JAVA_HOME.     
    ```bash 
-   	sudo add-apt-repository ppa:webupd8team/java
-   	sudo apt-get update
-   	sudo apt-get install oracle-java8-installer
+   sudo add-apt-repository ppa:webupd8team/java
+   sudo apt-get update
+   sudo apt-get install oracle-java8-installer
 	echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~\.bashrc
 	source ~/.bashrc 
 ``` 
@@ -30,7 +30,7 @@ On all the raspberry pi nodes, make sure these prerequisites are completed.
    You can install Scala using 
    ```bash 
 	sudo apt-get install scala 
-```
+   ```
 
 3. Add all the hosts in to the /etc/hosts file.  
    An example /etc/hosts file is shown below. 
@@ -38,7 +38,7 @@ On all the raspberry pi nodes, make sure these prerequisites are completed.
 	192.168.10.2		pi-master
 	192.168.10.3		pi-slave0
 	192.168.10.4	 	pi-slave1
-```
+   ```
 
 ## Download 
 
