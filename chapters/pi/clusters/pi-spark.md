@@ -8,38 +8,6 @@
 - [ ] A per node setup is used instead of a scripted setup
 - [ ] Some text in the later part is unclear
 
-## Links
-
-See another effort documented at:
-
-* Edge Computing and Big Data Processing using Raspberry Pi
-Naveen Kaul
-<http://cyberaide.org/papers/vonLaszewski-cloud-vol-9.pdf#page=104&zoom=100,0,96>
-* Benchmarking Hadoop and Spark on Mutiple Platforms
-<http://cyberaide.org/papers/vonLaszewski-cloud-vol-9.pdf#page=27&zoom=100,0,96>
-
-
-## About 
-
-We provide step-by-step instructions on installing a Spark cluster on
-a pre-installed hadoop on a cluster of raspberry pi. To start we
-assume you have Hadoop installed. This is achieved by following the
-instructions provided 
-in
-
-:warning: this link needs to be changed, we also need to identify if the hadoop 
-install for pi is different from the regular hadoop install
-
-* <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
-
-to
-install Hadoop on Pi cluster. Verify that the cluster is properly
-installed. After that proceed by going to the home directory
-
-```bash
-$ cd ~
-```
-
 
 ## Download 
 
