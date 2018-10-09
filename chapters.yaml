@@ -195,6 +195,20 @@
             - chapters/doc/ppt.md
     - chapters/SECTION/SECTION-REFERENCES.md
 
+- IOT:
+    - chapters/SECTION/SECTION-IOT.md:
+        - chapters/iot/introduction.md
+        - chapters/iot/tools.md        
+        - chapters/iot/hardware.md
+        - chapters/iot/sensors.md        
+        - chapters/iot/grovepi.md        
+        - chapters/iot/dexter.md
+        - chapters/iot/easyplug.md
+        - chapters/iot/esp8266.md
+        - chapters/iot/projects.md
+        - chapters/iot/turtle.md
+        - chapters/iot/pi.md
+
 # #####################################################################
 # COMMUNICATION
 # #####################################################################
@@ -211,6 +225,7 @@
     - $ref:PREFACE
     - chapters/pi/preface.md
     - chapters/pi/board.md
+    - $ref:IOT    
     - chapters/pi/case.md:
         - chapters/case/case.md
         - chapters/pi/links.md

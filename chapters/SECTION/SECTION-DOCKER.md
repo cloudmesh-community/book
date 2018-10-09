@@ -1,3 +1,3 @@
-# [Docker]{.part} :o:
+# [Docker]{.part}
 
 
