@@ -19,11 +19,11 @@ On all the raspberry pi nodes, make sure these prerequisites are completed.
 
 2. Install Oracle JDK8 and set the JAVA_HOME.     
    ```bash 
-   sudo add-apt-repository ppa:webupd8team/java
-   sudo apt-get update
-   sudo apt-get install oracle-java8-installer
-	echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~\.bashrc
-	source ~/.bashrc 
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~\.bashrc
+source ~/.bashrc 
 ``` 
 
 3. Install Scala.  
