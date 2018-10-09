@@ -22,6 +22,21 @@ GraphQLs. We will explore the *graphql-python* implementation in this
 chapter. The official documentation of GraphQL is available at
 [@graphql-learn]
 
+## Prerequisits
+
+Before we start we need to install a number of tools that we use
+throughout the chapter
+
+### Install of GraphIQL
+
+move that here and explain brievly what it does but nothing else than
+instalation and
+
+### Install Django
+
+move instalation of django here and describe brievly why you use it
+and in which example (point to section with ref link)
+
 ## GraphQL type system and schema
 
 To get started with GraphQL we will first explore GraphQL type system
@@ -400,6 +415,9 @@ Environment) for GraphQL. There are many implementations of *GraphiQL*
 available. For this chapter we will use
 [GraphiQL](https://github.com/skevy/graphiql-app).  Its usage is
 discussed later in this chapter.
+
+:o: I think you want to discuss this earlier .... and move that
+section elsewhere
 
 A variable is defined as a json object and this is how it looks like
 
@@ -876,10 +894,13 @@ In the right pane you will see following output
 
 ### Mutation example :o:
 
-Similar to a query you can add mutation to create your own data. Add a
+Similar to a query you can add a mutation to create your own data. To
+achieve this, add a
 `CreateRepository` class for new repository object which will inherit
 from graphene's Mutation class. This class will accept new repository
 properties as arguments. Please see the following code snippet
+
+:o: it is not explained where you do this
 
 ```python
 class CreateRepository(graphene.Mutation):
@@ -906,7 +927,9 @@ class CreateRepository(graphene.Mutation):
             description=repository.description)
 ```
 
-Similar to Query, add `Mutation` class in repository's schema.
+Similar to A Query, add a `Mutation` class in the repository's schema.
+
+:o: what is the filename
 
 ```python
 class Mutation(graphene.ObjectType):
@@ -934,6 +957,8 @@ mutation {
 And this will not just create a new repository but also get the newly 
 added repository
 
+:o: this sntence is unclear
+
 ```json
 {
   "data": {
@@ -949,38 +974,41 @@ added repository
 
 ### GraphQL Authentication :o:
 
-There a few ways to add authentication to your GraphQL server
+There a number of ways to add authentication to your GraphQL server
 
-* Add a REST API endpoint which will take care of authenticating the
-  user and only the logged in users can make GraphQL queries. This
-  method can also be used to restrict only a subset of GraphQL
-  queries. This is ideal for existing applications, which have REST
-  endpoints, and which are trying to migrate over to GraphQL.
-* Add basic authentication to GraphQL server which will just accept
-  credentials in raw format and once authenticated, logged in user can
-  start GraphQL querying
-* Add JSON Web Token authentication to GraphQL server, since most of
-  the applications these days are stateless.
+* We can add a REST API endpoint which will take care of
+  authenticating the user and only the logged in users can make
+  GraphQL queries. This method can also be used to restrict only a
+  subset of GraphQL queries. This is ideal for existing applications,
+  which have REST endpoints, and which are trying to migrate over to
+  GraphQL.
+* We can add basic authentication to the GraphQL server which will
+  just accept credentials in raw format and once authenticated, logged
+  in user can start GraphQL querying
+* We can add JSON Web Token authentication to GraphQL server, since
+  most of the applications these days are stateless.
 
-### JSON Web Authentication :o:
+### JSON Web Token Authentication :o:
 
-This is a more secure and sophisticated way of authentication. Client
-has to provide username and password to mutate a token which has
-limited expiry time. Once token is generated, it needs to be provided
-with each subsequent GraphQL api calls which indicates GraphQL server
-of authenticated requests.
+Nex we focus on the JSON web token authentication. It is tyically
+prefered as it provides a more secure and sophisticated way of
+authentication. As part of the authentication process, a client has to
+provide a username and a password. A limited life time token is
+generated that is used during the authentication process.  Once the token
+is generated, it needs to be provided with each subsequent GraphQL API
+call to assure the authentication is valid.
 
-To enable JWT authentication in your GraphQL server, you need to
-install django-graphql-jwt. You can add this settings to `settings.py`
-file.
+The advantage of using frameworks such as the python implementation of
+GraphQL is that it can leverage existing authetication modules, so we
+do not have to develop them ourselfs. One such module is *JSON Web
+Token Authentication* or *JWT Authentication.  To use this module,
+please add it to the `settings.py` file as follows
 
 ```python
 MIDDLEWARE = [
     'graphql_jwt.middleware.JSONWebTokenMiddleware',
 [
-```
 
-```python
 AUTHENTICATION_BACKENDS = [
     'graphql_jwt.backends.JSONWebTokenBackend',
     'django.contrib.auth.backends.ModelBackend',
@@ -989,12 +1017,19 @@ AUTHENTICATION_BACKENDS = [
 
 Add the Token mutation
 
+:o: this is unclear where you do it
+
 ```python
 class Mutation(users.schema.Mutation, repositories.schema.Mutation, graphene.ObjectType):
     token_auth = graphql_jwt.ObtainJSONWebToken.Field()
 ```
 
-Run the server and fire the token mutation providing username and password.
+Run the server and fire the token mutation providing username and
+password.
+
+:o: how do i run it, this is unclear
+
+:o: the next line is unclear, where do I do this
 
 ```graphql
 mutation {
@@ -1003,6 +1038,7 @@ mutation {
   }
 }
 ```
+
 This will create a token for us to use in our subsequent calls.
 
 ```json
@@ -1015,12 +1051,14 @@ This will create a token for us to use in our subsequent calls.
 }
 ```
 
-JWT library comes with inbuilt directive called *login_required*
-You can add this any of your Query resolver to prevent unauthenticated access.
+The JWT library comes with a built-in directive called *login_required*.
+You can add this to any of your Query resolvers to prevent
+unauthenticated access.
+
+:o: this is unclear
 
 ```python
 from graphql_jwt.decorators import login_required
-
 ...
 
 class Query(graphene.ObjectType):
@@ -1031,7 +1069,7 @@ class Query(graphene.ObjectType):
         return Repository.objects.all()
 ```
 
-Now if you try to query repositories from GraphQL, you will see this error
+Now if you try to query our repositories from GraphQL, you will see this error
 
 ```json
 {
@@ -1055,11 +1093,17 @@ Now if you try to query repositories from GraphQL, you will see this error
 }
 ```
 
-Henceforth you need to pass token with every repositories query. This token
-needs to be passed as header which the *GraphiQL* ui client does not
-support. Hence you can use either of these 2 ways
+Henceforth you need to pass token with every repository query. This token
+needs to be passed as header. Unfortunately, the *GraphiQL* UI client does not
+support this. Hence you can use either a curl query from command line
+or more advanced GraphQL clients that support authentication.
 
-* curl command 
+#### Using Authentication with Curl
+
+To use authentication with curl, you can pass the token to the
+command. For somplicity we created a TOKEN environment vaiable in with
+we stor the token so it is easier for us to refer to it in our
+examples.
 
 ```bash
 export TOKEN=eyJ0eXAiOiJKV1.... (cut to fit in line)
@@ -1070,7 +1114,7 @@ curl -X POST \
 http://localhost:8000/graphql/
 ```
 
-Result obtained from running this command: 
+The result obtained from running this command is: 
 
 ```json
 {"data":{"repositories":[
@@ -1084,12 +1128,37 @@ Result obtained from running this command:
 }
 ```
 
+To print the output in a nice format we can use python to pretty print
+it ass follows
+
+
+```bash
+curl -X POST \
+-H "Content-Type: application/json;" \
+-H "Authorization: JWT $TOKEN" \
+-d '{"query": "{ repositories { url } }"}' \
+http://localhost:8000/graphql/ | \
+python -m json.tool
+```
+
+
 Clearly as you can see the output is not well formatted and hence not
 the preferred way.
 
-* Install GraphQL client like [Insomnia](https://insomnia.rest/graphql/), [Altair](https://altair.sirmuel.design/) or [GraphiQL](https://github.com/skevy/graphiql-app).
-  Advantage of using these clients is that they are much user 
-  friendly and provide a well formatted json output.
+#### Advanced GraphQL Clients
+
+To use authentication, you can also install other GraphQL clients such
+as 
+
+* [Insomnia](https://insomnia.rest/graphql/)
+* [Altair](https://altair.sirmuel.design/), or
+* [GraphiQL](https://github.com/skevy/graphiql-app).
+
+#### heading is missing
+
+:o: unclear why the next is not explained earlier, no one will
+understand what a bearer token is, it may also replicate what you said
+before.
 
 JWT tokens are bearer tokens which need to be passed in HTTP
 authorization header. JWT tokens are very safe against CSRF attacks
@@ -1105,15 +1174,26 @@ has already expired then you can again request a new token by calling
 Find more about JWT tockens at [@jwt-tockens] and GraphQL
 authentication at [@medium-graphql]
 
+:o: this shoudl go in the Resources section if its not just related to
+JWT
+
 Examples for GraphQL are available at:
 
 * <https://github.com/cloudmesh-community/book/tree/master/examples/graphql> and [@www-howtographql]
 
 ### GitHub API v4 :o:
 
+GraphQL has made already an impact in the cloud services community. In
+addition to ??? Github.com is now also providing a GraphQL interface,
+making it an idela example for us.
+
 GitHub has implemented API v4 using GraphQL which allows you to query
-or mutate data of repositories for which you have access. To access GitHub API v4
-first we need to install [GraphiQL](https://github.com/skevy/graphiql-app).
+or mutate data of repositories that you can access via
+`github.com`. To demontsrate its use, we will use 
+[GraphiQL](https://github.com/skevy/graphiql-app).
+
+:o: should that not be discussed earlier hpow to install it so we do
+not hav to explain it here
 
 For MacOS
 
