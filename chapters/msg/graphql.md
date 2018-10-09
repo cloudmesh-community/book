@@ -1,360 +1,1404 @@
-# GraphQL :o: {#s-graphql}
-
-To be contributed by
-
-* Mihir
-* Vineet
-
-The draft of this section is managed at
-
-* <https://github.com/cloudmesh-community/fa18-516-21/blob/master/chapter/graphql.md>
-
-## Example
-
-We provide an example of using GraphQL as a 
-mechanism for creating and developing web APIs.
-
-Graphql has a few software requirements.  Howevre, the installation of all of the tools 
-or software libraries will not be covered here.  It will be the 
-reader's responsibility to install some of the software packages like python. 
-
-### Required Software
-
-The following software is required:
-
-+ python 3.x
-+ pyenv
-+ pyenv virtualenv 
-+ graphene
-+ python libraries for mocking mongdb and mongodb objects
-+ flask
-+ pip
-+ git
-+ text editor such as emacs
-
-
-### Assumptions
-
-+ User knows how to work at the command line.
-+ User has installed python 3+
-+ User has installed and configured pyenv
-+ User has installed and knows how to use a text editor like emacs, or vscode.
-+ Working on a Unix/Linux/OSX based operating system.
-+ User has a .bashrc (using bash shell)
-
-### Steps/Procedures
-
-1. Install python 3.x - Assumed to have been completely by the user.
-2. Install pyenv - Assumed to have been completely by the user.
-3. Create virtualenv. We recommend that you use pyenv
-
-The preferred method for developing python based projects is to use a
-separate environment for each python project.  There are several ways
-to accomplish this.  The first is by creating a docker image and
-container for the project but we do not it covered here.
-The second method is by installing and using pyenv's virtualenv
-plugin, this assumes the user has already installed and configured
-pyenv.
-
-### Using Virtualenv
-
-First, access the command line. Next, install pyenv-virtualenv while
-following the instructions provided at
-
-* <https://github.com/pyenv/pyenv-virtualenv>
-
-Or better, use our handbook and follow the instructions provided
-there. At the command prompt type:
-
-	git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
-	echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
-	exec "$SHELL"
-	pyenv virtualenv graphqltut
-
-We now have a python virtualenv that is specifically for this project.
-
-### Installing Graphql
-
-Before we start we create a a project folder and cd into it
-
-	mkdir ~/cloudmesh/graphql
-
-We need to install some of the libraries it depends on. At the command prompt type 
-
-	pyenv activate graphqltut 
-	
-This makes sure we are using the local python development virtualenv
-and not the global python environment. Now Type
-
-	pip freeze 
-
-which should *not* display a list of libraries since our virtualenv was just created.
-We do this step to make sure you do not overwrite or modify your
-default python environment. Now install flask and graphene:
-
-	pip install flask
-	pip install graphene
-	pip install flask-graphql
-
-We now have the minimum environment to build a Python GraphQL server and client.
-One last step though.  It is a good idea to keep track of Python dependencies as we install them.  To do that, at the command line type: 
-
-	pip freeze > requirements.text
-
-This command saves the list of libraries we have installed plus the depdencies of the libraries we installed.  If for some reason you need to re-create 
-the python virtualenv or someone else does then once the virtualenv is created the python libraries are easily re-installed my issued the command:
-
-	pip install -r requirements.txt
-
-### Build a graphql Application
-
-Create and open a file named app.py.  This will be a very simple application server that runs the demo application.  
-
-Now import the dependencies that we installed using pip.
-
-	# File: app.py
-	from flask import Flask
-	from graphene import ObjectType, String, Schema
-	from flask_graphql import GraphQLView
-
-	class Query(ObjectType):
-		status = String(description='Check graphql service status')
-		def resolve_hello(self, args, context, info):
-			return 'OK'
-
-	view_func = GraphQLView.as_view('graphql', schema=Schema(query=Query))
-
-	app = Flask(__name__)
-	app.add_url_rule('/graphql', view_func=view_func)
-
-	@app.route('/')
-	def index():
-		return 'Hello!'
-
-	if __name__ == '__main__':
-		app.run(debug=True)
-
-	Ref: #1
-
-If you copy and paste the code in app.py then you will have to make
-sure that the file has proper python indenting, otherwise app.py will
-not run.
-
-Let's test to make sure the server application will run.  Access the
-command prompt in the project folder and type ```python app.py```.
-
-The flask application should display information to the console that
-an application server has been started on a local IP address and the
-server is listening on the default port, 5000.
-
-Open a web browser and connect to <http://127.0.0.1:5000>.  The browser
-should render a web page that displays the message "Hello!".
-
-We have already enabled the GraphQL endpoint by have the line in
-app.py that starts with "view_func".  Let's confirm that the GraphQL
-query-builder user interface is working by browsing opening the url
-http://127.0.0.1:5000/graphql in a browser window.
-
-The resulting user interface (UI) lets a user develop and test QraphQL
-queries against the server created in app.py. The GraphQL UI has to
-panes.  The left pane is used to create a query and the right pane
-displays the query output.  A query can be executed by clicking the
-right-arrow (Run) button near the top of the UI.
-
-Let's build and run our first query.
-1. Click in the left pane
-2. Type "{" and press the Enter key
-3. Press the Control/Command key and the space bar at the same time.
-   This activates the UI's autocomplete feature.  The autocomplete
-   feature knows about the query schema and can make it easier for the
-   user to develop a query.
-4. The autocomplete will display the word "status".  Highlight the
-   status word and press the Enter key.  The query should look similar
-   to the follwoing:
-
-	{
-  		status
-	}
-
-5. Click the Run button.  The query will run and display output that
-   looks similar to the following:
-
-	{
-		"data": {
-			"status": "OK"
-		}
-	}
-
-The prior examples show basic setup and use of GraphQL.  We can add
-fake data and mock a MongoDB instance to demonstrate a more robust
-example of using GraphQL.
-
-1. Access the terminal/command line in the project's root folder.
-2. Type `pip install mongoengine mongomock graphene-mongo` and press
-   the Enter key.
-3. Type `pip freeze > requirements.txt` to keep the requirements.txt
-   file update to date.
-4. Using your editor open `app.py`.
-5. Add the following code near the top of the `app.py` file as the
-   last module import.
-
-       from mongoengine import *
-       from graphene_mongo import MongoengineObjectType, MongoengineConnectionField
-       import graphene
-       from graphene.relay import Node
-
-6. To create mock mongodb server, add the next line after the
-   mongoengine import.
-	
-       connection = connect('mongoenginetest', host='mongomock://localhost')
-
-7. We need a document object so add the following after the connect line.
-
-       class TestObject(Document):
-    	   param = StringField()
-
-7. We need some fake data, so add the next lines after the one we just created.
-
-       for i in range(1, 5):
-	       to = TestObject(param=str(i))
-		   to.save()
-
-8. We now need to let GraphQL know that we have this document or
-   model.  Paste the following code after the for-loop for creating
-   data, but before the Query class definition.
-
-   ```
-   class TestObjectMongoengineOjbectType(MongoengineOjbectType):
-      class Meta:
-			model = TestObject
-			interfaces = (Node,)
-   ```
-9. In order to tell GraphQL to enable a query to the new object, In the Query class in app.py add:
-
-    ```
-    all_test_objects = MongoengineConnectionField(TestObjectMongoengineOjbectType)
-    ```
-    
-10. The server app, app.py might need to be restarted, if so, restart
-    the app by running "python app.py" at the terminal.
-
-11. We want to create a new query in the GraphQL query UI to see the
-    new model and data.  In the left-pane of the UI enter the
-    following query definition and after entered click the run-button.
-
-	{
-		allTestObjects {
-			edges {
-			node {
-				id
-				param
-			}
-			}
-		}
-	}
-
-12. The right-pane should produce output similar to the following.
-    ```
-	{
-	"data": {
-		"allTestObjects": {
-		"edges": [
-			{
-			"node": {
-				"id": "VGVzdE9iamVjdE1vbmdvZW5naW5lT2piZWN0VHlwZTo1YWI2YTIzNGJhNTY5YjMyY2EzZTUwYjE=",
-				"param": "1"
-			}
-			},
-			{
-			"node": {
-				"id": "VGVzdE9iamVjdE1vbmdvZW5naW5lT2piZWN0VHlwZTo1YWI2YTIzNGJhNTY5YjMyY2EzZTUwYjI=",
-				"param": "2"
-			}
-			},
-			{
-			"node": {
-				"id": "VGVzdE9iamVjdE1vbmdvZW5naW5lT2piZWN0VHlwZTo1YWI2YTIzNGJhNTY5YjMyY2EzZTUwYjM=",
-				"param": "3"
-			}
-			},
-			{
-			"node": {
-				"id": "VGVzdE9iamVjdE1vbmdvZW5naW5lT2piZWN0VHlwZTo1YWI2YTIzNGJhNTY5YjMyY2EzZTUwYjQ=",
-				"param": "4"
-			}
-			},
-			{
-			"node": {
-				"id": "VGVzdE9iamVjdE1vbmdvZW5naW5lT2piZWN0VHlwZTo1YWI2YTIzNGJhNTY5YjMyY2EzZTUwYjU=",
-				"param": "5"
-			}
-			}
-		]
-		}
-	}
-	}
-    ```
-    
-We do not address creating GraphQL queries that create, update, or
-delete objects.  However, we now have a running GraphQL server or web
-API that is useful as an example for reading data.
-
-Here is the final `app.py` file.
-
-	# File: app.py
-	from flask import Flask
-	from graphene import ObjectType, String, Schema
-	from flask_graphql import GraphQLView
-	from mongoengine import *
-	from graphene_mongo import MongoengineObjectType, MongoengineConnectionField
-	import graphene
-	from graphene.relay import Node
-
-	# See reference: 3
-	connection = connect('mongoenginetest', host='mongomock://localhost')
-
-	# See reference: 3
-	class TestObject(Document):
-		param = StringField()
-
-	# Fake some data, See ref: 3
-	for i in range(1, 6):
-		to = TestObject(param=str(i))
-		to.save()
-
-	# MongoengineOjbectType - needed by Graphene
-	class TestObjectMongoengineOjbectType(MongoengineObjectType):
-		class Meta:
-			model = TestObject
-			interfaces = (Node,)
-
-	class Query(ObjectType):
-		""" See: reference 1
-		"""
-	
-		status = String(description='Check graphql service status')
-		all_test_objects = MongoengineConnectionField(TestObjectMongoengineOjbectType)
-
-		def resolve_status(self, args):
-			return 'OK'
-
-    # See reference 1
-	view_func = GraphQLView.as_view('graphql', schema=Schema(query=Query), graphiql=True)
-
-    # See reference 1
-	app = Flask(__name__)
-	app.add_url_rule('/graphql', view_func=view_func)
-
-	@app.route('/')
-	def index():
-		return 'Hello!'
-
-	if __name__ == '__main__':
-		app.run(debug=True)
-
-## References
-
-1. Graphql Site - https://bcb.github.io/graphql/flask
-2. Mongoengine - https://github.com/MongoEngine/mongoengine
-3. Mongomock & Mongoengine Example Usage - https://github.com/MongoEngine/mongoengine/issues/1045
-4. Graphene-Mongo - https://github.com/graphql-python/graphene-mongo/tree/master/examples/flask_mongoengine
+# GraphQL :o:
+
+## Introduction
+
+GraphQL is a data query language developed by Facebook.
+
+GraphQL allows clients to request data they need without thinking
+about the API implementation. It makes application devlopment fast and
+stable because the application has control over the data it needs and
+its format. The benefit of GraphQL is also to reduce network I/O since
+only the necessary data is transfered from server to client.
+
+Unlike REST APIs, which require loading data via multiple URLs,
+GraphQL can get all data, that application needs, in a single
+request. GraphQL APIs are defined in terms of types and fields. Types
+help GraphQL to ensure that client only asks for what is possible and
+in case of faults, provides clear and helpful errors.
+
+Initially GraphQL was implemented in JavaScript. Today there are
+several other implementations in different language available of
+GraphQLs. We will explore the *graphql-python* implementation in this
+chapter. The official documentation of GraphQL is available at
+[@graphql-learn]
+
+## Prerequisits
+
+Before we start we need to install a number of tools that we use
+throughout the chapter
+
+### Install of GraphIQL
+
+move that here and explain brievly what it does but nothing else than
+instalation and
+
+### Install Django
+
+move instalation of django here and describe brievly why you use it
+and in which example (point to section with ref link)
+
+## GraphQL type system and schema
+
+To get started with GraphQL we will first explore GraphQL type system
+and schema creation.
+
+### Type System
+
+In GraphQL a query is what client requests from the GraphQL server. The
+result will be obtained in a structure defined by type and schema. It
+means client will know ahead of time what it is going to get as
+result. For this to work, the data is often assumed to be structured
+data.
+
+To demonstrate the type system we use a simple example while looking
+at authors and co-authors of papers. We represent in this example a
+database that contains a number of authors. each author has a
+publication count and a number of coauthors that are identified by
+name. We assume for this simple example that all author names are
+unique.
+
+Here is how a simple GraphQL query would look like
+
+```graphql
+{
+    author {
+        name 
+        publication_count
+        coauthors {
+            name
+        }
+    }
+}
+```
+
+The response is
+
+```json
+{
+    "author": {
+        "name": "John Doe",
+        "publication_count": 25,
+        "coauthors": [
+            {
+                "name": "Mary Jane"
+            },
+            {
+                "name": "David Miller"
+            }
+        ]
+    }
+}
+```
+
+For this to work, we need to define the types that are going to be
+honored by the GraphQL service so that when a query is recieved by the
+server, it is first validated to a schema that defines the types
+contained within the GraphQL service.
+
+Hence, types must be defined as part of each GraphQL service. They are
+defined with the GraphQL schema language which is programming language
+agnostic. An example of a GraphQL type is:
+
+```graphql
+type Author {
+    name: String!
+    publication_count: Int
+    coauthors: [Author!]!
+}
+```
+
+Note that the `!` indicates a field value, that cannot be null and
+must have a defined value. `[Author!]!` means that an array is
+returned, but that array cannot be null and also none of the items
+in the array can be null.
+
+
+### Scalar Types
+
+GraphQL supports the following scalar types:
+
+* `String`: UTF8 characters
+* `Int`: 32 bit signed integer
+* `Float`: Double precision floating point value
+* `Boolean`: true or false
+* `ID`: Represents a unique identifier which can be used as a key to
+  fetch the object
+
+### Enumeration Types
+
+`enum` is also a scalar type which define a certain set of restricted
+values. When a GraphQL schema defines a field of `enum` type, we
+expect that the field's value be of the type `enum` values only. An
+example of an `enum` type is
+
+```graphql
+enum ContainerTYpe {
+    Docker
+    Kubernetes
+    DockerSwarm
+}
+```
+
+### Interfaces
+
+Similar to any programming language, the GraphQL type system also
+supports `interface`. When a type implements an `interface`, it needs
+to specify all the fields that are defined through the `interface`.
+
+We will illustrate this in the following example, where we define
+simple `ComputeService` interface type. This `interface` declares
+`id`, `name` and `memory` fields. This means that a `Container` and a
+`VirtualMachine` both of which implement `ComputeService`, must have
+the fields defined in the `interface`. They may or may not have
+additional fields like we demonstrate in our example with the field
+`systemType` of type `ContainerType` in case of `Container` and field
+`systemType` of type `VMBackend` in case of the `VirtualMachine`.
+
+```graphql
+interface ComputeService {
+    id: ID!
+    name: String!
+    memory: Int!
+}
+
+type Container implements ComputeService {
+    id: ID!
+    name: String!
+    memory: Int!
+    systemType: ContainerType!
+}
+
+type VirtualMachine implements ComputeService {
+    id: ID!
+    name: String!
+    memory: Int!
+    systemType: VMBackend!
+}
+```
+
+### Union Types
+
+As the name suggests, `union` type represent the union of two or more
+types. Here is how we can define a `union` type. As you can see we use
+the `|` charater to indicate the union operator.
+
+```graphql
+union ComputeType = Container | VirtualMachine
+```
+
+Now when we write a GraphQL query to fetch the `ComputeType`
+information, we can ask some of the common fields and some of the
+specific fields conditionally. In the next example we request
+`AllComputeTypes` with common fields like `id`, `name` and fields
+specific to either `VirtualMachine` or `Container`.
+
+```graphql
+{
+    AllComputeTypes {
+        id
+        name
+        ... on VirtualMachine {
+            user
+        }
+        ... on Container {
+            type
+        }
+    }
+}
+```
+
+## GraphQL Query
+
+An application asks for data from server in form of a GraphQL *query*. 
+A GraphQL query can have different fields and arguments and in this 
+section we describe how to use them.
+
+### Fields
+
+A very simple definition of a query is to ask for specific fields that
+belong to an object stored in GraphQL.
+
+In the next examples we use data related to repositories in github.
+
+When asking the query
+
+```graphql
+{
+    repository {
+        name
+    }
+}
+```
+
+we obtain the following response
+
+```json
+{
+    "data": {
+        "repository": {
+            "name": "cm"
+        }
+    }
+}
+```
+
+As we see the response data, format looks exactly like the query. This
+way a client knows exactly what data it has to consume. In the
+previous example, the `name` field returns the data of type
+`String`. Clients can also ask for an object representing any match
+within the GraphQL database.
+
+For example following query
+
+```graphql
+{
+    community {
+        name
+        repositories {
+            name
+        }
+    }
+}
+```
+
+returns the response
+
+```json
+{
+    "data": {
+        "community": {
+            "name": "cloudmesh-community",
+            "repositories": [{
+                "name": "S.T.A.R boat"
+            }, {
+                "name": "book"
+            }]
+        }
+    }
+}
+```
+
+### Arguments
+
+As you may already know in REST services you can pass parameters as
+part of a request via query parameters through *GET* or a request body
+through *POST*. However in GraphQL, for every field, you provide an
+argument restricting the data returned to only the information that
+you need. This reduces the traffic for returning the information that
+is needed without doing the postprocessing on the client. These
+restricting arguments can be of scalar type, enumeration type and
+others.
+
+Lets look at an example of a query where we only ask for first 3
+repositories in cloudmesh community
+
+```graphql
+{
+    repositories(first: 3) {
+        name
+        url
+    }
+}
+```
+
+The response will be similar to
+
+```json
+{
+    "data": {
+        "repositories": [{
+            "name": "boat",
+            "url": "https://github.com/cloudmesh-community/boat"
+        }, {
+            "name": "book",
+            "url": "https://github.com/cloudmesh-community/book"
+        }, {
+            "name": "case",
+            "url": "https://github.com/cloudmesh-community/case"
+        }]
+    }
+}
+```
+
+### Fragments
+
+Lets say for example we have a complex query, which has repetitive 
+fields in it.
+
+```graphql
+{
+    boatRepositoryExample: repository(name: boat) {
+        name
+        full_name
+        url
+        description
+    }
+    cloudRepositoryExample: repository(name: cm) {
+        name
+        full_name
+        url
+        description
+    }
+}
+```
+
+As the query gets bigger and complex, we can use `fragment` to split
+it into smaller chunks.  This `fragment` can then be re-used, which
+can significantly reduce the query size and also make it more
+readable.
+
+A `fragment` can be defined as
+
+```graphql
+fragment repositoryInfo on Repository {
+    name
+    full_name
+    url
+    description
+}
+```
+
+and can be used in a query like this
+
+```graphql
+{
+    boatRepositoryExample: repository(name: boat) {
+        ...repositoryInfo
+    }
+    cloudRepositoryExample: repository(name: cm) {
+        ...repositoryInfo
+    }
+}
+```
+
+The response for this query will look like
+
+```json
+{
+    "data": {
+        "boatRepositoryExample": {
+            "name": "boat",
+            "fullName": "cloudmesh-community/boat",
+            "url": "https://github.com/cloudmesh-community/boat",
+            "description": "S.T.A.R. boat"
+        },
+        "cloudRepositoryExample": {
+            "name": "cm",
+            "fullName": "cloudmesh-community/cm",
+            "url": "https://github.com/cloudmesh-community/cm",
+            "description": "Cloudmesh v4"
+        }
+    }
+}
+```
+
+### Variables
+
+Variables are used to pass dynamic values to queries. Instead of
+passing hard-coded values to a query, variables can be defined for
+these values.  Now these variables can be passed to queries.
+
+Variables can be passed to GraphQL queries directly through
+commandline.
+
+```bash
+curl -X POST \
+-H "Content-Type: application/json;" \
+-d '{"query": "{ repository (name: $name) { name url } }", "variables": \
+{ "name": "book" }}' \
+http://localhost:8000/graphql/
+```
+
+Variables can be defined in the *Query Variables* panel at left bottom
+of the *GraphiQL* client, which is an IDE(Interactive Development
+Environment) for GraphQL. There are many implementations of *GraphiQL*
+available. For this chapter we will use
+[GraphiQL](https://github.com/skevy/graphiql-app).  Its usage is
+discussed later in this chapter.
+
+:o: I think you want to discuss this earlier .... and move that
+section elsewhere
+
+A variable is defined as a json object and this is how it looks like
+
+```json
+{
+    "name": "book"
+}
+```
+
+and it can be used in the query like this
+
+```graphql
+{
+    repository(name: $name) {
+        name
+        url
+    }
+}
+```
+
+which will fetch response 
+
+```json
+{
+    "data": {
+        "repository": {
+            "name": "book",
+            "url": "https://github.com/cloudmesh-community/book"
+        }
+    }
+}
+```
+
+### Directives
+
+Directives are used to change the structure of queries at runtime
+using variables. Directives provide a way to describe additional
+options to GraphQL executors. Currently core GraphQL specification
+supports two directives
+
+* `@skip (if: Boolean)` - It skips the field if argument is true
+* `@Include (if: Boolean)` - It includes the field if argument is true
+
+To demonstrate its usage, we define the variable `isAdmin` and assign
+a value of `true` to it.
+
+```json
+{
+    "isAdmin": true
+}
+```
+
+This variable is passed as an argument `showOwnerInfo` to the query. 
+This argument is in turn passed to `@include` directive to determine 
+whether to include the `ownerInfo` sub-query.
+
+```graphql
+{
+    repositories(showOwnerInfo: $isAdmin) {
+        name
+        url
+        ownerInfo @Include(if: $showOwnerInfo) {
+            name
+        }
+    }
+}
+```
+
+Since we have defined `showOwnerInfo` as `true`, the response 
+includes `ownerInfo` data.
+
+```json
+{
+    "data": {
+        "repositories": [{
+            "name": "book",
+            "url": "https://github.com/cloudmesh-community/book",
+            "ownerInfo": {
+                "name": "cloudmesh-community"
+            }
+        }]
+    }
+}
+```
+
+### Mutations
+
+Mutations are used to modify server side data. To demonstrate this,
+
+let us look at the query and data to be passed along with it
+
+```graphql
+mutation CreateRepositoryForCommunity($community: Community!, $repository: Repository!) {
+    createRepository(community: $community, repository: $repository) {
+        name
+        url
+    }
+}
+```
+```json
+{
+    "community": "cloudmesh-community",
+    "repository": {
+        "name": "cm-burn",
+        "url": "https://github.com/cloudmesh-community/cm-burn"
+    }
+}
+```
+
+The response will be as follow, indicating that a repository has been added.
+
+```json
+{
+    "data": {
+        "createRepository": {
+            "name": "cm-burn",
+            "url": "https://github.com/cloudmesh-community/cm-burn"
+        }
+    }
+}
+```
+
+### Query Validation
+
+GraphQL is a language with strong type system. So requesting and providing
+wrong data will generate an error.
+
+For example the query
+
+```graphql
+{
+    repositories {
+        name
+        url
+        type
+    }
+}
+```
+
+which will give response
+
+```json
+{
+    "errors": [{
+        "message": "Cannot query field \"type\" on type \"Repository\".",
+        "locations": [{
+            "line": 5,
+            "column": 3
+        }]
+    }]
+}
+```
+
+In application we need to validate user input. If it is invalid we can
+use `GraphQLError` class or Python exceptions to raise validation
+errors.
+
+## GraphQL in Python :o:
+
+In this example we will implement a GraphQL server in Python. For this
+we will use [Graphene](https://graphene-python.org/) which is a
+library for implementing GraphQL APIs in Python. We will cover a basic
+server implementation with schema and queries to fetch and mutate
+data.
+
+To develop a GraphQL server in Python we will create virtual
+environment for project to keep all the dependencies isolated from
+other projects and system. To do so please follow the deplyment of a
+virtualenv as discussied in the Python section or if you use Python 3
+you could also use `venv`.
+
+We have two examples that are located in the book repository which you
+can clone with
+
+```bash
+$ git clone https://github.com/cloudmesh-community/book
+```
+
+The examples itself are located in the directories
+
+* [book/examples/graphql/cloudmeshrepo](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/cloudmeshrepo) - A graphql server example with local database
+* [book/examples/graphql/github](https://github.com/cloudmesh-community/book/tree/master/examples/graphql/github) - A graphql server example using GitHub API v3
+
+To execute the examples you need to go in the specific
+directory. Thus, for  `cloudmeshrepo` say
+
+```bash
+$ cd book/examples/graphql/cloudmeshrepo
+```
+
+and for the github example execute
+
+```bash
+cd book/examples/graphql/github
+```
+
+Then you can execute following steps
+
+```bash
+$ pip install graphene==2.0.1 graphene-django==2.0.0 
+$ pip install django==2.0.2 django-filter==1.1.0
+$ pip install django-graphql-jwt==0.1.5
+$ python manage.py migrate
+$ python manage.py runserver
+```
+
+The last command will start a server on localhost and you can access
+it at
+
+* <http://localhost:8000>
+
+It will show you a graphical interface based on *GraphiQL*, allowing
+you to execute your queries in it.
+
+## Developing your own GraphQL Server
+
+If you want to create GraphQL server while using django as the server
+backend yourself, you can start with following steps
+
+```bash
+$ mkdir -p example/graphql
+$ cd example/graphql
+$ pip install graphene==2.0.1 graphene-django==2.0.0 
+$ pip install django==2.0.2 django-filter==1.1.0
+$ pip install django-graphql-jwt==0.1.5
+$ django-admin startproject cloudmeshrepository
+$ cd cloudmeshrepository
+$ python manage.py migrate
+$ python manage.py runserver
+```
+
+The last command will start a server on th localhost and you can
+access it at the URL
+
+* <http://localhost:8000>
+
+It will show you the welcome page for django. Now open the file
+
+:o: this seems wrong I thought we want to develop this ourselfs. The
+description does not match the example.
+
+`cloudmeshrepo/cloudmeshrepo/settings.py`
+
+
+file under folder and append following to
+INSTALLED_APPS
+
+```python
+INSTALLED_APPS = (
+    # After the default packages
+    'graphene_django',
+)
+```
+
+And at the end of `settings.py` add following line
+
+```python
+GRAPHENE = {
+    'SCHEMA': 'cloudmeshrepo.schema.schema',
+}
+```
+
+### Django for GraphQL
+
+:o: i am confused, now we do this again?
+
+For the purpose of this example, we will use Django as Python web
+framework.  Django is a popular Python web framework which already
+comes with a lot of boilerplate code. It is mature and has a very
+large community.  It has inbuilt support for Object Relational Mapping
+which is based on Database Code-First approach. Please refer
+[@www-djangoproject] for more Django information.
+
+### GraphQL server implementation :o:
+
+:o: it os not explained wht you actually do .... a general discussion
+about what the purpose of the example is is missing. Speeling and
+grammar does not use a and the.
+
+Django seperates a project into apps. Here we will have one app for
+Users and one for Repos. To simplify our demo we decided not to use a
+backend such as MongoDB but instead use SQLite.
+
+Go to root dir of project and execute following command
+
+:o: not explained what thsi does
+
+```bash
+python manage.py startapp repository
+```
+
+Open `Repositories/models.py` and add following line
+
+```python
+class Repository(models.Model):
+    url = models.URLField()
+    name = models.TextField(blank=False)
+    full_name = models.TextField(blank=False)
+    description = models.TextField(blank=True)
+```
+
+Now open the file `cloudmeshRepository/settings.py` and append
+following line into INSTALLED_APPS
+
+```python
+INSTALLED_APPS = (
+    # After the graphene_django app
+    'Repositories',
+)
+```
+
+Go to root folder and execute following commands. It will create table
+for new modeld
+
+```bash
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
+Naturally, for us to demonstrate the server, we need to ingest some
+data into the server. We can easily do this with the django shell
+while calling
+
+```bash
+$ python manage.py shell
+```
+
+Inside the shell, execute following command to create some example
+data. We have taken this data from github's API and used the
+repositories in the cloudmesh community at
+
+* <https://api.github.com/users/cloudmesh-community/repos>.
+
+:o: it woudl be better to have that data in the repository, do a wget
+on the data and uloads it by calling a program instead of using the
+shell
+
+```python
+from Repositories.models import Repository
+Repository.objects.create(
+    name="boat",
+    full_name="cloudmesh-community/boat",
+    url="https://github.com/cloudmesh-community/boat",
+    description="S.T.A.R. boat")
+Repository.objects.create(
+    name="book",full_name="cloudmesh-community/book",
+    url="https://github.com/cloudmesh-community/book",
+    description="Gregor von Laszewski")
+Repository.objects.create(name="cm",
+    full_name="cloudmesh-community/cm",
+    url="https://github.com/cloudmesh-community/cm",
+    description="Cloudmesh v4")
+Repository.objects.create(name="cm-burn",
+    full_name="cloudmesh-community/cm-burn",
+    url="https://github.com/cloudmesh-community/cm-burn",
+    description="Burns many SD cards so we can build a Raspberry PI cluster")
+exit()
+```
+
+Now create teh file `Repositories/schema.py` with following code. This will
+creat a custom type `Repository` and query with resolver for
+Repositories.
+
+:o: what is a resolver, it is not explained
+
+```python
+import graphene
+from graphene_django import DjangoObjectType
+
+from .models import Repository
+
+class RepositoryType(DjangoObjectType):
+    class Meta:
+        model = Repository
+
+class Query(graphene.ObjectType):
+    Repositories = graphene.List(RepositoryType)
+
+    def resolve_Repositories(self, info, **kwargs):
+        return Repository.objects.all()
+```
+
+Next create the file `cloudmeshRepository/schema.py` with following
+code. It just inherits the query defind in Repositories app. This way we
+are able to isolate schema to their apps.
+
+```python
+import graphene
+  
+import Repositories.schema
+
+
+class Query(Repositories.schema.Query, graphene.ObjectType):
+    pass
+
+
+schema = graphene.Schema(query=Query)
+```
+
+### GraphQL Server Querying :o:
+
+Next, we create a Schema  and use it within *GraphiQL* which is a
+playground for GraphQL queries. Open the file `cloudmeshrepository/urls.py` and
+append following code
+
+```python
+from django.views.decorators.csrf import csrf_exempt
+from graphene_django.views import GraphQLView
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('graphql/', csrf_exempt(GraphQLView.as_view(graphiql=True))),
+]
+```
+
+Start your server using the command
+
+```bash
+$ python manage.py runserver
+```
+
+Now open the URL
+
+* <http://localhost:8000/graphql>
+
+in your broweser. You will see *GraphiQL* window. In the left pane you
+can add queries. Let us add the following query
+
+```graphql
+{
+  repositoriess {
+    name
+    fullName
+    url
+    description
+  }
+}
+```
+
+In the right pane you will see following output
+
+```json
+{
+  "data": {
+    "repositories": [
+      {
+        "name": "boat",
+        "fullName": "cloudmesh-community/boat",
+        "url": "https://github.com/cloudmesh-community/boat",
+        "description": "S.T.A.R. boat"
+      },
+      {
+        "name": "book",
+        "fullName": "cloudmesh-community/book",
+        "url": "https://github.com/cloudmesh-community/book",
+        "description": "Gregor von Laszewski"
+      },
+      {
+        "name": "cm",
+        "fullName": "cloudmesh-community/cm",
+        "url": "https://github.com/cloudmesh-community/cm",
+        "description": "Cloudmesh v4"
+      },
+      {
+        "name": "cm-burn",
+        "fullName": "cloudmesh-community/cm-burn",
+        "url": "https://github.com/cloudmesh-community/cm-burn",
+        "description": "Burns many SD cards so we can build a Raspberry PI cluster"
+      }
+    ]
+  }
+}
+```
+
+### Mutation example :o:
+
+Similar to a query you can add a mutation to create your own data. To
+achieve this, add a
+`CreateRepository` class for new repository object which will inherit
+from graphene's Mutation class. This class will accept new repository
+properties as arguments. Please see the following code snippet
+
+:o: it is not explained where you do this
+
+```python
+class CreateRepository(graphene.Mutation):
+    url = graphene.String()
+    name = graphene.String()
+    full_name = graphene.String()
+    description = graphene.String()
+
+    class Arguments:
+        url = graphene.String()
+        name = graphene.String()
+        full_name = graphene.String()
+        description = graphene.String()
+
+    def mutate(self, info, url, name, full_name, description):
+        repository = Repository(url=url, name=name,
+                                full_name=full_name,
+                                description=description)
+        repository.save()
+
+        return CreateRepository(url=repository.url,
+            name=repository.name,
+            full_name=repository.full_name,
+            description=repository.description)
+```
+
+Similar to A Query, add a `Mutation` class in the repository's schema.
+
+:o: what is the filename
+
+```python
+class Mutation(graphene.ObjectType):
+    create_repository = CreateRepository.Field()
+```
+
+Now you can run the following mutation on *GraphiQL* to add a new repository
+
+```graphql
+mutation {
+  createRepository (
+    url: "https://github.com/cloudmesh-community/vineet-test",
+    name: "vineet-test",
+    fullName: "cloudmesh-community/vineet-test",
+    description: "Test repository"
+  ) {
+    url
+    name
+    fullName
+    description
+  }
+}
+```
+
+And this will not just create a new repository but also get the newly 
+added repository
+
+:o: this sntence is unclear
+
+```json
+{
+  "data": {
+    "createRepository": {
+      "url": "https://github.com/cloudmesh-community/vineet-test",
+      "name": "vineet-test",
+      "fullName": "cloudmesh-community/vineet-test",
+      "description": "Test repository"
+    }
+  }
+}
+```
+
+### GraphQL Authentication :o:
+
+There a number of ways to add authentication to your GraphQL server
+
+* We can add a REST API endpoint which will take care of
+  authenticating the user and only the logged in users can make
+  GraphQL queries. This method can also be used to restrict only a
+  subset of GraphQL queries. This is ideal for existing applications,
+  which have REST endpoints, and which are trying to migrate over to
+  GraphQL.
+* We can add basic authentication to the GraphQL server which will
+  just accept credentials in raw format and once authenticated, logged
+  in user can start GraphQL querying
+* We can add JSON Web Token authentication to GraphQL server, since
+  most of the applications these days are stateless.
+
+### JSON Web Token Authentication :o:
+
+Nex we focus on the JSON web token authentication. It is tyically
+prefered as it provides a more secure and sophisticated way of
+authentication. As part of the authentication process, a client has to
+provide a username and a password. A limited life time token is
+generated that is used during the authentication process.  Once the token
+is generated, it needs to be provided with each subsequent GraphQL API
+call to assure the authentication is valid.
+
+The advantage of using frameworks such as the python implementation of
+GraphQL is that it can leverage existing authetication modules, so we
+do not have to develop them ourselfs. One such module is *JSON Web
+Token Authentication* or *JWT Authentication.  To use this module,
+please add it to the `settings.py` file as follows
+
+```python
+MIDDLEWARE = [
+    'graphql_jwt.middleware.JSONWebTokenMiddleware',
+[
+
+AUTHENTICATION_BACKENDS = [
+    'graphql_jwt.backends.JSONWebTokenBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
+```
+
+Add the Token mutation
+
+:o: this is unclear where you do it
+
+```python
+class Mutation(users.schema.Mutation, repositories.schema.Mutation, graphene.ObjectType):
+    token_auth = graphql_jwt.ObtainJSONWebToken.Field()
+```
+
+Run the server and fire the token mutation providing username and
+password.
+
+:o: how do i run it, this is unclear
+
+:o: the next line is unclear, where do I do this
+
+```graphql
+mutation {
+  tokenAuth (username:"user1", password:"Testing123") {
+    token
+  }
+}
+```
+
+This will create a token for us to use in our subsequent calls.
+
+```json
+{
+  "data": {
+    "tokenAuth": {
+      "token": "eyJ0eXAiOiJKV1.... (cut to fit in line)"
+    }
+  }
+}
+```
+
+The JWT library comes with a built-in directive called *login_required*.
+You can add this to any of your Query resolvers to prevent
+unauthenticated access.
+
+:o: this is unclear
+
+```python
+from graphql_jwt.decorators import login_required
+...
+
+class Query(graphene.ObjectType):
+    repositories = graphene.List(RepositoryType)
+
+    @login_required
+    def resolve_repositories(self, info, **kwargs):
+        return Repository.objects.all()
+```
+
+Now if you try to query our repositories from GraphQL, you will see this error
+
+```json
+{
+  "errors": [
+    {
+      "message": "You do not have permission to perform this action",
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ],
+      "path": [
+        "repositories"
+      ]
+    }
+  ],
+  "data": {
+    "repositories": null
+  }
+}
+```
+
+Henceforth you need to pass token with every repository query. This token
+needs to be passed as header. Unfortunately, the *GraphiQL* UI client does not
+support this. Hence you can use either a curl query from command line
+or more advanced GraphQL clients that support authentication.
+
+#### Using Authentication with Curl
+
+To use authentication with curl, you can pass the token to the
+command. For somplicity we created a TOKEN environment vaiable in with
+we stor the token so it is easier for us to refer to it in our
+examples.
+
+```bash
+export TOKEN=eyJ0eXAiOiJKV1.... (cut to fit in line)
+curl -X POST \
+-H "Content-Type: application/json;" \
+-H "Authorization: JWT $TOKEN" \
+-d '{"query": "{ repositories { url } }"}' \
+http://localhost:8000/graphql/
+```
+
+The result obtained from running this command is: 
+
+```json
+{"data":{"repositories":[
+  {"url":"https://github.com/cloudmesh-community/boat"},
+  {"url":"https://github.com/cloudmesh-community/book"},
+  {"url":"https://github.com/cloudmesh-community/cm"},
+  {"url":"https://github.com/cloudmesh-community/cm-burn"},
+  {"url":"https://github.com/cloudmesh-community/vineet-test-1"},
+  {"url":"https://github.com/cloudmesh-community/vineet-test"}
+  ]}
+}
+```
+
+To print the output in a nice format we can use python to pretty print
+it ass follows
+
+
+```bash
+curl -X POST \
+-H "Content-Type: application/json;" \
+-H "Authorization: JWT $TOKEN" \
+-d '{"query": "{ repositories { url } }"}' \
+http://localhost:8000/graphql/ | \
+python -m json.tool
+```
+
+
+Clearly as you can see the output is not well formatted and hence not
+the preferred way.
+
+#### Advanced GraphQL Clients
+
+To use authentication, you can also install other GraphQL clients such
+as 
+
+* [Insomnia](https://insomnia.rest/graphql/)
+* [Altair](https://altair.sirmuel.design/), or
+* [GraphiQL](https://github.com/skevy/graphiql-app).
+
+#### heading is missing
+
+:o: unclear why the next is not explained earlier, no one will
+understand what a bearer token is, it may also replicate what you said
+before.
+
+JWT tokens are bearer tokens which need to be passed in HTTP
+authorization header. JWT tokens are very safe against CSRF attacks
+and are trusted and verified since they are digitally signed.
+
+JWT tokens can have expiry period. Typically, GraphQL server host 
+provides the token expiry information to client through some kind of 
+documentation. If the token is about to be expired, you can call `refreshToken` 
+mutation and the response would be a refreshed token. However if the token 
+has already expired then you can again request a new token by calling 
+`tokenAuth` mutation.
+
+Find more about JWT tockens at [@jwt-tockens] and GraphQL
+authentication at [@medium-graphql]
+
+:o: this shoudl go in the Resources section if its not just related to
+JWT
+
+Examples for GraphQL are available at:
+
+* <https://github.com/cloudmesh-community/book/tree/master/examples/graphql> and [@www-howtographql]
+
+### GitHub API v4 :o:
+
+GraphQL has made already an impact in the cloud services community. In
+addition to ??? Github.com is now also providing a GraphQL interface,
+making it an idela example for us.
+
+GitHub has implemented API v4 using GraphQL which allows you to query
+or mutate data of repositories that you can access via
+`github.com`. To demontsrate its use, we will use 
+[GraphiQL](https://github.com/skevy/graphiql-app).
+
+:o: should that not be discussed earlier hpow to install it so we do
+not hav to explain it here
+
+For MacOS
+
+```bash
+brew cask install graphiql
+```
+
+* Now we need OAuth token to access GitHub API. You can generate OAuth
+  token by following steps mentioned at
+  https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+* Open *GraphiQL* app and click edit headers at upper-right corner. Add
+  new header with key *Authorization* and value *Bearer your_token*
+* Enter *https://api.github.com/graphql* in GraphQL endpoint textbox
+* Keep method as *POST* only
+
+To test the changes add following query
+
+```graphql
+query {
+  viewer {
+    login
+    name
+  }
+}
+```
+
+which gives response
+
+```json
+{
+  "data": {
+    "viewer": {
+      "login": "*Your GitHub UserId*",
+      "name": "*Your Full Name*"
+    }
+  }
+}
+```
+
+To get your repositories add following query
+
+```graphql
+query($number_of_repositories:Int!) {
+  viewer {
+    name
+     repositories(last: $number_of_repositories) {
+       nodes {
+         name
+       }
+     }
+   }
+}
+```
+
+and define variables used in query
+
+```json
+{
+   "number_of_repositories": 3
+}
+```
+
+it gives following response
+
+```json
+{
+  "data": {
+    "viewer": {
+      "name": "*your name*",
+      "repositories": {
+        "nodes": [
+          {
+            "name": "*Repository 1*"
+          },
+          {
+            "name": "*Repository 2*"
+          },
+          {
+            "name": "*Repository 3*"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+To add a comment using mutation we need to get issue id 
+
+For example query
+
+```graphql
+{
+  repository(owner:"MihirNS", name:"Temp_Repository") {
+    issue(number: 1) {
+      id
+    }
+  }
+}
+```
+
+it gives following response
+
+```json
+{
+  "data": {
+    "repository": {
+      "issue": {
+        "id": "MDU6SXNzdWUzNjUxMDIwOTE="
+      }
+    }
+  }
+}
+```
+
+Now we can use this id as subjectId for mutation to add comment to an
+issue,
+
+For query
+
+```graphql
+mutation AddComment {
+  addComment(input:{subjectId:"MDU6SXNzdWUzNjUxMDIwOTE=",body:"This comment is done using GitHub API v4"}) {
+  	commentEdge {
+      node {
+        repository{
+          nameWithOwner
+        }
+        url
+      }
+    }
+  }
+}
+```
+
+it gives following response
+
+```json
+{
+  "data": {
+    "addComment": {
+      "commentEdge": {
+        "node": {
+          "repository": {
+            "nameWithOwner": "MihirNS/Temp_Repository"
+          },
+          "url": "https://github.com/MihirNS/Temp_Repository/issues/1#issuecomment-425620312"
+        }
+      }
+    }
+  }
+}
+```
+
+Official documentation of Github API v4 is available at [@github-v4]
+
+## Advantages and Disadvantages of Using GraphQL :o:
+
+### Advantages :o:
+
+* Unlike REST APIs, only the required data is fetched, nothing more
+  nothing less, which minimizes the data transferred over network
+* Seperation of concern is achieved between client and server. Client
+  requests data entities with fields needed for the UI in one query
+  request while server knows about the data structure and how to
+  resolve the data from its sources which could be database, web
+  service, microservice, external APIs, etc.
+* Versioning is simpler than REST, since we only have to take care of
+  it when we want to remove any of the fields. Even then we can first
+  mark the field to be removed as deprecated. And later on, this field
+  can be removed when not many clients are using it.
+
+```graphql
+type Car {
+    id: ID!
+    make: String
+    description: String @deprecated(reason: "Field is deprecated!")
+}
+``` 
+
+* GraphQL is gaining momentum as its community, support and enthusiasm
+  is growing. Many GraphQL editors, IDEs and packages are getting
+  added day by day.
+  
+### Disadvantages :o:
+
+* GraphQL query can get very complex. Client may not necessarily know
+  how expensive the queries can be for server to go and gather the
+  data. This can be overcome by limiting the query depth, recursion,
+  etc.
+* Caching gets pretty tricky and messy in case of GraphQL. In REST,
+  you can have seperate API url for each resource requested, caching
+  can be done at this resource level. However in GraphQL you can have
+  different queries but they can operate over a single API url. This
+  means that caching needs to be done at the field level rather, and
+  hence it is difficult.
+
+
+## Conclusion :o:
+
+In general there are many reasons to have GraphQL in our software
+ecosystem. Beauty of it lies in the flexibility and extensiveness it
+provides and also fits well with the microservices architecture which
+many are moving towards. Already big players like Github, Pinterest,
+Intuit, Coursera, Shopify, etc. are using it.  With that being said,
+REST APIs still have it is own place and may prove better choice in
+certain use cases. Both REST and GraphQL have some tradeoffs which
+need to be understood before being considered.

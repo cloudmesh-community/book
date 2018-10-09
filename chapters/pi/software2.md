@@ -1,3 +1,9 @@
+# Pi Software Collection :o:
+
+Please improve the sections.
+
+## Web Programming
+
 ### Coder
 
 Targeted at the very beginner to Web programming, we will not use this
@@ -5,7 +11,7 @@ here.
 
 * <https://googlecreativelab.github.io/coder/>
 
-provide a mini tutorial
+provide a section
 
 ## Computing
 
@@ -14,34 +20,25 @@ provide a mini tutorial
 
 Refer to other section in book and describe what is different
 
-provide a mini tutorial
+provide a setcion
 
 ### Scipy
 
 Refer to other section in book and describe what is different
 
-provide a mini tutorial
+provide a setcion
 
 ### Image Processing
 
 Refer to other section in book and describe what is different
 
-provide a mini tutorial
+provide a setcion
+
+## System
 
 ### DHCP Server
 
 * <http://www.noveldevices.co.uk/rp-dhcp-server>
-
-## Gregor's Notes
-
-
-This section contains some unordered notes by Gregor that you may want
-to look at and integrate into proper sections:
-
-### editor
-
-find an editor that is installed and can be used on commandline nano,
-vi, other?
 
 ### hostname
 
@@ -84,7 +81,7 @@ Not tested
 
 * <http://www.noveldevices.co.uk/rp-ssh>
 
-Not sure if this is needed:
+:warning: Not sure if this is needed:
 
 " You may find that you can connect to your Pi with SSH but the session
 hangs after a successful logon. This is usually caused because of a
@@ -98,7 +95,9 @@ and adding
 
     IPQoS 0x00
 
-to each file as the last record. " develop a a python script to do that
+to each file as the last record.  " THis is quoted and needs the citation
+
+Develop a a python script to do that
 
 ### USB stick
 
@@ -113,7 +112,7 @@ Make sure to find the right name.
     mkdir ~/<mount-point>
     sudo mount /dev/<device-name> ~/<mount-point>
 
-### DHCP server on 00
+#### DHCP server on 00
 
     sudo apt-get update
     sudo apt-get install isc-dhcp-server

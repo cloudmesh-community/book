@@ -1,6 +1,3 @@
- 
+# Harp :o:
 
-Harp
-====
-
-\TODO{TA: complete harp section}
+:o: TODO TA: complete harp section

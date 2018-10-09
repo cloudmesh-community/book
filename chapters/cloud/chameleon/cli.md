@@ -88,11 +88,10 @@ project number and find **Access & Security** on the left menu. The
 Access & Security page has tabs and choose **API Access** to download
 credentials on a local machine. Click **Download OpenStack RC File** to
 download *CH-\$PROJECTID-openrc.sh* file on your machine (see
-Figure Access and Security). Every time you use nova command line tools, the
++@fig:chameleon-access). Every time you use nova command line tools, the
 file should be loaded on your terminal.
 
-![**Figure:** Access and Security
-GUI](images/openstack-chameleon-openrc.png)
+![Access and Security GUI](images/openstack-chameleon-openrc.png){#fig:chameleon-access}
 
     $ mkdir -p ~/.cloudmesh/chameleon
     $ mv ~/Downloads/CH-$CC_PROJECT-openrc.sh ~/.cloudmesh/chameleon/cc-openrc.sh
@@ -168,7 +167,7 @@ You will see an output similar to:
 To start new instances you can use the *nova boot* command. It will
 start a VM instance. You can use some parameters to specify which base
 image and a server size we will use with a name. We use *CC-Ubuntu16.04*
-base image in this tutorial which is an official Ubuntu 16.04 image
+base image in this section which is an official Ubuntu 16.04 image
 provided by Chameleon project.
 
     $ nova boot --image CC-Ubuntu16.04 --key-name $CC_PREFIX-key --flavor m1.small $CC_PREFIX-01
@@ -200,7 +199,7 @@ SSH.
      | 13dc309e- ... | 129.114.111.37 | -         | -        | ext-net |
      +---------------+----------------+-----------+----------+---------+
 
-Now we have a IP address to assign to a VM instance. In this tutorial,
+Now we have a IP address to assign to a VM instance. In this section,
 we will associate *129.114.111.37* to our albert-111-01 VM instance by:
 
     $ nova floating-ip-associate albert-111-01 129.114.111.37

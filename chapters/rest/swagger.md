@@ -36,7 +36,7 @@ Swagger Editor
 The developed APIs can be hosted and further developed on an online
 repository named SwaggerHub <https://app.swaggerhub.com/home> The
 convenient online editor is available which also can be installed
-locally on a variety of operating systems including OSX, Linux, and
+locally on a variety of operating systems including macOS, Linux, and
 Windows.
 
 ## Swagger Community Tools

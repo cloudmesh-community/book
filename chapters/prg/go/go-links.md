@@ -1,4 +1,4 @@
-## Go Links
+# Go Links {#s-go-links}
 
 Section provided by Gregor
 
@@ -22,7 +22,7 @@ Section provided by Gregor
 
 * <https://www.tiobe.com/tiobe-index/>
 
-### PYPL Popularity of Programming Language
+## PYPL Popularity of Programming Language
 
 ``The PYPL PopularitY of Programming Language Index is created by analyzing how often language tutorials are searched on Google.
 
@@ -44,6 +44,6 @@ The more a language tutorial is searched, the more popular the language is assum
 
 * <https://en.wikipedia.org/wiki/Overview_of_RESTful_API_Description_Languages>
 
-## Heroku
+## Heroku and Go
 
 TBD

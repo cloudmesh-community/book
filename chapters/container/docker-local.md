@@ -9,15 +9,15 @@ Here you will find a variety of packages, one of which will hopefully
 suitable for your operating system. The supported operating systems
 currently include:
 
--   OSX, Windows, Centos, Debian, Fedora, Ubuntu, AWS, Azure
+* OSX, Windows, Centos, Debian, Fedora, Ubuntu, AWS, Azure
 
 Please chose the one most suitable for you. For your convenience we
 provide you with installation instructions for OSX
-(Section [1.1](#s:docker-osx){reference-type="ref"
+(Section [Docker on OSX](#s:docker-osx){reference-type="ref"
 reference="s:docker-osx"}), Windows 10
-(Section [1.3](#s:docker-windows){reference-type="ref"
+(Section [Docker on Windows](#s:docker-windows){reference-type="ref"
 reference="s:docker-windows"}) and Ubuntu
-(Section [1.2](#s:docker-ubuntu){reference-type="ref"
+(Section [Docker on ubuntu](#s:docker-ubuntu){reference-type="ref"
 reference="s:docker-ubuntu"}).
 
 ## Instillation for OSX
@@ -44,18 +44,18 @@ In order to install Docker community edition for Ubuntu, you first have
 to register the repository from where you can download it. This can be
 achieved as follows:
 
-``` {.bash language="bash"}
-$ sudo apt-get update
-$ sudo apt-get install \
+```bash
+local$ sudo apt-get update
+local$ sudo apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
     software-properties-common
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-$ sudo apt-key fingerprint 0EBFCD88
-$ sudo add-apt-repository \
+local$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+local$ sudo apt-key fingerprint 0EBFCD88
+local$ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
+   local$(lsb_release -cs) \
    stable"
 ```
 
@@ -63,22 +63,40 @@ Now that you have configured the repository location, you can install it
 after you have updated the operating system. The update and install is
 done as follows:
 
-``` {.bash language="bash"}
-$ sudo apt-get update
-$ sudo apt-get install docker-ce
-$ sudo apt-get update
+```bash
+local$ sudo apt-get update
+local$ sudo apt-get install docker-ce
+local$ sudo apt-get update
 ```
+Once installed execute the following command to make sure the installation is
+ done properly
+ 
+ ```bash
+ local$ sudo systemctl status docker
+ ```
+ 
+ This should give you an output similar to below.
+ 
+ ```bash
+  docker.service - Docker Application Container Engine
+    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+    Active: active (running) since Wed 2018-10-03 13:02:04 EDT; 15min ago
+      Docs: https://docs.docker.com
+  Main PID: 6663 (dockerd)
+     Tasks: 39
 
-## Draft: Installation for Windows 10
+ ```
+ 
+## Installation for Windows 10 :o: :question:
 
 The instructions for Windows have not passed our quality control. We
 look for TAs and student that test out and improve this section.
 
-\TODO{TA: Docker on windows. Please improve and finalize the section}
+:o: TA: Docker on windows. Please improve and finalize the section}
 Before we start we create the following directory:
 
 ```bash
-mkdir $HOME/cloudmesh
+local$ mkdir local$HOME/cloudmesh
 ```
 
 We also assume you have installed gitbash and use the a git bash
@@ -89,7 +107,7 @@ To install Docker on Windows, please download the following files
 * <https://download.docker.com/win/stable/Docker\%20for\%20Windows\%20Installer.exe>
 * <https://download.docker.com/win/stable/DockerToolbox.exe>
 
-Move the downloaded files to a directory `$HOME/cloudmesh`
+Move the downloaded files to a directory `local$HOME/cloudmesh`
 
 Place the downloaded exe files in the cloudmesh directory we created
 earlier. First conduct the Docker installation and then continue with
@@ -105,16 +123,16 @@ application and it will load all docker and provide a terminal window in
 which you can execute docker commands. Once the terminal is loaded, it
 will show something like following:
 
-``` {.bash language="bash"}
-$ <username>@<yourpc> ~
+```bash
+local$ <username>@<yourpc> ~
 ```
 
 ## Testing the Install
 
 To test if it works execute the following commands in a terminal:
 
-``` {.bash language="bash"}
-docker version
+```bash
+local$ docker version
 ```
 
 You should see an output similar to
@@ -140,24 +158,27 @@ You should see an output similar to
 
 To see if you can run a container use
 
-``` {.bash language="bash"}
-docker run hello-world
+```bash
+local$ docker run hello-world
 ```
 
 Once executed you should see an output similar to
 
-``` {.bash language="bash"}
+```bash
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 78445dd45222: Pull complete 
 Digest: sha256:c5515758d4c5e1e838e9cd307f6c6a .....
-Status: Downloaded newer image for hello-world:latest
+Status: Downloaded newer image for
+        hello-world:latest
 
 Hello from Docker!
-This message shows that your installation appears to 
-be working correctly.
+This message shows that your installation appears
+to be working correctly.
 
-To generate this message, Docker took the following steps:
+To generate this message, Docker took the following
+steps:
+
 1. The Docker client contacted the Docker daemon.
 2. The Docker daemon pulled the "hello-world" image 
    from the Docker Hub.
@@ -167,12 +188,14 @@ To generate this message, Docker took the following steps:
 4. The Docker daemon streamed that output to the Docker 
    client, which sent it to your terminal.
 
-To try something more ambitious, you can run an Ubuntu container 
-with:
+To try something more ambitious, you can run an Ubuntu
+container with:
 
-$ docker run -it ubuntu bash
+local$ docker run -it ubuntu bash
 
-Share images, automate workflows, and more with a free Docker ID:
+Share images, automate workflows, and more with a
+free Docker ID:
+
 https://cloud.docker.com/
 
 For more examples and ideas, visit:

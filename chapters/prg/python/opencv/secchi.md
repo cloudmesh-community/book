@@ -1,4 +1,4 @@
-# Secchi Disk :new: {#s-secchi-disk}
+# Secchi Disk {#s-secchi-disk}
 
 We are developing an autonomous robot boat that you can be part of
 developing within this class. The robot bot is actually measuring
@@ -12,8 +12,8 @@ Secchi disk. The use of the Secchi disk is as follows:
 
 One of the things we can do is take a video of the measurement instead
 of a human recording them. Than we can analyse the video automatically
-to see how deep a disk was lowered. THis is a classical image analysis
-program. YOu are encouraged to identify algorithms that can identify
+to see how deep a disk was lowered. This is a classical image analysis
+program. You are encouraged to identify algorithms that can identify
 the depth. The most simplest seems to be to do a histogram at a
 variety of depth steps, and measure when the histogram no longer
 changes significantly. The depth at that image will be the measurement
@@ -165,4 +165,4 @@ Edge detection using Canny edge detection algorithm
     bw1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
     plt.imshow(bw1, cmap='gray')
 
-![**Figure:** Back WHite conversion](images/secchi/output_26_1.png)
+![**Figure:** Back White conversion](images/secchi/output_26_1.png)

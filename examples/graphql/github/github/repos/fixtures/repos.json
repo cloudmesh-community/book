@@ -1,0 +1,272 @@
+[
+  {
+    "model": "repos.repo",
+    "pk": 147539337,
+    "fields": {
+      "name": "boat",
+      "description": "S.T.A.R. boat",
+      "url": "https://api.github.com/repos/cloudmesh-community/boat"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 135431595,
+    "fields": {
+      "name": "book",
+      "description": "Gregor von Laszewski",
+      "url": "https://api.github.com/repos/cloudmesh-community/book"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 147824315,
+    "fields": {
+      "name": "cm",
+      "description": "Cloudmesh v4",
+      "url": "https://api.github.com/repos/cloudmesh-community/cm"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 142996054,
+    "fields": {
+      "name": "cm-burn",
+      "description": "Burns many SD cards so we can build a Raspberry PI cluster",
+      "url": "https://api.github.com/repos/cloudmesh-community/cm-burn"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146816041,
+    "fields": {
+      "name": "fa18-423-01",
+      "description": "",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-423-01"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146816042,
+    "fields": {
+      "name": "fa18-423-02",
+      "description": "Kelvin Liuwie",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-423-02"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146816044,
+    "fields": {
+      "name": "fa18-423-03",
+      "description": "Omkar Tamhankar",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-423-03"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146816046,
+    "fields": {
+      "name": "fa18-423-04",
+      "description": "Jin Woo Park",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-423-04"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146992603,
+    "fields": {
+      "name": "fa18-423-05",
+      "description": "Yixing Hu",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-423-05"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146992605,
+    "fields": {
+      "name": "fa18-423-06",
+      "description": "Chandler Mick",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-423-06"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 147744061,
+    "fields": {
+      "name": "fa18-423-07",
+      "description": "",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-423-07"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 147836948,
+    "fields": {
+      "name": "fa18-423-08",
+      "description": "Yuli Zhao",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-423-08"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806626,
+    "fields": {
+      "name": "fa18-516-01",
+      "description": "Mario Angelier",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-01"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806640,
+    "fields": {
+      "name": "fa18-516-02",
+      "description": "Vineet Barshikar",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-02"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806643,
+    "fields": {
+      "name": "fa18-516-03",
+      "description": "Jonathan Branam",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-03"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806650,
+    "fields": {
+      "name": "fa18-516-04",
+      "description": "David Demeulenaere",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-04"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806658,
+    "fields": {
+      "name": "fa18-516-05",
+      "description": "",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-05"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806664,
+    "fields": {
+      "name": "fa18-516-06",
+      "description": "Paul Filliman",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-06"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806671,
+    "fields": {
+      "name": "fa18-516-07",
+      "description": "Matt Graziano",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-07"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806673,
+    "fields": {
+      "name": "fa18-516-08",
+      "description": "Varun Joshi",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-08"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806675,
+    "fields": {
+      "name": "fa18-516-10",
+      "description": "Rui Li",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-10"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806680,
+    "fields": {
+      "name": "fa18-516-11",
+      "description": "Murali Cheruvu",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-11"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806684,
+    "fields": {
+      "name": "fa18-516-12",
+      "description": "Yu Luo",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-12"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806688,
+    "fields": {
+      "name": "fa18-516-13",
+      "description": "",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-13"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806694,
+    "fields": {
+      "name": "fa18-516-14",
+      "description": "Gerald Manipon",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-14"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806699,
+    "fields": {
+      "name": "fa18-516-16",
+      "description": "Kenneth Nilsson",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-16"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806702,
+    "fields": {
+      "name": "fa18-516-17",
+      "description": "Brad Pope",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-17"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806707,
+    "fields": {
+      "name": "fa18-516-18",
+      "description": "Richa Rastogi",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-18"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806709,
+    "fields": {
+      "name": "fa18-516-19",
+      "description": "De'Angelo Rutledge",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-19"
+    }
+  },
+  {
+    "model": "repos.repo",
+    "pk": 146806714,
+    "fields": {
+      "name": "fa18-516-20",
+      "description": "",
+      "url": "https://api.github.com/repos/cloudmesh-community/fa18-516-20"
+    }
+  }
+]

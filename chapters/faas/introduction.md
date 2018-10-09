@@ -1,11 +1,4 @@
-## FaaS 
-
-%\FIGURE{htb} 
-%    {1.0}
-%    {images/kubernetes.png}
-%    {Kubernetes (Source: Google)}
-%    {F:tas-arch} 
-
+## FaaS  :o:
 
 * <https://en.wikipedia.org/wiki/Function_as_a_service>
 * <https://github.com/openfaas/faas>
@@ -49,10 +42,3 @@ example openfaas
 * <https://techbeacon.com/aws-lambda-serverless-apps-5-things-you-need-know-about-serverless-computing>
 
 
-Blockchain
-
-* <https://techbeacon.com/how-blockchain-will-disrupt-traditional-computing>
-
-* <https://en.wikipedia.org/wiki/Blockchain>
-
-* <https://www.economist.com/news/leaders/21677198-technology-behind-bitcoin-could-transform-how-economy-works-trust-machine>

@@ -9,36 +9,45 @@ Currently we have deployed Docker swarm on Echo.
 
 You will need an account on FutureSystems and be enrolled in an active
 project. To verify, try to see if you can log into
-india.futuresystems.org. You need to be a member of a valid
+victor.futuresystems.org. You need to be a member of a valid
 FutureSystems project, and had submitted an ssh public key via the
 FutureSystems portal.
 
-For 2018 you need to be in the following project:
+For Fall 2018 classes at IU you need to be in the following project:
 
-<https://portal.futuresystems.org/project/537>
+<https://portal.futuresystems.org/project/553>
 
-If your access to the india host has been verified, try to login to the
+If your access to the victor host has been verified, try to login to the
 docker swarm head node. To conveniently do this let us define some Linux
 environment variables to simplify the access and the material presented
-here. YOu can place them even in your `.bashrc` or `.bash_profile` so
-the information gets populated whenever you start a new terminal.
+here. You can place them even in your `.bashrc` or `.bash_profile` so
+the information gets populated whenever you start a new terminal.If you 
+directly edit the files make sure to execute the `source` command to refresh
+ the environment variables for the current session using `source .bashrc`
+or `source .bash_profile`. Or you can close the current shell and reopen a 
+new one. 
 
-    export ECHO=149.165.150.76
-    export FS_USER=<put your futersystem here>
+```bash
+local$ export ECHO=149.165.150.76
+local$ export FS_USER=<put your futersystem account name here>
+```
 
-with the same username and key:
+Now you can use the two variables that were set to login to the Echo serer, 
+using the following command
 
-    ssh $FS_USER@$ECHO
+```bash
+local$ ssh $FS_USER@$ECHO
+```
 
-However it is much more convenient to
-
-If you have access to india but not the docker swarm system, your
+**Note: If you have access to india but not the docker swarm system, your
 project may not have been authorized to access the docker swarm cluster.
-Send a ticket to FutureSystems ticket system to request this.
+Send a ticket to FutureSystems ticket system to request this.**
 
 Once logged in to the docker swarm head node, try to run:
 
-    docker run hello-world
+```bash
+echo$ docker run hello-world
+```
 
 to verify `docker run` works.
 
@@ -57,17 +66,22 @@ necessary, are all managed transparently. Thus achieving the new
 paradigm of *serverless computing*.
 
 As an example, the following command creates a service and deploy it to
-the swarm cluster:
+the swarm cluster, if the port is in use the port `9001` used in the command
+can be changed to an available port.
 
-> docker service create --name notebook_test -p 9001:8888
-> jupyter/datascience-notebook start-notebook.sh
-> --NotebookApp.password=NOTEBOOK_PASS_HASH
-
+```bash
+echo$ docker service create --name notebook_test -p 9001:8888 \
+    jupyter/datascience-notebook start-notebook.sh
+    --NotebookApp.password=NOTEBOOK_PASS_HASH
+```
+    
 The NOTEBOOK_PASS_HASH can be generated in python:
 
-    >>> import IPython
-    >>> IPython.lib.passwd("YOUR_SELECTED_PASSWROD")
-    'sha1:52679cadb4c9:6762e266af44f86f3d170ca1......'
+```python
+>>> import IPython
+>>> IPython.lib.passwd("YOUR_SELECTED_PASSWROD")
+'sha1:52679cadb4c9:6762e266af44f86f3d170ca1......'
+```
 
 So pass through the string starting with 'sha1:\...\...'.
 
@@ -78,7 +92,9 @@ port inside the container (8888) to an external port of the cluster node
 (9001) so the service could be accessed from the Internet. In this
 example, you can then visit the URL:
 
-> <http://$ECHO:9001>
+```bash
+local$ open http://$ECHO:9001
+```
 
 to access the Jupyter notebook. Using the specified password when you
 create the service to login.
@@ -95,25 +111,35 @@ the time when the service was created.
 
 Some useful related commands:
 
-    docker service ls
+```bash
+echo$ docker service ls
+```
 
 lists the currently running services.
 
-    docker service ps notebook_test
+```bash
+echo$ docker service ps notebook_test
+```
 
 lists the detailed info of the container where the service is running.
 
-    docker node ps NODE
+```bash
+echo$ docker node ps NODE
+```
 
 lists all the running containers of a node.
 
-    docker node ls
+```bash
+echo$ docker node ls
+```
 
 lists all the nodes in the swarm cluster.
 
 To stop the service and the container:
 
-    docker service rm noteboot_test
+```bash
+echo$ docker service rm noteboot_test
+```
 
 ## Create your own service
 
@@ -134,7 +160,7 @@ recommended way.
 
 Publish the image to the docker cloud by following this documentation:
 
-> <https://docs.docker.com/docker-cloud/builds/push-images/>
+* <https://docs.docker.com/docker-cloud/builds/push-images/>
 
 Please make sure no sensitive information is included in the image to be
 published. Alternatively you could publish the image internally to the
@@ -148,6 +174,11 @@ example.
 
 ## Exercises
 
-Obtain an account on future systems.
+E.Docker.Futuresystems.1:
 
-Create a REST service with swagger codegen and run it on the echo cloud.
+> Obtain an account on future systems.
+
+E.Docker.Futuresystems.2:
+
+> Create a REST service with swagger codegen and run it on the echo cloud
+(see example in [this section](#s-dockerfile) )

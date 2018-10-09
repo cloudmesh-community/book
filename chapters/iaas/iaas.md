@@ -1,4 +1,4 @@
-# Introduction
+# Introduction {#s-iaas-intro}
 
 ---
 
@@ -65,3 +65,6 @@ Some of the services listed provide a free small contingent of IaaS
 offerings that you can use. The use of this free tier will be
 sufficient to conduct thsi class.
 
+A set of introductory slides is available at
+
+[:scroll: Virtual Machines (21)](https://1drv.ms/p/s!AvpSEd2J24STjBbo4k35C5v-ra8g)

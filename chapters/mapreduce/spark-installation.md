@@ -1,5 +1,4 @@
-Installation of Spark
-=====================
+# Installation of Spark :o:
 
 In this section we will discuss how to install Spark 2.3.0 in Ubuntu
 16.04.
@@ -38,9 +37,11 @@ Source the bashrc file after adding the environmental variables.
 Install Spark with Hadoop
 -------------------------
 
+:o: TODO fix the link
+
 Here we use Spark packaged with Hadoop. In this package Spark uses
 Hadoop 2.7.0 in the packaged version. Note that in
-Section [\[s:hadoop-local-installation\]](#s:hadoop-local-installation){reference-type="ref"
+Section [Hadoop Instalation](#s:hadoop-local-installation){reference-type="ref"
 reference="s:hadoop-local-installation"} we use for the vanilla Hadoop
 installation Hadoop 3.0.0.
 
@@ -93,7 +94,7 @@ content.
         _\ \/ _ \/ _ `/ __/  '_/
        /___/ .__/\_,_/_/ /_/\_\   version 2.3.0
           /_/
-             
+
     Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_151)
     Type in expressions to have them evaluated.
     Type :help for more information.
@@ -166,9 +167,7 @@ installation. Add the following variable in to the spark-env.sh file.
       emacs spark-env.sh
       export SPARK_DIST_CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath)
 
-\centering
-![Spark Web UI - Hadoop
-Path](images/spark-hadoop.png){width="\textwidth" height="\textheight"}
+![Spark Web UI - Hadoop Path](images/spark-hadoop.png)
 
 Test Spark Installation
 -----------------------
@@ -190,7 +189,7 @@ content.
         _\ \/ _ \/ _ `/ __/  '_/
        /___/ .__/\_,_/_/ /_/\_\   version 2.3.0
           /_/
-             
+
     Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_151)
     Type in expressions to have them evaluated.
     Type :help for more information.

@@ -2,6 +2,7 @@
 """Vagrant Manager.
 Usage:
   manifest-parser.py info
+  manifest-parser.py info no BOOK
   manifest-parser.py list
   manifest-parser.py generate BOOK
   manifest-parser.py dep BOOK
@@ -11,8 +12,20 @@ Options:
   -h --help     Show this screen.
 
 Description:
-   infor  -- gives general information of the lists
-   
+   info
+        gives general information of the lists
+
+   info no BOOK
+        prints all entries that are not in the book but in the chapter dir
+
+   dep BOOK
+        generates the entries for the makefile
+
+   tree BOOK
+        list the booktree for debugging purposes
+
+
+
 """
 
 import oyaml as yaml
@@ -20,6 +33,10 @@ from pprint import pprint
 from treelib import Node, Tree
 from time import time
 from docopt import docopt
+import sys
+from pathlib import Path
+import glob
+import os
 
 def load_manifest(file):
     mfest = None
@@ -30,28 +47,30 @@ def load_manifest(file):
             print(exc)
     return mfest
 
+
+# noinspection PyPep8Naming
 def expand_def(vardict, varsdict):
-    #print ("-" * 80)
-    #pprint (vardict)
-    #print ("+" * 80)
+    # print ("-" * 80)
+    # pprint (vardict)
+    # print ("+" * 80)
     var = dict(vardict)
     for title, chaps in var.items():
         allleafs = True
         for idx, chap in enumerate(chaps):
             if type(chap) is dict:
-                #pprint (chap)
+                # pprint (chap)
                 chaptitle = list(chap.keys())[0]
-                #pprint (chaptitle)
-                #chaptitle = chap
+                # pprint (chaptitle)
+                # chaptitle = chap
                 newdic = chap
                 if chaptitle.startswith("$ref:"):
                     chaptitle = chaptitle.split("$ref:")[1]
                     predefinedList = varsdict[chaptitle]
                     newList = list(chap.values())[0]
-                    #print (predefinedList)
-                    #print (newList)
+                    # print (predefinedList)
+                    # print (newList)
                     newdic = {chaptitle: predefinedList + newList}
-                #pprint (newdic)
+                # pprint (newdic)
                 allleafs = False
                 vardict[title][idx] = expand_def(newdic, varsdict)
             else:
@@ -70,22 +89,31 @@ def expand_def(vardict, varsdict):
                         vardict[title][idx] = expand_def(newdic, varsdict)
     return vardict
 
+
+def minimum_one(n):
+    if n <= 0:
+        return 1
+    else:
+        return n
+
 def timestamp_node(node):
     # prefix timestamp to tag to preserve the order
     # alternatively use a data field in Node for sorting
-    #return "{timestamp}|{node}".format(timestamp=time(),
+    # return "{timestamp}|{node}".format(timestamp=time(),
     #                                   node=node)
     return node
 
+
+# noinspection PyPep8Naming
 def create_tree(adict):
     tree = Tree()
     if type(adict) is dict:
-        #print ("procdessing dict to tree...")
+        # print ("procdessing dict to tree...")
         root = list(adict.keys())[0]
-        #print (root)
+        # print (root)
         tree.create_node(timestamp_node(root), root, data=time())
         for node in list(adict.values()):
-            #print ("processing a node of the dict values")
+            # print ("processing a node of the dict values")
             if type(node) is dict:
                 newTree = create_tree(node)
                 tree.paste(root, newTree)
@@ -99,7 +127,8 @@ def create_tree(adict):
         tree.create_node(timestamp_node(adict), adict, data=time())
     return tree
 
-class manifest(object):
+
+class Manifest(object):
 
     def __init__(self):
         self.mfest = load_manifest("../chapters.yaml")
@@ -137,9 +166,9 @@ class manifest(object):
             self.treebook[title] = create_tree({title: book})
 
         for title, tree in self.treebook.items():
-            #tree.show()
+            # tree.show()
             for node in tree.expand_tree(mode=Tree.DEPTH):
-                #print ("+", node)
+                # print ("+", node)
                 realtag = node
                 if type(realtag) is Node:
                     realtag = node.tag
@@ -147,33 +176,72 @@ class manifest(object):
                     realtag = realtag.split("|")[1]
                 if realtag.startswith("$ref:"):
                     chapkey = realtag.split("$ref:")[1]
-                    newtree = Tree(tree=self.treechap[chapkey],deep=True)
+                    newtree = Tree(tree=self.treechap[chapkey], deep=True)
+                    # move up its children to replace totally the root
+                    subtree = newtree.subtree(newtree.children(newtree.root)[0].tag)
+                    newtree = subtree
                     for anode in tree.children(node):
                         origtag = anode.tag
                         if "|" in origtag:
                             origtag = anode.tag.split("|")[1]
-                        #print (origtag)
+                        # print (origtag)
                         newtree.create_node(timestamp_node(origtag), origtag, parent=newtree.root, data=time())
                     # find parent node of the node to be replaced
                     parent = tree.parent(node)
                     # use the old timestamp data to preserve insertion order
-                    newtree.get_node(newtree.root).data=tree.get_node(node).data
+                    newtree.get_node(newtree.root).data = tree.get_node(node).data
                     # remove old node
                     tree.remove_subtree(node)
                     # replace with new expanded node
                     tree.paste(parent.identifier, newtree)
 
     def info(self):
+        variables = self.chaps.keys()
         for title, tree in self.treebook.items():
-            print ("=" * 80)
+            print("=" * 80)
             tree.show(key=lambda x: x.data)
-            print ("-" * 80)
+            print("-" * 80)
             for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
-                print (node, tree.level(node))
+                #level = minimum_one(tree.level(node) - 1)
+                level = tree.level(node)
+                if node not in variables:
+                    print(level * "  ", node, level)
+                else:
+                    print("#", node, level)
+
+    def info_no(self, book):
+
+        #
+        # find tree entries
+        #
+        entries = []
+        variables = self.chaps.keys()
+        if book not in variables:
+            print ("ERROR: book does not exist")
+        print (variables)
+        for title, tree in self.treebook.items():
+            if title == book:
+                for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
+                    level = tree.level(node)
+                    if node not in variables:
+                        entries.append(node)
+
+
+        dir_entries = list(glob.iglob(os.path.join("../chapters", '**', '*.md')))
+        for entry in range(0,len(dir_entries)):
+            dir_entries[entry] = dir_entries[entry].replace("../", "")
+        print ("#", 79 * "#")
+        print ("#", "Md files not includes in", book)
+        print ("#", 79 * "#")        
+        print ("- MISSING_{}:".format(book))
+        for entry in dir_entries:
+            if entry not in entries:
+                print("    -", entry)
+
 
     def list(self):
         for title, tree in self.treebook.items():
-            print (title)
+            print(title)
 
     def generate(self, book):
         variables = self.chaps.keys()
@@ -184,18 +252,19 @@ class manifest(object):
                 # print ("-" * 80)
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
                     if node not in variables:
-                        print (node, tree.level(node))
+                        #level = minimum_one(tree.level(node) - 1)
+                        level = tree.level(node)
+                        print(node, level)
 
     def generate_dependencies(self, book):
 
         def print_rule(name, level):
 
-            print ("dest/{name}: ../{name}".format(name=name,level=level))
-            #print("\t$(COPY) ../{name} dest/{name}".format(name=name,level=level))
-            print("\t../bin/markup-single.py ../{name} {level}".format(name=name,level=level))
-            print("\t../bin/header.py dest/{name} {level}".format(name=name,level=level))
+            print("dest/{name}: ../{name}".format(name=name, level=level))
+            # print("\t$(COPY) ../{name} dest/{name}".format(name=name,level=level))
+            print("\t../bin/markup-single.py ../{name} {level}".format(name=name, level=level))
+            print("\t../bin/header.py dest/{name} {level}".format(name=name, level=level))
 
-        
         chapterlist = []
         variables = self.chaps.keys()
         for title, tree in self.treebook.items():
@@ -204,8 +273,10 @@ class manifest(object):
                     if node not in variables and node != book:
                         location = "dest/{name}".format(name=node)
                         chapterlist.append(location)
+        print("INDEX=\\\n  " + "\\\n  ".join(chapterlist).replace("dest/",""))
+        print()
         print("chapterlist: ", " ".join(chapterlist))
-        print ("\t@echo \"updated modified chapters\"")
+        print("\t@echo \"updated modified chapters\"")
         print()
 
         print()
@@ -214,37 +285,39 @@ class manifest(object):
             if title == book:
                 for node in tree.expand_tree(mode=Tree.DEPTH, key=lambda x: x.data):
                     if node not in variables and node != book:
-                        print_rule (node, tree.level(node))
+                        level = tree.level(node)
+                        print_rule(node, level)
                         print()
 
     def generate_tree(self, book):
         for title, tree in self.treebook.items():
             if title == book:
                 tree.show(key=lambda x: x.data)
-    
-                
-                
+
 
 def process_arguments(arguments):
-    if arguments["info"]:
-        m = manifest()
+    if arguments["info"] and arguments["no"]:
+        book = arguments["BOOK"]
+        m = Manifest()
+        m.info_no(book)
+    elif arguments["info"]:
+        m = Manifest()
         m.info()
     elif arguments["list"]:
-        m = manifest()
+        m = Manifest()
         m.list()
     elif arguments["generate"]:
         book = arguments["BOOK"]
-        m = manifest()
+        m = Manifest()
         m.generate(book)
     elif arguments["tree"]:
         book = arguments["BOOK"]
-        m = manifest()
+        m = Manifest()
         m.generate_tree(book)
     elif arguments["dep"]:
         book = arguments["BOOK"]
-        m = manifest()
+        m = Manifest()
         m.generate_dependencies(book)
-
 
 
 def main():

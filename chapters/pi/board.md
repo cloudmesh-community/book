@@ -14,11 +14,9 @@ We will give a small introduction to the platform next.
 ## Raspberry PI 3 B
 
 Till February 2018 the Raspberry PI 3 B was the newest model. Within
-this class we have access to about 100 of them.
+this class we have access to about 100 of them. The Raspberry PI 3 B is shown in +@fig:pi3 
 
-Figure [Pi3](#F-pi3) shows the Raspberry PI 3 B.
-
-![Figure <a name="F-pi3"></a>: Raspberry PI 3B](./images/pi-3.jpg)
+![Raspberry PI 3B](images/pi-3.jpg){#fig:pi3}
 
 The board has the following properties:
 
@@ -37,11 +35,9 @@ The board has the following properties:
 ## Raspberry PI 3 B+
 
 We plan to purchase a number of them so we can conduct performance
-experiments and leverage the faster hardware.
+experiments and leverage the faster hardware. The newest Raspberry PI 3 B+ is shown in +@fig:pi3.
 
-Figure [Pi3+](#F-pi3p) shows the newest Raspberry PI 3 B+.
-
-![Figure <a name="F-pi3p"></a>: Raspberry PI 3 B+](images/pi3bplus.jpg)
+![Raspberry PI 3 B+](images/pi3bplus.jpg){#fig:pi3bplus}
 
 The board has the following properties:
 
@@ -60,6 +56,43 @@ The board has the following properties:
 * 5V/2.5A DC power input
 * Power-over-Ethernet (PoE) support (requires separate PoE HAT)
 
+
+## Raspberry PI Zero
+
+In addition to the PI 3's another interesting platform is the PI Zero,
+which is a very low cost system that can serve as IoT board. However
+it is also powerful enough to run more sophisticated applications on
+it. The newest Raspberry PI Zero is shown in +@fig:pizero.
+
+
+![Raspbery Pi Zero [(source)](https://www.raspberrypi.org/products/raspberry-pi-zero/)](images/Raspberry-Pi-Zero-462x322.jpg){#fig:pizero}
+
+The board has the following properties:
+
+* 1GHz single-core CPU
+* 512MB RAM
+* Mini HDMI port
+* Micro USB OTG port
+* Micro USB power
+* HAT-compatible 40-pin header
+* Composite video and reset headers
+* CSI camera connector (v1.3 only)
+
+## Pin Layout
+
+The PI 3B, 3B+ and Zero come with a number of pins that can be used to
+attach sensors. It is convenient to have the pinout available for your
+project. Hence we provide a pinout layout in +@fig:pi-layout. Other
+Pis will have a differnt pinout and you will have to locate them on
+the internet. 
+
+![Pinout](images/rasp3.jpg){#fig:pi-layout}
+
+
+## Resources
+
 Detailed information about it are available at
 
 * <https://www.raspberrypi.org/documentation/hardware/raspberrypi/README.md>
+
+

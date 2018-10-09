@@ -1,5 +1,4 @@
-Sentient Architecture
-=====================
+# Sentient Architecture
 
 ![Sentient Architecture: Source:
 <https://nicolatriscott.files.wordpress.com/2016/03/caaqt-euyam-jpm.jpg>](images/sentient.jpeg){width="\columnwidth"}
@@ -68,9 +67,7 @@ Raspberry Pi
     you to use python which is clearly a plus as most of the material
     presented here are in Python.
 
-\centering
-![Snowwhite and the Seven$^{+1}$
-Dwarfs[]{label="F:snowwhite"}](images/snowwhite.jpg){width="\columnwidth"}
+![Snowwhite and the Seven<sup>+1<sup> Dwarfs](images/snowwhite.jpg){#fig:snowwhite"}
 
 ### Luddy Hall Installation
 
@@ -117,9 +114,7 @@ projects plenty of room and opportunities."
 as the one offered at Amazon will provide good protection
 <https://www.amazon.com/Eleduino-Arduino-Mega-2560-Enclosure/dp/B016QE46RQ>
 
-\centering
-![MEGA
-2560[]{label="F:mega2560"}](images/mega2560.jpg){width="0.25\columnwidth"}
+![MEGA 2560](images/mega2560.jpg){#fig:mega2560}
 
 ### Programming with Teensy
 
@@ -135,46 +130,46 @@ Which version
 Exercises
 ---------
 
-Sentient.1
+E.Sentient.1
 
-:   Build dendrite. In this exercise you will be building a dendrite
-    that you can add to the available pool of dendrites.
+> Build dendrite. In this exercise you will be building a dendrite
+> that you can add to the available pool of dendrites.
 
-Sentient.2.1
+E.Sentient.2.1
 
-:   Develop cloudmesh sensor/actuary. In this exercise you will be
-    developing an actuator ar sensor interface in object oriented
-    programming methodology. You can see many examples in cloudmesh.py
-    on github,com. You will pick a sensor you have access to and that is
-    not already included in cloudmesh.pi.
+> Develop cloudmesh sensor/actuary. In this exercise you will be
+> developing an actuator ar sensor interface in object oriented
+> programming methodology. You can see many examples in cloudmesh.py
+> on github,com. You will pick a sensor you have access to and that is
+> not already included in cloudmesh.pi.
 
-Sentient.2.2
+E.Sentient.2.2
 
-:   If you do prefer using another board, the option may exist do develop
-    an interface for the sensor or actuator for this device. If OO
-    programming is not available for that board, a clean design based on
-    functions must be provided. However we believe this is mor complex
-    than using the Pi.
+> If you do prefer using another board, the option may exist do
+> develop an interface for the sensor or actuator for this device. If
+> OO programming is not available for that board, a clean design based
+> on functions must be provided. However we believe this is mor
+> complex than using the Pi.
 
-Sentient.3.1
+E.Sentient.3.1
 
-:   Develop an mqtt based event publisher and subscription service. Use
-    first LEDs to test your service before you hook up relays and
-    dendrites.
+> Develop an mqtt based event publisher and subscription service. Use
+> first LEDs to test your service before you hook up relays and
+> dendrites.
 
-Sentient.3.2
+E.Sentient.3.2
 
-:   Hook up the dendrites to mqtt and control them
+>  Hook up the dendrites to mqtt and control them
 
-Sentient.4
+E.Sentient.4
 
-:   Develop sensors that interact with the dendrites
+>   Develop sensors that interact with the dendrites
 
-Sentient.5
+E.Sentient.5
 
-:   Explore the Page at
-    <https://www.intorobotics.com/alternative-arduino-boards/> that
-    lists a number of PI/Arduino alternative boards provide a non
-    plagiarized table for this chapter and evaluate which could be
-    viable alternatives. If you have one of them we like you to provide
-    a documentation on how to integrate them with the dendrites.
+> Explore the Page at
+> <https://www.intorobotics.com/alternative-arduino-boards/> that
+> lists a number of PI/Arduino alternative boards provide a non
+> plagiarized table for this chapter and evaluate which could be
+> viable alternatives. If you have one of them we like you to provide
+> a documentation on how to integrate them with the dendrites.

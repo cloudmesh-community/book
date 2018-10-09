@@ -5,9 +5,9 @@ bare-metal deployment features available in Chameleon. Chameleon gives
 users administrative access to bare-metal compute resources to run cloud
 computing experiments with a high degree of customization and
 repeatability. Typically, an experiment will go through several phases,
-as illustrated in the figure below:
+as illustrated in +@fig:chameleon-baremetal.
 
-![**Figure:** Experimenting with Bare Metal resources on Chameleon cloud](images/baremetal.png)
+![Experimenting with Bare Metal resources on Chameleon cloud](images/baremetal.png){#fig:chameleon-baremetal}
 
 The bare-metal user guide comes in two editions. The first is how to use
 Chameleon resources via the web interface, the recommended choice for

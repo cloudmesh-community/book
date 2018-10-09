@@ -67,8 +67,8 @@ The following reasons exist:
    which you can see in the contributor section or with
 
  
-```
-git shortlog -s -e
+```bash
+$ git shortlog -s -e
      2  btpope <42694671+btpope@users.noreply.github.com>
      1  luoyu357 <luoyu357@gmail.com>
      1  shilpasingh21 <shilpasingh21@gmail.com>
@@ -97,7 +97,7 @@ so if you kwon reply ti this
 This is an important tip and I recommend that you read it.
 
 We will add throughout the semester some technical lecture notes. These
-notes contain tutorial-like information on how to run certain things
+notes contain information on how to run certain things
 on a computer. What we have seen in the past with some students is
 that they do not read the text between the sections that look like you
 can just execute them. They also may include information that is
@@ -131,7 +131,7 @@ the following
 
 The easiest is to use yamllint:
 
-```
+```bash
 $ pip install yamllint
 $ yamllint README.yml
 ```
@@ -146,7 +146,7 @@ Online checkers are available at
 
 A ruby script can do
 
-```
+```bash
 $ ruby-e "require 'yaml';puts YAML.load_file('./README.yml')"
 ```
 
@@ -175,3 +175,97 @@ Editors that students have used include
 * Remarkable: <https://remarkableapp.github.io/>
 * Macdown: <https://macdown.uranusjr.com/>
 * Mark Down validation and preview:  <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
+
+## Do not use html smaller equal without quoting
+
+Please note that you must not use 
+
+`<argument>`
+
+in markdown. It has a special meaning and likely will result in an error.
+
+If you really need to use it you must quote it in code/verbatim mode
+
+``<argument>``
+
+## Has SOIC computers I can use remotely?
+ 
+See: https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559
+
+ 
+## How to read the technical sections of the lecture notes
+ 
+This is an important tip and I recommend that you read it.
+
+We will add soon some technical lecture notes. Thes notes contain
+tutorial-like information on how to run certain things on a
+computer. What we have seen in the past with some students is that
+they do not read the text between the sections that look like you can
+just execute them. They also may include information that is important
+and should not be overlooked.
+
+ 
+
+Here is the workflow on how to read such technical sections
+
+ 
+
+a) do not execute anything yet
+
+b) read the entire section including the lines between the gray boxes
+
+c) step back and reflect on what you read
+
+d) reread the section, if a section needs more information google for it (things could be overnight updated on the internet, please remember we are just presenting a snapshot in time here)
+
+e) once you have obtained knowledge, decide if the section is relevant for you (e.g. windows sections may not be relevant for MacOS users)
+
+f) carefully execute the relevant portions for you
+
+ 
+
+AS ALWAYS THERE IS NO GUARANTEE THAT WHAT WE DOCUMENT WORKS OR COULD
+NOT DESTROY SOMETHING. MAKE SURE TO HAVE A BACKUP. IF IN DOUBT RUN IN
+A VIRTUAL MACHINE IF YOU CAN.
+
+## Download the epub ferquently
+
+Please be reminded that the epub is updated frequently and we
+recommend that you download it before you read.
+
+
+I myself have integrated an epub reader in my Web browser so that
+every time I click on the View Raw in github, I get the most up to
+date version.
+
+ 
+
+I use ibooks on OSX, calibre is a good system on Windows and Linux, MS
+also has Microsoft Edge. However on Microsoft edge you will need the
+lates version which starts with 42
+
+## Spelling of notebook.md
+ 
+The spelling of notebook.md is notebook.md
+
+not
+
+Notebook.md or NOTEBOOK.md or other spelling
+
+Please, correct if you did not use lower case 
+
+The spelling of README.yml is README.yml and not 
+
+README.md (which needs to be removed) or readme.yaml
+
+please correct (if needed)
+
+## How to open the epub from Github
+
+If you see thw View Raw, you need to click on it. It will download the
+file. Than you can open that.
+
+However, If you use edge or integrated your epub viewer in your
+browser and clicking on it will automatically open your epub browser. 
+
+ 

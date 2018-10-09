@@ -345,7 +345,7 @@ In case of an incomplete you may be asked to do additional assignments
 and assignments that have been adapted based on experience from the
 class. Please note also that we could reject an assignment if it is
 identified to no longer reflect the state-of-the-art. All previously
-submitted assignments such as papers, tutorials and so on will be
+submitted assignments such as papers, sections, and so on will be
 reviewed on this criterion. For example, let us assume you developed a
 tutorial on technology visit version x. Let us assume that since you
 completed this task a version x+1 comes out. It will be your

@@ -15,7 +15,7 @@ data = {
 # print (79 * "=")
 
 os.system("rm -f /tmp/convert.md")
-os.system("pandoc {filename} --base-header-level={level} -o /tmp/convert.md".format(**data))
+os.system("pandoc {filename} -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml --base-header-level={level} -o /tmp/convert.md".format(**data))
 
 
 # os.system("head  /tmp/convert.md")

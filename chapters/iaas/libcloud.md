@@ -74,7 +74,7 @@ part:
 Libcloud can be installed via pip. Execute the following command in order
 to install Libcloud
 
-```console
+```bash
 pip install apache-libcloud
 ```
 
@@ -125,7 +125,7 @@ After you obtain the connection, it can be used to invoke various services
 
 Authentication is performed for AWS as follows
 
-```Python
+```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
 
@@ -140,7 +140,7 @@ conn = EC2Driver(EC2_ACCESS_ID, EC2_SECRET_KEY)
 
 Authentication is performed for Azure as follows
 
-```Python
+```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
 
@@ -152,6 +152,27 @@ AZURE_MANAGEMENT_CERT_PATH = 'C:/Demo/azure_cert.pem'
 AZDriver = get_driver(Provider.AZURE)
 conn = AZDriver(subscription_id=AZURE_SUBSCRIPTION_ID, key_file=AZURE_MANAGEMENT_CERT_PATH)
 ``` 
+
+#### OpenStack
+
+Authentication is performed for OpenStack as follows
+
+```python
+from libcloud.compute.providers import get_driver
+from libcloud.compute.types import Provider
+
+OpenstackDriver = get_driver(Provider.OPENSTACK)
+
+#OpenStack related variables
+
+OPENSTACK__AUTH_USERNAME = 'your_user_name'
+OPENSTACK_AUTH_PASSWORD = 'your_auth_password'
+
+conn = OpenStack(OPENSTACK__AUTH_USERNAME, OPENSTACK_AUTH_PASSWORD',
+                   ex_force_auth_url='http://192.168.1.101:5000',
+                   ex_force_auth_version='2.0_password')
+```
+
 
 ### Invoking services
  
@@ -169,7 +190,7 @@ listed.  It is indicated by our ... at the beginning
 In this section we will look at the code that can be used to create a
 node in the provider a node which represents a virtual server
 
-```Python
+```python
 ...
 # retrieve available images and sizes
 images = conn.list_images()
@@ -185,7 +206,7 @@ node = conn.create_node(name='yourservername', image=images[0], size=sizes[0])
 In this section we will look at the code that can be used to list the
 nodes that have been created in the provider
 
-```Python
+```python
 ...
 nodes = conn.list_nodes()
 print nodes
@@ -196,7 +217,7 @@ print nodes
 After the node (Virtual server) has been created the following code can
 be used to start the node
 
-```Python
+```python
 ...
 nodes = conn.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
@@ -208,7 +229,7 @@ conn.ex_start(node=node)
 When needed the following command can be used to stop a node that has 
 been started
 
-```Python
+```python
 ...
 nodes = conn.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
@@ -248,7 +269,7 @@ To illustrate how simple the program is and that it significantly
 improves your management of credentials we provide the follwoing
 code:
 
-```
+```python
 from cm import cloudmesh
 
 cm = cloudmesh()
@@ -265,15 +286,14 @@ It will be your task to add more providers to it.
 We intent to host the code sometime soon on pypi so you can issue the
 command
 
-```
-pip install cm-community
+```bash
+$ pip install cm-community
 ```
 
 and this library will be installed for you.
 
 
-## Amazon Simple Storage Service S3 via libcloud :hand::new:
-
+## Amazon Simple Storage Service S3 via libcloud :hand:
 
 Next we explain how to use Amazon Web Services (AWS) S3 via
 libcloud. Apache libcloud is a python library that provides
@@ -321,7 +341,7 @@ for the user in that particular region.
 	print d;
 
 
-### list container objects
+### List container objects
 
 List container objects function shows the list of all objects in that
 container. Please note the output could be large depending on the
