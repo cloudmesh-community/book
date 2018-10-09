@@ -22,16 +22,17 @@ On all the raspberry pi nodes, make sure these prerequisites are completed.
    sudo add-apt-repository ppa:webupd8team/java
    sudo apt-get update
    sudo apt-get install oracle-java8-installer
-	echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~\.bashrc
-	source ~/.bashrc 
+   echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~\.bashrc
+   source ~/.bashrc 
 ``` 
+````
 
 3. Install Scala.  
-   You can install Scala using 
+   You can install Scala using   
    ```bash 
    sudo apt-get install scala
-   ```
-
+```
+````
 3. Add all the hosts in to the /etc/hosts file.  
    An example /etc/hosts file is shown below. 
    ```bash 
