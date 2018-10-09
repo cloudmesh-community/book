@@ -675,17 +675,23 @@ which is based on Database Code-First approach. Please refer
 
 ### GraphQL server implementation :o:
 
-Django seperates project into apps. Here we will have one app for
-Users and one for Repos. Django provides support for SQLite so we will
-use that for demo.
+:o: it os not explained wht you actually do .... a general discussion
+about what the purpose of the example is is missing. Speeling and
+grammar does not use a and the.
+
+Django seperates a project into apps. Here we will have one app for
+Users and one for Repos. To simplify our demo we decided not to use a
+backend such as MongoDB but instead use SQLite.
 
 Go to root dir of project and execute following command
+
+:o: not explained what thsi does
 
 ```bash
 python manage.py startapp repository
 ```
 
-Open Repositories/models.py and add following line
+Open `Repositories/models.py` and add following line
 
 ```python
 class Repository(models.Model):
@@ -695,8 +701,8 @@ class Repository(models.Model):
     description = models.TextField(blank=True)
 ```
 
-Now open cloudmeshRepository/settings.py and append following line into
-INSTALLED_APPS
+Now open the file `cloudmeshRepository/settings.py` and append
+following line into INSTALLED_APPS
 
 ```python
 INSTALLED_APPS = (
@@ -709,17 +715,27 @@ Go to root folder and execute following commands. It will create table
 for new modeld
 
 ```bash
-python manage.py makemigrations
-python manage.py migrate
-
-python manage.py shell
+$ python manage.py makemigrations
+$ python manage.py migrate
 ```
 
-Last command will open Python shell. Execute following command inside
-that shell to create some data. following example data we got from
-github's API https://api.github.com/users/cloudmesh-community/repos.
+Naturally, for us to demonstrate the server, we need to ingest some
+data into the server. We can easily do this with the django shell
+while calling
 
-:o: TODO: reformat to 80 lines if possible
+```bash
+$ python manage.py shell
+```
+
+Inside the shell, execute following command to create some example
+data. We have taken this data from github's API and used the
+repositories in the cloudmesh community at
+
+* <https://api.github.com/users/cloudmesh-community/repos>.
+
+:o: it woudl be better to have that data in the repository, do a wget
+on the data and uloads it by calling a program instead of using the
+shell
 
 ```python
 from Repositories.models import Repository
@@ -743,9 +759,11 @@ Repository.objects.create(name="cm-burn",
 exit()
 ```
 
-Now create Repositories/schema.py with following code. This will
-introduce custom type of Repository and query with resolver for
+Now create teh file `Repositories/schema.py` with following code. This will
+creat a custom type `Repository` and query with resolver for
 Repositories.
+
+:o: what is a resolver, it is not explained
 
 ```python
 import graphene
@@ -753,11 +771,9 @@ from graphene_django import DjangoObjectType
 
 from .models import Repository
 
-
 class RepositoryType(DjangoObjectType):
     class Meta:
         model = Repository
-
 
 class Query(graphene.ObjectType):
     Repositories = graphene.List(RepositoryType)
@@ -766,9 +782,9 @@ class Query(graphene.ObjectType):
         return Repository.objects.all()
 ```
 
-Create cloudmeshRepository/schema.py with following code. It just
-inherits query defind in Repositories app. This way we are able to
-isolate schema to their apps.
+Next create the file `cloudmeshRepository/schema.py` with following
+code. It just inherits the query defind in Repositories app. This way we
+are able to isolate schema to their apps.
 
 ```python
 import graphene
@@ -782,10 +798,11 @@ class Query(Repositories.schema.Query, graphene.ObjectType):
 
 schema = graphene.Schema(query=Query)
 ```
+
 ### GraphQL Server Querying :o:
 
-Schema is created now to query it we will use *GraphiQL* which is
-playground for GraphQL queries. Open cloudmeshrepository/urls.py and
+Next, we create a Schema  and use it within *GraphiQL* which is a
+playground for GraphQL queries. Open the file `cloudmeshrepository/urls.py` and
 append following code
 
 ```python
@@ -798,18 +815,18 @@ urlpatterns = [
 ]
 ```
 
-Start your server using following command
+Start your server using the command
 
 ```bash
-python manage.py runserver
+$ python manage.py runserver
 ```
 
 Now open the URL
 
 * <http://localhost:8000/graphql>
 
-in your broweser. You will see *GraphiQL*. In the left pane add the
-following query
+in your broweser. You will see *GraphiQL* window. In the left pane you
+can add queries. Let us add the following query
 
 ```graphql
 {
