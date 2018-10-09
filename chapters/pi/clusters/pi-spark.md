@@ -120,73 +120,22 @@ pi-slave1
 
 Note: The above mentioned slaves are of the same names of the hostnames specified in the /etc/hosts file in the prerequisites section. 
 
-## Test Setup	
+## Run Spark	
 
-Run `spark-shell` from the command line. You will have succeed if you
-see something like this
-
-```bash 
-Welcome to
-      ____              __
-     / __/__  ___ _____/ /__
-    _\ \/ _ \/ _ `/ __/  '_/
-   /___/ .__/\_,_/_/ /_/\_\   version 2.3.0
-      /_/
-         
-Using Scala version 2.11.8 (Java HotSpot(TM) Client VM, Java 1.8.0_65)
-```
-
-Repeat above steps on all worker/slave nodes
-
-:warning: it is unclear which steps these are
-
-Alternative to running above steps for each worker node, you can run
-the the following command on each worked node to create spark directory
-
-```bash 
-$ sudo mkdir -p /opt/spark-2.3.0`
-$ sudo chown -R hduser:hadoop /opt/spark-2.3.0
-```
-
-Run next you can copy the configuration as follows:
-
-``` bash
-$ rsync -avxP /opt/spark-2.3.0 hduser@pislave:/opt
-```
-
-Run the previous command only after creating the /opt/spark-2.3.0 on
-all worker nodes
-
-```bash 
-$ sudo mkdir -p /opt/spark-2.3.0
-$ sudo chown -R hduser:hadoop /opt/spark-2.3.0
-```
-
-:warning: this seems duplicated
-
-Next you need to set the spark home and add it to your path on all
-worker nodes
-
-```bash 
-$ echo "export SPARK_HOME=/opt/spark-2.3.0"
-$ echo "export PATH=$PATH:$SPARK_HOME/bin"
-$ source ~/.bashrc
-```
-
-Finally you need to start the spark server and workers by running the
-master command on the master and the salve command on the slaves
+Now that you've followed the installation steps completely you can start the Spark cluster. 
+Since the SSH server configurations have been done, you only need to run the following command on the master and it will automatically start the Spark workers on the slaves we've mentioned in the ```/etc/hosts``` file and setup the whole cluster. 
 
 Run this on the master:
 
 ```bash 
-$SPARK_HOME/sbin/start_master.sh 
+$SPARK_HOME/sbin/start-all.sh 
 ```
-Run this on the slave:
 
+You can now view the Spark cluster information in the Spark Master UI:  
+
+```http://master_IP:8080```
+
+You can run the following command on the master to stop the cluster. 
 ```bash 
-$SPARK_HOME/sbin/start_slaves.sh 
+$SPARK_HOME/sbin/stop-all.sh 
 ```
-
-To test it out use the following URL:
-
-```http://master_host_name:8080```
