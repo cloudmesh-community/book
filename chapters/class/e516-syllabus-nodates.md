@@ -14,7 +14,7 @@ titlepage-rule-height: 2
 
 # e516: Engineering Cloud Computing
 
-* Lecture Notes: <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub>
+* Lecture Notes: [ePub](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub)
 * Indiana University
 * Faculty: Dr. Gregor von Laszewski (laszewski@gmail.com)
 * Credits: 3
@@ -31,11 +31,7 @@ titlepage-rule-height: 2
   purchase one or more based on our materials list that we will
   release throughout the semester. All students will have access to a
   cloud.
-* This page is maintained and updated at 
-  [e516: Engineering Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md)
-* Course Description URL: 
-  <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md>
-* [Registrar information and Other related classes](https://github.com/cloudmesh-community/book/blob/master/chapters/class/fall2018.md)
+* Course Description: [Link](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md)
 
 This is an introductory class. In case you like to do research and
 more advanced topics, consider taking an independent study with Dr. von
