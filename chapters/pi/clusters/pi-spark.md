@@ -24,13 +24,13 @@ On all the raspberry pi nodes, make sure these prerequisites are completed.
    	sudo apt-get install oracle-java8-installer
 	echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~\.bashrc
 	source ~/.bashrc 
-	``` 
+``` 
 
 3. Install Scala.  
    You can install Scala using 
    ```bash 
 	sudo apt-get install scala 
-	```
+```
 
 3. Add all the hosts in to the /etc/hosts file.  
    An example /etc/hosts file is shown below. 
@@ -38,28 +38,27 @@ On all the raspberry pi nodes, make sure these prerequisites are completed.
 	192.168.10.2		pi-master
 	192.168.10.3		pi-slave0
 	192.168.10.4	 	pi-slave1
-	```
-
+```
 
 ## Download 
 
 Download the most recent version from the Apache website (we use here
-version 2.3.0).
+version 2.3.2).
 
 ---
 
 :warning: *if a newer version is available, your task will be to use the
 newer version and create a new updated set of instructions. At this
-time the newest version is 2.3.0. Please double check.*
+time the newest version is 2.3.2. Please double check.*
 
 ---
 
-* [[Apache Spark](https://www.apache.org/dyn/closer.lua/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz)] 
+* [[Apache Spark Latest Download](http://spark.apache.org/downloads.html)] 
 
 Run the command
 
 ```bash 
-wget http://apache.claz.org/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz 
+wget https://www.apache.org/dyn/closer.lua/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz 
 ```
 
 ## Installation
@@ -67,69 +66,59 @@ wget http://apache.claz.org/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
 Create the folder for storing spark install files
 
 ```bash 
-$ sudo mkdir -p /opt/spark-2.3.0
-$ sudo chown -R hduser:hadoop /opt/spark-2.3.0 
+sudo mkdir -p /opt/spark-2.3.0
 ```
 
 Unzip the tar fle into destination folder
 
-```bash tar -xzf spark-2.3.0-bin-hadoop2.7.tgz -C /opt/spark-2.3.0 --strip-components=1 ```
+```bash tar -xzf spark-2.3.2-bin-hadoop2.7.tgz -C /opt/spark-2.3.0 --strip-components=1 ```
 
 Update the `PATH` variable
 
 ```bash 
-$ echo "export SPARK_HOME=/opt/spark-2.3.0" >> ~\.bashrc
-$ echo "export PATH=$PATH:$SPARK_HOME/bin" >> ~\.bashrc
-$ echo "export PATH=$PATH:$SPARK_HOME/sbin" >> ~\.bashrc
-$ source ~/.bashrc 
+echo "export SPARK_HOME=/opt/spark-2.3.2" >> ~\.bashrc
+echo "export PATH=$PATH:$SPARK_HOME/bin" >> ~\.bashrc
+echo "export PATH=$PATH:$SPARK_HOME/sbin" >> ~\.bashrc
+source ~/.bashrc 
 ```
 
 Copy the template from `spark-env.sh.template` to `spark-env.sh`
 
 ```bash 
-$ cp $SPARK_HOME/spark-env.sh.template $SPARK_HOME/spark-env.sh 
+cp $SPARK_HOME/conf/spark-env.sh.template $SPARK_HOME/conf/spark-env.sh 
 ```
 
 Edit spark-env.sh file to change configurations
 
 
 ```bash 
-$ nano $SPARK_HOME/spark-env.sh 
+vi $SPARK_HOME/conf/spark-env.sh 
+```
+
+Add the following configurations in to the spark-env.sh file.  
+
+```
+#!/usr/bin/env bash
+SPARK_WORKER_MEMORY = 512m
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+export SPARK_WORKER_CORES=1
 ```
 
 Edit slaves file on master node
 
 ```bash 
-$ cd $SPARK_HOME/conf
-$ cp slaves.template slaves
-$ nano slaves
+cp $SPARK_HOME/conf/slaves.template $SPARK_HOME/conf/slaves
+vi $SPARK_HOME/conf/slaves
 ``` 
 
-Update the configurations
+And add the following content. (Change this according to the number of slaves you configure).
 
 ```
-SPARK_MASTER_HOST = 169.254.24.132
-SPARK_WORKER_MEMORY = 512m
+pi-slave0
+pi-slave1
 ```
 
----
-
-:warning: *it is possible to write a script doing this*
-
----
-
-
-Add the hostnames to the file
-
-* pimaster (hostname of master node)
-* pislave01 (hostname of worker slave 01)
-* pislave02 (hostname of worker slave 02)
-
----
-
-:warning: *it is possible to write a script doing this*
-
----
+Note: The above mentioned slaves are of the same names of the hostnames specified in the /etc/hosts file in the prerequisites section. 
 
 ## Test Setup	
 
