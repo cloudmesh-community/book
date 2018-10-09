@@ -1,4 +1,4 @@
-# Julia :o:
+# Julia :o: :question:
 
 :warning: Although we do not intend to use julia in this class, we
 provid ethe option for a small number of students to develop this
@@ -24,7 +24,7 @@ Include here parallel language constructs
 
 * Missing Values
 * Network Streams
-* Parallel COmputing
+* Parallel Computing
 
 ## Interfaceing with the System
 

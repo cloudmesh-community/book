@@ -1,4 +1,4 @@
-# Architectures :new: {#s-cloud-architectures}
+# Architectures {#s-cloud-architectures}
 
 ---
 
@@ -22,14 +22,14 @@ implementations.
 
 We start our observation with some a depiction of some of the
 important architectural models motivating the current state of
-information technology services. We provide in the **Figure Evolution
-of Compute Architectures**. The [original figure]
+information technology services we provide in +@fig:evolution-computer-arch.
+The [original figure]
 (http://www.cmlab.csie.ntu.edu.tw/~jimmychad/CN2011/Readings/CloudComputingNewWine.pdf)
 has been updated by von Laszewski to include the mobile computing and
 the internet of things phase that is bringing rapid changes to how we
-perceive and use the cloud in the neer future.
+perceive and use the cloud in the near future.
 
-![**Figure:** Evolution of Compute Architectures](images/compute-phase.png)
+![Evolution of Compute Architectures](images/compute-phase.png){#fig:evolution-computer-arch}
 
 We define the following terminology based on the evolution of compute
 architectures:
@@ -37,25 +37,29 @@ architectures:
 
 ### Mainframe Computing
 
-Mainframe Computing refers to
+Mainframe computing is using the larger and more reliable computers, 
+like IBM System z9, to run the critical applications, bulk data processing, 
+enterprise resource planning and business transaction procesings.
 
-> :o: can be contributed by student
+Mainframe Computing refers to 
+
+:o: This section can be contributed by a student
 
 ### PC Computing
 
 The term PC is short for personal computer. The first PCs were
 introduced by IBM to the market. PCs need an operating system such as
-Windows, MacOSX, or Linux
+Windows, macOS, or Linux
 
 PC Computing refers to
 
-> an aera where consumers predominantly used personal computers to
+> an era where consumers predominantly used personal computers to
 > conduct their work. Such computers were mostly stand alone without
 > network as early networks were not available to consumers.
 
-### Intranet and ServerComputing
+### Intranet and Server Computing
 
-We refer to Intranet and ServerComputing as an environment in which 
+We refer to Intranet and Server Computing as an environment in which 
 
 > the computers are part of an private network, also called, intranet,
 > that is contained within an enterprise and later on also
@@ -70,7 +74,7 @@ original definition of Grid computing has been summarise as follows:
 
 > A computational Grid is a hardware and software infrastructure that
 > provides dependable, consistent, pervasive, and inexpensive access
-> to high-end computational capabilities.
+> to high-end computational capabilities. [@foster-book]
 
 However, in the paper we also define that Grids were not just about
 computing, but introduced an approach that through the introduction of
@@ -82,7 +86,7 @@ sharing and problem solving in dynamic, multi-institutional virtual
 organizations to enable sophisticated international scientific and
 business-oriented collaborations.
 
-THis definition is certainly including services that are today offered
+This definition is certainly including services that are today offered
 by the Cloud. Hence in the early days of cloud computing there was a
 large debate occurring if cloud is just another term for Grid. In
 [Cloud Computing and Grid Computing 360-Degree Compared]
@@ -122,7 +126,7 @@ Internet Computing refers to
 > the infrastructure that enables sharing of data, within the WWWW community.
 
 Internet computing also comprises early infrastructures such as AOL,
-which poularized the term *you got mail*>
+which poularized the term *you got mail*
 
 ### Cloud Computing
 
@@ -149,7 +153,7 @@ Mobile Computing refers to
 Internet of Things Computing refers to
 
 > devices that are interconnected via the internet while they are
-> embedded in "things" or common objects. The dives send and receive
+> embedded in *things* or common objects. The dives send and receive
 > data to be integrated into a network with sensors and actuators
 > reacting upon sensory and other data.
 
@@ -163,7 +167,7 @@ follow the following definitions:
 
 Edge Computing refers to
 
-> computing conducted on the very edge of infrastructure. THis means
+> computing conducted on the very edge of infrastructure. This means
 > that data that is not needed in the data center can be calculated
 > and analyzed on the edge devices instead. No interaction between
 > cloud services is needed. Only the absolute required data is send to
@@ -173,7 +177,7 @@ Edge Computing refers to
 
 FoG Computing refers to 
 
-> computing conducted in-between the cloud and the edge devices. THis
+> computing conducted in-between the cloud and the edge devices. This
 > could be for example part of a smart network, that hosts a small set
 > of analytics capabilities, so that the data does not have to travel
 > back to the data center, but the edge device is not powerful enough
@@ -189,13 +193,14 @@ The *as a Service* architecture was one of the earliest definition of
 cloud architecture while focussing on the service aspect provided by
 the cloud. the layers such as IaaS, PaaS, and SaaS provide a layered
 architecture view while separating infrastructure, platform, and
-services. THis allows a separation of concerns typically between
+services. This allows a separation of concerns typically between
 infrastructure providers, platform developers, and software architects
 using platforms and or infrastructure services.
 
-The typical triangular diagram is often used to represent it.
+The typical triangular diagram (see +@fig:iaas-triangle) is often used
+to represent it.
 
-![**Figure:**](images/architecture-iaas.png)
+![Infrastructure as a Service](images/architecture-iaas.png){#fig:iaas-triangle}
 
 ## Product or Functional Based Model
 
@@ -284,8 +289,8 @@ Source: <https://downloads.cloudsecurityalliance.org/assets/research/security-gu
 
 One of the issues we see today is that it is unrealistic to assume
 clouds are only provided by one vendor, or that they have all the same
-interface. Each vendor is advertising their special servicies to
-distinguish themself s from the competitors. For the end user and the
+interface. Each vendor is advertising their special services to
+distinguish themselves from the competitors. For the end user and the
 developer that projects the problem of vendor lockin. However, we need
 to be aware of efforts that allow an easy of such vendor lockin while
 for example providing multi cloud solutions.  Such solutions integrate
@@ -296,7 +301,7 @@ to use multiple cloud vendors at the same time.
 
 One of the earliest such tools is Cloudmesh.org, which is lead by von
 Laszewski. The tool was developed at a time when AWS and Nimbus, and
-Eucalyptus where predominant players. At that tiem OpenStack was just
+Eucalyptus where predominant players. At that time OpenStack was just
 transitioned from a NASA project to a community development.
 
 FutureGrid ws one of the earliest academic cloud offerings to explore

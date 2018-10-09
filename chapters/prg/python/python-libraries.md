@@ -78,7 +78,7 @@ here](https://lawsie.github.io/guizero/howto/).
 
 ### Kivy
 
-You can install Kivy on OSX as follows:
+You can install Kivy on macOS as follows:
 
 ```bash
 brew install pkg-config sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer
@@ -223,7 +223,7 @@ examples. For the assignments and the projects such platform dependent
 libraries are not to be used.
 
 If however you can write a platform independent code that works on
-Linux, OSX and Windows while using the python.org version but develop it
+Linux, macOS and Windows while using the python.org version but develop it
 with any of the other tools that is just fine. However it is up to you
 to guarantee that this independence is maintained and implemented. You
 do have to write requirements.txt files that will install the necessary

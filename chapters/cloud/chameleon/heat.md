@@ -61,9 +61,9 @@ deploy such as OpenStack or MPI or even more advanced deployments such
 as efficient SR-IOV enabled MPI in KVM virtual machines. We also provide
 common building blocks for cluster architectures, such as an NFS share.
 Complex appliances are identified by a badge in their top-right corner
-representing a group of machines, as shown in the screenshot:
+representing a group of machines, as shown in +@fig:chameleon-nfs.
 
-![**Figure:** NFS file share](images/NFS.png)
+![NFS file share](images/NFS.png){#fig:chameleon-nfs}
 
 ## Deployment
 

@@ -1,6 +1,6 @@
 # Raspberry Pi Kubernetes Cluster (B) :o:
 
-This tutorial will guide the steps towards setting up a Kubernetes Pi cluster.
+This section will guide the steps towards setting up a Kubernetes Pi cluster.
 The steps are:
 
 a. Setting up static IP
@@ -201,6 +201,6 @@ can be used to check the pod status of the cluster
   
 ## Troubleshooting 
 
-During the development of this tutorial its been experienced that
+During the development of this section its been experienced that
 Kubernetes cluster needs at least one master and three worker nodes.
 Using less resources will lead to slow processor

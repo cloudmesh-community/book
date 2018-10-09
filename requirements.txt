@@ -1,0 +1,8 @@
+pandoc-tablenos
+pandoc-fignos
+pandoc-mustache
+pprint
+oyaml
+treelib
+docopt
+mkdocs

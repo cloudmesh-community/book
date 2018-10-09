@@ -1,5 +1,4 @@
-Visualization :o:
-=================
+Visualization :o: :question:
 
 ![Visualisation](images/which-chart-when.jpeg)
 

@@ -42,7 +42,7 @@ type it in the commandshell or PowerShell
 
     PS C:\Users\gregor> ssh
 
-Naturally you can now use it just as on Linux or OSX. and use it to
+Naturally you can now use it just as on Linux or macOS. and use it to
 login to other resources
 
     PS C:\Users\gregor> ssh myname@computer.example.com
@@ -134,11 +134,11 @@ Other options may be better suited for you and we leave it up to you to
 make this decision.
 
 Chocolatey is a software management tool that mimics the install
-experience that you have on Linux and OSX. It has a repository with many
+experience that you have on Linux and macOS. It has a repository with many
 packages. The packages are maintained by the community and you need to
 evaluate security implications when installing packages hosted on
 chocolatey just as you have to do if you install software on Linux and
-OSX from their repositories. Please be aware that there could be
+macOS from their repositories. Please be aware that there could be
 malicious code offered in the chocolatey repository although the
 distributors try to remove them.
 

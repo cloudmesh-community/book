@@ -44,7 +44,7 @@ The paper format is included in hid-sample project-report (e.g. same as
 paper):
 
 -   <https://github.com/cloudmesh-community/hid-sample/tree/master/project-paper>
-    The code and the paper are to be added in your hid folder. YOu will
+    The code and the paper are to be added in your hid folder. You will
     be creating lower case directories called `project-paper` and
     `project-code`. You will not check in any data, but instead create
     scripts that fetch the data.
@@ -80,7 +80,7 @@ file a github issue with the title
 	
 You assign it to all team members in your project. An abstract is
 submitted in that issue that describes what you do in your
-project. THe course number is the number of your course. We will be
+project. The course number is the number of your course. We will be
 commenting on your project idea. It is your responsibility to see if
 this project has already been done. Please do not jut go ahead an copy
 someone else's code, try to do something that you do. However you can
@@ -136,7 +136,7 @@ In case you have not completed your swagger REST service a portion of
 this project will be used to satisfy that requirement.
 
 One nice project would for example be the automated creation of rest
-services while using a function specification of python. THis way you
+services while using a function specification of python. This way you
 could for example look at scikit learn, write 10 use cases, use your
 code generator and create for each of them the rest service. Important
 would be a scalability test.
@@ -159,7 +159,7 @@ create for each tem member on one of the following technologies
 9. Spark
 
 You will create a reproducible deployment and work towards the
-implementation of a deployment.  In previous tutorials for the class
+implementation of a deployment.  In previous  classes
 students focused on setting this up for a small number of nodes. What
 we need to do now is to expand this to a scalable solution with many
 hundreds of Pi's in the cluster. Naturally login in by hand on these

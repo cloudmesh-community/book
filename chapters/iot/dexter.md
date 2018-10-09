@@ -4,7 +4,7 @@ Dexter
 Creating an SD Card
 -------------------
 
-### OSX
+### macOS
 
 First, install Etcher from [etcher.io](https://etcher.io/) which allows
 you to flash images onto the SD card. When flashing make sure you only

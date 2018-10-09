@@ -111,7 +111,7 @@ drive at a later time I suggest to get a 6GB/s SSD and not a 3GB/s.
 
 In case of Windows, your could also get yourself a UBS stick or
 external SSD drive and place ubuntu on it. You could than use your
-bios to boot of from that drive. THis way you do not have to modify
+bios to boot of from that drive. This way you do not have to modify
 anything on your computer. This method works very well for most
 computers and allows you to use the maximum memory while for example
 using ubuntu.
@@ -215,7 +215,9 @@ programming and do a project.
 We provide you with a general introduction to Python. This includes
 enough knowledge so you can conduct a project with it. We will build
 on these technologies to introduce you to python libraries that can be
-used for big data.
+used for big data. Not every section in the Python chapter will need
+to be used in this class. At minimum you must understand python
+classes, and the map reduce function. 
 
 ### Track 2: Theory
 
@@ -234,11 +236,12 @@ You have a choice in this class between writing a two page review
 paper about a big data technology or application (area), or contribute
 a chapter to this document. We explain next the difference:
 
-**Review Paper:** This track will introduce you into how to write an
-academic paper and conduct proper bibliography management. Knowing how
-to write is a preparation for your term project.
+**Review Paper:** A review paper will introduce your into how to write
+an academic paper and conduct proper bibliography management. Knowing
+how to write is a preparation for your term project.
 
-You will be writing a paper that is 2 pages long possibly within a
+You will be writing a paper that is 2 pages long (in a particular
+format, typically ACM) possibly within a
 team. In case you work in a team you have to produce as many papers as
 you have team members.  We like to avoid that all students take the
 same topic. We will use github to avoid that everyone chooses same
@@ -248,20 +251,23 @@ paper.
 We noticed a curious observation in previous classes. Any paper
 written in MSWord was inferior. Thus we no longer provide the choice
 to write papers in MSWord in order for you to achieve your
-best. Papers and Project reports must be written in LaTeX
+best. Papers and Project reports must be written in LaTeX or
+markdown. For the classes starting in 2018 we do prefer markdown and
+may restrict all document to this format.
 
-**Chapter:** The chapter is essentially similar to a review paper, but
+**Chapter:** A is chapter  to a review paper, but
 is written in markdown and can be added to the lecture notes. A
 chapter should be formulated in a consistent form and is equivalent in
 length (number of words) to those of the 2 page paper. Bibliography
-management is conducted in bibtex and can e used in the markdown
+management is conducted in bibtex and can be used in the markdown
 document.
 
 Important in both cases is that you stay focused. You can assume that
 if you write a document about "Big Data in Baseball", you do not spend
-1.5 pages sto describe what big data is and only half a page where
+1.5 pages to describe what big data is and only half a page where
 baseball fits in. What you should do is focus on the topic. A chapter
-could also include some practical lessons with real programming lessons.
+could also include some practical lessons with real programming
+lessons. 
 
 
 ### Track 4: Term Paper/Project
@@ -286,5 +292,7 @@ limited to an A-. This is achieved simply by reducing the grade of
 your term report by a full grade due to the distribution of the grade
 this will result in a fractional grade reduction and limits the
 maximum grade to an A-.
+
+Starting in 2018 the paper format will be Markdown.
 
 

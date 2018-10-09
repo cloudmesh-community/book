@@ -1,4 +1,4 @@
-# OpenCV :new: {#s-opencv}
+# OpenCV {#s-opencv}
 
 ---
 
@@ -13,7 +13,7 @@
 OpenCV (Open Source Computer Vision Library) is a library of thousands
 of algorithms for various applications in computer vision and machine
 learning. It has C++, C, Python, Java and MATLAB interfaces and supports
-Windows, Linux, Android and Mac OS. In this tutorial, we will explain
+Windows, Linux, Android and Mac OS. In this section, we will explain
 basic features of this library, including the implementation of a simple
 example.
 
@@ -69,7 +69,8 @@ and the result is written to a new image.
 
 The image was downloaded from USC standard database:
 
-\URL{http://sipi.usc.edu/database/database.php?volume=misc&image=9}
+<http://sipi.usc.edu/database/database.php?volume=misc&image=9>
+
 ### Displaying the image
 
 The image is saved in a numpy array. Each pixel is represented with 3

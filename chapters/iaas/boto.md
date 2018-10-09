@@ -27,41 +27,53 @@ It supports Python versions 2.6.5, 2.7 and 3.3+.
 
 
 To install boto with its latest release, use
-	
-	$ pip install boto3
 
+```bash
+$ pip install boto3
+```
+    
 To install boto from source, use 
 
-	$ git clone https://github.com/boto/boto3.git
-	$ cd boto3
+```bash
+$ git clone https://github.com/boto/boto3.git
+$ cd boto3
+```
 
 Before you install it we suggest that you either use pyenv or venv.
 
-	$ python setup.py install
+```bash
+$ python setup.py install
+```
 
 To install additional modules to use boto.cloudsearch, boto.manage, boto.mashups
 and to get all modules required for test suite, than the run command
 
-	python setup.py install
+```bash
+$ python setup.py install
+```
 
 ## Access key
 
 An initial setup is required to be able to access AWS EC2 from BOTO wherein you provide the key and region details. 
-	You can find the key details from IAM console on AWS.
+You can find the key details from IAM console on AWS.
 	
 ## BOTO configuration
 
 BOTO can be configured in two ways, either by using the aws configure command if you have AWS Command line interface installed or simply by manually creating and editing the `~/.aws/credentials` file to include below parameters.
 
-	[default]
-	aws_access_key_id = <YOUR_ACCESS_KEY>
-	aws_secret_access_key = <YOUR_SECRET_KEY>
+```python
+[default]
+aws_access_key_id = <YOUR_ACCESS_KEY>
+aws_secret_access_key = <YOUR_SECRET_KEY>
+```
 
 Similar to libcloud, BOTO also requires the region where you would create your EC2 instance, the same can be maintained by creating a config file.
 
+```bash
 	$ emacs .aws/config
 	[default]
 	region=<region name> # for example us-east
+```
 
 ## EC2 interface of Boto
 
@@ -70,14 +82,16 @@ Similar to libcloud, BOTO also requires the region where you would create your E
 
 To access EC2 instance, first import the required package.
 
-	import boto3.ec2
+```python
+import boto3.ec2
+```
 
 Make a connection to from application by specifying AWS region in which the user
 account is created, aws access key and secret key. AWS provides access key and
 secret key when a new user is created. Access key and secret key helps to
 identify the user.
 
-```
+```python
 connection = boto3.ec2.connect_to_region('<region name>', aws_access_key_id =
 '<access key>', aws_secret_access_key = '<secret key'>)
 ```
@@ -89,23 +103,29 @@ List EC2 instances
 
 The code to list the running instances (if you have some) is very simple:
 
-	import boto3
+```python
+import boto3
 	
-	ec2 = boto3.client('ec2')
-	response = ec2.describe_instances()
-	print(response)
+ec2 = boto3.client('ec2')
+response = ec2.describe_instances()
+print(response)
+```
 	
 #### Launch a new instance
 
 To launch a new instance with default properties
 
-	connection.run_instances('<ami-id>')
+```python
+connection.run_instances('<ami-id>')
+```
 
 Additional parameters can be specified to create instance of specific type and
 security group.
 
-	connection.run_instances('<ami-id>',key_name='<key>', instance_type='<type>',
-	security_groups=['<security group list>'])
+```python
+connection.run_instances('<ami-id>',key_name='<key>', instance_type='<type>',
+security_groups=['<security group list>'])
+```
 
 Instance type specifies the storage and type of platform. Secutity groups are
 required to provide access rights such as access to SSH into the instance.
@@ -115,9 +135,10 @@ required to provide access rights such as access to SSH into the instance.
 The `get_all_reservations` function of EC2Connection object will return list of
 running instances.
 
-	reservations = connection.get_all_reservations()
-	instances = reservations[0].instances
-
+```python
+reservations = connection.get_all_reservations()
+instances = reservations[0].instances
+```
 
 
 #### Stop instance
@@ -125,39 +146,43 @@ running instances.
 Up and running instances can be stopped. Thw `stop_instances` function of connection
 object enables multiple instances to be stopped in one command.
 
-	connection.stop_instances(instance_ids=['<id1>','<id2>', ...]) 
-    
+```python
+connection.stop_instances(instance_ids=['<id1>','<id2>', ...]) 
+```
 
 #### Terminate instance
 
 To terminate one or more instances simultaneously, use the `terminate_instances`
 function.
 
-	connection.terminate_instances(instance_ids=['<id1>','<id2>', ..]) 
+```python
+connection.terminate_instances(instance_ids=['<id1>','<id2>', ..]) 
+```
 
 ### Reboot instances
 
 The next example showcases how to reboot an instance, which is copied from  <http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html>
 
-	# Code copied form 
-	# http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html
-	import boto3
-	from botocore.exceptions import ClientError
+```python
+# Code copied form 
+# http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html
+import boto3
+from botocore.exceptions import ClientError
 	
-	ec2 = boto3.client('ec2')
+ec2 = boto3.client('ec2')
 	
-	try:
-	    ec2.reboot_instances(InstanceIds=['INSTANCE_ID'], DryRun=True)
-	except ClientError as e:
-	    if 'DryRunOperation' not in str(e):
-	        print("You don't have permission to reboot instances.")
-	        raise
-	try:
-	    response = ec2.reboot_instances(InstanceIds=['INSTANCE_ID'], DryRun=False)
-	    print('Success', response)
-	except ClientError as e:
-	    print('Error', e)
-
+try:
+    ec2.reboot_instances(InstanceIds=['INSTANCE_ID'], DryRun=True)
+except ClientError as e:
+    if 'DryRunOperation' not in str(e):
+        print("You don't have permission to reboot instances.")
+        raise
+try:
+    response = ec2.reboot_instances(InstanceIds=['INSTANCE_ID'], DryRun=False)
+    print('Success', response)
+except ClientError as e:
+    print('Error', e)
+```
 
 ## Amazon S3 interface of Boto
 
@@ -166,13 +191,16 @@ The next example showcases how to reboot an instance, which is copied from  <htt
 
 Import required packages
 
-	import boto3.s3
-	from boto3.s3.key import Key
+```python
+import boto3.s3
+from boto3.s3.key import Key
+```
 
 Create a connection 
 
-	connection = boto.connect_s3('<access-key>','<secret-key>')
-    
+```python
+connection = boto.connect_s3('<access-key>','<secret-key>')
+```
 
 
 #### Create new bucket in S3
@@ -183,21 +211,26 @@ about number of data files allowed per bucket.
 Bucket name has to be unique name accross all the AWS regions and hence globally
 unique.
 
-	bucket = conn.create_bucket('<bucket_name>')
+```python
+bucket = conn.create_bucket('<bucket_name>')
+```
 
 If bucket name is unique, a new bucket of specified name will get created.
 If bucket name is not unique, application will throw error as
 
-	boto.exception.S3CreateError: S3Error[409]: Conflict
-
+```python
+boto.exception.S3CreateError: S3Error[409]: Conflict
+```
 
 #### Upload data
 
 To upload a file in the S3 bucket, first create a key object from new_key()
 function of bucket.
 
-	key = bucket.new_key('hello2.txt')
-	key.set_contents_from_string('Hello World!')
+```python
+key = bucket.new_key('hello2.txt')
+key.set_contents_from_string('Hello World!')
+```
 
 This will create hello.txt file with content Hello World! in the text file. This
 file can be found inside the bucket in which new key is created.
@@ -207,8 +240,10 @@ file can be found inside the bucket in which new key is created.
 
 One account can have maximum 100 buckets in which data objects can be stored. 
 
-	result = connection.get_all_buckets()
-
+```python
+result = connection.get_all_buckets()
+```
+    
 The `get_all_buckets` function of S3Connection lists all the buckets within account.
 It returns ResultSet object which has list of all buckets.
     
@@ -219,27 +254,31 @@ It returns ResultSet object which has list of all buckets.
 Data objects stored in a bucket has a metadata associated with it such as
 LastModified date and time. This information can also be captured.
 
-	# To list files in selected bucket
-	for key in bucket.list():
-        	print "{name}".format(name = key.name)
-        	print "{size}".format(size = key.size)
-        	print "{modified}".format(modified = key.last_modified)
-
+```python
+# To list files in selected bucket
+for key in bucket.list():
+    print "{name}".format(name = key.name)
+    print "{size}".format(size = key.size)
+    print "{modified}".format(modified = key.last_modified)
+```
 
 #### Delete object
 
 To delete any data object from bucket, delete_key function of bucket is used. 
 
-	k = Key(<bucket-name>, <file-name>)
-	k.delete()
+```python
+k = Key(<bucket-name>, <file-name>)
+k.delete()
+```
 
 #### Delete bucket
 
 To delete a bucket, provide a bucket name and call the `delete_bucket` function of
 S3Connection object.
 
-	connection.delete_bucket('<bucket-name>') 
-
+```python
+connection.delete_bucket('<bucket-name>') 
+```
 
 ## References 
 
@@ -262,7 +301,7 @@ E.boto.cloudmesh.1:
 
 > where we use libcloud. The code from Amazon is.  
 
-```
+```python
 import sys
 import boto3
 from botocore.exceptions import ClientError
@@ -299,6 +338,7 @@ else:
     except ClientError as e:
         print(e)
 ```
+        
 E.boto.cloudmesh.2:
 
 > Integrate, start, stop, rebot, and other useful functions

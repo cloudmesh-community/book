@@ -1,4 +1,4 @@
-# Amazon Web Services :o:
+# Amazon Web Services
 
 ## AWS Products
 
@@ -69,19 +69,26 @@ Kubernetes](https://aws.amazon.com/eks/?nc2=h_mo)
 * [Amazon Elastic Container
 Registry](https://aws.amazon.com/ecr/?nc2=h_mo)
 
-### Other Compute Related Services
+### Serverless Compute using AWS Lambda
 
-In addition to these services a number of additional compute services 
-are offered which you can find in the Appendix. This includes 
-Serverless Computing with AWS Lambda.
-Serverless computing or Function as a Service (FaaS) is a new cloud computing paradigm that has
-gained popularity recently. AWS Lambda was one of the first serverless
-computing services that was made available to the public,  Serverless
-computing allows users to run small functions in the cloud without 
-having to worry about resource requirements. More information regarding
-AWS Lambda can be found in the following document
+ In addition to these services a number of additional compute services
+Serverless computing or FaaS is a new cloud computing paradigm that
+has are offered which you can find in the Appendix. This includes
+gained popularity recently.  Serverless Computing with AWS Lambda.
+Serverless computing or Function as a Service (FaaS) is a new cloud
+computing paradigm that has gained popularity recently. AWS Lambda was
+one of the first serverless computing services that was made available
+to the public, Serverless computing allows users to run small
+functions in the cloud without having to worry about resource
+requirements. More information regarding AWS Lambda can be found in
+the following document
 
 * <https://aws.amazon.com/lambda/>
+
+### Serverless Compute using AWS Lambda
+
+Serverless computing or FaaS is a new cloud computing paradigm that has
+gained popularity recently. 
 
 
 
@@ -358,4 +365,6 @@ services that it supports." A more detailed description on Libcloud and
 how you can use it to connect with AWS is provided in the Section 
 [Python libcloud](#python-libcloud).
 
+For more information about the features and supported providers, please
+refer to the [documentation](https://libcloud.readthedocs.org/en/latest/)
 

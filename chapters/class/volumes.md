@@ -27,6 +27,20 @@ This repository generates the following epub
 Students that have to contribute as part of their class Technology summaries are asked to produce meaningful, advertisement free summaries of the technology and indicate in some cases if not obvious show they relate to cloud or big data. The length of such summaries is about 300 words. Students of E516 do not have to contribute to this and will instead focuss on programming. Students of I423, I523 and other sections must contribute to it and will get an assignment related to it.
 We post here the existence of this document also for 516 students. They can voluntarily improve or add sections if they like which will go into their discussion credit.
 
+Please use the following indicators to mark the progress of summaries that you are working on. 
+
+:smiley: ready for review
+
+:hand: selected by student so others do not select it and we know what is worked on
+
+:wave: needs revision (only assigned by ta, after smiley)
+
+The signs are put as follows. You can view an example at <https://github.com/cloudmesh/technologies/blob/master/chapters/tech/bioconductor.md>
+
+Ex -  Title Of Summary :hand: fa18-xxx-xx
+
+
+
 ## Chapters
 
 Previously we asked students to write a 2 page paper on a topic related to bigdata analytics or cloud technologies (dependent on the course). Example papers are listed bellow

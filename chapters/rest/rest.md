@@ -161,8 +161,9 @@ happens in this example.
 
 ```
     from flask import Flask
-    from flask_restful import reqparse, abort, Api, Resource
-
+    from flask_restful import reqparse, abort
+    from flask_restful import Api, Resource
+    
     app = Flask(__name__)
     api = Api(app)
 
@@ -273,9 +274,9 @@ $ sudo apt-get update
 $ sudo apt-get install -y mongodb-org
 ```
     
-### OSX install of MongoDB
+### macOS install of MongoDB
 
-On OSX you can use the command
+On macOS you can use the command
 
     $ brew update
     $ brew install mongodb
@@ -898,14 +899,16 @@ the services explicitly for now.
 
 On ubuntu, you need to do the following steps:
 
-\TODO{TO BE CONTRIBUTED BY THE STUDENTS OF THE CLASS AS HOMEWORK}
+:o: TODO: Section can be contributed by student.
+
 On windows 10, you need to do the following steps:
 
-\TODO{TO BE CONTRIBUTED BY THE STUDENTS OF THE CLASS AS HOMEWORK. If
+:o: TODO: Section can be contributed by student. If
   you elect Windows 10. You could be using the online documentation
   provided by starting it on Windows, or running it in a docker
-  container.}
-On OSX you can use home-brew and install it with:
+  container.
+  
+On macOS you can use home-brew and install it with:
 
     $ brew update
     $ brew install mongodb
@@ -918,7 +921,7 @@ need to install it as follows:
 ### Starting the service
 
 We have provided a convenient Makefile that currently only works for
-OSX. It will be easy for you to adapt it to Linux. Certainly you can
+macOS. It will be easy for you to adapt it to Linux. Certainly you can
 look at the targets in the makefile and replicate them one by one.
 Important targets are deploy and test.
 
@@ -938,7 +941,7 @@ To test the services you can say:
 
     $ make test
 
-YOu will se a number of json text been written to the screen.
+You will se a number of json text been written to the screen.
 
 ### Creating your own objects
 
@@ -998,8 +1001,7 @@ command.
 
 The proposed command is located at:
 
-*
-<https://github.com/cloudmesh/rest/blob/master/cloudmesh/ext/command/admin.py>
+* <https://github.com/cloudmesh/cloudmesh.rest/blob/master/cloudmesh/admin/command/admin.py>
 
 It will be up to the class to implement such a command. Please
 coordinate with each other.
@@ -1009,7 +1011,7 @@ straight forward. A great extension is to load the objects definitions
 or eve e.g. settings.py not from the class, but from a place in
 .cloudmesh. I propose to place the file at:
 
-    .cloudmesh/db/settings.py
+    ~/.cloudmesh/db/settings.py
 
 the location of this file is used when the Service class is initialized
 with None. Prior to starting the service the file needs to be copied

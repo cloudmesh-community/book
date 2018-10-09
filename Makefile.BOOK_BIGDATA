@@ -1,0 +1,351 @@
+INDEX=\
+  chapters/SECTION/SECTION-PREFACE.md\
+  chapters/version.md\
+  chapters/authors.md\
+  chapters/preface/create.md\
+  chapters/preface/issues.md\
+  chapters/preface/notation.md\
+  chapters/class/organization-523.md\
+  chapters/class/plagiarism.md\
+  chapters/class/policies.md\
+  chapters/class/e534-i523.md\
+  chapters/class/volumes.md\
+  chapters/in/datasets.md\
+  chapters/class/assignments-523.md\
+  chapters/bigdata/intro-fall-2018.md\
+  chapters/bigdata/applications/overview.md\
+  chapters/bigdata/applications/physics.md\
+  chapters/bigdata/applications/radar.md\
+  chapters/bigdata/applications/lifestyle.md\
+  chapters/bigdata/applications/sport.md\
+  chapters/bigdata/applications/cloud.md\
+  chapters/bigdata/applications/usecases.md\
+  chapters/bigdata/applications/sensor.md\
+  chapters/bigdata/applications/web.md\
+  chapters/bigdata/applications/health.md\
+  chapters/bigdata/algorithms/technology.md\
+  chapters/bigdata/algorithms/clustering.md\
+  chapters/bigdata/algorithms/plotviz.md\
+  chapters/SECTION/SECTION-DEVTOOLS.md\
+  chapters/linux/refcards.md\
+  chapters/cloud/virtualbox.md\
+  chapters/cloud/vagrant.md\
+  chapters/cloud/packer.md\
+  chapters/os/ubuntu-usb-osx.md\
+  chapters/git/github.md\
+  chapters/git/gitpullreqest.md\
+  chapters/linux/linux.md\
+  chapters/linux/ssh.md\
+  chapters/linux/ssh-futuresystems.md\
+  chapters/linux/ssh-excerise.md\
+  chapters/prg/SECTION-PYTHON.md\
+  chapters/prg/python/python-intro.md\
+  chapters/prg/python/python-install.md\
+  chapters/prg/python/python-interactive.md\
+  chapters/prg/python/python-editor.md\
+  chapters/prg/python/python.md\
+  chapters/prg/python/python-libraries.md\
+  chapters/prg/python/python-data.md\
+  chapters/prg/python/python-matplotlib.md\
+  chapters/prg/python/python-docopts.md\
+  chapters/prg/python/python-cmd5.md\
+  chapters/prg/python/python-cmd.md\
+  chapters/prg/python/opencv/opencv.md\
+  chapters/prg/python/opencv/secchi.md\
+  chapters/SECTION/SECTION-DATA.md\
+  chapters/data/formats.md\
+  chapters/data/mongoengine.md\
+  chapters/prg/python/python-wordcount.md\
+  chapters/prg/python/dask/dask.md\
+  chapters/prg/python/numpy/numpy.md\
+  chapters/prg/python/scipy/scipy.md\
+  chapters/prg/python/scikit-learn/scikit-learn-k-means.md\
+  chapters/prg/python/random-forest/random-forest.md\
+  chapters/prg/python/fingerprint/fingerprint.md\
+  chapters/prg/python/facedetection/facedetection.md\
+  chapters/SECTION/SECTION-FAQ.md\
+  chapters/faq.md\
+  chapters/faq-523.md\
+  chapters/container/glossary.md\
+  chapters/SECTION/SECTION-REFERENCES.md
+
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/notation.md dest/chapters/class/organization-523.md dest/chapters/class/plagiarism.md dest/chapters/class/policies.md dest/chapters/class/e534-i523.md dest/chapters/class/volumes.md dest/chapters/in/datasets.md dest/chapters/class/assignments-523.md dest/chapters/bigdata/intro-fall-2018.md dest/chapters/bigdata/applications/overview.md dest/chapters/bigdata/applications/physics.md dest/chapters/bigdata/applications/radar.md dest/chapters/bigdata/applications/lifestyle.md dest/chapters/bigdata/applications/sport.md dest/chapters/bigdata/applications/cloud.md dest/chapters/bigdata/applications/usecases.md dest/chapters/bigdata/applications/sensor.md dest/chapters/bigdata/applications/web.md dest/chapters/bigdata/applications/health.md dest/chapters/bigdata/algorithms/technology.md dest/chapters/bigdata/algorithms/clustering.md dest/chapters/bigdata/algorithms/plotviz.md dest/chapters/SECTION/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/cloud/packer.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/git/gitpullreqest.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/dask/dask.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/prg/python/fingerprint/fingerprint.md dest/chapters/prg/python/facedetection/facedetection.md dest/chapters/SECTION/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-523.md dest/chapters/container/glossary.md dest/chapters/SECTION/SECTION-REFERENCES.md
+	@echo "updated modified chapters"
+
+
+dest/chapters/SECTION/SECTION-PREFACE.md: ../chapters/SECTION/SECTION-PREFACE.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-PREFACE.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-PREFACE.md 1
+
+dest/chapters/version.md: ../chapters/version.md
+	../bin/markup-single.py ../chapters/version.md 2
+	../bin/header.py dest/chapters/version.md 2
+
+dest/chapters/authors.md: ../chapters/authors.md
+	../bin/markup-single.py ../chapters/authors.md 2
+	../bin/header.py dest/chapters/authors.md 2
+
+dest/chapters/preface/create.md: ../chapters/preface/create.md
+	../bin/markup-single.py ../chapters/preface/create.md 2
+	../bin/header.py dest/chapters/preface/create.md 2
+
+dest/chapters/preface/issues.md: ../chapters/preface/issues.md
+	../bin/markup-single.py ../chapters/preface/issues.md 2
+	../bin/header.py dest/chapters/preface/issues.md 2
+
+dest/chapters/preface/notation.md: ../chapters/preface/notation.md
+	../bin/markup-single.py ../chapters/preface/notation.md 2
+	../bin/header.py dest/chapters/preface/notation.md 2
+
+dest/chapters/class/organization-523.md: ../chapters/class/organization-523.md
+	../bin/markup-single.py ../chapters/class/organization-523.md 2
+	../bin/header.py dest/chapters/class/organization-523.md 2
+
+dest/chapters/class/plagiarism.md: ../chapters/class/plagiarism.md
+	../bin/markup-single.py ../chapters/class/plagiarism.md 2
+	../bin/header.py dest/chapters/class/plagiarism.md 2
+
+dest/chapters/class/policies.md: ../chapters/class/policies.md
+	../bin/markup-single.py ../chapters/class/policies.md 2
+	../bin/header.py dest/chapters/class/policies.md 2
+
+dest/chapters/class/e534-i523.md: ../chapters/class/e534-i523.md
+	../bin/markup-single.py ../chapters/class/e534-i523.md 2
+	../bin/header.py dest/chapters/class/e534-i523.md 2
+
+dest/chapters/class/volumes.md: ../chapters/class/volumes.md
+	../bin/markup-single.py ../chapters/class/volumes.md 2
+	../bin/header.py dest/chapters/class/volumes.md 2
+
+dest/chapters/in/datasets.md: ../chapters/in/datasets.md
+	../bin/markup-single.py ../chapters/in/datasets.md 2
+	../bin/header.py dest/chapters/in/datasets.md 2
+
+dest/chapters/class/assignments-523.md: ../chapters/class/assignments-523.md
+	../bin/markup-single.py ../chapters/class/assignments-523.md 2
+	../bin/header.py dest/chapters/class/assignments-523.md 2
+
+dest/chapters/bigdata/intro-fall-2018.md: ../chapters/bigdata/intro-fall-2018.md
+	../bin/markup-single.py ../chapters/bigdata/intro-fall-2018.md 2
+	../bin/header.py dest/chapters/bigdata/intro-fall-2018.md 2
+
+dest/chapters/bigdata/applications/overview.md: ../chapters/bigdata/applications/overview.md
+	../bin/markup-single.py ../chapters/bigdata/applications/overview.md 1
+	../bin/header.py dest/chapters/bigdata/applications/overview.md 1
+
+dest/chapters/bigdata/applications/physics.md: ../chapters/bigdata/applications/physics.md
+	../bin/markup-single.py ../chapters/bigdata/applications/physics.md 1
+	../bin/header.py dest/chapters/bigdata/applications/physics.md 1
+
+dest/chapters/bigdata/applications/radar.md: ../chapters/bigdata/applications/radar.md
+	../bin/markup-single.py ../chapters/bigdata/applications/radar.md 1
+	../bin/header.py dest/chapters/bigdata/applications/radar.md 1
+
+dest/chapters/bigdata/applications/lifestyle.md: ../chapters/bigdata/applications/lifestyle.md
+	../bin/markup-single.py ../chapters/bigdata/applications/lifestyle.md 1
+	../bin/header.py dest/chapters/bigdata/applications/lifestyle.md 1
+
+dest/chapters/bigdata/applications/sport.md: ../chapters/bigdata/applications/sport.md
+	../bin/markup-single.py ../chapters/bigdata/applications/sport.md 1
+	../bin/header.py dest/chapters/bigdata/applications/sport.md 1
+
+dest/chapters/bigdata/applications/cloud.md: ../chapters/bigdata/applications/cloud.md
+	../bin/markup-single.py ../chapters/bigdata/applications/cloud.md 1
+	../bin/header.py dest/chapters/bigdata/applications/cloud.md 1
+
+dest/chapters/bigdata/applications/usecases.md: ../chapters/bigdata/applications/usecases.md
+	../bin/markup-single.py ../chapters/bigdata/applications/usecases.md 1
+	../bin/header.py dest/chapters/bigdata/applications/usecases.md 1
+
+dest/chapters/bigdata/applications/sensor.md: ../chapters/bigdata/applications/sensor.md
+	../bin/markup-single.py ../chapters/bigdata/applications/sensor.md 1
+	../bin/header.py dest/chapters/bigdata/applications/sensor.md 1
+
+dest/chapters/bigdata/applications/web.md: ../chapters/bigdata/applications/web.md
+	../bin/markup-single.py ../chapters/bigdata/applications/web.md 1
+	../bin/header.py dest/chapters/bigdata/applications/web.md 1
+
+dest/chapters/bigdata/applications/health.md: ../chapters/bigdata/applications/health.md
+	../bin/markup-single.py ../chapters/bigdata/applications/health.md 1
+	../bin/header.py dest/chapters/bigdata/applications/health.md 1
+
+dest/chapters/bigdata/algorithms/technology.md: ../chapters/bigdata/algorithms/technology.md
+	../bin/markup-single.py ../chapters/bigdata/algorithms/technology.md 1
+	../bin/header.py dest/chapters/bigdata/algorithms/technology.md 1
+
+dest/chapters/bigdata/algorithms/clustering.md: ../chapters/bigdata/algorithms/clustering.md
+	../bin/markup-single.py ../chapters/bigdata/algorithms/clustering.md 1
+	../bin/header.py dest/chapters/bigdata/algorithms/clustering.md 1
+
+dest/chapters/bigdata/algorithms/plotviz.md: ../chapters/bigdata/algorithms/plotviz.md
+	../bin/markup-single.py ../chapters/bigdata/algorithms/plotviz.md 1
+	../bin/header.py dest/chapters/bigdata/algorithms/plotviz.md 1
+
+dest/chapters/SECTION/SECTION-DEVTOOLS.md: ../chapters/SECTION/SECTION-DEVTOOLS.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-DEVTOOLS.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-DEVTOOLS.md 1
+
+dest/chapters/linux/refcards.md: ../chapters/linux/refcards.md
+	../bin/markup-single.py ../chapters/linux/refcards.md 2
+	../bin/header.py dest/chapters/linux/refcards.md 2
+
+dest/chapters/cloud/virtualbox.md: ../chapters/cloud/virtualbox.md
+	../bin/markup-single.py ../chapters/cloud/virtualbox.md 2
+	../bin/header.py dest/chapters/cloud/virtualbox.md 2
+
+dest/chapters/cloud/vagrant.md: ../chapters/cloud/vagrant.md
+	../bin/markup-single.py ../chapters/cloud/vagrant.md 2
+	../bin/header.py dest/chapters/cloud/vagrant.md 2
+
+dest/chapters/cloud/packer.md: ../chapters/cloud/packer.md
+	../bin/markup-single.py ../chapters/cloud/packer.md 2
+	../bin/header.py dest/chapters/cloud/packer.md 2
+
+dest/chapters/os/ubuntu-usb-osx.md: ../chapters/os/ubuntu-usb-osx.md
+	../bin/markup-single.py ../chapters/os/ubuntu-usb-osx.md 2
+	../bin/header.py dest/chapters/os/ubuntu-usb-osx.md 2
+
+dest/chapters/git/github.md: ../chapters/git/github.md
+	../bin/markup-single.py ../chapters/git/github.md 2
+	../bin/header.py dest/chapters/git/github.md 2
+
+dest/chapters/git/gitpullreqest.md: ../chapters/git/gitpullreqest.md
+	../bin/markup-single.py ../chapters/git/gitpullreqest.md 3
+	../bin/header.py dest/chapters/git/gitpullreqest.md 3
+
+dest/chapters/linux/linux.md: ../chapters/linux/linux.md
+	../bin/markup-single.py ../chapters/linux/linux.md 2
+	../bin/header.py dest/chapters/linux/linux.md 2
+
+dest/chapters/linux/ssh.md: ../chapters/linux/ssh.md
+	../bin/markup-single.py ../chapters/linux/ssh.md 2
+	../bin/header.py dest/chapters/linux/ssh.md 2
+
+dest/chapters/linux/ssh-futuresystems.md: ../chapters/linux/ssh-futuresystems.md
+	../bin/markup-single.py ../chapters/linux/ssh-futuresystems.md 2
+	../bin/header.py dest/chapters/linux/ssh-futuresystems.md 2
+
+dest/chapters/linux/ssh-excerise.md: ../chapters/linux/ssh-excerise.md
+	../bin/markup-single.py ../chapters/linux/ssh-excerise.md 2
+	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
+
+dest/chapters/prg/SECTION-PYTHON.md: ../chapters/prg/SECTION-PYTHON.md
+	../bin/markup-single.py ../chapters/prg/SECTION-PYTHON.md 1
+	../bin/header.py dest/chapters/prg/SECTION-PYTHON.md 1
+
+dest/chapters/prg/python/python-intro.md: ../chapters/prg/python/python-intro.md
+	../bin/markup-single.py ../chapters/prg/python/python-intro.md 2
+	../bin/header.py dest/chapters/prg/python/python-intro.md 2
+
+dest/chapters/prg/python/python-install.md: ../chapters/prg/python/python-install.md
+	../bin/markup-single.py ../chapters/prg/python/python-install.md 2
+	../bin/header.py dest/chapters/prg/python/python-install.md 2
+
+dest/chapters/prg/python/python-interactive.md: ../chapters/prg/python/python-interactive.md
+	../bin/markup-single.py ../chapters/prg/python/python-interactive.md 2
+	../bin/header.py dest/chapters/prg/python/python-interactive.md 2
+
+dest/chapters/prg/python/python-editor.md: ../chapters/prg/python/python-editor.md
+	../bin/markup-single.py ../chapters/prg/python/python-editor.md 2
+	../bin/header.py dest/chapters/prg/python/python-editor.md 2
+
+dest/chapters/prg/python/python.md: ../chapters/prg/python/python.md
+	../bin/markup-single.py ../chapters/prg/python/python.md 2
+	../bin/header.py dest/chapters/prg/python/python.md 2
+
+dest/chapters/prg/python/python-libraries.md: ../chapters/prg/python/python-libraries.md
+	../bin/markup-single.py ../chapters/prg/python/python-libraries.md 2
+	../bin/header.py dest/chapters/prg/python/python-libraries.md 2
+
+dest/chapters/prg/python/python-data.md: ../chapters/prg/python/python-data.md
+	../bin/markup-single.py ../chapters/prg/python/python-data.md 3
+	../bin/header.py dest/chapters/prg/python/python-data.md 3
+
+dest/chapters/prg/python/python-matplotlib.md: ../chapters/prg/python/python-matplotlib.md
+	../bin/markup-single.py ../chapters/prg/python/python-matplotlib.md 3
+	../bin/header.py dest/chapters/prg/python/python-matplotlib.md 3
+
+dest/chapters/prg/python/python-docopts.md: ../chapters/prg/python/python-docopts.md
+	../bin/markup-single.py ../chapters/prg/python/python-docopts.md 3
+	../bin/header.py dest/chapters/prg/python/python-docopts.md 3
+
+dest/chapters/prg/python/python-cmd5.md: ../chapters/prg/python/python-cmd5.md
+	../bin/markup-single.py ../chapters/prg/python/python-cmd5.md 3
+	../bin/header.py dest/chapters/prg/python/python-cmd5.md 3
+
+dest/chapters/prg/python/python-cmd.md: ../chapters/prg/python/python-cmd.md
+	../bin/markup-single.py ../chapters/prg/python/python-cmd.md 3
+	../bin/header.py dest/chapters/prg/python/python-cmd.md 3
+
+dest/chapters/prg/python/opencv/opencv.md: ../chapters/prg/python/opencv/opencv.md
+	../bin/markup-single.py ../chapters/prg/python/opencv/opencv.md 3
+	../bin/header.py dest/chapters/prg/python/opencv/opencv.md 3
+
+dest/chapters/prg/python/opencv/secchi.md: ../chapters/prg/python/opencv/secchi.md
+	../bin/markup-single.py ../chapters/prg/python/opencv/secchi.md 3
+	../bin/header.py dest/chapters/prg/python/opencv/secchi.md 3
+
+dest/chapters/SECTION/SECTION-DATA.md: ../chapters/SECTION/SECTION-DATA.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-DATA.md 3
+	../bin/header.py dest/chapters/SECTION/SECTION-DATA.md 3
+
+dest/chapters/data/formats.md: ../chapters/data/formats.md
+	../bin/markup-single.py ../chapters/data/formats.md 4
+	../bin/header.py dest/chapters/data/formats.md 4
+
+dest/chapters/data/mongoengine.md: ../chapters/data/mongoengine.md
+	../bin/markup-single.py ../chapters/data/mongoengine.md 4
+	../bin/header.py dest/chapters/data/mongoengine.md 4
+
+dest/chapters/prg/python/python-wordcount.md: ../chapters/prg/python/python-wordcount.md
+	../bin/markup-single.py ../chapters/prg/python/python-wordcount.md 2
+	../bin/header.py dest/chapters/prg/python/python-wordcount.md 2
+
+dest/chapters/prg/python/dask/dask.md: ../chapters/prg/python/dask/dask.md
+	../bin/markup-single.py ../chapters/prg/python/dask/dask.md 2
+	../bin/header.py dest/chapters/prg/python/dask/dask.md 2
+
+dest/chapters/prg/python/numpy/numpy.md: ../chapters/prg/python/numpy/numpy.md
+	../bin/markup-single.py ../chapters/prg/python/numpy/numpy.md 2
+	../bin/header.py dest/chapters/prg/python/numpy/numpy.md 2
+
+dest/chapters/prg/python/scipy/scipy.md: ../chapters/prg/python/scipy/scipy.md
+	../bin/markup-single.py ../chapters/prg/python/scipy/scipy.md 2
+	../bin/header.py dest/chapters/prg/python/scipy/scipy.md 2
+
+dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md: ../chapters/prg/python/scikit-learn/scikit-learn-k-means.md
+	../bin/markup-single.py ../chapters/prg/python/scikit-learn/scikit-learn-k-means.md 2
+	../bin/header.py dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md 2
+
+dest/chapters/prg/python/random-forest/random-forest.md: ../chapters/prg/python/random-forest/random-forest.md
+	../bin/markup-single.py ../chapters/prg/python/random-forest/random-forest.md 2
+	../bin/header.py dest/chapters/prg/python/random-forest/random-forest.md 2
+
+dest/chapters/prg/python/fingerprint/fingerprint.md: ../chapters/prg/python/fingerprint/fingerprint.md
+	../bin/markup-single.py ../chapters/prg/python/fingerprint/fingerprint.md 2
+	../bin/header.py dest/chapters/prg/python/fingerprint/fingerprint.md 2
+
+dest/chapters/prg/python/facedetection/facedetection.md: ../chapters/prg/python/facedetection/facedetection.md
+	../bin/markup-single.py ../chapters/prg/python/facedetection/facedetection.md 2
+	../bin/header.py dest/chapters/prg/python/facedetection/facedetection.md 2
+
+dest/chapters/SECTION/SECTION-FAQ.md: ../chapters/SECTION/SECTION-FAQ.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-FAQ.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-FAQ.md 1
+
+dest/chapters/faq.md: ../chapters/faq.md
+	../bin/markup-single.py ../chapters/faq.md 2
+	../bin/header.py dest/chapters/faq.md 2
+
+dest/chapters/faq-523.md: ../chapters/faq-523.md
+	../bin/markup-single.py ../chapters/faq-523.md 2
+	../bin/header.py dest/chapters/faq-523.md 2
+
+dest/chapters/container/glossary.md: ../chapters/container/glossary.md
+	../bin/markup-single.py ../chapters/container/glossary.md 1
+	../bin/header.py dest/chapters/container/glossary.md 1
+
+dest/chapters/SECTION/SECTION-REFERENCES.md: ../chapters/SECTION/SECTION-REFERENCES.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-REFERENCES.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-REFERENCES.md 1
+

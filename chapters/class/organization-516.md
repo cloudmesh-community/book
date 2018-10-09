@@ -26,7 +26,7 @@ are truly outstanding.
 Note: we have reduced this year the requirement of writing a 2 page
 paper about a cloud technology. Instead you will be focusing on
 writing about the technology in a markdown file and provide a
-practical tutorial. The volume is about equivalent to a 1.5 page paper.
+practical section. The volume is about equivalent to a 1.5 page paper.
 Please check with Gregor on applicability of your idea.
 
 ![Figure: Components of the Class e516, e534 and e616](images/e516-overview.png){width=100%}
@@ -51,7 +51,7 @@ As part of this class you also have the ability to take part in some
 Internet of Things related projects but also a small cloud cluster
 based on Raspberry PI's. Residential students will have access to a 5
 node raspberry pi cluster. Online students could by at least 3 PI's but
-that is optional. YOu can do the class without the PI educational
+that is optional. You can do the class without the PI educational
 component. However it is fun to build your own cloud with them.
 
 
@@ -119,8 +119,8 @@ with motherboards bus speed. As you may want to reuse your solid-state
 drive at a later time I suggest to get a 6GB/s SSD and not a 3GB/s.
 
 In case of Windows, your could also get yourself a UBS stick or
-external SSD drive and place ubuntu on it. YOu could than use your
-bios to boot of from that drive. THis way you do not have to modify
+external SSD drive and place ubuntu on it. You could than use your
+bios to boot of from that drive. This way you do not have to modify
 anything on your computer. This method works very well for most
 computers and allows you to use the maximum memory while for example
 using ubuntu.
@@ -247,19 +247,19 @@ include naturally Cloud computing.
 
 ### Track 3: Writing
 
-This track will introduce you into how to write a tutorial and
+This track will introduce you into how to write a section and
 conduct proper bibliography management. Knowing how to write is a
 preparation for your term project. 
 
-You will be writing a tutorial of substantial length and
+You will be writing a section of substantial length and
 difficulty. In ACM format this is typically 1.5 pages long. We will
 throughout the class estimate how many word this is. We suggest to do
-the tutorial in a team as this allows one to write about it and
+the section in a team as this allows one to write about it and
 another person to test it.
  We like to avoid that all students take the
 same topic. We will use github to avoid that everyone chooses same
-topic. Knowing how to write a tutorial will be a valuable exercise as
-the TAs will also need a project tutorial in which you describe how to
+topic. Knowing how to write a section will be a valuable exercise as
+the TAs will also need a section in which you describe how to
 execute your project. It also prepares you in a gentle form on writing
 your project report. In general you need to look at previous examples
 for the class to identify project reports.

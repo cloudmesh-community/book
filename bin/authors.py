@@ -46,7 +46,7 @@ names.sort()
 
 name_string = '\n> '.join(textwrap.wrap(', '.join(names),79, initial_indent="> "))
 
-print("## Contributors")
+print("# Contributors")
 print()
 
 msg = """

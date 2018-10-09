@@ -5,7 +5,7 @@ contributing to this document.
 
 ---
 
-**Learning Objectives**
+**:mortar_board: Learning Objectives**
 
 * What is a data center.
 * What are import metrics.
@@ -222,7 +222,7 @@ but by the community in which such centers operate.
   can be made more reliable, failure still can happen. Examples are
 
 * <https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/>
-* :?: find more examples
+* :question: find more examples
 
 Hence Data Center IaaS advantages include
 
@@ -277,11 +277,24 @@ Data centers in total used 91 billion kilowatt-hours (kWh) of electrical energy 
 
 
 * Peaker plant
-	* :question:
+
+	Peaking power plants, also known as peaker plants, and occasionally just "peakers", are power plants that generally run only when there is a high demand, known as peak demand, for electricity.Because they supply power only occasionally, the power supplied commands a much higher price per kilowatt hour than base load power. Peak load power plants are dispatched in combination with base load power plants, which supply a dependable and consistent amount of electricity, to meet the minimum demand.
+	These plants are generally coal-fired which causes a huge amount of CO2 emissions. A peaker plant may operate many hours a day, or it may operate only a few hours per year, depending on the condition of the region's electrical grid. Because of the cost of building an efficient power plant, if a peaker plant is only going to be run for a short or highly variable time, it does not make economic sense to make it as efficient as a base load power plant. In addition, the equipment and fuels used in base load plants are often unsuitable for use in peaker plants because the fluctuating conditions would severely strain the equipment. For these reasons, nuclear, geothermal, waste-to-energy, coal and biomass are rarely, if ever, operated as peaker plants.
+	
 * Avoided emissions
-	* :question:
+
+	Emissions avoidance is the most effective carbon management strategy over a multi-decadal timescale to achieve atmospheric CO2 stabilization and a subsequent decline . This prevents, in the first place, stable underground carbon deposits from entering either the atmosphere or less stable carbon pools on land and in the oceans.
+
+Carbon offsets based on energy efficiency rely on technical efficiencies to reduce energy consumption and therefore reduce CO2 emissions. Such improvements are often achieved by introducing more energy efficient lightening, cooking, heating and cooling systems. These are real emission reduction strategies and have created valid offset projects.
+
+This type of carbon offset provides perhaps the simplest options that will ease the adoption of low carbon practice. When these practices become generally accepted (or compulsory), they will no longer qualify as offsets and further efficiencies will need to be promoted.
+	
 * CO2 (carbon dioxide, or “carbon”) 
-	* :question:
+	
+	Carbon dioxide is the main cause of the greenhouse effect, it is emitted in huge amount into our atmosphere with a life cycle of almost 100 years. Data centers emit during the manufacturing process of all the components that populate a
+data center (servers, UPS, building shell, cooling, etc.) and during operation of data centers (in terms of electricity consumed), the maintenance of the data centers (i.e. replacement of consumables like batteries, capacitors, etc.), and the disposal of the components of the data centers at the end of the lifecycle.
+	Until now, power plants have been allowed to dump unlimited amounts of carbon pollution into the atmosphere — no rules were in effect that limited their emissions of carbon dioxide, the primary driver of global warming. Now, for the first time, the EPA has finalized new rules, or standards, that will reduce carbon emissions from power plants. Known as the Clean Power Plan, these historic standards represent the most significant opportunity in years to help curb the growing consequences of climate change.
+
 
 The data center will have a total carbon profile, that includes the
 many different aspects of a data center contributing to carbon
@@ -337,7 +350,7 @@ arising from build and teardown phase as well as operational upgrades.
 
 | Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
 |-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
-| :?:         | :?:      | :?:  | :?:               | :?:     | :?:         | :?:                  | :?:                |   |
+| :question:  | :question: | :question:  | :question:               | :question:     | :question:         | :question:                  | :question:                |   |
 |             |          |      |                   |         |             |                      |                    |   |
 |             |          |      |                   |         |             |                      |                    |   |
 
@@ -438,6 +451,9 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as 
 > the date when the PUE was reported.
 
+### Hot-Cold Isle :o: :question:
+
+Contribute a section discussing the hot cold isle.
 
 ### Workload Monitoring
 
@@ -638,11 +654,11 @@ AWS GovCloud (US-East)
 
 Azure claims to have more global regions than any other cloud
 provider. They motivate this by their advertisement to bring and
-applications to the users around the world. The goal iss similar as
+applications to the users around the world. The goal is similar as
 other commercial hyprescale providers by introducing preserving data
 residency, and offering comprehensive compliance and resilience. As of
 Aug 29, 2018 Azure supports 54 regions worldwide. These regions can
-currently be accessed by users in 140 countries. NOt every service is
+currently be accessed by users in 140 countries. Not every service is
 offered in every region as the service to region matrix shows:
 
 * <https://azure.microsoft.com/en-us/global-infrastructure/services/>
@@ -677,7 +693,7 @@ locations:
 Each data center is advertised with a special environmental impact
 such as a unique cooling system, or wildlife on premise. Google's data
 centers support its service infrastructure and allow hosting as well
-as other cloud services sto be offered to it's customers.
+as other cloud services to be offered to it's customers.
 
 Google highlights its efficiency strategy and methods here:
 
@@ -697,7 +713,7 @@ They summarize their offers are based on
 **Figure:** [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
 
 An important lesson from Google is the PUE boundary. That is the
-different efficiency based on the closeness sof the IT infrastructure
+different efficiency based on the closeness of the IT infrastructure
 to the actual data center building. This indicates that it is
 important to take at any providers definition of PUE in order not to
 report numbers that are not comparable between other vendors and are
@@ -758,7 +774,7 @@ and other communities as SaaS
 XSEDE is an NSF sponsored large distributed set of clusters,
 supercomputers, data services, and clouds, building a "single virtual
 system that scientists can use to interactively share computing
-resources, data and expertise". The Web page of XSEDE iss located at
+resources, data and expertise". The Web page of XSEDE is located at
 
 * <https://www.xsede.org/>
 
@@ -972,7 +988,7 @@ and was of 38000 lbs and it operated for 105 days.
 ![](images/project-natick-phase1.png)
 
 **Figure:** The *Leona Philpot* prototype was deployed off the central
-coast of California on Aug. 10, 2015. Source: [Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/)
+coast of California on Aug. 10, 2015. Source: [Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/) [@microsoft-first-datacenter]
 
 
 The phase 2 started in June 2018 and lasted for 90 days. Microsoft
@@ -992,7 +1008,7 @@ which it will be retrieved and recycled.
 ![](images/project-natick-phase2.png)
 
 **Figure:** The *Northern Isles* prototype being deployed near
-Scotland. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/)
+Scotland. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
 
 Although the cooling provides a significant benefit while using
 seawater, it is clear that long time studies need to be conducted with
@@ -1012,10 +1028,4 @@ Some thought on this include:
    the structure has to be removed after 20 years, which impat has it
    than on the ecosystem. 
 
-**References:**
-
-:o: TODO we will use also bibtex fro references
-
-* <https://www.nytimes.com/2016/02/01/technology/microsoft-plumbs-oceans-depths-to-test-underwater-data-center.html>
-* <https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/>
-* <https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/>
+Find more about this at [@nytimes-datacenter]

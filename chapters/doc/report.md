@@ -38,7 +38,7 @@ The template for the report is available from:
 
 Copy all files from this directory in the directory where you want to
 write your report in. Make sure you have the **full** version of LaTeX
-installed and can use make. THis can be done on OSX, Linux, and Windows
+installed and can use make. This can be done on macOS, Linux, and Windows
 via gitbash. When you say
 
     make

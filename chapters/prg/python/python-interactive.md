@@ -1,5 +1,4 @@
-Interactive Python
-------------------
+# Interactive Python
 
 Python can be used interactively. You can enter the interactive mode by
 entering the interactive loop by executing the command:

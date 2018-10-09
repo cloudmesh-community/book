@@ -47,8 +47,7 @@ core network from each SCU. The total system contains 12 SCUs (10 at
 TACC and 2 at UC) for a total of 13,056 cores, 66 TiB of RAM, and 1.5PB
 of configurable storage in the SCU subsystem.
 
-![**Figure:** Chameleon Cloud
-Racks](images/Chameleon2.jpeg)
+![Chameleon Cloud Racks](images/Chameleon2.jpeg)
 
 ## Network
 

@@ -121,7 +121,7 @@ Optionally you may want to get additional sensors such as wheel Encoders
 
 -   Very low price for what it can do
 
--   We have OSX software available that makes it easy to setup (Other
+-   We have macOS software available that makes it easy to setup (Other
     tutorials for other platforms are available on the internet, you can
     contribute by creating documentation we distribute in class for
     points)
