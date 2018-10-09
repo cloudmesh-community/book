@@ -65,10 +65,10 @@ parameters in the file `mapred-site.xml`, for example:
 
 ## hdfs Safemode leave command
 
-:o: it is unclear what this is
+A Safemode for HDFS is a read-only mode for the HDFS cluster, where it does not allow any modifications of files and blocks.  Namenode disables safe mode automatically after starting up normally. If required, HDFS could be forced to leave the safe mode explicitly by this command:
 
 ```bash
-$ hdfs dfsadmin -safemode leave`
+$ hdfs dfsadmin -safemode leave
 ```
 
 
