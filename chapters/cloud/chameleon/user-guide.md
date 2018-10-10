@@ -23,7 +23,7 @@ about 5 minutes.
 
 The initial log in page appears as:
 
-![**Figure:** Chameleon login](images/chameleon-login.png)
+![**Figure:** Chameleon login](images/chameleon-login.png){#fig:chameleon-login}
 
 After a successful log in, you will see the Overview page as shown
 below. This page provides a summary of your current and recent usage and
