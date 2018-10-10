@@ -77,20 +77,20 @@ Commercial GraphQL browsers are available from
 
 ## GraphQL type system and schema
 
-To get started with GraphQL we will first explore GraphQL type system
+To get started with GraphQL we will first explore the GraphQL type system
 and schema creation.
 
 ### Type System
 
-In GraphQL a query is what client requests from the GraphQL server. The
-result will be obtained in a structure defined by type and schema. It
-means client will know ahead of time what it is going to get as
-result. For this to work, the data is often assumed to be structured
-data.
+In GraphQL a query is what a client requests from the GraphQL
+server. The result will be obtained in a *structure* defined by *type*
+and *schema*. Thus, the client will know ahead of time what it is
+going to get as result as part of a well formed response. For this to
+work, the data is often assumed to be structured data.
 
 To demonstrate the type system we use a simple example while looking
 at authors and co-authors of papers. We represent in this example a
-database that contains a number of authors. each author has a
+database that contains a number of authors. Each author has a
 publication count and a number of coauthors that are identified by
 name. We assume for this simple example that all author names are
 unique.
@@ -130,7 +130,7 @@ The response is
 
 For this to work, we need to define the types that are going to be
 honored by the GraphQL service so that when a query is received by the
-server, it is first validated to a schema that defines the types
+server, it is first validated against a schema that defines the types
 contained within the GraphQL service.
 
 Hence, types must be defined as part of each GraphQL service. They are
@@ -145,10 +145,11 @@ type Author {
 }
 ```
 
-Note that the `!` indicates a field value, that cannot be null and
-must have a defined value. `[Author!]!` means that an array is
-returned, but that array cannot be null and also none of the items
-in the array can be null.
+Here we define the type author with three fields `name`,
+`publication`, and `coauthors`.  Note that the `!` indicates a field
+value, that cannot be null and must have a defined value. `[Author!]!`
+means that an array is returned, but that array cannot be null and
+also none of the items in the array can be null.
 
 ### Scalar Types
 
