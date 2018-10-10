@@ -29,4 +29,4 @@ Other editors may include
 
 :wave: Please help us complete this section while letting us know how
 each editor supports 80 chracter line wrap mode.
->>>>>>> upstream/master
+
