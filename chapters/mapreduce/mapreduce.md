@@ -1,6 +1,5 @@
 # Introduction to Mapreduce {#s-mapreduce}
 
-
 In this section we discuss about the background of Mapreduce along
 with Hadoop and core components of Hadoop.
 
@@ -48,7 +47,6 @@ stages of its operation (see +@fig:mapreduce_diagram):
 
 ![MapReduce Conceptual diagram](images/mapreduce-diagram.png){#fig:mapreduce_diagram}
 
-          
 
 The Shuffle operation is very important here as that is mainly
 responsible for reducing the communication cost.  The main advantage
@@ -67,9 +65,6 @@ worker process the data in parallel and the time taken to process the
 data is reduced tremendously. (see +@fig:mapreduce-master-worker)
 
 ![MapReduce Master worker diagram](images/mapreduce-master-worker.png){#fig:mapreduce-master-worker}
-
- 
-
 
 ### MapReduce Example: Word Count
 
@@ -91,7 +86,7 @@ Bear, Camel, Cat, Camel
 7. The final output is then written to a file. (see
    +@fig:mapreduce_wordcount)
 
-[@edureka-hadoop-mapreduce]![MapReduce WordCount](images/mapreduce_wordcount.png){#fig:mapreduce_wordcount}
+![MapReduce WordCount [@www-edureka-hadoop-mapreduce] ](images/mapreduce_wordcount.png){#fig:mapreduce_wordcount}
 
  
 
@@ -151,7 +146,7 @@ introduced which acts as a layer between MapReduce and HDFS and using
 this YARN, many other BigData frameworks can connect to HDFS as
 well. (see +@fig:mapreduce_hadoop_spark)
 
-[@youtube-hadoop-mapreduce]![MAPREDUCE_HADOOP_SPARK :o:](images/mapreduce_hadoop_spark.png){#fig:mapreduce_hadoop_spark}
+![MapReduce Hadoop and Spark [@www-youtube-hadoop-mapreduce] ](images/mapreduce_hadoop_spark.png){#fig:mapreduce_hadoop_spark}
  
 
 There are many big data frameworks available and there is always a
@@ -160,7 +155,7 @@ Hadoop MapReduce and Apache Spark and choice depends on business
 needs.  Let us start comparing both of these frameworks with respect
 to their processing capability.
 
-### Apache Spark  
+### Apache Spark
 
 Apache Spark is lightning fast cluster computing framework. Spark is
 in-memory system. Spark is 100 time faster than Hadoop MapReduce.
@@ -193,11 +188,12 @@ is a scalable and fault tolerant, it us good for linear processing.
    need to restart the applications from scratch.
    
 ## References
+
 * [@www-ibm-mapreduce]https://www.ibm.com/analytics/hadoop/mapreduce
-* [@wikipedia-mapreduce]https://en.wikipedia.org/wiki/MapReduce
-* [@tutorialspoint-mapreduce]https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm
-* [@edureka-hadoop-mapreduce]https://www.edureka.co/blog/mapreduce-tutorial/?utm_source=youtube&utm_campaign=mapreduce-tutorial-161216-wr&utm_medium=description
-* [@quora-hadoop-spark-diff]https://www.quora.com/What-is-the-difference-between-Hadoop-and-Spark
-* [@data-flair-spark-hadoop-diff]https://data-flair.training/blogs/apache-spark-vs-hadoop-mapreduce
-* [@youtube-hadoop-mapreduce]https://www.youtube.com/watch?v=SqvAaB3vK8U&list=WL&index=25&t=2547s
+* [@www-wikipedia-mapreduce]https://en.wikipedia.org/wiki/MapReduce
+* [@www-tutorialspoint-mapreduce]https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm
+* [@www-edureka-hadoop-mapreduce]https://www.edureka.co/blog/mapreduce-tutorial/?utm_source=youtube&utm_campaign=mapreduce-tutorial-161216-wr&utm_medium=description
+* [@www-quora-hadoop-spark-diff]https://www.quora.com/What-is-the-difference-between-Hadoop-and-Spark
+* [@www-data-flair-spark-hadoop-diff]https://data-flair.training/blogs/apache-spark-vs-hadoop-mapreduce
+* [@www-youtube-hadoop-mapreduce]https://www.youtube.com/watch?v=SqvAaB3vK8U&list=WL&index=25&t=2547s
 
