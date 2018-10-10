@@ -347,7 +347,7 @@ models used. It is best to complete the course within one semester.
 The classes CSCI B-649 I524 are the same as E516 but are offered within
 different departments:
 
-* CSCI B-649 Cloud COmputing is the same as E516 but for computer science students.
+* CSCI B-649 Cloud Computing is the same as E516 but for computer science students.
 * I524 is the same as E516 but for Data Engineering Students
 
 ### What is E616?
@@ -374,8 +374,8 @@ quality report or paper.
 It is possible to take E516 and E616 or an independent study at the
 same time.  The result will be a more intense project.
 
-### Is I523 a prerequisit for I524?
+### Is I523 a prerequisite for I524?
 
 I523 is a different class and focusses on Big Data applications and
-use cases. You do not have to take I523 as prerequisit if you like to
+use cases. You do not have to take I523 as prerequisite if you like to
 take E516, I524, or B649.
