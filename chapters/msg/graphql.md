@@ -4,23 +4,24 @@
 
 GraphQL is a data query language developed by Facebook.
 
-GraphQL allows clients to request data they need without thinking
-about the API implementation. It makes application development fast and
-stable because the application has control over the data it needs and
-its format. The benefit of GraphQL is also to reduce network I/O since
+GraphQL allows clients to request they need while specifing attributes
+in the query without thinking
+much about the API implementation. It simplifies access and reduces traffic
+as the application has control over the data it needs and
+its format. Hence GraphQL reduces the network traffic as 
 only the necessary data is transfered from server to client.
 
-Unlike REST APIs, which require loading data via multiple URLs,
-GraphQL can get all data, that application needs, in a single
+Unlike REST APIs, which require often loading data via multiple
+queries, GraphQL can get typically all the data in a single
 request. GraphQL APIs are defined in terms of types and fields. Types
 help GraphQL to ensure that client only asks for what is possible and
 in case of faults, provides clear and helpful errors.
 
 Initially GraphQL was implemented in JavaScript. Today there are
-several other implementations in different language available of
-GraphQLs. We will explore the *graphql-python* implementation in this
-chapter. The official documentation of GraphQL is available at
-[@graphql-learn]
+several other implementations in different languages available.  To
+show case how to use GraphQL, we will explore the *graphql-python*
+implementation in this chapter. The official documentation of GraphQL
+is available at [@graphql-learn]
 
 ## Prerequisites
 
@@ -427,15 +428,17 @@ passing hard-coded values to a query, variables can be defined for
 these values.  Now these variables can be passed to queries.
 
 Variables can be passed to GraphQL queries directly through
-commandline.
+commandline while pretty printing the json output with python's `json.tool`.
 
 ```bash
 curl -X POST \
 -H "Content-Type: application/json;" \
 -d '{"query": "{ repository (name: $name) { name url } }", "variables": \
 { "name": "book" }}' \
-http://localhost:8000/graphql/
+http://localhost:8000/graphql/ | python -m json.tool
 ```
+
+
 
 Variables can be defined in the *Query Variables* panel at left bottom
 of the *GraphiQL* client. It is defined as a JSON object and this is how 
@@ -1043,7 +1046,7 @@ curl -X POST \
 -H "Content-Type: application/json;" \
 -d '{"query": "{ mutation { tokenAuth (username: \"user1\", ' \
 ' password:\"Testing123\") { token } } }"}' \
-http://localhost:8000/graphql/
+http://localhost:8000/graphql/ | python -m json.tool
 ```
 
 This will create a token for us to use in our subsequent calls.
@@ -1120,7 +1123,7 @@ curl -X POST \
 -H "Content-Type: application/json;" \
 -H "Authorization: JWT $TOKEN" \
 -d '{"query": "{ repositories { url } }"}' \
-http://localhost:8000/graphql/
+http://localhost:8000/graphql/  | python -m json.tool
 ```
 
 The result obtained from running this command is: 
@@ -1137,29 +1140,18 @@ The result obtained from running this command is:
 }
 ```
 
-To print the output in a nice format we can use python to pretty print
-it ass follows
+#### GraphQL Browser Clients
 
-```bash
-curl -X POST \
--H "Content-Type: application/json;" \
--H "Authorization: JWT $TOKEN" \
--d '{"query": "{ repositories { url } }"}' \
-http://localhost:8000/graphql/ | \
-python -m json.tool
-```
+In case you prefer to use a browser interface which could be useful
+for debugging purposes a number of GraphQL browsers are available. A
+free version is
 
-Clearly as you can see the output is not well formatted and hence not
-the preferred way.
+* [GraphiQL](https://github.com/skevy/graphiql-app).
 
-#### Advanced GraphQL Clients
-
-To use authentication, you can also install other GraphQL clients such
-as 
+Commercial GraphQL browsers are available from 
 
 * [Insomnia](https://insomnia.rest/graphql/)
-* [Altair](https://altair.sirmuel.design/), or
-* [GraphiQL](https://github.com/skevy/graphiql-app).
+* [Altair](https://altair.sirmuel.design/)
 
 
 :o: Gregor move upwards
