@@ -1161,17 +1161,23 @@ as
 * [Altair](https://altair.sirmuel.design/), or
 * [GraphiQL](https://github.com/skevy/graphiql-app).
 
-#### JWT tokens expiry
 
-JWT tokens can have expiry period. Typically, GraphQL server host provides 
-the token expiry information to client through some kind of documentation. 
-If the token is about to be expired, you can call `refreshToken` mutation 
-and the response would be a refreshed token. However if the token has 
-already expired then you can again request a new token by calling 
-`tokenAuth` mutation.
+:o: Gregor move upwards
 
-Find more information about JWT tokens at [@jwt-tokens] and GraphQL
-authentication at [@medium-graphql]
+#### Expiration of JWT tokens
+
+JWT tokens have a time-to-life and expire after a while. This is
+controlled by the 
+GraphQL server and is usually communicated to the client in
+transparent documented fashion.
+
+If the token is about to expire, you can call the `refreshToken`
+mutation to refresh the Token and to return the refreshed token to the
+client. However, if the token has already expired we will need to
+request a new token by calling `tokenAuth` mutation.
+
+More information about JWT tokens can be found at [@jwt-tokens] and
+the GraphQL authentication page at [@medium-graphql].
 
 ### GitHub API v4
 
@@ -1179,19 +1185,27 @@ GraphQL has made already an impact in the cloud services community. In
 addition to Facebook, Twitter and Pinterest, *Github* is now also providing 
 a GraphQL interface, making it an ideal example for us.
 
-GitHub has implemented API v4 using GraphQL which allows you to query
+GitHub has implemented as part of its API v4 also GraphQL which allows you to query
 or mutate data of repositories that you can access via
 `github.com`. To demonstrate its use, we will use *GraphiQL*.
 
-* Now we need OAuth token to access GitHub API. You can generate OAuth
-  token by following steps mentioned at
-  https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
-* Open *GraphiQL* app and click edit headers at upper-right corner. Add
-  new header with key *Authorization* and value *Bearer your_token*
-* Enter *https://api.github.com/graphql* in GraphQL endpoint textbox
-* Keep method as *POST* only
+To access the information, we need an OAuth token to access GitHub
+API. You can generate an OAuth token by following the steps listed at 
 
-To test the changes add following query
+* <https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/>
+
+Next we demonstrate the use of Github within a GraphQL browser called 
+Open *GraphiQL*. First you need to click edit headers at upper-right
+corner and add a new header with key *Authorization* and value *Bearer
+your_token*.
+
+Next you enter the URL 
+
+* <https://api.github.com/graphql>
+
+in the GraphQL endpoint textbox and keep the method as *POST* only. To
+test if the changes have been applied successfully you can use the
+query
 
 ```graphql
 query {
@@ -1202,7 +1216,7 @@ query {
 }
 ```
 
-which gives response
+The query gives the following response 
 
 ```json
 {
@@ -1215,7 +1229,7 @@ which gives response
 }
 ```
 
-To get your repositories add following query
+To get a list of our own repositories add following query
 
 ```graphql
 query($number_of_repositories:Int!) {
@@ -1230,7 +1244,8 @@ query($number_of_repositories:Int!) {
 }
 ```
 
-and define variables used in query
+To limit the responses we can define a 
+use the variable `number_of_repositories`
 
 ```json
 {
@@ -1238,7 +1253,7 @@ and define variables used in query
 }
 ```
 
-it gives following response
+The query gives the following response
 
 ```json
 {
@@ -1263,9 +1278,8 @@ it gives following response
 }
 ```
 
-To add a comment using mutation we need to get issue id 
-
-For example query
+To add a comment using mutation we need to get the issue `id` with the
+query
 
 ```graphql
 {
@@ -1277,7 +1291,7 @@ For example query
 }
 ```
 
-it gives following response
+The query gives the following response 
 
 ```json
 {
@@ -1291,10 +1305,8 @@ it gives following response
 }
 ```
 
-Now we can use this id as subjectId for mutation to add comment to an
-issue,
-
-For query
+Now we can use the id as `subjectId` for mutation to add a comment to an
+issue with the query
 
 ```graphql
 mutation AddComment {
@@ -1311,7 +1323,7 @@ mutation AddComment {
 }
 ```
 
-it gives following response
+The query gives the following response
 
 ```json
 {
@@ -1330,24 +1342,32 @@ it gives following response
 }
 ```
 
-### Resources
+## Dynamic Queries with Graph QL :o:
 
-* Official documentation of Github API v4 is available at [@github-v4]
-* More GraphQL Python examples available at [@www-howtographql]
+The previous examples served data to and from a database. However,
+often we need to access dynamic data that is provided through function
+or system calls.
+
+:o: This section will explain if this is possible and how to do
+this. It is similar in nature than our example in the REST OpenAPI
+section, where we associate call backs that are defined in Section
+[#s-openapi-definition].
 
 ## Advantages of Using GraphQL
 
-* Unlike REST APIs, only the required data is fetched, nothing more
-  nothing less, which minimizes the data transferred over network
-* Seperation of concern is achieved between client and server. Client
-  requests data entities with fields needed for the UI in one query
-  request while server knows about the data structure and how to
-  resolve the data from its sources which could be database, web
-  service, microservice, external APIs, etc.
-* Versioning is simpler than REST, since we only have to take care of
-  it when we want to remove any of the fields. Even then we can first
-  mark the field to be removed as deprecated. And later on, this field
-  can be removed when not many clients are using it.
+Unlike REST APIs, only the required data is fetched minimizing the
+data transferred over network.
+
+Seperation of concern is achieved
+between client and server. Client requests data entities with fields
+needed for the UI in one query request while server knows about the
+data structure and how to resolve the data from its sources which
+could be database, web service, microservice, external APIs, etc.
+
+Versioning is simpler than REST, since we only have to take care of it
+when we want to remove any of the fields. We can even introduce the
+property of a deprecated field for a while to inform the service
+users. At a later time the field could be entirely be removed.
 
 ```graphql
 type Car {
@@ -1357,30 +1377,38 @@ type Car {
 }
 ``` 
 
-* GraphQL is gaining momentum as its community, support and enthusiasm
-  is growing. Many GraphQL editors, IDEs and packages are getting
-  added day by day.
   
 ## Disadvantages of Using GraphQL
 
-* GraphQL query can get very complex. Client may not necessarily know
-  how expensive the queries can be for server to go and gather the
-  data. This can be overcome by limiting the query depth, recursion,
-  etc.
-* Caching gets pretty tricky and messy in case of GraphQL. In REST,
-  you can have separate API url for each resource requested, caching
-  can be done at this resource level. However in GraphQL you can have
-  different queries but they can operate over a single API url. This
-  means that caching needs to be done at the field level rather, and
-  hence it is difficult.
+GraphQL query can get very complex. A client may not necessarily know
+how expensive the queries can be for server to go and gather the
+data. This can be overcome by limiting, for example, the query depth
+and recursion.
+
+Caching gets pretty tricky and messy in case of GraphQL. In REST, you
+can have separate API url for each resource requested, caching can be
+done at this resource level. However, in GraphQL you can have
+different queries but they can operate over a single API url. This
+means that caching needs to be done at the field level introducing
+additional complexity.
+
 
 ## Conclusion
 
-In general there are many reasons to have GraphQL in our software
-ecosystem. Beauty of it lies in the flexibility and extensiveness it
-provides and also fits well with the microservices architecture which
-many are moving towards. Already big players like Github, Pinterest,
-Intuit, Coursera, Shopify, etc. are using it.  With that being said,
-REST APIs still have it is own place and may prove better choice in
-certain use cases. Both REST and GraphQL have some tradeoffs which
-need to be understood before being considered.
+GraphQL is gaining momentum as growing and the integration into
+services such as Github, Pinterest, Intuit, Coursera,
+and Shopify, demonstrates this. Many GraphQL editors, IDEs
+and packages have recently been developed.
+
+In general there are several reasons to use GraphQL due to its
+simplicity and flexibility. It also fits well with the microservices
+architecture which is a new trend in cloud architectures.  With that
+being said, REST APIs still have it is own place and may prove better
+choice in certain use cases. Both REST and GraphQL have some tradeoffs
+which need to be understood before making a choice between the one or
+the other. Github shows that both can be used.
+
+### Resources
+
+* Official documentation of Github API v4 is available at [@github-v4]
+* More GraphQL Python examples available at [@www-howtographql]
