@@ -5,7 +5,7 @@
 GraphQL is a data query language developed by Facebook.
 
 GraphQL allows clients to request data they need without thinking
-about the API implementation. It makes application devlopment fast and
+about the API implementation. It makes application development fast and
 stable because the application has control over the data it needs and
 its format. The benefit of GraphQL is also to reduce network I/O since
 only the necessary data is transfered from server to client.
@@ -120,7 +120,7 @@ The response is
 ```
 
 For this to work, we need to define the types that are going to be
-honored by the GraphQL service so that when a query is recieved by the
+honored by the GraphQL service so that when a query is received by the
 server, it is first validated to a schema that defines the types
 contained within the GraphQL service.
 
@@ -208,7 +208,7 @@ type VirtualMachine implements ComputeService {
 
 As the name suggests, `union` type represent the union of two or more
 types. Here is how we can define a `union` type. As you can see we use
-the `|` charater to indicate the union operator.
+the `|` character to indicate the union operator.
 
 ```graphql
 union ComputeType = Container | VirtualMachine
@@ -438,7 +438,7 @@ http://localhost:8000/graphql/
 ```
 
 Variables can be defined in the *Query Variables* panel at left bottom
-of the *GraphiQL* client. It is defined as a json object and this is how 
+of the *GraphiQL* client. It is defined as a JSON object and this is how 
 it looks like
 
 ```json
@@ -605,7 +605,7 @@ web framework and `Graphene` library which is needed for building
 GraphQL Apis. The installation for both these have been already described 
 at the beginning of this chapter. We will create virtual environment for 
 project to keep all the dependencies isolated from other projects and 
-system. To do so please follow the deplyment of a virtualenv as discussed 
+system. To do so please follow the deployment of pyenv as discussed 
 in the Python section or if you use Python 3 you could also use `venv`.
 
 We have an example located in the book repository which you can clone with
@@ -656,7 +656,7 @@ $ python manage.py migrate
 $ python manage.py runserver
 ```
 
-The last command will start a server on th localhost and you can
+The last command will start a server on the localhost and you can
 access it at the URL
 
 * <http://localhost:8000>
@@ -799,7 +799,7 @@ class Query(graphene.ObjectType):
 ```
 
 Next create the file `cloudmeshRepository/schema.py` with following
-code. It just inherits the query defind in Repositories app. This way we
+code. It just inherits the query defined in Repositories app. This way we
 are able to isolate schema to their apps.
 
 ```python
@@ -999,8 +999,8 @@ authorization header. JWT tokens are very safe against CSRF attacks
 and are trusted and verified since they are digitally signed.
 
 The advantage of using frameworks such as the python implementation of
-GraphQL is that it can leverage existing authetication modules, so we
-do not have to develop them ourselfs. One such module is *JSON Web
+GraphQL is that it can leverage existing authentication modules, so we
+do not have to develop them ourselves. One such module is *JSON Web
 Token Authentication* or *JWT Authentication.  To use this module,
 please add it to the `settings.py` file as follows
 
@@ -1110,7 +1110,7 @@ or more advanced GraphQL clients that support authentication.
 #### Using Authentication with Curl
 
 To use authentication with curl, you can pass the token to the
-command. For somplicity we created a TOKEN environment vaiable in with
+command. For simplicity we created a TOKEN environment variable in with
 we stor the token so it is easier for us to refer to it in our
 examples.
 
@@ -1181,7 +1181,7 @@ a GraphQL interface, making it an ideal example for us.
 
 GitHub has implemented API v4 using GraphQL which allows you to query
 or mutate data of repositories that you can access via
-`github.com`. To demontsrate its use, we will use *GraphiQL*.
+`github.com`. To demonstrate its use, we will use *GraphiQL*.
 
 * Now we need OAuth token to access GitHub API. You can generate OAuth
   token by following steps mentioned at
@@ -1368,7 +1368,7 @@ type Car {
   data. This can be overcome by limiting the query depth, recursion,
   etc.
 * Caching gets pretty tricky and messy in case of GraphQL. In REST,
-  you can have seperate API url for each resource requested, caching
+  you can have separate API url for each resource requested, caching
   can be done at this resource level. However in GraphQL you can have
   different queries but they can operate over a single API url. This
   means that caching needs to be done at the field level rather, and
