@@ -1,7 +1,5 @@
 # Installation of Hadoop :o: {#s-hadoop-installation}
 
-:o: TODO: This instruction needs to be changed to work for 18.04 also.
-
 In this section we use Hadoop 3.0.1 and we install Hadoop locally in
 Ubuntu 18.04. We also describe the installation of the Yarn resource
 manager. We assume that you have ssh, and rsync installed and use emacs
