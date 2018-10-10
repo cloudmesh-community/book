@@ -342,11 +342,15 @@ models used. It is best to complete the course within one semester.
 
 ## Other classes I523, I524, B649, E516, E616 
 
+### I524 = B649 = E516
+
 The classes CSCI B-649 I524 are the same as E516 but are offered within
 different departments:
 
 * CSCI B-649 Cloud COmputing is the same as E516 but for computer science students.
 * I524 is the same as E516 but for Data Engineering Students
+
+### What is E616?
 
 The class E616 is a bit different as it assumes you have taken E516 as
 prerequisite or know its content including REST, virtual machines,
@@ -359,13 +363,19 @@ project. It also allows PhD students to identify topics that can be
 leading together with Dr.  von Laszewski as a co-author to a workshop
 or conference paper.
 
+### Can I take an Independent Study?
+
 Dr. von Laszewski also offeres independent studies on specific
 research topics.  The result of such independent studies is a high
 quality report or paper.
 
+### Can I take  E516 and E616 at the same time?
+
 It is possible to take E516 and E616 or an independent study at the
 same time.  The result will be a more intense project.
 
+### Is I523 a prerequisit for I524?
+
 I523 is a different class and focusses on Big Data applications and
 use cases. You do not have to take I523 as prerequisit if you like to
-take E516.
+take E516, I524, or B649.
