@@ -1017,8 +1017,6 @@ the location of this file is used when the Service class is initialized
 with None. Prior to starting the service the file needs to be copied
 there. This could be achieved with a set command.
 
-## Responses :o:
-
 ## Django REST Framework
 
 Django REST framework is a large toolkit to develop Web APIs. The
