@@ -180,9 +180,11 @@ enum ContainerType {
 
 ### Interfaces
 
-Similar to any programming language, the GraphQL type system also
-supports `interface`. When a type implements an `interface`, it needs
-to specify all the fields that are defined through the `interface`.
+Similar to common programming languages, the GraphQL type system also
+supports an `interface`. Interfaces allow us to assure that certain
+fields are part of the definition of a type.  When a type implements
+an `interface`, it needs to specify all the fields that are defined
+through the `interface`.
 
 We will illustrate this in the following example, where we define
 simple `ComputeService` interface type. This `interface` declares
@@ -217,9 +219,10 @@ type VirtualMachine implements ComputeService {
 
 ### Union Types
 
-As the name suggests, `union` type represent the union of two or more
-types. Here is how we can define a `union` type. As you can see we use
-the `|` character to indicate the union operator.
+As the name suggests a `union` type represents the union of two or
+more types. The following example shows how we can define a `union`
+type. As you can see we use the `|` character to indicate the union
+operator.
 
 ```graphql
 union ComputeType = Container | VirtualMachine
@@ -361,8 +364,8 @@ The response will be similar to
 
 ### Fragments
 
-Lets say for example we have a complex query, which has repetitive 
-fields in it.
+Let us look at the following complex query, which includes repetitive 
+fields:
 
 ```graphql
 {
@@ -381,7 +384,7 @@ fields in it.
 }
 ```
 
-As the query gets bigger and complex, we can use `fragment` to split
+As the query gets bigger and more complex, we can use a `fragment` to split
 it into smaller chunks.  This `fragment` can then be re-used, which
 can significantly reduce the query size and also make it more
 readable.
@@ -438,7 +441,10 @@ passing hard-coded values to a query, variables can be defined for
 these values.  Now these variables can be passed to queries.
 
 Variables can be passed to GraphQL queries directly through
-commandline while pretty printing the json output with python's `json.tool`.
+commandline. Please note that we pretty print the json output with
+python's `json.tool`. So it is not actually part of the querry, but
+convenient to format the output. Try to see the difference with and
+without the pipe to `json.tool`
 
 ```bash
 curl -X POST \
@@ -448,11 +454,9 @@ curl -X POST \
 http://localhost:8000/graphql/ | python -m json.tool
 ```
 
-
-
-Variables can be defined in the *Query Variables* panel at left bottom
-of the *GraphiQL* client. It is defined as a JSON object and this is how 
-it looks like
+In case you use GraphiQL, variables can be defined in the *Query
+Variables* panel at left bottom of the *GraphiQL* client. It is
+defined as a JSON object and this is how it looks like
 
 ```json
 {
