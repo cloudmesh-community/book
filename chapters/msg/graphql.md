@@ -164,9 +164,10 @@ GraphQL supports the following scalar types:
 
 ### Enumeration Types
 
-`enum` is also a scalar type which define a certain set of restricted
-values. When a GraphQL schema defines a field of `enum` type, we
-expect that the field's value be of the type `enum` values only. An
+`enum` is a scalar type which defines restricted set of values.
+When a GraphQL schema defines a field of `enum` type, we
+expect that the field's value be of the type `enum` including only the
+values that are included in that enumeration. An
 example of an `enum` type is
 
 ```graphql
