@@ -331,7 +331,7 @@ is needed without doing the postprocessing on the client. These
 restricting arguments can be of scalar type, enumeration type and
 others.
 
-Lets look at an example of a query where we only ask for first 3
+Let us look at an example of a query where we only ask for first 3
 repositories in cloudmesh community
 
 ```graphql
@@ -364,8 +364,8 @@ The response will be similar to
 
 ### Fragments
 
-Let us look at the following complex query, which includes repetitive 
-fields:
+Fragments allow us to reuse portions of a query. Let us look at the
+following complex query, which includes repetitive fields:
 
 ```graphql
 {
@@ -475,7 +475,7 @@ and it can be used in the query like this
 }
 ```
 
-which will fetch response 
+which will result in the response 
 
 ```json
 {
@@ -492,7 +492,7 @@ which will fetch response
 
 Directives are used to change the structure of queries at runtime
 using variables. Directives provide a way to describe additional
-options to GraphQL executors. Currently core GraphQL specification
+options to GraphQL executors. Currently the core GraphQL specification
 supports two directives
 
 * `@skip (if: Boolean)` - It skips the field if argument is true
@@ -543,7 +543,6 @@ includes `ownerInfo` data.
 ### Mutations
 
 Mutations are used to modify server side data. To demonstrate this,
-
 let us look at the query and data to be passed along with it
 
 ```graphql
@@ -554,6 +553,7 @@ mutation CreateRepositoryForCommunity($community: Community!, $repository: Repos
     }
 }
 ```
+
 ```json
 {
     "community": "cloudmesh-community",
@@ -594,7 +594,7 @@ For example the query
 }
 ```
 
-which will give response
+will give the response
 
 ```json
 {
@@ -608,24 +608,25 @@ which will give response
 }
 ```
 
-In application we need to validate user input. If it is invalid we can
-use `GraphQLError` class or Python exceptions to raise validation
-errors.
+In an application we need to validate the user input. If it is invalid
+we can use the `GraphQLError` class or Python exceptions to raise
+validation errors.
+
+:o: There seems to be an example missing here descripbing how to use
+the GraphQLError inmore detail, or the explanation above needs
+clarification
 
 ## GraphQL in Python
 
 We will cover a basic server implementation with schema and queries 
 to fetch and mutate data. 
 
-To develop a GraphQL server in Python we will use `Django` as Python 
-web framework and `Graphene` library which is needed for building 
-GraphQL Apis. The installation for both these have been already described 
-at the beginning of this chapter. We will create virtual environment for 
-project to keep all the dependencies isolated from other projects and 
-system. To do so please follow the deployment of pyenv as discussed 
-in the Python section or if you use Python 3 you could also use `venv`.
-
-We have an example located in the book repository which you can clone with
+To develop a GraphQL server in Python we will use `Django` as Python
+web framework and the `Graphene` library which alllows us to develop
+GraphQL APIs. Naturally other frameworks such as Flask could be used,
+but for this example we focus on Django. The installation for Graphene
+and Django been already described at the beginning of this chapter.
+Our example is located in the book repository which you can clone with
 
 ```bash
 $ git clone https://github.com/cloudmesh-community/book.git
@@ -683,7 +684,7 @@ It will show you the welcome page for django. Now open the file
 `cloudmeshrepo/cloudmeshrepo/settings.py`
 
 file under folder and append following to
-INSTALLED_APPS
+`INSTALLED_APPS`:
 
 ```python
 INSTALLED_APPS = (
@@ -692,7 +693,7 @@ INSTALLED_APPS = (
 )
 ```
 
-And at the end of `settings.py` add following line
+At the end of `settings.py` add following line
 
 ```python
 GRAPHENE = {
@@ -712,14 +713,14 @@ backend such as MongoDB but instead we will use SQLite.
 Django provides `startapp` utility to create blank app with some 
 biolerplate code.
 
-Go to root dir of project and execute the following command which will
-create an app for repository.
+Go to the root dir of project and execute the following command which
+will create an app for repository.
 
 ```bash
 python manage.py startapp repository
 ```
 
-Now open `Repositories/models.py` and add the Repository model class.
+Now open `Repositories/models.py` and add the `Repository` model class.
 
 ```python
 class Repository(models.Model):
@@ -740,7 +741,7 @@ INSTALLED_APPS = (
 ```
 
 Go to root folder and execute following commands. It will create table
-for new modeld
+for new model
 
 ```bash
 $ python manage.py makemigrations
@@ -761,11 +762,12 @@ repositories in the cloudmesh community at
 
 * <https://api.github.com/users/cloudmesh-community/repos>.
 
-You could use either `wget` or `curl` command to download this data 
-through shell. As this data is huge, we have used its small subset 
-for this demo. You can have a python script, shell script or any other
-program to clean and remodel the data as per your need; the 
-implementation details for which, is out of scope for this chapter.
+You could use either `wget` or `curl` command to download this data
+through shell. As this data is huge, we have used a small subset for
+this example. You can have a python script, shell script or any other
+program to clean and remodel the data as per your need; the
+implementation details for the cleaning process is out of scope for
+this chapter.
 
 ```python
 from Repositories.models import Repository
@@ -789,14 +791,15 @@ Repository.objects.create(name="cm-burn",
 exit()
 ```
 
-Now create the file `Repositories/schema.py` with following code. This will
-create a custom type `Repository` and query with resolver for
-Repositories. GraphQL server uses resolver function to resolve the incoming 
-queries. Queries can respond to only those fields or entities of schema for 
-which resolver function has been defined. Resolver function's
-responsibility is to return data for that specific field or entity. 
-We will create one for Repositories list. When you query repositories, 
-resolver function will return all the repositories objects from database. 
+Now create the file `Repositories/schema.py` with the following
+code. The code will create a custom type `Repository` and query with a
+[*resolver function*]{#s-graphql-resolver} for Repositories.  The GraphQL server uses
+a resolver function to resolve the incoming queries. Queries can respond
+to only those fields or entities of schema for which resolver function
+has been defined. A `Resolver` function's responsibility is to return data
+for that specific field or entity.  We will create one for
+Repositories list. When you query repositories, resolver function will
+return all the repositories objects from database.
 
 ```python
 import graphene
@@ -836,7 +839,7 @@ schema = graphene.Schema(query=Query)
 
 Next, we create a Schema  and use it within *GraphiQL* which is a
 playground for GraphQL queries. Open the file `cloudmeshrepository/urls.py` and
-append following code
+append the following code
 
 ```python
 from django.views.decorators.csrf import csrf_exempt
@@ -848,17 +851,17 @@ urlpatterns = [
 ]
 ```
 
-Start your server using the command.
+Start your server using the command
 
 ```bash
 $ python manage.py runserver
 ```
 
-Now open the URL
+Now open in your browser the URL
 
 * <http://localhost:8000/graphql>
 
-in your browser. You will see *GraphiQL* window. In the left pane you
+You will see *GraphiQL* window. In the left pane you
 can add queries. Let us add the following query
 
 ```graphql
@@ -912,8 +915,9 @@ In the right pane you will see following output
 Similar to a query, you can add a mutation to create your own data. To
 achieve this, add a
 `CreateRepository` class for new repository object which will inherit
-from graphene's Mutation class. This class will accept new repository
-properties as arguments. Please see the following code snippet. This is
+from graphene's Mutation class. This class will accept a new
+repository as 
+an argument. Please see the following code snippet which is
 added to `repositories/models.py`.
 
 
@@ -968,7 +972,7 @@ mutation {
 }
 ```
 
-And this will insert a new repository *repository-test* and also 
+This will insert a new repository *repository-test* and also 
 immediately return its inserted data fields (`url`, `name`, `fullName`,
 `description`).
 
@@ -1077,7 +1081,7 @@ This will create a token for us to use in our subsequent calls.
 
 The JWT library comes with a built-in directive called *login_required*.
 You can add this to any of your Query resolvers to prevent
-unauthenticated access. We have annotated it to `resolve_repositories` which
+unauthenticated access. We have annotated it to the `resolve_repositories` which
 means it will throw authentication error to query which does not have 
 JWT token passed. Whenever a valid JWT token is present in the query, it is
 considered as authenticated or logged in request, and data will be served
@@ -1332,16 +1336,23 @@ The query gives the following response
 }
 ```
 
-## Dynamic Queries with Graph QL :o:
+## Dynamic Queries with Graph QL
 
 The previous examples served data to and from a database. However,
 often we need to access dynamic data that is provided through function
 or system calls.
 
-:o: This section will explain if this is possible and how to do
-this. It is similar in nature than our example in the REST OpenAPI
-section, where we associate call backs that are defined in Section
-[#s-openapi-definition].
+For this reason we like you to be reminded about the Section
+describing the [resolver function](#s-graphql-resolver).
+It allows us to add functions on the server side that return the data
+from various data sources.
+
+It is similar in nature than our example in the REST OpenAPI section,
+where we associate call backs that execute dynamic operations.  More
+information about the functionality in REST is provided in the Section
+[OpenAPI Specification](#s-openapi-spec) as part of the [path
+definition](#s-openapi-path).
+
 
 ## Advantages of Using GraphQL
 
@@ -1402,3 +1413,42 @@ the other. Github shows that both can be used.
 
 * Official documentation of Github API v4 is available at [@github-v4]
 * More GraphQL Python examples available at [@www-howtographql]
+
+## Excersises
+
+E.GraphQL.1:
+
+> Develop a GraphQL server and client that queries your CPU
+> information through a dynamic query using a resolver
+
+E.GraphQL.2: OpenStack VMS
+
+> Develop a GraphQL server that returns the information of running
+> virtual machines on OpenStack
+> 
+
+E.GraphQL.3: OpenStack Azure
+
+> Develop a GraphQL server that returns the information of running
+> virtual machines on OpenStack
+> 
+
+E.GraphQL.4: OpenStack Aws
+
+> Develop a GraphQL server that returns the information of running
+> virtual machines on OpenStack
+>
+
+E.GraphQL.4: Cloud Service
+
+> Pick a Cloud Service and develop a GraphQL interface for it.
+
+E.GraphQL.6: Cloudmesh
+
+> Develop a cloudmesh framework that uses all clouds above while
+> returning the information of all running VMS in a Web page. YOu are
+> allowed to make the Web page beautiful with HTML5 and/or JavaScript
+> if you have the background to do so
+>
+
+
