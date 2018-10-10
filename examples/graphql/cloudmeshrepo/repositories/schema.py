@@ -14,6 +14,7 @@ class RepositoryType(DjangoObjectType):
 class Query(graphene.ObjectType):
     repositories = graphene.List(RepositoryType)
 
+    @login_required
     def resolve_repositories(self, info, **kwargs):
         return Repository.objects.all()
 
