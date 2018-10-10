@@ -101,6 +101,8 @@ Now execute the following commands to download and install java
 :o: why not put a github dir in cloudmesh, with some bin script that
 installes hadoop and jave ... and than keep that up to date. for
 example
+:o: users must accept Oracle OTN license before downloading JDK.
+
 
 ```bash
 $ cm-hadoop install
