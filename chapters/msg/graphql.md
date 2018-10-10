@@ -28,19 +28,14 @@ is available at [@graphql-learn]
 Before we start we need to install a number of tools that we use
 throughout the chapter
 
-### Install of GraphiQL
+### Install Graphene
 
-GraphiQL is an IDE(Interactive Development Environment) for GraphQL
-where you can run *GraphQL Query*. There are many implementations 
-of *GraphiQL* available. For this chapter we will use
-[GraphiQL](https://github.com/skevy/graphiql-app). You can download
-the *GraphiQL* installation files specific to your OS from 
-[GraphiQL Releases](https://github.com/skevy/graphiql-app/releases).
-
-For MacOS, you can even use `homebrew` to install it
+In this chapter, we will use [Graphene](https://graphene-python.org/) 
+which is a library for implementing GraphQL APIs in Python. Use `pip`
+to install Graphene
 
 ```bash
-brew cask install graphiql
+$ pip install graphene==2.0.1 graphene-django==2.0.0
 ```
 
 ### Install Django
@@ -57,15 +52,28 @@ Use `pip` to install Django
 $ pip install django==2.0.2 django-filter==1.1.0
 ```
 
-### Install Graphene
+### Install GraphiQL
 
-In this chapter, we will use [Graphene](https://graphene-python.org/) 
-which is a library for implementing GraphQL APIs in Python. Use `pip`
-to install Graphene
+In case you prefer to use a browser interface which could be useful
+for debugging purposes a number of GraphQL browsers are available. A
+free version is GraphiQL. It is an IDE(Interactive Development
+Environment) for GraphQL where you can run a *GraphQL Query*. There
+are many implementations of *GraphiQL* available. For this chapter we
+will use [GraphiQL](https://github.com/skevy/graphiql-app). You can
+download the *GraphiQL* installation files specific to your OS from
+[GraphiQL Releases](https://github.com/skevy/graphiql-app/releases).
+
+For MacOS, you can even use `homebrew` to install it
 
 ```bash
-$ pip install graphene==2.0.1 graphene-django==2.0.0
+brew cask install graphiql
 ```
+
+Commercial GraphQL browsers are available from 
+
+* [Insomnia](https://insomnia.rest/graphql/)
+* [Altair](https://altair.sirmuel.design/)
+
 
 ## GraphQL type system and schema
 
@@ -1139,22 +1147,6 @@ The result obtained from running this command is:
   ]}
 }
 ```
-
-#### GraphQL Browser Clients
-
-In case you prefer to use a browser interface which could be useful
-for debugging purposes a number of GraphQL browsers are available. A
-free version is
-
-* [GraphiQL](https://github.com/skevy/graphiql-app).
-
-Commercial GraphQL browsers are available from 
-
-* [Insomnia](https://insomnia.rest/graphql/)
-* [Altair](https://altair.sirmuel.design/)
-
-
-:o: Gregor move upwards
 
 #### Expiration of JWT tokens
 
