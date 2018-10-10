@@ -98,7 +98,7 @@ We will now create a new stack, which corresponds to the launch of a
 template. Click on Launch Stack on the top right. A window will pop up
 like below:
 
-![**Figure:** Select Template](images/Launch-Stack.png)
+![**Figure:** Select Template](images/Launch-Stack.png){#fig:select-template}
 
 We will deploy the NFS appliance described earlier; it will consist of a
 server node and two client nodes. Change the template source field to
@@ -119,17 +119,17 @@ server and client). For nfs_client_count, change the default value of
 1 to 2. For reservation_id, choose your reservation created earlier.
 Finally, click "Launch".
 
-![**Figure:** Launch NFS Stack](images/Launch-NFS-Stack.png)
+![**Figure:** Launch NFS Stack](images/Launch-NFS-Stack.png){#fig:launch-nfs-stack}
 
 Your stack should be in status "Create In Progress" for several minutes
 while it first launches the NFS server instance, followed by the NFS
 client instances.
 
-![**Figure:** Create in Progress](images/Create-In-Progress_zPgOjo4.png)
+![**Figure:** Create in Progress](images/Create-In-Progress_zPgOjo4.png){#fig:creat-in-progress}
 
 It will then move to the status "Create Complete".
 
-![**Figure:** Create Complete](images/Create-Complete_XkoWhlj.png)
+![**Figure:** Create Complete](images/Create-Complete_XkoWhlj.png){#fig:create-complete}
 
 You can click on the stack name to get more details, including a
 visualization of the deployed resources, as pictured below. The single
@@ -143,7 +143,7 @@ both the IP and the association -- we agree but cannot do much about it
 at the moment). Blow off some steam by dragging the visualization across
 the screen, it can be rather fun!
 
-![**Figure:** Stack Visualization](images/Stack-visualization.png)
+![**Figure:** Stack Visualization](images/Stack-visualization.png){#fig:stack-visualization}
 
 You can now ssh to the server using the floating IP just as you do with
 regular instances (use the cc account). The client does not have a
@@ -330,7 +330,7 @@ Stacks page, select your stack, and then click on the red "Delete
 Stacks" button. You will be asked to confirm, so click on the blue
 "Delete Stacks" button.
 
-![**Figure:** Delete Stacks](images/Delete-Stacks.png)
+![**Figure:** Delete Stacks](images/Delete-Stacks.png){#fig:delete-stacks}
 
 The template for the [Hello World complex
 appliance](https://www.chameleoncloud.org/appliances/26/) is reproduced
@@ -454,7 +454,7 @@ customized template. The resulting topology view is shown below: as you
 can see, the two client instances are shown separately since each one is
 defined as a separate resource in the template.
 
-![**Figure:** NFS with Two Clients](images/NFS-Two-Clients_lFGgizN.png)
+![**Figure:** NFS with Two Clients](images/NFS-Two-Clients_lFGgizN.png){#fig:nfs-with-two-clients}
 
 You may have realized already that while adding just one additional
 client instance was easy, launching more of them would require to copy /
@@ -531,7 +531,7 @@ list the private IPs assigned to client instances:
 The image below shows the resulting outputs as viewed from the web
 interface. Of course IP addresses will be specific to each deployment.
 
-![**Figure:** Outputs](images/Outputs.png)
+![**Figure:** Outputs](images/Outputs.png){#fig:outputs}
 
 Finally, we can add a new parameter to replace the hardcoded number of
 client instances by a value passed to the template. Add the following
@@ -675,7 +675,7 @@ catalog](https://www.chameleoncloud.org/appliances/), and click on the
 button in the top-right corner: "Add an appliance" (you need to be
 logged in to see it).
 
-![**Figure:** Add an Appliance](images/Add-an-appliance.png)
+![**Figure:** Add an Appliance](images/Add-an-appliance.png){#fig:add-an-appliance}
 
 You will be prompted to enter a name, description, and documentation.
 Instead of providing appliance IDs, copy your template to the dedicated
