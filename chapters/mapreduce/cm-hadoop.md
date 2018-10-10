@@ -1,9 +1,9 @@
-# Hadoop Virtual Cluster Installation :o:
+# Hadoop Virtual Cluster Installation Using Cloudmesh :o:
 
 :warning: This version is dependent on an older version of cloudmesh
 
 :o: :TODO: we need to add teh instalation instructions based on this
-version 
+version
 
 Cloudmesh Cluster Installation
 ------------------------------
@@ -42,13 +42,13 @@ Options:
 -A --no-activate Do not activate this cluster
 -I --no-floating-ip Do not assign floating IPs
 -n NAME --name=NAME Name of the cluster
--c COUNT --count=COUNT Number of nodes in the cluster 
--C NAME --cloud=NAME Name of the cloud 
--u NAME --username=NAME Name of the image login user 
--i NAME --image=NAME Name of the image 
--f NAME --flavor=NAME Name of the flavor 
--k NAME --key=NAME Name of the key 
--s NAME --secgroup=NAME NAME of the security group 
+-c COUNT --count=COUNT Number of nodes in the cluster
+-C NAME --cloud=NAME Name of the cloud
+-u NAME --username=NAME Name of the image login user
+-i NAME --image=NAME Name of the image
+-f NAME --flavor=NAME Name of the flavor
+-k NAME --key=NAME Name of the key
+-s NAME --secgroup=NAME NAME of the security group
 -o PATH --path=PATH Output to this path ...
 ```
 
