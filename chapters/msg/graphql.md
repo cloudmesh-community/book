@@ -88,7 +88,7 @@ and *schema*. Thus, the client will know ahead of time what it is
 going to get as result as part of a well formed response. For this to
 work, the data is often assumed to be structured data.
 
-To demonstrate the type system we use a simple example while looking
+To demonstrate the type system we will use a simple example while looking
 at authors and co-authors of papers. We represent in this example a
 database that contains a number of authors. Each author has a
 publication count and a number of coauthors that are identified by
@@ -228,7 +228,7 @@ operator.
 union ComputeType = Container | VirtualMachine
 ```
 
-Now when we write a GraphQL query to fetch the `ComputeType`
+Now when we write a GraphQL query to get the `ComputeType`
 information, we can ask some of the common fields and some of the
 specific fields conditionally. In the next example we request
 `AllComputeTypes` with common fields like `id`, `name` and fields
@@ -260,7 +260,7 @@ section we describe how to use them.
 A very simple definition of a query is to ask for specific fields that
 belong to an object stored in GraphQL.
 
-In the next examples we use data related to repositories in github.
+In the next examples we will use data related to repositories in github.
 
 When asking the query
 
@@ -284,7 +284,7 @@ we obtain the following response
 }
 ```
 
-As we see the response data, format looks exactly like the query. This
+As we can see the response data format looks exactly like the query. This
 way a client knows exactly what data it has to consume. In the
 previous example, the `name` field returns the data of type
 `String`. Clients can also ask for an object representing any match
@@ -542,8 +542,8 @@ includes `ownerInfo` data.
 
 ### Mutations
 
-Mutations are used to modify server side data. To demonstrate this,
-let us look at the query and data to be passed along with it
+Mutations are used to modify the server side data. To demonstrate this,
+let us look at the query and the data to be passed along with it
 
 ```graphql
 mutation CreateRepositoryForCommunity($community: Community!, $repository: Repository!) {
@@ -614,7 +614,7 @@ validation errors.
 
 :o: There seems to be an example missing here descripbing how to use
 the GraphQLError inmore detail, or the explanation above needs
-clarification
+clarification :hand: fa18-516-21 working on explanation
 
 ## GraphQL in Python
 
@@ -1336,7 +1336,7 @@ The query gives the following response
 }
 ```
 
-## Dynamic Queries with Graph QL
+## Dynamic Queries with GraphQL
 
 The previous examples served data to and from a database. However,
 often we need to access dynamic data that is provided through function
