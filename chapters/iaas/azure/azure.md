@@ -161,9 +161,7 @@ will need to go to
 
 You will see an image such as
 
-![](images/reg.png)
-
-**Figure:** Registration
+![Registration](images/reg.png){#fig:registration}
 
 On that image you click the `Start free` button to obtain a free one
 year account. You will have to either create a new Microsoft account
@@ -203,9 +201,8 @@ portal. Select a VM name, and the disk type as SSD, then provide a
 username. The password must be at least 12 characters long and meet
 the defined complexity requirements.
 
-![](images/create-windows-vm-portal-basic-blade.png)
+![Creating a VM](images/create-windows-vm-portal-basic-blade.png){#fig:creating-a-vm}
 
-**Figure:** Creating a VM
 
 Source: <https://docs.microsoft.com/en-us/azure/virtual-machines/windows/media/quick-create-portal/create-windows-vm-portal-basic-blade.png>
 
@@ -221,9 +218,8 @@ A VM can be started through the Portal as follows:
 * On the overview tqb, a VM can be started by clicking the `Start`
   button.
 
-![](images/start-button.png)
+![Start button](images/start-button.png){#fig:start-button}
 
-**Figure:** Start button
 
 ## Stopping the VM
 
@@ -235,9 +231,8 @@ To shut a VM down, please do the following:
 
 * On the overview tab, a VM can be started by clicking the `Stop` button.
 
-![](images/stop-button.png)
+![Stop button](images/stop-button.png){#fig:stop-button}
 
-**Figure:** Stop button
 
 ## Exercises
 
