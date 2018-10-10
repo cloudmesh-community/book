@@ -1,15 +1,6 @@
 Raspberry PI 3
 ==============
 
-
-Raspberry PI for IOT (Gregor)
-----------------------------
-
-Hardware
---------
-
-see hardware page we have
-
 Installation
 ------------
 
@@ -305,8 +296,6 @@ reboot
     50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
     60: -- -- -- -- -- -- -- -- 68 -- -- -- -- -- -- -- 
     70: -- -- -- -- -- -- -- --
-
-![Pinout](images/rasp3.jpg){width="50%"}
 
 create a file /etc/udev/rules.d/90-i2c.rules and add the line:
 

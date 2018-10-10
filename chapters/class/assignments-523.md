@@ -26,11 +26,11 @@ Sections:
   particular technical issue that is in general helpful for other
   students. Sections must be about a substantial topic and include an
   introduction a section that teaches a reader a significant issue, as
-  well as practical code examples. Multiple small sections can lead
-  to a substantial contribution. We expect that the sections are of
-  high quality and can be included in our handbooks. Please be careful
-  of plagiarism and do not just copy the sections from tutorials or code or from
-  elsewhere.
+  well as practical code examples. Multiple small sections can lead to
+  a substantial contribution. We expect that the sections are of high
+  quality and can be included in our handbooks. Please be careful of
+  plagiarism and do not just copy the sections from tutorials or code
+  or from elsewhere.
 
 Technology or Review Paper :
 
@@ -46,7 +46,8 @@ Technology or Review Paper :
   uses the same format as your report paper. The format is discussed
   in the Section [Report Format](#report-format).
 
-  A technology paper is 2 pages long. This will make it between 2000-2400 words. 
+  A technology paper is 2 pages long. This will make it between
+  2000-2400 words.
   
   Note: that for the 2018 we decided to just us Markdown and not LaTeX.
   We will calculate the exact number of words needed.
@@ -89,7 +90,7 @@ Project Report:
   the analysis of a topic, but an actual code, with **benchmark** and
   demonstrated application use. Obviously it is longer than a
   term paper and includes descriptions about reproducibility of
-  the application. A README is provided that describes in sectione 
+  the application. A README is provided that describes in a section 
   how others can reproduce your project and run it.  Term papers
   should have the quality to be publishable either in a workshop or as
   part of the handbook. The format is discussed in the Section
@@ -155,12 +156,12 @@ Bibliography:
 
 ### Project Deliverables
 
-The objective of the project is to define a clear problem statement and
-create a framework to address that problem as it relates to big data
-your project must address the reproducibility of the deployment and
-the application. A dataset must be chosen and you can analyze the
+The objective of the project is to define a clear problem statement
+and create a framework to address that problem as it relates to big
+data your project must address the reproducibility of the deployment
+and the application. A dataset must be chosen and you can analyze the
 data. YOu must make sure your project can be deployed on the TAs
-computer through scripts that make your project reproducable.
+computer through scripts that make your project reproducible.
 
 You have plenty of time to make this choice and if you find you
 struggle with programming you may want to consider a term paper
@@ -223,3 +224,50 @@ In case you chose a term paper your maximum grade for the
 - Your paper will not have a future work section as this implies that
   you will do work in future, instead you can use an optional
   limitations section.
+
+### Group work
+
+You are allowed to work on any assignment in class in groups up to 3
+team members. We will not allow more team members as previous examples
+showed that more team members do not result in better projects than
+thise delivered with 3 team members.
+
+The assignment is only to be added into github by one team
+member. Please make sure that you do pull requests to the repository
+of that team member. If your team likes direct access to the repo form
+the lead, please communicate this in a private post to piazza with the
+github user names and we will add the team members. The lea should be
+aware that in this case all team members have access to all files from
+the team leader, not only that assignment. If the team leader does not
+like this, the team should stick with pull requests that the team lead
+coordinates and integrates.
+
+Groups are expected to have significantly better artifacts than a
+single student. It is not the goal of the group to deliver a project
+or paper that is done by n people but could have been done by a single
+person. Therefore the requirements of all group projects are increased
+accordingly. Typically this is not an issue. Make sure all team
+members contribute.
+
+Group requirements Technology summaries:
+
+: If you have n team members together you need to have at least 4 * n
+technologies. The technologies that have been assigned to each team
+member will have to be completed. YOu can work in collaboration on the
+technologies, but you need to place all hids that worked on the
+technology in the headline.
+
+Group requirements 2-page Technology or Review paper:
+
+: Option multiple papers. If you have n team members you need to write
+  n different papers each of which has 2 pages. The n team members can
+  be authoring the n papers jointly. Put your hids and names in the
+  paper
+
+: Option one large paper. If you have n team members you need to write
+  one large  paper with 2 * n pages. The paper must be well written
+  and integrated and not just the concatenation of 2 pages from each author.
+
+Group requirements project paper:
+
+: The requirements are clearly stated in another section of the epub.

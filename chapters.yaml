@@ -198,8 +198,6 @@
 - IOT:
     - chapters/SECTION/SECTION-IOT.md:
         - chapters/iot/introduction.md
-        - chapters/iot/fundamentals.md
-        - chapters/iot/pi.md
         - chapters/iot/tools.md        
         - chapters/iot/hardware.md
         - chapters/iot/sensors.md        
@@ -209,7 +207,7 @@
         - chapters/iot/esp8266.md
         - chapters/iot/projects.md
         - chapters/iot/turtle.md
-
+        - chapters/iot/pi.md
 
 # #####################################################################
 # COMMUNICATION

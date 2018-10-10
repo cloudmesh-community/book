@@ -30,9 +30,9 @@ we do not loose much on communication of data from place to another.
 
 MapReduce can operate on a filesystem, which is an unstructured data
 or a database, a structured data and these are the following three
-stages of its operation:
+stages of its operation (see +@fig:mapreduce_diagram):
 
-1. Map – This method processes the very initial data set. Generally,
+1. **Map**: This method processes the very initial data set. Generally,
    the data is in file format which can be stored in HDFS (Hadoop File
    System). Map function reads the data line by line and creates
    several chunks of data and that is again stored in HDFS. This
@@ -40,18 +40,17 @@ stages of its operation:
    environment, there will be many worker nodes operating on the data
    using this map() function and write this intermediate data in form
    of key/value to temporary data storage.
-2. Shuffle – In this stage, worker nodes will shuffle or redistribute
+2. **Shuffle**: In this stage, worker nodes will shuffle or redistribute
    the data in such a way that there is only one copy for each key.
-3. Reduce – This function always comes at last and it works on the
+3. **Reduce**: This function always comes at last and it works on the
    data produced by map and shuffle stages and produces even smaller
-   chunk of data which is used to calculate output.(see
-   +@fig:mapreduce_diagram)
+   chunk of data which is used to calculate output.
 
-![MAPREDUCE_DIAGRAM :o:](images/mapreduce_diagram.png){#fig:mapreduce_diagram}
+![MapReduce Conceptual diagram](images/mapreduce-diagram.png){#fig:mapreduce_diagram}
 
           
 
- The Shuffle operation is very important here as that is mainly
+The Shuffle operation is very important here as that is mainly
 responsible for reducing the communication cost.  The main advantage
 of using MapReduce algorithm is that it becomes very easy to scale up
 data processing just by adding some extra computing nodes. Building up
@@ -63,11 +62,11 @@ to the master and then the processing happens in master machine. In
 this approach, we lose bandwidth and time on moving data to master and
 parallel operation cannot happen. Also master can get over-burdened
 and fail.  In MapReduce approach, Master node distributes the data to
-the slave machines which are in themselves a processing unit. So all
-slaves process the data in parallel and the time taken to process the
-data is reduced tremendously. (see +@fig:mapreduce_master_slave)
+the worker machines which are in themselves a processing unit. So all
+worker process the data in parallel and the time taken to process the
+data is reduced tremendously. (see +@fig:mapreduce-master-worker)
 
-![MAPREDUCE_MATER_SLAVE :o:](images/mapreduce_master_slave.png){#fig:mapreduce_master_slave}
+![MapReduce Master worker diagram](images/mapreduce-master-worker.png){#fig:mapreduce-master-worker}
 
  
 
@@ -92,7 +91,7 @@ Bear, Camel, Cat, Camel
 7. The final output is then written to a file. (see
    +@fig:mapreduce_wordcount)
 
-![MAPREDUCE_WORDCOUNT :o:](images/mapreduce_wordcount.png){#fig:mapreduce_wordcount}
+![MapReduce WordCount](images/mapreduce_wordcount.png){#fig:mapreduce_wordcount}
 
  
 
