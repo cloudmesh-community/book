@@ -1,4 +1,4 @@
-# GraphQL :o:
+# GraphQL
 
 ## Introduction
 
@@ -35,7 +35,6 @@ of *GraphiQL* available. For this chapter we will use
 [GraphiQL](https://github.com/skevy/graphiql-app). You can download
 the *GraphiQL* installation files specific to your OS from 
 [GraphiQL Releases](https://github.com/skevy/graphiql-app/releases).
-
 
 For MacOS, you can even use `homebrew` to install it
 
@@ -141,7 +140,6 @@ Note that the `!` indicates a field value, that cannot be null and
 must have a defined value. `[Author!]!` means that an array is
 returned, but that array cannot be null and also none of the items
 in the array can be null.
-
 
 ### Scalar Types
 
@@ -597,10 +595,11 @@ In application we need to validate user input. If it is invalid we can
 use `GraphQLError` class or Python exceptions to raise validation
 errors.
 
-## GraphQL in Python :o:
+## GraphQL in Python
 
 We will cover a basic server implementation with schema and queries 
 to fetch and mutate data. 
+
 To develop a GraphQL server in Python we will use `Django` as Python 
 web framework and `Graphene` library which is needed for building 
 GraphQL Apis. The installation for both these have been already described 
@@ -666,7 +665,6 @@ It will show you the welcome page for django. Now open the file
 
 `cloudmeshrepo/cloudmeshrepo/settings.py`
 
-
 file under folder and append following to
 INSTALLED_APPS
 
@@ -685,16 +683,18 @@ GRAPHENE = {
 }
 ```
 
-### GraphQL server implementation :o:
+### GraphQL server implementation
 
 Clients can request for data to GraphQL server via GraphQL queries. 
 They can also use mutations to insert data into GraphQL server's database.
 Django follows the principle of separating different modules in a project 
 into apps. For this example, we will have two apps, one for Users and 
-one for Repositories. For the demo purpose, we have decided not use  backend such as MongoDB but instead we will use SQLite.
+one for Repositories. For the demo purpose, we have decided not use 
+backend such as MongoDB but instead we will use SQLite.
 
 Django provides `startapp` utility to create blank app with some 
 biolerplate code.
+
 Go to root dir of project and execute the following command which will
 create an app for repository.
 
@@ -815,7 +815,7 @@ class Query(Repositories.schema.Query, graphene.ObjectType):
 schema = graphene.Schema(query=Query)
 ```
 
-### GraphQL Server Querying :o:
+### GraphQL Server Querying
 
 Next, we create a Schema  and use it within *GraphiQL* which is a
 playground for GraphQL queries. Open the file `cloudmeshrepository/urls.py` and
@@ -890,7 +890,7 @@ In the right pane you will see following output
 }
 ```
 
-### Mutation example :o:
+### Mutation example
 
 Similar to a query, you can add a mutation to create your own data. To
 achieve this, add a
@@ -968,7 +968,7 @@ immediately return its inserted data fields (`url`, `name`, `fullName`,
 }
 ```
 
-### GraphQL Authentication :o:
+### GraphQL Authentication
 
 There a number of ways to add authentication to your GraphQL server
 
@@ -984,7 +984,7 @@ There a number of ways to add authentication to your GraphQL server
 * We can add JSON Web Token authentication to GraphQL server, since
   most of the applications these days are stateless.
 
-### JSON Web Token Authentication :o:
+### JSON Web Token Authentication
 
 Next we focus on the JSON web token (JWT) authentication. It is tyically
 prefered as it provides a more secure and sophisticated way of
@@ -1140,7 +1140,6 @@ The result obtained from running this command is:
 To print the output in a nice format we can use python to pretty print
 it ass follows
 
-
 ```bash
 curl -X POST \
 -H "Content-Type: application/json;" \
@@ -1149,7 +1148,6 @@ curl -X POST \
 http://localhost:8000/graphql/ | \
 python -m json.tool
 ```
-
 
 Clearly as you can see the output is not well formatted and hence not
 the preferred way.
@@ -1172,21 +1170,14 @@ and the response would be a refreshed token. However if the token has
 already expired then you can again request a new token by calling 
 `tokenAuth` mutation.
 
-Find more information about JWT tokens at [@jwt-tockens] and GraphQL
+Find more information about JWT tokens at [@jwt-tokens] and GraphQL
 authentication at [@medium-graphql]
 
-:o: this shoudl go in the Resources section if its not just related to
-JWT
-
-Examples for GraphQL are available at:
-
-* <https://github.com/cloudmesh-community/book/tree/master/examples/graphql> and [@www-howtographql]
-
-### GitHub API v4 :o:
+### GitHub API v4
 
 GraphQL has made already an impact in the cloud services community. In
-addition to ??? Github.com is now also providing a GraphQL interface,
-making it an idela example for us.
+addition to Facebook, Twitter and Pinterest, *Github* is now also providing 
+a GraphQL interface, making it an ideal example for us.
 
 GitHub has implemented API v4 using GraphQL which allows you to query
 or mutate data of repositories that you can access via
@@ -1339,11 +1330,12 @@ it gives following response
 }
 ```
 
-Official documentation of Github API v4 is available at [@github-v4]
+### Resources
 
-## Advantages and Disadvantages of Using GraphQL :o:
+* Official documentation of Github API v4 is available at [@github-v4]
+* More GraphQL Python examples available at [@www-howtographql]
 
-### Advantages :o:
+## Advantages of Using GraphQL
 
 * Unlike REST APIs, only the required data is fetched, nothing more
   nothing less, which minimizes the data transferred over network
@@ -1369,7 +1361,7 @@ type Car {
   is growing. Many GraphQL editors, IDEs and packages are getting
   added day by day.
   
-### Disadvantages :o:
+## Disadvantages of Using GraphQL
 
 * GraphQL query can get very complex. Client may not necessarily know
   how expensive the queries can be for server to go and gather the
@@ -1382,8 +1374,7 @@ type Car {
   means that caching needs to be done at the field level rather, and
   hence it is difficult.
 
-
-## Conclusion :o:
+## Conclusion
 
 In general there are many reasons to have GraphQL in our software
 ecosystem. Beauty of it lies in the flexibility and extensiveness it
