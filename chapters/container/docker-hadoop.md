@@ -411,11 +411,6 @@ using Docker container which is that the hassle of configuration and
 installation of Hadoop is not necessary anymore.
 
 
-## Pagerank
-
-:o: The pagerank is not explained or mentioned here. there seems to be
-a different file for that
-
 ## Refernces
 
 
