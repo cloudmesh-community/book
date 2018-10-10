@@ -23,7 +23,7 @@ titlepage-rule-height: 2
 * Prerequisite(s): Knowledge of a programming language, the ability to
   pick up other programming languages as needed, willingness to
   enhance your knowledge from online resources and additional
-  literature. You will need access to a "modern" computer that allows
+  literature. You will need access to a *modern* computer that allows
   using virtual machines and/or containers. If such a system is not
   available to you can also use cloud vms we provide and if you opt to
   do so one or more Raspberry's PI. All residential students will have
@@ -34,8 +34,8 @@ titlepage-rule-height: 2
 * Course Description: [Link](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md)
 
 This is an introductory class. In case you like to do research and
-more advanced topics, consider taking an independent study with Dr. von
-Laszewski.
+more advanced topics, consider taking an independent study with
+Dr. von Laszewski.
 
 ## Course Description
 
@@ -219,23 +219,25 @@ Students need only to do one project. The project is conducted thought the entir
   weekly by residential students). It is the major part of the course
   grade.
 
-* Sections and chapters prepare you for documenting a technical aspect related
-  to cloud computing. It is a preparation for a document that explains
-  how to execute your project in a reproducible manner to others.
+* Sections and chapters prepare you for documenting a technical aspect
+  related to cloud computing. It is a preparation for a document that
+  explains how to execute your project in a reproducible manner to
+  others.
 
-* Additional lectures will be added that allow easy management of the project. 
-  These lectures can be taken any time when needed.
+* Additional lectures will be added that allow easy management of the
+  project.  These lectures can be taken any time when needed.
 
 ## Assessment
 
 This course is focusing on the principal "Learning by Doing" which is
-assessed by simple graded and non-graded activities. The assessment may
-include comprehension of the material taught, programming assignments,
-participation in online discussion forums, or the contribution of
-additional material to the class showcasing your comprehension.
+assessed by simple graded and non-graded activities. The assessment
+may include comprehension of the material taught, programming
+assignments, participation in online discussion forums, or the
+contribution of additional material to the class showcasing your
+comprehension.
 
-The comprehension is also measured by the development of a chapter and sections in
-markdown that can be distributed and replicated to other
+The comprehension is also measured by the development of a chapter and
+sections in markdown that can be distributed and replicated to other
 students. This is done in preparation for the project that must
 include a simple deployment and runtime instruction set.
 
@@ -245,7 +247,8 @@ assessed through the following artifacts:
 1. Deployment and install instructions, 
 2. Project report (typically 2-3 pages per month, tutorial and
    chapters can be reused if possible), 
-3. Working project code that can be installed and executed in reproducible manner by a third party 
+3. Working project code that can be installed and executed in
+   reproducible manner by a third party 
 4. Code developed by the project team distributed in github.com
 5. Project progress notes checked into github throughout the semester. Each 
    week the project progress is reported and will be integrated
@@ -261,15 +264,15 @@ The grade distribution is as follows
 * 70% Project
 
 As the project is the main deliverable of the course it is obvious
-that those starting a week before the deadline will not succeed in this
-class. The project will take a significant amount of time and fosters
-the principal of "Learning by Doing" at all stages throughout the
-semester.
+that those starting a week before the deadline will not succeed in
+this class. The project will take a significant amount of time and
+fosters the principal of "Learning by Doing" at all stages throughout
+the semester.
 
 The class will not have a regular midterm, but it is expected that you
 have worked on your project and can provide a snapshot of the progress
 outlining the goals of the project and how you will achieve these
-goals till the end of the semester. 
+goals till the end of the semester.
 
 The final Project is due 3 weeks before the semester ends. Issues with
 your project ought to have been discussed before this deadline with
@@ -304,7 +307,7 @@ class.
 |  Assignment #  | Event |     | Date 
 | --- | ----- | --- | --- 
 |    | Full Term           | | 16 Weeks |
-|   | *Begins*	          | | Week 1 |
+|   | *Begins*            | | Week 1 |
 | 1, 2 | **Bio, Notebook** | assigned | Week 1 |
 | 1, 2 | **Bio, Notebook** |  due | Week 2 |
 | 3 | **Sections**    | assigned | Week 3 |
@@ -313,12 +316,12 @@ class.
 | 5 | **Project** | Draft | Week 8 |
 | 3 | **Section** | due | Week 10 |
 | 4 | **Chapter** | due | Week 10 |
-| 5 | **Project**         | due	       | Week 12 |
+| 5 | **Project**         | due        | Week 12 |
 | 5 | **Project** (no penalty) | improvements | Week 13 |
 | 5 | **Project** (with penalty) | improvements | Week 14 |
 |   | **Final Deliverables due**  |  | Week 14 |
-|   | *Grading*	          |  | Week 15, 16 |
-|   | *Ends*	          |  | Week 16 |
+|   | *Grading*           |  | Week 15, 16 |
+|   | *Ends*              |  | Week 16 |
 
 
 * TA's must be available till all grades have been submitted. 
@@ -330,9 +333,39 @@ class.
 
 ## Incomplete
 
-Please see the university regulations for getting an
-incomplete. However, as this class uses state-of-the-art technology
-that changes frequently, you must expect that an incomplete may result
-in significant additional work on your behalf as your project may need
+Please see the university regulations for getting an incomplete.
+However, as this class uses state-of-the-art technology that changes
+frequently, you must expect that an incomplete may result in
+significant additional work on your behalf as your project may need
 significant updates on infrastructure, technology, or even programming
 models used. It is best to complete the course within one semester.
+
+## Other classes I523, I524, B649, E516, E616 
+
+The classes CSCI B-649 I524 are the same as E516 but are offered within
+different departments:
+
+* CSCI B-649 Cloud COmputing is the same as E516 but for computer science students.
+* I524 is the same as E516 but for Data Engineering Students
+
+The class E616 is a bit different as it assumes you have taken E516 as
+prerequisite or know its content including REST, virtual machines,
+containers, and Hadoop. In this class you are expected to focus on
+advanced concepts that build upon 516.  This includes DevOps, Julia,
+and any topic of 516 with enhancements. The focus will allow you to
+deliver contributions based on your knowledge as part of sections, a
+chapter you propose to add to the lecture notes, and a more intensive
+project. It also allows PhD students to identify topics that can be
+leading together with Dr.  von Laszewski as a co-author to a workshop
+or conference paper.
+
+Dr. von Laszewski also offeres independent studies on specific
+research topics.  The result of such independent studies is a high
+quality report or paper.
+
+It is possible to take E516 and E616 or an independent study at the
+same time.  The result will be a more intense project.
+
+I523 is a different class and focusses on Big Data applications and
+use cases. You do not have to take I523 as prerequisit if you like to
+take E516.
