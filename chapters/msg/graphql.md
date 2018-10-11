@@ -1,4 +1,4 @@
-# GraphQL
+# GraphQL {#s-graphql}
 
 ## Introduction
 
@@ -1418,37 +1418,52 @@ the other. Github shows that both can be used.
 
 E.GraphQL.1:
 
+> The chapter shows you how to develop a GraphQL server with
+> Django. Instead of Django we like you to use Flask. Develop a
+> documented section showcasing this. Use the resolver class to
+> demonstrate a dynamic information example such as the cpu type.
+> Showcase integration with mongoengine and dynamic information
+> retrieval form another information source.
+>
+> See an example
+>
+> * <https://github.com/graphql-python/graphene-mongo/tree/master/examples/flask_mongoengine>
+> * <https://graphene-mongo.readthedocs.io/en/latest/tutorial.html>
+
+E.GraphQL.2:
+
 > Develop a GraphQL server and client that queries your CPU
 > information through a dynamic query using a resolver
 
-E.GraphQL.2: OpenStack VMS
+E.GraphQL.3: OpenStack VMS
 
 > Develop a GraphQL server that returns the information of running
 > virtual machines on OpenStack
 > 
 
-E.GraphQL.3: OpenStack Azure
+E.GraphQL.4: OpenStack Azure
 
 > Develop a GraphQL server that returns the information of running
 > virtual machines on OpenStack
 > 
 
-E.GraphQL.4: OpenStack Aws
+E.GraphQL.5: OpenStack Aws
 
 > Develop a GraphQL server that returns the information of running
 > virtual machines on OpenStack
 >
 
-E.GraphQL.4: Cloud Service
+E.GraphQL.6: Cloud Service
 
 > Pick a Cloud Service and develop a GraphQL interface for it.
 
-E.GraphQL.6: Cloudmesh
+E.GraphQL.7: Cloudmesh
 
 > Develop a cloudmesh framework that uses all clouds above while
 > returning the information of all running VMS in a Web page. YOu are
 > allowed to make the Web page beautiful with HTML5 and/or JavaScript
-> if you have the background to do so
+> if you have the background to do so. Contact Gregor if you like to
+> work on this for your project.
 >
 
 

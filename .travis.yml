@@ -14,6 +14,7 @@ install:
   - cd pandoc-citeproc
   - stack setup
   - stack install
+  - npm install -g pandoc-index
   - npm install --global mermaid-filter
   - sudo pip install pandoc-fignos
 

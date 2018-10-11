@@ -355,8 +355,11 @@
     - chapters/iaas/futuresystems/futuresystems.md
     - $ref:CHAMELEON
     - chapters/container/glossary.md
-    - $ref:IN    
+    - $ref:IN
+    - chapters/SECTION/SECTION-INDEX.md:
+        - chapters/index.md
     - chapters/SECTION/SECTION-REFERENCES.md
+
 
 - BOOK_BIGDATA:
     - $ref:PREFACE:

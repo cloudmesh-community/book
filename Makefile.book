@@ -29,7 +29,7 @@ endif
 
 
 
-all: splash prepare epub
+all: splash prepare epub 
 	echo done
 
 splash:
@@ -90,27 +90,21 @@ ifeq (,$(wildcard dest/chapters/images/penguin.jpg))
 	make -f Makefile images
 endif
 
-prepare: generateimages version authors destination chapterlist references todo
+prepare: generateimages version authors destination chapterlist references todo index
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
 	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
 
 
 
-fixemoji:
-#	perl -i -pe 's/:white\\_check\\_mark:/:white_check_mark:/g'  dest/all.md
-#	perl -i -pe 's/:mortar\\_board:/:mortar_board:/g'  dest/all.md
-	echo done
-
-
 epub: prepare
+	cd dest; touch chapters/index.md
 ifeq ($(OS), osx)
 	cd dest; iconv -t utf-8 $(INDEX) > all.md
 endif
 ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md
 endif
-	make -f Makefile fixemoji
-#	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
+	make -f Makefile index
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
 epub-all: prepare
@@ -206,3 +200,7 @@ publish: epub
 	git commit -m "update epub" ../$(FILENAME).epub
 	git push
 
+index:
+	cd dest; pandoc -o chapters/index.json $(INDEX)
+	cd dest; pandoc-index chapters/index
+	echo "\n" >> dest/chapters/index.md
