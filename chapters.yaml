@@ -356,11 +356,8 @@
     - $ref:CHAMELEON
     - chapters/container/glossary.md
     - $ref:IN
-<<<<<<< HEAD
     - chapters/SECTION/SECTION-INDEX.md:
         - chapters/index.md
-=======
->>>>>>> 58995a1a6df5754138dd4d7bdd242027b1424e2f
     - chapters/SECTION/SECTION-REFERENCES.md
 
 
