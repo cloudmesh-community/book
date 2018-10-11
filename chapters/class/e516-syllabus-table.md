@@ -58,7 +58,7 @@ For the Syllabus see teh quick start section.
 | :o:                | 10/22    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
 | :white_check_mark: | 10/29    | 10      | Messaging          | Messaging |
 | :white_check_mark: | 10/29    | 11      | Messaging          | - [MQTT](#mqtt)[:cloud:][mqtt.md]  |
-| :o:                | 11/05    |         |                    | - [Graphql][graphql.md]  |
+| :white_check_mark: | 11/05    |         |                    | - [Graphql](#s-graphql)[:cloud:][graphql.md]  |
 | :o:                | 11/19    | 12      | Go                 | [Go Introduction](#s-go-intro)[:cloud:][go-intro.md] |
 | :o:                | 11/19    |         |                    | - [Go Links](#s-go-links)[:cloud:][go-links.md] |
 | :o:                | 11/19    |         |                    | - [Go Install](#s-go-install)[:cloud:][go-install.md] |

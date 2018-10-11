@@ -168,32 +168,36 @@ is a scalable and fault tolerant, it us good for linear processing.
 
 ### Key Differences
 
-1. Speed Spark is lightning fast cluster computing framework and
+The key differences between them are as follows:
+
+1. **Speed**: Spark is lightning fast cluster computing framework and
    operates up to 100 time faster in-memory and 10 times faster than
    Hadoop on disk. In-memory processing reduces the disk read/write
    processes which are time consuming.
-2. Complexity Spark is easy to use since there are many APIs available
+2. **Complexity**: Spark is easy to use since there are many APIs available
    but for Hadoop, developers need to code the functions which makes
    it harder.
-3. Application Management Spark can perform batch processing,
+3. **Application Management**: Spark can perform batch processing,
    interactive and Machine Learning and Streaming of data, all in the
    same cluster, which makes it a complete framework for data analysis
    whereas Hadoop is just a batch engine and it requires other
    frameworks for other tasks which makes it somewhat difficult to
    manage.
-4. Real-Time Data Analysis Spark is capable of processing real time
+4. **Real-Time Data Analysis** Spark is capable of processing real time
    data with great efficiency. But Hadoop was designed primarily for
    batch processing so it cannot live data.
-5. Fault Tolerance Both the systems are fault tolerant so there is no
+5. **Fault Tolerance**: Both the systems are fault tolerant so there is no
    need to restart the applications from scratch.
+6. **Data Volume:** As the data for spark is held in memory larger
+   data volumes are better managed in Hadoop.
    
 ## References
 
-* [@www-ibm-mapreduce]https://www.ibm.com/analytics/hadoop/mapreduce
-* [@www-wikipedia-mapreduce]https://en.wikipedia.org/wiki/MapReduce
-* [@www-tutorialspoint-mapreduce]https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm
-* [@www-edureka-hadoop-mapreduce]https://www.edureka.co/blog/mapreduce-tutorial/?utm_source=youtube&utm_campaign=mapreduce-tutorial-161216-wr&utm_medium=description
-* [@www-quora-hadoop-spark-diff]https://www.quora.com/What-is-the-difference-between-Hadoop-and-Spark
-* [@www-data-flair-spark-hadoop-diff]https://data-flair.training/blogs/apache-spark-vs-hadoop-mapreduce
-* [@www-youtube-hadoop-mapreduce]https://www.youtube.com/watch?v=SqvAaB3vK8U&list=WL&index=25&t=2547s
+* [@www-ibm-mapreduce] https://www.ibm.com/analytics/hadoop/mapreduce
+* [@www-wikipedia-mapreduce] https://en.wikipedia.org/wiki/MapReduce
+* [@www-tutorialspoint-mapreduce] https://www.tutorialspoint.com/hadoop/hadoop_mapreduce.htm
+* [@www-edureka-hadoop-mapreduce] https://www.edureka.co/blog/mapreduce-tutorial/?utm_source=youtube&utm_campaign=mapreduce-tutorial-161216-wr&utm_medium=description
+* [@www-quora-hadoop-spark-diff] https://www.quora.com/What-is-the-difference-between-Hadoop-and-Spark
+* [@www-data-flair-spark-hadoop-diff] https://data-flair.training/blogs/apache-spark-vs-hadoop-mapreduce
+* [@www-youtube-hadoop-mapreduce] https://www.youtube.com/watch?v=SqvAaB3vK8U&list=WL&index=25&t=2547s
 

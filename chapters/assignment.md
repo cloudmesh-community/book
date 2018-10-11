@@ -5,7 +5,7 @@ here just some summary.
 
 ## Account Creation
 
-As part of the class you will need a number of accounts
+As part of the class you will need a number of [accounts]{.index}
 
 * piazza.com
 * github.com
