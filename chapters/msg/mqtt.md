@@ -6,8 +6,7 @@
 **:mortar_board: Learning Objectives**
 
 * Understand Message systems for the cloud
-* learn about MQTT
-* Learn about GraphQL
+* Learn about [MQTT]{.index}
 
 ---
 
