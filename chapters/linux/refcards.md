@@ -4,7 +4,7 @@
 
 **:mortar_board: Learning Objectives**
 
-* Obtain quickly information about technical aspects with the help of reference cards.
+* Obtain quickly information about technical aspects with the help of [reference cards]{.index}.
 
 ---
 

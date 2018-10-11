@@ -5,7 +5,7 @@
 **:mortar_board: Learning Objectives**
 
 * This is one of the most important sections of the book, studdy it carefully.
-* learn how to use SSH keys 
+* learn how to use [SSH]{.index} keys 
 * Learn how to use ssh-add and ssh-keycahin so you only have to type in your password once
 * Understand that each computer needs its own ssh key
 

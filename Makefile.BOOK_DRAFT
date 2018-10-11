@@ -3,7 +3,6 @@ INDEX=\
   chapters/pi/setup-ultimate.md\
   chapters/pi/setup-dev.md\
   chapters/pi/run-at-boot.md\
-  chapters/pi/sd-card.md\
   chapters/pi/setup.md\
   chapters/pi/case.md\
   chapters/pi/config-display.md\
@@ -25,7 +24,7 @@ INDEX=\
   chapters/in/course1.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/msg/amazon-kenesis-data-streams.md dest/chapters/pi/setup-ultimate.md dest/chapters/pi/setup-dev.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/sd-card.md dest/chapters/pi/setup.md dest/chapters/pi/case.md dest/chapters/pi/config-display.md dest/chapters/pi/exercise.md dest/chapters/pi/software2.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/slurm.md dest/chapters/pi/board.md dest/chapters/pi/links.md dest/chapters/pi/preface.md dest/chapters/in/assignments.md dest/chapters/in/ubuntu.md dest/chapters/in/old.md dest/chapters/in/box.md dest/chapters/in/datasets.md dest/chapters/in/pyenv-anaconda.md dest/chapters/in/vis.md dest/chapters/in/course1.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/msg/amazon-kenesis-data-streams.md dest/chapters/pi/setup-ultimate.md dest/chapters/pi/setup-dev.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/setup.md dest/chapters/pi/case.md dest/chapters/pi/config-display.md dest/chapters/pi/exercise.md dest/chapters/pi/software2.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/slurm.md dest/chapters/pi/board.md dest/chapters/pi/links.md dest/chapters/pi/preface.md dest/chapters/in/assignments.md dest/chapters/in/ubuntu.md dest/chapters/in/old.md dest/chapters/in/box.md dest/chapters/in/datasets.md dest/chapters/in/pyenv-anaconda.md dest/chapters/in/vis.md dest/chapters/in/course1.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -44,10 +43,6 @@ dest/chapters/pi/setup-dev.md: ../chapters/pi/setup-dev.md
 dest/chapters/pi/run-at-boot.md: ../chapters/pi/run-at-boot.md
 	../bin/markup-single.py ../chapters/pi/run-at-boot.md 1
 	../bin/header.py dest/chapters/pi/run-at-boot.md 1
-
-dest/chapters/pi/sd-card.md: ../chapters/pi/sd-card.md
-	../bin/markup-single.py ../chapters/pi/sd-card.md 1
-	../bin/header.py dest/chapters/pi/sd-card.md 1
 
 dest/chapters/pi/setup.md: ../chapters/pi/setup.md
 	../bin/markup-single.py ../chapters/pi/setup.md 1
