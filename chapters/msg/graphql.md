@@ -1,8 +1,17 @@
 # GraphQL {#s-graphql}
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Learn about GraphQL
+* Develop a GraphQL Server in Python
+
+---
+
 ## Introduction
 
-GraphQL is a data query language developed by Facebook.
+[GraphQL]{.index} is a data query language developed by Facebook.
 
 GraphQL allows clients to request they need while specifing attributes
 in the query without thinking
@@ -32,7 +41,7 @@ throughout the chapter
 
 In this chapter, we will use [Graphene](https://graphene-python.org/) 
 which is a library for implementing GraphQL APIs in Python. Use `pip`
-to install Graphene
+to install [Graphene]{.index}
 
 ```bash
 $ pip install graphene==2.0.1 graphene-django==2.0.0
