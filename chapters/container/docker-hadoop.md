@@ -16,7 +16,7 @@ includes significant enhancements over the previous version of Hadoop
 * systemctl
 * Java SE Development Kit 8
 
-A Dockerfile to creat the haddop deployment is available at
+A Dockerfile to create the hadoop deployment is available at
 
 *<https://github.com/cloudmesh-community/book/blob/master/examples/docker/hadoop/3.0.3/Dockerfile>
 
@@ -57,7 +57,7 @@ The configuration files are included in the `conf` folder
 
 ## Virtual Memory Limit
 
-IN case you need more memory, you can increase it by cahnging the
+IN case you need more memory, you can increase it by changing the
 parameters in the file `mapred-site.xml`, for example:
 
 - mapreduce.map.memory.mba to 4096
@@ -86,10 +86,10 @@ We explain the examples next
 
 ### Statistical Example with Hadoop
 
-After we launcht the container and use the interactive shell, we can
-run the statistics Hadoop application wich calculates the  minimum,
+After we launch the container and use the interactive shell, we can
+run the statistics Hadoop application which calculates the  minimum,
 maximim, average, and standard derivation from values stored in a
-number of input files.
+number of input files. Figure +@fig:docker-hadoop-a shows the computing phases in a MapReduce job.
 
 To achieve this, this Hadoop program reads multiple files from HDFS and
 provides calculated values. We walk through every step from compiling
@@ -105,8 +105,6 @@ floating point number per line. The result file includes *min, max,
 average, and standard deviation*.
 
 ![MapReduce example in Docker](images/docker-hadoop-example.png){#fig:docker-hadoop-a}
-
-:o: +@fig:docker-hadoop-a shows something but we are not sure what
 
 #### Base Location
 
@@ -412,11 +410,6 @@ Hadoop runs its program using HDFS. We also observed the one of benefits
 using Docker container which is that the hassle of configuration and
 installation of Hadoop is not necessary anymore.
 
-
-## Pagerank
-
-:o: The pagerank is not explained or mentioned here. there seems to be
-a different file for that
 
 ## Refernces
 

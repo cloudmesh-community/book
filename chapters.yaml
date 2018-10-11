@@ -118,7 +118,7 @@
             - chapters/container/docker-swarm.md
             - chapters/container/docker-fs.md
             - chapters/container/docker-hadoop.md
-            - chapters/container/docker-pagerank-example-instruction.md            
+            - chapters/container/docker-pagerank-example-instruction.md
             - chapters/container/docker-spark.md
         - chapters/SECTION/SECTION-KUBERNETES.md:
             - chapters/container/kubernetes-intro.md
@@ -132,13 +132,13 @@
         - chapters/mapreduce/mapreduce.md
         - chapters/mapreduce/hadoop-lectures.md:
             - chapters/mapreduce/hadoop-installation.md
+            - chapters/mapreduce/cm-hadoop.md
         - chapters/SECTION/SECTION-SPARK.md:
             - chapters/mapreduce/spark-lectures.md
             - chapters/mapreduce/spark-installation.md
             - chapters/mapreduce/spark-streaming.md
             - chapters/mapreduce/spark-udf.md
         - chapters/SECTION/SECTION-HADOOP-ADVANCED.md:
-            - chapters/mapreduce/cm-hadoop.md
             - chapters/mapreduce/amazon-emr-1.md
             - chapters/mapreduce/amazon-emr-2.md
             - chapters/mapreduce/twister.md
@@ -198,10 +198,10 @@
 - IOT:
     - chapters/SECTION/SECTION-IOT.md:
         - chapters/iot/introduction.md
-        - chapters/iot/tools.md        
+        - chapters/iot/tools.md
         - chapters/iot/hardware.md
-        - chapters/iot/sensors.md        
-        - chapters/iot/grovepi.md        
+        - chapters/iot/sensors.md
+        - chapters/iot/grovepi.md
         - chapters/iot/dexter.md
         - chapters/iot/easyplug.md
         - chapters/iot/esp8266.md
@@ -225,7 +225,7 @@
     - $ref:PREFACE
     - chapters/pi/preface.md
     - chapters/pi/board.md
-    - $ref:IOT    
+    - $ref:IOT
     - chapters/pi/case.md:
         - chapters/case/case.md
         - chapters/pi/links.md
@@ -278,7 +278,7 @@
 - BOOK_DRAFT:
     - $ref:DRAFTS
     - chapters/pi/setup-ultimate.md
-    - chapters/pi/setup-dev.md    
+    - chapters/pi/setup-dev.md
     - chapters/pi/run-at-boot.md
     - chapters/pi/setup.md
     - chapters/pi/case.md
@@ -313,7 +313,7 @@
 - BOOK_516:
     - chapters/SECTION/SECTION-QUICK516.md:
         - chapters/quick516.md
-        - chapters/assignment.md        
+        - chapters/assignment.md
         - chapters/class/e516-syllabus-table.md
     - $ref:PREFACE
     - chapters/SECTION/SECTION-OVERVIEW.md:
@@ -356,8 +356,11 @@
     - $ref:CHAMELEON
     - chapters/container/glossary.md
     - $ref:IN
+<<<<<<< HEAD
     - chapters/SECTION/SECTION-INDEX.md:
         - chapters/index.md
+=======
+>>>>>>> 58995a1a6df5754138dd4d7bdd242027b1424e2f
     - chapters/SECTION/SECTION-REFERENCES.md
 
 
@@ -369,7 +372,7 @@
         - chapters/class/e534-i523.md
         - chapters/class/volumes.md
         - chapters/in/datasets.md
-        - chapters/class/assignments-523.md        
+        - chapters/class/assignments-523.md
         - chapters/bigdata/intro-fall-2018.md
     - chapters/bigdata/applications/overview.md
     - chapters/bigdata/applications/physics.md
