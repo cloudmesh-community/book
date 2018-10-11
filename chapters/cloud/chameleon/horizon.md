@@ -10,7 +10,7 @@ project.
 Go to Project > Compute > Access & Security, then select the Key Pairs
 tab.
 
-![**Figure:** Key Pairs Tab](images/Screen-Shot-2016-10-26-at-14-37-00.png)
+![**Figure:** Key Pairs Tab](images/Screen-Shot-2016-10-26-at-14-37-00.png){#fig:key-pairs-tab}
 
 Here you can either ask OpenStack to create an SSH key pair for you (via
 the "Create Key" Pair button), or, if you already have an SSH key pair
@@ -24,12 +24,12 @@ content of your SSH public key. Typically it will be at
 It copies the content of the public key to your copy/paste buffer. Then
 you can simply paste in the "Public Key" box.
 
-![**Figure:** Public Key](images/Screen-Shot-2016-10-26-at-14-37-18.png)
+![**Figure:** Public Key](images/Screen-Shot-2016-10-26-at-14-37-18.png){#fig:public-key}
 
 Then, click on the blue "Import Key Pair" button. This should show you
 the list of key pairs, with the one you just added.
 
-![**Figure:** Import key pair](images/Screen-Shot-2016-10-26-at-14-37-52.png)
+![**Figure:** Import key pair](images/Screen-Shot-2016-10-26-at-14-37-52.png){#fig:import-key-pair}
 
 For those already familiar with OpenStack, note that Security Groups are
 not functional on bare-metal. All instances ports are open to the
@@ -37,7 +37,7 @@ Internet and any security group rule you add will not be respected.
 
 Now, go to the "Instances" panel.
 
-![**Figure:** VM Instances](images/Screen-Shot-2016-10-26-at-14-39-56.png)
+![**Figure:** VM Instances](images/Screen-Shot-2016-10-26-at-14-39-56.png){#fig:vm-instances}
 
 Click on the "Launch Instance" button in the top right corner. Select a
 reservation in the Reservation box, pick an instance name (in this
@@ -46,18 +46,18 @@ environment named CC-CentOS7. If you have multiple key pairs registered,
 you need to select one in the "Access & Security" tab. Finally, click on
 the blue "Launch" button.
 
-![**Figure:** Launch a VM](images/Screen-Shot-2016-10-26-at-14-41-08.png)
+![**Figure:** Launch a VM](images/Screen-Shot-2016-10-26-at-14-41-08.png){#fig:launch-a-vm}
 
 The instance will show up in the instance list, at first in Build
 status. It takes a few minutes to deploy the instance on bare-metal
 hardware and reboot the machine.
 
-![**Figure:** Status Window (a)](images/Screen-Shot-2016-10-26-at-15-53-31.png)
+![**Figure:** Status Window (a)](images/Screen-Shot-2016-10-26-at-15-53-31.png){#fig:status-window(a)}
 
 After a few minutes the instance should become in Active status and the
 Power State should be Running.
 
-![**Figure:** Status Window (b)](images/Screen-Shot-2016-10-26-at-16-22-38.png)
+![**Figure:** Status Window (b)](images/Screen-Shot-2016-10-26-at-16-22-38.png){#fig:status-window(b)}
 
 At this point the instance might still be booting: it might take a
 minute or two to actually be accessible on the network and accept SSH
@@ -65,26 +65,26 @@ connections. In the meantime, you can attach a floating IP to the
 instance. Click on the "Associate Floating IP" button. You should get a
 screen like the one below:
 
-![**Figure:** Floating IP](images/Screen-Shot-2016-10-26-at-16-25-04.png)
+![**Figure:** Floating IP](images/Screen-Shot-2016-10-26-at-16-25-04.png){#fig:floating-ip}
 
 If there are no unused floating IP already allocated to your project,
 click on the + button. In the window that opens, select the ext-net pool
 if not already selected by default and click on the blue Allocate IP
 button.
 
-![**Figure:** Allocate the IP](images/Screen-Shot-2016-10-26-at-16-33-45-W05kOLQ.png)
+![**Figure:** Allocate the IP](images/Screen-Shot-2016-10-26-at-16-33-45-W05kOLQ.png){#fig:allocate-the-ip}
 
 You will be returned to the previous window. The correct value for "Port
 to be associated" should already be selected, so you only have to click
 on "Associate".
 
-![**Figure:** Associate the IP](images/Screen-Shot-2016-10-26-at-16-25-10.png)
+![**Figure:** Associate the IP](images/Screen-Shot-2016-10-26-at-16-25-10.png){#fig:associate-the-ip}
 
 This should send you back to the instance list, where you can see the
 floating IP attached to the instance (you may need to refresh your
 browser to see the floating IP).
 
-![**Figure:** Status of the IP Association](images/Screen-Shot-2016-10-26-at-16-26-54.png)
+![**Figure:** Status of the IP Association](images/Screen-Shot-2016-10-26-at-16-26-54.png){#fig:status-ip-association}
 
 ## Interact with resources
 
@@ -118,7 +118,7 @@ the resource registry. For this, simply run: `sudo cc-checks -v`
 As of 03/30/2018, the cc-checks command may not work on the images in
 Chameleon cloud. You may have to ignore (not run) this command.
 
-![**Figure:** cc-check program](images/cc-checks.png)
+![**Figure:** cc-check program](images/cc-checks.png){#fig:cc-check-program}
 
 The cc-checks program prints the result of each check in green if it is
 successful and red if it failed.
