@@ -6,20 +6,36 @@ The developers provide the code written in the desired programming language for 
 
 ## OpenWhisk Workflow
 
-OpenWhisk uses Nginx, Kafka, Docker and CouchDB as internal components. To understand the role of each of these components, let's review an action invocation trace in the system. Remember the main outcome of OpenWhisk (or Serverless architecture in general) is to execute the user's code inside the system and return the result.
+OpenWhisk uses Nginx, Kafka, Docker and CouchDB as internal components. To understand the role of each of these components, let's review an action invocation trace in the system. Remember the main outcome of OpenWhisk (or Serverless architecture in general) is to execute the user's code inside the system and return the result. The workflow of the OpenWhisk is illustrated in the following figure:
 
-### The Action
+![OpenWhisk workFlow](images/openwhisk_workflow.png){#fig:openwhisk-workflow}
+
+We will review the role of each components in the OpenWhisk workflow.  
+### The Action and Nginx
 As mentioned prior, the action is the response of the OpenWhisk to triggers. Consider the following JavaScript function: 
 ``` Javascript 
 function main() {
     return { hello: 'world' };
 }
 ```
-This is the Hello World example of the OpenWhisk action where the action returns a JSON object with the key `hello` which has a value of `world`.  
-### Nginx
-to be completed
+This is the Hello World example of the OpenWhisk action where the action returns a JSON object with the key `hello` which has a value of `world`.  After saving this function in a `.js` file, e.g. `action.js` then the action could be created using the following command: 
+```bash
+$ wsk action create HelloAction action.js
+```
+Then, the `HelloAction` can be invoked using: 
+```bash
+$ wsk action invoke HelloAction --result
+```
+The `wsk` command is what is known as OpenWhisk CLI, which we will show how to install in the next sections.  Note that OpenWhisk's API is RESTful and fully HTTP based. In other words, the above-mentioned `wsk action` command  is basically a HTTP request equivalent to the following: 
+``` 
+POST /api/v1/namespaces/$userNamespace/actions/HelloAction
+Host: $openwhiskEndpoint
+```
+The `userNamespace` variable defines the namespace in which the `HelloAction` is put into. Accordingly, nginx is the entering point of the OpenWhisk system and it plays an important role as a HTTP server as well as a reverse proxy server, mainly used for SSL termination and HTTP request  forwarding. 
 ### Controller
-to be completed
+We learned that nginx does not do any processing on the HTTP request except decrypting it (SSL Termination). The main processing of the request starts in the Controller. The controller plays the role of the interface for user both for actions and Create, Read, Update, and Delete (CRUD) requests. 
+
+Based on the 
 ### CouchDB
 to be completed
 ### Load Balancer
