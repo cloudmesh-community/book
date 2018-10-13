@@ -111,3 +111,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# These are generated and should not be checked in
+chapters/authors.md
+chapters/version.md
