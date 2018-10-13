@@ -9,7 +9,13 @@ The developers provide the code written in the desired programming language for 
 OpenWhisk uses Nginx, Kafka, Docker and CouchDB as internal components. To understand the role of each of these components, let's review an action invocation trace in the system. Remember the main outcome of OpenWhisk (or Serverless architecture in general) is to execute the user's code inside the system and return the result.
 
 ### The Action
-to be completed
+As mentioned prior, the action is the response of the OpenWhisk to triggers. Consider the following JavaScript function: 
+``` Javascript 
+function main() {
+    return { hello: 'world' };
+}
+```
+This is the Hello World example of the OpenWhisk action where the action returns a JSON object with the key `hello` which has a value of `world`.  
 ### Nginx
 to be completed
 ### Controller
@@ -24,3 +30,6 @@ to be completed
 to be completed
 ### CouchDB again
 to be completed
+
+## Setting up the OpenWhisk CLI
+
