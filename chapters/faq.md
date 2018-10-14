@@ -138,7 +138,27 @@ $ yamllint README.yml
 
 A python script to check it is available at
 
-* <https://github.com/cloudmesh-community/fa18-516-21/blob/master/validate_yml.py>
+* <https://github.com/cloudmesh-community/book/tree/master/examples/yaml-validation/validate_yml.py>
+
+This python script depends on `ruamel.yaml` package. We can install it 
+using following command:
+
+```bash
+$ pip install ruamel.yaml
+```
+
+It accepts file path as an argument. This script will load `YAML` 
+file and dump its content on console. For invalid syntax it will throw 
+an error.
+
+To execute python script you need to run following command after you 
+clone *book* repository.
+
+```bash
+$ cd examples/yaml-validation
+$ chmod +x validate_yml.py
+$ ./validate_yml.py <path to yaml file to validate>
+```
 
 Online checkers are available at
 
