@@ -287,7 +287,7 @@ Now to get a more detailed view click on the "Running Instances" link.
 This will give you the following view: +@fig:running-instance2. Is shows the current instance
 that you are running
 
-![Running Instance2](images/running_instance2.png){fig:#running-instance2}
+![Running Instance2](images/running_instance2.png){#fig:running-instance2}
 
 ### Stopping a VM
 
