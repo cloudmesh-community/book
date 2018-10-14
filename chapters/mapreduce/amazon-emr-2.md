@@ -32,9 +32,9 @@ the 'Create bucket' button. Fill in the requested information for bucket
 name and region, then proceed to the next two pages to enter in the
 bucket properties and permissions. After those sections, a review page
 will be presented for your review and if you are satisfied with your
-selections, click 'Create bucket' [@hid-sp18-521-s3bucket].
+selections, click 'Create bucket' [@hid-sp18-521-s3bucket]. As the following: +@fig:s3-bucket.
 
-![**Figure:** S3 Bucket](images/S3_create_bucket.png)
+![**Figure:** S3 Bucket](images/S3_create_bucket.png){#fig:s3-bucket}
 
 After the S3 bucket has been created, an EC2 key pair then needs to be
 generated which allows you to connect to your EMR cluster over SSH. If
@@ -49,9 +49,9 @@ and your EC2 key pair wil be automatically downloaded by the browser and
 named with a pem extension. Save the key file generated in a safe
 location for use later on as this is the only time you will be able to
 save this key file. It will need to be used when you need to launch and
-connect to the EC2 instances created by EMR [@hid-sp18-521-ec2keypair].
+connect to the EC2 instances created by EMR [@hid-sp18-521-ec2keypair]. As the picture below: +@fig:key.
 
-![**Figure:** Key](images/EMRkey.png)
+![**Figure:** Key](images/EMRkey.png){#fig:key}
 
 ## Configuring and Utilizing the Cluster with AWS Management Console
 
@@ -73,12 +73,12 @@ step execution. The cluster option can be used for EMR clusters that you
 want to remain online indefinitely. The step execution option would be
 used for when you want to execute a set of predefined steps upon cluster
 creation and once those steps complete successfully, shut down the
-cluster [@hid-sp18-521-emrlaunch].
+cluster [@hid-sp18-521-emrlaunch]. As the figure shows: +@fig:configuration.
 
-![**Figure:** Configuration](images/emr_gen_config.png)
+![**Figure:** Configuration](images/emr_gen_config.png){#fig:configuration}
 
 Once launch mode is selected, scroll down to the 'Software
-configuration' section and choose an EMR release version. The most
+configuration' section and choose an EMR release version. See the following picture: +@fig:software-configuration. The most
 current version is selected by default. If you chose a cluster launch
 mode, then proceed to selecting one of the 4 predefined sets of
 applications you want to install based on your use case. If step
@@ -89,7 +89,7 @@ EC2 instances you would like to utilize for your cluster. he values
 selected here will vary on what type of data processing you're looking
 to achieve. Then scroll down to the 'Security and access' section of the
 page and select the key pair generated in the steps above in the
-drop-down menu. Below that you can then select which permissions model
+drop-down menu, as below: +@fig:security. Below that you can then select which permissions model
 to u se: default or custom. The default option sets up permissions for
 your EMR cluster that are granted using policies applied to EMR specific
 IAM roles. Using the custom option allows you to select existing IAM
@@ -99,17 +99,17 @@ launched by selecting the 'Create cluster' button at the bottom of the
 page. Your cluster will then be launched and ready for
 workloads [@hid-sp18-521-emrlaunch].
 
-![**Figure:** Configuration](images/emr_software_config.png)
+![**Figure:** Software Configuration](images/emr_software_config.png){#fig:software-configuration}
 
-![**Figure:** Security](images/emr_security.png)
+![**Figure:** Security](images/emr_security.png){#fig:security}
 
 If you've selected cluster launch mode, ad-hoc processing of data can
 now occur on cluster. To get started go to the EMR console page. From
 here you can then select the 'Clusters' menu on the left side of the
 screen which will then show you a list of current EMR clusters you have
-setup. Click on the name of the cluster you would like to run processing
+setup: +@fig:cluster-create. Click on the name of the cluster you would like to run processing
 steps on and then navigate over to the 'Steps' tab on the following
-page. You show see a button named 'Add step' which you can then select
+page: see +@fig:cluster-steps. You show see a button named 'Add step' which you can then select
 to setup the type of step you would like to run for data processing. The
 step types available to create vary based on the applications that were
 installed during the creation of the cluster. In this example, only the
@@ -118,16 +118,16 @@ to custom JAR, Hive, Pig and streaming programs. Each step type then has
 a set of parameters that need to be populated before the step can be
 created. After you've decided on a step type and have populated all of
 the required step parameters, click the 'Add' button which will then
-create and run the step on the cluster. This process can be repeated as
+create and run the step on the cluster, see +@fig:additional-steps. This process can be repeated as
 needed and there are additional ways to submit up to 256 active steps
 that can be explored but is beyond the scope of this
 section [@hid-sp18-521-emrprocess].
 
-![**Figure:** Create](images/emr_cluster_create.png)
+![**Figure:** Cluster Create](images/emr_cluster_create.png){#fig:cluster-create}
 
-![**Figure:** Steps](images/emr_cluster_steps.png)
+![**Figure:** Cluster Steps](images/emr_cluster_steps.png){#fig:cluster-steps}
 
-![**Figure:** Additional steps](images/emr_cluster_steps2.png)
+![**Figure:** Additional Steps](images/emr_cluster_steps2.png){#fig:additional-steps}
 
 ## Teardown
 
@@ -138,14 +138,14 @@ S3 bucket you created along with the EMR cluster itself will need to be
 removed. Start with the termination of the cluster by going to main EMR
 page and selecting the 'Cluster' option on the left. Select the check
 box for the name of the cluster you wish to terminate and click the
-'Terminate' button. It will them prompt you to confirm this clusters
+'Terminate' button as the folowing picture shows: +@fig:terminate. It will them prompt you to confirm this clusters
 termination which you will verify and continue. This will place the
 cluster in a 'Terminating' state and eventually move to a 'Terminated'
 state. Terminated clusters will remain viewable in the console for two
 months. You can then proceed to the S3 console page. Before you can
 delete buckets, you have to delete all of the folders and files
 contained within that bucket. To do this, click on the bucket name which
-will then show the subfolders contained within the bucket. Check the box
+will then show the subfolders contained within the bucket: +@fig:bucket. Check the box
 next to all of the subfolder names, select the 'More' button in the menu
 above and from that menu select 'Delete'. Once all of the folders and
 files are gone, navigate back to the main S3 page, click the row of the
@@ -157,6 +157,6 @@ the section have been deleted, you can then be certain that no
 additional costs will continue to accrue based on the work performed in
 this section [@hid-sp18-521-emrreset].
 
-![**Figure:** Terminate](images/emr_terminate.png)
+![**Figure:** Terminate](images/emr_terminate.png){#fig:terminate}
 
-![**Figure:** Bucket](images/s3_delete_bucket.png)
+![**Figure:** Bucket](images/s3_delete_bucket.png){#fig:bucket}
