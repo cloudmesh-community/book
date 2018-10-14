@@ -145,7 +145,6 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <http://sabr.org/>
 -   <http://en.wikipedia.org/wiki/Sabermetrics>
 -   <http://en.wikipedia.org/wiki/Baseball_statistics>
--   <http://www.sportvision.com/baseball>
 -   <http://m.mlb.com/news/article/68514514/mlbam-introduces-new-way-to-analyze-every-play>
 -   <http://www.fangraphs.com/library/offense/offensive-statistics-list/>
 -   <http://en.wikipedia.org/wiki/Component_ERA>
@@ -165,11 +164,9 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <https://courses.edx.org/courses/BUx/SABR101x/2T2014/courseware/10e616fc7649469ab4457ae18df92b20/>
 -   <http://vincegennaro.mlblogs.com/>
 -   <https://www.youtube.com/watch?v=H-kx-x_d0Mk>
--   <http://www.sportvision.com/media/pitchfx-how-it-works>
 -   <http://www.baseballprospectus.com/article.php?articleid=13109>
 -   <http://baseball.physics.illinois.edu/FastPFXGuide.pdf>
 -   <http://baseball.physics.illinois.edu/FieldFX-TDR-GregR.pdf>
 -   <http://regressing.deadspin.com/mlb-announces-revolutionary-new-fielding-tracking-syste-1534200504>
 -   <http://grantland.com/the-triangle/mlb-advanced-media-play-tracking-bob-bowman-interview/>
--   <http://www.sportvision.com/baseball/hitfx>
 -   <https://www.youtube.com/watch?v=YkjtnuNmK74>
