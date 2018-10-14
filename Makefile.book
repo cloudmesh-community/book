@@ -148,8 +148,6 @@ tex:
 	cd dest; pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)
 	cd dest; pdflatex content.tex
 
-eisvogel:
-	cd dest; pandoc $(RESOURCE) --number-sections -V secnumdepth:5 --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' --template=../../template/eisvogel/eisvogel.latex --listings --bibliography references.bib -o $(FILENAME).pdf metadata.txt $(INDEX)
 
 #
 
