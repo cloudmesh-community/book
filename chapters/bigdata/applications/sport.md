@@ -149,7 +149,6 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <http://www.fangraphs.com/library/offense/offensive-statistics-list/>
 -   <http://en.wikipedia.org/wiki/Component_ERA>
 -   <http://www.fangraphs.com/library/pitching/fip/>
--   <http://nomaas.org/2012/05/a-look-at-the-defense-the-yankees-d-stinks-edition/>
 -   <http://en.wikipedia.org/wiki/Wins_Above_Replacement>
 -   <http://www.fangraphs.com/library/misc/war/>
 -   <http://www.baseball-reference.com/about/war_explained.shtml>
