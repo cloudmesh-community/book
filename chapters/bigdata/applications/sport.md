@@ -169,7 +169,6 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <http://www.baseballprospectus.com/article.php?articleid=13109>
 -   <http://baseball.physics.illinois.edu/FastPFXGuide.pdf>
 -   <http://baseball.physics.illinois.edu/FieldFX-TDR-GregR.pdf>
--   <http://www.sportvision.com/baseball/fieldfx>
 -   <http://regressing.deadspin.com/mlb-announces-revolutionary-new-fielding-tracking-syste-1534200504>
 -   <http://grantland.com/the-triangle/mlb-advanced-media-play-tracking-bob-bowman-interview/>
 -   <http://www.sportvision.com/baseball/hitfx>
