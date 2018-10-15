@@ -244,10 +244,55 @@ there would be faster solution methods.
 [:clapper: k Nearest Neighbors and High Dimensional Spaces
 (10:03)](https://youtu.be/2NqUsDGQDy8)
 
+
+#### Recommender Systems - K-Neighbors
+
+Next we provide some sample Python code for the k Nearest Neighbor and its application to
+an artificial data set in 3 dimensions. Results are visualized in
+Matplotlib in 2D and with Plotviz in 3D. The concept of training and
+testing sets are introduced with training set pre-labelled.
+This lesson is adapted from the Python k Nearest Neighbor code found on the
+web associated with a book by Harrington on Machine Learning [??]. There are
+two data sets. First we consider a set of 4 2D vectors divided into two
+categories (clusters) and use k=3 Nearest Neighbor algorithm to classify
+3 test points. Second we consider a 3D dataset that has already been
+classified and show how to normalize. In this lesson we just use
+Matplotlib to give 2D plots.
+
+
+The lesson goes through an example of using k NN classification
+algorithm by dividing dataset into 2 subsets. One is training set with
+initial classification; the other is test point to be classified by k=3
+NN using training set. The code records fraction of points with a
+different classification from that input. One can experiment with
+different sizes of the two subsets. The Python implementation of
+algorithm is analyzed in detail.
+
+#### Plotviz
+
+The clustering methods are used and their results examined in
+Plotviz. The original labelling is compared to clustering results and
+extension to 28 clusters given.  General issues in clustering are
+discussed including local optima, the use of annealing to avoid this
+and value of heuristic algorithms.
+
+
+#### Files
+
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/kNN.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/kNN_Driver.py>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/dating_test_set2.txt>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/clusterFinal-M3-C3Dating-ReClustered.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/dating_rating_original_labels.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/knn/clusterFinal-M30-C28.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/clusterfinal_m3_c3dating_reclustered.pviz>
+- <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/fungi_lsu_3_15_to_3_26_zeroidx.pviz>
+
+### k-Means
+
+
 ### Resources
 
-\TODO{These resources have not all been checked to see if they still
-  exist this is currently in progress}
 -   <http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial>
 -   <http://www.ifi.uzh.ch/ce/teaching/spring2012/16-Recommender-Systems_Slides.pdf>
 -   <https://www.kaggle.com/>
