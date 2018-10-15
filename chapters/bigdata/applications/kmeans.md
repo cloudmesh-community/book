@@ -1,4 +1,4 @@
-# Practical K-Means, Map Reduce, and Page Rank for Big Data Applications and Analytics :o:
+# Practical K-Means, Map Reduce, and Page Rank for Big Data Applications and Analytics
 
 We use the K-means Python code in SciPy package to show real code for
 clustering. After a simple example we generate 4 clusters of distinct
@@ -71,7 +71,7 @@ clusters and use this to discuss functions with multiple minima and a
 hill between them. The lesson has both discussion of already produced
 results in slides and interactive use of Python for new runs.
 
-## Parallel K-means :o:
+## Parallel K-means
 
 We modify the SciPy K-means code to support a MapReduce execution style
 and runs it in this short unit. This illustrates the key ideas of
@@ -83,7 +83,7 @@ Files:
 
 - <https://github.com/cloudmesh-community/book/blob/master/examples/python/kmeans/parallel-kmeans.py>
 
-## PageRank in Practice :o:
+## PageRank in Practice
 
 We use Python to Calculate PageRank from Web Linkage Matrix showing
 several different formulations of the basic matrix equations to finding
