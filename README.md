@@ -130,3 +130,15 @@ In case you need to use latex you need to download the full
 version. For OSX this is
 
 * <http://www.tug.org/mactex/mactex-download.html>
+
+
+## Cabal
+
+notes only at this time
+
+mkdir pandoc
+cabal update
+cd pandoc
+cabal sandbox init
+cabal install pandoc-crossref
+cabal install pandoc-citeproc

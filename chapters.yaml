@@ -381,9 +381,9 @@
     - chapters/bigdata/applications/sensor.md
     - chapters/bigdata/applications/web.md
     - chapters/bigdata/applications/health.md
-    - chapters/bigdata/algorithms/technology.md
-    - chapters/bigdata/algorithms/clustering.md
-    - chapters/bigdata/algorithms/plotviz.md
+    - chapters/SECTION/SECTION-TECH.md:
+        - chapters/bigdata/applications/kmeans.md    
+        - chapters/bigdata/applications/plotviz.md
     - $ref:DEVTOOLS
     - $ref:PYTHON
     - chapters/SECTION/SECTION-FAQ.md:
