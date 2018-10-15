@@ -1,4 +1,4 @@
-# Practical K-Means, Map Reduce, and Page Rank for Big Data Applications and Analytics
+# Practical K-Means, Map Reduce, and Page Rank for Big Data Applications and Analytics {#s-kmeans}
 
 We use the K-means Python code in SciPy package to show real code for
 clustering. After a simple example we generate 4 clusters of distinct
@@ -21,7 +21,8 @@ eigenvector. The unit is concluded by a calculation of PageRank for
 general web pages by extracting the secret from Google.
 
 [:clapper: K-Means I (11:42)](https://www.youtube.com/watch?v=I79ISV6XBbE)
-[:clapper: K-Means I (11:54)](https://www.youtube.com/watch?v=Srgq9VDg4C8)
+
+[:clapper: K-Means II (11:54)](https://www.youtube.com/watch?v=Srgq9VDg4C8)
 
 ## K-means in Practice
 

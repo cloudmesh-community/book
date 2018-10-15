@@ -379,9 +379,11 @@
     - chapters/bigdata/applications/cloud.md
     - chapters/bigdata/applications/usecases.md
     - chapters/bigdata/applications/sensor.md
+    - chapters/bigdata/applications/radar.md
     - chapters/bigdata/applications/web.md
     - chapters/bigdata/applications/health.md
     - chapters/SECTION/SECTION-TECH.md:
+        - chapters/bigdata/applications/statistics.md    
         - chapters/bigdata/applications/kmeans.md    
         - chapters/bigdata/applications/plotviz.md
     - $ref:DEVTOOLS
