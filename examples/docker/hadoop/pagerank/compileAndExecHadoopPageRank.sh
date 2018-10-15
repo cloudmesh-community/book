@@ -11,9 +11,9 @@ then
     echo "jar is reaty to run a program!"
 else
     echo "jar not found, compling now!"
-    export HADOOP_CLASSPATH=`$HADOOP_PREFIX/bin/hadoop classpath`
-	mkdir /cloudmesh/pagerank/dist
-	find /cloudmesh/pagerank/src/indiana/cgl/hadoop/pagerank/ -name "*.java"|xargs  javac -classpath $HADOOP_CLASSPATH -d /cloudmesh/pagerank/dist
+    export HADOOP_CLASSPATH=`$HADOOP_HOME/bin/hadoop classpath`
+	mkdir /cloudmesh/examples/pagerank/dist
+	find /cloudmesh/examples/pagerank/src/indiana/cgl/hadoop/pagerank/ -name "*.java"|xargs  javac -classpath $HADOOP_CLASSPATH -d /cloudmesh/examples/pagerank/dist
 	cd dist
 	jar -cvf HadoopPageRankMooc.jar -C . .
 	cd ..
@@ -21,7 +21,7 @@ fi
 
 # run pageRank
 
-export PATH=$PATH:/$HADOOP_PREFIX/bin
+export PATH=$PATH:/$HADOOP_HOME/bin
 hadoop fs -mkdir input.pagerank
 hadoop fs -put $1 input.pagerank
 hadoop jar dist/HadoopPageRankMooc.jar indiana.cgl.hadoop.pagerank.HadoopPageRank input.pagerank output.pagerank $2 $3
