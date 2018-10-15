@@ -150,39 +150,35 @@ contains all necessary files to run a program.
 
 ```bash
 $ cd /cloudmesh/examples/statistics
-$ jar -cvf exer1.jar -C ./dest/ .
+$ jar -cvf stats.jar -C ./dest/ .
 ```
-
-:o: filename incorrect
 
 #### HDFS for Input/Output
 
 The input files need to be uploaded to HDFS as Hadoop runs this example
 by reading input files from HDFS.
 
-:o: change exer1 to something more reasonable
-
 ```bash
-$ export PATH=$PATH:/$HADOOP_PREFIX/bin
-$ hadoop fs -mkdir exer1_input
-$ hadoop fs -put input_data/* exer1_input
-$ hadoop fs -ls exer1_input/
+$ export PATH=$PATH:/HADOOP_HOME/bin
+$ hadoop fs -mkdir stats_input
+$ hadoop fs -put input_data/* stats_input
+$ hadoop fs -ls stats_input/
 ```
 
 If uploading is completed, you may see file listings like:
 
 ```bash
 Found 10 items
--rw-r--r-- 1 root supergroup  13942 2018-02-28 23:16 exer1_input/data_1000.txt
--rw-r--r-- 1 root supergroup 139225 2018-02-28 23:16 exer1_input/data_10000.txt
--rw-r--r-- 1 root supergroup  27868 2018-02-28 23:16 exer1_input/data_2000.txt
--rw-r--r-- 1 root supergroup  41793 2018-02-28 23:16 exer1_input/data_3000.txt
--rw-r--r-- 1 root supergroup  55699 2018-02-28 23:16 exer1_input/data_4000.txt
--rw-r--r-- 1 root supergroup  69663 2018-02-28 23:16 exer1_input/data_5000.txt
--rw-r--r-- 1 root supergroup  83614 2018-02-28 23:16 exer1_input/data_6000.txt
--rw-r--r-- 1 root supergroup  97490 2018-02-28 23:16 exer1_input/data_7000.txt
--rw-r--r-- 1 root supergroup 111451 2018-02-28 23:16 exer1_input/data_8000.txt
--rw-r--r-- 1 root supergroup 125337 2018-02-28 23:16 exer1_input/data_9000.txt
+-rw-r--r-- 1 root supergroup  13942 2018-02-28 23:16 stats_input/data_1000.txt
+-rw-r--r-- 1 root supergroup 139225 2018-02-28 23:16 stats_input/data_10000.txt
+-rw-r--r-- 1 root supergroup  27868 2018-02-28 23:16 stats_input/data_2000.txt
+-rw-r--r-- 1 root supergroup  41793 2018-02-28 23:16 stats_input/data_3000.txt
+-rw-r--r-- 1 root supergroup  55699 2018-02-28 23:16 stats_input/data_4000.txt
+-rw-r--r-- 1 root supergroup  69663 2018-02-28 23:16 stats_input/data_5000.txt
+-rw-r--r-- 1 root supergroup  83614 2018-02-28 23:16 stats_input/data_6000.txt
+-rw-r--r-- 1 root supergroup  97490 2018-02-28 23:16 stats_input/data_7000.txt
+-rw-r--r-- 1 root supergroup 111451 2018-02-28 23:16 stats_input/data_8000.txt
+-rw-r--r-- 1 root supergroup 125337 2018-02-28 23:16 stats_input/data_9000.txt
 ```
 
 #### Run Program with a Single Input File
@@ -192,16 +188,14 @@ First, we simply run the program with a single input file to see how it
 works. `data_1000.txt` contains 1000 lines of floats, we use this file
 here.
 
-:o: filename incorrect
-
 ```bash
-$ hadoop jar exer1.jar exercise.MinMaxAvgStd exer1_input/data_1000.txt exer1_output_1000
+$ hadoop jar stats.jar exercise.MinMaxAvgStd stats_input/data_1000.txt stats_output_1000
 ```
 
 The command runs with input parameters which indicate a jar file (the
-program, exer1.jar), exercise.MinMaxAvgStd (package name.class name),
-input file path (`exer1_input/data_1000.txt`) and output file path
-(`exer1_output_1000`).
+program, stats.jar), exercise.MinMaxAvgStd (package name.class name),
+input file path (`stats_input/data_1000.txt`) and output file path
+(`stats_output_1000`).
 
 The sample results that the program produces look like this:
 
@@ -280,12 +274,10 @@ files is 1.
 
 #### Result for Single Input File
 
-:o: filename incorrect
-
 We reads results from HDFS by:
 
 ```bash
-$ hadoop fs -cat exer1_output_1000/part-r-00000
+$ hadoop fs -cat stats_output_1000/part-r-00000
 ```
 
 The sample output looks like:
@@ -305,7 +297,7 @@ HDFS. We simply run the program again with a slight change in the
 parameters.
 
 ```bash
-$ hadoop jar exer1.jar exercise.MinMaxAvgStd exer1_input/ exer1_output_all
+$ hadoop jar stats.jar exercise.MinMaxAvgStd stats_input/ stats_output_all
 ```
 
 The command is almost same except that an input path is a directory and
@@ -392,7 +384,7 @@ of input files to process is 10, see the line two below:
 #### Result for Multiple Files
 
 ```bash
-$ hadoop fs -cat exer1_output_all/part-r-00000
+$ hadoop fs -cat stats_output_all/part-r-00000
 ```
 
 The expected result looks like:
