@@ -1,4 +1,4 @@
-# Docker Pagerank :o:
+# Docker Pagerank
 
 PageRank is a popular example algorithm used to display the ability of big data applications to run parallel tasks. This
 example will show how the docker hadoop image can be used to execute the Pagerank example which is available in
