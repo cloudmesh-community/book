@@ -136,9 +136,9 @@ version. For OSX this is
 
 notes only at this time
 
-mkdir pandoc
-cabal update
-cd pandoc
-cabal sandbox init
-cabal install pandoc-crossref
-cabal install pandoc-citeproc
+    mkdir pandoc
+    cabal update
+    cd pandoc
+    cabal sandbox init
+    cabal install pandoc-crossref
+    cabal install pandoc-citeproc
