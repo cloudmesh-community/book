@@ -1,9 +1,8 @@
-# Docker Pagerank :o:
+# Docker Pagerank
 
-:o: TODO the text is incomplete
-
-Place holder for PageRank Example in the docker hadoop section, needs
-to be merged to docker-hadoop.tex
+PageRank is a popular example algorithm used to display the ability of big data applications to run parallel tasks. This
+example will show how the docker hadoop image can be used to execute the Pagerank example which is available in
+ `/cloudmesh/examples/pagerank`
 
 ## Use the automated script
 
@@ -14,7 +13,7 @@ PageRankDataGenerator/pagerank5000g50.input.0, using 5000 urls and 1
 iteration:
 
 ```bash
-$ cd /cloudmesh/pagerank
+$ cd /cloudmesh/examples/pagerank
 $ ./compileAndExecHadoopPageRank.sh PageRankDataGenerator/pagerank5000g50.input.0 5000 1
 ```
 
@@ -29,7 +28,18 @@ The head of the result will look like
 ```bash
 head output.pagerank/part-r-00000
 ```
-
+```bash
+0	2.9999999999999997E-5
+1	2.9999999999999997E-5
+2	2.9999999999999997E-5
+3	2.9999999999999997E-5
+4	2.9999999999999997E-5
+5	2.9999999999999997E-5
+6	2.9999999999999997E-5
+7	2.9999999999999997E-5
+8	2.9999999999999997E-5
+9	2.9999999999999997E-5
+```
 ## Compile and run by hand
 
 If one wants to generate the java class files and archive them as the
@@ -38,11 +48,11 @@ inside compileAndExecHadoopPageRank.sh)
 
 ```bash
 export HADOOP_CLASSPATH=`$HADOOP_PREFIX/bin/hadoop classpath`
-mkdir /cloudmesh/pagerank/dist
-$ find /cloudmesh/pagerank/src/indiana/cgl/hadoop/pagerank/ \
+mkdir /cloudmesh/examples/pagerank/dist
+$ find /cloudmesh/examples/pagerank/src/indiana/cgl/hadoop/pagerank/ \
    -name "*.java"|xargs  javac -classpath $HADOOP_CLASSPATH \
-   -d /cloudmesh/pagerank/dist
-$ cd /cloudmesh/pagerank/dist
+   -d /cloudmesh/examples/pagerank/dist
+$ cd /cloudmesh/examples/pagerank/dist
 $ jar -cvf HadoopPageRankMooc.jar -C . .
 ```
 
@@ -50,7 +60,7 @@ Load input files to HDFS
 
 ```bash
 $ export PATH=$PATH:/$HADOOP_PREFIX/bin
-$ cd /cloudmesh/pagerank/
+$ cd /cloudmesh/examples/pagerank/
 $ hadoop fs -mkdir input.pagerank
 $ hadoop fs -put PageRankDataGenerator/pagerank5000g50.input.0 input.pagerank
 ```
