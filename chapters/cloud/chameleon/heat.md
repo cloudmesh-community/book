@@ -96,7 +96,7 @@ will be empty for now.
 
 We will now create a new stack, which corresponds to the launch of a
 template. Click on Launch Stack on the top right. A window will pop up
-like below:
+like below: +@fig:select-template.
 
 ![**Figure:** Select Template](images/Launch-Stack.png){#fig:select-template}
 
@@ -117,22 +117,22 @@ parameters of the template: for key_name, choose your SSH key pair
 (this key pair will authorize access on each deployed instances, both
 server and client). For nfs_client_count, change the default value of
 1 to 2. For reservation_id, choose your reservation created earlier.
-Finally, click "Launch".
+Finally, click "Launch". As shown in +@fig:launch-nfs-stack.
 
 ![**Figure:** Launch NFS Stack](images/Launch-NFS-Stack.png){#fig:launch-nfs-stack}
 
 Your stack should be in status "Create In Progress" for several minutes
 while it first launches the NFS server instance, followed by the NFS
-client instances.
+client instances. As below: +@fig:create-in-progress.
 
-![**Figure:** Create in Progress](images/Create-In-Progress_zPgOjo4.png){#fig:creat-in-progress}
+![**Figure:** Create in Progress](images/Create-In-Progress_zPgOjo4.png){#fig:create-in-progress}
 
-It will then move to the status "Create Complete".
+It will then move to the status "Create Complete". As the following: +@fig:create-complete.
 
 ![**Figure:** Create Complete](images/Create-Complete_XkoWhlj.png){#fig:create-complete}
 
 You can click on the stack name to get more details, including a
-visualization of the deployed resources, as pictured below. The single
+visualization of the deployed resources, as pictured below: +@fig:stack-visualization. The single
 machine inside a circle represents the NFS server instance. The rack of
 machine represents the group of NFS client instances (in this case, a
 group composed of two instances). The server's floating IP (the public
@@ -328,7 +328,7 @@ First, delete the stack you launched, because we will need all three
 nodes to be free. To do this, go back to the Project \> Orchestration \>
 Stacks page, select your stack, and then click on the red "Delete
 Stacks" button. You will be asked to confirm, so click on the blue
-"Delete Stacks" button.
+"Delete Stacks" button. As the following picture: +@fig:delete-stacks.
 
 ![**Figure:** Delete Stacks](images/Delete-Stacks.png){#fig:delete-stacks}
 
@@ -450,7 +450,7 @@ indentation, which is important in YAML.
 Now, launch a new stack with this template. Since the customized
 template is only on your computer and cannot be addressed by a URL, use
 the "Direct Input" method instead and copy/paste the content of the
-customized template. The resulting topology view is shown below: as you
+customized template. The resulting topology view is shown below: +@fig:nfs-with-two-clients, as you
 can see, the two client instances are shown separately since each one is
 defined as a separate resource in the template.
 
@@ -528,7 +528,7 @@ list the private IPs assigned to client instances:
         description: Private IP addresses of the NFS clients
         value: { get_attr: [nfs_clients, first_address] }
 
-The image below shows the resulting outputs as viewed from the web
+The image below: +@fig:outputs, shows the resulting outputs as viewed from the web
 interface. Of course IP addresses will be specific to each deployment.
 
 ![**Figure:** Outputs](images/Outputs.png){#fig:outputs}
@@ -673,7 +673,7 @@ The process is very similar to regular appliances: log into the
 Chameleon portal, go to the [appliance
 catalog](https://www.chameleoncloud.org/appliances/), and click on the
 button in the top-right corner: "Add an appliance" (you need to be
-logged in to see it).
+logged in to see it as the following: +@fig:add-an-appliance).
 
 ![**Figure:** Add an Appliance](images/Add-an-appliance.png){#fig:add-an-appliance}
 

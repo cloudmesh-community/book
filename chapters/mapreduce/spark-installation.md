@@ -1,7 +1,6 @@
 # Installation of Spark :o:
 
-In this section we will discuss how to install Spark 2.3.0 in Ubuntu
-16.04.
+In this section we will discuss how to install Spark 2.3.2 in Ubuntu 18.04.
 
 Prerequisites
 ------------
@@ -41,9 +40,8 @@ Install Spark with Hadoop
 
 Here we use Spark packaged with Hadoop. In this package Spark uses
 Hadoop 2.7.0 in the packaged version. Note that in
-Section [Hadoop Instalation](#s:hadoop-local-installation){reference-type="ref"
-reference="s:hadoop-local-installation"} we use for the vanilla Hadoop
-installation Hadoop 3.0.0.
+Section [Hadoop Installation](#s:s-hadoop-installation) we use for the vanilla Hadoop
+installation Hadoop 3.0.1.
 
 Create the base directories and go to the directory.
 
@@ -85,6 +83,7 @@ Open up a new terminal and then run the following command.
 If it has been configured properly, it will display the following
 content.
 
+```
     Spark context Web UI available at http://192.168.1.66:4041
     Spark context available as 'sc' (master = local[*], app id = local-1521674331361).
     Spark session available as 'spark'.
@@ -98,6 +97,7 @@ content.
     Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_151)
     Type in expressions to have them evaluated.
     Type :help for more information.
+```
 
 Please check the console LOGS and find the port number on which the
 Spark Web UI is hosted. It will show something like:
@@ -179,6 +179,7 @@ Open up a new terminal and then run the following command.
 If it has been configured properly, it will display the following
 content.
 
+```
     To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
     Spark context Web UI available at http://149-160-230-133.dhcp-bl.indiana.edu:4040
     Spark context available as 'sc' (master = local[*], app id = local-1521732740077).
@@ -193,6 +194,7 @@ content.
     Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_151)
     Type in expressions to have them evaluated.
     Type :help for more information.
+```
 
 Then take a look the following address in the browser.
 
