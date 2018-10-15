@@ -28,7 +28,18 @@ The head of the result will look like
 ```bash
 head output.pagerank/part-r-00000
 ```
-
+```bash
+0	2.9999999999999997E-5
+1	2.9999999999999997E-5
+2	2.9999999999999997E-5
+3	2.9999999999999997E-5
+4	2.9999999999999997E-5
+5	2.9999999999999997E-5
+6	2.9999999999999997E-5
+7	2.9999999999999997E-5
+8	2.9999999999999997E-5
+9	2.9999999999999997E-5
+```
 ## Compile and run by hand
 
 If one wants to generate the java class files and archive them as the
