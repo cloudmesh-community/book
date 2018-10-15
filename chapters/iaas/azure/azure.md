@@ -159,7 +159,7 @@ will need to go to
 
 * [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/)
 
-You will see an image such as
+You will see an image such as below: +@fig:registration.
 
 ![Registration](images/reg.png){#fig:registration}
 
@@ -199,7 +199,7 @@ Microsoft provides you with some elementary information:
 Choose `Create a resource` in the upper left-hand corner of the Azure
 portal. Select a VM name, and the disk type as SSD, then provide a
 username. The password must be at least 12 characters long and meet
-the defined complexity requirements.
+the defined complexity requirements. As the following: +@fig:creating-a-vm.
 
 ![Creating a VM](images/create-windows-vm-portal-basic-blade.png){#fig:creating-a-vm}
 
@@ -213,7 +213,7 @@ do cost and reduce your free hours on Azure. Hence you need to make
 sure you carefully review the charging rates and chose VM sizes and
 types that minimize your charges.
 
-A VM can be started through the Portal as follows:
+A VM can be started through the Portal as follows: +@fig:start-button.
 
 * On the overview tqb, a VM can be started by clicking the `Start`
   button.
@@ -227,7 +227,7 @@ It is the most important to stop your VMS once they are not in used,
 or you get continuously charged. The portal allows you to see the list
 of VM that you run as follows
 
-To shut a VM down, please do the following:
+To shut a VM down, please do the following: see +@fig:stop-button.
 
 * On the overview tab, a VM can be started by clicking the `Stop` button.
 

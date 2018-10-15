@@ -11,12 +11,11 @@ Amazon in the following document:
 * <https://d0.awsstatic.com/whitepapers/aws-overview.pdf>
 
 We list the product in screenshots from their Product Web page panel
-in Figure AWS Products.
+in Figure below: +@fig:aws-products.
 
-![](images/aws-products-1.png)
-![](images/aws-products-2.png)
+![AWS Products](images/aws-products-1.png)
+![AWS Products](images/aws-products-2.png){#fig:aws-products}
 
-Figure: AWS Products
 
 
 Service offerings are grouped by categories:
@@ -132,10 +131,10 @@ Marketplace](https://aws.amazon.com/marketplace/search/results/ref=mkt_ste_l2_da
 
 
 ## Locations
+As the following figure shows: +@fig:aws-locations.
 
-![](images/aws-locations.png)
+![AWS-Locations](images/aws-locations.png){#fig:aws-locations}
 
-**Figure:** AWS Locations
 
 
 
@@ -150,20 +149,20 @@ In order to create a AWS account you will need the following
 First you need to visit the AWS
 [signup page](https://aws.amazon.com/free/) and click "Create Free
 Account". You will then be asked to provide some basic details
-including your email address as shown in the image below
+including your email address as shown in the image below: +@fig:aws-signup.
 
-![](images/aws_signup_page.png)
+![AWS Signup](images/aws_signup_page.png){#fig:aws-signup}
 
 Next you will be asked to provide further details such as your name,
 address and phone number. After the additional details have been
-provided. AWS will ask for credit/debit card details as shown below.
+provided. AWS will ask for credit/debit card details as shown below: +@fig:payment-information.
 They require this information to verify your identity and make sure
 they have a method to charge you if needed. However no charges will be
 applied to your credit/debit card unless you use the AWS services and
 exceed the free tier limits, which will be discussed in the next
 section.
 
-![](images/creditcard_details.png)
+![Payment Information](images/creditcard_details.png){#fig:payment-information}
 
 After the credit/debit card has been verified AWS will use your phone
 number to verify your identity. Once you are logged into your account
@@ -171,9 +170,9 @@ you will be able to sign into the console, from the link on the top
 right corner in your account. Once you are in the AWS console the
 services tab in the left top corner will allow you to access all the
 services that are available to you through AWS as shown in the image
-below.
+below: +@fig:aws-console.
 
-![](images/aws_console.png)
+![AWS Console](images/aws_console.png){#fig:aws-console}
 
 ## Understanding the free tier
 
@@ -189,10 +188,10 @@ account creation. However it is important to make note of important
 details that are included in the limits. For example for the 750 hours
 of free EC2 usage, you can only use "EC2 Micro" instances, using any
 other instance type for your EC2 machine will not fall under the free
-tier agreement and you will be charged for them. To view all the AWS
+tier agreement and you will be charged for them, see picture below: +@fig:free-tier. To view all the AWS
 free tier details visit [AWS Free Tier](https://aws.amazon.com/free/)
 
-![](images/freetier.png)
+![Free tier](images/freetier.png){#fig:free-tier}
 
 Basically there are two categories in the free tier, 
 
@@ -236,7 +235,7 @@ To go to the EC2 services you can click on the services link on the
 top left corner in the console and then click on EC2 which is listed
 under "Compute". Then you will see a blue button labeled "Launch
 instance". Click on the button and the console will take you to the
-page shown below. Notice that the check box for "Free tier only" is
+page shown below: +@fig:launch-instance. Notice that the check box for "Free tier only" is
 clicked to make sure the instance type we choose is eligible for the
 free tier hours. The instance type you select defines the properties
 of the virtual machine you are staring such as RAM, Storage,
@@ -246,23 +245,23 @@ can also select a OS that you want to be started as the virtual
 machine. We will select "Ubuntu Server 16.04 LTS" as our Operating
 system. press the blue select button to do so.
 
-![](images/launch_instance.png)
+![Launch Instance](images/launch_instance.png){#fig:launch-instance}
 
 Once you select the OS type you will be asked to select the instance
 type. You can notice that only the "t2.micro" is marked as free tier
-eligible as shown in the image below. Now that you have selected all
+eligible as shown in the image below: +@fig:instance-type. Now that you have selected all
 the basic details press the "Review and Launch" button located in the
 button right corner. This will give you a summary of your current
 selections.
 
-![](images/instance_type.png)
+![Instance Type](images/instance_type.png){#fig:instance-type}
 
 #### Setting up key pair
 
 Before we can launch the VM we need to perform one more step. We need
 to setup a SSH key pair for the new VM. Creating this will allow us to
 access our VM through SSH. Once you click on the launch button, you
-will get the following dialog box. If you already have a worked with
+will get the following dialog box: +@fig:key-pair. If you already have a worked with
 SSH keys and if you already have a key pair you can use it, otherwise
 you can create a new key pair as we will do. To create a new key pair
 select the "Create a new key pair" in the first drop down box and
@@ -274,21 +273,21 @@ need to keep the private key so you can use the same key value pair
 later). Once you have downloaded the private key, the "Launch
 Instance" button will activate. Press this button to start the VM.
 
-![](images/keypair.png)
+![Key Pair](images/keypair.png){#fig:key-pair}
 
 After starting the instance go back to the EC2 dashboard ( Services ->
 EC2). Now the dashboard will show the number of running instance as
-shown in the image below. If you do not see is initially, refresh the
+shown in the image below: +@fig:running-instance1. If you do not see is initially, refresh the
 page after a little while, starting the VM may take a little time so
 the dashboard will not be updated until the VM starts.
 
-![](images/running_instance.png)
+![Running Instance1](images/running_instance.png){#fig:running-instance1}
 
 Now to get a more detailed view click on the "Running Instances" link.
-This will give you the following view. Is shows the current instance
+This will give you the following view: +@fig:running-instance2. Is shows the current instance
 that you are running
 
-![](images/running_instance2.png)
+![Running Instance2](images/running_instance2.png){#fig:running-instance2}
 
 ### Stopping a VM
 
@@ -297,16 +296,16 @@ it you will loose all the data that was stored in the VM as well,
 simply stopping will save the data for future use if you restart the
 instance again. In order to stop the VM you can select the VM machines
 you want to stop from the GUI and go to "Actions -> Instance status"
-and click on stop. This will stop your VM machine.
+and click on stop: +@fig:instance-stop. This will stop your VM machine.
 
-![](images/instance_stop.png)
+![Instance Stop](images/instance_stop.png){#fig:instance-stop}
 
-After a little while the dashboard will show the instance as stopped.
+After a little while the dashboard will show the instance as stopped as the following: +@fig:stopped-instance.
 If you want to go further and terminate the instance you can again go
 to "Actions -> Instance status" and select terminate, which will
 terminate the VM.
 
-![](images/stopped_instance.png)
+![Stopped Instance](images/stopped_instance.png){#fig:stopped-instance}
 
 ## Access from the Command Line
 

@@ -1,19 +1,17 @@
-# Installation of Hadoop :o: {#s-hadoop-installation}
+# Installation of Hadoop {#s-hadoop-installation}
 
 In this section we use Hadoop 3.0.1 and we install Hadoop locally in
 Ubuntu 18.04. We also describe the installation of the Yarn resource
 manager. We assume that you have ssh, and rsync installed and use emacs
 as editor.
 
-Prerequisites
-------------
+## Prerequisites
 
     sudo apt-get install ssh
     sudo apt-get install rsync
     sudo apt-get install emacs
 
-User and User Group Creation
-----------------------------
+## User and User Group Creation
 
 For security reasons we will install hadoop in a particular user and
 user group. We will use the following
@@ -25,8 +23,7 @@ user group. We will use the following
 These steps will provide sudo privileges to the created hduser user and
 add the user to the group `hadoop_group`.
 
-Configuring SSH
----------------
+## Configuring SSH
 
 Here we configure SSH key for the local user to install hadoop with a
 ssh-key. This is different from the ssh-key you used for Github,
@@ -37,9 +34,11 @@ The ssh content is included here because, we are making a ssh key for
 this specific user. Next, we have to configure ssh to be used by the
 hadoop user.
 
+```
     su - hduser
 
     ssh-keygen -t rsa
+```
 
 Follow the instructions as provided in the commandline. When you see the
 following console input, press ENTER. Here only we will create password
@@ -58,6 +57,7 @@ Here enter the same password
 
 Finally you will see something like this after these steps are finished.
 
+```
     Generating public/private rsa key pair.
     Enter file in which to save the key (/home/hduser/.ssh/id_rsa):
     Created directory '/home/hduser/.ssh'.
@@ -79,11 +79,11 @@ Finally you will see something like this after these steps are finished.
     |*.. *.           |
     | +.o..           |
     +----[SHA256]-----+
+```
 
 You have successfully configured ssh.
 
-Installation of Java
---------------------
+## Installation of Java
 
 If you are already logged into su, you can skip the next command:
 
@@ -98,20 +98,9 @@ Now execute the following commands to download and install java
         "http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.tar.gz"
     tar xvzf jdk-8u161-linux-x64.tar.gz
 
-:o: why not put a github dir in cloudmesh, with some bin script that
-installes hadoop and jave ... and than keep that up to date. for
-example
-:o: users must accept Oracle OTN license before downloading JDK.
+Please note that users must accept Oracle OTN license before downloading JDK.
 
-
-```bash
-$ cm-hadoop install
-```
-
-:o it would figure out the os and to the righ things
-
-Installation of Hadoop
-----------------------
+## Installation of Hadoop
 
 First we will take a look on how to install Hadoop 3.0.1 on Ubuntu
 16.04. We may need a prior folder structure to do the installation
@@ -121,8 +110,8 @@ properly.
     wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-3.0.1/hadoop-3.0.1.tar.gz
     tar -xzvf hadoop-3.0.1.tar.gz
 
-Hadoop Environment Variables
-----------------------------
+
+## Hadoop Environment Variables
 
 In Ubuntu the environmental variables are setup in a file called bashrc
 at it can be accessed the following way
@@ -155,6 +144,7 @@ And verifying the hadoop installation,
 If you have successfully installed this, there must be a message shown
 as below.
 
+```
     Usage: hadoop [--config confdir] COMMAND
            where COMMAND is one of:
       fs                   run a generic filesystem user client
@@ -172,3 +162,4 @@ as below.
       CLASSNAME            run the class named CLASSNAME
 
     Most commands print help when invoked w/o parameters.
+```
