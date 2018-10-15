@@ -1,4 +1,4 @@
-# Spark :o:
+# Spark Lectures :o:
 
 This section covers an introduction to Spark that is split up into eight
 parts. We discuss Spark background, RDD operations, Shark, Spark ML,
@@ -12,8 +12,7 @@ components of Spark.
 
 :o: TODO Update Video Hadoop Urls to Youtube Urls
 
-[:clapper: Spark 15:57 Spark
-  A](https://drive.google.com/file/d/1qnQf2AeaTYdwPx746D7JiS7vub2P7Nh3/view?usp=sharing)
+[:clapper: Spark 15:57 Spark  A](https://drive.google.com/file/d/1qnQf2AeaTYdwPx746D7JiS7vub2P7Nh3/view?usp=sharing)
 
 
 Spark RDD Operations
@@ -24,8 +23,7 @@ with other transformation functionality in Spark.
 
 :o: TODO Update Video Hadoop Urls to Youtube Urls
 
-[:clapper: Spark 12:17 Spark
-  B](https://drive.google.com/file/d/1Btj1g-vppe1QgmjNcBC-URtICAu2hK0W/view?usp=sharing)
+[:clapper: Spark 12:17 Spark  B](https://drive.google.com/file/d/1Btj1g-vppe1QgmjNcBC-URtICAu2hK0W/view?usp=sharing)
 
 
 Spark DAG
@@ -37,8 +35,7 @@ stages of Spark.
 
 :o: TODO Update Video Hadoop Urls to Youtube Urls
 
-[:clapper: Spark 10:37 Spark
-  C](https://drive.google.com/file/d/1VCcwoNsGeIgA4Ee87Psh9QWf7ZNgan-R/view?usp=sharing)
+[:clapper: Spark 10:37 Spark  C](https://drive.google.com/file/d/1VCcwoNsGeIgA4Ee87Psh9QWf7ZNgan-R/view?usp=sharing)
 
 
 Spark vs. other Frameworks
@@ -52,5 +49,4 @@ experiments.
 
 :o: TODO Update Video Hadoop Urls to Youtube Urls
 
-[:clapper: Spark 26:18 Spark
-  D](https://drive.google.com/file/d/1Rv0uThbqTDSuIk_ERfigYo6xs4G8DERi/view?usp=sharing)
+[:clapper: Spark 26:18 Spark  D](https://drive.google.com/file/d/1Rv0uThbqTDSuIk_ERfigYo6xs4G8DERi/view?usp=sharing)
