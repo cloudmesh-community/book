@@ -170,7 +170,7 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <http://grantland.com/the-triangle/mlb-advanced-media-play-tracking-bob-bowman-interview/>
 -   <https://www.youtube.com/watch?v=YkjtnuNmK74>
 
-    resources below not exsit:
+    resources below do not exsit:
 -   <http://www.sportvision.com/baseball>
 -   <http://www.sportvision.com/media/pitchfx-how-it-works>
 -   <http://www.sportvision.com/baseball/fieldfx>
