@@ -116,7 +116,7 @@ container$ cd /cloudmesh/examples/statistics
 
 #### Input Files
 
-A test input files are available under `/cloudmesh/exer1/input_data}`
+A test input files are available under `/cloudmesh/examples/statistics/input_data`
 directory inside of the container. The statistics values for this input
 are *Min: 0.20 Max: 19.99 Avg: 9.51 StdDev: 5.55* for all input files.
 
@@ -126,7 +126,7 @@ point value ranging from 0.2 to 20.0.
 #### Compilation
 
 The source code file name is *MinMaxAvgStd.java* which is available at
-*/cloudmesh/examples/statistics/src/exercise/*.
+`/cloudmesh/examples/statistics/src`.
 
 There are three functions in the code *Map, Reduce and Main* where Map
 reads each line of a file and updates values to calculate minimum,
@@ -134,9 +134,9 @@ maximum values and Reduce collects mappers to produce average and
 standard deviation values at last.
 
 ```bash
-$ export HADOOP_CLASSPATH=`$HADOOP_PREFIX/bin/hadoop classpath`
+$ export HADOOP_CLASSPATH=`$HADOOP_HOME/bin/hadoop classpath`
 $ mkdir /cloudmesh/examples/statistics/dest
-$ javac -classpath $HADOOP_CLASSPATH -d /cloudmesh/examples/statistics/dest /cloudmesh/examples/statistics/src/exercise/MinMaxAvgStd.java
+$ javac -classpath $HADOOP_CLASSPATH -d /cloudmesh/examples/statistics/dest /cloudmesh/examples/statistics/src/MinMaxAvgStd.java
 ```
 
 These commands simply prepare compiling the example code and the
