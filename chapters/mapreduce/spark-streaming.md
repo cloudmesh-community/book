@@ -1,4 +1,4 @@
-# Spark Streaming :o:
+# Spark Streaming
 
 Streaming Concepts
 ------------------
@@ -38,6 +38,7 @@ Now we need to create file called streaming.py
 
 Then add the following content.
 
+```python
     from pyspark import SparkContext
     from pyspark.streaming import StreamingContext
 
@@ -63,6 +64,7 @@ Then add the following content.
     wordCounts.pprint()
     ssc.start()             # Start the computation
     ssc.awaitTermination(100)  # Wait for the computation to terminate
+```
 
 To run the code, we need to open up two terminals.
 
@@ -151,6 +153,7 @@ Let us build a simple Twitter App to see if everything is okay.
 Add the following content to the file and make sure you update the
 corresponding token keys with your token values.
 
+```python
     import tweepy
 
     CONSUMER_KEY = 'your_consumer_key'
@@ -164,8 +167,11 @@ corresponding token keys with your token values.
 
     status = "Testing!"
     api.update_status(status=status)
+```
 
+```
       python twitterstreaming.py
+```
 
 ### Step 4
 
@@ -184,6 +190,7 @@ twitter keys.
 
 Now add the following content.
 
+```python
     import tweepy
     from tweepy import OAuthHandler
     from tweepy import Stream
@@ -236,6 +243,7 @@ Now add the following content.
       print( "Received request from: " + str( addr ) )
 
       sendData( c )
+```
 
 ### step 5
 
@@ -259,6 +267,7 @@ new IPython notebook called twittersparkstremer.
 
 Then add the following content.
 
+```
     from pyspark import SparkContext
     from pyspark.streaming import StreamingContext
     from pyspark.sql import SQLContext
@@ -311,6 +320,7 @@ Then add the following content.
       count = count + 1
 
     ssc.stop()
+```
 
 ### step 6
 
