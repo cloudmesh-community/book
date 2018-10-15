@@ -7,7 +7,7 @@ Link |  Class | Description
 [<img src="cloud/cover/cover.jpg" width="100px">](vonLaszewski-cloud.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for class E516, E416, B649
 [<img src="pi/cover/cover.jpg" width="100px">](vonLaszewski-pi.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for Raspberry PI Clusters for class E516, E416, B649
 [<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
-[<img src="tech/cover/cover.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies 
+[<img src="tech/cover/cover.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies
 [<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| all | Scientific Writing I for all classes
 [<img src="latex/cover-latex.png" width="100px">](http://cyberaide.org/papers/vonLaszewski-latex.pdf)| all | Scientific Writing II for all classes
 [<img src="communicate/cover/cover.jpg" width="100px">](vonLaszewski-communicate.epub?raw=true)| all | Class Communication Services (update version can be found in the Lecture notes for the class)
@@ -29,8 +29,8 @@ You will have to edit now the file called Makefile and chamge the value `BOOK_51
 $ emacs mybook/Makefile
 ```
 
-Now you have to edit the file `chapters.yml` in the book directory and add chapters you like to include in your ePub. 
-See some of the examples we provided for other ebooks. It is now important that you use the same name we used before, e.g. `BOOK_MYBOOK`. Thus create in the yaml file a list of chapters for it. 
+Now you have to edit the file `chapters.yml` in the book directory and add chapters you like to include in your ePub.
+See some of the examples we provided for other ebooks. It is now important that you use the same name we used before, e.g. `BOOK_MYBOOK`. Thus create in the yaml file a list of chapters for it.
 
 ```bash
 $ emacs chapters.yml
@@ -59,7 +59,7 @@ $ cd mybook
 $ make
 ```
 
-To view it say 
+To view it say
 
 ```bash
 $ make view
@@ -84,6 +84,7 @@ $ brew install graphviz
 $ npm install --global mermaid-filter
 $ brew install pandoc
 $ brew install pandoc-citeproc
+$ npm install --global pandoc-index
 ```
 
 Once you have installed pandoc you can create the book with our simple
@@ -129,5 +130,3 @@ In case you need to use latex you need to download the full
 version. For OSX this is
 
 * <http://www.tug.org/mactex/mactex-download.html>
-
-
