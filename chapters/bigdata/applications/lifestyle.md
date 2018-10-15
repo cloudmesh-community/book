@@ -35,7 +35,7 @@ clustering results and extension to 28 clusters given. General issues in
 clustering are discussed including local optima, the use of annealing to
 avoid this and value of heuristic algorithms.
 
-## Recommender Systems
+## Recommender Systems {#s-recommender}
 
 We introduce Recommender systems as an optimization technology used in a
 variety of applications and contexts online. They operate in the
@@ -85,8 +85,11 @@ We look at Kaggle competitions with examples from web site. In
 particular we discuss an Irvine class project involving ranking jokes.
 
 [:clapper: Kaggle Competitions: (3:36)](https://youtu.be/DFH7GPrbsJA)
-Please not that we do not accept any projects using kaggle data for this
-classes.
+
+:warning: Please not that we typically do not accept any projects
+using kaggle data for this classes. This class is not about winning a
+kaggle competition and if done wrong it does not fullfill the minimum
+requiremnt for this class. Please consult with the instructor.
 
 ### Examples of Recommender Systems
 
@@ -233,7 +236,7 @@ issues with new items that do not have a significant number of rankings.
 [:clapper: k Nearest Neighbors and High Dimensional Spaces
 (7:16)](https://youtu.be/SM8EJdAa4mw)
 
-### k-Nearest Neighbors and High Dimensional Spaces
+### k-Nearest Neighbors and High Dimensional Spaces {#s-knn}
 
 We define the k Nearest Neighbor algorithms and present the Python
 software but do not use it. We give examples from Wikipedia and describe
