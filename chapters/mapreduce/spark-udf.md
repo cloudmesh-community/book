@@ -1,8 +1,8 @@
-# User Defined Functions in Spark :o:
+# User Defined Functions in Spark
 
 
 Apache Spark is a fast and general cluster-computing framework which
-perform compuatational tasks up to 100x faster than Hadoop MapReduce
+perform computational tasks up to 100x faster than Hadoop MapReduce
 in memory, or 10x faster on disk for high speed large-scale streaming,
 machine learning and SQL workloads tasks. Spark offers support for the
 applications development employing over 80 high-level operators using
@@ -15,7 +15,7 @@ and any Hadoop data source.
 
 User-defined functions (UDFs) are the functions created by developers
 when the built-in functionalities offered in a programming language,
-are not sufficient to do the required work. Similary, Apache Spark
+are not sufficient to do the required work. Similarly, Apache Spark
 UDFs also allow developers to enable new functions in higher level
 programming languages by extending built-in functionalities.  It also
 allows developers to experiment with wide range of options for
@@ -39,12 +39,12 @@ How to run the provided example using a provided docker file and make file.
 
 ###  Linux
 
-First, JDK (Recommanded version 8) should be installed to a path where
+First, JDK (Recommended version 8) should be installed to a path where
 there is no space.
 
 * <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
 
-Second, setup environment variables for jdk by addding bin folder path
+Second, setup environment variables for JDK by adding bin folder path
 to to user path variable.
 
 	This $ export PATH = $PATH:/usr/local/java8/bin
@@ -53,7 +53,7 @@ Next, download and extract Scala pre-built version from
 
 * <http://www.scala-lang.org/download/>
 
-Then, setup environment varibale for Scala by adding bin folder path
+Then, setup environment variables for Scala by adding bin folder path
 to the user path variable.
 
 	$ export PATH = $PATH:/usr/local/scala/bin
@@ -62,7 +62,7 @@ Next, download and extract Apache Spark pre-built version.
 
 * <https://spark.apache.org/downloads.html>
 
-Then, setup environment varibale for spark by adding bin folder path
+Then, setup environment variables for spark by adding bin folder path
 to the user path variable.
 
 	$ export PATH = $PATH:/usr/local/spark/bin
@@ -74,11 +74,11 @@ Finally, for testing the installation, please type the following command.
 ##  Windows
 
 First, JDK should be installed to a path where there is no space in
-that path. Recommanded JAVA version is 8.
+that path. Recommended JAVA version is 8.
 
 <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
 
-Second, setup environment variables for jdk by addding bin folder path
+Second, setup environment variables for jdk by adding bin folder path
 to to user path variable.
 
 	set JAVA_HOME=c:\java8
@@ -107,7 +107,7 @@ CMD with administrator permission.
 If your system doesnt have `hive` folder, make sure to create
 `C:\tmp\hive` directory.
 
-Next, setup environment varibale for hadoop by adding bin folder path to the user path variable.
+Next, setup environment variables for hadoop by adding bin folder path to the user path variable.
 
 	set HADOOP_HOME=c:\hadoop\bin
 	set PATH=%HADOOP_HOME%\bin;%PATH%
@@ -189,12 +189,14 @@ Then, we need create a user defined fuction which will read the text
 input and process the data and return a spark sql Row object. It can
 be created as listed as follows.
 
+```python
 	def process_data(line):
 		fields = line.split(',')
 		stationID = fields[0]
 		entryType = fields[2]
 		temperature = float(fields[3]) * 0.1 * (9.0 / 5.0) + 32.0
 		return Row(ID=stationID, t_type=entryType, temp=temperature)
+```
 
 Then we need to create a Spark SQL session as listed as follows with
 an application name.
@@ -376,7 +378,7 @@ Following link is the home directory for the example explained in this tutorial.
 
 <https://github.com/cloudmesh-community/hid-sp18-409/tree/master/tutorial/spark_udfs>
 
-It conatins following files
+It contains following files
 
 * Python script which contains the example:
   [temperature_converter.py](https://github.com/cloudmesh-community/hid-sp18-409/blob/master/tutorial/spark_udfs/temperature_converter.py
@@ -395,14 +397,14 @@ It conatins following files
   [Makefile](https://github.com/cloudmesh-community/hid-sp18-409/blob/master/tutorial/spark_udfs/Makefile
   "Makefile")
 
-To install the example using docker plese do the following steps.
+To install the example using docker plesse do the following steps.
 
 First, you should install docker in to your computer.
 
 Next, git clone the
 [project ](https://github.com/cloudmesh-community/hid-sp18-409/blob/master/tutorial/)
 . Alternatively you can also download the docker image from the docker
-hub. Then you dont need to do docker build.
+hub. Then you don't need to do docker build.
 
 ```bash
 $ docker pull kadupitiya/tutorial
