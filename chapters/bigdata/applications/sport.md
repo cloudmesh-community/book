@@ -169,3 +169,9 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <http://regressing.deadspin.com/mlb-announces-revolutionary-new-fielding-tracking-syste-1534200504>
 -   <http://grantland.com/the-triangle/mlb-advanced-media-play-tracking-bob-bowman-interview/>
 -   <https://www.youtube.com/watch?v=YkjtnuNmK74>
+
+    resources below not exsit:
+-   <http://www.sportvision.com/baseball>
+-   <http://www.sportvision.com/media/pitchfx-how-it-works>
+-   <http://www.sportvision.com/baseball/fieldfx>
+-   <http://www.sportvision.com/baseball/hitfx>
