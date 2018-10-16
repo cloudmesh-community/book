@@ -494,7 +494,7 @@ links and notify us of the outdated links.
     -   <http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf>,
     -   <http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf>
 -   [Use Case 40 Belle II High Energy Physics
-    Experiment](http://belle2.kek.jp/)
+    Experiment](http://belle2.kek.jp/)(old link does not exist, new link: http://www.belle.org)
 -   [Use Case 41 EISCAT 3D incoherent scatter radar
     system](https://www.eiscat3d.se/)
 -   Use Case 42 ENVRI, Common Operations of Environmental Research
