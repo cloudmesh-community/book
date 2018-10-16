@@ -13,8 +13,8 @@ jobs:
           command: pandoc --version
       - run:
           name: check cloud
-          command: cd ~/cloud && make new 
+          command: cd cloud && make new 
       - run:
           name: check cloud
-          command: cd ~/big-data-applications && make
+          command: cd big-data-applications && make
 
