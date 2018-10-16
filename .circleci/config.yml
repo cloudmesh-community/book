@@ -13,7 +13,7 @@ jobs:
           command: pandoc --version
       - run:
           name: requirements.txt
-          command: pip install requirements.txt
+          command: pip install -r requirements.txt
       - run:
           name: check cloud
           command: cd cloud && make new 
