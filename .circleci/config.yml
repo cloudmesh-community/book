@@ -9,6 +9,9 @@ jobs:
           name: where
           command: ls; pwd
       - run:
+          name: which python3
+          command: which python3
+      - run:
           name: pandoc version
           command: pandoc --version
       - run:
@@ -18,6 +21,6 @@ jobs:
           name: check cloud
           command: cd cloud && make new 
       - run:
-          name: check cloud
+          name: check cloud 
           command: cd big-data-applications && make
 
