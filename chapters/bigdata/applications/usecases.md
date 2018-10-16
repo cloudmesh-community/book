@@ -429,17 +429,15 @@ links and notify us of the outdated links.
         codes](http://loinc.org/)
     -   [Indiana Health Information Exchange](http://www.ihie.org/)
     
-     links below do not exist:
     -   [Institute of Medicine Learning Healthcare
-        System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)
+        System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)(no exist)
 -   Use Case 17
     -   [Pathology Imaging/digital
         pathology](https://web.cci.emory.edu/confluence/display/PAIS%3E)
     -   <https://web.cci.emory.edu/confluence/display/HadoopGIS>
 -   Use Case 19 Genome in a Bottle Consortium:
 
-    links below do not exist:
-    -   [www.genomeinabottle.org](https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org)
+    -   [www.genomeinabottle.org](https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org)(no exist)
 -   [Use Case 20 Comparative analysis for metagenomes and
     genomes](http://img.jgi.doe.gov/)
 -   Use Case 25
@@ -451,7 +449,7 @@ links and notify us of the outdated links.
     -   <http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html>
     -   <http://www.wired.com/2013/06/andrew_ng/>,
     -   [A recent research paper on HPC for Deep
-        Learning](http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf)
+        Learning](http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf)(no exist)
     -   Widely-used tutorials and references for Deep Learning:
         -   <http://ufldl.stanford.edu/wiki/index.php/Main_Page>
         -   <http://deeplearning.net/>
@@ -463,7 +461,7 @@ links and notify us of the outdated links.
     -   <http://cnets.indiana.edu/groups/nan/truthy/>
     -   <http://cnets.indiana.edu/groups/nan/despic/>
 -   [Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
-    and Analytics](http://cinet.vbi.vt.edu/cinet_new/)
+    and Analytics](http://cinet.vbi.vt.edu/cinet_new/)(no exist)
 -   [Use Case 31 NIST Information Access Division analytic technology
     performance measurement, evaluations, and
     standards](http://www.nist.gov/itl/iad/)
