@@ -428,6 +428,8 @@ links and notify us of the outdated links.
     -   [Logical observation identifiers names and
         codes](http://loinc.org/)
     -   [Indiana Health Information Exchange](http://www.ihie.org/)
+    
+     links below do not exist:
     -   [Institute of Medicine Learning Healthcare
         System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)
 -   Use Case 17
@@ -435,6 +437,8 @@ links and notify us of the outdated links.
         pathology](https://web.cci.emory.edu/confluence/display/PAIS%3E)
     -   <https://web.cci.emory.edu/confluence/display/HadoopGIS>
 -   Use Case 19 Genome in a Bottle Consortium:
+
+    links below do not exist:
     -   [www.genomeinabottle.org](https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org)
 -   [Use Case 20 Comparative analysis for metagenomes and
     genomes](http://img.jgi.doe.gov/)
