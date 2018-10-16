@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cloudmesh/technologies:1.2
+    steps:
+      - checkout
+      - run:
+          name: where
+          command: ls; pwd
+      -run:
+          name: pandoc version
+          command: pandoc --version
+      - run:
+          name: git clone
+          command: git clone https://github.com/cloudmesh-community/book.git
+      - run:
+          name: check cloud
+          command: cd ~/book/cloud && make new 
+      - run:
+          name: check cloud
+          command: cd ~/book/big-data-applications && make
+
