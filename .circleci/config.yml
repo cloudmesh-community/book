@@ -12,6 +12,9 @@ jobs:
           name: which python3
           command: which python3
       - run:
+          name: python version
+          command: python --version
+      - run:
           name: pandoc version
           command: pandoc --version
       - run:
