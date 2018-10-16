@@ -12,12 +12,9 @@ jobs:
           name: pandoc version
           command: pandoc --version
       - run:
-          name: git clone
-          command: git clone https://github.com/cloudmesh-community/book.git
+          name: check cloud
+          command: cd ~/cloud && make new 
       - run:
           name: check cloud
-          command: cd ~/book/cloud && make new 
-      - run:
-          name: check cloud
-          command: cd ~/book/big-data-applications && make
+          command: cd ~/big-data-applications && make
 
