@@ -389,6 +389,8 @@ links and notify us of the outdated links.
 -   [On line 51 Use Cases](http://bigdatawg.nist.gov/usecases.php)
 -   [Summary of Requirements
     Subgroup](http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx)
+    
+    links below do not exist:
 -   [Use Case 6 Mendeley](http://mendeley.com%20http//dev.mendeley.com)
 -   [Use Case 7
     Netflix](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria)
@@ -415,8 +417,10 @@ links and notify us of the outdated links.
     -   <http://www.defencetalk.com/wide-area-persistent-surveillance-revolutionizes-tactical-isr-45745/>
 -   Use Case 15 Intelligence Data Processing and Analysis
     -   <http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf>,
-    -   <http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf>,
     -   <http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf>,
+    
+    links below do not exist:
+    -   <http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf>,
     -   <https://www.youtube.com/watch?v=l4Qii7T8zeg>,
     -   <http://dcgsa.apg.army.mil/>
 -   Use Case 16 Electronic Medical Record (EMR) Data:
