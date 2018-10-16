@@ -8,7 +8,7 @@ jobs:
       - run:
           name: where
           command: ls; pwd
-      -run:
+      - run:
           name: pandoc version
           command: pandoc --version
       - run:
