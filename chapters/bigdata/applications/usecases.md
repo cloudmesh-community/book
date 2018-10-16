@@ -390,10 +390,9 @@ links and notify us of the outdated links.
 -   [Summary of Requirements
     Subgroup](http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx)
     
-    links below do not exist:
--   [Use Case 6 Mendeley](http://mendeley.com%20http//dev.mendeley.com)
+-   [Use Case 6 Mendeley](http://mendeley.com%20http//dev.mendeley.com)(not exist)
 -   [Use Case 7
-    Netflix](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria)
+    Netflix](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria)(not exist)
 -   Use Case 8 Search
     -   <http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013>,
     -   <http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html>,
@@ -419,10 +418,9 @@ links and notify us of the outdated links.
     -   <http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf>,
     -   <http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf>,
     
-    links below do not exist:
-    -   <http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf>,
-    -   <https://www.youtube.com/watch?v=l4Qii7T8zeg>,
-    -   <http://dcgsa.apg.army.mil/>
+    -   <http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf>,(not exist)
+    -   <https://www.youtube.com/watch?v=l4Qii7T8zeg>,(not exsit)
+    -   <http://dcgsa.apg.army.mil/> (not exist)
 -   Use Case 16 Electronic Medical Record (EMR) Data:
     -   [Regenstrief Institute](http://www.regenstrief.org/)
     -   [Logical observation identifiers names and
@@ -430,14 +428,14 @@ links and notify us of the outdated links.
     -   [Indiana Health Information Exchange](http://www.ihie.org/)
     
     -   [Institute of Medicine Learning Healthcare
-        System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)(no exist)
+        System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)(not exist)
 -   Use Case 17
     -   [Pathology Imaging/digital
         pathology](https://web.cci.emory.edu/confluence/display/PAIS%3E)
     -   <https://web.cci.emory.edu/confluence/display/HadoopGIS>
 -   Use Case 19 Genome in a Bottle Consortium:
 
-    -   [www.genomeinabottle.org](https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org)(no exist)
+    -   [www.genomeinabottle.org](https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org)(not exist)
 -   [Use Case 20 Comparative analysis for metagenomes and
     genomes](http://img.jgi.doe.gov/)
 -   Use Case 25
@@ -449,7 +447,7 @@ links and notify us of the outdated links.
     -   <http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html>
     -   <http://www.wired.com/2013/06/andrew_ng/>,
     -   [A recent research paper on HPC for Deep
-        Learning](http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf)(no exist)
+        Learning](http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf)(not exist)
     -   Widely-used tutorials and references for Deep Learning:
         -   <http://ufldl.stanford.edu/wiki/index.php/Main_Page>
         -   <http://deeplearning.net/>
@@ -461,7 +459,7 @@ links and notify us of the outdated links.
     -   <http://cnets.indiana.edu/groups/nan/truthy/>
     -   <http://cnets.indiana.edu/groups/nan/despic/>
 -   [Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
-    and Analytics](http://cinet.vbi.vt.edu/cinet_new/)(no exist)
+    and Analytics](http://cinet.vbi.vt.edu/cinet_new/)(not exist)
 -   [Use Case 31 NIST Information Access Division analytic technology
     performance measurement, evaluations, and
     standards](http://www.nist.gov/itl/iad/)
