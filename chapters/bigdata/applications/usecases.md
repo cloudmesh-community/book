@@ -501,10 +501,10 @@ links and notify us of the outdated links.
     Infrastructure
     -   [ENVRI Project website](http://envri.eu/)
     -   [ENVRI Reference
-        Model](http://confluence.envri.eu:8090/display/ERM/Start)
+        Model](http://confluence.envri.eu:8090/display/ERM/Start)(not exist)
     -   [ENVRI deliverable D3.2 : Analysis of common requirements of
         Environmental Research
-        Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)
+        Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)(not exist)
     -   [ICOS](https://www.icos-ri.eu/),
     -   [Euro-Argo](http://www.euro-argo.eu/)
     -   [EISCAT 3D](https://www.eiscat3d.se/node)
