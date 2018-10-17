@@ -45,7 +45,7 @@ missing:
 	../bin/manifest-parser.py info no $(BOOK)
 
 update: Makefile
-	../bin/manifest-parser.py dep $(BOOK) > ../Makefile.$(BOOK)
+	python ../bin/manifest-parser.py dep $(BOOK) > ../Makefile.$(BOOK)
 
 tree: Makefile
 	../bin/manifest-parser.py tree $(BOOK) 
