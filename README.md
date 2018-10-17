@@ -1,6 +1,5 @@
 # Publications for classes
 
-
 :information_source: ePubs are best read on MacOS with ibooks, on Windows with Microsoft Edge, on Linux with Calibre
 
 Link |  Class | Description
