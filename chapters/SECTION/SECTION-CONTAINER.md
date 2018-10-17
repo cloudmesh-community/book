@@ -1,3 +1,3 @@
-# [Containers]{.part} :o:
+# [Containers]{.part}
 
 
