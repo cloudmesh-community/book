@@ -1,4 +1,12 @@
-## FaaS  :o:
+## FaaS :o:
+
+### Introduction
+FaaS or Function as a service is a new paradim in cloud computing that is gaining popularity recently. FaaS is also
+known as Serverless Computing to some. While the name Serverless implies that no servers are involved this is not true. 
+So FaaS would be a better term to describe this technology. FaaS is built around functions and events. Functions are
+generally stateless and are executed within isolated containers. The execution of the functions can be thought of as an 
+event driven model. A program or application in FaaS consist of a set of functions and a set of events or triggers that 
+invoke or activate those functions. A function activation can result in another function activation as a result.  
 
 * <https://en.wikipedia.org/wiki/Function_as_a_service>
 * <https://github.com/openfaas/faas>
