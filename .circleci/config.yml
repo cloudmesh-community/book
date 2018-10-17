@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cloudmesh/book:1.0
+    steps:
+      - checkout
+      - run:
+          name: where
+          command: ls; pwd
+      - run:
+          name: which python
+          command: which python
+      - run:
+          name: python version
+          command: python --version
+      - run:
+          name: pip version
+          command: pip --version
+      - run:
+          name: pandoc version
+          command: pandoc --version
+      - run:
+          name: git pull
+          command: git pull
+      - run:
+          name: requirements.txt
+          command: pip install -r requirements.txt
+      - run:
+          name: check cloud
+          command: cd cloud && make new && cd ..
+      - run:
+          name: check cloud
+          command: cd big-data-applications && make
