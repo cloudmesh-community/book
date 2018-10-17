@@ -532,7 +532,7 @@ links and notify us of the outdated links.
     -   <http://ameriflux.lbl.gov/>
     -   <http://www.fluxdata.org/default.aspx>
 -   Use Case 51 Consumption forecasting in Smart Grids
-    -   <http://smartgrid.usc.edu/>
+    -   <http://smartgrid.usc.edu/>(new link: http://dslab.usc.edu/smartgrid.php)
     -   <http://ganges.usc.edu/wiki/Smart_Grid>
     -   <https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&_afrWindowMode=0&_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17>
     -   <http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927>
