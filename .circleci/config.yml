@@ -9,14 +9,8 @@ jobs:
           name: where
           command: ls; pwd
       - run:
-          name: which python3
-          command: which python3
-      - run:
-          name: install python3
-          command: update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
-      - run:
-          name: config python3
-          command: update-alternatives --config python
+          name: which python
+          command: which python
       - run:
           name: python version
           command: python --version
