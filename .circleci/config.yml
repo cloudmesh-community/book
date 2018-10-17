@@ -6,21 +6,21 @@ jobs:
     steps:
       - checkout
       - run:
-          name: where 
+          name: where
           command: ls; pwd
       - run:
           name: which python3
           command: which python3
-       - run:
+      - run:
           name: install python3
           command: update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
-       - run:
+      - run:
           name: config python3
           command: update-alternatives --config python
-       - run:
+      - run:
           name: python version
           command: python --version
-       - run:
+      - run:
           name: pip version
           command: pip --version
       - run:
@@ -31,8 +31,7 @@ jobs:
           command: pip install -r requirements.txt
       - run:
           name: check cloud
-          command: cd ~/cloud && make new 
+          command: cd ~/cloud && make new
       - run:
-          name: check cloud 
+          name: check cloud
           command: cd ~/big-data-applications && make
-
