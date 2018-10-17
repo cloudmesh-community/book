@@ -33,6 +33,9 @@ jobs:
           name: requirements.txt
           command: pip install -r requirements.txt
       - run:
+          name: manifest-parser
+          command: ../bin/manifest-parser.py dep BOOK_516
+      - run:
           name: check cloud
           command: cd cloud && make new && cd ..
       - run:
