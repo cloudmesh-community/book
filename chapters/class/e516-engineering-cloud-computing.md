@@ -2,6 +2,16 @@
 
 ---
 
+:boom: Students considering to take this calls in Spring 2019 are recommended to take a look at:
+
+* <https://github.com/cloudmesh-community/book/blob/master/syllabus/e516.pdf>
+
+Sample chapters can be reached if you download teh PDF document locally and click on the links.  
+
+---
+
+---
+
 **:mortar_board: Learning Objectives**
 
 * This is the syllabus of the class. It will be updated throughout the semester, so look here for changes.
