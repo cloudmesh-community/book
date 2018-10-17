@@ -27,6 +27,9 @@ Description:
 
 
 """
+import sys
+
+print(sys.version)
 
 import oyaml as yaml
 from pprint import pprint
