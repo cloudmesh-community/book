@@ -6,7 +6,22 @@ known as Serverless Computing to some. While the name Serverless implies that no
 So FaaS would be a better term to describe this technology. FaaS is built around functions and events. Functions are
 generally stateless and are executed within isolated containers. The execution of the functions can be thought of as an 
 event driven model. A program or application in FaaS consist of a set of functions and a set of events or triggers that 
-invoke or activate those functions. A function activation can result in another function activation as a result.  
+invoke or activate those functions. A function activation can result in another function activation as a result. 
+
+Generally FaaS specifies a set of constraints on what a function can be. The constraints include storage constraints 
+such as a maximum size for the function, maximum memory allowed, execution time, etc. The exact constraints differ from
+provider to provider. AWS Lambda is considered as one of first FaaS offerings. Now most cloud providers offer their own
+version of FaaS. Several popular FaaS providers are listed below.
+
+Faas provider
+
+* AWS Lambda <https://aws.amazon.com/lambda/>
+* Azure Functions <https://azure.microsoft.com/en-us/services/functions/>
+* IBM Cloud Functions <https://console.bluemix.net/openwhisk/>
+* Google Cloud Functions <https://cloud.google.com/functions/>
+* Iron.io <https://www.iron.io/>
+* Webtask.io https://webtask.io/>
+
 
 * <https://en.wikipedia.org/wiki/Function_as_a_service>
 * <https://github.com/openfaas/faas>
@@ -19,13 +34,7 @@ invoke or activate those functions. A function activation can result in another 
 * Fission <https://github.com/fission/fission>
 * FaaS-netes <https://github.com/alexellis/faas-netes>
 
-Faas provider
 
-* AWS Lambda <https://aws.amazon.com/lambda/>
-* Azure Functions <https://azure.microsoft.com/en-us/services/functions/>
-* Cloud Functions <https://azure.microsoft.com/en-us/services/functions/>
-* Iron.io <https://www.iron.io/>
-* Webtask.io https://webtask.io/>
 
 
 
