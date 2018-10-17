@@ -22,14 +22,13 @@ Faas provider
 * Iron.io <https://www.iron.io/>
 * Webtask.io https://webtask.io/>
 
+Other than the providers there are also several open source FaaS offerings that are available to be used. One of the 
+most complete and popular open source option would be Apache OpenWhisk, which was developed by IBM and later open
+sourced. IBM currently deploys OpenWhisk in IBM cloud and offers it as a IBM Cloud functions. 
 
-* <https://en.wikipedia.org/wiki/Function_as_a_service>
-* <https://github.com/openfaas/faas>
-* <https://blog.alexellis.io/introducing-functions-as-a-service/>
-
+* OpenWhisk <https://github.com/apache/incubator-openwhisk>
 * Funktion  <https://github.com/funktionio/funktion>
 * Iron Functions <https://github.com/iron-io/functions>
-* OpenWhisk <https://github.com/apache/incubator-openwhisk>
 * Kubeless <https://github.com/kubeless/kubeless>
 * Fission <https://github.com/fission/fission>
 * FaaS-netes <https://github.com/alexellis/faas-netes>
@@ -58,4 +57,7 @@ example openfaas
 
 * <https://techbeacon.com/aws-lambda-serverless-apps-5-things-you-need-know-about-serverless-computing>
 
+* <https://en.wikipedia.org/wiki/Function_as_a_service>
+* <https://github.com/openfaas/faas>
+* <https://blog.alexellis.io/introducing-functions-as-a-service/>
 
