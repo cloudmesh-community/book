@@ -31,7 +31,7 @@ jobs:
           command: pip install -r requirements.txt
       - run:
           name: check cloud
-          command: cd ~/cloud && make new
+          command: cd cloud && make new && cd ..
       - run:
           name: check cloud
-          command: cd ~/big-data-applications && make
+          command: cd big-data-applications && make
