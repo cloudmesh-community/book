@@ -177,7 +177,7 @@ trees.
 -   <http://www.accenture.com/SiteCollectionDocuments/PDF/Accenture-Industrial-Internet-Changing-Competitive-Landscape-Industries.pdf>
 -   <http://www.slideshare.net/schappy/how-realtime-analysis-turns-big-medical-data-into-precision-medicine>
 -   <http://medcitynews.com/2013/03/the-body-in-bytes-medical-images-as-a-source-of-healthcare-big-data-infographic/>
--   <http://healthinformatics.wikispaces.com/file/view/cloud_computing.ppt>
+-   <http://healthinformatics.wikispaces.com/file/view/cloud_computing.ppt> (not exist)
 -   <https://www.mckinsey.com/~/media/mckinsey/industries/healthcare%20systems%20and%20services/our%20insights/the%20big%20data%20revolution%20in%20us%20health%20care/the_big_data_revolution_in_healthcare.ashx>
 -   <https://partner.microsoft.com/download/global/40193764>
 -   <https://ec.europa.eu/eip/ageing/file/353/download_en?token=8gECi1RO>
@@ -190,7 +190,7 @@ trees.
 -   <http://www.geatbx.com/docu/fcnindex-01.html>
 -   <https://wiki.nci.nih.gov/display/CIP/CIP+Survey+of+Biomedical+Imaging+Archives>
 -   [http://grids.ucs.indiana.edu/ptliupages/publications/Where\\%20does\\%20all\\%20the\\%20data\\%20come\\%20from\\%20v7.pdf](http://grids.ucs.indiana.edu/ptliupages/publications/Where\%20does\%20all\%20the\%20data\%20come\%20from\%20v7.pdf)
--   [http://www.ieee-icsc.org/ICSC2010/Tony\\%20Hey\\%20-\\%2020100923.pdf](http://www.ieee-icsc.org/ICSC2010/Tony\%20Hey\%20-\%2020100923.pdf)
+-   [http://www.ieee-icsc.org/ICSC2010/Tony\\%20Hey\\%20-\\%2020100923.pdf](http://www.ieee-icsc.org/ICSC2010/Tony\%20Hey\%20-\%2020100923.pdf)(not exist)
 -   <http://quantifiedself.com/larry-smarr/>
 -   <http://www.ebi.ac.uk/Information/Brochures/>
 -   <http://www.kpcb.com/internet-trends>
