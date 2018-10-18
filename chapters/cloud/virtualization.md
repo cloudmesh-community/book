@@ -12,7 +12,7 @@
 ---
 
 Virtualization is one of the important technologies that started the
-cloud revolution. It provides the basic underlaying principles for the
+cloud revolution. It provides the basic underlying principles for the
 development and adoption of clouds. The concept, although old and
 already used in the early days of computing, has recently been
 exploited to lead to better utilization of servers as part of data
@@ -65,7 +65,7 @@ the cloud. We distinguish two main ways of system virtualizing:
 
 * **Bare-metal Virtualization** in which the virtual machine monitor
   is installed directly on top of the hardware so that the it has
-  direct access to the underlaying hardware. It hosts the operating
+  direct access to the underlying hardware. It hosts the operating
   system. The VMM is also called hypervisor. We also use for
   bare-metal supporting VMM the term *Type 1 hypervisor*.
 
@@ -74,7 +74,7 @@ the cloud. We distinguish two main ways of system virtualizing:
   installed on top of the host OS allowing the users to run
   other operating systems on the VMM. In addition, the Virtual Machine
   Monitor or *Hypervisor* manages the deployments of potentially
-  multiple virtual machines on top of the underlaying Operating system.
+  multiple virtual machines on top of the underlying Operating system.
   We also use for hosted VMM the term *Type 2 hypervisor*.
 
 In either case the functionality a virtual machine is supported
@@ -83,10 +83,10 @@ physical resources either directly or indirectly through the host
 OS. A virtual machine provides the same functionality as a physical
 computer, but with the advantage that through virtualization the are
 portable, can be managed and provide increased security while
-shielding the underlaying OS from harmful actions. As a virtual
+shielding the underlying OS from harmful actions. As a virtual
 machine is in principle a program, it consists of several files
 including a configuration file, virtual disk files, virtual RAM, and a
-log file. virtual machines are configured to run a virtual operating
+log file. Virtual machines are configured to run a virtual operating
 system that allows applications to run on them. Each virtual machine
 has its own copy of the OS making it independent and more secure.
 
@@ -97,14 +97,14 @@ software on it.
 ## Hosted Virtualization
 
 As in the hosted virtualization the guest operating system accessed
-the underlaying hardware through the host OS, it usually has limited
-acces to the hardware as defined by the host OS. This allows the host
+the underlying hardware through the host OS, it usually has limited
+access to the hardware as defined by the host OS. This allows the host
 OS to impose policies that govern the operation of multiple guest OS
 concurrently. This includes management and scheduling of processes,
 memory, I/O operations to assign them appropriately to the guest
 OS. Through this mechanism the hypervisor provides an emulation of
 available hardware to each Virtual Machine run on top of it in
-timesharing fashion for resource constraint or resource shared
+time-sharing fashion for resource constrained or resource shared
 activities.
 
 As example, the hypervisor has the ability to present generic I/O
@@ -121,27 +121,27 @@ devices needed in storage, or even edge computing applications.
 
 Advantages of Hosted Virtualization include
 
-* Multiple Operating systems run on separate virtual machines on a VMM. 
-* Different Operating systems run on separate virtual machines on a VMM. 
+* Multiple Operating systems run on separate virtual machines on a VMM.
+* Different Operating systems run on separate virtual machines on a VMM.
 * Hardware level driver support is controlled by VMM, allowing an
   isolation of certain security aspects for accessing the hardware.
-* Installation of software can be doen by the owner of the virtual
+* Installation of software can be done by the owner of the virtual
   machine and does not have to be conducted by the provider of the
   hypervisor.
 
-Disadvantages of Hosted Virtualization include 
+Disadvantages of Hosted Virtualization include
 
 
 * Increased resource requirements as the Guest OS is running a full
-  copy of the OS. In it's worst case this will lead to a significant
+  copy of the OS. In its worst case this will lead to a significant
   performance reduction while using resources that are in contention.
 * The user of hypervisors must be familiar with operating system
-   management and security to assure it is safe to use.
+   management and security to ensure it is safe to use.
 
 ## Summary
 
-To showcase how these technologies relate to each other wil like you
-to review +@fig:vm-taxonomy
+To showcase how these technologies relate to each other you may
+review +@fig:vm-taxonomy
 
 
 ![Virtualization Taxonomy](images/vm.png){#fig:vm-taxonomy}
@@ -164,10 +164,11 @@ resource utilization.
 ### Full virtualization
 
 When looking at virtualization we often identify it with being a full
-virtualization. The hypervisor provides a full abstraction of the OS
-exposed to the guest OS's. In this case, the guest OS's the virtual
-machine just run without any special modification on the host OS. It
-just looks like an independent running computer [@paravsfull-virt].
+virtualization. The hypervisor provides a full abstraction of the
+hardware exposed to the guest OSs. In this case, the guest OSs the
+virtual machine just run without any special modification on the host
+OS. It just looks like an independent running computer
+[@paravsfull-virt].
 
 ### Paravirtualization
 
@@ -180,7 +181,7 @@ hypervisor are called *hypercalls* [@paravsfull-virt].
 ## Virtualization Technologies
 
 In this section we cover introduction to underlying virtualization
-technologies used on some main stream platforms.
+technologies used on some mainstream platforms.
 
 Cloud providers, such as AWS, Azure, and Google, and OpenStack use for
 example QEMU and KVM technologies for compute instance virtualization.
@@ -200,8 +201,8 @@ performance.
 ### I/O MMU virtualization (AMD-Vi and Intel VT-d)
 
 The term IOMMU is an abbreviation for input–output memory management
-unit. An IOMMU allows through virtual adresses to interface with
-physical adresses, allowing external direct-memory-access–capable IO
+unit. An IOMMU allows through virtual addresses to interface with
+physical addresses, allowing external direct-memory-access–capable IO
 devices to interface with the main memory [@iommu-1]. AMD's I/O
 Virtualization Technology (AMD-Vi) was originally called *IOMMU*.
 
@@ -257,13 +258,13 @@ file [@libvirt]. The official website for `libvirt` is located at
 QEMU is a virtualization technology emulator that allows you to run
 operating systems and Linux distributions on your current system
 without installing them or burn their ISO files.  When used as a
-machine emulator, QEMU can run OSes and programs made for one machine
+machine emulator, QEMU can run OSs and programs made for one machine
 (e.g. an ARM board) on a different machine (e.g. your own PC). By
 using dynamic translation, it achieves very good performance.  QEMU
 provides two generic functions.  One of them is open source machine
 emulator and the other is a virtualizer.
 
-* *Machine emulation:* using it as a machine emulator it runs the OSes
+* *Machine emulation:* using it as a machine emulator it runs the OSs
   and programs designed for one machine on a different machine of
   potential different architecture. It uses dynamic translation
   through which it achieves very good performance.
@@ -305,19 +306,19 @@ for Linux based systems, and later was merged into Linux Kernel
 since version 2.6.20. It was originally supporting x86 hardware
 with virtualization extensions (Intel VT or AMD-V), but later
 supporting of PowerPC and ARM were added. It supports a variety
-of different guest OSes, e.g., Windows family, Darwin (the core
+of different guest OSs, e.g., Windows family, Darwin (the core
 of MacOS), in addition to the different distros from various linux
 operating systems. The full supported guest list can be found at:
 <http://www.linux-kvm.org/page/Guest_Support_Status>
 
 The full list of KVM fatures can be found here:
 <http://www.linux-kvm.org/page/KVM_Features>.
-Among them, some cools features include hot-plug of hardwares
+Among them, some cool features include hot-plugging of hardware
 even CPU and PCI devices. It supports live migration of VMs too.
 
 ##### KVM vs QEMU
 
-KVM includes a fork of the Qemu executable. The QEMU project focuses
+KVM includes a fork of the QEMU executable. The QEMU project focuses
 on hardware emulation and portability. KVM focus on the kernel module
 and interfacing with the rest of the userspace code.  KVM comes with a
 `kvm-qemu` executable that just like QEMU manages the resources while
@@ -325,7 +326,7 @@ allocating RAM, loading the code. However instead of recompiling the
 code it spawns a thread which calls the KVM kernel module to switch to
 guest mode.  It than proceeds to execute the VM code. When privileged
 instructions are found, it switches back to the KVM kernel module, and
-if necessary, signals the Qemu thread to handle most of the hardware
+if necessary, signals the QEMU thread to handle most of the hardware
 emulation. This means that the guest code is emulated in a posix
 thread which can be managed with common Linux tools [@kvmvsqemu].
 
@@ -383,7 +384,7 @@ Because the initial software virtualized "hardware for a video
 adapter, a network adapter, and hard disk adapters" as well as
 "pass-through drivers for guest USB, serial, and parallel devices"
 [@wikipedia-vmware] it provided an attractive solution for many to use
-it to run different OSes on their host computers.  One important
+it to run different OSs on their host computers.  One important
 advantage is that it does not rely on virtualization extensions to the
 x86 instruction set as it was developed before they became
 available. This means it can run on many other platforms. However this
@@ -424,22 +425,21 @@ introduction to VirtualBox.
 
 #### Wine -- Wine is not an emulator
 
-The next software that we introduce is actually not a
-hypervisor. However it is very interesting as a contrast to the other
-approach. The term Wine has been originally introduced as an acronym
-for *Wine Is Not an Emulator*. In contrast to the other approches Wine
+The next software that we introduce is actually not a hypervisor.
+However it is very interesting as a contrast to the other approach.
+The term Wine has been originally introduced as an acronym for
+*Wine Is Not an Emulator*. In contrast to the other approaches Wine
 introduces a compatibility layer that allows to run Windows
 applications on a number of POSIX-compliant operating systems. This
-includes Linux, macOS and BSD. In contrast to using a a virtual
-machine or emulator, Wine translates Windows API calls into POSIX
-calls [@www-wine]. Hence, it allows to pass the Windows API calls directy
+includes Linux, macOS and BSD. In contrast to using a virtual machine
+or emulator, Wine translates Windows API calls into POSIX calls
+[@www-wine]. Hence, it allows to pass the Windows API calls directly
 to operating system calls leading to good performance [@www-wine]. The
 disadvantage of this approach is that in the early days and till today
-some of the underlaying calls may not be ported yet and may lead to
-applications not running. Thos of us that have been in the desir to
-run for example Microsoft Word on Linux or macOS, may remember that
-Wine was the tool we used to do so even before Word was released on
-macOS.
+some of the underlying calls may not be ported yet and may lead to
+applications not running. Those of us that wanted to run for example
+Microsoft Word on Linux or macOS, may remember that Wine was the tool
+we used to do so even before Word was released on macOS.
 
 
 #### Comparison of some technologies 
