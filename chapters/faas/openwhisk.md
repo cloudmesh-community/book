@@ -1,4 +1,4 @@
-# Apache OpenWhisk :o: :hand: fa18-516-26 {#s-openwhisk}
+# Apache OpenWhisk :o: {#s-openwhisk}
 
 Apache OpenWhisk is a Function as a Service (FaaS), aka Serverless computing, platform used to execute code in response of an events via triggers by managing the infrastructure, servers and scaling. The advantage of OpenWhisk over traditional long-running VM or container approach is that there is lack of resiliency-related overhead in OpenWhisk. OpenWhisk is inherently scalable since the actions are executed on demand. OpenWhisk also helps the developers to focus only on coding by taking care of infrastructure-related tasks like monitoring and patching.
 
@@ -204,7 +204,7 @@ whisk API host		192.168.2.2
 ```
 You can then re-invoke the built-in `Hello World` example using:
 ```bash
-$ incubator-openwhisk-devtools/docker-compose$ make hello-world
+incubator-openwhisk-devtools/docker-compose$ make hello-world
 creating the hello.js function ...
 invoking the hello-world function ...
 adding the function to whisk ...
@@ -225,7 +225,7 @@ deleting the function ...
 ok: deleted action hello
 ```
 
-## Creating Custom Action
+## Creating a custom action
 
 We already invoked the built-in hello world action. Now, we try to build a new custom action. First create a file called `greeter.js`:
 ```js
@@ -258,4 +258,19 @@ $ wsk -i action invoke -r greeter -p user '{"name": "Vafa", "location": "Indiana
     "payload": "Hello Vafa from Indiana!"
 }
 
+```
+After you are finished using the OpenWhisk Devtools, you can stop platform using:
+```bash
+incubator-openwhisk-devtools/docker-compose$ make destroy
+Stopping openwhisk_apigateway_1      ... done
+Stopping openwhisk_controller_1      ... done
+Stopping openwhisk_kafka-topics-ui_1 ... done
+Stopping openwhisk_kafka-rest_1      ... done
+Stopping openwhisk_invoker_1         ... done
+Stopping openwhisk_kafka_1           ... done
+Stopping openwhisk_zookeeper_1       ... done
+Stopping openwhisk_redis_1           ... done
+Stopping openwhisk_db_1              ... done
+Stopping openwhisk_minio_1           ... done
+...
 ```
