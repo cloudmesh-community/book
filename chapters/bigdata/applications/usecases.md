@@ -390,7 +390,7 @@ links and notify us of the outdated links.
 -   [Summary of Requirements
     Subgroup](http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx)
     
--   [Use Case 6 Mendeley](http://mendeley.com%20http//dev.mendeley.com)(not exist)
+-   ~~[Use Case 6 Mendeley](http://mendeley.com%20http//dev.mendeley.com)~~ **(this link does not exist any longer)**
 -   [Use Case 7
     Netflix](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria)(not exist)
 -   Use Case 8 Search
