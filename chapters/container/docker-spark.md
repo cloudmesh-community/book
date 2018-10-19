@@ -1,6 +1,4 @@
-# Apache Spark with Docker :o:
-
-:o: contains duplicated contet for managing containers
+# Apache Spark with Docker
 
 ## Pull Image from Docker Repository
 
@@ -97,7 +95,7 @@ words = textFile.flatMap(lambda line:line.split())
 counts = words.map(lambda word:(word, 1)).reduceByKey(lambda x,y: x+y)
 counts.map(lambda x:x[1]).sum()
 ```
-    
+
 ## Docker Spark Examples
 
 ### K-Means Example
@@ -176,19 +174,63 @@ $ docker run -it-p 8888:8888 -v $PWD:/cloudmesh/spark --name spark jupyter/pyspa
 
 Here you will get the following output in the terminal.
 
-:o: preferably use ascii
+```
+docker run -it -p 8888:8888 -v $PWD:/cloudmesh/spark --name spark jupyter/pyspark-notebook
+Unable to find image 'jupyter/pyspark-notebook:latest' locally
+latest: Pulling from jupyter/pyspark-notebook
+a48c500ed24e: Pull complete
+1e1de00ff7e1: Pull complete
+0330ca45a200: Pull complete
+471db38bcfbf: Pull complete
+0b4aba487617: Pull complete
+d44ea0cd796c: Pull complete
+5ac827d588be: Pull complete
+d8d7747a335e: Pull complete
+08790511e3e9: Pull complete
+e3c68aea9a5f: Pull complete
+484c6d5fc38a: Pull complete
+0448c1360cb9: Pull complete
+61d7e6dc705d: Pull complete
+92f1091ed72b: Pull complete
+8045d3663a7e: Pull complete
+1bde7ba25439: Pull complete
+5618f8ed38b4: Pull complete
+f08523cb6144: Pull complete
+99eee56fda2f: Pull complete
+b37b1ce39785: Pull complete
+aee4b9eac4ea: Pull complete
+f810ef87439d: Pull complete
+038786dce388: Pull complete
+ded31312ea33: Pull complete
+30221ffdd1a6: Pull complete
+da1d368f8592: Pull complete
+523809a30a21: Pull complete
+47ab1b230dd2: Pull complete
+442f9435e1a9: Pull complete
+Digest: sha256:f8b6309cd39481de1a169143189ed0879b12b56fe286d254d03fa34ccad90734
+Status: Downloaded newer image for jupyter/pyspark-notebook:latest
+Container must be run with group "root" to update passwd file
+Executing the command: jupyter notebook
+[I 15:47:52.900 NotebookApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 15:47:53.167 NotebookApp] JupyterLab extension loaded from /opt/conda/lib/python3.6/site-packages/jupyterlab
+[I 15:47:53.167 NotebookApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+[I 15:47:53.176 NotebookApp] Serving notebooks from local directory: /home/jovyan
+[I 15:47:53.177 NotebookApp] The Jupyter Notebook is running at:
+[I 15:47:53.177 NotebookApp] http://(3a3d9f7e2565 or 127.0.0.1):8888/?token=f22492fe7ab8206ac2223359e0603a0dff54d98096ab7930
+[I 15:47:53.177 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 15:47:53.177 NotebookApp]
 
-![Terminal Output](images/docker-spark-jupyter.png)
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://(3a3d9f7e2565 or 127.0.0.1):8888/?token=f22492fe7ab8206ac2223359e0603a0dff54d98096ab7930
+```
 
 Please copy the url shown at the end of the terminal output and go to
 that url in the browser.
 
 You will see the following output in the browser, (Use Google Chrome)
 
-:o: preferably use ascii
-
-![Jupyter Notebook in
-Browser](images/docker-spark-jup-1.png)
+![Jupyter Notebook in Browser](images/docker-spark-jup-1.png)
 
 First navigate to the work folder. Let us create a new python file here.
 Click python3 in the new menu.
@@ -204,25 +246,54 @@ This will run the code interactively.
 
 Now let's create the following content.
 
-:o: preferably use ascii
+```python
+import os
+os.getcwd()
 
-![Create a new python file](images/docker-spark-jup-3.png)
+import pyspark
+sc = pyspark.SparkContext('local[*]')
+rdd = sc.parallelize(range(1000))
+rdd.takeSample(False, 5)
+```
 
 Now let us do the following.
 
 In the following stage we configure spark context and import the
 necessary files.
 
-:o: preferably use ascii
+```python
+os.makedirs("data")
 
-![Initial Spark Program](images/docker-spark-tut-1.png)
+from pyspark.mllib.clustering import KMeans, KMeansModel
+from numpy import array
+from math import sqrt
+from pyspark.mllib.linalg import Vectors
+from pyspark.mllib.linalg import SparseVector
+sc.version
+```
 
 Next stage we use sample data set by creating them in form of an array
 and we train the kmeans algorithm.
 
-:o: preferably use ascii
+```python
+sparse_data = [
+    SparseVector(3, {1:1.0}),
+    SparseVector(3, {1:1.1}),
+    SparseVector(3, {2:1.0}),
+    SparseVector(3, {2:1.1})
+]
 
-![Train KMeans](images/docker-spark-tut-4.png)
+model = KMeans.train(sc.parallelize(sparse_data), 2, initializationMode='k-means||',
+                    seed=50, initializationSteps=5, epsilon=1e-4)
+
+model.predict(array([0.,1.,0.]))
+
+model.predict(array([0.,0.,1.]))
+
+model.predict(sparse_data[0])
+
+model.predict(sparse_data[2])
+```
 
 In the final stage we put sample values and check the predictions on the
 cluster. In addition to that feed the data using SparseVector format and
@@ -232,24 +303,24 @@ previous one we did not specify any parameters.
 
 The predict term predicts the cluster id which it belongs to.
 
-:o: preferably use ascii
-
-![Predict KMeans
-Clusters-1](images/docker-spark-tut-5.png)
+```python
+data = array([0.0, 0.0, 1.0, 1.0, 9.0, 8.0, 8.0, 9.0]).reshape(4, 2)
+model = KMeans.train(sc.parallelize(data), 2, initializationMode='random',
+                    seed=50, initializationSteps=5, epsilon=1e-4)
+model.predict(array([0.0, 0.0])) == model.predict(array([1.0, 1.0]))
+model.predict(array([8.0, 9.0]))
+model.predict(array([8.0, 9.0])) == model.predict(array([9.0, 8.0]))
+model.k
+model.computeCost(sc.parallelize(data))
+```
 
 Then in the following way you can check whether two data points belong
 to one cluster or not.
 
 
-:o: preferably use ascii
-
-![Predict KMeans
-Clusters-2](images/docker-spark-tut-2.png)
-
-:o: preferably use ascii
-
-![Predict KMeans
-Clusters-3](images/docker-spark-tut-3.png)
+```python
+isinstance(model.clusterCenters, list)
+```
 
 ### Stop Docker Container
 
@@ -262,7 +333,7 @@ $ docker stop spark
 ```bash
 $ docker start spark
 ```
-    
+
 ### Remove Docker Container
 
 ```bash
