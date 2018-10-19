@@ -204,7 +204,7 @@ whisk API host		192.168.2.2
 ```
 You can then re-invoke the built-in `Hello World` example using:
 ```bash
-incubator-openwhisk-devtools/docker-compose$ make hello-world
+~/incubator-openwhisk-devtools/docker-compose$ make hello-world
 creating the hello.js function ...
 invoking the hello-world function ...
 adding the function to whisk ...
@@ -250,7 +250,7 @@ $ wsk -i action list
 actions
 /guest/greeter                            private nodejs:6
 ```
-Finally we can invoke the action by passing a `json` parameter including a name and location and receive the result:
+Afterwards, we can invoke the action by passing a `json` parameter including a name and location and receive the result:
 
 ```bash
 $ wsk -i action invoke -r greeter -p user '{"name": "Vafa", "location": "Indiana"}'
@@ -259,9 +259,42 @@ $ wsk -i action invoke -r greeter -p user '{"name": "Vafa", "location": "Indiana
 }
 
 ```
-After you are finished using the OpenWhisk Devtools, you can stop platform using:
+Now we can retrieve the list of activation records:
+
 ```bash
-incubator-openwhisk-devtools/docker-compose$ make destroy
+$ wsk activation list -i
+activations
+976a7d02dab7460eaa7d02dab7760e9a greeter
+02e0e12118af43b0a0e12118afd3b038 hello
+10c2cddb0d2c4c1f82cddb0d2c1c1feb hello
+```
+The result of the command above is showing that the `hello` action has been invoked twice and the `greeter` action was invoked once. You can get more information about each of the activation using the `wsk -i activation get [ACTIVATION_ID]`:
+```bash
+$ wsk -i activation get 976a7d02dab7460eaa7d02dab7760e9a
+ok: got activation 976a7d02dab7460eaa7d02dab7760e9a
+{
+    "namespace": "guest",
+    "name": "greeter",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "976a7d02dab7460eaa7d02dab7760e9a",
+    "start": 1539980284774,
+    "end": 1539980284886,
+    "duration": 112,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello Vafa from Indiana!"
+        }
+    },
+  ...
+```
+
+Finally, after you are finished using the OpenWhisk Devtools, you can stop platform using:
+```bash
+~/incubator-openwhisk-devtools/docker-compose$ make destroy
 Stopping openwhisk_apigateway_1      ... done
 Stopping openwhisk_controller_1      ... done
 Stopping openwhisk_kafka-topics-ui_1 ... done
