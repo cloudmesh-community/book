@@ -500,8 +500,7 @@ links and notify us of the outdated links.
 -   Use Case 42 ENVRI, Common Operations of Environmental Research
     Infrastructure
     -   [ENVRI Project website](http://envri.eu/)
-    -   [ENVRI Reference
-        Model](http://confluence.envri.eu:8090/display/ERM/Start)(not exist)
+    -   ~~[ENVRI Reference Model](http://confluence.envri.eu:8090/display/ERM/Start)~~ **(not exist)**
     -   [ENVRI deliverable D3.2 : Analysis of common requirements of
         Environmental Research
         Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)(not exist)
