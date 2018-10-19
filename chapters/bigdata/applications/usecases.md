@@ -426,15 +426,15 @@ links and notify us of the outdated links.
         codes](http://loinc.org/)
     -   [Indiana Health Information Exchange](http://www.ihie.org/)
     
-    -   [Institute of Medicine Learning Healthcare
-        System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)(not exist)
+    -   ~~[Institute of Medicine Learning Healthcare
+        System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)~~
 -   Use Case 17
     -   [Pathology Imaging/digital
         pathology](https://web.cci.emory.edu/confluence/display/PAIS%3E)
     -   <https://web.cci.emory.edu/confluence/display/HadoopGIS>
 -   Use Case 19 Genome in a Bottle Consortium:
 
-    -   [www.genomeinabottle.org](https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org)(not exist)
+    -   ~~[www.genomeinabottle.org](https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org)~~
 -   [Use Case 20 Comparative analysis for metagenomes and
     genomes](http://img.jgi.doe.gov/)
 -   Use Case 25
@@ -445,8 +445,8 @@ links and notify us of the outdated links.
     -   <http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html>
     -   <http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html>
     -   <http://www.wired.com/2013/06/andrew_ng/>,
-    -   [A recent research paper on HPC for Deep
-        Learning](http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf)(not exist)
+    -   ~~[A recent research paper on HPC for Deep
+        Learning](http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf)~~
     -   Widely-used tutorials and references for Deep Learning:
         -   <http://ufldl.stanford.edu/wiki/index.php/Main_Page>
         -   <http://deeplearning.net/>
@@ -499,10 +499,10 @@ links and notify us of the outdated links.
 -   Use Case 42 ENVRI, Common Operations of Environmental Research
     Infrastructure
     -   [ENVRI Project website](http://envri.eu/)
-    -   ~~[ENVRI Reference Model](http://confluence.envri.eu:8090/display/ERM/Start)~~ **(not exist)**
-    -   [ENVRI deliverable D3.2 : Analysis of common requirements of
+    -   ~~[ENVRI Reference Model](http://confluence.envri.eu:8090/display/ERM/Start)~~ 
+    -   ~~[ENVRI deliverable D3.2 : Analysis of common requirements of
         Environmental Research
-        Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)(not exist)
+        Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)~~
     -   [ICOS](https://www.icos-ri.eu/),
     -   [Euro-Argo](http://www.euro-argo.eu/)
     -   [EISCAT 3D](https://www.eiscat3d.se/node)
