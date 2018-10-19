@@ -390,9 +390,8 @@ links and notify us of the outdated links.
 -   [Summary of Requirements
     Subgroup](http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx)
     
--   [Use Case 6 Mendeley](http://mendeley.com%20http//dev.mendeley.com)(not exist)
--   [Use Case 7
-    Netflix](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria)(not exist)
+-   ~~[Use Case 6 Mendeley](http://mendeley.com%20http//dev.mendeley.com)~~ **(this link does not exist any longer)**
+-   ~~[Use Case 7 Netflix](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria)~~
 -   Use Case 8 Search
     -   <http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013>,
     -   <http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html>,
@@ -418,24 +417,24 @@ links and notify us of the outdated links.
     -   <http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf>,
     -   <http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf>,
     
-    -   <http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf>,(not exist)
-    -   <https://www.youtube.com/watch?v=l4Qii7T8zeg>,(not exsit)
-    -   <http://dcgsa.apg.army.mil/> (not exist)
+    -   ~~<http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf>,~~
+    -   ~~<https://www.youtube.com/watch?v=l4Qii7T8zeg>~~
+    -  ~~<http://dcgsa.apg.army.mil/>~~
 -   Use Case 16 Electronic Medical Record (EMR) Data:
     -   [Regenstrief Institute](http://www.regenstrief.org/)
     -   [Logical observation identifiers names and
         codes](http://loinc.org/)
     -   [Indiana Health Information Exchange](http://www.ihie.org/)
     
-    -   [Institute of Medicine Learning Healthcare
-        System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)(not exist)
+    -   ~~[Institute of Medicine Learning Healthcare
+        System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)~~
 -   Use Case 17
     -   [Pathology Imaging/digital
         pathology](https://web.cci.emory.edu/confluence/display/PAIS%3E)
     -   <https://web.cci.emory.edu/confluence/display/HadoopGIS>
 -   Use Case 19 Genome in a Bottle Consortium:
 
-    -   [www.genomeinabottle.org](https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org)(not exist)
+    -   ~~[www.genomeinabottle.org](https://bigdatacoursespring2015.appspot.com/www.genomeinabottle.org)~~
 -   [Use Case 20 Comparative analysis for metagenomes and
     genomes](http://img.jgi.doe.gov/)
 -   Use Case 25
@@ -446,8 +445,8 @@ links and notify us of the outdated links.
     -   <http://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html>
     -   <http://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html>
     -   <http://www.wired.com/2013/06/andrew_ng/>,
-    -   [A recent research paper on HPC for Deep
-        Learning](http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf)(not exist)
+    -   ~~[A recent research paper on HPC for Deep
+        Learning](http://www.stanford.edu/~acoates/papers/CoatesHuvalWangWuNgCatanzaro_icml2013.pdf)~~
     -   Widely-used tutorials and references for Deep Learning:
         -   <http://ufldl.stanford.edu/wiki/index.php/Main_Page>
         -   <http://deeplearning.net/>
@@ -458,8 +457,8 @@ links and notify us of the outdated links.
         Data](http://truthy.indiana.edu/)
     -   <http://cnets.indiana.edu/groups/nan/truthy/>
     -   <http://cnets.indiana.edu/groups/nan/despic/>
--   [Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
-    and Analytics](http://cinet.vbi.vt.edu/cinet_new/)(not exist)
+-   ~~[Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
+    and Analytics](http://cinet.vbi.vt.edu/cinet_new/)~~
 -   [Use Case 31 NIST Information Access Division analytic technology
     performance measurement, evaluations, and
     standards](http://www.nist.gov/itl/iad/)
@@ -493,18 +492,17 @@ links and notify us of the outdated links.
     Data: Discovery of Higgs particle
     -   <http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf>,
     -   <http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf>
--   [Use Case 40 Belle II High Energy Physics
-    Experiment](http://belle2.kek.jp/)(old link does not exist, new link: https://www.belle2.org)
+-   ~~[Use Case 40 Belle II High Energy Physics
+    Experiment](http://belle2.kek.jp/)~~ **(old link does not exist, new link: https://www.belle2.org)**
 -   [Use Case 41 EISCAT 3D incoherent scatter radar
     system](https://www.eiscat3d.se/)
 -   Use Case 42 ENVRI, Common Operations of Environmental Research
     Infrastructure
     -   [ENVRI Project website](http://envri.eu/)
-    -   [ENVRI Reference
-        Model](http://confluence.envri.eu:8090/display/ERM/Start)(not exist)
-    -   [ENVRI deliverable D3.2 : Analysis of common requirements of
+    -   ~~[ENVRI Reference Model](http://confluence.envri.eu:8090/display/ERM/Start)~~ 
+    -   ~~[ENVRI deliverable D3.2 : Analysis of common requirements of
         Environmental Research
-        Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)(not exist)
+        Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)~~
     -   [ICOS](https://www.icos-ri.eu/),
     -   [Euro-Argo](http://www.euro-argo.eu/)
     -   [EISCAT 3D](https://www.eiscat3d.se/node)
@@ -532,7 +530,7 @@ links and notify us of the outdated links.
     -   <http://ameriflux.lbl.gov/>
     -   <http://www.fluxdata.org/default.aspx>
 -   Use Case 51 Consumption forecasting in Smart Grids
-    -   <http://smartgrid.usc.edu/>(old link does not exsit, new link: http://dslab.usc.edu/smartgrid.php)
+    -   ~~<http://smartgrid.usc.edu/>~~ **(old link does not exsit, new link: http://dslab.usc.edu/smartgrid.php)**
     -   <http://ganges.usc.edu/wiki/Smart_Grid>
     -   <https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&_afrWindowMode=0&_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17>
     -   <http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927>
