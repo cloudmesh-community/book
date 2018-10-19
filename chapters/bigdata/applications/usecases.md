@@ -391,8 +391,7 @@ links and notify us of the outdated links.
     Subgroup](http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx)
     
 -   ~~[Use Case 6 Mendeley](http://mendeley.com%20http//dev.mendeley.com)~~ **(this link does not exist any longer)**
--   [Use Case 7
-    Netflix](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria)(not exist)
+-   ~~[Use Case 7 Netflix](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria)~~
 -   Use Case 8 Search
     -   <http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013>,
     -   <http://webcourse.cs.technion.ac.il/236621/Winter2011-2012/en/ho_Lectures.html>,
@@ -418,9 +417,9 @@ links and notify us of the outdated links.
     -   <http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf>,
     -   <http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf>,
     
-    -   <http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf>,(not exist)
-    -   <https://www.youtube.com/watch?v=l4Qii7T8zeg>,(not exsit)
-    -   <http://dcgsa.apg.army.mil/> (not exist)
+    -   ~~<http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf>,~~
+    -   ~~<https://www.youtube.com/watch?v=l4Qii7T8zeg>~~
+    -  ~~<http://dcgsa.apg.army.mil/>~~
 -   Use Case 16 Electronic Medical Record (EMR) Data:
     -   [Regenstrief Institute](http://www.regenstrief.org/)
     -   [Logical observation identifiers names and
