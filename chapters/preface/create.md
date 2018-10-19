@@ -14,7 +14,8 @@ $ brew install graphviz
 $ brew install pandoc # needs version >2.2.3 of pandoc see travis for
                       # proper install if brew does not work
 $ brew install pandoc-citeproc
-$ npm install --global mermaid-filte                      
+$ npm install --global mermaid-filter
+$ npm install --global pandoc-index
 ```
 
 ## Ubuntu requirements
@@ -34,6 +35,7 @@ $ cd pandoc-citeproc
 $ stack setup
 $ stack install
 $ npm install --global mermaid-filter
+$ npm install --global pandoc-index
 ```
 
 ## Creating a book
