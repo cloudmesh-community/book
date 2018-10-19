@@ -457,8 +457,8 @@ links and notify us of the outdated links.
         Data](http://truthy.indiana.edu/)
     -   <http://cnets.indiana.edu/groups/nan/truthy/>
     -   <http://cnets.indiana.edu/groups/nan/despic/>
--   [Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
-    and Analytics](http://cinet.vbi.vt.edu/cinet_new/)(not exist)
+-   ~~[Use Case 30 CINET: Cyberinfrastructure for Network (Graph) Science
+    and Analytics](http://cinet.vbi.vt.edu/cinet_new/)~~
 -   [Use Case 31 NIST Information Access Division analytic technology
     performance measurement, evaluations, and
     standards](http://www.nist.gov/itl/iad/)
@@ -492,8 +492,8 @@ links and notify us of the outdated links.
     Data: Discovery of Higgs particle
     -   <http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf>,
     -   <http://www.es.net/assets/pubs_presos/High-throughput-lessons-from-the-LHC-experience.Johnston.TNC2013.pdf>
--   [Use Case 40 Belle II High Energy Physics
-    Experiment](http://belle2.kek.jp/)(old link does not exist, new link: https://www.belle2.org)
+-   ~~[Use Case 40 Belle II High Energy Physics
+    Experiment](http://belle2.kek.jp/)~~ **(old link does not exist, new link: https://www.belle2.org)**
 -   [Use Case 41 EISCAT 3D incoherent scatter radar
     system](https://www.eiscat3d.se/)
 -   Use Case 42 ENVRI, Common Operations of Environmental Research
@@ -530,7 +530,7 @@ links and notify us of the outdated links.
     -   <http://ameriflux.lbl.gov/>
     -   <http://www.fluxdata.org/default.aspx>
 -   Use Case 51 Consumption forecasting in Smart Grids
-    -   <http://smartgrid.usc.edu/>(old link does not exsit, new link: http://dslab.usc.edu/smartgrid.php)
+    -   ~~<http://smartgrid.usc.edu/>~~ **(old link does not exsit, new link: http://dslab.usc.edu/smartgrid.php)**
     -   <http://ganges.usc.edu/wiki/Smart_Grid>
     -   <https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-power/a-p-smartgridla?_afrLoop=157401916661989&_afrWindowMode=0&_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D157401916661989%26_afrWindowMode%3D0%26_adf.ctrl-state%3Db7yulr4rl_17>
     -   <http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6475927>
