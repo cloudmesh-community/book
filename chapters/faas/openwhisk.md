@@ -114,7 +114,7 @@ Make sure you do not have any services running on the following ports otherwise 
 * 8080, 443, 9000, 9090 for apigateway
 * 8001 Kafka-UI
 
-In case you have services running on any of the ports above, try to modify the `docker-compose.yml` and change the source port number in the port number mapping. For instance if you have `Apache` service running on Port 80, then open `docker-compose.yml`, search for the keyword `80:` to find the port mapping with source port of 80:
+In case you have services running on any of the ports above, you can either stop the local services that are using these ports or alternatively you can modify the `docker-compose.yml` and change the source port number in the port number mapping. The latter option is, however, more tricky because you have to make sure the change does not affect the communication between the containers. For instance if you have `Apache` service running on Port 80, then open `docker-compose.yml`, search for the keyword `80:` to find the port mapping with source port of 80:
 ```bash
 ports:
   - "80:80"
@@ -128,17 +128,44 @@ After that, you should be able to run `make quick-start` successfully and then y
 
 ```bash
 $ docker ps --format "{{.ID}}: {{.Names}} {{.Image}}"
-ade07dd5664b: openwhisk_kafka-topics-ui_1 landoop/kafka-topics-ui:0.9.3
-d982ccef52bb: openwhisk_kafka-rest_1 confluentinc/cp-kafka-rest:3.3.1
-21c1c0f2e011: openwhisk_kafka_1 wurstmeister/kafka:0.11.0.1
-94a1bc7c3244: openwhisk_redis_1 redis:2.8
-e62a9826f0a2: openwhisk_zookeeper_1 zookeeper:3.4
-32cdc4adc49d: openwhisk_minio_1 minio/minio:RELEASE.2018-07-13T00-09-07Z
+16e7746c4af1: wsk0_9_prewarm_nodejs6 openwhisk/nodejs6action:latest
+dd3c4c2d4947: wsk0_8_prewarm_nodejs6 openwhisk/nodejs6action:latest
+6233ae715cf7: openwhisk_apigateway_1 openwhisk/apigateway:latest
+3ac0938aecdd: openwhisk_controller_1 openwhisk/controller
+e1bb7272a3fa: openwhisk_kafka-topics-ui_1 landoop/kafka-topics-ui:0.9.3
+6b2408474282: openwhisk_kafka-rest_1 confluentinc/cp-kafka-rest:3.3.1
+9bab823a891b: openwhisk_invoker_1 openwhisk/invoker
+98ebd5b4d605: openwhisk_kafka_1 wurstmeister/kafka:0.11.0.1
+65a3b2a7914f: openwhisk_zookeeper_1 zookeeper:3.4
+9b817a6d2c40: openwhisk_redis_1 redis:2.8
+e733881d0004: openwhisk_db_1 apache/couchdb:2.1
+6084aec44f03: openwhisk_minio_1 minio/minio:RELEASE.2018-07-13T00-09-07Z
+```
+Note that 12 containers should be up and running:
+```bash
+$ docker ps --format "{{.ID}}: {{.Names}} {{.Image}} | wc -l"
+12
 ```
 
-## Testing OpenWhisk
+### Debugging quick-start
 
-OpenWhisk provides a command line tool called [openwhisk-cli](https://github.com/apache/incubator-openwhisk-cli) which is used for controlling the platform. As part of the `make quick-start` command that we used above for starting the platform, the account credentials will automatically be written into the configuration of the CLI. You can either install the CLI directly from the repository or ue the binary available in this path in OpenWhisk Devtools folder:
+It is always possible that something goes wrong in the process of deploying the 12 dockers. If the `make quick-start` process stuck at some point, the best way to find the issue is to use the `docker ps -a` command to check which of the containers is causing the issue. Then you can try to fix the issue of that container separately. This fix could possibly happen in `docker-compose.yml` file. For instance, there was some issue with the `openwhisk/controller` docker at some point and it turns out the issue was the following line in the `docker-compose.yml`:
+
+```bash
+command: /bin/sh -c "exec /init.sh --id 0 >> /logs/controller-local_logs.log 2>&1"
+```
+this line is indicating that the following command should be run after the container is started:
+```bash
+$ /init.sh --id 0 >> /logs/controller-local_logs.log 2>&1
+```
+However, starting another instance of the docker image with this command outputted a `Permission Denied` error which could be fixed either by changing the logs folder permission in the docker image or container (followed by a commit) or saving the log file in another folder. In this case replacing that line with the following line would temporarily fix the issue:
+```bash
+command: /bin/sh -c "exec /init.sh --id 0 >> /home/owuser/controller-local_logs.log 2>&1"
+```
+
+## "Hello World" in OpenWhisk
+
+OpenWhisk provides a command line tool called [openwhisk-cli](https://github.com/apache/incubator-openwhisk-cli) which is used for controlling the platform. As part of the `make quick-start` command that we used above for starting the platform, the account credentials will automatically be written into the configuration of the CLI. You can either install the CLI directly from the repository or install it using `linuxbrew`. Alternatively, use the binary available in this path in OpenWhisk Devtools folder:
 
 `[PATH_TO_DEVTOOLS]/docker-compose/openwhisk-src/bin/wsk`
 
@@ -168,4 +195,67 @@ Available Commands:
   namespace   work with namespaces
   list        list entities in the current namespace
   api         work with APIs
+```
+For instance, you can get the host address using:
+
+```bash
+$ wsk property get | grep host
+whisk API host		192.168.2.2
+```
+You can then re-invoke the built-in `Hello World` example using:
+```bash
+$ incubator-openwhisk-devtools/docker-compose$ make hello-world
+creating the hello.js function ...
+invoking the hello-world function ...
+adding the function to whisk ...
+ok: created action hello
+invoking the function ...
+invocation result: { "payload": "Hello, World!" }
+{ "payload": "Hello, World!" }
+creating an API from the hello function ...
+ok: updated action hello
+invoking:  http://192.168.2.2:9090/api/23bc46b1-71f6-4ed5-8c54-816aa4f8c502/hello/world
+  "payload": "Hello, World!"
+ok: APIs
+Action          Verb  API Name  URL
+/guest/hello     get    /hello  http://192.168.2.2:9090/api/23bc46b1-71f6-4ed5-8c54-816aa4f8c502/hello/world
+deleting the API ...
+ok: deleted API /hello
+deleting the function ...
+ok: deleted action hello
+```
+
+## Creating Custom Action
+
+We already invoked the built-in hello world action. Now, we try to build a new custom action. First create a file called `greeter.js`:
+```js
+function main(input) {
+   return {payload:  'Hello, ' + input.user.name + ' from ' + input.user.location + '!'};
+}
+```
+Now we can create an action called `greeter` using the `greeter.js`:
+```bash
+$ wsk -i action create greeter greeter.js
+ok: created action greeter
+```
+Note that the `-i` option is to prevent the following error:
+```bash
+$ wsk action create greeter greeter.js
+error: Unable to create action 'summer': Put https://192.168.2.2/api/v1/namespaces/guest/actions/summer?overwrite=false: x509: cannot validate certificate for 192.168.2.2 because it doesn't contain any IP SANs
+Run 'wsk --help' for usage.
+```
+Afterwards you can get the list of actions to make sure your desired action is created:
+```bash
+$ wsk -i action list
+actions
+/guest/greeter                            private nodejs:6
+```
+Finally we can invoke the action by passing a `json` parameter including a name and location and receive the result:
+
+```bash
+$ wsk -i action invoke -r greeter -p user '{"name": "Vafa", "location": "Indiana"}'
+{
+    "payload": "Hello Vafa from Indiana!"
+}
+
 ```
