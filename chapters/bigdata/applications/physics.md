@@ -185,7 +185,7 @@ answers.
 ### Resources
 
 -   <http://indico.cern.ch/event/20453/session/6/contribution/15?materialId=slides>
--   <http://www.atlas.ch/photos/events.html>
+-   <http://www.atlas.ch/photos/events.html> (this link is outdated)
 -   <https://cms.cern/>
 
 ### Random Numbers, Distributions and Central Limit Theorem
