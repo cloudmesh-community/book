@@ -299,7 +299,7 @@ and value of heuristic algorithms.
 -   <http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial> [@www-slideshare-building]
 -   <http://www.ifi.uzh.ch/ce/teaching/spring2012/16-Recommender-Systems_Slides.pdf> [@www-ifi-teaching]
 -   <https://www.kaggle.com/> [@www-kaggle]
--   <http://www.ics.uci.edu/~welling/teaching/CS77Bwinter12/CS77B_w12.html> [www-ics-uci-welling]
+-   <http://www.ics.uci.edu/~welling/teaching/CS77Bwinter12/CS77B_w12.html> [@www-ics-uci-welling]
 -   [Jeff
     Hammerbacher](https://berkeleydatascience.files.wordpress.com/2012/01/20120117berkeley1.pdf)[@20120117berkeley1]
 -   <http://www.techworld.com/news/apps/netflix-foretells-house-of-cards-success-with-cassandra-big-data-engine-3437514/> [@www-techworld-netflix]
