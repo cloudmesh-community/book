@@ -171,7 +171,7 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <https://www.youtube.com/watch?v=YkjtnuNmK74>
 
     resources below do not exsit:
--   <http://www.sportvision.com/baseball>
--   <http://www.sportvision.com/media/pitchfx-how-it-works>
--   <http://www.sportvision.com/baseball/fieldfx>
--   <http://www.sportvision.com/baseball/hitfx>
+-   ~~<http://www.sportvision.com/baseball>~~
+-   ~~<http://www.sportvision.com/media/pitchfx-how-it-works>~~
+-   ~~<http://www.sportvision.com/baseball/fieldfx>~~
+-   ~~<http://www.sportvision.com/baseball/hitfx>~~
