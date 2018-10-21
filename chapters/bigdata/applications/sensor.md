@@ -107,7 +107,7 @@ autonomous local power units where good use is made of waste heat.
 -   <http://www.gesoftware.com/sites/default/files/GE-Software-Modernizing-Machine-to-Machine-Interactions.pdf>
 
     resources below do not exsit:
--   <https://www.gesoftware.com/minds-and-machines>
--   <https://www.gesoftware.com/predix>
--   <https://www.gesoftware.com/sites/default/files/the-industrial-internet/index.html>
--   <https://developer.cisco.com/site/eiot/discover/overview/>
+-   ~~<https://www.gesoftware.com/minds-and-machines>~~
+-   ~~<https://www.gesoftware.com/predix>~~
+-   ~~<https://www.gesoftware.com/sites/default/files/the-industrial-internet/index.html>~~
+-   ~~<https://developer.cisco.com/site/eiot/discover/overview/>~~
