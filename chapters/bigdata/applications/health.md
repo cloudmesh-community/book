@@ -166,9 +166,9 @@ trees.
 
 -   <https://wiki.nci.nih.gov/display/CIP/CIP+Survey+of+Biomedical+Imaging+Archives>
 -   [http://grids.ucs.indiana.edu/ptliupages/publications/Where\\%20does\\%20all\\%20the\\%20data\\%20come\\%20from\\%20v7.pdf](http://grids.ucs.indiana.edu/ptliupages/publications/Where\%20does\%20all\%20the\%20data\%20come\%20from\%20v7.pdf)
--   [http://www.ieee-icsc.org/ICSC2010/Tony\\%20Hey\\%20-\\%2020100923.pdf](http://www.ieee-icsc.org/ICSC2010/Tony\%20Hey\%20-\%2020100923.pdf)(not exist)
+-   ~~[http://www.ieee-icsc.org/ICSC2010/Tony\\%20Hey\\%20-\\%2020100923.pdf](http://www.ieee-icsc.org/ICSC2010/Tony\%20Hey\%20-\%2020100923.pdf)~~(this link does not exist any longer)
 -   <http://quantifiedself.com/larry-smarr/>
--   <http://www.ebi.ac.uk/Information/Brochures/>
+-   [@www-ebi] <http://www.ebi.ac.uk/Information/Brochures/>
 -   <http://www.kpcb.com/internet-trends>
 -   <http://www.slideshare.net/drsteventucker/wearable-health-fitness-trackers-and-the-quantified-self>
 -   <http://www.siam.org/meetings/sdm13/sun.pdf>
@@ -177,14 +177,14 @@ trees.
 -   <http://www.accenture.com/SiteCollectionDocuments/PDF/Accenture-Industrial-Internet-Changing-Competitive-Landscape-Industries.pdf>
 -   <http://www.slideshare.net/schappy/how-realtime-analysis-turns-big-medical-data-into-precision-medicine>
 -   <http://medcitynews.com/2013/03/the-body-in-bytes-medical-images-as-a-source-of-healthcare-big-data-infographic/>
--   <http://healthinformatics.wikispaces.com/file/view/cloud_computing.ppt> (not exist)
+-   ~~<http://healthinformatics.wikispaces.com/file/view/cloud_computing.ppt>~~ (this link does not exist any longer)
 -   <https://www.mckinsey.com/~/media/mckinsey/industries/healthcare%20systems%20and%20services/our%20insights/the%20big%20data%20revolution%20in%20us%20health%20care/the_big_data_revolution_in_healthcare.ashx>
--   <https://partner.microsoft.com/download/global/40193764> (not exist)
+-   ~~<https://partner.microsoft.com/download/global/40193764>~~ (this link does not exist any longer)
 -   <https://ec.europa.eu/eip/ageing/file/353/download_en?token=8gECi1RO>
 -   <http://www.kpcb.com/internet-trends>
 -   <http://www.liveathos.com/apparel/app>
 -   <http://debategraph.org/Poster.aspx?aID=77>
--   <http://www.oerc.ox.ac.uk/downloads/presentations-from-events/microsoftworkshop/gannon> (not exist)
--   <http://www.delsall.org> (not exist)
+-   ~~<http://www.oerc.ox.ac.uk/downloads/presentations-from-events/microsoftworkshop/gannon>~~(this link does not exist any longer)
+-   ~~<http://www.delsall.org>~~ (this link does not exist any longer)
 -   <http://salsahpc.indiana.edu/millionseq/mina/16SrRNA_index.html>
 -   <http://www.geatbx.com/docu/fcnindex-01.html>
