@@ -285,6 +285,29 @@ following Figure.
 
 Source: <https://downloads.cloudsecurityalliance.org/assets/research/security-guidance/csaguide.v3.0.pdf>
 
+### Cloud Security Alliance Reference Architecture
+
+The Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption. Based on the following guiding prinicples they published the following reference Architecture:
+
+* Define protections that enable trust in the cloud.
+* Develop cross-platform capabilities and patterns for proprietary and open-source providers.
+* Will facilitate trusted and efficient access, administration and resiliency to the customer/consumer.
+* Provide direction to secure information that is protected by regulations.
+* The Architecture must facilitate proper and efficient identification, authentication, authorization,
+administration and auditability.
+* Centralize security policy, maintenance operation and oversight functions.
+* Access to information must be secure yet still easy to obtain.
+* Delegate or Federate access control where appropriate.
+* Must be easy to adopt and consume, supporting the design of security patterns
+* The Architecture must be elastic, flexible and resilient supporting multi-tenant, multi-landlord platforms
+* The architecture must address and support multiple levels of protection, including network, operating
+system, and application security needs.
+
+![Cloud Security Alliance Reference Architecture](images/CSA_Architecture.PNG)
+Source: <https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf>
+
+
+
 ## Multicloud Architectures
 
 One of the issues we see today is that it is unrealistic to assume
