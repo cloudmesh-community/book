@@ -285,7 +285,7 @@ following Figure.
 
 Source: <https://downloads.cloudsecurityalliance.org/assets/research/security-guidance/csaguide.v3.0.pdf>
 
-### Cloud Security Alliance Reference Architecture
+## Cloud Security Alliance Reference Architecture
 
 The Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption. Based on the following guiding prinicples they published the following reference Architecture:
 
@@ -303,7 +303,7 @@ administration and auditability.
 * The architecture must address and support multiple levels of protection, including network, operating
 system, and application security needs.
 
-![Cloud Security Alliance Reference Architecture](images/CSA_Architecture.PNG)
+![Cloud Security Alliance Reference Architecture](images/csa-architecture.png)
 Source: <https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf>
 
 
