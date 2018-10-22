@@ -278,33 +278,45 @@ Other examples for product lists such as the one from Azure are provided in the 
 ## NIST Cloud Architecture
 
 In the introduction we have extensively discussed the NIST cloud
-architecture. A Nice visual representation is provided in the
-following Figure.
+architecture. A Nice visual representation is provided in +@fig:nist-cloud-arch.
 
-![Visual representation of the NIST Cloud Architecture](images/nist-vis-arch.png)
+![Visual representation of the NIST Cloud Architecture [Source](https://downloads.cloudsecurityalliance.org/assets/research/security-guidance/csaguide.v3.0.pdf)](images/nist-vis-arch.png){#fig:nist-cloud-arch}
 
-Source: <https://downloads.cloudsecurityalliance.org/assets/research/security-guidance/csaguide.v3.0.pdf>
+
 
 ## Cloud Security Alliance Reference Architecture
 
-The Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption. Based on the following guiding prinicples they published the following reference Architecture:
+The Cloud Security Alliance (CSA) is a nonprofit organization that
+provides a variety of security resources to institutions including
+guidelines, education and best practices for adoption. Based on the
+following guiding prinicples they published the following reference
+architecture:
 
 * Define protections that enable trust in the cloud.
-* Develop cross-platform capabilities and patterns for proprietary and open-source providers.
-* Will facilitate trusted and efficient access, administration and resiliency to the customer/consumer.
-* Provide direction to secure information that is protected by regulations.
-* The Architecture must facilitate proper and efficient identification, authentication, authorization,
-administration and auditability.
+* Develop cross-platform capabilities and patterns for proprietary and
+  open-source providers.
+* Will facilitate trusted and efficient access, administration and
+  resiliency to the customer/consumer.
+* Provide direction to secure information that is protected by
+  regulations.
+* The Architecture must facilitate proper and efficient
+  identification, authentication, authorization, administration and
+  auditability.
 * Centralize security policy, maintenance operation and oversight functions.
 * Access to information must be secure yet still easy to obtain.
 * Delegate or Federate access control where appropriate.
-* Must be easy to adopt and consume, supporting the design of security patterns
-* The Architecture must be elastic, flexible and resilient supporting multi-tenant, multi-landlord platforms
-* The architecture must address and support multiple levels of protection, including network, operating
-system, and application security needs.
+* Must be easy to adopt and consume, supporting the design of security
+  patterns
+* The Architecture must be elastic, flexible and resilient supporting
+  multi-tenant, multi-landlord platforms
+* The architecture must address and support multiple levels of
+  protection, including network, operating system, and application
+  security needs.
 
-![Cloud Security Alliance Reference Architecture](images/csa-architecture.png)
-Source: <https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf>
+An overview of the architecture is shown in +@#fig:csa-arch.
+
+![Cloud Security Alliance Reference Architecture [Source](https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf)](images/csa-architecture.png){#fig:csa-arch}
+
 
 
 
@@ -342,9 +354,9 @@ integrad=ted through DevOps that can be hosted on the IaaS. Examples
 are Hadoop, and Spark The services are exposed through a client API
 hiding much of the internals to the user. A portal and application
 services have successfully demonstrated the feasibility of this
-approach.
+approach (see +@fig:cloudmesh-arch).
 
-![](images/arch-cloudmesh.png)
+![](images/arch-cloudmesh.png){#fig:cloudmesh-arch}
 
 Within the hour e516 class we will be developing a modern version of
 cloudmesh from the ground up by only using python 3 as implementation
