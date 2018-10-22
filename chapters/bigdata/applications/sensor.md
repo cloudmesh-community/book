@@ -101,10 +101,10 @@ autonomous local power units where good use is made of waste heat.
 \TODO{These resources have not all been checked to see if they still
   exist this is currently in progress}
 
--   <http://www.accenture.com/SiteCollectionDocuments/PDF/Accenture-Industrial-Internet-Changing-Competitive-Landscape-Industries.pdf>
--   <http://www.gesoftware.com/ge-predictivity-infographic>
--   <http://www.getransportation.com/railconnect360/rail-landscape>
--   <http://www.gesoftware.com/sites/default/files/GE-Software-Modernizing-Machine-to-Machine-Interactions.pdf>
+-   <http://www.accenture.com/SiteCollectionDocuments/PDF/Accenture-Industrial-Internet-Changing-Competitive-Landscape-Industries.pdf> [@www-accenture-insight-industrial]
+-   <http://www.gesoftware.com/ge-predictivity-infographic> [@www-predix-ge-Industrial]
+-   <http://www.getransportation.com/railconnect360/rail-landscape> [@www-getransportation-digital]
+-   <http://www.gesoftware.com/sites/default/files/GE-Software-Modernizing-Machine-to-Machine-Interactions.pdf> [@GESoftwa43]
 
     resources below do not exsit:
 -   ~~<https://www.gesoftware.com/minds-and-machines>~~
