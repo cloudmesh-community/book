@@ -139,7 +139,7 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <http://autoscout.adsc.illinois.edu/publications/football-trajectory-dataset/>
 -   <http://www.sloansportsconference.com/wp-content/uploads/2012/02/Goldsberry_Sloan_Submission.pdf>
 -   <http://gamesetmap.com/>
--   <http://www.trakus.com/technology.asp#tNetText>
+-   ~~<http://www.trakus.com/technology.asp#tNetText>~~
 -   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling>
 -   <http://www.sloansportsconference.com/>
 -   <http://sabr.org/>
