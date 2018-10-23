@@ -1,11 +1,11 @@
-# Ubuntu on a USB stick
+# Ubuntu on an USB stick
 
 In case you cannot install any programs on your development computer
 most often the easiest way is to use the hardware but boot the OS from
 a USB stick. Make sure you have access to the Bios or your system to
 actually boot from a USB device before you start this activity.
 
-## Ubuntu on a USB stick for macOS via Command Line
+## Ubuntu on an USB stick for macOS via Command Line
 
 The easiest way to create an ubuntu distribution that can be booted
 from an USB stick is done via command line. The original Web page for
@@ -164,7 +164,7 @@ You will likely see some warnings with number 95 which you can ignore.
 Please report your experience and we update this page based on your
 feedback.
 
-## Ubuntu on a USB stick for macOS via GUI
+## Ubuntu on an USB stick for macOS via GUI
 
 An alternative to the Command Line solution to create an USB stick with
 bootable Ubuntu on is to use the macOS GUI. This method is more complex
@@ -248,7 +248,7 @@ After the write process has completed, macOS may inform you that \*The
 disk you inserted was not readable by this computer\*. Do not select
 Initialise. Instead, select Eject and remove the USB device.
 
-## Ubuntu on a USB stick for Windows 10 :o: :question:
+## Ubuntu on an USB stick for Windows 10 :o: :question:
 
 See exercise Development.Server.1
 
