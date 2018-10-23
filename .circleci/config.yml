@@ -22,10 +22,13 @@ jobs:
           command: pandoc --version
       - run:
           name: requirements.txt
-          command: pip install -r requirements.txt
+          command: pip install -r requirements.txt          
       - run:
           name: check cloud
           command: cd cloud && make new && cd ..
       - run:
           name: check cloud
           command: cd big-data-applications && make
+      - store_artifacts:
+          path: dest/refrences.bib
+          destination: refernces.bib
