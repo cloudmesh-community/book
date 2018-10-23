@@ -296,12 +296,12 @@ and value of heuristic algorithms.
 
 ### Resources
 
--   <http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial>
--   <http://www.ifi.uzh.ch/ce/teaching/spring2012/16-Recommender-Systems_Slides.pdf>
--   <https://www.kaggle.com/>
--   <http://www.ics.uci.edu/~welling/teaching/CS77Bwinter12/CS77B_w12.html>
+-   <http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial> [@www-slideshare-building]
+-   <http://www.ifi.uzh.ch/ce/teaching/spring2012/16-Recommender-Systems_Slides.pdf> [@www-ifi-teaching]
+-   <https://www.kaggle.com/> [@www-kaggle]
+-   <http://www.ics.uci.edu/~welling/teaching/CS77Bwinter12/CS77B_w12.html> [@www-ics-uci-welling]
 -   [Jeff
-    Hammerbacher](https://berkeleydatascience.files.wordpress.com/2012/01/20120117berkeley1.pdf)
--   <http://www.techworld.com/news/apps/netflix-foretells-house-of-cards-success-with-cassandra-big-data-engine-3437514/>
--   <https://en.wikipedia.org/wiki/A/B_testing>
--   <http://www.infoq.com/presentations/Netflix-Architecture>
+    Hammerbacher](https://berkeleydatascience.files.wordpress.com/2012/01/20120117berkeley1.pdf)[@20120117berkeley1]
+-   <http://www.techworld.com/news/apps/netflix-foretells-house-of-cards-success-with-cassandra-big-data-engine-3437514/> [@www-techworld-netflix]
+-   <https://en.wikipedia.org/wiki/A/B_testing> [@wikipedia-ABtesting]
+-   <http://www.infoq.com/presentations/Netflix-Architecture> [@www-infoq-architec]
