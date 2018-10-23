@@ -21,9 +21,6 @@ jobs:
           name: pandoc version
           command: pandoc --version
       - run:
-          name: git pull
-          command: git pull
-      - run:
           name: requirements.txt
           command: pip install -r requirements.txt
       - run:

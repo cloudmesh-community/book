@@ -67,9 +67,9 @@ background like cosmic rays.
 
 ### Resources
 
--   <http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf>
--   <http://www.sciencedirect.com/science/article/pii/S037026931200857X>
--   <http://www.nature.com/news/specials/lhc/interactive.html>
+-   <http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf> [@fox2011does]
+-   <http://www.sciencedirect.com/science/article/pii/S037026931200857X> [@aad2012observation]
+-   <http://www.nature.com/news/specials/lhc/interactive.html> 
 
 Looking for Higgs Particles: Python Event Counting for Signal and
 Background (Part 2)
@@ -117,9 +117,9 @@ measurement resolution for Higgs.
 
 -   Python for Data Analysis: Agile Tools for Real World Data By Wes
     McKinney, Publisher: O'Reilly Media, Released: October 2012,
-    Pages: 472.
--   <http://jwork.org/scavis/api/>
--   <https://en.wikipedia.org/wiki/DataMelt>
+    Pages: 472. [@mckinney-python]
+-   <http://jwork.org/scavis/api/> [@jwork-api]
+-   <https://en.wikipedia.org/wiki/DataMelt> [@wikipedia-datamelt]
 
 ### Random Variables, Physics and Normal Distributions
 
@@ -184,9 +184,9 @@ answers.
 
 ### Resources
 
--   <http://indico.cern.ch/event/20453/session/6/contribution/15?materialId=slides>
--   <http://www.atlas.ch/photos/events.html>
--   <https://cms.cern/>
+-   <http://indico.cern.ch/event/20453/session/6/contribution/15?materialId=slides> 
+-   ~~<http://www.atlas.ch/photos/events.html>~~ (this link is outdated)
+-   <https://cms.cern/> [@cms]
 
 ### Random Numbers, Distributions and Central Limit Theorem
 

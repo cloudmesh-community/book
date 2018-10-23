@@ -129,17 +129,17 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 
 \TODO{These resources have not all been checked to see if they still
   exist this is currently in progress}
--   <http://www.sloansportsconference.com/?page_id=481&sort_cate=Research%20Paper>
+-   ~~<http://www.sloansportsconference.com/?page_id=481&sort_cate=Research%20Paper>~~
 -   <http://www.slideshare.net/Tricon_Infotech/big-data-for-big-sports>
 -   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling>
--   <http://www.liveathos.com/apparel/app>
+-   ~~<http://www.liveathos.com/apparel/app>~~
 -   <http://www.slideshare.net/elew/sport-analytics-innovation>
 -   <http://www.wired.com/2013/02/catapault-smartball/>
 -   <http://www.sloansportsconference.com/wp-content/uploads/2014/06/Automated_Playbook_Generation.pdf>
 -   <http://autoscout.adsc.illinois.edu/publications/football-trajectory-dataset/>
 -   <http://www.sloansportsconference.com/wp-content/uploads/2012/02/Goldsberry_Sloan_Submission.pdf>
 -   <http://gamesetmap.com/>
--   <http://www.trakus.com/technology.asp#tNetText>
+-   ~~<http://www.trakus.com/technology.asp#tNetText>~~
 -   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling>
 -   <http://www.sloansportsconference.com/>
 -   <http://sabr.org/>
@@ -171,7 +171,7 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <https://www.youtube.com/watch?v=YkjtnuNmK74>
 
     resources below do not exsit:
--   <http://www.sportvision.com/baseball>
--   <http://www.sportvision.com/media/pitchfx-how-it-works>
--   <http://www.sportvision.com/baseball/fieldfx>
--   <http://www.sportvision.com/baseball/hitfx>
+-   ~~<http://www.sportvision.com/baseball>~~
+-   ~~<http://www.sportvision.com/media/pitchfx-how-it-works>~~
+-   ~~<http://www.sportvision.com/baseball/fieldfx>~~
+-   ~~<http://www.sportvision.com/baseball/hitfx>~~
