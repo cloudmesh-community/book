@@ -22,7 +22,10 @@ jobs:
           command: pandoc --version
       - run:
           name: requirements.txt
-          command: pip install -r requirements.txt          
+          command: pip install -r requirements.txt
+      - run:
+          name: changed files
+          command: git diff-tree --no-commit-id --name-only -r HEAD > changed_files.log && cat changed_files.log
       - run:
           name: check cloud
           command: cd cloud && make new && cd ..
