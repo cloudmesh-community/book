@@ -157,7 +157,6 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <http://www.baseball-reference.com/about/war_explained_pitch.shtml>
 -   <http://www.fangraphs.com/leaders.aspx?pos=all&stats=bat&lg=all&qual=y&type=8&season=2014&month=0&season1=1871&ind=0>
 -   <http://battingleadoff.com/2014/01/08/comparing-the-three-war-measures-part-ii/>
--   <http://battingleadoff.com/2014/01/08/comparing-the-three-war-measures-part-ii/>
 -   <http://en.wikipedia.org/wiki/Coefficient_of_determination>
 -   <http://www.sloansportsconference.com/wp-content/uploads/2014/02/2014_SSAC_Data-driven-Method-for-In-game-Decision-Making.pdf>
 -   <https://courses.edx.org/courses/BUx/SABR101x/2T2014/courseware/10e616fc7649469ab4457ae18df92b20/>
