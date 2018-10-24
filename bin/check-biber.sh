@@ -10,5 +10,5 @@ with open(changedfiles, "r") as f:
 for file in files:    
     if ".bib" in file:
         print ("B", file)
-        os.system ("biber  -V --tool {file} | fgrep WARN".format(file=file)
+        os.system ("biber  -V --tool {file} | fgrep WARN".format(file=file))
 
