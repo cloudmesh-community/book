@@ -37,7 +37,7 @@ jobs:
           command: cd big-data-applications && make
       - run:
           name: add line numbers to references.bib
-          command: cat -n big-data-applications/references.bib > references.bib
+          command: cat -n big-data-applications/dest/references.bib > references.bib
       - store_artifacts:
           path: references.bib
           destination: references.bib
