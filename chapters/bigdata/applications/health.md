@@ -168,7 +168,7 @@ trees.
 -   [http://grids.ucs.indiana.edu/ptliupages/publications/Where\\%20does\\%20all\\%20the\\%20data\\%20come\\%20from\\%20v7.pdf](http://grids.ucs.indiana.edu/ptliupages/publications/Where\%20does\%20all\%20the\%20data\%20come\%20from\%20v7.pdf) [@fox2011does]
 -   ~~[http://www.ieee-icsc.org/ICSC2010/Tony\\%20Hey\\%20-\\%2020100923.pdf](http://www.ieee-icsc.org/ICSC2010/Tony\%20Hey\%20-\%2020100923.pdf)~~(this link does not exist any longer)
 -   <http://quantifiedself.com/larry-smarr/> [@{smarr13self]
--   [@www-ebi] <http://www.ebi.ac.uk/Information/Brochures/> [@]
+-   <http://www.ebi.ac.uk/Information/Brochures/> [@www-ebi]
 -   <http://www.kpcb.com/internet-trends> [@www-kleinerperkins-internet-trends]
 -   <http://www.slideshare.net/drsteventucker/wearable-health-fitness-trackers-and-the-quantified-self> [@www-slideshare-wearable-quantified-self]
 -   <http://www.siam.org/meetings/sdm13/sun.pdf> [@archive--big-data-analytics-healthcare]
@@ -185,5 +185,5 @@ trees.
 -   <http://debategraph.org/Poster.aspx?aID=77> [@debategraph-poster]
 -   ~~<http://www.oerc.ox.ac.uk/downloads/presentations-from-events/microsoftworkshop/gannon>~~(this link does not exist any longer)
 -   ~~<http://www.delsall.org>~~ (this link does not exist any longer)
--   <http://salsahpc.indiana.edu/millionseq/mina/16SrRNA_index.html> [@]
--   <http://www.geatbx.com/docu/fcnindex-01.html> [@]
+-   <http://salsahpc.indiana.edu/millionseq/mina/16SrRNA_index.html> 
+-   <http://www.geatbx.com/docu/fcnindex-01.html> 
