@@ -35,6 +35,9 @@ jobs:
       - run:
           name: check bigdata epub
           command: cd big-data-applications && make
+      - run:
+          name: add line numbers to references.bib
+          command: cat -n big-data-applications/references.bib > references.bib
       - store_artifacts:
-          path: big-data-applications/dest/references.bib
+          path: references.bib
           destination: references.bib
