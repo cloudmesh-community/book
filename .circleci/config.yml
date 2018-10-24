@@ -26,7 +26,8 @@ jobs:
       - run:
           name: changed files
           command: git diff-tree --no-commit-id --name-only -r HEAD > changed_files.log && cat changed_files.log
-      - run: name: biber
+      - run:
+          name: biber
           command: bin/check-biber.sh changed_files.log
       - run:
           name: check cloud
