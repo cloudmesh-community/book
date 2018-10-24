@@ -185,5 +185,5 @@ trees.
 -   <http://debategraph.org/Poster.aspx?aID=77> [@debategraph-poster]
 -   ~~<http://www.oerc.ox.ac.uk/downloads/presentations-from-events/microsoftworkshop/gannon>~~(this link does not exist any longer)
 -   ~~<http://www.delsall.org>~~ (this link does not exist any longer)
--   <http://salsahpc.indiana.edu/millionseq/mina/16SrRNA_index.html> [@www-salsappc-millionseq]
+-   <http://salsahpc.indiana.edu/millionseq/mina/16SrRNA_index.html> [@www-salsahpc-millionseq]
 -   <http://www.geatbx.com/docu/fcnindex-01.html> [@www-geatbx-parametric-optimization]
