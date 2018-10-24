@@ -129,46 +129,45 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 
 \TODO{These resources have not all been checked to see if they still
   exist this is currently in progress}
--   ~~<http://www.sloansportsconference.com/?page_id=481&sort_cate=Research%20Paper>~~
--   <http://www.slideshare.net/Tricon_Infotech/big-data-for-big-sports>
--   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling>
--   ~~<http://www.liveathos.com/apparel/app>~~
--   <http://www.slideshare.net/elew/sport-analytics-innovation>
--   <http://www.wired.com/2013/02/catapault-smartball/>
--   <http://www.sloansportsconference.com/wp-content/uploads/2014/06/Automated_Playbook_Generation.pdf>
--   <http://autoscout.adsc.illinois.edu/publications/football-trajectory-dataset/>
--   <http://www.sloansportsconference.com/wp-content/uploads/2012/02/Goldsberry_Sloan_Submission.pdf>
--   <http://gamesetmap.com/>
--   ~~<http://www.trakus.com/technology.asp#tNetText>~~
--   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling>
--   <http://www.sloansportsconference.com/>
--   <http://sabr.org/>
--   <http://en.wikipedia.org/wiki/Sabermetrics>
--   <http://en.wikipedia.org/wiki/Baseball_statistics>
--   <http://m.mlb.com/news/article/68514514/mlbam-introduces-new-way-to-analyze-every-play>
--   <http://www.fangraphs.com/library/offense/offensive-statistics-list/>
--   <http://en.wikipedia.org/wiki/Component_ERA>
--   <http://www.fangraphs.com/library/pitching/fip/>
--   <http://en.wikipedia.org/wiki/Wins_Above_Replacement>
--   <http://www.fangraphs.com/library/misc/war/>
--   <http://www.baseball-reference.com/about/war_explained.shtml>
--   <http://www.baseball-reference.com/about/war_explained_comparison.shtml>
--   <http://www.baseball-reference.com/about/war_explained_position.shtml>
--   <http://www.baseball-reference.com/about/war_explained_pitch.shtml>
--   <http://www.fangraphs.com/leaders.aspx?pos=all&stats=bat&lg=all&qual=y&type=8&season=2014&month=0&season1=1871&ind=0>
--   <http://battingleadoff.com/2014/01/08/comparing-the-three-war-measures-part-ii/>
--   <http://battingleadoff.com/2014/01/08/comparing-the-three-war-measures-part-ii/>
--   <http://en.wikipedia.org/wiki/Coefficient_of_determination>
--   <http://www.sloansportsconference.com/wp-content/uploads/2014/02/2014_SSAC_Data-driven-Method-for-In-game-Decision-Making.pdf>
--   <https://courses.edx.org/courses/BUx/SABR101x/2T2014/courseware/10e616fc7649469ab4457ae18df92b20/>
--   <http://vincegennaro.mlblogs.com/>
--   <https://www.youtube.com/watch?v=H-kx-x_d0Mk>
--   <http://www.baseballprospectus.com/article.php?articleid=13109>
--   <http://baseball.physics.illinois.edu/FastPFXGuide.pdf>
--   <http://baseball.physics.illinois.edu/FieldFX-TDR-GregR.pdf>
--   <http://regressing.deadspin.com/mlb-announces-revolutionary-new-fielding-tracking-syste-1534200504>
--   <http://grantland.com/the-triangle/mlb-advanced-media-play-tracking-bob-bowman-interview/>
--   <https://www.youtube.com/watch?v=YkjtnuNmK74>
+-   ~~<http://www.sloansportsconference.com/?page_id=481&sort_cate=Research%20Paper>~~ 
+-   <http://www.slideshare.net/Tricon_Infotech/big-data-for-big-sports> [@www-slideshare-tricon-infotech]
+-   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling> [@www-slideshare-sports]
+-   ~~<http://www.liveathos.com/apparel/app>~~ 
+-   <http://www.slideshare.net/elew/sport-analytics-innovation> [@www-slideshare-elew-sport-analytics]
+-   <http://www.wired.com/2013/02/catapault-smartball/> [@www-wired-smartball]
+-   <http://www.sloansportsconference.com/wp-content/uploads/2014/06/Automated_Playbook_Generation.pdf> [@www-sloansportsconference-automated-playbook]
+-   <http://autoscout.adsc.illinois.edu/publications/football-trajectory-dataset/> [@www-autoscout-illinois-football-trajectory]
+-   <http://www.sloansportsconference.com/wp-content/uploads/2012/02/Goldsberry_Sloan_Submission.pdf> [@sloansportconference-goldsberry]
+-   <http://gamesetmap.com/> [@gamesetmap]
+-   ~~<http://www.trakus.com/technology.asp#tNetText>~~ 
+-   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling> [@www-slideshare-sports-datapowered]
+-   <http://www.sloansportsconference.com/> [@www-sloansportsconferences]
+-   <http://sabr.org/> [@www-sabr]
+-   <http://en.wikipedia.org/wiki/Sabermetrics> [@wikipedia-Sabermetrics]
+-   <http://en.wikipedia.org/wiki/Baseball_statistics> [@www-wikipedia-baseball-statistics]
+-   <http://m.mlb.com/news/article/68514514/mlbam-introduces-new-way-to-analyze-every-play> [@www-mlb-mlbam-new-way-play]
+-   <http://www.fangraphs.com/library/offense/offensive-statistics-list/> [@www-fangraphs-offensive-statistics]
+-   <http://en.wikipedia.org/wiki/Component_ERA> [@www-wiki-component-era]
+-   <http://www.fangraphs.com/library/pitching/fip/> [@www-fangraphs-pitching-fip]
+-   <http://en.wikipedia.org/wiki/Wins_Above_Replacement> [@www-wiki-wins-above-replacement]
+-   <http://www.fangraphs.com/library/misc/war/> [@www-fangraphs-library-war]
+-   <http://www.baseball-reference.com/about/war_explained.shtml> [@www-baseball-references-war-explained]
+-   <http://www.baseball-reference.com/about/war_explained_comparison.shtml> [@www-baseball-references-war-explained-comparison]
+-   <http://www.baseball-reference.com/about/war_explained_position.shtml> [@www-baseball-reference-war-explained-position]
+-   <http://www.baseball-reference.com/about/war_explained_pitch.shtml> [@www-baseball-reference-war-explained-pitch]
+-   <http://www.fangraphs.com/leaders.aspx?pos=all&stats=bat&lg=all&qual=y&type=8&season=2014&month=0&season1=1871&ind=0> [@www-fangraphs-leaders-pose-qual]
+-   <http://battingleadoff.com/2014/01/08/comparing-the-three-war-measures-part-ii/> [@battingleadoff-baseball-player]
+-   <http://en.wikipedia.org/wiki/Coefficient_of_determination> [@www-wiki-coefficient-of-determination]
+-   <http://www.sloansportsconference.com/wp-content/uploads/2014/02/2014_SSAC_Data-driven-Method-for-In-game-Decision-Making.pdf> [@ganeshapillai2014data]
+-   <https://courses.edx.org/courses/BUx/SABR101x/2T2014/courseware/10e616fc7649469ab4457ae18df92b20/> 
+-   <http://vincegennaro.mlblogs.com/> [@www-vincegennaro-mlblogs]
+-   <https://www.youtube.com/watch?v=H-kx-x_d0Mk> [@www-youtube-watch]
+-   <http://www.baseballprospectus.com/article.php?articleid=13109> [@www-baseball-prospectus-spinning-yarn]
+-   <http://baseball.physics.illinois.edu/FastPFXGuide.pdf> [@baseball-physics-PITCHf]
+-   <http://baseball.physics.illinois.edu/FieldFX-TDR-GregR.pdf> [@baseball-physics-fieldfx]
+-   <http://regressing.deadspin.com/mlb-announces-revolutionary-new-fielding-tracking-syste-1534200504> [@www-deadspin-field-tracking-syste]
+-   <http://grantland.com/the-triangle/mlb-advanced-media-play-tracking-bob-bowman-interview/> [@grantland-mlb-bob-bowman]
+-   <https://www.youtube.com/watch?v=YkjtnuNmK74> [@www-youtube-science-home-run]
 
     resources below do not exsit:
 -   ~~<http://www.sportvision.com/baseball>~~
