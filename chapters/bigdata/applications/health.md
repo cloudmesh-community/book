@@ -176,7 +176,7 @@ trees.
 -   <http://www.slideshare.net/GSW_Worldwide/2015-health-trends> [@www-slideshare-2015-health trends]
 -   <http://www.accenture.com/SiteCollectionDocuments/PDF/Accenture-Industrial-Internet-Changing-Competitive-Landscape-Industries.pdf> [@www-accenture-insight-industrial-internet]
 -   <http://www.slideshare.net/schappy/how-realtime-analysis-turns-big-medical-data-into-precision-medicine> [@www-slideshare-big-medical-data-medicine]
--   <http://medcitynews.com/2013/03/the-body-in-bytes-medical-images-as-a-source-of-healthcare-big-data-infographic/> [@{medcitynews-bytes-medical-images]
+-   <http://medcitynews.com/2013/03/the-body-in-bytes-medical-images-as-a-source-of-healthcare-big-data-infographic/> [@medcitynews-bytes-medical-images]
 -   ~~<http://healthinformatics.wikispaces.com/file/view/cloud_computing.ppt>~~ (this link does not exist any longer)
 -   <https://www.mckinsey.com/~/media/mckinsey/industries/healthcare%20systems%20and%20services/our%20insights/the%20big%20data%20revolution%20in%20us%20health%20care/the_big_data_revolution_in_healthcare.ashx> [@www-mckinsey-industries-healthcare]
 -   ~~<https://partner.microsoft.com/download/global/40193764>~~ (this link does not exist any longer)
