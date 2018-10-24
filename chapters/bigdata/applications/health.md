@@ -168,7 +168,7 @@ trees.
 -   [http://grids.ucs.indiana.edu/ptliupages/publications/Where\\%20does\\%20all\\%20the\\%20data\\%20come\\%20from\\%20v7.pdf](http://grids.ucs.indiana.edu/ptliupages/publications/Where\%20does\%20all\%20the\%20data\%20come\%20from\%20v7.pdf) [@fox2011does]
 -   ~~[http://www.ieee-icsc.org/ICSC2010/Tony\\%20Hey\\%20-\\%2020100923.pdf](http://www.ieee-icsc.org/ICSC2010/Tony\%20Hey\%20-\%2020100923.pdf)~~(this link does not exist any longer)
 -   <http://quantifiedself.com/larry-smarr/> [@smarr13self]
--   <http://www.ebi.ac.uk/Information/Brochures/> [@www-ebi]
+-   <http://www.ebi.ac.uk/Information/Brochures/> [@www-ebi-aboutus]
 -   <http://www.kpcb.com/internet-trends> [@www-kleinerperkins-internet-trends]
 -   <http://www.slideshare.net/drsteventucker/wearable-health-fitness-trackers-and-the-quantified-self> [@www-slideshare-wearable-quantified-self]
 -   <http://www.siam.org/meetings/sdm13/sun.pdf> [@archive--big-data-analytics-healthcare]
