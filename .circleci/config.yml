@@ -30,11 +30,11 @@ jobs:
           name: biber
           command: bin/check-biber.sh changed_files.log
       - run:
-          name: check cloud
+          name: check cloud epub
           command: cd cloud && make new && cd ..
       - run:
-          name: check cloud
+          name: check bigdata epub
           command: cd big-data-applications && make
       - store_artifacts:
-          path: dest/references.bib
+          path: big-data-applications/dest/references.bib
           destination: references.bib
