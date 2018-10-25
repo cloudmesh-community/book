@@ -1,10 +1,11 @@
 # -*- makefile -*-
 
-OS=$(shell ../bin/sysinfo.py)
+OS=$(shell ..phin/bin/sysinfo.py)
 DOCKER=$(shell ../bin/isdocker.py)
 IMAGE_DIRS=$(shell ../bin/find-image-dirs.py)
 
 #MARKUPALL=../bin/markup-all.py
+
 
 #
 # removing mermaid filter from linux as we do not yet know how to use it in docker
@@ -97,6 +98,7 @@ prepare: generateimages version authors destination chapterlist references todo 
 bibtex: bibtex-duplicate bibtex-cat bibtex-error bibtex-datamodel
 
 bibtex-issues:
+    cd dest: rm -f *.blg *_bibertool.bib
 	cd dest; cat -n references.bib
 	cd dest; biber -V --tool references.bib | fgrep -v Datamodel | fgrep -v INFO | fgrep -v Duplicate | fgrep -v Overwriting | fgrep -v ISBN
 
