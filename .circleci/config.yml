@@ -30,6 +30,9 @@ jobs:
           name: biber
           command: bin/check-biber.sh changed_files.log
       - run:
+          name: bibtex issues
+          command: cd cloud; make bibtex-issues
+      - run:
           name: check cloud epub
           command: cd cloud && make new && cd ..
       - run:
