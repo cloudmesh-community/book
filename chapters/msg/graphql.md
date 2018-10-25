@@ -621,9 +621,17 @@ In an application we need to validate the user input. If it is invalid
 we can use the `GraphQLError` class or Python exceptions to raise
 validation errors.
 
-:o: There seems to be an example missing here descripbing how to use
-the GraphQLError inmore detail, or the explanation above needs
-clarification :hand: fa18-516-21 working on explanation
+Let us take an example of mutation query. We want to validate whether 
+repository name is empty or not. We can use `GraphQLError` to raise 
+validation error from our mutation function like this
+
+```python
+def mutate(self, info, url, name, full_name, description):
+    if not name:
+        raise GraphQLError('Repository name is required')
+    repository = Repository(url=url, name=name, full_name=full_name, description=description)
+    repository.save()
+```
 
 ## GraphQL in Python
 
