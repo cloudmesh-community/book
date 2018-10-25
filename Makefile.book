@@ -1,6 +1,6 @@
 # -*- makefile -*-
 
-OS=$(shell ..phin/bin/sysinfo.py)
+OS=$(shell ..//bin/sysinfo.py)
 DOCKER=$(shell ../bin/isdocker.py)
 IMAGE_DIRS=$(shell ../bin/find-image-dirs.py)
 
