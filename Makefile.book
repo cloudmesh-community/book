@@ -104,6 +104,8 @@ endif
 ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md
 endif
+	biber -V --tool references.bib | fgrep ERROR
+  biber -V --tool references.bib | fgrep WARN
 	make -f Makefile index
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
