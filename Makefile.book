@@ -94,7 +94,29 @@ prepare: generateimages version authors destination chapterlist references todo 
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
 	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
 
+bibtex: bibtex-duplicate bibtex-cat bibtex-error bibtex-datamodel
 
+bibtex-issues:
+	cd dest; cat -n references.bib
+	cd dest; biber -V --tool references.bib | fgrep -v Datamodel | fgrep -v INFO | fgrep -v Duplicate | fgrep -v Overwriting | fgrep -v ISBN
+
+bibtex-duplicate: refrerences
+	cd dest; biber -V --tool references.bib | fgrep Duplicate
+
+bibtex-cat:
+	cd dest; cat -n references.bib
+
+bibtex-ERROR:
+	cd dest; biber -V --tool references.bib | fgrep ERROR
+
+bibtex-datamodel:
+	cd dest; biber -V --tool references.bib | fgrep Datamodel
+
+bibtex-other:
+	cd dest; biber -V --tool references.bib | fgrep -v Datamodel
+
+bibtex-junk:
+	cd dest; biber -V --tool references.bib | fgrep junk
 
 epub: prepare
 	cd dest; touch chapters/index.md
@@ -104,8 +126,6 @@ endif
 ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md
 endif
-	biber -V --tool references.bib | fgrep ERROR
-  biber -V --tool references.bib | fgrep WARN
 	make -f Makefile index
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 
