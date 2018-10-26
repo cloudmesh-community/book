@@ -163,7 +163,7 @@ However, starting another instance of the docker image with this command outputt
 command: /bin/sh -c "exec /init.sh --id 0 >> /home/owuser/controller-local_logs.log 2>&1"
 ```
 
-## "Hello World" in OpenWhisk
+## Hello World in OpenWhisk
 
 OpenWhisk provides a command line tool called [openwhisk-cli](https://github.com/apache/incubator-openwhisk-cli) which is used for controlling the platform. As part of the `make quick-start` command that we used above for starting the platform, the account credentials will automatically be written into the configuration of the CLI. You can either install the CLI directly from the repository or install it using `linuxbrew`. Alternatively, use the binary available in this path in OpenWhisk Devtools folder:
 
