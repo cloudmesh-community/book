@@ -174,3 +174,4 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   ~~<http://www.sportvision.com/media/pitchfx-how-it-works>~~
 -   ~~<http://www.sportvision.com/baseball/fieldfx>~~
 -   ~~<http://www.sportvision.com/baseball/hitfx>~~
+-   ~~<http://www.trakus.com/technology.asp#tNetText>~~ 
