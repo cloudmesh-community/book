@@ -27,29 +27,23 @@ All the following steps are made automatically by the
 
 ### Install docker
 
-First install Docker with 
+First install Docker with
   
   ``
-  curl -sSL get.docker.com | sh && \
+  $ curl -sSL get.docker.com | sh && \
   sudo usermod pi -aG docker
   ``
-  
+
   [optional] Command to run Docker as a non root user:
   ``
-  sudo usermod -aG docker pi
+  $ sudo usermod -aG docker pi
   ``
 
 ### Disable swap memory
 
-(TODO `fa18-516-03`: Where is this information from? I don't see this online - I
-see that Kubernetes does not support swap memory but not Docker. It looks like
-Docker can be configured directly to disable swap memory
-[--memory-swap](https://docs.docker.com/config/containers/resource_constraints/#--memory-swap-details) instead
-of disabling swap for the entire OS.)
-
-Docker is **not compatible with SWAP memory**, therefore we need to disable swap.
-This might create some other issues. If you encounter them you should
-try to reboot the cluster again, if that fails change line 16 in the
+Kubernetes is **not compatible with SWAP memory**, therefore we need to disable
+swap. This might create some other issues. If you encounter them you should try
+to reboot the cluster again, if that fails change line 16 in the
 `docker_kubernetes_install.sh`
 
 ```
@@ -66,13 +60,13 @@ Now Edit /boot/cmdline.txt and add the following with a space
 [no new line]
 
 ```
-cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
+ cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
 ```
 
 Next turn off swap for Kubernetes:
 
   ```
-  sudo dphys-swapfile swapoff && \
+  $ sudo dphys-swapfile swapoff && \
   sudo dphys-swapfile uninstall && \
   sudo update-rc.d dphys-swapfile remove
   ```
@@ -80,7 +74,7 @@ Next turn off swap for Kubernetes:
 You should now not see any entries in this command:
 
 ```
-$ sudo swapon --sumary
+$ sudo swapon --summary
 ```
 
 Now you *must reboot* before continuing with the rest of the section.
@@ -92,16 +86,107 @@ rebooted.
 
 ---
 
-:warning: **All of this will be done by the script, donot worry** (maybe worry)
+:warning: **All of this will be done by the script, do not worry** (maybe worry)
 
 ---
+
+### Cluster setup
+
+Setup kubeadm with
+  
+```
+  $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - && \
+  echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list && \
+  sudo apt-get update -q && \
+  sudo apt-get install -qy kubeadm
+```
+  
+The process till now stays the same for both workers and master
+  
+## Master setup
+
+If your network is slow, you can pull the images first with:
+
+```
+$ sudo kubeadm config images pull
+```
+
+If you do not pull them , they will be downloaded during the master node initiation:
+
+```
+    $ sudo kubeadm init --token-ttl=0 --apiserver-advertise-address=<internal master ip>
+```
+
+This will initiate the kubectl head. At the end of the this process,
+there should be an echo with the following text. Save this join token
+as you will joining the workers later:
+
+```
+    $ sudo kubeadm join --token <token> --discovery-token-ca-cert-hash <ca hash>
+```
+
+TODO: jobranam (fa18-e516-03):
+Received the following error/warning:
+```
+[WARNING RequiredIPVSKernelModulesAvailable]: the IPVS proxier will not
+be used, because the following required kernel modules are not loaded: [ip_vs_sh
+nf_conntrack_ipv4 ip_vs ip_vs_rr ip_vs_wrr] or no builtin kernel ipvs support:
+map[ip_vs:{} ip_vs_rr:{} ip_vs_wrr:{} ip_vs_sh:{} nf_conntrack_ipv4:{}]
+you can solve this problem with following methods:
+ 1. Run 'modprobe -- ' to load missing kernel modules;
+2. Provide the missing builtin kernel ipvs support
+```
+
+This does not seem to be a problem, but it can be fixed by first running:
+
+```bash
+$ sudo modprobe ip_vs && \
+  sudo modprobe ip_vs_sh && \
+  sudo modprobe ip_vs_vs && \
+  sudo modprobe ip_vs_rr && \
+  sudo modprobe ip_vs_wrr && \
+  sudo modprobe nf_conntrack_ipv4
+```
+
+
+Once the master is initiated, now set up the kubectl admin config
+
+```
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+The final step is setting up the networking. I have used weave.
+
+```
+  kubectl apply -f \
+ "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+```
+  
+
+After waiting a minute or so, you should see the following output from this
+command:
+
+```
+ $ kubectl get pods --namespace=kube-system
+NAME                             READY   STATUS    RESTARTS   AGE
+coredns-576cbf47c7-hn55k         1/1     Running   0          4m51s
+coredns-576cbf47c7-nvmm4         1/1     Running   0          4m51s
+etcd-blue00                      1/1     Running   0          3m55s
+kube-apiserver-blue00            1/1     Running   0          4m7s
+kube-controller-manager-blue00   1/1     Running   0          4m5s
+kube-proxy-9xwdn                 1/1     Running   0          4m51s
+kube-scheduler-blue00            1/1     Running   0          4m
+weave-net-xj4tc                  2/2     Running   0          73s
+```
 
 
 ### Configure the nodes
 
-All of the above needs to be done in each node as-well. The script
+All of the above needs to be done in each node as well. The script
 
-* [kubernetes/copy_dk_kub_install_script_to_nodes.sh](kubernetes/copy_dk_kub_install_script_to_nodes.sh)
+* [kubernetes/526/bin/copy_dk_kub_install_script_to_nodes.sh](kubernetes/526/bin/copy_dk_kub_install_script_to_nodes.sh)
 
 should copy the needed script to each of them and run it. It is set up
 to work with 4 nodes named `rp<number>` with pi as the username (the
@@ -169,55 +254,19 @@ Please note that a router is needed when portability is a criteria.
 
 See Network of PIs
 
-## Cluster setup
-
-Setup kubeadm with
-  
-```
-  $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - && \
-  echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list && \
-  sudo apt-get update -q && \
-  sudo apt-get install -qy kubeadm
-```
-  
-The process till now stays the same for both workers and master
-  
-## Master setup
-  
-In the master node initiate the master:
-  
-```
-    $ sudo kubeadm init --token-ttl=0 --apiserver-advertise-address=<internal master ip>
-```
-  
-This will initiate the kubectl head. At the end of the this process,
-there should be an echo with the following text. Save this join token
-as you will joining the workers later:
-
-```
-    $ kubeadm join --token <token> --discovery-token-ca-cert-hash <ca hash>
-```
-
-Once the master is initiated, now set up the kubectl admin config
-
-```
-  mkdir -p $HOME/.kube
-  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-  sudo chown $(id -u):$(id -g) $HOME/.kube/config
-```
-
-The final step is setting up the networking. I have used weave.
-
-```
-  kubectl apply -f \
- "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
-```
-  
 ## Worker setup
 
 After Kubernetes installation, join the workers using the saved join token.
 
 Use `get nodes` in the master to check the status
+
+```
+$ kubectl get nodes
+NAME     STATUS     ROLES    AGE     VERSION
+blue00   Ready      master   22m     v1.12.2
+blue01   Ready      <none>   7m37s   v1.12.2
+blue02   NotReady   <none>   14s     v1.12.2
+```
 
   `kubectl get pods --namespace=kube-system`
 
