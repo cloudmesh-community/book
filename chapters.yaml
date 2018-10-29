@@ -19,6 +19,7 @@
         - chapters/authors.md
         - chapters/preface/create.md
         - chapters/preface/issues.md
+        - chapters/preface/reader.md                
         - chapters/preface/notation.md
 
 - DEVTOOLS:
