@@ -128,18 +128,15 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 ### Resources
 
 \TODO{These resources have not all been checked to see if they still
-  exist this is currently in progress}
--   ~~<http://www.sloansportsconference.com/?page_id=481&sort_cate=Research%20Paper>~~ 
+  exist this is currently in progress} 
 -   <http://www.slideshare.net/Tricon_Infotech/big-data-for-big-sports> [@www-slideshare-tricon-infotech]
--   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling> [@www-slideshare-sports]
--   ~~<http://www.liveathos.com/apparel/app>~~ 
+-   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling> [@www-slideshare-sports] 
 -   <http://www.slideshare.net/elew/sport-analytics-innovation> [@www-slideshare-elew-sport-analytics]
 -   <http://www.wired.com/2013/02/catapault-smartball/> [@www-wired-smartball]
 -   <http://www.sloansportsconference.com/wp-content/uploads/2014/06/Automated_Playbook_Generation.pdf> [@www-sloansportsconference-automated-playbook]
 -   <http://autoscout.adsc.illinois.edu/publications/football-trajectory-dataset/> [@www-autoscout-illinois-football-trajectory]
 -   <http://www.sloansportsconference.com/wp-content/uploads/2012/02/Goldsberry_Sloan_Submission.pdf> [@sloansportconference-goldsberry]
--   <http://gamesetmap.com/> [@gamesetmap]
--   ~~<http://www.trakus.com/technology.asp#tNetText>~~ 
+-   <http://gamesetmap.com/> [@gamesetmap] 
 -   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling> [@www-slideshare-sports-datapowered]
 -   <http://www.sloansportsconference.com/> [@www-sloansportsconferences]
 -   <http://sabr.org/> [@www-sabr]
@@ -174,3 +171,6 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   ~~<http://www.sportvision.com/media/pitchfx-how-it-works>~~
 -   ~~<http://www.sportvision.com/baseball/fieldfx>~~
 -   ~~<http://www.sportvision.com/baseball/hitfx>~~
+-   ~~<http://www.trakus.com/technology.asp#tNetText>~~ 
+-   ~~<http://www.sloansportsconference.com/?page_id=481&sort_cate=Research%20Paper>~~ 
+-   ~~<http://www.liveathos.com/apparel/app>~~
