@@ -1,15 +1,16 @@
 % Encoding: UTF-8
-@Misc{www-GDPR Key Changes,
-  author       = {{EU GDPR.ORG}},
+
+@Misc{www-GDPRKeyChanges,
+  author       = {{G}},
   title        = {GDPR Key Changes},
   howpublished = {Web Page},
   year         = {2018},
-  url          = {https://eugdpr.org/the-regulation/}
+  url          = {https://eugdpr.org/the-regulation/},
 }
 
 @Misc{www-GDPRDefinitions,
   author       = {{gdpr-info.eu}},
-  title        = {GDPR Definitions},
+  title        = {{GDPR} {D}efinitions},
   howpublished = {Web Page},
   year         = {2018},
   url          = {https://gdpr-info.eu/art-4-gdpr/},
@@ -17,18 +18,18 @@
 
 @Misc{www-CloudSigma,
   author       = {Vanya Nikova},
-  title        = {GDPR and Cloud Computing – Challenges and Opportunities},
+  title        = {{GDPR} and {C}loud {C}omputing – {C}hallenges and {O}pportunities},
   howpublished = {Web Page},
   year         = {2018},
-  url          = {https://www.cloudsigma.com/gdpr-and-cloud-computing-challenges-and-opportunities/}
+  url          = {https://www.cloudsigma.com/gdpr-and-cloud-computing-challenges-and-opportunities/},
 }
 
 @Misc{www-amazon,
   author       = {{Amazon}},
-  title        = {General Data Protection Regulation (GDPR) Center},
+  title        = {{G}eneral {D}ata {P}rotection {R}egulation {C}enter},
   howpublished = {Web Page},
   year         = {2018},
-  url          = {https://aws.amazon.com/compliance/gdpr-center/}
+  url          = {https://aws.amazon.com/compliance/gdpr-center/},
 }
 
 @Misc{www-ZDNET,
