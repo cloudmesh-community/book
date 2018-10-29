@@ -69,7 +69,7 @@ Let us create our first Lambda function.
 
 Step 1: The very first thing we need is an AWS account. (There is already a section
 on this, please go through that to understand how to create an AWS account - 
-https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#creating-an-account )
+[Creating AWS account](aws.md#creating-an-account)
 
 Step 2: We will be writing a function that we call `isPalindrome`, which will check
 if the string is palindrome or not.

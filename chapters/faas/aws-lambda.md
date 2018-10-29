@@ -80,8 +80,5 @@ find a more detailed description of the free tier in the AWS docs [AWS Lambda
 ## Writing your fist Lambda function
 
 With the GUI interface it is relatively easy to try out your first Serverless
-function with AWS Lambda. The AWS documentation provides a very simple step by
-step tutorial on how an "Hello World" function can be written and invoked in AWS
-Lambda in [Run a Serverless Hello, World!](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/). 
-If you do not already have a AWS account please follow the 
-[AWS tutorial](../iaas/aws/aws-lambda.md) to create an AWS account.  
+function with AWS Lambda. Please follow the steps defined at 
+[How to run your first AWS Lambda function in the cloud](../iaas/aws/aws-lambda.md#how-to-run-your-first-aws-lambda-function-in-the-cloud---example)
