@@ -1,4 +1,3 @@
-% Encoding: UTF-8
 @Misc{www-GDPR Key Changes,
   author       = {{EU GDPR.ORG}},
   title        = {GDPR Key Changes},
@@ -7,12 +6,12 @@
   url          = {https://eugdpr.org/the-regulation/}
 }
 
-@Misc{www-GDPRDefinitions,
+@Misc{www-GDPR Definitions,
   author       = {{gdpr-info.eu}},
-  title        = {GDPR Definitions},
+  title        = {Art. 4 GDPR Definitions},
   howpublished = {Web Page},
   year         = {2018},
-  url          = {https://gdpr-info.eu/art-4-gdpr/},
+  url          = {https://gdpr-info.eu/art-4-gdpr/}
 }
 
 @Misc{www-CloudSigma,
@@ -33,11 +32,11 @@
 
 @Misc{www-ZDNET,
   author       = {Danny Palmer},
-  title        = {Everything you need to know about the new general data protection regulations},
+  title        = {What is GDPR? Everything you need to know about the new general data protection regulations},
   howpublished = {Web Page},
   month        = may,
   year         = {2018},
-  url          = {https://www.zdnet.com/article/gdpr-an-executive-guide-to-what-you-need-to-know/},
+  url          = {https://www.zdnet.com/article/gdpr-an-executive-guide-to-what-you-need-to-know/}
 }
 
 @Misc{www-aws,
@@ -73,5 +72,3 @@
   year         = {2018},
   url          = {https://archive.fosdem.org/2018/schedule/event/vai_openstack_gdpr_compliance/attachments/slides/2570/export/events/attachments/vai_openstack_gdpr_compliance/slides/2570/Openstack_compliance_with_GDPR.pdf}
 }
-
-@Comment{jabref-meta: databaseType:bibtex;}
