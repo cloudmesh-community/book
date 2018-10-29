@@ -138,8 +138,7 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <http://www.sloansportsconference.com/wp-content/uploads/2014/06/Automated_Playbook_Generation.pdf> [@www-sloansportsconference-automated-playbook]
 -   <http://autoscout.adsc.illinois.edu/publications/football-trajectory-dataset/> [@www-autoscout-illinois-football-trajectory]
 -   <http://www.sloansportsconference.com/wp-content/uploads/2012/02/Goldsberry_Sloan_Submission.pdf> [@sloansportconference-goldsberry]
--   <http://gamesetmap.com/> [@gamesetmap]
--   ~~<http://www.trakus.com/technology.asp#tNetText>~~ 
+-   <http://gamesetmap.com/> [@gamesetmap] 
 -   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling> [@www-slideshare-sports-datapowered]
 -   <http://www.sloansportsconference.com/> [@www-sloansportsconferences]
 -   <http://sabr.org/> [@www-sabr]
@@ -174,3 +173,4 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   ~~<http://www.sportvision.com/media/pitchfx-how-it-works>~~
 -   ~~<http://www.sportvision.com/baseball/fieldfx>~~
 -   ~~<http://www.sportvision.com/baseball/hitfx>~~
+-   ~~<http://www.trakus.com/technology.asp#tNetText>~~ 
