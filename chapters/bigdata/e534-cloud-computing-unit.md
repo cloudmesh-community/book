@@ -1,21 +1,21 @@
 # E534 Cloud Computing Unit
 
-Full Slide Deck https://drive.google.com/open?id=1e61jrgTSeG8wQvQ2v6Zsp5AA31KCZPEQ
+:orange_book: Full Slide Deck https://drive.google.com/open?id=1e61jrgTSeG8wQvQ2v6Zsp5AA31KCZPEQ
 
 This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWildAVdoH5hYY/edit?usp=sharing  
 
 ## Overall Summary
 
-  Video: https://drive.google.com/open?id=1Iq-sKUP28AiTeDU3cW_7L1fEQ2hqakae
+  :clapper: Video: https://drive.google.com/open?id=1Iq-sKUP28AiTeDU3cW_7L1fEQ2hqakae
 
-  Slides https://drive.google.com/open?id=1MLYwAM6MrrZSKQjKm570mNtyNHiWSCjC
+  :orange_book: Slides https://drive.google.com/open?id=1MLYwAM6MrrZSKQjKm570mNtyNHiWSCjC
 
 
 ## Defining Clouds I:
 
-  Video https://drive.google.com/open?id=15TbpDGR2VOy5AAYb_o4740enMZKiVTSz
+  :clapper: Video https://drive.google.com/open?id=15TbpDGR2VOy5AAYb_o4740enMZKiVTSz
 
-  Slides https://drive.google.com/open?id=1CMqgcpNwNiMqP8TZooqBMhwFhu2EAa3C
+  :orange_book: Slides https://drive.google.com/open?id=1CMqgcpNwNiMqP8TZooqBMhwFhu2EAa3C
 
   1. Basic definition of cloud and two very simple examples of why virtualization is important.
   2. How clouds are situated wrt HPC and supercomputers
@@ -25,9 +25,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Defining Clouds II:
 
-  Video https://drive.google.com/open?id=1BvJCqBQHLMhrPrUsYvGWoq1nk7iGD9cd
+  :clapper: Video https://drive.google.com/open?id=1BvJCqBQHLMhrPrUsYvGWoq1nk7iGD9cd
 
-  Slides https://drive.google.com/open?id=1_rczdp74g8hFnAvXQPVfZClpvoB_B3RN
+  :orange_book: Slides https://drive.google.com/open?id=1_rczdp74g8hFnAvXQPVfZClpvoB_B3RN
 
   1. Service-oriented architectures: Software services as Message-linked computing capabilities
   2. The different aaS’s: Network, Infrastructure, Platform, Software
@@ -37,9 +37,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Defining Clouds III:
 
-  Video https://drive.google.com/open?id=1MjIU3N2PX_3SsYSN7eJtAlHGfdePbKEL
+  :clapper: Video https://drive.google.com/open?id=1MjIU3N2PX_3SsYSN7eJtAlHGfdePbKEL
 
-  Slides https://drive.google.com/open?id=1cDJhE86YRAOCPCAz4dVv2ieq-4SwTYQW
+  :orange_book: Slides https://drive.google.com/open?id=1cDJhE86YRAOCPCAz4dVv2ieq-4SwTYQW
 
   1. Cloud Market Share
   2. How important are they?
@@ -48,9 +48,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Virtualization:
 
-  Video https://drive.google.com/open?id=1-zd6wf3zFCaTQFInosPHuHvcVrLOywsw
+  :clapper: Video https://drive.google.com/open?id=1-zd6wf3zFCaTQFInosPHuHvcVrLOywsw
 
-  Slides https://drive.google.com/open?id=1_-BIAVHSgOnWQmMfIIC61wH-UBYywluO
+  :orange_book: Slides https://drive.google.com/open?id=1_-BIAVHSgOnWQmMfIIC61wH-UBYywluO
 
   1. Virtualization Technologies, Hypervisors and the different approaches
   2. KVM Xen, Docker and Openstack
@@ -58,9 +58,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Infrastructure I:
 
-  Video https://drive.google.com/open?id=1CIVNiqu88yeRkeU5YOW3qNJbfQHwfBzE
+  :clapper: Video https://drive.google.com/open?id=1CIVNiqu88yeRkeU5YOW3qNJbfQHwfBzE
 
-  Slides https://drive.google.com/open?id=11JRZe2RblX2MnJEAyNwc3zup6WS8lU-V
+  :orange_book: Slides https://drive.google.com/open?id=11JRZe2RblX2MnJEAyNwc3zup6WS8lU-V
 
   1. Comments on trends in the data center and its technologies
   2. Clouds physically across the world
@@ -70,9 +70,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Infrastructure II:
 
-  Videos https://drive.google.com/open?id=1yGR0YaqSoZ83m1_Kz7q7esFrrxcFzVgl
+  :clapper: Videos https://drive.google.com/open?id=1yGR0YaqSoZ83m1_Kz7q7esFrrxcFzVgl
 
-  Slides https://drive.google.com/open?id=1L6fnuALdW3ZTGFvu4nXsirPAn37ZMBEb
+  :orange_book: Slides https://drive.google.com/open?id=1L6fnuALdW3ZTGFvu4nXsirPAn37ZMBEb
 
   1. Gartner hypecycle and priority matrix on Infrastructure Strategies and
   Compute Infrastructure
@@ -82,9 +82,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Software:
 
-  Video https://drive.google.com/open?id=14HISqj17Ihom8G6v9KYR2GgAyjeK1mOp
+  :clapper: Video https://drive.google.com/open?id=14HISqj17Ihom8G6v9KYR2GgAyjeK1mOp
 
-  Slides https://drive.google.com/open?id=10TaEQE9uEPBFtAHpCAT_1akCYbvlMCPg
+  :orange_book: Slides https://drive.google.com/open?id=10TaEQE9uEPBFtAHpCAT_1akCYbvlMCPg
 
   1. HPC-ABDS with over 350 software packages and how to use each of 21 layers
   2. Google’s software innovations
@@ -95,18 +95,18 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Applications I: Research applications
 
-  Video https://drive.google.com/open?id=11zuqeUbaxyfpONOmHRaJQinc4YSZszri
+  :clapper: Video https://drive.google.com/open?id=11zuqeUbaxyfpONOmHRaJQinc4YSZszri
 
-  Slides https://drive.google.com/open?id=1hUgC82FLutp32rICEbPJMgHaadTlOOJv
+  :orange_book: Slides https://drive.google.com/open?id=1hUgC82FLutp32rICEbPJMgHaadTlOOJv
 
   1. Clouds in science where the area called cyberinfrastructure
 
 
 ## Cloud Applications II: Few key types
 
-  Video https://drive.google.com/open?id=1S2-MgshCSqi9a6_tqEVktktN4Nf6Hj4d
+  :clapper: Video https://drive.google.com/open?id=1S2-MgshCSqi9a6_tqEVktktN4Nf6Hj4d
 
-  Slides https://drive.google.com/open?id=1KlYnTZgRzqjnG1g-Mf8NTvw1k8DYUCbw
+  :orange_book: Slides https://drive.google.com/open?id=1KlYnTZgRzqjnG1g-Mf8NTvw1k8DYUCbw
 
   1. Internet of Things
   2. Different types of MapReduce
@@ -114,9 +114,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ##  Parallel Computing in Pictures
 
-  Video https://drive.google.com/open?id=1LSnVj0Vw2LXOAF4_CMvehkn0qMIr4y4J
+  :clapper: Video https://drive.google.com/open?id=1LSnVj0Vw2LXOAF4_CMvehkn0qMIr4y4J
 
-  Slides https://drive.google.com/open?id=1IDozpqtGbTEzANDRt4JNb1Fhp7JCooZH
+  :orange_book: Slides https://drive.google.com/open?id=1IDozpqtGbTEzANDRt4JNb1Fhp7JCooZH
 
   1. Some useful analogies and principles
   2. Society and Building Hadrian’s wall
@@ -124,9 +124,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Parallel Computing in real world
 
-  Video https://drive.google.com/open?id=1d0pwvvQmm5VMyClm_kGlmB79H69ihHwk
+  :clapper: Video https://drive.google.com/open?id=1d0pwvvQmm5VMyClm_kGlmB79H69ihHwk
 
-  Slides https://drive.google.com/open?id=1aPEIx98aDYaeJS-yY1JhqqnPPJbizDAJ
+  :orange_book: Slides https://drive.google.com/open?id=1aPEIx98aDYaeJS-yY1JhqqnPPJbizDAJ
 
   1. Single Program/Instruction Multiple Data SIMD SPMD
   2. Parallel Computing in general
@@ -136,9 +136,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Storage:
 
-  Video https://drive.google.com/open?id=1ukgyO048qX0uZ9sti3HxIDGscyKqeCaB
+  :clapper: Video https://drive.google.com/open?id=1ukgyO048qX0uZ9sti3HxIDGscyKqeCaB
 
-  Slides https://drive.google.com/open?id=1rVRMcfrpFPpKVhw9VZ8I72TTW21QxzuI
+  :orange_book: Slides https://drive.google.com/open?id=1rVRMcfrpFPpKVhw9VZ8I72TTW21QxzuI
 
   1. Cloud data approaches
   2. Repositories, File Systems, Data lakes
@@ -146,9 +146,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## HPC and Clouds: The Branscomb Pyramid
 
-  Video https://drive.google.com/open?id=15rrCZ_yaMSpQNZg1lBs_YaOSPw1Rddog
+  :clapper: Video https://drive.google.com/open?id=15rrCZ_yaMSpQNZg1lBs_YaOSPw1Rddog
 
-  Slides https://drive.google.com/open?id=1JRdtXWWW0qJrbWAXaHJHxDUZEhPCOK_C
+  :orange_book: Slides https://drive.google.com/open?id=1JRdtXWWW0qJrbWAXaHJHxDUZEhPCOK_C
 
   1. Supercomputers versus clouds
   2. Science Computing Environments
@@ -156,9 +156,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Comparison of Data Analytics with Simulation:
 
-  Video https://drive.google.com/open?id=1wmt7MQLz3Bf2mvLN8iHgXFHiuvGfyRKr
+  :clapper: Video https://drive.google.com/open?id=1wmt7MQLz3Bf2mvLN8iHgXFHiuvGfyRKr
 
-  Slides https://drive.google.com/open?id=1vRv76LerhgJKUsGosXLVKq4s_wDqFlK4
+  :orange_book: Slides https://drive.google.com/open?id=1vRv76LerhgJKUsGosXLVKq4s_wDqFlK4
 
   1. Structure of different applications for simulations and Big Data
   2. Software implications
@@ -167,9 +167,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## The Future:
 
-  Video https://drive.google.com/open?id=1A20g-rTYe0EKxMSX0HI4D8UyUDcq9IJc  
+  :clapper: Video https://drive.google.com/open?id=1A20g-rTYe0EKxMSX0HI4D8UyUDcq9IJc  
 
-  Slides https://drive.google.com/open?id=1_vFA_SLsf4PQ7ATIxXpGPIPHawqYlV9K  
+  :orange_book: Slides https://drive.google.com/open?id=1_vFA_SLsf4PQ7ATIxXpGPIPHawqYlV9K  
 
   1. Gartner cloud computing hypecycle and priority matrix
   2. Hyperscale computing
@@ -180,6 +180,6 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Fault Tolerance
 
-  Video https://drive.google.com/open?id=11hJA3BuT6pS9Ovv5oOWB3QOVgKG8vD24  
+  :clapper: Video https://drive.google.com/open?id=11hJA3BuT6pS9Ovv5oOWB3QOVgKG8vD24  
 
-  Slides https://drive.google.com/open?id=1oNztdHQPDmj24NSGx1RzHa7XfZ5vqUZg
+  :orange_book: Slides https://drive.google.com/open?id=1oNztdHQPDmj24NSGx1RzHa7XfZ5vqUZg
