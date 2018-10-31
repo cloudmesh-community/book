@@ -133,8 +133,8 @@ dest/chapters/class/assignments-523.md: ../chapters/class/assignments-523.md
 	../bin/header.py dest/chapters/class/assignments-523.md 2
 
 dest/chapters/bigdata/intro-fall-2018.md: ../chapters/bigdata/intro-fall-2018.md
-	../bin/markup-single.py ../chapters/bigdata/intro-fall-2018.md 2
-	../bin/header.py dest/chapters/bigdata/intro-fall-2018.md 2
+	../bin/markup-single.py ../chapters/bigdata/intro-fall-2018.md 1
+	../bin/header.py dest/chapters/bigdata/intro-fall-2018.md 1
 
 dest/chapters/bigdata/applications/overview.md: ../chapters/bigdata/applications/overview.md
 	../bin/markup-single.py ../chapters/bigdata/applications/overview.md 1
