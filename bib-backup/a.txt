@@ -1,0 +1,675 @@
+     1	% This file was created with JabRef 2.10.
+     2	% Encoding: UTF-8
+     3	
+     4	@InProceedings{las14cloudmeshmultiple,
+     5	  Title                    = {{Accessing Multiple Clouds with Cloudmesh}},
+     6	  Author                   = {von Laszewski, Gregor and Wang, Fugang and Lee, Hyungro and Chen, Heng and Fox, Geoffrey C.},
+     7	  Booktitle                = {Proceedings of the 2014 ACM International Workshop on Software-defined Ecosystems},
+     8	  Year                     = {2014},
+     9	
+    10	  Address                  = {New York, NY, USA},
+    11	  Pages                    = {21--28},
+    12	  Publisher                = {ACM},
+    13	  Series                   = {BigSystem '14},
+    14	
+    15	  Acmid                    = {2609638},
+    16	  Doi                      = {10.1145/2609441.2609638},
+    17	  ISBN                     = {978-1-4503-2909-5},
+    18	  Keywords                 = {cloud computing},
+    19	  Location                 = {Vancouver, BC, Canada},
+    20	  Numpages                 = {8},
+    21	  url                     = {https://github.com/cyberaide/paper-cloudmesh/raw/master/vonLaszewski-cloudmesh.pdf}
+    22	}
+    23	
+    24	
+    25	@Misc{hid-sp18-521-ec2keypair,
+    26	  Title                    = {Create a Key Pair Using Amazon EC2},
+    27	
+    28	  Author                   = {{AWS}},
+    29	  HowPublished             = {Web Page},
+    30	  Month                    = mar,
+    31	  Year                     = {2018},
+    32	
+    33	  Url                      = {https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair}
+    34	}
+    35	
+    36	@Misc{hid-sp18-521-emrlaunch,
+    37	  Title                    = {Launch Sample EMR Cluster},
+    38	
+    39	  Author                   = {{AWS}},
+    40	  HowPublished             = {Web Page},
+    41	  Month                    = mar,
+    42	  Year                     = {2018},
+    43	
+    44	  Url                      = {https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs-launch-sample-cluster.html}
+    45	}
+    46	
+    47	@Misc{hid-sp18-521-emrprocess,
+    48	  Title                    = {Process Your Sample Data},
+    49	
+    50	  Author                   = {{AWS}},
+    51	  HowPublished             = {Web Page},
+    52	  Month                    = mar,
+    53	  Year                     = {2018},
+    54	
+    55	  Url                      = {https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs-process-sample-data.html}
+    56	}
+    57	
+    58	@Misc{hid-sp18-521-emrreset,
+    59	  Title                    = {Reset Your Environment},
+    60	
+    61	  Author                   = {{AWS}},
+    62	  HowPublished             = {Web Page},
+    63	  Month                    = mar,
+    64	  Year                     = {2018},
+    65	
+    66	  Url                      = {https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs-reset-environment.html}
+    67	}
+    68	
+    69	@Misc{hid-sp18-521-prereq,
+    70	  Title                    = {Setup Prerequsites for Your Cluster},
+    71	
+    72	  Author                   = {{AWS}},
+    73	  HowPublished             = {Web Page},
+    74	  Month                    = mar,
+    75	  Year                     = {2018},
+    76	
+    77	  Url                      = {https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs-prerequisites.html}
+    78	}
+    79	
+    80	@Misc{hid-sp18-521-s3bucket,
+    81	  Title                    = {How Do I Create An S3 Bucket?},
+    82	
+    83	  Author                   = {{AWS}},
+    84	  HowPublished             = {Web Page},
+    85	  Month                    = mar,
+    86	  Year                     = {2018},
+    87	
+    88	  Url                      = {https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html}
+    89	}
+    90	
+    91	
+    92	
+    93	@Misc{www-nist-bdra,
+    94	title={NIST Big Data Public Working Group},
+    95	url={https://bigdatawg.nist.gov/},
+    96	author={{National Institute of Standars}}
+    97	}
+    98	
+    99	
+   100	@Misc{apache-storm-mqtt,
+   101	  Title =        {Storm MQTT Integration},
+   102	  Author =       {Apache storm},
+   103	  HowPublished = {Apache storm website},
+   104	  Owner =        {arnav},
+   105	  Timestamp =    {2017.11.05},
+   106	  Url =
+   107	                  {http://storm.apache.org/releases/1.1.0/storm-mqtt.html}
+   108	}
+   109	
+   110	@Misc{hivemq-details,
+   111	  Title =        {MQTT Essentials Part 2: Publish and Subscribe},
+   112	  Author =       {Hive mq},
+   113	  HowPublished = {HiveMQ website},
+   114	  Owner =        {arnav},
+   115	  Timestamp =    {2017.11.06},
+   116	  Url =
+   117	                  {https://www.hivemq.com/blog/mqtt-essentials-part2-publish-subscribe}
+   118	}
+   119	
+   120	@Misc{mqtt-security-fundamentals,
+   121	  Title =        {Introducing the MQTT Security Fundamentals},
+   122	  Author =       {Hive mq},
+   123	  HowPublished = {hive mq website},
+   124	  Owner =        {arnav},
+   125	  Timestamp =    {2017.11.05},
+   126	  Url =
+   127	                  {https://www.hivemq.com/blog/introducing-the-mqtt-security-fundamentals}
+   128	}
+   129	
+   130	@Article{abril07,
+   131	  Title =        {The patent holder's dilemma: Buy, sell, or troll?},
+   132	  Author =       {Patricia S. Abril and Robert Plant},
+   133	  Journal =      {Communications of the ACM},
+   134	  Year =         2007,
+   135	  Month =        jan,
+   136	  Number =       1,
+   137	  Pages =        {36--44},
+   138	  Volume =       50,
+   139	  Doi =          {10.1145/1188913.1188915},
+   140	  Url =          {http://doi.acm.org/10.1145/1219092.1219093}
+   141	}
+   142	
+   143	@Misc{apache-storm,
+   144	  Title =        {apache storm},
+   145	  Author =       {apache},
+   146	  HowPublished = {apache storm website},
+   147	  Owner =        {arnav},
+   148	  Timestamp =    {2017.11.06},
+   149	  Url =          {http://storm.apache.org/}
+   150	}
+   151	
+   152	@Misc{mqtt-vs-http,
+   153	  Title =        {Why MQTT is the Protocol of Choice for the IoT},
+   154	  Author =       {Paul Caponetti},
+   155	  HowPublished = {xively.com blog website},
+   156	  Month =        {augist},
+   157	  Year =         2017,
+   158	  Owner =        {arnav},
+   159	  Timestamp =    {2017.11.05},
+   160	  Url =
+   161	                  {http://blog.xively.com/why-mqtt-is-the-protocol-of-choice-for-the-iot/}
+   162	}
+   163	
+   164	@Misc{cloudmesh.pi,
+   165	  Title =        {cloudmesh.pi},
+   166	  Author =       {cloudmesh},
+   167	  HowPublished = {github},
+   168	  Month =        {ocober},
+   169	  Year =         2017,
+   170	  Owner =        {arnav},
+   171	  Timestamp =    {2017.11.06},
+   172	  Url =          {https://github.com/cloudmesh/cloudmesh.pi}
+   173	}
+   174	
+   175	@Misc{ibm-mqtt-security,
+   176	  Title =        {MQTT security: Who are you? Can you prove it? What
+   177	                  can you do?},
+   178	  Author =       {Ian Craggs},
+   179	  HowPublished = {IBM developer works website},
+   180	  Month =        mar,
+   181	  Year =         2013,
+   182	  Owner =        {arnav},
+   183	  Timestamp =    {2017.11.05},
+   184	  Url =
+   185	                  {https://www.ibm.com/developerworks/community/blogs/c565c720-fe84-4f63-873f-607d87787327/entry/mqtt_security?lang=en}
+   186	}
+   187	
+   188	@Misc{eclipse-mosquitto,
+   189	  Title =        {mqtt broker},
+   190	  Author =       {eclipse},
+   191	  HowPublished = {eclipse mosquitto website},
+   192	  Owner =        {arnav},
+   193	  Timestamp =    {2017.11.05},
+   194	  Url =          {https://mosquitto.org/}
+   195	}
+   196	
+   197	@Misc{python-paho-mqtt,
+   198	  Title =        {Python Client - documentation},
+   199	  Author =       {eclipse paho},
+   200	  HowPublished = {eclipse paho wensite},
+   201	  Owner =        {arnav},
+   202	  Timestamp =    {2017.11.05},
+   203	  Url =          {https://www.eclipse.org/paho/clients/python/docs/}
+   204	}
+   205	
+   206	@Misc{elk-stack,
+   207	  Title =        {ELK stack},
+   208	  Author =       {elastic.io},
+   209	  HowPublished = {elastic.io website},
+   210	  Owner =        {arnav},
+   211	  Timestamp =    {2017.11.06},
+   212	  Url =          {https://www.elastic.co/products}
+   213	}
+   214	
+   215	@Misc{erlang-mqtt-broker,
+   216	  Title =        {erlang mqtt broker},
+   217	  Author =       {erlang-mqtt},
+   218	  HowPublished = {wmqtt website},
+   219	  Owner =        {arnav},
+   220	  Timestamp =    {2017.11.05},
+   221	  Url =          {http://emqtt.io/docs/v2/index.html}
+   222	}
+   223	
+   224	@Misc{hivemq-security-oauth,
+   225	  Title =        {MQTT Security Fundamentals: OAuth 2.0 and MQTT},
+   226	  Author =       {hive mq},
+   227	  HowPublished = {hivemq website},
+   228	  Owner =        {arnav},
+   229	  Timestamp =    {2017.11.05},
+   230	  Url =
+   231	                  {https://www.hivemq.com/blog/mqtt-security-fundamentals-oauth-2-0-mqtt}
+   232	}
+   233	
+   234	@Misc{hivemq-website,
+   235	  Title =        {intrwebsite mqtt},
+   236	  Author =       {hivemq},
+   237	  HowPublished = {hivemq website},
+   238	  Owner =        {arnav},
+   239	  Timestamp =    {2017.11.05},
+   240	  Url =
+   241	                  {https://www.hivemq.com/blog/mqtt-essentials-part-1-introducing-mqtt}
+   242	}
+   243	
+   244	@Misc{grovepi,
+   245	  Title =        {Grovepi},
+   246	  Author =       {Dexter Industries},
+   247	  HowPublished = {Dexteer Industries website},
+   248	  Year =         2017,
+   249	  Owner =        {arnav},
+   250	  Timestamp =    {2017.11.06},
+   251	  Url =          {https://www.dexterindustries.com/grovepi/}
+   252	}
+   253	
+   254	@Misc{influxdata-iot-monitoring-mqtt,
+   255	  Title =        {Monitoring IoT Devices Using MQTT},
+   256	  Author =       {influx data},
+   257	  HowPublished = {influx data website},
+   258	  Owner =        {arnav},
+   259	  Timestamp =    {2017.11.05},
+   260	  Url =
+   261	                  {https://www.influxdata.com/integration/mqtt-monitoring/}
+   262	}
+   263	
+   264	@Misc{hivemq-qos,
+   265	  Title =        {MQTT Essentials Part 6: Quality of Service 0, 1 and
+   266	                  2},
+   267	  Author =       {Hive MQ},
+   268	  HowPublished = {Hivemq website},
+   269	  Owner =        {arnav},
+   270	  Timestamp =    {2017.11.06},
+   271	  Url =
+   272	                  {https://www.hivemq.com/blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels}
+   273	}
+   274	
+   275	@Misc{mqtt-sec-ssl,
+   276	  Title =        {MQTT Security Fundamentals: TLS / SSL},
+   277	  Author =       {Hive Mq},
+   278	  HowPublished = {hive mq website},
+   279	  Owner =        {arnav},
+   280	  Timestamp =    {2017.11.05},
+   281	  Url =
+   282	                  {https://www.hivemq.com/blog/mqtt-security-fundamentals-tls-ssl}
+   283	}
+   284	
+   285	@Misc{mqtt-official,
+   286	  Title =        {Mqtt official website},
+   287	  Author =       {Mqtt},
+   288	  HowPublished = {mqtt official website},
+   289	  Owner =        {arnav},
+   290	  Timestamp =    {2017.11.05},
+   291	  Url =          {http://mqtt.org/}
+   292	}
+   293	
+   294	@Misc{iot-design-mqtt-security,
+   295	  Title =        {Transport-level security tradeoffs using MQTT},
+   296	  Author =       {Todd Ouska},
+   297	  HowPublished = {iot design website},
+   298	  Month =        feb,
+   299	  Year =         2016,
+   300	  Owner =        {arnav},
+   301	  Timestamp =    {2017.11.05},
+   302	  Url =
+   303	                  {http://iotdesign.embedded-computing.com/guest-blogs/transport-level-security-tradeoffs-using-mqtt/}
+   304	}
+   305	
+   306	@Misc{mqtt-kibana-plumbery,
+   307	  Title =        {Swarm of IP pingers coordinated with MQTT and
+   308	                  reported in Kibana},
+   309	  Author =       {plumbery},
+   310	  HowPublished = {plumberry read the docs},
+   311	  Month =        mar,
+   312	  Year =         2016,
+   313	  Owner =        {arnav},
+   314	  Timestamp =    {2017.11.05},
+   315	  Url =
+   316	                  {http://plumbery.readthedocs.io/en/latest/tutorial.mqtt.pinger.swarm.html}
+   317	}
+   318	
+   319	@Misc{how-mqtt-works,
+   320	  Title =        {What is MQTT and How It Works},
+   321	  Author =       {random nerds tutorial},
+   322	  HowPublished = {random nerds website},
+   323	  Owner =        {arnav},
+   324	  Timestamp =    {2017.11.05},
+   325	  Url =
+   326	                  {https://randomnerdtutorials.com/what-is-mqtt-and-how-it-works/}
+   327	}
+   328	
+   329	@Misc{grove-led,
+   330	  Title =        {Grove LED socket kit},
+   331	  Author =       {seed studio},
+   332	  HowPublished = {Seed studio website},
+   333	  Month =        oct,
+   334	  Year =         2017,
+   335	  Owner =        {arnav},
+   336	  Timestamp =    {2017.11.06},
+   337	  Url =          {http://wiki.seeed.cc/Grove-LED_Socket_Kit/}
+   338	}
+   339	
+   340	@Misc{dzone-mqtt-security,
+   341	  Title =        {MQTT Security Fundamentals},
+   342	  Author =       {Prabath Siriwardena},
+   343	  HowPublished = {Dzone website},
+   344	  Month =        sep,
+   345	  Year =         2015,
+   346	  Owner =        {arnav},
+   347	  Timestamp =    {2017.11.05},
+   348	  Url =
+   349	                  {https://dzone.com/articles/mqtt-security-fundamentals}
+   350	}
+   351	
+   352	@Misc{kibana-mqtt-analysis,
+   353	  Title =        {MQTT and Kibana - Open source Graphs and Analysis
+   354	                  for IoT},
+   355	  Author =       {smart factory},
+   356	  HowPublished = {smart factory website},
+   357	  Month =        may,
+   358	  Year =         2016,
+   359	  Owner =        {arnav},
+   360	  Timestamp =    {2017.11.05},
+   361	  Url =
+   362	                  {https://smart-factory.net/mqtt-and-kibana-open-source-graphs-and-analysis-for-iot/}
+   363	}
+   364	
+   365	@Misc{mqtt-elasticsearch-setup,
+   366	  Title =        {Storing IoT data using open source. MQTT and
+   367	                  ElasticSearch - Tutorial},
+   368	  Author =       {smart factory},
+   369	  HowPublished = {smart factory website},
+   370	  Month =        oct,
+   371	  Year =         2016,
+   372	  Owner =        {arnav},
+   373	  Timestamp =    {2017.11.05},
+   374	  Url =          {https://smart-factory.net/mqtt-elasticsearch-setup/}
+   375	}
+   376	
+   377	@Misc{grove-relay,
+   378	  Title =        {Grove Relay},
+   379	  Author =       {Seed Studio},
+   380	  HowPublished = {seed studio website},
+   381	  Month =        oct,
+   382	  Year =         2017,
+   383	  Owner =        {arnav},
+   384	  Timestamp =    {2017.11.06},
+   385	  Url =          {http://wiki.seeed.cc/Grove-Relay/}
+   386	}
+   387	
+   388	@Misc{apache-storm-wiki,
+   389	  Title =        {Storm (event processor) --- Wikipedia{,} The Free
+   390	                  Encyclopedia},
+   391	  Author =       {Wikipedia},
+   392	  Note =         {[Online; accessed 6-November-2017]},
+   393	  Year =         2017,
+   394	  Url =
+   395	                  {https://en.wikipedia.org/w/index.php?title=Storm_(event_processor)&oldid=808771136}
+   396	}
+   397	
+   398	@Misc{mqtt-wiki,
+   399	  Title =        {MQTT --- Wikipedia{,} The Free Encyclopedia},
+   400	  Author =       {Wikipedia},
+   401	  Month =        nov,
+   402	  Note =         {[Online; accessed 6-November-2017]},
+   403	  Year =         2017,
+   404	  Url =
+   405	                  {https://en.wikipedia.org/w/index.php?title=MQTT&oldid=808683219}
+   406	}
+   407	
+   408	@Misc{las-code-dispalydetect,
+   409	  author =    {Fugang Wang and Gregor von Laszewski},
+   410	  title =     {displaydetect.py},
+   411	  howpublished = {github},
+   412	  month =     may,
+   413	  year =      {2018},
+   414	  OPTnote =      {},
+   415	  OPTannote =    {},
+   416	  url= {https://raw.githubusercontent.com/cloudmesh/cloudmesh.pi/master/displaydetect.py}
+   417	}
+   418	
+   419	
+   420	% Encoding: UTF-8
+   421	@Misc{hid-sp18-405-tutorial-avro-doc,
+   422	  title =        {Apache Avro 1.8.2 Documentation},
+   423	  author =       {{Apache Avro}},
+   424	  howpublished = {Web Page},
+   425	  month =        feb,
+   426	  year =         2017,
+   427	  note =         {Accessed 2018-3-23},
+   428	  owner =        {hid-sp18-405},
+   429	  url =          {http://avro.apache.org/docs/1.8.2/index.html},
+   430	}
+   431	
+   432	@Misc{hid-sp18-405-tutorial-avro-python,
+   433	  title =        {Apache Avro 1.8.2 Getting Started (Python)},
+   434	  author =       {{Apache Avro}},
+   435	  howpublished = {Web Page},
+   436	  month =        feb,
+   437	  year =         2017,
+   438	  note =         {Accessed 2018-3-23},
+   439	  owner =        {hid-sp18-405},
+   440	  url =
+   441	                  {http://avro.apache.org/docs/1.8.2/gettingstartedpython.html},
+   442	}
+   443	
+   444	@Misc{hid-sp18-405-tutorial-avro-java,
+   445	  author       = {{Apache Avro}},
+   446	  title        = {Apache Avro 1.8.2 Getting Started (Java)},
+   447	  howpublished = {Web Page},
+   448	  month        = feb,
+   449	  year         = {2017},
+   450	  note         = {Accessed 2018-3-23},
+   451	  owner        = {hid-sp18-405},
+   452	  url          = {http://avro.apache.org/docs/1.8.2/gettingstartedjava.html},
+   453	}
+   454	
+   455	@Misc{hid-sp18-405-tutorial-avro-mapreduce,
+   456	  author       = {{Apache Avro}},
+   457	  title        = {Apache Avro 1.8.2 Hadoop MapReduce guide},
+   458	  howpublished = {Web Page},
+   459	  month        = feb,
+   460	  year         = {2017},
+   461	  note         = {Accessed 2018-3-23},
+   462	  owner        = {hid-sp18-405},
+   463	  url          = {http://avro.apache.org/docs/1.8.2/mr.html},
+   464	}
+   465	
+   466	@Misc{hid-sp18-405-tutorial-avro-record,
+   467		title =        {Apache Avro 1.8.2 Specification},
+   468		author =       {{Apache Avro}},
+   469		howpublished = {Web Page},
+   470		month =        feb,
+   471		year =         2017,
+   472		note =         {Accessed 2018-3-23},
+   473		owner =        {hid-sp18-405},
+   474		url =
+   475		{http://avro.apache.org/docs/1.8.2/spec.html#schema_record},
+   476	}
+   477	
+   478	
+   479	@Misc{hid-sp18-405-tutorial-dockerhub-blog-use,
+   480	  title =        {How to Use DockerHub},
+   481	  author =       {Bhartiya, Swapnil},
+   482	  howpublished = {Blog},
+   483	  month =        jan,
+   484	  year =         2018,
+   485	  note =         {Accessed 2018-3-26},
+   486	  owner =        {hid-sp18-405},
+   487	  url =
+   488	                  {https://www.linux.com/blog/learn/intro-to-linux/2018/1/how-use-dockerhub},
+   489	}
+   490	
+   491	@Misc{hid-sp18-405-tutorial-dockerhub-overview,
+   492	  title =        {Overview of Docker Hub},
+   493	  author =       {{Docker}},
+   494	  howpublished = {Web Page},
+   495	  month =        mar,
+   496	  year =         2018,
+   497	  note =         {Accessed 2018-3-26},
+   498	  owner =        {hid-sp18-405},
+   499	  url =          {https://docs.docker.com/docker-hub/},
+   500	}
+   501	
+   502	@Misc{hid-sp18-405-tutorial-dockerhub-repository,
+   503	  title =        {Repositories on Docker Hub},
+   504	  author =       {{Docker}},
+   505	  howpublished = {Web Page},
+   506	  month =        mar,
+   507	  year =         2018,
+   508	  note =         {Accessed 2018-3-26},
+   509	  owner =        {hid-sp18-405},
+   510	  url =          {https://docs.docker.com/docker-hub/repos/},
+   511	}
+   512	
+   513	@Misc{hid-sp18-405-tutorial-dockerhub-series-part-4,
+   514	  author       = {Irani, Romin},
+   515	  title        = {Docker Tutorial Series-Part 4-Docker Hub},
+   516	  howpublished = {Blog},
+   517	  month        = jul,
+   518	  year         = {2015},
+   519	  note         = {Accessed 03-27-2018},
+   520	  url          = {https://rominirani.com/docker-tutorial-series-part-4-docker-hub-b51fb545dd8e},
+   521	}
+   522	
+   523	
+   524	@Misc{hid-sp18-405-tutorial-pidhcp-pdf,
+   525		title =        {Configuring the Raspberry Pi as a DHCP Server under Raspbian 
+   526		Wheezy},
+   527		author =       {Spencer,Kenneth},
+   528		howpublished = {Web Page},
+   529		month =        mar,
+   530		year =         2013,
+   531		note =         {Accessed 2018-2-26},
+   532		owner =        {hid-sp18-405},
+   533		url =          
+   534		{http://www.my-music.mine.nu/images/rpi_raspbianwheezy_dhcp_server.pdf},
+   535	}
+   536	
+   537	@Misc{hid-sp18-405-tutorial-pidhcp-lesson3,
+   538		title =        {Lesson 3 - Dynamic Host Configuration Protocol (DHCP)},
+   539		author =       {{Raspberry Pi Foundation}},
+   540		howpublished = {Web Page},
+   541		note =         {Accessed 2018-2-26},
+   542		owner =        {hid-sp18-405},
+   543		url =          
+   544		{https://www.raspberrypi.org/learning/networking-lessons/lesson-3/plan/},
+   545	}
+   546	
+   547	@Misc{hid-sp18-405-tutorial-pidhcp-hadoopinstall,
+   548	  author       = {Tallapalli, Niranjan},
+   549	  title        = {Hadoop and Spark Installation on Raspberry Pi3 Cluster Part 3},
+   550	  howpublished = {Web Page},
+   551	  month        = feb,
+   552	  year         = {2017},
+   553	  note         = {Accessed 2018-2-26},
+   554	  owner        = {hid-sp18-405},
+   555	  url          = {https://tekmarathon.com/2017/02/16/hadoop-and-spark-installation-on-raspberry-pi-3-cluster-part-3/},
+   556	}
+   557	
+   558	@Misc{hid-sp18-405-tutorial-pidhcp-setup,
+   559		title =        {Setup Raspberry pi as a dhcp server},
+   560		author =       {Hamer, C},
+   561		howpublished = {Web Page},
+   562		month =  sep,
+   563		year =      2014,
+   564		note =         {Accessed 2018-2-26},
+   565		owner =        {hid-sp18-405},
+   566		url =          
+   567		{https://blog.monotok.org/setup-raspberry-pi-dhcp-server/},
+   568	}
+   569	
+   570	@Misc{hid-sp18-405-tutorial-sd-car-osx-general,
+   571		title =        {INSTALLING OPERATING SYSTEM IMAGES},
+   572		author =       {{Raspberry Pi Foundation}},
+   573		howpublished = {Web Page},
+   574		note =         {Accessed 2018-1-20},
+   575		owner =        {hid-sp18-405},
+   576		url =          
+   577		{https://www.raspberrypi.org/documentation/installation/installing-images/},
+   578	}
+   579	
+   580	
+   581	@Misc{hid-sp18-405-tutorial-sd-car-osx-noob,
+   582		title =        {NOOBS},
+   583		author =       {{Raspberry Pi Foundation}},
+   584		howpublished = {Web Page},
+   585		note =         {Accessed 2018-1-20},
+   586		owner =        {hid-sp18-405},
+   587		url =          
+   588		{https://www.raspberrypi.org/documentation/installation/noobs.md},
+   589	}
+   590	
+   591	@Misc{hid-sp18-405-tutorial-sd-car-osx-nonoob,
+   592		title =        {INSTALLING OPERATING SYSTEM IMAGES},
+   593		author =       {{Raspberry Pi Foundation}},
+   594		howpublished = {Web Page},
+   595		note =         {Accessed 2018-1-20},
+   596		owner =        {hid-sp18-405},
+   597		url =          
+   598		{https://www.raspberrypi.org/documentation/installation/installing-images/},
+   599	}
+   600	
+   601	@Misc{hid-sp18-419-tutorial-gcp-signup,
+   602		title =        {Google Cloud Platform Free Trial},
+   603		author =       {Google}},
+   604		howpublished = {Web Page},
+   605		note =         {Accessed 2018-4-3},
+   606		owner =        {hid-sp18-419},
+   607		url =          
+   608		{https://console.cloud.google.com/freetrial},
+   609	}
+   610	
+   611	@Misc{hid-sp18-419-tutorial-gcp-setup,
+   612		title =        {Google Cloud SDK: Quickstart for Debian and Ubuntu},
+   613		author =       {Google}},
+   614		howpublished = {Web Page},
+   615		note =         {Accessed 2018-4-3},
+   616		owner =        {hid-sp18-419},
+   617		url =          {https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu},
+   618	}
+   619	
+   620	@Misc{hid-sp18-419-tutorial-gcp-reference,
+   621		title =        {Google Cloud SDK: Google Compute Instances},
+   622		author =       {Google}},
+   623		howpublished = {Web Page},
+   624		note =         {Accessed 2018-4-3},
+   625		owner =        {hid-sp18-419},
+   626		url =          {https://cloud.google.com/sdk/gcloud/reference/compute/instances/},
+   627	}
+   628	
+   629	
+   630	@Misc{hid-sp18-516-www-chameleon,
+   631	  Title                    = {OpenStack KVM User Guide},
+   632	
+   633	  Author                   = {Chameleon Cloud},
+   634	  HowPublished             = {Web Page},
+   635	  Note                     = {Accessed 2018-03-08},
+   636	  Year                     = {2018},
+   637	
+   638	  Owner                    = {spathan},
+   639	  Timestamp                = {2018.03.31},
+   640	  Url                      = {https://www.chameleoncloud.org/docs/user-guides/openstack-kvm-user-guide/}
+   641	}
+   642	
+   643	@TechReport{hid-sp18-516-las17handbook,
+   644	  Title                    = {Handbook of Clouds and Big Data -- Theory and Practice},
+   645	  Author                   = {Gregor von Laszewski and Geoffrey C. Fox and Judy Qiu},
+   646	  Institution              = {Indiana University},
+   647	  Year                     = {2018},
+   648	
+   649	  Address                  = {Smith Research Center, Bloomington, IN 47408},
+   650	  Month                    = jan,
+   651	  Type                     = {Draft},
+   652	
+   653	  Owner                    = {spathan},
+   654	  Timestamp                = {2018.03.31},
+   655	  Url                      = {https://tinyurl.com/cloudmesh/vonLaszewski-bigdata.pdf}
+   656	}
+   657	
+   658	@Misc{hid-sp18-516-www-openstack,
+   659	  Title                    = {Software},
+   660	
+   661	  Author                   = {OpenStack},
+   662	  HowPublished             = {Web Page},
+   663	  Note                     = {Accessed 2018-03-08},
+   664	  Year                     = {2018},
+   665	
+   666	  Owner                    = {spathan},
+   667	  Timestamp                = {2018.03.31},
+   668	  Url                      = {https://www.openstack.org/software/}
+   669	}
+   670	
+   671	@Comment{jabref-meta: databaseType:bibtex;}
+   672	
+WARN - BibTeX subsystem: /var/folders/y0/kzfk034x0qsf8lqt0315tz7h0000gn/T/DrnsWB93Vb/references.bib_16136.utf8, line 611, warning: 120 characters of junk seen at toplevel
+WARN - BibTeX subsystem: /var/folders/y0/kzfk034x0qsf8lqt0315tz7h0000gn/T/DrnsWB93Vb/references.bib_16136.utf8, line 620, warning: 136 characters of junk seen at toplevel
+WARN - BibTeX subsystem: /var/folders/y0/kzfk034x0qsf8lqt0315tz7h0000gn/T/DrnsWB93Vb/references.bib_16136.utf8, line 630, warning: 142 characters of junk seen at toplevel

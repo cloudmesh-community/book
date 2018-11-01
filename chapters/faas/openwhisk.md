@@ -1,4 +1,4 @@
-# Apache OpenWhisk :o: {#s-openwhisk}
+# Apache OpenWhisk {#s-openwhisk}
 
 Apache OpenWhisk is a Function as a Service (FaaS), aka Serverless computing, platform used to execute code in response of an events via triggers by managing the infrastructure, servers and scaling. The advantage of OpenWhisk over traditional long-running VM or container approach is that there is lack of resiliency-related overhead in OpenWhisk. OpenWhisk is inherently scalable since the actions are executed on demand. OpenWhisk also helps the developers to focus only on coding by taking care of infrastructure-related tasks like monitoring and patching.
 
@@ -6,7 +6,7 @@ The developers provide the code written in the desired programming language for 
 
 ## OpenWhisk Workflow
 
-OpenWhisk uses Nginx, Kafka, Docker and CouchDB as internal components. To understand the role of each of these components, let's review an action invocation trace in the system. Remember the main outcome of OpenWhisk (or Serverless architecture in general) is to execute the user's code inside the system and return the result. The workflow of the OpenWhisk is illustrated in the following figure:
+OpenWhisk uses Nginx, Kafka, Docker and CouchDB as internal components. To understand the role of each of these components, let's review an action invocation trace in the system. Remember the main outcome of OpenWhisk (or Serverless architecture in general) is to execute the user's code inside the system and return the result. The workflow of the OpenWhisk is illustrated in the figure +@fig:openwhisk-workflow
 
 ![OpenWhisk workFlow](images/openwhisk_workflow.png){#fig:openwhisk-workflow}
 
@@ -62,7 +62,7 @@ The controller "publishes" a message to Kafka. This message contains the require
 
 As the heart of the OpenWhisk, the Invoker's responsibility is to invoke the action. Invoker is implemented in Scala but it uses Docker for a safe and isolated execution. For each invoked actions, a container is spawned and the code as well as the parameters are passed to it. As soon as the result is obtained, the container is terminated.
 
-The `HelloAction` example is a node.js action and therefore the invoker will start a node.js container, inject our above-mentioned code to it, runs the code and gets the results, save the logs and terminates the node.js container.
+The ` Action` example is a node.js action and therefore the invoker will start a node.js container, inject our above-mentioned code to it, runs the code and gets the results, save the logs and terminates the node.js container.
 ### CouchDB again
 The result of the Invoker is saved in another database in CouchDB, namely `activations`, under same ActivationId that was sent back to the user. The result of the `HelloAction` example containing the log in JSON format, would look like this:
 
@@ -163,7 +163,7 @@ However, starting another instance of the docker image with this command outputt
 command: /bin/sh -c "exec /init.sh --id 0 >> /home/owuser/controller-local_logs.log 2>&1"
 ```
 
-## "Hello World" in OpenWhisk
+## Hello World in OpenWhisk
 
 OpenWhisk provides a command line tool called [openwhisk-cli](https://github.com/apache/incubator-openwhisk-cli) which is used for controlling the platform. As part of the `make quick-start` command that we used above for starting the platform, the account credentials will automatically be written into the configuration of the CLI. You can either install the CLI directly from the repository or install it using `linuxbrew`. Alternatively, use the binary available in this path in OpenWhisk Devtools folder:
 
