@@ -1,4 +1,4 @@
-## FaaS :o:
+## FaaS
 
 ### Introduction
 FaaS or Function as a service is a new paradim in cloud computing that is gaining popularity recently. FaaS is also
