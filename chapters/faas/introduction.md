@@ -13,7 +13,7 @@ such as a maximum size for the function, maximum memory allowed, execution time,
 provider to provider. AWS Lambda is considered as one of first FaaS offerings. Now most cloud providers offer their own
 version of FaaS. Several popular FaaS providers are listed below.
 
-Faas provider
+#### Faas provider
 
 * AWS Lambda <https://aws.amazon.com/lambda/>
 * Azure Functions <https://azure.microsoft.com/en-us/services/functions/>
@@ -33,31 +33,21 @@ sourced. IBM currently deploys OpenWhisk in IBM cloud and offers it as a IBM Clo
 * Fission <https://github.com/fission/fission>
 * FaaS-netes <https://github.com/alexellis/faas-netes>
 
+There are many articles and tutorials online that provide very good information regarding FaaS. Below are some such
+resources that provide introductions and some example usecase's of FaaS
 
-
-
+#### Resources
 
 * <https://stackify.com/function-as-a-service-serverless-architecture/>
-
-netflix
-
-* <https://aws.amazon.com/solutions/case-studies/netflix-and-aws-lambda/>
-
-
-example openfaas
-* <https://blog.alexellis.io/first-faas-python-function/>
-
 * <https://en.wikipedia.org/wiki/Serverless_computing>
-
-
 * <https://azure.microsoft.com/en-us/overview/serverless-computing/>
 * <https://aws.amazon.com/serverless/>
 * <https://aws.amazon.com/lambda/>
 * <https://www.infoworld.com/article/3093508/cloud-computing/what-serverless-computing-really-means.html>
-
 * <https://techbeacon.com/aws-lambda-serverless-apps-5-things-you-need-know-about-serverless-computing>
-
-* <https://en.wikipedia.org/wiki/Function_as_a_service>
-* <https://github.com/openfaas/faas>
 * <https://blog.alexellis.io/introducing-functions-as-a-service/>
 
+#### Usage Examples
+
+* <https://aws.amazon.com/solutions/case-studies/netflix-and-aws-lambda/>
+* <https://blog.alexellis.io/first-faas-python-function/>

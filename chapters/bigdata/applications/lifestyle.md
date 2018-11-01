@@ -291,10 +291,7 @@ and value of heuristic algorithms.
 - <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/clusterfinal_m3_c3dating_reclustered.pviz>
 - <https://github.com/cloudmesh-community/book/blob/master/examples/python/plotviz/fungi_lsu_3_15_to_3_26_zeroidx.pviz>
 
-### k-Means
-
-
-### Resources
+### Resources k-means
 
 -   <http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutorial> [@www-slideshare-building]
 -   <http://www.ifi.uzh.ch/ce/teaching/spring2012/16-Recommender-Systems_Slides.pdf> [@www-ifi-teaching]
