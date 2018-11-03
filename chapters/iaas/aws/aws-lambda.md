@@ -16,7 +16,7 @@ been loaded into the system and automatically manages the computing
 resources required by that code. According to the the Lambda product page
 
 > “AWS Lambda lets you run code without provisioning or managing
-> servers.” [https://aws.amazon.com/lambda/]
+> servers.” [Aws](https://aws.amazon.com/lambda/) (:o: refernce to bibtex)
 
 For example, one of the use-cases would be that everytime AWS Lambda
 could resize the picture, after it is uploaded onto AWS S3 system and
@@ -109,7 +109,7 @@ Step 5: For runtime, we will select Node.js 6.10 and then press “Blank Functio
 Step 6: We will skip this step and press <span style="background-color:blue;color:white">&nbsp;Next&nbsp;</span>. 
 (see +@fig:aws-lambda-next)
 
-![Next](images/aws_lambda_2.png){#fig:aws-lambda-next}
+![Next](images/aws_lambda_2.png)
  
 Step 7: Let’s give the Name as isPalindrome and put in a description 
 of our new Lambda Function, or we can leave it blank. (see +@fig:aws-lambda-description)
@@ -132,9 +132,9 @@ For Policy templates, we will choose “Simple Microservice” permissions.
 
 Step 9: For Memory, 128 megabytes is more than enough for our simple
 function. As for the 3 second timeout, this means that — should the
-function not return within 3 seconds — AWS will shut it down and
+function not return within 3 seconds - AWS will shut it down and
 return an error. Three seconds is also more than enough. Leave the
-rest of the advanced settings unchanged.
+rest of the advanced settings unchanged (see +@#fig:aws-lambda-settings).
 
 ![Advanced Settings](images/aws_lambda_5.png){#fig:aws-lambda-settings}
 
