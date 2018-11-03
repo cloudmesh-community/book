@@ -1,4 +1,4 @@
-# AWS Lambda :o: {#s-aws-lambda}
+# AWS Lambda {#s-aws-lambda}
 
 ---
 
