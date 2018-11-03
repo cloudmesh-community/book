@@ -1,11 +1,21 @@
-Installation of Hadoop
-======================
+# Installation of Hadoop
 
 TODO: THERE IS ALSO ONE LIKE THIS IN
 
 ./dest/chapters/mapreduce/hadoop-installation.md
 
 WHAT IS THE DIFFERENCE
+
+
+## Releases
+
+Hadoop changes on regular basis. Before follwoing this section, we
+recommend that you visit
+
+* <https://hadoop.apache.org/releases.html>
+
+and verify that you use an up to dat version.If the verison of this
+instalation is outdated. we ask you as excrsise to update it.
 
 
 In this section we use Hadoop 3.0.0 and we install Hadoop locally in
@@ -103,6 +113,10 @@ Now execute the following commands to download and install java
     wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.tar.gz"
     tar xvzf jdk-8u161-linux-x64.tar.gz
 
+Releases of Hadoop
+------------------
+
+HAdoop changes frequently and we recommend that you visit the original H
 Installation Of Hadoop
 ----------------------
 

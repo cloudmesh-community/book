@@ -1,9 +1,28 @@
 # Installation of Hadoop {#s-hadoop-installation}
 
-In this section we use Hadoop 3.0.1 and we install Hadoop locally in
+:o: THis section was checked for hadoop 3.0.1, but not yet for
+hadoop 3.0.3. Please report back if you were successful. Note however
+that the current version is 3.1.1
+
+In this section we use Hadoop 3.0.3 and we install Hadoop locally in
 Ubuntu 18.04. We also describe the installation of the Yarn resource
 manager. We assume that you have ssh, and rsync installed and use emacs
 as editor.
+
+
+
+## Releases
+
+Hadoop changes on regular basis. Before follwoing this section, we
+recommend that you visit
+
+* <https://hadoop.apache.org/releases.html>
+
+The list of downloadable files is also available at
+
+and verify that you use an up to dat version.If the verison of this
+instalation is outdated. we ask you as excrsise to update it.
+
 
 ## Prerequisites
 
@@ -102,13 +121,13 @@ Please note that users must accept Oracle OTN license before downloading JDK.
 
 ## Installation of Hadoop
 
-First we will take a look on how to install Hadoop 3.0.1 on Ubuntu
+First we will take a look on how to install Hadoop 3.0.3 on Ubuntu
 16.04. We may need a prior folder structure to do the installation
 properly.
 
     cd ~/cloudmesh/bin/
-    wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-3.0.1/hadoop-3.0.1.tar.gz
-    tar -xzvf hadoop-3.0.1.tar.gz
+    wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-3.0.3/hadoop-3.0.3.tar.gz
+    tar -xzvf hadoop-3.0.3.tar.gz
 
 
 ## Hadoop Environment Variables
@@ -119,7 +138,7 @@ at it can be accessed the following way
     emacs ~/.bashrc
 
     export JAVA_HOME=~/cloudmesh/bin/jdk1.8.0_161
-    export HADOOP_HOME=~/cloudmesh/bin/hadoop-3.0.1
+    export HADOOP_HOME=~/cloudmesh/bin/hadoop-3.0.3
     export YARN_HOME=$HADOOP_HOME
     export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
     export PATH=$HADOOP_HOME/bin:$JAVA_HOME/bin:$PATH
