@@ -1,6 +1,10 @@
 # Google Cloud Functions :o: fa18-516-08
 
-:o: add (see ...) for figures, see first figure, use proper captions
+:o: add (see ...) for figures, see step 2 for example
+
+:o: use proper captions instead of youst numbers
+
+:o: all images must bi in the images subfolder the folder can not be called assets, gregor renamed
 
 ---
 
