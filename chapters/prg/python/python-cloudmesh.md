@@ -1,5 +1,4 @@
-Draft: Enhanced Cloudmesh
--------------------------
+# Draft: Enhanced Cloudmesh
 
 In this chapter we will be using some advanced Python features to
 enhance Cloudmesh. Cloudmesh is supposed to easily manage multiple
@@ -38,7 +37,7 @@ programming \> environments and different programming languages.
 Parallel Services: \> so that we can issue commands in parallel and
 manage virtual \> machines in a multi cloud environment.
 
-### Configuration
+## Configuration
 
 As we are developing a multi-cloud environment, we need some mechanism
 to define the clouds easily. To make our development effort simpler, we
@@ -132,20 +131,20 @@ There are some special properties of this file that we need to discuss.
 
 -   
 
-### Storage
+## Storage
 
 As we need to store some of the data we must identify a suitable
 database for storing information about virtual machines and other
 information related to the clouds. Although shelve comes in mind, we
 found out that it is not compatible between python 2 and 3 which may be
 an issue in future. Also when considering services such as mongodb they
-have to be started and properly secured. THis naturally can be done with
+have to be started and properly secured. This naturally can be done with
 containers. We also do not want to use large frameworks such as django
 which come with build in object models as they are not lightweight.
 Hence, we start we just use a file based sql database as provided with
 sqlite3.
 
-#### sqlite3
+### sqlite3
 
 While we keep the configuration in the configuration yaml file we intend
 to create a database entry for virtual machines we start in the cloud.
@@ -194,7 +193,7 @@ class Database (object):
 Additionally we want to create convenience methods for adding, deleting,
 and searching information
 
-#### Context
+### Context
 
 Python provides the feature of a context that we are well familiar with
 from file management. An example is:
@@ -214,7 +213,7 @@ action on named virtual machines.
 To illustrate what we have in mind, please take a look at our initial
 examples.
 
-##### Cloud Context
+#### Cloud Context
 
 When defining the following cloud context
 

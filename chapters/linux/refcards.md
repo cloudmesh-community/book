@@ -1,5 +1,13 @@
 # Refcards
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Obtain quickly information about technical aspects with the help of [reference cards]{.index}.
+
+---
+
 We present you with a list of useful short reference cards. This cards
 can be extremely useful to remind yourself about some important commands
 and features. Having them could simplify your interaction with the

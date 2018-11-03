@@ -1,7 +1,6 @@
-Python for Big Data
--------------------
+# Python for Big Data
 
-### An Example with Pandas, NumPy and Matplotlib
+## An Example with Pandas, NumPy and Matplotlib
 
 In this example, we will download some traffic citation data for the
 city of Bloomington, IN, load it into Python and generate a histogram.
@@ -9,7 +8,7 @@ In doing so, you will be exposed to important Python libraries for
 working with big data such as [numpy](www.numpy.org),
 [pandas](pandas.pydata.org) and [matplotlib](matplotlib.org).
 
-#### Set Up Directories and Get Test Data
+## Set Up Directories and Get Test Data
 
 Data.gov is a government portal for open data and the [city of
 Bloomington, Indiana makes available a number of datasets
@@ -41,7 +40,7 @@ for you. To install `matplotlib`, make sure you've activated your
 If you are using a different distribution of Python, you will need to
 make sure that all three of these modules are installed.
 
-#### Load Data in Pandas
+## Load Data in Pandas
 
 From the same directory where you saved the citations data, let's start
 the Python interpreter and load the citations data for Q1 2016
@@ -59,7 +58,7 @@ load each of the modules we will use in this example. The final line
 uses Pandas' `read_csv` function to load the data into a Pandas
 `DataFrame` data structure.
 
-#### Working with DataFrames
+## Working with DataFrames
 
 You can verify that you are working with a `DataFrame` and use some of
 its methods to take a look at the structure of the data as follows:
@@ -136,7 +135,7 @@ functions in the `datetime` module linked above.
     ...  lambda row: datetime.strftime(row['DateTime Issued'], '%A'), axis=1
     ... )
 
-#### Plotting with Matplotlib and NumPy
+## Plotting with Matplotlib and NumPy
 
 Let's say we want to see how many citations were given each day of the
 week. We gather the data first:
@@ -158,7 +157,7 @@ You should see something like this on your screen:
 
 ![image](images/dow.png){width="4.16667in"}
 
-#### More DataFrame Manipulation and Plotting
+## More DataFrame Manipulation and Plotting
 
 `DataFrame`s and `numpy` give us other ways to manipulate data. For
 example, we can plot a histogram of the ages of violators like this:
@@ -183,7 +182,7 @@ the histogram again:
 
 ![image](images/ages-filtered.png){width="4.16667in"}
 
-#### Saving Plots to PDF
+## Saving Plots to PDF
 
 Oftentimes, you will want to save your `matplotlib` graph as a PDF or an
 SVG file instead of just viewing it on your screen. For both, we need to
@@ -207,7 +206,7 @@ If we want to save the figure as PDF instead, we need to use the
     >>> fig.savefig(pp, format='pdf')
     >>> pp.close()
 
-#### Next Steps and Exercises
+## Next Steps and Exercises
 
 There is a lot more to working with `pandas`, `numpy` and `matplotlib`
 than we can show you here, but hopefully this example has piqued your
@@ -219,9 +218,9 @@ please take a look at the tutorials below. The `numpy` and `pandas`
 tutorials are mandatory if you want to be able to use these modules, and
 the `matplotlib` gallery has many useful code examples.
 
-### Summary of Useful Libraries
+## Summary of Useful Libraries
 
-#### Numpy
+### Numpy
 
 -   <http://www.numpy.org/%7D>
 
@@ -233,7 +232,7 @@ random number capabilities".
 
 Tutorial: <https://docs.scipy.org/doc/numpy-dev/user/quickstart.html>
 
-#### MatplotLib
+### MatplotLib
 
 -   <http://matplotlib.org/>
 
@@ -246,7 +245,7 @@ graphical user interface toolkits."
 
 Matplotlib Gallery: <http://matplotlib.org/gallery.html>
 
-#### Pandas
+### Pandas
 
 -   <http://pandas.pydata.org/>
 
@@ -263,9 +262,8 @@ Tutorial: <http://pandas.pydata.org/pandas-docs/stable/10min.html>
 Pandas Cheat Sheet:
 <https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf>
 
-### Big Data Libraries
 
-#### Scipy
+### Scipy
 
 -   <https://www.scipy.org/>
 
@@ -282,6 +280,8 @@ and engineering. In particular, these are some of the core packages:
 
 It is thus an agglomeration of useful packages and will probably suffice
 for your projects in case you use Python.
+
+### Graphics
 
 #### ggplot
 
@@ -348,7 +348,7 @@ It also allows to present the data in a table.
 
 -   networkx: <https://networkx.github.io/>
 
-#### REST
+### REST
 
 -   django REST Framework <http://www.django-rest-framework.org/>
 
@@ -373,8 +373,7 @@ It also allows to present the data in a table.
 
 -   <https://code.tutsplus.com/tutorials/building-rest-apis-using-eve--cms-22961>
 
-Parsing Data
-------------
+## Parsing Data
 
 Being able to parse data is an important activity in the data analysis
 process. Not all data may be following a specific format and the data

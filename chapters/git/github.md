@@ -1,5 +1,15 @@
 # Github
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Be able to use the [github]{.index} cloud sevices to collaborately develop contents and programs.
+* Be able to use github as part of an open source project.
+
+---
+
+
 In some classes the material may be openly shared in code repositories.
 This includes class material, papers and project. Hence, we need some
 mechanism to share content with a large number of students.
@@ -45,9 +55,8 @@ Next, we introduce some important concepts used in github.
 Before you can work with a repository in an easy fashion you need to
 upload a public key in order to access your repository. Naturally, you
 need to generate a key first which is explained in
-
-\TODO{lessons-ssh-generate-key}
-before you upload one. Copy the contents of your `.ssh/id_rsa.pub` file
+the section about ssh key generation (:o: TODO: lessons-ssh-generate-key include link
+) before you upload one. Copy the contents of your `.ssh/id_rsa.pub` file
 and add them to [your github keys](https://github.com/settings/keys).
 
 More information on this topic can be found on the [github Web
@@ -175,7 +184,7 @@ available to interface with github.com, the use of git from the
 commandline can often be faster and in many cases may be simpler.
 
 Git commandline tools can be easily installed on a variety of operating
-systems including Linux, OSX, and Windows. Many great tutorials exist
+systems including Linux, macOS, and Windows. Many great tutorials exist
 that will allow you to complete this task easily. We found the following
 two tutorials sufficient to get the task accomplished:
 
@@ -260,7 +269,7 @@ no special characters such as `@ ; / _` and spaces. In general we
 recommend that you avoid using directory names with capital letters
 spaces and \_ in them. This will simplify your documentation efforts and
 make the URLs from git more readable. Also while on some OS's the
-directories *MyDirectory* is different from *mydirectory* on OSX it is
+directories *MyDirectory* is different from *mydirectory* on macOS it is
 considered the same and thus renaming from capital to lower case can not
 be done without first renaming it to another directory.
 
@@ -359,16 +368,43 @@ course.
 
 ## Contributing to the Document
 
-### Clone
+It is relatively easy to contribute to the document if you understand how to use github.
+The first thing you will need to do is to create a fork of the repository. The easiest 
+way to do this is to visit the URL 
 
-    $ git remote add upstream \
-          https://github.com/cloudmesh-community/book
+*  <https://github.com/cloudmesh-community/book>
 
-### Merge
+Towards the upper right corner you will find a link called **Fork**. Click on it and chose 
+into which account you like to fork the original repository. Next you will create a colne 
+from your corked directory. You will see in your fork a green clone button. You will see a 
+URL that you can copy into your terminal. If the links does not include your username, it is 
+the wrong link.
 
-As we are allowing contribution by the community, they are best managed
-through a merge with our upstream repository so you can update to the
-newest status before you issue a pul request.
+In your terminal you now say 
+
+```bash
+git colne  https://github.com/<yourusername>/book
+```
+
+Now cd into this directory and make your changes.
+
+```
+$ cd book
+```
+
+Use the usual git commands such as ``git add``, ```git commit```, ```git push```
+
+Note you will push into your local directory.
+
+
+
+
+### Stay up to date with the original repo
+
+Form time to time you will see that others are contributing to the original repo. 
+To stay up to date you want to not only sync from your local copy, but also from the original repo.
+To link your repo with what is called the upstream you need to do the following once, so you can issue 
+`git pull` tha also pulls from the upstream
 
 Make sure you have upstream repo defined:
 
@@ -453,22 +489,30 @@ those tutorials. We found the following useful
 
 ## Exercises
 
-[\[E:Github.1\]]{#E:Github.1 label="E:Github.1"} How do you set your
-favorite editor as a default with github config
+E.Github.1: 
 
-[\[E:Github.2\]]{#E:Github.2 label="E:Github.2"} What is the difference
-between merge and rebase?
+> How do you set your favorite editor as a default with github config
 
-[\[E:Github.3\]]{#E:Github.3 label="E:Github.3"} Assume you have made a
-change in your local fork, however other users have since committed to
-the master branch, how can you make sure your commit works off from the
-latest information in the master branch?
+E.Github.2:
 
-[\[E:Github.4\]]{#E:Github.4 label="E:Github.4"} Find a spelling error
-in the Web page or a contribution and create a pull request for it.
+> What is the differencebetween merge and rebase?
 
-[\[E:Gitlab.5\]]{#E:Gitlab.5 label="E:Gitlab.5"} Create a README.yml in
-your github account directory provided for you for class.
+E.Github.3:
+
+> Assume you have made a
+> change in your local fork, however other users have since committed to
+> the master branch, how can you make sure your commit works off from the
+> latest information in the master branch?
+
+E.Github.4:
+
+> Find a spelling error
+> in the Web page or a contribution and create a pull request for it.
+
+E.Gitlab.5:
+
+> Create a README.yml in
+> your github account directory provided for you for class.
 
 ## Github Issues {#S:git-issues}
 
@@ -494,7 +538,6 @@ encouraging contributions from others. Furthermore it is also used as
 bug tracker in which not only you, but the community can communicate
 bugs to the project.
 
-\TODO{Tyler: Include image of the issues on hid-sample}
 A good resource for learning more about issues is provided at
 
 -   <https://guides.github.com/features/issues/>
@@ -515,7 +558,7 @@ description
 label
 
 :   a color enhanced label that can be used to easily categorize the
-    issue. YOu can define your own labels.
+    issue. You can define your own labels.
 
 milestone
 

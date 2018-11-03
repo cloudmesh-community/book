@@ -1,4 +1,4 @@
-# Python Modules
+# Python Modules {#s-python-modules}
 
 Often you may need functionality that is not present in Python's
 standard library. In this case you have two option:
@@ -78,7 +78,7 @@ here](https://lawsie.github.io/guizero/howto/).
 
 ### Kivy
 
-You can install Kivy on OSX as follows:
+You can install Kivy on macOS as follows:
 
 ```bash
 brew install pkg-config sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer
@@ -223,7 +223,7 @@ examples. For the assignments and the projects such platform dependent
 libraries are not to be used.
 
 If however you can write a platform independent code that works on
-Linux, OSX and Windows while using the python.org version but develop it
+Linux, macOS and Windows while using the python.org version but develop it
 with any of the other tools that is just fine. However it is up to you
 to guarantee that this independence is maintained and implemented. You
 do have to write requirements.txt files that will install the necessary
@@ -330,7 +330,7 @@ Then hit Go.
 Exercises
 ---------
 
-Python.Lib.1:
+E.Python.Lib.1:
 
 > Write a python program called iterate.py that accepts an integer n
 > from the command line. Pass this integer to a function called iterate.
@@ -352,4 +352,4 @@ E:Python.Lib.2:
 > 4.  Write a program that uses docopt to define a commandline program.
 >    Hint: modify the iterate program.
 
-> 5.  Demonstrate the program works and submit the code and output.
+> 5.  Demonstrate the program works.

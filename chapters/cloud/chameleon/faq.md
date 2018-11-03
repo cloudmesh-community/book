@@ -1,8 +1,6 @@
-Frequently Asked Questions
-==========================
+# Chameleon Cloud Frequently Asked Questions
 
-Appliances
-----------
+## Appliances
 
 ### What is an appliance?
 
@@ -122,8 +120,7 @@ against our resource registry, gathering of metrics, etc.
 Since 2016, we also provide and support Ubuntu 14.04 and 16.04
 appliances with the same functionality.
 
-Bare Metal Troubleshooting
---------------------------
+## Bare Metal Troubleshooting
 
 ### Why are my Bare Metal instances failing to launch?
 
@@ -140,8 +137,7 @@ make sure that:
 If you still cannot start instances, please [open a ticket with our help
 desk](https://www.chameleoncloud.org/user/help/).
 
-OpenStack KVM Troubleshooting
------------------------------
+## OpenStack KVM Troubleshooting
 
 ### Why are my OpenStack KVM instances failing to launch?
 
@@ -159,21 +155,18 @@ should not be discounted too easily, it is always prudent to first check
 for the following issues:
 
 -   Do you have a floating IP associated with your instance? By default,
-    instances do not have publicly-accessible IP addresses assigned. See
-    the **Managing Virtual Machine Instances** section in the [User
-    Guide](https://www.chameleoncloud.org/docs/user-guides/openstack-kvm-user-guide/).
+    instances do not have publicly-accessible IP addresses assigned.
+    See our documentation on [Associating a Floating IP Address](https://chameleoncloud.readthedocs.io/en/latest/technical/kvm.html#kvm-associate-ip).
 
 -   Does your security group allow incoming ICMP (e.g. ping) traffic? By
     default, firewall rules do not allow ping to your instances. If you
-    wish to enable it, see the **Firewall (Access Security)** section in
-    the [User
-    Guide](https://www.chameleoncloud.org/docs/user-guides/openstack-kvm-user-guide/).
+    wish to enable it, see our documentation on
+    [Adding a Security Group to an Instance](https://chameleoncloud.readthedocs.io/en/latest/technical/kvm.html#kvm-security-group).
 
 -   Does your security group allow incoming SSH (TCP port 22) traffic?
     By default, firewall rules do not allow SSH to your instances. If
-    you wish to enable it, see the **Firewall (Access Security)**
-    section in the [User
-    Guide](https://www.chameleoncloud.org/docs/user-guides/openstack-kvm-user-guide/).
+    you wish to enable it, see our documentation on
+    [Adding a Security Group to an Instance](https://chameleoncloud.readthedocs.io/en/latest/technical/kvm.html#kvm-security-group).
 
 If none of these solve your problem, please [open a ticket with our help
 desk](https://www.chameleoncloud.org/user/help/), and send us the

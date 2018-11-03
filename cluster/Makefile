@@ -4,29 +4,6 @@
 #
 # COMPLETED
 #
-
-CHAPTER_PREFIX=\
- ./dest/chapters/preface/update.md\
- ./dest/chapters/preface/preface.md\
- ./dest/chapters/preface/contributors.md\
- ./README.md\
-# ./dest/chapters/todo.md\
-# ./dest/todo.md\
-# ./dest/chapters/preface/issues.md
-
-CHAPTER_DOC=\
- ./dest/chapters/doc/SECTION.md\
- ./dest/chapters/doc/plagiarism.md\
- ./dest/chapters/doc/emacs.md\
- ./dest/chapters/doc/markdown.md\
- ./dest/chapters/doc/report.md\
- ./dest/chapters/doc/type.md
-
-
-#
-# DRAFTS
-#
-
 CHAPTER_CLASS=\
  ./dest/chapters/class/SECTION.md\
  ./dest/chapters/class/fall2018.md\
@@ -37,10 +14,6 @@ CHAPTER_CLASS=\
  ./dest/chapters/class/grading.md\
  ./dest/chapters/class/project-ideas.md
 
-
-CHAPTER_SERVICES=\
-  ./dest/chapters/doc/piazza.md\
- ./dest/chapters/preface/git.md
 
 CHAPTER_DRAFT=\
  ./dest/chapters/SECTION-DRAFT.md\

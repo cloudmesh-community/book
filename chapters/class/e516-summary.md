@@ -225,7 +225,7 @@ for more details.
 * Julia for Cloud Computing
 
   * :warning: We may not have time to cover this topic. However this could be chosen
-by a student as Chapter and tutorial contribution.
+by a student as Chapter and section contribution.
 
   * Language motivation
   * DocOpts with Julia
@@ -271,7 +271,7 @@ Bio
 
 Chapters
 
-: Contribute a significant chapter that may use your tutorial to the
+: Contribute a significant chapter that may use your section(s) to the
   class documentation. Do not develop redundant or duplicated content.
   The chapter can developed as a team to also allow review by more
   than one person. However each team member has to develop their own
@@ -286,25 +286,25 @@ Chapters
   A chapter must be a reasonable contribution to the class and related
   to cloud or edge computing.
 
-Tutorials
+Section
 
-: Contribute a significant tutorial. Do not develop redundant or
-  duplicated content. The tutorial can developed as a team to also
+: Contribute a significant section. Do not develop redundant or
+  duplicated content. The section can developed as a team to also
   allow review by more than one person. However each team member has
-  to develop their own tutorial. Plagiarism is not allowed.
+  to develop their own section. Plagiarism is not allowed.
 
   Example:
 
   * Installation of kubernetes on a Raspberry Pi cluster. This
-    tutorial shows practically how to do the installation
-  * Heroku. This tutorial  provides guidance on how to use Heroku
-  * Improvement of existing class tutorials are allowed
+    section shows practically how to do the installation
+  * Heroku. This section  provides guidance on how to use Heroku
+  * Improvement of existing class sections are allowed
   
-  A tutorial must be a reasonable contribution to the class and related
-  to cloud or edge computing. Multiple small tutorials could
-  be a reasonable contribution. Typically tutorials are correlated
+  A section must be a reasonable contribution to the class and related
+  to cloud or edge computing. Multiple small sections could
+  be a reasonable contribution. Typically sections are correlated
   within a chapter, you could have however multiple smaller chapters
-  and tutorials.
+  and sections.
 
 Projects
 
@@ -314,7 +314,7 @@ Projects
   summarize your result to others. Alternatively you could use a
   Project Chapter format that is integrated into the class
   material. However in this case you need to distinguish your
-  contribution from the regular tutorial and chapter assignment
+  contribution from the regular section and chapter assignment
 
   The project types include 
 
@@ -330,7 +330,7 @@ Projects
     OpenAPI REST service.
 
 
-:warning: Tutorials, chapters, and especially Projects are multi-week
+:warning: Sections, chapters, and especially Projects are multi-week
 projects. Do not be tempted to think that other classes are more
 important and start with your assignments the week before the
 deadline. 

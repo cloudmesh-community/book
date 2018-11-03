@@ -44,7 +44,7 @@ your grade in the registrar.
 
 CANVAS has also the tendency to give the students a wrong sense of
 security as all non graded assignments are not included into the grade
-calculation on CANVAS. THis again, your grade will be wrongly
+calculation on CANVAS. This again, your grade will be wrongly
 reported by CANVAS.
 
 Furthermore we are using only a letter grading scheme that distinguishes

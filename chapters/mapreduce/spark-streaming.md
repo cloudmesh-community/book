@@ -1,5 +1,4 @@
-Spark Streaming
-===============
+# Spark Streaming
 
 Streaming Concepts
 ------------------
@@ -39,6 +38,7 @@ Now we need to create file called streaming.py
 
 Then add the following content.
 
+```python
     from pyspark import SparkContext
     from pyspark.streaming import StreamingContext
 
@@ -64,6 +64,7 @@ Then add the following content.
     wordCounts.pprint()
     ssc.start()             # Start the computation
     ssc.awaitTermination(100)  # Wait for the computation to terminate
+```
 
 To run the code, we need to open up two terminals.
 
@@ -152,6 +153,7 @@ Let us build a simple Twitter App to see if everything is okay.
 Add the following content to the file and make sure you update the
 corresponding token keys with your token values.
 
+```python
     import tweepy
 
     CONSUMER_KEY = 'your_consumer_key'
@@ -165,8 +167,11 @@ corresponding token keys with your token values.
 
     status = "Testing!"
     api.update_status(status=status)
+```
 
+```
       python twitterstreaming.py
+```
 
 ### Step 4
 
@@ -185,6 +190,7 @@ twitter keys.
 
 Now add the following content.
 
+```python
     import tweepy
     from tweepy import OAuthHandler
     from tweepy import Stream
@@ -221,7 +227,7 @@ Now add the following content.
       auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
       twitter_stream = Stream(auth, TweetListener(c_socket))
-      twitter_stream.filter(track=['messi']) # you can change this topic 
+      twitter_stream.filter(track=['messi']) # you can change this topic
 
     if __name__ == "__main__":
       s = socket.socket()         
@@ -237,6 +243,7 @@ Now add the following content.
       print( "Received request from: " + str( addr ) )
 
       sendData( c )
+```
 
 ### step 5
 
@@ -260,6 +267,7 @@ new IPython notebook called twittersparkstremer.
 
 Then add the following content.
 
+```
     from pyspark import SparkContext
     from pyspark.streaming import StreamingContext
     from pyspark.sql import SQLContext
@@ -303,7 +311,7 @@ Then add the following content.
     count = 0
     while count < 10:
       time.sleep( 20 )
-      top_10_tweets = sqlContext.sql( 'Select tag, count from tweetsmessi' ) #change table name according to your entity 
+      top_10_tweets = sqlContext.sql( 'Select tag, count from tweetsmessi' ) #change table name according to your entity
       top_10_df = top_10_tweets.toPandas()
       display.clear_output(wait=True)  
       #sn.figure( figsize = ( 10, 8 ) )
@@ -312,13 +320,14 @@ Then add the following content.
       count = count + 1
 
     ssc.stop()
+```
 
 ### step 6
 
 Open `Terminal 1`, then do the following
 
       cd ~/cloudmesh/spark/streaming
-      python tweetslistener.py 
+      python tweetslistener.py
 
 It will show that:
 

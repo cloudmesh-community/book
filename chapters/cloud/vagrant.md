@@ -1,5 +1,14 @@
 # Vagrant
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Be able to experiment with virtual machines on your computer before you go on a cloud.
+* Simulate a virtual cluster with multiple VMs running on your computer if it is big enough.
+
+---
+
 A convenient tool to interface with Virtual Box is vagrant.Vagrant
 allows us to manage virtual machines directly from the commandline. It
 support also other providers and can be used to start virtual machines
@@ -19,7 +28,7 @@ A list of *boxes* is available from
 
 * <https://app.vagrantup.com/boxes/search>
 
-One image we will typically use is Ubuntu 18.04. PLease note that
+One image we will typically use is Ubuntu 18.04. Please note that
 older version may not be suitable for class and we will not support
 any questions about them. This image is located at
 
@@ -27,14 +36,14 @@ any questions about them. This image is located at
 
 ## Installation
 
-Vagrant is easy to install. YOu can go to the download page and
+Vagrant is easy to install. You can go to the download page and
 download and install the appropriate version:
 
 * <https://www.vagrantup.com/downloads.html>
 
-### OSX
+### macOS
 
-On MacOS, download the dmg image, and click on it. YOu will find a pkg
+On MacOS, download the dmg image, and click on it. You will find a pkg
 in it that you double click. After installation vagrant is installed in 
 
 * `/usr/local/bin/vagrant`
@@ -54,13 +63,13 @@ export PATH=/usr/local/bin:$PATH
 
 in the terminal command or in your `~/.bash_profile`
 
-### Windows
+### Windows :o: :question: 
 
-:?: students contribute
+:question: students contribute
 
-### Linux
+### Linux :o: :question: 
 
-:?: students contribute
+:question: students contribute
 
 ## Usage
 
@@ -107,7 +116,7 @@ When you exit the virtual machine with the
 exit command
 ```
 
-It does not terminate the VM. YOu can use from your host system the
+It does not terminate the VM. You can use from your host system the
 commands such as 
 
 ```bash

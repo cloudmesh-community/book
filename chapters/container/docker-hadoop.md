@@ -1,39 +1,97 @@
-# Apache Hadoop using Docker
+# Hadoop with Docker {#s-hadoop-docker}
 
 In this section we will explore the Map/Reduce framework using Hadoop
-provided through a Docker container. The example that we use in this
-session is similar to WordCount but simple calculations are added
-e.g. minimum, maximum, average and standard deviation values using
-several input files which contain float numbers.
+provided through a Docker container.
 
-## Draft: Creating the Hadoop Container
+We will showcase the functionality on a small example that calculates
+minimum, maximum, average and standard deviation values using several
+input files which contain float numbers.
 
-## Hadoop from Docker
 
-Build a docker image by Dockerfile from:
+This section is based on the hadoop release 3.0.3 which
+includes significant enhancements over the previous version of Hadoop
+2.x. Changes include the use of the following software:
 
-    mkdir hadoop
-    cd hadoop
-    wget https://raw.githubusercontent.com/cloudmesh/book/master/examples/docker/hadoop/Dockerfile
-    docker build -t cloudmesh/hadoop .
+* CentOS 7
+* systemctl
+* Java SE Development Kit 8
 
-## Start a Hadoop container
+A Dockerfile to create the hadoop deployment is available at
 
-    docker run -it cloudmesh/hadoop /etc/bootstrap.sh -bash
-    %docker run -it lee212/e222 /etc/bootstrap.sh -bash
+*<https://github.com/cloudmesh-community/book/blob/master/examples/docker/hadoop/3.0.3/Dockerfile>
 
-It may take a few minutes at first to download image layers which are
-about 847MB.
+## Building Hadoop using Docker
 
-## Statistical Example with Hadoop
+You can build hadoop from the Dockerfile as follows:
 
-After a container is launched, the interactive shell prompt is given to
-run hadoop application which we have an example to get Min/Max/Avg/Std
-values by analyzing input text files.
+```bash
+$ mkdir cloudmesh-community
+$ cd cloudmesh-community
+$ git clone https://github.com/cloudmesh-community/book.git
+$ cd book/examples/docker/hadoop/3.0.3
+$ docker build -t cloudmesh/hadoop:3.0.3 .
+```
 
-### Description
+The complete docker image for Hadoop consumes 1.5GB.
 
-In a nutshell, this Hadoop program reads multiple files from HDFS and
+```bash
+$ docker images
+```
+
+```bash
+REPOSITORY       TAG   IMAGE ID     CREATED    SIZE
+cloudmesh/hadoop 3.0.3 ba2c51f94348 1 hour ago 1.52GB
+```
+
+To use the image interactively you can start the container as follows:
+
+```bash
+$ docker run -it cloudmesh/hadoop:3.0.3 /etc/bootstrap.sh -bash
+```
+
+It may take a few minutes at first to download image.
+
+## Hadoop Configuration Files
+
+The configuration files are included in the `conf` folder
+
+## Virtual Memory Limit
+
+IN case you need more memory, you can increase it by changing the
+parameters in the file `mapred-site.xml`, for example:
+
+- mapreduce.map.memory.mba to 4096
+- mapreduce.reduce.memory.mb to 8192
+
+## hdfs Safemode leave command
+
+A Safemode for HDFS is a read-only mode for the HDFS cluster, where it does not allow any modifications of files and blocks.  Namenode disables safe mode automatically after starting up normally. If required, HDFS could be forced to leave the safe mode explicitly by this command:
+
+```bash
+$ hdfs dfsadmin -safemode leave
+```
+
+
+
+
+
+## Examples
+
+We included a statistics and a PageRank examples into the
+container. The examples are also available in github at
+
+* <https://github.com/cloudmesh-community/book/tree/master/examples/docker/hadoop/3.0.3/examples>
+
+We explain the examples next
+
+### Statistical Example with Hadoop
+
+After we launch the container and use the interactive shell, we can
+run the statistics Hadoop application which calculates the  minimum,
+maximim, average, and standard derivation from values stored in a
+number of input files. Figure +@fig:docker-hadoop-a shows the computing phases in a MapReduce job.
+
+To achieve this, this Hadoop program reads multiple files from HDFS and
 provides calculated values. We walk through every step from compiling
 Java source code to reading a output file from HDFS. The idea of this
 exercise is to get you started with Hadoop and the MapReduce concept.
@@ -44,90 +102,103 @@ standard deviation of a given data set.
 
 The input to the program will be a text file(s) carrying exactly one
 floating point number per line. The result file includes *min, max,
-average, and standard deviation* of these numbers.
+average, and standard deviation*.
 
-![Caption Missing](images/docker-hadoop-1.png){width="90%"}
+![MapReduce example in Docker](images/docker-hadoop-example.png){#fig:docker-hadoop-a}
 
-### Base Location
+#### Base Location
 
-The example is available at:
+The example is available within the container at:
 
-    cd /cloudmesh/exer1
+```bash
+container$ cd /cloudmesh/examples/statistics
+```
 
-### Input Files
+#### Input Files
 
-A test input files are available under `/cloudmesh/exer1/input_data}`
+A test input files are available under `/cloudmesh/examples/statistics/input_data`
 directory inside of the container. The statistics values for this input
 are *Min: 0.20 Max: 19.99 Avg: 9.51 StdDev: 5.55* for all input files.
 
 10 files contain 55000 lines to process and each line is a random float
 point value ranging from 0.2 to 20.0.
 
-### Compilation
+#### Compilation
 
 The source code file name is *MinMaxAvgStd.java* which is available at
-*/cloudmesh/exer1/src/exercise/*.
+`/cloudmesh/examples/statistics/src`.
 
 There are three functions in the code *Map, Reduce and Main* where Map
 reads each line of a file and updates values to calculate minimum,
 maximum values and Reduce collects mappers to produce average and
 standard deviation values at last.
 
-    export HADOOP_CLASSPATH=`$HADOOP_PREFIX/bin/hadoop classpath`
-    mkdir /cloudmesh/exer1/dest
-    javac -classpath $HADOOP_CLASSPATH -d /cloudmesh/exer1/dest /cloudmesh/exer1/src/exercise/MinMaxAvgStd.java
+```bash
+$ export HADOOP_CLASSPATH=`$HADOOP_HOME/bin/hadoop classpath`
+$ mkdir /cloudmesh/examples/statistics/dest
+$ javac -classpath $HADOOP_CLASSPATH -d /cloudmesh/examples/statistics/dest /cloudmesh/examples/statistics/src/MinMaxAvgStd.java
+```
 
 These commands simply prepare compiling the example code and the
 compiled class files are generated at the *dest* location.
 
-### Archiving Class Files
+#### Archiving Class Files
 
 Jar command tool helps archiving classes in a single file which will be
 used when Hadoop runs this example. This is useful because a jar file
 contains all necessary files to run a program.
 
-    cd /cloudmesh/exer1
-    jar -cvf exer1.jar -C ./dest/ .
+```bash
+$ cd /cloudmesh/examples/statistics
+$ jar -cvf stats.jar -C ./dest/ .
+```
 
-### HDFS for Input/Output
+#### HDFS for Input/Output
 
 The input files need to be uploaded to HDFS as Hadoop runs this example
 by reading input files from HDFS.
 
-    export PATH=$PATH:/$HADOOP_PREFIX/bin
-    hadoop fs -mkdir exer1_input
-    hadoop fs -put input_data/* exer1_input
-    hadoop fs -ls exer1_input/
+```bash
+$ export PATH=$PATH:/HADOOP_HOME/bin
+$ hadoop fs -mkdir stats_input
+$ hadoop fs -put input_data/* stats_input
+$ hadoop fs -ls stats_input/
+```
 
 If uploading is completed, you may see file listings like:
 
-    Found 10 items
-    -rw-r--r-- 1 root supergroup  13942 2018-02-28 23:16 exer1_input/data_1000.txt
-    -rw-r--r-- 1 root supergroup 139225 2018-02-28 23:16 exer1_input/data_10000.txt
-    -rw-r--r-- 1 root supergroup  27868 2018-02-28 23:16 exer1_input/data_2000.txt
-    -rw-r--r-- 1 root supergroup  41793 2018-02-28 23:16 exer1_input/data_3000.txt
-    -rw-r--r-- 1 root supergroup  55699 2018-02-28 23:16 exer1_input/data_4000.txt
-    -rw-r--r-- 1 root supergroup  69663 2018-02-28 23:16 exer1_input/data_5000.txt
-    -rw-r--r-- 1 root supergroup  83614 2018-02-28 23:16 exer1_input/data_6000.txt
-    -rw-r--r-- 1 root supergroup  97490 2018-02-28 23:16 exer1_input/data_7000.txt
-    -rw-r--r-- 1 root supergroup 111451 2018-02-28 23:16 exer1_input/data_8000.txt
-    -rw-r--r-- 1 root supergroup 125337 2018-02-28 23:16 exer1_input/data_9000.txt
+```bash
+Found 10 items
+-rw-r--r-- 1 root supergroup  13942 2018-02-28 23:16 stats_input/data_1000.txt
+-rw-r--r-- 1 root supergroup 139225 2018-02-28 23:16 stats_input/data_10000.txt
+-rw-r--r-- 1 root supergroup  27868 2018-02-28 23:16 stats_input/data_2000.txt
+-rw-r--r-- 1 root supergroup  41793 2018-02-28 23:16 stats_input/data_3000.txt
+-rw-r--r-- 1 root supergroup  55699 2018-02-28 23:16 stats_input/data_4000.txt
+-rw-r--r-- 1 root supergroup  69663 2018-02-28 23:16 stats_input/data_5000.txt
+-rw-r--r-- 1 root supergroup  83614 2018-02-28 23:16 stats_input/data_6000.txt
+-rw-r--r-- 1 root supergroup  97490 2018-02-28 23:16 stats_input/data_7000.txt
+-rw-r--r-- 1 root supergroup 111451 2018-02-28 23:16 stats_input/data_8000.txt
+-rw-r--r-- 1 root supergroup 125337 2018-02-28 23:16 stats_input/data_9000.txt
+```
 
-### Run Program with a Single Input File
+#### Run Program with a Single Input File
 
 We are ready to run the program to calculate values from text files.
 First, we simply run the program with a single input file to see how it
 works. `data_1000.txt` contains 1000 lines of floats, we use this file
 here.
 
-    hadoop jar exer1.jar exercise.MinMaxAvgStd exer1_input/data_1000.txt exer1_output_1000
+```bash
+$ hadoop jar stats.jar exercise.MinMaxAvgStd stats_input/data_1000.txt stats_output_1000
+```
 
 The command runs with input parameters which indicate a jar file (the
-program, exer1.jar), exercise.MinMaxAvgStd (package name.class name),
-input file path (`exer1_input/data_1000.txt`) and output file path
-(`exer1_output_1000`).
+program, stats.jar), exercise.MinMaxAvgStd (package name.class name),
+input file path (`stats_input/data_1000.txt`) and output file path
+(`stats_output_1000`).
 
 The sample results that the program produces look like this:
+
 
     18/02/28 23:48:50 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
     18/02/28 23:48:50 INFO input.FileInputFormat: Total input paths to process: 1
@@ -201,11 +272,13 @@ The sample results that the program produces look like this:
 The second line of the following logs indicates that the number of input
 files is 1.
 
-### Result for Single Input File
+#### Result for Single Input File
 
 We reads results from HDFS by:
 
-    hadoop fs -cat exer1_output_1000/part-r-00000
+```bash
+$ hadoop fs -cat stats_output_1000/part-r-00000
+```
 
 The sample output looks like:
 
@@ -214,7 +287,7 @@ The sample output looks like:
     Avg: 10.225467263249385
     Std: 5.679809322880863
 
-### Run Program with Multiple Input Files
+#### Run Program with Multiple Input Files
 
 The first run was done pretty quickly (1440 milliseconds took according
 to the sample result above) because the input file size was small (1,000
@@ -223,7 +296,9 @@ larger size (2,000 to 10,000 lines). Input files are already uploaded to
 HDFS. We simply run the program again with a slight change in the
 parameters.
 
-    hadoop jar exer1.jar exercise.MinMaxAvgStd exer1_input/ exer1_output_all
+```bash
+$ hadoop jar stats.jar exercise.MinMaxAvgStd stats_input/ stats_output_all
+```
 
 The command is almost same except that an input path is a directory and
 a new output directory. Note that every time that you run this program,
@@ -306,9 +381,11 @@ of input files to process is 10, see the line two below:
       File Output Format Counters
         Bytes Written=84
 
-### Result for Multiple Files
+#### Result for Multiple Files
 
-    hadoop fs -cat exer1_output_all/part-r-00000
+```bash
+$ hadoop fs -cat stats_output_all/part-r-00000
+```
 
 The expected result looks like:
 
@@ -317,11 +394,17 @@ The expected result looks like:
     Avg: 9.514884854468903
     Std: 5.553921579413547
 
-Conclusion
-----------
+### Conclusion
 
 The example program of calculating some values by reading multiple files
 shows how Map/Reduce is written by a Java programming language and how
 Hadoop runs its program using HDFS. We also observed the one of benefits
 using Docker container which is that the hassle of configuration and
 installation of Hadoop is not necessary anymore.
+
+
+## Refernces
+
+
+* The details of the new version is available from the official site
+  at <http://hadoop.apache.org/docs/r3.0.3/index.html>

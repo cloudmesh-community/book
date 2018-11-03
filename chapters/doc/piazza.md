@@ -253,7 +253,7 @@ Steps to getting your question answered on piazza
 
 4.  Place your question or problem in a forum that is relevant to its
     subject. That may seem obvious but anyone who has experience with
-    forums knows that a lot of questions show up in the wrong place. YOu
+    forums knows that a lot of questions show up in the wrong place. You
     will need to identify one or more a fitting piazza "folders"
     (folders sort the posts by topics).
 
@@ -352,7 +352,7 @@ form your class.
   lectures     Any question and discussion related to the lectures.
   project      Any question and discussion related to the project.
   chapter      Any question and discussion related to the chapter assignment
-  tutorial     Any question and discussion related to the tutorial assignment.
+  section     Any question and discussion related to the section assignment.
   python       Any question and discussion related to python.
   pi           Any question and discussion related to the Raspberry Pi 3. We are not using older Raspberry Pi's and therefore can not comment to them.
   bio          A homework folder in which you only publish your bio. The bio needs to be published as a *note*. This assignment also serves us to see if you are in piazza. Please do this assignment ASAP. You need to post a formal bio. See the many great examples in the folder.

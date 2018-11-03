@@ -1,4 +1,4 @@
-# OPenAPI Specification
+# OpenAPI Specification {#s-openapi-spec}
 
 Swagger provides through its specification the definition of REST
 services through a YAML or JSON document.
@@ -8,12 +8,12 @@ develop a RESTful service, the first and foremost step is to define the
 API conforming to the OpenAPI specification, and then using codegen
 tools to conveniently generate server side stub code, client code,
 documentations, in the language you desire. In Section
-[\[c:swagger-codegen\]](#c:swagger-codegen){reference-type="ref"
-reference="c:swagger-codegen"} the we have introduced the codegen tool
+[REST Service Generation with OpenAPI](#rest-service-generation-with-openapi)
+we have introduced the codegen tool
 and how to use that to generate server side and client side code and
 documentation. In this
-Section [1.1](#S:vcluster-spec){reference-type="ref"
-reference="S:vcluster-spec"} we will use a slightly more complex example
+Section [The Virtual Cluster example API Definition](#the-virtual-cluster-example-api-definition)
+we will use a slightly more complex example
 to show how to define an API following the OpenAPI 2.0 specification.
 The example is to retrieve virtual cluster (VC) object from the server.
 
@@ -22,7 +22,7 @@ Documentation Specification. It defines a specification to describe and
 document a RESTful service API. It is also known under version 3.0 of
 swagger. However, as the tools for 3.0 are not yet completed, we will
 continue for now to use version swagger 2.0, till the transition has
-been completed. THis is especially of importance, as we need to use the
+been completed. This is especially of importance, as we need to use the
 swagger codegen tool, which currently support only up to specification
 v2. Hence we are at this time using OpenAPI/Swagger v2.0 in our example.
 There are some structure and syntax changes in v3, while the essence is
@@ -53,7 +53,7 @@ info
     attributes, ***version*** and ***title*** are required while others
     are optional.
 
-path
+[path]{#s-openapi-path}
 
 :   defines the actual endpoints of the exposed RESTful API service.
     Each endpoint has a *field pattern* as the key, and a *Path Item
@@ -62,46 +62,48 @@ path
     final service URL, appended after the service *host* and *basePath*,
     which will be explained later.
 
-Let us focus on the *Path Item Object*. It contains one or more
-supported *operations* on the service endpoint. An *operation* is keyed
-by a valid HTTP operation verb, e.g., one of **get**, **put**, **post**,
-**delete**, or **patch**. It has a value of *Operation Object* that
-describes the operations in more detail.
+    Let us focus on the *Path Item Object*. It contains one or more
+    supported *operations* on the service endpoint. An *operation* is
+    keyed by a valid HTTP operation verb, e.g., one of **get**,
+    **put**, **post**, **delete**, or **patch**. It has a value of
+    *Operation Object* that describes the operations in more detail.
 
-The *Operation Object* will always **require** a *Response Object*. A
-*Response Object* has a *HTTP status code* as the key, e.g., **200** as
-successful return; **40X** as authentication and authorization related
-errors; and **50x** as other server side servers. It can also has a
-default response keyed by **default** for undeclared http status return
-code. The *Response Object* value has a **required** *description*
-field, and if anything is returned, a *schema* indicating the object
-type to be returned, which could be a primitive type, e.g., *string*, or
-an *array* or customized *object*. In case of *object* or an *array* of
-*object*, use *\$ref* to point to the definition of the object. In this
-example, we have
+    The *Operation Object* will always **require** a *Response
+    Object*. A *Response Object* has a *HTTP status code* as the key,
+    e.g., **200** as successful return; **40X** as authentication and
+    authorization related errors; and **50x** as other server side
+    servers. It can also has a default response keyed by **default**
+    for undeclared http status return code. The *Response Object*
+    value has a **required** *description* field, and if anything is
+    returned, a *schema* indicating the object type to be returned,
+    which could be a primitive type, e.g., *string*, or an *array* or
+    customized *object*. In case of *object* or an *array* of
+    *object*, use *\$ref* to point to the definition of the object. In
+    this example, we have
 
       $ref: "#/definitions/VC"
 
-to point to the *VC* definition in the *definitions* section in the same
-specification file, which will be explained later.
+    to point to the *VC* definition in the *definitions* section in
+    the same specification file, which will be explained later.
 
-Besides the required field, the *Operation Object* **can** have
-*summary* and *description* to indicate what the operation is about; and
-*operationId* to uniquely identify the operation; and *consumes* and
-*produces* to indicate what MIME types it expects as input and for
-returns, e.g., *application/json* in most modern RESTful APIs. It can
-further specify what input parameter is expected using *parameters*,
-which requires a *name* and *in* fields. *name* specifies the name of
-the parameter, and *in* specifies from where to get the parameter, and
-its possible values are *query*, *header*, *path*, *formData* or *body*.
-In this example in the */vc/{id}* path we obtain the *id* parameter from
-the URL path wo it has the *path* value. When the *in* has *path* as its
-value, the *required* field is required and has to be set as *true*;
-when the *in* has value other than *body*, a *type* field is required to
-specify the type of the parameter.
+    Besides the required field, the *Operation Object* **can** have
+    *summary* and *description* to indicate what the operation is
+    about; and *operationId* to uniquely identify the operation; and
+    *consumes* and *produces* to indicate what MIME types it expects
+    as input and for returns, e.g., *application/json* in most modern
+    RESTful APIs. It can further specify what input parameter is
+    expected using *parameters*, which requires a *name* and *in*
+    fields. *name* specifies the name of the parameter, and *in*
+    specifies from where to get the parameter, and its possible values
+    are *query*, *header*, *path*, *formData* or *body*.  In this
+    example in the */vc/{id}* path we obtain the *id* parameter from
+    the URL path wo it has the *path* value. When the *in* has *path*
+    as its value, the *required* field is required and has to be set
+    as *true*; when the *in* has value other than *body*, a *type*
+    field is required to specify the type of the parameter.
 
-While the three root level fields mentioned above are required, in most
-cases we will also use other optional fields.
+    While the three root level fields mentioned above are required, in most
+    cases we will also use other optional fields.
 
 host
 
@@ -135,13 +137,14 @@ definitions
 :   as used in in the *paths* field, in order to point to a customized
     object definition with a *\$ref* keyword.
 
-The *definitions* field really contains the object definition of the
-customized objects involved in the API, similar to a class definition in
-any Object Oriented programming language. In this example, we defined a
-*VC* object, and hierarchically a *Node* object. Each object defined is
-a type of *Schema Object* in which many field could be used to specify
-the object (see details in the REF link at top of the document), but the
-most frequently used ones are:
+    The *definitions* field really contains the object definition of
+    the customized objects involved in the API, similar to a class
+    definition in any Object Oriented programming language. In this
+    example, we defined a *VC* object, and hierarchically a *Node*
+    object. Each object defined is a type of *Schema Object* in which
+    many field could be used to specify the object (see details in the
+    REF link at top of the document), but the most frequently used
+    ones are:
 
 type
 
