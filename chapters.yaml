@@ -172,12 +172,13 @@
 - SERVERLESS:
     - chapters/SECTION/SECTION-SERVERLESS.md:
         - chapters/faas/introduction.md
-        - chapters/iaas/aws/aws-lambda.md
-        - chapters/faas/microsoft-azure-functions.md
-        - chapters/faas/google-cloud-functions.md
+        - chapters/fass/aws-lambda-1.md
+        - chapters/faas/aws-lambda-2.md        
         - chapters/faas/openwhisk.md
         - chapters/faas/openfaas.md
         - chapters/faas/kubeless.md
+        - chapters/faas/microsoft-azure-functions.md
+        - chapters/faas/google-cloud-functions.md
         - chapters/faas/riff.md
         - chapters/faas/fission.md
         - chapters/faas/ironfunction.md
