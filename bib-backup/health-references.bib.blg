@@ -1,0 +1,10 @@
+[0] Config.pm:343> INFO - This is Biber 2.5 running in TOOL mode
+[0] Config.pm:346> INFO - Logfile is 'health-references.bib.blg'
+[43] biber-darwin:290> INFO - === Thu Oct 25, 2018, 07:19:19
+[72] Biber.pm:3653> INFO - Looking for bibtex format file 'health-references.bib'
+[73] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[74] bibtex.pm:1048> INFO - Found BibTeX data source 'health-references.bib'
+[76] Utils.pm:149> WARN - Entry www-slideshare-2015-health does not parse correctly
+[90] Utils.pm:165> ERROR - BibTeX subsystem: /var/folders/y0/kzfk034x0qsf8lqt0315tz7h0000gn/T/y6RVahlMeW/health-references.bib_24759.utf8, line 74, syntax error: found "trends", expected ","
+[91] Biber.pm:108> INFO - WARNINGS: 1
+[91] Biber.pm:112> INFO - ERRORS: 1

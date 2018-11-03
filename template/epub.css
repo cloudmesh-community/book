@@ -72,6 +72,7 @@ h1 {
     page-break-before: always;
     background-color: WhiteSmoke;
     padding: 2px;
+    font-variant: small-caps;
 }
 .part {
     /* border-top: 12px solid transparent;*/
@@ -86,6 +87,7 @@ h2 {
     text-align: left;    
     font-family: OpenSans;
     border-bottom: 1px solid black;
+    font-variant: small-caps;
 }
 h3, h4, h5, h6 {
     font-family: OpenSans;
@@ -132,4 +134,32 @@ blockquote {
 }
 .smalltable {
     font-size: 50%;
+}
+
+.info, .success, .warning, .error, .validation {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 10px;
+background-repeat: no-repeat;
+background-position: 10px center;
+}
+.info {
+color: #00529B;
+background-color: #BDE5F8;
+background-image: url('chapters/images/info.png');
+}
+.success {
+color: #4F8A10;
+background-color: #DFF2BF;
+background-image:url('chapters/images/success.png');
+}
+.warning {
+color: #9F6000;
+background-color: #FEEFB3;
+background-image: url('chapters/images/warning.png');
+}
+.error {
+color: #D8000C;
+background-color: #FFBABA;
+background-image: url('chapters/images/error.png');
 }

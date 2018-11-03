@@ -1,0 +1,16 @@
+---
+title:
+- type: main
+  text: Cloud Computing
+creator:
+- role: editor
+  text: Gregor von Laszewski
+description: Big Data Applications
+rights: (c) Gregor von Laszewski, 2018
+language: en-US
+stylesheet: template/epub.css
+cover-image: cover/cover.jpg
+fignos-caption-name: Figure
+fignos-plus-name: Figure
+xnos-number-sections: True
+...

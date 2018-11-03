@@ -1,0 +1,24 @@
+From the repository, clone the following code:
+
+generate-data.py
+
+This will generate our example data set. You will need the following libraries:
+
+pip install numpy 
+pip install pandas 
+pip install h5py 
+pip install Pillow 
+pip install matplotlib 
+pip install scipy 
+pip install toolz 
+pip install pytables 
+pip install fastparquet
+pip install dask 
+pip install distributed
+pip install graphviz
+
+This is more simple if you can clone:
+
+# in directory dask-tutorial/
+# this takes a little while
+%run generate-data.py

@@ -1,8 +1,6 @@
-Data Formats
-============
+# Data Formats
 
-YAML
-----
+## YAML
 
 The term *YAML* stand for "YAML Ainot Markup Language". According to the
 Web Page at
@@ -25,8 +23,7 @@ as provided at
 
 * <http://www.yamllint.com/>
 
-An example on how to use yaml in python is provided in
-Figure [\[F:yaml\]](#F:yaml){reference-type="ref" reference="F:yaml"}.
+An example on how to use yaml in python is provided in our next example.
 Please note that YAML is a superset of JSON. Originally YAML was
 designed as a markup language. However as it is not document oriented
 but data oriented it has been recast and it does no longer classify
@@ -53,8 +50,7 @@ Resources:
 * <https://en.wikipedia.org/wiki/YAML>
 * <http://www.yamllint.com/>
 
-JSON
-----
+## JSON
 
 The term JSON stand for *JavaScript Object Notation*. It is targeted as
 an open-standard file format that emphasizes on integration of
@@ -72,8 +68,7 @@ Resources:
 * <https://en.wikipedia.org/wiki/JSON>
 * <https://www.json.org/>
 
-XML
----
+## XML
 
 XML stands for *Extensible Markup Language*. XML allows to define
 documents with the help of a set of rules in order to make it machine

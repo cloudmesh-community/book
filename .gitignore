@@ -1,3 +1,6 @@
+chapters/version.md
+chapters/authors.md
+.DS_Store
 package*.json
 node_modules
 # Byte-compiled / optimized / DLL files

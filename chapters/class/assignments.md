@@ -1,4 +1,4 @@
-## Assignments
+## Assignments 
 
 
 ### Terminology
@@ -17,31 +17,35 @@ License:
     README.md file which packages are used and which license these
     packages have.
     
-Tutorials:
+Sections:
 
-: Tutorials are written in markdown and include information on a
+: Sections are written in markdown and include information on a
   particular technical issue that is in general helpful for other
-  students. Tutorials must be about a substantial topic and include an
+  students. Sections must be about a substantial topic and include an
   introduction a section that teaches a reader a significant issue, as
-  well as practical code examples. Multiple small tutorials can lead
-  to a substantial contribution. We expect that the tutorial are of
+  well as practical code examples. Multiple small sections can lead
+  to a substantial contribution. We expect that the sections are of
   high quality and can be included in our handbooks. Please be careful
-  of plagiarism and do not just copy the tutorial or code from
+  of plagiarism and do not just copy the sections from tutorials or code or from
   elsewhere.
 
-Technology Paper:
+Technology or Review Paper :
 
 : A technology paper is a summary paper about a technology,
   application, or topic that is not yet covered in other technology
-  papers delivered by previous students of this class. It includes
-  useful information that provides an overview of what you are trying
-  to describe and analyses its relationship to the class topic. Be
-  mindful about plagiarism. The paper is written in LaTeX and uses
-  jabref for bibliography management. It uses the same format as your
-  report paper. The format is discussed in the Section 
-  [Report Format](#report-format).
+  papers delivered by previous students of this class. A review paper
+  is a paper that reviews a specific topic related to this class.
+  
+  In either case includes useful information that provides an overview
+  of what you are trying to describe and analyses its relationship to
+  the class topic. Be mindful about plagiarism. The paper is written
+  in LaTeX or Markdown and uses bibtex for bibliography management. It
+  uses the same format as your report paper. The format is discussed
+  in the Section [Report Format](#report-format).
 
-
+  Note: that for the 2018 we decided to just us Markdown and not LaTeX.
+  We will calculate the exact number of words needed.
+  
 Project:
 
 : We refer with the term project to the major activity that you chose
@@ -55,7 +59,7 @@ Term Paper:
 
 : A term paper is an enhanced topic paper (only available for
   I523). The difference is in length and depth of
-  coverage. Comparative or review papers can also be term papers. In
+  coverage. Comparative or review papers can also become term papers. In
   case you chose the term paper, you or your team will pick a topic
   relevant for the class.  Term papers should have the quality to be
   publishable either in a workshop or as part of the handbook. Not all
@@ -70,15 +74,18 @@ Term Paper:
   -   10 pages, two student in the project
   -   12 pages, three student in the project
 
+  We estimate that a single page is between 1000-1200 words.
+  Please note that for 2018 the format will be markdown, so the word
+  count will be used instead. 
   
 Project Report:
 
 : A project report is an enhanced topic paper that includes not just
   the analysis of a topic, but an actual code, with **benchmark** and
   demonstrated application use. Obviously it is longer than a
-  technology paper and includes descriptions about reproducibility of
-  the application. A README is provided that describes in tutorial
-  form how others can reproduce your project and run it.  Term papers
+  term paper and includes descriptions about reproducibility of
+  the application. A README is provided that describes in section 
+  how others can reproduce your project and run it.  Term papers
   should have the quality to be publishable either in a workshop or as
   part of the handbook. The format is discussed in the Section
   [Report Format](#report-format).  Remember tables and figures do not
@@ -88,6 +95,9 @@ Project Report:
   -   8 pages, two students in the project
   -   10 pages, three students in the project
 
+  We estimate that a single page is between 1000-1200 words.
+  Please note that for 2018 the format will be markdown, so the word
+  count will be used instead. 
 
 Project Code:
 
@@ -127,7 +137,7 @@ Bibliography:
 
 :   All bibliography has to be provided in a jabref/bibtex file. This is
     regardless if you use LaTeX or Word. There is **NO EXCEPTION** to
-    this rule. PLease be advised doing references right takes some time
+    this rule. Please be advised doing references right takes some time
     so you want to do this early. Please note that exports of Endnote or
     other bibliography management tools do not lead to properly
     formatted bibtex files, despite they claiming to do so. You will
@@ -144,7 +154,7 @@ For due dates see the [calendar](#calendar) section.
 ### Assignment 0 - Organization and Communication
 
 In order for us to communicate with you and you being able to use the
-class resources we need you to register with various systems.  THis
+class resources we need you to register with various systems.  This
 needs to be done immediately as it takes a while to get the systems set
 up. It also requires approval steps that take some time and are not
 immediate, thus do not just start this assignment on the due
@@ -261,8 +271,8 @@ update to 64 bit. Please consult the Windows documentation on
 this. Whatever you do, make a backup first. It may be easier to boot
 from an external HDD directly into ubuntu. 
 
-:warning: OSX users have typically an easy time as all TAs have access
-to OSX machines. However the version must be the latest version. We do
+:warning: macOS users have typically an easy time as all TAs have access
+to macOS machines. However the version must be the latest version. We do
 not support older versions.
 
 ---
@@ -293,7 +303,7 @@ tasked to do the following:
 1. You will be downloading and studying the technology abstracts that
    we collected in
 
-   * <https://github.com/cloudmesh/technologies/raw/master/vonLaszewski-cloud-echnologies.epub>
+   * <https://github.com/cloudmesh/technologies/raw/master/vonLaszewski-cloud-technologies.epub>
 
 2. You will be writing new or improving existing technology
    abstracts. A technology abstract is not plagiarized, does at most

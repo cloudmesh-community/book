@@ -1,8 +1,6 @@
-Draft: Artificial Intelligence
-==============================
+# Artificial Intelligence Service with REST :o:
 
-Unsupervised Learning
----------------------
+## Unsupervised Learning
 
 Keywords: clustering, kNN, Markov Model
 
@@ -21,21 +19,21 @@ look at the problem. Each algorithm is just an example on how we solve a
 particular problem. Before you apply an algorithm, attention should be
 given to the reason why we apply a specific algorithm.
 
-Draft: KMeans
--------------
+## KMeans
 
 KMeans is one of the most straight forward unsupervised learning
 algorithms.
 
-\slides{AI}{40}{Unsupervised Learning}{https://drive.google.com/file/d/1r62DpK-yK0L_v_KEBnmP6tdLfQFD7Lok/view?usp=sharing}
-Lab:Practice on AI
-------------------
+slides [AI (40) Unsupervised Learning](https://drive.google.com/file/d/1r62DpK-yK0L_v_KEBnmP6tdLfQFD7Lok/view?usp=sharing)
+
+## Lab:Practice on AI
 
 Keywords: Docker, REST Service, Spark
 
-\slides{Practice on AI}{40}{REST services}{https://drive.google.com/file/d/1pD4zbrFKkS7d6SsxIw33NIoDHQLIedXn/view?usp=sharing}
-Draft: k-NN
------------
+slides
+[Practice on AI (40) REST services](https://drive.google.com/file/d/1pD4zbrFKkS7d6SsxIw33NIoDHQLIedXn/view?usp=sharing)
+
+## k-NN
 
 k-NN is a non-parametric statistical method meaning there is no
 assumption made about the distribution of the data. Additionally the
@@ -61,16 +59,16 @@ equation to work by exploring if a car is fast or not by using
 reference="T:fast-cars"}. Lets pretend we know nothing about cars and
 are asked if we think a Chevy Corvette is fast or not.
 
-\bigskip
-         Car Name          Horsepower (HP)   Racing Stripe (Yes or No)   Fast (Yes or No)  
-  ----------------------- ----------------- --------------------------- ------------------ --
-       Toyota Prius              120                     0                      0          
-      Tesla Roadster             288                     0                      1          
-      Bugatti Veyron            1200                     1                      1          
-        Honda Civic              158                     1                      0          
-   Lamborghini Aventador         695                     1                      1          
 
-  : Car make and model with associated horsepower, whether the vehicle
+| Car Name |              Horsepower (HP) |  Racing Stripe (Yes or No)|  Fast (Yes or No)  |
+|  -------------------- | ----------------- | ------------------------- | ------------------ |
+| Toyota Prius            | 120      |               0               |       0          |
+|  Tesla Roadster         | 288      |               0               |       1          |
+|  Bugatti Veyron         | 1200     |                1              |       1          |
+|  Honda Civic            | 158      |               1               |       0          |
+|  Lamborghini Aventador  | 695      |               1               |       1          |
+
+> Car make and model with associated horsepower, whether the vehicle
   has a racing stripe and if the author thinks the car is fast or
   not[]{label="T:fast-cars"}
 
@@ -126,8 +124,8 @@ player in the dataset to the selected player using k nearest neighbors.
 The following is set up for you to execute in a python command prompt
 line by line for instructional purposes.
 
-    #This code was adopted from Dataquest - K nearest neighbors in Python:
-    #A tutorial written by: Vik Paruchuri
+    # This code was adopted from Dataquest - K nearest neighbors in Python:
+    # Written by: Vik Paruchuri
     import pandas
     import math
     with open("/path/to/the/nba_2013.csv", 'r') as csvfile:
@@ -234,8 +232,7 @@ In the python prompt type:
 
 The most similar player to your selected player should appear.
 
-Draft: Example Project with SVM
--------------------------------
+## Example Project with SVM
 
 The following code is set up as an example project and will show how to
 use a RESTful service to download data. Additionally the differences

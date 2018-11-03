@@ -1,8 +1,9 @@
-Twister2 Installation
-=====================
+# Twister2 Installation :o:
 
 Prerequisites
 -------------
+
+:o: TODO fix the section links
 
 -   Operating Systems = \[Red Hat Enterprise Linux Server release 7,
     Ubuntu 14.04 , Ubuntu 16.04\] `We only use Ubuntu 16.04`
@@ -14,19 +15,19 @@ Prerequisites
 -   G++ Compiler `sudo apt-get install g++`
 
 -   Maven Installation Explained in
-    Section[1.1.1](#s:s:twister2-maven){reference-type="ref"
+    Section [Maven](#s:s:twister2-maven){reference-type="ref"
     reference="s:s:twister2-maven"}
 
 -   OpenMPI Installation Explained in
-    Section[1.1.2](#s:s:twister2-openmpi){reference-type="ref"
+    Section [OpenMPI](#s:s:twister2-openmpi){reference-type="ref"
     reference="s:s:twister2-openmpi"}
 
 -   Bazel Build Installation Explained in
-    Section[1.1.3](#s:s:twister2-bazel){reference-type="ref"
+    Section [Bazel](#s:s:twister2-bazel){reference-type="ref"
     reference="s:s:twister2-bazel"}
 
 -   Additional Libraries Explained in
-    Section[\[s:s:twister2-extras\]](#s:s:twister2-extras){reference-type="ref"
+    Section [Twister Extra](#s:s:twister2-extras){reference-type="ref"
     reference="s:s:twister2-extras"}
 
 ### Maven Installation

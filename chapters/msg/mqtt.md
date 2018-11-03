@@ -1,6 +1,15 @@
 # MQTT
 
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Understand Message systems for the cloud
+* Learn about [MQTT]{.index}
+
+---
+
 With the increase importance of cloud computing and the increased number
 of edge devices and their applications, such as sensor networks, it is
 crucial to enable fast communication between the sensing devices and
@@ -66,9 +75,8 @@ publisher, that sends a message, (2) a broker, that maintains queue of
 all messages based on topics and (3) multiple subscribers that subscribe
 to various topics they are interested in [@how-mqtt-works].
 
-![](images/mqtt.png)
+![MQTT publish subscriber model](images/mqtt.png)
 
-**Figure:** MQTT publish subscriber model
 
 This allows for decoupling of functionality at various levels. The
 publisher and subscriber do not need to be close to each other and do
@@ -91,9 +99,7 @@ model introduced in file systems but also in internet URLs.
 
 A topic looks therefore as follows:
 
-```
-topic-level0/topic-level1/topic-level2.
-```
+    topic-level0/topic-level1/topic-level2.
 
 Subscribers can subscribe to different topics via the broker.
 Subscribing to `topic-level0` allows the subscriber to receive all
@@ -303,7 +309,7 @@ This ensures the server is running.
 
 On ubuntu you need to first install mosquito, than with pip you install `paho-mqt`
 
-```
+```bash
 $ sudo apt-get install mosquitto mosquitto-clients
 $ pip install paho-mqtt
 ```
@@ -342,7 +348,7 @@ The code of this example is located at:
 A test program that starts a MQTT broker and client showcases how simple the interactions between the publisher and subscribers are while using a higher level
 API such as provided through the python client library of Paho.
 
-```
+```python
 import paho.mqtt.client as mqtt 
 import time
 

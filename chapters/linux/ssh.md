@@ -1,5 +1,16 @@
 # Secure Shell
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* This is one of the most important sections of the book, studdy it carefully.
+* learn how to use [SSH]{.index} keys 
+* Learn how to use ssh-add and ssh-keycahin so you only have to type in your password once
+* Understand that each computer needs its own ssh key
+
+---
+
 [Secure Shell](http://openssh.com/manual.html) is a network protocol
 allowing users to securely connect to remote resources over the
 internet. In many services we need to use SSH to assure that we
@@ -22,7 +33,7 @@ from your laptop. For more information please also consult with the
 ---
 
 :warning: Whatever others tell you, the private key should never be
-copied to another machine. YOu almost always want to have a passphrase
+copied to another machine. You almost always want to have a passphrase
 protecting your key.
 
 ---
@@ -298,10 +309,10 @@ activate it via the configuration menu. For a more automated
 configuration, we will provide more information in the Raspberry PI
 section.
 
-### SSH on Windows :o:
+### SSH on Windows :o: :question:
 
-:warning: THis section is outdated and should be replaced with
-information from SSH in powershell
+:warning: This section is outdated and should be replaced with
+information from SSH in powershell and the new ubuntu running in windows
 
 * <https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/>
 
@@ -381,7 +392,7 @@ command that we described earlier.
 	$ ssh-add
 
 
-## SSH Port Forwarding :o:
+## SSH Port Forwarding :o: :question:
 
 :warning: this section has not been vetted yet
 
@@ -591,7 +602,7 @@ No blank passphrases
 A key for each server
 
 -   Under no circumstances copy the same private key on multiple
-    servers. THis violates security best practices. Create for each
+    servers. This violates security best practices. Create for each
     server a new private key and use their public keys to gain access to
     the appropriate server.
 
@@ -614,7 +625,6 @@ keep an offline backup, put encrypt the drive
 
 
 ### References
-
 
 -   [The Secure Shell: The Definitive Guide, 2 Ed (O'Reilly and
     Associates)](http://shop.oreilly.com/product/9780596008956.do)

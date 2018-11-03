@@ -164,51 +164,26 @@ trees.
 
 ### Resources
 
--   <https://wiki.nci.nih.gov/display/CIP/CIP+Survey+of+Biomedical+Imaging+Archives>
--   [http://grids.ucs.indiana.edu/ptliupages/publications/Where\\%20does\\%20all\\%20the\\%20data\\%20come\\%20from\\%20v7.pdf](http://grids.ucs.indiana.edu/ptliupages/publications/Where\%20does\%20all\%20the\%20data\%20come\%20from\%20v7.pdf)
--   [http://www.ieee-icsc.org/ICSC2010/Tony\\%20Hey\\%20-\\%2020100923.pdf](http://www.ieee-icsc.org/ICSC2010/Tony\%20Hey\%20-\%2020100923.pdf)
--   <http://quantifiedself.com/larry-smarr/>
--   <http://www.ebi.ac.uk/Information/Brochures/>
--   <http://www.kpcb.com/internet-trends>
--   <http://www.slideshare.net/drsteventucker/wearable-health-fitness-trackers-and-the-quantified-self>
--   <http://www.siam.org/meetings/sdm13/sun.pdf>
--   [http://en.wikipedia.org/wiki/Calico\_\\%28company\\%29](http://en.wikipedia.org/wiki/Calico_\%28company\%29)
--   <http://www.slideshare.net/GSW_Worldwide/2015-health-trends>
--   <http://www.accenture.com/SiteCollectionDocuments/PDF/Accenture-Industrial-Internet-Changing-Competitive-Landscape-Industries.pdf>
--   <http://www.slideshare.net/schappy/how-realtime-analysis-turns-big-medical-data-into-precision-medicine>
--   <http://medcitynews.com/2013/03/the-body-in-bytes-medical-images-as-a-source-of-healthcare-big-data-infographic/>
--   <http://healthinformatics.wikispaces.com/file/view/cloud_computing.ppt>
--   <https://www.mckinsey.com/~/media/mckinsey/industries/healthcare%20systems%20and%20services/our%20insights/the%20big%20data%20revolution%20in%20us%20health%20care/the_big_data_revolution_in_healthcare.ashx>
--   <https://partner.microsoft.com/download/global/40193764>
--   <https://ec.europa.eu/eip/ageing/file/353/download_en?token=8gECi1RO>
--   <http://www.kpcb.com/internet-trends>
--   <http://www.liveathos.com/apparel/app>
--   <http://debategraph.org/Poster.aspx?aID=77>
--   <http://www.oerc.ox.ac.uk/downloads/presentations-from-events/microsoftworkshop/gannon>
--   <http://www.delsall.org>
--   <http://salsahpc.indiana.edu/millionseq/mina/16SrRNA_index.html>
--   <http://www.geatbx.com/docu/fcnindex-01.html>
--   <https://wiki.nci.nih.gov/display/CIP/CIP+Survey+of+Biomedical+Imaging+Archives>
--   [http://grids.ucs.indiana.edu/ptliupages/publications/Where\\%20does\\%20all\\%20the\\%20data\\%20come\\%20from\\%20v7.pdf](http://grids.ucs.indiana.edu/ptliupages/publications/Where\%20does\%20all\%20the\%20data\%20come\%20from\%20v7.pdf)
--   [http://www.ieee-icsc.org/ICSC2010/Tony\\%20Hey\\%20-\\%2020100923.pdf](http://www.ieee-icsc.org/ICSC2010/Tony\%20Hey\%20-\%2020100923.pdf)
--   <http://quantifiedself.com/larry-smarr/>
--   <http://www.ebi.ac.uk/Information/Brochures/>
--   <http://www.kpcb.com/internet-trends>
--   <http://www.slideshare.net/drsteventucker/wearable-health-fitness-trackers-and-the-quantified-self>
--   <http://www.siam.org/meetings/sdm13/sun.pdf>
--   [http://en.wikipedia.org/wiki/Calico\_\\%28company\\%29](http://en.wikipedia.org/wiki/Calico_\%28company\%29)
--   <http://www.slideshare.net/GSW_Worldwide/2015-health-trends>
--   <http://www.accenture.com/SiteCollectionDocuments/PDF/Accenture-Industrial-Internet-Changing-Competitive-Landscape-Industries.pdf>
--   <http://www.slideshare.net/schappy/how-realtime-analysis-turns-big-medical-data-into-precision-medicine>
--   <http://medcitynews.com/2013/03/the-body-in-bytes-medical-images-as-a-source-of-healthcare-big-data-infographic/>
--   <http://healthinformatics.wikispaces.com/file/view/cloud_computing.ppt>
--   [http://www.mckinsey.com/\~/media/McKinsey/dotcom/Insights/Health\\%20care/The\\%20big-data\\%20revolution\\%20in\\%20US\\%20health\\%20care/The\\%20big-data\\%20revolution\\%20in\\%20US\\%20health\\%20care\\%20Accelerating\\%20value\\%20and\\%20innovation.ashx](http://www.mckinsey.com/~/media/McKinsey/dotcom/Insights/Health\%20care/The\%20big-data\%20revolution\%20in\%20US\%20health\%20care/The\%20big-data\%20revolution\%20in\%20US\%20health\%20care\%20Accelerating\%20value\%20and\%20innovation.ashx)
--   <https://partner.microsoft.com/download/global/40193764>
--   <http://ec.europa.eu/information_society/activities/health/docs/policy/taskforce/redesigning_health-eu-for2020-ehtf-report2012.pdf>
--   <http://www.kpcb.com/internet-trends>
--   <http://www.liveathos.com/apparel/app>
--   <http://debategraph.org/Poster.aspx?aID=77>
--   <http://www.oerc.ox.ac.uk/downloads/presentations-from-events/microsoftworkshop/gannon>
--   <http://www.delsall.org>
--   <http://salsahpc.indiana.edu/millionseq/mina/16SrRNA_index.html>
--   <http://www.geatbx.com/docu/fcnindex-01.html>
+-   <https://wiki.nci.nih.gov/display/CIP/CIP+Survey+of+Biomedical+Imaging+Archives> [@wiki-nih-cip-survey]
+-   [http://grids.ucs.indiana.edu/ptliupages/publications/Where\\%20does\\%20all\\%20the\\%20data\\%20come\\%20from\\%20v7.pdf](http://grids.ucs.indiana.edu/ptliupages/publications/Where\%20does\%20all\%20the\%20data\%20come\%20from\%20v7.pdf) [@fox2011does]
+-   ~~[http://www.ieee-icsc.org/ICSC2010/Tony\\%20Hey\\%20-\\%2020100923.pdf](http://www.ieee-icsc.org/ICSC2010/Tony\%20Hey\%20-\%2020100923.pdf)~~(this link does not exist any longer)
+-   <http://quantifiedself.com/larry-smarr/> [@smarr13self]
+-   <http://www.ebi.ac.uk/Information/Brochures/> [@www-ebi-aboutus]
+-   <http://www.kpcb.com/internet-trends> [@www-kleinerperkins-internet-trends]
+-   <http://www.slideshare.net/drsteventucker/wearable-health-fitness-trackers-and-the-quantified-self> [@www-slideshare-wearable-quantified-self]
+-   <http://www.siam.org/meetings/sdm13/sun.pdf> [@archive--big-data-analytics-healthcare]
+-   [http://en.wikipedia.org/wiki/Calico\_\\%28company\\%29](http://en.wikipedia.org/wiki/Calico_\%28company\%29) [@www-wiki-calico]
+-   <http://www.slideshare.net/GSW_Worldwide/2015-health-trends> [@www-slideshare-2015-health trends]
+-   <http://www.accenture.com/SiteCollectionDocuments/PDF/Accenture-Industrial-Internet-Changing-Competitive-Landscape-Industries.pdf> [@www-accenture-insight-industrial-internet]
+-   <http://www.slideshare.net/schappy/how-realtime-analysis-turns-big-medical-data-into-precision-medicine> [@www-slideshare-big-medical-data-medicine]
+-   <http://medcitynews.com/2013/03/the-body-in-bytes-medical-images-as-a-source-of-healthcare-big-data-infographic/> [@medcitynews-bytes-medical-images]
+-   ~~<http://healthinformatics.wikispaces.com/file/view/cloud_computing.ppt>~~ (this link does not exist any longer)
+-   <https://www.mckinsey.com/~/media/mckinsey/industries/healthcare%20systems%20and%20services/our%20insights/the%20big%20data%20revolution%20in%20us%20health%20care/the_big_data_revolution_in_healthcare.ashx> [@www-mckinsey-industries-healthcare]
+-   ~~<https://partner.microsoft.com/download/global/40193764>~~ (this link does not exist any longer)
+-   <https://ec.europa.eu/eip/ageing/file/353/download_en?token=8gECi1RO> 
+-   ~~<http://www.liveathos.com/apparel/app>~~
+-   <http://debategraph.org/Poster.aspx?aID=77> [@debategraph-poster]
+-   ~~<http://www.oerc.ox.ac.uk/downloads/presentations-from-events/microsoftworkshop/gannon>~~(this link does not exist any longer)
+-   ~~<http://www.delsall.org>~~ (this link does not exist any longer)
+-   <http://salsahpc.indiana.edu/millionseq/mina/16SrRNA_index.html> [@www-salsahpc-millionseq]
+-   <http://www.geatbx.com/docu/fcnindex-01.html> [@www-geatbx-parametric-optimization]

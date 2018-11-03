@@ -7,12 +7,12 @@ In this subsection we are discussing how to use OpenAPI 2.0 and Swagger
 Codegen to define and develop a REST Service.
 
 We assume you have been familiar with the concept of REST service,
-OpenAPI as discussed in
-section [\[s:rest-intro\]](#s:rest-intro){reference-type="ref"
-reference="s:rest-intro"}. In next section we will further look into the
+OpenAPI as discussed in section [Overview of Rest](#overview-of-rest).
+
+In next section we will further look into the
 Swagger/OpenAPI 2.0
-specification [\[S:swagger-specification\]](#S:swagger-specification){reference-type="ref"
-reference="S:swagger-specification"} and use a slight more complex
+specification [Swagger Specification](#openapi-specification) 
+and use a slight more complex
 example to walk you through the design of a RESTful service following
 the OpenAPI 2.0 specifications.
 
@@ -21,26 +21,26 @@ REST service with Swagger/OpenAPI 2.0 specification and the tools
 related to is. The general steps are:
 
 -   Step 1
-    (Section [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-    reference="s:step-1-define-your-rest-service"}). Define the REST
+    (Section [Step 1: Define Your REST Service](#step-1-define-your-rest-service).
+    Define the REST
     service conforming to Swagger/OpenAPI 2.0 specification. It is a
     YAML document file with the basics of the REST service defined,
     e.g., what resources it has and what actions are supported.
 
 -   Step 2
-    (Section [1.2](#s:step-2-swagger-code-gen){reference-type="ref"
-    reference="s:step-2-swagger-code-gen"}). Use Swagger Codegen to
+    (Section [Step 2: Server Side Stub Code Generation and Implementation](#step-2-server-side-stub-code-generation-and-implementation).
+    Use Swagger Codegen to
     generate the server side stub code. Fill in the actual
     implementation of the business logic portion in the code.
 
 -   Step 3
-    (Section [1.3](#s:step-3-swagger-codegen){reference-type="ref"
-    reference="s:step-3-swagger-codegen"}). Install the server side code
+    (Section [Step 3: Install and Run the REST Service](#step-3-install-and-run-the-rest-service).
+    Install the server side code
     and run it. The service will then be available.
 
 -   Step 4
-    (Section [1.4](#s:step-4-swagger-codegen){reference-type="ref"
-    reference="s:step-4-swagger-codegen"}). Generate client side code.
+    (Section [Step 4: Generate Client Side Code and Verify](#step-4-generate-client-side-code-and-verify).
+    Generate client side code.
     Develop code to call the REST service. Install and run to verify.
 
 ## Step 1: Define Your REST Service
@@ -96,17 +96,17 @@ server side stub code easily.
 
 You will need to [install the Swagger Codegen
 tool](https://swagger.io/docs/swagger-tools/) if not yet done so. For
-OSX we recommend that you use the homebrew install via
+macOS we recommend that you use the homebrew install via
 
-    brew install swagger-codegen
+    $ brew install swagger-codegen
 
 On Ubuntu you can install swagger as follows (update the version as
 needed):
 
-     mkdir ~/swagger
-    cd ~/swagger
-    wget https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/2.3.1/swagger-codegen-cli-2.3.1.jar
-    alias swagger-codegen="java -jar ~/swagger/swagger-codegen-cli-2.3.1.jar"
+    $ mkdir ~/swagger
+    $ cd ~/swagger
+    $ wget https://oss.sonatype.org/content/repositories/releases/io/swagger/swagger-codegen-cli/2.3.1/swagger-codegen-cli-2.3.1.jar
+    $ alias swagger-codegen="java -jar ~/swagger/swagger-codegen-cli-2.3.1.jar"
 
 Add the alias to your `.bashrc` or `.bash_profile` file. After you start
 a new terminal you can use in that terminal now the command
@@ -128,7 +128,7 @@ After you have the codegen tool ready, and with Java 7 or 8 installed in
 your system, you can run the following to generate the server side stub
 code:
 
-    swagger-codegen generate \
+    $ swagger-codegen generate \
         -i ~/cloudmesh/cpu.yaml \
         -l python-flask \
         -o ~/cloudmesh/swagger_example/server/cpu/flaskConnexion \
@@ -136,7 +136,7 @@ code:
 
 or if you have not created an alias
 
-    java -jar swagger-codegen-cli.jar generate \
+    $ java -jar swagger-codegen-cli.jar generate \
         -i ~/cloudmesh/cpu.yaml \
         -l python-flask \
         -o ~/cloudmesh/swagger_example/server/cpu/flaskConnexion \
@@ -229,29 +229,29 @@ that you run this in a pyenv or a virtualenv environment.
 
 In case you are not using pyenv, please use virtual env as follows:
 
-    virtualenv RESTServer
-    source RESTServer/bin/activate
+    $ virtualenv RESTServer
+    $ source RESTServer/bin/activate
 
 ### Make sure you have the latest pip:
 
-    pip install -U pip
+    $ pip install -U pip
 
 ### Install the requirements of the server side code:
 
-    cd ~/cloudmesh/swagger_example/server/cpu/flaskConnexion
-    pip install -r requirements.txt
+    $ cd ~/cloudmesh/swagger_example/server/cpu/flaskConnexion
+    $ pip install -r requirements.txt
 
 ### Install the server side code package:
 
 Under the same directory, run:
 
-    python setup.py install
+    $ python setup.py install
 
 ### Run the service
 
 Under the same directory:
 
-    python -m swagger_server
+    $ python -m swagger_server
 
 You should see a message like this:
 
@@ -278,7 +278,7 @@ side code.
 Generate the client side code in a similar fashion as we did for the
 server side code:
 
-    java -jar swagger-codegen-cli.jar generate \
+    $ java -jar swagger-codegen-cli.jar generate \
         -i ~/cloudmesh/cpu.yaml \
         -l python \
         -o ~/cloudmesh/swagger_example/client/cpu \
@@ -293,12 +293,12 @@ based client and a python 2 based server showcasing interoperability
 between python versions (although we just use python 2 here). Thus we
 create ane new python virtual environment and conduct our install.
 
-    virtualenv RESTClient
-    source RESTClient/bin/activate
-    pip install -U pip
-    cd swagger_example/client/cpu
-    pip install -r requirements.txt
-    python setup.py install
+    $ virtualenv RESTClient
+    $ source RESTClient/bin/activate
+    $ pip install -U pip
+    $ cd swagger_example/client/cpu
+    $ pip install -r requirements.txt
+    $ python setup.py install
 
 ### Using the client API to interact with the REST service
 
@@ -339,13 +339,12 @@ case please make changes on the API definition accordingly, e.g., the
 
 ## Exercises
 
-:o: LInks are not yet integrated
+:o: Links are not yet integrated
 
 E.OpenAPI.1:
 
 > In Section
-> [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-> reference="s:step-1-define-your-rest-service"}, we introduced a
+> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
 > schema.  The question relates to termsOfService: Investigate what
 > the termOfService attribute is and suggest a better value. Discuss
 > on piazza.
@@ -353,24 +352,21 @@ E.OpenAPI.1:
 E.OpenAPI.2:
 
 > In Section
-> [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-> reference="s:step-1-define-your-rest-service"}, we introduced a
+> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
 > schema.  The question relates to model: What is the meaning of model
-> under the definitions
+> under the definitions?
 
 E.OpenAPI.3:
 
 > In Section
-> [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-> reference="s:step-1-define-your-rest-service"}, we introduced a
+> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
 > schema.  The question relates to \$ref: what is the meaning of the
 > \$ref. Discuss on piazza, come up with a student answer in class.
 
 E.OpenAPI.1:
 
 > In Section
-> [1.1](#s:step-1-define-your-rest-service){reference-type="ref"
-> reference="s:step-1-define-your-rest-service"}, we introduced a
+> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
 > schema.  What does the response 200 mean. Do you need other
 > responses?
 

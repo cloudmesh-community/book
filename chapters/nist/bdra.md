@@ -1,5 +1,15 @@
 # NIST Big Data Referenece Architecture
 
+
+---
+
+**:mortar_board: Learning Objectives**
+
+* Obtain an overview of the NIST Big Data Refernce Architecture.
+* Understand that you can contribute to it as part of this class.
+
+---
+
 One of the major technical areas in the cloud is to define
 architectures that can work with Big Data. For this reason NIST has
 work now for some time on identifying how to create a data
@@ -27,7 +37,7 @@ The Nist Big Data Public Working Group (NBD-PWG) was established as
 collaboration between industry, academia and government "to create a
 consensus-based extensible Big Data Interoperability Framework (NBDIF)
 which is a vendor-neutral, technology- and infrastructure-independent
-ecosystem" [@www-nist-bdra]. It will be helpfule for Big Data
+ecosystem" [@www-nist-bdra]. It will be helpful for Big Data
 stakeholders such as data architects, data scientists, researchers,
 implementers to integrate and utilize "the best available analytics
 tools to process and derive knowledge through the use of standard
@@ -45,7 +55,7 @@ NBD-RA can be used" [@www-nist-bdra];
 * Stage 3: "Validate the NBD-RA by building Big Data general
 applications through the general interfaces.[@www-nist-bdra]"
 
-Nist has developed the following volumes as liste in *Table: BDRA
+Nist has developed the following volumes as listed in *Table: BDRA
 volumes* that surround the creation of the NIST-BDRA. We recommend
 that you take a closer look at these documents as in this section we
 provide a focussed summary with the aspect of cloud computing in mind.
@@ -131,7 +141,7 @@ unstructured. NIST finds this aspect so important that they included
 its own section for it.
 
 **Variability**: Any data over time will change. Naturally that is not
-an exception in Big data where data may he a time to live or needs to
+an exception in Big data where data may be a time to live or needs to
 be updated in order not to be stale or obsolete. Hence one of the
 characteristics that big data could exhibit is that its data be
 variable and is prone to changes.
@@ -142,7 +152,7 @@ important characteristics that are attached with the Data itself. This
 includes
 
 **Veracity**: Veracity refers to the accuracy of the data. Accuracy
-can be increase by adding metadata.
+can be increased by adding metadata.
 
 **Validity**: Refers to data that is valid. While data can be
 accurately measured, it could be invalid by the time it is processed.
@@ -164,17 +174,17 @@ significantly scaled back for public users.
 
 ## Big Data and the Cloud
 
-WHile looking at the characteristics of Big Data it is obvious that
-Big data is on teh one hand a motivator for cloud computing, but on
+While looking at the characteristics of Big Data it is obvious that
+Big data is on the one hand a motivator for cloud computing, but on
 the other hand existing Big Data frameworks are a motivator for
 developing Big Data Architectures a certain way.
 
-Hence we have to always look form both sides towards the creation of
+Hence we have to always look from both sides towards the creation of
 architectures related to a particular application of big data.
 
 This is also motivated by the rich history we have in the field of
 parallel and distributed computing. For a long time engineers have
-dealt with the issu of *horizontal scaling*, which is defined by
+dealt with the issue of *horizontal scaling*, which is defined by
 adding more nodes or other resources to a cluster. Such resources may
 include
 
@@ -234,7 +244,7 @@ architectural design process.
 ## Reference Architecture
 
 Next we present the Big data reference architecture. It is Depicted
-in *Figure: NIST-BDRA*. According to the document (Volume 2) the five
+in +@fig:nist-arch. According to the document (Volume 2) the five
 main components representing the central roles include
 
 * System Orchestrator: Defines and integrates the required data
@@ -255,19 +265,16 @@ In addition we recognize two fabrics layers:
 * Security and Privacy Fabric
 * Management Fabric
 
-![](images/nist-arch.png)
+![NIST-BDRA (see Volume 2)](images/nist-arch.png){#fig:nist-arch}
 
-**Figure:** NIST-BDRA (see Volume 2)
 
-WHile looking at the actors depicted in *Figure: NIST Roles* we need
+While looking at the actors depicted in +@fig:nist-roles we need
 to be aware that in each of the categories a service can be added.
-Thisis an important distinction to the original depiction in the
+This is an important distinction to the original depiction in the
 definition as it is clear that an automated service could act in
 behalf of the actors listed in each of the categories.
 
-![](images/nist-roles.png)
-
-**Figure:** NIST Roles (see Volume 2)
+![NIST Roles (see Volume 2)](images/nist-roles.png){#fig:nist-roles}
 
 For a detailed definition wich is beyond the scope of this document we refer to the Volume 2 of the documents. 
 
@@ -306,6 +313,6 @@ Through the interplay between these services data consumer sand data producers c
 
 Security and general management are part of the governing fabric in which such an architecture is deployed.
 
-## Intrface definitions
+## Interface definitions
 
 The interface definitions for the BDRA are specified in Volume 8. We are in the second phase of our document specification while we switch from our pure Resource descripyion to an OpenAPI specification. Before we can provide more details we need to introduce you to REST which is an essential technology for many moder cloud computing services.

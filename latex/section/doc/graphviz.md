@@ -11,7 +11,7 @@ On OSX you can install graphviz with
 
 	brew install graphviz
 
-On OSX there is also a graphviz version available that includes a GUI. THe link to this software is:
+On OSX there is also a graphviz version available that includes a GUI. The link to this software is:
 
 * <http://www.pixelglow.com/graphviz/>
 

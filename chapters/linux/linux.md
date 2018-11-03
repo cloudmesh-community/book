@@ -1,4 +1,13 @@
-# Linux
+# Linux {#s-linux}
+
+---
+
+**:mortar_board: Learning Objectives**
+
+* Be able to know the basic commands to work in a [Linux]{.index} terminal.
+* Get familiar with Linux Commands
+
+---
 
 Now that you have Linux or a Linux like environment (such as `gitbash`)
 on your computer it is time to learn a number of useful commands to
@@ -27,7 +36,7 @@ replacement for UNIX.
 ## Shell
 
 One of the most important features for us will be to access the computer
-with the help of a *shell*. The shell is typically run in what is called
+with the help of a *shell*. The [shell]{.index} is typically run in what is called
 a terminal and allows interaction to the computer with commandline
 programs.
 

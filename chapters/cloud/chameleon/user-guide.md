@@ -1,5 +1,4 @@
-OpenStack Virtual Machines
-==========================
+# OpenStack Virtual Machines
 
 OpenStack is an Infrastructure as a Service (IaaS) platform that allows
 you to create and manage virtual environments. Chameleon provides an
@@ -9,12 +8,11 @@ virtualization technology.
 Since the KVM hypervisor is used on this cloud, any virtual machines you
 upload must be compatible with KVM.
 
-This tutorial provide basic information about how to use the OpenStack
+This section provides basic information about how to use the OpenStack
 web interface and provides some information specific to using OpenStack
 KVM on Chameleon.
 
-Web Interface
--------------
+## Web Interface
 
 An easy way to use OpenStack KVM on Chameleon is via the [OpenStack web
 interface](https://openstack.tacc.chameleoncloud.org/dashboard) also
@@ -25,7 +23,7 @@ about 5 minutes.
 
 The initial log in page appears as:
 
-![image](images/chameleon-login.png){width="0.3\columnwidth"}
+![**Figure:** Chameleon login](images/chameleon-login.png){#fig:chameleon-login}
 
 After a successful log in, you will see the Overview page as shown
 below. This page provides a summary of your current and recent usage and
@@ -38,7 +36,7 @@ actions that you take apply to your current project. So in the screen
 shot below, the quota and usage apply to the current project you have
 selected and no information about your other projects is shown.
 
-![image](images/openstack_alamo_overview.png){width="0.8\columnwidth"}
+![**Figure:** Overview page](images/openstack_alamo_overview.png){#fig:overview-page}
 
 ### Managing Virtual Machine Instances
 
@@ -52,7 +50,7 @@ console. The dropdown menu to the left of the instance lets you perform
 a variety of tasks such as suspending, terminating, or rebooting the
 instance.
 
-![image](images/openstack_alamo_instances.png){width="0.8\columnwidth"}
+![**Figure:** Virtual Machine instances](images/openstack_alamo_instances.png){#fig:virtual-machine-instances}
 
 The Instances page also lets you create new virtual machines by using
 the 'Launch Instance' button in the upper-right. When you click this
@@ -73,7 +71,7 @@ resources (Flavor) to allocate to the instance. If you select different
 flavors from the Flavor dropdown, their characteristics are displayed on
 the right.
 
-![image](images/openstack_alamo_launch_details.png){width="0.8\columnwidth"}
+![**Figure:** Launcher window](images/openstack_alamo_launch_details.png){#fig:launcher-window}
 
 The next tab is 'Access & Security', where you select an SSH keypair
 that will be inserted into your virtual machine. These keypairs can be
@@ -83,13 +81,13 @@ of the public images Chameleon provides. These images are not configured
 with a default root password and you will not be able to log in to them
 without configuring an SSH key.
 
-![image](images/openstack_alamo_launch_access.png){width="0.8\columnwidth"}
+![**Figure:** Access window](images/openstack_alamo_launch_access.png){#fig:access-window}
 
 Next is 'Networking', where you select which network should be
 associated with the instance. Click the + next to your your project's
 private network (PROJECT_NAME-net), not ext-net.
 
-![image](images/openstack_alamo_networking.png){width="0.8\columnwidth"}
+![**Figure:** Networking window](images/openstack_alamo_networking.png){#fig:networking-window}
 
 Once you do this, you can Launch your instance and the Instances page
 will show progress as it starts.
@@ -100,7 +98,7 @@ choose *Associate Floating IP*. Choose an IP from the *IP Address* menu
 and click *Associate*. If there are no addresses available, click the +
 and follow the prompts to add one.
 
-![image](images/openstack_alamo_floating.png){width="0.8\columnwidth"}
+![**Figure:** Floating IP window](images/openstack_alamo_floating.png){#fig:floating-ip-window}
 
 OpenStack injects your SSH key into the VM and you can use the
 corresponding private SSH key to log in to the VM. You will need to use
@@ -116,7 +114,7 @@ We have enabled auto-login for the cc user on the console of our
 supported images. This should aid in debugging if you are unable to
 reach the instane via ssh for some reason.
 
-![image](images/openstack_alamo_console.png){width="0.8\columnwidth"}
+![**Figure:** Console](images/openstack_alamo_console.png){#fig:console}
 
 ### Snapshots
 
@@ -136,21 +134,20 @@ To enable this traffic, you need to configure the security group used by
 your virtual machine. You can see a list of your security groups using
 the "Access & Security" link on the left.
 
-![image](images/openstack_alamo_security_groups.png){width="0.8\columnwidth"}
+![**Figure:** Security groups](images/openstack_alamo_security_groups.png){#fig:security-groups}
 
 To edit a security group, click on "Edit Rules". This opens a page
 showing the existing rules in the security group.
 
-![image](images/openstack_alamo_edit_rules.png){width="0.8\columnwidth"}
+![**Figure:** Editing a security group](images/openstack_alamo_edit_rules.png){#fig:editing-a-security-group}
 
 Click on "Add Rule" and choose the *SSH* rule from the list, and click
 *Add*. Modifications are automatically propagated to the OpenStack
 cloud. Feel free to add other rules as necessary.
 
-![image](images/openstack_alamo_add_secgroup_rule.png){width="0.8\columnwidth"}
+![**Figure:** Add a security group](images/openstack_alamo_add_secgroup_rule.png){#fig:add-a-security-group}
 
-OpenStack REST Interfaces
--------------------------
+## OpenStack REST Interfaces
 
 The OpenStack REST Interfaces are supported on Chameleon over secure
 HTTP connections. You can download your OpenStack credentials file from
@@ -168,8 +165,7 @@ complains about the certificate, [download the Mozilla CA bundle from
 the cURL website](http://curl.haxx.se/docs/caextract.html) and run the
 OpenStack client tools with the --os-cacert cacert.pem arguments.
 
-Downloading and uploading data
-------------------------------
+## Downloading and uploading data
 
 You can use the OpenStack command line clients to download data from and
 upload data to Chameleon clouds. Configure your environment by following
@@ -177,11 +173,8 @@ the "OpenStack REST Interfaces" section above, then use the following
 commands:
 
 -   `glance image-download` to download images and snapshots from Glance
-
--   `glance\ image-create` to upload images and snapshots to Glance
-
+-   `glance image-create` to upload images and snapshots to Glance
 -   `cinder upload-to-image` to convert a Cinder volume to a
     Glance image
-
 -   `cinder create [--image-id <image-id>] [--image <image>]` to create
     a Cinder volume from a Glance image

@@ -63,6 +63,7 @@ Now that you have configured the repository location, you can install it
 after you have updated the operating system. The update and install is
 done as follows:
 
+
 ```bash
 local$ sudo apt-get update
 local$ sudo apt-get install docker-ce
@@ -87,7 +88,66 @@ Once installed execute the following command to make sure the installation is
 
  ```
  
-## Installation for Windows 10
+## Installation for Windows 10 :o: :question:
+
+The instructions for Windows have not passed our quality control. We
+look for TAs and student that test out and improve this section.
+
+:o: TA: Docker on windows. Please improve and finalize the section}
+Before we start we create the following directory:
+
+```bash
+local$ mkdir $HOME/cloudmesh
+local$ cd $HOME/cloudmesh
+```
+
+We also assume you have installed gitbash and use the a git bash
+terminal window for the next steps.
+
+To install Docker on Windows, please download the following files
+
+* <https://download.docker.com/win/stable/Docker\%20for\%20Windows\%20Installer.exe>
+* <https://download.docker.com/win/stable/DockerToolbox.exe>
+
+Move the downloaded files to a directory `$HOME/cloudmesh`
+
+Place the downloaded exe files in the cloudmesh directory we created
+earlier. First conduct the Docker installation and then continue with
+the Docker Toolbox installation. You can double click the exe files and
+run the installation.
+
+When you are doing the installation, check on the selection in the
+installation saying to create shortcuts in your desktop. This way you
+can start all the programs from a desktop shortcut.
+
+To run docker, you need to start the *Docker Quickstart Terminal*
+application and it will load all docker and provide a terminal window in
+which you can execute docker commands. Once the terminal is loaded, it
+will show something like following:
+
+```bash
+local$ <username>@<yourpc> ~
+```
+Once installed execute the following command to make sure the installation is
+ done properly
+ 
+ ```bash
+ local$ sudo systemctl status docker
+ ```
+ 
+ This should give you an output similar to below.
+ 
+ ```bash
+  docker.service - Docker Application Container Engine
+    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+    Active: active (running) since Wed 2018-10-03 13:02:04 EDT; 15min ago
+      Docs: https://docs.docker.com
+  Main PID: 6663 (dockerd)
+     Tasks: 39
+
+ ```
+ 
+## Installation for Windows 10 :o: second instructions, which shoudl we follow?
 
 Docker needs Microsoft's Hyper-V to be enabled, but it will impact running the virtual machines
 

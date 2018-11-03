@@ -45,7 +45,7 @@ Pi.Single.4
 Pi.Single.5
 
 : Identify how to use the VPN server so you can use your Laptop
-instead of a TV or computer monitor. Write a tutorial.
+instead of a TV or computer monitor. Write a section
 
 ### Small Pi Cluster
 
@@ -55,9 +55,9 @@ as one of the tasks related to Swarm, kubernetes or Spark.
 
 It is important that you write down all steps very carefully as you are
 expected to use the steps to develop an automated deployment. For your
-cluster. Your tutorial will be tested by other groups and easy of
+cluster. Your section will be tested by other groups and easy of
 installation completeness, and correctness will be evaluated. Teams that
-find issues and improve deployment tutorials will receive points. TA's
+find issues and improve deployment sections will receive points. TA's
 will also replicate these steps to identify a fair evaluation without
 bias.
 
@@ -71,24 +71,24 @@ Pi.Cluster.Build
 
 Pi.Cluster.DockerSwarm
 
-: Install a docker Swarm cluster on your PI. Develop a tutorial in
-  markdown and mind plagiarism. Contribute your tutorial to this
+: Install a docker Swarm cluster on your PI. Develop a section in
+  markdown and mind plagiarism. Contribute your section to this
   document to get acknowledged and credit. Work with others in class to
-  coordinate a single tutorial.
+  coordinate a single section.
 
 Pi.Cluster.Kubernetes
 
-: Install a kubernetes cluster on your PI. Develop a tutorial in
-  markdown and mind plagiarism. Contribute your tutorial to this
+: Install a kubernetes cluster on your PI. Develop a section in
+  markdown and mind plagiarism. Contribute your section to this
   document to get acknowledged and credit. Work with others in class to
-  coordinate a single tutorial.
+  coordinate a single section.
 
 Pi.Cluster.Spark
 
-: Install a spark cluster on your PI. Develop a tutorial in markdown
-  and mind plagiarism. Contribute your tutorial to this document to get
+: Install a spark cluster on your PI. Develop a section in markdown
+  and mind plagiarism. Contribute your section to this document to get
   acknowledged and credit. Work with others in class to coordinate a
-  single tutorial.
+  single section.
 
 ### Cluster Case
 

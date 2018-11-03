@@ -1,5 +1,4 @@
-Hadoop PageRank Cloud Computing
-===============================
+# Hadoop PageRank Cloud Computing
 
 This assignment provides an illustration of PageRank algorithms and
 Hadoop. You will then blend these applications by implementing a
@@ -52,12 +51,10 @@ than predefined maximum iterations, or the Euclidean distance between
 rank values in two subsequent iterations is less than a predefined
 threshold that controls the accuracy of the output results.
 
-\centering
-![Mathematical PageRank for a simple network in
-Wikipedia[]{label="fig:pagerankexample"}](section/icloud/assignment/exercise2/pagerankexample){width="8cm"}
+![Mathematical PageRank for a simple network in Wikipedia](section/icloud/assignment/exercise2/pagerankexample.png)
+{#fig:pagerankexample}
 
-Figure [\[fig:pagerankexample\]](#fig:pagerankexample){reference-type="ref"
-reference="fig:pagerankexample"} shows a web graph consisting of 11
++@fig:pagerankexample shows a web graph consisting of 11
 vertices A, B, C, D, E, F, G1, G2, G3, G4, G5. Each vertex refers to a
 unique webpage, and the directed edge means there is one link from the
 source webpage to the target webpage. The percentage on each vertex

@@ -18,7 +18,7 @@ This includes
 
 Macdown
 
-:   An editor for markdown targeted on OSX
+:   An editor for markdown targeted on macOS
 
 To convert the markdown to other formats with `pandoc`
 
