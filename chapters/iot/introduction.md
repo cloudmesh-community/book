@@ -81,7 +81,7 @@ that simplify that task.
 Due to the small cost involed in these devices you can buy them
 also simply yourself.
 
-We provide throughout the book lists of had=rdware that you will need
+We provide throughout the book lists of hardware that you will need
 for the various projects.
 
 
