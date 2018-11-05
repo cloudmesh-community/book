@@ -35,7 +35,7 @@ this specific user. Next, we have to configure ssh to be used by the
 hadoop user.
 
 ```
-    su - hduser
+    sudo su - hduser
 
     ssh-keygen -t rsa
 ```
@@ -94,21 +94,22 @@ Now execute the following commands to download and install java
     mkdir -p ~/cloudmesh/bin
     cd ~/cloudmesh/bin
     wget -c --header "Cookie: \
-        oraclelicense=accept-securebackup-cookie" \
-        "http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.tar.gz"
-    tar xvzf jdk-8u161-linux-x64.tar.gz
+    oraclelicense=accept-securebackup-cookie" \
+    "http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz"
+     tar xvzf jdk-8u191-linux-x64.tar.gz
+
 
 Please note that users must accept Oracle OTN license before downloading JDK.
 
 ## Installation of Hadoop
 
-First we will take a look on how to install Hadoop 3.0.1 on Ubuntu
+First we will take a look on how to install Hadoop 3.1.1 on Ubuntu
 16.04. We may need a prior folder structure to do the installation
 properly.
 
     cd ~/cloudmesh/bin/
-    wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-3.0.1/hadoop-3.0.1.tar.gz
-    tar -xzvf hadoop-3.0.1.tar.gz
+    wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-3.1.1/hadoop-3.1.1.tar.gz
+    tar -xzvf hadoop-3.1.1.tar.gz
 
 
 ## Hadoop Environment Variables
@@ -118,8 +119,8 @@ at it can be accessed the following way
 
     emacs ~/.bashrc
 
-    export JAVA_HOME=~/cloudmesh/bin/jdk1.8.0_161
-    export HADOOP_HOME=~/cloudmesh/bin/hadoop-3.0.1
+    export JAVA_HOME=~/cloudmesh/bin/jdk1.8.0_191
+    export HADOOP_HOME=~/cloudmesh/bin/hadoop-3.1.1
     export YARN_HOME=$HADOOP_HOME
     export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
     export PATH=$HADOOP_HOME/bin:$JAVA_HOME/bin:$PATH
@@ -133,9 +134,9 @@ editing you must update the variables in the system.
 If you have installed things properly there will be no errors. It will
 show the version as follows,
 
-    java version "1.8.0_161"
-    Java(TM) SE Runtime Environment (build 1.8.0_161-b12)
-    Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
+    java version "1.8.0_191"
+    Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
+    Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)
 
 And verifying the hadoop installation,
 
