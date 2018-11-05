@@ -103,7 +103,7 @@ in the AWS docs
 With the GUI interface it is relatively easy to try out your first
 Serverless function with AWS Lambda. Please follow the steps defined
 at
-[How to run your first AWS Lambda function in the cloud](../iaas/aws/aws-lambda.md#how-to-run-your-first-aws-lambda-function-in-the-cloud---example)
+[How to run your first AWS Lambda function in the cloud](../iaas/aws/aws-lambda.md#how-to-run-your-first-aws-lambda-function-in-the-cloud---example) (this link does not exsit any longer)
 
 :o: use also bibtex
 
