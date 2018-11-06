@@ -63,6 +63,7 @@ Now that you have configured the repository location, you can install it
 after you have updated the operating system. The update and install is
 done as follows:
 
+
 ```bash
 local$ sudo apt-get update
 local$ sudo apt-get install docker-ce
@@ -96,7 +97,8 @@ look for TAs and student that test out and improve this section.
 Before we start we create the following directory:
 
 ```bash
-local$ mkdir local$HOME/cloudmesh
+local$ mkdir $HOME/cloudmesh
+local$ cd $HOME/cloudmesh
 ```
 
 We also assume you have installed gitbash and use the a git bash
@@ -107,7 +109,7 @@ To install Docker on Windows, please download the following files
 * <https://download.docker.com/win/stable/Docker\%20for\%20Windows\%20Installer.exe>
 * <https://download.docker.com/win/stable/DockerToolbox.exe>
 
-Move the downloaded files to a directory `local$HOME/cloudmesh`
+Move the downloaded files to a directory `$HOME/cloudmesh`
 
 Place the downloaded exe files in the cloudmesh directory we created
 earlier. First conduct the Docker installation and then continue with
@@ -126,6 +128,36 @@ will show something like following:
 ```bash
 local$ <username>@<yourpc> ~
 ```
+Once installed execute the following command to make sure the installation is
+ done properly
+ 
+ ```bash
+ local$ sudo systemctl status docker
+ ```
+ 
+ This should give you an output similar to below.
+ 
+ ```bash
+  docker.service - Docker Application Container Engine
+    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+    Active: active (running) since Wed 2018-10-03 13:02:04 EDT; 15min ago
+      Docs: https://docs.docker.com
+  Main PID: 6663 (dockerd)
+     Tasks: 39
+
+ ```
+ 
+## Installation for Windows 10 :o: second instructions, which shoudl we follow?
+
+Docker needs Microsoft's Hyper-V to be enabled, but it will impact running the virtual machines
+
+Steps to Install
+
+* Download Docker for Windows(Community Edition) from the following link
+https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+* Follow the Wizard steps in the installer
+* Launch docker
+* Docker usually lauches automatically during windows startup.
 
 ## Testing the Install
 
