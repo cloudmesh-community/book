@@ -1,3 +1,3 @@
-# [Serverless Computing :o:]{.part}
+# [Serverless Computing]{.part}
 
 

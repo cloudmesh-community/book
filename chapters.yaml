@@ -19,6 +19,7 @@
         - chapters/authors.md
         - chapters/preface/create.md
         - chapters/preface/issues.md
+        - chapters/preface/reader.md                
         - chapters/preface/notation.md
 
 - DEVTOOLS:
@@ -60,10 +61,11 @@
                 - chapters/data/formats.md
                 - chapters/data/mongoengine.md
         - chapters/prg/python/python-wordcount.md
-        - chapters/prg/python/dask/dask.md
         - chapters/prg/python/numpy/numpy.md
         - chapters/prg/python/scipy/scipy.md
         - chapters/prg/python/scikit-learn/scikit-learn-k-means.md
+        - chapters/prg/python/python-parallel.md
+        - chapters/prg/python/dask/dask.md
         - chapters/prg/python/random-forest/random-forest.md
         - chapters/prg/python/fingerprint/fingerprint.md
         - chapters/prg/python/facedetection/facedetection.md
@@ -170,12 +172,12 @@
 - SERVERLESS:
     - chapters/SECTION/SECTION-SERVERLESS.md:
         - chapters/faas/introduction.md
-        - chapters/iaas/aws/aws-lambda.md
+        - chapters/faas/aws-lambda.md
+        - chapters/faas/openwhisk.md
+        - chapters/faas/kubeless.md
         - chapters/faas/microsoft-azure-functions.md
         - chapters/faas/google-cloud-functions.md
-        - chapters/faas/openwhisk.md
         - chapters/faas/openfaas.md
-        - chapters/faas/kubeless.md
         - chapters/faas/riff.md
         - chapters/faas/fission.md
         - chapters/faas/ironfunction.md
@@ -370,7 +372,7 @@
         - chapters/class/volumes.md
         - chapters/in/datasets.md
         - chapters/class/assignments-523.md
-        - chapters/bigdata/intro-fall-2018.md
+    - chapters/bigdata/intro-fall-2018.md
     - chapters/bigdata/applications/overview.md
     - chapters/bigdata/applications/physics.md
     - chapters/bigdata/applications/lifestyle.md
