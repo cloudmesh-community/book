@@ -51,7 +51,7 @@ gg: setup dest markdown graphicspath
 check:
 	make gg
 
-pdflatex:
+pdflatex: dest
 	make gg
 
 google:
