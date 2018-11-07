@@ -55,7 +55,7 @@ pdflatex: dest
 	make gg
 
 google:
-	gdrive update 1Mdd_TJcbXurJYRpG2gKCVqWmbhvED2Mp dest/$(FILE).pdf
+	gdrive update 1Mdd_TJcbXurJYRpG2gKCVqWmbhvED2Mp $(FILE).pdf
 
 single: dest graphicspath
 	latexmk -jobname=single $(FLAGS) -pvc -view=pdf single
