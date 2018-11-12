@@ -286,34 +286,25 @@ architecture. A Nice visual representation is provided in +@fig:nist-cloud-arch.
 
 ## Cloud Security Alliance Reference Architecture
 
-The Cloud Security Alliance (CSA) is a nonprofit organization that
-provides a variety of security resources to institutions including
-guidelines, education and best practices for adoption. Based on the
-following guiding prinicples they published the following reference
-architecture:
+Founded in 2008, the Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption. 
+
+This is a great organization to lean on if you have open questions about architecture and the best way to secure it.  There are working groups that look across 38 domains of Cloud Security. These groups meet actively and they cover current topics, opportunities and ask relevant questions.  It is a great place to networks with experts in the field and ask questions specific to your company or academic project.  You may also find an answer to your question in the white papers, reports, tools, trainings, and services they have available.
+
+The group of industry experts based use the following guiding principles to when publishing their reference Architecture (below).
 
 * Define protections that enable trust in the cloud.
-* Develop cross-platform capabilities and patterns for proprietary and
-  open-source providers.
-* Will facilitate trusted and efficient access, administration and
-  resiliency to the customer/consumer.
-* Provide direction to secure information that is protected by
-  regulations.
-* The Architecture must facilitate proper and efficient
-  identification, authentication, authorization, administration and
-  auditability.
+* Develop cross-platform capabilities and patterns for proprietary and open-source providers.
+* Will facilitate trusted and efficient access, administration and resiliency to the customer/consumer.
+* Provide direction to secure information that is protected by regulations.
+* The Architecture must facilitate proper and efficient identification, authentication, authorization,
+administration and auditability.
 * Centralize security policy, maintenance operation and oversight functions.
 * Access to information must be secure yet still easy to obtain.
 * Delegate or Federate access control where appropriate.
-* Must be easy to adopt and consume, supporting the design of security
-  patterns
-* The Architecture must be elastic, flexible and resilient supporting
-  multi-tenant, multi-landlord platforms
-* The architecture must address and support multiple levels of
-  protection, including network, operating system, and application
-  security needs.
-
-An overview of the architecture is shown in +@#fig:csa-arch.
+* Must be easy to adopt and consume, supporting the design of security patterns
+* The Architecture must be elastic, flexible and resilient supporting multi-tenant, multi-landlord platforms
+* The architecture must address and support multiple levels of protection, including network, operating
+system, and application security needs.
 
 ![Cloud Security Alliance Reference Architecture [Source](https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf)](images/csa-architecture.png){#fig:csa-arch}
 
