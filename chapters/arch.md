@@ -286,11 +286,12 @@ architecture. A Nice visual representation is provided in +@fig:nist-cloud-arch.
 
 ## Cloud Security Alliance Reference Architecture
 
-The Cloud Security Alliance (CSA) is a nonprofit organization that
-provides a variety of security resources to institutions including
-guidelines, education and best practices for adoption. Based on the
-following guiding prinicples they published the following reference
-architecture:
+Founded in 2008, the Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption. 
+
+This is a great organization to lean on if you have open questions about architecture and the best way to secure it.  There are working groups that look across 38 domains of Cloud Security. These groups meet actively and they cover current topics, opportunities and ask relevant questions.  It is a great place to networks with experts in the field and ask questions specific to your company or academic project.  You may also find an answer to your question in the white papers, reports, tools, trainings, and services they have available.
+
+The group of industry experts based use the following guiding principles to when publishing their reference Architecture (below).
+
 
 * Define protections that enable trust in the cloud.
 * Develop cross-platform capabilities and patterns for proprietary and
