@@ -210,7 +210,7 @@ If you really need to use it you must quote it in code/verbatim mode
 
 ## Has SOIC computers I can use remotely?
 
-See: https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559
+See: <ttps://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559>
 
 
 ## How to read the technical sections of the lecture notes
@@ -304,7 +304,7 @@ In this class we addressed 3 assignment that  related to your grade
 
 
 Tech summaries - they have been assigned to you
-in https://piazza.com/class/jl6rxey6w413gi?cid=89
+in <https://piazza.com/class/jl6rxey6w413gi?cid=89>
 to show to the TAs that you work on them use the nomenclature that is discussed in the preface of the technology handbook. Put yours hid in the "headline" and a smiley when done, If you work on it put in a hand.
 Project - look at examples in the example artifact sections
 A paper has typically the following sections
@@ -329,7 +329,8 @@ A more detailed outline is
 * Bibliography
 * Work breakdown
 
-## auto 80 char
+## Auto 80 char
+
 THose that use emcas could experiment with the following. I do not know if this works well yet.
 
 The following will autoformat an entire file to 80 chars. The reason i put it in test.md is that I do not know if it reliably works on all md files, just inspect the output and decide for yourself. some md files you may not want to manipulate with this though
@@ -338,7 +339,9 @@ The following will autoformat an entire file to 80 chars. The reason i put it in
 cp file.md test.md
 emacs -batch test.md --eval '(fill-region (point-min) (point-max))' -f save-buffer
 ```
+
 ## Useful FAQs for residential and online students
+
 You will know if this post applies to you.
 
 This class does not have a high volume on posts via Piazza
@@ -435,6 +438,7 @@ l) if you use them on public clouds that cost money, shut down all machines that
 
 
 ## markdown and bibtex
+
 As you know we do not use LaTeX for this class but simply markdown. you can use pandoc to create your epubs locally if you wish while following the paradox manual.
 
 
@@ -449,7 +453,7 @@ As part of this we like to remind you that we did distribute on day one of the c
 
 
 
-https://github.com/cloudmesh-community/book/blob/master/README.md
+<https://github.com/cloudmesh-community/book/blob/master/README.md>
 
 
 
@@ -471,7 +475,8 @@ Please also be reminded that there is an empty line before and after a heading o
 
 a list or any paragraph. paragraphs are not indented with tabs or spaces
 
-## please check your bibtex files
+## Please check your bibtex files
+
 We continue to see that some have unnecessary issues with bibtex. Mostly the reason is they are not using emacs or jabref which come with validation that assures that commas are placed at the right location.
 
 
@@ -486,6 +491,7 @@ Just my 2 cents.
 
 
 ## Original Refernce are a must
+
 It came to our attention that some students forgot to cite the original reference to their technologies.
 
 The first time you mention your technology is a good location for that example
