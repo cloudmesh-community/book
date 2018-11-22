@@ -33,16 +33,16 @@ Two reason:
    may take up to 24 hours for FAQs to appear here.
 
 Once an FAQ is in the book answered (it may actually be part of
-another section, TAs will mark the FAQ in piazza, so you can make sure
+another section, TA's will mark the FAQ in piazza, so you can make sure
 which FAQs are already in the book. We recommend to look in the book
 as there could be information in it that you otherwise missed.
 
 ## Can I assume that all information is in the FAQ to do the class?
 
 No. The class book will be our main source of information not just a
-single file.
+collection of FAQ's.
 
-## How do I find all FAQs on Piazza?
+## How do I find all FAQ's in Piazza?
 
 Two ways exist
 
@@ -52,11 +52,11 @@ piazza window. Click on it and all posts marked with FAQ will show up,
 b) In the search field type in FAQ. All posts with the text FAQ in it
 will be listed.
 
-## FAQ: has SOIC computers I can use remotely?
+## Has SOIC computers I can use remotely?
 
 See: <https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559>
 
-##FAQ: when contributing to the book my name is not listed properly or not at all
+## When contributing to the book my name is not listed properly or not at all
 
 The following reasons exist:
 
@@ -69,9 +69,8 @@ The following reasons exist:
 
 ```bash
 $ git shortlog -s -e
-     2  btpope <42694671+btpope@users.noreply.github.com>
-     1  luoyu357 <luoyu357@gmail.com>
-     1  shilpasingh21 <shilpasingh21@gmail.com>
+2  laszewsk <laszewski@gmail.com>
+...
 ```
 
 You need to do two things.
@@ -80,45 +79,40 @@ First, add your name to the file
 
 * <https://github.com/cloudmesh-community/book/blob/master/.mailmap>
 
-
-
 Second, complete the set up your git on the machine you work with in
 case you use a commandline tool with git init (see our notes on this)
-
-
 
 If you use the GUI you may need to go to the account settings and
 associate a first name lastname, I however do not know ho to do that,
 so if you kwon reply ti this
 
 
-## FAQ: How to read the technical sections of the lecture notes
-
-This is an important tip and I recommend that you read it.
+## How to read the technical sections of the lecture notes
 
 We will add throughout the semester some technical lecture notes. These
-notes contain information on how to run certain things
+notes contain information on how to install and run certain programs
 on a computer. What we have seen in the past with some students is
-that they do not read the text between the sections that look like you
-can just execute them. They also may include information that is
-important and should not be overlooked.
+that they do not read the text between the sections. Instead they just
+execute things without reading or understanding assuming that they can
+juste paste and copy. These sections include valuable information that
+you **must** read before you execute them.
 
 Here is the workflow on how to read such technical sections
 
-1. do not execute anything yet
+1. Do not execute anything yet
 
-2. read the entire section including the lines between the gray boxes
+2. Read the entire section including the lines between the gray boxes
 
-3. step back and reflect on what you read
+3. Step back and reflect on what you read
 
-4. reread the section, if a section needs more information google for
+4. Reread the section, if a section needs more information google for
    it (things could be overnight updated on the internet, please
    remember we are just presenting a snapshot in time here)
 
-5. once you have obtained knowledge, decide if the section is relevant
+5. Once you have obtained knowledge, decide if the section is relevant
    for you (e.g. windows sections may not be relevant for MacOS users)
 
-6. carefully execute the relevant portions for you
+6. Carefully execute the relevant portions for you
 
 :warning: AS ALWAYS THERE IS NO GUARANTEE THAT WHAT WE DOCUMENT WORKS
 OR COULD NOT DESTROY SOMETHING. MAKE SURE TO HAVE A BACKUP. IF IN
@@ -135,6 +129,8 @@ The easiest is to use yamllint:
 $ pip install yamllint
 $ yamllint README.yml
 ```
+
+Using yamllint is our preferred method.
 
 A python script to check it is available at
 
@@ -172,26 +168,26 @@ $ ruby-e "require 'yaml';puts YAML.load_file('./README.yml')"
 
 YAML validation in visual studio can be achieved also
 
-  <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml>
+*  <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml>
 
 ## How do I check if a markdown file is valid?
 
 Markdown is such a simple format that you should not have any
 issue. We recommend that you do a local checkout of the epub and
 compile it and look at your section contribution.
-
-To work on a songel file yo ucan jsut use markdown editors.
+To work on a single file you can just use markdown editors.
 
 A lint program is available at
 
 * <https://github.com/remarkjs/remark-lint>
 
-However I recommend to copy your file into a separate directory and
+However, we recommend to copy your file into a separate directory and
 check it there as it installs some other programs into the directory
-wher you do the checking.
+where you do the checking.
 
 Editors that students have used include
 
+* Emacs, Aquamacs, CarbonEmacs
 * Remarkable: <https://remarkableapp.github.io/>
 * Macdown: <https://macdown.uranusjr.com/>
 * Mark Down validation and preview:  <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
