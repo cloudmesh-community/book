@@ -27,7 +27,7 @@ the popular public and private PaaS Providers - built-in scalable
 infrastructure, middleware, and various tools for development, 
 deployment and support. Cloud Foundry promotes the 12-factor application methodology to write clean applications with clear separation of front-end and back-end concerns. 12-factor framework provide software development guidelines such as tracking the  code changes through source control system, calling out the software dependencies, configuration management, loosely coupled services, build and deployment management [@twelve-factor-app]. To enable infrastructure-agnostic architecture, Cloud Foundry, as shown in +@fig:OpenPaaS focused on three main categories: *Clouds,Frameworks and Services* [@Badola2015].
 
-![@harris_2011](images/Cloud-Foundry-as-Open-PaaS.jpg){#fig:OpenPaaS}
+![Cloud Foundry - Open PaaS [@harris_2011]](images/Cloud-Foundry-as-Open-PaaS.jpg){#fig:OpenPaaS}
 
 ### Category: Clouds
 
@@ -74,7 +74,7 @@ support all the key aspects of PaaS cloud computing in a scalable
 fashion [@Nimalsiri2016]. +@fig:CFArchitecture is a good representation of the major components
 of Cloud Foundry:
 
-![@cialisalto](images/Cloud-Foundry-arch.png){#fig:CFArchitecture}
+![Cloud Foundry Architecture [@cialisalto]](images/Cloud-Foundry-arch.png){#fig:CFArchitecture}
 
 ### Router
 
