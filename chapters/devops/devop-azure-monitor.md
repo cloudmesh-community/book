@@ -11,7 +11,7 @@
 Microsoft provides unified tool called Azure Monitor for end-to-end monitoring of the infrastructure and deployed applications. 
 Azure Monitor can greatly help Dev-Op teams by proactively and reactively monitoring the applications for bug tracking, health-check and provide metrics that can hint on various scalability aspects. 
 
-![Azure Monitor](images/devop-azure-monitor.png){#fig:azure-monitor}
+![@azure-monitor](images/devop-azure-monitor.png){#fig:azure-monitor}
 
 
 Azure Monitor accommodates applications developed in various programming languages - .NET, Java, Node.JS, Python and various others. 
