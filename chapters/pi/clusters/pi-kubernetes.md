@@ -130,7 +130,7 @@ Received the following error/warning:
 ```
 [WARNING RequiredIPVSKernelModulesAvailable]: the IPVS proxier will not
 be used, because the following required kernel modules are not loaded: [ip_vs_sh
-nf_conntrack_ipv4 ip_vs ip_vs_rr ip_vs_wrr] or no builtin kernel ipvs support:
+nf_conntrack_ipv5 ip_vs ip_vs_rr ip_vs_wrr] or no builtin kernel ipvs support:
 map[ip_vs:{} ip_vs_rr:{} ip_vs_wrr:{} ip_vs_sh:{} nf_conntrack_ipv4:{}]
 you can solve this problem with following methods:
  1. Run 'modprobe -- ' to load missing kernel modules;
