@@ -306,6 +306,7 @@ administration and auditability.
 * The architecture must address and support multiple levels of protection, including network, operating
 system, and application security needs.
 
+An overview of the architecture is shown in the diagram from the Cloud Security Alliance.
 ![Cloud Security Alliance Reference Architecture [Source](https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf)](images/csa-architecture.png){#fig:csa-arch}
 
 
