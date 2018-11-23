@@ -146,7 +146,7 @@ and follow the steps in the following sections:
 * [Wireless Network at Home](#s-wireless-at-home)
 * [Wireless Network at IU](#s-wireless-at-iu)
 * [Update the system](#s-pi-update-system)
-* [Hostname](#s-pi-set-hostname)
+* [Set the hostname](#s-pi-set-hostname)
 
 
 ### Install Raspbian on a SD card {#s-install-raspbian}
@@ -168,8 +168,6 @@ cluster consisting out of many PI's.
 
 #### Download Raspbian
 
-:o: JPB Reviewed to here :o:
-
 No matter which OS you create the SD Cards on, you will need to
 download the Raspbian OS.
 
@@ -184,44 +182,42 @@ Visit the link
 and download the image into the folder of your choice (we assume
 `~/Download`).
 
-#### Etcher form Windows and macOS, Linux
-
+#### Etcher from Windows and macOS, Linux
 
 An easy way to burn a SD Cards on Windows, macOS, and Linux is with a
-programm called Etcher. Etcher can be downloaded from
+program called Etcher. Etcher can be downloaded from
 
 * <https://etcher.io/>
 
-Chose the download suitable for your OS. On Windows you ahve a couple
+Chose the download suitable for your OS. On Windows you have a couple
 of options. We recommend that you use the 64 bit Installer version if
 your OS supports it. If you have a Windows 32bit OS, it may be time to
 upgrade your computer and/or OS. Also on Linux you need to make sure
-you distinguish between 32bit and 64bit. 
+you distinguish between 32bit and 64bit.
 
 #### Windows 10
 
 Once you download it, start Etcher and select the
 unzipped Raspbian image file. Now select the drive of the SD
-card. click Burn and your image will be written to the SD card. You
-can monitor the progress an once it is completed the SD card will
+card. Click Burn and your image will be written to the SD card. You
+can monitor the progress and once it is completed the SD card will
 automatically unmount. Use it now in your Raspberry Pi.
 
 The process is the same as the one on macOS
 
-
 #### macOS
 
-Once the image is downloaded you copy it with etcher onto the SD-card.
+Once the image is downloaded you copy it with Etcher onto the SD-card.
 
-2. Place an SD Card into a SD card reader we recommend a 32GB card.
-3. Attach the card reader to the computer
-4. Open Etcher and select the downloaded `.img` or `.zip`
+1. Place an SD Card into a SD card reader. We recommend a 32GB card.
+2. Attach the card reader to the computer
+3. Open Etcher and select the downloaded `.img` or `.zip`
    file which you will likely find in the `~/Download` folder if you
    followed our previous steps
-5. Select the SD card to write the image to. Be careful, to chose the
+4. Select the SD card to write the image to. Be careful, to chose the
    right location as otherwise you could create unexpected data loss
-6. Hence, review selections carefully and click *Flash!* to begin
-  writing data to the SD card.
+5. Hence, review selections carefully and click *Flash!* to begin
+   writing data to the SD card.
 
 
 #### Ubuntu from Etcher
@@ -230,7 +226,7 @@ The process is the same as on macOS.
 
 #### Ubuntu from Commandline
 
-In Ubuntu we can use the advanced Linux commands to burn the SD Cards
+In Ubuntu we can use the advanced Linux commands to burn the SD Cards.
 In the file explorer, right click on the SD card and format the SD
 card. This is done as follows:
 
@@ -254,7 +250,7 @@ card. This is done as follows:
 
    ```bash
    $ unmount dev/mmcblk0p1
-   ``` 
+   ```
 
    Make sure to use correct name for the card. If your card has
    multiple partitions unmount all partitions
@@ -264,53 +260,53 @@ card. This is done as follows:
    ```bash
    $ dd bs=4M if=<path to .img> of=/dev/mmcblk0 status=progress conv=fsunc
    ```
-  
+
    Make sure `if=` contains the path to image and `of=` contains the name 
    of the SD card otherwise you may ruin your hard disk
 
 To check, if the image was properly written you can do the following:
 
-8. Create an image again from the SD card by running the following command:
+1. Create an image again from the SD card by running the following command:
 
    ```bash
    $ dd bs=4M if=/dev/sdX of=from-sd-card.img
    ```
 
-9. Truncate the image to be the same size as that of the raspbian image
+2. Truncate the image to be the same size as that of the Raspbian image
 
    ```bash
    $ truncate --reference <original raspbian image> from-sd-card.img
    ```
-  
-10. Run `diff` to see if the two files are same by running the following
+
+3. Run `diff` to see if the two files are same by running the following
     command:
 
    ```bash
    $ diff -s from-sd-card.img <original raspbian image>
    ```
-  
-   If everything iss ok, `diff` should say that the two files are same
+
+   If everything is OK, `diff` should say that the two files are the same.
 
 In most cases the verification step will not be needed.
 
 ### Password {#s-pi-setup-password}
 
-Before you bring your Raspberry Pi on the networks, you need to reset
+Before you bring your Raspberry Pi on the network, you need to reset
 the password. This can be done by starting the terminal and typing in
 it the command
 
     pi$ passwd
 
-The original password is `raspberrypi` and every one knows it. So if
+The original password is `raspberrypi` and everyone knows it. So if
 you put your pi on the network it is easily compromised. Hence, change
 your password first.
 
 ### Locale
 
 You want to also set your system to use your language settings for the
-keyboard. you can do this isn the terminal with 
+keyboard. You can do this from the terminal with
 
-    pi$ raspi-config 
+    pi$ raspi-config
 
 or
 
@@ -321,8 +317,8 @@ or using the GUI.
 
 ### Wireless Network at Home {#s-wireless-at-home}
 
-The easiest way to get internet access and to continue the setup is
-using a wireless network. You can configure it either via the GUI or command line.
+The easiest way to get internet access and to continue the setup is using a
+wireless network. You can configure it either via the GUI or command line.
 
 In case you like to edit the information from command line edit the
 file `interfaces` file with
@@ -337,19 +333,21 @@ change the following
     wpa-ssid "your-WLAN-SSID"
     wpa-psk "your-WLAN-password"
 
-and replace the values with the once you have. To save the file use 
+and replace the values with the ones you have. To save the file use 
 
     Ctrl-o Y Enter Save changes.
     Ctrl-x Quit nano.
 
 ### Wireless Network at IU {#s-wireless-at-iu}
 
+:o: TODO: Update with new IU public wireless information
+
 IU runs several different networks. This includes IUSecure, Eduroam,
 and ATT Wifi.  The first two would require you to use your IU username
 and password to be entered in the configuration. Although technically
 possible we find the method :warning: **HIGHLY** insecure and
-:warning: **STRONGLY** advice agains doing so. Let us assume you put
-your information on a PI and than someone takes the SDCard from
+:warning: **STRONGLY** advice against doing so. Let us assume you put
+your information on a PI and than someone takes the SD Card from
 it. They can than look into the card and steal your
 password. Obviously this is not advisable. In other cases you may have
 configured your software wrong and someone could login remotely and
@@ -357,7 +355,7 @@ lift your password remotely. Obviously this is not advisable.
 
 Regardless, we have seen from instructors the advice to use
 IUSecure. This is :warning: **WRONG**! Do not listen to them about
-this particular issue and advise them to use an alternative setup
+this particular issue and advise them to use an alternative setup.
 
 One such alternative (which is also not ideal) is to use the free wifi
 offered by ATT Wifi. It is a bit complex to setup as you need to go to
@@ -389,7 +387,7 @@ A good example is emacs which can be installed with
 pi$ apt-get install emacs
 ```
 
-### Hostname {#s-pi-set-hostname}
+### Set the Hostname {#s-pi-set-hostname}
 
 The hostname is stored in `/etc/hostname`. Edit the file and change it
 to a name such as green00, green01, green02, green03, green04, green05.
@@ -415,18 +413,19 @@ also have an entry in `/etc/hosts` as the local loopback. To fix this, edit
 This should be changed to the new host name set in `/etc/hostname`.
 
 ```bash
-    pi$ sudo nano /etc/hostname
+    pi$ sudo nano /etc/hosts
 ```
 
 ### Remote access via ssh
 
-To enable ssh on the pi you need to say
+In the latest Raspbian OSs ssh is enabled by default. However, if you discover
+that it is not enabled, the following commands should enable it.
 
     pi$ sudo systemctl enable ssh
     pi$ sudo systemctl start ssh
 
 Naturally you need to do a bit more such as placing your public key in
-the authorized_keys file explained later, but for now we will just
+the `authorized_keys` file explained later, but for now we will just
 activate ssh.
 
 To access the machine using public keys we recommend that you add your
@@ -434,12 +433,14 @@ public key to the `~pi/.ssh/authorized_keys` file
 
 ## Setting up a Small Cluster by Hand
 
+:o: JPB Reviewed to here :o:
+
 :o: This explains how to set up a small cluster by hand discussing how to
 burn multiple cards. It uses the method of booting the pi and using a
-monitor to set up each of them. starting with passwd
+monitor to set up each of them. Starting with passwd.
 
 The process described above can be replicated fairly easily for a
-small number of PIs. Just make sure you have a different hostname for
+small number of Pis. Just make sure you have a different hostname for
 each Pi. More complex setups are discussed next while for example
 using static IP addresses.
 
