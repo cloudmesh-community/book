@@ -111,6 +111,10 @@ sure you have xcode installed:
 
     $ xcode-select --install
 
+On Mojave you will get an error that zlib is not installed. THis is due to that the header files are not properly installed. To do this you can say 
+
+    $ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+
 Next install homebrew, pyenv, pyenv-virtualenv and pyenv-virtualwrapper.
 Additionally install readline and some compression tools:
 
