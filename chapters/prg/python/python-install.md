@@ -39,7 +39,7 @@ Often you have your own computer and you do not like to change its
 environment to keep it in pristine condition. Python comes with many
 libraries that could for example conflict with libraries that you have
 installed. To avoid this it is bets to work in an isolated python we can
-use tools such as virtualenv, pyenv or pyenv for 3.7.0. Which you
+use tools such as virtualenv, pyenv or pyenv for 3.7.1. Which you
 use depends on you, but we highly recommend pyenv if you can.
 
 ### Managing Multiple Python Versions with Pyenv
@@ -64,7 +64,7 @@ switch between multiple versions of Python
 
 If you need to have more than one python version installed and do not
 want or can use pyenv, we recommend you download and install python
-2.7.15 and 3.7.0S from python.org
+2.7.15 and 3.7.1 from python.org
 (<https://www.python.org/downloads/>)
 
 #### Disabling wrong python installs on macOS
@@ -182,16 +182,16 @@ entire list please use the command:
     $ pyenv install -l
 
 However, for us we only need to worry about python 2.7.15 and python
-3.7.0. You can now install different versions of python into your
+3.7.1. You can now install different versions of python into your
 local environment with the following commands:
 
     $ pyenv update
     $ pyenv install 2.7.15
-    $ pyenv install 3.7.0
+    $ pyenv install 3.7.1
 
 You can set the global python default version with:
 
-    $ pyenv global 3.7.0
+    $ pyenv global 3.7.1
 
 Type the following to determine which version you activated:
 
@@ -205,10 +205,10 @@ Associate a specific environment name with a certain python version, use
 the following commands:
 
     $ pyenv virtualenv 2.7.15 ENV2
-    $ pyenv virtualenv 3.7.0 ENV3
+    $ pyenv virtualenv 3.7.1 ENV3
 
 In the example above, ENV2 would represent python 2.7.15 while ENV3
-would represent python 3.7.0. Often it is easier to type the alias
+would represent python 3.7.1. Often it is easier to type the alias
 rather than the explicit version.
 
 #### Set up the Shell
@@ -275,8 +275,8 @@ onto the ENV3 environment. Than you need to execute the following steps:
 
     pyenv deactivate
     pyenv uninstall ENV3
-    pyenv install 3.7.0
-    pyenv virtualenv 3.7.0 ENV3
+    pyenv install 3.7.1
+    pyenv virtualenv 3.7.1 ENV3
     ENV3
     pip install pip -U
 
@@ -343,7 +343,7 @@ command as descripbed in the prvious section.
 
 If you need to have more than one python version installed and do not
 want or can use pyenv, we recommend you download and install python
-2.7.15 and 3.7.0 from python.org (<https://www.python.org/downloads/>)
+2.7.15 and 3.7.1 from python.org (<https://www.python.org/downloads/>)
 
 ### Make sure pip is up to date
 
@@ -437,8 +437,8 @@ installed:
     system
     2.7.15
     2.7.15/envs/ENV2
-    3.7.0
-    3.7.0/envs/ENV3
+    3.7.1
+    3.7.1/envs/ENV3
     ENV2 
     ENV3
     * anaconda3-4.3.1 (set by PYENV_VERSION environment variable)
