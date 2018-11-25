@@ -18,26 +18,176 @@ three nodes to support testing the distribution of containers. (It may work with
 two, but we have not tested it). Please give us feedback on this and let us know
 what works for you. We will integrate your feedback.
 
-We assume that you have installed docker and disabled swap
+## Overview of Kubernetes Cluster Setup
 
-First install docker, disable swap, install kubeadm
+A Kubernetes cluster is made of on master and several worker nodes. Each node
+must have the standard Kubernetes setup completed and the master must also have
+additional setup. Once the master and worker nodes are setup then the worker
+nodes can join the network created by the master node. For the Raspberry Pi we
+support two modes of setting up the master and workers. The first method is to
+use the scripts that we provide to do the required installations. The second
+method is to perform each step by hand. We will begin by explaining how to use
+the scripts to setup your cluster quickly.
 
-All the following steps are made automatically by the
-[`526/docker_kubernetes_install.sh`](526/kubernetes/docker_kubernetes_install.sh) script.
+## Kubernetes Cluster Setup with Scripts
+
+These steps have been verified with the latest build of Raspbian
+Stretch which is
+[2018-11-13-raspbian-stretch-lite](https://downloads.raspberrypi.org/raspbian_lite_latest).
+If you have installed Raspbian Stretch with Desktop or Raspbian Stretch with
+Desktop and Recommended Software then some of these steps will not be required,
+but repeating them will not be a problem.
+
+The required scripts are stored in the
+[Cloudmesh Community Pi](https://github.com/cloudmesh-community/pi) repository
+and must be copied to each Raspberry Pi in order to run. This guide assumes that
+each Pi has internet access which is required to download the necessary tools.
+The first steps to setup the Pi tools is listed on the README.md for the Pi
+tools repository. We will repeat those steps here for convenience.
+
+### Pi Tools Prerequisites
+
+To use the Cloudmesh Pi tools you need `git` to download the tools from the
+github repository. You must also update the Pi's list of software, install
+`git`, and then download or clone the `git` repository. Run these steps at the
+Pi command prompt:
+
+```bash
+$ sudo apt-get update; sudo apt-get install -y git
+$ git clone https://github.com/cloudmesh-community/pi.git
+```
+
+When that successfully completes you will have a copy of the Pi tools on your Pi
+and you can now run them.
+
+
+### Kubernetes Shared Setup {#kubernetes-shared-setup}
+
+Every Kubernetes node, whether master or worker, needs to complete the following
+setup steps. The Pi tool scripts are stored in the `bin` directory. Every
+Kubernetes Pi master and worker must run the `kubernetes-setup.sh` script which
+will download and install Docker and Kubernetes and make the necessary system
+changes to support both. When this script completes the Pi must be rebooted to
+properly configure its memory system for Kubernetes. Execute the following
+commands:
+
+```bash
+$ sudo pi/bin/kubernetes-setup.sh
+$ sudo reboot
+```
+
+If you are connected to the Pi over `ssh` your session may hang at this point.
+You can either wait for `ssh` to timeout or kill the session by typing a tilde
+then a period. The tilde on a new line is a special command to `ssh` and the
+period means to disconnect the session.
+
+```bash
+~.
+```
+
+At this point the worker is ready to connect to the Kubernetes master node.
+The command to connect to the master node is `kubeadm join` but we need to
+finish setting up the master node in order to get the token necessary to
+authenticate with the master node.
+
+### Kubernetes Master Setup {#kubernetes-master-setup}
+
+To setup the Kubernetes master node you should first complete the
+[Kubernetes Shared Setup](#kubernetes-shared-setup). After the Pi reboots you
+can run the master setup script:
+
+```bash
+$ sudo pi/bin/kubernetes-master-setup.sh
+```
+
+The master setup script will run `kubeadm init` which can take a long time and
+will occasionally timeout on the Raspberry Pi without completing. This does not
+indicate a failure of the Pi setup. If the command finishes with the error
+
+```
+Unfortunately, an error has occurred:
+        timed out waiting for the condition
+```
+
+then it is possible to restart the setup and it will usually complete
+successfully the second time. To do this (only if the master setup failed) run
+`kubeadm reset` and be sure to answer y to the prompts. Then run the master
+setup script again:
+
+```bash
+$ sudo kubeadm reset
+$ sudo pi/bin/kubernetes-master-setup.sh
+```
+
+When the master setup successfully completes you should see:
+
+```
+Your Kubernetes master has initialized successfully!
+```
+
+and there will be further instructions on how to setup the master. These steps
+have already been performed by the setup scripts so you do not need to do them.
+The output will also list the required `kubeadm join` command that can be issued
+on each worker node that wishes to join this Kubernetes master node. In
+addition, the scripts have stored the join command, the master IP address, the
+join token, and the CA Hash in a YAML file `kubeadm-settings.yml` in the current
+directory. If you need to add nodes in the future, you may refer to this file
+for the required parameters.
+
+## Join Workers to Master
+
+Now login to each of the workers and issue the `kubeadm join` command from the
+master node. If you have not successfully completed the master node setup,
+please see [Kubernetes Master Setup](#kubernetes-master-setup) for the required
+steps.
+
+As of this writing there is a version incompatibility between the latest
+Kubernetes and the latest Docker. Kubernetes has not yet verified Docker version
+18.09 which is installed on the Pi. Docker currently only supports this latest
+version of Docker with their automated installation script. The previous version
+18.06 is supported by Kubernetes but we have not found correct installation
+steps for this version of Docker. There should not be any problems, but when the
+workers join the master node you must ignore the errors from the Docker version
+by specifying `--ignore-preflight-errors=SystemVerification` on the command line.
+An example `kubeadm join` command would be:
+
+```bash
+$ sudo kubeadm join 10.0.0.101:6443 --token vstt3y.faa67q2dp383xhgv --discovery-token-ca-cert-hash sha256:7fa06185f14b89234235aa9f03ef60835ade825e2553cd97a52b5894566edeb5 --ignore-preflight-errors=SystemVerification
+```
+
+Once the worker nodes have joined the cluster, you can login to the master node
+and see their status with the following command:
+
+```bash
+$ sudo kubectl get nodes
+NAME     STATUS   ROLES    AGE     VERSION
+blue00   Ready    master   4h56m   v1.12.2
+blue01   Ready    <none>   4h44m   v1.12.2
+blue02   Ready    <none>   4h46m   v1.12.2
+blue03   Ready    <none>   4h42m   v1.12.2
+blue04   Ready    <none>   4h1m    v1.12.2
+```
+
+When the workers are joining the cluster they will initially be in a `NotReady`
+state for a while as they complete their setup. This is the normal expected
+behavior and each node should reach the `Ready` state within a few minutes. To
+continue experimenting with your Kubernetes cluster, please see the
+[Kubernetes First Steps](#kubernetes-first-steps) section.
 
 ### Install docker
 
 First install Docker with
   
-  ``
+  ```bash
   $ curl -sSL get.docker.com | sh && \
   sudo usermod pi -aG docker
-  ``
+  ```
 
   [optional] Command to run Docker as a non root user:
-  ``
+
+  ```
   $ sudo usermod -aG docker pi
-  ``
+  ```
 
 ### Disable swap memory
 
@@ -199,6 +349,11 @@ If your nodes are not configured like that you'll need to change this
 script or copy `docker_kubernetes_install.sh` to each of the nodes
 manually.  We plan on making this script independent on the number of
 nodes.
+
+
+## Kubernetes First Steps {#kubernetes-first-steps} :o:
+
+Explain the basic setup of Kubernetes.
 
 ## Files
 
