@@ -42,8 +42,9 @@ The required scripts are stored in the
 [Cloudmesh Community Pi](https://github.com/cloudmesh-community/pi) repository
 and must be copied to each Raspberry Pi in order to run. This guide assumes that
 each Pi has internet access which is required to download the necessary tools.
-The first steps to setup the Pi tools is listed on the README.md for the Pi
-tools repository. We will repeat those steps here for convenience.
+The first steps to setup the Pi tools is listed on the 
+[README.md](https://github.com/cloudmesh-community/pi/blob/master/README.md)
+for the Pi tools repository. We will repeat those steps here for convenience.
 
 ### Pi Tools Prerequisites
 
@@ -64,7 +65,7 @@ and you can now run them.
 ### Kubernetes Shared Setup {#kubernetes-shared-setup}
 
 Every Kubernetes node, whether master or worker, needs to complete the following
-setup steps. The Pi tool scripts are stored in the `bin` directory. Every
+setup steps. The Pi scripts are stored in the `bin` directory. Every
 Kubernetes Pi master and worker must run the `kubernetes-setup.sh` script which
 will download and install Docker and Kubernetes and make the necessary system
 changes to support both. When this script completes the Pi must be rebooted to
@@ -88,7 +89,7 @@ period means to disconnect the session.
 At this point the worker is ready to connect to the Kubernetes master node.
 The command to connect to the master node is `kubeadm join` but we need to
 finish setting up the master node in order to get the token necessary to
-authenticate with the master node.
+authenticate with it.
 
 ### Kubernetes Master Setup {#kubernetes-master-setup}
 
@@ -111,7 +112,7 @@ Unfortunately, an error has occurred:
 
 then it is possible to restart the setup and it will usually complete
 successfully the second time. To do this (only if the master setup failed) run
-`kubeadm reset` and be sure to answer y to the prompts. Then run the master
+`kubeadm reset` and be sure to answer `y` to the prompts. Then run the master
 setup script again:
 
 ```bash
@@ -152,7 +153,11 @@ by specifying `--ignore-preflight-errors=SystemVerification` on the command line
 An example `kubeadm join` command would be:
 
 ```bash
-$ sudo kubeadm join 10.0.0.101:6443 --token vstt3y.faa67q2dp383xhgv --discovery-token-ca-cert-hash sha256:7fa06185f14b89234235aa9f03ef60835ade825e2553cd97a52b5894566edeb5 --ignore-preflight-errors=SystemVerification
+$ sudo kubeadm join 10.0.0.101:6443 \
+    --ignore-preflight-errors=SystemVerification \
+    --token vstt3y.faa67q2dp383xhgv \
+    --discovery-token-ca-cert-hash \
+    sha256:7fa06185f14b89234235aa9f03ef60835ade825e2553cd97a52b5894566edeb5
 ```
 
 Once the worker nodes have joined the cluster, you can login to the master node
@@ -351,7 +356,7 @@ manually.  We plan on making this script independent on the number of
 nodes.
 
 
-## Kubernetes First Steps {#kubernetes-first-steps} :o:
+## Kubernetes First Steps :o: {#kubernetes-first-steps}
 
 Explain the basic setup of Kubernetes.
 
