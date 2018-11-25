@@ -20,7 +20,7 @@ what works for you. We will integrate your feedback.
 
 ## Overview of Kubernetes Cluster Setup
 
-A Kubernetes cluster is made of on master and several worker nodes. Each node
+A Kubernetes cluster is made of one master and several worker nodes. Each node
 must have the standard Kubernetes setup completed and the master must also have
 additional setup. Once the master and worker nodes are setup then the worker
 nodes can join the network created by the master node. For the Raspberry Pi we
