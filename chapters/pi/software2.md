@@ -35,19 +35,19 @@ if you have any questions or issues.
 
 Refer to other section in book and describe what is different
 
-provide a setcion
+provide a section
 
 ### Scipy
 
 Refer to other section in book and describe what is different
 
-provide a setcion
+provide a section
 
 ### Image Processing
 
 Refer to other section in book and describe what is different
 
-provide a setcion
+provide a section
 
 ## System
 
@@ -57,35 +57,26 @@ provide a setcion
 
 ### hostname
 
-The hostname is stored in `/etc/hostname`. Edit the file and change it
-to a name such as green00, green01, green02, green03, green04, green05.
-Be consistent with the names. The 00 host should be the top most host in
-the cluster.
+Please see the section [Set the hostname](#s-pi-set-hostname) to set the
+hostname on the Pi.
 
-edit
+### Gather the MAC addresses
 
-    nano /etc/hostname
+The MAC address is the hardware address of an Ethernet network device. The MAC
+address is set by the manufacturer and does not change when you join a different
+network like an IP address can. You can get the MAC address for the Ethernet
+interface `eth0` or the wireless interface `wlan0` on the Pi by using the
+`ifconfig` command and looking for the line that begins with `ether`. The
+following command will directly output the MAC address for the interface that
+you specify. You can run `ifconfig` with no parameters to see a list of all the
+interfaces.
 
-after you edited the hostname
-
-    sudo /etc/init.d/hostname.sh start
-
-Ideally we want to find out how to write the hostname after we burn the
-SD card on the laptop that does the burning
-
-develop a python script to do that
-
-### Gather the mac addresses
-
-Is there a better way?
-
-    /sys/class/net/<interface-name>/address
-
-    cat /sys/class/net/eth0/address
-    cat /sys/class/net/wlan0/address
-    ifconfig eth0
-
-develop a python script to do that
+```bash
+pi$ ifconfig eth0 | awk '/ether/ {print $2}'
+b8:27:eb:9c:b8:6e
+pi$ ifconfig wlan0 | awk '/ether/ {print $2}'
+b8:27:eb:ce:ef:3b
+```
 
 ### Enable SSH
 
@@ -167,18 +158,18 @@ edit /etc/default/isc-dhcp-server
 
 ### grafana
 
-could be helpful to monitor cluster/clusters
+Could be helpful to monitor cluster/clusters
 
 * <https://github.com/grafana/grafana>
 
 * <https://github.com/weaveworks/grafanalib>
 
-there are many more, just search. we have not tested them example with
+There are many more, just search. We have not tested them example with
 yaml
 
 * <https://github.com/jakubplichta/grafana-dashboard-builder>
 
-light scheme
+Light scheme
 
 in /etc/grafana/grafana.ini uncomment line and set
 
