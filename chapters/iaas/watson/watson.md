@@ -16,14 +16,14 @@ While The next section walks through how to create a free account,  let's contin
 
 Instead of starting with a blank page IBM steps are put in place and working examples can be customized.  
 
-[](images/1WatsonAssistentBasic.PNG)
-[](images/2WatsonAssistentBasicCode.PNG)
-[](images/3WatsonAssistent3steps.PNG)
-[](images/4Watsoneditsample.PNG)
-[](images/5Watsonaddingexample.PNG)
-[](images/6Watsoncustomizesettings.PNG)
+![](images/1WatsonAssistentBasic.PNG)
+![](images/2WatsonAssistentBasicCode.PNG)
+![](images/3WatsonAssistent3steps.PNG)
+![](images/4Watsoneditsample.PNG)
+![](images/5Watsonaddingexample.PNG)
+![](images/6Watsoncustomizesettings.PNG)
 
-In the case above when I was trying the Watson Assistant It was not personal when I asked the Assistant's name so it can be modified to "digress!"
+In the case above when I was trying the Watson Assistant It was not personal when I asked the Assistant's name so it can be modified to digress!
 
 In addition to using these modules to help build there is also a variety of APIs and services that can be used:
 

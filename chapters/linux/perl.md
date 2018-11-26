@@ -8,10 +8,14 @@ Strip trailing whitespace from a file:
 perl -lpe 's/\s*$//' FILENAME
 ```
 
-```perl
-perl -lpe "s/’/'/" FILENAME
-```
+Replace wrong quote
 
 ```perl
 perl -i -p -e "s/’/'/g;"  *.md
+```
+
+Remove ^M from file
+
+```
+perl -p -i -e 's/\r\n$/\n/g'
 ```

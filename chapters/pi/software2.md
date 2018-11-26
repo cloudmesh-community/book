@@ -1,4 +1,4 @@
-# Pi Software Collection :o:
+# Pi Software Collection :o: :hand: fa18-516-03
 
 Please improve the sections.
 
@@ -15,6 +15,21 @@ provide a section
 
 ## Computing
 
+### Python on the Raspberry Pi :o: :hand: fa18-516-03
+
+Python packages are typically installed using the `pip` tool. `pip` will
+automatically detect if you are running a compatible OS and platform and will
+download a [Python wheel](https://pythonwheels.com/) for a given package which
+is a pre-compiled binary package that is compatible with your system. Since the
+Pi is running an ARM processor (not Intel or AMD compatible) most of the wheels
+hosted on PyPi (the standard Python package directory server) are not
+compatible. However, there are Pi-compatible wheels hosted on
+https://pythonwheels.com/. The pip package in the latest version of Raspbian is
+updated to look in piwheels as an additional package index. If you have an older
+version of Raspbian installed you can get the update by running
+`sudo apt upgrade` to update your system. There is a
+[piwheels FAQ](https://www.piwheels.hostedpi.com/faq.html) that you may consult
+if you have any questions or issues.
 
 ### Numpy
 
