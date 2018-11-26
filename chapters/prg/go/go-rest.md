@@ -27,7 +27,131 @@ these packages are available:
 * gorilla/websocket implements the WebSocket protocol defined in RFC 6455.
 
 
+## REST, RESTful
 
+REST is an acronym for Representational State Transfer. It is a web standards architecture and HTTP Protocol. The REST protocol, decribes six (6) constraints:
 
+1. Uniform Interface
+1. Cacheable
+1. Client-Server
+1. Stateless
+1. Code on Demand
+1. Layered System
 
+## Router
 
+Package gorilla/mux implements a request router and dispatcher for matching incoming requests to their respective handler.
+
+The name mux stands for "HTTP request multiplexer". Like the standard http.ServeMux, mux.Router matches incoming requests against a list of registered routes and calls a handler for the route that matches the URL or other conditions. The main features are:
+
+We'll need to use a mux to route requests, so we need a Go package for that (mux stands for HTTP request multiplexer which matches an incoming request to against a list of routes (registered)). In the rest-api directory, let's require the dependency (package rather). More examples are here: https://github.com/gorilla/mux#examples
+
+```
+rest-api$ go get github.com/gorilla/mux
+```
+
+```go
+package main
+
+import (
+    "encoding/json"
+    "log"
+    "net/http"
+    "github.com/gorilla/mux"
+)
+
+// our main function
+func main() {
+    router := mux.NewRouter()
+    router.HandleFunc("/people", GetPeople).Methods("GET")
+    router.HandleFunc("/people/{id}", GetPerson).Methods("GET")
+    router.HandleFunc("/people/{id}", CreatePerson).Methods("POST")
+    router.HandleFunc("/people/{id}", DeletePerson).Methods("DELETE")
+    log.Fatal(http.ListenAndServe(":8000", router))
+}
+```
+
+Packages are explained here:
+* fmt is what we'll be using to print to STDOUT (the console)
+* log is used to log when the server exits
+* encoding/json is for creating our JSON responses
+* net/http will give us the representations of HTTP requests, responses, and be responsible for running our server
+* github.com/gorilla/mux will be our router that will take requests and decide what should be done with them
+
+## Full code
+
+```go
+package main
+
+import (
+    "encoding/json"
+    "github.com/gorilla/mux"
+    "log"
+    "net/http"
+)
+
+// The person Type (more like an object)
+type Person struct {
+    ID        string   `json:"id,omitempty"`
+    Firstname string   `json:"firstname,omitempty"`
+    Lastname  string   `json:"lastname,omitempty"`
+    Address   *Address `json:"address,omitempty"`
+}
+type Address struct {
+    City  string `json:"city,omitempty"`
+    State string `json:"state,omitempty"`
+}
+
+var people []Person
+
+// Display all from the people var
+func GetPeople(w http.ResponseWriter, r *http.Request) {
+    json.NewEncoder(w).Encode(people)
+}
+
+// Display a single data
+func GetPerson(w http.ResponseWriter, r *http.Request) {
+    params := mux.Vars(r)
+    for _, item := range people {
+        if item.ID == params["id"] {
+            json.NewEncoder(w).Encode(item)
+            return
+        }
+    }
+    json.NewEncoder(w).Encode(&Person{})
+}
+
+// create a new item
+func CreatePerson(w http.ResponseWriter, r *http.Request) {
+    params := mux.Vars(r)
+    var person Person
+    _ = json.NewDecoder(r.Body).Decode(&person)
+    person.ID = params["id"]
+    people = append(people, person)
+    json.NewEncoder(w).Encode(people)
+}
+
+// Delete an item
+func DeletePerson(w http.ResponseWriter, r *http.Request) {
+    params := mux.Vars(r)
+    for index, item := range people {
+        if item.ID == params["id"] {
+            people = append(people[:index], people[index+1:]...)
+            break
+        }
+        json.NewEncoder(w).Encode(people)
+    }
+}
+
+// main function to boot up everything
+func main() {
+    router := mux.NewRouter()
+    people = append(people, Person{ID: "1", Firstname: "John", Lastname: "Doe", Address: &Address{City: "City X", State: "State X"}})
+    people = append(people, Person{ID: "2", Firstname: "Koko", Lastname: "Doe", Address: &Address{City: "City Z", State: "State Y"}})
+    router.HandleFunc("/people", GetPeople).Methods("GET")
+    router.HandleFunc("/people/{id}", GetPerson).Methods("GET")
+    router.HandleFunc("/people/{id}", CreatePerson).Methods("POST")
+    router.HandleFunc("/people/{id}", DeletePerson).Methods("DELETE")
+    log.Fatal(http.ListenAndServe(":8000", router))
+}
+```
