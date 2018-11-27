@@ -292,30 +292,21 @@ This is a great organization to lean on if you have open questions about archite
 
 The group of industry experts based use the following guiding principles to when publishing their reference Architecture (below).
 
-
 * Define protections that enable trust in the cloud.
-* Develop cross-platform capabilities and patterns for proprietary and
-  open-source providers.
-* Will facilitate trusted and efficient access, administration and
-  resiliency to the customer/consumer.
-* Provide direction to secure information that is protected by
-  regulations.
-* The Architecture must facilitate proper and efficient
-  identification, authentication, authorization, administration and
-  auditability.
+* Develop cross-platform capabilities and patterns for proprietary and open-source providers.
+* Will facilitate trusted and efficient access, administration and resiliency to the customer/consumer.
+* Provide direction to secure information that is protected by regulations.
+* The Architecture must facilitate proper and efficient identification, authentication, authorization,
+administration and auditability.
 * Centralize security policy, maintenance operation and oversight functions.
 * Access to information must be secure yet still easy to obtain.
 * Delegate or Federate access control where appropriate.
-* Must be easy to adopt and consume, supporting the design of security
-  patterns
-* The Architecture must be elastic, flexible and resilient supporting
-  multi-tenant, multi-landlord platforms
-* The architecture must address and support multiple levels of
-  protection, including network, operating system, and application
-  security needs.
+* Must be easy to adopt and consume, supporting the design of security patterns
+* The Architecture must be elastic, flexible and resilient supporting multi-tenant, multi-landlord platforms
+* The architecture must address and support multiple levels of protection, including network, operating
+system, and application security needs.
 
-An overview of the architecture is shown in +@#fig:csa-arch.
-
+An overview of the architecture is shown in the diagram from the Cloud Security Alliance.
 ![Cloud Security Alliance Reference Architecture [Source](https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf)](images/csa-architecture.png){#fig:csa-arch}
 
 
