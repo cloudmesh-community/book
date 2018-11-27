@@ -1,3 +1,11 @@
+*.aux
+*.bcf
+*.idx
+*.listing
+*.ptc
+*.run.xml
+*.toc
+*.blg
 chapters/version.md
 chapters/authors.md
 .DS_Store
