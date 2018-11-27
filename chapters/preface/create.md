@@ -14,6 +14,7 @@ $ brew install graphviz
 $ brew install pandoc # needs version >2.2.3 of pandoc see travis for
                       # proper install if brew does not work
 $ brew install pandoc-citeproc
+$ brew install node
 $ npm install --global mermaid-filter
 $ npm install --global pandoc-index
 ```
