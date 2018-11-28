@@ -120,6 +120,7 @@ bibtex-other:
 bibtex-junk:
 	cd dest; biber -V --tool references.bib | fgrep junk
 
+
 epub: prepare
 	cd dest; touch chapters/index.md
 ifeq ($(OS), osx)
