@@ -24,7 +24,7 @@ Do not modify the table.
   10      [152](https://github.com/cloudmesh-community/book/issues/152)   Upload lecture videos from Prof Fox's Google Drive to Youtube        laszewsk
   11      [148](https://github.com/cloudmesh-community/book/issues/148)   IU GUEST                                                             bfeng
   12      [146](https://github.com/cloudmesh-community/book/issues/146)   ssh port forwarding section                                          pulasthi
-  13      [145](https://github.com/cloudmesh-community/book/issues/145)   manage vm guests with virsh                                          pulasthi
+  13      [145](https://github.com/cloudmesh-community/book/issues/145)   Open: manage vm guests with virsh                                    pulasthi
   14      [144](https://github.com/cloudmesh-community/book/issues/144)   bigdata missing improvements                                         None
   15      [139](https://github.com/cloudmesh-community/book/issues/139)   Codecov                                                              pulasthi
   16      [136](https://github.com/cloudmesh-community/book/issues/136)   figures                                                              bfeng
@@ -37,16 +37,15 @@ Do not modify the table.
   23      [79](https://github.com/cloudmesh-community/book/issues/79)     comment after first heading in a afile                               bfeng
   24      [77](https://github.com/cloudmesh-community/book/issues/77)     add mapreduce to syllabus                                            bfeng
   25      [76](https://github.com/cloudmesh-community/book/issues/76)     openapi demo                                                         laszewsk
-  26      [72](https://github.com/cloudmesh-community/book/issues/72)     Open: virsh                                                          pulasthi
-  27      [68](https://github.com/cloudmesh-community/book/issues/68)     bib: create bibtex entries for go-intro.md                           bfeng
-  28      [58](https://github.com/cloudmesh-community/book/issues/58)     epub: use numbered Figure refernces                                  bfeng
-  29      [51](https://github.com/cloudmesh-community/book/issues/51)     Open: OpenAPI in GO                                                  bfeng
-  30      [50](https://github.com/cloudmesh-community/book/issues/50)     Open: REST in go                                                     bfeng
-  31      [49](https://github.com/cloudmesh-community/book/issues/49)     Open: Develop a tutorial on the Parallel language constructs in Go   bfeng
-  32      [48](https://github.com/cloudmesh-community/book/issues/48)     Open: Develop an introduction to Go                                  laszewsk
-  33      [47](https://github.com/cloudmesh-community/book/issues/47)     Open: Hot cold isles in data center                                  laszewsk
-  34      [46](https://github.com/cloudmesh-community/book/issues/46)     Taken: Virtualization                                                laszewsk
-  35      [9](https://github.com/cloudmesh-community/book/issues/9)       Slides to video are not included in the introduction                 laszewsk
+  26      [68](https://github.com/cloudmesh-community/book/issues/68)     bib: create bibtex entries for go-intro.md                           bfeng
+  27      [58](https://github.com/cloudmesh-community/book/issues/58)     epub: use numbered Figure refernces                                  bfeng
+  28      [51](https://github.com/cloudmesh-community/book/issues/51)     Open: OpenAPI in GO                                                  bfeng
+  29      [50](https://github.com/cloudmesh-community/book/issues/50)     Open: REST in go                                                     bfeng
+  30      [49](https://github.com/cloudmesh-community/book/issues/49)     Open: Develop a tutorial on the Parallel language constructs in Go   bfeng
+  31      [48](https://github.com/cloudmesh-community/book/issues/48)     Open: Develop an introduction to Go                                  bfeng
+  32      [47](https://github.com/cloudmesh-community/book/issues/47)     Open: Hot cold isles in data center                                  laszewsk
+  33      [46](https://github.com/cloudmesh-community/book/issues/46)     Taken: Virtualization                                                laszewsk
+  34      [9](https://github.com/cloudmesh-community/book/issues/9)       Slides to video are not included in the introduction                 laszewsk
 
 .</div>
 
