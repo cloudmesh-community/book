@@ -174,6 +174,67 @@ below: +@fig:aws-console.
 
 ![AWS Console](images/aws_console.png){#fig:aws-console}
 
+## AWS Command Line Interface
+
+### Introduction
+
+Amazon's CLI allows for programatic interaction with AWS product through the command line. CLI provide many pre-built functions that allow for interaction with Amazon's Elastic Compute Cloud (EC2) instances and S3 storage.
+
+### Prerequisites
+* [Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
+* [Python](https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-install.md)
+* [PIP](https://pip.pypa.io/en/stable/installing/)
+* [AWS Account](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#creating-an-account)
+* [AWS Key Pair](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#setting-up-key-pair)
+
+#### Install CLI
+Run the follwoing code to install CLI.
+
+```bash
+pip install awscli
+```
+
+#### Configure CLI
+Using the following code to configure AWS using. You will need to specify four parameters:
+
+1. AWS Access Key ID
+2. AWS Secret Access Key
+3. Default region name (this is the default region that will be used when you create EC2 instances)
+4. Default output format (the default format is json)
+
+```bash
+aws configure
+```
+
+## AWS Admin Access
+
+### Introduction
+In order to access various AWS functionality remotely (through command-line) you must enable administrative access.
+
+### Prerequisites
+
+* [Set up AWS account](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#creating-an-account)
+
+* [Install and configure AWS CLI](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#aws-command-line-interface)
+
+* [Linux environment](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
+
+* [AWS Key Pair](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#setting-up-key-pair)
+
+### Setting up admin access using AWS CLI
+
+#### Create an admin security group
+
+```bash
+aws iam create-group --group-name Admins
+```
+
+#### Assign a security policy to the created group granting full admin access
+
+```bash
+aws iam attach-group-policy --group-name Admins --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+```
+
 ## Understanding the free tier
 
 AWS provides a set of services free of charge. These free services are
