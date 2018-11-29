@@ -134,6 +134,7 @@ endif
 
 pdf: epub
 	cd dest; ebook-convert $(FILENAME).epub $(FILENAME).pdf --embed-all-fonts
+	cp dest/$(FILENAME).pdf ../$(FILENAME).pdf
 
 epub-all: prepare
 ifeq ($(OS), osx)
