@@ -157,9 +157,9 @@ To connect the Raspberry Pi smart thermostat to the system we need a way to supp
 
 ![HVAC Wiring Final](images/wiring_final.JPG){#fig:wiring_final}
 
-Once the system is wired correctly we can test the code again now that it is wired to the HVAC system.  Running ```python3 smart_therm_not_connected.py``` will start the program but to run the program in the background use ```nohup python3 smart_therm_not_connected.py &```.  When running the program in the background the output will be saved to the nohup.out file.  Now you can adjust settings in the program to make your HVAC system more efficient.  The final result is shown in +@fig:smart_therm_final2.  Also in this book you can find [an example]() which connects the smart thermostat to a database to store data and also allows anyone on the local network to change settings.
+Once the system is wired correctly we can test the code again now that it is wired to the HVAC system.  Running ```python3 smart_therm_not_connected.py``` will start the program but to run the program in the background use ```nohup python3 smart_therm_not_connected.py &```.  When running the program in the background the output will be saved to the nohup.out file.  Now you can adjust settings in the program to make your HVAC system more efficient.  The final result is shown in +@fig:smart_therm_final.  Also in this book you can find [an example]() which connects the smart thermostat to a database to store data and also allows anyone on the local network to change settings.
 
-![Smart Thermostat Final](images/smart_therm_final2.JPG){#fig:smart_therm_final2}
+![Smart Thermostat Final](images/smart_therm_final.JPG){#fig:smart_therm_final}
 
 ## Sources for this section:
 
