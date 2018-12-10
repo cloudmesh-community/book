@@ -174,17 +174,29 @@ We have quotes form students such as
 or
 
 > "I really enjoyed taking this class and having maximum flexibility to
-> schedule the lectures."
+> schedule the lectures. ..."
 
 or
 
-> "The lessons learned from this class were adopted within my company."
+> "The lessons learned from this class were adopted within my company. ..."
 
-Furthermore you should know that the way we teach the class has also
+or
+
+> "I wanted to sincerely thank you for all the guidance you provided 
+> in this course. My learning in cloud computing has enhanced a 
+> lot because of this course and also because of your continuous guidance. ... "
+
+or 
+
+> "Thanks to the material you thauhgt I got a job at Intel. ..."
+
+Furthermore ,you should know that the way we teach the class has also
 been adopted in STEM classes. As a result a team coached by Gregor von
 Laszewski won an award at the FLL Robotics World Championship. The
 certainly had lots of fun and integrated their own ideas into the
-project that won the award.
+project that won the award. This year the team has also won the best 
+presentation award in Indiana State, showcasing that presenting your 
+results is an important aspect that others recognize earlly on.
 
 ### Uniqueness
 
