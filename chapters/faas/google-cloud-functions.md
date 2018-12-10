@@ -1,10 +1,4 @@
-# Google Cloud Functions :o: fa18-516-08
-
-:o: add (see ...) for figures, see step 2 for example
-
-:o: use proper captions instead of youst numbers
-
-:o: all images must bi in the images subfolder the folder can not be called assets, gregor renamed
+# Google Cloud Functions :smiley fa18-516-08
 
 ---
 
@@ -22,7 +16,7 @@ Pub/Sub, Cloud Storage, HTTP or changes in log in Stackdriver
 logging. Cloud functions can also be invoked for real time mobile
 changes.  Google Cloud page on cloud functions
 
-* <https://cloud.google.com/functions/use-cases/> 
+* <https://cloud.google.com/functions/use-cases/>
 
 gives more detail about the use cases such as Serverless application
 backends, Real-time data processing, Intelligent applications - all
@@ -66,81 +60,81 @@ Google Cloud in the epub for creting a free tier GCP account.
 ![Login to Project and Dashboard](images/markdown-img-paste-20181031131045280.png){#fig:dashboard}
 
 
-**Step 3**: Click "Create a Cloud Function"
+**Step 3**: Click "Create a Cloud Function" (see +@fig:GCPCreateFunction)
 
-![Create a Function](images/markdown-img-paste-20181031131915230.png)
-
-
-**Step 4**: Enable cloud function API if it is not enabled:
-
-![Enable the API](images/markdown-img-paste-20181031131927588.png)
+![Create a Function](images/markdown-img-paste-20181031131915230.png){#fig:GCPCreateFunction}
 
 
-**Step 5**: Click Create Function
+**Step 4**: Enable cloud function API if it is not enabled:(see +@fig:GCPApi)
 
-![Select *Create Function*](images/markdown-img-paste-20181031131938895.png)
+![Enable the API](images/markdown-img-paste-20181031131927588.png){#fig:GCPApi}
+
+
+**Step 5**: Click Create Function (see +@fig:CreateFunction)
+
+![Select Create Function](images/markdown-img-paste-20181031131938895.png)(#fig:CreateFunction)
 
 
 **Step 6**: In the next page, give a name to the function. In our case
 we are giving function name as isPalindrome. Specify the memory (128
 mb is good for this demo). Select the function trigger as
 HTTP. Choose inline editor for the source code and finally
-Python 3.7 as the run time environment.
+Python 3.7 as the run time environment.(see +@fig:NameFunction)
 
-![:o: Caption missing](images/markdown-img-paste-20181031131829312.png)
+![Name Function](images/markdown-img-paste-20181031131829312.png){#fig:NameFunction}
 
 
 **Step 7**: In the inline source editor, write a Python function and
 then click Create. We have written a Python function to check for
 Palindrome string. NOTE: This is not an optimized Python code, it is
 just used here for demonstration purpose. This function can be
-optimized further with Python standards style writing.
+optimized further with Python standards style writing.(see +@fig:PythonCode)
 
-![:o: Caption missing](images/markdown-img-paste-2018103113223371.png)
-
-
-**Step 8**: The function is created and deployed in the next page.
-
-![:o: Caption missing](images/markdown-img-paste-20181031132532494.png)
+![:Write Python Function](images/markdown-img-paste-2018103113223371.png){#fig:PythonCode}
 
 
-![:o: Caption missing](images/markdown-img-paste-20181031132602827.png)
+**Step 8**: The function is created and deployed in the next page (see +@fig:FunctionDeployed)
+
+![Function is Deployed](images/markdown-img-paste-20181031132532494.png){#fig:FunctionDeployed}
 
 
-**Step 9**: Finally we will test the function
+![Function is Deployed](images/markdown-img-paste-20181031132602827.png){#fig:FunctionDeployed}
 
-![:o: Caption missing](images/markdown-img-paste-20181031132627791.png)
+
+**Step 9**: Finally we will test the function (see +@fig:TestFunction)
+
+![Test The Function](images/markdown-img-paste-20181031132627791.png){#fig:TestFunction}
 
 
 **Step 10**: In the Trigger event box, write a HTTP message request in
-JSON format and click Test the Function
+JSON format and click Test the Function (see +@fig:TriggerEvent)
 
-![:o: Caption missing](images/markdown-img-paste-20181031132734293.png)
-
-
-**Step 11**: The response box will show the result of the test as expected
-
-![:o: Caption missing](images/markdown-img-paste-20181031132838134.png)
+![Trigger Event](images/markdown-img-paste-20181031132734293.png){#fig:TriggerEvent}
 
 
-**Step 12**: Let's run one more Test
+**Step 11**: The response box will show the result of the test as expected (see +@fig:Result)
 
-![:o: Caption missing](images/markdown-img-paste-20181031132912372.png)
-
-
-**Step 13**: You will get the expected result
-
-![:o: Caption missing](images/markdown-img-paste-20181031132940621.png)
+![Result](images/markdown-img-paste-20181031132838134.png){#fig:Result}
 
 
-**Step 14**: Let's test our function deployment using url. Click on the function name
+**Step 12**: Let's run one more Test (see +@fig:TestAgain)
 
-![:o: Caption missing](images/markdown-img-paste-20181031133107580.png)
+![Another Test](images/markdown-img-paste-20181031132912372.png){#fig:TestAgain}
 
 
-**Step 15**: In the next page, click on Trigger page and copy the url
+**Step 13**: You will get the expected result (see +@fig:ExpectedResultForTest)
 
-![:o: Caption missing](images/markdown-img-paste-20181031133237491.png)
+![Expected Result For Test](images/markdown-img-paste-20181031132940621.png){#fig:ExpectedResultForTest}
+
+
+**Step 14**: Let's test our function deployment using url. Click on the function name (see +@fig:DeploymentUrl)
+
+![Deployment Url](images/markdown-img-paste-20181031133107580.png){#fig:DeploymentUrl}
+
+
+**Step 15**: In the next page, click on Trigger page and copy the url (see +@fig:TriggerUrl)
+
+![Trigger Url](images/markdown-img-paste-20181031133237491.png){#fig:TriggerUrl}
 
 
 **Step 16**: In a web browser type the url and add the HTTP request to
@@ -149,14 +143,14 @@ it and hit enter
 * <https://us-central1-test-functions-12345.cloudfunctions.net/isPalindrome?message=abcd>
 
 
-**Step 17**: You will get a response back from the function
+**Step 17**: You will get a response back from the function(see +@fig:TestHttp)
 
-![:o: Caption missing](images/markdown-img-paste-20181031133547391.png)
+![Test Http](images/markdown-img-paste-20181031133547391.png){#fig:Test Http}
 
 
-**Step 18**: Another test
+**Step 18**: Another test (see +@fig:AnotherHttpTest)
 
-![:o: Caption missing](images/markdown-img-paste-20181031133650540.png)
+![Another Http Test](images/markdown-img-paste-20181031133650540.png){#fig:AnotherHttpTest}
 
 
 This completes our demo for Google Cloud Function offered as Function
@@ -169,4 +163,3 @@ To learn about creating and deploying functions using command line
 instead of GCP console - visit
 
 * <https://cloud.google.com/functions/docs/quickstart>
-
