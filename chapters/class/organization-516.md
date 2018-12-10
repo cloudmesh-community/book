@@ -190,7 +190,7 @@ or
 
 > "Thanks to the material you thauhgt I got a job at Intel. ..."
 
-Furthermore ,you should know that the way we teach the class has also
+Furthermore, you should know that the way we teach the class has also
 been adopted in STEM classes. As a result a team coached by Gregor von
 Laszewski won an award at the FLL Robotics World Championship. The
 certainly had lots of fun and integrated their own ideas into the
