@@ -125,15 +125,15 @@ connect to the local network each Pi will have the same network setup. This
 makes using this option easier for initial setup and experimentation with a
 cluster of Pis. You will need to choose whether the Pis will connect to your
 network through a wired Ethernet connection or through a WiFi connection. In
-either case you can choose to statically assign and IP address or to let each Pi
+either case you can choose to statically assign an IP address or to let each Pi
 get a dynamic IP address using DHCP. Using DHCP may be easier at first but it
 can also be a problem if you do not have a monitor connected to the Pi because
 you then will not know in advance the IP address that is assigned to each Pi.
 Please see the section
 [Discover Pi DHCP Network Addresses](#pi-find-dhcp-ip-address)
-for details on this procedure.
+for details on how to find the IP address of a device assigned by DHCP.
 
-## Private Network Cluster {#pi-private-network-cluster}
+## Private Network Cluster Setup {#pi-private-network-cluster}
 
 An overview the design of a private Pi cluster is included in the
 [Network of Pis Configurations](#pi-now-configs) section. To complete this setup
@@ -186,24 +186,25 @@ the IP address of the Pis on the private network then you should first login to
 the master Pi node and then execute the following commands.
 
 This works on a Pi substitute your network address range for `192.168.1.0/24`.
-The first command to `nmap -sn` will search your local network IP address range
+The first command `nmap -sn` will search your local network IP address range
 for any devices attached to the network. This process is to find out which
 devices are reachable from the host. As a result of the `nmap` process, the
-host's [arp table](arptablelink) will be updated with a record of every device
-(up to the arp cache size limit but this is probably larger than you will need)
-on the local network. You can then use the `arp -a` command to list the devices
-that were found. `arp` will show all devices on any network reachable from this
-computer, so if you are running this on the master Pi then it will show devices
-on both the local network and the private Pi network. You can filter the `arp`
-results by hostname or IP address range if you would like using `grep`. Note: if
-you see a lot of results from `arp` listed as `(incomplete)` that is OK it means
-there is probably not a device at that IP address but the OS is still waiting
-for a response. Every OS has a different timeout for responses and any
-incomplete entries should eventually disappear.
+host's [ARP table](https://en.wikipedia.org/wiki/Address_Resolution_Protocol)
+will be updated with a record of every device (up to the arp cache size limit
+but this is probably larger than you will need) on the local network. You can
+then use the `arp -a` command to list the devices that were found. `arp` will
+show all devices on any network reachable from this computer, so if you are
+running this on the master Pi then it will show devices on both the local
+network and the private Pi network. You can filter the `arp` results by hostname
+or IP address range if you would like using `grep`. Note: if you see a lot of
+results from `arp` listed as `(incomplete)` that is OK it means there is
+probably not a device at that IP address but the OS is still waiting for a
+response. Every OS has a different timeout for responses and any incomplete
+entries should eventually disappear.
 
 ```bash
 # optional: if you want to you can clear the arp cache first
-$ arp -a -d
+$ sudo arp -a -d
 # Search for devices on the local network
 $ nmap -sn 192.168.1.0/24
 # will list devices in arp cache and lookup hostname
@@ -229,6 +230,25 @@ cred.hsd1.in.comcast.net (10.0.0.90) at e0:f8:8e:2d:34:79 [ether] on wlan0
 blue02.hsd1.in.comcast.net (10.0.0.21) at b8:27:b3:73:8d:a3 [ether] on wlan0
 ```
 
+If you are trying to determine whether your DHCP server contains an entry for a
+particular device you can use the `dig` tool to determine this. `dig` is not
+installed by default on a Pi but can be installed with
+`sudo apt-get install dnsutils` and you can lookup a host on any nameserver or
+you can specify your local router with the `@` symbol:
+
+```bash
+# lookup red01 on all nameservers
+$ dig red01
+# lookup red01 on the local router DNS
+$ dig red01 @192.168.1.1
+```
+
+If `dig` is successful you should see something like this:
+
+```
+;; ANSWER SECTION:
+red01.                 0       IN      A       192.168.1.43
+```
 
 
 ## Parallel Shell
