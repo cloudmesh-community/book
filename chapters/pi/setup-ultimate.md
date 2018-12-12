@@ -101,7 +101,7 @@ macOS. Other solutions such as using command line scripts are also available and
 are demonstrated in the section about burning SD Cards in Linux.
 
 
-### Burn an SD Card with cm-burn :o:
+### Burn an SD Card with cm-burn :o: {#pi-cm-burn-sd-card}
 
 A very convenient program to create an SD card for a Raspberry Pi is
 using the program `cm-burn`. The program is available from
@@ -135,7 +135,7 @@ costs about $20 USD and the macOS version called
 costs about $40 USD. Linux supports ext natively and is fully supported by
 cm-burn. Detailed information on how to use cm-burn is provided at
 
-* <https://github.com/cloudmesh-community/cm/blob/master/README.md>
+* <https://github.com/cloudmesh-community/cm-burn/blob/master/README.md>
 
 In order to provide an option to setup an SD card without purchasing any
 software we have included the manual setup steps in this document. Please read
@@ -143,10 +143,10 @@ and follow the steps in the following sections:
 
 * [Install Raspbian on a SD card](#s-install-raspbian)
 * [Password](#s-pi-setup-password)
+* [Set the hostname](#s-pi-set-hostname)
 * [Wireless Network at Home](#s-wireless-at-home)
 * [Wireless Network at IU](#s-wireless-at-iu)
 * [Update the system](#s-pi-update-system)
-* [Set the hostname](#s-pi-set-hostname)
 
 
 ### Install Raspbian on a SD card {#s-install-raspbian}
@@ -306,37 +306,158 @@ your password first.
 You want to also set your system to use your language settings for the
 keyboard. You can do this from the terminal with
 
-    pi$ raspi-config
+```bash
+    pi$ sudo raspi-config
+```
 
 or
 
+```bash
     pi$ sudo dpkg-reconfigure locales
+```
 
 or using the GUI.
+
+### Set the Hostname {#s-pi-set-hostname}
+
+The hostname is stored in `/etc/hostname`. Edit the file and change it
+to a name such as green00, green01, green02, green03, green04, green05.
+Be consistent with the names. The 00 host should be the topmost host in
+the cluster.
+
+edit
+
+    pi$ sudo nano /etc/hostname
+
+after you edited the hostname
+
+    pi$ sudo /etc/init.d/hostname.sh start
+
+The Pi can also give an error if the hostname set in `/etc/hostname` does not
+also have an entry in `/etc/hosts` as the local loopback. To fix this, edit
+`/etc/hosts` and on the last line you should see:
+
+```
+127.0.1.1       raspberrypi
+```
+
+This should be changed to the new host name set in `/etc/hostname`.
+
+```bash
+    pi$ sudo nano /etc/hosts
+```
 
 
 ### Wireless Network at Home {#s-wireless-at-home}
 
 The easiest way to get internet access and to continue the setup is using a
-wireless network. You can configure it either via the GUI or command line.
+wireless network. You can configure it either via the GUI or command line. The
+`raspi-config` utility can also setup a WiFi connection.
 
-In case you like to edit the information from command line edit the
-file `interfaces` file with
+The Raspberry Pi is already configured to connect to a WiFi network, all you
+need to do is set your network name (ssid) and passphrase. Additionally, you
+should set the current country since some locations have different restrictions
+on the available WiFi radio bands. The file
+`/etc/wpa_supplicant/wpa_supplicant.conf` contains details about network names
+and passwords and you can add your details directly to the bottom of this file
+for any wireless networks you would like to connect to. You can directly add the
+plain text of your wireless passphrase but it is much better to add the hash of
+the passphrase since this will not expose your passphrase. (Please note, however,
+that the hash can be used by any computer to connect to the network and a brute
+force search could recover your password, but it still better than plain text).
 
-    pi$ sudo nano /etc/network/interfaces
+To find the WiFi networks that your Pi can currently detect run this command:
 
-change the following
+```bash
+$ sudo iwlist wlan0 scan
+```
 
-    auto wlan0
-    allow-hotplug wlan0
-    iface wlan0 inet dhcp
-    wpa-ssid "your-WLAN-SSID"
-    wpa-psk "your-WLAN-password"
+The proper format for a wireless network definition is:
 
-and replace the values with the ones you have. To save the file use 
+```
+...
+country=US
+network={
+        ssid="network_name"
+        psk="WiFi passphrase or hash
+}
+...
+```
 
-    Ctrl-o Y Enter Save changes.
-    Ctrl-x Quit nano.
+The Pi comes with a utility that can automatically generate your WiFi passphrase
+hash called `wpa_passphrase`. You can execute this command to hash your
+passphrase and append it to the correct file:
+
+```bash
+$ wpa_passphrase "network_name" "passphrase" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+Or you can run this command and type your pass phrase at the prompt followed by
+Enter:
+
+```bash
+$ wpa_passphrase "network_name" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+Unfortunately, `wpa_passphrase` includes the original passphrase in plain text
+so you will need to edit the file by hand to remove it. Use your favorite editor
+and remove the commented out line with the plain text passphrase. At this time
+you should also add the country designation as this may be necessary in some
+cases.
+
+```bash
+$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+The original file should be changed from this:
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+        ssid="network_name"
+        #psk="my plaintext passphrase"
+        psk=0617cac0927403beefda5705f5ff97bbc562f5d1907b40f02c39912a7d595b0f
+}
+```
+
+to this:
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+network={
+        ssid="network_name"
+        psk=0617cac0927403beefda5705f5ff97bbc562f5d1907b40f02c39912a7d595b0f
+}
+```
+
+You can then reconfigure the wireless adapter and it should get an IP address.
+You can complete this and see the current setup with the following commands.
+
+```bash
+$ wpa_cli -i wlan0 reconfigure
+$ ifconfig wlan0
+$ iwgetid
+```
+
+Note that if you have configured your `wlan0` interface with a static IP address
+then it will only use this static address. Also, if you configure the same
+static IP address for both `eth0` and `wlan0` (this is the default if you
+use `cm-burn`) then only one of the interfaces will be assigned an IP address.
+This is not a problem and if you disconnect either of the interfaces then the
+other one will immediately be assigned the IP address.
+
+If you need to renew your DHCP lease you can use the following command. If you
+want to renew the lease for the Ethernet adapter then replace `wlan0` with
+`eth0`. Note that you will lose your connection to the Pi during this process if
+you are connected using the same interface, but the Pi should come back online
+after 20 seconds:
+
+```bash
+$ sudo dhclient -r wlan0; sleep 10; sudo dhclient wlan0
+```
 
 ### Wireless Network at IU {#s-wireless-at-iu}
 
@@ -387,38 +508,9 @@ A good example is emacs which can be installed with
 pi$ apt-get install emacs
 ```
 
-### Set the Hostname {#s-pi-set-hostname}
-
-The hostname is stored in `/etc/hostname`. Edit the file and change it
-to a name such as green00, green01, green02, green03, green04, green05.
-Be consistent with the names. The 00 host should be the topmost host in
-the cluster.
-
-edit
-
-    pi$ sudo nano /etc/hostname
-
-after you edited the hostname
-
-    pi$ sudo /etc/init.d/hostname.sh start
-
-The Pi can also give an error if the hostname set in `/etc/hostname` does not
-also have an entry in `/etc/hosts` as the local loopback. To fix this, edit
-`/etc/hosts` and on the last line you should see:
-
-```
-127.0.1.1       raspberrypi
-```
-
-This should be changed to the new host name set in `/etc/hostname`.
-
-```bash
-    pi$ sudo nano /etc/hosts
-```
-
 ### Remote access via ssh
 
-In the latest Raspbian OSs ssh is enabled by default. However, if you discover
+In the latest Raspbian OS ssh is enabled by default. However, if you discover
 that it is not enabled, the following commands should enable it.
 
     pi$ sudo systemctl enable ssh
@@ -433,7 +525,9 @@ public key to the `~pi/.ssh/authorized_keys` file
 
 ## Setting up a Small Cluster by Hand
 
-:o: JPB Reviewed to here :o:
+If you would like to setup a Raspberry Pi cluster please refer to the section
+[Network of Pis](#pi-now-main) for details on configuring a cluster by hand or
+with our convenient tools and scripts such as `cm-burn`.
 
 :o: This explains how to set up a small cluster by hand discussing how to
 burn multiple cards. It uses the method of booting the pi and using a
@@ -458,6 +552,7 @@ using static IP addresses.
 :o:
 
 
+:o: JPB fa18-516-03 reviewed to here :o:
 
 System Preparation without Monitor
 ----------------------------------
@@ -491,8 +586,28 @@ Describe how you can change the password on the SD Card
 
 ### Network Addresses
 
-Find a way to find all the network addresses from all Pi's attached to
-the network switch.
+Some online guides recommend sending a ping to the broadcast address of your
+network but Raspbian ignores broadcast pings by default so the Raspberry Pis
+will not respond to this and then will not show up in arp tables. `nmap` will
+work, however.
+
+This works on a Pi substitute your network submask for `192.168.1.0/24`:
+
+```bash
+$ sudo apt-get install -y nmap
+$ nmap -sn 192.168.1.0/24
+# will list all devices on the network
+$ arp -a
+# will list devices in arp cache and lookup hostname
+$ arp -a -n
+# Same as previous but skips hostname lookup
+```
+
+`nmap` is also available on Windows and macOS. It can be downloaded directly from 
+[Nmap installation instructions](https://nmap.org/book/install.html) or
+using Homebrew on macOS as `brew install nmap`. Usage is as above.
+
+
 
 ### key
 
