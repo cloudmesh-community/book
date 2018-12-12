@@ -152,13 +152,83 @@ Uses ssh key from a server to login to all Pis
 ## Discover Pi DHCP Network Addresses {#pi-find-dhcp-ip-address}
 
 If you setup your Pis using DHCP on your local network then you may not know the
-IP address that has been dynamically assigned to each Pi. If you have physical
-access to each Pi and a compatible monitor and keyboard then you can login to
-each of them in sequence and then run `ifconfig` to determine which IP address
-has been assigned to each of them. If you have access to the DHCP server that
-assigns IP address (for example, in your home network) you can also usually
-access that device through a webpage to find out which IP address has been
-assigned to each device on the network.
+IP address that has been dynamically assigned to each Pi. If you have statically
+assigned IP addresses to each Pi then you will need to make node of these
+assignments and add the hostname mapping to each device that needs to be aware
+of the hostnames.
+
+If you have physical access to each Pi and a compatible monitor and keyboard
+then you can login to each of them in sequence and then run `ifconfig` to
+determine which IP address has been assigned to each of them. If you have access
+to the DHCP server that assigns IP address (for example, in your home network)
+you can also usually access that device through a web browser to find out which
+IP address has been assigned to each device on the network. If you have properly
+configured the hostname on each Pi then it should be registered with that name
+on your DHCP server.
+
+It is not trivial to detect all of the devices on a local network. In addition,
+if you use static networking then the devices will typically not register or
+report their hostnames. However, if you are using DHCP and you have properly
+configured the hostname on each Pi, then the following method should work.
+
+To begin you need the `nmap` tool installed on your system. It can be installed
+on Linux (on a Pi, for example) using the standard package installation tools
+such as `sudo apt-get install nmap`. If you are using Windows or macOS, please
+see the [Nmap installation instructions](https://nmap.org/book/install.html) or
+use Homebrew on macOS as `brew install nmap`.
+
+To find the Pis you must be on the same network as they are. If you are using
+the [Direct Network Cluster](#pi-direct-network-cluster) setup then the Pis will
+all be on the same network as your laptop. If you are using the
+[Private Network Cluster](#pi-private-network-cluster) setup
+then only the master Pi will be on your local network. If you want to discover
+the IP address of the Pis on the private network then you should first login to
+the master Pi node and then execute the following commands.
+
+This works on a Pi substitute your network address range for `192.168.1.0/24`.
+The first command to `nmap -sn` will search your local network IP address range
+for any devices attached to the network. This process is to find out which
+devices are reachable from the host. As a result of the `nmap` process, the
+host's [arp table](arptablelink) will be updated with a record of every device
+(up to the arp cache size limit but this is probably larger than you will need)
+on the local network. You can then use the `arp -a` command to list the devices
+that were found. `arp` will show all devices on any network reachable from this
+computer, so if you are running this on the master Pi then it will show devices
+on both the local network and the private Pi network. You can filter the `arp`
+results by hostname or IP address range if you would like using `grep`. Note: if
+you see a lot of results from `arp` listed as `(incomplete)` that is OK it means
+there is probably not a device at that IP address but the OS is still waiting
+for a response. Every OS has a different timeout for responses and any
+incomplete entries should eventually disappear.
+
+```bash
+# optional: if you want to you can clear the arp cache first
+$ arp -a -d
+# Search for devices on the local network
+$ nmap -sn 192.168.1.0/24
+# will list devices in arp cache and lookup hostname
+$ arp -a
+# only show results with hostnames starting with "red"
+$ arp -a | grep '^red'
+# only show results with IP addresses on the specified network
+$ arp -a | grep '192.168.1.'
+```
+
+In the following example output from `arp -a`, the entry for `blue02` is a
+Raspberry Pi set to DHCP. The entry for `cred` is my laptop. The entry listed
+first with the IP `10.0.0.103` is a Pi set to a static IP address and the
+`10.0.0.17` is another device on my network. Even though `arp` lists the fully
+qualified domain name, you can directly access a host with just the first part
+of the name as long as you are also on the same local network (which you must be
+or `nmap` and `arp` would not list the address).
+
+```
+? (10.0.0.103) at b8:43:eb:6e:cf:b7 [ether] on wlan0
+? (10.0.0.17) at 10:29:92:53:9e:1b [ether] on wlan0
+cred.hsd1.in.comcast.net (10.0.0.90) at e0:f8:8e:2d:34:79 [ether] on wlan0
+blue02.hsd1.in.comcast.net (10.0.0.21) at b8:27:b3:73:8d:a3 [ether] on wlan0
+```
+
 
 
 ## Parallel Shell
