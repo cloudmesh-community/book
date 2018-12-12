@@ -137,6 +137,28 @@ cm-burn. Detailed information on how to use cm-burn is provided at
 
 * <https://github.com/cloudmesh-community/cm-burn/blob/master/README.md>
 
+To use `cm-burn` you must first download an image of the Raspberry Pi OS
+Raspbian Stretch from <https://www.raspberrypi.org/downloads/raspbian/>. We have
+tested the software and these steps with the latest version released on
+2018-11-13 and several previous versions. You can download the
+[latest Raspbian Stretch Lite version](https://downloads.raspberrypi.org/raspbian_lite_latest)
+or directly download
+[Raspbian Stretch Lite 2018-11-13](https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-11-15/2018-11-13-raspbian-stretch-lite.zip).
+
+After downloading the zip file please unzip it and create a directory in your
+user folder called `.cloudmesh/images` and place the `.img` file in this
+directory. This is the default location that `cm-burn` uses to search for image
+files to burn to the SD card.
+
+You can now burn your first SD card using the following command on Linux or
+macOS (TODO: add Windows command):
+
+```bash
+$ cm-burn create --name red01 \
+  --ips 192.168.1.101 --domain 192.168.1.1 \
+  --image 2018-11-13-raspbian-stretch-lite.img
+```
+
 In order to provide an option to setup an SD card without purchasing any
 software we have included the manual setup steps in this document. Please read
 and follow the steps in the following sections:
