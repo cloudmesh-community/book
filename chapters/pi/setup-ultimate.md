@@ -352,7 +352,9 @@ This should be changed to the new host name set in `/etc/hostname`.
 
 The easiest way to get internet access and to continue the setup is using a
 wireless network. You can configure it either via the GUI or command line. The
-`raspi-config` utility can also setup a WiFi connection.
+`raspi-config` utility can also setup a WiFi connection. The steps below
+were taken from the
+[Offical Raspberry Pi Wireless setup](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
 
 The Raspberry Pi is already configured to connect to a WiFi network, all you
 need to do is set your network name (ssid) and passphrase. Additionally, you
