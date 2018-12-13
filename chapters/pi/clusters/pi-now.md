@@ -1,4 +1,4 @@
-# Network of Pis (NOW) {#pi-now-main}
+# Network of Pis (NOW) :hand: fa18-516-03 {#pi-now-main}
 
 The purpose of setting up a cluster of Raspberry Pi computers is to be able to
 experiment with different server and cluster technologies on a small scale. To
@@ -267,7 +267,7 @@ $ cm-burn create --name red[01-05] \
   --image 2018-11-13-raspbian-stretch-lite.img
 ```
 
-### Direct Network Cluster Setup by hand :o:
+### Direct Network Cluster Setup by hand
 
 To setup networking on a Pi cluster by hand you can follow these steps depending
 on your needs. If you want to setup DHCP over Ethernet you do not need to do
@@ -527,6 +527,32 @@ computer that you have access to.
 $ ssh-keygen
 ```
 
+There is also a command to copy your ssh public key to other computers if you
+have password access to them already. This can be useful to do when setting up
+the private Pi cluster.
+
+```bash
+$ ssh-copy-id <hostname>
+```
+
+## Configure Cluster SSH
+
+This was moved from the Kubernetes section.
+
+Install Dependencies:
+
+    $ apt-get install -qy clusterssh
+
+For hostnames rp1-4 (final node names will be: rp0, rp1, rp2, rp3, rp4).
+
+
+To update Cluster SSH configuration, add the following to **/etc/clusters**:
+
+    $ rpcluster rp1 rp2 rp3 rp4
+
+Now you can run commands to all clusters by:
+
+    $ cssh rpcluster
 ## Parallel Shell
 
 TODO

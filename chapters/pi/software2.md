@@ -1,4 +1,4 @@
-# Pi Software Collection :o: :hand: fa18-516-03
+# Pi Software Collection
 
 Please improve the sections.
 
@@ -15,7 +15,7 @@ provide a section
 
 ## Computing
 
-### Python on the Raspberry Pi :o: :hand: fa18-516-03
+### Python on the Raspberry Pi :hand: fa18-516-03
 
 Python packages are typically installed using the `pip` tool. `pip` will
 automatically detect if you are running a compatible OS and platform and will
