@@ -112,6 +112,10 @@ sections for details:
 * [Password](#s-pi-setup-password)
 * [Set the hostname](#s-pi-set-hostname)
 
+We also recommend using ssh keys to connect to your Raspberry Pis rather than
+using password authentication. Please see the [SSH keygen](#pi-ssh-keygen)
+section for details on generating a key on your laptop.
+
 Any other required steps will be explained in the following sections.
 
 ## Direct Network Cluster Setup {#pi-direct-network-cluster}
@@ -133,6 +137,138 @@ Please see the section
 [Discover Pi DHCP Network Addresses](#pi-find-dhcp-ip-address)
 for details on how to find the IP address of a device assigned by DHCP.
 
+### Direct Network Cluster Setup with cm-burn
+
+The `cm-burn` tool directly supports setting up a cluster of Pis with direct
+access to your local network. You can choose to use Ethernet or wireless to
+connect and you can statically assign IP addresses or use DHCP. We will give
+examples of each use case. First, ensure that `cm-burn` is installed following
+the directions at [Burn an SD Card with cm-burn](#pi-cm-burn-sd-card). We will
+assume that you have five Pis to setup with the names red01 to red05 and the IP
+addresses 192.168.1.101 to 192.168.1.105 for static IPs and that your domains
+submask is 255.255.255.0. Please substitute the actual values of your local
+network here. We further assume that you have setup an ssh key so that you can
+login to the Pi without specifying a password. Please see the
+[SSH keygen](#pi-ssh-keygen) section for details. If you do not have an ssh key
+then you can leave the `--key` setting out of `cm-burn` and skip the manual
+sections relating to ssh keys.
+
+#### Static IP Ethernet Setup {#pi-static-ethernet-setup}
+
+Static Ethernet setup is one of the easiest options with cm-burn. This command
+will burn 5 SD cards with the hostnames `red01` to `red05` in the 192.168.1.1
+domain with IPs 192.168.1.101 to 192.168.1.105. It will copy the public ssh key
+from your computer onto each of the Pis and disable password logins. After each
+card is burned it can be removed and put into a Pi and booted. The Pi will
+appear on your network in about one minute after booting.
+
+```bash
+$ cm-burn create --name red[01-05] \
+  --ips 192.168.1.[101-105] --domain 192.168.1.1 \
+  --key ~/.ssh/id_rsa.pub \
+  --image 2018-11-13-raspbian-stretch-lite.img
+```
+
+You should now be able to connect to the Pi over ssh:
+
+```bash
+$ ssh pi@192.168.1.101
+```
+
+If you would like to connect to the Pi using the hostname then you will need to
+setup the hosts on your host OS. On macOS and Linux this can be done by editing
+the `/etc/hosts` file and adding a line at the end for each of the Pis. The
+format is to start with the IP address, then have whitespace (blank spaces or
+tabs) and then the hostname. The file should look like this:
+
+```
+...
+192.168.1.101     red00
+192.168.1.102     red01
+192.168.1.103     red02
+192.168.1.104     red03
+192.168.1.105     red04
+```
+
+#### Static IP WiFi Setup {#pi-static-wifi-setup}
+
+Setting up static IP addresses over Wifi is very similar to doing it over
+Ethernet. The only difference is when you burn the SD card with cm-burn you will
+need to specify the wireless access point's ssid and passphrase on the command.
+You can use the output of `wpa_passphrase` as the `--psk-hash` parameter or you
+can specify the actual passphrase for the wireless network in plain text using
+the `--psk` parameter. We strongly recommend using the hashed passphrase for
+some added security. For more details on the wireless setup please see the
+[Wireless Network at Home](#s-wireless-at-home) section.
+
+Using the psk hash:
+
+```bash
+$ cm-burn create --name red[01-05] \
+  --ips 192.168.1.[101-105] --domain 192.168.1.1 \
+  --ssid home_network --psk-hash 0617cac0a00f87d23cda5705f5ff97bbc562f5d1907b40f02c39912a7d595b0f \
+  --key ~/.ssh/id_rsa.pub \
+  --image 2018-11-13-raspbian-stretch-lite.img
+```
+
+Using the actual wireless passphrase:
+
+```bash
+$ cm-burn create --name red[01-05] \
+  --ips 192.168.1.[101-105] --domain 192.168.1.1 \
+  --ssid home_network --psk "my passphrase has spaces" \
+  --key ~/.ssh/id_rsa.pub \
+  --image 2018-11-13-raspbian-stretch-lite.img
+```
+
+For other details on connecting to the Pis please see the
+[Static IP Ethernet Setup](#pi-static-ethernet-setup) section.
+
+#### DHCP Ethernet Setup
+
+To use DHCP over Ethernet the only change from static setup is to remove the
+setting of the IP addresses and the domain. Since you do not specify an IP
+address, cm-burn will not change the standard setup of the Pi which is to find
+an address using DHCP.
+
+```bash
+$ cm-burn create --name red[01-05] \
+  --key ~/.ssh/id_rsa.pub \
+  --image 2018-11-13-raspbian-stretch-lite.img
+```
+
+When the SD cards are finished you can put them into the Pi and they should boot
+and join the local network over DHCP in a minute or two. To find the address
+assigned to the Pi see the section
+[Discover Pi DHCP Network Addresses](#pi-find-dhcp-ip-address).
+
+#### DHCP Wifi Setup
+
+The DHCP Wifi Setup is only different from the static IP setup in that the
+static IP addresses are removed from the cm-burn command. See the
+[Static IP WiFi Setup](#pi-static-wifi-setup) for more details on setting the
+wireless ssid and psk.
+
+Using the psk hash:
+
+```bash
+$ cm-burn create --name red[01-05] \
+  --ssid home_network --psk-hash 0617cac0a00f87d23cda5705f5ff97bbc562f5d1907b40f02c39912a7d595b0f \
+  --key ~/.ssh/id_rsa.pub \
+  --image 2018-11-13-raspbian-stretch-lite.img
+```
+
+Using the actual wireless passphrase:
+
+```bash
+$ cm-burn create --name red[01-05] \
+  --ssid home_network --psk "my passphrase has spaces" \
+  --key ~/.ssh/id_rsa.pub \
+  --image 2018-11-13-raspbian-stretch-lite.img
+```
+
+### Direct Network Cluster Setup by hand
+
 ## Private Network Cluster Setup {#pi-private-network-cluster}
 
 An overview the design of a private Pi cluster is included in the
@@ -140,14 +276,6 @@ An overview the design of a private Pi cluster is included in the
 you will need to select a set of hostnames for the PIs in your cluster. Please
 see the [Network of Pis Hostnames](#pi-network-hostnames) section for our
 recommendation on setting hostnames.
-
-Network of workstations
-
-Have a number of PIs available on a network to which we can login and execute tasks on.
-
-Elementary to most other cluster deployment activities
-
-Uses ssh key from a server to login to all Pis
 
 ## Discover Pi DHCP Network Addresses {#pi-find-dhcp-ip-address}
 
@@ -249,7 +377,9 @@ If `dig` is successful you should see something like this:
 ;; ANSWER SECTION:
 red01.                 0       IN      A       192.168.1.43
 ```
+## SSH keygen :o: {#pi-ssh-keygen}
 
+TODO: Document ssh-keygen and PuTTYgen or git's ssh-keygen on Windows.
 
 ## Parallel Shell
 
