@@ -10,13 +10,14 @@ number of Raspberry Pis.
 - [ ] so before you can work on the Kubernetes section you need to make sure the NOW section is up to date.
 
 ## Resources Needed
-
-We recommend that the cluster will have at least one master and three worker
-nodes. The test should not use too many resources otherwise the system may be
-unnecessarily slow. In particular we should have one dedicated master. We use
-three nodes to support testing the distribution of containers. (It may work with
-two, but we have not tested it). Please give us feedback on this and let us know
-what works for you. We will integrate your feedback.
+In [Network of Pis](#pi-now-main) section we explained how to set up a network
+of Pis. Here we assume that we start from such a network. We recommend that the
+cluster will have at least one master and three worker nodes. The test should
+not use too many resources otherwise the system may be unnecessarily slow. In
+particular we should have one dedicated master. We use three nodes to support
+testing the distribution of containers. (It may work with two, but we have not
+tested it). Please give us feedback on this and let us know what works for you.
+We will integrate your feedback.
 
 ## Overview of Kubernetes Cluster Setup
 

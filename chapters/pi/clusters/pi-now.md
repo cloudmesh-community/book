@@ -1,5 +1,7 @@
 # Network of Pis (NOW) :hand: fa18-516-03 {#pi-now-main}
 
+[Network of Pis](#pi-now-main)
+
 The purpose of setting up a cluster of Raspberry Pi computers is to be able to
 experiment with different server and cluster technologies on a small scale. To
 this end we want to be able to use a network configuration that mirrors a large

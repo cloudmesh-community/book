@@ -85,11 +85,10 @@ install Docker on them and register them into a Docker Swarm.
 
 ## Creating a Network of Pi's with docker
 
-In Section ??? we explained how to set up a network of PI's. Here we
-assume that we start from such a network. The Pi's have all different
-names, and are registered on the network. Each Pi has the public key
-installed from the machine where you will login from for setting up
-the swarm.
+In [Network of Pis](#pi-now-main) section we explained how to set up a network
+of Pis. Here we assume that we start from such a network. The Pi's have all
+different names, and are registered on the network. Each Pi has the public key
+installed from the machine where you will login from for setting up the swarm.
 
 Let us assume the names of the hosts are stored in a shell variable called 
 
