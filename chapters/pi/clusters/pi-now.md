@@ -269,7 +269,32 @@ $ cm-burn create --name red[01-05] \
 
 ### Direct Network Cluster Setup by hand :o:
 
-TODO: manual steps for direct network setup
+To setup networking on a Pi cluster by hand you can follow these steps depending
+on your needs. If you want to setup DHCP over Ethernet you do not need to do
+anything. The Pi will automatically connect to DHCP over Ethernet when it is
+connected to a network.
+
+To setup static IP addresses for Ethernet or wireless connections you need to
+edit the `/etc/dhcpcd.conf` file and add the following lines, substituting the
+desired IP address and address of your local router:
+
+```
+...
+interface eth0
+
+static ip_address=192.168.1.101/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
+
+interface wlan0
+
+static ip_address=192.168.1.101/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
+```
+
+The instructions for connecting a Pi to the WiFi network can be found in the
+[Wireless Network at Home](#s-wireless-at-home) section.
 
 ## Private Network Cluster Setup {#pi-private-network-cluster}
 
@@ -281,8 +306,17 @@ recommendation on setting hostnames.
 
 ### Private Network Cluster Setup with cm-burn :o:
 
-Cm-burn does not currently support setting up a private network cluster. When it
-is enhanced to support this we will add the documentation here.
+Cm-burn does not currently support setting up the master node in a private
+network cluster. When it is enhanced to support this we will add the
+documentation here.
+
+To setup the worker nodes in a cluster you can simply decide whether you are
+using static IP addresses or DHCP IP addresses and then use the appropriate
+section about setting up a direct network. For static IPs instead of using the
+domain of your local network you should use the domain of the private Pi
+network. Also, you should generate an ssh key on the master Pi and use it when
+setting up the worker Pis so that you can connect to them securely from the
+master.
 
 ### Private Network Cluster Setup by hand
 
@@ -469,9 +503,29 @@ If `dig` is successful you should see something like this:
 ;; ANSWER SECTION:
 red01.                 0       IN      A       192.168.1.43
 ```
-## SSH keygen :o: {#pi-ssh-keygen}
+## SSH keygen {#pi-ssh-keygen}
 
-TODO: Document ssh-keygen and PuTTYgen or git's ssh-keygen on Windows.
+An ssh key is a secure means to verify your identity to another computer. Ssh
+keys can be used to login to a remote computer without needing a password. This
+enhances security because an attacker cannot attempt to crack the password.
+However, the private keys that are stored on the client computer are a potential
+weakness and must be carefully protected to ensure that they are not
+compromised. If you would like more information on SSH keys the
+[GitHub SSH guide](https://help.github.com/articles/connecting-to-github-with-ssh/)
+is highly recommended.
+
+To generate a new ssh key on macOS or Linux use the `ssh-keygen` program. The
+same procedure can be followed on Windows by using Git Bash. It will save your
+key by default in your home folder in `~/.ssh/id_rsa` and the public key in
+`~/.ssh/id_rsa.pub`. It is more secure if you supply a passphrase. If you do
+supply a passphrase then it must be entered any time you want to use the key. If
+you do not supply a passphrase then the private key can be used by anyone and if
+someone has a copy of it they can impersonate you and gain access to any
+computer that you have access to.
+
+```bash
+$ ssh-keygen
+```
 
 ## Parallel Shell
 
