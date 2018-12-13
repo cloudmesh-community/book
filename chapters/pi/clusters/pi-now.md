@@ -279,6 +279,11 @@ you will need to select a set of hostnames for the PIs in your cluster. Please
 see the [Network of Pis Hostnames](#pi-network-hostnames) section for our
 recommendation on setting hostnames.
 
+### Private Network Cluster Setup with cm-burn :o:
+
+Cm-burn does not currently support setting up a private network cluster. When it
+is enhanced to support this we will add the documentation here.
+
 ### Private Network Cluster Setup by hand
 
 The master node of the cluster must use one network device to talk to the local
@@ -358,6 +363,11 @@ At this point you can restart the services and everything should be working:
 $ sudo service dhcpcd restart
 $ sudo service dnsmasq restart
 ```
+
+To find out what IP address has been assigned to each Pi you can use the
+[Discover Pi DHCP Network Addresses](#pi-find-dhcp-ip-address) section or you
+can manually look in the `/var/lib/misc/dnsmasq.leases` which will list each
+lease and the MAC Address of the device it is leased to.
 
 ## Discover Pi DHCP Network Addresses {#pi-find-dhcp-ip-address}
 
