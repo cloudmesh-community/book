@@ -267,7 +267,9 @@ $ cm-burn create --name red[01-05] \
   --image 2018-11-13-raspbian-stretch-lite.img
 ```
 
-### Direct Network Cluster Setup by hand
+### Direct Network Cluster Setup by hand :o:
+
+TODO: manual steps for direct network setup
 
 ## Private Network Cluster Setup {#pi-private-network-cluster}
 
@@ -276,6 +278,86 @@ An overview the design of a private Pi cluster is included in the
 you will need to select a set of hostnames for the PIs in your cluster. Please
 see the [Network of Pis Hostnames](#pi-network-hostnames) section for our
 recommendation on setting hostnames.
+
+### Private Network Cluster Setup by hand
+
+The master node of the cluster must use one network device to talk to the local
+network and another network device to talk to the other Pis on the private
+network. For these steps we will assume that `wlan0` is on the local network and
+that `eth0` is on the private Pi network. These could be switched or replaced
+with a USB Ethernet connection with no change to the steps. We assume for these
+steps that you have already connected `wlan0` to your local network and these
+steps will then complete setting up `eth0` as the bridge device to the private
+Pi network.
+
+We need the `dnsmasq` service as a simple DNS server and the convenience package
+`iptables-persistent` for making changes to iptables:
+
+```bash
+$ apt-get update
+$ apt-get install -qy dnsmasq iptables-persistent
+```
+
+To setup our `wlan0` as the *favored* interface for the Pi to communicate over
+the Internet we need to set its metric lower than the `eth0` interface. Normally
+the Pi will prefer to use the `eth0` interface since it is usually faster. This
+change can be made in `/etc/dhcpcd.conf`. This file also where we setup static
+IP addresses. If you are not using a static IP address for `wlan0` then you
+will not have the lines beneath `interface wlan0` to set the static IP address.
+We will setup our private Pi network to have the IP address range 192.168.50.1
+to 192.168.50.255 which means it is 192.168.50.1/24 or, equivalently, uses the
+255.255.255.0 subnet mask. You can freely change this and you must choose a
+network that does not match the local network. Change `/etc/dhcpcd.conf` to
+match this:
+
+```
+interface eth0
+metric 300
+
+static ip_address=192.168.50.1/24
+static routers=192.168.50.1
+static domain_name_servers=192.168.50.1
+
+interface wlan0
+metric 200
+
+static ip_address=192.168.1.107/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
+```
+
+Next you need to update `/etc/dnsmasq.conf` to include the following lines to
+enable giving out DHCP addresses on the `eth0` network and to give out addresses
+in the proper range:
+
+```
+interface=eth0
+dhcp-range=eth0, 192.168.50.2,192.168.50.250,24h
+```
+
+We then need to enable NAT Forwarding by uncommenting (or adding) the following
+line in `/etc/sysctl.conf`:
+
+```
+net.ipv4.ip_forward=1
+```
+
+The final step is to setup and save our iptables configuration to do the actual
+forwarding of packets. Run these commands to set this up properly:
+
+```bash
+$ sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+$ sudo iptables -A FORWARD -i eth0 -o wlan0 -j ACCEPT
+$ sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
+$ sudo iptables-save | sudo tee /etc/iptables/rules.v4
+```
+
+At this point you can restart the services and everything should be working:
+
+```bash
+$ sudo service dhcpcd restart
+$ sudo service dnsmasq restart
+```
 
 ## Discover Pi DHCP Network Addresses {#pi-find-dhcp-ip-address}
 
