@@ -24,31 +24,57 @@ $ apt-get install gedit
 ...
 ```
 
-## Python 3
+## Python on the Pi :hand: fa18-516-03
 
-Raspbian comes by default with Python 2. However, more and more
-libraries become available in Python 3 and you can install it with 
+Raspbian Stretch Lite version 2018-11-13 comes by default with Python 2.7.13 and
+Python 3.5.3. However, it does not come with `pip` which is the default Python
+configuration management tool.
+
+Add instructions to install pip and pip3 which are not installed by default in
+the Lite images:
 
 ```bash
-$ sudo apt-get install python3
+$ sudo apt-get install -y python-pip python3-pip
+$ pip -V
+pip 9.0.1 from /usr/lib/python2.7/dist-packages (python 2.7)
+$ pip3 -V
+pip 9.0.1 from /usr/lib/python3/dist-packages (python 3.5)
 ```
 
-If this does not work you can also compile the newest version as
-follows
+Note that pip for Python 3 can also be run by using the following command
+
+```bash
+$ python3 -m pip install ...
+```
+
+The installation packages for pip on Raspbian will also properly setup the
+<https://www.piwheels.org> package repository which contains pre-compiled binary
+wheels for many popular python packages. A *wheel* is a python package that is
+already compiled into a binary form for a particular OS and hardware chipset.
+Installing a wheel is much faster and less error prone than building a package
+from source. These wheels have also been optimized for the ARM chipset that the
+Raspberry Pi uses so they will run at the highest speeds possible. For example,
+you can install the wheel for numpy and scipy with:
+
+```bash
+$ pip3 install numpy scipy
+```
+
+If you want to upgrade to the latest python version you can build it from source
+as follows
 
 ```bash
 $ sudo apt-get install build-essential checkinstall
 $ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev
 $ sudo apt-get install libssl-dev libsqlite3-dev tk-dev libgdbm-dev
 $ sudo apt-get install libc6-dev libbz2-dev
-cd /usr/src
-wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
-sudo tar xzf Python-3.6.5.tgz
-d Python-3.6.5
-sudo -s
-bash configure
-make altinstall
-exit
+$ cd /usr/src
+$ wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
+$ sudo tar xzf Python-3.6.5.tgz
+$ cd Python-3.6.5
+$ sudo -s
+$ bash configure
+$ make altinstall
 ```
     
 ## Python IDLE

@@ -15,12 +15,10 @@ a cluster of Raspberry Pi's.
 
 ## Prerequisites :o:
 
-:warning: This prerequisit is the same as for any other NOW
-cluster. Thus this section needs to be moved to the NOW cluster setup
-and than we refere just to this section from here.
-
-We assume that you have on all the Raspberry Pi nodes the following
-software and configuration files installed:
+In [Network of Pis](#pi-now-main) section we explained how to set up a network
+of Pis. Here we assume that we start from such a network. We assume that you
+have on all the Raspberry Pi nodes the following software and configuration
+files installed:
 
 **SSH**:
 
