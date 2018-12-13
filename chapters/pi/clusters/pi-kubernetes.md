@@ -1,4 +1,4 @@
-# Kubernetes :o: :hand: fa18-516-03
+# Kubernetes :hand: fa18-516-03
 
 In this section we will discuss how to set up a Kubernetes cluster on a
 number of Raspberry Pis.
@@ -10,13 +10,14 @@ number of Raspberry Pis.
 - [ ] so before you can work on the Kubernetes section you need to make sure the NOW section is up to date.
 
 ## Resources Needed
-
-We recommend that the cluster will have at least one master and three worker
-nodes. The test should not use too many resources otherwise the system may be
-unnecessarily slow. In particular we should have one dedicated master. We use
-three nodes to support testing the distribution of containers. (It may work with
-two, but we have not tested it). Please give us feedback on this and let us know
-what works for you. We will integrate your feedback.
+In [Network of Pis](#pi-now-main) section we explained how to set up a network
+of Pis. Here we assume that we start from such a network. We recommend that the
+cluster will have at least one master and three worker nodes. The test should
+not use too many resources otherwise the system may be unnecessarily slow. In
+particular we should have one dedicated master. We use three nodes to support
+testing the distribution of containers. (It may work with two, but we have not
+tested it). Please give us feedback on this and let us know what works for you.
+We will integrate your feedback.
 
 ## Overview of Kubernetes Cluster Setup
 
@@ -427,7 +428,7 @@ Now that the master is running and networking is enabled, you can run the
 for them to join the master. Please see the section [Join Workers to
 Master](#pi-kubernetes-join-workers) for more details.
 
-## Kubernetes First Steps :o: {#kubernetes-first-steps}
+## Kubernetes First Steps {#kubernetes-first-steps}
 
 Now that you have the Kubernetes cluster running you can deploy pods on the
 cluster. For production use of Kubernetes it is recommended to use a Controller
@@ -614,113 +615,3 @@ Swap will be enabled immediately and the changes will persist after reboot.
 * <https://blog.sicara.com/build-own-cloud-kubernetes-raspberry-pi-9e5a98741b49>
 
 
-# Raspberry Pi Cluster Setup :o: :hand: fa18-516-03
-
-This should be in the NOW section or elsewhere. Leaving it here until it finds a
-new home location.
-
-This section will guide the steps towards setting up a Kubernetes Pi cluster.
-The steps are:
-
-a. Setting up static IP
-b. Secure ssh key setup for communication
-c. Kubernetes cluster setup
-d. Automating the process
-
-Cluster needs:
-
-*  One head/master Pi
-*  number of follower nodes Pi
-*  router [optional]
-
-Pis can be connected directly to the home's Internet router.
-Please note that a router is needed when portability is a criteria. 
-
-## Initial Setup
-
-See Network of PIs
-
-## Configure Head Node (port forwarding and DNS)
-
-Install Dependencies:
-
-    $ apt-get update
-    $ apt-get install -qy dnsmasq clusterssh iptables-persistent
-
-#### Create Static IP
-
-TODO: Verify: This should already be done by `cm-burn`
-
-Copy old config (-n flag prevents overwrite):
-
-    $ \cp -n /etc/dhcpcd.conf /etc/dhcpcd.conf.old
-    
-To update DHCP configuration, add the following to **/etc/dhcpd.conf**:
- 
-    interface wlan0
-    metric 200
-
-    interface eth0
-    metric 300
-    static ip_address=192.168.50.1/24
-    static routers=192.168.50.1
-    static domain_name_servers=192.168.50.1
-
-#### Configure DHCP Server:
-
-Copy old config (-n flag prevents overwrite):
-
-    $ \cp -n /etc/dnsmasq.conf /etc/dnsmasq.conf.old
-    
-To update DNS configuration, add the following to **/etc/dhcpd.conf**
-    
-    interface=eth0
-    interface=wlan0
-
-    dhcp-range=eth0, 192.168.50.1, 192.168.50.250, 24h
-    
-#### NAT Forwarding
-
-To Setup NAT Forwarding, uncomment the following line in **/etc/sysctl.conf**:
-
-    net.ipv4.ip_forward=1
-    
-#### IP Tables
-
-Create IP Tables:
-
-    $ sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
-    $ sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-    $ sudo iptables -A FORWARD -i $INTERNAL -o wlan0 -j ACCEPT
-    $ sudo iptables -A FORWARD -i $EXTERNAL -o eth0 -j ACCEPT
-
-Make rules permanent:
-
-    $ iptables-save > /etc/iptables/rules.v4
-
-
-### SSH Configuration
-
-Generate SSH keys:
-
-    $ ssh-keygen -t rsa
-    
-Copy key to each compute node:
-
-    $ ssh-copy-id <hostname>
-    
-For hostnames rp1-4 (final node names will be: rp0, rp1, rp2, rp3, rp4).
-
-### Configure Cluster SSH
-
-To update Cluster SSH configuration, add the following to **/etc/clusters**:
-
-    $ rpcluster rp1 rp2 rp3 rp4
-
-Now you can run commands to all clusters by:
-
-    $ cssh rpcluster
-
-NOTE: This seems to be related to using `cssh` 
-[Cluster SSH](https://github.com/duncs/clusterssh/wiki) to update all the nodes
-together. I would suggest this is better down by using Docker or Ansible.
