@@ -24,7 +24,7 @@ $ apt-get install gedit
 ...
 ```
 
-## Python 3 :hand:
+## Python on the Pi :hand: fa18-516-03
 
 Raspbian Stretch Lite version 2018-11-13 comes by default with Python 2.7.13 and
 Python 3.5.3. However, it does not come with `pip` which is the default Python

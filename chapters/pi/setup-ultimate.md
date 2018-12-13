@@ -1,4 +1,4 @@
-# Raspberry PI Setup (Small Number of PIs) :o: :hand: fa18-516-03
+# Raspberry PI Setup (Small Number of PIs) :hand: fa18-516-03
 
 This section will be the start for the replacement for all previous setup
 instructions. I think we want ultimately the section "PI Network of
@@ -101,7 +101,7 @@ macOS. Other solutions such as using command line scripts are also available and
 are demonstrated in the section about burning SD Cards in Linux.
 
 
-### Burn an SD Card with cm-burn :o: {#pi-cm-burn-sd-card}
+### Burn an SD Card with cm-burn :hand: fa18-516-03 {#pi-cm-burn-sd-card}
 
 A very convenient program to create an SD card for a Raspberry Pi is
 using the program `cm-burn`. The program is available from
@@ -483,7 +483,7 @@ after 20 seconds:
 $ sudo dhclient -r wlan0; sleep 10; sudo dhclient wlan0
 ```
 
-### Wireless Network at IU {#s-wireless-at-iu}
+### Wireless Network at IU :o: {#s-wireless-at-iu}
 
 :o: TODO: Update with new IU public wireless information
 
@@ -552,31 +552,6 @@ public key to the `~pi/.ssh/authorized_keys` file
 If you would like to setup a Raspberry Pi cluster please refer to the section
 [Network of Pis](#pi-now-main) for details on configuring a cluster by hand or
 with our convenient tools and scripts such as `cm-burn`.
-
-:o: This explains how to set up a small cluster by hand discussing how to
-burn multiple cards. It uses the method of booting the pi and using a
-monitor to set up each of them. Starting with passwd.
-
-The process described above can be replicated fairly easily for a
-small number of Pis. Just make sure you have a different hostname for
-each Pi. More complex setups are discussed next while for example
-using static IP addresses.
-
-
-### Wireless network addresses by hand
-
-:o:
-
-### Static network addresses by hand
-
-:o:
-
-### Mixed wireless and static network
-
-:o:
-
-
-:o: JPB fa18-516-03 reviewed to here :o:
 
 System Preparation without Monitor
 ----------------------------------
