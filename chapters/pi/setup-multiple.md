@@ -102,6 +102,7 @@ For convenience we will be also enabeling a cluster burn logic, that burns all i
 
 cm-burn --workers=5 --name=cluster --nodes=nodes --id=3
 
+![](images/pi_clusters.jpg)
 
 ## Prerequisits
 
@@ -261,7 +262,11 @@ cloudmesh:
 
 #### Manual page
 
-TODO: This section has to be updated with the newest cm-burn -h 
+
+1. git clone https://github.com/cloudmesh-community/cm-burn
+2. cd cm-burn
+3. python setup.py install
+4. Copy the Raspberyy PI images to be burned under ~/.cloudmesh/images
 
 The manual page is as follows:
 
@@ -286,30 +291,47 @@ Options:
   --key=KEY     the path of the public key [default: ~/.ssh/id_rsa.pub].
   --ips=IPS     th ips in hostlist format
 
-Files:
-  This is not fully thought through and needs to be documented
+Location of the images to be stored for reuse:
+  
   ~/.cloudmesh/images
   ~/.cloudmesh/inventory
-  Location where the images will be stored for reuse
+  
 
 Description:
-  cm-burn create --names HOSTS [--key KEY] --image IMAGE --bootdrive BOOTDRIVE --rootdrive ROOTDRIVE --ssid SSID --psk PSK
+  cm-burn create [--image=IMAGE] [--group=GROUP] [--names=HOSTS]
+                 [--ips=IPS] [--key=PUBLICKEY] [--ssid=SSID] [--psk=PSK]
+                 [--domain=DOMAIN]
+                 [--bootdrive=BOOTDRIVE] [--rootdrive=ROOTDRIVE]
+                 [-n --dry-run] [-i --interactive]
+  cm-burn ls [-ni]
+  cm-burn rm IMAGE [-ni]
+  cm-burn get [URL]
   cm-burn update
-        updates the downloaded images if new once are available
-  cm-burn ls
-        lists the downloaded images
-  cm-burn rm IMAGE
-        remove the image
-  cm-burn get URL
-        downloads the image at the given URL
-  cm-burn get jessie
-        abbreviation to download a specific version of an image.
-        Identify what would be useful.
+  cm-burn check install
+  cm-burn hostname [HOSTNAME] [-ni]
+  cm-burn ssh [PUBLICKEY] [-ni]
+  cm-burn ip IPADDRESS [--domain=DOMAIN] [-ni]
+  cm-burn wifi SSID [PASSWD] [-ni]
+  cm-burn info [-ni]
+  cm-burn image [--image=IMAGE] [--device=DEVICE]
+                [-ni]
+  cm-burn (-h | --help)
+  cm-burn --version
+
+Options:
+  -h --help         Show this screen.
+  -n --dry-run      Show output of commands but don't execute them
+  -i --interactive  Confirm each change before doing it
+  --version         Show version.
+  --key=KEY         the path of the public key [default: ~/.ssh/id_rsa.pub].
+  --ips=IPS         the IPs in hostlist format
+  --image=IMAGE     the image to be burned [default: 2018-06-27-raspbian-stretch.img].
 
 Example:
   cm-burn create --names red[000-010] ips --image rasbian_latest
-```
+  cmb-urn create --group g1 --names red[001-003] --key c:/users/<user>/.ssh/id_rsa.pub --image 2018-06-27-raspbian-stretch.img --bootdrive I --rootdrive G --domain 192.168.1.254 --ip 192.168.1.[111-113]
 
+```
 ## Appendix
 
 ### OSX ext4fuse
