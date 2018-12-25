@@ -38,6 +38,10 @@ when the assignments are typically due
 
 :o: The list of activities listed at this time does not yet include
 the lectures, and will be updated once we have them finalized.
+To see the differences you cann look at:
+
+* <https://github.com/cloudmesh-community/book/commits/master/chapters/quick222.md>
+
 
 * Week 1: Jan 11
 
