@@ -34,8 +34,13 @@ inform yourself what was being taught. Attendence and participation will be grad
 In the following calendar we put in the last day of the week 
 when the assignments are typically due
 
+:o: The list of activities listed at this time does not yet include the lectures, 
+and will be updated once we have them finalized.
+
 * Week 1: Jan 11
 
+   *Logistic:*
+   
    Get familiar with the class structure. 
    
    Read: Preface; Class Overview; Start reviewing your python knowledge
@@ -58,10 +63,17 @@ when the assignments are typically due
    
 :o: Additional information will be posted here, please check weekly.
 
-
+   Read: Learn about markdown. See our class notes and internet resources. 
+   Note that we use pandoc markdown that may not render properly in github, 
+   especially when it comes to figure captions, refernces, and bibliography.
+    
 * Week 2: Jan 18
 
-  TBD
+  *Theory:* Learn about REST services and use Swagger OpenAPI to create a rest 
+  service that returns the CPU information about your computer
+  
+  *Report:* Create an empty report based on our template in github. THe TAs may 
+  do this with you in the Lab.
   
 * Week 3: Jan 25
 
@@ -70,25 +82,51 @@ when the assignments are typically due
   
 * Week 4: Feb 1
 
-  TBD
+  *Project team:* Build a project team with no more than 3 people. There will not be an exception. 
+  You are allowed to work alone. Make sure your project team does the work together. 
+  E.g. YOu must not have 3 people on the team and the project could have been executed 
+  by a single person. In case of more than one person the sum of the deliverables must be larger than what one team 
+  member can achieve. It is an advantage to work in a team as you can check each other.
+  
+  If a team member does not contribute to the project, the team has the right to exclude the non 
+  working team member with consultation of the instructors. We will have a joint meeting with the team 
+  to identify the best path forward. Chose your team members wisely.
+  Idally you should make this decission in in the first 3 weeks.
+  
+  *Project Idea due:* A one page formal document that summarizes the project. 
+  This is not a proposal. The workds *I* and *project*, *report* must not be used. 
+  It is essentially a snapshot of your final report.
   
 * Week 5: Feb 8
 
-  TBD
+  Project Update due: A two page formal document that summarizes the project. 
+  This is not a proposal. The workds *I* and *project*, *report* must not be used. 
+  It is essentially a snapshot of your final report.
   
 * Week 6: Feb 15
 
-  TBD
-  
+  Project Update due: A multiparagraph description about the data that you 
+  use for your project is to be added to your report. This includes details 
+  about the data. IN a docuemented program you show cases how you down load 
+  the data with python request in an outomated fashion.
+    
 * Week 7: Feb 22
 
-  TBD
+  Project update due: Have a documented program ready that uses a REST service to
+  obtain data for your analysis
   
 * Week 8: Mar 1
 
-  TBD
+  Project update due: identify how to do benchmarks and time the execution of 
+  your project. Add planed benchmarks to tour report. Do not use the word *plan* or *will*
+  write it in such a form as if it were done. Instead put  a :o: on benchmarks that you will 
+  that you wrok on
   
 * Week 9: Mar 8
+  
+  Project update: Study matplotlib and bokeah and identify how to visualize other 
+  aspects of your projects. Your are also alowed to use D3.js and add ons to it. 
+  You are not allowed to use tablaeu.
   
 * Week 10: Mar 15
 
@@ -96,19 +134,23 @@ when the assignments are typically due
   
 * Week 11: Mar 22
 
-  TBD
+  Project update: Identify analysis algorithms for your project and apply them. 
+  Experiment with what you can do with the data
   
 * Week 12: Mar 29
 
-  TBD
+  Project update: Identify analysis algorithms for your project and apply them. 
+  Experiment with what you can do with the data
   
 * Week 13: Apr 5
 
-  TBD
+  Project update: Identify analysis algorithms for your project and apply them. 
+  Experiment with what you can do with the data. Start benchmarks.
   
 * Week 14: Apr 12
 
-  TBD
+  Project update: Focus on your project report and finalize it. THe project report 
+  must include refernces in bibtex format. Doublecheck integartion in proceedings.
   
 * Week 15: Apr 19
 
