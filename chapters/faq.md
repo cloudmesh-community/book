@@ -206,7 +206,7 @@ If you really need to use it you must quote it in code/verbatim mode
 
 ## Has SOIC computers I can use remotely?
 
-See: <ttps://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559>
+See: <https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559>
 
 
 ## How to read the technical sections of the lecture notes
