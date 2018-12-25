@@ -42,6 +42,9 @@ To see the differences you cann look at:
 
 * <https://github.com/cloudmesh-community/book/commits/master/chapters/quick222.md>
 
+If checkins are succeeding can be seen at:
+
+* <https://circleci.com/gh/cloudmesh-community/book>
 
 * Week 1: Jan 11
 
