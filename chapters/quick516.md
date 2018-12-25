@@ -5,7 +5,7 @@ To ask for help use piazza
 # How to take this class
 
 This class is attended by a variety of students with different
-backgrounds an time schedules. To be most flexible and adress all
+backgrounds and time schedules. To be most flexible and adress all
 students there are three different ways on how you can take this
 class.
 
@@ -22,7 +22,7 @@ class.
   section. Such sections are marked for one week with the icon :new:
   after about three weeks time all :new: icons will be removed. The
   icon is there to help you identifying sections that may have been
-  added to section taht logically fit better in an earlier section, than
+  added to section that logically fit better in an earlier section, than
   linearly at the end
 
 * Way 3: Weekly guided progress. Other students may prefer
