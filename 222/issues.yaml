@@ -1,0 +1,3345 @@
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/212
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/212/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/212/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/212/events
+  html_url: https://github.com/cloudmesh-community/book/issues/212
+  id: 384727633
+  node_id: MDU6SXNzdWUzODQ3Mjc2MzM=
+  number: 212
+  title: FAQ section has likeley a bug
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels:
+  - id: 949240182
+    node_id: MDU6TGFiZWw5NDkyNDAxODI=
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/bug
+    name: bug
+    color: d73a4a
+    default: true
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-11-27T10:35:04Z'
+  updated_at: '2018-11-27T10:35:19Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "If a section is preceded by the text, it has likely a bug, you can not just\
+    \ paste and copy the FAQ, some may require rewriting\r\n\r\n\u201CThis page contains\
+    \ the following errors:\r\n\r\nerror on line 363 at column 52: Opening and ending\
+    \ tag mismatch: url line 0 and p\r\nBelow is a rendering of the page up to the\
+    \ first error.\u201D\r\n\r\nExcerpt From: Gregor von Laszewski. \u201CCloud Computing.\u201D\
+    \ Apple Books. "
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/211
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/211/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/211/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/211/events
+  html_url: https://github.com/cloudmesh-community/book/issues/211
+  id: 384718263
+  node_id: MDU6SXNzdWUzODQ3MTgyNjM=
+  number: 211
+  title: some refs missing
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels:
+  - id: 949240182
+    node_id: MDU6TGFiZWw5NDkyNDAxODI=
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/bug
+    name: bug
+    color: d73a4a
+    default: true
+  state: open
+  locked: false
+  assignee:
+    login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-11-27T10:13:47Z'
+  updated_at: '2018-11-27T10:33:35Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "please locate and identify how to fix\r\n\r\npandoc-citeproc: reference www-google\
+    \ not found\r\npandoc-citeproc: reference bibtexkey not found\r\npandoc-citeproc:\
+    \ reference www-google not found"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/190
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/190/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/190/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/190/events
+  html_url: https://github.com/cloudmesh-community/book/issues/190
+  id: 377059587
+  node_id: MDU6SXNzdWUzNzcwNTk1ODc=
+  number: 190
+  title: Hadoop 3.1.1
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  - login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 4
+  created_at: '2018-11-03T14:32:23Z'
+  updated_at: '2018-11-23T23:33:55Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "A student noticed that the hadoop section is outdated. pleas update.\r\n\r\
+    \n3.0.1 has been removed by apache\r\n3.0.3 is the lates in the 0 which we have\
+    \ not tested.\r\n\r\nhowever 3.1.1 is the newest release \r\n\r\nI suggest to\
+    \ try 3.1.1 before 3.0.3, and if this works update the appropriate sections\r\n\
+    \r\nthere is also a duplicated section on hadoop which we must evaluate and integrate\
+    \ into a single hadoop section"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/189
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/189/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/189/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/189/events
+  html_url: https://github.com/cloudmesh-community/book/issues/189
+  id: 377056915
+  node_id: MDU6SXNzdWUzNzcwNTY5MTU=
+  number: 189
+  title: bitex entries for FaaS Sections
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/8
+    html_url: https://github.com/cloudmesh-community/book/milestone/8
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/8/labels
+    id: 3657430
+    node_id: MDk6TWlsZXN0b25lMzY1NzQzMA==
+    number: 8
+    title: 11-08-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 1
+    closed_issues: 0
+    state: open
+    created_at: '2018-09-16T17:19:08Z'
+    updated_at: '2018-11-03T13:58:46Z'
+    due_on: '2018-11-08T08:00:00Z'
+    closed_at: null
+  comments: 1
+  created_at: '2018-11-03T13:58:46Z'
+  updated_at: '2018-11-27T10:35:53Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "- [ ] https://github.com/cloudmesh-community/book/edit/master/chapters/faas/introduction.md\
+    \ \r\n- [ ] https://github.com/cloudmesh-community/book/edit/master/chapters/faas/aws-lambda.md\r\
+    \n- [ ] https://github.com/cloudmesh-community/book/blob/master/chapters/faas/openwhisk.md\r\
+    \n- [ ] https://github.com/cloudmesh-community/book/edit/master/chapters/faas/kubeless.md\r\
+    \n\r\nand put them after the links"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/187
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/187/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/187/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/187/events
+  html_url: https://github.com/cloudmesh-community/book/issues/187
+  id: 376055521
+  node_id: MDU6SXNzdWUzNzYwNTU1MjE=
+  number: 187
+  title: update cloud section for 523
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-10-31T16:37:49Z'
+  updated_at: '2018-10-31T16:37:49Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "https://github.com/cloudmesh-community/book/blob/master/chapters/bigdata/e534-cloud-computing-unit.md\r\
+    \nBest,"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/186
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/186/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/186/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/186/events
+  html_url: https://github.com/cloudmesh-community/book/issues/186
+  id: 375910084
+  node_id: MDU6SXNzdWUzNzU5MTAwODQ=
+  number: 186
+  title: figure refernces {#fig:label}
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/10
+    html_url: https://github.com/cloudmesh-community/book/milestone/10
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/10/labels
+    id: 3657436
+    node_id: MDk6TWlsZXN0b25lMzY1NzQzNg==
+    number: 10
+    title: 11-22-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 1
+    closed_issues: 0
+    state: open
+    created_at: '2018-09-16T17:19:58Z'
+    updated_at: '2018-10-31T11:08:49Z'
+    due_on: '2018-11-22T08:00:00Z'
+    closed_at: null
+  comments: 1
+  created_at: '2018-10-31T11:08:49Z'
+  updated_at: '2018-11-14T22:17:07Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "verify that all images in book in all sections have the +@fig:label syntax\
+    \ \r\nintroduce the label\r\n\r\nwrite down all files that have an issue so that\
+    \ a sentence can be created that is grammatically correct and makes sense by Bo"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/184
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/184/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/184/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/184/events
+  html_url: https://github.com/cloudmesh-community/book/issues/184
+  id: 375878757
+  node_id: MDU6SXNzdWUzNzU4Nzg3NTc=
+  number: 184
+  title: 'fix bibtex entries '
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels:
+  - id: 949240185
+    node_id: MDU6TGFiZWw5NDkyNDAxODU=
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/help%20wanted
+    name: help wanted
+    color: 008672
+    default: true
+  state: open
+  locked: false
+  assignee: null
+  assignees: []
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/9
+    html_url: https://github.com/cloudmesh-community/book/milestone/9
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/9/labels
+    id: 3657434
+    node_id: MDk6TWlsZXN0b25lMzY1NzQzNA==
+    number: 9
+    title: 11-15-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 2
+    closed_issues: 9
+    state: open
+    created_at: '2018-09-16T17:19:39Z'
+    updated_at: '2018-11-14T22:37:38Z'
+    due_on: '2018-11-15T08:00:00Z'
+    closed_at: null
+  comments: 1
+  created_at: '2018-10-31T09:49:59Z'
+  updated_at: '2018-11-14T22:16:38Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "\r\nAs we know that an enyry can be done in less than 1 minute, we expect\
+    \ to fix over the this period half of them while spending the other half to get\
+    \ familiarized with biber \r\n\r\nso you have\r\n\r\n20 * 60 / 2 = 600 entries\
+    \ to fix \r\n\r\nas many may be correct this is actually much more. BUt we fix\
+    \ on the broken once firts\r\n\r\nthis includes first references in \r\n\r\nhttps://github.com/cloudmesh-community/book/tree/master/bib\r\
+    \n\r\ndo for now only the once you have added\r\n\r\nThan move on to \r\n\r\n\
+    https://github.com/cloudmesh/technologies/bib\r\n\r\nand do all of them\r\n"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/180
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/180/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/180/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/180/events
+  html_url: https://github.com/cloudmesh-community/book/issues/180
+  id: 375196814
+  node_id: MDU6SXNzdWUzNzUxOTY4MTQ=
+  number: 180
+  title: E534 Cloud Section lecture videos merged into E-books
+  user:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 1
+  created_at: '2018-10-29T20:15:23Z'
+  updated_at: '2018-11-14T22:35:49Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "- [x]  content created https://github.com/cloudmesh-community/book/blob/master/chapters/bigdata/e534-cloud-computing-unit.md\r\
+    \n- [ ] Gregor: integrate to book"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/173
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/173/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/173/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/173/events
+  html_url: https://github.com/cloudmesh-community/book/issues/173
+  id: 373907659
+  node_id: MDU6SXNzdWUzNzM5MDc2NTk=
+  number: 173
+  title: biber instalation
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-10-25T11:48:08Z'
+  updated_at: '2018-10-25T11:48:08Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: add a biber instalation sction
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/152
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/152/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/152/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/152/events
+  html_url: https://github.com/cloudmesh-community/book/issues/152
+  id: 371137070
+  node_id: MDU6SXNzdWUzNzExMzcwNzA=
+  number: 152
+  title: Upload lecture videos from Prof Fox's Google Drive to Youtube
+  user:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-10-17T15:30:09Z'
+  updated_at: '2018-10-17T15:31:39Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "\r\n- [ ] Videos of Spark lectures"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/148
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/148/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/148/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/148/events
+  html_url: https://github.com/cloudmesh-community/book/issues/148
+  id: 370196962
+  node_id: MDU6SXNzdWUzNzAxOTY5NjI=
+  number: 148
+  title: IU GUEST
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/7
+    html_url: https://github.com/cloudmesh-community/book/milestone/7
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/7/labels
+    id: 3657428
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyOA==
+    number: 7
+    title: 11-01-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 1
+    closed_issues: 2
+    state: open
+    created_at: '2018-09-16T17:18:35Z'
+    updated_at: '2018-11-14T22:26:02Z'
+    due_on: '2018-11-01T07:00:00Z'
+    closed_at: null
+  comments: 0
+  created_at: '2018-10-15T14:43:08Z'
+  updated_at: '2018-10-15T14:43:08Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "we need some section on this\r\n\r\nHello IT Professionals,\r\n \r\nThe UITS\
+    \ Campus Network Engineering Team would like to make you aware of the upcoming\
+    \ changes to the guest wifi service at IU.\r\n \r\nOn Thursday, October 18, a\
+    \ new guest wireless network service called IU Guest will go live. [1]\r\nOn Thursday,\
+    \ November 1, 2018, the current guest wireless service, AT&T wireless service\
+    \ (attwifi) will be retired from service. [2]\r\n \r\nThe new IU Guest network\
+    \ will provide a similar experience to IU\u2019s current attwifi network and that\
+    \ of other guest wireless services typically found in hotels and retail businesses.\
+    \ To utilize IU Guest, users will first be required to agree to terms and conditions\
+    \ for the service, before being advanced to a confirmation page. Upon clicking\
+    \ the login button on the confirmation page, they will be able to access the internet.\
+    \ [3]\r\n \r\nIf a user is on IU Guest for more than twenty-four (24) hours, they\
+    \ will be prompted to reaffirm the terms and conditions of use to continue to\
+    \ access the network.\r\n \r\nThe Networks team would like to remind all faculty,\
+    \ staff and students that they should continue to use IU Secure rather than IU\
+    \ Guest for the following reasons:\r\n\xB7         IU Guest is not encrypted\r\
+    \n\xB7         IU Guest may be subject to less bandwidth\r\n\xB7         IU Guest\
+    \ users may not have access to some IU resources\r\n \r\nQuestions? Email noc@iu.edu.\r\
+    \n \r\n--IT Community Partnerships on behalf of the Campus Networks Engineering\
+    \ Team\r\n \r\n[1] Free wireless internet service for IU campus visitors: https://kb.iu.edu/d/atkx\r\
+    \n[2] Free connections to AT&T wireless for visitors to IU: https://kb.iu.edu/d/azqb\r\
+    \n[3] IU Homepage: https://www.indiana.edu/\r\n \r\n~~~~~ Today\u2019s IT Pro\
+    \ Tip ~~~~~\r\nEver wonder what interesting things IU\u2019s IT community is up\
+    \ to? Come mingle and find out at the next IT Water Cooler event on November 1,\
+    \ 2018 from 1:30 to 3:30 pm. Join us in person at the CIB in Bloomington or online\
+    \ through Zoom. Register in advance at https://iu.zoom.us/webinar/register/WN_fnINi_OlRrimnQwE69vQEg.\
+    \ After registering, you will receive a confirmation email containing information\
+    \ about joining the webinar.\r\n \r\n"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/146
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/146/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/146/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/146/events
+  html_url: https://github.com/cloudmesh-community/book/issues/146
+  id: 370173647
+  node_id: MDU6SXNzdWUzNzAxNzM2NDc=
+  number: 146
+  title: ssh port forwarding section
+  user:
+    login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-10-15T13:52:00Z'
+  updated_at: '2018-10-15T13:52:00Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: update ssh port forwarding and ssh tunneling
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/145
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/145/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/145/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/145/events
+  html_url: https://github.com/cloudmesh-community/book/issues/145
+  id: 370170414
+  node_id: MDU6SXNzdWUzNzAxNzA0MTQ=
+  number: 145
+  title: 'Open: manage vm guests with virsh'
+  user:
+    login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 2
+  created_at: '2018-10-15T13:44:37Z'
+  updated_at: '2018-11-27T10:44:08Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: update section "manage vm guests with virsh"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/144
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/144/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/144/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/144/events
+  html_url: https://github.com/cloudmesh-community/book/issues/144
+  id: 370110385
+  node_id: MDU6SXNzdWUzNzAxMTAzODU=
+  number: 144
+  title: bigdata missing improvements
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee: null
+  assignees: []
+  milestone: null
+  comments: 2
+  created_at: '2018-10-15T11:03:28Z'
+  updated_at: '2018-10-15T11:23:18Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "- [ ] video still missing\r\n- [ ] integrate cloud definition\r\n\r\nwork\
+    \ on the sections in s separate file or directly in the file fro cloud computing\
+    \ at \r\n\r\nhttps://github.com/cloudmesh-community/book/blob/master/chapters/bigdata/applications/cloud.md\r\
+    \n\r\nI could for example \r\n\r\na super simple approach\r\n\r\na) In the above\
+    \ file We say\r\n\r\n## Definition of Terminology\r\n\r\nWe are providing three\
+    \ sections dealing with the definition of clouds. These two sections address\r\
+    \n\r\n* The term cloud computing (Gregor makes a hyperlink to the section)\r\n\
+    * The cloud computing architecture views (Gregor makes a hyperling to the section\r\
+    \n* The definition of the Big Data Reference Architecture\r\n\r\nThen I include\
+    \ \r\n\r\nthe three sections after this one as is\r\n\r\nWhat do you think? This\
+    \ way the sections com in the book with the right indentation within the section\
+    \ listed above\r\n\r\nYou can than modify the section with the videos you like\
+    \ for it, while keeping the bellow pages as they are for 516 primarily\r\n\r\n\
+    \r\n\r\nOn Oct 10, 2018, at 10:37 AM, Gregor von Laszewski <laszewski@gmail.com>\
+    \ wrote:\r\n\r\nhere are the two sections\r\n\r\nThis defines the term cloud with\
+    \ up to date information (includes video)\r\n\r\nhttps://github.com/cloudmesh-community/book/edit/master/chapters/class/e516-definition.md\r\
+    \n\r\n\r\nThis defines architectural views of the cloud (does not need video):\r\
+    \n\r\nhttps://github.com/cloudmesh-community/book/edit/master/chapters/arch.md\r\
+    \n\r\nThere is also one more architecture view form some cloud security alliance\
+    \ that I like to add here\r\n\r\nI also worked on this section\r\n\r\nhttps://github.com/cloudmesh-community/book/edit/master/chapters/nist/bdra.md\r\
+    \n\r\nyou have a video for that one already \r\nI suggest we just add this section\
+    \ to your use cases section after the videos."
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/139
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/139/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/139/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/139/events
+  html_url: https://github.com/cloudmesh-community/book/issues/139
+  id: 369491259
+  node_id: MDU6SXNzdWUzNjk0OTEyNTk=
+  number: 139
+  title: Codecov
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-10-12T10:23:20Z'
+  updated_at: '2018-10-12T10:32:13Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "low priority:\r\n\r\nCreate a section in the handbook under DevOps how to\
+    \ set up codecov in github\r\nwe want to add this to cm/cm4\r\n\r\nalso do coverage\r\
+    \n\r\ndue to access to clouds testing on github is limited and can not include\
+    \ authentication to clouds"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/136
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/136/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/136/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/136/events
+  html_url: https://github.com/cloudmesh-community/book/issues/136
+  id: 368743834
+  node_id: MDU6SXNzdWUzNjg3NDM4MzQ=
+  number: 136
+  title: figures
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/4
+    html_url: https://github.com/cloudmesh-community/book/milestone/4
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/4/labels
+    id: 3657424
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyNA==
+    number: 4
+    title: 10-11-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 5
+    closed_issues: 2
+    state: open
+    created_at: '2018-09-16T17:17:01Z'
+    updated_at: '2018-11-20T15:54:35Z'
+    due_on: '2018-10-11T07:00:00Z'
+    closed_at: null
+  comments: 2
+  created_at: '2018-10-10T16:14:46Z'
+  updated_at: '2018-11-14T22:18:20Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "The figures are not correctly done in the recent checkin from pull request\
+    \ #133 \r\n\r\nThe reason is that they need to  be explicitly mentioned in text.\
+    \ \r\nEither directly or with a (see +@figurelabel)."
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/135
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/135/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/135/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/135/events
+  html_url: https://github.com/cloudmesh-community/book/issues/135
+  id: 368739600
+  node_id: MDU6SXNzdWUzNjg3Mzk2MDA=
+  number: 135
+  title: coordinate with instructors review of tech
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-10-10T16:04:21Z'
+  updated_at: '2018-10-15T21:54:25Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "- [ ] setup of travis for auto test\r\n\r\n\r\n- [ ] weekly review of incomming\r\
+    \n- [ ] notification of bibtex issues\r\n- [ ] add of star for reviews done\r\n\
+    - [ ] add inti table\r\n- [ ] assign bibtex missing items that are not done by\
+    \ students to Qianqian"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/134
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/134/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/134/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/134/events
+  html_url: https://github.com/cloudmesh-community/book/issues/134
+  id: 368730968
+  node_id: MDU6SXNzdWUzNjg3MzA5Njg=
+  number: 134
+  title: bibtex erros in technologies
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-10-10T15:44:39Z'
+  updated_at: '2018-10-10T15:44:39Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "pandoc-citeproc: reference www.dyndb not found\r\npandoc-citeproc: reference\
+    \ www-aws-amazon not found\r\npandoc-citeproc: reference www-medium not found\r\
+    \npandoc-citeproc: reference searchcloudcomputing not found\r\npandoc-citeproc:\
+    \ reference searchcloudcomputing not found\r\npandoc-citeproc: reference centurylink\
+    \ not found\r\npandoc-citeproc: reference techcrunch not found\r\npandoc-citeproc:\
+    \ reference O not found\r\npandoc-citeproc: reference seekingalpha not found\r\
+    \npandoc-citeproc: reference centurylink not found\r\npandoc-citeproc: reference\
+    \ centurylink not found\r\npandoc-citeproc: reference fa18-523-84-CUDA-wiki not\
+    \ found\r\npandoc-citeproc: reference www-discoabout-discoabstractionlayer not\
+    \ found\r\npandoc-citeproc: reference www-discodescribed-discoabstractionlayer\
+    \ not found\r\npandoc-citeproc: reference www-rfc114 not found\r\npandoc-citeproc:\
+    \ reference flumeJava-parallel-pipelines not found\r\npandoc-citeproc: reference\
+    \ flumejava-wired not found\r\npandoc-citeproc: reference flumejava-bp3 not found\r\
+    \npandoc-citeproc: reference fa18-423-02-hbase-org not found\r\npandoc-citeproc:\
+    \ reference fa18-423-02-hbase not found\r\npandoc-citeproc: reference fa18-423-02-www-data-flair.training\
+    \ not found\r\npandoc-citeproc: reference fa18-423-02-www-guru99.com not found\r\
+    \npandoc-citeproc: reference fa18-423-02-events.static.linuxfound.org not found\r\
+    \npandoc-citeproc: reference fa18-423-02-blog.cloudera.com not found\r\npandoc-citeproc:\
+    \ reference fa18-523-56-www-ARQ-Query not found\r\npandoc-citeproc: reference\
+    \ fa18-523-56-www-Jena-OWL-introduction not found\r\npandoc-citeproc: reference\
+    \ paper_medusa not found\r\npandoc-citeproc: reference fa18-523-56-www-nifi-nifihomepage\
+    \ not found\r\npandoc-citeproc: reference fa18-523-56 not found\r\npandoc-citeproc:\
+    \ reference fa18-523-56-www-nifi-issartetlsimple not found\r\npandoc-citeproc:\
+    \ reference fa18-523-56-www-nifi-nifihomepage not found\r\npandoc-citeproc: reference\
+    \ www-OPeNDAP-wikipedia not found\r\npandoc-citeproc: reference www-OPeNDAP-wikipedia-ferret\
+    \ not found\r\npandoc-citeproc: reference www-OPeNDAP-wikipedia not found\r\n\
+    pandoc-citeproc: reference www.opendap.org not found\r\npandoc-citeproc: reference\
+    \ www-OPeNDAP-wikipedia not found\r\npandoc-citeproc: reference www.opendap-Comparing\
+    \ not found\r\npandoc-citeproc: reference www.gdal.org not found\r\npandoc-citeproc:\
+    \ reference books.google.com not found\r\npandoc-citeproc: reference books.google.com\
+    \ not found\r\npandoc-citeproc: reference www.thesisscientist not found\r\npandoc-citeproc:\
+    \ reference phoenix.apache.org not found\r\npandoc-citeproc: reference fa18-523-56-www-protobuf-codeclimate-chooseprobuf\
+    \ not found\r\npandoc-citeproc: reference fa18-523-56-www-protobuf-googleother\
+    \ not found\r\npandoc-citeproc: reference fa18-523-56-www-protobuf-googledevoverview\
+    \ not found\r\npandoc-citeproc: reference fa18-523-56-www-protobuf-performancecompare\
+    \ not found\r\npandoc-citeproc: reference fa18-523-56-www-protobuf-googletechniques\
+    \ not found\r\npandoc-citeproc: reference amplab.cs.berkeley.edu not found\r\n\
+    pandoc-citeproc: reference amplab.cs.berkeley.edu not found\r\npandoc-citeproc:\
+    \ reference www.oreilly.com not found\r\npandoc-citeproc: reference www.oreilly.com\
+    \ not found\r\npandoc-citeproc: reference www.oreilly.com not found\r\npandoc-citeproc:\
+    \ reference www.oreilly.com not found\r\npandoc-citeproc: reference fa18 not found\r\
+    \npandoc-citeproc: reference slurm-ibm not found\r\npandoc-citeproc: reference\
+    \ fa18-423-02-youtube-edureka-tensorflow not found\r\npandoc-citeproc: reference\
+    \ fa18-423-02-tensorflow2015-whitepaper not found\r\npandoc-citeproc: reference\
+    \ fa18-423-02-tensorflow-graph not found\r\npandoc-citeproc: reference fa18-423-02-tensorflow-youtube\
+    \ not found\r\npandoc-citeproc: reference blog-twitter not found\r\npandoc-citeproc:\
+    \ reference streaml.io not found\r\npandoc-citeproc: reference hid-sp18-512-amazon-vpc\
+    \ not found\r\npandoc-citeproc: reference hid-sp18-514-apachekaraf not found\r\
+    \npandoc-citeproc: reference karaf_transaction not found\r\npandoc-citeproc: reference\
+    \ hid-sp18-514-apachekaraf not found\r\npandoc-citeproc: reference hid-sp18-602-wwww-cloudautoml-blog\
+    \ not found\r\npandoc-citeproc: reference hid-sp18-410-ELKBlog not found\r\npandoc-citeproc:\
+    \ reference hid-sp18-602-www-loadbalancing-main not found\r\npandoc-citeproc:\
+    \ reference hid-sp18-414-Behlendor not found\r\npandoc-citeproc: reference IBM\
+    \ not found\r\npandoc-citeproc: reference DB2 not found\r\npandoc-citeproc: reference\
+    \ Bi not found\r\npandoc-citeproc: reference Sql not found\r\npandoc-citeproc:\
+    \ reference hid not found\r\npandoc-citeproc: reference sp18-401-lightgbm not\
+    \ found\r\npandoc-citeproc: reference hid-sp18-406-mLab not found\r\npandoc-citeproc:\
+    \ reference hid-sp18-413-paxata not found\r\npandoc-citeproc: reference hid-sp18-413-puppet\
+    \ not found\r\n"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/126
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/126/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/126/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/126/events
+  html_url: https://github.com/cloudmesh-community/book/issues/126
+  id: 367914160
+  node_id: MDU6SXNzdWUzNjc5MTQxNjA=
+  number: 126
+  title: 'bibtex: 523'
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/4
+    html_url: https://github.com/cloudmesh-community/book/milestone/4
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/4/labels
+    id: 3657424
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyNA==
+    number: 4
+    title: 10-11-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 5
+    closed_issues: 2
+    state: open
+    created_at: '2018-09-16T17:17:01Z'
+    updated_at: '2018-11-20T15:54:35Z'
+    due_on: '2018-10-11T07:00:00Z'
+    closed_at: null
+  comments: 1
+  created_at: '2018-10-08T19:00:31Z'
+  updated_at: '2018-11-14T22:36:56Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "- [ ] technology training-kNN and clustering\r\n- [ ] web search and text\
+    \ mining\r\n- [ ] sensors \r\n- [ ] physics\r\n- [ ] life science\r\n- [ ] health\r\
+    \n- [ ] sports\r\n- [ ] technology for big data aplications and analytics \r\n\
+    - [ ]  e-commerce and lifestyle\r\n- [ ] radar\r\n- [ ] fix entries marked with\
+    \ hcomment = {ERROR},\r\n- [ ] fix entries withcomment = {ERROR},\r\n- [ ] identify\
+    \ missing files here\r\n\r\ncreate and verify the bibtex entries in the chapter.\
+    \ Also add the citation in the references section.\r\n\r\nIf unclear, come to\
+    \ Gregor"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/115
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/115/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/115/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/115/events
+  html_url: https://github.com/cloudmesh-community/book/issues/115
+  id: 367906141
+  node_id: MDU6SXNzdWUzNjc5MDYxNDE=
+  number: 115
+  title: Check and redo Docker Hadoop 3.0.1 and Docker for Hadoop section.
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/3
+    html_url: https://github.com/cloudmesh-community/book/milestone/3
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/3/labels
+    id: 3657423
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyMw==
+    number: 3
+    title: 10-04-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 2
+    closed_issues: 5
+    state: open
+    created_at: '2018-09-16T17:16:31Z'
+    updated_at: '2018-11-20T15:56:39Z'
+    due_on: '2018-10-04T07:00:00Z'
+    closed_at: null
+  comments: 1
+  created_at: '2018-10-08T18:35:18Z'
+  updated_at: '2018-10-08T18:36:20Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "This task was e-mailed to Bo on Oct. 4th to be done on that day.\r\n\r\n"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/110
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/110/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/110/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/110/events
+  html_url: https://github.com/cloudmesh-community/book/issues/110
+  id: 367904115
+  node_id: MDU6SXNzdWUzNjc5MDQxMTU=
+  number: 110
+  title: 'replace images with text '
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/3
+    html_url: https://github.com/cloudmesh-community/book/milestone/3
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/3/labels
+    id: 3657423
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyMw==
+    number: 3
+    title: 10-04-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 2
+    closed_issues: 5
+    state: open
+    created_at: '2018-09-16T17:16:31Z'
+    updated_at: '2018-11-20T15:56:39Z'
+    due_on: '2018-10-04T07:00:00Z'
+    closed_at: null
+  comments: 0
+  created_at: '2018-10-08T18:29:03Z'
+  updated_at: '2018-10-08T18:29:03Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "Pulashti emailed this to bo on \r\n\r\nOctober 4th\r\n\r\nBo - Docker Spark\
+    \ section, update section and make sure to replace images with normal text."
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/93
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/93/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/93/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/93/events
+  html_url: https://github.com/cloudmesh-community/book/issues/93
+  id: 366272023
+  node_id: MDU6SXNzdWUzNjYyNzIwMjM=
+  number: 93
+  title: markdown documentation
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels:
+  - id: 949240182
+    node_id: MDU6TGFiZWw5NDkyNDAxODI=
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/bug
+    name: bug
+    color: d73a4a
+    default: true
+  state: open
+  locked: false
+  assignee: null
+  assignees: []
+  milestone: null
+  comments: 0
+  created_at: '2018-10-03T10:29:21Z'
+  updated_at: '2018-10-03T10:29:31Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: make sure the markdown documentation is in scientific writing I
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/79
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/79/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/79/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/79/events
+  html_url: https://github.com/cloudmesh-community/book/issues/79
+  id: 364569463
+  node_id: MDU6SXNzdWUzNjQ1Njk0NjM=
+  number: 79
+  title: comment after first heading in a afile
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  - login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/9
+    html_url: https://github.com/cloudmesh-community/book/milestone/9
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/9/labels
+    id: 3657434
+    node_id: MDk6TWlsZXN0b25lMzY1NzQzNA==
+    number: 9
+    title: 11-15-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 2
+    closed_issues: 9
+    state: open
+    created_at: '2018-09-16T17:19:39Z'
+    updated_at: '2018-11-14T22:37:38Z'
+    due_on: '2018-11-15T08:00:00Z'
+    closed_at: null
+  comments: 2
+  created_at: '2018-09-27T17:04:19Z'
+  updated_at: '2018-09-27T17:29:32Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "After a first heading in a file the following text should be added.\r\n\r\
+    \nApparently this is not yet working\r\n\r\n```\r\n <!---\r\n\r\nDisclaimer: If\
+    \ you reached this file via github, it is ok to make a pull request \r\nfor this\
+    \ file to correct it. However, viewing this file is only done properly \r\nin\
+    \ the ePub. Thus we recommend that you go to \r\n\r\nhttps://github.com/cloudmesh-community/book/blob/master/README.md\r\
+    \n\r\nand download the appropriate ePub\r\n --->\r\n```\r\n\r\n"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/77
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/77/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/77/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/77/events
+  html_url: https://github.com/cloudmesh-community/book/issues/77
+  id: 364135124
+  node_id: MDU6SXNzdWUzNjQxMzUxMjQ=
+  number: 77
+  title: add mapreduce to syllabus
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/2
+    html_url: https://github.com/cloudmesh-community/book/milestone/2
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/2/labels
+    id: 3657422
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyMg==
+    number: 2
+    title: 09-27-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 2
+    closed_issues: 0
+    state: open
+    created_at: '2018-09-16T17:15:36Z'
+    updated_at: '2018-09-26T17:30:38Z'
+    due_on: '2018-09-27T07:00:00Z'
+    closed_at: null
+  comments: 0
+  created_at: '2018-09-26T17:30:38Z'
+  updated_at: '2018-09-26T17:30:38Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "file https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-syllabus-table.md\r\
+    \n\r\ncontains a large table. Add all section and subsections in order in a single\
+    \ line under mapreduce, mark them red till we release them"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/76
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/76/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/76/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/76/events
+  html_url: https://github.com/cloudmesh-community/book/issues/76
+  id: 364031443
+  node_id: MDU6SXNzdWUzNjQwMzE0NDM=
+  number: 76
+  title: openapi demo
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-09-26T13:30:41Z'
+  updated_at: '2018-09-26T13:30:41Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: integrate the open api demo in the openapi section
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/68
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/68/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/68/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/68/events
+  html_url: https://github.com/cloudmesh-community/book/issues/68
+  id: 362171587
+  node_id: MDU6SXNzdWUzNjIxNzE1ODc=
+  number: 68
+  title: 'bib: create bibtex entries for go-intro.md'
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/2
+    html_url: https://github.com/cloudmesh-community/book/milestone/2
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/2/labels
+    id: 3657422
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyMg==
+    number: 2
+    title: 09-27-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 2
+    closed_issues: 0
+    state: open
+    created_at: '2018-09-16T17:15:36Z'
+    updated_at: '2018-09-26T17:30:38Z'
+    due_on: '2018-09-27T07:00:00Z'
+    closed_at: null
+  comments: 2
+  created_at: '2018-09-20T12:47:47Z'
+  updated_at: '2018-11-14T22:38:46Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "create bibtex entries for the file \r\n\r\n- chapters/prg/go/go-intro.md\r\
+    \n\r\nand add them to\r\n\r\n- bib/go.bib\r\n\r\nAdd the label to the md file\
+    \ and replace the [?]. See go-lang for an example. Once you finish a refernce,\
+    \ check it of in the following list\r\n\r\nList:\r\n\r\n- [ ]  [Go cheat sheet](https://github.com/a8m/go-lang-cheat-sheet)\
+    \ [?].\r\n- [ ]  [The Little Go Book](http://openmymind.net/The-Little-Go-Book/)\
+    \ [?].\r\n- [ ]  [Learn Go in an Hour - Video](https://www.youtube.com/watch?v=CF9S4QZuV30)\
+    \ _2015-02-15_\r\n- [ ]  [Learning to Program in Go](https://www.youtube.com/playlist?list=PLei96ZX_m9sVSEXWwZi8uwd2vqCpEm4m6),\
+    \ a multi-part video training class [?].\r\n- [ ]  [Go By Example](http://gobyexample.com/)\
+    \ provides a series of\r\n  annotated code snippets [?].\r\n- [ ]  [Learn Go in\
+    \ Y minutes](http://learnxinyminutes.com/docs/go/) is a\r\n  top-to-bottom walk-through\
+    \ of the language [?].\r\n- [ ]  [Workshop-Go](https://github.com/sendwithus/workshop-go)\
+    \ - Startup\r\n  Slam Go Workshop - examples and slides [?].\r\n- [ ]  [Go Fragments](http://www.gofragments.net/)\
+    \ - A collection of\r\n    annotated Go code examples [?].\r\n- [ ]  [50 Shades\
+    \ of Go: Traps, Gotchas, Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html)\
+    \ [?]\r\n- [ ]  [Free Go Language Workshop](https://www.frameworktraining.co.uk/go-language-free-training-workshop/)\
+    \ Framework Training is running regular free BYOD workshops in London, UK [?]\r\
+    \n- [ ]  [Golang Tutorials](http://golangtutorials.blogspot.com/2011/05/table-of-contents.html)\
+    \ - A free online class [?].\r\n- [ ]  [The Go Bridge Foundry](https://github.com/gobridge)\
+    \ [?] - A member of\r\n  the [Bridge Foundry](http://bridgefoundry.org/) [?] family,\
+    \ offering a\r\n  complete set of free Go training materials with the goal of\r\
+    \n  bringing Go to under-served communities.\r\n- [ ]  [Golangbot](https://golangbot.com/learn-golang-series/)\
+    \ - Tutorials\r\n  to get started with programming in Go [?].\r\n- [ ]  [Algorithms\
+    \ to Go](http://yourbasic.org/) - Texts about algorithms\r\n  and Go, with plenty\
+    \ of code examples [?].\r\n- [ ]  [Go Language Tutorials](https://www.cybrhome.com/topic/go-language-tutorials)\
+    \ - List of popular sites, blogs and tutorials for learning Go language [?].\r\
+    \n- [ ]  [Golang Development Video Course](https://www.youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY)\
+    \ - A growing list of videos focused purely on Go development [?].\r\n\r\n"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/58
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/58/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/58/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/58/events
+  html_url: https://github.com/cloudmesh-community/book/issues/58
+  id: 361369576
+  node_id: MDU6SXNzdWUzNjEzNjk1NzY=
+  number: 58
+  title: 'epub: use numbered Figure refernces'
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/1
+    html_url: https://github.com/cloudmesh-community/book/milestone/1
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/1/labels
+    id: 3657421
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyMQ==
+    number: 1
+    title: 09-20-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 2
+    closed_issues: 6
+    state: open
+    created_at: '2018-09-16T17:15:11Z'
+    updated_at: '2018-11-20T16:10:15Z'
+    due_on: '2018-09-20T07:00:00Z'
+    closed_at: null
+  comments: 4
+  created_at: '2018-09-18T15:46:27Z'
+  updated_at: '2018-11-14T22:39:59Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "Total effort 1h\r\n- [ ] understand numbered figure refernces, see notation.md\r\
+    \n- [ ] fix all **Figure** occurences in chapters/cloud/chameleon/heat.md\r\n\
+    - [ ] fix all **Figure** occurences in chapters/cloud/chameleon/horizon.md\r\n\
+    - [ ] fix all **Figure** occurences in chapters/cloud/chameleon/user-guide.md\r\
+    \n- [ ] fix all **Figure** occurences in chapters/iaas/aws/aws.md\r\n- [ ] fix\
+    \ all **Figure** occurences in chapters/iaas/azure/azure.md\r\n- [ ] fix all **Figure**\
+    \ occurences in chapters/iaas/mapreduce/amazon-emr-2.md\r\n"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/51
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/51/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/51/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/51/events
+  html_url: https://github.com/cloudmesh-community/book/issues/51
+  id: 360613789
+  node_id: MDU6SXNzdWUzNjA2MTM3ODk=
+  number: 51
+  title: 'Open: OpenAPI in GO'
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/4
+    html_url: https://github.com/cloudmesh-community/book/milestone/4
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/4/labels
+    id: 3657424
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyNA==
+    number: 4
+    title: 10-11-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 5
+    closed_issues: 2
+    state: open
+    created_at: '2018-09-16T17:17:01Z'
+    updated_at: '2018-11-20T15:54:35Z'
+    due_on: '2018-10-11T07:00:00Z'
+    closed_at: null
+  comments: 0
+  created_at: '2018-09-16T07:40:42Z'
+  updated_at: '2018-09-22T21:11:04Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: explore the open api frameworks for GO. E.g. is it possible to use for example
+    swagger code gen to generate GO code. what other tools exists that do that?
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/50
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/50/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/50/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/50/events
+  html_url: https://github.com/cloudmesh-community/book/issues/50
+  id: 360613719
+  node_id: MDU6SXNzdWUzNjA2MTM3MTk=
+  number: 50
+  title: 'Open: REST in go '
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/4
+    html_url: https://github.com/cloudmesh-community/book/milestone/4
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/4/labels
+    id: 3657424
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyNA==
+    number: 4
+    title: 10-11-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 5
+    closed_issues: 2
+    state: open
+    created_at: '2018-09-16T17:17:01Z'
+    updated_at: '2018-11-20T15:54:35Z'
+    due_on: '2018-10-11T07:00:00Z'
+    closed_at: null
+  comments: 0
+  created_at: '2018-09-16T07:39:39Z'
+  updated_at: '2018-09-22T21:10:36Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "Develop a section on how to do a REST service in GO \r\n\r\nUse GOrilla,\
+    \ but also provide an overview of the REST services"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/49
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/49/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/49/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/49/events
+  html_url: https://github.com/cloudmesh-community/book/issues/49
+  id: 360613640
+  node_id: MDU6SXNzdWUzNjA2MTM2NDA=
+  number: 49
+  title: 'Open: Develop a tutorial on the Parallel language constructs in Go'
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/4
+    html_url: https://github.com/cloudmesh-community/book/milestone/4
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/4/labels
+    id: 3657424
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyNA==
+    number: 4
+    title: 10-11-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 5
+    closed_issues: 2
+    state: open
+    created_at: '2018-09-16T17:17:01Z'
+    updated_at: '2018-11-20T15:54:35Z'
+    due_on: '2018-10-11T07:00:00Z'
+    closed_at: null
+  comments: 0
+  created_at: '2018-09-16T07:38:42Z'
+  updated_at: '2018-09-22T21:11:14Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: ''
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/48
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/48/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/48/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/48/events
+  html_url: https://github.com/cloudmesh-community/book/issues/48
+  id: 360613597
+  node_id: MDU6SXNzdWUzNjA2MTM1OTc=
+  number: 48
+  title: 'Open: Develop an introduction to Go'
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: bfeng
+    id: 683246
+    node_id: MDQ6VXNlcjY4MzI0Ng==
+    avatar_url: https://avatars0.githubusercontent.com/u/683246?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/bfeng
+    html_url: https://github.com/bfeng
+    followers_url: https://api.github.com/users/bfeng/followers
+    following_url: https://api.github.com/users/bfeng/following{/other_user}
+    gists_url: https://api.github.com/users/bfeng/gists{/gist_id}
+    starred_url: https://api.github.com/users/bfeng/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/bfeng/subscriptions
+    organizations_url: https://api.github.com/users/bfeng/orgs
+    repos_url: https://api.github.com/users/bfeng/repos
+    events_url: https://api.github.com/users/bfeng/events{/privacy}
+    received_events_url: https://api.github.com/users/bfeng/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/1
+    html_url: https://github.com/cloudmesh-community/book/milestone/1
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/1/labels
+    id: 3657421
+    node_id: MDk6TWlsZXN0b25lMzY1NzQyMQ==
+    number: 1
+    title: 09-20-2018
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 2
+    closed_issues: 6
+    state: open
+    created_at: '2018-09-16T17:15:11Z'
+    updated_at: '2018-11-20T16:10:15Z'
+    due_on: '2018-09-20T07:00:00Z'
+    closed_at: null
+  comments: 4
+  created_at: '2018-09-16T07:38:06Z'
+  updated_at: '2018-11-27T10:41:53Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: ''
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/47
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/47/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/47/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/47/events
+  html_url: https://github.com/cloudmesh-community/book/issues/47
+  id: 360613509
+  node_id: MDU6SXNzdWUzNjA2MTM1MDk=
+  number: 47
+  title: 'Open: Hot cold isles in data center'
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-09-16T07:36:46Z'
+  updated_at: '2018-09-24T16:34:29Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: develop a section about hot cold isles in the data center
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/46
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/46/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/46/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/46/events
+  html_url: https://github.com/cloudmesh-community/book/issues/46
+  id: 360613438
+  node_id: MDU6SXNzdWUzNjA2MTM0Mzg=
+  number: 46
+  title: 'Taken: Virtualization'
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-09-16T07:35:35Z'
+  updated_at: '2018-09-16T07:35:35Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: Develop a section about Virtualization
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/9
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/9/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/9/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/9/events
+  html_url: https://github.com/cloudmesh-community/book/issues/9
+  id: 354504095
+  node_id: MDU6SXNzdWUzNTQ1MDQwOTU=
+  number: 9
+  title: 'Slides to video are not included in the introduction '
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels:
+  - id: 949240182
+    node_id: MDU6TGFiZWw5NDkyNDAxODI=
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/bug
+    name: bug
+    color: d73a4a
+    default: true
+  state: open
+  locked: false
+  assignee:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  milestone: null
+  comments: 0
+  created_at: '2018-08-27T22:40:00Z'
+  updated_at: '2018-09-22T21:13:31Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: see url https://github.com/cloudmesh-community/book/edit/master/chapters/class/e516-summary.md

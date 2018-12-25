@@ -59,6 +59,7 @@
             - chapters/prg/python/opencv/secchi.md
             - chapters/SECTION/SECTION-DATA.md:
                 - chapters/data/formats.md
+                - chapters/data/mongodb.md
                 - chapters/data/mongoengine.md
         - chapters/prg/python/python-wordcount.md
         - chapters/prg/python/numpy/numpy.md
