@@ -175,10 +175,7 @@ the lectures, and will be updated once we have them finalized.
   project report must include references in bibtex
   format. Double-check integration in proceedings.
   
-* Week 15: Apr 19
-
-
-   * Project due data.
+* Week 15: Apr 19 - Project due date.
 
      As the Project will take time to grade all projects are due two
      weeks (yes, you read correctly) before the semester ends.  The
