@@ -28,9 +28,13 @@ are final and can not be impproved by work done later.
 
 To further make sure you progress, you will have to manage a notebook.md 
 file in your github directory (that we will create for you) in which you will 
-update your weekly progress.
+update your weekly progress. If you miss a lecture, it is in your responsibility to 
+inform yourself what was being taught. Attendence and participation will be graded.
 
-* First Week:
+In the following calendar we put in the last day of the week 
+when the assignments are typically due
+
+* Week 1: Jan 11
 
    Get familiar with the class structure. 
    
@@ -54,9 +58,62 @@ update your weekly progress.
    
 :o: Additional information will be posted here, please check weekly.
 
-* Two weeks before seester end:
 
-   * Two weeks before semester end Project due data.
+* Week 2: Jan 18
+
+  TBD
+  
+* Week 3: Jan 25
+
+  TBD
+  * Mon, Jan 21 No classes
+  
+* Week 4: Feb 1
+
+  TBD
+  
+* Week 5: Feb 8
+
+  TBD
+  
+* Week 6: Feb 15
+
+  TBD
+  
+* Week 7: Feb 22
+
+  TBD
+  
+* Week 8: Mar 1
+
+  TBD
+  
+* Week 9: Mar 8
+  
+* Week 10: Mar 15
+
+  March 10 - 17 Lecture free time, no class support. 
+  
+* Week 11: Mar 22
+
+  TBD
+  
+* Week 12: Mar 29
+
+  TBD
+  
+* Week 13: Apr 5
+
+  TBD
+  
+* Week 14: Apr 12
+
+  TBD
+  
+* Week 15: Apr 19
+
+
+   * Project due data.
 
      As the Project will take time to grade all projects are due 
      two weeks (yes, you read correctly) before the semester ends.
@@ -68,4 +125,15 @@ update your weekly progress.
        a cloud service
        
      * any other outstanding task.
+
+* Week 16: Apr 26
+
+  * Project improvement if needed (majority should be finished)
+  * Make sure your project report is showing up correctly in the proceedings
+  
+* Week 16: May 3
+
+  * Project improvement if needed (majority should be finished)
+  * Make sure your project report is showing up correctly in the proceedings
+  
 
