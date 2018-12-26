@@ -395,3 +395,50 @@
         - chapters/faq-523.md
     - chapters/container/glossary.md
     - chapters/SECTION/SECTION-REFERENCES.md
+
+- BOOK_222:
+    - chapters/SECTION/SECTION-QUICK516.md:
+        - chapters/quick222.md
+        - chapters/assignment.md
+        - chapters/class/e222-syllabus.md
+    - $ref:PREFACE
+    - chapters/SECTION/SECTION-OVERVIEW.md:
+        - chapters/class/organization-516.md
+        - chapters/class/plagiarism.md
+        - chapters/cloud/gregor.md
+        - chapters/class/e516-engineering-cloud-computing.md
+        - chapters/class/policies.md
+        - chapters/class/e516-summary.md
+        - chapters/class/volumes.md
+    - chapters/class/e516-definition.md
+    - chapters/cloud/use-cases.md
+    - chapters/cloud/datacenter.md
+    - chapters/arch.md
+    - chapters/nist/bdra.md:
+        - chapters/rest/rest.md
+        - chapters/rest/swagger-codegen.md
+        - chapters/rest/swagger-spec.md
+        - chapters/rest/swagger.md
+        - chapters/prg/github.md
+    - $ref:HYPERVISOR
+    - $ref:IAAS
+    - $ref:MAPREDUCE
+    - $ref:CONTAINER
+    - $ref:SERVERLESS
+    - $ref:DEVTOOLS
+    - $ref:DEVOPS
+    - $ref:PYTHON
+    - $ref:MSG
+    - chapters/ai/ai.md
+    - chapters/SECTION/SECTION-FAQ.md:
+        - chapters/faq.md
+    - chapters/SECTION/SECTION-APPENDIX.md:
+        - chapters/iaas/aws/products.md
+        - chapters/iaas/azure/products.md
+    - chapters/iaas/futuresystems/futuresystems.md
+    - $ref:CHAMELEON
+    - chapters/container/glossary.md
+    - $ref:IN
+    - chapters/SECTION/SECTION-INDEX.md:
+        - chapters/index.md
+    - chapters/SECTION/SECTION-REFERENCES.md
