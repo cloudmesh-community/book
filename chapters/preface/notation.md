@@ -68,12 +68,6 @@ Slides without any audio. They may be faster to download.
 > Sections that neeed modifications ar indicated with :wave:. They
 > have been first set to :smiley:
 
-:+1:
-
-> Section that are good to go (graded) are initailly marked with :+1:
-> by the editor/TAs. The icon does not comment on the quality of the contribution.
-
-
 :warning:
 
 > A warning that we need to look at in more detail.
