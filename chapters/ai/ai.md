@@ -1,4 +1,4 @@
-# Artificial Intelligence Service with REST :o:
+# Artificial Intelligence Service with REST :o: {#sec:ai}
 
 ## Unsupervised Learning
 
