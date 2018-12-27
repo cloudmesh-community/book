@@ -130,3 +130,34 @@ alias d='make draft; make view'
 
 This allows you to typ `m` for the main volume and `q` for the draft.
 Please note that all artifacts are written into the dest folder.
+
+
+## Creating a new book
+
+Let us assume you like to create a new book. The easiest way to start is to copy from an existing book. However, make sure not to copy old files in dest. Let us assume you like to call the book gregor and you coppy from the 222 directory.
+
+You have to do the following
+
+```bash
+$ cd 222
+$ make clean
+$ cd ..
+$ cp -r 222 gregor
+```
+
+Now edit the file chapters.yaml and copy the section with `BOOK_222=` to 
+`BOOK_gregor`. Make modifications to the outline as you see fit.
+
+Now you can create the book with
+
+```bash
+$ cd gregor
+$ make update
+$ make new
+```
+
+
+$ cd gregor
+
+
+
