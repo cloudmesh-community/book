@@ -166,7 +166,4 @@ $ make new
 ```
 
 
-$ cd gregor
-
-
 
