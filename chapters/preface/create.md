@@ -4,6 +4,13 @@ Although you will never likely to create the epub from source, we have
 included this section for our most advanced contributors and those
 that update the epub on github.
 
+Please note that you must have at least pandoc version 2.2.3 installed. 
+Earlier versions will not work. YOu can check the version of pandoc with 
+
+```bash
+$ pandoc --version
+```
+
 ## OSX Requirements
 
 This is just a guess I for got how to install all of this, it may be
@@ -11,8 +18,10 @@ documented in another md file, grep -R for brew
 
 ```bash
 $ brew install graphviz
-$ brew install pandoc # needs version >2.2.3 of pandoc see travis for
-                      # proper install if brew does not work
+# needs version >2.2.3 of pandoc see travis.yml for
+# proper install if brew does not work
+$ brew install pandoc 
+                      
 $ brew install pandoc-citeproc
 $ brew install node
 $ npm install --global mermaid-filter
