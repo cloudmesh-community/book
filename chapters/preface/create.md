@@ -46,11 +46,11 @@ $ npm install --global pandoc-index
 
 Books are organize in directories. We currently have
 
-
     ./book/cloud/
     ./book/big-data-applications/
     ./book/pi
-
+    ./book/writing
+    ./book/222
 
 To compile a book go to the directory and make it. Lets assume you
 like to create the cloud book for 516
@@ -78,7 +78,6 @@ otherwise you can just use
 ```
 $ make 
 ```
-
 
 ## Publishing the book to github
 
