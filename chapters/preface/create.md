@@ -44,6 +44,12 @@ $ npm install --global pandoc-index
 
 ## Creating a book
 
+First you have to check out the book source from github with:
+
+```bash
+git clone git@github.com:cloudmesh-community/book.git
+```
+
 Books are organize in directories. We currently have
 
     ./book/cloud/
@@ -77,6 +83,16 @@ otherwise you can just use
 
 ```
 $ make 
+```
+
+The structure of the books is maintained in chapters.yaml.
+
+In case you add a new chapter, you have to say 
+
+```bash
+$ make update
+$ make new
+$ make view
 ```
 
 ## Publishing the book to github
