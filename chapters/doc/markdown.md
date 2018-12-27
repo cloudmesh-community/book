@@ -239,6 +239,20 @@ Please find some links on hwo to use markdown to create slides
 * GitPitch <https://github.com/gitpitch/gitpitch/wiki/Slide-Markdown>
 
 
+### Markdown to PPTX
+
+`Pandoc` provides the ability to simply export markdown to power
+point. This could be useful for transitioning or first developing
+content in markdown to powerpoint. Simply use
+
+```
+pandoc filename.md -o fiename.pptx
+```
+
+and you will convert the markdown to a simple powerpoint that you can
+than improve. The initial improvement is best done in the overview
+mode of powerpoint so you can organize the bullet points and slides
+better in case the pagination is not done right.
 
 ## Checking if the Markdown is valid?
 

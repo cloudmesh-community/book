@@ -1,9 +1,13 @@
-Plagiarism
-----------
+# Plagiarism
 
-We start with the review of a most important topic.
+We start our discussion with the review of a most important
+topic. Typically you have had alreday a course that covers the topic
+of plagiarism. However, we like you to review this chapter anyways and
+provide us with a proof that you passed the plagiarizm test. Having
+done so will avoid any confusion about if you understand what
+plagiarizm is or not.
 
-### Plagiarism Definition
+## Plagiarism Definition
 
 In academic life it is important to understand and avoid plagiarism. The
 dictionary defines plagiarism as follows
@@ -14,7 +18,7 @@ pla$\cdot$gia$\cdot$rism
 >   "the practice of taking someone else's work or ideas and passing
 >   them off as one's own."
 
-### Plagiarism Policies
+## Plagiarism Policies
 
 Organizations and universities will have policies in place do address
 plagiarism. An example is provided for Indiana University
@@ -57,7 +61,7 @@ the University can provide assistance. If a student is in doubt and asks
 for help this is not considered at that time plagiarism.
 
 As you can see from the previous policies, the faculty do not have any
-choice but reporting real cases of plagiarism to the university
+choice but reporting cases of plagiarism to the university
 administration. Thus you must not hold them personally responsible as
 this is part of the tasks they are required to do if they like it or
 not. Instead, it is **the responsibility of the authors of the
@@ -66,8 +70,9 @@ class that writes a paper or project report this naturally also all
 applies to you. In addition, if you work in a team you need to assure
 the entire team addresses plagiarism appropriately.
 
-In practice this means that the teachers of a course expect yo know
-plagiarism and you need to be informed about it. This is typically done
+In practice this means that the teachers of a course expect you know
+what plagiarism is and you need to be abble to apply it in such a form
+in your writings that it does not occur. This is typically taught
 in other courses. However, as it is often overlooked by the student we
 are pointing it out here so we can make sure you contribute to courses
 that require you to write papers and reports. This also means you can
@@ -76,13 +81,17 @@ what it is, know how to detect it and know how to avoid it. The
 resources provided next will give you the necessary tools and
 background.
 
-### Plagiarism Resources
+## Plagiarism Resources
 
 The [School of Education at Indiana
 University](http://education.indiana.edu/) has a significant set of
 resources to get educated about plagiarism. These resources are intended
-to "preparing educators, advancing knowledge, and improving
-education" [@www-iu-plagiarism]. This includes:
+to
+
+> "preparing educators, advancing knowledge, and improving
+> education" [@www-iu-plagiarism].
+
+This includes:
 
 *   [IU Definition](https://www.indiana.edu/~istd/definition.html) of
     Plagiarism from Student Code of Conduct
@@ -110,7 +119,7 @@ Web pages dealing with plagiarism. These include:
 *   [Understanding Plagiarism](https://www.indiana.edu/~tedfrick/plagiarism/)
 
 
-### How to Recognize Plagiarism
+## How to Recognize Plagiarism
 
 We are listing fifteen patterns of plagiarism that are defined at
 
@@ -151,11 +160,11 @@ Table: Plagiarism [@www-plagiarism-pattern]
   [Parroted Paraphrase](patternMindlessParaphrase.html)   non-plagiarism   appears to be paraphrasing, and technically may not be plagiarism ...
 
 
-### Citation Styles
+## Citation Styles
 
 Each journal or workshop and books will have their own citation
 styles. Often we find styles such as APA and Harvard. However these
-styles are often not use in scientific writing and tutorials that use
+styles are often not used in scientific writing and tutorials that use
 them may provide you with information that is not applicable to other
 publications. Hence you need to review the rules for your specific
 publication venue carefully. In some cases this will lead to a
@@ -175,11 +184,25 @@ numbered. Hence this will be sufficient:
 Please be reminded that non of our assignments will use APA style
 citing. We use numbered ACM or IEEE proceedings and journal citations.
 
-### Exercise
+## Exercise
 
-Plagiarism.1
+Plagiarism.1:
 
-: Pass the plagiarism certification. This test is mandatory for all
-  students taking this class. Typically it should have been done as part
-  of another class, but we found through experience that some student
-  that have not taken the certification have issues with this topic.
+: Read this document in order for you to undesrtand what plagiarizm is
+  and how to cite
+
+Plagiarism.2:
+
+: What is the difference between APA and IEEE style citing? Why do you
+  think in science a numbered citing is often prefered?
+
+Plagiarism.3:
+
+: Pass the
+  [plagiarism certification](https://www.indiana.edu/~academy/firstPrinciples/certificationTests/index.html).
+  This test is mandatory for all students taking this class. Typically
+  it should have been done as part of another class, but we found
+  through experience that some student that have not taken the
+  certification have issues with this topic. Please note, that the
+  test requires you to prepare for it with the material that is
+  provided on the education web page. 

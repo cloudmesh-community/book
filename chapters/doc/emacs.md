@@ -1,21 +1,35 @@
 Emacs
 -----
 
+Emacs is one of the most powerfull editors. It originated from MIT AI Lab's 
+Incompatible Timesharing System (ITS) while profiding a collection of 
+macros used for editing. The name *Emacs* originates as an abbreviation for 
+*Editor MACroS*. modern version of Emacs was rewritten in 1984 and since 
+than has been evolved and maintained.
+
+A number of extensive documentation is available at the following links 
+according to the GNU Emacs Home page.
+
+* [GNU Emacs manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html)
+* [An Introduction to Programming in Emacs Lisp](https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html)
+* [Emacs Lisp Reference Manual](https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html)
+* [Other Emacs manuals](Read Online)
+
 One of the most useful short manuals for emacs is the following reference
 card. It takes some time to use this card efficiently, but the most
 important commands are written on it. Generations of students have
 literally been just presented with this card and they learned emacs
 from it.
 
--   <https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf>
+* <https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf>
 
 There is naturally also additional material available and a great
 manual. You could also look at
 
--   <https://www.gnu.org/software/emacs/tour/>
+* <https://www.gnu.org/software/emacs/tour/>
 
 From the last page we have summarized the most useful and **simple**
-features. And present them here. One of the hidden gems of emacs is the
+features. And present them here. One of the gems of emacs is the
 ability to recreate replay able macros which we include here also. You
 ought to try it and you will find that for data science and the cleanup
 of data emacs (applied to smaller datasets) is a gem.
@@ -77,10 +91,12 @@ a wrong key:
 
 Modes
 
-"Every buffer has an associated major mode, which alters certain
-behaviors, key bindings, and text display in that buffer. The idea is to
-customize the appearance and features available based on the contents of
-the buffer." modes are typically activated by ending such as `.py`,
+> "Every buffer has an associated major mode, which alters certain
+> behaviors, key bindings, and text display in that buffer. The idea is to
+> customize the appearance and features available based on the contents of
+> the buffer." 
+
+modes are typically activated by ending such as `.py`,
 `.java`, `.rst`, ...
 
   Key                    Description
@@ -98,6 +114,7 @@ Instead of us designing our own video, we point to a community tutorial
 such as
 
 \video{Cloud}{18:04}{Emacs org-mode}{https://www.youtube.com/watch?v=Kde5YVUwDTQ}{Youtube}
+
 ### Programming Python with Emacs
 
 Emacs comes by default with syntax highlighting for python when you
@@ -106,13 +123,12 @@ python ide that you can use and customize.
 
 Python auto-completion for Emacs:
 
--   <https://github.com/tkf/emacs-jedi>
+*   <https://github.com/tkf/emacs-jedi>
 
 Some more information is available at
 
--   <https://realpython.com/blog/python/emacs-the-best-python-editor/>
-
--   <https://www.emacswiki.org/emacs/PythonProgrammingInEmacs>
+*   <https://realpython.com/blog/python/emacs-the-best-python-editor/>
+*   <https://www.emacswiki.org/emacs/PythonProgrammingInEmacs>
 
 ### Emacs Keys in a Terminal
 
@@ -120,12 +136,16 @@ One of the real great features of knowing emacs is that you can set all
 your editors to emacs shortcuts. This includes pyCharm, but also bash.
 In bash you simply say
 
-    set -o emacs
+```bash
+$ set -o emacs
+```
 
 in your bash prompt. Additionally, if you do not have a window systems
 configured, you can run emacs directly in the terminal with
 
-    emacs -nw
+```bash
+$ emacs -nw
+```
 
 This you can log in to a remote computer and if it has emacs installed.
 Use it in the terminal. This would replace editors such as vi, vim,
@@ -137,7 +157,7 @@ LaTeX is directly supported by emacs and nothing has to be changed.
 However, a collection of information about additional LaTeX features for
 emacs is available at
 
--   <https://www.emacswiki.org/emacs/LaTeX>
+*  <https://www.emacswiki.org/emacs/LaTeX>
 
 Of interest are for example also
 
@@ -148,11 +168,15 @@ Of interest are for example also
 
 However instead of previews and whizzy tex we recommend to use
 
--   <https://www.emacswiki.org/emacs/LatexMk>
+* <https://www.emacswiki.org/emacs/LatexMk>
 
 which comes pre-installed and allows you to do editing in one terminal,
 while previewing the update on change in another window.
 
-LatexMk is all integrated in our report Makefiles and the Book format,
-so you will be able to use this immediately. This is similar to share
-latex, but much faster and without collaborators editing the same file.
+### LateXMk and Emacs
+
+LatexMk allows one to outomatically compike and preview a document 
+in case theire source is changed. THus if you run LateXMk and edit 
+your files for example with emacs, The PDF viewer such as skim will 
+automatically update the document.
+This is similar to overleaf, but much faster and without collaborators editing the same file.

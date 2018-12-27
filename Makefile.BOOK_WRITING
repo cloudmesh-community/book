@@ -1,0 +1,76 @@
+INDEX=\
+  chapters/SECTION/SECTION-PREFACE.md\
+  chapters/version.md\
+  chapters/preface/create.md\
+  chapters/preface/reader.md\
+  chapters/preface/notation.md\
+  chapters/SECTION/SECTION-WRITING.md\
+  chapters/doc/plagiarism.md\
+  chapters/doc/writing-markdown.md\
+  chapters/doc/markdown.md\
+  chapters/doc/acknowledgement.md\
+  chapters/doc/emacs.md\
+  chapters/doc/ppt.md\
+  chapters/doc/graphviz.md\
+  chapters/SECTION/SECTION-REFERENCES.md
+
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/create.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/SECTION/SECTION-WRITING.md dest/chapters/doc/plagiarism.md dest/chapters/doc/writing-markdown.md dest/chapters/doc/markdown.md dest/chapters/doc/acknowledgement.md dest/chapters/doc/emacs.md dest/chapters/doc/ppt.md dest/chapters/doc/graphviz.md dest/chapters/SECTION/SECTION-REFERENCES.md
+	@echo "updated modified chapters"
+
+
+dest/chapters/SECTION/SECTION-PREFACE.md: ../chapters/SECTION/SECTION-PREFACE.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-PREFACE.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-PREFACE.md 1
+
+dest/chapters/version.md: ../chapters/version.md
+	../bin/markup-single.py ../chapters/version.md 2
+	../bin/header.py dest/chapters/version.md 2
+
+dest/chapters/preface/create.md: ../chapters/preface/create.md
+	../bin/markup-single.py ../chapters/preface/create.md 2
+	../bin/header.py dest/chapters/preface/create.md 2
+
+dest/chapters/preface/reader.md: ../chapters/preface/reader.md
+	../bin/markup-single.py ../chapters/preface/reader.md 2
+	../bin/header.py dest/chapters/preface/reader.md 2
+
+dest/chapters/preface/notation.md: ../chapters/preface/notation.md
+	../bin/markup-single.py ../chapters/preface/notation.md 2
+	../bin/header.py dest/chapters/preface/notation.md 2
+
+dest/chapters/SECTION/SECTION-WRITING.md: ../chapters/SECTION/SECTION-WRITING.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-WRITING.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-WRITING.md 1
+
+dest/chapters/doc/plagiarism.md: ../chapters/doc/plagiarism.md
+	../bin/markup-single.py ../chapters/doc/plagiarism.md 2
+	../bin/header.py dest/chapters/doc/plagiarism.md 2
+
+dest/chapters/doc/writing-markdown.md: ../chapters/doc/writing-markdown.md
+	../bin/markup-single.py ../chapters/doc/writing-markdown.md 2
+	../bin/header.py dest/chapters/doc/writing-markdown.md 2
+
+dest/chapters/doc/markdown.md: ../chapters/doc/markdown.md
+	../bin/markup-single.py ../chapters/doc/markdown.md 2
+	../bin/header.py dest/chapters/doc/markdown.md 2
+
+dest/chapters/doc/acknowledgement.md: ../chapters/doc/acknowledgement.md
+	../bin/markup-single.py ../chapters/doc/acknowledgement.md 2
+	../bin/header.py dest/chapters/doc/acknowledgement.md 2
+
+dest/chapters/doc/emacs.md: ../chapters/doc/emacs.md
+	../bin/markup-single.py ../chapters/doc/emacs.md 2
+	../bin/header.py dest/chapters/doc/emacs.md 2
+
+dest/chapters/doc/ppt.md: ../chapters/doc/ppt.md
+	../bin/markup-single.py ../chapters/doc/ppt.md 2
+	../bin/header.py dest/chapters/doc/ppt.md 2
+
+dest/chapters/doc/graphviz.md: ../chapters/doc/graphviz.md
+	../bin/markup-single.py ../chapters/doc/graphviz.md 2
+	../bin/header.py dest/chapters/doc/graphviz.md 2
+
+dest/chapters/SECTION/SECTION-REFERENCES.md: ../chapters/SECTION/SECTION-REFERENCES.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-REFERENCES.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-REFERENCES.md 1
+
