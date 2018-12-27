@@ -1,5 +1,4 @@
-Emacs
------
+# Emacs
 
 Emacs is one of the most powerfull editors. It originated from MIT AI Lab's 
 Incompatible Timesharing System (ITS) while profiding a collection of 
@@ -105,7 +104,7 @@ modes are typically activated by ending such as `.py`,
   `M-x auto-fill-mode`   Wraps your lines automatically when they get longer than 70 characters.
   `M-x flyspell-mode`    Highlights misspelled words as you type.
 
-### Org Mode
+## Org Mode
 
 Emacs has some very advanced features that you can activate via a mode.
 One such feature is to organize a TODO list via org-mode.
@@ -115,7 +114,7 @@ such as
 
 \video{Cloud}{18:04}{Emacs org-mode}{https://www.youtube.com/watch?v=Kde5YVUwDTQ}{Youtube}
 
-### Programming Python with Emacs
+## Programming Python with Emacs
 
 Emacs comes by default with syntax highlighting for python when you
 edit a `.py` file. This is really all you need. It also comes with a
@@ -130,7 +129,7 @@ Some more information is available at
 *   <https://realpython.com/blog/python/emacs-the-best-python-editor/>
 *   <https://www.emacswiki.org/emacs/PythonProgrammingInEmacs>
 
-### Emacs Keys in a Terminal
+## Emacs Keys in a Terminal
 
 One of the real great features of knowing emacs is that you can set all
 your editors to emacs shortcuts. This includes pyCharm, but also bash.
@@ -151,7 +150,7 @@ This you can log in to a remote computer and if it has emacs installed.
 Use it in the terminal. This would replace editors such as vi, vim,
 nano, pico or others that work in a terminal.
 
-### LaTeX and Emacs
+## LaTeX and Emacs
 
 LaTeX is directly supported by emacs and nothing has to be changed.
 However, a collection of information about additional LaTeX features for
@@ -173,7 +172,7 @@ However instead of previews and whizzy tex we recommend to use
 which comes pre-installed and allows you to do editing in one terminal,
 while previewing the update on change in another window.
 
-### LateXMk and Emacs
+## LateXMk and Emacs
 
 LatexMk allows one to outomatically compike and preview a document 
 in case theire source is changed. THus if you run LateXMk and edit 
