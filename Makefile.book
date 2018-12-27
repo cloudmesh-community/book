@@ -131,6 +131,7 @@ ifeq ($(OS), linux)
 endif
 	make -f Makefile index
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
+	cp dest/$(FILENAME).epub ..
 
 pdf: epub
 	cd dest; ebook-convert $(FILENAME).epub $(FILENAME).pdf --embed-all-fonts

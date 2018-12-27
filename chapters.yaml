@@ -450,3 +450,19 @@
     - chapters/SECTION/SECTION-INDEX.md:
         - chapters/index.md
     - chapters/SECTION/SECTION-REFERENCES.md
+
+- BOOK_WRITING:
+    - chapters/SECTION/SECTION-PREFACE.md:
+        - chapters/version.md
+        - chapters/preface/create.md
+        - chapters/preface/reader.md                
+        - chapters/preface/notation.md
+    - chapters/SECTION/SECTION-WRITING.md:
+        - chapters/doc/plagiarism.md
+        - chapters/doc/writing-markdown.md
+        - chapters/doc/markdown.md
+        - chapters/doc/acknowledgement.md
+        - chapters/doc/emacs.md
+        - chapters/doc/ppt.md
+        - chapters/doc/graphviz.md
+    - chapters/SECTION/SECTION-REFERENCES.md

@@ -1,5 +1,4 @@
-Communicating Research in Other Ways
-------------------------------------
+# Communicating Research in Other Ways
 
 Naturally, writing papers is not the only way to communicate your
 research with others. We find that today we see additional pathways for

@@ -1,4 +1,4 @@
-BOOK=BOOK_222
-FILENAME=vonLaszewski-e222
+BOOK=BOOK_WRITING
+FILENAME=vonLaszewski-writing-markdown
 
 include ../Makefile.book
