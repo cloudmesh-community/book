@@ -8,13 +8,12 @@ INDEX=\
   chapters/doc/plagiarism.md\
   chapters/doc/writing-markdown.md\
   chapters/doc/markdown.md\
-  chapters/doc/acknowledgement.md\
   chapters/doc/emacs.md\
   chapters/doc/ppt.md\
   chapters/doc/graphviz.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/create.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/SECTION/SECTION-WRITING.md dest/chapters/doc/plagiarism.md dest/chapters/doc/writing-markdown.md dest/chapters/doc/markdown.md dest/chapters/doc/acknowledgement.md dest/chapters/doc/emacs.md dest/chapters/doc/ppt.md dest/chapters/doc/graphviz.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/create.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/SECTION/SECTION-WRITING.md dest/chapters/doc/plagiarism.md dest/chapters/doc/writing-markdown.md dest/chapters/doc/markdown.md dest/chapters/doc/emacs.md dest/chapters/doc/ppt.md dest/chapters/doc/graphviz.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -53,10 +52,6 @@ dest/chapters/doc/writing-markdown.md: ../chapters/doc/writing-markdown.md
 dest/chapters/doc/markdown.md: ../chapters/doc/markdown.md
 	../bin/markup-single.py ../chapters/doc/markdown.md 2
 	../bin/header.py dest/chapters/doc/markdown.md 2
-
-dest/chapters/doc/acknowledgement.md: ../chapters/doc/acknowledgement.md
-	../bin/markup-single.py ../chapters/doc/acknowledgement.md 2
-	../bin/header.py dest/chapters/doc/acknowledgement.md 2
 
 dest/chapters/doc/emacs.md: ../chapters/doc/emacs.md
 	../bin/markup-single.py ../chapters/doc/emacs.md 2
