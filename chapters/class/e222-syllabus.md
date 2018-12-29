@@ -197,6 +197,7 @@ that missed that lecture are responible for working with TAs to catch up.
   * Numpy :+1:
   * Scipy :+1:
   * OpenCV :+1:
+  * ScikitLearn :+1:
     
 * Linux
    
