@@ -3,7 +3,7 @@
 An important part of any scientific research is to communicate and document it.
 Previously we used LaTeX in this class to provide the ability to
 contribute professional looking documents. As part of this we also
-noticed that **any*document from **any*student that ever submitted a
+noticed that **any** document from **any** student that ever submitted a
 document in MSWord was inferior to those using structured
 documents such as provided by LaTeX or mrkdown. Although we would have loved to 
 continue our work in LaTeX, a small number of students made the full 
