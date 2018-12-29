@@ -154,25 +154,39 @@ that missed that lecture are responible for working with TAs to catch up.
 * Introduction - Part T - Security Released
 * Introduction - Part U - Fault Tolerance
 
-#### Project  
-  
-* Assignment: AI REST Services
-  
 #### IaaS
  
 * Virtual Machines
     
-  * Cloudmesh CM4 - virtualbox
+  * Cloudmesh CM4 - virtualbox :o:
   * Assignment
        
 * Containers
     
-  * Docker
+  * Docker :o:
   * Assignment
 
+#### Project  
+  
+* Assignment: AI REST Services :o:
+
+* REST
+    
+  * Eve
+  * OpenAPI
+  * Assignment
+
+#### PaaS
+
+* Background about Hadoop, Spark and Twister
+
+  * Hadoop :o: gcf
+  * Spark :o: gcf
+  * Twister :o: gcf
+ 
 #### Python Programming for Beginners
 
-* Python 
+* Python :o:
   
   * Assignment
   * Why not anaconda?
@@ -180,29 +194,25 @@ that missed that lecture are responible for working with TAs to catch up.
   * pyenv
   * pip
   * Language
-  * Numpy
-  * Scipy
-  * OpenCV
+  * Numpy :+1:
+  * Scipy :+1:
+  * OpenCV :+1:
+  * ScikitLearn :+1:
     
 * Linux
    
    * Assignment
-   * SSH 
+   * SSH :+1: :o:
 
-* REST
-    
-  * Eve
-  * OpenAPI
-  * Assignment
  
-#### Arificial Inteligence 
+#### Artificial Inteligence 
 
 See #sec:ai
-
-* :o: Theory 
-* :o: Unsupervised Learning
-* :o: Deep Learning
-* :o: Forecasting 
+* :+1: overview of AI for this class
+* :o: :+1: Theory 
+* :o: :+1: Unsupervised Learning
+* :o: :1+: Deep Learning
+* :o: :+1: Forecasting 
   
 
 
