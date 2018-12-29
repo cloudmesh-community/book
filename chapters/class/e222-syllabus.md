@@ -48,19 +48,38 @@ Dr. Fox or Dr. von Laszewski.
 
 The topics covered in thie class include.
 
-* Introduction to REST: Theory and Practice - develop a REST service
-* Introduction to Clouds: Theory and Practice - create via a program virtual machines and start
-on them the REST service
-* Introduction to Kubernetes: Theory and Practice - create a container that runs a REST service
-* Introduction to Advanced AI: Integrate your AI engine into a REST service and run on a
-cloud and in Kubernetes
+* Introduction to REST:
 
-:o: If time allows we may in addition also cover:
+  * Theory
+  * Practice: develop a REST service with OpenAPI
 
-* :o: Introduction to Hadoop: Theory and Practice - Run Hadoop in a container; run hadoop on a
-futuresystems cluster
-* :o: Cloud Edge Computing: Theory and Practice - Integrate Sensordata into Cloud Services via REST
-and MQTT
+* Introduction to Clouds:
+
+  * Theory: Virtual machines
+  * Practice: Manage virtual machines with Virtualbox
+  * Practice: Manage virtual machines with Cloudmesh v4
+  * Theory: Containers
+
+* Introduction to Cloud Platforms:
+
+* Theory: Background to Hadoop
+* Theory: Background to Spark
+* Theory: Background to Twister
+
+* Introduction to Advanced AI:
+
+  * Theory Introduction to basic AI
+  * Practice: Develop a non trivial  AI REST service
+
+If time allows we may in addition also cover. However if you are
+interested the following could be chosen by you as project.
+
+* Cloud Edge Computing:
+
+   * Theory: Raspberry PI as Platform
+   * Project (if elected): Document the build a 100 node Raspberry PI
+     Cluster
+   * Project: Environmental Robot Boat
 
 ## Grading
 
@@ -105,13 +124,13 @@ com/cloudmesh/sp17-i524/blob/master/paper1/proceedings.pdf
 ## Week 1. Administration
 
 We have explained how to use piazza which we will be using for class communication. Students
-that missed that lecture are responible for working with TAs to catch up.
+that missed that lecture are responsible for working with TAs to catch up.
 
 
  
 ### Course Topics - Intelligent Systems Engineering II
 
-#### Administratiion (Week 1)
+#### Administration (Week 1)
 
 * Accounts
 
@@ -124,7 +143,7 @@ that missed that lecture are responible for working with TAs to catch up.
 #### Scientific Writing (Week 1)
 
 * Bio (Due Week 1)
-* Plagiarizm (Due Week 3)
+* Plagiarism (Due Week 3)
 * :o: Scientific Writing with Markdown
 * :o: bibtex
 * :o: jabref 
@@ -158,7 +177,7 @@ that missed that lecture are responible for working with TAs to catch up.
  
 * Virtual Machines
     
-  * Cloudmesh CM4 - virtualbox :o:
+  * Cloudmesh CM4 - Virtualbox :o:
   * Assignment
        
 * Containers
@@ -205,7 +224,7 @@ that missed that lecture are responible for working with TAs to catch up.
    * SSH :+1: :o:
 
  
-#### Artificial Inteligence 
+#### Artificial Intelligence 
 
 See #sec:ai
 * :+1: overview of AI for this class
@@ -219,17 +238,17 @@ See #sec:ai
 ### Week 3. REST for Cloud computing
 
 We will be starting the class with introducing you to REST services that provide a foundation for
-setting up services in the cloud and to intercat with these services. As part of this class we will be
+setting up services in the cloud and to interact with these services. As part of this class we will be
 revisiting the REST services and use them to deploy them on a cloud as well as develop our own
 AI based rest services in the second half of the class.
-To get you started you need to read the follwoing sections:
+To get you started you need to read the following sections:
 An introduction to rest is provided in Section 34. It also provides a video recording of the material
 that was presented in class.
 
 #### Overview of REST
  
 Next, we present you with information on how to easily create a rest service with FlaskRESTFUL
-a libraruy that makes the creation of web services in python useing an object oriented approach
+a library that makes the creation of web services in python using an object oriented approach
 easy. A Lab was held that introduced you to developing such a service
 
 #### Flask RESTful Services
@@ -253,13 +272,13 @@ what you like to present, but we want that all students in class do a different 
 working with you which information you expose. A detailed Assignment is posted and coordinated
 in piazza about this. YOu will be writing two services. One that uses flask features, the other one
 that uses a database schema using Eve. The entire class can openly collaborate with each other on
-this task. The code is to be checcked in into your github repository. Information of interrest include
+this task. The code is to be checked in into your github repository. Information of interrest include
 memory available of the computer, cpu type and so on. This is not read from a text file but life
 queried.
 
 TODO: Tyler:Describe how each student gets a unique assignment. Coordinate that assignment.
-The link to the assignmnet in piazza is below, directions for each student will come out the week of
-Febuary 4, 2018.
+The link to the assignment in piazza is below, directions for each student will come out the week of
+February 4, 2018.
 
 
 * https://piazza.com/class/jc9dcfnbi045kv?cid=27
@@ -283,10 +302,11 @@ The material includes:
 
 Technologies covered: piazza, git, pycharm, virtualbox, pyenv, python
 
-Exersise: Continue to work on REST service.
+Exercise: Continue to work on REST service.
 
 #### Week 5. Introduction to simple Containers
-We will be providing an introduction to containers and container technologies. Excercises will
+
+We will be providing an introduction to containers and container technologies. Exercises will
 include to run the REST services that we developed earlier to start in containers and utilize them.
 
 * Motivation - Microservices
@@ -314,13 +334,13 @@ part/syllabus.tex
 
 #### Week 8. Overview of Cloud Services
 
-We will be introducing you how to use Cloud services offored via a number of Cloud providers.
+We will be introducing you how to use Cloud services offered via a number of Cloud providers.
 Topics covered include: overview of AWS, overview of Openstack, libcloud, and boto
 
 #### Week 9. Multi cloud environments
 
 We will teach you how to create a multi cloud shell while leveraging an abstract programming
-interface to easily switch betwen multiple clouds. You can practically participate in helping to
+interface to easily switch between multiple clouds. You can practically participate in helping to
 develop interfaces to AWS, Azure, and OpenStack. As you have also worked with containers, you
 can develop such interfaces also for containers including frameworks such as kubernetes. We will
 be using libcloud to simplify the abstraction.
@@ -328,16 +348,16 @@ be using libcloud to simplify the abstraction.
 #### Week 10. Cloud Data and Applications
 
 We will cover a number of Application examples for Cloud computing. In the second part we will
-focus on CLoud Data Services and how we access data on the cloud. Exercises will include moving
+focus on Cloud Data Services and how we access data on the cloud. Exercises will include moving
 data between data services. THis includes your own computer, box and google which both are
 offered at IU.
 
 #### Other weeks
 
-All excersises in these weeks will develop REST services that expose machine leraning algorithms
+All exercises in these weeks will develop REST services that expose machine leraning algorithms
 as service. Data will be either passed along directly through parameters to the call, or on case of
 large data a URL to the data source. The lessons from the previous weeks will be helping you to
-achive this. It is not sufficient to just run the algorithms, but you must be integrating them into a
+achieve this. It is not sufficient to just run the algorithms, but you must be integrating them into a
 REST service.
 Other weeks are not yet included here but will cover Artificial Intelligence.
 
@@ -358,7 +378,7 @@ section.
 * Managing Bibliographies Week 4
 * Set up the git repository 
 
-If a paper is plagiarised you will receive an **F** and it is reported based on
+If a paper is plagiarized you will receive an **F** and it is reported based on
 University policies.
 
 #### Theory Track
