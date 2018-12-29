@@ -205,10 +205,10 @@ that missed that lecture are responible for working with TAs to catch up.
    * SSH :+1: :o:
 
  
-#### Arificial Inteligence 
+#### Artificial Inteligence 
 
 See #sec:ai
-
+* :+1: overview of AI for this class
 * :o: :+1: Theory 
 * :o: :+1: Unsupervised Learning
 * :o: :1+: Deep Learning
