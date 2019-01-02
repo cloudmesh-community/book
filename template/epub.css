@@ -20,27 +20,6 @@
   src:url("../fonts/OpenSans-Light.ttf");
 }
 
-@font-face {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  src:url("../fonts/Oswald-Regular.ttf");
-}
-
-@font-face {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: bold;
-  src:url("../fonts/Oswald-Bold.ttf");
-}
-
-@font-face {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: lighter;
-  src:url("../fonts/Oswald-Light.ttf");
-}
-
 body {
   margin: 1%;
   text-align: justify;

@@ -1,17 +1,20 @@
 ---
-title: Cloud Computing
+title: Scientific Writing with Markdown
 creator:
 - role: editor
   text: Gregor von Laszewski
-description: Big Data Applications
+description: A booklet about how to use markdown to write scientific papers and reports
 rights: (c) Gregor von Laszewski, 2018
 language: en-US
 stylesheet: template/epub.css
+header-includes:
+   - \usepackage{coloremoji}
 cover-image: cover/cover.jpg
 fignos-caption-name: Figure
 fignos-plus-name: Figure
 xnos-number-sections: True
 keywords: [cloud, container]
 abstract: |
-  This book contains the lecture notes for e516
+  This book contains the informsation on hwo to write scientific
+  papers and reports
 ...
