@@ -176,6 +176,9 @@ latex-pdf:
 	cd dest; pandoc $(RESOURCE) -V pagestyle:headings -V secnumdepth:5 -V geometry:margin=1in --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
 
 
+e-pdf:
+	cd dest; pandoc $(RESOURCE) -V pagestyle:headings -V secnumdepth:5 -V geometry:margin=1in --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
+
 
 tex:
 	cd dest; pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)

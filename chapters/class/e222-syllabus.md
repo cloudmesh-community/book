@@ -45,20 +45,37 @@ Dr. Fox or Dr. von Laszewski.
 * Final project
 
 ## Covered Topics
+f I forgot anything let me know:
 
-The topics covered in thie class include.
+Order can be changed … as we see fit.
+
+## Covered Topics
+
+The topics covered in the class include.
+
+* Review of Python for Intelligent Systems Engineering:
+
+ * Theory: basic Python Language
+ * Theory: pyenv, setup.py, modules
+ * Practice: Living without anaconda
 
 * Introduction to REST:
 
-  * Theory
-  * Practice: develop a REST service with OpenAPI
+ * Theory: Overview of REST, Eve, OpenAPI
+ * Practice: develop a REST service with OpenAPI
+
+* Introduction to Scientific Writing:
+
+ * Theory: Scientific writing with markdown
+ * Practice: Contribute a significant chapter to the book (as a group)
+ * Practice: Project Report (as a group)
 
 * Introduction to Clouds:
 
-  * Theory: Virtual machines
-  * Practice: Manage virtual machines with Virtualbox
-  * Practice: Manage virtual machines with Cloudmesh v4
-  * Theory: Containers
+ * Theory: Virtual machines
+ * Practice: Manage virtual machines with Virtualbox
+ * Practice: Manage virtual machines with Cloudmesh v4
+ * Theory: Containers
 
 * Introduction to Cloud Platforms:
 
@@ -66,21 +83,21 @@ The topics covered in thie class include.
 * Theory: Background to Spark
 * Theory: Background to Twister
 
-* Introduction to Advanced AI:
+* Review of AI for AI-Cloud Computing Integration:
 
-  * Theory Introduction to basic AI
-  * Practice: Develop a non trivial  AI REST service
+ * Theory Introduction to basic AI
+ * Practice: Develop a non trivial  AI REST service
 
 If time allows we may in addition also cover. However if you are
 interested the following could be chosen by you as project.
 
 * Cloud Edge Computing:
 
-   * Theory: Raspberry PI as Platform
-   * Project (if elected): Document the build a 100 node Raspberry PI
-     Cluster
-   * Project: Environmental Robot Boat
-
+  * Theory: Raspberry PI as Platform
+  * Project (if elected): Document the build a 100 node Raspberry PI
+    Cluster
+	* Project: Environmental Robot Boat
+	
 ## Grading
 
 | Grade Item    | Percentage  |
