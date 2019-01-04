@@ -197,7 +197,7 @@ Bibliography:
 
 The objective of the project is to define a clear problem statement
 and create a framework to address that problem as it relates to cloud
-computing. IN this class it is especially importnat to address the
+computing. In this class it is especially importnat to address the
 reproducibility of the deployment. A test and benchmark possibly
 including a dataset must be used to verify the correctness of your
 approach. Projects related to NIST focus on the specification and
@@ -219,6 +219,9 @@ deliverabl;es will be different:
 - Take results in two different cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
   created and deployed based on your documentation. 
+
+- Each team member must provide a benchmark on their computer and a cloud IaaS, 
+  where the cloud is different from each team member.
 
 - Create a Makefile with the tags deploy, run, kill, view, clean that
   deploys your environment, runs application, kills it, views the
@@ -273,27 +276,31 @@ section.
 In addition, simply add them to your README.yml file in your github repo.
 Add the following to it (I am using a18-516-18 as example). 
 
-Please look at <https://github.com/cloudmesh-community/fa18-516-18>
-for an example
-
-
+Please look at <https://github.com/cloudmesh-community/fa18-516-18> and <https://raw.githubusercontent.com/cloudmesh-community/fa18-523-62/master/README.yml>
+for an examples. Please note that in case you work in a group the code and report is supposed to be only stored 
+in the first hid mentioned in the group field. If you store it in multiple directories your project will be rejected.
 
     section:
         - title: title of the section 1
-             url: https://github.com/cloudmesh-community/book/chapters/...
+          url: https://github.com/cloudmesh-community/book/chapters/...
         - title: title of the section 2
-             url: https://github.com/cloudmesh-community/book/chapters/...    
+          url: https://github.com/cloudmesh-community/book/chapters/...    
         - title: title of the section 3
-             url: https://github.com/cloudmesh-community/book/chapters/...         
+          url: https://github.com/cloudmesh-community/book/chapters/...         
     chapter:
         - title: title of the chapter
-             url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md         
+          url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md
+          group: fa18-523-62 fa18-523-69
+          keyword: whatever
     project:
         - title: title of the project
-             url: url in your hid space or that of your partner
+          url: url in your hid space or that of your partner
+          group: fa18-523-62 fa18-523-69
+          keyword: kubernetes, NIST, Database
+          code: the url to the code
     other:
         - activity: spell checked md document
-             url: put url here
+          url: put url here
 
 
 You **MUST** run yamllint on the README.yml file. YAML errors will
