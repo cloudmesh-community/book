@@ -82,7 +82,7 @@ functions is the print statement that has in python 3 parentheses. To
 enable it in python 2 you just need to import this function:
 
 ```python
->>> from __future__ import print_function, division
+from __future__ import print_function, division
 ```
 
 The first of these imports allows us to use the print function to output
@@ -95,7 +95,7 @@ Other functions such as the division also behave differently. Thus we
 use
 
 ```python 
->>> from __future__ import division
+from __future__ import division
 ```
 
 This import makes sure that the [division
