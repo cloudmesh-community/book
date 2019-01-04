@@ -11,7 +11,7 @@ class.
 
 * Way 1: Free form. The preferred way for most students. Here you
   simply look at the Syllabus table and identify whatever section you
-  feel like reding. The sections that are released are marked with
+  feel like reading. The sections that are released are marked with
   :white_check_mark:. Note that the book may include sections that are
   not marked in the syllabus. You do not have to read such sections.
 
