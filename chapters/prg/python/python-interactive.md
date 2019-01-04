@@ -26,25 +26,27 @@ are following along you will not need to type in the prompt.
 This interactive python process does the following:
 
 -   *read* your input commands
-
 -   *evaluate* your command
-
 -   *print* the result of evaluation
-
 -   *loop* back to the beginning.
 
 This is why you may see the interactive loop referred to as a **REPL**:
 **R**ead-**E**valuate-**P**rint-**L**oop.
 
-REPL (Read Eval Print Loop)
----------------------------
+## REPL (Read Eval Print Loop)
 
 There are many different types beyond what we have seen so far, such as
 **dictionaries**s, **list**s, **set**s. One handy way of using the
 interactive python is to get the type of a value using type():
 
-\`\`\`python \>\>\> type(42) \<type 'int'\> \>\>\> type(hello) \<type
-'str'\> \>\>\> type(3.14) \<type 'float'\>
+```python 
+>>> type(42) 
+<type 'int'> 
+>>> type(hello) 
+<type 'str'> 
+>>> type(3.14) 
+<type 'float'>
+```
 
 You can also ask for help about something using help():
 
@@ -58,8 +60,7 @@ Using help() opens up a help message within a pager. To navigate you can
 use the spacebar to go down a page w to go up a page, the arrow keys to
 go up/down line-by-line, or q to exit.
 
-Interpreter
------------
+## Interpreter
 
 Although the interactive mode provides a convenient tool to test
 things out you will see quickly that for our class we want to use the
@@ -72,8 +73,7 @@ python prg.py
 
 It is important to name the program with meaningful names.
 
-Python 3 Features in Python 2
------------------------------
+## Python 3 Features in Python 2
 
 In this course we want to be able to seamlessly switch between python 2
 and python 3. Thus it is convenient from the start to use python 3
