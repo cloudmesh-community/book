@@ -24,7 +24,8 @@ $
 :o: `:o:`
 
 > Chapters marked with an :o: are not yet complete or have some issue
-> that we know about. These chapters need to be fixed.
+> that we know about. These chapters need to be fixed. If you like to
+> help us fixing this section, please let us know. 
 
 
 [:clapper: REST 36:02](https://youtu.be/xjFuA6q5N_U) 
@@ -91,9 +92,27 @@ Figures must be written in the md as
 ```
 
 You can refer to them with `+@fig:code-example`. Please note in order for numbering to work 
-figure refernces must include the `#fig:`
+figure refernces must include the `#fig:` followed by a unique
+identifier. Please note that identifiers must be realy unique and that
+identifies such as `#fig:cloud` or similar simple identifiers are a
+poor choice and will likely not work. To check, please list all lines
+with an identifier such as
+
+```bash
+$ grep -R "#fig:" chapters
+```
+
+and see if your identifier is truly unique.
 
 Other emojis
 
 > Other emojis can be found at <https://gist.github.com/rxaviers/7360908>
 
+---
+
+:warning: *Please note that there is currently a bug when our document
+is exported to html or to PDF, as emojis are for sme reason not
+properly embedded. Hence to read the document we recommend that you
+use an ePub reader.*
+
+---

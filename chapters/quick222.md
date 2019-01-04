@@ -8,36 +8,53 @@ This class is an undergraduate class that contains two sections that
 you must attend.
 
 First it contains a lecture section that will introduce you
-theoretically to some concepts that are important for this class.
-Online lectures may augment these lectures that you also will have to
-look at. In addition you you certainly look up material relevant to
-the lecture in books or online resources, as well as these lecture
-notes.
+theoretically to some concepts that are important for this class. You
+are responsible to
+
+1. listen to the online lectures and understand them.
+2. identify additional material that may help you in understanding the
+    lectures. This could include additional resources on the internet
+3. Contribute to the material by correcting errors and updates you may
+    find.
+
+Please note that we try to keep the material up to date with your
+help. However, in our field software and documentation changes quickly
+and if you identify updated material we expect that you help us fixing
+it. You will get credit doing so.
 
 To allow you to be most flexible in taking this class, we certainly
-allow you to work ahead. This you can use all but the in person
+allow you to work ahead. Thus you can use all but the in person
 lectures ahead of time. The Syllabus will clearly identify which
 material is available.  Note that the book may include sections that
 are not marked in the syllabus. You do not have to read such sections.
 
 Please note that this class does not have *small* assignments and any
-assignment is likely to take you some time. Thus it is advisable that
-you start your assignments early and make sure you do not do them in
-the last week. In order to facilitate this we will introduce graded
-checkpoints of all large assignments. The grades for these checkpoints
-are final and can not be improved by work done later.
+assignment is likely to take you a significant amount of time. Thus it
+is advisable that you start your assignments early and make sure you
+do not do them in the last week before the assignment is due. This
+contrasts other undergraduate classes, that may focus on the
+assignment of a number of toy exerises. Instead we will work
+throughout the entire semester towards a project you will conduct.
+In order to make it earlier for you,  we will
+introduce graded checkpoints of all large assignments. The grades for
+these checkpoints are final and can not be improved by work done
+later. Also here please be advised that some may take several weeks to
+conduct and it is your responsibility to devote enough time to these activities.
 
-To further make sure you progress, you will have to manage a
+To asure progress, you will have to manage a
 notebook.md file in your github directory (that we will create for
 you) in which you will update your weekly progress. If you miss a
 lecture, it is in your responsibility to inform yourself what was
-being taught. Attendance and participation will be graded.
+being taught. Attendance and participation will be graded as well as
+the update to notebook.md will be graded.
 
 In the following calendar we put in the last day of the week 
 when the assignments are typically due
 
 :o: The list of activities listed at this time does not yet include
 the lectures, and will be updated once we have them finalized.
+Additional information will be posted here, please check weekly.
+
 To see the differences you cann look at:
 
 * <https://github.com/cloudmesh-community/book/commits/master/chapters/quick222.md>
@@ -71,7 +88,6 @@ If checkins are succeeding can be seen at:
    * having posted the bio to piazza
    * having posted your github username
    
-:o: Additional information will be posted here, please check weekly.
 
    Read: Learn about markdown. See our class notes and internet
    resources.  Note that we use pandoc markdown that may not render
