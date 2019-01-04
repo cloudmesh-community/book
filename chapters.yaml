@@ -23,16 +23,6 @@
         - chapters/preface/reader.md                
         - chapters/preface/notation.md
 
-- 222-PREFACE:
-    - chapters/SECTION/SECTION-PREFACE.md:
-        - chapters/version.md
-        - chapters/preface/corrections.md 
-        - chapters/authors.md
-        - chapters/preface/create.md
-        - chapters/preface/reader.md                
-        - chapters/preface/notation.md
-
-
 - DEVTOOLS:
     - chapters/SECTION/SECTION-DEVTOOLS.md:
         - chapters/linux/refcards.md
@@ -408,11 +398,51 @@
     - chapters/SECTION/SECTION-REFERENCES.md
 
 - BOOK_222:
-    - $ref:222-PREFACE
-    - chapters/SECTION/SECTION-QUICK516.md:
-        - chapters/quick222.md
+    - chapters/SECTION/SECTION-PREFACE.md:
+        - chapters/version.md
+        - chapters/preface/corrections.md
+        - chapters/authors.md
+        - chapters/preface/create.md
+        - chapters/preface/reader.md                
+        - chapters/preface/notation.md
+    - chapters/class/e222-syllabus.md
+    - chapters/SECTION/SECTION-QUICK.md:
         - chapters/222-assignments.md
-        - chapters/class/e222-syllabus.md
+    - chapters/prg/SECTION-PYTHON.md:
+        - chapters/prg/python/python-intro.md
+        - chapters/prg/python/python-install.md
+        - chapters/prg/python/python-interactive.md
+        - chapters/prg/python/python-editor.md
+        - chapters/prg/python/python.md
+        - chapters/prg/python/python-libraries.md:
+            - chapters/prg/python/python-data.md
+            - chapters/prg/python/python-matplotlib.md
+            - chapters/prg/python/python-docopts.md
+            - chapters/prg/python/python-cmd5.md
+            - chapters/prg/python/python-cmd.md
+            - chapters/prg/python/opencv/opencv.md
+            - chapters/prg/python/opencv/secchi.md
+            - chapters/SECTION/SECTION-DATA.md:
+                - chapters/data/formats.md
+                - chapters/data/mongodb.md
+                - chapters/data/mongoengine.md
+        - chapters/prg/python/python-wordcount.md
+        - chapters/prg/python/numpy/numpy.md
+        - chapters/prg/python/scipy/scipy.md
+        - chapters/prg/python/scikit-learn/scikit-learn-k-means.md
+        - chapters/prg/python/python-parallel.md
+        - chapters/prg/python/random-forest/random-forest.md    
+    - chapters/nist/bdra.md:
+        - chapters/rest/rest.md
+        - chapters/rest/swagger-codegen.md
+        - chapters/rest/swagger-spec.md
+        - chapters/rest/swagger.md
+        - chapters/prg/github.md
+    - chapters/SECTION/SECTION-REFERENCES.md
+
+
+
+- OOOO:
     - chapters/SECTION/SECTION-OVERVIEW.md:
         - chapters/class/organization-516.md
         - chapters/class/plagiarism.md
@@ -425,12 +455,6 @@
     - chapters/cloud/use-cases.md
     - chapters/cloud/datacenter.md
     - chapters/arch.md
-    - chapters/nist/bdra.md:
-        - chapters/rest/rest.md
-        - chapters/rest/swagger-codegen.md
-        - chapters/rest/swagger-spec.md
-        - chapters/rest/swagger.md
-        - chapters/prg/github.md
     - $ref:HYPERVISOR
     - $ref:IAAS
     - $ref:MAPREDUCE
@@ -452,7 +476,6 @@
     - $ref:IN
     - chapters/SECTION/SECTION-INDEX.md:
         - chapters/index.md
-    - chapters/SECTION/SECTION-REFERENCES.md
 
 - BOOK_WRITING:
     - chapters/SECTION/SECTION-PREFACE.md:
