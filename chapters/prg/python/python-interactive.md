@@ -10,8 +10,9 @@ $ python
 You will see something like the following:
 
 ```python
-Python 2.7.13 (default, Nov 19 2016, 06:48:10)
-[GCC 5.4.0 20160609] on linux2
+python
+Python 3.7.1 (default, Nov 24 2018, 14:27:15) 
+[Clang 10.0.0 (clang-1000.11.45.5)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
