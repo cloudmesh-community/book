@@ -3,7 +3,7 @@
 Python can be used interactively. You can enter the interactive mode by
 entering the interactive loop by executing the command:
 
-```python
+```bash
 $ python
 ```
 
@@ -68,7 +68,7 @@ python interpreter from the commandline. Let us assume the program is
 called `prg.py`. Once you have written it in that file you simply can call it with
 
 ```bash
-python prg.py
+$ python prg.py
 ```
 
 It is important to name the program with meaningful names.
