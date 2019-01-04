@@ -106,8 +106,10 @@ $ make view
 
 ## Publishing the book to github
 
-:warning: This task should only be done by those with direct write
-privileges. and never be part of a pull request.
+:warning: This task should only be done by with direct write
+privileges. and never be part of a pull request. Please discuss with
+*Gregor von Laszewski* the details of your update first. Typically
+*Gregor* is the one who publishes it.
 
 To publish the book say
 

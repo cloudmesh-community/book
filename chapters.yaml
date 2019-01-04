@@ -16,11 +16,22 @@
 - PREFACE:
     - chapters/SECTION/SECTION-PREFACE.md:
         - chapters/version.md
+        - chapters/preface/corrections.md
         - chapters/authors.md
         - chapters/preface/create.md
         - chapters/preface/issues.md
         - chapters/preface/reader.md                
         - chapters/preface/notation.md
+
+- 222-PREFACE:
+    - chapters/SECTION/SECTION-PREFACE.md:
+        - chapters/version.md
+        - chapters/preface/corrections.md
+        - chapters/authors.md
+        - chapters/preface/create.md
+        - chapters/preface/reader.md                
+        - chapters/preface/notation.md
+
 
 - DEVTOOLS:
     - chapters/SECTION/SECTION-DEVTOOLS.md:
@@ -397,10 +408,10 @@
     - chapters/SECTION/SECTION-REFERENCES.md
 
 - BOOK_222:
-    - $ref:PREFACE
+    - $ref:222-PREFACE
     - chapters/SECTION/SECTION-QUICK516.md:
         - chapters/quick222.md
-        - chapters/assignment.md
+        - chapters/222-assignments.md
         - chapters/class/e222-syllabus.md
     - chapters/SECTION/SECTION-OVERVIEW.md:
         - chapters/class/organization-516.md
