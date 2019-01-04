@@ -1,6 +1,9 @@
 # Help
 
-To ask for help use piazza: <https://piazza.com/iu/spring2019/e222spring19/resources>
+To ask for help use piazza:
+
+* [Piazza Resources](https://piazza.com/iu/spring2019/e222spring19/resources)
+* [Piazza Questions](https://piazza.com/class/jq2u1qfc4o81ox)
 
 # How to take this class
 
