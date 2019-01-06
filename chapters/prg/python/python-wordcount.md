@@ -243,7 +243,7 @@ parallelize the implementation using Python's `multiprocessing` API:
 
 ## Benchmarking
 
-To time each of the examples above, enter it into its own Python file
+To time each of the examples, enter it into its own Python file
 and use Linux's `time` command:
 
 ```bash

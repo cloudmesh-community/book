@@ -405,8 +405,7 @@
         - chapters/preface/create.md
         - chapters/preface/reader.md                
         - chapters/preface/notation.md
-    - chapters/class/e222-syllabus.md
-    - chapters/SECTION/SECTION-QUICK.md:
+    - chapters/class/e222-syllabus.md:
         - chapters/222-assignments.md
     - chapters/prg/SECTION-PYTHON.md:
         - chapters/prg/python/python-intro.md
@@ -438,6 +437,11 @@
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
         - chapters/prg/github.md
+    - chapters/ai/ai.md
+    - chapters/SECTION/SECTION-FAQ.md:
+        - chapters/faq.md       
+    - chapters/SECTION/SECTION-INDEX.md:
+        - chapters/index.md
     - chapters/SECTION/SECTION-REFERENCES.md
 
 
@@ -464,9 +468,6 @@
     - $ref:DEVOPS
     - $ref:PYTHON
     - $ref:MSG
-    - chapters/ai/ai.md
-    - chapters/SECTION/SECTION-FAQ.md:
-        - chapters/faq.md
     - chapters/SECTION/SECTION-APPENDIX.md:
         - chapters/iaas/aws/products.md
         - chapters/iaas/azure/products.md
@@ -474,8 +475,7 @@
     - $ref:CHAMELEON
     - chapters/container/glossary.md
     - $ref:IN
-    - chapters/SECTION/SECTION-INDEX.md:
-        - chapters/index.md
+
 
 - BOOK_WRITING:
     - chapters/SECTION/SECTION-PREFACE.md:

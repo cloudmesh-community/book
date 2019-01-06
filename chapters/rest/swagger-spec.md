@@ -102,8 +102,8 @@ info
     as *true*; when the *in* has value other than *body*, a *type*
     field is required to specify the type of the parameter.
 
-    While the three root level fields mentioned above are required, in most
-    cases we will also use other optional fields.
+    While the three root level fields mentioned previously are
+    required, in most cases we will also use other optional fields.
 
 host
 

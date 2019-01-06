@@ -229,7 +229,7 @@ using a configuration file that is never part of the code repository.
 
 E.github.issues.1:
 
-> Develop a new code like the one above, but use python requests
+> Develop a new code like the one in this section, but use python requests
 > instead of the `os.system` call.
 
 E.github.issues.2:
