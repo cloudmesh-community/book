@@ -36,8 +36,6 @@ our sine and cosine functions i.e. $cos(x)$.
 ```python
 cos = np.cos(x)
 sin = np.sin(x)
-#cos, sin = np.cos(x), np.sin(x) will produce the same as the above
-#two lines
 ```
 
 You can display the values of the three parameters we have defined by

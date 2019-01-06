@@ -332,7 +332,7 @@ if x == 4:
 ```
 
 In this example, *You guessed correctly!* will only be printed if the
-variable x equals to four (see table above). Python can also execute
+variable x equals to four. Python can also execute
 multiple conditions using the elif and else keywords.
 
 ``` python
@@ -364,8 +364,8 @@ for i in range(0, 10):
    print(i + 1)
 ```
 
-In fact, the range function defaults to starting value of *0*, so the
-above is equivalent to:
+In fact, the range function defaults to starting value of *0*, so it
+is equivalent to:
 
 ``` python
 for i in range(10):
@@ -432,7 +432,7 @@ names[1:-1]
 ## ['Jane', 'Liz', 'John']
 ```
 
-As you can see from the example above, the starting index in the slice
+As you can see from the example, the starting index in the slice
 is inclusive and the ending one, exclusive.
 
 Python provides a variety of methods for manipulating the members of a
@@ -515,7 +515,7 @@ range(2, 10, 2)
 
 ### Sets
 
-Python lists can contain duplicates as you saw above:
+Python lists can contain duplicates as you saw previously:
 
 ``` python
 names = ['Albert', 'Jane', 'Liz',
@@ -692,7 +692,7 @@ methods**.
 
 However, you can assume that if you call `keys()` and `values()` in
 sequence, the order of elements will at least correspond in both
-methods. In the above example Age corresponds to 100, Name to `Albert`,
+methods. In the example Age corresponds to 100, Name to `Albert`,
 and Class to Scientist, and you will observe the same correspondence in
 general as long as *`keys()` and `values()` are called one right after the
 other*.
@@ -958,7 +958,7 @@ Now consider the following examples:
 ``` python
 power2 = lambda x: x ** 2 
 ```
-The `power2` function defined in the expression above, is equivalent to the
+The `power2` function defined in the expression, is equivalent to the
 following definition: 
 
 ``` python
@@ -1029,7 +1029,7 @@ multiply(3*5) #outputs: 15
 Same function can written as Lambda function. This function named as
 multiply is having 2 arguments and returns their multiplication.
 
-Lambda equivalent for above function would be:
+Lambda equivalent for this function would be:
 
 ``` python
 multiply = Lambda a, b : a*b
@@ -1179,11 +1179,11 @@ As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively.
 
 ## Generators
 
-Before we go to Generators, please understand Iterators from above. Generators are also Iterators but they can only be
-interated over once. Thats because Generators do not store the values
-in memory instead they generate the values on the go. If we want to
-print those values then we can either simply iterate over them or use
-the for loop.
+Before we go to Generators, please understand Iterators. Generators
+are also Iterators but they can only be interated over once. Thats
+because Generators do not store the values in memory instead they
+generate the values on the go. If we want to print those values then
+we can either simply iterate over them or use the for loop.
 
 ### Generators with function
 
@@ -1277,8 +1277,8 @@ print new_numbers  #Output: Generators object
 ```
 
 We can get the individual elements again from Generators if we do a
-for loop over new_numbers like we did above. OR we can convert it into
-a list and then print it.
+for loop over new_numbers like we did previously. Alternatively, we
+can convert it into a list and then print it.
 
 ``` python
 new_numbers = (x*10 for x in [1,2,3,4,5])
@@ -1291,12 +1291,12 @@ which we will just see next.
 ### Why to use Generators?
 
 Generators are better with Performance because it does not hold the
-values in memory and here with above example its not a big deal since
-we are dealing with small amount of data but just consider a scenario
-where the records are in millions of data set. And if we try to
-convert millions of data elements into a list then that will
-definitely make an impact on memory and performance because everything
-will in memory.
+values in memory and here with the small examples we provide its not a
+big deal since we are dealing with small amount of data but just
+consider a scenario where the records are in millions of data set. And
+if we try to convert millions of data elements into a list then that
+will definitely make an impact on memory and performance because
+everything will in memory.
 
 Lets see an example on how Generators help in Performance.  First,
 without Generators, normal function taking 1 million record and
@@ -1549,7 +1549,7 @@ On Unix, if args is a string, the string is interpreted as the name or path of t
 	>>> print args
 	['/bin/vikings', '-input', 'eggs.txt', '-output', 'spam spam.txt', '-cmd', "echo '$MONEY'"]
 	>>> p = subprocess.Popen(args) ## Success!
-	Note in particular that options (such as -input) and arguments (such as eggs.txt) that are separated by whitespace in the shell go in separate list elements, while arguments that need quoting or backslash escaping when used in the shell (such as filenames containing spaces or the echo command shown above) are single list elements.
+	Note in particular that options (such as -input) and arguments (such as eggs.txt) that are separated by whitespace in the shell go in separate list elements, while arguments that need quoting or backslash escaping when used in the shell (such as filenames containing spaces or the echo command) are single list elements.
 
 On Windows, if args is a sequence then it will be converted to a string. This is because the underlying CreateProcess() operates on strings. Parsing the string after conversion uses the following rules:
 

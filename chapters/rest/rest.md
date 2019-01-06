@@ -596,7 +596,7 @@ python while combining information from a dict with information
 retrieved from the system. The important part is to understand the
 decorator **app.route**. The parameter specifies the route of the API
 endpoint which will be the address appended to the base path,
-**http://127.0.0.1:5000**. It is important that we return a jsonified
+`http://127.0.0.1:5000`.  It is important that we return a jsonified
 object, which can easily be done with the `jsonify` function provided by
 flask.As you can see the name of the decorated function can be anything
 you lok. The route specifies how we access it from the service.
@@ -744,9 +744,9 @@ for you to apply as exercise.
 Write a RESTful service to determine a useful piece of information off
 of your computer i.e. disk space, memory, RAM, etc. In this exercise
 what you need to do is use a python library to extract data about
-computer information mentioned above and send these information to the
+computer information mentioned previously and send these information to the
 user once the user calls an API endpoint like
-http://localhost:5000/performance/ram, it must return the RAM value of
+`http://localhost:5000/performance/ram`, it must return the RAM value of
 the given machine. For each information like disk space, RAM, etc you
 can use an endpoint per each feature needed. As a tip for this exercise,
 use the psutil library in python to retrieve the data, and then get

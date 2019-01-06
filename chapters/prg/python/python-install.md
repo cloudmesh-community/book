@@ -211,7 +211,7 @@ the following commands:
     $ pyenv virtualenv 2.7.15 ENV2
     $ pyenv virtualenv 3.7.1 ENV3
 
-In the example above, ENV2 would represent python 2.7.15 while ENV3
+In the example, ENV2 would represent python 2.7.15 while ENV3
 would represent python 3.7.1. Often it is easier to type the alias
 rather than the explicit version.
 

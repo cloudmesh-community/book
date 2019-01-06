@@ -7,7 +7,6 @@ INDEX=\
   chapters/preface/reader.md\
   chapters/preface/notation.md\
   chapters/class/e222-syllabus.md\
-  chapters/SECTION/SECTION-QUICK.md\
   chapters/222-assignments.md\
   chapters/prg/SECTION-PYTHON.md\
   chapters/prg/python/python-intro.md\
@@ -39,9 +38,14 @@ INDEX=\
   chapters/rest/swagger-spec.md\
   chapters/rest/swagger.md\
   chapters/prg/github.md\
+  chapters/ai/ai.md\
+  chapters/SECTION/SECTION-FAQ.md\
+  chapters/faq.md\
+  chapters/SECTION/SECTION-INDEX.md\
+  chapters/index.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/corrections.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/class/e222-syllabus.md dest/chapters/SECTION/SECTION-QUICK.md dest/chapters/222-assignments.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongodb.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/python-parallel.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/nist/bdra.md dest/chapters/rest/rest.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger.md dest/chapters/prg/github.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/corrections.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/class/e222-syllabus.md dest/chapters/222-assignments.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongodb.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/python-parallel.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/nist/bdra.md dest/chapters/rest/rest.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger.md dest/chapters/prg/github.md dest/chapters/ai/ai.md dest/chapters/SECTION/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/SECTION/SECTION-INDEX.md dest/chapters/index.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -76,10 +80,6 @@ dest/chapters/preface/notation.md: ../chapters/preface/notation.md
 dest/chapters/class/e222-syllabus.md: ../chapters/class/e222-syllabus.md
 	../bin/markup-single.py ../chapters/class/e222-syllabus.md 1
 	../bin/header.py dest/chapters/class/e222-syllabus.md 1
-
-dest/chapters/SECTION/SECTION-QUICK.md: ../chapters/SECTION/SECTION-QUICK.md
-	../bin/markup-single.py ../chapters/SECTION/SECTION-QUICK.md 1
-	../bin/header.py dest/chapters/SECTION/SECTION-QUICK.md 1
 
 dest/chapters/222-assignments.md: ../chapters/222-assignments.md
 	../bin/markup-single.py ../chapters/222-assignments.md 2
@@ -204,6 +204,26 @@ dest/chapters/rest/swagger.md: ../chapters/rest/swagger.md
 dest/chapters/prg/github.md: ../chapters/prg/github.md
 	../bin/markup-single.py ../chapters/prg/github.md 2
 	../bin/header.py dest/chapters/prg/github.md 2
+
+dest/chapters/ai/ai.md: ../chapters/ai/ai.md
+	../bin/markup-single.py ../chapters/ai/ai.md 1
+	../bin/header.py dest/chapters/ai/ai.md 1
+
+dest/chapters/SECTION/SECTION-FAQ.md: ../chapters/SECTION/SECTION-FAQ.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-FAQ.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-FAQ.md 1
+
+dest/chapters/faq.md: ../chapters/faq.md
+	../bin/markup-single.py ../chapters/faq.md 2
+	../bin/header.py dest/chapters/faq.md 2
+
+dest/chapters/SECTION/SECTION-INDEX.md: ../chapters/SECTION/SECTION-INDEX.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-INDEX.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-INDEX.md 1
+
+dest/chapters/index.md: ../chapters/index.md
+	../bin/markup-single.py ../chapters/index.md 2
+	../bin/header.py dest/chapters/index.md 2
 
 dest/chapters/SECTION/SECTION-REFERENCES.md: ../chapters/SECTION/SECTION-REFERENCES.md
 	../bin/markup-single.py ../chapters/SECTION/SECTION-REFERENCES.md 1

@@ -1,18 +1,17 @@
 # Scipy {#s-scipy}
 
-
-SciPy is a library built above numpy and has a number of off the shelf
+SciPy is a library built around numpy and has a number of off-the-shelf
 algorithms and operations implemented. These include algorithms from
 calculus (such as integration), statistics, linear algebra,
 image-processing, signal processing, machine learning.
 
 To achieve this, SciPy bundels a number of useful open-source software
-for mathematics, science, and engineering. It includes the follwoing
+for mathematics, science, and engineering. It includes the following
 packages:
 
 NumPy,
 
-:   for managin N-dimensional arrays
+:   for managing N-dimensional arrays
 
 SciPy library,
 
@@ -187,7 +186,7 @@ To save images into a PDF file for inclusion into LaTeX documents you
 can save the images as follows. Other formats such as png are also
 possible, but the quality is naturally not sufficient for inclusion in
 papers and documents. For that you certainly want to use PDF. The save
-of the figure has to occure before you use the `show()` command.
+of the figure has to occur before you use the `show()` command.
 
     plt.savefig("regression.pdf", bbox_inches='tight')
 
@@ -207,9 +206,11 @@ following link
 
 Additional material and inspiration for this section are from
 
--   "Getting Started guide" <https://www.scipy.org/getting-started.html>
--   Prasanth. "Simple statistics with SciPy." Comfort at 1 AU. February
-    28, 2011.
-    <https://oneau.wordpress.com/2011/02/28/simple-statistics-with-scipy/>.
--   SciPy Cookbook. Lasted updated: 2015.
-    <http://scipy-cookbook.readthedocs.io/>.
+- [:o:]  "Getting Started guide" <https://www.scipy.org/getting-started.html>
+- [:o:]    Prasanth. "Simple statistics with SciPy." Comfort at 1 AU. February
+   28, 2011.
+   <https://oneau.wordpress.com/2011/02/28/simple-statistics-with-scipy/>.
+-  [:o:]   SciPy Cookbook. Lasted updated: 2015.
+   <http://scipy-cookbook.readthedocs.io/>.
+
+:o: create bibtex entries

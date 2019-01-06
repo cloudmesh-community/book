@@ -61,11 +61,11 @@ are asked if we think a Chevy Corvette is fast or not.
 
 
 | Car Name |              Horsepower (HP) |  Racing Stripe (Yes or No)|  Fast (Yes or No)  |
-|  -------------------- | ----------------- | ------------------------- | ------------------ |
-| Toyota Prius            | 120      |               0               |       0          |
-|  Tesla Roadster         | 288      |               0               |       1          |
-|  Bugatti Veyron         | 1200     |                1              |       1          |
-|  Honda Civic            | 158      |               1               |       0          |
+|  ------------------- | ----------------- | ------------------------- | ------------------ |
+| Toyota Prius                    | 120      |               0               |       0          |
+|  Tesla Roadster                | 288      |               0               |       1          |
+|  Bugatti Veyron                | 1200     |                1              |       1          |
+|  Honda Civic                    | 158      |               1               |       0          |
 |  Lamborghini Aventador  | 695      |               1               |       1          |
 
 > Car make and model with associated horsepower, whether the vehicle
@@ -131,7 +131,7 @@ line by line for instructional purposes.
     with open("/path/to/the/nba_2013.csv", 'r') as csvfile:
         nba = pandas.read_csv(csvfile)
 
-The above portion of code uses pandas to open the downloaded csv file
+The previous portion of code uses pandas to open the downloaded csv file
 and name it nba, naturally you could name the file anything. If you want
 to view the columns in the csv file the following command can be used.
 
@@ -184,23 +184,23 @@ case with sports statistics as total points and field goal percentage
 vary in magnitude significantly but total points does not necessarily
 hold more predictive power than field goal percentage. In order to
 normalize we again most only select the the numeric columns and text
-columns can not be normalized in the way described above.
+columns can not be normalized in the way described previously.
 
     nba_numeric = nba[numeric_columns]
-    #apply normalization formula described above using built in python math
+    #apply normalization formula using built in python math
     #functions for the mean and standard deviation
     nba_normalized = (nba_numeric - nba_numeric.mean()) / nba_numeric.std()
 
 We can now use built in functions to calculate the nearest neighbors in
-order to compare to our results attained from the above exercise. In
-case you did not notice the selected_player_distance array is an array
+order to compare to our results attained from the previous exercise. In
+case you did not notice the `selected_player_distance` array is an array
 that lists all the Euclidean distances. We will use this later to see if
 the same result is obtained by using the built in functions. First we
 will import the necessary libraries shown below.
 
     from scipy.spatial import distance
 
-If you inspected the the selected_player_distance array you would have
+If you inspected the the `selected_player_distance` array you would have
 noticed that there were several NaN's present this was due to having an
 incomplete dataset and must be avoided. The following bit of code will
 replace all NA entries with zeros.
@@ -306,7 +306,7 @@ good practice.
         return "Data Downloaded"
 
 The following three api endpoints use the data partition and get data
-functions defined above. The partition function splits the datasets into
+functions defined previously. The partition function splits the datasets into
 two sections--testing and training. In this example the testing portion
 of the dataset is 20 % and the training is 80 % of the dataset. Later we
 will explore how to make this part dynamic, allowing the user to choose
@@ -360,7 +360,7 @@ tunable by the user through the url.
         return "Prediction Accuracy: "+str(accuracy)
 
 In order to run this you need to make a directory in a location of your
-choice and create a file called main.py that has the code listed above
+choice and create a file called main.py that has the code included
 in it. Then simply type the following command in a terminal where you
 have navigated to the location of the directory that your created.
 
@@ -460,7 +460,7 @@ show up, this was noticed in the url sections.
     if __name__ == '__main__':
         app.run(debug=True)
 
-As mentioned above these these are examples of static API endpoints. In
+As mentioned previously these these are examples of static API endpoints. In
 many scenarios having a dynamic API would be preferred. Lets explore the
 data partition endpoint and modify the code for the static version to
 make a dynamic version. Below is the function definition for the dynamic
