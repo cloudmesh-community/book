@@ -7,6 +7,7 @@ E222 Intelligent Systems II and E516 Engineering Cloud Computing
 
 [PowerPoint of full set A) to U)](https://drive.google.com/open?id=1RQ8Q_A32ks02CSCZAzKiJJ9P9YntMRAo) 
 
+:o: Add captions and runtime to each video, see notation section for format
 
 ## A. Summary of Introduction to Cloud Computing & Data Engineering
 
