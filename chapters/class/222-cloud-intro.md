@@ -3,10 +3,9 @@
 E222 Intelligent Systems II and E516 Engineering Cloud Computing
 
 
-**YouTube Playlist**
-[https://www.youtube.com/playlist?list=PLy0VLh\_GFyz81ZFQ6Xrd1PHHI1EzjhhVb](https://www.youtube.com/playlist?list=PLy0VLh_GFyz81ZFQ6Xrd1PHHI1EzjhhVb)
+[YouTube Playlist](https://www.youtube.com/playlist?list=PLy0VLh_GFyz81ZFQ6Xrd1PHHI1EzjhhVb)
 
-PowerPoint of full set A) to U) [https://drive.google.com/open?id=1RQ8Q\_A32ks02CSCZAzKiJJ9P9YntMRAo](https://drive.google.com/open?id=1RQ8Q_A32ks02CSCZAzKiJJ9P9YntMRAo) 
+[PowerPoint of full set A) to U)](https://drive.google.com/open?id=1RQ8Q_A32ks02CSCZAzKiJJ9P9YntMRAo) 
 
 
 ## A. Summary of Introduction to Cloud Computing & Data Engineering

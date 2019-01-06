@@ -32,12 +32,23 @@ INDEX=\
   chapters/prg/python/scikit-learn/scikit-learn-k-means.md\
   chapters/prg/python/python-parallel.md\
   chapters/prg/python/random-forest/random-forest.md\
+  chapters/SECTION/SECTION-DEVTOOLS.md\
+  chapters/linux/refcards.md\
+  chapters/cloud/virtualbox.md\
+  chapters/cloud/vagrant.md\
+  chapters/linux/linux.md\
+  chapters/linux/ssh.md\
+  chapters/linux/ssh-futuresystems.md\
+  chapters/linux/ssh-excerise.md\
+  chapters/git/github.md\
+  chapters/git/gitpullreqest.md\
   chapters/nist/bdra.md\
   chapters/rest/rest.md\
   chapters/rest/swagger-codegen.md\
   chapters/rest/swagger-spec.md\
   chapters/rest/swagger.md\
   chapters/prg/github.md\
+  chapters/class/222-cloud-intro.md\
   chapters/ai/ai.md\
   chapters/SECTION/SECTION-FAQ.md\
   chapters/faq.md\
@@ -45,7 +56,7 @@ INDEX=\
   chapters/index.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/corrections.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/class/e222-syllabus.md dest/chapters/222-assignments.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongodb.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/python-parallel.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/nist/bdra.md dest/chapters/rest/rest.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger.md dest/chapters/prg/github.md dest/chapters/ai/ai.md dest/chapters/SECTION/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/SECTION/SECTION-INDEX.md dest/chapters/index.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/corrections.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/class/e222-syllabus.md dest/chapters/222-assignments.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongodb.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/python-parallel.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/SECTION/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/git/github.md dest/chapters/git/gitpullreqest.md dest/chapters/nist/bdra.md dest/chapters/rest/rest.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger.md dest/chapters/prg/github.md dest/chapters/class/222-cloud-intro.md dest/chapters/ai/ai.md dest/chapters/SECTION/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/SECTION/SECTION-INDEX.md dest/chapters/index.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -181,6 +192,46 @@ dest/chapters/prg/python/random-forest/random-forest.md: ../chapters/prg/python/
 	../bin/markup-single.py ../chapters/prg/python/random-forest/random-forest.md 2
 	../bin/header.py dest/chapters/prg/python/random-forest/random-forest.md 2
 
+dest/chapters/SECTION/SECTION-DEVTOOLS.md: ../chapters/SECTION/SECTION-DEVTOOLS.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-DEVTOOLS.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-DEVTOOLS.md 1
+
+dest/chapters/linux/refcards.md: ../chapters/linux/refcards.md
+	../bin/markup-single.py ../chapters/linux/refcards.md 2
+	../bin/header.py dest/chapters/linux/refcards.md 2
+
+dest/chapters/cloud/virtualbox.md: ../chapters/cloud/virtualbox.md
+	../bin/markup-single.py ../chapters/cloud/virtualbox.md 2
+	../bin/header.py dest/chapters/cloud/virtualbox.md 2
+
+dest/chapters/cloud/vagrant.md: ../chapters/cloud/vagrant.md
+	../bin/markup-single.py ../chapters/cloud/vagrant.md 2
+	../bin/header.py dest/chapters/cloud/vagrant.md 2
+
+dest/chapters/linux/linux.md: ../chapters/linux/linux.md
+	../bin/markup-single.py ../chapters/linux/linux.md 2
+	../bin/header.py dest/chapters/linux/linux.md 2
+
+dest/chapters/linux/ssh.md: ../chapters/linux/ssh.md
+	../bin/markup-single.py ../chapters/linux/ssh.md 2
+	../bin/header.py dest/chapters/linux/ssh.md 2
+
+dest/chapters/linux/ssh-futuresystems.md: ../chapters/linux/ssh-futuresystems.md
+	../bin/markup-single.py ../chapters/linux/ssh-futuresystems.md 2
+	../bin/header.py dest/chapters/linux/ssh-futuresystems.md 2
+
+dest/chapters/linux/ssh-excerise.md: ../chapters/linux/ssh-excerise.md
+	../bin/markup-single.py ../chapters/linux/ssh-excerise.md 2
+	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
+
+dest/chapters/git/github.md: ../chapters/git/github.md
+	../bin/markup-single.py ../chapters/git/github.md 2
+	../bin/header.py dest/chapters/git/github.md 2
+
+dest/chapters/git/gitpullreqest.md: ../chapters/git/gitpullreqest.md
+	../bin/markup-single.py ../chapters/git/gitpullreqest.md 3
+	../bin/header.py dest/chapters/git/gitpullreqest.md 3
+
 dest/chapters/nist/bdra.md: ../chapters/nist/bdra.md
 	../bin/markup-single.py ../chapters/nist/bdra.md 1
 	../bin/header.py dest/chapters/nist/bdra.md 1
@@ -204,6 +255,10 @@ dest/chapters/rest/swagger.md: ../chapters/rest/swagger.md
 dest/chapters/prg/github.md: ../chapters/prg/github.md
 	../bin/markup-single.py ../chapters/prg/github.md 2
 	../bin/header.py dest/chapters/prg/github.md 2
+
+dest/chapters/class/222-cloud-intro.md: ../chapters/class/222-cloud-intro.md
+	../bin/markup-single.py ../chapters/class/222-cloud-intro.md 1
+	../bin/header.py dest/chapters/class/222-cloud-intro.md 1
 
 dest/chapters/ai/ai.md: ../chapters/ai/ai.md
 	../bin/markup-single.py ../chapters/ai/ai.md 1
