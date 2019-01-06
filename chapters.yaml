@@ -430,13 +430,24 @@
         - chapters/prg/python/scipy/scipy.md
         - chapters/prg/python/scikit-learn/scikit-learn-k-means.md
         - chapters/prg/python/python-parallel.md
-        - chapters/prg/python/random-forest/random-forest.md    
+        - chapters/prg/python/random-forest/random-forest.md
+    - chapters/SECTION/SECTION-DEVTOOLS.md:
+        - chapters/linux/refcards.md
+        - chapters/cloud/virtualbox.md
+        - chapters/cloud/vagrant.md
+        - chapters/linux/linux.md
+        - chapters/linux/ssh.md
+        - chapters/linux/ssh-futuresystems.md
+        - chapters/linux/ssh-excerise.md
+        - chapters/git/github.md:
+            - chapters/git/gitpullreqest.md
     - chapters/nist/bdra.md:
         - chapters/rest/rest.md
         - chapters/rest/swagger-codegen.md
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
         - chapters/prg/github.md
+    - chapters/class/222-cloud-intro.md
     - chapters/ai/ai.md
     - chapters/SECTION/SECTION-FAQ.md:
         - chapters/faq.md       
@@ -464,13 +475,9 @@
     - $ref:MAPREDUCE
     - $ref:CONTAINER
     - $ref:SERVERLESS
-    - $ref:DEVTOOLS
     - $ref:DEVOPS
-    - $ref:PYTHON
     - $ref:MSG
     - chapters/SECTION/SECTION-APPENDIX.md:
-        - chapters/iaas/aws/products.md
-        - chapters/iaas/azure/products.md
     - chapters/iaas/futuresystems/futuresystems.md
     - $ref:CHAMELEON
     - chapters/container/glossary.md
