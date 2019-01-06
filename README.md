@@ -9,7 +9,7 @@ Link |  Class | Description
 [<img src="pi/cover/cover.jpg" width="100px">](vonLaszewski-pi.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for Raspberry PI Clusters for class E516, E416, B649
 [<img src="big-data-applications/cover/cover.jpg" width="100px">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
 [<img src="tech/cover/cover.jpg" width="100px">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies
-[<img src="222/cover/cover.jpg" width="100px">](vonLaszewski-e222.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
+[<img src="222/cover/cover.jpg" width="100px">](vonLaszewski-e222.epub?raw=true)| e222 | Intelligent Systems Engineering II
 [<img src="writing/cover/cover.jpg" width="100px">](vonLaszewski-writing-markdown.epub?raw=true)| all | Scientific Writing with Markdown
 [<img src="writing-1/cover/cover.jpg" width="100px">](vonLaszewski-writing-1.epub?raw=true)| all | Scientific Writing I 
 [<img src="latex/cover-latex.png" width="100px">](http://cyberaide.org/papers/vonLaszewski-latex.pdf)| all | Scientific Writing II 
@@ -20,7 +20,7 @@ Link |  Class | Description
 
 https://github.com/cloudmesh-community/book/blob/master/
 
-# Cloudmesh community ePup Publication Framework
+# Cloudmesh Community ePup Publication Framework
 
 :warning: This section is only for those that like to generate their own ePubs based on our framework
 
@@ -28,7 +28,7 @@ ePubs can be easily created as they are build on a template. E good template is 
 
 You simply copy that directory to your own directory. let us assume we call it `mybook`. Note that we use all loer case letters to avoid complications while misspelling the directory
 
-You will have to edit now the file called Makefile and chamge the value `BOOK_516` to `BOOK_MYBOOK`. Let us assume you use emacs
+You will have to edit now the file called Makefile and change the value `BOOK_516` to `BOOK_MYBOOK`. Let us assume you use emacs
 
 ```bash
 $ emacs mybook/Makefile
@@ -55,7 +55,7 @@ To compile the book, you first have to generate an initial Makefile, which you c
 
  ../bin/manifest-parser.py dep BOOK_MYBOOK > Makefile.BOOK_MYBOOK
 
-Now the framework is all set up and you can add your new chapters in `./chapters` while refering to them in the `chapters.yaml` file for your book
+Now the framework is all set up and you can add your new chapters in `./chapters` while referring to them in the `chapters.yaml` file for your book
 
 To create the book simply do the following
 
