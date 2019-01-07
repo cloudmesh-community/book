@@ -4,11 +4,14 @@ Although you will never likely to create the epub from source, we have
 included this section for our most advanced contributors and those
 that update the epub on github.
 
-Please note that you must have at least pandoc version 2.2.3 installed. 
-Earlier versions will not work. YOu can check the version of pandoc with 
+Please note that you must have at least Pandoc version 2.2.3 installed. 
+You will also need Python version 3.7.1 to run the scripts needed to 
+assamble the document.
+Earlier versions will not work. You can check the versions with 
 
 ```bash
 $ pandoc --version
+$ python --version
 ```
 
 ## OSX Requirements
