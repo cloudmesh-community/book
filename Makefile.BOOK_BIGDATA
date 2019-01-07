@@ -1,6 +1,7 @@
 INDEX=\
   chapters/SECTION/SECTION-PREFACE.md\
   chapters/version.md\
+  chapters/preface/corrections.md\
   chapters/authors.md\
   chapters/preface/create.md\
   chapters/preface/issues.md\
@@ -56,6 +57,7 @@ INDEX=\
   chapters/prg/python/opencv/secchi.md\
   chapters/SECTION/SECTION-DATA.md\
   chapters/data/formats.md\
+  chapters/data/mongodb.md\
   chapters/data/mongoengine.md\
   chapters/prg/python/python-wordcount.md\
   chapters/prg/python/numpy/numpy.md\
@@ -72,7 +74,7 @@ INDEX=\
   chapters/container/glossary.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/class/organization-523.md dest/chapters/class/plagiarism.md dest/chapters/class/policies.md dest/chapters/class/e534-i523.md dest/chapters/class/volumes.md dest/chapters/in/datasets.md dest/chapters/class/assignments-523.md dest/chapters/bigdata/intro-fall-2018.md dest/chapters/bigdata/applications/overview.md dest/chapters/bigdata/applications/physics.md dest/chapters/bigdata/applications/lifestyle.md dest/chapters/bigdata/applications/sport.md dest/chapters/bigdata/applications/cloud.md dest/chapters/bigdata/applications/usecases.md dest/chapters/bigdata/applications/sensor.md dest/chapters/bigdata/applications/radar.md dest/chapters/bigdata/applications/web.md dest/chapters/bigdata/applications/health.md dest/chapters/SECTION/SECTION-TECH.md dest/chapters/bigdata/applications/statistics.md dest/chapters/bigdata/applications/kmeans.md dest/chapters/bigdata/applications/plotviz.md dest/chapters/SECTION/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/cloud/packer.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/git/gitpullreqest.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/python-parallel.md dest/chapters/prg/python/dask/dask.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/prg/python/fingerprint/fingerprint.md dest/chapters/prg/python/facedetection/facedetection.md dest/chapters/SECTION/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-523.md dest/chapters/container/glossary.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/corrections.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/class/organization-523.md dest/chapters/class/plagiarism.md dest/chapters/class/policies.md dest/chapters/class/e534-i523.md dest/chapters/class/volumes.md dest/chapters/in/datasets.md dest/chapters/class/assignments-523.md dest/chapters/bigdata/intro-fall-2018.md dest/chapters/bigdata/applications/overview.md dest/chapters/bigdata/applications/physics.md dest/chapters/bigdata/applications/lifestyle.md dest/chapters/bigdata/applications/sport.md dest/chapters/bigdata/applications/cloud.md dest/chapters/bigdata/applications/usecases.md dest/chapters/bigdata/applications/sensor.md dest/chapters/bigdata/applications/radar.md dest/chapters/bigdata/applications/web.md dest/chapters/bigdata/applications/health.md dest/chapters/SECTION/SECTION-TECH.md dest/chapters/bigdata/applications/statistics.md dest/chapters/bigdata/applications/kmeans.md dest/chapters/bigdata/applications/plotviz.md dest/chapters/SECTION/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/cloud/packer.md dest/chapters/os/ubuntu-usb-osx.md dest/chapters/git/github.md dest/chapters/git/gitpullreqest.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongodb.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn-k-means.md dest/chapters/prg/python/python-parallel.md dest/chapters/prg/python/dask/dask.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/prg/python/fingerprint/fingerprint.md dest/chapters/prg/python/facedetection/facedetection.md dest/chapters/SECTION/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/faq-523.md dest/chapters/container/glossary.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -83,6 +85,10 @@ dest/chapters/SECTION/SECTION-PREFACE.md: ../chapters/SECTION/SECTION-PREFACE.md
 dest/chapters/version.md: ../chapters/version.md
 	../bin/markup-single.py ../chapters/version.md 2
 	../bin/header.py dest/chapters/version.md 2
+
+dest/chapters/preface/corrections.md: ../chapters/preface/corrections.md
+	../bin/markup-single.py ../chapters/preface/corrections.md 2
+	../bin/header.py dest/chapters/preface/corrections.md 2
 
 dest/chapters/authors.md: ../chapters/authors.md
 	../bin/markup-single.py ../chapters/authors.md 2
@@ -303,6 +309,10 @@ dest/chapters/SECTION/SECTION-DATA.md: ../chapters/SECTION/SECTION-DATA.md
 dest/chapters/data/formats.md: ../chapters/data/formats.md
 	../bin/markup-single.py ../chapters/data/formats.md 4
 	../bin/header.py dest/chapters/data/formats.md 4
+
+dest/chapters/data/mongodb.md: ../chapters/data/mongodb.md
+	../bin/markup-single.py ../chapters/data/mongodb.md 4
+	../bin/header.py dest/chapters/data/mongodb.md 4
 
 dest/chapters/data/mongoengine.md: ../chapters/data/mongoengine.md
 	../bin/markup-single.py ../chapters/data/mongoengine.md 4

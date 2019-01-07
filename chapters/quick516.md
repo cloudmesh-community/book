@@ -31,95 +31,54 @@ class.
   date. We will add to the weekly schedule once new items become
   available. We also augment them with experiments/exercises that are not
   graded or reviewed, but that you could discuss with the
-  TAs. Assignments are not listed in this weekly view and you are
-  responsible to identify the schedule for them.
-
-    * Week Aug 20
-
-      Get familiar with the class structure. Read: Preface; Class
-      Overview; Exercise: Find a computer you can do the class
-      programming on (tablet and chrombook will not suffice). If you
-      like to do a Raspberry PI project or do not have a computer
-      order a Raspberry PI.
-
-    * Week Sep 3
-
-      Read: Definition of Clouds; find alternative definitions on the
-      internet; set up accounts on google, github; get hid directory;
-      start READNE.md, notebook.md; Read: Python, do some python
-      programming; understand classes
-
-    * Week Sep 10
-
-      Read: docopts and experiment; Read Data Center section and
-      contribute to that section; complete setup of your class
-      computer; use pyenv
-
-    * Week Sep 17
-
-      Read Architectures section; Read NIST section; Learn about REST;
-      learn about swagger; Experiment with swagger code gen
-
-    * Week Sep 24 and Oct 1
-
-      Read about Virtual machines; Start a VM on a cloud of your
-      choice. At minimum use Virtualbox. To do the assignment Read the
-      Infrastructure as a Service Section. Focus on the section for
-      the cloud you have chosen; Read up on Chameleon Cloud, start a
-      VM on chameleon cloud; Participate in within a new version of
-      cloudmesh in python which is checked in
-      [github :cloud:](https://github.com/cloudmesh-community/cm)
-
-      Tip: pick an area you can contribute, use libcloud to interface
-      with your cloud that you have chosen. Remember you do not have
-      to do all the clouds at this time, you can each week from now
-      work with a different cloud if you like. It is
-      recommended that you try programming with libcloud! To prepare
-      yourself for the project.
-
-    * Oct 10
-
-      Read the section on MQTT in prepartion for Edge Computing. Try
-      to deploy an mqtt server on your computer and use it. Optionally
-      also try a cloud mqtt server.
-      Read the section on GraphQL (if that section is
-      ready). Experiment with GraphQL. Develop an inventory of compute
-      resources in GraphQL, that you populate and quesry. Develop a
-      NIST OpenAPI framework for a computer inventory. Identify
-      adbatages and disadvanteges opf using GraphQL. When are ther
-      instances that GraphQL does not work well (Tip: compare to
-      MongoDB).
-
-      * Define your project
-      * Define your chapter
-      * Make sure you have sections selected and start completing them
-
-    * Oct 15
-
-      Read the Container section (the parts that do not have a :o:
-      indicating that they are ready. Try using containers on your
-      machine. If you do not have access to containers on your machine
-      please use echo docker swarm and/or kubernetes. Develop a
-      service you can deploy and test. Do not expose andy insecure
-      services. If in doubt ask the TAs. Conduct a benchmark of the
-      service.
-
-      * Work on your project
-      * Work on your chapter
-      * Make sure to work towards completion of your sections
+  TAs. More details ar posted in the syllabus of this class part of
+  this document.
 
 
 # Assignments
 
 We have there graded assignments all other activities are geard towards
-supporting these assignments.
+supporting these assignments. The assignments are created in such a
+way that they could (but do not have to) support your class project. 
+The assignments are posted in piazza in the `assignments` folder.
 
-The assignments are posted elsewhere and we will provide links to them
-here.
+
+As setting up your computer is not realy an assignment but a
+precondition, we do not grade you on this. Furthermore posting the Bio
+is not such a complex task and serves not only to showcase us that you
+have access to Piazza and can post to it, but also allows you to let
+others in the class to know them about you which may be helpful for
+finding a project partner.
+
+The real assignments for this class are as follows
 
 * Section contributions
+
+   You will create significan sections that could be integrated in the
+   handbook, a section is about one page long in epub format (:o: word
+   count is TBD). Typically an A+ stdundent contributes more than 5
+   such sections. The sections could also include significant
+   improvements. Sections can be theortical, or programming related
+   sections. The Microsoft Nafik section is a good example for e
+   contributed section.
+
 * Chapter contribution
+
+   You will create a unique non existing chapter that can be shared
+   with other students of this class. Chapters can be theoretical, but
+   most often students prefer the creation of practical
+   contributions. A good example is the Graphql section
+
 * Project
 
-Sections and chapter prepare you for the project
+   You will create a significant non trivial project related to cloud
+   computing and cloud engeneering. Up to three people can
+   collaborate. The project could be build on top of a previous
+   project but must have significant additions or
+   modifications. If a previous project is used a dtailed discussion
+   is to be held of what has been improved. We will discuss projects
+   in one of our future lectures. There are aa lot of examples in our
+   other class publications.
+
+More details are documented throughout the course.
 
