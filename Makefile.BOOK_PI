@@ -1,6 +1,7 @@
 INDEX=\
   chapters/SECTION/SECTION-PREFACE.md\
   chapters/version.md\
+  chapters/preface/corrections.md\
   chapters/authors.md\
   chapters/preface/create.md\
   chapters/preface/issues.md\
@@ -50,7 +51,7 @@ INDEX=\
   chapters/pi/car/car-face.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/SECTION/SECTION-IOT.md dest/chapters/iot/introduction.md dest/chapters/iot/tools.md dest/chapters/iot/hardware.md dest/chapters/iot/sensors.md dest/chapters/iot/grovepi.md dest/chapters/iot/dexter.md dest/chapters/iot/easyplug.md dest/chapters/iot/esp8266.md dest/chapters/iot/projects.md dest/chapters/iot/turtle.md dest/chapters/iot/pi.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/pi/setup-ultimate.md dest/chapters/pi/setup-dev.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/software2.md dest/chapters/pi/setup-multiple.md dest/chapters/pi/setup.md dest/chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md dest/chapters/pi/clusters/pi-now.md dest/chapters/pi/mpi.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pxe.md dest/chapters/pi/fortran.md dest/chapters/SECTION/SECTION-PI-CLUSTER-CLOUD.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/pi/clusters/pi-kubernetes.md dest/chapters/pi/clusters/pi-hadoop.md dest/chapters/pi/clusters/pi-spark.md dest/chapters/SECTION/SECTION-DRAFT.md dest/chapters/pi/clusters/pi-configure-cluster.md dest/chapters/pi/clusters/pi-setup.md dest/chapters/pi/car/car-face.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/corrections.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/issues.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/pi/preface.md dest/chapters/pi/board.md dest/chapters/SECTION/SECTION-IOT.md dest/chapters/iot/introduction.md dest/chapters/iot/tools.md dest/chapters/iot/hardware.md dest/chapters/iot/sensors.md dest/chapters/iot/grovepi.md dest/chapters/iot/dexter.md dest/chapters/iot/easyplug.md dest/chapters/iot/esp8266.md dest/chapters/iot/projects.md dest/chapters/iot/turtle.md dest/chapters/iot/pi.md dest/chapters/pi/case.md dest/chapters/case/case.md dest/chapters/pi/links.md dest/chapters/pi/exercise.md dest/chapters/pi/setup-ultimate.md dest/chapters/pi/setup-dev.md dest/chapters/pi/config-display.md dest/chapters/pi/vnc.md dest/chapters/pi/motherboard-led.md dest/chapters/pi/run-at-boot.md dest/chapters/pi/software2.md dest/chapters/pi/setup-multiple.md dest/chapters/pi/setup.md dest/chapters/SECTION/SECTION-PI-CLUSTER-TRADITIONAL.md dest/chapters/pi/clusters/pi-now.md dest/chapters/pi/mpi.md dest/chapters/pi/slurm.md dest/chapters/pi/clusters/pxe.md dest/chapters/pi/fortran.md dest/chapters/SECTION/SECTION-PI-CLUSTER-CLOUD.md dest/chapters/pi/clusters/pi-docker.md dest/chapters/pi/clusters/pi-kubernetes.md dest/chapters/pi/clusters/pi-hadoop.md dest/chapters/pi/clusters/pi-spark.md dest/chapters/SECTION/SECTION-DRAFT.md dest/chapters/pi/clusters/pi-configure-cluster.md dest/chapters/pi/clusters/pi-setup.md dest/chapters/pi/car/car-face.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -61,6 +62,10 @@ dest/chapters/SECTION/SECTION-PREFACE.md: ../chapters/SECTION/SECTION-PREFACE.md
 dest/chapters/version.md: ../chapters/version.md
 	../bin/markup-single.py ../chapters/version.md 2
 	../bin/header.py dest/chapters/version.md 2
+
+dest/chapters/preface/corrections.md: ../chapters/preface/corrections.md
+	../bin/markup-single.py ../chapters/preface/corrections.md 2
+	../bin/header.py dest/chapters/preface/corrections.md 2
 
 dest/chapters/authors.md: ../chapters/authors.md
 	../bin/markup-single.py ../chapters/authors.md 2
