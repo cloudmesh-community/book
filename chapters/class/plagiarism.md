@@ -31,8 +31,7 @@ Furthermore you are supposed to review our lecture material on
 plagiarism and take the plagiarism test. The information is located
 at:
 
-* [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) 
+* [Scientific Writing with Markdown](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-markdown.epub) 
 
-In Piazza a form will be
-posted that will ask you for your passing ID. If the form is not yet
-posted, please be patient till it is.
+In Piazza a form will be posted that will ask you for your passing
+ID. If the form is not yet posted, please be patient till it is.
