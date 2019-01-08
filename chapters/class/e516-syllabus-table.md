@@ -1,97 +1,109 @@
-## Course Syllabus {#s-516-syllabus}
-
-For the Syllabus see teh quick start section.
-
-
-
-|     | Dates  | Unit | Title  | Description |
-| --- |------ | --- | ------- | --------------------- |
-| :white_check_mark: | 08/24    | 1       | Introduction       | [Gregor von Laszewski](#research-interests)[:cloud:][gregor.md] |
-| :white_check_mark: | 08/24    |         |                    | [Class summary](E516 Summary)[:cloud:][e516-summary.md] |
-| :white_check_mark: | 08/24    |         |                    | [Definition of Cloud Computing](#definition-of-cloud-computing)[:cloud:][e516-definition.md] |
-| :white_check_mark: | 08/31    | 2       | Tools              | **Tools and Services** |
-| :white_check_mark: | 08/31    |         |                    | - [Virtual Box](#virtual-box)[:cloud:][virtualbox.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Vagrant](#vagrant)[:cloud:][vagrant.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Github](#github)[:cloud:][github.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Linux](#s-linux)[:cloud:][linux.md] |
-| :white_check_mark: | 08/31    | 3       | Python             | **Python** |
-| :white_check_mark: | 08/31    |         |                    | - [Introduction](#s-python-intro)[:cloud:][python-intro.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Installation](#s-python-install)[:cloud:][python-install.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Interactive Python](#interactve python)[:cloud:][python-interactive.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Editors](#s-python-editor)[:cloud:][python-editor.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Basic Language Features](#s-python-language)[:cloud:][python.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Modules](#s-python-modules)[:cloud:][python-libraries.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Data Management](s-python-data)[:cloud:][python-data.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Matplotlib](#matplotlib)[:cloud:][python-matplotlib.md] |
-| :white_check_mark: | 08/31    |         |                    | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[:cloud:][python-cmd5.md] |
-| :white_check_mark: | 09/13    |         |                    | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
-| :white_check_mark: | 09/13    |         |                    | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
-| :white_check_mark: | 09/03    |         |                    | [Data Center][datacenter.md] |
-| :white_check_mark: | 09/10    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-| :white_check_mark: | 09/13    |         |                    | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
-| :white_check_mark: | 09/15    |         |                    | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-| :white_check_mark: | 09/24    | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[:cloud:][virtualization.md] |
-| :white_check_mark: | 09/24    | 5       | Virtualization I   | - [Qemu](#s-qemu)[:cloud:][qemu.md] |
-| :white_check_mark: | 09/15    | 6       | Infrastructure     | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
-| :white_check_mark: | 09/17    |         |                    | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
-| :white_check_mark: | 09/17    |         |                    | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
-| :white_check_mark: | 09/17    |         |                    | - [OpenStack](#s-openstack) [:cloud:][openstack.md] |
-| :white_check_mark: | 09/17    |         | Chameleon Cloud    | - **Chameleon Cloud** |
-| :white_check_mark: | 09/17    |         |                    | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
-| :white_check_mark: | 09/17    |         |                    | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
-| :white_check_mark: | 09/17    |         |                    | - [Charge](#chameleon-cloud-charge-rates)[:cloud:][charge.md] |
-| :white_check_mark: | 09/17    |         |                    | - [Quick start](#getting-started-on-chameleon-cloud)[:cloud:][start.md] |
-| :white_check_mark: | 09/17    |         |                    | - [KVM user guide](#openstack-virtual-machines)[:cloud:][user-guide.md] |
-| :white_check_mark: | 09/17    |         |                    | - [CLI](#openstack-command-line-interface)[:cloud:][cli.md] |
-| :white_check_mark: | 09/17    |         |                    | - [Horizon](#openstack-horizon)[:cloud:][horizon.md] |
-| :white_check_mark: | 09/17    |         |                    | - [Heat](#openstack-heat)[:cloud:][heat.md] |
-| :white_check_mark: | 09/17    |         |                    | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
-| :white_check_mark: | 09/17    |         |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
-| :o:                | 10/03    |         | Virtualization  II | Containers, Docker, Kubernetes |
-| :white_check_mark: | 10/08    | 8       | Programming        | Python for Cloud Computing, |
-| :white_check_mark: | 10/08    |         |                    | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
-| :white_check_mark: | 10/08    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
-| :white_check_mark: | 09/11    |         |                    | - [REST Services](#rest)[:cloud:][rest.md] |
-| :white_check_mark: | 09/11    |         |                    | - [Rest Services with OpenAPI](#rest-services-with-openapi)[:cloud:][swagger.md] |
-| :white_check_mark: | 09/11    |         |                    | - [OpenAPI Spec](#openapi-spec)[:cloud:][swagger-spec.md] |
-| :white_check_mark: | 09/11    |         |                    | - [OpenAPI Codegen](#openapi-codegen)[:cloud:][swagger-codegen.md] |
-| :o:                | 10/22    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
-| :white_check_mark: | 10/29    | 10      | Messaging          | Messaging |
-| :white_check_mark: | 10/29    | 11      | Messaging          | - [MQTT](#mqtt)[:cloud:][mqtt.md]  |
-| :white_check_mark: | 11/05    |         |                    | - [Graphql](#s-graphql)[:cloud:][graphql.md]  |
-| :o:                | 11/19    | 12      | Go                 | [Go Introduction](#s-go-intro)[:cloud:][go-intro.md] |
-| :o:                | 11/19    |         |                    | - [Go Links](#s-go-links)[:cloud:][go-links.md] |
-| :o:                | 11/19    |         |                    | - [Go Install](#s-go-install)[:cloud:][go-install.md] |
-| :white_check_mark: | 11/19    |         |                    | - [Go Editors](#s-go-editor)[:cloud:][go-editor.md] |
-| :o:                | 11/19    |         |                    | - [Go Language](#s-go-language)[:cloud:][go-language.md] |
-| :o:                | 11/19    |         |                    | - [Go Libraries](#s-go-libraries)[:cloud:][go-libraries.md] |
-| :o:                | 11/19    |         |                    | - [Go cmd](#s-go-cmd)[:cloud:][go-cmd.md] |
-| :o:                | 11/19    |         |                    | - [Go Cloud](#s-go-cloud)[:cloud:][go-cloud.md] |
-| :o:                | 11/19    |         |                    | - [Go REST](#s-go-rest)[:cloud][go-rest.md] |
-| :o:                | 11/19    |         |                    | - [Go for the Cloud](#s-go-cloud)[:cloud][go-cloud.md] |
-| :o:                | 12/03    | 13      | Edge Computing     | Edge Computing and the Cloud |
-
-
-Assignments
-
-|     | Dates  | Unit | Title  | Description |
-| --- |------ | --- | ------- | --------------------- |
-| :white_check_mark: | 09/13-11/02*                | A1      | Sections           | Contribute significant sections. Do not develop redundant or duplicated content. |
-| :white_check_mark: | 09/13-11/02*                | A2      | Chapter            | Contribute a significant chapter that may use your section to the class documentation. Do not develop redundant or duplicated content. |
-|  | 09/24-11/26*                | A3      | Project Type A     | Build a cloud out of Raspberry PIs |
-|  | 09/24-11/26*                |         |                    | Kubernetes, Hadoop, SLURM + OpenAPI Service,  |
-|  | 09/24-11/26*                |         | Project Type B     | Build a Significant OpenAPI REST Service |
-|  | 09/24-11/26*                |         | Project Type C     | Build an Edge Service Interfacing with a Cloud |
-|  | 09/24-11/26*                |         | Project Type D     | Contribute to the new Cloudmesh code |
-|  | 09/24-11/26*                |         | Project Type E     | Your own Project Type A, B, C, D [upon approval) |
+# Course Syllabus Tables {#s-516-syllabus}
 
 Legend markings
 
 * Class released :white_check_mark: | 
 * Class under development :o:
 
+:o: Warning the dates may change not yet correct.
 
- 
+* Semester Start for this class 01/07
+* Semester end for this class 05/03, all assignments are due 2 weeks before semester end.
+
+## Proposed Lecture Timeline
+
+The times indicate when to start a particular technology documentation
+or lecture. It may take you some weeks to complete some of the
+sections. If you know the topic well, it may take you less time so you
+should move ahead. For example while it may take some time for some
+to learn python, others have the knowledge already and should move on.
+The book can be used as reference material in that case.
+
+|     | Dates  | Unit | Title  | Description |
+| --- |------ | --- | ------- | --------------------- |
+| :white_check_mark: | 01/07   | 1       | Introduction       | [Gregor von Laszewski](#research-interests)[:cloud:][gregor.md] |
+| :white_check_mark: | 01/07    |         |                    | [Class summary](E516 Summary)[:cloud:][e516-summary.md] |
+| :white_check_mark: | 01/07    |         |                    | [Definition of Cloud Computing](#definition-of-cloud-computing)[:cloud:][e516-definition.md] |
+| :white_check_mark: | 01/07    | 2       | Tools              | **Tools and Services** |
+| :white_check_mark: | 01/07    |         |                    | - [Virtual Box](#virtual-box)[:cloud:][virtualbox.md] |
+| :white_check_mark: | 01/07    |         |                    | - [Vagrant](#vagrant)[:cloud:][vagrant.md] |
+| :white_check_mark: | 01/07    |         |                    | - [Github](#github)[:cloud:][github.md] |
+| :white_check_mark: | 01/07    |         |                    | - [Linux](#s-linux)[:cloud:][linux.md] |
+| :white_check_mark: | 01/14    | 3       | Python             | **Python** |
+| :white_check_mark: | 01/14    |         |                    | - [Introduction](#s-python-intro)[:cloud:][python-intro.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Installation](#s-python-install)[:cloud:][python-install.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Interactive Python](#interactve python)[:cloud:][python-interactive.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Editors](#s-python-editor)[:cloud:][python-editor.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Basic Language Features](#s-python-language)[:cloud:][python.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Modules](#s-python-modules)[:cloud:][python-libraries.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Data Management](s-python-data)[:cloud:][python-data.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Matplotlib](#matplotlib)[:cloud:][python-matplotlib.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[:cloud:][python-cmd5.md] |
+| :white_check_mark: | 01/14    |         |                    | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
+| :white_check_mark: | 01/21    |         |                    | [Data Center][datacenter.md] |
+| :white_check_mark: | 01/21    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
+| :white_check_mark: | 01/21    |         |                    | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
+| :white_check_mark: | 01/21    |         |                    | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
+| :white_check_mark: | 01/28   | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[:cloud:][virtualization.md] |
+| :white_check_mark: | 01/28    | 5       | Virtualization I   | - [Qemu](#s-qemu)[:cloud:][qemu.md] |
+| :white_check_mark: | 01/28    | 6       | Infrastructure     | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
+| :white_check_mark: | 01/28    |         |                    | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
+| :white_check_mark: | 01/28    |         |                    | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
+| :white_check_mark: | 01/28    |         |                    | - [OpenStack](#s-openstack) [:cloud:][openstack.md] |
+| :white_check_mark: | 02/04    |         | Chameleon Cloud    | - **Chameleon Cloud** |
+| :white_check_mark: | 02/04    |         |                    | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
+| :white_check_mark: | 02/04    |         |                    | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
+| :white_check_mark: | 02/04    |         |                    | - [Charge](#chameleon-cloud-charge-rates)[:cloud:][charge.md] |
+| :white_check_mark: | 02/04    |         |                    | - [Quick start](#getting-started-on-chameleon-cloud)[:cloud:][start.md] |
+| :white_check_mark: | 02/04    |         |                    | - [KVM user guide](#openstack-virtual-machines)[:cloud:][user-guide.md] |
+| :white_check_mark: | 02/04    |         |                    | - [CLI](#openstack-command-line-interface)[:cloud:][cli.md] |
+| :white_check_mark: | 02/04    |         |                    | - [Horizon](#openstack-horizon)[:cloud:][horizon.md] |
+| :white_check_mark: | 02/04    |         |                    | - [Heat](#openstack-heat)[:cloud:][heat.md] |
+| :white_check_mark: | 02/04    |         |                    | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
+| :white_check_mark: | 02/04    |         |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
+| :white_check_mark: | 02/11    | 8       | Programming        | Python for Cloud Computing, |
+| :white_check_mark: | 02/11    |         |                    | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
+| :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
+| :white_check_mark: | 02/11    |         |                    | - [REST Services](#rest)[:cloud:][rest.md] |
+| :white_check_mark: | 02/11    |         |                    | - [Rest Services with OpenAPI](#rest-services-with-openapi)[:cloud:][swagger.md] |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#openapi-spec)[:cloud:][swagger-spec.md] |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Codegen](#openapi-codegen)[:cloud:][swagger-codegen.md] |
+| :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
+| :o:                | 02/18    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
+| :white_check_mark: | 02/25    | 10      | Messaging          | Messaging |
+| :white_check_mark: | 02/25    | 11      | Messaging          | - [MQTT](#mqtt)[:cloud:][mqtt.md]  |
+| :white_check_mark: | 03/04    |         |                    | - [Graphql](#s-graphql)[:cloud:][graphql.md]  |
+| :o:                | 04/01   |       | Go                 | [Go Introduction](#s-go-intro)[:cloud:][go-intro.md] |
+| :o:                | 04/01    |         |                    | - [Go Links](#s-go-links)[:cloud:][go-links.md] |
+| :o:                | 04/01    |         |                    | - [Go Install](#s-go-install)[:cloud:][go-install.md] |
+| :white_check_mark: | 04/01    |         |                    | - [Go Editors](#s-go-editor)[:cloud:][go-editor.md] |
+| :o:                | 04/01    |         |                    | - [Go Language](#s-go-language)[:cloud:][go-language.md] |
+| :o:                | 04/01    |         |                    | - [Go Libraries](#s-go-libraries)[:cloud:][go-libraries.md] |
+| :o:                | 04/01    |         |                    | - [Go cmd](#s-go-cmd)[:cloud:][go-cmd.md] |
+| :o:                | 04/01    |         |                    | - [Go Cloud](#s-go-cloud)[:cloud:][go-cloud.md] |
+| :o:                | 04/01    |         |                    | - [Go REST](#s-go-rest)[:cloud][go-rest.md] |
+| :o:                | 04/01    |         |                    | - [Go for the Cloud](#s-go-cloud)[:cloud][go-cloud.md] |
+| :o:                | 04/15    | 13      | Edge Computing     | Edge Computing and the Cloud |
+
+
+## Proposed Assignments Timeline
+
+|     | Dates  | Unit | Title  | Description |
+| --- |------ | --- | ------- | --------------------- |
+| :white_check_mark:| 01/22-03/17    | A0      | Survey          | Fill out the Survey before Friday in the firts week |
+| :white_check_mark:| 01/22-03/17    | A0      | Bio          | Post your formal Bio into Piazza |
+| :white_check_mark:| 01/22-03/17    | A1      | Sections           | Contribute significant sections. Do not develop redundant or duplicated content. |
+| :white_check_mark: | 01/22-03/17   | A2      | Chapter            | Contribute a significant chapter that may use your section to the class documentation. Do not develop redundant or duplicated content. |
+| :white_check_mark: | 01/22-03/17   | A3      | Project Report draft due            | Develop a draft for the project. This is a hard deadline as w integrate your draft into a proceedings over the berak.  |
+| :white_check_mark: |01/22-04/21    | A3      | Project Type A     | Build a cloud clustert out of Raspberry PIs |
+| :white_check_mark: | 01/22-04/21                |         | Project Type B     | Build a Significant OpenAPI REST Service |
+| :white_check_mark: | 01/22-04/21                |         | Project Type C     | Build an Edge Service Interfacing with a Cloud |
+| :white_check_mark: | 01/22-04/21                |         | Project Type D     | Contribute to the new Cloudmesh code |
+| :white_check_mark: | 01/22-04/21                |         | Project Type E     | Your own Project Type A, B, C, D [upon approval) |
+
+You have to do only one project type.
+
 
 [arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
 [gregor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md
@@ -173,94 +185,27 @@ These lectures can be taken any time when needed.
 
 | Date     | Unit    | Title             | Description
 | :----------- |:------- |:----------------- |:---------------------------
-| :white_check_mark: anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
+| :white_check_mark: anytime  | 1       | [Scientific Writing with markdown](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
 | :white_check_mark: anytime  |         | Plagiarism      | How to avoid plagiarism and cheating
 | :white_check_mark: anytime  |         | Markdown        | How to use markdown
 | :white_check_mark: anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |
+| :white_check_mark: anytime  | 1       | only relevant for the bibtex section fro this class, we will not use LaTeX |
 | :white_check_mark: anytime  |         | Writing a Project Report      | How to write a high quality Project report following our template
 | :white_check_mark: anytime  |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
-| :white_check_mark: anytime  | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) |
-| :white_check_mark: anytime  |         | Class Github      | How to use the class Github
-| :white_check_mark: anytime  |         | Class Piazza      | How to use the class Piazza
 
 </div>
 
-If you follow our template writing the report is like filling out a
-simple form. 
+## Group Breakdown Checkpoint
 
-
-
-    * Week Aug 20
-
-      Get familiar with the class structure. Read: Preface; Class
-      Overview; Exercise: Find a computer you can do the class
-      programming on (tablet and chrombook will not suffice). If you
-      like to do a Raspberry PI project or do not have a computer
-      order a Raspberry PI.
-
-    * Week Sep 3
-
-      Read: Definition of Clouds; find alternative definitions on the
-      internet; set up accounts on google, github; get hid directory;
-      start READNE.md, notebook.md; Read: Python, do some python
-      programming; understand classes
-
-    * Week Sep 10
-
-      Read: docopts and experiment; Read Data Center section and
-      contribute to that section; complete setup of your class
-      computer; use pyenv
-
-    * Week Sep 17
-
-      Read Architectures section; Read NIST section; Learn about REST;
-      learn about swagger; Experiment with swagger code gen
-
-    * Week Sep 24 and Oct 1
-
-      Read about Virtual machines; Start a VM on a cloud of your
-      choice. At minimum use Virtualbox. To do the assignment Read the
-      Infrastructure as a Service Section. Focus on the section for
-      the cloud you have chosen; Read up on Chameleon Cloud, start a
-      VM on chameleon cloud; Participate in within a new version of
-      cloudmesh in python which is checked in
-      [github :cloud:](https://github.com/cloudmesh-community/cm)
-
-      Tip: pick an area you can contribute, use libcloud to interface
-      with your cloud that you have chosen. Remember you do not have
-      to do all the clouds at this time, you can each week from now
-      work with a different cloud if you like. It is
-      recommended that you try programming with libcloud! To prepare
-      yourself for the project.
-
-    * Oct 10
-
-      Read the section on MQTT in prepartion for Edge Computing. Try
-      to deploy an mqtt server on your computer and use it. Optionally
-      also try a cloud mqtt server.
-      Read the section on GraphQL (if that section is
-      ready). Experiment with GraphQL. Develop an inventory of compute
-      resources in GraphQL, that you populate and quesry. Develop a
-      NIST OpenAPI framework for a computer inventory. Identify
-      adbatages and disadvanteges opf using GraphQL. When are ther
-      instances that GraphQL does not work well (Tip: compare to
-      MongoDB).
-
-      * Define your project
-      * Define your chapter
-      * Make sure you have sections selected and start completing them
-
-    * Oct 15
-
-      Read the Container section (the parts that do not have a :o:
-      indicating that they are ready. Try using containers on your
-      machine. If you do not have access to containers on your machine
-      please use echo docker swarm and/or kubernetes. Develop a
-      service you can deploy and test. Do not expose andy insecure
-      services. If in doubt ask the TAs. Conduct a benchmark of the
-      service.
-
-      * Work on your project
-      * Work on your chapter
-      * Make sure to work towards completion of your sections
+Please note that all checkins in case of group projects are visible in
+github. If we detect that a group member has disproportionally fewer
+contributions to the project that other project team members we will
+invite the team for a special section in which each team member needs
+to explain what has been done. This is to avoid that a team member
+unfairly relies on other team members and does not contribute to the
+project. E.g. a project containing for example 3 members should
+contribute the work of 3 team members and not fewer. This also means
+that if you want to work in a project you need to vet your team
+members. Do chose them based on capability and make sure they are a
+good fit for your project.
 

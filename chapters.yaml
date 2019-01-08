@@ -311,8 +311,8 @@
 # 516
 # #####################################################################
 
-
-# -  chapters/rest/swagger-bravado.md
+# - chapters/cloud/use-cases.md
+# - chapters/rest/swagger-bravado.md
 
 - BOOK_516:
     - $ref:PREFACE
@@ -329,7 +329,6 @@
         - chapters/class/e516-summary.md
         - chapters/class/volumes.md
     - chapters/class/e516-definition.md
-    - chapters/cloud/use-cases.md
     - chapters/cloud/datacenter.md
     - chapters/arch.md
     - chapters/nist/bdra.md:

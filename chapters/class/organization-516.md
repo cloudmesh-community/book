@@ -1,5 +1,4 @@
-Organization
-============
+# Organization
 
 This class is an online class. Online classes require you to be very
 disciplined in order to execute the tasks necessary for the class in
@@ -14,7 +13,7 @@ posted location and hours once a week. For pure online students we
 have weekly online hours that we will identify based on our
 availability and a doodle poll.
 
-Figure *Components of the Class e516, e534 and e616* showcases the
+ +@fig:class-516-structure showcases the
 different parts of the class.  If you have taken a previous class with
 Gregor von Laszewski you are able to continue your previous project
 upon approval. It must however be a significant improvement.
@@ -23,29 +22,23 @@ There will not be any bonus projects or tasks to improve
 grades. Instead make sure your deliverables of the view assignments
 are truly outstanding.
 
-Note: we have reduced this year the requirement of writing a 2 page
-paper about a cloud technology. Instead you will be focusing on
-writing about the technology in a markdown file and provide a
-practical section. The volume is about equivalent to a 1.5 page paper.
-Please check with Gregor on applicability of your idea.
+![Figure: Components of the Class e516, e534 and e616](images/e516-overview.png){#fig:class-516-structure}
 
-![Figure: Components of the Class e516, e534 and e616](images/e516-overview.png){width=100%}
+:o: caption in wrong format
 
 The content for this class will be available through a series of
 documents that will be regularly updated and are linked from this
 document. All communication is done with Piazza. 
 
 
-First Week
-----------
+## First Week
 
 In the first week we will be introducing you how we communicate to you.
 Naturally you need to register for the class. Once you register you need
 to set up a number of services. 
 
 
-IoT Hardware
-------------
+## IoT Hardware
 
 As part of this class you also have the ability to take part in some
 Internet of Things related projects but also a small cloud cluster
@@ -55,8 +48,7 @@ that is optional. You can do the class without the PI educational
 component. However it is fun to build your own cloud with them.
 
 
-Access to Clouds
-----------------
+## Access to Clouds
 
 As part of the course you will also need access to a computer. We will
 try our best to provide you with access to suitable computers for the class,
@@ -93,8 +85,7 @@ resource vs. cost estimate.
 Listing the used computer time for your project is part of your
 report.
 
-Using Your Own Computer
------------------------
+## Using Your Own Computer
 
 In many cases however you could and are recommended to use your own
 personal computer, but make sure the computer is up-to-date. We also
@@ -211,8 +202,7 @@ be made to a conference or workshop paper. Dr. von Laszewski is happy
 to help as co-author.
 
 
-Parallel Tracks
----------------
+## Parallel Tracks
 
 In this class we have three parallel tracks. 
 
@@ -259,22 +249,20 @@ include naturally Cloud computing.
 
 ### Track 3: Writing
 
-This track will introduce you into how to write a section and
-conduct proper bibliography management. Knowing how to write is a
+This track will introduce you into how to write a sections, a chapter,
+and examples while conducting proper bibliography management. Knowing how to write is a
 preparation for your term project. 
 
 You will be writing a section of substantial length and
-difficulty. In ACM format this is typically 1.5 pages long. We will
-throughout the class estimate how many word this is. We suggest to do
-the section in a team as this allows one to write about it and
-another person to test it.
- We like to avoid that all students take the
-same topic. We will use github to avoid that everyone chooses same
-topic. Knowing how to write a section will be a valuable exercise as
-the TAs will also need a section in which you describe how to
-execute your project. It also prepares you in a gentle form on writing
-your project report. In general you need to look at previous examples
-for the class to identify project reports.
+difficulty using markdown.
+We suggest to do the section in a team as this allows one to write
+about it and another person to test it.  We like to avoid that all
+students take the same topic. We will use github to avoid that
+everyone chooses same topic. Knowing how to write a section will be a
+valuable exercise as the TAs will also need a section in which you
+describe how to execute your project. It also prepares you in a gentle
+form on writing your project report. In general you need to look at
+previous examples for the class to identify project reports.
 
 
 
@@ -294,15 +282,6 @@ for the project and that you learn how to apply this analysis as well as
 justify it. It is part of the learning outcome that you determine this
 instead of us giving you a topic.
 
-We noticed a curious observation in previous classes. Any paper
-written in MSWord was inferior. Thus we no longer provide the choice
-to write papers in MSWord in order for you to achieve your
-best. Project reports must be written in LaTeX. We have a very simple
-LaTeX template and if you treat it like a for it will be very easy for
-you to generate a high quality report. All reports must be provided in
-latex source committed to github. The report will than be compiled
-through scripts and a class proceedings will be created. The
-proceedings will be citable by you in your resumes.
 
 
 

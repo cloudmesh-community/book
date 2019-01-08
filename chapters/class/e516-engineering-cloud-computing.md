@@ -100,8 +100,8 @@ The course has the following objectives:
 
 # Syllabus
 
-For the syllabus table please see the
-[Syllabus Table Section](#s-516-syllabus) [:cloud:](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-syllabus-table.md).
+For the syllabus table please see the the syllabus table
+
 
 ## Assessment
 
@@ -164,41 +164,3 @@ significant updates on infrastructure, technology, or even programming
 models used. It is best to complete the course within one semester.
 
 
-### Calendar 
-
-<div class="smalltable">
-  
-|  Assignment #  | Event |     | Date 
-| --- | ----- | --- | --- 
-|    | Full Term           | | 16 Weeks |
-|   | *Begins*	          | | Mon 08/20 |
-| 1, 2 | **Bio, Notebook**   | assigned | Mon 08/20 |
-| 1, 2 | **Bio, Notebook**   | due  | Mon 08/27 9am |
-| 3 | **Sections**    | assigned | Mon 09/03 |
-| 4 | **Chapter**         | assigned | Mon 09/03 |
-| 5 | **Project**         | selection or proposal  | Mon 09/03 |
-|   | *Labor Day*	      |  | Mon 09/03 |
-| 5 | **Project** | update | 10/05 9am EST |
-|   | *Fall Break*	      | | 10/05 - 10/07 |
-|   | *Auto W*	          | | Sun 10/21 |
-| 5 | **Project** | update | 11/02 9am EST |
-| 3 | **Section** | due | 11/02 9am EST |
-| 4 | **Chapter** | due | 11/02 9am EST |
-|   | *Thanksgiving*	  |    | 11/18 - 11/25 |
-| 5 | **Project**         | due	       | 11/26 9am EST |
-| 5 | **Project** (no penalty) | improvements | 11/26 - 12/03 9am EST |
-| 5 | **Project** (with penalty) | improvements | 12/04 - 12/07 9am EST |
-|   | **Final Deliverables due**  |  | 12/07 9am EST|
-|   | *Grading*	          |  | 12/01 - 12/14 |
-|   | *Ends*	          |  | Fri 12/14 |
-|   | grade submission to school | | Fri 12/14 |
-|   | grade posting by registrar | | 12/31 |
-
-</div>
-
-* TA's must be available till all grades have been submitted. 
-* Bio: a formal 3 paragraph Bio
-* Notebook: a markdown in which you record your progress of
-  this class in bullet form
-* All times are in EST
-* Dependent on class progress Comprehension Assignments may be added
