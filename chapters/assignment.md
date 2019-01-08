@@ -1,48 +1,45 @@
 # Assignments
 
-For more details see the course syllabus and overview pages. We give
-here just some summary.
+We have three graded assignments all other activities are geard towards
+supporting these assignments. The assignments are created in such a
+way that they could (but do not have to or may not) support your class project. 
+The assignments are posted in piazza in the `assignments` folder.
+
+Besides the account creation you will have the following assignments:
+
+* Section contributions
+* Chapter contributions
+* Project
+
+We will introduce you to more details next.
+
 
 ## Account Creation
 
+As setting up your computer is not really an assignment but a
+precondition, we do not grade you on this. Furthermore posting the Bio
+is not such a complex task and serves not only to showcase us that you
+have access to Piazza and can post to it, but also allows you to let
+others in the class to know them about you which may be helpful for
+finding a project partner.
+
 As part of the class you will need a number of [accounts]{.index}
 
-* piazza.com
-* github.com
-* futuresystems.org
-* chameleoncloud.org
-* google.com
-* aws.com (free account)
+* piazza.com (used for communication)
+* github.com (used for project and other class artifacts)
+* futuresystems.org (free docker account)
+* chameleoncloud.org (free cloud account)
+* google.com (optional)
+* aws.com (optional)
 * azure.com (optional)
-* watson from IBM (optional)
+* Watson from IBM (optional)
 * google Iaas (optional)
 
-In our piazza we have details how to submit them to us. We split the
-submission in multiple sub-assignments as the github.com and piazza.com
-are needed within the first week.
+A survey is to be filled out in the first week of class. It includes
+your github.com account that we need to create your github directory
+in which you will submit your open source project.
 
-## Virtual Cluster
-
-All students can contribute on the creation of the Virtual Cluster
-that we will be using throughout the class to improve and interface
-with cloud and container frameworks.
-
-* <https://github.com/cloudmesh-community/cm>
-
-The residential students have been assigned this task, but online
-students can join and contribute
-
-## Projects that could substitute a chapter 
-
-Develop a cm-burn command that creates Raspberry PI OS based on
-manipulation of the file system
-
-* <https://github.com/cloudmesh-community/cm-burn>
-* <https://github.com/cloudmesh-community/cm>
-
-Substantial contributions are expected.
-
-## Sections, Chapters, Examples
+## Sections, Chapters with Examples
 
 As part of the class, we expect you to get familiar with topics
 related to cloud computing beyond what we have written in the lecture
@@ -52,42 +49,47 @@ tests. They showcase your understanding of the field.
 
 **Section:**
 
-: A section is a small section that explains a topic that
-  is not yet in the handbook or improves an existing section
-  significantly. It is typically multi-paragraphs long and can even
-  include an example if needed. Example sections that have been
-  provided are for example the Lambda section in the python chapter
+: A section is a small section that explains a topic that is not yet
+  in the handbook or improves an existing section significantly. It is
+  typically multi-paragraphs long and can even include an example if
+  needed. Sections can be theoretical, or programming related
+  sections.
+  Typically an A+ student contributes more than 5
+  such sections. 
 
-:  Sample of student contributed sections include:
+:  Sample sections contributed by students include:
 
-   * The Microsoft under water data center :o: add link
+   * The  Microsoft Nafik  data center :o: add link, see Table of
+     content for now.
    * [Lambda Expressions](#lambda-expressions)
 
-**Chapter:**
+**Chapter with Example:**
 
 : A chapter is a much longer topic and is a coherent
   description of a topic related to cloud computing. A chapter could
   either be a review of a topic or a detailed technical
   contribution. Several Sections (10+) may be a substitute for a
   chapter.
-
-: You will be contributing a **significant** chapter that can be used
+  You will be contributing a unique **significant** chapter that can be used
   by other students in the class and introduces the reader to a
-  general topic related to the topic of the class. In addition it is
-  expected if applicable to develop a practical example demonstrating
+  general topic related to the topic of the class. 
+  You will create a unique non existing chapter that can be shared
+  with other students of this class. Chapters can be theoretical, but
+  most often students prefer the creation of practical
+  contributions.  When doing a practical section, it is
+  expected to develop a practical example demonstrating
   how to use a technology. The chapter and the practical example can
   be done together. We do not like to use the term tutorial in our
   writeup but sometimes we refer to it in our assignments as
   such. Chapters that focus on theory may not have an example and it
-  can be substituted by a longer text.
+  can be substituted by a longer text. In case no example is provided
+  the example can be substituted in some cases by a review.
+
+  An example is a document that showcases the use of a
+  particular technology. Typically it is a console session or a
+  program. Examples augment Chapters as well as Sections.
 
 :  A sample of a student contributed chapter is * [GraphQL](#s-graphql).
-
-**Example:**
-
-: An example is a document that showcases the use of a
-  particular technology. Typically it is a console session or a
-  program. Examples augment chapters and Sections.
 
 
 :warning: It is expected from you that you self identify a section
@@ -95,26 +97,55 @@ or a chapter as this shows competence in the area of cloud
 computing. If however you do not know what to select, you must attend
 an online hour with us in which we identify sections and chapters with
 you. The emphasize here is that we do not decide them for you, but we
-identify them with you.
+identify them **with** you.
 
 Sample Topics that could form a section or chapter are clearly marked
-with a :question:. There are plenty in the handbook, but you are
+with a :question: or a :o:. There are plenty in the handbook, but you are
 welcome to define your own contributions. Discuss them with us in the
-online hours.
+online hours. To guarantee that they are unique and others know about
+it you will file a github issue for it once it is approved by us via a
+discussion either in an online hour or piazza.
 
-A list of topics identified by students is maintained in a spreadsheet.
+## Mini Projects that could Substitute a Chapter 
 
-See <https://piazza.com/class/jgxybbf5rnx5qd?cid=201> for details.
+In some special cases it is possible to substitute the chapter and/or
+section contributions with an additional mini project, that however
+still has to be documented. An example fo such a mini project is our 
+`cm-burn` command that creates Raspberry PI OS based on
+manipulation of the file system
 
-You are expected to signup in this spreadsheet. THis is done to 
-ab=void overlap and foster uniqueness of the assignment for sections 
-and chapters. 
+* <https://github.com/cloudmesh-community/cm-burn>
+* <https://github.com/cloudmesh-community/cm>
+
+Please note that this is not less work than developing a chapter
+and/or sections. You still will have to do a class project as the mini
+project does not substitute the class project.
+
+A mini project may be related to topics such as:
+
+* Raspberry PI 
+* Sechi Disk Partial Image Analysis
+* NIST OpenAPI definition and implementation
+
+Mini projects must be suggested and approved by Dr. Gregor von Laszewski.
 
 ## Project
 
+Project
+
+:  You will create a significant non trivial project related to cloud
+   computing and cloud engineering. Up to three people can
+   collaborate. The project could be build on top of a previous
+   project but must have significant additions or
+   modifications. If a previous project is used a detailed discussion
+   is to be held of what has been improved. We will discuss projects
+   in one of our future lectures. There are aa lot of examples in our
+   other class publications.
+
+
 Project:
 
-: We refer with the term project to the major activity that you chose
+: A project is the major activity that you chose
   as part of your class. The default case is an implementation project
   that requires a *project report* and project code.
 
@@ -142,10 +173,14 @@ Project Report:
   -   8 pages, two students in the project
   -   10 pages, three students in the project
 
-  We estimate that a single page is between 1000-1200 words.
-  Please note that for 2018 the format will be markdown, so the word
-  count will be used instead. How to use figures is explained in the
-  Notation of the handbook. We use bibtex for bibliographies.
+  Please note that the format will be markdown, so the word
+  count will be used instead.
+  We estimate that a single page is between 1000-1200 words in ePub format.
+  How to use figures is explained in the
+  Section Notation of the handbook. We use bibtex for bibliographies.
+
+  We will at a later time describe how and weher the project code and
+  report is stored.
 
 Project Code:
 
@@ -165,8 +200,6 @@ Data:
     not be stored in github. You will be expected to write a python
     program that downloads the data.
 
-
-
 Work Breakdown:
 
 :   This is an appendix to the document that describes in detail who did
@@ -183,15 +216,19 @@ Work Breakdown:
 
 Bibliography:
 
-: All bibliography has to be provided in a jabref/bibtex file. There
+: All bibliography has to be provided in a bibtex file that **MUST**
+    either be validated with **jabref** or with **emacs**. There
     is **NO EXCEPTION** to this rule. Please be advised doing
     references right takes some time so you want to do this
     early. Please note that exports of Endnote or other bibliography
     management tools do not lead to properly formatted bibtex files,
     despite they claiming to do so. You will have to clean them up and
-    we recommend to do it the other way around. Manage your
-    bibliography with jabref. Make sure labels only include chracters
-    from [a-zA-Z0-9-]. Use dashes and not underscore or : in the label.
+    we recommend to do it the other way around. The easies is to manage your
+    bibliography with jabref. Make sure **labels** only include characters
+    from [a-zA-Z0-9-]. Use dashes and not underscore and colons (`_` ,`:`) in the
+    label. We will deduct points if you submit an invalid bibtex file
+    to github. So please make sure your file is validated. You can
+    even create your own checks with tools such as biber.
 
 ### Project Deliverables
 
@@ -206,13 +243,17 @@ must be includable in the specification document.
 
 In general any project must  be 
 deployable by the TA. If it takes hours to deploy your project, please
-talk to us before final submission.
+talk to us before final submission. Also if it takes 100 steps, we are
+sure you can automate them ...
 
-You have plenty of time to make execute a wonderful project.
+You have plenty of time to execute a wonderful project but you need to
+work consistently on it. Starting one week before the deadline will
+not work. 
 
 The deliverables include but need to be updated according to your
 specific project, for example if you do Edge Computing some
-deliverabl;es will be different:
+deliverables will be different. In general your deliverables will
+include the following:
 
 - Provide benchmarks.
 
@@ -230,7 +271,8 @@ deliverabl;es will be different:
   the code and directory structure clean and document how to reproduce
   your results.
 
-- For python use a requirements.txt file also
+- For python use a requirements.txt file also, develop a setup.py so
+  your code can be installed with `pip install .`
 
 - For docker use a Dockerfile also 
 
@@ -249,11 +291,30 @@ deliverabl;es will be different:
   * Conclusion
   * (Work Breakdown)
 
-- Your paper will not have a *Future Work* section as this implies
-  that you will do work in future and your paper is incomplte, instead
-  you can use an optional "Limitations" section.
+* Your paper will not have a *Future Work* section as this implies
+   that you will do work in future and your paper is incomplete, instead
+   you can use an optional "Limitations" section.
 
-## Residential Students
+* Do communicate your status add a *Todo* section in which you outline
+   in pulled form which tasks need to be done, once yo u have done it
+   remove it from the todo list. 
+
+## Project: Virtual Cluster
+
+All students can contribute and participate on the creation of the
+Virtual Cluster software project that we will be using throughout the
+class to improve and interface with cloud and container frameworks.
+This project is managed at
+
+* <https://github.com/cloudmesh-community/cm>
+
+Residential students will work on this project and meet in a
+discussion group to work on it while having weekly assigned tasks they
+define with us. Online students are welcome to join this project and
+their tasks will be discussed in online hours, also here you will need
+weekly time to work on it.  Online students that are in the
+Bloomington area, are welcome to join our residential meetings (Please
+contact Gregor via piazza).
 
 Work on cloudmesh cm4, cm-burn or the NIST REST Specification document
 can reduce the project report deliverable (in size) while substituting
@@ -265,10 +326,20 @@ it with a **significant** larger programming contribution.
 * In case of NIST you will be expected to contribute to the NIST
   Specification.
 
+In addition to interfacing with clouds via an API, we are also
+interested to display the interactions in Javascript. So if you have
+Javascript skills this may be a good opportunity for you to contribute
+to the project with your previous knowledge. 
+
+
 ## Submission of sections and chapters and projects
 
 Sections and subsections are to be added to the `book` github repo. Do
-a pull request.  THe headline of the section needs to be marked with a
+a pull request. Initially they will be managed in your own github repo
+that we will set up for you. Only after they have been reviewed and
+are approved they may be added to the book, 
+
+The headline of the section needs to be marked with a
 :hand: if you still work on it, marked with a :smiley: if you want it
 to be graded. and have all hids for people that contribute to that
 section.
@@ -284,13 +355,13 @@ in the first hid mentioned in the group field. If you store it in multiple direc
         - title: title of the section 1
           url: https://github.com/cloudmesh-community/book/chapters/...
         - title: title of the section 2
-          url: https://github.com/cloudmesh-community/book/chapters/...    
+          url: https://github.com/cloudmesh-community/book/chapters/...
         - title: title of the section 3
-          url: https://github.com/cloudmesh-community/book/chapters/...         
+          url: https://github.com/cloudmesh-community/book/chapters/...
     chapter:
         - title: title of the chapter
           url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md
-          group: fa18-523-62 fa18-523-69
+group: fa18flys-523-62 fa18-523-69
           keyword: whatever
     project:
         - title: title of the project
@@ -304,5 +375,22 @@ in the first hid mentioned in the group field. If you store it in multiple direc
 
 
 You **MUST** run yamllint on the README.yml file. YAML errors will
-give point deductions
+give point deductions. Any invalid yaml file will result in point
+deductions. Please keep your yaml file valid at any time. Our scripts
+depend on it. The yaml file will also be used to create a list for TAs
+to review your deliverables, If its not in the yaml file it will not
+be reviewed.
+
+More details will be posted throughout the semester.
+
+## Participation 
+
+In addition to these artifacts, there will also be a participation
+component in class that will be determined based on your productive
+contributions to piazza to help others in case of questions and
+contributions to the books to for example improve sections with
+spelling, grammer or content. We can see from the github history if
+you conducted such improvements. Make sure that in case of technical
+contributions, they do work on all OSes and are not just targeting a
+single OS if the improvement is of general nature (exceptions apply).
 

@@ -116,3 +116,19 @@ properly embedded. Hence to read the document we recommend that you
 use an ePub reader.*
 
 ---
+
+Abbreviations :o:
+
+THis does not yet work
+
+Abbreviations can be stored in the file chapters/dbase and used as
+follows while using the video abbreviation
+
+
+```
++video
+```
+
++video
+
+It uses the filter defined at <https://github.com/scokobro/pandoc-abbreviations>
