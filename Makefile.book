@@ -211,11 +211,10 @@ todo:
 	cat dest/todo.md
 
 issues:
-	python ../bin/issues.py > /tmp/issues.tex
-	pandoc /tmp/issues.tex -o ../chapters/preface/issues.md
+	python ../bin/issues.py --markdown > ../chapters/preface/issues.md
 	cat ../chapters/issues-in.md > /tmp/issues.md
 	echo ".<div class=\"smalltable\">\n" >> /tmp/issues.md
-	tail -n +3 ../chapters/preface/issues.md >> /tmp/issues.md
+	cat ../chapters/preface/issues.md >> /tmp/issues.md
 	echo  >> /tmp/issues.md
 	echo ".</div>\n" >> /tmp/issues.md
 	echo  "\n\n\n\n" >> /tmp/issues.md
