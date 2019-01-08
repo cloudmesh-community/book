@@ -24,8 +24,6 @@ are truly outstanding.
 
 ![Figure: Components of the Class e516, e534 and e616](images/e516-overview.png){#fig:class-516-structure}
 
-:o: caption in wrong format
-
 The content for this class will be available through a series of
 documents that will be regularly updated and are linked from this
 document. All communication is done with Piazza. 
