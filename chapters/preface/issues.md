@@ -28,72 +28,73 @@ Assignees can change the summary to done. We will experiment with possibly addit
 .<div class="smalltable">
 
 
-llll Count & Number & title & Assignee\
-1 & [211](https://github.com/cloudmesh-community/book/issues/211) & some
-refs missing & pulasthi\
-2 & [190](https://github.com/cloudmesh-community/book/issues/190) &
-Hadoop 3.1.1 & bfeng\
-3 & [189](https://github.com/cloudmesh-community/book/issues/189) &
-Open: bibtex entries for FaaS Sections & bfeng\
-4 & [187](https://github.com/cloudmesh-community/book/issues/187) &
-update cloud section for 523 & laszewsk\
-5 & [186](https://github.com/cloudmesh-community/book/issues/186) &
-figure refernces \#fig:label & bfeng\
-6 & [184](https://github.com/cloudmesh-community/book/issues/184) & fix
-bibtex entries & None\
-7 & [180](https://github.com/cloudmesh-community/book/issues/180) & E534
-Cloud Section lecture videos merged into E-books & laszewsk\
-8 & [173](https://github.com/cloudmesh-community/book/issues/173) &
-biber installation & bfeng\
-9 & [152](https://github.com/cloudmesh-community/book/issues/152) &
-Upload lecture videos from Prof Fox's Google Drive to Youtube &
-laszewsk\
-10 & [148](https://github.com/cloudmesh-community/book/issues/148) &
-Open: IU GUEST, IU Secure & Raspberry Pi & bfeng\
-11 & [146](https://github.com/cloudmesh-community/book/issues/146) &
-Open: ssh port forwarding section & pulasthi\
-12 & [145](https://github.com/cloudmesh-community/book/issues/145) &
-Open: manage vm guests with virsh & pulasthi\
-13 & [144](https://github.com/cloudmesh-community/book/issues/144) &
-bigdata missing improvements & None\
-14 & [139](https://github.com/cloudmesh-community/book/issues/139) &
-Codecov & pulasthi\
-15 & [136](https://github.com/cloudmesh-community/book/issues/136) &
-figures & bfeng\
-16 & [135](https://github.com/cloudmesh-community/book/issues/135) &
-coordinate with instructors review of tech & bfeng\
-17 & [134](https://github.com/cloudmesh-community/book/issues/134) &
-bibtex erros in technologies & bfeng\
-18 & [126](https://github.com/cloudmesh-community/book/issues/126) &
-bibtex: 523 & bfeng\
-19 & [115](https://github.com/cloudmesh-community/book/issues/115) &
-Check and redo Docker Hadoop 3.0.1 and Docker for Hadoop section. &
-bfeng\
-20 & [110](https://github.com/cloudmesh-community/book/issues/110) &
-replace images with text & bfeng\
-21 & [79](https://github.com/cloudmesh-community/book/issues/79) &
-comment after first heading in a afile & bfeng\
-22 & [77](https://github.com/cloudmesh-community/book/issues/77) & add
-mapreduce to syllabus & bfeng\
-23 & [76](https://github.com/cloudmesh-community/book/issues/76) &
-openapi demo & laszewsk\
-24 & [68](https://github.com/cloudmesh-community/book/issues/68) & bib:
-create bibtex entries for go-intro.md & bfeng\
-25 & [58](https://github.com/cloudmesh-community/book/issues/58) & epub:
-use numbered Figure refernces & bfeng\
-26 & [51](https://github.com/cloudmesh-community/book/issues/51) & Open:
-OpenAPI in GO & bfeng\
-27 & [50](https://github.com/cloudmesh-community/book/issues/50) & Open:
-REST in go & bfeng\
-28 & [49](https://github.com/cloudmesh-community/book/issues/49) & Open:
-Develop a tutorial on the Parallel language constructs in Go & bfeng\
-29 & [48](https://github.com/cloudmesh-community/book/issues/48) & Open:
-Develop an introduction to Go & bfeng\
-30 & [47](https://github.com/cloudmesh-community/book/issues/47) & Open:
-Hot cold isles in data center & laszewsk\
-31 & [9](https://github.com/cloudmesh-community/book/issues/9) &
-Internal: Slides to video are not included in the introduction &
-laszewsk\
+
+| Count | Number | Title | Assignee |
+| --- | --- | ---------------------------------------------------------------- | -------- |
+| 1 | 211 | [some refs missing][i211] | pulasthi|
+| 2 | 190 | [Hadoop 3.1.1][i190] | bfeng|
+| 3 | 189 | [Open: bibtex entries for FaaS Sections][i189] | bfeng|
+| 4 | 187 | [update cloud section for 523][i187] | laszewsk|
+| 5 | 186 | [figure refernces {#fig:label}][i186] | bfeng|
+| 6 | 184 | [fix bibtex entries ][i184] | None|
+| 7 | 180 | [E534 Cloud Section lecture videos merged into E-books][i180] | laszewsk|
+| 8 | 173 | [biber installation][i173] | bfeng|
+| 9 | 152 | [Upload lecture videos from Prof Fox's Google Drive to Youtube][i152] | laszewsk|
+| 10 | 148 | [Open: IU GUEST, IU Secure & Raspberry Pi][i148] | bfeng|
+| 11 | 146 | [Open: ssh port forwarding section][i146] | pulasthi|
+| 12 | 145 | [Open: manage vm guests with virsh][i145] | pulasthi|
+| 13 | 144 | [bigdata missing improvements][i144] | None|
+| 14 | 139 | [Codecov][i139] | pulasthi|
+| 15 | 136 | [figures][i136] | bfeng|
+| 16 | 135 | [coordinate with instructors review of tech][i135] | bfeng|
+| 17 | 134 | [bibtex erros in technologies][i134] | bfeng|
+| 18 | 126 | [bibtex: 523][i126] | bfeng|
+| 19 | 115 | [Check and redo Docker Hadoop 3.0.1 and Docker for Hadoop section.][i115] | bfeng|
+| 20 | 110 | [replace images with text ][i110] | bfeng|
+| 21 | 79 | [comment after first heading in a afile][i79] | bfeng|
+| 22 | 77 | [add mapreduce to syllabus][i77] | bfeng|
+| 23 | 76 | [openapi demo][i76] | laszewsk|
+| 24 | 68 | [bib: create bibtex entries for go-intro.md][i68] | bfeng|
+| 25 | 58 | [epub: use numbered Figure refernces][i58] | bfeng|
+| 26 | 51 | [Open: OpenAPI in GO][i51] | bfeng|
+| 27 | 50 | [Open: REST in go ][i50] | bfeng|
+| 28 | 49 | [Open: Develop a tutorial on the Parallel language constructs in Go][i49] | bfeng|
+| 29 | 48 | [Open: Develop an introduction to Go][i48] | bfeng|
+| 30 | 47 | [Open: Hot cold isles in data center][i47] | laszewsk|
+| 31 | 9 | [Internal: Slides to video are not included in the introduction ][i9] | laszewsk|
+
+[i211]: https://github.com/cloudmesh-community/book/issues/211
+[i190]: https://github.com/cloudmesh-community/book/issues/190
+[i189]: https://github.com/cloudmesh-community/book/issues/189
+[i187]: https://github.com/cloudmesh-community/book/issues/187
+[i186]: https://github.com/cloudmesh-community/book/issues/186
+[i184]: https://github.com/cloudmesh-community/book/issues/184
+[i180]: https://github.com/cloudmesh-community/book/issues/180
+[i173]: https://github.com/cloudmesh-community/book/issues/173
+[i152]: https://github.com/cloudmesh-community/book/issues/152
+[i148]: https://github.com/cloudmesh-community/book/issues/148
+[i146]: https://github.com/cloudmesh-community/book/issues/146
+[i145]: https://github.com/cloudmesh-community/book/issues/145
+[i144]: https://github.com/cloudmesh-community/book/issues/144
+[i139]: https://github.com/cloudmesh-community/book/issues/139
+[i136]: https://github.com/cloudmesh-community/book/issues/136
+[i135]: https://github.com/cloudmesh-community/book/issues/135
+[i134]: https://github.com/cloudmesh-community/book/issues/134
+[i126]: https://github.com/cloudmesh-community/book/issues/126
+[i115]: https://github.com/cloudmesh-community/book/issues/115
+[i110]: https://github.com/cloudmesh-community/book/issues/110
+[i79]: https://github.com/cloudmesh-community/book/issues/79
+[i77]: https://github.com/cloudmesh-community/book/issues/77
+[i76]: https://github.com/cloudmesh-community/book/issues/76
+[i68]: https://github.com/cloudmesh-community/book/issues/68
+[i58]: https://github.com/cloudmesh-community/book/issues/58
+[i51]: https://github.com/cloudmesh-community/book/issues/51
+[i50]: https://github.com/cloudmesh-community/book/issues/50
+[i49]: https://github.com/cloudmesh-community/book/issues/49
+[i48]: https://github.com/cloudmesh-community/book/issues/48
+[i47]: https://github.com/cloudmesh-community/book/issues/47
+[i9]: https://github.com/cloudmesh-community/book/issues/9
+
 
 .</div>
 
