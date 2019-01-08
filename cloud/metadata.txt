@@ -12,6 +12,7 @@ fignos-caption-name: Figure
 fignos-plus-name: Figure
 xnos-number-sections: True
 keywords: [cloud, container]
+mustache: abbrev.yaml
 abstract: |
   This book contains the lecture notes for e516
 ...
