@@ -120,10 +120,6 @@ You have to do only one project type.
 [go-editor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-editor.md
 [go-links.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-links.md
 [go-language.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md
-[opencv.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/opencv/opencv.md
-[secchi.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/opencv/secchi.md
-[virtualization.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualization.md
-[qemu.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/qemu.md
 [githubprg.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/github.md
 
 Students need only to do one project. The project is conducted thought
