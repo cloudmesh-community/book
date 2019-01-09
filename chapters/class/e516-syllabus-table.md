@@ -35,12 +35,12 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 01/14    |         |                    | - [Interactive Python](#sec:interactive-python) |
 | :white_check_mark: | 01/14    |         |                    | - [Editors](#sec:python-editor) |
 | :white_check_mark: | 01/14    |         |                    | - [Basic Language Features](#sec:python-language) |
-| :white_check_mark: | 01/14    |         |                    | - [Modules](#s-python-modules)[:cloud:][python-libraries.md] |
-| :white_check_mark: | 01/14    |         |                    | - [Data Management](s-python-data)[:cloud:][python-data.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Modules](#sec:python-modules) |
+| :white_check_mark: | 01/14    |         |                    | - [Data Management](#sec:python-data) |
 | :white_check_mark: | 01/14    |         |                    | - [Matplotlib](#sec:matplotlib) |
-| :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[:cloud:][python-cmd5.md] |
-| :white_check_mark: | 01/14    |         |                    | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
-| :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#sec:cmd5) |
+| :white_check_mark: | 01/14    |         |                    | - [OpenCV](#sec:opencv) |
+| :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#sec:secchi-disk) |
 | :white_check_mark: | 01/21    |         |                    | [Data Center][datacenter.md] |
 | :white_check_mark: | 01/21    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
 | :white_check_mark: | 01/21    |         |                    | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
@@ -107,11 +107,6 @@ You have to do only one project type.
 
 [arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
 
-[python.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python.md
-[python-libraries.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-libraries.md
-[python-data.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-data.md
-[python-matplotlib.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-matplotlib.md
-[python-cmd5.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-cmd5.md
 [datacenter.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/datacenter.md
 [bdra.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/nist/bdra.md
 [iaas.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/iaas.md
