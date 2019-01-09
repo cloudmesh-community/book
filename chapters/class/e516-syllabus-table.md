@@ -104,8 +104,6 @@ The book can be used as reference material in that case.
 You have to do only one project type.
 
 
-[githubprg.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/github.md
-
 Students need only to do one project. The project is conducted thought
 the entire semester.
 
