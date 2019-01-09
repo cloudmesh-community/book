@@ -63,27 +63,27 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/04    |         |                    | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
 | :white_check_mark: | 02/04    |         |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
 | :white_check_mark: | 02/11    | 8       | Programming        | Python for Cloud Computing, |
-| :white_check_mark: | 02/11    |         |                    | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
+| :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud)[:cloud:][libcloud.md] |
 | :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
-| :white_check_mark: | 02/11    |         |                    | - [REST Services](#rest)[:cloud:][rest.md] |
+| :white_check_mark: | 02/11    |         |                    | - [REST Services](#sec:rest)[:cloud:][rest.md] |
 | :white_check_mark: | 02/11    |         |                    | - [Rest Services with OpenAPI](#rest-services-with-openapi)[:cloud:][swagger.md] |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#openapi-spec)[:cloud:][swagger-spec.md] |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#sec:openapi-spec)[:cloud:][swagger-spec.md] |
 | :white_check_mark: | 02/11    |         |                    | - [OpenAPI Codegen](#openapi-codegen)[:cloud:][swagger-codegen.md] |
 | :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :o:                | 02/18    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
 | :white_check_mark: | 02/25    | 10      | Messaging          | Messaging |
-| :white_check_mark: | 02/25    | 11      | Messaging          | - [MQTT](#mqtt)[:cloud:][mqtt.md]  |
-| :white_check_mark: | 03/04    |         |                    | - [Graphql](#s-graphql)[:cloud:][graphql.md]  |
-| :o:                | 04/01   |       | Go                 | [Go Introduction](#s-go-intro)[:cloud:][go-intro.md] |
-| :o:                | 04/01    |         |                    | - [Go Links](#s-go-links)[:cloud:][go-links.md] |
-| :o:                | 04/01    |         |                    | - [Go Install](#s-go-install)[:cloud:][go-install.md] |
-| :white_check_mark: | 04/01    |         |                    | - [Go Editors](#s-go-editor)[:cloud:][go-editor.md] |
-| :o:                | 04/01    |         |                    | - [Go Language](#s-go-language)[:cloud:][go-language.md] |
-| :o:                | 04/01    |         |                    | - [Go Libraries](#s-go-libraries)[:cloud:][go-libraries.md] |
-| :o:                | 04/01    |         |                    | - [Go cmd](#s-go-cmd)[:cloud:][go-cmd.md] |
-| :o:                | 04/01    |         |                    | - [Go Cloud](#s-go-cloud)[:cloud:][go-cloud.md] |
-| :o:                | 04/01    |         |                    | - [Go REST](#s-go-rest)[:cloud][go-rest.md] |
-| :o:                | 04/01    |         |                    | - [Go for the Cloud](#s-go-cloud)[:cloud][go-cloud.md] |
+| :white_check_mark: | 02/25    | 11      | Messaging          | - [MQTT](#sec:mqtt)[:cloud:][mqtt.md]  |
+| :white_check_mark: | 03/04    |         |                    | - [Graphql](#sec:graphql)[:cloud:][graphql.md]  |
+| :o:                | 04/01   |       | Go                 | [Go Introduction](#sec:go-intro)[:cloud:][go-intro.md] |
+| :o:                | 04/01    |         |                    | - [Go Links](#sec:go-links)[:cloud:][go-links.md] |
+| :o:                | 04/01    |         |                    | - [Go Install](#sec:go-install)[:cloud:][go-install.md] |
+| :white_check_mark: | 04/01    |         |                    | - [Go Editors](#sec-go-editor)[:cloud:][go-editor.md] |
+| :o:                | 04/01    |         |                    | - [Go Language](#sec-go-language)[:cloud:][go-language.md] |
+| :o:                | 04/01    |         |                    | - [Go Libraries](#sec-go-libraries)[:cloud:][go-libraries.md] |
+| :o:                | 04/01    |         |                    | - [Go cmd](#sec-go-cmd)[:cloud:][go-cmd.md] |
+| :o:                | 04/01    |         |                    | - [Go Cloud](#sec-go-cloud)[:cloud:][go-cloud.md] |
+| :o:                | 04/01    |         |                    | - [Go REST](#sec-go-rest)[:cloud][go-rest.md] |
+| :o:                | 04/01    |         |                    | - [Go for the Cloud](#sec-go-cloud)[:cloud][go-cloud.md] |
 | :o:                | 04/15    | 13      | Edge Computing     | Edge Computing and the Cloud |
 
 
