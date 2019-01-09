@@ -1,4 +1,4 @@
-# Plotting with matplotlib
+# Plotting with matplotlib {#sec:matplotlib}
 
 
 A brief overview of plotting with matplotlib along with examples is
@@ -118,6 +118,8 @@ plt.legend(loc='upper right')
 
 plt.show()
 ```
+
+:o: link error
 
 An example of a bar chart is preceded below using data from
  [\[T:fast-cars\]](#T:fast-cars){reference-type="ref"

@@ -1,4 +1,4 @@
-# Definition of Cloud Computing
+# Definition of Cloud Computing {#sec:cloud-definition}
 
 ---
 

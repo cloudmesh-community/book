@@ -1,4 +1,4 @@
-# Linux {#s-linux}
+# Linux {#sec:linux}
 
 ---
 

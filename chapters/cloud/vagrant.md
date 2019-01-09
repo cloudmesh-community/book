@@ -1,4 +1,4 @@
-# Vagrant
+# Vagrant {#sec:vagrant}
 
 ---
 
