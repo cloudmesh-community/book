@@ -143,10 +143,11 @@ endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 	cp dest/$(FILENAME).epub ..
 
-	cp ../bin/emojifix/* ./dest; cd dest; fix-emoji.py all.md all4pdf.md
-	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o all4pdf.epub metadata.txt all4pdf.md
 
 pdf: epub
+	cp ../bin/emojifix/* ./dest
+	cd dest; fix-emoji.py all.md all4pdf.md
+	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o all4pdf.epub metadata.txt all4pdf.md
 	cd dest; ebook-convert all4pdf.epub $(FILENAME).pdf --embed-all-fonts
 	cp dest/$(FILENAME).pdf ../$(FILENAME).pdf
 
