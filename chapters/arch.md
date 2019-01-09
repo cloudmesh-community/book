@@ -1,4 +1,4 @@
-# Architectures {#s-cloud-architectures}
+# Architectures {#sec:cloud-architectures}
 
 ---
 

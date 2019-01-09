@@ -1,4 +1,4 @@
-# Chameleon Cloud Charge Rates
+# Chameleon Cloud Charge Rates {#sec:chameleon-charge}
 
 
 It is important to fully understand the charge rates of your VM and

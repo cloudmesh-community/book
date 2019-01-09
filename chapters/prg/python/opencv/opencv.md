@@ -1,4 +1,4 @@
-# OpenCV {#s-opencv}
+# OpenCV {#sec:opencv}
 
 ---
 

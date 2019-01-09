@@ -1,7 +1,9 @@
-# Virtual Machine Management with QEMU {#s-qemu-kvm}
+# Virtual Machine Management with QEMU {#sec:qemu-kvm}
 
-In this section we provide a short example on how to use QUEMU.
-We will be starting with the instalation, then create a virtual hard disk, install ubuntu on the disk and start the virtual machine. Next we will demonstrate how we can emulate a Raspery Pi with QEMU. 
+In this section we provide a short example on how to use QUEMU.  We
+will be starting with the instalation, then create a virtual hard
+disk, install ubuntu on the disk and start the virtual machine. Next
+we will demonstrate how we can emulate a Raspery Pi with QEMU.
 Lastly, we sho how to use virsh.
 
 ## Install QEMU

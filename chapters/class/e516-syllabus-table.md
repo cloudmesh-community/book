@@ -35,33 +35,32 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 01/14    |         |                    | - [Interactive Python](#sec:interactive-python) |
 | :white_check_mark: | 01/14    |         |                    | - [Editors](#sec:python-editor) |
 | :white_check_mark: | 01/14    |         |                    | - [Basic Language Features](#sec:python-language) |
-| :white_check_mark: | 01/14    |         |                    | - [Modules](#s-python-modules)[:cloud:][python-libraries.md] |
-| :white_check_mark: | 01/14    |         |                    | - [Data Management](s-python-data)[:cloud:][python-data.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Modules](#sec:python-modules) |
+| :white_check_mark: | 01/14    |         |                    | - [Data Management](#sec:python-data) |
 | :white_check_mark: | 01/14    |         |                    | - [Matplotlib](#sec:matplotlib) |
-| :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[:cloud:][python-cmd5.md] |
-| :white_check_mark: | 01/14    |         |                    | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
-| :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
-| :white_check_mark: | 01/21    |         |                    | [Data Center][datacenter.md] |
-| :white_check_mark: | 01/21    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-| :white_check_mark: | 01/21    |         |                    | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
-| :white_check_mark: | 01/21    |         |                    | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-| :white_check_mark: | 01/28   | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[:cloud:][virtualization.md] |
-| :white_check_mark: | 01/28    | 5       | Virtualization I   | - [Qemu](#s-qemu)[:cloud:][qemu.md] |
-| :white_check_mark: | 01/28    | 6       | Infrastructure     | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
-| :white_check_mark: | 01/28    |         |                    | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
-| :white_check_mark: | 01/28    |         |                    | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
-| :white_check_mark: | 01/28    |         |                    | - [OpenStack](#s-openstack) [:cloud:][openstack.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#sec:cmd5) |
+| :white_check_mark: | 01/14    |         |                    | - [OpenCV](#sec:opencv) |
+| :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#sec:secchi-disk) |
+| :white_check_mark: | 01/21    |         |                    | [Data Center](#sec:data-center) |
+| :white_check_mark: | 01/21    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#sec:nist-bdra) |
+| :white_check_mark: | 01/21    |         |                    | - [Cloud Architectures](#sec:cloud-architectures) |
+| :white_check_mark: | 01/28   | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#sec:virtualization) |
+| :white_check_mark: | 01/28    | 5       | Virtualization I   | - [Qemu](#sec:qemu-kvm) |
+| :white_check_mark: | 01/28    | 6       | Infrastructure     | [Infrastructure as a Service](#sec:iaas-intro) |
+| :white_check_mark: | 01/28    |         |                    | - [Azure](#sec:azure) |
+| :white_check_mark: | 01/28    |         |                    | - [AWS](#sec:aws) | 
+| :white_check_mark: | 01/28    |         |                    | - [OpenStack](#sec:openstack) |
 | :white_check_mark: | 02/04    |         | Chameleon Cloud    | - **Chameleon Cloud** |
-| :white_check_mark: | 02/04    |         |                    | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Charge](#chameleon-cloud-charge-rates)[:cloud:][charge.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Quick start](#getting-started-on-chameleon-cloud)[:cloud:][start.md] |
-| :white_check_mark: | 02/04    |         |                    | - [KVM user guide](#openstack-virtual-machines)[:cloud:][user-guide.md] |
-| :white_check_mark: | 02/04    |         |                    | - [CLI](#openstack-command-line-interface)[:cloud:][cli.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Horizon](#openstack-horizon)[:cloud:][horizon.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Heat](#openstack-heat)[:cloud:][heat.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
-| :white_check_mark: | 02/04    |         |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
+| :white_check_mark: | 02/04    |         |                    | - [Resources](#sec:chameleon-resources) |
+| :white_check_mark: | 02/04    |         |                    | - [Hardware](#sec:chameleon-cloud-hardware) |
+| :white_check_mark: | 02/04    |         |                    | - [Charge](#sec:chameleon-charge) |
+| :white_check_mark: | 02/04    |         |                    | - [Quick start](#sec:chameleon-start) |
+| :white_check_mark: | 02/04    |         |                    | - [KVM user guide](#sec:chameleon:vm) |
+| :white_check_mark: | 02/04    |         |                    | - [CLI](#sec:chameleon-cli) | 
+| :white_check_mark: | 02/04    |         |                    | - [Horizon](#sec:chameleon-horizon) |
+| :white_check_mark: | 02/04    |         |                    | - [Heat](#sec:chameleon-heat})
+| :white_check_mark: | 02/04    |         |                    | - [Baremetal](#sec:chameleon-baremetal)
+| :white_check_mark: | 02/04    |         |                    | - [FAQ](#sec:chameleon-faq}) |
 | :white_check_mark: | 02/11    | 8       | Programming        | Python for Cloud Computing, |
 | :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud)[:cloud:][libcloud.md] |
 | :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
@@ -105,29 +104,6 @@ The book can be used as reference material in that case.
 You have to do only one project type.
 
 
-[arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
-
-[python.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python.md
-[python-libraries.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-libraries.md
-[python-data.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-data.md
-[python-matplotlib.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-matplotlib.md
-[python-cmd5.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-cmd5.md
-[datacenter.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/datacenter.md
-[bdra.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/nist/bdra.md
-[iaas.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/iaas.md
-[openstack.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/openstack/opensatck.md
-[azure.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/azure/azure.md
-[aws.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md
-[resources.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/resources.md
-[hardware.md]: [Section Chameleon Cloud Hardware](#sec:chameleon-hadware)
-[charge.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/charge.md
-[start.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/start.md
-[user-guide.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/user-guide.md
-[cli.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/cli.md
-[horizon.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/horizon.md
-[heat.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/heat.md
-[baremetal.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/baremetal.md
-[faq.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/faq.md
 [libcloud.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/libcloud.md
 [rest.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/rest.md
 [swagger.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger.md

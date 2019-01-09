@@ -1,4 +1,4 @@
-# OpenStack HEAT
+# OpenStack HEAT {#sec:chameleon-heat}
 
 Deploying an MPI cluster, an OpenStack installation, or any other type
 of cluster in which nodes can take on multiple roles can be complex: you
