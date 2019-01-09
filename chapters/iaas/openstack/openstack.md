@@ -1,4 +1,4 @@
-# OpenStack
+# OpenStack {#sec:openstack}
 
 ## Introduction
 
