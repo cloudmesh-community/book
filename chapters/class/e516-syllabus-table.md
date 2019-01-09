@@ -65,7 +65,7 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud) |
 | :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
 | :white_check_mark: | 02/11    |         |                    | - [REST Services](#sec:rest) |
-| :white_check_mark: | 02/11    |         |                    | - [Rest Services with OpenAPI](#sec:rest-services-with-openapi)[:cloud:] |
+| :white_check_mark: | 02/11    |         |                    | - [Rest Services with OpenAPI](#sec:rest-services-with-openapi) |
 | :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#sec:openapi-spec) |
 | :white_check_mark: | 02/11    |         |                    | - [OpenAPI Codegen](#sec:openapi-codegen) |
 | :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
