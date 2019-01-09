@@ -1,7 +1,8 @@
 # Puppet :wave:
 
-## Overiew
+:o: Tyler: use of a and the needs to be checkked as it seems there is a different oppinion on how to use this. changes thet Gregor did were for example reverted. So it is importnat that this is checked by a second native English speaker, E.g. Tyler
 
+## Overiew
 
 Configuration management is an important task of IT department in any 
 organization. It is process of managing infrastructure changes 
@@ -30,7 +31,6 @@ as shown in +@fig:push-pull-configImage.
 
 [hid-sp18-523-puppetimages]
 
-
 Another popular infrastructure tool is Ansible. It does not have master 
 and client nodes. Any node in Ansible can act as executor.
 Any node containing list of inventory and SSH credential can play master node 
@@ -51,10 +51,10 @@ infrastructure.
 #### Workflow
 
 * nodes(puppet agents) sends information(for e.g IP, hardware detail, 
-network etc.) to master. Master stores such information in manifest file.
+  network etc.) to master. Master stores such information in manifest file.
 
 * Master node compiles catalog file containing configuration information that
-needs to be implemented on agent nodes.
+  needs to be implemented on agent nodes.
 
 * Master pushes catalog to puppet agent nodes for implementing  
   configuration.
@@ -62,19 +62,19 @@ needs to be implemented on agent nodes.
 * Client nodes send back updated report to Master. Master updates its inventory.
 
 * All exchange between master and agent is secured through  SSL encryption (Refer to 
-Puppet Master Slave Connection figure below)
+  Puppet Master Slave Connection figure below)
 
 ![Master and Slave Architecture](Images/master-slave.jpg){#fig:master-slaveImage}
 
 [hid-sp18-523-puppetimages]
 
-Figure +@fig:master-slave1Image, shows flow between master and slave.
++@fig:master-slave1Image, shows flow between master and slave.
 
 ![Master Slave Workflow 1](Images/master-slave1.jpg){#fig:master-slave1Image}
 
 [hid-sp18-523-puppetimages]
 
-+@fig:master-slave-connection Image shows SSL workflow between
++@fig:master-slave-connection shows SSL workflow between
  master and slave
 
 ![Master  Slave SSL Workflow](Images/master-slave-connection.jpg){#fig:master-slave-connection Image}
