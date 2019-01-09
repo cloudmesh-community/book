@@ -63,7 +63,8 @@ CSL=--csl=template/ieee-with-url.csl
 FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
 BIB=--bibliography references.bib
-CSS=--css=template/epub.css
+# can be removed to avoid duplicate as already appeared in metadata.txt
+#CSS=--css=template/epub.css
 RESOURCE=--resource-path=$(IMAGE_DIRS)
 
 abbrev:
@@ -142,8 +143,11 @@ endif
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 	cp dest/$(FILENAME).epub ..
 
+	cp ../bin/emojifix/* ./dest; cd dest; fix-emoji.py all.md all4pdf.md
+	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o all4pdf.epub metadata.txt all4pdf.md
+
 pdf: epub
-	cd dest; ebook-convert $(FILENAME).epub $(FILENAME).pdf --embed-all-fonts
+	cd dest; ebook-convert all4pdf.epub $(FILENAME).pdf --embed-all-fonts
 	cp dest/$(FILENAME).pdf ../$(FILENAME).pdf
 
 epub-all: prepare

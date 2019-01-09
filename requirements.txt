@@ -6,3 +6,4 @@ oyaml
 treelib
 docopt
 mkdocs
+emoji
