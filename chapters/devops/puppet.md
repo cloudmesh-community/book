@@ -1,6 +1,4 @@
 # Puppet :smiley:
-- hid-sp18-520 Arijit Sinha
-- hid-sp18-523 Ritesh Tandon
 
 ## Overiew
 
