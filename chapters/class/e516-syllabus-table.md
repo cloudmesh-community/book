@@ -62,27 +62,27 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/04    |         |                    | - [Baremetal](#sec:chameleon-baremetal)
 | :white_check_mark: | 02/04    |         |                    | - [FAQ](#sec:chameleon-faq}) |
 | :white_check_mark: | 02/11    | 8       | Programming        | Python for Cloud Computing, |
-| :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud)[:cloud:] |
+| :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud) |
 | :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
-| :white_check_mark: | 02/11    |         |                    | - [REST Services](#sec:rest)[:cloud:] |
+| :white_check_mark: | 02/11    |         |                    | - [REST Services](#sec:rest) |
 | :white_check_mark: | 02/11    |         |                    | - [Rest Services with OpenAPI](#sec:rest-services-with-openapi)[:cloud:] |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#sec:openapi-spec)[:cloud:] |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Codegen](#sec:openapi-codegen)[:cloud:] |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#sec:openapi-spec) |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Codegen](#sec:openapi-codegen) |
 | :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :o:                | 02/18    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
 | :white_check_mark: | 02/25    | 10      | Messaging          | Messaging |
-| :white_check_mark: | 02/25    | 11      | Messaging          | - [MQTT](#sec:mqtt)[:cloud:]  |
-| :white_check_mark: | 03/04    |         |                    | - [Graphql](#sec:graphql)[:cloud:]  |
-| :o:                | 04/01   |       | Go                 | [Go Introduction](#sec:go-intro)[:cloud:] |
-| :o:                | 04/01    |         |                    | - [Go Links](#sec:go-links)[:cloud:] |
-| :o:                | 04/01    |         |                    | - [Go Install](#sec:go-install)[:cloud:] |
-| :white_check_mark: | 04/01    |         |                    | - [Go Editors](#sec-go-editor)[:cloud:] |
-| :o:                | 04/01    |         |                    | - [Go Language](#sec-go-language)[:cloud:] |
-| :o:                | 04/01    |         |                    | - [Go Libraries](#sec-go-libraries)[:cloud:] |
-| :o:                | 04/01    |         |                    | - [Go cmd](#sec-go-cmd)[:cloud:] |
-| :o:                | 04/01    |         |                    | - [Go Cloud](#sec-go-cloud)[:cloud:] |
-| :o:                | 04/01    |         |                    | - [Go REST](#sec-go-rest)[:cloud] |
-| :o:                | 04/01    |         |                    | - [Go for the Cloud](#sec-go-cloud)[:cloud] |
+| :white_check_mark: | 02/25    | 11      | Messaging          | - [MQTT](#sec:mqtt)  |
+| :white_check_mark: | 03/04    |         |                    | - [Graphql](#sec:graphql)  |
+| :o:                | 04/01   |       | Go                 | [Go Introduction](#sec:go-intro) |
+| :o:                | 04/01    |         |                    | - [Go Links](#sec:go-links) |
+| :o:                | 04/01    |         |                    | - [Go Install](#sec:go-install) |
+| :white_check_mark: | 04/01    |         |                    | - [Go Editors](#sec-go-editor) |
+| :o:                | 04/01    |         |                    | - [Go Language](#sec-go-language) |
+| :o:                | 04/01    |         |                    | - [Go Libraries](#sec-go-libraries) |
+| :o:                | 04/01    |         |                    | - [Go cmd](#sec-go-cmd) |
+| :o:                | 04/01    |         |                    | - [Go Cloud](#sec-go-cloud) |
+| :o:                | 04/01    |         |                    | - [Go REST](#sec-go-rest) |
+| :o:                | 04/01    |         |                    | - [Go for the Cloud](#sec-go-cloud) |
 | :o:                | 04/15    | 13      | Edge Computing     | Edge Computing and the Cloud |
 
 
