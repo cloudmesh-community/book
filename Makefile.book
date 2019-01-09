@@ -153,6 +153,7 @@ pdf: epub
 
 epub-all: prepare
 ifeq ($(OS), osx)
+	#cd dest; cat $(INDEX) > all.md
 	cd dest; iconv -t utf-8 $(INDEX) > all.md
 endif
 ifeq ($(OS), linux)
