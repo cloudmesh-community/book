@@ -1,4 +1,4 @@
-# Puppet :smiley:
+# Puppet :wave:
 
 ## Overiew
 
