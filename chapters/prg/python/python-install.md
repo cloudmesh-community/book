@@ -1,4 +1,4 @@
-# Python Installation {#s-python-install}
+# Python Installation {#sec:python-install}
 
 Python is easy to install and very good instructions for most platforms
 can be found on the python.org Web page. We will be using Python 2.7.15

@@ -1,4 +1,4 @@
-# Github
+# Github {#sec:github}
 
 ---
 

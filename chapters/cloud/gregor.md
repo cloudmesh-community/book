@@ -1,4 +1,4 @@
-# Research Interests
+# Research Interests {#sec:gregor}
 
 ---
 

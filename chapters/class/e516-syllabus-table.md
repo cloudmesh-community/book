@@ -21,23 +21,23 @@ The book can be used as reference material in that case.
 
 |     | Dates  | Unit | Title  | Description |
 | --- |------ | --- | ------- | --------------------- |
-| :white_check_mark: | 01/07   | 1       | Introduction       | [Gregor von Laszewski](#research-interests)[:cloud:][gregor.md] |
-| :white_check_mark: | 01/07    |         |                    | [Class summary](E516 Summary)[:cloud:][e516-summary.md] |
-| :white_check_mark: | 01/07    |         |                    | [Definition of Cloud Computing](#definition-of-cloud-computing)[:cloud:][e516-definition.md] |
+| :white_check_mark: | 01/07   | 1       | Introduction       | [Gregor von Laszewski](#sec:gregor) |
+| :white_check_mark: | 01/07    |         |                    | [Class summary](#sec:516-summary) |
+| :white_check_mark: | 01/07    |         |                    | [Definition of Cloud Computing](#sec:cloud-definition) |
 | :white_check_mark: | 01/07    | 2       | Tools              | **Tools and Services** |
-| :white_check_mark: | 01/07    |         |                    | - [Virtual Box](#virtual-box)[:cloud:][virtualbox.md] |
-| :white_check_mark: | 01/07    |         |                    | - [Vagrant](#vagrant)[:cloud:][vagrant.md] |
-| :white_check_mark: | 01/07    |         |                    | - [Github](#github)[:cloud:][github.md] |
-| :white_check_mark: | 01/07    |         |                    | - [Linux](#s-linux)[:cloud:][linux.md] |
+| :white_check_mark: | 01/07    |         |                    | - [Virtual Box](#sec:virtualbox) |
+| :white_check_mark: | 01/07    |         |                    | - [Vagrant](#sec:vagrant) |
+| :white_check_mark: | 01/07    |         |                    | - [Github](#sec:github) |
+| :white_check_mark: | 01/07    |         |                    | - [Linux](#sec:linux) |
 | :white_check_mark: | 01/14    | 3       | Python             | **Python** |
-| :white_check_mark: | 01/14    |         |                    | - [Introduction](#s-python-intro)[:cloud:][python-intro.md] |
-| :white_check_mark: | 01/14    |         |                    | - [Installation](#s-python-install)[:cloud:][python-install.md] |
-| :white_check_mark: | 01/14    |         |                    | - [Interactive Python](#interactve python)[:cloud:][python-interactive.md] |
-| :white_check_mark: | 01/14    |         |                    | - [Editors](#s-python-editor)[:cloud:][python-editor.md] |
-| :white_check_mark: | 01/14    |         |                    | - [Basic Language Features](#s-python-language)[:cloud:][python.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Introduction](#sec:python-intro) |
+| :white_check_mark: | 01/14    |         |                    | - [Installation](#sec:python-install) |
+| :white_check_mark: | 01/14    |         |                    | - [Interactive Python](#sec:interactive-python) |
+| :white_check_mark: | 01/14    |         |                    | - [Editors](#sec:python-editor) |
+| :white_check_mark: | 01/14    |         |                    | - [Basic Language Features](#sec:python-language) |
 | :white_check_mark: | 01/14    |         |                    | - [Modules](#s-python-modules)[:cloud:][python-libraries.md] |
 | :white_check_mark: | 01/14    |         |                    | - [Data Management](s-python-data)[:cloud:][python-data.md] |
-| :white_check_mark: | 01/14    |         |                    | - [Matplotlib](#matplotlib)[:cloud:][python-matplotlib.md] |
+| :white_check_mark: | 01/14    |         |                    | - [Matplotlib](#sec:matplotlib) |
 | :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[:cloud:][python-cmd5.md] |
 | :white_check_mark: | 01/14    |         |                    | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
 | :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
@@ -106,19 +106,7 @@ You have to do only one project type.
 
 
 [arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
-[gregor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md
-[e516-summary.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md
-[e516-definition.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md
 
-[virtualbox.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/virtualbox.md
-[vagrant.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/vagrant.md
-[github.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/git/github.md
-[linux.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md
-
-[python-intro.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-intro.md
-[python-install.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-install.md
-[python-interactive.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-interactive.md
-[python-editor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-editor.md
 [python.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python.md
 [python-libraries.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-libraries.md
 [python-data.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-data.md

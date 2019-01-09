@@ -1,4 +1,4 @@
-# Editors
+# Editors {#sec:python-editors}
 
 This section is meant to give an overview of the python editing tools
 needed for doing for this course. There are many other alternatives,
