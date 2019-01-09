@@ -104,19 +104,6 @@ The book can be used as reference material in that case.
 You have to do only one project type.
 
 
-[openstack.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/openstack/opensatck.md
-[azure.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/azure/azure.md
-[aws.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md
-[resources.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/resources.md
-[hardware.md]: [Section Chameleon Cloud Hardware](#sec:chameleon-hadware)
-[charge.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/charge.md
-[start.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/start.md
-[user-guide.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/user-guide.md
-[cli.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/cli.md
-[horizon.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/horizon.md
-[heat.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/heat.md
-[baremetal.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/baremetal.md
-[faq.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/faq.md
 [libcloud.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/libcloud.md
 [rest.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/rest.md
 [swagger.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger.md
