@@ -1,4 +1,4 @@
-# Github REST Services
+# Github REST Services {#sec:Github-REST}
 
 In this section we want to explore a bit more some features of REST
 services and how to access them. Naturally all many cloud services
