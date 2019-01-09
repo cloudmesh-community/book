@@ -1,4 +1,4 @@
-# Python Modules {#s-python-modules}
+# Python Modules {#sec:python-modules}
 
 Often you may need functionality that is not present in Python's
 standard library. In this case you have two option:
