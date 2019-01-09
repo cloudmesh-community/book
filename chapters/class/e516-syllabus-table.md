@@ -62,27 +62,27 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/04    |         |                    | - [Baremetal](#sec:chameleon-baremetal)
 | :white_check_mark: | 02/04    |         |                    | - [FAQ](#sec:chameleon-faq}) |
 | :white_check_mark: | 02/11    | 8       | Programming        | Python for Cloud Computing, |
-| :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud)[:cloud:][libcloud.md] |
+| :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud)[:cloud:] |
 | :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
-| :white_check_mark: | 02/11    |         |                    | - [REST Services](#sec:rest)[:cloud:][rest.md] |
-| :white_check_mark: | 02/11    |         |                    | - [Rest Services with OpenAPI](#rest-services-with-openapi)[:cloud:][swagger.md] |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#sec:openapi-spec)[:cloud:][swagger-spec.md] |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Codegen](#openapi-codegen)[:cloud:][swagger-codegen.md] |
+| :white_check_mark: | 02/11    |         |                    | - [REST Services](#sec:rest)[:cloud:] |
+| :white_check_mark: | 02/11    |         |                    | - [Rest Services with OpenAPI](#sec:rest-services-with-openapi)[:cloud:] |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#sec:openapi-spec)[:cloud:] |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Codegen](#sec:openapi-codegen)[:cloud:] |
 | :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :o:                | 02/18    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
 | :white_check_mark: | 02/25    | 10      | Messaging          | Messaging |
-| :white_check_mark: | 02/25    | 11      | Messaging          | - [MQTT](#sec:mqtt)[:cloud:][mqtt.md]  |
-| :white_check_mark: | 03/04    |         |                    | - [Graphql](#sec:graphql)[:cloud:][graphql.md]  |
-| :o:                | 04/01   |       | Go                 | [Go Introduction](#sec:go-intro)[:cloud:][go-intro.md] |
-| :o:                | 04/01    |         |                    | - [Go Links](#sec:go-links)[:cloud:][go-links.md] |
-| :o:                | 04/01    |         |                    | - [Go Install](#sec:go-install)[:cloud:][go-install.md] |
-| :white_check_mark: | 04/01    |         |                    | - [Go Editors](#sec-go-editor)[:cloud:][go-editor.md] |
-| :o:                | 04/01    |         |                    | - [Go Language](#sec-go-language)[:cloud:][go-language.md] |
-| :o:                | 04/01    |         |                    | - [Go Libraries](#sec-go-libraries)[:cloud:][go-libraries.md] |
-| :o:                | 04/01    |         |                    | - [Go cmd](#sec-go-cmd)[:cloud:][go-cmd.md] |
-| :o:                | 04/01    |         |                    | - [Go Cloud](#sec-go-cloud)[:cloud:][go-cloud.md] |
-| :o:                | 04/01    |         |                    | - [Go REST](#sec-go-rest)[:cloud][go-rest.md] |
-| :o:                | 04/01    |         |                    | - [Go for the Cloud](#sec-go-cloud)[:cloud][go-cloud.md] |
+| :white_check_mark: | 02/25    | 11      | Messaging          | - [MQTT](#sec:mqtt)[:cloud:]  |
+| :white_check_mark: | 03/04    |         |                    | - [Graphql](#sec:graphql)[:cloud:]  |
+| :o:                | 04/01   |       | Go                 | [Go Introduction](#sec:go-intro)[:cloud:] |
+| :o:                | 04/01    |         |                    | - [Go Links](#sec:go-links)[:cloud:] |
+| :o:                | 04/01    |         |                    | - [Go Install](#sec:go-install)[:cloud:] |
+| :white_check_mark: | 04/01    |         |                    | - [Go Editors](#sec-go-editor)[:cloud:] |
+| :o:                | 04/01    |         |                    | - [Go Language](#sec-go-language)[:cloud:] |
+| :o:                | 04/01    |         |                    | - [Go Libraries](#sec-go-libraries)[:cloud:] |
+| :o:                | 04/01    |         |                    | - [Go cmd](#sec-go-cmd)[:cloud:] |
+| :o:                | 04/01    |         |                    | - [Go Cloud](#sec-go-cloud)[:cloud:] |
+| :o:                | 04/01    |         |                    | - [Go REST](#sec-go-rest)[:cloud] |
+| :o:                | 04/01    |         |                    | - [Go for the Cloud](#sec-go-cloud)[:cloud] |
 | :o:                | 04/15    | 13      | Edge Computing     | Edge Computing and the Cloud |
 
 
@@ -104,22 +104,6 @@ The book can be used as reference material in that case.
 You have to do only one project type.
 
 
-[libcloud.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/libcloud.md
-[rest.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/rest.md
-[swagger.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger.md
-[swagger-spec.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-spec.md
-[swagger-codegen.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-codegen.md
-[mqtt.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md 
-[graphql.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/graphql.md
-[go-cloud.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cloud.md 
-[go-rest.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-rest.md
-[go-intro.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-intro.md
-[go-cmd.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cmd.md
-[go-install.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-install.md
-[go-libraries.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-libraries.md
-[go-editor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-editor.md
-[go-links.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-links.md
-[go-language.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-language.md
 [githubprg.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/github.md
 
 Students need only to do one project. The project is conducted thought
