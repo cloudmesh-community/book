@@ -2,6 +2,8 @@
 
 ## Overiew
 
+:o: overview needs to be changed as its part of the devops section and we need to avoid repetition. We will do change once it is integrated.
+
 Configuration management is an important task of IT department in any 
 organization. It is a process of managing changes in infrastructure 
 in a structured and systematic way. Configuring large infrastructure 
@@ -11,9 +13,9 @@ to previous version of the software is time consuming and error prone.
 Puppet is a configuration management tool that makes the complex task 
 of deploying new software, updating software updates , rolling back 
 software on large cluster easily and in efficient way. Puppet does this 
-through Infrastructure as Code(IAC). In this process code is written for 
+through Infrastructure as Code (IAC). In this process code is written for 
 infrastructure on one central location and is pushed to all the nodes 
-in all environments(Dev, Test, Production) using puppet as tool. 
+in all environments (Dev, Test, Production) using puppet as tool. 
 Configuration management tool has two approaches for managing infrastructure 
 configuration push and pull. In push configuration, infrastructure as 
 code is pushed from centralized server to the nodes where as in pull 
@@ -25,7 +27,7 @@ as shown in +@fig:InfrastructureAsCode.
 [hid-sp18-523-puppetimages]
 
 Puppet uses push and pull configuration in centralized manner 
-as shown in +@fig:push-pull-configImage.
+as shown in +@fig:push-pull-configImage. :o: contarst this to ansible.
 
 ![push-pull-config Image](Images/push-pull-configuration.jpg){#fig:push-pull-configImage}
 
@@ -33,33 +35,35 @@ as shown in +@fig:push-pull-configImage.
 
 ## Master Slave Architecture
 
-Puppet uses master slave architecture as shown below +@fig:master-slaveImage. 
+:o: grammar errors in regards to the usage of a and the
+
+Puppet uses a master slave architecture as shown below +@fig:master-slaveImage. 
 There is puppet master node and client nodes called as puppet agent. 
 Agents poll the server at regular interval and pulls the updated 
-configuration from the master. Puppet Master is highly available as 
+configuration from the master. Puppet Master is highly available :o: as 
 it supports multi master architecture, in case if one goes down backup 
-master stands up to serve the infrastructure. In this architecture-
+master stands up to serve the infrastructure. In this architecture :o:
 
 * nodes(puppet agents) sends the information(for e.g IP, hardware detail, 
 network etc.) to master. Master stores such information in the manifest.
 
-* Puppet master then compiles the catalog which is the information about 
+* :o: Puppet master then compiles the catalog which is the information about 
 the configuration that master wants the client resources also known as 
 puppet agent to implement.
 
-* Master sends the catalog to puppet agent nodes to implement the 
+* :o: Master sends the catalog to puppet agent nodes to implement the 
 desired configuration.
 
-* Client nodes sends back the updated report to Master
+* Client nodes sends :o: back the updated report to Master
 
-* Connection between master and slave is SSL encrypted (Refer to 
+* :o: Connection between master and slave is SSL encrypted (Refer to 
 Puppet Master Slave Connection figure below)
 
 ![Master and Slave Architecture](Images/master-slave.jpg){#fig:master-slaveImage}
 
 [hid-sp18-523-puppetimages]
 
-In +@fig:master-slave1Image, we can see flow between master and slave.
+In +@fig:master-slave1Image, we can see :o: flow between master and slave.
 
 ![Master Slave Workflow 1](Images/master-slave1.jpg){#fig:master-slave1Image}
 
@@ -74,16 +78,22 @@ master and slave
 
 ## Installation
 
+To install puppet you need to do the following:
+
 * Download the tarball as per the operating system and architecture. 
+
 For Ubuntu download -ubuntu-<version and arch>.tar.gz
+
+:o: we never use below and above
 
 * Import the Puppet public key using below command
 
 ```bash
-$ wget -O -  [https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub]
+$ wget -O - [https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub]
 (https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub)  | 
 gpg --import
 ```
+:o: hyperlink in code illeagal
 
 - Print the fingerprint of the key using below command
 
@@ -97,11 +107,11 @@ $ gpg --fingerprint 0x7F438280EF8D349F
 $ gpg --verify puppet-enterprise-<version>-<platform>.tar.gz.asc
 ```
 
-### Install using Configration file (Master/Client installation)
+### Install using a Configration file (Master/Client installation)
 
-Specify the configuration file(pe.conf) when it has to be installed 
+Specify the configuration file `pe.conf` when it has to be installed 
 in text mode. This file contains values for the parameters needed for 
-installation.
+installation. :o: unclear
 
 #### Install the Master
 
@@ -146,6 +156,8 @@ install PuppetDB.
 $ tar -xf <TARBALL_FILENAME>
 ```
 
+:o: not defined previously use `$TARBALL_FILENAME`
+
 * From the installer directory, run the installer:
 
 ```bash
@@ -155,7 +167,11 @@ $ sudo ./puppet-enterprise-installer -c <FULL PATH TO pe.conf>
 * When installation completes, transfer the installer and the pe.conf 
 file located at/etc/puppetlabs/enterprise/conf.d/ to the next server.
 
+:o: this can be done differently
+
 #### Install using console
+
+:o: what is a split instalation
 
 In a split installation, after installing master and PuppetDB, 
 are ready to install from console.
@@ -172,12 +188,15 @@ $ tar -xf <TARBALL_FILENAME>
 $ sudo ./puppet-enterprise-installer -c <FULL PATH TO pe.conf>
 ```
 
-#### Run Puppet on infrastructure nodes
+#### Run Puppet on the infrastructure nodes
 
 To complete a split installation, run Puppet on all infrastructure 
 nodes in the order that they were installed.
 
 * Unpack the installation tarball:
+
+:o: illegal bullets
+
 ** Run Puppet on the master node.  
 ** Run Puppet on the PuppetDB node.  
 ** Run Puppet on the master node a second time.  
@@ -198,13 +217,12 @@ Below is the example
 
 ```bash
 certname = <http://testing.hid520-hid523.com/>
-
 server = puppetserver
-
 environment = testing
-
 runinterval = 4h
 ```
+
+:o: gregor commented till here. will do other later
 
 ### Puppet Master Config File
 
@@ -214,13 +232,9 @@ Below is the example
 
 ```bash
 certname =  <http://testing.hid520-hid523.com/>
-
 server = puppetmaster
-
 environment = testing
-
 runinterval = 4h
-
 strict_variables = true
 ```
 
@@ -228,13 +242,9 @@ strict_variables = true
 
 ```bash
 dns_alt_names = puppetserver,puppet, <http://puppet.test.com/>
-
 reports = pupated
-
 storeconfigs_backend = puppetdb
-
 storeconfigs = true
-
 environment_timeout = unlimited
 ```
 
