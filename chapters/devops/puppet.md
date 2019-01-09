@@ -282,7 +282,7 @@ Following command is used to install the server on master node
 $ sudo yum -y install puppetserver
 ```
 
-By default 2GM memory is allocated , but it can be configured based on 
+By default 2GM memory is allocated, but it can be configured based on 
 available memory as well as number of puppet agent nodes.
 Use following command to edit the server configuration
 
@@ -290,7 +290,7 @@ Use following command to edit the server configuration
 $ sudo vi /etc/sysconfig/puppetserver
 ```
 
-Set the value of following variable to increase memory to 3GB
+Set the value of the following variable to increase memory to 3GB
 (3g after -Xmx specify that)
 
 ```bash
@@ -312,16 +312,16 @@ $ sudo systemctl enable puppetserver
 
 # Installing puppet agent
 
-Puppet agent is a software that needs to be installed on all the nodes 
+:o: Puppet agent is a software that needs to be installed on all the nodes 
 that needs to be part of network that which has to be manage d and control 
-through puppet. Puppet master can not reach and manage any node that does 
+through puppet. :o: Puppet master can not reach and manage any node that does 
 not have puppet agent installed. so, it is required for software for managing 
 any puppet infrastructure. Puppet agent software can be installed and run on 
 any Linux, Unix or windows based machines.
 
 ### Steps to install Puppet agent software
 
-* Use following command for puppet repository.
+* Use :o: following command for puppet repository.
 
 ```bash
 $ sudo rpm -ivh 
@@ -329,7 +329,7 @@ $ sudo rpm -ivh
 (https://yum.puppetlabs.com/puppetlabs-release-pc1-el7.noarch.rpm)
 ```
 
-* Use following command to Install the Puppet agent.
+* Use :o: following command to Install the Puppet agent.
 
 ```bash
 $ sudo yum -y install puppet-agent
@@ -341,20 +341,20 @@ $ sudo yum -y install puppet-agent
 $ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
 ```
 
-As explained in workflow section and digram in above section ; When the 
+As explained in :o: workflow section and :o: digram in :o: above section :o: ; When the 
 puppet agent is installed and run first time it generates SSL certificate 
 and sends it to master for signing, once the certificate is approved 
 master can communicate and mage the client node.
 
-Each puppet client node in puppet infrastructure needs to follow this process
+Each puppet client node in the puppet infrastructure needs to follow this process
 
 # Configuring SSL
 
-As explained above, SSL certificate approval by puppet master is required 
+As explained :o: above, SSL certificate approval by puppet master is required 
 for all the nodes in the infrastructure in order for master to communicate 
 and manage client nodes. Following will describe the SSL signing process-
 
-Use the following command on puppet master to in order to list all unsigned 
+Use the following command on :o: puppet master to in order to list all unsigned 
 certificate requests.
 
 ```bash
@@ -363,8 +363,8 @@ $ sudo /opt/puppetlabs/bin/puppet cert list
 
 ### View the requests
 
-If the new agent node is set up , request similar to following will be displayed
-(Note - Below certificate name is for illustration purpose only.)
+If the new agent node is set up, :o: request similar to following will be displayed
+(Note - :o: Below certificate name is for illustration purpose only.)
 
 * <http://test.hid520-hid523.com/> (SHA259)
 
@@ -377,7 +377,7 @@ Identification of signed/un-signed certificate is done by looking at the
 
 ### Sign a Request
 
-Following command is run on puppet master in order to sign the new certificate 
+:o: Following command is run on puppet master in order to sign the new certificate 
 request that is sent by puppet agent(client node) for approval(signing)
 
 Note - <http://test.hid520-hid523.com/> (SHA259) certificate name is used for 
@@ -388,7 +388,7 @@ $ sudo /opt/puppetlabs/bin/puppet cert sign
 [test.hid520-hid523.com](http://test.hid520-hid523.com/)
 ```
 
-Following will be the output.
+:o: Following will be the output.
 
 Notice: Signed certificate request for <http://test.hid520-hid523.com/>
 
@@ -396,7 +396,7 @@ Notice: Removing file Puppet::SSL::CertificateRequest
 <http://test.hid520-hid523.com/> 
 at '/etc/puppetlabs/puppet/ssl/ca/requests/test.hid520-hid523.com.pem'
 
-After certificate approval Puppet master can now communicate and 
+After certificate approval :o: Puppet master can now communicate and 
 manage the client node
 
 ```bash
@@ -404,6 +404,8 @@ $ sudo /opt/puppetlabs/bin/puppet cert sign --all
 ```
 
 ### Removing and adding puppet agent
+
+:o: inconsistent capitalization 
 
 Sometimes there is a need to remove the puppet agent node from puppet 
 infrastructure and then add again in order to debug any issue or 
@@ -444,7 +446,7 @@ CB:CB:CA:48:E0:DF:06:6A:7D:75:E6:CB:22:BE:35:5A:9A:B3
 
 # Managing puppet environment through tool
 
-In puppet environment mangement tool known as r10k is used for managing 
+:o: In puppet environment mangement tool known as r10k is used for managing 
 configurations related to different environments such as testing, staging 
 and production etc. These configuration related information is stored in 
 central repository. r10k tool creates environment on puppet master and 
@@ -481,7 +483,7 @@ EOF
 r10k deploy environment -pv
 
 Since the environment needs to be updated at regular intervals it is 
-recommended to create cron job.
+recommended to create :o: cron job.
 
 ```bash
 $ cat << EOF > /etc/cron.d/r10k.conf SHELL=/bin/bash 
@@ -492,9 +494,8 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin H/15
 ### Testing Installation
 
 Puppet manifest for Puppet module needs to be complied in order to 
-test/validate if the environment is working correctly
-
-Run the following command and get a YAML output as the result.
+test and validate if the environment is working correctly.
+Run the following command and inspect the YAML output.
 
 ```bash
 $ curl --cert /etc/puppet/ssl/certs/puppet.corp.guest.pem \
@@ -503,6 +504,8 @@ $ curl --cert /etc/puppet/ssl/certs/puppet.corp.guest.pem \
 ```
 
 ## Reference
+
+:o: add bibtex
 
 * <https://www.google.com/url?q=https://puppet.com/docs/pe/2017.3/installing/installing_pe.html%23concept-3157&sa=D&source=hangouts&ust=1522821857125000&usg=AFQjCNEPcs-uZes-m-fZYqK2WcTfkYRPLQ> 
 * Images - are taken form from <https://www.edureka.co/blog/videos/puppet-tutorial/> devops class
