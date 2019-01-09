@@ -1,7 +1,6 @@
 :clapper_board:|clapper.png
 :scroll:|scroll.png
 :memo:|memo.png
-:cloud:|cloud.png
 :graduation_cap:|graduation_cap.png
 :grinning_face_with_big_eyes:|grinning_face_with_big_eyes.png
 :heavy_large_circle:|heavy_large_circle.png
