@@ -1,4 +1,4 @@
-# Microsoft Azure
+# Microsoft Azure {#sec:azure}
 
 Microsoft Azure is a cloud computing service created by Microsoft. It
 includes computing services and products for building, testing,

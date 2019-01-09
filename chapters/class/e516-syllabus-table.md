@@ -41,16 +41,15 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#sec:cmd5) |
 | :white_check_mark: | 01/14    |         |                    | - [OpenCV](#sec:opencv) |
 | :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#sec:secchi-disk) |
-| :white_check_mark: | 01/21    |         |                    | [Data Center][datacenter.md] |
-| :white_check_mark: | 01/21    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-| :white_check_mark: | 01/21    |         |                    | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
-| :white_check_mark: | 01/21    |         |                    | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-| :white_check_mark: | 01/28   | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[:cloud:][virtualization.md] |
-| :white_check_mark: | 01/28    | 5       | Virtualization I   | - [Qemu](#s-qemu)[:cloud:][qemu.md] |
-| :white_check_mark: | 01/28    | 6       | Infrastructure     | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
-| :white_check_mark: | 01/28    |         |                    | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
-| :white_check_mark: | 01/28    |         |                    | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
-| :white_check_mark: | 01/28    |         |                    | - [OpenStack](#s-openstack) [:cloud:][openstack.md] |
+| :white_check_mark: | 01/21    |         |                    | [Data Center](#sec:data-center) |
+| :white_check_mark: | 01/21    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#sec:nist-bdra) |
+| :white_check_mark: | 01/21    |         |                    | - [Cloud Architectures](#sec:cloud-architectures) |
+| :white_check_mark: | 01/28   | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#sec:virtualization) |
+| :white_check_mark: | 01/28    | 5       | Virtualization I   | - [Qemu](#sec:qemu-kvm) |
+| :white_check_mark: | 01/28    | 6       | Infrastructure     | [Infrastructure as a Service](#sec:iaas-intro) |
+| :white_check_mark: | 01/28    |         |                    | - [Azure](#sec:azure) |
+| :white_check_mark: | 01/28    |         |                    | - [AWS](#sec:aws) | 
+| :white_check_mark: | 01/28    |         |                    | - [OpenStack](#sec:openstack) |
 | :white_check_mark: | 02/04    |         | Chameleon Cloud    | - **Chameleon Cloud** |
 | :white_check_mark: | 02/04    |         |                    | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
 | :white_check_mark: | 02/04    |         |                    | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
@@ -105,11 +104,6 @@ The book can be used as reference material in that case.
 You have to do only one project type.
 
 
-[arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
-
-[datacenter.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/datacenter.md
-[bdra.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/nist/bdra.md
-[iaas.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/iaas.md
 [openstack.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/openstack/opensatck.md
 [azure.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/azure/azure.md
 [aws.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md

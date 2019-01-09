@@ -1,4 +1,4 @@
-# Data Center
+# Data Center {#sec:data-center}
 
 :question: indicates opportunities for comprehension assignments while
 contributing to this document.
