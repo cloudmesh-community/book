@@ -23,7 +23,7 @@ $
 
 :o: `:o:`
 
-> Chapters marked with an :o: are not yet complete or have some issue
+> Chapters marked with this emoji are not yet complete or have some issue
 > that we know about. These chapters need to be fixed. If you like to
 > help us fixing this section, please let us know. 
 
@@ -44,12 +44,12 @@ Slides without any audio. They may be faster to download.
 
 :mortar_board:
 
-> A set of learning objectives with the `:mortar_board:` emoji
+> A set of learning objectives with the `:mortar_board:` emoji.
 
 
 :white_check_mark:
 
-> A section is release when it is marked with a :white_check_mark: in the syllabus
+> A section is release when it is marked with this emoji in the syllabus.
 
 :question:
 
@@ -61,13 +61,12 @@ Slides without any audio. They may be faster to download.
 
 :smiley:
 
-> Sections marked by the contributor with a :smiley: when they are
-> ready to be reviewd.
+> Sections marked by the contributor with this emoji when they are
+> ready to be reviewed.
 
 :wave:
 
-> Sections that neeed modifications ar indicated with :wave:. They
-> have been first set to :smiley:
+> Sections that need modifications are indicated with this emoji.
 
 :warning:
 
