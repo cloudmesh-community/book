@@ -51,16 +51,16 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 01/28    |         |                    | - [AWS](#sec:aws) | 
 | :white_check_mark: | 01/28    |         |                    | - [OpenStack](#sec:openstack) |
 | :white_check_mark: | 02/04    |         | Chameleon Cloud    | - **Chameleon Cloud** |
-| :white_check_mark: | 02/04    |         |                    | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Charge](#chameleon-cloud-charge-rates)[:cloud:][charge.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Quick start](#getting-started-on-chameleon-cloud)[:cloud:][start.md] |
-| :white_check_mark: | 02/04    |         |                    | - [KVM user guide](#openstack-virtual-machines)[:cloud:][user-guide.md] |
-| :white_check_mark: | 02/04    |         |                    | - [CLI](#openstack-command-line-interface)[:cloud:][cli.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Horizon](#openstack-horizon)[:cloud:][horizon.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Heat](#openstack-heat)[:cloud:][heat.md] |
-| :white_check_mark: | 02/04    |         |                    | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
-| :white_check_mark: | 02/04    |         |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
+| :white_check_mark: | 02/04    |         |                    | - [Resources](#sec:chameleon-resources) |
+| :white_check_mark: | 02/04    |         |                    | - [Hardware](#sec:chameleon-cloud-hardware) |
+| :white_check_mark: | 02/04    |         |                    | - [Charge](#sec:chameleon-charge) |
+| :white_check_mark: | 02/04    |         |                    | - [Quick start](#sec:chameleon-start) |
+| :white_check_mark: | 02/04    |         |                    | - [KVM user guide](#sec:chameleon:vm) |
+| :white_check_mark: | 02/04    |         |                    | - [CLI](#sec:chameleon-cli) | 
+| :white_check_mark: | 02/04    |         |                    | - [Horizon](#sec:chameleon-horizon) |
+| :white_check_mark: | 02/04    |         |                    | - [Heat](#sec:chameleon-heat})
+| :white_check_mark: | 02/04    |         |                    | - [Baremetal](#sec:chameleon-baremetal)
+| :white_check_mark: | 02/04    |         |                    | - [FAQ](#sec:chameleon-faq}) |
 | :white_check_mark: | 02/11    | 8       | Programming        | Python for Cloud Computing, |
 | :white_check_mark: | 02/11    |         |                    | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
 | :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |

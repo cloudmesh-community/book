@@ -1,4 +1,4 @@
-# OpenStack Horizon Graphical User Interface
+# OpenStack Horizon Graphical User Interface {#sec:chameleon-horizon}
 
 ## Configure resources
 

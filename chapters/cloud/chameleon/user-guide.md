@@ -1,4 +1,4 @@
-# OpenStack Virtual Machines
+# OpenStack Virtual Machines {#sec:chameleon:vm}
 
 OpenStack is an Infrastructure as a Service (IaaS) platform that allows
 you to create and manage virtual environments. Chameleon provides an
