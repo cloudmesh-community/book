@@ -1,4 +1,4 @@
-# Openstack Bare Metal
+# Openstack Bare Metal {#sec:chameleon-baremetal}
 
 In this page you will find documentation guiding you through the
 bare-metal deployment features available in Chameleon. Chameleon gives
