@@ -67,11 +67,11 @@ BIB=--bibliography references.bib
 #CSS=--css=template/epub.css
 RESOURCE=--resource-path=$(IMAGE_DIRS)
 
-abbrev:
-	#~/.pandoc/filters/abbrevs.py
-	mkdir -p ~/.pandoc/filters
-	cp ../chapters/dbase ~/.pandoc/dbase
-	cp ../bin/abbrevs.py ~/.pandoc/filters
+#abbrev:
+#	#~/.pandoc/filters/abbrevs.py
+#	mkdir -p ~/.pandoc/filters
+#	cp ../chapters/dbase ~/.pandoc/dbase
+#	cp ../bin/abbrevs.py ~/.pandoc/filters
 
 draft: prepare epubdraft
 	echo done
@@ -98,7 +98,7 @@ ifeq (,$(wildcard dest/chapters/images/penguin.jpg))
 	make -f Makefile images
 endif
 
-prepare: abbrev generateimages version authors destination chapterlist references todo index
+prepare: generateimages version authors destination chapterlist references todo index
 	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
 	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
 
