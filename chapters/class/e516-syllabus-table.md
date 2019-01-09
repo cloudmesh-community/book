@@ -131,7 +131,7 @@ You have to do only one project type.
 [azure.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/azure/azure.md
 [aws.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md
 [resources.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/resources.md
-[hardware.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/hardware.md
+[hardware.md]: [Section Chameleon Cloud Hardware](#sec:chameleon-hadware)
 [charge.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/charge.md
 [start.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/start.md
 [user-guide.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/chameleon/user-guide.md
