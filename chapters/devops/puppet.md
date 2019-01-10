@@ -1,5 +1,23 @@
 # Puppet :smiley:
 
+:o: Tyler: use of a and the needs to be checked as it seems there is	
+a different opinion on how to use this. changes thet Gregor did were	
+for example reverted. So it is importnat that this is checked by a	
+second native English speaker, E.g. Tyler	
+
+
+ :o: there is lots of redundancy in here in install, maybe this could	
+ebe simplified with a script. or two, one for mono, one for split.	
+
+ :o: explanation of difference between mono and split need to be improved.	
+
+ :o: inconsistent use of single `#` in file check TOC for this md file	
+
+ :o: cert section unclear. I recommend attending online hour to discuss	
+this. Maybe even separate meetin. We need to have TA in the meeting	
+
+ :o: I suggest that you do improvements backwards. Often by the end	
+sections are less worked on
 
 
 ## Overview
