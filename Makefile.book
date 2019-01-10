@@ -151,7 +151,7 @@ pdf: epub
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o all4pdf.epub metadata.txt all4pdf.md
 	# fix relative image path for nav.xhtml in epub
 	# so emoji images could show up in PDF
-	cd dest; mkdir bookedit; unzip -f all4pdf.epub -d ./bookedit; sed -i -e 's/..\/media/.\/media/g' ./bookedit/EPUB/nav.xhtml
+	cd dest; rm -rf bookedit; mkdir bookedit; unzip all4pdf.epub -d ./bookedit; sed -i -e 's/..\/media/.\/media/g' ./bookedit/EPUB/nav.xhtml
 	cd dest/bookedit; zip -X all4pdfnew.epub mimetype; zip -rg all4pdfnew.epub META-INF -x \*.DS_Store; zip -rg all4pdfnew.epub EPUB -x \*.DS_Store
 	cp dest/bookedit/all4pdfnew.epub ./dest
 	cd dest; ebook-convert all4pdfnew.epub $(FILENAME).pdf --pdf-page-numbers --embed-all-fonts
