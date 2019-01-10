@@ -24,13 +24,33 @@ def loadmapping(filename):
 
 emoji2pngurl = loadmapping(emojimapfile)
 
+courseTableStart = "[Course Syllabus Tables"
+courseTableEnd = "[Class Overview]"
+checkunicode = u'\u2713'
+checkEmoji = EMOJI_UNICODE[":white_heavy_check_mark:"]
+circleEmoji = EMOJI_UNICODE[":heavy_large_circle:"]
+
+def emojiTableFix(content):
+    c = content.replace(checkEmoji, checkunicode)
+    c = c.replace(circleEmoji, 'o')
+    #print (c)
+    return (c)
+
 def convert(filenamein, filenameout):
+    content = ''
     with open(filenamein, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    content = emojifix(content)
+    [p1, p2] = content.split(courseTableStart)
+    [p2, p3] = p2.split(courseTableEnd)
+    #print (p2)
+
+    p1fix = emojifix(p1)
+    p2fix = emojiTableFix(p2)
+    p3fix = emojifix(p3)
+
     with open(filenameout, 'w') as f:
-        f.write(content)
+        f.write(p1fix+courseTableStart+p2fix+courseTableEnd+p3fix)
     #content.find(u'\U0001f3ac')
     #print (u'\U0001f3ac')
 
