@@ -41,16 +41,19 @@ def convert(filenamein, filenameout):
     with open(filenamein, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    [p1, p2] = content.split(courseTableStart)
-    [p2, p3] = p2.split(courseTableEnd)
-    #print (p2)
+    if courseTableStart in content:
+        [p1, p2] = content.split(courseTableStart)
+        [p2, p3] = p2.split(courseTableEnd)
+        #print (p2)
 
-    p1fix = emojifix(p1)
-    p2fix = emojiTableFix(p2)
-    p3fix = emojifix(p3)
-
+        p1fix = emojifix(p1)
+        p2fix = emojiTableFix(p2)
+        p3fix = emojifix(p3)
+        content = p1fix+courseTableStart+p2fix+courseTableEnd+p3fix
+    else:
+        content = emojifix(content)
     with open(filenameout, 'w') as f:
-        f.write(p1fix+courseTableStart+p2fix+courseTableEnd+p3fix)
+        f.write(content)
     #content.find(u'\U0001f3ac')
     #print (u'\U0001f3ac')
 
