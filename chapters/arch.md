@@ -23,8 +23,7 @@ implementations.
 We start our observation with some a depiction of some of the
 important architectural models motivating the current state of
 information technology services we provide in +@fig:evolution-computer-arch.
-The [original figure]
-(http://www.cmlab.csie.ntu.edu.tw/~jimmychad/CN2011/Readings/CloudComputingNewWine.pdf)
+The [original figure](http://www.cmlab.csie.ntu.edu.tw/~jimmychad/CN2011/Readings/CloudComputingNewWine.pdf)
 has been updated by von Laszewski to include the mobile computing and
 the internet of things phase that is bringing rapid changes to how we
 perceive and use the cloud in the near future.
