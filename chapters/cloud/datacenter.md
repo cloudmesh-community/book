@@ -47,7 +47,7 @@ videos watched every minute. Naturally the numbers are averages over
 time.
 
 
-![](images/data-never-sleeps-6.png)
+![Data Never Sleeps](images/data-never-sleeps-6.png)
 
 Source: <https://www.domo.com/blog/wp-content/uploads/2018/06/18-domo-data-never-sleeps-6.png>
 
@@ -151,18 +151,18 @@ In general a data center will have the following components.
   number of support infrastructure that addresses for example
   continuous power supply, air conditioning, and security For this
   reason you find in such centers
-  
-  * Uninterruptible Power Sources (UPS) 
+
+  * Uninterruptible Power Sources (UPS)
   * Environmental Control Units
   * Physical Security Systems
-  
+
 * Information Technology Equipment: Naturally the facility will host the IT equipment including the following:
 
   * Servers
   * Network Services
   * Disks
   * Data Backup Services
-  
+
 * Operations staff: The facility will need to be staffed with the various groups that support such data centers. It includes
 
   * IT Staff
@@ -173,9 +173,9 @@ In general a data center will have the following components.
   obvious that through automation is quite low. According to
   (<https://journal.uptimeinstitute.com/data-center-staffing/>) proper
   data center staffing is a key to a reliable operation.
-  
+
 ![](images/datacenter-staff-impact.jpg)
-  
+
 Figure Operational Sustainability.  According to Tier Standard:
 Operational Sustainability, the three elements of Operational
 Sustainability are Management and Operations, Building
@@ -189,7 +189,7 @@ them. As we see in the Figure *Outage* not every error is caused by an
 operational issue. External, installation, design and manufacturer
 issues are together the largest issue for datacenter incidents.
 
-![](images/datacenter-outage.jpg) 
+![](images/datacenter-outage.jpg)
 
 
 Figure Outage. According to the Uptime Institute Abnormal Incident
@@ -226,7 +226,7 @@ but by the community in which such centers operate.
 
 Hence Data Center IaaS advantages include
 
-* Reduced operational cost 
+* Reduced operational cost
 * Increased reliability
 * Increased scalability
 * Increased flexibility
@@ -267,12 +267,12 @@ estimate the Carbon footprint of a data center.
 Although this report is already a bit older, it provides still
 valuable information. It defines key terms such as
 
-* Carbon dioxide emissions coefficient (“carbon footprint”) 
-	
+* Carbon dioxide emissions coefficient (“carbon footprint”)
+
 	With the increasing demand of data, bandwidth and high performance systems, there is substantial amount of power consumption. This leads to high amount of greenhouses gases emission into the atmosphere, released due to any kind of basic activities like driving a vehicle or running a power plant.
-	
+
 	" The measurement includes power generation plus transmission and distribution losses incurred during delivery of the electricity to its point of use."
-	
+
 Data centers in total used 91 billion kilowatt-hours (kWh) of electrical energy in 2013, and they will use 139 billion kWh by 2020. Currently, data centers consume up to 3 percent of all global electricity production while producing 200 million metric tons of carbon dioxide. Since world is moving towards cloud, causing more and more data center capacity leading more to power consumption.
 
 
@@ -280,7 +280,7 @@ Data centers in total used 91 billion kilowatt-hours (kWh) of electrical energy 
 
 	Peaking power plants, also known as peaker plants, and occasionally just "peakers", are power plants that generally run only when there is a high demand, known as peak demand, for electricity.Because they supply power only occasionally, the power supplied commands a much higher price per kilowatt hour than base load power. Peak load power plants are dispatched in combination with base load power plants, which supply a dependable and consistent amount of electricity, to meet the minimum demand.
 	These plants are generally coal-fired which causes a huge amount of CO2 emissions. A peaker plant may operate many hours a day, or it may operate only a few hours per year, depending on the condition of the region's electrical grid. Because of the cost of building an efficient power plant, if a peaker plant is only going to be run for a short or highly variable time, it does not make economic sense to make it as efficient as a base load power plant. In addition, the equipment and fuels used in base load plants are often unsuitable for use in peaker plants because the fluctuating conditions would severely strain the equipment. For these reasons, nuclear, geothermal, waste-to-energy, coal and biomass are rarely, if ever, operated as peaker plants.
-	
+
 * Avoided emissions
 
 	Emissions avoidance is the most effective carbon management strategy over a multi-decadal timescale to achieve atmospheric CO2 stabilization and a subsequent decline . This prevents, in the first place, stable underground carbon deposits from entering either the atmosphere or less stable carbon pools on land and in the oceans.
@@ -288,9 +288,9 @@ Data centers in total used 91 billion kilowatt-hours (kWh) of electrical energy 
 Carbon offsets based on energy efficiency rely on technical efficiencies to reduce energy consumption and therefore reduce CO2 emissions. Such improvements are often achieved by introducing more energy efficient lightening, cooking, heating and cooling systems. These are real emission reduction strategies and have created valid offset projects.
 
 This type of carbon offset provides perhaps the simplest options that will ease the adoption of low carbon practice. When these practices become generally accepted (or compulsory), they will no longer qualify as offsets and further efficiencies will need to be promoted.
-	
-* CO2 (carbon dioxide, or “carbon”) 
-	
+
+* CO2 (carbon dioxide, or “carbon”)
+
 	Carbon dioxide is the main cause of the greenhouse effect, it is emitted in huge amount into our atmosphere with a life cycle of almost 100 years. Data centers emit during the manufacturing process of all the components that populate a
 data center (servers, UPS, building shell, cooling, etc.) and during operation of data centers (in terms of electricity consumed), the maintenance of the data centers (i.e. replacement of consumables like batteries, capacitors, etc.), and the disposal of the components of the data centers at the end of the lifecycle.
 	Until now, power plants have been allowed to dump unlimited amounts of carbon pollution into the atmosphere — no rules were in effect that limited their emissions of carbon dioxide, the primary driver of global warming. Now, for the first time, the EPA has finalized new rules, or standards, that will reduce carbon emissions from power plants. Known as the Clean Power Plan, these historic standards represent the most significant opportunity in years to help curb the growing consequences of climate change.
@@ -367,7 +367,7 @@ arising from build and teardown phase as well as operational upgrades.
 > We will ask you anonymously to report your carbon footprint via a
 > form we will prepare in future. As the time to do this is less than
 > 2 minutes, We ask all students to report their footprint.
- 
+
 Please use the calculator at:
 
 * <http://carbonfootprint.c2es.org/>
@@ -383,7 +383,7 @@ Formally we define it as
 
 > *PUE is the ratio of total amount of energy used by a computer data
 > center facility to the energy delivered to computing equipment.*
- 
+
 PUE was published in 2016 as a global standard under
 [ISO/IEC 30134-2:2016](https://www.iso.org/standard/63451.html).
 
@@ -398,7 +398,7 @@ $\mathrm{PUE} = \frac{\mathrm{Total~Facility~Energy}}{\mathrm{IT~Equipment~Energ
 $\mathrm{PUE} = 1 + \frac{\mathrm{Non~IT~Facility~Energy}}{\mathrm{IT~Equipment~Energy}}$
 
 
-According to the PUE calculator at 
+According to the PUE calculator at
 
 * <https://www.42u.com/measurement/pue-dcie.htm>
 
@@ -447,8 +447,8 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 
 **E.PUE.1:** Lowest PUE you can find
 
-> What is the lowest PUE you can find. 
-> Provide details about the system as well as 
+> What is the lowest PUE you can find.
+> Provide details about the system as well as
 > the date when the PUE was reported.
 
 ### Hot-Cold Isle :o: :question:
@@ -623,7 +623,7 @@ GovCloud Region in the US.
 
 **Figure:** AWS regions
 
-Amazon strives to achieve high availability through multiple availability zones, 
+Amazon strives to achieve high availability through multiple availability zones,
 improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion.
 
 The regions and number of availability zones are as follows:
@@ -640,7 +640,7 @@ South America São Paulo (3)
 
 Region Gov Cloud:
 AWS GovCloud (US-West) (3)
-  
+
 New Region (coming soon):
 Bahrain
 Hong Kong SAR, China
@@ -699,7 +699,7 @@ Google highlights its efficiency strategy and methods here:
 
 * <https://www.google.com/about/datacenters/efficiency/>
 
-They summarize their offers are based on 
+They summarize their offers are based on
 
 * Measuring the PUE
 * Managing airflow
@@ -722,12 +722,12 @@ all encompassing.
 ![](images/datacenter-google-boundary.png)
 
 **Figure:** [Google data center PUE measurement boundaries. The average PUE for all Google data centers is 1.12, although we could boast a PUE as low as 1.06 when using narrower boundaries.](https://www.google.com/about/datacenters/efficiency/internal/)
- 
+
  As a consequence, Google is defining its PUE in detail as follows:
- 
+
  ![](images/datacenter-google-formula.png)
- 
-where the abbreviations stand for 
+
+where the abbreviations stand for
 
 * ESIS = Energy consumption for supporting infrastructure power
   substations feeding the cooling plant, lighting, office space, and
@@ -743,10 +743,10 @@ where the abbreviations stand for
 * EUPS = Energy loss at uninterruptible power supplies (UPSes) which
   feed servers, network, and storage equipment
 * ENet1 = Network room energy fed from type 1 unit substitution
- 
+
 For more details see <https://www.google.com/about/datacenters/efficiency/internal/>
 
- 
+
 ### IBM
 
 IBM maintains almost 60 data centers, which are placed globally in 6
@@ -828,7 +828,7 @@ the infrastructure.
 
 * <https://www.chameleoncloud.org/>
 
-An overview of the hardware can be obtained from 
+An overview of the hardware can be obtained from
 
 * <https://www.chameleoncloud.org/hardware/>
 
@@ -883,7 +883,7 @@ and
 [Google](https://blogs.technet.microsoft.com/msdatacenters/2013/04/22/microsofts-itpac-a-perfect-fit-for-off-the-grid-computing-capacity/)
 The current trend however is to build mega or hyperscale data centers.
 
-## Server Consolidation 
+## Server Consolidation
 
 One of the driving factors in cloud computing and the rise of large
 scale data centers is the ability to use server virtualization to
@@ -937,7 +937,7 @@ predicted energy use would be approximately 73 billion kWh in 2020.
 
 ![](images/datacenter-energy-use.png)
 
-Figure: Energy Forecast 
+Figure: Energy Forecast
 
 Source: <https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf>
 
@@ -956,7 +956,7 @@ components.
 * **best practices** increases the energy-efficiency gains that can be obtained
 through the widespread adoption the most efficient technologies and best management
 practices applicable to each data center type. This scenario focuses on maximizing the
-efficiency of each type of data center facility. 
+efficiency of each type of data center facility.
 
 * **hyperscale data centers** where the infrastructure will be moved
   from smaller data centers to larger *hyperscale* data centers.
@@ -1026,6 +1026,6 @@ Some thought on this include:
 3. Positive effects could also be created on ecosystems, which is for
    example demonstrated by creation of artificial reefs. However if
    the structure has to be removed after 20 years, which impat has it
-   than on the ecosystem. 
+   than on the ecosystem.
 
 Find more about this at [@nytimes-datacenter]
