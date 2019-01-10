@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import sys
 from emoji import UNICODE_EMOJI, EMOJI_UNICODE
+import ebooklib
+from ebooklib import epub
 
 emojimapfile = "emoji2png.txt"
 
@@ -16,6 +18,7 @@ def loadmapping(filename):
         for line in f:
             emoji, img = line.strip().split("|")
             imgurl = '<img src="{imgname}" width="16" height="16" />'.format(imgname=img)
+            #imgurl = '![](images/{imgname})'.format(imgname=img)
             emojimap[emoji] = imgurl
     return emojimap
 
@@ -79,5 +82,43 @@ def main():
     list(filenamein)
     convert(filenamein, filenameout)
 
+def readebook(name):
+    book = epub.read_epub(name)
+    return (book)
+
 if __name__ == "__main__":
     main()
+
+    '''
+    name = 'all4pdf.epub'
+    book = readebook(name)
+    print (book)
+    #toc = book.toc
+    #print (toc)
+    #for item in toc:
+    #    print (item)
+    nav = book.get_items_of_type(ebooklib.ITEM_NAVIGATION)
+    #print (nav)
+    nav = book.get_item_with_href('nav.xhtml')
+    navcontent = str(nav.get_content())
+    navcontentnew = navcontent.replace("../media", "./media")
+    #print (navcontentnew)
+
+    nav.content=navcontentnew
+    #book.get_item_with_href()
+    newitems = []
+    for item in book.get_items():
+        if item == nav:
+            print('==================================')
+            print('NAME : ', item.get_name())
+            print('----------------------------------')
+            print(navcontentnew)
+            print('==================================')
+            item.content=navcontentnew
+        newitems.append(item)
+
+    newbook = epub.EpubBook()
+    for item in newitems:
+        newbook.add_item(item)
+    epub.write_epub('test.epub', newbook)
+    '''
