@@ -34,7 +34,7 @@ bucket properties and permissions. After those sections, a review page
 will be presented for your review and if you are satisfied with your
 selections, click 'Create bucket' [@hid-sp18-521-s3bucket]. As the following: +@fig:s3-bucket.
 
-![**Figure:** S3 Bucket](images/S3_create_bucket.png){#fig:s3-bucket}
+![S3 Bucket](images/S3_create_bucket.png){#fig:s3-bucket}
 
 After the S3 bucket has been created, an EC2 key pair then needs to be
 generated which allows you to connect to your EMR cluster over SSH. If
@@ -51,7 +51,7 @@ location for use later on as this is the only time you will be able to
 save this key file. It will need to be used when you need to launch and
 connect to the EC2 instances created by EMR [@hid-sp18-521-ec2keypair]. As the picture below: +@fig:key.
 
-![**Figure:** Key](images/EMRkey.png){#fig:key}
+![Key](images/EMRkey.png){#fig:key}
 
 ## Configuring and Utilizing the Cluster with AWS Management Console
 
@@ -75,7 +75,7 @@ used for when you want to execute a set of predefined steps upon cluster
 creation and once those steps complete successfully, shut down the
 cluster [@hid-sp18-521-emrlaunch]. As the figure shows: +@fig:configuration.
 
-![**Figure:** Configuration](images/emr_gen_config.png){#fig:configuration}
+![Configuration](images/emr_gen_config.png){#fig:configuration}
 
 Once launch mode is selected, scroll down to the 'Software
 configuration' section and choose an EMR release version. See the following picture: +@fig:software-configuration. The most
@@ -99,9 +99,9 @@ launched by selecting the 'Create cluster' button at the bottom of the
 page. Your cluster will then be launched and ready for
 workloads [@hid-sp18-521-emrlaunch].
 
-![**Figure:** Software Configuration](images/emr_software_config.png){#fig:software-configuration}
+![Software Configuration](images/emr_software_config.png){#fig:software-configuration}
 
-![**Figure:** Security](images/emr_security.png){#fig:security}
+![Security](images/emr_security.png){#fig:security}
 
 If you've selected cluster launch mode, ad-hoc processing of data can
 now occur on cluster. To get started go to the EMR console page. From
@@ -123,11 +123,11 @@ needed and there are additional ways to submit up to 256 active steps
 that can be explored but is beyond the scope of this
 section [@hid-sp18-521-emrprocess].
 
-![**Figure:** Cluster Create](images/emr_cluster_create.png){#fig:cluster-create}
+![Cluster Create](images/emr_cluster_create.png){#fig:cluster-create}
 
-![**Figure:** Cluster Steps](images/emr_cluster_steps.png){#fig:cluster-steps}
+![Cluster Steps](images/emr_cluster_steps.png){#fig:cluster-steps}
 
-![**Figure:** Additional Steps](images/emr_cluster_steps2.png){#fig:additional-steps}
+![Additional Steps](images/emr_cluster_steps2.png){#fig:additional-steps}
 
 ## Teardown
 
@@ -157,6 +157,6 @@ the section have been deleted, you can then be certain that no
 additional costs will continue to accrue based on the work performed in
 this section [@hid-sp18-521-emrreset].
 
-![**Figure:** Terminate](images/emr_terminate.png){#fig:terminate}
+![Terminate](images/emr_terminate.png){#fig:terminate}
 
-![**Figure:** Bucket](images/s3_delete_bucket.png){#fig:bucket}
+![Bucket](images/s3_delete_bucket.png){#fig:bucket}
