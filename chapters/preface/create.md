@@ -70,7 +70,7 @@ Books are organize in directories. We currently have
     ./book/writing
     ./book/222
 
-To compile a book go to the directory and make it. Lets assume you
+To compile a book go to the directory and make it. Let us assume you
 like to create the cloud book for 516
 
 ```bash
