@@ -89,7 +89,9 @@ tests. They showcase your understanding of the field.
   particular technology. Typically it is a console session or a
   program. Examples augment Chapters as well as Sections.
 
-:  A sample of a student contributed chapter is * [GraphQL](#s-graphql).
+:  A sample of a student contributed chapter is 
+
+   * [GraphQL](#s-graphql).
 
 
 :warning: It is expected from you that you self identify a section

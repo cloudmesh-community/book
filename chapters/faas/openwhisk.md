@@ -36,8 +36,11 @@ POST /api/v1/namespaces/$userNamespace/actions/HelloAction
 Host: $openwhiskEndpoint
 ```
 The `userNamespace` variable defines the namespace in which the `HelloAction` is put into. Accordingly, nginx is the entering point of the OpenWhisk system and it plays an important role as a HTTP server as well as a reverse proxy server, mainly used for SSL termination and HTTP request  forwarding.
+
 ### Controller: The System's Interface
+
 We learned that nginx does not do any processing on the HTTP request except decrypting it (SSL Termination). The main processing of the request starts in the Controller. The controller plays the role of the interface for user both for actions and Create, Read, Update, and Delete (CRUD) requests, translating the user's POST request to action invocation. The controller has an essential role in OpenWhisk workflow and its role is not finished here and is partially involved in next steps as well.
+
 
 ### CouchDB
 
@@ -156,11 +159,15 @@ It is always possible that something goes wrong in the process of deploying the 
 ```bash
 command: /bin/sh -c "exec /init.sh --id 0 >> /logs/controller-local_logs.log 2>&1"
 ```
+
 this line is indicating that the following command should be run after the container is started:
+
 ```bash
 $ /init.sh --id 0 >> /logs/controller-local_logs.log 2>&1
 ```
+
 However, starting another instance of the docker image with this command outputted a `Permission Denied` error which could be fixed either by changing the logs folder permission in the docker image or container (followed by a commit) or saving the log file in another folder. In this case replacing that line with the following line would temporarily fix the issue:
+
 ```bash
 command: /bin/sh -c "exec /init.sh --id 0 >> /home/owuser/controller-local_logs.log 2>&1"
 ```
@@ -241,12 +248,15 @@ $ wsk -i action create greeter greeter.js
 ok: created action greeter
 ```
 Note that the `-i` option is to prevent the following error:
+
 ```bash
 $ wsk action create greeter greeter.js
 error: Unable to create action 'summer': Put https://192.168.2.2/api/v1/namespaces/guest/actions/summer?overwrite=false: x509: cannot validate certificate for 192.168.2.2 because it doesn't contain any IP SANs
 Run 'wsk --help' for usage.
 ```
+
 Afterwards you can get the list of actions to make sure your desired action is created:
+
 ```bash
 $ wsk -i action list
 actions
@@ -270,6 +280,7 @@ activations
 02e0e12118af43b0a0e12118afd3b038 hello
 10c2cddb0d2c4c1f82cddb0d2c1c1feb hello
 ```
+
 The result of the command above is showing that the `hello` action has been invoked twice and the `greeter` action was invoked once. You can get more information about each of the activation using the `wsk -i activation get [ACTIVATION_ID]`:
 ```bash
 $ wsk -i activation get 976a7d02dab7460eaa7d02dab7760e9a
