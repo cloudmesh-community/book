@@ -33,7 +33,7 @@ how much i created in one minute instead. Such depictions include
 samples of data created as a part of popular cloud services or the
 internet in general.
 
-One such popular depiction is "Data Never Sleeps". It has been
+One such popular depiction is "Data Never Sleeps" (see +@fig:data-never-sleeps). It has been
 produced a number of times over the years and is now at version 6.0
 released in 2017. If you identify a newer version, please let us know.
 It is worth while to study this image in detail and identify some of
@@ -47,18 +47,18 @@ videos watched every minute. Naturally the numbers are averages over
 time.
 
 
-![Data Never Sleeps](images/data-never-sleeps-6.png)
+![Data Never Sleeps](images/data-never-sleeps-6.png){#fig:data-never-sleeps}
 
 Source: <https://www.domo.com/blog/wp-content/uploads/2018/06/18-domo-data-never-sleeps-6.png>
 
 A different source publishes what is happening on the internet in a
-minute, but we have been able to locate a version from 2018. While
+minute, but we have been able to locate a version from 2018 (see +@fig:internet-minutes-2018). While
 some data seems the same, others are slightly different. For example
 this graph has a lower count for Google searches, while the number of
 text messages send is significantly higher in contrast to the previous
 figure.
 
-![](images/internet-minute-2018.jpg)
+![Internet Minute 2018](images/internet-minute-2018.jpg){#fig:internet-minutes-2018}
 
 Source: <https://www.allaccess.com/merge/archive/28030/2018-update-what-happens-in-an-internet-minute>
 
@@ -67,28 +67,26 @@ not only increases, but also declines. Looking at facebook showcases a
 loss of 73000 logins per minute. This loss is substantial. We can see
 that facebook services are replaced by other services that are more
 popular with the younger generation who tend to pick up new services
-quickly.
+quickly. See +@fig:internet-minutes-2017-2018
 
 
-![](images/internet-minute-2017-2018.jpg)
+![Internet Minute 2017-2018](images/internet-minute-2017-2018.jpg){#fig:internet-minutes-2017-2018}
 
 Source: <https://www.allaccess.com/assets/img/content/merge/2018/m-04-03-pic1-lg.jpg>
 
 
 It is also interesting to compare such trends over a longer period of
-time. An example is provided by looking at Google searches:
+time. See +@fig:google-search-per-year, +@fig:big-data-trend-2012. An example is provided by looking at Google searches:
 <http://www.internetlivestats.com/google-search-statistics/>.
 
-![](images/google-search.png)
+![Google searches over time](images/google-search.png){#fig:google-search-per-year}
 
-**Figure:** Google searches over time
-
-![](images/bd-forbes-trend.png)
+![Big data trend. 2012](images/bd-forbes-trend.png){#fig:big-data-trend-2012}
 
 When looking at the trends, many predict an exponential growth in data.
 This trend is continuing.
 
-**Figure:** Big data trend. 2012, Source: <https://blogs-images.forbes.com/christopherfrank/files/2012/03/VI_BigData_Graphic_v3_low.png>
+Big data trend. 2012, Source: <https://blogs-images.forbes.com/christopherfrank/files/2012/03/VI_BigData_Graphic_v3_low.png>
 
 
 <!--
@@ -172,9 +170,9 @@ In general a data center will have the following components.
   With regards to the number of people serving such a facility it is
   obvious that through automation is quite low. According to
   (<https://journal.uptimeinstitute.com/data-center-staffing/>) proper
-  data center staffing is a key to a reliable operation.
+  data center staffing is a key to a reliable operation. See +@fig:datacenter-staff-impact
 
-![](images/datacenter-staff-impact.jpg)
+![Datacenter Staff Impact](images/datacenter-staff-impact.jpg){#fig:datacenter-staff-impact}
 
 Figure Operational Sustainability.  According to Tier Standard:
 Operational Sustainability, the three elements of Operational
@@ -187,9 +185,9 @@ data center. Everyone has probably experienced some outage, so it is
 important to identify where they come from in order to prevent
 them. As we see in the Figure *Outage* not every error is caused by an
 operational issue. External, installation, design and manufacturer
-issues are together the largest issue for datacenter incidents.
+issues are together the largest issue for datacenter incidents. See +@fig:datacenter-outage
 
-![](images/datacenter-outage.jpg)
+![Datacenter outage](images/datacenter-outage.jpg){#fig:datacenter-outage}
 
 
 Figure Outage. According to the Uptime Institute Abnormal Incident
@@ -482,12 +480,10 @@ Source: <https://experts.illinois.edu/en/publications/using-xdmod-to-facilitate-
 
 Having access to a detailed metrics analysis allows users and center
 administrators, as well as project managers to better evaluate the use
-and utilization of such large facilities justifying their existence.
+and utilization of such large facilities justifying their existence. See +@fig:datacenter-xdmod
 
 
-![](images/datacenter-xdmod.png)
-
-**Figure:** XDMod: XSEDE Metrics on Demand
+![XDMod: XSEDE Metrics on Demand](images/datacenter-xdmod.png){#fig:datacenter-xdmod}
 
 Additional information is available at
 
@@ -532,15 +528,13 @@ as usage across projects. An archived portal view is available at:
 
 * <http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html>
 
-![](images/datacenter-fg-metric.png)
-
-**Figure:** FutureGrid Cloud Metric
+![FutureGrid Cloud Metric](images/datacenter-fg-metric.png){#fig:datacenter-fg-metric}
 
 Futuregrid offered multiple clouds including clouds based on
 OpenStack, Eucalyptus, and Nimbus. Nimbus and Eucalyptus are systems
 that are no longer used in the community. Only OpenStack is the only
 viable solution in addition to the cloud offerings by Comet that do
-not uses OpenStack.
+not uses OpenStack. See +@fig:datacenter-fg-metric
 
 Futuregrid, could monitor all of them and published its result in its
 Metrics portal. Monitoring the VMs is an important activity as they
@@ -617,14 +611,12 @@ The global infrastructure is presented (ass of Aug 29th 2018) at
 55 Availability Zones within 18 geographic Regions and 1 Local Region
 around the world. Plans exists to add 12 Availability Zones and four
 additional Regions in Bahrain, Hong Kong SAR, Sweden, and a second AWS
-GovCloud Region in the US.
+GovCloud Region in the US. See +@fig:datacenter-aws-region
 
-![](images/datacenter-aws-region.png)
-
-**Figure:** AWS regions
+![AWS regions](images/datacenter-aws-region.png){#fig:datacenter-aws-region}
 
 Amazon strives to achieve high availability through multiple availability zones,
-improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion.
+improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion. See +@fig:datacenter-azure-region
 
 The regions and number of availability zones are as follows:
 
@@ -658,16 +650,13 @@ applications to the users around the world. The goal is similar as
 other commercial hyprescale providers by introducing preserving data
 residency, and offering comprehensive compliance and resilience. As of
 Aug 29, 2018 Azure supports 54 regions worldwide. These regions can
-currently be accessed by users in 140 countries. Not every service is
+currently be accessed by users in 140 countries. See +@fig:datacenter-azure-region. Not every service is
 offered in every region as the service to region matrix shows:
 
 * <https://azure.microsoft.com/en-us/global-infrastructure/services/>
 
 
-![](images/datacenter-azure-region.png)
-
-**Figure:** Azure regions
-
+![Azure regions](images/datacenter-azure-region.png){#fig:datacenter-azure-region}
 
 
 ### Google
@@ -676,7 +665,7 @@ offered in every region as the service to region matrix shows:
 From
 <https://www.google.com/about/datacenters/inside/locations/index.html>
 we find that on Aug. 29th Google has the following data center
-locations:
+locations (see +@fig:datacenters-google):
 
 * **North America:** Berkeley County, South Carolina; Council Bluffs,
   Iowa; Douglas County, Georgia; Jackson County, Alabama; Lenoir, North
@@ -688,7 +677,7 @@ locations:
   St Ghislain, Belgium
 
 
-![](images/datacenters-google.png)
+![Google data centers](images/datacenters-google.png){#fig:datacenters-google}
 
 Each data center is advertised with a special environmental impact
 such as a unique cooling system, or wildlife on premise. Google's data
@@ -708,9 +697,9 @@ They summarize their offers are based on
 * Optimizing the power distribution
 
 
-![](images/datacenter-google-pue.png)
+![PUE data for all large-scale Google data centers](images/datacenter-google-pue.png){#fig:datacenter-google-pue}
 
-**Figure:** [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
+See +@fig:datacenter-google-pue, [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
 
 An important lesson from Google is the PUE boundary. That is the
 different efficiency based on the closeness of the IT infrastructure
@@ -719,13 +708,13 @@ important to take at any providers definition of PUE in order not to
 report numbers that are not comparable between other vendors and are
 all encompassing.
 
-![](images/datacenter-google-boundary.png)
+![Google data center PUE measurement boundaries](images/datacenter-google-boundary.png){#fig:datacenter-google-boundary}
 
-**Figure:** [Google data center PUE measurement boundaries. The average PUE for all Google data centers is 1.12, although we could boast a PUE as low as 1.06 when using narrower boundaries.](https://www.google.com/about/datacenters/efficiency/internal/)
+See +@fig:datacenter-google-boundary [Google data center PUE measurement boundaries. The average PUE for all Google data centers is 1.12, although we could boast a PUE as low as 1.06 when using narrower boundaries.](https://www.google.com/about/datacenters/efficiency/internal/)
 
- As a consequence, Google is defining its PUE in detail as follows:
+ As a consequence, Google is defining its PUE in detail as follows, see +@fig:datacenter-google-formula, :
 
- ![](images/datacenter-google-formula.png)
+ ![Google PUE](images/datacenter-google-formula.png){#fig:datacenter-google-formula}
 
 where the abbreviations stand for
 
@@ -784,14 +773,12 @@ Primary compute resources are listed in the resource monitor at
 
 For cloud Computing the following systems are of especial importance
 although selected others may also host container based systems while
-using singularity:
+using singularity (see +@fig:datacenter-xsede):
 
 * Comet virtual clusters
 * Jetstream OpenStack
 
-![](images/datacenter-xsede.jpg)
-
-**Figure:** XSEDE distributed resource infrastructure
+![XSEDE distributed resource infrastructure](images/datacenter-xsede.jpg){#fig:datacenter-xsede}
 
 #### Comet
 
@@ -837,11 +824,9 @@ An overview of the hardware can be obtained from
 Indiana University has a data center in which many different systems
 are housed. This includes not only jetstream, but also many other
 systems. The systems include production, business, and research
-clusters and servers.
+clusters and servers. See +@fig:datacenter-iu
 
-![](images/datacenter-iu.jpg)
-
-**Figure:** IU Data Center
+![IU Data Center](images/datacenter-iu.jpg){#fig:datacenter-iu}
 
 On the research cluster side it offers Karst:
 
@@ -926,7 +911,7 @@ forecast is with different assumption is contrasts till 2020
 
 Figure Energy Forecast depicts "an estimate of total U.S.  data center
 electricity use (servers, storage, network equipment, and
-infrastructure) from 2000-2020".
+infrastructure) from 2000-2020". See +@fig:datacenter-energy-use
 
 While in "2014 the data centers in the U.S. consumed an estimated 70
 billion kWh" or "about 1.8% of total U.S. electricity consumption".
@@ -935,9 +920,7 @@ However, more recent studies find an increase by about 4% from
 originally predicted several years ago. The study finds that the
 predicted energy use would be approximately 73 billion kWh in 2020.
 
-![](images/datacenter-energy-use.png)
-
-Figure: Energy Forecast
+![Energy Forecast](images/datacenter-energy-use.png){#fig:datacenter-energy-use}
 
 Source: <https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf>
 
@@ -985,9 +968,9 @@ exactly 0, while land data centers consume ~ 4.8 liters of water per
 KWH. This vessel consumed computer power equivalent to 300 Desktop PCs
 and was of 38000 lbs and it operated for 105 days.
 
-![](images/project-natick-phase1.png)
+![The Leona Philpot prototype](images/project-natick-phase1.png){#fig:project-natick-phase1}
 
-**Figure:** The *Leona Philpot* prototype was deployed off the central
+See +@fig:project-natick-phase1, The *Leona Philpot* prototype was deployed off the central
 coast of California on Aug. 10, 2015. Source: [Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/) [@microsoft-first-datacenter]
 
 
@@ -1005,9 +988,9 @@ The total estimated lifespan of a Natick datacenter is around 20 years, after
 which it will be retrieved and recycled.
 
 
-![](images/project-natick-phase2.png)
+![The Northern Isles prototype](images/project-natick-phase2.png){#fig:project-natick-phase2}
 
-**Figure:** The *Northern Isles* prototype being deployed near
+See +@fig:project-natick-phase2, The *Northern Isles* prototype being deployed near
 Scotland. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
 
 Although the cooling provides a significant benefit while using
