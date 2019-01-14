@@ -55,18 +55,15 @@ management
 
 
 * [Amazon EC2](https://aws.amazon.com/ec2/?nc2=h_mo)
-* [Amazon EC2 Auto
-Scaling](https://aws.amazon.com/ec2/autoscaling/?nc2=h_mo)
+* [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/?nc2=h_mo)
 
 ### Container Infrastructure as a Service
 
 Amazon offers the following container based services
 
 * [Amazon Elastic Container Service](https://aws.amazon.com/ecs/?nc2=h_mo)
-* [Amazon Elastic Container Service for
-Kubernetes](https://aws.amazon.com/eks/?nc2=h_mo)
-* [Amazon Elastic Container
-Registry](https://aws.amazon.com/ecr/?nc2=h_mo)
+* [Amazon Elastic Container Service for Kubernetes](https://aws.amazon.com/eks/?nc2=h_mo)
+* [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/?nc2=h_mo)
 
 ### Serverless Compute using AWS Lambda
 
@@ -87,7 +84,7 @@ the following document
 ### Serverless Compute using AWS Lambda
 
 Serverless computing or FaaS is a new cloud computing paradigm that has
-gained popularity recently. 
+gained popularity recently.
 
 
 
@@ -95,7 +92,7 @@ gained popularity recently.
 ### Storage
 
 AWS provides many storage services that users can leverage for developing
-applications and solutions. The list below showcases AWS storage 
+applications and solutions. The list below showcases AWS storage
 services. Amazon offers the following storage services
 
 * [Amazon Simple Storage Service
@@ -254,7 +251,7 @@ free tier details visit [AWS Free Tier](https://aws.amazon.com/free/)
 
 ![Free tier](images/freetier.png){#fig:free-tier}
 
-Basically there are two categories in the free tier, 
+Basically there are two categories in the free tier,
 
 * 12 months free
 * Always free
@@ -371,13 +368,13 @@ terminate the VM.
 ## Access from the Command Line
 
 AWS also provides an command line interface that can be used to manage
-all the AWS services through simple commands. below are two example 
+all the AWS services through simple commands. below are two example
 commands.
 
 	aws s3 <Command> [<Arg> ...]
 	aws ec2 <Command> [<Arg> ...]
 
-You can find more information regarding the AWS CLI in the following 
+You can find more information regarding the AWS CLI in the following
 documents.
 
 * AWS Command Line: <https://aws.amazon.com/cli/>
@@ -410,7 +407,7 @@ to its specialization. However this is also its limitation as in
 contrast to libcloud it does not support other cloud providers. Hence
 it bares the risk of vendor lockin. Boto is maintained in github.
 
-Documentation about boto can be found at 
+Documentation about boto can be found at
 
 * <https://boto3.readthedocs.io/en/latest/>
 * <https://github.com/boto/boto3>
@@ -422,9 +419,8 @@ Documentation about boto can be found at
 cloud service providers using a unified API. It was created to make it
 easy for developers to build products that work between any of the
 services that it supports." A more detailed description on Libcloud and
-how you can use it to connect with AWS is provided in the Section 
+how you can use it to connect with AWS is provided in the Section
 [Python libcloud](#python-libcloud).
 
 For more information about the features and supported providers, please
 refer to the [documentation](https://libcloud.readthedocs.org/en/latest/)
-
