@@ -279,7 +279,7 @@ to make sure you will not get an unexpected bill
 
 ## Introduction to the AWS console
 
-As we discussed above we can access all the service and product
+As we discussed previously we can access all the service and product
 offerings that are provided by AWS from the AWS console. In the
 following section we will look into how we can start and stop a
 virtual machine using AWS EC2 service. Please keep in mind that this
