@@ -4,10 +4,10 @@ Although you will never likely to create the epub from source, we have
 included this section for our most advanced contributors and those
 that update the epub on github.
 
-Please note that you must have at least Pandoc version 2.2.3 installed. 
-You will also need Python version 3.7.1 to run the scripts needed to 
-assamble the document.
-Earlier versions will not work. You can check the versions with 
+Please note that you must have at least Pandoc version 2.2.3
+installed.  You will also need Python version 3.7.1 to run the scripts
+needed to assamble the document.  Earlier versions will not work. You
+can check the versions with
 
 ```bash
 $ pandoc --version
@@ -16,15 +16,20 @@ $ python --version
 
 ## OSX Requirements
 
-This is just a guess I for got how to install all of this, it may be
-documented in another md file, grep -R for brew
+On OSX you can install the needed software with `brew`. In case you
+have not yet installed brew you can do it with
+
+```bash
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew update
+```
+
+To enable all features including advanced features to create diagrams
+from text specifications please use the following commands:
 
 ```bash
 $ brew install graphviz
-# needs version >2.2.3 of pandoc see travis.yml for
-# proper install if brew does not work
 $ brew install pandoc 
-                      
 $ brew install pandoc-citeproc
 $ brew install node
 $ npm install --global mermaid-filter
@@ -35,6 +40,8 @@ $ pip install .
 ```
 
 ## Ubuntu requirements
+
+On ubuntu you can use the following commands:
 
 ```bash
 $ sudo apt-get update
@@ -56,13 +63,14 @@ $ npm install --global pandoc-index
 
 ## Creating a book
 
-First you have to check out the book source from github with:
+Tho create a book, you hae to first check out the book source from github with:
 
 ```bash
 git clone git@github.com:cloudmesh-community/book.git
 ```
 
-Books are organize in directories. We currently have
+Books are organized in directories. We currently have created the
+following directories
 
     ./book/cloud/
     ./book/big-data-applications/
@@ -85,7 +93,8 @@ To view it you say
 $ make view
 ```
 
-After you have done modifications, you need to do one of two things. In case you add new images you need to use 
+After you have done modifications, you need to do one of two
+things. In case you add new images you need to use
 
 ```
 $ make new
@@ -97,13 +106,15 @@ otherwise you can just use
 $ make 
 ```
 
-The structure of the books is maintained in chapters.yaml.
-
-In case you add a new chapter, you have to say 
+The structure of the books is maintained in the yaml file
+`chapters.yaml`. You can add this chapter to the yaml file, but
+discuss this first with Gregor. In case you add a new chapter, you
+have to say
 
 ```bash
+$ make clean
 $ make update
-$ make new
+$ make 
 $ make view
 ```
 
