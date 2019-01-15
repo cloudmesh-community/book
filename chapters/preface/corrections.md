@@ -1,6 +1,6 @@
 # Corrections
 
-The material presented here is all managed in
+The material collected in this document is managed in
 
 * <https://github.com/cloudmesh-community/book>
 
