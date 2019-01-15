@@ -14,7 +14,7 @@ for a complete list of changes.
   in the preface; remove the obsolete abbreviation section for the
   inclusion of emojis which is now handled via a script
 
-* Jan 15, 2019: Slight improvements in the preface:
+* Jan 15, 2019: Slight improvements in the Qucik Start:
   Removed the redundant project definition; Added the
   Technology ePub link; simplified the Project description; Clarified
   the use of the Workbreakdown section and added todo items to the
