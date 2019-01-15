@@ -53,18 +53,18 @@ First you need to visit the
 [IBM Watson home page](https://www.ibm.com/watson/index.html) and
 click in the "Get Started Free" link on the top right corner. You will
 then be asked to provide some basic details including your email
-address as shown in the image below
+address as shown in the image +@fig:watson-signup.
 
-![](images/ibmwatson_signup.png)
+![Watson Signup](images/ibmwatson_signup.png){#fig:watson-signup}
 
 Once you have submitted the signup form an confirmation email will be
 sent to your email account, check your inbox and click on the confirm
 account link in the email you receive. This will activate your IBM
 Watson account. Once you have accepted the terms and conditions you
 will be taken to the product and service catalog of IBM Watson as
-shown in the image below.
+shown in the image +@fig:watson-catalog.
 
-![](images/catalog_ibm_watson.png)
+![Watson Catalog](images/catalog_ibm_watson.png){#fig:watson-catalog}
 
 ## Understanding the free tier
 
