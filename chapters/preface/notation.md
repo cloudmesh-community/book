@@ -1,4 +1,4 @@
-# Notation
+# Notation {#sec:notation}
 
 
 :cloud: `:cloud:`
@@ -116,18 +116,21 @@ use an ePub reader.*
 
 ---
 
-Abbreviations :o:
+## Hyperlinks in the document
 
-THis does not yet work
+To create hyperlinks in the document other than images, we need to
+use proper markdown syntax in the source. This is achieved with a
+refernce for example in sections headers. Let us discuss the
+refernce header for this section, e.g. Notation. We have augmented
+the section header as follows:
 
-Abbreviations can be stored in the file chapters/dbase and used as
-follows while using the video abbreviation
+```# Notation {#sec:notation}```
+
+Now we can use the refernce in the text as follows:
+
+```In [Section Notation](#sec:notation) we explain ...```
+
+It will be rendered as: In [Section Notation](#sec:notation) we
+explain ...
 
 
-```
-+video
-```
-
-+video
-
-It uses the filter defined at <https://github.com/scokobro/pandoc-abbreviations>
