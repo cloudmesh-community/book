@@ -22,12 +22,12 @@ Sample chapters can be reached if you download teh PDF document locally and clic
 ---
 
 * Lecture Notes: <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub>
-* Piazza: <https://piazza.com/iu/fall2018/516>
+* Piazza: <https://piazza.com/iu/fall2019/516>
 * Indiana University
-* Fall 2018
+* Spring 2019
 * Faculty: Dr. Gregor von Laszewski (laszewski@gmail.com)
 * Credits: 3
-* First online class released: Aug. 22, 2018
+* First online class released: Jan. 07, 2019
 * Residential students Discussion:   11:15A-12:15P  Fridays  I2 150, bring your laptops
 * Prerequisite(s): Knowledge of a programming language, the ability to
   pick up other programming languages as needed, willingness to
@@ -44,7 +44,7 @@ Sample chapters can be reached if you download teh PDF document locally and clic
   [e516: Engineering Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md)
 * Course Description URL: 
   <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md>
-* [Registrar information and Other related classes](https://github.com/cloudmesh-community/book/blob/master/chapters/class/fall2018.md)
+* [Registrar information and Other related classes](https://github.com/cloudmesh-community/book/blob/master/chapters/class/fall2019.md)
 
 This is an introductory class. In case you like to do research and
 more advanced topics, consider taking an independent study with Dr. von
@@ -152,7 +152,7 @@ have been discussed before this deadline with the TA's The TAs will in
 the next 14 days go over the projects and evaluate mayor and minor
 issues that you may be able to fix without penalty. Larger changes
 will receive a grade penalty. The last fix (upon approval) possible
-will be Dec 7th.
+will be Apr 21st.
 
 ### Incomplete
 
