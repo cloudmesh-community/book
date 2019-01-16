@@ -447,7 +447,7 @@
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
         - chapters/prg/github.md
-    - chapters/class/222-cloud-intro.md
+    - chapters/class/222-a.md
     - chapters/ai/ai.md
     - chapters/SECTION/SECTION-FAQ.md:
         - chapters/faq.md       
