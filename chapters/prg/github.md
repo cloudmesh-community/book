@@ -1,7 +1,7 @@
 # Github REST Services {#sec:Github-REST}
 
-In this section we want to explore a bit more some features of REST
-services and how to access them. Naturally all many cloud services
+In this section we want to explore a more features of REST
+services and how to access them. Naturally many cloud services
 provide such REST sinterfaces. This is valid for IaaS, PaaS, and SaaS.
 
 Instead of using a REST service for IaaS, let us here inspect a REST
