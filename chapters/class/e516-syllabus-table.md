@@ -8,7 +8,7 @@ Legend markings
 :o: Warning the dates may change not yet correct.
 
 * Semester Start for this class 01/07
-* Semester end for this class 05/03, all assignments are due 2 weeks before semester end.
+* Semester end for this class 05/03, all assignmrents are due 2 weeks before semester end.
 
 ## Proposed Lecture Timeline
 
