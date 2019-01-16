@@ -16,6 +16,7 @@
 - PREFACE:
     - chapters/SECTION/SECTION-PREFACE.md:
         - chapters/version.md
+        - chapters/updates.md   
         - chapters/preface/corrections.md
         - chapters/authors.md
         - chapters/preface/create.md
