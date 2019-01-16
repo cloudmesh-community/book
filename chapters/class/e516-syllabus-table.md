@@ -65,9 +65,10 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud) |
 | :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#sec:Github-REST) |
 | :white_check_mark: | 02/11    |         |                    | - [REST Services](#sec:rest) |
-| :white_check_mark: | 02/11    |         |                    | - [Rest Services with OpenAPI](#sec:rest-services-with-openapi) |
 | :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#sec:openapi-spec) |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Codegen](#sec:openapi-codegen) |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI REST Services with Swagger](#sec:swagger) |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Python Service via Introspection](#sec:openapi-introspection) |
+| :white_check_mark: | 02/11    |         |                    | - [REST Service Generation with OpenAPI](#sec:openapi-codegen) |
 | :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :o:                | 02/18    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
 | :white_check_mark: | 02/25    | 10      | Messaging          | Messaging |
