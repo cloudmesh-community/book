@@ -12,16 +12,16 @@ IBM's Watson has a rich set of Developer Services (https://www.ibm.com/watson/de
 
 There are a breadth of services available.  Watson Discovery is used to mine through data to find trends and surface patterns.  Watson Visual Recognition is used to classify content using machine learning.  Watson Assistant provides a framework for chatbots and virtual agents.
 
-While The next section walks through how to create a free account,  let's continue with an example of leveraging a foundation and building on-top with Watson Assistant Basic.  
+While The next section walks through how to create a free account,  let's continue with an example of leveraging a foundation and building on-top with Watson Assistant Basic.  Please see steps: +@fig:1WatsonAssistentBasic, +@fig:2WatsonAssistentBasicCode, +@fig:3WatsonAssistent3steps, +@fig:4Watsoneditsample, +@fig:5Watsonaddingexample, +@fig:6Watsoncustomizesettings
 
 Instead of starting with a blank page IBM steps are put in place and working examples can be customized.  
 
-![](images/1WatsonAssistentBasic.PNG)
-![](images/2WatsonAssistentBasicCode.PNG)
-![](images/3WatsonAssistent3steps.PNG)
-![](images/4Watsoneditsample.PNG)
-![](images/5Watsonaddingexample.PNG)
-![](images/6Watsoncustomizesettings.PNG)
+![Step 1](images/1WatsonAssistentBasic.PNG){#fig:1WatsonAssistentBasic}
+![Step 2](images/2WatsonAssistentBasicCode.PNG){#fig:2WatsonAssistentBasicCode}
+![Step 3](images/3WatsonAssistent3steps.PNG){#fig:3WatsonAssistent3steps}
+![Step 4](images/4Watsoneditsample.PNG){#fig:4Watsoneditsample}
+![Step 5](images/5Watsonaddingexample.PNG){#fig:5Watsonaddingexample}
+![Step 6](images/6Watsoncustomizesettings.PNG){#fig:6Watsoncustomizesettings}
 
 In the case above when I was trying the Watson Assistant It was not personal when I asked the Assistant's name so it can be modified to digress!
 
