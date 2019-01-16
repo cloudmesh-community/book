@@ -540,17 +540,3 @@ $ curl --cert /etc/puppet/ssl/certs/puppet.corp.guest.pem \
 --cacert /etc/puppet/ssl/ca/ca_crt.pem \-H 'Accept: yaml' \
 ```
 
-
-
-## Reference
-
-:o: add bibtex
-
-* <https://puppet.com/docs/pe/2017.3/installing_pe.html#concept-3157> 
-* <https://puppet.com/docs/pe/2017.3/installing_pe.html> --install
-* <https://puppet.com/docs/puppet/5.3/config_file_main.html> --config
-* <https://fullstack-puppet-docs.readthedocs.io/en/latest/puppet_master.html> r10k
-* <https://www.digitalocean.com/community/tutorials/how-to-install-puppet-to-manage-your-server-infrastructure#install-puppet-agent> -- puppet agent
-* <https://puppet.com/docs/pe/2017.1/install_text_mode_mono.html> -- mono
-* <https://puppet.com/docs/pe/2017.1/install_text_mode_split.html> -- split
-* Images - are taken form from <https://www.edureka.co/blog/videos/puppet-tutorial/> devops class

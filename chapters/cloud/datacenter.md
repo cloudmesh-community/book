@@ -944,7 +944,7 @@ efficiency of each type of data center facility.
 * **hyperscale data centers** where the infrastructure will be moved
   from smaller data centers to larger *hyperscale* data centers.
 
-## Project Natick {#S:natick}
+## Project Natick {#sec:natick}
 
 To reduce energy consumption in data centers and reduce cost of
 cooling Microsoft has developed **Project Natick**. To tackle this
