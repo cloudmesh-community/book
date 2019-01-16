@@ -62,7 +62,7 @@ MARKDOWN-OPTIONS=--verbose  $(MERMAID)  --filter pandoc-fignos -f markdown+heade
 CSL=--csl=template/ieee-with-url.csl
 FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
-BIB=--bibliography references.bib
+BIB=--metadata link-citations=true --bibliography references.bib
 # can be removed to avoid duplicate as already appeared in metadata.txt
 #CSS=--css=template/epub.css
 RESOURCE=--resource-path=$(IMAGE_DIRS)
