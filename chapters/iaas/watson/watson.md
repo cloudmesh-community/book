@@ -17,10 +17,15 @@ While The next section walks through how to create a free account,  let's contin
 Instead of starting with a blank page IBM steps are put in place and working examples can be customized.  
 
 ![Step 1](images/1WatsonAssistentBasic.PNG){#fig:1WatsonAssistentBasic}
+
 ![Step 2](images/2WatsonAssistentBasicCode.PNG){#fig:2WatsonAssistentBasicCode}
+
 ![Step 3](images/3WatsonAssistent3steps.PNG){#fig:3WatsonAssistent3steps}
+
 ![Step 4](images/4Watsoneditsample.PNG){#fig:4Watsoneditsample}
+
 ![Step 5](images/5Watsonaddingexample.PNG){#fig:5Watsonaddingexample}
+
 ![Step 6](images/6Watsoncustomizesettings.PNG){#fig:6Watsoncustomizesettings}
 
 In the case above when I was trying the Watson Assistant It was not personal when I asked the Assistant's name so it can be modified to digress!
