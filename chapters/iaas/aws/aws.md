@@ -11,10 +11,11 @@ Amazon in the following document:
 * <https://d0.awsstatic.com/whitepapers/aws-overview.pdf>
 
 We list the product in screenshots from their Product Web page panel
-in Figure below: +@fig:aws-products1, +@fig:aws-products.
+in Figure below: +@fig:aws-products-1, +@fig:aws-products-2.
 
-![AWS Products](images/aws-products-1.png){#fig:aws-products1}
-![AWS Products](images/aws-products-2.png){#fig:aws-products}
+![AWS Products 1](images/aws-products-1.png){#fig:aws-products-1}
+
+![AWS Products 2](images/aws-products-2.png){#fig:aws-products-2}
 
 
 
