@@ -89,7 +89,7 @@ if __name__ == '__main__':
                 count = count + 1
                 issue['count'] = count
                 if issue['state'] == 'open':
-                    line = "| {count} | {number} | [{title}][i{number}] | ".format(**issue) + str(assignee(issue)) + "|" + str(labels(issue)) + "|"
+                    line = "| {count} | {number} | [{title}][i{number}] | ".format(**issue) + str(assignee(issue)) + " | " + str(labels(issue)) + " |"
                     print (line)
             print("")
 
