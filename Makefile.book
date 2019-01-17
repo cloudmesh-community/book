@@ -141,6 +141,7 @@ endif
 	make -f Makefile index
 	#cd dest; cp all.md all-in.md
 	#cd dest; pandoc all-in.md --filter=abbrevs.py -o all.md
+	perl -pi -e 's/\+@/@/g' all.md
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 	cp dest/$(FILENAME).epub ..
 

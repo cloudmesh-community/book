@@ -49,7 +49,7 @@ EBS
 
 ### Create the buckets
 
-- Login to AWS console and create the buckets at https://aws.amazon.com/console/. To create the buckets, go to services (see +@fig:aws-console, +@fig:aws-login), click on S3 under Storage, +@fig:aws-s3, +@fig:aws-s3-bucket, +@fig:aws-s3-bucket1. Click on Create bucket button and then provide all the details to complete bucket creation.
+- Login to AWS console and create the buckets at https://aws.amazon.com/console/. To create the buckets, go to services (see @fig:aws-console, @fig:aws-login), click on S3 under Storage, @fig:aws-s3, @fig:aws-s3-bucket, @fig:aws-s3-bucket1. Click on Create bucket button and then provide all the details to complete bucket creation.
 - AWS Console
 ![AWS Console](images/aws_console.JPG){#fig:aws-console}
 
@@ -65,8 +65,8 @@ EBS
 
 ### Create Key Pairs
 
-- Login to AWS console, go to services, click on EC2 under compute. Select the Key pairs resoure, click on Create Key Pair and provide Key Pair name to complete the Key pairs creation. See +@fig:aws-keypair
-- Download the. pem file once Key value pair is created. This is needed to access AWS Hadoop environment from client machine. This need to be imported in Putty to access your AWS environemnt. See +@fig:aws-keypair1
+- Login to AWS console, go to services, click on EC2 under compute. Select the Key pairs resoure, click on Create Key Pair and provide Key Pair name to complete the Key pairs creation. See @fig:aws-keypair
+- Download the. pem file once Key value pair is created. This is needed to access AWS Hadoop environment from client machine. This need to be imported in Putty to access your AWS environemnt. See @fig:aws-keypair1
 
 #### Create Key Value Pair Screen shots
 
@@ -77,7 +77,7 @@ EBS
 ## Create Step Execution – Hadoop Job
 
 Login to AWS console, go to services and then select EMR. Click on Create Cluster. In the cluster configuration provide below details to complete to complete step execution creation.
-See: +@fig:aws-emr, +@fig:aws-create-emr, +@fig:emr-step-exe, +@fig:step-cluster, +@fig:step-cluster1
+See: @fig:aws-emr, @fig:aws-create-emr, @fig:emr-step-exe, @fig:step-cluster, @fig:step-cluster1
 - Cluster name (Ex: HadoopJobStepExecutionCluster)
 - Select Logging check box and provide S3 folder location (Ex: s3://bigdata-raviAndOrlyiuproject/logs/)
 - Select launch mode as Step execution
@@ -99,7 +99,7 @@ See: +@fig:aws-emr, +@fig:aws-create-emr, +@fig:emr-step-exe, +@fig:step-cluster
 ## Create a Hive Cluster
 
 Login to AWS console, go to services and then select EMR. Click on Create Cluster. In the cluster configuration provide below details to complete.
-See, +@fig:hive-cluster1, +@fig:hive-cluster2, +@fig:hive-cluster3
+See, @fig:hive-cluster1, @fig:hive-cluster2, @fig:hive-cluster3
 - Cluster name (Ex: MyFirstCluster-Hive)
 - Select Logging check box selected and provide S3 folder location
 - Select launch mode as Cluster
@@ -113,7 +113,7 @@ See, +@fig:hive-cluster1, +@fig:hive-cluster2, +@fig:hive-cluster3
 
 ## Create a Spark Cluster
 Login to AWS console, go to services and then select EMR. Click on Create Cluster. In the cluster configuration provide below details to complete.
-See, +@fig:spark-cluster1, +@fig:spark-cluster2, +@fig:spark-cluster3
+See, @fig:spark-cluster1, @fig:spark-cluster2, @fig:spark-cluster3
 - Cluster name (Ex:My Cluster - Spark)
 - Select Logging check box selected and provide S3 folder location
 - Select launch mode as Cluster

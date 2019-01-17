@@ -28,7 +28,7 @@ DevOps tries to address is depicted in @fig:devops-ven
 
 Source: <https://en.wikipedia.org/wiki/DevOps#/media/File:Devops.svg>
 
-To visualize the process interactions in the toolchain cycle between development and operations we also often find the it depicted in +@fig:devops-cycle
+To visualize the process interactions in the toolchain cycle between development and operations we also often find the it depicted in @fig:devops-cycle
 
 ![Wikipedia Ven Diagram about DevOps](images/devops-toolchain.png){#fig:devops-cycle}
 

@@ -127,7 +127,7 @@ human face in an image with multiple images in the database. Face
 recognition techniques have more advantages than any other biometrics.
 With well-sophisticated algorithms and coding, face recognition has a
 high recognition rate or high identification rate of more than
-90% [@riddhi2013]. +@fig:face-recognition shows the various levels 
+90% [@riddhi2013]. @fig:face-recognition shows the various levels 
 of face recognition process [@viola2001].
 
 

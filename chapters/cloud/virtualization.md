@@ -141,7 +141,7 @@ Disadvantages of Hosted Virtualization include
 ## Summary
 
 To showcase how these technologies relate to each other you may
-review +@fig:vm-taxonomy
+review @fig:vm-taxonomy
 
 
 ![Virtualization Taxonomy](images/vm.png){#fig:vm-taxonomy}

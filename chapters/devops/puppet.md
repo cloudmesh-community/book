@@ -36,14 +36,14 @@ management tool has two approaches for managing infrastructure;
 Configuration push and pull. In push configuration, infrastructure as
 code is pushed from centralized server to nodes whereas in pull
 configuration nodes pulls infrastructure as code from central server
-as shown in +@fig:InfrastructureAsCode.
+as shown in @fig:InfrastructureAsCode.
 
 ![Infrastructure As Code](Images/IAC.jpg){#fig:InfrastructureAsCode}
 
 [hid-sp18-523-puppetimages]
 
 Puppet uses push and pull configuration in centralized manner 
-as shown in +@fig:push-pull-configImage.
+as shown in @fig:push-pull-configImage.
 
 ![push-pull-config Image](Images/push-pull-configuration.jpg){#fig:push-pull-configImage}
 
@@ -60,7 +60,7 @@ configuration.
 
 ## Master slave architecture
 
-Puppet uses master slave architecture as shown in +@fig:master-slaveImage. 
+Puppet uses master slave architecture as shown in @fig:master-slaveImage. 
 Puppet server is called as master node and client nodes are called as puppet 
 agent. Agents poll server at regular interval and pulls updated  configuration 
 from master. Puppet Master is highly available. It supports multi master 
@@ -87,11 +87,11 @@ infrastructure.
 
 ![Master and Slave Architecture [hid-sp18-523-puppetimages]](Images/master-slave.jpg){#fig:master-slaveImage}
 
-+@fig:master-slave1Image, shows flow between master and slave.
+@fig:master-slave1Image, shows flow between master and slave.
 
 ![Master Slave Workflow 1 [hid-sp18-523-puppetimages]](Images/master-slave1.jpg){#fig:master-slave1Image}
 
-+@fig:master-slave-connection shows SSL workflow between
+@fig:master-slave-connection shows SSL workflow between
  master and slave.
 
 ![Master  Slave SSL Workflow [hid-sp18-523-puppetimages]](Images/master-slave-connection.jpg){#fig:master-slave-connection Image}
