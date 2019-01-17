@@ -16,12 +16,12 @@
 - PREFACE:
     - chapters/SECTION/SECTION-PREFACE.md:
         - chapters/version.md
+        - chapters/preface/reader.md                
         - chapters/updates.md   
         - chapters/preface/corrections.md
         - chapters/authors.md
         - chapters/preface/create.md
         - chapters/preface/issues.md
-        - chapters/preface/reader.md                
         - chapters/preface/notation.md
 
 - DEVTOOLS:
@@ -332,8 +332,8 @@
     - chapters/class/e516-definition.md
     - chapters/cloud/datacenter.md
     - chapters/arch.md
-    - chapters/nist/bdra.md:
-        - chapters/rest/rest.md
+    - chapters/nist/bdra.md
+    - chapters/rest/rest.md:
         - chapters/rest/swagger-codegen.md
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
@@ -444,9 +444,10 @@
     - chapters/class/222-a.md
     - chapters/nist/bdra.md:
         - chapters/rest/rest.md
-        - chapters/rest/swagger-codegen.md
         - chapters/rest/swagger-spec.md
-        - chapters/rest/swagger.md
+        - chapters/rest/swagger.md      
+        - chapters/rest/swagger-introspection.md
+        - chapters/rest/swagger-codegen.md
         - chapters/prg/github.md
     - chapters/ai/ai.md
     - chapters/SECTION/SECTION-FAQ.md:
