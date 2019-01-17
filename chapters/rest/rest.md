@@ -1,4 +1,4 @@
-# REST
+# REST {#sec:rest}
 
 
 ---
