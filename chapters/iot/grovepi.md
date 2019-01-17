@@ -30,7 +30,7 @@ tutorial from Dexter Industries for the LED module.
 -   [Dexter LED
     tutorial](https://www.dexterindustries.com/GrovePi/projects-for-the-raspberry-pi/raspberry-pi-led-tutorial/)
 
-Connect the LED to a digital port (see +@fig:grove-led). The following code describes an LED
+Connect the LED to a digital port (see @fig:grove-led). The following code describes an LED
 class. Since it is connected to a digital output, the voltage has only
 two states, on and off. The default port for the LED class is D3. The
 code for the `LED` class can be found here:
@@ -43,7 +43,7 @@ code for the `LED` class can be found here:
 Buzzer
 ------
 
-The buzzer is shown in +@fig:grove-buzzer.  Connect the buzzer to a
+The buzzer is shown in @fig:grove-buzzer.  Connect the buzzer to a
 digital port. The default port for the Buzzer class is D3. You will
 notice that the Buzzer class and the LED class are
 interchangeable. This is because they work on the same digital
@@ -58,7 +58,7 @@ class can be found here:
 Relay
 -----
 
-The relay is shown in +@fig:grove-relay.  The relay acts as a switch
+The relay is shown in @fig:grove-relay.  The relay acts as a switch
 in a circuit. When the value on the relay is 1, it allows current to
 flow through it. When the value is 0, the relay breaks the circuit and
 the current stops. Connect the relay to a digital port. The default
@@ -72,7 +72,7 @@ digital port is D4. The `Relay` class can be found here:
 Light Sensor
 ------------
 
-The light sensor is shown in +@fig:grove-light-sensor.  The light
+The light sensor is shown in @fig:grove-light-sensor.  The light
 sensor measures light intensity and returns a value between 0
 and 1023. Connect the light sensor to an analog port. The default port
 is A0. The analog port allows the light sensor to return a range of
@@ -86,7 +86,7 @@ values. The `LightSensor` class can be found here:
 Rotary Angle Sensor
 -------------------
 
-The rotary angle sensor is shown in +@fig:grove-rotary-angle-sensor.
+The rotary angle sensor is shown in @fig:grove-rotary-angle-sensor.
 The rotary angle sensor measures the angle to which it is turned.
 Connect the sensor to an analog port. Port A0 is the default. The
 `RotarySensor` class can be found here:
@@ -99,7 +99,7 @@ Connect the sensor to an analog port. Port A0 is the default. The
 Barometer
 ---------
 
-The barometer is shown in +@fig:grove-barometer.  Connect the
+The barometer is shown in @fig:grove-barometer.  Connect the
 barometer to an I2C port. In addition to pressure, the GrovePi
 barometer measures temperature in Fahrenheit and Celsius. The
 `Barometer` class can be found here.
@@ -112,7 +112,7 @@ barometer measures temperature in Fahrenheit and Celsius. The
 Distance Sensor
 ---------------
 
-The distance sensor is shown in +@fig:grove-distance-sensor.  Connect
+The distance sensor is shown in @fig:grove-distance-sensor.  Connect
 the distance sensor to a digital port. The grovepi module has a
 built-in function to read the distance from the distance sensor, but
 it is improperly calibrated, so this DistanceSensor class has a
@@ -127,7 +127,7 @@ be found here:
 Temperature Sensor
 ------------------
 
-The temperature sensor is shown in +@fig:grove-temperature-sensor.
+The temperature sensor is shown in @fig:grove-temperature-sensor.
 The temperature sensor measures both temperature and humidity. Connect
 the temperature sensor to a digital port. D7 is the default port. The
 `TemperatureSensor` class can be found here:
@@ -140,7 +140,7 @@ the temperature sensor to a digital port. D7 is the default port. The
 Heartbeat Sensor
 ----------------
 
-the heartbeat sensor is shown in +@fig:grove-heartbeat.  Connect the
+the heartbeat sensor is shown in @fig:grove-heartbeat.  Connect the
 heartbeat sensor to an I2C port. The heartbeat sensor returns the
 heart rate of the wearer. The `HeartbeatSensor` class can be found
 here:
@@ -153,7 +153,7 @@ here:
 Joystick
 --------
 
-The joystick is shown in +@fig:grove-joystick.  Connect the joystick
+The joystick is shown in @fig:grove-joystick.  Connect the joystick
 to an analog port. A0 is the default port. The joystick has an x, y,
 and click status based on the current state of the module. The
 `Joystick` class can be found here:
@@ -166,7 +166,7 @@ and click status based on the current state of the module. The
 LCD Screen
 ----------
 
-The LCD screen is shown in +@fig:grove-lcd.  The LCD screen can be
+The LCD screen is shown in @fig:grove-lcd.  The LCD screen can be
 used to display text and colors. In order to use it, plug it into one
 of the I2C ports. The `LCD` class can be found here:
 
@@ -178,7 +178,7 @@ of the I2C ports. The `LCD` class can be found here:
 Moisture Sensor
 ---------------
 
-The moisture sensor is shown in +@fig:grove-moisture-sensor.  Connect
+The moisture sensor is shown in @fig:grove-moisture-sensor.  Connect
 the moisture sensor to an analog port. The default port is A0.  The
 `MoistureSensor` class can be found here:
 
@@ -196,7 +196,7 @@ plant growth.
 Water Sensor
 ------------
 
-The water sensor is shown in +@fig:grove-water-sensor.  The water
+The water sensor is shown in @fig:grove-water-sensor.  The water
 sensor measures the amount of water in the environment of the
 sensor. Connect the sensor to a digital point. D2 is the default port.
 The `WaterSensor` class can be found here:

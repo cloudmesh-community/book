@@ -89,7 +89,7 @@ We explain the examples next
 After we launch the container and use the interactive shell, we can
 run the statistics Hadoop application which calculates the  minimum,
 maximim, average, and standard derivation from values stored in a
-number of input files. Figure +@fig:docker-hadoop-a shows the computing phases in a MapReduce job.
+number of input files. Figure @fig:docker-hadoop-a shows the computing phases in a MapReduce job.
 
 To achieve this, this Hadoop program reads multiple files from HDFS and
 provides calculated values. We walk through every step from compiling
