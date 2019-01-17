@@ -14,6 +14,33 @@ $ pandoc --version
 $ python --version
 ```
 
+## Docker :o:
+
+In case you have docker installed on your computer you can create
+epubs with our docker image. To create that image by hand, we have
+included a simple makefile. Alternatively you can use our image from
+dockerhub if you like, it is based on ubuntu and uses our [Dockerfile](https://github.com/cloudmesh-community/book/blob/master/Dockerfile).
+
+First, you need to download the repository:
+
+```bash
+$ git clone https://github.com/cloudmesh-community/book.git
+cd book
+```
+
+To create the image you can use
+
+```bash
+$ make image
+```
+
+To open an interactive shell into the image you say
+
+```bash
+$ make shell
+```
+
+
 ## OSX Requirements
 
 On OSX you can install the needed software with `brew`. In case you
