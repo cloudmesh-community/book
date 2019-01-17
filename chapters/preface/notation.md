@@ -80,7 +80,7 @@ surrounded by bars* using the `:bulb:` emoji
 ---
 
 Figures have a caption and can be refereed to in the epub simple with a number. We show such a refernce 
-pointer while refering to +@fig:code-example. 
+pointer while refering to @fig:code-example. 
 
 ![Figure example](images/code.png){#fig:code-example width=1in}
 
@@ -90,7 +90,7 @@ Figures must be written in the md as
 ![Figure example](images/code.png){#fig:code-example width=1in}
 ```
 
-You can refer to them with `+@fig:code-example`. Please note in order for numbering to work 
+You can refer to them with `@fig:code-example`. Please note in order for numbering to work 
 figure refernces must include the `#fig:` followed by a unique
 identifier. Please note that identifiers must be realy unique and that
 identifies such as `#fig:cloud` or similar simple identifiers are a
@@ -128,9 +128,9 @@ the section header as follows:
 
 Now we can use the refernce in the text as follows:
 
-```In [Section Notation](#sec:notation) we explain ...```
+```In #sec:notation we explain ...```
 
-It will be rendered as: In [Section Notation](#sec:notation) we
+It will be rendered as: In @sec:notation we
 explain ...
 
 

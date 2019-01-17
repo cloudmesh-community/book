@@ -22,7 +22,7 @@ We quote form <https://en.wikipedia.org/wiki/DevOps>:
   Perspective. ISBN 978-0134049847.
 
 A helpful ven diagram for visualizing the important aspects that
-DevOps tries to address is depicted in +@fig:devops-ven
+DevOps tries to address is depicted in @fig:devops-ven
 
 ![Wikipedia Ven Diagram about DevOps](images/devops-ven.png){#fig:devops-ven}
 
