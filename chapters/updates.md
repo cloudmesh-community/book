@@ -22,7 +22,7 @@ for a complete list of changes.
   interaction in discussions with TAs throughout the semester.
 
 * Jan 16, 2019: Added the OpenAPI server based on yaml file
-  introspection in a [Section]({#sec:openapi-introspection}
+  introspection in a [Section](#sec:openapi-introspection)
 
 ## Unpublished updates :o:
 
