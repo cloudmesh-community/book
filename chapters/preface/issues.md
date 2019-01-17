@@ -29,73 +29,75 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 
 
-| Count | Number | Title | Assignee |
+| Count | Number | Title | Assignee | Labels |
 | --- | --- | ---------------------------------------------------------------- | -------- |
-| 1 | 268 | [Open: Google Drive Python interface][i268] | None|
-| 2 | 267 | [figure tags with bibtex ref][i267] | bfeng|
-| 3 | 266 | [Internal: Github video use ][i266] | tbalson|
-| 4 | 265 | [Internal: Check 222 book order][i265] | tbalson|
-| 5 | 264 | [Go sections: go lang arch, rest api, go sequence structure][i264] | bfeng|
-| 6 | 263 | [Open: Singularity][i263] | None|
-| 7 | 262 | [Open: Windows subsystems for Linux][i262] | None|
-| 8 | 261 | [Low Priority: Visual Studio for Cloud Computing (PyCharm is better)][i261] | None|
-| 9 | 260 | [Open: Cloud foundry][i260] | None|
-| 10 | 259 | [Open: Box][i259] | None|
-| 11 | 258 | [Open: Apache Flink][i258] | None|
-| 12 | 257 | [Open: Apache Avro (Python)][i257] | None|
-| 13 | 256 | [Scala for cloud computing][i256] | None|
-| 14 | 255 | [Julia][i255] | None|
-| 15 | 254 | [Fingerprint matching][i254] | None|
-| 16 | 253 | [Ubuntu on an USB stick for Windows 10][i253] | None|
-| 17 | 252 | [Packer][i252] | None|
-| 18 | 251 | [OpenLambda][i251] | None|
-| 19 | 250 | [Fn Project][i250] | None|
-| 20 | 249 | [IronFunctions][i249] | None|
-| 21 | 248 | [Fission][i248] | None|
-| 22 | 247 | [Riff][i247] | None|
-| 23 | 246 | [OpenFaaS][i246] | None|
-| 24 | 245 | [Hadoop virtual cluster installation using cloudmesh][i245] | None|
-| 25 | 244 | [Google IaaS Cloud Services][i244] | None|
-| 26 | 243 | [Artificial intelligence service with REST][i243] | None|
-| 27 | 242 | [Scikit-Learn][i242] | None|
-| 28 | 239 | [Internal: New trends][i239] | pulasthi|
-| 29 | 238 | [internal: readme on anchoring links ][i238] | tbalson|
-| 30 | 237 | [internal: piazza scribe for 222][i237] | tbalson|
-| 31 | 236 | [Open: EMR section(s)][i236] | None|
-| 32 | 235 | [Internal: Open sections and chapters][i235] | pulasthi|
-| 33 | 234 | [Project: Virtual Cloud Directory][i234] | None|
-| 34 | 233 | [Section: AWS DocumentDB][i233] | None|
-| 35 | 232 | [Section: Port forwarding][i232] | ameet20|
-| 36 | 231 | [above, below][i231] | bfeng|
-| 37 | 227 | [internal: Virtual machine .md file is missing][i227] | tbalson|
-| 38 | 223 | [Open: Section CircleCi][i223] | None|
-| 39 | 211 | [some refs missing][i211] | pulasthi|
-| 40 | 190 | [internal: Hadoop 3.1.1][i190] | bfeng|
-| 41 | 189 | [Open: bibtex entries for FaaS Sections][i189] | bfeng|
-| 42 | 186 | [internal: figure refernces {#fig:label}][i186] | bfeng|
-| 43 | 184 | [fix bibtex entries ][i184] | None|
-| 44 | 180 | [E534 Cloud Section lecture videos merged into E-books][i180] | None|
-| 45 | 173 | [internal: biber installation][i173] | bfeng|
-| 46 | 152 | [internal: Upload lecture videos from Prof Fox's Google Drive to Youtube][i152] | laszewsk|
-| 47 | 148 | [Open: IU GUEST, IU Secure & Raspberry Pi][i148] | bfeng|
-| 48 | 146 | [Open: ssh port forwarding section][i146] | pulasthi|
-| 49 | 145 | [Open: manage vm guests with virsh][i145] | pulasthi|
-| 50 | 144 | [internal: bigdata missing improvements][i144] | laszewsk|
-| 51 | 139 | [Open: Codecov][i139] | pulasthi|
-| 52 | 134 | [internal: bibtex erros in technologies][i134] | bfeng|
-| 53 | 126 | [bibtex: 523][i126] | bfeng|
-| 54 | 115 | [Check and redo Docker Hadoop 3.0.1 and Docker for Hadoop section.][i115] | bfeng|
-| 55 | 110 | [replace images with text ][i110] | bfeng|
-| 56 | 77 | [add mapreduce to syllabus][i77] | laszewsk|
-| 57 | 76 | [openapi demo][i76] | laszewsk|
-| 58 | 68 | [internal: bib: create bibtex entries for go-intro.md][i68] | bfeng|
-| 59 | 51 | [Open: OpenAPI in GO][i51] | bfeng|
-| 60 | 50 | [Open: REST in go ][i50] | bfeng|
-| 61 | 49 | [Open: Develop a tutorial on the Parallel language constructs in Go][i49] | bfeng|
-| 62 | 48 | [Open: Develop an introduction to Go][i48] | bfeng|
-| 63 | 47 | [Internal: Hot cold isles in data center][i47] | pulasthi|
-| 64 | 9 | [Internal: Slides to video are not included in the introduction ][i9] | laszewsk|
+| 1 | 269 | [Grammar and Spelling Corrections][i269] | None||
+| 2 | 268 | [Open: Google Drive Python interface][i268] | None|chapter,open,section|
+| 3 | 267 | [figure tags with bibtex ref][i267] | bfeng||
+| 4 | 266 | [Internal: Github video use ][i266] | tbalson|internal|
+| 5 | 265 | [Internal: Check 222 book order][i265] | tbalson|e222,internal|
+| 6 | 264 | [Go sections: go lang arch, rest api, go sequence structure][i264] | bfeng||
+| 7 | 263 | [Open: Singularity][i263] | None|chapter,open,section|
+| 8 | 262 | [Open: Windows subsystems for Linux][i262] | None|open,section|
+| 9 | 261 | [Low Priority: Visual Studio for Cloud Computing (PyCharm is better)][i261] | None|e222,open,section|
+| 10 | 260 | [Open: Cloud foundry][i260] | None|chapter,open|
+| 11 | 259 | [Open: Box][i259] | None|chapter,open|
+| 12 | 258 | [Open: Apache Flink][i258] | None|chapter,open,section|
+| 13 | 257 | [Open: Apache Avro (Python)][i257] | None|chapter,open|
+| 14 | 256 | [Scala for cloud computing][i256] | None|chapter,open|
+| 15 | 255 | [Julia][i255] | None|chapter,open|
+| 16 | 254 | [Fingerprint matching][i254] | None|internal,section|
+| 17 | 253 | [Ubuntu on an USB stick for Windows 10][i253] | None|internal,section|
+| 18 | 252 | [Packer][i252] | None|open,section|
+| 19 | 251 | [OpenLambda][i251] | None|open,section|
+| 20 | 250 | [Fn Project][i250] | None|open,section|
+| 21 | 249 | [IronFunctions][i249] | None|open,section|
+| 22 | 248 | [Fission][i248] | None|open,section|
+| 23 | 247 | [Riff][i247] | None|open,section|
+| 24 | 246 | [OpenFaaS][i246] | None|open,section|
+| 25 | 245 | [Hadoop virtual cluster installation using cloudmesh][i245] | None|open,section|
+| 26 | 244 | [Google IaaS Cloud Services][i244] | None|open,section|
+| 27 | 243 | [Artificial intelligence service with REST][i243] | None|open,section|
+| 28 | 242 | [Scikit-Learn][i242] | None|open,section|
+| 29 | 239 | [Internal: New trends][i239] | pulasthi||
+| 30 | 238 | [internal: readme on anchoring links ][i238] | tbalson|internal|
+| 31 | 237 | [internal: piazza scribe for 222][i237] | tbalson|internal|
+| 32 | 236 | [Open: EMR section(s)][i236] | None|chapter,open|
+| 33 | 235 | [Internal: Open sections and chapters][i235] | pulasthi|internal|
+| 34 | 234 | [Project: Virtual Cloud Directory][i234] | None|open,project|
+| 35 | 233 | [Section: AWS DocumentDB][i233] | None|open,section|
+| 36 | 232 | [Section: Port forwarding][i232] | ameet20|open,section|
+| 37 | 231 | [above, below][i231] | bfeng|internal|
+| 38 | 227 | [internal: Virtual machine .md file is missing][i227] | tbalson|bug,internal|
+| 39 | 223 | [Open: Section CircleCi][i223] | None|open,section|
+| 40 | 211 | [some refs missing][i211] | pulasthi|bug,internal|
+| 41 | 190 | [internal: Hadoop 3.1.1][i190] | bfeng|bug,internal|
+| 42 | 189 | [Open: bibtex entries for FaaS Sections][i189] | bfeng|open|
+| 43 | 186 | [internal: figure refernces {#fig:label}][i186] | bfeng|internal|
+| 44 | 184 | [fix bibtex entries ][i184] | None|help wanted|
+| 45 | 180 | [E534 Cloud Section lecture videos merged into E-books][i180] | None|assigned,internal|
+| 46 | 173 | [internal: biber installation][i173] | bfeng|internal|
+| 47 | 152 | [internal: Upload lecture videos from Prof Fox's Google Drive to Youtube][i152] | laszewsk|internal|
+| 48 | 148 | [Open: IU GUEST, IU Secure & Raspberry Pi][i148] | bfeng|open|
+| 49 | 146 | [Open: ssh port forwarding section][i146] | pulasthi|open|
+| 50 | 145 | [Open: manage vm guests with virsh][i145] | pulasthi|open|
+| 51 | 144 | [internal: bigdata missing improvements][i144] | laszewsk|internal|
+| 52 | 139 | [Open: Codecov][i139] | pulasthi|open|
+| 53 | 134 | [internal: bibtex erros in technologies][i134] | bfeng|internal|
+| 54 | 126 | [bibtex: 523][i126] | bfeng||
+| 55 | 115 | [Check and redo Docker Hadoop 3.0.1 and Docker for Hadoop section.][i115] | bfeng||
+| 56 | 110 | [replace images with text ][i110] | bfeng|internal|
+| 57 | 77 | [add mapreduce to syllabus][i77] | laszewsk|assigned,internal|
+| 58 | 76 | [openapi demo][i76] | laszewsk|assigned,internal|
+| 59 | 68 | [internal: bib: create bibtex entries for go-intro.md][i68] | bfeng|internal|
+| 60 | 51 | [Open: OpenAPI in GO][i51] | bfeng|open|
+| 61 | 50 | [Open: REST in go ][i50] | bfeng|open|
+| 62 | 49 | [Open: Develop a tutorial on the Parallel language constructs in Go][i49] | bfeng|open|
+| 63 | 48 | [Open: Develop an introduction to Go][i48] | bfeng|open|
+| 64 | 47 | [Internal: Hot cold isles in data center][i47] | pulasthi|internal|
+| 65 | 9 | [Internal: Slides to video are not included in the introduction ][i9] | laszewsk|bug|
 
+[i269]: https://github.com/cloudmesh-community/book/pull/269
 [i268]: https://github.com/cloudmesh-community/book/issues/268
 [i267]: https://github.com/cloudmesh-community/book/issues/267
 [i266]: https://github.com/cloudmesh-community/book/issues/266
