@@ -55,9 +55,9 @@ are using free tier for this demonstration. Refer to the section for
 Google Cloud in the epub for creting a free tier GCP account.
 
 **Step 2**: Select or create a Project and go to dashboard (see
-+@fig:dashboard)
++@fig:google-dashboard)
 
-![Login to Project and Dashboard](images/markdown-img-paste-20181031131045280.png){#fig:dashboard}
+![Login to Project and Dashboard](images/markdown-img-paste-20181031131045280.png){#fig:google-dashboard}
 
 
 **Step 3**: Click "Create a Cloud Function" (see +@fig:GCPCreateFunction)
@@ -93,12 +93,12 @@ optimized further with Python standards style writing.(see +@fig:PythonCode)
 ![:Write Python Function](images/markdown-img-paste-2018103113223371.png){#fig:PythonCode}
 
 
-**Step 8**: The function is created and deployed in the next page (see +@fig:FunctionDeployed)
+**Step 8**: The function is created and deployed in the next page (see
++@fig:google-FunctionDeployed-1) and +@fig:google-FunctionDeployed-2)
 
-![Function is Deployed](images/markdown-img-paste-20181031132532494.png){#fig:FunctionDeployed}
+![Function is Deployed](images/markdown-img-paste-20181031132532494.png){#fig:google-FunctionDeployed-1}
 
-
-![Function is Deployed](images/markdown-img-paste-20181031132602827.png){#fig:FunctionDeployed}
+![Function is Deployed](images/markdown-img-paste-20181031132602827.png){#fig:google-FunctionDeployed-2}
 
 
 **Step 9**: Finally we will test the function (see +@fig:TestFunction)
