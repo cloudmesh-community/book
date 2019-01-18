@@ -95,7 +95,7 @@ The book can be used as reference material in that case.
 | :white_check_mark:| 01/22-03/17    | A0      | Bio          | Post your formal Bio into Piazza |
 | :white_check_mark:| 01/22-03/17    | A1      | Sections           | Contribute significant sections. Do not develop redundant or duplicated content. |
 | :white_check_mark: | 01/22-03/17   | A2      | Chapter            | Contribute a significant chapter that may use your section to the class documentation. Do not develop redundant or duplicated content. |
-| :white_check_mark: | 01/22-03/17   | A3      | Project Report draft due            | Develop a draft for the project. This is a hard deadline as w integrate your draft into a proceedings over the berak.  |
+| :white_check_mark: | 01/22-03/17   | A3      | Project Report draft due            | Develop a draft for the project. This is a hard deadline as we integrate your draft into a proceedings over the berak.  |
 | :white_check_mark: |01/22-04/21    | A3      | Project Type A     | Build a cloud clustert out of Raspberry PIs |
 | :white_check_mark: | 01/22-04/21                |         | Project Type B     | Build a Significant OpenAPI REST Service |
 | :white_check_mark: | 01/22-04/21                |         | Project Type C     | Build an Edge Service Interfacing with a Cloud |
