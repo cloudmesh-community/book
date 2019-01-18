@@ -9,10 +9,10 @@ Overview
 
 Fingerprint recognition refers to the automated method for verifying a
 match between two fingerprints and that is used to identify individuals
-and verify their identity. Fingerprints (Figure 1) are the most widely
+and verify their identity. Fingerprints (@fig:fingerprints) are the most widely
 used form of biometric used to identify individuals.
 
-![Fingerprints](images/fingerprints.png)
+![Fingerprints](images/fingerprints.png){#fig:fingerprints}
 
 The automated fingerprint matching generally required the detection of
 different fingerprint features (aggregate characteristics of ridges, and
@@ -658,13 +658,13 @@ probe 4ed2d53db3b5ab7d6b216ea0314beb4f Inserted results for probe
 5 ms Wall time: 3.57 ms
 ```
 
-We now plot the results.
+We now plot the results. @fig:fingerprint_matching_74_0
 
 ```python
 plot(dbfile, nprobes=len(probes))
 ```
 
-![image](images/fingerprint_matching_74_0.png)
+![Result](images/fingerprint_matching_74_0.png){#fig:fingerprint_matching_74_0}
 
 ```python
 cursor.close()
