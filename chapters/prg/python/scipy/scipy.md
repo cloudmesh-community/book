@@ -45,7 +45,7 @@ abbreviate that too.
     import scipy as sp # import scipy
     from scipy import stats # refer directly to stats rather than sp.stats
     import matplotlib as mpl # for visualization
-    from matplotlib import pyplot as plt # refer directly to pyplot 
+    from matplotlib import pyplot as plt # refer directly to pyplot
                                          # rather than mpl.pyplot
 
 Now we create some random data to play with. We generate 100 samples
@@ -80,22 +80,26 @@ What about the standard deviation and variance?
 
 Isn't the variance the square of the standard deviation?
 
+```python
     print ('The square of the standard deviation is',sp.std(s)**2)
+```
 
 How close are the measures? The differences are close as the following
 calculation shows
 
+```python
     print ('The difference is',abs(sp.std(s)**2 - sp.var(s)))
 
-    print ('And in decimal form, the difference is %0.16f' % 
+    print ('And in decimal form, the difference is %0.16f' %
            (abs(sp.std(s)**2 - sp.var(s))))
+```
 
-How does this look as a histogram?
+How does this look as a histogram? See @fig:scipy-output_23_0, @fig:scipy-output_25_0, @fig:scipy-output_27_0
 
     plt.hist(s) # yes, one line of code for a histogram
     plt.show()
 
-![image](images/output_23_0.png){width="50%"}
+![Histogram 1](images/output_23_0.png){#fig:scipy-output_23_0}
 
 Let's add some titles.
 
@@ -108,7 +112,7 @@ Let's add some titles.
 
     plt.show()
 
-![image](images/output_25_0.png){width="50%"}
+![Histogram 2](images/output_25_0.png){#fig:scipy-output_25_0}
 
 Typically we do not include titles when we prepare images for inclusion
 in LaTeX. There we use the caption to describe what the figure is about.
@@ -121,9 +125,9 @@ in LaTeX. There we use the caption to describe what the figure is about.
 
     plt.show()
 
-![image](images/output_27_0.png){width="50%"}
+![Histogram 3](images/output_27_0.png){#fig:scipy-output_27_0}
 
-Let's try out some linear regression, or curve fitting.
+Let's try out some linear regression, or curve fitting. See @#fig:scipy-output_30_0
 
     import random
 
@@ -131,7 +135,7 @@ Let's try out some linear regression, or curve fitting.
         return 2*x - 2
 
     def add_noise(x):
-        return x + random.uniform(-1,1) 
+        return x + random.uniform(-1,1)
 
     X = range(0,10,1)
 
@@ -143,7 +147,7 @@ Let's try out some linear regression, or curve fitting.
     plt.plot(X,Y,'.')
     plt.show()
 
-![image](images/output_30_0.png)
+![Result 1](images/output_30_0.png){#fig:scipy-output_30_0}
 
 Now let's try linear regression to fit the curve.
 
@@ -168,7 +172,7 @@ curve F'.
     plt.clf() # clear out the old figure
 
     # the observed points, blue dots
-    plt.plot(X, Y, '.', label='observed points') 
+    plt.plot(X, Y, '.', label='observed points')
 
     # the interpolated curve, connected red line
     plt.plot(X, Yprime, 'r-', label='estimated points')  
@@ -177,7 +181,7 @@ curve F'.
     plt.xlabel("x") # horizontal axis title
     plt.ylabel("y") # vertical axis title
     # legend labels to plot
-    plt.legend(['obsered points', 'estimated points']) 
+    plt.legend(['obsered points', 'estimated points'])
 
     # comment out so that you can save the figure
     #plt.show()
@@ -186,15 +190,15 @@ To save images into a PDF file for inclusion into LaTeX documents you
 can save the images as follows. Other formats such as png are also
 possible, but the quality is naturally not sufficient for inclusion in
 papers and documents. For that you certainly want to use PDF. The save
-of the figure has to occur before you use the `show()` command.
+of the figure has to occur before you use the `show()` command. See @fig:scipy-output_40_0
 
     plt.savefig("regression.pdf", bbox_inches='tight')
 
-    plt.savefig('regression.png') 
+    plt.savefig('regression.png')
 
     plt.show()
 
-![image](images/output_40_0.png)
+![Result 2](images/output_40_0.png){#fig:scipy-output_40_0}
 
 References
 ----------
