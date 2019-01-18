@@ -59,6 +59,7 @@ EBS
 
 ![AWS Console](images/aws_console.JPG){#fig:aws-console-1}
 
+
 - AWS Login
 
 ![AWS Login](images/aws_login.JPG){#fig:aws-login}
