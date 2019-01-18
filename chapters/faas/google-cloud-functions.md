@@ -72,7 +72,7 @@ Google Cloud in the epub for creting a free tier GCP account.
 
 **Step 5**: Click Create Function (see @fig:CreateFunction)
 
-![Select Create Function](images/markdown-img-paste-20181031131938895.png)(#fig:CreateFunction)
+![Select Create Function](images/markdown-img-paste-20181031131938895.png){#fig:CreateFunction}
 
 
 **Step 6**: In the next page, give a name to the function. In our case
@@ -145,7 +145,7 @@ it and hit enter
 
 **Step 17**: You will get a response back from the function(see @fig:TestHttp)
 
-![Test Http](images/markdown-img-paste-20181031133547391.png){#fig:Test Http}
+![Test Http](images/markdown-img-paste-20181031133547391.png){#fig:TestHttp}
 
 
 **Step 18**: Another test (see @fig:AnotherHttpTest)
