@@ -322,7 +322,8 @@ The group of industry experts based use the following guiding principles to when
   security needs.
 
 An overview of the architecture is shown in the diagram from the Cloud
-Security Alliance. See +@fig:csa-arch
+Security Alliance. See @fig:csa-arch
+
 ![Cloud Security Alliance Reference Architecture [Source](https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf)](images/csa-architecture.png){#fig:csa-arch}
 
 
