@@ -218,7 +218,7 @@ rather than the explicit version.
 #### Set up the Shell
 
 To make all work smoothly from your terminal, you can include the
-following in your `.bashrc` files:
+following in your `.bashrc` file in case you run Linux. For macOS it is best to place it in  your `.bash_profile` file:
 
     export PYENV_VIRTUALENV_DISABLE_PROMPT=1
     eval "$(pyenv init -)"
