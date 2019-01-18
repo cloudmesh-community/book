@@ -105,39 +105,26 @@ create a new application, let's name this application as
 `Cloudmesh-Spark-Streaming`.
 
 First you need to create an app with the app name we suggested in this
-section. The way to create the app is mentioned in Figure
-[\[fig:twitter-app\]](#fig:twitter-app){reference-type="ref"
-reference="fig:twitter-app"}.
+section. The way to create the app is mentioned in +@fig:twitter-app.
 
-[\[fig:twitter-app\]]{#fig:twitter-app label="fig:twitter-app"} ![Create
-Twitter App](images/twitter-app.png "fig:"){width="100%"}
+![Create Twitter App](images/twitter-app.png "fig:"){#fig:twitter-app}
 
 Next we need to to take a look at the dashboard created for the app. You
-can see how your dashboard looks like in Figure
-[\[fig:twitter-app-dashboard\]](#fig:twitter-app-dashboard){reference-type="ref"
-reference="fig:twitter-app-dashboard"}.
+can see how your dashboard looks like in +@fig:twitter-app-dashboard.
 
-[\[fig:twitter-app-dashboard\]]{#fig:twitter-app-dashboard
-label="fig:twitter-app-dashboard"} ![Go To Twitter App
-Dashboard](images/twitter-app-dashboard.png "fig:"){width="100%"}
+![Go To Twitter App Dashboard](images/twitter-app-dashboard.png){#fig:twitter-app-dashboard}
 
 Next the application tokens generated must be reviewed and it can be
-found in Figure
-[\[fig:twitter-app-token\]](#fig:twitter-app-token){reference-type="ref"
-reference="fig:twitter-app-token"}, you need to go to the
+found in +@fig:twitter-app-token, you need to go to the
 `Keys and Access Tokens` tab.
 
-[\[fig:twitter-app-token\]]{#fig:twitter-app-token
-label="fig:twitter-app-token"} ![Create Your Twitter
-Settings](images/twitter-create-token.png "fig:"){width="100%"}
+![Create Your Twitter Settings](images/twitter-create-token.png){#fig:twitter-app-token}
 
 Now you need to generate the access tokens for the first time if you
 have not generated access tokens and this can be done by clicking the
-`Create my access token` button.
+`Create my access token` button. See +@fig:twitter-app-access-token
 
-[\[fig:twitter-app-access-token\]]{#fig:twitter-app-access-token
-label="fig:twitter-app-access-token"} ![Create Your Twitter Access
-Tokens](images/twitter-create-token.png "fig:"){width="100%"}
+![Create Your Twitter Access Tokens](images/twitter-create-token.png){#fig:twitter-app-access-token}
 
 The access tokens and keys are blurred in this section for privacy
 issues.
@@ -343,26 +330,12 @@ initialization of SparkContext.
 Now you will see streams in the `Terminal 1` and you can see plots after
 a while in the IPython Notebook.
 
-Sample outputs can be seen in the Figures
-[\[fig:twitter-out-1\]](#fig:twitter-out-1){reference-type="ref"
-reference="fig:twitter-out-1"},
-[\[fig:twitter-out-2\]](#fig:twitter-out-2){reference-type="ref"
-reference="fig:twitter-out-2"},
-[\[fig:twitter-out-3\]](#fig:twitter-out-3){reference-type="ref"
-reference="fig:twitter-out-3"},
-[\[fig:twitter-out-4\]](#fig:twitter-out-4){reference-type="ref"
-reference="fig:twitter-out-4"}.
+Sample outputs can be seen in +@fig:twitter-out-1, +@fig:twitter-out-2, +@fig:twitter-out-3, +@fig:twitter-out-4.
 
-[\[fig:twitter-out-1\]]{#fig:twitter-out-1 label="fig:twitter-out-1"}
-![Twitter Topic Messi](images/twitter-messi-3.png "fig:"){width="100%"}
+![Twitter Topic Messi](images/twitter-messi-3.png){#fig:twitter-out-1}
 
-[\[fig:twitter-out-2\]]{#fig:twitter-out-2 label="fig:twitter-out-2"}
-![Twitter Topic Messi](images/twitter-messi-5.png "fig:"){width="100%"}
+![Twitter Topic Messi](images/twitter-messi-5.png){#fig:twitter-out-2}
 
-[\[fig:twitter-out-3\]]{#fig:twitter-out-3 label="fig:twitter-out-3"}
-![Twitter Topic
-Messi](images/twitter-trump-output.png "fig:"){width="100%"}
+![Twitter Topic Messi](images/twitter-trump-output.png){#fig:twitter-out-3}
 
-[\[fig:twitter-out-4\]]{#fig:twitter-out-4 label="fig:twitter-out-4"}
-![Twitter Topic
-Messi](images/twitter-indiana-2.png "fig:"){width="100%"}
+![Twitter Topic Messi](images/twitter-indiana-2.png "fig:"){#fig:twitter-out-4}
