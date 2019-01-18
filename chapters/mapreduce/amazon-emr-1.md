@@ -1,4 +1,4 @@
-# Amazon EMR (Elastic Map Reduce) :o: :hand: fa18-516-22
+# Amazon EMR (Elastic Map Reduce) :o:
 
 Amazon EMR provides a managed Hadoop framework that makes big data processing
 - Easy
@@ -51,16 +51,21 @@ EBS
 
 - Login to AWS console and create the buckets at https://aws.amazon.com/console/. To create the buckets, go to services (see +@fig:aws-console, +@fig:aws-login), click on S3 under Storage, +@fig:aws-s3, +@fig:aws-s3-bucket, +@fig:aws-s3-bucket1. Click on Create bucket button and then provide all the details to complete bucket creation.
 - AWS Console
+
 ![AWS Console](images/aws_console.JPG){#fig:aws-console}
 
 - AWS Login
+
 ![AWS Login](images/aws_login.JPG){#fig:aws-login}
 
 - S3 – Amazon Storage
+
 ![Amazon Storage](images/storage_s3.JPG){#fig:aws-s3}
 
 - S3 – Create buckets
+
 ![S3 buckets](images/create_bucket.JPG){#fig:aws-s3-bucket}
+
 ![S3 buckets1](images/create_bucket_1.JPG){#fig:aws-s3-bucket1}
 
 ### Create Key Pairs
@@ -71,6 +76,7 @@ EBS
 #### Create Key Value Pair Screen shots
 
 ![AMS Key Value Pair](images/key-value-pair.JPG){#fig:aws-keypair}
+
 ![AMS Key Value Pair1](images/key-value-pair-1.JPG){#fig:aws-keypair1}
 
 
@@ -91,9 +97,13 @@ See: +@fig:aws-emr, +@fig:aws-create-emr, +@fig:emr-step-exe, +@fig:step-cluster
 #### Screen shots
 
 ![AWS EMR](images/aws_emr.JPG){#fig:aws-emr}
-![AWS Create EMR](images/create_emr.JPG){#fig:create-emr}
+
+![AWS Create EMR](images/create_emr.JPG){#fig:aws-create-emr}
+
 ![AWS Config EMR](images/emr-step-execution.JPG){#fig:emr-step-exe}
+
 ![AWS Create Cluster](images/step_cluster.JPG){#fig:step-cluster}
+
 ![AWS Create Cluster1](images/step_cluster_1.JPG){#fig:step-cluster1}
 
 ## Create a Hive Cluster
@@ -108,7 +118,9 @@ See, +@fig:hive-cluster1, +@fig:hive-cluster2, +@fig:hive-cluster3
 ### Create a Hive Cluster - Screen shots
 
 ![Hive Cluser](images/hive_cluster1.JPG){#fig:hive-cluster1}
+
 ![Hive Cluser1](images/hive_cluster2.JPG){#fig:hive-cluster2}
+
 ![Hive Cluser2](images/hive_cluster_2.JPG){#fig:hive-cluster3}
 
 ## Create a Spark Cluster
@@ -123,5 +135,7 @@ See, +@fig:spark-cluster1, +@fig:spark-cluster2, +@fig:spark-cluster3
 ### Create a Spark Cluster - Screenshots
 
 ![Spark Cluser](images/spark_cluster1.JPG){#fig:spark-cluster1}
+
 ![Spark Cluser](images/spark_cluster2.JPG){#fig:spark-cluster2}
+
 ![Spark Cluser](images/spark_cluster3.JPG){#fig:spark-cluster3}
