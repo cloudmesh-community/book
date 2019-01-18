@@ -449,16 +449,16 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as
 > the date when the PUE was reported.
 
-### Hot-Cold Aisle :smiley:
+### Hot-Cold Aisle :wave: 
 
 To understand hot-cold aisles, one must take a brief foray into the
 realm of physics and energy. Specifically, understanding how a
 temperature gradient tries to equalize. The most important formula
-to know is:
+to know is the heat transfer equation (@eq:heat-transfer).
 
-![Heat Transfer Equation](https://latex.codecogs.com/gif.latex?q=h_{c}A(t_{a}-t_{s}))
+$$q=h_{c}A(t_{a}-t_{s})$${#eq:heat-transfer}
 
-Here, q is the amount of heat transferred for a given amount of time.
+Here, *q* is the amount of heat transferred for a given amount of time.
 For this example, we'll calculate it as W/hour as that is, conveniently,
 how energy is billed. Air moving at a moderate speed will transfer
 approximately 8.47 Watts per Square Foot per Hour. A 1U server is 
@@ -466,29 +466,43 @@ approximately 8.47 Watts per Square Foot per Hour. A 1U server is
 a cross section of 33.25 inches, or 0.23 square feet. Plugging these values
 into our equation above gives us:
 
-![Heat Transfer Example](https://latex.codecogs.com/gif.latex?q=8.47*0.23*(t_{a}-t_{s}))
+$$q=8.47*0.23*(t_{a}-t_{s}))$${#eq:heat-transfer-example}
 
-This begins to point us towards why hot-cold aisles are important. If we
-introduce cold air from the AC system into the same aisle that the servers
-are exhausting into, the air will mix and begin to average out. For example,
-if our servers are producing exhaust at 100F and our AC unit provides 65F
-at the same rate, then the average air temperature will become 82.5F
-(assuming balanced air pressure). This has a deliterious effect on our
-server cooling - warmer air takes heat away from wamer surfaces slower
-than cooler air:
+This begins to point us towards why hot-cold aisles are important. If
+we introduce cold air from the AC system into the same aisle that the
+servers are exhausting into, the air will mix and begin to average
+out. For example, if our servers are producing exhaust at 100F and our
+AC unit provides 65F at the same rate, then the average air
+temperature will become 82.5F (assuming balanced air pressure). This
+has a deliterious effect on our server cooling - warmer air takes heat
+away from wamer surfaces slower than cooler air:
 
-![Heat Transfer Example](https://latex.codecogs.com/gif.latex?68.2=8.47*0.23*(100-65))
+$$68.2=8.47*0.23*(100-65)$$
 
-![Heat Transfer Example](https://latex.codecogs.com/gif.latex?34.1=8.47*0.23*(100-82.5))
+$$34.1=8.47*0.23*(100-82.5))$$
 
-To combat this, engineers developed the idea of designating alternating aisles
-as either hot or cold. All servers in a given aisle are then oriented such that the AC
-system provides cool air into the cold aisle where it is drawn in by the server
-which then exhausts it into the hot aisle where the ventilaton system removes it from
-the room. This has the benefit of maximizing the temperature delta between the
-provided air and the server's processor(s), reducing the amount of quantity of air
-that must be provided in order to cool the server and improving overall system
-efficiency.
+To combat this, engineers developed the idea of designating
+alternating aisles as either hot or cold. All servers in a given aisle
+are then oriented such that the AC system provides cool air into the
+cold aisle where it is drawn in by the server which then exhausts it
+into the hot aisle where the ventilaton system removes it from the
+room. This has the benefit of maximizing the temperature delta between
+the provided air and the server's processor(s), reducing the amount of
+quantity of air that must be provided in order to cool the server and
+improving overall system efficiency.
+
+:o: add an image of the general hot coldisle airflow.
+
+#### Containment :o:
+
+:o: add a discussion of Hot Aisle Containment and Cold Aisle
+Containment <https://www.dcimpro360.com/air-flow-containment/> I
+suggest even to include some images. Maybe you can ocate better
+images?
+
+##### Water Cooled Doors
+
+Alternatively, or in addition :o:
 
 ### Workload Monitoring
 
@@ -1028,7 +1042,8 @@ which it will be retrieved and recycled.
 ![The Northern Isles prototype](images/project-natick-phase2.png){#fig:project-natick-phase2}
 
 See @fig:project-natick-phase2, The *Northern Isles* prototype being deployed near
-Scotland. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
+Scotla
+nd. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
 
 Although the cooling provides a significant benefit while using
 seawater, it is clear that long time studies need to be conducted with
@@ -1049,3 +1064,39 @@ Some thought on this include:
    than on the ecosystem.
 
 Find more about this at [@nytimes-datacenter]
+
+## Renewable Energy for Data Centers :o:
+
+Exlain the principal and showcase some examples:
+
+* Solar: <https://9to5google.com/2019/01/17/largest-ever-solar-farms-google/>
+* Wind: <https://www.datacenterknowledge.com/wind-powered-data-centers>
+* Hydro:
+  <http://www.hydroquebec.com/data-center/advantages/clean-energy.html>
+  there will be others
+* Thermal: find better resource
+  <https://spectrum.ieee.org/energywise/telecom/internet/iceland-data-center-paradise>
+* Recyclers:
+  <https://www.datacenterknowledge.com/data-centers-that-recycle-waste-heat>
+
+Whot other aspects exist:
+
+Energy Storage:
+
+* Batteries
+* Store energy in other forms
+
+## Sociatal Shift Towards Renewables :o:
+
+The data center as example.
+
+Government efforts to support renewable in benefit of the society:
+
+* Germany
+* China
+* Island
+* Coorperations: Google, AWS, IBM, ...
+
+Everyone is doing it.
+
+See also *<https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>

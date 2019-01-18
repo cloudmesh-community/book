@@ -134,3 +134,23 @@ It will be rendered as: In @sec:notation we
 explain ...
 
 
+## Equations {#sec:equations}
+
+Equations can be written as
+
+```$$a^2+b^2=c^2$${#eq:pytagoras}```
+
+and used in text: 
+
+$$a^2+b^2=c^2$${#eq:pytagoras}
+
+It will render as: As we see in @eq:pytagoras. 
+
+The equation number is optional. Inline equations just use one dollar
+sign and do not need an equation number:
+
+```This is the pythagoras theorem: $a^2+b^2=c^2$```
+
+Whch renders as:
+
+This is the pythagoras theorem: $a^2+b^2=c^2$.
