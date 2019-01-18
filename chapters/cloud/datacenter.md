@@ -449,9 +449,46 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as
 > the date when the PUE was reported.
 
-### Hot-Cold Isle :o: :question:
+### Hot-Cold Aisle :smiley:
 
-Contribute a section discussing the hot cold isle.
+To understand hot-cold aisles, one must take a brief foray into the
+realm of physics and energy. Specifically, understanding how a
+temperature gradient tries to equalize. The most important formula
+to know is:
+
+![Heat Transfer Equation](https://latex.codecogs.com/gif.latex?q=h_{c}A(t_{a}-t_{s}))
+
+Here, q is the amount of heat transferred for a given amount of time.
+For this example, we'll calculate it as W/hour as that is, conveniently,
+how energy is billed. Air moving at a moderate speed will transfer
+approximately 8.47 Watts per Square Foot per Hour. A 1U server is 
+19 inches wide and 1.75 inches tall. Multiplying the two values gives us
+a cross section of 33.25 inches, or 0.23 square feet. Plugging these values
+into our equation above gives us:
+
+![Heat Transfer Example](https://latex.codecogs.com/gif.latex?q=8.47*0.23*(t_{a}-t_{s}))
+
+This begins to point us towards why hot-cold aisles are important. If we
+introduce cold air from the AC system into the same aisle that the servers
+are exhausting into, the air will mix and begin to average out. For example,
+if our servers are producing exhaust at 100F and our AC unit provides 65F
+at the same rate, then the average air temperature will become 82.5F
+(assuming balanced air pressure). This has a deliterious effect on our
+server cooling - warmer air takes heat away from wamer surfaces slower
+than cooler air:
+
+![Heat Transfer Example](https://latex.codecogs.com/gif.latex?68.2=8.47*0.23*(100-65))
+
+![Heat Transfer Example](https://latex.codecogs.com/gif.latex?34.1=8.47*0.23*(100-82.5))
+
+To combat this, engineers developed the idea of designating alternating aisles
+as either hot or cold. All servers in a given aisle are then oriented such that the AC
+system provides cool air into the cold aisle where it is drawn in by the server
+which then exhausts it into the hot aisle where the ventilaton system removes it from
+the room. This has the benefit of maximizing the temperature delta between the
+provided air and the server's processor(s), reducing the amount of quantity of air
+that must be provided in order to cool the server and improving overall system
+efficiency.
 
 ### Workload Monitoring
 
