@@ -17,13 +17,13 @@ communicate-epub:
 
 
 image:
-	docker build -t cloudmesh-community/book:${VERSION} . 
+	docker build -t cloudmesh/book:${VERSION} . 
 
 image-push:
-	docker push cloudmesh-community/book
+	docker push cloudmesh/book
 
 shell:
-	docker run -v `pwd`:/book -w /book --rm -it cloudmesh-community/book:${VERSION}  /bin/bash 
+	docker run -v `pwd`:/book -w /book --rm -it cloudmesh/book:${VERSION}  /bin/bash 
 
 docker-clean:
 	-docker kill $$(docker ps -q)
@@ -34,4 +34,4 @@ docker-push:
 	docker push cloudmesh-community/book:${VERSION}
 
 cloud:
-	docker run -v `pwd`:/book -w /book cloudmesh-community/book:${VERSION} /bin/sh -c "cd /book/cloud; git pull; make"
+	docker run -v `pwd`:/book -w /book cloudmesh/book:${VERSION} /bin/sh -c "cd /book/cloud; git pull; make"
