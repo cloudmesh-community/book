@@ -1,4 +1,4 @@
-# Docker 
+# Docker {#sec:pi-docker}
 
 Docker is a tool that allows us to deploy applications inside of
 software containers.  A container allows a developer to package the
