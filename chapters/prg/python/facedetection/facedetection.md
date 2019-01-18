@@ -5,15 +5,15 @@ a picture or a video and NIST use case in this document is built with
 Apache Spark and Mesos clusters on multiple compute nodes.
 
 The example in this tutorial deploys software packages on OpenStack
-using Ansible with its roles.
+using Ansible with its roles. See @fig:face-image03, @fig:face-image05, @fig:face-image06, @fig:face-image04
 
-![Original](images/image03.png)
+![Original](images/image03.png){#fig:face-image03}
 
-![Pedestrian Detected](images/image05.png)
+![Pedestrian Detected](images/image05.png){#fig:face-image05}
 
-![Original](images/image06.png)
+![Original](images/image06.png){#fig:face-image06}
 
-![Pedestrian and Face/eyes Detected](images/image04.png)
+![Pedestrian and Face/eyes Detected](images/image04.png){#fig:face-image04}
 
 ### Introduction
 
@@ -245,7 +245,7 @@ how it works.
 #### Import cv2
 
 Let's import opencv python module and we will use images from the online
-database image-net.org to test OpenCV image recognition.
+database image-net.org to test OpenCV image recognition. See @fig:facedetection_46_0, @fig:facedetection_49_0
 
     import cv2
 
@@ -262,7 +262,7 @@ identifies the shape with a color. The example file in this tutorial is:
     mailbox_image = "mailbox.jpg"
     Image(filename=mailbox_image)
 
-![image](images/facedetection_46_0.jpeg)
+![Mailbox image](images/facedetection_46_0.jpeg){#fig:facedetection_46_0}
 
 You can try other images. Check out the image-net.org for mailbox
 images: <http://image-net.org/synset?wnid=n03710193>
@@ -279,6 +279,7 @@ using a Numpy library for better calculation \* findContours: to find a
 outline of the object \* bitwise\_and: to black-out the area of contours
 found
 
+```python
     import numpy as np
     import matplotlib.pyplot as plt
 
@@ -311,8 +312,9 @@ found
     # display
     plt.imshow(cv2.cvtColor(res, cv2.COLOR_BGR2RGB))
     plt.show()
+```
 
-![image](images/facedetection_49_0.png)
+![Masked image](images/facedetection_49_0.png){#fig:facedetection_49_0}
 
 The red color mailbox is left alone in the image which we wanted to find
 in this example by opencv functions. You can try other images with
@@ -371,7 +373,7 @@ training from here:
 
 #### Face Detection Python Code Snippet
 
-Now, we detect faces from the first five images using the classifier.
+Now, we detect faces from the first five images using the classifier. See @fig:facedetection_59_0, @fig:facedetection_59_1, @fig:facedetection_59_2, @fig:facedetection_59_3, @fig:facedetection_59_4, @fig:facedetection_59_5, @fig:facedetection_59_6, @fig:facedetection_59_7, @fig:facedetection_59_8, @fig:facedetection_59_9, @fig:facedetection_59_10
 
     # import the necessary packages
     from __future__ import print_function
@@ -404,27 +406,37 @@ Now, we detect faces from the first five images using the classifier.
             cnt_faces += 1
         plt.figure()
         plt.axis("off")
-        plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))        
+        plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
         cnt = cnt + 1
         if cnt == 5:
             break
 
-![](images/facedetection_59_0.png){width="25%"}
-![](images/facedetection_59_1.png){width="25%"}
-![](images/facedetection_59_2.png){width="25%"}
-![](images/facedetection_59_3.png){width="25%"}
-![](images/facedetection_59_4.png){width="25%"}
-![](images/facedetection_59_5.png){width="25%"}
-![](images/facedetection_59_6.png){width="25%"}
-![](images/facedetection_59_7.png){width="25%"}
-![](images/facedetection_59_8.png){width="25%"}
-![](images/facedetection_59_9.png){width="25%"}
-![](images/facedetection_59_10.png){width="25%"}
+![Example](images/facedetection_59_0.png){#fig:facedetection_59_0}
+
+![Example](images/facedetection_59_1.png){#fig:facedetection_59_1}
+
+![Example](images/facedetection_59_2.png){#fig:facedetection_59_2}
+
+![Example](images/facedetection_59_3.png){#fig:facedetection_59_3}
+
+![Example](images/facedetection_59_4.png){#fig:facedetection_59_4}
+
+![Example](images/facedetection_59_5.png){#fig:facedetection_59_5}
+
+![Example](images/facedetection_59_6.png){#fig:facedetection_59_6}
+
+![Example](images/facedetection_59_7.png){#fig:facedetection_59_7}
+
+![Example](images/facedetection_59_8.png){#fig:facedetection_59_8}
+
+![Example](images/facedetection_59_9.png){#fig:facedetection_59_9}
+
+![Example](images/facedetection_59_10.png){#fig:facedetection_59_10}
 
 ### Pedestrian Detection using HOG Descriptor
 
 We will use Histogram of Oriented Gradients (HOG) to detect a upright
-person from images.
+person from images. See @fig:facedetection_62_0, @fig:facedetection_62_1, @fig:facedetection_62_2, @fig:facedetection_62_3, @fig:facedetection_62_4, @fig:facedetection_62_5, @fig:facedetection_62_6, @fig:facedetection_62_7, @fig:facedetection_62_8, @fig:facedetection_62_9
 
 #### Python Code Snippet
 
@@ -456,16 +468,25 @@ person from images.
         if cnt == 5:
             break
 
-![](images/facedetection_62_0.png){width="25%"}
-![](images/facedetection_62_1.png){width="25%"}
-![](images/facedetection_62_2.png){width="25%"}
-![](images/facedetection_62_3.png){width="25%"}
-![](images/facedetection_62_4.png){width="25%"}
-![](images/facedetection_62_5.png){width="25%"}
-![](images/facedetection_62_6.png){width="25%"}
-![](images/facedetection_62_7.png){width="25%"}
-![](images/facedetection_62_8.png){width="25%"}
-![](images/facedetection_62_9.png){width="25%"}
+![Example](images/facedetection_62_0.png){#fig:facedetection_62_0}
+
+![Example](images/facedetection_62_1.png){#fig:facedetection_62_1}
+
+![Example](images/facedetection_62_2.png){#fig:facedetection_62_2}
+
+![Example](images/facedetection_62_3.png){#fig:facedetection_62_3}
+
+![Example](images/facedetection_62_4.png){#fig:facedetection_62_4}
+
+![Example](images/facedetection_62_5.png){#fig:facedetection_62_5}
+
+![Example](images/facedetection_62_6.png){#fig:facedetection_62_6}
+
+![Example](images/facedetection_62_7.png){#fig:facedetection_62_7}
+
+![Example](images/facedetection_62_8.png){#fig:facedetection_62_8}
+
+![Example](images/facedetection_62_9.png){#fig:facedetection_62_9}
 
 ### Processing by Apache Spark
 
@@ -498,7 +519,7 @@ parallel to detet objects in this example.
                 cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
             return image
 
-            
+
 #### Parallelize in Spark Context
 
 The list of image files is given to parallelize.
