@@ -49,10 +49,10 @@ EBS
 
 ### Create the buckets
 
-- Login to AWS console and create the buckets at https://aws.amazon.com/console/. To create the buckets, go to services (see @fig:aws-console, @fig:aws-login), click on S3 under Storage, @fig:aws-s3, @fig:aws-s3-bucket, @fig:aws-s3-bucket1. Click on Create bucket button and then provide all the details to complete bucket creation.
+- Login to AWS console and create the buckets at https://aws.amazon.com/console/. To create the buckets, go to services (see @fig:aws-emr-console, @fig:aws-login), click on S3 under Storage, @fig:aws-s3, @fig:aws-s3-bucket, @fig:aws-s3-bucket1. Click on Create bucket button and then provide all the details to complete bucket creation.
 - AWS Console
 
-![AWS Console](images/aws_console.JPG){#fig:aws-console}
+![AWS Console](images/aws_console.JPG){#fig:aws-emr-console}
 
 - AWS Login
 
