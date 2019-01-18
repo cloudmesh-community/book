@@ -31,7 +31,7 @@ docker-clean:
 	-docker rmi $$(docker images -q)
 
 docker-push:
-	docker push cloudmesh-community/book:${VERSION}
+	docker push cloudmesh/book:${VERSION}
 
 cloud:
 	docker run -v `pwd`:/book -w /book cloudmesh/book:${VERSION} /bin/sh -c "cd /book/cloud; git pull; make"
