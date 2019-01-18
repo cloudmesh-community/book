@@ -41,7 +41,7 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#sec:cmd5) |
 | :white_check_mark: | 01/14    |         |                    | - [OpenCV](#sec:opencv) |
 | :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#sec:secchi-disk) |
-| :white_check_mark: | 01/21    |         |                    | [Data Center](#sec:data-center) |
+| :white_check_mark: | 01/18    |         |                    | [Data Center](#sec:data-center) |
 | :white_check_mark: | 01/21    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#sec:nist-bdra) |
 | :white_check_mark: | 01/21    |         |                    | - [Cloud Architectures](#sec:cloud-architectures) |
 | :white_check_mark: | 01/28   | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#sec:virtualization) |
