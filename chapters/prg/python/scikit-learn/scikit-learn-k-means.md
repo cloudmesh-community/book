@@ -71,7 +71,7 @@ Create samples
     # in this case the seeding of the centers is deterministic, hence we run the
     # kmeans algorithm only once with n_init=1
     pca = PCA(n_components=n_digits).fit(data)
-    bench_k_means(KMeans(init=pca.components_, 
+    bench_k_means(KMeans(init=pca.components_,
                          n_clusters=n_digits, n_init=1),
                   name="PCA-based",
                   data=data)
@@ -79,6 +79,8 @@ Create samples
 
 Visualize
 =========
+
+See @fig:scikit-learn-k-means_10_0
 
     reduced_data = PCA(n_components=2).fit_transform(data)
     kmeans = KMeans(init='k-means++', n_clusters=n_digits, n_init=10)
@@ -118,4 +120,4 @@ Visualize
     plt.yticks(())
     plt.show()
 
-![image](images/scikit-learn-k-means_10_0.png)
+![Result](images/scikit-learn-k-means_10_0.png){#fig:scikit-learn-k-means_10_0}
