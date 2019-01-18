@@ -14,7 +14,42 @@ $ pandoc --version
 $ python --version
 ```
 
-## OSX Requirements
+## Docker
+
+In case you have docker installed on your computer you can create
+epubs with our docker image. To create that image by hand, we have
+included a simple makefile. Alternatively you can use our image from
+dockerhub if you like, it is based on ubuntu and uses our
+[Dockerfile](https://github.com/cloudmesh-community/book/blob/master/Dockerfile).
+
+First, you need to download the repository:
+
+```bash
+$ git clone https://github.com/cloudmesh-community/book.git
+cd book
+```
+
+To create the image you can use
+
+```bash
+$ make image
+```
+
+To open an interactive shell into the image you say
+
+```bash
+$ make shell
+```
+
+Now you can skip to @#sec:create-book and compile the book just as
+documented there.
+
+Please note that we have not integrated pandoc-mermaid and
+pandoc-index at this time in our docker image. If you like to
+contribute them, please try it and make a pull request once you got
+them to work. 
+
+## OSX Requirements :o: temporaryly unavailable
 
 On OSX you can install the needed software with `brew`. In case you
 have not yet installed brew you can do it with
@@ -39,7 +74,7 @@ $ cd pandoc-fignos/
 $ pip install .
 ```
 
-## Ubuntu requirements
+## Ubuntu requirements :o: temporarily unavailable
 
 On ubuntu you can use the following commands:
 
@@ -61,7 +96,7 @@ $ npm install --global mermaid-filter
 $ npm install --global pandoc-index
 ```
 
-## Creating a book
+## Creating a book {#sec:create-book}
 
 Tho create a book, you hae to first check out the book source from github with:
 

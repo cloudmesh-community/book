@@ -40,7 +40,7 @@ According to the [TIOBE](https://www.tiobe.com/tiobe-index/) [@tiobe] index
 for programming languages Go has reached for November 2018 the 16th
 spot. However it is rated only with 1.081% with a declining rating but
 increase in the ranking. This trend is even more prominently depicted
-when looking at google trends in +@fig:go-trend.
+when looking at google trends in @fig:go-trend.
 
 ![Legend](images/go-trend-legend.png)
 

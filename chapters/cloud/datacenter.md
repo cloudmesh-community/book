@@ -33,7 +33,7 @@ how much i created in one minute instead. Such depictions include
 samples of data created as a part of popular cloud services or the
 internet in general.
 
-One such popular depiction is "Data Never Sleeps" (see +@fig:data-never-sleeps). It has been
+One such popular depiction is "Data Never Sleeps" (see @fig:data-never-sleeps). It has been
 produced a number of times over the years and is now at version 6.0
 released in 2017. If you identify a newer version, please let us know.
 It is worth while to study this image in detail and identify some of
@@ -52,7 +52,7 @@ time.
 Source: <https://www.domo.com/blog/wp-content/uploads/2018/06/18-domo-data-never-sleeps-6.png>
 
 A different source publishes what is happening on the internet in a
-minute, but we have been able to locate a version from 2018 (see +@fig:internet-minutes-2018). While
+minute, but we have been able to locate a version from 2018 (see @fig:internet-minutes-2018). While
 some data seems the same, others are slightly different. For example
 this graph has a lower count for Google searches, while the number of
 text messages send is significantly higher in contrast to the previous
@@ -67,7 +67,7 @@ not only increases, but also declines. Looking at facebook showcases a
 loss of 73000 logins per minute. This loss is substantial. We can see
 that facebook services are replaced by other services that are more
 popular with the younger generation who tend to pick up new services
-quickly. See +@fig:internet-minutes-2017-2018
+quickly. See @fig:internet-minutes-2017-2018
 
 
 ![Internet Minute 2017-2018](images/internet-minute-2017-2018.jpg){#fig:internet-minutes-2017-2018}
@@ -76,7 +76,7 @@ Source: <https://www.allaccess.com/assets/img/content/merge/2018/m-04-03-pic1-lg
 
 
 It is also interesting to compare such trends over a longer period of
-time. See +@fig:google-search-per-year, +@fig:big-data-trend-2012. An example is provided by looking at Google searches:
+time. See @fig:google-search-per-year, @fig:big-data-trend-2012. An example is provided by looking at Google searches:
 <http://www.internetlivestats.com/google-search-statistics/>.
 
 ![Google searches over time](images/google-search.png){#fig:google-search-per-year}
@@ -170,7 +170,7 @@ In general a data center will have the following components.
   With regards to the number of people serving such a facility it is
   obvious that through automation is quite low. According to
   (<https://journal.uptimeinstitute.com/data-center-staffing/>) proper
-  data center staffing is a key to a reliable operation. See +@fig:datacenter-staff-impact
+  data center staffing is a key to a reliable operation. See @fig:datacenter-staff-impact
 
 ![Datacenter Staff Impact](images/datacenter-staff-impact.jpg){#fig:datacenter-staff-impact}
 
@@ -185,7 +185,7 @@ data center. Everyone has probably experienced some outage, so it is
 important to identify where they come from in order to prevent
 them. As we see in the Figure *Outage* not every error is caused by an
 operational issue. External, installation, design and manufacturer
-issues are together the largest issue for datacenter incidents. See +@fig:datacenter-outage
+issues are together the largest issue for datacenter incidents. See @fig:datacenter-outage
 
 ![Datacenter outage](images/datacenter-outage.jpg){#fig:datacenter-outage}
 
@@ -449,9 +449,60 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as
 > the date when the PUE was reported.
 
-### Hot-Cold Isle :o: :question:
+### Hot-Cold Aisle :wave: 
 
-Contribute a section discussing the hot cold isle.
+To understand hot-cold aisles, one must take a brief foray into the
+realm of physics and energy. Specifically, understanding how a
+temperature gradient tries to equalize. The most important formula
+to know is the heat transfer equation (@eq:heat-transfer).
+
+$$q=h_{c}A(t_{a}-t_{s})$${#eq:heat-transfer}
+
+Here, *q* is the amount of heat transferred for a given amount of time.
+For this example, we'll calculate it as W/hour as that is, conveniently,
+how energy is billed. Air moving at a moderate speed will transfer
+approximately 8.47 Watts per Square Foot per Hour. A 1U server is 
+19 inches wide and 1.75 inches tall. Multiplying the two values gives us
+a cross section of 33.25 inches, or 0.23 square feet. Plugging these values
+into our equation above gives us:
+
+$$q=8.47*0.23*(t_{a}-t_{s}))$${#eq:heat-transfer-example}
+
+This begins to point us towards why hot-cold aisles are important. If
+we introduce cold air from the AC system into the same aisle that the
+servers are exhausting into, the air will mix and begin to average
+out. For example, if our servers are producing exhaust at 100F and our
+AC unit provides 65F at the same rate, then the average air
+temperature will become 82.5F (assuming balanced air pressure). This
+has a deliterious effect on our server cooling - warmer air takes heat
+away from wamer surfaces slower than cooler air:
+
+$$68.2=8.47*0.23*(100-65)$$
+
+$$34.1=8.47*0.23*(100-82.5))$$
+
+To combat this, engineers developed the idea of designating
+alternating aisles as either hot or cold. All servers in a given aisle
+are then oriented such that the AC system provides cool air into the
+cold aisle where it is drawn in by the server which then exhausts it
+into the hot aisle where the ventilaton system removes it from the
+room. This has the benefit of maximizing the temperature delta between
+the provided air and the server's processor(s), reducing the amount of
+quantity of air that must be provided in order to cool the server and
+improving overall system efficiency.
+
+:o: add an image of the general hot coldisle airflow.
+
+#### Containment :o:
+
+:o: add a discussion of Hot Aisle Containment and Cold Aisle
+Containment <https://www.dcimpro360.com/air-flow-containment/> I
+suggest even to include some images. Maybe you can ocate better
+images?
+
+##### Water Cooled Doors
+
+Alternatively, or in addition :o:
 
 ### Workload Monitoring
 
@@ -480,7 +531,7 @@ Source: <https://experts.illinois.edu/en/publications/using-xdmod-to-facilitate-
 
 Having access to a detailed metrics analysis allows users and center
 administrators, as well as project managers to better evaluate the use
-and utilization of such large facilities justifying their existence. See +@fig:datacenter-xdmod
+and utilization of such large facilities justifying their existence. See @fig:datacenter-xdmod
 
 
 ![XDMod: XSEDE Metrics on Demand](images/datacenter-xdmod.png){#fig:datacenter-xdmod}
@@ -534,7 +585,7 @@ Futuregrid offered multiple clouds including clouds based on
 OpenStack, Eucalyptus, and Nimbus. Nimbus and Eucalyptus are systems
 that are no longer used in the community. Only OpenStack is the only
 viable solution in addition to the cloud offerings by Comet that do
-not uses OpenStack. See +@fig:datacenter-fg-metric
+not uses OpenStack. See @fig:datacenter-fg-metric
 
 Futuregrid, could monitor all of them and published its result in its
 Metrics portal. Monitoring the VMs is an important activity as they
@@ -611,12 +662,12 @@ The global infrastructure is presented (ass of Aug 29th 2018) at
 55 Availability Zones within 18 geographic Regions and 1 Local Region
 around the world. Plans exists to add 12 Availability Zones and four
 additional Regions in Bahrain, Hong Kong SAR, Sweden, and a second AWS
-GovCloud Region in the US. See +@fig:datacenter-aws-region
+GovCloud Region in the US. See @fig:datacenter-aws-region
 
 ![AWS regions](images/datacenter-aws-region.png){#fig:datacenter-aws-region}
 
 Amazon strives to achieve high availability through multiple availability zones,
-improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion. See +@fig:datacenter-azure-region
+improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion. See @fig:datacenter-azure-region
 
 The regions and number of availability zones are as follows:
 
@@ -650,7 +701,7 @@ applications to the users around the world. The goal is similar as
 other commercial hyprescale providers by introducing preserving data
 residency, and offering comprehensive compliance and resilience. As of
 Aug 29, 2018 Azure supports 54 regions worldwide. These regions can
-currently be accessed by users in 140 countries. See +@fig:datacenter-azure-region. Not every service is
+currently be accessed by users in 140 countries. See @fig:datacenter-azure-region. Not every service is
 offered in every region as the service to region matrix shows:
 
 * <https://azure.microsoft.com/en-us/global-infrastructure/services/>
@@ -665,7 +716,7 @@ offered in every region as the service to region matrix shows:
 From
 <https://www.google.com/about/datacenters/inside/locations/index.html>
 we find that on Aug. 29th Google has the following data center
-locations (see +@fig:datacenters-google):
+locations (see @fig:datacenters-google):
 
 * **North America:** Berkeley County, South Carolina; Council Bluffs,
   Iowa; Douglas County, Georgia; Jackson County, Alabama; Lenoir, North
@@ -699,7 +750,7 @@ They summarize their offers are based on
 
 ![PUE data for all large-scale Google data centers](images/datacenter-google-pue.png){#fig:datacenter-google-pue}
 
-See +@fig:datacenter-google-pue, [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
+See @fig:datacenter-google-pue, [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
 
 An important lesson from Google is the PUE boundary. That is the
 different efficiency based on the closeness of the IT infrastructure
@@ -710,9 +761,9 @@ all encompassing.
 
 ![Google data center PUE measurement boundaries](images/datacenter-google-boundary.png){#fig:datacenter-google-boundary}
 
-See +@fig:datacenter-google-boundary [Google data center PUE measurement boundaries. The average PUE for all Google data centers is 1.12, although we could boast a PUE as low as 1.06 when using narrower boundaries.](https://www.google.com/about/datacenters/efficiency/internal/)
+See @fig:datacenter-google-boundary [Google data center PUE measurement boundaries. The average PUE for all Google data centers is 1.12, although we could boast a PUE as low as 1.06 when using narrower boundaries.](https://www.google.com/about/datacenters/efficiency/internal/)
 
- As a consequence, Google is defining its PUE in detail as follows, see +@fig:datacenter-google-formula, :
+ As a consequence, Google is defining its PUE in detail as follows, see @fig:datacenter-google-formula, :
 
  ![Google PUE](images/datacenter-google-formula.png){#fig:datacenter-google-formula}
 
@@ -773,7 +824,7 @@ Primary compute resources are listed in the resource monitor at
 
 For cloud Computing the following systems are of especial importance
 although selected others may also host container based systems while
-using singularity (see +@fig:datacenter-xsede):
+using singularity (see @fig:datacenter-xsede):
 
 * Comet virtual clusters
 * Jetstream OpenStack
@@ -824,7 +875,7 @@ An overview of the hardware can be obtained from
 Indiana University has a data center in which many different systems
 are housed. This includes not only jetstream, but also many other
 systems. The systems include production, business, and research
-clusters and servers. See +@fig:datacenter-iu
+clusters and servers. See @fig:datacenter-iu
 
 ![IU Data Center](images/datacenter-iu.jpg){#fig:datacenter-iu}
 
@@ -911,7 +962,7 @@ forecast is with different assumption is contrasts till 2020
 
 Figure Energy Forecast depicts "an estimate of total U.S.  data center
 electricity use (servers, storage, network equipment, and
-infrastructure) from 2000-2020". See +@fig:datacenter-energy-use
+infrastructure) from 2000-2020". See @fig:datacenter-energy-use
 
 While in "2014 the data centers in the U.S. consumed an estimated 70
 billion kWh" or "about 1.8% of total U.S. electricity consumption".
@@ -970,7 +1021,7 @@ and was of 38000 lbs and it operated for 105 days.
 
 ![The Leona Philpot prototype](images/project-natick-phase1.png){#fig:project-natick-phase1}
 
-See +@fig:project-natick-phase1, The *Leona Philpot* prototype was deployed off the central
+See @fig:project-natick-phase1, The *Leona Philpot* prototype was deployed off the central
 coast of California on Aug. 10, 2015. Source: [Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/) [@microsoft-first-datacenter]
 
 
@@ -990,8 +1041,9 @@ which it will be retrieved and recycled.
 
 ![The Northern Isles prototype](images/project-natick-phase2.png){#fig:project-natick-phase2}
 
-See +@fig:project-natick-phase2, The *Northern Isles* prototype being deployed near
-Scotland. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
+See @fig:project-natick-phase2, The *Northern Isles* prototype being deployed near
+Scotla
+nd. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
 
 Although the cooling provides a significant benefit while using
 seawater, it is clear that long time studies need to be conducted with
@@ -1012,3 +1064,39 @@ Some thought on this include:
    than on the ecosystem.
 
 Find more about this at [@nytimes-datacenter]
+
+## Renewable Energy for Data Centers :o:
+
+Exlain the principal and showcase some examples:
+
+* Solar: <https://9to5google.com/2019/01/17/largest-ever-solar-farms-google/>
+* Wind: <https://www.datacenterknowledge.com/wind-powered-data-centers>
+* Hydro:
+  <http://www.hydroquebec.com/data-center/advantages/clean-energy.html>
+  there will be others
+* Thermal: find better resource
+  <https://spectrum.ieee.org/energywise/telecom/internet/iceland-data-center-paradise>
+* Recyclers:
+  <https://www.datacenterknowledge.com/data-centers-that-recycle-waste-heat>
+
+Whot other aspects exist:
+
+Energy Storage:
+
+* Batteries
+* Store energy in other forms
+
+## Sociatal Shift Towards Renewables :o:
+
+The data center as example.
+
+Government efforts to support renewable in benefit of the society:
+
+* Germany
+* China
+* Island
+* Coorperations: Google, AWS, IBM, ...
+
+Everyone is doing it.
+
+See also *<https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>

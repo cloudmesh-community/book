@@ -57,12 +57,13 @@ test:
 	echo $(INDEX)
 
 # --filter pandoc-mustache
-MARKDOWN-OPTIONS=--verbose  $(MERMAID)  --filter pandoc-fignos -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml 
+MARKDOWN-OPTIONS=--verbose  $(MERMAID)  --filter pandoc-crossref -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml 
+##MARKDOWN-OPTIONS=--verbose  $(MERMAID)  --filter pandoc-fignos -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml 
 #MARKDOWN-OPTIONS=--verbose -f IncludeFilter $(MERMAID) --filter pandoc-fignos -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
 CSL=--csl=template/ieee-with-url.csl
 FORMAT=--toc --number-sections
 FONTS=--epub-embed-font='fonts/*.ttf'
-BIB=--bibliography references.bib
+BIB=--metadata link-citations=true --bibliography references.bib
 # can be removed to avoid duplicate as already appeared in metadata.txt
 #CSS=--css=template/epub.css
 RESOURCE=--resource-path=$(IMAGE_DIRS)
@@ -140,6 +141,7 @@ endif
 	make -f Makefile index
 	#cd dest; cp all.md all-in.md
 	#cd dest; pandoc all-in.md --filter=abbrevs.py -o all.md
+	perl -pi -e 's/\+@/@/g' all.md
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 	cp dest/$(FILENAME).epub ..
 
@@ -248,6 +250,6 @@ publish: epub
 	git push
 
 index:
-	cd dest; pandoc -o chapters/index.json $(INDEX)
-	cd dest; pandoc-index chapters/index
-	echo "\n" >> dest/chapters/index.md
+	#cd dest; pandoc -o chapters/index.json $(INDEX)
+	#cd dest; pandoc-index chapters/index
+	#echo "\n" >> dest/chapters/index.md

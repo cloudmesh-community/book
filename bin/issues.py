@@ -46,6 +46,20 @@ if __name__ == '__main__':
 
     count = 0
 
+    def labels(issue):
+        labelstring = ""
+        try:
+            labels = issue['labels']
+            for label in labels:
+                labelstring = labelstring + label['name'] + ","
+
+            if(len(labels) > 0):
+                labelstring = labelstring[:-1]
+        except:
+            pass
+
+        return labelstring
+
     if len(issues) > 0:
 
         if '--markdown' not in arguments:
@@ -54,13 +68,13 @@ if __name__ == '__main__':
             print()
             print("\\begin{center}")    
             print("\\begin{longtable}{llll}")
-            print ("Count &  Number & Title & Assignee\\\\")
+            print ("Count & Number & Title & Assignee & Labels\\\\")
             print ("\hline")
             for issue in issues:
                 count = count + 1
                 issue['count'] = count
                 if issue['state'] == 'open':
-                    line = "{count} & \href{{{html_url}}}{{{number}}} & {title} & ".format(**issue) + str(assignee(issue)) + "\\\\"
+                    line = "{count} & \href{{{html_url}}}{{{number}}} & {title} & ".format(**issue) + str(assignee(issue)) + " & " + str(labels(issue)) + "\\\\"
                     print (line)
             print("\\end{longtable}")
             print("\\end{center}")    
@@ -69,13 +83,13 @@ if __name__ == '__main__':
             print("")
             # print("# Github Issues")
             print()
-            print ("| Count | Number | Title | Assignee |")
+            print ("| Count | Number | Title | Assignee | Labels |")
             print ("| --- | --- | ---------------------------------------------------------------- | -------- |")            
             for issue in issues:
                 count = count + 1
                 issue['count'] = count
                 if issue['state'] == 'open':
-                    line = "| {count} | {number} | [{title}][i{number}] | ".format(**issue) + str(assignee(issue)) + "|"
+                    line = "| {count} | {number} | [{title}][i{number}] | ".format(**issue) + str(assignee(issue)) + " | " + str(labels(issue)) + " |"
                     print (line)
             print("")
 

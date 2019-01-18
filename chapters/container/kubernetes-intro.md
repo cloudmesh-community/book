@@ -43,7 +43,7 @@ Kubernetes is
 
 ![Kubernetes Containers [[Image Source]](https://d33wubrfki0l68.cloudfront.net/e7b766e0175f30ae37f7e0e349b87cfe2034a1ae/3e391/images/docs/why_containers.svg)](images/why-containers.png){#fig:k-containers}
 
-+@fig:k-containers shows a depiction of the container architecture.
+@fig:k-containers shows a depiction of the container architecture.
 
 
 
@@ -80,7 +80,7 @@ Deployments:
 
 ## Kubernetes Architecture
 
-The architecture of kubernets is shown in +@fig:k-arch.
+The architecture of kubernets is shown in @fig:k-arch.
 
 ![Kubernetes (Source: Google)](images/kubernetes.png){#fig:k-arch}
 

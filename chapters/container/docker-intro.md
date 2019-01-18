@@ -14,7 +14,7 @@ collaboration and innovation. An overview of docker is provided at
 
 ![Docker Containers [[Image Source]](https://www.docker.com/sites/default/files/Package%20software%40x2.png)](images/docker-container.png){#fig:docker-container}
 
-+@fig:docker-container shows how docker containers fit into the system
+@fig:docker-container shows how docker containers fit into the system
 ## Docker platform
 
 Docker provides users and developers with the tools and technologies that are
@@ -25,7 +25,7 @@ production.
 ## Docker Engine
 
 The Docker engine can be thought of as the core of the docker runtime. The 
-docker engine mainly provides 3 services. +@fig:engine-components-flow shows how 
+docker engine mainly provides 3 services. @fig:engine-components-flow shows how 
 the docker engine is composed.
 
 * A long running server which manages the containers
@@ -44,7 +44,7 @@ model. Docker clients communicate with the Docker server also known as the
 Docker daemon to request various resources and services. THe daemon manages 
 all the background tasks that need to be performed to complete client requests.
 Managing and distributing containers, running the containers, bulding 
-containers, etc. are responsibilities of the Docker daemon. +@fig:docker-arch
+containers, etc. are responsibilities of the Docker daemon. @fig:docker-arch
 shows how the docker architecture is setup. The client module and server can
 run either in the same machine or in separate machines. In the latter case 
 the communication between the client and server are done through the network.
@@ -58,7 +58,7 @@ the communication between the client and server are done through the network.
 
 In 2016 Docker Inc. surveyed over 500 Docker developers and operations
 experts in various phases of deploying container-based technologies. The
-result is available in the *The Docker Survey 2016* as seen in +@fig:docker-survey.
+result is available in the *The Docker Survey 2016* as seen in @fig:docker-survey.
 
 * <https://www.docker.com/survey-2016>
 
