@@ -46,8 +46,7 @@ Youtube certainly serving a significant number of users by 4.3Mil
 videos watched every minute. Naturally the numbers are averages over
 time.
 
-
-![Data Never Sleeps](images/data-never-sleeps-6.png [@www-image-data-never-sleeps-6]){#fig:data-never-sleeps}
+![Data Never Sleeps  [@www-image-data-never-sleeps-6]](images/data-never-sleeps-6.png){#fig:data-never-sleeps}
 
 A different source publishes what is happening on the internet in a
 minute, but we have been able to locate a version from 2018 (see @fig:internet-minutes-2018). While
