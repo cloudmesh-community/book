@@ -8,7 +8,7 @@ by setting up a key pair. This only has to be done once per user per
 project.
 
 Go to Project > Compute > Access & Security, then select the Key Pairs
-tab.
+tab. See @fig:key-pairs-tab
 
 ![Key Pairs Tab](images/Screen-Shot-2016-10-26-at-14-37-00.png){#fig:key-pairs-tab}
 
@@ -22,12 +22,12 @@ content of your SSH public key. Typically it will be at
 ~/.ssh/id_rsa.pub. On Mac OS X, you can run in a terminal:
  `cat ~/.ssh/id_rsa.pub  pbcopy`
 It copies the content of the public key to your copy/paste buffer. Then
-you can simply paste in the "Public Key" box.
+you can simply paste in the "Public Key" box. See @fig:public-key
 
 ![Public Key](images/Screen-Shot-2016-10-26-at-14-37-18.png){#fig:public-key}
 
 Then, click on the blue "Import Key Pair" button. This should show you
-the list of key pairs, with the one you just added.
+the list of key pairs, with the one you just added. See @fig:import-key-pair
 
 ![Import key pair](images/Screen-Shot-2016-10-26-at-14-37-52.png){#fig:import-key-pair}
 
@@ -35,7 +35,7 @@ For those already familiar with OpenStack, note that Security Groups are
 not functional on bare-metal. All instances ports are open to the
 Internet and any security group rule you add will not be respected.
 
-Now, go to the "Instances" panel.
+Now, go to the "Instances" panel. See @fig:vm-instances
 
 ![VM Instances](images/Screen-Shot-2016-10-26-at-14-39-56.png){#fig:vm-instances}
 
@@ -44,45 +44,45 @@ reservation in the Reservation box, pick an instance name (in this
 example my-first-instance) and in the Image Name list select our default
 environment named CC-CentOS7. If you have multiple key pairs registered,
 you need to select one in the "Access & Security" tab. Finally, click on
-the blue "Launch" button.
+the blue "Launch" button. See @fig:launch-a-vm
 
 ![Launch a VM](images/Screen-Shot-2016-10-26-at-14-41-08.png){#fig:launch-a-vm}
 
 The instance will show up in the instance list, at first in Build
 status. It takes a few minutes to deploy the instance on bare-metal
-hardware and reboot the machine.
+hardware and reboot the machine. See @fig:status-window-a
 
-![Status Window (a)](images/Screen-Shot-2016-10-26-at-15-53-31.png){#fig:status-window(a)}
+![Status Window (a)](images/Screen-Shot-2016-10-26-at-15-53-31.png){#fig:status-window-a}
 
 After a few minutes the instance should become in Active status and the
-Power State should be Running.
+Power State should be Running. See @fig:status-window-b
 
-![Status Window (b)](images/Screen-Shot-2016-10-26-at-16-22-38.png){#fig:status-window(b)}
+![Status Window (b)](images/Screen-Shot-2016-10-26-at-16-22-38.png){#fig:status-window-b}
 
 At this point the instance might still be booting: it might take a
 minute or two to actually be accessible on the network and accept SSH
 connections. In the meantime, you can attach a floating IP to the
 instance. Click on the "Associate Floating IP" button. You should get a
-screen like the one below:
+screen like the one below: See @fig:floating-ip
 
 ![Floating IP](images/Screen-Shot-2016-10-26-at-16-25-04.png){#fig:floating-ip}
 
 If there are no unused floating IP already allocated to your project,
 click on the + button. In the window that opens, select the ext-net pool
 if not already selected by default and click on the blue Allocate IP
-button.
+button. See @fig:allocate-the-ip
 
 ![Allocate the IP](images/Screen-Shot-2016-10-26-at-16-33-45-W05kOLQ.png){#fig:allocate-the-ip}
 
 You will be returned to the previous window. The correct value for "Port
 to be associated" should already be selected, so you only have to click
-on "Associate".
+on "Associate". See @fig:associate-the-ip
 
 ![Associate the IP](images/Screen-Shot-2016-10-26-at-16-25-10.png){#fig:associate-the-ip}
 
 This should send you back to the instance list, where you can see the
 floating IP attached to the instance (you may need to refresh your
-browser to see the floating IP).
+browser to see the floating IP). See @fig:status-ip-association
 
 ![Status of the IP Association](images/Screen-Shot-2016-10-26-at-16-26-54.png){#fig:status-ip-association}
 
@@ -97,8 +97,8 @@ this would be
 SSH will probably tell you:
 
     The authenticity of host }130.202.88.241
-    (130.202.88.241) cannot be established. RSA key fingerprint 
-    is 5b:ca:f0:63:6f:22:c6:96:9f:c0:4a:d8:5e:dd:fd:eb. 
+    (130.202.88.241) cannot be established. RSA key fingerprint
+    is 5b:ca:f0:63:6f:22:c6:96:9f:c0:4a:d8:5e:dd:fd:eb.
     Are you sure you want to continue connecting (yes/no)?
 
 Type yes and press Enter. You should arrive to a prompt like this one:
@@ -116,7 +116,7 @@ You can now check whether the resource matches its known description in
 the resource registry. For this, simply run: `sudo cc-checks -v`
 
 As of 03/30/2018, the cc-checks command may not work on the images in
-Chameleon cloud. You may have to ignore (not run) this command.
+Chameleon cloud. You may have to ignore (not run) this command. See @fig:cc-check-program
 
 ![cc-check program](images/cc-checks.png){#fig:cc-check-program}
 
