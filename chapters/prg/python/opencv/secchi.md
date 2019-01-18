@@ -5,7 +5,7 @@ developing within this class. The robot bot is actually measuring
 turbidity or water clarity. Traditionally this has been done with a
 Secchi disk. The use of the Secchi disk is as follows:
 
-1. Lower the Secchi disk into the water. 
+1. Lower the Secchi disk into the water.
 2. Measure the point when you can no longer see it
 3. Record the depth at various levels and plot in a geographical 3D
    map
@@ -25,11 +25,10 @@ of the disk.
 
 To show case how such a disk looks like we refer to the image
 showcasing different Secchi disks. For our purpose the black-white
-contrast Secchi disk works well.
+contrast Secchi disk works well. See @fig:secchi-field-test-disk
 
 
-![**Figure:** Secchi disk types. A marine style on the left and
-the freshwater version on the right wikipedia.](images/secchi-field-test/disk.png)
+![Secchi disk types. A marine style on the left and the freshwater version on the right wikipedia.](images/secchi-field-test/disk.png){#fig:secchi-field-test-disk}
 
 More information about Secchi Disk can be found at:
 
@@ -71,7 +70,7 @@ installs to many other things.
 Record the video on the robot
 
 We have actually done this for you and will provide you with images
-and videos if you are interested in analyzing them.
+and videos if you are interested in analyzing them. See @fig:secchi-histogram
 
 ## Step 2: Analyse the images from the Video
 
@@ -80,10 +79,10 @@ For now we just selected 4 images from the video
     import cv2
     import matplotlib.pyplot as plt
 
-    img1 = cv2.imread('secchi/secchi1.png') 
-    img2 = cv2.imread('secchi/secchi2.png') 
-    img3 = cv2.imread('secchi/secchi3.png') 
-    img4 = cv2.imread('secchi/secchi4.png') 
+    img1 = cv2.imread('secchi/secchi1.png')
+    img2 = cv2.imread('secchi/secchi2.png')
+    img3 = cv2.imread('secchi/secchi3.png')
+    img4 = cv2.imread('secchi/secchi4.png')
 
     figures = []
     fig = plt.figure(figsize=(18, 16))
@@ -107,12 +106,15 @@ For now we just selected 4 images from the video
     print("Second column = histogram of colors in image")
     print("Third column = histogram of all values")
 
-    plt.show() 
+    plt.show()
 
-![**Figure:** Histogram](images/secchi/output_9_1.png)
+![Histogram](images/secchi/output_9_1.png){#fig:secchi-histogram}
 
 
 ### Image Thresholding
+
+See @fig:secchi-output_13_0, @fig:secchi-output_14_0, @fig:secchi-output_15_0, @fig:secchi-output_16_0
+
 
     def threshold(img):
         ret,thresh = cv2.threshold(img,150,255,cv2.THRESH_BINARY)
@@ -121,23 +123,23 @@ For now we just selected 4 images from the video
 
     threshold(img1)
 
-![**Figure:** Threshold 1](images/secchi/output_13_0.png)
+![Threshold 1](images/secchi/output_13_0.png){#fig:secchi-output_13_0}
 
     threshold(img2)
 
-![**Figure:** Threshold 2](images/secchi/output_14_0.png)
+![Threshold 2](images/secchi/output_14_0.png){#fig:secchi-output_14_0}
 
     threshold(img3)
 
-![**Figure:** Threshold 3](images/secchi/output_15_0.png)
+![Threshold 3](images/secchi/output_15_0.png){#fig:secchi-output_15_0}
 
     threshold(img4)
 
-![**Figure:** Threshold 4](images/secchi/output_16_0.png)
+![Threshold 4](images/secchi/output_16_0.png){#fig:secchi-output_16_0}
 
 ### Edge Detection
 
-Edge detection using Canny edge detection algorithm
+See @fig:secchi-output_19_0, @fig:secchi-output_20_0, @fig:secchi-output_21_0, @fig:secchi-output_22_0, @fig:secchi-output_26_1. Edge detection using Canny edge detection algorithm
 
     def find_edge(img):
         edges = cv2.Canny(img,50,200)
@@ -146,23 +148,23 @@ Edge detection using Canny edge detection algorithm
 
     find_edge(img1)
 
-![**Figure:** Edge Detection 1](images/secchi/output_19_0.png)
+![Edge Detection 1](images/secchi/output_19_0.png){#fig:secchi-output_19_0}
 
     find_edge(img2)
 
-![**Figure:** Edge Detection 2](images/secchi/output_20_0.png)
+![Edge Detection 2](images/secchi/output_20_0.png){#fig:secchi-output_20_0}
 
     find_edge(img3)
 
-![**Figure:** Edge Detection 3](images/secchi/output_21_0.png)
+![Edge Detection 3](images/secchi/output_21_0.png){#fig:secchi-output_21_0}
 
     find_edge(img4)
 
-![**Figure:** Edge Detection 4](images/secchi/output_22_0.png)
+![Edge Detection 4](images/secchi/output_22_0.png){#fig:secchi-output_22_0}
 
 ### Black and white
 
     bw1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
     plt.imshow(bw1, cmap='gray')
 
-![**Figure:** Back White conversion](images/secchi/output_26_1.png)
+![Back White conversion](images/secchi/output_26_1.png){#fig:secchi-output_26_1}
