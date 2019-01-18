@@ -449,7 +449,7 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as
 > the date when the PUE was reported.
 
-### Hot-Cold Aisle :o: :question:
+### Hot-Cold Aisle
 
 To understand hot-cold aisles, one must take a brief foray into the
 realm of physics and energy. Specifically, understanding how a
