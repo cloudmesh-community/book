@@ -94,7 +94,7 @@ Now you can use:
     import matplotlib.pyplot as plt
     plt.imshow(img)
 
-which results in +@fig:opencv-output_5_1
+which results in @fig:opencv-output_5_1
 
 ![Image display](images/opencv/output_5_1.png){#fig:opencv-output_5_1}
 
@@ -109,7 +109,7 @@ Scaling (resizing) the image relative to different axis
                      interpolation=cv2.INTER_CUBIC)
     plt.imshow(res)
 
-which results in +@fig:opencv-output_7_1
+which results in @fig:opencv-output_7_1
 
 ![Scaling and rotation](images/opencv/output_7_1.png){#fig:opencv-output_7_1}
 
@@ -122,7 +122,7 @@ Rotation of the image for an angle of t
 
     plt.imshow(dst)
 
-which results in +@fig:opencv-output_9_1
+which results in @fig:opencv-output_9_1
 
 ![image](images/opencv/output_9_1.png){#fig:opencv-output_9_1}
 
@@ -141,7 +141,7 @@ which results in +@fig:opencv-output_11_1
     plt.subplot(1,2,1), plt.imshow(img2, cmap='gray')
     plt.subplot(1,2,2), plt.imshow(thresh, cmap='gray')
 
-which results in +@fig:opencv-output_13_1
+which results in @fig:opencv-output_13_1
 
 ![Image Thresholding](images/opencv/output_13_1.png){#fig:opencv-output_13_1}
 
@@ -154,7 +154,7 @@ Edge detection using Canny edge detection algorithm
     plt.subplot(121),plt.imshow(img2,cmap = 'gray')
     plt.subplot(122),plt.imshow(edges,cmap = 'gray')
 
-which results in +@fig:opencv-output_15_1
+which results in @fig:opencv-output_15_1
 
 ![Edge detection](images/opencv/output_15_1.png){#fig:opencv-output_15_1}
 
