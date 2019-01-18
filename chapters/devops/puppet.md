@@ -38,16 +38,15 @@ code is pushed from centralized server to nodes whereas in pull
 configuration nodes pulls infrastructure as code from central server
 as shown in @fig:InfrastructureAsCode.
 
-![Infrastructure As Code](Images/IAC.jpg){#fig:InfrastructureAsCode}
+![Infrastructure As Code [hid-sp18-523-puppetimages]](Images/IAC.jpg){#fig:InfrastructureAsCode}
 
-[hid-sp18-523-puppetimages]
 
 Puppet uses push and pull configuration in centralized manner 
 as shown in @fig:push-pull-configImage.
 
-![push-pull-config Image](Images/push-pull-configuration.jpg){#fig:push-pull-configImage}
+![push-pull-config Image [hid-sp18-523-puppetimages]](Images/push-pull-configuration.jpg){#fig:push-pull-configImage}
 
-[hid-sp18-523-puppetimages]
+
 
 Another popular infrastructure tool is Ansible. It does not have
 master and client nodes. Any node in Ansible can act as executor.  Any
@@ -72,16 +71,12 @@ infrastructure.
 * nodes(puppet agents) sends information(for e.g IP, hardware detail,
   network etc.) to master. Master stores such information in manifest
   file.
-
 * Master node compiles catalog file containing configuration
   information that needs to be implemented on agent nodes.
-
 * Master pushes catalog to puppet agent nodes for implementing  
   configuration.
-
 * Client nodes send back updated report to Master. Master updates its
   inventory.
-
 * All exchange between master and agent is secured through SSL
   encryption (Refer to Puppet Master Slave Connection figure below)
 
@@ -141,7 +136,7 @@ mid size organizations[hid-sp18-523-mono].
 
 `pe.conf` configuration file needs to be specified in order to install
 Puppet Enterprise in text mode. This file contains parameters and
-values for installing , upgrading and configuring Puppet.
+values for installing, upgrading and configuring Puppet.
 
 Some important parameters that can be specified in 
 `pe.conf` file are
@@ -196,10 +191,9 @@ puppet agent `-t`
 Compared to monolithic installation split installation type
 can manage large infrastucture that requires more than 20,000
 nodes.  In this type of installation different components of 
-Puppet Enterprise ( master, PuppetDB and Console ) are installed
+Puppet Enterprise (master, PuppetDB and Console) are installed
 on different nodes. This installation type is recommended for
-organizations with large infrastructure needs[hid-sp18-523-split]. 
-
+organizations with large infrastructure needs [hid-sp18-523-split]. 
 
 In this type of installation, we need to install componenets in 
 specific order. First master then puppet db followed by console.
@@ -228,7 +222,7 @@ file, we run command without `-c` flag
 $ sudo ./puppet-enterprise-installer
 ```
 
-Third, we select text-mode when prompted. `pe.conf` file will be opened
+Third, we select text-mode when prompted. `pe.conf` file will be opened.
 
 Fourth, we change master node related configuration parameters such as
 host name
