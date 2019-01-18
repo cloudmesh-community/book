@@ -7,6 +7,7 @@ MAINTAINER Gregor von Laszewski <laszewski@gmail.com>
 
 #RUN yes | pacman -Sy cc
 #RUN yes | pacman -Sy yy
+RUN yes | pacman -Sy gcc
 RUN yes | pacman -Syu wget
 RUN yes | pacman -Sy curl
 RUN yes | pacman -Sy rsync
