@@ -65,7 +65,7 @@ and the result is written to a new image.
     %matplotlib inline
     import cv2
 
-    img = cv2.imread('images/opencv/4.2.01.tiff') 
+    img = cv2.imread('images/opencv/4.2.01.tiff')
 
 The image was downloaded from USC standard database:
 
@@ -94,9 +94,9 @@ Now you can use:
     import matplotlib.pyplot as plt
     plt.imshow(img)
 
-which results in
+which results in +@fig:opencv-output_5_1
 
-![**Figure:** Image display](images/opencv/output_5_1.png)
+![Image display](images/opencv/output_5_1.png){#fig:opencv-output_5_1}
 
 ### Scaling and Rotation
 
@@ -104,14 +104,14 @@ Scaling (resizing) the image relative to different axis
 
     res = cv2.resize(img,
                      None,
-                     fx=1.2, 
-                     fy=0.7, 
+                     fx=1.2,
+                     fy=0.7,
                      interpolation=cv2.INTER_CUBIC)
     plt.imshow(res)
 
-which results in
+which results in +@fig:opencv-output_7_1
 
-![**Figure:** Scaling and rotation](images/opencv/output_7_1.png)
+![Scaling and rotation](images/opencv/output_7_1.png){#fig:opencv-output_7_1}
 
 Rotation of the image for an angle of t
 
@@ -122,18 +122,18 @@ Rotation of the image for an angle of t
 
     plt.imshow(dst)
 
-which results in
+which results in +@fig:opencv-output_9_1
 
-![image](images/opencv/output_9_1.png)
+![image](images/opencv/output_9_1.png){#fig:opencv-output_9_1}
 
 ### Gray-scaling
 
     img2 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     plt.imshow(img2, cmap='gray')
 
-which results in
+which results in +@fig:opencv-output_11_1
 
-![**Figure:** Gray sacling](images/opencv/output_11_1.png)
+![Gray sacling](images/opencv/output_11_1.png){#fig:opencv-output_11_1}
 
 ### Image Thresholding
 
@@ -141,9 +141,9 @@ which results in
     plt.subplot(1,2,1), plt.imshow(img2, cmap='gray')
     plt.subplot(1,2,2), plt.imshow(thresh, cmap='gray')
 
-which results in
+which results in +@fig:opencv-output_13_1
 
-![**Figure:** Image Thresholding](images/opencv/output_13_1.png)
+![Image Thresholding](images/opencv/output_13_1.png){#fig:opencv-output_13_1}
 
 ### Edge Detection
 
@@ -154,9 +154,9 @@ Edge detection using Canny edge detection algorithm
     plt.subplot(121),plt.imshow(img2,cmap = 'gray')
     plt.subplot(122),plt.imshow(edges,cmap = 'gray')
 
-which results in
+which results in +@fig:opencv-output_15_1
 
-![**Figure:** Edge detection](images/opencv/output_15_1.png)
+![Edge detection](images/opencv/output_15_1.png){#fig:opencv-output_15_1}
 
 Additional Features
 -------------------
