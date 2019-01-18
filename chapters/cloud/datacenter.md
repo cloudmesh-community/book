@@ -47,9 +47,7 @@ videos watched every minute. Naturally the numbers are averages over
 time.
 
 
-![Data Never Sleeps](images/data-never-sleeps-6.png){#fig:data-never-sleeps}
-
-Source: <https://www.domo.com/blog/wp-content/uploads/2018/06/18-domo-data-never-sleeps-6.png>
+![Data Never Sleeps](images/data-never-sleeps-6.png [@www-image-data-never-sleeps-6]){#fig:data-never-sleeps}
 
 A different source publishes what is happening on the internet in a
 minute, but we have been able to locate a version from 2018 (see @fig:internet-minutes-2018). While
