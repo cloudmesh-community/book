@@ -90,14 +90,14 @@ to your copy of the repo i Github, not the `cloudmesh/technologies` repo.
 ## Creating a pull request
 
 Once we have changes pushed, you can go into your repository in Github to
-create a pull request. As seen in +@#fig:button-pullrequest, you have an button named
+create a pull request. As seen in @#fig:button-pullrequest, you have an button named
 `Pull request`
 
 ![Button Pull request](images/git_pull_front.png){#fig:button-pullrequest}
 
 
 Once you click on that button you will be taken to a page to create the
-pull request, which will look similar to +@fig:pullrequest.
+pull request, which will look similar to @fig:pullrequest.
 
 ![Create a pull request](images/git_pull_view.png){#fig:pullrequest}
 

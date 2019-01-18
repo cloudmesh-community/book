@@ -109,14 +109,14 @@ Go to the AWS Console (ensure that the URL references your default region)
 Select the "Security configurations" and click "Create". Give a meaningful name like: "KerberosSecurityConfiguration". Then select "Kerberos" under "Authentication" and click "Create".
 
 <br><br>
-+@fig:aws-emr-1
+@fig:aws-emr-1
 [@fa18-516-22-AWS-EMR-1]
 
 ![Set up Kerberos 1 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-1.png){#fig:aws-emr-1}
 <br><br>
 
 <br><br>
-+@fig:aws-emr-2
+@fig:aws-emr-2
 [@fa18-516-22-AWS-EMR-1]
 
 ![Set up Kerberos 2 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-2.png){#fig:aws-emr-2}
@@ -131,7 +131,7 @@ Go to the AWS Console (ensure that the URL references your default region)
 Click "Create cluster"
 
 <br><br>
-+@fig:aws-emr-3
+@fig:aws-emr-3
 [@fa18-516-22-AWS-EMR-1]
 
 ![Set up EMR 1 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-3.png){#fig:aws-emr-3}
@@ -144,7 +144,7 @@ Click "Create cluster"
 * Select your EC2 key Pair
 
 <br><br>
-+@fig:aws-emr-4
+@fig:aws-emr-4
 [@fa18-516-22-AWS-EMR-1]
 
 ![Set up EMR 2 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-4.png){#fig:aws-emr-4}
@@ -154,7 +154,7 @@ Click "Create cluster"
 * Click "Create cluster"
 
 <br><br>
-+@fig:aws-emr-4
+@fig:aws-emr-4
 [@fa18-516-22-AWS-EMR-1]
 
 ![Set up EMR 3 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-5.png){#fig:aws-emr-5}
@@ -164,7 +164,7 @@ Click "Create cluster"
 You can view the status of your cluster or termiate the cluster by naviagting to >Services>EMR>Clusters within the AWS Console.
 
 <br><br>
-+@fig:aws-emr-5
+@fig:aws-emr-5
 [@fa18-516-22-AWS-EMR-1]
 
 ![Set up EMR 4 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-6.png){#fig:aws-emr-5}
@@ -261,7 +261,7 @@ Go to the AWS Console (ensure that the URL references your default region)
 Navigate to the S3 bucket and folder you specified for the output.
 
 <br><br>
-+@fig:aws-emr-6
+@fig:aws-emr-6
 [@fa18-516-22-AWS-EMR-1]
 
 ![Set up EMR 5 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-7.png){#fig:aws-emr-6}

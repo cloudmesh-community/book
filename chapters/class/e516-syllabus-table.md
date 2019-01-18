@@ -8,7 +8,7 @@ Legend markings
 :o: Warning the dates may change not yet correct.
 
 * Semester Start for this class 01/07
-* Semester end for this class 05/03, all assignments are due 2 weeks before semester end.
+* Semester end for this class 05/03, all assignmrents are due 2 weeks before semester end.
 
 ## Proposed Lecture Timeline
 
@@ -41,7 +41,7 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#sec:cmd5) |
 | :white_check_mark: | 01/14    |         |                    | - [OpenCV](#sec:opencv) |
 | :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#sec:secchi-disk) |
-| :white_check_mark: | 01/21    |         |                    | [Data Center](#sec:data-center) |
+| :white_check_mark: | 01/18    |         |                    | [Data Center](#sec:data-center) |
 | :white_check_mark: | 01/21    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#sec:nist-bdra) |
 | :white_check_mark: | 01/21    |         |                    | - [Cloud Architectures](#sec:cloud-architectures) |
 | :white_check_mark: | 01/28   | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#sec:virtualization) |
@@ -65,9 +65,10 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud) |
 | :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#sec:Github-REST) |
 | :white_check_mark: | 02/11    |         |                    | - [REST Services](#sec:rest) |
-| :white_check_mark: | 02/11    |         |                    | - [Rest Services with OpenAPI](#sec:rest-services-with-openapi) |
 | :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#sec:openapi-spec) |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Codegen](#sec:openapi-codegen) |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI REST Services with Swagger](#sec:swagger) |
+| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Python Service via Introspection](#sec:openapi-introspection) |
+| :white_check_mark: | 02/11    |         |                    | - [REST Service Generation with OpenAPI](#sec:openapi-codegen) |
 | :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :o:                | 02/18    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
 | :white_check_mark: | 02/25    | 10      | Messaging          | Messaging |

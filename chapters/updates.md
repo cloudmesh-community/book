@@ -21,6 +21,12 @@ for a complete list of changes.
   Workbreakdown section requirements for better
   interaction in discussions with TAs throughout the semester.
 
+* Jan 16, 2019: Added the OpenAPI server based on yaml file
+  introspection in a [Section](#sec:openapi-introspection)
+
+* Jan 18, 2019 A section on how to do equation in the book was added
+(see @sec:equations).
+
 ## Unpublished updates :o:
 
 Unpublished updates have not yet been tested, but have been started to

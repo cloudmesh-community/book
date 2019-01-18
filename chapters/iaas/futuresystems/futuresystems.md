@@ -1,6 +1,4 @@
-FutureSystems
-=============
-
+# FutureSystems
 
 This section gives an overview of the FutureSystems that are available
 as part of the DSC infrastructure. We cover the creation of
@@ -165,7 +163,7 @@ compute nodes consist of SuperMicro X11DPT-PS servers with 2 24-core
 Intel(R) Xeon(R) Platinum 8160 2.10GHz processors, 256GB of memory, 8TB
 of local disk storage, 400GB of NVMe storage, and a Mellanox ConnectX-3
 InfiniBand FDR 56GT/s adapter for high bandwidth, low-latency MPI
-applications. Operating System: RedHat Linux 7.4 (see +@fig:victor)
+applications. Operating System: RedHat Linux 7.4 (see @fig:victor)
 
 
 ![Cabling of Victor](images/victor.jpg){#fig:victor}
