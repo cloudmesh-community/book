@@ -5,16 +5,16 @@ FROM base/archlinux
 
 MAINTAINER Gregor von Laszewski <laszewski@gmail.com>
 
-RUN yes | pacman -S wget
-RUN yes | pacman -S curl
-RUN yes | pacman -S rsync
-RUN yes | pacman -S git
-RUN yes | pacman -S cc
-RUN yes | pacman -S yy
-RUN yes | pacman -S graphviz
-RUN yes | pacman -S python
-RUN yes | pacman -S python-pip
-RUN yes | pacman -S make
+#RUN yes | pacman -Sy cc
+#RUN yes | pacman -Sy yy
+RUN yes | pacman -Syu wget
+RUN yes | pacman -Sy curl
+RUN yes | pacman -Sy rsync
+RUN yes | pacman -Sy git
+RUN yes | pacman -Sy graphviz
+RUN yes | pacman -Sy python
+RUN yes | pacman -Sy python-pip
+RUN yes | pacman -Sy make
 
 RUN yes | pacman -S pandoc
 RUN yes | pacman -S pandoc-citeproc
