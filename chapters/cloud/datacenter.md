@@ -449,7 +449,7 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as
 > the date when the PUE was reported.
 
-### Hot-Cold aisle :o: :question:
+### Hot-Cold Aisle :o: :question:
 
 To understand hot-cold aisles, one must take a brief foray into the
 realm of physics and energy. Specifically, understanding how a
@@ -478,6 +478,7 @@ server cooling - warmer air takes heat away from wamer surfaces slower
 than cooler air:
 
 ![Heat Transfer Example](https://latex.codecogs.com/gif.latex?68.2=8.47*0.23*(100-65))
+
 ![Heat Transfer Example](https://latex.codecogs.com/gif.latex?34.1=8.47*0.23*(100-82.5))
 
 To combat this, engineers developed the idea of designating alternating aisles
