@@ -36,11 +36,11 @@ architectures:
 
 ### Mainframe Computing
 
-Mainframe computing is using the larger and more reliable computers, 
-like IBM System z9, to run the critical applications, bulk data processing, 
+Mainframe computing is using the larger and more reliable computers,
+like IBM System z9, to run the critical applications, bulk data processing,
 enterprise resource planning and business transaction procesings.
 
-Mainframe Computing refers to 
+Mainframe Computing refers to
 
 :o: This section can be contributed by a student
 
@@ -58,14 +58,14 @@ PC Computing refers to
 
 ### Intranet and Server Computing
 
-We refer to Intranet and Server Computing as an environment in which 
+We refer to Intranet and Server Computing as an environment in which
 
 > the computers are part of an private network, also called, intranet,
 > that is contained within an enterprise and later on also
 > homes. Intranets are able to connect many local resources within a
 > Local but also a wide area network
 
-### Grid Computing Computing 
+### Grid Computing Computing
 
 and its evolution is defined in
 [The Grid-Idea and Its Evolution](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.61.196&rep=rep1&type=pdf). The
@@ -136,7 +136,7 @@ Cloud Computing refers to
 We have provided a lecture about the definition of cloud computing
 previously
 
-### Mobile Computing 
+### Mobile Computing
 
 
 Mobile Computing refers to
@@ -174,7 +174,7 @@ Edge Computing refers to
 
 ### Fog Computing
 
-FoG Computing refers to 
+FoG Computing refers to
 
 > computing conducted in-between the cloud and the edge devices. This
 > could be for example part of a smart network, that hosts a small set
@@ -285,7 +285,7 @@ architecture. A Nice visual representation is provided in +@fig:nist-cloud-arch.
 
 ## Cloud Security Alliance Reference Architecture
 
-Founded in 2008, the Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption. 
+Founded in 2008, the Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption.
 
 This is a great organization to lean on if you have open questions about architecture and the best way to secure it.  There are working groups that look across 38 domains of Cloud Security. These groups meet actively and they cover current topics, opportunities and ask relevant questions.  It is a great place to networks with experts in the field and ask questions specific to your company or academic project.  You may also find an answer to your question in the white papers, reports, tools, trainings, and services they have available.
 
@@ -305,7 +305,8 @@ administration and auditability.
 * The architecture must address and support multiple levels of protection, including network, operating
 system, and application security needs.
 
-An overview of the architecture is shown in the diagram from the Cloud Security Alliance.
+An overview of the architecture is shown in the diagram from the Cloud Security Alliance. See +@fig:csa-arch
+
 ![Cloud Security Alliance Reference Architecture [Source](https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf)](images/csa-architecture.png){#fig:csa-arch}
 
 
@@ -347,7 +348,7 @@ hiding much of the internals to the user. A portal and application
 services have successfully demonstrated the feasibility of this
 approach (see +@fig:cloudmesh-arch).
 
-![](images/arch-cloudmesh.png){#fig:cloudmesh-arch}
+![Cloudmesh Arch](images/arch-cloudmesh.png){#fig:cloudmesh-arch}
 
 Within the hour e516 class we will be developing a modern version of
 cloudmesh from the ground up by only using python 3 as implementation
