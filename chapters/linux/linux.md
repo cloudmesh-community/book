@@ -293,7 +293,7 @@ Makefiles can easily be accessed also on windows while installing
 gitbash. Please reed to the internet or search in this handbook for more
 information about gitbash.
 
-## CHMOD
+## chmod
 
 The chmod command, first seen in AT&T Unix version 1, is a shortening of ‘change mode’ and changes the access permissions 
 for a given file system object(s). It uses the following syntax:
