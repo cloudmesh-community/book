@@ -46,7 +46,12 @@ Youtube certainly serving a significant number of users by 4.3Mil
 videos watched every minute. Naturally the numbers are averages over
 time.
 
+<<<<<<< HEAD
 ![Data Never Sleeps  [@www-image-data-never-sleeps-6]](images/data-never-sleeps-6.png){#fig:data-never-sleeps}
+=======
+
+![Data Never Sleeps @www-image-data-never-sleeps-6](images/data-never-sleeps-6.png){#fig:data-never-sleeps}
+>>>>>>> 2a98bfc71e64534556a44e4caa96ce4c53eb4816
 
 A different source publishes what is happening on the internet in a
 minute, but we have been able to locate a version from 2018 (see @fig:internet-minutes-2018). While
@@ -446,7 +451,7 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as
 > the date when the PUE was reported.
 
-### Hot-Cold Aisle :wave: 
+### Hot-Cold Aisle :wave:
 
 To understand hot-cold aisles, one must take a brief foray into the
 realm of physics and energy. Specifically, understanding how a
@@ -458,7 +463,7 @@ $$q=h_{c}A(t_{a}-t_{s})$${#eq:heat-transfer}
 Here, *q* is the amount of heat transferred for a given amount of time.
 For this example, we'll calculate it as W/hour as that is, conveniently,
 how energy is billed. Air moving at a moderate speed will transfer
-approximately 8.47 Watts per Square Foot per Hour. A 1U server is 
+approximately 8.47 Watts per Square Foot per Hour. A 1U server is
 19 inches wide and 1.75 inches tall. Multiplying the two values gives us
 a cross section of 33.25 inches, or 0.23 square feet. Plugging these values
 into our equation above gives us:
