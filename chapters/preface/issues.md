@@ -28,7 +28,7 @@ Assignees can change the summary to done. We will experiment with possibly addit
 .<div class="smalltable">\n
 
 
-| Count | Number | Title | Assignee | Labels |
+|  |  | Title | Assignee | Labels |
 | --- | --- | ---------------------------------------------------------------- | -------- |
 | 1 | 285 | [issue labels in book][i285] | pulasthi | bug |
 | 2 | 284 | [Test new install-ubuntu.sh script][i284] | pulasthi | bug |
