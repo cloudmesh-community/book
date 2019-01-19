@@ -80,8 +80,8 @@ command.
 | less *a*                          | print paged content of file *a*   |
 | head -5 *a*                       | Display first 5 lines of file *a* |
 | tail -5 *a*                       | Display last 5 lines of file *a*  |
-| `du -hs .`                        | show in human readable form the space used by the current directory |
-| `df -h`                           | show the details of the disk file system |
+| du -hs .                          | show in human readable form the space used by the current directory |
+| df -h                             | show the details of the disk file system |
 | wc *filename*                     | counts the word in a file         |
 | sort *filename*                   | sorts the file                    |
 | uniq *filename*                   | displays only uniq entries in the file |
