@@ -247,6 +247,7 @@ issues:
 	echo ".</div>\n" >> /tmp/issues.md
 	echo  "\n\n\n\n" >> /tmp/issues.md
 	cp /tmp/issues.md ../chapters/preface/issues.md
+	cp ../chapters/preface/issues.md dest/chapters/preface/issues.md
 
 publish: epub
 	cp dest/$(FILENAME).epub ..

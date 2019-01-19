@@ -83,7 +83,7 @@ if __name__ == '__main__':
             print("")
             # print("# Github Issues")
             print()
-            print ("| Count | Number | Title | Assignee | Labels |")
+            print ("|  |  | Title | Assignee | Labels |")
             print ("| --- | --- | ---------------------------------------------------------------- | -------- |")            
             for issue in issues:
                 count = count + 1
