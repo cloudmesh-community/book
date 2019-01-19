@@ -14,6 +14,36 @@ $ pandoc --version
 $ python --version
 ```
 
+However the easiest way is to use our docker container.
+
+## Ubuntu requirements :o:
+
+In case you use containers in ubuntu we recommend that you use the
+docker container to compile the book as discussed in
+@sec:docker-create-book.
+
+:o: The next is yet untested
+
+In case you like to use the ubuntu system directly, you can download a
+script that installs the needed software.
+
+You will first have to download the script with
+
+```bash
+$ wget https://raw.githubusercontent.com/cloudmesh-community/book/master/install-ubuntu.sh
+```
+
+Than you can run this [script](https://raw.githubusercontent.com/cloudmesh-community/book/master/install-ubuntu.sh) with
+
+```bash
+$ sh install-ubuntu.sh
+```
+
+:warning: please note that we have not yet tested this and are looking
+for feedback and improvements to the `install-ubuntu.sh` script.
+
+Once the software is installed you can scip to @sec:create-book
+
 ## OSX Requirements
 
 The easiest way to create a system that can compile the book on macOS,
@@ -40,12 +70,6 @@ $ git clone https://github.com/cloudmesh-community/book.git
 cd book
 ```
 
-To create the image you can use
-
-```bash
-$ make image
-```
-
 To open an interactive shell into the image you say
 
 ```bash
@@ -60,27 +84,12 @@ pandoc-index at this time in our docker image. If you like to
 contribute them, please try it and make a pull request once you got
 them to work. 
 
-
-## Ubuntu requirements :o: temporarily unavailable
-
-On ubuntu you can use the following commands:
+In case you want to create or recreate the image from our
+[Dockerfile](https://github.com/cloudmesh-community/book/blob/master/Dockerfile)
+(which is likely not necessary, you can use the command
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install graphviz
-$ wget https://hackage.haskell.org/package/pandoc-2.2.3.2/pandoc-2.2.3.2.tar.gz
-$ git clone https://github.com/jgm/pandoc-citeproc.git
-$ wget -qO- https://get.haskellstack.org/ | sh
-$ tar xvzf pandoc-2.2.3.2.tar.gz
-$ cd pandoc-2.2.3.2
-$ stack setup
-$ stack install
-$ cd ..
-$ cd pandoc-citeproc
-$ stack setup
-$ stack install
-$ npm install --global mermaid-filter
-$ npm install --global pandoc-index
+$ make image
 ```
 
 ## Creating a book {#sec:create-book}
