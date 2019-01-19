@@ -1,13 +1,17 @@
 #!/usr/bin/env python
-from __future__ import print_function
 import os
 import sys
+import subprocess
+
+r = str(subprocess.check_output(['git', 'log', '-1'])).split('\\n')
 
 print("# Version")
 print()
-sys.stdout.flush()
-os.system('git log | fgrep "Date:" | head -n 1')
-sys.stdout.flush()
+
+for line in r:
+    if "Date:" in line:
+        print (line)
 
 print()
+
 

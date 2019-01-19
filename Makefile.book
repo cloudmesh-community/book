@@ -100,8 +100,14 @@ ifeq (,$(wildcard dest/chapters/images/penguin.jpg))
 endif
 
 prepare: generateimages version authors destination chapterlist references todo index
-	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
-	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
+	echo "This document can be downloaded from" >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
+	echo "* <https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>" >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
 
 bibtex: bibtex-duplicate bibtex-cat bibtex-error bibtex-datamodel
 
