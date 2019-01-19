@@ -88,7 +88,7 @@ good to keep in mind that monetary charge for function execution
 increases with the amount of memory that is specified for the
 function.
 
-## Understanding the free Tier 
+## Understanding the free Tier
 
 If new users want to experiment with AWS lambda, AWS does provide a
 free tier for AWS Lambda, which include 1 million function invocations
@@ -97,7 +97,7 @@ in the AWS docs
 [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/).
 
 :o: use also bibtex
- 
+
 ## Writing your fist Lambda function
 
 With the GUI interface it is relatively easy to try out your first
@@ -140,8 +140,8 @@ automatically deploy them using AWS CodePipeline and AWS CodeBuild.
 For more information, see Deploying Lambda-based Applications.
 
 There are development groups or companies mainly startups, where they want
-to just focus on their application development without wanting to care about 
-their infrastructure and they also want that they pay for what they use. 
+to just focus on their application development without wanting to care about
+their infrastructure and they also want that they pay for what they use.
 Hence, AWS Lambda comes into play which satisfies all their needs.
 
 Ironically, Lambda could be a threat to one of the Amazon's most
@@ -176,39 +176,39 @@ function isPalindrome(string) {
     const result = isPalindrome ? `${string} is a Palindrome` : `${string} is not a Palindrome`;
     return result;
 }
-  
+
 document.write(isPalindrome('abcd'));
 ```
 
-  
+
 This example we store in a file as javascript named `isPalindrome.js`
 
 Step 3: Let’s see how to create an AWS Lambda function - isPalindrome.
 Firstly, go to AWS Console. (see @fig:aws-lambda-console).
- 
+
 ![AWS Console](images/aws_console.png){#fig:aws-lambda-console}
- 
-Step 4: Now we will select AWS Lambda from console and then click 
-on <span style="background-color:blue;color:white">&nbsp;Get Started Now&nbsp;</span> 
+
+Step 4: Now we will select AWS Lambda from console and then click
+on <span style="background-color:blue;color:white">&nbsp;Get Started Now&nbsp;</span>
 (see @fig:aws-lambda-lambda)
- 
+
 ![AWS Lambda](images/aws_lambda.png){#fig:aws-lambda-lambda}
 
-Step 5: For runtime, we will select Node.js 6.10 and then press “Blank Function.” 
+Step 5: For runtime, we will select Node.js 6.10 and then press “Blank Function.”
 (see @fig:aws-lambda-blank).
- 
+
 ![Blank Function](images/aws_lambda_1.png){#fig:aws-lambda-blank}
 
-Step 6: We will skip this step and press <span style="background-color:blue;color:white">&nbsp;Next&nbsp;</span>. 
+Step 6: We will skip this step and press <span style="background-color:blue;color:white">&nbsp;Next&nbsp;</span>.
 (see @fig:aws-lambda-next)
 
-![Next](images/aws_lambda_2.png)
- 
-Step 7: Let’s give the Name as isPalindrome and put in a description 
+![Next](images/aws_lambda_2.png){#fig:aws-lambda-next}
+
+Step 7: Let’s give the Name as isPalindrome and put in a description
 of our new Lambda Function, or we can leave it blank. (see @fig:aws-lambda-description)
 
 
-![Description](images/aws_lambda_3.png){#fig:aws-lambda-desccription}
+![Description](images/aws_lambda_3.png){#fig:aws-lambda-description}
 
 Lambda function is just a function, named as *handler* here and the
 function takes three parameter - event, context and a callback
@@ -220,7 +220,7 @@ Step 8: Please scroll down for choosing the Role “Create new Role from
 template”, and for Role name we are going to use isPalindromeRole in
 our case.  For Policy templates, we will choose “Simple Microservice”
 permissions.  (see @fig:aws-lambda-policy)
- 
+
 ![Policy](images/aws_lambda_4.png){#fig:aws-lambda-policy}
 
 Step 9: For Memory, 128 megabytes is more than enough for our simple
@@ -231,21 +231,21 @@ rest of the advanced settings unchanged (see @#fig:aws-lambda-settings).
 
 ![Advanced Settings](images/aws_lambda_5.png){#fig:aws-lambda-settings}
 
-Step 10: Let’s click on the “Create function” button now to create 
+Step 10: Let’s click on the “Create function” button now to create
 our first Lambda function. (see @fig:aws-lambda-create)
 
 ![Create](images/aws_lambda_6.png){#fig:aws-lambda-create}
 
-Step 11: Now that we have created our first Lambda function, let's test 
-it by clicking <span style="background-color:blue;color:white">&nbsp;Test&nbsp;</span> 
+Step 11: Now that we have created our first Lambda function, let's test
+it by clicking <span style="background-color:blue;color:white">&nbsp;Test&nbsp;</span>
 (see @fig:aws-lambda-test)
- 
+
 ![Test](images/aws_lambda_7.png){#fig:aws-lambda-test}
 
 
 The output will be the hard-coded response of `Hello from Lambda.`
 from the created Lambda function. (see @fig:aws-lambda-hello)
- 
+
 ![Hello](images/aws_lambda_8.png){#fig:aws-lambda-hello}
 
 Step 12: Now let us add our `isPalindrome.js` function code here to
@@ -263,4 +263,3 @@ The output will be `abcd is not a Palindrome` (see @fig:aws-lambda-output)
 Similarly, let us try with string `abcdcba` and in this case output
 should return `abcdcba is a Palindrome`. Thus, our Lambda function is
 behaving as expected.
-
