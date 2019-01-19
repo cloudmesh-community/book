@@ -99,7 +99,7 @@ ifeq (,$(wildcard dest/chapters/images/penguin.jpg))
 	make -f Makefile images
 endif
 
-prepare: generateimages version authors destination chapterlist references todo index
+prepare: generateimages version authors destination chapterlist references todo index update-issues
 	echo >> dest/chapters/version.md
 	echo >> dest/chapters/version.md
 	echo "This document can be downloaded from" >> dest/chapters/version.md
@@ -108,6 +108,9 @@ prepare: generateimages version authors destination chapterlist references todo 
 	echo "* <https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>" >> dest/chapters/version.md
 	echo >> dest/chapters/version.md
 	echo >> dest/chapters/version.md
+
+update-issues:
+	cp ../chapters/preface/issues.md dest/chapters/preface/issues.md
 
 bibtex: bibtex-duplicate bibtex-cat bibtex-error bibtex-datamodel
 
@@ -241,13 +244,14 @@ todo:
 issues:
 	python ../bin/issues.py --markdown > ../chapters/preface/issues.md
 	cat ../chapters/issues-in.md > /tmp/issues.md
-	echo ".<div class=\"smalltable\">\n" >> /tmp/issues.md
+	#echo ".<div class=\"smalltable\">" >> /tmp/issues.md
+	echo >> /tmp/issues.md
 	cat ../chapters/preface/issues.md >> /tmp/issues.md
 	echo  >> /tmp/issues.md
-	echo ".</div>\n" >> /tmp/issues.md
-	echo  "\n\n\n\n" >> /tmp/issues.md
+	#echo ".</div>" >> /tmp/issues.md
+	echo >> /tmp/issues.md
+	echo >> /tmp/issues.md
 	cp /tmp/issues.md ../chapters/preface/issues.md
-	cp ../chapters/preface/issues.md dest/chapters/preface/issues.md
 
 publish: epub
 	cp dest/$(FILENAME).epub ..
