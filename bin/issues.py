@@ -47,18 +47,11 @@ if __name__ == '__main__':
     count = 0
 
     def labels(issue):
-        labelstring = ""
-        try:
-            labels = issue['labels']
-            for label in labels:
-                labelstring = labelstring + label['name'] + ","
+        labels = []
+        for label in issue['labels']:
+            labels.append(label['name'])
 
-            if(len(labels) > 0):
-                labelstring = labelstring[:-1]
-        except:
-            pass
-
-        return labelstring
+        return " ".join(labels)
 
     if len(issues) > 0:
 
@@ -83,8 +76,8 @@ if __name__ == '__main__':
             print("")
             # print("# Github Issues")
             print()
-            print ("|  |  | Title | Assignee | Labels |")
-            print ("| --- | --- | ---------------------------------------------------------------- | -------- |")            
+            print ("| N | # | Title | Assignee | Labels |")
+            print ("| ---: | ---: | :-------------------- | :-------- | :-------- |")            
             for issue in issues:
                 count = count + 1
                 issue['count'] = count
