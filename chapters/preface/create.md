@@ -14,7 +14,18 @@ $ pandoc --version
 $ python --version
 ```
 
-## Docker
+## OSX Requirements
+
+The easiest way to create a system that can compile the book on macOS,
+is to use a docker container. To do so you will need to first install
+docker on macOS while following the simple instructions at
+
+* <https://docs.docker.com/docker-for-mac/install/>
+
+Once you have docker installed, you can follow the instructions in
+@sec:docker-create-book.
+
+## Docker {#sec:docker-create-book}
 
 In case you have docker installed on your computer you can create
 epubs with our docker image. To create that image by hand, we have
@@ -41,7 +52,7 @@ To open an interactive shell into the image you say
 $ make shell
 ```
 
-Now you can skip to @#sec:create-book and compile the book just as
+Now you can skip to @sec:create-book and compile the book just as
 documented there.
 
 Please note that we have not integrated pandoc-mermaid and
@@ -49,30 +60,6 @@ pandoc-index at this time in our docker image. If you like to
 contribute them, please try it and make a pull request once you got
 them to work. 
 
-## OSX Requirements :o: temporaryly unavailable
-
-On OSX you can install the needed software with `brew`. In case you
-have not yet installed brew you can do it with
-
-```bash
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew update
-```
-
-To enable all features including advanced features to create diagrams
-from text specifications please use the following commands:
-
-```bash
-$ brew install graphviz
-$ brew install pandoc 
-$ brew install pandoc-citeproc
-$ brew install node
-$ npm install --global mermaid-filter
-$ npm install --global pandoc-index
-$ git clone https://github.com/tomduck/pandoc-fignos.git
-$ cd pandoc-fignos/
-$ pip install .
-```
 
 ## Ubuntu requirements :o: temporarily unavailable
 
@@ -98,7 +85,9 @@ $ npm install --global pandoc-index
 
 ## Creating a book {#sec:create-book}
 
-Tho create a book, you hae to first check out the book source from github with:
+To create a book, you hae to first check out the book source from
+github with if you have not yet done so (for example if you were to
+use the docker container method):
 
 ```bash
 git clone git@github.com:cloudmesh-community/book.git
@@ -206,7 +195,7 @@ $ cp -r 222 gregor
 ```
 
 Now edit the file chapters.yaml and copy the section with `BOOK_222=` to 
-`BOOK_gregor`. Make modifications to the outline as you see fit.
+`BOOK_gregor=`. Make modifications to the outline as you see fit.
 
 Now you can create the book with
 
