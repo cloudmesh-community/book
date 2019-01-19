@@ -6,6 +6,7 @@ sudo wget -qO- https://get.haskellstack.org/ | sh
 
 sudo cabal update
 sudo stack setup
+# add this also to your .bashrc file
 PATH="$HOME/root/.local/bin:$HOME/.cabal/bin:${PATH}"
 
 SOFTWARE=pandoc-2.5

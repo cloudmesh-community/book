@@ -26,7 +26,9 @@ for a complete list of changes.
 
   <https://github.com/jgm/pandoc-citeproc>
 
-  This breaks instalation instructions for Linux/ubuntu
+  This breaks instalation instructions for Linux/ubuntu. For ubuntu we
+  have created an experimental untested install script if containers
+  can not be used.
 
 * Jan 16, 2019: Added the OpenAPI server based on yaml file
   introspection in a @sec:openapi-introspection
