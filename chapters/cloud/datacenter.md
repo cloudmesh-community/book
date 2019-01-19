@@ -1,8 +1,5 @@
 # Data Center {#sec:data-center}
 
-:question: indicates opportunities for comprehension assignments while
-contributing to this document.
-
 ---
 
 **:mortar_board: Learning Objectives**
@@ -33,18 +30,18 @@ how much i created in one minute instead. Such depictions include
 samples of data created as a part of popular cloud services or the
 internet in general.
 
-One such popular depiction is *Data Never Sleeps* (see @fig:data-never-sleeps). It has been
-produced a number of times over the years and is now at version 6.0
-released in 2017. If you identify a newer version, please let us know.
-It is worth while to study this image in detail and identify some of
-the data that you can relate to of service you use. It is also a
-possible indication to study other services that are mentioned. A
-staggering 3.8Mil google searches are executed every minute.
-Surprisingly the weather channel receives over 18Mil forecast requests
-which is even higher than the 12Mil text messages send every minute.
-Youtube certainly serving a significant number of users by 4.3Mil
-videos watched every minute. Naturally the numbers are averages over
-time.
+One such popular depiction is *Data Never Sleeps* (see
+@fig:data-never-sleeps). It has been produced a number of times over
+the years and is now at version 6.0 released in 2017. If you identify
+a newer version, please let us know. It is worth while to study this
+image in detail and identify some of the data that you can relate to
+of service you use. It is also a possible indication to study other
+services that are mentioned. A staggering 3.8Mil google searches are
+executed every minute. Surprisingly the weather channel receives over
+18Mil forecast requests which is even higher than the 12Mil text
+messages send every minute. Youtube certainly serving a significant
+number of users by 4.3Mil videos watched every minute. Naturally the
+numbers are averages over time.
 
 ![Data Never Sleeps  [@www-image-data-never-sleeps-6]](images/data-never-sleeps-6.png){#fig:data-never-sleeps}
 
@@ -181,7 +178,7 @@ data center. Everyone has probably experienced some outage, so it is
 important to identify where they come from in order to prevent them.
 As we see in @fig:datacenter-outage not every error is caused by an
 operational issue. External, installation, design and manufacturer
-issues are together the largest issue for datacenter incidents (seee
+issues are together the largest issue for datacenter incidents (see
 @fig:datacenter-outage). Figure Outage. According to the Uptime
 Institute Abnormal Incident Reports (AIRs) database, the root cause of
 39% of data center incidents falls into the operational area
@@ -217,7 +214,7 @@ but by the community in which such centers operate.
   can be made more reliable, failure still can happen. Examples are
 
 * <https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/>
-* :question: find more examples
+* :o: find more examples
 
 Hence Data Center IaaS advantages include
 
@@ -391,7 +388,7 @@ arising from build and teardown phase as well as operational upgrades.
 
 | Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
 |-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
-| :question:  | :question: | :question:  | :question:               | :question:     | :question:         | :question:                  | :question:                |   |
+| :o:  | :o: | :o:  | :o:               | :o:     | :o:         | :o:                  | :o:                |   |
 |             |          |      |                   |         |             |                      |                    |   |
 |             |          |      |                   |         |             |                      |                    |   |
 
@@ -517,8 +514,8 @@ servers are exhausting into, the air will mix and begin to average
 out. For example, if our servers are producing exhaust at 100F and our
 AC unit provides 65F at the same rate, then the average air
 temperature will become 82.5F (assuming balanced air pressure). This
-has a deliterious effect on our server cooling - warmer air takes heat
-away from wamer surfaces slower than cooler air:
+has a deleterious effect on our server cooling - warmer air takes heat
+away from warmer surfaces slower than cooler air:
 
 $$68.2=8.47*0.23*(100-65)$$
 
@@ -528,7 +525,7 @@ To combat this, engineers developed the idea of designating
 alternating aisles as either hot or cold. All servers in a given aisle
 are then oriented such that the AC system provides cool air into the
 cold aisle where it is drawn in by the server which then exhausts it
-into the hot aisle where the ventilaton system removes it from the
+into the hot aisle where the ventilation system removes it from the
 room. This has the benefit of maximizing the temperature delta between
 the provided air and the server's processor(s), reducing the amount of
 quantity of air that must be provided in order to cool the server and
@@ -540,7 +537,7 @@ improving overall system efficiency.
 
 :o: add a discussion of Hot Aisle Containment and Cold Aisle
 Containment <https://www.dcimpro360.com/air-flow-containment/> I
-suggest even to include some images. Maybe you can ocate better
+suggest even to include some images. Maybe you can locate better
 images?
 
 ##### Water Cooled Doors
@@ -689,72 +686,63 @@ looking at some of the mayor cloud providers.
 ### AWS
 
 AWS focuses on security aspects of their data centers that include
-four aspects
-(<https://aws.amazon.com/compliance/data-center/data-centers/>):
+four aspects [@www-aws-datacenters]:
 
 * [Perimeter Layer](https://aws.amazon.com/compliance/data-center/perimeter-layer/)
 * [Infrastructure Layer](https://aws.amazon.com/compliance/data-center/infrastructure-layer/)
 * [Data Layer](https://aws.amazon.com/compliance/data-center/data-layer/)
 * [Environmental Layer](https://aws.amazon.com/compliance/data-center/environmental-layer/)
 
-The global infrastructure is presented (ass of Aug 29th 2018) at
-<https://aws.amazon.com/about-aws/global-infrastructure/> and includes
-55 Availability Zones within 18 geographic Regions and 1 Local Region
-around the world. Plans exists to add 12 Availability Zones and four
-additional Regions in Bahrain, Hong Kong SAR, Sweden, and a second AWS
-GovCloud Region in the US (see @fig:datacenter-aws-region).
+The [global infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
+[@www-aws-infrastructure] as of January 2019 includes 60 Availability
+Zones within 20 geographic Regions. Plans exists to add 12
+Availability Zones and four additional Regions in Bahrain, Hong Kong
+SAR, Sweden, and a second AWS GovCloud Region in the US (see
+@fig:datacenter-aws-region).
 
-![AWS regions](images/datacenter-aws-region.png){#fig:datacenter-aws-region}
+![AWS regions [@www-aws-infrastructure]](images/datacenter-aws-region.png){#fig:datacenter-aws-region}
 
 Amazon strives to achieve high availability through multiple availability zones,
 improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion. See @fig:datacenter-azure-region
 
 The regions and number of availability zones are as follows:
 
-Region US East: N. Virginia (6), Ohio (3)
-US West N. California (3), Oregon (3)
-
-Region: Asia Pacific Mumbai (2), Seoul (2), Singapore (3), Sydney (3), Tokyo (4), Osaka-Local (1)1
-Canada Central (2)
-China Beijing (2), Ningxia (3)
-
-Region: Europe Frankfurt (3), Ireland (3), London (3), Paris (3)
-South America São Paulo (3)
-
-Region Gov Cloud:
-AWS GovCloud (US-West) (3)
-
-New Region (coming soon):
-Bahrain
-Hong Kong SAR, China
-Sweden
-AWS GovCloud (US-East)
+* Region US East: N. Virginia (6), Ohio (3) US West N. California (3),
+   Oregon (3)
+* Region: Asia Pacific Mumbai (2), Seoul (2), Singapore (3), Sydney
+  (3), Tokyo (4), Osaka-Local (1)1 Canada Central (2) China Beijing (2),
+  Ningxia (3)
+* Region: Europe Frankfurt (3), Ireland (3), London (3), Paris (3)
+  South America São Paulo (3)
+* Region Gov Cloud: AWS GovCloud (US-West) (3)
+* New Region (coming soon): Bahrain, Hong Kong SAR, China, Sweden, AWS
+  GovCloud (US-East)
 
 ### Azure
 
-* <https://azure.microsoft.com/en-us/global-infrastructure/regions/>
-
-
-Azure claims to have more global regions than any other cloud
-provider. They motivate this by their advertisement to bring and
-applications to the users around the world. The goal is similar as
-other commercial hyprescale providers by introducing preserving data
-residency, and offering comprehensive compliance and resilience. As of
-Aug 29, 2018 Azure supports 54 regions worldwide. These regions can
-currently be accessed by users in 140 countries. See @fig:datacenter-azure-region. Not every service is
-offered in every region as the service to region matrix shows:
+Azure claims to have more global
+[regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
+[@www-azure-regions] than any other cloud provider. They motivate this
+by their advertisement to bring and applications to the users around
+the world. The goal is similar as other commercial hyprescale
+providers by introducing preserving data residency, and offering
+comprehensive compliance and resilience. As of Aug 29, 2018 Azure
+supports 54 regions worldwide. These regions can currently be accessed
+by users in 140 countries (see @fig:datacenter-azure-region). Not
+every service is offered in every region as the service to region
+matrix shows:
 
 * <https://azure.microsoft.com/en-us/global-infrastructure/services/>
 
 
-![Azure regions](images/datacenter-azure-region.png){#fig:datacenter-azure-region}
+![Azure regions [@www-azure-regions]](images/datacenter-azure-region.png){#fig:datacenter-azure-region}
 
 
 ### Google
 
 
 From
-<https://www.google.com/about/datacenters/inside/locations/index.html>
+[Google](https://www.google.com/about/datacenters/inside/locations/index.html) [@www-google-locations]
 we find that on Aug. 29th Google has the following data center
 locations (see @fig:datacenters-google):
 
@@ -768,7 +756,7 @@ locations (see @fig:datacenters-google):
   St Ghislain, Belgium
 
 
-![Google data centers](images/datacenters-google.png){#fig:datacenters-google}
+![Google data centers [@www-google-locations]](images/datacenters-google.png){#fig:datacenters-google}
 
 Each data center is advertised with a special environmental impact
 such as a unique cooling system, or wildlife on premise. Google's data
@@ -790,7 +778,11 @@ They summarize their offers are based on
 
 ![PUE data for all large-scale Google data centers](images/datacenter-google-pue.png){#fig:datacenter-google-pue}
 
-See @fig:datacenter-google-pue, [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
+The
+[PUE](https://www.google.com/about/datacenters/efficiency/internal/) [@www-google-eficiency]
+data for all large-scale Google data centers is shown in
+@fig:datacenter-google-pue
+
 
 An important lesson from Google is the PUE boundary. That is the
 different efficiency based on the closeness of the IT infrastructure
@@ -799,9 +791,13 @@ important to take at any providers definition of PUE in order not to
 report numbers that are not comparable between other vendors and are
 all encompassing.
 
-![Google data center PUE measurement boundaries](images/datacenter-google-boundary.png){#fig:datacenter-google-boundary}
+![Google data center PUE measurement boundaries [@www-google-eficiency]](images/datacenter-google-boundary.png){#fig:datacenter-google-boundary}
 
-See @fig:datacenter-google-boundary [Google data center PUE measurement boundaries. The average PUE for all Google data centers is 1.12, although we could boast a PUE as low as 1.06 when using narrower boundaries.](https://www.google.com/about/datacenters/efficiency/internal/)
+@fig:datacenter-google-boundar shows the Google data center PUE
+measurement boundaries. The
+[average PUE](https://www.google.com/about/datacenters/efficiency/internal/) [@www-google-eficiency]
+for all Google data centers is 1.12, although we could boast a PUE as
+low as 1.06 when using narrower boundaries.
 
  As a consequence, Google is defining its PUE in detail in @eq:pue-google.
 
@@ -824,7 +820,9 @@ where the abbreviations stand for
   feed servers, network, and storage equipment
 * ENet1 = Network room energy fed from type 1 unit substitution
 
-For more details see <https://www.google.com/about/datacenters/efficiency/internal/>
+For more
+[details](https://www.google.com/about/datacenters/efficiency/internal/)
+see [@www-google-eficiency].
 
 
 ### IBM
@@ -993,12 +991,13 @@ Due to the immense number of servers in data centers, as well as the
 increased workload on its servers, the energy consumption of data
 centers is large not only to run the servers, but to provide the
 necessary cooling. Thus it is important to revisit the impact such
-data centers have on the energy consumption.  One of the studies that
+data centers have on the energy consumption. One of the studies that
 looked into this is from 2016 and is published by
 [LBNL](https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf)
-In this study the data center electricity consumption back to 2000 is
-analyzed while using previous studies and historical shipment data. A
-forecast is with different assumption is contrasts till 2020
+[@lbl-energy-usage] In this study the data center electricity
+consumption back to 2000 is analyzed while using previous studies and
+historical shipment data. A forecast is with different assumption is
+contrasts till 2020
 
 Figure Energy Forecast depicts "an estimate of total U.S.  data center
 electricity use (servers, storage, network equipment, and
@@ -1011,9 +1010,8 @@ However, more recent studies find an increase by about 4% from
 originally predicted several years ago. The study finds that the
 predicted energy use would be approximately 73 billion kWh in 2020.
 
-![Energy Forecast](images/datacenter-energy-use.png){#fig:datacenter-energy-use}
+![Energy Forecast [@lbl-energy-usage]](images/datacenter-energy-use.png){#fig:datacenter-energy-use}
 
-Source: <https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf>
 
 It is clear that the original prediction of large energy consumption
 motivated a trend in industry to provide more energy efficient data
@@ -1038,7 +1036,7 @@ efficiency of each type of data center facility.
 ## Project Natick {#sec:natick}
 
 To reduce energy consumption in data centers and reduce cost of
-cooling Microsoft has developed **Project Natick**. To tackle this
+cooling Microsoft has developed *Project Natick*. To tackle this
 problem Microsoft has built underwater datacenter. Another benefit of
 this project is that data center can be deployed in large bodies of
 water to serve customers residing in that area so it helps to reduce
@@ -1061,8 +1059,10 @@ and was of 38000 lbs and it operated for 105 days.
 
 ![The Leona Philpot prototype](images/project-natick-phase1.png){#fig:project-natick-phase1}
 
-See @fig:project-natick-phase1, The *Leona Philpot* prototype was deployed off the central
-coast of California on Aug. 10, 2015. Source: [Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/) [@microsoft-first-datacenter]
+See @fig:project-natick-phase1, The *Leona Philpot* prototype was
+deployed off the central coast of California on Aug. 10, 2015. Source:
+[Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/)
+[@microsoft-first-datacenter]
 
 
 The phase 2 started in June 2018 and lasted for 90 days. Microsoft
@@ -1085,7 +1085,7 @@ Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-
 
 
 @fig:project-natick-phase2  shows the *Northern Isles* prototype being deployed near
-Scotla.
+Scotland.
 
 
 Although the cooling provides a significant benefit while using
@@ -1108,9 +1108,9 @@ Some thought on this include:
 
 Find more about this at [@nytimes-datacenter]
 
-## Renewable Energy for Data Centers :o:
+## Renewable Energy for Data Centers :o: {#sec:energy-renewable}
 
-Exlain the principal and showcase some examples:
+Explain the principal and showcase some examples:
 
 * Solar: <https://9to5google.com/2019/01/17/largest-ever-solar-farms-google/>
 * Wind: <https://www.datacenterknowledge.com/wind-powered-data-centers>
@@ -1122,14 +1122,14 @@ Exlain the principal and showcase some examples:
 * Recyclers:
   <https://www.datacenterknowledge.com/data-centers-that-recycle-waste-heat>
 
-Whot other aspects exist:
+What other aspects exist:
 
 Energy Storage:
 
 * Batteries
 * Store energy in other forms
 
-## Sociatal Shift Towards Renewables :o:
+## Societal Shift Towards Renewables :o: {#sec:energy-society}
 
 The data center as example.
 
@@ -1138,8 +1138,31 @@ Government efforts to support renewable in benefit of the society:
 * Germany
 * China
 * Island
-* Coorperations: Google, AWS, IBM, ...
+* Corporations: Google, AWS, IBM, ...
+
+Also look at the US state of California
 
 Everyone is doing it.
 
-See also *<https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
+See also
+
+*<https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
+
+
+## Exercises
+
+E.Energy.1:
+
+> Pick a renewal energy from @sec:energy-renewable  and describe what
+> it is. Find data centers that use this energy form. Create a section
+> and contribute it to the datacenter.md file.
+
+E.Energy.2:
+
+> Pick a country, state, or company from @sec:energy-society and
+> summarize their efforts towards renewable energy and impacts within
+> the society. Create a section and contribute it to the datacenter.md
+> file.
+
+
+
