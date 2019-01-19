@@ -52,12 +52,9 @@ A different source publishes what is happening on the internet in a
 minute, but we have been able to locate a version from 2018 (see @fig:internet-minutes-2018). While
 some data seems the same, others are slightly different. For example
 this graph has a lower count for Google searches, while the number of
-text messages send is significantly higher in contrast to the previous
-figure.
+text messages send is significantly higher in contrast to @fig:data-never-sleeps.
 
-![Internet Minute 2018](images/internet-minute-2018.jpg){#fig:internet-minutes-2018}
-
-Source: <https://www.allaccess.com/merge/archive/28030/2018-update-what-happens-in-an-internet-minute>
+![Internet Minute 2018 [@www-internet-minute-2017-2018]](images/internet-minute-2018.jpg){#fig:internet-minutes-2018}
 
 While reviewing the image from last year from the same author, we find
 not only increases, but also declines. Looking at facebook showcases a
@@ -67,24 +64,26 @@ popular with the younger generation who tend to pick up new services
 quickly (see @fig:internet-minutes-2017-2018).
 
 
-![Internet Minute 2017-2018](images/internet-minute-2017-2018.jpg){#fig:internet-minutes-2017-2018}
-
-Source: <https://www.allaccess.com/assets/img/content/merge/2018/m-04-03-pic1-lg.jpg>
+![Internet Minute 2017-2018 [@www-internet-minute-2017-2018]](images/internet-minute-2017-2018.jpg){#fig:internet-minutes-2017-2018}
 
 
 It is also interesting to compare such trends over a longer period of
 time (see @fig:google-search-per-year, @fig:big-data-trend-2012). An
-example is provided by looking at Google searches:
-<http://www.internetlivestats.com/google-search-statistics/>.
+example is provided by looking at Google searches
+
+* <http://www.internetlivestats.com/google-search-statistics/>.
+
+and visualized in @fig:google-search-per-year.
 
 ![Google searches over time](images/google-search.png){#fig:google-search-per-year}
 
-![Big data trend. 2012](images/bd-forbes-trend.png){#fig:big-data-trend-2012}
+
+![Big data trend. 2012 [@www-bigdata-36-month]](images/bd-forbes-trend.png){#fig:big-data-trend-2012}
+
 
 When looking at the trends, many predict an exponential growth in data.
 This trend is continuing.
 
-Big data trend. 2012, Source: <https://blogs-images.forbes.com/christopherfrank/files/2012/03/VI_BigData_Graphic_v3_low.png>
 
 
 <!--
@@ -167,31 +166,31 @@ In general a data center will have the following components.
 
   With regards to the number of people serving such a facility it is
   obvious that through automation is quite low. According to
-  (<https://journal.uptimeinstitute.com/data-center-staffing/>) proper
+  [@www-datacenter-staffing] proper
   data center staffing is a key to a reliable operation (see @fig:datacenter-staff-impact).
 
-![Datacenter Staff Impact](images/datacenter-staff-impact.jpg){#fig:datacenter-staff-impact}
+  According to @fig:datacenter-staff-impact
+  operational sustainability contains three elements of operational
+  sustainability, namely  management and operations, building
+  characteristics, and site location [@www-datacenter-staffing].
 
-Figure Operational Sustainability.  According to Tier Standard:
-Operational Sustainability, the three elements of Operational
-Sustainability are Management and Operations, Building
-Characteristics, and Site
-Location. (<https://journal.uptimeinstitute.com/data-center-staffing/>)
+![Datacenter Staff Impact [@www-datacenter-staffing]](images/datacenter-staff-impact.jpg){#fig:datacenter-staff-impact}
 
 Another interesting observation is the root cause of incidents in a
 data center. Everyone has probably experienced some outage, so it is
-important to identify where they come from in order to prevent
-them. As we see in the Figure *Outage* not every error is caused by an
+important to identify where they come from in order to prevent them.
+As we see in @fig:datacenter-outage not every error is caused by an
 operational issue. External, installation, design and manufacturer
-issues are together the largest issue for datacenter incidents (seee @fig:datacenter-outage).
+issues are together the largest issue for datacenter incidents (seee
+@fig:datacenter-outage). Figure Outage. According to the Uptime
+Institute Abnormal Incident Reports (AIRs) database, the root cause of
+39% of data center incidents falls into the operational area
+[@www-datacenter-staffing].
 
-![Datacenter outage](images/datacenter-outage.jpg){#fig:datacenter-outage}
+
+![Datacenter outage [@www-datacenter-staffing]](images/datacenter-outage.jpg){#fig:datacenter-outage}
 
 
-Figure Outage. According to the Uptime Institute Abnormal Incident
-Reports (AIRs) database, the root cause of 39% of data center
-incidents falls into the operational
-area. (<https://journal.uptimeinstitute.com/data-center-staffing/>)
 
 ## Data Center Characteristics
 
@@ -263,34 +262,86 @@ estimate the Carbon footprint of a data center.
 Although this report is already a bit older, it provides still
 valuable information. It defines key terms such as
 
-* Carbon dioxide emissions coefficient (“carbon footprint”)
+Carbon dioxide emissions coefficient (“carbon footprint”):
 
-	With the increasing demand of data, bandwidth and high performance systems, there is substantial amount of power consumption. This leads to high amount of greenhouses gases emission into the atmosphere, released due to any kind of basic activities like driving a vehicle or running a power plant.
+: With the increasing demand of data, bandwidth and high performance
+  systems, there is substantial amount of power consumption. This
+  leads to high amount of greenhouses gases emission into the
+  atmosphere, released due to any kind of basic activities like driving
+  a vehicle or running a power plant.
 
-	" The measurement includes power generation plus transmission and distribution losses incurred during delivery of the electricity to its point of use."
+  "The measurement includes power generation plus transmission and
+  distribution losses incurred during delivery of the electricity to
+  its point of use."
 
-Data centers in total used 91 billion kilowatt-hours (kWh) of electrical energy in 2013, and they will use 139 billion kWh by 2020. Currently, data centers consume up to 3 percent of all global electricity production while producing 200 million metric tons of carbon dioxide. Since world is moving towards cloud, causing more and more data center capacity leading more to power consumption.
+   Data centers in total used 91 billion kilowatt-hours (kWh) of
+   electrical energy in 2013, and they will use 139 billion kWh by
+   2020. Currently, data centers consume up to 3 percent of all
+   global electricity production while producing 200 million metric tons
+   of carbon dioxide. Since world is moving towards cloud, causing more
+   and more data center capacity leading more to power consumption.
 
+Peaker plant:
 
-* Peaker plant
+: Peaking power plants, also known as peaker plants, and
+  occasionally just "peakers", are power plants that generally run
+  only when there is a high demand, known as peak demand, for
+  electricity.Because they supply power only occasionally, the power
+  supplied commands a much higher price per kilowatt hour than base
+  load power. Peak load power plants are dispatched in combination
+  with base load power plants, which supply a dependable and
+  consistent amount of electricity, to meet the minimum demand.
+  These plants are generally coal-fired which causes a huge amount
+  of CO2 emissions. A peaker plant may operate many hours a day, or
+  it may operate only a few hours per year, depending on the
+  condition of the region's electrical grid. Because of the cost of
+  building an efficient power plant, if a peaker plant is only going
+  to be run for a short or highly variable time, it does not make
+  economic sense to make it as efficient as a base load power plant.
+  In addition, the equipment and fuels used in base load plants are
+  often unsuitable for use in peaker plants because the fluctuating
+  conditions would severely strain the equipment. For these reasons,
+  nuclear, geothermal, waste-to-energy, coal and biomass are rarely,
+  if ever, operated as peaker plants.
 
-	Peaking power plants, also known as peaker plants, and occasionally just "peakers", are power plants that generally run only when there is a high demand, known as peak demand, for electricity.Because they supply power only occasionally, the power supplied commands a much higher price per kilowatt hour than base load power. Peak load power plants are dispatched in combination with base load power plants, which supply a dependable and consistent amount of electricity, to meet the minimum demand.
-	These plants are generally coal-fired which causes a huge amount of CO2 emissions. A peaker plant may operate many hours a day, or it may operate only a few hours per year, depending on the condition of the region's electrical grid. Because of the cost of building an efficient power plant, if a peaker plant is only going to be run for a short or highly variable time, it does not make economic sense to make it as efficient as a base load power plant. In addition, the equipment and fuels used in base load plants are often unsuitable for use in peaker plants because the fluctuating conditions would severely strain the equipment. For these reasons, nuclear, geothermal, waste-to-energy, coal and biomass are rarely, if ever, operated as peaker plants.
+Avoided emissions:
 
-* Avoided emissions
+: Emissions avoidance is the most effective carbon management
+  strategy over a multi-decadal timescale to achieve atmospheric CO2
+  stabilization and a subsequent decline . This prevents, in the first
+  place, stable underground carbon deposits from entering either the
+  atmosphere or less stable carbon pools on land and in the oceans.
 
-	Emissions avoidance is the most effective carbon management strategy over a multi-decadal timescale to achieve atmospheric CO2 stabilization and a subsequent decline . This prevents, in the first place, stable underground carbon deposits from entering either the atmosphere or less stable carbon pools on land and in the oceans.
+  Carbon offsets based on energy efficiency rely on technical
+  efficiencies to reduce energy consumption and therefore reduce CO2
+  emissions. Such improvements are often achieved by introducing more
+  energy efficient lightening, cooking, heating and cooling systems.
+  These are real emission reduction strategies and have created valid
+  offset projects.
 
-Carbon offsets based on energy efficiency rely on technical efficiencies to reduce energy consumption and therefore reduce CO2 emissions. Such improvements are often achieved by introducing more energy efficient lightening, cooking, heating and cooling systems. These are real emission reduction strategies and have created valid offset projects.
+  This type of carbon offset provides perhaps the simplest options
+  that will ease the adoption of low carbon practice. When these practices
+  become generally accepted (or compulsory), they will no longer qualify
+  as offsets and further efficiencies will need to be promoted.
 
-This type of carbon offset provides perhaps the simplest options that will ease the adoption of low carbon practice. When these practices become generally accepted (or compulsory), they will no longer qualify as offsets and further efficiencies will need to be promoted.
+CO2 (carbon dioxide, or “carbon”)
 
-* CO2 (carbon dioxide, or “carbon”)
-
-	Carbon dioxide is the main cause of the greenhouse effect, it is emitted in huge amount into our atmosphere with a life cycle of almost 100 years. Data centers emit during the manufacturing process of all the components that populate a
-data center (servers, UPS, building shell, cooling, etc.) and during operation of data centers (in terms of electricity consumed), the maintenance of the data centers (i.e. replacement of consumables like batteries, capacitors, etc.), and the disposal of the components of the data centers at the end of the lifecycle.
-	Until now, power plants have been allowed to dump unlimited amounts of carbon pollution into the atmosphere — no rules were in effect that limited their emissions of carbon dioxide, the primary driver of global warming. Now, for the first time, the EPA has finalized new rules, or standards, that will reduce carbon emissions from power plants. Known as the Clean Power Plan, these historic standards represent the most significant opportunity in years to help curb the growing consequences of climate change.
-
+: Carbon dioxide is the main cause of the greenhouse effect, it is
+  emitted in huge amount into our atmosphere with a life cycle of
+  almost 100 years. Data centers emit during the manufacturing process
+  of all the components that populate a data center (servers, UPS,
+  building shell, cooling, etc.) and during operation of data centers
+  (in terms of electricity consumed), the maintenance of the data
+  centers (i.e. replacement of consumables like batteries, capacitors,
+  etc.), and the disposal of the components of the data centers at the
+  end of the lifecycle. Until now, power plants have been allowed to
+  dump unlimited amounts of carbon pollution into the atmosphere - no
+  rules were in effect that limited their emissions of carbon dioxide,
+  the primary driver of global warming. Now, for the first time, the EPA
+  has finalized new rules, or standards, that will reduce carbon
+  emissions from power plants. Known as the Clean Power Plan, these
+  historic standards represent the most significant opportunity in years
+  to help curb the growing consequences of climate change.
 
 The data center will have a total carbon profile, that includes the
 many different aspects of a data center contributing to carbon
@@ -761,9 +812,9 @@ all encompassing.
 
 See @fig:datacenter-google-boundary [Google data center PUE measurement boundaries. The average PUE for all Google data centers is 1.12, although we could boast a PUE as low as 1.06 when using narrower boundaries.](https://www.google.com/about/datacenters/efficiency/internal/)
 
- As a consequence, Google is defining its PUE in detail as follows, see @fig:datacenter-google-formula, :
+ As a consequence, Google is defining its PUE in detail in @eq:pue-google.
 
- ![Google PUE](images/datacenter-google-formula.png){#fig:datacenter-google-formula}
+$$PUE=\frac{ESIS + EITS + ETX + EHV + ELV + EF}{EITS - ECRAC - EUPS - ELV + ENet1} $${#eq:pue-google}
 
 where the abbreviations stand for
 
