@@ -244,11 +244,11 @@ todo:
 issues:
 	python ../bin/issues.py --markdown > ../chapters/preface/issues.md
 	cat ../chapters/issues-in.md > /tmp/issues.md
-	#echo ".<div class=\"smalltable\">" >> /tmp/issues.md
+	echo ".<div class=\"smalltable\">" >> /tmp/issues.md
 	echo >> /tmp/issues.md
 	cat ../chapters/preface/issues.md >> /tmp/issues.md
 	echo  >> /tmp/issues.md
-	#echo ".</div>" >> /tmp/issues.md
+	echo ".</div>" >> /tmp/issues.md
 	echo >> /tmp/issues.md
 	echo >> /tmp/issues.md
 	cp /tmp/issues.md ../chapters/preface/issues.md

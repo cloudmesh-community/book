@@ -25,12 +25,13 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 
 
+.<div class="smalltable">
 
 
 
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
-| 1 | 285 | [issue labels in book][i285] | pulasthi | bug |
+| 1 | 286 | [Section: Data Services: AWS RedShift][i286] | joshish-iu | assigned section |
 | 2 | 284 | [Test new install-ubuntu.sh script][i284] | pulasthi | bug |
 | 3 | 282 | [Open: Chapter on Apache Spark][i282] | None |  |
 | 4 | 276 | [Add weekly activities into the handbook][i276] | bfeng | internal |
@@ -103,7 +104,7 @@ Assignees can change the summary to done. We will experiment with possibly addit
 | 71 | 47 | [Internal: Hot cold isles in data center][i47] | pulasthi | assigned internal |
 | 72 | 9 | [Internal: Slides to video are not included in the introduction ][i9] | laszewsk | bug |
 
-[i285]: https://github.com/cloudmesh-community/book/issues/285
+[i286]: https://github.com/cloudmesh-community/book/issues/286
 [i284]: https://github.com/cloudmesh-community/book/issues/284
 [i282]: https://github.com/cloudmesh-community/book/issues/282
 [i276]: https://github.com/cloudmesh-community/book/issues/276
@@ -177,5 +178,6 @@ Assignees can change the summary to done. We will experiment with possibly addit
 [i9]: https://github.com/cloudmesh-community/book/issues/9
 
 
+.</div>
 
 
