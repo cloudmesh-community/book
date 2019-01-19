@@ -33,7 +33,7 @@ how much i created in one minute instead. Such depictions include
 samples of data created as a part of popular cloud services or the
 internet in general.
 
-One such popular depiction is "Data Never Sleeps" (see @fig:data-never-sleeps). It has been
+One such popular depiction is *Data Never Sleeps* (see @fig:data-never-sleeps). It has been
 produced a number of times over the years and is now at version 6.0
 released in 2017. If you identify a newer version, please let us know.
 It is worth while to study this image in detail and identify some of
@@ -116,7 +116,7 @@ part of an organization or a virtual organization. However, we see
 that even in the research community data centers not only host
 supercomputers, but also Web server infrastructure and these days even
 private clouds that support the organizational users. In case of the
-latter we speak about supporting the "long tail about science".
+latter we speak about supporting the *long tail about science*.
 
 The later is driven by the 80%-20% rule. E.g. 20% of the users use 80%
 of the compute power. This means that the top 20% of scientists are
@@ -196,7 +196,7 @@ Institute Abnormal Incident Reports (AIRs) database, the root cause of
 
 Next we identify a number of characteristics when looking at different data centers.
 
-**Variation in Size**: Data centers range in size from small "edge”
+**Variation in Size**: Data centers range in size from small *edge*
 facilities to megascale or hyperscale filling large ware houses.
 
 **Variation in cost per server**: Although many data centers
@@ -254,15 +254,11 @@ Scientists world wide have identified a link between carbon emission
 and global warming. As the energy consumption of a data center is
 substantial, it is prudent to estimate the overall carbon emission.
 Schneider Electric (formerly APC) has provided a report on how to
-estimate the Carbon footprint of a data center.
-
-* Estimating a Data Center’s Electrical Carbon Footprint, White Paper
-  66, <http://www.apc.com/salestools/DBOY-7EVHLH/DBOY-7EVHLH_R0_EN.pdf>
-
+estimate the Carbon footprint of a data center [@schneider-footprint].
 Although this report is already a bit older, it provides still
 valuable information. It defines key terms such as
 
-Carbon dioxide emissions coefficient (“carbon footprint”):
+Carbon dioxide emissions coefficient (*carbon footprint*):
 
 : With the increasing demand of data, bandwidth and high performance
   systems, there is substantial amount of power consumption. This
@@ -284,7 +280,7 @@ Carbon dioxide emissions coefficient (“carbon footprint”):
 Peaker plant:
 
 : Peaking power plants, also known as peaker plants, and
-  occasionally just "peakers", are power plants that generally run
+  occasionally just *peakers*, are power plants that generally run
   only when there is a high demand, known as peak demand, for
   electricity.Because they supply power only occasionally, the power
   supplied commands a much higher price per kilowatt hour than base
@@ -324,7 +320,7 @@ Avoided emissions:
   become generally accepted (or compulsory), they will no longer qualify
   as offsets and further efficiencies will need to be promoted.
 
-CO2 (carbon dioxide, or “carbon”)
+CO2 (carbon dioxide, or *carbon*)
 
 : Carbon dioxide is the main cause of the greenhouse effect, it is
   emitted in huge amount into our atmosphere with a life cycle of
@@ -360,10 +356,8 @@ certainly depends on the type of powerplant that is used to provide
 it. These energy costs and distribution of where the energy comes from
 can often be looked up by geographical regions on the internet or form
 the local energy provider. Municipal government organizations may also
-have such information. Tools such as the Indiana State Profile and
-Energy Use
-
-* <https://www.eia.gov/state/?sid=IN>  
+have such information. Tools such as the [Indiana State Profile and
+Energy Use](https://www.eia.gov/state/?sid=IN) [@www-indiana-eia].
 
 may provide valuable information to derive such estimates. Correlating
 a data center with cheap energy is a key factor. To estimate both
@@ -574,9 +568,7 @@ throughput or any number of desired job characteristics.
 
 Detailed historical analysis of XSEDE usage data using XDMoD clearly
 demonstrates the tremendous growth in the number of users, overall
-usage, and scale."
-
-Source: <https://experts.illinois.edu/en/publications/using-xdmod-to-facilitate-xsede-operations-planning-and-analysis>
+usage, and scale" [@las-xdmod].
 
 Having access to a detailed metrics analysis allows users and center
 administrators, as well as project managers to better evaluate the use
@@ -609,14 +601,13 @@ resource allocation committee to help assess and identify projects
 with higher scientific impact. Through the general applicability of
 the novel metrics we invented, it can also help provide metrics
 regarding the return on investment for XSEDE resources, or campus
-based HPC centers.
-[PDF](http://cgl.soic.indiana.edu/publications/Metrics2014.pdf)
+based HPC centers [@las-impact].
 
 
 #### Clouds and Virtual Machine Monitoring
 
-Although no longer in operation in its original form FutureGrid
-<http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html>
+Although no longer in operation in its original form
+[FutureGrid](http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html) [@www-fg-metrics]
 has pioneered the extensive monitoring and publication of its virtual
 machine and project usage. We are not aware of a current system that
 provides this level of detail as sof yet. However, efforts as part of
@@ -624,9 +615,9 @@ XSEDE within the XDMoD project are under way at this time but are not
 integrated.
 
 Futuregrid provided access to all virtual machine information, as well
-as usage across projects. An archived portal view is available at:
-
-* <http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html>
+as usage across projects. An archived portal view is available at
+[FutureGrid Cloud Metrics](http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html)
+[@www-fg-metrics].
 
 ![FutureGrid Cloud Metric](images/datacenter-fg-metric.png){#fig:datacenter-fg-metric}
 
@@ -657,8 +648,8 @@ We like to emphasize several examples where such monitoring is helpful:
   users in the same project. All accounts of all users were quasi
   deactivated as the entire project they belonged to were deactivated.
   Due to allocation review processes it took about 3 weeks to reactivate
-  full access. sed on the tasks to be completed can be compared against
-  other student members.
+  full access. sed on the tasks to be completed can be compared
+  against other student members.
 * In commercial clouds you will be charged money. Therefore, it is
   less likely that you forget to shutdown your machine
 * In case you use github carelessly and post your cloud passwords or
@@ -683,7 +674,7 @@ jobs is conducted through existing HPC tools
 
 Monitoring tools for containers such as for kubernetes are listed at:
 
-<https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/>
+* <https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/>
 
 Such tools can be deployed alongside kubernetes in the data center,
 but will likely have restrictions to its access. They are for those
@@ -1011,7 +1002,7 @@ forecast is with different assumption is contrasts till 2020
 
 Figure Energy Forecast depicts "an estimate of total U.S.  data center
 electricity use (servers, storage, network equipment, and
-infrastructure) from 2000-2020". See @fig:datacenter-energy-use
+infrastructure) from 2000-2020" (see @fig:datacenter-energy-use).
 
 While in "2014 the data centers in the U.S. consumed an estimated 70
 billion kWh" or "about 1.8% of total U.S. electricity consumption".
