@@ -64,7 +64,7 @@ not only increases, but also declines. Looking at facebook showcases a
 loss of 73000 logins per minute. This loss is substantial. We can see
 that facebook services are replaced by other services that are more
 popular with the younger generation who tend to pick up new services
-quickly. See @fig:internet-minutes-2017-2018
+quickly (see @fig:internet-minutes-2017-2018).
 
 
 ![Internet Minute 2017-2018](images/internet-minute-2017-2018.jpg){#fig:internet-minutes-2017-2018}
@@ -73,7 +73,8 @@ Source: <https://www.allaccess.com/assets/img/content/merge/2018/m-04-03-pic1-lg
 
 
 It is also interesting to compare such trends over a longer period of
-time. See @fig:google-search-per-year, @fig:big-data-trend-2012. An example is provided by looking at Google searches:
+time (see @fig:google-search-per-year, @fig:big-data-trend-2012). An
+example is provided by looking at Google searches:
 <http://www.internetlivestats.com/google-search-statistics/>.
 
 ![Google searches over time](images/google-search.png){#fig:google-search-per-year}
@@ -167,7 +168,7 @@ In general a data center will have the following components.
   With regards to the number of people serving such a facility it is
   obvious that through automation is quite low. According to
   (<https://journal.uptimeinstitute.com/data-center-staffing/>) proper
-  data center staffing is a key to a reliable operation. See @fig:datacenter-staff-impact
+  data center staffing is a key to a reliable operation (see @fig:datacenter-staff-impact).
 
 ![Datacenter Staff Impact](images/datacenter-staff-impact.jpg){#fig:datacenter-staff-impact}
 
@@ -182,7 +183,7 @@ data center. Everyone has probably experienced some outage, so it is
 important to identify where they come from in order to prevent
 them. As we see in the Figure *Outage* not every error is caused by an
 operational issue. External, installation, design and manufacturer
-issues are together the largest issue for datacenter incidents. See @fig:datacenter-outage
+issues are together the largest issue for datacenter incidents (seee @fig:datacenter-outage).
 
 ![Datacenter outage](images/datacenter-outage.jpg){#fig:datacenter-outage}
 
@@ -528,7 +529,7 @@ Source: <https://experts.illinois.edu/en/publications/using-xdmod-to-facilitate-
 
 Having access to a detailed metrics analysis allows users and center
 administrators, as well as project managers to better evaluate the use
-and utilization of such large facilities justifying their existence. See @fig:datacenter-xdmod
+and utilization of such large facilities justifying their existence (see @fig:datacenter-xdmod)
 
 
 ![XDMod: XSEDE Metrics on Demand](images/datacenter-xdmod.png){#fig:datacenter-xdmod}
@@ -582,7 +583,7 @@ Futuregrid offered multiple clouds including clouds based on
 OpenStack, Eucalyptus, and Nimbus. Nimbus and Eucalyptus are systems
 that are no longer used in the community. Only OpenStack is the only
 viable solution in addition to the cloud offerings by Comet that do
-not uses OpenStack. See @fig:datacenter-fg-metric
+not uses OpenStack (see @fig:datacenter-fg-metric).
 
 Futuregrid, could monitor all of them and published its result in its
 Metrics portal. Monitoring the VMs is an important activity as they
@@ -659,7 +660,7 @@ The global infrastructure is presented (ass of Aug 29th 2018) at
 55 Availability Zones within 18 geographic Regions and 1 Local Region
 around the world. Plans exists to add 12 Availability Zones and four
 additional Regions in Bahrain, Hong Kong SAR, Sweden, and a second AWS
-GovCloud Region in the US. See @fig:datacenter-aws-region
+GovCloud Region in the US (see @fig:datacenter-aws-region).
 
 ![AWS regions](images/datacenter-aws-region.png){#fig:datacenter-aws-region}
 
@@ -1038,9 +1039,12 @@ which it will be retrieved and recycled.
 
 ![The Northern Isles prototype](images/project-natick-phase2.png){#fig:project-natick-phase2}
 
-See @fig:project-natick-phase2, The *Northern Isles* prototype being deployed near
-Scotla
-nd. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
+Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
+
+
+@fig:project-natick-phase2  shows the *Northern Isles* prototype being deployed near
+Scotla.
+
 
 Although the cooling provides a significant benefit while using
 seawater, it is clear that long time studies need to be conducted with
