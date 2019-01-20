@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "https://raw.githubusercontent.com/cloudmesh-community/book/master/install-ubuntu.sh"
 
   # config.vm.network "public_network"
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.synced_folder ".", "/home/vagrant/book"
   config.vm.provider "virtualbox" do |vb|
      # vb.gui = true
      vb.memory = "4096"
