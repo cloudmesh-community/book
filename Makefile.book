@@ -28,6 +28,9 @@ ifeq ($(DOCKER), True)
 MERMAID=
 endif
 
+#not using mermaid
+
+MERMAID=
 
 
 all: splash prepare epub 
