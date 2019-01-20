@@ -1,5 +1,8 @@
-sudo apt-get install -y python3-dev
-sudo apt-get install -y python3-venv
+sudo apt-get install -y python3.7-dev
+sudo apt-get install -y python3.7-venv
+
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 10
+sudo update-alternatives --config python3
 
 sudo apt-get install haskell-platform -y
 sudo wget -qO- https://get.haskellstack.org/ | sh
