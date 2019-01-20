@@ -21,3 +21,7 @@ TBD
 ## R Gallery
 
 * <https://www.r-graph-gallery.com/>
+
+## Gnuplot
+
+* <http://www.gnuplot.info/screenshots/index.html#demos>
