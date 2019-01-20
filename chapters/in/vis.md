@@ -1,5 +1,5 @@
-Visualization :o: :question:
+# Visualization :o: 
 
-![Visualisation](images/which-chart-when.jpeg)
+![Visualisation <https://github.com/d3/d3/wiki/Gallery>](images/which-chart-when.jpeg){#fig:chart-suggestions}
 
-<https://github.com/d3/d3/wiki/Gallery>
+
