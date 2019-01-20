@@ -30,39 +30,4 @@ cabal install pandoc
 cabal install pandoc-citeproc
 cabal install pandoc-crossref
 
-exit
-
-
-
-
-
-export SOFTWARE=pandoc-2.5
-cd $HOME
-wget http://hackage.haskell.org/package/${SOFTWARE}/${SOFTWARE}.tar.gz
-tar xvzf ${SOFTWARE}.tar.gz
-cd ${SOFTWARE}
-#stack solver
-stack init
-stack build
-stack install
-
-
-export SOFTWARE=pandoc-citeproc-0.15.0.1
-cd $HOME
-wget http://hackage.haskell.org/package/${SOFTWARE}/${SOFTWARE}.tar.gz
-tar xvzf ${SOFTWARE}.tar.gz
-cd ${SOFTWARE}
-stack init
-stack install
-
-export SOFTWARE=pandoc-crossref-0.3.4.0
-cd $HOME
-wget http://hackage.haskell.org/package/${SOFTWARE}/${SOFTWARE}.tar.gz
-tar xvzf ${SOFTWARE}.tar.gz
-cd ${SOFTWARE}
-stack init
-stack install
-
-
-
 
