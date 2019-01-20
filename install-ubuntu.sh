@@ -1,4 +1,7 @@
 #
+# INSTALL FOR UBUNTU 18.10
+#
+#
 # wget https://raw.githubusercontent.com/cloudmesh-community/book/master/install-ubuntu.sh
 #
 sudo apt-get install -y python3.7-dev
@@ -14,12 +17,12 @@ sudo wget -qO- https://get.haskellstack.org/ | sh
 # add this also to your .bashrc file
 export PATH="$HOME/root/.local/bin:$HOME/.cabal/bin:${PATH}"
 
-sudo cabal update
+cabal update
 # for vagrant
-sudo chown $USER .cabal
-sudo chgrp $USER .cabal
 stack setup
 
+#sudo chown $USER .cabal
+#sudo chgrp $USER .cabal
 
 #
 # install pandoc via cabal
@@ -29,5 +32,6 @@ cabal update
 cabal install pandoc
 cabal install pandoc-citeproc
 cabal install pandoc-crossref
+
 
 
