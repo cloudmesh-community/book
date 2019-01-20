@@ -12,6 +12,7 @@ All tools must be free.
 
 * <https://github.com/d3/d3/wiki/Gallery>
 * <https://c3js.org/examples.html>
+* <http://nvd3.org/examples/index.html>
 
 ## Matplot Gallery
 
