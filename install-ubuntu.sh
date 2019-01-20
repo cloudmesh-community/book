@@ -1,3 +1,6 @@
+#
+# wget https://raw.githubusercontent.com/cloudmesh-community/book/master/install-ubuntu.sh
+#
 sudo apt-get install -y python3.7-dev
 sudo apt-get install -y python3.7-venv
 
