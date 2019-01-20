@@ -1,5 +1,7 @@
 # Visualization :o: 
 
+All tools must be free.
+
 ## Chart Types
 
 ![Visualisation](images/which-chart-when.jpeg){#fig:chart-suggestions}
@@ -9,6 +11,7 @@
 ## D3 Gallery
 
 * <https://github.com/d3/d3/wiki/Gallery>
+* <https://c3js.org/examples.html>
 
 ## Matplot Gallery
 
@@ -16,7 +19,7 @@ TBD
 
 ## Bokeah Gallery
 
-TBD
+* <https://bokeh.pydata.org/en/latest/docs/gallery.html>
 
 ## R Gallery
 
@@ -25,3 +28,12 @@ TBD
 ## Gnuplot
 
 * <http://www.gnuplot.info/screenshots/index.html#demos>
+
+## React
+
+* <https://uber.github.io/react-vis/examples/showcases/plots>
+* <https://formidable.com/open-source/victory/gallery/>
+
+## Tablaeu
+
+Tablaue is not reproducable and creates very poor print quality images. YOu can use it to explore data, but must use another tool to have reproducable images.
