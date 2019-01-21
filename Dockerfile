@@ -25,6 +25,15 @@ ENV PATH="${PATH}:/usr/bin/vendor_perl"
 #
 RUN yes | pacman -Sy python
 RUN yes | pacman -Sy python-pip
+
+RUN pip install pandoc-mustache
+RUN pip install pprint
+RUN pip install oyaml
+RUN pip install treelib
+RUN pip install docopt
+RUN pip install mkdocs
+RUN pip install emoji
+
 #
 # INSTALL PANDOC
 #
