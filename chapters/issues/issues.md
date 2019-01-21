@@ -25,6 +25,15 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 
 
+{'--cache': True,
+ '--header': '## All issues',
+ '--label': [],
+ '--linksonly': False,
+ '--markdown': False,
+ '--nolinks': True,
+ '--pages': '5',
+ '--small': True,
+ '--state': 'open'}
 
 ## All issues
 
@@ -111,6 +120,15 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 .</div>
 
+{'--cache': True,
+ '--header': '## Open Sections',
+ '--label': ['section', 'open'],
+ '--linksonly': False,
+ '--markdown': False,
+ '--nolinks': True,
+ '--pages': '5',
+ '--small': True,
+ '--state': 'open'}
 
 ## Open Sections
 
@@ -142,6 +160,15 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 .</div>
 
+{'--cache': True,
+ '--header': '## Open Chapters',
+ '--label': ['chapter', 'open'],
+ '--linksonly': False,
+ '--markdown': False,
+ '--nolinks': True,
+ '--pages': '5',
+ '--small': True,
+ '--state': 'open'}
 
 ## Open Chapters
 
@@ -162,6 +189,15 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 .</div>
 
+{'--cache': True,
+ '--header': '## Assigned Sections',
+ '--label': ['section', 'assigned'],
+ '--linksonly': False,
+ '--markdown': False,
+ '--nolinks': True,
+ '--pages': '5',
+ '--small': True,
+ '--state': 'open'}
 
 ## Assigned Sections
 
@@ -177,6 +213,15 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 .</div>
 
+{'--cache': True,
+ '--header': '## Assigned Chapters',
+ '--label': ['chapter', 'assigned'],
+ '--linksonly': False,
+ '--markdown': False,
+ '--nolinks': True,
+ '--pages': '5',
+ '--small': True,
+ '--state': 'open'}
 
 ## Assigned Chapters
 
@@ -192,6 +237,15 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 .</div>
 
+{'--cache': True,
+ '--header': None,
+ '--label': [],
+ '--linksonly': True,
+ '--markdown': False,
+ '--nolinks': False,
+ '--pages': '5',
+ '--small': False,
+ '--state': 'open'}
 
 
 

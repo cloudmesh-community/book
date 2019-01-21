@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Usage: issues.py [--cache] [--linksonly] [--nolinks] [--markdown] [--state=STATE] [--label=LABEL...] [--small] [--header=HEADER]
+"""Usage: issues.py [--cache] [--linksonly] [--nolinks] [--markdown] [--state=STATE] [--label=LABEL...] [--small] [--header=HEADER] [--pages=PAGES]
 
 Process issues from github and put them in a table, no parameter is tex
 
@@ -13,6 +13,7 @@ Options:
   --linksonly       only print the links [default: False].
   --small           make the table smaller [default: False].
   --header=HEADER   the header
+  --pages=PAGES     the number of maximum pages to be fetched from github [default: 5].
   
 """
 
@@ -23,9 +24,10 @@ import os
 import oyaml as yaml
 
 
+
 if __name__ == '__main__':
     arguments = docopt(__doc__)
-    # print(arguments)
+    print(arguments)
     cache = arguments['--cache']
     markdown = arguments['--markdown']
     LABELS = arguments['--label']
@@ -33,12 +35,12 @@ if __name__ == '__main__':
     nolinks = arguments['--nolinks']
     small = arguments['--small']
     header = arguments['--header']    
-    
+    PAGES = int(arguments['--pages'])    
 
     issues = []
     download = not cache or not os.path.isfile('issues.json')
     if  download:
-        for i in range(1,4):
+        for i in range(1,PAGES):
             os.system("curl -s https://api.github.com/repos/cloudmesh-community/book/issues?page={page} > issues.json".format(page=i))
             with open("issues.json", "r") as file:
                 data = file.read()
