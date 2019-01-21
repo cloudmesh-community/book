@@ -17,6 +17,7 @@ RUN yes | pacman -Sy rsync
 RUN yes | pacman -Sy git
 RUN yes | pacman -Sy graphviz
 RUN yes | pacman -Sy make
+RUN yes | pacman -Sy biber
 #
 # INSTALL PYTHON 3.7.2
 #
@@ -31,4 +32,4 @@ RUN yes | pacman -S pandoc-crossref
 #
 # INSTALL npm
 #
-RUN yes | pacman -S npm
+#RUN yes | pacman -S npm
