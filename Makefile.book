@@ -117,13 +117,13 @@ prepare: dest_dir references generateimages version authors destination chapterl
 
 bibtex: bibtex-duplicate bibtex-cat bibtex-error bibtex-datamodel
 
-bibtex-issues:
+bibtex-issues: references
 	mkdir -p dest
 	cd dest; rm -f *.blg *_bibertool.bib
 	cd dest; cat -n references.bib
 	cd dest; biber -V --tool references.bib | fgrep -v Datamodel | fgrep -v INFO | fgrep -v Duplicate | fgrep -v Overwriting | fgrep -v ISBN
 
-bibtex-duplicate: refrerences
+bibtex-duplicate: references
 	cd dest; biber -V --tool references.bib | fgrep Duplicate
 
 bibtex-cat:
