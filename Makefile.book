@@ -255,7 +255,7 @@ issues:
 
 
 get-issues:
-	python ../bin/issues.py --markdown > ../chapters/preface/issues.md
+	python ../bin/issues.py > ../chapters/preface/issues.md
 
 
 publish: epub
