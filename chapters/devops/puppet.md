@@ -2,6 +2,8 @@
 
 :o: review has been halted as it was verified that this was not tested by the contributor. We can not accept sections and chapters that are not tested. If unclear discuss in the online hours.
 
+:o: use a $ in front of a bash command
+
 :o: use of a and the needs to be checked as it seems there is	
 a different opinion on how to use this. changes thet Gregor did were	
 for example reverted. So it is importnat that this is checked by a	
