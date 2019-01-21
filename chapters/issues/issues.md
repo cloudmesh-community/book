@@ -26,11 +26,11 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 
 
-## All Issues
+## All issues
+
+
 
 .<div class="smalltable">
-
-
 
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
@@ -111,6 +111,86 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 .</div>
 
+
+## Open Sections
+
+
+
+.<div class="smalltable">
+
+| N | # | Title | Assignee | Labels |
+| ---: | ---: | :-------------------- | :-------- | :-------- |
+| 15 | 263 | [Open: Singularity][i263] | None | chapter open section |
+| 16 | 262 | [Open: Windows subsystems for Linux][i262] | None | open section |
+| 17 | 261 | [Low Priority: Visual Studio for Cloud Computing (PyCharm is better)][i261] | None | e222 open section |
+| 20 | 258 | [Open: Apache Flink][i258] | None | chapter open section |
+| 26 | 252 | [Packer][i252] | None | open section |
+| 27 | 251 | [OpenLambda][i251] | None | open section |
+| 28 | 250 | [Fn Project][i250] | None | open section |
+| 29 | 249 | [IronFunctions][i249] | None | open section |
+| 30 | 248 | [Fission][i248] | None | open section |
+| 31 | 247 | [Riff][i247] | None | open section |
+| 32 | 246 | [OpenFaaS][i246] | None | open section |
+| 33 | 245 | [Hadoop virtual cluster installation using cloudmesh][i245] | None | open section |
+| 34 | 244 | [Google IaaS Cloud Services][i244] | None | open section |
+| 35 | 243 | [Artificial intelligence service with REST][i243] | None | open section |
+| 36 | 242 | [Scikit-Learn][i242] | None | open section |
+| 43 | 233 | [Section: AWS DocumentDB][i233] | None | open section |
+| 44 | 232 | [Section: Port forwarding][i232] | ameet20 | open section |
+| 47 | 223 | [Open: Section CircleCi][i223] | None | open section |
+
+
+.</div>
+
+
+## Open Chapters
+
+
+
+.<div class="smalltable">
+
+| N | # | Title | Assignee | Labels |
+| ---: | ---: | :-------------------- | :-------- | :-------- |
+| 15 | 263 | [Open: Singularity][i263] | None | chapter open section |
+| 18 | 260 | [Open: Cloud foundry][i260] | None | chapter open |
+| 19 | 259 | [Open: Box][i259] | None | chapter open |
+| 20 | 258 | [Open: Apache Flink][i258] | None | chapter open section |
+| 21 | 257 | [Open: Apache Avro (Python)][i257] | None | chapter open |
+| 23 | 255 | [Julia][i255] | None | chapter open |
+| 40 | 236 | [Open: EMR section(s)][i236] | None | chapter open |
+
+
+.</div>
+
+
+## Assigned Sections
+
+
+
+.<div class="smalltable">
+
+| N | # | Title | Assignee | Labels |
+| ---: | ---: | :-------------------- | :-------- | :-------- |
+| 2 | 286 | [Section: Data Services: AWS RedShift][i286] | joshish-iu | assigned section |
+| 10 | 268 | [Open: Google Drive Python interface][i268] | g14uok | assigned chapter section |
+
+
+.</div>
+
+
+## Assigned Chapters
+
+
+
+.<div class="smalltable">
+
+| N | # | Title | Assignee | Labels |
+| ---: | ---: | :-------------------- | :-------- | :-------- |
+| 10 | 268 | [Open: Google Drive Python interface][i268] | g14uok | assigned chapter section |
+| 22 | 256 | [Assigned: Chapter & Sections: Scala for cloud computing][i256] | hrbahramian | assigned chapter |
+
+
+.</div>
 
 
 

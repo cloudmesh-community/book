@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Usage: issues.py [--cache] [--linksonly] [--nolinks] [--markdown] [--state=STATE] [--label=LABEL...]
+"""Usage: issues.py [--cache] [--linksonly] [--nolinks] [--markdown] [--state=STATE] [--label=LABEL...] [--small] [--header=HEADER]
 
 Process issues from github and put them in a table, no parameter is tex
 
@@ -11,6 +11,8 @@ Options:
   --cache           if set the data is taken from a local cached issue.json file.
   --nolinks         do not print the links [default: False].
   --linksonly       only print the links [default: False].
+  --small           make the table smaller [default: False].
+  --header=HEADER   the header
   
 """
 
@@ -28,7 +30,10 @@ if __name__ == '__main__':
     markdown = arguments['--markdown']
     LABELS = arguments['--label']
     linksonly = arguments['--linksonly']
-    nolinks = arguments['--nolinks']        
+    nolinks = arguments['--nolinks']
+    small = arguments['--small']
+    header = arguments['--header']    
+    
 
     issues = []
     download = not cache or not os.path.isfile('issues.json')
@@ -93,9 +98,15 @@ if __name__ == '__main__':
             print("")
         elif not markdown:
             print("")
-            # print("# Github Issues")
+            if header:
+                print (header)
             print()
             if not linksonly:
+                if small:
+                    print()
+                    print()                                    
+                    print('.<div class="smalltable">')
+                    print()                
                 print ("| N | # | Title | Assignee | Labels |")
                 print ("| ---: | ---: | :-------------------- | :-------- | :-------- |")            
             for issue in issues:
@@ -106,6 +117,11 @@ if __name__ == '__main__':
                     if found_state(LABELS, issue) and not linksonly:
                         print(line)
             print("")
+            if small:
+                print()                                
+                print('.</div>')
+                print()                
+            
 
             if not nolinks or linksonly:
                 for issue in issues:
