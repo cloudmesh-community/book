@@ -102,7 +102,10 @@ ifeq (,$(wildcard dest/chapters/images/penguin.jpg))
 	make -f Makefile images
 endif
 
-prepare: generateimages version authors destination chapterlist references todo index issues
+dest_dir:
+	mkdir -p dest
+
+prepare: dest_dir generateimages version authors destination chapterlist references todo index issues
 	echo >> dest/chapters/version.md
 	echo >> dest/chapters/version.md
 	echo "This document can be downloaded from" >> dest/chapters/version.md
@@ -115,6 +118,7 @@ prepare: generateimages version authors destination chapterlist references todo 
 bibtex: bibtex-duplicate bibtex-cat bibtex-error bibtex-datamodel
 
 bibtex-issues:
+	mkdir -p dest
 	cd dest; rm -f *.blg *_bibertool.bib
 	cd dest; cat -n references.bib
 	cd dest; biber -V --tool references.bib | fgrep -v Datamodel | fgrep -v INFO | fgrep -v Duplicate | fgrep -v Overwriting | fgrep -v ISBN
