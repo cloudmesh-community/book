@@ -19,6 +19,7 @@ this. Maybe even separate meetin. We need to have TA in the meeting
  :o: I suggest that you do improvements backwards. Often by the end	
 sections are less worked on
 
+:o: it has been verified that this was not tested so this can not be included in this form in the document.
 
 ## Overview
 
@@ -98,14 +99,14 @@ infrastructure.
 
 First, we download tarball for given operating system and architecture. 
 
-For Ubuntu download -ubuntu-<version and arch>.tar.gz
+For Ubuntu download the `ubuntu-<version and arch>.tar.gz`
 
+:o: this is incomplete and dir is missing
 
 Second, we import Puppet public key 
 
 ```bash
-$ wget -O - https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub
-  | gpg --import
+$ wget -O - https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub | gpg --import
 ```
 
 Third, we print fingerprint of used key
