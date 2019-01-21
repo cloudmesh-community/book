@@ -1,6 +1,6 @@
 .PHONY: cloud
 
-VERSION=1.5
+VERSION=1.6
 
 all: cloud-epub bigdata-epub
 	echo done

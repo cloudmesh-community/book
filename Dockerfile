@@ -18,6 +18,8 @@ RUN yes | pacman -Sy git
 RUN yes | pacman -Sy graphviz
 RUN yes | pacman -Sy make
 RUN yes | pacman -Sy biber
+
+ENV PATH="${PATH}:/usr/bin/vendor_perl"
 #
 # INSTALL PYTHON 3.7.2
 #
