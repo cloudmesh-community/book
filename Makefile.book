@@ -245,16 +245,22 @@ todo:
 	cat dest/todo.md
 
 issues:
-	python ../bin/issues.py --cache --markdown > ../chapters/preface/issues.md
 	cat ../chapters/issues/issues-in.md > /tmp/issues.md
+
+	echo  >> /tmp/issues.md
+	echo "## All Issues" >> /tmp/issues.md
+	echo  >> /tmp/issues.md
 	echo ".<div class=\"smalltable\">" >> /tmp/issues.md
 	echo >> /tmp/issues.md
-	cat ../chapters/preface/issues.md >> /tmp/issues.md
-	echo  >> /tmp/issues.md
+	python ../bin/issues.py --cache --nolinks >> /tmp/issues.md
+	echo >> /tmp/issues.md
 	echo ".</div>" >> /tmp/issues.md
 	echo >> /tmp/issues.md
 	echo >> /tmp/issues.md
+	python ../bin/issues.py --cache --linksonly >> /tmp/issues.md
+	echo >> /tmp/issues.md
 	cp /tmp/issues.md ../chapters/issues/issues.md
+
 
 get-issues:
 	python ../bin/issues.py --markdown > ../chapters/preface/issues.md
