@@ -38,13 +38,13 @@ code is pushed from centralized server to nodes whereas in pull
 configuration nodes pulls infrastructure as code from central server
 as shown in @fig:InfrastructureAsCode.
 
-![Infrastructure As Code [hid-sp18-523-puppetimages]](Images/IAC.jpg){#fig:InfrastructureAsCode}
+![Infrastructure As Code [hid-sp18-523-puppetimages]](images/IAC.jpg){#fig:InfrastructureAsCode}
 
 
 Puppet uses push and pull configuration in centralized manner 
 as shown in @fig:push-pull-configImage.
 
-![push-pull-config Image [hid-sp18-523-puppetimages]](Images/push-pull-configuration.jpg){#fig:push-pull-configImage}
+![push-pull-config Image [hid-sp18-523-puppetimages]](images/push-pull-configuration.jpg){#fig:push-pull-configImage}
 
 
 
@@ -80,16 +80,16 @@ infrastructure.
 * All exchange between master and agent is secured through SSL
   encryption (Refer to Puppet Master Slave Connection figure below)
 
-![Master and Slave Architecture [hid-sp18-523-puppetimages]](Images/master-slave.jpg){#fig:master-slaveImage}
+![Master and Slave Architecture [hid-sp18-523-puppetimages]](images/master-slave.jpg){#fig:master-slaveImage}
 
 @fig:master-slave1Image, shows flow between master and slave.
 
-![Master Slave Workflow 1 [hid-sp18-523-puppetimages]](Images/master-slave1.jpg){#fig:master-slave1Image}
+![Master Slave Workflow 1 [hid-sp18-523-puppetimages]](images/master-slave1.jpg){#fig:master-slave1Image}
 
 @fig:master-slave-connection shows SSL workflow between
  master and slave.
 
-![Master  Slave SSL Workflow [hid-sp18-523-puppetimages]](Images/master-slave-connection.jpg){#fig:master-slave-connection Image}
+![Master  Slave SSL Workflow [hid-sp18-523-puppetimages]](images/master-slave-connection.jpg){#fig:master-slave-connection Image}
 
 ## Installation
 
