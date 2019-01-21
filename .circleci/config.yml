@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cloudmesh/book:1.4
+      - image: cloudmesh/book:1.5
     steps:
       - checkout
       - run:
