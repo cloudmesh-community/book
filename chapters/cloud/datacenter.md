@@ -793,7 +793,7 @@ all encompassing.
 
 ![Google data center PUE measurement boundaries [@www-google-eficiency]](images/datacenter-google-boundary.png){#fig:datacenter-google-boundary}
 
-@fig:datacenter-google-boundar shows the Google data center PUE
+@fig:datacenter-google-boundary shows the Google data center PUE
 measurement boundaries. The
 [average PUE](https://www.google.com/about/datacenters/efficiency/internal/) [@www-google-eficiency]
 for all Google data centers is 1.12, although we could boast a PUE as
