@@ -317,7 +317,7 @@
 - BOOK_516:
     - $ref:PREFACE
     - chapters/SECTION/SECTION-ISSUES.md:
-        - chapters/preface/issues.md
+        - chapters/issues/issues.md
     - chapters/SECTION/SECTION-QUICK516.md:
         - chapters/quick516.md
         - chapters/assignment.md
