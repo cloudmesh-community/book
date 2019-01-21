@@ -1,5 +1,98 @@
 [
     {
+        "url": "https://api.github.com/repos/cloudmesh-community/book/issues/289",
+        "repository_url": "https://api.github.com/repos/cloudmesh-community/book",
+        "labels_url": "https://api.github.com/repos/cloudmesh-community/book/issues/289/labels{/name}",
+        "comments_url": "https://api.github.com/repos/cloudmesh-community/book/issues/289/comments",
+        "events_url": "https://api.github.com/repos/cloudmesh-community/book/issues/289/events",
+        "html_url": "https://github.com/cloudmesh-community/book/issues/289",
+        "id": 401374677,
+        "node_id": "MDU6SXNzdWU0MDEzNzQ2Nzc=",
+        "number": 289,
+        "title": "add to datacenter section",
+        "user": {
+            "login": "laszewsk",
+            "id": 425045,
+            "node_id": "MDQ6VXNlcjQyNTA0NQ==",
+            "avatar_url": "https://avatars1.githubusercontent.com/u/425045?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/laszewsk",
+            "html_url": "https://github.com/laszewsk",
+            "followers_url": "https://api.github.com/users/laszewsk/followers",
+            "following_url": "https://api.github.com/users/laszewsk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/laszewsk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/laszewsk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/laszewsk/subscriptions",
+            "organizations_url": "https://api.github.com/users/laszewsk/orgs",
+            "repos_url": "https://api.github.com/users/laszewsk/repos",
+            "events_url": "https://api.github.com/users/laszewsk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/laszewsk/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "labels": [
+            {
+                "id": 1184623305,
+                "node_id": "MDU6TGFiZWwxMTg0NjIzMzA1",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/internal",
+                "name": "internal",
+                "color": "b7f4ff",
+                "default": false
+            }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": {
+            "login": "tbalson",
+            "id": 35174748,
+            "node_id": "MDQ6VXNlcjM1MTc0NzQ4",
+            "avatar_url": "https://avatars2.githubusercontent.com/u/35174748?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/tbalson",
+            "html_url": "https://github.com/tbalson",
+            "followers_url": "https://api.github.com/users/tbalson/followers",
+            "following_url": "https://api.github.com/users/tbalson/following{/other_user}",
+            "gists_url": "https://api.github.com/users/tbalson/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/tbalson/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/tbalson/subscriptions",
+            "organizations_url": "https://api.github.com/users/tbalson/orgs",
+            "repos_url": "https://api.github.com/users/tbalson/repos",
+            "events_url": "https://api.github.com/users/tbalson/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/tbalson/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "assignees": [
+            {
+                "login": "tbalson",
+                "id": 35174748,
+                "node_id": "MDQ6VXNlcjM1MTc0NzQ4",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/35174748?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/tbalson",
+                "html_url": "https://github.com/tbalson",
+                "followers_url": "https://api.github.com/users/tbalson/followers",
+                "following_url": "https://api.github.com/users/tbalson/following{/other_user}",
+                "gists_url": "https://api.github.com/users/tbalson/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/tbalson/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/tbalson/subscriptions",
+                "organizations_url": "https://api.github.com/users/tbalson/orgs",
+                "repos_url": "https://api.github.com/users/tbalson/repos",
+                "events_url": "https://api.github.com/users/tbalson/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/tbalson/received_events",
+                "type": "User",
+                "site_admin": false
+            }
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2019-01-21T14:20:55Z",
+        "updated_at": "2019-01-21T14:32:35Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "body": "https://www.datacenterknowledge.com/archives/2017/03/02/aws-outage-that-broke-the-internet-caused-by-mistyped-command/\r\n"
+    },
+    {
         "url": "https://api.github.com/repos/cloudmesh-community/book/issues/288",
         "repository_url": "https://api.github.com/repos/cloudmesh-community/book",
         "labels_url": "https://api.github.com/repos/cloudmesh-community/book/issues/288/labels{/name}",
@@ -30,15 +123,84 @@
             "type": "User",
             "site_admin": false
         },
-        "labels": [],
+        "labels": [
+            {
+                "id": 1184623305,
+                "node_id": "MDU6TGFiZWwxMTg0NjIzMzA1",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/internal",
+                "name": "internal",
+                "color": "b7f4ff",
+                "default": false
+            }
+        ],
         "state": "open",
         "locked": false,
-        "assignee": null,
-        "assignees": [],
+        "assignee": {
+            "login": "bfeng",
+            "id": 683246,
+            "node_id": "MDQ6VXNlcjY4MzI0Ng==",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/683246?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/bfeng",
+            "html_url": "https://github.com/bfeng",
+            "followers_url": "https://api.github.com/users/bfeng/followers",
+            "following_url": "https://api.github.com/users/bfeng/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bfeng/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bfeng/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bfeng/subscriptions",
+            "organizations_url": "https://api.github.com/users/bfeng/orgs",
+            "repos_url": "https://api.github.com/users/bfeng/repos",
+            "events_url": "https://api.github.com/users/bfeng/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bfeng/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "assignees": [
+            {
+                "login": "bfeng",
+                "id": 683246,
+                "node_id": "MDQ6VXNlcjY4MzI0Ng==",
+                "avatar_url": "https://avatars0.githubusercontent.com/u/683246?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/bfeng",
+                "html_url": "https://github.com/bfeng",
+                "followers_url": "https://api.github.com/users/bfeng/followers",
+                "following_url": "https://api.github.com/users/bfeng/following{/other_user}",
+                "gists_url": "https://api.github.com/users/bfeng/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/bfeng/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/bfeng/subscriptions",
+                "organizations_url": "https://api.github.com/users/bfeng/orgs",
+                "repos_url": "https://api.github.com/users/bfeng/repos",
+                "events_url": "https://api.github.com/users/bfeng/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/bfeng/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            {
+                "login": "pulasthi",
+                "id": 724075,
+                "node_id": "MDQ6VXNlcjcyNDA3NQ==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/724075?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/pulasthi",
+                "html_url": "https://github.com/pulasthi",
+                "followers_url": "https://api.github.com/users/pulasthi/followers",
+                "following_url": "https://api.github.com/users/pulasthi/following{/other_user}",
+                "gists_url": "https://api.github.com/users/pulasthi/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/pulasthi/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/pulasthi/subscriptions",
+                "organizations_url": "https://api.github.com/users/pulasthi/orgs",
+                "repos_url": "https://api.github.com/users/pulasthi/repos",
+                "events_url": "https://api.github.com/users/pulasthi/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/pulasthi/received_events",
+                "type": "User",
+                "site_admin": false
+            }
+        ],
         "milestone": null,
         "comments": 1,
         "created_at": "2019-01-20T07:01:43Z",
-        "updated_at": "2019-01-20T07:06:00Z",
+        "updated_at": "2019-01-21T13:59:44Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": "This is a follow up to a still incomplete issue with figure captions as it has been overloocked in #186\r\n\r\nList of figures in current text that are missing bibtex references. Please note this has to be done immediately as to make sure the figure numbers are correct reference here it is for the cloud epub\r\n\r\n- [ ] 17\r\n- [ ] 20\r\n- [ ] 21\r\n- [ ] 24\r\n- [ ] 25\r\n- [ ] 27\r\n- [ ] 28\r\n- [ ] 30\r\n- [ ] 31\r\n- [ ] 32\r\n- [ ] 33\r\n- [ ] 34\r\n- [ ] 35\r\n- [ ] 36\r\n- [ ] 37\r\n- [ ] 57\r\n- [ ] 58\r\n- [ ] 59\r\n- [ ] 100\r\n- [ ] 101\r\n- [ ] 102\r\n- [ ] 105\r\n- [ ] 106, shortly afterthere is also a [cite] in text that needs to be bibtex\r\n- [ ] 119\r\n- [ ] 142\r\n- [ ] 143\r\n- [ ] 199\r\n\r\nCaptions done wrong:\r\n- [ ] Chameleon Cloud Racks\r\n- [ ] the image above \u201chttps://github.com/d3/d3/wiki/Gallery\u201d\r\n\r\nThe following needs to be done to avoid citations:\r\n\r\n- [ ] replace all images 145 - 150 with our own. Not yet sure which ... so we do not have to cite. Maybe an image of the boat?\r\n- [ ] Also see 167, this also may have to be done differently\r\n"
@@ -267,7 +429,7 @@
         "id": 400900287,
         "node_id": "MDU6SXNzdWU0MDA5MDAyODc=",
         "number": 282,
-        "title": "Open: Chapter on Apache Spark",
+        "title": "Assigned: Chapter on Apache Spark",
         "user": {
             "login": "anthonyduer",
             "id": 42132574,
@@ -288,15 +450,64 @@
             "type": "User",
             "site_admin": false
         },
-        "labels": [],
+        "labels": [
+            {
+                "id": 1183433792,
+                "node_id": "MDU6TGFiZWwxMTgzNDMzNzky",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/assigned",
+                "name": "assigned",
+                "color": "80edda",
+                "default": false
+            }
+        ],
         "state": "open",
         "locked": false,
-        "assignee": null,
-        "assignees": [],
+        "assignee": {
+            "login": "anthonyduer",
+            "id": 42132574,
+            "node_id": "MDQ6VXNlcjQyMTMyNTc0",
+            "avatar_url": "https://avatars3.githubusercontent.com/u/42132574?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/anthonyduer",
+            "html_url": "https://github.com/anthonyduer",
+            "followers_url": "https://api.github.com/users/anthonyduer/followers",
+            "following_url": "https://api.github.com/users/anthonyduer/following{/other_user}",
+            "gists_url": "https://api.github.com/users/anthonyduer/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/anthonyduer/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/anthonyduer/subscriptions",
+            "organizations_url": "https://api.github.com/users/anthonyduer/orgs",
+            "repos_url": "https://api.github.com/users/anthonyduer/repos",
+            "events_url": "https://api.github.com/users/anthonyduer/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/anthonyduer/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "assignees": [
+            {
+                "login": "anthonyduer",
+                "id": 42132574,
+                "node_id": "MDQ6VXNlcjQyMTMyNTc0",
+                "avatar_url": "https://avatars3.githubusercontent.com/u/42132574?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/anthonyduer",
+                "html_url": "https://github.com/anthonyduer",
+                "followers_url": "https://api.github.com/users/anthonyduer/followers",
+                "following_url": "https://api.github.com/users/anthonyduer/following{/other_user}",
+                "gists_url": "https://api.github.com/users/anthonyduer/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/anthonyduer/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/anthonyduer/subscriptions",
+                "organizations_url": "https://api.github.com/users/anthonyduer/orgs",
+                "repos_url": "https://api.github.com/users/anthonyduer/repos",
+                "events_url": "https://api.github.com/users/anthonyduer/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/anthonyduer/received_events",
+                "type": "User",
+                "site_admin": false
+            }
+        ],
         "milestone": null,
         "comments": 0,
         "created_at": "2019-01-18T21:44:13Z",
-        "updated_at": "2019-01-18T21:44:13Z",
+        "updated_at": "2019-01-21T14:33:31Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": "Expand the Spark section to a full chapter including theory, installation instructions, how to set up a cluster, basic data import, cleaning, and modeling sections. Include new examples showing different modeling techniques and analysis."
@@ -425,15 +636,64 @@
             "type": "User",
             "site_admin": false
         },
-        "labels": [],
+        "labels": [
+            {
+                "id": 1183433792,
+                "node_id": "MDU6TGFiZWwxMTgzNDMzNzky",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/assigned",
+                "name": "assigned",
+                "color": "80edda",
+                "default": false
+            }
+        ],
         "state": "open",
         "locked": false,
-        "assignee": null,
-        "assignees": [],
+        "assignee": {
+            "login": "tvangalapat",
+            "id": 46529297,
+            "node_id": "MDQ6VXNlcjQ2NTI5Mjk3",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/46529297?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/tvangalapat",
+            "html_url": "https://github.com/tvangalapat",
+            "followers_url": "https://api.github.com/users/tvangalapat/followers",
+            "following_url": "https://api.github.com/users/tvangalapat/following{/other_user}",
+            "gists_url": "https://api.github.com/users/tvangalapat/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/tvangalapat/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/tvangalapat/subscriptions",
+            "organizations_url": "https://api.github.com/users/tvangalapat/orgs",
+            "repos_url": "https://api.github.com/users/tvangalapat/repos",
+            "events_url": "https://api.github.com/users/tvangalapat/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/tvangalapat/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "assignees": [
+            {
+                "login": "tvangalapat",
+                "id": 46529297,
+                "node_id": "MDQ6VXNlcjQ2NTI5Mjk3",
+                "avatar_url": "https://avatars0.githubusercontent.com/u/46529297?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/tvangalapat",
+                "html_url": "https://github.com/tvangalapat",
+                "followers_url": "https://api.github.com/users/tvangalapat/followers",
+                "following_url": "https://api.github.com/users/tvangalapat/following{/other_user}",
+                "gists_url": "https://api.github.com/users/tvangalapat/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/tvangalapat/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/tvangalapat/subscriptions",
+                "organizations_url": "https://api.github.com/users/tvangalapat/orgs",
+                "repos_url": "https://api.github.com/users/tvangalapat/repos",
+                "events_url": "https://api.github.com/users/tvangalapat/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/tvangalapat/received_events",
+                "type": "User",
+                "site_admin": false
+            }
+        ],
         "milestone": null,
         "comments": 0,
         "created_at": "2019-01-18T01:42:48Z",
-        "updated_at": "2019-01-18T01:42:48Z",
+        "updated_at": "2019-01-21T14:01:21Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": "Amazon SageMaker is AWS Cloud based Notebook"
@@ -562,15 +822,64 @@
             "type": "User",
             "site_admin": false
         },
-        "labels": [],
+        "labels": [
+            {
+                "id": 1184623305,
+                "node_id": "MDU6TGFiZWwxMTg0NjIzMzA1",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/internal",
+                "name": "internal",
+                "color": "b7f4ff",
+                "default": false
+            }
+        ],
         "state": "open",
         "locked": false,
-        "assignee": null,
-        "assignees": [],
+        "assignee": {
+            "login": "bfeng",
+            "id": 683246,
+            "node_id": "MDQ6VXNlcjY4MzI0Ng==",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/683246?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/bfeng",
+            "html_url": "https://github.com/bfeng",
+            "followers_url": "https://api.github.com/users/bfeng/followers",
+            "following_url": "https://api.github.com/users/bfeng/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bfeng/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bfeng/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bfeng/subscriptions",
+            "organizations_url": "https://api.github.com/users/bfeng/orgs",
+            "repos_url": "https://api.github.com/users/bfeng/repos",
+            "events_url": "https://api.github.com/users/bfeng/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bfeng/received_events",
+            "type": "User",
+            "site_admin": false
+        },
+        "assignees": [
+            {
+                "login": "bfeng",
+                "id": 683246,
+                "node_id": "MDQ6VXNlcjY4MzI0Ng==",
+                "avatar_url": "https://avatars0.githubusercontent.com/u/683246?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/bfeng",
+                "html_url": "https://github.com/bfeng",
+                "followers_url": "https://api.github.com/users/bfeng/followers",
+                "following_url": "https://api.github.com/users/bfeng/following{/other_user}",
+                "gists_url": "https://api.github.com/users/bfeng/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/bfeng/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/bfeng/subscriptions",
+                "organizations_url": "https://api.github.com/users/bfeng/orgs",
+                "repos_url": "https://api.github.com/users/bfeng/repos",
+                "events_url": "https://api.github.com/users/bfeng/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/bfeng/received_events",
+                "type": "User",
+                "site_admin": false
+            }
+        ],
         "milestone": null,
-        "comments": 0,
+        "comments": 1,
         "created_at": "2019-01-18T01:16:43Z",
-        "updated_at": "2019-01-18T01:16:43Z",
+        "updated_at": "2019-01-21T14:05:26Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": "Please provide push access to below directory so that I can upload files for puppet paper-\r\n\r\nhttps://github.com/cloudmesh-community/book/upload/master/chapters/devops/images\r\n\r\n"
@@ -804,7 +1113,16 @@
             "type": "User",
             "site_admin": false
         },
-        "labels": [],
+        "labels": [
+            {
+                "id": 1184623305,
+                "node_id": "MDU6TGFiZWwxMTg0NjIzMzA1",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/internal",
+                "name": "internal",
+                "color": "b7f4ff",
+                "default": false
+            }
+        ],
         "state": "open",
         "locked": false,
         "assignee": {
@@ -845,6 +1163,46 @@
                 "repos_url": "https://api.github.com/users/bfeng/repos",
                 "events_url": "https://api.github.com/users/bfeng/events{/privacy}",
                 "received_events_url": "https://api.github.com/users/bfeng/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            {
+                "login": "pulasthi",
+                "id": 724075,
+                "node_id": "MDQ6VXNlcjcyNDA3NQ==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/724075?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/pulasthi",
+                "html_url": "https://github.com/pulasthi",
+                "followers_url": "https://api.github.com/users/pulasthi/followers",
+                "following_url": "https://api.github.com/users/pulasthi/following{/other_user}",
+                "gists_url": "https://api.github.com/users/pulasthi/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/pulasthi/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/pulasthi/subscriptions",
+                "organizations_url": "https://api.github.com/users/pulasthi/orgs",
+                "repos_url": "https://api.github.com/users/pulasthi/repos",
+                "events_url": "https://api.github.com/users/pulasthi/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/pulasthi/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            {
+                "login": "tbalson",
+                "id": 35174748,
+                "node_id": "MDQ6VXNlcjM1MTc0NzQ4",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/35174748?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/tbalson",
+                "html_url": "https://github.com/tbalson",
+                "followers_url": "https://api.github.com/users/tbalson/followers",
+                "following_url": "https://api.github.com/users/tbalson/following{/other_user}",
+                "gists_url": "https://api.github.com/users/tbalson/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/tbalson/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/tbalson/subscriptions",
+                "organizations_url": "https://api.github.com/users/tbalson/orgs",
+                "repos_url": "https://api.github.com/users/tbalson/repos",
+                "events_url": "https://api.github.com/users/tbalson/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/tbalson/received_events",
                 "type": "User",
                 "site_admin": false
             },
@@ -908,7 +1266,7 @@
         },
         "comments": 0,
         "created_at": "2019-01-16T15:13:03Z",
-        "updated_at": "2019-01-16T15:13:17Z",
+        "updated_at": "2019-01-21T14:29:07Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": ""
@@ -1210,7 +1568,16 @@
             "type": "User",
             "site_admin": false
         },
-        "labels": [],
+        "labels": [
+            {
+                "id": 1183433792,
+                "node_id": "MDU6TGFiZWwxMTgzNDMzNzky",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/assigned",
+                "name": "assigned",
+                "color": "80edda",
+                "default": false
+            }
+        ],
         "state": "open",
         "locked": false,
         "assignee": {
@@ -1294,7 +1661,7 @@
         },
         "comments": 0,
         "created_at": "2019-01-16T14:58:47Z",
-        "updated_at": "2019-01-16T15:12:28Z",
+        "updated_at": "2019-01-21T14:26:37Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": ""
@@ -2772,7 +3139,16 @@
             "type": "User",
             "site_admin": false
         },
-        "labels": [],
+        "labels": [
+            {
+                "id": 1184623305,
+                "node_id": "MDU6TGFiZWwxMTg0NjIzMzA1",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/internal",
+                "name": "internal",
+                "color": "b7f4ff",
+                "default": false
+            }
+        ],
         "state": "open",
         "locked": false,
         "assignee": {
@@ -2820,7 +3196,7 @@
         "milestone": null,
         "comments": 0,
         "created_at": "2019-01-14T15:14:09Z",
-        "updated_at": "2019-01-14T15:14:20Z",
+        "updated_at": "2019-01-21T14:01:46Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": "Search 2019 cloud trends and identify trends and technologies \r\n\r\nwe like that new technologies if they are not covered in the book will be added, however remember that we have 1000 pages on technologies elsewhere which we could leverage from."
@@ -3414,12 +3790,32 @@
                 "received_events_url": "https://api.github.com/users/ameet20/received_events",
                 "type": "User",
                 "site_admin": false
+            },
+            {
+                "login": "zhengyili4321",
+                "id": 46538081,
+                "node_id": "MDQ6VXNlcjQ2NTM4MDgx",
+                "avatar_url": "https://avatars1.githubusercontent.com/u/46538081?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/zhengyili4321",
+                "html_url": "https://github.com/zhengyili4321",
+                "followers_url": "https://api.github.com/users/zhengyili4321/followers",
+                "following_url": "https://api.github.com/users/zhengyili4321/following{/other_user}",
+                "gists_url": "https://api.github.com/users/zhengyili4321/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/zhengyili4321/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/zhengyili4321/subscriptions",
+                "organizations_url": "https://api.github.com/users/zhengyili4321/orgs",
+                "repos_url": "https://api.github.com/users/zhengyili4321/repos",
+                "events_url": "https://api.github.com/users/zhengyili4321/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/zhengyili4321/received_events",
+                "type": "User",
+                "site_admin": false
             }
         ],
         "milestone": null,
         "comments": 1,
         "created_at": "2019-01-10T15:46:28Z",
-        "updated_at": "2019-01-10T17:45:17Z",
+        "updated_at": "2019-01-21T14:30:44Z",
         "closed_at": null,
         "author_association": "NONE",
         "body": "update ssh port forwarding and ssh tunneling"
@@ -4151,6 +4547,46 @@
                 "site_admin": false
             },
             {
+                "login": "pulasthi",
+                "id": 724075,
+                "node_id": "MDQ6VXNlcjcyNDA3NQ==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/724075?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/pulasthi",
+                "html_url": "https://github.com/pulasthi",
+                "followers_url": "https://api.github.com/users/pulasthi/followers",
+                "following_url": "https://api.github.com/users/pulasthi/following{/other_user}",
+                "gists_url": "https://api.github.com/users/pulasthi/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/pulasthi/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/pulasthi/subscriptions",
+                "organizations_url": "https://api.github.com/users/pulasthi/orgs",
+                "repos_url": "https://api.github.com/users/pulasthi/repos",
+                "events_url": "https://api.github.com/users/pulasthi/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/pulasthi/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            {
+                "login": "tbalson",
+                "id": 35174748,
+                "node_id": "MDQ6VXNlcjM1MTc0NzQ4",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/35174748?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/tbalson",
+                "html_url": "https://github.com/tbalson",
+                "followers_url": "https://api.github.com/users/tbalson/followers",
+                "following_url": "https://api.github.com/users/tbalson/following{/other_user}",
+                "gists_url": "https://api.github.com/users/tbalson/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/tbalson/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/tbalson/subscriptions",
+                "organizations_url": "https://api.github.com/users/tbalson/orgs",
+                "repos_url": "https://api.github.com/users/tbalson/repos",
+                "events_url": "https://api.github.com/users/tbalson/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/tbalson/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            {
                 "login": "zhengyili4321",
                 "id": 46538081,
                 "node_id": "MDQ6VXNlcjQ2NTM4MDgx",
@@ -4210,7 +4646,7 @@
         },
         "comments": 3,
         "created_at": "2018-10-31T11:08:49Z",
-        "updated_at": "2019-01-18T19:54:39Z",
+        "updated_at": "2019-01-21T14:29:58Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": "verify that all images in book in all sections have the +@fig:label syntax \r\nintroduce the label\r\n\r\nwrite down all files that have an issue so that a sentence can be created that is grammatically correct and makes sense by Bo\r\n\r\nWrong captions in the files. Make sure to also include a sentence with the ref to the figure and not just the caption, make sure the caption has a citation to avoid plagiarizm\r\n\r\n- [x] understand numbered figure refernces, see notation.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/cloud/datacenter.md - bo \r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/arch.md -zh \r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/iaas/aws/aws.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/iaas/watson/watson.md (also md format issues)\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/iaas/gcloud/gcloud.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/iaas/openstack/openstack.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/mapreduce/spark-streaming.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/mapreduce/amazon-emr-1.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/prg/python/opencv/opencv.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/prg/python/opencv/secchi.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/prg/python/scipy/scipy.md \r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/prg/python/scikit-learn/scikit-learn-k-means.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/prg/python/random-forest/random-forest.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/prg/python/fingerprint/fingerprint.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/prg/python/facedetection/facedetection.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] chapters/msg/mqtt.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] fix all **Figure** occurrences in chapters/cloud/chameleon/heat.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] fix all **Figure** occurrences in chapters/cloud/chameleon/horizon.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] fix all **Figure** occurrences in chapters/cloud/chameleon/user-guide.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] fix all **Figure** occurrences in chapters/iaas/aws/aws.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] fix all **Figure** occurrences in chapters/iaas/azure/azure.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] fix all **Figure** occurrences in chapters/iaas/mapreduce/amazon-emr-2.md\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [x] fix all **Figure** occurrences in any other md document within chapters\r\n    - [x] fixed caption\r\n    - [x] used in a sentence\r\n- [ ] Verify that all images have proper caption citations with bibtex ref\r\n"
@@ -5196,7 +5632,16 @@
             "type": "User",
             "site_admin": false
         },
-        "labels": [],
+        "labels": [
+            {
+                "id": 1184623305,
+                "node_id": "MDU6TGFiZWwxMTg0NjIzMzA1",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/internal",
+                "name": "internal",
+                "color": "b7f4ff",
+                "default": false
+            }
+        ],
         "state": "open",
         "locked": false,
         "assignee": {
@@ -5280,7 +5725,7 @@
         },
         "comments": 1,
         "created_at": "2018-10-08T19:00:31Z",
-        "updated_at": "2019-01-10T01:46:24Z",
+        "updated_at": "2019-01-21T14:02:06Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": "- [ ] technology training-kNN and clustering\r\n- [ ] web search and text mining\r\n- [ ] sensors \r\n- [ ] physics\r\n- [ ] life science\r\n- [ ] health\r\n- [ ] sports\r\n- [ ] technology for big data aplications and analytics \r\n- [ ]  e-commerce and lifestyle\r\n- [ ] radar\r\n- [ ] fix entries marked with hcomment = {ERROR},\r\n- [ ] fix entries withcomment = {ERROR},\r\n- [ ] identify missing files here\r\n\r\ncreate and verify the bibtex entries in the chapter. Also add the citation in the references section.\r\n\r\nIf unclear, come to Gregor"
@@ -5316,7 +5761,16 @@
             "type": "User",
             "site_admin": false
         },
-        "labels": [],
+        "labels": [
+            {
+                "id": 1184623305,
+                "node_id": "MDU6TGFiZWwxMTg0NjIzMzA1",
+                "url": "https://api.github.com/repos/cloudmesh-community/book/labels/internal",
+                "name": "internal",
+                "color": "b7f4ff",
+                "default": false
+            }
+        ],
         "state": "open",
         "locked": false,
         "assignee": {
@@ -5400,7 +5854,7 @@
         },
         "comments": 1,
         "created_at": "2018-10-08T18:35:18Z",
-        "updated_at": "2019-01-10T01:51:37Z",
+        "updated_at": "2019-01-21T14:03:41Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "body": "This task was e-mailed to Bo on Oct. 4th to be done on that day.\r\n\r\n"
