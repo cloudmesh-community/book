@@ -105,7 +105,7 @@ endif
 dest_dir:
 	mkdir -p dest
 
-prepare: dest_dir generateimages version authors destination chapterlist references todo index issues
+prepare: dest_dir references generateimages version authors destination chapterlist  todo index issues
 	echo >> dest/chapters/version.md
 	echo >> dest/chapters/version.md
 	echo "This document can be downloaded from" >> dest/chapters/version.md
