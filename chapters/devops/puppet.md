@@ -2,6 +2,8 @@
 
 :o: review has been halted as it was verified that this was not tested by the contributor. We can not accept sections and chapters that are not tested. If unclear discuss in the online hours.
 
+:o: create a real example possibly usingg virtual machines
+
 :o: use a $ in front of a bash command
 
 :o: use of a and the needs to be checked as it seems there is	
