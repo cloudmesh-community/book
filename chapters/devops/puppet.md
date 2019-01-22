@@ -45,13 +45,13 @@ code is pushed from centralized server to nodes whereas in pull
 configuration nodes pulls infrastructure as code from central server
 as shown in @fig:InfrastructureAsCode.
 
-![Infrastructure As Code [hid-sp18-523-puppetimages]](images/IAC.jpg){#fig:InfrastructureAsCode}
+![Infrastructure As Code [@hid-sp18-523-puppetimages]](images/IAC.jpg){#fig:InfrastructureAsCode}
 
 
 Puppet uses push and pull configuration in centralized manner 
 as shown in @fig:push-pull-configImage.
 
-![push-pull-config Image [hid-sp18-523-puppetimages]](images/push-pull-configuration.jpg){#fig:push-pull-configImage}
+![push-pull-config Image [@hid-sp18-523-puppetimages]](images/push-pull-configuration.jpg){#fig:push-pull-configImage}
 
 
 
@@ -87,16 +87,16 @@ infrastructure.
 * All exchange between master and agent is secured through SSL
   encryption (Refer to Puppet Master Slave Connection figure below)
 
-![Master and Slave Architecture [hid-sp18-523-puppetimages]](images/master-slave.jpg){#fig:master-slaveImage}
+![Master and Slave Architecture [@hid-sp18-523-puppetimages]](images/master-slave.jpg){#fig:master-slaveImage}
 
 @fig:master-slave1Image, shows flow between master and slave.
 
-![Master Slave Workflow 1 [hid-sp18-523-puppetimages]](images/master-slave1.jpg){#fig:master-slave1Image}
+![Master Slave Workflow 1 [@hid-sp18-523-puppetimages]](images/master-slave1.jpg){#fig:master-slave1Image}
 
 @fig:master-slave-connection shows SSL workflow between
  master and slave.
 
-![Master  Slave SSL Workflow [hid-sp18-523-puppetimages]](images/master-slave-connection.jpg){#fig:master-slave-connection Image}
+![Master  Slave SSL Workflow [@hid-sp18-523-puppetimages]](images/master-slave-connection.jpg){#fig:master-slave-connection Image}
 
 ## Installation
 
@@ -138,7 +138,7 @@ Troubleshooting errors and upgrading infrastructure using this type
 is simple. This installation type can easily support infrastructure
 of up to 20,000 managed nodes. Compiled master nodes can be added as
 network grows. This is recommended installation type for small to 
-mid size organizations[hid-sp18-523-mono].
+mid size organizations [@hid-sp18-523-mono].
 
 
 `pe.conf` configuration file needs to be specified in order to install
@@ -200,7 +200,7 @@ can manage large infrastucture that requires more than 20,000
 nodes.  In this type of installation different components of 
 Puppet Enterprise (master, PuppetDB and Console) are installed
 on different nodes. This installation type is recommended for
-organizations with large infrastructure needs [hid-sp18-523-split]. 
+organizations with large infrastructure needs [@hid-sp18-523-split]. 
 
 In this type of installation, we need to install componenets in 
 specific order. First master then puppet db followed by console.
@@ -314,9 +314,10 @@ are all specified in this file.
 
 Config section of Agent Node
 
-[main]
 
 ```bash
+[main]
+
 certname = <http://testing.hid520-hid523.com/>
 server = puppetserver
 environment = testing
@@ -325,9 +326,10 @@ runinterval = 4h
 
 Config section of Master Node
 
-[main]
 
 ```bash
+[main]
+
 certname =  <http://testing.hid520-hid523.com/>
 server = puppetmaster
 environment = testing
@@ -335,9 +337,10 @@ runinterval = 4h
 strict_variables = true
 ```
 
-[master]
 
 ```bash
+[master]
+
 dns_alt_names = puppetserver,puppet, <http://puppet.test.com/>
 reports = pupated
 storeconfigs_backend = puppetdb
@@ -350,7 +353,7 @@ components of puppet configuration file. Comments in config files
 are specified by prefixing hash character.Setting line consists 
 name of setting followed by equal sign, value of setting are specified 
 in this section. Setting variable value generally consists of one word 
-but multiple can be specified in rare cases[hid-sp18-523-config].
+but multiple can be specified in rare cases [@hid-sp18-523-config].
 
 ## Setting up Puppet master
 
@@ -406,7 +409,7 @@ Puppet agent is installed on all nodes that needs to be part of
 managed network. Puppet master can not reach and manage any node 
 that does  not have puppet agent installed.  
 Puppet agent can be installed and run on any Linux, Unix or 
-windows based platforms[hid-sp18-523-agent].
+windows based platforms[@hid-sp18-523-agent].
 
 
 First, we need to connect to puppet repository
@@ -435,7 +438,7 @@ signing. Puppet master communicates and manages client nodes after
 certificate is signed.
 
 Each puppet client node that needs to be managed with puppet
-is required to follow this process[hid-sp18-523-agent].
+is required to follow this process[@hid-sp18-523-agent].
 
 First, we want to view all requests on master
 
