@@ -5,6 +5,14 @@ VERSION=1.7
 all: cloud-epub bigdata-epub
 	echo done
 
+update:
+	cd big-data-applications; make update
+	cd pi; make update
+	cd cloud; make update
+	cd 222; make update
+	cd draft; make update
+
+
 publish: cloud-epub-publish bigdata-epub-publish
 	echo done
 
