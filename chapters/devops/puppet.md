@@ -1,6 +1,8 @@
 # Puppet :wave:
 
-:o: review has been halted as it was verified that this was not tested by the contributor. We can not accept sections and chapters that are not tested. If unclear discuss in the online hours.
+:o: review has been halted as it was verified that this was not tested
+by the contributor. We can not accept sections and chapters that are
+not tested. If unclear discuss in the online hours.
 
 :o: create a real example possibly usingg virtual machines
 
@@ -25,10 +27,13 @@ this. Maybe even separate meetin. We need to have TA in the meeting
  :o: I suggest that you do improvements backwards. Often by the end	
 sections are less worked on
 
-:o: it has been verified that this was not tested so this can not be included in this form in the document.
+:o: it has been verified that this was not tested so this can not be
+included in this form in the document.
 
-:o: many puppet related refernces have the same title but different URLs so they must have different titles.
+:o: many puppet related refernces have the same title but different
+URLs so they must have different titles.
 
+:o: code examples contain hyperlinks that can not work
 
 ## Overview
 
@@ -78,28 +83,28 @@ infrastructure.
 
 #### Workflow
 
-* nodes(puppet agents) sends information(for e.g IP, hardware detail,
+* nodes (puppet agents) sends information (for e.g IP, hardware detail,
   network etc.) to master. Master stores such information in manifest
   file.
 * Master node compiles catalog file containing configuration
   information that needs to be implemented on agent nodes.
-* Master pushes catalog to puppet agent nodes for implementing  
+* Master pushes catalog to puppet agent nodes for implementing
   configuration.
 * Client nodes send back updated report to Master. Master updates its
   inventory.
 * All exchange between master and agent is secured through SSL
-  encryption (Refer to Puppet Master Slave Connection figure below)
+  encryption (see @fig:master-slave)
 
-![Master and Slave Architecture [@hid-sp18-523-puppetimages]](images/master-slave.jpg){#fig:master-slaveImage}
+![Master and Slave Architecture [@hid-sp18-523-puppetimages]](images/master-slave.jpg){#fig:master-slave}
 
-@fig:master-slave1Image, shows flow between master and slave.
+@fig:master-slave1, shows flow between master and slave.
 
-![Master Slave Workflow 1 [@hid-sp18-523-puppetimages]](images/master-slave1.jpg){#fig:master-slave1Image}
+![Master Slave Workflow 1 [@hid-sp18-523-puppetimages]](images/master-slave1.jpg){#fig:master-slave1}
 
 @fig:master-slave-connection shows SSL workflow between
  master and slave.
 
-![Master  Slave SSL Workflow [@hid-sp18-523-puppetimages]](images/master-slave-connection.jpg){#fig:master-slave-connection Image}
+![Master Slave SSL Workflow [@hid-sp18-523-puppetimages]](images/master-slave-connection.jpg){#fig:master-slave-connection}
 
 ## Installation
 
@@ -361,7 +366,7 @@ but multiple can be specified in rare cases [@hid-sp18-523-config].
 ## Setting up Puppet master
 
 Puppet server software is installed on puppet master node which then
-pushes configuration to clients nodes(puppet agents).
+pushes configuration to clients nodes (puppet agents).
 
 Pull software package from repository.
 
