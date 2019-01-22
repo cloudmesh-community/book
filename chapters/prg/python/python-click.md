@@ -1,4 +1,4 @@
-# Python Click
+# Python Click :new:
 
 Click allows developers to create composable command line interfaces. It
 aims to simplify the the process of writing command line tools.
