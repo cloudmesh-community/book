@@ -108,7 +108,6 @@ results:
 
 `[test_user@localhost ~]$ cd singularity-2.5.1/ [test_user@localhost singularity-2.5.1]$ ls`
 
- 
 
 ### Configure & Build Singularity
 
