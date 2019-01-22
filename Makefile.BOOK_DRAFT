@@ -2,12 +2,8 @@ INDEX=\
   chapters/SECTION/SECTION-INCOMING.md\
   chapters/cloud/cloud-foundry.md\
   chapters/devops/puppet.md\
-  chapters/in/azure-services.md\
   chapters/in/box.md\
-  chapters/in/cloud-usecases.md\
-  chapters/in/cm-burn.md\
   chapters/in/compliance.md\
-  chapters/in/packer.md\
   chapters/in/vis.md\
   chapters/in/visual-studio.md\
   chapters/in/windows-subsystem-for-linux.md\
@@ -23,7 +19,7 @@ INDEX=\
   chapters/prg/go/go-links.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-INCOMING.md dest/chapters/cloud/cloud-foundry.md dest/chapters/devops/puppet.md dest/chapters/in/azure-services.md dest/chapters/in/box.md dest/chapters/in/cloud-usecases.md dest/chapters/in/cm-burn.md dest/chapters/in/compliance.md dest/chapters/in/packer.md dest/chapters/in/vis.md dest/chapters/in/visual-studio.md dest/chapters/in/windows-subsystem-for-linux.md dest/chapters/prg/go/go-intro.md dest/chapters/prg/go/go-install.md dest/chapters/prg/go/go-editor.md dest/chapters/prg/go/go-language.md dest/chapters/prg/go/go-libraries.md dest/chapters/prg/go/go-cmd.md dest/chapters/prg/go/go-rest.md dest/chapters/prg/go/go-openapi.md dest/chapters/prg/go/go-cloud.md dest/chapters/prg/go/go-links.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-INCOMING.md dest/chapters/cloud/cloud-foundry.md dest/chapters/devops/puppet.md dest/chapters/in/box.md dest/chapters/in/compliance.md dest/chapters/in/vis.md dest/chapters/in/visual-studio.md dest/chapters/in/windows-subsystem-for-linux.md dest/chapters/prg/go/go-intro.md dest/chapters/prg/go/go-install.md dest/chapters/prg/go/go-editor.md dest/chapters/prg/go/go-language.md dest/chapters/prg/go/go-libraries.md dest/chapters/prg/go/go-cmd.md dest/chapters/prg/go/go-rest.md dest/chapters/prg/go/go-openapi.md dest/chapters/prg/go/go-cloud.md dest/chapters/prg/go/go-links.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -39,29 +35,13 @@ dest/chapters/devops/puppet.md: ../chapters/devops/puppet.md
 	../bin/markup-single.py ../chapters/devops/puppet.md 2
 	../bin/header.py dest/chapters/devops/puppet.md 2
 
-dest/chapters/in/azure-services.md: ../chapters/in/azure-services.md
-	../bin/markup-single.py ../chapters/in/azure-services.md 2
-	../bin/header.py dest/chapters/in/azure-services.md 2
-
 dest/chapters/in/box.md: ../chapters/in/box.md
 	../bin/markup-single.py ../chapters/in/box.md 2
 	../bin/header.py dest/chapters/in/box.md 2
 
-dest/chapters/in/cloud-usecases.md: ../chapters/in/cloud-usecases.md
-	../bin/markup-single.py ../chapters/in/cloud-usecases.md 2
-	../bin/header.py dest/chapters/in/cloud-usecases.md 2
-
-dest/chapters/in/cm-burn.md: ../chapters/in/cm-burn.md
-	../bin/markup-single.py ../chapters/in/cm-burn.md 2
-	../bin/header.py dest/chapters/in/cm-burn.md 2
-
 dest/chapters/in/compliance.md: ../chapters/in/compliance.md
 	../bin/markup-single.py ../chapters/in/compliance.md 2
 	../bin/header.py dest/chapters/in/compliance.md 2
-
-dest/chapters/in/packer.md: ../chapters/in/packer.md
-	../bin/markup-single.py ../chapters/in/packer.md 2
-	../bin/header.py dest/chapters/in/packer.md 2
 
 dest/chapters/in/vis.md: ../chapters/in/vis.md
 	../bin/markup-single.py ../chapters/in/vis.md 2
