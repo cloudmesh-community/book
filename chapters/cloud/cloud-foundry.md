@@ -1,4 +1,4 @@
-# Cloud Foundry - Open Source PaaS :hand: fa18-516-11
+# Cloud Foundry - Open Source PaaS :o::hand: fa18-516-11 
  
 ---
  
