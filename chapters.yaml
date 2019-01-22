@@ -2,12 +2,8 @@
 
 - IN:
     - chapters/SECTION/SECTION-INCOMING.md:
-        - chapters/in/azure-services.md
         - chapters/in/box.md
-        - chapters/in/cloud-usecases.md
-        - chapters/in/cm-burn.md
         - chapters/in/compliance.md
-        - chapters/in/packer.md
         - chapters/in/vis.md
         - chapters/in/visual-studio.md
         - chapters/in/windows-subsystem-for-linux.md
@@ -281,12 +277,8 @@
     - chapters/SECTION/SECTION-INCOMING.md:
         - chapters/cloud/cloud-foundry.md    
         - chapters/devops/puppet.md
-        - chapters/in/azure-services.md
         - chapters/in/box.md
-        - chapters/in/cloud-usecases.md
-        - chapters/in/cm-burn.md
         - chapters/in/compliance.md
-        - chapters/in/packer.md
         - chapters/in/vis.md
         - chapters/in/visual-studio.md
         - chapters/in/windows-subsystem-for-linux.md
