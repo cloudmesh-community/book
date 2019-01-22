@@ -85,7 +85,7 @@
         - chapters/prg/go/go-links.md
 
 - DRAFTS:
-    - chapters/msg/amazon-kenesis-data-streams.md
+    - chapters/msg/amazon-kenesis-data-streams.md    
 
 - MSG:
     - chapters/MSG.md:
@@ -278,8 +278,23 @@
 # DRAFT
 # #####################################################################
 
-
 - BOOK_DRAFT:
+    - chapters/SECTION/SECTION-INCOMING.md:
+        - chapters/devops/puppet.md
+        - chapters/in/azure-services.md
+        - chapters/in/box.md
+        - chapters/in/cloud-foundary.md
+        - chapters/in/cloud-usecases.md
+        - chapters/in/cm-burn.md
+        - chapters/in/compliance.md
+        - chapters/in/packer.md
+        - chapters/in/vis.md
+        - chapters/in/visual-studio.md
+        - chapters/in/windows-subsystem-for-linux.md
+    - $ref:GO
+
+
+- BOOK_DRAFT_OLD:
     - $ref:DRAFTS
     - chapters/pi/setup-ultimate.md
     - chapters/pi/setup-dev.md

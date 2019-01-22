@@ -1146,7 +1146,7 @@ Everyone is doing it.
 
 See also
 
-*<https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
+* <https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
 
 
 ## Exercises
