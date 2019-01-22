@@ -27,6 +27,9 @@ sections are less worked on
 
 :o: it has been verified that this was not tested so this can not be included in this form in the document.
 
+:o: many puppet related refernces have the same title but different URLs so they must have different titles.
+
+
 ## Overview
 
 Configuration management is an important task of IT department in any
