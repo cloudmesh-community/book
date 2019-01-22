@@ -17,9 +17,14 @@ INDEX=\
   chapters/prg/go/go-openapi.md\
   chapters/prg/go/go-cloud.md\
   chapters/prg/go/go-links.md\
+  chapters/SECTION/SECTION-DEVTOOLS.md\
+  chapters/devops/travis.md\
+  chapters/devops/devop-azure-monitor.md\
+  chapters/devops/devop-aws.md\
+  chapters/devops/devop-ci.md\
   chapters/SECTION/SECTION-REFERENCES.md
 
-chapterlist:  dest/chapters/SECTION/SECTION-INCOMING.md dest/chapters/cloud/cloud-foundry.md dest/chapters/devops/puppet.md dest/chapters/in/box.md dest/chapters/in/compliance.md dest/chapters/in/vis.md dest/chapters/in/visual-studio.md dest/chapters/in/windows-subsystem-for-linux.md dest/chapters/prg/go/go-intro.md dest/chapters/prg/go/go-install.md dest/chapters/prg/go/go-editor.md dest/chapters/prg/go/go-language.md dest/chapters/prg/go/go-libraries.md dest/chapters/prg/go/go-cmd.md dest/chapters/prg/go/go-rest.md dest/chapters/prg/go/go-openapi.md dest/chapters/prg/go/go-cloud.md dest/chapters/prg/go/go-links.md dest/chapters/SECTION/SECTION-REFERENCES.md
+chapterlist:  dest/chapters/SECTION/SECTION-INCOMING.md dest/chapters/cloud/cloud-foundry.md dest/chapters/devops/puppet.md dest/chapters/in/box.md dest/chapters/in/compliance.md dest/chapters/in/vis.md dest/chapters/in/visual-studio.md dest/chapters/in/windows-subsystem-for-linux.md dest/chapters/prg/go/go-intro.md dest/chapters/prg/go/go-install.md dest/chapters/prg/go/go-editor.md dest/chapters/prg/go/go-language.md dest/chapters/prg/go/go-libraries.md dest/chapters/prg/go/go-cmd.md dest/chapters/prg/go/go-rest.md dest/chapters/prg/go/go-openapi.md dest/chapters/prg/go/go-cloud.md dest/chapters/prg/go/go-links.md dest/chapters/SECTION/SECTION-DEVTOOLS.md dest/chapters/devops/travis.md dest/chapters/devops/devop-azure-monitor.md dest/chapters/devops/devop-aws.md dest/chapters/devops/devop-ci.md dest/chapters/SECTION/SECTION-REFERENCES.md
 	@echo "updated modified chapters"
 
 
@@ -94,6 +99,26 @@ dest/chapters/prg/go/go-cloud.md: ../chapters/prg/go/go-cloud.md
 dest/chapters/prg/go/go-links.md: ../chapters/prg/go/go-links.md
 	../bin/markup-single.py ../chapters/prg/go/go-links.md 2
 	../bin/header.py dest/chapters/prg/go/go-links.md 2
+
+dest/chapters/SECTION/SECTION-DEVTOOLS.md: ../chapters/SECTION/SECTION-DEVTOOLS.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-DEVTOOLS.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-DEVTOOLS.md 1
+
+dest/chapters/devops/travis.md: ../chapters/devops/travis.md
+	../bin/markup-single.py ../chapters/devops/travis.md 2
+	../bin/header.py dest/chapters/devops/travis.md 2
+
+dest/chapters/devops/devop-azure-monitor.md: ../chapters/devops/devop-azure-monitor.md
+	../bin/markup-single.py ../chapters/devops/devop-azure-monitor.md 2
+	../bin/header.py dest/chapters/devops/devop-azure-monitor.md 2
+
+dest/chapters/devops/devop-aws.md: ../chapters/devops/devop-aws.md
+	../bin/markup-single.py ../chapters/devops/devop-aws.md 2
+	../bin/header.py dest/chapters/devops/devop-aws.md 2
+
+dest/chapters/devops/devop-ci.md: ../chapters/devops/devop-ci.md
+	../bin/markup-single.py ../chapters/devops/devop-ci.md 2
+	../bin/header.py dest/chapters/devops/devop-ci.md 2
 
 dest/chapters/SECTION/SECTION-REFERENCES.md: ../chapters/SECTION/SECTION-REFERENCES.md
 	../bin/markup-single.py ../chapters/SECTION/SECTION-REFERENCES.md 1
