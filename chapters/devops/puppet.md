@@ -1,6 +1,12 @@
-# Puppet :smiley:
+# Puppet :wave:
 
-:o: Tyler: use of a and the needs to be checked as it seems there is	
+:o: review has been halted as it was verified that this was not tested by the contributor. We can not accept sections and chapters that are not tested. If unclear discuss in the online hours.
+
+:o: create a real example possibly usingg virtual machines
+
+:o: use a $ in front of a bash command
+
+:o: use of a and the needs to be checked as it seems there is	
 a different opinion on how to use this. changes thet Gregor did were	
 for example reverted. So it is importnat that this is checked by a	
 second native English speaker, E.g. Tyler	
@@ -19,6 +25,7 @@ this. Maybe even separate meetin. We need to have TA in the meeting
  :o: I suggest that you do improvements backwards. Often by the end	
 sections are less worked on
 
+:o: it has been verified that this was not tested so this can not be included in this form in the document.
 
 ## Overview
 
@@ -38,13 +45,13 @@ code is pushed from centralized server to nodes whereas in pull
 configuration nodes pulls infrastructure as code from central server
 as shown in @fig:InfrastructureAsCode.
 
-![Infrastructure As Code [hid-sp18-523-puppetimages]](Images/IAC.jpg){#fig:InfrastructureAsCode}
+![Infrastructure As Code [hid-sp18-523-puppetimages]](images/IAC.jpg){#fig:InfrastructureAsCode}
 
 
 Puppet uses push and pull configuration in centralized manner 
 as shown in @fig:push-pull-configImage.
 
-![push-pull-config Image [hid-sp18-523-puppetimages]](Images/push-pull-configuration.jpg){#fig:push-pull-configImage}
+![push-pull-config Image [hid-sp18-523-puppetimages]](images/push-pull-configuration.jpg){#fig:push-pull-configImage}
 
 
 
@@ -80,16 +87,16 @@ infrastructure.
 * All exchange between master and agent is secured through SSL
   encryption (Refer to Puppet Master Slave Connection figure below)
 
-![Master and Slave Architecture [hid-sp18-523-puppetimages]](Images/master-slave.jpg){#fig:master-slaveImage}
+![Master and Slave Architecture [hid-sp18-523-puppetimages]](images/master-slave.jpg){#fig:master-slaveImage}
 
 @fig:master-slave1Image, shows flow between master and slave.
 
-![Master Slave Workflow 1 [hid-sp18-523-puppetimages]](Images/master-slave1.jpg){#fig:master-slave1Image}
+![Master Slave Workflow 1 [hid-sp18-523-puppetimages]](images/master-slave1.jpg){#fig:master-slave1Image}
 
 @fig:master-slave-connection shows SSL workflow between
  master and slave.
 
-![Master  Slave SSL Workflow [hid-sp18-523-puppetimages]](Images/master-slave-connection.jpg){#fig:master-slave-connection Image}
+![Master  Slave SSL Workflow [hid-sp18-523-puppetimages]](images/master-slave-connection.jpg){#fig:master-slave-connection Image}
 
 ## Installation
 
@@ -98,14 +105,14 @@ infrastructure.
 
 First, we download tarball for given operating system and architecture. 
 
-For Ubuntu download -ubuntu-<version and arch>.tar.gz
+For Ubuntu download the `ubuntu-<version and arch>.tar.gz`
 
+:o: this is incomplete and dir is missing
 
 Second, we import Puppet public key 
 
 ```bash
-$ wget -O - https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub
-  | gpg --import
+$ wget -O - https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub | gpg --import
 ```
 
 Third, we print fingerprint of used key
