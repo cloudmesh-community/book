@@ -118,6 +118,10 @@ Visualstudio
 
 : see <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
 
+Textmate
+
+: see <https://macromates.com/>
+
 ## Converters
 
 In addition to editors you can often convert text to markdown. However
@@ -507,4 +511,5 @@ Goggle [@www-google] is a company that offers cloud services.
 
 where www-google is the label to the bibtex entry representing the
 Google home page
+
 

@@ -1,11 +1,14 @@
 # Go Language {#s-go-language}
 
-Go is a computer language developed by Google with the goal
-to "build simple,
-reliable, and efficient software".
-The language is open source and the main Web page is <https://golang.org/>
+Go is a computer language developed by Google with the goal to "build
+simple, reliable, and efficient software".  The language is open
+source and the main Web page is <https://golang.org/>
 
-Go is specifically a systems-level programming language for large, distributed systems and highly-scalable network servers. It is meant to replace C++ and Java in terms of Google’s needs. Go was meant to alleviate some of the slowness and clumsiness of development of very large software systems.
+Go is specifically a systems-level programming language for large,
+distributed systems and highly-scalable network servers. It is meant
+to replace C++ and Java in terms of Google’s needs. Go was meant to
+alleviate some of the slowness and clumsiness of development of very
+large software systems.
 
 * slow compilation and slow execution
 * programmers that collaborate using different subsets of languages
@@ -30,16 +33,28 @@ func main() {
 }
 ```
 
-## Concurrency in Go
+## Concurrency in Go :o:
 
-### GoRoutines (execution)
+### GoRoutines (execution) :o:
 
-A GoRoutine in the Go programming language is a lightweight thread that is managed by Go runtime. If you just put ‘go’ before a function, it means that it will execute concurrently with the rest of the code.
+A GoRoutine in the Go programming language is a lightweight thread
+that is managed by Go runtime. If you just put ‘go’ before a function,
+it means that it will execute concurrently with the rest of the code.
 
-### Channels (communication)
+:o: insufficient explanation, no examples
 
-Channels are pipes that connect concurrent GoRoutines. You are able to send values and signals over Channels from GoRoutine to GoRoutine. This allows for synchronizing execution.
+### Channels (communication) :o:
 
-### Select (coordination)
+Channels are pipes that connect concurrent GoRoutines. You are able to
+send values and signals over Channels from GoRoutine to
+GoRoutine. This allows for synchronizing execution.
 
-The Select statement in Go lets you wait and watch multiple operations on a channel. Combining GoRoutines and channels will show off the true power of concurrency in Go.
+:o: insufficient explanation, no examples, CSP refernce missing
+
+### Select (coordination) :o:
+
+The Select statement in Go lets you wait and watch multiple operations
+on a channel. Combining GoRoutines and channels will show off the true
+power of concurrency in Go.
+
+:o: insufficient explanation, no examples, CSP refernce missing

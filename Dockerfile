@@ -17,11 +17,23 @@ RUN yes | pacman -Sy rsync
 RUN yes | pacman -Sy git
 RUN yes | pacman -Sy graphviz
 RUN yes | pacman -Sy make
+RUN yes | pacman -Sy biber
+
+ENV PATH="${PATH}:/usr/bin/vendor_perl"
 #
 # INSTALL PYTHON 3.7.2
 #
 RUN yes | pacman -Sy python
 RUN yes | pacman -Sy python-pip
+
+RUN pip install pandoc-mustache
+RUN pip install pprint
+RUN pip install oyaml
+RUN pip install treelib
+RUN pip install docopt
+RUN pip install mkdocs
+RUN pip install emoji
+
 #
 # INSTALL PANDOC
 #
@@ -31,4 +43,4 @@ RUN yes | pacman -S pandoc-crossref
 #
 # INSTALL npm
 #
-RUN yes | pacman -S npm
+#RUN yes | pacman -S npm

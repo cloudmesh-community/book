@@ -18,6 +18,9 @@ However the easiest way is to use our docker container.
 
 ## Ubuntu requirements :o:
 
+:wornaing: this is not yet working as we expect. For now see
+@sec:book-create-vagrant for an alternative using a virtual machine.
+
 In case you use containers in ubuntu we recommend that you use the
 docker container to compile the book as discussed in
 @sec:docker-create-book.
@@ -44,7 +47,43 @@ for feedback and improvements to the `install-ubuntu.sh` script.
 
 Once the software is installed you can scip to @sec:create-book
 
-## OSX Requirements
+## Using Windows 10
+
+We recommend that you use vagrant or docker as described in
+@sec:book-create-vagrant and @sec:docker-create-book.
+
+## Using Vagrant {#sec:book-create-vagrant}
+
+In case you have installed vagrant on your computer which is available
+for macOS, Linux, and Windows 10, you can use our vagrant file to
+start up a virtual machine that has all software installed to create
+the epub.
+
+
+First, you need to download the repository:
+
+```bash
+$ git clone https://github.com/cloudmesh-community/book.git
+$ cd book
+```
+
+Next you have to create the virtual machine with
+
+```bash
+$ vagrant up
+```
+
+You can loginto the VM with
+
+```bash
+$ vagrant ssh
+```
+
+The book folder will be mounted in the VM and you can can follow the
+instructions in @sec:docker-create-book.
+
+
+## Using OSX 
 
 The easiest way to create a system that can compile the book on macOS,
 is to use a docker container. To do so you will need to first install

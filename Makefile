@@ -1,15 +1,33 @@
 .PHONY: cloud
 
-VERSION=1.4
+VERSION=1.7
 
 all: cloud-epub bigdata-epub
 	echo done
 
+update:
+	cd big-data-applications; make update
+	cd pi; make update
+	cd cloud; make update
+	cd 222; make update
+	cd draft; make update
+
+
+publish: cloud-epub-publish bigdata-epub-publish
+	echo done
+
+
 cloud-epub:
 	cd cloud; make; make publish
 
+cloud-epub-publish:
+	cd cloud; make publish
+
 bigdata-epub:
 	cd big-data-applications; make; make publish
+
+bigdata-epub-publish:
+	cd big-data-applications; make publish
 
 communicate-epub:
 	cd communicate; make; make publish

@@ -502,11 +502,11 @@ Here, *q* is the amount of heat transferred for a given amount of time.
 For this example, we'll calculate it as W/hour as that is, conveniently,
 how energy is billed. Air moving at a moderate speed will transfer
 approximately 8.47 Watts per Square Foot per Hour. A 1U server is
-19 inches wide and 1.75 inches tall. Multiplying the two values gives us
-a cross section of 33.25 inches, or 0.23 square feet. Plugging these values
+19 inches wide and about 34 inches deep. Multiplying the two values gives us
+a cross section of 646 square inches, or 4.48 square feet. Plugging these values
 into our equation above gives us:
 
-$$q=8.47*0.23*(t_{a}-t_{s}))$${#eq:heat-transfer-example}
+$$q=8.47*4.48*(t_{a}-t_{s}))$${#eq:heat-transfer-example}
 
 This begins to point us towards why hot-cold aisles are important. If
 we introduce cold air from the AC system into the same aisle that the
@@ -517,9 +517,16 @@ temperature will become 82.5F (assuming balanced air pressure). This
 has a deleterious effect on our server cooling - warmer air takes heat
 away from warmer surfaces slower than cooler air:
 
-$$68.2=8.47*0.23*(100-65)$$
+$$1,328.2=8.47*4.48*(100-65)$$
 
-$$34.1=8.47*0.23*(100-82.5))$$
+$$664.0=8.47*4.48*(100-82.5))$$
+
+From the above, we can see that a 35 degree delta allows the center to dissipate
+1,300 Watts of waste heat from a 1U server while a 17.5 degree delta
+allows us to only dissipate 664 Watts of energy. If a server is consuming
+more than 664 Watts, it'll continue to get warmer and warmer until it
+eventually reaches a temperature differential high enough to create an
+equillibrium (or reaches a thermal throttle and begins to reduce performance).
 
 To combat this, engineers developed the idea of designating
 alternating aisles as either hot or cold. All servers in a given aisle
@@ -793,7 +800,7 @@ all encompassing.
 
 ![Google data center PUE measurement boundaries [@www-google-eficiency]](images/datacenter-google-boundary.png){#fig:datacenter-google-boundary}
 
-@fig:datacenter-google-boundar shows the Google data center PUE
+@fig:datacenter-google-boundary shows the Google data center PUE
 measurement boundaries. The
 [average PUE](https://www.google.com/about/datacenters/efficiency/internal/) [@www-google-eficiency]
 for all Google data centers is 1.12, although we could boast a PUE as
@@ -1146,7 +1153,7 @@ Everyone is doing it.
 
 See also
 
-*<https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
+* <https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
 
 
 ## Exercises
