@@ -148,7 +148,7 @@ Gathers various application metrics from the running instances, and
 teams can access these logs and metrics to monitor, support and take
 necessary actions to keep systems up and running.
 
-## Conclusion
+## Conclusion :o:
 
 Cloud Foundry is gaining traction, in the public and private
 organizations, as an open source alternative to PaaS Offerings
@@ -156,3 +156,5 @@ organizations, as an open source alternative to PaaS Offerings
 computing space as it enables scalability and best practices by
 promoting 12-factor application development.
 
+:o: This conclusion is a bit fluffy and not backed up by refernces.
+Instead of a conclusion it would be better to showcase a real example.
