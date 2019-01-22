@@ -6,7 +6,15 @@ the Github commits at
 
 * <https://github.com/cloudmesh-community/book/commits/master>
 
-for a complete list of changes.
+for a complete list of changes in reverse chronological order
+
+* Jan 21, 2019: Added gitissues separated by labels
+
+* Jan 18, 2019: A section on how to do equation in the book was added
+  (see @sec:equations).
+
+* Jan 16, 2019: Added the OpenAPI server based on yaml file
+  introspection in a @sec:openapi-introspection
 
 * Jan 15, 2019: Slight improvements in the preface:   Added this Update
   section; Added explanation ho to do
@@ -30,9 +38,4 @@ for a complete list of changes.
   have created an experimental untested install script if containers
   can not be used.
 
-* Jan 16, 2019: Added the OpenAPI server based on yaml file
-  introspection in a @sec:openapi-introspection
-
-* Jan 18, 2019 A section on how to do equation in the book was added
-  (see @sec:equations).
 
