@@ -13,7 +13,7 @@ for a complete list of changes in reverse chronological order
 * Jan 21, 2019: Added gitissues separated by labels.
 
 * Jan 18, 2019: A section on how to do equation in the book was added
-  (see @sec:equations).
+  (see @sec:equations). Updated the Datacenter Section.
 
 * Jan 16, 2019: Added the example about defining a REST service based on an OpenAPI yaml file
   (see @sec:openapi-introspection).
