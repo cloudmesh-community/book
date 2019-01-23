@@ -538,14 +538,29 @@ the provided air and the server's processor(s), reducing the amount of
 quantity of air that must be provided in order to cool the server and
 improving overall system efficiency.
 
-:o: add an image of the general hot coldisle airflow.
+See +@fig:hot-cold-isle to understand how the hot-cold isle configuration is
+setup in a data center.
 
-#### Containment :o:
+![Hot Cold Isle](images/hot-cold-isle.jpg){#fig:hot-cold-isle}
 
-:o: add a discussion of Hot Aisle Containment and Cold Aisle
-Containment <https://www.dcimpro360.com/air-flow-containment/> I
-suggest even to include some images. Maybe you can locate better
-images?
+Source: <https://www.joepowell.com/4-steps-to-better-data-center-cooling/>
+
+#### Containment
+
+While modern data centers employ highly sophisticated mechanisms to be as 
+energy efficient as possible. One such mechanism which can be seen as a
+improvement on top of the Hot-Cold isle arrange is to use either hot isle
+containment or cold isle containment. Using a containment system can remove the 
+issue with free flowing air.
+
+As the name somewhat implies in cold air containment, the data centers is
+designed so that only cold air goes into the cold isle, this makes sure that
+the system only draws in cold air for cooling purposes. Conversely in hot isle
+containment design, the hot isle is contained so that the hot air collected 
+in the hot isle is drawn out by the cooling system and so that the cold air
+does not flow into the hot isles.
+
+Source: <https://www.datacenterknowledge.com/archives/2012/11/08/approaches-to-data-center-containment>
 
 ##### Water Cooled Doors
 
