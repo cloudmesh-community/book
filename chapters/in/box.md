@@ -27,8 +27,9 @@ Once you have created a Box account, go to the Developer Console and select Crea
 You will need to select what type of application you are building and an authentication method for your app and then enter an app name (you can change this later). Once the app is created you will receive a Developer Token that is valid for 60 minutes. You can implement authentication following the instructions in the Quickstart Guide https://developer.box.com/docs/quickstart-guides or use the Developer Token for temporary purposes. This token can be refreshed in the Configuration panel of the Developer Console. 
 
 Create an app configuration file:
-Find the Developer Token, Client ID, and Client Secret in the Configuration panel on the Developer Console:
-![Configuration Image](../images/Box Configuration.png)
+Find the Developer Token, Client ID, and Client Secret in the Configuration panel on the Developer Console @fig:box-config:
+
+![Configuration Image](Box Configuration.png){#fig:box-config}
 
 app.cfg:
 
