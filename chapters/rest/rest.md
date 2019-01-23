@@ -94,7 +94,7 @@ GET
 :   Retrieve a representation of the addressed member of the collection,
     expressed in an appropriate internet media type.
 
-PUST
+PUT
 
 :   Replace the addressed member of the collection, or if it does not
     exist, create it.
