@@ -1,7 +1,14 @@
 # Box :o: :question:
 
 
-what is box
+Box is cloud service that allows users to store, access, collaborate, and share files. Box also has its own platform offering APIs in multiple languages and an SDK for the development of custom applications and integrations. Box offers free and paid versions for individual accounts and multiple types of business accounts that are charged on a per user basis. 
+
+Limitations: 
+
+- While Box offers unlimited storage, it's biggest business account has a 5GB file size limit with a 2GB limit on the smallest business plan and 250MB on the unpaid personal plan. Other services have no individual file size limit. 
+- Using Box Sync grants the user full access to the data in the sync, including the ability to delete the data. Restoring data yourself only restores flat-folders and not nested ones, in order to fully restore everything Box must do the restoration. 
+- Problems when two users edit the same file at the same time, unlike other collaboration tools
+- While there is no official limit on the number of files uploaded at one time, Box itself recommends users not exceed 100,000 files at a time
 
 Link:
 
