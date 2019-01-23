@@ -4,6 +4,14 @@
 
 Box is cloud service that allows users to store, access, collaborate, and share files. Box also has its own platform offering APIs in multiple languages and an SDK for the development of custom applications and integrations. Box offers free and paid versions for individual accounts and multiple types of business accounts that are charged on a per user basis. 
 
+REST:
+
+https://developer.box.com/reference
+
+Installation:
+
+    pip install boxsdk
+
 ## Limitations: 
 
 - While Box offers unlimited storage, it's biggest business account has a 5GB file size limit with a 2GB limit on the smallest business plan and 250MB on the unpaid personal plan. Other services have no individual file size limit. 
@@ -11,14 +19,6 @@ Box is cloud service that allows users to store, access, collaborate, and share 
 - Problems when two users edit the same file at the same time, unlike other collaboration tools
 - While there is no official limit on the number of files uploaded at one time, Box itself recommends users not exceed 100,000 files at a time
 - Deleting a user's account also deletes all the information they own, which can be problematic for users leaving a company
-
-REST:
-
-https://developer.box.com/reference
-
-Install:
-
-    pip install boxsdk
 
 ## Creating an app:
 
@@ -56,26 +56,33 @@ In your app, read in this configuration file and use it to create an authenticat
     #Create authenticated client
     client = Client(oauth2)
 
-### Get information about the user (in this case the owner of the Developer Token):
+## Box Methods
 
-    # Get information about the logged in user (that's whoever owns the developer token)
+The Python SDK has several methods for creating objects and endpoints which you can then perform operations on, including: 
+- client.user(user_id)
+- client.folder(folder_id)
+- client.file(file_id)
+- client.search()
+- client.events()
+
+ 
+
+### Get information about a Box object:
+
+    # Get information about the logged in user (that's whoever owns the developer token):
     user = client.user().get()
-    
-    #User's name
     print(user.name)
-    
-    #User's email
     print(user.login)
-    
-    #URL to user's avatar
     print(user.avatar_url)
+    
+    # Get information about the root folder (referenced by id '0'):
+    folder = client.folder('0').get()
+    print(folder.name)
+    print(folder.item_status)
 
-
-
-    root_folder = client.folder('0')
-    root_folder_with_info = root_folder.get()
-
-    print (root_folder_with_info)
+    # Get specific fields in one call:
+    folder = client.folder('0').get(fields = ['created_at', 'size'])
+    print(folder)
 
 Questions
 
