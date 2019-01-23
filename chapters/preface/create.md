@@ -18,7 +18,7 @@ However the easiest way is to use our docker container.
 
 ## Ubuntu requirements :o:
 
-:wornaing: this is not yet working as we expect. For now see
+:warning: this is not yet working as we expect. For now see
 @sec:book-create-vagrant for an alternative using a virtual machine.
 
 In case you use containers in ubuntu we recommend that you use the

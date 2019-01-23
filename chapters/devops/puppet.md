@@ -57,9 +57,9 @@ as shown in @fig:InfrastructureAsCode.
 
 
 Puppet uses push and pull configuration in centralized manner 
-as shown in @fig:push-pull-configImage.
+as shown in @fig:push-pull-config.
 
-![push-pull-config Image [@hid-sp18-523-puppetimages]](images/push-pull-configuration.jpg){#fig:push-pull-configImage}
+![push-pull-config Image [@hid-sp18-523-puppetimages]](images/push-pull-configuration.jpg){#fig:push-pull-config}
 
 
 
@@ -74,7 +74,7 @@ configuration.
 
 ## Master slave architecture
 
-Puppet uses master slave architecture as shown in @fig:master-slaveImage. 
+Puppet uses master slave architecture as shown in @fig:master-slave. 
 Puppet server is called as master node and client nodes are called as puppet 
 agent. Agents poll server at regular interval and pulls updated  configuration 
 from master. Puppet Master is highly available. It supports multi master 
