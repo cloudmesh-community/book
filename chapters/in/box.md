@@ -31,13 +31,7 @@ Find the Developer Token, Client ID, and Client Secret in the Configuration pane
 
 ![Configuration Image](box_configuration.png){#fig:box-config}
 
-app.cfg:
-
-    * A Box client ID for a Box application
-    * The corresponding Box client secret
-    * A valid developer token for that application
-
-code:
+Create a configuration file with each of these on a separate line, app.cfg. In your app, read in this configuration file and use it to create an authenticated client: 
 
     # Import two classes from the boxsdk module - Client and OAuth2
     from boxsdk import Client, OAuth2
@@ -52,18 +46,27 @@ code:
       CLIENT_ID = app_cfg.readline()
       CLIENT_SECRET = app_cfg.readline()
       ACCESS_TOKEN = app_cfg.readline()
-
-    # Create OAuth2 object. It's already authenticated, thanks to the developer token.
+    #Create OAuth object using Developer Token
     oauth2 = OAuth2(CLIENT_ID, CLIENT_SECRET, access_token=ACCESS_TOKEN)
+    
+    #Create authenticated client
+    client = Client(oauth2)
 
-    # Create the authenticated client
-    client = Client(oauth2, LoggingNetwork())
+Get information about the user (in this case the owner of the Developer Token):
 
     # Get information about the logged in user (that's whoever owns the developer token)
-    my = client.user(user_id='me').get()
-    print (my.name)
-    print (my.login)
-    print (my.avatar_url)
+    user = client.user().get()
+    
+    #User's name
+    print(user.name)
+    
+    #User's email
+    print(user.login)
+    
+    #URL to user's avatar
+    print(user.avatar_url)
+
+
 
     root_folder = client.folder('0')
     root_folder_with_info = root_folder.get()
