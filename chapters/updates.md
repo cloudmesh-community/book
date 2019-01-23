@@ -13,8 +13,8 @@ for a complete list of changes in reverse chronological order
 * Jan 18, 2019: A section on how to do equation in the book was added
   (see @sec:equations).
 
-* Jan 16, 2019: Added the OpenAPI server based on yaml file
-  introspection in a @sec:openapi-introspection
+* Jan 16, 2019: Added the example about defining a REST service based on an OpenAPI yaml file
+  (see @sec:openapi-introspection).
 
 * Jan 15, 2019: Slight improvements in the preface:   Added this Update
   section; Added explanation ho to do
