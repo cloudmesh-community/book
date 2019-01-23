@@ -3,7 +3,7 @@
 :warning: This section will not be taught es part of this class, 
 However interested students can contribute a chapter.
 This section could be contributed to, Focus on the aspect 
-cloud computing and not just on the language featres of scala.
+cloud computing and not just on the language features of scala.
 
 Links not read just googles scala and cloud:
 

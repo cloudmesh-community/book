@@ -14,56 +14,128 @@ $ pandoc --version
 $ python --version
 ```
 
-## OSX Requirements
+However the easiest way is to use our docker container.
 
-On OSX you can install the needed software with `brew`. In case you
-have not yet installed brew you can do it with
+## Ubuntu requirements :o:
 
-```bash
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew update
-```
+:wornaing: this is not yet working as we expect. For now see
+@sec:book-create-vagrant for an alternative using a virtual machine.
 
-To enable all features including advanced features to create diagrams
-from text specifications please use the following commands:
+In case you use containers in ubuntu we recommend that you use the
+docker container to compile the book as discussed in
+@sec:docker-create-book.
 
-```bash
-$ brew install graphviz
-$ brew install pandoc 
-$ brew install pandoc-citeproc
-$ brew install node
-$ npm install --global mermaid-filter
-$ npm install --global pandoc-index
-$ git clone https://github.com/tomduck/pandoc-fignos.git
-$ cd pandoc-fignos/
-$ pip install .
-```
+:o: The next is yet untested
 
-## Ubuntu requirements
+In case you like to use the ubuntu system directly, you can download a
+script that installs the needed software.
 
-On ubuntu you can use the following commands:
+You will first have to download the script with
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install graphviz
-$ wget https://hackage.haskell.org/package/pandoc-2.2.3.2/pandoc-2.2.3.2.tar.gz
-$ git clone https://github.com/jgm/pandoc-citeproc.git
-$ wget -qO- https://get.haskellstack.org/ | sh
-$ tar xvzf pandoc-2.2.3.2.tar.gz
-$ cd pandoc-2.2.3.2
-$ stack setup
-$ stack install
-$ cd ..
-$ cd pandoc-citeproc
-$ stack setup
-$ stack install
-$ npm install --global mermaid-filter
-$ npm install --global pandoc-index
+$ wget https://raw.githubusercontent.com/cloudmesh-community/book/master/install-ubuntu.sh
 ```
 
-## Creating a book
+Than you can run this [script](https://raw.githubusercontent.com/cloudmesh-community/book/master/install-ubuntu.sh) with
 
-Tho create a book, you hae to first check out the book source from github with:
+```bash
+$ sh install-ubuntu.sh
+```
+
+:warning: please note that we have not yet tested this and are looking
+for feedback and improvements to the `install-ubuntu.sh` script.
+
+Once the software is installed you can scip to @sec:create-book
+
+## Using Windows 10
+
+We recommend that you use vagrant or docker as described in
+@sec:book-create-vagrant and @sec:docker-create-book.
+
+## Using Vagrant {#sec:book-create-vagrant}
+
+In case you have installed vagrant on your computer which is available
+for macOS, Linux, and Windows 10, you can use our vagrant file to
+start up a virtual machine that has all software installed to create
+the epub.
+
+
+First, you need to download the repository:
+
+```bash
+$ git clone https://github.com/cloudmesh-community/book.git
+$ cd book
+```
+
+Next you have to create the virtual machine with
+
+```bash
+$ vagrant up
+```
+
+You can loginto the VM with
+
+```bash
+$ vagrant ssh
+```
+
+The book folder will be mounted in the VM and you can can follow the
+instructions in @sec:docker-create-book.
+
+
+## Using OSX 
+
+The easiest way to create a system that can compile the book on macOS,
+is to use a docker container. To do so you will need to first install
+docker on macOS while following the simple instructions at
+
+* <https://docs.docker.com/docker-for-mac/install/>
+
+Once you have docker installed, you can follow the instructions in
+@sec:docker-create-book.
+
+## Docker {#sec:docker-create-book}
+
+In case you have docker installed on your computer you can create
+epubs with our docker image. To create that image by hand, we have
+included a simple makefile. Alternatively you can use our image from
+dockerhub if you like, it is based on ubuntu and uses our
+[Dockerfile](https://github.com/cloudmesh-community/book/blob/master/Dockerfile).
+
+First, you need to download the repository:
+
+```bash
+$ git clone https://github.com/cloudmesh-community/book.git
+cd book
+```
+
+To open an interactive shell into the image you say
+
+```bash
+$ make shell
+```
+
+Now you can skip to @sec:create-book and compile the book just as
+documented there.
+
+Please note that we have not integrated pandoc-mermaid and
+pandoc-index at this time in our docker image. If you like to
+contribute them, please try it and make a pull request once you got
+them to work. 
+
+In case you want to create or recreate the image from our
+[Dockerfile](https://github.com/cloudmesh-community/book/blob/master/Dockerfile)
+(which is likely not necessary, you can use the command
+
+```bash
+$ make image
+```
+
+## Creating a book {#sec:create-book}
+
+To create a book, you hae to first check out the book source from
+github with if you have not yet done so (for example if you were to
+use the docker container method):
 
 ```bash
 git clone git@github.com:cloudmesh-community/book.git
@@ -171,7 +243,7 @@ $ cp -r 222 gregor
 ```
 
 Now edit the file chapters.yaml and copy the section with `BOOK_222=` to 
-`BOOK_gregor`. Make modifications to the outline as you see fit.
+`BOOK_gregor=`. Make modifications to the outline as you see fit.
 
 Now you can create the book with
 

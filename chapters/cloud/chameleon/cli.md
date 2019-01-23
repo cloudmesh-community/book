@@ -88,7 +88,7 @@ project number and find **Access & Security** on the left menu. The
 Access & Security page has tabs and choose **API Access** to download
 credentials on a local machine. Click **Download OpenStack RC File** to
 download *CH-\$PROJECTID-openrc.sh* file on your machine (see
-+@fig:chameleon-access). Every time you use nova command line tools, the
+@fig:chameleon-access). Every time you use nova command line tools, the
 file should be loaded on your terminal.
 
 ![Access and Security GUI](images/openstack-chameleon-openrc.png){#fig:chameleon-access}

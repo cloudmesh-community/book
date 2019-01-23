@@ -35,58 +35,58 @@ of data emacs (applied to smaller datasets) is a gem.
 
 Notation
 
-  Key   Description
-  ----- ----------------------
-  C     Control
-  M     Esc (meta character)
+| Key   | Description |
+| ----- | ---------------------- |
+| C     | Control |
+| M     | Esc (meta character) |
 
 Here are some other ways on what to do if you have accidentally pressed
 a wrong key:
 
--   `C-g` If you pressed a prefix key (e.g. `C-x`) or you invoked a
-    command which is now prompting you for input (e.g. Find file: ...),
-    type `C-g`, repeatedly if necessary, to cancel. `C-g` also cancels a
-    long-running operation if it appears that Emacs has frozen.
+* `C-g` If you pressed a prefix key (e.g. `C-x`) or you invoked a
+  command which is now prompting you for input (e.g. Find file: ...),
+  type `C-g`, repeatedly if necessary, to cancel. `C-g` also cancels a
+  long-running operation if it appears that Emacs has frozen.
 
--   `C-/` If you executed a command and Emacs has modified your buffer,
-    use `C-/` to undo that change.
-
-  Key         Description
-  ----------- -----------------------------------------
-  ---         **Saving and Exiting**
-  `C-x C-w`   Write the buffer to file
-  `C-x C-s`   Write the buffer to file and quit Emacs
-  ---         **Cursor** *use the cursor keys or ...*
-  `C-f`       Forward one character
-  `C-n`       Next line
-  `C-b`       Back one character
-  `C-p`       Previous line
-  ---         **Cursor context move**
-  `C-a`       Beginning of line
-  `M-f`       Forward one word
-  `M-a`       Previous sentence
-  `M-v`       Previous screen
-  `M-<`       Beginning of buffer
-  `C-e`       End of line
-  `M-b`       Back one word
-  `M-e`       Next sentence
-  `C-v`       Next screen
-  `M->`       End of buffer
-  ---         **Cursor jump**
-  `M-g` g     Jump to specified line number
-  ---         **Search**
-  `C-s`       Incremental search forward
-  `C-r`       Incremental search backward
-  ---         **Replace**
-  `M-`%       Query replace
-  ---         **Killing ("cutting") text**
-  `C-k`       Kill line
-  `C-y`       Yanks last killed text
-  ---         **Macros**
-  `M-x (`     Start recording macro
-  `M-x )`     Stop recording macro
-  `M-x e`     Play back macro once
-  `M-5 C-x-e` Play back macro 5 times
+* `C-/` If you executed a command and Emacs has modified your buffer,
+  use `C-/` to undo that change.
+ 
+| Key         | Description |
+| ----------- | ----------------------------------------- |
+| ---         | **Saving and Exiting** |
+| `C-x C-w`   | Write the buffer to file |
+| `C-x C-s`   | Write the buffer to file and quit Emacs |
+| ---         | **Cursor** *use the cursor keys or ...* |
+| `C-f`       | Forward one character |
+| `C-n`       | Next line |
+| `C-b`       | Back one character |
+| `C-p`       | Previous line |
+| ---         | **Cursor context move** |
+| `C-a`       | Beginning of line |
+| `M-f`       | Forward one word |
+| `M-a`       | Previous sentence |
+| `M-v`       | Previous screen |
+| `M-<`       | Beginning of buffer |
+| `C-e`       | End of line |
+| `M-b`       | Back one word |
+| `M-e`       | Next sentence |
+| `C-v`       | Next screen |
+| `M->`       | End of buffer |
+| ---         | **Cursor jump** |
+| `M-g` g     | Jump to specified line number |
+| ---         | **Search** |
+| `C-s`       | Incremental search forward |
+| `C-r`       | Incremental search backward |
+| ---         | **Replace** |
+| `M-`%       | Query replace |
+| ---         | **Killing ("cutting") text** |
+| `C-k`       | Kill line |
+| `C-y`       | Yanks last killed text |
+| ---         | **Macros** |
+| `M-x (`     | Start recording macro |
+| `M-x )`     | Stop recording macro |
+| `M-x e`     | Play back macro once |
+| `M-5 C-x-e` | Play back macro 5 times |
 
 Modes
 
@@ -98,11 +98,11 @@ Modes
 modes are typically activated by ending such as `.py`,
 `.java`, `.rst`, ...
 
-  Key                    Description
-  ---------------------- -------------------------------------------------------------------------
-  `M-x python-mode`      Mode for editing Python files
-  `M-x auto-fill-mode`   Wraps your lines automatically when they get longer than 70 characters.
-  `M-x flyspell-mode`    Highlights misspelled words as you type.
+|  Key                 |   Description |
+|  ----- |  ------------------------ |
+|  `M-x python-mode`      | Mode for editing Python files |
+|  `M-x auto-fill-mode`   | Wraps your lines automatically when they  get longer than 70 characters. |
+|  `M-x flyspell-mode`    | Highlights misspelled words as you type. |
 
 ## Org Mode
 
@@ -123,12 +123,12 @@ python ide that you can use and customize.
 
 Python auto-completion for Emacs:
 
-*   <https://github.com/tkf/emacs-jedi>
+* <https://github.com/tkf/emacs-jedi>
 
 Some more information is available at
 
-*   <https://realpython.com/blog/python/emacs-the-best-python-editor/>
-*   <https://www.emacswiki.org/emacs/PythonProgrammingInEmacs>
+* <https://realpython.com/blog/python/emacs-the-best-python-editor/>
+* <https://www.emacswiki.org/emacs/PythonProgrammingInEmacs>
 
 ## Emacs Keys in a Terminal
 
@@ -157,7 +157,7 @@ LaTeX is directly supported by emacs and nothing has to be changed.
 However, a collection of information about additional LaTeX features for
 emacs is available at
 
-*  <https://www.emacswiki.org/emacs/LaTeX>
+* <https://www.emacswiki.org/emacs/LaTeX>
 
 Of interest are for example also
 

@@ -26,7 +26,7 @@ In the first option we can directly connect each Raspberry Pi to your local
 network using either the Ethernet adapter on the Pi or using the Wireless
 adapter on the Pi. If using the Ethernet adapter and intermediary router or
 switch can also be used to connect the Pis to the local network. The network can
-be visualized in +@fig:pi-cluster-network-direct. To setup this kind of cluster
+be visualized in @fig:pi-cluster-network-direct. To setup this kind of cluster
 please follow the instructions in
 [Direct Network Cluster](#pi-direct-network-cluster).
 
@@ -45,7 +45,7 @@ possibility is to use a USB Ethernet adapter (purchased from this list of
 [Raspberry Pi compatible USB Ethernet adapters](https://elinux.org/RPi_USB_Ethernet_adapters))
 on the master Pi so that it can have a stable, wired connection to both
 networks. In either case the network setup is illustrated in
-+@fig:pi-cluster-network-private. The steps to setup this kind of private
+@fig:pi-cluster-network-private. The steps to setup this kind of private
 network cluster can be found in
 [Private Network Cluster](#pi-private-network-cluster).
 
