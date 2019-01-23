@@ -8,7 +8,9 @@ the Github commits at
 
 for a complete list of changes in reverse chronological order
 
-* Jan 21, 2019: Added gitissues separated by labels
+* Jan 23, 2019: Shanged the cloud links to view only instead of going directly into the editor.
+
+* Jan 21, 2019: Added gitissues separated by labels.
 
 * Jan 18, 2019: A section on how to do equation in the book was added
   (see @sec:equations).
