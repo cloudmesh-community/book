@@ -50,6 +50,7 @@ In your app, read in this configuration file and use it to create an authenticat
       CLIENT_ID = app_cfg.readline()
       CLIENT_SECRET = app_cfg.readline()
       ACCESS_TOKEN = app_cfg.readline()
+      
     #Create OAuth object using Developer Token
     oauth2 = OAuth2(CLIENT_ID, CLIENT_SECRET, access_token=ACCESS_TOKEN)
     
@@ -81,6 +82,19 @@ The Python SDK has several methods for creating objects and endpoints which you 
     # Get specific fields in one call:
     folder = client.folder('0').get(fields = ['created_at', 'size'])
     print(folder)
+
+### Uploading and downloading files:
+    
+    #Upload a stream to a Box folder:
+    from io import StringIO
+    stream = StringIO()
+    stream.write("Upload a stream")
+    stream.seek(0)
+    stream_file = client.folder('0').upload_stream(stream, 'testStream.txt')
+    print(stream_file.name)
+    
+    
+    
 
 Questions
 
