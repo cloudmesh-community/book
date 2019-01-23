@@ -29,7 +29,7 @@ You will need to select what type of application you are building and an authent
 Create an app configuration file:
 Find the Developer Token, Client ID, and Client Secret in the Configuration panel on the Developer Console @fig:box-config:
 
-![Configuration Image](/Box Configuration.png){#fig:box-config}
+![Configuration Image](box_configuration.png){#fig:box-config}
 
 app.cfg:
 
