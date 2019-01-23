@@ -8,15 +8,19 @@ the Github commits at
 
 for a complete list of changes in reverse chronological order
 
-* Jan 23, 2019: Changed the cloud links to view only instead of going directly into the editor. Separated the REST md file inte seveal files so we can reorder them and start with OpenAPI instead of restful or eve.
+* Jan 23, 2019: Changed the cloud links to view only instead of going
+  directly into the editor. Separated the REST md file inte seveal
+  files so we can reorder them and start with OpenAPI instead of
+  restful or eve. Updated the time line in the Syllabus table (see
+  @sec:516-syllabus)
 
 * Jan 21, 2019: Added gitissues separated by labels.
 
 * Jan 18, 2019: A section on how to do equation in the book was added
   (see @sec:equations). Updated the Datacenter Section.
 
-* Jan 16, 2019: Added the example about defining a REST service based on an OpenAPI yaml file
-  (see @sec:openapi-introspection).
+* Jan 16, 2019: Added the example about defining a REST service based
+  on an OpenAPI yaml file (see @sec:openapi-introspection).
 
 * Jan 15, 2019: Slight improvements in the preface:   Added this Update
   section; Added explanation ho to do

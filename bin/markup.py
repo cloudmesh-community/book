@@ -7,7 +7,7 @@ def convert(filename):
 
     print (filename)
 
-    link = '[[:cloud:](https://github.com/cloudmesh/book/edit/master/cloud-clusters/' + filename + ')]\{style=="float:right"\}'
+    link = '[[:cloud:](https://github.com/cloudmesh/book/blob/master/cloud-clusters/' + filename + ')]\{style=="float:right"\}'
     print(link)
     content = content.replace("{github}", link)
 
