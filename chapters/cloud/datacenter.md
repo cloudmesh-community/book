@@ -449,9 +449,48 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as
 > the date when the PUE was reported.
 
-### Hot-Cold Isle :o: :question:
+### Hot-Cold Isle
+While it takes a lot of energy to run the computing resources in data centers
+a large percentage of the actual energy usage is used to cool the equipment down
+so that all temperature of the computing resources are kept at a desirable
+temperature. Therefore it is important to design data centers so that the cost
+of cooling the system is minimized. Hot-Cold isle is a popular configuration
+that is used in data centers to reduce the energy costs. 
 
-Contribute a section discussing the hot cold isle.
+In a Hot-Cold configuration is made in a way such that you get an alternating
+pattern of hot and cold isles. In a cold isle the front of the racks face each
+other so that they draw in cold air which is used to cool the compute resources
+within the rack. And in a hot isle the rear sides face each other which is where
+all the air that was used to cool the system is pumped out to. This is the
+common configuration used in legacy data centers. The major issue with the 
+simple Hot-Cold isle arrangement is that the air is free to move around within
+the data center since there is no mechanism to contain the hot air in the hot
+isle or the cold air in the cold isle, which leads to energy inefficiencies. 
+See +@fig:hot-cold-isle to understand how the hot-cold isle configuration is
+setup in a data center.
+
+![Hot Cold Isle](images/hot-cold-isle.jpg){#fig:hot-cold-isle}
+
+Source: <https://www.joepowell.com/4-steps-to-better-data-center-cooling/>
+
+While modern data centers employ highly sophisticated mechanisms to be as 
+energy efficient as possible. One such mechanism which can be seen as a
+improvement on top of the Hot-Cold isle arrange is to use either hot isle
+containment or cold isle containment. Using a containment system can remove the 
+issue with free flowing air.
+
+As the name somewhat implies in cold air containment, the data centers is
+designed so that only cold air goes into the cold isle, this makes sure that
+the system only draws in cold air for cooling purposes. Conversely in hot isle
+containment design, the hot isle is contained so that the hot air collected 
+in the hot isle is drawn out by the cooling system and so that the cold air
+does not flow into the hot isles.
+
+
+
+
+Source: <https://www.datacenterknowledge.com/archives/2012/11/08/approaches-to-data-center-containment>
+ 
 
 ### Workload Monitoring
 
