@@ -8,9 +8,7 @@ the Github commits at
 
 for a complete list of changes in reverse chronological order
 
-* Jan 23, 2019: Separated the REST md file inte seveal files so we can reorder them and start with OpenAPI instead of restful or eve.
-
-* Jan 23, 2019: Changed the cloud links to view only instead of going directly into the editor.
+* Jan 23, 2019: Changed the cloud links to view only instead of going directly into the editor. Separated the REST md file inte seveal files so we can reorder them and start with OpenAPI instead of restful or eve.
 
 * Jan 21, 2019: Added gitissues separated by labels.
 
