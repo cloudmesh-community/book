@@ -9,6 +9,7 @@ Limitations:
 - Using Box Sync grants the user full access to the data in the sync, including the ability to delete the data. Restoring data yourself only restores flat-folders and not nested ones, in order to fully restore everything Box must do the restoration. 
 - Problems when two users edit the same file at the same time, unlike other collaboration tools
 - While there is no official limit on the number of files uploaded at one time, Box itself recommends users not exceed 100,000 files at a time
+- Deleting a user's account also deletes all the information they own, which can be problematic for users leaving a company
 
 Link:
 
