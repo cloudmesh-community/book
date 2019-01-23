@@ -324,7 +324,7 @@ Now, let ansible-galaxy initialize the directory structure for you:
     $ ansible-galaxy init <to-be-created-role-name>
 
 The naming convention is to concatenate your name and the role name by a
-dot. +@fig:ansible shows how it looks like.
+dot. @fig:ansible shows how it looks like.
 
 ![image](images/ansible-galaxy-init-structure.png){#fig:ansible}
 

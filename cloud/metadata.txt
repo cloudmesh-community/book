@@ -8,6 +8,13 @@ rights: (c) Gregor von Laszewski, 2018
 language: en-US
 stylesheet: template/epub.css
 cover-image: cover/cover.jpg
+figureTitle: Figure
+figPrefix: Figure
+eqnPrefix: Equation
+secPrefix: Section
+tblPrefix: Table
+linkReferences: True
+nameInLink: True
 fignos-caption-name: Figure
 fignos-plus-name: Figure
 xnos-number-sections: True

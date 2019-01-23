@@ -19,7 +19,7 @@ interface](https://openstack.tacc.chameleoncloud.org/dashboard) also
 known as Horizon. You log into the web interface using your Chameleon
 username and password. If you change your Chameleon password in the
 portal, that change will propagate to the OpenStack KVM interface in
-about 5 minutes.
+about 5 minutes. See @fig:chameleon-login
 
 The initial log in page appears as:
 
@@ -34,7 +34,7 @@ displayed. If you have multiple Chameleon projects, you can change which
 of them is your current project. All of the information displayed and
 actions that you take apply to your current project. So in the screen
 shot below, the quota and usage apply to the current project you have
-selected and no information about your other projects is shown.
+selected and no information about your other projects is shown. See @fig:overview-page
 
 ![Overview page](images/openstack_alamo_overview.png){#fig:overview-page}
 
@@ -48,7 +48,7 @@ that you have running, you can click on the name of the instance to get
 more information about it and to access the VNC interface to the
 console. The dropdown menu to the left of the instance lets you perform
 a variety of tasks such as suspending, terminating, or rebooting the
-instance.
+instance. See @fig:virtual-machine-instances
 
 ![Virtual Machine instances](images/openstack_alamo_instances.png){#fig:virtual-machine-instances}
 
@@ -69,7 +69,7 @@ On the Details tab, you also provide a name for this instance (to help
 you identify instances that you are running), and select the amount of
 resources (Flavor) to allocate to the instance. If you select different
 flavors from the Flavor dropdown, their characteristics are displayed on
-the right.
+the right. See @fig:launcher-window
 
 ![Launcher window](images/openstack_alamo_launch_details.png){#fig:launcher-window}
 
@@ -79,13 +79,13 @@ uploaded via the main 'Access & Security' section. You will need to
 select a keypair here to be able to access an instance created from one
 of the public images Chameleon provides. These images are not configured
 with a default root password and you will not be able to log in to them
-without configuring an SSH key.
+without configuring an SSH key. See @fig:access-window
 
 ![Access window](images/openstack_alamo_launch_access.png){#fig:access-window}
 
 Next is 'Networking', where you select which network should be
 associated with the instance. Click the + next to your your project's
-private network (PROJECT_NAME-net), not ext-net.
+private network (PROJECT_NAME-net), not ext-net. See @fig:networking-window
 
 ![Networking window](images/openstack_alamo_networking.png){#fig:networking-window}
 
@@ -96,7 +96,7 @@ If you would like to assign a public IP address to your VM, you can do
 that while it is booting up. Click on the dropdown under *Actions* and
 choose *Associate Floating IP*. Choose an IP from the *IP Address* menu
 and click *Associate*. If there are no addresses available, click the +
-and follow the prompts to add one.
+and follow the prompts to add one. See @fig:floating-ip-window
 
 ![Floating IP window](images/openstack_alamo_floating.png){#fig:floating-ip-window}
 
@@ -112,9 +112,9 @@ use the *sudo* command to become root.**
 
 We have enabled auto-login for the cc user on the console of our
 supported images. This should aid in debugging if you are unable to
-reach the instane via ssh for some reason.
+reach the instane via ssh for some reason. See @fig:openstack-console
 
-![Console](images/openstack_alamo_console.png){#fig:console}
+![Console](images/openstack_alamo_console.png){#fig:openstack-console}
 
 ### Snapshots
 
@@ -132,18 +132,18 @@ can reach your instances.
 
 To enable this traffic, you need to configure the security group used by
 your virtual machine. You can see a list of your security groups using
-the "Access & Security" link on the left.
+the "Access & Security" link on the left. See @fig:security-groups
 
 ![Security groups](images/openstack_alamo_security_groups.png){#fig:security-groups}
 
 To edit a security group, click on "Edit Rules". This opens a page
-showing the existing rules in the security group.
+showing the existing rules in the security group. See @fig:editing-a-security-group
 
 ![Editing a security group](images/openstack_alamo_edit_rules.png){#fig:editing-a-security-group}
 
 Click on "Add Rule" and choose the *SSH* rule from the list, and click
 *Add*. Modifications are automatically propagated to the OpenStack
-cloud. Feel free to add other rules as necessary.
+cloud. Feel free to add other rules as necessary. See @fig:add-a-security-group
 
 ![Add a security group](images/openstack_alamo_add_secgroup_rule.png){#fig:add-a-security-group}
 

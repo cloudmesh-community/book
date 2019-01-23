@@ -13,13 +13,13 @@ posted location and hours once a week. For pure online students we
 have weekly online hours that we will identify based on our
 availability and a doodle poll.
 
-+@fig:class-516-structure showcases the
+@fig:class-516-structure showcases the
 different parts of the class.  If you have taken a previous class with
 Gregor von Laszewski you are able to continue your previous project
 upon approval. It must however be a significant improvement.
 
 There will not be any bonus projects or tasks to improve
-grades. Instead make sure your deliverables of the view assignments
+grades. Instead make sure your deliverables of the few assignments
 are truly outstanding.
 
 ![Components of the Class e516, e534 and e616](images/e516-overview.png){#fig:class-516-structure}

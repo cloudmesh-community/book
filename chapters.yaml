@@ -2,13 +2,8 @@
 
 - IN:
     - chapters/SECTION/SECTION-INCOMING.md:
-        - chapters/in/azure-services.md
         - chapters/in/box.md
-        - chapters/in/cloud-foundary.md
-        - chapters/in/cloud-usecases.md
-        - chapters/in/cm-burn.md
         - chapters/in/compliance.md
-        - chapters/in/packer.md
         - chapters/in/vis.md
         - chapters/in/visual-studio.md
         - chapters/in/windows-subsystem-for-linux.md
@@ -16,14 +11,13 @@
 - PREFACE:
     - chapters/SECTION/SECTION-PREFACE.md:
         - chapters/version.md
+        - chapters/preface/reader.md                
         - chapters/updates.md   
         - chapters/preface/corrections.md
         - chapters/authors.md
         - chapters/preface/create.md
-        - chapters/preface/issues.md
-        - chapters/preface/reader.md                
         - chapters/preface/notation.md
-
+        
 - DEVTOOLS:
     - chapters/SECTION/SECTION-DEVTOOLS.md:
         - chapters/linux/refcards.md
@@ -86,7 +80,7 @@
         - chapters/prg/go/go-links.md
 
 - DRAFTS:
-    - chapters/msg/amazon-kenesis-data-streams.md
+    - chapters/msg/amazon-kenesis-data-streams.md    
 
 - MSG:
     - chapters/MSG.md:
@@ -279,8 +273,26 @@
 # DRAFT
 # #####################################################################
 
-
 - BOOK_DRAFT:
+    - chapters/SECTION/SECTION-INCOMING.md:
+        - chapters/cloud/cloud-foundry.md    
+        - chapters/devops/puppet.md
+        - chapters/in/box.md
+        - chapters/in/compliance.md
+        - chapters/in/vis.md
+        - chapters/in/visual-studio.md
+        - chapters/in/windows-subsystem-for-linux.md
+        - chapters/container/singularity/singularity.md
+    - $ref:GO
+    - chapters/SECTION/SECTION-DEVTOOLS.md:
+        - chapters/devops/travis.md
+        - chapters/devops/devop-azure-monitor.md
+        - chapters/devops/devop-aws.md
+        - chapters/devops/devop-ci.md   
+    - chapters/SECTION/SECTION-REFERENCES.md    
+
+
+- BOOK_DRAFT_OLD:
     - $ref:DRAFTS
     - chapters/pi/setup-ultimate.md
     - chapters/pi/setup-dev.md
@@ -317,6 +329,8 @@
 
 - BOOK_516:
     - $ref:PREFACE
+    - chapters/SECTION/SECTION-ISSUES.md:
+        - chapters/issues/issues.md
     - chapters/SECTION/SECTION-QUICK516.md:
         - chapters/quick516.md
         - chapters/assignment.md
@@ -332,8 +346,8 @@
     - chapters/class/e516-definition.md
     - chapters/cloud/datacenter.md
     - chapters/arch.md
-    - chapters/nist/bdra.md:
-        - chapters/rest/rest.md
+    - chapters/nist/bdra.md
+    - chapters/rest/rest.md:
         - chapters/rest/swagger-codegen.md
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
@@ -444,9 +458,10 @@
     - chapters/class/222-a.md
     - chapters/nist/bdra.md:
         - chapters/rest/rest.md
-        - chapters/rest/swagger-codegen.md
         - chapters/rest/swagger-spec.md
-        - chapters/rest/swagger.md
+        - chapters/rest/swagger.md      
+        - chapters/rest/swagger-introspection.md
+        - chapters/rest/swagger-codegen.md
         - chapters/prg/github.md
     - chapters/ai/ai.md
     - chapters/SECTION/SECTION-FAQ.md:

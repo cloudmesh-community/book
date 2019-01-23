@@ -1,11 +1,11 @@
 # Dask - Random Forest Feature Detection
 
-## Setup 
+## Setup
 
-First we need our tools. pandas gives us the DataFrame, very similar 
+First we need our tools. pandas gives us the DataFrame, very similar
 to R's DataFrames. The DataFrame is a structure that allows us to
-work with our data more easily. It has nice features for slicing 
-and transformation of data, and easy ways to do basic statistics. 
+work with our data more easily. It has nice features for slicing
+and transformation of data, and easy ways to do basic statistics.
 
 numpy has some very handy functions that work on DataFrames.
 
@@ -24,10 +24,10 @@ Now we'll load our data. pandas makes it easy!
 
 ```python
 # red wine quality data, packed in a DataFrame
-red_df = pd.read_csv('winequality-red.csv',sep=';',header=0, index_col=False) 
+red_df = pd.read_csv('winequality-red.csv',sep=';',header=0, index_col=False)
 
 # white wine quality data, packed in a DataFrame
-white_df = pd.read_csv('winequality-white.csv',sep=';',header=0,index_col=False) 
+white_df = pd.read_csv('winequality-white.csv',sep=';',header=0,index_col=False)
 
 # rose? other fruit wines? plum wine? :(
 ```
@@ -204,7 +204,7 @@ red_df.describe()
 
 
 ```python
-# for white wines 
+# for white wines
 white_df.describe()
 ```
 
@@ -370,10 +370,10 @@ white_df.describe()
 
 
 
-Sometimes it is easier to understand the data visually. A histogram of 
-the white wine quality *data citric* acid samples is shown below. You 
-can of course visualize other columns' data or other datasets. Just 
-replace the DataFrame and column name below.
+Sometimes it is easier to understand the data visually. A histogram of
+the white wine quality *data citric* acid samples is shown below. You
+can of course visualize other columns' data or other datasets. Just
+replace the DataFrame and column name below. See @fig:random-forest_11_0
 
 
 ```python
@@ -391,31 +391,31 @@ plt.show()
 ```
 
 
-![png](images/random-forest_11_0.png)
+![Histogram](images/random-forest_11_0.png){#fig:random-forest_11_0}
 
 
 ## Detecting Features
 
-Let us try out a some elementary machine learning models. These models 
-are not always for prediction. They are also useful to find what 
-features are most predictive of a variable of interest. Depending 
-on the classifier you use, you may need to transform the data 
+Let us try out a some elementary machine learning models. These models
+are not always for prediction. They are also useful to find what
+features are most predictive of a variable of interest. Depending
+on the classifier you use, you may need to transform the data
 pertaining to that variable.
 
 ### Data Preparation
 
-Let us assume we want to study what features are most correlated 
-with pH. pH of course is real-valued, and continuous. The classifiers 
-we want to use usually need labeled or integer data. Hence, we will 
-transform the pH data, assigning wines with pH higher than average 
-as ``hi`` (more basic or alkaline) and wines with pH lower than 
-average as ``lo`` (more acidic). 
+Let us assume we want to study what features are most correlated
+with pH. pH of course is real-valued, and continuous. The classifiers
+we want to use usually need labeled or integer data. Hence, we will
+transform the pH data, assigning wines with pH higher than average
+as ``hi`` (more basic or alkaline) and wines with pH lower than
+average as ``lo`` (more acidic).
 
 
 ```python
 # refresh to make Jupyter happy
-red_df = pd.read_csv('winequality-red.csv',sep=';',header=0, index_col=False) 
-white_df = pd.read_csv('winequality-white.csv',sep=';',header=0,index_col=False) 
+red_df = pd.read_csv('winequality-red.csv',sep=';',header=0, index_col=False)
+white_df = pd.read_csv('winequality-white.csv',sep=';',header=0,index_col=False)
 
 #TODO: data cleansing functions here, e.g. replacement of NaN
 
@@ -425,7 +425,7 @@ white_df = pd.read_csv('winequality-white.csv',sep=';',header=0,index_col=False)
 # for example, map the pH data to 'hi' and 'lo' if a pH value is more than or
 # less than the mean pH, respectively
 M = np.mean(list(red_df['pH'])) # expect inelegant code in these mappings
-Lf = lambda p: int(p < M)*'lo' + int(p >= M)*'hi' # some C-style hackery 
+Lf = lambda p: int(p < M)*'lo' + int(p >= M)*'hi' # some C-style hackery
 
 # create the new classifiable variable
 red_df['pH-hi-lo'] = map(Lf,list(red_df['pH']))
@@ -434,16 +434,16 @@ red_df['pH-hi-lo'] = map(Lf,list(red_df['pH']))
 del red_df['pH']
 ```
 
-Now we specify which dataset and variable you want to predict by 
-assigning vlues to ``SELECTED_DF`` and ``TARGET_VAR``, respectively. 
+Now we specify which dataset and variable you want to predict by
+assigning vlues to ``SELECTED_DF`` and ``TARGET_VAR``, respectively.
 
-We like to keep a parameter file where we specify data sources 
-and such. This lets me create generic analytics code that is easy 
-to reuse. 
+We like to keep a parameter file where we specify data sources
+and such. This lets me create generic analytics code that is easy
+to reuse.
 
-After we have specified what dataset we want to study, we split 
-the training and test datasets. We then scale (normalize) the data, 
-which makes most classifiers run better. 
+After we have specified what dataset we want to study, we split
+the training and test datasets. We then scale (normalize) the data,
+which makes most classifiers run better.
 
 
 ```python
@@ -474,12 +474,12 @@ X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 ```
 
-Now we pick a classifier. As you can see, there are many to try 
-out, and even more in scikit-learn's documentation and many 
-examples and tutorials. Random Forests are data science workhorses. 
-They are the go-to method for most data scientists. Be careful 
-relying on them though--they tend to overfit. We try to avoid 
-overfitting by separating the training and test datasets. 
+Now we pick a classifier. As you can see, there are many to try
+out, and even more in scikit-learn's documentation and many
+examples and tutorials. Random Forests are data science workhorses.
+They are the go-to method for most data scientists. Be careful
+relying on them though--they tend to overfit. We try to avoid
+overfitting by separating the training and test datasets.
 
 ## Random Forest
 
@@ -495,7 +495,7 @@ clf = RandomForestClassifier()
 
 Now we will test it out with the default parameters.
 
-Note that this code is boilerplate. You can use it interchangeably for most scikit-learn models. 
+Note that this code is boilerplate. You can use it interchangeably for most scikit-learn models.
 
 
 ```python
@@ -512,9 +512,9 @@ importances = clf.feature_importances_
 indices = np.argsort(importances)[::-1]
 ```
 
-Now output the results. For Random Forests, we get a feature ranking. 
-Relative importances usually exponentially decay. The first few 
-highly-ranked features are usually the most important. 
+Now output the results. For Random Forests, we get a feature ranking.
+Relative importances usually exponentially decay. The first few
+highly-ranked features are usually the most important.
 
 
 ```python
@@ -532,7 +532,7 @@ for i in range(num_features):
 ```
 
     Feature ranking:
-    
+
     fixed acidity                 0.269778
     citric acid                   0.171337
     density                       0.089660
@@ -546,7 +546,7 @@ for i in range(num_features):
     quality                       0.021075
 
 
-Sometimes it's easier to visualize. We'll use a bar chart. 
+Sometimes it's easier to visualize. We'll use a bar chart. See @fig:random-forest_26_0
 
 
 ```python
@@ -559,15 +559,15 @@ plt.show()
 ```
 
 
-![png](images/random-forest_26_0.png)
+![Result](images/random-forest_26_0.png){#fig:random-forest_26_0}
 
 
 
 ```python
 import dask.dataframe as dd
 
-red_df = dd.read_csv('winequality-red.csv',sep=';',header=0) 
-white_df = dd.read_csv('winequality-white.csv',sep=';',header=0) 
+red_df = dd.read_csv('winequality-red.csv',sep=';',header=0)
+white_df = dd.read_csv('winequality-white.csv',sep=';',header=0)
 ```
 
 ## Acknowledgement
