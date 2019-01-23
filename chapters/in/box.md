@@ -1,10 +1,10 @@
 # Box :o: :question:
 
-##About 
+## About 
 
 Box is cloud service that allows users to store, access, collaborate, and share files. Box also has its own platform offering APIs in multiple languages and an SDK for the development of custom applications and integrations. Box offers free and paid versions for individual accounts and multiple types of business accounts that are charged on a per user basis. 
 
-##Limitations: 
+## Limitations: 
 
 - While Box offers unlimited storage, it's biggest business account has a 5GB file size limit with a 2GB limit on the smallest business plan and 250MB on the unpaid personal plan. Other services have no individual file size limit. 
 - Using Box Sync grants the user full access to the data in the sync, including the ability to delete the data. Restoring data yourself only restores flat-folders and not nested ones, in order to fully restore everything Box must do the restoration. 
@@ -20,12 +20,12 @@ Install:
 
     pip install boxsdk
 
-##Creating an app:
+## Creating an app:
 
 Once you have created a Box account, go to the Developer Console and select Create New App. 
 You will need to select what type of application you are building and an authentication method for your app and then enter an app name (you can change this later). Once the app is created you will receive a Developer Token that is valid for 60 minutes. You can implement authentication following the instructions in the Quickstart Guide https://developer.box.com/docs/quickstart-guides or use the Developer Token for temporary purposes. This token can be refreshed in the Configuration panel of the Developer Console. 
 
-###Create an app configuration file:
+### Create an app configuration file:
 
 Find the Developer Token, Client ID, and Client Secret in the Configuration panel on the Developer Console @fig:box-config:
 
@@ -33,7 +33,7 @@ Find the Developer Token, Client ID, and Client Secret in the Configuration pane
 
 Make a new file with each of these on a separate line, we have called ours app.cfg. 
 
-###Create an authenticated client:
+### Create an authenticated client:
 
 In your app, read in this configuration file and use it to create an authenticated client: 
 
@@ -56,7 +56,7 @@ In your app, read in this configuration file and use it to create an authenticat
     #Create authenticated client
     client = Client(oauth2)
 
-###Get information about the user (in this case the owner of the Developer Token):
+### Get information about the user (in this case the owner of the Developer Token):
 
     # Get information about the logged in user (that's whoever owns the developer token)
     user = client.user().get()
