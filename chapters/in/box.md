@@ -22,7 +22,7 @@ Installation:
 
 ## Creating an app:
 
-Once you have created a Box account, go to the Developer Console and select Create New App. 
+Once you have created a Box account, go to the Developer Console and select 'Create New App'. 
 You will need to select what type of application you are building and an authentication method for your app and then enter an app name (you can change this later). Once the app is created you will receive a Developer Token that is valid for 60 minutes. You can implement authentication following the instructions in the Quickstart Guide https://developer.box.com/docs/quickstart-guides or use the Developer Token for temporary purposes. This token can be refreshed in the Configuration panel of the Developer Console. 
 
 ### Create an app configuration file:
@@ -64,8 +64,6 @@ The Python SDK has several methods for creating objects and endpoints which you 
 - client.file(file_id)
 - client.search()
 - client.events()
-
- 
 
 ### Get information about a Box object:
 
