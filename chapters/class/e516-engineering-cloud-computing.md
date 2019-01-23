@@ -24,7 +24,7 @@ Sample chapters can be reached if you download teh PDF document locally and clic
 * Lecture Notes: <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub>
 * Piazza: <https://piazza.com/iu/spring2019/e516spring19/resources>
 * Indiana University
-* Fall 2019
+* Spring 2019
 * Faculty: Dr. Gregor von Laszewski (laszewski@gmail.com)
 * Credits: 3
 * First online class released: Jan. 07, 2019
@@ -72,7 +72,7 @@ The course has the following objectives:
 * Understand the differences between virtual machines and containers
 * Develop sophisticated programming language independent REST services
 * Learn advanced programming models for clouds such as Map/Reduce,
-  Messaging, and GraphQl
+  Messaging, and GraphQL
 * Exploration of Go for cloud computing
 * Demonstrate knowledge of clouds while developing a significant project
 * Explore state-of-the-art cloud technologies and services while
@@ -106,7 +106,7 @@ For the syllabus table please see the the syllabus table
 ## Assessment
 
 This course is focusing on the principal "Learning by Doing" which is
-assessed by simple graded and non-graded act-ivies. The assessment may
+assessed by simple graded and non-graded activities. The assessment may
 include comprehension of the material taught, programming assignments,
 participation in online discussion forums, or the contribution of
 additional material to the class showcasing your comprehension.
