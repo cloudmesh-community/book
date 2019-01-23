@@ -4,15 +4,16 @@ Original is at: https://www.sdsc.edu/support/user_guides/tutorials/singularity.h
 
 ## Background
 
-What is Singularity?\*
+What is Singularity?
 
-*\"Singularity enables users to have full control of their environment.
-Singularity containers can be used to package entire scientific
-workflows, software and libraries, and even data. This means that you
-don't have to ask your cluster admin to install anything for you - you
-can put it in a Singularity container and run.\"*
+> "Singularity enables users to have full control of their
+> environment.  Singularity containers can be used to package entire
+> scientific workflows, software and libraries, and even data. This
+> means that you don't have to ask your cluster admin to install
+> anything for you - you can put it in a Singularity container and
+> run."
 
-[**from the Singularity web site at <http://singularity.lbl.gov/>]**
+**[from the Singularity web site at <http://singularity.lbl.gov/>]**
 
 There are numerous good tutorials on how to install and run Singularity
 on Linux, OS X, or Windows so we won't go into much detail on that
@@ -44,20 +45,20 @@ Below is a typical list of commands you would need to issue in order to
 implement a functional Python installation for scientific research:
 
 ```
-COMMAND=apt-get -y install libx11-dev  
+COMMAND=apt-get -y install libx11-dev
 COMMAND=apt-get install build-essential python-libdev 
 COMMAND=apt-get install build-essentyial openmpi-dev 
 COMMAND=apt-get install cmake 
-COMMAND=apt-get install g++  
-COMMAND=apt-get install git-lfs  
+COMMAND=apt-get install g++
+COMMAND=apt-get install git-lfs
 COMMAND=apt-get install libXss.so.1 
 COMMAND=apt-get install libgdal1-dev libproj-dev 
 COMMAND=apt-get install libjsoncpp-dev libjsoncpp0 
 COMMAND=apt-get install libmpich-dev --user
-COMMAND=apt-get install libpthread-stubs0 libpthread-stubs0-dev libx11-dev libx11-d  
+COMMAND=apt-get install libpthread-stubs0 libpthread-stubs0-dev libx11-dev libx11-d
 COMMAND=apt-get install libudev0:i386 
-COMMAND=apt-get install numpy  
-COMMAND=apt-get install python-matplotlib  
+COMMAND=apt-get install numpy
+COMMAND=apt-get install python-matplotlib
 COMMAND=apt-get install python3`
 ```
 
@@ -72,7 +73,7 @@ The diagram below compares a VM vs. Docker vs. Singularity.
 
 **Source: [Greg Kurtzer keynote at HPC Advisory Council 2017 @ Stanford](http://www.hpcadvisorycouncil.com/events/2017/stanford-workshop/pdf/GMKurtzer_Singularity_Keynote_Tuesday_02072017.pdf#43)**
 
- 
+
 
 ## Hands-On Tutorials
 
@@ -91,7 +92,7 @@ corresponding to the task you are currently working on.
 * Configure & Build Singularity
 * Install & Test Singularity
 
- 
+
 
 ### Download & Unpack Singularity
 
@@ -156,14 +157,14 @@ The output should look something like:
 The process of building a Singularity container consists of a few
 distinct steps as follows.
 
--   Upgrading Singularity (if needed)
--   Create an Empty Container
--   Import into Container
--   Shell into Container
--   Write into Container
--   Bootstrap Container
+- Upgrading Singularity (if needed)
+- Create an Empty Container
+- Import into Container
+- Shell into Container
+- Write into Container
+- Bootstrap Container
 
- 
+
 
 We will go through each of these steps in detail.
 
@@ -213,7 +214,7 @@ make
 sudo make install
 ```
 
- 
+
 
 Create an Empty Container
 -------------------------
@@ -245,7 +246,7 @@ import a Docker image into our empty Singularity container:
 
 `singularity import centos7.img docker://centos:7`
 
- 
+
 
 Shell Into a Singularity Container
 ----------------------------------
@@ -306,7 +307,7 @@ The output should be:
 
 `Hello, World!`
 
- 
+
 
 Bootstrapping a Singularity Container
 -------------------------------------
@@ -375,21 +376,21 @@ Allocation' through the XSEDE User Portal:
 You may create a free account on the XUP if you do not already have one
 and then proceed to submit an allocation request at the above link.
 
-\[NOTE: SDSC provides a Comet User Guide (
-<http://www.sdsc.edu/support/user_guides/comet.html> ) to help get you
-started with Comet. Learn more about The San Diego Supercomputer Center
-at <http://www.sdsc.edu> .\]
+NOTE: SDSC provides a
+[Comet User Guide](http://www.sdsc.edu/support/user_guides/comet.html)
+to help get you started with Comet. Learn more about The San Diego
+Supercomputer Center at <http://www.sdsc.edu>.
 
 This tutorial walks you through the following four steps towards running
 your first Singularity container on Comet:
 
--   Transfer the Container to Comet
--   Run the Container on Comet
--   Allocate Resources to Run the Container
--   Integrate the Container with Slurm
--   Use existing Comet Containers
+- Transfer the Container to Comet
+- Run the Container on Comet
+- Allocate Resources to Run the Container
+- Integrate the Container with Slurm
+- Use existing Comet Containers
 
- 
+
 
 ### Transfer the Container to Comet
 
@@ -411,7 +412,7 @@ your scratch directory on Comet. By issuing the following command:
 
 The container is \~805 Mb so it should not take too long, hopefully.
 
- 
+
 
 ### Run the Container on Comet
 
@@ -443,7 +444,7 @@ is:
 `[test_user@comet-ln3 ~]$ module load singularity`
 
 You may issue the above command from any directory on Comet. Recall that
-we added a hello\_world.sh script to our centos7.img container. Let's
+we added a `hello_world.sh` script to our centos7.img container. Let's
 try executing that script with the following command:
 
 ` [test_user@comet-ln3 ~]$ singularity exec /oasis/scratch/comet/test_user/temp_project/singularity/centos7.img /hello_world.sh `
@@ -466,7 +467,7 @@ and
 
 `/share/apps/examples/SINGULARITY`
 
- 
+
 
 ### Allocate Resources to Run the Container
 
@@ -494,13 +495,13 @@ you are on a compute node and not a login node.
 `[test_user@comet-06-04 ~]$ `
 
 Next, load the Singularity module, shell into the container, and execute
-the hello\_world.sh script:
+the `hello_world.sh` script:
 
 `[test_user@comet-06-04 ~]$ module load singularity [test_user@comet-06-04 ~]$ singularity shell centos7.img [test_user@comet-06-04 ~]$ ./hello_world.sh`
 
 If all goes well, you should see "Hello, World!" in the console output.
 
- 
+
 
 ### Integrate the Container with Slurm
 
@@ -511,7 +512,7 @@ to completion and go on to other things while waiting. Slurm is the job
 manager for Comet.
 
 Below is a job script (which we will name
-singularity\_mvapich2\_hellow.run) which will submit your Singularity
+`singularity_mvapich2_hellow.run`) which will submit your Singularity
 container to the Comet queue and run a program, hellow.c (written in C
 using MPI and provided as part of the examples with the mvapich2 default
 installation).
@@ -540,7 +541,7 @@ To view the status of your job in the Comet queue, issue the following:
 `[test_user@comet-06-04 ~]$ squeue -u test_user`
 
 When the job is complete, view the output which should be written to the
-output file singularity\_mvapich2\_hellow.%j.out where %j is the job ID
+output file `singularity_mvapich2_hellow.%j.out` where `%j` is the job ID
 (let's say the job ID is 1000001):
 
 `[test_user@comet-06-04 ~]$ more singularity_mvapich2_hellow.1000001.out`
@@ -548,27 +549,27 @@ output file singularity\_mvapich2\_hellow.%j.out where %j is the job ID
 The output should look something like the following:
 
 ```
-Hello world from process 28 of 48  
+Hello world from process 28 of 48 
 Hello world from process 29 of 48
-Hello world from process 30 of 48  
+Hello world from process 30 of 48
 Hello world from process 31 of 48
-Hello world from process 32 of 48  
+Hello world from process 32 of 48
 Hello world from process 33 of 48 
-Hello world from process 34 of 48  
+Hello world from process 34 of 48
 Hello world from process 35 of 48 
-Hello world from process 36 of 48  
+Hello world from process 36 of 48
 Hello world from process 37 of 48 
 Hello world from process 38 of 48
 ```
- 
+
 
 ### Use Existing Comet Containers
 
 SDSC User Support staff, Marty Kandes, has built several custom
-Singularity containers designed specifically for the Comet environment. 
+Singularity containers designed specifically for the Comet environment.
 
 [Learn more about these containers for
-Comet](about_comet_singularity_containers.html). 
+Comet](about_comet_singularity_containers.html).
 
 [News
 Flash!]{style="color: #d31820; font-family: Tauri, sans-serif; font-size: 30px;"}
@@ -612,26 +613,30 @@ XSEDE's Comet supercomputer supports Singularity and provides several
 pre-built container which run Tensorflow. Below is an example batch
 script which runs a Tensorflow job within a Singularity container on
 Comet. Copy this script and paste it into a shell script named
-\"mnist\_tensorflow\_example.sb\".
+`mnist_tensorflow_example.sb`.
 
-\#!/bin/bash\
-\#SBATCH \--job-name=\"TensorFlow\"\
-\#SBATCH \--output=\"TensorFlow.%j.%N.out\"\
-\#SBATCH \--partition=gpu-shared\
-\#SBATCH \--nodes=1\
-\#SBATCH \--ntasks-per-node=6\
-\#SBATCH \--gres=gpu:k80:1\
-\#SBATCH -t 01:00:00
+```
+#!/bin/bash
+#SBATCH --job-name="TensorFlow"
+#SBATCH --output="TensorFlow.%j.%N.out"
+#SBATCH --partition=gpu-shared
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=6
+#SBATCH --gres=gpu:k80:1
+#SBATCH -t 01:00:00
+```
 
-\#Run the job
+# Run the job
 
-module load singularity\
+```
+module load singularity
 singularity exec
-/share/apps/gpu/singularity/sdsc\_ubuntu\_gpu\_tflow.img lsb\_release
--a\
+/share/apps/gpu/singularity/sdsc_ubuntu_gpu_tflow.img lsb_release
+-a
 singularity exec
-/share/apps/gpu/singularity/sdsc\_ubuntu\_gpu\_tflow.img python -m
+/share/apps/gpu/singularity/sdsc_ubuntu_gpu_tflow.img python -m
 tensorflow.models.image.mnist.convolutional
+```
 
 To submit the script to Comet, first you'll need to request a compute
 node with the following command (replace account with your XSEDE account
@@ -701,6 +706,3 @@ Test error: 0.9%
 Congratulations! You have successfully trained a neural network to
 recognize ascii numeric characters.
 
- 
-
- 
