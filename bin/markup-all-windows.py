@@ -6,7 +6,7 @@ from pprint import pprint
 
 import fnmatch
 
-gitbase = "https://github.com/cloudmesh-community/book/edit/master/chapter/"
+gitbase = "https://github.com/cloudmesh-community/book/blob/master/chapter/"
 
 def mkdir_p(newdir):
     """works the way a good mkdir should :)

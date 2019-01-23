@@ -348,9 +348,15 @@
     - chapters/arch.md
     - chapters/nist/bdra.md
     - chapters/rest/rest.md:
-        - chapters/rest/swagger-codegen.md
-        - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md
+        - chapters/rest/swagger-spec.md
+        - chapters/rest/swagger-introspection.md
+        - chapters/rest/swagger-codegen.md
+        - chapters/rest/rest-restful.md
+        - chapters/rest/rest-eve.md
+        - chapters/rest/rest-haetos.md
+        - chapters/rest/rest-eve-extensions.md
+        - chapters/rest/rest-django.md  
         - chapters/prg/github.md
     - $ref:HYPERVISOR
     - $ref:IAAS
@@ -456,8 +462,8 @@
         - chapters/git/github.md:
             - chapters/git/gitpullreqest.md
     - chapters/class/222-a.md
-    - chapters/nist/bdra.md:
-        - chapters/rest/rest.md
+    - chapters/nist/bdra.md
+    - chapters/rest/rest.md:
         - chapters/rest/swagger-spec.md
         - chapters/rest/swagger.md      
         - chapters/rest/swagger-introspection.md
