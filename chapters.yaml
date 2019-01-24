@@ -12,12 +12,13 @@
     - chapters/SECTION/SECTION-PREFACE.md:
         - chapters/version.md
         - chapters/preface/reader.md                
-        - chapters/updates.md   
         - chapters/preface/corrections.md
         - chapters/authors.md
         - chapters/preface/create.md
         - chapters/preface/notation.md
-        
+        - chapters/updates.md   
+        - chapters/class/516-week.md
+
 - DEVTOOLS:
     - chapters/SECTION/SECTION-DEVTOOLS.md:
         - chapters/linux/refcards.md
