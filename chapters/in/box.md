@@ -28,6 +28,16 @@ In the Configuration panel of the Developer Console, scroll down to the section 
 
 ![Box Add Key](box_add_key.png)
 
+Once you have generated a keypair, a config.json file will automatically download. Save this file in a secure location as you will need it for authentication purposes. 
+
+### Reading in the config file: 
+
+    from boxsdk import JWAuth
+    from boxsdk import Client
+    
+    sdk = JWTAuth.from_settings_file(<path to config.json>)
+    client = Client(sdk)
+
 ## Box Methods
 
 The Python SDK has several methods for creating objects and endpoints which you can then perform operations on, including: 
@@ -37,7 +47,7 @@ The Python SDK has several methods for creating objects and endpoints which you 
 - client.search()
 - client.events()
 
-### Get information about a Box object:
+### Get information about a Box object
 
     # Get information about the logged in user (that's whoever owns the developer token):
     user = client.user().get()
@@ -54,7 +64,7 @@ The Python SDK has several methods for creating objects and endpoints which you 
     folder = client.folder(<folder id>).get(fields = ['created_at', 'size'])
     print(folder)
 
-### Folders:
+### Folders
 
     # Create a new folder:
     subfolder = client.folder(<folder id>).create_subfolder(<subfolder name>)
@@ -75,10 +85,10 @@ The Python SDK has several methods for creating objects and endpoints which you 
      for entry in items.entries:
         print(entry.name)
 
-### Uploading files:
+### Uploading files
     
     # Upload a file to a Box folder:
-    test_file = client.folder(<folder id>).upload(<path to file>, <file name>)
+    test_file = client.folder(folder_id=<folder id>).upload(<path to file>, <file name>)
     print(test_file.name)
     
     # Upload a stream to a Box folder:
@@ -94,7 +104,7 @@ The Python SDK has several methods for creating objects and endpoints which you 
     client.file(<file id>).update_contents(<path to file>)
     
 ### File upload errors
-A file upload will fail if there is already a file in the folder with the same name, or if the file is too big or if there is not enough storage. To avoid errors, Box has an exception API that will check if a file will be accepted before sending it to Box: 
+A file upload will fail if there is already a file in the folder with the same name, if the file is too big, or if there is not enough storage. To avoid errors, Box has an exception API that will check if a file will be accepted before sending it to Box: 
     
     # Enable preflight checks:
     file = 'test.txt'
@@ -105,55 +115,38 @@ A file upload will fail if there is already a file in the folder with the same n
     except BoxAPIException:
         pass
         
- ### Deleting, copying, and downloading files:
+ ### Deleting, copying, and downloading files
  
     # Delete a file:
-    client.file(<file id>).delete()
+    client.file(file_id=<file id>).delete()
     
     # Copy a file: 
-    file = client.file(<file id>)
-    destination = client.folder(<folder id>)
+    file = client.file(file_id=<file id>)
+    destination = client.folder(folder_id=<folder id>)
     copy_of_file = file.copy(destination)
     
     # Download a file:
-    file_to_download = client.file(<file id>).get()
+    file_to_download = client.file(file_id=<file id>).get()
     output = open(file_to_download.name, 'wb')
     file_to_download.download_to(output)
     
-### Searching:
+### Searching
+The query string used in a search can include object names, description, text content, or other object data. 
 
-    # The query string can contain names, descriptions, text contents, or other file or folder data
     items = client.search().query(<query string>, file_extensions = ['png', 'txt'], fields = ['name', 'description'])
     for entry in items.entries:
         print(entry.id)
         
+### Shared links
+Shared links give read-only access to a file through a URL. Specifying the access level of a shared link determines whether users will need to authenticate with Box in order to view the file. 
 
-boxpython
----------
-
-* <https://github.com/wesleyfr/boxpython>
-
-```python
-    from boxpython import BoxAuthenticateFlow, BoxSession, BoxError
-
-    flow = BoxAuthenticateFlow('\<client_id\>','\<client_secret\>')
-    flow.get_authorization_url()
-    '<https://www.box.com/api/oauth2/authorize?response_type=code&client_id>=\<client_id\>&state=authenticated'
-
-    access_token, refresh_token =
-    flow.get_access_tokens('\<auth_code\>')
-
-    def tokens_changed(refresh_token, access_token): ...
-        save_to_file(refresh_token, access_token) ... \>\>\> box =
-        BoxSession('\<client_id\>', '\<client_secret\>', refresh_token,
-        access_token, tokens_changed)
-
-   box.get_folder_info(0)
-
-   box.download_file(11006194629, '/tmp/test_dl.txt')
-```
+    # Creating a shared link:
+    url = client.file(file_id=<file id>).get_shared_link()
+    
+    # Retrieving a shared link that has already been created:
+    url = client.file(file_id=<file id>).shared_link['url']
+    
 
 Pybox
 -----
-
-<https://github.com/hzheng/pybox>
+Pybox provides an way to work with Box files from the command line. Documentation on how to set up and use pybox can be found at <https://github.com/hzheng/pybox>
