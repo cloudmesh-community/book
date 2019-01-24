@@ -1,6 +1,12 @@
 # Running Singularity Containers on Comet
 
-Original is at: https://www.sdsc.edu/support/user_guides/tutorials/singularity.html
+This section was copied from 
+
+* <https://www.sdsc.edu/support/user_guides/tutorials/singularity.html>
+
+and modified. To use it you will need an account on comet which can be
+obtained via XSEDE. IN case you use this material as part of a class
+please contact your teacher for more information.
 
 ## Background
 
@@ -69,7 +75,7 @@ designed specifically for your analytical needs.
 
 The diagram below compares a VM vs. Docker vs. Singularity.
 
-![Singularity Container Architecture](http://education.sdsc.edu/comet/index_clip_image002.png){#fig:singularity-archi}[@greg-keynote]
+![Singularity Container Architecture [@greg-keynote]](http://education.sdsc.edu/comet/index_clip_image002.png){#fig:singularity-archi}
 
 
 ## Hands-On Tutorials
@@ -98,8 +104,7 @@ local computer with super user privileges):
 releases/download/2.5.1/singularity-2.5.1.tar.gz tar -zxf singularity-2.5.1.tar.gz
 ```
 
-[:clapper: Singularity - download source and unpack in VirtualBox VM (CentOS 7)
-](https://asciinema.org/a/12986)
+[:clapper: Singularity - download source and unpack in VirtualBox VM (CentOS 7)](https://asciinema.org/a/12986)
 
 If the file is successfully extracted, you should be able to view the
 results:
@@ -113,8 +118,7 @@ results:
 ### Configure & Build Singularity
 
 
-[:clapper: Singularity - configure and build in VirtualBox VM (CentOS 7)
-](https://asciinema.org/a/129867)
+[:clapper: Singularity - configure and build in VirtualBox VM (CentOS 7)](https://asciinema.org/a/129867)
 
 Next we configure and build the package. To configure, enter the following
 command (we'll leave out the command prompts):
@@ -131,8 +135,7 @@ This may take several seconds depending on your computer.
 
 ### Install & Test Singularity
 
-[:clapper: Singularity - install and test in VirtualBox VM (CentOS 7)
-](https://asciinema.org/a/129868)
+[:clapper: Singularity - install and test in VirtualBox VM (CentOS 7)](https://asciinema.org/a/129868)
 
 To complete the installation enter:
 
@@ -153,9 +156,7 @@ The output should look something like:
 
 `+ sh -c test -f /usr/local/etc/singularity/singularity.conf (retval=0) OK  + test -u /usr/local/libexec/singularity/bin/action-suid (retval=0) OK  + test -u /usr/local/libexec/singularity/bin/create-suid (retval=0) OK  + test -u /usr/local/libexec/singularity/bin/expand-suid (retval=0) OK  + test -u /usr/local/libexec/singularity/bin/export-suid (retval=0) OK  + test -u /usr/local/libexec/singularity/bin/import-suid (retval=0) OK  + test -u /usr/local/libexec/singularity/bin/mount-suid (retval=0) OK `
 
-[]{#building_singularity_containers}
-
-## Building Singularity Containers
+## Building Singularity Containers {#sec:building-singularity-containers}
 
 The process of building a Singularity container consists of a few
 distinct steps as follows.
@@ -402,10 +403,10 @@ your first Singularity container on Comet:
 [:clapper: Singularity - transfer container to Comet
 ](https://asciinema.org/a/130195)
 
-Once you have created your container on your local system, you will need to transfer
-it to Comet. There are multiple ways to do this and it can take a
-varying amount of time depending on its size and your network connection
-speeds.
+Once you have created your container on your local system, you will
+need to transfer it to Comet. There are multiple ways to do this and
+it can take a varying amount of time depending on its size and your
+network connection speeds.
 
 To do this, we will use scp (secure copy). If you have a Globus account
 and your containers are more than 4 Gb you will probably want to use
@@ -424,7 +425,8 @@ The container is \~805 Mb so it should not take too long, hopefully.
 
 [:clapper: Singularity - run container on Comet](https://asciinema.org/a/130196)
 
-Once the file is transferred, login to Comet (assuming your Comet user is named `test_user`):
+Once the file is transferred, login to Comet (assuming your Comet user
+is named `test_user`):
 
 `ssh test_user@comet.sdsc.edu`
 
@@ -479,11 +481,11 @@ and
 [:clapper: Singularity - allocate resources to run container
  ](https://asciinema.org/a/130197)
 
-It is best to avoid working on Comet's login nodes since they can become a performance
-bottleneck not only for you but for all other users. You should rather
-allocate resources specific for computationally-intensive jobs. To
-allocate a 'compute node' for your user on Comet, issue the following
-command:
+It is best to avoid working on Comet's login nodes since they can
+become a performance bottleneck not only for you but for all other
+users. You should rather allocate resources specific for
+computationally-intensive jobs. To allocate a 'compute node' for your
+user on Comet, issue the following command:
 
 `[test_user@comet-ln3 ~]$ salloc -N 1 -t 00:10:00`
 
@@ -511,12 +513,11 @@ If all goes well, you should see *Hello, World!* in the console output.
 
 ### Integrate the Container with Slurm
 
-[:clapper: Singularity - run container on Comet via Slurm
-](https://asciinema.org/a/130218) 
+[:clapper: Singularity - run container on Comet via Slurm](https://asciinema.org/a/130218) 
 
-Of course, most users simply want to submit their jobs to the Comet queue and let it run
-to completion and go on to other things while waiting. Slurm is the job
-manager for Comet.
+Of course, most users simply want to submit their jobs to the Comet
+queue and let it run to completion and go on to other things while
+waiting. Slurm is the job manager for Comet.
 
 Below is a job script (which we will name
 `singularity_mvapich2_hellow.run`) which will submit your Singularity
@@ -575,15 +576,18 @@ Hello world from process 38 of 48
 SDSC User Support staff, Marty Kandes, has built several custom
 Singularity containers designed specifically for the Comet environment.
 
-[Learn more about these containers for
-Comet](about_comet_singularity_containers.html).
+[Learn more about these containers for Comet](about_comet_singularity_containers.html).
 
-:o: which is this?
+:o: the html sholuld be converted to markdown. use pandoc. This also
+needs to be downloaded from the SDSC page
 
-[News
-Flash!]{style="color: #d31820; font-family: Tauri, sans-serif; font-size: 30px;"}
+:o: what is this?
+
+[News Flash!]{style="color: #d31820; font-family: Tauri, sans-serif; font-size: 30px;"}
 
 Now there's an easier way to run a Singularity container on Comet ...
+
+:o: I think this need sto be updated to the just easier way?
 
 ### PULL IT!
 
@@ -635,7 +639,7 @@ Comet. Copy this script and paste it into a shell script named
 #SBATCH -t 01:00:00
 ```
 
-# Run the job
+## Run the job
 
 ```
 module load singularity
