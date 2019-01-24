@@ -123,6 +123,7 @@
         - chapters/SECTION/SECTION-KUBERNETES.md:
             - chapters/container/kubernetes-intro.md
             - chapters/container/kubernetes-fs.md
+        - chapters/container/singularity/singularity.md     
         - chapters/container/exercise.md
 
 # MAPREDUCE IS NOT ORGANIZED
@@ -283,7 +284,6 @@
         - chapters/in/vis.md
         - chapters/in/visual-studio.md
         - chapters/in/windows-subsystem-for-linux.md
-        - chapters/container/singularity/singularity.md
     - $ref:GO
     - chapters/SECTION/SECTION-DEVTOOLS.md:
         - chapters/devops/travis.md
