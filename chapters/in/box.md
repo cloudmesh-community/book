@@ -80,29 +80,82 @@ The Python SDK has several methods for creating objects and endpoints which you 
     print(folder.item_status)
 
     # Get specific fields in one call:
-    folder = client.folder('0').get(fields = ['created_at', 'size'])
+    folder = client.folder(<folder id>).get(fields = ['created_at', 'size'])
     print(folder)
 
-### Uploading and downloading files:
+### Folders:
+
+    # Create a new folder:
+    subfolder = client.folder(<folder id>).create_subfolder(<subfolder name>)
     
-    #Upload a stream to a Box folder:
+     # Delete a folder:
+     client.folder(<folder id>).delete()
+     
+     # Copy a folder: 
+     folder = client.folder(folder_id=<folder id>)
+     destination = client.folder(<destination folder id>)
+     copy_of_folder = folder.copy(destination)
+     
+     # Update a folder:
+     folder = client.folder(folder_id=<folder id>).update_info({'name':'Updated name', 'description':'This has now been updated."})
+     
+     # Get all items in a folder:
+     items = client.folder(folder_id=<folder id>).get_items()
+     for entry in items.entries:
+        print(entry.name)
+
+### Uploading files:
+    
+    # Upload a file to a Box folder:
+    test_file = client.folder(<folder id>).upload(<path to file>, <file name>)
+    print(test_file.name)
+    
+    # Upload a stream to a Box folder:
     from io import StringIO
     stream = StringIO()
-    stream.write("Upload a stream")
+    stream.write("Test stream")
     stream.seek(0)
-    stream_file = client.folder('0').upload_stream(stream, 'testStream.txt')
+    stream_file = client.folder('0').upload_stream(stream, 'Stream File')
     print(stream_file.name)
+    print(stream_file.content())
     
+    # Upload a new version of a file:
+    client.file(<file id>).update_contents(<path to file>)
     
+### File upload errors
+A file upload will fail if there is already a file in the folder with the same name, or if the file is too big or if there is not enough storage. To avoid errors, Box has an exception API that will check if a file will be accepted before sending it to Box: 
     
+    # Enable preflight checks:
+    file = 'test.txt'
+    try:
+        test_file = client.folder('0').upload('test.txt', 'Test File', preflight_check=True)
+        print(test_file.name)
+        print(test_file.content())
+    except BoxAPIException:
+        pass
+        
+ ### Deleting, copying, and downloading files:
+ 
+    # Delete a file:
+    client.file(<file id>).delete()
+    
+    # Copy a file: 
+    file = client.file(<file id>)
+    destination = client.folder(<folder id>)
+    copy_of_file = file.copy(destination)
+    
+    # Download a file:
+    file_to_download = client.file(<file id>).get()
+    output = open(file_to_download.name, 'wb')
+    file_to_download.download_to(output)
+    
+### Searching:
 
-Questions
-
--   how to list all file sin dir
-
--   how to recursively iterate
-
--   how to download each file when we iterate
+    # The query string can contain names, descriptions, text contents, or other file or folder data
+    items = client.search().query(<query string>, file_extensions = ['png', 'txt'], fields = ['name', 'description'])
+    for entry in items.entries:
+        print(entry.id)
+        
 
 boxpython
 ---------
