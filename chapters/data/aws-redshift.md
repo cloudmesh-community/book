@@ -1,22 +1,21 @@
 # AWS RedShift
----
+
 ## Learning Objectives
 * Introduction to AWS RedShift
 * AWS RedShift Architecture
 * Query Processing in AWS RedShift
 * Creating an AWS RedShift cluster using Terraform
 * Interacting with AWS RedShift using DB Tools
----
+
 ## Introduction to AWS RedShift
-(ref: https://docs.aws.amazon.com/redshift/latest/dg/c_redshift_system_overview.html)
-AWS RedShift is a managed cloud data warehouse, with per-hour billing. AWS RedShift provides a cloud alternative to on-premise data warehouse databases like Oracle, Teradata, SQL Server, HPE Vertica. In typical cloud parlance, we can describe RedShift as DBaaS (DB as a service), where the management of the DB (including patching and upgrades) is handled by AWS.
+AWS RedShift [@AmazonRedShift001] is a managed cloud data warehouse, with per-hour billing. AWS RedShift provides a cloud alternative to on-premise data warehouse databases like Oracle, Teradata, SQL Server, HPE Vertica. In typical cloud parlance, we can describe RedShift as DBaaS (DB as a service), where the management of the DB (including patching and upgrades) is handled by AWS.
 Queries are processed during an MPP (massively parallel processor) architecture. Data storage is columnar. RedShift is a clustered database.
 
 ## AWS RedShift Architecture
 
+The architecture of AWS RedShift in a warehouse is best described in [@AmazonRedShift002]
 Client applications interact with the leader node of the RedShift cluster, which in turn talks to the compute nodes. Fast interconnect network exists between nodes of the cluster. The cluster can be scaled up or down, changing the number of nodes.
 A compute node is paritioned into slices (memory + disk, of each node). A portion of the workload is executed by the slice. Data is stored on the compute nodes. There is no separation of compute and storage.
-(ref: https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html)
 
 Nodes can consist of 2 node types Dense Storage (DS) that consist of HDDs (hard disks) for high data volumes, or Dense Compute (DC) that consist of SSDs (solid state disks) for medium to low data volumes, but higher performance. Storage is locally attached to the machines. 
 
@@ -40,6 +39,7 @@ Terraform is a IaC (Infrastructure as Code) tool used to interact with cloud res
 
 
 Here is a set of commands for creating the AWS RedShift cluster. Note: I ran terraform from my Windows laptop, so please make adjustments for paths and OS commands depending on your workstation OS.
+This code is modified from [@TerraformRedShift001] and [@TerraformRedShift002]
 
 ````
 #Modified from https://github.com/terraform-aws-modules/terraform-aws-redshift/blob/master/examples/complete/main.tf
@@ -106,7 +106,7 @@ cmd> <path_to_terraform>\terraform apply DESTmyredshiftcluster.tfplan
 ````
 
 ## Interacting with AWS RedShift using DB Tools
-DB Tools like SQL-Workbench (https://www.sql-workbench.eu/), and Squirrel SQL (http://squirrel-sql.sourceforge.net/) can used to interact with RedShift (and most other databases), by downloading the RedShift JDBC driver, and configuring it in the tool.
+DB Tools like SQL-Workbench [@SQLClientSQLWorkb19], and Squirrel SQL [@SQLClientSQuirreL1] can used to interact with RedShift (and most other databases), by downloading the RedShift JDBC driver, and configuring it in the tool.
 
 The AWS Console page for the RedShift cluster displays the JDBC connection string that can be used. 
 
