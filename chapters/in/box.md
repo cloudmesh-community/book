@@ -26,7 +26,7 @@ Once you have created a Box account, go to the Developer Console and select 'Cre
 You will need to select what type of application you are building and an authentication method for your app and then enter an app name (you can change this later). Once your app has been created, click View App. 
 In the Configuration panel of the Developer Console, scroll down to the section titled 'Add and Manage Public Keys' and click 'Generate a Public/Private Keypair' @fig:box_key :
 
-![Box Add Key Pair]('box_add_key.png'){@fig:box_key}
+![Box Add Key]('/box_add_key.png'){@fig:box_key}
 
 ## Box Methods
 
