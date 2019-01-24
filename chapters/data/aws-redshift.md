@@ -1,6 +1,7 @@
 # AWS RedShift
 
 ## Learning Objectives
+
 * Introduction to AWS RedShift
 * AWS RedShift Architecture
 * Query Processing in AWS RedShift
@@ -8,6 +9,7 @@
 * Interacting with AWS RedShift using DB Tools
 
 ## Introduction to AWS RedShift
+
 AWS RedShift [@AmazonRedShift001] is a managed cloud data warehouse, with per-hour billing. AWS RedShift provides a cloud alternative to on-premise data warehouse databases like Oracle, Teradata, SQL Server, HPE Vertica. In typical cloud parlance, we can describe RedShift as DBaaS (DB as a service), where the management of the DB (including patching and upgrades) is handled by AWS.
 Queries are processed during an MPP (massively parallel processor) architecture. Data storage is columnar. RedShift is a clustered database.
 
@@ -27,6 +29,7 @@ To allow for optimal data retrieval, and data collocation, RedShift provides for
 * Compression Encodings : Column encoding and compression is dependent on the data types of the columns, and how much values differ in one row from the next, or the others. Delta encoding, raw encoding (i.e. no encoding), byte encoding are the forms of encoding and compression. Compression affects storage and performance, but not to the extent of sort keys or distribution keys.
 
 ## Query Processing in AWS RedShift
+
 The query syntax is very similar to PostgreSQL. So much, that you can use a PostgreSQL JDBC driver to interact with RedShift, but for production usage, better to use the Amazon JDBC driver. Amazon says in the documentation that RedShift is based on PostgreSQL 8.x. 
 
 The leader node processes queries, creates the parse tree and execution plan. The query is send to the compute node, only when the data required by the query is present on that compute node. Each compute node execute the query fragments, and send the result back to the leader node, that does the final aggregation.
@@ -35,6 +38,7 @@ When a query gets fired again, the leader node may retrieve results from the res
 Join processing is distributed between nodes. For an join involving an outer table (typically larger), and an inner table (typically smaller), depending on the distribution key, the leader node may decide to broadcast the entire inner table to all the nodes (an example could be the expansion of state codes to the full names). In the ideal condition, a copy of such tables should exist on each of the nodes. Redistribution of data across nodes of the cluster of both the larger and smaller tables may also be required to evaluate the results. This would be a costly operation. The database designer should look for such bad execution plans, and tune the storage of the tables.
 
 ## Here is how to create an AWS RedShift cluster using Terraform
+
 Terraform is a IaC (Infrastructure as Code) tool used to interact with cloud resources, across various clouds and providers. It is a simple download, and a single executable that helps creation and destruction of dependencies and resources, in the right order.
 
 
@@ -106,6 +110,7 @@ cmd> <path_to_terraform>\terraform apply DESTmyredshiftcluster.tfplan
 ````
 
 ## Interacting with AWS RedShift using DB Tools
+
 DB Tools like SQL-Workbench [@SQLClientSQLWorkb19], and Squirrel SQL [@SQLClientSQuirreL1] can used to interact with RedShift (and most other databases), by downloading the RedShift JDBC driver, and configuring it in the tool.
 
 The AWS Console page for the RedShift cluster displays the JDBC connection string that can be used. 
