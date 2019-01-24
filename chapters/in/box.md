@@ -2,7 +2,16 @@
 
 ## About 
 
-Box is cloud service that allows users to store, access, collaborate, and share files, similar to DropBox. Box also has its own platform offering APIs in multiple languages and an SDK for the development of custom applications and integrations. Box offers free and paid versions for individual accounts and multiple types of business accounts that are charged on a per user basis. 
+Box is cloud storage service that allows users to store, access, collaborate, and share files, similar to DropBox. However, while DropBox started out as a service for storing personal files, Box is geared more towards business applications. Box also has its own platform offering APIs in multiple languages and an SDK for the development of custom applications and integrations, as well as many pre-built apps for integrating Box into various other tools and platforms. It has some limited project management tools in addition to its storage capabilities, including task and workflow management. Box offers free and paid versions for individual accounts and multiple types of business accounts that are charged on a per user basis. Finally, Box has just released Box Skills, a machine learning tool for automatically processing files uploaded to Box. 
+
+## Limitations: 
+
+- While Box offers unlimited storage, it's biggest business account has a 5GB file size limit with a 2GB limit on the smallest business plan and 250MB on the unpaid personal plan. Other services have no individual file size limit. 
+- Using Box Sync grants the user full access to the data in the sync, including the ability to delete the data. Restoring data yourself only restores flat-folders and not nested ones, in order to fully restore everything Box must do the restoration. 
+- Problems can occur when two users edit the same file at the same time, unlike other collaboration tools
+- While there is no official limit on the number of files uploaded at one time, Box itself recommends users not exceed 100,000 files at a time
+- Deleting a user's account also deletes all the information they own, which can be problematic for users leaving a company
+- While Box has a collections feature, the only collection supported is the 'Favorites' collection, users are not able to make their own
 
 REST:
 
@@ -11,32 +20,33 @@ https://developer.box.com/reference
 Installation:
 
     pip install boxsdk
+    
+If you will be using JWT authentication for you app, you'll want to install its dependencies:
 
-## Limitations: 
-
-- While Box offers unlimited storage, it's biggest business account has a 5GB file size limit with a 2GB limit on the smallest business plan and 250MB on the unpaid personal plan. Other services have no individual file size limit. 
-- Using Box Sync grants the user full access to the data in the sync, including the ability to delete the data. Restoring data yourself only restores flat-folders and not nested ones, in order to fully restore everything Box must do the restoration. 
-- Problems when two users edit the same file at the same time, unlike other collaboration tools
-- While there is no official limit on the number of files uploaded at one time, Box itself recommends users not exceed 100,000 files at a time
-- Deleting a user's account also deletes all the information they own, which can be problematic for users leaving a company
+    pip install "boxsdk[JWT]"
 
 ## Creating an app:
 
 Once you have created a Box account, go to the Developer Console and select 'Create New App'. 
 You will need to select what type of application you are building and an authentication method for your app and then enter an app name (you can change this later). Once your app has been created, click View App. 
+
+### Authentication with JWT:
+
 In the Configuration panel of the Developer Console, scroll down to the section titled 'Add and Manage Public Keys' and click 'Generate a Public/Private Keypair':
 
 ![Box Add Key](box_add_key.png)
 
-Once you have generated a keypair, a config.json file will automatically download. Save this file in a secure location as you will need it for authentication purposes. 
-
-### Reading in the config file: 
+Once you have generated a keypair, a config.json file will automatically download. Save this file in a secure location as you will need it for authentication purposes. Finally, you will need to read in this config file into your app:
 
     from boxsdk import JWAuth
     from boxsdk import Client
     
     sdk = JWTAuth.from_settings_file(<path to config.json>)
     client = Client(sdk)
+
+### Authentication with OAuth2:
+
+
 
 ## Box Methods
 
@@ -114,6 +124,26 @@ A file upload will fail if there is already a file in the folder with the same n
         print(test_file.content())
     except BoxAPIException:
         pass
+        
+Which will return the following:
+
+    "OPTIONS https://api.box.com/2.0/files/content" 409 466
+    {'Date': 'Thu, 24 Jan 2019 16:30:46 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Strict-Transport-Security': 'max-age=31536000', 'Cache-Control': 'no-cache, no-store', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'BOX-REQUEST-ID': '0rgjouev2logn8gqcn1fauco84o', 'Age': '0'}
+    {'code': '---_use',
+     'context_info': {'conflicts': {'etag': '0',
+                                    'file_version': {'id': '411411432162',
+                                                     'sha1': '02d92c580d4ede6c80a878bdd9f3142d8f757be8',
+                                                     'type': 'file_version'},
+                                    'id': '389113382562',
+                                    'name': 'Test File',
+                                    'sequence_id': '0',
+                                    'sha1': '02d92c580d4ede6c80a878bdd9f3142d8f757be8',
+                                    'type': 'file'}},
+     'help_url': 'http://developers.box.com/docs/#errors',
+     'message': 'Item with the same name already exists',
+     'request_id': 'slj5jkfzi55kba81',
+     'status': 409,
+     'type': 'error'}
         
  ### Deleting, copying, and downloading files
  
