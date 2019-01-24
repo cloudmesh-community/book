@@ -295,7 +295,7 @@ test the ability of the container to execute shell scripts:
 The above command assumes you know the vi editor. Enter the following
 text into the script, save it, and quit the vi editor:
 
-`#!/bin/bash echo “Hello, World!”`
+`#!/bin/bash echo "Hello, World!"`
 
 You may need to change the permissions on the script so it can be
 executable:
@@ -331,7 +331,7 @@ purposes.
 Bootstrap: docker
 From: ubuntu:latest
 %runscript
-exec echo “The runscript is the containers default runtime command!”
+exec echo "The runscript is the containers default runtime command!"
 
 %files
 /home/testuser/ubuntu.def /data/ubuntu.def
@@ -345,7 +345,7 @@ AUTHOR testuser@sdsc.edu
 %post
 apt-get update && apt-get -y install python3 git wget
 mkdir /data
-echo “The post section is where you can install and configure your container.”
+echo "The post section is where you can install and configure your container."
 ```
 
 To bootstrap your container, first we need to create an empty container.
@@ -357,14 +357,16 @@ container with Ubuntu:
 
 `sudo /usr/local/bin/singularity bootstrap ./ubuntu.img ./ubuntu.def`
 
-This may take a while to complete. In principle, you can accomplish the same result by manually issuing each of the commands contained in the script file, but why do that when you can use bootstrapping to save time and avoid errors.
+This may take a while to complete. In principle, you can accomplish
+the same result by manually issuing each of the commands contained in
+the script file, but why do that when you can use bootstrapping to
+save time and avoid errors.
 
 If all goes according to plan, you should then be able to shell into
 your new Ubuntu container.
 
-[]{#running_singularity_containers}
 
-## Running Singularity Containers on Comet
+## Running Singularity Containers on Comet{#sec:running-singularity-containers}
 
 Of course, the purpose of this tutorial is to enable you to use the San
 Diego Supercomputer Center's Comet supercomputer to run your jobs. This
@@ -452,7 +454,7 @@ try executing that script with the following command:
 
 ` [test_user@comet-ln3 ~]$ singularity exec /oasis/scratch/comet/test_user/temp_project/singularity/centos7.img /hello_world.sh `
 
-If all goes well,Â you should see "Hello, World!" in the console output.
+If all goes well,Â you should see *Hello, World!* in the console output.
 You might also see some warnings pertaining to non-existent bind points.
 You can resolve this by adding some additional lines to your definitions
 file before you build your container. We did not do that for this
@@ -503,7 +505,7 @@ the `hello_world.sh` script:
 
 `[test_user@comet-06-04 ~]$ module load singularity [test_user@comet-06-04 ~]$ singularity shell centos7.img [test_user@comet-06-04 ~]$ ./hello_world.sh`
 
-If all goes well, you should see "Hello, World!" in the console output.
+If all goes well, you should see *Hello, World!* in the console output.
 
 
 
@@ -575,6 +577,8 @@ Singularity containers designed specifically for the Comet environment.
 
 [Learn more about these containers for
 Comet](about_comet_singularity_containers.html).
+
+:o: which is this?
 
 [News
 Flash!]{style="color: #d31820; font-family: Tauri, sans-serif; font-size: 30px;"}
