@@ -3,6 +3,19 @@
 
 what is box
 
+REST
+
+* https://developer.box.com/reference
+
+Limitations:
+
+* Box has some very nasty limitations, pleas reserach them if you can
+
+* exmaples: limitation in total download
+* example: limiatation in organization when a team member leaves. e.g. repos have to be set up for the organization and not as individual file owner. WHat will happen if the files do not belong to the organization.
+
+* also thon kabout what if my directorey has 10, 10000, 100000 or 1M files.
+
 Link:
 
 -   <http://opensource.box.com/box-python-sdk/tutorials/intro.html>

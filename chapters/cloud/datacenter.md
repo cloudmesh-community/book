@@ -14,7 +14,7 @@
 
 ## Motivation: Data
 
-Before we go into the details of a data center we like to motivate why
+Before we go into more details of a data center we like to motivate why
 we need them.  Here we start with looking at the amount of data that
 recently got created and provide one of many motivational aspects. Not
 all data will or should be stored in data centers. However a
@@ -343,7 +343,7 @@ storage, operation of the data center, and decommissioning. Thus it is
 important to notice that we not only need to consider the operation
 but also the construction and decommission phases.
 
-### Data Center Operational Impact
+### Data Center Operational Impact {#sec:operation-impact}
 
 One of the main operational impacts is the cost and emissions of a
 data center cause by running, and cooling the servers in the data
@@ -1167,7 +1167,7 @@ See also
 * <https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
 
 
-## Exercises
+## Exercises {#sec:exercises-energy}
 
 E.Energy.1:
 

@@ -242,8 +242,8 @@ dest/chapters/nist/bdra.md: ../chapters/nist/bdra.md
 	../bin/header.py dest/chapters/nist/bdra.md 1
 
 dest/chapters/rest/rest.md: ../chapters/rest/rest.md
-	../bin/markup-single.py ../chapters/rest/rest.md 2
-	../bin/header.py dest/chapters/rest/rest.md 2
+	../bin/markup-single.py ../chapters/rest/rest.md 1
+	../bin/header.py dest/chapters/rest/rest.md 1
 
 dest/chapters/rest/swagger-spec.md: ../chapters/rest/swagger-spec.md
 	../bin/markup-single.py ../chapters/rest/swagger-spec.md 2
