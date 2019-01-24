@@ -14,7 +14,7 @@
 
 ## Motivation: Data
 
-Before we go into the details of a data center we like to motivate why
+Before we go into more details of a data center we like to motivate why
 we need them.  Here we start with looking at the amount of data that
 recently got created and provide one of many motivational aspects. Not
 all data will or should be stored in data centers. However a
