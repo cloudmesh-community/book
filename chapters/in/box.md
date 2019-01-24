@@ -2,7 +2,7 @@
 
 ## About 
 
-Box is cloud service that allows users to store, access, collaborate, and share files. Box also has its own platform offering APIs in multiple languages and an SDK for the development of custom applications and integrations. Box offers free and paid versions for individual accounts and multiple types of business accounts that are charged on a per user basis. 
+Box is cloud service that allows users to store, access, collaborate, and share files, similar to DropBox. Box also has its own platform offering APIs in multiple languages and an SDK for the development of custom applications and integrations. Box offers free and paid versions for individual accounts and multiple types of business accounts that are charged on a per user basis. 
 
 REST:
 
@@ -23,39 +23,10 @@ Installation:
 ## Creating an app:
 
 Once you have created a Box account, go to the Developer Console and select 'Create New App'. 
-You will need to select what type of application you are building and an authentication method for your app and then enter an app name (you can change this later). Once the app is created you will receive a Developer Token that is valid for 60 minutes. You can implement authentication following the instructions in the Quickstart Guide https://developer.box.com/docs/quickstart-guides or use the Developer Token for temporary purposes. This token can be refreshed in the Configuration panel of the Developer Console. 
+You will need to select what type of application you are building and an authentication method for your app and then enter an app name (you can change this later). Once your app has been created, click View App. 
+In the Configuration panel of the Developer Console, scroll down to the section titled 'Add and Manage Public Keys' and click 'Generate a Public/Private Keypair' @fig:box_key :
 
-### Create an app configuration file:
-
-Find the Developer Token, Client ID, and Client Secret in the Configuration panel on the Developer Console @fig:box-config:
-
-![Configuration Image](box_configuration.png){#fig:box-config}
-
-Make a new file with each of these on a separate line, we have called ours app.cfg. 
-
-### Create an authenticated client:
-
-In your app, read in this configuration file and use it to create an authenticated client: 
-
-    # Import two classes from the boxsdk module - Client and OAuth2
-    from boxsdk import Client, OAuth2
-
-    # Define client ID, client secret, and developer token.
-    CLIENT_ID = None
-    CLIENT_SECRET = None
-    ACCESS_TOKEN = None
-
-    # Read app info from text file
-    with open('app.cfg', 'r') as app_cfg:
-      CLIENT_ID = app_cfg.readline()
-      CLIENT_SECRET = app_cfg.readline()
-      ACCESS_TOKEN = app_cfg.readline()
-      
-    #Create OAuth object using Developer Token
-    oauth2 = OAuth2(CLIENT_ID, CLIENT_SECRET, access_token=ACCESS_TOKEN)
-    
-    #Create authenticated client
-    client = Client(oauth2)
+![Box Add Key Pair]('box_add_key.png'){@fig:box_key}
 
 ## Box Methods
 
