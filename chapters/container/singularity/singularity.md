@@ -69,20 +69,15 @@ designed specifically for your analytical needs.
 
 The diagram below compares a VM vs. Docker vs. Singularity.
 
-![](http://education.sdsc.edu/comet/index_clip_image002.png)
-
-**Source: [Greg Kurtzer keynote at HPC Advisory Council 2017 @ Stanford](http://www.hpcadvisorycouncil.com/events/2017/stanford-workshop/pdf/GMKurtzer_Singularity_Keynote_Tuesday_02072017.pdf#43)**
-
+![Singularity Container Architecture](http://education.sdsc.edu/comet/index_clip_image002.png){#fig:singularity-archi}[@greg-keynote]
 
 
 ## Hands-On Tutorials
 
-![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="117" height="90"}Next, let's get some hands-on experience with
-Singularity. The following tutorial includes links to asciinema video
-tutorials created by SDSC HPC Systems Manager, Trevor Cooper (Thanks,
-Trevor!) which allow you to see the console interactivity and output in
-detail. Look for the video icon like the one shown to the right
+The following tutorial includes links to asciinema video
+tutorials created by SDSC HPC Systems Manager, Trevor Cooper
+which allow you to see the console interactivity and output in
+detail. Look for the :clapper: icon like the one shown to the right
 corresponding to the task you are currently working on.
 
 
@@ -92,32 +87,39 @@ corresponding to the task you are currently working on.
 * Configure & Build Singularity
 * Install & Test Singularity
 
-
-
 ### Download & Unpack Singularity
 
 First we download and upack the source using the following commands
 (assuming your user name is `test_user` and you are working on your
 local computer with super user privileges):
 
-`[test_user@localhost ~]$ wget https://github.com/singularityware/singularity/ releases/download/2.5.1/singularity-2.5.1.tar.gz`
-`tar -zxf singularity-2.5.1.tar.gz`[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/129866)
+```bash
+[test_user@localhost ~]$ wget https://github.com/singularityware/singularity/ 
+releases/download/2.5.1/singularity-2.5.1.tar.gz tar -zxf singularity-2.5.1.tar.gz
+```
+
+[:clapper: Singularity - download source and unpack in VirtualBox VM (CentOS 7)
+](https://asciinema.org/a/12986)
 
 If the file is successfully extracted, you should be able to view the
 results:
 
-`[test_user@localhost ~]$ cd singularity-2.5.1/ [test_user@localhost singularity-2.5.1]$ ls`
+```bash
+[test_user@localhost ~]$ cd singularity-2.5.1/ 
+[test_user@localhost singularity-2.5.1]$ ls
+```
 
 
 ### Configure & Build Singularity
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/129867)Next we
-configure and build the package. To configure, enter the following
+
+[:clapper: Singularity - configure and build in VirtualBox VM (CentOS 7)
+](https://asciinema.org/a/129867)
+
+Next we configure and build the package. To configure, enter the following
 command (we'll leave out the command prompts):
 
-```
+```bash
 ./configure
 ```
 
@@ -129,9 +131,10 @@ This may take several seconds depending on your computer.
 
 ### Install & Test Singularity
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/129868)To complete the
-installation enter:
+[:clapper: Singularity - install and test in VirtualBox VM (CentOS 7)
+](https://asciinema.org/a/129868)
+
+To complete the installation enter:
 
 `sudo make install`
 
@@ -175,7 +178,7 @@ We recommend building containers using the same version of Singularity,
 
 **Step 1: run the script below to remove your existing Singularity:**
 
-```
+```bash
 #!/bin/bash
 #
 # A cleanup script to remove Singularity
@@ -193,7 +196,7 @@ sudo rm /usr/local/man/man1/singularity.1
 
 **Step 2: run the following script to install Singularity 2.5.1:**
 
-```
+```bash
 #!/bin/bash
 #
 # A build script for Singularity (http://singularity.lbl.gov/)
@@ -219,9 +222,9 @@ sudo make install
 Create an Empty Container
 -------------------------
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/130106)To create an
-empty Singularity container, you simply issue the following command:
+[:clapper: Singularity - create container](https://asciinema.org/a/130106)
+
+To create an empty Singularity container, you simply issue the following command:
 
 `singularity create centos7.img`
 
@@ -240,9 +243,9 @@ To view the resulting image in a directory listing, enter the following:
 Import Into a Singularity Container
 -----------------------------------
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/130107)Next, we will
-import a Docker image into our empty Singularity container:
+[:clapper: Singularity - import Docker image](https://asciinema.org/a/130107)
+
+Next, we will import a Docker image into our empty Singularity container:
 
 `singularity import centos7.img docker://centos:7`
 
@@ -251,9 +254,9 @@ import a Docker image into our empty Singularity container:
 Shell Into a Singularity Container
 ----------------------------------
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/130109)Once the
-container actually contains a CentOS 7 installation, you can 'shell'
+[:clapper: Singularity - shell into container](https://asciinema.org/a/130109)
+
+Once the container actually contains a CentOS 7 installation, you can 'shell'
 into it with the following:
 
 `singularity shell centos7.img`
@@ -273,9 +276,9 @@ version is:
 Write Into a Singularity Container
 ----------------------------------
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/130110)Next, let's
-trying writing into the container (as root):
+[:clapper: Singularity - write into container](https://asciinema.org/a/130110)
+
+Next, let's trying writing into the container (as root):
 
 `sudo /usr/local/bin/singularity shell -w centos7.img`
 
@@ -312,9 +315,9 @@ The output should be:
 Bootstrapping a Singularity Container
 -------------------------------------
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/130111)Bootstrapping a
-Singularity container allows you to use what is called a 'definitions
+[:clapper: Singularity - bootstrapping a container](https://asciinema.org/a/130111)
+
+Bootstrapping a Singularity container allows you to use what is called a 'definitions
 file' so you can reproduce the resulting container configurations on
 demand.
 
@@ -324,7 +327,7 @@ long list of commands manually. First, we need our definitions file.
 Below is the contents of a definitions file which should suffice for our
 purposes.
 
-```
+```bash
 Bootstrap: docker
 From: ubuntu:latest
 %runscript
@@ -394,9 +397,10 @@ your first Singularity container on Comet:
 
 ### Transfer the Container to Comet
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/130195)Once you have
-created your container on your local system, you will need to transfer
+[:clapper: Singularity - transfer container to Comet
+](https://asciinema.org/a/130195)
+
+Once you have created your container on your local system, you will need to transfer
 it to Comet. There are multiple ways to do this and it can take a
 varying amount of time depending on its size and your network connection
 speeds.
@@ -416,10 +420,9 @@ The container is \~805 Mb so it should not take too long, hopefully.
 
 ### Run the Container on Comet
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/130196)Once the file
-is transferred, login to Comet (assuming your Comet user is named
-`test_user`):
+[:clapper: Singularity - run container on Comet](https://asciinema.org/a/130196)
+
+Once the file is transferred, login to Comet (assuming your Comet user is named `test_user`):
 
 `ssh test_user@comet.sdsc.edu`
 
@@ -471,9 +474,10 @@ and
 
 ### Allocate Resources to Run the Container
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/130197)It is best to
-avoid working on Comet's login nodes since they can become a performance
+[:clapper: Singularity - allocate resources to run container
+ ](https://asciinema.org/a/130197)
+
+It is best to avoid working on Comet's login nodes since they can become a performance
 bottleneck not only for you but for all other users. You should rather
 allocate resources specific for computationally-intensive jobs. To
 allocate a 'compute node' for your user on Comet, issue the following
@@ -505,9 +509,10 @@ If all goes well, you should see "Hello, World!" in the console output.
 
 ### Integrate the Container with Slurm
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/130218)Of course, most
-users simply want to submit their jobs to the Comet queue and let it run
+[:clapper: Singularity - run container on Comet via Slurm
+](https://asciinema.org/a/130218) 
+
+Of course, most users simply want to submit their jobs to the Comet queue and let it run
 to completion and go on to other things while waiting. Slurm is the job
 manager for Comet.
 
@@ -578,9 +583,9 @@ Now there's an easier way to run a Singularity container on Comet ...
 
 ### PULL IT!
 
-[![](http://education.sdsc.edu/comet/assets/images/video_tutorial_icon.png){.video_icon
-width="111" height="86"}](https://asciinema.org/a/129906)Comet now
-supports the capability to pull a container directly from any properly
+[:clapper: Singularity - pull from singularity-hub on Comet](https://asciinema.org/a/129906)
+
+Comet now supports the capability to pull a container directly from any properly
 configured remote singularity hub. For example, the following command
 can pull a container from the hpcdevops singularity hub straight to an
 empty container located on Comet:
