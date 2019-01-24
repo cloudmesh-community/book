@@ -34,36 +34,36 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
-| 3 | 290 | [bibtex issues][i290] | bfeng | internal |
-| 4 | 289 | [add to datacenter section][i289] | tbalson | internal |
-| 5 | 288 | [HIGHEST PRIORITY Missing BibTex in figure captions][i288] | bfeng | internal |
-| 9 | 276 | [Add weekly activities into the handbook][i276] | bfeng | internal |
-| 15 | 267 | [figure tags with bibtex ref][i267] | bfeng | internal |
-| 16 | 266 | [Internal: Github video use ][i266] | tbalson | internal |
-| 17 | 265 | [Internal: Check 222 book order][i265] | tbalson | e222 internal |
-| 28 | 254 | [Fingerprint matching][i254] | None | internal section |
-| 29 | 253 | [Ubuntu on an USB stick for Windows 10][i253] | None | internal section |
-| 41 | 239 | [Internal: New trends][i239] | pulasthi | internal |
-| 42 | 238 | [internal: readme on anchoring links ][i238] | tbalson | internal |
-| 43 | 237 | [internal: piazza scribe for 222][i237] | tbalson | internal |
-| 45 | 235 | [Internal: Open sections and chapters][i235] | pulasthi | internal |
-| 49 | 231 | [above, below][i231] | bfeng | internal |
-| 50 | 227 | [internal: Virtual machine .md file is missing][i227] | tbalson | bug internal |
-| 52 | 211 | [some refs missing][i211] | pulasthi | bug internal |
-| 53 | 190 | [internal: Hadoop 3.1.1][i190] | bfeng | bug internal |
-| 55 | 186 | [internal: figure refernces {#fig:label}][i186] | bfeng | internal |
-| 57 | 180 | [E534 Cloud Section lecture videos merged into E-books][i180] | None | assigned internal |
-| 58 | 173 | [internal: biber installation][i173] | bfeng | internal |
-| 59 | 152 | [internal: Upload lecture videos from Prof Fox's Google Drive to Youtube][i152] | laszewsk | internal |
-| 63 | 144 | [internal: bigdata missing improvements][i144] | laszewsk | internal |
-| 65 | 134 | [internal: bibtex erros in technologies][i134] | bfeng | internal |
-| 66 | 126 | [bibtex: 523][i126] | bfeng | internal |
-| 67 | 115 | [Check and redo Docker Hadoop 3.0.1 and Docker for Hadoop section.][i115] | bfeng | internal |
-| 68 | 110 | [replace images with text ][i110] | bfeng | internal |
-| 69 | 77 | [add mapreduce to syllabus][i77] | laszewsk | assigned internal |
-| 70 | 76 | [openapi demo][i76] | laszewsk | assigned internal |
-| 71 | 68 | [internal: bib: create bibtex entries for go-intro.md][i68] | bfeng | internal |
-| 76 | 47 | [Internal: Hot cold isles in data center][i47] | pulasthi | assigned internal |
+| 10 | 290 | [bibtex issues][i290] | bfeng | internal |
+| 11 | 289 | [add to datacenter section][i289] | tbalson | internal |
+| 12 | 288 | [HIGHEST PRIORITY Missing BibTex in figure captions][i288] | bfeng | internal |
+| 16 | 276 | [Add weekly activities into the handbook][i276] | bfeng | internal |
+| 21 | 267 | [figure tags with bibtex ref][i267] | bfeng | internal |
+| 22 | 266 | [Internal: Github video use ][i266] | tbalson | internal |
+| 23 | 265 | [Internal: Check 222 book order][i265] | tbalson | e222 internal |
+| 34 | 254 | [Fingerprint matching][i254] | pulasthi | internal section |
+| 35 | 253 | [Ubuntu on an USB stick for Windows 10][i253] | None | internal section |
+| 47 | 239 | [Internal: New trends][i239] | pulasthi | internal |
+| 48 | 238 | [internal: readme on anchoring links ][i238] | tbalson | internal |
+| 49 | 237 | [internal: piazza scribe for 222][i237] | tbalson | internal |
+| 51 | 235 | [Internal: Open sections and chapters][i235] | pulasthi | internal |
+| 55 | 231 | [above, below][i231] | bfeng | internal |
+| 56 | 227 | [internal: Virtual machine .md file is missing][i227] | tbalson | bug internal |
+| 58 | 211 | [some refs missing][i211] | pulasthi | bug internal |
+| 59 | 190 | [internal: Hadoop 3.1.1][i190] | bfeng | bug internal |
+| 61 | 186 | [internal: figure refernces {#fig:label}][i186] | bfeng | internal |
+| 63 | 180 | [E534 Cloud Section lecture videos merged into E-books][i180] | None | assigned internal |
+| 64 | 173 | [internal: biber installation][i173] | bfeng | internal |
+| 65 | 152 | [internal: Upload lecture videos from Prof Fox's Google Drive to Youtube][i152] | laszewsk | internal |
+| 69 | 144 | [internal: bigdata missing improvements][i144] | laszewsk | internal |
+| 71 | 134 | [internal: bibtex erros in technologies][i134] | bfeng | internal |
+| 72 | 126 | [bibtex: 523][i126] | bfeng | internal |
+| 73 | 115 | [Check and redo Docker Hadoop 3.0.1 and Docker for Hadoop section.][i115] | bfeng | internal |
+| 74 | 110 | [replace images with text ][i110] | bfeng | internal |
+| 75 | 77 | [add mapreduce to syllabus][i77] | laszewsk | assigned internal |
+| 76 | 76 | [openapi demo][i76] | laszewsk | assigned internal |
+| 77 | 68 | [internal: bib: create bibtex entries for go-intro.md][i68] | bfeng | internal |
+| 82 | 47 | [Internal: Hot cold isles in data center][i47] | pulasthi | assigned internal |
 
 
 .</div>
@@ -77,24 +77,26 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
-| 19 | 263 | [Open: Singularity][i263] | None | chapter open section |
-| 20 | 262 | [Open: Windows subsystems for Linux][i262] | None | open section |
-| 21 | 261 | [Low Priority: Visual Studio for Cloud Computing (PyCharm is better)][i261] | None | e222 open section |
-| 24 | 258 | [Open: Apache Flink][i258] | None | chapter open section |
-| 30 | 252 | [Packer][i252] | None | open section |
-| 31 | 251 | [OpenLambda][i251] | None | open section |
-| 32 | 250 | [Fn Project][i250] | None | open section |
-| 33 | 249 | [IronFunctions][i249] | None | open section |
-| 34 | 248 | [Fission][i248] | None | open section |
-| 35 | 247 | [Riff][i247] | None | open section |
-| 36 | 246 | [OpenFaaS][i246] | None | open section |
-| 37 | 245 | [Hadoop virtual cluster installation using cloudmesh][i245] | None | open section |
-| 38 | 244 | [Google IaaS Cloud Services][i244] | None | open section |
-| 39 | 243 | [Artificial intelligence service with REST][i243] | None | open section |
-| 40 | 242 | [Scikit-Learn][i242] | None | open section |
-| 47 | 233 | [Section: AWS DocumentDB][i233] | None | open section |
-| 48 | 232 | [Section: Port forwarding][i232] | ameet20 | open section |
-| 51 | 223 | [Open: Section CircleCi][i223] | None | open section |
+| 1 | 302 | [MongoDB][i302] | pulasthi | chapter open section |
+| 5 | 298 | [Pi: docker and grafana and influxdb][i298] | None | open section |
+| 25 | 263 | [Open: Singularity][i263] | pulasthi | chapter open section |
+| 26 | 262 | [Open: Windows subsystems for Linux][i262] | None | open section |
+| 27 | 261 | [Low Priority: Visual Studio for Cloud Computing (PyCharm is better)][i261] | None | e222 open section |
+| 30 | 258 | [Open: Apache Flink][i258] | None | chapter open section |
+| 36 | 252 | [Packer][i252] | None | open section |
+| 37 | 251 | [OpenLambda][i251] | None | open section |
+| 38 | 250 | [Fn Project][i250] | None | open section |
+| 39 | 249 | [IronFunctions][i249] | None | open section |
+| 40 | 248 | [Fission][i248] | None | open section |
+| 41 | 247 | [Riff][i247] | None | open section |
+| 42 | 246 | [OpenFaaS][i246] | None | open section |
+| 43 | 245 | [Hadoop virtual cluster installation using cloudmesh][i245] | None | open section |
+| 44 | 244 | [Google IaaS Cloud Services][i244] | None | open section |
+| 45 | 243 | [Artificial intelligence service with REST][i243] | None | open section |
+| 46 | 242 | [Scikit-Learn][i242] | None | open section |
+| 53 | 233 | [Section: AWS DocumentDB][i233] | None | open section |
+| 54 | 232 | [Section: Port forwarding][i232] | ameet20 | open section |
+| 57 | 223 | [Open: Section CircleCi][i223] | None | open section |
 
 
 .</div>
@@ -108,13 +110,13 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
-| 19 | 263 | [Open: Singularity][i263] | None | chapter open section |
-| 22 | 260 | [Open: Cloud foundry][i260] | None | chapter open |
-| 23 | 259 | [Open: Box][i259] | None | chapter open |
-| 24 | 258 | [Open: Apache Flink][i258] | None | chapter open section |
-| 25 | 257 | [Open: Apache Avro (Python)][i257] | None | chapter open |
-| 27 | 255 | [Julia][i255] | None | chapter open |
-| 44 | 236 | [Open: EMR section(s)][i236] | None | chapter open |
+| 1 | 302 | [MongoDB][i302] | pulasthi | chapter open section |
+| 25 | 263 | [Open: Singularity][i263] | pulasthi | chapter open section |
+| 28 | 260 | [Open: Cloud foundry][i260] | None | chapter open |
+| 30 | 258 | [Open: Apache Flink][i258] | None | chapter open section |
+| 31 | 257 | [Open: Apache Avro (Python)][i257] | None | chapter open |
+| 33 | 255 | [Julia][i255] | None | chapter open |
+| 50 | 236 | [Open: EMR section(s)][i236] | None | chapter open |
 
 
 .</div>
@@ -128,9 +130,9 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
-| 1 | 292 | [Section: Infrastructure as Code - Terraform][i292] | joshish-iu | assigned section |
-| 6 | 286 | [Section: Data Services: AWS RedShift][i286] | joshish-iu | assigned section |
-| 14 | 268 | [Open: Google Drive Python interface][i268] | g14uok | assigned chapter section |
+| 8 | 292 | [Section: Infrastructure as Code - Terraform][i292] | joshish-iu | assigned section |
+| 13 | 286 | [Section: Data Services: AWS RedShift][i286] | joshish-iu | assigned section |
+| 20 | 268 | [Open: Google Drive Python interface][i268] | g14uok | assigned chapter section |
 
 
 .</div>
@@ -144,9 +146,10 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
-| 12 | 272 | [Assigned: Puppet][i272] | tandon-ritz | assigned chapter |
-| 14 | 268 | [Open: Google Drive Python interface][i268] | g14uok | assigned chapter section |
-| 26 | 256 | [Assigned: Chapter & Sections: Scala for cloud computing][i256] | hrbahramian | assigned chapter |
+| 19 | 272 | [Assigned: Puppet][i272] | tandon-ritz | assigned chapter |
+| 20 | 268 | [Open: Google Drive Python interface][i268] | g14uok | assigned chapter section |
+| 29 | 259 | [Open: Box][i259] | kelifine | assigned chapter |
+| 32 | 256 | [Assigned: Chapter & Sections: Scala for cloud computing][i256] | hrbahramian | assigned chapter |
 
 
 .</div>
@@ -160,7 +163,7 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
-| 46 | 234 | [Project: Virtual Cloud Directory][i234] | None | open project |
+| 52 | 234 | [Project: Virtual Cloud Directory][i234] | None | open project |
 
 
 .</div>
@@ -181,6 +184,13 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 
 
+[i302]: https://github.com/cloudmesh-community/book/issues/302
+[i301]: https://github.com/cloudmesh-community/book/issues/301
+[i300]: https://github.com/cloudmesh-community/book/issues/300
+[i299]: https://github.com/cloudmesh-community/book/issues/299
+[i298]: https://github.com/cloudmesh-community/book/issues/298
+[i295]: https://github.com/cloudmesh-community/book/issues/295
+[i294]: https://github.com/cloudmesh-community/book/issues/294
 [i292]: https://github.com/cloudmesh-community/book/issues/292
 [i291]: https://github.com/cloudmesh-community/book/pull/291
 [i290]: https://github.com/cloudmesh-community/book/issues/290
@@ -193,7 +203,6 @@ Assignees can change the summary to done. We will experiment with possibly addit
 [i275]: https://github.com/cloudmesh-community/book/issues/275
 [i273]: https://github.com/cloudmesh-community/book/issues/273
 [i272]: https://github.com/cloudmesh-community/book/issues/272
-[i271]: https://github.com/cloudmesh-community/book/issues/271
 [i268]: https://github.com/cloudmesh-community/book/issues/268
 [i267]: https://github.com/cloudmesh-community/book/issues/267
 [i266]: https://github.com/cloudmesh-community/book/issues/266
