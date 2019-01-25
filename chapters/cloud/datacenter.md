@@ -538,10 +538,10 @@ the provided air and the server's processor(s), reducing the amount of
 quantity of air that must be provided in order to cool the server and
 improving overall system efficiency.
 
-See +@fig:hot-cold-isle to understand how the hot-cold isle configuration is
+See @fig:hot-cold-isle to understand how the hot-cold isle configuration is
 setup in a data center.
 
-![Hot Cold Isle](images/hot-cold-isle.jpg){#fig:hot-cold-isle}[@hot-cold-isle]
+![Hot Cold Isle [@hot-cold-isle]](images/hot-cold-isle.jpg){#fig:hot-cold-isle}
 
 #### Containment
 
