@@ -1,5 +1,7 @@
 # Infrastructure as Code (IaC) - Terraform
 
+:o: please fix markdown you need to include empty lines after change of paragraphs, hadings, codebloks and so forth. there are spaces before (, remove things such as as per Wittig
+
 ## Learning Objectives
 
 * Introduction to IaC and listing of IaC Tools
@@ -8,8 +10,10 @@
 * Another Simple Terraform script - Docker
 
 ## Introduction to IaC 
+
 IaC(Infrastructure as Code) (as per Wittig [@awsinactionbook]) is "the process of using a high level programming language to control IT systems (servers, databases, networks, and so on)." The infrastructure can be created, configured and destroyed "by means of code rather than using physical hardware configuration, and interactive configuration tools." (from [@WikipediaInfraAsCode001].
 As per Wittig [@awsinactionbook], using a script or a declarative description has the following advantages "
+
 * Consistent usage
 * Dependencies are handled
 * Replicable
@@ -45,6 +49,7 @@ Terraform is a single binary, and runs the generated script remotely (without an
 The basic Terraform project script is a TF file (.tf). Other files you could encounter are plan file (.tfplan), or a state file (.tfstate).
 
 ## Basic Terraform Script and commands
+
 A basic script could look like this. Create this script in a project folder.
 ````
 provider "aws" {
