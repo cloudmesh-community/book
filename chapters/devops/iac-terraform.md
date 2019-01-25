@@ -1,25 +1,24 @@
-# Infrastructure as Code (IaC) - Terraform
+# Infrastructure as Code(IaC) - Terraform
 
-:o: please fix markdown you need to include empty lines after change
-of paragraphs, hadings, codebloks and so forth. there are spaces
-before (, remove things such as as per Wittig
 
 ## Learning Objectives
 
+
 * Introduction to IaC and listing of IaC Tools
 * Introduction to Terraform
-* Basic Terraform Script (EC2) and commands
+* Basic Terraform Script to create an EC2 instance and Terraform commands
 * Another Simple Terraform script - Docker
+* Further Reading
 
 ## Introduction to IaC 
 
-IaC (Infrastructure as Code) (as per Wittig [@awsinactionbook]) is "the
+
+IaC(Infrastructure as Code), from the book Amazon Webservices in Action [@awsinactionbook]), is "the
 process of using a high level programming language to control IT
-systems (servers, databases, networks, and so on)." The infrastructure
+systems -- servers, databases, networks, and so on." The infrastructure
 can be created, configured and destroyed "by means of code rather than
 using physical hardware configuration, and interactive configuration
-tools." (from [@WikipediaInfraAsCode001].  As per Wittig
-[@awsinactionbook], using a script or a declarative description has
+tools." [@WikipediaInfraAsCode001].  From the book "Amazon Web Services in Action" by Wittig [@awsinactionbook], using a script or a declarative description has
 the following advantages "
 
 * Consistent usage
@@ -31,10 +30,10 @@ the following advantages "
 * Minimizes human failure
 * Documentation for your infrastructure "
 
-IaC solves the problem of "environment drift", leading to the infamous
+IaC solves the problem of "environment drift", that used to lead to the infamous
 "but it works on my machine" kind of errors that are difficult to
 trace. Sam Guckenheimer [@WhatisIaC002] writes that "IaC guarantees
-Idempotence (known end state) irrespective of starting
+Idempotence -- known/predictable end state --  irrespective of starting
 state. Idempotency is achieved by either automatically configuring an
 existing target or by discarding the existing target and recreating a
 fresh environment."
@@ -45,9 +44,8 @@ Google Cloud - Cloud Deployment Manager
 Microsoft Azure - Azure Resource Manager
 OpenStack - Heat
 
-As per Yevgeniy Brikman in [@terraformuprunningbook], there are " 4
+From the book "Terraform - Up and Running" by Yevgeniy Brikman [@terraformuprunningbook], there are " 4
 broad categories of IaC tools
-
 * Ad hoc scripts : Any shell, Python, Perl, Lua scripts that are written
 * Configuration management tools : Chef, Puppet, Ansible, SaltStack
 * Server templating tools: Docker, Packer, Vagrant
@@ -62,16 +60,17 @@ declarative style.  "
 Terraform is from HashiCorp. The tool is written in Go, and so are the
 modules. Since most cloud providers have APIs and support for Go,
 modules have been written for most providers.  The script of Terraform
-is called HCL (HashiCorp Configuration Language) is similar to
+is called HCL(HashiCorp Configuration Language) is similar to
 YAML. Many code editors and IDEs have support for syntax highlighting
 and even refactoring.  Terraform is a single binary, and runs the
-generated script remotely (without any master-slave configuration, or
-without any agents).
+generated script remotely -- without any master-slave configuration, or
+without any agents.
 
-The basic Terraform project script is a TF file (.tf). Other files you
-could encounter are plan file (.tfplan), or a state file (.tfstate).
+The basic Terraform project script is a TF file(.tf). Other files you
+could encounter are plan file(.tfplan), or a state file(.tfstate).
 
 ## Basic Terraform Script and commands
+
 
 A basic script could look like this. Create this script in a project
 folder.
@@ -114,16 +113,18 @@ These steps would destroy the EC2 instance.
 Let's walk through the basic script to help understand the overall working of Terraform.
 
 The 2 main sections of the script are "Provider" and "Resource".
-"Providers" could be cloud providers (including all the major ones -
-AWS, Google Cloud, Azure, Alibaba, DigitalOcean, Oracle), API end
-points (for example GitHub, GitLab, DNS), Databases (MySQL,
-PostgreSQL), infrastructure components like Docker, Kubernetes,
-VMWare) "Resources" section has the resources that the "Providers"
+"Providers" could be cloud providers -- including all the major ones -
+AWS, Google Cloud, Azure, Alibaba, DigitalOcean, Oracle, API end
+points -- for example GitHub, GitLab, DNS, Databases -- MySQL,
+PostgreSQL, infrastructure components like Docker, Kubernetes,
+VMWare. 
+
+"Resources" section has the resources that the "Providers"
 manage.
 
 When you run ````terraform init````, the relevant modules specified in
 the "Providers" and "Resources" are downloaded, and your project
-workspace (folder or directory) is initialized. All the dependent
+workspace  -- folder or directory -- is initialized. All the dependent
 resource information is also downloaded.
 
 The ````terraform plan```` command plans out all the infrastructure
@@ -151,13 +152,13 @@ access key and secret key could be accessed as environment variables.
 
 ### What is State?
 
-When you run ````terraform apply````, a state file (.tfstate) is
+When you run ````terraform apply````, a state file(.tfstate) is
 created. Though it is human readable, it is not advisable to edit it
-by hand. Since it is plain text (and may contain secret information),
+by hand. Since it is plain text and may contain secret information,
 it is also not advisable to check this file into a version repository
-like Git. Yevgeniy Brikman advises (in [@terraformuprunningbook]) to
+like Git. The book "Terraform - Up and Running" [@terraformuprunningbook] advises to
 add the .terraform, .tfstate and .tfstate.backup to .gitignore file. A
-shared, encrypted, and protected storage (like S3) is often the best
+shared, encrypted, and protected storage -- like S3 -- is often the best
 location for these files.
 
 ### How Terraform deals with "environment drift"?
@@ -172,6 +173,7 @@ instantiated.
 
 
 ## Another Simple Terraform script - Docker
+
 
 Here is a simple Terraform script with Docker with nginx from Brian Shumate [@TerraformDockerGist]
 
@@ -199,19 +201,22 @@ resource "docker_image" "nginx" {
 ````
 
 Save this file as dockng.tf in another project folder/directory. Make
-sure docker is installed, and commands like ````docker ps -a```` are
-working.  Run the same set of commands as before
+sure docker is installed.
 
-```` terraform init terraform plan -out CREATmydocng.tfplan terraform
-apply CREATmydocng.tfplan ````
+Run the same set of commands as before
+
+```` terraform init 
+terraform plan -out CREATmydocng.tfplan 
+terraform apply CREATmydocng.tfplan 
+````
 
 
-This will create a docker container
-with nginx, visible when you run ````docker ps -a````. When you open a
-browser, and navigate to [http://localhost](localhost), you should see
-the nginx start page.
+This will create a docker container with nginx, visible when you run ````docker ps -a````. 
+
+When you open a browser, and navigate to [http://localhost](localhost), you should see the nginx start page.
 
 To destroy the container, run these commands using the same PLAN-APPLY
+
 ````
 terraform plan -destroy -out DESTmydocng.tfplan
 terraform apply DESTmydocng.tfplan
@@ -219,16 +224,17 @@ terraform apply DESTmydocng.tfplan
 
 ## Further Reading
 
+
 A more complex example of Terraform is given in the AWS RedShift
 section of the book.
 
 Terraform is really powerful, expressive, and versatile. We have
 explored some features and the basic workflow of usage.  Please see
 books and resources like the "Terraform Up and Running" by Yevgeniy
-Brikman (O'Reilly Media) [@terraformuprunningbook] for more real-world
+Brikman, O'Reilly Media [@terraformuprunningbook] for more real-world
 advice on IaC, structuring Terraform code and good deployment
 practices.
 
 Another resource for IaC is the book "Infrastructure as Code" by Kief
-Morris (O'Reilly Media) [@iacbook].
+Morris, O'Reilly Media [@iacbook].
 
