@@ -43,12 +43,12 @@ INDEX=\
   chapters/git/github.md\
   chapters/git/gitpullreqest.md\
   chapters/class/222-a.md\
-  chapters/nist/bdra.md\
   chapters/rest/rest.md\
   chapters/rest/swagger-spec.md\
   chapters/rest/swagger.md\
   chapters/rest/swagger-introspection.md\
   chapters/rest/swagger-codegen.md\
+  chapters/nist/bdra.md\
   chapters/prg/github.md\
   chapters/ai/ai.md\
   chapters/SECTION/SECTION-FAQ.md\
