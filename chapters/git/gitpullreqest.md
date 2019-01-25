@@ -110,3 +110,5 @@ the details and submit the pull request will appear in the original
 pull request, otherwise your pull will not be able to directly merged to
 the original repo. If you do not see this that means you have not properly
 done the `git pull upstream master` command before you made the changes**
+
+[:clapper: git example on CL 10:09](https://youtu.be/8wyTtG0PsgM) 
