@@ -464,13 +464,18 @@
         - chapters/git/github.md:
             - chapters/git/gitpullreqest.md
     - chapters/class/222-a.md
-    - chapters/nist/bdra.md
     - chapters/rest/rest.md:
+        - chapters/rest/swagger.md
         - chapters/rest/swagger-spec.md
-        - chapters/rest/swagger.md      
         - chapters/rest/swagger-introspection.md
         - chapters/rest/swagger-codegen.md
-        - chapters/prg/github.md
+        - chapters/rest/rest-restful.md
+        - chapters/rest/rest-eve.md
+        - chapters/rest/rest-haetos.md
+        - chapters/rest/rest-eve-extensions.md
+        - chapters/rest/rest-django.md
+    - chapters/prg/github.md
+    - chapters/nist/bdra.md
     - chapters/ai/ai.md
     - chapters/SECTION/SECTION-FAQ.md:
         - chapters/faq.md       
