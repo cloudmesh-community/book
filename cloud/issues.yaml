@@ -1,3 +1,204 @@
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/310
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/310/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/310/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/310/events
+  html_url: https://github.com/cloudmesh-community/book/issues/310
+  id: 403439003
+  node_id: MDU6SXNzdWU0MDM0MzkwMDM=
+  number: 310
+  title: HPC in the cloud
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels:
+  - id: 1183433444
+    node_id: MDU6TGFiZWwxMTgzNDMzNDQ0
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/open
+    name: open
+    color: fff8b5
+    default: false
+  - id: 1058711305
+    node_id: MDU6TGFiZWwxMDU4NzExMzA1
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/section
+    name: section
+    color: 006b75
+    default: false
+  state: open
+  locked: false
+  assignee: null
+  assignees: []
+  milestone: null
+  comments: 0
+  created_at: '2019-01-26T12:53:23Z'
+  updated_at: '2019-01-26T12:53:40Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "In this section you will explore how High Performance Computing is offered\
+    \ in the cloud or as service\r\n\r\nThis includes you analyze common commercial\
+    \ offerings such as AWS, Azure, google and so on, but also provides a listing\
+    \ and may be a paragraph for things such as XSEDE, IUs supercomputers\r\n\r\n"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/309
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/309/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/309/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/309/events
+  html_url: https://github.com/cloudmesh-community/book/pull/309
+  id: 403221938
+  node_id: MDExOlB1bGxSZXF1ZXN0MjQ3NzI2MDYz
+  number: 309
+  title: Updated iac-terraform.md based on review comments
+  user:
+    login: joshish-iu
+    id: 46567073
+    node_id: MDQ6VXNlcjQ2NTY3MDcz
+    avatar_url: https://avatars3.githubusercontent.com/u/46567073?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/joshish-iu
+    html_url: https://github.com/joshish-iu
+    followers_url: https://api.github.com/users/joshish-iu/followers
+    following_url: https://api.github.com/users/joshish-iu/following{/other_user}
+    gists_url: https://api.github.com/users/joshish-iu/gists{/gist_id}
+    starred_url: https://api.github.com/users/joshish-iu/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/joshish-iu/subscriptions
+    organizations_url: https://api.github.com/users/joshish-iu/orgs
+    repos_url: https://api.github.com/users/joshish-iu/repos
+    events_url: https://api.github.com/users/joshish-iu/events{/privacy}
+    received_events_url: https://api.github.com/users/joshish-iu/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee: null
+  assignees: []
+  milestone: null
+  comments: 0
+  created_at: '2019-01-25T16:09:17Z'
+  updated_at: '2019-01-25T16:09:17Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  pull_request:
+    url: https://api.github.com/repos/cloudmesh-community/book/pulls/309
+    html_url: https://github.com/cloudmesh-community/book/pull/309
+    diff_url: https://github.com/cloudmesh-community/book/pull/309.diff
+    patch_url: https://github.com/cloudmesh-community/book/pull/309.patch
+  body: "These were the review comments:\r\n:o: please fix markdown you need to include\
+    \ empty lines after change\r\nof paragraphs, hadings, codebloks and so forth.\
+    \ there are spaces\r\nbefore (, remove things such as as per Wittig\r\nMade the\
+    \ following changes:\r\n1. Added empty lines after paragraphs, headings and codeblocks\r\
+    \n2. Remove spaces before ( by removing most parenthesis. \r\n3. Removed all \"\
+    per xxx\""
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/308
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/308/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/308/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/308/events
+  html_url: https://github.com/cloudmesh-community/book/issues/308
+  id: 402996933
+  node_id: MDU6SXNzdWU0MDI5OTY5MzM=
+  number: 308
+  title: 'Section: Data Services: Google BigQuery'
+  user:
+    login: joshish-iu
+    id: 46567073
+    node_id: MDQ6VXNlcjQ2NTY3MDcz
+    avatar_url: https://avatars3.githubusercontent.com/u/46567073?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/joshish-iu
+    html_url: https://github.com/joshish-iu
+    followers_url: https://api.github.com/users/joshish-iu/followers
+    following_url: https://api.github.com/users/joshish-iu/following{/other_user}
+    gists_url: https://api.github.com/users/joshish-iu/gists{/gist_id}
+    starred_url: https://api.github.com/users/joshish-iu/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/joshish-iu/subscriptions
+    organizations_url: https://api.github.com/users/joshish-iu/orgs
+    repos_url: https://api.github.com/users/joshish-iu/repos
+    events_url: https://api.github.com/users/joshish-iu/events{/privacy}
+    received_events_url: https://api.github.com/users/joshish-iu/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee: null
+  assignees: []
+  milestone: null
+  comments: 0
+  created_at: '2019-01-25T04:03:33Z'
+  updated_at: '2019-01-25T04:03:33Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: Write a section about Google BigQuery
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/305
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/305/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/305/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/305/events
+  html_url: https://github.com/cloudmesh-community/book/issues/305
+  id: 402867435
+  node_id: MDU6SXNzdWU0MDI4Njc0MzU=
+  number: 305
+  title: Nauta
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels:
+  - id: 1183433444
+    node_id: MDU6TGFiZWwxMTgzNDMzNDQ0
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/open
+    name: open
+    color: fff8b5
+    default: false
+  - id: 1058711305
+    node_id: MDU6TGFiZWwxMDU4NzExMzA1
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/section
+    name: section
+    color: 006b75
+    default: false
+  state: open
+  locked: false
+  assignee: null
+  assignees: []
+  milestone: null
+  comments: 0
+  created_at: '2019-01-24T19:46:37Z'
+  updated_at: '2019-01-24T19:46:37Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: https://venturebeat.com/2019/01/23/intel-debuts-nauta-for-distributed-deep-learning-with-kubernetes/
 - url: https://api.github.com/repos/cloudmesh-community/book/issues/302
   repository_url: https://api.github.com/repos/cloudmesh-community/book
   labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/302/labels{/name}
@@ -845,63 +1046,15 @@
     type: User
     site_admin: false
   milestone: null
-  comments: 0
+  comments: 1
   created_at: '2019-01-21T20:44:14Z'
-  updated_at: '2019-01-21T21:29:25Z'
+  updated_at: '2019-01-25T03:57:50Z'
   closed_at: null
-  author_association: NONE
+  author_association: CONTRIBUTOR
   body: 'Create a note about how Terraform (https://www.terraform.io/) can be used
     to create various cloud infrastructures & providers (AWS, GCloud, Azure, Digital
     Ocean etc), explain the Terraform workflow, the Terraform Script sections, with
     some examples. '
-- url: https://api.github.com/repos/cloudmesh-community/book/issues/291
-  repository_url: https://api.github.com/repos/cloudmesh-community/book
-  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/291/labels{/name}
-  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/291/comments
-  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/291/events
-  html_url: https://github.com/cloudmesh-community/book/pull/291
-  id: 401502696
-  node_id: MDExOlB1bGxSZXF1ZXN0MjQ2NDA3MDEx
-  number: 291
-  title: 'Create aws-redshift.md, tracked by Issue #286'
-  user:
-    login: joshish-iu
-    id: 46567073
-    node_id: MDQ6VXNlcjQ2NTY3MDcz
-    avatar_url: https://avatars3.githubusercontent.com/u/46567073?v=4
-    gravatar_id: ''
-    url: https://api.github.com/users/joshish-iu
-    html_url: https://github.com/joshish-iu
-    followers_url: https://api.github.com/users/joshish-iu/followers
-    following_url: https://api.github.com/users/joshish-iu/following{/other_user}
-    gists_url: https://api.github.com/users/joshish-iu/gists{/gist_id}
-    starred_url: https://api.github.com/users/joshish-iu/starred{/owner}{/repo}
-    subscriptions_url: https://api.github.com/users/joshish-iu/subscriptions
-    organizations_url: https://api.github.com/users/joshish-iu/orgs
-    repos_url: https://api.github.com/users/joshish-iu/repos
-    events_url: https://api.github.com/users/joshish-iu/events{/privacy}
-    received_events_url: https://api.github.com/users/joshish-iu/received_events
-    type: User
-    site_admin: false
-  labels: []
-  state: open
-  locked: false
-  assignee: null
-  assignees: []
-  milestone: null
-  comments: 0
-  created_at: '2019-01-21T20:37:13Z'
-  updated_at: '2019-01-21T21:21:48Z'
-  closed_at: null
-  author_association: NONE
-  pull_request:
-    url: https://api.github.com/repos/cloudmesh-community/book/pulls/291
-    html_url: https://github.com/cloudmesh-community/book/pull/291
-    diff_url: https://github.com/cloudmesh-community/book/pull/291.diff
-    patch_url: https://github.com/cloudmesh-community/book/pull/291.patch
-  body: "Added these sections:\r\nIntroduction to AWS RedShift\r\nAWS RedShift Architecture\r\
-    \nQuery Processing in AWS RedShift\r\nCreating an AWS RedShift cluster using Terraform\r\
-    \nInteracting with AWS RedShift using DB Tools"
 - url: https://api.github.com/repos/cloudmesh-community/book/issues/290
   repository_url: https://api.github.com/repos/cloudmesh-community/book
   labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/290/labels{/name}
@@ -1398,13 +1551,13 @@
   milestone: null
   comments: 0
   created_at: '2019-01-19T17:11:01Z'
-  updated_at: '2019-01-19T17:23:03Z'
+  updated_at: '2019-01-24T20:57:14Z'
   closed_at: null
-  author_association: NONE
+  author_association: CONTRIBUTOR
   body: "Write a section about AWS RedShift. \r\n(more issues like this later)\r\n\
     This will be followed by other cloud provider data offerings like AWS Aurora (w/serverless),\
     \ SnowFlake, CockroachDB, Google BigTable, Google Spanner, Azure CosmosDB, and\
-    \ so on."
+    \ so on.\r\n\r\nchapters/data/aws-redshift.md"
 - url: https://api.github.com/repos/cloudmesh-community/book/issues/284
   repository_url: https://api.github.com/repos/cloudmesh-community/book
   labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/284/labels{/name}
@@ -2350,9 +2503,9 @@
     updated_at: '2019-01-22T17:43:41Z'
     due_on: '2019-01-18T08:00:00Z'
     closed_at: null
-  comments: 0
+  comments: 2
   created_at: '2019-01-16T15:05:58Z'
-  updated_at: '2019-01-16T15:05:58Z'
+  updated_at: '2019-01-25T14:56:11Z'
   closed_at: null
   author_association: CONTRIBUTOR
   body: Find video from Spring 2018 or shoot new video showcasing github use with
@@ -2591,9 +2744,9 @@
     updated_at: '2019-01-22T18:54:00Z'
     due_on: '2019-01-25T08:00:00Z'
     closed_at: null
-  comments: 0
+  comments: 1
   created_at: '2019-01-16T14:58:47Z'
-  updated_at: '2019-01-21T14:26:37Z'
+  updated_at: '2019-01-26T06:26:51Z'
   closed_at: null
   author_association: CONTRIBUTOR
   body: ''
@@ -2720,9 +2873,9 @@
     updated_at: '2019-01-22T18:54:00Z'
     due_on: '2019-01-25T08:00:00Z'
     closed_at: null
-  comments: 2
+  comments: 3
   created_at: '2019-01-16T14:16:46Z'
-  updated_at: '2019-01-22T18:52:41Z'
+  updated_at: '2019-01-24T21:03:14Z'
   closed_at: null
   author_association: CONTRIBUTOR
   body: "https://singularity.lbl.gov/\r\n\r\nPulashti: focus first on converting the\

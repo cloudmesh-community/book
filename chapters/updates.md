@@ -8,6 +8,10 @@ the Github commits at
 
 for a complete list of changes in reverse chronological order
 
+* Jan 25, 2019: A video for doing github pull requests has been
+  updated, explicitly trageting the cloudmesh book github repository
+  (see @sec:git-pillrequest).
+
 * Jan 23, 2019: Changed the cloud links to view only instead of going
   directly into the editor. Separated the REST md file inte seveal
   files so we can reorder them and start with OpenAPI instead of
