@@ -52,7 +52,7 @@ A technology overview is a document that is multiple pages long and
 contains an overview about the technology, and a number of references. 
 It is used to prepare you for writing a project report. Such technology 
 overviews can be integrated as chapters into our book. You can look for 
-example at the *graphqlsection in the 
+example at the *graphql* section in the 
 [Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub) book] for an example 
 on how such a section looks like 
 
@@ -235,7 +235,7 @@ files and citations. :o: stay tuned on this.
 1.  Have you grammar chacked the paper?
 1.  Use proper capitaliztion in the title, see:
     <https://capitalizemytitle.com/>
-1.  Are you using *aand *theproperly?
+1.  Are you using *a* and *the* properly?
 1.  Short form of verbs is for spoken language. Do not use them in
     scientific writing. Example: can't is incorrect, cannot is correct.
 1.  Do not use phrases such as *shown in the Figure bellow*. Instead, use
