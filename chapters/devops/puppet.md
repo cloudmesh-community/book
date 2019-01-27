@@ -1,5 +1,7 @@
 # Puppet :wave:
 
+:o: ubuntu 16.04 is outdated. Could that not be done on 18.04
+
 :o: review has been halted as it was verified that this was not tested
 by the contributor. We can not accept sections and chapters that are
 not tested. If unclear discuss in the online hours.
