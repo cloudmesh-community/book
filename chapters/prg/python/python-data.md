@@ -142,17 +142,53 @@ with open('strings.json') as f:
 
 ### XML :o:
 
-XML format is extensively used to transport data acroos the web. It has a hierarchical data format, and can be represented in the for of  a tree. Python provides the ElementTree XML API to parse and create XML data.
+XML format is extensively used to transport data across the web. It has a hierarchical data format, and can be represented in the form of  a tree. 
 
+Sample XML data:
 ```XML
 <data>
     <items>
         <item name="item-1"></item>
         <item name="item-2"></item>
-        <item name="item33"></item>
+        <item name="item-3"></item>
     </items>
 </data>
 ```
+
+Python provides the ElementTree XML API to parse and create XML data. 
+
+* To import XML data from a file:
+```python
+import xml.etree.ElementTree as ET
+tree = ET.parse('data.xml')
+root = tree.getroot()
+```
+
+* To read XML data from a string directly:
+```python
+root = ET.fromstring(data_as_string)
+```
+
+* To iterate over child nodes in a root:
+```python
+for child in root:
+    print(child.tag, child.attrib)
+```
+
+* Modifying XMl data using ElementTree:
+** To modify text within a tab of an element using .text method:
+```python
+tag.text = new_data
+tree.write('output.xml')
+```
+
+** To add/modify an attirbute use .set() method:
+```python
+tag.set('key', 'value')
+tree.write('output.xml')
+```
+
+
 
 
 ### RDF
