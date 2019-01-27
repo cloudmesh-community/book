@@ -140,7 +140,7 @@ with open('strings.json') as f:
     content = json.load(f)
 ```
 
-### XML :o:
+### XML 
 
 XML format is extensively used to transport data across the web. It has a hierarchical data format, and can be represented in the form of  a tree. 
 
@@ -175,7 +175,7 @@ for child in root:
     print(child.tag, child.attrib)
 ```
 
-Modifying XMl data using ElementTree:
+Modifying XML data using ElementTree:
 
 * Modifying text within a tag of an element using .text method:
 ```python
@@ -183,13 +183,15 @@ tag.text = new_data
 tree.write('output.xml')
 ```
 
-* Adding/modifying an attirbute using .set() method:
+* Adding/modifying an attribute using .set() method:
 ```python
 tag.set('key', 'value')
 tree.write('output.xml')
 ```
 
-Other Python modules used for parsing XML data include minidom and BeautifulSoup.
+Other Python modules used for parsing XML data include 
+* minidom (<https://docs.python.org/3/library/xml.dom.minidom.html>)
+* BeautifulSoup (<https://www.crummy.com/software/BeautifulSoup/>)
 
 
 ### RDF
