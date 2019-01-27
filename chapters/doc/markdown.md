@@ -60,7 +60,23 @@ To convert the markdown to other formats with `pandoc`
     
     Any figure used in the text must be referred to with a figure
 	cation and label as shown next
+	
+    Quotes are in our publications not only done with "quote" but also 
+    with `>` in front of each quoted line, it must be clearly indicated 
+    before or after from which source:
     
+    > "This is a quote" [@label].
+    
+    Please note that the period is after the label. Alternatively you can say
+    
+    In [@label] we find the following list of properties.(use an appropriate starting 
+    sentence):
+    
+    > * item1
+    > * item1
+    
+    PLease note that we have not used quotes here as it is confusing in lists, 
+    but it is clear from the `>` that we still quote.
 
 ## Editors
 
@@ -182,7 +198,9 @@ Packages of interest include:
 * CSV table <https://github.com/baig/pandoc-csv2table>
 * inline CSV table <https://github.com/mb21/pandoc-placetable>
 
-#### Mermaid
+#### Mermaid :o:
+
+:o: For now we do not use mermaid
 
 Mermaid is a graph generation tool that lets you create graphs and
 diagrams with the help of a description language. It includes graphviz
