@@ -5,8 +5,8 @@ included this section for our most advanced contributors and those
 that update the epub on github.
 
 Please note that you must have at least Pandoc version 2.2.3
-installed.  You will also need Python version 3.7.1 to run the scripts
-needed to assamble the document.  Earlier versions will not work. You
+installed.  We do recomment that you use pandoc 2.5. Earlier versions of pandoc have bugs in them that prevent pandoc from workingg properly. You will also need Python version 3.7.1 to run the scripts
+needed to assamble the document.  Earlier versions will not work. We no longer support python 2.7.x. You
 can check the versions with
 
 ```bash
