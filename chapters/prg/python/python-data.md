@@ -142,7 +142,17 @@ with open('strings.json') as f:
 
 ### XML :o:
 
-XML is an inherently hierarchical data format, and the most natural way to represent it is with a tree.
+XML format is extensively used to transport data acroos the web. It has a hierarchical data format, and can be represented in the for of  a tree. Python provides the ElementTree XML API to parse and create XML data.
+
+```XML
+<data>
+    <items>
+        <item name="item-1"></item>
+        <item name="item-2"></item>
+        <item name="item33"></item>
+    </items>
+</data>
+```
 
 
 ### RDF
