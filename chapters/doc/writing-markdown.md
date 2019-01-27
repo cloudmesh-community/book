@@ -26,8 +26,8 @@ leverage hundrets of thousends professionaly curated bibliography
 citations while not needing to worry about IEEE, ACM, or APA style
 formating requirements. The bibliograhy format is automatically
 created for you. In particular markdown is very useful for creating
-deployment and code documentations though easy to use verbatim
-modes. At the same time it allows us to use mathematical equations as
+deployment and code documentations through easy to use verbatim or code
+environments. At the same time it allows us to use mathematical equations as
 defined in LaTeX and avoid images for equation includsion.
 
 Having a uniform report format not only helps us to be able to
