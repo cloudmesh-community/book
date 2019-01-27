@@ -15,9 +15,9 @@ make headings look like headings with a bold font.
 
 To convert the markdown to other formats with `pandoc`
 
-    # Heading
+    # Heading {#sec:unique-heading-label-without-spaces}
 
-    ## Sub-heading
+    ## Sub-heading {#sec:unique-sub-heading-label-without-spaces}
 
     ### Sub Sub Heading heading
      
@@ -59,7 +59,7 @@ To convert the markdown to other formats with `pandoc`
     ![This is the caption](images/example.png){#fig:labelwithoutspaces}
     
     Any figure used in the text must be referred to with a figure
-	cation and label as shown next
+	cation and label. Images can not be embedded in itemized lists.
 	
     Quotes are in our publications not only done with "quote" but also 
     with `>` in front of each quoted line, it must be clearly indicated 
@@ -82,7 +82,11 @@ To convert the markdown to other formats with `pandoc`
 
 There are several tools that make writing documents in markdown
 easy. If you do not just look at the output of these documents but
-follow the structure guides properly.
+follow the structure guides properly. Ususally whatever editor you
+use, it will not rended the document properly. They are not supposed
+to be WYSIWYG editore. They help, but you need to make sure the
+markdown is valit and follows our convention just as you woudl with
+any other format.
 
 Examples for such editors are:
 
@@ -197,6 +201,8 @@ Packages of interest include:
 * section numbering <https://github.com/chdemko/pandoc-numbering>
 * CSV table <https://github.com/baig/pandoc-csv2table>
 * inline CSV table <https://github.com/mb21/pandoc-placetable>
+
+In our framework we use crosref and crosscite
 
 #### Mermaid :o:
 
