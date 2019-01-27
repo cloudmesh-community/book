@@ -142,7 +142,8 @@ with open('strings.json') as f:
 
 ### XML :o:
 
-Please contribute a XML python section
+XML is an inherently hierarchical data format, and the most natural way to represent it is with a tree.
+
 
 ### RDF
 
