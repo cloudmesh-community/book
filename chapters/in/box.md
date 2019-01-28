@@ -50,12 +50,7 @@ Once you have generated a keypair, a config.json file will automatically downloa
 
 ## Box Methods
 
-The Python SDK has several methods for creating objects and endpoints which you can then perform operations on, including: 
-- client.user(user_id)
-- client.folder(folder_id)
-- client.file(file_id)
-- client.search()
-- client.events()
+The Python SDK has several methods for creating objects and endpoints which you can then perform operations on. 
 
 ### Get information about a Box object
 
@@ -92,8 +87,8 @@ The Python SDK has several methods for creating objects and endpoints which you 
      
      # Get all items in a folder:
      items = client.folder(folder_id=<folder id>).get_items()
-     for entry in items.entries:
-        print(entry.name)
+     for item in items:
+        print(item.id)
 
 ### Uploading files
     
@@ -164,8 +159,8 @@ Which will return the following:
 The query string used in a search can include object names, description, text content, or other object data. 
 
     items = client.search().query(<query string>, file_extensions = ['png', 'txt'], fields = ['name', 'description'])
-    for entry in items.entries:
-        print(entry.id)
+    for item in items:
+        print(item.name)
         
 ### Shared links
 Shared links give read-only access to a file through a URL. Specifying the access level of a shared link determines whether users will need to authenticate with Box in order to view the file. 
@@ -176,6 +171,55 @@ Shared links give read-only access to a file through a URL. Specifying the acces
     # Retrieving a shared link that has already been created:
     url = client.file(file_id=<file id>).shared_link['url']
     
+## Project management 
+Box offers some limited project management tools, including groups, collaborations, workflows, and tasks. 
+
+### Collaborations
+A collaboration object gives a user specified permissions for the defined files and folders. The collaboration object itself returns information about the users, files, and roles of the collaboration. 
+
+    collaboration = client.collaboration(collab_id=<collab id>).get()
+        {
+            "type": "collaboration",
+            "id": "791293",
+            "created_by": {
+                "type": "user",
+                "id": "17738362",
+                "name": "sean rose",
+                "login": "sean@box.com"
+            },
+            "created_at": "2012-12-12T10:54:37-08:00",
+            "modified_at": "2012-12-12T11:30:43-08:00",
+            "expires_at": null,
+            "status": "accepted",
+            "accessible_by": {
+                "type": "user",
+                "id": "18203124",
+                "name": "sean",
+                "login": "sean+test@box.com"
+            },
+            "role": "editor",
+            "acknowledged_at": "2012-12-12T11:30:43-08:00",
+            "item": {
+                "type": "folder",
+                "id": "11446500",
+                "sequence_id": "0",
+                "etag": "0",
+                "name": "Shared Pictures"
+            }
+        }
+        
+    # Create a new collaboration
+    from boxsdk.object.collaboration import CollaborationRole
+    user = client.user(user_id=<user id>)
+    collab = client.folder(folder_id=<folder id>).collaborate(user, CollaborationRole.VIEWER) 
+    
+Roles include editor, viewer, previewer, uploader, previewer uploader, viewer uploader, or co-owner. 
+Updating and deleting a collaboration is similar to other box objects:
+
+    from boxsdk.object.collaboration import CollaborationRole
+    collaboration = client.collaboration(collab_id=<collaboration id>)
+    updated_collaboration = collaboration.update_info(CollaborationRole.EDITOR)
+
 ## Webhooks
 
 Webhooks are a convenient way of tracking events, such as file downloads, deletions, comments, and other actions. Webhooks send notifications about these events to a URL of your choosing. Events that can have webhooks include the following among others: 
@@ -233,7 +277,7 @@ Here is an example of a webhook notification:
  
  
  
-## Comments, tasks, and workflows
+
 
 
 Pybox
