@@ -179,6 +179,7 @@ Shared links give read-only access to a file through a URL. Specifying the acces
 ## Webhooks
 
 Webhooks are a convenient way of tracking events, such as file downloads, deletions, comments, and other actions. Webhooks send notifications about these events to a URL of your choosing. Events that can have webhooks include the following among others: 
+
 |Event|
 |-----------|
 |FILE.UPLOADED|
