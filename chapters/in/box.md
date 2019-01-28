@@ -207,18 +207,47 @@ A collaboration object gives a user specified permissions for the defined files 
                 "name": "Shared Pictures"
             }
         }
-        
+    
+Roles include editor, viewer, previewer, uploader, previewer uploader, viewer uploader, or co-owner. Updating and deleting a collaboration is similar to other box objects. 
+
     # Create a new collaboration
     from boxsdk.object.collaboration import CollaborationRole
     user = client.user(user_id=<user id>)
     collab = client.folder(folder_id=<folder id>).collaborate(user, CollaborationRole.VIEWER) 
     
-Roles include editor, viewer, previewer, uploader, previewer uploader, viewer uploader, or co-owner. 
-Updating and deleting a collaboration is similar to other box objects:
-
+    # Update a collaboration
     from boxsdk.object.collaboration import CollaborationRole
     collaboration = client.collaboration(collab_id=<collaboration id>)
     updated_collaboration = collaboration.update_info(CollaborationRole.EDITOR)
+    
+    # Delete a collaboration 
+    client.collaboration(collab_id=<collaboraiton id>).delete()
+    
+### Groups
+A group object can be used instead of a user in collaborations. The get() call to a group object returns basic information about the group and does not include a member list: 
+
+    group = client.group(group_id=<group id>).get() 
+        {
+        "type": "group",
+        "id": "255224",
+        "name": "Everyone",
+        "created_at": "2014-09-15T13:15:35-07:00",
+        "modified_at": "2014-09-15T13:15:35-07:00"
+        }
+        
+    # Create, update, or delete a group
+    new_group = client.create_group(name="New Group")
+    updated_group = client.group(group_id=<group id>).update_info({'key':'value'})
+    client.group(group_id=<group id>).delete()
+    
+    # Add a member to a group
+    user = client.user(user_id=<user id>)
+    member = client.group(group_id=<group id>).add_member(user)
+           
+Once a member has been added to the group, a membership object is created which controls the relationship after creation. 
+
+    # Get, update, and delete membership:
+    
 
 ## Webhooks
 
