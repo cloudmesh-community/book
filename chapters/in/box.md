@@ -176,7 +176,65 @@ Shared links give read-only access to a file through a URL. Specifying the acces
     # Retrieving a shared link that has already been created:
     url = client.file(file_id=<file id>).shared_link['url']
     
+## Webhooks
+
+Webhooks are a convenient way of tracking events, such as file downloads, deletions, comments, and other actions. Webhooks send notifications about these events to a URL of your choosing. Events that can have webhooks include the following among others: 
+
+|-----------|
+| FILE.UPLOADED |
+| FILE.PREVIEWED |
+| FILE.DOWNLOADED |
+| FILE.TRASHED |
+| FILE.DELETED |
+| FILE.RESTORED | 
+| FILE.COPIED |
+| FILE.MOVED |
+| FILE.LOCKED | 
+| FILE.UNLOCKED |
+| FILE.RENAMED | 
+| COMMENT.CREATED |
+| COMMENT.UPDATED | 
+| COMMENT.DELETED |
+| TASK_ASSIGNMENT.CREATED | 
+| TASK_ASSIGNMENT.UPDATED |
+| FOLDER.CREATED |
+| FOLDER.RENAMED |
+| FOLDER.DOWNLOADED |
+| FOLDER.RESTORED |
+| FOLDER.DELETED |
+| FOLDER.COPIED |
+| FOLDER.MOVED |
+| FOLDER.TRASHED |
+| WEBHOOK.DELETED |
+| COLLABORATION.CREATED |
+| COLLABORATION.ACCEPTED |
+| COLLABORATION.REJECTED |
+| COLLABORAITON.REMOVED | 
+| COLLABORATION.UPDATED |
+| SHARED_LINK.CREATED |
+| SHARED_LINK.DELETED | 
+| SHARED_LINK.UPDATED |
+
+Here is an example of a webhook notification: 
+
+    {"id": "123456789",
+     "type": "webhook",
+     "target": {"id": "987654321",
+                "type": "file"},
+     "created_by": {"id": "234567890",
+                    "type": "user",
+                    "name": "John Q. Developer",
+                    "login": "johnq"},
+     "created_at": "2016-07-16T11:04:26-08:00",
+     "address": "https://dev.name/box-notification",
+     "triggers": ["FILE.SHARED","COMMENT.UPDATED"]}
+
+ 
+ 
+ 
+## Comments, tasks, and workflows
+
 
 Pybox
 -----
-Pybox provides an way to work with Box files from the command line. Documentation on how to set up and use pybox can be found at <https://github.com/hzheng/pybox>
+Pybox provides a way to work with Box files from the command line. Documentation on how to set up and use pybox can be found at <https://github.com/hzheng/pybox>
