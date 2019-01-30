@@ -156,7 +156,7 @@ Students and TA's please complete the red cicles, e.g. mostly bibtex refernces.
 
 ### REST services
 
-Read the REST Service section. THi section includes some parts that
+Read the REST Service section. This section includes some parts that
 are not that relevant for this class and we llike you to focus on
 in @sec:rest on the sections
 
