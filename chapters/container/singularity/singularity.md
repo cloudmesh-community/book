@@ -75,7 +75,7 @@ designed specifically for your analytical needs.
 
 The diagram below compares a VM vs. Docker vs. Singularity.
 
-![Singularity Container Architecture [@greg-keynote]](../images/singularity-archi.jpg){#fig:singularity-archi}
+![Singularity Container Architecture [@greg-keynote]](../../cloud/images/singularity-archi.jpg){#fig:singularity-archi}
 
 
 ## Hands-On Tutorials
