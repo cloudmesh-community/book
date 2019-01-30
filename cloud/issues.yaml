@@ -1,3 +1,221 @@
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/317
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/317/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/317/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/317/events
+  html_url: https://github.com/cloudmesh-community/book/issues/317
+  id: 403829622
+  node_id: MDU6SXNzdWU0MDM4Mjk2MjI=
+  number: 317
+  title: 'Pi: DIMM'
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels:
+  - id: 1183433444
+    node_id: MDU6TGFiZWwxMTgzNDMzNDQ0
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/open
+    name: open
+    color: fff8b5
+    default: false
+  - id: 1058711305
+    node_id: MDU6TGFiZWwxMDU4NzExMzA1
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/section
+    name: section
+    color: 006b75
+    default: false
+  state: open
+  locked: false
+  assignee: null
+  assignees: []
+  milestone: null
+  comments: 0
+  created_at: '2019-01-28T14:04:38Z'
+  updated_at: '2019-01-28T14:04:38Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: "https://www.tomshardware.com/news/raspberry-pi-cm3-plus-features-specs,38504.html\r\
+    \n\r\nhttps://www.raspberrypi.org/blog/compute-module-3-on-sale-now-from-25/\r\
+    \n\r\n"
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/316
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/316/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/316/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/316/events
+  html_url: https://github.com/cloudmesh-community/book/issues/316
+  id: 403617570
+  node_id: MDU6SXNzdWU0MDM2MTc1NzA=
+  number: 316
+  title: image is not checked in
+  user:
+    login: laszewsk
+    id: 425045
+    node_id: MDQ6VXNlcjQyNTA0NQ==
+    avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/laszewsk
+    html_url: https://github.com/laszewsk
+    followers_url: https://api.github.com/users/laszewsk/followers
+    following_url: https://api.github.com/users/laszewsk/following{/other_user}
+    gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+    starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+    organizations_url: https://api.github.com/users/laszewsk/orgs
+    repos_url: https://api.github.com/users/laszewsk/repos
+    events_url: https://api.github.com/users/laszewsk/events{/privacy}
+    received_events_url: https://api.github.com/users/laszewsk/received_events
+    type: User
+    site_admin: false
+  labels:
+  - id: 949240182
+    node_id: MDU6TGFiZWw5NDkyNDAxODI=
+    url: https://api.github.com/repos/cloudmesh-community/book/labels/bug
+    name: bug
+    color: d73a4a
+    default: true
+  state: open
+  locked: false
+  assignee:
+    login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  assignees:
+  - login: pulasthi
+    id: 724075
+    node_id: MDQ6VXNlcjcyNDA3NQ==
+    avatar_url: https://avatars2.githubusercontent.com/u/724075?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/pulasthi
+    html_url: https://github.com/pulasthi
+    followers_url: https://api.github.com/users/pulasthi/followers
+    following_url: https://api.github.com/users/pulasthi/following{/other_user}
+    gists_url: https://api.github.com/users/pulasthi/gists{/gist_id}
+    starred_url: https://api.github.com/users/pulasthi/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/pulasthi/subscriptions
+    organizations_url: https://api.github.com/users/pulasthi/orgs
+    repos_url: https://api.github.com/users/pulasthi/repos
+    events_url: https://api.github.com/users/pulasthi/events{/privacy}
+    received_events_url: https://api.github.com/users/pulasthi/received_events
+    type: User
+    site_admin: false
+  milestone:
+    url: https://api.github.com/repos/cloudmesh-community/book/milestones/21
+    html_url: https://github.com/cloudmesh-community/book/milestone/21
+    labels_url: https://api.github.com/repos/cloudmesh-community/book/milestones/21/labels
+    id: 3999349
+    node_id: MDk6TWlsZXN0b25lMzk5OTM0OQ==
+    number: 21
+    title: 02-01-2019
+    description: ''
+    creator:
+      login: laszewsk
+      id: 425045
+      node_id: MDQ6VXNlcjQyNTA0NQ==
+      avatar_url: https://avatars1.githubusercontent.com/u/425045?v=4
+      gravatar_id: ''
+      url: https://api.github.com/users/laszewsk
+      html_url: https://github.com/laszewsk
+      followers_url: https://api.github.com/users/laszewsk/followers
+      following_url: https://api.github.com/users/laszewsk/following{/other_user}
+      gists_url: https://api.github.com/users/laszewsk/gists{/gist_id}
+      starred_url: https://api.github.com/users/laszewsk/starred{/owner}{/repo}
+      subscriptions_url: https://api.github.com/users/laszewsk/subscriptions
+      organizations_url: https://api.github.com/users/laszewsk/orgs
+      repos_url: https://api.github.com/users/laszewsk/repos
+      events_url: https://api.github.com/users/laszewsk/events{/privacy}
+      received_events_url: https://api.github.com/users/laszewsk/received_events
+      type: User
+      site_admin: false
+    open_issues: 2
+    closed_issues: 0
+    state: open
+    created_at: '2019-01-24T13:58:11Z'
+    updated_at: '2019-01-28T01:07:55Z'
+    due_on: '2019-02-01T08:00:00Z'
+    closed_at: null
+  comments: 0
+  created_at: '2019-01-28T01:07:55Z'
+  updated_at: '2019-01-28T01:09:17Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  body: Fetching http://education.sdsc.edu/comet/index_clip_image002.png
+- url: https://api.github.com/repos/cloudmesh-community/book/issues/314
+  repository_url: https://api.github.com/repos/cloudmesh-community/book
+  labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/314/labels{/name}
+  comments_url: https://api.github.com/repos/cloudmesh-community/book/issues/314/comments
+  events_url: https://api.github.com/repos/cloudmesh-community/book/issues/314/events
+  html_url: https://github.com/cloudmesh-community/book/pull/314
+  id: 403525077
+  node_id: MDExOlB1bGxSZXF1ZXN0MjQ3OTM4Mjky
+  number: 314
+  title: updated devops.bib
+  user:
+    login: tandon-ritz
+    id: 13212643
+    node_id: MDQ6VXNlcjEzMjEyNjQz
+    avatar_url: https://avatars1.githubusercontent.com/u/13212643?v=4
+    gravatar_id: ''
+    url: https://api.github.com/users/tandon-ritz
+    html_url: https://github.com/tandon-ritz
+    followers_url: https://api.github.com/users/tandon-ritz/followers
+    following_url: https://api.github.com/users/tandon-ritz/following{/other_user}
+    gists_url: https://api.github.com/users/tandon-ritz/gists{/gist_id}
+    starred_url: https://api.github.com/users/tandon-ritz/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/tandon-ritz/subscriptions
+    organizations_url: https://api.github.com/users/tandon-ritz/orgs
+    repos_url: https://api.github.com/users/tandon-ritz/repos
+    events_url: https://api.github.com/users/tandon-ritz/events{/privacy}
+    received_events_url: https://api.github.com/users/tandon-ritz/received_events
+    type: User
+    site_admin: false
+  labels: []
+  state: open
+  locked: false
+  assignee: null
+  assignees: []
+  milestone: null
+  comments: 0
+  created_at: '2019-01-27T07:53:42Z'
+  updated_at: '2019-01-27T10:10:30Z'
+  closed_at: null
+  author_association: CONTRIBUTOR
+  pull_request:
+    url: https://api.github.com/repos/cloudmesh-community/book/pulls/314
+    html_url: https://github.com/cloudmesh-community/book/pull/314
+    diff_url: https://github.com/cloudmesh-community/book/pull/314.diff
+    patch_url: https://github.com/cloudmesh-community/book/pull/314.patch
+  body: Added reference for installation of open source puppet
 - url: https://api.github.com/repos/cloudmesh-community/book/issues/312
   repository_url: https://api.github.com/repos/cloudmesh-community/book
   labels_url: https://api.github.com/repos/cloudmesh-community/book/issues/312/labels{/name}
@@ -195,9 +413,9 @@
   assignee: null
   assignees: []
   milestone: null
-  comments: 0
+  comments: 1
   created_at: '2019-01-25T16:09:17Z'
-  updated_at: '2019-01-25T16:09:17Z'
+  updated_at: '2019-01-27T10:18:45Z'
   closed_at: null
   author_association: CONTRIBUTOR
   pull_request:
@@ -439,11 +657,11 @@
       received_events_url: https://api.github.com/users/laszewsk/received_events
       type: User
       site_admin: false
-    open_issues: 1
+    open_issues: 2
     closed_issues: 0
     state: open
     created_at: '2019-01-24T13:58:11Z'
-    updated_at: '2019-01-24T13:58:28Z'
+    updated_at: '2019-01-28T01:07:55Z'
     due_on: '2019-02-01T08:00:00Z'
     closed_at: null
   comments: 5
