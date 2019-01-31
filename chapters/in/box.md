@@ -172,7 +172,7 @@ Shared links give read-only access to a file through a URL. Specifying the acces
     url = client.file(file_id=<file id>).shared_link['url']
     
 ## Project management 
-Box offers some limited project management tools, including groups, collaborations, workflows, and tasks. 
+Box offers some limited project management tools, including groups, collaborations, and tasks. 
 
 ### Collaborations
 A collaboration object gives a user specified permissions for the defined files and folders. The collaboration object itself returns information about the users, files, and roles of the collaboration. 
@@ -224,7 +224,7 @@ Roles include editor, viewer, previewer, uploader, previewer uploader, viewer up
     client.collaboration(collab_id=<collaboraiton id>).delete()
     
 ### Groups
-A group object can be used instead of a user in collaborations. The get() call to a group object returns basic information about the group and does not include a member list: 
+A group object can be used instead of a user in collaborations. The get() call to a group object returns basic information about the group and does not include a member list. To get all members in a group, you must call get_memberships(): 
 
     group = client.group(group_id=<group id>).get() 
         {
@@ -234,6 +234,10 @@ A group object can be used instead of a user in collaborations. The get() call t
         "created_at": "2014-09-15T13:15:35-07:00",
         "modified_at": "2014-09-15T13:15:35-07:00"
         }
+        
+    memberships = client.group(group_id = <group id>).get_memberships()
+    for member in memberships:
+        print(member.name)
         
     # Create, update, or delete a group
     new_group = client.create_group(name="New Group")
@@ -247,10 +251,43 @@ A group object can be used instead of a user in collaborations. The get() call t
 Once a member has been added to the group, a membership object is created which controls the relationship after creation. 
 
     # Get, update, and delete membership:
+    membership = client.group_membership(<membership id>).get()
+    print(membership.user.name)
+    updated_membership = client.group_membership(<membership id>).update_info({'key':'value'})
+    client.group_membership(<membership id>).delete()
     
+You can see all groups a user is a member of with by calling get_group_memberhsips on a user object:
+
+    memberships = client.user(user_id=<user id>).get_group_memberships()
+    for m in memberships:
+        print(m.group.name)
+
+ You can see all collaboration objects a group has by calling get_collaborations on a group object:
+ 
+    collaborations = client.group(group_id = <group id>).get_collaborations()
+    for collab in collaborations:
+        print(collab.item.name)
+
+### Tasks
+Tasks are attached to file objects and can be assigned to specific users by creating a task assignment. 
+
+    # Create a new task
+    task = client.file(file_id=<file id>).create_task(<due date>)
+    
+Tasks can be updated, deleted with calls to update() and delete(). Calling get() will return general info about the task. Tasks can be assigned to a user by calling assign() which will create a task assignment object.
+
+    user = client.user(user_id=<user id>)
+    assignment = client.task(<task id>).assign(user)
+        print(assignment.id)
+        
+You can get all users a task has been assigned to by calling get assignments on a task object:
+
+    assignments = client.task(<task id>).get_assignments()
+    for a in assignments:
+        print(a.assigned_to.name)
+
 
 ## Webhooks
-
 Webhooks are a convenient way of tracking events, such as file downloads, deletions, comments, and other actions. Webhooks send notifications about these events to a URL of your choosing. Events that can have webhooks include the following among others: 
 
 |Event|
@@ -266,9 +303,6 @@ Webhooks are a convenient way of tracking events, such as file downloads, deleti
 |FILE.LOCKED| 
 |FILE.UNLOCKED|
 |FILE.RENAMED| 
-|COMMENT.CREATED|
-|COMMENT.UPDATED| 
-|COMMENT.DELETED|
 |TASK_ASSIGNMENT.CREATED| 
 |TASK_ASSIGNMENT.UPDATED|
 |FOLDER.CREATED|
@@ -303,10 +337,18 @@ Here is an example of a webhook notification:
      "address": "https://dev.name/box-notification",
      "triggers": ["FILE.SHARED","COMMENT.UPDATED"]}
 
- 
- 
- 
+Webhooks are created by specifying the object, trigger, and URL.
 
+    folder = client.folder(folder_id=<folder id>)
+    triggers = ['FILE.UPLOADED', 'SHARED_LINK.CREATED'[
+    webhook = client.create_webhook(folder, triggers, <url>)
+    
+You can update a webhook using a dictionary object of the attributes to update:
+
+    updates = { triggers: ['FOLDER.TRASHED'], address: 'http://www.example.com'}
+    webhook = client.webhook(webhook_id=<webhook id>).update_info(updates)
+    
+Calls to delete() and get() are the same as for other objects. 
 
 
 Pybox
