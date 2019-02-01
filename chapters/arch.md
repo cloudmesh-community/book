@@ -43,7 +43,9 @@ enterprise resource planning and business transaction procesings.
 
 Mainframe Computing refers to
 
-:o: This section can be contributed by a student
+> computers which have inbuilt redundency resulting in high reliability and security. These computers
+> support high I/O, high computation via virtualization and hot swapping of hardware, which help
+> these machines to run without faliure for years.
 
 ### PC Computing
 
@@ -132,7 +134,10 @@ which poularized the term *you got mail*
 
 Cloud Computing refers to
 
-> :o: A written section can be contributed by student
+> delivery of computing services such as database, server, network storage etc.. over the internet. 
+> User doesnt have to maintain a datacenter and only pays of above services when in use. 
+> This reduces the cost and increases the productivity as services can be available globally in 
+> minutes on demand with state of the art security.
 
 We have provided a lecture about the definition of cloud computing
 previously
