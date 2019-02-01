@@ -164,18 +164,16 @@ configure Puppet server name and map with its ip address
 $ sudo nano /etc/hosts
 ```
 
-contents of /etc/hosts should look like -
+contents of the `/etc/hosts` should look like
 
 ```
-          /etc/hosts
-         -------------
 <ip_address> my-puppet-master
 ```
 
 my-puppet-master is name of Puppet master to which Puppet agent would
 try to connect
 
-press <ctrl> + O to Save and <ctrl> + X to exit
+press `<ctrl> + O` to Save and `<ctrl> + X` to exit
 
 Next, we will install Puppet server. We will excute below commands to 
 pull from official Puppet Labs Repository
@@ -201,7 +199,7 @@ $ sudo nano /etc/default/puppetserver
 ```
 
 This will open the file in editor. Look for JAVA_ARGS line and
-change the value of -Xms and -Xmx parameters to 3g if we wish
+change the value of `-Xms` and `-Xmx` parameters to 3g if we wish
 to configure Puppet server for 3GB RAM. Note that default value
 of this parameter is 2g.
 
