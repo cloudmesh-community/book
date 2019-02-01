@@ -59,3 +59,29 @@ A flow chart is even provided for helping determine the best service for your ne
 Google's developer tools include tools for Visual Studio, IntelliJ, Google Cloud, and Powershell, cloud-hosted git repositories, a infrastructure for testing mobile apps, and a deployment management tool @fig:gcloud-devtools.
 
 ![Google devtools](./images/developer_tools.png){#fig:gcloud-devtools}
+
+### Internet of Things
+
+Google's internet of things offerings include a tool for device connection management and two tools for edge computing, one of which is in beta and the other is only accessible by request currently @fig:gcloud-iot.
+
+![Google IoT](./images/iot.png){#fig:gcloud-iot}
+
+### Management Tools
+
+Management tools provide a variety of services for managing cloud applications. Google's Stackdriver has components for managing logs, monitoring exceptions, latency information, and overall health and also has a debugger component. Google also offers a web UI, a mobile app, and a command line interface for monitoring and managing cloud applications. Their cost management service includes components for monitoring and reporting, controlling spending and billing, and sizing recommendations for virtual machines @fig:gcloud-mgt.
+
+![Google management tools](./images/management_tools.png){#fig:gcloud-mgt}
+
+### Media and Migration
+
+Google currently offers two media tools, Anvato for live-streaming videos, and Zync Render for rendering videos. Their migration tools are geared towards transferring data or applications fully or partially to the cloud. @fig:gcloud-media-migration.
+
+![Google media and migration](./images/media_and_migration.png){#fig:gcloud-media-migration}
+
+### Networking
+
+The Google Virtual Private Cloud Network is Google's own world-wide network where you can host your applications and services. Google also has load balancing, DNS, CDN, and connectivity tools for working with this network @fig:gcloud-networking.
+
+![Google networking](./images/networking.png){#fig:gcloud-networking}
+
+### Security
