@@ -31,7 +31,7 @@ Here we list some of the activities by week.
    the assignment in piazza). Create a notebook.md file and keep it up
    to date on weekly basis.
 
-5. Make sure to configure a computer on which you can do python 3.7.1.
+5. Make sure to configure a computer on which you can do python 3.7.2.
    If you have not yet installed python we recommend you use pyenv. See
    our notes in the handbook about that. Pyenv allows you to install
    multiple python versions. Answer the question why anaconda is not a
@@ -66,7 +66,7 @@ group commits the entire project in case of group work.
  
 ### Development machine
 
-If you have not yet set up a computer with python 3.7.1 on it please
+If you have not yet set up a computer with python 3.7.2 on it please
 do so. Remember you can use virtual machines and use virtualbox so you
 do not interfere with your base system or use a USB stick to boot into
 ubuntu .... If you do not have a system work with the TAs to identify
@@ -118,7 +118,7 @@ the TAs on reveiws and improvements if needed.
 
 ### Python till rest of the semester
  
-Python 3.7.1: Set up a computer on which you can execute python 3.7.1.
+Python 3.7.2: Set up a computer on which you can execute python 3.7.2.
 Some did not complete that taks yet (see @sec:python-install,
 @sec:python-intro, @sec:python-language).
 
@@ -127,7 +127,7 @@ chapters are not that important and can be skipped. Focus on classes,
 modules, basic language things. learn about pip (possibly from google)
 learn how to write requirements.txt and setup.py for your own programs
 use pycharm for program development, configure it so it uses python
-3.7.1 when executing the python programs do it in a terminal not from
+3.7.2 when executing the python programs do it in a terminal not from
 within pycharm (see @sec:python-editors).
 
 We recommend that you install pycharm and use it. We have simple
