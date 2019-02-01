@@ -85,3 +85,10 @@ The Google Virtual Private Cloud Network is Google's own world-wide network wher
 ![Google networking](./images/networking.png){#fig:gcloud-networking}
 
 ### Security
+
+Google's security offerings are aimed at protection from phishing, ransomware, and DoS attacks, controlling the transfer of data, controlling access to applications and resources, and monitoring and controlling vulnerabilities and incidents @fig:gcloud-security.
+
+![Google security](./images/security.png){#fig:gcloud-security}
+
+### Storage
+
