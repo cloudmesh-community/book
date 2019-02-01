@@ -24,5 +24,5 @@ enterprise versions of Android and Chrome OS, and Google Maps Platform. See @fig
 
 Google offers many machine learning and artificial intelligence tools, including tools for text-to-speech, speech-to-text, translation, and image and video analysis as well as various tools for making models and predictions and deploying pipelines and out-of-the-box algorithms. @fig:gcloud-machine-learning
 
-![Google_machine_learning](./images/machine_learning) {#fig:gcloud-machine-learning}
+![Google_machine_learning](./images/machine_learning.png) {#fig:gcloud-machine-learning}
 
