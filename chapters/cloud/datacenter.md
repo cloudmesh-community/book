@@ -214,7 +214,8 @@ but by the community in which such centers operate.
   can be made more reliable, failure still can happen. Examples are
 
 * <https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/>
-* :o: find more examples
+* <https://www.datacenterknowledge.com/archives/2011/08/07/lightning-in-dublin-knocks-amazon-microsoft-data-centers-offline>
+* <https://techcrunch.com/2012/10/29/hurricane-sandy-attacks-the-web-gawker-buzzfeed-and-huffington-post-are-down/>
 
 Hence Data Center IaaS advantages include
 
