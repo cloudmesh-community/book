@@ -31,3 +31,11 @@ Google offers many machine learning and artificial intelligence tools, including
 API tools include monetization and analytic tools as well as deployment tools. Apigee Edge integrates these tools together into a platform for managing APIs through the use of API proxies, which are combined together with a service plan into an API product. @fig:gcloud-api-management
 
 ![Google_api_management](./images/api_management.png){#fig:gcloud-api-management}
+
+### Compute
+
+Google Cloud Compute services offer infrastructure as a service tools including virtual machines, containers, as well as an app engine for deploying web, mobile and IoT apps. @fig:gcloud-compute
+
+![Google_compute](./images/compute.png){#fig:gcloud-compute}
+
+### Data Analyics
