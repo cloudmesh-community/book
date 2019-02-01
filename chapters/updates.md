@@ -8,6 +8,8 @@ the Github commits at
 
 for a complete list of changes in reverse chronological order
 
+* Feb 1, 2019: update to python 3.7.2, new pyenv instructions (experimental)
+
 * Jan 25, 2019: A video for doing github pull requests has been
   updated, explicitly trageting the cloudmesh book github repository
   (see @sec:git-pillrequest).
