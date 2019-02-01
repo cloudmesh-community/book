@@ -39,8 +39,36 @@ Often you have your own computer and you do not like to change its
 environment to keep it in pristine condition. Python comes with many
 libraries that could for example conflict with libraries that you have
 installed. To avoid this it is bets to work in an isolated python we can
-use tools such as virtualenv, pyenv or pyenv for 3.7.1. Which you
+use tools such as virtualenv, pyenv or pyenv for 3.7.2. Which you
 use depends on you, but we highly recommend pyenv if you can.
+
+### :new: Simple install
+
+Recently a new simple way to install pyenev has been released. We have not yet 
+tested it out in more details but here are the simple steps:
+
+In case you have a previous version of pyenv, save it just in case you like to move back
+
+
+```bash
+$ mv ~/.pyenv ~/.pyenv-old
+```
+
+Next run the command
+
+```
+$ curl https://pyenv.run | bash
+```
+
+Make sure that on Linux you add to the `.bashrc` file and on macOS to the file `.bash_profile`
+
+```
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```
+
+Than look up our convenience methods to set an ALIAS and install Python 3.7.2 via pyenv 
 
 ### Managing Multiple Python Versions with Pyenv
 
@@ -64,7 +92,7 @@ switch between multiple versions of Python
 
 If you need to have more than one python version installed and do not
 want or can use pyenv, we recommend you download and install python
-2.7.15 and 3.7.1 from python.org
+2.7.15 and 3.7.2 from python.org
 (<https://www.python.org/downloads/>)
 
 #### Disabling wrong python installs on macOS
