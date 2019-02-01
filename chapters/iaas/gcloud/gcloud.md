@@ -92,3 +92,6 @@ Google's security offerings are aimed at protection from phishing, ransomware, a
 
 ### Storage
 
+Google's storage services include all the services mentioned in its database services as well as Persistent Disk, which offers block service for virtual machines and containers @fig:gcloud-storage.
+
+![Google storage](./image/storage.png){#fig:gcloud-storage}
