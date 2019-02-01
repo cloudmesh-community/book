@@ -99,6 +99,14 @@ $ pyenv virtualenv 3.7.2 ENV3
 $ pyenv virtualenv 2.7.15 ENV2
 ```
 
+Next we recommend to update pip
+
+```bash
+$ ENV2 
+$ pip install pip -U 
+$ ENV3
+$ pip install pip -U 
+```
 
 
 ### Managing Multiple Python Versions with Pyenv
