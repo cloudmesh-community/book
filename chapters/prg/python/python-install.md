@@ -63,12 +63,43 @@ $ curl https://pyenv.run | bash
 Make sure that on Linux you add to the `.bashrc` file and on macOS to the file `.bash_profile`
 
 ```
-export PATH="~/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+__pyenv_version_ps1() {
+  local ret=$?;
+  output=$(pyenv version-name)
+  if [[ ! -z $output ]]; then
+    echo -n "($output)"
+  fi
+  return $ret;
+}
+
+PS1="\$(__pyenv_version_ps1) ${PS1}"
+
+alias ENV2="pyenv activate ENV2"
+alias ENV3="pyenv activate ENV3"
+
+
+ENV3
 ```
 
 Than look up our convenience methods to set an ALIAS and install Python 3.7.2 via pyenv 
+
+Install a virtualenv for python 2 and 3. Likeley you will only need 3
+
+```bash
+$ pyenv install 3.7.2
+$ pyenv install 2.7.15
+$ pyenv virtualenv 3.7.2 ENV3
+$ pyenv virtualenv 2.7.15 ENV2
+```
+
+
 
 ### Managing Multiple Python Versions with Pyenv
 
@@ -219,11 +250,11 @@ local environment with the following commands:
 
     $ pyenv update
     $ pyenv install 2.7.15
-    $ pyenv install 3.7.1
+    $ pyenv install 3.7.2
 
 You can set the global python default version with:
 
-    $ pyenv global 3.7.1
+    $ pyenv global 3.7.2
 
 Type the following to determine which version you activated:
 
@@ -237,10 +268,10 @@ Associate a specific environment name with a certain python version, use
 the following commands:
 
     $ pyenv virtualenv 2.7.15 ENV2
-    $ pyenv virtualenv 3.7.1 ENV3
+    $ pyenv virtualenv 3.7.2 ENV3
 
 In the example, ENV2 would represent python 2.7.15 while ENV3
-would represent python 3.7.1. Often it is easier to type the alias
+would represent python 3.7.2. Often it is easier to type the alias
 rather than the explicit version.
 
 #### Set up the Shell
@@ -307,8 +338,8 @@ onto the ENV3 environment. Than you need to execute the following steps:
 
     pyenv deactivate
     pyenv uninstall ENV3
-    pyenv install 3.7.1
-    pyenv virtualenv 3.7.1 ENV3
+    pyenv install 3.7.2
+    pyenv virtualenv 3.7.2 ENV3
     ENV3
     pip install pip -U
 
