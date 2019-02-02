@@ -3,7 +3,7 @@
 Flask is a micro services framework allowing to write web services in
 python quickly. One of its extensions is Flask-RESTful. It adds for
 building REST APIs based on a class definition making it relatively
-simple. Through tis interface we can than integrate with your existing
+simple. Through this interface we can than integrate with your existing
 Object Relational Models and libraries. As Flask-RESTful leverages the
 main features from Flask an extensive set of documentation is available
 allowing you to get started quickly and thoroughly. The Web page
@@ -16,8 +16,8 @@ to be served as a rest service. It will be easy to replace this for
 example with functions and methods that obtain such information
 dynamically from the operating system.
 
-This example has not been tested., We like that the class defines a
-beautiful example to contribute to this section. and explains what
+This example has not been tested. We like that the class defines a
+beautiful example to contribute to this section and explains what
 happens in this example.
 
 ```
