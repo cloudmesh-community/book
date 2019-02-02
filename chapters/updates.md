@@ -6,7 +6,27 @@ the Github commits at
 
 * <https://github.com/cloudmesh-community/book/commits/master>
 
-for a complete list of changes.
+for a complete list of changes in reverse chronological order
+
+* Feb 1, 2019: update to python 3.7.2, new pyenv instructions (experimental)
+
+* Jan 25, 2019: A video for doing github pull requests has been
+  updated, explicitly trageting the cloudmesh book github repository
+  (see @sec:git-pillrequest).
+
+* Jan 23, 2019: Changed the cloud links to view only instead of going
+  directly into the editor. Separated the REST md file inte seveal
+  files so we can reorder them and start with OpenAPI instead of
+  restful or eve. Updated the time line in the Syllabus table (see
+  @sec:516-syllabus)
+
+* Jan 21, 2019: Added gitissues separated by labels.
+
+* Jan 18, 2019: A section on how to do equation in the book was added
+  (see @sec:equations). Updated the Datacenter Section.
+
+* Jan 16, 2019: Added the example about defining a REST service based
+  on an OpenAPI yaml file (see @sec:openapi-introspection).
 
 * Jan 15, 2019: Slight improvements in the preface:   Added this Update
   section; Added explanation ho to do
@@ -21,25 +41,13 @@ for a complete list of changes.
   Workbreakdown section requirements for better
   interaction in discussions with TAs throughout the semester.
 
-* Jan 16, 2019: Added the OpenAPI server based on yaml file
-  introspection in a [Section](#sec:openapi-introspection)
-
-* Jan 18, 2019 A section on how to do equation in the book was added
-(see @sec:equations).
-
-## Unpublished updates :o:
-
-Unpublished updates have not yet been tested, but have been started to
-be explored by us to improve some aspects of the book creation
-
 * Jan 15, 2019: experimented On OSX on the install of pandoc via cabal
   and installed pandoc-citeproc via cabal. This is documented at
 
   <https://github.com/jgm/pandoc-citeproc>
 
-  We have not yet tested if this work, but like to use heading and image
-  specification references as suggested in the documentation. In earlier versions it did not
-  work well with markdown and bibtex. This needs also to be verified.
+  This breaks instalation instructions for Linux/ubuntu. For ubuntu we
+  have created an experimental untested install script if containers
+  can not be used.
 
-  :o: helping on this qualifies as a section, if you start working
-  on this please notify us on piazza so not everyone does this.
+

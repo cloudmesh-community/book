@@ -47,7 +47,7 @@ specification
 We see the following functionality:
 
 * [List issues](https://developer.github.com/v3/issues/#list-issues)
-* [List issues for a repository](https://developer.github.com/v3/* issues/#list-issues-for-a-repository)
+* [List issues for a repository](https://developer.github.com/v3/issues/#list-issues-for-a-repository)
 * [Get a single issue](https://developer.github.com/v3/issues/#get-a-single-issue)
 * [Create an issue](https://developer.github.com/v3/issues/#edit-an-issue)
 * [Edit an issue](https://developer.github.com/v3/issues/#edit-an-issue)
@@ -78,26 +78,15 @@ program to convert LaTeX to markdow. For the late we can reuse a
 program called `pandoc` that can convert the table for LaTeX to
 markdown.
 
-Let us assume we have a program called `issues.py` that printe the
-table in latex format, than we can store it in a file with the command
+Let us assume we have a program called `issues.py` that prints the
+table in markdown format
 
 ```bash
-$ python issues.py > issues.tex
+$ python issues.py 
 ```
 
-While using `pandoc` the conversion to markdown is very simple
 
-```bash
-$ pandoc issues.tex -o issues.md
-```
-
-So the only thing left to do is to just develop the program that 
-
-1. fetches the issues from github
-2. converts the information into a convenient data structure
-3. print the information we are interested in
-
-The `issues.py` program is located at 
+An example for such a program is listes at. 
 
 * <https://github.com/cloudmesh-community/book/blob/master/bin/issues.py>
 
@@ -107,21 +96,16 @@ commandline call to `curl` into a system command an redirect its
 output to a file. However, as we only get limited information back in
 pages, we need to continue such a request multiple times. to keep
 things simple we identified that for the project at this time not
-more that 4 pages need to be fetched, so we append the output from
+more that n pages need to be fetched, so we append the output from
 each page to the file.
 
-To print out the LaTeX table we simply iterate through the entire list
-of issues retrieved and as we are only interested in count, Number
-/Id, Title and Assignee we print them with the appropriate latex
-syntax for tables. As we also retrieve the url we can integrate the
-link to the isse in the table
+Your task is it to improve this script and automatize this activity so
+that no maximum fetches have to be entered.
 
 The reason why this program is so short is that we leverage the build
 in function for `json` data structure manipulation, hear a read and a
-dump.
-
-When we look in the `issue.json` file that is created as intermediary
-file we see a list of items such as
+dump. When we look in the `issue.json` file that is created as
+intermediary file we see a list of items such as
 
 ```json
 [
@@ -212,7 +196,7 @@ file we see a list of items such as
     },
     
 ...
-]    
+]
 ```
 
 As we can see from this entry there is a lot of information associated
@@ -250,3 +234,18 @@ E.github.issues.4:
 > projects may include a requirements file, or developers may 
 > work on some projects together, but others do other 
 > projects with others can you create a network?
+
+E.github.issues.5:
+
+> Use github to develop some cool python programs that show some
+> statistics about github. An example would be: Given a github
+> repository, show the checkins by data and visualize them graphically
+> for one committer and all committers. Use bokeah or matplotlib.
+
+E.github.issues.6:
+
+> Develop a python program that retrieves a file. Deevlop a python
+> program that uploads a file. Develop a class that does this and use
+> it in your proggram. Use docopt to create a manual page. Please
+> remember this prepares you for your project so this is very useful
+> to do.

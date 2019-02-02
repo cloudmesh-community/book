@@ -1,6 +1,6 @@
 # -*- makefile -*-
 
-OS=$(shell ..//bin/sysinfo.py)
+OS=$(shell ../bin/sysinfo.py)
 DOCKER=$(shell ../bin/isdocker.py)
 IMAGE_DIRS=$(shell ../bin/find-image-dirs.py)
 
@@ -28,6 +28,9 @@ ifeq ($(DOCKER), True)
 MERMAID=
 endif
 
+#not using mermaid
+
+MERMAID=
 
 
 all: splash prepare epub 
@@ -99,18 +102,28 @@ ifeq (,$(wildcard dest/chapters/images/penguin.jpg))
 	make -f Makefile images
 endif
 
-prepare: generateimages version authors destination chapterlist references todo index
-	echo "\n\nThis document can be downloaded from\n\n" >> dest/chapters/version.md
-	echo "<https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>\n\n" >> dest/chapters/version.md
+dest_dir:
+	mkdir -p dest
+
+prepare: dest_dir references generateimages version authors destination chapterlist  todo index issues
+	echo >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
+	echo "This document can be downloaded from" >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
+	echo "* <https://github.com/cloudmesh-community/book/blob/master/$(FILENAME).epub?raw=true>" >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
+	echo >> dest/chapters/version.md
 
 bibtex: bibtex-duplicate bibtex-cat bibtex-error bibtex-datamodel
 
-bibtex-issues:
-    cd dest: rm -f *.blg *_bibertool.bib
+bibtex-issues: references
+	mkdir -p dest
+	cd dest; rm -f *.blg *_bibertool.bib
 	cd dest; cat -n references.bib
 	cd dest; biber -V --tool references.bib | fgrep -v Datamodel | fgrep -v INFO | fgrep -v Duplicate | fgrep -v Overwriting | fgrep -v ISBN
 
-bibtex-duplicate: refrerences
+bibtex-duplicate: references
 	cd dest; biber -V --tool references.bib | fgrep Duplicate
 
 bibtex-cat:
@@ -129,18 +142,19 @@ bibtex-junk:
 	cd dest; biber -V --tool references.bib | fgrep junk
 
 
+# cd dest; iconv -t utf-8 $(INDEX) > all.md
+# cd dest; cp all.md all-in.md
+# cd dest; pandoc all-in.md --filter=abbrevs.py -o all.md
+
 epub: prepare
 	cd dest; touch chapters/index.md
 ifeq ($(OS), osx)
-	#cd dest; iconv -t utf-8 $(INDEX) > all.md
 	cd dest; cat $(INDEX) > all.md
 endif
 ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md
 endif
 	make -f Makefile index
-	#cd dest; cp all.md all-in.md
-	#cd dest; pandoc all-in.md --filter=abbrevs.py -o all.md
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
 	cp dest/$(FILENAME).epub ..
 
@@ -150,8 +164,6 @@ pdf: epub
 	cp dest/*.png dest/chapters/images
 	cd dest; ./fix-emoji.py all.md all4pdf.md
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o all4pdf.epub metadata.txt all4pdf.md
-	# fix relative image path for nav.xhtml in epub
-	# so emoji images could show up in PDF
 	cd dest; rm -rf bookedit; mkdir bookedit; unzip all4pdf.epub -d ./bookedit; sed -i -e 's/..\/media/.\/media/g' ./bookedit/EPUB/nav.xhtml
 	cd dest/bookedit; zip -X all4pdfnew.epub mimetype; zip -rg all4pdfnew.epub META-INF -x \*.DS_Store; zip -rg all4pdfnew.epub EPUB -x \*.DS_Store
 	cp dest/bookedit/all4pdfnew.epub ./dest
@@ -160,7 +172,6 @@ pdf: epub
 
 epub-all: prepare
 ifeq ($(OS), osx)
-	#cd dest; cat $(INDEX) > all.md
 	cd dest; iconv -t utf-8 $(INDEX) > all.md
 endif
 ifeq ($(OS), linux)
@@ -175,9 +186,10 @@ find:
 nolanguage:
 	cd ..; grep -R -n "\`\`\`" $(INDEX)
 
+# cd dest; iconv -t utf-8 $(DRAFT) > all.md
+
 epubdraft: prepare
 ifeq ($(OS), osx)
-#	cd dest; iconv -t utf-8 $(DRAFT) > all.md
 	cd dest; cat $(DRAFT) > all.md
 endif
 ifeq ($(OS), linux)
@@ -233,14 +245,24 @@ todo:
 	cat dest/todo.md
 
 issues:
-	python ../bin/issues.py --markdown > ../chapters/preface/issues.md
-	cat ../chapters/issues-in.md > /tmp/issues.md
-	echo ".<div class=\"smalltable\">\n" >> /tmp/issues.md
-	cat ../chapters/preface/issues.md >> /tmp/issues.md
-	echo  >> /tmp/issues.md
-	echo ".</div>\n" >> /tmp/issues.md
-	echo  "\n\n\n\n" >> /tmp/issues.md
-	cp /tmp/issues.md ../chapters/preface/issues.md
+	cat ../chapters/issues/issues-in.md > /tmp/issues.md
+
+	python ../bin/issues.py --header="## Internal Issues" --label=internal --cache --nolinks --small >> /tmp/issues.md
+	python ../bin/issues.py --header="## Open Sections" --label=section --label=open --cache --nolinks --small >> /tmp/issues.md
+	python ../bin/issues.py --header="## Open Chapters" --label=chapter --label=open --cache --nolinks --small >> /tmp/issues.md
+	python ../bin/issues.py --header="## Assigned Sections" --label=section --label=assigned --cache --nolinks --small >> /tmp/issues.md
+	python ../bin/issues.py --header="## Assigned Chapters" --label=chapter --label=assigned --cache --nolinks --small >> /tmp/issues.md
+	python ../bin/issues.py --header="## Open Projects" --label=project --label=open --cache --nolinks --small >> /tmp/issues.md
+	python ../bin/issues.py --header="## Assigned Projects" --label=project --label=assigned --cache --nolinks --small >> /tmp/issues.md
+
+	python ../bin/issues.py --cache --linksonly >> /tmp/issues.md
+	echo >> /tmp/issues.md
+	cp /tmp/issues.md ../chapters/issues/issues.md
+
+
+get-issues:
+	python ../bin/issues.py > ../chapters/preface/issues.md
+
 
 publish: epub
 	cp dest/$(FILENAME).epub ..
@@ -249,6 +271,9 @@ publish: epub
 	git push
 
 index:
+	echo 
+
+old-index:
 	#cd dest; pandoc -o chapters/index.json $(INDEX)
 	#cd dest; pandoc-index chapters/index
 	#echo "\n" >> dest/chapters/index.md
