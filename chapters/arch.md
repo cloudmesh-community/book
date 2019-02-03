@@ -43,6 +43,8 @@ enterprise resource planning and business transaction procesings.
 
 Mainframe Computing refers to
 
+:o: this definition could beimproved
+
 > computers which have inbuilt redundency resulting in high reliability and security. These computers
 > support high I/O, high computation via virtualization and hot swapping of hardware, which help
 > these machines to run without faliure for years.
