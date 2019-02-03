@@ -24,7 +24,8 @@ We start our observation with some a depiction of some of the
 important architectural models motivating the current state of
 information technology services we provide in
 @fig:evolution-computer-arch.  The
-[original figure](http://www.cmlab.csie.ntu.edu.tw/~jimmychad/CN2011/Readings/CloudComputingNewWine.pdf)
+are computers used primarily by large organizations for critical applications; bulk data processing, such as census, industry and consumer statistics, enterprise resource planning; and transaction processing. 
+The term originally referred to the large cabinets called "main frames" that housed the central processing unit and main memory of early computers.
 has been updated by von Laszewski to include the mobile computing and
 the internet of things phase that is bringing rapid changes to how we
 perceive and use the cloud in the near future.
@@ -45,6 +46,8 @@ Mainframe Computing refers to
 
 :o: this definition could beimproved
 
+>Mainframe computers are used primarily by large organizations for critical applications; bulk data processing, such as census, industry and consumer statistics, enterprise resource planning; and transaction processing. 
+The term originally referred to the large cabinets called "main frames" that housed the central processing unit and main memory of early computers. More detail can be found in [Mainframe computer] (https://en.wikipedia.org/wiki/Mainframe_comp).
 > computers which have inbuilt redundency resulting in high reliability and security. These computers
 > support high I/O, high computation via virtualization and hot swapping of hardware, which help
 > these machines to run without faliure for years.
