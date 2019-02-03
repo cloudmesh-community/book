@@ -136,16 +136,17 @@ which poularized the term *you got mail*
 
 Cloud Computing refers to
 
-> delivery of computing services such as database, server, network storage etc.. over the internet. 
-> User doesnt have to maintain a datacenter and only pays of above services when in use. 
-> This reduces the cost and increases the productivity as services can be available globally in 
-> minutes on demand with state of the art security.
+> delivery of services such as database, server, network storage and others over the internet so the 
+> user doesnot have to maintain a datacenter and only pays for services in use. 
+> This reduces the cost and increases the productivity as services can be available in 
+> minutes on demand with state of the art security and no hardware datacenter staff needed on the users side.
 
 We have provided a lecture about the definition of cloud computing
-previously
+previously.
+
+:o: include a link to the lecture.
 
 ### Mobile Computing
-
 
 Mobile Computing refers to
 
