@@ -44,7 +44,10 @@ enterprise resource planning and business transaction procesings.
 Mainframe Computing refers to
 
 :o: this definition could beimproved
-
+> mainframe computers are used primarily by large organizations for critical applications; bulk data processing, such as census, industry and consumer statistics, enterprise resource planning; and transaction processing. 
+The term originally referred to the large cabinets called "main frames" that housed the central processing unit and main memory of early computers. 
+Later, the term was used to distinguish high-end commercial machines from less powerful units.
+Most large-scale computer system architectures were established in the 1960s, but continue to evolve. More information on this topic can be found at (https://en.wikipedia.org/wiki/Mainframe_computer).
 > computers which have inbuilt redundency resulting in high reliability and security. These computers
 > support high I/O, high computation via virtualization and hot swapping of hardware, which help
 > these machines to run without faliure for years.
