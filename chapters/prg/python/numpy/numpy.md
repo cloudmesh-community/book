@@ -1,5 +1,39 @@
 # Numpy {#s-numpy}
 
+NumPy is a popular library that is used by many other Python
+packages such as Pandas, SciPy, and scikit-learn. It provides a
+simple-to-use and fast way of interacting with numerical data
+organized in vectors and matrices. In this section, we will
+provide a short introduction to NumPy.
+
+Installing NumPy
+-----------
+The most common way of installing NumPy, if it wasn't included
+with your Python installation, is to install it via pip:
+
+    pip install numpy
+
+If NumPy has already been installed, you can update to the most
+recent version using:
+
+    pip install -U numpy
+    
+You can verify that NumPy is installed by trying to use it in
+a Python program:
+    
+    import numpy as np
+
+Note that, by convention, we import NumPy using the alias 'np' - 
+whenever you see 'np' sprinkled in example Python code, it's a
+good bet that it is using NumPy.
+
+NumPy Basics
+-----------
+Now that NumPy is installed and imported, we can begin to use it.
+
+
+
+
 NumPy is a popular library on that is used by many other python
 librariessuch as pandas, and SciPy. It provides simple to use array
 operations for data. This helps to accass arrays in a more intuitive
