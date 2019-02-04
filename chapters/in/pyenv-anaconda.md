@@ -52,5 +52,5 @@ Econda.1:
 
 Econda.2:
 
--   Replicate the steps above, so you can type in ENV2 and ENV3 in your
+-   Replicate the previous steps, so you can type in ENV2 and ENV3 in your
     terminals to switch between python 2 and 3.

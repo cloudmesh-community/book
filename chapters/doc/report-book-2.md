@@ -423,7 +423,7 @@ Figures and Tables
 
 -   Figure caption must be bellow the image.
 
--   Table captions must be above the image.
+-   Table captions must be previous the image.
 
 -   Do not include the titles of the figures in the figure itself but
     instead use the caption or that information.

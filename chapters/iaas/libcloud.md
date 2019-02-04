@@ -177,7 +177,7 @@ conn = OpenStack(OPENSTACK__AUTH_USERNAME, OPENSTACK_AUTH_PASSWORD',
 ### Invoking services
  
 In this section we will look into how we can use the connection
-created as instructed above to perform various services such as
+created as instructed previously to perform various services such as
 creating nodes, listing nodes, starting nodes and stopping nodes.
 
 Appropriate authentication code as described in the previous section

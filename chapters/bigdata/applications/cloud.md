@@ -167,7 +167,7 @@ This lesson gives Gartner's projections around futures of cloud and Big
 data. We start with a review of hype charts and then go into detailed
 Gartner analyses of the Cloud and Big data areas. Big data itself is at
 the top of the hype and by definition predictions of doom are emerging.
-Before too much excitement sets in, note that spinach is above clouds
+Before too much excitement sets in, note that spinach is previous clouds
 and Big data in Google trends.
 
 -   [:clapper: Gartners Emerging Technology Landscape

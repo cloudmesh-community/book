@@ -290,7 +290,7 @@ The sample output looks like:
 #### Run Program with Multiple Input Files
 
 The first run was done pretty quickly (1440 milliseconds took according
-to the sample result above) because the input file size was small (1,000
+to the previous sample result) because the input file size was small (1,000
 lines) and it was a single file. We provides more input files with a
 larger size (2,000 to 10,000 lines). Input files are already uploaded to
 HDFS. We simply run the program again with a slight change in the

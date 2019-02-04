@@ -25,7 +25,7 @@ Using Piazza
 -   EOrganization.3 e-organization
 -   EOrganization.4 e-organization
 -   EOrganization.5 e-organization
--   Conduct the entry survey after you have done the above assignments:
+-   Conduct the entry survey after you have done the previous assignments:
     <https://piazza.com/class/j5wll7vzylg25j?cid=67>
 -   Learn about Piazza folders:
     <https://piazza.com/class/j5wll7vzylg25j?cid=103>
@@ -43,7 +43,7 @@ How do you find the assignments?:
 
     Alternatively click on the Exercise link, gets you there faster ...
 
-Complete the above within the first week!
+Complete the previous within the first week!
 
 Week 2
 ------

@@ -107,7 +107,7 @@ The code does the following:
 * Use *DataFileWriter.append()* to add data points to the data
   file. Avro records are represented as Python dicts.
 * The resulting data file saved on the disk is named *students.avro*
-* This above instruction is for Python2. If one is using Python3,
+* This previous instruction is for Python2. If one is using Python3,
   change
 
   ```python

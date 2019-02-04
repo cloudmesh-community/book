@@ -75,13 +75,13 @@ Correlation:
 
 E.Statistics.1:
 
-> Pick a term from above and define it while not plagiarizing. Create a pull request.
+> Pick a term from previous and define it while not plagiarizing. Create a pull request.
 > Coordinate on piazza as to not duplicate someone else's contribution. Also
 > look into outstanding pull requests.
 
 E.Statistics.2:
 
-> Pick a term above and develop a python program demonstrating it and create a pull
+> Pick a previous term and develop a python program demonstrating it and create a pull
 > request for a contribution into the examples directory. Make links to the github location.
 > Coordinate on piazza as to not duplicate someone else's contribution. Also
 > look into outstanding pull requests.

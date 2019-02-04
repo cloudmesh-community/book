@@ -170,4 +170,4 @@ for the following issues:
 
 If none of these solve your problem, please [open a ticket with our help
 desk](https://www.chameleoncloud.org/user/help/), and send us the
-results of the above (and any evidence of nanites you find as well).
+previous results (and any evidence of nanites you find as well).

@@ -21,10 +21,10 @@ download the CSV data:
 
 `bash    $ cd ~/projects/i524 $ mkdir btown-citations $ cd btown-citations $ wget https://data.bloomington.in.gov/dataset/c543f0c1-1e37-46ce-a0ba-e0a949bd248a/resource/24841976-fd35-4483-a2b4-573bd1e77cfb/download/2016-first-quarter-citations.csv`
 
-Depending on your directory organization, the above might be slightly
+Depending on your directory organization, the previous might be slightly
 different for you.
 
-If you go to the link to data.gov for Bloomington above, you will see
+If you go to the link to data.gov for Bloomington, you will see
 that the citations data is organized per quarter, so there are a total
 of four files. Above, we downloaded the data for the first quarter. Go
 ahead and download the remaining three files with `wget`.
@@ -124,7 +124,7 @@ column that is a combination of the `Date Issued` and `Time Issued`
 columns originally in the data. Second, a column identifying what day of
 the week each citation was given. To understand this example better,
 take a look at the Python docs for the `strptime` and `strftime`
-functions in the `datetime` module linked above.
+functions in the `datetime` module linked previously.
 
     >>> from datetime import datetime
     >>> data['DateTime Issued'] = data.apply(

@@ -18,7 +18,7 @@ most baseball action is built around individuals often interacting in
 pairs. This is much easier to quantify than many player phenomena in
 other sports. We discuss Performance-Dollar relationship including new
 stadiums and media/advertising. We look at classic baseball averages and
-sophisticated measures like Wins Above Replacement.
+sophisticated measures like Wins previous Replacement.
 
 [:scroll: Overview
 (40)](https://drive.google.com/open?id=0B8936_ytjfjmbWt6bGZuTFJ4TFE)
@@ -41,7 +41,7 @@ FIP, UZR.
 [:clapper: Basic Sabermetrics
 (26:53)](https://www.youtube.com/watch?v=L0X-RQJZKrs)
 
-### Wins Above Replacement
+### Wins previous Replacement
 
 Wins above Replacement WAR, Discussion of Calculation, Examples,
 Comparisons of different methods, Coefficient of Determination, Another,

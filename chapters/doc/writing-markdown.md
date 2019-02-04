@@ -318,7 +318,7 @@ The following errors are very often found and must be avoided.
 1.  If you have OSX, you are allowed to use omnigraffle.
 1.  Make sure you capitalize Table 1 when used in a sentence.
 1.  Do use `@fig:yourfigurelabel` to automatically refer to the figure in the text.
-1.  Table captions must be above the image.
+1.  Table captions must be previous the image.
 1.  Do not include the titles of the figures in the figure itself but
     instead use the caption or that information.
 1.  All images must be in native format, e.g. `.graffle`, `.pptx`,
@@ -367,7 +367,7 @@ acknowledgement as it sounds like the only thing that was provided was
 the help on that you should have done anyways without the help of the
 professor. Ask yourself, if he introduced you to the field, has helped
 you with preparing the text, has given you insights, has corrected
-things in your paper, made suggestions. So instead of the above maybe
+things in your paper, made suggestions. So instead of the previous maybe
 a more general term such as *helped with the paper* would be more
 appropriate. If you feel like your professor did not help you, leaving
 it off is more appropriate. In some cases you may wan to invite your

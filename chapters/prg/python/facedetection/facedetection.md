@@ -225,7 +225,7 @@ Check accessibility by ansible ping like:
     !ansible -m ping -i inventory.txt all
 
 Make sure that you have a correct ssh key in your account otherwise you
-may encounter 'FAILURE' in the ping test above.
+may encounter 'FAILURE' in the previous ping test.
 
 #### Ansible Playbook
 
@@ -528,7 +528,7 @@ The list of image files is given to parallelize.
 
 #### Map Function (apply\_batch)
 
-The 'apply\_batch' function that we created above is given to map
+The 'apply\_batch' function that we created previously is given to map
 function to process in a spark cluster.
 
     pdc = pd.map(apply_batch)

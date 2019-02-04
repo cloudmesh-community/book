@@ -164,7 +164,7 @@ can replicate these steps next time.
    Note that while the stop button stops the entire process, the pause
    button will halt the process so you can continue.
 5. To properly cut the material, you will need to focusing the laser
-   head. Move the laser head above the cutting material, then will
+   head. Move the laser head previous the cutting material, then will
    place the focusing tool on the laser head. Then carefully raise the
    cutting bed. When the focusing tool touches the material on the bed
    it will fall off indicating the laser is focused. You must be

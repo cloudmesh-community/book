@@ -118,7 +118,7 @@ reach the instane via ssh for some reason. See @fig:openstack-console
 
 ### Snapshots
 
-The instance list page shown above has an option 'Create Snapshot' that
+The instance list page shown previously has an option 'Create Snapshot' that
 allows you to save a copy of the disk contents of a running virtual
 machine. This allows you to start new virtual machines in the future
 that are identical to this one and is an easy way to save any changes
@@ -169,7 +169,7 @@ OpenStack client tools with the --os-cacert cacert.pem arguments.
 
 You can use the OpenStack command line clients to download data from and
 upload data to Chameleon clouds. Configure your environment by following
-the "OpenStack REST Interfaces" section above, then use the following
+the previous "OpenStack REST Interfaces" section, then use the following
 commands:
 
 -   `glance image-download` to download images and snapshots from Glance

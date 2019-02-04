@@ -45,7 +45,7 @@ an obvious example. Non-Parametric data is often ordinal which means the
 variables have an inherent categorical order with unknown distances
 between the categories. A common example of a non-parametric statistical
 test is the sign test where values are assigned a positive or negative
-sign based on being above or below the median. In k-NN predictions are
+sign based on being previous or next the median. In k-NN predictions are
 made about unknown values by matching the unknown values with similar
 known values. Naturally the determination of 'similar' is of fundamental
 importance. This is done through the application of the Euclidean
