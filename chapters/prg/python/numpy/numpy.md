@@ -1,4 +1,4 @@
-# Numpy {#s-numpy}
+# Numpy {#s-numpy} :wave:
 
 NumPy is a popular library that is used by many other Python
 packages such as Pandas, SciPy, and scikit-learn. It provides a
@@ -213,13 +213,66 @@ extracting values from an array or matrix.
 
 Useful Functions
 ----------------
+The NumPy library provides several convenient mathematical functions
+that users can use. These functions provide several advantages
+to code written by users:
+* They can open source and, therefore, robust against errors.
+* Many of them utilize a C interface and will run much faster than
+native Python code.
+* They're written to very flexible.
+NumPy arrays and matrices contain many useful aggregating functions
+such as max(), min(), mean(), etc These functions are usually able
+to run an order of magnitude faster than looping through the object,
+so it's important to understand what functions are available to 
+avoid 'reinventing the wheel.' In addition, many of the functions
+are able to sum or average across axes, which make them extremely
+useful if your data has inherent grouping. To return to a previous
+example:
 
+    matrix = np.array([[1, 2], [3, 4]])
+    print(matrix)
+    >>>[[1 2]
+    >>> [3 4]]
+    matrix.sum()
+    >>>10
+    matrix.sum(axis=1)
+    >>>[3, 7]
+    matrix.sum(axis=0)
+    >>>[4, 6]
+
+In the above example, we created a 2x2 matrix containing the numbers
+1 through 4. The sum of the matrix returned the element-wise addition
+of the entire matrix. Summing across axis 0 (rows) returned a new array
+with the element-wise addition across each row. Likewise, summing across
+axis 1 (columns) returned the columnar summation.
 
 Linear Algebra
 ----------------
+Perhaps one of the most important uses for NumPy is its robust support
+for Linear Algebra functions. Like the aggregation functions described
+in the previous section, these functions are optimized to be much faster
+than user implementations and can utilize processesor level features to
+provide very quick computations. These functions can be accessed very
+easily from the NumPy package:
+
+    matrix = np.array([[1, 2], [3, 4]])
+    matrix2 = np.array([[5, 6], [7, 8]])
+    print(np.matmul(matrix, matrix2))
+    >>>[[19 22]
+        [43 50]]
+
+Included in within np.linalg are functions for calculating the
+Eigendecomposition of square matrices and symmetric matrices. Finally,
+to give a quick example of how easy it is to implement algorithms in
+NumPy, we can easily use it to calculate the cost and gradient when
+using simple Mean-Squared-Error (MSE):
+
+    cost = np.power(Y - np.matmul(X, weights)), 2).mean(axis=1)
+    gradient = np.matmul(X.T, np.matmul(X, weights) - y)
 
 Resources
 ---------
 
 * <https://docs.scipy.org/doc/numpy/>
 * <http://cs231n.github.io/python-numpy-tutorial/#numpy>
+* <https://docs.scipy.org/doc/numpy-1.15.1/reference/routines.linalg.html>
