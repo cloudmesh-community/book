@@ -82,7 +82,7 @@ For example:
     print(test)
     >>>[2]
 
-From the above, it makes sense that 6+7=13. But how does 
+In this example, it makes sense that 6+7=13. But how does 
 13+245=2? Put simply, the object type (uint8) simply ran out of
 space to store the value and wrapped back around to the beginning.
 An 8-bit number is only capable of storing 2^8, or 255, unique values.
@@ -140,7 +140,7 @@ Arrays can also interact with other arrays:
     example * other_example
     array([ 2,  6, 12])
 
-In the above, we can see that the result of multiplying together two
+In this example, we can see that the result of multiplying together two
 arrays is to take the element-wise product while multiplying by a
 constant will multiply each element in the array by that constant.
 NumPy supports all of the basic mathematical operations: addition,
@@ -166,7 +166,7 @@ of dimensions:
     matrix[1][0]
     >>>3
 
-In the above, our first index selected the row and the second selected
+In this example, our first index selected the row and the second selected
 the column - giving us our result of 3. Matrices can be extending out
 to any number of dimensions by simply using more indices to access
 specific elements (though use-cases beyond 4 may be somewhat rare).
@@ -192,14 +192,14 @@ can also use indexing to request elements within a given range:
     long_array[4:8]
     >>>array([4, 5, 6, 7])
    
-In the above, we asked NumPy to give us elements 4 through 7 (ranges
-in Python are inclusive at the start and non-inclusive at the end). We
-can even go backwards:
+Here, we asked NumPy to give us elements 4 through 7 (ranges in Python
+are inclusive at the start and non-inclusive at the end). We can even
+go backwards:
 
     long_array[-5:]
     >>>array([5, 6, 7, 8, 9])
     
-In the above example, we're asking NumPy to give us the last 5 elements
+In the previous example, we're asking NumPy to give us the last 5 elements
 of our array. Had we done ':-5', we would've requested everything BUT
 the last five elements:
 
@@ -240,7 +240,7 @@ example:
     matrix.sum(axis=0)
     >>>[4, 6]
 
-In the above example, we created a 2x2 matrix containing the numbers
+In this example, we created a 2x2 matrix containing the numbers
 1 through 4. The sum of the matrix returned the element-wise addition
 of the entire matrix. Summing across axis 0 (rows) returned a new array
 with the element-wise addition across each row. Likewise, summing across
