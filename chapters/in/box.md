@@ -46,9 +46,6 @@ Once you have generated a keypair, a config.json file will automatically downloa
     sdk = JWTAuth.from_settings_file(<path to config.json>)
     client = Client(sdk)
 
-### Authentication with OAuth2:
-
-
 
 ## Box Methods
 
