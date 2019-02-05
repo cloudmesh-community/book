@@ -40,7 +40,7 @@ In the Configuration panel of the Developer Console, scroll down to the section 
 
 Once you have generated a keypair, a config.json file will automatically download. Save this file in a secure location as you will need it for authentication purposes. Finally, you will need to read in this config file into your app:
 
-    from boxsdk import JWAuth
+    from boxsdk import JWTAuth
     from boxsdk import Client
     
     sdk = JWTAuth.from_settings_file(<path to config.json>)
