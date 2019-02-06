@@ -1,4 +1,4 @@
-# Box :o: :question:
+# Box
 
 ## About 
 
