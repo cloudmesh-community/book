@@ -147,9 +147,8 @@ Which will return the following:
     copy_of_file = file.copy(destination)
     
     # Download a file:
-    file_to_download = client.file(file_id='<file id>').get()
-    output = open(file_to_download.name, 'wb')
-    file_to_download.download_to(output)
+    with open('<output file name>', 'wb') as f:
+        client.file("<file id>').download_to(f)
     
 ### Searching
 The query string used in a search can include object names, description, text content, or other object data. 
