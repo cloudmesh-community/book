@@ -1476,7 +1476,7 @@ E.GraphQL.6: Cloud Service
 
 E.GraphQL.7: Cloudmesh
 
-> Develop a cloudmesh framework that uses all clouds above while
+> Develop a cloudmesh framework that uses all previous clouds while
 > returning the information of all running VMS in a Web page. YOu are
 > allowed to make the Web page beautiful with HTML5 and/or JavaScript
 > if you have the background to do so. Contact Gregor if you like to
