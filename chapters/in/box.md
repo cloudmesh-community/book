@@ -65,10 +65,6 @@ The Python SDK has several methods for creating objects and endpoints which you 
     print(folder.name)
     print(folder.item_status)
 
-    # Get specific fields in one call:
-    folder = client.folder('<folder id>').get(fields = ['created_at', 'size'])
-    print(folder)
-
 ### Folders
 
     # Create a new folder:
