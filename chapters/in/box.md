@@ -89,7 +89,7 @@ The Python SDK has several methods for creating objects and endpoints which you 
 ### Uploading files
     
     # Upload a file to a Box folder:
-    test_file = client.folder(folder_id='<folder id>').upload('<path to file>', '<file name>')
+    test_file = client.folder(folder_id='<folder id>').upload('<file path>')
     print(test_file.name)
     
     # Upload a stream to a Box folder:
