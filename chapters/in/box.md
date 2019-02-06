@@ -300,14 +300,14 @@ Here is an example of a webhook notification:
 
 Webhooks are created by specifying the object, trigger, and URL.
 
-    folder = client.folder(folder_id='<folder id>')
+    folder = client.folder('<folder id>')
     triggers = ['FILE.UPLOADED', 'SHARED_LINK.CREATED'[
     webhook = client.create_webhook(folder, triggers, '<url>')
     
 You can update a webhook using a dictionary object of the attributes to update:
 
     updates = { triggers: ['FOLDER.TRASHED'], address: 'http://www.example.com'}
-    webhook = client.webhook(webhook_id='<webhook id>').update_info(updates)
+    webhook = client.webhook('<webhook id>').update_info(updates)
     
 Calls to delete() and get() are the same as for other objects. 
 
