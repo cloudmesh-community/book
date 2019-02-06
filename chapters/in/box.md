@@ -169,6 +169,10 @@ Shared links give read-only access to a file through a URL. Specifying the acces
 ## Project management 
 Box offers some limited project management tools, including groups, collaborations, and tasks. 
 
+Note: you can create another user to test out project management tools as follows: 
+
+    test_user = client.create_user('test user', login=None)
+
 ### Collaborations
 A collaboration object gives a user specified permissions for the defined files and folders. The collaboration object itself returns information about the users, files, and roles of the collaboration. 
 
