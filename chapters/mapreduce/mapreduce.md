@@ -14,7 +14,7 @@ Now that you have a basic understanding of the map function we
 recommend to watch our videos about mapreduce, hadoop and spark which
 we provide within this chapter.
 
-[:clapper: Map Reduce, Hadoop, and Spark (19:02) Hadoop A](https://drive.google.com/file/d/1CmtoDDio-CYT9g4bsjclVfukA5TsIc8n/view?usp=sharing)
+[:clapper: Map Reduce, Hadoop, and Spark (19:02) Hadoop A](https://youtu.be/HfuP2RJnQ6k)
 
 
 MapReduce is a programming technique or processing capability which
@@ -88,7 +88,7 @@ Bear, Camel, Cat, Camel
 
 ![MapReduce WordCount [@www-edureka-hadoop-mapreduce] ](images/mapreduce_wordcount.png){#fig:mapreduce_wordcount}
 
- 
+
 
 Let us see an example of map() and reduce() methods in code for this
 word count example.
@@ -98,12 +98,12 @@ public static class Map extends Mapper<LongWritable,
                                 Text,
                                 Text,
                                 IntWritable> {
- 
+
    public void map(LongWritable key,
                    Text value,
                    Context context)
                    throws IOException,InterruptedException {
- 
+
        String line = value.toString();
        StringTokenizer tokenizer = new StringTokenizer(line);
        while (tokenizer.hasMoreTokens()) {
@@ -122,12 +122,12 @@ below and both input and output here is a key/value pairs:
 public static class Reduce extends Reducer<Text,
                                    IntWritable,
                                    Text,IntWritable> {
- 
+
    public void reduce(Text key,
                       Iterable<IntWritable> values,
                       Context context)
      throws IOException,InterruptedException {
- 
+
          int sum=0;
          for(IntWritable x: values) {
             sum+=x.get();
@@ -147,7 +147,7 @@ this YARN, many other BigData frameworks can connect to HDFS as
 well. (see @fig:mapreduce_hadoop_spark)
 
 ![MapReduce Hadoop and Spark [@www-youtube-hadoop-mapreduce] ](images/mapreduce_hadoop_spark.png){#fig:mapreduce_hadoop_spark}
- 
+
 
 There are many big data frameworks available and there is always a
 question as to which one is the right one. Leading frameworks are
@@ -190,7 +190,7 @@ The key differences between them are as follows:
    need to restart the applications from scratch.
 6. **Data Volume:** As the data for spark is held in memory larger
    data volumes are better managed in Hadoop.
-   
+
 ## References
 
 * [@www-ibm-mapreduce] https://www.ibm.com/analytics/hadoop/mapreduce
@@ -200,4 +200,3 @@ The key differences between them are as follows:
 * [@www-quora-hadoop-spark-diff] https://www.quora.com/What-is-the-difference-between-Hadoop-and-Spark
 * [@www-data-flair-spark-hadoop-diff] https://data-flair.training/blogs/apache-spark-vs-hadoop-mapreduce
 * [@www-youtube-hadoop-mapreduce] https://www.youtube.com/watch?v=SqvAaB3vK8U&list=WL&index=25&t=2547s
-
