@@ -177,7 +177,7 @@ conn = OpenStack(OPENSTACK__AUTH_USERNAME, OPENSTACK_AUTH_PASSWORD',
 ### Invoking services
  
 In this section we will look into how we can use the connection
-created as instructed above to perform various services such as
+created as previously instructed to perform various services such as
 creating nodes, listing nodes, starting nodes and stopping nodes.
 
 Appropriate authentication code as described in the previous section
@@ -299,7 +299,7 @@ Next we explain how to use Amazon Web Services (AWS) S3 via
 libcloud. Apache libcloud is a python library that provides
 abstraction layer and hides the complexities of directly integrating
 with AWS API's, for that matter it allows you to do so for different
-cloud providers. In the sections below more detailed steps are shown
+cloud providers. In the next sections more detailed steps are shown
 to install and use libcloud for AWS S3.
 
 	
