@@ -247,13 +247,6 @@ Tasks can be updated, deleted with calls to update() and delete(). Calling get()
     user = client.user(user_id='<user id>')
     assignment = client.task('<task id>').assign(user)
         print(assignment.id)
-        
-You can get all users a task has been assigned to by calling get assignments on a task object:
-
-    assignments = client.task('<task id>').get_assignments()
-    for a in assignments:
-        print(a.assigned_to.name)
-
 
 ## Webhooks
 Webhooks are a convenient way of tracking events, such as file downloads, deletions, comments, and other actions. Webhooks send notifications about these events to a URL of your choosing. Events that can have webhooks include the following among others: 
