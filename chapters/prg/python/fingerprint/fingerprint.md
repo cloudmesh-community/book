@@ -218,7 +218,7 @@ DATASET_SHA256 = '4db6a8f3f9dc14c504180cbf67cdf35167a109280f121c901be37a80ac13c4
 
 We'll define how to download the dataset. This function is general
 enough that it could be used to retrieve most files, but we'll default
-it to use the values from above.
+it to use the values from previous.
 
 ```python
 def prepare_dataset(url=None, sha256=None, prefix='.', skip=False):
@@ -418,7 +418,7 @@ def run_bozorth3(input):
 There are two cases to handle: 1. One-to-one probe to gallery sets 1.
 One-to-many probe to gallery sets
 
-Both approaches are implemented below. The implementations follow the
+Both approaches are implemented next. The implementations follow the
 same pattern: 1. Create a temporary directory within with to work 1.
 Write the probe and gallery images to files in the temporary directory
 1. Call the `bozorth3` executable 1. The match score is written to
@@ -477,7 +477,7 @@ For plotting we\'ll operate only on the database. We\'ll select a small
 number of probe images and plot the score between them and the rest of
 the gallery images.
 
-The `mk_short_labels` helper function will be defined below.
+The `mk_short_labels` helper function will be defined next.
 
 ```python
 def plot(dbfile, nprobes=10):
