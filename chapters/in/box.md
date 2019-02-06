@@ -301,7 +301,7 @@ Here is an example of a webhook notification:
 Webhooks are created by specifying the object, trigger, and URL.
 
     folder = client.folder('<folder id>')
-    triggers = ['FILE.UPLOADED', 'SHARED_LINK.CREATED'[
+    triggers = ['FILE.UPLOADED', 'SHARED_LINK.CREATED']
     webhook = client.create_webhook(folder, triggers, '<url>')
     
 You can update a webhook using a dictionary object of the attributes to update:
