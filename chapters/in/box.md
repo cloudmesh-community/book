@@ -172,6 +172,7 @@ Box offers some limited project management tools, including groups, collaboratio
 Note: you can create another user to test out project management tools as follows: 
 
     test_user = client.create_user('test user', login=None)
+    print(user.id)
 
 ### Collaborations
 A collaboration object gives a user specified permissions for the defined files and folders. The collaboration object itself returns information about the users, files, and roles of the collaboration. 
