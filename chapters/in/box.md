@@ -74,22 +74,22 @@ The Python SDK has several methods for creating objects and endpoints which you 
      client.folder('<folder id>').delete()
      
      # Copy a folder: 
-     folder = client.folder(folder_id='<folder id>')
+     folder = client.folder('<folder id>')
      destination = client.folder('<destination folder id>')
      copy_of_folder = folder.copy(destination)
      
      # Update a folder:
-     folder = client.folder(folder_id='<folder id>').update_info({'name':'Updated name', 'description':'This has now been updated."})
+     folder = client.folder('<folder id>').update_info({'name':'Updated name', 'description':'This has now been updated."})
      
      # Get all items in a folder:
-     items = client.folder(folder_id='<folder id>').get_items()
+     items = client.folder('<folder id>').get_items()
      for item in items:
         print(item.id)
 
 ### Uploading files
     
     # Upload a file to a Box folder:
-    test_file = client.folder(folder_id='<folder id>').upload('<file path>')
+    test_file = client.folder('<folder id>').upload('<file path>')
     print(test_file.name)
     
     # Upload a stream to a Box folder:
@@ -139,11 +139,11 @@ Which will return the following:
  ### Deleting, copying, and downloading files
  
     # Delete a file:
-    client.file(file_id='<file id>').delete()
+    client.file('<file id>').delete()
     
     # Copy a file: 
-    file = client.file(file_id='<file id>')
-    destination = client.folder(folder_id='<folder id>')
+    file = client.file('<file id>')
+    destination = client.folder('<folder id>')
     copy_of_file = file.copy(destination)
     
     # Download a file:
@@ -161,10 +161,10 @@ The query string used in a search can include object names, description, text co
 Shared links give read-only access to a file through a URL. Specifying the access level of a shared link determines whether users will need to authenticate with Box in order to view the file. 
 
     # Creating a shared link:
-    url = client.file(file_id='<file id>').get_shared_link()
+    url = client.file('<file id>').get_shared_link()
     
     # Retrieving a shared link that has already been created:
-    url = client.file(file_id='<file id>').shared_link['url']
+    url = client.file('<file id>').shared_link['url']
     
 ## Project management 
 Box offers some limited project management tools, including groups, collaborations, and tasks. 
@@ -172,36 +172,9 @@ Box offers some limited project management tools, including groups, collaboratio
 ### Collaborations
 A collaboration object gives a user specified permissions for the defined files and folders. The collaboration object itself returns information about the users, files, and roles of the collaboration. 
 
-    collaboration = client.collaboration(collab_id='<collab id>').get()
-        {
-            "type": "collaboration",
-            "id": "791293",
-            "created_by": {
-                "type": "user",
-                "id": "17738362",
-                "name": "sean rose",
-                "login": "sean@box.com"
-            },
-            "created_at": "2012-12-12T10:54:37-08:00",
-            "modified_at": "2012-12-12T11:30:43-08:00",
-            "expires_at": null,
-            "status": "accepted",
-            "accessible_by": {
-                "type": "user",
-                "id": "18203124",
-                "name": "sean",
-                "login": "sean+test@box.com"
-            },
-            "role": "editor",
-            "acknowledged_at": "2012-12-12T11:30:43-08:00",
-            "item": {
-                "type": "folder",
-                "id": "11446500",
-                "sequence_id": "0",
-                "etag": "0",
-                "name": "Shared Pictures"
-            }
-        }
+    collaboration = client.collaboration('<collab id>').get()
+    print(collab.role)
+    print(collab.item['type'])
     
 Roles include editor, viewer, previewer, uploader, previewer uploader, viewer uploader, or co-owner. Updating and deleting a collaboration is similar to other box objects. 
 
