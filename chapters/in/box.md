@@ -205,7 +205,7 @@ A group object can be used instead of a user in collaborations. The get() call t
         
     memberships = client.group(group_id = '<group id>').get_memberships()
     for member in memberships:
-        print(member.name)
+        print(member.user['id'])
         
     # Create, update, or delete a group
     new_group = client.create_group(name="New Group")
@@ -232,7 +232,7 @@ You can see all groups a user is a member of with by calling get_group_memberhsi
 
  You can see all collaboration objects a group has by calling get_collaborations on a group object:
  
-    collaborations = client.group(group_id = '<group id>').get_collaborations()
+    collaborations = client.group('<group id>').get_collaborations()
     for collab in collaborations:
         print(collab.item.name)
 
