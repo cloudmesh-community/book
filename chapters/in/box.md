@@ -1,17 +1,15 @@
-# Box
-
-## About 
+# Box 
 
 Box is cloud storage service that allows users to store, access, collaborate, and share files, similar to DropBox. However, while DropBox started out as a service for storing personal files, Box is geared more towards business applications. Box also has its own platform offering APIs in multiple languages and an SDK for the development of custom applications and integrations, as well as many pre-built apps for integrating Box into various other tools and platforms. It has some limited project management tools in addition to its storage capabilities, including task and workflow management. Box offers free and paid versions for individual accounts and multiple types of business accounts that are charged on a per user basis. Finally, Box has just released Box Skills, a machine learning tool for automatically processing files uploaded to Box. 
 
-## Limitations: 
+## Limitations
 
-- While Box offers unlimited storage, it's biggest business account has a 5GB individual file size limit with a 2GB limit on the smallest business plan and 250MB on the unpaid personal plan. Other services have no individual file size limit. 
-- Using Box Sync grants the user full access to the data in the sync, including the ability to delete the data. Restoring data yourself only restores flat-folders and not nested ones, in order to fully restore everything Box must do the restoration. 
-- Problems can occur when two users edit the same file at the same time, unlike other collaboration tools
-- While there is no official limit on the number of files uploaded at one time, Box itself recommends users not exceed 100,000 files at a time
-- Deleting a user's account also deletes all the information they own, which can be problematic for users leaving a company
-- While Box has a collections feature, the only collection supported is the 'Favorites' collection, users are not able to make their own
+While Box offers unlimited storage, it's biggest business account has a 5GB individual file size limit with a 2GB limit on the smallest business plan and 250MB on the unpaid personal plan. Other services have no individual file size limit. 
+Using Box Sync grants the user full access to the data in the sync, including the ability to delete the data. Restoring data yourself only restores flat-folders and not nested ones, in order to fully restore everything Box must do the restoration. 
+Problems can occur when two users edit the same file at the same time, unlike other collaboration tools.
+While there is no official limit on the number of files uploaded at one time, Box itself recommends users not exceed 100,000 files at a time.
+Deleting a user's account also deletes all the information they own, which can be problematic for users leaving a company.
+While Box has a collections feature, the only collection supported is the 'Favorites' collection, users are not able to make their own
 
 REST:
 
@@ -25,14 +23,14 @@ If you will be using JWT authentication for your app, you'll want to install its
 
     pip install "boxsdk[JWT]"
 
-## Creating an app:
+## Creating an app
 
 Once you have created a Box account, go to the Developer Console and select 'Create New App'. 
 You will need to select what type of application you are building and an authentication method for your app and then enter an app name (you can change this later). Once your app has been created, click View App. You will then need to click the profile button in the top right corner of the page, and go to 'Account Settings'. Scroll down to the Authentication section and click 'Require 2-step verification for unrecognized logins', then follow the prompts. 
 
 The following examples have been adapted from https://developer.box.com/reference.
 
-### Authentication with JWT:
+### Authentication with JWT
 
 In the Configuration panel of the Developer Console, scroll down to the section titled 'Add and Manage Public Keys' and click 'Generate a Public/Private Keypair':
 
@@ -105,6 +103,7 @@ The Python SDK has several methods for creating objects and endpoints which you 
     client.file('<file id>').update_contents('<path to file>')
     
 ### File upload errors
+
 A file upload will fail if there is already a file in the folder with the same name, if the file is too big, or if there is not enough storage. To avoid errors, Box has an exception API that will check if a file will be accepted before sending it to Box: 
     
     # Enable preflight checks:
@@ -119,7 +118,16 @@ A file upload will fail if there is already a file in the folder with the same n
 Which will return the following:
 
     "OPTIONS https://api.box.com/2.0/files/content" 409 466
-    {'Date': 'Thu, 24 Jan 2019 16:30:46 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Strict-Transport-Security': 'max-age=31536000', 'Cache-Control': 'no-cache, no-store', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'BOX-REQUEST-ID': '0rgjouev2logn8gqcn1fauco84o', 'Age': '0'}
+    {'Date': 'Thu, 24 Jan 2019 16:30:46 GMT', 
+     'Content-Type': 'application/json', 
+     'Transfer-Encoding': 'chunked', 
+     'Connection': 'keep-alive', 
+     'Strict-Transport-Security': 'max-age=31536000', 
+     'Cache-Control': 'no-cache, no-store', 
+     'Content-Encoding': 'gzip', 
+     'Vary': 'Accept-Encoding', 
+     'BOX-REQUEST-ID': '0rgjouev2logn8gqcn1fauco84o', 
+     'Age': '0'}
     {'code': '---_use',
      'context_info': {'conflicts': {'etag': '0',
                                     'file_version': {'id': '411411432162',
@@ -151,6 +159,7 @@ Which will return the following:
         client.file("<file id>').download_to(f)
     
 ### Searching
+
 The query string used in a search can include object names, description, text content, or other object data. 
 
     items = client.search().query('<query string>', file_extensions = ['png', 'txt'], fields = ['name', 'description'])
@@ -158,6 +167,7 @@ The query string used in a search can include object names, description, text co
         print(item.name)
         
 ### Shared links
+
 Shared links give read-only access to a file through a URL. Specifying the access level of a shared link determines whether users will need to authenticate with Box in order to view the file. 
 
     # Creating a shared link:
@@ -167,6 +177,7 @@ Shared links give read-only access to a file through a URL. Specifying the acces
     url = client.file('<file id>').shared_link['url']
     
 ## Project management 
+
 Box offers some limited project management tools, including groups, collaborations, and tasks. 
 
 Note: you can create another user to test out project management tools as follows: 
@@ -175,6 +186,7 @@ Note: you can create another user to test out project management tools as follow
     print(user.id)
 
 ### Collaborations
+
 A collaboration object gives a user specified permissions for the defined files and folders. The collaboration object itself returns information about the users, files, and roles of the collaboration. 
 
     collaboration = client.collaboration('<collab id>').get()
@@ -197,6 +209,7 @@ Roles include editor, viewer, previewer, uploader, previewer uploader, viewer up
     client.collaboration(collab_id='<collaboraiton id>').delete()
     
 ### Groups
+
 A group object can be used instead of a user in collaborations. The get() call to a group object returns basic information about the group and does not include a member list. To get all members in a group, you must call get_memberships(): 
 
     group = client.group(group_id='<group id>').get() 
@@ -242,6 +255,7 @@ You can see all groups a user is a member of with by calling get_group_memberhsi
         print(collab.item.name)
 
 ### Tasks
+
 Tasks are attached to file objects and can be assigned to specific users by creating a task assignment. 
 
     # Create a new task
@@ -254,6 +268,6 @@ Tasks can be updated, deleted with calls to update() and delete(). Calling get()
         print(assignment.id)
 
 
-Pybox
------
+## Pybox
+
 Pybox provides a way to work with Box files from the command line. Documentation on how to set up and use pybox can be found at <https://github.com/hzheng/pybox>
