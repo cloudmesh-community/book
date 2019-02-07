@@ -5,7 +5,14 @@
 Scikit learn is a Machine Learing specfic library used in Python. Library can be used for data mining and analysis. It is built on top of NumPy, matplotlib and SciPy. Scikit Learn features Dimensionality reduction, clustering, regression and classification algorithms. 
 It also features model selection using grid search, cross validation and metrics. 
 
-Scikit learn also enables users to preprocess the data which can then be used for machine learning using modules like preprocessing and feature extraction.
+Scikit learn also enables users to preprocess the data using modules like preprocessing and feature extraction which can then be used for machine learning. 
+
+## Supervised Learning
+Supervised Learning is used in machine learning when we already know a set of output predictions based on input characterstics and based on that we need to predict the target for a new input. Training data is used to train the model which then can be used to predict the output from a bounded set.   
+     Problems can be of two types
+     1) Classification : Training data belongs to three or four classes/catagories and based on the label we want to predict the  class/category for the unlabeled data. 
+     2) Regression : Training data consists of vectors without any corresponding target values. Clustering can be used for these type of datasets to determine discover groups of similar examples. Another way is density estimation which determine the distribution of data within the input space. Histogram is the most basic form.
+     
 
 In this section we demonstrate how simple it is to use k-means in
 scikit learn.
