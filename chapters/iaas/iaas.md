@@ -7,7 +7,7 @@
 * Review IaaS servise by prominent cloud providers.
 * Understand how to write Python programs on managing virtual machines with libcloud.
 * Understand how to write Python programs on managing data services with libcloud.
-* Experiment with cloud providers while practially testing them. :warning: be carfull with your allocation
+* Experiment with cloud providers while practially testing them. :warning: be careful with your allocation
 
 ---
 
@@ -63,7 +63,7 @@ On the research side wi will be focussing on
 
 Some of the services listed provide a free small contingent of IaaS
 offerings that you can use. The use of this free tier will be
-sufficient to conduct thsi class.
+sufficient to conduct this class.
 
 A set of introductory slides is available at
 
