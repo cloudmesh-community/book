@@ -81,7 +81,7 @@ the fan has for an impact on the temperature.
 * <http://climbers.net/sbc/add-fan-raspberry-pi/>
 * <http://climbers.net/sbc/diy-raspberry-pi-3-cluster/>
 
-From the above Web page we find the following information as shown in
+From the previous Web page we find the following information as shown in
 the following table. From the data in the table it is clear that we
 need to keep the Pi from throttling while being in a case by adding a
 fan as obvious from experiment No. 2.
