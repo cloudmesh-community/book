@@ -13,12 +13,14 @@ While Box has a collections feature, the only collection supported is the 'Favor
 
 REST:
 
-https://developer.box.com/reference
+* <https://developer.box.com/reference>[@www-developer-box]
 
 Installation:
 
-    pip install boxsdk
-    
+```bash
+$ pip install boxsdk
+```
+
 If you will be using JWT authentication for your app, you'll want to install its dependencies:
 
     pip install "boxsdk[JWT]"
@@ -28,21 +30,23 @@ If you will be using JWT authentication for your app, you'll want to install its
 Once you have created a Box account, go to the Developer Console and select 'Create New App'. 
 You will need to select what type of application you are building and an authentication method for your app and then enter an app name (you can change this later). Once your app has been created, click View App. You will then need to click the profile button in the top right corner of the page, and go to 'Account Settings'. Scroll down to the Authentication section and click 'Require 2-step verification for unrecognized logins', then follow the prompts. 
 
-The following examples have been adapted from https://developer.box.com/reference.
+The following examples have been adapted from <https://developer.box.com/reference>.
 
 ### Authentication with JWT
 
 In the Configuration panel of the Developer Console, scroll down to the section titled 'Add and Manage Public Keys' and click 'Generate a Public/Private Keypair':
 
-![Box Add Key](box_add_key.png)
+![Box Add Key](image/box_add_key.png)
 
 Once you have generated a keypair, a config.json file will automatically download. Save this file in a secure location as you will need it for authentication purposes. Finally, you will need to read in this config file into your app:
 
-    from boxsdk import JWTAuth
-    from boxsdk import Client
+```python
+from boxsdk import JWTAuth
+from boxsdk import Client
     
-    sdk = JWTAuth.from_settings_file('<path to config.json>')
-    client = Client(sdk)
+sdk = JWTAuth.from_settings_file('<path to config.json>')
+client = Client(sdk)
+```
 
 For OAuth 2 authentication see https://developer.box.com/docs/authenticate-with-oauth-2. 
 
@@ -129,8 +133,10 @@ Which will return the following:
      'BOX-REQUEST-ID': '0rgjouev2logn8gqcn1fauco84o', 
      'Age': '0'}
     {'code': '---_use',
-     'context_info': {'conflicts': {'etag': '0',
-                                    'file_version': {'id': '411411432162',
+     'context_info': {
+         'conflicts': {
+            'etag': '0',
+            'file_version': {'id': '411411432162',
                                                      'sha1': '02d92c580d4ede6c80a878bdd9f3142d8f757be8',
                                                      'type': 'file_version'},
                                     'id': '389113382562',
