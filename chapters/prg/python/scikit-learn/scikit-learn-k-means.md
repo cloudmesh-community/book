@@ -9,9 +9,9 @@ Scikit learn also enables users to preprocess the data using modules like prepro
 
 ## Supervised Learning
 
-Supervised Learning is used in machine learning when we already know a set of output predictions based on input characterstics and based on that we need to predict the target for a new input. Training data is used to train the model which then can be used to predict the output from a bounded set.   
-Problems can be of two types
+Supervised Learning is used in machine learning when we already know a set of output predictions based on input characterstics and based on that we need to predict the target for a new input. Training data is used to train the model which then can be used to predict the output from a bounded set.  
 
+Problems can be of two types
 1. Classification : Training data belongs to three or four classes/catagories and based on the label we 
    want to predict the  class/category for the unlabeled data. 
 2. Regression : Training data consists of vectors without any corresponding target values. Clustering can be used for these
