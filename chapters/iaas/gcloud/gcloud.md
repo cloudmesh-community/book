@@ -40,6 +40,7 @@ Google offers many machine learning and artificial intelligence tools, including
 API tools include monetization and analytic tools as well as deployment tools. Apigee Edge integrates these tools together into a platform for managing APIs through the use of API proxies, which are combined together with a service plan into an API product @fig:gcloud-api-management. 
 
 :o: replace the image with text and hyperlinks
+:o: bibtex missing to avoid plagiarizm
 
 ![Google_api_management](images/api_management.png){#fig:gcloud-api-management}
 
