@@ -67,7 +67,7 @@ local$ su - ${USER}
 ```
 
 This will prompt you to enter the password for the current user. Now you 
-should be able to execute the above command without using sudo.
+should be able to execute the previous command without using sudo.
 
 
 Official repositories in dockerhub are public, certified repositories
