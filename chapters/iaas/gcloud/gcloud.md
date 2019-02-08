@@ -27,8 +27,35 @@ all its offerings can be managed via a customizable dashboard @fig:gcloud-dashbo
 
 Google offers many machine learning and artificial intelligence tools, including tools for text-to-speech, speech-to-text, translation, and image and video analysis as well as various tools for making models and predictions and deploying pipelines and out-of-the-box algorithms @fig:gcloud-machine-learning.
 
-![Google_machine_learning](./images/machine_learning.png){#fig:gcloud-machine-learning}
+[AI Hub (alpha)](https://cloud.google.com/ai-hub/): Discover, share, and deploy AI on Google Cloud.
 
+[Cloud AutoML (beta)](https://cloud.google.com/automl/): Easily train high-quality, custom ML models.
+
+[Cloud TPU](https://cloud.google.com/tpu/) Train and run ML models faster than ever.
+
+[Cloud Machine Learning Engine](https://cloud.google.com/ml-engine/): Build superior models and deploy them into production.
+
+[Cloud Talent Solution](https://cloud.google.com/solutions/talent-solution/): Put AI to work on your hiring needs.
+
+[Dialogflow Enterprise Edition](https://cloud.google.com/dialogflow-enterprise/): Create conversational experiences across devices and platforms.
+
+[Cloud Natural Language](https://cloud.google.com/natural-language/): Derive insights from unstructured text.
+
+[Cloud Speech-to-Text](https://cloud.google.com/speech-to-text/): Speech-to-text conversion powered by ML.
+
+[Cloud Text-to-Speech](https://cloud.google.com/text-to-speech/): Text-to-speech conversion powered by ML.
+
+[Cloud Translation](https://cloud.google.com/translate/): Dynamically translate between languages.
+
+[Cloud Vision](https://cloud.google.com/vision/): Derive insight from images powered by ML
+
+[Cloud Video Intelligence](https://cloud.google.com/video-intelligence/): Extract metadata from videos.
+
+[Cloud Inference API (alpha)](https://cloud.google.com/inference/): Quickly run large-scale correlations over typed time-series datasets.
+
+[Firebase Predictions](https://firebase.google.com/products/predictions/): Smart user segmentation based on predicted behavior.
+
+[Cloud Deep Learning VM Image](https://cloud.google.com/deep-learning-vm-image/): Preconfigured VMs for deep learning applications.
 ### API management
 
 API tools include monetization and analytic tools as well as deployment tools. Apigee Edge integrates these tools together into a platform for managing APIs through the use of API proxies, which are combined together with a service plan into an API product @fig:gcloud-api-management. 
