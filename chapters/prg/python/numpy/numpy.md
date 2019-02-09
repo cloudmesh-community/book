@@ -100,7 +100,22 @@ retyping to whatever datatype will support the result:
     >>>[262]
 
 Here, our addition caused our array, 'a', to be upscaled to use
-uint16 instead of uint8.
+uint16 instead of uint8. Finally, NumPy offers convenience functions
+akin to Python's range() function to create arrays of sequential
+numbers:
+    
+    X = np.arange(0.2,1,.1)
+    print(X)
+    >>>array([0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9], dtype=float32)
+
+We can use this function to also generate parameters spaces that can
+be iterated on:
+
+    P = 10.0 ** np.arange(-7,1,1)
+    print (P)
+
+    for x,p in zip(X,P):
+        print ('%f, %f' % (x, p))
 
 ## Arrays: Stringing Things Together
 
@@ -110,8 +125,12 @@ values (not neccesarily numbers). Arrays are 1 dimensional and can
 be created and accessed simply:
 
     a = np.array([1, 2, 3])
+    print(type(a))
+    >>><class 'numpy.ndarray'>
     print(a)
     >>>[1 2 3]
+    print(a.shape)
+    >>>(3,)
     a[0]
     >>>1
 
@@ -125,6 +144,12 @@ function to iterate through an array:
     >>>2
     >>>3
 
+Arrays are, also, mutable and can be changed easily:
+
+    a[0] = 42                 
+    print(a) 
+    >>>array([42, 2, 3])
+    
 NumPy also includes incredibly powerful broadcasting features. This
 makes it incredibly simple to perform mathematical operations on arrays
 that, also, make intuitive sense:
@@ -146,7 +171,9 @@ constant will multiply each element in the array by that constant.
 NumPy supports all of the basic mathematical operations: addition,
 subtraction, multiplication, division, and powers. It also includes
 an extensive suite of mathematical functions, such as log() and max(),
-which are covered later.
+which are covered later. 
+
+Finally, NumPy offers
 
 ## Matrices: An Array of Arrays
 
@@ -170,6 +197,27 @@ In this example, our first index selected the row and the second selected
 the column - giving us our result of 3. Matrices can be extending out
 to any number of dimensions by simply using more indices to access
 specific elements (though use-cases beyond 4 may be somewhat rare).
+
+Matrices support all of the normal mathematial functions such as
++, -, &ast;, and /. A special note: the &ast; operator will result
+in an element-wise multiplication. Using @ or np.matmul() for matrix
+multiplication:
+
+    print(m-m)
+
+    print(m*m)
+
+    print(m/m)
+
+More complex mathematical functions can typically be found within
+the NumPy library itself:
+
+    print (np.sin(x))
+
+    print (np.sum(x))
+
+A full listing can be found at:
+https://docs.scipy.org/doc/numpy/reference/routines.math.html
 
 ## Slicing Arrays and Matrices
 
@@ -269,6 +317,18 @@ using simple Mean-Squared-Error (MSE):
 
     cost = np.power(Y - np.matmul(X, weights)), 2).mean(axis=1)
     gradient = np.matmul(X.T, np.matmul(X, weights) - y)
+
+Finally, more advanced functions are easily available to users via the
+linalg library of NumPy as:
+
+    from numpy import linalg 
+
+    A = np.diag((1,2,3))
+
+    w,v = linalg.eig(A)
+
+    print ('w =', w)
+    print ('v =', v)
 
 ## NumPy Resources
 
