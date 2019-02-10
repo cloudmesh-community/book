@@ -1,4 +1,4 @@
-# Introduction
+# AWS DocumentDB
 
 AWS Document DB is a fully managed service with compatibility with Mongo DB. Mongo DB application code can be run here with same drivers and tools.
 A cluster needs to be created for using AWS document DB. It can contain zero or more databases instances and a attached volume for managing data for the cluster.
