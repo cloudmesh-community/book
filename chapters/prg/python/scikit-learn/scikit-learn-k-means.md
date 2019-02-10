@@ -37,7 +37,7 @@ Few of them are listed here
    to two or three dimension.
 
 
-## K-means Algorithm
+## K-means Algorithm 
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
 
