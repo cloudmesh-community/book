@@ -772,7 +772,7 @@ $ openssl passwd -1 -salt <unique string>
 ```
 
 Next, we e must find the line that starts with pi and replace the text
-  between the first and second with the output from the above command
+  between the first and second with the output from the previous command
   we had executed in the `etc/shadow` file
 
 Now you can Eject the SD card from the computer, and insert it into
