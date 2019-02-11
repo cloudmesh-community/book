@@ -494,7 +494,7 @@ desk](https://www.chameleoncloud.org/user/help/).
 
 While the possibility that the system is being taking over by nanites
 should not be discounted too easily, it is always prudent to first
-check for the following issues:
+check for the following three settings:
 
 -   Do you have a floating IP associated with your instance? By default,
     instances do not have publicly-accessible IP addresses assigned. See
@@ -515,7 +515,7 @@ check for the following issues:
 
  If none of these solve your problem, please [open a ticket with our
 help desk](https://www.chameleoncloud.org/user/help/), and send us the
-results of the above (and any evidence of nanites you find as well).
+results of the three previous settings(and any evidence of nanites you find as well).
 
 ## Create your own SSH key pairs
 
@@ -629,6 +629,6 @@ including "ssh-rsa". This will be used when importing the key pair to
 Openstack.
 
 At this time, the public key has been created and copied. Now you can
-now follow the steps described above (starting with the line "Provide
+now follow the steps described previously (starting with the line "Provide
 the public key to your cloud system or individual instance") to import
 the generated key pair for use with Chameleon!
