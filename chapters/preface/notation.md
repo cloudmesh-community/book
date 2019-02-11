@@ -157,13 +157,15 @@ This is the pythagoras theorem: $a^2+b^2=c^2$.
 
 ## Tables {sec:tables}
 
-Tables can be created as follows, or using a md table generator.
+Tables can be placed in text as follows: 
 
 : Sample Data table {#tbl:sample-table}
   
-label A   label B   label C
--------- -------- --------
+x   y   z
+--- --- ---
 1   2   3
 4   5   6
+
+The data in @tbl:sample-table was gathered from all the physics experiments...
 
 
