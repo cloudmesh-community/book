@@ -159,7 +159,7 @@ This is the pythagoras theorem: $a^2+b^2=c^2$.
 
 Tables can be placed in text as follows: 
 
-: Sample Data table {#tbl:sample-table}
+: Sample Data Table {#tbl:sample-table}
   
 x   y   z
 --- --- ---
