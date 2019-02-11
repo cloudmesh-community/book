@@ -605,10 +605,10 @@ here](http://www.chiark.greenend.org.uk/~sgtatham/putty/). Once
 downloaded, opening PuTTYgen will open a key generator window, seen
 below.
 
-![image](images/putty2.png){width="\columnwidth"}
+![image](images/putty2.png){#fig:putty-windows width="\columnwidth"}
 
-Once the program is opened, click the Generate button, seen above in
-blue. PuTTY Key Generator will then ask you to move your mouse around
+Once the program is opened, click the Generate button, seen in
+blue in @fig:putty-windows. PuTTY Key Generator will then ask you to move your mouse around
 the program's blank space to generate "randomness" for your key.?
 
 You may enter an optional "Key passphrase" and then confirm the
