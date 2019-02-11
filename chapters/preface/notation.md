@@ -154,3 +154,16 @@ sign and do not need an equation number:
 Whch renders as:
 
 This is the pythagoras theorem: $a^2+b^2=c^2$.
+
+## Tables {sec:tables}
+
+Tables can be created as follows, or using a md table generator.
+
+: Sample Data table {#tbl:sample-table}
+  
+label A   label B   label C
+-------- -------- --------
+1   2   3
+4   5   6
+
+
