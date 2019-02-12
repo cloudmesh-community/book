@@ -494,7 +494,7 @@ desk](https://www.chameleoncloud.org/user/help/).
 
 While the possibility that the system is being taking over by nanites
 should not be discounted too easily, it is always prudent to first
-check for the following issues:
+check for the following three settings:
 
 -   Do you have a floating IP associated with your instance? By default,
     instances do not have publicly-accessible IP addresses assigned. See
@@ -515,7 +515,7 @@ check for the following issues:
 
  If none of these solve your problem, please [open a ticket with our
 help desk](https://www.chameleoncloud.org/user/help/), and send us the
-results of the above (and any evidence of nanites you find as well).
+results of the three previous settings(and any evidence of nanites you find as well).
 
 ## Create your own SSH key pairs
 
@@ -605,10 +605,10 @@ here](http://www.chiark.greenend.org.uk/~sgtatham/putty/). Once
 downloaded, opening PuTTYgen will open a key generator window, seen
 below.
 
-![image](images/putty2.png){width="\columnwidth"}
+![image](images/putty2.png){#fig:putty-windows width="\columnwidth"}
 
-Once the program is opened, click the Generate button, seen above in
-blue. PuTTY Key Generator will then ask you to move your mouse around
+Once the program is opened, click the Generate button, seen in
+blue in @fig:putty-windows. PuTTY Key Generator will then ask you to move your mouse around
 the program's blank space to generate "randomness" for your key.?
 
 You may enter an optional "Key passphrase" and then confirm the
@@ -629,6 +629,6 @@ including "ssh-rsa". This will be used when importing the key pair to
 Openstack.
 
 At this time, the public key has been created and copied. Now you can
-now follow the steps described above (starting with the line "Provide
+now follow the steps described previously (starting with the line "Provide
 the public key to your cloud system or individual instance") to import
 the generated key pair for use with Chameleon!

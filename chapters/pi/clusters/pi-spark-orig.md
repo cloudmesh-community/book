@@ -147,11 +147,11 @@ Welcome to
 Using Scala version 2.11.8 (Java HotSpot(TM) Client VM, Java 1.8.0_65)
 ```
 
-Repeat above steps on all worker/slave nodes
+Repeat previous steps on all worker/slave nodes
 
 :warning: it is unclear which steps these are
 
-Alternative to running above steps for each worker node, you can run
+Alternative to running previous steps for each worker node, you can run
 the the following command on each worked node to create spark directory
 
 ```bash 

@@ -154,3 +154,18 @@ sign and do not need an equation number:
 Whch renders as:
 
 This is the pythagoras theorem: $a^2+b^2=c^2$.
+
+## Tables {sec:tables}
+
+Tables can be placed in text as follows: 
+
+: Sample Data Table {#tbl:sample-table}
+  
+x   y   z
+--- --- ---
+1   2   3
+4   5   6
+
+The data in @tbl:sample-table was gathered from all the physics experiments...
+
+
