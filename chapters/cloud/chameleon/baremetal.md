@@ -52,7 +52,7 @@ However, note that some steps assume that previous ones have been
 successfully performed.
 
 You can also consult documentation describing how to use advanced
-features of Chameleon not covered by the guides above:
+features of Chameleon not covered by the previous guides:
 
 -   the [Chameleon Object
     Store](https://www.chameleoncloud.org/docs/bare-metal-user-guide/chameleon-object-store/),
