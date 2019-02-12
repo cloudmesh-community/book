@@ -713,20 +713,20 @@ dest/chapters/prg/python/opencv/secchi.md: ../chapters/prg/python/opencv/secchi.
 	../bin/header.py dest/chapters/prg/python/opencv/secchi.md 3
 
 dest/chapters/SECTION/SECTION-DATA.md: ../chapters/SECTION/SECTION-DATA.md
-	../bin/markup-single.py ../chapters/SECTION/SECTION-DATA.md 3
-	../bin/header.py dest/chapters/SECTION/SECTION-DATA.md 3
+	../bin/markup-single.py ../chapters/SECTION/SECTION-DATA.md 2
+	../bin/header.py dest/chapters/SECTION/SECTION-DATA.md 2
 
 dest/chapters/data/formats.md: ../chapters/data/formats.md
-	../bin/markup-single.py ../chapters/data/formats.md 4
-	../bin/header.py dest/chapters/data/formats.md 4
+	../bin/markup-single.py ../chapters/data/formats.md 3
+	../bin/header.py dest/chapters/data/formats.md 3
 
 dest/chapters/data/mongodb.md: ../chapters/data/mongodb.md
-	../bin/markup-single.py ../chapters/data/mongodb.md 4
-	../bin/header.py dest/chapters/data/mongodb.md 4
+	../bin/markup-single.py ../chapters/data/mongodb.md 2
+	../bin/header.py dest/chapters/data/mongodb.md 2
 
 dest/chapters/data/mongoengine.md: ../chapters/data/mongoengine.md
-	../bin/markup-single.py ../chapters/data/mongoengine.md 4
-	../bin/header.py dest/chapters/data/mongoengine.md 4
+	../bin/markup-single.py ../chapters/data/mongoengine.md 3
+	../bin/header.py dest/chapters/data/mongoengine.md 3
 
 dest/chapters/prg/python/python-wordcount.md: ../chapters/prg/python/python-wordcount.md
 	../bin/markup-single.py ../chapters/prg/python/python-wordcount.md 2

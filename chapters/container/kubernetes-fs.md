@@ -1,4 +1,4 @@
-# Using Kubernetes on FutureSystems
+# Using Kubernetes on FutureSystems {#sec:kub-fs}
 
 This section introduces you on how to use the Kubernetes cluster
 on FutureSystems. Currently we have deployed kubernetes on our
