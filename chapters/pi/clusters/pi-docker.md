@@ -60,7 +60,7 @@ user) to the docker group using:
 pi$ sudo usermod -aG docker pi
 ```
 	
-After executing the above command, we log out of the terminal restart
+After executing the previous command, we log out of the terminal restart
 it so we are sure the user permissions are available in the shell we
 use.
 
