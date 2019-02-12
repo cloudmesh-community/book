@@ -1,8 +1,8 @@
-# Numpy {#s-numpy} :wave:
+# NumPy {#s-numpy} :wave:
 
 NumPy is a popular library that is used by many other Python
 packages such as Pandas, SciPy, and scikit-learn. It provides a
-simple-to-use and fast way of interacting with numerical data
+fast, simple-to-use way of interacting with numerical data
 organized in vectors and matrices. In this section, we will
 provide a short introduction to NumPy.
 
@@ -36,10 +36,10 @@ array. Examples where you'll encounter these dimenions may include:
 
 * 1 Dimensional: time series data such as audio, stock prices, or
 a single observation in a dataset.
-* 2 Dimensional: a single color channel in an image (e.g. red) or 
-a dataset containing more than one observation, or 
-* 3+ Dimensional: images composed of multiple channels (e.g. RGB,
-CMYK, etc.) or video (RGB+time).
+* 2 Dimensional: connectivity data between network nodes, user-product
+recommendations, and database tables.
+* 3+ Dimensional: network latency between nodes over time, video
+(RGB+time), and version controlled datasets.
 
 All of these data can be placed into NumPy's array object, just
 with varying dimensions.
@@ -56,7 +56,7 @@ https://docs.scipy.org/doc/numpy-1.15.0/user/basics.types.html
 
 Before moving on, it's important to know about the tradeoff
 made when using different datatypes. For example, a uint8 can
-only contained values between 0 and 255. This, however, constrats
+only contain values between 0 and 255. This, however, contrasts
 with float64 which can express any value from +/- 1.80e+308. So
 why wouldn't we just always use float64s? Though they allow us
 to be more expressive in terms of numbers, they also consume
@@ -68,7 +68,7 @@ consume 8 times as much memory: 768 million bits or 732.42 MB.
 It's important use the right datatype for the job to avoid
 consuming unneccessary resources or slowing down processing.
 
-Finally, while NumPy will convenient convert between datatypes,
+Finally, while NumPy will conveniently convert between datatypes,
 one must be aware of overflows when using smaller datatypes.
 For example:
 
@@ -85,10 +85,10 @@ For example:
 In this example, it makes sense that 6+7=13. But how does 
 13+245=2? Put simply, the object type (uint8) simply ran out of
 space to store the value and wrapped back around to the beginning.
-An 8-bit number is only capable of storing 2^8, or 255, unique values.
+An 8-bit number is only capable of storing 2^8, or 256, unique values.
 An operation that results in a value above that range will 'overflow'
-to cause the value to wrap back around to zero. Likewise, anything
-below that range will 'underflow' and wrap back around to the beginning.
+and cause the value to wrap back around to zero. Likewise, anything
+below that range will 'underflow' and wrap back around to the end.
 In our example, 13+245 became 258, which was too large to store in 8
 bits and wrapped back around to 0 and ended up at 2.
 
@@ -112,10 +112,10 @@ We can use this function to also generate parameters spaces that can
 be iterated on:
 
     P = 10.0 ** np.arange(-7,1,1)
-    print (P)
+    print(P)
 
     for x,p in zip(X,P):
-        print ('%f, %f' % (x, p))
+        print('%f, %f' % (x, p))
 
 ## Arrays: Stringing Things Together
 
@@ -135,8 +135,8 @@ be created and accessed simply:
     >>>1
 
 Arrays (and, later, matrices) are zero-indexed. This makes it
-convenient when, for example, when using Python's range()
-function to iterate through an array:
+convenient when, for example, using Python's range() function
+to iterate through an array:
 
     for i in range(3):
         print(a[i])
@@ -151,8 +151,8 @@ Arrays are, also, mutable and can be changed easily:
     >>>array([42, 2, 3])
     
 NumPy also includes incredibly powerful broadcasting features. This
-makes it incredibly simple to perform mathematical operations on arrays
-that, also, make intuitive sense:
+makes it very simple to perform mathematical operations on arrays
+that also makes intuitive sense:
 
     a * 3
     >>>array([3, 6, 9])
@@ -165,15 +165,13 @@ Arrays can also interact with other arrays:
     print(a * b)
     >>>array([ 2,  6, 12])
 
-In this example, we can see that the result of multiplying together two
+In this example, the result of multiplying together two
 arrays is to take the element-wise product while multiplying by a
 constant will multiply each element in the array by that constant.
 NumPy supports all of the basic mathematical operations: addition,
 subtraction, multiplication, division, and powers. It also includes
 an extensive suite of mathematical functions, such as log() and max(),
-which are covered later. 
-
-Finally, NumPy offers
+which are covered later.
 
 ## Matrices: An Array of Arrays
 
@@ -212,9 +210,9 @@ multiplication:
 More complex mathematical functions can typically be found within
 the NumPy library itself:
 
-    print (np.sin(x))
+    print(np.sin(x))
 
-    print (np.sum(x))
+    print(np.sum(x))
 
 A full listing can be found at:
 https://docs.scipy.org/doc/numpy/reference/routines.math.html
@@ -224,13 +222,13 @@ https://docs.scipy.org/doc/numpy/reference/routines.math.html
 As one can imagine, accessing elements one-at-a-time is both slow
 and can potentially require many lines of code to iterate over
 every dimension in the matrix. Thankfully, NumPy incorporate a very
-power slicing engine that allows us to access ranges of elements 
+powerful slicing engine that allows us to access ranges of elements 
 easily:
 
     m[1, :]
     >>>array([3, 4])
 
-The ':' value tells NumPy to simply select all elements in the given
+The ':' value tells NumPy to select all elements in the given
 dimension. Here, we've requested all elements in the first row. We
 can also use indexing to request elements within a given range:
 
@@ -247,9 +245,9 @@ go backwards:
     a[-5:]
     >>>array([5, 6, 7, 8, 9])
     
-In the previous example, we're asking NumPy to give us the last 5 elements
-of our array. Had we done ':-5', we would've requested everything BUT
-the last five elements:
+In the previous example, the negative value is asking NumPy to return
+the last 5 elements of the array. Had the argument been ':-5', NumPy
+would've returned everything BUT the last five elements:
 
     a[:-5]
     >>>array([0, 1, 2, 3, 4])
@@ -264,10 +262,13 @@ extracting values from an array or matrix.
 The NumPy library provides several convenient mathematical functions
 that users can use. These functions provide several advantages
 to code written by users:
-* They can open source and, therefore, robust against errors.
+
+* They are open source typically have multiple contributors checking
+for errors.
 * Many of them utilize a C interface and will run much faster than
 native Python code.
 * They're written to very flexible.
+
 NumPy arrays and matrices contain many useful aggregating functions
 such as max(), min(), mean(), etc These functions are usually able
 to run an order of magnitude faster than looping through the object,
