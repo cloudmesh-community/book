@@ -1,4 +1,4 @@
-# MongoDB in Python
+# MongoDB in Python {#sec:mongodb-python}
 
 
 ---
@@ -6,7 +6,7 @@
 **:mortar_board: Learning Objectives**
 
 * Introduction to basic MongoDB knowledge
-* Use of MOngoDB via PyMongo
+* Use of MongoDB via PyMongo
 * Use of MongoEngine MongoEngine and Object-Document mapper,
 * Use of Flask-Mongo
 
@@ -30,10 +30,59 @@ to SQL's. It would be safe to say that although NoSQL databases are
 still far from replacing the relational databases, they are adding an 
 immense value when used in hybrid IT environments in conjunction with 
 relational databases, based on the application specific needs 
-[@www-guru99]. In this paper, we will be covering the MongoDB technology, 
+[@www-guru99]. We will be covering the MongoDB technology, 
 its driver PyMongo, its object-document mapper MongoEngine, and the 
 Flask-PyMongo micro-web framework that make MongoDB more attractive
 and user-friendly.
+
+## Cloudmesh MongoDB Usage Quickstart {#sec:mongodb-cloudmesh}
+
+Before you read on we like you to read this quickstart. The easiest way
+for many of the activities we do to interact with MongoDB is to use
+our cloudmesh functionality. This prelude section is not intended to
+describe all the details, but get you started quickly while leveraging cloudmesh
+
+This is done via the cloudmesh cmd5 and the cloudmesh_community/cm
+code:
+
+* <https://cloudmesh-community.github.io/cm/>
+
+To install mongo on for example macOS you can use
+
+```bash
+$ cms admin mongo install
+```
+
+To start, stop and see the status of mongo you can use
+
+```bash
+$ cms admin mongo start
+$ cms admin mongo stop
+$ cms admin mongo status
+```
+
+To add an object to Mongo, you simply have to define a dict with
+predefined values for `kind` and `cloud`. In future such attributes
+can be passed to the function to determine the MongoDB collection.
+
+```python
+from cloudmesh.mongo.DataBaseDecorator import DatabaseUpdate
+
+@DatabaseUpdate
+def test():
+  data ={
+    "kind": "test",
+    "cloud": "testcloud",
+    "value": "hello"
+  }
+  return data
+
+result = test()
+```
+
+When you invoke the function it will automatically store the
+information into MongoDB.  Naturally this requires that the
+`~/.cloudmesh/cloudmesh4.yaml` file is properly configured.
 
 ## MongoDB
 
@@ -50,14 +99,14 @@ MongoDB can be installed on various Unix Platforms, including Linux,
 Ubuntu, Amazon Linux, etc [@www-digitaloceaninst]. This section focuses 
 on installing MongoDB on Ubuntu 18.04 Bionic Beaver used as a standard 
 OS for a virtual machine used as a part of Big Data Application Class 
-during the 2018 Fall semester.                              
+during the 2018 Fall semester.
 
 #### Installation procedure
 
 Before installing, it is recommended to configure the non-root user and 
 provide the administrative privileges to it, in order to be able to 
 perform general MongoDB admin tasks. This can be accomplished by login 
-as the root user in the following manner [@www-digitaloceanprep].           
+as the root user in the following manner [@www-digitaloceanprep].
 
 ```bash
 $ adduser mongoadmin
@@ -136,7 +185,7 @@ $ sudo nano /etc/mongodb.conf
 ```
 
 Also, to complete this step, a server's IP address must be added to the 
-bindIP value [@www-digitaloceaninst].                                    
+bindIP value [@www-digitaloceaninst].
 
 ```bash
 $ logappend=true
@@ -145,55 +194,57 @@ $ logappend=true
   *port = 27017*
 ```
 
-MongoDB is now listening for a remote connection that can be accessed 
-by anyone with appropriate credentials [@www-digitaloceaninst].  
+MongoDB is now listening for a remote connection that can be accessed
+by anyone with appropriate credentials [@www-digitaloceaninst].
 
 ### Collections and Documents
 
-Each database within Mongo environment contains collections which in turn 
-contain documents. Collections and documents are analogous to tables and 
-rows respectively to the relational databases. The document structure is 
-in a key-value form which allows storing of complex data types composed 
-out of field and value pairs. Documents are objects which correspond to 
-native data types in many programming languages, hence a well defined, 
-embedded document can help reduce expensive joins and improve query 
-performance. The `_id` field  helps to identify each document uniquly
-[@www-guru99]. 
+Each database within Mongo environment contains collections which in
+turn contain documents. Collections and documents are analogous to
+tables and rows respectively to the relational databases. The document
+structure is in a key-value form which allows storing of complex data
+types composed out of field and value pairs. Documents are objects
+which correspond to native data types in many programming languages,
+hence a well defined, embedded document can help reduce expensive
+joins and improve query performance. The `_id` field helps to identify
+each document uniquely [@www-guru99].
 
-MongoDB offers flexibility to write records that are not restricted by 
-column types. The data storage approach is flexible as it allows one 
-to store data as it grows and to fulfill varying needs of applications 
-and/or users. It supports JSON like binary points known as BSON where 
-data can be stored without specifying the type of data. Moreover, it 
-can be distributed to multiple machines at high speed. It includes a 
-sharding feature that partitions and spreads the data out across various 
-servers. This makes MongoDB an excellent choice for cloud data processing. 
-Its utilities can load high volumes of data at high speed which ultimately 
-provides greater flexibility and availability in a cloud-based environment 
+MongoDB offers flexibility to write records that are not restricted by
+column types. The data storage approach is flexible as it allows one
+to store data as it grows and to fulfill varying needs of applications
+and/or users. It supports JSON like binary points known as BSON where
+data can be stored without specifying the type of data. Moreover, it
+can be distributed to multiple machines at high speed. It includes a
+sharding feature that partitions and spreads the data out across
+various servers. This makes MongoDB an excellent choice for cloud data
+processing.  Its utilities can load high volumes of data at high speed
+which ultimately provides greater flexibility and availability in a
+cloud-based environment [@www-upwork].
+
+The dynamic schema structure within MongoDB allows easy testing of the
+small sprints in the Agile project management life cycles and research
+projects that require frequent changes to the data structure with
+minimal downtime. Contrary to this flexible process, modifying the
+data structure of relational databases can be a very tedious process
 [@www-upwork].
 
-The dynamic schema structure within MongoDB allows easy testing of the 
-small sprints in the Agile project management life cycles and research 
-projects that require frequent changes to the data structure with minimal 
-downtime. Contrary to this flexible process, modifying the data structure 
-of relational databases can be a very tedious process [@www-upwork]. 
 
+#### Collection example
 
-#### Collection example: 
-
-The following collection example for a person named *Corey* includes
-additional information such as age, status, and group [@www-mongocollection].
+The following collection example for a person named *Albert* includes
+additional information such as age, status, and group
+[@www-mongocollection].
 
 ```json
 {
- name: "Corey"
+ name: "Albert"
  age: "21"
  status: "Open"
  group: ["AI" , "Machine Learning"]
 }
 ```
 
-#### Document structure:
+#### Document structure
 
 ```json
 {
@@ -217,41 +268,44 @@ by default.
 
 ### MongoDB Querying
 
-The data retrieval patterns, the frequency of data manipulation 
-statements such as insert, updates, and deletes may demand for 
-the use of indexes or incorporating the sharding feature to improve 
-query performance and efficiency of MongoDB environment [@www-guru99]. 
-One of the significant difference between relational databases and NoSQL 
-databases are joins. In the relational database, one can combine results 
-from two or more tables using a common column, often called as *key*. The 
-native table contains the *primary key* column while the referenced table 
-contains a *foreign key*. This mechanism allows one to make changes in a 
-single row instead of changing all rows in the referenced table. This 
-action is referred to as *normalization*. MongoDB is a document database 
-and mainly contains denormalized data which means the data is repeated 
-instead of indexed over a specific key. If the same data is required in 
-more than one table, it needs to be repeated. This constraint has been 
-eliminated in MongoDB's new version 3.2. The new release introduced a 
-*$lookup* feature which more likely works as a left-outer-join. Lookups 
-are restricted to aggregated functions which means that data usually 
-need some type of filtering and grouping operations to be conducted 
-beforehand. For this reason, joins in MongoDB require more complicated 
-querying compared to the traditional relational database joins. Although 
-at this time, *lookups* are still very far from replacing *joins*, this 
-is a prominent feature that can resolve some of the relational data 
-challenges for MongoDB [@www-sitepoint]. MongoDB queries support regular 
-expressions as well as range asks for specific fields that eliminate the 
-need of returning entire documents [@www-guru99]. MongoDB collections do 
-not enforce document structure like SQL databases which is a compelling 
-feature. However, it is essential to keep in mind the needs of the 
+The data retrieval patterns, the frequency of data manipulation
+statements such as insert, updates, and deletes may demand for the use
+of indexes or incorporating the sharding feature to improve query
+performance and efficiency of MongoDB environment [@www-guru99].  One
+of the significant difference between relational databases and NoSQL
+databases are joins. In the relational database, one can combine
+results from two or more tables using a common column, often called as
+*key*. The native table contains the *primary key* column while the
+referenced table contains a *foreign key*. This mechanism allows one
+to make changes in a single row instead of changing all rows in the
+referenced table. This action is referred to as
+*normalization*. MongoDB is a document database and mainly contains
+denormalized data which means the data is repeated instead of indexed
+over a specific key. If the same data is required in more than one
+table, it needs to be repeated. This constraint has been eliminated in
+MongoDB's new version 3.2. The new release introduced a *$lookup*
+feature which more likely works as a left-outer-join. Lookups are
+restricted to aggregated functions which means that data usually need
+some type of filtering and grouping operations to be conducted
+beforehand. For this reason, joins in MongoDB require more complicated
+querying compared to the traditional relational database
+joins. Although at this time, *lookups* are still very far from
+replacing *joins*, this is a prominent feature that can resolve some
+of the relational data challenges for MongoDB
+[@www-sitepoint]. MongoDB queries support regular expressions as well
+as range asks for specific fields that eliminate the need of returning
+entire documents [@www-guru99]. MongoDB collections do not enforce
+document structure like SQL databases which is a compelling
+feature. However, it is essential to keep in mind the needs of the
 applications[@www-upwork].
 
-#### Mongo Queries examples:
+#### Mongo Queries examples
 
-The queries can be executed from Mongo shell as well as through scripts. 
+The queries can be executed from Mongo shell as well as through
+scripts.
 
-To query the data from a MongoDB collection, one would use MongoDB's *find()*
-method.
+To query the data from a MongoDB collection, one would use MongoDB's
+*find()* method.
 
 ```bash
 > db.COLLECTION_NAME.find()
@@ -315,7 +369,7 @@ the MongoDB process data records and returns computed results. MongoDB
 aggregation framework is modeled on the concept of data pipelines 
 [@www-mongoexportimport].
 
-#### Import/Export functions examples:
+#### Import/Export functions examples
 
 To import JSON documents, one would use the following command:
  
@@ -348,7 +402,7 @@ roles can be predefined or custom. MongoDB can audit activities such
 as DDL, CRUD statements, authentication and authorization operations 
 [@www-mongosecurity]. 
 
-#### Collection based access control example:
+#### Collection based access control example
 
 A user defined role can contain the following privileges [@www-mongosecurity].
 

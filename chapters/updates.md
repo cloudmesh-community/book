@@ -8,6 +8,16 @@ the Github commits at
 
 for a complete list of changes in reverse chronological order
 
+* Feb 12, 2019: The Mongo DB section has been updated (see
+  @sec:mongodb-python). It also has been made more prominent while
+  changing the placement in the Python chapter outline.  A new
+  quickstart section for MongoDB was added (see
+  @sec:mongodb-cloudmesh).
+
+* Feb 12, 2019: The Google products page has been updated but will be
+  moved to the Appandix just as the AWS, Azure and Watson lists (see
+  @sec:google-products)
+
 * Feb 1, 2019: update to python 3.7.2, new pyenv instructions (experimental)
 
 * Jan 25, 2019: A video for doing github pull requests has been
