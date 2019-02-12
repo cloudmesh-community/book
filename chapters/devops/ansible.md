@@ -195,7 +195,7 @@ You probably already get the point. We take the 'tasks' section out of
 the earlier `example.yml` and re-organize them into roles. Each role
 specified in `example.yml` should have its own directory under roles/ and
 the tasks need be done by this role is listed in a file 'tasks/main.yml'
-as above.
+as previous.
 
 ## Using Variables
 

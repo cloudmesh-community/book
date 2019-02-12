@@ -113,8 +113,8 @@ To add a manager to this swarm, run 'docker swarm join-token manager' and follow
 ```
 
 Now that we have the docker swarm manager up we can add worker machines to 
-the swarm. The command that is printed in the output shown above can be used 
-to join workers to the manager. Please note that you need to use the output 
+the swarm. The command that is printed in the output shown previously can be
+used to join workers to the manager. Please note that you need to use the output
 command that is generated when you run `docker swarm init` since the token 
 values will be different. 
 
