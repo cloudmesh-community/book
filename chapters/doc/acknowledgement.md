@@ -27,8 +27,7 @@ acknowledgement as it sounds like the only thing that was provided was
 the help on that you should have done anyways without the help of the
 professor. Ask yourself, if he introduced you to the field, has helped
 you with preparing the text, has given you insights, has corrected
-things in your paper, made suggestions. So instead of the above maybe
-a more general term such as *helped with the paper* would be more
+things in your paper, made suggestions. So instead of the previous acknowledge exmaple maybe a more general term such as *helped with the paper* would be more
 appropriate. If you feel like your professor did not help you, leaving
 it off is more appropriate. In some cases you may wan to invite your
 professor to become a co-author. In some cases you may want to even

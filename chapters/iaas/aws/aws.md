@@ -11,7 +11,7 @@ Amazon in the following document:
 * <https://d0.awsstatic.com/whitepapers/aws-overview.pdf>
 
 We list the product in screenshots from their Product Web page panel
-in Figure below: @fig:aws-products-1, @fig:aws-products-2.
+in Figure: @fig:aws-products-1, @fig:aws-products-2.
 
 ![AWS Products 1](images/aws-products-1.png){#fig:aws-products-1}
 
@@ -93,7 +93,7 @@ gained popularity recently.
 ### Storage
 
 AWS provides many storage services that users can leverage for developing
-applications and solutions. The list below showcases AWS storage
+applications and solutions. The next list showcases AWS storage
 services. Amazon offers the following storage services
 
 * [Amazon Simple Storage Service
@@ -112,7 +112,7 @@ Marketplace](https://aws.amazon.com/marketplace/b/2649337011/ref=mkt_ste_l2_S3CD
 
 
 AWS also provides many data base solutions. AWS has both SQL based
-databases and NoSQL based databases. The list below shows the database
+databases and NoSQL based databases. The next list shows the database
 services that AWS offers. And other database related services
 
 * [Amazon Aurora](https://aws.amazon.com/rds/aurora/?nc2=h_mo)
@@ -147,13 +147,13 @@ In order to create a AWS account you will need the following
 First you need to visit the AWS
 [signup page](https://aws.amazon.com/free/) and click "Create Free
 Account". You will then be asked to provide some basic details
-including your email address as shown in the image below: @fig:aws-signup.
+including your email address as shown in the image: @fig:aws-signup.
 
 ![AWS Signup](images/aws_signup_page.png){#fig:aws-signup}
 
 Next you will be asked to provide further details such as your name,
 address and phone number. After the additional details have been
-provided. AWS will ask for credit/debit card details as shown below: @fig:payment-information.
+provided. AWS will ask for credit/debit card details as shown: @fig:payment-information.
 They require this information to verify your identity and make sure
 they have a method to charge you if needed. However no charges will be
 applied to your credit/debit card unless you use the AWS services and
@@ -168,7 +168,7 @@ you will be able to sign into the console, from the link on the top
 right corner in your account. Once you are in the AWS console the
 services tab in the left top corner will allow you to access all the
 services that are available to you through AWS as shown in the image
-below: @fig:aws-console.
+: @fig:aws-console.
 
 ![AWS Console](images/aws_console.png){#fig:aws-console}
 
@@ -247,7 +247,7 @@ account creation. However it is important to make note of important
 details that are included in the limits. For example for the 750 hours
 of free EC2 usage, you can only use "EC2 Micro" instances, using any
 other instance type for your EC2 machine will not fall under the free
-tier agreement and you will be charged for them, see picture below: @fig:free-tier. To view all the AWS
+tier agreement and you will be charged for them, see picture: @fig:free-tier. To view all the AWS
 free tier details visit [AWS Free Tier](https://aws.amazon.com/free/)
 
 ![Free tier](images/freetier.png){#fig:free-tier}
@@ -294,7 +294,7 @@ To go to the EC2 services you can click on the services link on the
 top left corner in the console and then click on EC2 which is listed
 under "Compute". Then you will see a blue button labeled "Launch
 instance". Click on the button and the console will take you to the
-page shown below: @fig:launch-instance. Notice that the check box for "Free tier only" is
+page shown next: @fig:launch-instance. Notice that the check box for "Free tier only" is
 clicked to make sure the instance type we choose is eligible for the
 free tier hours. The instance type you select defines the properties
 of the virtual machine you are staring such as RAM, Storage,
@@ -308,7 +308,7 @@ system. press the blue select button to do so.
 
 Once you select the OS type you will be asked to select the instance
 type. You can notice that only the "t2.micro" is marked as free tier
-eligible as shown in the image below: @fig:instance-type. Now that you have selected all
+eligible as shown in the image: @fig:instance-type. Now that you have selected all
 the basic details press the "Review and Launch" button located in the
 button right corner. This will give you a summary of your current
 selections.
@@ -336,7 +336,7 @@ Instance" button will activate. Press this button to start the VM.
 
 After starting the instance go back to the EC2 dashboard ( Services ->
 EC2). Now the dashboard will show the number of running instance as
-shown in the image below: @fig:running-instance1. If you do not see is initially, refresh the
+shown in the image: @fig:running-instance1. If you do not see is initially, refresh the
 page after a little while, starting the VM may take a little time so
 the dashboard will not be updated until the VM starts.
 
@@ -369,7 +369,7 @@ terminate the VM.
 ## Access from the Command Line
 
 AWS also provides an command line interface that can be used to manage
-all the AWS services through simple commands. below are two example
+all the AWS services through simple commands. Next are two example
 commands.
 
 	aws s3 <Command> [<Arg> ...]
