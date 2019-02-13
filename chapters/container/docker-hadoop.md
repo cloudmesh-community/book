@@ -307,7 +307,7 @@ provide a new directory name unless you delete it.
 
 The sample output messages look like the following which is almost
 identical compared to the previous run except that this time the number
-of input files to process is 10, see the line two below:
+of input files to process is 10, see the line two next:
 
     18/02/28 23:17:18 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
     18/02/28 23:17:18 INFO input.FileInputFormat: Total input paths to process: 10
