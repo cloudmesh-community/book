@@ -27,7 +27,7 @@ complete its functionality. It is an Open Source project which is licenced under
 Twister2 provides users with 3 levels on API's which can be used to write applications. The 3 API levels are shown
 in Figure @fig:twister2-apis. 
 
-![Twister2 API's](images/twister2-apis.png){#fig:twister2-apis}
+![Twister2 API's](images/twister2-apis.jpg){#fig:twister2-apis}
 
 As shown in @fig:twister2-apis each API level has different levels of abstraction and programming complexities. TSet API
 is the most high level in Twister2 which in someways is simlar to the RDD API in Apache Spark or DataSet API in Apache Flink.
@@ -149,7 +149,11 @@ popular frameworks such Apache Flink, Apache Spark and Apache Strom in many area
 shows a comparision between Twister2, MPI and Apache Spark versions of KMeans algorithm, please note that the graph is in
 logarithmic scale
 
-![Kmeans Performance Comparison[@twister-kmeans-perf]](images/kmeans_comparison.png){#fig:twister-kmeans-perf}
+![Kmeans Performance Comparison[@twister-kmeans-perf]](images/kmeans_comparison.jpg){#fig:twister-kmeans-perf}
+
+Notation :
+* **DFW** refers to Twister2
+* **BSP** refers to MPI (OpenMPI)
 
 This shows that Twister2 performs around ~10x faster than Apache Spark for KMeans. And that it is on par with implementations
 done using OpenMPI which is a widely used HPC framework. 
