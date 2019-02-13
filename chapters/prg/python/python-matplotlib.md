@@ -84,7 +84,7 @@ plt.title("A clever Title for your Figure")
 Along with axis labels and a title another useful figure feature may be
 a legend. In order to create a legend you must first designate a label
 for the line, this label will be what shows up in the legend. The label
-is defined in the initial plt.plot(x,y) instance, the next one is an example.
+is defined in the initial plt.plot(x,y) instance, next is an example.
 
 ```python
 plt.plot(x,cos, label="cosine")
