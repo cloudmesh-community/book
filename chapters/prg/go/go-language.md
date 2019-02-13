@@ -1,4 +1,4 @@
-# Go Language {#s-go-language}
+# Go Language {#sec:go-language}
 
 Go is a computer language developed by Google with the goal to "build
 simple, reliable, and efficient software".  The language is open

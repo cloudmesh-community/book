@@ -1,14 +1,16 @@
-# Open API :o: :question:
+# Open API :o: :question: {#sec:go-openapi}
 
-:warning: We have a large section previously on openapi,
+We have a large section previously on openapi,
 what needs to be done here is to showcase how to generate go
-from swagger codegen or other tool and use it
+from swagger codegen or other tool and use it. Please see @sec:swagger
 
 
 ## serve specification UI
 
+
 Most basic use-case: serve a UI for your spec:
-```go
+
+```bash
 swagger serve https://raw.githubusercontent.com/swagger-api/swagger-spec/master/examples/v2.0/json/petstore-expanded.json
 ```
 
@@ -61,7 +63,7 @@ swagger generate model --spec={spec}
 * [Senya Editor](https://senya.io/) - Design API specifications fast and effectively​ in your favorite JetBrains IDE.
 
 
-## Create an Echo service using Swagger and Go
+# Create an Echo service using Swagger and Go
 
 In this tutorial, we will create a micro service using Swagger and Go. This service does nothing but echos the message sent from users.
 
