@@ -65,7 +65,7 @@ functions. The limits and restrictions discussed in the section are
 applicable to most FaaS frameworks but the exact values may differ
 based on the FaaS vendor. However the reason for most of the
 limitations are to maintain performance requirements. We will discuss
-several major limits below. For a complete list of limits in AWS
+several major limits next. For a complete list of limits in AWS
 Lambda please refer to the limits documentation
 [AWS Lambda Function Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
 
