@@ -133,7 +133,7 @@ HBase and connecting to it.
 Draft: MongoDB
 --------------
 
-MongoDB belongs to the document model described above. Within a typical
+MongoDB belongs to the previously descrirbed document model. Within a typical
 MongoDB server there are often multiple databases. Each database is a
 physical container of collections with its own set of files within the
 file system. A collection is a set of MongoDB documents similar to a
