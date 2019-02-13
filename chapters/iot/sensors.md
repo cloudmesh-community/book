@@ -123,7 +123,7 @@ Prerequisites:
  * 24 male to male jumper wires
  * 12 male to female jumper wires
  
-If using the LED's you will want the additional components listed below:
+If using the LED's you will want the additional components listed next:
 
   * Three 4.7k ohm resistors
   * Three LED's
