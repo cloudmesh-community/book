@@ -159,7 +159,7 @@ will need to go to
 
 * [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/)
 
-You will see an image such as below: @fig:registration.
+You will see an image such as: @fig:registration.
 
 ![Registration](images/reg.png){#fig:registration}
 
