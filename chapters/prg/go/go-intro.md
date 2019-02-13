@@ -1,4 +1,4 @@
-# Introduction to Go for Cloud Computing :o: {#s-go-intro}
+# Introduction to Go for Cloud Computing {#sec:go-intro}
 
 ---
 
@@ -6,10 +6,10 @@
 
 * Learn quickly Go under the assumption you know a programming language
 * Work with Go modules modules
-* Contuct some Go examples
+* Conduct some Go examples
 * Learn about REST services in Go
 * Learn how access virtual machines from Go
-* Learn hos to interface with kubernetes in Go
+* Learn how to interface with kubernetes in Go
 
 ![Go Logo](images/Go-Logo-Aqua.svg)
 
@@ -30,9 +30,8 @@ been used in the early days of programming for example as part of CSP
 [@csp] and OCCAM [@tutorial-occam] [@intro-occam].
 
 In contrast to languages such as Python, Go is designed to compiled to
-machine code. However garbage
-collection and run-time reflection are build in, exposing
-this functionality similar to llangages such as python. Hence, it is designed to
+machine code. However garbage collection and run-time reflection are build in, exposing
+this functionality similar to languages such as python. Hence, it is designed to
 provide the programmer a fast, statically typed, compiled language
 that feels like a dynamically typed, interpreted language.
 
@@ -52,24 +51,24 @@ when looking at google trends in @fig:go-trend.
 
 The material presented in this chapter introduces the reader first to
 the basic concepts and features of the Go language and system.  This
-includes instalation (see Section ?)  and compiling (see Section ?), have a basic understanding of the
-programming language (see Section ?), use standard library and become
-familiar with package management (see Section ?). Next we will focus
+includes installation (see @sec:go-installation)  and compiling (see @sec:go-language), have a basic understanding of the
+programming language (see @sec:go-language), use standard library and become
+familiar with package management (see @sec:go-libraries). Next we will focus
 on aspects of the Go language that are especially useful for Cloud
 computing. This includes the review of how to develop REST services
-with various frameworks such as Gorilla (see Section ?) and OpenAPI
-(see Section ?). You will than be introduced on how to access virtual
-machines (see Section ?) and containers (see Section ?).
+with various frameworks such as Gorilla (see ) and OpenAPI
+(see @sec:go-openapi). You will than be introduced on how to access virtual
+machines (see @sec:go-cloud) and containers (see @sec:go-cloud).
 
 In order to to use Go we recommend that you have a computer fulfilling
 the following requirements:
 
 - Have the most up to date version of Go installed
-- Be familiar with the Linux command line as showcased in Section ?
+- Be familiar with the Linux command line as showcased in @sec:linux
 - Familiarity with a text editor such as emacs, which we prefer as it
   supports nicely not only Go but any other language or document
   format we typically use in our activities. Alternatives are
-  discussed in Section ?
+  discussed in @sec:notation.
 
 ## References :o:
 
@@ -112,4 +111,3 @@ will add them and mark them appropriately.
 *
   [Go Language Tutorials](https://www.cybrhome.com/topic/go-language-tutorials) - List of Go sites, blogs and tutorials for learning Go language [?].
 * [Golang Development Video Course](https://www.youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY) - A growing list of videos focused purely on Go development [?].
-
