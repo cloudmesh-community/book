@@ -1,4 +1,4 @@
-# Go Cloud :o: :question: {#s-go-cloud}
+# Go Cloud :o: :question: {#sec:go-cloud}
 
 ## Golang Openstack Client
 
@@ -24,7 +24,7 @@ Portable Cloud Programming with Go Cloud:
 * <https://blog.golang.org/go-cloud>
 
 
-## OpenStack from Go 
+## OpenStack from Go
 
 There are multiple API interfaces that allow direct access to
 elementary functionality to controll for example virtual machines in
@@ -129,7 +129,7 @@ call:
 ```go
 server, err := servers.Get(client, "{serverId}").Extract()
 ```
-  
+
 If we need just a subset of the information, we can get an
 intermediate result with just the get method. Than we can obtain
 specific informatiion from the result as needed.
@@ -168,7 +168,7 @@ simpley use the `AllPages()` method as follows:
 allPages, err := servers.List(client, nil).AllPages()
 allServers, err := servers.ExtractServers(allPages)
 ```
-    
+
 Additional methods and resources can be found at
 
 * <https://github.com/gophercloud/gophercloud/blob/master/doc.go>
