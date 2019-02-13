@@ -11,7 +11,7 @@ pip install matplotlib
 
 We will start by plotting a simple line graph using built in numpy
 functions for sine and cosine. This first step is to import the proper
-libraries shown below.
+libraries shown next.
 
 ```python
 import numpy as np
@@ -73,7 +73,7 @@ plt.plot(x,sin)
 Invoking plt.show() now will show a figure with both sine and cosine
 lines displayed. Now that we have a figure generated it would be useful
 to label the x and y axis and provide a title. This is done by the
-following three commands below:
+following three commands:
 
 ```python
 plt.xlabel("X - label (units)")
@@ -84,7 +84,7 @@ plt.title("A clever Title for your Figure")
 Along with axis labels and a title another useful figure feature may be
 a legend. In order to create a legend you must first designate a label
 for the line, this label will be what shows up in the legend. The label
-is defined in the initial plt.plot(x,y) instance, below is an example.
+is defined in the initial plt.plot(x,y) instance, the next one is an example.
 
 ```python
 plt.plot(x,cos, label="cosine")
@@ -151,7 +151,7 @@ will see a list of available styles.
 print(plt.style.available)
 ```
 
-An example of using a predefined style is shown below.
+An example of using a predefined style is shown next.
 
 ```python
 plt.style.use('seaborn')
