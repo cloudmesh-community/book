@@ -19,6 +19,32 @@ easiest way to install scikit-learn is using pip
     $ pip install scipy -U
     $ pip install -U scikit-learn
 
+## Supervised Learning
+
+Supervised Learning is used in machine learning when we already know a set of output predictions based on input characterstics and based on that we need to predict the target for a new input. Training data is used to train the model which then can be used to predict the output from a bounded set.
+
+Problems can be of two types
+
+ 1. Classification : Training data belongs to three or four classes/catagories and based on the label we want to predict 
+    the  class/category for the unlabeled data.
+ 2. Regression : Training data consists of vectors without any corresponding target values. Clustering can be used for 
+    these  type of datasets to determine discover groups of similar examples. Another way is density 
+    estimation  which determine the distribution of data within the input space. Histogram is the most basic form.
+
+## Unsupervised Learning
+
+Unspervised Learning is used in machine learning when we have the training set available but without any corresponding target. The outcome of the problesm is to discover groups within the provided input. It can be done in many ways.
+
+Few of them are listed here
+
+ 1. Clustering : Discover groups of similar characterstics.
+ 2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
+    deminsional  space to two or three dimension.
+    
+## K-means Algorithm
+
+In this section we demonstrate how simple it is to use k-means in scikit learn.
+
 Import
 ------
 
