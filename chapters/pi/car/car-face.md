@@ -292,7 +292,7 @@ first two steps if Python is already installed on Raspberry Pi.
 	pi$ sudo pip install picamera
 	pi$ sudo pip install rpio
 
-Once the libraries are installed, follow below steps to check if camera
+Once the libraries are installed, follow the next steps to check if camera
 is installed in Raspberry Pi.
 
 	pi$ sudo raspi-config
@@ -477,7 +477,7 @@ provide as Human Face Detected from the capturing video.
     ## Create the haar cascade
     faceCascade = cv2.CascadeClassifier(cascPath)
 
-Camera settings need to be updated in the code as per below suggestions.
+Camera settings need to be updated in the code as per suggestions next.
 The captured image is to be sent to Kairos for face recognition and so
 we will set the resolution to a lower level. This will help to send the
 image faster over the network without any delay.
@@ -489,7 +489,7 @@ image faster over the network without any delay.
     camera.framerate = 32
     rawCapture = PiRGBArray(camera, size=(160, 120))
 
-Below code represents PiCamera continuously monitor for human faces
+The code shown next represents PiCamera continuously monitor for human faces
 detected from the grayscale video capture. Once the human face is
 detected, espeak function in Raspberry Pi will send the voice to a
 connected speaker and will output as "Human face detected". This

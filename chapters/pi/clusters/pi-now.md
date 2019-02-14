@@ -105,7 +105,7 @@ If you choose not to use `cm-burn` or to use our scripts we will provide the
 manual setup steps for you to complete. In most cases the manual steps are the
 exact same as the operations the scripts perform, so you can also check the
 manual steps if you are curious about what the scripts are doing. Before
-beginning the manual steps below we assume you are able to burn an image to an
+beginning the manual steps shown next, we assume you are able to burn an image to an
 SD card, to login to the Pi, and to complete the locale and hostname setup at a
 minimum. If you have not completed these steps, please see the following
 sections for details:
