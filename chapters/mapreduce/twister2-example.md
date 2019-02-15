@@ -1,8 +1,4 @@
-# Twister2 Examples :o:
-
-:o: TODO TA: complete twister 2
-In this section we will be discussing some examples from Twister2
-Framework.
+# Twister2 Examples
 
 Introduction to Twister2
 ------------------------
