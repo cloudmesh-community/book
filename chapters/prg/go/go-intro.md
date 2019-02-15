@@ -70,44 +70,27 @@ the following requirements:
   format we typically use in our activities. Alternatives are
   discussed in @sec:notation.
 
-## References :o:
+## References
 
 The following references may be useful for you to find out more about
-go. We have not gone to the list in detail, but want to make you aare
+go. We have not gone to the list in detail, but want to make you are
 of some of them that we found through simple searches in Google
-search. IF you find others or you have a favourite, let us know and we
+search. If you find others or you have a favorite, let us know and we
 will add them and mark them appropriately.
 
----
-
-:construction: TODO: the [?] are currently been worked on see
-  [github](https://github.com/cloudmesh-community/book/issues/68)
-
----
-
 * [golang.org](http://golang.org/doc/#learning) [@www-go-lang].
-* [Go cheat sheet](https://github.com/a8m/go-lang-cheat-sheet) [?].
+* [Go cheat sheet](https://github.com/a8m/go-lang-cheat-sheet) [@go-lang-cheat-sheet].
 * [The Little Go Book](http://openmymind.net/The-Little-Go-Book/) [@go-seguin].
 * [Learn Go in an Hour - Video](https://www.youtube.com/watch?v=CF9S4QZuV30) _2015-02-15_
-* [Learning to Program in Go](https://www.youtube.com/playlist?list=PLei96ZX_m9sVSEXWwZi8uwd2vqCpEm4m6), a multi-part video training class [?].
-* [Go By Example](http://gobyexample.com/) provides a series of
-  annotated code snippets [?].
-* [Learn Go in Y minutes](http://learnxinyminutes.com/docs/go/) is a
-  top-to-bottom walk-through of the language [?].
-* [Workshop-Go](https://github.com/sendwithus/workshop-go) - Startup
-  Slam Go Workshop - examples and slides [?].
-* [Go Fragments](http://www.gofragments.net/) - A collection of
-    annotated Go code examples [?].
-* [50 Shades of Go: Traps, Gotchas, Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html) [?]
-* [Golang Tutorials](http://golangtutorials.blogspot.com/2011/05/table-of-contents.html) - A free online class [?].
-* [The Go Bridge Foundry](https://github.com/gobridge) [?] - A member of
-  the [Bridge Foundry](http://bridgefoundry.org/) [?] family, offering a
-  complete set of free Go training materials with the goal of
-  bringing Go to under-served communities.
-* [Golangbot](https://golangbot.com/learn-golang-series/) - Tutorials
-  to get started with programming in Go [?].
-* [Algorithms to Go](http://yourbasic.org/) - Texts about algorithms
-  and Go, with plenty of code examples [@www-go-yourbasic].
-*
-  [Go Language Tutorials](https://www.cybrhome.com/topic/go-language-tutorials) - List of Go sites, blogs and tutorials for learning Go language [?].
-* [Golang Development Video Course](https://www.youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY) - A growing list of videos focused purely on Go development [?].
+* [Learning to Program in Go](https://www.youtube.com/playlist?list=PLei96ZX_m9sVSEXWwZi8uwd2vqCpEm4m6), a multi-part video training class.
+* [Go By Example](http://gobyexample.com/) provides a series of annotated code snippets [@go-McGranaghan].
+* [Learn Go in Y minutes](http://learnxinyminutes.com/docs/go/) is a top-to-bottom walk-through of the language [@learn-go-in-y-minutes].
+* [Workshop-Go](https://github.com/sendwithus/workshop-go) - Startup Slam Go Workshop - examples and slides [@workshop-go].
+* [Go Fragments](http://www.gofragments.net/) - A collection of annotated Go code examples [@go-fragments].
+* [50 Shades of Go: Traps, Gotchas, Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html) [@50-shades-go]
+* [Golang Tutorials](http://golangtutorials.blogspot.com/2011/05/table-of-contents.html) - A free online class [@golang-tutorials].
+* [The Go Bridge Foundry](https://github.com/gobridge) [@go-bridgefoundry] - A member of the [Bridge Foundry](http://bridgefoundry.org/) [@bridgefoundry] family, offering a complete set of free Go training materials with the goal of bringing Go to under-served communities.
+* [Golangbot](https://golangbot.com/learn-golang-series/) - Tutorials to get started with programming in Go [@go-langbot].
+* [Algorithms to Go](http://yourbasic.org/) - Texts about algorithms and Go, with plenty of code examples [@www-go-yourbasic].
+* [Go Language Tutorials](https://www.cybrhome.com/topic/go-language-tutorials) - List of Go sites, blogs and tutorials for learning Go language [@go-lang-tutorials].
+* [Golang Development Video Course](https://www.youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY) - A growing list of videos focused purely on Go development _2019-02-10_.
