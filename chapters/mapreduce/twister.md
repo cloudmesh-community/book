@@ -1,4 +1,4 @@
-# Twister2 :o:
+# Twister2
 
 ## Introduction
 
