@@ -158,11 +158,14 @@ Notation :
 This shows that Twister2 performs around ~10x faster than Apache Spark for KMeans. And that it is on par with implementations
 done using OpenMPI which is a widely used HPC framework. 
 
-Resources
----------
+### Resources
 
 -   <http://www.iterativemapreduce.org/>
 
 -   <http://www.cs.allegheny.edu/sites/amohan/teaching/CMPSC441/paper10.pdf>
 
--   <https://dl.acm.org/citation.cfm?id=1851593>
+-   <https://twister2.gitbook.io/twister2/>
+
+-   <http://dsc.soic.indiana.edu/publications/Twister2.pdf>
+
+-   <https://www.computer.org/csdl/proceedings/cloud/2018/7235/00/723501a383-abs.html>
