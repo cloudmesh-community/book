@@ -200,10 +200,54 @@ parameter groups.(see @fig:aws-aurora-advconfig-2)
 
 ![AWS Aurora DB](images/AuroraDB-7.PNG){#fig:aws-aurora-advconfig-3}
 
-Enryption : Encryption on the database can be enabled only at the time of 
+##### Enryption
+
+Encryption on the database can be enabled only at the time of 
 DB creation.Once enabled the database, associated replicas and snapshots are all 
 encrypted. One can either use the default KMS encryption keys provided by AWS or 
 use their own encrption keys.
 
-Failure Over : This defines the the failure over priority order with which a read 
+##### Failover 
+
+This defines the the failure over priority order with which a read 
 replica can be promoted as the primary node incase of a failure on the current writer. 
+
+#### Step 8 : Configure Advance Settings - Backtrack and Monitoring
+
+(see @fig:aws-aurora-advconfig-4)
+
+![AWS Aurora DB](images/AuroraDB-8.PNG){#fig:aws-aurora-advconfig-4}
+
+##### Backtrack
+
+Enabling this feature allows us to define a backtrack window in hours upto which one can
+do a point in time recovery in case of any failure.
+Number of hours of backtrack define the additional charges that we levied for the database.
+
+##### Enhanced Monitoring 
+
+Enabling enhanced monioring allows to define the granularity / time frequency at which AWS
+will monitoring the databse for different mertics like performance, active sessions, CPU 
+utilization, storage used etc for reporting.
+
+#### Step 9 : Configure Advance Settings - Log Exports and Maintenance
+
+(see @fig:aws-aurora-advconfig-5)
+
+![AWS Aurora DB](images/AuroraDB-8.PNG){#fig:aws-aurora-advconfig-5}
+
+##### Log Exports
+
+This section helps user to define which types of logs (Audit, Error, General, Slow Query)
+AWS will export. The selected logs options are exported to AWS S3 buckets and can retrieved 
+at a later point of time analysis.
+
+##### Maintenance 
+
+This section allows to enable / disable auto minor version upgrades tothe database. No need to 
+worry updating minor software packages. One can also define a preferred window for upgrades.
+
+##### Deletion protection
+
+Selecting this option helps prevent againsts accidental deletion. This option needs to be disabled
+first before the database can be deleted
