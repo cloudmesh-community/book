@@ -1,4 +1,4 @@
-# Amazon Aurora DB {#s-Amazon-aurora-db}
+# Amazon Aurora DB
 
 ---
 
@@ -8,6 +8,7 @@
 * Features and Benefits
 * Pricing
 * How to provision Aurora database
+* How to connect to Aurora Database
 
 ---
 
@@ -107,12 +108,15 @@ For detailed pricing refer AWS Aurora Pricing documentation
 Assumption : User must have an AWS account.
 
 ### Step 1 : Login to the AWS console.
-Select RDS from the Database section or alternatively, you can type 
-RDS in the search bar to look up. (see @fig:aws-aurora-console)
+
+Console URL : [AWS Console URL](https://aws.amazon.com/console/).
+On successfull login, select RDS from the Database section or alternatively, 
+you can type RDS in the search bar to look up. (see @fig:aws-aurora-console)
 
 ![AWS Aurora DB](images/AuroraDB-1.PNG){#fig:aws-aurora-console}
 
 ### Step 2 : Click on Create Database
+
 On the RDS home page, one can either click on the 
 "Create Database" button in the Amazon Aurora section directly or 
 clcik on the "Create Database" button in the Create Database section
@@ -234,7 +238,7 @@ utilization, storage used etc for reporting.
 
 (see @fig:aws-aurora-advconfig-5)
 
-![AWS Aurora DB](images/AuroraDB-8.PNG){#fig:aws-aurora-advconfig-5}
+![AWS Aurora DB](images/AuroraDB-9.PNG){#fig:aws-aurora-advconfig-5}
 
 ##### Log Exports
 
@@ -250,4 +254,94 @@ worry updating minor software packages. One can also define a preferred window f
 ##### Deletion protection
 
 Selecting this option helps prevent againsts accidental deletion. This option needs to be disabled
-first before the database can be deleted
+first before the database can be deleted.
+
+#### Step 10 : Submit Advance Settings Page
+
+Click on submit once the advance conifg page is completed.
+To view the the instance creation status, click on View DB Instance button.
+(see @fig:aws-aurora-advconfig-submit)
+
+![AWS Aurora DB](images/AuroraDB-10.PNG){#fig:aws-aurora-advconfig-submit}
+
+### Step 11 : Wait for DB creation to complete
+
+Search using the db identifier entered earlier.
+The writer and reader db nodes will be created under a single cluster.
+It takes around 20-25 minutes for the servers to be available for use.
+(see @fig:aws-aurora-submit)
+
+![AWS Aurora DB](images/AuroraDB-11.PNG){#fig:aws-aurora-submit}
+
+## How to retrieve Aurora database connection details
+
+The provisioned Aurora Database will give a writer and reader node.
+Writer node can be used to insert / update / delete data into the database.
+Reader node(s) replicate the data from the writer with a very small latency (in microseconds)
+and can be used to serve as the standalone node to run parallel queries for analysis 
+without putting any addtional load on the primary writer node.
+
+The endpoint url, port needed to connect to the database can be retrieved by checking
+the Connectivity and Security tab.(see @fig:aws-aurora-connection)
+
+![AWS Aurora DB](images/AuroraDB-13.PNG){#fig:aws-aurora-connection}
+
+## Other deatils available in Aurora DB Console
+
+###  Monitoring Details
+
+![AWS Aurora DB](images/AuroraDB-14.PNG){#fig:aws-aurora-connection}
+
+###  Logs and Events Details
+
+![AWS Aurora DB](images/AuroraDB-15.PNG)
+
+###  Configruation Details
+
+![AWS Aurora DB](images/AuroraDB-12.PNG)
+
+###  Tag Details
+
+![AWS Aurora DB](images/AuroraDB-16.PNG)
+
+## Updates to Aurora DB
+
+![AWS Aurora DB](images/AuroraDB-17.PNG)
+
+### Modify
+
+This action allows to update the below attributes of Aurora DB:
+* DB Instance Class
+* DB Master Password
+* Security Groups and Certificates
+* Failover priority
+* DB Port
+* Backup retention period and backup window
+* Backtrack Window
+* Monitoring Options
+* Log Export Options
+* Maintenance Window
+
+### Reboot
+
+This action will kill all active sessions on the database and restart the servers.
+All uncommitted transaction will be lost
+
+### Delete
+
+This action will delete the database. One can optionally take a snapshot of the data 
+as a back pn AWS S3. 
+
+### Failover
+
+This action will make the next reader node as per the failover priority as the primary
+writer node.
+
+### Take Snapshot
+
+This action allows to take a back up of the database and store to S3 use for restore 
+for point in time recovery.
+
+## References
+
+https://aws.amazon.com/rds/aurora/
