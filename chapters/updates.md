@@ -8,6 +8,9 @@ the Github commits at
 
 for a complete list of changes in reverse chronological order
 
+* Feb 16, 2019: Tips for verification of an OpenAPI were added (see
+  @sec:swagger-verify).
+
 * Feb 12, 2019: The Mongo DB section has been updated (see
   @sec:mongodb-python). It also has been made more prominent while
   changing the placement in the Python chapter outline.  A new
