@@ -42,7 +42,7 @@ server node and client node.
 Since complex appliances in Chameleon are currently implemented using
 the [OpenStack Heat](https://wiki.openstack.org/wiki/Heat) orchestration
 service, we will be using OpenStack terminology and features to work
-with them. The templates described above are YAML files using the [Heat
+with them. The templates described previously are YAML files using the [Heat
 Orchestration Template (HOT)
 format](http://docs.openstack.org/developer/heat/template_guide/hot_spec.html)
 (Heat also supports the AWS CloudFormation template format, but this is
@@ -154,7 +154,7 @@ loading your key to your SSH agent with `ssh-add <path-to-your-key>`).
 
 You can find out the information about the IPs and other things if you
 click the "Overview" tab and look in the "Outputs" section. Under the
-"Resources" tab you will see the resources described above (the server,
+"Resources" tab you will see the resources described previously (the server,
 clients, server's public/floating IP, and its the association) and
 information about them. In the "Events" tab you will see information
 about the history of the deployment so far. In Template you will see the

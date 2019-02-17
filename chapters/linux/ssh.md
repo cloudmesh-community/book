@@ -542,7 +542,7 @@ and restart SSH
 
 	$ sudo service ssh restart
 	
-After above steps you should be able to connect to the server
+After completing the previous steps you should be able to connect to the server
 remotely, even from your local machine. `ssh -R` first creates an SSH
 tunnel that forwards traffic from the server on port 9000 to your
 local machine on port 3000.

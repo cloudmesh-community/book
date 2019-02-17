@@ -80,7 +80,7 @@ to organize layers of big data software stacks (BDSS). Ansible provides
 abstractions by Playbook Roles and reusability by Include statements. We
 define X application in X Ansible Role, for example, and use include
 statements to combine with other applications e.g. Y or Z. The layers
-exist in sub directories (see below) to add modularity to your Ansible
+exist in sub directories (see next) to add modularity to your Ansible
 deployment. For example, there are five roles used in this example that
 are Apache Mesos in a scheduler layer, Apache Spark in a processing
 layer, a OpenCV library in an application layer, INRIA Person Dataset in
@@ -225,7 +225,7 @@ Check accessibility by ansible ping like:
     !ansible -m ping -i inventory.txt all
 
 Make sure that you have a correct ssh key in your account otherwise you
-may encounter 'FAILURE' in the ping test above.
+may encounter 'FAILURE' in the previous ping test.
 
 #### Ansible Playbook
 
@@ -321,7 +321,7 @@ in this example by opencv functions. You can try other images with
 different colors to detect the different shape of objects using
 findContours and inRange from opencv.
 
-For more information, see the useful links below.
+For more information, see the next useful links.
 
 -   contours features:
     <http://docs.opencv.org/3.1.0/dd/d49/tutorial/_py/_contour/_features.html>
@@ -528,7 +528,7 @@ The list of image files is given to parallelize.
 
 #### Map Function (apply\_batch)
 
-The 'apply\_batch' function that we created above is given to map
+The 'apply\_batch' function that we created previously is given to map
 function to process in a spark cluster.
 
     pdc = pd.map(apply_batch)

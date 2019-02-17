@@ -60,7 +60,7 @@ $ wsk action invoke HelloAction --result
 
 The `wsk` command is what is known as OpenWhisk CLI, which we will
 show how to install in the next sections.  Note that OpenWhisk's API
-is RESTful and fully HTTP based. In other words, the above-mentioned
+is RESTful and fully HTTP based. In other words, the previously-mentioned
 `wsk action` command  is basically a HTTP request equivalent to the
 following:
 
@@ -105,7 +105,7 @@ the record for the action `HelloAction` is load from `whisks`
 database. This record contains the code, the parameters consist of
 default parameters merged with user parameters, as well as the
 resource limits, e.g. maximum memory. The `HelloAction` record in
-`whisk` contains its code (listed above) and no parameters as the code
+`whisk` contains its code (listed previously) and no parameters as the code
 does not get any parameters.
 
 ### Load Balancer
@@ -144,7 +144,7 @@ container is spawned and the code as well as the parameters are passed
 to it. As soon as the result is obtained, the container is terminated.
 
 The ` Action` example is a node.js action and therefore the invoker
-will start a node.js container, inject our above-mentioned code to it,
+will start a node.js container, inject our previsouly-mentioned code to it,
 runs the code and gets the results, save the logs and terminates the
 node.js container.
 
@@ -215,7 +215,7 @@ containers:
 * 8080, 443, 9000, 9090 for apigateway
 * 8001 Kafka-UI
 
-In case you have services running on any of the ports above, you can
+In case you have services running on any of the previous ports, you can
 either stop the local services that are using these ports or
 alternatively you can modify the `docker-compose.yml` and change the
 source port number in the port number mapping. The latter option is,
@@ -296,7 +296,7 @@ command: /bin/sh -c "exec /init.sh --id 0 >> /home/owuser/controller-local_logs.
 OpenWhisk provides a command line tool called
 [openwhisk-cli](https://github.com/apache/incubator-openwhisk-cli)
 which is used for controlling the platform. As part of the `make
-quick-start` command that we used above for starting the platform, the
+quick-start` command that we previously used for starting the platform, the
 account credentials will automatically be written into the
 configuration of the CLI. You can either install the CLI directly from
 the repository or install it using `linuxbrew`. Alternatively, use the
@@ -414,7 +414,7 @@ activations
 10c2cddb0d2c4c1f82cddb0d2c1c1feb hello
 ```
 
-The result of the command above is showing that the `hello` action has
+The result of the previous command is showing that the `hello` action has
 been invoked twice and the `greeter` action was invoked once. You can
 get more information about each of the activation using the `wsk -i
 activation get [ACTIVATION_ID]`:

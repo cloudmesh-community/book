@@ -98,7 +98,7 @@ You are required to turn in the following items in a zip file
 -   The 4 output FASTA files -- celllines_1.fa to celllines_4.fa.
 
 Points will be reduced (maximum 0.5 points) if the filename or directory
-structure are different from instructed above.
+structure are different from previous instruction.
 
 The point total for this project is 3, where the distribution is as
 follows:

@@ -59,7 +59,7 @@ You can find the key details from IAM console on AWS.
 	
 ## BOTO configuration
 
-BOTO can be configured in two ways, either by using the aws configure command if you have AWS Command line interface installed or simply by manually creating and editing the `~/.aws/credentials` file to include below parameters.
+BOTO can be configured in two ways, either by using the aws configure command if you have AWS Command line interface installed or simply by manually creating and editing the `~/.aws/credentials` file to include important parameters highlighted next.
 
 ```python
 [default]

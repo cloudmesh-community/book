@@ -152,7 +152,7 @@ desk](https://www.chameleoncloud.org/user/help/).
 
 While the possibility that the system is being taking over by nanites
 should not be discounted too easily, it is always prudent to first check
-for the following issues:
+for the following three settings:
 
 -   Do you have a floating IP associated with your instance? By default,
     instances do not have publicly-accessible IP addresses assigned.
@@ -170,4 +170,4 @@ for the following issues:
 
 If none of these solve your problem, please [open a ticket with our help
 desk](https://www.chameleoncloud.org/user/help/), and send us the
-results of the above (and any evidence of nanites you find as well).
+results of the three previous setting (and any evidence of nanites you find as well).

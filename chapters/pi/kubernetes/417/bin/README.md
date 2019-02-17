@@ -34,7 +34,7 @@ This shell will reboot the node per recommendation of the references.
 sh docker_setup.sh
 ``
 
-The above shell scripts are common in both worker and head.
+The previous shell scripts are common in both worker and head.
 
 # kube_head_setup.sh
 

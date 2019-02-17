@@ -371,9 +371,9 @@ white_df.describe()
 
 
 Sometimes it is easier to understand the data visually. A histogram of
-the white wine quality *data citric* acid samples is shown below. You
+the white wine quality *data citric* acid samples is shown next. You
 can of course visualize other columns' data or other datasets. Just
-replace the DataFrame and column name below. See @fig:random-forest_11_0
+replace the DataFrame and column name (see @fig:random-forest_11_0).
 
 
 ```python
