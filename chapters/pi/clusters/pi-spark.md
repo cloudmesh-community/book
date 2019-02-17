@@ -139,7 +139,7 @@ pi-slave0
 pi-slave1
 ```
 
-Note: The above mentioned slaves are of the same names of the
+Note: The previously mentioned slaves are of the same names of the
 hostnames specified in the /etc/hosts file in the prerequisites
 section.
 

@@ -11,7 +11,7 @@ Its interfaces are documented nicely at
 
 * <https://developer.github.com/v3/>
 
-We see that Github offers many resources that can be accessed by te users which includes
+We see that Github offers many resources that can be accessed by the users which includes
 
 * Activities
 * Checks
@@ -56,14 +56,14 @@ We see the following functionality:
 * [Custom media types](https://developer.github.com/v3/issues/#custom-media-types)
 
 As we have learned in our REST section we need to issue GET requests
-to obtain indformation about the issues. Soch as
+to obtain information about the issues. Such as
 
 ```bash
 GET /issues
 GET /user/issues
 ```
 
-As response we obtain a a json object with the information we need to
+As response we obtain a json object with the information we need to
 further process it. Unfortunately, the free tier of github has
 limitations in regards to the frequency we can issue such requests to
 the service, as well as in the volume in regards to number of pages
@@ -74,7 +74,7 @@ example we like to retrive the list of issues for a repository as LaTeX
 table but also as markdown. This way we can conveniently integrate it
 in documents of either format. As LaTeX has a more sophisticated table
 management, let us first create a LaTeX table document and than use a
-program to convert LaTeX to markdow. For the late we can reuse a
+program to convert LaTeX to markdown. For the later we can reuse a
 program called `pandoc` that can convert the table for LaTeX to
 markdown.
 
@@ -92,9 +92,9 @@ An example for such a program is listes at.
 
 Although python provides the very nice module `requests` which we
 typically use for such issues. we have here just wrapped the
-commandline call to `curl` into a system command an redirect its
+commandline call to `curl` into a system command and redirect its
 output to a file. However, as we only get limited information back in
-pages, we need to continue such a request multiple times. to keep
+pages, we need to continue such a request multiple times. To keep
 things simple we identified that for the project at this time not
 more that n pages need to be fetched, so we append the output from
 each page to the file.
@@ -205,7 +205,7 @@ mine github in general.
 
 We like to point out that github is actively mined for exploits where
 passwords are posted in clear text for AWS, Azure and other
-clouds. This his a common mistake as many sample programs ask the
+clouds. This is a common mistake as many sample programs ask the
 student to place the password directly into their programs instead of
 using a configuration file that is never part of the code repository.
 
@@ -224,7 +224,7 @@ E.github.issues.2:
 
 E.github.issues.3:
 
-> Be inspired by the many REST interfaces. WHo can they be used 
+> Be inspired by the many REST interfaces. How can they be used 
 > to mine interesting things.
 
 E.github.issues.4:

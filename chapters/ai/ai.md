@@ -49,17 +49,24 @@ sign based on being above or below the median. In k-NN predictions are
 made about unknown values by matching the unknown values with similar
 known values. Naturally the determination of 'similar' is of fundamental
 importance. This is done through the application of the Euclidean
-distance calculation given by the following equation:
+distance calculation given by @eq:euc-dist.
 
-$${d(\mathbf{i},\mathbf{j})} = {d(\mathbf{j},\mathbf{i})} = \sqrt{{(i_1 - j_1)^2 + (i_2 - j_2)^2 +... (i_n - j_n)^2 } }  = \sqrt{\sum_{n=1}^n(i_n - j_n)^2}$$
+$${d(\mathbf{i},\mathbf{j})} = {d(\mathbf{j},\mathbf{i})} =
+\sqrt{{(i_1 - j_1)^2 + (i_2 - j_2)^2 +... (i_n - j_n)^2 } }  =
+\sqrt{\sum_{n=1}^n(i_n - j_n)^2}$${#eq:euc-dist}
 
-Now to illustrate an example of calculating similarity we put this
-equation to work by exploring if a car is fast or not by using
- [\[T:fast-cars\]](#T:fast-cars){reference-type="ref"
-reference="T:fast-cars"}. Lets pretend we know nothing about cars and
+To illustrate an example of calculating _similarity_ using
+ @eq:euc-dist it can be determiend if a car is fast or not by using the
+ data in @tbl:fast-car. Lets pretend we know nothing about cars and
 are asked if we think a Chevy Corvette is fast or not.
 
 
+Car make and model with associated horsepower, whether the vehicle
+has a racing stripe and if the author thinks the car is fast or
+not @tbl:fast-car.
+
+: Car Data {#tbl:fast-car}
+  
 | Car Name |              Horsepower (HP) |  Racing Stripe (Yes or No)|  Fast (Yes or No)  |
 |  ------------------- | ----------------- | ------------------------- | ------------------ |
 | Toyota Prius                    | 120      |               0               |       0          |
@@ -68,9 +75,6 @@ are asked if we think a Chevy Corvette is fast or not.
 |  Honda Civic                    | 158      |               1               |       0          |
 |  Lamborghini Aventador  | 695      |               1               |       1          |
 
-> Car make and model with associated horsepower, whether the vehicle
-  has a racing stripe and if the author thinks the car is fast or
-  not[]{label="T:fast-cars"}
 
 Now lets say our friend wants to know if a Ford Mustang with a racing
 stripe is fast or not. This particular friend knows nothing about cars
@@ -106,8 +110,7 @@ Determine for yourself if we use 2 nearest neighbors what the prediction
 about the Mustang would be given the data provided what about 3, 4
 nearest neighbors? What is the maximum number of k-nearest neighbors we
 could have given the dataset in
- [\[T:fast-cars\]](#T:fast-cars){reference-type="ref"
-reference="T:fast-cars"} ?
+@tbl:fast-car ?
 
 Calculate the Euclidean Distances for all five row entries with respect
 to the Mustang.

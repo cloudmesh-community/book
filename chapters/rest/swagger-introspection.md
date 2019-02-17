@@ -9,13 +9,19 @@ The full example for this is available in
 
 * <https://github.com/cloudmesh-community/nist/tree/master/examples/flask-connexion-swagger>
 
-This example will return dynamically the cpu information of a computer.
+An extensive documentation is avalable at 
+
+* <https://media.readthedocs.org/pdf/connexion/latest/connexion.pdf>
+
+This example will return dynamically the cpu information of a computer to
+demonstrate how simple it is to generate in python a REST service from an
+OpenAPI specification.
 
 Our requirements.txt file includes 
 
 ```
 flask
-connexion
+connexion[swagger-ui]
 ```
 as dependencies. The `server.py` file simply contains the following code:
 
@@ -153,6 +159,33 @@ make demo
 
 our demo is run.
 
+## Verification {#sec:swagger-verify}
+
+It is important to be able to verify if a yaml file is correct. To identify
+this, the easiest method is to use the swagger editor. There is an online verion
+available at:
+
+* <https://editor.swagger.io/>
+
+Go to the Web site, remove the current petstore example and simply paste your yaml file in it.
+Debug meessages will be helping you to correct things.
+
+A terminal based command may als be helpful, but is a bit difficult to read.
+
+```bash
+$ connexion run cpu.yaml --stub --debug
+```
+
+## Mock service
+
+In some cases it may be useful to develop the API without having yet developed
+methods that you call with the OperationI. In this case it is useful to run a
+mock service. YOu can invoce such a service with 
+
+```bash
+$ connexion run cpu.yaml --mock=all -v
+```
+
 ## Exercise
 
 OpenAPI.Conexion.1:
@@ -180,12 +213,22 @@ OpenAPI.Conexion.3:
 > * virtual directory service interfacing with google drive, box,
 >   github, iCloud, ftp, scp, and others
 
-As there are so many possibilities to contribute, come up in class with
-one specification and than implement it for different providers. The
-difficulty here is that it is not done for one IaaS, but for all of
-them and all can be integrated.
+> As there are so many possibilities to contribute, come up in class with
+> one specification and than implement it for different providers. The
+> difficulty here is that it is not done for one IaaS, but for all of
+> them and all can be integrated.
 
-This exercise is typically growing to be part of your class project.
+> This exercise is typically growing to be part of your class project.
 
+OpenAPI.Conexion.4:
+
+> Develop instructions on how to integrate the OpenAPI service framework in a
+> WSGI based Web service. Chose a service you like so that the service could 
+> run in production.
+
+OpenAPI.Conexion.5:
+
+> Develop instructions on how to integrate the OpenAPI service framework in 
+> Tornado so the service could run in production.
 
 
