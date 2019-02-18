@@ -74,7 +74,33 @@ transformed and modelled for machine learning.
   6. Fine tune your model
   7. Evaluate your solution using metrics
   8. Once proven launch and maintain the model.
-    
+
+## Explorartory Data Analysis
+
+First step is to load the data into a dataframe in order for a proper analysis to be done on the attributes.
+
+```python
+data = pd.read_csv('dataset/PS_20174392719_1491204439457_log.csv')
+data.head()
+```
+
+Now perform the basic analysis
+
+```python
+print(data.shape)
+print(data.info())
+data.isnull().values.any()
+```
+Plot the data for advanced analysis
+
+```python
+
+plt.ylabel('Transactions')
+plt.xlabel('Type')
+data.type.value_counts().plot.bar()
+
+```
+
 ## K-means Algorithm
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
