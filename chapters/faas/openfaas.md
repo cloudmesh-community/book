@@ -91,7 +91,8 @@ This section illustrates how to create a simple Pythnon function with OpenFaaS.
 Following are the the steps involved in creating and deploying a function with OpenFaaS
 * Install OpenFaas
 * Install the OpeFaaS CLI
-* Develop and deploy the function
+* Build the function
+* Deploy the function
 
 Installing OpenFaas:
 
@@ -143,7 +144,7 @@ functions:
     image: func-python
 ```
 
-YAML file specifications are as follows
+YAML file description is as follows
 
 * _gateway_- location to specify a remote gateway, the programming language, and location of the handler within the filesystem.
 
@@ -156,7 +157,7 @@ YAML file specifications are as follows
 * _image_ - this is the Docker image name. If iit is being pushed to the Docker Hub, prefix should include Docker Hub accountn
 
 
-Building the function
+Building the function:
 ```bash
 $ faas-cli build -f ./func-python.yml
 ...
@@ -171,7 +172,7 @@ $ docker images | grep func-python
 func-python        latest       <image ID>      one minute ago
 ```
 
-Deploying the function
+Deploy the function:
 ```bash
 $ faas-cli deploy -f ./func-python.yml
 Deploying: func-python.
@@ -181,7 +182,7 @@ Deployed.
 URL: http://127.0.0.1:8080/function/func-python
 ```
 
-Function can be tested either through the OpenFaas Poral Ui or with curl 
+Function can be tested either through the OpenFaas portal UI or with curl 
 ```bash
 $ curl 127.0.0.1:8080/function/func-python -d "Test Successfull"
 Python Function: Test Successfull
@@ -190,6 +191,8 @@ Python Function: Test Successfull
 faas-cli commands can also be used to list and invoke the functions
 ```bash
 faas-cli list
+```
 ```bash
 echo "Test" | faas-cli invoke func-python
 ```bash
+
