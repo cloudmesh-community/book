@@ -42,9 +42,7 @@ Few of them are listed here
     deminsional  space to two or three dimension.
     
 # Building a end to end pipeline for Supervised machine learning using Scikit-learn
-
 ---
-
 **:mortar_board: Learning Objectives**
 
 * Exploratory data analysis
@@ -52,8 +50,6 @@ Few of them are listed here
 * Full learning pipeline
 * Fine tune the model
 * Significance tests
-
----
 
 A data pipeline is a set of processing componennts that are sequenced to 
 produce meaningfull data. Pipelines are commonly used in Machine learning, 
@@ -69,26 +65,18 @@ transformed and modelled for machine learning.
 
 ## Steps for developing a machine learning model
 
-:o: are they intended to be sections or bullet points?
-
-### Explore the domain space
-### Extract the problem definition
-### Get the data that can be used to make the system learn to solve the problem definition.
-### Discover and Visualize the data to gain insights
-### Feature engineering and prepare the data 
-### Fine tune your model
-### Evaluate your solution using metrics
-### Once proven launch and maintain the model.
+  1. Explore the domain space
+  2. Extract the problem definition
+  3. Get the data that can be used to make the system learn to solve the problem definition.
+  4. Discover and Visualize the data to gain insights
+  5. Feature engineering and prepare the data 
+  6. Fine tune your model
+  7. Evaluate your solution using metrics
+  8. Once proven launch and maintain the model.
     
 ## K-means Algorithm
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
-
-:o: this is not markdown syntax use hash use
-
-```python
-for python code
-```
 
 Import
 ------
@@ -157,8 +145,6 @@ Create samples
 
 Visualize
 =========
-
-:o: wrong section indentation
 
 See @fig:scikit-learn-k-means_10_0
 
