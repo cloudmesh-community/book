@@ -119,7 +119,7 @@ privileges by typing *sudo* before each command [@www-digitaloceanprep].
 Once the user set up is completed, one can login as a regular user (mongoadmin)
 and use the following instructions to install MongoDB.
 
-To update the Ubuntu packages to the most recent versions, use below command:
+To update the Ubuntu packages to the most recent versions, use the next command:
 
 ```bash
 $ sudo apt update
