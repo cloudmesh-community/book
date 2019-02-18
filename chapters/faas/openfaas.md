@@ -129,7 +129,7 @@ def handle(req):
     print("Python Function: " + req)
 ```
 
-Functions need to be specified ina YAML file created to indicate what to build and deploy onto the OpenFaas cluster
+Functions need to be specified in a YAML file created to indicate what to build and deploy onto the OpenFaas cluster. 
 YAML file will look like below
 
 ```yaml
@@ -196,3 +196,5 @@ faas-cli list
 ```bash
 echo "Test" | faas-cli invoke func-python
 ```
+
+In case third party dependencies are required, they can be specified in a requirements.txt file along with the function handler.
