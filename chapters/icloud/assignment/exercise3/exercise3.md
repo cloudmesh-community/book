@@ -124,7 +124,7 @@ Sketch for Hadoop Blast
 
 You need to complete one file in the provided package inside
 \"cgl/hadoop/apps/runner\": RunnerMap.java. Code snapshots are shown
-below.
+next.
 
 INPUT section/icloud/assignment/exercise3/RunnerMap.java
 
