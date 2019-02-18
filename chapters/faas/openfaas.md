@@ -168,7 +168,7 @@ Successfully tagged func-python:latest
 Image: func-python built.
 ```
 
-Docker engine builds the function into an image in the docker library and will appear as below when request images
+Docker engine builds the function into an image in the docker library and will appear as below under images
 ```bash
 $ docker images | grep func-python
 func-python        latest       <image ID>      one minute ago
