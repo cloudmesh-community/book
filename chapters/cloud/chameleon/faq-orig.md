@@ -129,7 +129,7 @@ eligibility when you applied for a Chameleon account you can request it
 by modifying options in your profile. An application for a project has
 to include a description of the research or education project to be
 performed using the testbed and the type of resources needed (see
-below). Each Chameleon project is awarded an allocation of service units
+next). Each Chameleon project is awarded an allocation of service units
 for a specific amount of time. Users can expect a project decision
 within one business day.
 
@@ -594,16 +594,16 @@ known_hosts file.
 
     $ ssh -i ~/.ssh/sample-key cc@<instance ip address>
 
-The full process can be viewed in the figure below:
+The full process can be viewed in @fig:faq-orig-ssh1:
 
-![image](images/ssh1.png){width="\columnwidth"}
+![image](images/ssh1.png){#fig:faq-orig-ssh1 width="\columnwidth"}
 
 ### For Windows
 
 First, download and install PuTTY and PuTTYgen [from
 here](http://www.chiark.greenend.org.uk/~sgtatham/putty/). Once
 downloaded, opening PuTTYgen will open a key generator window, seen
-below.
+next.
 
 ![image](images/putty2.png){#fig:putty-windows width="\columnwidth"}
 
@@ -613,7 +613,7 @@ the program's blank space to generate "randomness" for your key.?
 
 You may enter an optional "Key passphrase" and then confirm the
 passphrase in the required areas but let us keep these spaces in blank
-just to avoid complexity. An example is shown below. Note that the
+just to avoid complexity. An example is shown next. Note that the
 passphrases are not necessary!
 
 ![image](images/putty3.png){width="\columnwidth"}
