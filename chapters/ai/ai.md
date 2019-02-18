@@ -369,7 +369,7 @@ have navigated to the location of the directory that your created.
 
     python main.py
 
-A continuous version of main.py is provided in the next for ease of use.
+A continuous version of main.py is provided next for ease of use.
 Please be careful when copying and pasting as additional characters may
 show up, this was noticed in the url sections.
 
