@@ -35,7 +35,7 @@ The basic steps are:
    ```
    
    on other machines to have them join
-   the swarm as workers. Choose a tab below to see how this plays out
+   the swarm as workers. Choose a tab described in next to see how this plays out
    in various contexts. We use VMs to quickly create a two-machine
    cluster and turn it into a swarm.
 
@@ -179,7 +179,7 @@ worker-1   *        virtualbox   Running   tcp://192.168.99.102:2376           v
 Now we can try to deploy a test application. First we need to create a docker
 configuration file which we will name `docker-compse.yml`. Since we are in 
 the vm we need to create the file using the terminal. follow the steps given 
-below the create and save the file. First log into the `master`
+next the create and save the file. First log into the `master`
 
 ```bash
 local$ docker-machine ssh worker-1

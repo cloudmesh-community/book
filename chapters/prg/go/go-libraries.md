@@ -1,4 +1,4 @@
-# Libraries {#s-go-libraries}
+# Libraries {#sec:go-libraries}
 
 Golang comes with a list of standard libraries in the following table, and more libraries can be found on this page: <https://golang.org/pkg/>
 

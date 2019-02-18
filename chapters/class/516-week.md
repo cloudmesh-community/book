@@ -54,11 +54,11 @@ Here we list some of the activities by week.
    `pip install .` What is the difference to `pip install -e .` How can
    you leverage this.
 
-Remark: In this class everyon is allowed to help everyone. Each student
+Remark: In this class everyone is allowed to help everyone. Each student
 will have if they do not participate in a group have a different
 assignment so cheating can be avoided. However if we detect that a
-student is not doing their work and it is soly delegated to other
-students this is considered cheating and and `F` will be assigned.
+student is not doing their work and it delegates all their work to other
+students this is considered cheating and an `F` will be assigned.
 Please use git commits. It is not sufficient if just one student of a
 group commits the entire project in case of group work.
 
@@ -69,7 +69,7 @@ group commits the entire project in case of group work.
 If you have not yet set up a computer with python 3.7.2 on it please
 do so. Remember you can use virtual machines and use virtualbox so you
 do not interfere with your base system or use a USB stick to boot into
-ubuntu .... If you do not have a system work with the TAs to identify
+ubuntu. If you do not have a system work with the TAs to identify
 a solution that works for you
 
 ### Data Center
@@ -110,11 +110,11 @@ to do some google searches including just to look at images ... If you
 see something you think we should add, propose a new section if you
 like. Please remember that you will need to do some sections that will
 be graded. We recommend that you contribute at least 5 sections. This
-is equivalend to one section every three weeks which is actually not
-much. Typically you will spend the first week reseraching and writing
-a draft. The second week experimention or creating an example if
-applicable and the thrird week you will engage with other students and
-the TAs on reveiws and improvements if needed. 
+is equivalent to one section every three weeks which is actually not
+much. Typically you will spend the first week researching and writing
+a draft. The second week experimentation or creating an example if
+applicable and the third week you will engage with other students and
+the TAs on reviews and improvements if needed. 
 
 ### Python till rest of the semester
  
@@ -135,16 +135,16 @@ videos in the python section that showcases this.
 
 You do not have to do some of the more advanced python concepts. Focus
 initially on the language and learn how to do classes as this will be
-extreamly helpful. 
+extremely helpful. 
 
 ## Week 3: Jan 25 - Feb 1
 
 ### Cloud Architectures
 
-This week we will focus on archie=tectural definitions of cloud
+This week we will focus on architectural definitions of cloud
 computing. We like that the class engages in a discussion about a very
 short definition of *cloud computing* and *mainframes* in piazza.
-We will jointly develop an asnwer and add it to the handbook at the
+We will jointly develop an answer and add it to the handbook at the
 spots marked with a red circle.
 
 Read the sections:
@@ -152,7 +152,8 @@ Read the sections:
 * Architectures (see @sec:cloud-architectures)
 * NIST Big Data Reference Architecture (see @sec:nist-bdra)
 
-Students and TA's please complete the red cicles, e.g. mostly bibtex refernces.
+Students and TA's please complete the red cicles, e.g. mostly bibtex
+references.
 
 ### REST services
 
@@ -163,7 +164,7 @@ in @sec:rest on the sections
 * Overview
 * OpenAPI REST Services with Swagger (see @sec:swagger)
 * OpenAPI Specification (see @sec:openapi-spec)
-* OpenAPI REST Service via Introspection (see sec:openapi-introspection)
+* OpenAPI REST Service via Introspection (see @sec:openapi-introspection)
 
 YOu do not in thi class need to look at the other Sections about REST,
 however, if you like to you can. For the project, all projects will be
@@ -185,7 +186,7 @@ Recommended:
 
 Optional:
 
-* Do excersise E.github.issues.5:
+* Do exercise E.github.issues.5:
 
 :warning: The week 4 is under construction and additional items will
 be added
@@ -199,4 +200,172 @@ REST services, so it may take some time to master this). We will
 provide additional material throughout the semester on this. So this
 task may take multiple weeks and may overlap with your project. Get
 started early.
+
+## Week 5: Feb. 8 - Feb 15
+
+In this week you will start exploring virtual machines. For this you
+will read the section about virtualization (@sec:virtualization). You
+will be asked to understand what virtualization is and how it differes
+from typical workstations.
+You will identify the different levels of virtualization.
+
+You will need to do one of two assignments dependent on which class
+you are in (naturally you can contribute to both):
+
+All options must be covered by students of the class so please
+coordinate via github where these tasks will be filed.
+
+Due data is when al sections and chapters are due, but early
+submissions will be awarded bonus points.
+
+Assignment python virtualenv (Residential studnets of this class): In
+addition, we have started the class asking you to use python
+virtualization while using pyenv. This is not just a recommendation,
+but also serves as a learning tool in this class. As such we like yo
+to engage in a discussion on Piazza to explain to us what the
+difference is between virtual machines and python virtual
+environments. We also like you to explain the difference between pyenv
+and venv from python version 3. Make sure you do not plagiarize.
+
+Assignment Online Students (Option A): If you have not yet taken any section, you
+will explore Libvirt on your computer and write a small section on
+using it practically. Make sure you do not plagiarize.
+
+Assignment Online Students (Option B): If you have not yet taken any section, you
+will explore Hyper-V on your computer and write a small section on
+using it practically. Make sure you do not plagiarize.
+
+Assignment Online Students (Option C, for Windows 10 users): If you
+have not yet taken any section, you will explore Linux Subsystem on
+your computer and write a small section on using it practically. Make
+sure you do not plagiarize.  Describe how to install python (hopefully
+pyenv) if there are any differences and cloudmesh cm.
+
+Assignment Online Students (Option D): If you have not yet taken any
+section, you will explore Hyper-V on your computer and write a small
+section on using it practically. Make sure you do not plagiarize.
+
+## Week 5 and 6: Feb 8 - 22
+
+### Sections and Chapters
+
+Online students must select sections and chapters. This is optional
+for residential students and can be substituted by contributing to the
+manual page of cloudmesh v4. If a residential student like to do a
+chapter or section please let us know. However we recently observed
+that some assignments, (see the previous week) must be done by
+everyone as we observed that this will increase understanding among
+all class members.
+
+### IaaS
+
+Please read (@sec:iaas-intro). In these weeks you will be exploring
+IaaS frameworks. As there are many and we like you to program them in
+python, you will first apply for at least one cloud. One of these
+clouds must be chameleon cloud as some of our initial implementations
+can be tested on it easily.  In addition to chameleon, you will apply
+for another cloud account. The free tier from the providers are
+sufficient.
+
+The clouds can be for example: AWS, Azure, Google, Watson, ...
+
+In addition we recommend that you install and use virtualbox as this
+simulates a local cloud on your computer.
+
+Thus you have access to 3 infrastructure as a service frameworks
+
+OpenStack, virtualbox, and one more public cloud
+
+We will ask you to run a small program in each of the clouds so that
+you can compare runtime benchmarks between them. We also ask you tu
+run the same program on your local computer so you have a comparison.
+
+We will announce the program soon but in the meanwhile get your
+accounts and try out the IaaS services.
+
+
+
+### Libcloud and MongoDB
+
+You will be using libcloud which is introduced in
+@sec:libcloud-python for much of your interaction with the IaaS
+services. Although all of them provide their own python libraries, we
+like to develop a service mesh and libcloud allows us to provide
+mostly a uniform interface to virtual machine and other service
+management.
+
+As we want to store information about the clouds and virtual machines
+locally, we also like you to study MongoDB which we will be using for
+the duration of the class including your class projects (see @sec:mongodb-python).
+
+So the interaction we typically will have
+
+```
+IaaS <---> libcloud <---> MongoDB <---> client
+```
+
+At a later point in your project you will also do
+
+```
+MongoDB <---> REST <---> OpenAPI <---> client
+```
+
+For your convenience we have provided a simple mongodb management
+command in cloudmesh. Please explore it and if you find issues with it
+improve it. It requires that you fill out the
+`~/.cloudmesh/cloudmesh4.yaml` file.
+
+For more information, see also
+
+* <https://cloudmesh-community.github.io/cm/>
+
+All of you will contribute commands and services to cloudmesh to
+enable a community driven service mesh as part of your project.
+
+As we have provided as part of cloudmesh you already with the basic
+management functions for MongoDB, as well as a decorator that allows
+to store any dict into MongoDB very easily.
+
+We would like you to explore this functionality
+
+Your assignment is to first generate a cmd5 command with your first
+name. This assignment is mandatory for all students
+
+Than grenrate some dict, that you will return as part of a function that
+you decorate with the database decorator `@DatabaseUptate`
+
+The data must have values for `cloud`, `kind` which are used to
+identify the collection as well as ideally a  `name` for each entry in
+the collection.
+
+For more information see @sec:mongodb-python and @sec:mongodb-cloudmesh.
+
+## Week 7: Feb 22 - March 1
+
+Map reduce
+
+## Week 8: Map Reduce, spark
+
+Map Reduce
+
+## Week 9: Containers
+
+### Containers
+
+In this week you are requested to explore containers. Please read
+@sec:container-intro, @sec:docker-intro
+
+## Week 10: docker cluster
+
+See @sec:docker-cluster
+
+## Week 11: Kubernetes
+
+See @sec:kub-intro
+
+## Week 12: Kubernetes
+
+See @sec:kub-fs
+
+## Week 13: Go
 

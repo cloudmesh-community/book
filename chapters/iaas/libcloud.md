@@ -1,4 +1,4 @@
-# Python Libcloud
+# Python Libcloud {#sec:libcloud-python}
 
 With all the cloud providers and cloud services that are currently 
 available, it becomes hard to manage and maintain services that work 
