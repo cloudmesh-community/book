@@ -116,7 +116,7 @@ public static class Map extends Mapper<LongWritable,
 Here we have created a class Map which extends Mapper from MapReduce
 framework and we override map() method to declare the key/value pairs.
 Next, there will be a reduce method defined inside Reduce class as
-below and both input and output here is a key/value pairs:
+next and both input and output here is a key/value pairs:
 
 ```java
 public static class Reduce extends Reducer<Text,

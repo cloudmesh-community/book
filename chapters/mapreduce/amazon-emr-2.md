@@ -49,7 +49,7 @@ and your EC2 key pair wil be automatically downloaded by the browser and
 named with a pem extension. Save the key file generated in a safe
 location for use later on as this is the only time you will be able to
 save this key file. It will need to be used when you need to launch and
-connect to the EC2 instances created by EMR [@hid-sp18-521-ec2keypair]. As the picture below: @fig:key.
+connect to the EC2 instances created by EMR [@hid-sp18-521-ec2keypair]. As the picture @fig:key.
 
 ![Key](images/EMRkey.png){#fig:key}
 
@@ -89,7 +89,7 @@ EC2 instances you would like to utilize for your cluster. he values
 selected here will vary on what type of data processing you're looking
 to achieve. Then scroll down to the 'Security and access' section of the
 page and select the key pair generated in the previous steps in the
-drop-down menu, as below: @fig:security. Below that you can then select which permissions model
+drop-down menu, as in figure @fig:security. Below that you can then select which permissions model
 to u se: default or custom. The default option sets up permissions for
 your EMR cluster that are granted using policies applied to EMR specific
 IAM roles. Using the custom option allows you to select existing IAM
