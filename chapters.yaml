@@ -474,9 +474,9 @@
         - chapters/rest/rest-haetos.md
         - chapters/rest/rest-eve-extensions.md
         - chapters/rest/rest-django.md
-	- chapters/prg/github.md
-    - $ref:CONTAINER	
+        - chapters/prg/github.md
     - $ref:MAPREDUCE
+    - $ref:CONTAINER
     - chapters/nist/bdra.md
     - chapters/ai/ai.md
     - chapters/SECTION/SECTION-FAQ.md:
