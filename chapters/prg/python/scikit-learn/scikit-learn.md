@@ -69,6 +69,8 @@ transformed and modelled for machine learning.
 
 ## Steps for developing a machine learning model
 
+:o: are they intended to be sections or bullet points?
+
 ### Explore the domain space
 ### Extract the problem definition
 ### Get the data that can be used to make the system learn to solve the problem definition.
@@ -81,6 +83,12 @@ transformed and modelled for machine learning.
 ## K-means Algorithm
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
+
+:o: this is not markdown syntax use hash use
+
+```python
+for python code
+```
 
 Import
 ------
@@ -149,6 +157,8 @@ Create samples
 
 Visualize
 =========
+
+:o: wrong section indentation
 
 See @fig:scikit-learn-k-means_10_0
 
