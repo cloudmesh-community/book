@@ -61,7 +61,7 @@ Create the Kerberos configuration using the previously created json file:
 aws emr create-security-configuration --name "KerberosSecurityConfiguration" --security-configuration file://MyKerberosSecurityConfig.json
 ```
 ### Determine the applicable subnet
-The EMR cluster will run on a subnet so you need to determine the appropriate subnet for you availability zone. You will need to enter your default zone in the code below.
+The EMR cluster will run on a subnet so you need to determine the appropriate subnet for you availability zone. You will need to enter your default zone in the code next.
 
 ```bash
 aws ec2 describe-subnets --filters "Name=availabilityZone,Values=us-east-2b"
