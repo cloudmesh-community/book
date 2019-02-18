@@ -477,7 +477,7 @@ provide as Human Face Detected from the capturing video.
     ## Create the haar cascade
     faceCascade = cv2.CascadeClassifier(cascPath)
 
-Camera settings need to be updated in the code as per suggestions next.
+Camera settings need to be updated, our suggested changes are shown in the code next.
 The captured image is to be sent to Kairos for face recognition and so
 we will set the resolution to a lower level. This will help to send the
 image faster over the network without any delay.
