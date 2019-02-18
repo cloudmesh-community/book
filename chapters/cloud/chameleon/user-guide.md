@@ -26,15 +26,14 @@ The initial log in page appears as:
 ![Chameleon login](images/chameleon-login.png){#fig:chameleon-login}
 
 After a successful log in, you will see the Overview page as shown
-below. This page provides a summary of your current and recent usage and
+next. This page provides a summary of your current and recent usage and
 provides links to various other pages. Most of the tasks you will
 perform are done via the menu on the lower left and will be described
-below. One thing to note is that on the left, your current project is
+next. One thing to note is that on the left, your current project is
 displayed. If you have multiple Chameleon projects, you can change which
 of them is your current project. All of the information displayed and
 actions that you take apply to your current project. So in the screen
-shot below, the quota and usage apply to the current project you have
-selected and no information about your other projects is shown. See @fig:overview-page
+shot @fig:overview-page, the quota and usage apply to the current project you have selected and no information about your other projects is shown. See @fig:overview-page
 
 ![Overview page](images/openstack_alamo_overview.png){#fig:overview-page}
 
@@ -43,7 +42,7 @@ selected and no information about your other projects is shown. See @fig:overvie
 One of the main activities you'll be performing in this web interface is
 the management of virtual machines, or instances. You do this via the
 Instances page that is reachable from the menu in the lower left of the
-Overview page. An example Instances page is shown below. For instances
+Overview page. An example Instances page is shown next. For instances
 that you have running, you can click on the name of the instance to get
 more information about it and to access the VNC interface to the
 console. The dropdown menu to the left of the instance lets you perform
