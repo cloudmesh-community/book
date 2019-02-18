@@ -157,7 +157,7 @@ YAML file description is as follows
 * _image_ - this is the Docker image name. If iit is being pushed to the Docker Hub, prefix should include Docker Hub accountn
 
 
-Building the function:
+Build the function:
 ```bash
 $ faas-cli build -f ./func-python.yml
 ...
@@ -192,7 +192,7 @@ faas-cli commands can also be used to list and invoke the functions
 ```bash
 faas-cli list
 ```
+
 ```bash
 echo "Test" | faas-cli invoke func-python
 ```bash
-
