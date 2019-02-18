@@ -136,7 +136,7 @@ PageRank data processing.
 
 Code for Hadoop PageRank You need to complete two files in the provided
 package inside `indiana/cgl/hadoop/pagerank/`: PageRankMap.java and
-PageRankReduce.java. Code snapshots are shown below.
+PageRankReduce.java. Code snapshots are shown next.
 
 * <https://github.com/foxjas/Hadoop-PageRank/tree/master/src/indiana/cgl/hadoop/pagerank>
 
@@ -151,7 +151,7 @@ Edit and fix the code
     Compile and run your code
     
 Use the one-click script compileAndExecHadoopPageRank.sh provided
-below. Standard error messages such as compile errors, execution
+next. Standard error messages such as compile errors, execution
 errors, etc. will be redirected on the screen. Debug them based on the
 returned messages.
 

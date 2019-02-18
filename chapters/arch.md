@@ -311,7 +311,7 @@ the field and ask questions specific to your company or academic
 project.  You may also find an answer to your question in the white
 papers, reports, tools, trainings, and services they have available.
 
-The group of industry experts based use the following guiding principles to when publishing their reference Architecture (below).
+The group of industry experts based use the following guiding principles to when publishing their reference Architecture.
 
 * Define protections that enable trust in the cloud.
 * Develop cross-platform capabilities and patterns for proprietary and

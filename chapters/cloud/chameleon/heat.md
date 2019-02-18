@@ -96,7 +96,7 @@ will be empty for now.
 
 We will now create a new stack, which corresponds to the launch of a
 template. Click on Launch Stack on the top right. A window will pop up
-like below: @fig:select-template.
+like in @fig:select-template.
 
 ![Select Template](images/Launch-Stack.png){#fig:select-template}
 
@@ -123,7 +123,7 @@ Finally, click "Launch". As shown in @fig:launch-nfs-stack.
 
 Your stack should be in status "Create In Progress" for several minutes
 while it first launches the NFS server instance, followed by the NFS
-client instances. As below: @fig:create-in-progress.
+client instances. As in @fig:create-in-progress.
 
 ![Create in Progress](images/Create-In-Progress_zPgOjo4.png){#fig:create-in-progress}
 
@@ -132,7 +132,7 @@ It will then move to the status "Create Complete". As the following: @fig:create
 ![Create Complete](images/Create-Complete_XkoWhlj.png){#fig:create-complete}
 
 You can click on the stack name to get more details, including a
-visualization of the deployed resources, as pictured below: @fig:stack-visualization. The single
+visualization of the deployed resources, as pictured in @fig:stack-visualization. The single
 machine inside a circle represents the NFS server instance. The rack of
 machine represents the group of NFS client instances (in this case, a
 group composed of two instances). The server's floating IP (the public
@@ -171,7 +171,7 @@ The NFS share appliance deploys:
     mount this NFS share to /mnt (and can subsequently read from and
     write to it).
 
-This template is reproduced further below, and includes inline comments
+This template is reproduced further next, and includes inline comments
 starting with the \# character. There are three main sections:
 
 -   resources,
@@ -334,7 +334,7 @@ Stacks" button. You will be asked to confirm, so click on the blue
 
 The template for the [Hello World complex
 appliance](https://www.chameleoncloud.org/appliances/26/) is reproduced
-below. It is similar to the NFS share appliance, except that it deploys
+next. It is similar to the NFS share appliance, except that it deploys
 only a single client. You can see that it has four resources defined:
 
 -   nfs_server_floating_ip
@@ -450,7 +450,7 @@ indentation, which is important in YAML.
 Now, launch a new stack with this template. Since the customized
 template is only on your computer and cannot be addressed by a URL, use
 the "Direct Input" method instead and copy/paste the content of the
-customized template. The resulting topology view is shown below: @fig:nfs-with-two-clients, as you
+customized template. The resulting topology view is shown in @fig:nfs-with-two-clients, as you
 can see, the two client instances are shown separately since each one is
 defined as a separate resource in the template.
 
@@ -528,7 +528,7 @@ list the private IPs assigned to client instances:
         description: Private IP addresses of the NFS clients
         value: { get_attr: [nfs_clients, first_address] }
 
-The image below: @fig:outputs, shows the resulting outputs as viewed from the web
+The image: @fig:outputs, shows the resulting outputs as viewed from the web
 interface. Of course IP addresses will be specific to each deployment.
 
 ![Outputs](images/Outputs.png){#fig:outputs}
@@ -740,7 +740,7 @@ This contextualization is performed with several Heat resources:
 -   `OS::Heat::SoftwareDeploymentGroup`. This resource applies a
     SoftwareConfig to a specific group of instances.
 
-The template below illustrates how it works. It launches a group of
+The template next illustrates how it works. It launches a group of
 instances that will automatically populates their /etc/hosts file with
 IP and hostnames from other instances in the deployment.
 
