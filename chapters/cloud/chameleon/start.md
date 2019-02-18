@@ -75,7 +75,7 @@ use to avoid unnecessary charging. Remember the project has limited time
 on chameleon and any unused time will be charged against the project.
 
 Chameleon provides two types of resources with links to their respective
-users guides below:
+users guides next:
 
 **[Bare Metal User
 Guide](https://chameleoncloud.readthedocs.io/en/latest/technical/baremetal.html?highlight=bare%20metal)**

@@ -86,7 +86,7 @@ Most of the code is completed for you; your task will be to perform the
 nearest center finding computation and updating new centers. The code to
 implement this is in the **simplekmeans/KmeansMapper.java**
 
-The two functions are listed below.
+The two functions are listed next.
 
 **Finding Nearest Center**
 
