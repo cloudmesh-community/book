@@ -15,6 +15,8 @@ scikit learn.
 If you already have a working installation of numpy and scipy, the
 easiest way to install scikit-learn is using pip
 
+:o: look up how to do bash in markdown, see our other files
+
     $ pip install numpy
     $ pip install scipy -U
     $ pip install -U scikit-learn
@@ -78,8 +80,10 @@ transformed and modelled for machine learning.
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
 
-Import
-------
+## Import
+
+
+:o: look up how to do python in markdown, see our other files
 
     from time import time
     import numpy as np
@@ -91,8 +95,9 @@ Import
     from sklearn.decomposition import PCA
     from sklearn.preprocessing import scale
 
-Create samples
---------------
+## Create samples
+
+:o: look up how to do python in markdown, see our other files
 
     np.random.seed(42)
 
@@ -143,10 +148,11 @@ Create samples
                   data=data)
     print(79 * '_')
 
-Visualize
-=========
+## Visualize
 
 See @fig:scikit-learn-k-means_10_0
+
+:o: look up how to do python in markdown, see our other files
 
     reduced_data = PCA(n_components=2).fit_transform(data)
     kmeans = KMeans(init='k-means++', n_clusters=n_digits, n_init=10)
