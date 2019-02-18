@@ -15,12 +15,11 @@ scikit learn.
 If you already have a working installation of numpy and scipy, the
 easiest way to install scikit-learn is using pip
 
-:o: look up how to do bash in markdown, see our other files
-
+```python
     $ pip install numpy
     $ pip install scipy -U
     $ pip install -U scikit-learn
-
+```
 ## Supervised Learning
 
 Supervised Learning is used in machine learning when we already know a set of output predictions based on input characterstics and based on that we need to predict the target for a new input. Training data is used to train the model which then can be used to predict the output from a bounded set.
@@ -83,7 +82,7 @@ In this section we demonstrate how simple it is to use k-means in scikit learn.
 ## Import
 
 
-:o: look up how to do python in markdown, see our other files
+```python
 
     from time import time
     import numpy as np
@@ -94,10 +93,10 @@ In this section we demonstrate how simple it is to use k-means in scikit learn.
     from sklearn.datasets import load_digits
     from sklearn.decomposition import PCA
     from sklearn.preprocessing import scale
-
+```
 ## Create samples
 
-:o: look up how to do python in markdown, see our other files
+```python
 
     np.random.seed(42)
 
@@ -147,12 +146,12 @@ In this section we demonstrate how simple it is to use k-means in scikit learn.
                   name="PCA-based",
                   data=data)
     print(79 * '_')
-
+```
 ## Visualize
 
 See @fig:scikit-learn-k-means_10_0
 
-:o: look up how to do python in markdown, see our other files
+```python
 
     reduced_data = PCA(n_components=2).fit_transform(data)
     kmeans = KMeans(init='k-means++', n_clusters=n_digits, n_init=10)
@@ -191,5 +190,5 @@ See @fig:scikit-learn-k-means_10_0
     plt.xticks(())
     plt.yticks(())
     plt.show()
-
+```
 ![Result](images/scikit-learn-k-means_10_0.png){#fig:scikit-learn-k-means_10_0}
