@@ -16,7 +16,9 @@ This chapter can be contributed by one or multiple students
 ## Langugae
 
 Inlcude here basic language features
-"Julia features optional typing, multiple dispatch, and good performance, achieved using type inference and just-in-time (JIT) compilation, implemented using LLVM.
+"Julia features optional typing, multiple dispatch, and good performance, 
+achieved using type inference and just-in-time (JIT) compilation, implemented 
+using LLVM.
 
 ## Parallel Langauge Constructs
 
@@ -25,18 +27,28 @@ Include here parallel language constructs
 * Missing Values
 * Network Streams
 * Parallel Computing
+- Multi-threading, green-threading
+
+https://github.com/amellnik/Joseki.jl
+
+
 
 ## Interfacing with the System
-
+* Docopts: 
+https://github.com/docopt/DocOpt.jl
 
 * External programs
-A user can interact with Julia in several ways; through an interactive or non-interactive command-line sessions, by using a local notebook similar to iPython/Jupyter, or through a browser by going to JuliaBox.org.   
+A user can interact with Julia in several ways; through an interactive or non-
+interactive command-line sessions, by using a local notebook similar to iPython
+/Jupyter, or through a browser by going to JuliaBox.org.
+Julia has several APIs available, and can communicate with Python, C, and Java.  
 
 * Environment variables
 
 ## REST in julia
-
-TBD
+https://discourse.julialang.org/t/implement-a-rest-server-in-julia/9117
+https://codehandbook.org/make-rest-api-calls-julia/
+https://github.com/essenciary/Genie.jl
 
 ## OpenStack in Julia
 
