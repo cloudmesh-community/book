@@ -86,7 +86,7 @@ Once the function is deployed, the functions can be verified in the following ur
 
 ## OpenFaaS Function with Python
 
-This section illustrates how to create a simple Pythnon function with OpenFaaS. 
+This section illustrates how to create a simple Python function with OpenFaaS. 
 
 Following are the the steps involved in creating and deploying a function with OpenFaaS
 * Install OpenFaas
@@ -94,9 +94,11 @@ Following are the the steps involved in creating and deploying a function with O
 * Build the function
 * Deploy the function
 
+
 Installing OpenFaas:
 
 OpenFaaS installation guide can be viewed here - <https://docs.openfaas.com/deployment/> 
+
 
 Installing CLI:
 
