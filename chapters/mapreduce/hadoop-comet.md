@@ -28,7 +28,7 @@ Configuration and Runtime Details
 
 The example scripts have a large number of parameters, configuration
 settings, and environment variables. Several of these are described in
-detail below, with user-modified content displayed in bold. Do not alter
+detail next, with user-modified content displayed in bold. Do not alter
 the order of content in the scripts because many of the steps depend on
 earlier definitions.
 
