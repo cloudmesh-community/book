@@ -88,7 +88,7 @@ EBS
 
 ## Create Step Execution – Hadoop Job
 
-Login to AWS console, go to services and then select EMR. Click on Create Cluster. In the cluster configuration provide below details to complete to complete step execution creation.
+Login to AWS console, go to services and then select EMR. Click on Create Cluster. The cluster configuration provides details to complete to complete step execution creation.
 See: @fig:aws-emr, @fig:aws-create-emr, @fig:emr-step-exe, @fig:step-cluster, @fig:step-cluster1
 - Cluster name (Ex: HadoopJobStepExecutionCluster)
 - Select Logging check box and provide S3 folder location (Ex: s3://bigdata-raviAndOrlyiuproject/logs/)
@@ -114,7 +114,7 @@ See: @fig:aws-emr, @fig:aws-create-emr, @fig:emr-step-exe, @fig:step-cluster, @f
 
 ## Create a Hive Cluster
 
-Login to AWS console, go to services and then select EMR. Click on Create Cluster. In the cluster configuration provide below details to complete.
+Login to AWS console, go to services and then select EMR. Click on Create Cluster. The cluster configuration provides details to complete.
 See, @fig:hive-cluster1, @fig:hive-cluster2, @fig:hive-cluster3
 - Cluster name (Ex: MyFirstCluster-Hive)
 - Select Logging check box selected and provide S3 folder location
@@ -130,7 +130,7 @@ See, @fig:hive-cluster1, @fig:hive-cluster2, @fig:hive-cluster3
 ![Hive Cluser2](images/hive_cluster_2.JPG){#fig:hive-cluster3}
 
 ## Create a Spark Cluster
-Login to AWS console, go to services and then select EMR. Click on Create Cluster. In the cluster configuration provide below details to complete.
+Login to AWS console, go to services and then select EMR. Click on Create Cluster. The cluster configuration provides details to complete.
 See, @fig:spark-cluster1, @fig:spark-cluster2, @fig:spark-cluster3
 - Cluster name (Ex:My Cluster - Spark)
 - Select Logging check box selected and provide S3 folder location
