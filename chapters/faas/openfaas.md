@@ -84,4 +84,112 @@ Once the function is deployed, the functions can be verified in the following ur
 
 ![faas-OpenFaas-Portal [@alex2017faas]](images/markdown_portal.png){#fig:cf-open-faas-portal}
 
+## OpenFaaS Function with Python
 
+This section illustrates how to create a simple Pythnon function with OpenFaaS. 
+
+Following are the the steps involved in creating and deploying a function with OpenFaaS
+* Install OpenFaas
+* Install the OpeFaaS CLI
+* Develop and deploy the function
+
+Installing OpenFaas:
+
+OpenFaaS installation guide can be viewed here - <https://docs.openfaas.com/deployment/> 
+
+Installing CLI:
+
+For Linux, type below on the terminal
+```bash
+$ curl -sSL https://cli.openfaas.com | sudo sh
+```
+For Mac, type below
+```bash
+$ brew install faas-cli
+```
+
+Developing a Python function:
+
+First, scaffold a new Python function using the CLI
+```bash
+$ faas-cli new --lang python func-python
+```
+
+Above command creates following 3 files in the current directory
+```bash
+func-python/handler.py
+func-python/requirements.txt
+func-python.yml
+```
+
+Edit the handler.py
+```python
+def handle(req):
+    print("Python Function: " + req)
+```
+
+Functions need to be specified ina YAML file created to indicate what to build and deploy onto the OpenFaas cluster
+YAML file will look like below
+
+```yaml
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  func-python:
+    lang: python
+    handler: ./func-python
+    image: func-python
+```
+
+YAML file specifications are as follows
+
+* _gateway_- location to specify a remote gateway, the programming language, and location of the handler within the filesystem.
+
+* _functions_ - this block defines the functions in our stack.
+
+* _lang_: python - even though Docker is used behind the scenes to package your function. 
+
+* _handler_ - this is the folder / path fo the handler.py file and any other source code
+
+* _image_ - this is the Docker image name. If iit is being pushed to the Docker Hub, prefix should include Docker Hub accountn
+
+
+Building the function
+```bash
+$ faas-cli build -f ./func-python.yml
+...
+
+Successfully tagged func-python:latest
+Image: func-python built.
+```
+
+Docker engine builds the function into an image in the docker library and will appear as below when request images
+```bash
+$ docker images | grep func-python
+func-python        latest       <image ID>      one minute ago
+```
+
+Deploying the function
+```bash
+$ faas-cli deploy -f ./func-python.yml
+Deploying: func-python.
+No existing service to remove
+Deployed.
+200 OK
+URL: http://127.0.0.1:8080/function/func-python
+```
+
+Function can be tested either through the OpenFaas Poral Ui or with curl 
+```bash
+$ curl 127.0.0.1:8080/function/func-python -d "Test Successfull"
+Python Function: Test Successfull
+```
+
+faas-cli commands can also be used to list and invoke the functions
+```bash
+faas-cli list
+```bash
+echo "Test" | faas-cli invoke func-python
+```bash
