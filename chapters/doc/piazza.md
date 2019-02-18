@@ -105,7 +105,7 @@ Forth, if all goes well you see the Success screen
 #### Situation: You have logged into piazza and you used another non IU e-mail
 
 1.  Click the Piazza link on the left navigation of your Canvas course.
-2.  Proceed as in \#1 above. This will create your new Piazza account
+2.  Proceed as in \#1. This will create your new Piazza account
     that is linked to your courses in Canvas. This is the account you
     should always use in your IU courses.
 3.  If you wish to merge other accounts that you own, please see [Add an
@@ -118,7 +118,7 @@ Forth, if all goes well you see the Success screen
     email address, you will be automatically enrolled in the course
     Piazza site and logged in.
 2.  If none of your accounts corresponds to your default IU email
-    address, follow the instructions in \#3 above.
+    address, follow the instructions in \#3.
 3.  If you wish to merge other accounts that you own, please see [Add an
     email address or merge two
     accounts](https://www.google.com/url?q=http://support.piazza.com/customer/portal/articles/1646661-add-an-email-address-or-merge-two-accounts&sa=D&ust=1502127148504000&usg=AFQjCNHwO1kks2cnVLpWWCnOIEDFhl2fJA).
@@ -213,7 +213,7 @@ Here the reasons why this can be improved:
     prefer that you use only one name that is associated with your
     e-mail.
 
-The above question will simply be commented on (if at all):
+The previous bad question will simply be commented on (if at all):
 
 "Missing information" or "?" indicating that information is missing.
 

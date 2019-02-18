@@ -20,7 +20,7 @@ for the function, maximum memory allowed, execution time, etc. The
 exact constraints differ from provider to provider. AWS Lambda is
 considered as one of first FaaS offerings. Now most cloud providers
 offer their own version of FaaS. Several popular FaaS providers are
-listed below.
+listed next.
 
 ## Serverless Computing
 

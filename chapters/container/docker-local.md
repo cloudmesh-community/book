@@ -76,7 +76,7 @@ Once installed execute the following command to make sure the installation is
  local$ sudo systemctl status docker
  ```
  
- This should give you an output similar to below.
+ This should give you an output similar to the next.
  
  ```bash
   docker.service - Docker Application Container Engine

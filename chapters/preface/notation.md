@@ -155,17 +155,30 @@ Whch renders as:
 
 This is the pythagoras theorem: $a^2+b^2=c^2$.
 
-## Tables {sec:tables}
+## Tables {#sec:tables}
 
 Tables can be placed in text as follows: 
+
+```
+: Sample Data Table {#tbl:sample-table}
+  
+x   y   z
+--- --- ---
+1   2   3
+4   5   42
+```
+
+As usual make sure the label is unique. When compiling it it will
+result in
 
 : Sample Data Table {#tbl:sample-table}
   
 x   y   z
 --- --- ---
 1   2   3
-4   5   6
+4   5   42
 
-The data in @tbl:sample-table was gathered from all the physics experiments...
+The data in @tbl:sample-table was gathered from all the experiments we
+conducted in the cloud and the overall result was $42$.
 
 
