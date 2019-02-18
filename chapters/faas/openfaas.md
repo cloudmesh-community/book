@@ -156,7 +156,7 @@ YAML file description is as follows
 
 * _handler_ - This is the folder / path fo the handler.py file and any other source code
 
-* _image_ - This is the Docker image name. If iit is being pushed to the Docker Hub, prefix should include Docker Hub accountn
+* _image_ - This is the Docker image name. If it is being pushed to the Docker Hub, prefix should include Docker Hub accountn
 
 
 Build the function:
