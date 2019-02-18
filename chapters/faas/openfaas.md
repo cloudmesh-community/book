@@ -146,15 +146,15 @@ functions:
 
 YAML file description is as follows
 
-* _gateway_- location to specify a remote gateway, the programming language, and location of the handler within the filesystem.
+* _gateway_- Location to specify a remote gateway, the programming language, and location of the handler within the filesystem.
 
-* _functions_ - this block defines the functions in our stack.
+* _functions_ - This block defines the functions in our stack.
 
-* _lang_: python - even though Docker is used behind the scenes to package your function. 
+* _lang_ - Programming language used. 
 
-* _handler_ - this is the folder / path fo the handler.py file and any other source code
+* _handler_ - This is the folder / path fo the handler.py file and any other source code
 
-* _image_ - this is the Docker image name. If iit is being pushed to the Docker Hub, prefix should include Docker Hub accountn
+* _image_ - This is the Docker image name. If iit is being pushed to the Docker Hub, prefix should include Docker Hub accountn
 
 
 Build the function:
@@ -195,4 +195,4 @@ faas-cli list
 
 ```bash
 echo "Test" | faas-cli invoke func-python
-```bash
+```
