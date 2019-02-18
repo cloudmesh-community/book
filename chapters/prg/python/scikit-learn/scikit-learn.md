@@ -41,6 +41,43 @@ Few of them are listed here
  2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
     deminsional  space to two or three dimension.
     
+# Building a end to end pipeline for Supervised machine learning using Scikit-learn
+
+---
+
+**:mortar_board: Learning Objectives**
+
+* Exploratory data analysis
+* Pipeline to prepare data
+* Full learning pipeline
+* Fine tune the model
+* Significance tests
+
+---
+
+A data pipeline is a set of processing componennts that are sequenced to 
+produce meaningfull data. Pipelines are commonly used in Machine learning, 
+since there is lot of data tranformation and manupulation that needs to be 
+applied to make data usefull for machine learning. All components are sequenced 
+in a way that the output of one component becomes input for the next and each of 
+the component is self contained. Components interact with each other using data.
+
+Even if a component breaks, the downstream component can run normally using 
+the last output. Sklearn provide the ability to build pipelines that can be 
+transformed and modelled for machine learning.
+
+
+## Steps for developing a machine learning model
+
+### Explore the domain space
+### Extract the problem definition
+### Get the data that can be used to make the system learn to solve the problem definition.
+### Discover and Visualize the data to gain insights
+### Feature engineering and prepare the data 
+### Fine tune your model
+### Evaluate your solution using metrics
+### Once proven launch and maintain the model.
+    
 ## K-means Algorithm
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
