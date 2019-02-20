@@ -84,14 +84,16 @@ data = pd.read_csv('dataset/PS_20174392719_1491204439457_log.csv')
 data.head()
 ```
 
-Now perform the basic analysis
+Perform the basic analysis on the data shape and null value information.
 
 ```python
 print(data.shape)
 print(data.info())
 data.isnull().values.any()
 ```
-Plot the data for advanced analysis
+Here is the example of few of the visual data analysis methods.
+
+### Bar plot 
 
 ```python
 
@@ -100,8 +102,73 @@ plt.xlabel('Type')
 data.type.value_counts().plot.bar()
 
 ```
+![scikit-learn](images/scikit-learn-barplot.PNG){#fig:scikit-learn-barplot}
 
-## K-means Algorithm
+### Correlation between attrbutes
+
+```python
+
+# compute the correlation matrix
+corr = data.corr()
+
+# generate a mask for the lower triangle
+mask = np.zeros_like(corr, dtype=np.bool)
+mask[np.triu_indices_from(mask)] = True
+
+# set up the matplotlib figure
+f, ax = plt.subplots(figsize=(18, 18))
+
+# generate a custom diverging colormap
+cmap = sns.diverging_palette(220, 10, as_cmap=True)
+
+# draw the heatmap with the mask and correct aspect ratio
+sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3,
+            square=True, 
+            linewidths=.5, cbar_kws={"shrink": .5}, ax=ax);
+
+```
+![scikit-learn](images/scikit-learn-correlationanalysis.PNG){#fig:scikit-learn-correlationanalysis}
+
+### Histogram Analysis of dataset attrbutes
+
+```python
+
+%matplotlib inline
+data.hist(bins=30, figsize=(20,15))
+plt.show()
+
+```
+
+![scikit-learn](images/scikit-learn-histograms.PNG){#fig:scikit-learn-histograms}
+
+## Box plot Analysis
+
+```python
+
+fig, axs = plt.subplots(2, 2, figsize=(10, 10))
+tmp = data.loc[(data.type == 'TRANSFER'), :]
+
+a = sns.boxplot(x = 'isFlaggedFraud', y = 'amount', data = tmp, ax=axs[0][0])
+axs[0][0].set_yscale('log')
+b = sns.boxplot(x = 'isFlaggedFraud', y = 'oldbalanceDest', data = tmp, ax=axs[0][1])
+axs[0][1].set(ylim=(0, 0.5e8))
+c = sns.boxplot(x = 'isFlaggedFraud', y = 'oldbalanceOrg', data=tmp, ax=axs[1][0])
+axs[1][0].set(ylim=(0, 3e7))
+d = sns.regplot(x = 'oldbalanceOrg', y = 'amount', data=tmp.loc[(tmp.isFlaggedFraud ==1), :], ax=axs[1][1])
+plt.show()
+
+```
+![scikit-learn](images/scikit-learn-boxplot.PNG){#fig:scikit-learn-boxplot}
+
+## Scatter plot Analysis
+
+```python
+
+plt.figure(figsize=(12,8))
+sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue='isFraud')
+
+```
+![scikit-learn](images/scikit-learn-scatterplot.PNG){#fig:scikit-learn-scatterplot}
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
 
