@@ -113,7 +113,7 @@ Console URL : [AWS Console URL](https://aws.amazon.com/console/).
 On successfull login, select RDS from the Database section or alternatively, 
 you can type RDS in the search bar to look up. (see @fig:aws-aurora-console)
 
-![AWS Aurora DB](images/AuroraDB-1.PNG){#fig:aws-aurora-console}
+![AWS Aurora DB](images/auroradb-1.png){#fig:aws-aurora-console}
 
 ### Step 2 : Click on Create Database
 
@@ -122,7 +122,7 @@ On the RDS home page, one can either click on the
 clcik on the "Create Database" button in the Create Database section
 (see @fig:aws-aurora-rdshome)
 
-![AWS Aurora DB](images/AuroraDB-2.PNG){#fig:aws-aurora-rdshome}
+![AWS Aurora DB](images/auroradb-2.png){#fig:aws-aurora-rdshome}
 
 ### Step 3 : Select Amazon Aurora Engine
 
@@ -135,14 +135,14 @@ At the time of writing this page, MySQL 5.6-compatible is comes with
 Serverless and Parallel Query capabilities, hence we will go with this option.
 (see @fig:aws-aurora-MySQL)
 
-![AWS Aurora DB](images/AuroraDB-3.PNG){#fig:aws-aurora-MySQL}
+![AWS Aurora DB](images/auroradb-3.png){#fig:aws-aurora-MySQL}
 
 ### Step 4 : Aurora Configuration and Settings
 
 Once we select the engine, next step is to select the Configuration
 and Setting.(see @fig:aws-aurora-config)
 
-![AWS Aurora DB](images/AuroraDB-4.PNG){#fig:aws-aurora-config}
+![AWS Aurora DB](images/auroradb-4.png){#fig:aws-aurora-config}
 
 #### Configuration
 
@@ -172,7 +172,7 @@ for the DB that can be used to manage the database once created.
 This page will help configure some additional settings for the database. We will
 cover them in the next few steps.(see @fig:aws-aurora-advconfig-1)
 
-![AWS Aurora DB](images/AuroraDB-5.PNG){#fig:aws-aurora-advconfig-1}
+![AWS Aurora DB](images/auroradb-5.png){#fig:aws-aurora-advconfig-1}
 
 ##### Network and Security
 
@@ -196,13 +196,13 @@ an availabiblity zone within the region. We dont have a specific preference for 
 This section will help define the database cluster, database name, port and 
 parameter groups.(see @fig:aws-aurora-advconfig-2)
 
-![AWS Aurora DB](images/AuroraDB-6.PNG){#fig:aws-aurora-advconfig-2}
+![AWS Aurora DB](images/auroradb-6.png){#fig:aws-aurora-advconfig-2}
 
 #### Step 7 : Configure Advance Settings - Encryption and Failover
 
 (see @fig:aws-aurora-advconfig-3)
 
-![AWS Aurora DB](images/AuroraDB-7.PNG){#fig:aws-aurora-advconfig-3}
+![AWS Aurora DB](images/auroradb-7.png){#fig:aws-aurora-advconfig-3}
 
 ##### Enryption
 
@@ -220,7 +220,7 @@ replica can be promoted as the primary node incase of a failure on the current w
 
 (see @fig:aws-aurora-advconfig-4)
 
-![AWS Aurora DB](images/AuroraDB-8.PNG){#fig:aws-aurora-advconfig-4}
+![AWS Aurora DB](images/auroradb-8.png){#fig:aws-aurora-advconfig-4}
 
 ##### Backtrack
 
@@ -238,7 +238,7 @@ utilization, storage used etc for reporting.
 
 (see @fig:aws-aurora-advconfig-5)
 
-![AWS Aurora DB](images/AuroraDB-9.PNG){#fig:aws-aurora-advconfig-5}
+![AWS Aurora DB](images/auroradb-9.png){#fig:aws-aurora-advconfig-5}
 
 ##### Log Exports
 
@@ -262,7 +262,7 @@ Click on submit once the advance conifg page is completed.
 To view the the instance creation status, click on View DB Instance button.
 (see @fig:aws-aurora-advconfig-submit)
 
-![AWS Aurora DB](images/AuroraDB-10.PNG){#fig:aws-aurora-advconfig-submit}
+![AWS Aurora DB](images/auroradb-10.png){#fig:aws-aurora-advconfig-submit}
 
 ### Step 11 : Wait for DB creation to complete
 
@@ -271,7 +271,7 @@ The writer and reader db nodes will be created under a single cluster.
 It takes around 20-25 minutes for the servers to be available for use.
 (see @fig:aws-aurora-submit)
 
-![AWS Aurora DB](images/AuroraDB-11.PNG){#fig:aws-aurora-submit}
+![AWS Aurora DB](images/auroradb-11.png){#fig:aws-aurora-submit}
 
 ## How to retrieve Aurora database connection details
 
@@ -284,29 +284,29 @@ without putting any addtional load on the primary writer node.
 The endpoint url, port needed to connect to the database can be retrieved by checking
 the Connectivity and Security tab.(see @fig:aws-aurora-connection)
 
-![AWS Aurora DB](images/AuroraDB-13.PNG){#fig:aws-aurora-connection}
+![AWS Aurora DB](images/auroradb-13.png){#fig:aws-aurora-connection}
 
 ## Other deatils available in Aurora DB Console
 
 ###  Monitoring Details
 
-![AWS Aurora DB](images/AuroraDB-14.PNG){#fig:aws-aurora-connection}
+![AWS Aurora DB](images/auroradb-14.png){#fig:aws-aurora-connection}
 
 ###  Logs and Events Details
 
-![AWS Aurora DB](images/AuroraDB-15.PNG)
+![AWS Aurora DB](images/auroradb-15.png)
 
 ###  Configruation Details
 
-![AWS Aurora DB](images/AuroraDB-12.PNG)
+![AWS Aurora DB](images/auroradb-12.png)
 
 ###  Tag Details
 
-![AWS Aurora DB](images/AuroraDB-16.PNG)
+![AWS Aurora DB](images/auroradb-16.png)
 
 ## Updates to Aurora DB
 
-![AWS Aurora DB](images/AuroraDB-17.PNG)
+![AWS Aurora DB](images/auroradb-17.png)
 
 ### Modify
 
