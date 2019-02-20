@@ -138,7 +138,6 @@ data.hist(bins=30, figsize=(20,15))
 plt.show()
 
 ```
-
 ![scikit-learn](images/scikit-learn-histograms.PNG){#fig:scikit-learn-histograms}
 
 ## Box plot Analysis
