@@ -7,6 +7,7 @@ Any program written in any language can be packaged as a function within in a co
 to convert all the old code to run on cloud-based infrastructure
 
 Few benefits of OpenFaas
+
 * Easy to Use
 * Deployable to private or public clouds in container
 * Simplicity in architecture and design
@@ -148,15 +149,11 @@ functions:
 
 YAML file description is as follows
 
-* _gateway_- Location to specify a remote gateway, the programming language, and location of the handler within the filesystem.
-
-* _functions_ - This block defines the functions in our stack.
-
-* _lang_ - Programming language used. 
-
-* _handler_ - This is the folder / path fo the handler.py file and any other source code
-
-* _image_ - This is the Docker image name. If it is being pushed to the Docker Hub, prefix should include Docker Hub accountn
+* *gateway*- Location to specify a remote gateway, the programming language, and location of the handler within the filesystem.
+* *functions* - This block defines the functions in our stack.
+* *lang* - Programming language used. 
+* *handler* - This is the folder / path fo the handler.py file and any other source code
+* *image* - This is the Docker image name. If it is being pushed to the Docker Hub, prefix should include Docker Hub accountn
 
 
 Build the function:
