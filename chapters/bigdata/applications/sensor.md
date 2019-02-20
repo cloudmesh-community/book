@@ -106,7 +106,7 @@ autonomous local power units where good use is made of waste heat.
 -   <http://www.getransportation.com/railconnect360/rail-landscape> [@www-getransportation-digital]
 -   <http://www.gesoftware.com/sites/default/files/GE-Software-Modernizing-Machine-to-Machine-Interactions.pdf> [@www-ge-digital-software]
 
-    resources below do not exsit:
+    These resources do not exsit:
 -   ~~<https://www.gesoftware.com/minds-and-machines>~~
 -   ~~<https://www.gesoftware.com/predix>~~
 -   ~~<https://www.gesoftware.com/sites/default/files/the-industrial-internet/index.html>~~

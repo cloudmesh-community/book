@@ -159,7 +159,7 @@ And verifying the hadoop installation,
     hadoop
 
 If you have successfully installed this, there must be a message shown
-as below.
+as next.
 
 ```
     Usage: hadoop [--config confdir] COMMAND

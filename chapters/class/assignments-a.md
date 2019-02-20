@@ -505,7 +505,7 @@ In case you chose a term Paper for I524 your maximum grade for the
 For the final project in this class you need to do the following.
 
 -   Find a dataset : A sample data repository can be found at the link
-    below however you are free to use data from elsewhere, like scikit
+    next however you are free to use data from elsewhere, like scikit
     learn libraries.
 
 -   Use Scikit Learn Library to run Machine Learning algorithm depending
