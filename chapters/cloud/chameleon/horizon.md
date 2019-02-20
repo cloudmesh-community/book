@@ -63,7 +63,7 @@ At this point the instance might still be booting: it might take a
 minute or two to actually be accessible on the network and accept SSH
 connections. In the meantime, you can attach a floating IP to the
 instance. Click on the "Associate Floating IP" button. You should get a
-screen like the one below: See @fig:floating-ip
+screen like this one: @fig:floating-ip
 
 ![Floating IP](images/Screen-Shot-2016-10-26-at-16-25-04.png){#fig:floating-ip}
 

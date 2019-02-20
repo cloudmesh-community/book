@@ -79,7 +79,7 @@ You should use this MAC address while launching a VM and the IP address
 to ssh to the VM. You also need the PCI device ID of the virtual
 function that you want to assign to the VM. This can be obtained by
 running \"lspci \| grep Mellanox\" and looking for the device ID (with
-format - XX:XX.X) of one of the virtual functions as shown below:
+format - XX:XX.X) of one of the virtual functions as shown next:
 
     [cc@host]$ lspci | grep Mellanox
     03:00.0 Network controller: Mellanox Technologies MT27500 Family [ConnectX-3]
@@ -133,7 +133,7 @@ Important Note for Tearing Down Virtual Machines and Deleting Network Ports
 Once you are done with your experiments, you should kill all the
 launched VMs and delete the created network ports. If you used the
 launch-hadoop-cluster.sh script to launch VMs, you can do this by
-running the kill-vms.sh script as shown below. This script will kill all
+running the kill-vms.sh script as shown next. This script will kill all
 launched VMs and also delete all the created network ports.
 
     [root@host]$ cd /home/cc                                                                 
