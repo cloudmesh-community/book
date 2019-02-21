@@ -28,7 +28,7 @@ The following features and benefits are highlighted by Amazon:
   open source databases and manage them for high availability.  This
   allows users to provision these open source databases through Amazon
   and still use existing code, tools and drivers with little change.
-* *High Performance*: Aurora offers upto 5 times the throughput of a
+* *High Performance*: Aurora offers up to 5 times the throughput of a
   standard MySQL database and 3 times throughput of standard
   PostGreSQL. All this is offered at a price point which 1/10th of a
   commercial database.
@@ -36,14 +36,14 @@ The following features and benefits are highlighted by Amazon:
   databases to smaller or larger sized servers based on the dynamic
   business needs to match the required compute power.  There is also a
   serverless offering where AWS to manages the scaling of compute
-  requirements.  Aurora also adds additional storage as needed upto
+  requirements.  Aurora also adds additional storage as needed up to
   64TB per instance as the data grows.
 * *High Availability and Durability*: Aurora DB offers multi AZ option
   to make the data replicated across more than one availability zone
   making the resilient to failures.  Data can be backed up to Amazon
   S3 to enable point in time recovery in case of errors.
 * *High Performance through Read Replicas*: Aurora DB offers to create
-  upto 15 low latency Read Reaplica nodes for a database which allows
+  up to 15 low latency Read Reaplica nodes for a database which allows
   for high performance. One can have writer node to write data into
   the database and use the Read Replica nodes ofr query data.
 * *Fully Managed*: Aurora comes as part of RDS suite where Amazon
@@ -224,7 +224,7 @@ current writer.
 ##### Backtrack
 
 Enabling this feature allows us to define a backtrack window in hours
-upto which one can do a point in time recovery in case of any failure.
+up to which one can do a point in time recovery in case of any failure.
 Number of hours of backtrack define the additional charges that we
 levied for the database.
 
@@ -365,6 +365,16 @@ for point in time recovery.
 
 :o: this section will include an example on how to interact with the
 AuroraDB in python.
+
+* <https://datascience-enthusiast.com/R/AWS_RDS_R_Python.html>
+* there are probably others, please develop your oen example
+
+
+## Exercises
+
+AuroraDB.1: define an exercise
+
+AuroraDB.2: define an exercise
 
 
 ## References
