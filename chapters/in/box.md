@@ -2,6 +2,8 @@
 
 :o: use `get()` for inline code text
 
+:o: some program lines are too long, try to use better line breaks.
+
 Box is cloud storage service that allows users to store, access,
 collaborate, and share files, similar to DropBox. However, while
 DropBox started out as a service for storing personal files, Box is
@@ -31,7 +33,7 @@ official limit on the number of files uploaded at one time, Box itself
 recommends users not exceed 100,000 files at a time.  Deleting a
 user's account also deletes all the information they own, which can be
 problematic for users leaving a company.  While Box has a collections
-feature, the only collection supported is the 'Favorites' collection,
+feature, the only collection supported is the `Favorites` collection,
 users are not able to make their own
 
 REST:
@@ -44,20 +46,23 @@ Installation:
 $ pip install boxsdk
 ```
 
-If you will be using JWT authentication for your app, you'll want to install its dependencies:
+If you will be using JWT authentication for your app, you will want to
+install its dependencies:
+
 ```bash
-    pip install "boxsdk[JWT]"
+$ pip install "boxsdk[JWT]"
 ```
+
 ## Creating an app
 
 Once you have created a Box account, go to the Developer Console and
-select 'Create New App'.  You will need to select what type of
+select `Create New App`.  You will need to select what type of
 application you are building and an authentication method for your app
 and then enter an app name (you can change this later). Once your app
 has been created, click View App. You will then need to click the
-profile button in the top right corner of the page, and go to 'Account
-Settings'. Scroll down to the Authentication section and click
-'Require 2-step verification for unrecognized logins', then follow the
+profile button in the top right corner of the page, and go to `Account
+Settings`. Scroll down to the Authentication section and click
+`Require 2-step verification for unrecognized logins`, then follow the
 prompts.
 
 The following examples have been adapted from <https://developer.box.com/reference>.
@@ -65,8 +70,8 @@ The following examples have been adapted from <https://developer.box.com/referen
 ### Authentication with JWT
 
 In the Configuration panel of the Developer Console, scroll down to
-the section titled 'Add and Manage Public Keys' and click 'Generate a
-Public/Private Keypair':
+the section titled `Add and Manage Public Keys` and click `Generate a
+Public/Private Keypair`:
 
 ![Box Add Key](image/box_add_key.png)
 
@@ -96,7 +101,8 @@ A call to get() will return general information about a Box object,
 including id, name, and other object specific information.
 
 ```python
-# Get information about the logged in user (that's whoever owns the developer token):
+# Get information about the logged in user
+# (that is whoever owns the developer token):
 user = client.user().get()
 print(user.name)
 print(user.login)
