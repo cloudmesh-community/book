@@ -674,6 +674,36 @@ $endif$
 \usepackage{graphicx}
 \input{gpath}
 
+%\usepackage[utf8]{inputenc}
+%\usepackage{coloremoji}
+
+
+
+\DeclareUnicodeCharacter{1F195}{NEW}
+\DeclareUnicodeCharacter{1F393}{HAT}
+\DeclareUnicodeCharacter{1F3AC}{\includegraphics[height=10pt]{images/clapper.png}}
+\DeclareUnicodeCharacter{1F44B}{WAVE}
+\DeclareUnicodeCharacter{1F4A1}{BULB}
+\DeclareUnicodeCharacter{1F4A5}{BANG}
+\DeclareUnicodeCharacter{1F4DC}{SCROLL}
+\DeclareUnicodeCharacter{1F4DD}{PEN}
+\DeclareUnicodeCharacter{1F603}{SMILEY}
+\DeclareUnicodeCharacter{1F604}{IMILEY}
+\DeclareUnicodeCharacter{2601}{CLOUD}
+\DeclareUnicodeCharacter{26A0}{WARNING}
+\DeclareUnicodeCharacter{2705}{CHECKMARK}
+\DeclareUnicodeCharacter{270B}{HAND}
+\DeclareUnicodeCharacter{2753}{QUESTION}
+\DeclareUnicodeCharacter{2B50}{STAR}
+\DeclareUnicodeCharacter{2B55}{CIRCLE}
+\DeclareUnicodeCharacter{FE0F}{QUESTION}
+
+%\DeclareUnicodeCharac   (U+200A)
+% ​ (U+200B)
+% ─ (U+2500)
+% └ (U+2514)
+
+
 %%
 %% end added
 %%
