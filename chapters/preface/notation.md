@@ -1,4 +1,4 @@
-# Notation
+# Notation {#sec:notation}
 
 
 :cloud: `:cloud:`
@@ -80,7 +80,7 @@ surrounded by bars* using the `:bulb:` emoji
 ---
 
 Figures have a caption and can be refereed to in the epub simple with a number. We show such a refernce 
-pointer while refering to +@fig:code-example. 
+pointer while refering to @fig:code-example. 
 
 ![Figure example](images/code.png){#fig:code-example width=1in}
 
@@ -90,7 +90,7 @@ Figures must be written in the md as
 ![Figure example](images/code.png){#fig:code-example width=1in}
 ```
 
-You can refer to them with `+@fig:code-example`. Please note in order for numbering to work 
+You can refer to them with `@fig:code-example`. Please note in order for numbering to work 
 figure refernces must include the `#fig:` followed by a unique
 identifier. Please note that identifiers must be realy unique and that
 identifies such as `#fig:cloud` or similar simple identifiers are a
@@ -116,18 +116,41 @@ use an ePub reader.*
 
 ---
 
-Abbreviations :o:
+## Hyperlinks in the document
 
-THis does not yet work
+To create hyperlinks in the document other than images, we need to
+use proper markdown syntax in the source. This is achieved with a
+refernce for example in sections headers. Let us discuss the
+refernce header for this section, e.g. Notation. We have augmented
+the section header as follows:
 
-Abbreviations can be stored in the file chapters/dbase and used as
-follows while using the video abbreviation
+```# Notation {#sec:notation}```
+
+Now we can use the refernce in the text as follows:
+
+```In #sec:notation we explain ...```
+
+It will be rendered as: In @sec:notation we
+explain ...
 
 
-```
-+video
-```
+## Equations {#sec:equations}
 
-+video
+Equations can be written as
 
-It uses the filter defined at <https://github.com/scokobro/pandoc-abbreviations>
+```$$a^2+b^2=c^2$${#eq:pytagoras}```
+
+and used in text: 
+
+$$a^2+b^2=c^2$${#eq:pytagoras}
+
+It will render as: As we see in @eq:pytagoras. 
+
+The equation number is optional. Inline equations just use one dollar
+sign and do not need an equation number:
+
+```This is the pythagoras theorem: $a^2+b^2=c^2$```
+
+Whch renders as:
+
+This is the pythagoras theorem: $a^2+b^2=c^2$.

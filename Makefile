@@ -1,11 +1,33 @@
+.PHONY: cloud
+
+VERSION=1.7
+
 all: cloud-epub bigdata-epub
 	echo done
+
+update:
+	cd big-data-applications; make update
+	cd pi; make update
+	cd cloud; make update
+	cd 222; make update
+	cd draft; make update
+
+
+publish: cloud-epub-publish bigdata-epub-publish
+	echo done
+
 
 cloud-epub:
 	cd cloud; make; make publish
 
+cloud-epub-publish:
+	cd cloud; make publish
+
 bigdata-epub:
 	cd big-data-applications; make; make publish
+
+bigdata-epub-publish:
+	cd big-data-applications; make publish
 
 communicate-epub:
 	cd communicate; make; make publish
@@ -13,13 +35,13 @@ communicate-epub:
 
 
 image:
-	docker build -t cloudmesh-community/book:1.0 . 
+	docker build -t cloudmesh/book:${VERSION} . 
 
 image-push:
-	docker push cloudmesh/technologies
+	docker push cloudmesh/book
 
 shell:
-	docker run --rm -it cloudmesh-community/book:1.0  /bin/bash 
+	docker run -v `pwd`:/book -w /book --rm -it cloudmesh/book:${VERSION}  /bin/bash 
 
 docker-clean:
 	-docker kill $$(docker ps -q)
@@ -27,7 +49,7 @@ docker-clean:
 	-docker rmi $$(docker images -q)
 
 docker-push:
-	docker push cloudmesh-community/book:1.0
+	docker push cloudmesh/book:${VERSION}
 
-run:
-	docker run cloudmesh-community/book:1.0 /bin/sh -c "cd technologies; git pull; make"
+cloud:
+	docker run -v `pwd`:/book -w /book cloudmesh/book:${VERSION} /bin/sh -c "cd /book/cloud; git pull; make"

@@ -1,1 +1,0 @@
-# Cloud Foundary :o: :hand:

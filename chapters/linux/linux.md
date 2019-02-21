@@ -80,8 +80,8 @@ command.
 | less *a*                          | print paged content of file *a*   |
 | head -5 *a*                       | Display first 5 lines of file *a* |
 | tail -5 *a*                       | Display last 5 lines of file *a*  |
-| `du -hs .`                        | show in human readable form the space used by the current directory |
-| `df -h`                           | show the details of the disk file system |
+| du -hs .                          | show in human readable form the space used by the current directory |
+| df -h                             | show the details of the disk file system |
 | wc *filename*                     | counts the word in a file         |
 | sort *filename*                   | sorts the file                    |
 | uniq *filename*                   | displays only uniq entries in the file |
@@ -292,6 +292,59 @@ at <http://www.cs.jhu.edu/~joanne/unixRC.pdf>.
 Makefiles can easily be accessed also on windows while installing
 gitbash. Please reed to the internet or search in this handbook for more
 information about gitbash.
+
+## chmod
+
+The chmod command stand for *change mode* and changes the access
+permissions for a given file system object(s). It uses the following
+syntax: `chmod [options] mode[,mode] file1 [file2…]`. The option
+parameters modify how the process runs, including what information is
+outputted to the shell:
+
+| Option: | Description: |
+| ----- | ---------- |
+| `-f`, `--silent`, `--quiet` |	Forces process to continue even if errors occur |
+| `-v`, `--verbose` | Outputs for every file that is processed |
+| `-c`, `--changes` |	Outputs when a file is changed |
+| `--reference=RFile` | Uses RFile instead of Mode values |
+| `-R`, `--recursive` | Make changes to objects in subdirectories as well |
+| `--help` | Show help |
+| `--version` | Show version information |
+
+Modes specify which rights to give to which users. Potential users
+include the user who owns the file, users in the file’s Group, other
+users not in the file’s Group, and all, and are abbreviated as `u`,
+`g`, `o`, and `a` respectively. More than one user can be specified in
+the same command, such as
+`chmod –v ug(operator)(permissions) file.txt `.
+If no user is specified, the command defaults to
+`a`. Next, a `+` or `-` indicates whether permissions should be added
+or removed for the selected user(s). The permissions are as follows:
+
+| Permission:	| Description: |
+| ----------- | ------------ |
+| `r` |	Read |
+| `w` | Write |
+| `x` | Execute file or access directory |
+| `X` | Execute only if the object is a directory |
+| `s` | Set the user or group ID when running |
+| `t` | Restricted deletion flag or sticky mode |
+| `u` | Specifies the permissions the user who owns the file has |
+| `g` | Specifies the permissions of the group |
+| `o` | Specifies the permissions of users not in the group |
+
+More than one permission can be also be used in the same command as
+follows:
+
+```bash
+$ chmod –v o+rw file.txt
+```
+
+Multiple files can also be specified:
+
+```bash
+$ chmod a-x,o+r file1.txt file2.txt
+```
 
 ## Exercises
 

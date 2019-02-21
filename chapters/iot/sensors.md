@@ -1,12 +1,12 @@
-Sensors :smiley: fa18-523-84
-=======
+# Sensors :smiley: fa18-523-84
+
 
 This section contains the wiring diagrams and associated classes for sensors that can be used with the Raspberry Pi.  In addition to the individual sensors an example project is also included.  Before getting started with sensors for the Raspberry Pi you will need to ensure that the Pi is set up with python3 and has the latest version of Raspbian installed.  Instructions for setting up the Raspberry Pi can be found [here.](https://github.com/cloudmesh-community/book/blob/master/chapters/iot/pi.md)  
 
 DS18B20 Temperature Sensor
 --------------------------
 
-The DS18B20 is a thermoresistive temperature sensor and can be found in many of the sensor kits referenced in this book.  To set up the DS18B20 connect the jumper wires as shown in +@fig:ds18b20_setup.  If you have an individual sensor instead of a sensor module you will need to use a 4.7k ohm resistor as shown in the diagram.  The resistor allows the one wire interface to work properly and should be used to avoid damage to the sensor [@DS18B20_resistor].  If you have a DS18B20 module it may already include a resistor and you will not need to add another.  Be sure to check before setting up your sensor. 
+The DS18B20 is a thermoresistive temperature sensor and can be found in many of the sensor kits referenced in this book.  To set up the DS18B20 connect the jumper wires as shown in @fig:ds18b20_setup.  If you have an individual sensor instead of a sensor module you will need to use a 4.7k ohm resistor as shown in the diagram.  The resistor allows the one wire interface to work properly and should be used to avoid damage to the sensor [@DS18B20_resistor].  If you have a DS18B20 module it may already include a resistor and you will not need to add another.  Be sure to check before setting up your sensor. 
 
 ![DS18B20 Setup](images/DS18B20_setup.png){#fig:ds18b20_setup}
 
@@ -24,7 +24,7 @@ Temperature and Humidity Sensor Module
 
 The temperature and humidity sensor used in this example is the DHT11 sensor which can be purchased as a part of the [Kookye Smart Home Sensor kit](https://www.amazon.com/gp/product/B01J9GD3DG/ref=oh_aui_detailpage_o03_s01?ie=UTF8&psc=1) or the [Elegoo Uno Kit.](https://www.amazon.com/ELEGOO-Project-Starter-Tutorial-Arduino/dp/B01D8KOZF4/ref=sr_1_6?s=electronics&ie=UTF8&qid=1542065611&sr=1-6&keywords=dht11+temperature+and+humidity+module).  The humidity component of the DHT11 works by measuring the conductivity between two electrodes. Between these electrodes there is a substrate that holds moisture and as the moisture changes the conductivity changes [@How_DHT11_Works]. The temperature sensor of the DHT11 works in the same way as the DS18B20.
 
-To set up the DHT11 sensor connect jumper wires to the Raspberry Pi as shown in +@fig:dht11_setup.  Ensure that the ground wire of the DHT11 is connected to the ground rail of the breadboard or a ground pin on the Raspberry Pi.  The VCC wire of the DHT11 should be connected to 3.3v from the Raspberry Pi.  To receive data the middle pin should be connected to one of the GPIO pins on the Raspberry Pi.  In this example and associated code we connect the data wire to GPIO 4 on the Raspberry Pi as shown in +@fig:dht11_setup.
+To set up the DHT11 sensor connect jumper wires to the Raspberry Pi as shown in @fig:dht11_setup.  Ensure that the ground wire of the DHT11 is connected to the ground rail of the breadboard or a ground pin on the Raspberry Pi.  The VCC wire of the DHT11 should be connected to 3.3v from the Raspberry Pi.  To receive data the middle pin should be connected to one of the GPIO pins on the Raspberry Pi.  In this example and associated code we connect the data wire to GPIO 4 on the Raspberry Pi as shown in @fig:dht11_setup.
 
 ![DHT11 Setup](images/DHT11_setup.png){#fig:dht11_setup}  
 
@@ -45,7 +45,7 @@ Once you have set up the Adafruit_DHT module you can use the python class to dis
 Photosensitive Light Sensor Module
 ----------------------------------
 
-The light sensor used in this example can be purchased [individually](https://www.amazon.com/Gowoops-Digital-Intensity-Detection-Photosensitive/dp/B01N1FKS4L/ref=sr_1_3?ie=UTF8&qid=1543528066&sr=8-3&keywords=arduino+light+sensor+module) or as part of a sensor kit.  To set up the light sensor module connect the wires to the Raspberry Pi as shown in +@fig:light_setup.  The sensor shown in this example has three pins.  However, some sensor modules may have four pins.  In most cases the extra pin is not necessary.
+The light sensor used in this example can be purchased [individually](https://www.amazon.com/Gowoops-Digital-Intensity-Detection-Photosensitive/dp/B01N1FKS4L/ref=sr_1_3?ie=UTF8&qid=1543528066&sr=8-3&keywords=arduino+light+sensor+module) or as part of a sensor kit.  To set up the light sensor module connect the wires to the Raspberry Pi as shown in @fig:light_setup.  The sensor shown in this example has three pins.  However, some sensor modules may have four pins.  In most cases the extra pin is not necessary.
 
 ![Light Sensor Setup](images/light_setup.png){#fig:light_setup}
 
@@ -56,7 +56,7 @@ Once you have set up the light sensor you can use the light_sensor class to retr
 Capacitive Touch Sensor Module
 ------------------------------
 
-In this example we are using a [momentary capacitive touch sensor](https://www.adafruit.com/product/1374).  The sensor kits mentioned in this book will also contain this sensor.  To set up the touch sensor connect the wires to the Raspberry Pi as shown in +@fig:touch_setup.  
+In this example we are using a [momentary capacitive touch sensor](https://www.adafruit.com/product/1374).  The sensor kits mentioned in this book will also contain this sensor.  To set up the touch sensor connect the wires to the Raspberry Pi as shown in @fig:touch_setup.  
 
 ![Touch Sensor Setup](images/touch_setup.png){#fig:touch_setup}
 
@@ -67,7 +67,7 @@ Once you have set up the sensor you can use the touch_sensor class to execute an
 Relay Module
 ----------------------
 
-The relay module can be used as a switch to complete a circuit.  The module can be purchased as an individual component or may be included on a board with 2, 4 or more relay switches.  In this example we will be using a two channel relay module. To set up the relay module connect the wires to the Raspberry Pi as shown in +@fig:relay_setup.  
+The relay module can be used as a switch to complete a circuit.  The module can be purchased as an individual component or may be included on a board with 2, 4 or more relay switches.  In this example we will be using a two channel relay module. To set up the relay module connect the wires to the Raspberry Pi as shown in @fig:relay_setup.  
 
 ![Relay Module Setup](images/relay_setup.png){#fig:relay_setup}
 
@@ -78,7 +78,7 @@ Once the module is set up you can use the relay_switch class to turn the relays 
 16 x 2 LCD Screen
 -----------------
 
-The 16x2 LCD screen can be used as a display for the Raspberry Pi.  To set up the LCD screen connect the wires as shown in +@fig:LCD_setup.  You will also need two potentiometers in order to adjust the contrast and the brightness.
+The 16x2 LCD screen can be used as a display for the Raspberry Pi.  To set up the LCD screen connect the wires as shown in @fig:LCD_setup.  You will also need two potentiometers in order to adjust the contrast and the brightness.
 
 ![LCD Setup](images/lcd_setup.png){#fig:lcd_setup}
 
@@ -130,11 +130,11 @@ If using the LED's you will want the additional components listed below:
   * 3 additional male to male jumper wires
   * 4 additional male to female jumper wires
 
-Once you have the necessary components you will need to connect the wires as shown in +@fig:smart_therm.  The LED lights in this example represent the connections to the actual thermostat. It is suggested that you test the set up using the LED's to ensure that everything is wired correctly and that you are getting the expected results.  We will cover how to connect the smart thermostat to your HVAC system later in this example. For this project three separate breadboards are used to hold different components.  The first one will hold the LCD and potentiometers used to adjust contrast and brightness.  The second will hold all of the sensors and the third will be used to either hold the LED's or distribute power from the HVAC system.
+Once you have the necessary components you will need to connect the wires as shown in @fig:smart_therm.  The LED lights in this example represent the connections to the actual thermostat. It is suggested that you test the set up using the LED's to ensure that everything is wired correctly and that you are getting the expected results.  We will cover how to connect the smart thermostat to your HVAC system later in this example. For this project three separate breadboards are used to hold different components.  The first one will hold the LCD and potentiometers used to adjust contrast and brightness.  The second will hold all of the sensors and the third will be used to either hold the LED's or distribute power from the HVAC system.
 
 ![Smart_Thermostat Setup](images/smart_therm_diagram.png){#fig:smart_therm}
 
-Once all of the components are connected as shown in +@fig:smart_therm we need to test each of the sensors.  To do this we will first need to set up the raspberry pi.  This can be done by running the thermostat_setup.sh shell script.  To run this open a terminal and type ```nano thermostat_setup.sh``` then copy the code from [thermostat_setup.sh](https://github.com/cloudmesh-community/fa18-523-84/blob/master/paper/code/thermostat_setup.sh).  Once you have copied the code, close the editor and run ```chmod u+x thermostat_setup.sh```.  Then run ```./thermostat_setup.sh``` to run the code to add the code and dependencies needed for this project.
+Once all of the components are connected as shown in @fig:smart_therm we need to test each of the sensors.  To do this we will first need to set up the raspberry pi.  This can be done by running the thermostat_setup.sh shell script.  To run this open a terminal and type ```nano thermostat_setup.sh``` then copy the code from [thermostat_setup.sh](https://github.com/cloudmesh-community/fa18-523-84/blob/master/paper/code/thermostat_setup.sh).  Once you have copied the code, close the editor and run ```chmod u+x thermostat_setup.sh```.  Then run ```./thermostat_setup.sh``` to run the code to add the code and dependencies needed for this project.
 
 Once the thermostat_setup.sh script has finished running there will be a new directory containing the code for this project.  Navigate to this directory with ```cd ~/git-repos/fa18-523-84/paper/code```.  We will now test each of the components by running the following commands.
 
@@ -149,15 +149,15 @@ Once you have tested the components and have ensured that they work you can run 
 
 [Smart Thermostat Code](https://github.com/cloudmesh-community/fa18-523-84/blob/master/paper/code/smart_therm_not_connected.py)
 
-Now that we have tested each of the components and have tested the smart thermostat code using the LED's we can connect to the HVAC system. Each HVAC system is different so be sure to do some research on how your specific system works.  Generally there will be a power wire that you can connect to the relay switch and then connect the other wires to the appropriate terminals [@Smart_therm_example].  Based on the readings from the other sensors the code will determine which relay to turn on, which will complete the circuit sending a signal to the HVAC system.  The system used in this example is shown in +@fig:wiring_start.  For this system the red wire is 24v power, green connects to the fan, white connects to the heat, yellow connects to the AC compressor and blue is ground [@Smart_therm_example].
+Now that we have tested each of the components and have tested the smart thermostat code using the LED's we can connect to the HVAC system. Each HVAC system is different so be sure to do some research on how your specific system works.  Generally there will be a power wire that you can connect to the relay switch and then connect the other wires to the appropriate terminals [@Smart_therm_example].  Based on the readings from the other sensors the code will determine which relay to turn on, which will complete the circuit sending a signal to the HVAC system.  The system used in this example is shown in @fig:wiring_start.  For this system the red wire is 24v power, green connects to the fan, white connects to the heat, yellow connects to the AC compressor and blue is ground [@Smart_therm_example].
 
 ![HVAC Wiring](images/wiring_start.JPG){#fig:wiring_start}
 
-To connect the Raspberry Pi smart thermostat to the system we need a way to supply power to each of the signal wires.  To do this we can use a breadboard to supply power to each of the three relay switches as shown in +@fig:wiring_final.  When the relay switch is activated the signal will be supplied to the appropriate wire.
+To connect the Raspberry Pi smart thermostat to the system we need a way to supply power to each of the signal wires.  To do this we can use a breadboard to supply power to each of the three relay switches as shown in @fig:wiring_final.  When the relay switch is activated the signal will be supplied to the appropriate wire.
 
 ![HVAC Wiring Final](images/wiring_final.JPG){#fig:wiring_final}
 
-Once the system is wired correctly we can test the code again now that it is wired to the HVAC system.  Running ```python3 smart_therm_not_connected.py``` will start the program but to run the program in the background use ```nohup python3 smart_therm_not_connected.py &```.  When running the program in the background the output will be saved to the nohup.out file.  Now you can adjust settings in the program to make your HVAC system more efficient.  The final result is shown in +@fig:smart_therm_final.  Also in this book you can find [an example]() which connects the smart thermostat to a database to store data and also allows anyone on the local network to change settings.
+Once the system is wired correctly we can test the code again now that it is wired to the HVAC system.  Running ```python3 smart_therm_not_connected.py``` will start the program but to run the program in the background use ```nohup python3 smart_therm_not_connected.py &```.  When running the program in the background the output will be saved to the nohup.out file.  Now you can adjust settings in the program to make your HVAC system more efficient.  The final result is shown in @fig:smart_therm_final.  Also in this book you can find [an example]() which connects the smart thermostat to a database to store data and also allows anyone on the local network to change settings.
 
 ![Smart Thermostat Final](images/smart_therm_final.JPG){#fig:smart_therm_final}
 

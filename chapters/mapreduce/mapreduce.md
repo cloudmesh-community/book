@@ -29,7 +29,7 @@ we do not loose much on communication of data from place to another.
 
 MapReduce can operate on a filesystem, which is an unstructured data
 or a database, a structured data and these are the following three
-stages of its operation (see +@fig:mapreduce_diagram):
+stages of its operation (see @fig:mapreduce_diagram):
 
 1. **Map**: This method processes the very initial data set. Generally,
    the data is in file format which can be stored in HDFS (Hadoop File
@@ -62,7 +62,7 @@ parallel operation cannot happen. Also master can get over-burdened
 and fail.  In MapReduce approach, Master node distributes the data to
 the worker machines which are in themselves a processing unit. So all
 worker process the data in parallel and the time taken to process the
-data is reduced tremendously. (see +@fig:mapreduce-master-worker)
+data is reduced tremendously. (see @fig:mapreduce-master-worker)
 
 ![MapReduce Master worker diagram](images/mapreduce-master-worker.png){#fig:mapreduce-master-worker}
 
@@ -84,7 +84,7 @@ Bear, Camel, Cat, Camel
 6. After that, each reducer will count the total number of 1s and
    assigns final count to each word.
 7. The final output is then written to a file. (see
-   +@fig:mapreduce_wordcount)
+   @fig:mapreduce_wordcount)
 
 ![MapReduce WordCount [@www-edureka-hadoop-mapreduce] ](images/mapreduce_wordcount.png){#fig:mapreduce_wordcount}
 
@@ -144,7 +144,7 @@ In earlier version of Hadoop, we could use MapReduce with HDFS
 directly but from 2.0 onwards, YARN(Cluster Resource Management) is
 introduced which acts as a layer between MapReduce and HDFS and using
 this YARN, many other BigData frameworks can connect to HDFS as
-well. (see +@fig:mapreduce_hadoop_spark)
+well. (see @fig:mapreduce_hadoop_spark)
 
 ![MapReduce Hadoop and Spark [@www-youtube-hadoop-mapreduce] ](images/mapreduce_hadoop_spark.png){#fig:mapreduce_hadoop_spark}
  

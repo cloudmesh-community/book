@@ -25,7 +25,7 @@ satellites NASA manages. The ESDIS project, on the other hand, manages the
 downstream processes and capabilities which include *"generation of higher level
 (Level 1-4) science data products for EOS missions; archiving and distribution
 of data products from EOS and other satellite missions, as well as aircraft
-and field measurement campaigns"* [@earthdata-about]. +@fig:use-cases-es-esdops
+and field measurement campaigns"* [@earthdata-about]. @fig:use-cases-es-esdops
 depicts the overall context of EOSDIS and ESDIS in Earth Science data
 operations [@earthdata-about].
 
@@ -38,7 +38,7 @@ Team's affiliate research center. Furthermore, these higher level products are
 then ingested and cataloged by an affiliate Distributed Active Archive Center
 (DAAC) for the purpose of providing public distribution, access, and discovery
 to these datasets. Historically, these DAACs provide their capability using
-on-premise resources and compute as well. +@fig:sips-daac-centers
+on-premise resources and compute as well. @fig:sips-daac-centers
 depicts the geographic locations of the various on-premise SIPSs and DAACs
 that generate and distribute the various NASA EOS datasets
 [@nasa-eosdis-cumulus].
@@ -66,7 +66,7 @@ higher-level data products by the SIPSs.
 
 One such mission is the upcoming NASA/Indian Space Research Organisation (ISRO)
 Synthetic Aperture Radar (NISAR) mission that is currently schedule to launch
-in 2021 +@fig:nisar-satellite:
+in 2021 @fig:nisar-satellite:
 
 *Using advanced radar imaging that will provide an unprecedented, detailed
 view of Earth, the NASA-ISRO Synthetic Aperture Radar, or NISAR, satellite
@@ -77,7 +77,7 @@ landslides.* [@nisar-mission]
 
 ![NISAR [@nisar-mission]](images/use-cases-es-nisar.png){#fig:nisar-satellite}
 
-+@fig:mission-data-vols presents the data volume requirements for current
+@fig:mission-data-vols presents the data volume requirements for current
 (OCO-2 & SMAP) and future (NISAR & SWOT) NASA missions and highlights the
 upcoming big data volume for NISAR in particular [@sds-considerations].
 
@@ -91,7 +91,7 @@ and *"places considerable demands on the logistics of shipping data and on
 computational speed and efficiency"* [@getting-ready-for-nisar]. Additionally,
 Skytland notes that *"as our wealth of data increases, the challenge of
 indexing, searching, transferring, and so on all increase exponentially as
-well"* [@nasa-big-data]. +@fig:eosdis-growth shows EOSDIS current holdings
+well"* [@nasa-big-data]. @fig:eosdis-growth shows EOSDIS current holdings
 and projected growth [@nasa-eosdis-cumulus].
 
 ![EOSDIS Holdings and Projected Growth [@nasa-eosdis-cumulus]](images/use-cases-es-datavols-growth.png){#fig:eosdis-growth}
@@ -147,7 +147,7 @@ service providers, and end users all adapt their previously on-premise
 resources, infrastructure, and analysis tools over to cloud-native
 implementations. The essential premise is that all stakeholders must buy into
 moving their compute to the data; no longer moving the data to their compute.
-+@fig:eosdis-data-lake depicts the concept of an EOSDIS data lake and highlights
+@fig:eosdis-data-lake depicts the concept of an EOSDIS data lake and highlights
 the assumptions that [@sds-considerations]:
 
 - all data produced by the satellites and SIPSs (SDS) are stored in a cloud

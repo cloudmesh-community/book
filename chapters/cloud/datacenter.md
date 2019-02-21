@@ -1,8 +1,5 @@
 # Data Center {#sec:data-center}
 
-:question: indicates opportunities for comprehension assignments while
-contributing to this document.
-
 ---
 
 **:mortar_board: Learning Objectives**
@@ -17,7 +14,7 @@ contributing to this document.
 
 ## Motivation: Data
 
-Before we go into the details of a data center we like to motivate why
+Before we go into more details of a data center we like to motivate why
 we need them.  Here we start with looking at the amount of data that
 recently got created and provide one of many motivational aspects. Not
 all data will or should be stored in data centers. However a
@@ -33,62 +30,57 @@ how much i created in one minute instead. Such depictions include
 samples of data created as a part of popular cloud services or the
 internet in general.
 
-One such popular depiction is "Data Never Sleeps". It has been
-produced a number of times over the years and is now at version 6.0
-released in 2017. If you identify a newer version, please let us know.
-It is worth while to study this image in detail and identify some of
-the data that you can relate to of service you use. It is also a
-possible indication to study other services that are mentioned. A
-staggering 3.8Mil google searches are executed every minute.
-Surprisingly the weather channel receives over 18Mil forecast requests
-which is even higher than the 12Mil text messages send every minute.
-Youtube certainly serving a significant number of users by 4.3Mil
-videos watched every minute. Naturally the numbers are averages over
-time.
+One such popular depiction is *Data Never Sleeps* (see
+@fig:data-never-sleeps). It has been produced a number of times over
+the years and is now at version 6.0 released in 2017. If you identify
+a newer version, please let us know. It is worth while to study this
+image in detail and identify some of the data that you can relate to
+of service you use. It is also a possible indication to study other
+services that are mentioned. A staggering 3.8Mil google searches are
+executed every minute. Surprisingly the weather channel receives over
+18Mil forecast requests which is even higher than the 12Mil text
+messages send every minute. Youtube certainly serving a significant
+number of users by 4.3Mil videos watched every minute. Naturally the
+numbers are averages over time.
 
-
-![Data Never Sleeps](images/data-never-sleeps-6.png)
-
-Source: <https://www.domo.com/blog/wp-content/uploads/2018/06/18-domo-data-never-sleeps-6.png>
+![Data Never Sleeps  [@www-image-data-never-sleeps-6]](images/data-never-sleeps-6.png){#fig:data-never-sleeps}
 
 A different source publishes what is happening on the internet in a
-minute, but we have been able to locate a version from 2018. While
+minute, but we have been able to locate a version from 2018 (see @fig:internet-minutes-2018). While
 some data seems the same, others are slightly different. For example
 this graph has a lower count for Google searches, while the number of
-text messages send is significantly higher in contrast to the previous
-figure.
+text messages send is significantly higher in contrast to @fig:data-never-sleeps.
 
-![](images/internet-minute-2018.jpg)
-
-Source: <https://www.allaccess.com/merge/archive/28030/2018-update-what-happens-in-an-internet-minute>
+![Internet Minute 2018 [@www-internet-minute-2017-2018]](images/internet-minute-2018.jpg){#fig:internet-minutes-2018}
 
 While reviewing the image from last year from the same author, we find
 not only increases, but also declines. Looking at facebook showcases a
 loss of 73000 logins per minute. This loss is substantial. We can see
 that facebook services are replaced by other services that are more
 popular with the younger generation who tend to pick up new services
-quickly.
+quickly (see @fig:internet-minutes-2017-2018).
 
 
-![](images/internet-minute-2017-2018.jpg)
-
-Source: <https://www.allaccess.com/assets/img/content/merge/2018/m-04-03-pic1-lg.jpg>
+![Internet Minute 2017-2018 [@www-internet-minute-2017-2018]](images/internet-minute-2017-2018.jpg){#fig:internet-minutes-2017-2018}
 
 
 It is also interesting to compare such trends over a longer period of
-time. An example is provided by looking at Google searches:
-<http://www.internetlivestats.com/google-search-statistics/>.
+time (see @fig:google-search-per-year, @fig:big-data-trend-2012). An
+example is provided by looking at Google searches
 
-![](images/google-search.png)
+* <http://www.internetlivestats.com/google-search-statistics/>.
 
-**Figure:** Google searches over time
+and visualized in @fig:google-search-per-year.
 
-![](images/bd-forbes-trend.png)
+![Google searches over time](images/google-search.png){#fig:google-search-per-year}
+
+
+![Big data trend. 2012 [@www-bigdata-36-month]](images/bd-forbes-trend.png){#fig:big-data-trend-2012}
+
 
 When looking at the trends, many predict an exponential growth in data.
 This trend is continuing.
 
-**Figure:** Big data trend. 2012, Source: <https://blogs-images.forbes.com/christopherfrank/files/2012/03/VI_BigData_Graphic_v3_low.png>
 
 
 <!--
@@ -121,7 +113,7 @@ part of an organization or a virtual organization. However, we see
 that even in the research community data centers not only host
 supercomputers, but also Web server infrastructure and these days even
 private clouds that support the organizational users. In case of the
-latter we speak about supporting the "long tail about science".
+latter we speak about supporting the *long tail about science*.
 
 The later is driven by the 80%-20% rule. E.g. 20% of the users use 80%
 of the compute power. This means that the top 20% of scientists are
@@ -171,37 +163,37 @@ In general a data center will have the following components.
 
   With regards to the number of people serving such a facility it is
   obvious that through automation is quite low. According to
-  (<https://journal.uptimeinstitute.com/data-center-staffing/>) proper
-  data center staffing is a key to a reliable operation.
+  [@www-datacenter-staffing] proper
+  data center staffing is a key to a reliable operation (see @fig:datacenter-staff-impact).
 
-![](images/datacenter-staff-impact.jpg)
+  According to @fig:datacenter-staff-impact
+  operational sustainability contains three elements of operational
+  sustainability, namely  management and operations, building
+  characteristics, and site location [@www-datacenter-staffing].
 
-Figure Operational Sustainability.  According to Tier Standard:
-Operational Sustainability, the three elements of Operational
-Sustainability are Management and Operations, Building
-Characteristics, and Site
-Location. (<https://journal.uptimeinstitute.com/data-center-staffing/>)
+![Datacenter Staff Impact [@www-datacenter-staffing]](images/datacenter-staff-impact.jpg){#fig:datacenter-staff-impact}
 
 Another interesting observation is the root cause of incidents in a
 data center. Everyone has probably experienced some outage, so it is
-important to identify where they come from in order to prevent
-them. As we see in the Figure *Outage* not every error is caused by an
+important to identify where they come from in order to prevent them.
+As we see in @fig:datacenter-outage not every error is caused by an
 operational issue. External, installation, design and manufacturer
-issues are together the largest issue for datacenter incidents.
+issues are together the largest issue for datacenter incidents (see
+@fig:datacenter-outage). Figure Outage. According to the Uptime
+Institute Abnormal Incident Reports (AIRs) database, the root cause of
+39% of data center incidents falls into the operational area
+[@www-datacenter-staffing].
 
-![](images/datacenter-outage.jpg)
+
+![Datacenter outage [@www-datacenter-staffing]](images/datacenter-outage.jpg){#fig:datacenter-outage}
 
 
-Figure Outage. According to the Uptime Institute Abnormal Incident
-Reports (AIRs) database, the root cause of 39% of data center
-incidents falls into the operational
-area. (<https://journal.uptimeinstitute.com/data-center-staffing/>)
 
 ## Data Center Characteristics
 
 Next we identify a number of characteristics when looking at different data centers.
 
-**Variation in Size**: Data centers range in size from small "edge”
+**Variation in Size**: Data centers range in size from small *edge*
 facilities to megascale or hyperscale filling large ware houses.
 
 **Variation in cost per server**: Although many data centers
@@ -222,7 +214,7 @@ but by the community in which such centers operate.
   can be made more reliable, failure still can happen. Examples are
 
 * <https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/>
-* :question: find more examples
+* :o: find more examples
 
 Hence Data Center IaaS advantages include
 
@@ -259,42 +251,90 @@ Scientists world wide have identified a link between carbon emission
 and global warming. As the energy consumption of a data center is
 substantial, it is prudent to estimate the overall carbon emission.
 Schneider Electric (formerly APC) has provided a report on how to
-estimate the Carbon footprint of a data center.
-
-* Estimating a Data Center’s Electrical Carbon Footprint, White Paper
-  66, <http://www.apc.com/salestools/DBOY-7EVHLH/DBOY-7EVHLH_R0_EN.pdf>
-
+estimate the Carbon footprint of a data center [@schneider-footprint].
 Although this report is already a bit older, it provides still
 valuable information. It defines key terms such as
 
-* Carbon dioxide emissions coefficient (“carbon footprint”)
+Carbon dioxide emissions coefficient (*carbon footprint*):
 
-	With the increasing demand of data, bandwidth and high performance systems, there is substantial amount of power consumption. This leads to high amount of greenhouses gases emission into the atmosphere, released due to any kind of basic activities like driving a vehicle or running a power plant.
+: With the increasing demand of data, bandwidth and high performance
+  systems, there is substantial amount of power consumption. This
+  leads to high amount of greenhouses gases emission into the
+  atmosphere, released due to any kind of basic activities like driving
+  a vehicle or running a power plant.
 
-	" The measurement includes power generation plus transmission and distribution losses incurred during delivery of the electricity to its point of use."
+  "The measurement includes power generation plus transmission and
+  distribution losses incurred during delivery of the electricity to
+  its point of use."
 
-Data centers in total used 91 billion kilowatt-hours (kWh) of electrical energy in 2013, and they will use 139 billion kWh by 2020. Currently, data centers consume up to 3 percent of all global electricity production while producing 200 million metric tons of carbon dioxide. Since world is moving towards cloud, causing more and more data center capacity leading more to power consumption.
+   Data centers in total used 91 billion kilowatt-hours (kWh) of
+   electrical energy in 2013, and they will use 139 billion kWh by
+   2020. Currently, data centers consume up to 3 percent of all
+   global electricity production while producing 200 million metric tons
+   of carbon dioxide. Since world is moving towards cloud, causing more
+   and more data center capacity leading more to power consumption.
 
+Peaker plant:
 
-* Peaker plant
+: Peaking power plants, also known as peaker plants, and
+  occasionally just *peakers*, are power plants that generally run
+  only when there is a high demand, known as peak demand, for
+  electricity.Because they supply power only occasionally, the power
+  supplied commands a much higher price per kilowatt hour than base
+  load power. Peak load power plants are dispatched in combination
+  with base load power plants, which supply a dependable and
+  consistent amount of electricity, to meet the minimum demand.
+  These plants are generally coal-fired which causes a huge amount
+  of CO2 emissions. A peaker plant may operate many hours a day, or
+  it may operate only a few hours per year, depending on the
+  condition of the region's electrical grid. Because of the cost of
+  building an efficient power plant, if a peaker plant is only going
+  to be run for a short or highly variable time, it does not make
+  economic sense to make it as efficient as a base load power plant.
+  In addition, the equipment and fuels used in base load plants are
+  often unsuitable for use in peaker plants because the fluctuating
+  conditions would severely strain the equipment. For these reasons,
+  nuclear, geothermal, waste-to-energy, coal and biomass are rarely,
+  if ever, operated as peaker plants.
 
-	Peaking power plants, also known as peaker plants, and occasionally just "peakers", are power plants that generally run only when there is a high demand, known as peak demand, for electricity.Because they supply power only occasionally, the power supplied commands a much higher price per kilowatt hour than base load power. Peak load power plants are dispatched in combination with base load power plants, which supply a dependable and consistent amount of electricity, to meet the minimum demand.
-	These plants are generally coal-fired which causes a huge amount of CO2 emissions. A peaker plant may operate many hours a day, or it may operate only a few hours per year, depending on the condition of the region's electrical grid. Because of the cost of building an efficient power plant, if a peaker plant is only going to be run for a short or highly variable time, it does not make economic sense to make it as efficient as a base load power plant. In addition, the equipment and fuels used in base load plants are often unsuitable for use in peaker plants because the fluctuating conditions would severely strain the equipment. For these reasons, nuclear, geothermal, waste-to-energy, coal and biomass are rarely, if ever, operated as peaker plants.
+Avoided emissions:
 
-* Avoided emissions
+: Emissions avoidance is the most effective carbon management
+  strategy over a multi-decadal timescale to achieve atmospheric CO2
+  stabilization and a subsequent decline . This prevents, in the first
+  place, stable underground carbon deposits from entering either the
+  atmosphere or less stable carbon pools on land and in the oceans.
 
-	Emissions avoidance is the most effective carbon management strategy over a multi-decadal timescale to achieve atmospheric CO2 stabilization and a subsequent decline . This prevents, in the first place, stable underground carbon deposits from entering either the atmosphere or less stable carbon pools on land and in the oceans.
+  Carbon offsets based on energy efficiency rely on technical
+  efficiencies to reduce energy consumption and therefore reduce CO2
+  emissions. Such improvements are often achieved by introducing more
+  energy efficient lightening, cooking, heating and cooling systems.
+  These are real emission reduction strategies and have created valid
+  offset projects.
 
-Carbon offsets based on energy efficiency rely on technical efficiencies to reduce energy consumption and therefore reduce CO2 emissions. Such improvements are often achieved by introducing more energy efficient lightening, cooking, heating and cooling systems. These are real emission reduction strategies and have created valid offset projects.
+  This type of carbon offset provides perhaps the simplest options
+  that will ease the adoption of low carbon practice. When these practices
+  become generally accepted (or compulsory), they will no longer qualify
+  as offsets and further efficiencies will need to be promoted.
 
-This type of carbon offset provides perhaps the simplest options that will ease the adoption of low carbon practice. When these practices become generally accepted (or compulsory), they will no longer qualify as offsets and further efficiencies will need to be promoted.
+CO2 (carbon dioxide, or *carbon*)
 
-* CO2 (carbon dioxide, or “carbon”)
-
-	Carbon dioxide is the main cause of the greenhouse effect, it is emitted in huge amount into our atmosphere with a life cycle of almost 100 years. Data centers emit during the manufacturing process of all the components that populate a
-data center (servers, UPS, building shell, cooling, etc.) and during operation of data centers (in terms of electricity consumed), the maintenance of the data centers (i.e. replacement of consumables like batteries, capacitors, etc.), and the disposal of the components of the data centers at the end of the lifecycle.
-	Until now, power plants have been allowed to dump unlimited amounts of carbon pollution into the atmosphere — no rules were in effect that limited their emissions of carbon dioxide, the primary driver of global warming. Now, for the first time, the EPA has finalized new rules, or standards, that will reduce carbon emissions from power plants. Known as the Clean Power Plan, these historic standards represent the most significant opportunity in years to help curb the growing consequences of climate change.
-
+: Carbon dioxide is the main cause of the greenhouse effect, it is
+  emitted in huge amount into our atmosphere with a life cycle of
+  almost 100 years. Data centers emit during the manufacturing process
+  of all the components that populate a data center (servers, UPS,
+  building shell, cooling, etc.) and during operation of data centers
+  (in terms of electricity consumed), the maintenance of the data
+  centers (i.e. replacement of consumables like batteries, capacitors,
+  etc.), and the disposal of the components of the data centers at the
+  end of the lifecycle. Until now, power plants have been allowed to
+  dump unlimited amounts of carbon pollution into the atmosphere - no
+  rules were in effect that limited their emissions of carbon dioxide,
+  the primary driver of global warming. Now, for the first time, the EPA
+  has finalized new rules, or standards, that will reduce carbon
+  emissions from power plants. Known as the Clean Power Plan, these
+  historic standards represent the most significant opportunity in years
+  to help curb the growing consequences of climate change.
 
 The data center will have a total carbon profile, that includes the
 many different aspects of a data center contributing to carbon
@@ -303,7 +343,7 @@ storage, operation of the data center, and decommissioning. Thus it is
 important to notice that we not only need to consider the operation
 but also the construction and decommission phases.
 
-### Data Center Operational Impact
+### Data Center Operational Impact {#sec:operation-impact}
 
 One of the main operational impacts is the cost and emissions of a
 data center cause by running, and cooling the servers in the data
@@ -313,10 +353,8 @@ certainly depends on the type of powerplant that is used to provide
 it. These energy costs and distribution of where the energy comes from
 can often be looked up by geographical regions on the internet or form
 the local energy provider. Municipal government organizations may also
-have such information. Tools such as the Indiana State Profile and
-Energy Use
-
-* <https://www.eia.gov/state/?sid=IN>  
+have such information. Tools such as the [Indiana State Profile and
+Energy Use](https://www.eia.gov/state/?sid=IN) [@www-indiana-eia].
 
 may provide valuable information to derive such estimates. Correlating
 a data center with cheap energy is a key factor. To estimate both
@@ -350,7 +388,7 @@ arising from build and teardown phase as well as operational upgrades.
 
 | Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
 |-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
-| :question:  | :question: | :question:  | :question:               | :question:     | :question:         | :question:                  | :question:                |   |
+| :o:  | :o: | :o:  | :o:               | :o:     | :o:         | :o:                  | :o:                |   |
 |             |          |      |                   |         |             |                      |                    |   |
 |             |          |      |                   |         |             |                      |                    |   |
 
@@ -451,9 +489,78 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as
 > the date when the PUE was reported.
 
-### Hot-Cold Isle :o: :question:
+### Hot-Cold Aisle :wave:
 
-Contribute a section discussing the hot cold isle.
+To understand hot-cold aisles, one must take a brief foray into the
+realm of physics and energy. Specifically, understanding how a
+temperature gradient tries to equalize. The most important formula
+to know is the heat transfer equation (@eq:heat-transfer).
+
+$$q=h_{c}A(t_{a}-t_{s})$${#eq:heat-transfer}
+
+Here, *q* is the amount of heat transferred for a given amount of time.
+For this example, we'll calculate it as W/hour as that is, conveniently,
+how energy is billed. Air moving at a moderate speed will transfer
+approximately 8.47 Watts per Square Foot per Hour. A 1U server is
+19 inches wide and about 34 inches deep. Multiplying the two values gives us
+a cross section of 646 square inches, or 4.48 square feet. Plugging these values
+into our equation above gives us:
+
+$$q=8.47*4.48*(t_{a}-t_{s}))$${#eq:heat-transfer-example}
+
+This begins to point us towards why hot-cold aisles are important. If
+we introduce cold air from the AC system into the same aisle that the
+servers are exhausting into, the air will mix and begin to average
+out. For example, if our servers are producing exhaust at 100F and our
+AC unit provides 65F at the same rate, then the average air
+temperature will become 82.5F (assuming balanced air pressure). This
+has a deleterious effect on our server cooling - warmer air takes heat
+away from warmer surfaces slower than cooler air:
+
+$$1,328.2=8.47*4.48*(100-65)$$
+
+$$664.0=8.47*4.48*(100-82.5))$$
+
+From the above, we can see that a 35 degree delta allows the center to dissipate
+1,300 Watts of waste heat from a 1U server while a 17.5 degree delta
+allows us to only dissipate 664 Watts of energy. If a server is consuming
+more than 664 Watts, it'll continue to get warmer and warmer until it
+eventually reaches a temperature differential high enough to create an
+equillibrium (or reaches a thermal throttle and begins to reduce performance).
+
+To combat this, engineers developed the idea of designating
+alternating aisles as either hot or cold. All servers in a given aisle
+are then oriented such that the AC system provides cool air into the
+cold aisle where it is drawn in by the server which then exhausts it
+into the hot aisle where the ventilation system removes it from the
+room. This has the benefit of maximizing the temperature delta between
+the provided air and the server's processor(s), reducing the amount of
+quantity of air that must be provided in order to cool the server and
+improving overall system efficiency.
+
+See @fig:hot-cold-isle to understand how the hot-cold isle configuration is
+setup in a data center.
+
+![Hot Cold Isle [@hot-cold-isle]](images/hot-cold-isle.jpg){#fig:hot-cold-isle}
+
+#### Containment
+
+While modern data centers employ highly sophisticated mechanisms to be as 
+energy efficient as possible. One such mechanism which can be seen as a
+improvement on top of the Hot-Cold isle arrange is to use either hot isle
+containment or cold isle containment. Using a containment system can remove the 
+issue with free flowing air.
+
+As the name somewhat implies in cold air containment, the data centers is
+designed so that only cold air goes into the cold isle, this makes sure that
+the system only draws in cold air for cooling purposes. Conversely in hot isle
+containment design, the hot isle is contained so that the hot air collected 
+in the hot isle is drawn out by the cooling system and so that the cold air
+does not flow into the hot isles[@hot-cold-containment].
+
+##### Water Cooled Doors
+
+Alternatively, or in addition :o:
 
 ### Workload Monitoring
 
@@ -476,18 +583,14 @@ throughput or any number of desired job characteristics.
 
 Detailed historical analysis of XSEDE usage data using XDMoD clearly
 demonstrates the tremendous growth in the number of users, overall
-usage, and scale."
-
-Source: <https://experts.illinois.edu/en/publications/using-xdmod-to-facilitate-xsede-operations-planning-and-analysis>
+usage, and scale" [@las-xdmod].
 
 Having access to a detailed metrics analysis allows users and center
 administrators, as well as project managers to better evaluate the use
-and utilization of such large facilities justifying their existence.
+and utilization of such large facilities justifying their existence (see @fig:datacenter-xdmod)
 
 
-![](images/datacenter-xdmod.png)
-
-**Figure:** XDMod: XSEDE Metrics on Demand
+![XDMod: XSEDE Metrics on Demand](images/datacenter-xdmod.png){#fig:datacenter-xdmod}
 
 Additional information is available at
 
@@ -513,14 +616,13 @@ resource allocation committee to help assess and identify projects
 with higher scientific impact. Through the general applicability of
 the novel metrics we invented, it can also help provide metrics
 regarding the return on investment for XSEDE resources, or campus
-based HPC centers.
-[PDF](http://cgl.soic.indiana.edu/publications/Metrics2014.pdf)
+based HPC centers [@las-impact].
 
 
 #### Clouds and Virtual Machine Monitoring
 
-Although no longer in operation in its original form FutureGrid
-<http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html>
+Although no longer in operation in its original form
+[FutureGrid](http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html) [@www-fg-metrics]
 has pioneered the extensive monitoring and publication of its virtual
 machine and project usage. We are not aware of a current system that
 provides this level of detail as sof yet. However, efforts as part of
@@ -528,19 +630,17 @@ XSEDE within the XDMoD project are under way at this time but are not
 integrated.
 
 Futuregrid provided access to all virtual machine information, as well
-as usage across projects. An archived portal view is available at:
+as usage across projects. An archived portal view is available at
+[FutureGrid Cloud Metrics](http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html)
+[@www-fg-metrics].
 
-* <http://archive.futuregrid.org/metrics/html/results/2014-Q3/reports/rst/india-All.html>
-
-![](images/datacenter-fg-metric.png)
-
-**Figure:** FutureGrid Cloud Metric
+![FutureGrid Cloud Metric](images/datacenter-fg-metric.png){#fig:datacenter-fg-metric}
 
 Futuregrid offered multiple clouds including clouds based on
 OpenStack, Eucalyptus, and Nimbus. Nimbus and Eucalyptus are systems
 that are no longer used in the community. Only OpenStack is the only
 viable solution in addition to the cloud offerings by Comet that do
-not uses OpenStack.
+not uses OpenStack (see @fig:datacenter-fg-metric).
 
 Futuregrid, could monitor all of them and published its result in its
 Metrics portal. Monitoring the VMs is an important activity as they
@@ -563,8 +663,8 @@ We like to emphasize several examples where such monitoring is helpful:
   users in the same project. All accounts of all users were quasi
   deactivated as the entire project they belonged to were deactivated.
   Due to allocation review processes it took about 3 weeks to reactivate
-  full access. sed on the tasks to be completed can be compared against
-  other student members.
+  full access. sed on the tasks to be completed can be compared
+  against other student members.
 * In commercial clouds you will be charged money. Therefore, it is
   less likely that you forget to shutdown your machine
 * In case you use github carelessly and post your cloud passwords or
@@ -589,7 +689,7 @@ jobs is conducted through existing HPC tools
 
 Monitoring tools for containers such as for kubernetes are listed at:
 
-<https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/>
+* <https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/>
 
 Such tools can be deployed alongside kubernetes in the data center,
 but will likely have restrictions to its access. They are for those
@@ -604,79 +704,65 @@ looking at some of the mayor cloud providers.
 ### AWS
 
 AWS focuses on security aspects of their data centers that include
-four aspects
-(<https://aws.amazon.com/compliance/data-center/data-centers/>):
+four aspects [@www-aws-datacenters]:
 
 * [Perimeter Layer](https://aws.amazon.com/compliance/data-center/perimeter-layer/)
 * [Infrastructure Layer](https://aws.amazon.com/compliance/data-center/infrastructure-layer/)
 * [Data Layer](https://aws.amazon.com/compliance/data-center/data-layer/)
 * [Environmental Layer](https://aws.amazon.com/compliance/data-center/environmental-layer/)
 
-The global infrastructure is presented (ass of Aug 29th 2018) at
-<https://aws.amazon.com/about-aws/global-infrastructure/> and includes
-55 Availability Zones within 18 geographic Regions and 1 Local Region
-around the world. Plans exists to add 12 Availability Zones and four
-additional Regions in Bahrain, Hong Kong SAR, Sweden, and a second AWS
-GovCloud Region in the US.
+The [global infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
+[@www-aws-infrastructure] as of January 2019 includes 60 Availability
+Zones within 20 geographic Regions. Plans exists to add 12
+Availability Zones and four additional Regions in Bahrain, Hong Kong
+SAR, Sweden, and a second AWS GovCloud Region in the US (see
+@fig:datacenter-aws-region).
 
-![](images/datacenter-aws-region.png)
-
-**Figure:** AWS regions
+![AWS regions [@www-aws-infrastructure]](images/datacenter-aws-region.png){#fig:datacenter-aws-region}
 
 Amazon strives to achieve high availability through multiple availability zones,
-improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion.
+improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion. See @fig:datacenter-azure-region
 
 The regions and number of availability zones are as follows:
 
-Region US East: N. Virginia (6), Ohio (3)
-US West N. California (3), Oregon (3)
-
-Region: Asia Pacific Mumbai (2), Seoul (2), Singapore (3), Sydney (3), Tokyo (4), Osaka-Local (1)1
-Canada Central (2)
-China Beijing (2), Ningxia (3)
-
-Region: Europe Frankfurt (3), Ireland (3), London (3), Paris (3)
-South America São Paulo (3)
-
-Region Gov Cloud:
-AWS GovCloud (US-West) (3)
-
-New Region (coming soon):
-Bahrain
-Hong Kong SAR, China
-Sweden
-AWS GovCloud (US-East)
+* Region US East: N. Virginia (6), Ohio (3) US West N. California (3),
+   Oregon (3)
+* Region: Asia Pacific Mumbai (2), Seoul (2), Singapore (3), Sydney
+  (3), Tokyo (4), Osaka-Local (1)1 Canada Central (2) China Beijing (2),
+  Ningxia (3)
+* Region: Europe Frankfurt (3), Ireland (3), London (3), Paris (3)
+  South America São Paulo (3)
+* Region Gov Cloud: AWS GovCloud (US-West) (3)
+* New Region (coming soon): Bahrain, Hong Kong SAR, China, Sweden, AWS
+  GovCloud (US-East)
 
 ### Azure
 
-* <https://azure.microsoft.com/en-us/global-infrastructure/regions/>
-
-
-Azure claims to have more global regions than any other cloud
-provider. They motivate this by their advertisement to bring and
-applications to the users around the world. The goal is similar as
-other commercial hyprescale providers by introducing preserving data
-residency, and offering comprehensive compliance and resilience. As of
-Aug 29, 2018 Azure supports 54 regions worldwide. These regions can
-currently be accessed by users in 140 countries. Not every service is
-offered in every region as the service to region matrix shows:
+Azure claims to have more global
+[regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
+[@www-azure-regions] than any other cloud provider. They motivate this
+by their advertisement to bring and applications to the users around
+the world. The goal is similar as other commercial hyprescale
+providers by introducing preserving data residency, and offering
+comprehensive compliance and resilience. As of Aug 29, 2018 Azure
+supports 54 regions worldwide. These regions can currently be accessed
+by users in 140 countries (see @fig:datacenter-azure-region). Not
+every service is offered in every region as the service to region
+matrix shows:
 
 * <https://azure.microsoft.com/en-us/global-infrastructure/services/>
 
 
-![](images/datacenter-azure-region.png)
-
-**Figure:** Azure regions
-
+![Azure regions [@www-azure-regions]](images/datacenter-azure-region.png){#fig:datacenter-azure-region}
 
 
 ### Google
 
 
 From
-<https://www.google.com/about/datacenters/inside/locations/index.html>
+[Google](https://www.google.com/about/datacenters/inside/locations/index.html) [@www-google-locations]
 we find that on Aug. 29th Google has the following data center
-locations:
+locations (see @fig:datacenters-google):
 
 * **North America:** Berkeley County, South Carolina; Council Bluffs,
   Iowa; Douglas County, Georgia; Jackson County, Alabama; Lenoir, North
@@ -688,7 +774,7 @@ locations:
   St Ghislain, Belgium
 
 
-![](images/datacenters-google.png)
+![Google data centers [@www-google-locations]](images/datacenters-google.png){#fig:datacenters-google}
 
 Each data center is advertised with a special environmental impact
 such as a unique cooling system, or wildlife on premise. Google's data
@@ -708,9 +794,13 @@ They summarize their offers are based on
 * Optimizing the power distribution
 
 
-![](images/datacenter-google-pue.png)
+![PUE data for all large-scale Google data centers](images/datacenter-google-pue.png){#fig:datacenter-google-pue}
 
-**Figure:** [PUE data for all large-scale Google data centers](https://www.google.com/about/datacenters/efficiency/internal/)
+The
+[PUE](https://www.google.com/about/datacenters/efficiency/internal/) [@www-google-eficiency]
+data for all large-scale Google data centers is shown in
+@fig:datacenter-google-pue
+
 
 An important lesson from Google is the PUE boundary. That is the
 different efficiency based on the closeness of the IT infrastructure
@@ -719,13 +809,17 @@ important to take at any providers definition of PUE in order not to
 report numbers that are not comparable between other vendors and are
 all encompassing.
 
-![](images/datacenter-google-boundary.png)
+![Google data center PUE measurement boundaries [@www-google-eficiency]](images/datacenter-google-boundary.png){#fig:datacenter-google-boundary}
 
-**Figure:** [Google data center PUE measurement boundaries. The average PUE for all Google data centers is 1.12, although we could boast a PUE as low as 1.06 when using narrower boundaries.](https://www.google.com/about/datacenters/efficiency/internal/)
+@fig:datacenter-google-boundary shows the Google data center PUE
+measurement boundaries. The
+[average PUE](https://www.google.com/about/datacenters/efficiency/internal/) [@www-google-eficiency]
+for all Google data centers is 1.12, although we could boast a PUE as
+low as 1.06 when using narrower boundaries.
 
- As a consequence, Google is defining its PUE in detail as follows:
+ As a consequence, Google is defining its PUE in detail in @eq:pue-google.
 
- ![](images/datacenter-google-formula.png)
+$$PUE=\frac{ESIS + EITS + ETX + EHV + ELV + EF}{EITS - ECRAC - EUPS - ELV + ENet1} $${#eq:pue-google}
 
 where the abbreviations stand for
 
@@ -744,7 +838,9 @@ where the abbreviations stand for
   feed servers, network, and storage equipment
 * ENet1 = Network room energy fed from type 1 unit substitution
 
-For more details see <https://www.google.com/about/datacenters/efficiency/internal/>
+For more
+[details](https://www.google.com/about/datacenters/efficiency/internal/)
+see [@www-google-eficiency].
 
 
 ### IBM
@@ -784,14 +880,12 @@ Primary compute resources are listed in the resource monitor at
 
 For cloud Computing the following systems are of especial importance
 although selected others may also host container based systems while
-using singularity:
+using singularity (see @fig:datacenter-xsede):
 
 * Comet virtual clusters
 * Jetstream OpenStack
 
-![](images/datacenter-xsede.jpg)
-
-**Figure:** XSEDE distributed resource infrastructure
+![XSEDE distributed resource infrastructure](images/datacenter-xsede.jpg){#fig:datacenter-xsede}
 
 #### Comet
 
@@ -837,11 +931,9 @@ An overview of the hardware can be obtained from
 Indiana University has a data center in which many different systems
 are housed. This includes not only jetstream, but also many other
 systems. The systems include production, business, and research
-clusters and servers.
+clusters and servers. See @fig:datacenter-iu
 
-![](images/datacenter-iu.jpg)
-
-**Figure:** IU Data Center
+![IU Data Center](images/datacenter-iu.jpg){#fig:datacenter-iu}
 
 On the research cluster side it offers Karst:
 
@@ -917,16 +1009,17 @@ Due to the immense number of servers in data centers, as well as the
 increased workload on its servers, the energy consumption of data
 centers is large not only to run the servers, but to provide the
 necessary cooling. Thus it is important to revisit the impact such
-data centers have on the energy consumption.  One of the studies that
+data centers have on the energy consumption. One of the studies that
 looked into this is from 2016 and is published by
 [LBNL](https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf)
-In this study the data center electricity consumption back to 2000 is
-analyzed while using previous studies and historical shipment data. A
-forecast is with different assumption is contrasts till 2020
+[@lbl-energy-usage] In this study the data center electricity
+consumption back to 2000 is analyzed while using previous studies and
+historical shipment data. A forecast is with different assumption is
+contrasts till 2020
 
 Figure Energy Forecast depicts "an estimate of total U.S.  data center
 electricity use (servers, storage, network equipment, and
-infrastructure) from 2000-2020".
+infrastructure) from 2000-2020" (see @fig:datacenter-energy-use).
 
 While in "2014 the data centers in the U.S. consumed an estimated 70
 billion kWh" or "about 1.8% of total U.S. electricity consumption".
@@ -935,11 +1028,8 @@ However, more recent studies find an increase by about 4% from
 originally predicted several years ago. The study finds that the
 predicted energy use would be approximately 73 billion kWh in 2020.
 
-![](images/datacenter-energy-use.png)
+![Energy Forecast [@lbl-energy-usage]](images/datacenter-energy-use.png){#fig:datacenter-energy-use}
 
-Figure: Energy Forecast
-
-Source: <https://cloudfront.escholarship.org/dist/prd/content/qt84p772fc/qt84p772fc.pdf>
 
 It is clear that the original prediction of large energy consumption
 motivated a trend in industry to provide more energy efficient data
@@ -961,10 +1051,10 @@ efficiency of each type of data center facility.
 * **hyperscale data centers** where the infrastructure will be moved
   from smaller data centers to larger *hyperscale* data centers.
 
-## Project Natick {#S:natick}
+## Project Natick {#sec:natick}
 
 To reduce energy consumption in data centers and reduce cost of
-cooling Microsoft has developed **Project Natick**. To tackle this
+cooling Microsoft has developed *Project Natick*. To tackle this
 problem Microsoft has built underwater datacenter. Another benefit of
 this project is that data center can be deployed in large bodies of
 water to serve customers residing in that area so it helps to reduce
@@ -985,10 +1075,12 @@ exactly 0, while land data centers consume ~ 4.8 liters of water per
 KWH. This vessel consumed computer power equivalent to 300 Desktop PCs
 and was of 38000 lbs and it operated for 105 days.
 
-![](images/project-natick-phase1.png)
+![The Leona Philpot prototype](images/project-natick-phase1.png){#fig:project-natick-phase1}
 
-**Figure:** The *Leona Philpot* prototype was deployed off the central
-coast of California on Aug. 10, 2015. Source: [Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/) [@microsoft-first-datacenter]
+See @fig:project-natick-phase1, The *Leona Philpot* prototype was
+deployed off the central coast of California on Aug. 10, 2015. Source:
+[Microsoft](https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/)
+[@microsoft-first-datacenter]
 
 
 The phase 2 started in June 2018 and lasted for 90 days. Microsoft
@@ -1005,10 +1097,14 @@ The total estimated lifespan of a Natick datacenter is around 20 years, after
 which it will be retrieved and recycled.
 
 
-![](images/project-natick-phase2.png)
+![The Northern Isles prototype](images/project-natick-phase2.png){#fig:project-natick-phase2}
 
-**Figure:** The *Northern Isles* prototype being deployed near
-Scotland. Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
+Source: [Microsoft](https://news.microsoft.com/features/under-the-sea-microsoft-tests-a-datacenter-thats-quick-to-deploy-could-provide-internet-connectivity-for-years/) [@microsoft-second-datacenter]
+
+
+@fig:project-natick-phase2  shows the *Northern Isles* prototype being deployed near
+Scotland.
+
 
 Although the cooling provides a significant benefit while using
 seawater, it is clear that long time studies need to be conducted with
@@ -1029,3 +1125,62 @@ Some thought on this include:
    than on the ecosystem.
 
 Find more about this at [@nytimes-datacenter]
+
+## Renewable Energy for Data Centers :o: {#sec:energy-renewable}
+
+Explain the principal and showcase some examples:
+
+* Solar: <https://9to5google.com/2019/01/17/largest-ever-solar-farms-google/>
+* Wind: <https://www.datacenterknowledge.com/wind-powered-data-centers>
+* Hydro:
+  <http://www.hydroquebec.com/data-center/advantages/clean-energy.html>
+  there will be others
+* Thermal: find better resource
+  <https://spectrum.ieee.org/energywise/telecom/internet/iceland-data-center-paradise>
+* Recyclers:
+  <https://www.datacenterknowledge.com/data-centers-that-recycle-waste-heat>
+
+What other aspects exist:
+
+Energy Storage:
+
+* Batteries
+* Store energy in other forms
+
+## Societal Shift Towards Renewables :o: {#sec:energy-society}
+
+The data center as example.
+
+Government efforts to support renewable in benefit of the society:
+
+* Germany
+* China
+* Island
+* Corporations: Google, AWS, IBM, ...
+
+Also look at the US state of California
+
+Everyone is doing it.
+
+See also
+
+* <https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
+
+
+## Exercises {#sec:exercises-energy}
+
+E.Energy.1:
+
+> Pick a renewal energy from @sec:energy-renewable  and describe what
+> it is. Find data centers that use this energy form. Create a section
+> and contribute it to the datacenter.md file.
+
+E.Energy.2:
+
+> Pick a country, state, or company from @sec:energy-society and
+> summarize their efforts towards renewable energy and impacts within
+> the society. Create a section and contribute it to the datacenter.md
+> file.
+
+
+

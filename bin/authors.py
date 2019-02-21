@@ -49,18 +49,16 @@ name_string = '\n> '.join(textwrap.wrap(', '.join(names),79, initial_indent="> "
 print("# Contributors")
 print()
 
-msg = """
+msg = """Contributors are sorted by the first letter of their combined
+Firstname and Lastname and if not available by their github ID.
 
-Contributors are sorted by the first letter of their "combined
-Firtsname and Lastname and if not available by their github ID.
-
-Please note that the authors are identified through git logs in
-addition to some contributors added by hand. The git repository
-contains more than the documents included in this section. Thus not
-everyone in this list may have directly contributed to this
-document. However if you find someone missing that has contributed
-(they may not have used this particular git) please let us know. We
-will add you.
+Please, note that the authors are identified through git logs in
+addition to some contributors added by hand. The git repository from
+which this document is derived contains more than the documents
+included in this document. Thus not everyone in this list may have
+directly contributed to this document. However if you find someone
+missing that has contributed (they may not have used this particular
+git) please let us know. We will add you.
 
 The contributors that we are aware of include:
 

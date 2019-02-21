@@ -73,9 +73,9 @@ The current standard of MQTT is available at
 MQTT works via a publish-subscribe model that contains 3 entities: (1) aRaspberry Pi
 publisher, that sends a message, (2) a broker, that maintains queue of
 all messages based on topics and (3) multiple subscribers that subscribe
-to various topics they are interested in [@how-mqtt-works].
+to various topics they are interested in [@how-mqtt-works]. See @fig:mqtt-pub-sub
 
-![MQTT publish subscriber model](images/mqtt.png)
+![MQTT publish subscriber model](images/mqtt.png){#fig:mqtt-pub-sub}
 
 
 This allows for decoupling of functionality at various levels. The
@@ -276,14 +276,14 @@ Open a terminal and use homebrew to install mosquito and than you can install pa
 
 	brew install mosquitto
 	pip install paho-mqtt
-	
+
 You need to start the mosquito service buy hand to use it.
 
 ### MacOS Advanced Service install
 
 :warning: We recommend that this is only be done if you truly need a
 production system. For our class you will not need this.
-	
+
 You can integrate mosquito service on boot, while adding it via
 LaunchAgents. This can be achieved by linking it as follows:
 
@@ -316,7 +316,7 @@ $ pip install paho-mqtt
 
 ### Raspberry Pi Setup :o:
 
-#### Broker 
+#### Broker
 
 You will need to add the mosquito repository to the known repositories as follows:
 
@@ -336,11 +336,11 @@ The MQTT client needs to be installed on raspberry pi by running the
 following command:
 
     apt-get install mosquitto-clients
-    
+
 ## Server Usecase
 
 In this example we are demonstrating how to set up a MQTT broker, a
-client and a subscriber while just using regular servers and clients. 
+client and a subscriber while just using regular servers and clients.
 The code of this example is located at:
 
 * <https://github.com/bigdata-i523/sample-hid000/tree/master/experiment/mqtt>
@@ -349,12 +349,12 @@ A test program that starts a MQTT broker and client showcases how simple the int
 API such as provided through the python client library of Paho.
 
 ```python
-import paho.mqtt.client as mqtt 
+import paho.mqtt.client as mqtt
 import time
 
 
 def on_message(client, userdata, message):
-    print("message received ", 
+    print("message received ",
           str(message.payload.decode("utf-8")))
     print("message topic=", message.topic)
     print("message qos=", message.qos)
@@ -460,7 +460,7 @@ to control actuators
 
 ## Exercises
 
-E.MQTT.1: 
+E.MQTT.1:
 
 > Develop a temperature broker, that collects the temperature from a
 number of machines and clients can subscribe to the data and visualize

@@ -12,16 +12,21 @@ IBM's Watson has a rich set of Developer Services (https://www.ibm.com/watson/de
 
 There are a breadth of services available.  Watson Discovery is used to mine through data to find trends and surface patterns.  Watson Visual Recognition is used to classify content using machine learning.  Watson Assistant provides a framework for chatbots and virtual agents.
 
-While The next section walks through how to create a free account,  let's continue with an example of leveraging a foundation and building on-top with Watson Assistant Basic.  
+While The next section walks through how to create a free account,  let's continue with an example of leveraging a foundation and building on-top with Watson Assistant Basic.  Please see steps: @fig:1WatsonAssistentBasic, @fig:2WatsonAssistentBasicCode, @fig:3WatsonAssistent3steps, @fig:4Watsoneditsample, @fig:5Watsonaddingexample, @fig:6Watsoncustomizesettings
 
 Instead of starting with a blank page IBM steps are put in place and working examples can be customized.  
 
-![](images/1WatsonAssistentBasic.PNG)
-![](images/2WatsonAssistentBasicCode.PNG)
-![](images/3WatsonAssistent3steps.PNG)
-![](images/4Watsoneditsample.PNG)
-![](images/5Watsonaddingexample.PNG)
-![](images/6Watsoncustomizesettings.PNG)
+![Step 1](images/1WatsonAssistentBasic.PNG){#fig:1WatsonAssistentBasic}
+
+![Step 2](images/2WatsonAssistentBasicCode.PNG){#fig:2WatsonAssistentBasicCode}
+
+![Step 3](images/3WatsonAssistent3steps.PNG){#fig:3WatsonAssistent3steps}
+
+![Step 4](images/4Watsoneditsample.PNG){#fig:4Watsoneditsample}
+
+![Step 5](images/5Watsonaddingexample.PNG){#fig:5Watsonaddingexample}
+
+![Step 6](images/6Watsoncustomizesettings.PNG){#fig:6Watsoncustomizesettings}
 
 In the case above when I was trying the Watson Assistant It was not personal when I asked the Assistant's name so it can be modified to digress!
 
@@ -53,18 +58,18 @@ First you need to visit the
 [IBM Watson home page](https://www.ibm.com/watson/index.html) and
 click in the "Get Started Free" link on the top right corner. You will
 then be asked to provide some basic details including your email
-address as shown in the image below
+address as shown in the image @fig:watson-signup.
 
-![](images/ibmwatson_signup.png)
+![Watson Signup](images/ibmwatson_signup.png){#fig:watson-signup}
 
 Once you have submitted the signup form an confirmation email will be
 sent to your email account, check your inbox and click on the confirm
 account link in the email you receive. This will activate your IBM
 Watson account. Once you have accepted the terms and conditions you
 will be taken to the product and service catalog of IBM Watson as
-shown in the image below.
+shown in the image @fig:watson-catalog.
 
-![](images/catalog_ibm_watson.png)
+![Watson Catalog](images/catalog_ibm_watson.png){#fig:watson-catalog}
 
 ## Understanding the free tier
 
