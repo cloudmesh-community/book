@@ -21,6 +21,8 @@ Aurora comes as an SaaS offering in RDS suite offered by Amazon.
 
 ## Amazon Aurora Features and Benefits
 
+The following features and benefits are highlighted by Amazon:
+
 ### Compatible Databases
 
 Currently, Aurora is compatible with MySQL and PostGreSQL Databases.
