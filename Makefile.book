@@ -219,7 +219,7 @@ ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md
 endif
 	make -f Makefile index
-	cd dest; pandoc all.md -o $(FILENAME).tex -V fontsize=8pt --csl=template/ieee-with-url.csl --bibliography references.bib --filter pandoc-crossref --number-sections --standalone  --template template/eisvogel/eisvogel.latex
+	cd dest; pandoc all.md -o $(FILENAME).tex -V fontsize=10pt --csl=template/ieee-with-url.csl --bibliography references.bib --filter pandoc-crossref --number-sections --standalone  --template template/eisvogel/eisvogel.latex
 	-cd dest; pdflatex --interaction nonstopmode  $(FILENAME).tex 
 	rm -f $(FILENAME).pdf 
 	cp dest/$(FILENAME).pdf .
