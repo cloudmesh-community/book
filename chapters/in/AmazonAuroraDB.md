@@ -361,6 +361,12 @@ writer node.
 This action allows to take a back up of the database and store to S3 use for restore 
 for point in time recovery.
 
+## Example
+
+:o: this section will include an example on how to interact with the
+AuroraDB in python.
+
+
 ## References
 
 * <https://aws.amazon.com/rds/aurora/>
