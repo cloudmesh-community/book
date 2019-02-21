@@ -669,6 +669,11 @@ $else$
 \renewcommand{\footrulewidth}{0.4pt}
 $endif$
 
+\renewenvironment{Shaded} {\begin{snugshade}\footnotesize} {\end{snugshade}}
+
+\usepackage{graphicx}
+\input{gpath}
+
 %%
 %% end added
 %%
