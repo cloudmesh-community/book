@@ -86,7 +86,7 @@ pointer while refering to @fig:code-example.
 
 Figures must be written in the md as 
 
-```
+```markdown
 ![Figure example](images/code.png){#fig:code-example width=1in}
 ```
 
