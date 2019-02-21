@@ -218,6 +218,7 @@ endif
 ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md
 endif
+	cp ../bin/emojifix/* dest/chapters/images
 	make -f Makefile index
 	../bin/find-graphics-path.py > dest/gpath.tex
 	cd dest; pandoc all.md -o $(FILENAME).tex -V fontsize=10pt --csl=template/ieee-with-url.csl --bibliography references.bib --filter pandoc-crossref --number-sections --standalone  --highlight-style tango --template template/eisvogel/eisvogel.latex
