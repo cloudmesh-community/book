@@ -1,4 +1,4 @@
-# Rest Services with OpenAPI
+# OpenAPI REST Services with Swagger {#sec:swagger}
 
 Swagger <https://swagger.io/> is a tool for developing API
 specifications based on the OpenAPI Specification (OAS). It allows not

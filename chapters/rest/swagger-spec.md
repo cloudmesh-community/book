@@ -1,34 +1,33 @@
-# OpenAPI Specification {#s-openapi-spec}
+# OpenAPI Specification {#sec:openapi-spec}
 
 Swagger provides through its specification the definition of REST
 services through a YAML or JSON document.
 
 When following the API-specification-first approach to define and
-develop a RESTful service, the first and foremost step is to define the
-API conforming to the OpenAPI specification, and then using codegen
-tools to conveniently generate server side stub code, client code,
-documentations, in the language you desire. In Section
+develop a RESTful service, the first and foremost step is to define
+the API conforming to the OpenAPI specification, and then using
+codegen tools to conveniently generate server side stub code, client
+code, documentations, in the language you desire. In Section
 [REST Service Generation with OpenAPI](#rest-service-generation-with-openapi)
-we have introduced the codegen tool
-and how to use that to generate server side and client side code and
-documentation. In this
-Section [The Virtual Cluster example API Definition](#the-virtual-cluster-example-api-definition)
-we will use a slightly more complex example
-to show how to define an API following the OpenAPI 2.0 specification.
-The example is to retrieve virtual cluster (VC) object from the server.
+we have introduced the codegen tool and how to use that to generate
+server side and client side code and documentation. In this Section
+[The Virtual Cluster example API Definition](#the-virtual-cluster-example-api-definition)
+we will use a slightly more complex example to show how to define an
+API following the OpenAPI 2.0 specification.  The example is to
+retrieve virtual cluster (VC) object from the server.
 
 The OpenAPI Specification is formerly known as Swagger RESTful API
-Documentation Specification. It defines a specification to describe and
-document a RESTful service API. It is also known under version 3.0 of
-swagger. However, as the tools for 3.0 are not yet completed, we will
-continue for now to use version swagger 2.0, till the transition has
-been completed. This is especially of importance, as we need to use the
-swagger codegen tool, which currently support only up to specification
-v2. Hence we are at this time using OpenAPI/Swagger v2.0 in our example.
-There are some structure and syntax changes in v3, while the essence is
-very similar. For more details of the changes between v3 and v2, please
-refer to A document published on the Web titled [Difference between
-OpenAPI 3.0 and Swagger
+Documentation Specification. It defines a specification to describe
+and document a RESTful service API. It is also known under version 3.0
+of swagger. However, as the tools for 3.0 are not yet completed, we
+will continue for now to use version swagger 2.0, till the transition
+has been completed. This is especially of importance, as we need to
+use the swagger codegen tool, which currently support only up to
+specification v2. Hence we are at this time using OpenAPI/Swagger v2.0
+in our example.  There are some structure and syntax changes in v3,
+while the essence is very similar. For more details of the changes
+between v3 and v2, please refer to A document published on the Web
+titled [Difference between OpenAPI 3.0 and Swagger
 2.0](https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/).
 
 You can write the API definition in json for yaml format. Let us discuss
