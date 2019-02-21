@@ -219,6 +219,18 @@ ifeq ($(OS), linux)
 	cd dest; cat $(INDEX) > all.md
 endif
 	make -f Makefile index
+	cd dest; pandoc all.md -o $(FILENAME).tex -V fontsize=8pt --csl=template/ieee-with-url.csl --bibliography references.bib --filter pandoc-crossref --number-sections --standalone  --template template/eisvogel/eisvogel.latex
+	-cd dest; pdflatex --interaction nonstopmode  $(FILENAME).tex 
+	rm -f $(FILENAME).pdf 
+	cp dest/$(FILENAME).pdf .
+
+
+
+aaa:
+	cd dest; pandoc $(RESOURCE) -V pagestyle:headings -V secnumdepth:5 -V geometry:margin=1in --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
+
+
+ooo:
 	cd dest; pandoc $(RESOURCE) -V pagestyle:headings -V secnumdepth:5 -V geometry:margin=1in --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
 
 
