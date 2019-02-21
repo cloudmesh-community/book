@@ -12,9 +12,9 @@
 
 ---
 
-Amazon Aurora is an on-cloud relational database offering from AWS 
-that aims to offer the performance and reliability of traditional 
-enterprise databases combined with cost-effectiveness of open source 
+Amazon Aurora is an on-cloud relational database offering from AWS
+that aims to offer the performance and reliability of traditional
+enterprise databases combined with cost-effectiveness of open source
 databases.
 
 Aurora comes as an SaaS offering in RDS suite offered by Amazon.
@@ -26,73 +26,74 @@ The following features and benefits are highlighted by Amazon:
 ### Compatible Databases
 
 Currently, Aurora is compatible with MySQL and PostGreSQL Databases.
-It provides a wrapper to provision these open source databases and manage
-them for high availaibility.
-This allows users to provision these open source databases through Amazon 
-and still use existing code, tools and drivers with little change. 
+It provides a wrapper to provision these open source databases and
+manage them for high availability.  This allows users to provision
+these open source databases through Amazon and still use existing
+code, tools and drivers with little change.
 
 ### High Performance
 
-Aurora offers upto 5 times the throughput of a standard MySQL database 
-and 3 times throughput of standard PostGreSQL. All this is offered at a
-price point which 1/10th of a commerical database.
+Aurora offers upto 5 times the throughput of a standard MySQL database
+and 3 times throughput of standard PostGreSQL. All this is offered at
+a price point which 1/10th of a commercial database.
 
 ### Scalability
 
-Aurora allows users to scale up and down the databases to smaller or larger 
-sized servers based on the dynamic business needs to match the required
-compute power.
-There is also a serverless offering where AWS to manages the scaling of 
-compute requirements.
-Aurora also adds additional storage as needed upto 64TB per instance as 
-the data grows.
+Aurora allows users to scale up and down the databases to smaller or
+larger sized servers based on the dynamic business needs to match the
+required compute power.  There is also a serverless offering where AWS
+to manages the scaling of compute requirements.  Aurora also adds
+additional storage as needed upto 64TB per instance as the data grows.
 
 ### High Availability and Durability
 
-Aurora DB offers multi AZ option to make the data replicated across more 
-than one availability zone making the resilient to failures. 
-Data can be backuped to Amazon S3 to enable point in time recovery in case
-of errors.
+Aurora DB offers multi AZ option to make the data replicated across
+more than one availability zone making the resilient to failures.
+Data can be backed up to Amazon S3 to enable point in time recovery in
+case of errors.
 
 ### High Performance through Read Replicas
 
-Aurora DB offers to create upto 15 low latency Read Reaplica nodes for a 
-database which allows for high performance. One can have writer node to 
-write data into the database and use the Read Replica nodes ofr query data. 
+Aurora DB offers to create upto 15 low latency Read Reaplica nodes for
+a database which allows for high performance. One can have writer node
+to write data into the database and use the Read Replica nodes ofr
+query data.
 
 
 ### Fully Managed
 
 Aurora comes as part of RDS suite where Amazon manages the database 
-management actvities like hardware provisioning, set up and configuration,
+management activities like hardware provisioning, set up and configuration,
 software patching, database backups and performance monitoring.
 
 ### Security
 
-Aurora allows to secure the data at rest and and in transit by using keys
-through Key Management Service. Databases can also be made part of VPC 
-and secured using private subnets and security groups. 
-Database encryption can be enabled at the time of database creation which
-means that the data, backups, snapshots and replicas is also encrypted.
+Aurora allows to secure the data at rest and in transit by using keys
+through Key Management Service. Databases can also be made part of VPC
+and secured using private subnets and security groups.  Database
+encryption can be enabled at the time of database creation which means
+that the data, backups, snapshots and replicas is also encrypted.
 
 ### Parallel Query for Analytical Queries
 
-This feature allows users to run analytical queries on the database without 
-the need to copy the data into another system to not impact the system performance.
-Aurora offloads the query to the CPU nodes in its storage layer allowing 
-transactional and analytical loads alongside each other.
+This feature allows users to run analytical queries on the database
+without the need to copy the data into another system to not impact
+the system performance.  Aurora offloads the query to the CPU nodes in
+its storage layer allowing transactional and analytical loads
+alongside each other.
 
 ### Performance Monitoring
 
-Aurora provides Performance Insight as a database performance tuning and
-monitoring feature that can be enabled on the database for additional cost.
-It allows to visualize the loads to identify performance issues. 
+Aurora provides Performance Insight as a database performance tuning
+and monitoring feature that can be enabled on the database for
+additional cost.  It allows to visualize the loads to identify
+performance issues.
 
 ### Support for Migration
 
-Amazon provides tools for migrating existing MySQL and PostgreSQL to Aurora.
-AWS Database Migration Service is provided as a service to migrate from commerical
-databases into Aurora.
+Amazon provides tools for migrating existing MySQL and PostgreSQL to
+Aurora.  AWS Database Migration Service is provided as a service to
+migrate from commercial databases into Aurora.
 
 ## Amazon Aurora Pricing
 
@@ -109,48 +110,48 @@ For detailed pricing refer AWS Aurora Pricing documentation
 
 :o: this section has lots of incomplete sentences that should be completed
 
-:o: the is no spce before a `:`
+:o: the is no space before a `:`
 
 :o: we do not use "highlight" but *highlight* quotes are for quotes that require citations
 
 :o: the (see ...) must obviously before the sentence ends. e.g. the . must be behind, check rest of chapter
 
-Assumption : User must have an AWS account.
+Assumption: User must have an AWS account.
 
-### Step 1 : Login to the AWS console.
+### Step 1: Login to the AWS console.
 
-Console URL : [AWS Console URL](https://aws.amazon.com/console/).
-On successfull login, select RDS from the Database section or alternatively, 
+Console URL: [AWS Console URL](https://aws.amazon.com/console/).
+On successful login, select RDS from the Database section or alternatively, 
 you can type RDS in the search bar to look up (see @fig:aws-aurora-console).
 
 
 ![AWS Aurora DB](images/auroradb-1.png){#fig:aws-aurora-console}
 
-### Step 2 : Click on Create Database
+### Step 2: Click on Create Database
 
 On the RDS home page, one can either click on the 
 `Create Database` button in the Amazon Aurora section directly or 
-clcik on the `Create Database` button in the Create Database section
+click on the `Create Database` button in the Create Database section
 (see @fig:aws-aurora-rdshome).
 
 :o: wrong quote
 
 ![AWS Aurora DB](images/auroradb-2.png){#fig:aws-aurora-rdshome}
 
-### Step 3 : Select Amazon Aurora Engine
+### Step 3: Select Amazon Aurora Engine
 
-Create Database section lists all RDS database flavours
-available.
-Choose Amazon Aurora database on the list.
-After choosing Amazon Aurora, AWS will display list of available editions
-within MySQL and PostgreSQL engines.
-At the time of writing this page, MySQL 5.6-compatible is comes with
-Serverless and Parallel Query capabilities, hence we will go with this option (see @fig:aws-aurora-MySQL).
+Create Database section lists all RDS database flavors available.
+Choose Amazon Aurora database on the list.  After choosing Amazon
+Aurora, AWS will display list of available editions within MySQL and
+PostgreSQL engines.  At the time of writing this page,
+MySQL 5.6-compatible is comes with Serverless and Parallel Query
+capabilities, hence we will go with this option (see
+@fig:aws-aurora-MySQL).
 
 
 ![AWS Aurora DB](images/auroradb-3.png){#fig:aws-aurora-MySQL}
 
-### Step 4 : Aurora Configuration and Settings
+### Step 4: Aurora Configuration and Settings
 
 Once we select the engine, next step is to select the Configuration
 and Setting (see @fig:aws-aurora-config).
@@ -161,27 +162,28 @@ and Setting (see @fig:aws-aurora-config).
 #### Configuration
 
 Capacity Type: This attribute allows us to select between Provisioned,
-Provisioned (with Parallel Query Feature) and Serverless offerings. We will
-go with provisioned option in this example.
+Provisioned (with Parallel Query Feature) and Serverless offerings. We
+will go with provisioned option in this example.
 
-DB Instance Class: This attribute allows to select the type of instance based
-on the need like small, medium or large. It defines the number of CPUs and RAM
-available to the DB server.
+DB Instance Class: This attribute allows to select the type of
+instance based on the need like small, medium or large. It defines the
+number of CPUs and RAM available to the DB server.
 
-Multi AZ - Deployment: Selecting this option means that Aurora will create a
-Read Replica in the a different availability zone. This can be used as a reader
-node for faster read performance and as a standy by in case the primary DB server
-becomes unaavailable due to some issue.
+Multi AZ - Deployment: Selecting this option means that Aurora will
+create a Read Replica in the a different availability zone. This can
+be used as a reader node for faster read performance and as a standy
+by in case the primary DB server becomes unavailable due to some
+issue.
 
 #### Settings
 
-DB Instance Identifier : This will be a unique name that will be used for the
+DB Instance Identifier: This will be a unique name that will be used for the
 writer DB node.
 
-Master UserName and Password : These attribute define the master user and password
+Master UserName and Password: These attribute define the master user and password
 for the DB that can be used to manage the database once created.
 
-#### Step 5 : Configure Advance Settings - Network and Security
+#### Step 5: Configure Advance Settings - Network and Security
 
 This page will help configure some additional settings for the database. We will
 cover them in the next few steps.(see @fig:aws-aurora-advconfig-1)
@@ -190,47 +192,47 @@ cover them in the next few steps.(see @fig:aws-aurora-advconfig-1)
 
 ##### Network and Security
 
-Virtual Private Cloud (VPC) : This attribute defines the virtual data center under 
+Virtual Private Cloud (VPC): This attribute defines the virtual data center under 
 which we want to create the database. Typically an organisation will create its own
 VPC under which it will deploy its database and application servers. In this example 
 we will proceed with the default VPC from AWS.
 
-Subnet Groups : Subnets define the IP ranges to be used the DB.
+Subnet Groups: Subnets define the IP ranges to be used the DB.
 There can be broadly 2 types of subnets that can be created - private 
 and public. Private subnets cannot be accessed from outside the organization
 network. Public subnets on the other hand have internet connectvity and can be 
 accessed from out side the organization network.
 
-Availaiblity zone : Having the servers across multiple availability zones with a region
+Availaiblity zone: Having the servers across multiple availability zones with a region
 help prevent against localized issues and failures. AWS allows to select a preference for 
 an availabiblity zone within the region. We dont have a specific preference for this example.
 
-#### Step 6 : Configure Advance Settings - Database Options
+#### Step 6: Configure Advance Settings - Database Options
 
 This section will help define the database cluster, database name, port and 
 parameter groups.(see @fig:aws-aurora-advconfig-2)
 
 ![AWS Aurora DB](images/auroradb-6.png){#fig:aws-aurora-advconfig-2}
 
-#### Step 7 : Configure Advance Settings - Encryption and Failover
+#### Step 7: Configure Advance Settings - Encryption and Failover
 
 (see @fig:aws-aurora-advconfig-3)
 
 ![AWS Aurora DB](images/auroradb-7.png){#fig:aws-aurora-advconfig-3}
 
-##### Enryption
+##### Encryption
 
 Encryption on the database can be enabled only at the time of 
 DB creation.Once enabled the database, associated replicas and snapshots are all 
 encrypted. One can either use the default KMS encryption keys provided by AWS or 
-use their own encrption keys.
+use their own encryption keys.
 
 ##### Failover 
 
 This defines the the failure over priority order with which a read 
 replica can be promoted as the primary node incase of a failure on the current writer. 
 
-#### Step 8 : Configure Advance Settings - Backtrack and Monitoring
+#### Step 8: Configure Advance Settings - Backtrack and Monitoring
 
 (see @fig:aws-aurora-advconfig-4)
 
@@ -238,17 +240,19 @@ replica can be promoted as the primary node incase of a failure on the current w
 
 ##### Backtrack
 
-Enabling this feature allows us to define a backtrack window in hours upto which one can
-do a point in time recovery in case of any failure.
-Number of hours of backtrack define the additional charges that we levied for the database.
+Enabling this feature allows us to define a backtrack window in hours
+upto which one can do a point in time recovery in case of any failure.
+Number of hours of backtrack define the additional charges that we
+levied for the database.
 
 ##### Enhanced Monitoring 
 
-Enabling enhanced monioring allows to define the granularity / time frequency at which AWS
-will monitoring the databse for different mertics like performance, active sessions, CPU 
-utilization, storage used etc for reporting.
+Enabling enhanced monitoring allows to define the granularity / time
+frequency at which AWS will monitoring the database for different
+metrics like performance, active sessions, CPU utilization, storage
+used etc for reporting.
 
-#### Step 9 : Configure Advance Settings - Log Exports and Maintenance
+#### Step 9: Configure Advance Settings - Log Exports and Maintenance
 
 (see @fig:aws-aurora-advconfig-5)
 
@@ -256,29 +260,31 @@ utilization, storage used etc for reporting.
 
 ##### Log Exports
 
-This section helps user to define which types of logs (Audit, Error, General, Slow Query)
-AWS will export. The selected logs options are exported to AWS S3 buckets and can retrieved 
-at a later point of time analysis.
+This section helps user to define which types of logs (Audit, Error,
+General, Slow Query) AWS will export. The selected logs options are
+exported to AWS S3 buckets and can retrieved at a later point of time
+analysis.
 
 ##### Maintenance 
 
-This section allows to enable / disable auto minor version upgrades tothe database. No need to 
-worry updating minor software packages. One can also define a preferred window for upgrades.
+This section allows to enable / disable auto minor version upgrades to
+the database. No need to worry updating minor software packages. One
+can also define a preferred window for upgrades.
 
 ##### Deletion protection
 
-Selecting this option helps prevent againsts accidental deletion. This option needs to be disabled
+Selecting this option helps prevent against accidental deletion. This option needs to be disabled
 first before the database can be deleted.
 
-#### Step 10 : Submit Advance Settings Page
+#### Step 10: Submit Advance Settings Page
 
-Click on submit once the advance conifg page is completed.
-To view the the instance creation status, click on View DB Instance button.
-(see @fig:aws-aurora-advconfig-submit)
+Click on submit once the advance config page is completed.
+To view the instance creation status, click on View DB Instance button
+(see @fig:aws-aurora-advconfig-submit).
 
 ![AWS Aurora DB](images/auroradb-10.png){#fig:aws-aurora-advconfig-submit}
 
-### Step 11 : Wait for DB creation to complete
+### Step 11: Wait for DB creation to complete
 
 Search using the db identifier entered earlier.
 The writer and reader db nodes will be created under a single cluster.
@@ -290,17 +296,18 @@ It takes around 20-25 minutes for the servers to be available for use.
 ## How to retrieve Aurora database connection details
 
 The provisioned Aurora Database will give a writer and reader node.
-Writer node can be used to insert / update / delete data into the database.
-Reader node(s) replicate the data from the writer with a very small latency (in microseconds)
-and can be used to serve as the standalone node to run parallel queries for analysis 
-without putting any addtional load on the primary writer node.
+Writer node can be used to insert, update, or delete data into the
+database.  Reader node(s) replicate the data from the writer with a
+very small latency (in microseconds) and can be used to serve as the
+standalone node to run parallel queries for analysis without putting
+any additional load on the primary writer node.
 
 The endpoint url, port needed to connect to the database can be retrieved by checking
 the Connectivity and Security tab.(see @fig:aws-aurora-connection)
 
 ![AWS Aurora DB](images/auroradb-13.png){#fig:aws-aurora-connection}
 
-## Other deatils available in Aurora DB Console
+## Other details available in Aurora DB Console
 
 ###  Monitoring Details
 
@@ -310,7 +317,7 @@ the Connectivity and Security tab.(see @fig:aws-aurora-connection)
 
 ![AWS Aurora DB](images/auroradb-15.png)
 
-###  Configruation Details
+###  Configuration Details
 
 ![AWS Aurora DB](images/auroradb-12.png)
 
