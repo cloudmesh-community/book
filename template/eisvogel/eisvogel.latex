@@ -676,26 +676,29 @@ $endif$
 
 %\usepackage[utf8]{inputenc}
 %\usepackage{coloremoji}
+\usepackage{wasysym}
 
-
-\DeclareUnicodeCharacter{1F195}{\includegraphics[height=10pt]{images/NEW_button.png}}
-\DeclareUnicodeCharacter{1F393}{\includegraphics[height=10pt]{images/graduation_cap.png}}
-\DeclareUnicodeCharacter{1F3AC}{\includegraphics[height=10pt]{images/clapper.png}}
-\DeclareUnicodeCharacter{1F44B}{\includegraphics[height=10pt]{images/waving_hand.png}}
-\DeclareUnicodeCharacter{1F4A1}{\includegraphics[height=10pt]{images/light_bulb.png}}
-\DeclareUnicodeCharacter{1F4A5}{\includegraphics[height=10pt]{images/collision.png}}
-\DeclareUnicodeCharacter{1F4DC}{\includegraphics[height=10pt]{images/scroll.png}}
-\DeclareUnicodeCharacter{1F4DD}{\includegraphics[height=10pt]{images/memo.png}}
-\DeclareUnicodeCharacter{1F603}{\includegraphics[height=10pt]{images/grinning_face_with_big_eyes.png}}
-\DeclareUnicodeCharacter{1F604}{\includegraphics[height=10pt]{images/grinning_face_with_big_eyes.png}}
-\DeclareUnicodeCharacter{2601}{\includegraphics[height=10pt]{images/cloud.png}}
-\DeclareUnicodeCharacter{26A0}{\includegraphics[height=10pt]{images/warning.png}}
-\DeclareUnicodeCharacter{2705}{\includegraphics[height=10pt]{images/white_heavy_check_mark.png}}
-\DeclareUnicodeCharacter{270B}{\includegraphics[height=10pt]{images/raised_hand.png}}
-\DeclareUnicodeCharacter{2753}{\includegraphics[height=10pt]{images/question_mark.png}}
-\DeclareUnicodeCharacter{2B50}{\includegraphics[height=10pt]{images/white_medium_star.png}}
-\DeclareUnicodeCharacter{2B55}{\includegraphics[height=10pt]{images/heavy_large_circle.png}}
-\DeclareUnicodeCharacter{FE0F}{\includegraphics[height=10pt]{images/question_mark.png}}
+%\DeclareUnicodeCharacter{1F195}{\includegraphics[height=10pt]{images/NEW_button.png}}
+\DeclareUnicodeCharacter{1F195}{\fbox{NEW}}
+%\DeclareUnicodeCharacter{1F393}{\includegraphics[height=10pt]{images/graduation_cap.png}}
+%\DeclareUnicodeCharacter{1F3AC}{\includegraphics[height=10pt]{images/clapper.png}}
+%\DeclareUnicodeCharacter{1F44B}{\includegraphics[height=10pt]{images/waving_hand.png}}
+%\DeclareUnicodeCharacter{1F4A1}{\includegraphics[height=10pt]{images/light_bulb.png}}
+%\DeclareUnicodeCharacter{1F4A5}{\includegraphics[height=10pt]{images/collision.png}}
+%\DeclareUnicodeCharacter{1F4DC}{\includegraphics[height=10pt]{images/scroll.png}}
+%\DeclareUnicodeCharacter{1F4DD}{\includegraphics[height=10pt]{images/memo.png}}
+%\DeclareUnicodeCharacter{1F603}{\includegraphics[height=10pt]{images/grinning_face_with_big_eyes.png}}
+%\DeclareUnicodeCharacter{1F604}{\includegraphics[height=10pt]{images/grinning_face_with_big_eyes.png}}
+%\DeclareUnicodeCharacter{2601}{\includegraphics[height=10pt]{images/cloud.png}}
+%\DeclareUnicodeCharacter{2601}{CLOUD}
+%\DeclareUnicodeCharacter{26A0}{\includegraphics[height=10pt]{images/warning.png}}
+%\DeclareUnicodeCharacter{2705}{\includegraphics[height=10pt]{images/white_heavy_check_mark.png}}
+\DeclareUnicodeCharacter{2705}{{\color{green}\CheckedBox}}
+%\DeclareUnicodeCharacter{270B}{\includegraphics[height=10pt]{images/raised_hand.png}}
+\DeclareUnicodeCharacter{2753}{{\color{red}?}}
+%\DeclareUnicodeCharacter{2B50}{\includegraphics[height=10pt]{images/white_medium_star.png}}
+%\DeclareUnicodeCharacter{2B55}{\includegraphics[height=10pt]{images/heavy_large_circle.png}}
+%\DeclareUnicodeCharacter{FE0F}{\includegraphics[height=10pt]{images/question_mark.png}}
 
 %\DeclareUnicodeCharac   (U+200A)
 % ​ (U+200B)
