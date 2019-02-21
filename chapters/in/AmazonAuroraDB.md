@@ -107,22 +107,33 @@ For detailed pricing refer AWS Aurora Pricing documentation
 
 ## How to provision Aurora database
 
+:o: this section has lots of incomplete sentences that should be completed
+
+:o: the is no spce before a `:`
+
+:o: we do not use "highlight" but *highlight* quotes are for quotes that require citations
+
+:o: the (see ...) must obviously before the sentence ends. e.g. the . must be behind, check rest of chapter
+
 Assumption : User must have an AWS account.
 
 ### Step 1 : Login to the AWS console.
 
 Console URL : [AWS Console URL](https://aws.amazon.com/console/).
 On successfull login, select RDS from the Database section or alternatively, 
-you can type RDS in the search bar to look up. (see @fig:aws-aurora-console)
+you can type RDS in the search bar to look up (see @fig:aws-aurora-console).
+
 
 ![AWS Aurora DB](images/auroradb-1.png){#fig:aws-aurora-console}
 
 ### Step 2 : Click on Create Database
 
 On the RDS home page, one can either click on the 
-"Create Database" button in the Amazon Aurora section directly or 
-clcik on the "Create Database" button in the Create Database section
-(see @fig:aws-aurora-rdshome)
+`Create Database` button in the Amazon Aurora section directly or 
+clcik on the `Create Database` button in the Create Database section
+(see @fig:aws-aurora-rdshome).
+
+:o: wrong quote
 
 ![AWS Aurora DB](images/auroradb-2.png){#fig:aws-aurora-rdshome}
 
@@ -134,15 +145,16 @@ Choose Amazon Aurora database on the list.
 After choosing Amazon Aurora, AWS will display list of available editions
 within MySQL and PostgreSQL engines.
 At the time of writing this page, MySQL 5.6-compatible is comes with
-Serverless and Parallel Query capabilities, hence we will go with this option.
-(see @fig:aws-aurora-MySQL)
+Serverless and Parallel Query capabilities, hence we will go with this option (see @fig:aws-aurora-MySQL).
+
 
 ![AWS Aurora DB](images/auroradb-3.png){#fig:aws-aurora-MySQL}
 
 ### Step 4 : Aurora Configuration and Settings
 
 Once we select the engine, next step is to select the Configuration
-and Setting.(see @fig:aws-aurora-config)
+and Setting (see @fig:aws-aurora-config).
+
 
 ![AWS Aurora DB](images/auroradb-4.png){#fig:aws-aurora-config}
 
