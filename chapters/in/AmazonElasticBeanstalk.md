@@ -16,17 +16,12 @@ Amazon Elastic Beanstalk is an PaaS offering from AWS
 that aims to offer be a one stop solution for fast deployment of
 scalable web-applications.
 
-## Amazon Elastic Beanstalk Benefits
-
-### Focus on Code Developement
-
 Elastic Beanstalk has been developeed with an idea of allowing developers to focus on 
 code developement instead of the environment set up. All the developers need to 
 provide is a working code, beanstalk takes care of providing the platform to run it.
 
-### Variety of Platforms supported
+A Variety of Platforms are supported
 
-Elastic Beanstalk supports variety of web applications platforms:
 * Java
 * Python
 * Node JS
@@ -35,6 +30,10 @@ Elastic Beanstalk supports variety of web applications platforms:
 * Ruby
 * Go
 * Docker
+
+Features of Elastic Beanstock include
+
+:o: change to bullet list with headings italic
 
 ### High Performance
 
@@ -64,8 +63,8 @@ configuration, software patching, database backups and performance monitoring.
 
 ## Amazon Elastic Beanstalk Pricing
 
-Amazon Elastic Beanstalk has no additional charges of its own. You only pay for the 
-resources / services provisioned by the beanstalk environment.
+Amazon Elastic Beanstalk has no additional charges of its own. You pay for the 
+resources and services provisioned by the beanstalk environment.
 These are typically:
 * EC2 instances
 * S3 Storage
@@ -73,6 +72,18 @@ These are typically:
 * Database
 
 ## How to provision a Amazon Elastic Beanstalk Environment for Quick Start
+
+:o: remove this section 
+
+:o: there is no space before :
+
+:o: Assumption : is not a full sentence use `select` instead of double quotes so they ar everbatim
+
+:o: (see ...) is an incomplete sentence and does not have a period. Review grammar rulkes on setting periods e.g. it needs to be inside the sendtence and the period needs to be behind .
+
+:o: you shoudl have looked at the modifications i made to your other text
+
+:o: All figures must be refered to 
 
 This section will help with steps to be followed to create a Highly Availble, Load 
 Balanced sample application on Elastic Beanstalk in a few quick Steps.
@@ -106,6 +117,7 @@ Go, .NET, PHP, Node JS, Docker and Tomcat. (see @fig:aws-beanstalk-baseoption)
 For this example we will go with Tomcat.
 
 ![AWS Beanstalk](images/elastic_beanstalk-3.png){#fig:aws-beanstalk-baseconfig}
+
 ![AWS Beanstalk](images/elastic_beanstalk-2.1.png){#fig:aws-beanstalk-baseoption}
 
 ### Step 4 : Click on Configure More Options
@@ -252,8 +264,7 @@ The application logs can be accessed from the Logs link in the application dashb
 
 (see @fig:aws-beanstalk-logs)
 
-![AWS Beanstalk](images/elastic_beanstalk-13.png)
-{#fig:aws-beanstalk-logs}
+![AWS Beanstalk](images/elastic_beanstalk-13.png){#fig:aws-beanstalk-logs}
 
 ### Beanstalk Instance Health
 
@@ -265,8 +276,7 @@ Additionally, this screen gives option to reboot or termite the selected EC2 ins
 
 (see @fig:aws-beanstalk-health)
 
-![AWS Beanstalk](images/elastic_beanstalk-14.png)
-{#fig:aws-beanstalk-health}
+![AWS Beanstalk](images/elastic_beanstalk-14.png){#fig:aws-beanstalk-health}
 
 ### Beanstalk Environment Monitoring and Alarms
 
@@ -275,8 +285,7 @@ screen which displays different types of graphs / metrics under different sectio
 The duration and intervals for monitoring can be edited to adjust the granularity.
 (see @fig:aws-beanstalk-monitor)
 
-![AWS Beanstalk](images/elastic_beanstalk-15.png)
-{#fig:aws-beanstalk-monitor}
+![AWS Beanstalk](images/elastic_beanstalk-15.png){#fig:aws-beanstalk-monitor}
 
 Each metric section also has a bell icon on the top right corner. Using this icon one 
 can set alarms based on specific thresholds. Alarms can be integrated SNS topics for
@@ -284,8 +293,7 @@ notification or DynamoDB.
 
 (see @fig:aws-beanstalk-alarm)
 
-![AWS Beanstalk](images/elastic_beanstalk-16.png)
-{#fig:aws-beanstalk-alarm}
+![AWS Beanstalk](images/elastic_beanstalk-16.png){#fig:aws-beanstalk-alarm}
 
 ### Beanstalk Patching Logs
 
@@ -293,8 +301,7 @@ The Managed Updates link in the application dashboard allows to view the history
 the patching activities performed on the environment by AWS.
 (see @fig:aws-beanstalk-patchlog)
 
-![AWS Beanstalk](images/elastic_beanstalk-17.png)
-{#fig:aws-beanstalk-patchlog}
+![AWS Beanstalk](images/elastic_beanstalk-17.png){#fig:aws-beanstalk-patchlog}
 
 ### Beanstalk Event Logs
 
@@ -304,8 +311,7 @@ changes made, instances transitioning from one health status to another, or
 deployments made on the environment.
 (see @fig:aws-beanstalk-eventlog)
 
-![AWS Beanstalk](images/elastic_beanstalk-18.png)
-{#fig:aws-beanstalk-eventlog}
+![AWS Beanstalk](images/elastic_beanstalk-18.png){#fig:aws-beanstalk-eventlog}
 
 ### Beanstalk Tags
 
@@ -314,8 +320,7 @@ environment. Tags are key value pairs that help to identify the beanstalk resour
 for managment or pricing activities.
 (see @fig:aws-beanstalk-tags)
 
-![AWS Beanstalk](images/elastic_beanstalk-19.png)
-{#fig:aws-beanstalk-tags}
+![AWS Beanstalk](images/elastic_beanstalk-19.png){#fig:aws-beanstalk-tags}
 
 ### Beanstalk Configuration Management
 
@@ -324,8 +329,7 @@ configurations for the beanstalk application. These are grouped into different s
 which are explained under the following pages.
 (see @fig:aws-beanstalk-config)
 
-![AWS Beanstalk](images/elastic_beanstalk-20.png)
-{#fig:aws-beanstalk-config}
+![AWS Beanstalk](images/elastic_beanstalk-20.png){#fig:aws-beanstalk-config}
 
 #### Software
 
@@ -361,8 +365,7 @@ Maintaining these properties here allows migration of same code package between
 environments without any code changes.
 (see @fig:aws-beanstalk-config-software)
 
-![AWS Beanstalk](images/elastic_beanstalk-21.png)
-{#fig:aws-beanstalk-config-software}
+![AWS Beanstalk](images/elastic_beanstalk-21.png){#fig:aws-beanstalk-config-software}
 
 #### Intances
 
@@ -388,8 +391,7 @@ Provisioned IOPS SSD), size and IOPS for the instances
 This section allows to secuirty groups to the EC2 instances to restirct traffic ingress.
 (see @fig:aws-beanstalk-config-intances)
 
-![AWS Beanstalk](images/elastic_beanstalk-22.png)
-{#fig:aws-beanstalk-config-intances}
+![AWS Beanstalk](images/elastic_beanstalk-22.png){#fig:aws-beanstalk-config-intances}
 
 #### Capacity
 
@@ -410,8 +412,7 @@ on scaling triggers like
 Alternatively, auto scaling can be timed if we know the time period of peak load.
 (see @fig:aws-beanstalk-config-capacity)
 
-![AWS Beanstalk](images/elastic_beanstalk-23.png)
-{#fig:aws-beanstalk-config-capacity}
+![AWS Beanstalk](images/elastic_beanstalk-23.png){#fig:aws-beanstalk-config-capacity}
 
 #### Load Balancer
 
@@ -423,8 +424,7 @@ This section allows to modify the below load balance configruations:
 Opening application on https will require you to upload signed certificates.
 (see @fig:aws-beanstalk-config-loadbalancer)
 
-![AWS Beanstalk](images/elastic_beanstalk-24.png)
-{#fig:aws-beanstalk-config-loadbalancer}
+![AWS Beanstalk](images/elastic_beanstalk-24.png){#fig:aws-beanstalk-config-loadbalancer}
 
 #### Rolling updates and deployments
 
@@ -440,8 +440,7 @@ on all instances at once or one by one.
 
 (see @fig:aws-beanstalk-config-updates)
 
-![AWS Beanstalk](images/elastic_beanstalk-25.png)
-{#fig:aws-beanstalk-config-updates}
+![AWS Beanstalk](images/elastic_beanstalk-25.png){#fig:aws-beanstalk-config-updates}
 
 #### Security
 
@@ -454,8 +453,7 @@ permissions to EC2 instances to access other AWS services.
 needed.
 (see @fig:aws-beanstalk-config-security)
 
-![AWS Beanstalk](images/elastic_beanstalk-26.png)
-{#fig:aws-beanstalk-config-security}
+![AWS Beanstalk](images/elastic_beanstalk-26.png){#fig:aws-beanstalk-config-security}
 
 #### Monitoring
 
@@ -470,8 +468,7 @@ This section currently allows to ignore http 4XX errors for monitoring health ch
 
 (see @fig:aws-beanstalk-config-monitoring)
 
-![AWS Beanstalk](images/elastic_beanstalk-27.png)
-{#fig:aws-beanstalk-config-monitoring}
+![AWS Beanstalk](images/elastic_beanstalk-27.png){#fig:aws-beanstalk-config-monitoring}
 
 #### Managed Updates
 
@@ -479,8 +476,7 @@ This section allows to manage the automatic updates to the platform and specify 
 time period / slot for updates.
 (see @fig:aws-beanstalk-config-updates)
 
-![AWS Beanstalk](images/elastic_beanstalk-28.png)
-{#fig:aws-beanstalk-config-updates}
+![AWS Beanstalk](images/elastic_beanstalk-28.png){#fig:aws-beanstalk-config-updates}
 
 #### Notifications
 
@@ -488,8 +484,7 @@ Using this section, we can specify email address to receive notifications about
 important events.
 (see @fig:aws-beanstalk-config-notifications)
 
-![AWS Beanstalk](images/elastic_beanstalk-29.png)
-{#fig:aws-beanstalk-config-notifications}
+![AWS Beanstalk](images/elastic_beanstalk-29.png){#fig:aws-beanstalk-config-notifications}
 
 #### Network
 
@@ -500,8 +495,7 @@ Note : VPC on the application can be mapped only at the time of creation of the
 beanstalk application and cannot be modified later.
 (see @fig:aws-beanstalk-config-network)
 
-![AWS Beanstalk](images/elastic_beanstalk-30.png)
-{#fig:aws-beanstalk-config-network}
+![AWS Beanstalk](images/elastic_beanstalk-30.png){#fig:aws-beanstalk-config-network}
 
 #### Database
 
