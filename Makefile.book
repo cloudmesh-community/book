@@ -221,7 +221,7 @@ endif
 	cp ../bin/emojifix/* dest/chapters/images
 	make -f Makefile index
 	../bin/find-graphics-path.py > dest/gpath.tex
-	cd dest; pandoc all.md -o $(FILENAME).tex -V fontsize=10pt --csl=template/ieee-with-url.csl --bibliography references.bib --filter pandoc-crossref --number-sections --standalone  --highlight-style tango --template template/eisvogel/eisvogel.latex
+	cd dest; pandoc all.md -o $(FILENAME).tex -V date="laszewski@gmail.com" --variable titlepage=true -V author="Gregor von Laszewski, Fugang Wang, Geoffrey C. Fox" -V title="Cloud Computing" -V fontsize=10pt --csl=template/ieee-with-url.csl --bibliography references.bib --filter pandoc-crossref --number-sections --standalone  --highlight-style tango --template template/eisvogel/eisvogel.latex
 	-cd dest; pdflatex --interaction nonstopmode  $(FILENAME).tex 
 	rm -f $(FILENAME).pdf 
 	cp dest/$(FILENAME).pdf .
