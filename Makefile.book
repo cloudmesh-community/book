@@ -210,7 +210,29 @@ latex-pdf:
 	cd dest; pandoc $(RESOURCE) -V pagestyle:headings -V secnumdepth:5 -V geometry:margin=1in --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
 
 
-e-pdf:
+e-pdf:prepare
+	cd dest; touch chapters/index.md
+ifeq ($(OS), osx)
+	cd dest; cat $(INDEX) > all.md
+endif
+ifeq ($(OS), linux)
+	cd dest; cat $(INDEX) > all.md
+endif
+	cp ../bin/emojifix/* dest/chapters/images
+	make -f Makefile index
+	../bin/find-graphics-path.py > dest/gpath.tex
+	cd dest; pandoc all.md -o $(FILENAME).tex -V date="laszewski@gmail.com" --variable titlepage=true -V author="Gregor von Laszewski, Fugang Wang, Geoffrey C. Fox" -V title="Cloud Computing" -V fontsize=10pt --csl=template/ieee-with-url.csl --bibliography references.bib --filter pandoc-crossref --number-sections --standalone  --highlight-style tango --template template/eisvogel/eisvogel.latex
+	-cd dest; pdflatex --interaction nonstopmode  $(FILENAME).tex 
+	rm -f $(FILENAME).pdf 
+	cp dest/$(FILENAME).pdf .
+
+
+
+aaa:
+	cd dest; pandoc $(RESOURCE) -V pagestyle:headings -V secnumdepth:5 -V geometry:margin=1in --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
+
+
+ooo:
 	cd dest; pandoc $(RESOURCE) -V pagestyle:headings -V secnumdepth:5 -V geometry:margin=1in --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography references.bib --csl=../../template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
 
 

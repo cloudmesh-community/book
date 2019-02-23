@@ -86,7 +86,7 @@ pointer while refering to @fig:code-example.
 
 Figures must be written in the md as 
 
-```
+```markdown
 ![Figure example](images/code.png){#fig:code-example width=1in}
 ```
 
@@ -128,7 +128,7 @@ the section header as follows:
 
 Now we can use the refernce in the text as follows:
 
-```In #sec:notation we explain ...```
+```In @sec:notation we explain ...```
 
 It will be rendered as: In @sec:notation we
 explain ...
