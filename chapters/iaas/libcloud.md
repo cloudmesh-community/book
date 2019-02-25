@@ -169,7 +169,7 @@ This will provide you with a convenient config method that reads the Azure
 configuration parameters from the cloudmesh4.yaml file which you need to 
 place in `~/.cloudmesh`
  
-``python
+```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
 from cloudmesh.common.util import path_expand
@@ -199,6 +199,11 @@ pprint(connection.__dict__)
 
 #### Azure
 
+##### Azure Classic Driver
+
+Please note that libcloud has multiple drivers to interact with Azure. The 
+following is an example using the classic method. 
+
 To get a driver via libcloud for azure you first have to set up the 
 cloudmesh4.yaml file and install the convenience methods from cloudmesh as 
 documented in 
@@ -209,7 +214,7 @@ This will provide you with a convenient config method that reads the Azure
 configuration parameters from the cloudmesh4.yaml file which you need to 
 place in `~/.cloudmesh`
  
-``python
+```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
 from cloudmesh.common.util import path_expand
@@ -237,7 +242,9 @@ connection = driver(
 pprint(connection.__dict__)
 ```
 
+##### Azure New Driver :o:
 
+:o: To be provided by students or TA
 
 #### OpenStack
 
@@ -251,7 +258,7 @@ This will provide you with a convenient config method that reads the Azure
 configuration parameters from the cloudmesh4.yaml file which you need to 
 place in `~/.cloudmesh`
  
-``python
+```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
 from cloudmesh.common.util import path_expand
@@ -271,15 +278,19 @@ pprint(credentials)
 #AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
 
 driver = get_driver(Provider.AZURE)
-connection = self.driver(credentials["OS_USERNAME"],
-                         credentials["OS_PASSWORD"],
-                         ex_force_auth_url=credentials['OS_AUTH_URL'],
-                         ex_force_auth_version='2.0_password',
-                         ex_tenant_name=credentials['OS_TENANT_NAME'])
+connection = self.driver(
+    credentials["OS_USERNAME"],
+    credentials["OS_PASSWORD"],
+    ex_force_auth_url=credentials['OS_AUTH_URL'],
+    ex_force_auth_version='2.0_password',
+    ex_tenant_name=credentials['OS_TENANT_NAME'])
 
 pprint(connection.__dict__)
 ```
 
+#### Google :o:
+
+:o: To be provided by students or TA
 
 ### Invoking services
  
