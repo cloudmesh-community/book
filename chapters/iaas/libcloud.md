@@ -189,9 +189,10 @@ pprint(credentials)
 #AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
 
 driver = get_driver(Provider.AZURE)
-connection = self.driver(credentials["EC2_ACCESS_ID"],
-                         credentials["EC2_SECRET_KEY"],
-                         region=credentials["region"])
+connection = self.driver(
+    credentials["EC2_ACCESS_ID"],
+    credentials["EC2_SECRET_KEY"],
+    region=credentials["region"])
 
 pprint(connection.__dict__)
 ```
@@ -316,7 +317,10 @@ images = conn.list_images()
 sizes = conn.list_sizes()
 
 # create node with first image and first size
-node = conn.create_node(name='yourservername', image=images[0], size=sizes[0])
+node = conn.create_node(
+    name='yourservername', 
+    image=images[0], 
+    size=sizes[0])
 ```
 
 #### Listing Nodes
@@ -327,7 +331,7 @@ nodes that have been created in the provider
 ```python
 ...
 nodes = connection.list_nodes()
-print nodes
+print (nodes)
 ```
 
 #### Starting Nodes
@@ -413,7 +417,7 @@ $ pip install cm-community
 and this library will be installed for you.
 
 
-## Amazon Simple Storage Service S3 via libcloud :hand:
+## Amazon Simple Storage Service S3 via libcloud :o:
 
 Next we explain how to use Amazon Web Services (AWS) S3 via
 libcloud. Apache libcloud is a python library that provides
@@ -449,17 +453,20 @@ where you can also define access controls.
 List Containers function list all the containers of buckets available
 for the user in that particular region.
 
-	from libcloud.storage.types import Provider
-	from libcloud.storage.providers import get_driver
+:o: TODO change this example to use the cloudmesh4.yaml file
+
+```python
+from libcloud.storage.types import Provider
+from libcloud.storage.providers import get_driver
 
 
-	cls = get_driver(Provider.S3_US_EAST2)
-	driver = cls('api key', 'api secret key')
- 
-	d = driver.list_containers();
+cls = get_driver(Provider.S3_US_EAST2)
+driver = cls('api key', 'api secret key')
 
-	print d;
+d = driver.list_containers()
 
+print (d)
+```
 
 ### List container objects
 
@@ -467,57 +474,70 @@ List container objects function shows the list of all objects in that
 container. Please note the output could be large depending on the
 files present in the bucket.
 
-	from libcloud.storage.types import Provider
-	from libcloud.storage.providers import get_driver
-	
-	# Note I have used S3_US_EAST2 as this is the
-    # "region" where my S3 bucket is located.
+:o: TODO change this example to use the cloudmesh4.yaml file
 
-	cls = get_driver(Provider.S3_US_EAST2)
-	driver = cls('api key', 'api secret key')
-	
-	container = driver.get_container(container_name='<bucket name>')
-	
-	d = driver.list_container_objects(container);
-	
-	print d;
+```python
+from libcloud.storage.types import Provider
+from libcloud.storage.providers import get_driver
+
+# Note I have used S3_US_EAST2 as this is the
+# "region" where my S3 bucket is located.
+
+cls = get_driver(Provider.S3_US_EAST2)
+driver = cls('api key', 'api secret key')
+
+container = driver.get_container(
+    container_name='<bucket name>')
+
+d = driver.list_container_objects(container)
+
+print(d)
+```
 
 ### Upload a file
 
 Upload a file helps in uploading a local file to S3 bucket.
 
-	from libcloud.storage.types import Provider
-	from libcloud.storage.providers import get_driver
 
-	FILE_PATH = '/<file path>/<filename>'
+:o: TODO change this example to use the cloudmesh4.yaml file
 
-    # Note I have used S3_US_EAST2 as this is
-    # the "region" where my S3 bucket is located.
+```python
+from libcloud.storage.types import Provider
+from libcloud.storage.providers import get_driver
 
-	cls = get_driver(Provider.S3_US_EAST2)
-	driver = cls('api key', 'api secret key')
+FILE_PATH = '/<file path>/<filename>'
 
-	container = driver.get_container(container_name='<bucket name>')
+# Note I have used S3_US_EAST2 as this is
+# the "region" where my S3 bucket is located.
 
-    extra = {'meta_data': {
-        'owner': '<owner name>',
-        'created': '2018-03-24'}}
+cls = get_driver(Provider.S3_US_EAST2)
+driver = cls('api key', 'api secret key')
 
-	with open(FILE_PATH, 'rb') as iterator:
+container = driver.get_container(
+    container_name='<bucket name>')
+
+extra = {
+  'meta_data': {
+    'owner': '<owner name>',
+    'created': '2018-03-24'
+    }
+  }
+
+with open(FILE_PATH, 'rb') as iterator:
     obj = driver.upload_object_via_stream(
         iterator=iterator,
         container=container,
         object_name='backup.tar.gz',
         extra=extra)
-
+```
 
 ### References
 
-* https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html
+* <https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html>
 * Documentation about libcloud can be found at <https://libcloud.readthedocs.org>
 
     * storage driver <http://libcloud.readthedocs.io/en/latest/_modules/libcloud/storage/drivers/s3.html>
     * Examples: <https://libcloud.readthedocs.io/en/latest/storage/examples.html>
-    * API docs<http://libcloud.apache.org/apidocs/0.6.1/libcloud.storage.base.StorageDriver.html>
+    * API docs <http://libcloud.apache.org/apidocs/0.6.1/libcloud.storage.base.StorageDriver.html>
 
 
