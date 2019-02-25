@@ -98,6 +98,42 @@ pprint(driver.list_sizes())
 pprint(driver.list_nodes())
 ```
 
+## Managing your cloud credentials
+
+Often you will need as part of your code to access cloud credentails. Theas 
+could be read in interactively, from environment variables, or from a 
+configuration file. To make things easy for now, we assume the credentials 
+are stored in a yaml file that is stores in ~/.cloudmesh/cloudmesh.4.yaml.
+An example is listed at
+
+* <https://github.com/cloudmesh-community/cm/blob/master/cloudmesh/etc/cloudmesh4.yaml>
+
+With the help of this yaml file it is now easy to manage credentials for 
+multiple clouds. We provide next a simple example on how to get the 
+credentials for the cloud calles aws.
+
+```python
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+
+name="aws"
+
+credentials = Config()["cloudmesh"]["cloud"][name]["credentials"]
+```
+
+The last function can also be called via
+
+```python
+credentials = Config().credentials("cloud", name)
+```
+
+Which is a convenient method to access the credentials for a named cloud.
+
+
+Certianly you should be encrypting this file and an extension could be 
+developed by you to manage the encryption and decryption for example while 
+using your password protected public/private keypair or other methods.
+
 ## Working with cloud services
 
 In the following section we will look into how Libcloud can be used to
@@ -123,18 +159,43 @@ After you obtain the connection, it can be used to invoke various services
 
 #### Amazon AWS
 
-Authentication is performed for AWS as follows
+o get a driver via libcloud for AWS you first have to set up the 
+cloudmesh4.yaml file and install the convenience methods from cloudmesh as 
+documented in 
 
-```python
+* <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
+
+This will provide you with a convenient config method that reads the Azure 
+configuration parameters from the cloudmesh4.yaml file which you need to 
+place in `~/.cloudmesh`
+ 
+``python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
 
-EC2_ACCESS_ID = 'your access id'
-EC2_SECRET_KEY = 'your secret key'
+# Azure related variables
 
-EC2Driver = get_driver(Provider.EC2)
-conn = EC2Driver(EC2_ACCESS_ID, EC2_SECRET_KEY)
+name = "azure"
+# This assumes the cloudname for azure to be *azure*
+
+credentials = Config().credentials("cloud", name)
+
+pprint(credentials)
+ 
+
+#AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
+
+driver = get_driver(Provider.AZURE)
+connection = self.driver(credentials["EC2_ACCESS_ID"],
+                         credentials["EC2_SECRET_KEY"],
+                         region=credentials["region"])
+
+pprint(connection.__dict__)
 ```
+
 
 #### Azure
 
@@ -158,7 +219,9 @@ from pprint import pprint
 # Azure related variables
 
 name = "azure"
-credentials = Config()["cloudmesh"]["cloud"][name]["credentials"]
+# This assumes the cloudname for azure to be *azure*
+
+credentials = Config().credentials("cloud", name)
 
 pprint(credentials)
  
@@ -178,22 +241,43 @@ pprint(connection.__dict__)
 
 #### OpenStack
 
-Authentication is performed for OpenStack as follows
+To get a driver via libcloud for OpenStack you first have to set up the 
+cloudmesh4.yaml file and install the convenience methods from cloudmesh as 
+documented in 
 
-```python
-from libcloud.compute.providers import get_driver
+* <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
+
+This will provide you with a convenient config method that reads the Azure 
+configuration parameters from the cloudmesh4.yaml file which you need to 
+place in `~/.cloudmesh`
+ 
+``python
 from libcloud.compute.types import Provider
+from libcloud.compute.providers import get_driver
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
 
-OpenstackDriver = get_driver(Provider.OPENSTACK)
+# Azure related variables
 
-#OpenStack related variables
+name = "chameleon"
+# This assumes the cloudname for azure to be *azure*
 
-OPENSTACK__AUTH_USERNAME = 'your_user_name'
-OPENSTACK_AUTH_PASSWORD = 'your_auth_password'
+credentials = Config().credentials("cloud", name)
 
-conn = OpenStack(OPENSTACK__AUTH_USERNAME, OPENSTACK_AUTH_PASSWORD',
-                   ex_force_auth_url='http://192.168.1.101:5000',
-                   ex_force_auth_version='2.0_password')
+pprint(credentials)
+ 
+
+#AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
+
+driver = get_driver(Provider.AZURE)
+connection = self.driver(credentials["OS_USERNAME"],
+                         credentials["OS_PASSWORD"],
+                         ex_force_auth_url=credentials['OS_AUTH_URL'],
+                         ex_force_auth_version='2.0_password',
+                         ex_tenant_name=credentials['OS_TENANT_NAME'])
+
+pprint(connection.__dict__)
 ```
 
 
@@ -231,7 +315,7 @@ nodes that have been created in the provider
 
 ```python
 ...
-nodes = conn.list_nodes()
+nodes = connection.list_nodes()
 print nodes
 ```
 
@@ -242,9 +326,9 @@ be used to start the node
 
 ```python
 ...
-nodes = conn.list_nodes()
+nodes = connection.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
-conn.ex_start(node=node)
+connection.ex_start(node=node)
 ```
 
 #### Stoping Nodes
@@ -254,9 +338,9 @@ been started
 
 ```python
 ...
-nodes = conn.list_nodes()
+nodes = connection.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
-conn.ex_stop(node=node)
+connection.ex_stop(node=node)
 ```
 
 ## Cloudmesh Community Program to Manage Clouds
@@ -280,7 +364,7 @@ passwords on your publicly accessible Github account.
    that you have made. For example maybe you can use a new directory
    on your desktop
 
-2. Copy the cm.py and `cloudmesh.yaml` files into this folder. Just to
+2. Copy the cm.py and `cloudmesh4.yaml` files into this folder. Just to
    make sure you are not working with the files under the git repo you
    should delete the cloudmesh.yaml file in that is in your local git
    repo.
@@ -291,6 +375,8 @@ passwords on your publicly accessible Github account.
 To illustrate how simple the program is and that it significantly
 improves your management of credentials we provide the follwoing
 code:
+
+**NOTE**: This is to be implemented by you
 
 ```python
 from cm import cloudmesh
