@@ -367,7 +367,7 @@ provide a REST based API, but also a commandline shell allowing to
 switch between clouds with a single variable. It also provided bare
 metal provisioning before OpenStack even offered it. Through an
 evolution of developments the current cloudmesh architecture that
-allows multicloud services is depicted in the next figure. We still
+allows multicloud services is depicted in the figure: @fig:cloudmesh-arch. We still
 distinguish the IaaS level which included not only IaaS Abstractions,
 but also Containers, and HPC services. Platforms are typically
 integrad=ted through DevOps that can be hosted on the IaaS. Examples

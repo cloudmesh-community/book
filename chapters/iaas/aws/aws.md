@@ -93,7 +93,7 @@ gained popularity recently.
 ### Storage
 
 AWS provides many storage services that users can leverage for developing
-applications and solutions. The next list showcases AWS storage
+applications and solutions. The list next showcases AWS storage
 services. Amazon offers the following storage services
 
 * [Amazon Simple Storage Service
@@ -112,7 +112,7 @@ Marketplace](https://aws.amazon.com/marketplace/b/2649337011/ref=mkt_ste_l2_S3CD
 
 
 AWS also provides many data base solutions. AWS has both SQL based
-databases and NoSQL based databases. The next list shows the database
+databases and NoSQL based databases. The list next shows the database
 services that AWS offers. And other database related services
 
 * [Amazon Aurora](https://aws.amazon.com/rds/aurora/?nc2=h_mo)
@@ -153,7 +153,7 @@ including your email address as shown in the image: @fig:aws-signup.
 
 Next you will be asked to provide further details such as your name,
 address and phone number. After the additional details have been
-provided. AWS will ask for credit/debit card details as shown: @fig:payment-information.
+provided. AWS will ask for credit/debit card details as shown in figure: @fig:payment-information.
 They require this information to verify your identity and make sure
 they have a method to charge you if needed. However no charges will be
 applied to your credit/debit card unless you use the AWS services and
@@ -294,7 +294,7 @@ To go to the EC2 services you can click on the services link on the
 top left corner in the console and then click on EC2 which is listed
 under "Compute". Then you will see a blue button labeled "Launch
 instance". Click on the button and the console will take you to the
-page shown next: @fig:launch-instance. Notice that the check box for "Free tier only" is
+page shown in figure: @fig:launch-instance. Notice that the check box for "Free tier only" is
 clicked to make sure the instance type we choose is eligible for the
 free tier hours. The instance type you select defines the properties
 of the virtual machine you are staring such as RAM, Storage,

@@ -35,7 +35,7 @@ The basic steps are:
    ```
    
    on other machines to have them join
-   the swarm as workers. Choose a tab described in next to see how this plays out
+   the swarm as workers. Choose a tab described next to see how this plays out
    in various contexts. We use VMs to quickly create a two-machine
    cluster and turn it into a swarm.
 

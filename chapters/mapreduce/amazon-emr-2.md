@@ -90,7 +90,7 @@ selected here will vary on what type of data processing you're looking
 to achieve. Then scroll down to the 'Security and access' section of the
 page and select the key pair generated in the previous steps in the
 drop-down menu, as in figure @fig:security. Below that you can then select which permissions model
-to u se: default or custom. The default option sets up permissions for
+to use: default or custom. The default option sets up permissions for
 your EMR cluster that are granted using policies applied to EMR specific
 IAM roles. Using the custom option allows you to select existing IAM
 roles to apply permissions to instead of creating new roles. Once all of
@@ -146,8 +146,7 @@ months. You can then proceed to the S3 console page. Before you can
 delete buckets, you have to delete all of the folders and files
 contained within that bucket. To do this, click on the bucket name which
 will then show the subfolders contained within the bucket: @fig:bucket. Check the box
-next to all of the subfolder names, select the 'More' button in the previous menu
-and from that menu select 'Delete'. Once all of the folders and
+next to all of the subfolder names, select the 'More' button in menu in figure: @fig:bucket and from that menu select 'Delete'. Once all of the folders and
 files are gone, navigate back to the main S3 page, click the row of the
 bucket name you wish to delete and select the 'Delete' button. You will
 then be prompted to enter the name of the bucket you wish to delete and

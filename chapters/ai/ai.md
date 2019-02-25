@@ -85,7 +85,7 @@ Remember this is completely dependent on the authors initial
 classification of whether a car is fast or not. Clearly the Lamborghini
 and the Bugatti are fast but maybe the Tesla is not fast therefore
 giving an incorrect answer. An example using the Mustang and
-the Tesla is given in the next calculation:
+the Tesla is given in the calculation next:
 
 $${d(\mathbf{i},\mathbf{j})}  = \sqrt{{(300 - 288)^2 + (1 - 0)^2 } }  = 12.04$$
 
@@ -199,7 +199,7 @@ order to compare to our results attained from the previous exercise. In
 case you did not notice the `selected_player_distance` array is an array
 that lists all the Euclidean distances. We will use this later to see if
 the same result is obtained by using the built in functions. First we
-will import the necessary libraries shown in the next code.
+will import the necessary libraries shown in the code next.
 
     from scipy.spatial import distance
 

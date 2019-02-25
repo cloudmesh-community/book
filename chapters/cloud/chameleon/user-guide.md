@@ -26,7 +26,7 @@ The initial log in page appears as:
 ![Chameleon login](images/chameleon-login.png){#fig:chameleon-login}
 
 After a successful log in, you will see the Overview page as shown
-next. This page provides a summary of your current and recent usage and
+in: @fig:overview-page. This page provides a summary of your current and recent usage and
 provides links to various other pages. Most of the tasks you will
 perform are done via the menu on the lower left and will be described
 next. One thing to note is that on the left, your current project is
@@ -42,7 +42,7 @@ shot @fig:overview-page, the quota and usage apply to the current project you ha
 One of the main activities you'll be performing in this web interface is
 the management of virtual machines, or instances. You do this via the
 Instances page that is reachable from the menu in the lower left of the
-Overview page. An example Instances page is shown next. For instances
+Overview page. An example Instances page is shown in: @fig:virtual-machine-instances. For instances
 that you have running, you can click on the name of the instance to get
 more information about it and to access the VNC interface to the
 console. The dropdown menu to the left of the instance lets you perform
@@ -168,7 +168,7 @@ OpenStack client tools with the --os-cacert cacert.pem arguments.
 
 You can use the OpenStack command line clients to download data from and
 upload data to Chameleon clouds. Configure your environment by following
-the "OpenStack REST Interfaces" previous section, then use the following
+the "OpenStack REST Interfaces" in previous section, then use the following
 commands:
 
 -   `glance image-download` to download images and snapshots from Glance

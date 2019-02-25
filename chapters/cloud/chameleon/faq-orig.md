@@ -602,21 +602,18 @@ The full process can be viewed in @fig:faq-orig-ssh1:
 
 First, download and install PuTTY and PuTTYgen [from
 here](http://www.chiark.greenend.org.uk/~sgtatham/putty/). Once
-downloaded, opening PuTTYgen will open a key generator window, seen
-next.
+downloaded, opening PuTTYgen will open a key generator window (see @fig:putty-windows).
 
 ![image](images/putty2.png){#fig:putty-windows width="\columnwidth"}
 
-Once the program is opened, click the Generate button, seen in
-blue in @fig:putty-windows. PuTTY Key Generator will then ask you to move your mouse around
+Once the program is opened, click the Generate button, seen blue in figure: @fig:putty-windows. PuTTY Key Generator will then ask you to move your mouse around
 the program's blank space to generate "randomness" for your key.?
 
 You may enter an optional "Key passphrase" and then confirm the
 passphrase in the required areas but let us keep these spaces in blank
-just to avoid complexity. An example is shown next. Note that the
-passphrases are not necessary!
+just to avoid complexity. An example is shown in figure: @fig:putty-key-passphrase. Note that the passphrases are not necessary!
 
-![image](images/putty3.png){width="\columnwidth"}
+![image](images/putty3.png){#fig:putty-key-passphrase width="\columnwidth"}
 
 Save both the public and private keys into a file of your choice using
 the "Save public key" and "Save private key" buttons; name them

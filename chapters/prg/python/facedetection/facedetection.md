@@ -321,7 +321,7 @@ in this example by opencv functions. You can try other images with
 different colors to detect the different shape of objects using
 findContours and inRange from opencv.
 
-For more information, see the next useful links.
+For more information, see the useful links next.
 
 -   contours features:
     <http://docs.opencv.org/3.1.0/dd/d49/tutorial/_py/_contour/_features.html>
