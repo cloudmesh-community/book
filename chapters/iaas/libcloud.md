@@ -138,20 +138,43 @@ conn = EC2Driver(EC2_ACCESS_ID, EC2_SECRET_KEY)
 
 #### Azure
 
-Authentication is performed for Azure as follows
+To get a driver via libcloud for azure you first have to set up the 
+cloudmesh4.yaml file and install the convenience methods from cloudmesh as 
+documented in 
 
-```python
+* <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
+
+This will provide you with a convenient config method that reads the Azure 
+configuration parameters from the cloudmesh4.yaml file which you need to 
+place in `~/.cloudmesh`
+ 
+``python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
 
 # Azure related variables
 
-AZURE_SUBSCRIPTION_ID = 'xxxxxxxx–xxxx-xxxx-xxxx-xxxxxxxxxxxx'
-AZURE_MANAGEMENT_CERT_PATH = 'C:/Demo/azure_cert.pem'
+name = "azure"
+credentials = Config()["cloudmesh"]["cloud"][name]["credentials"]
 
-AZDriver = get_driver(Provider.AZURE)
-conn = AZDriver(subscription_id=AZURE_SUBSCRIPTION_ID, key_file=AZURE_MANAGEMENT_CERT_PATH)
-``` 
+pprint(credentials)
+ 
+
+#AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
+
+driver = get_driver(Provider.AZURE)
+connection = driver(
+    subscription_id=credentials["AZURE_SUBSCRIPTION_ID"],
+    key_file=path_expand(credentials["AZURE_KEY_FILE"])
+)
+
+pprint(connection.__dict__)
+```
+
+
 
 #### OpenStack
 
