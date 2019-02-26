@@ -42,7 +42,8 @@ Few of them are listed here
  2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
     deminsional  space to two or three dimension.
     
-# Building a end to end pipeline for Supervised machine learning using Scikit-learn
+# Building a end to end pipeline for Supervised machine learning using Scikit-learn - 
+### Example project  = Fraud detection system.
 ---
 **:mortar_board: Learning Objectives**
 ---
@@ -143,7 +144,7 @@ plt.show()
 ![scikit-learn](images/scikit-learn-histograms.png)
 {#fig:scikit-learn-histograms}
 
-## Box plot Analysis
+### Box plot Analysis
 
 ```python
 
@@ -163,7 +164,7 @@ plt.show()
 ![scikit-learn](images/scikit-learn-boxplot.png)
 {#fig:scikit-learn-boxplot}
 
-## Scatter plot Analysis
+### Scatter plot Analysis
 
 ```python
 
@@ -173,6 +174,144 @@ sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue
 ```
 ![scikit-learn](images/scikit-learn-scatterplot.png)
 {#fig:scikit-learn-scatterplot}
+
+## Data Cleansing - Removing Outliers
+
+If the transaction amount is lower than 5 percent of the all the transactions AND does not exceed USD 3000, we will exclude it from our analysis to reduce Type 1 costs
+If the transaction amount is higher than 95 percent of all the transactions AND exceeds USD 500000, we will exclude it from our analysis, and use a blanket review process for such transactions (similar to isFlaggedFraud column in original dataset) to reduce Type 2 costs
+
+```
+low_exclude = np.round(np.minimum(fin_samp_data.amount.quantile(0.05), 3000), 2)
+high_exclude = np.round(np.maximum(fin_samp_data.amount.quantile(0.95), 500000), 2)
+
+###Updating Data to exclude records prone to Type 1 and Type 2 costs
+low_data = fin_samp_data[fin_samp_data.amount > low_exclude]
+data = low_data[low_data.amount < high_exclude]
+
+```
+## Pipeline Creation
+### Defining DataFrameSelector to separate Numerical and Categorical attributes
+
+```
+from sklearn.base import BaseEstimator, TransformerMixin
+
+# Create a class to select numerical or categorical columns 
+# since Scikit-Learn doesn't handle DataFrames yet
+class DataFrameSelector(BaseEstimator, TransformerMixin):
+    def __init__(self, attribute_names):
+        self.attribute_names = attribute_names
+    def fit(self, X, y=None):
+        return self
+    def transform(self, X):
+        return X[self.attribute_names].values
+```
+
+### Feature Creation / Additional Feature Engineering
+During EDA we identified that there are transactions where there are transactions where the balances do not tally after the transaction is completed. We believe this could potentially be cases where fraud is occurring. To account for this error in the transactions, we define two new features "errorBalanceOrig" and "errorBalanceDest", calculated by adjusting the amount with the before and after balances for the Originator and Destination accounts.
+
+Below, we create a function that allows us to create these features in a pipeline.
+
+```
+from sklearn.base import BaseEstimator, TransformerMixin
+
+# column index
+amount_ix, oldbalanceOrg_ix, newbalanceOrig_ix, oldbalanceDest_ix, newbalanceDest_ix = 0, 1, 2, 3, 4 
+
+class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
+    def __init__(self): # no *args or **kargs
+        pass
+    def fit(self, X, y=None):
+        return self  # nothing else to do
+    def transform(self, X, y=None):
+        errorBalanceOrig = X[:,newbalanceOrig_ix] +  X[:,amount_ix] -  X[:,oldbalanceOrg_ix]
+        errorBalanceDest = X[:,oldbalanceDest_ix] +  X[:,amount_ix]-  X[:,newbalanceDest_ix] 
+        
+        return np.c_[X, errorBalanceOrig, errorBalanceDest]
+```
+
+## Creating Training and Testing datasets
+
+```
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.30, random_state=42, stratify=y)
+```
+
+## Creating pipeline for numerical and categorical attributes
+
+Identifying columns with Numerical and Categorical characterstics.
+
+```
+X_train_num = X_train[["amount","oldbalanceOrg", "newbalanceOrig", "oldbalanceDest", "newbalanceDest"]]
+X_train_cat = X_train[["type"]]
+X_model_col = ["amount","oldbalanceOrg", "newbalanceOrig", "oldbalanceDest", "newbalanceDest","type"]
+```
+
+```
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import Imputer
+
+num_attribs = list(X_train_num)
+cat_attribs = list(X_train_cat)
+
+num_pipeline = Pipeline([
+        ('selector', DataFrameSelector(num_attribs)),        
+        ('attribs_adder', CombinedAttributesAdder()),       
+        ('std_scaler', StandardScaler())
+    ])
+
+cat_pipeline = Pipeline([
+        ('selector', DataFrameSelector(cat_attribs)),
+        ('cat_encoder', CategoricalEncoder(encoding="onehot-dense"))            
+    ])
+from sklearn.pipeline import FeatureUnion
+
+full_pipeline = FeatureUnion(transformer_list=[
+        ("num_pipeline", num_pipeline),
+        ("cat_pipeline", cat_pipeline),        
+    ])
+from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
+
+logreg = LogisticRegression()
+
+full_pipeline_with_predictor = Pipeline([
+        ("preparation", full_pipeline),  # combination of numerical and categorical pipelines
+        #('get_feature', feature()),   
+        ("model", logreg)  # replace with whatever estimator(s) you are using
+    ])
+full_pipeline_with_predictor.fit(X_train[X_model_col], y_train) 
+```
+
+Pipeline(memory=None,
+     steps=[('preparation', FeatureUnion(n_jobs=None,
+       transformer_list=[('num_pipeline', Pipeline(memory=None,
+     steps=[('selector', DataFrameSelector(attribute_names=['amount', 'oldbalanceOrg', 'newbalanceOrig', 'oldbalanceDest', 'newbalanceDest'])), ('attribs_adder', CombinedAttributesAdder()...penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False))])
+
+```
+cat_encoder = cat_pipeline.named_steps["cat_encoder"]
+new_feature = num_pipeline.named_steps["attribs_adder"]
+cat_one_hot_attribs = list(cat_encoder.categories_[0])
+attributes = num_attribs + ['errorBalanceOrig','errorBalanceDest'] + cat_one_hot_attribs 
+attributes
+```
+
+['amount',
+ 'oldbalanceOrg',
+ 'newbalanceOrig',
+ 'oldbalanceDest',
+ 'newbalanceDest',
+ 'errorBalanceOrig',
+ 'errorBalanceDest',
+ 'CASH_IN',
+ 'CASH_OUT',
+ 'DEBIT',
+ 'PAYMENT',
+ 'TRANSFER']
+ 
+
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
 
