@@ -43,7 +43,7 @@ How do you find the assignments?:
 
     Alternatively click on the Exercise link, gets you there faster ...
 
-Complete the above assignment within the first week!
+Complete the assignment within the first week!
 
 Week 2
 ------

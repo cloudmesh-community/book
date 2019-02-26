@@ -122,7 +122,7 @@ For this example we will go with Tomcat.
 
 ### Step 4 : Click on Configure More Options
 
-Do not click on Create Application button in the step above in case you wish to create 
+Do not click on Create Application button in the previous step in case you wish to create 
 your application in a particular VPC. This is will be a requirement for most organizations
 since they would like the application to be created in their own VPCs on cloud so that 
 they can restrict the access to the application and also allow the application to connect 

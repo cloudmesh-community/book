@@ -293,7 +293,7 @@ test the ability of the container to execute shell scripts:
 
 `vi hello_world.sh`
 
-The above command assumes you know the vi editor. Enter the following
+The previous command assumes you know the vi editor. Enter the following
 text into the script, save it, and quit the vi editor:
 
 `#!/bin/bash echo "Hello, World!"`
@@ -380,7 +380,7 @@ Allocation' through the XSEDE User Portal:
 <https://portal.xsede.org/allocations-overview#types-trial>
 
 You may create a free account on the XUP if you do not already have one
-and then proceed to submit an allocation request at the above link.
+and then proceed to submit an allocation request at the previously given link.
 
 NOTE: SDSC provides a
 [Comet User Guide](http://www.sdsc.edu/support/user_guides/comet.html)
@@ -450,7 +450,7 @@ is:
 
 `[test_user@comet-ln3 ~]$ module load singularity`
 
-You may issue the above command from any directory on Comet. Recall that
+You may issue the previous command from any directory on Comet. Recall that
 we added a `hello_world.sh` script to our centos7.img container. Let's
 try executing that script with the following command:
 
@@ -532,7 +532,7 @@ installation).
 
 ` mpirun singularity exec ${CONTAINER} /usr/bin/hellow `
 
-The above script requests 2 nodes and 24 tasks per node with a wall time
+The previous script requests 2 nodes and 24 tasks per node with a wall time
 of 10 minutes. Notice that two modules are loaded (see the line
 beginning with 'module'), one for Singularity and one for MPI. An
 environment variable 'CONTAINER' is also defined to make it a little
