@@ -312,8 +312,7 @@ attributes
  'TRANSFER']
  
 
-
-In this section we demonstrate how simple it is to use k-means in scikit learn.
+### K-means in scikit learn.
 
 ## Import
 
