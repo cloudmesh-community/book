@@ -47,7 +47,7 @@ git clone https://github.com/hpcdevops/singularity-hello-world.git
 
 ## Why Singularity?
 
-Below is a typical list of commands you would need to issue in order to
+Listed next is a typical list of commands you would need to issue in order to
 implement a functional Python installation for scientific research:
 
 ```
@@ -73,7 +73,7 @@ packaging these commands in a re-usable and editable script, allowing
 you to quickly, easily, and repeatedly implement a custom container
 designed specifically for your analytical needs.
 
-The diagram below compares a VM vs. Docker vs. Singularity.
+@fig:singularity-archi compares a VM vs. Docker vs. Singularity.
 
 ![Singularity Container Architecture [@greg-keynote]](../../cloud/images/singularity-archi.jpg){#fig:singularity-archi}
 
@@ -177,7 +177,7 @@ We will go through each of these steps in detail.
 We recommend building containers using the same version of Singularity,
 2.5.1, as exists on Comet. This is a 2 step process.
 
-**Step 1: run the script below to remove your existing Singularity:**
+**Step 1: run the next script to remove your existing Singularity:**
 
 ```bash
 #!/bin/bash
@@ -325,7 +325,7 @@ demand.
 Let's say you want to create a container with Ubuntu, but you may want
 to create variations on the configurations without having to repeat a
 long list of commands manually. First, we need our definitions file.
-Below is the contents of a definitions file which should suffice for our
+Given next is the contents of a definitions file which should suffice for our
 purposes.
 
 ```bash
@@ -519,7 +519,7 @@ Of course, most users simply want to submit their jobs to the Comet
 queue and let it run to completion and go on to other things while
 waiting. Slurm is the job manager for Comet.
 
-Below is a job script (which we will name
+Given next is a job script (which we will name
 `singularity_mvapich2_hellow.run`) which will submit your Singularity
 container to the Comet queue and run a program, hellow.c (written in C
 using MPI and provided as part of the examples with the mvapich2 default
@@ -623,7 +623,7 @@ using the MNIST dataset. You can learn more about this dataset at
 <http://yann.lecun.com/exdb/mnist/>.
 
 XSEDE's Comet supercomputer supports Singularity and provides several
-pre-built container which run Tensorflow. Below is an example batch
+pre-built container which run Tensorflow. Given next is an example batch
 script which runs a Tensorflow job within a Singularity container on
 Comet. Copy this script and paste it into a shell script named
 `mnist_tensorflow_example.sb`.

@@ -157,7 +157,7 @@ default VPC. (see @fig:aws-beanstalk-network)
 
 ![AWS Beanstalk](images/elastic_beanstalk-5.png){#fig:aws-beanstalk-network}
 
-Other options on that can be configured in this section are explained below.
+Other options on that can be configured in this section are explained next.
 
 #### Load Balancer settings
 
@@ -244,7 +244,7 @@ Once you click the link, a new page is opened which allows to :
 
 ### Beanstalk Env management
 
-The Action button on the application dashboard allows to perform below actions on 
+The Action button on the application dashboard allows to perform the next set of actions on 
 the application environment:
 * Restart App servers
 * Save the configuration for re-use
@@ -416,7 +416,7 @@ Alternatively, auto scaling can be timed if we know the time period of peak load
 
 #### Load Balancer
 
-This section allows to modify the below load balance configruations:
+This section allows to modify the following load balance configruations:
 * Add remove http / https listeners
 * Serve http / https services on one or more ports
 * Health check paths
@@ -444,7 +444,7 @@ on all instances at once or one by one.
 
 #### Security
 
-This section allows to map the below attirbutes
+This section allows to map the the following list of attributes
 * Service Role - AWS role that beanstalk will assume. This role specifies the 
 permissions to beanstalk to provision resources like EC2.
 * Instance Role - AWS role that the EC2 instances will assume. This role specifies the 
