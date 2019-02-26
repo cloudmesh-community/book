@@ -312,9 +312,9 @@ attributes
  'TRANSFER']
  
 
-### K-means in scikit learn.
+## K-means in scikit learn.
 
-## Import
+### Import
 
 
 ```python
@@ -328,7 +328,7 @@ attributes
     from sklearn.decomposition import PCA
     from sklearn.preprocessing import scale
 ```
-## Create samples
+### Create samples
 
 ```python
 
@@ -369,7 +369,7 @@ attributes
     bench_k_means(KMeans(init=pca.components_,n_clusters=n_digits, n_init=1),name="PCA-based", data=data)
     print(79 * '_')
 ```
-## Visualize
+### Visualize
 
 See @fig:scikit-learn-k-means_10_0
 
