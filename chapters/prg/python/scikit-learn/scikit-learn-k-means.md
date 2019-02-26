@@ -102,7 +102,8 @@ plt.xlabel('Type')
 data.type.value_counts().plot.bar()
 
 ```
-![scikit-learn](images/scikit-learn-barplot.png){#fig:scikit-learn-barplot}
+![scikit-learn](images/scikit-learn-barplot.png)
+{#fig:scikit-learn-barplot}
 
 ### Correlation between attrbutes
 
@@ -127,7 +128,8 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3,
             linewidths=.5, cbar_kws={"shrink": .5}, ax=ax);
 
 ```
-![scikit-learn](images/scikit-learn-correlationanalysis.png){#fig:scikit-learn-correlationanalysis}
+![scikit-learn](images/scikit-learn-correlationanalysis.png)
+{#fig:scikit-learn-correlationanalysis}
 
 ### Histogram Analysis of dataset attrbutes
 
@@ -138,7 +140,8 @@ data.hist(bins=30, figsize=(20,15))
 plt.show()
 
 ```
-![scikit-learn](images/scikit-learn-histograms.png){#fig:scikit-learn-histograms}
+![scikit-learn](images/scikit-learn-histograms.png)
+{#fig:scikit-learn-histograms}
 
 ## Box plot Analysis
 
@@ -157,7 +160,8 @@ d = sns.regplot(x = 'oldbalanceOrg', y = 'amount', data=tmp.loc[(tmp.isFlaggedFr
 plt.show()
 
 ```
-![scikit-learn](images/scikit-learn-boxplot.png){#fig:scikit-learn-boxplot}
+![scikit-learn](images/scikit-learn-boxplot.png)
+{#fig:scikit-learn-boxplot}
 
 ## Scatter plot Analysis
 
@@ -167,7 +171,8 @@ plt.figure(figsize=(12,8))
 sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue='isFraud')
 
 ```
-![scikit-learn](images/scikit-learn-scatterplot.png){#fig:scikit-learn-scatterplot}
+![scikit-learn](images/scikit-learn-scatterplot.png)
+{#fig:scikit-learn-scatterplot}
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
 
