@@ -147,7 +147,7 @@ the screen, it can be rather fun!
 
 You can now ssh to the server using the floating IP just as you do with
 regular instances (use the cc account). The client does not have a
-floating IP attached to it (as per the visualization above) but you can
+floating IP attached to it (as per the visualization given previously) but you can
 connect to it via the server node with the client's private IP (connect
 to the server with `ssh -A` to enable the SSH agent forwarding after
 loading your key to your SSH agent with `ssh-add <path-to-your-key>`).

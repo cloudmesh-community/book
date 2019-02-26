@@ -522,7 +522,7 @@ $$1,328.2=8.47*4.48*(100-65)$$
 
 $$664.0=8.47*4.48*(100-82.5))$$
 
-From the above, we can see that a 35 degree delta allows the center to dissipate
+From the previous listing, we can see that a 35 degree delta allows the center to dissipate
 1,300 Watts of waste heat from a 1U server while a 17.5 degree delta
 allows us to only dissipate 664 Watts of energy. If a server is consuming
 more than 664 Watts, it'll continue to get warmer and warmer until it

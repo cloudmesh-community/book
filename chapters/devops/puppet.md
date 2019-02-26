@@ -187,7 +187,7 @@ try to connect
 press `<ctrl> + O` to Save and `<ctrl> + X` to exit
 
 Next, we will install Puppet on Ubuntu  server. 
-We will excute below commands to pull from official 
+We will execute the following commands to pull from official 
 Puppet Labs Repository
 
 ```bash

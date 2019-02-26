@@ -2,7 +2,7 @@ Datasets
 ========
 
 
-Below are links to collections of datasets that may be of use for
+Given next are links to collections of datasets that may be of use for
 homework assignments or projects.
 
 -   <https://www.data.gov/>

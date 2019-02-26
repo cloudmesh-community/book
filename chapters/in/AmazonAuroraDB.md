@@ -328,7 +328,7 @@ the Connectivity and Security tab (see @fig:aws-aurora-connection).
 
 :o: incomplete section
 
-This action allows to update the below attributes of Aurora DB:
+This action allows to update the following list of attributes of Aurora DB:
 
 * DB Instance Class
 * DB Master Password
