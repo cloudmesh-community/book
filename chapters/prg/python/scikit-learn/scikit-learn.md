@@ -16,10 +16,11 @@ If you already have a working installation of numpy and scipy, the
 easiest way to install scikit-learn is using pip
 
 ```python
-    $ pip install numpy
-    $ pip install scipy -U
-    $ pip install -U scikit-learn
+$ pip install numpy
+$ pip install scipy -U
+$ pip install -U scikit-learn
 ```
+
 ## Supervised Learning
 
 Supervised Learning is used in machine learning when we already know a set of output predictions based on input characterstics and based on that we need to predict the target for a new input. Training data is used to train the model which then can be used to predict the output from a bounded set.
@@ -44,7 +45,9 @@ Few of them are listed here
     
 
 # Building a end to end pipeline for Supervised machine learning using Scikit-learn - 
+
 ### Example project  = Fraud detection system.
+
 ---
 **:mortar_board: Learning Objectives**
 ---
@@ -65,17 +68,16 @@ Even if a component breaks, the downstream component can run normally using
 the last output. Sklearn provide the ability to build pipelines that can be 
 transformed and modelled for machine learning.
 
-
 ## Steps for developing a machine learning model
 
-  1. Explore the domain space
-  2. Extract the problem definition
-  3. Get the data that can be used to make the system learn to solve the problem definition.
-  4. Discover and Visualize the data to gain insights
-  5. Feature engineering and prepare the data 
-  6. Fine tune your model
-  7. Evaluate your solution using metrics
-  8. Once proven launch and maintain the model.
+1. Explore the domain space
+2. Extract the problem definition
+3. Get the data that can be used to make the system learn to solve the problem definition.
+4. Discover and Visualize the data to gain insights
+5. Feature engineering and prepare the data 
+6. Fine tune your model
+7. Evaluate your solution using metrics
+8. Once proven launch and maintain the model.
 
 ## Explorartory Data Analysis
 
@@ -93,6 +95,7 @@ print(data.shape)
 print(data.info())
 data.isnull().values.any()
 ```
+
 Here is the example of few of the visual data analysis methods.
 
 ### Bar plot 
@@ -102,6 +105,7 @@ plt.ylabel('Transactions')
 plt.xlabel('Type')
 data.type.value_counts().plot.bar()
 ```
+
 ![scikit-learn](images/scikit-learn-barplot.png)
 {#fig:scikit-learn-barplot}
 
@@ -126,18 +130,18 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3,
             square=True, 
             linewidths=.5, cbar_kws={"shrink": .5}, ax=ax);
 ```
+
 ![scikit-learn](images/scikit-learn-correlationanalysis.png)
 {#fig:scikit-learn-correlationanalysis}
 
 ### Histogram Analysis of dataset attrbutes
 
 ```python
-
 %matplotlib inline
 data.hist(bins=30, figsize=(20,15))
 plt.show()
-
 ```
+
 ![scikit-learn](images/scikit-learn-histograms.png)
 {#fig:scikit-learn-histograms}
 
@@ -156,6 +160,7 @@ axs[1][0].set(ylim=(0, 3e7))
 d = sns.regplot(x = 'oldbalanceOrg', y = 'amount', data=tmp.loc[(tmp.isFlaggedFraud ==1), :], ax=axs[1][1])
 plt.show()
 ```
+
 ![scikit-learn](images/scikit-learn-boxplot.png)
 {#fig:scikit-learn-boxplot}
 
@@ -165,6 +170,7 @@ plt.show()
 plt.figure(figsize=(12,8))
 sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue='isFraud')
 ```
+
 ![scikit-learn](images/scikit-learn-scatterplot.png)
 {#fig:scikit-learn-scatterplot}
 
@@ -180,9 +186,10 @@ high_exclude = np.round(np.maximum(fin_samp_data.amount.quantile(0.95), 500000),
 ###Updating Data to exclude records prone to Type 1 and Type 2 costs
 low_data = fin_samp_data[fin_samp_data.amount > low_exclude]
 data = low_data[low_data.amount < high_exclude]
-
 ```
+
 ## Pipeline Creation
+
 ### Defining DataFrameSelector to separate Numerical and Categorical attributes
 
 ```python
@@ -200,6 +207,7 @@ class DataFrameSelector(BaseEstimator, TransformerMixin):
 ```
 
 ### Feature Creation / Additional Feature Engineering
+
 During EDA we identified that there are transactions where there are transactions where the balances do not tally after the transaction is completed. We believe this could potentially be cases where fraud is occurring. To account for this error in the transactions, we define two new features "errorBalanceOrig" and "errorBalanceDest", calculated by adjusting the amount with the before and after balances for the Originator and Destination accounts.
 
 Below, we create a function that allows us to create these features in a pipeline.
@@ -325,12 +333,11 @@ Import
     from sklearn.datasets import load_digits
     from sklearn.decomposition import PCA
     from sklearn.preprocessing import scale
-
 ```
+
 ### Create samples
 
 ```python
-
     np.random.seed(42)
     
     digits = load_digits()
@@ -397,12 +404,12 @@ Create samples
     bench_k_means(KMeans(init=pca.components_,n_clusters=n_digits, n_init=1),name="PCA-based", data=data)
     print(79 * '_')
 ```
+
 ### Visualize
 
 See @fig:scikit-learn-k-means_10_0
 
 ```python
-
     bench_k_means(KMeans(init=pca.components_,
                          n_clusters=n_digits, n_init=1),
                   name="PCA-based",
@@ -453,6 +460,7 @@ See @fig:scikit-learn-k-means_10_0
     plt.yticks(())
     plt.show()
 ```
+
 =======
 
 ![Result](images/scikit-learn-k-means_10_0.png){#fig:scikit-learn-k-means_10_0}
