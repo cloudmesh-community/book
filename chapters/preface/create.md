@@ -133,7 +133,7 @@ $ make image
 
 ## Creating a book {#sec:create-book}
 
-To create a book, you hae to first check out the book source from
+To create a book, you have to first check out the book source from
 github with if you have not yet done so (for example if you were to
 use the docker container method):
 
