@@ -389,6 +389,9 @@ When doing bash, we also like to try
 Note that in order to indicate a new line in bash we use the `$` sign
 as prefix which indicates the prompt sign.
 
+> :warning: Please note that there must be an empty line before and
+> after the code block
+
 
 ### Citations in markdown
 
