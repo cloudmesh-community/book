@@ -1,4 +1,4 @@
-# Amazon EMR (Elastic Map Reduce) :o:
+# Amazon EMR (Elastic Map Reduce) :o:✋
 
 Amazon EMR provides a managed Hadoop framework that makes big data processing
 - Easy
