@@ -78,6 +78,26 @@ To convert the markdown to other formats with `pandoc`
     Please note that we have not used quotes here as it is confusing in lists, 
     but it is clear from the `>` that we still quote.
 
+Frequent errors we see are:
+
+
+Frequent errors I see are
+
+* missing empty lines before and after sections
+* use of `-` and `=` for section underline instead of `#`
+* ignoring proper numbers of `#` in fromt of sections
+* using `#` to do bold
+* missing empty lines before and after code block starts and ends
+* not left indenting text in code blocks
+* not ending code blocks  properly
+* using wrong spaces in lists or codeblocks to replace lists
+* not using a spell checker
+* having spaces in front of numbered list items
+* not using 80 char block formatting (makes it easier to correct
+  things and display in different editors)
+* trying to do to fancy things that are not supported in markdown
+ 
+
 
 ## Editors
 
