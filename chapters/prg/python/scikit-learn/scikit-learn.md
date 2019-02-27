@@ -15,7 +15,6 @@ scikit learn.
 If you already have a working installation of numpy and scipy, the
 easiest way to install scikit-learn is using pip
 
-
 ```python
     $ pip install numpy
     $ pip install scipy -U
@@ -99,11 +98,9 @@ Here is the example of few of the visual data analysis methods.
 ### Bar plot 
 
 ```python
-
 plt.ylabel('Transactions')
 plt.xlabel('Type')
 data.type.value_counts().plot.bar()
-
 ```
 ![scikit-learn](images/scikit-learn-barplot.png)
 {#fig:scikit-learn-barplot}
@@ -111,7 +108,6 @@ data.type.value_counts().plot.bar()
 ### Correlation between attrbutes
 
 ```python
-
 # compute the correlation matrix
 corr = data.corr()
 
@@ -129,7 +125,6 @@ cmap = sns.diverging_palette(220, 10, as_cmap=True)
 sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3,
             square=True, 
             linewidths=.5, cbar_kws={"shrink": .5}, ax=ax);
-
 ```
 ![scikit-learn](images/scikit-learn-correlationanalysis.png)
 {#fig:scikit-learn-correlationanalysis}
@@ -149,7 +144,6 @@ plt.show()
 ### Box plot Analysis
 
 ```python
-
 fig, axs = plt.subplots(2, 2, figsize=(10, 10))
 tmp = data.loc[(data.type == 'TRANSFER'), :]
 
@@ -161,7 +155,6 @@ c = sns.boxplot(x = 'isFlaggedFraud', y = 'oldbalanceOrg', data=tmp, ax=axs[1][0
 axs[1][0].set(ylim=(0, 3e7))
 d = sns.regplot(x = 'oldbalanceOrg', y = 'amount', data=tmp.loc[(tmp.isFlaggedFraud ==1), :], ax=axs[1][1])
 plt.show()
-
 ```
 ![scikit-learn](images/scikit-learn-boxplot.png)
 {#fig:scikit-learn-boxplot}
@@ -169,10 +162,8 @@ plt.show()
 ### Scatter plot Analysis
 
 ```python
-
 plt.figure(figsize=(12,8))
 sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue='isFraud')
-
 ```
 ![scikit-learn](images/scikit-learn-scatterplot.png)
 {#fig:scikit-learn-scatterplot}
@@ -182,7 +173,7 @@ sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue
 If the transaction amount is lower than 5 percent of the all the transactions AND does not exceed USD 3000, we will exclude it from our analysis to reduce Type 1 costs
 If the transaction amount is higher than 95 percent of all the transactions AND exceeds USD 500000, we will exclude it from our analysis, and use a blanket review process for such transactions (similar to isFlaggedFraud column in original dataset) to reduce Type 2 costs
 
-```
+```python
 low_exclude = np.round(np.minimum(fin_samp_data.amount.quantile(0.05), 3000), 2)
 high_exclude = np.round(np.maximum(fin_samp_data.amount.quantile(0.95), 500000), 2)
 
@@ -194,7 +185,7 @@ data = low_data[low_data.amount < high_exclude]
 ## Pipeline Creation
 ### Defining DataFrameSelector to separate Numerical and Categorical attributes
 
-```
+```python
 from sklearn.base import BaseEstimator, TransformerMixin
 
 # Create a class to select numerical or categorical columns 
@@ -213,7 +204,7 @@ During EDA we identified that there are transactions where there are transaction
 
 Below, we create a function that allows us to create these features in a pipeline.
 
-```
+```python
 from sklearn.base import BaseEstimator, TransformerMixin
 
 # column index
@@ -233,7 +224,7 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
 
 ## Creating Training and Testing datasets
 
-```
+```python
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.30, random_state=42, stratify=y)
 ```
@@ -242,13 +233,13 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.30, random_s
 
 Identifying columns with Numerical and Categorical characterstics.
 
-```
+```python
 X_train_num = X_train[["amount","oldbalanceOrg", "newbalanceOrig", "oldbalanceDest", "newbalanceDest"]]
 X_train_cat = X_train[["type"]]
 X_model_col = ["amount","oldbalanceOrg", "newbalanceOrig", "oldbalanceDest", "newbalanceDest","type"]
 ```
 
-```
+```python
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import Imputer
@@ -292,7 +283,7 @@ Pipeline(memory=None,
      steps=[('selector', DataFrameSelector(attribute_names=['amount', 'oldbalanceOrg', 'newbalanceOrig', 'oldbalanceDest', 'newbalanceDest'])), ('attribs_adder', CombinedAttributesAdder()...penalty='l2', random_state=None, solver='warn',
           tol=0.0001, verbose=0, warm_start=False))])
 
-```
+```python
 cat_encoder = cat_pipeline.named_steps["cat_encoder"]
 new_feature = num_pipeline.named_steps["attribs_adder"]
 cat_one_hot_attribs = list(cat_encoder.categories_[0])
@@ -318,7 +309,7 @@ attributes
 
 ### Import
 
-```
+```python
 ## K-means Algorithm
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
