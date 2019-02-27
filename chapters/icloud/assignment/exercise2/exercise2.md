@@ -54,7 +54,7 @@ threshold that controls the accuracy of the output results.
 ![Mathematical PageRank for a simple network in Wikipedia](section/icloud/assignment/exercise2/pagerankexample.png)
 {#fig:pagerankexample}
 
-+@fig:pagerankexample shows a web graph consisting of 11
+@fig:pagerankexample shows a web graph consisting of 11
 vertices A, B, C, D, E, F, G1, G2, G3, G4, G5. Each vertex refers to a
 unique webpage, and the directed edge means there is one link from the
 source webpage to the target webpage. The percentage on each vertex
@@ -173,7 +173,7 @@ Code for Hadoop PageRank
 
 You need to complete two files in the provided package inside
 \"indiana/cgl/hadoop/pagerank/\": PageRankMap.java and
-PageRankReduce.java. Code snapshots are shown below.
+PageRankReduce.java. Code snapshots are shown next.
 
 INPUT: section/icloud/assignment/exercise2/PageRankMap.java
 
@@ -204,7 +204,7 @@ $ vim src/indiana/cgl/hadoop/pagerank/PageRankReduce.java
 Compile and run your code
 -------------------------
 
-Use the one-click script compileAndExecHadoopPageRank.sh provided below.
+Use the one-click script compileAndExecHadoopPageRank.sh provided next.
 Standard error messages such as compile errors, execution errors, etc.
 will be redirected on the screen. Debug them based on the returned
 messages.

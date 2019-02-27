@@ -196,7 +196,7 @@ Download CommandLineDiskImager from the following url
 
 * <https://github.com/davidferguson/CommandLineDiskImager>
 
-The above executable will be used by cm-burn script.
+The previous executable will be used by cm-burn script.
 
 It's necessary to burn the raspbian image to the SD card with this executable manually or thru Etcher in order to continue with next step.
 
@@ -216,7 +216,7 @@ Download the Open source ext3/4 file system driver for Windows installer from
 * Setting Automount of this EXT4
 * F3 or Tools->Ext2 Volume Management
 * Check-> Automatically mount via Ext2Mgr
-* The instructions above needed for the Ext2fsd to reserve the Drive Letters and any raspbian image burned to SD will be auto mounted to the specific reserved drive letters. These drive letters need to be specified while using cm-burn
+* The previous instructions needed for the Ext2fsd to reserve the Drive Letters and any raspbian image burned to SD will be auto mounted to the specific reserved drive letters. These drive letters need to be specified while using cm-burn
 
 
 ## Installation 

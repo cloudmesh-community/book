@@ -26,7 +26,7 @@ In the first option we can directly connect each Raspberry Pi to your local
 network using either the Ethernet adapter on the Pi or using the Wireless
 adapter on the Pi. If using the Ethernet adapter and intermediary router or
 switch can also be used to connect the Pis to the local network. The network can
-be visualized in +@fig:pi-cluster-network-direct. To setup this kind of cluster
+be visualized in @fig:pi-cluster-network-direct. To setup this kind of cluster
 please follow the instructions in
 [Direct Network Cluster](#pi-direct-network-cluster).
 
@@ -45,7 +45,7 @@ possibility is to use a USB Ethernet adapter (purchased from this list of
 [Raspberry Pi compatible USB Ethernet adapters](https://elinux.org/RPi_USB_Ethernet_adapters))
 on the master Pi so that it can have a stable, wired connection to both
 networks. In either case the network setup is illustrated in
-+@fig:pi-cluster-network-private. The steps to setup this kind of private
+@fig:pi-cluster-network-private. The steps to setup this kind of private
 network cluster can be found in
 [Private Network Cluster](#pi-private-network-cluster).
 
@@ -105,7 +105,7 @@ If you choose not to use `cm-burn` or to use our scripts we will provide the
 manual setup steps for you to complete. In most cases the manual steps are the
 exact same as the operations the scripts perform, so you can also check the
 manual steps if you are curious about what the scripts are doing. Before
-beginning the manual steps below we assume you are able to burn an image to an
+beginning the manual steps shown next, we assume you are able to burn an image to an
 SD card, to login to the Pi, and to complete the locale and hostname setup at a
 minimum. If you have not completed these steps, please see the following
 sections for details:

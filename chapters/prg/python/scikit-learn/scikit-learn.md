@@ -15,6 +15,7 @@ scikit learn.
 If you already have a working installation of numpy and scipy, the
 easiest way to install scikit-learn is using pip
 
+
 ```python
     $ pip install numpy
     $ pip install scipy -U
@@ -42,6 +43,7 @@ Few of them are listed here
  2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
     deminsional  space to two or three dimension.
     
+
 # Building a end to end pipeline for Supervised machine learning using Scikit-learn - 
 ### Example project  = Fraud detection system.
 ---
@@ -316,8 +318,13 @@ attributes
 
 ### Import
 
+```
+## K-means Algorithm
 
-```python
+In this section we demonstrate how simple it is to use k-means in scikit learn.
+
+Import
+------
 
     from time import time
     import numpy as np
@@ -327,6 +334,7 @@ attributes
     from sklearn.datasets import load_digits
     from sklearn.decomposition import PCA
     from sklearn.preprocessing import scale
+
 ```
 ### Create samples
 
@@ -336,6 +344,15 @@ attributes
     
     digits = load_digits()
     data = scale(digits.data)
+
+Create samples
+--------------
+
+    np.random.seed(42)
+
+    digits = load_digits()
+    data = scale(digits.data)
+
     n_samples, n_features = data.shape
     n_digits = len(np.unique(digits.target))
     labels = digits.target
@@ -345,6 +362,13 @@ attributes
     print("n_digits: %d, \t n_samples %d, \t n_features %d" % (n_digits, n_samples, n_features))
     print(79 * '_')
     print('% 9s' % 'init' '    time  inertia    homo   compl  v-meas     ARI AMI  silhouette')
+    print("n_digits: %d, \t n_samples %d, \t n_features %d"
+          % (n_digits, n_samples, n_features))
+
+
+    print(79 * '_')
+    print('% 9s' % 'init'
+          '    time  inertia    homo   compl  v-meas     ARI AMI  silhouette')
 
 
     def bench_k_means(estimator, name, data):
@@ -357,15 +381,28 @@ attributes
                  metrics.v_measure_score(labels, estimator.labels_),
                  metrics.adjusted_rand_score(labels, estimator.labels_),
                  metrics.adjusted_mutual_info_score(labels,  estimator.labels_),
+
                  metrics.silhouette_score(data, estimator.labels_,metric='euclidean',sample_size=sample_size)))
 
     bench_k_means(KMeans(init='k-means++', n_clusters=n_digits, n_init=10), name="k-means++", data=data)
 
     bench_k_means(KMeans(init='random', n_clusters=n_digits, n_init=10), name="random", data=data)
 
+                 metrics.silhouette_score(data, estimator.labels_,
+                                          metric='euclidean',
+                                          sample_size=sample_size)))
+
+    bench_k_means(KMeans(init='k-means++', n_clusters=n_digits, n_init=10),
+                  name="k-means++", data=data)
+
+    bench_k_means(KMeans(init='random', n_clusters=n_digits, n_init=10),
+                  name="random", data=data)
+
+
     # in this case the seeding of the centers is deterministic, hence we run the
     # kmeans algorithm only once with n_init=1
     pca = PCA(n_components=n_digits).fit(data)
+
     bench_k_means(KMeans(init=pca.components_,n_clusters=n_digits, n_init=1),name="PCA-based", data=data)
     print(79 * '_')
 ```
@@ -374,6 +411,18 @@ attributes
 See @fig:scikit-learn-k-means_10_0
 
 ```python
+
+    bench_k_means(KMeans(init=pca.components_,
+                         n_clusters=n_digits, n_init=1),
+                  name="PCA-based",
+                  data=data)
+    print(79 * '_')
+
+Visualize
+=========
+
+See @fig:scikit-learn-k-means_10_0
+
 
     reduced_data = PCA(n_components=2).fit_transform(data)
     kmeans = KMeans(init='k-means++', n_clusters=n_digits, n_init=10)
@@ -413,4 +462,6 @@ See @fig:scikit-learn-k-means_10_0
     plt.yticks(())
     plt.show()
 ```
+=======
+
 ![Result](images/scikit-learn-k-means_10_0.png){#fig:scikit-learn-k-means_10_0}

@@ -41,7 +41,7 @@ HarpPageRank Implementation
 ---------------------------
 
 Most of the code is completed for you and your task will be to perform
-the **Compute PR** step in the above diagram. The code for this can be
+the **Compute PR** step in the previous diagram. The code for this can be
 found in **simplepagerank/PageRankMapper.java**
 
 INPUT section/icloud/assignment/exercise7/computePartialPR.java

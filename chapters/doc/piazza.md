@@ -105,7 +105,7 @@ Forth, if all goes well you see the Success screen
 #### Situation: You have logged into piazza and you used another non IU e-mail
 
 1.  Click the Piazza link on the left navigation of your Canvas course.
-2.  Proceed as in \#1 above. This will create your new Piazza account
+2.  Proceed as in \#1. This will create your new Piazza account
     that is linked to your courses in Canvas. This is the account you
     should always use in your IU courses.
 3.  If you wish to merge other accounts that you own, please see [Add an
@@ -118,7 +118,7 @@ Forth, if all goes well you see the Success screen
     email address, you will be automatically enrolled in the course
     Piazza site and logged in.
 2.  If none of your accounts corresponds to your default IU email
-    address, follow the instructions in \#3 above.
+    address, follow the instructions in \#3.
 3.  If you wish to merge other accounts that you own, please see [Add an
     email address or merge two
     accounts](https://www.google.com/url?q=http://support.piazza.com/customer/portal/articles/1646661-add-an-email-address-or-merge-two-accounts&sa=D&ust=1502127148504000&usg=AFQjCNHwO1kks2cnVLpWWCnOIEDFhl2fJA).
@@ -213,7 +213,7 @@ Here the reasons why this can be improved:
     prefer that you use only one name that is associated with your
     e-mail.
 
-The above question will simply be commented on (if at all):
+The previous bad question will simply be commented on (if at all):
 
 "Missing information" or "?" indicating that information is missing.
 
@@ -358,7 +358,7 @@ form your class.
   bio          A homework folder in which you only publish your bio. The bio needs to be published as a *note*. This assignment also serves us to see if you are in piazza. Please do this assignment ASAP. You need to post a formal bio. See the many great examples in the folder.
   help         If you need help and none of the other folders fits, please use this folder. If information from here will result into new Web page content it will be added and marked into the folder *resolved*. See the *resolved* folder for more detail.
   resolved     Sometimes we move some general help messages to the resolved folder in case the help message results into information that is posted on our class Web page. We than will add a link to where in the class Web page this question was answered. The TAs will aggressively try to put information into the Web page.
-  discussion   Any content that deserves its separate discussion and is not covered in the above folder.
+  discussion   Any content that deserves its separate discussion and is not covered in the listed folders.
 
 In addition to these general folders we also have some folders which
 **MUST NOT BE USED BY ANY STUDENT TO POST CONTENT**. These folders serve

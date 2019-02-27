@@ -195,7 +195,7 @@ You probably already get the point. We take the 'tasks' section out of
 the earlier `example.yml` and re-organize them into roles. Each role
 specified in `example.yml` should have its own directory under roles/ and
 the tasks need be done by this role is listed in a file 'tasks/main.yml'
-as above.
+as previous.
 
 ## Using Variables
 
@@ -324,7 +324,7 @@ Now, let ansible-galaxy initialize the directory structure for you:
     $ ansible-galaxy init <to-be-created-role-name>
 
 The naming convention is to concatenate your name and the role name by a
-dot. +@fig:ansible shows how it looks like.
+dot. @fig:ansible shows how it looks like.
 
 ![image](images/ansible-galaxy-init-structure.png){#fig:ansible}
 

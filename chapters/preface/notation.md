@@ -1,5 +1,8 @@
 # Notation {#sec:notation}
 
+The material here uses the following notation. If you like to see the details
+on how to create them, you will have to look at the file source while clicking
+on the cloud in the heading of the Notation section (@sec:notation).
 
 :cloud: `:cloud:`
 
@@ -40,7 +43,7 @@ $
 
 [:pencil: Slides 10](TBD)
 
-Slides without any audio. They may be faster to download. 
+> Slides without any audio. They may be faster to download. 
 
 :mortar_board:
 
@@ -72,25 +75,31 @@ Slides without any audio. They may be faster to download.
 
 > A warning that we need to look at in more detail.
 
----
 
-:bulb: *Notes are indicated with a bulb and are written in italic and
-surrounded by bars* using the `:bulb:` emoji
+:bulb:
 
----
+> Notes are indicated with a bulb
+
+
+Other emojis
+
+> Other emojis can be found at <https://gist.github.com/rxaviers/7360908>
+
+
+## Figures
 
 Figures have a caption and can be refereed to in the epub simple with a number. We show such a refernce 
-pointer while refering to +@fig:code-example. 
+pointer while refering to @fig:code-example. 
 
 ![Figure example](images/code.png){#fig:code-example width=1in}
 
 Figures must be written in the md as 
 
-```
+```markdown
 ![Figure example](images/code.png){#fig:code-example width=1in}
 ```
 
-You can refer to them with `+@fig:code-example`. Please note in order for numbering to work 
+You can refer to them with `@fig:code-example`. Please note in order for numbering to work 
 figure refernces must include the `#fig:` followed by a unique
 identifier. Please note that identifiers must be realy unique and that
 identifies such as `#fig:cloud` or similar simple identifiers are a
@@ -102,19 +111,6 @@ $ grep -R "#fig:" chapters
 ```
 
 and see if your identifier is truly unique.
-
-Other emojis
-
-> Other emojis can be found at <https://gist.github.com/rxaviers/7360908>
-
----
-
-:warning: *Please note that there is currently a bug when our document
-is exported to html or to PDF, as emojis are for sme reason not
-properly embedded. Hence to read the document we recommend that you
-use an ePub reader.*
-
----
 
 ## Hyperlinks in the document
 
@@ -128,9 +124,55 @@ the section header as follows:
 
 Now we can use the refernce in the text as follows:
 
-```In [Section Notation](#sec:notation) we explain ...```
+```In @sec:notation we explain ...```
 
-It will be rendered as: In [Section Notation](#sec:notation) we
+It will be rendered as: In @sec:notation we
 explain ...
 
 
+## Equations {#sec:equations}
+
+Equations can be written as
+
+```$$a^2+b^2=c^2$${#eq:pytagoras}```
+
+and used in text: 
+
+$$a^2+b^2=c^2$${#eq:pytagoras}
+
+It will render as: As we see in @eq:pytagoras. 
+
+The equation number is optional. Inline equations just use one dollar
+sign and do not need an equation number:
+
+```This is the pythagoras theorem: $a^2+b^2=c^2$```
+
+Whch renders as:
+
+This is the pythagoras theorem: $a^2+b^2=c^2$.
+
+## Tables {#sec:tables}
+
+Tables can be placed in text as follows: 
+
+```
+: Sample Data Table {#tbl:sample-table}
+  
+x   y   z
+--- --- ---
+1   2   3
+4   5   42
+```
+
+As usual make sure the label is unique. When compiling it it will
+result in
+
+: Sample Data Table {#tbl:sample-table}
+  
+x   y   z
+--- --- ---
+1   2   3
+4   5   42
+
+The data in @tbl:sample-table was gathered from all the experiments we
+conducted in the cloud and the overall result was $42$.

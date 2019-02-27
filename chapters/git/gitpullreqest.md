@@ -16,7 +16,9 @@ Cloudmesh technologies repo that is located at
 
 * <https://github.com/cloudmesh/technologies>
 
-However if you do pull request on other directories, you just have to replace the url with that of the repository you like to use. A common one four our classes is also 
+However if you do pull request on other directories, you just have to
+replace the url with that of the repository you like to use. A common
+one four our classes is also
 
 * <https://github.com/cloudmesh-community/book>
 
@@ -28,19 +30,23 @@ through a fork.
 
 ## Fork the original repository
 
-First you need to create a fork of the original repository. A fork is 
-your own copy of the repository to which you can make changes to. To fork
-the Cloudmesh technologies goto [Cloudmesh technologies repo](https://github.com/cloudmesh/technologies)
-and click on the Fork button on the top right corner. Now you can notice
-that instead of `cloudmesh/technologies` the name of the repo says 
-`YOURGITUSERNAME/technologies`, where `YOURGITUSERANAME` is indeed your github user name. That is because you are now in your own 
-copy of the `cloudmesh/technologies` repository. n our case the user name will be `pulashti`. 
+First you need to create a fork of the original repository. A fork is
+your own copy of the repository to which you can make changes to. To
+fork the Cloudmesh technologies goto
+[Cloudmesh technologies repo](https://github.com/cloudmesh/technologies)
+and click on the Fork button on the top right corner. Now you can
+notice that instead of `cloudmesh/technologies` the name of the repo
+says `YOURGITUSERNAME/technologies`, where `YOURGITUSERANAME` is
+indeed your github user name. That is because you are now in your own
+copy of the `cloudmesh/technologies` repository. n our case the user
+name will be `pulashti`.
 
 ## Clone your copy
 
 Now that you have your fork created, we can go ahead and clone it into
-our machine. Instructions on how to clone a repository can be found in the
-Github documentation - [Cloning a repository](https://help.github.com/articles/cloning-a-repository/).
+our machine. Instructions on how to clone a repository can be found in
+the Github documentation -
+[Cloning a repository](https://help.github.com/articles/cloning-a-repository/).
 Make sure that you clone your version of the technologies repo.
 
 ## Adding an upstream 
@@ -87,17 +93,17 @@ $ git pull upstream master
 Now make the needed changes commit and push, the changes will be pushed
 to your copy of the repo i Github, not the `cloudmesh/technologies` repo.
 
-## Creating a pull request
+## Creating a pull request {#sec:git-pillrequest}
 
-Once we have changes pushed, you can go into your repository in Github to
-create a pull request. As seen in +@#fig:button-pullrequest, you have an button named
-`Pull request`
+Once we have changes pushed, you can go into your repository in Github
+to create a pull request. As seen in @#fig:button-pullrequest, you
+have an button named `Pull request`
 
 ![Button Pull request](images/git_pull_front.png){#fig:button-pullrequest}
 
 
 Once you click on that button you will be taken to a page to create the
-pull request, which will look similar to +@fig:pullrequest.
+pull request, which will look similar to @fig:pullrequest.
 
 ![Create a pull request](images/git_pull_view.png){#fig:pullrequest}
 
@@ -110,3 +116,5 @@ the details and submit the pull request will appear in the original
 pull request, otherwise your pull will not be able to directly merged to
 the original repo. If you do not see this that means you have not properly
 done the `git pull upstream master` command before you made the changes**
+
+[:clapper: git example on CL 10:09](https://youtu.be/8wyTtG0PsgM) 

@@ -11,7 +11,7 @@ Hadoop and MapReduce
 In this section we discuss about the usage Hadoop MapReduce
 architecture.
 
-[:clapper: Hadoop 13:19 Hadoop  B](https://drive.google.com/file/d/1ppMW0LRJFGYlDyFhBIi8PNaHG2SEx-WU/view?usp=sharing)
+[:clapper: Hadoop 13:19 Hadoop  B](https://youtu.be/-N5PpD2sy3Q)
 
 
 Hadoop EcoSystem
@@ -20,7 +20,7 @@ Hadoop EcoSystem
 In this section we discuss about the Hadoop EcoSystem and the
 architecture.
 
-[:clapper: Hadoop 12:57 Hadoop  C](https://drive.google.com/file/d/1UPJRNgPCRqhhAUdBViPvTT1TwcRy4hp9/view?usp=sharing)
+[:clapper: Hadoop 12:57 Hadoop  C](https://youtu.be/BaRHay32I80)
 
 
 Hadoop Components
@@ -28,7 +28,7 @@ Hadoop Components
 
 In this section we discuss about Hadoop Components in detail.
 
-[:clapper: Hadoop 15:14 Hadoop  D](https://drive.google.com/file/d/14YrWVgK8qlJ6h53pwck7dSovoDYZEnkn/view?usp=sharing)
+[:clapper: Hadoop 15:14 Hadoop  D](https://youtu.be/MYOosbF6-dA)
 
 
 Hadoop and the Yarn Resource Manager
@@ -39,7 +39,7 @@ components added to the Hadoop framework in case of improving the
 performance and minimizing fault tolerance.
 
 
-[:clapper: Hadoop 14:55 Hadoop  E](https://drive.google.com/file/d/1WbcwbGVXb2kJJ1uSxkgcOarh72cVh_VE/view?usp=sharing)
+[:clapper: Hadoop 14:55 Hadoop  E](https://youtu.be/DVbtubsKrdg)
 
 
 PageRank
@@ -51,4 +51,4 @@ earliest stages of the Google.inc. In this section we discuss about the
 theoretical background about this problem and we discuss how this can be
 solved using the map reduce concepts.
 
-[:clapper: Hadoop 15:14 Hadoop E](https://drive.google.com/file/d/1k8RHHY8cwgIN7HcoBQyhaSEhuIbWl-Qw/view?usp=sharing)
+[:clapper: Hadoop 25:41 Hadoop F](https://youtu.be/qr6mU04d69o)

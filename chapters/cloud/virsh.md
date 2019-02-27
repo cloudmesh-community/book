@@ -8,7 +8,7 @@ To initiate a hypervisor session with virsh :
     virsh connect <name>
 
 Where is the machine name of the hypervisor. If you want to initiate a
-read-only connection, append the above command with -readonly.
+read-only connection, append the previous command with -readonly.
 
 To display the guest list and their current states with virsh:
 

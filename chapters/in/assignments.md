@@ -193,7 +193,7 @@ Learning Outcome:
 **Github Setup** due Feb, 2018
 
 This exercise will assist you with your github account setup. Please
-find the README.yml file in the link below and copy it into your github
+find the README.yml file in the link given next and copy it into your github
 repository and fill out with your information.
 <https://github.com/cloudmesh-community/hid-sample/blob/master/README.yml>
 Remove the README.md file. After your `.yml` file is correctly setup you
@@ -439,7 +439,7 @@ $\mapsto$](https://github.com/cloudmesh-community/hid-sample/tree/master/technol
 
 
 Please direct any questions toward the TA's, additionally there is a
-README available below.
+README available.
 
  [README
 $\mapsto$](https://github.com/cloudmesh-community/hid-sample/blob/master/technology/README.md)
@@ -517,7 +517,7 @@ Learning Outcome:
 **Github Setup** due Feb, 2018
 
 This exercise will assist you with your github account setup. Please
-find the README.yml file in the link below and copy it into your github
+find the README.yml file in the link given next and copy it into your github
 repository and fill out with your information.
 <https://github.com/cloudmesh-community/hid-sample/blob/master/README.yml>
 Remove the README.md file. After your `.yml` file is correctly setup you
@@ -877,7 +877,7 @@ Next, we implement
 
 Please use sections, subsections and so on to the structure.
 Additionally please create a separate directory for images called
-**images** where all the images are stored like the structure below.
+**images** where all the images are stored like the following structure.
 
     hid-sp18-000/tutorial/images
     hid-sp18-000/tutorial/tutorial.tex

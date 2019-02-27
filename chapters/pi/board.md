@@ -14,7 +14,7 @@ We will give a small introduction to the platform next.
 ## Raspberry PI 3 B
 
 Till February 2018 the Raspberry PI 3 B was the newest model. Within
-this class we have access to about 100 of them. The Raspberry PI 3 B is shown in +@fig:pi3 
+this class we have access to about 100 of them. The Raspberry PI 3 B is shown in @fig:pi3 
 
 ![Raspberry PI 3B](images/pi-3.jpg){#fig:pi3}
 
@@ -35,7 +35,7 @@ The board has the following properties:
 ## Raspberry PI 3 B+
 
 We plan to purchase a number of them so we can conduct performance
-experiments and leverage the faster hardware. The newest Raspberry PI 3 B+ is shown in +@fig:pi3.
+experiments and leverage the faster hardware. The newest Raspberry PI 3 B+ is shown in @fig:pi3.
 
 ![Raspberry PI 3 B+](images/pi3bplus.jpg){#fig:pi3bplus}
 
@@ -62,7 +62,7 @@ The board has the following properties:
 In addition to the PI 3's another interesting platform is the PI Zero,
 which is a very low cost system that can serve as IoT board. However
 it is also powerful enough to run more sophisticated applications on
-it. The newest Raspberry PI Zero is shown in +@fig:pizero.
+it. The newest Raspberry PI Zero is shown in @fig:pizero.
 
 
 ![Raspbery Pi Zero [(source)](https://www.raspberrypi.org/products/raspberry-pi-zero/)](images/Raspberry-Pi-Zero-462x322.jpg){#fig:pizero}
@@ -82,7 +82,7 @@ The board has the following properties:
 
 The PI 3B, 3B+ and Zero come with a number of pins that can be used to
 attach sensors. It is convenient to have the pinout available for your
-project. Hence we provide a pinout layout in +@fig:pi-layout. Other
+project. Hence we provide a pinout layout in @fig:pi-layout. Other
 Pis will have a differnt pinout and you will have to locate them on
 the internet. 
 

@@ -1,4 +1,4 @@
-# Course Syllabus Tables {#s-516-syllabus}
+# Course Syllabus Tables {#sec:516-syllabus}
 
 Legend markings
 
@@ -41,15 +41,20 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 01/14    |         |                    | - [Cloudmesh Commandshell CMD5](#sec:cmd5) |
 | :white_check_mark: | 01/14    |         |                    | - [OpenCV](#sec:opencv) |
 | :white_check_mark: | 01/14    |         |                    | - [Secchi Disk](#sec:secchi-disk) |
-| :white_check_mark: | 01/21    |         |                    | [Data Center](#sec:data-center) |
+| :white_check_mark: | 01/18    |         |                    | [Data Center](#sec:data-center) |
 | :white_check_mark: | 01/21    | 4       | Architectures      | - [NIST Big Data Reference Architecture](#sec:nist-bdra) |
 | :white_check_mark: | 01/21    |         |                    | - [Cloud Architectures](#sec:cloud-architectures) |
-| :white_check_mark: | 01/28   | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#sec:virtualization) |
-| :white_check_mark: | 01/28    | 5       | Virtualization I   | - [Qemu](#sec:qemu-kvm) |
-| :white_check_mark: | 01/28    | 6       | Infrastructure     | [Infrastructure as a Service](#sec:iaas-intro) |
-| :white_check_mark: | 01/28    |         |                    | - [Azure](#sec:azure) |
-| :white_check_mark: | 01/28    |         |                    | - [AWS](#sec:aws) | 
-| :white_check_mark: | 01/28    |         |                    | - [OpenStack](#sec:openstack) |
+| :white_check_mark: | 01/25    |         |                    | [REST](#sec:rest) |
+| :white_check_mark: | 01/25    |         |                    | - [OpenAPI and Swagger](#sec:swagger) |
+| :white_check_mark: | 01/25    |         |                    | - [OpenAPI Specification](#sec:openapi-spec) |
+| :white_check_mark: | 01/25    |         |                    | - [OpenAPI Service](#sec:openapi-introspection) |
+| :white_check_mark: | 01/25    |         |                    | - [Github as Rest Service](#sec:Github-REST) |
+| :white_check_mark: | 02/01    | 5       | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#sec:virtualization) |
+| :white_check_mark: | 02/01    | 5       | Virtualization I   | - [Qemu](#sec:qemu-kvm) |
+| :white_check_mark: | 02/01    | 6       | Infrastructure     | [Infrastructure as a Service](#sec:iaas-intro) |
+| :white_check_mark: | 02/01    |         |                    | - [Azure](#sec:azure) |
+| :white_check_mark: | 02/01    |         |                    | - [AWS](#sec:aws) | 
+| :white_check_mark: | 02/01    |         |                    | - [OpenStack](#sec:openstack) |
 | :white_check_mark: | 02/04    |         | Chameleon Cloud    | - **Chameleon Cloud** |
 | :white_check_mark: | 02/04    |         |                    | - [Resources](#sec:chameleon-resources) |
 | :white_check_mark: | 02/04    |         |                    | - [Hardware](#sec:chameleon-cloud-hardware) |
@@ -63,12 +68,6 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/04    |         |                    | - [FAQ](#sec:chameleon-faq}) |
 | :white_check_mark: | 02/11    | 8       | Programming        | Python for Cloud Computing, |
 | :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud) |
-| :white_check_mark: | 02/11    |         |                    | - [Github as a Cloud Service](#sec:Github-REST) |
-| :white_check_mark: | 02/11    |         |                    | - [REST Services](#sec:rest) |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Spec](#sec:openapi-spec) |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI REST Services with Swagger](#sec:swagger) |
-| :white_check_mark: | 02/11    |         |                    | - [OpenAPI Python Service via Introspection](#sec:openapi-introspection) |
-| :white_check_mark: | 02/11    |         |                    | - [REST Service Generation with OpenAPI](#sec:openapi-codegen) |
 | :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :o:                | 02/18    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
 | :white_check_mark: | 02/25    | 10      | Messaging          | Messaging |
@@ -95,7 +94,7 @@ The book can be used as reference material in that case.
 | :white_check_mark:| 01/22-03/17    | A0      | Bio          | Post your formal Bio into Piazza |
 | :white_check_mark:| 01/22-03/17    | A1      | Sections           | Contribute significant sections. Do not develop redundant or duplicated content. |
 | :white_check_mark: | 01/22-03/17   | A2      | Chapter            | Contribute a significant chapter that may use your section to the class documentation. Do not develop redundant or duplicated content. |
-| :white_check_mark: | 01/22-03/17   | A3      | Project Report draft due            | Develop a draft for the project. This is a hard deadline as w integrate your draft into a proceedings over the berak.  |
+| :white_check_mark: | 01/22-03/17   | A3      | Project Report draft due            | Develop a draft for the project. This is a hard deadline as we integrate your draft into a proceedings over the berak.  |
 | :white_check_mark: |01/22-04/21    | A3      | Project Type A     | Build a cloud clustert out of Raspberry PIs |
 | :white_check_mark: | 01/22-04/21                |         | Project Type B     | Build a Significant OpenAPI REST Service |
 | :white_check_mark: | 01/22-04/21                |         | Project Type C     | Build an Edge Service Interfacing with a Cloud |
