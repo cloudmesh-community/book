@@ -1,5 +1,8 @@
 # Notation {#sec:notation}
 
+The material here uses the following notation. If you like to see the details
+on how to create them, you will have to look at the file source while clicking
+on the cloud in the heading of the Notation section (@sec:notation).
 
 :cloud: `:cloud:`
 
@@ -40,7 +43,7 @@ $
 
 [:pencil: Slides 10](TBD)
 
-Slides without any audio. They may be faster to download. 
+> Slides without any audio. They may be faster to download. 
 
 :mortar_board:
 
@@ -72,12 +75,18 @@ Slides without any audio. They may be faster to download.
 
 > A warning that we need to look at in more detail.
 
----
 
-:bulb: *Notes are indicated with a bulb and are written in italic and
-surrounded by bars* using the `:bulb:` emoji
+:bulb:
 
----
+> Notes are indicated with a bulb
+
+
+Other emojis
+
+> Other emojis can be found at <https://gist.github.com/rxaviers/7360908>
+
+
+## Figures
 
 Figures have a caption and can be refereed to in the epub simple with a number. We show such a refernce 
 pointer while refering to @fig:code-example. 
@@ -102,19 +111,6 @@ $ grep -R "#fig:" chapters
 ```
 
 and see if your identifier is truly unique.
-
-Other emojis
-
-> Other emojis can be found at <https://gist.github.com/rxaviers/7360908>
-
----
-
-:warning: *Please note that there is currently a bug when our document
-is exported to html or to PDF, as emojis are for sme reason not
-properly embedded. Hence to read the document we recommend that you
-use an ePub reader.*
-
----
 
 ## Hyperlinks in the document
 
@@ -180,5 +176,3 @@ x   y   z
 
 The data in @tbl:sample-table was gathered from all the experiments we
 conducted in the cloud and the overall result was $42$.
-
-
