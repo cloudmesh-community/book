@@ -27,11 +27,11 @@ Supervised Learning is used in machine learning when we already know a set of ou
 
 Problems can be of two types
 
- 1. Classification : Training data belongs to three or four classes/categories and based on the label we want to predict 
-    the  class/category for the unlabeled data.
- 2. Regression : Training data consists of vectors without any corresponding target values. Clustering can be used for 
-    these  type of datasets to determine discover groups of similar examples. Another way is density 
-    estimation  which determine the distribution of data within the input space. Histogram is the most basic form.
+1. Classification : Training data belongs to three or four classes/categories and based on the label we want to predict 
+   the  class/category for the unlabeled data.
+2. Regression : Training data consists of vectors without any corresponding target values. Clustering can be used for 
+   these  type of datasets to determine discover groups of similar examples. Another way is density 
+   estimation  which determine the distribution of data within the input space. Histogram is the most basic form.
 
 ## Unsupervised Learning
 
@@ -39,15 +39,16 @@ Unsupervised Learning is used in machine learning when we have the training set 
 
 Few of them are listed here
 
- 1. Clustering : Discover groups of similar characteristics.
- 2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
-    dimensional  space to two or three dimension.
+1. Clustering : Discover groups of similar characteristics.
+2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
+   dimensional  space to two or three dimension.
 
 # Building a end to end pipeline for Supervised machine learning using Scikit-learn 
 
 ---
+
 **:mortar_board: Learning Objectives**
----
+
 
 * Exploratory data analysis
 * Pipeline to prepare data
@@ -55,22 +56,25 @@ Few of them are listed here
 * Fine tune the model
 * Significance tests
 
-A data pipeline is a set of processing components that are sequenced to 
-produce meaningful data. Pipelines are commonly used in Machine learning, 
-since there is lot of data transformation and manipulation that needs to be 
-applied to make data useful for machine learning. All components are sequenced 
-in a way that the output of one component becomes input for the next and each of 
-the component is self contained. Components interact with each other using data.
+---
 
-Even if a component breaks, the downstream component can run normally using 
-the last output. Sklearn provide the ability to build pipelines that can be 
+A data pipeline is a set of processing components that are sequenced to produce
+meaningful data. Pipelines are commonly used in Machine learning, since there is
+lot of data transformation and manipulation that needs to be applied to make
+data useful for machine learning. All components are sequenced in a way that the
+output of one component becomes input for the next and each of the component is
+self contained. Components interact with each other using data.
+
+Even if a component breaks, the downstream component can run normally using the
+last output. Sklearn provide the ability to build pipelines that can be
 transformed and modeled for machine learning.
 
 ## Steps for developing a machine learning model
 
 1. Explore the domain space
 2. Extract the problem definition
-3. Get the data that can be used to make the system learn to solve the problem definition.
+3. Get the data that can be used to make the system learn to solve the problem
+   definition.
 4. Discover and Visualize the data to gain insights
 5. Feature engineering and prepare the data 
 6. Fine tune your model
@@ -81,7 +85,8 @@ transformed and modeled for machine learning.
 
 Example project  = Fraud detection system
 
-First step is to load the data into a dataframe in order for a proper analysis to be done on the attributes.
+First step is to load the data into a dataframe in order for a proper analysis
+to be done on the attributes.
 
 ```python
 data = pd.read_csv('dataset/data_file.csv')
@@ -106,8 +111,7 @@ plt.xlabel('Type')
 data.type.value_counts().plot.bar()
 ```
 
-![scikit-learn](images/scikit-learn-barplot.png)
-{#fig:scikit-learn-barplot}
+![scikit-learn](images/scikit-learn-barplot.png){#fig:scikit-learn-barplot}
 
 ### Correlation between attributes
 
@@ -131,8 +135,7 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3,
             linewidths=.5, cbar_kws={"shrink": .5}, ax=ax);
 ```
 
-![scikit-learn](images/scikit-learn-correlationanalysis.png)
-{#fig:scikit-learn-correlationanalysis}
+![scikit-learn](images/scikit-learn-correlationanalysis.png){#fig:scikit-learn-correlationanalysis}
 
 ### Histogram Analysis of dataset attributes
 
@@ -142,8 +145,7 @@ data.hist(bins=30, figsize=(20,15))
 plt.show()
 ```
 
-![scikit-learn](images/scikit-learn-histograms.png)
-{#fig:scikit-learn-histograms}
+![scikit-learn](images/scikit-learn-histograms.png){#fig:scikit-learn-histograms}
 
 ### Box plot Analysis
 
@@ -176,8 +178,12 @@ sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue
 
 ## Data Cleansing - Removing Outliers
 
-If the transaction amount is lower than 5 percent of the all the transactions AND does not exceed USD 3000, we will exclude it from our analysis to reduce Type 1 costs
-If the transaction amount is higher than 95 percent of all the transactions AND exceeds USD 500000, we will exclude it from our analysis, and use a blanket review process for such transactions (similar to isFlaggedFraud column in original dataset) to reduce Type 2 costs
+If the transaction amount is lower than 5 percent of the all the transactions
+AND does not exceed USD 3000, we will exclude it from our analysis to reduce
+Type 1 costs If the transaction amount is higher than 95 percent of all the
+transactions AND exceeds USD 500000, we will exclude it from our analysis, and
+use a blanket review process for such transactions (similar to isFlaggedFraud
+column in original dataset) to reduce Type 2 costs
 
 ```python
 low_exclude = np.round(np.minimum(fin_samp_data.amount.quantile(0.05), 3000), 2)
@@ -208,9 +214,15 @@ class DataFrameSelector(BaseEstimator, TransformerMixin):
 
 ### Feature Creation / Additional Feature Engineering
 
-During EDA we identified that there are transactions where there are transactions where the balances do not tally after the transaction is completed. We believe this could potentially be cases where fraud is occurring. To account for this error in the transactions, we define two new features "errorBalanceOrig" and "errorBalanceDest", calculated by adjusting the amount with the before and after balances for the Originator and Destination accounts.
+During EDA we identified that there are transactions where there are
+transactions where the balances do not tally after the transaction is completed.
+We believe this could potentially be cases where fraud is occurring. To account
+for this error in the transactions, we define two new features
+"errorBalanceOrig" and "errorBalanceDest", calculated by adjusting the amount
+with the before and after balances for the Originator and Destination accounts.
 
-Below, we create a function that allows us to create these features in a pipeline.
+Below, we create a function that allows us to create these features in a
+pipeline.
 
 ```python
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -285,11 +297,13 @@ full_pipeline_with_predictor = Pipeline([
 full_pipeline_with_predictor.fit(X_train[X_model_col], y_train) 
 ```
 
+```python
 Pipeline(memory=None,
      steps=[('preparation', FeatureUnion(n_jobs=None,
        transformer_list=[('num_pipeline', Pipeline(memory=None,
      steps=[('selector', DataFrameSelector(attribute_names=['amount', 'oldbalanceOrg', 'newbalanceOrig', 'oldbalanceDest', 'newbalanceDest'])), ('attribs_adder', CombinedAttributesAdder()...penalty='l2', random_state=None, solver='warn',
           tol=0.0001, verbose=0, warm_start=False))])
+```
 
 ```python
 cat_encoder = cat_pipeline.named_steps["cat_encoder"]
@@ -299,6 +313,7 @@ attributes = num_attribs + ['errorBalanceOrig','errorBalanceDest'] + cat_one_hot
 attributes
 ```
 
+```
 ['amount',
  'oldbalanceOrg',
  'newbalanceOrig',
@@ -311,19 +326,20 @@ attributes
  'DEBIT',
  'PAYMENT',
  'TRANSFER']
- 
+```
 
 ## K-means in scikit learn.
 
 ### Import
 
-```python
+
 ## K-means Algorithm
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
 
-Import
-------
+### Import
+
+```python
 
     from time import time
     import numpy as np
@@ -342,10 +358,11 @@ Import
     
     digits = load_digits()
     data = scale(digits.data)
+```
 
-Create samples
---------------
+### Create samples
 
+```python
     np.random.seed(42)
 
     digits = load_digits()
@@ -415,13 +432,14 @@ See @fig:scikit-learn-k-means_10_0
                   name="PCA-based",
                   data=data)
     print(79 * '_')
+```
 
-Visualize
-=========
+
+### Visualize
 
 See @fig:scikit-learn-k-means_10_0
 
-
+```python
     reduced_data = PCA(n_components=2).fit_transform(data)
     kmeans = KMeans(init='k-means++', n_clusters=n_digits, n_init=10)
     kmeans.fit(reduced_data)
@@ -461,6 +479,5 @@ See @fig:scikit-learn-k-means_10_0
     plt.show()
 ```
 
-=======
 
 ![Result](images/scikit-learn-k-means_10_0.png){#fig:scikit-learn-k-means_10_0}
