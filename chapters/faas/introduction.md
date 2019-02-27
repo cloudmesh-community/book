@@ -20,7 +20,7 @@ for the function, maximum memory allowed, execution time, etc. The
 exact constraints differ from provider to provider. AWS Lambda is
 considered as one of first FaaS offerings. Now most cloud providers
 offer their own version of FaaS. Several popular FaaS providers are
-listed below.
+listed next.
 
 ## Serverless Computing
 
@@ -56,7 +56,7 @@ OpenWhisk in IBM cloud and offers it as a IBM Cloud functions.
 * FaaS-netes <https://github.com/alexellis/faas-netes>
 
 There are many articles and tutorials online that provide very good
-information regarding FaaS. Below are some such resources that provide
+information regarding FaaS. Given next are some such resources that provide
 introductions and some example usecase's of FaaS
 
 ## Resources

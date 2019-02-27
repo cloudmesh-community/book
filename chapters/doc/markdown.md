@@ -15,9 +15,9 @@ make headings look like headings with a bold font.
 
 To convert the markdown to other formats with `pandoc`
 
-    # Heading
+    # Heading {#sec:unique-heading-label-without-spaces}
 
-    ## Sub-heading
+    ## Sub-heading {#sec:unique-sub-heading-label-without-spaces}
 
     ### Sub Sub Heading heading
      
@@ -59,14 +59,34 @@ To convert the markdown to other formats with `pandoc`
     ![This is the caption](images/example.png){#fig:labelwithoutspaces}
     
     Any figure used in the text must be referred to with a figure
-	cation and label as shown next
+	cation and label. Images can not be embedded in itemized lists.
+	
+    Quotes are in our publications not only done with "quote" but also 
+    with `>` in front of each quoted line, it must be clearly indicated 
+    before or after from which source:
     
+    > "This is a quote" [@label].
+    
+    Please note that the period is after the label. Alternatively you can say
+    
+    In [@label] we find the following list of properties.(use an appropriate starting 
+    sentence):
+    
+    > * item1
+    > * item1
+    
+    PLease note that we have not used quotes here as it is confusing in lists, 
+    but it is clear from the `>` that we still quote.
 
 ## Editors
 
 There are several tools that make writing documents in markdown
 easy. If you do not just look at the output of these documents but
-follow the structure guides properly.
+follow the structure guides properly. Ususally whatever editor you
+use, it will not rended the document properly. They are not supposed
+to be WYSIWYG editore. They help, but you need to make sure the
+markdown is valit and follows our convention just as you woudl with
+any other format.
 
 Examples for such editors are:
 
@@ -117,6 +137,10 @@ Remarkable
 Visualstudio
 
 : see <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
+
+Textmate
+
+: see <https://macromates.com/>
 
 ## Converters
 
@@ -178,7 +202,11 @@ Packages of interest include:
 * CSV table <https://github.com/baig/pandoc-csv2table>
 * inline CSV table <https://github.com/mb21/pandoc-placetable>
 
-#### Mermaid
+In our framework we use crosref and crosscite
+
+#### Mermaid :o:
+
+:o: For now we do not use mermaid
 
 Mermaid is a graph generation tool that lets you create graphs and
 diagrams with the help of a description language. It includes graphviz
@@ -507,4 +535,5 @@ Goggle [@www-google] is a company that offers cloud services.
 
 where www-google is the label to the bibtex entry representing the
 Google home page
+
 

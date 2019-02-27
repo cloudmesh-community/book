@@ -1,12 +1,14 @@
-# Twister2 Installation :o:
+# Twister2 Installation
 
-Prerequisites
--------------
+## Prerequisites
 
-:o: TODO fix the section links
+Because Twister2 is still in the early stages of development a binary release is not available as of yet, therefore to
+try out Twister2 users need to first build the binaries from the source code. 
 
--   Operating Systems = \[Red Hat Enterprise Linux Server release 7,
-    Ubuntu 14.04 , Ubuntu 16.04\] `We only use Ubuntu 16.04`
+-   Operating System : 
+    * Twister2 is tested and known to work on,
+    * Red Hat Enterprise Linux Server release 7
+    * Ubuntu 14.05, Ubuntu 16.10 and Ubuntu 18.10
 
 -   Java (Jdk 1.8) Covered in Section
     [\[s:hadoop-local-installation\]](#s:hadoop-local-installation){reference-type="ref"
@@ -53,82 +55,87 @@ Add the following line at the end of the file.
 
 ### OpenMPI Installation
 
-For Twister2, the recommended version is `Open MPI 3.0.0`. Execute the
-following commands to install Open MPI locally.
+When you compile Twister2 it will automatically download and compile OpenMPI 3.1.2 with it. If you don't like this 
+version of OpenMPI and wants to use your own version, you can compile OpenMPI using following instructions.
 
-      mkdir -p ~/cloudmesh/bin/openmpi
-      cd ~/cloudmesh/bin/openmpi
-      wget https://www.open-mpi.org/software/ompi/v3.0/downloads/openmpi-3.0.0.tar.gz  
+* We recommend using OpenMPI 3.1.2
+* Download OpenMPI 3.0.0 from https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.2.tar.gz
+* Extract the archive to a folder named openmpi-3.1.2
+* Also create a directory named build in some location. We will use this to install OpenMPI
+* Set the following environment variables
 
-Add environmental variables to bashrc file.
+```bash
+BUILD=<path-to-build-directory>
+OMPI_312=<path-to-openmpi-3.1.2-directory>
+PATH=$BUILD/bin:$PATH
+LD_LIBRARY_PATH=$BUILD/lib:$LD_LIBRARY_PATH
+export BUILD OMPI_312 PATH LD_LIBRARY_PATH
+```
 
-      emacs ~/.bashrc
-      mkdir ~/cloudmesh/bin/openmpi/build
-      BUILD=~/cloudmesh/bin/openmpi/build
-      OMPI_300=~/cloudmesh/bin/openmpi
-      PATH=$BUILD/bin:$PATH
-      LD_LIBRARY_PATH=$BUILD/lib:$LD_LIBRARY_PATH
-      export BUILD OMPI_300 PATH LD_LIBRARY_PATH
+* The instructions to build OpenMPI depend on the platform. Therefore, we highly recommend looking into 
+the `$OMPI_1101/INSTALL` file. Platform specific build files are available in `$OMPI_1101/contrib/platform` directory.
 
-      source ~/.bashrc
+* In general, please specify `--prefix=$BUILD` and `--enable-mpi-java` as arguments to configure script. 
+If Infiniband is available (highly recommended) specify `--with-verbs=<path-to-verbs-installation>`. Usually, the path 
+to verbs installation is `/usr`. In summary, the following commands will build OpenMPI for a Linux system.
 
-Next build the OpenMPI 3.0.0,
+```bash
+cd $OMPI_312
+./configure --prefix=$BUILD --enable-mpi-java
+make -j 8;make install
+```
 
-      cd $OMPI_300
-      ./configure --prefix=$BUILD --enable-mpi-java
-      make;make install
+* If everything goes well `mpirun --version` will show `mpirun (Open MPI) 3.1.2`. Execute the following command 
+to instal `$OMPI_312/ompi/mpi/java/java/mpi.jar` as a Maven artifact.
 
-Make sure the installation is successful by executing,
-
-      mpirun --version
-
-Then you will see an ouput,
-
-      mpirun (Open MPI) 3.0.0
-
-Install the following command to add this as an maven artifact,
-
-      mvn install:install-file -DcreateChecksum=true -Dpackaging=jar -Dfile=$OMPI_300/ompi/mpi/java/java/mpi.jar -DgroupId=ompi -DartifactId=ompijavabinding -Dversion=3.0.0
-
-### Bazel Installation
-
-For this installation, `Bazel 0.8.1` is recommended. Execute the
-following commands to install Bazel,
-
-      mkdir -p ~/cloudmesh/bin/bazel
-      cd ~/cloudmesh/bin/bazel
-      wget https://github.com/bazelbuild/bazel/releases/download/0.8.1/bazel-0.8.1-installer-linux-x86_64.sh
-      chmod +x bazel-0.8.1-installer-linux-x86_64.sh
-      ./bazel-0.8.1-installer-linux-x86_64.sh --user
-      export PATH=$HOME/bin:$PATH
+```bash
+mvn install:install-file -DcreateChecksum=true -Dpackaging=jar -Dfile=$OMPI_312/ompi/mpi/java/java/mpi.jar -DgroupId=ompi -DartifactId=ompijavabinding -Dversion=3.1.2
+```
 
 ### Install Extras
 
 Install the other requirements as follows,
 
-      sudo apt-get install git build-essential automake cmake libtool-bin zip libunwind-setjmp0-dev zlib1g-dev unzip pkg-config python-setuptools -y
-      sudo apt-get install  python-dev python-pip
+   sudo apt-get install g++ git build-essential automake cmake libtool-bin zip libunwind-setjmp0-dev zlib1g-dev unzip pkg-config python-setuptools -y
+   sudo apt-get install  python-dev python-pip
 
 Now you have successfully installed the required packages. Let us
 compile Twister2.
 
-Compiling Twister2
-------------------
+### Compiling Twister2
 
-First clone the repository from Github.
+Now lets get a clone of the source code.
 
-      mkdir ~/cloudmesh/twister2
-      cd ~/cloudmesh/twister2
-      git clone git@github.com:DSC-SPIDAL/twister2.git
-      cd twister2
+```bash
+git clone https://github.com/DSC-SPIDAL/twister2.git
+```
 
-Now compile the code as follows,
+You can compile the Twister2 distribution by using the bazel target as follows.
+```bash
+cd twister2
+bazel build --config=ubuntu scripts/package:tarpkgs
+```
 
-      bazel build --config=ubuntu twister2/...
+This will build twister2 distribution in the file
+```bash
+bazel-bin/scripts/package/twister2-client-0.1.0.tar.gz
+```
 
-In order to build packages run the following commands,
+If you would like to compile the twister2 without building the distribution packages use the command
+```bash
+bazel build --config=ubuntu twister2/...
+```
 
-      bazel build --config=ubuntu //scripts/package:tarpkgs
+For compiling a specific target such as communications
+```bash
+bazel build --config=ubuntu twister2/comms/src/java:comms-java
+```
 
-You can extract the bazel-bin/scripts/package/twister2-client.tar.gz to
-run Twister2.
+### Twister2 Distribution
+
+After you've build the Twister2 distribution, you can extract it and use it to submit jobs.
+
+```bash
+cd bazel-bin/scripts/package/
+tar -xvf twister2-0.1.0.tar.gz
+```

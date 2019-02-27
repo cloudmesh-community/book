@@ -387,7 +387,10 @@ $if(institute)$
 \providecommand{\institute}[1]{}
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
-\date{$date$}
+\date{
+$date$
+laszewski@gmail.com
+}
 $if(beamer)$
 $if(titlegraphic)$
 \titlegraphic{\includegraphics{$titlegraphic$}}
@@ -668,6 +671,45 @@ $else$
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 $endif$
+
+\renewenvironment{Shaded} {\begin{snugshade}\footnotesize} {\end{snugshade}}
+
+\usepackage{graphicx}
+\input{gpath}
+
+%\usepackage[utf8]{inputenc}
+%\usepackage{coloremoji}
+\usepackage{wasysym}
+\usepackage{pifont}
+\usepackage{ifsym}
+\usepackage{fontawesome}
+
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+
+\DeclareUnicodeCharacter{1F195}{{\color{darkgreen}NEW}}
+\DeclareUnicodeCharacter{1F393}{\faMortarBoard}
+\DeclareUnicodeCharacter{1F3AC}{\faFileVideoO}
+\DeclareUnicodeCharacter{1F44B}{\faHandORight}
+\DeclareUnicodeCharacter{1F4A1}{\faLightbulbO}
+\DeclareUnicodeCharacter{1F4A5}{\faFlash}
+\DeclareUnicodeCharacter{1F4DC}{\faFilePhotoO}
+\DeclareUnicodeCharacter{1F4DD}{\faPencilSquareO}
+\DeclareUnicodeCharacter{1F603}{\smiley}
+\DeclareUnicodeCharacter{1F604}{\smiley}
+\DeclareUnicodeCharacter{2601}{{\color{blue}\faCloud}}
+\DeclareUnicodeCharacter{FE0F}{{\color{blue}\faCloud}}
+\DeclareUnicodeCharacter{26A0}{{\color{red}\faWarning}}
+\DeclareUnicodeCharacter{2705}{{\color{darkgreen}\textbf{\faCheckSquareO}}}
+\DeclareUnicodeCharacter{270B}{\faHandStopO}
+\DeclareUnicodeCharacter{2753}{{\color{red}\textbf{?}}}
+\DeclareUnicodeCharacter{2B50}{\ding{80}}
+\DeclareUnicodeCharacter{2B55}{{\color{red}\textbf{o}}}
+
+%\DeclareUnicodeCharac   (U+200A)
+% ​ (U+200B)
+% ─ (U+2500)
+% └ (U+2514)
+
 
 %%
 %% end added

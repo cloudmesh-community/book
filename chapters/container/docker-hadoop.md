@@ -89,7 +89,7 @@ We explain the examples next
 After we launch the container and use the interactive shell, we can
 run the statistics Hadoop application which calculates the  minimum,
 maximim, average, and standard derivation from values stored in a
-number of input files. Figure +@fig:docker-hadoop-a shows the computing phases in a MapReduce job.
+number of input files. Figure @fig:docker-hadoop-a shows the computing phases in a MapReduce job.
 
 To achieve this, this Hadoop program reads multiple files from HDFS and
 provides calculated values. We walk through every step from compiling
@@ -290,7 +290,7 @@ The sample output looks like:
 #### Run Program with Multiple Input Files
 
 The first run was done pretty quickly (1440 milliseconds took according
-to the sample result above) because the input file size was small (1,000
+to the previous sample result) because the input file size was small (1,000
 lines) and it was a single file. We provides more input files with a
 larger size (2,000 to 10,000 lines). Input files are already uploaded to
 HDFS. We simply run the program again with a slight change in the
@@ -307,7 +307,7 @@ provide a new directory name unless you delete it.
 
 The sample output messages look like the following which is almost
 identical compared to the previous run except that this time the number
-of input files to process is 10, see the line two below:
+of input files to process is 10, see the line two next:
 
     18/02/28 23:17:18 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
     18/02/28 23:17:18 INFO input.FileInputFormat: Total input paths to process: 10

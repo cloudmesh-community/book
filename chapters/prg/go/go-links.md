@@ -1,4 +1,4 @@
-# Go Links {#s-go-links}
+# Go Links {#sec:go-links}
 
 Section provided by Gregor
 

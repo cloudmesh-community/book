@@ -374,8 +374,7 @@ This should be changed to the new host name set in `/etc/hostname`.
 
 The easiest way to get internet access and to continue the setup is using a
 wireless network. You can configure it either via the GUI or command line. The
-`raspi-config` utility can also setup a WiFi connection. The steps below
-were taken from the
+`raspi-config` utility can also setup a WiFi connection. The steps shown next were taken from the
 [Offical Raspberry Pi Wireless setup](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
 
 The Raspberry Pi is already configured to connect to a WiFi network, all you
@@ -604,7 +603,7 @@ $ arp -a -n
 
 `nmap` is also available on Windows and macOS. It can be downloaded directly from 
 [Nmap installation instructions](https://nmap.org/book/install.html) or
-using Homebrew on macOS as `brew install nmap`. Usage is as above.
+using Homebrew on macOS as `brew install nmap`. Usage is as listed previously.
 
 
 
@@ -772,7 +771,7 @@ $ openssl passwd -1 -salt <unique string>
 ```
 
 Next, we e must find the line that starts with pi and replace the text
-  between the first and second with the output from the above command
+  between the first and second with the output from the previous command
   we had executed in the `etc/shadow` file
 
 Now you can Eject the SD card from the computer, and insert it into

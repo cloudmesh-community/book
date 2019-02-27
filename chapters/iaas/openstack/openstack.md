@@ -23,7 +23,7 @@ OpenStack consists of a large number of small components. Which
 components to use for your OpenStack deployment depends on your usecases
 and requirements. The existing components can be integrated to
 achieve the desired deployment by carefully examining and understanding
-each component. +@fig:opsnstack-overview shows an high-level architecture
+each component. @fig:opsnstack-overview shows an high-level architecture
 diagram of OpenStack which gives a clear understanding of how the
 overall framework is organized.
 
@@ -33,7 +33,7 @@ Image reference - <https://www.openstack.org/software/>
 
 
 However each of the high-level components are in constructed using
-several small components. +@fig:openstack-arch shows one such popular
+several small components. @fig:openstack-arch shows one such popular
 deployment and its architecture.
 
 ![OpenStack Architecture](images/openstack_archi.png){#fig:openstack-arch}

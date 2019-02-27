@@ -57,9 +57,12 @@ $ python setup.py install
 An initial setup is required to be able to access AWS EC2 from BOTO wherein you provide the key and region details. 
 You can find the key details from IAM console on AWS.
 	
-## BOTO configuration
+## Boto configuration
 
-BOTO can be configured in two ways, either by using the aws configure command if you have AWS Command line interface installed or simply by manually creating and editing the `~/.aws/credentials` file to include below parameters.
+BOTO can be configured in two ways, either by using the aws configure 
+command if you have AWS Command line interface installed or simply by manually 
+creating and editing the `~/.aws/credentials` file to include 
+important parameters highlighted next.
 
 ```python
 [default]
@@ -74,6 +77,10 @@ Similar to libcloud, BOTO also requires the region where you would create your E
 	[default]
 	region=<region name> # for example us-east
 ```
+
+## Boto configuration with cloudmesh
+
+:o: please also document here how to use the cloudmesh4.yaml file
 
 ## EC2 interface of Boto
 
@@ -91,9 +98,13 @@ account is created, aws access key and secret key. AWS provides access key and
 secret key when a new user is created. Access key and secret key helps to
 identify the user.
 
+:o: TODO use the cloudmesh config file here
+
 ```python
-connection = boto3.ec2.connect_to_region('<region name>', aws_access_key_id =
-'<access key>', aws_secret_access_key = '<secret key'>)
+connection = boto3.ec2.connect_to_region(
+    '<region name>', 
+    aws_access_key_id='<access key>', 
+    aws_secret_access_key='<secret key'>)
 ```
 
 connection object now points to EC2Connection object returned by the function `connect_to_region`.
@@ -257,9 +268,9 @@ LastModified date and time. This information can also be captured.
 ```python
 # To list files in selected bucket
 for key in bucket.list():
-    print "{name}".format(name = key.name)
-    print "{size}".format(size = key.size)
-    print "{modified}".format(modified = key.last_modified)
+    print ("{name}".format(**key))
+    print ("{size}".format(**key))
+    print ("{last_modified}".format(**key))
 ```
 
 #### Delete object
@@ -291,7 +302,8 @@ connection.delete_bucket('<bucket-name>')
 
 E.boto.cloudmesh.1:
 
-> will will nw create a cloudmesh tool that manages virtual machines on the commandline. For that we copy the code published at 
+> will will nw create a cloudmesh tool that manages virtual machines on the 
+  commandline. For that we copy the code published at 
 
 > * <https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2-example-managing-instances.html>. 
 

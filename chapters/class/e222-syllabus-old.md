@@ -277,7 +277,7 @@ memory available of the computer, cpu type and so on. This is not read from a te
 queried.
 
 TODO: Tyler:Describe how each student gets a unique assignment. Coordinate that assignment.
-The link to the assignment in piazza is below, directions for each student will come out the week of
+The link to the assignment in piazza is given next, directions for each student will come out the week of
 February 4, 2018.
 
 

@@ -1,4 +1,4 @@
-# Introduction to Containers
+# Introduction to Containers {#sec:container-intro}
 
 ---
 

@@ -11,7 +11,7 @@ Its interfaces are documented nicely at
 
 * <https://developer.github.com/v3/>
 
-We see that Github offers many resources that can be accessed by te users which includes
+We see that Github offers many resources that can be accessed by the users which includes
 
 * Activities
 * Checks
@@ -47,7 +47,7 @@ specification
 We see the following functionality:
 
 * [List issues](https://developer.github.com/v3/issues/#list-issues)
-* [List issues for a repository](https://developer.github.com/v3/* issues/#list-issues-for-a-repository)
+* [List issues for a repository](https://developer.github.com/v3/issues/#list-issues-for-a-repository)
 * [Get a single issue](https://developer.github.com/v3/issues/#get-a-single-issue)
 * [Create an issue](https://developer.github.com/v3/issues/#edit-an-issue)
 * [Edit an issue](https://developer.github.com/v3/issues/#edit-an-issue)
@@ -56,14 +56,14 @@ We see the following functionality:
 * [Custom media types](https://developer.github.com/v3/issues/#custom-media-types)
 
 As we have learned in our REST section we need to issue GET requests
-to obtain indformation about the issues. Soch as
+to obtain information about the issues. Such as
 
 ```bash
 GET /issues
 GET /user/issues
 ```
 
-As response we obtain a a json object with the information we need to
+As response we obtain a json object with the information we need to
 further process it. Unfortunately, the free tier of github has
 limitations in regards to the frequency we can issue such requests to
 the service, as well as in the volume in regards to number of pages
@@ -74,54 +74,38 @@ example we like to retrive the list of issues for a repository as LaTeX
 table but also as markdown. This way we can conveniently integrate it
 in documents of either format. As LaTeX has a more sophisticated table
 management, let us first create a LaTeX table document and than use a
-program to convert LaTeX to markdow. For the late we can reuse a
+program to convert LaTeX to markdown. For the later we can reuse a
 program called `pandoc` that can convert the table for LaTeX to
 markdown.
 
-Let us assume we have a program called `issues.py` that printe the
-table in latex format, than we can store it in a file with the command
+Let us assume we have a program called `issues.py` that prints the
+table in markdown format
 
 ```bash
-$ python issues.py > issues.tex
+$ python issues.py 
 ```
 
-While using `pandoc` the conversion to markdown is very simple
 
-```bash
-$ pandoc issues.tex -o issues.md
-```
-
-So the only thing left to do is to just develop the program that 
-
-1. fetches the issues from github
-2. converts the information into a convenient data structure
-3. print the information we are interested in
-
-The `issues.py` program is located at 
+An example for such a program is listes at. 
 
 * <https://github.com/cloudmesh-community/book/blob/master/bin/issues.py>
 
 Although python provides the very nice module `requests` which we
 typically use for such issues. we have here just wrapped the
-commandline call to `curl` into a system command an redirect its
+commandline call to `curl` into a system command and redirect its
 output to a file. However, as we only get limited information back in
-pages, we need to continue such a request multiple times. to keep
+pages, we need to continue such a request multiple times. To keep
 things simple we identified that for the project at this time not
-more that 4 pages need to be fetched, so we append the output from
+more that n pages need to be fetched, so we append the output from
 each page to the file.
 
-To print out the LaTeX table we simply iterate through the entire list
-of issues retrieved and as we are only interested in count, Number
-/Id, Title and Assignee we print them with the appropriate latex
-syntax for tables. As we also retrieve the url we can integrate the
-link to the isse in the table
+Your task is it to improve this script and automatize this activity so
+that no maximum fetches have to be entered.
 
 The reason why this program is so short is that we leverage the build
 in function for `json` data structure manipulation, hear a read and a
-dump.
-
-When we look in the `issue.json` file that is created as intermediary
-file we see a list of items such as
+dump. When we look in the `issue.json` file that is created as
+intermediary file we see a list of items such as
 
 ```json
 [
@@ -212,7 +196,7 @@ file we see a list of items such as
     },
     
 ...
-]    
+]
 ```
 
 As we can see from this entry there is a lot of information associated
@@ -221,7 +205,7 @@ mine github in general.
 
 We like to point out that github is actively mined for exploits where
 passwords are posted in clear text for AWS, Azure and other
-clouds. This his a common mistake as many sample programs ask the
+clouds. This is a common mistake as many sample programs ask the
 student to place the password directly into their programs instead of
 using a configuration file that is never part of the code repository.
 
@@ -240,7 +224,7 @@ E.github.issues.2:
 
 E.github.issues.3:
 
-> Be inspired by the many REST interfaces. WHo can they be used 
+> Be inspired by the many REST interfaces. How can they be used 
 > to mine interesting things.
 
 E.github.issues.4:
@@ -250,3 +234,18 @@ E.github.issues.4:
 > projects may include a requirements file, or developers may 
 > work on some projects together, but others do other 
 > projects with others can you create a network?
+
+E.github.issues.5:
+
+> Use github to develop some cool python programs that show some
+> statistics about github. An example would be: Given a github
+> repository, show the checkins by data and visualize them graphically
+> for one committer and all committers. Use bokeah or matplotlib.
+
+E.github.issues.6:
+
+> Develop a python program that retrieves a file. Deevlop a python
+> program that uploads a file. Develop a class that does this and use
+> it in your proggram. Use docopt to create a manual page. Please
+> remember this prepares you for your project so this is very useful
+> to do.
