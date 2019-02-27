@@ -80,9 +80,6 @@ To convert the markdown to other formats with `pandoc`
 
 Frequent errors we see are:
 
-
-Frequent errors I see are
-
 * missing empty lines before and after sections
 * use of `-` and `=` for section underline instead of `#`
 * ignoring proper numbers of `#` in fromt of sections
