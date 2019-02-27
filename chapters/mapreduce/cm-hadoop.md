@@ -2,7 +2,7 @@
 
 :warning: This version is dependent on an older version of cloudmesh
 
-:o: :TODO: we need to add teh instalation instructions based on this
+:o: :TODO: we need to add the instalation instructions based on this
 version
 
 Cloudmesh Cluster Installation
