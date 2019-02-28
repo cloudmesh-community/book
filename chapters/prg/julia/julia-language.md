@@ -1,16 +1,19 @@
-# Julia :o:
+# Introduction to Julia for High Performance Computing :o:
+---
+**:mortar_board: Learning Objectives**
+* Get up and running with Julia
+* Understand parallelization in Julia
+* Learn about REST services in Julia
+* Interact with external programs in Julia
 
-All official Julia documentation can be found at the Julia website:
-<https://julialang.org/>
+![Julia logo](images/julia.png)
 
 "Julia walks like Python and runs like C." [www-julialang]
 
 Because Julia is a relatively new programming language and documentation is
-sparse, much of this chapter has been adapted from <https://julialang.org>
+sparse, much of this chapter has been adapted from [https://julialang.org][@www-julialang]
 
-## Description of the Language:
-
-### The Basics: 
+## Introduction:
 
 Julia is a high-performance computing language designed by Alan Edelman,
 Jeff Bezanson, Stefan Karpinski, and Viral Shah. Released in 2012, Julia was
@@ -37,40 +40,6 @@ Julia provides the best of both worlds. "Julia is fast because of careful
 language design and the right combination of carefully chosen technologies that 
 work very well with each other." [www-epubs-siam].
 
-## Installing Julia
-As an interactive, dynamically-typed language, there are many ways to run and
-interact with Julia code, including directly in a browser using
-<www.Juliabox.com>, which requires no installation. 
-
-### Dependencies: 
-First check to make sure that you have the required dependencies installed:
-<https://github.com/JuliaLang/julia#required-build-tools-and-external-libraries>
-
-On Ubuntu, you can easily install the required packages using the following
-command [www-julialang]:
-```
-sudo apt-get install build-essential libatomic1 python gfortran perl wget m4
-cmake pkg-config
-```
-
-To install Julia locally, first download and extract the appropriate 32 or 64-
-bit binary installation package at <https://julialang.org/downloads/> into a
-directory of your choice. You can then add Julia home to your PATH, or
-include a soft reference by typing ```export PATH="$(pwd)/julia:$PATH"``` or by
-editing your ```/etc/environment``` file. [www-julialang]
-
-Alternatively, you can use Linux's Personal Package Archive:
-<https://launchpad.net/~staticfloat/+archive/ubuntu/juliareleases> and issuing
-the following commands: 
-```
-sudo add-apt-repository ppa:staticfloat/juliareleases
-sudo add-apt-repository ppa:staticfloat/julia-deps
-sudo apt-get update
-sudo apt-get install julia
-```
-
-You should now be able to activate Julia in your Bash session by typing
-```$ julia```
 
 ### Development Environments
 In line with Julia's hybrid DNA of compiled and dynamic languages, a user can
@@ -157,9 +126,7 @@ end
 response = make_API_call("http://jsonplaceholder.typicode.com/users")
 println(response)
 
-https://discourse.julialang.org/t/implement-a-rest-server-in-julia/9117
-https://codehandbook.org/make-rest-api-calls-julia/
-https://github.com/essenciary/Genie.jl
+
 
 ## OpenStack in Julia
 
@@ -168,7 +135,7 @@ TBD
 ## AWS in Julia
 
 JuliaCloud
-	AWS.jl
+AWS.jl
 	
 
 ## Azure in Julia
@@ -176,4 +143,11 @@ JuliaCloud
 TBD
 
 ## FaaS in Julia
+
+## References:
+* [https://julialang.org/](https://julialang.org)[@www-julialang]
+* https://discourse.julialang.org/t/implement-a-rest-server-in-julia/9117
+* https://codehandbook.org/make-rest-api-calls-julia/
+* https://github.com/essenciary/Genie.jl
+
 
