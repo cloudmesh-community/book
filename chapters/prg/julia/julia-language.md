@@ -47,15 +47,6 @@ either type commands into a shell, or create programs in a file with a .jl
 extension, and call the files externally. Other editors and IDEs are also
 available. 
 
-### Optional Typing:
-Optional typing characteristic means that the user can decide whether or not to
-specify  the type of a variable. [@getting-started] For instance:
-
-```
-include for loop, equation, etc... here. 
-```
-In the absense of type specification, Julia will automatically infer the
-variable type. 
 
 
 ## Module Management
@@ -63,44 +54,11 @@ variable type.
 ## Parallel Language Constructs
 
 * Missing Values
-* Network Streams
-* Parallel Computing
-Though not intended as a replacement for Hadoop, parallelism in Julia is fairly
-straight-forward. [www-wired]
-
-### Coroutines, or Tasks. 
-### Multi-threading,
-### Green-threading
-### Hadoop and Julia:
-Julia is also optimized for high performance computing in a distributed
-environment. While development and interactivity between Spark, Hadoop, and
-Julia is robust, the documentation is limited. The Elly.jl package [@elly-jl]
-is a Hadoop and Yarn client for Julia. We focus here on the Hadoop
-functionality. 
-
 
 ```
 
 ## Interfacing with the System
-* Docopts: 
-https://github.com/docopt/DocOpt.jl
 
-* External programs
-A user can interact with Julia in several ways; through an interactive or non-
-interactive command-line sessions, by using a local notebook similar to iPython
-/Jupyter, or through a browser by going to JuliaBox.org.
-Julia has several APIs available, and can communicate with Python, C, and Java.
-
-### Java:
-Julia interacts with Java through the use of the JavaCall.jl package.
-[@javacall] "Static and instance method with primitve or object arguments and 
-return values are callable." [@javacall]. 
-
-* Installation
-```
-Pkg.add("JavaCall")
-```
-*insert JavaCall examples here*
 
 * Environment variables
 
@@ -110,17 +68,6 @@ package "supports running pure Julia scripts on Julia data structures while
 utilizing the data and code distribution capabilities of Apache Spark."
 [@spark-jl]
 
-## REST in julia
-```
-using HTTP
-function make_API_call(url)
-    try
-        response = HTTP.get(url)
-        return String(response.body)
-    catch e
-        return "Error occurred : $e"
-    end
-end
 ```
 
 response = make_API_call("http://jsonplaceholder.typicode.com/users")
@@ -132,10 +79,7 @@ println(response)
 
 TBD
 
-## AWS in Julia
 
-JuliaCloud
-AWS.jl
 	
 
 ## Azure in Julia
