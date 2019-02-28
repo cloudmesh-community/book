@@ -75,17 +75,35 @@ To convert the markdown to other formats with `pandoc`
     > * item1
     > * item1
     
-    PLease note that we have not used quotes here as it is confusing in lists, 
+    Please note that we have not used quotes here as it is confusing in lists, 
     but it is clear from the `>` that we still quote.
+
+Frequent errors we see are:
+
+* missing empty lines before and after sections
+* use of `-` and `=` for section underline instead of `#`
+* ignoring proper numbers of `#` in fromt of sections
+* using `#` to do bold
+* missing empty lines before and after code block starts and ends
+* not left indenting text in code blocks
+* not ending code blocks  properly
+* using wrong spaces in lists or codeblocks to replace lists
+* not using a spell checker
+* having spaces in front of numbered list items
+* not using 80 char block formatting (makes it easier to correct
+  things and display in different editors)
+* trying to do to fancy things that are not supported in markdown
+ 
+
 
 ## Editors
 
 There are several tools that make writing documents in markdown
 easy. If you do not just look at the output of these documents but
-follow the structure guides properly. Ususally whatever editor you
-use, it will not rended the document properly. They are not supposed
+follow the structure guides properly. Usually whatever editor you
+use, it will not rendered the document properly. They are not supposed
 to be WYSIWYG editore. They help, but you need to make sure the
-markdown is valit and follows our convention just as you woudl with
+markdown is valid and follows our convention just as you would with
 any other format.
 
 Examples for such editors are:
@@ -204,9 +222,7 @@ Packages of interest include:
 
 In our framework we use crosref and crosscite
 
-#### Mermaid :o:
-
-:o: For now we do not use mermaid
+#### Mermaid
 
 Mermaid is a graph generation tool that lets you create graphs and
 diagrams with the help of a description language. It includes graphviz
@@ -354,26 +370,27 @@ Now, I can refer to [Section](#s-this-is-my-label). References, must not have sp
 
 ### Code in markdown
 
-COde in markdown is easy to integrate with 
+Code in markdown is easy to integrate with 
 
-````md
-```python
-code
-```
-````
+
+	```python
+	code
+	```
+
 
 to see if syntax highlighting works. I have not tried this yet though
 When doing bash, we also like to try
 
 
-````md
-```bash
-$ script
-```
-````
+	```bash
+	$ script
+	```
 
 Note that in order to indicate a new line in bash we use the `$` sign
 as prefix which indicates the prompt sign.
+
+> :warning: Please note that there must be an empty line before and
+> after the code block
 
 
 ### Citations in markdown
@@ -492,8 +509,8 @@ using the right tool.
 
 ### Using pandoc to check your files
 
-It is easy to install pandoc on your operating system. PLease see the Pandoc web page and 
-install it 
+It is easy to install pandoc on your operating system. Please see the Pandoc web page and 
+install it.
 
 Once installed and you have in a directory the files
 
@@ -504,10 +521,10 @@ images/test.png
 ```
 
 You can easily generate for example a ePuB, PDF, or html output with 
-Make sure to also install pandoc-fignos
+Make sure to also install pandoc-crossref
 
 ```bash
-$ pandoc --verbose --filter pandoc-fignos -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml -o paper.epub paper.md
+$ pandoc --verbose --filter pandoc-crossref -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml -o paper.epub paper.md
 ```
 
 :o: Assignment: provide documentation for Linux, OSX, Windows to do this.

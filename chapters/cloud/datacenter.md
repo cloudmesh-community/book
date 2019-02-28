@@ -495,7 +495,7 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 To understand hot-cold aisles, one must take a brief foray into the
 realm of physics and energy. Specifically, understanding how a
 temperature gradient tries to equalize. The most important formula
-to know is the heat transfer equation (@eq:heat-transfer).
+to know is the heat transfer equation(@eq:heat-transfer).
 
 $$q=h_{c}A(t_{a}-t_{s})$${#eq:heat-transfer}
 
@@ -505,7 +505,7 @@ how energy is billed. Air moving at a moderate speed will transfer
 approximately 8.47 Watts per Square Foot per Hour. A 1U server is
 19 inches wide and about 34 inches deep. Multiplying the two values gives us
 a cross section of 646 square inches, or 4.48 square feet. Plugging these values
-into our equation above gives us:
+into our equation(@eq:heat-transfer) us:
 
 $$q=8.47*4.48*(t_{a}-t_{s}))$${#eq:heat-transfer-example}
 
@@ -522,7 +522,7 @@ $$1,328.2=8.47*4.48*(100-65)$$
 
 $$664.0=8.47*4.48*(100-82.5))$$
 
-From the above, we can see that a 35 degree delta allows the center to dissipate
+From the previous listing, we can see that a 35 degree delta allows the center to dissipate
 1,300 Watts of waste heat from a 1U server while a 17.5 degree delta
 allows us to only dissipate 664 Watts of energy. If a server is consuming
 more than 664 Watts, it'll continue to get warmer and warmer until it
