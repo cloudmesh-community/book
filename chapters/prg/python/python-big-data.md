@@ -26,7 +26,7 @@ different for you.
 
 If you go to the previous link to data.gov for Bloomington, you will see
 that the citations data is organized per quarter, so there are a total
-of four files. Above, we downloaded the data for the first quarter. Go
+of four files. Previously, we downloaded the data for the first quarter. Go
 ahead and download the remaining three files with `wget`.
 
 In this example, we will use three modules, `numpy`, `pandas` and

@@ -33,7 +33,7 @@ Method 1: PyCharm Installation on ubuntu using umake
     sudo apt-get update
     sudo apt-get install ubuntu-make
 
-Once umake command is run, use below command to install Pycharm community edition:
+Once umake command is run, use the next command to install Pycharm community edition:
 
     umake ide pycharm
     

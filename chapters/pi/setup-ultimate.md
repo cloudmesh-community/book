@@ -603,7 +603,7 @@ $ arp -a -n
 
 `nmap` is also available on Windows and macOS. It can be downloaded directly from 
 [Nmap installation instructions](https://nmap.org/book/install.html) or
-using Homebrew on macOS as `brew install nmap`. Usage is as above.
+using Homebrew on macOS as `brew install nmap`. Usage is as listed previously.
 
 
 

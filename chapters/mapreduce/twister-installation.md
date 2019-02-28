@@ -110,7 +110,7 @@ Now lets get a clone of the source code.
 git clone https://github.com/DSC-SPIDAL/twister2.git
 ```
 
-You can compile the Twister2 distribution by using the bazel target as below.
+You can compile the Twister2 distribution by using the bazel target as follows.
 ```bash
 cd twister2
 bazel build --config=ubuntu scripts/package:tarpkgs

@@ -358,7 +358,7 @@ form your class.
   bio          A homework folder in which you only publish your bio. The bio needs to be published as a *note*. This assignment also serves us to see if you are in piazza. Please do this assignment ASAP. You need to post a formal bio. See the many great examples in the folder.
   help         If you need help and none of the other folders fits, please use this folder. If information from here will result into new Web page content it will be added and marked into the folder *resolved*. See the *resolved* folder for more detail.
   resolved     Sometimes we move some general help messages to the resolved folder in case the help message results into information that is posted on our class Web page. We than will add a link to where in the class Web page this question was answered. The TAs will aggressively try to put information into the Web page.
-  discussion   Any content that deserves its separate discussion and is not covered in the above folder.
+  discussion   Any content that deserves its separate discussion and is not covered in the listed folders.
 
 In addition to these general folders we also have some folders which
 **MUST NOT BE USED BY ANY STUDENT TO POST CONTENT**. These folders serve
