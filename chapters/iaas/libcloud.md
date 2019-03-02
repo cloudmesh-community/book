@@ -301,7 +301,8 @@ Google cloud and account setup:
   1. For authentication, you will need the “Client ID” and the “Client Secret”
 1. You will also need your “Project ID” (a string, not a numerical value) that can be found by clicking on the “Overview” link on the left sidebar.
 
-Please refer this page for more details: https://libcloud.readthedocs.io/en/latest/compute/drivers/gce.html
+
+* <https://libcloud.readthedocs.io/en/latest/compute/drivers/gce.html>
 
 ```python
 from libcloud.compute.types import Provider
