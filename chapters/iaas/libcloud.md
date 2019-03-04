@@ -1,21 +1,21 @@
 # Python Libcloud {#sec:libcloud-python}
 
-With all the cloud providers and cloud services that are currently 
-available, it becomes hard to manage and maintain services that work 
-with several services. Therefore it is good to have a unified service 
-that allows developers to access many of the cloud services through a 
-single abstraction. Apache Libcloud is a python library that was 
-developed for this purpose. Apache Libcloud provides a unified API for 
+With all the cloud providers and cloud services that are currently
+available, it becomes hard to manage and maintain services that work
+with several services. Therefore it is good to have a unified service
+that allows developers to access many of the cloud services through a
+single abstraction. Apache Libcloud is a python library that was
+developed for this purpose. Apache Libcloud provides a unified API for
 many of the popular cloud providers and services.
- 
- 
+
+
 Apache Libcloud currently supports many providers, the complete list
 of providers that are supported can be found at
 [Supported Providers](https://libcloud.readthedocs.io/en/latest/supported_providers.html)
- 
+
 However, it is good to keep in mind that the Libcloud API might not
-support some of the advanced features that are provided by some cloud 
-services or some of the most recent features that are yet to be 
+support some of the advanced features that are provided by some cloud
+services or some of the most recent features that are yet to be
 integrated into Libcloud
 
 ## Service categories
@@ -27,11 +27,11 @@ is as bellow, More details about this list can be found at
 list is extracted from the LibCloud documentation
 [LibCloud Docs](https://libcloud.readthedocs.io/en/latest/index.html)
 
-* Cloud Servers and Block Storage - services such as Amazon EC2 and 
+* Cloud Servers and Block Storage - services such as Amazon EC2 and
   Rackspace CloudServers
-* Cloud Object Storage and CDN - services such as Amazon S3 and 
+* Cloud Object Storage and CDN - services such as Amazon S3 and
   Rackspace CloudFiles
-* Load Balancers as a Service - services such as Amazon Elastic 
+* Load Balancers as a Service - services such as Amazon Elastic
   Load Balancer and GoGrid LoadBalancers
 * DNS as a Service - services such as Amazon Route 53 and Zerigo
 * Container Services - container virtualization like Docker and Rkt as
@@ -47,12 +47,12 @@ for Compute related services, this list is extracted from the
 
 * Node - represents a cloud or virtual server.
 * NodeSize - represents node hardware configuration. Usually this is
-  amount of the available RAM, bandwidth, CPU speed and disk size. 
-  Most of the drivers also expose an hourly price (in dollars) for 
+  amount of the available RAM, bandwidth, CPU speed and disk size.
+  Most of the drivers also expose an hourly price (in dollars) for
   the Node of this size.
 * NodeImage - represents an operating system image.
 * NodeLocation - represents a physical location where a server can be.
-* NodeState - represents a node state. Standard states are: running, 
+* NodeState - represents a node state. Standard states are: running,
 rebooting, terminated, pending, stopped, suspended, paused, erro, unknown.
 
 #### Key Pair Management
@@ -98,6 +98,42 @@ pprint(driver.list_sizes())
 pprint(driver.list_nodes())
 ```
 
+## Managing your cloud credentials
+
+Often you will need as part of your code to access cloud credentails. Theas
+could be read in interactively, from environment variables, or from a
+configuration file. To make things easy for now, we assume the credentials
+are stored in a yaml file that is stores in ~/.cloudmesh/cloudmesh.4.yaml.
+An example is listed at
+
+* <https://github.com/cloudmesh-community/cm/blob/master/cloudmesh/etc/cloudmesh4.yaml>
+
+With the help of this yaml file it is now easy to manage credentials for
+multiple clouds. We provide next a simple example on how to get the
+credentials for the cloud calles aws.
+
+```python
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+
+name="aws"
+
+credentials = Config()["cloudmesh"]["cloud"][name]["credentials"]
+```
+
+The last function can also be called via
+
+```python
+credentials = Config().credentials("cloud", name)
+```
+
+Which is a convenient method to access the credentials for a named cloud.
+
+
+Certianly you should be encrypting this file and an extension could be
+developed by you to manage the encryption and decryption for example while
+using your password protected public/private keypair or other methods.
+
 ## Working with cloud services
 
 In the following section we will look into how Libcloud can be used to
@@ -123,59 +159,177 @@ After you obtain the connection, it can be used to invoke various services
 
 #### Amazon AWS
 
-Authentication is performed for AWS as follows
+o get a driver via libcloud for AWS you first have to set up the
+cloudmesh4.yaml file and install the convenience methods from cloudmesh as
+documented in
+
+* <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
+
+This will provide you with a convenient config method that reads the Azure
+configuration parameters from the cloudmesh4.yaml file which you need to
+place in `~/.cloudmesh`
 
 ```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
-
-EC2_ACCESS_ID = 'your access id'
-EC2_SECRET_KEY = 'your secret key'
-
-EC2Driver = get_driver(Provider.EC2)
-conn = EC2Driver(EC2_ACCESS_ID, EC2_SECRET_KEY)
-```
-
-#### Azure
-
-Authentication is performed for Azure as follows
-
-```python
-from libcloud.compute.types import Provider
-from libcloud.compute.providers import get_driver
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
 
 # Azure related variables
 
-AZURE_SUBSCRIPTION_ID = 'xxxxxxxx–xxxx-xxxx-xxxx-xxxxxxxxxxxx'
-AZURE_MANAGEMENT_CERT_PATH = 'C:/Demo/azure_cert.pem'
+name = "azure"
+# This assumes the cloudname for azure to be *azure*
 
-AZDriver = get_driver(Provider.AZURE)
-conn = AZDriver(subscription_id=AZURE_SUBSCRIPTION_ID, key_file=AZURE_MANAGEMENT_CERT_PATH)
-``` 
+credentials = Config().credentials("cloud", name)
+
+pprint(credentials)
+
+
+#AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
+
+driver = get_driver(Provider.AZURE)
+connection = self.driver(
+    credentials["EC2_ACCESS_ID"],
+    credentials["EC2_SECRET_KEY"],
+    region=credentials["region"])
+
+pprint(connection.__dict__)
+```
+
+
+#### Azure
+
+##### Azure Classic Driver
+
+Please note that libcloud has multiple drivers to interact with Azure. The
+following is an example using the classic method.
+
+To get a driver via libcloud for azure you first have to set up the
+cloudmesh4.yaml file and install the convenience methods from cloudmesh as
+documented in
+
+* <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
+
+This will provide you with a convenient config method that reads the Azure
+configuration parameters from the cloudmesh4.yaml file which you need to
+place in `~/.cloudmesh`
+
+```python
+from libcloud.compute.types import Provider
+from libcloud.compute.providers import get_driver
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
+
+# Azure related variables
+
+name = "azure"
+# This assumes the cloudname for azure to be *azure*
+
+credentials = Config().credentials("cloud", name)
+
+pprint(credentials)
+
+
+#AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
+
+driver = get_driver(Provider.AZURE)
+connection = driver(
+    subscription_id=credentials["AZURE_SUBSCRIPTION_ID"],
+    key_file=path_expand(credentials["AZURE_KEY_FILE"])
+)
+
+pprint(connection.__dict__)
+```
+
+##### Azure New Driver :o:
+
+:o: To be provided by students or TA
 
 #### OpenStack
 
-Authentication is performed for OpenStack as follows
+To get a driver via libcloud for OpenStack you first have to set up the
+cloudmesh4.yaml file and install the convenience methods from cloudmesh as
+documented in
+
+* <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
+
+This will provide you with a convenient config method that reads the Azure
+configuration parameters from the cloudmesh4.yaml file which you need to
+place in `~/.cloudmesh`
 
 ```python
-from libcloud.compute.providers import get_driver
 from libcloud.compute.types import Provider
+from libcloud.compute.providers import get_driver
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
 
-OpenstackDriver = get_driver(Provider.OPENSTACK)
+# Azure related variables
 
-#OpenStack related variables
+name = "chameleon"
+# This assumes the cloudname for azure to be *azure*
 
-OPENSTACK__AUTH_USERNAME = 'your_user_name'
-OPENSTACK_AUTH_PASSWORD = 'your_auth_password'
+credentials = Config().credentials("cloud", name)
 
-conn = OpenStack(OPENSTACK__AUTH_USERNAME, OPENSTACK_AUTH_PASSWORD',
-                   ex_force_auth_url='http://192.168.1.101:5000',
-                   ex_force_auth_version='2.0_password')
+pprint(credentials)
+
+
+#AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
+
+driver = get_driver(Provider.AZURE)
+connection = self.driver(
+    credentials["OS_USERNAME"],
+    credentials["OS_PASSWORD"],
+    ex_force_auth_url=credentials['OS_AUTH_URL'],
+    ex_force_auth_version='2.0_password',
+    ex_tenant_name=credentials['OS_TENANT_NAME'])
+
+pprint(connection.__dict__)
+```
+
+#### Google
+
+Google cloud and account setup:
+
+1. Go to the Google Developers Console
+1. Select your project
+  1. In the left sidebar, go to “APIs & auth”
+  1. Click on “Credentials” then “Create New Client ID”
+  1. Select “Installed application” and “Other” then click “Create Client ID”
+  1. For authentication, you will need the “Client ID” and the “Client Secret”
+1. You will also need your “Project ID” (a string, not a numerical value) that can be found by clicking on the “Overview” link on the left sidebar.
+
+
+* <https://libcloud.readthedocs.io/en/latest/compute/drivers/gce.html>
+
+```python
+from libcloud.compute.types import Provider
+from libcloud.compute.providers import get_driver
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
+
+credentials = Config().credentials("cloud", "GCE")
+
+pprint(credentials)
+
+driver = get_driver(Provider.GCE)
+# Datacenter is set to 'us-central1-a' as an example, but can be set to any
+# zone, like 'us-central1-b' or 'europe-west1-a'
+connection = driver(
+    credentials['SERVICE_ACCOUNT_EMAIL'],
+    credentials['PATH_TO_PEM_FILE'],
+    datacenter=credentials['DATA_CENTER'],
+    project=credentials['PROJECT_ID'])
+
+pprint(connection.__dict__)
 ```
 
 
 ### Invoking services
- 
+
 In this section we will look into how we can use the connection
 created as previously instructed to perform various services such as
 creating nodes, listing nodes, starting nodes and stopping nodes.
@@ -198,7 +352,10 @@ images = conn.list_images()
 sizes = conn.list_sizes()
 
 # create node with first image and first size
-node = conn.create_node(name='yourservername', image=images[0], size=sizes[0])
+node = conn.create_node(
+    name='yourservername',
+    image=images[0],
+    size=sizes[0])
 ```
 
 #### Listing Nodes
@@ -208,8 +365,8 @@ nodes that have been created in the provider
 
 ```python
 ...
-nodes = conn.list_nodes()
-print nodes
+nodes = connection.list_nodes()
+print (nodes)
 ```
 
 #### Starting Nodes
@@ -219,21 +376,21 @@ be used to start the node
 
 ```python
 ...
-nodes = conn.list_nodes()
+nodes = connection.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
-conn.ex_start(node=node)
+connection.ex_start(node=node)
 ```
 
 #### Stoping Nodes
 
-When needed the following command can be used to stop a node that has 
+When needed the following command can be used to stop a node that has
 been started
 
 ```python
 ...
-nodes = conn.list_nodes()
+nodes = connection.list_nodes()
 node = [n for n in nodes if 'yourservername' in n.name][0]
-conn.ex_stop(node=node)
+connection.ex_stop(node=node)
 ```
 
 ## Cloudmesh Community Program to Manage Clouds
@@ -257,7 +414,7 @@ passwords on your publicly accessible Github account.
    that you have made. For example maybe you can use a new directory
    on your desktop
 
-2. Copy the cm.py and `cloudmesh.yaml` files into this folder. Just to
+2. Copy the cm.py and `cloudmesh4.yaml` files into this folder. Just to
    make sure you are not working with the files under the git repo you
    should delete the cloudmesh.yaml file in that is in your local git
    repo.
@@ -268,6 +425,8 @@ passwords on your publicly accessible Github account.
 To illustrate how simple the program is and that it significantly
 improves your management of credentials we provide the follwoing
 code:
+
+**NOTE**: This is to be implemented by you
 
 ```python
 from cm import cloudmesh
@@ -293,7 +452,7 @@ $ pip install cm-community
 and this library will be installed for you.
 
 
-## Amazon Simple Storage Service S3 via libcloud :hand:
+## Amazon Simple Storage Service S3 via libcloud :o:
 
 Next we explain how to use Amazon Web Services (AWS) S3 via
 libcloud. Apache libcloud is a python library that provides
@@ -302,7 +461,7 @@ with AWS API's, for that matter it allows you to do so for different
 cloud providers. In the next sections more detailed steps are shown
 to install and use libcloud for AWS S3.
 
-	
+
 ### Access key
 
 To be able to access AWS S3 from libcloud we need the access key to be
@@ -329,17 +488,20 @@ where you can also define access controls.
 List Containers function list all the containers of buckets available
 for the user in that particular region.
 
-	from libcloud.storage.types import Provider
-	from libcloud.storage.providers import get_driver
+:o: TODO change this example to use the cloudmesh4.yaml file
+
+```python
+from libcloud.storage.types import Provider
+from libcloud.storage.providers import get_driver
 
 
-	cls = get_driver(Provider.S3_US_EAST2)
-	driver = cls('api key', 'api secret key')
- 
-	d = driver.list_containers();
+cls = get_driver(Provider.S3_US_EAST2)
+driver = cls('api key', 'api secret key')
 
-	print d;
+d = driver.list_containers()
 
+print (d)
+```
 
 ### List container objects
 
@@ -347,57 +509,68 @@ List container objects function shows the list of all objects in that
 container. Please note the output could be large depending on the
 files present in the bucket.
 
-	from libcloud.storage.types import Provider
-	from libcloud.storage.providers import get_driver
-	
-	# Note I have used S3_US_EAST2 as this is the
-    # "region" where my S3 bucket is located.
+:o: TODO change this example to use the cloudmesh4.yaml file
 
-	cls = get_driver(Provider.S3_US_EAST2)
-	driver = cls('api key', 'api secret key')
-	
-	container = driver.get_container(container_name='<bucket name>')
-	
-	d = driver.list_container_objects(container);
-	
-	print d;
+```python
+from libcloud.storage.types import Provider
+from libcloud.storage.providers import get_driver
+
+# Note I have used S3_US_EAST2 as this is the
+# "region" where my S3 bucket is located.
+
+cls = get_driver(Provider.S3_US_EAST2)
+driver = cls('api key', 'api secret key')
+
+container = driver.get_container(
+    container_name='<bucket name>')
+
+d = driver.list_container_objects(container)
+
+print(d)
+```
 
 ### Upload a file
 
 Upload a file helps in uploading a local file to S3 bucket.
 
-	from libcloud.storage.types import Provider
-	from libcloud.storage.providers import get_driver
 
-	FILE_PATH = '/<file path>/<filename>'
+:o: TODO change this example to use the cloudmesh4.yaml file
 
-    # Note I have used S3_US_EAST2 as this is
-    # the "region" where my S3 bucket is located.
+```python
+from libcloud.storage.types import Provider
+from libcloud.storage.providers import get_driver
 
-	cls = get_driver(Provider.S3_US_EAST2)
-	driver = cls('api key', 'api secret key')
+FILE_PATH = '/<file path>/<filename>'
 
-	container = driver.get_container(container_name='<bucket name>')
+# Note I have used S3_US_EAST2 as this is
+# the "region" where my S3 bucket is located.
 
-    extra = {'meta_data': {
-        'owner': '<owner name>',
-        'created': '2018-03-24'}}
+cls = get_driver(Provider.S3_US_EAST2)
+driver = cls('api key', 'api secret key')
 
-	with open(FILE_PATH, 'rb') as iterator:
+container = driver.get_container(
+    container_name='<bucket name>')
+
+extra = {
+  'meta_data': {
+    'owner': '<owner name>',
+    'created': '2018-03-24'
+    }
+  }
+
+with open(FILE_PATH, 'rb') as iterator:
     obj = driver.upload_object_via_stream(
         iterator=iterator,
         container=container,
         object_name='backup.tar.gz',
         extra=extra)
-
+```
 
 ### References
 
-* https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html
+* <https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html>
 * Documentation about libcloud can be found at <https://libcloud.readthedocs.org>
 
     * storage driver <http://libcloud.readthedocs.io/en/latest/_modules/libcloud/storage/drivers/s3.html>
     * Examples: <https://libcloud.readthedocs.io/en/latest/storage/examples.html>
-    * API docs<http://libcloud.apache.org/apidocs/0.6.1/libcloud.storage.base.StorageDriver.html>
-
-
+    * API docs <http://libcloud.apache.org/apidocs/0.6.1/libcloud.storage.base.StorageDriver.html>

@@ -229,8 +229,8 @@ the URI on the Eve port
 
     $ curl -i http://127.0.0.1:5000
 
-Your payload should look like the one below, if your output is not
-formatted like below try adding `?pretty=1`
+Your payload should look like the one listed next, if your output is not
+formatted like this try adding `?pretty=1`
 
     $ curl -i http://127.0.0.1:5000?pretty=1
 

@@ -1,4 +1,4 @@
-# Hadoop
+# Hadoop {#sec:hadoop-introduction}
 
 Hadoop is an open source framework for storage and processing of large datasets on commodity clusters. Hadoop internally uses its own file system called HDFS (Hadoop Distributed File System).
 

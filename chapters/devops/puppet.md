@@ -187,7 +187,7 @@ try to connect
 press `<ctrl> + O` to Save and `<ctrl> + X` to exit
 
 Next, we will install Puppet on Ubuntu  server. 
-We will excute below commands to pull from official 
+We will execute the following commands to pull from official 
 Puppet Labs Repository
 
 ```bash
@@ -244,7 +244,7 @@ $ sudo systemctl status puppetserver
 we would see "active(running)" if server has started successfully 
 
 ```
-ritesh@ritesh-ubuntu1:~$ sudo systemctl status puppetserver
+$ sudo systemctl status puppetserver
 ● puppetserver.service - puppetserver Service
    Loaded: loaded (/lib/systemd/system/puppetserver.service; disabled; vendor pr
    Active: active (running) since Sun 2019-01-27 00:12:38 EST; 2min 29s ago
@@ -321,7 +321,7 @@ server = <my-puppet-server>
  we will see something like
  
  ```
- ritesh@ritesh-ubuntu1:~$ sudo /opt/puppetlabs/bin/puppet cert list
+ $ sudo /opt/puppetlabs/bin/puppet cert list
   "puppet-agent" (SHA256) 7B:C1:FA:73:7A:35:00:93:AF:9F:42:05:77:9B:
   05:09:2F:EA:15:A7:5C:C9:D7:2F:D7:4F:37:A8:6E:3C:FF:6B
 ```
@@ -339,7 +339,7 @@ $ sudo /opt/puppetlabs/bin/puppet cert sign puppet-agent
 we will see message saying certificate was signed if successful
 
 ```
-ritesh@ritesh-ubuntu1:~$ sudo /opt/puppetlabs/bin/puppet cert sign puppet-agent
+$ sudo /opt/puppetlabs/bin/puppet cert sign puppet-agent
 Signing Certificate Request for:
   "puppet-agent" (SHA256) 7B:C1:FA:73:7A:35:00:93:AF:9F:42:05:77:9B:05:09:2F:
   EA:15:A7:5C:C9:D7:2F:D7:4F:37:A8:6E:3C:FF:6B
@@ -420,8 +420,6 @@ $ wget -O - https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub | gpg --
 we will see ouput as
 
 ```
-ritesh@ritesh-pe-text:~/pe1$ wget -O 
-- https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub | gpg --import
 --2019-02-03 14:02:54--  https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub
 Resolving downloads.puppetlabs.com 
 (downloads.puppetlabs.com)... 2600:9000:201a:b800:10:d91b:7380:93a1
@@ -451,7 +449,6 @@ $ gpg --fingerprint 0x7F438280EF8D349F
 we will see successful output as
 
 ```
-ritesh@ritesh-pe-text:~/pe1$ gpg --fingerprint 0x7F438280EF8D349F
 pub   rsa4096 2016-08-18 [SC] [expires: 2021-08-17]
       6F6B 1550 9CF8 E59E 6E46  9F32 7F43 8280 EF8D 349F
 uid           [ unknown] Puppet, Inc. Release Key 
@@ -468,8 +465,6 @@ $ gpg --verify puppet-enterprise-VERSION-PLATFORM.tar.gz.asc
 successful output will show as
 
 ```
-ritesh@ritesh-pe-text:~/pe$ gpg --verify 
-puppet-enterprise-2019.0.2-ubuntu-18.04-amd64.tar.gz.asc
 gpg: assuming signed data in 'puppet-enterprise-2019.0.2-ubuntu-18.04-amd64.tar.gz'
 gpg: Signature made Fri 25 Jan 2019 02:03:23 PM EST
 gpg:                using RSA key 7F438280EF8D349F
@@ -504,7 +499,7 @@ This will ask us to chose installation option; we could chose from
 guided installation or text based installation
 
 ```
-ritesh@ritesh-ubuntu-pe:~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
+~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
 $ sudo ./puppet-enterprise-installer
 ~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64 
 ~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
@@ -566,7 +561,7 @@ mkdir -p /opt/puppetlabs/puppet/share/installer/installer
 cp -pR /home/ritesh/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64/* 
 /opt/puppetlabs/puppet/share/installer/installer/
 
-## Go to https://ritesh-ubuntu-pe:3000 in your browser to continue installation.
+## Go to https://<localhost>:3000 in your browser to continue installation.
 
 ```
 
@@ -647,7 +642,7 @@ in that order.
 ~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
 2019-02-02T22:08:14.805-05:00 Running command: /opt/puppetlabs/puppet/bin/puppet 
 agent --enable
-ritesh@ritesh-pe-text:~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64$
+~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64$
 ```
 
 This is called as monolithic installation as all components of 

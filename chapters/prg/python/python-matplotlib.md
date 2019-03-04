@@ -121,7 +121,7 @@ plt.show()
 
 :o: link error
 
-An example of a bar chart is preceded below using data from
+An example of a bar chart is preceded next using data from
  [\[T:fast-cars\]](#T:fast-cars){reference-type="ref"
 reference="T:fast-cars"}.
 
