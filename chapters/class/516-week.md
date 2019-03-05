@@ -342,11 +342,41 @@ For more information see @sec:mongodb-python and @sec:mongodb-cloudmesh.
 
 ## Week 7: Feb 22 - March 1
 
-Map reduce
+### MapReduce
 
-## Week 8: Map Reduce, spark
+This week you will start learning the basics of MapReduce concept and its
+use-cases to understand what MapReduce is. The MapReduce section (see @sec:map-reduce)
+gives an introduction and describes the basics of the MapReduce concept. 
 
-Map Reduce
+Watch the video lecture that describes the software echo system around MapReduce
+which is listed in @sec:map-reduce.
+
+Understand the Wordcount example discussed in the, word count example can be
+thought of as a "Hello world" example into MapReduce.
+
+
+## Week 8: March 4 - March 8
+
+### Hadoop and Spark
+This week you will further look into MapReduce through Apache Hadoop, Hadoop
+is one of the earliest open source implementations of the MapReduce concept. 
+Even though Hadoop has now been replaced by faster frameworks such as Spark,
+Flink and Twister2. It is still important to understand the basic concepts 
+around Apache Hadoop. 
+
+Read and understand the Hadoop echo system as described in @sec:hadoop-introduction.
+Even though Hadoop is rarely used as a MapReduce framework, other parts of the
+echo system such as HDFS(HaDoop File System) and Yarn are still very popular. 
+
+Watch and understand the pagerank example which is a popular and important
+algorithm which can be solved cleanly with MapReduce
+
+Install Hadoop and try out some of the examples to get a better understanding
+about how the framework operates.
+
+Read the Spark section to understand how spark was developed to improve upon
+Apache Hadoop and how it achieves better performance for Iterative MapReduce 
+applications
 
 ## Week 9: Containers
 
