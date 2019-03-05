@@ -163,8 +163,7 @@ d = sns.regplot(x = 'oldbalanceOrg', y = 'amount', data=tmp.loc[(tmp.isFlaggedFr
 plt.show()
 ```
 
-![scikit-learn](images/scikit-learn-boxplot.png)
-{#fig:scikit-learn-boxplot}
+![scikit-learn](images/scikit-learn-boxplot.png){#fig:scikit-learn-boxplot}
 
 ### Scatter plot Analysis
 
@@ -173,8 +172,7 @@ plt.figure(figsize=(12,8))
 sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue='isFraud')
 ```
 
-![scikit-learn](images/scikit-learn-scatterplot.png)
-{#fig:scikit-learn-scatterplot}
+![scikit-learn](images/scikit-learn-scatterplot.png){#fig:scikit-learn-scatterplot}
 
 ## Data Cleansing - Removing Outliers
 
