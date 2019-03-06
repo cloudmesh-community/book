@@ -378,12 +378,34 @@ Read the Spark section to understand how spark was developed to improve upon
 Apache Hadoop and how it achieves better performance for Iterative MapReduce 
 applications
 
-## Week 9: Containers
+MANDATORY: Read the Scientific Writing with markdown epub, this is required
+before you make and contributions to the book to make sure that you understand
+the format of the book and the correct notations. The epub is available in 
+[Scientific Writing](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true)
+
+MANDATORY Project Milestone: Review of your cloudmesh commandline commands
+specified in docopt. Please make sure you have your command either specified in 
+the cm directory or in your hid. make sure to add it to your README, so i can 
+find it. The command ust be available Next week Friday Mar 8, 9am.
+                                                
+
+## Week 9: March 11 - March 15
 
 ### Containers
 
 In this week you are requested to explore containers. Please read
 @sec:container-intro, @sec:docker-intro
+
+MANDATORY Project Milestone: OpenAPI specification, We like to review your 
+OpenAPI specification that is motivated by your cloud mesh command. Have your 
+openAPI specification ready Mar 15, 9am.
+
+MANDATORY: comprehension assignment VM management, All students in class must 
+be showcasing for one cloud that they can start, stop, and login into a VM in a 
+cloud. This has to be demonstrated through a scipt or python program. The 
+program must read the credentials from a configuration file.  The script must 
+demonstrate that a command can be run on your vm with ssh.Starting and stopping 
+the VM via the GUI does not count. This must be done by Mar 15
 
 ## Week 10: docker cluster
 
