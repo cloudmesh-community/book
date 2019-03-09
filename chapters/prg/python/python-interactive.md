@@ -43,7 +43,7 @@ interactive python is to get the type of a value using type():
 ```python 
 >>> type(42) 
 <type 'int'> 
->>> type(hello) 
+>>> type('hello') 
 <type 'str'> 
 >>> type(3.14) 
 <type 'float'>
