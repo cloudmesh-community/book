@@ -1,9 +1,10 @@
-# Amazon EMR (Elastic Map Reduce) :o:
+# Amazon EMR (Elastic Map Reduce) :o: sp19-616-111 ✋
 
-Amazon EMR provides a managed Hadoop framework that makes big data processing
-- Easy
-- Fast
-- Cost-effective
+Amazon EMR facilitates you to analyze and process vast(huge) amounts of data by distributing the computational work across a cluster of virtual servers running in the AWS Cloud. The EMR cluster is managed using an open-source framework called Hadoop. Amazon EMR lets you focus on crunching or analyzing your data without having to worry about time-consuming setup, management, and tuning of Hadoop clusters or the compute capacity they rely on unlike other Hadoop distributors like Cloudera,Hortonworks etc.,
+
+- Easy: To maintain on demand basis
+- Fast: Auto shrinking of cluster and dynamically increase memory based on the need
+- Cost-effective : Scala out and in anytime based on the business requirement or models
 
 EMR Supports other distributed framework such as Apache Spark, HBase, Presto, Flink and etc.
 Interact with data in AWS data stores such as Amazon S3, DynamoDB and etc.
@@ -12,28 +13,31 @@ Components Of EMR:
 - Storage
 - EC2 instance
 - Clusters
+- Security 
+- KMS
 
 ## Why EMR?
 
 Easy to Use
-- Launch cluster in a min
+- Launch cluster in a 5 to 10 minutes time as many cluster of nodes as you need
 
 Pay as you go
-- Pay an hourly rate
+- Pay an hourly rate (with AWS latest pricing model, customers can choose to pay in minutes)
 
 Flexible
-- Easily Add/ Remove capacity
+- Easily Add/ Remove capacity(Auto scale out and in anytime)
 
 Reliable
-- Spend less time for monitoring
+- Spend less time for monitoring and can utilize in-built AWS tools which will reduce overhead
 
 Secure
-- Manage firewall
+- Manage firewall (VPC both private and subnet)
 
 ## AWS Storage
 
 S3
 - Cloud based storage
+- Using EMRFS can directly connects s3 storage
 - Accessible from any where
 
 Instance Store

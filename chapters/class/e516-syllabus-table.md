@@ -69,7 +69,7 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/11    | 8       | Programming        | Python for Cloud Computing, |
 | :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud) |
 | :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
-| :o:                | 02/18    | 9       | Map/Reduce         | Map/Reduce, Hadoop, Spark |
+| :white_check_mark: | 02/18    | 9       | Map/Reduce         | [Map/Reduce](#sec:map-reduce), [Hadoop](#sec:hadoop-introduction), Spark |
 | :white_check_mark: | 02/25    | 10      | Messaging          | Messaging |
 | :white_check_mark: | 02/25    | 11      | Messaging          | - [MQTT](#sec:mqtt)  |
 | :white_check_mark: | 03/04    |         |                    | - [Graphql](#sec:graphql)  |

@@ -1,8 +1,18 @@
-# Open API :o: :question: {#sec:go-openapi}
+# Open API {#sec:go-openapi}
 
 We have a large section previously on openapi,
 what needs to be done here is to showcase how to generate go
 from swagger codegen or other tool and use it. Please see @sec:swagger
+
+In this section, we introduce the `go-swagger`, which is an open source implementation for Swagger 2.0 (aka OpenAPI 2.0). Please follow this link for more details: https://goswagger.io/.
+
+## Install from Homebrew
+The binary release version can be installed via Homebrew on macOS.
+
+```bash
+brew tap go-swagger/go-swagger
+brew install go-swagger
+```
 
 
 ## serve specification UI
@@ -14,22 +24,26 @@ Most basic use-case: serve a UI for your spec:
 swagger serve https://raw.githubusercontent.com/swagger-api/swagger-spec/master/examples/v2.0/json/petstore-expanded.json
 ```
 
+
 ## validate a specification
 
 ```go
 swagger validate https://raw.githubusercontent.com/swagger-api/swagger-spec/master/examples/v2.0/json/petstore-expanded.json
 ```
 
+This command should produce this content:
+
+```
+The swagger spec at "https://raw.githubusercontent.com/swagger-api/swagger-spec/master/examples/v2.0/json/petstore-expanded.json" is valid against swagger specification 2.0
+```
+
 ## Generate a Go OpenAPI server
 
-:warning: this is incorrect :o:
 ```go
 swagger generate server [-f ./swagger.json] -A [application-name [--principal [principal-name]]
 ```
 
 ## generate a Go OpenAPI client
-
-:warning: this is incorrect :o:
 
 ```go
 swagger generate client [-f ./swagger.json] -A [application-name [--principal [principal-name]]
@@ -37,15 +51,11 @@ swagger generate client [-f ./swagger.json] -A [application-name [--principal [p
 
 ## generate a spec from the source
 
-:warning: this is put here without explanation
-
 ```go
 swagger generate spec -o ./swagger.json
 ```
 
 ## generate a data model
-
-:warning: this is put here without explanation
 
 ```go
 swagger generate model --spec={spec}

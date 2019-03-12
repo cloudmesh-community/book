@@ -1,4 +1,4 @@
-# Introduction to Mapreduce {#s-mapreduce}
+# Introduction to Mapreduce {#sec:map-reduce}
 
 In this section we discuss about the background of Mapreduce along
 with Hadoop and core components of Hadoop.

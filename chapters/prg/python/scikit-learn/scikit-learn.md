@@ -111,7 +111,7 @@ plt.xlabel('Type')
 data.type.value_counts().plot.bar()
 ```
 
-![scikit-learn](images/scikit-learn-barplot.png){#fig:scikit-learn-barplot}
+![scikit-learn barplots](images/scikit-learn-barplot.png){#fig:scikit-learn-barplot}
 
 ### Correlation between attributes
 
@@ -135,7 +135,7 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3,
             linewidths=.5, cbar_kws={"shrink": .5}, ax=ax);
 ```
 
-![scikit-learn](images/scikit-learn-correlationanalysis.png){#fig:scikit-learn-correlationanalysis}
+![scikit-learn correlation array](images/scikit-learn-correlationanalysis.png){#fig:scikit-learn-correlationanalysis}
 
 ### Histogram Analysis of dataset attributes
 
@@ -163,8 +163,7 @@ d = sns.regplot(x = 'oldbalanceOrg', y = 'amount', data=tmp.loc[(tmp.isFlaggedFr
 plt.show()
 ```
 
-![scikit-learn](images/scikit-learn-boxplot.png)
-{#fig:scikit-learn-boxplot}
+![scikit-learn](images/scikit-learn-boxplot.png){#fig:scikit-learn-boxplot}
 
 ### Scatter plot Analysis
 
@@ -173,8 +172,7 @@ plt.figure(figsize=(12,8))
 sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue='isFraud')
 ```
 
-![scikit-learn](images/scikit-learn-scatterplot.png)
-{#fig:scikit-learn-scatterplot}
+![scikit-learn scatter plots](images/scikit-learn-scatterplot.png){#fig:scikit-learn-scatterplot}
 
 ## Data Cleansing - Removing Outliers
 
