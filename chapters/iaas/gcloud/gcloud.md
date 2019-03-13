@@ -63,9 +63,12 @@ deployment tools. Apigee Edge integrates these tools together into a
 platform for managing APIs through the use of API proxies, which are
 combined together with a service plan into an API product.
 
-* [Apigee API Platform](https://cloud.google.com/apigee-api-management/): Develop, secure, deploy, and monitor your APIs everywhere.
-* [API Analytics](https://cloud.google.com/api-analytics/): Insight into operational and business metrics for APIs.
-* [API Monetization](https://cloud.google.com/api-monetization/): Flexible, easy-to-use solution to realize value from APIs.
+* [Apigee API Platform](https://cloud.google.com/apigee-api-management/): 
+  Develop, secure, deploy, and monitor your APIs everywhere.
+* [API Analytics](https://cloud.google.com/api-analytics/): 
+  Insight into operational and business metrics for APIs.
+* [API Monetization](https://cloud.google.com/api-monetization/): 
+  Flexible, easy-to-use solution to realize value from APIs.
 * [Apigee Sense](https://cloud.google.com/apigee-sense/): Intelligent behavior detection to protect APIs from attacks.
 * [Cloud Endpoints](https://cloud.google.com/endpoints/): Develop, deploy, and manage APIs on GCP.
 * [DeveloperPortal](https://cloud.google.com/developer-portal/): Enable developers and API teams with a turnkey self-service platform.
