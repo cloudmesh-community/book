@@ -10,10 +10,10 @@ Example setup: In this example we will consider a text document containing diffe
 reviews of a restaurant. Data is split into two datasets - 
 training dataset and test datset. Following are details of the datasets: 
 
-Training data: We will utilize a pre-processed training data with labels attached to
+* Training data: We will utilize a pre-processed training data with labels attached to
 each review as *positive* or *negative*.  Training data can be downloaded [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
 
-Test data: Test data is available [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/testSet.txt).
+* Test data: Test data is available [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/testSet.txt).
 Test dataset has been setup in such a way that first 2989 reviews are positive and 
 rows from 2990 to 4321 are negative reviews. Test data needs to pre-processed and 
 cleaned before the algorithm is implemented. After the test data is cleaned, 
