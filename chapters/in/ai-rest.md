@@ -66,7 +66,7 @@ import connexion
 
 **Step-1:**
 
-Pre-processing test data involves following:
+Pre-processing test data involves following tasks:
 
  * Cleaning the text data i.e. remove unwanted characters, converting text 
  to lower case, delete any extra spaces and finally put back the words
