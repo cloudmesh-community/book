@@ -93,7 +93,7 @@ def preProcessTestFile(linenum):
     # Label 1st 'linenum' lines as positive
     file_clean(lines[:linenum], "Positive", write_test)
 
-    # Label lines after 'x' count as negative
+    # Label lines after 'linenum' count as negative
     file_clean(lines[linenum:], "Negative", write_test)
 
     test_file.close()
