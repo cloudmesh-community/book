@@ -76,8 +76,6 @@ Pre-processing test data involves following tasks:
  when we define the endpoint.
  
 
-Following is the code for step-1:
-
 ```python
 from cloudmesh.common.util import path_expand
 import os
@@ -126,7 +124,6 @@ CountVectorizer and TfidfTransformer to transform the text into numerical
 feature vectors and downscale weights for words that occur in many data 
 points but are less informative (like 'a', 'is', 'the etc.)
 
-Following is the code for step-2:
 
 ```python
 from sklearn.naive_bayes import MultinomialNB
@@ -175,8 +172,8 @@ def getDataAndLabel(inp_file):
 
 **Step-3:**
 
-Now we define an OpenAPI specification to create 2 different endpoints 
-for step-1 and step-2. 
+Now we define an OpenAPI specification in yaml format to create 2 different 
+endpoints for functions defined in step-1 and step-2. 
 
 * Functions defined in step-1 and step-2 need to be 
 part of a module named `ai.py` 
@@ -185,8 +182,6 @@ defined in step-1 and step-2 respectively.
 * The input parameter required for function in step-1 will be passed as inline 
 parameter (linenum) for the endpoint to pre-process test dataset.
 
-
-Following is the OpenAPI spec in YAML format:
 
 ```python
 swagger: "2.0"
@@ -252,11 +247,10 @@ definitions:
 
 **Step-3:**
 
-Finally, we create a module to use connexion service to read the 
+Finally, we create a module (`server.py`) to use connexion service to read the 
 above created OpenAPI specification (`ai.yaml`) and dynamically call the methods 
 to be implemented on the server side.
 
-Following is the code (`server.py`) which :
 
 ```python
 """
