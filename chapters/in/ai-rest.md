@@ -37,10 +37,13 @@ sklearn.feature_extraction.text.TfidfTransformer
 Solution will be implemented in following steps:
 
 * **Step-1:** Define a function to pre-process Test dataset.
-* **Step-2:** Define an OpenAPI speficification in a YAML file. 
+* **Step-2:** Define a function to implement Niave Bayes algorithm.
+* **Step-3:** Define an OpenAPI speficification in a YAML file. 
 The specification will have endpoints for the following:
   * Pre-processing Test data
   * Build Naive Bayes classification model and return test accuracy
+* **Step-4:** Create a simple module to use the connexion service and read 
+in the specification from the yaml file.
 
 
 
