@@ -40,11 +40,71 @@ Solution will be implemented in following steps:
 * **Step-2:** Define a function to implement Niave Bayes algorithm.
 * **Step-3:** Define an OpenAPI speficification in a YAML file. 
 The specification will have endpoints for the following:
-  * Pre-processing Test data
-  * Build Naive Bayes classification model and return test accuracy
+  * Pre-process Test data with parameter.
+  * Build Naive Bayes classification model and return test accuracy.
 * **Step-4:** Create a simple module to use the connexion service and read 
 in the specification from the yaml file.
 
+**Step-1:**
 
+Pre-processing test data involves following tasks:
+
+ * Cleaning the text data i.e. removing unwanted characters, converting text 
+ to lower case, ensuring no extra spaces are present and finally putting back
+ the words together into sentences.
+ * Label the test data as per the given information related to the number of
+ rows with postive and negative reviews.
+
+Following is the code for step-1:
+
+```python
+from cloudmesh.common.util import path_expand
+import os
+import re
+
+def preProcessTestFile(x):
+    test_fp = os.path.join(path_expand("~/ai"), 'testSet.txt')
+    processed_test = os.path.join(path_expand("~/ai"), 'processedTest.csv')
+    test_file = open(test_fp)
+    lines = test_file.readlines()
+    write_test = open(processed_test, "w")
+
+    # Label 1st 'x' lines as positive
+    file_clean(lines[:x], "Positive", write_test)
+
+    # Label lines after 'x' count as negative
+    file_clean(lines[x:], "Negative", write_test)
+
+    test_file.close()
+    write_test.close()
+
+    data_test, label_test = getDataAndLabel(processed_test)  
+
+# Internal function for File cleanup
+def file_clean(infile, label, writeFile):
+    badChar = "[,!.?#@=\n]" 
+
+    for line in infile:
+        line = line.lower().replace("\t", " ")  
+        line = re.sub(badChar, "", line) 
+        arr = line.split(" ")  
+        words = " ".join(word for word in arr) 
+        toWrite = label+","+words 
+        writeFile.write(toWrite)
+        writeFile.write("\n") 
+
+# Internal Function to fetch Data and labels
+def getDataAndLabel(inp_file):
+    file = open(inp_file)  
+    label = []
+    data = []
+
+    for line in file:
+        arr = line.replace("\n", "").split(",")  
+        label.append(arr[0]) 
+        data.append(arr[1].replace("\n", "")) 
+    return data, label
+  
+```
 
 
