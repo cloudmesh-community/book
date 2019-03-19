@@ -3,23 +3,26 @@
 ## Naive Bayes Algorithm for Text classification
 
 Naive Bayes is a simple yet powerful classification machine learning algorithm.
-In this section we demonstrate the implementation of Naive Bayes 
-algorithm on text documents in a RESTful service to classify a review as positive or negative.
+In this section we demonstrate the implementation of Naive Bayes algorithm 
+on text documents in a RESTful service to classify a review as positive or negative.
 
-Example setup: The objective is to to build a classification model in a RESTful service which will classify a review either as positive or negative
+Example setup: The objective is to build a classification model in a RESTful service 
+which will classify a review either as positive or negative
 
-Training data: We will utilize a pre-processed training data with labels attached to each review as 
-*positive* or *negative*.  The data can be downloaded [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
+Training data: We will utilize a pre-processed training data with labels attached to
+each review as *positive* or *negative*.  The data can be downloaded [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
 
-Test data: Test data is available [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/testSet.txt).
-Test dataset has been setup in such a way that first 2989 reviews are positive and from 2990 to 4321 are negative.
-Test data needs to pre-processed and the file needs to cleaned before the algorithm is implemented.
-After the test data is cleaned, we will label the test data as per the information given.
-Finally, we will implement Multinomial Naive Bayes classifier algorithm and calculate the accuracy of the test prediction.
+Test data: Test data is available [here]
+(https://azuremallikresourcediag.blob.core.windows.net/mltest/testSet.txt).
+Test dataset has been setup in such a way that first 2989 reviews are positive and 
+from 2990 to 4321 are negative. Test data needs to pre-processed and the file needs to 
+cleaned before the algorithm is implemented. After the test data is cleaned, we will label
+the test data as per the information given. Finally, we will implement Multinomial Naive Bayes 
+classifier algorithm and calculate the accuracy of the test prediction.
 
 To implement machine learning algorithm on text documents we will use  
-scikit-learn feature extraction modules. Please refer to related documentation
-in the following link - [Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html).
+scikit-learn feature extraction modules. Please refer to related documentation in the following 
+link - [Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html).
 
 For the current example we will use the following specific modules:
 
