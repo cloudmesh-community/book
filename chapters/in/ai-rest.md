@@ -1,6 +1,6 @@
 # Artificial Intelligence Service with REST
 
-## Machine Learning on Text using Naive Bayes Algorithm
+## Naive Bayes Algorithm for Text classification
 
 Naive Bayes is a simple yet powerful classification machine learning algorithm.
 In this section we demonstrate the implementation of Naive Bayes 
