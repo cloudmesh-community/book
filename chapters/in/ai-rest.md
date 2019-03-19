@@ -19,7 +19,7 @@ Finally, we will implement Multinomial Naive Bayes classifier algorithm and calc
 
 Before we start, note that, to implement machine learning algorithm on text documents we will use  
 scikit-learn feature extraction modules. Please refer to related documentation
-in the following link for details - [Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html).
+in the following link - [Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html).
 
 For the current example we will use the following specific modules:
 
