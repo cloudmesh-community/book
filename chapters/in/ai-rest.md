@@ -6,8 +6,8 @@ Naive Bayes is a simple yet powerful classification machine learning algorithm.
 In this section we demonstrate the implementation of Naive Bayes algorithm 
 on text documents in a RESTful service to classify a review as positive or negative.
 
-Example setup: We will consider data split into training dataset and test datset.
-Following are details of the datasets: 
+Example setup: We will consider data split into two datasets - 
+training dataset and test datset. Following are details of the datasets: 
 
 Training data: We will utilize a pre-processed training data with labels attached to
 each review as *positive* or *negative*.  The data can be downloaded [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
