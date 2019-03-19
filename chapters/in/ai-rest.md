@@ -6,7 +6,7 @@ Naive Bayes is a simple yet powerful classification machine learning algorithm.
 In this section we demonstrate the implementation of Naive Bayes algorithm 
 on text documents in a RESTful service to classify a review as positive or negative.
 
-Example setup: In this example we will consider a text document containing different 
+Example setup: In this example we will consider a text document containing  
 reviews of a restaurant. Data is split into two datasets - 
 training dataset and test datset. Following are details of the datasets: 
 
@@ -36,12 +36,11 @@ sklearn.feature_extraction.text.TfidfTransformer
 
 Solution will be implemented in following steps:
 
-* Step-1: Create an OpenAPI speficification in a YAML file
-* Step-1: Create an OpenAPI speficification in a YAML file. The specification will have endpoints for the following:
-** Downlaoding Data
-** Pre-processing Test data
-** Build Naive Bayes classification model 
-** Return test accuracy and upload results
+* **Step-1:** Define a function to pre-process Test dataset.
+* **Step-2:** Define an OpenAPI speficification in a YAML file. 
+The specification will have endpoints for the following:
+  * Pre-processing Test data
+  * Build Naive Bayes classification model and return test accuracy
 
 
 
