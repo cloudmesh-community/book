@@ -9,7 +9,7 @@ algorithm on text documents to classify a review as positive or negative.
 Example setup:
 
 Training data: We will utilize a pre-processed training data with labels attached to each review as 
-*positive* or *negative*  The data can be downloaded [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
+*positive* or *negative*.  The data can be downloaded [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
 
 Test data: Test data is available [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/testSet.txt).
 Test data file has been setup in such a way that first 2989 reviews are positive and from 2990 to 4321 are negative.
