@@ -179,7 +179,7 @@ Now we define an OpenAPI specification to create 2 different endpoints
 for step-1 and step-2. 
 
 * Functions defined in step-1 and step-2 need to be 
-part of a module named <ai.py> 
+part of a module named ```ai.py``` 
 * operationId in the specification will correspond to the names of the functions
 defined in step-1 and step-2 respectively.
 * The input parameter required for function in step-1 will be passed as inline 
@@ -193,7 +193,7 @@ swagger: "2.0"
 info: 
   version: "0.0.1"
   title: "naivebayes"
-  description: "A service to run a Naive Bayes ML on data on cloud using swagger-2.0 specification and codegen"
+  description: "A service to run a Naive Bayes ML using swagger-2.0 specification and codegen"
   termsOfService: "http://swagger.io/terms/"
   contact: 
     name: "Naive Bayes ML algorithm REST Service"
