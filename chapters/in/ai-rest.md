@@ -122,7 +122,7 @@ to classify test data.
 As mentioned earlier, we will use scikit-learn feature selection modules 
 CountVectorizer and TfidfTransformer to transform the text into numerical 
 feature vectors and downscale weights for words that occur in many data 
-points but are less informative (like 'a', 'is', 'the etc.)
+points but are less informative (like 'a', 'is', 'the', etc.)
 
 
 ```python
