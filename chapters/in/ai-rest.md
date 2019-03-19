@@ -46,6 +46,23 @@ The specification will have endpoints for the following:
 in the specification from the yaml file.
 
 
+Pre-requisites:
+
+Following libraries will be used for the current example:
+
+```python
+from cloudmesh.common.util import path_expand
+import os
+import re
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+import numpy as np
+from flask import jsonify
+import connexion
+
+```
+
 
 **Step-1:**
 
@@ -239,7 +256,7 @@ Finally, we create a module to use connexion service to read the
 above created OpenAPI specification (```ai.yaml```) and dynamically call the methods 
 to be implemented on the server side.
 
-Follwoing is the code (```server.py```):
+Following is the code (```server.py```) which :
 
 ```python
 """
@@ -257,7 +274,7 @@ app.add_api("ai.yaml")
 # create a URL route in our application for "/"
 @app.route("/")
 def home():
-    msg = {"msg": "It's working!"}
+    msg = {"msg": "AI service with REST"}
     return jsonify(msg)
 
 
@@ -266,14 +283,14 @@ if __name__ == "__main__":
     
 ```
 
-To implement the REST service, run the followig pn the terminal:
+To implement the REST service, run the following on the terminal:
 
 ```python
 python server.py
 ```
 
 Once the connection is established, 
-Following CURL command can be used for the 1st endpoint:
+following CURL command can be used for the 1st endpoint:
 
 ```python
 curl http://localhost:8080/airest/ai/testdata/2990
@@ -282,5 +299,5 @@ curl http://localhost:8080/airest/ai/testdata/2990
 Following CURL command can be used for the 2nd endpoint:
 
 ```python
-/ai/nb
+curl http://localhost:8080/airest/ai/nb
 ```
