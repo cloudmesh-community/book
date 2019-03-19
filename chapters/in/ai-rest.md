@@ -182,7 +182,7 @@ for step-1 and step-2.
 part of a module named ```ai.py``` 
 * operationId in the specification will correspond to the names of the functions
 defined in step-1 and step-2 respectively.
-* The input parameter reuqired for function in step-1 will be passed as inline 
+* The input parameter required for function in step-1 will be passed as inline 
 parameter (linenum) for the endpoint to pre-process test dataset.
 
 
@@ -290,13 +290,15 @@ python server.py
 ```
 
 Once the connection is established, 
-following CURL command can be used for the 1st endpoint:
+following CURL command can be used for the 1st endpoint which will 
+pre-process the test dataset
 
 ```python
 curl http://localhost:8080/airest/ai/testdata/2990
 ```
 
-Following CURL command can be used for the 2nd endpoint:
+Following CURL command can be used for the 2nd endpoint which will build 
+the model to classify the test data and finally return the accuracy
 
 ```python
 curl http://localhost:8080/airest/ai/nb
