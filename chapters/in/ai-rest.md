@@ -37,7 +37,7 @@ sklearn.feature_extraction.text.TfidfTransformer
 Solution will be implemented in following steps:
 
 * **Step-1:** Define a function to pre-process Test dataset.
-* **Step-2:** Define a function to implement Niave Bayes algorithm.
+* **Step-2:** Define a function to implement Naive Bayes algorithm.
 * **Step-3:** Define an OpenAPI speficification in a YAML file. 
 The specification will have endpoints for the following:
   * Pre-process Test data with parameter.
@@ -45,15 +45,15 @@ The specification will have endpoints for the following:
 * **Step-4:** Create a simple module to use the connexion service and read 
 in the specification from the yaml file.
 
+
 **Step-1:**
 
-Pre-processing test data involves following tasks:
+Pre-processing test data involves following:
 
- * Cleaning the text data i.e. removing unwanted characters, converting text 
- to lower case, ensuring no extra spaces are present and finally putting back
- the words together into sentences.
- * Label the test data as per the given information related to the number of
- rows with postive and negative reviews.
+ * Cleaning the text data i.e. remove unwanted characters, converting text 
+ to lower case, delete any extra spaces and finally put back the words
+ together into sentences.
+ 
 
 Following is the code for step-1:
 
@@ -78,8 +78,6 @@ def preProcessTestFile(x):
     test_file.close()
     write_test.close()
 
-    data_test, label_test = getDataAndLabel(processed_test)  
-
 # Internal function for File cleanup
 def file_clean(infile, label, writeFile):
     badChar = "[,!.?#@=\n]" 
@@ -92,19 +90,9 @@ def file_clean(infile, label, writeFile):
         toWrite = label+","+words 
         writeFile.write(toWrite)
         writeFile.write("\n") 
-
-# Internal Function to fetch Data and labels
-def getDataAndLabel(inp_file):
-    file = open(inp_file)  
-    label = []
-    data = []
-
-    for line in file:
-        arr = line.replace("\n", "").split(",")  
-        label.append(arr[0]) 
-        data.append(arr[1].replace("\n", "")) 
-    return data, label
-  
+ 
 ```
 
+
+**Step-2:**
 
