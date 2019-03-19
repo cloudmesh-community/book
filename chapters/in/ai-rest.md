@@ -162,14 +162,14 @@ Now we define an OpenAPI specification to create 2 different endpoints
 for step-1 and step-2. 
 
 * Functions defined in step-1 and step-2 need to be 
-part of a module named ```python ai.py``` 
+part of a module named ```ai.py``` 
 * operationId in the specification will correspond to the names of the functions
 defined in step-1 and step-2 respectively.
-* Function in step-1 takes an input parameter (linenum) to label the datea as 
+* Function in step-1 takes an input parameter (linenum) to label the data as 
 per the given rules.
 
 
-Following the OpenAPI spec in YAML format:
+Following is the OpenAPI spec in YAML format:
 
 ```python
 swagger: "2.0"
@@ -234,5 +234,35 @@ definitions:
 ```
 
 
+**Step-3:**
+
+Finally, we create a module to use connexion service to read the 
+above created OpenAPI specification (```ai.yaml```) and dynamically call the methods 
+to be implemented on the server side.
+
+Follwoing is the code:
+
+```python
+"""
+Main module of the server file
+"""
+from flask import jsonify
+import connexion
+
+# Create the application instance
+app = connexion.App(__name__, specification_dir="./")
+
+# Read the yaml file to configure the endpoints
+app.add_api("ai.yaml")
+
+# create a URL route in our application for "/"
+@app.route("/")
+def home():
+    msg = {"msg": "It's working!"}
+    return jsonify(msg)
 
 
+if __name__ == "__main__":
+    app.run(port=8080, debug=True)
+    
+```
