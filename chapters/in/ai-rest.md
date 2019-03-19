@@ -55,7 +55,7 @@ Pre-processing test data involves following:
  to lower case, delete any extra spaces and finally put back the words
  together into sentences.
  * Label the rows as per the information provided i.e. label first 2989 rows 
- as *positive* and rest as *negative*. We will take 2989 as a input parameter
+ as *positive* and rest as *negative*. We will take 2990 as a input parameter
  when we define the endpoint.
  
 
@@ -165,8 +165,8 @@ for step-1 and step-2.
 part of a module named ```ai.py``` 
 * operationId in the specification will correspond to the names of the functions
 defined in step-1 and step-2 respectively.
-* Function in step-1 takes an input parameter (linenum) to label the data as 
-per the given rules.
+* The input parameter reuqired for function in step-1 will be passed as inline 
+parameter (linenum) for the endpoint to pre-process test dataset.
 
 
 Following is the OpenAPI spec in YAML format:
@@ -220,7 +220,6 @@ paths:
       consumes: 
         - "multipart/form-data"
       produces: 
-        - "multipart/form-data"
         - "application/json"
       responses: 
         "200":
@@ -240,7 +239,7 @@ Finally, we create a module to use connexion service to read the
 above created OpenAPI specification (```ai.yaml```) and dynamically call the methods 
 to be implemented on the server side.
 
-Follwoing is the code:
+Follwoing is the code (```server.py```):
 
 ```python
 """
@@ -265,4 +264,23 @@ def home():
 if __name__ == "__main__":
     app.run(port=8080, debug=True)
     
+```
+
+To implement the REST service, run the followig pn the terminal:
+
+```python
+python server.py
+```
+
+Once the connection is established, 
+Following CURL command can be used for the 1st endpoint:
+
+```python
+curl http://localhost:8080/airest/ai/testdata/2990
+```
+
+Following CURL command can be used for the 2nd endpoint:
+
+```python
+/ai/nb
 ```
