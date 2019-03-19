@@ -64,7 +64,7 @@ import connexion
 ```
 
 
--**Step-1:**-
+_**Step-1:**_
 
 Pre-processing test data involves following:
 
