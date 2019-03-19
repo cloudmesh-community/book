@@ -24,7 +24,7 @@ test prediction.
 
 To implement machine learning algorithm on text documents we will use 
 scikit-learn feature extraction modules. Please refer to related documentation 
-in the following link - 
+in the following scikit-learn link - 
 [Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html).
 
 For the current example we will use the following specific modules:
@@ -53,6 +53,9 @@ Pre-processing test data involves following:
  * Cleaning the text data i.e. remove unwanted characters, converting text 
  to lower case, delete any extra spaces and finally put back the words
  together into sentences.
+ * Label the rows as per the information provided i.e. label first 2989 rows 
+ as *positive* and rest as *negative*. We will take 2989 as a input parameter
+ when we define the endpoint.
  
 
 Following is the code for step-1:
@@ -62,18 +65,18 @@ from cloudmesh.common.util import path_expand
 import os
 import re
 
-def preProcessTestFile(x):
+def preProcessTestFile(linenum):
     test_fp = os.path.join(path_expand("~/ai"), 'testSet.txt')
     processed_test = os.path.join(path_expand("~/ai"), 'processedTest.csv')
     test_file = open(test_fp)
     lines = test_file.readlines()
     write_test = open(processed_test, "w")
 
-    # Label 1st 'x' lines as positive
-    file_clean(lines[:x], "Positive", write_test)
+    # Label 1st 'linenum' lines as positive
+    file_clean(lines[:linenum], "Positive", write_test)
 
     # Label lines after 'x' count as negative
-    file_clean(lines[x:], "Negative", write_test)
+    file_clean(lines[linenum:], "Negative", write_test)
 
     test_file.close()
     write_test.close()
@@ -95,4 +98,61 @@ def file_clean(infile, label, writeFile):
 
 
 **Step-2:**
+
+After the Test dataset has been cleaned and labelled, we now run the 
+Multinomial Naive Bayes algorithm on training data and use the model
+to classify test data.
+
+As mentioned earlier, we will use scikit-learn feature selection modules 
+CountVectorizer and TfidfTransformer to transform the text into numerical 
+feature vectors and downscale weights for words that occur in many data 
+points but are less informative (like 'a', 'is', 'the etc.)
+
+Following is the code for step-2:
+
+```python
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+import numpy as np
+
+def naivebayes():
+
+    processed_train = os.path.join(path_expand("~/ai"), 'processedTrain.csv')
+    processed_test = os.path.join(path_expand("~/ai"), 'processedTest.csv')
+    
+    # get the data and label for training and test data
+    data_train, label_train = getDataAndLabel(processed_train)
+    data_test, label_test = getDataAndLabel(processed_test)  
+
+    count_vect = CountVectorizer()  
+    X_train_counts = count_vect.fit_transform(data_train) 
+    tfidf_transformer = TfidfTransformer()  
+    X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
+
+    model = MultinomialNB(fit_prior=True)  
+    model.fit(X_train_tfidf, label_train)  
+    X_new_counts = count_vect.transform(data_test)
+    X_new_tfidf = tfidf_transformer.transform(X_new_counts)
+
+    predLabel = model.predict(X_new_tfidf)  
+
+    nb_result = {}
+    nb_result["Test Accuracy"] =  round(np.mean(predLabel == label_test) * 100, 2)
+    return jsonify(nb_result)
+    
+# Internal Function to fetch Data and labels
+def getDataAndLabel(inp_file):
+    file = open(inp_file)  # read the processed file
+    label = []
+    data = []
+
+    for line in file:
+        arr = line.replace("\n", "").split(",")  # split with comma
+        label.append(arr[0])  # first element is class label
+        data.append(arr[1].replace("\n", ""))  # second element is SMS
+    return data, label
+
+
+
 
