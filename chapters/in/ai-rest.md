@@ -6,7 +6,7 @@ Naive Bayes is a simple yet powerful classification machine learning algorithm.
 In this section we demonstrate the implementation of Naive Bayes algorithm 
 on text documents in a RESTful service to classify a review as positive or negative.
 
-Example setup: In this example we will consider a text document containing  
+Example setup: In this example we will consider a text document containing 
 reviews of a restaurant. Data is split into two datasets - 
 training dataset and test datset. Following are details of the datasets: 
 
@@ -44,6 +44,7 @@ The specification will have endpoints for the following:
   * Build Naive Bayes classification model and return test accuracy.
 * **Step-4:** Create a simple module to use the connexion service and read 
 in the specification from the yaml file.
+
 
 
 **Step-1:**
@@ -152,7 +153,86 @@ def getDataAndLabel(inp_file):
         label.append(arr[0])  # first element is class label
         data.append(arr[1].replace("\n", ""))  # second element is SMS
     return data, label
+    
 ```
+
+**Step-3:**
+
+Now we define an OpenAPI specification to create 2 different endpoints 
+for step-1 and step-2. 
+
+* Functions defined in step-1 and step-2 need to be 
+part of a module named ```python ai.py``` 
+* operationId in the specification will correspond to the names of the functions
+defined in step-1 and step-2 respectively.
+* Function in step-1 takes an input parameter (linenum) to label the datea as 
+per the given rules.
+
+
+Following the OpenAPI spec in YAML format:
+
+```python
+swagger: "2.0"
+info: 
+  version: "0.0.1"
+  title: "naivebayes"
+  description: "A service to run a Naive Bayes ML on data on cloud using swagger-2.0 specification and codegen"
+  termsOfService: "http://swagger.io/terms/"
+  contact: 
+    name: "Naive Bayes ML algorithm REST Service"
+  license: 
+    name: "Apache"
+host: "localhost:8080"
+basePath: "/airest"
+schemes: 
+  - "http"
+consumes: 
+  - "application/json"
+produces: 
+  - "application/json"
+paths: 
+  /ai/testdata/{linenum}:
+    get:
+      tags:
+        - AI
+      operationId: ai.preProcessTestFile
+      description: "runs naive bayes alogirthm"
+      parameters:
+        - in: path
+          name: linenum 
+          description: "Provide the line number in path"
+          required: true
+          type: integer
+      produces: 
+        - "multipart/form-data"
+        - "application/json"
+      responses: 
+        "200":
+          description: "naive bayes ml"
+          schema: 
+            $ref: "#/definitions/AI"
+  /ai/nb:
+    post:
+      tags:
+        - AI
+      operationId: ai.naivebayes
+      description: "uploads output data to azure"
+      consumes: 
+        - "multipart/form-data"
+      produces: 
+        - "multipart/form-data"
+        - "application/json"
+      responses: 
+        "200":
+          description: "naive bayes ml"
+          schema: 
+            $ref: "#/definitions/AI"
+definitions:
+  AI:
+    type: string
+
+```
+
 
 
 
