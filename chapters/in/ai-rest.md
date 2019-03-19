@@ -152,7 +152,7 @@ def getDataAndLabel(inp_file):
         label.append(arr[0])  # first element is class label
         data.append(arr[1].replace("\n", ""))  # second element is SMS
     return data, label
-
+```
 
 
 
