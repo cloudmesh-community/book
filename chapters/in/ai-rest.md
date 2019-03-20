@@ -1,15 +1,53 @@
 # Artificial Intelligence Service with REST
 
+## AI and ML offerings by Cloud service providers
+
 All major cloud service providers offer a suite of AI amd ML products 
-and services. A few of the notable services inlude, but are not limited to:
+and services. A few of the notable services include, but are not limited to:
 
 * [Amazon ML](https://aws.amazon.com/machine-learning/)
-* [Google Cloud ML Engine](https://cloud.google.com/ml-engine/)
+* [Google Cloud AI](https://cloud.google.com/products/ai/)
 * [IBM Watson](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/wml-ai.html)
-* [Microsoft ML Studio](https://studio.azureml.net/)
+* [Microsoft Azure ML Studio](https://studio.azureml.net/)
+
+Some of the cloud service providers have exposed a few REST based APIs to the 
+users and one such API is Google Cloud Vision API which we will discuss in the 
+next section and illustrate the usage with an example.
 
 
-## Image Analysis using Googl Cloud Vision API
+## Image Analysis using Google Cloud Vision API
+
+Googl Cloud Vision API offers a powerful image analysis API and it enables developers
+to understand the content of an image by encapsulating powerful machine learning models 
+in an easy-to-use REST API. The API classifies the images and can detect labels, logos,
+faces, landmarks, text within the images. The API uses JSON for both requests and responses.
+
+In this section, we showcase how to use Google Cloud Vision API for label detection 
+in a REST service. 
+
+Following are the pre-requisites before we can start using the API:
+
+* Sign in to your google account and create a Google Cloud Platform Project 
+as the following figure shows: @fig:GCP-Project. (make sure billing is enabled)
+
+![GCP-Project](images/gcp-project.png){#fig:gcp-project}
+
+* Enable Cloud Vision API as the following figure shows: @fig:GCV-API.
+
+![GCV-API](images/gcv-api.png){#fig:gcp-api}
+
+* In the GCP console, create service account key as the following figure 
+shows:  @fig:GCV-KEY. Save the JSON file that contains your key.
+
+![GCV-KEY](images/gcv-accountkey.png){#fig:gcp-key}
+
+* Install the client library as follows:
+
+```python
+pip install --upgrade google-cloud-vision
+```
+
+
 
 
 
