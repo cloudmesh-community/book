@@ -30,16 +30,16 @@ Following are the pre-requisites before we can start using the API:
 * Sign in to your google account and create a Google Cloud Platform Project 
 as the following figure shows: @fig:GCP-Project. (make sure billing is enabled)
 
-![GCP-Project](images/gcp-project.png){#fig:gcp-project}
+![GCP-Project](images/gcp-project.PNG){#fig:gcp-project}
 
 * Enable Cloud Vision API as the following figure shows: @fig:GCV-API.
 
-![GCV-API](images/gcv-api.png){#fig:gcp-api}
+![GCV-API](images/gcv-api.PNG){#fig:gcp-api}
 
 * In the GCP console, create service account key as the following figure 
 shows:  @fig:GCV-KEY. Save the JSON file that contains your key.
 
-![GCV-KEY](images/gcv-accountkey.png){#fig:gcp-key}
+![GCV-KEY](images/gcv-accountkey.PNG){#fig:gcp-key}
 
 * Install the client library as follows:
 
