@@ -100,14 +100,14 @@ def get_labels(image_name):
 
 Next, we create an OpenAPI specification which invokes the above module 
 and takes the input image name as an inline parameter. 
-The OpenAPI yaml file `gcv.yaml` can be created as follows:
+The OpenAPI yaml file `gcv.yaml` is as follows:
 
 ```python
 swagger: "2.0"
 info: 
   version: "0.0.1"
   title: "cpuinfo"
-  description: "Image analyis service using swagger-2.0 specification and codegen"
+  description: "Image analysis service using swagger-2.0 specification and codegen"
   termsOfService: "http://swagger.io/terms/"
   contact: 
     name: "Google Cloud Vision REST Service"
