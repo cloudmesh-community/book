@@ -154,7 +154,7 @@ definitions:
 
 
 Finally, we create a module (`server.py`) to use connexion service to read the 
-above created OpenAPI specification (`gcv.yaml`) and dynamically call the methods 
+above created OpenAPI specification (`gcv.yaml`) and dynamically call the method 
 to be implemented on the server side.
 
 
