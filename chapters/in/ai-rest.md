@@ -1,5 +1,18 @@
 # Artificial Intelligence Service with REST
 
+All major cloud service providers offer a suite of AI amd ML products 
+and services. A few of the notable services inlude, but are not limited to:
+
+* [Amazon ML](https://aws.amazon.com/machine-learning/)
+* [Google Cloud ML Engine](https://cloud.google.com/ml-engine/)
+* [IBM Watson](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/wml-ai.html)
+* [Microsoft ML Studio](https://studio.azureml.net/)
+
+
+## Image Analysis using Googl Cloud Vision API
+
+
+
 ## Naive Bayes Algorithm for Text classification
 
 Naive Bayes is a simple yet powerful classification machine learning algorithm.
@@ -8,19 +21,19 @@ on text documents in a RESTful service to classify a review as positive or negat
 
 Example setup: In this example we will consider a text document containing 
 reviews of a restaurant. Data is split into two datasets - 
-training dataset and test datset. Following are details of the datasets: 
+training dataset and test datset. The datasets can be downloaded from an Azure public
+blob storage container, the links to which are mentioned in the following details: 
 
 * Training data: We will utilize a pre-processed training dataset with labels attached 
-to each review as *positive* or *negative*.  Training data can be downloaded [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
+to each review as *positive* or *negative*. Training data can be downloaded from [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
 
-* Test data: Test data is available 
-[here](https://azuremallikresourcediag.blob.core.windows.net/mltest/testSet.txt).
-Test dataset has been setup in such a way that first 2989 reviews are positive and 
-rows from 2990 to 4321 are negative reviews. Test data needs to pre-processed and 
+* Test data: Test dataset has been setup in such a way that first 2989 reviews are positive 
+and rows from 2990 to 4321 are negative reviews. Test data needs to pre-processed and 
 cleaned before the algorithm is implemented. After the test data is cleaned, 
 we will label the test data as per the information given. Finally, we will implement 
 Multinomial Naive Bayes classifier algorithm and calculate the accuracy of the 
-test prediction.
+test prediction. Test data can be downloaded from 
+[here](https://azuremallikresourcediag.blob.core.windows.net/mltest/testSet.txt).
 
 To implement machine learning algorithm on text documents we will use 
 scikit-learn feature extraction modules. Please refer to related documentation 
