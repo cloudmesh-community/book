@@ -2,7 +2,7 @@
 
 ## AI and ML offerings by Cloud service providers
 
-All major cloud service providers offer a suite of AI amd ML products 
+All major cloud service providers offer a suite of AI and ML products 
 and services. A few of the notable services include, but are not limited to:
 
 * [Amazon ML](https://aws.amazon.com/machine-learning/)
@@ -23,7 +23,7 @@ in an easy-to-use REST API. The API classifies the images and can detect labels,
 faces, landmarks, text within the images. The API uses JSON for both requests and responses.
 
 In this section, we showcase how to use Google Cloud Vision API for label detection 
-in a REST service. 
+using a REST service. 
 
 Following are the pre-requisites before we can start using the API:
 
@@ -41,6 +41,9 @@ shows:  @fig:GCV-KEY. Save the JSON file that contains your key.
 
 ![GCV-KEY](images/gcv-accountkey.PNG){#fig:gcp-key}
 
+* Set the envionment variable *GOOGLE_APPLICATION_CREDENTIALS* to the 
+path of the JSON key file downloaded.
+
 * Install the client library as follows:
 
 ```python
@@ -48,10 +51,12 @@ pip install --upgrade google-cloud-vision
 
 ```
 
-Now, we create a python module `gcv.py` for detecting labels in an image.
-Make sure envionment variable *GOOGLE_APPLICATION_CREDENTIALS* is set to the 
-path of the JSON key file downloaded or set the environment variable as shown in the 
-following code:
+
+Now, we create a python module `gcv.py` for detecting labels in an image
+importing `google.cloud.vision` library.
+Image will be read from a local library and the name of the image will be 
+passed as a parameter. The environment variable *GOOGLE_APPLICATION_CREDENTIALS*
+can also be set in the program as shown in the following code:
 
 
 ```python
