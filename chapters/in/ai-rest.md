@@ -45,10 +45,176 @@ shows:  @fig:GCV-KEY. Save the JSON file that contains your key.
 
 ```python
 pip install --upgrade google-cloud-vision
+
+```
+
+Now, we create a pyhton module `gcv.py` to get labels for an image.
+Make sure envionment variable *GOOGLE_APPLICATION_CREDENTIALS* is set to the 
+path of the JSON key file downloaded or set the environment variable as shown in the 
+following code:
+
+
+```python
+import io
+import os
+from flask import jsonify
+# Imports the Google Cloud client library
+from google.cloud import vision
+from google.cloud.vision import types
+
+
+def get_labels(image_name):
+    current_path = os.getcwd()
+    relative_path = current_path + '<name of key file>.json'
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = relative_path
+
+    # Instantiates a client
+    client = vision.ImageAnnotatorClient()
+
+    # The name of the image file to annotate
+    file_name = os.path.join(current_path, image_name)
+
+    # Loads the image into memory
+    with io.open(file_name, 'rb') as image_file:
+        content = image_file.read()
+
+    image = types.Image(content=content)
+
+    # Performs label detection on the image file
+    response = client.label_detection(image=image)
+    labels = response.label_annotations
+
+    label_dict = {}
+    label_list = []
+    for label in labels:
+        label_list.append(label.description)
+    label_dict['Labels'] = label_list
+    return jsonify(label_dict)
+    
+```
+
+Next, we create an OpenAPI specification which invokes the above module 
+and takes the input image name as an inline parameter. 
+The OpenAPI yaml file `gcv.yaml` can be created as follows:
+
+```python
+swagger: "2.0"
+info: 
+  version: "0.0.1"
+  title: "cpuinfo"
+  description: "Image analyis service using swagger-2.0 specification and codegen"
+  termsOfService: "http://swagger.io/terms/"
+  contact: 
+    name: "Google Cloud Vision REST Service"
+  license: 
+    name: "Apache"
+host: "localhost:8080"
+basePath: "/airest"
+schemes: 
+  - "http"
+consumes: 
+  - "image/jpeg"
+produces: 
+  - "application/json"
+paths: 
+  /gcv/{image_name}:
+    get:
+      tags:
+        - GCV
+      operationId: gcv.get_labels
+      description: "Returns labels detected in the image"
+      parameters:
+        - in: path
+          name: image_name 
+          description: "Provide the image name in path"
+          required: true
+          type: string
+      produces: 
+        - "application/json"
+      responses: 
+        "200":
+          description: "label detection"
+          schema: 
+            $ref: "#/definitions/GCV"
+definitions:
+  GCV:
+    type: "object"
+    required: 
+      - "label"
+    properties: 
+      label:
+        type: "string"
+
 ```
 
 
+Finally, we create a module (`server.py`) to use connexion service to read the 
+above created OpenAPI specification (`gcv.yaml`) and dynamically call the methods 
+to be implemented on the server side.
 
+
+```python
+"""
+Main module of the server file
+"""
+from flask import jsonify
+import connexion
+
+# Create the application instance
+app = connexion.App(__name__, specification_dir="./")
+
+# Read the yaml file to configure the endpoints
+app.add_api("gcv.yaml")
+
+# create a URL route in our application for "/"
+@app.route("/")
+def home():
+    msg = {"msg": "AI service with REST"}
+    return jsonify(msg)
+
+
+if __name__ == "__main__":
+    app.run(port=8080, debug=True)
+    
+```
+
+To implement the REST service, run the following on the terminal:
+
+```python
+python server.py
+```
+
+Once the connection is established, run the following CURL command 
+on the terminal
+
+```python
+curl http://localhost:8080/airest/gcv/mp1.jpg
+```
+
+Input image: 
+
+![GCV-Image](images/mp1.PNG){#fig:gcp-image}
+
+
+Output response from the REST API:
+
+```python
+{
+  "Labels": [
+    "Mountainous landforms", 
+    "Mountain", 
+    "Landmark", 
+    "Highland", 
+    "Hill station", 
+    "Historic site", 
+    "Mountain range", 
+    "Wonders of the world", 
+    "Ruins", 
+    "Ancient history"
+  ]
+}
+
+```
 
 
 ## Naive Bayes Algorithm for Text classification
