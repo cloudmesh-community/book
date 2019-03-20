@@ -48,7 +48,7 @@ pip install --upgrade google-cloud-vision
 
 ```
 
-Now, we create a pyhton module `gcv.py` to get labels for an image.
+Now, we create a python module `gcv.py` for detecting labels in an image.
 Make sure envionment variable *GOOGLE_APPLICATION_CREDENTIALS* is set to the 
 path of the JSON key file downloaded or set the environment variable as shown in the 
 following code:
@@ -193,7 +193,7 @@ curl http://localhost:8080/airest/gcv/mp1.jpg
 
 Input image: 
 
-![GCV-Image](images/mp1.PNG){#fig:gcp-image}
+![GCV-Image](images/mp1.png){#fig:gcp-image}
 
 
 Output response from the REST API:
