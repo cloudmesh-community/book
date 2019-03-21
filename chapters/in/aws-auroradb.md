@@ -1,4 +1,4 @@
-# Amazon Aurora DB 
+# Amazon Aurora DB :wave: hid missing
 
 
 ---
