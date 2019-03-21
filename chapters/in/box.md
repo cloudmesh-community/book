@@ -1,4 +1,4 @@
-# Box
+# Box :o:
 
 :o: use `get()` for inline code text
 
