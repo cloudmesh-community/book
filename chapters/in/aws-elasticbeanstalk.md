@@ -1,7 +1,9 @@
 # Amazon Elastic Beanstalk :o:
 
 :o: Undefined cross-reference: fig:aws-beanstalk-manageenv
+
 :o: Undefined cross-reference: fig:aws-beanstalk-config-database
+
 ---
 
 **:mortar_board: Learning Objectives**
