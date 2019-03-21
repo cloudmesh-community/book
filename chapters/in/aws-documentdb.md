@@ -1,4 +1,6 @@
-# AWS DocumentDB :o:
+# AWS DocumentDB :o: hid missing
+
+:o: this seems incomplete
 
 AWS Document DB is a fully managed service with compatibility with
 Mongo DB. Mongo DB application code can be run here with same drivers

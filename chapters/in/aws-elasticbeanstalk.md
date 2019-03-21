@@ -1,4 +1,4 @@
-# Amazon Elastic Beanstalk :o:
+# Amazon Elastic Beanstalk :wave:
 
 :o: Undefined cross-reference: fig:aws-beanstalk-manageenv
 
