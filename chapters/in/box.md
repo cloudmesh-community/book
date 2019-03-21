@@ -11,7 +11,7 @@
 **:mortar_board: Learning Objectives**
 
 * Learn about Box
-* :o: add ...
+* Use python to interface with Box
 
 ---
 
@@ -142,7 +142,7 @@ client.folder('<folder id>').delete()
 ```
 You can also copy existing folders or update a current folder.
 
-```python     
+```python
 # Copy a folder: 
 folder = client.folder('<folder id>')
 destination = client.folder('<destination folder id>')
@@ -414,3 +414,11 @@ assignment = client.task('<task id>').assign(user)
 Pybox provides a way to work with Box files from the command
 line. Documentation on how to set up and use pybox can be found at
 <https://github.com/hzheng/pybox>
+
+## Cloudmesh :o:
+
+:o: document how to use your cloudmesh library
+
+:o: commandline
+
+:o: openapi
