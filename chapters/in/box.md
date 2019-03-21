@@ -6,6 +6,16 @@
 
 :o: image missing, work with TA
 
+---
+
+**:mortar_board: Learning Objectives**
+
+* Learn about Box
+* :o: add ...
+
+---
+
+
 Box is cloud storage service that allows users to store, access,
 collaborate, and share files, similar to DropBox. However, while
 DropBox started out as a service for storing personal files, Box is
