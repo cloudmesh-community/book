@@ -4,6 +4,8 @@
 
 :o: some program lines are too long, try to use better line breaks.
 
+:o: image missing, work with TA
+
 Box is cloud storage service that allows users to store, access,
 collaborate, and share files, similar to DropBox. However, while
 DropBox started out as a service for storing personal files, Box is
