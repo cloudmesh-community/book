@@ -390,11 +390,35 @@ find it. The command ust be available Next week Friday Mar 8, 9am.
                                                 
 
 ## Week 9: March 11 - March 15
+Spring Break
 
+## Week 9: March 18 - March 22
 ### Containers
 
-In this week you are requested to explore containers. Please read
-@sec:container-intro, @sec:docker-intro
+Container technology is an important topic in cloud computing and has been 
+gaining more and more traction and demand over the past few years. This week
+you will learn container technology and the concepts and tools that you would
+need to master. see @sec:container-intro to get a introduction into 
+container technology and its motivations
+ 
+Docker is one of the most important tools in container technology, 
+@sec:docker-intro provides an introduction into docker technology and internal
+details of docker. 
+
+Read the installation instructions that are provided to install docker locally
+on your machines to test docker commands
+
+@sec:docker-file describes how docker image files are constructed. Create your
+own docker images and run it to grasp the concepts
+
+Read about docker hub and its capabilities, check how to push and pull images 
+as needed from docker hub
+
+Docker swam allows user to manage large amounts of docker containers, read
+about docker swarm in @sec:docker-swarm
+
+Kubernetes is another widely used container management framework. See 
+@sec:kub-intro to read about Kubernetes in more detail
 
 MANDATORY Project Milestone: OpenAPI specification, We like to review your 
 OpenAPI specification that is motivated by your cloud mesh command. Have your 
