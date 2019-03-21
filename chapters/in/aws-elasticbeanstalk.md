@@ -273,28 +273,29 @@ next set of actions on the application environment:
 
 ### Beanstalk Logs
 
-The application logs can be accessed from the Logs link in the application dashboard
-(see @fig:aws-beanstalk-logs).
+The application logs can be accessed from the Logs link in the
+application dashboard (see @fig:aws-beanstalk-logs).
 
 ![AWS Beanstalk](images/elastic_beanstalk-13.png){#fig:aws-beanstalk-logs}
 
 ### Beanstalk Instance Health
 
-The Health link in the application dashboard takes to the heath monitoring screen and 
-allows to view the health of all the EC2 server instances associated with the beanstalk
-application.
+The Health link in the application dashboard takes to the heath
+monitoring screen and allows to view the health of all the EC2 server
+instances associated with the beanstalk application.
 
-Additionally, this screen gives option to reboot or termite the selected EC2 instances
-(see @fig:aws-beanstalk-health).
+Additionally, this screen gives option to reboot or termite the
+selected EC2 instances (see @fig:aws-beanstalk-health).
 
 ![AWS Beanstalk](images/elastic_beanstalk-14.png){#fig:aws-beanstalk-health}
 
 ### Beanstalk Environment Monitoring and Alarms
 
-The Monitoring link in the application dashboard takes to the environment monitoring 
-screen which displays different types of graphs / metrics under different sections.
-The duration and intervals for monitoring can be edited to adjust the granularity
-(see @fig:aws-beanstalk-monitor).
+The Monitoring link in the application dashboard takes to the
+environment monitoring screen which displays different types of graphs
+/ metrics under different sections.  The duration and intervals for
+monitoring can be edited to adjust the granularity (see
+@fig:aws-beanstalk-monitor).
 
 ![AWS Beanstalk](images/elastic_beanstalk-15.png){#fig:aws-beanstalk-monitor}
 
@@ -307,37 +308,37 @@ DynamoDB (see @fig:aws-beanstalk-alarm).
 
 ### Beanstalk Patching Logs
 
-The Managed Updates link in the application dashboard allows to view the history of 
-the patching activities performed on the environment by AWS
-(see @fig:aws-beanstalk-patchlog).
+The Managed Updates link in the application dashboard allows to view
+the history of the patching activities performed on the environment by
+AWS (see @fig:aws-beanstalk-patchlog).
 
 ![AWS Beanstalk](images/elastic_beanstalk-17.png){#fig:aws-beanstalk-patchlog}
 
 ### Beanstalk Event Logs
 
-The Events link in the application dashboard allows to view the history of 
-events occurred on the environment. These are typically from the configuring 
-changes made, instances transitioning from one health status to another, or 
-deployments made on the environment
-(see @fig:aws-beanstalk-eventlog).
+The Events link in the application dashboard allows to view the
+history of events occurred on the environment. These are typically
+from the configuring changes made, instances transitioning from one
+health status to another, or deployments made on the environment (see
+@fig:aws-beanstalk-eventlog).
 
 ![AWS Beanstalk](images/elastic_beanstalk-18.png){#fig:aws-beanstalk-eventlog}
 
 ### Beanstalk Tags
 
-The Tags link in the application dashboard allows to view all the tags applied to the 
-environment. Tags are key value pairs that help to identify the beanstalk resources 
-for managment or pricing activities
+The Tags link in the application dashboard allows to view all the tags
+applied to the environment. Tags are key value pairs that help to
+identify the beanstalk resources for managment or pricing activities
 (see @fig:aws-beanstalk-tags).
 
 ![AWS Beanstalk](images/elastic_beanstalk-19.png){#fig:aws-beanstalk-tags}
 
 ### Beanstalk Configuration Management
 
-The Configurations link the application dashboard allows to modify various 
-configurations for the beanstalk application. These are grouped into different sections 
-which are explained under the following pages
-(see @fig:aws-beanstalk-config).
+The Configurations link the application dashboard allows to modify
+various configurations for the beanstalk application. These are
+grouped into different sections which are explained under the
+following pages (see @fig:aws-beanstalk-config).
 
 ![AWS Beanstalk](images/elastic_beanstalk-20.png){#fig:aws-beanstalk-config}
 
@@ -355,25 +356,27 @@ application.
 
 ##### X Ray 
 
-AWS X Ray is a service that can be enabled to trace an application request end to 
-end through to the underlying components. This is extremely useful in helping debug
-systems following distributed architecture.
-This service however is not free and will incur additional charges.
+AWS X Ray is a service that can be enabled to trace an application
+request end to end through to the underlying components. This is
+extremely useful in helping debug systems following distributed
+architecture.  This service however is not free and will incur
+additional charges.
 
 ##### S3 Log Storage 
 
-This section allows to optionially rotate logs to Amazon S3. Again, S3 storage will incur
-addtional charges.
+This section allows to optionially rotate logs to Amazon S3. Again, S3
+storage will incur addtional charges.
 
 ##### Environment properties
 
-The properties defined here are passed to the application as environment properties.
-These are especially useful in maintaining variables like the Database connection string 
-which would vary between the development, staging and production environment.
+The properties defined here are passed to the application as
+environment properties.  These are especially useful in maintaining
+variables like the Database connection string which would vary between
+the development, staging and production environment.
 
-Maintaining these properties here allows migration of same code package between 
-environments without any code changes
-(see @fig:aws-beanstalk-config-software).
+Maintaining these properties here allows migration of same code
+package between environments without any code changes (see
+@fig:aws-beanstalk-config-software).
 
 ![AWS Beanstalk](images/elastic_beanstalk-21.png){#fig:aws-beanstalk-config-software}
 
@@ -381,25 +384,26 @@ environments without any code changes
 
 ##### Instance Type
 
-This section allows to update the EC2 server instance type to be used to host the 
-application. EC2 instance come in various categories (t2, t3, m4, m5, c1, c2 etc) and
-size (micro, small, medium, large etc) and can be selected based on the application 
-needs and usage pattern.
+This section allows to update the EC2 server instance type to be used
+to host the application. EC2 instance come in various categories (t2,
+t3, m4, m5, c1, c2 etc.) and size (micro, small, medium, large etc) and
+can be selected based on the application needs and usage pattern.
 
 ##### Amazon CloudWatch monitoring
 
-The cloudwatch monitoring period can be selected between 1 and 5 mins from this 
-section. Smaller monitoring interval incur additional charges.
+The cloudwatch monitoring period can be selected between 1 and 5 mins
+from this section. Smaller monitoring interval incur additional
+charges.
 
 ##### Root volume (boot device)
 
-This section allows to choose the volume type (Magnetic, General Purpose SSD, 
-Provisioned IOPS SSD), size and IOPS for the instances
+This section allows to choose the volume type (Magnetic, General
+Purpose SSD, Provisioned IOPS SSD), size and IOPS for the instances
 
 ##### Security Groups
 
-This section allows to secuirty groups to the EC2 instances to restirct traffic ingress
-(see @fig:aws-beanstalk-config-intances).
+This section allows to secuirty groups to the EC2 instances to
+restirct traffic ingress (see @fig:aws-beanstalk-config-intances).
 
 ![AWS Beanstalk](images/elastic_beanstalk-22.png){#fig:aws-beanstalk-config-intances}
 
@@ -407,9 +411,10 @@ This section allows to secuirty groups to the EC2 instances to restirct traffic 
 
 ##### Auto Scaling Group
 
-Auto Scaling Groups allow to define an auto scaling policy where in the beanstalk 
-environment would toggle between min and max number of instances defined based 
-on scaling triggers like 
+Auto Scaling Groups allow to define an auto scaling policy where in
+the beanstalk environment would toggle between min and max number of
+instances defined based on scaling triggers like
+
 * Network Out
 * CPU Utilization
 * Network In
@@ -419,20 +424,22 @@ on scaling triggers like
 * Unhealthy Host Count
 * Response Time
 
-Alternatively, auto scaling can be timed if we know the time period of peak load
-(see @fig:aws-beanstalk-config-capacity).
+Alternatively, auto scaling can be timed if we know the time period of
+peak load (see @fig:aws-beanstalk-config-capacity).
 
 ![AWS Beanstalk](images/elastic_beanstalk-23.png){#fig:aws-beanstalk-config-capacity}
 
 #### Load Balancer
 
-This section allows to modify the following load balance configruations:
+This section allows to modify the following load balance
+configruations:
+
 * Add remove http / https listeners
 * Serve http / https services on one or more ports
 * Health check paths
 
-Opening application on https will require you to upload signed certificates
-(see @fig:aws-beanstalk-config-loadbalancer).
+Opening application on https will require you to upload signed
+certificates (see @fig:aws-beanstalk-config-loadbalancer).
 
 ![AWS Beanstalk](images/elastic_beanstalk-24.png){#fig:aws-beanstalk-config-loadbalancer}
 
@@ -440,14 +447,14 @@ Opening application on https will require you to upload signed certificates
 
 ##### Application Deployments
 
-This section allows to specify the if the deployments will be done on all instances at once
-or one by one.
+This section allows to specify the if the deployments will be done on
+all instances at once or one by one.
 
 ##### Configuration Updates
 
-This section allows to specify the if the configuration changes on VMs will be done 
-on all instances at once or one by one.
-(see @fig:aws-beanstalk-config-updates-1).
+This section allows to specify the if the configuration changes on VMs
+will be done on all instances at once or one by one.  (see
+@fig:aws-beanstalk-config-updates-1).
 
 ![AWS Beanstalk](images/elastic_beanstalk-25.png){#fig:aws-beanstalk-config-updates-1}
 
@@ -482,40 +489,41 @@ health checks (see @fig:aws-beanstalk-config-monitoring).
 
 #### Managed Updates
 
-This section allows to manage the automatic updates to the platform and specify the 
-time period / slot for updates
-(see @fig:aws-beanstalk-config-updates-2).
+This section allows to manage the automatic updates to the platform
+and specify the time period / slot for updates (see
+@fig:aws-beanstalk-config-updates-2).
 
 ![AWS Beanstalk](images/elastic_beanstalk-28.png){#fig:aws-beanstalk-config-updates-2}
 
 #### Notifications
 
-Using this section, we can specify email address to receive notifications about 
-important events
-(see @fig:aws-beanstalk-config-notifications).
+Using this section, we can specify email address to receive
+notifications about important events (see
+@fig:aws-beanstalk-config-notifications).
 
 ![AWS Beanstalk](images/elastic_beanstalk-29.png){#fig:aws-beanstalk-config-notifications}
 
 #### Network
 
-Using this section, we can update the subnets associated with the load balancer and
-EC2 instances
+Using this section, we can update the subnets associated with the load
+balancer and EC2 instances
 
-Note : VPC on the application can be mapped only at the time of creation of the 
-beanstalk application and cannot be modified later
+Note : VPC on the application can be mapped only at the time of
+creation of the beanstalk application and cannot be modified later
 (see @fig:aws-beanstalk-config-network).
 
 ![AWS Beanstalk](images/elastic_beanstalk-30.png){#fig:aws-beanstalk-config-network}
 
 #### Database
 
-This section allows to create and manage an RDS database as part of the beanstalk
-configuration
-(see @fig:aws-beanstalk-config-database).
+This section allows to create and manage an RDS database as part of
+the beanstalk configuration (see @fig:aws-beanstalk-config-database).
 
 ![AWS Beanstalk](images/elastic_beanstalk-31.png)
 {#fig:aws-beanstalk-config-database}
 
 ## References
 
-https://aws.amazon.com/elasticbeanstalk/
+* <https://aws.amazon.com/elasticbeanstalk/>
+
+:o: create also bibtex
