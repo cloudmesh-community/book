@@ -1,4 +1,4 @@
-# Box
+# Box :wave: hid missing
 
 :o: use `get()` for inline code text
 
