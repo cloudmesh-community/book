@@ -1,4 +1,4 @@
-# Docker Swarm
+# Docker Swarm {#sec:docker-swarm}
 
 A swarm is a group of machines that are running Docker and are joined into
 a cluster. Docker commands are executed on a cluster by a swarm

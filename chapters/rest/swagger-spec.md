@@ -40,7 +40,7 @@ On the root level of the yaml document we see fields like *swagger*,
 
 swagger
 
-:   specifies the version number. IN our case a string value '2.0' is
+:   specifies the version number. In our case a string value '2.0' is
     used as we are writing the definition conforming to the v2.0
     specification.
 
