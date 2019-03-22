@@ -1,6 +1,6 @@
 .PHONY: cloud
 
-VERSION=1.7
+VERSION=1.8
 
 all: cloud-epub bigdata-epub
 	echo done
@@ -36,6 +36,7 @@ communicate-epub:
 
 image:
 	docker build -t cloudmesh/book:${VERSION} . 
+    docker tag cloudmesh/book:${VERSION} cloudmesh/book:latest
 
 image-push:
 	docker push cloudmesh/book

@@ -8,6 +8,13 @@ the Github commits at
 
 for a complete list of changes in reverse chronological order
 
+* March 1, 2019: Map reduce is an essential concept that needs to be
+  understood properly inorder to work with Big data frameworks such
+  as Apache Spark and Hadoop. The introduction to map reduce section
+  (see @sec:map-reduce) covers the basics of the map reduce concepts 
+  and the Hadoop section (see @sec:hadoop-introduction) shows how the
+  concept of map reduce is implemented in Apache Hadoop.
+
 * Feb 16, 2019: Tips for verification of an OpenAPI were added (see
   @sec:swagger-verify).
 

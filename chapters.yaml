@@ -3,9 +3,11 @@
 - IN:
     - chapters/SECTION/SECTION-INCOMING.md:
         - chapters/in/box.md
+        - chapters/in/aws-auroradb.md
+        - chapters/in/aws-documentdb.md
+        - chapters/in/aws-elasticbeanstalk.md
         - chapters/in/compliance.md
         - chapters/in/vis.md
-        - chapters/in/visual-studio.md
         - chapters/in/windows-subsystem-for-linux.md
 
 - PREFACE:

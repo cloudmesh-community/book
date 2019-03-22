@@ -342,18 +342,94 @@ For more information see @sec:mongodb-python and @sec:mongodb-cloudmesh.
 
 ## Week 7: Feb 22 - March 1
 
-Map reduce
+### MapReduce
 
-## Week 8: Map Reduce, spark
+This week you will start learning the basics of MapReduce concept and its
+use-cases to understand what MapReduce is. The MapReduce section (see @sec:map-reduce)
+gives an introduction and describes the basics of the MapReduce concept. 
 
-Map Reduce
+Watch the video lecture that describes the software echo system around MapReduce
+which is listed in @sec:map-reduce.
 
-## Week 9: Containers
+Understand the Wordcount example discussed in the, word count example can be
+thought of as a "Hello world" example into MapReduce.
 
+
+## Week 8: March 4 - March 8
+
+### Hadoop and Spark
+This week you will further look into MapReduce through Apache Hadoop, Hadoop
+is one of the earliest open source implementations of the MapReduce concept. 
+Even though Hadoop has now been replaced by faster frameworks such as Spark,
+Flink and Twister2. It is still important to understand the basic concepts 
+around Apache Hadoop. 
+
+Read and understand the Hadoop echo system as described in @sec:hadoop-introduction.
+Even though Hadoop is rarely used as a MapReduce framework, other parts of the
+echo system such as HDFS(HaDoop File System) and Yarn are still very popular. 
+
+Watch and understand the pagerank example which is a popular and important
+algorithm which can be solved cleanly with MapReduce
+
+Install Hadoop and try out some of the examples to get a better understanding
+about how the framework operates.
+
+Read the Spark section to understand how spark was developed to improve upon
+Apache Hadoop and how it achieves better performance for Iterative MapReduce 
+applications
+
+MANDATORY: Read the Scientific Writing with markdown epub, this is required
+before you make and contributions to the book to make sure that you understand
+the format of the book and the correct notations. The epub is available in 
+[Scientific Writing](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true)
+
+MANDATORY Project Milestone: Review of your cloudmesh commandline commands
+specified in docopt. Please make sure you have your command either specified in 
+the cm directory or in your hid. make sure to add it to your README, so i can 
+find it. The command ust be available Next week Friday Mar 8, 9am.
+                                                
+
+## Week 9: March 11 - March 15
+Spring Break
+
+## Week 9: March 18 - March 22
 ### Containers
 
-In this week you are requested to explore containers. Please read
-@sec:container-intro, @sec:docker-intro
+Container technology is an important topic in cloud computing and has been 
+gaining more and more traction and demand over the past few years. This week
+you will learn container technology and the concepts and tools that you would
+need to master. see @sec:container-intro to get a introduction into 
+container technology and its motivations
+ 
+Docker is one of the most important tools in container technology, 
+@sec:docker-intro provides an introduction into docker technology and internal
+details of docker. 
+
+Read the installation instructions that are provided to install docker locally
+on your machines to test docker commands
+
+@sec:docker-file describes how docker image files are constructed. Create your
+own docker images and run it to grasp the concepts
+
+Read about docker hub and its capabilities, check how to push and pull images 
+as needed from docker hub
+
+Docker swam allows user to manage large amounts of docker containers, read
+about docker swarm in @sec:docker-swarm
+
+Kubernetes is another widely used container management framework. See 
+@sec:kub-intro to read about Kubernetes in more detail
+
+MANDATORY Project Milestone: OpenAPI specification, We like to review your 
+OpenAPI specification that is motivated by your cloud mesh command. Have your 
+openAPI specification ready Mar 15, 9am.
+
+MANDATORY: comprehension assignment VM management, All students in class must 
+be showcasing for one cloud that they can start, stop, and login into a VM in a 
+cloud. This has to be demonstrated through a scipt or python program. The 
+program must read the credentials from a configuration file.  The script must 
+demonstrate that a command can be run on your vm with ssh.Starting and stopping 
+the VM via the GUI does not count. This must be done by Mar 15
 
 ## Week 10: docker cluster
 
