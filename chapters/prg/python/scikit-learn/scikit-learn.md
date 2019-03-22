@@ -57,6 +57,7 @@ Few of them are listed here
 * Significance tests
 
 ---
+=======
 
 A data pipeline is a set of processing components that are sequenced to produce
 meaningful data. Pipelines are commonly used in Machine learning, since there is
@@ -105,7 +106,9 @@ Here is the example of few of the visual data analysis methods.
 
 ### Bar plot 
 
-A bar chart or graph is a graph with rectangular bars or bins that are used to plot categorical values. Each bar in the graph represents a categorical variable and the height of the bar is proportional to the value represented by it.
+A bar chart or graph is a graph with rectangular bars or bins that are used to plot 
+categorical values. Each bar in the graph represents a categorical variable and the 
+height of the bar is proportional to the value represented by it.
 
 Bar graphs are used:
 
@@ -236,12 +239,14 @@ class DataFrameSelector(BaseEstimator, TransformerMixin):
 
 ### Feature Creation / Additional Feature Engineering
 
+
 During EDA we identified that there are transactions where the balances do not 
 tally after the transaction is completed.We believe this could potentially be 
 cases where fraud is occurring. To account for this error in the transactions, 
 we define two new features"errorBalanceOrig" and "errorBalanceDest", calculated 
 by adjusting the amount with the before and after balances for the Originator 
 and Destination accounts.
+
 
 Below, we create a function that allows us to create these features in a
 pipeline.
@@ -457,7 +462,17 @@ grid_param = [
             ]
 ```
 
+
 ### Implementing Grid search with models and also creating metrics from each of the model.
+=======
+```python
+Pipeline(memory=None,
+     steps=[('preparation', FeatureUnion(n_jobs=None,
+       transformer_list=[('num_pipeline', Pipeline(memory=None,
+     steps=[('selector', DataFrameSelector(attribute_names=['amount', 'oldbalanceOrg', 'newbalanceOrig', 'oldbalanceDest', 'newbalanceDest'])), ('attribs_adder', CombinedAttributesAdder()...penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False))])
+```
+
 
 ```python
 
@@ -533,7 +548,6 @@ for alg in MLA:
     row_index+=1
 ```
 
-
 ### Results table from the Model evaluation with metrics.
 
 ![scikit-learn](images/scikit-learn-results.png){#fig:scikit-learn-results}
@@ -545,6 +559,7 @@ AUC - ROC curve is a performance measurement for classification problem at vario
 ![scikit-learn](images/scikit-learn-rocauccurve.png){#fig:scikit-learn-rocauccurve}
 
 ![scikit-learn](images/scikit-learn-rocauc.png){#fig:scikit-learn-rocauc}
+
 
 
 ## K-means in scikit learn.

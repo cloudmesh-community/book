@@ -1,8 +1,20 @@
-# Box
+# Box :wave: hid missing
 
 :o: use `get()` for inline code text
 
 :o: some program lines are too long, try to use better line breaks.
+
+:o: image missing, work with TA
+
+---
+
+**:mortar_board: Learning Objectives**
+
+* Learn about Box
+* Use python to interface with Box
+
+---
+
 
 Box is cloud storage service that allows users to store, access,
 collaborate, and share files, similar to DropBox. However, while
@@ -97,7 +109,7 @@ which you can then perform operations on.
 
 ### Get information about a Box object
 
-A call to get() will return general information about a Box object,
+A call to `get()` will return general information about a Box object,
 including id, name, and other object specific information.
 
 ```python
@@ -107,7 +119,10 @@ user = client.user().get()
 print(user.name)
 print(user.login)
 print(user.avatar_url)
-    
+```
+The root directory will always have `'0'` as the id:
+
+```python    
 # Get information about the root folder (referenced by id '0'):
 folder = client.folder('0').get()
 print(folder.name)
@@ -116,8 +131,7 @@ print(folder.item_status)
 
 ### Folders
 
-Folders can hold other folders as well as files. The root folder will
-always have id '0'.
+Folders can hold other folders as well as files.
 
 ```python
 # Create a new folder:
@@ -125,7 +139,10 @@ subfolder = client.folder('<folder id>').create_subfolder('<subfolder name>')
     
 # Delete a folder:
 client.folder('<folder id>').delete()
-     
+```
+You can also copy existing folders or update a current folder.
+
+```python
 # Copy a folder: 
 folder = client.folder('<folder id>')
 destination = client.folder('<destination folder id>')
@@ -133,7 +150,10 @@ copy_of_folder = folder.copy(destination)
      
 # Update a folder:
 folder = client.folder('<folder id>').update_info({'name':'Updated name', 'description':'This has now been updated."})
-     
+```
+Calling `get_items()` will return all items in a folder, including files and sub-folders.
+
+```python
 # Get all items in a folder:
 items = client.folder('<folder id>').get_items()
 for item in items:
@@ -218,7 +238,15 @@ Which will return the following:
 ### Deleting, copying, and downloading files
 
 Individual files can be downloaded by specifying the name of the
-output file. Deleting and copying files is similar to deleting and
+output file. 
+
+```python
+# Download a file:
+with open('<output file name>', 'wb') as f:
+    client.file("<file id>').download_to(f)
+```    
+
+Deleting and copying files is similar to deleting and
 copying folders.
 
 ```python
@@ -229,10 +257,6 @@ client.file('<file id>').delete()
 file = client.file('<file id>')
 destination = client.folder('<folder id>')
 copy_of_file = file.copy(destination)
-
-# Download a file:
-with open('<output file name>', 'wb') as f:
-    client.file("<file id>').download_to(f)
 ```
 	
 ### Searching
@@ -281,15 +305,18 @@ print(collab.item['type'])
 ```
 
 Roles include editor, viewer, previewer, uploader, previewer uploader,
-viewer uploader, or co-owner. Updating and deleting a collaboration is
-similar to other box objects.
+viewer uploader, or co-owner. 
 
 ```python
 # Create a new collaboration
 from boxsdk.object.collaboration import CollaborationRole
 user = client.user(user_id='<user id>')
 collab = client.folder(folder_id='<folder id>').collaborate(user, CollaborationRole.VIEWER) 
+```
 
+Updating and deleting a collaboration is similar to other box objects.
+
+```python
 # Update a collaboration
 from boxsdk.object.collaboration import CollaborationRole
 collaboration = client.collaboration(collab_id='<collaboration id>')
@@ -302,24 +329,10 @@ client.collaboration(collab_id='<collaboraiton id>').delete()
 ### Groups
 
 A group object can be used instead of a user in collaborations. The
-get() call to a group object returns basic information about the group
-and does not include a member list. To get all members in a group, you
-must call get_memberships():
+`get()` call to a group object returns basic information about the group
+and does not include a member list. 
 
 ```python
-group = client.group(group_id='<group id>').get() 
-    {
-    "type": "group",
-    "id": "255224",
-    "name": "Everyone",
-    "created_at": "2014-09-15T13:15:35-07:00",
-    "modified_at": "2014-09-15T13:15:35-07:00"
-    }
-
-memberships = client.group(group_id = '<group id>').get_memberships()
-for member in memberships:
-    print(member.user['id'])
-
 # Create, update, or delete a group
 new_group = client.create_group(name="New Group")
 updated_group = client.group(group_id='<group id>').update_info({'key':'value'})
@@ -328,6 +341,22 @@ client.group(group_id='<group id>').delete()
 # Add a member to a group
 user = client.user(user_id='<user id>')
 member = client.group(group_id='<group id>').add_member(user)
+
+group = client.group(group_id='<group id>').get() 
+    {
+    "type": "group",
+    "id": "255224",
+    "name": "Everyone",
+    "created_at": "2014-09-15T13:15:35-07:00",
+    "modified_at": "2014-09-15T13:15:35-07:00"
+    }
+```
+To get all members in a group, you must call `get_memberships()`:
+
+```python
+memberships = client.group(group_id = '<group id>').get_memberships()
+for member in memberships:
+    print(member.user['id'])
 ```
 
 Once a member has been added to the group, a membership object is
@@ -351,7 +380,7 @@ for m in memberships:
 ```
 	
 You can see all collaboration objects a group has by calling
-get_collaborations on a group object:
+`get_collaborations` on a group object:
 
 ```python
 collaborations = client.group('<group id>').get_collaborations()
@@ -369,9 +398,9 @@ users by creating a task assignment.
 task = client.file(file_id='<file id>').create_task('<due date>')
 ```
 
-Tasks can be updated, deleted with calls to update() and
-delete(). Calling get() will return general info about the task. Tasks
-can be assigned to a user by calling assign() which will create a task
+Tasks can be updated, deleted with calls to `update()` and
+`delete()`. Calling `get()` will return general info about the task. Tasks
+can be assigned to a user by calling `assign()` which will create a task
 assignment object.
 
 ```python
@@ -385,3 +414,11 @@ assignment = client.task('<task id>').assign(user)
 Pybox provides a way to work with Box files from the command
 line. Documentation on how to set up and use pybox can be found at
 <https://github.com/hzheng/pybox>
+
+## Cloudmesh :o:
+
+:o: document how to use your cloudmesh library
+
+:o: commandline
+
+:o: openapi

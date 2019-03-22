@@ -1,21 +1,21 @@
 # Python Libcloud {#sec:libcloud-python}
 
-With all the cloud providers and cloud services that are currently 
-available, it becomes hard to manage and maintain services that work 
-with several services. Therefore it is good to have a unified service 
-that allows developers to access many of the cloud services through a 
-single abstraction. Apache Libcloud is a python library that was 
-developed for this purpose. Apache Libcloud provides a unified API for 
+With all the cloud providers and cloud services that are currently
+available, it becomes hard to manage and maintain services that work
+with several services. Therefore it is good to have a unified service
+that allows developers to access many of the cloud services through a
+single abstraction. Apache Libcloud is a python library that was
+developed for this purpose. Apache Libcloud provides a unified API for
 many of the popular cloud providers and services.
- 
- 
+
+
 Apache Libcloud currently supports many providers, the complete list
 of providers that are supported can be found at
 [Supported Providers](https://libcloud.readthedocs.io/en/latest/supported_providers.html)
- 
+
 However, it is good to keep in mind that the Libcloud API might not
-support some of the advanced features that are provided by some cloud 
-services or some of the most recent features that are yet to be 
+support some of the advanced features that are provided by some cloud
+services or some of the most recent features that are yet to be
 integrated into Libcloud
 
 ## Service categories
@@ -27,11 +27,11 @@ is as bellow, More details about this list can be found at
 list is extracted from the LibCloud documentation
 [LibCloud Docs](https://libcloud.readthedocs.io/en/latest/index.html)
 
-* Cloud Servers and Block Storage - services such as Amazon EC2 and 
+* Cloud Servers and Block Storage - services such as Amazon EC2 and
   Rackspace CloudServers
-* Cloud Object Storage and CDN - services such as Amazon S3 and 
+* Cloud Object Storage and CDN - services such as Amazon S3 and
   Rackspace CloudFiles
-* Load Balancers as a Service - services such as Amazon Elastic 
+* Load Balancers as a Service - services such as Amazon Elastic
   Load Balancer and GoGrid LoadBalancers
 * DNS as a Service - services such as Amazon Route 53 and Zerigo
 * Container Services - container virtualization like Docker and Rkt as
@@ -47,12 +47,12 @@ for Compute related services, this list is extracted from the
 
 * Node - represents a cloud or virtual server.
 * NodeSize - represents node hardware configuration. Usually this is
-  amount of the available RAM, bandwidth, CPU speed and disk size. 
-  Most of the drivers also expose an hourly price (in dollars) for 
+  amount of the available RAM, bandwidth, CPU speed and disk size.
+  Most of the drivers also expose an hourly price (in dollars) for
   the Node of this size.
 * NodeImage - represents an operating system image.
 * NodeLocation - represents a physical location where a server can be.
-* NodeState - represents a node state. Standard states are: running, 
+* NodeState - represents a node state. Standard states are: running,
 rebooting, terminated, pending, stopped, suspended, paused, erro, unknown.
 
 #### Key Pair Management
@@ -100,16 +100,16 @@ pprint(driver.list_nodes())
 
 ## Managing your cloud credentials
 
-Often you will need as part of your code to access cloud credentails. Theas 
-could be read in interactively, from environment variables, or from a 
-configuration file. To make things easy for now, we assume the credentials 
+Often you will need as part of your code to access cloud credentails. Theas
+could be read in interactively, from environment variables, or from a
+configuration file. To make things easy for now, we assume the credentials
 are stored in a yaml file that is stores in ~/.cloudmesh/cloudmesh.4.yaml.
 An example is listed at
 
 * <https://github.com/cloudmesh-community/cm/blob/master/cloudmesh/etc/cloudmesh4.yaml>
 
-With the help of this yaml file it is now easy to manage credentials for 
-multiple clouds. We provide next a simple example on how to get the 
+With the help of this yaml file it is now easy to manage credentials for
+multiple clouds. We provide next a simple example on how to get the
 credentials for the cloud calles aws.
 
 ```python
@@ -130,8 +130,8 @@ credentials = Config().credentials("cloud", name)
 Which is a convenient method to access the credentials for a named cloud.
 
 
-Certianly you should be encrypting this file and an extension could be 
-developed by you to manage the encryption and decryption for example while 
+Certianly you should be encrypting this file and an extension could be
+developed by you to manage the encryption and decryption for example while
 using your password protected public/private keypair or other methods.
 
 ## Working with cloud services
@@ -159,16 +159,16 @@ After you obtain the connection, it can be used to invoke various services
 
 #### Amazon AWS
 
-o get a driver via libcloud for AWS you first have to set up the 
-cloudmesh4.yaml file and install the convenience methods from cloudmesh as 
-documented in 
+o get a driver via libcloud for AWS you first have to set up the
+cloudmesh4.yaml file and install the convenience methods from cloudmesh as
+documented in
 
 * <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
 
-This will provide you with a convenient config method that reads the Azure 
-configuration parameters from the cloudmesh4.yaml file which you need to 
+This will provide you with a convenient config method that reads the Azure
+configuration parameters from the cloudmesh4.yaml file which you need to
 place in `~/.cloudmesh`
- 
+
 ```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
@@ -184,7 +184,7 @@ name = "azure"
 credentials = Config().credentials("cloud", name)
 
 pprint(credentials)
- 
+
 
 #AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
 
@@ -202,19 +202,19 @@ pprint(connection.__dict__)
 
 ##### Azure Classic Driver
 
-Please note that libcloud has multiple drivers to interact with Azure. The 
-following is an example using the classic method. 
+Please note that libcloud has multiple drivers to interact with Azure. The
+following is an example using the classic method.
 
-To get a driver via libcloud for azure you first have to set up the 
-cloudmesh4.yaml file and install the convenience methods from cloudmesh as 
-documented in 
+To get a driver via libcloud for azure you first have to set up the
+cloudmesh4.yaml file and install the convenience methods from cloudmesh as
+documented in
 
 * <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
 
-This will provide you with a convenient config method that reads the Azure 
-configuration parameters from the cloudmesh4.yaml file which you need to 
+This will provide you with a convenient config method that reads the Azure
+configuration parameters from the cloudmesh4.yaml file which you need to
 place in `~/.cloudmesh`
- 
+
 ```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
@@ -230,7 +230,7 @@ name = "azure"
 credentials = Config().credentials("cloud", name)
 
 pprint(credentials)
- 
+
 
 #AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
 
@@ -243,22 +243,60 @@ connection = driver(
 pprint(connection.__dict__)
 ```
 
-##### Azure New Driver :o:
+##### Azure New Driver
 
-:o: To be provided by students or TA
+The following is an example using the Azure Resource Management (ARM) method.
+
+* <https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview>
+
+To connect to Azure you need your tenant ID and subscription ID. Using the Azure cross platform CLI,
+use `azure account list` to get these values.
+
+```
+azure ad app create --name "<Your Application Display Name>" --home-page "<https://YourApplicationHomePage>" --identifier-uris "<https://YouApplicationUri>" --password <Your_Password>
+azure ad sp create "<Application_Id>"
+azure role assignment create --objectId "<Object_Id>" -o Owner -c /subscriptions/{subscriptionId}/
+```
+
+```python
+from libcloud.compute.types import Provider
+from libcloud.compute.providers import get_driver
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
+
+# Azure related variables
+
+name = "azure_arm"
+# This assumes the cloudname for azure to be *azure_arm*
+
+credentials = Config().credentials("cloud", name)
+
+pprint(credentials)
+
+driver = get_driver(Provider.AZURE_ARM)
+connection = driver(
+    tenant_id=credentials["TENANT_ID"],
+    subscription_id=credentials["AZURE_SUBSCRIPTION_ID"],
+    key=credentials["APPLICATION_ID"],
+    secret=credentials["PASSWORD"]
+)
+
+pprint(connection.__dict__)
+```
+
 
 #### OpenStack
 
-To get a driver via libcloud for OpenStack you first have to set up the 
-cloudmesh4.yaml file and install the convenience methods from cloudmesh as 
-documented in 
+To get a driver via libcloud for OpenStack you first have to set up the
+cloudmesh4.yaml file and install the convenience methods from cloudmesh as
+documented in
 
 * <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
 
-This will provide you with a convenient config method that reads the Azure 
-configuration parameters from the cloudmesh4.yaml file which you need to 
+This will provide you with a convenient config method that reads the Azure
+configuration parameters from the cloudmesh4.yaml file which you need to
 place in `~/.cloudmesh`
- 
+
 ```python
 from libcloud.compute.types import Provider
 from libcloud.compute.providers import get_driver
@@ -274,7 +312,7 @@ name = "chameleon"
 credentials = Config().credentials("cloud", name)
 
 pprint(credentials)
- 
+
 
 #AZURE_MANAGEMENT_CERT_PATH = path_expand('~/.cloudmesh/azure_cert.pem')
 
@@ -289,12 +327,47 @@ connection = self.driver(
 pprint(connection.__dict__)
 ```
 
-#### Google :o:
+#### Google
 
-:o: To be provided by students or TA
+Google cloud and account setup:
+
+1. Go to the Google Developers Console
+1. Select your project
+  1. In the left sidebar, go to “APIs & auth”
+  1. Click on “Credentials” then “Create New Client ID”
+  1. Select “Installed application” and “Other” then click “Create Client ID”
+  1. For authentication, you will need the “Client ID” and the “Client Secret”
+1. You will also need your “Project ID” (a string, not a numerical value) that can be found by clicking on the “Overview” link on the left sidebar.
+
+
+* <https://libcloud.readthedocs.io/en/latest/compute/drivers/gce.html>
+
+```python
+from libcloud.compute.types import Provider
+from libcloud.compute.providers import get_driver
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
+
+credentials = Config().credentials("cloud", "GCE")
+
+pprint(credentials)
+
+driver = get_driver(Provider.GCE)
+# Datacenter is set to 'us-central1-a' as an example, but can be set to any
+# zone, like 'us-central1-b' or 'europe-west1-a'
+connection = driver(
+    credentials['SERVICE_ACCOUNT_EMAIL'],
+    credentials['PATH_TO_PEM_FILE'],
+    datacenter=credentials['DATA_CENTER'],
+    project=credentials['PROJECT_ID'])
+
+pprint(connection.__dict__)
+```
+
 
 ### Invoking services
- 
+
 In this section we will look into how we can use the connection
 created as previously instructed to perform various services such as
 creating nodes, listing nodes, starting nodes and stopping nodes.
@@ -318,8 +391,8 @@ sizes = conn.list_sizes()
 
 # create node with first image and first size
 node = conn.create_node(
-    name='yourservername', 
-    image=images[0], 
+    name='yourservername',
+    image=images[0],
     size=sizes[0])
 ```
 
@@ -348,7 +421,7 @@ connection.ex_start(node=node)
 
 #### Stoping Nodes
 
-When needed the following command can be used to stop a node that has 
+When needed the following command can be used to stop a node that has
 been started
 
 ```python
@@ -426,7 +499,7 @@ with AWS API's, for that matter it allows you to do so for different
 cloud providers. In the next sections more detailed steps are shown
 to install and use libcloud for AWS S3.
 
-	
+
 ### Access key
 
 To be able to access AWS S3 from libcloud we need the access key to be
@@ -539,5 +612,3 @@ with open(FILE_PATH, 'rb') as iterator:
     * storage driver <http://libcloud.readthedocs.io/en/latest/_modules/libcloud/storage/drivers/s3.html>
     * Examples: <https://libcloud.readthedocs.io/en/latest/storage/examples.html>
     * API docs <http://libcloud.apache.org/apidocs/0.6.1/libcloud.storage.base.StorageDriver.html>
-
-
