@@ -424,9 +424,9 @@ Grid search is an approach to hyperparameter tuning that will methodically build
 Random search provide a statistical distribution for each hyperparameter from which values may be randomly sampled.
 
 
-### Experiments with Keras (deep learning), XGBoost, and SVM (SVC) compared to Logistic Regression(Baseline)
+## Experiments with Keras (deep learning), XGBoost, and SVM (SVC) compared to Logistic Regression(Baseline)
 
-## Creating a parameter grid
+### Creating a parameter grid
 
 ```python
 grid_param = [
@@ -457,7 +457,7 @@ grid_param = [
             ]
 ```
 
-## Implementing Grid search with models and also creating metrics from each of the model.
+### Implementing Grid search with models and also creating metrics from each of the model.
 
 ```python
 
@@ -541,6 +541,8 @@ for alg in MLA:
 ### ROC AUC Score
 
 AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. It tells how much model is capable of distinguishing between classes. Higher the AUC, better the model is at predicting 0s as 0s and 1s as 1s. 
+
+![scikit-learn](images/scikit-learn-rocauccurve.png){#fig:scikit-learn-rocauccurve}
 
 ![scikit-learn](images/scikit-learn-rocauc.png){#fig:scikit-learn-rocauc}
 
