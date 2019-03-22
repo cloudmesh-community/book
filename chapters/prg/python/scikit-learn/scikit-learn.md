@@ -1,4 +1,4 @@
-# Scikit-learn :o: {#s-scikitlearn}
+# Scikit-learn {#s-scikitlearn}
 
 ## Introduction to Scikit-learn
 
@@ -27,11 +27,11 @@ Supervised Learning is used in machine learning when we already know a set of ou
 
 Problems can be of two types
 
- 1. Classification : Training data belongs to three or four classes/categories and based on the label we want to predict 
-    the  class/category for the unlabeled data.
- 2. Regression : Training data consists of vectors without any corresponding target values. Clustering can be used for 
-    these  type of datasets to determine discover groups of similar examples. Another way is density 
-    estimation  which determine the distribution of data within the input space. Histogram is the most basic form.
+1. Classification : Training data belongs to three or four classes/categories and based on the label we want to predict 
+   the  class/category for the unlabeled data.
+2. Regression : Training data consists of vectors without any corresponding target values. Clustering can be used for 
+   these  type of datasets to determine discover groups of similar examples. Another way is density 
+   estimation  which determine the distribution of data within the input space. Histogram is the most basic form.
 
 ## Unsupervised Learning
 
@@ -39,15 +39,16 @@ Unsupervised Learning is used in machine learning when we have the training set 
 
 Few of them are listed here
 
- 1. Clustering : Discover groups of similar characteristics.
- 2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
-    dimensional  space to two or three dimension.
+1. Clustering : Discover groups of similar characteristics.
+2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
+   dimensional  space to two or three dimension.
 
 # Building a end to end pipeline for Supervised machine learning using Scikit-learn 
 
 ---
+
 **:mortar_board: Learning Objectives**
----
+
 
 * Exploratory data analysis
 * Pipeline to prepare data
@@ -55,22 +56,25 @@ Few of them are listed here
 * Fine tune the model
 * Significance tests
 
-A data pipeline is a set of processing components that are sequenced to 
-produce meaningful data. Pipelines are commonly used in Machine learning, 
-since there is lot of data transformation and manipulation that needs to be 
-applied to make data useful for machine learning. All components are sequenced 
-in a way that the output of one component becomes input for the next and each of 
-the component is self contained. Components interact with each other using data.
+---
 
-Even if a component breaks, the downstream component can run normally using 
-the last output. Sklearn provide the ability to build pipelines that can be 
+A data pipeline is a set of processing components that are sequenced to produce
+meaningful data. Pipelines are commonly used in Machine learning, since there is
+lot of data transformation and manipulation that needs to be applied to make
+data useful for machine learning. All components are sequenced in a way that the
+output of one component becomes input for the next and each of the component is
+self contained. Components interact with each other using data.
+
+Even if a component breaks, the downstream component can run normally using the
+last output. Sklearn provide the ability to build pipelines that can be
 transformed and modeled for machine learning.
 
 ## Steps for developing a machine learning model
 
 1. Explore the domain space
 2. Extract the problem definition
-3. Get the data that can be used to make the system learn to solve the problem definition.
+3. Get the data that can be used to make the system learn to solve the problem
+   definition.
 4. Discover and Visualize the data to gain insights
 5. Feature engineering and prepare the data 
 6. Fine tune your model
@@ -81,7 +85,8 @@ transformed and modeled for machine learning.
 
 Example project  = Fraud detection system
 
-First step is to load the data into a dataframe in order for a proper analysis to be done on the attributes.
+First step is to load the data into a dataframe in order for a proper analysis
+to be done on the attributes.
 
 ```python
 data = pd.read_csv('dataset/data_file.csv')
@@ -100,16 +105,29 @@ Here is the example of few of the visual data analysis methods.
 
 ### Bar plot 
 
+A bar chart or graph is a graph with rectangular bars or bins that are used to plot categorical values. Each bar in the graph represents a categorical variable and the height of the bar is proportional to the value represented by it.
+
+Bar graphs are used:
+
+To make comparisons between variables
+To visualize any trend in the data, i.e., they show the dependence of one variable on another
+Estimate values of a variable
+
 ```python
 plt.ylabel('Transactions')
 plt.xlabel('Type')
 data.type.value_counts().plot.bar()
 ```
 
-![scikit-learn](images/scikit-learn-barplot.png)
-{#fig:scikit-learn-barplot}
+![scikit-learn barplots](images/scikit-learn-barplot.png){#fig:scikit-learn-barplot}
 
 ### Correlation between attributes
+
+Attributes in a dataset can be related based on differnt aspects.
+
+Examples include attributes dependent on another or could be loosely or tightly coupled. Also example includes two variables can be associated with a third one.
+
+In order to understand the relationship between attributes, correlation represents the best visual way to get an insight. Positive correlation meaning both attributes moving into the same direction. Negative correlation refers to opposte directions. One attributes values increase results in value decrease for other. Zero correlation is when the attributes are unrelated.
 
 ```python
 # compute the correlation matrix
@@ -131,10 +149,11 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3,
             linewidths=.5, cbar_kws={"shrink": .5}, ax=ax);
 ```
 
-![scikit-learn](images/scikit-learn-correlationanalysis.png)
-{#fig:scikit-learn-correlationanalysis}
+![scikit-learn correlation array](images/scikit-learn-correlationanalysis.png){#fig:scikit-learn-correlationanalysis}
 
 ### Histogram Analysis of dataset attributes
+
+A histogram consists of a set of counts that represent the number of times some event occurred.
 
 ```python
 %matplotlib inline
@@ -142,10 +161,11 @@ data.hist(bins=30, figsize=(20,15))
 plt.show()
 ```
 
-![scikit-learn](images/scikit-learn-histograms.png)
-{#fig:scikit-learn-histograms}
+![scikit-learn](images/scikit-learn-histograms.png){#fig:scikit-learn-histograms}
 
 ### Box plot Analysis
+
+Box plot analysis is useful in detecting whether a distribution is skewed and detect outliers in the data.
 
 ```python
 fig, axs = plt.subplots(2, 2, figsize=(10, 10))
@@ -161,23 +181,27 @@ d = sns.regplot(x = 'oldbalanceOrg', y = 'amount', data=tmp.loc[(tmp.isFlaggedFr
 plt.show()
 ```
 
-![scikit-learn](images/scikit-learn-boxplot.png)
-{#fig:scikit-learn-boxplot}
+![scikit-learn](images/scikit-learn-boxplot.png){#fig:scikit-learn-boxplot}
 
 ### Scatter plot Analysis
+
+The scatter plot displays values of two numerical variables as Cartesian coordinates.
 
 ```python
 plt.figure(figsize=(12,8))
 sns.pairplot(data[['amount', 'oldbalanceOrg', 'oldbalanceDest', 'isFraud']], hue='isFraud')
 ```
 
-![scikit-learn](images/scikit-learn-scatterplot.png)
-{#fig:scikit-learn-scatterplot}
+![scikit-learn scatter plots](images/scikit-learn-scatterplot.png){#fig:scikit-learn-scatterplot}
 
 ## Data Cleansing - Removing Outliers
 
-If the transaction amount is lower than 5 percent of the all the transactions AND does not exceed USD 3000, we will exclude it from our analysis to reduce Type 1 costs
-If the transaction amount is higher than 95 percent of all the transactions AND exceeds USD 500000, we will exclude it from our analysis, and use a blanket review process for such transactions (similar to isFlaggedFraud column in original dataset) to reduce Type 2 costs
+If the transaction amount is lower than 5 percent of the all the transactions
+AND does not exceed USD 3000, we will exclude it from our analysis to reduce
+Type 1 costs If the transaction amount is higher than 95 percent of all the
+transactions AND exceeds USD 500000, we will exclude it from our analysis, and
+use a blanket review process for such transactions (similar to isFlaggedFraud
+column in original dataset) to reduce Type 2 costs
 
 ```python
 low_exclude = np.round(np.minimum(fin_samp_data.amount.quantile(0.05), 3000), 2)
@@ -190,7 +214,11 @@ data = low_data[low_data.amount < high_exclude]
 
 ## Pipeline Creation
 
+ Machine learning pipeline is used to help automate machine learning workflows. They operate by enabling a sequence of data to be transformed and correlated together in a model that can be tested and evaluated to achieve an outcome, whether positive or negative.
+
 ### Defining DataFrameSelector to separate Numerical and Categorical attributes
+
+Sample function to seperate out Numerical and categorical attributes.
 
 ```python
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -208,9 +236,15 @@ class DataFrameSelector(BaseEstimator, TransformerMixin):
 
 ### Feature Creation / Additional Feature Engineering
 
-During EDA we identified that there are transactions where there are transactions where the balances do not tally after the transaction is completed. We believe this could potentially be cases where fraud is occurring. To account for this error in the transactions, we define two new features "errorBalanceOrig" and "errorBalanceDest", calculated by adjusting the amount with the before and after balances for the Originator and Destination accounts.
+During EDA we identified that there are transactions where the balances do not 
+tally after the transaction is completed.We believe this could potentially be 
+cases where fraud is occurring. To account for this error in the transactions, 
+we define two new features"errorBalanceOrig" and "errorBalanceDest", calculated 
+by adjusting the amount with the before and after balances for the Originator 
+and Destination accounts.
 
-Below, we create a function that allows us to create these features in a pipeline.
+Below, we create a function that allows us to create these features in a
+pipeline.
 
 ```python
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -231,6 +265,11 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
 ```
 
 ## Creating Training and Testing datasets
+
+Training set includes the set of input examples that the model will be fit into or trained on by adjusting the parameters.
+Testing dataset is critical to test the generalizability of the model . By using this set, we can get the working accuracy of our model.
+
+Testing set should not be exposed to model unless model training has not been completed. This way the results from testing will be more reliable.
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -265,65 +304,111 @@ cat_pipeline = Pipeline([
         ('selector', DataFrameSelector(cat_attribs)),
         ('cat_encoder', CategoricalEncoder(encoding="onehot-dense"))            
     ])
-from sklearn.pipeline import FeatureUnion
 
-full_pipeline = FeatureUnion(transformer_list=[
-        ("num_pipeline", num_pipeline),
-        ("cat_pipeline", cat_pipeline),        
-    ])
-from sklearn.linear_model import LogisticRegression
-from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import RandomForestRegressor
-
-logreg = LogisticRegression()
-
-full_pipeline_with_predictor = Pipeline([
-        ("preparation", full_pipeline),  # combination of numerical and categorical pipelines
-        #('get_feature', feature()),   
-        ("model", logreg)  # replace with whatever estimators) you are using
-    ])
-full_pipeline_with_predictor.fit(X_train[X_model_col], y_train) 
 ```
 
-Pipeline(memory=None,
-     steps=[('preparation', FeatureUnion(n_jobs=None,
-       transformer_list=[('num_pipeline', Pipeline(memory=None,
-     steps=[('selector', DataFrameSelector(attribute_names=['amount', 'oldbalanceOrg', 'newbalanceOrig', 'oldbalanceDest', 'newbalanceDest'])), ('attribs_adder', CombinedAttributesAdder()...penalty='l2', random_state=None, solver='warn',
-          tol=0.0001, verbose=0, warm_start=False))])
+## Selecting the algorithm to be applied
 
-```python
-cat_encoder = cat_pipeline.named_steps["cat_encoder"]
-new_feature = num_pipeline.named_steps["attribs_adder"]
-cat_one_hot_attribs = list(cat_encoder.categories_[0])
-attributes = num_attribs + ['errorBalanceOrig','errorBalanceDest'] + cat_one_hot_attribs 
-attributes
-```
+Algorithim selection primarily depends on the objective you are trying to solve and what kind of dataset is available. There are differnt type of algorithms which can be applied and we will look into few of them here.
 
-['amount',
- 'oldbalanceOrg',
- 'newbalanceOrig',
- 'oldbalanceDest',
- 'newbalanceDest',
- 'errorBalanceOrig',
- 'errorBalanceDest',
- 'CASH_IN',
- 'CASH_OUT',
- 'DEBIT',
- 'PAYMENT',
- 'TRANSFER']
- 
+### Linear Regression
+
+This algorithm can be applied when you want to compute some continuous value. To predict some future value of a process which is currently running, you can go with regression algorithm.
+
+Examples where linear regression can used are :
+
+1. Predict the time taken to go from one place to another
+2. Predict the sales for a future month
+3. Predict sales data and improve yearly projections.
+
+### Logistic Regression
+
+This algorithm can be used to perform binary classification. It can be used if you want a probabilistic framework.
+Also in case you expect to receive more training data in the future that you want to be able to quickly incorporate into your model.
+
+1. Customer churn prediction.
+2. Credit Scoring & Fraud Detection which is our example problem which we are trying to solve in this chapter.
+3. Calculating the effectiveness of marketing campaigns.
+
+### Decision trees
+
+Decision trees handle feature interactions and they’re non-parametric. Doesnt support online learning and the entire tree needs to be rebuild when new traning dataset comes in. Memory consumption is very high.
+
+Can be used for the following cases
+
+1. Investment decisions
+2. Customer churn
+3. Banks loan defaulters
+4. Build vs Buy decisions
+5. Sales lead qualifications
+
+### K Means
+
+This algorithm is used when we are not aware of the labels and one needs to be created based on the features of objects. Example will be to divide a group of people into differnt subgroups based on common theme or attribute. 
+
+The main disadvantage of K-mean is that you need to know exactly the number of clusters or groups which is required. It takes a lot of iteration to come up with the best K.
+
+### Support Vector Machines
+
+SVM is a supervised ML technique and used for pattern recognition and classification problems when your data has exactly two classes.
+Its popular in text classification problems.
+
+Few cases where SVM can be used is
+
+1. Detecting persons with common diseases.
+2. Hand-written character recognition
+3. Text categorization
+4. Stock market price prediction
+
+### Naive Bayes
+
+Naive Bayes is used for large datasets.This algoritm works well even when we have a limited CPU and memory available. This works by calculating bunch of counts. It requires less training data. The algorthim cant learn interation between features.
+
+Naive Bayes can be used in real-world applications such as:
+
+1. Sentiment analysis and text classification
+2. Recommendation systems like Netflix, Amazon
+3. To mark an email as spam or not spam
+4. Face recognition
+
+### Random Forest
+
+Ranmdon forest is similar to Decision tree. Can be used for both regression and classification problems with large data sets.
+
+Few case where it can be applied.
+
+1. Predict patients for high risks.
+2. Predict parts failures in manufacturing.
+3. Predict loan defaulters.
+
+### Neural networks
+
+Neural network works based on weights of connections between neurons.  Weights are trained and based on that the neural network can be utilized to predict the class or a quantity. They are resource and memory intensive. 
+
+Few cases where it can be applied.
+
+1. Applied to unsupervised learning tasks, such as feature extraction. 
+2. Extracts features from raw images or speech with much less human intervention
+
+## Scikit Cheat Sheet
+
+Scikit learning has put a very indepth and well explained flow chart to help you choose the right algorithm that I find very handy.
+
+![scikit-learn](images/scikit-learn-cheatsheet.png){#fig:scikit-learn-cheatsheet}
+
 
 ## K-means in scikit learn.
 
 ### Import
 
-```python
+
 ## K-means Algorithm
 
 In this section we demonstrate how simple it is to use k-means in scikit learn.
 
-Import
-------
+### Import
+
+```python
 
     from time import time
     import numpy as np
@@ -342,10 +427,11 @@ Import
     
     digits = load_digits()
     data = scale(digits.data)
+```
 
-Create samples
---------------
+### Create samples
 
+```python
     np.random.seed(42)
 
     digits = load_digits()
@@ -415,13 +501,14 @@ See @fig:scikit-learn-k-means_10_0
                   name="PCA-based",
                   data=data)
     print(79 * '_')
+```
 
-Visualize
-=========
+
+### Visualize
 
 See @fig:scikit-learn-k-means_10_0
 
-
+```python
     reduced_data = PCA(n_components=2).fit_transform(data)
     kmeans = KMeans(init='k-means++', n_clusters=n_digits, n_init=10)
     kmeans.fit(reduced_data)
@@ -461,6 +548,5 @@ See @fig:scikit-learn-k-means_10_0
     plt.show()
 ```
 
-=======
 
 ![Result](images/scikit-learn-k-means_10_0.png){#fig:scikit-learn-k-means_10_0}
