@@ -390,11 +390,159 @@ Few cases where it can be applied.
 1. Applied to unsupervised learning tasks, such as feature extraction. 
 2. Extracts features from raw images or speech with much less human intervention
 
+### Deep Learning using Keras
+
+Keras is most powerful and easy-to-use Python libraries for developing and evaluating deep learning models. It has the efficient numerical computation libraries Theano and TensorFlow.
+
+### XGBoost
+
+XGBoost stands for eXtreme Gradient Boosting.
+XGBoost is an implementation of gradient boosted decision trees designed for speed and performance. It is engineered for efficiency of compute time and memory resources.
+
 ## Scikit Cheat Sheet
 
 Scikit learning has put a very indepth and well explained flow chart to help you choose the right algorithm that I find very handy.
 
 ![scikit-learn](images/scikit-learn-cheatsheet.png){#fig:scikit-learn-cheatsheet}
+
+## Parameter Optimization
+
+ Machine learning models are parameterized so that their behavior can be tuned for a given problem. These models can have many parameters and finding the best combination of parameters can be treated as a search problem.
+
+A parameter is a configurationthat is part of the model and values can be derived from the given data.
+
+1. Required by the model when making predictions.
+2. Values define the skill of the model on your problem.
+3. Estimated or learned from data.
+4. Often not set manually by the practitioner.
+5. Often saved as part of the learned model.
+
+### Hyperparameter optimization/tuning algorithms
+
+Grid search is an approach to hyperparameter tuning that will methodically build and evaluate a model for each combination of algorithm parameters specified in a grid.
+
+Random search provide a statistical distribution for each hyperparameter from which values may be randomly sampled.
+
+
+### Experiments with Keras (deep learning), XGBoost, and SVM (SVC) compared to Logistic Regression(Baseline)
+
+## Creating a parameter grid
+
+```python
+grid_param = [
+                [{   #LogisticRegression
+                   'model__penalty':['l1','l2'], 
+                   'model__C': [0.01, 1.0, 100]
+                }],
+       
+                [{#keras
+                    'model__optimizer': optimizer,
+                    'model__loss': loss
+                }],
+    
+                [{  #SVM
+                   'model__C' :[0.01, 1.0, 100],
+                   'model__gamma': [0.5, 1],
+                   'model__max_iter':[-1]
+                }],
+            
+                [{   #XGBClassifier 
+                    'model__min_child_weight': [1, 3, 5],
+                    'model__gamma': [0.5],
+                    'model__subsample': [0.6, 0.8],
+                    'model__colsample_bytree': [0.6],
+                    'model__max_depth': [3]
+                
+                }]
+            ]
+```
+
+## Implementing Grid search with models and also creating metrics from each of the model.
+
+```python
+
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import classification_report
+from sklearn.metrics import f1_score
+from xgboost.sklearn import XGBClassifier
+from sklearn.svm import SVC
+
+test_scores = []
+#Machine Learning Algorithm (MLA) Selection and Initialization
+MLA = [
+        linear_model.LogisticRegression(),
+        keras_model,
+        SVC(),
+        XGBClassifier()
+        
+      ]
+
+#create table to compare MLA metrics
+MLA_columns = ['Name', 'Score', 'Accuracy_Score','ROC_AUC_score','final_rmse','Classification_error','Recall_Score','Precision_Score', 'mean_test_score', 'mean_fit_time', 'F1_Score']
+MLA_compare = pd.DataFrame(columns = MLA_columns)
+Model_Scores = pd.DataFrame(columns = ['Name','Score'])
+
+row_index = 0
+for alg in MLA:
+
+    #set name and parameters
+    MLA_name = alg.__class__.__name__
+    MLA_compare.loc[row_index, 'Name'] = MLA_name
+    #MLA_compare.loc[row_index, 'Parameters'] = str(alg.get_params())
+    
+  
+    full_pipeline_with_predictor = Pipeline([
+        ("preparation", full_pipeline),  # combination of numerical and categorical pipelines
+        ("model", alg)  
+    ])
+    
+    grid_search = GridSearchCV(full_pipeline_with_predictor, grid_param[row_index], cv=4, verbose=2, scoring='f1', return_train_score=True)
+       
+    grid_search.fit(X_train[X_model_col], y_train)
+    y_pred = grid_search.predict(X_test)
+     
+    MLA_compare.loc[row_index, 'Accuracy_Score'] = np.round(accuracy_score(y_pred, y_test), 3)
+    MLA_compare.loc[row_index, 'ROC_AUC_score'] = np.round(metrics.roc_auc_score(y_test, y_pred),3)
+    MLA_compare.loc[row_index,'Score'] = np.round(grid_search.score(X_test, y_test),3)
+    
+    negative_mse = grid_search.best_score_ 
+    scores = np.sqrt(-negative_mse)
+    final_mse = mean_squared_error(y_test, y_pred)
+    final_rmse = np.sqrt(final_mse)    
+    MLA_compare.loc[row_index, 'final_rmse'] = final_rmse
+    
+    confusion_matrix_var = confusion_matrix(y_test, y_pred)
+    TP = confusion_matrix_var[1, 1]
+    TN = confusion_matrix_var[0, 0]
+    FP = confusion_matrix_var[0, 1]
+    FN = confusion_matrix_var[1, 0]
+    MLA_compare.loc[row_index,'Classification_error'] = np.round(((FP + FN) / float(TP + TN + FP + FN)), 5)
+    MLA_compare.loc[row_index,'Recall_Score'] = np.round(metrics.recall_score(y_test, y_pred), 5)
+    MLA_compare.loc[row_index,'Precision_Score'] = np.round(metrics.precision_score(y_test, y_pred), 5)
+    MLA_compare.loc[row_index,'F1_Score'] = np.round(f1_score(y_test,y_pred), 5)
+   
+    
+    MLA_compare.loc[row_index, 'mean_test_score'] = grid_search.cv_results_['mean_test_score'].mean()
+    MLA_compare.loc[row_index, 'mean_fit_time'] = grid_search.cv_results_['mean_fit_time'].mean()
+    
+    Model_Scores.loc[row_index,'MLA Name'] = MLA_name    
+    Model_Scores.loc[row_index,'ML Score'] = np.round(metrics.roc_auc_score(y_test, y_pred),3)
+    
+    #Collect Mean Test scores for statistical significance test
+    test_scores.append(grid_search.cv_results_['mean_test_score'])
+    row_index+=1
+```
+
+
+### Results table from the Model evaluation with metrics.
+
+![scikit-learn](images/scikit-learn-results.png){#fig:scikit-learn-results}
+
+### ROC AUC Score
+
+AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. It tells how much model is capable of distinguishing between classes. Higher the AUC, better the model is at predicting 0s as 0s and 1s as 1s. 
+
+![scikit-learn](images/scikit-learn-rocauc.png){#fig:scikit-learn-rocauc}
 
 
 ## K-means in scikit learn.
