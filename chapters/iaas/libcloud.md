@@ -243,9 +243,47 @@ connection = driver(
 pprint(connection.__dict__)
 ```
 
-##### Azure New Driver :o:
+##### Azure New Driver
 
-:o: To be provided by students or TA
+The following is an example using the Azure Resource Management (ARM) method.
+
+* <https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview>
+
+To connect to Azure you need your tenant ID and subscription ID. Using the Azure cross platform CLI,
+use `azure account list` to get these values.
+
+```
+azure ad app create --name "<Your Application Display Name>" --home-page "<https://YourApplicationHomePage>" --identifier-uris "<https://YouApplicationUri>" --password <Your_Password>
+azure ad sp create "<Application_Id>"
+azure role assignment create --objectId "<Object_Id>" -o Owner -c /subscriptions/{subscriptionId}/
+```
+
+```python
+from libcloud.compute.types import Provider
+from libcloud.compute.providers import get_driver
+from cloudmesh.management.configuration.config import Config
+from pprint import pprint
+
+# Azure related variables
+
+name = "azure_arm"
+# This assumes the cloudname for azure to be *azure_arm*
+
+credentials = Config().credentials("cloud", name)
+
+pprint(credentials)
+
+driver = get_driver(Provider.AZURE_ARM)
+connection = driver(
+    tenant_id=credentials["TENANT_ID"],
+    subscription_id=credentials["AZURE_SUBSCRIPTION_ID"],
+    key=credentials["APPLICATION_ID"],
+    secret=credentials["PASSWORD"]
+)
+
+pprint(connection.__dict__)
+```
+
 
 #### OpenStack
 
