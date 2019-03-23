@@ -25,8 +25,17 @@ The API classifies the images and can be used to detect labels, logos,
 faces, landmarks and text within the images. The API uses JSON for both 
 requests and responses.
 
+Images can be provided to the API in 3 different ways [@www-googlevisionapi]:
+
+* As a base64-encoded image string. If the image is stored locally, 
+it can be converted into a string and pass it as the value of image.content
+* As a Google Cloud Storage URI. Pass the full URI as the value of 
+image.source.imageUri
+* As a publicly-accessible HTTP or HTTPS URL. Pass the URL as the 
+value of image.source.imageUri
+
 In this section, we showcase how to use Google Cloud Vision API for label 
-detection using a REST service. 
+detection in an image using a REST service. 
 
 Following are the pre-requisites before we can start using the API:
 
@@ -59,9 +68,10 @@ pip install --upgrade google-cloud-vision
 Now, we create a python module `gcv.py` for detecting labels in an image
 importing `google.cloud.vision` library.
 Image will be read from a local library and the name of the image will be 
-passed as a parameter in the OpenAPI REST service. The environment variable 
-*GOOGLE_APPLICATION_CREDENTIALS* can also be set in the program as shown 
-in the following code:
+passed as a parameter in the OpenAPI REST service. 
+
+Note: The environment variable *GOOGLE_APPLICATION_CREDENTIALS* can also 
+be set in the program as shown in the following code:
 
 
 ```python
