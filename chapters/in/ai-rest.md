@@ -21,8 +21,8 @@ we will discuss in the next section and illustrate the usage with an example.
 Googl Cloud Vision API offers a powerful image analysis API and it enables 
 developers to understand the content of an image by encapsulating powerful 
 machine learning models in an easy-to-use REST API. The API classifies the
-images and can detect labels, logos,faces, landmarks, text within the images. 
-The API uses JSON for both requests and responses.
+images and can be used to detect labels, logos, faces, landmarks and text 
+within the images. The API uses JSON for both requests and responses.
 
 In this section, we showcase how to use Google Cloud Vision API for label 
 detection using a REST service. 
@@ -202,7 +202,7 @@ curl http://localhost:8080/airest/gcv/mp1.jpg
 
 Input image `mp1.jpg` is shown in the following figure: @fig:GCV-TestImage. 
 
-![GCV-TestImage](images/mp1.png){#fig:gcp-testimage}
+![GCV-TestImage](images/mp1.png){#fig:gcv-testimage}
 
 
 Output response from the REST API:
@@ -267,19 +267,20 @@ sklearn.feature_extraction.text.TfidfTransformer
 
 Solution will be implemented in following steps:
 
-* **Step-1:** Define a function to pre-process Test dataset.
-* **Step-2:** Define a function to implement Naive Bayes algorithm.
-* **Step-3:** Define an OpenAPI speficification in a YAML file. 
+* **Step-1:** Define a function to download data from Azure cloud storage.
+* **Step-2:** Define a function to pre-process *Test* dataset.
+* **Step-3:** Define a function to implement Naive Bayes algorithm.
+* **Step-4:** Define an OpenAPI speficification in a YAML file. 
 The specification will have endpoints for the following:
   * Pre-process Test data with parameter.
   * Build Naive Bayes classification model and return test accuracy.
-* **Step-4:** Create a simple module to use the connexion service and read 
+* **Step-5:** Create a simple module to use the connexion service and read 
 in the specification from the yaml file.
 
 
 Pre-requisites:
 
-Following libraries will be used for the current example:
+Following libraries need to be imported for the current example:
 
 ```python
 from cloudmesh.common.util import path_expand
@@ -297,10 +298,54 @@ import connexion
 
 **Step-1:**
 
+Training and test datasets can be downloaded from the Azure storage container
+using the Azure blob storage client libraries. Credentials and the 
+container name will be read from a yaml file via the Cloudmesh.config utility. 
+
+Note: This step illustrates downloading data from Azure blob storage, please 
+refer to cloudmesh/cm manual for more details in order to replicate this step.
+
+
+```python
+from cloudmesh.common.util import path_expand
+from cloudmesh.management.configuration.config import Config
+from azure.storage.blob import BlockBlobService, PublicAccess
+import os, uuid, sys
+from flask import jsonify
+
+def download_data():
+    print("enter")
+    config = Config()
+    block_blob_service = BlockBlobService(
+        account_name=config['cloudmesh.storage.azure-2.credentials.account_name'],
+        account_key=config['cloudmesh.storage.azure-2.credentials.account_key'])
+
+    container_name=config['cloudmesh.storage.azure-2.credentials.container']
+
+    blob_gen = block_blob_service.list_blobs(container_name)
+    blob_list = []
+    for blob in blob_gen:
+        blob_list.append(blob.name)
+        print("\t Blob name: " + blob.name)
+
+    for i in range(len(blob_list)):
+        filename = blob_list[i]
+        local_path = path_expand("~/")
+        full_path_to_file = os.path.join(local_path, filename)
+        print("\nDownloading blob to " + full_path_to_file)
+        block_blob_service.get_blob_to_path(container_name, filename, full_path_to_file)
+
+    return 'Datasets downloaded'
+
+```
+
+
+**Step-2:**
+
 Pre-processing test data involves following tasks:
 
- * Cleaning the text data i.e. remove unwanted characters, converting text 
- to lower case, delete any extra spaces and finally put back the words
+ * Cleaning the text data i.e. remove unwanted characters, convert all text 
+ to lower case, delete any extra spaces and finally join all the words
  together into sentences.
  * Label the rows as per the information provided i.e. label first 2989 rows 
  as *positive* and rest as *negative*. We will take 2990 as a input parameter
@@ -313,8 +358,8 @@ import os
 import re
 
 def preProcessTestFile(linenum):
-    test_fp = os.path.join(path_expand("~/ai"), 'testSet.txt')
-    processed_test = os.path.join(path_expand("~/ai"), 'processedTest.csv')
+    test_fp = os.path.join(path_expand("~/"), 'testSet.txt')
+    processed_test = os.path.join(path_expand("~/"), 'processedTest.csv')
     test_file = open(test_fp)
     lines = test_file.readlines()
     write_test = open(processed_test, "w")
@@ -344,7 +389,7 @@ def file_clean(infile, label, writeFile):
 ```
 
 
-**Step-2:**
+**Step-3:**
 
 After the Test dataset has been cleaned and labelled, we now run the 
 Multinomial Naive Bayes algorithm on training data and use the model
@@ -364,8 +409,8 @@ import numpy as np
 
 def naivebayes():
 
-    processed_train = os.path.join(path_expand("~/ai"), 'processedTrain.csv')
-    processed_test = os.path.join(path_expand("~/ai"), 'processedTest.csv')
+    processed_train = os.path.join(path_expand("~/"), 'processedTrain.csv')
+    processed_test = os.path.join(path_expand("~/"), 'processedTest.csv')
     
     # get the data and label for training and test data
     data_train, label_train = getDataAndLabel(processed_train)
@@ -401,7 +446,7 @@ def getDataAndLabel(inp_file):
     
 ```
 
-**Step-3:**
+**Step-4:**
 
 Now we define an OpenAPI specification in yaml format to create 2 different 
 endpoints for functions defined in step-1 and step-2. 
@@ -476,7 +521,7 @@ definitions:
 ```
 
 
-**Step-3:**
+**Step-5:**
 
 Finally, we create a module (`server.py`) to use connexion service to read the 
 above created OpenAPI specification (`ai.yaml`) and dynamically call the methods 
