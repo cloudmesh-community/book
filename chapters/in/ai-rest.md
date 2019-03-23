@@ -11,24 +11,27 @@ and services. A few of the notable services include, but are not limited to:
 * [Microsoft Azure ML Studio](https://studio.azureml.net/)
 
 Some of the cloud service providers have exposed a few REST based APIs to the 
-users and one such API is Google Cloud Vision API which we will discuss in the 
-next section and illustrate the usage with an example.
+users and one such API is 
+[Google Cloud Vision API](https://cloud.google.com/vision/) which 
+we will discuss in the next section and illustrate the usage with an example.
 
 
 ## Image Analysis using Google Cloud Vision API
 
-Googl Cloud Vision API offers a powerful image analysis API and it enables developers
-to understand the content of an image by encapsulating powerful machine learning models 
-in an easy-to-use REST API. The API classifies the images and can detect labels, logos,
-faces, landmarks, text within the images. The API uses JSON for both requests and responses.
+Googl Cloud Vision API offers a powerful image analysis API and it enables 
+developers to understand the content of an image by encapsulating powerful 
+machine learning models in an easy-to-use REST API. The API classifies the
+images and can detect labels, logos,faces, landmarks, text within the images. 
+The API uses JSON for both requests and responses.
 
-In this section, we showcase how to use Google Cloud Vision API for label detection 
-using a REST service. 
+In this section, we showcase how to use Google Cloud Vision API for label 
+detection using a REST service. 
 
 Following are the pre-requisites before we can start using the API:
 
 * Sign in to google account and create a Google Cloud Platform Project 
-as the following figure shows: @fig:GCP-Project. (make sure billing is enabled)
+as the following figure shows: @fig:GCP-Project. 
+(make sure billing is enabled)
 
 ![GCP-Project](images/gcp-project.png){#fig:gcp-project}
 
@@ -55,8 +58,9 @@ pip install --upgrade google-cloud-vision
 Now, we create a python module `gcv.py` for detecting labels in an image
 importing `google.cloud.vision` library.
 Image will be read from a local library and the name of the image will be 
-passed as a parameter. The environment variable *GOOGLE_APPLICATION_CREDENTIALS*
-can also be set in the program as shown in the following code:
+passed as a parameter. The environment variable 
+*GOOGLE_APPLICATION_CREDENTIALS* can also be set in the program as shown 
+in the following code:
 
 
 ```python
@@ -107,7 +111,7 @@ swagger: "2.0"
 info: 
   version: "0.0.1"
   title: "cpuinfo"
-  description: "Image analysis service using swagger-2.0 specification and codegen"
+  description: "Image analysis service using swagger-2.0 specification"
   termsOfService: "http://swagger.io/terms/"
   contact: 
     name: "Google Cloud Vision REST Service"
@@ -196,7 +200,7 @@ on the terminal
 curl http://localhost:8080/airest/gcv/mp1.jpg
 ```
 
-Input image is showin in the following figure: @fig:GCV-TestImage:
+Input image `mp1.jpg` is shown in the following figure: @fig:GCV-TestImage. 
 
 ![GCV-TestImage](images/mp1.png){#fig:gcp-testimage}
 
@@ -226,20 +230,25 @@ Output response from the REST API:
 
 Naive Bayes is a simple yet powerful classification machine learning algorithm.
 In this section we demonstrate the implementation of Naive Bayes algorithm 
-on text documents in a RESTful service to classify a review as positive or negative.
+on text documents in a RESTful service to classify a review as 
+positive or negative.
 
 Example setup: In this example we will consider a text document containing 
 reviews of a restaurant. Data is split into two datasets - 
-training dataset and test datset. The datasets can be downloaded from an Azure public
-blob storage container, the links to which are mentioned in the following details: 
+training dataset and test datset. For the purposes of illustrating the example, 
+the datasets are made available in an Azure public blob storage container 
+and the links are mentioned in the following details: 
 
-* Training data: We will utilize a pre-processed training dataset with labels attached 
-to each review as *positive* or *negative*. Training data can be downloaded from [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
+* Training data: We will utilize a pre-processed training dataset with labels 
+attached to each review as *positive* or *negative*. Training data can be 
+downloaded from 
+[here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
 
-* Test data: Test dataset has been setup in such a way that first 2989 reviews are positive 
-and rows from 2990 to 4321 are negative reviews. Test data needs to pre-processed and 
-cleaned before the algorithm is implemented. After the test data is cleaned, 
-we will label the test data as per the information given. Finally, we will implement 
+* Test data: Test dataset has been setup in such a way that first 2989 reviews 
+are positive and rows from 2990 to 4321 are negative reviews. Test data needs 
+to pre-processed and cleaned before the algorithm is implemented. After the 
+test data is cleaned, we will label the test data as per the information given. 
+Finally, we will implement 
 Multinomial Naive Bayes classifier algorithm and calculate the accuracy of the 
 test prediction. Test data can be downloaded from 
 [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/testSet.txt).
@@ -410,7 +419,7 @@ swagger: "2.0"
 info: 
   version: "0.0.1"
   title: "naivebayes"
-  description: "A service to run a Naive Bayes ML using swagger-2.0 specification and codegen"
+  description: "A service to run a Naive Bayes ML using swagger-2.0 specification"
   termsOfService: "http://swagger.io/terms/"
   contact: 
     name: "Naive Bayes ML algorithm REST Service"
