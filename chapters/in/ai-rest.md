@@ -27,19 +27,19 @@ using a REST service.
 
 Following are the pre-requisites before we can start using the API:
 
-* Sign in to your google account and create a Google Cloud Platform Project 
+* Sign in to google account and create a Google Cloud Platform Project 
 as the following figure shows: @fig:GCP-Project. (make sure billing is enabled)
 
-![GCP-Project](images/gcp-project.PNG){#fig:gcp-project}
+![GCP-Project](images/gcp-project.png){#fig:gcp-project}
 
 * Enable Cloud Vision API as the following figure shows: @fig:GCV-API.
 
-![GCV-API](images/gcv-api.PNG){#fig:gcp-api}
+![GCV-API](images/gcv-api.png){#fig:gcp-api}
 
 * In the GCP console, create service account key as the following figure 
-shows:  @fig:GCV-KEY. Save the JSON file that contains your key.
+shows:  @fig:GCV-KEY. Save the JSON file that contains the key.
 
-![GCV-KEY](images/gcv-accountkey.PNG){#fig:gcp-key}
+![GCV-KEY](images/gcv-accountkey.png){#fig:gcp-key}
 
 * Set the envionment variable *GOOGLE_APPLICATION_CREDENTIALS* to the 
 path of the JSON key file downloaded.
@@ -196,9 +196,9 @@ on the terminal
 curl http://localhost:8080/airest/gcv/mp1.jpg
 ```
 
-Input image: 
+Input image is showin in the following figure: @fig:GCV-TestImage: 
 
-![GCV-Image](images/mp1.png){#fig:gcp-image}
+![GCV-TestImage](images/mp1.png){#fig:gcp-testimage}
 
 
 Output response from the REST API:
