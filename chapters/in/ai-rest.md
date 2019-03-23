@@ -196,7 +196,7 @@ on the terminal
 curl http://localhost:8080/airest/gcv/mp1.jpg
 ```
 
-Input image is showin in the following figure: @fig:GCV-TestImage: 
+Input image is showin in the following figure: @fig:GCV-TestImage:
 
 ![GCV-TestImage](images/mp1.png){#fig:gcp-testimage}
 
