@@ -10,7 +10,7 @@ and services. A few of the notable services include, but are not limited to:
 * [IBM Watson](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/wml-ai.html)
 * [Microsoft Azure ML Studio](https://studio.azureml.net/)
 
-Some of the cloud service providers have exposed a few REST based APIs to the 
+A few Cloud service providers expose REST based APIs to the 
 users and one such API is 
 [Google Cloud Vision API](https://cloud.google.com/vision/) which 
 we will discuss in the next section and illustrate the usage with an example.
@@ -298,12 +298,15 @@ import connexion
 
 **Step-1:**
 
-Training and test datasets can be downloaded from the Azure storage container
-using the Azure blob storage client libraries. Credentials and the 
-container name will be read from a yaml file via the Cloudmesh.config utility. 
+Note: This step is an optional step and has been included to illustrate 
+downloading data from Azure cloud storage. In order to replicate this step, 
+Azure storage account and credentials are required along with 
+installation of Azure client libraries.
 
-Note: This step illustrates downloading data from Azure blob storage, please 
-refer to cloudmesh/cm manual for more details in order to replicate this step.
+As mentioned reviously, training and test datasets are uploaded to Azure 
+blob storage which can be downloaded using the Azure blob storage 
+client libraries. Credentials and the container name will be read from a 
+yaml file via the Cloudmesh.config utility. 
 
 
 ```python
