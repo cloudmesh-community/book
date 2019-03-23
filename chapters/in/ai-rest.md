@@ -20,9 +20,10 @@ we will discuss in the next section and illustrate the usage with an example.
 
 Googl Cloud Vision API offers a powerful image analysis API and it enables 
 developers to understand the content of an image by encapsulating powerful 
-machine learning models in an easy-to-use REST API. The API classifies the
-images and can be used to detect labels, logos, faces, landmarks and text 
-within the images. The API uses JSON for both requests and responses.
+machine learning models in an easy-to-use REST API [@www-googlecloudvision]. 
+The API classifies the images and can be used to detect labels, logos, 
+faces, landmarks and text within the images. The API uses JSON for both 
+requests and responses.
 
 In this section, we showcase how to use Google Cloud Vision API for label 
 detection using a REST service. 
@@ -58,7 +59,7 @@ pip install --upgrade google-cloud-vision
 Now, we create a python module `gcv.py` for detecting labels in an image
 importing `google.cloud.vision` library.
 Image will be read from a local library and the name of the image will be 
-passed as a parameter. The environment variable 
+passed as a parameter in the OpenAPI REST service. The environment variable 
 *GOOGLE_APPLICATION_CREDENTIALS* can also be set in the program as shown 
 in the following code:
 
@@ -271,11 +272,12 @@ Solution will be implemented in following steps:
 * **Step-2:** Define a function to pre-process *Test* dataset.
 * **Step-3:** Define a function to implement Naive Bayes algorithm.
 * **Step-4:** Define an OpenAPI speficification in a YAML file. 
-The specification will have endpoints for the following:
+The specification will have 3 endpoints for each of the previous steps:
+  * Download training and test datasets.
   * Pre-process Test data with parameter.
   * Build Naive Bayes classification model and return test accuracy.
-* **Step-5:** Create a simple module to use the connexion service and read 
-in the specification from the yaml file.
+* **Step-5:** Create a module to use the connexion service and read in the 
+OpenAPI specification from the yaml file.
 
 
 Pre-requisites:
@@ -306,13 +308,13 @@ installation of Azure client libraries.
 As mentioned reviously, training and test datasets are uploaded to Azure 
 blob storage which can be downloaded using the Azure blob storage 
 client libraries. Credentials and the container name will be read from a 
-yaml file via the Cloudmesh.config utility. 
+yaml file via the Cloudmesh_community Config() library. 
 
 
 ```python
 from cloudmesh.common.util import path_expand
 from cloudmesh.management.configuration.config import Config
-from azure.storage.blob import BlockBlobService, PublicAccess
+from azure.storage.blob import BlockBlobService
 import os, uuid, sys
 from flask import jsonify
 
@@ -360,7 +362,7 @@ from cloudmesh.common.util import path_expand
 import os
 import re
 
-def preProcessTestFile(linenum):
+def process_testfile(linenum):
     test_fp = os.path.join(path_expand("~/"), 'testSet.txt')
     processed_test = os.path.join(path_expand("~/"), 'processedTest.csv')
     test_file = open(test_fp)
@@ -416,8 +418,8 @@ def naivebayes():
     processed_test = os.path.join(path_expand("~/"), 'processedTest.csv')
     
     # get the data and label for training and test data
-    data_train, label_train = getDataAndLabel(processed_train)
-    data_test, label_test = getDataAndLabel(processed_test)  
+    data_train, label_train = get_data_label(processed_train)
+    data_test, label_test = get_data_label(processed_test)  
 
     count_vect = CountVectorizer()  
     X_train_counts = count_vect.fit_transform(data_train) 
@@ -436,7 +438,7 @@ def naivebayes():
     return jsonify(nb_result)
     
 # Internal Function to fetch Data and labels
-def getDataAndLabel(inp_file):
+def get_data_label(inp_file):
     file = open(inp_file)  # read the processed file
     label = []
     data = []
@@ -452,13 +454,13 @@ def getDataAndLabel(inp_file):
 **Step-4:**
 
 Now we define an OpenAPI specification in yaml format to create 2 different 
-endpoints for functions defined in step-1 and step-2. 
+endpoints for functions defined in the revios 3 steps. 
 
-* Functions defined in step-1 and step-2 need to be 
+* Functions defined in step-1, step-2 and step-3 need to be 
 part of a module named `ai.py` 
 * operationId in the specification will correspond to the names of the functions
-defined in step-1 and step-2 respectively.
-* The input parameter required for function in step-1 will be passed as inline 
+defined in each of the previous steps respectively.
+* The input parameter required for function in step-2 will be passed as inline 
 parameter (linenum) for the endpoint to pre-process test dataset.
 
 
@@ -482,11 +484,25 @@ consumes:
 produces: 
   - "application/json"
 paths: 
+  /ai/getdata:
+    get:
+      tags:
+        - AI
+      operationId: ai.get_data
+      description: "runs naive bayes alogirthm"
+      produces: 
+        - "multipart/form-data"
+        - "application/json"
+      responses: 
+        "200":
+          description: "naive bayes ml"
+          schema: 
+            $ref: "#/definitions/AI"
   /ai/testdata/{linenum}:
     get:
       tags:
         - AI
-      operationId: ai.preProcessTestFile
+      operationId: ai.process_testfile
       description: "runs naive bayes alogirthm"
       parameters:
         - in: path
@@ -567,10 +583,17 @@ following CURL command can be used for the 1st endpoint which will
 pre-process the test dataset
 
 ```python
+curl http://localhost:8080/airest/ai/getdata
+```
+
+Following CURL command can be used for the 2nd endpoint which will 
+pre-process the test dataset
+
+```python
 curl http://localhost:8080/airest/ai/testdata/2990
 ```
 
-Following CURL command can be used for the 2nd endpoint which will build 
+Following CURL command can be used for the 3rd endpoint which will build 
 the model to classify the test data and finally return the accuracy
 
 ```python
