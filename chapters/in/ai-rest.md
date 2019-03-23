@@ -68,7 +68,8 @@ pip install --upgrade google-cloud-vision
 Now, we create a python module `gcv.py` for detecting labels in an image
 importing `google.cloud.vision` library.
 Image will be read from a local library and the name of the image will be 
-passed as a parameter in the OpenAPI REST service. 
+passed as a parameter in the OpenAPI REST service. The function will return 
+ asimple list of all the labels detected by the API.
 
 Note: The environment variable *GOOGLE_APPLICATION_CREDENTIALS* can also 
 be set in the program as shown in the following code:
@@ -85,7 +86,7 @@ from google.cloud.vision import types
 
 def get_labels(image_name):
     current_path = os.getcwd()
-    relative_path = current_path + '<name of key file>.json'
+    relative_path = current_path + '<name_of_key_file>.json'
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = relative_path
 
     # Instantiates a client
@@ -113,8 +114,8 @@ def get_labels(image_name):
     
 ```
 
-Next, we create an OpenAPI specification which invokes the above module 
-and takes the input image name as an inline parameter. 
+Next, we create an OpenAPI specification which will be read to 
+invoke the API. Here we give the input image name as an inline parameter. 
 The OpenAPI yaml file `gcv.yaml` is as follows:
 
 ```python
