@@ -1,8 +1,4 @@
-# Amazon Elastic Beanstalk :wave:
-
-:o: Undefined cross-reference: fig:aws-beanstalk-manageenv
-
-:o: Undefined cross-reference: fig:aws-beanstalk-config-database
+# Amazon Elastic Beanstalk (hid: sp19-516-128)
 
 ---
 
@@ -16,13 +12,13 @@
 
 ---
 
-Amazon Elastic Beanstalk is an PaaS offering from AWS that aims to
-offer be a one stop solution for fast deployment of scalable
-web-applications.
+Amazon Elastic Beanstalk is an PaaS offering from AWS 
+that aims to offer be a one stop solution for fast deployment of
+scalable web-applications.
 
-Elastic Beanstalk has been developeed with an idea of allowing
+Elastic Beanstalk has been developed with an idea of allowing
 developers to focus on code developement instead of the environment
-set up. All the developers need to provide is a working code,
+set up. All the developers need to do is to provide a working code,
 beanstalk takes care of providing the platform to run it.
 
 A Variety of Platforms are supported
@@ -36,46 +32,32 @@ A Variety of Platforms are supported
 * Go
 * Docker
 
+
 Features of Elastic Beanstock include
 
-:o: change to bullet list with headings italic
-
-### High Performance
-
-Elastic Beanstalk allows freedom to provision servers from a variety
-of EC2 configurations based on business to suit the compute
+* *High Performance*: Elastic Beanstalk allows freedom to provision servers 
+from a variety of EC2 configurations based on business to suit the compute 
 requirements.
 
-### Scalability
+* *Scalability*: Easy configurable auto scaling settings are available to 
+handle peak loads based on metrics monitoring.
 
-Easy configurable auto scaling settings are available to handle peak
-loads based on metrics monitoring.
+* *High Availability*: Elastic Beanstalk provides easy health check based 
+load balancing options to ensure high avialability of the web application.
 
-### High Availability
+* *Complete source control*: The user has freedom to select the AWS resources 
+and has full control over the infrastructure powering the application using 
+the Elastic Beanstalk management capabilities.
 
-Elastic Beanstalk provides easy health check based load balancing
-options to ensure high avialability of the web application.
-
-### Complete source control
-
-The user has freedom to select the AWS resources and has full control
-over the infrastructure powering the application using the Elastic
-Beanstalk management capabilities.
-
-### Fully Managed
-
-With Elastic Beanstalk, AWS manages actvities like hardware
-provisioning, set up and configuration, software patching, database
-backups and performance monitoring.
+* *Fully Managed*: With Elastic Beanstalk, AWS manages actvities like hardware 
+provisioning, set up and configuration, software patching, database backups 
+and performance monitoring.
 
 ## Amazon Elastic Beanstalk Pricing
 
-Amazon Elastic Beanstalk has no additional charges of its own. You pay
-for the resources and services provisioned by the beanstalk
-environment.
-
+Amazon Elastic Beanstalk has no additional charges of its own. You pay for the 
+resources and services provisioned by the beanstalk environment.
 These are typically:
-
 * EC2 instances
 * S3 Storage
 * Elastic Load Balancer
@@ -83,42 +65,38 @@ These are typically:
 
 ## How to provision a Amazon Elastic Beanstalk Environment for Quick Start
 
-:o: remove this section 
+This section will help with steps to be followed to create a Highly Available, 
+Load Balanced sample application on Elastic Beanstalk in a few quick Steps.
 
-:o: there is no space before :
+To be able to create an beanstalk application, the user must have set up an
+AWS account as a pre-requisite. 
+An AWS account can be created using the link below
 
-:o: Assumption : is not a full sentence use `select` instead of double quotes so they ar everbatim
+[New AWS account creation URL](https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start)
 
-:o: (see ...) is an incomplete sentence and does not have a period. Review grammar rulkes on setting periods e.g. it needs to be inside the sendtence and the period needs to be behind .
 
-:o: you shoudl have looked at the modifications i made to your other text
+### Step 1: Login to the AWS console.
 
-:o: All figures must be refered to 
+Login to the AWS account using the link below.
 
-This section will help with steps to be followed to create a Highly
-Availble, Load Balanced sample application on Elastic Beanstalk in a
-few quick Steps.
+[AWS Console URL](https://aws.amazon.com/console/).
 
-Assumption : User must have an AWS account.
-
-### Step 1 : Login to the AWS console.
-
-Console URL : [AWS Console URL](https://aws.amazon.com/console/).  On
-successfull login, select Elastic Beanstalk from the Compute section
-or alternatively, you can type Beanstalk in the search bar to look up
-(see @fig:aws-beanstalk-console).
+Upon successful login, select Elastic Beanstalk from the Compute section or 
+alternatively, you can type Beanstalk in the search bar to look up (see 
+@fig:aws-beanstalk-console).
 
 ![AWS Beanstalk](images/elastic_beanstalk-1.png){#fig:aws-beanstalk-console}
 
-### Step 2 : Click on Create New Application
+### Step 2: Click on Create New Application
 
 On the Beanstlak home page, one can either click on the 
 `Create New Application` button at the top right corner or 
-click on the `Get Started` button in the screen center (see @fig:aws-beanstalk-home).
+click on the `Get Started` button in the screen center
+(see @fig:aws-beanstalk-home).
 
 ![AWS Beanstalk](images/elastic_beanstalk-2.png){#fig:aws-beanstalk-home}
 
-### Step 3 : Select Base Configuration
+### Step 3: Select Base Configuration
 
 Provide a suitable name for your application (see
 @fig:aws-beanstalk-baseconfig). In the Base Configuration section,
@@ -132,7 +110,7 @@ Tomcat.
 
 ![AWS Beanstalk](images/elastic_beanstalk-2.1.png){#fig:aws-beanstalk-baseoption}
 
-### Step 4 : Click on Configure More Options
+### Step 4: Click on Configure More Options
 
 Do not click on Create Application button in the previous step in case
 you wish to create your application in a particular VPC. This is will
@@ -141,13 +119,13 @@ application to be created in their own VPCs on cloud so that they can
 restrict the access to the application and also allow the application
 to connect with other resources on their cloud like databases.  If you
 go ahead and click on Create Application button, the application will
-be created \ in default AWS VPC.  Once an application is created, the
+be created in default AWS VPC.  Once an application is created, the
 VPC on it cannot be updated.
 
 To be able to launch the application in the VPC of your choice, click
 on `Configure More Options` button.
 
-### Step 5 : Select High Availability as Config Preset
+### Step 5: Select High Availability as Config Preset
 
 Once you click on `Configure More Options` button, AWS will take you
 to Advance Configuration page.  Select High Availaibility option as
@@ -158,7 +136,7 @@ is launched as low cost and no load balancer can be mapped to it
 
 ![AWS Beanstalk](images/elastic_beanstalk-4.png){#fig:aws-beanstalk-configpreset-1}
 
-### Step 6 : Map VPC
+### Step 6: Map VPC
 
 Click on the Network section on the Advance Configuration page (see
 @fig:aws-beanstalk-configpreset-1). This will open the another page
@@ -198,7 +176,7 @@ Once done, click on Save button. This action will save the settings
 and will take you back to the Advance Configuration page (see
 @fig:aws-beanstalk-configpreset-2).
 
-### Step 7 : Launch Application
+### Step 7: Launch Application
 
 These settings done so far are sufficeint to create a High
 Availability Load Balanced application. Click on `Create App`
@@ -212,7 +190,7 @@ balancer) will be displayed in the top section  (see
 
 ![AWS Beanstalk](images/elastic_beanstalk-6.png){#fig:aws-beanstalk-appready}
 
-### Step 8 : Verify application URL
+### Step 8: Verify application URL
 
 Click on the URL gerenerated in the previous step. This will open the
 homepage of the sample application (see @fig:aws-beanstalk-homepage).
