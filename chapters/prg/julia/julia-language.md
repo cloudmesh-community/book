@@ -50,6 +50,20 @@ available.
 
 
 ## Module Management
+
+Julia provides module and package management similar to Python's ```pip``` with
+the ```Pkg.add("")``` function. [@getting-started]  To use a package
+in a working environment, simply issue the command ```using <Package>```. For
+instance, to add a graphics package called Winston and plot 100 random numbers,
+execute the following commands:
+
+```julia
+	Pkg.add("Winston")
+	using Winston
+	plot(rand(100))
+```
+[@getting-started]
+
 ## Multiple Dispatch: 
 ## Parallel Language Constructs
 
