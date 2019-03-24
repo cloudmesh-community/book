@@ -40,17 +40,16 @@ detection in an image using a REST service.
 Following are the pre-requisites before we can start using the API:
 
 * Sign in to google account and create a Google Cloud Platform Project 
-as the following figure shows: @fig:GCP-Project. 
-(make sure billing is enabled)
+as shown in the @fig:gcp-project. Make sure billing is enabled. 
 
 ![GCP-Project](images/gcp-project.png){#fig:gcp-project}
 
-* Enable Cloud Vision API as the following figure shows: @fig:GCV-API.
+* Enable Cloud Vision API as shown in the @fig:gcp-api: 
 
 ![GCV-API](images/gcv-api.png){#fig:gcp-api}
 
-* In the GCP console, create service account key as the following figure 
-shows:  @fig:GCV-KEY. Save the JSON file that contains the key.
+* In the GCP console, create service account key as shown in the 
+@fig:gcp-key. Save the JSON file that contains the key.
 
 ![GCV-KEY](images/gcv-accountkey.png){#fig:gcp-key}
 
@@ -59,7 +58,7 @@ path of the JSON key file downloaded.
 
 * Install the client library as follows:
 
-```python
+```bash
 pip install --upgrade google-cloud-vision
 
 ```
@@ -201,20 +200,20 @@ if __name__ == "__main__":
 
 To implement the REST service, run the following on the terminal:
 
-```python
+```bash
 python server.py
 ```
 
 Once the connection is established, run the following CURL command 
 on the terminal
 
-```python
+```bash
 curl http://localhost:8080/airest/gcv/mp1.jpg
 ```
 
-Input image `mp1.jpg` is shown in the following figure: @fig:GCV-TestImage. 
+Input image `mp1.jpg` is shown in the @fig:gcv-testimage: 
 
-![GCV-TestImage](images/mp1.png){#fig:gcv-testimage}
+![GCV-Test Image](images/mp1.png){#fig:gcv-testimage}
 
 
 Output response from the REST API:
@@ -587,7 +586,7 @@ if __name__ == "__main__":
 
 To implement the REST service, run the following on the terminal:
 
-```python
+```bash
 python server.py
 ```
 
@@ -595,20 +594,20 @@ Once the connection is established,
 following CURL command can be used for the 1st endpoint which will 
 download training and test datasets to local library.
 
-```python
+```bash
 curl http://localhost:8080/airest/ai/getdata
 ```
 
 Following CURL command can be used for the 2nd endpoint which will 
 pre-process the test dataset
 
-```python
+```bash
 curl http://localhost:8080/airest/ai/testdata/2990
 ```
 
 Following CURL command can be used for the 3rd endpoint which will build 
 the model to classify the test data and finally return the accuracy
 
-```python
+```bash
 curl http://localhost:8080/airest/ai/nb
 ```
