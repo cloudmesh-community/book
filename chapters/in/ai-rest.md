@@ -282,7 +282,7 @@ Solution will be implemented in following steps:
 * **Step-1:** Define a function to download data from Azure cloud storage.
 * **Step-2:** Define a function to pre-process *Test* dataset.
 * **Step-3:** Define a function to implement Naive Bayes algorithm.
-* **Step-4:** Define an OpenAPI speficification in a YAML file. 
+* **Step-4:** Define an OpenAPI specification in a YAML file. 
 The specification will have 3 endpoints for each of the previous steps:
   * Download training and test datasets.
   * Pre-process Test data with parameter.
@@ -311,10 +311,12 @@ import connexion
 
 **Step-1:**
 
-Note: This step is an optional step and has been included to illustrate 
-downloading data from Azure cloud storage. In order to replicate this step, 
-Azure storage account and credentials are required along with 
-installation of Azure client libraries.
+Note: This step downloads data from Azure cloud Blob storage. Prior to 
+replicating this step, datasets need to be uploaded to your respective Azure 
+storage account and pertaining credentials are to be used in the program.  
+Optionally, this step can be skipped if datasets are downloaded from the 
+direct links provided previously (under Example setup) and get started 
+from the next step.
 
 As mentioned reviously, training and test datasets are uploaded to Azure 
 blob storage which can be downloaded using the Azure blob storage 
@@ -591,7 +593,7 @@ python server.py
 
 Once the connection is established, 
 following CURL command can be used for the 1st endpoint which will 
-pre-process the test dataset
+download training and test datasets to local library.
 
 ```python
 curl http://localhost:8080/airest/ai/getdata
