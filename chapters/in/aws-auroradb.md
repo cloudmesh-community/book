@@ -1,4 +1,4 @@
-# Amazon Aurora DB (hid : sp19-516-128)
+# Amazon Aurora DB (hid: sp19-516-128)
 
 
 ---
@@ -200,16 +200,17 @@ port and parameter groups (see @fig:aws-aurora-advconfig-2).
 
 #### Step 7: Configure Advance Settings - Encryption and Failover
 
-This sub section allows to configure settings for Encrption and 
-Failover of the database. The options are explained in the next few steps
-(see @fig:aws-aurora-advconfig-3).
+Aurora database has options to configure encryption and failover
+policies to keep the data safe and highly available.
+These options are explained in the next few steps(see 
+@fig:aws-aurora-advconfig-3).
 
 ![AWS Aurora DB](images/auroradb-7.png){#fig:aws-aurora-advconfig-3}
 
 ##### Encryption
 
 Encryption on the database can be enabled only at the time of DB
-creation.Once enabled the database, associated replicas and snapshots
+creation. Once enabled the database, associated replicas and snapshots
 are all encrypted. One can either use the default KMS encryption keys
 provided by AWS or use their own encryption keys.
 
@@ -221,9 +222,10 @@ current writer.
 
 #### Step 8: Configure Advance Settings - Backtrack and Monitoring
 
-This sub section allows to configure settings for Bactrack and 
-Monitoring of the database. The options are explained in the next few steps
-(see @fig:aws-aurora-advconfig-4).
+We can also configure settings for Backtrack and 
+Monitoring of the database.
+These options are explained in the next few steps (see 
+@fig:aws-aurora-advconfig-4).
 
 ![AWS Aurora DB](images/auroradb-8.png){#fig:aws-aurora-advconfig-4}
 
@@ -243,9 +245,10 @@ used etc for reporting.
 
 #### Step 9: Configure Advance Settings - Log Exports and Maintenance
 
-This sub section allows to configure settings for exporting logs and 
-maintenance of the database. The options are explained in the next few steps
-(see @fig:aws-aurora-advconfig-5).
+Options for exporting logs and maintenance of the database can be 
+configure as well. 
+These options are explained in the next few steps (see 
+@fig:aws-aurora-advconfig-5).
 
 ![AWS Aurora DB](images/auroradb-9.png){#fig:aws-aurora-advconfig-5}
 
@@ -421,9 +424,26 @@ for x in mycursor:
 
 ## Exercises
 
-AuroraDB.1: define an exercise
+AuroraDB.1:
 
-AuroraDB.2: define an exercise
+> Follow the steps defined in the sections above to create an AuroraDB instance
+> with a read replica in a different availabiblity zone. Once the main writer
+> instance and the read replica are available, check if you can connect to both 
+> writer and reader nodes using the respective end-points.
+
+AuroraDB.2:
+
+> Once you are able to connect to both writer and reader nodes using the 
+> end-points, create a table in the writer node and insert some data into it.
+> Now connect to the reader node and check if you can access the same table 
+> and read the data in it.
+
+AuroraDB.3:
+
+> Now stop the writer node on the AuroraDB. 
+> Wait for sometime and validate that the reader node is promoted as the writer
+> node. Once the promotion is complete, connect to the new writer node and confirm 
+> if you are able to write data into the database tables.
 
 
 ## References
