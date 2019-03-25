@@ -1,4 +1,4 @@
-# Amazon Aurora DB :wave: hid missing
+# Amazon Aurora DB (hid: sp19-516-128)
 
 
 ---
@@ -85,15 +85,22 @@ For detailed pricing refer AWS Aurora Pricing documentation
 
 ## How to provision Aurora database
 
-:o: this section has lots of incomplete sentences that should be completed
+This section will help with steps to be followed to provision a database
+using AWS Aurora service.
 
+To be able to use AWS Aurora service, the user must have set up an
+AWS account as a pre-requisite. 
+An AWS account can be create using the link below
 
-Assumption: User must have an AWS account.
+[New AWS account creation URL](https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start)
 
 ### Step 1: Login to the AWS console.
 
-Console URL: [AWS Console URL](https://aws.amazon.com/console/).  On
-successful login, select RDS from the Database section or
+Login to the AWS account using the link below.
+
+[AWS Console URL](https://aws.amazon.com/console/).
+
+Upon successful login, select RDS from the Database section or
 alternatively, you can type RDS in the search bar to look up (see
 @fig:aws-aurora-console).
 
@@ -106,8 +113,6 @@ On the RDS home page, one can either click on the
 `Create Database` button in the Amazon Aurora section directly or 
 click on the `Create Database` button in the Create Database section
 (see @fig:aws-aurora-rdshome).
-
-:o: wrong quote
 
 ![AWS Aurora DB](images/auroradb-2.png){#fig:aws-aurora-rdshome}
 
@@ -195,16 +200,17 @@ port and parameter groups (see @fig:aws-aurora-advconfig-2).
 
 #### Step 7: Configure Advance Settings - Encryption and Failover
 
-:o: incomplete sentence
-
-(see @fig:aws-aurora-advconfig-3).
+Aurora database has options to configure encryption and failover
+policies to keep the data safe and highly available.
+These options are explained in the next few steps(see 
+@fig:aws-aurora-advconfig-3).
 
 ![AWS Aurora DB](images/auroradb-7.png){#fig:aws-aurora-advconfig-3}
 
 ##### Encryption
 
 Encryption on the database can be enabled only at the time of DB
-creation.Once enabled the database, associated replicas and snapshots
+creation. Once enabled the database, associated replicas and snapshots
 are all encrypted. One can either use the default KMS encryption keys
 provided by AWS or use their own encryption keys.
 
@@ -216,9 +222,10 @@ current writer.
 
 #### Step 8: Configure Advance Settings - Backtrack and Monitoring
 
-:o: incomplete sentence
-
-(see @fig:aws-aurora-advconfig-4).
+We can also configure settings for Backtrack and 
+Monitoring of the database.
+These options are explained in the next few steps (see 
+@fig:aws-aurora-advconfig-4).
 
 ![AWS Aurora DB](images/auroradb-8.png){#fig:aws-aurora-advconfig-4}
 
@@ -238,9 +245,10 @@ used etc for reporting.
 
 #### Step 9: Configure Advance Settings - Log Exports and Maintenance
 
-:o: incomplete sentence
-
-(see @fig:aws-aurora-advconfig-5).
+Options for exporting logs and maintenance of the database can be 
+configure as well. 
+These options are explained in the next few steps (see 
+@fig:aws-aurora-advconfig-5).
 
 ![AWS Aurora DB](images/auroradb-9.png){#fig:aws-aurora-advconfig-5}
 
@@ -296,39 +304,47 @@ retrieved by checking the Connectivity and Security tab (see
 
 ## Other details available in Aurora DB Console
 
-###  Monitoring Details
+###  Monitoring
 
-:o: section incomplete, caption not unique
+The Monitoring tab provides different visualization based 
+metrics like CPU Utilization, Active DB Connections, Network Throughput etc
+that help in the tracking database health and usage.
 
 ![AWS Aurora DB](images/auroradb-14.png){#fig:aws-aurora-connection-2}
 
-###  Logs and Events Details
+###  Logs and Events
 
-:o: section incomplete, caption not unique
+The Logs and Events tab provides logs and event details for errors, slow 
+running queries, long waits which can be used for debugging.
 
 ![AWS Aurora DB](images/auroradb-15.png){#fig:aws-aurora-logs}
 
-###  Configuration Details
+###  Configuration
 
-:o: section incomplete, caption not unique
+The Configuration tab lists all different DB attribute values for quick 
+reference. 
 
 ![AWS Aurora DB](images/auroradb-12.png){#fig:aws-aurora-config-details}
 
-###  Tag Details
+###  Tag
 
-:o: section incomplete, caption not unique
+The Tags tab lists all tags associated with the database.
+Tags are often used to apply labels as key and value pairs and allow to
+organize the resources together logically for cost and tracking.
 
 ![AWS Aurora DB](images/auroradb-16.png){#fig:aws-aurora-tag-details}
 
-## Updates to Aurora DB
+## Update Aurora DB
 
-:o: section incomplete, caption not unique
+This section details the different actions that can be taken on the Aurora
+database.
 
 ![AWS Aurora DB](images/auroradb-17.png){#fig:aws-aurora-updates}
 
 ### Modify
 
-:o: incomplete section
+A database instance can be modifed by clicking the `Modify` button on the
+top right corner. 
 
 This action allows to update the following list of attributes of Aurora DB:
 
@@ -346,7 +362,7 @@ This action allows to update the following list of attributes of Aurora DB:
 ### Reboot
 
 This action will kill all active sessions on the database and restart
-the servers.  All uncommitted transaction will be lost
+the servers.  All uncommitted transactions will be lost
 
 ### Delete
 
@@ -355,32 +371,83 @@ as a back pn AWS S3.
 
 ### Failover
 
-This action will make the next reader node as per the failover
-priority as the primary writer node.
+This action will make the next reader node as per the failover priority as the primary
+writer node.
 
 ### Take Snapshot
 
-This action allows to take a back up of the database and store to S3
-use for restore for point in time recovery.
+This action allows to take a back up of the database and store to S3 use for restore 
+for point in time recovery.
 
 ## Example
 
-:o: this section will include an example on how to interact with the
-AuroraDB in python.
+Once the database is set up and running, next step is to be able to connect and execute
+database queries.
 
-* <https://datascience-enthusiast.com/R/AWS_RDS_R_Python.html>
-* there are probably others, please develop your oen example
+Following is an example describing how to connect to AuororaDB using python.
+
+Install MySQL driver using pip
+
+	$ pip install mysql-connector
+	
+Once the python package is installed, the below python script can be used to connect to
+the database, create a table and list the tables in the database.
+
+```python
+import mysql.connector
+
+mysqlHostName = '<Database server>'
+mysqlUser = '<Database User>'
+mysqlPassword = '<Database User Password>'
+mysqlDatabase = '<Database Name>'
+mysqlPort = <Database Port>
+
+mydb = mysql.connector.connect(
+  host=mysqlHostName,
+  user=mysqlUser,
+  passwd=mysqlPassword,
+  database=mysqlDatabase,
+  port=mysqlPort
+)
+
+
+mycursor = mydb.cursor()
+
+mycursor.execute("CREATE TABLE my_user_table (name VARCHAR(255), address VARCHAR(255))")
+
+mycursor.execute("SHOW TABLES")
+
+for x in mycursor:
+  print(x)
+```
 
 
 ## Exercises
 
-AuroraDB.1: :o: define an exercise
+AuroraDB.1:
 
-AuroraDB.2: :o: define an exercise
+> Follow the steps defined in the sections above to create an AuroraDB instance
+> with a read replica in a different availabiblity zone. Once the main writer
+> instance and the read replica are available, check if you can connect to both 
+> writer and reader nodes using the respective end-points.
+
+AuroraDB.2:
+
+> Once you are able to connect to both writer and reader nodes using the 
+> end-points, create a table in the writer node and insert some data into it.
+> Now connect to the reader node and check if you can access the same table 
+> and read the data in it.
+
+AuroraDB.3:
+
+> Now stop the writer node on the AuroraDB. 
+> Wait for sometime and validate that the reader node is promoted as the writer
+> node. Once the promotion is complete, connect to the new writer node and confirm 
+> if you are able to write data into the database tables.
 
 
 ## References
 
 * <https://aws.amazon.com/rds/aurora/>
 
-:o: make sure to create also bibtex resources and put them in the bib directory
+:o: make sur eto create also bibtex resources and put them in the bib directory
