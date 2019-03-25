@@ -85,7 +85,7 @@ In the Configuration panel of the Developer Console, scroll down to
 the section titled `Add and Manage Public Keys` and click `Generate a
 Public/Private Keypair`:
 
-![Box Add Key](image/box_add_key.png)
+![Box Add Key](images/box_add_key.png)
 
 Once you have generated a keypair, a config.json file will
 automatically download. Save this file in a secure location as you
