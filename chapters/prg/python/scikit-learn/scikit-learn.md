@@ -1,5 +1,18 @@
 # Scikit-learn :o: {#s-scikitlearn}
 
+---
+
+**:mortar_board: Learning Objectives**
+
+
+* Exploratory data analysis
+* Pipeline to prepare data
+* Full learning pipeline
+* Fine tune the model
+* Significance tests
+
+---
+
 ## Introduction to Scikit-learn
 
 Scikit learn is a Machine Learning specific library used in Python. Library can be used for data mining and analysis. It is built on top of NumPy, matplotlib and SciPy. Scikit Learn features Dimensionality reduction, clustering, regression and classification algorithms. 
@@ -43,20 +56,8 @@ Few of them are listed here
 2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
    dimensional  space to two or three dimension.
 
-# Building a end to end pipeline for Supervised machine learning using Scikit-learn 
+## Building a end to end pipeline for Supervised machine learning using Scikit-learn 
 
----
-
-**:mortar_board: Learning Objectives**
-
-
-* Exploratory data analysis
-* Pipeline to prepare data
-* Full learning pipeline
-* Fine tune the model
-* Significance tests
-
----
 
 A data pipeline is a set of processing components that are sequenced to produce
 meaningful data. Pipelines are commonly used in Machine learning, since there is
@@ -111,7 +112,7 @@ plt.xlabel('Type')
 data.type.value_counts().plot.bar()
 ```
 
-![scikit-learn barplots](images/scikit-learn-barplot.png){#fig:scikit-learn-barplot}
+![Example of scikit-learn barplots](images/scikit-learn-barplot.png){#fig:scikit-learn-barplot}
 
 ### Correlation between attributes
 
