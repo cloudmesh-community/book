@@ -32,7 +32,7 @@ The following examples have been adapted from <https://developer.box.com/referen
 ### Authentication with JWT
 In the Configuration panel of the Developer Console, scroll down to the section titled 'Add and Manage Public Keys' and click 'Generate a Public/Private Keypair':
 
-![Box Add Key](image/box_add_key.png)
+![Box Add Key](images/box_add_key.png)
 
 Once you have generated a keypair, a config.json file will automatically download. Save this file in a secure location as you will need it for authentication purposes. Finally, you will need to read in this config file into your app:
 
