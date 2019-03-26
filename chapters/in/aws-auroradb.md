@@ -448,6 +448,4 @@ AuroraDB.3:
 
 ## References
 
-* <https://aws.amazon.com/rds/aurora/>
-
-:o: make sur eto create also bibtex resources and put them in the bib directory
+* <https://aws.amazon.com/rds/aurora/> [@aws-auroradb]
