@@ -1,4 +1,4 @@
-# Scikit-learn {s-scikitlearn}
+# Scikit-learn
 
 ---
 
@@ -333,6 +333,8 @@ Also in case you expect to receive more training data in the future that you wan
 1. Customer churn prediction.
 2. Credit Scoring & Fraud Detection which is our example problem which we are trying to solve in this chapter.
 3. Calculating the effectiveness of marketing campaigns.
+
+![scikit-learn](images/scikit-learn-logisticregression.png){#fig:scikit-learn-logisticregression}
 
 ### Decision trees
 
