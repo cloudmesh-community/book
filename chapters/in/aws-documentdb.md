@@ -1,6 +1,16 @@
-# AWS DocumentDB :o: hid missing
+# AWS DocumentDB (hid: sp19-516-134)
 
-:o: this seems incomplete
+---
+
+**:mortar_board: Learning Objectives**
+
+* Learn about AWS Document DB
+* Features and Benefits
+* Components
+* How to provision Document database
+* How to connect to Document Database
+
+---
 
 AWS Document DB is a fully managed service with compatibility with
 Mongo DB. Mongo DB application code can be run here with same drivers
