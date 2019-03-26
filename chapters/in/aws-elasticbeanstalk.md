@@ -248,8 +248,7 @@ next set of actions on the application environment:
 
 (see @fig:aws-beanstalk-manageenv)
 
-![AWS Beanstalk](images/elastic_beanstalk-12.png)
-{#fig:aws-beanstalk-manageenv}
+![AWS Beanstalk](images/elastic_beanstalk-12.png){#fig:aws-beanstalk-manageenv}
 
 ### Beanstalk Logs
 
@@ -499,8 +498,7 @@ creation of the beanstalk application and cannot be modified later
 This section allows to create and manage an RDS database as part of
 the beanstalk configuration (see @fig:aws-beanstalk-config-database).
 
-![AWS Beanstalk](images/elastic_beanstalk-31.png)
-{#fig:aws-beanstalk-config-database}
+![AWS Beanstalk](images/elastic_beanstalk-31.png){#fig:aws-beanstalk-config-database}
 
 ## References
 
