@@ -1,4 +1,4 @@
-# Scikit-learn {#s-scikitlearn}
+# Scikit-learn {s-scikitlearn}
 
 ---
 
