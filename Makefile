@@ -32,11 +32,9 @@ bigdata-epub-publish:
 communicate-epub:
 	cd communicate; make; make publish
 
-
-
 image:
 	docker build -t cloudmesh/book:${VERSION} . 
-    docker tag cloudmesh/book:${VERSION} cloudmesh/book:latest
+	docker tag cloudmesh/book:${VERSION} cloudmesh/book:latest
 
 image-push:
 	docker push cloudmesh/book
