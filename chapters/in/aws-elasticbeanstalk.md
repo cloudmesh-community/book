@@ -507,6 +507,5 @@ the beanstalk configuration (see @fig:aws-beanstalk-config-database).
 
 ## References
 
-* <https://aws.amazon.com/elasticbeanstalk/>
+* <https://aws.amazon.com/elasticbeanstalk/> [@www-aws-elasticbeanstalk]
 
-:o: create also bibtex
