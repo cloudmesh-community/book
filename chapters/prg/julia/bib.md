@@ -1,57 +1,94 @@
-www-julialang:
-	url: www.julialang.org
+@Misc{www-google,
+   author={{Google}},
+   title={Google Home Page},
+   howpublished={Web page},
+   url={https://google.com}
+}
 
-www-awscore:
-	url: https://github.com/JuliaCloud/AWSCore.jl
-	url: https://juliacloud.github.io/AWSCore.jl/build/index.html
-	
-www-infoworld:
-	https://www.infoworld.com/article/2616709/application-development/
-	new-julia-language-seeks-to-be-the-c-for-scientists.html
+@Misc{www-julialang,
+   url={https://www.julialang.org}
+}
+@Misc{www-awscore,
+   url={https://github.com/JuliaCloud/AWSCore.jl},
+   url={https://juliacloud.github.io/AWSCore.jl/build/index.html}
+}
 
-www-wired:
-	https://www.wired.com/2014/02/julia/
+@Misc{www-infoworld,
+   url={https://www.infoworld.com/article/2616709/application-development/
+	new-julia-language-seeks-to-be-the-c-for-scientists.html}
 
-www-pycall:
-	https://github.com/JuliaPy/PyCall.jl
-	
-@getting-started:
-	
+@Misc{www-wired,
+   url={https://www.wired.com/2014/02/julia/}
+}
 
-www-epubs-siam:
-	url: https://epubs-siam-org.proxyiub.uits.iu.edu/doi/pdf/10.1137/
-	141000671
-	authors:JEFF BEZANSON, ALAN EDELMAN, STEFAN KARPINSKI, AND VIRAL B. SHAH
+@Misc{www-pycall,
+   url={https://github.com/JuliaPy/PyCall.jl}
+}	
 
-@parallel-computing-julia:
-	authors: Kulyabov, D. S. ( 1,2 ), Gevorkyan, M. N. ( 1 ), Korolkova,
-	A. V. ( 1 ), & Sevastianov, L. A. ( 1,3 ). (n.d.).
-	title: Support for parallel computing in Julia language.
-	CEUR Workshop Proceedings, 1995, 93–99. Retrieved from
-	http://proxyiub.uits.iu.edu/login?url=https://search.ebscohost.com/login
+@Book{getting-started,
+   author={Balbaert, Ivo},
+   title={Getting Started with Julia},
+   howpublished={ePub},
+   year={2015},
+   url={http://ebookcentral.proquest.com/lib/iub-ebooks/detail.action?},
+   docID=1973847}
+}
+
+@Book{www-epubs-siam,
+   url={https://epubs-siam-org.proxyiub.uits.iu.edu/doi/pdf/10.1137/141000671},
+   authors={Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral Shah}
+}
+
+@Misc{@parallel-computing-julia,
+   authors={Kulyabov, D. S., Gevorkyan, M. N., Korolkova, A. V., & Sevastianov,
+   L. A.},
+   title={Support for parallel computing in Julia language},
+   publication={CEUR Workshop Proceedings},
+   year={1995},
+   pages={93–99},
+   url={http://proxyiub.uits.iu.edu/login?url=https://search.ebscohost.com/login
 	.aspx?direct=true&db=edselc&AN=edselc.2-52.0-85037041637&site=eds-live&
-	scope=site
+	scope=site},
+   howpublished={report}
+}
 
-@visible-universe:
-	References: Regier, J. ( 1 ), Lam, M. ( 1 ), Fischer, K. ( 2 ),
-	Pamnany, K. ( 3 ), Noack, A. ( 4 ), Revels, J. ( 4 ), Prabhat ( 6 ).
-	(n.d.).
-	Title: Cataloging the visible universe through Bayesian inference in
-	Julia at petascale.
-	Publication: Journal of Parallel and Distributed Computing,
-	Issue: 127,
-	Pages: 89–104.
-	URL: https://doi-org.proxyiub.uits.iu.edu/10.1016/j.jpdc.2018.12.008
+@Misc{visible-universe,
+   authors={Regier, J., Lam, M., Fischer, K.,Pamnany, K., Noack, A.,
+   Revels, J., Prabhat},
+   title={Cataloging the visible universe through Bayesian inference in
+   Julia at petascale},
+   publication={Journal of Parallel and Distributed Computing},
+   issue={127},
+   pages={89–104},
+   url={https://doi-org.proxyiub.uits.iu.edu/10.1016/j.jpdc.2018.12.008}
+}
 
-@fresh-approach:
+@Misc{fresh-approach,
+   authors={Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral Shah},
+   title={Julia: A Fresh Approach to Numerical Computing},
+   publication={SIAM Review},
+   volume={59},
+   number={1},
+   pages={65-98},
+   year={2017}
+}
+   
+@Misc{military-biomedical,
+   authors={Frank J. Lebeda, PhD; Jeffrey J. Zalatoris, PhD; Julia B. Scheerer,
+   PhD},
+   publication={Military Medicine},
+   volume={183},
+   year={2018}
+}
 
-@military-biomedical:
+@Misc{www-javacall,
+   url={http://juliainterop.github.io/JavaCall.jl}
+}
 
-@javacall:
-	url: http://juliainterop.github.io/JavaCall.jl/
+@Misc{spark-jl,
+   url={https://github.com/dfdx/Spark.jl}
+}
 
-@spark-jl:
-	url: https://github.com/dfdx/Spark.jl
-
-@elly-jl:
-	url: https://github.com/JuliaParallel/Elly.jl
+@Misc{elly-jl,
+   url={https://github.com/JuliaParallel/Elly.jl}
+}
