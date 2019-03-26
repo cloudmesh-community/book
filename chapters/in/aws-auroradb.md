@@ -1,5 +1,10 @@
 # Amazon Aurora DB (hid: sp19-516-128)
 
+:o: your sentences such as "This section currently allows" do not
+represent what is doen. The section does not allow this but the
+software. Remove phrases such as "This section currently allows" and
+replace them with appropirate text. For example: Next we will ...
+
 
 ---
 
