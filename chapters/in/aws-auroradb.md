@@ -448,4 +448,4 @@ AuroraDB.3:
 
 ## References
 
-* <https://aws.amazon.com/rds/aurora/> [@aws-auroradb]
+* <https://aws.amazon.com/rds/aurora/> [@www-aws-auroradb]
