@@ -463,7 +463,7 @@ grid_param = [
 
 
 ### Implementing Grid search with models and also creating metrics from each of the model.
-=======
+
 ```python
 Pipeline(memory=None,
      steps=[('preparation', FeatureUnion(n_jobs=None,
