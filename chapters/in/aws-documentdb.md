@@ -5,8 +5,9 @@
 **:mortar_board: Learning Objectives**
 
 * Learn about AWS Document DB
-* Features and Benefits
 * Components
+* Features and Benefits
+* Pricing
 * How to provision Document database
 * How to connect to Document Database
 
@@ -32,3 +33,34 @@ Components:
 
 2. Cluster Volumes - Volume can store upto 64 TB of data replicated
    across availability zones.
+   
+## Amazon DocumentDB Features and Benefits
+
+* *MongoDB-compatible*: Implemented using the Apache 2.0 open source 
+  MongoDB 3.6 API by emulating the responses that a MongoDB client 
+  expects from a MongoDB server. This allows you to use your existing 
+  MongoDB drivers and tools with Amazon DocumentDB.
+  
+* *Highly available*: Designed for 99.99% availability with six copies 
+  of data across three AWS Availability Zones (AZs). Switchs to read 
+  replica in the event of a failure–typically in less than 30 seconds.
+  Data is automatically backed up in S3 for 35 days.
+  
+* *Performance at scale*: It uses a distributed, fault-tolerant, 
+  self-healing storage system that auto-scales up to 64 TB per database 
+  cluster. Reduces database I/O by writing only database changes to 
+  the storage layer
+  
+* *Highly secure*: Provides multiple levels of security for your database, 
+  including network isolation using Amazon VPC, encryption at rest using
+  keys you create and control through AWS Key Management Service (KMS), 
+  and encryption-in-transit using Transport Layer Security (TLS). 
+  
+* *Fully managed*: Automatically and continuously monitors and backs up 
+   your database to Amazon S3, enabling point-in-time recovery 
+   (up to the second for the last 35 days). Integrates with Amazon CloudWatch, 
+   so you can monitor over 20 key operational metrics for your database 
+   instances via the AWS Management Console.
+  
+##  AWS Document database Pricing
+
