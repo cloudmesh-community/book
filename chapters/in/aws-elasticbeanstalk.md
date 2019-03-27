@@ -5,6 +5,9 @@ represent what is doen. The section does not allow this but the
 software. Remove phrases such as "This section currently allows" and
 replace them with appropirate text
 
+:o: a simple example woudl be good, if not addressed by student we want an 
+assignment so it can be done by somone else and we can assign this. create an excersise
+
 ---
 
 **:mortar_board: Learning Objectives**
