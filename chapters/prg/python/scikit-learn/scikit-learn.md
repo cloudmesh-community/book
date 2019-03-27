@@ -1,4 +1,4 @@
-# Scikit-learn {#s-scikitlearn}
+# Scikit-learn
 
 ---
 
@@ -325,6 +325,20 @@ Examples where linear regression can used are :
 2. Predict the sales for a future month
 3. Predict sales data and improve yearly projections.
 
+```python
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import StandardScaler
+import time
+scl= StandardScaler()
+X_train_std = scl.fit_transform(X_train)
+X_test_std = scl.transform(X_test)
+start = time.time()
+lin_reg = LinearRegression()
+lin_reg.fit(X_train_std, y_train) #SKLearn's linear regression
+y_train_pred = lin_reg.predict(X_train_std)
+train_time = time.time()-start
+```
+
 ### Logistic Regression
 
 This algorithm can be used to perform binary classification. It can be used if you want a probabilistic framework.
@@ -333,6 +347,23 @@ Also in case you expect to receive more training data in the future that you wan
 1. Customer churn prediction.
 2. Credit Scoring & Fraud Detection which is our example problem which we are trying to solve in this chapter.
 3. Calculating the effectiveness of marketing campaigns.
+
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+
+X_train, _, y_train, _ = train_test_split(X_train, y_train, stratify=y_train, train_size=subsample_rate, random_state=42)
+X_test, _, y_test, _ = train_test_split(X_test, y_test, stratify=y_test, train_size=subsample_rate, random_state=42)
+
+model_lr_sklearn = LogisticRegression(multi_class="multinomial", C=1e6, solver="sag", max_iter=15)
+model_lr_sklearn.fit(X_train, y_train)
+
+y_pred_test = model_lr_sklearn.predict(X_test)
+acc = accuracy_score(y_test, y_pred_test)
+results.loc[len(results)] = ["LR Sklearn", np.round(acc, 3)]
+results
+```
+
 
 ### Decision trees
 
@@ -346,11 +377,42 @@ Can be used for the following cases
 4. Build vs Buy decisions
 5. Sales lead qualifications
 
+```python
+from sklearn.tree import DecisionTreeRegressor
+dt = DecisionTreeRegressor()
+start = time.time()
+dt.fit(X_train_std, y_train)
+y_train_pred = dt.predict(X_train_std)
+train_time = time.time() - start
+
+start = time.time()
+y_test_pred = dt.predict(X_test_std)
+test_time = time.time() - start
+```
+
 ### K Means
 
 This algorithm is used when we are not aware of the labels and one needs to be created based on the features of objects. Example will be to divide a group of people into differnt subgroups based on common theme or attribute. 
 
 The main disadvantage of K-mean is that you need to know exactly the number of clusters or groups which is required. It takes a lot of iteration to come up with the best K.
+
+```python
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split, GridSearchCV, PredefinedSplit
+from sklearn.metrics import accuracy_score
+
+X_train, _, y_train, _ = train_test_split(X_train, y_train, stratify=y_train, train_size=subsample_rate, random_state=42)
+X_test, _, y_test, _ = train_test_split(X_test, y_test, stratify=y_test, train_size=subsample_rate, random_state=42)
+
+model_knn_sklearn = KNeighborsClassifier(n_jobs=-1)
+model_knn_sklearn.fit(X_train, y_train)
+
+y_pred_test = model_knn_sklearn.predict(X_test)
+acc = accuracy_score(y_test, y_pred_test)
+
+results.loc[len(results)] = ["KNN Arbitary Sklearn", np.round(acc, 3)]
+results
+```
 
 ### Support Vector Machines
 
@@ -384,6 +446,20 @@ Few case where it can be applied.
 1. Predict patients for high risks.
 2. Predict parts failures in manufacturing.
 3. Predict loan defaulters.
+
+```python
+from sklearn.ensemble import RandomForestRegressor
+forest = RandomForestRegressor(n_estimators = 400, criterion='mse',random_state=1, n_jobs=-1)
+start = time.time()
+forest.fit(X_train_std, y_train)
+y_train_pred = forest.predict(X_train_std)
+train_time = time.time() - start
+
+start = time.time()
+y_test_pred = forest.predict(X_test_std)
+test_time = time.time() - start
+```
+
 
 ### Neural networks
 
@@ -463,7 +539,7 @@ grid_param = [
 
 
 ### Implementing Grid search with models and also creating metrics from each of the model.
-=======
+
 ```python
 Pipeline(memory=None,
      steps=[('preparation', FeatureUnion(n_jobs=None,
