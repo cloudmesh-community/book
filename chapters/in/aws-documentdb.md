@@ -64,3 +64,14 @@ Components:
   
 ##  AWS Document database Pricing
 
+* *On-Demand Instance Pricing*: No commitments and pay by hour 
+* *Database Storage and IOs* : Storage is billed in per GB-month increments and IOs are billed in per million request increments.
+* *Backup Storage* : Cost associated with cluster backups and any customer-initiated cluster snapshots.
+
+## How to provision Document database
+
+User needs to have a AWS account to use the Document DB service. First step is to create a AWS account. Once created login to the account. 
+
+
+
+
