@@ -1,18 +1,30 @@
 # Artificial Intelligence Service with REST
 
+
+:o: bibs midsning
+
+:o: almost all itemize list are wrong when they go over tow lines the must be indented
+
+Example:
+
+* list with long lines thet go over multiple lines.
+  the next line must be indented such as here
+* next list with long lines thet go over multiple lines.
+  the next line must be indented such as here
+
 ## AI and ML offerings by Cloud service providers
 
 All major cloud service providers offer a suite of AI and ML products 
 and services. A few of the notable services include, but are not limited to:
 
-* [Amazon ML](https://aws.amazon.com/machine-learning/)
-* [Google Cloud AI](https://cloud.google.com/products/ai/)
-* [IBM Watson](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/wml-ai.html)
-* [Microsoft Azure ML Studio](https://studio.azureml.net/)
+* [Amazon ML](https://aws.amazon.com/machine-learning/) [@BIBMISSING]
+* [Google Cloud AI](https://cloud.google.com/products/ai/) [@BIBMISSING]
+* [IBM Watson](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/wml-ai.html) [@BIBMISSING]
+* [Microsoft Azure ML Studio](https://studio.azureml.net/) [@BIBMISSING]
 
 A few Cloud service providers expose REST based APIs to the 
 users and one such API is 
-[Google Cloud Vision API](https://cloud.google.com/vision/) which 
+[Google Cloud Vision API](https://cloud.google.com/vision/) [@BIBMISSING] which 
 we will discuss in the next section and illustrate the usage with an example.
 
 
@@ -60,7 +72,6 @@ path of the JSON key file downloaded.
 
 ```bash
 pip install --upgrade google-cloud-vision
-
 ```
 
 
@@ -81,7 +92,6 @@ from flask import jsonify
 # Imports the Google Cloud client library
 from google.cloud import vision
 from google.cloud.vision import types
-
 
 def get_labels(image_name):
     current_path = os.getcwd()
@@ -109,8 +119,7 @@ def get_labels(image_name):
     for label in labels:
         label_list.append(label.description)
     label_dict['Labels'] = label_list
-    return jsonify(label_dict)
-    
+    return jsonify(label_dict)   
 ```
 
 Next, we create an OpenAPI specification which will be read to 
@@ -164,7 +173,6 @@ definitions:
     properties: 
       label:
         type: "string"
-
 ```
 
 
@@ -194,21 +202,20 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(port=8080, debug=True)
-    
+    app.run(port=8080, debug=True)    
 ```
 
 To implement the REST service, run the following on the terminal:
 
 ```bash
-python server.py
+$ python server.py
 ```
 
 Once the connection is established, run the following CURL command 
 on the terminal
 
 ```bash
-curl http://localhost:8080/airest/gcv/mp1.jpg
+$ curl http://localhost:8080/airest/gcv/mp1.jpg
 ```
 
 Input image `mp1.jpg` is shown in the @fig:gcv-testimage: 
@@ -233,9 +240,7 @@ Output response from the REST API:
     "Ancient history"
   ]
 }
-
 ```
-
 
 ## Naive Bayes Algorithm for Text classification
 
@@ -353,9 +358,7 @@ def download_data():
         block_blob_service.get_blob_to_path(container_name, filename, full_path_to_file)
 
     return 'Datasets downloaded'
-
 ```
-
 
 **Step-2:**
 
@@ -402,7 +405,6 @@ def file_clean(infile, label, writeFile):
         toWrite = label+","+words 
         writeFile.write(toWrite)
         writeFile.write("\n") 
- 
 ```
 
 
@@ -459,8 +461,7 @@ def get_data_label(inp_file):
         arr = line.replace("\n", "").split(",")  # split with comma
         label.append(arr[0])  # first element is class label
         data.append(arr[1].replace("\n", ""))  # second element is SMS
-    return data, label
-    
+    return data, label 
 ```
 
 **Step-4:**
@@ -548,7 +549,6 @@ paths:
 definitions:
   AI:
     type: string
-
 ```
 
 
@@ -580,14 +580,13 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(port=8080, debug=True)
-    
+    app.run(port=8080, debug=True)   
 ```
 
 To implement the REST service, run the following on the terminal:
 
 ```bash
-python server.py
+$ python server.py
 ```
 
 Once the connection is established, 
@@ -595,19 +594,19 @@ following CURL command can be used for the 1st endpoint which will
 download training and test datasets to local library.
 
 ```bash
-curl http://localhost:8080/airest/ai/getdata
+$ curl http://localhost:8080/airest/ai/getdata
 ```
 
 Following CURL command can be used for the 2nd endpoint which will 
 pre-process the test dataset
 
 ```bash
-curl http://localhost:8080/airest/ai/testdata/2990
+$ curl http://localhost:8080/airest/ai/testdata/2990
 ```
 
 Following CURL command can be used for the 3rd endpoint which will build 
 the model to classify the test data and finally return the accuracy
 
 ```bash
-curl http://localhost:8080/airest/ai/nb
+$ curl http://localhost:8080/airest/ai/nb
 ```
