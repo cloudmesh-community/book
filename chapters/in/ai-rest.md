@@ -73,7 +73,7 @@ path of the JSON key file downloaded.
 * Install the client library as follows:
 
 ```bash
-pip install --upgrade google-cloud-vision
+$ pip install --upgrade google-cloud-vision
 ```
 
 
@@ -315,7 +315,7 @@ import connexion
 ```
 
 
-**Step-1:**
+**Step 1:**
 
 Note: This step downloads data from Azure cloud Blob storage. Prior to 
 replicating this step, datasets need to be uploaded to your respective Azure 
@@ -362,7 +362,7 @@ def download_data():
     return 'Datasets downloaded'
 ```
 
-**Step-2:**
+**Step 2:**
 
 Pre-processing test data involves following tasks:
 
@@ -410,7 +410,7 @@ def file_clean(infile, label, writeFile):
 ```
 
 
-**Step-3:**
+**Step 3:**
 
 After the Test dataset has been cleaned and labelled, we now run the 
 Multinomial Naive Bayes algorithm on training data and use the model
@@ -466,7 +466,7 @@ def get_data_label(inp_file):
     return data, label 
 ```
 
-**Step-4:**
+**Step 4:**
 
 Now we define an OpenAPI specification in yaml format to create 2 different 
 endpoints for functions defined in the revios 3 steps. 
@@ -554,7 +554,7 @@ definitions:
 ```
 
 
-**Step-5:**
+**Step 5:**
 
 Finally, we create a module (`server.py`) to use connexion service to read the 
 above created OpenAPI specification (`ai.yaml`) and dynamically call the methods 
