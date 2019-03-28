@@ -5,6 +5,8 @@
 
 :o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS`
 
+:o: could screenshots bee redone on windows that are less wide with larger font, quality is bad due to unneded space
+
 :o: Gregor fixed all itemized lists, they all had wrong indentation.
 
 :o: Gregor fixed all bash with missing $
