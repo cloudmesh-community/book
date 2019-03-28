@@ -190,6 +190,7 @@ tree.write('output.xml')
 ```
 
 Other Python modules used for parsing XML data include 
+
 * minidom (<https://docs.python.org/3/library/xml.dom.minidom.html>)
 * BeautifulSoup (<https://www.crummy.com/software/BeautifulSoup/>)
 
