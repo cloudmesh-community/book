@@ -1,11 +1,5 @@
 # Amazon Aurora DB (hid: sp19-516-128)
 
-:o: your sentences such as "This section currently allows" do not
-represent what is doen. The section does not allow this but the
-software. Remove phrases such as "This section currently allows" and
-replace them with appropirate text. For example: Next we will ...
-
-
 ---
 
 **:mortar_board: Learning Objectives**
@@ -90,8 +84,8 @@ For detailed pricing refer AWS Aurora Pricing documentation
 
 ## How to provision Aurora database
 
-This section will help with steps to be followed to provision a database
-using AWS Aurora service.
+In this section we will discuss the steps to be followed to provision a 
+database using AWS Aurora service.
 
 To be able to use AWS Aurora service, the user must have set up an
 AWS account as a pre-requisite. 
@@ -198,7 +192,7 @@ example.
 
 #### Step 6: Configure Advance Settings - Database Options
 
-This section will help define the database cluster, database name,
+In this section we can specify the database cluster, database name,
 port and parameter groups (see @fig:aws-aurora-advconfig-2).
 
 ![AWS Aurora DB](images/auroradb-6.png){#fig:aws-aurora-advconfig-2}
@@ -259,16 +253,16 @@ These options are explained in the next few steps (see
 
 ##### Log Exports
 
-This section helps user to define which types of logs (Audit, Error,
+User can define which types of logs (Audit, Error,
 General, Slow Query) AWS will export. The selected logs options are
 exported to AWS S3 buckets and can retrieved at a later point of time
 analysis.
 
 ##### Maintenance 
 
-This section allows to enable and disable auto minor version upgrades to
-the database. No need to worry updating minor software packages. One
-can also define a preferred window for upgrades.
+Maintenance section gives options to enable and disable auto minor 
+version upgrades to the database. No need to worry updating minor 
+software packages. One can also define a preferred window for upgrades.
 
 ##### Deletion protection
 
@@ -341,7 +335,7 @@ organize the resources together logically for cost and tracking.
 
 ## Update Aurora DB
 
-This section details the different actions that can be taken on the Aurora
+Next we will discuss the different actions that can be taken on the Aurora
 database.
 
 ![AWS Aurora DB](images/auroradb-17.png){#fig:aws-aurora-updates}
