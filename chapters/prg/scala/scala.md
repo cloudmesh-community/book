@@ -164,7 +164,7 @@ equivalent of java.lang.Object.
 @fig:scala-type-hierarchy (taken from [@scala-type-hierarchy]) shows a subset of 
 Scala type hierarchy:
 
-![A subset of the type hierarchy](images/unified-types-diagram.svg){#fig:scala-type-hierarchy}
+![A subset of the type hierarchy](images/unified-types-diagram.png){#fig:scala-type-hierarchy}
 
 
 
