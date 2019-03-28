@@ -1,8 +1,10 @@
 # Infrastructure as Code (IaC) - Terraform
 
+:o: document does not reflect separation between IaC and terraform as discussed in meeting
 
 ## Learning Objectives
 
+:o: se how we do objectives in other documents  emoji and lines are missing
 
 * Introduction to IaC and listing of IaC Tools
 * Introduction to Terraform
@@ -14,6 +16,7 @@
 
 
 IaC(Infrastructure as Code), from the book Amazon Webservices in Action [@awsinactionbook]), is 
+
 > the process of using a high level programming language to control IT
 > systems -- servers, databases, networks, and so on." 
 
@@ -22,7 +25,7 @@ using physical hardware configuration, and interactive configuration tools." [@W
 
 From the book "Amazon Web Services in Action" by Wittig [@awsinactionbook], using a script or a declarative description has
 the following advantages 
-> 
+ 
 > * Consistent usage
 > * Dependencies are handled
 > * Replicable
@@ -35,12 +38,12 @@ the following advantages
 
 IaC solves the problem of *environment drift*, that used to lead to the infamous
 "but it works on my machine" kind of errors that are difficult to
-trace. Sam Guckenheimer [@WhatisIaC002] writes that "
-> IaC guarantees Idempotence -- known/predictable end state --  irrespective of starting
+trace. According to [@WhatisIaC002]
+
+> "IaC guarantees Idempotence -- known/predictable end state --  irrespective of starting
 > state. Idempotency is achieved by either automatically configuring an
 > existing target or by discarding the existing target and recreating a
-> fresh environment.
-"
+> fresh environment."
 
 IaC tools that are cloud specific are
 Amazon AWS - AWS CloudFormation
@@ -48,7 +51,9 @@ Google Cloud - Cloud Deployment Manager
 Microsoft Azure - Azure Resource Manager
 OpenStack - Heat
 
-From the book "Terraform - Up and Running" by Yevgeniy Brikman [@terraformuprunningbook], there are" 
+According to [@terraformuprunningbook], there are
+
+" 
 > 4 broad categories of IaC tools
 > * Ad hoc scripts: Any shell, Python, Perl, Lua scripts that are written
 > * Configuration management tools: Chef, Puppet, Ansible, SaltStack

@@ -1,7 +1,7 @@
 #
 # USE ARCHLINUX
 #
-FROM base/archlinux
+FROM archlinux/base:latest
 
 MAINTAINER Gregor von Laszewski <laszewski@gmail.com>
 
@@ -18,6 +18,7 @@ RUN yes | pacman -Sy git
 RUN yes | pacman -Sy graphviz
 RUN yes | pacman -Sy make
 RUN yes | pacman -Sy biber
+RUN yes | pacman -Sy emacs
 
 ENV PATH="${PATH}:/usr/bin/vendor_perl"
 #
