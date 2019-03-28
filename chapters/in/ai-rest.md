@@ -1,18 +1,15 @@
 # Artificial Intelligence Service with REST
 
 
-:o: bibs midsning
-
-:o: almost all itemize list are wrong when they go over tow lines the must be indented
-
-Example:
-
-* list with long lines thet go over multiple lines.
-  the next line must be indented such as here
-* next list with long lines thet go over multiple lines.
-  the next line must be indented such as here
+:o: bibs missning
 
 :o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS`
+
+:o: Gregor fixed all itemized lists, they all had wrong indentation.
+
+:o: Gregor fixed all bash with missing $
+
+:o: Gregor fixed all python removing the last line
 
 ## AI and ML offerings by Cloud service providers
 
@@ -42,11 +39,11 @@ requests and responses.
 Images can be provided to the API in 3 different ways [@www-googlevisionapi]:
 
 * As a base64-encoded image string. If the image is stored locally, 
-it can be converted into a string and pass it as the value of image.content
+  it can be converted into a string and pass it as the value of image.content
 * As a Google Cloud Storage URI. Pass the full URI as the value of 
-image.source.imageUri
+  image.source.imageUri
 * As a publicly-accessible HTTP or HTTPS URL. Pass the URL as the 
-value of image.source.imageUri
+  value of image.source.imageUri
 
 In this section, we showcase how to use Google Cloud Vision API for label 
 detection in an image using a REST service. 
@@ -54,21 +51,21 @@ detection in an image using a REST service.
 Following are the pre-requisites before we can start using the API:
 
 * Sign in to google account and create a Google Cloud Platform Project 
-as shown in the @fig:gcp-project. Make sure billing is enabled. 
+  as shown in @fig:gcp-project. Make sure billing is enabled. 
 
 ![GCP-Project](images/gcp-project.png){#fig:gcp-project}
 
-* Enable Cloud Vision API as shown in the @fig:gcp-api: 
+* Enable Cloud Vision API as shown in @fig:gcp-api: 
 
 ![GCV-API](images/gcv-api.png){#fig:gcp-api}
 
-* In the GCP console, create service account key as shown in the 
-@fig:gcp-key. Save the JSON file that contains the key.
+* In the GCP console, create service account key as shown in 
+  @fig:gcp-key. Save the JSON file that contains the key.
 
 ![GCV-KEY](images/gcv-accountkey.png){#fig:gcp-key}
 
 * Set the envionment variable *GOOGLE_APPLICATION_CREDENTIALS* to the 
-path of the JSON key file downloaded.
+  path of the JSON key file downloaded.
 
 * Install the client library as follows:
 
@@ -220,7 +217,7 @@ on the terminal
 $ curl http://localhost:8080/airest/gcv/mp1.jpg
 ```
 
-Input image `mp1.jpg` is shown in the @fig:gcv-testimage: 
+Input image `mp1.jpg` is shown in @fig:gcv-testimage: 
 
 ![GCV-Test Image](images/mp1.png){#fig:gcv-testimage}
 
@@ -258,14 +255,15 @@ the datasets are made available in an Azure public blob storage container
 and the links are mentioned in the following details: 
 
 * Training data: We will utilize a pre-processed training dataset with labels 
-attached to each review as *positive* or *negative*. Training data can be 
-downloaded from 
-[here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
+  attached to each review as *positive* or *negative*. Training data can be 
+  downloaded from 
+  [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
 
 * Test data: Test dataset has been setup in such a way that first 2989 reviews 
-are positive and rows from 2990 to 4321 are negative reviews. Test data needs 
-to pre-processed and cleaned before the algorithm is implemented. After the 
-test data is cleaned, we will label the test data as per the information given. 
+  are positive and rows from 2990 to 4321 are negative reviews. Test data needs 
+  to pre-processed and cleaned before the algorithm is implemented. After the 
+  test data is cleaned, we will label the test data as per the information given. 
+
 Finally, we will implement 
 Multinomial Naive Bayes classifier algorithm and calculate the accuracy of the 
 test prediction. Test data can be downloaded from 
@@ -274,7 +272,7 @@ test prediction. Test data can be downloaded from
 To implement machine learning algorithm on text documents we will use 
 scikit-learn feature extraction modules. Please refer to related documentation 
 in the following scikit-learn link - 
-[Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html).
+[Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html) [@BIBTEXMISSING].
 
 For the current example we will use the following specific modules:
 
@@ -289,12 +287,12 @@ Solution will be implemented in following steps:
 * **Step-2:** Define a function to pre-process *Test* dataset.
 * **Step-3:** Define a function to implement Naive Bayes algorithm.
 * **Step-4:** Define an OpenAPI specification in a YAML file. 
-The specification will have 3 endpoints for each of the previous steps:
+  The specification will have 3 endpoints for each of the previous steps:
   * Download training and test datasets.
   * Pre-process Test data with parameter.
   * Build Naive Bayes classification model and return test accuracy.
 * **Step-5:** Create a module to use the connexion service and read in the 
-OpenAPI specification from the yaml file.
+  OpenAPI specification from the yaml file.
 
 
 Pre-requisites:
@@ -366,12 +364,12 @@ def download_data():
 
 Pre-processing test data involves following tasks:
 
- * Cleaning the text data i.e. remove unwanted characters, convert all text 
- to lower case, delete any extra spaces and finally join all the words
- together into sentences.
- * Label the rows as per the information provided i.e. label first 2989 rows 
- as *positive* and rest as *negative*. We will take 2990 as a input parameter
- when we define the endpoint.
+* Cleaning the text data i.e. remove unwanted characters, convert all text 
+  to lower case, delete any extra spaces and finally join all the words
+  together into sentences.
+* Label the rows as per the information provided i.e. label first 2989 rows 
+  as *positive* and rest as *negative*. We will take 2990 as a input parameter
+  when we define the endpoint.
  
 
 ```python
@@ -472,11 +470,11 @@ Now we define an OpenAPI specification in yaml format to create 2 different
 endpoints for functions defined in the revios 3 steps. 
 
 * Functions defined in step-1, step-2 and step-3 need to be 
-part of a module named `ai.py` 
+  part of a module named `ai.py` 
 * operationId in the specification will correspond to the names of the functions
-defined in each of the previous steps respectively.
+  defined in each of the previous steps respectively.
 * The input parameter required for function in step-2 will be passed as inline 
-parameter (linenum) for the endpoint to pre-process test dataset.
+  parameter (linenum) for the endpoint to pre-process test dataset.
 
 
 ```python
