@@ -27,11 +27,11 @@ Assignees can change the summary to done. We will experiment with possibly addit
 
 
 ## Internal Issues
-
-
-
+()
+()
+()
 .<div class="smalltable">
-
+()
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
 | 20 | 289 | [add to datacenter section][i289] | tbalson | internal |
@@ -62,16 +62,16 @@ Assignees can change the summary to done. We will experiment with possibly addit
 | 82 | 68 | [internal: bib: create bibtex entries for go-intro.md][i68] | bfeng | internal |
 | 87 | 47 | [Internal: Hot cold isles in data center][i47] | pulasthi | assigned internal |
 
-
+()
 .</div>
-
+()
 
 ## Open Sections
-
-
-
+()
+()
+()
 .<div class="smalltable">
-
+()
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
 | 1 | 320 | [internal: improve python code in AI ][i320] | tbalson | e222 open section |
@@ -99,16 +99,16 @@ Assignees can change the summary to done. We will experiment with possibly addit
 | 59 | 232 | [Section: Port forwarding][i232] | ameet20 | open section |
 | 62 | 223 | [Open: Section CircleCi][i223] | None | open section |
 
-
+()
 .</div>
-
+()
 
 ## Open Chapters
-
-
-
+()
+()
+()
 .<div class="smalltable">
-
+()
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
 | 6 | 312 | [jupyterhub on kubernetes][i312] | None | chapter open |
@@ -120,16 +120,16 @@ Assignees can change the summary to done. We will experiment with possibly addit
 | 39 | 255 | [Julia][i255] | keithhickman08 | chapter open |
 | 56 | 236 | [Open: EMR section(s)][i236] | None | chapter open |
 
-
+()
 .</div>
-
+()
 
 ## Assigned Sections
-
-
-
+()
+()
+()
 .<div class="smalltable">
-
+()
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
 | 2 | 319 | [OpenApi Tools][i319] | pulasthi | assigned open section |
@@ -139,16 +139,16 @@ Assignees can change the summary to done. We will experiment with possibly addit
 | 52 | 242 | [Scikit-Learn][i242] | anthonyduer | assigned section |
 | 58 | 233 | [Section: AWS DocumentDB][i233] | manjunathsivan | assigned section |
 
-
+()
 .</div>
-
+()
 
 ## Assigned Chapters
-
-
-
+()
+()
+()
 .<div class="smalltable">
-
+()
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
 | 27 | 272 | [Assigned: Puppet][i272] | tandon-ritz | assigned chapter |
@@ -156,38 +156,38 @@ Assignees can change the summary to done. We will experiment with possibly addit
 | 35 | 259 | [Open: Box][i259] | kelifine | assigned chapter |
 | 38 | 256 | [Assigned: Chapter & Sections: Scala for cloud computing][i256] | hrbahramian | assigned chapter |
 
-
+()
 .</div>
-
+()
 
 ## Open Projects
-
-
-
+()
+()
+()
 .<div class="smalltable">
-
+()
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
 | 57 | 234 | [Project: Virtual Cloud Directory][i234] | None | open project |
 
-
+()
 .</div>
-
+()
 
 ## Assigned Projects
-
-
-
+()
+()
+()
 .<div class="smalltable">
-
+()
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
 
-
+()
 .</div>
+()
 
-
-
+()
 
 [i320]: https://github.com/cloudmesh-community/book/issues/320
 [i319]: https://github.com/cloudmesh-community/book/issues/319
