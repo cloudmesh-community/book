@@ -12,6 +12,8 @@ Example:
 * next list with long lines thet go over multiple lines.
   the next line must be indented such as here
 
+:o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS`
+
 ## AI and ML offerings by Cloud service providers
 
 All major cloud service providers offer a suite of AI and ML products 
