@@ -119,6 +119,10 @@ Once the cluster is created , you can see the status as available.
 
 ![AWS DocumentDB](images/documentdb-5.png){#fig:aws-cluster available}
 
+All the cluster instances that got created in the process as per configuration can be seen in the details.
+
+![AWS DocumentDB](images/documentdb-9.png){#fig:aws-cluster Instances}
+
 ### Step 4: Cluster summary and connection information from Mongo and Application.
 
 Cluster Information along with the required connection information from Mongo and for 
