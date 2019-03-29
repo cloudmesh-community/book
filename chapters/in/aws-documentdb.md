@@ -145,7 +145,7 @@ Cloudwatch provides differnt type of metrics to keep a tab on the clusters
 ## How to connect to Document Database
 
 TLS is enabled on Amazon DocumentDB clusters by default. We can connect to Document DB in both cases where in the TLS is enabled or not.
-To connect to Document DB using Python, following steps needs to be taken programatically
+To connect to Document DB with TLS enabled , following steps needs to be taken programatically in python
 
 ```python
 import pymongo
@@ -173,3 +173,29 @@ print(x)
 client.close()
 ```
 
+Similarly to connect to the cluster with TLS disabled, following code can be used.
+
+```python
+
+##Create a MongoDB client and open connection to Amazon DocumentDB
+client = pymongo.MongoClient('mongodb://<dbusername>:<dbpassword>@mycluster.node.us-east-1.docdb.amazonaws.com:27017/?replicaSet=rs0')
+
+##Specify the database to be used
+db = client.test
+
+##Specify the collection to be used
+col = db.myTestCollection
+
+##Insert a single document
+col.insert_one({'hello':'Amazon DocumentDB'})
+
+##Find the document that was previously written
+x = col.find_one({'hello':'Amazon DocumentDB'})
+
+##Print the result to the screen
+print(x)
+
+##Close the connection
+client.close()
+
+```
