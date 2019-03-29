@@ -127,7 +127,7 @@ section [@hid-sp18-521-emrprocess].
 
 ![Cluster Steps](images/emr_cluster_steps.png){#fig:cluster-steps}
 
-![Additional Steps](images/emr_cluster_steps2.png){#fig:additional-steps}
+![Additional Steps [Source](https://aws.amazon.com/emr/)](images/emr_cluster_steps2.png){#fig:additional-steps}
 
 ## Teardown
 
@@ -157,6 +157,6 @@ the section have been deleted, you can then be certain that no
 additional costs will continue to accrue based on the work performed in
 this section [@hid-sp18-521-emrreset].
 
-![Terminate](images/emr_terminate.png){#fig:terminate}
+![Terminate [Source](https://aws.amazon.com/emr/)](images/emr_terminate.png){#fig:terminate}
 
-![Bucket](images/s3_delete_bucket.png){#fig:bucket}
+![Bucket [Source](https://aws.amazon.com/emr/)](images/s3_delete_bucket.png){#fig:bucket}
