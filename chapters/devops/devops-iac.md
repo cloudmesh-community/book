@@ -60,12 +60,10 @@ Typically, the workflow of the DevOps team includes running Configuration Manage
 
 
 There are 4 broad categories of such tools  [@terraformuprunningbook], there are
-> " 
 > * Ad hoc scripts: Any shell, Python, Perl, Lua scripts that are written
 > * Configuration management tools: Chef, Puppet, Ansible, SaltStack
 > * Server templating tools: Docker, Packer, Vagrant
 > * Server provisioning tools: Terraform, Heat, CloudFormation, Cloud Deployment Manager, Azure Resource Manager 
-> "
 
 Configuration Management tools make use of scripts to achieve a state. IaC tools maintain state and metadata created in the past. 
 
@@ -97,10 +95,10 @@ IaC solves the problem of *environment drift*, that used to lead to the infamous
 "but it works on my machine" kind of errors that are difficult to
 trace. According to [@WhatisIaC002]
 
-> "IaC guarantees Idempotence -- known/predictable end state --  irrespective of starting
+> IaC guarantees Idempotence -- known/predictable end state --  irrespective of starting
 > state. Idempotency is achieved by either automatically configuring an
 > existing target or by discarding the existing target and recreating a
-> fresh environment."
+> fresh environment.
 
 
 
