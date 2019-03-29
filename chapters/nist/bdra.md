@@ -265,7 +265,7 @@ In addition we recognize two fabrics layers:
 * Security and Privacy Fabric
 * Management Fabric
 
-![NIST-BDRA (see Volume 2)](images/nist-arch.png){#fig:nist-arch}
+![NIST-BDRA (see [Volume 2](https://bigdatawg.nist.gov/_uploadfiles/NIST.SP.1500-2r1.pdf))](images/nist-arch.png){#fig:nist-arch}
 
 
 While looking at the actors depicted in @fig:nist-roles we need
@@ -274,9 +274,9 @@ This is an important distinction to the original depiction in the
 definition as it is clear that an automated service could act in
 behalf of the actors listed in each of the categories.
 
-![NIST Roles (see Volume 2)](images/nist-roles.png){#fig:nist-roles}
+![NIST Roles (see [Volume 2](https://bigdatawg.nist.gov/_uploadfiles/NIST.SP.1500-2r1.pdf))](images/nist-roles.png){#fig:nist-roles}
 
-For a detailed definition wich is beyond the scope of this document we refer to the Volume 2 of the documents. 
+For a detailed definition wich is beyond the scope of this document we refer to the Volume 2 of the documents.
 
 ## Framework Providers
 
@@ -288,7 +288,7 @@ big data:
 2. Data Organization and Distribution systems such as offered in Indexed Storage and File Systems
 3. Processing engines offering batch, interactive, and streaming services to provide computing and analytics activities
 
-Messaging and communication takes place between these layer while resource management is used to address efficiency. 
+Messaging and communication takes place between these layer while resource management is used to address efficiency.
 
 Frameworks such as Spark and Hadoop include components form multiple
 of these categories to create a vertical integrated system. Often they
