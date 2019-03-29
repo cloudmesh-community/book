@@ -1,10 +1,8 @@
 # Terraform
 
-:o: document does not reflect separation between IaC and terraform as discussed in meeting
 
 ## Learning Objectives
 
-:o: se how we do objectives in other documents  emoji and lines are missing
 
 ---
 
