@@ -1,10 +1,8 @@
 # Infrastructure as Code (IaC)
 
-:o: document does not reflect separation between IaC and terraform as discussed in meeting
 
 ## Learning Objectives
 
-:o: se how we do objectives in other documents  emoji and lines are missing
 
 ---
 
@@ -19,16 +17,14 @@
 
 ---
 
+
 ## Introduction to IaC 
 
 
-IaC(Infrastructure as Code), from the book Amazon Webservices in Action [@awsinactionbook]), is 
+IaC(Infrastructure as Code) is the ability of code to generate, maintain and destroy application infrastructure like server, storage and networking, without requiring manual changes.
+State of the infrastructure is maintained in files.
 
-> the process of using a high level programming language to control IT
-> systems -- servers, databases, networks, and so on." 
-
-The infrastructure can be created, configured and destroyed "by means of code rather than
-using physical hardware configuration, and interactive configuration tools." [@WikipediaInfraAsCode001].  
+Cloud architectures, and containers have forced usage of IaC, as the amount of elements to manage at each layer are just too many. It is impractical to keep track with the traditional method of raising tickets and having someone do it for you. Scaling demands, elasticity during odd hours, usage-based-billing all require provisioning, managing and destroying infrastructure much more dynamically.
 
 From the book "Amazon Web Services in Action" by Wittig [@awsinactionbook], using a script or a declarative description has
 the following advantages 
@@ -42,6 +38,8 @@ the following advantages
 > * Minimizes human failure
 > * Documentation for your infrastructure 
 
+Sometimes IaC tools are also called Orchestration tools, but that label is not as accurate, and often misleading.
+
 
 ## How IaC is related to DevOps
 
@@ -53,22 +51,21 @@ DevOps has the following key practices
 * Continuous Build - Integrate - Test - Deploy
 * Continuous Monitoring and Observability
 
-The first 2 practices - Automated Infrastructure and Automated Configuration Management - can be satisfied by many IaC tools.
+The first practice - Automated Infrastructure can be fulfilled by IaC tools. By having the code for IaC and Configuration Management in the same code repository as application code ensures adhering to the practice of shared version control.
 
-According to [@terraformuprunningbook], there are
-" 
-> 4 broad categories of such tools
-> * Ad hoc scripts: Any shell, Python, Perl, Lua scripts that are written
-> * Configuration management tools: Chef, Puppet, Ansible, SaltStack
-> * Server templating tools: Docker, Packer, Vagrant
-> * Server provisioning tools: Terraform, Heat, CloudFormation, Cloud Deployment Manager, Azure Resource Manager
-> 
-> Chef and Ansible encourage a procedural style, while Terraform,
-> CloudFormation, SaltStack, Puppet and Heat encourage a more declarative style.  
-"
+Typically, the workflow of the DevOps team includes running Configuration Management tool scripts after running IaC tools, for configurations, security, connectivity, and initializations.
 
 
 ## How IaC tools are different from Configuration Management Tools
+
+
+There are 4 broad categories of such tools  [@terraformuprunningbook], there are
+> " 
+> * Ad hoc scripts: Any shell, Python, Perl, Lua scripts that are written
+> * Configuration management tools: Chef, Puppet, Ansible, SaltStack
+> * Server templating tools: Docker, Packer, Vagrant
+> * Server provisioning tools: Terraform, Heat, CloudFormation, Cloud Deployment Manager, Azure Resource Manager 
+> "
 
 Configuration Management tools make use of scripts to achieve a state. IaC tools maintain state and metadata created in the past. 
 
@@ -76,14 +73,13 @@ However, the big difference is the state achieved by running procedural code or 
  * Ordering of the scripts determines the state. If the order changes, state will differ. Also, issues like waiting time required for resources to be created, modified or destroyed have to be correctly dealt with.
  * Version changes in procedural code are inevitable, and will lead to a different state. 
 
+Chef and Ansible are more procedural, while Terraform, CloudFormation, SaltStack, Puppet and Heat are more declarative. 
+
 IaC or declarative tools do suffer from inflexibility related to expressive scripting language.
-
-Sometimes IaC tools are also called Orchestration tools, but that label is misleading.
-
-Typical workflow includes running Configuration Management tool scripts after running IaC tools.
 
 
 ## Listing of IaC Tools
+
 
 IaC tools that are cloud specific are
 Amazon AWS - AWS CloudFormation
@@ -113,7 +109,5 @@ trace. According to [@WhatisIaC002]
 
 Please see books and resources like the "Terraform Up and Running" [@terraformuprunningbook] for more real-world
 advice on IaC, structuring Terraform code and good deployment practices.
-
-:o: we do not need to mention authors and publishers please fix throughout the paper. The citation is good enough. YOust do a bulleted list, but explain what you would find in it if needed.
 
 A good resource for IaC is the book "Infrastructure as Code" [@iacbook].
