@@ -102,7 +102,7 @@ A list can be created by item starting with \*, a - , or a + or a number
 
 If you need to indent items underneath already bulleted items, precede
 the indent items with four spaces and they will be nested under the item
-above them.
+previous to them.
 
 To qoute textc precede it with a "\>".
 

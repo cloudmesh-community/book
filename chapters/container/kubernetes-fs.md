@@ -1,4 +1,4 @@
-# Using Kubernetes on FutureSystems
+# Using Kubernetes on FutureSystems {#sec:kub-fs}
 
 This section introduces you on how to use the Kubernetes cluster
 on FutureSystems. Currently we have deployed kubernetes on our
@@ -38,7 +38,7 @@ project may not have been authorized to access the kubernetes cluster.
 Send a ticket to FutureSystems ticket system to request this.**
 
 Once you are logged in to the kubernetes cluster head node you can run
-commands on the **remote echo kubernetes machine** (all commands below
+commands on the **remote echo kubernetes machine** (all commands shown in next
 except stated otherwise) to use the kubernetes installation there.
 First try to run:
 

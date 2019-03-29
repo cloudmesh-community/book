@@ -42,7 +42,7 @@ server node and client node.
 Since complex appliances in Chameleon are currently implemented using
 the [OpenStack Heat](https://wiki.openstack.org/wiki/Heat) orchestration
 service, we will be using OpenStack terminology and features to work
-with them. The templates described above are YAML files using the [Heat
+with them. The templates described previously are YAML files using the [Heat
 Orchestration Template (HOT)
 format](http://docs.openstack.org/developer/heat/template_guide/hot_spec.html)
 (Heat also supports the AWS CloudFormation template format, but this is
@@ -96,9 +96,9 @@ will be empty for now.
 
 We will now create a new stack, which corresponds to the launch of a
 template. Click on Launch Stack on the top right. A window will pop up
-like below: @fig:select-template.
+like in @fig:select-template.
 
-![**Figure:** Select Template](images/Launch-Stack.png){#fig:select-template}
+![Select Template](images/Launch-Stack.png){#fig:select-template}
 
 We will deploy the NFS appliance described earlier; it will consist of a
 server node and two client nodes. Change the template source field to
@@ -119,20 +119,20 @@ server and client). For nfs_client_count, change the default value of
 1 to 2. For reservation_id, choose your reservation created earlier.
 Finally, click "Launch". As shown in @fig:launch-nfs-stack.
 
-![**Figure:** Launch NFS Stack](images/Launch-NFS-Stack.png){#fig:launch-nfs-stack}
+![Launch NFS Stack](images/Launch-NFS-Stack.png){#fig:launch-nfs-stack}
 
 Your stack should be in status "Create In Progress" for several minutes
 while it first launches the NFS server instance, followed by the NFS
-client instances. As below: @fig:create-in-progress.
+client instances. As in @fig:create-in-progress.
 
-![**Figure:** Create in Progress](images/Create-In-Progress_zPgOjo4.png){#fig:create-in-progress}
+![Create in Progress](images/Create-In-Progress_zPgOjo4.png){#fig:create-in-progress}
 
 It will then move to the status "Create Complete". As the following: @fig:create-complete.
 
-![**Figure:** Create Complete](images/Create-Complete_XkoWhlj.png){#fig:create-complete}
+![Create Complete](images/Create-Complete_XkoWhlj.png){#fig:create-complete}
 
 You can click on the stack name to get more details, including a
-visualization of the deployed resources, as pictured below: @fig:stack-visualization. The single
+visualization of the deployed resources, as pictured in @fig:stack-visualization. The single
 machine inside a circle represents the NFS server instance. The rack of
 machine represents the group of NFS client instances (in this case, a
 group composed of two instances). The server's floating IP (the public
@@ -143,18 +143,18 @@ both the IP and the association -- we agree but cannot do much about it
 at the moment). Blow off some steam by dragging the visualization across
 the screen, it can be rather fun!
 
-![**Figure:** Stack Visualization](images/Stack-visualization.png){#fig:stack-visualization}
+![Stack Visualization](images/Stack-visualization.png){#fig:stack-visualization}
 
 You can now ssh to the server using the floating IP just as you do with
 regular instances (use the cc account). The client does not have a
-floating IP attached to it (as per the visualization above) but you can
+floating IP attached to it (as per the visualization given previously) but you can
 connect to it via the server node with the client's private IP (connect
 to the server with `ssh -A` to enable the SSH agent forwarding after
 loading your key to your SSH agent with `ssh-add <path-to-your-key>`).
 
 You can find out the information about the IPs and other things if you
 click the "Overview" tab and look in the "Outputs" section. Under the
-"Resources" tab you will see the resources described above (the server,
+"Resources" tab you will see the resources described previously (the server,
 clients, server's public/floating IP, and its the association) and
 information about them. In the "Events" tab you will see information
 about the history of the deployment so far. In Template you will see the
@@ -171,7 +171,7 @@ The NFS share appliance deploys:
     mount this NFS share to /mnt (and can subsequently read from and
     write to it).
 
-This template is reproduced further below, and includes inline comments
+This template is reproduced further next, and includes inline comments
 starting with the \# character. There are three main sections:
 
 -   resources,
@@ -330,11 +330,11 @@ Stacks page, select your stack, and then click on the red "Delete
 Stacks" button. You will be asked to confirm, so click on the blue
 "Delete Stacks" button. As the following picture: @fig:delete-stacks.
 
-![**Figure:** Delete Stacks](images/Delete-Stacks.png){#fig:delete-stacks}
+![Delete Stacks](images/Delete-Stacks.png){#fig:delete-stacks}
 
 The template for the [Hello World complex
 appliance](https://www.chameleoncloud.org/appliances/26/) is reproduced
-below. It is similar to the NFS share appliance, except that it deploys
+next. It is similar to the NFS share appliance, except that it deploys
 only a single client. You can see that it has four resources defined:
 
 -   nfs_server_floating_ip
@@ -450,11 +450,11 @@ indentation, which is important in YAML.
 Now, launch a new stack with this template. Since the customized
 template is only on your computer and cannot be addressed by a URL, use
 the "Direct Input" method instead and copy/paste the content of the
-customized template. The resulting topology view is shown below: @fig:nfs-with-two-clients, as you
+customized template. The resulting topology view is shown in @fig:nfs-with-two-clients, as you
 can see, the two client instances are shown separately since each one is
 defined as a separate resource in the template.
 
-![**Figure:** NFS with Two Clients](images/NFS-Two-Clients_lFGgizN.png){#fig:nfs-with-two-clients}
+![NFS with Two Clients](images/NFS-Two-Clients_lFGgizN.png){#fig:nfs-with-two-clients}
 
 You may have realized already that while adding just one additional
 client instance was easy, launching more of them would require to copy /
@@ -528,10 +528,10 @@ list the private IPs assigned to client instances:
         description: Private IP addresses of the NFS clients
         value: { get_attr: [nfs_clients, first_address] }
 
-The image below: @fig:outputs, shows the resulting outputs as viewed from the web
+The image: @fig:outputs, shows the resulting outputs as viewed from the web
 interface. Of course IP addresses will be specific to each deployment.
 
-![**Figure:** Outputs](images/Outputs.png){#fig:outputs}
+![Outputs](images/Outputs.png){#fig:outputs}
 
 Finally, we can add a new parameter to replace the hardcoded number of
 client instances by a value passed to the template. Add the following
@@ -675,7 +675,7 @@ catalog](https://www.chameleoncloud.org/appliances/), and click on the
 button in the top-right corner: "Add an appliance" (you need to be
 logged in to see it as the following: @fig:add-an-appliance).
 
-![**Figure:** Add an Appliance](images/Add-an-appliance.png){#fig:add-an-appliance}
+![Add an Appliance](images/Add-an-appliance.png){#fig:add-an-appliance}
 
 You will be prompted to enter a name, description, and documentation.
 Instead of providing appliance IDs, copy your template to the dedicated
@@ -740,7 +740,7 @@ This contextualization is performed with several Heat resources:
 -   `OS::Heat::SoftwareDeploymentGroup`. This resource applies a
     SoftwareConfig to a specific group of instances.
 
-The template below illustrates how it works. It launches a group of
+The template next illustrates how it works. It launches a group of
 instances that will automatically populates their /etc/hosts file with
 IP and hostnames from other instances in the deployment.
 
