@@ -105,9 +105,19 @@ Enter Authentication information if required.
 
 Once done click the create cluster button
 
+### Step 3: Cluster creation process
 
+Once all the required configuration has been entered and create cluster is clicked. Document DB 
+creates the clusters with the number of instance that was provided as part of cluster configuration.
+It takes sometime depending on the number of instances in the cluster.
 
+You will see a Cluster being created message
 
+![AWS DocumentDB](images/documentdb-4.png){#fig:aws-cluster creation}
+
+Once the cluster is created , you can see the status as available.
+
+![AWS DocumentDB](images/documentdb-5.png){#fig:aws-cluster available}
 
 
 
