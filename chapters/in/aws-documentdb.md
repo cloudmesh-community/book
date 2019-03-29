@@ -99,6 +99,10 @@ alternatively, you can type DocumentDB in the search bar to look up.
 
 ![AWS DocumentDB](images/documentdb-2.png){#fig:aws-create cluster page}
 
+Enter Authentication information if required.
+
+![AWS DocumentDB](images/documentdb-3.png){#fig:aws-create cluster authentication section}
+
 Once done click the create cluster button
 
 
