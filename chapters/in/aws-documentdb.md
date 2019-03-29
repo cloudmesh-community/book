@@ -72,6 +72,39 @@ Components:
 
 User needs to have a AWS account to use the Document DB service. First step is to create a AWS account. Once created login to the account. 
 
+An AWS account can be created using the link below
+
+[AWS account creation URL](https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start)
+
+### Step 1: Login to the AWS console.
+
+Login to the AWS account using the link below.
+
+[AWS Console URL](https://aws.amazon.com/console/).
+
+Upon successful login, select Document DB from the Database section or 
+alternatively, you can type DocumentDB in the search bar to look up.
+
+![AWS DocumentDB](images/documentdb-0.png){#fig:aws-DocumentDB-console}
+
+### Step 2: Click on Create Amazon DocumentDB cluster button.
+
+![AWS DocumentDB](images/documentdb-1.png){#fig:aws-DocumentDB-home}
+
+### Step 3: Create the required configuration.
+
+1. Specify a unique cluster identifier
+2. Specify the compute and memory capacity of the instance.
+3. Select the number of instances to be deployed in your cluster.
+
+![AWS DocumentDB](images/documentdb-2.png){#fig:aws-create cluster page}
+
+Once done click the create cluster button
+
+
+
+
+
 
 
 
