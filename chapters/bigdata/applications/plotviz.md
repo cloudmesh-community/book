@@ -1,6 +1,10 @@
 # Plotviz
 
 
+**NOTE: This an legacy application this has now been replaced by WebPlotViz
+which is a web browser based visualization tool which provides added
+functionality's.**
+
 We introduce Plotviz, a data visualization tool developed at Indiana
 University to display 2 and 3 dimensional data. The motivation is that
 the human eye is very good at pattern recognition and can *see*

@@ -1,4 +1,4 @@
-# Introduction to Kubernetes
+# Introduction to Kubernetes {#sec:kub-intro}
 
 ---
 

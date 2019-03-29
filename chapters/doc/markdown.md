@@ -15,9 +15,9 @@ make headings look like headings with a bold font.
 
 To convert the markdown to other formats with `pandoc`
 
-    # Heading
+    # Heading {#sec:unique-heading-label-without-spaces}
 
-    ## Sub-heading
+    ## Sub-heading {#sec:unique-sub-heading-label-without-spaces}
 
     ### Sub Sub Heading heading
      
@@ -59,14 +59,52 @@ To convert the markdown to other formats with `pandoc`
     ![This is the caption](images/example.png){#fig:labelwithoutspaces}
     
     Any figure used in the text must be referred to with a figure
-	cation and label as shown next
+	cation and label. Images can not be embedded in itemized lists.
+	
+    Quotes are in our publications not only done with "quote" but also 
+    with `>` in front of each quoted line, it must be clearly indicated 
+    before or after from which source:
     
+    > "This is a quote" [@label].
+    
+    Please note that the period is after the label. Alternatively you can say
+    
+    In [@label] we find the following list of properties.(use an appropriate starting 
+    sentence):
+    
+    > * item1
+    > * item1
+    
+    Please note that we have not used quotes here as it is confusing in lists, 
+    but it is clear from the `>` that we still quote.
+
+Frequent errors we see are:
+
+* missing empty lines before and after sections
+* use of `-` and `=` for section underline instead of `#`
+* ignoring proper numbers of `#` in fromt of sections
+* using `#` to do bold
+* missing empty lines before and after code block starts and ends
+* not left indenting text in code blocks
+* not ending code blocks  properly
+* using wrong spaces in lists or codeblocks to replace lists
+* not using a spell checker
+* having spaces in front of numbered list items
+* not using 80 char block formatting (makes it easier to correct
+  things and display in different editors)
+* trying to do to fancy things that are not supported in markdown
+ 
+
 
 ## Editors
 
 There are several tools that make writing documents in markdown
 easy. If you do not just look at the output of these documents but
-follow the structure guides properly.
+follow the structure guides properly. Usually whatever editor you
+use, it will not rendered the document properly. They are not supposed
+to be WYSIWYG editore. They help, but you need to make sure the
+markdown is valid and follows our convention just as you would with
+any other format.
 
 Examples for such editors are:
 
@@ -117,6 +155,10 @@ Remarkable
 Visualstudio
 
 : see <https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>
+
+Textmate
+
+: see <https://macromates.com/>
 
 ## Converters
 
@@ -177,6 +219,8 @@ Packages of interest include:
 * section numbering <https://github.com/chdemko/pandoc-numbering>
 * CSV table <https://github.com/baig/pandoc-csv2table>
 * inline CSV table <https://github.com/mb21/pandoc-placetable>
+
+In our framework we use crosref and crosscite
 
 #### Mermaid
 
@@ -326,26 +370,27 @@ Now, I can refer to [Section](#s-this-is-my-label). References, must not have sp
 
 ### Code in markdown
 
-COde in markdown is easy to integrate with 
+Code in markdown is easy to integrate with 
 
-````md
-```python
-code
-```
-````
+
+	```python
+	code
+	```
+
 
 to see if syntax highlighting works. I have not tried this yet though
 When doing bash, we also like to try
 
 
-````md
-```bash
-$ script
-```
-````
+	```bash
+	$ script
+	```
 
 Note that in order to indicate a new line in bash we use the `$` sign
 as prefix which indicates the prompt sign.
+
+> :warning: Please note that there must be an empty line before and
+> after the code block
 
 
 ### Citations in markdown
@@ -464,8 +509,8 @@ using the right tool.
 
 ### Using pandoc to check your files
 
-It is easy to install pandoc on your operating system. PLease see the Pandoc web page and 
-install it 
+It is easy to install pandoc on your operating system. Please see the Pandoc web page and 
+install it.
 
 Once installed and you have in a directory the files
 
@@ -476,10 +521,10 @@ images/test.png
 ```
 
 You can easily generate for example a ePuB, PDF, or html output with 
-Make sure to also install pandoc-fignos
+Make sure to also install pandoc-crossref
 
 ```bash
-$ pandoc --verbose --filter pandoc-fignos -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml -o paper.epub paper.md
+$ pandoc --verbose --filter pandoc-crossref -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml -o paper.epub paper.md
 ```
 
 :o: Assignment: provide documentation for Linux, OSX, Windows to do this.
@@ -507,4 +552,5 @@ Goggle [@www-google] is a company that offers cloud services.
 
 where www-google is the label to the bibtex entry representing the
 Google home page
+
 

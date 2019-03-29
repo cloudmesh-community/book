@@ -1,4 +1,4 @@
-# Language {#s-python-language}
+# Language {#sec:python-language}
 
 ## Statements and Strings 
 
@@ -1107,7 +1107,7 @@ In Python3, map function returns an iterator or map object which gets
 lazily evaluated which means neither we can access the elements of the
 map object with index nor we can use len() to find the length of the
 map object.  We can force convert the map output i.e. the map object
-to list as shown below:
+to list as shown next:
 
 ```python
 map_output = map(lambda x: x*2, [1, 2, 3, 4])

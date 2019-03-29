@@ -5,9 +5,9 @@ Previously we used LaTeX in this class to provide the ability to
 contribute professional looking documents. As part of this we also
 noticed that **any** document from **any** student that ever submitted a
 document in MSWord was inferior to those using structured
-documents such as provided by LaTeX or mrkdown. Although we would have loved to 
+documents such as provided by LaTeX or markdown. Although we would have loved to 
 continue our work in LaTeX, a small number of students made the full 
-adoptation of LaTeX as document system not possible. Thus we have adopted an even
+adaptation of LaTeX as document system not possible. Thus we have adopted an even
 simpler approach. All documents written for this class are written in
 structured markdown. As we use a uniform format all documents in the class 
 will be made available online, including your project reports. This allows 
@@ -21,20 +21,20 @@ collaboratively write documents in a group, while the instructors can
 inspect who has contributed to the document what while utilizing the
 history of the document.
 
-In addition we will be able to use bibtex as refernce manager and
-leverage hundrets of thousends professionaly curated bibliography
+In addition we will be able to use bibtex as reference manager and
+leverage hundrets of thousands professionally curated bibliography
 citations while not needing to worry about IEEE, ACM, or APA style
-formating requirements. The bibliograhy format is automatically
+formating requirements. The bibliography format is automatically
 created for you. In particular markdown is very useful for creating
-deployment and code documentations though easy to use verbatim
-modes. At the same time it allows us to use mathematical equations as
-defined in LaTeX and avoid images for equation includsion.
+deployment and code documentations through easy to use verbatim or code
+environments. At the same time it allows us to use mathematical equations as
+defined in LaTeX and avoid images for equation inclusion.
 
 Having a uniform report format not only helps us to be able to
-integrate the papers into a proceedings so you can yourslef compare
+integrate the papers into a proceedings so you can yourself compare
 the paper length and effort as part of teaching a course with other
 students contributions.  As such we have made available many previous
-projects through publically available proceedings. We will furthermore
+projects through publicly available proceedings. We will furthermore
 explain how you can create such proceedings yourself.
 
 
@@ -42,8 +42,8 @@ explain how you can create such proceedings yourself.
 
 
 We distinguish typically two different artifacts. Such documents could 
-be integrated in our book. Therfore you must not use the term *project*, *paper*, 
-or *chapterin the text or title. The artifacts are:
+be integrated in our book. Therefore you must not use the term *project*, *paper*, 
+or *chapter* in the text or title. The artifacts are:
 
 1. a small technology overview
 2. a project report
@@ -52,7 +52,7 @@ A technology overview is a document that is multiple pages long and
 contains an overview about the technology, and a number of references. 
 It is used to prepare you for writing a project report. Such technology 
 overviews can be integrated as chapters into our book. You can look for 
-example at the *graphqlsection in the 
+example at the *graphql* section in the 
 [Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub) book] for an example 
 on how such a section looks like 
 
@@ -64,16 +64,19 @@ The second format is the format for a report which is provided at
 
 <ttps://github.com/cloudmesh-community/proceedings-fa18/tree/master/report>
 
-and you will be using for your project report. To use them you must copy the md files precisely 
-as a raw file and not just copy and paste from the rendered github output. 
-We provide in the markdown section presice documentation on how to add images, citations and refernces.
+and you will be using for your project report. To use them you must
+copy the md files precisely as a raw file and not just copy and paste
+from the rendered github output.  We provide in the markdown section
+presice documentation on how to add images, citations and references.
 
 ## Github limitations
 
-Please note that github does not render your document precisely. 
-Instead you need to install pandoc and create the document yourslef if you like to see it. 
-However, do never add the pdf or docx file to your github repository, as our proceedings script will outomatically 
-create the final version and your versions in github will conflict with them.
+Please note that github does not render your document precisely.
+Instead you need to install pandoc and create the document yourself if
+you like to see it.  However, do never add the pdf or docx file to
+your github repository, as our proceedings script will automatically
+create the final version and your versions in github will conflict
+with them.
 
 You will have exactly one md file and one bib file in the directory you manage, 
 as well as an images directory that contains all images.
@@ -81,8 +84,9 @@ as well as an images directory that contains all images.
 ## Working in a Team
 
 Today research is done in potentially large research teams. This also
-include the writing of a document and code. In order for you not to learn additional systems 
-you will be using github for collaboratively writing code and the document with your team mates.
+include the writing of a document and code. In order for you not to
+learn additional systems you will be using github for collaboratively
+writing code and the document with your team mates.
 
 ## Time Management {#timemanagement}
 
@@ -123,7 +127,7 @@ just this pages and check with a pen if the particular issue occurs.
 2.   Update your README.yml files `group:` where the first HID is the HID  
      in which your report or paper is stored. Do this as soon as you have 
      identified your team.
-3.   Once you have your team identified create the approriate directory and copy the template 
+3.   Once you have your team identified create the appropriate directory and copy the template 
      into it. Upload it to github.com in your dedicated repository.
 
 ### Content
@@ -133,9 +137,9 @@ just this pages and check with a pen if the particular issue occurs.
 1.  Do not include the words paper, chapter, or report in your text to refer 
     to itself. Instead use general terms such as "We describe ...". It is not 
     important if it is a chapter, report, or paper. In fact if your pepre would 
-    be selected to be put in the book a paper becoms a chapter and you would have to change it. 
-    Therepre, we avoid it altogether.
-1.  When writing the *proposaldo not use the word "proposal" write the
+    be selected to be put in the book a paper becomes a chapter and you would have to change it. 
+    Therefore, we avoid it altogether.
+1.  When writing the *proposal* do not use the word *proposal* write the
     document as if it would be the final paper. We see too many reports
     at the end forgetting to remove the word proposal in the final
     paper, so we can not tell if you did it or if it is still a
@@ -146,11 +150,11 @@ just this pages and check with a pen if the particular issue occurs.
     no proposals. Avoid phrases such as We propose to do, We intend to
     show and so on. If the paper intends to show things you are still in
     the draft phase of the paper. However, if you say We show, that you 
-    later will not have to chnage the text.
+    later will not have to change the text.
     Let us just assume you intended to show something but
-    did not achieve then you can say "We intended to show this but we it
+    did not achieve then you can say *We intended to show this but we it
     was not possible to verify. We have provided reasons for this in the
-    section A". As you can see not only the intention is communicated, but
+    section A*. As you can see not only the intention is communicated, but
     the result. If you just focus on the intent that is just a proposal
     and is not a proper abstract.
 1.  Add meaningful up to 5 keywords to the paper
@@ -189,13 +193,13 @@ just this pages and check with a pen if the particular issue occurs.
 1.  Have you included the paper in the submission system (In our case
     git). This includes all images, bibliography files and other
     material that is needed to build the paper from scratch?
-1.  Have you made sure your paper compiles with *makeand the provided
+1.  Have you made sure your paper compiles with *make* and the provided
     Makefile before you committed? :o: a makefile will be provided to you 
     so you can check if the document is correct
 1.  Are all images checked in?
 1.  Did you submit the report.bib file?
-1.  Remember that your document will be integrated in a proceeedings that requires unique 
-    bibtex labels image labels and other references. THus you could append 
+1.  Remember that your document will be integrated in a proceedings that requires unique 
+    bibtex labels image labels and other references. Thus you could append 
     them with your hid to make them unique.
     
 We may experiment this year with a joint bibliography so you can reuse existing bibtex 
@@ -232,23 +236,23 @@ files and citations. :o: stay tuned on this.
 ### Writing
 
 1.  Have you spellchecked the paper?
-1.  Have you grammar chacked the paper?
-1.  Use proper capitaliztion in the title, see:
+1.  Have you grammar checked the paper?
+1.  Use proper capitalization in the title, see:
     <https://capitalizemytitle.com/>
-1.  Are you using *aand *theproperly?
+1.  Are you using *a* and *the* properly?
 1.  Short form of verbs is for spoken language. Do not use them in
     scientific writing. Example: can't is incorrect, cannot is correct.
 1.  Do not use phrases such as *shown in the Figure bellow*. Instead, use
     *as shown in Figure 3*, when referring to the 3rd figure, but use
-    the *ref*labelmacros. How to automatically use figure numbers is 
+    the *ref* label macros. How to automatically use figure numbers is 
     explained in our template. You must use this automated figure numbering. 
-1.  Do not use the word *Iinstead use *weeven if you are the sole
+1.  Do not use the word *instead* use *we* even if you are the sole
     author. In many cases you may want to avoid using the word *we*
     also.
-1.  Do not use the phrase *In this paper/report/chapter we showinstead use *We
+1.  Do not use the phrase *In this paper/report/chapter we show* instead use *We
     show*. It is not important if this is a paper or a report and does
     not need to be mentioned.
-1.  If you want to say *anddo not use *&but use the word *and*.
+1.  If you want to say *and* do not use *&* but use the word *and*.
 1.  Use a space after `. , :`
 1.  Headers are never just capitalized, E.g. `## INTRODUCTION` is wrong but 
     `## Introduction` is correct.
@@ -276,17 +280,17 @@ files and citations. :o: stay tuned on this.
 
 The following errors are very often found and must be avoided.
 
-1.  To emphasize a word, use *emphasizeand not "quote". Quotes are
+1.  To emphasize a word, use *emphasize* and not "quote". Quotes are
     reserved for quotes from other papers and must not be used to
     emphasize words or phrases. to put around a word that you like to
     emphasize.
 1.  When quoting we want you not only to use the `""` chars, but also the `>` char
 
-    `> "This is a proper quote" [@label]`
+    `> "This is a proper quote" [@label].`
 
-1.  Generally we do not us **bold*text. Instead use *italic*.
-1.  When using `<text>` in a text it must be quoted `<` `>` without quotes are interpreted as html and will 
-    likely render wrongly.
+1.  Generally we do not us **bold* text. Instead use *italic*.
+1.  When using `<text>` in a text it must be quoted `<` `>` without
+    quotes are interpreted as html and will likely render wrongly.
 1.  Pasting and copying from the Web often results in non-ASCII
     characters to be used in your text, please remove them and replace
     accordingly. This is the case for **all*quotes, dashes and all the other
@@ -298,9 +302,9 @@ The following errors are very often found and must be avoided.
 1.  Is the acknowledgment including all the people appropriately that
     helped you in your activity.
 1.  In case of a class and if you do a multi-author paper, you need to
-    add an appendix called *Workbreak Downdescribing who did what in
+    add an appendix called *Workbreak Down* describing who did what in
     the paper,after the bibliography
-1.  Do you fullfill the minimum page length such as defined in the
+1.  Do you fulfill the minimum page length such as defined in the
     submission guideline. Remember that images, tables and figures do
     not count towards the page length.
 1.  Do not artificially inflate your paper if you are below the page
@@ -367,12 +371,12 @@ acknowledgement as it sounds like the only thing that was provided was
 the help on that you should have done anyways without the help of the
 professor. Ask yourself, if he introduced you to the field, has helped
 you with preparing the text, has given you insights, has corrected
-things in your paper, made suggestions. So instead of the above maybe
-a more general term such as *helped with the paper* would be more
-appropriate. If you feel like your professor did not help you, leaving
-it off is more appropriate. In some cases you may wan to invite your
-professor to become a co-author. In some cases you may want to even
-include this handbook as a citation.
+things in your paper, made suggestions. So instead of the previous
+acknowledge example maybe a more general term such as *helped with the
+paper* would be more appropriate. If you feel like your professor did
+not help you, leaving it off is more appropriate. In some cases you
+may wan to invite your professor to become a co-author. In some cases
+you may want to even include this handbook as a citation.
 
 
 

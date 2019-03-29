@@ -49,13 +49,13 @@ and your EC2 key pair wil be automatically downloaded by the browser and
 named with a pem extension. Save the key file generated in a safe
 location for use later on as this is the only time you will be able to
 save this key file. It will need to be used when you need to launch and
-connect to the EC2 instances created by EMR [@hid-sp18-521-ec2keypair]. As the picture below: @fig:key.
+connect to the EC2 instances created by EMR [@hid-sp18-521-ec2keypair]. As the picture @fig:key.
 
 ![Key](images/EMRkey.png){#fig:key}
 
 ## Configuring and Utilizing the Cluster with AWS Management Console
 
-Once all the prerequisites above have been met, an EMR cluster can now
+Once all the previous prerequisites have been met, an EMR cluster can now
 be created. In the AWS Management Console home page, enter in 'EMR' in
 the AWS services search box at the top of the page and select the EMR
 option that it returns. You will be taken to the EMR home page. At the
@@ -88,8 +88,8 @@ is the only application option you can use here. Now move on to the
 EC2 instances you would like to utilize for your cluster. he values
 selected here will vary on what type of data processing you're looking
 to achieve. Then scroll down to the 'Security and access' section of the
-page and select the key pair generated in the steps above in the
-drop-down menu, as below: @fig:security. Below that you can then select which permissions model
+page and select the key pair generated in the previous steps in the
+drop-down menu, as in figure @fig:security. Below that you can then select which permissions model
 to u se: default or custom. The default option sets up permissions for
 your EMR cluster that are granted using policies applied to EMR specific
 IAM roles. Using the custom option allows you to select existing IAM
@@ -146,8 +146,8 @@ months. You can then proceed to the S3 console page. Before you can
 delete buckets, you have to delete all of the folders and files
 contained within that bucket. To do this, click on the bucket name which
 will then show the subfolders contained within the bucket: @fig:bucket. Check the box
-next to all of the subfolder names, select the 'More' button in the menu
-above and from that menu select 'Delete'. Once all of the folders and
+next to all of the subfolder names, select the 'More' button in the previous menu
+and from that menu select 'Delete'. Once all of the folders and
 files are gone, navigate back to the main S3 page, click the row of the
 bucket name you wish to delete and select the 'Delete' button. You will
 then be prompted to enter the name of the bucket you wish to delete and

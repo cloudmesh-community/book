@@ -629,7 +629,10 @@ validation error from our mutation function like this
 def mutate(self, info, url, name, full_name, description):
     if not name:
         raise GraphQLError('Repository name is required')
-    repository = Repository(url=url, name=name, full_name=full_name, description=description)
+    repository = Repository(url=url,
+                            name=name,
+                            full_name=full_name,
+                            description=description)
     repository.save()
 ```
 
@@ -1322,7 +1325,7 @@ issue with the query
 ```graphql
 mutation AddComment {
   addComment(input:{subjectId:"MDU6SXNzdWUzNjUxMDIwOTE=",body:"This comment is done using GitHub API v4"}) {
-  	commentEdge {
+    commentEdge {
       node {
         repository{
           nameWithOwner
@@ -1476,7 +1479,7 @@ E.GraphQL.6: Cloud Service
 
 E.GraphQL.7: Cloudmesh
 
-> Develop a cloudmesh framework that uses all clouds above while
+> Develop a cloudmesh framework that uses all previous clouds while
 > returning the information of all running VMS in a Web page. YOu are
 > allowed to make the Web page beautiful with HTML5 and/or JavaScript
 > if you have the background to do so. Contact Gregor if you like to
