@@ -275,7 +275,7 @@ $ pip install beautifulsoup4
 In order to process HTML documents, a parser is required. Beautiful Soup 
 supports the HTML parser included in Python’s standard library, but it also 
 supports a number of third-party Python parsers like the `lxml` parser which 
-is commonly used [@www-beautifulsoup].
+is commonly used.
 
 Following command can be used to install `lxml` parser
 
