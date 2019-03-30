@@ -66,7 +66,7 @@ Following are the pre-requisites before we can start using the API:
 
 ![GCV-KEY](images/gcv-accountkey.png){#fig:gcp-key}
 
-* Set the envionment variable *GOOGLE_APPLICATION_CREDENTIALS* to the 
+* Set the envionment variable `GOOGLE_APPLICATION_CREDENTIALS` to the 
   path of the JSON key file downloaded.
 
 * Install the client library as follows:
@@ -82,7 +82,7 @@ Image will be read from a local library and the name of the image will be
 passed as a parameter in the OpenAPI REST service. The function will return 
  asimple list of all the labels detected by the API.
 
-Note: The environment variable *GOOGLE_APPLICATION_CREDENTIALS* can also 
+Note: The environment variable `GOOGLE_APPLICATION_CREDENTIALS` can also 
 be set in the program as shown in the following code:
 
 
