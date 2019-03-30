@@ -1,7 +1,7 @@
 # Artificial Intelligence Service with REST
 
 
-:o: bibs missning - Added Bib refreneces in a ai.bib
+:o: bibs missning - Added new Bib references in ai.bib
 
 :o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS` - Made chanages
 
