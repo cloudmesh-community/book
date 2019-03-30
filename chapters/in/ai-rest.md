@@ -3,7 +3,7 @@
 
 :o: bibs missning - Added new Bib references in ai.bib
 
-:o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS` - Made chanages
+:o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS` - Made changes
 
 :o: could screenshots bee redone on windows that are less wide with larger font, quality is bad due to unneded space - Uploaded new images
 
