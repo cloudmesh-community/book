@@ -264,6 +264,114 @@ More details about it are provided in the documentation page
 
 :o: TODO: Students can contribute a section
 
+Beautiful Soup is a python library to parse, process and edit HTML documents.
+
+To install Beautiful Soup, use `pip` command as follows:
+
+```bash
+$ pip install beautifulsoup4
+```
+
+In order to process HTML documents, a parser is required. Beautiful Soup 
+supports the HTML parser included in Python’s standard library, but it also 
+supports a number of third-party Python parsers like the `lxml` parser which 
+is commonly used [@www-beautifulsoup].
+
+Following command can be used to install `lxml` parser
+
+```bash
+$ pip install lxml
+```
+
+To begin with, we import the package and instantiate an object as follows 
+for a html document `html_handle`:
+
+```python
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(html_handle, `lxml`)
+```
+
+Now, we will discuss a few functions, attributes and methods of Beautiful Soup. 
+
+**prettify function**
+
+`prettify()` method will turn a Beautiful Soup parse tree into a nicely 
+formatted Unicode string, with a separate line for each HTML/XML tag and string.
+It is analgous to `pprint()` function. The object created above can be viewed 
+by printing the prettfied version of the document as follows:
+
+```python
+print(soup.prettify())
+```
+
+**tag Object**
+
+A `tag` object refers to tags in the HTML document. It is possible to go down to  
+the inner levels of the DOM tree. To access a tag `div` under the tag `body`, it can be 
+done as follows:
+
+```python
+body_div = soup.body.div
+print(body_div.prettify())
+```
+
+The `attrs` attribute of the tag object returns a dictionary of all the defined 
+attributes of the HTML tag as keys.
+
+
+**has_attr() method**
+
+To check if a `tag` object has a specific attribute, `has_attr()` method can be used.
+
+```python
+if body_div.has_attr('p'):
+    print('The value of \'p\' attribute is:', body_div['p'])
+```
+
+**tag object attributes**
+
+* `name` - This attribute returns the name of the tag selected.
+* `attrs` - This attribute returns a dictionary of all the defined attributes of 
+  the HTML tag as keys.
+* `contents` - This attribute returns a list of contents enclosed within the HTML tag
+* `string` - This attribute which returns the text enclosed within the HTML tag. This 
+  returns `None` if there are multiple children
+* `strings` - This overcomes the limitation of `string` and returns an generator of 
+  all strings enclosed within the given tag
+  
+Following code showcases usage of the above discussed attributes:
+
+```python
+body_tag = soup.body
+
+print("Name of the tag:', body_tag.name)
+
+attrs = body_tag.attrs
+print('The attributes defined for body tag are:', attrs)
+
+print('The contents of \'body\' tag are:\n', body_tag.contents)
+
+print('The string value enclosed in \'head\' tag is:', body_tag.string)
+
+for s in body_tag.strings:
+    print(repr(s))
+```
+
+**Searching the Tree**
+
+* `find()` function takes a filter expression as argument and returns 
+  the first match found
+* `fiandall()` function returns a list of all the matching elements
+
+```python
+search_elem = soup.find('a')
+print(search_elem.prettify())
+
+search_elems = soup.find_all("a", class_="sample")
+pprint(search_elems)
+```
+
+
 ### ConfigParser
 
 :o: TODO: Students can contribute a section
