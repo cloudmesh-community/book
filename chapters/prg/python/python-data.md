@@ -361,7 +361,7 @@ for s in body_tag.strings:
 
 * `find()` function takes a filter expression as argument and returns 
   the first match found
-* `fiandall()` function returns a list of all the matching elements
+* `findall()` function returns a list of all the matching elements
 
 ```python
 search_elem = soup.find('a')
@@ -370,6 +370,15 @@ print(search_elem.prettify())
 search_elems = soup.find_all("a", class_="sample")
 pprint(search_elems)
 ```
+
+* `select()` function can be used to search the tree using CSS selectors
+
+```python
+# Select `a` tag with class `sample`
+a_tag_elems = soup.select('a.sample')
+print(a_tag_elems)
+```
+
 
 
 ### ConfigParser
