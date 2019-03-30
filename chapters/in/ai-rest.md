@@ -1,11 +1,11 @@
 # Artificial Intelligence Service with REST
 
 
-:o: bibs missning
+:o: bibs missning - Added Bib refreneces in a ai.bib
 
-:o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS`
+:o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS` - Made chanages
 
-:o: could screenshots bee redone on windows that are less wide with larger font, quality is bad due to unneded space
+:o: could screenshots bee redone on windows that are less wide with larger font, quality is bad due to unneded space - Uploaded new images
 
 :o: Gregor fixed all itemized lists, they all had wrong indentation.
 
@@ -18,14 +18,14 @@
 All major cloud service providers offer a suite of AI and ML products 
 and services. A few of the notable services include, but are not limited to:
 
-* [Amazon ML](https://aws.amazon.com/machine-learning/) [@BIBMISSING]
-* [Google Cloud AI](https://cloud.google.com/products/ai/) [@BIBMISSING]
-* [IBM Watson](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/wml-ai.html) [@BIBMISSING]
-* [Microsoft Azure ML Studio](https://studio.azureml.net/) [@BIBMISSING]
+* [Amazon ML](https://aws.amazon.com/machine-learning/) [@www-amazonml]
+* [Google Cloud AI](https://cloud.google.com/products/ai/) [@www-googlecloudai]
+* [IBM Watson](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/wml-ai.html) [@www-ibmwatson]
+* [Microsoft Azure ML Studio](https://studio.azureml.net/) [@www-microsoftazureml]
 
 A few Cloud service providers expose REST based APIs to the 
 users and one such API is 
-[Google Cloud Vision API](https://cloud.google.com/vision/) [@BIBMISSING] which 
+[Google Cloud Vision API](https://cloud.google.com/vision/) [@www-googlecloudvision] which 
 we will discuss in the next section and illustrate the usage with an example.
 
 
@@ -274,7 +274,7 @@ test prediction. Test data can be downloaded from
 To implement machine learning algorithm on text documents we will use 
 scikit-learn feature extraction modules. Please refer to related documentation 
 in the following scikit-learn link - 
-[Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html) [@BIBTEXMISSING].
+[Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html) [@www-scikitlearnfe].
 
 For the current example we will use the following specific modules:
 
