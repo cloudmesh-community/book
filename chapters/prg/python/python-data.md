@@ -359,7 +359,6 @@ for s in body_tag.strings:
     print(repr(s))
 ```
 
-
 **Searching the Tree**
 
 * `find()` function takes a filter expression as argument and returns 
