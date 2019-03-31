@@ -307,8 +307,8 @@ print(soup.prettify())
 **tag Object**
 
 A `tag` object refers to tags in the HTML document. It is possible to go down to  
-the inner levels of the DOM tree. To access a tag `div` under the tag `body`, it can be 
-done as follows:
+the inner levels of the DOM tree. To access a tag `div` under the tag `body`, 
+it can be done as follows:
 
 ```python
 body_div = soup.body.div
@@ -321,7 +321,8 @@ attributes of the HTML tag as keys.
 
 **has_attr() method**
 
-To check if a `tag` object has a specific attribute, `has_attr()` method can be used.
+To check if a `tag` object has a specific attribute, `has_attr()` method can 
+be used.
 
 ```python
 if body_div.has_attr('p'):
@@ -331,13 +332,14 @@ if body_div.has_attr('p'):
 **tag object attributes**
 
 * `name` - This attribute returns the name of the tag selected.
-* `attrs` - This attribute returns a dictionary of all the defined attributes of 
-  the HTML tag as keys.
-* `contents` - This attribute returns a list of contents enclosed within the HTML tag
-* `string` - This attribute which returns the text enclosed within the HTML tag. This 
-  returns `None` if there are multiple children
-* `strings` - This overcomes the limitation of `string` and returns an generator of 
-  all strings enclosed within the given tag
+* `attrs` - This attribute returns a dictionary of all the defined attributes 
+  of the HTML tag as keys.
+* `contents` - This attribute returns a list of contents enclosed within the 
+  HTML tag
+* `string` - This attribute which returns the text enclosed within the HTML 
+  tag. This returns `None` if there are multiple children
+* `strings` - This overcomes the limitation of `string` and returns a 
+  generator of all strings enclosed within the given tag
   
 Following code showcases usage of the above discussed attributes:
 
@@ -351,7 +353,7 @@ print('The attributes defined for body tag are:', attrs)
 
 print('The contents of \'body\' tag are:\n', body_tag.contents)
 
-print('The string value enclosed in \'head\' tag is:', body_tag.string)
+print('The string value enclosed in \'body\' tag is:', body_tag.string)
 
 for s in body_tag.strings:
     print(repr(s))
