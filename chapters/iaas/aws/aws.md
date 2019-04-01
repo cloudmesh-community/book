@@ -13,9 +13,9 @@ Amazon in the following document:
 We list the product in screenshots from their Product Web page panel
 in Figure: @fig:aws-products-1, @fig:aws-products-2.
 
-![AWS Products 1](images/aws-products-1.png){#fig:aws-products-1}
+![AWS Products 1 [Source](https://aws.amazon.com/)](images/aws-products-1.png){#fig:aws-products-1}
 
-![AWS Products 2](images/aws-products-2.png){#fig:aws-products-2}
+![AWS Products 2 [Source](https://aws.amazon.com/)](images/aws-products-2.png){#fig:aws-products-2}
 
 
 
@@ -55,16 +55,16 @@ Amazon offers a large number of services relatesd to virtual machine
 management
 
 
-* [Amazon EC2](https://aws.amazon.com/ec2/?nc2=h_mo)
-* [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/?nc2=h_mo)
+* [Amazon EC2 [Source](https://aws.amazon.com/)](https://aws.amazon.com/ec2/?nc2=h_mo)
+* [Amazon EC2 Auto Scaling [Source](https://aws.amazon.com/)](https://aws.amazon.com/ec2/autoscaling/?nc2=h_mo)
 
 ### Container Infrastructure as a Service
 
 Amazon offers the following container based services
 
-* [Amazon Elastic Container Service](https://aws.amazon.com/ecs/?nc2=h_mo)
-* [Amazon Elastic Container Service for Kubernetes](https://aws.amazon.com/eks/?nc2=h_mo)
-* [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/?nc2=h_mo)
+* [Amazon Elastic Container Service [Source](https://aws.amazon.com/)](https://aws.amazon.com/ecs/?nc2=h_mo)
+* [Amazon Elastic Container Service for Kubernetes [Source](https://aws.amazon.com/)](https://aws.amazon.com/eks/?nc2=h_mo)
+* [Amazon Elastic Container Registry [Source](https://aws.amazon.com/)](https://aws.amazon.com/ecr/?nc2=h_mo)
 
 ### Serverless Compute using AWS Lambda
 
@@ -131,7 +131,7 @@ Marketplace](https://aws.amazon.com/marketplace/search/results/ref=mkt_ste_l2_da
 ## Locations
 As the following figure shows: @fig:aws-locations.
 
-![AWS-Locations](images/aws-locations.png){#fig:aws-locations}
+![AWS-Locations [Source](https://aws.amazon.com/)](images/aws-locations.png){#fig:aws-locations}
 
 
 
@@ -145,11 +145,11 @@ In order to create a AWS account you will need the following
 * A valid phone number
 
 First you need to visit the AWS
-[signup page](https://aws.amazon.com/free/) and click "Create Free
+[signup page [Source](https://aws.amazon.com/)](https://aws.amazon.com/free/) and click "Create Free
 Account". You will then be asked to provide some basic details
 including your email address as shown in the image: @fig:aws-signup.
 
-![AWS Signup](images/aws_signup_page.png){#fig:aws-signup}
+![AWS Signup [Source](https://aws.amazon.com/)](images/aws_signup_page.png){#fig:aws-signup}
 
 Next you will be asked to provide further details such as your name,
 address and phone number. After the additional details have been
@@ -160,7 +160,7 @@ applied to your credit/debit card unless you use the AWS services and
 exceed the free tier limits, which will be discussed in the next
 section.
 
-![Payment Information](images/creditcard_details.png){#fig:payment-information}
+![Payment Information [Source](https://aws.amazon.com/)](images/creditcard_details.png){#fig:payment-information}
 
 After the credit/debit card has been verified AWS will use your phone
 number to verify your identity. Once you are logged into your account
@@ -170,7 +170,7 @@ services tab in the left top corner will allow you to access all the
 services that are available to you through AWS as shown in the image
 : @fig:aws-console.
 
-![AWS Console](images/aws_console.png){#fig:aws-console}
+![AWS Console [Source](https://aws.amazon.com/)](images/aws_console.png){#fig:aws-console}
 
 ## AWS Command Line Interface
 

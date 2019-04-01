@@ -1,18 +1,31 @@
 # Artificial Intelligence Service with REST
 
+
+:o: bibs missning - Added new Bib references in ai.bib
+
+:o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS` - Made changes
+
+:o: could screenshots bee redone on windows that are less wide with larger font, quality is bad due to unneded space - Uploaded new images
+
+:o: Gregor fixed all itemized lists, they all had wrong indentation.
+
+:o: Gregor fixed all bash with missing $
+
+:o: Gregor fixed all python removing the last line
+
 ## AI and ML offerings by Cloud service providers
 
 All major cloud service providers offer a suite of AI and ML products 
 and services. A few of the notable services include, but are not limited to:
 
-* [Amazon ML](https://aws.amazon.com/machine-learning/)
-* [Google Cloud AI](https://cloud.google.com/products/ai/)
-* [IBM Watson](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/wml-ai.html)
-* [Microsoft Azure ML Studio](https://studio.azureml.net/)
+* [Amazon ML](https://aws.amazon.com/machine-learning/) [@www-amazonml]
+* [Google Cloud AI](https://cloud.google.com/products/ai/) [@www-googlecloudai]
+* [IBM Watson](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/wml-ai.html) [@www-ibmwatson]
+* [Microsoft Azure ML Studio](https://studio.azureml.net/) [@www-microsoftazureml]
 
 A few Cloud service providers expose REST based APIs to the 
 users and one such API is 
-[Google Cloud Vision API](https://cloud.google.com/vision/) which 
+[Google Cloud Vision API](https://cloud.google.com/vision/) [@www-googlecloudvision] which 
 we will discuss in the next section and illustrate the usage with an example.
 
 
@@ -28,11 +41,11 @@ requests and responses.
 Images can be provided to the API in 3 different ways [@www-googlevisionapi]:
 
 * As a base64-encoded image string. If the image is stored locally, 
-it can be converted into a string and pass it as the value of image.content
+  it can be converted into a string and pass it as the value of image.content
 * As a Google Cloud Storage URI. Pass the full URI as the value of 
-image.source.imageUri
+  image.source.imageUri
 * As a publicly-accessible HTTP or HTTPS URL. Pass the URL as the 
-value of image.source.imageUri
+  value of image.source.imageUri
 
 In this section, we showcase how to use Google Cloud Vision API for label 
 detection in an image using a REST service. 
@@ -40,27 +53,26 @@ detection in an image using a REST service.
 Following are the pre-requisites before we can start using the API:
 
 * Sign in to google account and create a Google Cloud Platform Project 
-as shown in the @fig:gcp-project. Make sure billing is enabled. 
+  as shown in @fig:gcp-project. Make sure billing is enabled. 
 
 ![GCP-Project](images/gcp-project.png){#fig:gcp-project}
 
-* Enable Cloud Vision API as shown in the @fig:gcp-api: 
+* Enable Cloud Vision API as shown in @fig:gcp-api: 
 
 ![GCV-API](images/gcv-api.png){#fig:gcp-api}
 
-* In the GCP console, create service account key as shown in the 
-@fig:gcp-key. Save the JSON file that contains the key.
+* In the GCP console, create service account key as shown in 
+  @fig:gcp-key. Save the JSON file that contains the key.
 
 ![GCV-KEY](images/gcv-accountkey.png){#fig:gcp-key}
 
-* Set the envionment variable *GOOGLE_APPLICATION_CREDENTIALS* to the 
-path of the JSON key file downloaded.
+* Set the envionment variable `GOOGLE_APPLICATION_CREDENTIALS` to the 
+  path of the JSON key file downloaded.
 
 * Install the client library as follows:
 
 ```bash
-pip install --upgrade google-cloud-vision
-
+$ pip install --upgrade google-cloud-vision
 ```
 
 
@@ -70,7 +82,7 @@ Image will be read from a local library and the name of the image will be
 passed as a parameter in the OpenAPI REST service. The function will return 
  asimple list of all the labels detected by the API.
 
-Note: The environment variable *GOOGLE_APPLICATION_CREDENTIALS* can also 
+Note: The environment variable `GOOGLE_APPLICATION_CREDENTIALS` can also 
 be set in the program as shown in the following code:
 
 
@@ -81,7 +93,6 @@ from flask import jsonify
 # Imports the Google Cloud client library
 from google.cloud import vision
 from google.cloud.vision import types
-
 
 def get_labels(image_name):
     current_path = os.getcwd()
@@ -109,8 +120,7 @@ def get_labels(image_name):
     for label in labels:
         label_list.append(label.description)
     label_dict['Labels'] = label_list
-    return jsonify(label_dict)
-    
+    return jsonify(label_dict)   
 ```
 
 Next, we create an OpenAPI specification which will be read to 
@@ -164,7 +174,6 @@ definitions:
     properties: 
       label:
         type: "string"
-
 ```
 
 
@@ -194,24 +203,23 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(port=8080, debug=True)
-    
+    app.run(port=8080, debug=True)    
 ```
 
 To implement the REST service, run the following on the terminal:
 
 ```bash
-python server.py
+$ python server.py
 ```
 
 Once the connection is established, run the following CURL command 
 on the terminal
 
 ```bash
-curl http://localhost:8080/airest/gcv/mp1.jpg
+$ curl http://localhost:8080/airest/gcv/mp1.jpg
 ```
 
-Input image `mp1.jpg` is shown in the @fig:gcv-testimage: 
+Input image `mp1.jpg` is shown in @fig:gcv-testimage: 
 
 ![GCV-Test Image](images/mp1.png){#fig:gcv-testimage}
 
@@ -233,9 +241,7 @@ Output response from the REST API:
     "Ancient history"
   ]
 }
-
 ```
-
 
 ## Naive Bayes Algorithm for Text classification
 
@@ -251,14 +257,15 @@ the datasets are made available in an Azure public blob storage container
 and the links are mentioned in the following details: 
 
 * Training data: We will utilize a pre-processed training dataset with labels 
-attached to each review as *positive* or *negative*. Training data can be 
-downloaded from 
-[here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
+  attached to each review as *positive* or *negative*. Training data can be 
+  downloaded from 
+  [here](https://azuremallikresourcediag.blob.core.windows.net/mltest/ProcessedTrain.csv).
 
 * Test data: Test dataset has been setup in such a way that first 2989 reviews 
-are positive and rows from 2990 to 4321 are negative reviews. Test data needs 
-to pre-processed and cleaned before the algorithm is implemented. After the 
-test data is cleaned, we will label the test data as per the information given. 
+  are positive and rows from 2990 to 4321 are negative reviews. Test data needs 
+  to pre-processed and cleaned before the algorithm is implemented. After the 
+  test data is cleaned, we will label the test data as per the information given. 
+
 Finally, we will implement 
 Multinomial Naive Bayes classifier algorithm and calculate the accuracy of the 
 test prediction. Test data can be downloaded from 
@@ -267,7 +274,7 @@ test prediction. Test data can be downloaded from
 To implement machine learning algorithm on text documents we will use 
 scikit-learn feature extraction modules. Please refer to related documentation 
 in the following scikit-learn link - 
-[Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html).
+[Feature Extraction](https://scikit-learn.org/stable/modules/feature_extraction.html) [@www-scikitlearnfe].
 
 For the current example we will use the following specific modules:
 
@@ -282,12 +289,12 @@ Solution will be implemented in following steps:
 * **Step-2:** Define a function to pre-process *Test* dataset.
 * **Step-3:** Define a function to implement Naive Bayes algorithm.
 * **Step-4:** Define an OpenAPI specification in a YAML file. 
-The specification will have 3 endpoints for each of the previous steps:
+  The specification will have 3 endpoints for each of the previous steps:
   * Download training and test datasets.
   * Pre-process Test data with parameter.
   * Build Naive Bayes classification model and return test accuracy.
 * **Step-5:** Create a module to use the connexion service and read in the 
-OpenAPI specification from the yaml file.
+  OpenAPI specification from the yaml file.
 
 
 Pre-requisites:
@@ -308,7 +315,7 @@ import connexion
 ```
 
 
-**Step-1:**
+**Step 1:**
 
 Note: This step downloads data from Azure cloud Blob storage. Prior to 
 replicating this step, datasets need to be uploaded to your respective Azure 
@@ -353,20 +360,18 @@ def download_data():
         block_blob_service.get_blob_to_path(container_name, filename, full_path_to_file)
 
     return 'Datasets downloaded'
-
 ```
 
-
-**Step-2:**
+**Step 2:**
 
 Pre-processing test data involves following tasks:
 
- * Cleaning the text data i.e. remove unwanted characters, convert all text 
- to lower case, delete any extra spaces and finally join all the words
- together into sentences.
- * Label the rows as per the information provided i.e. label first 2989 rows 
- as *positive* and rest as *negative*. We will take 2990 as a input parameter
- when we define the endpoint.
+* Cleaning the text data i.e. remove unwanted characters, convert all text 
+  to lower case, delete any extra spaces and finally join all the words
+  together into sentences.
+* Label the rows as per the information provided i.e. label first 2989 rows 
+  as *positive* and rest as *negative*. We will take 2990 as a input parameter
+  when we define the endpoint.
  
 
 ```python
@@ -402,11 +407,10 @@ def file_clean(infile, label, writeFile):
         toWrite = label+","+words 
         writeFile.write(toWrite)
         writeFile.write("\n") 
- 
 ```
 
 
-**Step-3:**
+**Step 3:**
 
 After the Test dataset has been cleaned and labelled, we now run the 
 Multinomial Naive Bayes algorithm on training data and use the model
@@ -459,21 +463,20 @@ def get_data_label(inp_file):
         arr = line.replace("\n", "").split(",")  # split with comma
         label.append(arr[0])  # first element is class label
         data.append(arr[1].replace("\n", ""))  # second element is SMS
-    return data, label
-    
+    return data, label 
 ```
 
-**Step-4:**
+**Step 4:**
 
 Now we define an OpenAPI specification in yaml format to create 2 different 
 endpoints for functions defined in the revios 3 steps. 
 
 * Functions defined in step-1, step-2 and step-3 need to be 
-part of a module named `ai.py` 
+  part of a module named `ai.py` 
 * operationId in the specification will correspond to the names of the functions
-defined in each of the previous steps respectively.
+  defined in each of the previous steps respectively.
 * The input parameter required for function in step-2 will be passed as inline 
-parameter (linenum) for the endpoint to pre-process test dataset.
+  parameter (linenum) for the endpoint to pre-process test dataset.
 
 
 ```python
@@ -548,11 +551,10 @@ paths:
 definitions:
   AI:
     type: string
-
 ```
 
 
-**Step-5:**
+**Step 5:**
 
 Finally, we create a module (`server.py`) to use connexion service to read the 
 above created OpenAPI specification (`ai.yaml`) and dynamically call the methods 
@@ -580,14 +582,13 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(port=8080, debug=True)
-    
+    app.run(port=8080, debug=True)   
 ```
 
 To implement the REST service, run the following on the terminal:
 
 ```bash
-python server.py
+$ python server.py
 ```
 
 Once the connection is established, 
@@ -595,19 +596,19 @@ following CURL command can be used for the 1st endpoint which will
 download training and test datasets to local library.
 
 ```bash
-curl http://localhost:8080/airest/ai/getdata
+$ curl http://localhost:8080/airest/ai/getdata
 ```
 
 Following CURL command can be used for the 2nd endpoint which will 
 pre-process the test dataset
 
 ```bash
-curl http://localhost:8080/airest/ai/testdata/2990
+$ curl http://localhost:8080/airest/ai/testdata/2990
 ```
 
 Following CURL command can be used for the 3rd endpoint which will build 
 the model to classify the test data and finally return the accuracy
 
 ```bash
-curl http://localhost:8080/airest/ai/nb
+$ curl http://localhost:8080/airest/ai/nb
 ```
