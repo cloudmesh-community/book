@@ -10,6 +10,6 @@ generated data set and the sample dataset.
 python kNN-Driver.py
 ```
 
-## Visuliaze the clusteres using webplotviz
+## Visuliaze the clusters using webplotviz
 
 [E222 Webplotviz Collection](https://spidal-gw.dsc.soic.indiana.edu/public/groupdashboard/E222)
