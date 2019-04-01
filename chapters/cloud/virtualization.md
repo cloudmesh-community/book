@@ -58,7 +58,7 @@ We distinguish the following types of Virtual machines
 Next we will be analyzing the system machine virtualization in more
 detail, as they are one of the reasons for the clouds revolution.
 
-## System Virtual Machines 
+## System Virtual Machines
 
 The use of a system as a virtual machine has its clear advantages for
 the cloud. We distinguish two main ways of system virtualizing:
@@ -144,7 +144,7 @@ To showcase how these technologies relate to each other you may
 review @fig:vm-taxonomy
 
 
-![Virtualization Taxonomy](images/vm.png){#fig:vm-taxonomy}
+![Virtualization Taxonomy [@paravsfull-virt]](images/vm.png){#fig:vm-taxonomy}
 
 We summarize the following *hypervisor* types:
 
@@ -333,7 +333,7 @@ thread which can be managed with common Linux tools [@kvmvsqemu].
 #### Xen
 
 Xen is one of the most widely adopted hypervisors by IaaS cloud. It is
-supported by the earliest and still the most popular public cloud 
+supported by the earliest and still the most popular public cloud
 offering, i.e., Amazon Web Service (AWS). Eucalyptus, one open-source
 effort to replicate what AWS had to offer, and the then most popular
 private cloud software, supported Xen from the start. And later Openstack,
@@ -363,7 +363,7 @@ Hyper-V is still getting a lot of popularity comparing to XEN and KVM
 which we attribute to the increasing presence of Microsoft's Azure cloud
 offering.
 
-![Popularity of KVM, Xen, and Hyper-V according to Google Trends](images/kvm-xen-hyperv-gtrends.png){#fig:hypervisor-gtrends}
+![Popularity of KVM, Xen, and Hyper-V according to Google Trends [Source](https://trends.google.com/trends/?geo=US)](images/kvm-xen-hyperv-gtrends.png){#fig:hypervisor-gtrends}
 
 However overall the search popularity of hypervisors have been
 decreasing, as other lightweight virtualization solutions, i.e.,
@@ -442,7 +442,7 @@ Microsoft Word on Linux or macOS, may remember that Wine was the tool
 we used to do so even before Word was released on macOS.
 
 
-#### Comparison of some technologies 
+#### Comparison of some technologies
 
 QEMU and KVM are better integrated in Linux and has a smaller
 footprint.  This may result in better performance. VirtualBox is
@@ -454,7 +454,7 @@ summarize support for full- and paravirtualization
 
 |     | XEN | KVM | VirtualBox | VMWare |
 | --- | ---: | ---: | ---: | ---: |
-| Paravirtualization | yes | no | no | no | 
+| Paravirtualization | yes | no | no | no |
 |Full virtualization | yes | yes | yes |yes |
 
 ### Selected Storage Virtualization Software and Tools
@@ -471,7 +471,7 @@ changing how we approach data storage needs in the enterprise.
 A good example for a cloud based virtual storage is google drive.
 Other systems include Box, AWS3 and Azure.
 
-### Selected Network Virtualization Software and Tools 
+### Selected Network Virtualization Software and Tools
 
 Network virtualization allows hardware and software network resources
 as well as network functionality to be combined into a single,
@@ -483,4 +483,3 @@ and containers running on a single server.
 
 :o: We will not cover this topic in this introductory class. However
 students can contribute a section or chapter
-

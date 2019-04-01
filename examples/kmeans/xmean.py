@@ -63,7 +63,7 @@ def isValidNumberString(s):
 data = loadCSV("sample.csv")
 
 # computing K-Means with K = 2 (2 clusters)but you can change this. Plot works upto 5 clusters
-K=5
+K=4
 centroids,_ = kmeans(data,K)
 # assign each sample to a cluster
 idx,_ = vq(data,centroids)

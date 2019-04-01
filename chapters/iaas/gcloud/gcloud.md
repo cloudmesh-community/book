@@ -22,7 +22,7 @@ Chrome OS, and Google Maps Platform. The platform and all its
 offerings can be managed via a customizable dashboard
 @fig:gcloud-dashboard.
 
-![Gcloud dashboard](images/dashboard.png){#fig:gcloud-dashboard}
+![Gcloud dashboard [Source](https://cloud.google.com/)](images/dashboard.png){#fig:gcloud-dashboard}
 
 ## Cloud Computing Services and Products
 
@@ -63,11 +63,11 @@ deployment tools. Apigee Edge integrates these tools together into a
 platform for managing APIs through the use of API proxies, which are
 combined together with a service plan into an API product.
 
-* [Apigee API Platform](https://cloud.google.com/apigee-api-management/): 
+* [Apigee API Platform](https://cloud.google.com/apigee-api-management/):
   Develop, secure, deploy, and monitor your APIs everywhere.
-* [API Analytics](https://cloud.google.com/api-analytics/): 
+* [API Analytics](https://cloud.google.com/api-analytics/):
   Insight into operational and business metrics for APIs.
-* [API Monetization](https://cloud.google.com/api-monetization/): 
+* [API Monetization](https://cloud.google.com/api-monetization/):
   Flexible, easy-to-use solution to realize value from APIs.
 * [Apigee Sense](https://cloud.google.com/apigee-sense/): Intelligent behavior detection to protect APIs from attacks.
 * [Cloud Endpoints](https://cloud.google.com/endpoints/): Develop, deploy, and manage APIs on GCP.
@@ -76,7 +76,7 @@ combined together with a service plan into an API product.
 * [Apigee Open Banking APIx](https://apigee.com/about/solutions/apigee-open-banking-apix): Accelerate open banking and PSD2 compliance.
 * [Cloud Healthcare API](https://cloud.google.com/healthcare-api/): Secure APIs powering actionable healthcare insights.
 
-![Google_api_management](images/api_management.png){#fig:gcloud-api-management}
+![Google API management [Source](https://cloud.google.com/)](images/api_management.png){#fig:gcloud-api-management}
 
 ### Compute
 
@@ -265,4 +265,3 @@ service for virtual machines and containers.
 * [Cloud Storage for Firebase](https://firebase.google.com/products/storage/): Store and serve content with ease.
 * [Cloud Filestore](https://cloud.google.com/filestore/): High-performance file storage.
 * [Drive Enterprise](https://cloud.google.com/drive-enterprise/): Cloud-based content collaboration and storage.
-

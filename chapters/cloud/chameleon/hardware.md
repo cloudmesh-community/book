@@ -45,9 +45,9 @@ infrastructure with more than a PB of storage. Each node in the SCU
 connects to a Dell switch at 10Gbps, with 40Gbps of bandwidth to the
 core network from each SCU. The total system contains 12 SCUs (10 at
 TACC and 2 at UC) for a total of 13,056 cores, 66 TiB of RAM, and 1.5PB
-of configurable storage in the SCU subsystem.
+of configurable storage in the SCU subsystem. (See @fig:chameleon-cloud-racks)
 
-![Chameleon Cloud Racks](images/Chameleon2.jpeg)
+![Chameleon Cloud Racks](images/Chameleon2.jpeg){#fig:chameleon-cloud-racks}
 
 ## Network
 
