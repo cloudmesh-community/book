@@ -9,4 +9,4 @@ python kNN-Driver.py
 ```
 
 * Get the raw .txt file on webplotviz
-* Showcase the rotated views of data
+* Showcase the rotated views of data using webplotviz
