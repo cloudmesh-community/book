@@ -18,7 +18,7 @@ ax1 = FigDating.add_subplot(311, xlim=(-0.1,1.1), ylim=(-.05,1.15))     #Dividin
 ax1.scatter(group[:,0], group[:,1], s= 20, c= ColoredGroupLabels, marker = 'o' )    #Plotting the data as a scatter plot with color(c) property as per the labelling. 
 
 #Testing with new points
-testvector = [.2, .2]                                                   #first point 
+testvector = [0.75, 0.75]                                                   #first point 
 answer = kNN.classify0(testvector,group, labels, 3)                     #classify the first point
 # type "print answer" to see result
 ax1.scatter(testvector[0], testvector[1], s= 20, c= colormap1[answer], marker = 'x' ) #plot first point

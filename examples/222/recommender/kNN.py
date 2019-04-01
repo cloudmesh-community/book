@@ -27,7 +27,7 @@ def classify0(inX, dataSet, labels, k):
     for i in range(k):	# Run over k nearest neighbors
         voteIlabel = labels[sortedDistIndicies[i]]	# Label of this neighbor
         classCount[voteIlabel] = classCount.get(voteIlabel,0) + 1	# .get gets current count for voteIlabel and returns zero if first time voteIlabel seen (default = 0)
-    sortedClassCount = sorted(classCount.iteritems(), key=operator.itemgetter(1), reverse=True)	# Sort classCount (highest to lowest) by voteIlabel count
+    sortedClassCount = sorted(classCount.items(), key=operator.itemgetter(1), reverse=True)	# Sort classCount (highest to lowest) by voteIlabel count
     return sortedClassCount[0][0]	# The label that occurs most often in k nearest neighbors
 
 #	Set up a datset of 4 (2D vector) items -- each of which has one of two labels
@@ -75,8 +75,8 @@ def datingClassTest(hoRatio):
         classifierResult = classify0(normMat[i,:],normMat[numTestVecs:m,:],datingLabels[numTestVecs:m],3)
 #        print "the classifier came back with: %d, the real answer is: %d" % (classifierResult, datingLabels[i])
         if (classifierResult != datingLabels[i]): errorCount += 1.0
-    print "the total error rate is: %f" % (errorCount/float(numTestVecs))
-    print "Number Bad %f" % errorCount
+    print("the total error rate is: %f" % (errorCount/float(numTestVecs)))
+    print("Number Bad %f" % errorCount)
 
 # Remove 2 files from original here
 
