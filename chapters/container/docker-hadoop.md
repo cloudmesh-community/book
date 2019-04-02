@@ -8,7 +8,7 @@ minimum, maximum, average and standard deviation values using several
 input files which contain float numbers.
 
 
-This section is based on the hadoop release 3.0.3 which
+This section is based on the hadoop release 3.1.1 which
 includes significant enhancements over the previous version of Hadoop
 2.x. Changes include the use of the following software:
 
@@ -18,7 +18,7 @@ includes significant enhancements over the previous version of Hadoop
 
 A Dockerfile to create the hadoop deployment is available at
 
-*<https://github.com/cloudmesh-community/book/blob/master/examples/docker/hadoop/3.0.3/Dockerfile>
+*<https://github.com/cloudmesh-community/book/blob/master/examples/docker/hadoop/3.1.1/Dockerfile>
 
 ## Building Hadoop using Docker
 
@@ -28,8 +28,8 @@ You can build hadoop from the Dockerfile as follows:
 $ mkdir cloudmesh-community
 $ cd cloudmesh-community
 $ git clone https://github.com/cloudmesh-community/book.git
-$ cd book/examples/docker/hadoop/3.0.3
-$ docker build -t cloudmesh/hadoop:3.0.3 .
+$ cd book/examples/docker/hadoop/3.1.1
+$ docker build -t cloudmesh/hadoop:3.1.1 .
 ```
 
 The complete docker image for Hadoop consumes 1.5GB.
@@ -40,13 +40,13 @@ $ docker images
 
 ```bash
 REPOSITORY       TAG   IMAGE ID     CREATED    SIZE
-cloudmesh/hadoop 3.0.3 ba2c51f94348 1 hour ago 1.52GB
+cloudmesh/hadoop 3.1.1 ba2c51f94348 1 hour ago 1.52GB
 ```
 
 To use the image interactively you can start the container as follows:
 
 ```bash
-$ docker run -it cloudmesh/hadoop:3.0.3 /etc/bootstrap.sh -bash
+$ docker run -it cloudmesh/hadoop:3.1.1 /etc/bootstrap.sh -bash
 ```
 
 It may take a few minutes at first to download image.
@@ -80,7 +80,7 @@ $ hdfs dfsadmin -safemode leave
 We included a statistics and a PageRank examples into the
 container. The examples are also available in github at
 
-* <https://github.com/cloudmesh-community/book/tree/master/examples/docker/hadoop/3.0.3/examples>
+* <https://github.com/cloudmesh-community/book/tree/master/examples/docker/hadoop/3.1.1/examples>
 
 We explain the examples next
 
@@ -407,4 +407,4 @@ installation of Hadoop is not necessary anymore.
 
 
 * The details of the new version is available from the official site
-  at <http://hadoop.apache.org/docs/r3.0.3/index.html>
+  at <http://hadoop.apache.org/docs/r3.1.1/index.html>
