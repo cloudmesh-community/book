@@ -6,6 +6,8 @@
 
 :o: image missing, work with TA
 
+:o: reference missing [@www-developer-box]
+
 ---
 
 **:mortar_board: Learning Objectives**
