@@ -2,13 +2,13 @@
 
 Legend markings
 
-* Class released :white_check_mark: | 
+* Class released :white_check_mark: |
 * Class under development :o:
 
 :o: Warning the dates may change not yet correct.
 
 * Semester Start for this class 01/07
-* Semester end for this class 05/03, all assignmrents are due 2 weeks before semester end.
+* Semester end for this class 05/03, all assignments are due 2 weeks before semester end.
 
 ## Proposed Lecture Timeline
 
@@ -21,7 +21,7 @@ The book can be used as reference material in that case.
 
 |     | Dates  | Unit | Title  | Description |
 | --- |------ | --- | ------- | --------------------- |
-| :white_check_mark: | 01/07   | 1       | Introduction       | [Gregor von Laszewski](#sec:gregor) |
+| :white_check_mark: | 01/07    | 1       | Introduction       | [Gregor von Laszewski](#sec:gregor) |
 | :white_check_mark: | 01/07    |         |                    | [Class summary](#sec:516-summary) |
 | :white_check_mark: | 01/07    |         |                    | [Definition of Cloud Computing](#sec:cloud-definition) |
 | :white_check_mark: | 01/07    | 2       | Tools              | **Tools and Services** |
@@ -53,7 +53,7 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/01    | 5       | Virtualization I   | - [Qemu](#sec:qemu-kvm) |
 | :white_check_mark: | 02/01    | 6       | Infrastructure     | [Infrastructure as a Service](#sec:iaas-intro) |
 | :white_check_mark: | 02/01    |         |                    | - [Azure](#sec:azure) |
-| :white_check_mark: | 02/01    |         |                    | - [AWS](#sec:aws) | 
+| :white_check_mark: | 02/01    |         |                    | - [AWS](#sec:aws) |
 | :white_check_mark: | 02/01    |         |                    | - [OpenStack](#sec:openstack) |
 | :white_check_mark: | 02/04    |         | Chameleon Cloud    | - **Chameleon Cloud** |
 | :white_check_mark: | 02/04    |         |                    | - [Resources](#sec:chameleon-resources) |
@@ -61,28 +61,28 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 02/04    |         |                    | - [Charge](#sec:chameleon-charge) |
 | :white_check_mark: | 02/04    |         |                    | - [Quick start](#sec:chameleon-start) |
 | :white_check_mark: | 02/04    |         |                    | - [KVM user guide](#sec:chameleon:vm) |
-| :white_check_mark: | 02/04    |         |                    | - [CLI](#sec:chameleon-cli) | 
+| :white_check_mark: | 02/04    |         |                    | - [CLI](#sec:chameleon-cli) |
 | :white_check_mark: | 02/04    |         |                    | - [Horizon](#sec:chameleon-horizon) |
 | :white_check_mark: | 02/04    |         |                    | - [Heat](#sec:chameleon-heat})
 | :white_check_mark: | 02/04    |         |                    | - [Baremetal](#sec:chameleon-baremetal)
 | :white_check_mark: | 02/04    |         |                    | - [FAQ](#sec:chameleon-faq}) |
 | :white_check_mark: | 02/11    | 8       | Programming        | Python for Cloud Computing, |
 | :white_check_mark: | 02/11    |         |                    | - [Libcloud](#sec:python-libcloud) |
-| :o:                | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
+| :white_check_mark: | 02/11    |         | Virtualization  II | Containers, Docker, Kubernetes |
 | :white_check_mark: | 02/18    | 9       | Map/Reduce         | [Map/Reduce](#sec:map-reduce), [Hadoop](#sec:hadoop-introduction), Spark |
 | :white_check_mark: | 02/25    | 10      | Messaging          | Messaging |
 | :white_check_mark: | 02/25    | 11      | Messaging          | - [MQTT](#sec:mqtt)  |
 | :white_check_mark: | 03/04    |         |                    | - [Graphql](#sec:graphql)  |
-| :o:                | 04/01   |       | Go                 | [Go Introduction](#sec:go-intro) |
-| :o:                | 04/01    |         |                    | - [Go Links](#sec:go-links) |
-| :o:                | 04/01    |         |                    | - [Go Install](#sec:go-install) |
+| :white_check_mark: | 04/01    |         | Go                 | [Go Introduction](#sec:go-intro) |
+| :white_check_mark: | 04/01    |         |                    | - [Go Links](#sec:go-links) |
+| :white_check_mark: | 04/01    |         |                    | - [Go Install](#sec:go-install) |
 | :white_check_mark: | 04/01    |         |                    | - [Go Editors](#sec-go-editor) |
-| :o:                | 04/01    |         |                    | - [Go Language](#sec-go-language) |
-| :o:                | 04/01    |         |                    | - [Go Libraries](#sec-go-libraries) |
-| :o:                | 04/01    |         |                    | - [Go cmd](#sec-go-cmd) |
-| :o:                | 04/01    |         |                    | - [Go Cloud](#sec-go-cloud) |
-| :o:                | 04/01    |         |                    | - [Go REST](#sec-go-rest) |
-| :o:                | 04/01    |         |                    | - [Go for the Cloud](#sec-go-cloud) |
+| :white_check_mark: | 04/01    |         |                    | - [Go Language](#sec-go-language) |
+| :white_check_mark: | 04/01    |         |                    | - [Go Libraries](#sec-go-libraries) |
+| :white_check_mark: | 04/01    |         |                    | - [Go cmd](#sec-go-cmd) |
+| :white_check_mark: | 04/01    |         |                    | - [Go Cloud](#sec-go-cloud) |
+| :white_check_mark: | 04/01    |         |                    | - [Go REST](#sec-go-rest) |
+| :o:                | 04/08    |         |                    | - [Go for the Cloud](#sec-go-cloud) |
 | :o:                | 04/15    | 13      | Edge Computing     | Edge Computing and the Cloud |
 
 
@@ -120,7 +120,7 @@ how to execute your project in a reproducible manner to others.
 
 - all times are in EST
 
-Additional lectures will be added that allow easy management of the project. 
+Additional lectures will be added that allow easy management of the project.
 These lectures can be taken any time when needed.
 
 <div class="smalltable">
@@ -150,4 +150,3 @@ contribute the work of 3 team members and not fewer. This also means
 that if you want to work in a project you need to vet your team
 members. Do chose them based on capability and make sure they are a
 good fit for your project.
-
