@@ -435,7 +435,7 @@ the VM via the GUI does not count. This must be done by Mar 15
 
 See @sec:docker-cluster
 
-Learn MapReduce examples from this section @s-hadoop-docker.
+Learn MapReduce examples from this section @sec:hadoop-docker.
 
 ## Week 11: Kubernetes
 
