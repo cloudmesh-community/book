@@ -75,3 +75,4 @@ plot(data[idx==0,0],data[idx==0,1],'ob',
      data[idx==2,1],'og', data[idx==3,0],data[idx==3,1],'oy', data[idx==4,0],data[idx==4,1],'om')
 plot(centroids[:,0],centroids[:,1],'sk',markersize=8)
 show()
+np.savetxt('new.txt', idx)
