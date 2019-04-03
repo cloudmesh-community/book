@@ -20,7 +20,7 @@ Here we list some of the activities by week.
    every Friday.
 
 2. Understand that we have only 3 assignments. One of which is a
-   significant project. 
+   significant project.
 
 3. Download the Lecture notes epub and install an epub reader to read
    the lecture notes. Although we have a PDF version, this version is
@@ -39,12 +39,12 @@ Here we list some of the activities by week.
    courses recommend you to install and use anaconda. Discuss this on
    piazza if you like. If you do not understand this or question this
    attend the online hour. If you have issues with this talk to the TA's.
-   
+
 5. Make sure you have a git client installed from which you can
    interact with git. Initially you can just youse a web browser
    Find a spelling or grammar error in the lecture notes and correct
    it via the github.com Web browser while conducting a pull request.
- 
+
 6. Make sure to fill out the survey so we can create a github.com
    repository for your project
 
@@ -63,7 +63,7 @@ Please use git commits. It is not sufficient if just one student of a
 group commits the entire project in case of group work.
 
 ## Week 2: Jan 17 - 25
- 
+
 ### Development machine
 
 If you have not yet set up a computer with python 3.7.2 on it please
@@ -97,13 +97,13 @@ that can even evolve to a chapter if you like to focus on this.
 Some of you asked what Exercises they can do for this week to do some
 work bejond reading the section.
 
-We suggest you do 
+We suggest you do
 
 * E.Carbon.2 (see @sec:operation-impact)
 * E.Energy.1 (see @sec:exercises-energy)
 * E.Energy.2 (see @sec:exercises-energy)
 
-### Remarks: Sections 
+### Remarks: Sections
 
 Although it is sufficient to just read the chapter we provide, its fun
 to do some google searches including just to look at images ... If you
@@ -114,10 +114,10 @@ is equivalent to one section every three weeks which is actually not
 much. Typically you will spend the first week researching and writing
 a draft. The second week experimentation or creating an example if
 applicable and the third week you will engage with other students and
-the TAs on reviews and improvements if needed. 
+the TAs on reviews and improvements if needed.
 
 ### Python till rest of the semester
- 
+
 Python 3.7.2: Set up a computer on which you can execute python 3.7.2.
 Some did not complete that taks yet (see @sec:python-install,
 @sec:python-intro, @sec:python-language).
@@ -135,7 +135,7 @@ videos in the python section that showcases this.
 
 You do not have to do some of the more advanced python concepts. Focus
 initially on the language and learn how to do classes as this will be
-extremely helpful. 
+extremely helpful.
 
 ## Week 3: Jan 25 - Feb 1
 
@@ -346,7 +346,7 @@ For more information see @sec:mongodb-python and @sec:mongodb-cloudmesh.
 
 This week you will start learning the basics of MapReduce concept and its
 use-cases to understand what MapReduce is. The MapReduce section (see @sec:map-reduce)
-gives an introduction and describes the basics of the MapReduce concept. 
+gives an introduction and describes the basics of the MapReduce concept.
 
 Watch the video lecture that describes the software echo system around MapReduce
 which is listed in @sec:map-reduce.
@@ -359,14 +359,14 @@ thought of as a "Hello world" example into MapReduce.
 
 ### Hadoop and Spark
 This week you will further look into MapReduce through Apache Hadoop, Hadoop
-is one of the earliest open source implementations of the MapReduce concept. 
+is one of the earliest open source implementations of the MapReduce concept.
 Even though Hadoop has now been replaced by faster frameworks such as Spark,
-Flink and Twister2. It is still important to understand the basic concepts 
-around Apache Hadoop. 
+Flink and Twister2. It is still important to understand the basic concepts
+around Apache Hadoop.
 
 Read and understand the Hadoop echo system as described in @sec:hadoop-introduction.
 Even though Hadoop is rarely used as a MapReduce framework, other parts of the
-echo system such as HDFS(HaDoop File System) and Yarn are still very popular. 
+echo system such as HDFS(HaDoop File System) and Yarn are still very popular.
 
 Watch and understand the pagerank example which is a popular and important
 algorithm which can be solved cleanly with MapReduce
@@ -375,19 +375,19 @@ Install Hadoop and try out some of the examples to get a better understanding
 about how the framework operates.
 
 Read the Spark section to understand how spark was developed to improve upon
-Apache Hadoop and how it achieves better performance for Iterative MapReduce 
+Apache Hadoop and how it achieves better performance for Iterative MapReduce
 applications
 
 MANDATORY: Read the Scientific Writing with markdown epub, this is required
 before you make and contributions to the book to make sure that you understand
-the format of the book and the correct notations. The epub is available in 
+the format of the book and the correct notations. The epub is available in
 [Scientific Writing](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true)
 
 MANDATORY Project Milestone: Review of your cloudmesh commandline commands
-specified in docopt. Please make sure you have your command either specified in 
-the cm directory or in your hid. make sure to add it to your README, so i can 
+specified in docopt. Please make sure you have your command either specified in
+the cm directory or in your hid. make sure to add it to your README, so i can
 find it. The command ust be available Next week Friday Mar 8, 9am.
-                                                
+
 
 ## Week 9: March 11 - March 15
 Spring Break
@@ -395,15 +395,15 @@ Spring Break
 ## Week 9: March 18 - March 22
 ### Containers
 
-Container technology is an important topic in cloud computing and has been 
+Container technology is an important topic in cloud computing and has been
 gaining more and more traction and demand over the past few years. This week
 you will learn container technology and the concepts and tools that you would
-need to master. see @sec:container-intro to get a introduction into 
+need to master. see @sec:container-intro to get a introduction into
 container technology and its motivations
- 
-Docker is one of the most important tools in container technology, 
+
+Docker is one of the most important tools in container technology,
 @sec:docker-intro provides an introduction into docker technology and internal
-details of docker. 
+details of docker.
 
 Read the installation instructions that are provided to install docker locally
 on your machines to test docker commands
@@ -411,29 +411,31 @@ on your machines to test docker commands
 @sec:docker-file describes how docker image files are constructed. Create your
 own docker images and run it to grasp the concepts
 
-Read about docker hub and its capabilities, check how to push and pull images 
+Read about docker hub and its capabilities, check how to push and pull images
 as needed from docker hub
 
 Docker swam allows user to manage large amounts of docker containers, read
 about docker swarm in @sec:docker-swarm
 
-Kubernetes is another widely used container management framework. See 
+Kubernetes is another widely used container management framework. See
 @sec:kub-intro to read about Kubernetes in more detail
 
-MANDATORY Project Milestone: OpenAPI specification, We like to review your 
-OpenAPI specification that is motivated by your cloud mesh command. Have your 
+MANDATORY Project Milestone: OpenAPI specification, We like to review your
+OpenAPI specification that is motivated by your cloud mesh command. Have your
 openAPI specification ready Mar 15, 9am.
 
-MANDATORY: comprehension assignment VM management, All students in class must 
-be showcasing for one cloud that they can start, stop, and login into a VM in a 
-cloud. This has to be demonstrated through a scipt or python program. The 
-program must read the credentials from a configuration file.  The script must 
-demonstrate that a command can be run on your vm with ssh.Starting and stopping 
+MANDATORY: comprehension assignment VM management, All students in class must
+be showcasing for one cloud that they can start, stop, and login into a VM in a
+cloud. This has to be demonstrated through a scipt or python program. The
+program must read the credentials from a configuration file.  The script must
+demonstrate that a command can be run on your vm with ssh.Starting and stopping
 the VM via the GUI does not count. This must be done by Mar 15
 
 ## Week 10: docker cluster
 
 See @sec:docker-cluster
+
+Learn MapReduce examples from this section @s-hadoop-docker.
 
 ## Week 11: Kubernetes
 
@@ -445,3 +447,7 @@ See @sec:kub-fs
 
 ## Week 13: Go
 
+See @sec:go-intro and @sec:go-language for the introduction to the Go programming language.
+Install Go development environment from the section @sec:go-installation.
+Learn Go clients with multiple cloud providers (see @sec:go-cloud).
+Learn to develop the rest service with OpenAPI in Go from the sections: @sec:go-openapi and @sec:go-links.
