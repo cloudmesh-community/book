@@ -6,7 +6,7 @@
 
 :o: image missing, work with TA
 
-:o: reference missing [@www-developer-box]
+:o: referenc removed as there was no bibtex ref created
 
 ---
 
@@ -52,7 +52,7 @@ users are not able to make their own
 
 REST:
 
-* <https://developer.box.com/reference>[@www-developer-box]
+* [Box developer webpage](https://developer.box.com/reference)
 
 Installation:
 
