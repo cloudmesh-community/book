@@ -431,17 +431,17 @@ program must read the credentials from a configuration file.  The script must
 demonstrate that a command can be run on your vm with ssh.Starting and stopping
 the VM via the GUI does not count. This must be done by Mar 15
 
-## Week 10: docker cluster
+## Week 10: docker cluster March 25 - 29 
+See @sec:docker-cluster for an introduction to terminology and mechanisms for managing muliple
+containers across multiple hosts. Get hands on experience with with docker clusters by creating a 
+Docker container with Hadoop to explore the Map/Reduce Framerwork. See @sec:hadoop-docker for 
+MapReduce examples.
 
-See @sec:docker-cluster
-
-Learn MapReduce examples from this section @sec:hadoop-docker.
-
-## Week 11: Kubernetes
+## Week 11: Kubernetes March 25 - 29
 
 See @sec:kub-intro
 
-## Week 12: Kubernetes
+## Week 12: Kubernetes April 1 - 5
 
 See @sec:kub-fs
 
