@@ -431,23 +431,28 @@ program must read the credentials from a configuration file.  The script must
 demonstrate that a command can be run on your vm with ssh.Starting and stopping
 the VM via the GUI does not count. This must be done by Mar 15
 
-## Week 10: docker cluster March 25 - 29 
-See @sec:docker-cluster for an introduction to terminology and mechanisms for managing muliple
-containers across multiple hosts. Get hands on experience with with docker clusters by creating a 
-Docker container with Hadoop to explore the Map/Reduce Framerwork. See @sec:hadoop-docker for 
+## Week 10: docker cluster March 25 - 29
+See @sec:docker-cluster for an introduction to terminology and mechanisms for managing multiple
+containers across multiple hosts. Get hands on experience with with docker clusters by creating a
+Docker container with Hadoop to explore the Map/Reduce framework. See @sec:hadoop-docker for
 MapReduce examples.
 
 ## Week 11: Kubernetes March 25 - 29
 
-See @sec:kub-intro
+See @sec:kub-intro for an introduction to Kubernetes and install `minikube` for development on a local machine.
+This `minikube` allows users to play with virtual machines managed by either virtual box drivers and docker containers.
+Learn those terminologies and setup/shutdown virtual machines with Kubernetes.
 
 ## Week 12: Kubernetes April 1 - 5
 
-See @sec:kub-fs
+See @sec:kub-fs for using Kubernetes on futuresystems. It introduces you on how to use the Kubernetes cluster
+on FutureSystems using multiple nodes. Learn to build a service in a cluster environment.
 
-## Week 13: Go
+## Week 13: Go April 8 - 12
 
 See @sec:go-intro and @sec:go-language for the introduction to the Go programming language.
-Install Go development environment from the section @sec:go-installation.
-Learn Go clients with multiple cloud providers (see @sec:go-cloud).
+Install Go development environment from the section @sec:go-installation. Learn the concurrent programming and message chain communication in Go.
+
+## Week 14: Go April 15 - 19
+
 Learn to develop the rest service with OpenAPI in Go from the sections: @sec:go-openapi and @sec:go-links.
