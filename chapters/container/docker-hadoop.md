@@ -1,4 +1,4 @@
-# Hadoop with Docker {#s-hadoop-docker}
+# Hadoop with Docker {#sec:hadoop-docker}
 
 In this section we will explore the Map/Reduce framework using Hadoop
 provided through a Docker container.
