@@ -1,0 +1,156 @@
+# -*- makefile -*-
+
+BASEDIR=../../book
+
+OS=$(shell $(BASEDIR)/bin/sysinfo.py)
+DOCKER=$(shell $(BASEDIR)/bin/isdocker.py)
+IMAGE_DIRS=.
+
+all: splash prepare epub 
+	echo done
+
+splash:
+	@echo "# ======================================================================"
+	@echo "# Epub    :" $(FILENAME)
+	@echo "# ======================================================================"
+
+
+
+# --filter pandoc-mustache
+MARKDOWN-OPTIONS=--verbose  $(MERMAID) --filter pandoc-crossref -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml
+CSL=--csl=$(BASEDIR)/template/ieee-with-url.csl
+FORMAT=--toc --number-sections
+FONTS=--epub-embed-font='fonts/*.ttf'
+BIB=--metadata link-citations=true --bibliography report.bib
+CSS=--css=$(BASEDIR)/template/epub.css
+RESOURCE=--resource-path=$(IMAGE_DIRS)
+
+draft: prepare epubdraft
+	echo done
+
+
+prepare:  references 
+	echo done
+
+bibtex: bibtex-duplicate bibtex-cat bibtex-error bibtex-datamodel
+
+bibtex-issues: references
+	mkdir -p dest
+	cd dest; rm -f *.blg *_bibertool.bib
+	cd dest; cat -n report.bib
+	cd dest; biber -V --tool report.bib | fgrep -v Datamodel | fgrep -v INFO | fgrep -v Duplicate | fgrep -v Overwriting | fgrep -v ISBN
+
+bibtex-duplicate: references
+	cd dest; biber -V --tool report.bib | fgrep Duplicate
+
+bibtex-cat:
+	cd dest; cat -n report.bib
+
+bibtex-ERROR:
+	cd dest; biber -V --tool report.bib | fgrep ERROR
+
+bibtex-datamodel:
+	cd dest; biber -V --tool report.bib | fgrep Datamodel
+
+bibtex-other:
+	cd dest; biber -V --tool report.bib | fgrep -v Datamodel
+
+bibtex-junk:
+	cd dest; biber -V --tool report.bib | fgrep junk
+
+
+epub: prepare
+	pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt report.md
+
+
+pdf: epub
+	cp $(BASEDIR)/bin/emojifix/* ./dest
+	cp dest/*.png dest/chapters/images
+	cd dest; ./fix-emoji.py all.md all4pdf.md
+	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o all4pdf.epub metadata.txt all4pdf.md
+	cd dest; rm -rf bookedit; mkdir bookedit; unzip all4pdf.epub -d ./bookedit; sed -i -e 's/..\/media/.\/media/g' ./bookedit/EPUB/nav.xhtml
+	cd dest/bookedit; zip -X all4pdfnew.epub mimetype; zip -rg all4pdfnew.epub META-INF -x \*.DS_Store; zip -rg all4pdfnew.epub EPUB -x \*.DS_Store
+	cp dest/bookedit/all4pdfnew.epub ./dest
+	cd dest; ebook-convert all4pdfnew.epub $(FILENAME).pdf --pdf-page-numbers --embed-all-fonts
+	cp dest/$(FILENAME).pdf ../$(FILENAME).pdf
+
+epub-all: prepare
+ifeq ($(OS), osx)
+	cd dest; iconv -t utf-8 $(INDEX) > all.md
+endif
+ifeq ($(OS), linux)
+	cd dest; cat $(INDEX) > all.md
+endif
+	make -f Makefile fixemoji
+	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt $(INDEX)
+
+
+epubdraft: prepare
+ifeq ($(OS), osx)
+	cd dest; cat $(DRAFT) > all.md
+endif
+ifeq ($(OS), linux)
+	cd dest; cat $(DRAFT) > all.md
+endif
+	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
+
+
+references:
+	mkdir -p dest
+	cat $(BASEDIR)/bib/*.bib > dest/report.bib
+
+html:
+	cd dest; pandoc $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).html metadata.txt $(INDEX)
+
+
+latex-pdf:
+	cd dest; pandoc $(RESOURCE) -V pagestyle:headings -V secnumdepth:5 -V geometry:margin=1in --pdf-engine=xelatex -f markdown+smart --toc --epub-embed-font='fonts/*.ttf' -V geometry:margin=1in --bibliography report.bib --csl=$(BASEDIR)/template/ieee.csl -o $(FILENAME).pdf metadata.txt $(INDEX)
+
+
+e-pdf:prepare
+	cp $(BASEDIR)/bin/emojifix/* images
+	$(BASEDIR)/bin/find-graphics-path.py > gpath.tex
+	pandoc report.md -o $(FILENAME).tex -V date="laszewski@gmail.com" --variable titlepage=true -V author="Gregor von Laszewski" -V title="Cloud Computing" -V fontsize=10pt --csl=$(BASEDIR)/template/ieee-with-url.csl --bibliography report.bib --filter pandoc-crossref --number-sections --standalone  --highlight-style tango --template $(BASEDIR)/template/eisvogel/eisvogel.latex
+	pdflatex --interaction nonstopmode  $(FILENAME).tex 
+
+
+tex:
+	cd dest; pandoc -f markdown+smart -f markdown+emoji --toc --epub-embed-font='fonts/*.ttf' --bibliography report.bib --csl=$(BASEDIR)/template/ieee.csl -o $(FILENAME).tex metadata.txt $(INDEX)
+	cd dest; pdflatex content.tex
+
+
+#
+
+
+bootstrap:
+	cd dest; pandoc   $(RESOURCE) --template $(BASEDIR)/template/bootstrap/template.html --css $(BASEDIR)/template/bootstrap/template.css --self-contained --toc --toc-depth 2 $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).html metadata.txt $(INDEX)
+
+clean:
+	rm -rf $(FILENAME).*
+	rm -rf dest
+
+list:
+	@echo "----"
+	@find . -name "*.md"
+	@echo "----"
+	@echo "Markdown Files": `find . -name "*.md" | wc -l`
+	@echo "----"
+	@find . -name "*.md"	| sed -e 's/^/ /' | sed 's/$$/\\/'
+
+view:
+	$(OPEN_EPUB) dest/$(FILENAME).epub
+
+
+publish: epub
+	cp dest/$(FILENAME).epub ..
+	git add ../$(FILENAME).epub
+	git commit -m "update epub" ../$(FILENAME).epub
+	git push
+
+index:
+	echo 
+
+old-index:
+	#cd dest; pandoc -o chapters/index.json $(INDEX)
+	#cd dest; pandoc-index chapters/index
+	#echo "\n" >> dest/chapters/index.md
