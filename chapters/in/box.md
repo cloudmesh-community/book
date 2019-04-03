@@ -52,7 +52,7 @@ users are not able to make their own
 
 REST:
 
-* <https://developer.box.com/reference>[@www-developer-box]>
+* <https://developer.box.com/reference>[@www-developer-box]
 
 Installation:
 
