@@ -67,29 +67,53 @@ dist:
 	twine check dist/*
 
 patch: clean
-	$(call banner, patch to testpypi)
-	bumpversion --allow-dirty patch
+	$(call banner, "bbuild")
+	bump2version --allow-dirty patch
 	python setup.py sdist bdist_wheel
-	git push origin master --tags
+	# git push origin master --tags
 	twine check dist/*
-	twine upload --repository testpypi https://test.pypi.org/legacy/ dist/*
+	twine upload --repository testpypi  dist/*
+	$(call banner, "install")
+	sleep 10
+	pip install --index-url https://test.pypi.org/simple/ cloudmesh-$(package) -U
 
-release: clean dist
-	$(call banner, release to pypi)
-	bumpversion release
+minor: clean
+	$(call banner, "minor")
+	bump2version minor --allow-dirty
+	@cat VERSION
+	@echo
+
+release: clean
+	$(call banner, "release")
+	git tag "v$(VERSION)"
+	git push origin master --tags
 	python setup.py sdist bdist_wheel
-	git push origin master --tags
 	twine check dist/*
-	twine upload --repository testpypi https://test.pypi.org/legacy/ dist/*
+	twine upload --repository pypi dist/*
+	$(call banner, "install")
+	@cat VERSION
+	@echo
+	sleep 10
+	pip install -U cloudmesh-common
 
+
+dev:
+	bump2version --new-version "$(VERSION)-dev0" part --allow-dirty
+	bump2version patch --allow-dirty
+	@cat VERSION
+	@echo
+
+reset:
+	bump2version --new-version "4.0.0-dev0" part --allow-dirty
 
 upload:
 	twine check dist/*
 	twine upload dist/*
 
-pip: patch
-	pip install --index-url https://test.pypi.org/simple/ \
-	    --extra-index-url https://pypi.org/simple cloudmesh-$(package)
+pip:
+	pip install --index-url https://test.pypi.org/simple/ cloudmesh-$(package) -U
+
+#	    --extra-index-url https://test.pypi.org/simple
 
 log:
 	$(call banner, log)
