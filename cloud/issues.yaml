@@ -302,7 +302,7 @@
   updated_at: '2019-01-30T01:15:36Z'
   closed_at: null
   author_association: CONTRIBUTOR
-  body: "Confirm readme works at: https://github.com/cloudmesh/cloudmesh.cmd5\r\n\
+  body: "Confirm readme works at: https://github.com/cloudmesh/cloudmesh-cmd5\r\n\
     Use sys so create a new command cloudmesh.NEWCOMMAND (make sure this works both\
     \ way i.e. pip and source)\r\n\r\n- [ ] Install from source \r\n- [ ] install\
     \ using pip "
