@@ -52,3 +52,47 @@ docker-push:
 
 cloud:
 	docker run -v `pwd`:/book -w /book cloudmesh/book:${VERSION} /bin/sh -c "cd /book/cloud; git pull; make"
+
+
+######################################################################
+# PYPI
+######################################################################
+
+
+twine:
+	pip install -U twine
+
+dist:
+	python setup.py sdist bdist_wheel
+	twine check dist/*
+
+patch: clean
+	$(call banner, patch to testpypi)
+	bumpversion --allow-dirty patch
+	python setup.py sdist bdist_wheel
+	git push origin master --tags
+	twine check dist/*
+	twine upload --repository testpypi https://test.pypi.org/legacy/ dist/*
+
+release: clean dist
+	$(call banner, release to pypi)
+	bumpversion release
+	python setup.py sdist bdist_wheel
+	git push origin master --tags
+	twine check dist/*
+	twine upload --repository testpypi https://test.pypi.org/legacy/ dist/*
+
+
+upload:
+	twine check dist/*
+	twine upload dist/*
+
+pip: patch
+	pip install --index-url https://test.pypi.org/simple/ \
+	    --extra-index-url https://pypi.org/simple cloudmesh-$(package)
+
+log:
+	$(call banner, log)
+	gitchangelog | fgrep -v ":dev:" | fgrep -v ":new:" > ChangeLog
+	git commit -m "chg: dev: Update ChangeLog" ChangeLog
+	git push
