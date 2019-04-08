@@ -235,6 +235,42 @@ In the python prompt type:
 
 The most similar player to your selected player should appear.
 
+## Machine Learning and Cloud Services
+
+### Introduction and Regression 
+
+This video lecture covers logistic and linear regression models in
+additon to clustering models. The  algorithims for the three methods
+are formalized and solutions are presented. Additionally visulization
+techinqies are introduced including WebPlotviz and matplotlib.
+
+[:clapper: Introduction to Machine Learning for Cloud Services and Regression 10:55]
+(https://www.youtube.com/watch?v=VdgGy0266Sk&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2&t=0s)
+
+### K-means Clustering 
+
+Video lecture and slides cover an introduction to K-means clusters.
+
+[:clapper: K-means Clusters 17:15]
+(https://www.youtube.com/watch?v=aGRdp4TKc4c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2)
+
+### Visulization
+
+Video lecture and slides cover data visulaitzation techinques using
+state of the science tools like WebPlotViz.
+
+[:clapper: Data Visualization 30:10]
+(https://www.youtube.com/watch?v=0WHhFAEwr9c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=3)
+
+### Clustering Examples
+
+Video lecture and slides cover clustering examples.
+
+[:clapper: Examples of Clustering 5:48]
+(https://www.youtube.com/watch?v=_I23XQ-8hLg&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=4)
+
+
+
 ## Example Project with SVM
 
 The following code is set up as an example project and will show how to
@@ -498,3 +534,4 @@ to enter values. This is done by use of brackets \< text \>.
         path='data/'+filename
         data_partition(path,ratio)
         return "Successfully Partitioned"
+
