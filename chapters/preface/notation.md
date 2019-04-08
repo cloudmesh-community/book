@@ -165,14 +165,6 @@ x   y   z
 ```
 
 As usual make sure the label is unique. When compiling it it will
-result in
-
-: Sample Data Table {#tbl:sample-table}
-  
-x   y   z
---- --- ---
-1   2   3
-4   5   42
-
-The data in @tbl:sample-table was gathered from all the experiments we
-conducted in the cloud and the overall result was $42$.
+result in an error if labels are not unique. Additionally there are
+several md table generators available on the internet and make
+creating table more efficent. 
