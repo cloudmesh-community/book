@@ -266,7 +266,27 @@ Video lecture and slides cover clustering examples.
 
 [:clapper: Examples of Clustering 5:48](https://www.youtube.com/watch?v=_I23XQ-8hLg&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=4)
 
+### General Clustering with Examples
 
+Video lecture and slides take a generalized apprach to clustering with
+examples from Dr. Geoffery Fox's research. 
+
+[:clapper: General Clustering and Research Examples 22:28](https://www.youtube.com/watch?v=1Tn6LyiIhzw&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=5)
+
+### In Depth Example with four centers 
+
+Video lecture and slides use 1000 data points and four artifical
+centers to provide and in depth example of clustering. Code provided.
+
+[:clapper: Example with four centers 20:53](https://www.youtube.com/watch?v=T2vssd_P2F4&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=6)
+
+### Parallel Computing and K-means
+
+Video lecture and slides discuss parallel computing using K-means as
+an example of how to accelerate time to completion by exploiting
+modern computing hardware.
+
+[:clapper: Parallel Computing and K-means](https://www.youtube.com/watch?v=RXyktQ5KO48&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=7)
 
 ## Example Project with SVM
 
