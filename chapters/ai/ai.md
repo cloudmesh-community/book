@@ -24,7 +24,8 @@ given to the reason why we apply a specific algorithm.
 KMeans is one of the most straight forward unsupervised learning
 algorithms.
 
-slides [AI (40) Unsupervised Learning](https://drive.google.com/file/d/1r62DpK-yK0L_v_KEBnmP6tdLfQFD7Lok/view?usp=sharing)
+slides[AI (40) Unsupervised Learning](https://drive.google.com/file/d/1r62DpK-yK0L_v_KEBnmP6tdLfQFD7Lok/view?usp=sharing)
+
 
 ## Lab:Practice on AI
 
@@ -244,30 +245,26 @@ additon to clustering models. The  algorithims for the three methods
 are formalized and solutions are presented. Additionally visulization
 techinqies are introduced including WebPlotviz and matplotlib.
 
-[:clapper: Introduction to Machine Learning for Cloud Services and Regression 10:55]
-(https://www.youtube.com/watch?v=VdgGy0266Sk&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2&t=0s)
+[:clapper: Introduction to Machine Learning for Cloud Services and Regression 10:55](https://www.youtube.com/watch?v=VdgGy0266Sk&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2&t=0s)
 
 ### K-means Clustering 
 
 Video lecture and slides cover an introduction to K-means clusters.
 
-[:clapper: K-means Clusters 17:15]
-(https://www.youtube.com/watch?v=aGRdp4TKc4c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2)
+[:clapper: K-means Clusters 17:15](https://www.youtube.com/watch?v=aGRdp4TKc4c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2)
 
 ### Visulization
 
 Video lecture and slides cover data visulaitzation techinques using
 state of the science tools like WebPlotViz.
 
-[:clapper: Data Visualization 30:10]
-(https://www.youtube.com/watch?v=0WHhFAEwr9c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=3)
+[:clapper: Data Visualization 30:10](https://www.youtube.com/watch?v=0WHhFAEwr9c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=3)
 
 ### Clustering Examples
 
 Video lecture and slides cover clustering examples.
 
-[:clapper: Examples of Clustering 5:48]
-(https://www.youtube.com/watch?v=_I23XQ-8hLg&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=4)
+[:clapper: Examples of Clustering 5:48](https://www.youtube.com/watch?v=_I23XQ-8hLg&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=4)
 
 
 
