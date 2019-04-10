@@ -1,17 +1,12 @@
-# Go Cloud :o: :question: {#sec:go-cloud}
+# Go Cloud {#sec:go-cloud}
 
 ## Golang Openstack Client
 
 * <https://github.com/openstack/golang-client>
 
-Examples:
-
-*
-[Authentication](https://github.com/openstack/golang-client/blob/master/examples/authentication/authentication.go)
-*
-[Images](https://github.com/openstack/golang-client/blob/master/examples/image/image.go)
-*
-[ObjectStore](https://github.com/openstack/golang-client/blob/master/examples/objectstorage/objectstorage.go)
+* [Authentication](https://github.com/openstack/golang-client/blob/master/examples/authentication/authentication.go)
+* [Images](https://github.com/openstack/golang-client/blob/master/examples/image/image.go)
+* [ObjectStore](https://github.com/openstack/golang-client/blob/master/examples/objectstorage/objectstorage.go)
 * This file reads in some configurations form a json file, however we
   want to develop one for our `~/.cloudmesh/cloudmesh.yaml` file. For
   the json example see:
@@ -114,14 +109,14 @@ which you can easily inspect. Some useful documentation is also
 provided in <https://github.com/gophercloud/gophercloud/blob/master/doc.go>
 
 
-#### Resources :o:
+#### Resources
 
 Code examples are provided from  <https://github.com/gophercloud/gophercloud/blob/master/doc.go>
 
-As Openstck is providing REST interfaces, gopher cloud leverages thsi
-model. Hence, it provids interfaces to manage REST resources. These
+As Openstack is providing REST interfaces, gopher cloud leverages this
+model. Hence, it provides interfaces to manage REST resources. These
 resources are bound to structs so they can easily be manipulated and
-interfaced with. To for example get the plient with a specific
+interfaced with. To for example get the client with a specific
 `{serverId}` and extract its information we can use the following API
 call:
 
@@ -132,7 +127,7 @@ server, err := servers.Get(client, "{serverId}").Extract()
 
 If we need just a subset of the information, we can get an
 intermediate result with just the get method. Than we can obtain
-specific informatiion from the result as needed.
+specific information from the result as needed.
 
 
 ```go
@@ -144,8 +139,8 @@ result := servers.Get(client, "{serverId}")
 
 The previous example is based on a single resource. However, if we
 interacts with a list of resources we need to use the `Pager` struct
-so we can itterate over eaxh page. A convenient example is provided
-next. Here we list all servers while itterating over all pages
+so we can iterate over each page. A convenient example is provided
+next. Here we list all servers while iterating over all pages
 returned to us. While calling each page we can invoke special
 operations that are applied to each page.
 
@@ -162,7 +157,7 @@ err := servers.List(client, nil).EachPage(func (page pagination.Page) (bool, err
 ```
 
 However, if we just want to provide a list of all servers, we can
-simpley use the `AllPages()` method as follows:
+simply use the `AllPages()` method as follows:
 
 ```go
 allPages, err := servers.List(client, nil).AllPages()
