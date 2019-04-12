@@ -1,72 +1,24 @@
 # Infrastructure as Code (IaC) - Terraform
 
-:o: document does not reflect separation between IaC and terraform as discussed in meeting
 
 ## Learning Objectives
 
-:o: se how we do objectives in other documents  emoji and lines are missing
 
-* Introduction to IaC and listing of IaC Tools
+
+---
+
+**:mortar_board: Learning Objectives**
+
+
 * Introduction to Terraform
 * Basic Terraform Script to create an EC2 instance and Terraform commands
 * Another Simple Terraform script - Docker
 * Further Reading
 
-## Introduction to IaC 
-
-
-IaC(Infrastructure as Code), from the book Amazon Webservices in Action [@awsinactionbook]), is 
-
-> the process of using a high level programming language to control IT
-> systems -- servers, databases, networks, and so on." 
-
-The infrastructure can be created, configured and destroyed "by means of code rather than
-using physical hardware configuration, and interactive configuration tools." [@WikipediaInfraAsCode001].  
-
-From the book "Amazon Web Services in Action" by Wittig [@awsinactionbook], using a script or a declarative description has
-the following advantages 
- 
-> * Consistent usage
-> * Dependencies are handled
-> * Replicable
-> * Customizable
-> * Testable
-> * Can figure out updated state
-> * Minimizes human failure
-> * Documentation for your infrastructure 
-
-
-IaC solves the problem of *environment drift*, that used to lead to the infamous
-"but it works on my machine" kind of errors that are difficult to
-trace. According to [@WhatisIaC002]
-
-> "IaC guarantees Idempotence -- known/predictable end state --  irrespective of starting
-> state. Idempotency is achieved by either automatically configuring an
-> existing target or by discarding the existing target and recreating a
-> fresh environment."
-
-IaC tools that are cloud specific are
-Amazon AWS - AWS CloudFormation
-Google Cloud - Cloud Deployment Manager
-Microsoft Azure - Azure Resource Manager
-OpenStack - Heat
-
-According to [@terraformuprunningbook], there are
-
-" 
-> 4 broad categories of IaC tools
-> * Ad hoc scripts: Any shell, Python, Perl, Lua scripts that are written
-> * Configuration management tools: Chef, Puppet, Ansible, SaltStack
-> * Server templating tools: Docker, Packer, Vagrant
-> * Server provisioning tools: Terraform, Heat, CloudFormation, Cloud Deployment Manager, Azure Resource Manager
-> 
-> Chef and Ansible encourage a procedural style, while Terraform,
-> CloudFormation, SaltStack, Puppet and Heat encourage a more declarative style.  
-"
 
 ## Introduction to Terraform
 
-Terraform is from HashiCorp. The tool is written in Go, and so are the
+Terraform is an IaC (Infrastructure as Code) tool from HashiCorp. The tool is written in Go, and so are the
 modules. Since most cloud providers have APIs and support for Go,
 modules have been written for most providers.  The script of Terraform
 is called HCL(HashiCorp Configuration Language) is similar to
@@ -159,9 +111,9 @@ variables. Use of variables helps with modularizing code, avoiding
 repeating values, and improves security. For added security, the
 access key and secret key could be accessed as environment variables.
 
-### What is State?
+### State Management in Terraform
 
-When you run ```terraform apply```, a state file(.tfstate) is
+State is persisted when when you run ```terraform apply```. A state file(.tfstate) is
 created. Though it is human readable, it is not advisable to edit it
 by hand. Since it is plain text and may contain secret information,
 it is also not advisable to check this file into a version repository
@@ -170,15 +122,15 @@ add the .terraform, `.tfstate` and `.tfstate.backup` to `.gitignore` file. A
 shared, encrypted, and protected storage -- like S3 -- is often the best
 location for these files.
 
-### How Terraform deals with "environment drift"?
+In case of script based or procedural tools, state would be as per the logic and the sequence of steps of the script.
+
+### Terraform and "environment drift"
 
 ```terraform refresh``` refreshes the state file to the updated
 real-world infrastructure that may have changed after it was
 instantiated.
 
-### How to I find out what is the current stored state?
-
-```terraform show``` will display a human readable state output
+To see the current stored state, running the command ```terraform show``` will display a human readable state output
 
 
 ## Another Simple Terraform script - Docker
@@ -234,16 +186,13 @@ terraform apply DESTmydocng.tfplan
 ## Further Reading
 
 
-A more complex example of Terraform is given in the AWS RedShift
-section of the book.
+A more complex example of Terraform is given in the AWS RedShift section of the book.
 
 Terraform is really powerful, expressive, and versatile. We have
 explored some features and the basic workflow of usage.  Please see
 books and resources like the "Terraform Up and Running" [@terraformuprunningbook] for more real-world
 advice on IaC, structuring Terraform code and good deployment practices.
 
-:o: we do not need to mention authors and publishers please fix throughout the paper. The citation is good enough. YOust do a bulleted list, but explain what you would find in it if needed.
 
-Another resource for IaC is the book "Infrastructure as Code" [@iacbook].
 
 
