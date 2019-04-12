@@ -10,7 +10,7 @@
 
 * Introduction to IaC 
 * How IaC is related to DevOps
-* How IaC different from Configuration Management Tools, and how is it related
+* How IaC differs from Configuration Management Tools, and how is it related
 * Listing of IaC Tools
 * Further Reading
 
@@ -56,7 +56,7 @@ The first practice - Automated Infrastructure can be fulfilled by IaC tools. By 
 Typically, the workflow of the DevOps team includes running Configuration Management tool scripts after running IaC tools, for configurations, security, connectivity, and initializations.
 
 
-## How IaC tools are different from Configuration Management Tools
+## How IaC tools differs from Configuration Management Tools, and how it is related
 
 
 There are 4 broad categories of such tools  [@terraformuprunningbook], there are
