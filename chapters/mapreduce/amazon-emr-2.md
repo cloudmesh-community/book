@@ -1,4 +1,6 @@
-# Amazon EMR :o:
+# Amazon EMR 2 :o:
+
+DELETE ALL THIS CONTENTS ONCE IT IS MERGED TO EMR1
 
 Amazon EMR is a Hadoop framework that allows users to process data on
 the AWS platform using their EC2 technology to spread the load across
