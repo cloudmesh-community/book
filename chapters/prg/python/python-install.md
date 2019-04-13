@@ -47,7 +47,8 @@ use depends on you, but we highly recommend pyenv if you can.
 Recently a new simple way to install pyenev has been released. We have not yet 
 tested it out in more details but here are the simple steps:
 
-In case you have a previous version of pyenv, save it just in case you like to move back
+In case you have a previous version of pyenv, save it just in case you like to
+move back
 
 
 ```bash
@@ -60,7 +61,19 @@ Next run the command
 $ curl https://pyenv.run | bash
 ```
 
-Make sure that on Linux you add to the `.bashrc` file and on macOS to the file `.bash_profile`
+
+Install a virtualenv for python 2 and 3. Likeley you will only need 3
+
+```bash
+$ pyenv install 3.7.2
+$ pyenv install 2.7.15
+$ pyenv virtualenv 3.7.2 ENV3
+$ pyenv virtualenv 2.7.15 ENV2
+```
+
+
+Next, make sure that on Linux you add to the `.bashrc` file and on macOS to the
+file `.bash_profile`
 
 ```
 export PYENV_ROOT="$HOME/.pyenv"
@@ -88,16 +101,8 @@ alias ENV3="pyenv activate ENV3"
 ENV3
 ```
 
-Than look up our convenience methods to set an ALIAS and install Python 3.7.2 via pyenv 
-
-Install a virtualenv for python 2 and 3. Likeley you will only need 3
-
-```bash
-$ pyenv install 3.7.2
-$ pyenv install 2.7.15
-$ pyenv virtualenv 3.7.2 ENV3
-$ pyenv virtualenv 2.7.15 ENV2
-```
+Than look up our convenience methods to set an ALIAS and install Python 3.7.2
+via pyenv
 
 Next we recommend to update pip
 
@@ -178,7 +183,8 @@ sure you have xcode installed:
 
     $ xcode-select --install
 
-On Mojave you will get an error that zlib is not installed. THis is due to that the header files are not properly installed. To do this you can say 
+On Mojave you will get an error that zlib is not installed. THis is due to that
+the header files are not properly installed. To do this you can say
 
     $ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 
@@ -191,8 +197,9 @@ Additionally install readline and some compression tools:
 
 #### Install pyenv on macOS with Homebrew
 
-This is the recommended way of installing pyenv on macOS High Sierra. This method should also be considered if you get the following error:
-"ERROR: The Python ssl extension was not compiled. Missing the OpenSSL lib?"
+This is the recommended way of installing pyenv on macOS. This
+method should also be considered if you get the following error: "ERROR: The
+Python ssl extension was not compiled. Missing the OpenSSL lib?"
 
 We describe here a mechanism of installing pyenv with homebrew. Other
 mechanisms can be found on the pyenv documentation page
@@ -228,10 +235,12 @@ You can also install pyenv using curl command in following way:
 
     curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
     
-Then install its dependencies:
+Then install its dependencies: 
 
     sudo apt-get update && sudo apt-get upgrade
-    sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
+    sudo apt-get install -y make build-essential libssl-dev 
+    sudo apt-get install -y zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev 
+    sudo apt-get install -y wget curl llvm libncurses5-dev git
 
 Now that you have installed pyenv it is not yet activated in your
 current terminal. The easiest thing to do is to start a new terminal and
