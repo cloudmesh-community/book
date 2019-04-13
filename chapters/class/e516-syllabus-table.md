@@ -82,7 +82,7 @@ The book can be used as reference material in that case.
 | :white_check_mark: | 04/01    |         |                    | - [Go cmd](#sec-go-cmd) |
 | :white_check_mark: | 04/01    |         |                    | - [Go Cloud](#sec-go-cloud) |
 | :white_check_mark: | 04/01    |         |                    | - [Go REST](#sec-go-rest) |
-| :o:                | 04/08    |         |                    | - [Go for the Cloud](#sec-go-cloud) |
+| :white_check_mark: | 04/08    |         |                    | - [Go for the Cloud](#sec:go-cloud) |
 | :o:                | 04/15    | 13      | Edge Computing     | Edge Computing and the Cloud |
 
 
