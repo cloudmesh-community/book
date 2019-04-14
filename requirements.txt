@@ -6,4 +6,3 @@ docopt
 mkdocs
 emoji
 ebooklib
-pandoc-crossref
