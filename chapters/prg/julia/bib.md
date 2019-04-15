@@ -8,6 +8,7 @@
 @Misc{www-julialang,
    url={https://www.julialang.org}
 }
+
 @Misc{www-awscore,
    url={https://github.com/JuliaCloud/AWSCore.jl},
    url={https://juliacloud.github.io/AWSCore.jl/build/index.html}
