@@ -173,7 +173,7 @@ the 'Create bucket' button. Fill in the requested information for bucket
 name and region, then proceed to the next two pages to enter in the
 bucket properties and permissions. After those sections, a review page
 will be presented for your review and if you are satisfied with your
-selections, click 'Create bucket' [@hid-sp18-521-s3bucket]. As the following: @fig:s3-bucket.
+selections, click 'Create bucket' [@hid-sp18-521-s3bucket].
 
 ![S3 Bucket](images/S3_create_bucket.png){#fig:s3-bucket}
 
@@ -190,7 +190,7 @@ and your EC2 key pair wil be automatically downloaded by the browser and
 named with a pem extension. Save the key file generated in a safe
 location for use later on as this is the only time you will be able to
 save this key file. It will need to be used when you need to launch and
-connect to the EC2 instances created by EMR [@hid-sp18-521-ec2keypair]. As the picture @fig:key.
+connect to the EC2 instances created by EMR [@hid-sp18-521-ec2keypair]. 
 
 ![Key](images/EMRkey.png){#fig:key}
 
