@@ -10,7 +10,7 @@ A list of the all approved packages is available at https://github.com/JuliaLang
 
 Usage example is given as follows:
 
-https://github.com/docopt/DocOpt.jl
+<https://github.com/docopt/DocOpt.jl>
 
 ```Julia
 doc = """Naval Fate.
