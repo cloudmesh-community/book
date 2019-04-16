@@ -297,9 +297,9 @@ Projects are the first level of the resource hierarchy, and they contain other l
 ### Project navigation
 Easily navigate across your GCP projects using the scopepicker in Cloud Console. 
 Switching projects will tailor the view to that project and all of its child resources.
+![Gcloud dashboard [Source](https://cloud.google.com/)](images/dashboard.png){#fig:gcloud-dashboard}
 
-![@label](images/scopepicker.jpg)
-Scope Picker Example
+![Scope Picker Example](images/scopepicker.jpg){#fig:score-picker}
  
 More detail regarding resources can be found at:
 <https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy>
@@ -308,8 +308,7 @@ More detail regarding resources can be found at:
 Service navigation
 Google Cloud services are accessible in the left-hand navigation menu organized by product area including Big Data, Compute, Networking, etc.
 
-![@label](images/lefthandnavigation.jpg)
-Left-Hand Navigation Example
+![Left-Hand Navigation Example](images/lefthandnavigation.jpg){#fig:left-hand-nav-exam}
 
 ### Section pinning
 For any service that you visit regularly, pin the section to the top of the navigation menu by hovering over the section item and clicking the pin icon.
@@ -325,16 +324,14 @@ Customize Figure:
 With Activity Stream, you will be able to understand all the activities that occur across your GCP resources in one place.
 See what your teammates are updating in any project to track down issues and audit access. Easily filter through the feed to find exactly what you need.
 
-![@label](images/activity.png)
-Activity Example
+![@Activity Example](images/activity.png){#fig:gcloud-activity-example}
  
 
 ### Search across Cloud Console
 The search bar in Cloud Console allows you to quickly access Google Cloud products and any of your resources across GCP.
 Try running a search for App Engine or the name of one of your projects.
 
-![@label](images/searchbar.jpg)
-Searchbar Example
+![Searchbar Example](images/searchbar.jpg){#fig:gcloud-searchbar-example}
 
  
 ### Get support anytime
@@ -355,8 +352,8 @@ Additional resources for Google Cloud Identity and Access Management documentati
 Google Cloud Shell provides you with command-line access to your cloud resources directly from your browser. You can easily manage your projects and resources without having to install the Google Cloud SDK or other tools on your system.
 With Cloud Shell, the Cloud SDK gcloud command-line tool and other utilities you need are always available, up to date and fully authenticated when you need them.
 
-![@label](images/cloudshell.jpg)
-Cloudshell Example
+![Cloudshell Example](images/cloudshell.jpg){#fig:gcloud-shell-example}
+
 
 
 Reference to more documented detail about the Cloudshell:
@@ -368,8 +365,7 @@ Navigate to Compute Engine
 Open the menu on the left side of the console.
 Then, select the `Compute Engine` section.
 
-![@label](images/menu.jpg)
-Menu Example
+![Menu Example](images/menu.jpg){#fig:gcloud-menu-example}
 
 ### Create a virtual machine instance
 Click the Create instance button.
