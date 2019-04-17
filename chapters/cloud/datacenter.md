@@ -240,11 +240,69 @@ Datacenter disadvantages include
 
 ## Data Center Metrics
 
-One of the important factors for a smooth operation but also for a
-smooth offering of services is to employ metrics that will be able to
+One of the most important factor to ensure smooth operation and
+offering of services is to employ metrics that will be able to
 provide significant impacting the operations. Having metrics allows
 the staff to monitor and adapt to dynamic situations but also to plan
 operations.
+
+### Data Center Energy Costs
+
+One of the easiest to monitor metrics for a datacenter is the cost
+of energy used to operate all of the equipment. Energy is one of 
+the largest costs a datacenter incurs during its operation as all of 
+the servers, networking, and cooling equipment require power 24/7. For
+electricity, billing is usually measured in terms of kilowatt hours
+(kWh) and kilowatts (kW). Depending on circumstances, there may also be
+costs for public purpose programs, cost recovery, and straded costs, but
+they are beyond the scope of this book.
+
+To provide a quick understanding, it is best to understand the relation
+between kilowatt hours and kilowatts. kWh is typically referred to as
+consumption while kW is referred to as demand and it's important to 
+understand how these two concepts relate to each other. The easiest 
+analogy to describe the relationship is to think of kilowatts (demand)
+as the size of a water pipe while kilowatt-hours (consumption) is how
+much water has passed through the pipe. If a server requires 1.2 kW to
+operate then, after an hour has passed, it will have consumed 1.2 kWh.
+However, if the server operates at 1.2 kW for 30 minutes and then goes
+idle and drops to 0.3 kW for another 30 minutes, then total power 
+consumed will be:
+
+$$kWh=0.3*30/60+1.2*30/60=0.75$${#eq:Energy-Calculation}
+
+Energy costs for a datacenter, then, are composed of two things:
+charges for energy and charges for demand. Energy is the amount of total
+energy consumed by the datacenter and will be the total kWh multiplied
+by the cost per kWh. Demand is somewhat more complicated: it is the 
+highest total consumption measured in a 15 minute period. Taking the
+previous example, if a datacenter has 1,000 servers, the total energy
+consumption would be 750 kWh in the hour, but the demand charge would be
+based off of 1,200 kW (or 1.2 MW).
+
+The costs, then, are how the utility company recoups its expanses: the 
+charge per kWh is it recouping the generation cost while the kW charge
+is recouping the cost of transmission and distribution (T&D). Typically,
+the demand charge is much higher and will depend on utility constraints - 
+if a utility is challenged on the T&D front, expect these costs to be over
+$6-$10/kW. If the assumed cost-per-kWh is $0.12 and cost-per-kW is $8,
+the cost to run our servers for a month would be:
+
+$$kWh=0.75*24*30*0.12*1000=64,800$${#eq:kWh-Cost-Calculation}
+$$kW=1.2*8*1000=9,600$${#eq:kW-Cost-Calculation}
+
+This would total to $74,400. It's important to note that fixing demand
+charges can have a tremendous payback: had the servers simply consumed
+750 kW over the course of the hour, then our demand charges would've
+been halved to $4,800 while the energy costs remained the same. This is
+also why server virtualization can have a positive impact on energy costs:
+by having fewer servers running at a higher utiliziation, the demand charge
+will tend to level itself out as, on average, each server will be more 
+fully utilizied. For example, it's better to pay for 500 servers at
+100% utilization than 1000 servers at 50% utilization even though the amount
+of work done is the same since, if the 1,000 servers momentarily all operate
+at 100% utilization for even a brief amount of time in a month, the demand
+charge for the datacenter will be much higher.
 
 ### Data Center Carbon Footprint
 
