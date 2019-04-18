@@ -21,7 +21,9 @@ To install Julia locally, first download and extract the appropriate 32 or 64-
 bit binary installation package at <https://julialang.org/downloads/> into a
 directory of your choice. You can then add Julia home to your PATH, or
 include a soft reference by typing ```export PATH="$(pwd)/julia:$PATH"``` or by
-editing your ```/etc/environment``` file. Finally, you can create a hard link with:  ```sudo ln -s ~/JuliaPro-0.6.2.1/Julia/bin/julia /usr/local/bin/julia``` [www-julialang]
+editing your ```/etc/environment``` file. Finally, you can create a hard link
+with:  ```sudo ln -s ~/JuliaPro-0.6.2.1/Julia/bin/julia /usr/local/bin/julia```
+[www-julialang];  editing your ```/etc/environment``` file. [@www-julialang]
 
 
 You should now be able to activate Julia in your Bash session by typing

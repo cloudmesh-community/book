@@ -22,7 +22,7 @@ Chrome OS, and Google Maps Platform. The platform and all its
 offerings can be managed via a customizable dashboard
 @fig:gcloud-dashboard.
 
-![Gcloud dashboard](images/dashboard.png){#fig:gcloud-dashboard}
+![Gcloud dashboard [Source](https://cloud.google.com/)](images/dashboard.png){#fig:gcloud-dashboard}
 
 ## Cloud Computing Services and Products
 
@@ -63,11 +63,11 @@ deployment tools. Apigee Edge integrates these tools together into a
 platform for managing APIs through the use of API proxies, which are
 combined together with a service plan into an API product.
 
-* [Apigee API Platform](https://cloud.google.com/apigee-api-management/): 
+* [Apigee API Platform](https://cloud.google.com/apigee-api-management/):
   Develop, secure, deploy, and monitor your APIs everywhere.
-* [API Analytics](https://cloud.google.com/api-analytics/): 
+* [API Analytics](https://cloud.google.com/api-analytics/):
   Insight into operational and business metrics for APIs.
-* [API Monetization](https://cloud.google.com/api-monetization/): 
+* [API Monetization](https://cloud.google.com/api-monetization/):
   Flexible, easy-to-use solution to realize value from APIs.
 * [Apigee Sense](https://cloud.google.com/apigee-sense/): Intelligent behavior detection to protect APIs from attacks.
 * [Cloud Endpoints](https://cloud.google.com/endpoints/): Develop, deploy, and manage APIs on GCP.
@@ -76,7 +76,7 @@ combined together with a service plan into an API product.
 * [Apigee Open Banking APIx](https://apigee.com/about/solutions/apigee-open-banking-apix): Accelerate open banking and PSD2 compliance.
 * [Cloud Healthcare API](https://cloud.google.com/healthcare-api/): Secure APIs powering actionable healthcare insights.
 
-![Google_api_management](images/api_management.png){#fig:gcloud-api-management}
+![Google API management [Source](https://cloud.google.com/)](images/api_management.png){#fig:gcloud-api-management}
 
 ### Compute
 
@@ -266,3 +266,161 @@ service for virtual machines and containers.
 * [Cloud Filestore](https://cloud.google.com/filestore/): High-performance file storage.
 * [Drive Enterprise](https://cloud.google.com/drive-enterprise/): Cloud-based content collaboration and storage.
 
+### Google IaaS Example
+
+To demonstrate an example of what Google IaaS solutions are available, Google has provided theese options: <https://cloud.google.com/solutions/>
+
+Locate the `Try for Free` button option on the top right portion of the webpage. 
+The free trial allows a person access to all Cloud Platform Products.
+You get everything you need to build and run your apps, websites and services, including Firebase and the Google Maps API.
+Note, you will be asked you for your credit card to make sure you are not a robot. 
+You will not be charged unless you manually upgrade to a paid account. 
+Disclaimer: Please be aware that you pay for this service only after you accrue costs, via an automatic charge when you reach your billing threshold or 30 days after your last automatic payment, whichever comes first.
+You will be presented the option to agree and continue. Once you satisfy all the formalities you will be granted the 12-month free trial.
+
+### Google Cloud Console Overview
+This material was obtained from Google on the `Cloud Console Tour`. 
+This information covers the core features of Cloud Console to get you ready to build and manage your applications on Google Cloud Platform.
+You will learn about the following concepts:
+* GCP projects and resources
+* High-level resource overview and activity logs
+* Console navigation and search
+* User and permissions management
+* Technical support
+* GCP's browser-based command line
+
+### Use GCP Resources
+GCP resources are the fundamental components that make up all Google Cloud services. 
+Resources are organized hierarchically and help organize your work on GCP.
+Projects are the first level of the resource hierarchy, and they contain other low-level resources like Cloud Storage buckets and Compute Engine instances. Project navigation Easily navigate across your GCP projects using the scopepicker in Cloud Console. Switching projects will tailor the view to that project and all of its child resources.
+
+### Project navigation
+Easily navigate across your GCP projects using the scopepicker in Cloud Console. 
+Switching projects will tailor the view to that project and all of its child resources.
+![Gcloud dashboard [Source](https://cloud.google.com/)](images/dashboard.png){#fig:gcloud-dashboard}
+
+![Scope Picker Example](images/scopepicker.jpg){#fig:score-picker}
+ 
+More detail regarding resources can be found at:
+<https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy>
+
+### Navigate Google Cloud Services
+Service navigation
+Google Cloud services are accessible in the left-hand navigation menu organized by product area including Big Data, Compute, Networking, etc.
+
+![Left-Hand Navigation Example](images/lefthandnavigation.jpg){#fig:left-hand-nav-exam}
+
+### Section pinning
+For any service that you visit regularly, pin the section to the top of the navigation menu by hovering over the section item and clicking the pin icon.
+See a high-level overview of any project
+* Home dashboard
+The Home dashboard provides a high-level overview of the selected GCP project, highlighting key metrics, billing, and other useful information.
+* Customization
+You can customize your dashboard by clicking Customize. Any card can be hidden, shown, and reordered on the page. Each card also has custom options accessible from the overflow menu when hovering a card.
+Customize Figure:
+ 
+
+### View activity across your GCP resources
+With Activity Stream, you will be able to understand all the activities that occur across your GCP resources in one place.
+See what your teammates are updating in any project to track down issues and audit access. Easily filter through the feed to find exactly what you need.
+
+![@Activity Example](images/activity.png){#fig:gcloud-activity-example}
+ 
+
+### Search across Cloud Console
+The search bar in Cloud Console allows you to quickly access Google Cloud products and any of your resources across GCP.
+Try running a search for App Engine or the name of one of your projects.
+
+![Searchbar Example](images/searchbar.jpg){#fig:gcloud-searchbar-example}
+
+ 
+### Get support anytime
+If you ever get stuck, or need help navigating the world of GCP, the Google support team is here to help.
+Access support from the navigation menu.
+
+More information regarding support options and details can be found at: <https://cloud.google.com/support/>
+
+### Manage users and permissions
+Google Cloud Identity and Access Management (Cloud IAM) enables you to manage and create permissions for your GCP resources.
+As your team continues to grow, you can grant access to teammates using Cloud IAM in the `IAM & Admin` section.
+Add users, groups, or service accounts and assign them any number of roles to grant them the permissions they need.
+
+Additional resources for Google Cloud Identity and Access Management documentation:
+<https://cloud.google.com/iam/docs/>
+ 
+### Access the command line from your browser
+Google Cloud Shell provides you with command-line access to your cloud resources directly from your browser. You can easily manage your projects and resources without having to install the Google Cloud SDK or other tools on your system.
+With Cloud Shell, the Cloud SDK gcloud command-line tool and other utilities you need are always available, up to date and fully authenticated when you need them.
+
+![Cloudshell Example](images/cloudshell.jpg){#fig:gcloud-shell-example}
+
+
+
+Reference to more documented detail about the Cloudshell:
+<https://cloud.google.com/shell/>
+
+## Create a VM Example
+Since we have been exploring virtual machines in this class, I thought that I would provide an additional example explaining how to create a Linux virtual machine instance in Compute Engine using the Google Cloud Platform Console.
+Navigate to Compute Engine
+Open the menu on the left side of the console.
+Then, select the `Compute Engine` section.
+
+![Menu Example](images/menu.jpg){#fig:gcloud-menu-example}
+
+### Create a virtual machine instance
+Click the Create instance button.
+* Select a name and zone for this instance.
+* In the Firewall selector, select Allow HTTP traffic. This opens port 80 (HTTP) to access the app.
+* Click the Create button to create the instance.
+Note: Once the instance is created your billing account will start being charged according to the GCE pricing. You will remove the instance later to avoid extra charges.
+
+### VM instances page
+While the instance is being created take your time to explore the VM instances page.
+* At the bottom you can see the list of your VMs
+* At the top you can see a control panel allowing you to
+* Create a new VM instance or an instance group
+* Start, stop, reset and delete instances.
+
+Compute Engine lets you use virtual machines that run on Google's infrastructure. 
+Create micro-VMs or larger instances running Debian, Windows, or other standard images. Create your first VM instance, import it using a migration service, or try a quickstart to build a sample app.
+More detail can be found at the following link regarding VM instances:
+<https://cloud.google.com/compute/?hl=en_US&_ga=2.98598104.-779866669.1550427921>
+
+### Connect to your instance
+When the VM instance is created, you'll run a web server on the virtual machine.
+The SSH buttons in the table will open up an SSHsession to your instance in a separate window.
+
+For this tutorial you will connect using Cloud Shell. 
+Cloud Shell is a built-in command line tool for the console.
+
+Open the Cloud Shell
+Open Cloud Shell by clicking the `Activate Cloud Shell` button in the navigation bar in the upper-right corner of the console.
+Wait for the instance creation to finish
+The instance creation needs to finish before the tutorial can proceed. 
+The activity can be tracked by clicking the notification menu from the navigation bar at the top.
+
+To Connect to the instance, enter the following command to SSH into the VM. If this is your first time using SSH from Cloud Shell, you will need to create a private key. 
+Enter the zone and name of the instance you created.
+
+```bash
+$  gcloud compute --project \"regal-buckeye-232200" ssh --zone \<vm-zone> <vm-name>
+```
+
+### Run a simple web server
+Create a simple index.html file with the following command inside the parenthesis and double quotes:
+```echo Hello World index.html```
+
+Then, enter this command to run a simple Python webserver:
+```bash
+$  sudo python -m SimpleHTTPServer 80
+```
+
+### Visit your application
+Visit your webserver at the IP address listed in the External IP column.
+
+### Cleanup
+To remove your instance, select the checkbox next to your instance name and click the Delete button.
+
+It is recommended to review the Google Cloud Platform on Github for additional examples.
+Here is the link to the GCP on GitHub:
+<https://github.com/GoogleCloudPlatform>.

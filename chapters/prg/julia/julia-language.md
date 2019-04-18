@@ -1,17 +1,22 @@
 # Introduction to Julia for High Performance Computing :o:
+
 ---
+
 **:mortar_board: Learning Objectives**
+
 * Get up and running with Julia
 * Understand parallelization in Julia
 * Learn about REST services in Julia
 * Interact with external programs in Julia
 
+---
+
 ![Julia logo](images/julia.png)
 
-"Julia walks like Python and runs like C." [www-julialang]
+"Julia walks like Python and runs like C." [@www-julialang]
 
 Because Julia is a relatively new programming language and documentation is
-sparse, much of this chapter has been adapted from [https://julialang.org][@www-julialang]
+sparse, much of this chapter has been adapted from <[https://julialang.org>[@www-julialang]
 
 ## Introduction:
 
@@ -24,11 +29,11 @@ high-level, human readable, all-purpose programming language that didn't
 require translation into lower languages like C or Java."Using LLVM, a compiler
 developed by University  of Illinois at Urbana-Champaign and enhanced by the 
 likes of Apple and Google, Karpinski and company built the language so that it 
-compiles straight to machine code on the fly, as it runs." [www-wired]
+compiles straight to machine code on the fly, as it runs" [@www-wired]. :o: ambiguous ref label
 
 "Julia features optional typing, multiple dispatch, and good performance, 
 achieved using type inference and just-in-time (JIT) compilation, implemented 
-using LLVM." [www-julialang] 
+using LLVM" [@www-julialang].
 
 Julia is a dynamically-typed language, much like Python or R, which tend to be
 more human-readable than lower-level languages such as Java or C. Unfortunately,
@@ -38,7 +43,7 @@ especially for memory-intensive operations.  Conversely, languages such as C are
 compiled or statically-typed languages are fast, but much less human-readable.
 Julia provides the best of both worlds. "Julia is fast because of careful 
 language design and the right combination of carefully chosen technologies that 
-work very well with each other." [www-epubs-siam].
+work very well with each other" [@www-epubs-siam].
 
 
 ### Development Environments
@@ -52,7 +57,10 @@ available.
 ## Module Management
 
 Julia provides module and package management similar to Python's ```pip``` with
-the ```Pkg.add("")``` function. [@getting-started]  To use a package
+the ```Pkg.add("")``` function. [@getting-started] :o: ambiguous ref label
+
+ 
+ To use a package
 in a working environment, simply issue the command ```using <Package>```. For
 instance, to add a graphics package called Winston and plot 100 random numbers,
 execute the following commands:
@@ -62,7 +70,8 @@ execute the following commands:
 	using Winston
 	plot(rand(100))
 ```
-[@getting-started]
+[@getting-started] :o: ambiguous ref label
+
 
 ## Multiple Dispatch: 
 ## Parallel Language Constructs
@@ -104,8 +113,8 @@ TBD
 
 ## References:
 * [https://julialang.org/](https://julialang.org)[@www-julialang]
-* https://discourse.julialang.org/t/implement-a-rest-server-in-julia/9117
-* https://codehandbook.org/make-rest-api-calls-julia/
-* https://github.com/essenciary/Genie.jl
+* <https://discourse.julialang.org/t/implement-a-rest-server-in-julia/9117>
+* <https://codehandbook.org/make-rest-api-calls-julia/>
+* <https://github.com/essenciary/Genie.j}
 
-
+:o: ref labels are missing 

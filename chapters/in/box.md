@@ -1,10 +1,6 @@
-# Box :wave: hid missing
+# Box sp19-516-125
 
-:o: use `get()` for inline code text
-
-:o: some program lines are too long, try to use better line breaks.
-
-:o: image missing, work with TA
+:o: referenc removed as there was no bibtex ref created
 
 ---
 
@@ -50,7 +46,7 @@ users are not able to make their own
 
 REST:
 
-* <https://developer.box.com/reference>[@www-developer-box]>
+* [Box developer webpage](https://developer.box.com/reference)
 
 Installation:
 
@@ -85,7 +81,7 @@ In the Configuration panel of the Developer Console, scroll down to
 the section titled `Add and Manage Public Keys` and click `Generate a
 Public/Private Keypair`:
 
-![Box Add Key](image/box_add_key.png)
+![Box Add Key](images/box_add_key.png)
 
 Once you have generated a keypair, a config.json file will
 automatically download. Save this file in a secure location as you
@@ -417,8 +413,60 @@ line. Documentation on how to set up and use pybox can be found at
 
 ## Cloudmesh :o:
 
-:o: document how to use your cloudmesh library
+Box file storage can now be used from within the Cloudmesh library. Once you have created you config file, you must add the path to your cloudmesh yaml file under box credentials. The Cloudmesh command line library offers six functions for file storage: get, put, search, list, create directory, and delete. Once you have installed Cloudmesh, type `cms` into the command line to start the shell. Every box command should start with the following:
 
-:o: commandline
+```bash
+$ storage --storage=box 
+```
+
+### Get
+
+To download a file from Box with Cloudmesh, you must specify the cloud folder or file to be downloaded and the local folder to download to. To download all the contents of a folder, simply specify a folder on the cloud and use the recursive option. 
+
+```bash
+$ storage --storage=box get /test_folder/test_file.txt ~/test_folder --recursive
+```
+
+### Put
+
+The put command uploads files from your local host to the cloud. If you specify a file as the source, the file will be uploaded if no such file exists on the cloud or updated if a copy already exists on the cloud. If the source is a directory and recursive is specified, Cloudmesh will upload all the contents of the source directory to the cloud. 
+
+```bash
+$ storage --storage=box put ~/test_folder /uploads --recursive
+```
+
+### Search
+
+To search for a file through Cloudmesh, you must specify a directory in which to search and the file or folder name you are searching for. If recursive is specified, Cloudmesh will search all child directories of the original directory. 
+
+```bash
+$ storage --storage=box search /uploads last_upload.txt --recursive
+```
+
+### List
+
+The list command lists all the contents of a cloud directory. If recursive is specified, it will list the contents of all child directories as well. 
+
+```bash
+$ storage --storage=box list /uploads --recursive
+```
+
+### Create a directory
+
+To create a new directory, you must specify the path of the new directory you would like to create, including its parent directory. 
+
+```bash
+$ storage --storage=box create dir /test_folder/new_folder
+```
+
+### Delete
+
+The delete command can delete files or folders from your cloud file storage. Deleting a folder will delete its contents as well. 
+
+```bash
+$ storage --storage=box delete /uploads/last_upload.txt
+```
+
+Finally, if you have set the storage variable to box, you can omit the `--storage=box` from your command line calls. 
 
 :o: openapi

@@ -1,8 +1,4 @@
-# Amazon Elastic Beanstalk :wave:
-
-:o: Undefined cross-reference: fig:aws-beanstalk-manageenv
-
-:o: Undefined cross-reference: fig:aws-beanstalk-config-database
+# Amazon Elastic Beanstalk (hid: sp19-516-128)
 
 ---
 
@@ -16,13 +12,13 @@
 
 ---
 
-Amazon Elastic Beanstalk is an PaaS offering from AWS that aims to
-offer be a one stop solution for fast deployment of scalable
-web-applications.
+Amazon Elastic Beanstalk is an PaaS offering from AWS 
+that aims to be an one stop solution for fast deployment of
+scalable web-applications.
 
-Elastic Beanstalk has been developeed with an idea of allowing
-developers to focus on code developement instead of the environment
-set up. All the developers need to provide is a working code,
+Elastic Beanstalk has been developed with an idea of allowing
+developers to focus on code developement instead of environment
+set up. All that the developers need to do is to provide a working code,
 beanstalk takes care of providing the platform to run it.
 
 A Variety of Platforms are supported
@@ -36,46 +32,32 @@ A Variety of Platforms are supported
 * Go
 * Docker
 
+
 Features of Elastic Beanstock include
 
-:o: change to bullet list with headings italic
-
-### High Performance
-
-Elastic Beanstalk allows freedom to provision servers from a variety
-of EC2 configurations based on business to suit the compute
+* *High Performance*: Elastic Beanstalk allows freedom to provision servers 
+from a variety of EC2 configurations based on business to suit the compute 
 requirements.
 
-### Scalability
+* *Scalability*: Easy configurable auto scaling settings are available to 
+handle peak loads based on metrics monitoring.
 
-Easy configurable auto scaling settings are available to handle peak
-loads based on metrics monitoring.
+* *High Availability*: Elastic Beanstalk provides easy health check based 
+load balancing options to ensure high availability of the web application.
 
-### High Availability
+* *Complete source control*: The user has freedom to select the AWS resources 
+and has full control over the infrastructure powering the application using 
+Elastic Beanstalk management capabilities.
 
-Elastic Beanstalk provides easy health check based load balancing
-options to ensure high avialability of the web application.
-
-### Complete source control
-
-The user has freedom to select the AWS resources and has full control
-over the infrastructure powering the application using the Elastic
-Beanstalk management capabilities.
-
-### Fully Managed
-
-With Elastic Beanstalk, AWS manages actvities like hardware
-provisioning, set up and configuration, software patching, database
-backups and performance monitoring.
+* *Fully Managed*: With Elastic Beanstalk, AWS manages actvities like hardware 
+provisioning, set up and configuration, software patching, database backups 
+and performance monitoring.
 
 ## Amazon Elastic Beanstalk Pricing
 
-Amazon Elastic Beanstalk has no additional charges of its own. You pay
-for the resources and services provisioned by the beanstalk
-environment.
-
+Amazon Elastic Beanstalk has no additional charges of its own. You pay for the 
+resources and services provisioned by the beanstalk environment.
 These are typically:
-
 * EC2 instances
 * S3 Storage
 * Elastic Load Balancer
@@ -83,47 +65,44 @@ These are typically:
 
 ## How to provision a Amazon Elastic Beanstalk Environment for Quick Start
 
-:o: remove this section 
+In this section we will discuss the steps to be followed to create a Highly 
+Available, Load Balanced sample application on Elastic Beanstalk in a few 
+quick Steps.
 
-:o: there is no space before :
+To be able to create a beanstalk application, the user must have set up an
+AWS account as a pre-requisite. 
+An AWS account can be created using the link below
 
-:o: Assumption : is not a full sentence use `select` instead of double quotes so they ar everbatim
+[New AWS account creation URL](https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start)
 
-:o: (see ...) is an incomplete sentence and does not have a period. Review grammar rulkes on setting periods e.g. it needs to be inside the sendtence and the period needs to be behind .
 
-:o: you shoudl have looked at the modifications i made to your other text
+### Step 1: Login to the AWS console.
 
-:o: All figures must be refered to 
+Login to the AWS account using the link below.
 
-This section will help with steps to be followed to create a Highly
-Availble, Load Balanced sample application on Elastic Beanstalk in a
-few quick Steps.
+[AWS Console URL](https://aws.amazon.com/console/).
 
-Assumption : User must have an AWS account.
-
-### Step 1 : Login to the AWS console.
-
-Console URL : [AWS Console URL](https://aws.amazon.com/console/).  On
-successfull login, select Elastic Beanstalk from the Compute section
-or alternatively, you can type Beanstalk in the search bar to look up
-(see @fig:aws-beanstalk-console).
+Upon successful login, select Elastic Beanstalk from the Compute section or 
+alternatively, you can type Beanstalk in the search bar to look up (see 
+@fig:aws-beanstalk-console).
 
 ![AWS Beanstalk](images/elastic_beanstalk-1.png){#fig:aws-beanstalk-console}
 
-### Step 2 : Click on Create New Application
+### Step 2: Click on Create New Application
 
 On the Beanstlak home page, one can either click on the 
 `Create New Application` button at the top right corner or 
-click on the `Get Started` button in the screen center (see @fig:aws-beanstalk-home).
+click on the `Get Started` button in the screen center
+(see @fig:aws-beanstalk-home).
 
 ![AWS Beanstalk](images/elastic_beanstalk-2.png){#fig:aws-beanstalk-home}
 
-### Step 3 : Select Base Configuration
+### Step 3: Select Base Configuration
 
 Provide a suitable name for your application (see
 @fig:aws-beanstalk-baseconfig). In the Base Configuration section,
-select the type of platform you wish provision for you code to be
-executed. There are several option available like Java, Python, Ruby,
+select the type of platform you wish to provision for your code to be
+executed. There are several options available like Java, Python, Ruby,
 Go, .NET, PHP, Node JS, Docker and Tomcat (see
 @fig:aws-beanstalk-baseoption). For this example we will go with
 Tomcat.
@@ -132,33 +111,33 @@ Tomcat.
 
 ![AWS Beanstalk](images/elastic_beanstalk-2.1.png){#fig:aws-beanstalk-baseoption}
 
-### Step 4 : Click on Configure More Options
+### Step 4: Click on Configure More Options
 
 Do not click on Create Application button in the previous step in case
-you wish to create your application in a particular VPC. This is will
+you wish to create your application in a particular VPC. This will
 be a requirement for most organizations since they would like the
 application to be created in their own VPCs on cloud so that they can
 restrict the access to the application and also allow the application
 to connect with other resources on their cloud like databases.  If you
 go ahead and click on Create Application button, the application will
-be created \ in default AWS VPC.  Once an application is created, the
+be created in default AWS VPC.  Once an application is created, the
 VPC on it cannot be updated.
 
 To be able to launch the application in the VPC of your choice, click
 on `Configure More Options` button.
 
-### Step 5 : Select High Availability as Config Preset
+### Step 5: Select High Availability as Config Preset
 
 Once you click on `Configure More Options` button, AWS will take you
 to Advance Configuration page.  Select High Availaibility option as
-configuration present. This will allow you provision a load balancer
+configuration present. This will allow to provision a load balancer
 for your application.  If this option is not selected, the application
 is launched as low cost and no load balancer can be mapped to it
 (see @fig:aws-beanstalk-configpreset-1).
 
 ![AWS Beanstalk](images/elastic_beanstalk-4.png){#fig:aws-beanstalk-configpreset-1}
 
-### Step 6 : Map VPC
+### Step 6: Map VPC
 
 Click on the Network section on the Advance Configuration page (see
 @fig:aws-beanstalk-configpreset-1). This will open the another page
@@ -169,26 +148,26 @@ with the default VPC (see @fig:aws-beanstalk-network).
 
 ![AWS Beanstalk](images/elastic_beanstalk-5.png){#fig:aws-beanstalk-network}
 
-Other options on that can be configured in this section are explained next.
+Other options that can be configured in this step are explained next.
 
 #### Load Balancer settings
 
 Select visibility as public in case you want your application to be
 accessible from other VPCs or over internet.
 
-This section also allows you to select the subnet to be used for the
-load balancer across availability zones.
+User can select the subnet(s) to be used for the load balancer across 
+different availability zones.
 
 These settings can be modified after the application launch as well.
 
 #### Instance settings
 
 You can assign public IP address to your EC2 instances from this
-section.  Howver this action is discourage and the application should
-be accesible only the load balancers.
+section.  Howrver this action is discouraged and the application should
+be accesible only through the load balancers.
 
-This section also allows you to select the subnet to be used for the
-application servers across availability zones.
+User can select the subnet(s) to be used for the application servers 
+across different availability zones.
 
 These settings can be modified after the application launch as well.
 
@@ -198,21 +177,21 @@ Once done, click on Save button. This action will save the settings
 and will take you back to the Advance Configuration page (see
 @fig:aws-beanstalk-configpreset-2).
 
-### Step 7 : Launch Application
+### Step 7: Launch Application
 
-These settings done so far are sufficeint to create a High
+These settings done so far are sufficient to create a High
 Availability Load Balanced application. Click on `Create App`
 button (see @fig:aws-beanstalk-configpreset-2).
 
 This will initiate the process of application creation. Once the
 process completes, the application health will be displayed with a
-green check and the application URL (which points to the publlic load
+green check and the application URL (which points to the public load
 balancer) will be displayed in the top section  (see
 @fig:aws-beanstalk-appready).
 
 ![AWS Beanstalk](images/elastic_beanstalk-6.png){#fig:aws-beanstalk-appready}
 
-### Step 8 : Verify application URL
+### Step 8: Verify application URL
 
 Click on the URL gerenerated in the previous step. This will open the
 homepage of the sample application (see @fig:aws-beanstalk-homepage).
@@ -223,10 +202,10 @@ homepage of the sample application (see @fig:aws-beanstalk-homepage).
 
 ### Beanstalk Deployment
 
-Beanstalk deployment is quick an easy. Lets deploy a sample springboot
+Beanstalk deployment is quick and easy. Lets deploy a sample springboot
 war to this environment.  Go to the application dashboard. Click on
-Upload and Deploy button.  This will open a pop up that will allow to
-upload package and apply a version label.  Once can also select to
+`Upload and Deploy` button.  This will open a pop up that will allow to
+upload package and apply a version label.  One can also select to
 deploy to all instances at once or batch wise. Click on deploy once
 ready (see @fig:aws-beanstalk-upload).
 
@@ -248,7 +227,7 @@ The updated application can be validated by clicking the beanstalk URL
 All deployments can be tracked by clicking the `Application Versions page` on the 
 upload pop up (see @fig:aws-beanstalk-upload).
 
-Once you click the link, a new page is opened which allows to :
+Once you click the link, a new page is opened which allows to:
 * View and download all past packages deployed.
 * Deploy a previous package again
 * Manage the life cycle policy for backing up past deployments (see
@@ -270,8 +249,7 @@ next set of actions on the application environment:
 
 (see @fig:aws-beanstalk-manageenv)
 
-![AWS Beanstalk](images/elastic_beanstalk-12.png)
-{#fig:aws-beanstalk-manageenv}
+![AWS Beanstalk](images/elastic_beanstalk-12.png){#fig:aws-beanstalk-manageenv}
 
 ### Beanstalk Logs
 
@@ -303,7 +281,7 @@ monitoring can be edited to adjust the granularity (see
 
 Each metric section also has a bell icon on the top right
 corner. Using this icon one can set alarms based on specific
-thresholds. Alarms can be integrated SNS topics for notification or
+thresholds. Alarms can be integrated with SNS topics for notification or
 DynamoDB (see @fig:aws-beanstalk-alarm).
 
 ![AWS Beanstalk](images/elastic_beanstalk-16.png){#fig:aws-beanstalk-alarm}
@@ -330,14 +308,14 @@ health status to another, or deployments made on the environment (see
 
 The Tags link in the application dashboard allows to view all the tags
 applied to the environment. Tags are key value pairs that help to
-identify the beanstalk resources for managment or pricing activities
+identify the beanstalk resources for management or pricing activities
 (see @fig:aws-beanstalk-tags).
 
 ![AWS Beanstalk](images/elastic_beanstalk-19.png){#fig:aws-beanstalk-tags}
 
 ### Beanstalk Configuration Management
 
-The Configurations link the application dashboard allows to modify
+The Configurations link in the application dashboard allows to modify
 various configurations for the beanstalk application. These are
 grouped into different sections which are explained under the
 following pages (see @fig:aws-beanstalk-config).
@@ -348,8 +326,9 @@ following pages (see @fig:aws-beanstalk-config).
 
 ##### Container Options
 
-This section provides options to configure the container settings to host the 
-application.
+We can also configure the container settings to host the application. Below 
+options are available for selection.
+
 * Proxy Server - Apache, Nginx
 * Gzip Compression
 * Initial JVM Heap Size
@@ -366,8 +345,8 @@ additional charges.
 
 ##### S3 Log Storage 
 
-This section allows to optionially rotate logs to Amazon S3. Again, S3
-storage will incur addtional charges.
+We can also optionially rotate logs to Amazon S3. Again, S3 storage 
+will incur additional charges.
 
 ##### Environment properties
 
@@ -386,26 +365,26 @@ package between environments without any code changes (see
 
 ##### Instance Type
 
-This section allows to update the EC2 server instance type to be used
-to host the application. EC2 instance come in various categories (t2,
-t3, m4, m5, c1, c2 etc.) and size (micro, small, medium, large etc) and
-can be selected based on the application needs and usage pattern.
+In case of fluctuating business needs, the EC2 server instance type used
+to host the application can also be changed. EC2 instance come in various 
+categories t2,t3, m4, m5, c1, c2 etc.) and size (micro, small, medium, large etc) 
+and can be selected based on the application needs and usage pattern.
 
 ##### Amazon CloudWatch monitoring
 
-The cloudwatch monitoring period can be selected between 1 and 5 mins
-from this section. Smaller monitoring interval incur additional
-charges.
+The cloudwatch monitoring period can be selected between 1 and 5 mins. 
+Smaller monitoring interval incur additional charges. The default monitoring window
+is 5 mins.
 
 ##### Root volume (boot device)
 
-This section allows to choose the volume type (Magnetic, General
-Purpose SSD, Provisioned IOPS SSD), size and IOPS for the instances
+Beanstalk also provides flexibility to choose the volume type (Magnetic, General
+Purpose SSD, Provisioned IOPS SSD), size and IOPS for the instances.
 
 ##### Security Groups
 
-This section allows to secuirty groups to the EC2 instances to
-restirct traffic ingress (see @fig:aws-beanstalk-config-intances).
+Security groups mapped to the EC2 instances allow to define rules
+restrict traffic ingress (see @fig:aws-beanstalk-config-intances).
 
 ![AWS Beanstalk](images/elastic_beanstalk-22.png){#fig:aws-beanstalk-config-intances}
 
@@ -433,8 +412,7 @@ peak load (see @fig:aws-beanstalk-config-capacity).
 
 #### Load Balancer
 
-This section allows to modify the following load balance
-configruations:
+Next we will discuss the options to modify the load balance configurations:
 
 * Add remove http / https listeners
 * Serve http / https services on one or more ports
@@ -449,23 +427,24 @@ certificates (see @fig:aws-beanstalk-config-loadbalancer).
 
 ##### Application Deployments
 
-This section allows to specify the if the deployments will be done on
-all instances at once or one by one.
+Beanstalk allows to specify if the deployments will be done on
+all instances at once or one by one. This helps ensuring at aleast one 
+application node is up while the other is being deployed with the new code.
 
 ##### Configuration Updates
 
-This section allows to specify the if the configuration changes on VMs
-will be done on all instances at once or one by one.  (see
+Similar to application deployments, we can also specify if the configuration changes 
+on VMs will be done on all instances at once or one by one. (see
 @fig:aws-beanstalk-config-updates-1).
 
 ![AWS Beanstalk](images/elastic_beanstalk-25.png){#fig:aws-beanstalk-config-updates-1}
 
 #### Security
 
-This section allows to map the the following list of attributes
+The security section has options to map the following list of attributes:
 
 * Service Role - AWS role that beanstalk will assume. This role
-  specifies the permissions to beanstalk to provision resources like
+  specifies the permissions for beanstalk to provision resources like
   EC2.
 * Instance Role - AWS role that the EC2 instances will assume. This
   role specifies the permissions to EC2 instances to access other AWS
@@ -477,22 +456,27 @@ This section allows to map the the following list of attributes
 
 #### Monitoring
 
+Next we will discuss the monitoring options available in AWS Beanstalk.
+
 ##### Health Reporting
-This section allows to select between basic and enhanced monitoring options.
-While enhanced monitoring incurs addtional charges, it allows to select custom metrics
-to be reported to Cloud Watch.
+
+User can select between basic and enhanced monitoring options.
+While enhanced monitoring incurs addtional charges, it allows to select 
+custom metrics to be reported to Cloud Watch.
 
 ##### Health monitoring rule customization
 
-This section currently allows to ignore http 4XX errors for monitoring
-health checks (see @fig:aws-beanstalk-config-monitoring).
+We can choose to ignore http 4XX errors for monitoring health checks 
+on need basis. This is helpful in cases where the application by design 
+returns 4XX error codes based on certain conditions(see 
+@fig:aws-beanstalk-config-monitoring).
 
 ![AWS Beanstalk](images/elastic_beanstalk-27.png){#fig:aws-beanstalk-config-monitoring}
 
 #### Managed Updates
 
-This section allows to manage the automatic updates to the platform
-and specify the time period / slot for updates (see
+We can also optionally configure the automatic updates to the platform 
+based on specific time period / slot for updates (see
 @fig:aws-beanstalk-config-updates-2).
 
 ![AWS Beanstalk](images/elastic_beanstalk-28.png){#fig:aws-beanstalk-config-updates-2}
@@ -507,8 +491,8 @@ notifications about important events (see
 
 #### Network
 
-Using this section, we can update the subnets associated with the load
-balancer and EC2 instances
+We also have an option to update the subnets associated with the load
+balancer and EC2 instances at any time.
 
 Note : VPC on the application can be mapped only at the time of
 creation of the beanstalk application and cannot be modified later
@@ -518,14 +502,60 @@ creation of the beanstalk application and cannot be modified later
 
 #### Database
 
-This section allows to create and manage an RDS database as part of
+If required, we can also create and manage a RDS database as part of
 the beanstalk configuration (see @fig:aws-beanstalk-config-database).
 
-![AWS Beanstalk](images/elastic_beanstalk-31.png)
-{#fig:aws-beanstalk-config-database}
+![AWS Beanstalk](images/elastic_beanstalk-31.png){#fig:aws-beanstalk-config-database}
+
+## Access Beanstalk using python
+
+The beanstalk application and all of its associated resources can also be accessed and 
+managed programatically using boto package in python.
+
+Here is the link that describes the boto methods available for beanstalk.
+
+* <https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html>
+
+## Exercises
+
+ElasticBeanstalk.1:
+
+> Follow steps defined in the sections above to set up a beanstalk application
+> in Python using default sample application provided by AWS.
+> Use the generated beanstalk URL to verify that the application is accessible.
+
+ElasticBeanstalk.2:
+
+> Once you are able to access the beanstalk application using the generated URL,  
+> deploy your custom application and validate if the environment reflects the changes
+> as per your new deployment package.
+
+ElasticBeanstalk.3:
+
+> Click on `Configuration` link on left hand menu in the beanstalk console. 
+> Next click on the `Capacity` link and set up an Auto Scaling policy to keep the 
+> application running on a minimum of 2 servers at all times.
+> Save the new configuration and allow beanstalk to install the changes to the
+> environment.
+> Verify that the application is now running on 2 servers. This can be verified by 
+> clicking on the `Health` link.
+
+ElasticBeanstalk.4:
+
+> Now select 1 of the 2 servers and terminate it from the 
+> `Instance Actions` button on the top right on `Health Page`. 
+> Wait for some time to confirm if beanstalk automatically adds a new server instance 
+> to match the minimum threshold set up in excrcise 3.
+
+ElasticBeanstalk.5:
+
+> Click on `Configuration` link and open the `Load Balancer` section.
+> Add new rules to make the application listen on http / https on ports other than
+> the default 80 and 443 ports.
+> Validate that the application URLs work on the new ports once the changes are applied. 
+
 
 ## References
 
-* <https://aws.amazon.com/elasticbeanstalk/>
+* <https://aws.amazon.com/elasticbeanstalk/> [@www-aws-elasticbeanstalk]
 
-:o: create also bibtex

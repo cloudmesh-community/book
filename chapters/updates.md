@@ -8,10 +8,13 @@ the Github commits at
 
 for a complete list of changes in reverse chronological order
 
+* April 3, 2019: Several sections about MapReduce with Docker and Go programming
+  are revisited. Weekly activities and syllabus are updated accordingly.
+
 * March 1, 2019: Map reduce is an essential concept that needs to be
   understood properly inorder to work with Big data frameworks such
   as Apache Spark and Hadoop. The introduction to map reduce section
-  (see @sec:map-reduce) covers the basics of the map reduce concepts 
+  (see @sec:map-reduce) covers the basics of the map reduce concepts
   and the Hadoop section (see @sec:hadoop-introduction) shows how the
   concept of map reduce is implemented in Apache Hadoop.
 
@@ -69,5 +72,3 @@ for a complete list of changes in reverse chronological order
   This breaks installation instructions for Linux/ubuntu. For ubuntu we
   have created an experimental untested install script if containers
   can not be used.
-
-

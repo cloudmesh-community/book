@@ -114,6 +114,7 @@
    year={2014},
    url={https://github.com/JuliaParallel/Elly.jl}
 }
+<<<<<<< HEAD
 
 @Misc{clustermanager.jl,
    author={Mohapatra, T.},
@@ -122,3 +123,5 @@
    year={2013},
    url={https://github.com/JuliaParallel/ClusterManagers.jl}
 }
+=======
+>>>>>>> 38d60dadade89df7878681a9b3c9fa7910615a22

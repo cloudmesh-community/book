@@ -69,7 +69,7 @@ Watson account. Once you have accepted the terms and conditions you
 will be taken to the product and service catalog of IBM Watson as
 shown in the image @fig:watson-catalog.
 
-![Watson Catalog](images/catalog_ibm_watson.png){#fig:watson-catalog}
+![Watson Catalog [Source](https://www.ibm.com/watson/index.html)](images/catalog_ibm_watson.png){#fig:watson-catalog}
 
 ## Understanding the free tier
 
