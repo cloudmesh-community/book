@@ -1,0 +1,22 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="aws-in-julia">AWS in Julia</h1>
+<p>There are two Julia libraries that provide programmatic interface with AWS:
+AWS.jl and AWSCore.jl. We will focus on AWSCore.jl, as it is under active
+development and provides more infrastructure types and high-level packages.
+We include a note about AWS.jl for completeness. The following information can
+be found at <a href="https://juliacloud.github.io/AWSCore.jl/build/index.html">https://juliacloud.github.io/AWSCore.jl/build/index.html</a></p>
+<h2 id="awscorejl">AWSCore.jl</h2>
+<p>AWSCore.jl (hereinafter AWSCore)</p>
+<h3 id="credentials">Credentials</h3>
+<p>Most AWSCore functions take an <code>AWSConfig</code> dictionary as an initial
+argument, which passes in both credentials and region variables.  Credentials
+can be gathered either from the default <code>/.aws/credentials</code> file or by
+setting them as environment variables as discussed elsewhere in this chapter.  </p>
+<h2 id="awsjl">AWS.jl</h2>
+<p>Julia's AWS API (AWS.jl) is straightforward to configure and is similar to
+Python. Using the Julia-AWS API carries the advantage of users not having to
+switch between environments and languages. The API functionality in Julia is
+currently limited, however, to EC2, S3, SQS, and Auto Scaling.
+https://github.com/JuliaCloud/AWS.jl. Advanced APIs have not been tested yet.
+Further development is in progress with the AWSSDK.jl package. </p>
+</body></html>

@@ -1,0 +1,42 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h2 id="parallel-computing">Parallel Computing</h2>
+<p>Though not intended as a replacement for Hadoop, parallelism in Julia is fairly
+straight-forward. [www-wired]</p>
+<h3 id="coroutines-or-tasks">Coroutines, or Tasks.</h3>
+<h3 id="multi-threading">Multi-threading,</h3>
+<h3 id="green-threading">Green-threading</h3>
+<h3 id="hadoop-and-julia">Hadoop and Julia:</h3>
+<p>Julia is also optimized for high performance computing in a distributed
+environment.</p>
+<p>Parallelism in Julia is constructed via Coroutines which use communication
+primitives  to communicate between processes. The Channel function in Julia
+makes passing variables, results, and objects between tasks possible.
+[@www-julialang]. To create a Channel of size(int) we pass in:</p>
+<p><code>julia
+c1 = Channel(32)</code></p>
+<p>We can also specify a Type{T} before the size, though if not specified, the
+Channel can hold any type object.</p>
+<p>The Julia documentation [@www-julialang] provides a simple example of creating
+results in one Channel and taking them into a second Channel.</p>
+<p>```julia
+c1 = Channel(32)
+c2 = Channel(32)</p>
+<h1 id="and-a-function-foo-which-reads-items-from-c1-processes-the-item-read">and a function <code>foo</code> which reads items from c1, processes the item read</h1>
+<h1 id="and-writes-a-result-to-c2">and writes a result to c2,</h1>
+<p>function foo()
+    while true
+        data = take!(c1)
+        [...]               # process data
+        put!(c2, result)    # write out result
+    end
+end</p>
+<h1 id="we-can-schedule-n-instances-of-foo-to-be-active-concurrently">we can schedule <code>n</code> instances of <code>foo</code> to be active concurrently.</h1>
+<p>for _ in 1:n
+    @async foo()
+end
+```</p>
+<p>While development and interactivity between Spark, Hadoop, and
+Julia is robust, the documentation is limited. The Elly.jl package [@elly-jl]
+is a Hadoop and Yarn client for Julia. We focus here on the Hadoop
+functionality. </p>
+</body></html>

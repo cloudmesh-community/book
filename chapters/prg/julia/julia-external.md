@@ -42,40 +42,41 @@ This is in contrast to Julia's built in	`sin` function:
 **Pycall in Virtualenvs**
 
 This course recommends using virtualenvs in Python. It is therefore important to
-note that Pycall "uses the virtualenv it was built with by default, even if you
+>note that Pycall "uses the virtualenv it was built with by default, even if you
 switch virtualenvs." [www-pycall]. This applies to virtual environments created
-using [`venv`] and [`virtualenv`]. Python virtual environments created by conda
+using `venv` and `virtualenv`. Python virtual environments created by conda
 are not currently supported. 
 
 To continue interoperability with Julia while using a different virtualenv,
 Pycall recommends switching virualenvs and running `rm(Pkg.dir("PyCall","deps",
 "PYTHON")); Pkg.build("PyCall")`
 
-```
-$ source PATH/TO/bin/activate  # activate virtual environment in system shell
-$ # start Julia
+``` julia
 
-    ENV["PYCALL_JL_RUNTIME_PYTHON"] = Sys.which("python")
-    "PATH/TO/bin/python3"
+julia> source PATH/TO/bin/activate  # activate virtual environment in system shell
 
-    julia> using PyCall
+julia> ENV["PYCALL_JL_RUNTIME_PYTHON"] = Sys.which("python") "PATH/TO/bin/python3"
 
-    pyimport("sys").executable
-    "PATH/TO/bin/python3"
+julia> using PyCall
+
+julia> pyimport("sys").executable "PATH/TO/bin/python3"
 ```
 
 
 ### Java in Julia
+
 Julia interacts with Java through the use of the JavaCall.jl package.
 [@javacall] "Static and instance method with primitve or object arguments and 
 return values are callable." [www-javacall]. 
 
 **Installation**
+
 ```
 Pkg.add("JavaCall")
 ```
 
 **Usage**
+
 ```
 julia> using JavaCall
 

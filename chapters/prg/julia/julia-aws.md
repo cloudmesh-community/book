@@ -7,13 +7,15 @@ We include a note about AWS.jl for completeness. The following information can
 be found at <https://juliacloud.github.io/AWSCore.jl/build/index.html>
 
 ## AWSCore.jl
+
 AWSCore.jl (hereinafter AWSCore)
 
 ### Credentials
+
 Most AWSCore functions take an ```AWSConfig``` dictionary as an initial
 argument, which passes in both credentials and region variables.  Credentials
 can be gathered either from the default ```/.aws/credentials``` file or by
-setting them as environment variables as discussed elsewhere in this chapter.  
+setting them as environment variables as discussed elsewhere in this chapter.
 
 ## AWS.jl
 

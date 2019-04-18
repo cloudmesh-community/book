@@ -1,11 +1,14 @@
 # Docopts in Julia are similar to Python, Ruby, and other languages.
 
 ## Installation
+
 Again, most of Julia's packages that are not in the base code are contained within git repositories. [@getting-started]. To get started with DocOpts in Julia,
 issue the following command within the Julia REPL:
-```Julia
+
+```julia
 Pkg.add("DocOpt")
 ```
+
 A list of the all approved packages is available at https://github.com/JuliaLang/METADATA.jl
 
 Usage example is given as follows:
