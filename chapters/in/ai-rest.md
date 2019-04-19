@@ -1,17 +1,6 @@
 # Artificial Intelligence Service with REST
 
 
-:o: bibs missning - Added new Bib references in ai.bib
-
-:o: terms usch as *GOOGLE_APPLICATION_CREDENTIALS* should be `GOOGLE_APPLICATION_CREDENTIALS` - Made changes
-
-:o: could screenshots bee redone on windows that are less wide with larger font, quality is bad due to unneded space - Uploaded new images
-
-:o: Gregor fixed all itemized lists, they all had wrong indentation.
-
-:o: Gregor fixed all bash with missing $
-
-:o: Gregor fixed all python removing the last line
 
 ## AI and ML offerings by Cloud service providers
 
@@ -219,12 +208,12 @@ on the terminal
 $ curl http://localhost:8080/airest/gcv/mp1.jpg
 ```
 
-Input image `mp1.jpg` is shown in @fig:gcv-testimage: 
+Input image `mp1.jpg` is shown in @fig:gcv-testimage. 
 
 ![GCV-Test Image](images/mp1.png){#fig:gcv-testimage}
 
 
-Output response from the REST API:
+Output response from the REST API.
 
 ```python
 {
@@ -285,17 +274,18 @@ sklearn.feature_extraction.text.TfidfTransformer
 
 Solution will be implemented in following steps:
 
-* **Step-1:** Define a function to download data from Azure cloud storage.
-* **Step-2:** Define a function to pre-process *Test* dataset.
-* **Step-3:** Define a function to implement Naive Bayes algorithm.
-* **Step-4:** Define an OpenAPI specification in a YAML file. 
+* **Step 1:** Define a function to download data from Azure cloud storage.
+* **Step 2:** Define a function to pre-process *Test* dataset.
+* **Step 3:** Define a function to implement Naive Bayes algorithm.
+* **Step 4:** Define an OpenAPI specification in a YAML file. 
   The specification will have 3 endpoints for each of the previous steps:
   * Download training and test datasets.
   * Pre-process Test data with parameter.
   * Build Naive Bayes classification model and return test accuracy.
-* **Step-5:** Create a module to use the connexion service and read in the 
+* **Step 5:** Create a module to use the connexion service and read in the 
   OpenAPI specification from the yaml file.
 
+Now we discuss in details, each of the steps mentioned earlier. 
 
 Pre-requisites:
 
@@ -315,7 +305,7 @@ import connexion
 ```
 
 
-**Step 1:**
+**Step 1:** Define a function to download data from Azure cloud storage
 
 Note: This step downloads data from Azure cloud Blob storage. Prior to 
 replicating this step, datasets need to be uploaded to your respective Azure 
@@ -362,7 +352,7 @@ def download_data():
     return 'Datasets downloaded'
 ```
 
-**Step 2:**
+**Step 2:** Define a function to pre-process *Test* dataset
 
 Pre-processing test data involves following tasks:
 
@@ -410,7 +400,7 @@ def file_clean(infile, label, writeFile):
 ```
 
 
-**Step 3:**
+**Step 3:** Define a function to implement Naive Bayes algorithm
 
 After the Test dataset has been cleaned and labelled, we now run the 
 Multinomial Naive Bayes algorithm on training data and use the model
@@ -466,7 +456,7 @@ def get_data_label(inp_file):
     return data, label 
 ```
 
-**Step 4:**
+**Step 4:** Define an OpenAPI specification in a YAML file
 
 Now we define an OpenAPI specification in yaml format to create 2 different 
 endpoints for functions defined in the revios 3 steps. 
@@ -554,7 +544,7 @@ definitions:
 ```
 
 
-**Step 5:**
+**Step 5:** Create a module to use the connexion service to start the server
 
 Finally, we create a module (`server.py`) to use connexion service to read the 
 above created OpenAPI specification (`ai.yaml`) and dynamically call the methods 
