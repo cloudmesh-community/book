@@ -41,7 +41,7 @@ def load_manifest(file):
     mfest = None
     with open(file, 'r') as fs:
         try:
-            mfest = yaml.load(fs)
+            mfest = yaml.load(fs, Loader=yaml.SafeLoader)
         except yaml.YAMLError as exc:
             print(exc)
     return mfest
@@ -134,6 +134,8 @@ class Manifest(object):
         self.books = {}
         self.chaps = {}
 
+        
+        
         for adef in self.mfest:
             for defheader, defs in adef.items():
                 if not defheader.startswith("BOOK_"):
