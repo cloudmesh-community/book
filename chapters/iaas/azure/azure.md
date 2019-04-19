@@ -171,7 +171,26 @@ sign on from IU to proceed. If you use another e-mail you can
 certainly do that and you free account sis not associated with the IU
 account. This could be your Skype account or some other e-mail.  After
 registration you will be provided with 12 months of free usage of a
-few selected services and $200 credits for 30 days.
+few selected services and $200 credits for 30 days. At the end of 30 days, 
+Azure disables your subscription. Your subscription is disabled to protect 
+you from accidentally incurring charges for usage beyond the credit and free 
+services included with your subscription. To continue using Azure services, 
+you must upgrade your subscription to a Pay-As-You-Go subscription. 
+After you upgrade, your subscription still has access to free services for 12 months. 
+You only get charged for usage beyond the free services and quantities.
+The Azure Student Account requires that you to activate the account after 30 days of use. 
+If you do not activate, you will lose access to your Azure Student Account 
+and can not use the services.
+
+The Azure student account FAQ will likely answer questions you might have pertaining 
+to an Azure Student Account, what you will have access to, how long you will enjoy access, 
+and additional general overview information including terms of the account. 
+<https://azure.microsoft.com/en-us/free/free-account-students-faq/>
+
+Once you have set up the Azure Student account, you will gain access the Azure environment 
+through the Azure Portal <https://portal.azure.com>. To log in, 
+please use the credentials you determined during the set up.
+
 
 The services that you have access to include:
 
@@ -206,6 +225,120 @@ the defined complexity requirements. As the following: @fig:creating-a-vm.
 
 Source: <https://docs.microsoft.com/en-us/azure/virtual-machines/windows/media/quick-create-portal/create-windows-vm-portal-basic-blade.png>
 
+## Create a Ubuntu Server 18.04 LTS Virtual Machine in Azure
+
+Here are the steps to create a Ubuntu Server 18.04 LTS Virtual Machine in Azure. 
+
+To start, go to the Azure Portal <https://portal.azure.com>.
+
+Next, the locate the `Virtual Machines` option and select it:(see @fig:virtualmachines).
+
+![virtualmachines](images/virtualmachines.png){#fig:virtualmachines}
+
+Then to create a new virtual machine, select `Add`:(see @fig:addvirtualmachines).
+
+![addvirtualmachines](images/addvirtualmachines.png){#fig:addvirtualmachines}
+
+This will present you the configuration options needed to create a new virtual machine:(see @fig:createavirtualmachine).
+
+![createavirtualmachine](images/createavirtualmachine.png){#fig:createavirtualmachine}
+
+To configure the virtual machine, choose the following options or modify to your situational needs.
+
+Subscription: `Azure for Students` (default)
+
+Resource Group: `YourResourceGroupHere` (Create a new one if you do not have an available option.)
+
+Virtual Machine Name: `EfiveothreeTest`
+
+Region: `Central US` (default)
+
+Availability Options: `No infrastructure redundancy required` (default)
+
+Image: `Ubuntu Server 18.04 LTS`
+
+Size: `Standard D2s v3, 2 vcpus, 8GB memory`
+
+Authentication type: `password` (Choose a username and a password that meet the requirements).
+
+
+The next configuration section is `Disks`:(see @fig:disks).
+
+![disks](images/disks.png){#fig:disks}
+
+Choose the default configurations settings or modify to your liking the `OS disk type`. 
+This example uses the `Standard SSD` option.
+
+For `Networking` you can choose all the default configuration settings or modify to your liking:(see @fig:networking).
+
+![networking](images/networking.png){#fig:networking}
+
+For `Management` you can choose all the default configuration settings or modify to your liking:(see @fig:management).
+
+![management](images/management.png){#fig:management}
+
+Last, create the virtual machine:(see @fig:createvmvalidation).
+
+![createvmvalidation](images/createvmvalidation.png){#fig:createvmvalidation}
+
+Once the new VM has been created, Naviagate back to the `Virtual machines` and now discover your Virtual Machine:(see @fig:newvmaftercreation).
+
+![newvmaftercreation](images/newvmaftercreation.png){#fig:newvmaftercreation}
+
+After creation the virtual machine will be in a `running` status. 
+You will want to decide if you want your virtual machine in a `running` status, 
+else stop the VM so that you do not waste resources. 
+
+## Remote access the Virtual Machine 
+To remote access a virtual machine, you can use a client application like Putty: 
+<https://www.putty.org/>.
+
+To use Putty and access the virtual machine, you can configure DNS name in Azure 
+instead of using an IP. This is performed in the Virtual Machine configuration under 
+`DNS name`:(see @fig:dns).
+
+![dns](images/dns.png){#fig:dns}
+
+Click `Configure`.
+You can chose a `static` IP setting or a `dynamic` IP (This example uses a static IP setting):(see @fig:static).
+
+![static](images/static.png){#fig:static}
+
+To apply the setting,  click `save`.
+
+Note: If you have not configured the `port` that connection will use, 
+then connection will not be successful.
+
+In your Virtual machine settings click `Connect` and review the connection settings.
+This example shows the designated `port 22` to be the port that will remote connect to the virtual machine:(see @fig:connectandport).
+
+![connectandport](images/conncetandport.png){#fig:connectandport}
+
+To learn more about working with ports you can review the following: 
+<https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nsg-quickstart-portal>
+
+Next, to connect to the virtual machine, lauch the Putty client and enter 
+the DNS name of the virtual machine to connect to the virtual machine:(see @fig:putty).
+
+![putty](images/putty.png){#fig:putty}
+
+The first time the environment is accessed Putty, 
+Putty will prompt to cache your servers host key. 
+Select `Yes` when prompted:(see @fig:cacheputtykey).
+
+![cacheputtykey](images/cacheputtykey.png){#fig:cacheputtykey}
+
+After the key is cached, it will be remember the next time you access the VM with the Putty client.
+After the VM is successfully accessed in Puty, you will be prompted to enter your server credentials 
+as specified in the virtual machine setup.
+
+Once credentials are provided, you will be logged into your virtual machine:(see @fig:loggedinviaputty).
+
+![loggedinviaputty](images/loggedinviaputty.png){#fig:loggedinviaputty}
+
+To learn more about connecting to Azure virtual machines you can visit: 
+<https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon>
+
 ## Starting a VM
 
 Now we like to introduce you how to start a VM. Please note that VMS
@@ -215,7 +348,7 @@ types that minimize your charges.
 
 A VM can be started through the Portal as follows: @fig:start-button.
 
-* On the overview tqb, a VM can be started by clicking the `Start`
+* On the overview tab, a VM can be started by clicking the `Start`
   button.
 
 ![Start button](images/start-button.png){#fig:start-button}
