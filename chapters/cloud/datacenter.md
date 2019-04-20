@@ -193,24 +193,24 @@ Institute Abnormal Incident Reports (AIRs) database, the root cause of
 
 Next we identify a number of characteristics when looking at different data centers.
 
-**Variation in Size**: Data centers range in size from small *edge*
-facilities to megascale or hyperscale filling large ware houses.
+* **Variation in Size**: Data centers range in size from small *edge*
+ facilities to megascale or hyperscale filling large ware houses.
 
-**Variation in cost per server**: Although many data centers
-standardize their components, specialized services my be afford not on
-a 1K server, but on a 50K server.
+* **Variation in cost per server**: Although many data centers
+  standardize their components, specialized services my be afford not on
+  a 1K server, but on a 50K server.
 
-**Variation in Infrastructure:** Servers in centers serve a variation
+* **Variation in Infrastructure:** Servers in centers serve a variation
   of needs and motivate different infrastructure: Use cases, Web
   Server, E-mail, Machine Learning, Pleasantly Parallel problem,
   traditional super computing jobs.
 
-**Energy Cost:** Data centers use a lot of energy. The energy cost
-varies per region.  A motivation to reduce energy use and cost is also
-been trended by environmental awareness, not only by the operators,
-but by the community in which such centers operate.
+* **Energy Cost:** Data centers use a lot of energy. The energy cost
+  varies per region.  A motivation to reduce energy use and cost is also
+  been trended by environmental awareness, not only by the operators,
+  but by the community in which such centers operate.
 
-**Reliability:** Although through operation l efforts the data center
+* **Reliability:** Although through operation l efforts the data center
   can be made more reliable, failure still can happen. Examples are
 
 * <https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/>
@@ -316,15 +316,15 @@ valuable information. It defines key terms such as
 
 Carbon dioxide emissions coefficient (*carbon footprint*):
 
-: With the increasing demand of data, bandwidth and high performance
+* With the increasing demand of data, bandwidth and high performance
   systems, there is substantial amount of power consumption. This
   leads to high amount of greenhouses gases emission into the
   atmosphere, released due to any kind of basic activities like driving
   a vehicle or running a power plant.
 
-  "The measurement includes power generation plus transmission and
-  distribution losses incurred during delivery of the electricity to
-  its point of use."
+  > "The measurement includes power generation plus transmission and
+  > distribution losses incurred during delivery of the electricity to
+  > its point of use."
 
    Data centers in total used 91 billion kilowatt-hours (kWh) of
    electrical energy in 2013, and they will use 139 billion kWh by
@@ -335,7 +335,7 @@ Carbon dioxide emissions coefficient (*carbon footprint*):
 
 Peaker plant:
 
-: Peaking power plants, also known as peaker plants, and
+* Peaking power plants, also known as peaker plants, and
   occasionally just *peakers*, are power plants that generally run
   only when there is a high demand, known as peak demand, for
   electricity.Because they supply power only occasionally, the power
@@ -358,9 +358,9 @@ Peaker plant:
 
 Avoided emissions:
 
-: Emissions avoidance is the most effective carbon management
+* Emissions avoidance is the most effective carbon management
   strategy over a multi-decadal timescale to achieve atmospheric CO2
-  stabilization and a subsequent decline . This prevents, in the first
+  stabilization and a subsequent decline. This prevents, in the first
   place, stable underground carbon deposits from entering either the
   atmosphere or less stable carbon pools on land and in the oceans.
 
@@ -376,9 +376,9 @@ Avoided emissions:
   become generally accepted (or compulsory), they will no longer qualify
   as offsets and further efficiencies will need to be promoted.
 
-CO2 (carbon dioxide, or *carbon*)
+CO2 (carbon dioxide, or *carbon*):
 
-: Carbon dioxide is the main cause of the greenhouse effect, it is
+* Carbon dioxide is the main cause of the greenhouse effect, it is
   emitted in huge amount into our atmosphere with a life cycle of
   almost 100 years. Data centers emit during the manufacturing process
   of all the components that populate a data center (servers, UPS,
@@ -785,7 +785,7 @@ improved continuity with replication between regions, meeting compliance and dat
 The regions and number of availability zones are as follows:
 
 * Region US East: N. Virginia (6), Ohio (3) US West N. California (3),
-   Oregon (3)
+  Oregon (3)
 * Region: Asia Pacific Mumbai (2), Seoul (2), Singapore (3), Sydney
   (3), Tokyo (4), Osaka-Local (1)1 Canada Central (2) China Beijing (2),
   Ningxia (3)
@@ -1098,14 +1098,14 @@ conducted or encouraged we would see a completely different scenario.
 The scenarios are identified  that will significantly impact the prediction:
 
 * **improved management** increases energy-efficiency through
-operational operational or technological changes with minimal
-investment. Strategies include improving the least efficient
-components.
+  operational operational or technological changes with minimal
+  investment. Strategies include improving the least efficient
+  components.
 
 * **best practices** increases the energy-efficiency gains that can be obtained
-through the widespread adoption the most efficient technologies and best management
-practices applicable to each data center type. This scenario focuses on maximizing the
-efficiency of each type of data center facility.
+  through the widespread adoption the most efficient technologies and best management
+  practices applicable to each data center type. This scenario focuses on maximizing the
+  efficiency of each type of data center facility.
 
 * **hyperscale data centers** where the infrastructure will be moved
   from smaller data centers to larger *hyperscale* data centers.
