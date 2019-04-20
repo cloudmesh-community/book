@@ -1,6 +1,4 @@
-# Box sp19-516-125
-
-:o: referenc removed as there was no bibtex ref created
+# Box
 
 ---
 
