@@ -1,4 +1,4 @@
-# Amazon Elastic Beanstalk (hid: sp19-516-128)
+# Amazon Elastic Beanstalk
 
 ---
 
