@@ -151,25 +151,25 @@ To connect to Document DB with TLS enabled , following steps needs to be taken p
 import pymongo
 import sys
 
-##Create a MongoDB client and open connection to Amazon DocumentDB
+# Create a MongoDB client and open connection to Amazon DocumentDB
 client = pymongo.MongoClient('mongodb://<dbusername>:<dbpassword>@mycluster.node.us-east-1.docdb.amazonaws.com:27017/?ssl=true&ssl_ca_certs=rds-combined-ca-bundle.pem&replicaSet=rs0')
 
-##Specify the database to be used
+# Specify the database to be used
 db = client.test
 
-##Specify the collection to be used
+# Specify the collection to be used
 col = db.myTestCollection
 
-##Insert a single document
+# Insert a single document
 col.insert_one({'hello':'Amazon DocumentDB'})
 
-##Find the document that was previously written
+# Find the document that was previously written
 x = col.find_one({'hello':'Amazon DocumentDB'})
 
-##Print the result to the screen
+# Print the result to the screen
 print(x)
 
-##Close the connection
+# Close the connection
 client.close()
 ```
 
@@ -177,25 +177,25 @@ Similarly to connect to the cluster with TLS disabled, following code can be use
 
 ```python
 
-##Create a MongoDB client and open connection to Amazon DocumentDB
+# Create a MongoDB client and open connection to Amazon DocumentDB
 client = pymongo.MongoClient('mongodb://<dbusername>:<dbpassword>@mycluster.node.us-east-1.docdb.amazonaws.com:27017/?replicaSet=rs0')
 
-##Specify the database to be used
+# Specify the database to be used
 db = client.test
 
-##Specify the collection to be used
+# Specify the collection to be used
 col = db.myTestCollection
 
-##Insert a single document
+# Insert a single document
 col.insert_one({'hello':'Amazon DocumentDB'})
 
-##Find the document that was previously written
+# Find the document that was previously written
 x = col.find_one({'hello':'Amazon DocumentDB'})
 
-##Print the result to the screen
+# Print the result to the screen
 print(x)
 
-##Close the connection
+# Close the connection
 client.close()
 
 ```
