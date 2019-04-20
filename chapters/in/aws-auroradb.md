@@ -1,4 +1,4 @@
-# Amazon Aurora DB (hid: sp19-516-128)
+# Amazon Aurora DB
 
 ---
 
