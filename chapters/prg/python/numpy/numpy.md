@@ -11,12 +11,12 @@ provide a short introduction to NumPy.
 The most common way of installing NumPy, if it wasn't included
 with your Python installation, is to install it via pip:
 
-    pip install numpy
+    $ pip install numpy
 
 If NumPy has already been installed, you can update to the most
 recent version using:
 
-    pip install -U numpy
+    $ pip install -U numpy
     
 You can verify that NumPy is installed by trying to use it in
 a Python program:
@@ -35,11 +35,11 @@ a matrix. Beyond 2-dimenions would be considered a multidimensional
 array. Examples where you'll encounter these dimenions may include:
 
 * 1 Dimensional: time series data such as audio, stock prices, or
-a single observation in a dataset.
+  a single observation in a dataset.
 * 2 Dimensional: connectivity data between network nodes, user-product
-recommendations, and database tables.
+  recommendations, and database tables.
 * 3+ Dimensional: network latency between nodes over time, video
-(RGB+time), and version controlled datasets.
+  (RGB+time), and version controlled datasets.
 
 All of these data can be placed into NumPy's array object, just
 with varying dimensions.
@@ -52,9 +52,9 @@ represent data utilizing many different standard datatypes such
 as uint8 (an 8-bit **u**signed **int**eger), float64 (a 64-bit
 float), or str (a string). An exhaustive listing can be found at:
 
-https://docs.scipy.org/doc/numpy-1.15.0/user/basics.types.html
+* <https://docs.scipy.org/doc/numpy-1.15.0/user/basics.types.html>
 
-Before moving on, it's important to know about the tradeoff
+Before moving on, it is important to know about the tradeoff
 made when using different datatypes. For example, a uint8 can
 only contain values between 0 and 255. This, however, contrasts
 with float64 which can express any value from +/- 1.80e+308. So
@@ -202,16 +202,13 @@ in an element-wise multiplication. Using @ or np.matmul() for matrix
 multiplication:
 
     print(m-m)
-
     print(m*m)
-
     print(m/m)
 
 More complex mathematical functions can typically be found within
 the NumPy library itself:
 
     print(np.sin(x))
-
     print(np.sum(x))
 
 A full listing can be found at:
@@ -264,9 +261,9 @@ that users can use. These functions provide several advantages
 to code written by users:
 
 * They are open source typically have multiple contributors checking
-for errors.
+  for errors.
 * Many of them utilize a C interface and will run much faster than
-native Python code.
+  native Python code.
 * They're written to very flexible.
 
 NumPy arrays and matrices contain many useful aggregating functions
