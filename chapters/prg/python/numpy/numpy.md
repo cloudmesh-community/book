@@ -1,4 +1,4 @@
-# NumPy {#s-numpy} :wave:
+# NumPy {#s-numpy}
 
 NumPy is a popular library that is used by many other Python
 packages such as Pandas, SciPy, and scikit-learn. It provides a
