@@ -373,7 +373,7 @@ our lambda expression represent the element at index 1 in the entry (the 1 creat
 is counting words, it adds the two numbers together. It is, however, possible to reduce by `max()`, `min()`, etc. So the
 program could easily be adjusted to find the maximum line length by removing the split or oldest person named 'John' by
 simply adjusting the lambda expression. Then the `sortBy()` function orders the data in ascending sequence and creates
-a final RDD named counts().
+a final RDD named counts.
 
 Two important notes: the first is that the first four lines of code are not run until the `counts.show()` line is 
 executed. This is due to Spark's lazy evaluation nature - it defers work until it has to return data to the user. This
@@ -394,7 +394,7 @@ error as the user was able to focus more on what was contained in the data rathe
 head.
 
 Extending the previous section, the main advantage of dataframes over RDDs is that they use named columns. Rather than
-accessing a field via x[0], the user is able to access is as a friendlier column, e.g. x['FirstName']. This allows for
+accessing a field via `x[0]`, the user is able to access is as a friendlier column, e.g. `x['FirstName']`. This allows for
 users to think of their data in a more familiar manner - as named columns rather than as indexes into an array. While
 dataframes still use RDDs as the underlying technology, the featureset that they expose to the user is more familiar
 and easier to comprehend. By-and-large, the Spark commonity has shifted towards dataframes for most analytical tasks
