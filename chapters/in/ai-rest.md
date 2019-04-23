@@ -128,7 +128,7 @@ info:
   license: 
     name: "Apache"
 host: "localhost:8080"
-basePath: "/airest"
+basePath: "/cloudmesh/ai"
 schemes: 
   - "http"
 consumes: 
@@ -195,7 +195,7 @@ if __name__ == "__main__":
     app.run(port=8080, debug=True)    
 ```
 
-To implement the REST service, run the following on the terminal:
+To implement the REST service, run the following on the terminal.
 
 ```bash
 $ python server.py
@@ -205,7 +205,7 @@ Once the connection is established, run the following CURL command
 on the terminal
 
 ```bash
-$ curl http://localhost:8080/airest/gcv/mp1.jpg
+$ curl http://localhost:8080/cloudmesh/ai/gcv/mp1.jpg
 ```
 
 Input image `mp1.jpg` is shown in @fig:gcv-testimage. 
@@ -481,7 +481,7 @@ info:
   license: 
     name: "Apache"
 host: "localhost:8080"
-basePath: "/airest"
+basePath: "/cloudmesh/ai"
 schemes: 
   - "http"
 consumes: 
@@ -489,7 +489,7 @@ consumes:
 produces: 
   - "application/json"
 paths: 
-  /ai/getdata:
+  /getdata:
     get:
       tags:
         - AI
@@ -503,7 +503,7 @@ paths:
           description: "naive bayes ml"
           schema: 
             $ref: "#/definitions/AI"
-  /ai/testdata/{linenum}:
+  /testdata/{linenum}:
     get:
       tags:
         - AI
@@ -523,7 +523,7 @@ paths:
           description: "naive bayes ml"
           schema: 
             $ref: "#/definitions/AI"
-  /ai/nb:
+  /nb:
     post:
       tags:
         - AI
@@ -575,7 +575,7 @@ if __name__ == "__main__":
     app.run(port=8080, debug=True)   
 ```
 
-To implement the REST service, run the following on the terminal:
+To implement the REST service, run the following on the terminal.
 
 ```bash
 $ python server.py
@@ -586,19 +586,19 @@ following CURL command can be used for the 1st endpoint which will
 download training and test datasets to local library.
 
 ```bash
-$ curl http://localhost:8080/airest/ai/getdata
+$ curl http://localhost:8080/cloudmesh/ai/getdata
 ```
 
 Following CURL command can be used for the 2nd endpoint which will 
 pre-process the test dataset
 
 ```bash
-$ curl http://localhost:8080/airest/ai/testdata/2990
+$ curl http://localhost:8080/cloudmesh/ai/testdata/2990
 ```
 
 Following CURL command can be used for the 3rd endpoint which will build 
 the model to classify the test data and finally return the accuracy
 
 ```bash
-$ curl http://localhost:8080/airest/ai/nb
+$ curl http://localhost:8080/cloudmesh/ai/nb
 ```
