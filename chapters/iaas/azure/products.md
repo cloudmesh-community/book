@@ -1,11 +1,11 @@
-# Microsof Azure and Cloud Products
+# Microsoft Azure and Cloud Products
 
 Just as Amazon Microsoft offers a large number of services. Many of
 them are not just IaaS services. We list here the from Microsoft
-featured services as of Sep. 2018. The onece markd with a :star: are
+featured services as of Sep. 2018. The ones marked with a :star: are
 related to IaaS.
 
-The services are organized in teh following categories:
+The services are organized in the following categories:
 
 -   AI + Machine Learning
 -   Analytics
@@ -28,7 +28,7 @@ The services are organized in teh following categories:
 
 The following subsections are obtained while looking at the Web page
 and copying the "key phrases". In a future version we will improve the
-section while curating the service descriotions.
+section while curating the service descriptions.
 
 ## AI + Machine Learning
 
