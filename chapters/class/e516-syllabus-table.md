@@ -21,6 +21,8 @@ Legend markings
 * Class released + 
 * Class under development - or :o:
 
+
+
 |     | Week  | Unit | Title  | Description |
 | --- |------ | --- | ------- | --------------------- |
 | + | 1    | 1       | Introduction       | [Gregor von Laszewski](#sec:gregor) |
