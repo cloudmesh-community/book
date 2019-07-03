@@ -77,5 +77,5 @@ Some of them may inspire you to purchase some sensors.
 
 We have developed a partial library of GrovePi module classes at
 
-* <https://github.com/cloudmesh/cloudmesh.pi/tree/master/cloudmesh/pi>
+* <https://github.com/cloudmesh/cloudmesh-pi/tree/master/cloudmesh/pi>
 

@@ -447,7 +447,7 @@ mountvol <Drive Letter>: /d
 * <https://github.com/cloudmesh-community/hid-sp18-419/blob/master/cluster/headless_setup.md>
 * <https://medium.com/@viveks3th/how-to-bootstrap-a-headless-raspberry-pi-with-a-mac-6eba3be20b26>
   * network setup is not good as it requires additional step, we want to preconfigure on sd card and plug in multiple pis at once not a single one.
-* https://github.com/cloudmesh/cloudmesh.pi/blob/dev/bin/cm-burn
+* https://github.com/cloudmesh/cloudmesh-pi/blob/dev/bin/cm-burn
 * http://www.microhowto.info/howto/mount_a_partition_located_inside_a_file_or_logical_volume.html
 * http://www.janosgyerik.com/mounting-a-raspberry-pi-image-on-osx/
 * https://github.com/Hitabis/pibakery

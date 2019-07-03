@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #!/usr/bin/env python
-from __future__ import print_function
+
 import sys
 import os
 
@@ -31,7 +31,7 @@ os.system("echo >> {filename}".format(**data))
 NEW CODE THAT WORKD KIND OF BUT NOT REALY 
 
 
-from __future__ import print_function
+
 import sys
 import os
 import shutil

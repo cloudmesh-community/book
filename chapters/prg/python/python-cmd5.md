@@ -28,14 +28,14 @@ reference="S:managing-multiple-python-versions-with-pyenv"}.
 Cmd5 can be easily deployed with pip:
 
 ```bash
-$ pip install cloudmesh.cmd5
+$ pip install cloudmesh-cmd5
 ```
 
 In case you would like to generate easily new cmd5 commands we also
 recommend you install the cloudmesh sys command with:
 
 ```bash
-$ pip install cloudmesh.sys
+$ pip install cloudmesh-sys
 ```
 
 In case you like to work with the source please clone the following
@@ -45,19 +45,19 @@ directories from github:
 mkdir -p ~/github
 cd ~/github
 
-git clone https://github.com/cloudmesh/cloudmesh.common.git
-git clone https://github.com/cloudmesh/cloudmesh.cmd5.git
-git clone https://github.com/cloudmesh/cloudmesh.sys.git
+git clone https://github.com/cloudmesh/cloudmesh-common.git
+git clone https://github.com/cloudmesh/cloudmesh-cmd5.git
+git clone https://github.com/cloudmesh/cloudmesh-sys.git
 
 cd ~/github/cloudmesh.common
 python setup.py install
 pip install .
 
-cd ~/github/cloudmesh.cmd5
+cd ~/github/cloudmesh-cmd5
 python setup.py install
 pip install .
 
-cd ~/github/cloudmesh.sys
+cd ~/github/cloudmesh-sys
 python setup.py install
 pip install .
 ```
@@ -101,7 +101,7 @@ To see the manual page for a specific command, please use:
 
 One of the most important features of CMD5 is its ability to extend it
 with new commands. This is done via packaged name spaces. We recommend
-you name is cloudmesh.mycommand, where mycommand is the name of the
+you name is cloudmesh-mycommand, where mycommand is the name of the
 command that you like to create. This can easily be done while using the
 *sys* command:
 
@@ -109,13 +109,13 @@ command that you like to create. This can easily be done while using the
 $ cms sys command generate mycommand
 ```
 
-It will download a template from cloudmesh called cloudmesh.bar and
-generate a new directory cloudmesh.mycommand with all the needed files
+It will download a template from cloudmesh called cloudmesh-bar and
+generate a new directory cloudmesh-mycommand with all the needed files
 to create your own command and register it dynamically with cloudmesh.
 All you have to do is to cd into the directory and install the code:
 
 ```bash
-$ cd cloudmesh.mycommand
+$ cd cloudmesh-mycommand
 $ python setup.py install
 # pip install .
 ```
@@ -131,7 +131,7 @@ the command in:
 
 An example for the bar command is presented at:
 
--   <https://github.com/cloudmesh/cloudmesh.bar/blob/master/cloudmesh/bar/command/bar.py>
+-   <https://github.com/cloudmesh/cloudmesh-bar/blob/master/cloudmesh/bar/command/bar.py>
 
 It shows how simple the command definition is (bar.py):
 

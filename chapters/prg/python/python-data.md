@@ -397,7 +397,7 @@ print(a_tag_elems)
 
 ### ConfigDict
 
-* <https://github.com/cloudmesh/cloudmesh.common/blob/master/cloudmesh/common/ConfigDict.py>
+* <https://github.com/cloudmesh/cloudmesh-common/blob/master/cloudmesh/common/ConfigDict.py>
 
 ## Encryption
 
