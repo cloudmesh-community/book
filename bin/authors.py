@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from __future__ import print_function
+
 import subprocess
 import textwrap
 
@@ -15,7 +15,6 @@ book = [
     "Averill Cate, Jr",
     "Bertolt Sobolik",
     "Bo Feng",
-    "Fugang Wang",
     "Fugang Wang",
     "Geoffrey C. Fox",
     "Gregor von Laszewski",

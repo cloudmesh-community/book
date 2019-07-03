@@ -155,15 +155,15 @@ our purposes.
 -   [better get
     3.6.1](https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f)
 
-install cloudmesh.pi
+install cloudmesh-pi
 --------------------
 
-pip install cloudmesh.pi
+pip install cloudmesh-pi
 
-pip install cloudmesh.pi with
+pip install cloudmesh-pi with
 
-        $ git clone https://github.com/cloudmesh/cloudmesh.pi.git
-        $ cd cloudmesh.pi
+        $ git clone https://github.com/cloudmesh/cloudmesh-pi.git
+        $ cd cloudmesh-pi
         $ sudo pip3 install .
 
 see how we do this in macOS/linux can this be done on raspberry? if not
@@ -181,9 +181,9 @@ matplotlib\
 scipy\
 scikitlearn
 
-### cloudmesh.pi (Jon)
+### cloudmesh-pi 
 
-cloudmesh.pi is a repository for our GrovePi module classes. These
+cloudmesh-pi is a repository for our GrovePi module classes. These
 classes require Dexter software, so you need to either have Raspbian for
 Robots or download the software separately.
 
@@ -192,22 +192,22 @@ If you have Raspbian for Robots, run the following in your terminal:
     cd
     mkdir github
     cd github
-    git clone https://github.com/cloudmesh/cloudmesh.pi.git
-    cd cloudmesh.pi
+    git clone https://github.com/cloudmesh/cloudmesh-pi.git
+    cd cloudmesh-pi
     sudo pip install .
 
 ### Install VNC
 
 describe how to install and configure VNC
 
-Sensors (Jon)
--------------
+Sensors
+-------
 
-### Grove Sensors (Jon)
+### Grove Sensors :o:
 
 we already have draft
 
-### Non Grove Sensors (Jon)
+### Non Grove Sensors :o: 
 
 Elegoo as example
 

@@ -413,8 +413,8 @@ allow easy connections ot the raspberry pi board [@grovepi]. The
 actuators used were Grove relays [@grove-relay] and Grove LEDs
 [@grove-led] which respond to the messages received via MQTT.
 
-To control the leds and relays, the python library cloudmesh.pi
-[@cloudmesh.pi], developed at Indiana University was used. The library
+To control the leds and relays, the python library cloudmesh-pi
+[@cloudmesh-pi], developed at Indiana University was used. The library
 consists of interfaces for various IoT sensors and actuators and can be
 easily used with the grove modules.
 

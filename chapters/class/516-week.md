@@ -3,14 +3,11 @@
 In case you like to take the class with weekly activities you can look
 at the Syllabus table at the sections that are released for a
 particular date. The date means the activity is released on that date
-and you have time to conduct the activity. Time sensitive items such
-as assignment due dates are listed in another table.
+and you have time to conduct the activity.
 
-:o: add links to sections
+## Week 1: Activities Aug 26 - 30
 
-Here we list some of the activities by week.
-
-## Week 1: Activities Jan 10 - 17
+In the first week we focus on the following activities:
 
 1. Get familiar with the class and identify if you prefer to take the
    class in free form or in a more guided fashion. Contact us if you
@@ -27,11 +24,11 @@ Here we list some of the activities by week.
    pretty large and will only be updated once a week. See in piazza the
    resource section to locate them
 
-4. Learn piazza and do your bio post. Start a REAME.yml file (look at
+4. Learn piazza and do your bio post. Start a README.yml file (look at
    the assignment in piazza). Create a notebook.md file and keep it up
    to date on weekly basis.
 
-5. Make sure to configure a computer on which you can do python 3.7.2.
+5. Make sure to configure a computer on which you can do python 3.7.3.
    If you have not yet installed python we recommend you use pyenv. See
    our notes in the handbook about that. Pyenv allows you to install
    multiple python versions. Answer the question why anaconda is not a
@@ -62,11 +59,11 @@ students this is considered cheating and an `F` will be assigned.
 Please use git commits. It is not sufficient if just one student of a
 group commits the entire project in case of group work.
 
-## Week 2: Jan 17 - 25
+## Week 2: Aug 30 - Sep 6
 
 ### Development machine
 
-If you have not yet set up a computer with python 3.7.2 on it please
+If you have not yet set up a computer with python 3.7.3 on it please
 do so. Remember you can use virtual machines and use virtualbox so you
 do not interfere with your base system or use a USB stick to boot into
 ubuntu. If you do not have a system work with the TAs to identify
@@ -95,13 +92,21 @@ that can even evolve to a chapter if you like to focus on this.
 #### Datacenter Exercises
 
 Some of you asked what Exercises they can do for this week to do some
-work bejond reading the section.
+work bejond reading the section. Please do not plagiarize. or just
+quote entire sections to avoid plagiarism. Work in a group to discuss
+and come up with high quality content.
 
-We suggest you do
+The assignments are listed in @sec:exercises-energy
 
-* E.Carbon.2 (see @sec:operation-impact)
-* E.Energy.1 (see @sec:exercises-energy)
-* E.Energy.2 (see @sec:exercises-energy)
+* E.Datacenter.2, A form link will be posted.
+* E.Datacenter.3, A Form link will be posted.
+* E.Datacenter.4
+
+Please also pick from either assignments one. As this is a group
+assignment, please improve with the group.
+
+* E.Datacenter.5 
+* E.Datacenter.6
 
 ### Remarks: Sections
 
@@ -118,7 +123,7 @@ the TAs on reviews and improvements if needed.
 
 ### Python till rest of the semester
 
-Python 3.7.2: Set up a computer on which you can execute python 3.7.2.
+Python 3.7.3: Set up a computer on which you can execute python 3.7.3.
 Some did not complete that taks yet (see @sec:python-install,
 @sec:python-intro, @sec:python-language).
 
@@ -127,7 +132,7 @@ chapters are not that important and can be skipped. Focus on classes,
 modules, basic language things. learn about pip (possibly from google)
 learn how to write requirements.txt and setup.py for your own programs
 use pycharm for program development, configure it so it uses python
-3.7.2 when executing the python programs do it in a terminal not from
+3.7.3 when executing the python programs do it in a terminal not from
 within pycharm (see @sec:python-editors).
 
 We recommend that you install pycharm and use it. We have simple
@@ -137,7 +142,7 @@ You do not have to do some of the more advanced python concepts. Focus
 initially on the language and learn how to do classes as this will be
 extremely helpful.
 
-## Week 3: Jan 25 - Feb 1
+## Week 3: Sep 6 - Sep 13
 
 ### Cloud Architectures
 
@@ -166,12 +171,12 @@ in @sec:rest on the sections
 * OpenAPI Specification (see @sec:openapi-spec)
 * OpenAPI REST Service via Introspection (see @sec:openapi-introspection)
 
-YOu do not in thi class need to look at the other Sections about REST,
+You do not in this class need to look at the other Sections about REST,
 however, if you like to you can. For the project, all projects will be
 using for REST services the framework used in
 sec:openapi-introspection.
 
-## Week 4: Feb 1 - Feb 8
+## Week 4: Sep 13 - Sep 20
 
 ### Github as REST service
 
@@ -201,7 +206,7 @@ provide additional material throughout the semester on this. So this
 task may take multiple weeks and may overlap with your project. Get
 started early.
 
-## Week 5: Feb. 8 - Feb 15
+## Week 5: Sep 20 - Sep 27
 
 In this week you will start exploring virtual machines. For this you
 will read the section about virtualization (@sec:virtualization). You
@@ -227,13 +232,13 @@ difference is between virtual machines and python virtual
 environments. We also like you to explain the difference between pyenv
 and venv from python version 3. Make sure you do not plagiarize.
 
-Assignment Online Students (Option A): If you have not yet taken any section, you
-will explore Libvirt on your computer and write a small section on
-using it practically. Make sure you do not plagiarize.
+Assignment Online Students (Option A): If you have not yet taken any
+section, you will explore Libvirt on your computer and write a small
+section on using it practically. Make sure you do not plagiarize.
 
-Assignment Online Students (Option B): If you have not yet taken any section, you
-will explore Hyper-V on your computer and write a small section on
-using it practically. Make sure you do not plagiarize.
+Assignment Online Students (Option B): If you have not yet taken any
+section, you will explore Hyper-V on your computer and write a small
+section on using it practically. Make sure you do not plagiarize.
 
 Assignment Online Students (Option C, for Windows 10 users): If you
 have not yet taken any section, you will explore Linux Subsystem on
@@ -245,7 +250,7 @@ Assignment Online Students (Option D): If you have not yet taken any
 section, you will explore Hyper-V on your computer and write a small
 section on using it practically. Make sure you do not plagiarize.
 
-## Week 5 and 6: Feb 8 - 22
+## Week 5 and 6: Sep 27 - Oct 4 - Oct 11
 
 ### Sections and Chapters
 
@@ -296,7 +301,8 @@ management.
 
 As we want to store information about the clouds and virtual machines
 locally, we also like you to study MongoDB which we will be using for
-the duration of the class including your class projects (see @sec:mongodb-python).
+the duration of the class including your class projects (see
+@sec:mongodb-python).
 
 So the interaction we typically will have
 
@@ -328,131 +334,180 @@ to store any dict into MongoDB very easily.
 
 We would like you to explore this functionality
 
-Your assignment is to first generate a cmd5 command with your first
+Your assignment is to first generate a `cmd5` command with your first
 name. This assignment is mandatory for all students
 
-Than grenrate some dict, that you will return as part of a function that
-you decorate with the database decorator `@DatabaseUptate`
+Than grenrate some dict, that you will return as part of a function
+that you decorate with the database decorator `@DatabaseUptate`
 
 The data must have values for `cloud`, `kind` which are used to
-identify the collection as well as ideally a  `name` for each entry in
+identify the collection as well as ideally a `name` for each entry in
 the collection.
 
-For more information see @sec:mongodb-python and @sec:mongodb-cloudmesh.
+For more information see @sec:mongodb-python and
+@sec:mongodb-cloudmesh.
 
-## Week 7: Feb 22 - March 1
+## Week 7: Oct 11 - Oct 18
 
 ### MapReduce
 
-This week you will start learning the basics of MapReduce concept and its
-use-cases to understand what MapReduce is. The MapReduce section (see @sec:map-reduce)
-gives an introduction and describes the basics of the MapReduce concept.
+This week you will start learning the basics of MapReduce concept and
+its use-cases to understand what MapReduce is. The MapReduce section
+(see @sec:map-reduce) gives an introduction and describes the basics
+of the MapReduce concept.
 
-Watch the video lecture that describes the software echo system around MapReduce
-which is listed in @sec:map-reduce.
+Watch the video lecture that describes the software echo system around
+MapReduce which is listed in @sec:map-reduce.
 
-Understand the Wordcount example discussed in the, word count example can be
-thought of as a "Hello world" example into MapReduce.
+Understand the Wordcount example discussed in the, word count example
+can be thought of as a "Hello world" example into MapReduce.
 
 
-## Week 8: March 4 - March 8
+## Fall Break: Oct 18 - Oct 20
 
-### Hadoop and Spark
-This week you will further look into MapReduce through Apache Hadoop, Hadoop
-is one of the earliest open source implementations of the MapReduce concept.
-Even though Hadoop has now been replaced by faster frameworks such as Spark,
-Flink and Twister2. It is still important to understand the basic concepts
+We recommend that you spend your time wisely and if you are behind
+evaluate if this break can be used to catch up.
+
+
+## Week 8: Oct 20 - Oct 25
+
+### Hadoop and Spark This week you will further look into MapReduce
+through Apache Hadoop, Hadoop is one of the earliest open source
+implementations of the MapReduce concept.  Even though Hadoop has now
+been replaced by faster frameworks such as Spark, Flink and
+Twister2. It is still important to understand the basic concepts
 around Apache Hadoop.
 
-Read and understand the Hadoop echo system as described in @sec:hadoop-introduction.
-Even though Hadoop is rarely used as a MapReduce framework, other parts of the
-echo system such as HDFS(HaDoop File System) and Yarn are still very popular.
+Read and understand the Hadoop echo system as described in
+@sec:hadoop-introduction.  Even though Hadoop is rarely used as a
+MapReduce framework, other parts of the echo system such as
+HDFS(HaDoop File System) and Yarn are still very popular.
 
-Watch and understand the pagerank example which is a popular and important
-algorithm which can be solved cleanly with MapReduce
+Watch and understand the pagerank example which is a popular and
+important algorithm which can be solved cleanly with MapReduce
 
-Install Hadoop and try out some of the examples to get a better understanding
-about how the framework operates.
+Install Hadoop and try out some of the examples to get a better
+understanding about how the framework operates.
 
-Read the Spark section to understand how spark was developed to improve upon
-Apache Hadoop and how it achieves better performance for Iterative MapReduce
-applications
+Read the Spark section to understand how spark was developed to
+improve upon Apache Hadoop and how it achieves better performance for
+Iterative MapReduce applications
 
-MANDATORY: Read the Scientific Writing with markdown epub, this is required
-before you make and contributions to the book to make sure that you understand
-the format of the book and the correct notations. The epub is available in
+MANDATORY: Read the Scientific Writing with markdown epub, this is
+required before you make and contributions to the book to make sure
+that you understand the format of the book and the correct
+notations. The epub is available in
 [Scientific Writing](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true)
 
-MANDATORY Project Milestone: Review of your cloudmesh commandline commands
-specified in docopt. Please make sure you have your command either specified in
-the cm directory or in your hid. make sure to add it to your README, so i can
-find it. The command ust be available Next week Friday Mar 8, 9am.
+MANDATORY Project Milestone: Review of your cloudmesh commandline
+commands specified in docopt. Please make sure you have your command
+either specified in the cm directory or in your hid. make sure to add
+it to your README, so i can find it. The command ust be available Next
+week Friday Mar 8, 9am.
 
 
-## Week 9: March 11 - March 15
-Spring Break
 
-## Week 9: March 18 - March 22
+## Week 9: Oct 25 - Nov 1
+
 ### Containers
 
-Container technology is an important topic in cloud computing and has been
-gaining more and more traction and demand over the past few years. This week
-you will learn container technology and the concepts and tools that you would
-need to master. see @sec:container-intro to get a introduction into
-container technology and its motivations
+Container technology is an important topic in cloud computing and has
+been gaining more and more traction and demand over the past few
+years. This week you will learn container technology and the concepts
+and tools that you would need to master. see @sec:container-intro to
+get a introduction into container technology and its motivations
 
 Docker is one of the most important tools in container technology,
-@sec:docker-intro provides an introduction into docker technology and internal
-details of docker.
+@sec:docker-intro provides an introduction into docker technology and
+internal details of docker.
 
-Read the installation instructions that are provided to install docker locally
-on your machines to test docker commands
+Read the installation instructions that are provided to install docker
+locally on your machines to test docker commands
 
-@sec:docker-file describes how docker image files are constructed. Create your
-own docker images and run it to grasp the concepts
+@sec:docker-file describes how docker image files are
+constructed. Create your own docker images and run it to grasp the
+concepts
 
-Read about docker hub and its capabilities, check how to push and pull images
-as needed from docker hub
+Read about docker hub and its capabilities, check how to push and pull
+images as needed from docker hub
 
-Docker swam allows user to manage large amounts of docker containers, read
-about docker swarm in @sec:docker-swarm
+Docker swam allows user to manage large amounts of docker containers,
+read about docker swarm in @sec:docker-swarm
 
 Kubernetes is another widely used container management framework. See
 @sec:kub-intro to read about Kubernetes in more detail
 
-MANDATORY Project Milestone: OpenAPI specification, We like to review your
-OpenAPI specification that is motivated by your cloud mesh command. Have your
-openAPI specification ready Mar 15, 9am.
+MANDATORY Project Milestone: OpenAPI specification, We like to review
+your OpenAPI specification that is motivated by your cloud mesh
+command. Have your openAPI specification ready Mar 15, 9am.
 
-MANDATORY: comprehension assignment VM management, All students in class must
-be showcasing for one cloud that they can start, stop, and login into a VM in a
-cloud. This has to be demonstrated through a scipt or python program. The
-program must read the credentials from a configuration file.  The script must
-demonstrate that a command can be run on your vm with ssh.Starting and stopping
-the VM via the GUI does not count. This must be done by Mar 15
+MANDATORY: comprehension assignment VM management, All students in
+class must be showcasing for one cloud that they can start, stop, and
+login into a VM in a cloud. This has to be demonstrated through a
+scipt or python program. The program must read the credentials from a
+configuration file.  The script must demonstrate that a command can be
+run on your vm with ssh.Starting and stopping the VM via the GUI does
+not count. This must be done by Mar 15
 
-## Week 10: docker cluster March 25 - 29
-See @sec:docker-cluster for an introduction to terminology and mechanisms for managing multiple
-containers across multiple hosts. Get hands on experience with with docker clusters by creating a
-Docker container with Hadoop to explore the Map/Reduce framework. See @sec:hadoop-docker for
-MapReduce examples.
+## Week 10: Docker Cluster Nov 1 - Nov 8 
 
-## Week 11: Kubernetes March 25 - 29
+See @sec:docker-cluster for an introduction to terminology and
+mechanisms for managing multiple containers across multiple hosts. Get
+hands on experience with with docker clusters by creating a Docker
+container with Hadoop to explore the Map/Reduce framework. See
+@sec:hadoop-docker for MapReduce examples.
 
-See @sec:kub-intro for an introduction to Kubernetes and install `minikube` for development on a local machine.
-This `minikube` allows users to play with virtual machines managed by either virtual box drivers and docker containers.
-Learn those terminologies and setup/shutdown virtual machines with Kubernetes.
+## Week 11: Kubernetes Nov 8 = Nov 15
 
-## Week 12: Kubernetes April 1 - 5
+See @sec:kub-intro for an introduction to Kubernetes and install
+`minikube` for development on a local machine.  This `minikube` allows
+users to play with virtual machines managed by either virtual box
+drivers and docker containers.  Learn those terminologies and
+setup/shutdown virtual machines with Kubernetes.
 
-See @sec:kub-fs for using Kubernetes on futuresystems. It introduces you on how to use the Kubernetes cluster
-on FutureSystems using multiple nodes. Learn to build a service in a cluster environment.
+## Week 12: Kubernetes Nov 15 - Nov 22
 
-## Week 13: Go April 8 - 12
+See @sec:kub-fs for using Kubernetes on futuresystems. It introduces
+you on how to use the Kubernetes cluster on FutureSystems using
+multiple nodes. Learn to build a service in a cluster environment.
 
-See @sec:go-intro and @sec:go-language for the introduction to the Go programming language.
-Install Go development environment from the section @sec:go-installation. Learn the concurrent programming and message chain communication in Go.
+## Thangsgiving break Nov 24 - Dec 1
 
-## Week 14: Go April 15 - 19
+We recommend that you spend your time wisely and if you are behind
+evaluate if this break can be used to catch up. THis is also a good
+time to continue to work on your project.
 
-Learn to develop the rest service with OpenAPI in Go from the sections: @sec:go-openapi and @sec:go-links.
+
+## Project Due Date Dec 1
+
+YOur project will be reviewed and based on feedback you need to
+improve it. Last day to submit improvements is Dec 13. 
+
+
+## Week 13: Go or Julia Dec 1 - Dec 6 
+
+This week allows you to experiment with either Go or Julia. Please,
+select one and try to develop a RES service in either one of the languages.
+
+Go:
+See @sec:go-intro and @sec:go-language for the introduction to the Go
+programming language.  Install Go development environment from the
+section @sec:go-installation. Learn the concurrent programming and
+message chain communication in Go. Learn to develop the rest service
+with OpenAPI in Go from the sections: @sec:go-openapi and
+@sec:go-links.
+
+Julia: TBD
+
+## Week 14: Dec 6 - Dec 13
+
+Improve the project
+
+
+## Week 15: Dec 13 - 20
+
+Project improvements accepted but may not be reflected in the
+project. We encourage you to finish the project Dec 1. Review of the
+project is typically one week. Submission after Dec 13. may result in
+an incomplete.
+

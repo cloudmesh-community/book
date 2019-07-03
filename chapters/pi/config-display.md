@@ -36,14 +36,14 @@ appropriate cases for your monitor
 ### How it works
 
 To achieve this we have developed the file 
-[displaydetect.py](https://raw.githubusercontent.com/cloudmesh/cloudmesh.pi/master/displaydetect.py)
+[displaydetect.py](https://raw.githubusercontent.com/cloudmesh/cloudmesh-pi/master/displaydetect.py)
 that automatically detects and set the display for the pi. To
 integrate it in the Raspbian OS please follow these steps 
 
 1. Install the display detect script. Run this as root:
 
    ```
-   $ wget https://raw.githubusercontent.com/cloudmesh/cloudmesh.pi/master/displaydetect.py -O /bin/displaydetect.py
+   $ wget https://raw.githubusercontent.com/cloudmesh/cloudmesh-pi/master/displaydetect.py -O /bin/displaydetect.py
    $ chmod a+x /bin/displaydetect.py
    ```
 

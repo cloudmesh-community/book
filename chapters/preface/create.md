@@ -4,48 +4,23 @@ Although you will never likely to create the epub from source, we have
 included this section for our most advanced contributors and those
 that update the epub on github.
 
-Please note that you must have at least Pandoc version 2.2.3
-installed.  We do recomment that you use pandoc 2.5. Earlier versions of pandoc have bugs in them that prevent pandoc from workingg properly. You will also need Python version 3.7.2 to run the scripts
-needed to assamble the document.  Earlier versions will not work. We no longer support python 2.7.x. You
-can check the versions with
+Please note that you must have at least Pandoc version 2.5 Earlier
+versions of pandoc have bugs in them that prevent pandoc from workingg
+properly. You will also need Python version 3.7.3 to run the scripts
+needed to assamble the document. You can check the versions with
 
 ```bash
 $ pandoc --version
 $ python --version
 ```
 
-However the easiest way is to use our docker container.
-
-## Ubuntu requirements :o:
-
-:warning: this is not yet working as we expect. For now see
-@sec:book-create-vagrant for an alternative using a virtual machine.
-
-In case you use containers in ubuntu we recommend that you use the
-docker container to compile the book as discussed in
+However the easiest way is to use our docker container as described in
 @sec:docker-create-book.
 
-:o: The next is yet untested
+## Ubuntu requirements
 
-In case you like to use the ubuntu system directly, you can download a
-script that installs the needed software.
-
-You will first have to download the script with
-
-```bash
-$ wget https://raw.githubusercontent.com/cloudmesh-community/book/master/install-ubuntu.sh
-```
-
-Than you can run this [script](https://raw.githubusercontent.com/cloudmesh-community/book/master/install-ubuntu.sh) with
-
-```bash
-$ sh install-ubuntu.sh
-```
-
-:warning: please note that we have not yet tested this and are looking
-for feedback and improvements to the `install-ubuntu.sh` script.
-
-Once the software is installed you can scip to @sec:create-book
+We recommend that you use containers in ubuntu and use the
+instructions provided in @sec:docker-create-book.
 
 ## Using Windows 10
 

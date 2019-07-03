@@ -191,7 +191,8 @@ Institute Abnormal Incident Reports (AIRs) database, the root cause of
 
 ## Data Center Characteristics
 
-Next we identify a number of characteristics when looking at different data centers.
+Next we identify a number of characteristics when looking at different
+data centers.
 
 * **Variation in Size**: Data centers range in size from small *edge*
  facilities to megascale or hyperscale filling large ware houses.
@@ -254,7 +255,7 @@ the largest costs a datacenter incurs during its operation as all of
 the servers, networking, and cooling equipment require power 24/7. For
 electricity, billing is usually measured in terms of kilowatt hours
 (kWh) and kilowatts (kW). Depending on circumstances, there may also be
-costs for public purpose programs, cost recovery, and straded costs, but
+costs for public purpose programs, cost recovery, and stranded costs, but
 they are beyond the scope of this book.
 
 To provide a quick understanding, it is best to understand the relation
@@ -426,49 +427,6 @@ convenient Carbon estimate calculator based on energy consumption.
 If we calculate the total cost, we need naturally add all costs
 arising from build and teardown phase as well as operational upgrades.
 
-**Exercises**
-
-**E.Carbon.1:** Carbon footprint of a data center
-
-> Complete the definitions of the terms used in the relevant section
-
-**E.Carbon.2:** Carbon footprint of data centers
-
-> World wide we have many data centers. Your task will be to find the
-> carbon emission of a data center and its cost in $ based on energy
-> use on a yearly basis. Add your findings to the following table.
-> Make sure you avoid redundant reporting and find a new datacenter. A
-> google doc will be provided to coordinate with the class
-> participants
-
-**Table:** Cost of the data center
-
-.<div class="smalltable">
-
-| Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
-|-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
-| :o:  | :o: | :o:  | :o:               | :o:     | :o:         | :o:                  | :o:                |   |
-|             |          |      |                   |         |             |                      |                    |   |
-|             |          |      |                   |         |             |                      |                    |   |
-
-</div>
-
-*as adjusted in calculator
-
-> If you find other estimates for a data center or an entire data
-> center fleet such as AWS world wide, please provide citations.
-
-**E.Carbon.3:** Your own Carbon footprint
-
-> It is interesting to compare and measure your own carbon footprint.
-> We will ask you anonymously to report your carbon footprint via a
-> form we will prepare in future. As the time to do this is less than
-> 2 minutes, We ask all students to report their footprint.
-
-Please use the calculator at:
-
-* <http://carbonfootprint.c2es.org/>
-
 ### Power Usage Effectiveness
 
 One of the frequent measurements in data centers that is used is the
@@ -548,7 +506,7 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 > Provide details about the system as well as
 > the date when the PUE was reported.
 
-### Hot-Cold Aisle :wave:
+### Hot-Cold Aisle
 
 To understand hot-cold aisles, one must take a brief foray into the
 realm of physics and energy. Specifically, understanding how a
@@ -617,7 +575,7 @@ containment design, the hot isle is contained so that the hot air collected
 in the hot isle is drawn out by the cooling system and so that the cold air
 does not flow into the hot isles[@hot-cold-containment].
 
-##### Water Cooled Doors
+##### Water Cooled Doors {#sec:datacenter-doors}
 
 Alternatively, or in addition :o:
 
@@ -1208,38 +1166,115 @@ Energy Storage:
 
 ## Societal Shift Towards Renewables :o: {#sec:energy-society}
 
-The data center as example.
-
-Government efforts to support renewable in benefit of the society:
+Document the efforts used in society to work towards renewable
+energies. THis includes government efforts to support renewable in
+benefit of the society:
 
 * Germany
 * China
 * Island
 * Corporations: Google, AWS, IBM, ...
 
-Also look at the US state of California
-
-Everyone is doing it.
+Also look at the US state of California and others that project
+renewable energy. 
 
 See also
 
 * <https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
 
+## Datacenter Risks and Issues :o: 
+
+Data Centers may be encounter issues such as outages of a variety of
+reasons. In this section you will identify risks and issues that you
+encounter as part of information you find on the Web or literature.
+
+You task will be to classify and describe the types of outages you
+encounter and will back them up with a reference.
+
+Here is an example:
+
+* Date: Mar 02 2017
+* Datacenter: AWS
+* Category: Operator error
+* Description: Mistake during a routine debugging exercise.
+* Duration: Several hours
+* Impact: large
+* Cost impact > $160 million
+* [Reference](https://www.datacenterknowledge.com/archives/2017/03/02/aws-outage-that-broke-the-internet-caused-by-mistyped-command/)
+
+Find other such examples. Find some with different categories
+
+*
+  [FACEBOOK, WHATSAPP, INSTAGRAM DOWN? WORLD'S BIGGEST SOCIAL NETWORKS SUFFER OUTAGES AND STOP LOADING IMAGES, Newsweek](https://www.newsweek.com/facebook-whatsapp-instagram-down-offline-outages-social-media-not-working-1447367)
+
+
+![Instagram Outage [Ref](https://downdetector.com/status/instagram/map/?ref=DJ-D-L-CC-)](images/instagram-outage-jul-3-2019.png){#fig:inst-outage}
+
 
 ## Exercises {#sec:exercises-energy}
 
-E.Energy.1:
+
+**Exercises**
+
+**Prerequisit**: Knowledge about plagiarism. 
+
+**E.Datacenter.1:** Carbon footprint of a data center
+
+> Complete the definitions of the terms used in the relevant section
+
+**E.Datacenter.2:** Carbon footprint of data centers
+
+> World wide we have many data centers. Your task will be to find the
+> carbon emission of a data center and its cost in $ based on energy
+> use on a yearly basis. Add your findings to the following table.
+> Make sure you avoid redundant reporting and find a new datacenter. A
+> google doc will be provided to coordinate with the class
+> participants
+
+**Table:** Cost of the data center
+
+.<div class="smalltable">
+
+| Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
+|-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
+| :o:  | :o: | :o:  | :o:               | :o:     | :o:         | :o:                  | :o:                |   |
+|             |          |      |                   |         |             |                      |                    |   |
+|             |          |      |                   |         |             |                      |                    |   |
+
+</div>
+
+*as adjusted in calculator
+
+> If you find other estimates for a data center or an entire data
+> center fleet such as AWS world wide, please provide citations.
+
+**E.Datacenter.3:** Your own Carbon footprint
+
+> It is interesting to compare and measure your own carbon footprint.
+> We will ask you anonymously to report your carbon footprint via a
+> form we will prepare in future. As the time to do this is less than
+> 2 minutes, We ask all students to report their footprint.
+
+Please use the calculator at:
+
+* <http://carbonfootprint.c2es.org/>
+
+
+E.Datacenter.4:
 
 > Pick a renewal energy from @sec:energy-renewable  and describe what
 > it is. Find data centers that use this energy form. Create a section
-> and contribute it to the datacenter.md file.
+> and contribute it to the datacenter.md file. As this is a group
+> assignment please work on at least one energy form.
 
-E.Energy.2:
+E.Datacenter.5:
 
 > Pick a country, state, or company from @sec:energy-society and
 > summarize their efforts towards renewable energy and impacts within
 > the society. Create a section and contribute it to the datacenter.md
 > file.
 
+E.Datacenter.6:
 
-
+> Write about cooling technologies in datacenter rack doors so it can
+> be contributed to  @sec:datacenter-doors.
