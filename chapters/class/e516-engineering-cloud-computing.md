@@ -2,7 +2,7 @@
 
 ---
 
-:boom: Students considering to take this calls in Spring 2019 are recommended to take a look at:
+:boom: Students considering to take this class are recommended to take a look at:
 
 * <https://github.com/cloudmesh-community/book/blob/master/syllabus/e516.pdf>
 
@@ -22,11 +22,7 @@ Sample chapters can be reached if you download teh PDF document locally and clic
 ---
 
 * Lecture Notes: <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub>
-<<<<<<< HEAD
 * Piazza: <https://piazza.com/iu/fall2019/516>
-=======
-* Piazza: <https://piazza.com/iu/spring2019/e516spring19/resources>
->>>>>>> 568a24ba9982101d5057321b34b52b5ca500c094
 * Indiana University
 * Spring 2019
 * Faculty: Dr. Gregor von Laszewski (laszewski@gmail.com)
