@@ -36,11 +36,10 @@ Assignees can change the summary to done. We will experiment with possibly addit
 | ---: | ---: | :-------------------- | :-------- | :-------- |
 | 38 | 266 | [Internal: Github video use ][i266] | tbalson | internal |
 | 47 | 254 | [Fingerprint matching][i254] | pulasthi | internal section |
-| 48 | 253 | [Ubuntu on an USB stick for Windows 10][i253] | None | internal section |
-| 60 | 239 | [Internal: New trends][i239] | pulasthi | assigned internal |
-| 65 | 227 | [internal: Virtual machine .md file is missing][i227] | tbalson | bug internal |
+| 60 | 239 | [Internal: New trends][i239] | None | assigned internal |
+| 65 | 227 | [internal: Virtual machine .md file is missing][i227] | None | bug internal |
 | 69 | 180 | [E534 Cloud Section lecture videos merged into E-books][i180] | None | assigned internal |
-| 70 | 173 | [internal: biber installation][i173] | bfeng | internal |
+| 70 | 173 | [internal: docker: biber installation][i173] | None | internal |
 | 74 | 144 | [internal: bigdata missing improvements][i144] | laszewsk | internal |
 | 76 | 126 | [bibtex: 523][i126] | None | internal |
 | 77 | 77 | [add mapreduce to syllabus][i77] | laszewsk | assigned internal |
@@ -67,6 +66,7 @@ Assignees can change the summary to done. We will experiment with possibly addit
 | 28 | 298 | [Pi: docker and grafana and influxdb][i298] | None | open section |
 | 40 | 261 | [Low Priority: Visual Studio for Cloud Computing (PyCharm is better)][i261] | None | e222 open section |
 | 43 | 258 | [Open: Apache Flink][i258] | None | chapter open section |
+| 48 | 253 | [Ubuntu on an USB stick for Windows 10][i253] | None | open section |
 | 49 | 252 | [Packer][i252] | None | open section |
 | 51 | 250 | [Fn Project][i250] | None | open section |
 | 52 | 249 | [IronFunctions][i249] | None | open section |
@@ -121,7 +121,7 @@ Assignees can change the summary to done. We will experiment with possibly addit
 | 32 | 286 | [Section: Data Services: AWS RedShift][i286] | joshish-iu | TA assigned section |
 | 34 | 275 | [Assigned: Amazon SageMaker][i275] | tvangalapat | TA assigned section |
 | 37 | 268 | [Chapter: Google Drive Python interface][i268] | g14uok | assigned chapter section |
-| 39 | 262 | [Open: Windows subsystems for Linux][i262] | zhengyili4321 | assigned section |
+| 39 | 262 | [Open: Windows subsystems for Linux][i262] | None | assigned section |
 | 50 | 251 | [OpenLambda][i251] | garbeandy | assigned section |
 | 55 | 246 | [OpenFaaS][i246] | mallik3006 | assigned section |
 | 57 | 244 | [Google IaaS Cloud Services][i244] | kelifine | assigned section |

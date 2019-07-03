@@ -156,7 +156,7 @@ ifeq ($(OS), linux)
 endif
 	make -f Makefile index
 	cd dest; pandoc $(RESOURCE) $(MARKDOWN-OPTIONS)  $(FORMAT) $(FONTS) $(BIB)  $(CSL) $(CSS) -o $(FILENAME).epub metadata.txt all.md
-	cp dest/$(FILENAME).epub ..
+	cp dest/$(FILENAME).epub ../docs
 
 
 pdf: epub
@@ -168,7 +168,7 @@ pdf: epub
 	cd dest/bookedit; zip -X all4pdfnew.epub mimetype; zip -rg all4pdfnew.epub META-INF -x \*.DS_Store; zip -rg all4pdfnew.epub EPUB -x \*.DS_Store
 	cp dest/bookedit/all4pdfnew.epub ./dest
 	cd dest; ebook-convert all4pdfnew.epub $(FILENAME).pdf --pdf-page-numbers --embed-all-fonts
-	cp dest/$(FILENAME).pdf ../$(FILENAME).pdf
+	cp dest/$(FILENAME).pdf ../docs
 
 epub-all: prepare
 ifeq ($(OS), osx)
@@ -224,7 +224,7 @@ endif
 	cd dest; pandoc all.md -o $(FILENAME).tex -V date="laszewski@gmail.com" --variable titlepage=true -V author="Gregor von Laszewski, Fugang Wang, Geoffrey C. Fox" -V title="Cloud Computing" -V fontsize=10pt --csl=template/ieee-with-url.csl --bibliography references.bib --filter pandoc-crossref --number-sections --standalone  --highlight-style tango --template template/eisvogel/eisvogel.latex
 	-cd dest; pdflatex --interaction nonstopmode  $(FILENAME).tex 
 	rm -f $(FILENAME).pdf 
-	cp dest/$(FILENAME).pdf .
+	cp dest/$(FILENAME).pdf ../docs
 
 
 

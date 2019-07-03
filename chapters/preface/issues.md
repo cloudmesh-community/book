@@ -40,7 +40,7 @@
 | 36 | 272 | [Chapter: Puppet][i272] | bfeng | TA assigned chapter |
 | 37 | 268 | [Chapter: Google Drive Python interface][i268] | g14uok | assigned chapter section |
 | 38 | 266 | [Internal: Github video use ][i266] | tbalson | internal |
-| 39 | 262 | [Open: Windows subsystems for Linux][i262] | zhengyili4321 | assigned section |
+| 39 | 262 | [Open: Windows subsystems for Linux][i262] | None | assigned section |
 | 40 | 261 | [Low Priority: Visual Studio for Cloud Computing (PyCharm is better)][i261] | None | e222 open section |
 | 41 | 260 | [Open: Cloud foundry][i260] | None | chapter open |
 | 42 | 259 | [Chapter: Box][i259] | kelifine | assigned chapter |
@@ -49,7 +49,7 @@
 | 45 | 256 | [Assigned: Chapter & Sections: Scala for cloud computing][i256] | hrbahramian | assigned chapter |
 | 46 | 255 | [Julia][i255] | keithhickman08 | TA assigned chapter |
 | 47 | 254 | [Fingerprint matching][i254] | pulasthi | internal section |
-| 48 | 253 | [Ubuntu on an USB stick for Windows 10][i253] | None | internal section |
+| 48 | 253 | [Ubuntu on an USB stick for Windows 10][i253] | None | open section |
 | 49 | 252 | [Packer][i252] | None | open section |
 | 50 | 251 | [OpenLambda][i251] | garbeandy | assigned section |
 | 51 | 250 | [Fn Project][i250] | None | open section |
@@ -61,17 +61,17 @@
 | 57 | 244 | [Google IaaS Cloud Services][i244] | kelifine | assigned section |
 | 58 | 243 | [Artificial intelligence service with REST][i243] | tbalson | assigned open section |
 | 59 | 242 | [Scikit-Learn][i242] | tbalson | assigned section |
-| 60 | 239 | [Internal: New trends][i239] | pulasthi | assigned internal |
+| 60 | 239 | [Internal: New trends][i239] | None | assigned internal |
 | 61 | 236 | [Open: EMR section(s)][i236] | bfeng | assigned chapter |
 | 62 | 234 | [Project: Virtual Cloud Directory][i234] | None | open project |
 | 63 | 233 | [Section: AWS DocumentDB][i233] | trawat87 | assigned section |
 | 64 | 232 | [Section: Port forwarding][i232] | ameet20 | open section |
-| 65 | 227 | [internal: Virtual machine .md file is missing][i227] | tbalson | bug internal |
+| 65 | 227 | [internal: Virtual machine .md file is missing][i227] | None | bug internal |
 | 66 | 223 | [Open: Section CircleCi][i223] | None | open section |
 | 67 | 189 | [Open: bibtex entries for FaaS Sections][i189] | bfeng | open |
 | 68 | 184 | [fix bibtex entries ][i184] | None | help wanted |
 | 69 | 180 | [E534 Cloud Section lecture videos merged into E-books][i180] | None | assigned internal |
-| 70 | 173 | [internal: biber installation][i173] | bfeng | internal |
+| 70 | 173 | [internal: docker: biber installation][i173] | None | internal |
 | 71 | 148 | [Open: IU GUEST, IU Secure & Raspberry Pi][i148] | bfeng | open |
 | 72 | 146 | [Open: ssh port forwarding section][i146] | pulasthi | open |
 | 73 | 145 | [Open: manage vm guests with virsh][i145] | pulasthi | open |
