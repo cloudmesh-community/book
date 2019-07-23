@@ -654,3 +654,182 @@ language that you can find out more about it at
 
 A dashboard gives convenient overviews of the issues including a *pulse*
 that lists todo's status if you use them in the issue description.
+
+## Glossary
+
+The Glossary is copied from 
+
+* https://cdcvs.fnal.gov/redmine/projects/cet-is-public/wiki/GitTipsAndTricks#A-suggested-work-flow-for-distributed-projects-NoSY
+
+Add
+: put a file (or particular changes thereto) into the index ready for a commit operation. Optional for modifications to tracked files; mandatory for hitherto un-tracked files.
+
+Branch
+: a divergent change tree (eg a patch branch) which can me merged either wholesale or piecemeal with the master tree.
+
+Commit
+: save the current state of the index and/or other specified files to the local repository.
+
+Commit object
+: an object which contains the information about a particular revision, such as parents, committer, author, date and the tree object which corresponds to the top directory of the stored revision.
+
+Fast-forward
+: an update operation consisting only of the application of a linear part of the change tree in sequence.
+
+Fetch
+: update your local repository database (not your working area) with the latest changes from a remote.
+
+HEAD
+: the latest state of the current branch.
+
+Index
+: a collection of files with stat information, whose contents are stored as objects. The index is a stored version of your working tree. Files may be staged to an index prior to committing.
+
+Master
+: the main branch: known as the trunk in other SCM systems.
+
+Merge
+: join two trees. A commit is made if this is not a fast-forward operations (or one is requested explicitly.
+
+Object
+: the unit of storage in git. It is uniquely identified by the SHA1 hash of its contents. Consequently, an object can not be changed.
+
+Origin
+: the default remote, usually the source for the clone operation that created the local repository.
+
+Pull
+: shorthand for a fetch followed by a merge (or rebase if --rebase option is used).
+
+Push
+: transfer the state of the current branch to a remote tracking branch. This must be a fast-forward operation (see merge).
+
+Rebase
+: a merge-like operation in which the change tree is rewritten (see Rebasing below). Used to turn non-trivial merges into fast-forward operations.
+
+Remote
+: another repository known to this one. If the local repository was created with "clone" then there is at least one remote, usually called, "origin."
+
+Stage
+: to add a file or selected changes therefrom to the index in preparation for a commit.
+
+Stash
+: a stack onto which the current set of uncommitted changes can be put (eg in order to switch to or synchronize with another branch) as a patch for retrieval later. Also the act of putting changes onto this stack.
+
+Tag
+: human-readable label for a particular state of the tree. Tags may be simple (in which case they are actually branches) or annotated (analogous to a CVS tag), with an associated SHA1 hash and message. Annotated tags are preferable in general.
+
+Tracking branch
+: a branch on a remote which is the default source / sink for pull / push operations respectively for the current branch. For instance, origin/master is the tracking branch for the local master in a local repository.
+
+Un-tracked
+: not known currently to git.
+
+## Example commands
+
+To work in your local directory you can use the following commands. 
+Please note that these commands do not upload your work to github, but 
+only introduce version control within your local files.
+
+The command list is copied from
+
+* https://cdcvs.fnal.gov/redmine/projects/cet-is-public/wiki/GitTipsAndTricks#A-suggested-work-flow-for-distributed-projects-NoSY
+
+### Local commands to version contril your files
+
+Obtain differences with
+
+    git status
+
+Move files from one part of your directory tree to another:
+
+    git mv <old-path> <new-path>
+
+Delete unwanted tracked files:
+
+    git rm <path>
+
+Add un-tracked files:
+
+    git add <un-tracked-file>
+
+Stage a modified file for commit:
+
+    git add <file>
+
+Commit currently-staged files:
+
+    git commit -m <log-message>
+
+Commit only specific files (regardless of what is staged):
+
+    git commit -m <log-message>
+
+Commit all modified files:
+
+    git commit -a -m <log-message>
+
+Un-stage a previously staged (but not yet committed) file:
+
+    git reset HEAD <file>
+
+Get differences with respect to the committed (or staged) version of a file:
+
+    git diff <file>
+
+Get differences between local file and committed version:
+
+    git diff --cached <file>
+
+Create (but do not switch to) a new local branch based on the current branch:
+
+    git branch <new-branch>
+
+Change to an existing local branch:
+
+    git checkout <branch>
+    
+Merge another branch into the current one:
+
+    git merge <branch>
+    
+### Interacting with the remote
+
+Get the current list of remotes (including URIs) with
+
+    git remote -v
+
+Get the current list of defined branches with
+
+    git branch -a
+
+Change to (creating if necessary) a local branch tracking an existing remote 
+branch of the same name:
+
+    git checkout <branch>
+
+Update your local repository ref database without altering the current working area:
+
+    git fetch <remote>
+
+Update your current local branch with respect to your repository's current 
+idea of a remote branch's status:
+
+    git merge <branch>
+
+Pull remote ref information from all remotes and merge local branches with their 
+remote tracking branches (if applicable):
+
+    git pull
+
+Examine changes to the current local branch with respect to its tracking branch:
+
+    git cherry -v
+
+Push changes to the remote tracking branch:
+
+    git push
+
+Push all changes to all tracking branches:
+
+    git push --all
+    
