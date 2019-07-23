@@ -738,98 +738,98 @@ The command list is copied from
 
 Obtain differences with
 
-    git status
+    $ git status
 
 Move files from one part of your directory tree to another:
 
-    git mv <old-path> <new-path>
+    $ git mv <old-path> <new-path>
 
 Delete unwanted tracked files:
 
-    git rm <path>
+    $ git rm <path>
 
 Add un-tracked files:
 
-    git add <un-tracked-file>
+    $ git add <un-tracked-file>
 
 Stage a modified file for commit:
 
-    git add <file>
+    $ git add <file>
 
 Commit currently-staged files:
 
-    git commit -m <log-message>
+    $ git commit -m <log-message>
 
 Commit only specific files (regardless of what is staged):
 
-    git commit -m <log-message>
+    $ git commit -m <log-message>
 
 Commit all modified files:
 
-    git commit -a -m <log-message>
+    $ git commit -a -m <log-message>
 
 Un-stage a previously staged (but not yet committed) file:
 
-    git reset HEAD <file>
+    $ git reset HEAD <file>
 
 Get differences with respect to the committed (or staged) version of a file:
 
-    git diff <file>
+    $ git diff <file>
 
 Get differences between local file and committed version:
 
-    git diff --cached <file>
+    $ git diff --cached <file>
 
 Create (but do not switch to) a new local branch based on the current branch:
 
-    git branch <new-branch>
+    $ git branch <new-branch>
 
 Change to an existing local branch:
 
-    git checkout <branch>
+    $ git checkout <branch>
     
 Merge another branch into the current one:
 
-    git merge <branch>
+    $ git merge <branch>
     
 ### Interacting with the remote
 
 Get the current list of remotes (including URIs) with
 
-    git remote -v
+    $ git remote -v
 
 Get the current list of defined branches with
 
-    git branch -a
+    $ git branch -a
 
 Change to (creating if necessary) a local branch tracking an existing remote 
 branch of the same name:
 
-    git checkout <branch>
+    $ git checkout <branch>
 
 Update your local repository ref database without altering the current working area:
 
-    git fetch <remote>
+    $ git fetch <remote>
 
 Update your current local branch with respect to your repository's current 
 idea of a remote branch's status:
 
-    git merge <branch>
+    $ git merge <branch>
 
 Pull remote ref information from all remotes and merge local branches with their 
 remote tracking branches (if applicable):
 
-    git pull
+    $ git pull
 
 Examine changes to the current local branch with respect to its tracking branch:
 
-    git cherry -v
+    $ git cherry -v
 
 Push changes to the remote tracking branch:
 
-    git push
+    $ git push
 
 Push all changes to all tracking branches:
 
-    git push --all
+    $ git push --all
     

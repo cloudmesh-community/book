@@ -1,6 +1,7 @@
 # Apache OpenWhisk {#s-openwhisk}
 
-:o: this section includes many refernces to other tools, that need bibtex refernces.
+:o: this section includes many refernces to other tools, that need
+bibtex refernces.
 
 Apache OpenWhisk is a Function as a Service (FaaS), aka Serverless
 computing, platform used to execute code in response of an events via
@@ -39,7 +40,9 @@ We will review the role of each components in the OpenWhisk workflow.
 
 ### The Action and Nginx
 
-As mentioned prior, the action is the response of the OpenWhisk to triggers. Consider the following JavaScript function:
+As mentioned prior, the action is the response of the OpenWhisk to
+triggers. Consider the following JavaScript function:
+
 ``` Javascript
 function main() {
     return { hello: 'world' };
@@ -53,7 +56,9 @@ then the action could be created using the following command:
 ```bash
 $ wsk action create HelloAction action.js
 ```
+
 Then, the `HelloAction` can be invoked using:
+
 ```bash
 $ wsk action invoke HelloAction --result
 ```
@@ -331,6 +336,7 @@ Available Commands:
   list        list entities in the current namespace
   api         work with APIs
 ```
+
 For instance, you can get the host address using:
 
 ```bash
@@ -372,10 +378,12 @@ function main(input) {
 }
 ```
 Now we can create an action called `greeter` using the `greeter.js`:
+
 ```bash
 $ wsk -i action create greeter greeter.js
 ok: created action greeter
 ```
+
 Note that the `-i` option is to prevent the following error:
 
 ```bash
