@@ -6,7 +6,7 @@
 }
 
 @Misc{www-julialang,
-   author={Bezanson, J., Edelman, A., Karpinski, S., Shah, V.},
+   author={Bezanson, J.; Edelman, A.; Karpinski, S.; Shah, V.},
    title={Julia},
    url={https://www.julialang.org},
    howpublished={Web Page},
@@ -48,19 +48,19 @@
 }	
 
 @Article{@parallel-computing-julia,
-   authors={Kulyabov, D. S., Gevorkyan, M. N., Korolkova, A. V., & Sevastianov, L. A.},
+   authors={Kulyabov, D. S.; Gevorkyan, M. N.; Korolkova, A. V.; Sevastianov, L. A.},
    title={Support for parallel computing in Julia language},
    howpublished={report}
 }
 
 @Article{www-universe-bayesian,
-   author={Regier, J., Lam, M., Fischer, K.,Pamnany, K., Noack, A., Revels, J., Prabhat},
+   author={Regier, J.; Lam, M.; Fischer, K.; Pamnany, K.; Noack, A.; Revels, J.; Prabhat},
    title={Cataloging the visible universe through Bayesian inference in Julia at petascale},
    url={https://doi-org.proxyiub.uits.iu.edu/10.1016/j.jpdc.2018.12.008}
 }
 
 @Article{fresh-approach,
-   author={Bezanson, J., Edelman, A., Karpinski, S., Shah, V.},
+   author={Bezanson, J.; Edelman, A.; Karpinski, S.; Shah, V.},
    title={Julia: A Fresh Approach to Numerical Computing},
    publication={SIAM Review},
    volume={59},
