@@ -11,6 +11,7 @@ update:
 	cd cloud; make update
 	cd 222; make update
 	cd draft; make update
+	cd 516; make update
 
 
 publish: cloud-epub-publish bigdata-epub-publish
