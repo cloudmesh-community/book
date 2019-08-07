@@ -17,7 +17,7 @@ Additional items we like to work on are listed here
 -   Git: integrate <https://git-scm.com/book/en/v2>
 
     -   [[PDF](https://github.com/progit/progit2/releases/download/2.1.61/progit.pdf)]
-        [[epub](https://github.com/progit/progit2/releases/download/2.1.61/progit.epub)]
+        [[ePub](https://github.com/progit/progit2/releases/download/2.1.61/progit.epub)]
         [[mobi](https://github.com/progit/progit2/releases/download/2.1.61/progit.mobi)]
 
 

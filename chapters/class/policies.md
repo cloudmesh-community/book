@@ -162,7 +162,7 @@ follow these rules:
 
 - use bullets in each topic.
 
-- Do not refer to section numbers form the epub in your notebook
+- Do not refer to section numbers form the ePub in your notebook
   as they can change. Instead use the section name or headline and
   possibly a URL. When using URLS in md format they must be enclosed in
   `<>` or `[text](URL)`
@@ -364,5 +364,5 @@ documented:
 
 E.Policy.1
 
-> Take the Plagiarism test, See the Scientific Writing I epub for more
+> Take the Plagiarism test, See the Scientific Writing I ePub for more
 > details.

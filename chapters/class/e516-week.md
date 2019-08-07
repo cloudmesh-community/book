@@ -19,7 +19,7 @@ In the first week we focus on the following activities:
 2. Understand that we have only 3 assignments. One of which is a
    significant project.
 
-3. Download the Lecture notes epub and install an epub reader to read
+3. Download the Lecture notes ePub and install an ePub reader to read
    the lecture notes. Although we have a PDF version, this version is
    pretty large and will only be updated once a week. See in piazza the
    resource section to locate them
@@ -393,10 +393,10 @@ Read the Spark section to understand how spark was developed to
 improve upon Apache Hadoop and how it achieves better performance for
 Iterative MapReduce applications
 
-MANDATORY: Read the Scientific Writing with markdown epub, this is
+MANDATORY: Read the Scientific Writing with markdown ePub, this is
 required before you make and contributions to the book to make sure
 that you understand the format of the book and the correct
-notations. The epub is available in
+notations. The ePub is available in
 [Scientific Writing](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true)
 
 MANDATORY Project Milestone: Review of your cloudmesh commandline

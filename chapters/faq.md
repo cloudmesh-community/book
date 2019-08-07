@@ -161,13 +161,13 @@ YAML validation in visual studio can be achieved also
 
 *  <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml>
 
-## Download the epub ferquently
+## Download the ePub ferquently
 
-Please be reminded that the epub is updated frequently and we
+Please be reminded that the ePub is updated frequently and we
 recommend that you download it before you read.
 
 
-I myself have integrated an epub reader in my Web browser so that
+I myself have integrated an ePub reader in my Web browser so that
 every time I click on the View Raw in github, I get the most up to
 date version.
 
@@ -194,13 +194,13 @@ please correct if needed. We will not grade any assignments if your
 README.yaml or notebook.md is misspelled or missing or is not
 following our simple format. 
 
-## How to open the epub from Github?
+## How to open the ePub from Github?
 
 If you see thw `View Raw`, you need to click on it. It will download the
 file. Than you can open that.
 
-However, If you use edge or integrated your epub viewer in your
-browser and clicking on it will automatically open your epub browser.
+However, If you use edge or integrated your ePub viewer in your
+browser and clicking on it will automatically open your ePub browser.
 
 
 ## Assignment Summary

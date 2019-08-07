@@ -353,7 +353,7 @@ tasked to do the following:
    create conflicts. Conflict resolution will be delegated to the team
    working on the technology.
 
-   The epub publication will be updated typically once a day. So
+   The ePub publication will be updated typically once a day. So
    please check if your change is as expected.
 
    The entire technology handbook can be found at
