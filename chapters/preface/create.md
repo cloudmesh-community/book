@@ -1,64 +1,20 @@
 # Creating the ePubs from source
 
-Although you will never likely to create the ePub from source, we have
-included this section for our most advanced contributors and those
-that update the ePub on github.
-
-Please note that you must have at least Pandoc version 2.5 Earlier
-versions of pandoc have bugs in them that prevent pandoc from workingg
-properly. You will also need Python version 3.7.3 to run the scripts
-needed to assamble the document. You can check the versions with
-
-```bash
-$ pandoc --version
-$ python --version
-```
+In case you wish to create the ePub from source, we have included this
+section.
 
 However the easiest way is to use our docker container as described in
 @sec:docker-create-book.
 
-## Ubuntu requirements
+## Docker {#sec:docker-create-book}
 
-We recommend that you use containers in ubuntu and use the
-instructions provided in @sec:docker-create-book.
+We recommend the docker creation method for 
 
-## Using Windows 10
+* Ubuntu
+* Windows 10
+* macOSX
 
-We recommend that you use vagrant or docker as described in
-@sec:book-create-vagrant and @sec:docker-create-book.
-
-## Using Vagrant {#sec:book-create-vagrant}
-
-In case you have installed vagrant on your computer which is available
-for macOS, Linux, and Windows 10, you can use our vagrant file to
-start up a virtual machine that has all software installed to create
-the ePub.
-
-
-First, you need to download the repository:
-
-```bash
-$ git clone https://github.com/cloudmesh-community/book.git
-$ cd book
-```
-
-Next you have to create the virtual machine with
-
-```bash
-$ vagrant up
-```
-
-You can loginto the VM with
-
-```bash
-$ vagrant ssh
-```
-
-The book folder will be mounted in the VM and you can can follow the
-instructions in @sec:docker-create-book.
-
-
-## Using OSX 
+### Using OSX 
 
 The easiest way to create a system that can compile the book on macOS,
 is to use a docker container. To do so you will need to first install
@@ -69,7 +25,7 @@ docker on macOS while following the simple instructions at
 Once you have docker installed, you can follow the instructions in
 @sec:docker-create-book.
 
-## Docker {#sec:docker-create-book}
+### Using the Docker Image
 
 In case you have docker installed on your computer you can create
 ePubs with our docker image. To create that image by hand, we have
@@ -106,7 +62,58 @@ In case you want to create or recreate the image from our
 $ make image
 ```
 
+## Using the native system
+
+In case you like to use your native environment (which is typically
+faster than the container) you need to make sure you have an up to date
+environment.
+
+Please note, that you must have at least Pandoc version 2.5 installed as
+earlier versions will not work. We recommend that you use Python version
+3.7.4 to run the scripts needed to assamble the document. However
+eralier version of Python 3 may also work, but are not tested. You can
+check the versions with
+
+```bash
+$ pandoc --version
+$ python --version
+```
+
+
+## Using Vagrant {#sec:book-create-vagrant}
+
+In case you have installed vagrant on your computer which is available
+for macOS, Linux, and Windows 10, you can use our vagrant file to
+start up a virtual machine that has all software installed to create
+the ePub.
+
+First, you need to download the repository:
+
+```bash
+$ git clone https://github.com/cloudmesh-community/book.git
+$ cd book
+```
+
+Next you have to create the virtual machine with
+
+```bash
+$ vagrant up
+```
+
+You can loginto the VM with
+
+```bash
+$ vagrant ssh
+```
+
+The book folder will be mounted in the VM and you can can follow the
+instructions in @sec:docker-create-book.
+
+
+
 ## Creating a book {#sec:create-book}
+
+Oncw you have decided for one of the methods, you can create a book.
 
 To create a book, you have to first check out the book source from
 github with if you have not yet done so (for example if you were to
@@ -124,9 +131,10 @@ following directories
     ./book/pi
     ./book/writing
     ./book/222
+    ./book/516
 
 To compile a book go to the directory and make it. Let us assume you
-like to create the cloud book for 516
+like to create the cloud book for cloud
 
 ```bash
 $ git clone https://github.com/cloudmesh-community/book.git
@@ -167,16 +175,15 @@ $ make view
 
 ## Publishing the book to github
 
-:warning: This task should only be done by with direct write
-privileges. and never be part of a pull request. Please discuss with
-*Gregor von Laszewski* the details of your update first. Typically
-*Gregor* is the one who publishes it.
+:warning: This task is only to be done by *Gregor von Laszewski*. You
+will not have to do this step.
 
 To publish the book say
 
 ```bash
 $ make publish
 ```
+
 
 ## Creating Drafts that are not yet published
 
@@ -206,7 +213,10 @@ Please note that all artifacts are written into the dest folder.
 
 ## Creating a new book
 
-Let us assume you like to create a new book. The easiest way to start is to copy from an existing book. However, make sure not to copy old files in dest. Let us assume you like to call the book gregor and you coppy from the 222 directory.
+Let us assume you like to create a new book. The easiest way to start is
+to copy from an existing book. However, make sure not to copy old files
+in dest. Let us assume you like to call the book gregor and you coppy
+from the 222 directory.
 
 You have to do the following
 
@@ -227,6 +237,26 @@ $ cd gregor
 $ make update
 $ make new
 ```
+
+## Managing Images
+
+In case you have added images to the book, they must be on the same
+level as your contribution, but in a directory called images. E.g.
+
+```
+./chapters/cloud/mydocument.md
+./chapters/cloud/images/myimage.md
+```
+
+In the document the image is than refered to as
+
+```
+![My imaage caption](images/myimage.md){#fig:cloud-myimage}
+```
+
+The label `#fig:cloud-myimage` must be unique in all of the documents.
+While adding the directory cloud before the image name this is the case
+in our example.
 
 
 
