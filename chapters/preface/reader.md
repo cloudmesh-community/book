@@ -1,22 +1,24 @@
-# epub Readers
+# ePub Readers
 
-This document is distributed in epub format. Every OS will have a
-suitable epub reader to view the document.  Such readers can even be
-integrated into the browser you use, and when you click on an epub
-publication in github it could pop up the document in your reader. The
-way we create the document is through scalable markup, that iss you
-can zoom in and out of a page while the content will be automatically
-rendered for the selected page size. If you ever see a content that
-does not fit on a page we recommend you zoom out with your reader to
-make sure you can see the entire content.
+This document is distributed in ePub format. Every OS has a suitable
+ePub reader to view the document.  Such readers can also be integrated
+into a Web browser so that when you click on an ePub it is automatically
+openedin your browser. As we use ePubs the document can be scaled based
+on the users prefernc If you ever see a content that does not fit on a
+page we recommend you zoom out to make sure you can see the entire
+content.
 
 We have made good experiences with the following readers:
 
-* macOSX: [Books](https://www.apple.com/apple-books), which is a build in ebook reader
-* Windows 10:
-  [Microsoft edge](https://www.microsoft.com/en-us/windows/microsoft-edge),
-  but it must be the newest version, alternatively use
-  [calibre](https://calibre-ebook.com/)
-* Linux: [calibre](https://calibre-ebook.com/)
 
+* **macOSX**: [Books](https://www.apple.com/apple-books), which is a build 
+  in ebook reader
+* **Windows 10**:
+  [Microsoft edge](https://www.microsoft.com/en-us/windows/microsoft-edge),
+  but it must be the newest version, as older versions have bugs. 
+  Alternatively use [calibre](https://calibre-ebook.com/)
+* **Linux**: [calibre](https://calibre-ebook.com/)
+
+If your have an iPad or Tablet with enough memory, you may also be able 
+to use them.
 

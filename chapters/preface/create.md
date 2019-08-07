@@ -1,8 +1,8 @@
 # Creating the ePubs from source
 
-Although you will never likely to create the epub from source, we have
+Although you will never likely to create the ePub from source, we have
 included this section for our most advanced contributors and those
-that update the epub on github.
+that update the ePub on github.
 
 Please note that you must have at least Pandoc version 2.5 Earlier
 versions of pandoc have bugs in them that prevent pandoc from workingg
@@ -32,7 +32,7 @@ We recommend that you use vagrant or docker as described in
 In case you have installed vagrant on your computer which is available
 for macOS, Linux, and Windows 10, you can use our vagrant file to
 start up a virtual machine that has all software installed to create
-the epub.
+the ePub.
 
 
 First, you need to download the repository:
@@ -72,7 +72,7 @@ Once you have docker installed, you can follow the instructions in
 ## Docker {#sec:docker-create-book}
 
 In case you have docker installed on your computer you can create
-epubs with our docker image. To create that image by hand, we have
+ePubs with our docker image. To create that image by hand, we have
 included a simple makefile. Alternatively you can use our image from
 dockerhub if you like, it is based on ubuntu and uses our
 [Dockerfile](https://github.com/cloudmesh-community/book/blob/master/Dockerfile).

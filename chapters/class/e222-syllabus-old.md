@@ -115,7 +115,7 @@ com/cloudmesh/sp17-i524/blob/master/paper1/proceedings.pdf
 * <https://github.com/cloudmesh/sp17-i524/blob/master/project/projects.pdf>
 9. Gregor von Laszewski, Geoffrey C. Fox, Cloud COmputing and Big Data  <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
 
-:o: add new epubs here from cloudmesh community
+:o: add new ePubs here from cloudmesh community
 
 ## EVERYTHING FROM HERE ON TO BE REPLACED.
 

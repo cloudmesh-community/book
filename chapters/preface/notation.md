@@ -88,7 +88,7 @@ Other emojis
 
 ## Figures
 
-Figures have a caption and can be refereed to in the epub simple with a number. We show such a refernce 
+Figures have a caption and can be refereed to in the ePub simple with a number. We show such a refernce 
 pointer while refering to @fig:code-example. 
 
 ![Figure example](images/code.png){#fig:code-example width=1in}

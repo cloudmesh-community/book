@@ -185,7 +185,7 @@ Pandoc is a tool to convert file formats between each other. According
 tho the Web page Pandoc can convert "Markdown, reStructuredText,
 textile, HTML, DocBook, LaTeX, MediaWiki markup, TWiki markup,
 TikiWiki markup, Creole 1.0, Vimwiki markup, OPML, Emacs Org-Mode,
-Emacs Muse, txt2tags, Microsoft Word docx, LibreOffice ODT, EPUB, or
+Emacs Muse, txt2tags, Microsoft Word docx, LibreOffice ODT, ePub, or
 Haddock markup".
 
 The Web page is located at.
@@ -306,7 +306,7 @@ papers. So we recommend that if you use the tool to also inspect the
 file by hand.
 
 Markdown is such a simple format that you should not have any
-issue. We recommend that you do a local checkout of the epub and
+issue. We recommend that you do a local checkout of the ePub and
 compile it and look at your section contribution.  To work on a single
 file you can just use markdown editors.
 
@@ -440,7 +440,7 @@ Google [@www-google].
 ### Markdown and bibtex
 
 As you know we do not use LaTeX for this class but simply
-markdown. you can use pandoc to create your epubs locally if you wish
+markdown. you can use pandoc to create your ePubs locally if you wish
 while following the paradox manual.
 
 However, it is much simpler than that, as we create the proceedings
@@ -448,7 +448,7 @@ with all your markdown papers for you once a week, so you can check
 it. OFten we create it multiple times a day.
 
 So you do not have to do much than once in a while looking at the
-epubs.
+ePubs.
 
 
 
@@ -520,7 +520,7 @@ report.bib
 images/test.png
 ```
 
-You can easily generate for example a ePuB, PDF, or html output with 
+You can easily generate for example a ePub, PDF, or html output with 
 Make sure to also install pandoc-crossref
 
 ```bash

@@ -1,3 +1,0 @@
-# Instalation :o:
-
-TBD

@@ -36,7 +36,7 @@ integrated documentation from a markup language.
 
 Advantages:
 
--   output formats: html, LaTeX, PDF, epub
+-   output formats: html, LaTeX, PDF, ePub
 -   integrates well with directory structure
 -   powerful markup language (reStructuredText)
 -   can be hosted on github via github pages

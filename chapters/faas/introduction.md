@@ -40,7 +40,7 @@ logic can now live within these functions.
 * IBM Cloud Functions <https://console.bluemix.net/openwhisk/>
 * Google Cloud Functions <https://cloud.google.com/functions/>
 * Iron.io <https://www.iron.io/>
-* Webtask.io https://webtask.io/>
+* Webtask.io <https://webtask.io/>
 
 Other than the providers there are also several open source FaaS
 offerings that are available to be used. One of the most complete and

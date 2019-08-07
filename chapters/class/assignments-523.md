@@ -270,4 +270,4 @@ Group requirements 2-page Technology or Review paper:
 
 Group requirements project paper:
 
-: The requirements are clearly stated in another section of the epub.
+: The requirements are clearly stated in another section of the ePub.
