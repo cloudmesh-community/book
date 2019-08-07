@@ -1,8 +1,9 @@
 # Notation {#sec:notation}
 
-The material here uses the following notation. If you like to see the details
-on how to create them, you will have to look at the file source while clicking
-on the cloud in the heading of the Notation section (@sec:notation).
+The material here uses the following notation. If you like to see the
+details on how to create them in the markdown documents, you will have
+to look at the file source while clicking on the cloud in the heading of
+the Notation section (@sec:notation).
 
 :cloud: `:cloud:`
 
@@ -83,7 +84,11 @@ $
 
 Other emojis
 
-> Other emojis can be found at <https://gist.github.com/rxaviers/7360908>
+> Other emojis can be found at
+<https://gist.github.com/rxaviers/7360908>. HOwever, note that emojis
+may not be vieweble in other formats or on all platforms. We know that
+some emojis do not show in calibre, but they do show in macOS iBooks and
+MS Edge
 
 
 ## Figures
@@ -120,7 +125,7 @@ refernce for example in sections headers. Let us discuss the
 refernce header for this section, e.g. Notation. We have augmented
 the section header as follows:
 
-```# Notation {#sec:notation}```
+```#Notation {#sec:notation}```
 
 Now we can use the refernce in the text as follows:
 

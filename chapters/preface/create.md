@@ -62,7 +62,7 @@ In case you want to create or recreate the image from our
 $ make image
 ```
 
-## Using the native system
+## Using the Native System
 
 In case you like to use your native environment (which is typically
 faster than the container) you need to make sure you have an up to date
@@ -111,7 +111,7 @@ instructions in @sec:docker-create-book.
 
 
 
-## Creating a book {#sec:create-book}
+## Creating a Book {#sec:create-book}
 
 Oncw you have decided for one of the methods, you can create a book.
 
@@ -173,7 +173,7 @@ $ make
 $ make view
 ```
 
-## Publishing the book to github
+## Publishing the Book to GitHub
 
 :warning: This task is only to be done by *Gregor von Laszewski*. You
 will not have to do this step.
@@ -185,7 +185,7 @@ $ make publish
 ```
 
 
-## Creating Drafts that are not yet published
+## Creating Unpublished Drafts
 
 Developers of the manual can modify the `Makefile` and locate the
 variable `DRAFT=` to add additional sections and chapters they work
@@ -211,7 +211,7 @@ This allows you to typ `m` for the main volume and `q` for the draft.
 Please note that all artifacts are written into the dest folder.
 
 
-## Creating a new book
+## Creating a New Book
 
 Let us assume you like to create a new book. The easiest way to start is
 to copy from an existing book. However, make sure not to copy old files
