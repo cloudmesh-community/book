@@ -21,7 +21,9 @@
         - chapters/preface/create.md
         - chapters/preface/notation.md
         - chapters/preface/updates.md
-        - chapters/class/e516-week.md
+
+- SYLLABUS:
+    - chapters/class/e516-week.md
 
 - DEVTOOLS:
     - chapters/SECTION/SECTION-DEVTOOLS.md:
@@ -338,6 +340,8 @@
     - $ref:PREFACE
     - chapters/SECTION/SECTION-ISSUES.md:
         - chapters/issues/issues.md
+    - chapters/SECTION/SECTION-WEEKLY.md:
+        - chapters/class/e516-week.md
     - chapters/SECTION/SECTION-QUICK516.md:
         - chapters/quick516.md
         - chapters/assignment.md
@@ -536,14 +540,33 @@
     - chapters/SECTION/SECTION-REFERENCES.md
 
 - BOOK_engineering:
-    - $ref:PREFACE
-    - chapters/SECTION/SECTION-ISSUES.md:
-        - chapters/issues/issues.md
-    - chapters/SECTION/SECTION-QUICK516.md:
-        - chapters/quick516.md
-        - chapters/assignment.md
-        - chapters/class/e516-syllabus-table.md
+    - chapters/SECTION/SECTION-SYLLABUS.md:
+        - chapters/version.md
+        - chapters/class/516/syllabus-2019.md
+    - chapters/SECTION/SECTION-516-OVERVIEW.md:
+        - chapters/class/516/overview.md
+    - chapters/SECTION/SECTION-PREFACE.md:
+        - chapters/preface/reader.md
+        - chapters/preface/corrections.md
+        - chapters/authors.md
+        - chapters/preface/create.md
+        - chapters/preface/notation.md
+        - chapters/preface/updates.md
+    - chapters/SECTION/SECTION-516-DETAILS.md:
+        - chapters/class/516/week1-intro.md
+        - chapters/class/516/week2-center.md
+        - chapters/class/516/week4-arch.md
+        - chapters/class/516/week5-virt-1.md
+        - chapters/class/516/week6-virt-2.md
+        - chapters/class/516/week7-multi.md
+        - chapters/class/516/week8-midterm.md
+        - chapters/class/516/week9-container.md
+        - chapters/class/516/week10-mapreduce.md
+        - chapters/class/516/week11-msg.md
+        - chapters/class/516/week12-REST.md
+        - chapters/class/516/week13-GO.md
     - chapters/SECTION/SECTION-OVERVIEW.md:
+        - chapters/class/e516-syllabus-table.md
         - chapters/class/organization-516.md
         - chapters/class/plagiarism.md
         - chapters/cloud/gregor.md
@@ -553,4 +576,6 @@
         - chapters/class/volumes.md
     - chapters/SECTION/SECTION-INDEX.md:
         - chapters/index.md
+    - chapters/SECTION/SECTION-ISSUES.md:
+        - chapters/issues/issues.md
     - chapters/SECTION/SECTION-REFERENCES.md
