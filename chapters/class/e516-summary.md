@@ -224,8 +224,10 @@ for more details.
 
 * Julia for Cloud Computing
 
-  * ![Warning](images/warning.png) We may not have time to cover this topic. However this could be chosen
-by a student as Chapter and section contribution.
+  * > ![Warning](images/warning.png) *We may not have time to cover this topic.*
+    
+    However this could be chosen
+    by a student as Chapter and section contribution.
 
   * Language motivation
   * DocOpts with Julia
@@ -330,10 +332,10 @@ Projects
     OpenAPI REST service.
 
 
-![Warning](images/warning.png) Sections, chapters, and especially Projects are multi-week
-projects. Do not be tempted to think that other classes are more
-important and start with your assignments the week before the
-deadline. 
+> ![Warning](images/warning.png) *Sections, chapters, and especially Projects are multi-week
+> projects. Do not be tempted to think that other classes are more
+> important and start with your assignments the week before the
+> deadline.*
 
 
 ## Scientific Writing

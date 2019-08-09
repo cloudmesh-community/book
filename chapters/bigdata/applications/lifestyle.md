@@ -86,10 +86,10 @@ particular we discuss an Irvine class project involving ranking jokes.
 
 [![Video](images/video.png) Kaggle Competitions: (3:36)](https://youtu.be/DFH7GPrbsJA)
 
-![Warning](images/warning.png) Please not that we typically do not accept any projects
-using kaggle data for this classes. This class is not about winning a
-kaggle competition and if done wrong it does not fullfill the minimum
-requiremnt for this class. Please consult with the instructor.
+> ![Warning](images/warning.png) *Please not that we typically do not accept any projects
+> using kaggle data for this classes. This class is not about winning a
+> kaggle competition and if done wrong it does not fullfill the minimum
+> requiremnt for this class. Please consult with the instructor.*
 
 ### Examples of Recommender Systems
 

@@ -32,9 +32,9 @@ from your laptop. For more information please also consult with the
 
 ---
 
-![Warning](images/warning.png) Whatever others tell you, the private key should never be
-copied to another machine. You almost always want to have a passphrase
-protecting your key.
+> ![Warning](images/warning.png) Whatever others tell you, the private key should never be
+> copied to another machine. You almost always want to have a passphrase
+> protecting your key.
 
 ---
 
@@ -96,7 +96,7 @@ passwordless keys, but such systems need to be properly protected.
 
 ---
 
-![Warning](images/warning.png) *Not using passphrases poses a security risk!*
+> ![Warning](images/warning.png) *Not using passphrases poses a security risk!*
 
 ---
 
@@ -147,7 +147,7 @@ must not share or copy to another computer.
 
 ---
 
-![Warning](images/warning.png) *Never, copy your private key to another machine or check it into a repository!*
+> ![Warning](images/warning.png) *Never, copy your private key to another machine or check it into a repository!*
 
 ---
 
@@ -311,8 +311,8 @@ section.
 
 ### SSH on Windows ![No](images/no.png) ![Question](images/question.png)
 
-![Warning](images/warning.png) This section is outdated and should be replaced with
-information from SSH in powershell and the new ubuntu running in windows
+> ![Warning](images/warning.png) *This section is outdated and should be replaced with
+> information from SSH in powershell and the new ubuntu running in windows.*
 
 * <https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/>
 
@@ -394,7 +394,7 @@ command that we described earlier.
 
 ## SSH Port Forwarding ![No](images/no.png) ![Question](images/question.png)
 
-![Warning](images/warning.png) this section has not been vetted yet
+> ![Warning](images/warning.png) *this section has not been vetted yet*
 
 TODO: Add images to illustrate the concepts
 

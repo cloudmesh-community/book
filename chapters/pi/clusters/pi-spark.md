@@ -50,10 +50,10 @@ files installed:
 
 **Hostnames**:
 
-: ![Warning](images/warning.png) this can b automatically done and needs to be documented
-  in the Pi NOW section. THe way we do this is set up key authentication
-  foirts and than use scp or better cloudmesh to copy it. We need to describe that provess
-  in more detail in the NOW section.
+: > ![Warning](images/warning.png) *this can b automatically done and needs to be documented
+  > in the Pi NOW section. THe way we do this is set up key authentication
+  > foirts and than use scp or better cloudmesh to copy it. We need to describe that provess
+  >in more detail in the NOW section.*
 
   IN our example we assume we use 3 hosts. The hosts will be added to
   the file `/etc/hosts`. Please use IP numbers for your network
@@ -72,9 +72,9 @@ version 2.3.2).
 
 ---
 
-![Warning](images/warning.png) *if a newer version is available, your task will be to use the
-newer version and create a new updated set of instructions. At this
-time the newest version is 2.3.2. Please double check.*
+> ![Warning](images/warning.png) *if a newer version is available, your task will be to use the
+> newer version and create a new updated set of instructions. At this
+> time the newest version is 2.3.2. Please double check.*
 
 ---
 
@@ -166,8 +166,10 @@ You can run the following command on the master to stop the cluster.
 $SPARK_HOME/sbin/stop-all.sh 
 ```
 
-![No](images/no.png) ![Warning](images/warning.png) see also the file `pi-spark-orig.md` as it still contains
-useful information such as the output when running pi spark
+![No](images/no.png) 
+
+> ![Warning](images/warning.png) *see also the file `pi-spark-orig.md` as it still contains
+> useful information such as the output when running pi spark.*
 
 ## Towards a cm4 command for pi-spar instalation
 

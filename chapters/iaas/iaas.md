@@ -7,7 +7,9 @@
 * Review IaaS servise by prominent cloud providers.
 * Understand how to write Python programs on managing virtual machines with libcloud.
 * Understand how to write Python programs on managing data services with libcloud.
-* Experiment with cloud providers while practially testing them. ![Warning](images/warning.png) be careful with your allocation
+* Experiment with cloud providers while practially testing them. 
+
+> ![Warning](images/warning.png) *Be careful with your allocation.*
 
 ---
 

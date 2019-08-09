@@ -79,12 +79,12 @@ Examples, and Chapters, or excelent Project reports and code.
   program. Examples augment chapters and Sections.
 
 
-![](../images/warning.png){height=12pt} It is expected from you that you self identify a section
-or a chapter as this shows competence in the area of cloud
-computing. If however you do not know what to select, you must attend
-an online hour with us in which we identify sections and chapters with
-you. The emphasize here is that we do not decide them for you, but we
-identify them with you.
+> ![](../images/warning.png) *It is expected from you that you self identify a section
+> or a chapter as this shows competence in the area of cloud
+> computing. If however you do not know what to select, you must attend
+> an online hour with us in which we identify sections and chapters with
+> you. The emphasize here is that we do not decide them for you, but we
+> identify them with you.*
 
 Sample Topics that could form a section or chapter are clearly marked
 with a ![Question](images/question.png). There are plenty in the handbook, but you are

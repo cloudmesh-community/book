@@ -132,10 +132,12 @@ Dilinger
 
 Markdown plus
 
-: ![Warning](images/warning.png) We are not using the many extensions that are provided by
-  markdown plus.  We recommend that you use emacs or PyCharm. However,
+: > ![Warning](images/warning.png) *We are not using the many extensions that are provided by
+  > markdown plus.*  
+  
+  We recommend that you use emacs or PyCharm. However,
   those that want to do advanced markdown outside the class may
-  benefit from markdown plus.  Markdown plus ahs lots of extensions.
+  benefit from markdown plus.  Markdown plus has lots of extensions.
   It is located at <https://mdp.tylingsoft.com/>. The source code is
   on github <https://github.com/tylingsoft/markdown-plus>. A local
   install can be achieved as follows:
@@ -389,8 +391,8 @@ When doing bash, we also like to try
 Note that in order to indicate a new line in bash we use the `$` sign
 as prefix which indicates the prompt sign.
 
-> ![Warning](images/warning.png) Please note that there must be an empty line before and
-> after the code block
+> ![Warning](images/warning.png) *Please note that there must be an empty line before and
+> after the code block.*
 
 
 ### Citations in markdown

@@ -489,8 +489,12 @@ $ sudo dhclient -r wlan0; sleep 10; sudo dhclient wlan0
 IU runs several different networks. This includes IUSecure, Eduroam,
 and ATT Wifi.  The first two would require you to use your IU username
 and password to be entered in the configuration. Although technically
-possible we find the method ![Warning](images/warning.png) **HIGHLY** insecure and
-![Warning](images/warning.png) **STRONGLY** advice against doing so. Let us assume you put
+possible we find the method 
+
+* ![Warning](images/warning.png) **HIGHLY** insecure and
+* ![Warning](images/warning.png) **STRONGLY** advice against doing so. 
+
+Let us assume you put
 your information on a PI and than someone takes the SD Card from
 it. They can than look into the card and steal your
 password. Obviously this is not advisable. In other cases you may have
@@ -498,7 +502,11 @@ configured your software wrong and someone could login remotely and
 lift your password remotely. Obviously this is not advisable.
 
 Regardless, we have seen from instructors the advice to use
-IUSecure. This is ![Warning](images/warning.png) **WRONG**! Do not listen to them about
+IUSecure. 
+
+> *This is* ![Warning](images/warning.png) **WRONG**! 
+
+Do not listen to them about
 this particular issue and advise them to use an alternative setup.
 
 One such alternative (which is also not ideal) is to use the free wifi

@@ -478,9 +478,9 @@ To install cloudmesh cmd5 please use:
 
 ### Anaconda
 
-![](images/warning.png){height=12pt} This section about anaconda is experimental and has not
-been tested. We are looking for contributors that help completing
-it.
+> ![](images/warning.png){height=12pt} This section about anaconda is experimental and has not
+> been tested. We are looking for contributors that help completing
+> it.
 
 You can add anaconda to your pyenv with the following commands:
 

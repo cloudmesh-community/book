@@ -24,9 +24,9 @@ generated unique name.
 
 ---
 
-![Warning](images/warning.png) This has only been tested on an Ubuntu VM. Both the .img file
-and the mount point need to be on Ubuntu VM drives. The mount will fail
-on a Mac shared drive.
+> ![Warning](images/warning.png) *This has only been tested on an Ubuntu VM. Both the .img file
+> and the mount point need to be on Ubuntu VM drives. The mount will fail
+> on a Mac shared drive.*
 
 ---
 
@@ -64,7 +64,7 @@ to remove the `mountpoint` directory and move the
 
 ---
 
-![Warning](images/warning.png) This is just an idea and has not been implemented
+> ![Warning](images/warning.png) *This is just an idea and has not been implemented.*
 
 ---
 

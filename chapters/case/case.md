@@ -142,7 +142,7 @@ can replicate these steps next time.
 1. Turn the laser cutter on: Use key to turn on the laser cutter.
 2. Turn the exhaust fan on: The fan is a separately switched
    unit. Turn on the switch on the wall next to the laser
-   cutter. ![Warning](images/warning.png) It to turn on the exhaust in order to have proper
+   cutter to turn on the exhaust in order to have proper
    ventilation during the cutting process.
 3. Put the cutting material onto the laser cutterbed. The instructor
    puts the cutting material onto the laser cutter bed. In case the

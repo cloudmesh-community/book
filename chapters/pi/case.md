@@ -279,7 +279,7 @@ well as tear them down.
 Next you will need to make sure you can communicate from the Pi's to each
 other. This is naturally the same as on a real cluster
 
-![Warning](images/warning.png) TODO: provide a section
+> ![Warning](images/warning.png) *TODO: provide a section*
 
 This can be chosen as part of your project, but you need to develop a
 cloudmesh command for managing the cluster. This includes starting and

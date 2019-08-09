@@ -91,15 +91,15 @@ tests and exams. They showcase your understanding of the field.
    * [GraphQL](#s-graphql).
 
 
-![Warning](images/warning.png) It is expected from you that you self identify a section
-or a chapter as this shows competence in the area of cloud
-computing. If however you do not know what to select, you must attend
-an online hour with us in which we identify sections and chapters with
-you. The emphasis here is that we do not decide them for you, but we
-identify them **with** you. Technologies that are not repeatable due
-to enormous cost or licensing issues need to get prior
-approval. Naturally, the technology you write about needs to be related
-to cloud computing.
+> ![Warning](images/warning.png) *It is expected from you that you self identify a section
+> or a chapter as this shows competence in the area of cloud
+> computing. If however you do not know what to select, you must attend
+> an online hour with us in which we identify sections and chapters with
+> you. The emphasis here is that we do not decide them for you, but we
+> identify them **with** you. Technologies that are not repeatable due
+> to enormous cost or licensing issues need to get prior
+> approval. Naturally, the technology you write about needs to be related
+> to cloud computing.*
 
 Sample Topics that could form a section or chapter are clearly marked
 with a ![Question](images/question.png) or a ![No](images/no.png). and are integrated in the github
