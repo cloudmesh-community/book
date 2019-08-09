@@ -435,7 +435,7 @@ successfully, and the actual data.
 
 ##  REST API Using a Client Application
 
-:o: This example is not tested. Please provide feedback and improve.
+![No](images/no.png) This example is not tested. Please provide feedback and improve.
 
 In the Section [Rest Services with Eve](#rest-services-with-eve) we
 created our own REST API application using Python Eve. Now once the
@@ -521,9 +521,9 @@ these information into an string then populate a class called Computer
 and try to save the object like wise.
 
 
-## Towards cmd5 extensions to manage eve and mongo :o:
+## Towards cmd5 extensions to manage eve and mongo ![No](images/no.png)
 
-:warning: part of this section related to management of the mongo db
+![Warning](images/warning.png) part of this section related to management of the mongo db
 serviceis done by the cm4 command we will be developping as part of
 this class `cms mongo admin` that does all of the things explained
 next and more.

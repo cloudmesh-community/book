@@ -1,4 +1,4 @@
-# Sensors :smiley: fa18-523-84
+# Sensors ![Smiley](images/smile.png) fa18-523-84
 
 
 This section contains the wiring diagrams and associated classes for sensors that can be used with the Raspberry Pi.  In addition to the individual sensors an example project is also included.  Before getting started with sensors for the Raspberry Pi you will need to ensure that the Pi is set up with python3 and has the latest version of Raspbian installed.  Instructions for setting up the Raspberry Pi can be found [here.](https://github.com/cloudmesh-community/book/blob/master/chapters/iot/pi.md)  
@@ -86,7 +86,7 @@ Once everything is correctly wired up the LCD class can be used to print text to
 
 [LCD Class](https://github.com/cloudmesh-community/fa18-523-84/blob/master/paper/code/LCD.py)
 
-Compass :o:
+Compass ![No](images/no.png)
 -----------
 
 TODO: which compass sensor

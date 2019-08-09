@@ -15,7 +15,7 @@ this method is available at this
 We have copied some of the information from this Web page but made
 enhancements to it. Currently all images are copied form that Web page.
 
-:warning: Pleas test it out and improve if it does not work
+![Warning](images/warning.png) Pleas test it out and improve if it does not work
 
 Our goal is to create a USB stick that has either Ubuntu 18.04 LTS
 that can be downloaded from this
@@ -248,7 +248,7 @@ After the write process has completed, macOS may inform you that \*The
 disk you inserted was not readable by this computer\*. Do not select
 Initialise. Instead, select Eject and remove the USB device.
 
-## Ubuntu on an USB stick for Windows 10 :o: :question:
+## Ubuntu on an USB stick for Windows 10 ![No](images/no.png) ![Question](images/question.png)
 
 See exercise Development.Server.1
 

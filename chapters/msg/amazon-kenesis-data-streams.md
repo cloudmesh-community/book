@@ -1,4 +1,4 @@
-# Amazon Kinesis Data streams :hand:
+# Amazon Kinesis Data streams ![Construction](images/construction.png)
 
 Comment: This section needs to be improved
 

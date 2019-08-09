@@ -1,7 +1,7 @@
 
 ## 19.3.1 External programs
 
-:o: most ref labels are ambiguous
+![No](images/no.png) most ref labels are ambiguous
 
 Several implementations provide the ability to access Julia through external
 programs such as Python, C, and Java, and vice versa.

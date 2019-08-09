@@ -6,18 +6,18 @@ Google Components
 
 [![Video](images/video.png) Components (7:02)](https://www.youtube.com/watch?v=IWMcv7HbbPM)
 
-[:scroll: Google Components (1)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
+[![Presentation](images/presentation.png) Google Components (1)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
 
-[:scroll: Google Components - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M)
+[![Presentation](images/presentation.png) Google Components - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M)
 
 Google Architecture
 -------------------
 
 [![Video](images/video.png) Google Architecture (8:40)](https://www.youtube.com/watch?v=syZHezdbdRY)
 
-[:scroll: Google Architecture (6)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
+[![Presentation](images/presentation.png) Google Architecture (6)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
 
-[:scroll: Google Architecture - pptx (6)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M)
+[![Presentation](images/presentation.png) Google Architecture - pptx (6)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M)
 
 Google History
 --------------
@@ -30,7 +30,7 @@ Google Search Engine 2: <https://www.youtube.com/watch?v=pxos3Yt6y6I>
 
 [![Video](images/video.png) Google History (10:36)](https://www.youtube.com/watch?v=Kg0NK0XUkHw)
 
-[:scroll: Google History (14)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
+[![Presentation](images/presentation.png) Google History (14)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
 
-[:scroll: Google History - pptx (14)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M)
+[![Presentation](images/presentation.png) Google History - pptx (14)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M)
 

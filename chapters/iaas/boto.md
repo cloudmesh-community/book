@@ -1,4 +1,4 @@
-# AWS Boto :hand:
+# AWS Boto ![Construction](images/construction.png)
 
 
 Boto is a software development kit (SDK) that provides AWS interface for Python applications. It enables to write applications in Python that make use of Amazon Web Services.
@@ -80,7 +80,7 @@ Similar to libcloud, BOTO also requires the region where you would create your E
 
 ## Boto configuration with cloudmesh
 
-:o: please also document here how to use the cloudmesh4.yaml file
+![No](images/no.png) please also document here how to use the cloudmesh4.yaml file
 
 ## EC2 interface of Boto
 
@@ -98,7 +98,7 @@ account is created, aws access key and secret key. AWS provides access key and
 secret key when a new user is created. Access key and secret key helps to
 identify the user.
 
-:o: TODO use the cloudmesh config file here
+![No](images/no.png) TODO use the cloudmesh config file here
 
 ```python
 connection = boto3.ec2.connect_to_region(

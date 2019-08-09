@@ -58,7 +58,7 @@ only your chameleon account name and potentially your organizational
 e-mail, Firstname, and Lastname so they can check you are eligible to
 get access.
 
-:warning: Indiana University students that take the e516 and e616
+![Warning](images/warning.png) Indiana University students that take the e516 and e616
 classes will have to fill out a google form in which they communicate
 the chameleon cloud name. You can already apply for an account name,
 but do not apply for a project. If you nevertheless apply for a

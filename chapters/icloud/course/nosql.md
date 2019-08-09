@@ -6,9 +6,9 @@ RDBMS vs. NoSQL
 
 [![Video](images/video.png) RDBMS vs. NoSQL (9:22)](https://www.youtube.com/watch?v=dJunqER9lb8)
 
-[:scroll: RDBMS vs. NoSQL (1)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
+[![Presentation](images/presentation.png) RDBMS vs. NoSQL (1)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
-[:scroll: RDBMS vs. NoSQL - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
+[![Presentation](images/presentation.png) RDBMS vs. NoSQL - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
 
 NoSQL Characteristics
 ---------------------
@@ -26,9 +26,9 @@ source and fault tolerant.
 
 [![Video](images/video.png) NoSQL Characteristics (10:31)](https://www.youtube.com/watch?v=BjtTDiKhqk8)
 
-[:scroll: NoSQL Characteristics (11)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
+[![Presentation](images/presentation.png) NoSQL Characteristics (11)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
-[:scroll: NoSQL Characteristics - pptx (11)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
+[![Presentation](images/presentation.png) NoSQL Characteristics - pptx (11)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
 
 BigTable
 --------
@@ -42,9 +42,9 @@ Google like their search engine and Google Earth.
 
 [![Video](images/video.png) BigTable (6:55)](https://www.youtube.com/watch?v=JAlz9AI5I-M)
 
-[:scroll: BigTable (28)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
+[![Presentation](images/presentation.png) BigTable (28)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
-[:scroll: BigTable - pptx (28)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
+[![Presentation](images/presentation.png) BigTable - pptx (28)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
 
 
 HBase
@@ -59,9 +59,9 @@ architecture of HDFS is shown in a diagram.
 
 [![Video](images/video.png) HBase (7:37)](https://www.youtube.com/watch?v=i-ibhuVs-ck)
 
-[:scroll: HBase (44)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
+[![Presentation](images/presentation.png) HBase (44)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
-[:scroll: HBase - pptx (44)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
+[![Presentation](images/presentation.png) HBase - pptx (44)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
 
 HBase Coding
 ------------
@@ -71,9 +71,9 @@ HBase and connecting to it.
 
 [![Video](images/video.png) HBase Coding (4:30)](https://www.youtube.com/watch?v=KbFMpYRBTtU)
 
-[:scroll: HBase Coding (60)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
+[![Presentation](images/presentation.png) HBase Coding (60)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
-[:scroll: HBase Coding - pptx (60)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
+[![Presentation](images/presentation.png) HBase Coding - pptx (60)](https://drive.google.com/open?id=0B88HKpainTSfNnQ5SEVKTm1tRk0)
 
 Indexing Applications
 ---------------------
@@ -89,9 +89,9 @@ query, analysis, and visualization.
 
 [![Video](images/video.png) Indexing Applications (9:33)](https://www.youtube.com/watch?v=MxgabfoGH-M)
 
-[:scroll: Indexing Applications (1)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
+[![Presentation](images/presentation.png) Indexing Applications (1)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
-[:scroll: Indexing Applications - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
+[![Presentation](images/presentation.png) Indexing Applications - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
 
 Related Work
 ------------
@@ -105,9 +105,9 @@ topics. Customizability of indexing among NoSQL databases is desirable.
 
 [![Video](images/video.png) Related Work (5:56)](https://www.youtube.com/watch?v=NDjAdFSVzxo)
 
-[:scroll: Related Work (11)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
+[![Presentation](images/presentation.png) Related Work (11)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
-[:scroll: Related Work - pptx (11)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
+[![Presentation](images/presentation.png) Related Work - pptx (11)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
 
 
 Indexamples
@@ -122,9 +122,9 @@ or retweet status.
 
 [![Video](images/video.png) Indexamples (8:35)](https://www.youtube.com/watch?v=Ec3VFeTGuo8)
 
-[:scroll: Indexamples (15)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
+[![Presentation](images/presentation.png) Indexamples (15)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
-[:scroll: Indexamples - pptx (15)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
+[![Presentation](images/presentation.png) Indexamples - pptx (15)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
 
 
 Indexing 101
@@ -145,9 +145,9 @@ for large-scale data.
 
 [![Video](images/video.png) Indexing 101 (9:53)](https://www.youtube.com/watch?v=eKQaLkw-HBU)
 
-[:scroll: Indexing 101 (20)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
+[![Presentation](images/presentation.png) Indexing 101 (20)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
-[:scroll: Indexing 101 - pptx (20)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
+[![Presentation](images/presentation.png) Indexing 101 - pptx (20)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
 
 Social Media Searches
 ---------------------
@@ -160,9 +160,9 @@ A diagram displays an indexing setup for social media data with YARN.
 
 [![Video](images/video.png) Social Media Searches (6:19)](https://www.youtube.com/watch?v=a3tcL-Qw9to)
 
-[:scroll: Social Media Searches (28)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
+[![Presentation](images/presentation.png) Social Media Searches (28)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
-[:scroll: Social Media Searches - pptx (28)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
+[![Presentation](images/presentation.png) Social Media Searches - pptx (28)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
 
 Analysis Algorithms
 -------------------
@@ -176,7 +176,7 @@ hashtags in Twitter.
 
 [![Video](images/video.png) Analysis Algorithms (6:57)](https://www.youtube.com/watch?v=MxoMd4mdshE)
 
-[:scroll: Analysis Algorithms (35)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
+[![Presentation](images/presentation.png) Analysis Algorithms (35)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
-[:scroll: Analysis Algorithms - pptx (35)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
+[![Presentation](images/presentation.png) Analysis Algorithms - pptx (35)](https://drive.google.com/open?id=0B88HKpainTSfZkJpLTNIbDJ1dVU)
 

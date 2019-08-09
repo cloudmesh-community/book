@@ -45,10 +45,10 @@ Projects that you can do to test the devices are
 esp8266 (easy-moderate, small memory):
 
 * a LED blinker
-* a dendrite :o:
-* a robot fish :o:
-* a fish swarm :o:
-* a robot swarm :o:
+* a dendrite ![No](images/no.png)
+* a robot fish ![No](images/no.png)
+* a fish swarm ![No](images/no.png)
+* a robot swarm ![No](images/no.png)
 * an activity of your desire
 
 Raspberry Pi (easy-moderate, 32GB space limitation):

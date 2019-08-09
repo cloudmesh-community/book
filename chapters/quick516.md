@@ -157,7 +157,7 @@ sample of a student contributed chapter is
 * GraphQL
 
 
-:warning: *It is expected from you that you self identify a section
+![Warning](images/warning.png) *It is expected from you that you self identify a section
 or a chapter as this shows competence in the area of cloud
 computing. If however you do not know what to select, you must attend
 an online hour with us in which we identify sections and chapters with
@@ -352,7 +352,7 @@ that we will set up for you. They will be added to the book after they
 have been reviewed and approved. 
 
 The headline of the section needs to be marked with a
-:hand: if you are working on it and marked with a :smiley: if you want it
+![Construction](images/construction.png) if you are working on it and marked with a ![Smiley](images/smile.png) if you want it
 to be graded and have included all hids for people that contributed to that
 section.
 

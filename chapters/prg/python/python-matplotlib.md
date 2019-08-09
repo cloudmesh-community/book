@@ -119,7 +119,7 @@ plt.legend(loc='upper right')
 plt.show()
 ```
 
-:o: link error
+![No](images/no.png) link error
 
 An example of a bar chart is preceded next using data from
  [\[T:fast-cars\]](#T:fast-cars){reference-type="ref"

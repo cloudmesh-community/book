@@ -11,7 +11,7 @@ considerably over the course of a single decade.
 
 [![Video](images/video.png) MapReduce Refresher (9:00)](https://www.youtube.com/watch?v=0TRTdzgC_N0)
 
-[:scroll: MapReduce Refresher (1)](https://drive.google.com/open?id=10IDob_Ytec3pLNFjY-aOLjDaC6owXVYw)
+[![Presentation](images/presentation.png) MapReduce Refresher (1)](https://drive.google.com/open?id=10IDob_Ytec3pLNFjY-aOLjDaC6owXVYw)
 
 
 Google Search Engine 1
@@ -27,9 +27,9 @@ queries.
 
 [![Video](images/video.png) Google Search Engine 1 (8:04)](https://www.youtube.com/watch?v=S2oT7uMw5Yg)
 
-[:scroll: Google Search Engine 1 (15)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
+[![Presentation](images/presentation.png) Google Search Engine 1 (15)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
 
-[:scroll: Google Search Engine 1 - pptx (15)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M
+[![Presentation](images/presentation.png) Google Search Engine 1 - pptx (15)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M
 )
 
 Google Search Engine 2
@@ -48,9 +48,9 @@ initial Google proposal paper follows.
 
 [![Video](images/video.png) Google Search Engine 2 (8:32)](https://www.youtube.com/watch?v=pxos3Yt6y6I)
 
-[:scroll: Google Search Engine 2 (21)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
+[![Presentation](images/presentation.png) Google Search Engine 2 (21)](https://drive.google.com/open?id=0B88HKpainTSfYWZ0dDlrNThkVms)
 
-[:scroll: Google Search Engine 2 - pptx (21)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M
+[![Presentation](images/presentation.png) Google Search Engine 2 - pptx (21)](https://drive.google.com/open?id=0B88HKpainTSfcHg4cV8wRzQwU3M
 )
 
 Hadoop PageRank
@@ -63,9 +63,9 @@ its application.
 
 [![Video](images/video.png) PageRank (7:58) (Hadoop)](https://www.youtube.com/watch?v=GCp5OLLOrH0)
 
-[:scroll: PageRank (1) (Hadoop)](https://drive.google.com/open?id=0B88HKpainTSfWFpEZGxqSWRTYms)
+[![Presentation](images/presentation.png) PageRank (1) (Hadoop)](https://drive.google.com/open?id=0B88HKpainTSfWFpEZGxqSWRTYms)
 
-[:scroll: PageRank - pptx (1) (Hadoop)](https://drive.google.com/open?id=0B88HKpainTSfUXB1Z2JPa2FfOXc)
+[![Presentation](images/presentation.png) PageRank - pptx (1) (Hadoop)](https://drive.google.com/open?id=0B88HKpainTSfUXB1Z2JPa2FfOXc)
 
 
 Discussions and ParallelThinking
@@ -85,9 +85,9 @@ parallel computing, including MapReduce.
 
 [![Video](images/video.png) Discussions and ParallelThinking (11:12)](https://www.youtube.com/watch?v=ISJp7TUzo1s)
 
-[:scroll: Discussions and ParallelThinking (10)](https://drive.google.com/open?id=0B88HKpainTSfWFpEZGxqSWRTYms)
+[![Presentation](images/presentation.png) Discussions and ParallelThinking (10)](https://drive.google.com/open?id=0B88HKpainTSfWFpEZGxqSWRTYms)
 
-[:scroll: Discussions and ParallelThinking - pptx (10)](https://drive.google.com/open?id=0B88HKpainTSfUXB1Z
+[![Presentation](images/presentation.png) Discussions and ParallelThinking - pptx (10)](https://drive.google.com/open?id=0B88HKpainTSfUXB1Z
 2JPa2FfOXc)
 
 Hadoop Extensions
@@ -100,7 +100,7 @@ capabilities is included.
 
 [![Video](images/video.png) Hadoop Extensions (5:37)](https://www.youtube.com/watch?v=gS7TImRZZ1g)
 
-[:scroll: Hadoop Extensions (50)](https://drive.google.com/open?id=10IDob_Ytec3pLNFjY-aOLjDaC6owXVYw)
+[![Presentation](images/presentation.png) Hadoop Extensions (50)](https://drive.google.com/open?id=10IDob_Ytec3pLNFjY-aOLjDaC6owXVYw)
 
 
 Iterative MapReduce Models
@@ -115,9 +115,9 @@ communication of scientific applications.
 
 [![Video](images/video.png) Iterative MapReduce Models (6:46)](https://www.youtube.com/watch?v=CXDdWmAWIvk)
 
-[:scroll: Iterative MapReduce Models (1)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
+[![Presentation](images/presentation.png) Iterative MapReduce Models (1)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
 
-[:scroll: Iterative MapReduce Models - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU0
+[![Presentation](images/presentation.png) Iterative MapReduce Models - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU0
 SUU)
 
 Parallel Processes
@@ -136,9 +136,9 @@ features and programming languages.
 
 [![Video](images/video.png) Parallel Processes (9:44)](https://www.youtube.com/watch?v=JAYvkIZ8TuE)
 
-[:scroll: Parallel Processes (4)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
+[![Presentation](images/presentation.png) Parallel Processes (4)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
 
-[:scroll: Parallel Processes - pptx (4)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU0SUU)
+[![Presentation](images/presentation.png) Parallel Processes - pptx (4)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU0SUU)
 
 
 Static and Variable Data
@@ -167,9 +167,9 @@ failed iterations. A list of Twister APIs is given.
 
 [![Video](images/video.png) Static and Variable Data (11:01)](https://www.youtube.com/watch?v=UJHQ3VvWOTA)
 
-[:scroll: Static and Variable Data (10)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
+[![Presentation](images/presentation.png) Static and Variable Data (10)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
 
-[:scroll: Static and VariableData - pptx (10)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU0SU
+[![Presentation](images/presentation.png) Static and VariableData - pptx (10)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU0SU
 U)
 
 MapReduce Model Comparison
@@ -185,9 +185,9 @@ or is close to the competition.
 
 [![Video](images/video.png) MapReduce Model Comparison (6:56)](https://www.youtube.com/watch?v=n7RVGrC-wcs)
 
-[:scroll: MapReduce Model Comparison (24)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
+[![Presentation](images/presentation.png) MapReduce Model Comparison (24)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
 
-[:scroll: MapReduce Model Comparison - pptx (24)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU
+[![Presentation](images/presentation.png) MapReduce Model Comparison - pptx (24)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU
 0SUU)
 
 Twister K-means
@@ -208,9 +208,9 @@ MPI.
 
 [![Video](images/video.png) Twister K-means (7:28)](https://www.youtube.com/watch?v=-G5jlzABo-Y)
 
-[:scroll: Twister K-means (34)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
+[![Presentation](images/presentation.png) Twister K-means (34)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
 
-[:scroll: Twister K-means - pptx (34)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU0SUU)
+[![Presentation](images/presentation.png) Twister K-means - pptx (34)](https://drive.google.com/open?id=0B88HKpainTSfM2FjLXRmRVU0SUU)
 
 
 Coding and Iterative Alternatives
@@ -223,7 +223,7 @@ the use of traditional MapReduce to more complex applications.
 
 [![Video](images/video.png) Coding and Iterative Alternatives (5:14)](https://www.youtube.com/watch?v=QTCpiwnwjvo)
 
-[:scroll: Coding and Iterative Alternatives (43)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
+[![Presentation](images/presentation.png) Coding and Iterative Alternatives (43)](https://drive.google.com/open?id=0B88HKpainTSfMFBaNHprbWJwQms)
 
-[:scroll: Coding and Iterative Alternatives - pptx (43)](https://drive.google.com/open?id=0B88HKpainTSfM2Fj
+[![Presentation](images/presentation.png) Coding and Iterative Alternatives - pptx (43)](https://drive.google.com/open?id=0B88HKpainTSfM2Fj
 LXRmRVU0SUU)

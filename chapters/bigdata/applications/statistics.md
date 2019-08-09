@@ -23,52 +23,52 @@ It is expected from you to identify these terms and you can contribute
 to this section with non plagiarized subsections explaining these topics
 for credit.
 
-:o: Topics identified by a :?: can be contributed by students. If you are interested,
+![No](images/no.png) Topics identified by a :?: can be contributed by students. If you are interested,
 use piazza for announcing your willingness to do so. 
 
 Mean, minimum, maximum:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Standard deviation:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Probability:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Distribution:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Frequency distribution:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Gaussian distribution:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Bell curve:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Standard normal probabilities:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Tables (z-table):
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Regression:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 Correlation:
 
-: :o: :question:
+: ![No](images/no.png) ![Question](images/question.png)
 
 
 ## Exercise

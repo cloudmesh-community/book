@@ -203,11 +203,11 @@ describe how to install and configure VNC
 Sensors
 -------
 
-### Grove Sensors :o:
+### Grove Sensors ![No](images/no.png)
 
 we already have draft
 
-### Non Grove Sensors :o: 
+### Non Grove Sensors ![No](images/no.png) 
 
 Elegoo as example
 

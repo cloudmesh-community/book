@@ -67,7 +67,7 @@ Part A
 
 [![Video](images/video.png) Part A (14:48)](https://drive.google.com/open?id=16gPOZ7EK6iaac2B-9KbM3OHITqHT8YxG)
 
-[:scroll: Slides (7) - Part A](https://drive.google.com/open?id=17_voZxBdqiLicJKzroQ2DzjW4zvp0VYb)
+[![Presentation](images/presentation.png) Slides (7) - Part A](https://drive.google.com/open?id=17_voZxBdqiLicJKzroQ2DzjW4zvp0VYb)
 
 This lecture describes the contents of the
 following 20 parts (B to U).
@@ -86,7 +86,7 @@ Part B - Defining Clouds I
 
 [![Video](images/video.png) Defining Clouds I (20:22) - Part B](https://drive.google.com/open?id=1iGv6GG2b2th_RL3kQX6P04Y0AyuUxQcj)
 
-[:scroll: Slides (13) Defining Clouds I - Part B](https://drive.google.com/open?id=1SJZblEkhjgQBCDaDSiSCaXTLVPx_X8m4)
+[![Presentation](images/presentation.png) Slides (13) Defining Clouds I - Part B](https://drive.google.com/open?id=1SJZblEkhjgQBCDaDSiSCaXTLVPx_X8m4)
 
 
 Part C - Defining Clouds II
@@ -105,7 +105,7 @@ Part C - Defining Clouds II
 
 [![Video](images/video.png) Defining Clouds II (20:45) - Part C](https://drive.google.com/open?id=1nU9HlqDe_vEZR1MlOq2XibnoHmaygo-H)
 
-[:scroll: Slides Defining Clouds II (11) -  Part C](https://drive.google.com/open?id=1Thg2yOnKBQKdndgdItpviGw0hhxjY2K2)
+[![Presentation](images/presentation.png) Slides Defining Clouds II (11) -  Part C](https://drive.google.com/open?id=1Thg2yOnKBQKdndgdItpviGw0hhxjY2K2)
 
 Part D - Defining Clouds III
 -------------------------------------------
@@ -119,7 +119,7 @@ Part D - Defining Clouds III
 
 [![Video](images/video.png) Defining Clouds III (9:08) - Part D](https://drive.google.com/open?id=1Qayxfwuc_qSeCzaIpHj3-F0N7TONvM5L)
 
-[:scroll: Slides Defining Clouds III (9) -  Part D](https://drive.google.com/open?id=1EsHbUn7xdjTrLXmY8HCIhZqLaWeODD_1)
+[![Presentation](images/presentation.png) Slides Defining Clouds III (9) -  Part D](https://drive.google.com/open?id=1EsHbUn7xdjTrLXmY8HCIhZqLaWeODD_1)
 
 Part E - Virtualization
 --------------------------------------
@@ -133,7 +133,7 @@ In this section we cover
 
 [![Video](images/video.png) Virtualization (11:21) - Part E](https://drive.google.com/open?id=1EC-eOYuBOV1qMojSg4Mg50doPqjAY0Hr)
 
-[:scroll: Slides Virtualization (8) -  Part E](https://drive.google.com/open?id=1K3RzVlfiwZAqwhCPxNEP8Q1JNxyOZhrv)
+[![Presentation](images/presentation.png) Slides Virtualization (8) -  Part E](https://drive.google.com/open?id=1K3RzVlfiwZAqwhCPxNEP8Q1JNxyOZhrv)
 
 
 Part F - Technology Hypecycle I
@@ -152,7 +152,7 @@ In this section we cover  the Technology Hypecycle and focus on
 
 [![Video](images/video.png) Technology Hypecycle I (13:41) - Part F](https://drive.google.com/open?id=1_M0HDemFmykAq4iPuQ0MHYIW0kffHuMa)
 
-[:scroll: Slides Technology Hypecycle I (11) -  Part F](https://drive.google.com/open?id=18deLUm2zGlHcHHbyVhecwSf52RHAq9VT)
+[![Presentation](images/presentation.png) Slides Technology Hypecycle I (11) -  Part F](https://drive.google.com/open?id=18deLUm2zGlHcHHbyVhecwSf52RHAq9VT)
 
 
 Part G - Technology Hypecycle II
@@ -169,7 +169,7 @@ In this section we cover  the Technology Hypecycle and focus on
 
 [![Video](images/video.png) Technology Hypecycle II (16:05) - Part G](https://drive.google.com/open?id=19k6os58_OCCsmbusWQ6z6n9hwVmmd163)
 
-[:scroll: Slides Technology Hypecycle II (15) -  Part G](https://drive.google.com/open?id=1ZD-h-dmQgAFROBEI1KMJROTxPVPAJ_P_)
+[![Presentation](images/presentation.png) Slides Technology Hypecycle II (15) -  Part G](https://drive.google.com/open?id=1ZD-h-dmQgAFROBEI1KMJROTxPVPAJ_P_)
 
 Part H - IaaS I
 ------------------------------
@@ -185,7 +185,7 @@ following topics:
 
 [![Video](images/video.png) IaaS I (13:22) - Part H](https://drive.google.com/open?id=1_lH7ou_UQOMMfdSSQLrqZr8yJZIr7rC0)
 
-[:scroll: Slides IaaS I (12) -  Part H](https://drive.google.com/open?id=1WOlwFtHNvFSaQX9WAXBwO2q1qsvBM6Yd)
+[![Presentation](images/presentation.png) Slides IaaS I (12) -  Part H](https://drive.google.com/open?id=1WOlwFtHNvFSaQX9WAXBwO2q1qsvBM6Yd)
 
 
 Part I - IaaS II
@@ -203,7 +203,7 @@ following topics:
 
 [![Video](images/video.png) IaaS II (13:13) - Part I](https://drive.google.com/open?id=1UwBzSKK-iHYW7aRCS_f4BoXNYxUb476i)
 
-[:scroll: Slides IaaS II (11) -  Part I](https://drive.google.com/open?id=1_1fL2L-tpjlL7og49XDxH_HLPD6Tupik)
+[![Presentation](images/presentation.png) Slides IaaS II (11) -  Part I](https://drive.google.com/open?id=1_1fL2L-tpjlL7og49XDxH_HLPD6Tupik)
 
 Part J - Cloud Software
 --------------------------------------
@@ -221,7 +221,7 @@ In this section we focus on Cloud Software while covering the following topics:
 
 [![Video](images/video.png) Cloud Software (37:56) - Part J](https://drive.google.com/open?id=1tasT1lJE_7pwowuk0D68M7rgW1gtv3im)
 
-[:scroll: Slides Cloud Software (15) -  Part J](https://drive.google.com/open?id=1DKshrkb2bMOt5p0H2YDkOZhekAFIx5nJ)
+[![Presentation](images/presentation.png) Slides Cloud Software (15) -  Part J](https://drive.google.com/open?id=1DKshrkb2bMOt5p0H2YDkOZhekAFIx5nJ)
 
 .
 
@@ -241,7 +241,7 @@ following topics:
 
 [![Video](images/video.png) Applications I (11:58) - Part K](https://drive.google.com/open?id=1BzpXNqs3Ai_QlSsjxSV6Q3FevZt1BPj-)
 
-[:scroll: Slides Applications I (16) -  Part K](https://drive.google.com/open?id=1dQbzoVwDoqqnwSO8eHmu_WfiU2FVXtLL)
+[![Presentation](images/presentation.png) Slides Applications I (16) -  Part K](https://drive.google.com/open?id=1dQbzoVwDoqqnwSO8eHmu_WfiU2FVXtLL)
 
 Part L - Applications II
 ---------------------------------------
@@ -257,7 +257,7 @@ following topics:
 
 [![Video](images/video.png) Applications II (13:03) - Part L](https://drive.google.com/open?id=1pIjcar6SZSelWiR6dv4lhnsmweDarNXR)
 
-[:scroll: Slides Applications II (11) -  Part L](https://drive.google.com/open?id=10bAckYz455Yd5tqDGpwkMZUmDn9FKl0n)
+[![Presentation](images/presentation.png) Slides Applications II (11) -  Part L](https://drive.google.com/open?id=10bAckYz455Yd5tqDGpwkMZUmDn9FKl0n)
 
 Part M - Applications III
 ----------------------------------------
@@ -273,7 +273,7 @@ following topics:
 
 [![Video](images/video.png) Applications III (24:12) - Part M](https://drive.google.com/open?id=16rb0zZafTLoYhT638qc4IRorOk5qgRP-)
 
-[:scroll: Slides Applications III (14) -  Part M](https://drive.google.com/open?id=1TPgbfK6PhWjyr3u115Pq4jTPNPo2JU70)
+[![Presentation](images/presentation.png) Slides Applications III (14) -  Part M](https://drive.google.com/open?id=1TPgbfK6PhWjyr3u115Pq4jTPNPo2JU70)
 
 Part N - Parallelism
 -----------------------------------
@@ -289,7 +289,7 @@ the following topics:
 
 [![Video](images/video.png) Parallelism (35:46) - Part N](https://drive.google.com/open?id=1apuvCaKlQBZp8FjvqN9It5bJhfXmf1kg)
 
-[:scroll: Slides Parallelism (15) -  Part N](https://drive.google.com/open?id=1lBmpMry2FXwEjf93EMJPNDpw_G-yUcI1)
+[![Presentation](images/presentation.png) Slides Parallelism (15) -  Part N](https://drive.google.com/open?id=1lBmpMry2FXwEjf93EMJPNDpw_G-yUcI1)
 
 Part O - Storage
 -------------------------------
@@ -303,7 +303,7 @@ In this section we focus on Cloud Storage while covering the following topics:
 
 [![Video](images/video.png) Storage (19:22) - Part O](https://drive.google.com/open?id=1_A51jrlzKYKhQvefXbJPs0J4GiCCQ1et)
 
-[:scroll: Slides Storage (10) -  Part O](https://drive.google.com/open?id=1JvIK-J4HUSvexmNKbBV_fdN8xvGBylR2)
+[![Presentation](images/presentation.png) Slides Storage (10) -  Part O](https://drive.google.com/open?id=1JvIK-J4HUSvexmNKbBV_fdN8xvGBylR2)
 
 Part P - HPC in the Cloud
 ----------------------------------------
@@ -318,7 +318,7 @@ In this section we focus on HPC and Cloud while covering the following topics:
 
 [![Video](images/video.png) HPC in the Cloud (19:29) - Part P](https://drive.google.com/open?id=1u5z9-GY1Hecp8nR47Gxe8506NnhHduF1)
 
-[:scroll: Slides HPC in the Cloud (8) -  Part P](https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF)
+[![Presentation](images/presentation.png) Slides HPC in the Cloud (8) -  Part P](https://drive.google.com/open?id=1ECR-m-pgW_7JnNDJ9ZLDYpicRrtxawwF)
 
 Part Q - Analytics and Simulation
 ------------------------------------------------
@@ -334,7 +334,7 @@ while covering the following topics:
 
 [![Video](images/video.png) Analytics and Simulation (16:19) - Part Q](https://drive.google.com/open?id=1vmtpndTlmtV4DzUtl04_nWo9DCR84mIM)
 
-[:scroll: Slides Analytics and Simulation (10) -  Part Q](https://drive.google.com/open?id=1u_rugpZg6m2x0B7r4kifEUxMej71-wMh)
+[![Presentation](images/presentation.png) Slides Analytics and Simulation (10) -  Part Q](https://drive.google.com/open?id=1u_rugpZg6m2x0B7r4kifEUxMej71-wMh)
 
 Part R - Jobs
 ----------------------------
@@ -350,7 +350,7 @@ while covering the following topics:
 
 [![Video](images/video.png) Jobs (4:52) - Part R](https://drive.google.com/open?id=1JMNPLdbS81Hfi5P7irDUy7kna35jpU6j)
 
-[:scroll: Slides Jobs (6) -  Part R](https://drive.google.com/open?id=1Sev0VF7tDZo4Oxa_ghk6b4YhE4iTPkhE)
+[![Presentation](images/presentation.png) Slides Jobs (6) -  Part R](https://drive.google.com/open?id=1Sev0VF7tDZo4Oxa_ghk6b4YhE4iTPkhE)
 
 Part S - The Future
 ----------------------------------
@@ -368,7 +368,7 @@ In this section we focus on The Future while covering the following topics:
 
 [![Video](images/video.png) The Future (19:46) - Part S](https://drive.google.com/open?id=1kgbrDiDNj0DKYi_ICvOXYeFZ32R1JH2_)
 
-[:scroll: Slides The Future (6) -  Part S](https://drive.google.com/open?id=1_LdE64DJqSKI7EmMbSsppHMO6KU4q4Sl)
+[![Presentation](images/presentation.png) Slides The Future (6) -  Part S](https://drive.google.com/open?id=1_LdE64DJqSKI7EmMbSsppHMO6KU4q4Sl)
 
 Part T - Security
 --------------------------------
@@ -382,7 +382,7 @@ In this section we focus on Security while covering the following topics:
 
 [![Video](images/video.png) Security (11:29) - Part T](https://drive.google.com/open?id=1TQsCuR-2C6D_OJeJH818WO5-OBrA8Spo)
 
-[:scroll: Slides Security (13) -  Part T](https://drive.google.com/open?id=1fVelFbLaUbNXMGS6ENRn4QHLzFitAyUD)
+[![Presentation](images/presentation.png) Slides Security (13) -  Part T](https://drive.google.com/open?id=1fVelFbLaUbNXMGS6ENRn4QHLzFitAyUD)
 
 Part U - Fault Tolerance
 ---------------------------------------
@@ -396,4 +396,4 @@ In this section we focus on Fault Tolerance while covering the following topics:
 
 [![Video](images/video.png) Fault Tolerance (9:10) - Part U](https://drive.google.com/open?id=1jRpkdGCT-sQRb6pOGrW-qG58A_HYfr9W)
 
-[:scroll: Slides Fault Tolerance (5) -  Part U](https://drive.google.com/open?id=1cR9YLcrtUMKINRFNMbdVre8Ydfa-lvAj)
+[![Presentation](images/presentation.png) Slides Fault Tolerance (5) -  Part U](https://drive.google.com/open?id=1cR9YLcrtUMKINRFNMbdVre8Ydfa-lvAj)

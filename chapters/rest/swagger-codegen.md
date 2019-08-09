@@ -338,7 +338,7 @@ case please make changes on the API definition accordingly, e.g., the
 
 ## Exercises
 
-:o: Links are not yet integrated
+![No](images/no.png) Links are not yet integrated
 
 E.OpenAPI.1:
 

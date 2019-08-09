@@ -1,4 +1,4 @@
-# Hadoop SDSC :o:
+# Hadoop SDSC ![No](images/no.png)
 
 The information here is copied from:
 

@@ -15,7 +15,7 @@ provide a section
 
 ## Computing
 
-### Python on the Raspberry Pi :hand: fa18-516-03
+### Python on the Raspberry Pi ![Construction](images/construction.png) fa18-516-03
 
 Python packages are typically installed using the `pip` tool. `pip` will
 automatically detect if you are running a compatible OS and platform and will
@@ -87,7 +87,7 @@ Not tested
 
 * <http://www.noveldevices.co.uk/rp-ssh>
 
-:warning: Not sure if this is needed:
+![Warning](images/warning.png) Not sure if this is needed:
 
 " You may find that you can connect to your Pi with SSH but the session
 hangs after a successful logon. This is usually caused because of a

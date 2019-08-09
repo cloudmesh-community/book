@@ -295,7 +295,7 @@ Steps to getting your question answered on piazza
 
 ### Piazza class Links
 
-:warning: Using the direct links listed in the next two sections, can
+![Warning](images/warning.png) Using the direct links listed in the next two sections, can
 lead to you not getting proper access via Canvas. If you click on
 these links **before they create** the account via the link in your
 current Canvas course, you will create an account that is not matched
@@ -309,7 +309,7 @@ If you have questions about this contact Margaret Ricci (mricci@iu.edu).
 
 ---
 
-:warning: before clicking on the links you need to have an account
+![Warning](images/warning.png) before clicking on the links you need to have an account
 created
 
 ---
@@ -385,7 +385,7 @@ an answer is changed or when someone posts.
 
 ---
 
-:warning: In many cases additional information is available for the
+![Warning](images/warning.png) In many cases additional information is available for the
 post and it is **not sufficient to just read the mail**.
 
 ---

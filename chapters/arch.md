@@ -44,7 +44,7 @@ enterprise resource planning and business transaction procesings.
 
 Mainframe Computing refers to
 
-:o: this definition could beimproved
+![No](images/no.png) this definition could beimproved
 
 >According to Wikipedia, The term mainframe originally referred to the large cabinets called "main frames" that housed the central processing unit and main memory of early computers.
 Later, the term was used to distinguish high-end commercial machines from less powerful units.
@@ -153,7 +153,7 @@ Cloud Computing refers to
 We have provided a lecture about the definition of cloud computing
 previously.
 
-:o: include a link to the lecture.
+![No](images/no.png) include a link to the lecture.
 
 ### Mobile Computing
 

@@ -109,7 +109,7 @@ the following principals:
 
 The  online support hours are as follows:
 
-:warning: The time bellow are not determined yet and we will attempt to
+![Warning](images/warning.png) The time bellow are not determined yet and we will attempt to
 provide hours via a poll. The hours bellow are form last semesters class
 
 -   TBD Mon 6:00pm-7:00pm, 7:00pm-8:00pm, Gregor

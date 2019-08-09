@@ -281,7 +281,7 @@ You need to start the mosquito service buy hand to use it.
 
 ### MacOS Advanced Service install
 
-:warning: We recommend that this is only be done if you truly need a
+![Warning](images/warning.png) We recommend that this is only be done if you truly need a
 production system. For our class you will not need this.
 
 You can integrate mosquito service on boot, while adding it via
@@ -314,7 +314,7 @@ $ sudo apt-get install mosquitto mosquitto-clients
 $ pip install paho-mqtt
 ```
 
-### Raspberry Pi Setup :o:
+### Raspberry Pi Setup ![No](images/no.png)
 
 #### Broker
 

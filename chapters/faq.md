@@ -105,7 +105,7 @@ Here is the workflow on how to read such technical sections
 
 6. Carefully execute the relevant portions for you
 
-:warning: AS ALWAYS THERE IS NO GUARANTEE THAT WHAT THE CODE WORKS
+![Warning](images/warning.png) AS ALWAYS THERE IS NO GUARANTEE THAT WHAT THE CODE WORKS
 OR COULD NOT DESTROY SOMETHING. MAKE SURE TO HAVE A BACKUP. IF IN
 DOUBT RUN IN A VIRTUAL MACHINE IF YOU CAN.
 
@@ -205,7 +205,7 @@ browser and clicking on it will automatically open your ePub browser.
 
 ## Assignment Summary
 
-:o: outdated
+![No](images/no.png) outdated
 
 a) The assignment is discussed in Chapter 1 of the lecture notes
 
@@ -244,7 +244,7 @@ A more detailed outline is
 
 ## Auto 80 char
 
-:o: outdated
+![No](images/no.png) outdated
 
 Those that use emcas could experiment with the following. I do not
 know if this works well yet.
@@ -261,7 +261,7 @@ emacs -batch test.md --eval '(fill-region (point-min) (point-max))' -f save-buff
 
 ## Useful FAQs for residential and online students
 
-:o: this is outdated.
+![No](images/no.png) this is outdated.
 
 You will know if this post applies to you.
 

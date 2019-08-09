@@ -24,7 +24,7 @@ histograms of Higgs Boson production with various forms of shape of
 signal and various background and with various event totals. The
 lectures use Python but use of Java is described.
 
--   [:scroll:
+-   [![Presentation](images/presentation.png)
     Higgs (20)](https://drive.google.com/open?id=0B8936_ytjfjmYXNoM3ZadGR6QlE)
 
 -   <{gitcode}/physics/mr-higgs/higgs-classI-sloping.py>
@@ -78,7 +78,7 @@ This unit is devoted to Python experiments looking at histograms of
 Higgs Boson production with various forms of shape of signal and various
 background and with various event totals.
 
--   [:scroll: Higgs II
+-   [![Presentation](images/presentation.png) Higgs II
     (29)](https://drive.google.com/open?id=0B8936_ytjfjmUHRpV2g2V28walE)
 
 Files:
@@ -129,7 +129,7 @@ unit introduces Gaussian (normal) distributions and explains why they
 seen so often in natural phenomena. Several Python illustrations are
 given. Java is currently not available in this unit.
 
--   [:scroll:
+-   [![Presentation](images/presentation.png)
     Higgs (39)](https://drive.google.com/open?id=0B8936_ytjfjmNWhrS0xadk16SWM)
 -   <{gitcode}/physics/number-theory/higgs-classIII.py>
 
@@ -196,7 +196,7 @@ are discussed. The Central Limit Theorem and Bayes law concludes
 discussion. Python and Java (for student - not reviewed in class)
 examples and Physics applications are given.
 
--   [:scroll: Higgs
+-   [![Presentation](images/presentation.png) Higgs
     III (44)](https://drive.google.com/open?id=0B8936_ytjfjmTUxkZXVRRmlBSUk)
 
 Files:

@@ -1,4 +1,4 @@
-# Microsoft Azure :o:
+# Microsoft Azure ![No](images/no.png)
 
 Microsoft Azure is a cloud computing service created by Microsoft. It
 includes computing services and products for building, testing,

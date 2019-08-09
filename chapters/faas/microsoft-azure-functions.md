@@ -1,4 +1,4 @@
-# Microsoft Azure Function :hand: fa18-516-08
+# Microsoft Azure Function ![Construction](images/construction.png) fa18-516-08
 
-:o: TODO students can contribute this section
+![No](images/no.png) TODO students can contribute this section
 

@@ -1,4 +1,4 @@
-# DevOp - Continuous Improvement: :o: fa18-516-11
+# DevOp - Continuous Improvement: ![No](images/no.png) fa18-516-11
 
 |          |                                       |
 | -------- | ------------------------------------- |

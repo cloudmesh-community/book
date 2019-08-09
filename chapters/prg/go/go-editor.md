@@ -27,6 +27,6 @@ Other editors may include
 - [Atom](https://atom.io/packages/go-plus) [?]
 - [vim](https://github.com/fatih/vim-go) [?]
 
-:wave: Please help us complete this section while letting us know how
+![Comment](images/comment.png) Please help us complete this section while letting us know how
 each editor supports 80 chracter line wrap mode.
 

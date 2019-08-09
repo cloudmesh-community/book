@@ -1,4 +1,4 @@
-# Raspberry PI Spark Cluster :o: :raised_hand: hid: 24
+# Raspberry PI Spark Cluster ![No](images/no.png) :raised_hand: hid: 24
 
 ## Todo
 
@@ -27,7 +27,7 @@ assume you have Hadoop installed. This is achieved by following the
 instructions provided 
 in
 
-:warning: this link needs to be changed, we also need to identify if the hadoop 
+![Warning](images/warning.png) this link needs to be changed, we also need to identify if the hadoop 
 install for pi is different from the regular hadoop install
 
 * <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
@@ -48,7 +48,7 @@ version 2.3.0).
 
 ---
 
-:warning: *if a newer version is available, your task will be to use the
+![Warning](images/warning.png) *if a newer version is available, your task will be to use the
 newer version and create a new updated set of instructions. At this
 time the newest version is 2.3.0. Please double check.*
 
@@ -114,7 +114,7 @@ SPARK_WORKER_MEMORY = 512m
 
 ---
 
-:warning: *it is possible to write a script doing this*
+![Warning](images/warning.png) *it is possible to write a script doing this*
 
 ---
 
@@ -127,7 +127,7 @@ Add the hostnames to the file
 
 ---
 
-:warning: *it is possible to write a script doing this*
+![Warning](images/warning.png) *it is possible to write a script doing this*
 
 ---
 
@@ -149,7 +149,7 @@ Using Scala version 2.11.8 (Java HotSpot(TM) Client VM, Java 1.8.0_65)
 
 Repeat previous steps on all worker/slave nodes
 
-:warning: it is unclear which steps these are
+![Warning](images/warning.png) it is unclear which steps these are
 
 Alternative to running previous steps for each worker node, you can run
 the the following command on each worked node to create spark directory
@@ -173,7 +173,7 @@ $ sudo mkdir -p /opt/spark-2.3.0
 $ sudo chown -R hduser:hadoop /opt/spark-2.3.0
 ```
 
-:warning: this seems duplicated
+![Warning](images/warning.png) this seems duplicated
 
 Next you need to set the spark home and add it to your path on all
 worker nodes

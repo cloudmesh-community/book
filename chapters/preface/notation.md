@@ -10,9 +10,9 @@ will bring you to the markdown tex, but you will still have to look at
 the [raw content](https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters/preface/notation.md)
 to see the details.
 
-:cloud: `:cloud:`
+![Github](images/github.png) `![Github](images/github.png)`
 
-> If you click on the :cloud: in a heading, you can go directly to the >
+> If you click on the ![Github](images/github.png) in a heading, you can go directly to the >
 document in github that contains the next content. This is > convenient
 to fix errors or make additions to the content. The cloud will be
 automatically added upon inclusion of a new markdown file that includes
@@ -33,12 +33,12 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 `[@las14cloudmeshmultiple]`. References must be added to the
 `refernces.bib` file in BibTex format.
 
-:o: 
+![No](images/no.png) 
 
 > Chapters marked with this emoji are not yet complete or have some
 > issue that we know about. These chapters need to be fixed. If you like
 > to help us fixing this section, please let us know. Use it in markdown
-> with `:o:`.
+> with `![No](images/no.png)`.
 
 
 [![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U) 
@@ -46,53 +46,53 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 > Example for a video with the `![Video](images/video.png)` emoji. Use it in markdown with 
 > `[![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U)`
 
-[:scroll: Slides 10](TBD) 
+[![Presentation](images/presentation.png) Slides 10](TBD) 
 
-> Example for slides with the `:scroll:` emoji. These slides may or
+> Example for slides with the `![Presentation](images/presentation.png)` emoji. These slides may or
 > may not include audio.
 
-[:pencil: Slides 10](TBD)
+[![Audio](images/audio.png) Slides 10](TBD)
 
 > Slides without any audio. They may be faster to download. Use it in
-> markdown with `[:scroll: Slides 10](TBD)`.
+> markdown with `[![Presentation](images/presentation.png) Slides 10](TBD)`.
 
-:mortar_board:
+![Learning](images/learning.png)
 
-> A set of learning objectives with the `:mortar_board:` emoji.
+> A set of learning objectives with the `![Learning](images/learning.png)` emoji.
 
 
-:white_check_mark:
+![Ok](images/ok.png)
 
 > A section is release when it is marked with this emoji in the
-> syllabus. Usie it in markdown with `:white_check_mark:`.
+> syllabus. Usie it in markdown with `![Ok](images/ok.png)`.
 
-:question:
+![Question](images/question.png)
 
 > Indicates opportunities for contributions. Usie it in markdown with
-> `:question:`.
+> `![Question](images/question.png)`.
 
-:hand:
+![Construction](images/construction.png)
 
 > Indicates sections that are worked on by contributors. Use it in
-> markdown with `:hand:`.
+> markdown with `![Construction](images/construction.png)`.
 
-:smiley:
+![Smiley](images/smile.png)
 
-> Sections marked by the contributor with this emoji `:smiley:` 
+> Sections marked by the contributor with this emoji `![Smiley](images/smile.png)` 
 > when they are ready to be reviewed.
 
-:wave:
+![Comment](images/comment.png)
 
-> Sections that need modifications are indicated with this emoji `:wave:`.
+> Sections that need modifications are indicated with this emoji `![Comment](images/comment.png)`.
 
-:warning:
+![Warning](images/warning.png)
 
-> A warning that we need to look at in more detail `:warning:`
+> A warning that we need to look at in more detail `![Warning](images/warning.png)`
 
 
-:bulb:
+![Idea](images/idea.png)
 
-> Notes are indicated with a bulb `:bulb:`
+> Notes are indicated with a bulb `![Idea](images/idea.png)`
 
 
 Other emojis

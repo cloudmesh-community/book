@@ -1,4 +1,4 @@
-# AWS Elastic Map Reduce (EMR) :o:
+# AWS Elastic Map Reduce (EMR) ![No](images/no.png)
 
 ---
 

@@ -1,6 +1,6 @@
 # Apache OpenWhisk {#s-openwhisk}
 
-:o: this section includes many refernces to other tools, that need
+![No](images/no.png) this section includes many refernces to other tools, that need
 bibtex refernces.
 
 Apache OpenWhisk is a Function as a Service (FaaS), aka Serverless

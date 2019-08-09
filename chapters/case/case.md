@@ -1,4 +1,4 @@
-## IU 100 Node Cluster Case :o:
+## IU 100 Node Cluster Case ![No](images/no.png)
 
 At Indiana University we have currently about 200 Raspberry Pi's
 available for students that work with us as part of classes.
@@ -121,7 +121,7 @@ and operated by ISE. You can get access to it by contacting the help
 desk with an email. You will need to get certified for operating the 
 laser cutter to use it.
 
-:o: TODO: add contact email
+![No](images/no.png) TODO: add contact email
 
 The certification will teach you how to use the laser cutter properly. 
 We will walk you through the steps that you can expect will be tought 
@@ -142,7 +142,7 @@ can replicate these steps next time.
 1. Turn the laser cutter on: Use key to turn on the laser cutter.
 2. Turn the exhaust fan on: The fan is a separately switched
    unit. Turn on the switch on the wall next to the laser
-   cutter. :warning: It to turn on the exhaust in order to have proper
+   cutter. ![Warning](images/warning.png) It to turn on the exhaust in order to have proper
    ventilation during the cutting process.
 3. Put the cutting material onto the laser cutterbed. The instructor
    puts the cutting material onto the laser cutter bed. In case the

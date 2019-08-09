@@ -13,7 +13,7 @@ and Loosely Synchronous e.g. MPI.
 
 [![Video](images/video.png) Cloud and MapReduce (10:17)](https://www.youtube.com/watch?v=_irz3v1gT-A)
 
-[:scroll: IaaS, PaaS and SaaS (25)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
+[![Presentation](images/presentation.png) IaaS, PaaS and SaaS (25)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
 Hadoop Framework
 ----------------
@@ -23,9 +23,9 @@ ReduceTask including HDFS.
 
 [![Video](images/video.png) Hadoop Components including HDFS (8:32)](https://www.youtube.com/watch?v=Vuroqly6FTE)
 
-[:scroll: Hadoop Components including HDFS (15)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
+[![Presentation](images/presentation.png) Hadoop Components including HDFS (15)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: Hadoop Components including HDFS - pptx (15)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
+[![Presentation](images/presentation.png) Hadoop Components including HDFS - pptx (15)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 Hadoop Framework II
 -------------------
@@ -39,9 +39,9 @@ given at the end.
 
 [![Video](images/video.png) Hadoop Framework II (9:25)](https://www.youtube.com/watch?v=KWLY_maNEPA)
 
-[:scroll: Hadoop Framework II (8)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
+[![Presentation](images/presentation.png) Hadoop Framework II (8)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
-[:scroll: Hadoop Framework II - pptx (8)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
+[![Presentation](images/presentation.png) Hadoop Framework II - pptx (8)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
 
 Walk Through MapReduce: Hadoop Tasks
 -------------------------------------------------
@@ -58,9 +58,9 @@ data, per key, in parallel.
 
 [![Video](images/video.png) 11:01 Hadoop Tasks (Step-by-Step)](https://www.youtube.com/watch?v=UN4t3tvdjms)
 
-[:scroll: Hadoop Tasks (24)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
+[![Presentation](images/presentation.png) Hadoop Tasks (24)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: Hadoop Tasks - pptx (24)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
+[![Presentation](images/presentation.png) Hadoop Tasks - pptx (24)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 Google File System and BigTable
 -------------------------------
@@ -73,9 +73,9 @@ are briefly discussed.
 
 [![Video](images/video.png) GFS and BigTable (9:43)](https://www.youtube.com/watch?v=5YmjrhEFQsk)
 
-[:scroll: GFS and BigTable (16)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
+[![Presentation](images/presentation.png) GFS and BigTable (16)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
-[:scroll: GFS and BigTable - pptx (16)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
+[![Presentation](images/presentation.png) GFS and BigTable - pptx (16)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
 
 MapReduce Example - WordCount
 -----------------------------
@@ -85,9 +85,9 @@ actually works in the map and reduce phase.
 
 [![Video](images/video.png) MapReduce WordCount (9:07)](https://www.youtube.com/watch?v=sSIGaDaulvA)
 
-[:scroll: MapReduce WordCount (6)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
+[![Presentation](images/presentation.png) MapReduce WordCount (6)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: MapReduce WordCount - pptx (6)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
+[![Presentation](images/presentation.png) MapReduce WordCount - pptx (6)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 MapReduce Example - Twister
 ---------------------------
@@ -109,9 +109,9 @@ MapReduce.
 
 [![Video](images/video.png) Twister Introduction (12:01)](https://www.youtube.com/watch?v=6vkgvGtyv4Q)
 
-[:scroll: MapReduce and Twister (1)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
+[![Presentation](images/presentation.png) MapReduce and Twister (1)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: MapReduce and Twister (1)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
+[![Presentation](images/presentation.png) MapReduce and Twister (1)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 Embarrassingly Parallel Example, Basic Local Alignment Search Tool (BLAST)
 --------------------------------------------------------------------------
@@ -125,15 +125,15 @@ segmentation, and database segmentation.
 
 [![Video](images/video.png) 8:27 Introduction to BLAST (multi-thread,)](https://www.youtube.com/watch?v=i3H9HmUYfq8)
 
-[:scroll: Introduction to BLAST (1)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
+[![Presentation](images/presentation.png) Introduction to BLAST (1)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
 
-[:scroll: Introduction to BLAST - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfMDAwZm5uQlZWckU)
+[![Presentation](images/presentation.png) Introduction to BLAST - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfMDAwZm5uQlZWckU)
 
 [![Video](images/video.png) BLAST Parallelization (4:44)](https://www.youtube.com/watch?v=isc0MjkwTlk)
 
-[:scroll: BLAST Parallelization (13)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
+[![Presentation](images/presentation.png) BLAST Parallelization (13)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
 
-[:scroll: BLAST Parallelization - pptx (13)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
+[![Presentation](images/presentation.png) BLAST Parallelization - pptx (13)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
 
 MapReduce Optimization - Data Locality
 --------------------------------------
@@ -148,9 +148,9 @@ available slots in terms of best local composition, not global.
 
 [![Video](images/video.png) Data Locality (8:36)](https://www.youtube.com/watch?v=RqLA7_asK50)
 
-[:scroll: Data Locality (10)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) Data Locality (10)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: Data Locality - pptx (10)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) Data Locality - pptx (10)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 
 MapReduce Optimization - Optimal Data Locality
 ----------------------------------------------
@@ -166,9 +166,9 @@ outperforming the others.
 
 [![Video](images/video.png) Optimal Data Locality (4:17)](https://www.youtube.com/watch?v=Ok8vdrFXo5w)
 
-[:scroll: Optimal Data Locality (17)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) Optimal Data Locality (17)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: Optimal Data Locality - pptx (17)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) Optimal Data Locality - pptx (17)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 
 MapReduce Optimization - Task Granularity
 -----------------------------------------
@@ -186,9 +186,9 @@ with either single or multiple jobs.
 
 [![Video](images/video.png) Task Granularity (9:51)](https://www.youtube.com/watch?v=u9UpgTnOZz4)
 
-[:scroll: Task Granularity (29)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) Task Granularity (29)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: Task Granularity - pptx (29)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) Task Granularity - pptx (29)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 
 MapReduce Optimization - Resource Utilization and Speculative Execution
 -----------------------------------------------------------------------
@@ -203,9 +203,9 @@ higher energy demands.
 
 [![Video](images/video.png) Resource Utilization and Speculative Execution (3:52)](https://www.youtube.com/watch?v=wWyFiqDIYus)
 
-[:scroll: Resource Utilization and Speculative Execution (46)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) Resource Utilization and Speculative Execution (46)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: Resource Utilization and Speculative Execution - pptx (46)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) Resource Utilization and Speculative Execution - pptx (46)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 
 Appendix; SIMD vs MIMD;SPMD vs MPMD
 -----------------------------------
@@ -221,7 +221,7 @@ types of SIMD. SPMD and MPMD are two other types of model.
 
 [![Video](images/video.png) SIMD vs MIMD;SPMD vs MPMD (SISD) (9:42)](https://www.youtube.com/watch?v=zHQiR56Zmtc)
 
-[:scroll: SIMD vs MIMD;SPMD vs MPMD (1)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) SIMD vs MIMD;SPMD vs MPMD (1)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: SIMD vs MIMD;SPMD vs MPMD - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) SIMD vs MIMD;SPMD vs MPMD - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 

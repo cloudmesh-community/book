@@ -42,15 +42,15 @@
 
 | Date     | Unit    | Title             | Description
 | :----------- |:------- |:----------------- |:---------------------------
-| :white_check_mark: anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
-| :white_check_mark: anytime  |         | Plagiarism      | How to avoid plagiarism and cheating
-| :white_check_mark: anytime  |         | Markdown        | How to use markdown
-| :white_check_mark: anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |
-| :white_check_mark: anytime  |         | Writing a Project Report      | How to write a high quality Project report following our template
-| :white_check_mark: anytime  |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
-| :white_check_mark: anytime  | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) |
-| :white_check_mark: anytime  |         | Class Github      | How to use the class Github
-| :white_check_mark: anytime  |         | Class Piazza      | How to use the class Piazza
+| ![Ok](images/ok.png) anytime  | 1       | [Scientific Writing I](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
+| ![Ok](images/ok.png) anytime  |         | Plagiarism      | How to avoid plagiarism and cheating
+| ![Ok](images/ok.png) anytime  |         | Markdown        | How to use markdown
+| ![Ok](images/ok.png) anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |
+| ![Ok](images/ok.png) anytime  |         | Writing a Project Report      | How to write a high quality Project report following our template
+| ![Ok](images/ok.png) anytime  |         | Bibliography Management      | How to easily manage bibliographies for your Project Report
+| ![Ok](images/ok.png) anytime  | 1       | [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub) |
+| ![Ok](images/ok.png) anytime  |         | Class Github      | How to use the class Github
+| ![Ok](images/ok.png) anytime  |         | Class Piazza      | How to use the class Piazza
 
 </div>
 
@@ -90,7 +90,7 @@
       the cloud you have chosen; Read up on Chameleon Cloud, start a
       VM on chameleon cloud; Participate in within a new version of
       cloudmesh in python which is checked in
-      [github :cloud:](https://github.com/cloudmesh-community/cm)
+      [github ![Github](images/github.png)](https://github.com/cloudmesh-community/cm)
 
       Tip: pick an area you can contribute, use libcloud to interface
       with your cloud that you have chosen. Remember you do not have
@@ -118,7 +118,7 @@
 
     * Oct 15
 
-      Read the Container section (the parts that do not have a :o:
+      Read the Container section (the parts that do not have a ![No](images/no.png)
       indicating that they are ready. Try using containers on your
       machine. If you do not have access to containers on your machine
       please use echo docker swarm and/or kubernetes. Develop a

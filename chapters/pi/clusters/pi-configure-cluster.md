@@ -1,4 +1,4 @@
-# Automated Headless Configuration of a Pi Cluster :o:
+# Automated Headless Configuration of a Pi Cluster ![No](images/no.png)
 
 Our goal is perform the following configuration automatically:
 
@@ -24,7 +24,7 @@ More information on `expect` can be found [here](https://likegeeks.com/expect-co
 
 ## Setting up DHCP
 
-:warning: this tutorial is insecure! :warning:
+![Warning](images/warning.png) this tutorial is insecure! ![Warning](images/warning.png)
 
 TODO: Find out if cluster should be set up with or without internet
 enabled. Tutorial for getting Pi on IU Secure

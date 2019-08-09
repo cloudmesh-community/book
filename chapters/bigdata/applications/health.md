@@ -1,6 +1,6 @@
 # Health Informatics
 
-[:scroll: Health Informatics
+[![Presentation](images/presentation.png) Health Informatics
 (131)](https://drive.google.com/open?id=0B6wqDMIyK2P7UGRJNmlkYkNkQk0)
 
 This section starts by discussing general aspects of Big Data and Health
@@ -159,7 +159,7 @@ trees.
 [![Video](images/video.png) Genomics, Proteomics and Information Visualization: II
 (7:41)](https://drive.google.com/file/d/0B5plU-u0wqModlhmdVUwdGlQNTA/view?usp=sharing)
 
-[:scroll: Proteomics and Information Visualization
+[![Presentation](images/presentation.png) Proteomics and Information Visualization
 (131)](https://drive.google.com/open?id=0B8936_ytjfjmX0lEMWhMX2kwRHc)
 
 ### Resources

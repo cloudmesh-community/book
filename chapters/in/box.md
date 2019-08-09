@@ -409,7 +409,7 @@ Pybox provides a way to work with Box files from the command
 line. Documentation on how to set up and use pybox can be found at
 <https://github.com/hzheng/pybox>
 
-## Cloudmesh :o:
+## Cloudmesh ![No](images/no.png)
 
 Box file storage can now be used from within the Cloudmesh library. Once you have created you config file, you must add the path to your cloudmesh yaml file under box credentials. The Cloudmesh command line library offers six functions for file storage: get, put, search, list, create directory, and delete. Once you have installed Cloudmesh, type `cms` into the command line to start the shell. Every box command should start with the following:
 
@@ -467,4 +467,4 @@ $ storage --storage=box delete /uploads/last_upload.txt
 
 Finally, if you have set the storage variable to box, you can omit the `--storage=box` from your command line calls. 
 
-:o: openapi
+![No](images/no.png) openapi

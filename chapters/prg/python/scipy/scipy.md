@@ -210,11 +210,11 @@ following link
 
 Additional material and inspiration for this section are from
 
-- [:o:]  "Getting Started guide" <https://www.scipy.org/getting-started.html>
-- [:o:]    Prasanth. "Simple statistics with SciPy." Comfort at 1 AU. February
+- [![No](images/no.png)]  "Getting Started guide" <https://www.scipy.org/getting-started.html>
+- [![No](images/no.png)]    Prasanth. "Simple statistics with SciPy." Comfort at 1 AU. February
    28, 2011.
    <https://oneau.wordpress.com/2011/02/28/simple-statistics-with-scipy/>.
--  [:o:]   SciPy Cookbook. Lasted updated: 2015.
+-  [![No](images/no.png)]   SciPy Cookbook. Lasted updated: 2015.
    <http://scipy-cookbook.readthedocs.io/>.
 
-:o: create bibtex entries
+![No](images/no.png) create bibtex entries

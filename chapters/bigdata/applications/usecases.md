@@ -19,7 +19,7 @@ Taxonomies Subgroup, Reference Architecture Subgroup, Security and
 Privacy Subgroup, Technology Roadmap Subgroup and the Requirements and
 Use Case Subgroup. The work of latter is continued in next two units.
 
-[:scroll: Overview
+[![Presentation](images/presentation.png) Overview
 (45)](https://drive.google.com/open?id=0B8936_ytjfjmODIxNGttU1pveWc)
 
 ### Introduction to NIST Big Data Public Working
@@ -183,7 +183,7 @@ and the high and low level computational structure. As each new
 classification topic is introduced we briefly discuss it but full
 discussion of topics is given in following unit.
 
-[:scroll: 51 Use Cases
+[![Presentation](images/presentation.png) 51 Use Cases
 (100)](https://drive.google.com/open?id=0B8936_ytjfjmYUlKckhLSUQxMUk)
 
 ### Government Use Cases
@@ -296,7 +296,7 @@ level computational structure. The first lesson is an introduction to
 all categories and the further lessons give details of particular
 categories.
 
-[:scroll: Features
+[![Presentation](images/presentation.png) Features
 (43)](https://drive.google.com/open?id=0B8936_ytjfjmREJTMHhjMktXRHc)
 
 ### Summary of Use Case Classification

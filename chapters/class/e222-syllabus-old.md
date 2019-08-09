@@ -95,7 +95,7 @@ interested the following could be chosen by you as project.
 
 ## Representative bibliography
 
-:o: add and replace new lecture notes
+![No](images/no.png) add and replace new lecture notes
 
 1. Cloud Computing for Science and Engineering By Ian Foster and Dennis B. Gannon
 * <https://mitpress.mit.edu/books/cloud-computing-science-and-engineering>
@@ -115,7 +115,7 @@ com/cloudmesh/sp17-i524/blob/master/paper1/proceedings.pdf
 * <https://github.com/cloudmesh/sp17-i524/blob/master/project/projects.pdf>
 9. Gregor von Laszewski, Geoffrey C. Fox, Cloud COmputing and Big Data  <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
 
-:o: add new ePubs here from cloudmesh community
+![No](images/no.png) add new ePubs here from cloudmesh community
 
 ## EVERYTHING FROM HERE ON TO BE REPLACED.
 
@@ -138,15 +138,15 @@ that missed that lecture are responsible for working with TAs to catch up.
   * Chameleon Cloud (optional)
   * Piazza
   
-* :o: Survey
+* ![No](images/no.png) Survey
 
 #### Scientific Writing (Week 1)
 
 * Bio (Due Week 1)
 * Plagiarism (Due Week 3)
-* :o: Scientific Writing with Markdown
-* :o: bibtex
-* :o: jabref 
+* ![No](images/no.png) Scientific Writing with Markdown
+* ![No](images/no.png) bibtex
+* ![No](images/no.png) jabref 
 * Project Report (Due two weeks before semester ends)
   
 
@@ -177,17 +177,17 @@ that missed that lecture are responsible for working with TAs to catch up.
  
 * Virtual Machines
     
-  * Cloudmesh CM4 - Virtualbox :o:
+  * Cloudmesh CM4 - Virtualbox ![No](images/no.png)
   * Assignment
        
 * Containers
     
-  * Docker :o:
+  * Docker ![No](images/no.png)
   * Assignment
 
 #### Project  
   
-* Assignment: AI REST Services :o:
+* Assignment: AI REST Services ![No](images/no.png)
 
 * REST
     
@@ -199,13 +199,13 @@ that missed that lecture are responsible for working with TAs to catch up.
 
 * Background about Hadoop, Spark and Twister
 
-  * Hadoop :o: gcf
-  * Spark :o: gcf
-  * Twister :o: gcf
+  * Hadoop ![No](images/no.png) gcf
+  * Spark ![No](images/no.png) gcf
+  * Twister ![No](images/no.png) gcf
  
 #### Python Programming for Beginners
 
-* Python :o:
+* Python ![No](images/no.png)
   
   * Assignment
   * Why not anaconda?
@@ -221,17 +221,17 @@ that missed that lecture are responsible for working with TAs to catch up.
 * Linux
    
    * Assignment
-   * SSH :+1: :o:
+   * SSH :+1: ![No](images/no.png)
 
  
 #### Artificial Intelligence 
 
 See #sec:ai
 * :+1: overview of AI for this class
-* :o: :+1: Theory 
-* :o: :+1: Unsupervised Learning
-* :o: :1+: Deep Learning
-* :o: :+1: Forecasting 
+* ![No](images/no.png) :+1: Theory 
+* ![No](images/no.png) :+1: Unsupervised Learning
+* ![No](images/no.png) :1+: Deep Learning
+* ![No](images/no.png) :+1: Forecasting 
   
 
 
@@ -290,7 +290,7 @@ recommend that you use virtual box and use ubuntu. We have provided an extensive
 for you to achieve this. Please consult additional resources form the Web
 The material includes:
 
-:o: Tyler: please include links to the sections
+![No](images/no.png) Tyler: please include links to the sections
 
 * Install virtual box
 * Install ubuntu on the virtual box
@@ -363,7 +363,7 @@ Other weeks are not yet included here but will cover Artificial Intelligence.
 
 ####\ Assignments
 
-All assignments are summarized in the Section :o: but are posted earlier in piazza.com in the pinned
+All assignments are summarized in the Section ![No](images/no.png) but are posted earlier in piazza.com in the pinned
 section.
 
 #### Communication Track
@@ -473,58 +473,58 @@ The topics are subject to change.
 
 |     | Dates  | Unit | Title  | Description |
 | --- |------ | --- | ------- | --------------------- |
-|   | Week 1    | 1   | Introduction       | [Gregor von Laszewski](#research-interests)[:cloud:][gregor.md] |
-|   |           |     |                    | [Class summary](E516 Summary)[:cloud:][e516-summary.md] |
-|   |           |     |                    | [Definition of Cloud Computing](#definition-of-cloud-computing)[:cloud:][e516-definition.md] |
+|   | Week 1    | 1   | Introduction       | [Gregor von Laszewski](#research-interests)[![Github](images/github.png)][gregor.md] |
+|   |           |     |                    | [Class summary](E516 Summary)[![Github](images/github.png)][e516-summary.md] |
+|   |           |     |                    | [Definition of Cloud Computing](#definition-of-cloud-computing)[![Github](images/github.png)][e516-definition.md] |
 |   | Week 2    | 2   | Tools              | **Tools and Services** |
-|   |           |     |                    | - [Virtual Box](#virtual-box)[:cloud:][virtualbox.md] |
-|   |           |     |                    | - [Vagrant](#vagrant)[:cloud:][vagrant.md] |
-|   |           |     |                    | - [Github](#github)[:cloud:][github.md] |
-|   |           |     |                    | - [Linux](#s-linux)[:cloud:][linux.md] |
+|   |           |     |                    | - [Virtual Box](#virtual-box)[![Github](images/github.png)][virtualbox.md] |
+|   |           |     |                    | - [Vagrant](#vagrant)[![Github](images/github.png)][vagrant.md] |
+|   |           |     |                    | - [Github](#github)[![Github](images/github.png)][github.md] |
+|   |           |     |                    | - [Linux](#s-linux)[![Github](images/github.png)][linux.md] |
 |   | Week 3    | 3   | Python             | **Python** |
-|   |           |     |                    | - [Introduction](#s-python-intro)[:cloud:][python-intro.md] |
-|   |           |     |                    | - [Installation](#s-python-install)[:cloud:][python-install.md] |
-|   |           |     |                    | - [Interactive Python](#interactve python)[:cloud:][python-interactive.md] |
-|   |           |     |                    | - [Editors](#s-python-editor)[:cloud:][python-editor.md] |
-|   |           |     |                    | - [Basic Language Features](#s-python-language)[:cloud:][python.md] |
-|   |           |     |                    | - [Modules](#s-python-modules)[:cloud:][python-libraries.md] |
-|   |           |     |                    | - [Data Management](s-python-data)[:cloud:][python-data.md] |
-|   |           |     |                    | - [Matplotlib](#matplotlib)[:cloud:][python-matplotlib.md] |
-|   |           |     |                    | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[:cloud:][python-cmd5.md] |
-|   |           |     |                    | - [OpenCV](#s-opencv)[:cloud:][opencv.md] |
-|   |           |     |                    | - [Secchi Disk](#s-secchi-disk)[:cloud:][secchi.md] |
+|   |           |     |                    | - [Introduction](#s-python-intro)[![Github](images/github.png)][python-intro.md] |
+|   |           |     |                    | - [Installation](#s-python-install)[![Github](images/github.png)][python-install.md] |
+|   |           |     |                    | - [Interactive Python](#interactve python)[![Github](images/github.png)][python-interactive.md] |
+|   |           |     |                    | - [Editors](#s-python-editor)[![Github](images/github.png)][python-editor.md] |
+|   |           |     |                    | - [Basic Language Features](#s-python-language)[![Github](images/github.png)][python.md] |
+|   |           |     |                    | - [Modules](#s-python-modules)[![Github](images/github.png)][python-libraries.md] |
+|   |           |     |                    | - [Data Management](s-python-data)[![Github](images/github.png)][python-data.md] |
+|   |           |     |                    | - [Matplotlib](#matplotlib)[![Github](images/github.png)][python-matplotlib.md] |
+|   |           |     |                    | - [Cloudmesh Commandshell CMD5](#cloudmesh-commandshell-cmd5)[![Github](images/github.png)][python-cmd5.md] |
+|   |           |     |                    | - [OpenCV](#s-opencv)[![Github](images/github.png)][opencv.md] |
+|   |           |     |                    | - [Secchi Disk](#s-secchi-disk)[![Github](images/github.png)][secchi.md] |
 |   | Week 4    | 4   |                    | [Data Center][datacenter.md] |
-|   | Week 5    | 5   | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-|   |           |     |                    | - [Cloud Architectures](#s-cloud-architectures) [:cloud:][arch.md]
-|   |           |     |                    | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[:cloud:][bdra.md] |
-|   | Week 6    | 6   | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[:cloud:][virtualization.md] |
-|   |           |     | Virtualization I   | - [Qemu](#s-qemu)[:cloud:][qemu.md] |
-|   | Week 7    | 7   | Infrastructure     | [Infrastructure as a Service](#infrastructure-as-a-service)[:cloud:][iaas.md] |
-|   |           |     |                    | - [Azure](#microsoft-azure) [:cloud:][azure.md] |
-|   |           |     |                    | - [AWS](#amazon-web-services) [:cloud:][aws.md] |
-|   |           |     |                    | - [OpenStack](#s-openstack) [:cloud:][openstack.md] |
+|   | Week 5    | 5   | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[![Github](images/github.png)][bdra.md] |
+|   |           |     |                    | - [Cloud Architectures](#s-cloud-architectures) [![Github](images/github.png)][arch.md]
+|   |           |     |                    | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[![Github](images/github.png)][bdra.md] |
+|   | Week 6    | 6   | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[![Github](images/github.png)][virtualization.md] |
+|   |           |     | Virtualization I   | - [Qemu](#s-qemu)[![Github](images/github.png)][qemu.md] |
+|   | Week 7    | 7   | Infrastructure     | [Infrastructure as a Service](#infrastructure-as-a-service)[![Github](images/github.png)][iaas.md] |
+|   |           |     |                    | - [Azure](#microsoft-azure) [![Github](images/github.png)][azure.md] |
+|   |           |     |                    | - [AWS](#amazon-web-services) [![Github](images/github.png)][aws.md] |
+|   |           |     |                    | - [OpenStack](#s-openstack) [![Github](images/github.png)][openstack.md] |
 |   |           |     | Chameleon Cloud    | - Chameleon Cloud |
-|   |           |     |                    | - [Resources](#chameleon-cloud-security-warning)[:cloud:][resources.md] |
-|   |           |     |                    | - [Hardware](#chameleon-cloud-hardware)[:cloud:][hardware.md] |
-|   |           |     |                    | - [Charge](#chameleon-cloud-charge-rates)[:cloud:][charge.md] |
-|   |           |     |                    | - [Quick start](#getting-started-on-chameleon-cloud)[:cloud:][start.md] |
-|   |           |     |                    | - [KVM user guide](#openstack-virtual-machines)[:cloud:][user-guide.md] |
-|   |           |     |                    | - [CLI](#openstack-command-line-interface)[:cloud:][cli.md] |
-|   |           |     |                    | - [Horizon](#openstack-horizon)[:cloud:][horizon.md] |
-|   |           |     |                    | - [Heat](#openstack-heat)[:cloud:][heat.md] |
-|   |           |     |                    | - [Baremetal](#openstack-baremetal)[:cloud:][baremetal.md] |
-|   |           |     |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[:cloud:][faq.md] |
+|   |           |     |                    | - [Resources](#chameleon-cloud-security-warning)[![Github](images/github.png)][resources.md] |
+|   |           |     |                    | - [Hardware](#chameleon-cloud-hardware)[![Github](images/github.png)][hardware.md] |
+|   |           |     |                    | - [Charge](#chameleon-cloud-charge-rates)[![Github](images/github.png)][charge.md] |
+|   |           |     |                    | - [Quick start](#getting-started-on-chameleon-cloud)[![Github](images/github.png)][start.md] |
+|   |           |     |                    | - [KVM user guide](#openstack-virtual-machines)[![Github](images/github.png)][user-guide.md] |
+|   |           |     |                    | - [CLI](#openstack-command-line-interface)[![Github](images/github.png)][cli.md] |
+|   |           |     |                    | - [Horizon](#openstack-horizon)[![Github](images/github.png)][horizon.md] |
+|   |           |     |                    | - [Heat](#openstack-heat)[![Github](images/github.png)][heat.md] |
+|   |           |     |                    | - [Baremetal](#openstack-baremetal)[![Github](images/github.png)][baremetal.md] |
+|   |           |     |                    | - [FAQ](#chameleon-cloud-frequently-asked-questions)[![Github](images/github.png)][faq.md] |
 |   | Week 8    |   8 | Virtualization  II | Containers, Docker, Kubernetes |
 |   | Week 9    | 9   | Programming        | Python for Cloud Computing |
-|   |           |     |                    | - [Libcloud](#python-libcloud)[:cloud:][libcloud.md] |
-|   |           |     |                    | - [Github as a Cloud Service](#s-github-prg)[:cloud:][githubprg.md] |
-|   |           |     |                    | - [REST Services](#rest)[:cloud:][rest.md] |
-|   |           |     |                    | - [Rest Services with OpenAPI](#rest-services-with-openapi)[:cloud:][swagger.md] |
-|   |           |     |                    | - [OpenAPI Spec](#openapi-spec)[:cloud:][swagger-spec.md] |
-|   |           |     |                    | - [OpenAPI Codegen](#openapi-codegen)[:cloud:][swagger-codegen.md] |
+|   |           |     |                    | - [Libcloud](#python-libcloud)[![Github](images/github.png)][libcloud.md] |
+|   |           |     |                    | - [Github as a Cloud Service](#s-github-prg)[![Github](images/github.png)][githubprg.md] |
+|   |           |     |                    | - [REST Services](#rest)[![Github](images/github.png)][rest.md] |
+|   |           |     |                    | - [Rest Services with OpenAPI](#rest-services-with-openapi)[![Github](images/github.png)][swagger.md] |
+|   |           |     |                    | - [OpenAPI Spec](#openapi-spec)[![Github](images/github.png)][swagger-spec.md] |
+|   |           |     |                    | - [OpenAPI Codegen](#openapi-codegen)[![Github](images/github.png)][swagger-codegen.md] |
 |   |  Week 10  | 10  | Map/Reduce         | Map/Reduce, Hadoop, Spark, and others |
 |   |  Week 11  | 11  | Messaging          | Messaging |
-|   |  Week 12  | 12  | Messaging          | - [MQTT](#mqtt)[:cloud:][mqtt.md]  |
+|   |  Week 12  | 12  | Messaging          | - [MQTT](#mqtt)[![Github](images/github.png)][mqtt.md]  |
 |   |           |     |                    | - [Graphql][graphql.md]  |
 |   | Week 13   |  13 | Go                 | Go for the Cloud |
 |   | Week 14,15   | 14  | Edge Computing  | Edge Computing and the Cloud |
@@ -592,7 +592,7 @@ The topics are subject to change.
 
 Students need only to do one project. The project is conducted thought the entire semester.
 
-* Example chapters are indicated with :cloud:
+* Example chapters are indicated with ![Github](images/github.png)
 
 * Dates may change as the semester evolves
 

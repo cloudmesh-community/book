@@ -1,4 +1,4 @@
-# Cluster Setup :o:
+# Cluster Setup ![No](images/no.png)
 
 In this section we discuss how we setup the cluster. To explore that we
 can conduct the setup without monitor, we are collecting in this section

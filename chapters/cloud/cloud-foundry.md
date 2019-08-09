@@ -32,7 +32,7 @@ infrastructure-agnostic architecture, Cloud Foundry, as shown in
 @fig:OpenPaaS focused on three main categories: *Clouds,Frameworks and
 Services* [@Badola2015].
 
-:o: Image needs to be replaced as no longer available
+![No](images/no.png) Image needs to be replaced as no longer available
  
 ![Cloud Foundry - Open PaaS [@harris_2011]](images/Cloud-Foundry-as-Open-PaaS.jpg){#fig:OpenPaaS}
 
@@ -150,7 +150,7 @@ Gathers various application metrics from the running instances, and
 teams can access these logs and metrics to monitor, support and take
 necessary actions to keep systems up and running.
 
-## Conclusion :o:
+## Conclusion ![No](images/no.png)
 
 Cloud Foundry is gaining traction, in the public and private
 organizations, as an open source alternative to PaaS Offerings
@@ -158,5 +158,5 @@ organizations, as an open source alternative to PaaS Offerings
 computing space as it enables scalability and best practices by
 promoting 12-factor application development.
 
-:o: This conclusion is a bit fluffy and not backed up by refernces.
+![No](images/no.png) This conclusion is a bit fluffy and not backed up by refernces.
 Instead of a conclusion it would be better to showcase a real example.

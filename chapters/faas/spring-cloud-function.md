@@ -1,3 +1,3 @@
-# Spring Function as a Service :o: :question:
+# Spring Function as a Service ![No](images/no.png) ![Question](images/question.png)
 
-:o: TODO: student can contribute this section
+![No](images/no.png) TODO: student can contribute this section

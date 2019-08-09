@@ -44,7 +44,7 @@ Please, check your email for further updates. You can also refresh this
 page and see if the boxes in your account status information are all
 green. Then you can continue.
 
-### Testing your FutureSystems ssh key :o:
+### Testing your FutureSystems ssh key ![No](images/no.png)
 
 If you have had no FutureSystem account before, you need to wait for up
 to two business days so we can verify your identity and create the

@@ -45,15 +45,15 @@ like which will go into their discussion credit.
 
 Please use the following indicators to mark the progress of summaries that you are working on. 
 
-:smiley: ready for review
+![Smiley](images/smile.png) ready for review
 
-:hand: selected by student so others do not select it and we know what is worked on
+![Construction](images/construction.png) selected by student so others do not select it and we know what is worked on
 
-:wave: needs revision (only assigned by ta, after smiley)
+![Comment](images/comment.png) needs revision (only assigned by ta, after smiley)
 
 The signs are put as follows. You can view an example at <https://github.com/cloudmesh/technologies/blob/master/chapters/tech/bioconductor.md>
 
-Ex -  Title Of Summary :hand: fa18-xxx-xx
+Ex -  Title Of Summary ![Construction](images/construction.png) fa18-xxx-xx
 
 
 

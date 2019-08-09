@@ -121,7 +121,7 @@ nature. Sample sections contributed by students include:
    * Section Lambda Expressions in *Introduction to Python*
 
 
-> :warning: *It is expected from you that you self identify review 
+> ![Warning](images/warning.png) *It is expected from you that you self identify review 
 > yourself, as this shows competence in the area of cloud
 > computing. If however you do not know what to select, you must attend
 > an online hour with us in which we identify a topic with

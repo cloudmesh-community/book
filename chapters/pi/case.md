@@ -245,7 +245,7 @@ github.
 
 </div>
 
-### Assembling the Pi Cluster :o:
+### Assembling the Pi Cluster ![No](images/no.png)
 
 TODO: replace the images with one that has white background
 
@@ -261,7 +261,7 @@ TODO: replace the images with one that has white background
 </div>
 
 
-### Virtual Raspberry Cluster :o:
+### Virtual Raspberry Cluster ![No](images/no.png)
 
 It should also be possible to create a virtual raspberry PI cluster
 while for example using virtual box. This requires two steps. First the
@@ -279,7 +279,7 @@ well as tear them down.
 Next you will need to make sure you can communicate from the Pi's to each
 other. This is naturally the same as on a real cluster
 
-:warning: TODO: provide a section
+![Warning](images/warning.png) TODO: provide a section
 
 This can be chosen as part of your project, but you need to develop a
 cloudmesh command for managing the cluster. This includes starting and

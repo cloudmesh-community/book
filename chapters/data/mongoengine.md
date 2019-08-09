@@ -44,7 +44,7 @@ class Student(Document):
     last_name = StringField(max_length=50)
 ```
        
-:o: TODO: Can you fix the code sections and look at the examples we
+![No](images/no.png) TODO: Can you fix the code sections and look at the examples we
 provided.
 
 Fields are not mandatory but if needed, set the required keyword

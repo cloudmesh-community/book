@@ -53,7 +53,7 @@ to models that are used to compare how changes to the systems affect
 their overall performance. It is interesting how the humble ranking has
 become such a dominant driver of the world's economy.
 
-[:scroll: Lifestyle Recommender
+[![Presentation](images/presentation.png) Lifestyle Recommender
 (45)](https://drive.google.com/open?id=0B6wqDMIyK2P7YkIwczVfQlJqVG8)
 
 ### Recommender Systems as an Optimization Problem
@@ -86,7 +86,7 @@ particular we discuss an Irvine class project involving ranking jokes.
 
 [![Video](images/video.png) Kaggle Competitions: (3:36)](https://youtu.be/DFH7GPrbsJA)
 
-:warning: Please not that we typically do not accept any projects
+![Warning](images/warning.png) Please not that we typically do not accept any projects
 using kaggle data for this classes. This class is not about winning a
 kaggle competition and if done wrong it does not fullfill the minimum
 requiremnt for this class. Please consult with the instructor.
@@ -141,7 +141,7 @@ user rankings to predict their interests, and the Pearson correlation,
 used to statistically quantify correlations between users viewed as
 points in a space of items.
 
-[:scroll: Lifestyle Recommender
+[![Presentation](images/presentation.png) Lifestyle Recommender
 (49)](https://drive.google.com/open?id=0B6wqDMIyK2P7UVloVElaZ2FXcTg)
 
 We start with a quick recap of recommender systems from previous unit;
@@ -217,7 +217,7 @@ difference between implicit and explicit ratings and the k Nearest
 Neighbors algorithm. General features like the curse of dimensionality
 in high dimensions are discussed.
 
-[:scroll: Lifestyle Filtering
+[![Presentation](images/presentation.png) Lifestyle Filtering
 (18)](https://drive.google.com/open?id=0B6wqDMIyK2P7UExxVFc5YlpOZ28)
 
 ### Item-based Collaborative Filtering

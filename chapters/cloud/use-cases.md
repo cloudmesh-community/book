@@ -1,4 +1,4 @@
-# Cloud Computing: Use Cases :hand: :o:
+# Cloud Computing: Use Cases ![Construction](images/construction.png) ![No](images/no.png)
 
 ## Big Data
 
@@ -10,7 +10,7 @@ The material provided in this ePub is related to Cloud Computing. However part o
 | [![](images/cover-tech.png)](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true) | e534, I523, I423 | Cloud Technologies |
 
 
-## Earth Science :hand: :o:
+## Earth Science ![Construction](images/construction.png) ![No](images/no.png)
 
 The Earth Observing System Data and Information System (EOSDIS) and the Earth
 Science Data and Information System (ESDIS) provide key core capabilities for
@@ -45,7 +45,7 @@ that generate and distribute the various NASA EOS datasets
 
 ![SIPS & DAAC Centers [@nasa-eosdis-cumulus]](images/use-cases-es-sips-daac-centers.png){#fig:sips-daac-centers}
 
-### Big Data :hand: :o:
+### Big Data ![Construction](images/construction.png) ![No](images/no.png)
 
 For NASA, technological advancements in satellite instrumentation,
 communication and other fields has resulted in the current and upcoming
@@ -183,6 +183,6 @@ the Earth Science community for all stakeholders to leverage these cloud
 resources in some capacity so as to enable and facilitate the continuation of
 science discovery in this age of big data.
 
-## Bioinformatics :hand: :o:
+## Bioinformatics ![Construction](images/construction.png) ![No](images/no.png)
 
 Content goes here.
