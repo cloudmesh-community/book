@@ -1,0 +1,27 @@
+## Non Blocking Threads
+
+:o: Students can contribute this section
+
+## Queue
+
+:o: Students can contribute this section
+
+see:
+* <https://docs.python.org/3/library/queue.html>
+
+## Scheduler
+
+:o: Students can contribute this section
+
+see:
+* <https://docs.python.org/3/library/sched.html>
+
+## Python SSL
+
+:o: Students can contribute this section
+
+see:
+
+* <https://docs.python.org/3/library/ssl.html>
+* also demonstrate how you could just use supprocess ... to contarst 
+
