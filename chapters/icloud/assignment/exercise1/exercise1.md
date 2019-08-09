@@ -22,7 +22,7 @@ Files
 A test input file is available as a separate attachment. The statistics
 values for this input are *Min: 0.01 Max: 0.99 Avg: 0.50 StdDev: 0.2817*
 
-[:scroll: Assignments Exercise 1 Input Data](https://drive.google.com/open?id=0B88HKpainTSfcUlZX3BpV05TRDg)
+[![Presentation](images/presentation.png) Assignments Exercise 1 Input Data](https://drive.google.com/open?id=0B88HKpainTSfcUlZX3BpV05TRDg)
 
 Deliverables
 ------------

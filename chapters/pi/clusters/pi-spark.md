@@ -1,4 +1,4 @@
-# Raspberry PI Spark Cluster :o: :raised_hand: hid: fa18-516-24
+# Raspberry PI Spark Cluster ![No](images/no.png) :raised_hand: hid: fa18-516-24
 
 
 We provide step-by-step instructions on installing a Spark cluster on
@@ -13,7 +13,7 @@ a cluster of Raspberry Pi's.
 - [ ] Some text in the later part is unclear
 
 
-## Prerequisites :o:
+## Prerequisites ![No](images/no.png)
 
 In [Network of Pis](#pi-now-main) section we explained how to set up a network
 of Pis. Here we assume that we start from such a network. We assume that you
@@ -50,7 +50,7 @@ files installed:
 
 **Hostnames**:
 
-: :warning: this can b automatically done and needs to be documented
+: ![Warning](images/warning.png) this can b automatically done and needs to be documented
   in the Pi NOW section. THe way we do this is set up key authentication
   foirts and than use scp or better cloudmesh to copy it. We need to describe that provess
   in more detail in the NOW section.
@@ -72,7 +72,7 @@ version 2.3.2).
 
 ---
 
-:warning: *if a newer version is available, your task will be to use the
+![Warning](images/warning.png) *if a newer version is available, your task will be to use the
 newer version and create a new updated set of instructions. At this
 time the newest version is 2.3.2. Please double check.*
 
@@ -166,7 +166,7 @@ You can run the following command on the master to stop the cluster.
 $SPARK_HOME/sbin/stop-all.sh 
 ```
 
-:o: :warning: see also the file `pi-spark-orig.md` as it still contains
+![No](images/no.png) ![Warning](images/warning.png) see also the file `pi-spark-orig.md` as it still contains
 useful information such as the output when running pi spark
 
 ## Towards a cm4 command for pi-spar instalation

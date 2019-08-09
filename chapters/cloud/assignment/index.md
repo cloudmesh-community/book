@@ -1,4 +1,4 @@
-Assignments :o:
+Assignments ![No](images/no.png)
 ===========
 
 Assignment 0 - Identify Technologies

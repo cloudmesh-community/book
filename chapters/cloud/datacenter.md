@@ -577,7 +577,7 @@ does not flow into the hot isles[@hot-cold-containment].
 
 ##### Water Cooled Doors {#sec:datacenter-doors}
 
-Alternatively, or in addition :o:
+Alternatively, or in addition ![No](images/no.png)
 
 ### Workload Monitoring
 
@@ -1143,7 +1143,7 @@ Some thought on this include:
 
 Find more about this at [@nytimes-datacenter]
 
-## Renewable Energy for Data Centers :o: {#sec:energy-renewable}
+## Renewable Energy for Data Centers ![No](images/no.png) {#sec:energy-renewable}
 
 Explain the principal and showcase some examples:
 
@@ -1164,7 +1164,7 @@ Energy Storage:
 * Batteries
 * Store energy in other forms
 
-## Societal Shift Towards Renewables :o: {#sec:energy-society}
+## Societal Shift Towards Renewables ![No](images/no.png) {#sec:energy-society}
 
 Document the efforts used in society to work towards renewable
 energies. THis includes government efforts to support renewable in
@@ -1182,7 +1182,7 @@ See also
 
 * <https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
 
-## Datacenter Risks and Issues :o: 
+## Datacenter Risks and Issues ![No](images/no.png) 
 
 Data Centers may be encounter issues such as outages of a variety of
 reasons. In this section you will identify risks and issues that you
@@ -1237,7 +1237,7 @@ Find other such examples. Find some with different categories
 
 | Data Center | Location | Year | Electricity Cost* | IT Load | Yearly Cost | Yearly CO2 Footprint | Equivalent in Cars |   |
 |-------------|----------|------|-------------------|---------|-------------|----------------------|--------------------|---|
-| :o:  | :o: | :o:  | :o:               | :o:     | :o:         | :o:                  | :o:                |   |
+| ![No](images/no.png)  | ![No](images/no.png) | ![No](images/no.png)  | ![No](images/no.png)               | ![No](images/no.png)     | ![No](images/no.png)         | ![No](images/no.png)                  | ![No](images/no.png)                |   |
 |             |          |      |                   |         |             |                      |                    |   |
 |             |          |      |                   |         |             |                      |                    |   |
 

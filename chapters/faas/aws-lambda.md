@@ -55,7 +55,7 @@ For example a developer can configure an function to be invoked when a
 S3 bucket is updated, or configure an function to be invoked based on
 inputs received by Amazon Alexa, etc.
 
-:o: use also bibtex
+![No](images/no.png) use also bibtex
 
 ## Understanding Function limitations
 
@@ -69,7 +69,7 @@ several major limits next. For a complete list of limits in AWS
 Lambda please refer to the limits documentation
 [AWS Lambda Function Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
 
-:o: use also bibtex
+![No](images/no.png) use also bibtex
 
 ### Execution Time
 
@@ -96,7 +96,7 @@ per month. You can find a more detailed description of the free tier
 in the AWS docs
 [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/).
 
-:o: use also bibtex
+![No](images/no.png) use also bibtex
 
 ## Writing your fist Lambda function
 
@@ -105,7 +105,7 @@ Serverless function with AWS Lambda. Please follow the steps defined
 at
 [How to run your first AWS Lambda function in the cloud](../iaas/aws/aws-lambda.md#how-to-run-your-first-aws-lambda-function-in-the-cloud---example) (this link does not exsit any longer)
 
-:o: use also bibtex
+![No](images/no.png) use also bibtex
 
 
 ## AWS Lambda Usecases {#s-aws-lambda-applictaions}
@@ -118,7 +118,7 @@ been loaded into the system and automatically manages the computing
 resources required by that code. According to the the Lambda product page
 
 > “AWS Lambda lets you run code without provisioning or managing
-> servers.” [Aws](https://aws.amazon.com/lambda/) (:o: refernce to bibtex)
+> servers.” [Aws](https://aws.amazon.com/lambda/) (![No](images/no.png) refernce to bibtex)
 
 For example, one of the use-cases would be that everytime AWS Lambda
 could resize the picture, after it is uploaded onto AWS S3 system and

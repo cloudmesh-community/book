@@ -263,7 +263,7 @@ the first 12 months.
 
 ## Important Notes
 
-:warning: When using AWS services make sure you understand how and when you will
+![Warning](images/warning.png) When using AWS services make sure you understand how and when you will
 be charged for. For example if you are using an EC2 to run some
 application, usage of the instance will be calculated from the time
 you started the instance to the time you stop or terminate the

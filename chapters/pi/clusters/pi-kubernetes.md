@@ -1,4 +1,4 @@
-# Kubernetes :hand: fa18-516-03
+# Kubernetes ![Construction](images/construction.png) fa18-516-03
 
 In this section we will discuss how to set up a Kubernetes cluster on a
 number of Raspberry Pis.

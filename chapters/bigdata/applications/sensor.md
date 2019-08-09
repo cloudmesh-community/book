@@ -11,10 +11,10 @@ IIoT. More detail is given for radar data gathered by sensors;
 ubiquitous or smart cities and homes including U-Korea; and finally the
 smart electric grid.
 
-[:scroll: Sensor I
+[![Presentation](images/presentation.png) Sensor I
 (31)](https://drive.google.com/open?id=0B8936_ytjfjmVXZCUnR3TnVMMFk)
 
-[:scroll: Sensor II
+[![Presentation](images/presentation.png) Sensor II
 (44)](https://drive.google.com/open?id=0B8936_ytjfjmelMwSUl6Q1lLV1k)
 
 ## Internet of Things

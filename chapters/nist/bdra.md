@@ -164,7 +164,7 @@ over time.
 information is not valuable then we may not need to store it. This is
 recently been seen as a trend as some companies have transitioned data
 sets to the community as they do not provide value to the service
-provider to justify its prolonged maintenance. (:o: Look for an
+provider to justify its prolonged maintenance. (![No](images/no.png) Look for an
 example) In other cases the data has become so valuable and that the
 services offered have been reduced for example as they provide too
 many resource needs by the community. A good example is Google scholar
@@ -195,7 +195,7 @@ include
   memory
 * resource negotiation to establish quality of service
 * data movement
-* and data tiers (as showcased in high energy physics) :o: add ref to
+* and data tiers (as showcased in high energy physics) ![No](images/no.png) add ref to
   Ligo and Atlas
 
 In addition to the horizontal scaling issues we also have to worry
@@ -223,7 +223,7 @@ Although we have been used to the term cloud wile using virtualized
 resources and the term Grid by offering a network of supercomputers in
 a virtual organization, We should not forget that Cloud service
 providers also offer High performance computers resources for some of
-their most advanced users. :o: add reference. Naturally such resources
+their most advanced users. ![No](images/no.png) add reference. Naturally such resources
 can be used not only for numerical intensif computations but also for
 big data applications as the Physics community has demonstrated.
 

@@ -193,7 +193,7 @@ Optional:
 
 * Do exercise E.github.issues.5:
 
-:warning: The week 4 is under construction and additional items will
+![Warning](images/warning.png) The week 4 is under construction and additional items will
 be added
 
 ### Practical OpenAPI

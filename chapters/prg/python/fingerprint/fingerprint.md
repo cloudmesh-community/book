@@ -1,4 +1,4 @@
-# Fingerprint Matching :o: {#s-fingerprint}
+# Fingerprint Matching ![No](images/no.png) {#s-fingerprint}
 
 Python is a flexible and popular language for running data analysis
 pipelines. In this section we will implement a solution for a

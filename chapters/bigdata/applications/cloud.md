@@ -1,4 +1,4 @@
-# Cloud Computing :o:
+# Cloud Computing ![No](images/no.png)
 
 We describe the central role of Parallel computing in Clouds and Big
 Data which is decomposed into lots of *Little data* running in
@@ -38,7 +38,7 @@ individual cores. Many examples are given and it is stressed that issues
 in parallel computing are seen in day to day life for communication,
 synchronization, load balancing and decomposition.
 
-[:scroll: Parallel Computing
+[![Presentation](images/presentation.png) Parallel Computing
 (33)](https://drive.google.com/file/d/0B8936_ytjfjmZDRqMldzSVhVem8/view?usp=sharing)
 
 ### Decomposition
@@ -123,7 +123,7 @@ clouds and Big Data. The unit concludes with two simple examples of the
 value of clouds for enterprise applications. Gartner also has specific
 predictions for cloud computing growth areas.
 
-[:scroll: Introduction
+[![Presentation](images/presentation.png) Introduction
 (45)](https://drive.google.com/file/d/0B8936_ytjfjmdmF2Uy1vWS0xTFU/view?usp=sharing)
 
 ### Cyberinfrastructure for E-Applications
@@ -209,7 +209,7 @@ starting at virtual machine management (IaaS) and the broad Platform
 studies. We summarize the 21 layers and almost 300 software packages in
 the HPC-ABDS Software Stack explaining how they are used.
 
-[:scroll: Software and Systems
+[![Presentation](images/presentation.png) Software and Systems
 (32)](https://drive.google.com/file/d/0B8936_ytjfjmUHlEVG1wSUhDNnM/view?usp=sharing)
 
 ### What is Cloud Computing
@@ -394,7 +394,7 @@ unit concludes with the treatment of data in the cloud from an
 architecture perspective and Big Data Processing from an application
 perspective with commercial examples including eBay.
 
-[:scroll: Data Systems
+[![Presentation](images/presentation.png) Data Systems
 (49)](https://drive.google.com/file/d/0B1Of61fJF7WsN1RPVFRLUGJLZGs/view?usp=sharing)
 
 ### The 10 Interaction scenarios (access patterns) I

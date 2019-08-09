@@ -1,4 +1,4 @@
-# Fission :o:  :question:
+# Fission ![No](images/no.png)  ![Question](images/question.png)
 
-:o: TODO students can contribute this section
+![No](images/no.png) TODO students can contribute this section
 

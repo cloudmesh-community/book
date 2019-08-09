@@ -1,4 +1,4 @@
-# AWS SageMaker :o: sp19-616-111 ✋
+# AWS SageMaker ![No](images/no.png) sp19-616-111 ✋
 
 Amazon SageMaker is a fully managed machine learning service. Using Amazon SageMaker, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment. 
 
@@ -21,7 +21,7 @@ We explained a typical machine learning workflow and summarizes how you accompli
 
 In general, machine learning is all about you *teach* a computer to make predictions, or inferences. As a first step, you use an algorithm and example data to train a model. Then you integrate your model into your application to generate inferences in real time and at scale. In a production environment, a model typically learns from millions of example data items and produces inferences in hundreds to less than 20 milliseconds.
 
-The following :o: use proper image notation with caption and citation as discussed in notation.md 
+The following ![No](images/no.png) use proper image notation with caption and citation as discussed in notation.md 
 diagram illustrates the typical workflow for creating a machine learning model:
 
 ![AWS SageMaker](images/machine_learning_workflow.png)

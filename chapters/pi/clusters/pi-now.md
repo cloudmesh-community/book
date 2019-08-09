@@ -1,4 +1,4 @@
-# Network of Pis (NOW) :hand: fa18-516-03 {#pi-now-main}
+# Network of Pis (NOW) ![Construction](images/construction.png) fa18-516-03 {#pi-now-main}
 
 [Network of Pis](#pi-now-main)
 
@@ -306,7 +306,7 @@ you will need to select a set of hostnames for the PIs in your cluster. Please
 see the [Network of Pis Hostnames](#pi-network-hostnames) section for our
 recommendation on setting hostnames.
 
-### Private Network Cluster Setup with cm-burn :o:
+### Private Network Cluster Setup with cm-burn ![No](images/no.png)
 
 Cm-burn does not currently support setting up the master node in a private
 network cluster. When it is enhanced to support this we will add the

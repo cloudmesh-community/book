@@ -1,4 +1,4 @@
-# Glossary :o: :question:
+# Glossary ![No](images/no.png) ![Question](images/question.png)
 
 
 ## VM and Container

@@ -1,4 +1,4 @@
-# Raspberry PI Setup (Small Number of PIs) :hand: fa18-516-03
+# Raspberry PI Setup (Small Number of PIs) ![Construction](images/construction.png) fa18-516-03
 
 This section will be the start for the replacement for all previous setup
 instructions. I think we want ultimately the section "PI Network of
@@ -101,7 +101,7 @@ macOS. Other solutions such as using command line scripts are also available and
 are demonstrated in the section about burning SD Cards in Linux.
 
 
-### Burn an SD Card with cm-burn :hand: fa18-516-03 {#pi-cm-burn-sd-card}
+### Burn an SD Card with cm-burn ![Construction](images/construction.png) fa18-516-03 {#pi-cm-burn-sd-card}
 
 A very convenient program to create an SD card for a Raspberry Pi is
 using the program `cm-burn`. The program is available from
@@ -482,15 +482,15 @@ after 20 seconds:
 $ sudo dhclient -r wlan0; sleep 10; sudo dhclient wlan0
 ```
 
-### Wireless Network at IU :o: {#s-wireless-at-iu}
+### Wireless Network at IU ![No](images/no.png) {#s-wireless-at-iu}
 
-:o: TODO: Update with new IU public wireless information
+![No](images/no.png) TODO: Update with new IU public wireless information
 
 IU runs several different networks. This includes IUSecure, Eduroam,
 and ATT Wifi.  The first two would require you to use your IU username
 and password to be entered in the configuration. Although technically
-possible we find the method :warning: **HIGHLY** insecure and
-:warning: **STRONGLY** advice against doing so. Let us assume you put
+possible we find the method ![Warning](images/warning.png) **HIGHLY** insecure and
+![Warning](images/warning.png) **STRONGLY** advice against doing so. Let us assume you put
 your information on a PI and than someone takes the SD Card from
 it. They can than look into the card and steal your
 password. Obviously this is not advisable. In other cases you may have
@@ -498,7 +498,7 @@ configured your software wrong and someone could login remotely and
 lift your password remotely. Obviously this is not advisable.
 
 Regardless, we have seen from instructors the advice to use
-IUSecure. This is :warning: **WRONG**! Do not listen to them about
+IUSecure. This is ![Warning](images/warning.png) **WRONG**! Do not listen to them about
 this particular issue and advise them to use an alternative setup.
 
 One such alternative (which is also not ideal) is to use the free wifi
@@ -555,7 +555,7 @@ with our convenient tools and scripts such as `cm-burn`.
 System Preparation without Monitor
 ----------------------------------
 
-:o: there is lots of duplication here to the ultimate setup
+![No](images/no.png) there is lots of duplication here to the ultimate setup
 
 ### hostname
 
@@ -743,7 +743,7 @@ together. I would suggest this is better down by using Docker or Ansible.
 
 ### PXE Boot
 
-:o:
+![No](images/no.png)
 
 
 
@@ -786,12 +786,12 @@ allow you to look at the network setup. That is certainly not good and
 before a PI is returned sensitive information should be cleaned from
 the SD Card. 
 
-## Creating Backup :question:
+## Creating Backup ![Question](images/question.png)
 
-:question: In this section we will explain how to create a backup of
+![Question](images/question.png) In this section we will explain how to create a backup of
 the image from the SD Card in a PI.
 
-## Duplication :question:
+## Duplication ![Question](images/question.png)
 
 Let us assume you have installed a lot of great programs on the SD Card.
 In a cluster, we need to duplicate this card for each PI in the cluster.

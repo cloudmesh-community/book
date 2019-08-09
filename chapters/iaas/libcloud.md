@@ -490,7 +490,7 @@ $ pip install cm-community
 and this library will be installed for you.
 
 
-## Amazon Simple Storage Service S3 via libcloud :o:
+## Amazon Simple Storage Service S3 via libcloud ![No](images/no.png)
 
 Next we explain how to use Amazon Web Services (AWS) S3 via
 libcloud. Apache libcloud is a python library that provides
@@ -526,7 +526,7 @@ where you can also define access controls.
 List Containers function list all the containers of buckets available
 for the user in that particular region.
 
-:o: TODO change this example to use the cloudmesh4.yaml file
+![No](images/no.png) TODO change this example to use the cloudmesh4.yaml file
 
 ```python
 from libcloud.storage.types import Provider
@@ -547,7 +547,7 @@ List container objects function shows the list of all objects in that
 container. Please note the output could be large depending on the
 files present in the bucket.
 
-:o: TODO change this example to use the cloudmesh4.yaml file
+![No](images/no.png) TODO change this example to use the cloudmesh4.yaml file
 
 ```python
 from libcloud.storage.types import Provider
@@ -572,7 +572,7 @@ print(d)
 Upload a file helps in uploading a local file to S3 bucket.
 
 
-:o: TODO change this example to use the cloudmesh4.yaml file
+![No](images/no.png) TODO change this example to use the cloudmesh4.yaml file
 
 ```python
 from libcloud.storage.types import Provider

@@ -1,4 +1,4 @@
-# Amazon EMR 2 :o:
+# Amazon EMR 2 ![No](images/no.png)
 
 DELETE ALL THIS CONTENTS ONCE IT IS MERGED TO EMR1
 ALL CONTENT MERGED WITH amazon-emr-1.md

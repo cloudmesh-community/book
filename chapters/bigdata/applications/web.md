@@ -48,7 +48,7 @@ accessing an inverted index is followed by the importance of term
 specificity and how it is captured in TF-IDF. We note how frequencies
 are converted into belief and relevance.
 
-[:scroll: Web Search and Text Mining (56)](https://drive.google.com/open?id=0B8936_ytjfjmeWVSYk9RVXcyOFk)
+[![Presentation](images/presentation.png) Web Search and Text Mining (56)](https://drive.google.com/open?id=0B8936_ytjfjmeWVSYk9RVXcyOFk)
 
 ### The Problem
 
@@ -132,7 +132,7 @@ relevance.
 
 ## Topics in Web Search and Text Mining
 
-[:scroll: Text Mining (33)](https://drive.google.com/open?id=0B6wqDMIyK2P7YmpLbzQ0X2xpbDg%7D%7BPDF)
+[![Presentation](images/presentation.png) Text Mining (33)](https://drive.google.com/open?id=0B6wqDMIyK2P7YmpLbzQ0X2xpbDg%7D%7BPDF)
 
 We start with an overview of the different steps (data analytics) in web
 search. This is followed by Link Structure Analysis including Hubs,

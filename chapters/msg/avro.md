@@ -1,4 +1,4 @@
-# Python Apache Avro :o:
+# Python Apache Avro ![No](images/no.png)
 
 Although Apache Avro is not directly a messaging system, it uses
 messaging to comunicate between components while serializing and

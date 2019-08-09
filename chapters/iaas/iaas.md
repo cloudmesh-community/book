@@ -7,7 +7,7 @@
 * Review IaaS servise by prominent cloud providers.
 * Understand how to write Python programs on managing virtual machines with libcloud.
 * Understand how to write Python programs on managing data services with libcloud.
-* Experiment with cloud providers while practially testing them. :warning: be careful with your allocation
+* Experiment with cloud providers while practially testing them. ![Warning](images/warning.png) be careful with your allocation
 
 ---
 
@@ -67,4 +67,4 @@ sufficient to conduct this class.
 
 A set of introductory slides is available at
 
-[:scroll: Virtual Machines (21)](https://1drv.ms/p/s!AvpSEd2J24STjBbo4k35C5v-ra8g)
+[![Presentation](images/presentation.png) Virtual Machines (21)](https://1drv.ms/p/s!AvpSEd2J24STjBbo4k35C5v-ra8g)

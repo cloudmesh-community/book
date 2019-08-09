@@ -26,7 +26,7 @@ detect the resolution based on the monitor attached. Once detected the
 config file will be rewritten if necessary and the Pi will be rebooted
 with the correct resolution in the configuration file.
 
-:warning: In order for your monitor to work, you will need to add it
+![Warning](images/warning.png) In order for your monitor to work, you will need to add it
 to the script we provide. Use the following program and add
 appropriate cases for your monitor
 
@@ -114,7 +114,7 @@ a while. till the LAptop has assigned an IP address. Furthermore you
 may need to allow the Laptop to assign DHCP addresses when you plug in
 the ethernet cable.
 
-:o: we could need your help here telling us how you do this for your
+![No](images/no.png) we could need your help here telling us how you do this for your
 machine.
 
 After some time you will see that the Laptop has assigned an ip
@@ -155,9 +155,9 @@ In order to avoid always having to do the first step and getting
 different ip addresses, we recommend that you set up a static address
 for the raspberry.
 
-:o: please help identifying how to do this
+![No](images/no.png) please help identifying how to do this
 
-:warning: We recommend not to use the WiFi and the ethernet adapter at the same
+![Warning](images/warning.png) We recommend not to use the WiFi and the ethernet adapter at the same
 time as it can come to issues when you boot them up while they are
 both connected.
  

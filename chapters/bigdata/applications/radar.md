@@ -11,7 +11,7 @@ the changing climate. The Radar-Informatics unit provides a glimpse in
 the processes fueling global climate change and explains what methods
 are used for ice data acquisitions and analysis.
 
-[:scroll: Radar
+[![Presentation](images/presentation.png) Radar
 (58)](https://drive.google.com/open?id=0B8936_ytjfjmZ0VzZ0ZIenpUMTQ)
 
 ## Introduction

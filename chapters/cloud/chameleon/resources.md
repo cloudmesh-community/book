@@ -1,6 +1,6 @@
 # Chameleon Cloud Security Warning {#sec:chameleon-resources}
 
-:warning: **Chameleon cloud promotes insecure use of ssh while
+![Warning](images/warning.png) **Chameleon cloud promotes insecure use of ssh while
 suggesting passphrase less keys.** This is **very dangerous** due to
 the fact that someone could gain access to your computer and if a
 password less key is stolen easy access to other systems can be

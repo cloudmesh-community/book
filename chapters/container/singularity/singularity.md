@@ -578,16 +578,16 @@ Singularity containers designed specifically for the Comet environment.
 
 [Learn more about these containers for Comet](about_comet_singularity_containers.html).
 
-:o: the html sholuld be converted to markdown. use pandoc. This also
+![No](images/no.png) the html sholuld be converted to markdown. use pandoc. This also
 needs to be downloaded from the SDSC page
 
-:o: what is this?
+![No](images/no.png) what is this?
 
 [News Flash!]{style="color: #d31820; font-family: Tauri, sans-serif; font-size: 30px;"}
 
 Now there's an easier way to run a Singularity container on Comet ...
 
-:o: I think this need sto be updated to the just easier way?
+![No](images/no.png) I think this need sto be updated to the just easier way?
 
 ### PULL IT!
 

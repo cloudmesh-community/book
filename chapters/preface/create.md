@@ -175,7 +175,7 @@ $ make view
 
 ## Publishing the Book to GitHub
 
-> :warning: *This task is only to be done by *Gregor von Laszewski*. You
+> ![Warning](images/warning.png) *This task is only to be done by *Gregor von Laszewski*. You
 >           will not have to do this step.*
 
 To publish the book say

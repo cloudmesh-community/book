@@ -15,9 +15,9 @@ in-memory support of tasks, data flow separation, and portability.
 
 [![Video](images/video.png) Apache Data Analysis OpenStack (12:01)](https://www.youtube.com/watch?v=6vkgvGtyv4Q)
 
-[:scroll: Apache Data Analysis OpenStack (1)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
+[![Presentation](images/presentation.png) Apache Data Analysis OpenStack (1)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: Apache Data Analysis OpenStack - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
+[![Presentation](images/presentation.png) Apache Data Analysis OpenStack - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 MapReduce
 ---------
@@ -30,9 +30,9 @@ basic process of MapReduce is shown.
 
 [![Video](images/video.png) MapReduce (9:07)](https://www.youtube.com/watch?v=sSIGaDaulvA)
 
-[:scroll: MapReduce (6)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
+[![Presentation](images/presentation.png) MapReduce (6)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: MapReduce - pptx (6)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
+[![Presentation](images/presentation.png) MapReduce - pptx (6)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 
 Hadoop Framework
@@ -46,9 +46,9 @@ intertwined programs are then explored more fully.
 
 [![Video](images/video.png) Hadoop Framework (8:32)](https://www.youtube.com/watch?v=Vuroqly6FTE)
 
-[:scroll: Hadoop Framework (15)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
+[![Presentation](images/presentation.png) Hadoop Framework (15)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: Hadoop Framework - pptx (15)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
+[![Presentation](images/presentation.png) Hadoop Framework - pptx (15)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 
 Hadoop Tasks
@@ -66,9 +66,9 @@ in MapReduce.
 
 [![Video](images/video.png) Hadoop Tasks (11:01)](https://www.youtube.com/watch?v=UN4t3tvdjms)
 
-[:scroll: Hadoop Tasks (24)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
+[![Presentation](images/presentation.png) Hadoop Tasks (24)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: Hadoop Tasks - pptx (24)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
+[![Presentation](images/presentation.png) Hadoop Tasks - pptx (24)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 
 Fault Tolerance
@@ -83,9 +83,9 @@ discussion of class assignments.
 
 [![Video](images/video.png) Fault Tolerance (2:45)](https://www.youtube.com/watch?v=a3AlOTmD42k)
 
-[:scroll: Fault Tolerance (36)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
+[![Presentation](images/presentation.png) Fault Tolerance (36)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
-[:scroll: Fault Tolerance - pptx (36)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
+[![Presentation](images/presentation.png) Fault Tolerance - pptx (36)](https://drive.google.com/open?id=0B88HKpainTSfTVlNRzRMemNaZEU)
 
 
 Hadoop WordCount on VMs
@@ -93,9 +93,9 @@ Hadoop WordCount on VMs
 
 [![Video](images/video.png) Hadoop WordCount on VMs (7:30)](https://www.youtube.com/watch?v=1TrjmcPHrRU)
 
-[:scroll: Hadoop WordCount on VMs (17)](https://drive.google.com/open?id=0B88HKpainTSfZENxeUlOcVFUTkU)
+[![Presentation](images/presentation.png) Hadoop WordCount on VMs (17)](https://drive.google.com/open?id=0B88HKpainTSfZENxeUlOcVFUTkU)
 
-[:scroll: Hadoop WordCount on VMs - pptx (17)](https://drive.google.com/open?id=0B88HKpainTSfcVNHWUJaUDRoYUk)
+[![Presentation](images/presentation.png) Hadoop WordCount on VMs - pptx (17)](https://drive.google.com/open?id=0B88HKpainTSfcVNHWUJaUDRoYUk)
 
 Programming on a Compute Cluster
 --------------------------------
@@ -108,9 +108,9 @@ and machine failures.
 
 [![Video](images/video.png) Programming on a Compute Cluster (6:01)](https://www.youtube.com/watch?v=rRR2ALa5CUA)
 
-[:scroll: Programming on a Compute Cluster (1)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
+[![Presentation](images/presentation.png) Programming on a Compute Cluster (1)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
-[:scroll: Programming on a Compute Cluster - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
+[![Presentation](images/presentation.png) Programming on a Compute Cluster - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
 
 How Hadoop Runs on a MapReduceJob
 ---------------------------------
@@ -124,9 +124,9 @@ given at the end.
 
 [![Video](images/video.png) How Hadoop Runs on a MapReduceJob (9:25)](https://www.youtube.com/watch?v=KWLY_maNEPA)
 
-[:scroll: How Hadoop Runs on a MapReduceJob (8)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
+[![Presentation](images/presentation.png) How Hadoop Runs on a MapReduceJob (8)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
-[:scroll: How Hadoop Runs on a MapReduceJob - pptx (8)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
+[![Presentation](images/presentation.png) How Hadoop Runs on a MapReduceJob - pptx (8)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
 
 Literature Review
 -----------------
@@ -139,9 +139,9 @@ is followed by MapReduce and BigTable.
 
 [![Video](images/video.png) Literature Review (9:43)](https://www.youtube.com/watch?v=5YmjrhEFQsk)
 
-[:scroll: Literature Review (16)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
+[![Presentation](images/presentation.png) Literature Review (16)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
-[:scroll: Literature Review - pptx (16)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
+[![Presentation](images/presentation.png) Literature Review - pptx (16)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
 
 
 Introduction to BLAST
@@ -156,9 +156,9 @@ Hospital. BLAST uses scores to find similar sequences in databases.
 
 [![Video](images/video.png) Introduction to BLAST (8:27)](https://www.youtube.com/watch?v=i3H9HmUYfq8)
 
-[:scroll: Introduction to BLAST (1)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
+[![Presentation](images/presentation.png) Introduction to BLAST (1)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
 
-[:scroll: Introduction to BLAST - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfMDAwZm5uQlZWckU)
+[![Presentation](images/presentation.png) Introduction to BLAST - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfMDAwZm5uQlZWckU)
 
 
 BLAST Parallelization
@@ -172,9 +172,9 @@ about articles featuring BLAST is provided at the end.
 
 [![Video](images/video.png) BLAST Parallelization (4:44)](https://www.youtube.com/watch?v=isc0MjkwTlk)
 
-[:scroll: BLAST Parallelization (13)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
+[![Presentation](images/presentation.png) BLAST Parallelization (13)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
 
-[:scroll: BLAST Parallelization - pptx (13)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
+[![Presentation](images/presentation.png) BLAST Parallelization - pptx (13)](https://drive.google.com/open?id=0B88HKpainTSfcUkwN0l1VHBEdlU)
 
 
 SIMD vs MIMD;SPMD vs MPMD
@@ -191,9 +191,9 @@ types of SIMD. SPMD and MPMD are two other types of model.
 
 [![Video](images/video.png) SIMD vs MIMD;SPMD vs MPMD (9:42)](https://www.youtube.com/watch?v=zHQiR56Zmtc)
 
-[:scroll: SIMD vs MIMD;SPMD vs MPMD (1)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) SIMD vs MIMD;SPMD vs MPMD (1)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: SIMD vs MIMD;SPMD vsMPMD - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) SIMD vs MIMD;SPMD vsMPMD - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 
 Data Locality
 -------------
@@ -208,9 +208,9 @@ available slots in terms of best local composition, not global.
 
 [![Video](images/video.png) Data Locality (8:36)](https://www.youtube.com/watch?v=RqLA7_asK50)
 
-[:scroll: Data Locality (10)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) Data Locality (10)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: Data Locality - pptx (10)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) Data Locality - pptx (10)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 
 
 Optimal Data Locality
@@ -227,9 +227,9 @@ outperforming the others.
 
 [![Video](images/video.png) Optimal Data Locality (4:17)](https://www.youtube.com/watch?v=Ok8vdrFXo5w)
 
-[:scroll: Optimal Data Locality (17)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) Optimal Data Locality (17)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: Optimal Data Locality - pptx (17)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) Optimal Data Locality - pptx (17)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 
 
 Task Granularity
@@ -248,9 +248,9 @@ with either single or multiple jobs.
 
 [![Video](images/video.png) Task Granularity (9:51)](https://www.youtube.com/watch?v=u9UpgTnOZz4)
 
-[:scroll: Task Granularity (29)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) Task Granularity (29)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: Task Granularity - pptx (29)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) Task Granularity - pptx (29)](https://drive.google.com/open?id=0B88HKpainTSfVGdyVzNjTzdfb3c)
 
 
 Resource Utilization and Speculative Execution
@@ -266,6 +266,6 @@ higher energy demands.
 
 [![Video](images/video.png) Resource Utilization and Speculative Execution (3:52)](https://www.youtube.com/watch?v=wWyFiqDIYus)
 
-[:scroll: Resource Utilization and Speculative Execution (46)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
+[![Presentation](images/presentation.png) Resource Utilization and Speculative Execution (46)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
-[:scroll: Resource Utilization and Speculative Execution - pptx (46)](https://drive.google.com/openid=0B88HKpainTSfVGdyVzNjTzdfb3c)
+[![Presentation](images/presentation.png) Resource Utilization and Speculative Execution - pptx (46)](https://drive.google.com/openid=0B88HKpainTSfVGdyVzNjTzdfb3c)

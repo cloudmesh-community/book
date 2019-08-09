@@ -1,3 +1,3 @@
-# Harp :o:
+# Harp ![No](images/no.png)
 
-:o: TODO TA: complete harp section
+![No](images/no.png) TODO TA: complete harp section

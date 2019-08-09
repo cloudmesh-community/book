@@ -50,7 +50,7 @@ Examples, and Chapters, or excelent Project reports and code.
    * [Project Natic](#S:natick)
    * [Lambda Expressions](#lambda-expressions)
 
-:o: please fix links
+![No](images/no.png) please fix links
 
 **Chapter:**
 
@@ -87,7 +87,7 @@ you. The emphasize here is that we do not decide them for you, but we
 identify them with you.
 
 Sample Topics that could form a section or chapter are clearly marked
-with a :question:. There are plenty in the handbook, but you are
+with a ![Question](images/question.png). There are plenty in the handbook, but you are
 welcome to define your own contributions. Discuss them with us in the
 online hours.
 
@@ -301,7 +301,7 @@ Gregor von Laszewski or the TAs is needed to showcase progress.
 
 Sections and subsections are to be added to the `book` github repo. Do
 a pull request.  The headline of the section needs to be marked with a
-:hand: if you still work on it, marked with a :smiley: if you want it
+![Construction](images/construction.png) if you still work on it, marked with a ![Smiley](images/smile.png) if you want it
 to be graded. and have all hids for people that contribute to that
 section.
 

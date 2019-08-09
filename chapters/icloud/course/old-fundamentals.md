@@ -6,7 +6,7 @@ Retired lectures
 
 [![Video](images/video.png) Introduction - (retired) (8:31)](https://www.youtube.com/watch?v=5lKj8_nqj9k)
 
-[:scroll: Introduction - (retired) (1)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
+[![Presentation](images/presentation.png) Introduction - (retired) (1)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
 Data Center Model
 -----------------
@@ -21,7 +21,7 @@ further discussion.
 
 [![Video](images/video.png) Data Center Model (8:08)](https://www.youtube.com/watch?v=6Hq_LuLB-RU)
 
-[:scroll: Data Center Model (9)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
+[![Presentation](images/presentation.png) Data Center Model (9)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
 Data Intensive Sciences
 -----------------------
@@ -35,7 +35,7 @@ time trying to learn different methods of cloud and supercomputing.
 
 [![Video](images/video.png) Data Intensive Sciences (2:44)](https://www.youtube.com/watch?v=Ptoj3BME_z4)
 
-[:scroll: Data Intensive Sciences (19)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
+[![Presentation](images/presentation.png) Data Intensive Sciences (19)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
 IaaS, PaaS and SaaS
 -------------------
@@ -49,7 +49,7 @@ approaches to MapReduce are compared.
 
 [![Video](images/video.png) IaaS/PaaS/SaaS (10:17)](https://www.youtube.com/watch?v=_irz3v1gT-A)
 
-[:scroll: IaaS, PaaS and SaaS (25)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
+[![Presentation](images/presentation.png) IaaS, PaaS and SaaS (25)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
 Challenges
 ----------
@@ -65,5 +65,5 @@ students to correctly place software in a hierarchy of computing.
 
 [![Video](images/video.png) Challenges (5:27)](https://www.youtube.com/watch?v=VpDRGcBe4s8)
 
-[:scroll: Challenges (42)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
+[![Presentation](images/presentation.png) Challenges (42)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 

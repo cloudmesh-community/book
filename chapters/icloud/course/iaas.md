@@ -23,9 +23,9 @@ stored, as well as migrated across hardware.
 
 [![Video](images/video.png) Growth of Virtual Machines (10:16)](https://www.youtube.com/watch?v=5oKoAPCXLws)
 
-[:scroll: Growth of Virtual Machines (28)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
+[![Presentation](images/presentation.png) Growth of Virtual Machines (28)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
-[:scroll: Growth of Virtual Machines - pptx (28)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
+[![Presentation](images/presentation.png) Growth of Virtual Machines - pptx (28)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
 
 Implementation Levels
 ---------------------
@@ -40,9 +40,9 @@ interaction between CUDA and VMs, creating a virtual CUDA library.
 
 [![Video](images/video.png) Implementation Levels (7:57)](https://www.youtube.com/watch?v=Le-kv-eAhvg)
 
-[:scroll: Implementation Levels (41)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
+[![Presentation](images/presentation.png) Implementation Levels (41)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
-[:scroll: Implementation Levels - pptx (41)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
+[![Presentation](images/presentation.png) Implementation Levels - pptx (41)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
 
 
 Tools and Mechanisms
@@ -59,9 +59,9 @@ ESX server from VMware.
 
 [![Video](images/video.png) Tools and Mechanisms (7:32)](https://www.youtube.com/watch?v=VYz5rp5HDVE)
 
-[:scroll: Tools and Mechanisms (47)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
+[![Presentation](images/presentation.png) Tools and Mechanisms (47)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
-[:scroll: Tools and Mechanisms - pptx (47)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
+[![Presentation](images/presentation.png) Tools and Mechanisms - pptx (47)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
 
 CPU, Memory & I/O Devices
 -------------------------
@@ -77,9 +77,9 @@ detailed VMware example.
 
 [![Video](images/video.png) CPU, Memory \& I/O Devices (6:41)](https://www.youtube.com/watch?v=I_J4eUUavSY)
 
-[:scroll: CPU, Memory \& I/O Devices (58)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
+[![Presentation](images/presentation.png) CPU, Memory \& I/O Devices (58)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
-[:scroll: CPU, Memory \& I/O Devices - pptx (58)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
+[![Presentation](images/presentation.png) CPU, Memory \& I/O Devices - pptx (58)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
 
 Clusters and Resource Management
 --------------------------------
@@ -94,9 +94,9 @@ lost. An example of this is demonstrated with XEN.
 
 [![Video](images/video.png) Clusters and Resource Management (5:07)](https://www.youtube.com/watch?v=Mn9pgGtFy4g)
 
-[:scroll: Clusters and Resource Management (66)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
+[![Presentation](images/presentation.png) Clusters and Resource Management (66)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
-[:scroll: Clusters and Resource Management - pptx (66)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
+[![Presentation](images/presentation.png) Clusters and Resource Management - pptx (66)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
 
 Data Center Automation
 ----------------------
@@ -109,9 +109,9 @@ machines. Suggested reading material is provided at the end.
 
 [![Video](images/video.png) Data Center Automation (3:30)](https://www.youtube.com/watch?v=mvXBRvTwAVg)
 
-[:scroll: Data Center Automation (74)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
+[![Presentation](images/presentation.png) Data Center Automation (74)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
-[:scroll: Data Center Automation - pptx (74)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
+[![Presentation](images/presentation.png) Data Center Automation - pptx (74)](https://drive.google.com/open?id=0B88HKpainTSfb1ZhWG4zTEg0SVk)
 
 Clouds in the Workplace
 -----------------------
@@ -127,7 +127,7 @@ separate elements like Eucalyptus, Xen and VMware.
 
 [![Video](images/video.png) Clouds in the Workplace (7:13)](https://www.youtube.com/watch?v=Endt6mWUfEo)
 
-[:scroll: Clouds in the Workplace (1)](https://drive.google.com/open?id=1kkTi8YXMR7cPR-9nWgnj9UgkXm4rUfHm)
+[![Presentation](images/presentation.png) Clouds in the Workplace (1)](https://drive.google.com/open?id=1kkTi8YXMR7cPR-9nWgnj9UgkXm4rUfHm)
 
 Checklists and Challenges
 -------------------------
@@ -149,7 +149,7 @@ offers data confidentiality.
 
 [![Video](images/video.png) Checklists and Challenges (9:08)](https://www.youtube.com/watch?v=cwtWpZcWuQ0)
 
-[:scroll: Checklists and Challenges (11)](https://drive.google.com/open?id=1kkTi8YXMR7cPR-9nWgnj9UgkXm4rUfHm)
+[![Presentation](images/presentation.png) Checklists and Challenges (11)](https://drive.google.com/open?id=1kkTi8YXMR7cPR-9nWgnj9UgkXm4rUfHm)
 
 Data Center Setup
 -----------------
@@ -169,7 +169,7 @@ array server in warehouse server setup is listed.
 
 [![Video](images/video.png) Data Center Setup (7:49)](https://www.youtube.com/watch?v=zBVtXzqF2ew)
 
-[:scroll: Data Center Setup (16)](https://drive.google.com/open?id=1kkTi8YXMR7cPR-9nWgnj9UgkXm4rUfHm)
+[![Presentation](images/presentation.png) Data Center Setup (16)](https://drive.google.com/open?id=1kkTi8YXMR7cPR-9nWgnj9UgkXm4rUfHm)
 
 Cultivating Clouds
 ------------------
@@ -189,6 +189,6 @@ copyright protection.
 
 [![Video](images/video.png) Cultivating Clouds (5:10)](https://www.youtube.com/watch?v=zxoqRdvXM28)
 
-[:scroll: Cultivating Clouds (15)](https://drive.google.com/open?id=1tTiWbi5_elBXmB--wMiCCB-3KtJa50AP)
+[![Presentation](images/presentation.png) Cultivating Clouds (15)](https://drive.google.com/open?id=1tTiWbi5_elBXmB--wMiCCB-3KtJa50AP)
 
-[:scroll: Cultivating Clouds - Conclusions (1)](https://drive.google.com/open?id=15ofQSh3-BQNzTeycnEgKh5UXqGR3YMiz)
+[![Presentation](images/presentation.png) Cultivating Clouds - Conclusions (1)](https://drive.google.com/open?id=15ofQSh3-BQNzTeycnEgKh5UXqGR3YMiz)

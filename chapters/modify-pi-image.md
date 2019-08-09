@@ -24,7 +24,7 @@ generated unique name.
 
 ---
 
-:warning: This has only been tested on an Ubuntu VM. Both the .img file
+![Warning](images/warning.png) This has only been tested on an Ubuntu VM. Both the .img file
 and the mount point need to be on Ubuntu VM drives. The mount will fail
 on a Mac shared drive.
 
@@ -60,11 +60,11 @@ The customized image will be in a subdirectory called
 to remove the `mountpoint` directory and move the
 `make-pi-images.pyoutput`.
 
-#### TODO: Automated Cluster SD-Card Script :o:
+#### TODO: Automated Cluster SD-Card Script ![No](images/no.png)
 
 ---
 
-:warning: This is just an idea and has not been implemented
+![Warning](images/warning.png) This is just an idea and has not been implemented
 
 ---
 

@@ -1,4 +1,4 @@
-# Setting up Large PI clusters :o: :hand: fa18-516-23
+# Setting up Large PI clusters ![No](images/no.png) ![Construction](images/construction.png) fa18-516-23
 
 ## cm-burn
 

@@ -20,7 +20,7 @@ other sports. We discuss Performance-Dollar relationship including new
 stadiums and media/advertising. We look at classic baseball averages and
 sophisticated measures like Wins Above Replacement.
 
-[:scroll: Overview
+[![Presentation](images/presentation.png) Overview
 (40)](https://drive.google.com/open?id=0B8936_ytjfjmbWt6bGZuTFJ4TFE)
 
 ### Introduction and Sabermetrics (Baseball Informatics) Lesson
@@ -55,7 +55,7 @@ Sabermetrics Example, Summary of Sabermetrics.
 This unit discusses 'advanced sabermetrics' covering advances possible
 from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.
 
-[:scroll: Sporta II
+[![Presentation](images/presentation.png) Sporta II
 (41)](https://drive.google.com/open?id=0B8936_ytjfjmUDh0Y01GbW9tWnc)
 
 ### Pitching Clustering
@@ -94,7 +94,7 @@ We look at Wearables and consumer sports/recreation. The importance of
 spatial visualization is discussed. We look at other Sports: Soccer,
 Olympics, NFL Football, Basketball, Tennis and Horse Racing.
 
-[:scroll: Sport Sports III
+[![Presentation](images/presentation.png) Sport Sports III
 (44)](https://drive.google.com/open?id=0B8936_ytjfjmUGdpUzFaRzhyWXM)
 
 ### Wearables
