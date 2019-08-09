@@ -448,10 +448,11 @@ install it, with *pyenv*.
 
 ### Miniconda
 
-![](../../images/warning.png){height=12pt} This section about miniconda is experimental and has not been 
-tested. We are looking for contributors that help completing
-it. If you use anaconda or miniconda we recommend to manage it via
-pyenv.
+> ![](images/warning.png){height=12pt}
+> *This section about miniconda is experimental and has not been 
+> tested. We are looking for contributors that help completing
+> it. If you use anaconda or miniconda we recommend to manage it via
+> pyenv.*
 
 To install mini conda you can use the following commands:
 
@@ -477,7 +478,7 @@ To install cloudmesh cmd5 please use:
 
 ### Anaconda
 
-![](../../images/warning.png){height=12pt} This section about anaconda is experimental and has not
+![](images/warning.png){height=12pt} This section about anaconda is experimental and has not
 been tested. We are looking for contributors that help completing
 it.
 

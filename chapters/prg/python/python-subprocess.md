@@ -312,7 +312,7 @@ Its very important for the application to handle security aspect explicitly.
 * `Popen.wait()`: Wait for child process to terminate. Set and return
   returncode attribute.
 
-  :warning: *This will deadlock when using
+  ![](images/warning.png){height=12pt} *This will deadlock when using
   `stdout=PIPE` and/or `stderr=PIPE` and the child process generates
   enough output to a pipe such that it blocks waiting for the OS pipe
   buffer to accept more data. Use `communicate()` to avoid that.*
@@ -346,7 +346,7 @@ Its very important for the application to handle security aspect explicitly.
 
 The following attributes are also available:
 
-:warning: *Use `communicate()` rather than< .stdin.write, .stdout.read or
+![](images/warning.png){height=12pt} *Use `communicate()` rather than< .stdin.write, .stdout.read or
 .stderr.read to avoid deadlocks due to any of the other OS pipe
 buffers filling up and blocking the child process.*
 	
