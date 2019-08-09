@@ -2,7 +2,7 @@
 
 | N | # | Title | Assignee | Labels |
 | ---: | ---: | :-------------------- | :-------- | :-------- |
-| 1 | 456 | [Julia bib.md change ambiguous references][i456] | None | bug |
+| 1 | 460 | [incorporated previous requested changes][i460] | None |  |
 | 2 | 453 | [Update azure.md][i453] | bfeng |  |
 | 3 | 395 | [Main Frame definition and discussion ][i395] | tbalson | review section |
 | 4 | 384 | [Section : AWS CloudFormation][i384] | None |  |
@@ -82,7 +82,7 @@
 | 78 | 76 | [openapi demo][i76] | laszewsk | assigned internal |
 | 79 | 9 | [Internal: Slides to video are not included in the introduction ][i9] | laszewsk | bug |
 
-[i456]: https://github.com/cloudmesh-community/book/pull/456
+[i460]: https://github.com/cloudmesh-community/book/pull/460
 [i453]: https://github.com/cloudmesh-community/book/pull/453
 [i395]: https://github.com/cloudmesh-community/book/issues/395
 [i384]: https://github.com/cloudmesh-community/book/issues/384

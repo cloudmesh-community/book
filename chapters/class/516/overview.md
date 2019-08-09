@@ -28,19 +28,14 @@ us updating the ePub and to use additional resources as appropriate.
 
 The list includes:
 
+* Cloud Computing, Gregor von Laszewski, Ed. 2019 [@las19cloudcomputing]
+* Cloud Technologies, Gregor von Laszewski [@las19technologies]
+* Project Report Format, Gregor von Laszewski [@e516-report-sample]
+
+
 * Introduction to Python
 * Using Markdown for Academic Papers 
 * Plagiarism Certificate
-* ... 
-* ![](images/tech-cover.jpg){width=50px} [Cloud Technologies, Gregor von Laszewski](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)
-
-* <https://github.com/cloudmesh-community/proceedings-fa18/tree/master/project-report>
-
-  A single page has about 1000 words in ACM format. References are managed in
-  bibtex as documented in:
-
-* <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true> 
-
 
 ## Help
 
