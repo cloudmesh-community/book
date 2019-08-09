@@ -54,7 +54,7 @@ def addurl():
     mdfiles = glob("*.md")
     tableheaderpt = re.compile("(.+?)\| keywords \|(.*?)\|\n(.*)", re.M|re.I|re.S)
     for amdfile in mdfiles:
-        print amdfile
+        print(amdfile)
         contentin = None
         with open(amdfile) as fin:
             contentin = fin.read()
@@ -68,7 +68,7 @@ def addurl():
                                                       headerkwds,
                                                       link,
                                                       content)
-            print output
+            print(output)
 
             with open(amdfile, 'w') as fout:
                 fout.write(output)
@@ -77,7 +77,7 @@ def removeurl():
     mdfiles = glob("*.md")
     linkpt = re.compile("(.+?)Link to source in github(.+?)\n(.*)", re.M|re.I|re.S)
     for amdfile in mdfiles:
-        print amdfile
+        print(amdfile)
         contentin = None
         with open(amdfile) as fin:
             contentin = fin.read()
@@ -87,7 +87,7 @@ def removeurl():
             linkline = matchret.group(2)
             content = matchret.group(3)
             output = "%s%s" % (beforelink, content)
-            print output
+            print(output)
 
             with open(amdfile, 'w') as fout:
                 fout.write(output)
