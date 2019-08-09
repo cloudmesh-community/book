@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * This is one of the most important sections of the book, studdy it carefully.
 * learn how to use [SSH]{.index} keys 

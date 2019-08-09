@@ -3,7 +3,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Understand REST Servioces.
 * Understand OpenAPI.

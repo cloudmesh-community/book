@@ -3,7 +3,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Understand Message systems for the cloud
 * Learn about [MQTT]{.index}

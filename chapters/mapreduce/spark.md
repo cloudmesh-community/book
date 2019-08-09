@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Learn about Apache Spark
 * Learn perform data analysis using a Spark cluster and Python.

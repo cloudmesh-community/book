@@ -12,7 +12,7 @@ Sample chapters can be reached if you download teh PDF document locally and clic
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * This is the syllabus of the class. It will be updated throughout the semester, so look here for changes.
 * Identify if this is the right class for you.

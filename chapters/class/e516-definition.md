@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Compare different definitions of cloud computing.
 * Review the History of cloud computing.

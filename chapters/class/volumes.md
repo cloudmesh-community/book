@@ -3,7 +3,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Identify what other students have done previously.
 * Look at previous chapters, which are collected as technology reviews.

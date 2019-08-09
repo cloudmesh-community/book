@@ -3,7 +3,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Introduction to basic MongoDB knowledge
 * Use of MongoDB via PyMongo

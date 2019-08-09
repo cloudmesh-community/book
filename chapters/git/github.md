@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Be able to use the [github]{.index} cloud sevices to collaborately develop contents and programs.
 * Be able to use github as part of an open source project.

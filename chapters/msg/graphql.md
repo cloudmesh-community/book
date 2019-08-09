@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Learn about GraphQL
 * Develop a GraphQL Server in Python

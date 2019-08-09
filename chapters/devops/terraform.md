@@ -6,7 +6,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Introduction to Terraform
 * Basic Terraform Script to create an EC2 instance and Terraform commands

@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Be able to experiment with virtual machines on your computer before you go on a cloud.
 * Simulate a virtual cluster with multiple VMs running on your computer if it is big enough.

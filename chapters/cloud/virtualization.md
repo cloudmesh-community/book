@@ -3,7 +3,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Gain understanding of the basic the concepts of virtualization
 * Understand what a virtual machine is

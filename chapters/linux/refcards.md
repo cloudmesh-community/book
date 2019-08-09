@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Obtain quickly information about technical aspects with the help of [reference cards]{.index}.
 

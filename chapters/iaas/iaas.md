@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Review IaaS servise by prominent cloud providers.
 * Understand how to write Python programs on managing virtual machines with libcloud.
