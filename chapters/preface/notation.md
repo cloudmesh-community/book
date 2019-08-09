@@ -160,7 +160,7 @@ and used in text:
 
 $$a^2+b^2=c^2$${#eq:pythagoras}
 
-It will render as: As we see in @eq:pytagoras. 
+It will render as: As we see in @eq:pythagoras. 
 
 The equation number is optional. Inline equations just use one dollar
 sign and do not need an equation number:
