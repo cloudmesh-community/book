@@ -1,4 +1,4 @@
-# Cloud Foundry - Open Source PaaS :o::hand: fa18-516-11 
+# Cloud Foundry - Open Source PaaS
  
 ---
  
@@ -32,6 +32,8 @@ infrastructure-agnostic architecture, Cloud Foundry, as shown in
 @fig:OpenPaaS focused on three main categories: *Clouds,Frameworks and
 Services* [@Badola2015].
 
+:o: Image needs to be replaced as no longer available
+ 
 ![Cloud Foundry - Open PaaS [@harris_2011]](images/Cloud-Foundry-as-Open-PaaS.jpg){#fig:OpenPaaS}
 
 ### Category: Clouds

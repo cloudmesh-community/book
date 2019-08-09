@@ -4,7 +4,7 @@
 
 We recommend that you know one programming language using object
 oriented programming. Although most activities are done in Python, this
-programming language does not have to be pythin as it can easily be
+programming language does not have to be Python as it can easily be
 learned throughout the semester. No background in cloud computing is
 needed.
 
@@ -63,19 +63,19 @@ are two different ways on how you can take this class.
 * chronological. Thus you can follow our lecture alos in chronological
 * order.
   
-Please note that we have set asside a recommended set of weekly Lab
+Please note that we have set aside a recommended set of weekly Lab
 activities. The activities are pass-fail and will be integrated in your
 grade. You are certainly allowed to work ahead, but please be aware that
 based on feedback and observation we may make modifications to the Labs.
 
 Typically,  Lab activities are supposed to be completed within one week
-as it allerts us of problems you might have that we can than address.
+as it alerts us of problems you might have that we can than address.
 This assures us that we know you will have no issues with your project.
 
 Lab activities will not receive any credit if you are a residential
 student and the activity has not been completed within one week.
 However, residential students  will get two **Delay a Lab for One
-Week** passes that you can apply to any of the Labs and still get credit.  
+Week** passes that you can apply to any of the Labs and still get credit.
   
 If you are an online student we recommend that you finish the Labs also
 in one week. However, you will get eight **Delay a Lab for One
@@ -102,8 +102,8 @@ The Lab's will prepare you towards achieving these assignments.
 
 
 As part of cloud engineering you will be exposed to a large set of
-technologies. To sharoen your skills in analysing and evaluating these
-technologiesYOu will be asked to prepare a technology review. 
+technologies. To sharpen your skills in analyzing and evaluating these
+technologies, you will be asked to prepare a technology review. 
 
 This includes a substantial written document that can be added as a
 chapter to the lecture notes. The review must be done on a topic that is
@@ -111,7 +111,7 @@ not yet included in our book. The review will not include advertisement
 statements form those that have developed the technology, but will
 qualitatively describe the technology and potentially contrast it to
 other related technologies. In addition you will have to develop an
-example showcaing how to use the technology. The minimal length of a
+example showcasing how to use the technology. The minimal length of a
 review is about 800 words.
 
 An example for a Technology review is the section about 
@@ -167,7 +167,7 @@ describes which packages are used and what licenses these packages have.
 #### Project Report
 
 A project report is to be delivered and continuously improved throughout
-the semester in github. It includes not just the analysis of a topic,
+the semester in GitHub. It includes not just the analysis of a topic,
 but a short description of the Architecture and code, with
 **benchmarks** and demonstrated use. Obviously it is longer than a term
 paper and includes descriptions about reproducibility of the
@@ -181,7 +181,7 @@ required:
 -   1400 words, three students in the project  
 
 Projects with more students are expected to do more programming. The
-report is written in markdown and checked into github. A Report could be
+report is written in markdown and checked into GitHub. A Report could be
 substituted by a manual and benchmarks.
   
 For certain projects, the requirement of a report can be waved or is
@@ -189,12 +189,12 @@ significantly reduced while replacing it with more programming
 activities. This includes
 
 * Any project that enhances cloudmesh
-* Building a large cloud cluster with Rasperri Pi's
+* Building a large cloud cluster with Raspberry Pi's
 * Any Application project showcasing NIST big data reference architecture 
   use (there is a hard deadline of the NIST project by Dec 1st).
 
 However you still have to do a manual and usage examples, benchmarks and 
-pytests for them.
+`pytest`s for them.
 
   
 #### Project Code
@@ -202,11 +202,11 @@ pytests for them.
 You are expected to deliver a **documented** and **reproducible** code
 and unit tests that allows a TA to replicate the project with ease. In
 case you use vm or container images, they must be created from **scratch
-locally** and may not be uploaded to services such as dockerhub. You
+locally** and may not be uploaded to services such as DockerHub. You
 can, however, reuse approved vendor uploaded images such as from ubuntu
 or centos or other linux distributions. All code, scripts, and
 documentation must be uploaded to github.com under the class specific
-github directory. 
+GitHub directory. 
 
 
 #### Project Data
@@ -234,7 +234,7 @@ demonstration of the examples in real time.
 
 #### Bibliography
 
-All bibliography has to be provided in a bibtex file that **must**
+All bibliography has to be provided in a BibTex file that **must**
 either be validated with **jabref** or with **emacs**. Please be advised
 doing references correctly takes some time so you want to do this early
 and throughout the semester. What would take less than 5 minutes a week,
@@ -243,14 +243,14 @@ Please note that exports of Endnote or other bibliography management
 tools do not lead to properly formatted bibtex files, despite their
 claims of doing so. You will have to clean them up and we recommend to
 do it the other way around. Hence, the easiest way to manage your
-bibliography is with jabref or emacs. Make sure **labels** only include
+bibliography is with *jabref* or *emacs*. Make sure **labels** only include
 characters from [a-zA-Z0-9-]. Use dashes and not underscore and colons
-(`_` ,`:`) in the label. Your labels mst be meaningful and unique. We
-will deduct points if you submit an invalid bibtex file to github. So
+(`_` ,`:`) in the label. Your labels must be meaningful and unique. We
+will deduct points if you submit an invalid *BibTex* file to GitHub. So
 please make sure your file is validated. You can even create your own
-checks with tools such as biber.
+checks with tools such as `biber`.
 
-#### Reproducability
+#### Reproducibility
 
 In general, any project must be deployable by the TA. If it takes hours
 to deploy your project, please talk to us before final
@@ -263,7 +263,7 @@ You have plenty of time to execute a wonderful project but you need to
 work consistently on it. Starting one week before the deadline will
 not work. 
 
-The bets way to asure reproducability is to use `pytest`. We will
+The bets way to asure reproducibility is to use `pytest`. We will
 discuss how to do that in class.
 
 
@@ -281,7 +281,7 @@ In general your deliverables will include the following
 - Each team member must provide a benchmark on their computer and a
   cloud IaaS, where the cloud is different from each team member. 
   
-- We require you rto write one or more pytest's that deploys, run,
+- We require you to write one or more pytest's that deploys, run,
   kill, view, clean that deploys your environment, runs application,
   kills it, views the result and cleans up after wards. 
 
@@ -328,12 +328,12 @@ details in one of our labs.
 
 ## Submission 
 
-All submissins are conducted via github if not otherwise instructed.
-Technology reviews are to be added to the `book` github repo with the
+All submissions are conducted via GitHub if not otherwise instructed.
+Technology reviews are to be added to the `book` GitHub repo with the
 help of pull requests. The TA's will work with you to integrate them. 
  
-As we are working continiously throughout the semester you must indicate your activities in a 
-README.yml file in your github repo. The Github Repo we will define for you in the first 2 weeks of the semester.
+As we are working continuously throughout the semester you must indicate your activities in a 
+README.yml file in your GitHub repo. The GitHub Repo we will define for you in the first 2 weeks of the semester.
 
 
 An example for the README.yaml file is shown next
@@ -363,17 +363,17 @@ project:
     code: TBD
 ```
 
-You **MUST** run yamllint on the README.yml file. YAML errors will cause
+You **MUST** run `yamllint` on the `README.yml` file. YAML errors will cause
 point deductions. Any invalid yaml file will result in point deductions.
 Please keep your yaml file valid at any time. Our scripts depend on it.
 The yaml file will also be used to create a list for TAs to review your
 deliverables. If it's not in the yaml file it will not be reviewed.
-Please note that it is not sufficient to just run yamllint, but to
-compare your yaml file carefully with the README.yml examples. Make sure
+Please note that it is not sufficient to just run `yamllint`, but to
+compare your yaml file carefully with the `README.yml` examples. Make sure
 you do the indentation with 2 spaces, do not use the TAB character and
 make sure you use the list and attribute organization with proper dash
 placement. Work with the TAs if you have difficulties. If you copy, only
-copy from the raw content in github. If you work on more 
+copy from the raw content in GitHub. If you work on more 
 
 ## Bonus Projects
 
@@ -387,7 +387,7 @@ In addition to these artifacts, there will also be a participation
 component in class that will be determined based on your productive
 contributions to piazza to help others that have questions and
 contributions to the books to, for example, improve sections with
-spelling, grammer or content. We can see from the github history if
+spelling, grammer or content. We can see from the GitHub history if
 you conducted such improvements. Make sure that technical
 contributions, work on all OSes and are not just targeting a
 single OS if the improvement is of general nature (exceptions apply).
