@@ -1,0 +1,25 @@
+---
+title: Introduction to Python
+creator:
+- role: editor
+  text: Gregor von Laszewski
+description: A brief introduction to Python
+rights: (c) Gregor von Laszewski, 2018
+language: en-US
+stylesheet: template/epub.css
+cover-image: cover/cover.jpg
+figureTitle: Figure
+figPrefix: Figure
+eqnPrefix: Equation
+secPrefix: Section
+tblPrefix: Table
+linkReferences: True
+nameInLink: True
+fignos-caption-name: Figure
+fignos-plus-name: Figure
+xnos-number-sections: True
+keywords: [cloud, container]
+mustache: abbrev.yaml
+abstract: |
+  This book contains an introduction to Python
+...
