@@ -11,7 +11,7 @@ FutureSystems evolved from FutureGrid
 
 In this video we introduce FutureGrid a precursor to FutureSystems.
 
-[:clapper: Systems 12:12 FutureGid](http://youtu.be/RibpNSyd4qg)
+[![Video](images/video.png) Systems 12:12 FutureGid](http://youtu.be/RibpNSyd4qg)
 
 At this time we are replacing several of the older systems. To use these
 new systems you need to ask for access through them via our portal.
@@ -24,7 +24,7 @@ step in gaining access to FutureSystems.
 
 See Lesson 4 and 7 for SSH key generation on Linux, macOS or Windows.
 
-[:clapper: Python 11:50 FutureGrid Introduction](http://youtu.be/X6zeVEALzTk)
+[![Video](images/video.png) Python 11:50 FutureGrid Introduction](http://youtu.be/X6zeVEALzTk)
 
 SSH Key Generation using ssh-keygen command
 -------------------------------------------
@@ -33,7 +33,7 @@ SSH keys are used to identify user accounts in most systems including
 FutureSystems. This lesson walks you through generating an SSH key via
 ssh-keygen command line tool.
 
-[:clapper: Python 4:06 ssh-key gen](http://youtu.be/pQb2VV1zNIc)
+[![Video](images/video.png) Python 4:06 ssh-key gen](http://youtu.be/pQb2VV1zNIc)
 
 Shell Access via SSH
 --------------------
@@ -41,7 +41,7 @@ Shell Access via SSH
 This lesson explains how to get access FutureSystems resources vis SSH
 terminal with your registered SSH key.
 
-[:clapper: Python 2:34 Shell Access via SSH](http://youtu.be/aJDXfvOrzRE)
+[![Video](images/video.png) Python 2:34 Shell Access via SSH](http://youtu.be/aJDXfvOrzRE)
 
 Advanced SSH
 ------------
@@ -49,7 +49,7 @@ Advanced SSH
 This lesson shows you how to write SSH 'config' file in advanced
 settings.
 
-[:clapper: Python 2:47 Advanced SSH](http://youtu.be/eYanElmtqMo)
+[![Video](images/video.png) Python 2:47 Advanced SSH](http://youtu.be/eYanElmtqMo)
 
 SSH Key Generation via putty
 ----------------------------
@@ -58,7 +58,7 @@ This lesson is for Windows users. You will learn how to create an SSH
 key using PuTTYgen, add the public key to you FutureSystems portal, and
 then login using the PuTTY SSH client.
 
-[:clapper: Python 3:51 Windows users](http://youtu.be/irmVJKwWQCU)
+[![Video](images/video.png) Python 3:51 Windows users](http://youtu.be/irmVJKwWQCU)
 
 FutureSystems Facilities
 ------------------------

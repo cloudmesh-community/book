@@ -11,7 +11,7 @@ to parallel processing and MapReduce communication patterns are explained
 like Embarrassingly Parallel, Classical MapReduce, Iterative Reductions
 and Loosely Synchronous e.g. MPI.
 
-[:clapper: Cloud and MapReduce (10:17)](https://www.youtube.com/watch?v=_irz3v1gT-A)
+[![Video](images/video.png) Cloud and MapReduce (10:17)](https://www.youtube.com/watch?v=_irz3v1gT-A)
 
 [:scroll: IaaS, PaaS and SaaS (25)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
@@ -21,7 +21,7 @@ Hadoop Framework
 Hadoop components are explained i.e. JobTracker, TaskTracker, MapTask,
 ReduceTask including HDFS.
 
-[:clapper: Hadoop Components including HDFS (8:32)](https://www.youtube.com/watch?v=Vuroqly6FTE)
+[![Video](images/video.png) Hadoop Components including HDFS (8:32)](https://www.youtube.com/watch?v=Vuroqly6FTE)
 
 [:scroll: Hadoop Components including HDFS (15)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
@@ -37,7 +37,7 @@ and sorting occurs in the map phase. Reduce reads and writes files to
 HDFS, and the merger generates the final result. The second Quiz is
 given at the end.
 
-[:clapper: Hadoop Framework II (9:25)](https://www.youtube.com/watch?v=KWLY_maNEPA)
+[![Video](images/video.png) Hadoop Framework II (9:25)](https://www.youtube.com/watch?v=KWLY_maNEPA)
 
 [:scroll: Hadoop Framework II (8)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
@@ -56,7 +56,7 @@ In detail, Shuffle and Merge are used to order and reduce size of
 intermediate data. The last stage, Reduce, handles each group of output
 data, per key, in parallel.
 
-[:clapper: 11:01 Hadoop Tasks (Step-by-Step)](https://www.youtube.com/watch?v=UN4t3tvdjms)
+[![Video](images/video.png) 11:01 Hadoop Tasks (Step-by-Step)](https://www.youtube.com/watch?v=UN4t3tvdjms)
 
 [:scroll: Hadoop Tasks (24)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
@@ -71,7 +71,7 @@ e.g. Microsoft Dryad, a distributed execution engine for data parallel
 applications. In Google File System, data chunks, metadata, and replicas
 are briefly discussed.
 
-[:clapper: GFS and BigTable (9:43)](https://www.youtube.com/watch?v=5YmjrhEFQsk)
+[![Video](images/video.png) GFS and BigTable (9:43)](https://www.youtube.com/watch?v=5YmjrhEFQsk)
 
 [:scroll: GFS and BigTable (16)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
@@ -83,7 +83,7 @@ MapReduce Example - WordCount
 MapReduce is revisited with the WordCount example to demonstrate how it
 actually works in the map and reduce phase.
 
-[:clapper: MapReduce WordCount (9:07)](https://www.youtube.com/watch?v=sSIGaDaulvA)
+[![Video](images/video.png) MapReduce WordCount (9:07)](https://www.youtube.com/watch?v=sSIGaDaulvA)
 
 [:scroll: MapReduce WordCount (6)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
@@ -107,7 +107,7 @@ the PlotViz program developed by Indiana University. The architecture
 between Hadoop 1 and 2 are explained in the beginning along with
 MapReduce.
 
-[:clapper: Twister Introduction (12:01)](https://www.youtube.com/watch?v=6vkgvGtyv4Q)
+[![Video](images/video.png) Twister Introduction (12:01)](https://www.youtube.com/watch?v=6vkgvGtyv4Q)
 
 [:scroll: MapReduce and Twister (1)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
@@ -123,13 +123,13 @@ sequences in databases in parallel. Blast introduction starts at 2:12.
 BLAST can be parallelized in several ways: query
 segmentation, and database segmentation.
 
-[:clapper: 8:27 Introduction to BLAST (multi-thread,)](https://www.youtube.com/watch?v=i3H9HmUYfq8)
+[![Video](images/video.png) 8:27 Introduction to BLAST (multi-thread,)](https://www.youtube.com/watch?v=i3H9HmUYfq8)
 
 [:scroll: Introduction to BLAST (1)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
 
 [:scroll: Introduction to BLAST - pptx (1)](https://drive.google.com/open?id=0B88HKpainTSfMDAwZm5uQlZWckU)
 
-[:clapper: BLAST Parallelization (4:44)](https://www.youtube.com/watch?v=isc0MjkwTlk)
+[![Video](images/video.png) BLAST Parallelization (4:44)](https://www.youtube.com/watch?v=isc0MjkwTlk)
 
 [:scroll: BLAST Parallelization (13)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
 
@@ -146,7 +146,7 @@ equation to improve data locality is tested in an experiment, whose
 results are given. By default, Hadoop determines scheduling of tasks to
 available slots in terms of best local composition, not global.
 
-[:clapper: Data Locality (8:36)](https://www.youtube.com/watch?v=RqLA7_asK50)
+[![Video](images/video.png) Data Locality (8:36)](https://www.youtube.com/watch?v=RqLA7_asK50)
 
 [:scroll: Data Locality (10)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
@@ -164,7 +164,7 @@ designed to improve the original one in Hadoop. An experiment was run
 comparing all three, with the network topology-aware algorithm clearly
 outperforming the others.
 
-[:clapper: Optimal Data Locality (4:17)](https://www.youtube.com/watch?v=Ok8vdrFXo5w)
+[![Video](images/video.png) Optimal Data Locality (4:17)](https://www.youtube.com/watch?v=Ok8vdrFXo5w)
 
 [:scroll: Optimal Data Locality (17)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
@@ -184,7 +184,7 @@ gain is deemed optimal. Optimal and Expected Remaining Job Execution
 Time can help determine task splitting. Several examples are offered
 with either single or multiple jobs.
 
-[:clapper: Task Granularity (9:51)](https://www.youtube.com/watch?v=u9UpgTnOZz4)
+[![Video](images/video.png) Task Granularity (9:51)](https://www.youtube.com/watch?v=u9UpgTnOZz4)
 
 [:scroll: Task Granularity (29)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
@@ -201,7 +201,7 @@ can take over if it is determined the original task will not finish in
 time. Overuse of speculative tasks can lead to poor data locality and
 higher energy demands.
 
-[:clapper: Resource Utilization and Speculative Execution (3:52)](https://www.youtube.com/watch?v=wWyFiqDIYus)
+[![Video](images/video.png) Resource Utilization and Speculative Execution (3:52)](https://www.youtube.com/watch?v=wWyFiqDIYus)
 
 [:scroll: Resource Utilization and Speculative Execution (46)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
@@ -219,7 +219,7 @@ applications differs from the norm in that data is sent in a matrix, not
 a string. WordCount functions in a map/reduce pattern. These are all
 types of SIMD. SPMD and MPMD are two other types of model.
 
-[:clapper: SIMD vs MIMD;SPMD vs MPMD (SISD) (9:42)](https://www.youtube.com/watch?v=zHQiR56Zmtc)
+[![Video](images/video.png) SIMD vs MIMD;SPMD vs MPMD (SISD) (9:42)](https://www.youtube.com/watch?v=zHQiR56Zmtc)
 
 [:scroll: SIMD vs MIMD;SPMD vs MPMD (1)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 

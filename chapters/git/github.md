@@ -70,7 +70,7 @@ Next, creating a branch, making some changes, and offering a pull
 request to the original repository, rounds out your contribution to the
 open source project.
 
-[:clapper: Git 1:41 Fork](https://www.youtube.com/watch?v=5oJHRbqEofs)
+[![Video](images/video.png) Git 1:41 Fork](https://www.youtube.com/watch?v=5oJHRbqEofs)
 
 ## Rebase
 
@@ -87,7 +87,7 @@ just described as conflicts may exist. For example, you and the
 to-be-rebased copy both edited some common text section. Once this
 happens, human intervention needs to take place to resolve the conflict.
 
-[:clapper: Git 4:20 Rebase](https://www.youtube.com/watch?v=SxzjZtJwOgo)
+[![Video](images/video.png) Git 4:20 Rebase](https://www.youtube.com/watch?v=SxzjZtJwOgo)
 
 ## Remote
 
@@ -116,7 +116,7 @@ change back into a project. We will be taking a look at the strength of
 conversation, integration options for fuller information about a change,
 and cleanup strategy for when a pull request is finished.
 
-[:clapper: Git 4:26 Pull
+[![Video](images/video.png) Git 4:26 Pull
 Request](https://www.youtube.com/watch?v=d5wpJ5VimSU)
 
 ## Branch
@@ -126,7 +126,7 @@ experiments, but they are also the key element in creating Pull Requests
 on GitHub. Lets take a look at why we want branches, how to create and
 delete branches, and how to switch branches in this episode.
 
-[:clapper: Git 2:25 Branch](https://www.youtube.com/watch?v=H5GJfcp3p4Q)
+[![Video](images/video.png) Git 2:25 Branch](https://www.youtube.com/watch?v=H5GJfcp3p4Q)
 
 ## Checkout
 
@@ -135,7 +135,7 @@ Whether we are switching branches, wanting to look at the working tree
 at a specific commit in history, or discarding edits we want to throw
 away, all of these can be done with the checkout command.
 
-[:clapper: Git 3:11
+[![Video](images/video.png) Git 3:11
 Checkout](https://www.youtube.com/watch?v=HwrPhOp6-aM)
 
 ## Merge
@@ -146,7 +146,7 @@ conflicts or avoid conflicts until a later date. Lastly, we will look at
 combining the merged feature branch into a single commit and cleaning up
 your feature branch after merges.
 
-[:clapper: Git 3:11 Merge](https://www.youtube.com/watch?v=yyLiplDQtf0)
+[![Video](images/video.png) Git 3:11 Merge](https://www.youtube.com/watch?v=yyLiplDQtf0)
 
 ## GUI
 
@@ -157,7 +157,7 @@ from GitHub, and participating in a particular pull request. We will
 also see the auto-updating functionality helps us stay up to date with
 stable versions of Git on the command line.
 
-[:clapper: Git 3:47 GUI](https://www.youtube.com/watch?v=BMYOs5jflGE)
+[![Video](images/video.png) Git 3:47 GUI](https://www.youtube.com/watch?v=BMYOs5jflGE)
 
 There are many other git GUI tools available that directly integrate
 into your operating system finders, windows, ..., or PyCharm. It is up
@@ -174,7 +174,7 @@ equally powerful web application can do for developers, designers, and
 managers using Windows in both the open source and commercial software
 worlds. More: <http://windows.github.com>
 
-[:clapper: Git 1:25
+[![Video](images/video.png) Git 1:25
 Windows](https://www.youtube.com/watch?v=YBbkvCrfDSo)
 
 ## Git from the Commandline {#s:git-commands}
@@ -201,7 +201,7 @@ Once you installed Git, you can need to configure it properly. This
 includes setting up your username, email address, line endings, and
 color, along with the settings' associated configuration scopes.
 
-[:clapper: Git 2:47
+[![Video](images/video.png) Git 2:47
 Configuration](https://www.youtube.com/watch?v=ZChtKFLiaNw)
 
 It is important that make sure that use the `git config` command to
@@ -516,7 +516,7 @@ E.Gitlab.5:
 
 ## Github Issues {#S:git-issues}
 
-[:clapper: Github 8:29 Issues](https://youtu.be/qozgBPQJx0A)
+[![Video](images/video.png) Github 8:29 Issues](https://youtu.be/qozgBPQJx0A)
 
 When we work in teams or even if we work by ourselves, it is prudent to
 identify a system to coordinate your work. While conduction projects

@@ -26,6 +26,6 @@ work he is involved in is done as open source projects.
 
 It is recommended that you watch the following introduction video:
 
-[:clapper: Research Interest Dr. Gregor von Laszewski
+[![Video](images/video.png) Research Interest Dr. Gregor von Laszewski
 (14:13)](https://www.youtube.com/watch?v=hcN1KvbTN2Y)
 

@@ -63,7 +63,7 @@ people or perhaps collections of items to collections of people where
 items can be other people, products in a store, movies, jobs, events,
 web pages etc. We present this as "yet another optimization problem".
 
-[:clapper: Recommender Systems I
+[![Video](images/video.png) Recommender Systems I
 (8:06)](https://www.youtube.com/watch?v=kO023BIW2dw)
 
 ### Recommender Systems Introduction
@@ -76,7 +76,7 @@ recommender systems based on user profile and context; the most familiar
 collaborative filtering of others ranking; item properties; knowledge
 and hybrid cases mixing some or all of these.
 
-[:clapper: Recommender Systems Introduction
+[![Video](images/video.png) Recommender Systems Introduction
 (12:56)](https://youtu.be/KbjBKrzFYKg)
 
 ### Kaggle Competitions
@@ -84,7 +84,7 @@ and hybrid cases mixing some or all of these.
 We look at Kaggle competitions with examples from web site. In
 particular we discuss an Irvine class project involving ranking jokes.
 
-[:clapper: Kaggle Competitions: (3:36)](https://youtu.be/DFH7GPrbsJA)
+[![Video](images/video.png) Kaggle Competitions: (3:36)](https://youtu.be/DFH7GPrbsJA)
 
 :warning: Please not that we typically do not accept any projects
 using kaggle data for this classes. This class is not about winning a
@@ -96,7 +96,7 @@ requiremnt for this class. Please consult with the instructor.
 We go through a list of 9 recommender systems from the same Irvine
 class.
 
-[:clapper: Examples of Recommender Systems
+[![Video](images/video.png) Examples of Recommender Systems
 (1:00)](https://youtu.be/1Eh1epQj-EQ)
 
 ### Netflix on Recommender Systems
@@ -112,7 +112,7 @@ systems. We describe the famous Netflix Kaggle competition to improve
 its rating system. The analogy to maximizing click through rate is given
 and the objectives of optimization are given.
 
-[:clapper: Netflix on Recommender Systems
+[![Video](images/video.png) Netflix on Recommender Systems
 (14:20)](https://www.youtube.com/watch?v=ModhdIT9D24)
 
 Next we go through Netflix's methodology in letting data speak for
@@ -124,7 +124,7 @@ spectrum of issues that are involved including user interface, data, AB
 testing, systems and architectures. We comment on optimizing for a
 household rather than optimizing for individuals in household.
 
-[:clapper: Consumer Data Science (13:04)](https://youtu.be/B8cjaOQ57LI)
+[![Video](images/video.png) Consumer Data Science (13:04)](https://youtu.be/B8cjaOQ57LI)
 
 ### Other Examples of Recommender Systems
 
@@ -147,7 +147,7 @@ points in a space of items.
 We start with a quick recap of recommender systems from previous unit;
 what they are with brief examples.
 
-[:clapper: Recap and Examples of Recommender Systems
+[![Video](images/video.png) Recap and Examples of Recommender Systems
 (5:48)](https://www.youtube.com/watch?v=PwS8UE4TDS4)
 
 #### Examples of Recommender Systems
@@ -155,7 +155,7 @@ what they are with brief examples.
 We give 2 examples in more detail: namely Google News and Markdown in
 Retail.
 
-[:clapper: Examples of Recommender Systems
+[![Video](images/video.png) Examples of Recommender Systems
 (8:34)](https://youtu.be/og07mH9fU0M)
 
 #### Recommender Systems in Yahoo Use Case Example
@@ -173,13 +173,13 @@ that if though we have big data, the recommender data is sparse. We
 discuss the approach that involves both batch (offline) and on-line
 (real time) components.
 
-[:clapper: Recap of Recommender Systems II
+[![Video](images/video.png) Recap of Recommender Systems II
 (8:46)](https://youtu.be/FBn7HpGFNvg)
 
-[:clapper: Recap of Recommender Systems III
+[![Video](images/video.png) Recap of Recommender Systems III
 (10:48)](https://youtu.be/VS2Y4lAiP5A)
 
-[:clapper: Case Study of Recommender systems
+[![Video](images/video.png) Case Study of Recommender systems
 (3:21)](https://youtu.be/HrRJWEF8EfU)
 
 #### User-based nearest-neighbor collaborative filtering
@@ -190,10 +190,10 @@ the user-based case. Here similarities in user rankings allow one to
 predict their interests, and typically this quantified by the Pearson
 correlation, used to statistically quantify correlations between users.
 
-[:clapper: User-based nearest-neighbor collaborative filtering I
+[![Video](images/video.png) User-based nearest-neighbor collaborative filtering I
 (7:20)](https://youtu.be/lsf_AE-8dSk)
 
-[:clapper: User-based nearest-neighbor collaborative filtering II
+[![Video](images/video.png) User-based nearest-neighbor collaborative filtering II
 (7:29)](https://youtu.be/U7-qeX2ItPk)
 
 #### Vector Space Formulation of Recommender Systems
@@ -202,7 +202,7 @@ We go through recommender systems thinking of them as formulated in a
 funny vector space. This suggests using clustering to make
 recommendations.
 
-[:clapper: Vector Space Formulation of Recommender Systems new
+[![Video](images/video.png) Vector Space Formulation of Recommender Systems new
 (9:06)](https://youtu.be/IlQUZOXlaSU)
 
 ### Resources
@@ -230,10 +230,10 @@ used to quantify distances. WE discuss optimizations and how batch
 processing can help. We discuss different Likert ranking scales and
 issues with new items that do not have a significant number of rankings.
 
-[:clapper: Item Based Filtering
+[![Video](images/video.png) Item Based Filtering
 (11:18)](https://www.youtube.com/watch?v=HTdYGaOTlFI)
 
-[:clapper: k Nearest Neighbors and High Dimensional Spaces
+[![Video](images/video.png) k Nearest Neighbors and High Dimensional Spaces
 (7:16)](https://youtu.be/SM8EJdAa4mw)
 
 ### k-Nearest Neighbors and High Dimensional Spaces {#s-knn}
@@ -244,7 +244,7 @@ performance issues. This algorithm illustrates the curse of
 dimensionality. If items were a real vectors in a low dimension space,
 there would be faster solution methods.
 
-[:clapper: k Nearest Neighbors and High Dimensional Spaces
+[![Video](images/video.png) k Nearest Neighbors and High Dimensional Spaces
 (10:03)](https://youtu.be/2NqUsDGQDy8)
 
 

@@ -13,7 +13,7 @@ includes a 3-dimensional representation of data cluster sorting through
 the PlotViz program. Data analysis tool Twister boasts features like
 in-memory support of tasks, data flow separation, and portability.
 
-[:clapper: Apache Data Analysis OpenStack (12:01)](https://www.youtube.com/watch?v=6vkgvGtyv4Q)
+[![Video](images/video.png) Apache Data Analysis OpenStack (12:01)](https://www.youtube.com/watch?v=6vkgvGtyv4Q)
 
 [:scroll: Apache Data Analysis OpenStack (1)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
@@ -28,7 +28,7 @@ follows. Use of MapReduce has flourished since its premier, as
 illustrated by an in-depth example of its use in WordCount. Finally the
 basic process of MapReduce is shown.
 
-[:clapper: MapReduce (9:07)](https://www.youtube.com/watch?v=sSIGaDaulvA)
+[![Video](images/video.png) MapReduce (9:07)](https://www.youtube.com/watch?v=sSIGaDaulvA)
 
 [:scroll: MapReduce (6)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
@@ -44,7 +44,7 @@ Distributed File System through master and slave nodes. Compute is
 handled by JobTracker and TaskTracker; the duties of these two
 intertwined programs are then explored more fully.
 
-[:clapper: Hadoop Framework (8:32)](https://www.youtube.com/watch?v=Vuroqly6FTE)
+[![Video](images/video.png) Hadoop Framework (8:32)](https://www.youtube.com/watch?v=Vuroqly6FTE)
 
 [:scroll: Hadoop Framework (15)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
@@ -64,7 +64,7 @@ size of intermediate data. Reduce tasks take over then to determine the
 output data format. A final chart illustrates the concept of parallelism
 in MapReduce.
 
-[:clapper: Hadoop Tasks (11:01)](https://www.youtube.com/watch?v=UN4t3tvdjms)
+[![Video](images/video.png) Hadoop Tasks (11:01)](https://www.youtube.com/watch?v=UN4t3tvdjms)
 
 [:scroll: Hadoop Tasks (24)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
@@ -81,7 +81,7 @@ charge of things like number of map and reduce tasks, and what to do
 when the limit is reached on the buffer. The lecture ends with a
 discussion of class assignments.
 
-[:clapper: Fault Tolerance (2:45)](https://www.youtube.com/watch?v=a3AlOTmD42k)
+[![Video](images/video.png) Fault Tolerance (2:45)](https://www.youtube.com/watch?v=a3AlOTmD42k)
 
 [:scroll: Fault Tolerance (36)](https://drive.google.com/open?id=0B88HKpainTSfMnpCelpNQUpNdVE)
 
@@ -91,7 +91,7 @@ discussion of class assignments.
 Hadoop WordCount on VMs
 -----------------------
 
-[:clapper: Hadoop WordCount on VMs (7:30)](https://www.youtube.com/watch?v=1TrjmcPHrRU)
+[![Video](images/video.png) Hadoop WordCount on VMs (7:30)](https://www.youtube.com/watch?v=1TrjmcPHrRU)
 
 [:scroll: Hadoop WordCount on VMs (17)](https://drive.google.com/open?id=0B88HKpainTSfZENxeUlOcVFUTkU)
 
@@ -106,7 +106,7 @@ A list of time spans for actions in system requirements is given. The
 original MapReduce was designed to resolve problems like load balancing
 and machine failures.
 
-[:clapper: Programming on a Compute Cluster (6:01)](https://www.youtube.com/watch?v=rRR2ALa5CUA)
+[![Video](images/video.png) Programming on a Compute Cluster (6:01)](https://www.youtube.com/watch?v=rRR2ALa5CUA)
 
 [:scroll: Programming on a Compute Cluster (1)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
@@ -122,7 +122,7 @@ and sorting occurs in the map phase. Reduce reads and writes files to
 HDFS, and the merger generates the final result. The second Quiz is
 given at the end.
 
-[:clapper: How Hadoop Runs on a MapReduceJob (9:25)](https://www.youtube.com/watch?v=KWLY_maNEPA)
+[![Video](images/video.png) How Hadoop Runs on a MapReduceJob (9:25)](https://www.youtube.com/watch?v=KWLY_maNEPA)
 
 [:scroll: How Hadoop Runs on a MapReduceJob (8)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
@@ -137,7 +137,7 @@ judging scientific submissions. The first paper highlights Google File
 System, covering topics like data chunks, metadata, and replicas. This
 is followed by MapReduce and BigTable.
 
-[:clapper: Literature Review (9:43)](https://www.youtube.com/watch?v=5YmjrhEFQsk)
+[![Video](images/video.png) Literature Review (9:43)](https://www.youtube.com/watch?v=5YmjrhEFQsk)
 
 [:scroll: Literature Review (16)](https://drive.google.com/open?id=0B88HKpainTSfd3hkTG4yY2FYUVE)
 
@@ -154,7 +154,7 @@ map/reduce, and loosely synchronous. The basic bioinformatics BLAST
 An example of database creation comes from the Seattle Children's
 Hospital. BLAST uses scores to find similar sequences in databases.
 
-[:clapper: Introduction to BLAST (8:27)](https://www.youtube.com/watch?v=i3H9HmUYfq8)
+[![Video](images/video.png) Introduction to BLAST (8:27)](https://www.youtube.com/watch?v=i3H9HmUYfq8)
 
 [:scroll: Introduction to BLAST (1)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
 
@@ -170,7 +170,7 @@ query segmentation, and database segmentation. BLAST is pleasingly
 parallel in application, but many programs are not. Further information
 about articles featuring BLAST is provided at the end.
 
-[:clapper: BLAST Parallelization (4:44)](https://www.youtube.com/watch?v=isc0MjkwTlk)
+[![Video](images/video.png) BLAST Parallelization (4:44)](https://www.youtube.com/watch?v=isc0MjkwTlk)
 
 [:scroll: BLAST Parallelization (13)](https://drive.google.com/open?id=0B88HKpainTSfdnFvY1V3dlFTRlE)
 
@@ -189,7 +189,7 @@ applications differs from the norm in that data is sent in a matrix, not
 a string. WordCount functions in a map/reduce pattern. These are all
 types of SIMD. SPMD and MPMD are two other types of model.
 
-[:clapper: SIMD vs MIMD;SPMD vs MPMD (9:42)](https://www.youtube.com/watch?v=zHQiR56Zmtc)
+[![Video](images/video.png) SIMD vs MIMD;SPMD vs MPMD (9:42)](https://www.youtube.com/watch?v=zHQiR56Zmtc)
 
 [:scroll: SIMD vs MIMD;SPMD vs MPMD (1)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
@@ -206,7 +206,7 @@ equation to improve data locality is tested in an experiment, whose
 results are given. By default, Hadoop determines scheduling of tasks to
 available slots in terms of best local composition, not global.
 
-[:clapper: Data Locality (8:36)](https://www.youtube.com/watch?v=RqLA7_asK50)
+[![Video](images/video.png) Data Locality (8:36)](https://www.youtube.com/watch?v=RqLA7_asK50)
 
 [:scroll: Data Locality (10)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
@@ -225,7 +225,7 @@ designed to improve the original one in Hadoop. An experiment was run
 comparing all three, with the network topology-aware algorithm clearly
 outperforming the others.
 
-[:clapper: Optimal Data Locality (4:17)](https://www.youtube.com/watch?v=Ok8vdrFXo5w)
+[![Video](images/video.png) Optimal Data Locality (4:17)](https://www.youtube.com/watch?v=Ok8vdrFXo5w)
 
 [:scroll: Optimal Data Locality (17)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
@@ -246,7 +246,7 @@ gain is deemed optimal. Optimal and Expected Remaining Job Execution
 Time can help determine task splitting. Several examples are offered
 with either single or multiple jobs.
 
-[:clapper: Task Granularity (9:51)](https://www.youtube.com/watch?v=u9UpgTnOZz4)
+[![Video](images/video.png) Task Granularity (9:51)](https://www.youtube.com/watch?v=u9UpgTnOZz4)
 
 [:scroll: Task Granularity (29)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 
@@ -264,7 +264,7 @@ can take over if it is determined the original task will not finish in
 time. Overuse of speculative tasks can lead to poor data locality and
 higher energy demands.
 
-[:clapper: Resource Utilization and Speculative Execution (3:52)](https://www.youtube.com/watch?v=wWyFiqDIYus)
+[![Video](images/video.png) Resource Utilization and Speculative Execution (3:52)](https://www.youtube.com/watch?v=wWyFiqDIYus)
 
 [:scroll: Resource Utilization and Speculative Execution (46)](https://drive.google.com/open?id=0B88HKpainTSfT28zLTdKYWhGdGM)
 

@@ -193,7 +193,7 @@ The services that you have access to include:
 Azure can be accessed via a portal. An introductory video from
 Microsoft provides you with some elementary information:
 
-[:clapper: Introduction to Azure Portal](https://channel9.msdn.com/Blogs/Azure/Get-Started-with-Azure-Portal/player)
+[![Video](images/video.png) Introduction to Azure Portal](https://channel9.msdn.com/Blogs/Azure/Get-Started-with-Azure-Portal/player)
 
 ## Creating a VM
 

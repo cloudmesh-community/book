@@ -27,7 +27,7 @@ listing subareas where Big data important. Data sizes are given in
 radiology, genomics, personalized medicine, and the Quantified Self
 movement, with sizes and access to European Bioinformatics Institute.
 
-[:clapper: Big Data and Health
+[![Video](images/video.png) Big Data and Health
 (10:02)](https://www.youtube.com/watch?v=ZkM-yZJQ1Cg)
 
 ## Status of Healthcare Today
@@ -35,7 +35,7 @@ movement, with sizes and access to European Bioinformatics Institute.
 This covers trends of costs and type of healthcare with low cost genomes
 and an aging population. Social media and government Brain initiative.
 
-[:clapper: Status of Healthcare Today
+[![Video](images/video.png) Status of Healthcare Today
 (16:09)](https://www.youtube.com/watch?v=x9TpdMBqYrk)
 
 ## Telemedicine (Virtual Health)
@@ -43,24 +43,24 @@ and an aging population. Social media and government Brain initiative.
 This describes increasing use of telemedicine and how we tried and
 failed to do this in 1994.
 
-[:clapper: Telemedicine
+[![Video](images/video.png) Telemedicine
 (8:21)](https://www.youtube.com/watch?v=Pe4CVXQaL_U)
 
 ## Medical Big Data in the Clouds
 
 An impressive exemplar Cloud-based medicine system from Potsdam.
 
-[:clapper: Medical Big Data in the Clouds
+[![Video](images/video.png) Medical Big Data in the Clouds
 (15:02)](https://www.youtube.com/watch?v=GldSVijkJcM)
 
 ### Medical image Big Data
 
-[:clapper: Medical Image Big Data
+[![Video](images/video.png) Medical Image Big Data
 (6:33)](https://www.youtube.com/watch?v=GOcVtwx2R2k)
 
 ### Clouds and Health
 
-[:clapper: Clouds and Health (4:35)](http://youtu.be/9Whkl_UPS5g)
+[![Video](images/video.png) Clouds and Health (4:35)](http://youtu.be/9Whkl_UPS5g)
 
 ### McKinsey Report on the big-data revolution in US health care
 
@@ -79,7 +79,7 @@ types; Organizations implementing a big data transformation should
 provide the leadership required for the associated cultural
 transformation; Companies must develop a range of big data capabilities.
 
-[:clapper: McKinsey Report
+[![Video](images/video.png) McKinsey Report
 (14:53)](https://www.youtube.com/watch?v=fu-TWnIk980)
 
 ### Microsoft Report on Big Data in Health
@@ -89,7 +89,7 @@ Science Data, Patient & Consumer Data, Claims & Cost Data and
 Correlational Data. Three approaches are Live data feed, Advanced
 analytics and Social analytics.
 
-[:clapper: Microsoft Report on Big Data in Health
+[![Video](images/video.png) Microsoft Report on Big Data in Health
 (2:26)](http://youtu.be/PjffvVgj1PE)
 
 ### EU Report on Redesigning health in Europe for 2020
@@ -100,7 +100,7 @@ decisions; Liberate the data; Connect up everything; Revolutionize
 health; and Include Everyone removing the current correlation between
 health and wealth.
 
-[:clapper: EU Report on Redesigning health in Europe for 2020
+[![Video](images/video.png) EU Report on Redesigning health in Europe for 2020
 (5:00)](http://youtu.be/9mbt_ZSs0iw)
 
 ### Medicine and the Internet of Things
@@ -108,7 +108,7 @@ health and wealth.
 The Internet of Things will have great impact on health including
 telemedicine and wearables. Examples are given.
 
-[:clapper: Medicine and the Internet of Things
+[![Video](images/video.png) Medicine and the Internet of Things
 (8:17)](https://www.youtube.com/watch?v=Jk3EeFzZnuU)
 
 ### Extrapolating to 2032
@@ -116,7 +116,7 @@ telemedicine and wearables. Examples are given.
 A study looks at 4 scenarios for healthcare in 2032. Two are positive,
 one middle of the road and one negative.
 
-[:clapper: Extrapolating to 2032
+[![Video](images/video.png) Extrapolating to 2032
 (15:13)](https://www.youtube.com/watch?v=a5G4HACeokg)
 
 ### Genomics, Proteomics and Information Visualization
@@ -132,7 +132,7 @@ the COG Proteomics dataset is discussed. We note that the MDS approach
 is related to the well known chisq method and some aspects of nonlinear
 minimization of chisq (Least Squares) are discussed.
 
-[:clapper: Genomics, Proteomics and Information Visualization
+[![Video](images/video.png) Genomics, Proteomics and Information Visualization
 (6:56)](https://www.youtube.com/watch?v=zGzBtxq1ZRE)
 
 Next we continue the discussion of the COG Protein Universe introduced
@@ -153,10 +153,10 @@ shows an application of MDS to generate and visualize phylogenetic
 trees.
 
 \TODO{These two videos need to be uploaded to youtube}
-[:clapper: Genomics, Proteomics and Information Visualization I
+[![Video](images/video.png) Genomics, Proteomics and Information Visualization I
 (10:33)](https://drive.google.com/file/d/0B5plU-u0wqMobXdEQWRHWl95UTA/view?usp=sharing)
 
-[:clapper: Genomics, Proteomics and Information Visualization: II
+[![Video](images/video.png) Genomics, Proteomics and Information Visualization: II
 (7:41)](https://drive.google.com/file/d/0B5plU-u0wqModlhmdVUwdGlQNTA/view?usp=sharing)
 
 [:scroll: Proteomics and Information Visualization

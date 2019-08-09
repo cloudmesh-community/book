@@ -29,7 +29,7 @@ Introduction to all Sports Informatics, Moneyball The 2002-2003 Oakland
 Athletics, Diamond Dollars economic model of baseball, Performance -
 Dollar relationship, Value of a Win.
 
-[:clapper: Introduction and Sabermetrics (Baseball Informatics) Lesson
+[![Video](images/video.png) Introduction and Sabermetrics (Baseball Informatics) Lesson
 (31:4)](https://www.youtube.com/watch?v=Dd4zV__G5Q8)
 
 ### Basic Sabermetrics
@@ -38,7 +38,7 @@ Different Types of Baseball Data, Sabermetrics, Overview of all data,
 Details of some statistics based on basic data, OPS, wOBA, ERA, ERC,
 FIP, UZR.
 
-[:clapper: Basic Sabermetrics
+[![Video](images/video.png) Basic Sabermetrics
 (26:53)](https://www.youtube.com/watch?v=L0X-RQJZKrs)
 
 ### Wins Above Replacement
@@ -47,7 +47,7 @@ Wins above Replacement WAR, Discussion of Calculation, Examples,
 Comparisons of different methods, Coefficient of Determination, Another,
 Sabermetrics Example, Summary of Sabermetrics.
 
-[:clapper: Wins Above Replacement
+[![Video](images/video.png) Wins Above Replacement
 (30:43)](https://www.youtube.com/watch?v=D6PHqPor4LA)
 
 ## Advanced Sabermetrics
@@ -63,7 +63,7 @@ from using video from PITCHf/X, FIELDf/X, HITf/X, COMMANDf/X and MLBAM.
 A Big Data Pitcher Clustering method introduced by Vince Gennaro, Data
 from Blog and video at 2013 SABR conference.
 
-[:clapper: Pitching Clustering
+[![Video](images/video.png) Pitching Clustering
 (20:59)](https://www.youtube.com/watch?v=rZ9-b54aEvw)
 
 ### Pitcher Quality
@@ -71,21 +71,21 @@ from Blog and video at 2013 SABR conference.
 Results of optimizing match ups, Data from video at 2013 SABR
 conference.
 
-[:clapper: Pitcher Quality
+[![Video](images/video.png) Pitcher Quality
 (10:02)](https://www.youtube.com/watch?v=OkkUaySvXOY)
 
 ## PITCHf/X
 
 Examples of use of PITCHf/X.
 
-[:clapper: PITCHf/X
+[![Video](images/video.png) PITCHf/X
 (10:39)](https://www.youtube.com/watch?v=m7IXhsHgQmE)
 
 ### Other Video Data Gathering in Baseball
 
 FIELDf/X, MLBAM, HITf/X, COMMANDf/X.
 
-[:clapper: Other Video Data Gathering in Baseball
+[![Video](images/video.png) Other Video Data Gathering in Baseball
 (18:5)](https://www.youtube.com/watch?v=nKZiOOGccms) Other Sports
 
 ------------------------------------------------------------------------
@@ -101,28 +101,28 @@ Olympics, NFL Football, Basketball, Tennis and Horse Racing.
 
 Consumer Sports, Stake Holders, and Multiple Factors.
 
-[:clapper: Wearables
+[![Video](images/video.png) Wearables
 (22:2)](https://www.youtube.com/watch?v=F_cPq6xIXw0)
 
 ### Soccer and the Olympics
 
 Soccer, Tracking Players and Balls, Olympics.
 
-[:clapper: Soccer and the Olympics
+[![Video](images/video.png) Soccer and the Olympics
 (8:28)](https://www.youtube.com/watch?v=AiZneaLJMTs)
 
 ### Spatial Visualization in NFL and NBA
 
 NFL, NBA, and Spatial Visualization.
 
-[:clapper: Spatial Visualization in NFL and NBA
+[![Video](images/video.png) Spatial Visualization in NFL and NBA
 (15:19)](https://www.youtube.com/watch?v=Uorh3RJLC1s)
 
 ### Tennis and Horse Racing
 
 Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 
-[:clapper: Tennis and Horse Racing
+[![Video](images/video.png) Tennis and Horse Racing
 (8:52)](https://www.youtube.com/watch?v=2P-pismFSrI)
 
 ### Resources

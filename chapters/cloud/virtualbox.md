@@ -69,7 +69,7 @@ latex
 
 A video to showcase such an install is available at:
 
-[:clapper: Using Ubuntu in Virtualbox (8:08) ](https://youtu.be/NWibDntN2M4)
+[![Video](images/video.png) Using Ubuntu in Virtualbox (8:08) ](https://youtu.be/NWibDntN2M4)
 
 :warning: Please note that the video shows the version 16.04. You should however 
 use the newest version which at this time is 18.04.
@@ -95,7 +95,7 @@ easily into for example a terminal or an editor that you run in the Vm.
 
 A video is located at
 
-[:clapper: Virtualbox (4:46)](https://youtu.be/wdCoiNdn2jA)
+[![Video](images/video.png) Virtualbox (4:46)](https://youtu.be/wdCoiNdn2jA)
 
 Please reboot the machine after installation and configuration.
 

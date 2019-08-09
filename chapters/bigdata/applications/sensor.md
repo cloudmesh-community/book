@@ -28,21 +28,21 @@ cars and more generally transportation systems. The lesson gives many
 examples of distributed sensors, which form a Grid that is controlled by
 a cloud.
 
-[:clapper: Internet of Things
+[![Video](images/video.png) Internet of Things
 (12:36)](https://www.youtube.com/watch?v=0O0-mz-CWtQ)
 
 ## Robotics and IoT
 
 Examples of Robots and Drones.
 
-[:clapper: Robotics and IoT Expectations
+[![Video](images/video.png) Robotics and IoT Expectations
 (8:05)](https://www.youtube.com/watch?v=ABP0Yygw2Zg)
 
 ## Industrial Internet of Things
 
 We summarize surveys and expectations Industry wide.
 
-[:clapper: Industrial Internet of Things
+[![Video](images/video.png) Industrial Internet of Things
 (24:02)](https://www.youtube.com/watch?v=kxKzBfd62Og)
 
 ## Sensor Clouds
@@ -52,7 +52,7 @@ gives example of interface to an older version of it. The performance of
 system is measured in terms of processing latency as a function of
 number of involved sensors with each delivering data at 1.8 Mbps rate.
 
-[:clapper: Sensor Clouds (4:40)](https://youtu.be/0egT1FsVGrU)
+[![Video](images/video.png) Sensor Clouds (4:40)](https://youtu.be/0egT1FsVGrU)
 
 ## Earth/Environment/Polar Science data gathered by Sensors
 
@@ -62,7 +62,7 @@ CReSIS polar remote sensing project and then looks at the NSF Ocean
 Observing Initiative and NASA's MODIS or Moderate Resolution Imaging
 Spectroradiometer instrument on a satellite.
 
-[:clapper: Earth/Environment/Polar Science data gathered by Sensors
+[![Video](images/video.png) Earth/Environment/Polar Science data gathered by Sensors
 (4:58)](https://youtu.be/CS2gX7axWfI)
 
 ## Ubiquitous/Smart Cities
@@ -70,7 +70,7 @@ Spectroradiometer instrument on a satellite.
 For Ubiquitous/Smart cities we give two examples: Iniquitous Korea and
 smart electrical grids.
 
-[:clapper: Ubiquitous/Smart Cities (1:44)](https://youtu.be/MFFIItQ3SOo)
+[![Video](images/video.png) Ubiquitous/Smart Cities (1:44)](https://youtu.be/MFFIItQ3SOo)
 
 ## U-Korea (U=Ubiquitous)
 
@@ -81,7 +81,7 @@ and GDP. U-Korea aims to improve the latter by Pervasive computing,
 everywhere, anytime i.e. by spreading sensors everywhere. The example of
 a 'High-Tech Utopia' New Songdo is given.
 
-[:clapper: U-Korea (U=Ubiquitous)
+[![Video](images/video.png) U-Korea (U=Ubiquitous)
 (2:49)](https://www.youtube.com/watch?v=U38zWbSI2n4)
 
 ## Smart Grid
@@ -93,7 +93,7 @@ variety of new instruments include smart meters, power monitors, and
 measures of solar irradiance, wind speed, and temperature. One goal is
 autonomous local power units where good use is made of waste heat.
 
-[:clapper: Smart Grid
+[![Video](images/video.png) Smart Grid
 (6:04)](https://www.youtube.com/watch?v=UfEiIzaZzI8)
 
 ## Resources

@@ -15,7 +15,7 @@ to the answer.
 
 An advertisement video from Piazza summarizes the features:
 
-* [:clapper: Piazza Overview from Piazza](https://www.youtube.com/watch?v=2jLSiN8E18w)
+* [![Video](images/video.png) Piazza Overview from Piazza](https://www.youtube.com/watch?v=2jLSiN8E18w)
 
 Piazza Support with a lot of information is available at:
 

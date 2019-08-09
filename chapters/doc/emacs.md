@@ -112,7 +112,7 @@ One such feature is to organize a TODO list via org-mode.
 Instead of us designing our own video, we point to a community tutorial
 such as
 
-[:clapper: Cloud 18:04](https://www.youtube.com/watch?v=Kde5YVUwDTQ}{Youtube)
+[![Video](images/video.png) Cloud 18:04](https://www.youtube.com/watch?v=Kde5YVUwDTQ}{Youtube)
 
 
 ## Programming Python with Emacs

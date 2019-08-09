@@ -16,7 +16,7 @@ We are looking at some of the definitions of cloud computing and
 trends in the following presentation.
 
 
-* [:clapper: Definition of Cloud Computing](https://youtu.be/2ifRjHbJWK8)
+* [![Video](images/video.png) Definition of Cloud Computing](https://youtu.be/2ifRjHbJWK8)
 
 This includes the following 
 

@@ -21,7 +21,7 @@ architecture, defined by the layer which the virtual machine monitor
 (VMM) runs on. VM is identical to physical machines and can be saved and
 stored, as well as migrated across hardware.
 
-[:clapper: Growth of Virtual Machines (10:16)](https://www.youtube.com/watch?v=5oKoAPCXLws)
+[![Video](images/video.png) Growth of Virtual Machines (10:16)](https://www.youtube.com/watch?v=5oKoAPCXLws)
 
 [:scroll: Growth of Virtual Machines (28)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
@@ -38,7 +38,7 @@ creates virtual private servers. CUDA is a high performance computing
 library, not designed for VMs; vCUDA is a virtual layer that allows
 interaction between CUDA and VMs, creating a virtual CUDA library.
 
-[:clapper: Implementation Levels (7:57)](https://www.youtube.com/watch?v=Le-kv-eAhvg)
+[![Video](images/video.png) Implementation Levels (7:57)](https://www.youtube.com/watch?v=Le-kv-eAhvg)
 
 [:scroll: Implementation Levels (41)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
@@ -57,7 +57,7 @@ virtualization. Para-virtualization does not need to modify the guest OS
 like full virtualization and works through hypercalls. An example is the
 ESX server from VMware.
 
-[:clapper: Tools and Mechanisms (7:32)](https://www.youtube.com/watch?v=VYz5rp5HDVE)
+[![Video](images/video.png) Tools and Mechanisms (7:32)](https://www.youtube.com/watch?v=VYz5rp5HDVE)
 
 [:scroll: Tools and Mechanisms (47)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
@@ -75,7 +75,7 @@ virtualization layer for an I/O device is possible, allowing it to act
 like a physical device and manage host and guest addresses, shown in a
 detailed VMware example.
 
-[:clapper: CPU, Memory \& I/O Devices (6:41)](https://www.youtube.com/watch?v=I_J4eUUavSY)
+[![Video](images/video.png) CPU, Memory \& I/O Devices (6:41)](https://www.youtube.com/watch?v=I_J4eUUavSY)
 
 [:scroll: CPU, Memory \& I/O Devices (58)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
@@ -92,7 +92,7 @@ Prepackaged OS can be installed in a virtual cluster. Should a VM fail
 for any reason, its image can be migrated to a new host so work is not
 lost. An example of this is demonstrated with XEN.
 
-[:clapper: Clusters and Resource Management (5:07)](https://www.youtube.com/watch?v=Mn9pgGtFy4g)
+[![Video](images/video.png) Clusters and Resource Management (5:07)](https://www.youtube.com/watch?v=Mn9pgGtFy4g)
 
 [:scroll: Clusters and Resource Management (66)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
@@ -107,7 +107,7 @@ Nimbus, Eucalyptus, OpenNebula, and vSphere. Eucalyptus is shown in
 greater detail. Trust issues in cloud security are answered in virtual
 machines. Suggested reading material is provided at the end.
 
-[:clapper: Data Center Automation (3:30)](https://www.youtube.com/watch?v=mvXBRvTwAVg)
+[![Video](images/video.png) Data Center Automation (3:30)](https://www.youtube.com/watch?v=mvXBRvTwAVg)
 
 [:scroll: Data Center Automation (74)](https://drive.google.com/open?id=0B88HKpainTSfQU1uQmxZWHdWQ1k)
 
@@ -125,7 +125,7 @@ Different variations of clouds like IaaS and PaaS are offered by both
 open source and commercial providers. Cloud systems are composed of
 separate elements like Eucalyptus, Xen and VMware.
 
-[:clapper: Clouds in the Workplace (7:13)](https://www.youtube.com/watch?v=Endt6mWUfEo)
+[![Video](images/video.png) Clouds in the Workplace (7:13)](https://www.youtube.com/watch?v=Endt6mWUfEo)
 
 [:scroll: Clouds in the Workplace (1)](https://drive.google.com/open?id=1kkTi8YXMR7cPR-9nWgnj9UgkXm4rUfHm)
 
@@ -147,7 +147,7 @@ environments. However there are distinct advantages clouds potentially
 have to offer: standardized APIs can eliminate lock-in, and encryption
 offers data confidentiality.
 
-[:clapper: Checklists and Challenges (9:08)](https://www.youtube.com/watch?v=cwtWpZcWuQ0)
+[![Video](images/video.png) Checklists and Challenges (9:08)](https://www.youtube.com/watch?v=cwtWpZcWuQ0)
 
 [:scroll: Checklists and Challenges (11)](https://drive.google.com/open?id=1kkTi8YXMR7cPR-9nWgnj9UgkXm4rUfHm)
 
@@ -167,7 +167,7 @@ attached to outside connections like InfiniBand. Switches can form an
 array of racks. The distribution of memory across a local, rack, or
 array server in warehouse server setup is listed.
 
-[:clapper: Data Center Setup (7:49)](https://www.youtube.com/watch?v=zBVtXzqF2ew)
+[![Video](images/video.png) Data Center Setup (7:49)](https://www.youtube.com/watch?v=zBVtXzqF2ew)
 
 [:scroll: Data Center Setup (16)](https://drive.google.com/open?id=1kkTi8YXMR7cPR-9nWgnj9UgkXm4rUfHm)
 
@@ -187,7 +187,7 @@ ubiquitous in all aspects of the private and public sector. In the
 future clouds must take into account user privacy, data security and
 copyright protection.
 
-[:clapper: Cultivating Clouds (5:10)](https://www.youtube.com/watch?v=zxoqRdvXM28)
+[![Video](images/video.png) Cultivating Clouds (5:10)](https://www.youtube.com/watch?v=zxoqRdvXM28)
 
 [:scroll: Cultivating Clouds (15)](https://drive.google.com/open?id=1tTiWbi5_elBXmB--wMiCCB-3KtJa50AP)
 

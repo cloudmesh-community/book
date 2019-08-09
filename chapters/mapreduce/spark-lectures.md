@@ -10,7 +10,7 @@ Motivation for Spark
 In this section we discuss about the background of Spark and core
 components of Spark.
 
-[:clapper: Spark 15:57 Spark  A](https://youtu.be/zfrzMuRwltU)
+[![Video](images/video.png) Spark 15:57 Spark  A](https://youtu.be/zfrzMuRwltU)
 
 
 Spark RDD Operations
@@ -19,7 +19,7 @@ Spark RDD Operations
 In this section we discuss about the background of RDD operations along
 with other transformation functionality in Spark.
 
-[:clapper: Spark 12:17 Spark  B](https://youtu.be/q6JES9P6IV0)
+[![Video](images/video.png) Spark 12:17 Spark  B](https://youtu.be/q6JES9P6IV0)
 
 
 Spark DAG
@@ -29,7 +29,7 @@ In this section we discuss about the background of DAG (direct acyclic
 graphs) operations along with other components like Shark in the earlier
 stages of Spark.
 
-[:clapper: Spark 10:37 Spark  C](https://youtu.be/DX-oaUzjZAM)
+[![Video](images/video.png) Spark 10:37 Spark  C](https://youtu.be/DX-oaUzjZAM)
 
 
 Spark vs. other Frameworks
@@ -41,4 +41,4 @@ from experiments done in Spark along with Frameworks like Harp, Harp
 DAAL, etc. We discuss the benchmarks and performance obtained from such
 experiments.
 
-[:clapper: Spark 26:18 Spark  D](https://youtu.be/rQb5zspUmow)
+[![Video](images/video.png) Spark 26:18 Spark  D](https://youtu.be/rQb5zspUmow)

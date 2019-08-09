@@ -36,14 +36,14 @@ that particles often manifested as bumps in histograms and those bumps
 need to be large enough to stand out from background in a statistically
 significant fashion.
 
--   [:clapper: Discovery of Higgs Particle
+-   [![Video](images/video.png) Discovery of Higgs Particle
     (13:49)](https://www.youtube.com/watch?v=iaypHlgFyuU)
 
 We give a few details on one LHC experiment ATLAS. Experimental physics
 papers have a staggering number of authors and quite big budgets.
 Feynman diagrams describe processes in a fundamental fashion.
 
--   [:clapper: Looking for Higgs Particle and Counting Introduction II
+-   [![Video](images/video.png) Looking for Higgs Particle and Counting Introduction II
     (7:38)](http://youtu.be/UAMzmOgjj7I)
 
 ### Experimental Facilities
@@ -52,7 +52,7 @@ We give a few details on one LHC experiment ATLAS. Experimental physics
 papers have a staggering number of authors and quite big budgets.
 Feynman diagrams describe processes in a fundamental fashion.
 
--   [:clapper: Looking for Higgs Particle Experiments
+-   [![Video](images/video.png) Looking for Higgs Particle Experiments
     (9:29)](http://youtu.be/BW12d780qT8)
 
 ### Accelerator Picture Gallery of Big Science
@@ -62,7 +62,7 @@ detection chambers and magnets in tunnels and a large underground
 laboratory used fpr experiments where you need to be shielded from
 background like cosmic rays.
 
--   [:clapper: Accelerator Picture Gallery of Big Science
+-   [![Video](images/video.png) Accelerator Picture Gallery of Big Science
     (11:21)](http://youtu.be/WLJIxWWMYi8)
 
 ### Resources
@@ -96,7 +96,7 @@ background plus either a Higgs particle generated similarly to LHC
 observation or one observed with better resolution (smaller measurement
 error).
 
--   [:clapper: Event Counting (7:02)](http://youtu.be/h8-szCeFugQ)
+-   [![Video](images/video.png) Event Counting (7:02)](http://youtu.be/h8-szCeFugQ)
 
 ### Monte Carlo
 
@@ -104,13 +104,13 @@ This uses Monte Carlo data both to generate data like the experimental
 observations and explore effect of changing amount of data and changing
 measurement resolution for Higgs.
 
--   [:clapper: With Python examples of Signal plus Background
+-   [![Video](images/video.png) With Python examples of Signal plus Background
     (7:33)](http://youtu.be/bl2f0tAzLj4) This lesson continues the
     examination of Monte Carlo data looking at effect of change in
     number of Higgs particles produced and in change in shape of
     background.
 
--   [:clapper: Change shape of background & num of Higgs Particles
+-   [![Video](images/video.png) Change shape of background & num of Higgs Particles
     (7:01)](http://youtu.be/bw3fd5cfQhk)
 
 ### Resources
@@ -138,7 +138,7 @@ given. Java is currently not available in this unit.
 We go through the many different areas of statistics covered in the
 Physics unit. We define the statistics concept of a random variable.
 
--   [:clapper: Random variables and normal distributions
+-   [![Video](images/video.png) Random variables and normal distributions
     (8:19)](https://www.youtube.com/watch?v=_sLGyt4qWWk)
 
 ### Physics and Random Variables
@@ -150,9 +150,9 @@ particles seen in a few events. We illustrate how physicists decide
 whats going on with a plot of expected Higgs production experimental
 cross sections (probabilities) for signal and background.
 
--   [:clapper: Physics and Random Variables I
+-   [![Video](images/video.png) Physics and Random Variables I
     (8:34)](http://youtu.be/Tn3GBxgplxg)
--   [:clapper: Physics and Random Variables II
+-   [![Video](images/video.png) Physics and Random Variables II
     (5:50)](http://youtu.be/qWEjp0OtvdA)
 
 ### Statistics of Events with Normal Distributions
@@ -163,7 +163,7 @@ numbers defining the errors in counting and leading to Gaussian
 distributions for many things. We demonstrate this in Python
 experiments.
 
--   [:clapper: Statistics of Events with Normal Distributions
+-   [![Video](images/video.png) Statistics of Events with Normal Distributions
     (11:25)](http://youtu.be/LMBtpWOOQLo)
 
 ### Gaussian Distributions
@@ -171,7 +171,7 @@ experiments.
 We introduce the Gaussian distribution and give Python examples of the
 fluctuations in counting Gaussian distributions.
 
--   [:clapper: Gaussian Distributions
+-   [![Video](images/video.png) Gaussian Distributions
     (9:08)](http://youtu.be/LWIbPa-P5W0)
 
 ### Using Statistics
@@ -180,7 +180,7 @@ We discuss the significance of a standard deviation and role of biases
 and insufficient statistics with a Python example in getting incorrect
 answers.
 
--   [:clapper: Using Statistics (14:02)](http://youtu.be/n4jlUrGwgic)
+-   [![Video](images/video.png) Using Statistics (14:02)](http://youtu.be/n4jlUrGwgic)
 
 ### Resources
 
@@ -209,9 +209,9 @@ We define random numbers and describe how to generate them on the
 computer giving Python examples. We define the seed used to define to
 specify how to start generation.
 
--   [:clapper: Higgs Particle Counting Errors
+-   [![Video](images/video.png) Higgs Particle Counting Errors
     (6:28)](https://www.youtube.com/watch?v=de4AQ9AFt54)
--   [:clapper: Generators and Seeds II
+-   [![Video](images/video.png) Generators and Seeds II
     (7:10)](http://youtu.be/9QY5qkQj2Ag)
 
 #### Binomial Distribution
@@ -219,7 +219,7 @@ specify how to start generation.
 We define binomial distribution and give LHC data as an example of where
 this distribution valid.
 
--   [:clapper: Binomial Distribution:
+-   [![Video](images/video.png) Binomial Distribution:
     (12:38)](http://youtu.be/DPd-eVI_twQ)
 
 #### Accept-Reject
@@ -227,27 +227,27 @@ this distribution valid.
 We introduce an advanced method **accept/reject** for generating random
 variables with arbitrary distributions.
 
--   [:clapper: Accept-Reject (5:54)](http://youtu.be/GfshkKMKCj8)
+-   [![Video](images/video.png) Accept-Reject (5:54)](http://youtu.be/GfshkKMKCj8)
 
 #### Monte Carlo Method
 
 We define Monte Carlo method which usually uses accept/reject method in
 typical case for distribution.
 
--   [:clapper: Monte Carlo Method (2:23)](http://youtu.be/kIQ-BTyDfOQ)
+-   [![Video](images/video.png) Monte Carlo Method (2:23)](http://youtu.be/kIQ-BTyDfOQ)
 
 #### Poisson Distribution
 
 We extend the Binomial to the Poisson distribution and give a set of
 amusing examples from Wikipedia.
 
--   [:clapper: Poisson Distribution (4:37)](http://youtu.be/WFvgsVo-k4s)
+-   [![Video](images/video.png) Poisson Distribution (4:37)](http://youtu.be/WFvgsVo-k4s)
 
 #### Central Limit Theorem
 
 We introduce Central Limit Theorem and give examples from Wikipedia.
 
--   [:clapper: Central Limit Theorem
+-   [![Video](images/video.png) Central Limit Theorem
     (4:47)](http://youtu.be/ZO53iKlPn7c)
 
 #### Interpretation of Probability: Bayes v. Frequency
@@ -257,7 +257,7 @@ probability. Bayes's law of conditional probability is derived and
 applied to Higgs example to enable information about Higgs from multiple
 channels and multiple experiments to be accumulated.
 
--   [:clapper: Interpretation of Probability
+-   [![Video](images/video.png) Interpretation of Probability
     (12:39)](http://youtu.be/jzDkExAQI9M)
 
 #### Resources

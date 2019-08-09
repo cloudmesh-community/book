@@ -97,7 +97,7 @@ large biology examples with 446K and 100K points and each with over 100
 clusters. We finish remarks on Plotviz software structure and how to
 download. We also remind you that a picture is worth a 1000 words.
 
-[:clapper: Plotviz II (14:58)](http://youtu.be/FKoCfTJ_cDM)
+[![Video](images/video.png) Plotviz II (14:58)](http://youtu.be/FKoCfTJ_cDM)
 
 ## Resources
 
