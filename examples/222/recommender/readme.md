@@ -1,4 +1,4 @@
-:o: Fix header after talk is complete 
+![No](images/no.png) Fix header after talk is complete 
 # Code for recommender system in python from Mooc081XInformatics-kNN lecture
 
 ## Visulize the clusters using matplotlib
