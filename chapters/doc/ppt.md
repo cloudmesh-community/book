@@ -8,5 +8,5 @@ consecutive recording.
 To help you achieve this, we have provided the following simple
 demonstration.
 
-[:clapper: Powerpoint with Autoplay and Sound
+[![Video](images/video.png) Powerpoint with Autoplay and Sound
 (1:42)](https://www.youtube.com/watch?v=T53rfTRuWkc)

@@ -26,7 +26,7 @@ Dr. Fox or Dr. von Laszewski.
 
 An introduction video is available at:
 
-[:clapper: 222 Class Introduction and Management](https://youtu.be/m0T95VfdnkE)
+[![Video](images/video.png) 222 Class Introduction and Management](https://youtu.be/m0T95VfdnkE)
 
 
 ## Teaching and learning methods

@@ -4,7 +4,7 @@ Outdated: NoSQL
 RDBMS vs. NoSQL
 ---------------
 
-[:clapper: RDBMS vs. NoSQL (9:22)](https://www.youtube.com/watch?v=dJunqER9lb8)
+[![Video](images/video.png) RDBMS vs. NoSQL (9:22)](https://www.youtube.com/watch?v=dJunqER9lb8)
 
 [:scroll: RDBMS vs. NoSQL (1)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
@@ -24,7 +24,7 @@ system. NoSQL comes in two varieties, each with pros and cons: Key-Value
 or schema-less. Common advantages of NoSQL include their being open
 source and fault tolerant.
 
-[:clapper: NoSQL Characteristics (10:31)](https://www.youtube.com/watch?v=BjtTDiKhqk8)
+[![Video](images/video.png) NoSQL Characteristics (10:31)](https://www.youtube.com/watch?v=BjtTDiKhqk8)
 
 [:scroll: NoSQL Characteristics (11)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
@@ -40,7 +40,7 @@ to tablet servers and manages these servers. Memory is conserved by
 making SSTables and memtables compact. BigTable is used in features of
 Google like their search engine and Google Earth.
 
-[:clapper: BigTable (6:55)](https://www.youtube.com/watch?v=JAlz9AI5I-M)
+[![Video](images/video.png) BigTable (6:55)](https://www.youtube.com/watch?v=JAlz9AI5I-M)
 
 [:scroll: BigTable (28)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
@@ -57,7 +57,7 @@ amounts of analytic processing. HBase has a row-column structure similar
 to BigTable as well as master and slave nodes. Its place in the
 architecture of HDFS is shown in a diagram.
 
-[:clapper: HBase (7:37)](https://www.youtube.com/watch?v=i-ibhuVs-ck)
+[![Video](images/video.png) HBase (7:37)](https://www.youtube.com/watch?v=i-ibhuVs-ck)
 
 [:scroll: HBase (44)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
@@ -69,7 +69,7 @@ HBase Coding
 This video gives an overview of the code used in the installation of
 HBase and connecting to it.
 
-[:clapper: HBase Coding (4:30)](https://www.youtube.com/watch?v=KbFMpYRBTtU)
+[![Video](images/video.png) HBase Coding (4:30)](https://www.youtube.com/watch?v=KbFMpYRBTtU)
 
 [:scroll: HBase Coding (60)](https://drive.google.com/open?id=0B88HKpainTSfaDFNbjNiMm44bnc)
 
@@ -87,7 +87,7 @@ of data with numerous subsets, all of which demands specific approaches
 in terms of search queries. There are three stages to this approach:
 query, analysis, and visualization.
 
-[:clapper: Indexing Applications (9:33)](https://www.youtube.com/watch?v=MxgabfoGH-M)
+[![Video](images/video.png) Indexing Applications (9:33)](https://www.youtube.com/watch?v=MxgabfoGH-M)
 
 [:scroll: Indexing Applications (1)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
@@ -103,7 +103,7 @@ MongoDB. Current indexing strategies have limits; for instance, they
 cannot support range queries or only retrieve Top 'n' most relevant
 topics. Customizability of indexing among NoSQL databases is desirable.
 
-[:clapper: Related Work (5:56)](https://www.youtube.com/watch?v=NDjAdFSVzxo)
+[![Video](images/video.png) Related Work (5:56)](https://www.youtube.com/watch?v=NDjAdFSVzxo)
 
 [:scroll: Related Work (11)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
@@ -120,7 +120,7 @@ and additional fields. Index configuration allows for customizability
 through choice of fields, which can be anything from timestamps, text,
 or retweet status.
 
-[:clapper: Indexamples (8:35)](https://www.youtube.com/watch?v=Ec3VFeTGuo8)
+[![Video](images/video.png) Indexamples (8:35)](https://www.youtube.com/watch?v=Ec3VFeTGuo8)
 
 [:scroll: Indexamples (15)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
@@ -143,7 +143,7 @@ query evaluation is made between IndexedHBase and Riak, with Riak being
 more efficient with small data loads but IndexedHBase proving superior
 for large-scale data.
 
-[:clapper: Indexing 101 (9:53)](https://www.youtube.com/watch?v=eKQaLkw-HBU)
+[![Video](images/video.png) Indexing 101 (9:53)](https://www.youtube.com/watch?v=eKQaLkw-HBU)
 
 [:scroll: Indexing 101 (20)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
@@ -158,7 +158,7 @@ sparsity of information in tweets, and attempting to arrange streaming
 tweets. Apache Open Stack upgrades Hadoop 2.0 with YARN and a new HDFS.
 A diagram displays an indexing setup for social media data with YARN.
 
-[:clapper: Social Media Searches (6:19)](https://www.youtube.com/watch?v=a3tcL-Qw9to)
+[![Video](images/video.png) Social Media Searches (6:19)](https://www.youtube.com/watch?v=a3tcL-Qw9to)
 
 [:scroll: Social Media Searches (28)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 
@@ -174,7 +174,7 @@ present, indices allow for searching only the relevant data. An example
 is given illustrating how this decreases the time needed to search
 hashtags in Twitter.
 
-[:clapper: Analysis Algorithms (6:57)](https://www.youtube.com/watch?v=MxoMd4mdshE)
+[![Video](images/video.png) Analysis Algorithms (6:57)](https://www.youtube.com/watch?v=MxoMd4mdshE)
 
 [:scroll: Analysis Algorithms (35)](https://drive.google.com/open?id=0B88HKpainTSfWUh6dVNHcXloSnc)
 

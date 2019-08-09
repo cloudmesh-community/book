@@ -3,7 +3,7 @@ Deprecated
 
 ## Applying for FutureSystems Account
 
-[:clapper: Applying for FutureSystems Account (5:32 )](https://www.youtube.com/watch?v=98ERlWi3k3U)
+[![Video](images/video.png) Applying for FutureSystems Account (5:32 )](https://www.youtube.com/watch?v=98ERlWi3k3U)
 
 [:scroll: Cultivating Clouds (1)](https://drive.google.com/open?id=0B88HKpainTSfZENxeUlOcVFUTkU)
 
@@ -12,7 +12,7 @@ Deprecated
 
 ## FutureSystems India OpenStack
 
-[:clapper: FutureSystems India OpenStack (10:28)](https://www.youtube.com/watch?v=hyKYTpNmJZc)
+[![Video](images/video.png) FutureSystems India OpenStack (10:28)](https://www.youtube.com/watch?v=hyKYTpNmJZc)
 
 [:scroll: FutureSystems India OpenStack (10)](https://drive.google.com/open?id=0B88HKpainTSfZENxeUlOcVFUTkU)
 
@@ -21,5 +21,5 @@ Deprecated
 
 ## Starting VMs on FutureSystems
 
-[:clapper: Starting VMs on FutureSystems (6:40)](https://www.youtube.com/watch?v=RPnhJs4IcfQ)
+[![Video](images/video.png) Starting VMs on FutureSystems (6:40)](https://www.youtube.com/watch?v=RPnhJs4IcfQ)
 

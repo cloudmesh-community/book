@@ -10,9 +10,9 @@ and illustrated.
 This is Part 1 of the introduction. We start with some general remarks and 
 take a closer look at the emerging technology hype cycles. 
 
-[:clapper: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/file/d/1ITxfyu5tJReRM5KgEaPWgT3MrQiK6wD1)
+[![Video](images/video.png) 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/file/d/1ITxfyu5tJReRM5KgEaPWgT3MrQiK6wD1)
 
-[:clapper: 1.b Gartner's Hypecycles with Emerging technologies hypecycles and the priority matrix at selected times 2008-2015](https://drive.google.com/open?id=1uqkUXsVAd_Nwp6nuuWyTIUQxtZZvUK1J)
+[![Video](images/video.png) 1.b Gartner's Hypecycles with Emerging technologies hypecycles and the priority matrix at selected times 2008-2015](https://drive.google.com/open?id=1uqkUXsVAd_Nwp6nuuWyTIUQxtZZvUK1J)
 
 [:scroll: 1.a Gartner's Hypecycles and especially those for emerging technologies between 2016 and 2018](https://drive.google.com/open?id=1vHd10o92iOqxW0yD35DmTWB2XxrGoXF3)
 
@@ -28,9 +28,9 @@ take a closer look at the emerging technology hype cycles.
 
 This is Part 2 of the introduction.
 
-[:clapper: 2.a Business usage patterns from NIST](https://drive.google.com/open?id=1WMPvAsfESLy3X94SVZjfUlSUplJPYVXA)
+[![Video](images/video.png) 2.a Business usage patterns from NIST](https://drive.google.com/open?id=1WMPvAsfESLy3X94SVZjfUlSUplJPYVXA)
 
-[:clapper: 2.b Cyberinfrastructure and AI](https://drive.google.com/open?id=1NiyanWoXXPpNGilutPpFBLqFNE948taS)
+[![Video](images/video.png) 2.b Cyberinfrastructure and AI](https://drive.google.com/open?id=1NiyanWoXXPpNGilutPpFBLqFNE948taS)
 
 [:scroll: 2.a Business usage patterns from NIST](https://drive.google.com/open?id=1NfWW9yBbqHlJWfrCTuRm_9oPICZtFmuL)
 
@@ -46,7 +46,7 @@ This is Part 2 of the introduction.
 
 This is Part 3 of the introduction.
 
-[:clapper: 3. Jobs](https://drive.google.com/open?id=1tMKNKWa71HZSk9jLNw8jUws9-JlldqZ0)
+[![Video](images/video.png) 3. Jobs](https://drive.google.com/open?id=1tMKNKWa71HZSk9jLNw8jUws9-JlldqZ0)
 
 [:scroll: 3. Jobs](https://drive.google.com/open?id=1XDookVsbusK5O-_cXMt8slZPuQY65_eB)
 
@@ -61,9 +61,9 @@ This is Part 3 of the introduction.
 
 This is Part 4 of the introduction.
 
-[:clapper: 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=1XzLGhioe3jdtuQo1V7d_B3syH00tbHSH)
+[![Video](images/video.png) 4a. Industry Trends: Technology Trends by 2014](https://drive.google.com/open?id=1XzLGhioe3jdtuQo1V7d_B3syH00tbHSH)
 
-[:clapper: 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=18AzztLK0OEgej1g9Gv0jMvMkHIj4REnM)
+[![Video](images/video.png) 4b. Industry Trends: 2015 onwards](https://drive.google.com/open?id=18AzztLK0OEgej1g9Gv0jMvMkHIj4REnM)
 
 
 An older set of trend slides is available from:
@@ -87,7 +87,7 @@ A current set is available at:
 
 This is Part 5 of the introduction.
 
-[:clapper: 5. Digital Disruption and Transformation ](https://drive.google.com/open?id=1Wo0pf0H_kQNwau6hTO9MccFdx4zHhV-5)
+[![Video](images/video.png) 5. Digital Disruption and Transformation ](https://drive.google.com/open?id=1Wo0pf0H_kQNwau6hTO9MccFdx4zHhV-5)
 
 [:scroll: 5. Digital Disruption and Transformation ](https://drive.google.com/open?id=1aNCfuUm40vuWdqiEjezWesz9SMI23qxZ)
 
@@ -100,13 +100,13 @@ This is Part 5 of the introduction.
 
 This is Part 6 of the introduction.
 
-[:clapper: 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=1Sqfo3sGOig7S7QVqGj3mP6uY8UwP1fVk)
+[![Video](images/video.png) 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=1Sqfo3sGOig7S7QVqGj3mP6uY8UwP1fVk)
 
 [:scroll: 6a. Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=1IB3slfjTH-ygTNbQHhBQGqDdT9fpdYYp)
 
 [:pencil: 6a.  Computing Model: earlier discussion by 2014](https://drive.google.com/open?id=11FDYMV_ySAHQEY5YFlVrFzCoEUbnpWNr)
 
-[:clapper: 6b.  Computing Model: developments after 2014 including Blockchain](https://drive.google.com/open?id=1M8wrsLawFnbyBhAAgWS_fulgzMSIAz3P)
+[![Video](images/video.png) 6b.  Computing Model: developments after 2014 including Blockchain](https://drive.google.com/open?id=1M8wrsLawFnbyBhAAgWS_fulgzMSIAz3P)
 
 [:scroll: 6b. Computing Model: developments after 2014 including Blockchain](https://drive.google.com/open?id=1SZ1a0ffVWaOmIF5YvXCARjJ-x4SX4JNb)
 
@@ -121,7 +121,7 @@ This is Part 6 of the introduction.
 
 This is Part 7 of the introduction.
 
-[:clapper: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1eBS5tWafVDnGCUtRsTP2l1fFMITwjn1D)
+[![Video](images/video.png) 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1eBS5tWafVDnGCUtRsTP2l1fFMITwjn1D)
 
 [:scroll: 7. Research Model: 4th Paradigm; From Theory to Data driven science?](https://drive.google.com/open?id=1YBItIADnIZr1wLkYBWWtxsLgVg_9lgoO)
 
@@ -134,7 +134,7 @@ This is Part 7 of the introduction.
 
 This is Part 8 of the introduction.
 
-[:clapper: 8. Data Science Pipeline](https://drive.google.com/open?id=1x9DzWBXlimMYgm7EKllNlgwqairTzN2a)
+[![Video](images/video.png) 8. Data Science Pipeline](https://drive.google.com/open?id=1x9DzWBXlimMYgm7EKllNlgwqairTzN2a)
 
 [:scroll: 8. Data Science Pipeline](https://drive.google.com/open?id=17rm2m1v-TaxXIYlR36gqKQqs13XumZNi)
 
@@ -167,7 +167,7 @@ This is Part 10 of the introduction.
 
 This is Part 11 of the introduction.
 
-[:clapper: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=1DlmUYwFTRHL0S_vLQqbumvRHEyicyNt7)
+[![Video](images/video.png) 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=1DlmUYwFTRHL0S_vLQqbumvRHEyicyNt7)
 
 [:scroll: 11. Exploring data bags and spaces: Recommender Systems II](https://drive.google.com/open?id=1keYELndfvM0r4DeedVLPjMY-AAvBHdns)
 
@@ -178,7 +178,7 @@ This is Part 11 of the introduction.
 
 This is Part 12 of the introduction.
 
-[:clapper: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=1SGUB5kLi6Q0B7h6ZsJELAXrpWyrLaNgl)
+[![Video](images/video.png) 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=1SGUB5kLi6Q0B7h6ZsJELAXrpWyrLaNgl)
 
 [:scroll: 12. Another Example: Web Search Information Retrieval](https://drive.google.com/open?id=1Tv5zMBxqqJOfKbNNqwgyZSAVc0WW2d9E)
 
@@ -203,7 +203,7 @@ This is Part 14 of the introduction discussing the software ecosystem
 
 This is Part 15 of the introduction.
 
-[:clapper: 15. Opportunities at Universities](https://drive.google.com/open?id=0B1YZSKYkpykjT3lCcFlkT0NSRUk)
+[![Video](images/video.png) 15. Opportunities at Universities](https://drive.google.com/open?id=0B1YZSKYkpykjT3lCcFlkT0NSRUk)
 
 [:scroll: 15. Opportunities at Universities](https://drive.google.com/open?id=0B1YZSKYkpykjZ1RrZEtaSjNiS0U)
 
@@ -213,7 +213,7 @@ This is Part 15 of the introduction.
 
 This is Part 15 of the introduction with some concluding remarks.
 
-[:clapper: 15. Conclusions](https://drive.google.com/open?id=1r8n-KVp2gnaamjSSsIiK5DLYi5hbAMK-)
+[![Video](images/video.png) 15. Conclusions](https://drive.google.com/open?id=1r8n-KVp2gnaamjSSsIiK5DLYi5hbAMK-)
 
 [:scroll: 15. Conclusions](https://drive.google.com/open?id=1pEkhIhF1syhxY1iZX287-xc7qmBcjBkP)
 

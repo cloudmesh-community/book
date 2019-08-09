@@ -20,9 +20,9 @@ formulations of the basic matrix equations to finding leading
 eigenvector. The unit is concluded by a calculation of PageRank for
 general web pages by extracting the secret from Google.
 
-[:clapper: K-Means I (11:42)](https://www.youtube.com/watch?v=I79ISV6XBbE)
+[![Video](images/video.png) K-Means I (11:42)](https://www.youtube.com/watch?v=I79ISV6XBbE)
 
-[:clapper: K-Means II (11:54)](https://www.youtube.com/watch?v=Srgq9VDg4C8)
+[![Video](images/video.png) K-Means II (11:54)](https://www.youtube.com/watch?v=Srgq9VDg4C8)
 
 ## K-means in Practice
 

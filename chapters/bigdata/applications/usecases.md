@@ -34,7 +34,7 @@ visualization requirements on the most suitable computing platforms and
 clusters while allowing value-added from big data service providers and
 flow of data between the stakeholders in a cohesive and secure manner.
 
-[:clapper: Introduction
+[![Video](images/video.png) Introduction
 (13:02)](https://www.youtube.com/watch?v=3oKdmuH0N3k)
 
 ### Definitions and Taxonomies Subgroup
@@ -55,7 +55,7 @@ categorize them into components and subcomponents based on their
 similarities and differences. In particular data Science and Big Data
 terms are discussed.
 
-[:clapper: Taxonomies
+[![Video](images/video.png) Taxonomies
 (7:42)](https://www.youtube.com/watch?v=7eOtuBV8udo)
 
 ### Reference Architecture Subgroup
@@ -71,7 +71,7 @@ the flow of the data between the stakeholders in a cohesive and secure
 manner. Results include a reference architecture with well defined
 components and linkage as well as several exemplars.
 
-[:clapper: Architecture
+[![Video](images/video.png) Architecture
 (10:05)](https://www.youtube.com/watch?v=h4ylW0vztDw)
 
 ### Security and Privacy Subgroup
@@ -88,7 +88,7 @@ Day Consumerism, Nielsen Homescan, Web Traffic Analysis, Healthcare,
 Health Information Exchange, Genetic Privacy, Pharma Clinical Trial Data
 Sharing, Cyber-security, Government, Military and Education.
 
-[:clapper: Security (9:51)](https://www.youtube.com/watch?v=dHrHk-GvruY)
+[![Video](images/video.png) Security (9:51)](https://www.youtube.com/watch?v=dHrHk-GvruY)
 
 ### Technology Roadmap Subgroup
 
@@ -106,7 +106,7 @@ under development for Big Data; perform a thorough gap analysis and
 document the findings; identify what possible barriers may delay or
 prevent adoption of Big Data; and document vision and recommendations.
 
-[:clapper: Technology
+[![Video](images/video.png) Technology
 (4:14)](https://www.youtube.com/watch?v=va0UCR5gMTA)
 
 ### Interfaces Subgroup
@@ -171,7 +171,7 @@ explicitly implementing some patterns based on use cases. The progress
 of gathering use cases (discussed in next two units) and requirements
 systemization are discussed.
 
-[:clapper: Requirements
+[![Video](images/video.png) Requirements
 (27:28)](https://www.youtube.com/watch?v=f_vxmx3CmMU)
 
 ## 51 Big Data Use Cases
@@ -194,7 +194,7 @@ Preservation; Statistical Survey Response Improvement (Adaptive Design)
 and Non-Traditional Data in Statistical Survey Response Improvement
 (Adaptive Design).
 
-[:clapper: Government Use Cases
+[![Video](images/video.png) Government Use Cases
 (17:43)](https://www.youtube.com/watch?v=e0ks_BuYUVM)
 
 ### Commercial Use Cases
@@ -207,7 +207,7 @@ Business Continuity & Disaster Recovery (BC/DR) Within A Cloud
 Eco-System; Cargo Shipping; Materials Data for Manufacturing and
 Simulation driven Materials Genomics.
 
-[:clapper: Commercial Use Cases
+[![Video](images/video.png) Commercial Use Cases
 (17:43)](https://www.youtube.com/watch?v=URy9u8_34ww)
 
 ### Defense Use Cases
@@ -217,7 +217,7 @@ identification and tracking from Wide Area Large Format Imagery (WALF)
 Imagery or Full Motion Video (FMV) - Persistent Surveillance and
 Intelligence Data Processing and Analysis.
 
-[:clapper: Defense Use Cases
+[![Video](images/video.png) Defense Use Cases
 (15:43)](https://www.youtube.com/watch?v=FXFfE8zcco8)
 
 ### Healthcare and Life Science Use Cases
@@ -230,7 +230,7 @@ Intelligence for Health Care; World Population Scale Epidemiological
 Study; Social Contagion Modeling for Planning, Public Health and
 Disaster Management and Biodiversity and LifeWatch.
 
-[:clapper: Healthcare and Life Science Use Cases
+[![Video](images/video.png) Healthcare and Life Science Use Cases
 (30:11)](https://www.youtube.com/watch?v=uGeYrXENlpU)
 
 ### Deep Learning and Social Networks Use Cases
@@ -243,7 +243,7 @@ Network (Graph) Science and Analytics and NIST Information Access
 Division analytic technology performance measurement, evaluations, and
 standards.
 
-[:clapper: Deep Learning and Social Networks Use Cases
+[![Video](images/video.png) Deep Learning and Social Networks Use Cases
 (14:19)](https://www.youtube.com/watch?v=bdWyhT8bvE4)
 
 ### Research Ecosystem Use Cases
@@ -252,7 +252,7 @@ DataNet Federation Consortium DFC; The 'Discinnet process', metadata
 -big data global experiment; Semantic Graph-search on Scientific
 Chemical and Text-based Data and Light source beamlines.
 
-[:clapper: Research Ecosystem Use Cases
+[![Video](images/video.png) Research Ecosystem Use Cases
 (9:09)](https://www.youtube.com/watch?v=jjyv4RmMIUU)
 
 ### Astronomy and Physics Use Cases
@@ -263,7 +263,7 @@ Survey and Simulations; Large Survey Data for Cosmology; Particle
 Physics: Analysis of LHC Large Hadron Collider Data: Discovery of Higgs
 particle and Belle II High Energy Physics Experiment.
 
-[:clapper: Astronomy and Physics Use Cases
+[![Video](images/video.png) Astronomy and Physics Use Cases
 (17:33)](https://www.youtube.com/watch?v=MPEe8yDVwAo)
 
 ### Environment, Earth and Polar Science Use Cases
@@ -278,14 +278,14 @@ Earth System Model at DOE's NERSC center; DOE-BER Subsurface
 Biogeochemistry Scientific Focus Area and DOE-BER AmeriFlux and FLUXNET
 Networks.
 
-[:clapper: Environment, Earth and Polar Science Use Cases
+[![Video](images/video.png) Environment, Earth and Polar Science Use Cases
 (25:29)](https://www.youtube.com/watch?v=YJGk-uvaUCg)
 
 ### Energy Use Case
 
 This covers Consumption forecasting in Smart Grids.
 
-[:clapper: Energy Use Case
+[![Video](images/video.png) Energy Use Case
 (4:01)](https://www.youtube.com/watch?v=5y_O-a8_Fbg)
 
 ## Features of 51 Big Data Use Cases
@@ -319,7 +319,7 @@ Host of Sensors processed on demand; Pleasingly parallel processing; HPC
 assimilated with observational data; Agent-based models; Multi-modal
 data fusion or Knowledge Management; Crowd Sourcing.
 
-[:clapper: Summary of Use Case Classification
+[![Video](images/video.png) Summary of Use Case Classification
 (23:39)](https://www.youtube.com/watch?v=X0vEmbn1Ld8)
 
 ### Database(SQL) Use Case Classification
@@ -328,7 +328,7 @@ This discusses classic (SQL) database approach to data handling with
 Search&Query and Index features. Comparisons are made to NoSQL
 approaches.
 
-[:clapper: Database (SQL) Use Case Classification
+[![Video](images/video.png) Database (SQL) Use Case Classification
 (11:13)](https://www.youtube.com/watch?v=jIVdQID11Q4)
 
 ### NoSQL Use Case Classification
@@ -337,7 +337,7 @@ This discusses NoSQL (compared in previous lesson) with HDFS, Hadoop and
 Hbase. The Apache Big data stack is introduced and further details of
 comparison with SQL.
 
-[:clapper: NoSQL Use Case Classification
+[![Video](images/video.png) NoSQL Use Case Classification
 (11:20)](https://www.youtube.com/watch?v=uGL8cFPrhoE)
 
 ### Other Use Case Classifications
@@ -345,13 +345,13 @@ comparison with SQL.
 This discusses a subset of use case features: GIS, Sensors. the support
 of data analysis and fusion by streaming data between filters.
 
-[:clapper: Use Case Classifications I
+[![Video](images/video.png) Use Case Classifications I
 (12:42)](https://www.youtube.com/watch?v=79IwNCNjVWU) This discusses a
 subset of use case features: Pleasingly parallel, MRStat, Data
 Assimilation, Crowd sourcing, Agents, data fusion and agents, EGO and
 security.
 
-[:clapper: Use Case Classifications II
+[![Video](images/video.png) Use Case Classifications II
 (20:18)](https://www.youtube.com/watch?v=b-olNbWCJyg)
 
 This discusses a subset of use case features: Classification, Monte
@@ -359,7 +359,7 @@ Carlo, Streaming, PP, MR, MRStat, MRIter and HPC(MPI), global and local
 analytics (machine learning), parallel computing, Expectation
 Maximization, graphs and Collaborative Filtering.
 
-[:clapper: Use Case Classifications III
+[![Video](images/video.png) Use Case Classifications III
 (17:25)](https://www.youtube.com/watch?v=ewqoFGxyQmc)
 
 \TODO{These resources have not all been checked to see if they still

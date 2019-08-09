@@ -41,10 +41,10 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 > with `:o:`.
 
 
-[:clapper: REST 36:02](https://youtu.be/xjFuA6q5N_U) 
+[![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U) 
 
-> Example for a video with the `:clapper:` emoji. Use it in markdown with 
-> `[:clapper: REST 36:02](https://youtu.be/xjFuA6q5N_U)`
+> Example for a video with the `![Video](images/video.png)` emoji. Use it in markdown with 
+> `[![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U)`
 
 [:scroll: Slides 10](TBD) 
 

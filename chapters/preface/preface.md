@@ -30,7 +30,7 @@ $
 > that we know about. These chapters need to be fixed.
 
 
-[:clapper: REST 36:02](https://youtu.be/xjFuA6q5N_U)
+[![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U)
 
 > Example for a video
 

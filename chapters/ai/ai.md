@@ -245,40 +245,40 @@ additon to clustering models. The  algorithims for the three methods
 are formalized and solutions are presented. Additionally visulization
 techinqies are introduced including WebPlotviz and matplotlib.
 
-[:clapper: Introduction to Machine Learning for Cloud Services and Regression 10:55](https://www.youtube.com/watch?v=VdgGy0266Sk&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2&t=0s)
+[![Video](images/video.png) Introduction to Machine Learning for Cloud Services and Regression 10:55](https://www.youtube.com/watch?v=VdgGy0266Sk&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2&t=0s)
 
 ### K-means Clustering 
 
 Video lecture and slides cover an introduction to K-means clusters.
 
-[:clapper: K-means Clusters 17:15](https://www.youtube.com/watch?v=aGRdp4TKc4c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2)
+[![Video](images/video.png) K-means Clusters 17:15](https://www.youtube.com/watch?v=aGRdp4TKc4c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2)
 
 ### Visulization
 
 Video lecture and slides cover data visulaitzation techinques using
 state of the science tools like WebPlotViz.
 
-[:clapper: Data Visualization 30:10](https://www.youtube.com/watch?v=0WHhFAEwr9c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=3)
+[![Video](images/video.png) Data Visualization 30:10](https://www.youtube.com/watch?v=0WHhFAEwr9c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=3)
 
 ### Clustering Examples
 
 Video lecture and slides cover clustering examples.
 
-[:clapper: Examples of Clustering 5:48](https://www.youtube.com/watch?v=_I23XQ-8hLg&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=4)
+[![Video](images/video.png) Examples of Clustering 5:48](https://www.youtube.com/watch?v=_I23XQ-8hLg&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=4)
 
 ### General Clustering with Examples
 
 Video lecture and slides take a generalized apprach to clustering with
 examples from Dr. Geoffery Fox's research. 
 
-[:clapper: General Clustering and Research Examples 22:28](https://www.youtube.com/watch?v=1Tn6LyiIhzw&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=5)
+[![Video](images/video.png) General Clustering and Research Examples 22:28](https://www.youtube.com/watch?v=1Tn6LyiIhzw&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=5)
 
 ### In Depth Example with four centers 
 
 Video lecture and slides use 1000 data points and four artifical
 centers to provide and in depth example of clustering. Code provided.
 
-[:clapper: Example with four centers 20:53](https://www.youtube.com/watch?v=T2vssd_P2F4&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=6)
+[![Video](images/video.png) Example with four centers 20:53](https://www.youtube.com/watch?v=T2vssd_P2F4&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=6)
 
 ### Parallel Computing and K-means
 
@@ -286,7 +286,7 @@ Video lecture and slides discuss parallel computing using K-means as
 an example of how to accelerate time to completion by exploiting
 modern computing hardware.
 
-[:clapper: Parallel Computing and K-means](https://www.youtube.com/watch?v=RXyktQ5KO48&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=7)
+[![Video](images/video.png) Parallel Computing and K-means](https://www.youtube.com/watch?v=RXyktQ5KO48&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=7)
 
 ## Example Project with SVM
 

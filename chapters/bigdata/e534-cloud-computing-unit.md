@@ -6,14 +6,14 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Overall Summary
 
-  :clapper: Video: https://drive.google.com/open?id=1Iq-sKUP28AiTeDU3cW_7L1fEQ2hqakae
+  ![Video](images/video.png) Video: https://drive.google.com/open?id=1Iq-sKUP28AiTeDU3cW_7L1fEQ2hqakae
 
   :orange_book: Slides https://drive.google.com/open?id=1MLYwAM6MrrZSKQjKm570mNtyNHiWSCjC
 
 
 ## Defining Clouds I:
 
-  :clapper: Video https://drive.google.com/open?id=15TbpDGR2VOy5AAYb_o4740enMZKiVTSz
+  ![Video](images/video.png) Video https://drive.google.com/open?id=15TbpDGR2VOy5AAYb_o4740enMZKiVTSz
 
   :orange_book: Slides https://drive.google.com/open?id=1CMqgcpNwNiMqP8TZooqBMhwFhu2EAa3C
 
@@ -25,7 +25,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Defining Clouds II:
 
-  :clapper: Video https://drive.google.com/open?id=1BvJCqBQHLMhrPrUsYvGWoq1nk7iGD9cd
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1BvJCqBQHLMhrPrUsYvGWoq1nk7iGD9cd
 
   :orange_book: Slides https://drive.google.com/open?id=1_rczdp74g8hFnAvXQPVfZClpvoB_B3RN
 
@@ -37,7 +37,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Defining Clouds III:
 
-  :clapper: Video https://drive.google.com/open?id=1MjIU3N2PX_3SsYSN7eJtAlHGfdePbKEL
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1MjIU3N2PX_3SsYSN7eJtAlHGfdePbKEL
 
   :orange_book: Slides https://drive.google.com/open?id=1cDJhE86YRAOCPCAz4dVv2ieq-4SwTYQW
 
@@ -48,7 +48,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Virtualization:
 
-  :clapper: Video https://drive.google.com/open?id=1-zd6wf3zFCaTQFInosPHuHvcVrLOywsw
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1-zd6wf3zFCaTQFInosPHuHvcVrLOywsw
 
   :orange_book: Slides https://drive.google.com/open?id=1_-BIAVHSgOnWQmMfIIC61wH-UBYywluO
 
@@ -58,7 +58,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Infrastructure I:
 
-  :clapper: Video https://drive.google.com/open?id=1CIVNiqu88yeRkeU5YOW3qNJbfQHwfBzE
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1CIVNiqu88yeRkeU5YOW3qNJbfQHwfBzE
 
   :orange_book: Slides https://drive.google.com/open?id=11JRZe2RblX2MnJEAyNwc3zup6WS8lU-V
 
@@ -70,7 +70,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Infrastructure II:
 
-  :clapper: Videos https://drive.google.com/open?id=1yGR0YaqSoZ83m1_Kz7q7esFrrxcFzVgl
+  ![Video](images/video.png) Videos https://drive.google.com/open?id=1yGR0YaqSoZ83m1_Kz7q7esFrrxcFzVgl
 
   :orange_book: Slides https://drive.google.com/open?id=1L6fnuALdW3ZTGFvu4nXsirPAn37ZMBEb
 
@@ -82,7 +82,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Software:
 
-  :clapper: Video https://drive.google.com/open?id=14HISqj17Ihom8G6v9KYR2GgAyjeK1mOp
+  ![Video](images/video.png) Video https://drive.google.com/open?id=14HISqj17Ihom8G6v9KYR2GgAyjeK1mOp
 
   :orange_book: Slides https://drive.google.com/open?id=10TaEQE9uEPBFtAHpCAT_1akCYbvlMCPg
 
@@ -95,7 +95,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Applications I: Research applications
 
-  :clapper: Video https://drive.google.com/open?id=11zuqeUbaxyfpONOmHRaJQinc4YSZszri
+  ![Video](images/video.png) Video https://drive.google.com/open?id=11zuqeUbaxyfpONOmHRaJQinc4YSZszri
 
   :orange_book: Slides https://drive.google.com/open?id=1hUgC82FLutp32rICEbPJMgHaadTlOOJv
 
@@ -104,7 +104,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Applications II: Few key types
 
-  :clapper: Video https://drive.google.com/open?id=1S2-MgshCSqi9a6_tqEVktktN4Nf6Hj4d
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1S2-MgshCSqi9a6_tqEVktktN4Nf6Hj4d
 
   :orange_book: Slides https://drive.google.com/open?id=1KlYnTZgRzqjnG1g-Mf8NTvw1k8DYUCbw
 
@@ -114,7 +114,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ##  Parallel Computing in Pictures
 
-  :clapper: Video https://drive.google.com/open?id=1LSnVj0Vw2LXOAF4_CMvehkn0qMIr4y4J
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1LSnVj0Vw2LXOAF4_CMvehkn0qMIr4y4J
 
   :orange_book: Slides https://drive.google.com/open?id=1IDozpqtGbTEzANDRt4JNb1Fhp7JCooZH
 
@@ -124,7 +124,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Parallel Computing in real world
 
-  :clapper: Video https://drive.google.com/open?id=1d0pwvvQmm5VMyClm_kGlmB79H69ihHwk
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1d0pwvvQmm5VMyClm_kGlmB79H69ihHwk
 
   :orange_book: Slides https://drive.google.com/open?id=1aPEIx98aDYaeJS-yY1JhqqnPPJbizDAJ
 
@@ -136,7 +136,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Cloud Storage:
 
-  :clapper: Video https://drive.google.com/open?id=1ukgyO048qX0uZ9sti3HxIDGscyKqeCaB
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1ukgyO048qX0uZ9sti3HxIDGscyKqeCaB
 
   :orange_book: Slides https://drive.google.com/open?id=1rVRMcfrpFPpKVhw9VZ8I72TTW21QxzuI
 
@@ -146,7 +146,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## HPC and Clouds: The Branscomb Pyramid
 
-  :clapper: Video https://drive.google.com/open?id=15rrCZ_yaMSpQNZg1lBs_YaOSPw1Rddog
+  ![Video](images/video.png) Video https://drive.google.com/open?id=15rrCZ_yaMSpQNZg1lBs_YaOSPw1Rddog
 
   :orange_book: Slides https://drive.google.com/open?id=1JRdtXWWW0qJrbWAXaHJHxDUZEhPCOK_C
 
@@ -156,7 +156,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Comparison of Data Analytics with Simulation:
 
-  :clapper: Video https://drive.google.com/open?id=1wmt7MQLz3Bf2mvLN8iHgXFHiuvGfyRKr
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1wmt7MQLz3Bf2mvLN8iHgXFHiuvGfyRKr
 
   :orange_book: Slides https://drive.google.com/open?id=1vRv76LerhgJKUsGosXLVKq4s_wDqFlK4
 
@@ -167,7 +167,7 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## The Future:
 
-  :clapper: Video https://drive.google.com/open?id=1A20g-rTYe0EKxMSX0HI4D8UyUDcq9IJc  
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1A20g-rTYe0EKxMSX0HI4D8UyUDcq9IJc  
 
   :orange_book: Slides https://drive.google.com/open?id=1_vFA_SLsf4PQ7ATIxXpGPIPHawqYlV9K  
 
@@ -180,6 +180,6 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Fault Tolerance
 
-  :clapper: Video https://drive.google.com/open?id=11hJA3BuT6pS9Ovv5oOWB3QOVgKG8vD24  
+  ![Video](images/video.png) Video https://drive.google.com/open?id=11hJA3BuT6pS9Ovv5oOWB3QOVgKG8vD24  
 
   :orange_book: Slides https://drive.google.com/open?id=1oNztdHQPDmj24NSGx1RzHa7XfZ5vqUZg

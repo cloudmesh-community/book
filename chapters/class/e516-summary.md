@@ -13,7 +13,7 @@
 
 Presentation about this Document
 
-* [:clapper: Introduction](https://www.youtube.com/watch?v=w3o2EHaFx3o)
+* [![Video](images/video.png) Introduction](https://www.youtube.com/watch?v=w3o2EHaFx3o)
 
 
 ## Introduction

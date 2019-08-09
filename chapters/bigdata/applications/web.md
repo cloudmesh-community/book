@@ -52,7 +52,7 @@ are converted into belief and relevance.
 
 ### The Problem
 
-[:clapper: Text Mining (9:56)](https://www.youtube.com/watch?v=RFBeAWBkUsI)
+[![Video](images/video.png) Text Mining (9:56)](https://www.youtube.com/watch?v=RFBeAWBkUsI)
 
 This lesson starts with the web with its size, shape (coming from the
 mutual linkage of pages by URL's) and universal power laws for number of
@@ -60,7 +60,7 @@ pages with particular number of URL's linking out or in to page.
 
 ### Information Retrieval
 
-[:clapper: Information Retrieval (6:06)](https://youtu.be/KtWhk2cdRa4)
+[![Video](images/video.png) Information Retrieval (6:06)](https://youtu.be/KtWhk2cdRa4)
 
 Information retrieval is introduced A comparison is given between
 semantic searches as in databases and the full text search that is base
@@ -70,14 +70,14 @@ retrieval are given.
 
 ### History
 
-[:clapper: Web Search History (5:48)](https://youtu.be/J7D61uH5gVM)
+[![Video](images/video.png) Web Search History (5:48)](https://youtu.be/J7D61uH5gVM)
 
 The origin of web search in libraries, catalogs and concordances is
 summarized.
 
 ### Key Fundamental Principles
 
-[:clapper: Principles (9:30)](https://youtu.be/yPFi6xFnDHE)
+[![Video](images/video.png) Principles (9:30)](https://youtu.be/yPFi6xFnDHE)
 
 This lesson describes the DIKW -- Data Information Knowledge Wisdom --
 model for web search. Then it discusses documents, collections and the
@@ -85,7 +85,7 @@ important Bag of Words representation.
 
 ### Information Retrieval (Web Search) Components
 
-[:clapper: Fundamental Principals of Web Search (5:06)](https://youtu.be/EGsnonXgb3Y)
+[![Video](images/video.png) Fundamental Principals of Web Search (5:06)](https://youtu.be/EGsnonXgb3Y)
 
 This describes queries in context of an Information Retrieval
 architecture. The method of judging quality of results including recall,
@@ -93,7 +93,7 @@ precision and diversity is described.
 
 ## Search Engines
 
-[:clapper: Search Engines (3:08)](https://youtu.be/kBV-99N6f7k)
+[![Video](images/video.png) Search Engines (3:08)](https://youtu.be/kBV-99N6f7k)
 
 This short lesson describes a time line for evolution of search engines.
 The first web search approaches were directly built on Information
@@ -102,21 +102,21 @@ showed the importance of URL structure as exemplified by PageRank.
 
 ### Boolean and Vector Space Models
 
-[:clapper: Boolean and Vector Space Model (6:17)](https://youtu.be/JzGBA0OhsIk)
+[![Video](images/video.png) Boolean and Vector Space Model (6:17)](https://youtu.be/JzGBA0OhsIk)
 
 This lesson describes the Boolean and Vector Space models for query
 including the cosine similarity.
 
 ### Web crawling and Document Preparation
 
-[:clapper: Web crawling and Document Preparation (4:55)](https://youtu.be/Wv-r-PJ9lro)
+[![Video](images/video.png) Web crawling and Document Preparation (4:55)](https://youtu.be/Wv-r-PJ9lro)
 
 This describes a Web Crawler and then the steps needed to analyze data
 from Web and produce a set of terms.
 
 ### Indices
 
-[:clapper: Indices (5:44)](https://youtu.be/NY2SmrHoBVM)
+[![Video](images/video.png) Indices (5:44)](https://youtu.be/NY2SmrHoBVM)
 
 This lesson describes both building and accessing an inverted index. It
 describes how phrases are treated and gives details of query structure
@@ -124,7 +124,7 @@ from some early logs.
 
 ### TF-IDF and Probabilistic Models
 
-[:clapper: TF-IDF and Probabilistic Models (3:57)](https://youtu.be/9P_HUmpselU)
+[![Video](images/video.png) TF-IDF and Probabilistic Models (3:57)](https://youtu.be/9P_HUmpselU)
 
 It describes the importance of term specificity and how it is captured
 in TF-IDF. It notes how frequencies are converted into belief and
@@ -144,7 +144,7 @@ as an example.
 
 ### Data Analytics for Web Search
 
-[:clapper: Web Search and Text Mining II (6:11)](https://www.youtube.com/watch?v=kHEFxhWwhx0)
+[![Video](images/video.png) Web Search and Text Mining II (6:11)](https://www.youtube.com/watch?v=kHEFxhWwhx0)
 
 This short lesson describes the different steps needed in web search
 including: Get the digital data (from web or from scanning); Crawl web;
@@ -156,7 +156,7 @@ enhancing relevance.
 
 ### Link Structure Analysis including PageRank
 
-[:clapper: Related Applications (17:24)](https://www.youtube.com/watch?v=ApDu-7_1LYk)
+[![Video](images/video.png) Related Applications (17:24)](https://www.youtube.com/watch?v=ApDu-7_1LYk)
 
 The value of links and the concepts of Hubs and Authorities are
 discussed. This leads to definition of PageRank with examples.
@@ -167,7 +167,7 @@ models are covered briefly in a later lesson.
 
 ### Web Advertising and Search
 
-[:clapper: Web Advertising and Search (9:02)](https://www.youtube.com/watch?v=375sY1YMk5U)
+[![Video](images/video.png) Web Advertising and Search (9:02)](https://www.youtube.com/watch?v=375sY1YMk5U)
 
 Internet and mobile advertising is growing fast and can be personalized
 more than for traditional media. There are several advertising types
@@ -177,7 +177,7 @@ emerging field of computational advertising.
 
 ### Clustering and Topic Models
 
-[:clapper: Clustering and Topic Models (6:21)](https://youtu.be/95cHMyZ-TUs)
+[![Video](images/video.png) Clustering and Topic Models (6:21)](https://youtu.be/95cHMyZ-TUs)
 
 We discuss briefly approaches to defining groups of documents. We
 illustrate this for Google News and give an example that this can give

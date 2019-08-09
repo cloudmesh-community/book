@@ -21,7 +21,7 @@ This should bring up the [graphql](#s-graphql).
 
 This section is accompanied by a video about REST.
 
-[:clapper: REST 36:02](https://youtu.be/xjFuA6q5N_U)
+[![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U)
 
 REST stands for **RE**presentational **S**tate **T**ransfer. REST is an
 architecture style for designing networked applications. It is based on

@@ -4,7 +4,7 @@ OUTDATED: Computing Fundamentals
 Retired lectures
 ----------------
 
-[:clapper: Introduction - (retired) (8:31)](https://www.youtube.com/watch?v=5lKj8_nqj9k)
+[![Video](images/video.png) Introduction - (retired) (8:31)](https://www.youtube.com/watch?v=5lKj8_nqj9k)
 
 [:scroll: Introduction - (retired) (1)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
@@ -19,7 +19,7 @@ Service. AzureBlast is used as an example of how to utilize the cloud
 setup. Certain misconceptions about clouds are then presented for
 further discussion.
 
-[:clapper: Data Center Model (8:08)](https://www.youtube.com/watch?v=6Hq_LuLB-RU)
+[![Video](images/video.png) Data Center Model (8:08)](https://www.youtube.com/watch?v=6Hq_LuLB-RU)
 
 [:scroll: Data Center Model (9)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
@@ -33,7 +33,7 @@ scientific research has also undergone an upgrade. However, the average
 scientist would rather focus on their own research rather than spend
 time trying to learn different methods of cloud and supercomputing.
 
-[:clapper: Data Intensive Sciences (2:44)](https://www.youtube.com/watch?v=Ptoj3BME_z4)
+[![Video](images/video.png) Data Intensive Sciences (2:44)](https://www.youtube.com/watch?v=Ptoj3BME_z4)
 
 [:scroll: Data Intensive Sciences (19)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
@@ -47,7 +47,7 @@ Following this is an exploration of the MapReduce program, and an
 illustration of its concepts through WordCount. Finally, four distinct
 approaches to MapReduce are compared.
 
-[:clapper: IaaS/PaaS/SaaS (10:17)](https://www.youtube.com/watch?v=_irz3v1gT-A)
+[![Video](images/video.png) IaaS/PaaS/SaaS (10:17)](https://www.youtube.com/watch?v=_irz3v1gT-A)
 
 [:scroll: IaaS, PaaS and SaaS (25)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 
@@ -63,7 +63,7 @@ support, etc. In spite of this, clouds still have clear advantages over
 traditional computing models. A quiz is offered at the end asking
 students to correctly place software in a hierarchy of computing.
 
-[:clapper: Challenges (5:27)](https://www.youtube.com/watch?v=VpDRGcBe4s8)
+[![Video](images/video.png) Challenges (5:27)](https://www.youtube.com/watch?v=VpDRGcBe4s8)
 
 [:scroll: Challenges (42)](https://drive.google.com/open?id=1eXWtNlQ_jgeq_nVS_9B7MTaiDjzddXjC)
 

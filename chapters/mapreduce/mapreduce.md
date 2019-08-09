@@ -14,7 +14,7 @@ Now that you have a basic understanding of the map function we
 recommend to watch our videos about mapreduce, hadoop and spark which
 we provide within this chapter.
 
-[:clapper: Map Reduce, Hadoop, and Spark (19:02) Hadoop A](https://youtu.be/HfuP2RJnQ6k)
+[![Video](images/video.png) Map Reduce, Hadoop, and Spark (19:02) Hadoop A](https://youtu.be/HfuP2RJnQ6k)
 
 
 MapReduce is a programming technique or processing capability which
