@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Provide some simple calculations so we can test cloud services.
 * Show case some elementary OpenCV functions

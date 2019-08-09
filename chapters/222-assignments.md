@@ -79,7 +79,7 @@ Examples, and Chapters, or excelent Project reports and code.
   program. Examples augment chapters and Sections.
 
 
-:warning: It is expected from you that you self identify a section
+![](../images/warning.png){height=12pt} It is expected from you that you self identify a section
 or a chapter as this shows competence in the area of cloud
 computing. If however you do not know what to select, you must attend
 an online hour with us in which we identify sections and chapters with

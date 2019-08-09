@@ -579,3 +579,37 @@
     - chapters/SECTION/SECTION-ISSUES.md:
         - chapters/issues/issues.md
     - chapters/SECTION/SECTION-REFERENCES.md
+
+
+- BOOK_PYTHON:
+    - chapters/SECTION/SECTION-PREFACE.md:
+        - chapters/version.md
+    - chapters/prg/python/python-intro.md
+    - chapters/prg/python/python-install.md
+    - chapters/prg/python/python-interactive.md
+    - chapters/prg/python/python-editor.md
+    - chapters/prg/python/python.md
+    - chapters/prg/python/python-subprocess.md
+    - chapters/prg/python/python-advanced.md
+    - chapters/prg/python/python-libraries.md:
+        - chapters/prg/python/python-data.md
+        - chapters/prg/python/python-matplotlib.md
+        - chapters/prg/python/python-docopts.md
+        - chapters/prg/python/python-cmd5.md
+        - chapters/prg/python/python-cmd.md
+        - chapters/prg/python/opencv/opencv.md
+        - chapters/prg/python/opencv/secchi.md
+    - chapters/SECTION/SECTION-DATA.md:
+        - chapters/data/formats.md
+    - chapters/data/mongodb.md:
+        - chapters/data/mongoengine.md
+    - chapters/prg/python/python-wordcount.md
+    - chapters/prg/python/numpy/numpy.md
+    - chapters/prg/python/scipy/scipy.md
+    - chapters/prg/python/scikit-learn/scikit-learn.md
+    - chapters/prg/python/python-parallel.md
+    - chapters/prg/python/dask/dask.md
+    - chapters/prg/python/random-forest/random-forest.md
+    - chapters/prg/python/fingerprint/fingerprint.md
+    - chapters/prg/python/facedetection/facedetection.md
+

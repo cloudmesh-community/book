@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Reveiew classical architectural models leading up to cloud computing.
 * Review some mayor cloud architecture views.

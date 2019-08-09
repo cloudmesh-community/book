@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Be able to know the basic commands to work in a [Linux]{.index} terminal.
 * Get familiar with Linux Commands

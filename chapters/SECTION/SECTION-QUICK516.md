@@ -7,7 +7,7 @@ class.
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Get you started in class.
 * Introduce terminology such as Labs, Projects.

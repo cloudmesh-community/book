@@ -3,7 +3,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Obtain an overview of the NIST Big Data Refernce Architecture.
 * Understand that you can contribute to it as part of this class.

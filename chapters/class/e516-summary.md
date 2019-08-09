@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Obtain an overview of the topics we explore.
 * Identify topics that you are especially interested in.

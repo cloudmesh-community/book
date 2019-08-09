@@ -2,7 +2,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Learn about how we distribute material as ePub's.
 * Learn how to cretae an ePub with our material from source.

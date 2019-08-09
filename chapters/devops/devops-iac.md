@@ -6,7 +6,7 @@
 
 ---
 
-**:mortar_board: Learning Objectives**
+![](images/learning.png) **Learning Objectives**
 
 * Introduction to IaC 
 * How IaC is related to DevOps
