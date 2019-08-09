@@ -1,6 +1,6 @@
 ## Syllabus ![No](images/no.png)
 
-![Warning](images/warning.png) This document is under construction and will change.
+> ![Warning](images/warning.png) *This document is under construction and will change.*
 
 It is obvious that some lectures overlap between different classes as
 they introduce you or refresh your knowledge about common topics and
@@ -21,8 +21,8 @@ once they become available.
 
 ---
 
-![Warning](images/warning.png) please note that chapters may be added or removed throughout
-the semester.
+> ![Warning](images/warning.png) *Please note that chapters may be added or removed throughout
+> the semester.*
 
 ---
 

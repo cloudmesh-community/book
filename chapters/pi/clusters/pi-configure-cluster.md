@@ -24,7 +24,7 @@ More information on `expect` can be found [here](https://likegeeks.com/expect-co
 
 ## Setting up DHCP
 
-![Warning](images/warning.png) this tutorial is insecure! ![Warning](images/warning.png)
+> ![Warning](images/warning.png) *The information presented here insecure!* 
 
 TODO: Find out if cluster should be set up with or without internet
 enabled. Tutorial for getting Pi on IU Secure

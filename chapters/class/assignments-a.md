@@ -102,13 +102,15 @@ students this is optional. Please refer to your specific class.
 
 ---
 
-![Warning](images/warning.png) Please note that we do not provide support for Windows. You
-can certainly use virtualbox and install a newer version of ubuntu on
-it. Another option is to create a bootable USB stick or external HD on
-which you install ubuntu. 
+> ![Warning](images/warning.png) *Please note that we do not provide support for Windows. You
+> can certainly use virtualbox and install a newer version of ubuntu on
+> it. Another option is to create a bootable USB stick or external HD on
+> which you install ubuntu.*
 
-![Warning](images/warning.png) Windows 10 Home Edition has significant limitations at time
-of writing of this document. For example it does not allow you to use
+> ![Warning](images/warning.png) *Windows 10 Home Edition has significant limitations at time
+> of writing of this document.*
+
+For example it does not allow you to use
 containers or proper virtualization. For this reason we recommend that
 you upgrade to Windows 10 pro or education If you like to use
 Windows. The education version is available for free via IU. Please
@@ -119,9 +121,9 @@ update to 64 bit. Please consult the Windows documentation on
 this. Whatever you do, make a backup first. It may be easier to boot
 from an external HDD directly into ubuntu. 
 
-![Warning](images/warning.png) macOS users have typically an easy time as all TAs have access
-to macOS machines. However the version must be the latest version. We do
-not support older versions.
+> ![Warning](images/warning.png) *macOS users have typically an easy time as all TAs have access
+> to macOS machines. However the version must be the latest version. We do
+> not support older versions.*
 
 ---
 
@@ -315,9 +317,9 @@ Report Format:
     styles. Your final submission will include the bibliography file
     as a separate document.
 
-    ![Warning](images/warning.png) Documents that do not follow the ACM format and are not
-    accompanied by references managed with jabref or are not spell
-    checked will be returned without review.
+    > ![Warning](images/warning.png) *Documents that do not follow the ACM format and are not
+    > accompanied by references managed with jabref or are not spell
+    > checked will be returned without review.*
 
 
 Code:

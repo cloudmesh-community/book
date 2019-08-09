@@ -18,15 +18,19 @@ git:
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
 file:
   "chapter": "file://../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../chapters"
 BOOK:
   - PREFACE:
     - "{git.credit}/disclaimer.md"
   - INTRODUCTION:
-    - "{file.chapter}/prg/SECTION-PYTHON.md"
     - "{file.chapter}/prg/python/python-intro.md"
+  - INSTALATION:
     - "{file.chapter}/prg/python/python-install.md"
+  - FIRST_STEPS:
     - "{file.chapter}/prg/python/python-interactive.md"
     - "{file.chapter}/prg/python/python-editor.md"
+  - LANGUAGE:
     - "{file.chapter}/prg/python/python.md"
   - LIBRARIES:
     - "{file.chapter}/prg/python/python-libraries.md"

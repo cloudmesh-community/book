@@ -37,10 +37,10 @@ Next we are going to create the Dockerfile which includes all the
 instructions for the deployment of the REST API on docker. This file
 includes the following content:
 
-![Warning](images/warning.png) we do not know if this is a good image as this was
-originally contributed by a student. We would prefer if the image is
-created from scratch by a dockerfile. Running arbitrary docker images
-on your machine could pose a security risk
+> ![Warning](images/warning.png) *We do not know if this is a good image as this was
+> originally contributed by a student. We would prefer if the image is
+> created from scratch by a dockerfile. Running arbitrary docker images
+> on your machine could pose a security risk.*
 
 ```
 FROM tiangolo/uwsgi-nginx-flask:flask
@@ -104,8 +104,8 @@ $ docker build -t sample-flask-rest-app .
 
 If it builds successfully, you will get the following response
 
-![Warning](images/warning.png) this image may not work and may not be secure so do not use
-this example!
+> ![Warning](images/warning.png) *this image may not work and may not be secure so do not use
+> this example!*
 
 ```console
 $ docker build -t sample-flask-rest-app .

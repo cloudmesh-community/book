@@ -1,6 +1,6 @@
 # Hadoop Virtual Cluster Installation Using Cloudmesh ![No](images/no.png)
 
-![Warning](images/warning.png) This version is dependent on an older version of cloudmesh
+> ![Warning](images/warning.png) *This version is dependent on an older version of cloudmesh.*
 
 ![No](images/no.png) :TODO: we need to add the instalation instructions based on this
 version

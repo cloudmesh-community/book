@@ -19,7 +19,7 @@ Than you can run this [script](https://raw.githubusercontent.com/cloudmesh-commu
 $ sh install-ubuntu.sh
 ```
 
-![Warning](images/warning.png) please note that we have not yet tested this and are looking
-for feedback and improvements to the `install-ubuntu.sh` script.
+> ![Warning](images/warning.png) *Please note that we have not yet tested this and are looking
+> for feedback and improvements to the `install-ubuntu.sh` script.*
 
 Once the software is installed you can scip to @sec:create-book

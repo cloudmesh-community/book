@@ -312,10 +312,10 @@ Its very important for the application to handle security aspect explicitly.
 * `Popen.wait()`: Wait for child process to terminate. Set and return
   returncode attribute.
 
-  ![](images/warning.png){height=12pt} *This will deadlock when using
-  `stdout=PIPE` and/or `stderr=PIPE` and the child process generates
-  enough output to a pipe such that it blocks waiting for the OS pipe
-  buffer to accept more data. Use `communicate()` to avoid that.*
+  > ![](images/warning.png) *This will deadlock when using
+  > `stdout=PIPE` and/or `stderr=PIPE` and the child process generates
+  > enough output to a pipe such that it blocks waiting for the OS pipe
+  > buffer to accept more data. Use `communicate()` to avoid that.*
 	
 * `Popen.communicate(input=None)`: Interact with process: Send data to
   stdin. Read data from stdout and stderr, until end-of-file is
@@ -346,9 +346,9 @@ Its very important for the application to handle security aspect explicitly.
 
 The following attributes are also available:
 
-![](images/warning.png){height=12pt} *Use `communicate()` rather than< .stdin.write, .stdout.read or
-.stderr.read to avoid deadlocks due to any of the other OS pipe
-buffers filling up and blocking the child process.*
+> ![](images/warning.png) *Use `communicate()` rather than< .stdin.write, .stdout.read or
+> .stderr.read to avoid deadlocks due to any of the other OS pipe
+> buffers filling up and blocking the child process.*
 	
 * `Popen.stdin`: If the stdin argument was PIPE, this attribute is a
   file object that provides input to the child process. Otherwise, it

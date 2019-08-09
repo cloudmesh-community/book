@@ -10,7 +10,9 @@ TODO: See where this fits into the Pi book...
   
 ### Setting up a Small Pi Cluster by Hand 
 
-![Warning](images/warning.png) Step 1 should probably be moved to book/chapters/pi/setup-ultimate.md.  Keeping this here until it can be combined with the other sections on initial cluster setup.
+> ![Warning](images/warning.png) *Step 1 should probably be moved to 
+> book/chapters/pi/setup-ultimate.md.  Keeping this 
+> here until it can be combined with the other sections on initial cluster setup.*
 
 ### Burning OS image to SD cards
 

@@ -657,7 +657,7 @@ from the order in which we listed the elements when we declared the
 dictionary initially (Name, Age, Class). It is important to keep this in
 mind: 
 
-> ![](images/warning.png){height=12pt} *You cannot 
+> ![](images/warning.png) *You cannot 
 > make any assumptions about the order in which
 > the elements of a dictionary will be returned by the keys() and
 > values() methods*.

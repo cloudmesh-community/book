@@ -523,10 +523,10 @@ and try to save the object like wise.
 
 ## Towards cmd5 extensions to manage eve and mongo ![No](images/no.png)
 
-![Warning](images/warning.png) part of this section related to management of the mongo db
-serviceis done by the cm4 command we will be developping as part of
-this class `cms mongo admin` that does all of the things explained
-next and more.
+> ![Warning](images/warning.png) *Part of this section related to management of the mongo db
+> serviceis done by the cm4 command we will be developping as part of
+> this class `cms mongo admin` that does all of the things explained
+> next and more.*
 
 Naturally it is of advantage to have in cms administration commands to
 manage mongo and eve from cmd instead of targets in the Makefile. Hence,

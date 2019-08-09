@@ -162,9 +162,9 @@ lecture material are subject to change as we see fit.
 
 ---
 
-![Warning](images/warning.png) *This weekly Agenda will be updated every week. Yo are required to
-check in every week for updates. At this time we have included an
-approximate weekly agenda.*
+> ![Warning](images/warning.png) *This weekly Agenda will be updated every week. Yo are required to
+> check in every week for updates. At this time we have included an
+> approximate weekly agenda.*
 
 ---
 

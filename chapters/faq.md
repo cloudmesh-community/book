@@ -105,9 +105,9 @@ Here is the workflow on how to read such technical sections
 
 6. Carefully execute the relevant portions for you
 
-![Warning](images/warning.png) AS ALWAYS THERE IS NO GUARANTEE THAT WHAT THE CODE WORKS
-OR COULD NOT DESTROY SOMETHING. MAKE SURE TO HAVE A BACKUP. IF IN
-DOUBT RUN IN A VIRTUAL MACHINE IF YOU CAN.
+> ![Warning](images/warning.png) *AS ALWAYS THERE IS NO GUARANTEE THAT WHAT THE CODE WORKS
+> OR COULD NOT DESTROY SOMETHING. MAKE SURE TO HAVE A BACKUP. IF IN
+> DOUBT RUN IN A VIRTUAL MACHINE IF YOU CAN.*
 
 ## How to check if a yaml file is valid?
 

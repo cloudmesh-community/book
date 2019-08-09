@@ -1,11 +1,11 @@
 # Chameleon Cloud Security Warning {#sec:chameleon-resources}
 
-![Warning](images/warning.png) **Chameleon cloud promotes insecure use of ssh while
-suggesting passphrase less keys.** This is **very dangerous** due to
-the fact that someone could gain access to your computer and if a
-password less key is stolen easy access to other systems can be
-achieved. Instead you must use whenever possible passphrases and use
-ssh agent and ssh add!
+> ![Warning](images/warning.png) **Chameleon cloud promotes insecure use of ssh while
+> suggesting passphrase less keys.** This is **very dangerous** due to
+> the fact that someone could gain access to your computer and if a
+> password less key is stolen easy access to other systems can be
+> achieved. Instead you must use whenever possible passphrases and use
+> ssh agent and ssh add!
 
 To show you tis insecue practice, we quote from their
 [Web page](https://chameleoncloud.readthedocs.io/en/latest/getting-started/faq.html?highlight=ssh#faq-ssh):

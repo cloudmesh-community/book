@@ -58,13 +58,13 @@ only your chameleon account name and potentially your organizational
 e-mail, Firstname, and Lastname so they can check you are eligible to
 get access.
 
-![Warning](images/warning.png) Indiana University students that take the e516 and e616
-classes will have to fill out a google form in which they communicate
-the chameleon cloud name. You can already apply for an account name,
-but do not apply for a project. If you nevertheless apply for a
-project, we will hear from the chameloen cloud administrators. As they
-do not like taht because you have not followed the chameleon cloud
-project policies you will receive a grade deduction for the class.
+> ![Warning](images/warning.png) *Indiana University students that take the e516 and e616
+> classes will have to fill out a google form in which they communicate
+> the chameleon cloud name. You can already apply for an account name,
+> but do not apply for a project. If you nevertheless apply for a
+> project, we will hear from the chameloen cloud administrators. As they
+> do not like taht because you have not followed the chameleon cloud
+> project policies you will receive a grade deduction for the class.*
 
 ## Step 3: Start using Chameleon
 

@@ -26,12 +26,14 @@ detect the resolution based on the monitor attached. Once detected the
 config file will be rewritten if necessary and the Pi will be rebooted
 with the correct resolution in the configuration file.
 
-![Warning](images/warning.png) In order for your monitor to work, you will need to add it
-to the script we provide. Use the following program and add
-appropriate cases for your monitor
+> ![Warning](images/warning.png) *In order for your monitor to work, you will need to add it
+> to the script we provide. Use the following program and add
+> appropriate cases for your monitor.*
 
-    /usr/bin/tvservice -d /boot/edid.dat
-    /usr/bin/edidparser /boot/edid.dat
+```bash
+/usr/bin/tvservice -d /boot/edid.dat
+/usr/bin/edidparser /boot/edid.dat
+```
 
 ### How it works
 
@@ -157,9 +159,9 @@ for the raspberry.
 
 ![No](images/no.png) please help identifying how to do this
 
-![Warning](images/warning.png) We recommend not to use the WiFi and the ethernet adapter at the same
-time as it can come to issues when you boot them up while they are
-both connected.
+> ![Warning](images/warning.png) *We recommend not to use the WiFi and the ethernet adapter at the same
+> time as it can come to issues when you boot them up while they are
+> both connected.*
  
 
 ## Exercises
