@@ -1,0 +1,54 @@
+---
+metadata:
+  image: "cover.png"
+  title: "Introduction to Python"
+  subtitle: "for Cloud Computing"
+  author: 'Gregor von Laszewski'
+  subauthor: "Editor"
+  email: "laszewski@gmail.com"
+  url: "https://github.com/cyberaide/bookmanager"
+  description: "Book creator"
+  abstract: "my abstract"
+  keywords: "pandoc"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-python.epub"
+git:
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+BOOK:
+  - PREFACE:
+      - "{git.credit}/disclaimer.md"
+  - INTRODUCTION:
+      - "{git.book}/prg/SECTION-PYTHON.md"
+      - "{git.book}/prg/python/python-intro.md"
+      - "{git.book}/prg/python/python-install.md"
+      - "{git.book}/prg/python/python-interactive.md"
+      - "{git.book}/prg/python/python-editor.md"
+      - "{git.book}/prg/python/python.md"
+  - LIBRARIES:
+      - "{git.book}/prg/python/python-libraries.md"
+      - "{git.book}/prg/python/python-data.md"
+      - "{git.book}/prg/python/python-matplotlib.md"
+      - "{git.book}/prg/python/python-docopts.md"
+      - "{git.book}/prg/python/python-cmd5.md"
+      - "{git.book}/prg/python/python-cmd.md"
+      - "{git.book}/prg/python/opencv/opencv.md"
+      - "{git.book}/prg/python/opencv/secchi.md"
+  - DATA:
+      - "{git.book}/SECTION/SECTION-DATA.md"
+      - "{git.book}/data/formats.md"
+  - MONGO:
+      - "{git.book}/data/mongodb.md"
+      - "{git.book}/data/mongoengine.md"
+  - OTHER:
+      - "{git.book}/prg/python/python-wordcount.md"
+      - "{git.book}/prg/python/numpy/numpy.md"
+      - "{git.book}/prg/python/scipy/scipy.md"
+      - "{git.book}/prg/python/scikit-learn/scikit-learn.md"
+      - "{git.book}/prg/python/random-forest/random-forest.md"
+      - "{git.book}/prg/python/python-parallel.md"
+      - "{git.book}/prg/python/dask/dask.md"
+  - APPLICATIONS:
+      - "{git.book}/prg/python/fingerprint/fingerprint.md"
+      - "{git.book}/prg/python/facedetection/facedetection.md"
