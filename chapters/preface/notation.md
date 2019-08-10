@@ -33,7 +33,7 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 `[@las14cloudmeshmultiple]`. References must be added to the
 `refernces.bib` file in BibTex format.
 
-![No](images/no.png) 
+[![No](images/no.png)]()
 
 > Chapters marked with this emoji are not yet complete or have some
 > issue that we know about. These chapters need to be fixed. If you like
@@ -56,41 +56,39 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 > Slides without any audio. They may be faster to download. Use it in
 > markdown with `[![Presentation](images/presentation.png) Slides 10](TBD)`.
 
-![Learning](images/learning.png)
+[![Learning](images/learning.png)]()
 
 > A set of learning objectives with the `![Learning](images/learning.png)` emoji.
 
-
-![Ok](images/ok.png)
+[![Ok](images/ok.png)]()
 
 > A section is release when it is marked with this emoji in the
 > syllabus. Usie it in markdown with `![Ok](images/ok.png)`.
 
-![Question](images/question.png)
+[![Question](images/question.png)]()
 
 > Indicates opportunities for contributions. Usie it in markdown with
 > `![Question](images/question.png)`.
 
-![Construction](images/construction.png)
+[![Construction](images/construction.png)]()
 
 > Indicates sections that are worked on by contributors. Use it in
 > markdown with `![Construction](images/construction.png)`.
 
-![Smiley](images/smile.png)
+[![Smiley](images/smile.png)]()
 
 > Sections marked by the contributor with this emoji `![Smiley](images/smile.png)` 
 > when they are ready to be reviewed.
 
-![Comment](images/comment.png)
+[![Comment](images/comment.png)]()
 
 > Sections that need modifications are indicated with this emoji `![Comment](images/comment.png)`.
 
-![Warning](images/warning.png)
+[![Warning](images/warning.png)]()
 
 > A warning that we need to look at in more detail `![Warning](images/warning.png)`
 
-
-![Idea](images/idea.png)
+[![Idea](images/idea.png)]()
 
 > Notes are indicated with a bulb `![Idea](images/idea.png)`
 
