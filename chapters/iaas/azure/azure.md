@@ -5,16 +5,16 @@ includes computing services and products for building, testing,
 deploying, and managing applications and services through a global
 network of Microsoft-managed data centers.  It provides software as a
 service (SaaS), platform as a service (PaaS) and infrastructure as a
-service (IaaS) and supports many different programming languages,
-tools and frameworks, including both Microsoft-specific and
-third-party software and systems.
+service (IaaS) and supports many different programming languages, tools
+and frameworks, including both Microsoft-specific and third-party
+software and systems.
 
 
 ## Products
 
-Just as  Microsoft offers a large number of services.
-We included the from Microsoft in Sep. 2018 highlighted services in
-the appendix, with convenient links to them.
+Microsoft offers a large number of services. We included the from
+Microsoft a number of services in the appendix, with convenient links to
+them.
 
 The services are organized in the following categories:
 
