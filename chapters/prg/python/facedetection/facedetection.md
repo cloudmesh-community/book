@@ -1,4 +1,6 @@
-# NIST Pedestrian and Face Detection ![No](images/no.png) {#s-face}
+# NIST Pedestrian and Face Detection  :o: {#s-face}
+
+![No](images/no.png)
 
 Pedestrian and Face Detection uses OpenCV to identify people standing in
 a picture or a video and NIST use case in this document is built with

@@ -463,7 +463,7 @@ see: <https://www.tutorialspoint.com/python/python_database_access.htm>
 
 <https://docs.python.org/3/library/sqlite3.html>
 
-### Exercises ![No](images/no.png)
+### Exercises :o:
 
 E:Encryption.1:
 
@@ -471,12 +471,12 @@ E:Encryption.1:
 
 E:Encryption.2:
 
-Test the cloudmesh encryption class
+> Test the cloudmesh encryption class
 
 E:Encryption.3:
 
-What other encryption methods exist. Can you provide an example and
-contribute to the section?
+> What other encryption methods exist. Can you provide an example and
+> contribute to the section?
 
 E:Encryption.4:
 
