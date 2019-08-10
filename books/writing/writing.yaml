@@ -1,0 +1,36 @@
+---
+metadata:
+  image: "cover.png"
+  title: "Scientific Writing"
+  subtitle: "with Markdown"
+  author: 'Gregor von Laszewski'
+  subauthor: "Editor"
+  email: "laszewski@gmail.com"
+  url: "https://cloudmesh-community.github.io/book/vonlaszewski-cloud.epub"
+  description: "A booklet about how to use markdown to write scientific papers and reports"
+  abstract: "This book contains the informsation on hwo to write scientific papers and reports"
+  keywords: "scientific writing, markdown"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-writing.epub"
+git:
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - PREFACE:
+      - "{file.chapter}/version.md"
+      - "{file.chapter}/preface/create.md"
+      - "{file.chapter}/preface/reader.md"
+      - "{file.chapter}/preface/notation.md"
+  - SECTION_WRITING:
+      - "{file.chapter}/doc/plagiarism.md"
+      - "{file.chapter}/doc/writing-markdown.md"
+      - "{file.chapter}/doc/markdown.md"
+      - "{file.chapter}/doc/emacs.md"
+      - "{file.chapter}/doc/ppt.md"
+      - "{file.chapter}/doc/graphviz.md"
+#  - REFERENCES:
