@@ -53,7 +53,7 @@ class can be found here:
 -   [Buzzer
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/buzzer.py)
 
-![Buzzer](images/grovepi/buzzer.jpg){#fig:grove-buzzer}
+![Buzzer](images/buzzer.jpg){#fig:grove-buzzer}
 
 Relay
 -----
@@ -67,7 +67,7 @@ digital port is D4. The `Relay` class can be found here:
 -   [Relay
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/relay.py)
 
-![Relay](images/grovepi/relay.jpg){#fig:grove-relay}
+![Relay](images/relay.jpg){#fig:grove-relay}
 
 Light Sensor
 ------------
@@ -81,7 +81,7 @@ values. The `LightSensor` class can be found here:
 -   [LightSensor
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/light.py)
 
-![Light Sensor](images/grovepi/light.jpg){#fig:grove-light-sensor}
+![Light Sensor](images/light.jpg){#fig:grove-light-sensor}
 
 Rotary Angle Sensor
 -------------------
@@ -94,7 +94,7 @@ Connect the sensor to an analog port. Port A0 is the default. The
 -   [RotarySensor
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/rotary.py)
 
-![Rotary Angle Sensor](images/grovepi/rotary.jpg){#fig:grove-rotary-angle-sensor}
+![Rotary Angle Sensor](images/rotary.jpg){#fig:grove-rotary-angle-sensor}
 
 Barometer
 ---------
@@ -107,7 +107,7 @@ barometer measures temperature in Fahrenheit and Celsius. The
 -   [Barometer
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/barometer.py)
 
-![Barometer](images/grovepi/barometer.jpg){#fig:grove-barometer}
+![Barometer](images/barometer.jpg){#fig:grove-barometer}
 
 Distance Sensor
 ---------------
@@ -122,7 +122,7 @@ be found here:
 -   [DistanceSensor
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/distance.py)
 
-![Distance Sensor](images/grovepi/distance.jpg){#fig:grove-distance-sensor}
+![Distance Sensor](images/distance.jpg){#fig:grove-distance-sensor}
 
 Temperature Sensor
 ------------------
@@ -135,7 +135,7 @@ the temperature sensor to a digital port. D7 is the default port. The
 -   [TemperatureSensor
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/temperature.py)
 
-![Temperature Sensor](images/grovepi/temperature.jpg){#fig:grove-temperature-sensor}
+![Temperature Sensor](images/temperature.jpg){#fig:grove-temperature-sensor}
 
 Heartbeat Sensor
 ----------------
@@ -148,7 +148,7 @@ here:
 -   [HeartbeatSensor
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/heartbeat.py)
 
-![Heartbeat Sensor](images/grovepi/heartbeat.jpg){#fig:grove-heartbeat}
+![Heartbeat Sensor](images/heartbeat.jpg){#fig:grove-heartbeat}
 
 Joystick
 --------
@@ -161,7 +161,7 @@ and click status based on the current state of the module. The
 -   [Joystick
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/joystick.py)
 
-![Joystick](images/grovepi/joystick.jpg){#fig:grove-joystick}
+![Joystick](images/joystick.jpg){#fig:grove-joystick}
 
 LCD Screen
 ----------
@@ -173,7 +173,7 @@ of the I2C ports. The `LCD` class can be found here:
 -   [LCD
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/lcd.py)
 
-![LCD Screen](images/grovepi/lcd.jpg){#fig:grove-lcd}
+![LCD Screen](images/lcd.jpg){#fig:grove-lcd}
 
 Moisture Sensor
 ---------------
@@ -185,7 +185,7 @@ the moisture sensor to an analog port. The default port is A0.  The
 -   [MoistureSensor
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/moisture.py)
 
-![Moisture Sensor](images/grovepi/moisture.jpg){#fig:grove-moisture-sensor}
+![Moisture Sensor](images/moisture.jpg){#fig:grove-moisture-sensor}
 
 An example of the implementation of the moisture sensor from Dexter
 Industries can be found
@@ -204,4 +204,4 @@ The `WaterSensor` class can be found here:
 -   [WaterSensor
     Class](https://github.com/cloudmesh/cloudmesh-pi/blob/master/cloudmesh/pi/water.py)
 
-![Water Sensor](images/grovepi/water.jpg){#fig:grove-water-sensor}
+![Water Sensor](images/water.jpg){#fig:grove-water-sensor}
