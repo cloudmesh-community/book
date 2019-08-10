@@ -15,6 +15,12 @@ metadata:
   filename: "vonLaszewski-e516-syllabus.epub"
 git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
 BOOK:
-  - CLASS:
-    - "{git.book}/./class/e516-syllabus-table.md"
+  - SYLLABUS:
+      - "{file.chapter}/version.md"
+      - "{file.chapter}/class/516/syllabus-2019.md"
