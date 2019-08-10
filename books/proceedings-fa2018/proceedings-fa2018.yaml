@@ -1,0 +1,33 @@
+---
+metadata:
+  image: "cover.png"
+  title: "Proceedings Fall2019\nEngineering Cloud \nComputing"
+  subtitle: ""
+  author: 'Gregor von Laszewski'
+  subauthor: "Editor"
+  email: "laszewski@gmail.com"
+  url: "https://cloudmesh-community.github.io/book/vonlaszewski-proceedings-fa2018.epub"
+  description: "Proposed Lecture content (subject to change)"
+  abstract: "Proposed Lecture content (subject to change)"
+  keywords: "Cloud, virtual machines, containers, cloud engenering"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-proceedings-fa2018.epub"
+git:
+  "community": "https://raw.githubusercontent.com/cloudmesh-community"
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - PROJECTS:
+      - "{git.community}/fa18-516-18/master/project-report/report.md"
+      - "{git.community}/fa18-516-11/master/project-report/report.md"
+
+#"https://raw.githubusercontent.com/cloudmesh-community/sp19-516-11/master/project-report/report.md"
+#"https://raw.githubusercontent.com/cloudmesh-community/fa18-516-18/master/project-report/report.md"
+
+# this one is in latex
+#	cp ../../hid-sp18-709/project-paper/report.md ../chapters/hid-sp18-709/project-paper
