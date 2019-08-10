@@ -1,0 +1,74 @@
+---
+metadata:
+  image: "cover.png"
+  title: "Cloud Clusters\nWith Raspberry Pi's"
+  subtitle: ""
+  author: 'Gregor von Laszewski'
+  subauthor: "Editor"
+  email: "laszewski@gmail.com"
+  url: "https://cloudmesh-community.github.io/book/vonlaszewski-pi.epub"
+  description: "Proposed Lecture content (subject to change)"
+  abstract: "Proposed Lecture content (subject to change)"
+  keywords: "Cloud, virtual machines, containers, cloud engenering"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-pi.epub"
+git:
+  "community": "https://raw.githubusercontent.com/cloudmesh-community"
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - INTRODUCTION:
+      - "{file.chapter}/pi/preface.md"
+      - "{file.chapter}/pi/board.md"
+  - IOT:
+      - "{file.chapter}/iot/introduction.md"
+      - "{file.chapter}/iot/tools.md"
+      - "{file.chapter}/iot/hardware.md"
+      - "{file.chapter}/iot/sensors.md"
+      - "{file.chapter}/iot/grovepi.md"
+      - "{file.chapter}/iot/dexter.md"
+      - "{file.chapter}/iot/easyplug.md"
+      - "{file.chapter}/iot/esp8266.md"
+      - "{file.chapter}/iot/projects.md"
+      - "{file.chapter}/iot/turtle.md"
+      - "{file.chapter}/iot/pi.md"
+  - CASE:
+      - "{file.chapter}/pi/case.md"
+      - "{file.chapter}/case/case.md"
+      - "{file.chapter}/pi/links.md"
+  - EXERCIZE:
+      - "{file.chapter}/pi/exercise.md"
+  - SETUP:
+      - "{file.chapter}/pi/setup-ultimate.md"
+      - "{file.chapter}/pi/setup-dev.md"
+      - "{file.chapter}/pi/config-display.md"
+      - "{file.chapter}/pi/vnc.md"
+      - "{file.chapter}/pi/motherboard-led.md"
+      - "{file.chapter}/pi/run-at-boot.md"
+      - "{file.chapter}/pi/software2.md"
+  - MULTIPLE:
+      - "{file.chapter}/pi/setup-multiple.md"
+      - "{file.chapter}/pi/setup.md"
+  - TRADITIONAL_CLUSTER:
+      - "{file.chapter}/pi/clusters/pi-now.md"
+      - "{file.chapter}/pi/mpi.md"
+      - "{file.chapter}/pi/slurm.md"
+      - "{file.chapter}/pi/clusters/pxe.md"
+      - "{file.chapter}/pi/fortran.md"
+  - CLOUD_CLUSTER:
+      - "{file.chapter}/pi/clusters/pi-docker.md"
+      - "{file.chapter}/pi/clusters/pi-kubernetes.md"
+      - "{file.chapter}/pi/clusters/pi-hadoop.md"
+      - "{file.chapter}/pi/clusters/pi-spark.md"
+  - DRAFT:
+      - "{file.chapter}/pi/clusters/pi-configure-cluster.md"
+      - "{file.chapter}/pi/clusters/pi-setup.md"
+      - "{file.chapter}/pi/car/car-face.md"
+
+
+

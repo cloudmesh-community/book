@@ -1,0 +1,501 @@
+INDEX=\
+  chapters/SECTION/SECTION-PREFACE.md\
+  chapters/version.md\
+  chapters/preface/corrections.md\
+  chapters/authors.md\
+  chapters/preface/create.md\
+  chapters/preface/reader.md\
+  chapters/preface/notation.md\
+  chapters/class/e222-syllabus.md\
+  chapters/222-assignments.md\
+  chapters/prg/SECTION-PYTHON.md\
+  chapters/prg/python/python-intro.md\
+  chapters/prg/python/python-install.md\
+  chapters/prg/python/python-interactive.md\
+  chapters/prg/python/python-editor.md\
+  chapters/prg/python/python.md\
+  chapters/prg/python/python-libraries.md\
+  chapters/prg/python/python-data.md\
+  chapters/prg/python/python-matplotlib.md\
+  chapters/prg/python/python-docopts.md\
+  chapters/prg/python/python-cmd5.md\
+  chapters/prg/python/python-cmd.md\
+  chapters/prg/python/opencv/opencv.md\
+  chapters/prg/python/opencv/secchi.md\
+  chapters/SECTION/SECTION-DATA.md\
+  chapters/data/formats.md\
+  chapters/data/mongodb.md\
+  chapters/data/mongoengine.md\
+  chapters/prg/python/python-wordcount.md\
+  chapters/prg/python/numpy/numpy.md\
+  chapters/prg/python/scipy/scipy.md\
+  chapters/prg/python/scikit-learn/scikit-learn.md\
+  chapters/prg/python/python-parallel.md\
+  chapters/prg/python/random-forest/random-forest.md\
+  chapters/SECTION/SECTION-DEVTOOLS.md\
+  chapters/linux/refcards.md\
+  chapters/cloud/virtualbox.md\
+  chapters/cloud/vagrant.md\
+  chapters/linux/linux.md\
+  chapters/linux/ssh.md\
+  chapters/linux/ssh-futuresystems.md\
+  chapters/linux/ssh-excerise.md\
+  chapters/git/github.md\
+  chapters/git/gitpullreqest.md\
+  chapters/git/git-tools.md\
+  chapters/class/222-a.md\
+  chapters/rest/rest.md\
+  chapters/rest/swagger.md\
+  chapters/rest/swagger-spec.md\
+  chapters/rest/swagger-introspection.md\
+  chapters/rest/swagger-codegen.md\
+  chapters/rest/rest-restful.md\
+  chapters/rest/rest-eve.md\
+  chapters/rest/rest-haetos.md\
+  chapters/rest/rest-eve-extensions.md\
+  chapters/rest/rest-django.md\
+  chapters/prg/github.md\
+  chapters/SECTION/SECTION-MAPREDUCE.md\
+  chapters/mapreduce/mapreduce.md\
+  chapters/mapreduce/hadoop-lectures.md\
+  chapters/mapreduce/hadoop-installation.md\
+  chapters/mapreduce/cm-hadoop.md\
+  chapters/SECTION/SECTION-SPARK.md\
+  chapters/mapreduce/spark-lectures.md\
+  chapters/mapreduce/spark-installation.md\
+  chapters/mapreduce/spark-streaming.md\
+  chapters/mapreduce/spark-udf.md\
+  chapters/SECTION/SECTION-HADOOP-ADVANCED.md\
+  chapters/mapreduce/amazon-emr-1.md\
+  chapters/mapreduce/amazon-emr-2.md\
+  chapters/mapreduce/twister.md\
+  chapters/mapreduce/twister-installation.md\
+  chapters/mapreduce/twister2-example.md\
+  chapters/mapreduce/harp.md\
+  chapters/mapreduce/hadoop-rdma.md\
+  chapters/SECTION/SECTION-CONTAINER.md\
+  chapters/container/container.md\
+  chapters/SECTION/SECTION-DOCKER.md\
+  chapters/container/docker-intro.md\
+  chapters/container/docker-local.md\
+  chapters/container/dockerfile.md\
+  chapters/container/dockerhub.md\
+  chapters/SECTION/SECTION-DOCKER-PAAS.md\
+  chapters/container/docker-swarm.md\
+  chapters/container/docker-fs.md\
+  chapters/container/docker-hadoop.md\
+  chapters/container/docker-pagerank-example-instruction.md\
+  chapters/container/docker-spark.md\
+  chapters/SECTION/SECTION-KUBERNETES.md\
+  chapters/container/kubernetes-intro.md\
+  chapters/container/kubernetes-fs.md\
+  chapters/container/singularity/singularity.md\
+  chapters/container/exercise.md\
+  chapters/nist/bdra.md\
+  chapters/ai/ai.md\
+  chapters/SECTION/SECTION-FAQ.md\
+  chapters/faq.md\
+  chapters/SECTION/SECTION-INDEX.md\
+  chapters/index.md\
+  chapters/SECTION/SECTION-REFERENCES.md
+
+chapterlist:  dest/chapters/SECTION/SECTION-PREFACE.md dest/chapters/version.md dest/chapters/preface/corrections.md dest/chapters/authors.md dest/chapters/preface/create.md dest/chapters/preface/reader.md dest/chapters/preface/notation.md dest/chapters/class/e222-syllabus.md dest/chapters/222-assignments.md dest/chapters/prg/SECTION-PYTHON.md dest/chapters/prg/python/python-intro.md dest/chapters/prg/python/python-install.md dest/chapters/prg/python/python-interactive.md dest/chapters/prg/python/python-editor.md dest/chapters/prg/python/python.md dest/chapters/prg/python/python-libraries.md dest/chapters/prg/python/python-data.md dest/chapters/prg/python/python-matplotlib.md dest/chapters/prg/python/python-docopts.md dest/chapters/prg/python/python-cmd5.md dest/chapters/prg/python/python-cmd.md dest/chapters/prg/python/opencv/opencv.md dest/chapters/prg/python/opencv/secchi.md dest/chapters/SECTION/SECTION-DATA.md dest/chapters/data/formats.md dest/chapters/data/mongodb.md dest/chapters/data/mongoengine.md dest/chapters/prg/python/python-wordcount.md dest/chapters/prg/python/numpy/numpy.md dest/chapters/prg/python/scipy/scipy.md dest/chapters/prg/python/scikit-learn/scikit-learn.md dest/chapters/prg/python/python-parallel.md dest/chapters/prg/python/random-forest/random-forest.md dest/chapters/SECTION/SECTION-DEVTOOLS.md dest/chapters/linux/refcards.md dest/chapters/cloud/virtualbox.md dest/chapters/cloud/vagrant.md dest/chapters/linux/linux.md dest/chapters/linux/ssh.md dest/chapters/linux/ssh-futuresystems.md dest/chapters/linux/ssh-excerise.md dest/chapters/git/github.md dest/chapters/git/gitpullreqest.md dest/chapters/git/git-tools.md dest/chapters/class/222-a.md dest/chapters/rest/rest.md dest/chapters/rest/swagger.md dest/chapters/rest/swagger-spec.md dest/chapters/rest/swagger-introspection.md dest/chapters/rest/swagger-codegen.md dest/chapters/rest/rest-restful.md dest/chapters/rest/rest-eve.md dest/chapters/rest/rest-haetos.md dest/chapters/rest/rest-eve-extensions.md dest/chapters/rest/rest-django.md dest/chapters/prg/github.md dest/chapters/SECTION/SECTION-MAPREDUCE.md dest/chapters/mapreduce/mapreduce.md dest/chapters/mapreduce/hadoop-lectures.md dest/chapters/mapreduce/hadoop-installation.md dest/chapters/mapreduce/cm-hadoop.md dest/chapters/SECTION/SECTION-SPARK.md dest/chapters/mapreduce/spark-lectures.md dest/chapters/mapreduce/spark-installation.md dest/chapters/mapreduce/spark-streaming.md dest/chapters/mapreduce/spark-udf.md dest/chapters/SECTION/SECTION-HADOOP-ADVANCED.md dest/chapters/mapreduce/amazon-emr-1.md dest/chapters/mapreduce/amazon-emr-2.md dest/chapters/mapreduce/twister.md dest/chapters/mapreduce/twister-installation.md dest/chapters/mapreduce/twister2-example.md dest/chapters/mapreduce/harp.md dest/chapters/mapreduce/hadoop-rdma.md dest/chapters/SECTION/SECTION-CONTAINER.md dest/chapters/container/container.md dest/chapters/SECTION/SECTION-DOCKER.md dest/chapters/container/docker-intro.md dest/chapters/container/docker-local.md dest/chapters/container/dockerfile.md dest/chapters/container/dockerhub.md dest/chapters/SECTION/SECTION-DOCKER-PAAS.md dest/chapters/container/docker-swarm.md dest/chapters/container/docker-fs.md dest/chapters/container/docker-hadoop.md dest/chapters/container/docker-pagerank-example-instruction.md dest/chapters/container/docker-spark.md dest/chapters/SECTION/SECTION-KUBERNETES.md dest/chapters/container/kubernetes-intro.md dest/chapters/container/kubernetes-fs.md dest/chapters/container/singularity/singularity.md dest/chapters/container/exercise.md dest/chapters/nist/bdra.md dest/chapters/ai/ai.md dest/chapters/SECTION/SECTION-FAQ.md dest/chapters/faq.md dest/chapters/SECTION/SECTION-INDEX.md dest/chapters/index.md dest/chapters/SECTION/SECTION-REFERENCES.md
+	@echo "updated modified chapters"
+
+
+dest/chapters/SECTION/SECTION-PREFACE.md: ../chapters/SECTION/SECTION-PREFACE.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-PREFACE.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-PREFACE.md 1
+
+dest/chapters/version.md: ../chapters/version.md
+	../bin/markup-single.py ../chapters/version.md 2
+	../bin/header.py dest/chapters/version.md 2
+
+dest/chapters/preface/corrections.md: ../chapters/preface/corrections.md
+	../bin/markup-single.py ../chapters/preface/corrections.md 2
+	../bin/header.py dest/chapters/preface/corrections.md 2
+
+dest/chapters/authors.md: ../chapters/authors.md
+	../bin/markup-single.py ../chapters/authors.md 2
+	../bin/header.py dest/chapters/authors.md 2
+
+dest/chapters/preface/create.md: ../chapters/preface/create.md
+	../bin/markup-single.py ../chapters/preface/create.md 2
+	../bin/header.py dest/chapters/preface/create.md 2
+
+dest/chapters/preface/reader.md: ../chapters/preface/reader.md
+	../bin/markup-single.py ../chapters/preface/reader.md 2
+	../bin/header.py dest/chapters/preface/reader.md 2
+
+dest/chapters/preface/notation.md: ../chapters/preface/notation.md
+	../bin/markup-single.py ../chapters/preface/notation.md 2
+	../bin/header.py dest/chapters/preface/notation.md 2
+
+dest/chapters/class/e222-syllabus.md: ../chapters/class/e222-syllabus.md
+	../bin/markup-single.py ../chapters/class/e222-syllabus.md 1
+	../bin/header.py dest/chapters/class/e222-syllabus.md 1
+
+dest/chapters/222-assignments.md: ../chapters/222-assignments.md
+	../bin/markup-single.py ../chapters/222-assignments.md 2
+	../bin/header.py dest/chapters/222-assignments.md 2
+
+dest/chapters/prg/SECTION-PYTHON.md: ../chapters/prg/SECTION-PYTHON.md
+	../bin/markup-single.py ../chapters/prg/SECTION-PYTHON.md 1
+	../bin/header.py dest/chapters/prg/SECTION-PYTHON.md 1
+
+dest/chapters/prg/python/python-intro.md: ../chapters/prg/python/python-intro.md
+	../bin/markup-single.py ../chapters/prg/python/python-intro.md 2
+	../bin/header.py dest/chapters/prg/python/python-intro.md 2
+
+dest/chapters/prg/python/python-install.md: ../chapters/prg/python/python-install.md
+	../bin/markup-single.py ../chapters/prg/python/python-install.md 2
+	../bin/header.py dest/chapters/prg/python/python-install.md 2
+
+dest/chapters/prg/python/python-interactive.md: ../chapters/prg/python/python-interactive.md
+	../bin/markup-single.py ../chapters/prg/python/python-interactive.md 2
+	../bin/header.py dest/chapters/prg/python/python-interactive.md 2
+
+dest/chapters/prg/python/python-editor.md: ../chapters/prg/python/python-editor.md
+	../bin/markup-single.py ../chapters/prg/python/python-editor.md 2
+	../bin/header.py dest/chapters/prg/python/python-editor.md 2
+
+dest/chapters/prg/python/python.md: ../chapters/prg/python/python.md
+	../bin/markup-single.py ../chapters/prg/python/python.md 2
+	../bin/header.py dest/chapters/prg/python/python.md 2
+
+dest/chapters/prg/python/python-libraries.md: ../chapters/prg/python/python-libraries.md
+	../bin/markup-single.py ../chapters/prg/python/python-libraries.md 2
+	../bin/header.py dest/chapters/prg/python/python-libraries.md 2
+
+dest/chapters/prg/python/python-data.md: ../chapters/prg/python/python-data.md
+	../bin/markup-single.py ../chapters/prg/python/python-data.md 3
+	../bin/header.py dest/chapters/prg/python/python-data.md 3
+
+dest/chapters/prg/python/python-matplotlib.md: ../chapters/prg/python/python-matplotlib.md
+	../bin/markup-single.py ../chapters/prg/python/python-matplotlib.md 3
+	../bin/header.py dest/chapters/prg/python/python-matplotlib.md 3
+
+dest/chapters/prg/python/python-docopts.md: ../chapters/prg/python/python-docopts.md
+	../bin/markup-single.py ../chapters/prg/python/python-docopts.md 3
+	../bin/header.py dest/chapters/prg/python/python-docopts.md 3
+
+dest/chapters/prg/python/python-cmd5.md: ../chapters/prg/python/python-cmd5.md
+	../bin/markup-single.py ../chapters/prg/python/python-cmd5.md 3
+	../bin/header.py dest/chapters/prg/python/python-cmd5.md 3
+
+dest/chapters/prg/python/python-cmd.md: ../chapters/prg/python/python-cmd.md
+	../bin/markup-single.py ../chapters/prg/python/python-cmd.md 3
+	../bin/header.py dest/chapters/prg/python/python-cmd.md 3
+
+dest/chapters/prg/python/opencv/opencv.md: ../chapters/prg/python/opencv/opencv.md
+	../bin/markup-single.py ../chapters/prg/python/opencv/opencv.md 3
+	../bin/header.py dest/chapters/prg/python/opencv/opencv.md 3
+
+dest/chapters/prg/python/opencv/secchi.md: ../chapters/prg/python/opencv/secchi.md
+	../bin/markup-single.py ../chapters/prg/python/opencv/secchi.md 3
+	../bin/header.py dest/chapters/prg/python/opencv/secchi.md 3
+
+dest/chapters/SECTION/SECTION-DATA.md: ../chapters/SECTION/SECTION-DATA.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-DATA.md 3
+	../bin/header.py dest/chapters/SECTION/SECTION-DATA.md 3
+
+dest/chapters/data/formats.md: ../chapters/data/formats.md
+	../bin/markup-single.py ../chapters/data/formats.md 4
+	../bin/header.py dest/chapters/data/formats.md 4
+
+dest/chapters/data/mongodb.md: ../chapters/data/mongodb.md
+	../bin/markup-single.py ../chapters/data/mongodb.md 4
+	../bin/header.py dest/chapters/data/mongodb.md 4
+
+dest/chapters/data/mongoengine.md: ../chapters/data/mongoengine.md
+	../bin/markup-single.py ../chapters/data/mongoengine.md 4
+	../bin/header.py dest/chapters/data/mongoengine.md 4
+
+dest/chapters/prg/python/python-wordcount.md: ../chapters/prg/python/python-wordcount.md
+	../bin/markup-single.py ../chapters/prg/python/python-wordcount.md 2
+	../bin/header.py dest/chapters/prg/python/python-wordcount.md 2
+
+dest/chapters/prg/python/numpy/numpy.md: ../chapters/prg/python/numpy/numpy.md
+	../bin/markup-single.py ../chapters/prg/python/numpy/numpy.md 2
+	../bin/header.py dest/chapters/prg/python/numpy/numpy.md 2
+
+dest/chapters/prg/python/scipy/scipy.md: ../chapters/prg/python/scipy/scipy.md
+	../bin/markup-single.py ../chapters/prg/python/scipy/scipy.md 2
+	../bin/header.py dest/chapters/prg/python/scipy/scipy.md 2
+
+dest/chapters/prg/python/scikit-learn/scikit-learn.md: ../chapters/prg/python/scikit-learn/scikit-learn.md
+	../bin/markup-single.py ../chapters/prg/python/scikit-learn/scikit-learn.md 2
+	../bin/header.py dest/chapters/prg/python/scikit-learn/scikit-learn.md 2
+
+dest/chapters/prg/python/python-parallel.md: ../chapters/prg/python/python-parallel.md
+	../bin/markup-single.py ../chapters/prg/python/python-parallel.md 2
+	../bin/header.py dest/chapters/prg/python/python-parallel.md 2
+
+dest/chapters/prg/python/random-forest/random-forest.md: ../chapters/prg/python/random-forest/random-forest.md
+	../bin/markup-single.py ../chapters/prg/python/random-forest/random-forest.md 2
+	../bin/header.py dest/chapters/prg/python/random-forest/random-forest.md 2
+
+dest/chapters/SECTION/SECTION-DEVTOOLS.md: ../chapters/SECTION/SECTION-DEVTOOLS.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-DEVTOOLS.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-DEVTOOLS.md 1
+
+dest/chapters/linux/refcards.md: ../chapters/linux/refcards.md
+	../bin/markup-single.py ../chapters/linux/refcards.md 2
+	../bin/header.py dest/chapters/linux/refcards.md 2
+
+dest/chapters/cloud/virtualbox.md: ../chapters/cloud/virtualbox.md
+	../bin/markup-single.py ../chapters/cloud/virtualbox.md 2
+	../bin/header.py dest/chapters/cloud/virtualbox.md 2
+
+dest/chapters/cloud/vagrant.md: ../chapters/cloud/vagrant.md
+	../bin/markup-single.py ../chapters/cloud/vagrant.md 2
+	../bin/header.py dest/chapters/cloud/vagrant.md 2
+
+dest/chapters/linux/linux.md: ../chapters/linux/linux.md
+	../bin/markup-single.py ../chapters/linux/linux.md 2
+	../bin/header.py dest/chapters/linux/linux.md 2
+
+dest/chapters/linux/ssh.md: ../chapters/linux/ssh.md
+	../bin/markup-single.py ../chapters/linux/ssh.md 2
+	../bin/header.py dest/chapters/linux/ssh.md 2
+
+dest/chapters/linux/ssh-futuresystems.md: ../chapters/linux/ssh-futuresystems.md
+	../bin/markup-single.py ../chapters/linux/ssh-futuresystems.md 2
+	../bin/header.py dest/chapters/linux/ssh-futuresystems.md 2
+
+dest/chapters/linux/ssh-excerise.md: ../chapters/linux/ssh-excerise.md
+	../bin/markup-single.py ../chapters/linux/ssh-excerise.md 2
+	../bin/header.py dest/chapters/linux/ssh-excerise.md 2
+
+dest/chapters/git/github.md: ../chapters/git/github.md
+	../bin/markup-single.py ../chapters/git/github.md 2
+	../bin/header.py dest/chapters/git/github.md 2
+
+dest/chapters/git/gitpullreqest.md: ../chapters/git/gitpullreqest.md
+	../bin/markup-single.py ../chapters/git/gitpullreqest.md 3
+	../bin/header.py dest/chapters/git/gitpullreqest.md 3
+
+dest/chapters/git/git-tools.md: ../chapters/git/git-tools.md
+	../bin/markup-single.py ../chapters/git/git-tools.md 3
+	../bin/header.py dest/chapters/git/git-tools.md 3
+
+dest/chapters/class/222-a.md: ../chapters/class/222-a.md
+	../bin/markup-single.py ../chapters/class/222-a.md 1
+	../bin/header.py dest/chapters/class/222-a.md 1
+
+dest/chapters/rest/rest.md: ../chapters/rest/rest.md
+	../bin/markup-single.py ../chapters/rest/rest.md 1
+	../bin/header.py dest/chapters/rest/rest.md 1
+
+dest/chapters/rest/swagger.md: ../chapters/rest/swagger.md
+	../bin/markup-single.py ../chapters/rest/swagger.md 2
+	../bin/header.py dest/chapters/rest/swagger.md 2
+
+dest/chapters/rest/swagger-spec.md: ../chapters/rest/swagger-spec.md
+	../bin/markup-single.py ../chapters/rest/swagger-spec.md 2
+	../bin/header.py dest/chapters/rest/swagger-spec.md 2
+
+dest/chapters/rest/swagger-introspection.md: ../chapters/rest/swagger-introspection.md
+	../bin/markup-single.py ../chapters/rest/swagger-introspection.md 2
+	../bin/header.py dest/chapters/rest/swagger-introspection.md 2
+
+dest/chapters/rest/swagger-codegen.md: ../chapters/rest/swagger-codegen.md
+	../bin/markup-single.py ../chapters/rest/swagger-codegen.md 2
+	../bin/header.py dest/chapters/rest/swagger-codegen.md 2
+
+dest/chapters/rest/rest-restful.md: ../chapters/rest/rest-restful.md
+	../bin/markup-single.py ../chapters/rest/rest-restful.md 2
+	../bin/header.py dest/chapters/rest/rest-restful.md 2
+
+dest/chapters/rest/rest-eve.md: ../chapters/rest/rest-eve.md
+	../bin/markup-single.py ../chapters/rest/rest-eve.md 2
+	../bin/header.py dest/chapters/rest/rest-eve.md 2
+
+dest/chapters/rest/rest-haetos.md: ../chapters/rest/rest-haetos.md
+	../bin/markup-single.py ../chapters/rest/rest-haetos.md 2
+	../bin/header.py dest/chapters/rest/rest-haetos.md 2
+
+dest/chapters/rest/rest-eve-extensions.md: ../chapters/rest/rest-eve-extensions.md
+	../bin/markup-single.py ../chapters/rest/rest-eve-extensions.md 2
+	../bin/header.py dest/chapters/rest/rest-eve-extensions.md 2
+
+dest/chapters/rest/rest-django.md: ../chapters/rest/rest-django.md
+	../bin/markup-single.py ../chapters/rest/rest-django.md 2
+	../bin/header.py dest/chapters/rest/rest-django.md 2
+
+dest/chapters/prg/github.md: ../chapters/prg/github.md
+	../bin/markup-single.py ../chapters/prg/github.md 2
+	../bin/header.py dest/chapters/prg/github.md 2
+
+dest/chapters/SECTION/SECTION-MAPREDUCE.md: ../chapters/SECTION/SECTION-MAPREDUCE.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-MAPREDUCE.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-MAPREDUCE.md 1
+
+dest/chapters/mapreduce/mapreduce.md: ../chapters/mapreduce/mapreduce.md
+	../bin/markup-single.py ../chapters/mapreduce/mapreduce.md 2
+	../bin/header.py dest/chapters/mapreduce/mapreduce.md 2
+
+dest/chapters/mapreduce/hadoop-lectures.md: ../chapters/mapreduce/hadoop-lectures.md
+	../bin/markup-single.py ../chapters/mapreduce/hadoop-lectures.md 2
+	../bin/header.py dest/chapters/mapreduce/hadoop-lectures.md 2
+
+dest/chapters/mapreduce/hadoop-installation.md: ../chapters/mapreduce/hadoop-installation.md
+	../bin/markup-single.py ../chapters/mapreduce/hadoop-installation.md 3
+	../bin/header.py dest/chapters/mapreduce/hadoop-installation.md 3
+
+dest/chapters/mapreduce/cm-hadoop.md: ../chapters/mapreduce/cm-hadoop.md
+	../bin/markup-single.py ../chapters/mapreduce/cm-hadoop.md 3
+	../bin/header.py dest/chapters/mapreduce/cm-hadoop.md 3
+
+dest/chapters/SECTION/SECTION-SPARK.md: ../chapters/SECTION/SECTION-SPARK.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-SPARK.md 2
+	../bin/header.py dest/chapters/SECTION/SECTION-SPARK.md 2
+
+dest/chapters/mapreduce/spark-lectures.md: ../chapters/mapreduce/spark-lectures.md
+	../bin/markup-single.py ../chapters/mapreduce/spark-lectures.md 3
+	../bin/header.py dest/chapters/mapreduce/spark-lectures.md 3
+
+dest/chapters/mapreduce/spark-installation.md: ../chapters/mapreduce/spark-installation.md
+	../bin/markup-single.py ../chapters/mapreduce/spark-installation.md 3
+	../bin/header.py dest/chapters/mapreduce/spark-installation.md 3
+
+dest/chapters/mapreduce/spark-streaming.md: ../chapters/mapreduce/spark-streaming.md
+	../bin/markup-single.py ../chapters/mapreduce/spark-streaming.md 3
+	../bin/header.py dest/chapters/mapreduce/spark-streaming.md 3
+
+dest/chapters/mapreduce/spark-udf.md: ../chapters/mapreduce/spark-udf.md
+	../bin/markup-single.py ../chapters/mapreduce/spark-udf.md 3
+	../bin/header.py dest/chapters/mapreduce/spark-udf.md 3
+
+dest/chapters/SECTION/SECTION-HADOOP-ADVANCED.md: ../chapters/SECTION/SECTION-HADOOP-ADVANCED.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-HADOOP-ADVANCED.md 2
+	../bin/header.py dest/chapters/SECTION/SECTION-HADOOP-ADVANCED.md 2
+
+dest/chapters/mapreduce/amazon-emr-1.md: ../chapters/mapreduce/amazon-emr-1.md
+	../bin/markup-single.py ../chapters/mapreduce/amazon-emr-1.md 3
+	../bin/header.py dest/chapters/mapreduce/amazon-emr-1.md 3
+
+dest/chapters/mapreduce/amazon-emr-2.md: ../chapters/mapreduce/amazon-emr-2.md
+	../bin/markup-single.py ../chapters/mapreduce/amazon-emr-2.md 3
+	../bin/header.py dest/chapters/mapreduce/amazon-emr-2.md 3
+
+dest/chapters/mapreduce/twister.md: ../chapters/mapreduce/twister.md
+	../bin/markup-single.py ../chapters/mapreduce/twister.md 3
+	../bin/header.py dest/chapters/mapreduce/twister.md 3
+
+dest/chapters/mapreduce/twister-installation.md: ../chapters/mapreduce/twister-installation.md
+	../bin/markup-single.py ../chapters/mapreduce/twister-installation.md 3
+	../bin/header.py dest/chapters/mapreduce/twister-installation.md 3
+
+dest/chapters/mapreduce/twister2-example.md: ../chapters/mapreduce/twister2-example.md
+	../bin/markup-single.py ../chapters/mapreduce/twister2-example.md 3
+	../bin/header.py dest/chapters/mapreduce/twister2-example.md 3
+
+dest/chapters/mapreduce/harp.md: ../chapters/mapreduce/harp.md
+	../bin/markup-single.py ../chapters/mapreduce/harp.md 3
+	../bin/header.py dest/chapters/mapreduce/harp.md 3
+
+dest/chapters/mapreduce/hadoop-rdma.md: ../chapters/mapreduce/hadoop-rdma.md
+	../bin/markup-single.py ../chapters/mapreduce/hadoop-rdma.md 3
+	../bin/header.py dest/chapters/mapreduce/hadoop-rdma.md 3
+
+dest/chapters/SECTION/SECTION-CONTAINER.md: ../chapters/SECTION/SECTION-CONTAINER.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-CONTAINER.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-CONTAINER.md 1
+
+dest/chapters/container/container.md: ../chapters/container/container.md
+	../bin/markup-single.py ../chapters/container/container.md 2
+	../bin/header.py dest/chapters/container/container.md 2
+
+dest/chapters/SECTION/SECTION-DOCKER.md: ../chapters/SECTION/SECTION-DOCKER.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-DOCKER.md 2
+	../bin/header.py dest/chapters/SECTION/SECTION-DOCKER.md 2
+
+dest/chapters/container/docker-intro.md: ../chapters/container/docker-intro.md
+	../bin/markup-single.py ../chapters/container/docker-intro.md 3
+	../bin/header.py dest/chapters/container/docker-intro.md 3
+
+dest/chapters/container/docker-local.md: ../chapters/container/docker-local.md
+	../bin/markup-single.py ../chapters/container/docker-local.md 3
+	../bin/header.py dest/chapters/container/docker-local.md 3
+
+dest/chapters/container/dockerfile.md: ../chapters/container/dockerfile.md
+	../bin/markup-single.py ../chapters/container/dockerfile.md 3
+	../bin/header.py dest/chapters/container/dockerfile.md 3
+
+dest/chapters/container/dockerhub.md: ../chapters/container/dockerhub.md
+	../bin/markup-single.py ../chapters/container/dockerhub.md 3
+	../bin/header.py dest/chapters/container/dockerhub.md 3
+
+dest/chapters/SECTION/SECTION-DOCKER-PAAS.md: ../chapters/SECTION/SECTION-DOCKER-PAAS.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-DOCKER-PAAS.md 2
+	../bin/header.py dest/chapters/SECTION/SECTION-DOCKER-PAAS.md 2
+
+dest/chapters/container/docker-swarm.md: ../chapters/container/docker-swarm.md
+	../bin/markup-single.py ../chapters/container/docker-swarm.md 3
+	../bin/header.py dest/chapters/container/docker-swarm.md 3
+
+dest/chapters/container/docker-fs.md: ../chapters/container/docker-fs.md
+	../bin/markup-single.py ../chapters/container/docker-fs.md 3
+	../bin/header.py dest/chapters/container/docker-fs.md 3
+
+dest/chapters/container/docker-hadoop.md: ../chapters/container/docker-hadoop.md
+	../bin/markup-single.py ../chapters/container/docker-hadoop.md 3
+	../bin/header.py dest/chapters/container/docker-hadoop.md 3
+
+dest/chapters/container/docker-pagerank-example-instruction.md: ../chapters/container/docker-pagerank-example-instruction.md
+	../bin/markup-single.py ../chapters/container/docker-pagerank-example-instruction.md 3
+	../bin/header.py dest/chapters/container/docker-pagerank-example-instruction.md 3
+
+dest/chapters/container/docker-spark.md: ../chapters/container/docker-spark.md
+	../bin/markup-single.py ../chapters/container/docker-spark.md 3
+	../bin/header.py dest/chapters/container/docker-spark.md 3
+
+dest/chapters/SECTION/SECTION-KUBERNETES.md: ../chapters/SECTION/SECTION-KUBERNETES.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-KUBERNETES.md 2
+	../bin/header.py dest/chapters/SECTION/SECTION-KUBERNETES.md 2
+
+dest/chapters/container/kubernetes-intro.md: ../chapters/container/kubernetes-intro.md
+	../bin/markup-single.py ../chapters/container/kubernetes-intro.md 3
+	../bin/header.py dest/chapters/container/kubernetes-intro.md 3
+
+dest/chapters/container/kubernetes-fs.md: ../chapters/container/kubernetes-fs.md
+	../bin/markup-single.py ../chapters/container/kubernetes-fs.md 3
+	../bin/header.py dest/chapters/container/kubernetes-fs.md 3
+
+dest/chapters/container/singularity/singularity.md: ../chapters/container/singularity/singularity.md
+	../bin/markup-single.py ../chapters/container/singularity/singularity.md 2
+	../bin/header.py dest/chapters/container/singularity/singularity.md 2
+
+dest/chapters/container/exercise.md: ../chapters/container/exercise.md
+	../bin/markup-single.py ../chapters/container/exercise.md 2
+	../bin/header.py dest/chapters/container/exercise.md 2
+
+dest/chapters/nist/bdra.md: ../chapters/nist/bdra.md
+	../bin/markup-single.py ../chapters/nist/bdra.md 1
+	../bin/header.py dest/chapters/nist/bdra.md 1
+
+dest/chapters/ai/ai.md: ../chapters/ai/ai.md
+	../bin/markup-single.py ../chapters/ai/ai.md 1
+	../bin/header.py dest/chapters/ai/ai.md 1
+
+dest/chapters/SECTION/SECTION-FAQ.md: ../chapters/SECTION/SECTION-FAQ.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-FAQ.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-FAQ.md 1
+
+dest/chapters/faq.md: ../chapters/faq.md
+	../bin/markup-single.py ../chapters/faq.md 2
+	../bin/header.py dest/chapters/faq.md 2
+
+dest/chapters/SECTION/SECTION-INDEX.md: ../chapters/SECTION/SECTION-INDEX.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-INDEX.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-INDEX.md 1
+
+dest/chapters/index.md: ../chapters/index.md
+	../bin/markup-single.py ../chapters/index.md 2
+	../bin/header.py dest/chapters/index.md 2
+
+dest/chapters/SECTION/SECTION-REFERENCES.md: ../chapters/SECTION/SECTION-REFERENCES.md
+	../bin/markup-single.py ../chapters/SECTION/SECTION-REFERENCES.md 1
+	../bin/header.py dest/chapters/SECTION/SECTION-REFERENCES.md 1
+

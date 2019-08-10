@@ -1,0 +1,30 @@
+---
+title: Scientific Writing with Markdown
+creator:
+- role: editor
+  text: Gregor von Laszewski
+description: A booklet about how to use markdown to write scientific papers and reports
+rights: (c) Gregor von Laszewski, 2018
+language: en-US
+stylesheet: template/epub.css
+header-includes:
+   - \usepackage{coloremoji}
+cover-image: cover/cover.jpg
+figureTitle: Figure
+figPrefix: Figure
+eqnPrefix: Equation
+secPrefix: Section
+tblPrefix: Table
+linkReferences: True
+nameInLink: True
+fignos-caption-name: Figure
+fignos-plus-name: Figure
+xnos-number-sections: True
+keywords: [markdown]
+mustache: abbrev.yaml
+abstract: |
+  This book contains the informsation on hwo to write scientific
+  papers and reports
+...
+
+

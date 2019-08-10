@@ -1,0 +1,14 @@
+---
+title:
+- type: main
+  text: Class Communication
+creator:
+- role: author
+  text: Gregor von Laszewski
+description: Practical information to communicate in the class
+             with git and piazza
+rights: (c) Gregor von Laszewski, 2018
+language: en-US
+stylesheet: template/epub.css
+cover-image: cover/cover.jpg
+...
