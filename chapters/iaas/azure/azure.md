@@ -60,7 +60,6 @@ compute resources. This includes the following services:
     [Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/
     "Virtual Machines") to provision Windows and Linux
     virtual machines 
-
 -
     [Virtual Machine Scale Sets](https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/
     "Virtual Machine Scale Sets") to  manage and scale
@@ -79,18 +78,15 @@ containerized applications. This includes:
     [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/)
     to provide access to Kubernetes as a Service so that deployment, management, and operations of
     Kubernetes can be conducted on the cloud resources offered.
-
 -
    [Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/
     "Service Fabric") to develop microservices and
     orchestrate containers on Windows or
     Linux as part of the infrastructure
-
 -
     [Container Instances](https://azure.microsoft.com/en-us/services/container-instances/
     "Container Instances") to run containers on Azure without managing
     servers which seems unrelated to kubernetes
-
 -
     [Container Registry](https://azure.microsoft.com/en-us/services/container-registry/
     "Container Registry") to store and manage container images for deployments
@@ -107,41 +103,34 @@ Storage is offered through a variety of
     "Azure Cosmos DB") is a  globally distributed,
     multi-model database for any
     scale
-
 -
     [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/
     "Azure SQL Database") is a managed relational SQL database as a
     service
-
 -
     [Azure Database for MySQL](https://azure.microsoft.com/en-us/services/mysql/
     "Azure Database for MySQL") is a managed MySQL database as a
     service
-
 -
     [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/services/postgresql/
     "Azure Database for PostgreSQL") is a managed
     PostgreSQL database service
-
 -
     [SQL Server on Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/
     "SQL Server on Virtual Machines") allowing to host enterprise SQL
     Server apps in the cloud
-
 -
     [SQL Data Warehouse](https://azure.microsoft.com/en-us/services/sql-data-warehouse/
     "SQL Data Warehouse") is an elastic data warehouse as a service
     with enterprise-class features
-
 -
     [Azure Database Migration Service](https://azure.microsoft.com/en-us/services/database-migration/
     "Azure Database Migration Service") simplifies on-premises
     database migration to the cloud
-
-- [Redis Cache](https://azure.microsoft.com/en-us/services/cache/
-  "Redis Cache") which provides a Redis Cache as a service to
-  support high-throughput and  low-latency data access
-
+- 
+    [Redis Cache](https://azure.microsoft.com/en-us/services/cache/
+    "Redis Cache") which provides a Redis Cache as a service to
+    support high-throughput and  low-latency data access
 -
     [SQL Server Stretch Database](https://azure.microsoft.com/en-us/services/sql-server-stretch-database/
     "SQL Server Stretch Database") which supports dynamically
