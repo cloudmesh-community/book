@@ -33,6 +33,11 @@ BOOK:
     - "{file.chapter}/prg/python/python-editor.md"
   - LANGUAGE:
     - "{file.chapter}/prg/python/python.md"
+  - CLOUDMESH_COMMON:
+    - "{file.chapter}/prg/python/cloudmesh/console.md"
+    - "{file.chapter}/prg/python/cloudmesh/dict.md"
+    - "{file.chapter}/prg/python/cloudmesh/shell.md"
+    - "{file.chapter}/prg/python/cloudmesh/stopwatch.md"
   - LIBRARIES:
     - "{file.chapter}/prg/python/python-libraries.md"
     - "{file.chapter}/prg/python/python-data.md"
