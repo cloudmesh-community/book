@@ -1,3 +1,0 @@
-# [Big Data Applications]{.part}
-
-

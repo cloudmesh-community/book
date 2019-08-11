@@ -3,8 +3,8 @@ metadata:
   image: "cover.png"
   title: "Big Data Applications"
   subtitle: "e534"
-  author: 'Geoffrey C. Fox\nGregor von Laszewski'
-  subauthor: "Editor"
+  author: "Geoffrey C. Fox\nGregor von Laszewski"
+  subauthor: ""
   email: "laszewski@gmail.com"
   url: "https://cloudmesh-community.github.io/book/vonlaszewski-big-data-applications.epub"
   description: "Proposed Lecture content (subject to change)"
