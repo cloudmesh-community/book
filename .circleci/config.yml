@@ -29,18 +29,18 @@ jobs:
       - run:
           name: biber
           command: bin/check-biber.sh changed_files.log
-      - run:
-          name: bibtex issues
-          command: cd cloud; make bibtex-issues
+      #      - run:
+      #          name: bibtex issues
+      #          command: cd cloud; make bibtex-issues
       - run:
           name: check cloud epub
-          command: cd cloud && make new && cd ..
+          command: cd books/cloud && make && cd ../..
       - run:
           name: check bigdata epub
-          command: cd big-data-applications && make
+          command: cd books/big-data-applications && make && cd ../..
       - run:
           name: add line numbers to references.bib
-          command: cat -n big-data-applications/dest/references.bib > references.bib
+          command: cat -n bpooks/big-data-applications/dest/references.bib > references.bib
       - store_artifacts:
           path: references.bib
           destination: references.bib
