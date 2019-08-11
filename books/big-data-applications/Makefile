@@ -1,4 +1,4 @@
-NAME=cloud
+NAME=big-data-applications
 
 all: book pdf
 

@@ -1,3 +1,0 @@
-# [SD Card]{.part}
-
-

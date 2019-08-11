@@ -1,0 +1,77 @@
+---
+metadata:
+  image: "cover.png"
+  title: "Big Data Applications"
+  subtitle: "e534"
+  author: 'Geoffrey C. Fox\nGregor von Laszewski'
+  subauthor: "Editor"
+  email: "laszewski@gmail.com"
+  url: "https://cloudmesh-community.github.io/book/vonlaszewski-big-data-applications.epub"
+  description: "Proposed Lecture content (subject to change)"
+  abstract: "Proposed Lecture content (subject to change)"
+  keywords: "Cloud, virtual machines, containers, cloud engenering"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-big-data-applications.epub"
+git:
+  "community": "https://raw.githubusercontent.com/cloudmesh-222"
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-222/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - PREFACE:
+    - "{file.chapter}/version.md"
+    - "{file.chapter}/preface/corrections.md"
+    - "{file.chapter}/authors.md"
+    - "{file.chapter}/preface/create.md"
+    - "{file.chapter}/preface/reader.md"
+    - "{file.chapter}/preface/notation.md"
+  - ORGANIZATION:
+    - "{file.chapter}/class/organization-523.md"
+    - "{file.chapter}/class/plagiarism.md"
+    - "{file.chapter}/class/policies.md"
+    - "{file.chapter}/class/e534-i523.md"
+    - "{file.chapter}/class/volumes.md"
+    - "{file.chapter}/in/datasets.md"
+    - "{file.chapter}/class/assignments-523.md"
+  - DETAILS:
+    - "{file.chapter}/bigdata/intro-fall-2018.md"
+    - "{file.chapter}/bigdata/applications/overview.md"
+    - "{file.chapter}/bigdata/applications/physics.md"
+    - "{file.chapter}/bigdata/applications/lifestyle.md"
+    - "{file.chapter}/bigdata/applications/sport.md"
+    - "{file.chapter}/bigdata/applications/cloud.md"
+    - "{file.chapter}/bigdata/applications/usecases.md"
+    - "{file.chapter}/bigdata/applications/sensor.md"
+    - "{file.chapter}/bigdata/applications/radar.md"
+    - "{file.chapter}/bigdata/applications/web.md"
+    - "{file.chapter}/bigdata/applications/health.md"
+    - TECHNOLOGIES:
+      - "{file.chapter}/bigdata/applications/statistics.md"
+      - "{file.chapter}/bigdata/applications/kmeans.md"
+      - "{file.chapter}/bigdata/applications/plotviz.md"
+  - DEVTOOLS:
+    - "{file.chapter}/linux/refcards.md"
+    - "{file.chapter}/cloud/virtualbox.md"
+    - "{file.chapter}/cloud/vagrant.md"
+    - "{file.chapter}/cloud/packer.md"
+    - "{file.chapter}/os/ubuntu-usb-osx.md"
+    - GITHUB:
+      - "{file.chapter}/git/github.md"
+      - "{file.chapter}/git/gitpullreqest.md"
+      - "{file.chapter}/git/git-tools.md"
+    - LINUX:
+      - "{file.chapter}/linux/linux.md"
+      - "{file.chapter}/linux/ssh.md"
+      - "{file.chapter}/linux/ssh-futuresystems.md"
+      - "{file.chapter}/linux/ssh-excerise.md"
+    - PYTHON:
+      - "{file.chapter}/bigdata/python.md"
+  - FAQ:
+    - "{file.chapter}/faq.md"
+    - "{file.chapter}/faq-523.md"
+  - GLOSSARY:
+    - "{file.chapter}/container/glossary.md"
