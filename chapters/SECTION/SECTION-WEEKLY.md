@@ -1,3 +1,0 @@
-# [Weekly Agenda]{.part}
-
-

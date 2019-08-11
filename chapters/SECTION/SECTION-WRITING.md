@@ -1,3 +1,0 @@
-# [Scientific Writing]{.part}
-
-
