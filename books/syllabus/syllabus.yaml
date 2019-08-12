@@ -13,6 +13,7 @@ metadata:
   stylesheet: "epub.css"
   dest: "./dest/book"
   filename: "vonLaszewski-e516-syllabus.epub"
+  rights: (c) Gregor von Laszewski, 2019
 git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
