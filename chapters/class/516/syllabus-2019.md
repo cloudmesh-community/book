@@ -8,7 +8,7 @@ Office hours: By appointment
 ## Audience
 
 * We recommend you know one programming language.
-* Knowledge of python if of advantage but not required.
+* Knowledge of python is of advantage but not required. Python is easy.
 
 ## Course summary
 
@@ -28,8 +28,9 @@ following references as pointers to what we will discuss:
 
 ## Tools
 
-You will be required to have a computer to loginto the cloud. We will give you access to an OpenStack cloud. 
-Access to Azure, AWS, Google and others can be achieved through thei free tier,
+You will be required to have a computer to log into the cloud. We will
+give you access to an OpenStack cloud.  Access to Azure, AWS, Google
+and others can be achieved through their free tier,
 
 
 ## Course Schedule
@@ -42,7 +43,7 @@ Access to Azure, AWS, Google and others can be achieved through thei free tier,
 | 3    | Python for Cloud Computing, Start of Project Selection |
 | 4    | Cloud Architectures |
 | 5    | Virtualization I - OpenStack |
-| 6    | Virtualization II - AWs, Azure, Google |
+| 6    | Virtualization II - AWS, Azure, Google |
 | 7    | Multi Cloud Environment |
 | 8    | Cloud Technology Presentation - Project Review|
 | 9    | Containers - Docker, Kubernetes|
@@ -59,9 +60,8 @@ sections in our online book.
 
 ## Attendance
 
-Attendance accounts for 10% of your final grade. Attending ALL the
-sessions is mandatory. If you need to skip class for any reason, you
-need to notify the instructor and TAs
+Attendance accounts for 10% of your final grade. If you need to skip
+class for any reason, you need to notify the instructor and TAs
 
 
 ## Assignments
@@ -73,12 +73,13 @@ assignment categories:
   conducted on a weekly basis. They will help you making sure you 
   not only understand the material theoretically, but try them out. 
   
-* Cloud Technology Review and Examples (Graded): This is a document
+* Cloud Technology Review and Examples (Graded): (This can be
+  substituted for more programming in your project). This is a document
   about a Cloud technology that is not yet included in our handbook to
   introduce an interested party to it. It should not contain
-  advertisements but be a rational destcription of the technology with
-  examples that you have tried yourself. YOu will have to give a non
-  plagiarized presentation and document about it.
+  advertisements but be a rational description of the technology with
+  examples that you have tried yourself. You will have to give a non
+  plagiarized presentation and document about it. 
 
 * Project Assignments (Graded): The most important part of the class for
   which you will be working throughout the semester. Up to three
@@ -107,11 +108,11 @@ for your project.
     final submission. 
   
   * This will take usually take place through the Lab hours on regular basis. 
-  * A Code review must have been done at least once at midterm time.
+  * A first project discussion must have been done at least once at midterm time.
   
 * Final Project Submission
 
-  * All code and documentation mus tbe checked into github well before
+  * All code and documentation must be checked into GitHub well before
     the semester is over. This allows us to give you feedback for
     improvements.
 
@@ -119,6 +120,10 @@ Please note that the syllabus is subject to change. Students in this
 class often come from a wide variety of backgrounds and experiences. As
 such, the instructor reserves the right to change the content of the
 course to accommodate the needs and expectations of the students.
+
+## Project Examples
+
+* <https://cloudmesh.github.io/cloudmesh-manual/projects/index.html>
 
 ## Statement on Academic Misconduct
 
