@@ -1,17 +1,18 @@
-all: writing
+CONTENT=writing
 
-# pdf
+all: epub pdf
 
-writing: clean version
+
+epub: clean version
 	mkdir -p dest
-	bookmanager writing.yaml get
-	mv dest/vonLaszewski-writing.epub ../../docs
-	open ../../docs/vonLaszewski-writing.epub
+	bookmanager $(CONTENT).yaml get
+	mv dest/vonLaszewski-$(CONTENT).epub ../../docs
+	open ../../docs/vonLaszewski-$(CONTENT).epub
 
 pdf:
 	ebook-convert \
-	  ../../docs/vonLaszewski-writing.epub \
-	  ../../docs/vonLaszewski-writing.pdf
+	  ../../docs/vonLaszewski-$(CONTENT).epub \
+	  ../../docs/vonLaszewski-$(CONTENT).pdf
 
 bib:
 	mkdir -p dest
@@ -21,12 +22,9 @@ version:
 	TZ=":US/Eastern"; date > ../../chapters/version.md
 
 view:
-	open ../../docs/vonLaszewski-writing.epub
+	open ../../docs/vonLaszewski-$(CONTENT).epub
 
 clean:
 
 	rm -rf dest
-
-
-
 
