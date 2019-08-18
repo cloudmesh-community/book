@@ -56,10 +56,9 @@ The main features of Python are:
 -   a large standard library
 -   a large repository of third-party libraries
 
-Python is used by many companies (such as Google, Yahoo!, CERN, NASA)
-and is applied for web development, scientific computing, embedded
-applications, artificial intelligence, software development, and
-information security, to name a few.
+Python is used by many companies and is applied for web development,
+scientific computing, embedded applications, artificial intelligence,
+software development, and information security, to name a few.
 
 The material collected here introduces the reader to the basic concepts
 and features of the Python language and system. After you have worked
@@ -68,12 +67,11 @@ through the material you will be able to:
 -   use Python
 -   use the interactive Python interface
 -   understand the basic syntax of Python
--   write and run Python programs stored in a file
+-   write and run Python programs 
 -   have an overview of the standard library
--   install Python libraries using pyenv or if it is not available
-    virtualenv
+-   install Python libraries using pyenv for multipython interpreter development.
 
-This section does not attempt to be comprehensive and cover every
+E doe not attempt to be comprehensive and cover every
 single feature, or even every commonly used feature. Instead, it
 introduces many of Python's most noteworthy features, and will give you
 a good idea of the language's flavor and style. After reading it, you
@@ -82,7 +80,7 @@ be ready to learn more about the various Python library modules.
 
 In order to conduct this lesson you need
 
--   A computer with Python 2.7.15 or 3.7.0
+-   A computer with Python 2.7.16 or 3.7.4
 -   Familiarity with command line usage
 -   A text editor such as [PyCharm](https://www.jetbrains.com/pycharm/),
     emacs, vi or others. You should identity which works best for you

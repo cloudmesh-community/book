@@ -8,7 +8,7 @@ creator:
 description: Practical information to write high quality scientific
              papers and reports. This is one of two volumes. Volume I covers
              non-LaTeX. Volume II covers LaTeX.
-rights: (c) Gregor von Laszewski, 2018
+rights: (c) Gregor von Laszewski, 2018, 2019
 language: en-US
 stylesheet: template/epub.css
 cover-image: cover/cover.jpg

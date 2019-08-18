@@ -28,8 +28,8 @@ installed:
 
     pyenv versions
     system
-    2.7.13
-    2.7.13/envs/ENV2
+    2.7.16
+    2.7.16/envs/ENV2
     3.6.1
     3.6.1/envs/ENV3
     * ENV2 (set by PYENV_VERSION environment variable)
