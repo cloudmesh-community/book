@@ -33,6 +33,9 @@ jobs:
       #          name: bibtex issues
       #          command: cd cloud; make bibtex-issues
       - run:
+          name: check python epub
+          command: cd books/python && make && cd ../..
+      - run:
           name: check cloud epub
           command: cd books/cloud && make && cd ../..
       - run:
