@@ -1,9 +1,19 @@
 # Syllabus Engineering Cloud Computing 
 
-* Instructor: Gregor von Laszewski
-* Contact: gvonlasz@indiana.edu 
 
-Office hours: By appointment
+---
+
+![](images/learning.png) **Learning Objectives**
+
+* Get a quick overview what the class is about
+
+---
+
+## Instructor
+
+* Gregor von Laszewski <laszewski@gmail.com>
+* Office hours: By appointment
+
 
 ## Audience
 
