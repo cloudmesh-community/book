@@ -1,22 +1,41 @@
-# Installation 
-
-## Prerequisites
+# Python 3.7.4 Installation {#sec:python-install}
 
 ---
 
-> ![Warning](images/warning.png) Before you install make sure that you have at minimum python 3.7.4
-> installed. Likely the code will work with earlier versions, but we do
-> the development in python 3.7.4. This version can be downloaded and
-> installed from <https://www.python.org/downloads/>.
+![](images/learning.png) **Learning Objectives**
 
-> ![Warning](images/warning.png) At this time we do not recommend the 
-> conda install, as the conda packages are outdated.
-
+* Learn how to install python.
+* Find additional information about Python.
+* Make sure your Computer supports Python.
 
 ---
 
 
-### Prerequisits Ubuntu 19.04
+In this setion we explain how to install python 3.7.4 on a computer. 
+Likely much of the code will work with earlier versions, but we do
+the development in Python on the newest version of python available at 
+<https://www.python.org/downloads/>.
+
+## Hardware
+
+Python does not require any special hardware. We have installed Python
+not only on PC's and Laptops, but also on Raspberry PI's and Lego
+Mindstorms.
+
+However, there are some things to consider. If you use many programs on
+your desktop and run them all at the same time you will find that in
+up-to-date operating systems you will find your self quickly out of
+memmory. THis is especially true if you use editors such as pyCHarm
+which we highly recommend. Furthermore, as you likely have lots of disk
+access, make sure to use a fast HDD or better an SSD.
+
+A typical modern developer PC or Laptop has *16GB RAM* and an *SSD*. You
+can certainly do python on a $35 Rapbperry PI, but you probably will not
+be able to run PyCharm. There are many alternative editors with less
+Memory footprint avialable.
+
+
+## Prerequisits Ubuntu 19.04
 
 Python 3.7 is installed in ubuntu 19.04. Therefore, it already fulfills
 the prerequisits. However we recommend that you update to the newest
@@ -24,9 +43,9 @@ version of python and pip. However we recommend that you update the the
 newest version of python. Please visit:
 <https://www.python.org/downloads/>
 
-### Prerequisits macOS
+## Prerequisits macOS
 
-#### Installation from Apple App Store
+### Installation from Apple App Store
 
 You want a number of useful tool on your macOS. They are not installed
 by default, but are available via Xcode. First you need to install xcode
@@ -38,14 +57,14 @@ Next you need to install macOS xcode command line tools:
 
     xcode-select --install
 
-#### Installation from python.org
+### Installation from python.org
 
 The easiest instalation of Python for cloudmesh is to use the instaltion
 from <https://www.python.org/downloads>. Please, visit the page and
 follow the instructions. After this install you have
 [python3]{.title-ref} avalable from the commandline
 
-#### Installation from Hoembrew
+### Installation from Hoembrew
 
 An alternative instalation is provided from Homebrew. To use this
 install method, you need to install Homebrew first. Start the process by
@@ -62,7 +81,7 @@ Then you should be able to install Python 3.7.4 using:
 brew install python
 ```
 
-### Prerequisits Ubuntu 18.04
+## Prerequisits Ubuntu 18.04
 
 We recommend you update your ubuntu version to 19.04 and follow the
 instructions for that version instead, as it is significantly easier. If
@@ -116,12 +135,12 @@ rm get-pip.py
 ```
 
 
-#### System Install
+### System Install
 
 Python 3.7 can be installed on Windows 10 using:
 <https://www.python.org/downloads/>
 
-#### Linux Subsystem Install
+### Linux Subsystem Install
 
 To activate the Linux Subsystem, please follow the instructions at
 
@@ -134,7 +153,7 @@ A suitable distribution would be
 However as it uses an older version of python you will ahve to update
 it.
 
-### Prerequisit venv
+## Prerequisit venv
 
 This step is highly recommend if you have not yet already installed a
 `venv` for python to make sure you are not interfering with your system
