@@ -42,7 +42,7 @@ use case? Listed next is output of `arp -a` with internet sharing.  I turned
 it on so that installations via apt-get would work:
 
 ```
-(2.7.13) BKS-MBP:project-code bsobolik$ arp -a
+(2.7.16) BKS-MBP:project-code bsobolik$ arp -a
 hello (192.168.1.1) at 58:ef:68:a9:51:4e on en0 ifscope [ethernet]
 bertoltksiphone.hsd1.in.comcast.net (192.168.1.126) at e4:9a:79:7f:19:55 on en0 ifscope [ethernet]
 ? (192.168.1.255) at ff:ff:ff:ff:ff:ff on en0 ifscope [ethernet]
@@ -57,7 +57,7 @@ broadcasthost (255.255.255.255) at ff:ff:ff:ff:ff:ff on en0 ifscope [ethernet]
 When internet sharing is off I get: 
 
 ```
-(2.7.13) BKS-MBP:~ bsobolik$ arp -a
+(2.7.16) BKS-MBP:~ bsobolik$ arp -a
 raspberrypi.local (169.254.177.219) at b8:27:eb:0:c3:55 on en8 [ethernet]
 ? (169.254.255.255) at (incomplete) on en0 [ethernet]
 hello (192.168.1.1) at 58:ef:68:a9:51:4e on en0 ifscope [ethernet]

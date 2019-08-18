@@ -200,7 +200,7 @@ no costs incurred for using a Amazon or Google cluster, for example. To launch a
 Spark shell via `pyspark`. This will open up a normal Python prompt with a Spark header:
 
 ```bash
-Python 3.7.3 (tags/v3.7.3:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32
+Python 3.7.4 (tags/v3.7.4:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 2019-04-17 14:11:34 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-
 java classes where applicable
@@ -213,7 +213,7 @@ Welcome to
    /__ / .__/\_,_/_/ /_/\_\   version 2.4.1
       /_/
 
-Using Python version 3.7.3 (tags/v3.7.3:9a3ffc0492, Dec 23 2018 23:09:28)
+Using Python version 3.7.4 (tags/v3.7.4:9a3ffc0492, Dec 23 2018 23:09:28)
 SparkSession available as 'spark'.
 >>>
 ```

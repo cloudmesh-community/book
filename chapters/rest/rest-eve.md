@@ -237,7 +237,7 @@ formatted like this try adding `?pretty=1`
     HTTP/1.0 200 OK
     Content-Type: application/json
     Content-Length: 150
-    Server: Eve/0.7.6 Werkzeug/0.11.15 Python/2.7.5
+    Server: Eve/0.7.6 Werkzeug/0.11.15 Python/2.7.16
     Date: Wed, 17 Jan 2018 18:34:07 GMT
 
     {

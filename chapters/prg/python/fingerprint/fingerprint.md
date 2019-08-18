@@ -1,13 +1,17 @@
-# Fingerprint Matching  :o: {#s-fingerprint}
+# Fingerprint Matching {#s-fingerprint}
 
-![No](images/no.png)
+---
+
+> ![Warning](images/warning.png) Please note that NIST has temporarily removed the
+> Fingerprint data set. We unfortunately do not have a copy of the dataste. 
+> If you have one, please notify us
+---
 
 Python is a flexible and popular language for running data analysis
 pipelines. In this section we will implement a solution for a
 fingerprint matching.
 
-Overview
---------
+## Overview
 
 Fingerprint recognition refers to the automated method for verifying a
 match between two fingerprints and that is used to identify individuals
@@ -28,14 +32,12 @@ We use the following NIST dataset for the study:
 Special Database 14 - NIST Mated Fingerprint Card Pairs 2.
 ([http://www.nist.gov/itl/iad/ig/special\\\_dbases.cfm](http://www.nist.gov/itl/iad/ig/special\_dbases.cfm))
 
-Objectives
-----------
+## Objectives
 
 Match the fingerprint images from a probe set to a gallery set and
 report the match scores.
 
-Prerequisites
--------------
+## Prerequisites
 
 For this work we will use the following algorithms:
 
@@ -59,8 +61,7 @@ the following steps will accomplish this:
     $ ./setup.sh /usr/local --without-X11
     $ sudo make
 
-Implementation
---------------
+## Implementation
 
 1.  Fetch the fingerprint images from the web
 2.  Call out to external programs to prepare and compute the match
@@ -78,7 +79,7 @@ import zipfile
 import hashlib
 ```
 
-We\'ll be interacting with the operating system and manipulating files
+we will be interacting with the operating system and manipulating files
 and their pathnames.
 
 ```python
@@ -109,14 +110,14 @@ import attr
 import sys
 ```
 
-We\'ll be randomly dividing the entire dataset, based on user input,
+we will be randomly dividing the entire dataset, based on user input,
 into the probe and gallery stets
 
 ```python
 import random
 ```
 
-We\'ll need to call out to the NBIS software. We\'ll also be using
+we will need to call out to the NBIS software. we will also be using
 multiple processes to take advantage of all the cores on our machine
 
 ```python
@@ -124,7 +125,7 @@ import subprocess
 import multiprocessing
 ```
 
-As for plotting, we\'ll use `matplotlib`, though there are many
+As for plotting, we will use `matplotlib`, though there are many
 alternatives.
 
 ```python
@@ -133,16 +134,15 @@ import pandas as pd
 import numpy as np
 ```
 
-Finally, we\'ll write the results to a database.
+Finally, we will write the results to a database.
 
 ```python
 import sqlite3
 ```
 
-Utility functions
------------------
+## Utility functions
 
-Next, we\'ll define some utility functions:
+Next, we will define some utility functions:
 
 ```python
 def take(n, iterable):
@@ -206,10 +206,9 @@ def fetch_url(url, sha256, prefix='.', checksum_blocksize=2**20, dryRun=False):
     return local
 ```
 
-Dataset
--------
+## Dataset
 
-We\'ll now define some global parameters
+we will now define some global parameters
 
 First, the fingerprint dataset
 
@@ -258,10 +257,9 @@ def locate_images(paths):
         yield image(id=path.checksum.value, path=path)
 ```
 
-Data Model
-----------
+## Data Model
 
-We\'ll define some classes so we have a nice API for working with the
+we will define some classes so we have a nice API for working with the
 dataflow. We set `slots=True` so that the resulting objects will be more
 space-efficient.
 
@@ -356,7 +354,7 @@ The final step in the pipeline is running the `bozorth3` from NBIS. The
 `bozorth3` class represents the match being done: tracking the ids of
 the probe and gallery images as well as the match score.
 
-Since we\'ll be writing these instance out to a database, we provide
+Since we will be writing these instance out to a database, we provide
 some static methods for SQL statements. While there are many
 Object-Relational-Model (ORM) libraries available for Python, this
 approach keeps the current implementation simple.
@@ -387,7 +385,7 @@ to run `bozorth3`. This way the pipeline definition can be kept simple
 to a `map` to create the input and then a `map` to run the program.
 
 As NBIS `bozorth3` can be called to compare one-to-one or one-to-many,
-we\'ll also dynamically choose between these approaches depending on if
+we will also dynamically choose between these approaches depending on if
 the gallery attribute is a list or a single object.
 
 ```python
@@ -472,10 +470,9 @@ def bozorth3_from_one_to_many(probe, galleryset):
         shutil.rmtree(tempdir)
 ```
 
-Plotting
-========
+## Plotting
 
-For plotting we\'ll operate only on the database. We\'ll select a small
+For plotting we will operate only on the database. we will select a small
 number of probe images and plot the score between them and the rest of
 the gallery images.
 
@@ -516,8 +513,7 @@ def mk_short_labels(series, start=7):
     return map(lambda s: s[:size], series)
 ```
 
-Putting it all Together
-=======================
+## Putting it all Together
 
 First, set up a temporary directory in which to work:
 
@@ -542,7 +538,7 @@ to /tmp/fingerprint_example/ CPU times: user 3.34 s, sys: 645 ms,
 total: 3.99 s Wall time: 4.01 s
 ```
 
-Next we\'ll configure the location of of the MD5 checksum file that
+Next we will configure the location of of the MD5 checksum file that
 comes with the download
 
 ```python
@@ -579,7 +575,7 @@ print(mindtcts[0].xyt[:50])
 30 332 214
 ```
 
-For example purposes we\'ll only a use a small percentage of the
+For example purposes we will only a use a small percentage of the
 database, randomly selected, for pur probe and gallery datasets.
 
 ```python
