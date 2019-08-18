@@ -1,19 +1,18 @@
-python: clean version
-	mkdir -p dest
-	bookmanager python.yaml get
-	mv dest/vonLaszewski-python.epub ../../docs
-	open ../../docs/vonLaszewski-python.epub
+CONTENT=python
 
-python-git: clean
+all: epub pdf
+
+
+epub: clean version
 	mkdir -p dest
-	bookmanager python-local.yaml get
-	mv dest/vonLaszewski-python.epub ../../docs
-	open ../../docs/vonLaszewski-python.epub
+	bookmanager $(CONTENT).yaml get
+	mv dest/vonLaszewski-$(CONTENT).epub ../../docs
+	open ../../docs/vonLaszewski-$(CONTENT).epub
 
 pdf:
 	ebook-convert \
-	  ../../docs/vonLaszewski-python.epub \
-	  ../../docs/vonLaszewski-python.pdf
+	  ../../docs/vonLaszewski-$(CONTENT).epub \
+	  ../../docs/vonLaszewski-$(CONTENT).pdf
 
 bib:
 	mkdir -p dest
@@ -23,7 +22,7 @@ version:
 	TZ=":US/Eastern"; date > ../../chapters/version.md
 
 view:
-	open ../../docs/vonLaszewski-python.epub
+	open ../../docs/vonLaszewski-$(CONTENT).epub
 
 clean:
 
