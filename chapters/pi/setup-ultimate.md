@@ -482,7 +482,9 @@ after 20 seconds:
 $ sudo dhclient -r wlan0; sleep 10; sudo dhclient wlan0
 ```
 
-### Wireless Network at IU ![No](images/no.png) {#s-wireless-at-iu}
+### Wireless Network at IU :o:
+
+![No](images/no.png) {#s-wireless-at-iu}
 
 ![No](images/no.png) TODO: Update with new IU public wireless information
 

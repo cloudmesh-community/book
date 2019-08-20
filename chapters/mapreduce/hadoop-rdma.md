@@ -1,4 +1,6 @@
-# Hadoop RDMA ![No](images/no.png) ![Question](images/question.png)
+# Hadoop RDMA :o:
+
+![No](images/no.png) ![Question](images/question.png)
 
 This section was copied with permission from: <https://www.chameleoncloud.org/appliances/17/docs/>
 

@@ -1,0 +1,30 @@
+
+
+- ISSUES:
+    - "{file.chapter}/issues/issues.md"
+
+  - WEEKLY:
+    - "{file.chapter}/class/e516-week.md"
+  - QUICKSTART:
+    - "{file.chapter}/quick516.md"
+    - "{file.chapter}/assignment.md"
+    - "{file.chapter}/class/e516-syllabus-table.md"
+  - OVERVIEW:
+    - "{file.chapter}/class/organization-516.md"
+    - "{file.chapter}/class/plagiarism.md"
+    - "{file.chapter}/cloud/gregor.md"
+    - "{file.chapter}/class/e516-engineering-cloud-computing.md"
+    - "{file.chapter}/class/policies.md"
+    - "{file.chapter}/class/e516-summary.md"
+    - "{file.chapter}/class/volumes.md"
+    - "{file.chapter}/class/e516-definition.md"
+
+  - OVERVIEW:
+    - "{file.chapter}/class/organization-516.md"
+    - "{file.chapter}/class/plagiarism.md"
+    - "{file.chapter}/cloud/gregor.md"
+    - "{file.chapter}/class/e516-engineering-cloud-computing.md"
+    - "{file.chapter}/class/policies.md"
+    - "{file.chapter}/class/e516-summary.md"
+    - "{file.chapter}/class/volumes.md"
+    - "{file.chapter}/class/e516-definition.md"

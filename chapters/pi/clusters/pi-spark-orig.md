@@ -1,4 +1,6 @@
-# Raspberry PI Spark Cluster ![No](images/no.png) :raised_hand: hid: 24
+# Raspberry PI Spark Cluster :o:
+
+![No](images/no.png) :raised_hand: hid: 24
 
 ## Todo
 

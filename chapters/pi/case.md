@@ -245,7 +245,9 @@ github.
 
 </div>
 
-### Assembling the Pi Cluster ![No](images/no.png)
+### Assembling the Pi Cluster :o:
+
+![No](images/no.png)
 
 TODO: replace the images with one that has white background
 
@@ -261,7 +263,9 @@ TODO: replace the images with one that has white background
 </div>
 
 
-### Virtual Raspberry Cluster ![No](images/no.png)
+### Virtual Raspberry Cluster :o:
+
+![No](images/no.png)
 
 It should also be possible to create a virtual raspberry PI cluster
 while for example using virtual box. This requires two steps. First the

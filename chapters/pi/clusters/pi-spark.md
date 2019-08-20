@@ -1,4 +1,6 @@
-# Raspberry PI Spark Cluster ![No](images/no.png) :raised_hand: hid: fa18-516-24
+# Raspberry PI Spark Cluster :o:
+
+![No](images/no.png)
 
 
 We provide step-by-step instructions on installing a Spark cluster on
@@ -6,14 +8,18 @@ a cluster of Raspberry Pi's.
 
 ## Todo
 
-- [ ] all the simple setup with sd cards, ssh, keys, and so on should be moved to the NOW cluster section. This way we can require simply a NOW and start without duplication on the real kubernetes install.
+- [ ] all the simple setup with sd cards, ssh, keys, and so on should be moved
+  to the NOW cluster section. This way we can require simply a NOW and start
+  without duplication on the real kubernetes install.
 - [ ] so before you can work on the section you need to make sure the NOW section is up to date.
 - [ ] The section contains some issues
 - [ ] A per node setup is used instead of a scripted setup
 - [ ] Some text in the later part is unclear
 
 
-## Prerequisites ![No](images/no.png)
+## Prerequisites :o:
+
+![No](images/no.png)
 
 In [Network of Pis](#pi-now-main) section we explained how to set up a network
 of Pis. Here we assume that we start from such a network. We assume that you
@@ -198,7 +204,6 @@ in python executing the various commands or shell scripts.
 See another effort documented at:
 
 * Edge Computing and Big Data Processing using Raspberry Pi
-Naveen Kaul
 <http://cyberaide.org/papers/vonLaszewski-cloud-vol-9.pdf#page=104&zoom=100,0,96>
 * Benchmarking Hadoop and Spark on Mutiple Platforms
 <http://cyberaide.org/papers/vonLaszewski-cloud-vol-9.pdf#page=27&zoom=100,0,96>

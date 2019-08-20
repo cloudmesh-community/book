@@ -1,4 +1,6 @@
-# AWS SageMaker ![No](images/no.png) sp19-616-111 ✋
+# AWS SageMaker :o:
+
+![No](images/no.png)
 
 Amazon SageMaker is a fully managed machine learning service. Using Amazon SageMaker, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment. 
 

@@ -1,1 +1,3 @@
-# Compliance and Grid Computing ![No](images/no.png) ![Construction](images/construction.png)
+# Compliance and Grid Computing :o:
+
+![No](images/no.png) ![Construction](images/construction.png)

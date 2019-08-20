@@ -314,7 +314,9 @@ $ sudo apt-get install mosquitto mosquitto-clients
 $ pip install paho-mqtt
 ```
 
-### Raspberry Pi Setup ![No](images/no.png)
+### Raspberry Pi Setup :o:
+
+![No](images/no.png)
 
 #### Broker
 

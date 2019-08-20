@@ -150,7 +150,9 @@ Gathers various application metrics from the running instances, and
 teams can access these logs and metrics to monitor, support and take
 necessary actions to keep systems up and running.
 
-## Conclusion ![No](images/no.png)
+## Conclusion :o:
+
+![No](images/no.png)
 
 Cloud Foundry is gaining traction, in the public and private
 organizations, as an open source alternative to PaaS Offerings

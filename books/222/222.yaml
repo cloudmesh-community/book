@@ -94,7 +94,6 @@ BOOK:
           - "{file.chapter}/mapreduce/spark-udf.md"
       - DVANCED_HADOOP:
           - "{file.chapter}/mapreduce/amazon-emr-1.md"
-          - "{file.chapter}/mapreduce/amazon-emr-2.md"
           - "{file.chapter}/mapreduce/twister.md"
           - "{file.chapter}/mapreduce/twister-installation.md"
           - "{file.chapter}/mapreduce/twister2-example.md"

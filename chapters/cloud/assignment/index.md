@@ -1,8 +1,8 @@
-Assignments ![No](images/no.png)
-===========
+# Assignments :o:
 
-Assignment 0 - Identify Technologies
-------------------------------------
+![No](images/no.png)
+
+## Assignment 0 - Identify Technologies
 
 Assignment 0 will require you to identify the different software
 tools/technologies included in the given attachment and then group them
@@ -13,8 +13,7 @@ This homework is worth 5 points.
 
 -   pptx \<files/assignment\_0.pptx\>
 
-Project 1
----------
+## Project 1
 
 You will need to complete the source code and write a report. Zip your
 work into a file with the name username_project1.zip (replace
@@ -43,8 +42,7 @@ at 11:59 pm on February 5.
 
 -   Input Data \<files/project1_input_data.txt\>
 
-Project 2
----------
+## Project 2
 
 You are required to turn in the following items in a zip file
 (username_HadoopPageRank.zip) in this assignment:
@@ -63,8 +61,7 @@ You are required to turn in the following items in a zip file
 
 -   Project 2 \<files/project2.pdf\>
 
-Project 3
----------
+## Project 3
 
 Project 3 asks you to implement a bioinformatics application using
 Hadoop (Map only) MapReduce framework and write a report about the data
@@ -109,8 +106,7 @@ follows:
 
 -   Project 3 \<files/project3.pdf\>
 
-Project 4
----------
+## Project 4
 
 Zip your source code and report in a file named username_project4.zip
 
@@ -129,8 +125,7 @@ it will be published before the lab session.
 
 -   Project 4 Prerequisite \<files/project4_pre.pdf\>
 
-Project 5
----------
+## Project 5
 
 Write an HBase FreqIndexBuilder program to build an inverted index table
 which has the unique term's occurrences in all documents from the
@@ -151,8 +146,7 @@ follows:
 
 -   Project 5 \<files/project5.pdf\>
 
-Project 6
----------
+## Project 6
 
 After having familiarized yourself with the "HBase Building an Inverted
 Index" homework and "PageRank algorithms" homework, you are ready to use
@@ -176,8 +170,7 @@ follows:
 
 -   Project 6 \<files/project6.pdf\>
 
-Project 7
----------
+## Project 7
 
 The goal of this project is to familiarize yourself with the concept of
 map-collective applications. Harp is similar to MapReduce in terms of
@@ -207,8 +200,7 @@ Do not copy and paste commands from pdf files. Please type them
 :   manually. Special characters cause problems in executing commands in
     a terminal.
 
-Project 8
----------
+## Project 8
 
 Zip your source code and report as username_mbkmeans.zip.
 
