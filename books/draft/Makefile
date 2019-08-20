@@ -1,4 +1,28 @@
-BOOK=BOOK_DRAFT
-FILENAME=vonLaszewski-draft
+NAME=draft
 
-include ../Makefile.book
+all: epub pdf
+
+epub: clean version
+	mkdir -p dest
+	bookmanager $(NAME).yaml get
+	mv dest/vonLaszewski-$(NAME).epub ../../docs
+	open ../../docs/vonLaszewski-$(NAME).epub
+
+pdf:
+	ebook-convert \
+	  ../../docs/vonLaszewski-$(NAME).epub \
+	  ../../docs/vonLaszewski-$(NAME).pdf
+
+bib:
+	mkdir -p dest
+	cp ../../bib/*.bib dest
+
+version:
+	TZ=":US/Eastern"; date > ../../chapters/version.md
+
+view:
+	open ../../docs/vonLaszewski-$(NAME).epub
+
+clean:
+
+	rm -rf dest

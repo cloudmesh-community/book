@@ -1,0 +1,119 @@
+---
+metadata:
+  image: "cover.png"
+  title: "Cloud Computing"
+  subtitle: ""
+  author: 'Gregor von Laszewski'
+  subauthor: "Editor"
+  email: "laszewski@gmail.com"
+  url: "https://cloudmesh-community.github.io/book/vonlaszewski-cloud.epub"
+  description: "Proposed Lecture content (subject to change)"
+  abstract: "Proposed Lecture content (subject to change)"
+  keywords: "Cloud, virtual machines, containers, cloud engenering"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-cloud.epub"
+  rights: (c) Gregor von Laszewski, 2018, 2019
+git:
+  "community": "https://raw.githubusercontent.com/cloudmesh-community"
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - JULIA:
+    - "{file.chapter}/prg/julia/julia-aws.md"
+    - "{file.chapter}/prg/julia/julia-azure.md"
+    - "{file.chapter}/prg/julia/julia-docopts.md"
+    - "{file.chapter}/prg/julia/julia-external.md"
+    - "{file.chapter}/prg/julia/julia-ide.md"
+    - "{file.chapter}/prg/julia/julia-install.md"
+    - "{file.chapter}/prg/julia/julia-language.md"
+    - "{file.chapter}/prg/julia/julia-modules.md"
+    - "{file.chapter}/prg/julia/julia-network.md"
+    - "{file.chapter}/prg/julia/julia-opttype.md"
+    - "{file.chapter}/prg/julia/julia-parallel.md"
+    - "{file.chapter}/prg/julia/julia-rest.md"
+  - SCALA:
+    - "{file.chapter}/prg/scala/scala.md"
+  - DEVTOOLS:
+    - "{file.chapter}/linux/refcards.md"
+    - "{file.chapter}/cloud/virtualbox.md"
+    - "{file.chapter}/cloud/vagrant.md"
+    - "{file.chapter}/cloud/packer.md"
+    - "{file.chapter}/os/ubuntu-usb-osx.md"
+    - GITHUB:
+      - "{file.chapter}/git/github.md"
+      - "{file.chapter}/git/gitpullreqest.md"
+      - "{file.chapter}/git/git-tools.md"
+    - "{file.chapter}/linux/linux.md"
+    - "{file.chapter}/linux/ssh.md"
+    - "{file.chapter}/linux/ssh-futuresystems.md"
+    - "{file.chapter}/linux/ssh-excerise.md"
+  - DEVOPS:
+    - "{file.chapter}/devops/devops.md"
+    - "{file.chapter}/devops/travis.md"
+    - "{file.chapter}/devops/ansible.md"
+  - ISSUES:
+    - "{file.chapter}/issues/issues.md"
+  - WEEKLY:
+    - "{file.chapter}/class/e516-week.md"
+  - QUICKSTART:
+    - "{file.chapter}/quick516.md"
+    - "{file.chapter}/assignment.md"
+    - "{file.chapter}/class/e516-syllabus-table.md"
+  - OVERVIEW:
+    - "{file.chapter}/class/organization-516.md"
+    - "{file.chapter}/class/plagiarism.md"
+    - "{file.chapter}/cloud/gregor.md"
+    - "{file.chapter}/class/e516-engineering-cloud-computing.md"
+    - "{file.chapter}/class/policies.md"
+    - "{file.chapter}/class/e516-summary.md"
+    - "{file.chapter}/class/volumes.md"
+    - "{file.chapter}/class/e516-definition.md"
+  - APPENDIX:
+    - FAQ:
+      - "{file.chapter}/faq.md"
+      - "{file.chapter}/faq-516.md"
+    - "{file.chapter}/iaas/aws/products.md"
+    - "{file.chapter}/iaas/azure/products.md"
+    - "{file.chapter}/iaas/futuresystems/futuresystems.md"
+    - CHAMELEON:
+      - "{file.chapter}/cloud/chameleon/resources.md"
+      - "{file.chapter}/cloud/chameleon/hardware.md"
+      - "{file.chapter}/cloud/chameleon/charge.md"
+      - "{file.chapter}/cloud/chameleon/start.md"
+      - "{file.chapter}/cloud/chameleon/user-guide.md"
+      - "{file.chapter}/cloud/chameleon/cli.md"
+      - "{file.chapter}/cloud/chameleon/horizon.md"
+      - "{file.chapter}/cloud/chameleon/heat.md"
+      - "{file.chapter}/cloud/chameleon/baremetal.md"
+      - "{file.chapter}/cloud/chameleon/faq.md"
+    - DRAFTS:
+      - DATA_SERVICES:
+        - "{file.chapter}/in/box.md"
+        - "{file.chapter}/in/aws-documentdb.md"
+        - "{file.chapter}/in/aws-auroradb.md"
+      - AI:
+        - "{file.chapter}/in/ai-rest.md"
+      - LINUX:
+        - "{file.chapter}/in/windows-subsystem-for-linux.md"
+      - DEVOPS:
+        - "{file.chapter}/devops/devops-iac.md"
+      - OTHER:
+        - "{file.chapter}/in/aws-elasticbeanstalk.md"
+        - "{file.chapter}/in/compliance.md"
+        - "{file.chapter}/in/vis.md"
+    - GLOSSARY:
+      - "{file.chapter}/container/glossary.md"
+      - "{file.chapter}/preface/create.md"
+
+# - INDEX:
+#      - "{file.chapter}/index.md"
+#  - "{file.chapter}/SECTION/SECTION-REFERENCES.md"
+
+
+
+
