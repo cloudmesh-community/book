@@ -6,13 +6,13 @@ metadata:
   author: 'Gregor von Laszewski'
   subauthor: "Editor"
   email: "laszewski@gmail.com"
-  url: "https://cloudmesh-community.github.io/book/vonlaszewski-cloud.epub"
+  url: "https://cloudmesh-community.github.io/book/vonlaszewski-draft.epub"
   description: "Proposed Lecture content (subject to change)"
   abstract: "Proposed Lecture content (subject to change)"
   keywords: "Cloud, virtual machines, containers, cloud engenering"
   stylesheet: "epub.css"
   dest: "./dest/book"
-  filename: "vonLaszewski-cloud.epub"
+  filename: "vonLaszewski-draft.epub"
   rights: (c) Gregor von Laszewski, 2018, 2019
 git:
   "community": "https://raw.githubusercontent.com/cloudmesh-community"
@@ -56,6 +56,23 @@ BOOK:
     - "{file.chapter}/devops/devops.md"
     - "{file.chapter}/devops/travis.md"
     - "{file.chapter}/devops/ansible.md"
+  - DRAFTS:
+    - DATA_SERVICES:
+      - "{file.chapter}/in/box.md"
+      - "{file.chapter}/in/aws-documentdb.md"
+      - "{file.chapter}/in/aws-auroradb.md"
+    - AI:
+      - "{file.chapter}/in/ai-rest.md"
+    - LINUX:
+      - "{file.chapter}/in/windows-subsystem-for-linux.md"
+    - DEVOPS:
+      - "{file.chapter}/devops/devops-iac.md"
+    - OTHER:
+      - "{file.chapter}/in/aws-elasticbeanstalk.md"
+      - "{file.chapter}/in/compliance.md"
+      - "{file.chapter}/in/vis.md"
+      - "{file.chapter}/new/amqp.md"
+      - "{file.chapter}/new/osx-tricks.md"
   - ISSUES:
     - "{file.chapter}/issues/issues.md"
   - WEEKLY:
@@ -73,6 +90,18 @@ BOOK:
     - "{file.chapter}/class/e516-summary.md"
     - "{file.chapter}/class/volumes.md"
     - "{file.chapter}/class/e516-definition.md"
+  - GRAPHICS:
+    - "{file.chapter}/doc/graphviz.md"
+  - ART:
+    - "{file.chapter}/art/sentient.md"
+  - OTHER:
+    - "{file.chapter}/class/fall2018.md"
+    - "{file.chapter}/class/syllabus.md"
+    - "{file.chapter}/class/assignments.md"
+    - "{file.chapter}/class/grading.md"
+    - "{file.chapter}/class/project-ideas.md"
+    - "{file.chapter}/doc/piazza.md"
+    - "{file.chapter}/preface/git.md"
   - APPENDIX:
     - FAQ:
       - "{file.chapter}/faq.md"
@@ -91,21 +120,6 @@ BOOK:
       - "{file.chapter}/cloud/chameleon/heat.md"
       - "{file.chapter}/cloud/chameleon/baremetal.md"
       - "{file.chapter}/cloud/chameleon/faq.md"
-    - DRAFTS:
-      - DATA_SERVICES:
-        - "{file.chapter}/in/box.md"
-        - "{file.chapter}/in/aws-documentdb.md"
-        - "{file.chapter}/in/aws-auroradb.md"
-      - AI:
-        - "{file.chapter}/in/ai-rest.md"
-      - LINUX:
-        - "{file.chapter}/in/windows-subsystem-for-linux.md"
-      - DEVOPS:
-        - "{file.chapter}/devops/devops-iac.md"
-      - OTHER:
-        - "{file.chapter}/in/aws-elasticbeanstalk.md"
-        - "{file.chapter}/in/compliance.md"
-        - "{file.chapter}/in/vis.md"
     - GLOSSARY:
       - "{file.chapter}/container/glossary.md"
       - "{file.chapter}/preface/create.md"
