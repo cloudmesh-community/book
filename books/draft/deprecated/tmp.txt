@@ -1,0 +1,66 @@
+######################################################################
+# i516
+######################################################################
+
+#  chapters/iaas/azure/signup.md\
+
+#  chapters/iaas/azure/signup.md\
+
+
+
+
+
+CHAPTER_SERVICES=\
+  chapters/doc/piazza.md\
+ chapters/preface/git.md
+
+
+
+KUBERNETES=\
+ chapters/container/index.md\
+ chapters/container/container.md\
+ chapters/container/docker-fs.md\
+ chapters/container/docker-hadoop-cluster.md\
+ chapters/container/docker-hadoop.md\
+ chapters/container/docker-hadoop3.md\
+ chapters/container/docker-intro.md\
+ chapters/container/docker-local.md\
+ chapters/container/docker-pagerank-example-instruction.md\
+ chapters/container/docker-rest.md\
+ chapters/container/docker-spark.md\
+ chapters/container/docker-swarm.md\
+ chapters/container/exercise.md\
+ chapters/container/glossary.md\
+ chapters/container/kubernetes-fs.md\
+ chapters/container/kubernetes-intro.md\
+ chapters/container/qemu.md\
+
+GO=\
+  chapters/prg/go/go-intro.md\
+  chapters/prg/go/go-install.md\
+  chapters/prg/go/go-editor.md\
+  chapters/prg/go/go-language.md\
+  chapters/prg/go/go-libraries.md\
+  chapters/prg/go/go-cmd.md
+
+
+DRAFT=\
+  $(KUBERNETES)\
+  chapters/msg/mqtt.md\
+  chapters/msg/mqtt1.md\
+  chapters/msg/mqtt2.md\
+  $(GO)
+
+
+CHAPTER_CLASS=\
+ chapters/class/SECTION.md\
+ chapters/class/fall2018.md\
+ chapters/class/syllabus.md\
+ chapters/class/policy.md\
+ chapters/class/assignments.md\
+ chapters/class/grading.md\
+ chapters/class/project-ideas.md
+
+CHAPTER_SERVICES=\
+  chapters/doc/piazza.md\
+ chapters/preface/git.md
