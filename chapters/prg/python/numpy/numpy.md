@@ -330,7 +330,7 @@ linalg library of NumPy as:
 
 ## NumPy Resources
 
-* <https://docs.scipy.org/doc/numpy/>
+* <https://docs.scipy.org/doc/numpy> 
 * <http://cs231n.github.io/python-numpy-tutorial/#numpy>
 * <https://docs.scipy.org/doc/numpy-1.15.1/reference/routines.linalg.html>
 * <https://en.wikipedia.org/wiki/Mean_squared_error>

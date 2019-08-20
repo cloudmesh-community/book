@@ -154,11 +154,11 @@ TODO: Python3
 
 On OSX a good program is to use etcher for burning the images on disk:
 
-* <https://etcher.io/>
+* <https://etcher.io> 
 
 To access it form the commandline you can also use
 
-* <https://etcher.io/cli/>
+* <https://etcher.io/cli> 
 
 #### File System Management
 Unfortunately, the free versions of writing the ext file system are no
@@ -171,7 +171,7 @@ unfortunately only supports read access, see Appendix)
 To easily read and write ext file systems, please install extFS which
 can be downloaded from
 
-* <https://www.paragon-software.com/home/extfs-mac/>
+* <https://www.paragon-software.com/home/extfs-mac> 
 
 The purchase price of the software is $39.95.
 
@@ -209,7 +209,7 @@ It's necessary to burn the raspbian image to the SD card with this executable ma
 
 Download the Open source ext3/4 file system driver for Windows installer from
 
-* <http://www.ext2fsd.com/>
+* <http://www.ext2fsd.com> 
 * Open Ext2fsd exe
 * The burned image in the previous step in SD card will have 2 partition
 * FAT32 partition will be assigned with the Drive letter - Boot Drive
@@ -388,7 +388,7 @@ sudo umount /Volumes/Linux
 
 ### Activate SSH
 
-see method 3 in <https://www.raspberrypi.org/documentation/remote-access/ssh/>
+see method 3 in <https://www.raspberrypi.org/documentation/remote-access/ssh> 
 
 Draft:
 
@@ -407,7 +407,7 @@ change /etc/hostname
 
 ### Activate Network
 
-see <https://www.raspberrypi.org/learning/networking-lessons/rpi-static-ip-address/>
+see <https://www.raspberrypi.org/learning/networking-lessons/rpi-static-ip-address> 
 
 ### Change default password
 

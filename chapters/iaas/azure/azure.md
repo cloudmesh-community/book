@@ -174,7 +174,7 @@ and can not use the services.
 The Azure student account FAQ will likely answer questions you might have pertaining 
 to an Azure Student Account, what you will have access to, how long you will enjoy access, 
 and additional general overview information including terms of the account. 
-<https://azure.microsoft.com/en-us/free/free-account-students-faq/>
+<https://azure.microsoft.com/en-us/free/free-account-students-faq> 
 
 Once you have set up the Azure Student account, you will gain access the Azure environment 
 through the Azure Portal <https://portal.azure.com>. To log in, 
@@ -280,7 +280,7 @@ else stop the VM so that you do not waste resources.
 
 ## Remote access the Virtual Machine 
 To remote access a virtual machine, you can use a client application like Putty: 
-<https://www.putty.org/>.
+<https://www.putty.org> .
 
 To use Putty and access the virtual machine, you can configure DNS name in Azure 
 instead of using an IP. This is performed in the Virtual Machine configuration under 

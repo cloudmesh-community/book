@@ -1,6 +1,4 @@
-# [Preface]{.part}
-
----
+# Learning Objectives
 
 ![](images/learning.png) **Learning Objectives**
 
@@ -8,6 +6,3 @@
 * Learn how to cretae an ePub with our material from source.
 * Introduce elementary notations we use in the ePub's.
 * See who contributed to the ePub's.
-
----
-

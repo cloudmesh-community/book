@@ -1,30 +1,50 @@
+- DEVTOOLS:
+    - "{file.chapter}/linux/refcards.md"
+    - "{file.chapter}/cloud/virtualbox.md"
+    - "{file.chapter}/cloud/vagrant.md"
+    - "{file.chapter}/cloud/packer.md"
+    - "{file.chapter}/os/ubuntu-usb-osx.md"
+    - GITHUB:
+        - "{file.chapter}/git/github.md"
+        - "{file.chapter}/git/gitpullreqest.md"
+        - "{file.chapter}/git/git-tools.md"
+    - "{file.chapter}/linux/linux.md"
+    - "{file.chapter}/linux/ssh.md"
+    - "{file.chapter}/linux/ssh-futuresystems.md"
+    - "{file.chapter}/linux/ssh-excerise.md"
+- DEVOPS:
+    - "{file.chapter}/devops/devops.md"
+    - "{file.chapter}/devops/travis.md"
+    - "{file.chapter}/devops/ansible.md"
+
+
 
 
 - ISSUES:
     - "{file.chapter}/issues/issues.md"
 
-  - WEEKLY:
-    - "{file.chapter}/class/e516-week.md"
-  - QUICKSTART:
-    - "{file.chapter}/quick516.md"
-    - "{file.chapter}/assignment.md"
-    - "{file.chapter}/class/e516-syllabus-table.md"
-  - OVERVIEW:
-    - "{file.chapter}/class/organization-516.md"
-    - "{file.chapter}/class/plagiarism.md"
-    - "{file.chapter}/cloud/gregor.md"
-    - "{file.chapter}/class/e516-engineering-cloud-computing.md"
-    - "{file.chapter}/class/policies.md"
-    - "{file.chapter}/class/e516-summary.md"
-    - "{file.chapter}/class/volumes.md"
-    - "{file.chapter}/class/e516-definition.md"
+    - WEEKLY:
+        - "{file.chapter}/class/e516-week.md"
+    - QUICKSTART:
+        - "{file.chapter}/quick516.md"
+        - "{file.chapter}/assignment.md"
+        - "{file.chapter}/class/e516-syllabus-table.md"
+    - OVERVIEW:
+        - "{file.chapter}/class/organization-516.md"
+        - "{file.chapter}/class/plagiarism.md"
+        - "{file.chapter}/cloud/gregor.md"
+        - "{file.chapter}/class/e516-engineering-cloud-computing.md"
+        - "{file.chapter}/class/policies.md"
+        - "{file.chapter}/class/e516-summary.md"
+        - "{file.chapter}/class/volumes.md"
+        - "{file.chapter}/class/e516-definition.md"
 
-  - OVERVIEW:
-    - "{file.chapter}/class/organization-516.md"
-    - "{file.chapter}/class/plagiarism.md"
-    - "{file.chapter}/cloud/gregor.md"
-    - "{file.chapter}/class/e516-engineering-cloud-computing.md"
-    - "{file.chapter}/class/policies.md"
-    - "{file.chapter}/class/e516-summary.md"
-    - "{file.chapter}/class/volumes.md"
-    - "{file.chapter}/class/e516-definition.md"
+    - OVERVIEW:
+        - "{file.chapter}/class/organization-516.md"
+        - "{file.chapter}/class/plagiarism.md"
+        - "{file.chapter}/cloud/gregor.md"
+        - "{file.chapter}/class/e516-engineering-cloud-computing.md"
+        - "{file.chapter}/class/policies.md"
+        - "{file.chapter}/class/e516-summary.md"
+        - "{file.chapter}/class/volumes.md"
+        - "{file.chapter}/class/e516-definition.md"

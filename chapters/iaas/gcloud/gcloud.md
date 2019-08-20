@@ -338,7 +338,7 @@ Try running a search for App Engine or the name of one of your projects.
 If you ever get stuck, or need help navigating the world of GCP, the Google support team is here to help.
 Access support from the navigation menu.
 
-More information regarding support options and details can be found at: <https://cloud.google.com/support/>
+More information regarding support options and details can be found at: <https://cloud.google.com/support> 
 
 ### Manage users and permissions
 Google Cloud Identity and Access Management (Cloud IAM) enables you to manage and create permissions for your GCP resources.
@@ -346,7 +346,7 @@ As your team continues to grow, you can grant access to teammates using Cloud IA
 Add users, groups, or service accounts and assign them any number of roles to grant them the permissions they need.
 
 Additional resources for Google Cloud Identity and Access Management documentation:
-<https://cloud.google.com/iam/docs/>
+<https://cloud.google.com/iam/docs> 
  
 ### Access the command line from your browser
 Google Cloud Shell provides you with command-line access to your cloud resources directly from your browser. You can easily manage your projects and resources without having to install the Google Cloud SDK or other tools on your system.
@@ -357,7 +357,7 @@ With Cloud Shell, the Cloud SDK gcloud command-line tool and other utilities you
 
 
 Reference to more documented detail about the Cloudshell:
-<https://cloud.google.com/shell/>
+<https://cloud.google.com/shell> 
 
 ## Create a VM Example
 Since we have been exploring virtual machines in this class, I thought that I would provide an additional example explaining how to create a Linux virtual machine instance in Compute Engine using the Google Cloud Platform Console.

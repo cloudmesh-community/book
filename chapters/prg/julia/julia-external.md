@@ -73,11 +73,13 @@ Julia interacts with Java through the use of the JavaCall.jl package.
 return values are callable." [@www-javacall]. 
 
 **Installation**
+
 ```
 Pkg.add("JavaCall")
 ```
 
 **Usage**
+
 ```
 julia> using JavaCall
 

@@ -1,6 +1,4 @@
-# Python Apache Avro :o:
-
-![No](images/no.png)
+# Python Apache Avro
 
 Although Apache Avro is not directly a messaging system, it uses
 messaging to comunicate between components while serializing and
@@ -21,38 +19,30 @@ data with example modified from Apache Avro 1.8.2 Getting Started
 
 ## Download, Unzip and Install
 
-The zipped installation file *avro-1.8.2.tar.gz* could be downloaded
-from
-[here](<http://mirrors.ocf.berkeley.edu/apache/avro/avro-1.8.2/py/>)
+Please download the following zipped file
+[avro-python3-1.8.2.tar.gz](http://mirrors.sonic.net/apache/avro/avro-1.8.2/py3). 
 
-To unzip, using linux:
+Unzip it and conduct the install 
     
-    tar xvf avro-1.8.2.tar.gz
-
-using MacOS:
-
-    gunzip -c avro-1.8.2.tar.gz | tar xopf -
-
-cd into the directory and install using the following:
-
-    cd avro-1.8.2
-    python setup.py install
+```bash
+$ tar xvf avro-1.8.2.tar.gz
+$ cd avro-1.8.2
+$ python setup.py install
+```
 
 To check successful installation, import avro in python without error
 message:
     
-    python
-    >>> import avro
-
-This instruction is for Python2. The Python3 counterpart,
-*avro-python3-1.8.2.tar.gz* could be downloaded from
-[here](<http://mirrors.sonic.net/apache/avro/avro-1.8.2/py3/>) and the unzip and install procedure is the same.
+```bash    
+$ python
+>>> import avro
+```
 
 ## Defining a schema
 
 Use a simple schema for students contributed in cloudmesh as an
 example: paste the following lines into an empty text file with the
-name it *student.avsc*
+name it `student.avsc`
 
     {"namespace": "cloudmesh.avro",
      "type": "record",
@@ -66,11 +56,11 @@ name it *student.avsc*
     }
 
 This schema defines a record representing a hypothetical student,
-which is defined to be a record with the name *Student* and 4 fields,
+which is defined to be a record with the name `Student` and 4 fields,
 namely name, hid, age and project name. The type of each of the field
 needs to be provided. If any field is optional, one could use the list
-including *null* to define the type as shown in age and project name
-in the example schema. Further, a namespace *cloudmesh.avro* is also
+including `null` to define the type as shown in age and project name
+in the example schema. Further, a namespace `cloudmesh.avro` is also
 defined, which together with the name attribute defines the full name
 of the schema (cloudmesh.avro.Student in this case).
 
@@ -102,13 +92,13 @@ data
 The code does the following:
 
 * Imports required modules
-* Reads the schema *student.avsc* (make sure that the schema file is
+* Reads the schema `student.avsc` (make sure that the schema file is
   placed in the same directory as the python code)
-* Create a *DataFileWriter* called writer, for writing serialized
+* Create a `DataFileWriter` called writer, for writing serialized
   items to a data file on disk
-* Use *DataFileWriter.append()* to add data points to the data
+* Use `DataFileWriter.append()` to add data points to the data
   file. Avro records are represented as Python dicts.
-* The resulting data file saved on the disk is named *students.avro*
+* The resulting data file saved on the disk is named `students.avro`
 * This instruction is for Python2. If one is using Python3,
   change
 
@@ -140,7 +130,7 @@ The following python code illustrates deserialization
 The code does the following:
 
 * Imports required modules
-* Use *DatafileReader* to read the serilaized data file
+* Use *DatafileReader* to read the serialized data file
   *students.avro*, it is an iterator
 * Returns the data in a python dict
 

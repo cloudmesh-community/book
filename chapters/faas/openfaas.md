@@ -122,7 +122,7 @@ Installing OpenFaas:
 
 OpenFaaS installation guide can be viewed on this web page:
 
-* <https://docs.openfaas.com/deployment/> 
+* <https://docs.openfaas.com/deployment>  
 
 
 Installing CLI:

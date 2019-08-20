@@ -1,8 +1,8 @@
 NAME=cloud
 
-all: book pdf
+all: epub pdf
 
-book: clean version
+epub: clean version
 	mkdir -p dest
 	bookmanager $(NAME).yaml get
 	mv dest/vonLaszewski-$(NAME).epub ../../docs

@@ -10,9 +10,9 @@ will bring you to the markdown tex, but you will still have to look at
 the [raw content](https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters/preface/notation.md)
 to see the details.
 
-![Github](images/github.png) `![Github](images/github.png)`
+:cloud: or ![Github](images/github.png) `![Github](images/github.png)`
 
-> If you click on the ![Github](images/github.png) in a heading, you can go directly to the >
+> If you click on the :cloud: or ![Github](images/github.png) in a heading, you can go directly to the >
 document in github that contains the next content. This is > convenient
 to fix errors or make additions to the content. The cloud will be
 automatically added upon inclusion of a new markdown file that includes

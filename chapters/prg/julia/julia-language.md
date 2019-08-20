@@ -20,7 +20,7 @@
 Because Julia is a relatively new programming language and documentation is
 sparse, much of this chapter has been adapted from <[https://julialang.org>[@www-julialang]
 
-## Introduction:
+## Introduction
 
 Julia is a high-performance computing language designed by Alan Edelman,
 Jeff Bezanson, Stefan Karpinski, and Viral Shah. Released in 2012, Julia was
@@ -49,6 +49,7 @@ work very well with each other" [@www-epubs-siam].
 
 
 ### Development Environments
+
 In line with Julia's hybrid DNA of compiled and dynamic languages, a user can
 either type commands into a shell, or create programs in a file with a .jl
 extension, and call the files externally. Other editors and IDEs are also
@@ -75,7 +76,10 @@ execute the following commands:
 [@getting-started] ![No](images/no.png) ambiguous ref label
 
 
-## Multiple Dispatch: 
+## Multiple Dispatch
+
+:o: THis section is empty
+
 ## Parallel Language Constructs
 
 * Missing Values
@@ -87,7 +91,8 @@ execute the following commands:
 
 * Environment variables
 
-### Spark:
+### Spark
+
 Spark and Julia have constructed an interface through the Spark.jl package. The
 package "supports running pure Julia scripts on Julia data structures while
 utilizing the data and code distribution capabilities of Apache Spark."
@@ -102,21 +107,24 @@ println(response)
 
 ## OpenStack in Julia
 
-TBD
+:o: TBD
 
 
 	
 
 ## Azure in Julia
 
-TBD
+:o: TBD there is a separate file for this, maybe we should remove teh file?
 
 ## FaaS in Julia
 
-## References:
+:o: TBD
+
+## References
+
 * [https://julialang.org/](https://julialang.org)[@www-julialang]
 * <https://discourse.julialang.org/t/implement-a-rest-server-in-julia/9117>
 * <https://codehandbook.org/make-rest-api-calls-julia/>
 * <https://github.com/essenciary/Genie.j}
 
-![No](images/no.png) ref labels are missing 
+![No](images/no.png) bibtex  missing 

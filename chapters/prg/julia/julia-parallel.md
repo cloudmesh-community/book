@@ -1,9 +1,9 @@
-## Parallel Computing
+# Parallel Computing
 
 Though not intended as a replacement for Hadoop, parallelism in Julia is fairly
 straight-forward. [www-wired]
 
-### Coroutines or Tasks. 
+## Coroutines or Tasks
 
 Julia is optimized for high performance computing in a distributed environment.
 
@@ -80,11 +80,15 @@ julia> @elapsed while n > 0
 	end
 ```
 
-### Multi-threading
+## Multi-threading
 
-### Green-threading
+:o:
 
-### Hadoop and Julia:
+## Green-threading
+
+:o:
+
+## Hadoop and Julia
 
 While development and interactivity between Spark, Hadoop, and Julia is also
 optimized for high performance computing in a distributed environment. While
