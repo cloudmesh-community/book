@@ -21,15 +21,17 @@ git:
 file:
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
-  "base": "../../chapter"
+  "base": "../../chapters"
 BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"
+    - "{file.chapter}/preface/learning.md"
     - "{file.chapter}/preface/reader.md"
     - "{file.chapter}/preface/corrections.md"
     - "{file.chapter}/authors.md"
     - "{file.chapter}/preface/notation.md"
     - "{file.chapter}/preface/updates.md"
+  - "file://./overview.md"
   - DATACENTER:
     - "{file.chapter}/cloud/datacenter.md"
   - ARCHITECTURE:
@@ -79,8 +81,6 @@ BOOK:
         - "{file.chapter}/mapreduce/twister.md"
         - "{file.chapter}/mapreduce/twister-installation.md"
         - "{file.chapter}/mapreduce/twister2-example.md"
-      - HARP:
-        - "{file.chapter}/mapreduce/harp.md"
       - RDMA:
         - "{file.chapter}/mapreduce/hadoop-rdma.md"
   - CONTAINER:
@@ -91,7 +91,7 @@ BOOK:
       - "{file.chapter}/container/dockerfile.md"
       - "{file.chapter}/container/dockerhub.md"
     - DOCKER_PAAS:
-      - "{file.chapter}/SECTION/SECTION-DOCKER-PAAS.md"
+        - "{file.chapter}/container/SECTION-DOCKER-PAAS.md"
       - "{file.chapter}/container/docker-swarm.md"
       - "{file.chapter}/container/docker-fs.md"
       - "{file.chapter}/container/docker-hadoop.md"
@@ -102,24 +102,6 @@ BOOK:
       - "{file.chapter}/container/kubernetes-fs.md"
     - "{file.chapter}/container/singularity/singularity.md"
     - "{file.chapter}/container/exercise.md"
-    - DEVTOOLS:
-      - "{file.chapter}/linux/refcards.md"
-      - "{file.chapter}/cloud/virtualbox.md"
-      - "{file.chapter}/cloud/vagrant.md"
-      - "{file.chapter}/cloud/packer.md"
-      - "{file.chapter}/os/ubuntu-usb-osx.md"
-      - GITHUB:
-        - "{file.chapter}/git/github.md"
-        - "{file.chapter}/git/gitpullreqest.md"
-        - "{file.chapter}/git/git-tools.md"
-      - "{file.chapter}/linux/linux.md"
-      - "{file.chapter}/linux/ssh.md"
-      - "{file.chapter}/linux/ssh-futuresystems.md"
-      - "{file.chapter}/linux/ssh-excerise.md"
-    - DEVOPS:
-      - "{file.chapter}/devops/devops.md"
-      - "{file.chapter}/devops/travis.md"
-      - "{file.chapter}/devops/ansible.md"
     - SERVERLESS:
       - "{file.chapter}/faas/introduction.md"
       - "{file.chapter}/faas/aws-lambda.md"
@@ -128,13 +110,18 @@ BOOK:
       - "{file.chapter}/faas/microsoft-azure-functions.md"
       - "{file.chapter}/faas/google-cloud-functions.md"
       - "{file.chapter}/faas/openfaas.md"
-      - "{file.chapter}/faas/riff.md"
-      - "{file.chapter}/faas/fission.md"
-      - "{file.chapter}/faas/ironfunction.md"
-      - "{file.chapter}/faas/fn.md"
-      - "{file.chapter}/faas/gestalt.md"
       - "{file.chapter}/faas/openlambda.md"
-      - "{file.chapter}/faas/spring-cloud-function.md"
+  #      - "{file.chapter}/faas/riff.md"
+  #      - "{file.chapter}/faas/fission.md"
+  #      - "{file.chapter}/faas/ironfunction.md"
+  #     - "{file.chapter}/faas/fn.md"
+  #      - "{file.chapter}/faas/gestalt.md"
+  #      - "{file.chapter}/faas/spring-cloud-function.md"
+  - MESSAGING:
+      - "{file.chapter}/msg/mqtt.md"
+      - "{file.chapter}/msg/graphql.md"
+      - "{file.chapter}/msg/avro.md"
+  #    - "{file.chapter}/msg/flink.md"
   - GO:
     - "{file.chapter}/prg/go/go-intro.md"
     - "{file.chapter}/prg/go/go-install.md"
@@ -147,56 +134,15 @@ BOOK:
     - "{file.chapter}/prg/go/go-cloud.md"
     - "{file.chapter}/prg/go/go-links.md"
   - JULIA:
+      - "{file.chapter}/prg/julia/julia-aws.md"
+      - "{file.chapter}/prg/julia/julia-azure.md"
+      - "{file.chapter}/prg/julia/julia-docopts.md"
+      - "{file.chapter}/prg/julia/julia-external.md"
+      - "{file.chapter}/prg/julia/julia-ide.md"
+      - "{file.chapter}/prg/julia/julia-install.md"
     - "{file.chapter}/prg/julia/julia-language.md"
-  - SCALA:
-    - "{file.chapter}/prg/scala/scala.md"
-  - MSG:
-    - "{file.chapter}/MSG.md"
-    - "{file.chapter}/msg/mqtt.md"
-    - "{file.chapter}/msg/graphql.md"
-    - "{file.chapter}/msg/avro.md"
-    - "{file.chapter}/msg/flink.md"
-  - FAQ:
-      - "{file.chapter}/faq.md"
-      - "{file.chapter}/faq-516.md"
-  - APPENDIX:
-    - "{file.chapter}/iaas/aws/products.md"
-    - "{file.chapter}/iaas/azure/products.md"
-    - "{file.chapter}/iaas/futuresystems/futuresystems.md"
-    - CHAMELEON:
-      - "{file.chapter}/cloud/chameleon/resources.md"
-      - "{file.chapter}/cloud/chameleon/hardware.md"
-      - "{file.chapter}/cloud/chameleon/charge.md"
-      - "{file.chapter}/cloud/chameleon/start.md"
-      - "{file.chapter}/cloud/chameleon/user-guide.md"
-      - "{file.chapter}/cloud/chameleon/cli.md"
-      - "{file.chapter}/cloud/chameleon/horizon.md"
-      - "{file.chapter}/cloud/chameleon/heat.md"
-      - "{file.chapter}/cloud/chameleon/baremetal.md"
-      - "{file.chapter}/cloud/chameleon/faq.md"
-    - DRAFTS:
-      - DATA_SERVICES:
-        - "{file.chapter}/in/box.md"
-        - "{file.chapter}/in/aws-documentdb.md"
-        - "{file.chapter}/in/aws-auroradb.md"
-      - AI:
-        - "{file.chapter}/in/ai-rest.md"
-      - LINUX:
-        - "{file.chapter}/in/windows-subsystem-for-linux.md"
-      - DEVOPS:
-        - "{file.chapter}/devops/devops-iac.md"
-      - OTHER:
-        - "{file.chapter}/in/aws-elasticbeanstalk.md"
-        - "{file.chapter}/in/compliance.md"
-        - "{file.chapter}/in/vis.md"
-    - GLOSSARY:
-      - "{file.chapter}/container/glossary.md"
-      - "{file.chapter}/preface/create.md"
-
-# - INDEX:
-#      - "{file.chapter}/index.md"
-#  - "{file.chapter}/SECTION/SECTION-REFERENCES.md"
-
-
-
-
+      - "{file.chapter}/prg/julia/julia-modules.md"
+      - "{file.chapter}/prg/julia/julia-network.md"
+      - "{file.chapter}/prg/julia/julia-opttype.md"
+      - "{file.chapter}/prg/julia/julia-parallel.md"
+      - "{file.chapter}/prg/julia/julia-rest.md"

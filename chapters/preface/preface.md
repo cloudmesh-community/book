@@ -4,6 +4,8 @@ This collection of documents will help in creating cloud based
 clusters and as part of the classes taught it IU.
 
 
+
+
 ## Notation
 
 ![Github](images/github.png)

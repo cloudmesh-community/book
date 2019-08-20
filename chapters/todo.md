@@ -13,7 +13,7 @@ sentence. Please be brief.
 Additional items we like to work on are listed here
 
 -   OpenFaaS
-    <https://blog.alexellis.io/your-serverless-raspberry-pi-cluster/>
+    <https://blog.alexellis.io/your-serverless-raspberry-pi-cluster> 
 -   Git: integrate <https://git-scm.com/book/en/v2>
 
     -   [[PDF](https://github.com/progit/progit2/releases/download/2.1.61/progit.pdf)]
@@ -83,15 +83,15 @@ Laszewski, Fall 2017](https://github.com/laszewski/laszewski.github.io/raw/maste
 
 ### Tutorial about spark and kubernetes
 
--   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-1/>
--   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-2/>
--   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-3/>
--   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-4/>
--   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-5/>
--   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-6/>
--   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-7/>
--   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-8/>
--   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-9/>
+-   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-1> 
+-   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-2> 
+-   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-3> 
+-   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-4> 
+-   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-5> 
+-   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-6> 
+-   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-7> 
+-   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-8> 
+-   <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-9> 
     This could naturally be the basis of your project. However you can
     not just paste and copy, you need to write it as a section and not
     use the word tutorial. You need to make meaningful modifications or

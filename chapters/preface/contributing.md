@@ -10,15 +10,19 @@ Content can be contributed via pull requests that are either created
 while you directly edit the content via the github Web interface, or a
 cloned version of the document. 
 
-For simplicity we focus on contribution via the Web interface.
-Naturally you need to have a github.com account and login. After you
-have found a text that you like to improve, please edit it via the
-Web interface and than generate a pull request. We will than review the
-request and approve or comment on it. To make it even easier the ebook
-contains cloud symbols (![Github](images/github.png)) that indicate the start of a document
-that you can modify. You can simply click on it and you will be automatically
-redirected the the file for editing. As you can see it is rather
-simple.
+For simplicity we focus on contribution via the Web interface. Naturally
+you need to have a github.com account and login. After you have found a
+text that you like to improve, please edit it via the Web interface and
+than generate a pull request. We will than review the request and
+approve or comment on it. To make it even easier the ebook contains 
+
+* cloud :cloud: or 
+* github ![Github](images/github.png) 
+
+symbols that
+indicate the start of a document that you can modify. You can simply
+click on it and you will be automatically redirected the the file for
+editing. As you can see it is rather simple.
 
 In case you clone and use command line or other GUI tools, please
 create a pull request for each fix. Remember multiple students work in
