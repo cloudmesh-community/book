@@ -28,29 +28,13 @@ BOOK:
     - "{file.chapter}/preface/reader.md"
     - "{file.chapter}/preface/corrections.md"
     - "{file.chapter}/authors.md"
-    - "{file.chapter}/preface/create.md"
     - "{file.chapter}/preface/notation.md"
     - "{file.chapter}/preface/updates.md"
-  - ISSUES:
-    - "{file.chapter}/issues/issues.md"
-  - WEEKLY:
-    - "{file.chapter}/class/e516-week.md"
-  - QUICKSTART:
-    - "{file.chapter}/quick516.md"
-    - "{file.chapter}/assignment.md"
-    - "{file.chapter}/class/e516-syllabus-table.md"
-  - OVERVIEW:
-    - "{file.chapter}/class/organization-516.md"
-    - "{file.chapter}/class/plagiarism.md"
-    - "{file.chapter}/cloud/gregor.md"
-    - "{file.chapter}/class/e516-engineering-cloud-computing.md"
-    - "{file.chapter}/class/policies.md"
-    - "{file.chapter}/class/e516-summary.md"
-    - "{file.chapter}/class/volumes.md"
-  - "{file.chapter}/class/e516-definition.md"
-  - "{file.chapter}/cloud/datacenter.md"
-  - "{file.chapter}/arch.md"
-  - "{file.chapter}/nist/bdra.md"
+  - DATACENTER:
+    - "{file.chapter}/cloud/datacenter.md"
+  - ARCHITECTURE:
+    - "{file.chapter}/arch.md"
+    - "{file.chapter}/nist/bdra.md"
   - REST:
     - "{file.chapter}/rest/rest.md"
     - "{file.chapter}/rest/swagger.md"
@@ -88,15 +72,18 @@ BOOK:
       - "{file.chapter}/mapreduce/spark-streaming.md"
       - "{file.chapter}/mapreduce/spark-udf.md"
     - HADOOP_ECOSYSTEM:
-      - "{file.chapter}/mapreduce/amazon-emr-1.md"
-      - "{file.chapter}/mapreduce/amazon-emr-2.md"
-      - "{file.chapter}/mapreduce/twister.md"
-      - "{file.chapter}/mapreduce/twister-installation.md"
-      - "{file.chapter}/mapreduce/twister2-example.md"
-      - "{file.chapter}/mapreduce/harp.md"
-      - "{file.chapter}/mapreduce/hadoop-rdma.md"
+      - ELASTIC_MAP_REDUCE:
+        - "{file.chapter}/mapreduce/aws-emr.md"
+        - "{file.chapter}/mapreduce/amazon-emr-1.md"
+      - TWISTER:
+        - "{file.chapter}/mapreduce/twister.md"
+        - "{file.chapter}/mapreduce/twister-installation.md"
+        - "{file.chapter}/mapreduce/twister2-example.md"
+      - HARP:
+        - "{file.chapter}/mapreduce/harp.md"
+      - RDMA:
+        - "{file.chapter}/mapreduce/hadoop-rdma.md"
   - CONTAINER:
-    - "{file.chapter}/SECTION/SECTION-CONTAINER.md"
     - "{file.chapter}/container/container.md"
     - DOCKER:
       - "{file.chapter}/container/docker-intro.md"
@@ -159,8 +146,10 @@ BOOK:
     - "{file.chapter}/prg/go/go-openapi.md"
     - "{file.chapter}/prg/go/go-cloud.md"
     - "{file.chapter}/prg/go/go-links.md"
-  - "{file.chapter}/prg/julia/julia-language.md"
-  - "{file.chapter}/prg/scala/scala.md"
+  - JULIA:
+    - "{file.chapter}/prg/julia/julia-language.md"
+  - SCALA:
+    - "{file.chapter}/prg/scala/scala.md"
   - MSG:
     - "{file.chapter}/MSG.md"
     - "{file.chapter}/msg/mqtt.md"
@@ -185,18 +174,26 @@ BOOK:
       - "{file.chapter}/cloud/chameleon/heat.md"
       - "{file.chapter}/cloud/chameleon/baremetal.md"
       - "{file.chapter}/cloud/chameleon/faq.md"
-    - "{file.chapter}/container/glossary.md"
     - DRAFTS:
-      - "{file.chapter}/in/box.md"
-      - "{file.chapter}/in/ai-rest.md"
-      - "{file.chapter}/in/aws-auroradb.md"
-      - "{file.chapter}/in/aws-documentdb.md"
-      - "{file.chapter}/in/aws-elasticbeanstalk.md"
-      - "{file.chapter}/in/compliance.md"
-      - "{file.chapter}/in/vis.md"
-      - "{file.chapter}/in/windows-subsystem-for-linux.md"
-      - "{file.chapter}/devops/devops-iac.md"
-#    - INDEX:
+      - DATA_SERVICES:
+        - "{file.chapter}/in/box.md"
+        - "{file.chapter}/in/aws-documentdb.md"
+        - "{file.chapter}/in/aws-auroradb.md"
+      - AI:
+        - "{file.chapter}/in/ai-rest.md"
+      - LINUX:
+        - "{file.chapter}/in/windows-subsystem-for-linux.md"
+      - DEVOPS:
+        - "{file.chapter}/devops/devops-iac.md"
+      - OTHER:
+        - "{file.chapter}/in/aws-elasticbeanstalk.md"
+        - "{file.chapter}/in/compliance.md"
+        - "{file.chapter}/in/vis.md"
+    - GLOSSARY:
+      - "{file.chapter}/container/glossary.md"
+      - "{file.chapter}/preface/create.md"
+
+# - INDEX:
 #      - "{file.chapter}/index.md"
 #  - "{file.chapter}/SECTION/SECTION-REFERENCES.md"
 

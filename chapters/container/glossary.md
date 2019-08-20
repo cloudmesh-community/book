@@ -1,4 +1,6 @@
-# Glossary ![No](images/no.png) ![Question](images/question.png)
+# Glossary :o:
+
+![No](images/no.png) ![Question](images/question.png)
 
 
 ## VM and Container

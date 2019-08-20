@@ -1,4 +1,6 @@
-# Cloud Computing ![No](images/no.png)
+# Cloud Computing :o:
+
+![No](images/no.png)
 
 We describe the central role of Parallel computing in Clouds and Big
 Data which is decomposed into lots of *Little data* running in

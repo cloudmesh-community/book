@@ -1143,7 +1143,9 @@ Some thought on this include:
 
 Find more about this at [@nytimes-datacenter]
 
-## Renewable Energy for Data Centers ![No](images/no.png) {#sec:energy-renewable}
+## Renewable Energy for Data Centers :o:
+
+![No](images/no.png) {#sec:energy-renewable}
 
 Explain the principal and showcase some examples:
 
@@ -1164,7 +1166,9 @@ Energy Storage:
 * Batteries
 * Store energy in other forms
 
-## Societal Shift Towards Renewables ![No](images/no.png) {#sec:energy-society}
+## Societal Shift Towards Renewables :o:
+
+![No](images/no.png){#sec:energy-society}
 
 Document the efforts used in society to work towards renewable
 energies. THis includes government efforts to support renewable in
@@ -1182,7 +1186,9 @@ See also
 
 * <https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
 
-## Datacenter Risks and Issues ![No](images/no.png) 
+## Datacenter Risks and Issues :o:
+
+![No](images/no.png) 
 
 Data Centers may be encounter issues such as outages of a variety of
 reasons. In this section you will identify risks and issues that you

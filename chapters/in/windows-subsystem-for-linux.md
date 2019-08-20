@@ -1,1 +1,5 @@
-# Windows Subsystem for Linux ![No](images/no.png) ![Construction](images/construction.png)
+# Windows Subsystem for Linux :o:
+
+![No](images/no.png) 
+![Construction](images/construction.png)
+

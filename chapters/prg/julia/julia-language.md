@@ -1,4 +1,6 @@
-# Introduction to Julia for High Performance Computing ![No](images/no.png)
+# Introduction to Julia for High Performance Computing :o:
+
+![No](images/no.png)
 
 ---
 

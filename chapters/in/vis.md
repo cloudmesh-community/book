@@ -1,4 +1,6 @@
-# Visualization ![No](images/no.png) 
+# Visualization :o:
+
+![No](images/no.png) 
 
 All tools must be free.
 

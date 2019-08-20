@@ -1,4 +1,8 @@
-# Packer ![Construction](images/construction.png) ![No](images/no.png)
+# Packer :o:
+
+![Construction](images/construction.png) :o:
+
+![No](images/no.png)
 
 Packer is an open source tool for creating identical machine images
 for multiple platforms from a single source configuration. Packer runs

@@ -490,7 +490,9 @@ $ pip install cm-community
 and this library will be installed for you.
 
 
-## Amazon Simple Storage Service S3 via libcloud ![No](images/no.png)
+## Amazon Simple Storage Service S3 via libcloud :o:
+
+![No](images/no.png)
 
 Next we explain how to use Amazon Web Services (AWS) S3 via
 libcloud. Apache libcloud is a python library that provides

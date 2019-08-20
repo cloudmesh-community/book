@@ -1,4 +1,6 @@
-## IU 100 Node Cluster Case ![No](images/no.png)
+## IU 100 Node Cluster Case :o:
+
+![No](images/no.png)
 
 At Indiana University we have currently about 200 Raspberry Pi's
 available for students that work with us as part of classes.

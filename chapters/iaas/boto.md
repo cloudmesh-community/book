@@ -1,7 +1,10 @@
-# AWS Boto ![Construction](images/construction.png)
+# AWS Boto :o:
 
+![Construction](images/construction.png)
 
-Boto is a software development kit (SDK) that provides AWS interface for Python applications. It enables to write applications in Python that make use of Amazon Web Services.
+Boto is a software development kit (SDK) that provides AWS interface for Python
+applications. It enables to write applications in Python that make use of Amazon
+Web Services.
 
 
 Boto supports different AWS services such as, Elastic Compute Cloud (EC2),
@@ -54,8 +57,9 @@ $ python setup.py install
 
 ## Access key
 
-An initial setup is required to be able to access AWS EC2 from BOTO wherein you provide the key and region details. 
-You can find the key details from IAM console on AWS.
+An initial setup is required to be able to access AWS EC2 from BOTO wherein you
+provide the key and region details. You can find the key details from IAM
+console on AWS.
 	
 ## Boto configuration
 
@@ -70,7 +74,8 @@ aws_access_key_id = <YOUR_ACCESS_KEY>
 aws_secret_access_key = <YOUR_SECRET_KEY>
 ```
 
-Similar to libcloud, BOTO also requires the region where you would create your EC2 instance, the same can be maintained by creating a config file.
+Similar to libcloud, BOTO also requires the region where you would create your
+EC2 instance, the same can be maintained by creating a config file.
 
 ```bash
 	$ emacs .aws/config
@@ -172,7 +177,8 @@ connection.terminate_instances(instance_ids=['<id1>','<id2>', ..])
 
 ### Reboot instances
 
-The next example showcases how to reboot an instance, which is copied from  <http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html>
+The next example showcases how to reboot an instance, which is copied from 
+<http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html>
 
 ```python
 # Code copied form 

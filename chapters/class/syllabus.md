@@ -1,4 +1,6 @@
-## Syllabus ![No](images/no.png)
+## Syllabus :o:
+
+![No](images/no.png)
 
 > ![Warning](images/warning.png) *This document is under construction and will change.*
 

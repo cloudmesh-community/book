@@ -1,4 +1,6 @@
-# SLURM ![No](images/no.png)
+# SLURM :o:
+
+![No](images/no.png)
 
 This may be inspiring
 

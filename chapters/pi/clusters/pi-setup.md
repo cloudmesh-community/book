@@ -1,5 +1,7 @@
 
-## Preparing the SD card ![No](images/no.png)
+## Preparing the SD card :o:
+
+![No](images/no.png)
 
 TODO: We should at this time assume we have an OS.
 
@@ -11,14 +13,18 @@ Download the latest Raspbian Jessie Lite image from
 Please note that Raspbian Jessie Lite image contains the only the bare
 minimum amount of packages.
 
-## Download Etcher ![No](images/no.png)
+## Download Etcher :o:
 
-	https://etcher.io/
+![No](images/no.png)
+
+* <https://etcher.io/>
 
 Now follow the instructions in Etcher to flash Raspbian image on the
 SD card.  Before ejecting the SD card do the following.
 
-## Enable SSH on the SD Card ![No](images/no.png)
+## Enable SSH on the SD Card :o:
+
+![No](images/no.png)
 
 To prevent Raspberry Pis from being hacked the RPi foundation have now
 disabled SSH on the default image. So, create a text file in /boot/
@@ -30,7 +36,9 @@ extension.
 
 Now insert the SD card, networking and power etc.
 
-## Starting Pi ![No](images/no.png) 
+## Starting Pi :o:
+
+![No](images/no.png) 
 
 Once you boot up the Raspberry Pi, Connect using SSH
 

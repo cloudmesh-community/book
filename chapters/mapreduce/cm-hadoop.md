@@ -1,4 +1,6 @@
-# Hadoop Virtual Cluster Installation Using Cloudmesh ![No](images/no.png)
+# Hadoop Virtual Cluster Installation Using Cloudmesh :o:
+
+![No](images/no.png)
 
 > ![Warning](images/warning.png) *This version is dependent on an older version of cloudmesh.*
 

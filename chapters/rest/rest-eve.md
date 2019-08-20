@@ -521,7 +521,9 @@ these information into an string then populate a class called Computer
 and try to save the object like wise.
 
 
-## Towards cmd5 extensions to manage eve and mongo ![No](images/no.png)
+## Towards cmd5 extensions to manage eve and mongo :o:
+
+![No](images/no.png)
 
 > ![Warning](images/warning.png) *Part of this section related to management of the mongo db
 > serviceis done by the cm4 command we will be developping as part of
