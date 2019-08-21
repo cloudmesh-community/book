@@ -42,21 +42,28 @@ Mainframe computing is using the larger and more reliable computers,
 like IBM System z9, to run the critical applications, bulk data processing,
 enterprise resource planning and business transaction procesings.
 
-Mainframe Computing refers to
+> According to [Wikipedia](https://en.wikipedia.org/wiki/Mainframe_comp),
+> the term mainframe originally referred to the large cabinets called
+> "main frames" that housed the central processing unit and main memory of
+> early computers. 
+> Later, the term was used to distinguish high-end
+> commercial machines from less powerful units. Most large-scale computer
+> system architectures were established in the 1960s, but continue to
+> evolve. Mainframe computers are used primarily by large organizations
+> for critical applications; bulk data processing, such as census,
+> industry and consumer statistics, enterprise resource planning; and
+> transaction processing. The term originally referred to the large
+> cabinets called "main frames" that housed the central processing unit
+> and main memory of early computers.
 
-![No](images/no.png) this definition could beimproved
-
->According to Wikipedia, The term mainframe originally referred to the large cabinets called "main frames" that housed the central processing unit and main memory of early computers.
-Later, the term was used to distinguish high-end commercial machines from less powerful units.
-Most large-scale computer system architectures were established in the 1960s, but continue to evolve.
-Mainframe computers are used primarily by large organizations for critical applications; bulk data processing, such as census, industry and consumer statistics, enterprise resource planning; and transaction processing.
-The term originally referred to the large cabinets called "main frames" that housed the central processing unit and main memory of early computers. More detail can be found where this detail was sourced:(https://en.wikipedia.org/wiki/Mainframe_comp).
-
-Some key attributes of MainFrames can be found in the following article (https://itstillworks.com/characteristics-of-a-mainframe-computer-10270.html)as well as are mentioned below:
-> Size, Speed and Throughput, Power Requirements, Environmental Requirements, and Operating System.
-> computers which have inbuilt redundency resulting in high reliability and security. These computers
-> support high I/O, high computation via virtualization and hot swapping of hardware, which help
-> these machines to run without faliure for years.
+Some key attributes of Mainframes that disstingishes it from other
+computers include its larger size, speed, throughput, power and
+environmental requirements, and pperating system. Furthermore, we find
+that they have  inbuilt redundency to address high uptimes as required
+by buisiness applications. Even some of the eraliest Mainfraims
+supported fast I/O and computation via virtualization. The concept of
+hot swapping of hardware help these machines to run without faliure for
+years.
 
 ### PC Computing
 

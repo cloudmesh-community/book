@@ -11,7 +11,9 @@
 * Learn how access virtual machines from Go
 * Learn how to interface with kubernetes in Go
 
-![Go Logo](images/Go-Logo-Aqua.svg)
+---
+
+![Go Logo](images/Go-Logo-Aqua.png)
 
 
 Go is a programming language that has been introduced by Google to

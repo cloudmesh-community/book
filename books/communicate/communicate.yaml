@@ -17,6 +17,7 @@ git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
 file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
@@ -28,4 +29,5 @@ BOOK:
     - "{file.chapter}//preface/git.md"
   - PRESENTATIONS:
     - "{file.chapter}//doc/ppt.md"
-#  - REFERENCES:
+  - REFERENCES:
+      - "{file.bookmanager}/empty.md"
