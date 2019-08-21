@@ -18,6 +18,7 @@ git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
 file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
@@ -65,3 +66,5 @@ BOOK:
   - APPLICATIONS:
       - "{file.chapter}/prg/python/fingerprint/fingerprint.md"
       - "{file.chapter}/prg/python/facedetection/facedetection.md"
+  - REFERENCES:
+      - "{file.bookmanager}/empty.md"

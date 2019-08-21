@@ -33,12 +33,12 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 `[@las14cloudmeshmultiple]`. References must be added to the
 `refernces.bib` file in BibTex format.
 
-[![No](images/no.png)]()
+:o: or [![No](images/no.png)]()
 
 > Chapters marked with this emoji are not yet complete or have some
 > issue that we know about. These chapters need to be fixed. If you like
 > to help us fixing this section, please let us know. Use it in markdown
-> with `![No](images/no.png)`.
+> with `:o:` or if you like to use the image with `![No](images/no.png)`.
 
 
 [![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U) 

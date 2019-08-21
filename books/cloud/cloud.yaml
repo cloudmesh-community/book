@@ -19,6 +19,7 @@ git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
 file:
+  "bookmanager": "file://../../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
@@ -49,6 +50,7 @@ BOOK:
     - "{file.chapter}/rest/rest-eve-extensions.md"
     - "{file.chapter}/rest/rest-django.md"
     - "{file.chapter}/prg/github.md"
+  - "{file.chapter}/graphql/graphql.md"
   - HYPERVISOR:
     - "{file.chapter}/cloud/virtualization.md"
     - "{file.chapter}/cloud/qemu.md"
@@ -81,8 +83,7 @@ BOOK:
         - "{file.chapter}/mapreduce/twister.md"
         - "{file.chapter}/mapreduce/twister-installation.md"
         - "{file.chapter}/mapreduce/twister2-example.md"
-      - RDMA:
-        - "{file.chapter}/mapreduce/hadoop-rdma.md"
+      - "{file.chapter}/mapreduce/hadoop-rdma.md"
   - CONTAINER:
     - "{file.chapter}/container/container.md"
     - DOCKER:
@@ -102,26 +103,25 @@ BOOK:
       - "{file.chapter}/container/kubernetes-fs.md"
     - "{file.chapter}/container/singularity/singularity.md"
     - "{file.chapter}/container/exercise.md"
-    - SERVERLESS:
-      - "{file.chapter}/faas/introduction.md"
-      - "{file.chapter}/faas/aws-lambda.md"
-      - "{file.chapter}/faas/openwhisk.md"
-      - "{file.chapter}/faas/kubeless.md"
-      - "{file.chapter}/faas/microsoft-azure-functions.md"
-      - "{file.chapter}/faas/google-cloud-functions.md"
-      - "{file.chapter}/faas/openfaas.md"
-      - "{file.chapter}/faas/openlambda.md"
-  #      - "{file.chapter}/faas/riff.md"
-  #      - "{file.chapter}/faas/fission.md"
-  #      - "{file.chapter}/faas/ironfunction.md"
-  #     - "{file.chapter}/faas/fn.md"
-  #      - "{file.chapter}/faas/gestalt.md"
-  #      - "{file.chapter}/faas/spring-cloud-function.md"
+  - SERVERLESS:
+    - "{file.chapter}/faas/introduction.md"
+    - "{file.chapter}/faas/aws-lambda.md"
+    - "{file.chapter}/faas/openwhisk.md"
+    - "{file.chapter}/faas/kubeless.md"
+    - "{file.chapter}/faas/microsoft-azure-functions.md"
+    - "{file.chapter}/faas/google-cloud-functions.md"
+    - "{file.chapter}/faas/openfaas.md"
+    - "{file.chapter}/faas/openlambda.md"
+##      - "{file.chapter}/faas/riff.md"
+##      - "{file.chapter}/faas/fission.md"
+##      - "{file.chapter}/faas/ironfunction.md"
+##     - "{file.chapter}/faas/fn.md"
+##      - "{file.chapter}/faas/gestalt.md"
+##      - "{file.chapter}/faas/spring-cloud-function.md"
   - MESSAGING:
-      - "{file.chapter}/msg/mqtt.md"
-      - "{file.chapter}/msg/graphql.md"
-      - "{file.chapter}/msg/avro.md"
-  #    - "{file.chapter}/msg/flink.md"
+    - "{file.chapter}/msg/mqtt.md"
+    - "{file.chapter}/msg/avro.md"
+##     - "{file.chapter}/msg/flink.md"
   - GO:
     - "{file.chapter}/prg/go/go-intro.md"
     - "{file.chapter}/prg/go/go-install.md"
@@ -133,3 +133,5 @@ BOOK:
     - "{file.chapter}/prg/go/go-openapi.md"
     - "{file.chapter}/prg/go/go-cloud.md"
     - "{file.chapter}/prg/go/go-links.md"
+  - REFERENCES:
+      - "{file.bookmanager}/empty.md"

@@ -18,6 +18,7 @@ git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
 file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-222/book/blob/master/chapters"
   "base": "../../chapters"
@@ -75,3 +76,5 @@ BOOK:
     - "{file.chapter}/faq-523.md"
   - GLOSSARY:
     - "{file.chapter}/container/glossary.md"
+  - REFERENCES:
+      - "{file.bookmanager}/empty.md"

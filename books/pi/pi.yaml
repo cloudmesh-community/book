@@ -18,6 +18,7 @@ git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
 file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
@@ -69,6 +70,7 @@ BOOK:
       - "{file.chapter}/pi/clusters/pi-configure-cluster.md"
       - "{file.chapter}/pi/clusters/pi-setup.md"
       - "{file.chapter}/pi/car/car-face.md"
-
+  - REFERENCES:
+      - "{file.bookmanager}/empty.md"
 
 
