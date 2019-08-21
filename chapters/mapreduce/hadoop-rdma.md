@@ -1,11 +1,14 @@
-# Hadoop RDMA :o:
+# HADOOP RDMA
 
-![No](images/no.png) ![Question](images/question.png)
+Acknowledgement: This section was copied and modified with permission from
+<https://www.chameleoncloud.org/appliances/17/docs/>
 
-This section was copied with permission from: <https://www.chameleoncloud.org/appliances/17/docs/>
 
-The CentOS 7 SR-IOV RDMA-Hadoop appliance is built based on CC-CentOS7
-appliance. In this appliance, it also contains a CentOS 7 Virtual
+In Chameleon cloud it is possible to launch a virtual Hadoop cluster on
+bare-metal InfiniBand nodes with SR-IOV. 
+
+
+The CentOS 7 SR-IOV RDMA-Hadoop is based on a CentOS 7 Virtual
 Machine image, a VM startup script and a Hadoop cluster launch script,
 so that users can launch VMs with SR-IOV in order to run RDMA-Hadoop
 across these VMs on SR-IOV enabled InfiniBand clusters.
@@ -29,12 +32,13 @@ across these VMs on SR-IOV enabled InfiniBand clusters.
 * Included Hadoop cluster launch script: launch-hadoop-cluster.sh
 * Default VM root password: nowlab
 
-Please refer to the bare metal user guide for documentation on how to
-reserve and provision resources using the appliance of
+We refer to the chameleon cloud bare metal user guide for documentation
+on how to reserve and provision resources using the appliance of
 CC-CentOS7-RDMA-Hadoop.
 
-Launching a Virtual Hadoop Cluster on Bare-metal InfiniBand Nodes with SR-IOV on Chameleon
-------------------------------------------------------------------------------------------
+:o: link missing
+
+## Launching a Virtual Hadoop Cluster on Bare-metal InfiniBand Nodes with SR-IOV on Chameleon
 
 We provide a CentOS 7 VM image (chameleon-rdma-hadoop-appliance.qcow2)
 and a Hadoop cluster launch script (launch-hadoop-cluster.sh) to
@@ -65,8 +69,7 @@ MB. The Hadoop cluster will already be setup for use. For more details
 on how to use the RDMA-Hadoop package to run jobs, please refer to its
 user guide.
 
-Launching Virtual Machines Manually
------------------------------------
+## Launching Virtual Machines Manually
 
 We provide a CentOS 7 VM image (chameleon-rdma-hadoop-appliance.qcow2)
 and a VM startup script (start-vm.sh) to facilitate users to launch VMs
@@ -111,26 +114,23 @@ network ports. You will also have to change the name of VM virtual NIC
 interface to different ones (like tap1, tap2, etc.) and select different
 device IDs of virtual functions.
 
-Extra Initialization when Launching Virtual Machines
-----------------------------------------------------
+## Extra Initialization when Launching Virtual Machines
 
 In order to run RDMA-Hadoop across VMs with SR-IOV, and keep the size of
 VM image small, extra initialization will be executed when launching VM
 automatically, which includes:
 
 
-* Detect Mellanox SR-IOV drivers, download and install it if
-nonexistent \* Detect Java package installed, download and install if
-non-existent \* Detect RDMA-Hadoop package installed, download and
-install if non-existent
+* Detect Mellanox SR-IOV drivers, download and install it if nonexistent 
+* Detect Java package installed, download and install if non-existent 
+* Detect RDMA-Hadoop package installed, download and install if non-existent
 
 After finishing the extra initialization procedure, you should be able
 to run Hadoop jobs with SR-IOV support across VMs. Note that this
 initialization will be done automatically. For more details about the
 RDMA-Hadoop package, please refer to its user guide.
 
-Important Note for Tearing Down Virtual Machines and Deleting Network Ports
----------------------------------------------------------------------------
+## Important Note for Tearing Down Virtual Machines and Deleting Network Ports
 
 Once you are done with your experiments, you should kill all the
 launched VMs and delete the created network ports. If you used the
