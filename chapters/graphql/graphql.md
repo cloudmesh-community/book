@@ -1,4 +1,4 @@
-# GraphQL {#s-graphql}
+# GRAPHQL {#s-graphql}
 
 ---
 
@@ -8,8 +8,6 @@
 * Develop a GraphQL Server in Python
 
 ---
-
-## Introduction
 
 [GraphQL]{.index} is a data query language developed by Facebook.
 
