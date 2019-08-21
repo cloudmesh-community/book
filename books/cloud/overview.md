@@ -1,5 +1,23 @@
 # OVERVIEW
 
+
+---
+
+![](images/learning.png) **Learning Objectives**
+
+* Gain an overview what currently is in this book
+* Review the high level goals
+* Be aware that this book is not complete and is worked on as we speack
+* Be aware to check out the book on a weekly basis to stay up to date
+* Be aware that additional material is dictributed in separate books 
+  such as Linux, Python, and Writing in Markdown.
+* Be aware that books you may purchase may already be outdated by the 
+  time you order them.
+
+---
+
+
+
 In this book we provide a number of chapters that will allow you to
 easily get knowledge in cloud computing on theoretical and practical
 levels.
@@ -52,6 +70,16 @@ The book is organized as follows:
 : :o: This chapter also includes information on how to achieve this with
   `eve`, but this framework is no longer supported. In a future
   version of the document we will remove this eve section.
+
+**GraphQL**
+
+: In this chapter we will intorduce you to GraphQL whic alloes you to
+  access data through a query language. It allows clients to easily
+  formulate queries that retrieve desired data. Restrictions to the
+  queries can be formulated to download what is needed. Other features
+  include a type system. Github has added in addition to its REST service
+  also a GraphQL interface. YOu will have the opertunity to explore
+  GraphQl while interfaceing with GitHub.
 
 **Hypervisors**
 
@@ -129,3 +157,27 @@ The book is organized as follows:
 
 : We conclude the section with letting you know how to run tensorflow
   via singularity,
+
+**Serverless Computing**
+
+: Recently a new paradim in cloud computing has been introcuced. Instead
+  of using virtual machines or containers functions with limited resource
+  requirements are specified that can than be executed on function capable
+  execution services hosted by cloud providers.
+
+: We will introduce you to this concept and showcase you some examples of
+  FaaS services and farmeworks.
+
+**Messaging Services**
+
+: Many devices in the cloud need to communicate with each other. In this
+  chapter we look into how we can provide alternatives to REST services
+  that provide messaging capabilities. We will focus on MQTT which is
+  ovetn used to connect cloud edge deveices between each other and the cloud.
+
+**GO**
+
+: Go is a programming language used by Google and has been most famiously
+  used to implement Kubernetes. IN this chapter we introduce you to the
+  elementary features of Go, but take also a closer look on how we can
+  define REST services, use OpenAPI, and interface with clouds.
