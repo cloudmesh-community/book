@@ -61,4 +61,4 @@ BOOK:
   - GITHUB_ISSUES:
       - "{file.chapter}/issues/issues.md"
   - REFERENCES:
-      - "{file.bookmanager}/empty.md"
+      - "{file.chapter}/empty.md"

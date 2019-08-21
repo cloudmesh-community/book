@@ -126,7 +126,7 @@ BOOK:
       - "{file.chapter}/container/glossary.md"
       - "{file.chapter}/preface/create.md"
   - REFERENCES:
-      - "{file.bookmanager}/empty.md"
+      - "{file.chapter}/empty.md"
 # - INDEX:
 #      - "{file.chapter}/index.md"
 #  - "{file.chapter}/SECTION/SECTION-REFERENCES.md"

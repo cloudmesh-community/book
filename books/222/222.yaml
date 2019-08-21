@@ -128,4 +128,4 @@ BOOK:
   - INDEX:
       - "{file.chapter}/index.md"
   - REFERENCES:
-      - "{file.bookmanager}/empty.md"
+      - "{file.chapter}/empty.md"
