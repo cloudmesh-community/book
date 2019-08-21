@@ -36,4 +36,4 @@ BOOK:
       - "{file.chapter}/doc/ppt.md"
       - "{file.chapter}/doc/graphviz.md"
   - REFERENCES:
-      - "{file.bookmanager}/empty.md"
+      - "{file.chapter}/empty.md"

@@ -71,6 +71,6 @@ BOOK:
       - "{file.chapter}/pi/clusters/pi-setup.md"
       - "{file.chapter}/pi/car/car-face.md"
   - REFERENCES:
-      - "{file.bookmanager}/empty.md"
+      - "{file.chapter}/empty.md"
 
 

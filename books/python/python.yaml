@@ -67,4 +67,4 @@ BOOK:
       - "{file.chapter}/prg/python/fingerprint/fingerprint.md"
       - "{file.chapter}/prg/python/facedetection/facedetection.md"
   - REFERENCES:
-      - "{file.bookmanager}/empty.md"
+      - "{file.chapter}/empty.md"

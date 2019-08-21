@@ -30,4 +30,4 @@ BOOK:
   - PRESENTATIONS:
     - "{file.chapter}//doc/ppt.md"
   - REFERENCES:
-      - "{file.bookmanager}/empty.md"
+      - "{file.chapter}/empty.md"
