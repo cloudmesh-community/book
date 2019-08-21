@@ -1,4 +1,4 @@
-# AWS Elastic Map Reduce (EMR) :o:
+# AWS Elastic Map Reduce (EMR) :o2:
 
 ![No](images/no.png)
 
@@ -30,7 +30,7 @@ such as SPARK and HBase.
 
 ## Prerequisites
 
-:o: use ref
+:o2: use ref
 
 * [AWS Account](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#creating-an-account)
 * [AWS Key Pair](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#setting-up-key-pair)

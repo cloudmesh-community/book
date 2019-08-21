@@ -490,7 +490,7 @@ $ pip install cm-community
 and this library will be installed for you.
 
 
-## Amazon Simple Storage Service S3 via libcloud :o:
+## Amazon Simple Storage Service S3 via libcloud :o2:
 
 ![No](images/no.png)
 

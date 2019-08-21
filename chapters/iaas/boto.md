@@ -1,4 +1,4 @@
-# AWS Boto :o:
+# AWS Boto :o2:
 
 ![Construction](images/construction.png)
 

@@ -36,7 +36,7 @@ We refer to the chameleon cloud bare metal user guide for documentation
 on how to reserve and provision resources using the appliance of
 CC-CentOS7-RDMA-Hadoop.
 
-:o: link missing
+:o2: link missing
 
 ## Launching a Virtual Hadoop Cluster on Bare-metal InfiniBand Nodes with SR-IOV on Chameleon
 

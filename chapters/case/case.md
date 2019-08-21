@@ -1,4 +1,4 @@
-## IU 100 Node Cluster Case :o:
+## IU 100 Node Cluster Case :o2:
 
 ![No](images/no.png)
 

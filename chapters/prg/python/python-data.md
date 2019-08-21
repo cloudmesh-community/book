@@ -463,7 +463,7 @@ see: <https://www.tutorialspoint.com/python/python_database_access.htm>
 
 <https://docs.python.org/3/library/sqlite3.html>
 
-### Exercises :o:
+### Exercises :o2:
 
 E:Encryption.1:
 

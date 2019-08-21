@@ -1,6 +1,6 @@
-# Packer :o:
+# Packer :o2:
 
-![Construction](images/construction.png) :o:
+![Construction](images/construction.png) :o2:
 
 ![No](images/no.png)
 

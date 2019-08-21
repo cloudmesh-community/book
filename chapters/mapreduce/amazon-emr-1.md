@@ -1,4 +1,4 @@
-# Amazon EMR (Elastic Map Reduce):o:
+# Amazon EMR (Elastic Map Reduce):o2:
 
 Amazon EMR facilitates you to analyze and process vast(huge) amounts of
 data by distributing the computational work across a cluster of virtual

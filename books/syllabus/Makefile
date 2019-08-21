@@ -1,25 +1,29 @@
-all: syllabus pdf
+NAME=syllabus
+HOME=../..
 
-syllabus: clean version
+all: epub pdf
+
+epub: clean version
 	mkdir -p dest
-	bookmanager syllabus.yaml get
-	mv dest/vonLaszewski-e516-syllabus.epub ../../docs
-	open ../../docs/vonLaszewski-e516-syllabus.epub
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME).yaml get
+	mv dest/vonLaszewski-$(NAME).epub $(HOME)/docs
 
 pdf:
 	ebook-convert \
-	  ../../docs/vonLaszewski-e516-syllabus.epub \
-	  ../../docs/vonLaszewski-e516-syllabus.pdf
+	  $(HOME)/docs/vonLaszewski-$(NAME).epub \
+	  $(HOME)/docs/vonLaszewski-$(NAME).pdf
 
 bib:
 	mkdir -p dest
-	cp ../../bib/*.bib dest
+	cp $(HOME)/bib/*.bib dest
 
 version:
-	TZ=":US/Eastern"; date > ../../chapters/version.md
+	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
 view:
-	open ../../docs/vonLaszewski-e516-syllabus.epub
+	killall Books
+	open $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 clean:
 

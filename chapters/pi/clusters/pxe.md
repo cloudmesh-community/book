@@ -1,4 +1,4 @@
-# PXE Booting :o:
+# PXE Booting :o2:
 
 ![No](images/no.png) 
 

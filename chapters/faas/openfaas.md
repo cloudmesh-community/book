@@ -1,4 +1,4 @@
-# OpenFaaS :o:
+# OpenFaaS :o2:
 
 ![No](images/no.png) ![Construction](images/construction.png) :fa18-516-23:
 

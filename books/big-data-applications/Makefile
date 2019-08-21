@@ -6,7 +6,6 @@ book: clean version
 	mkdir -p dest
 	bookmanager $(NAME).yaml get
 	mv dest/vonLaszewski-$(NAME).epub ../../docs
-	open ../../docs/vonLaszewski-$(NAME).epub
 
 pdf:
 	ebook-convert \
@@ -21,7 +20,8 @@ version:
 	TZ=":US/Eastern"; date > ../../chapters/version.md
 
 view:
-	open ../../docs/vonLaszewski-$(NAME).epub
+	killall Books
+	open $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 clean:
 

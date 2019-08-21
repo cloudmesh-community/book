@@ -24,6 +24,7 @@ file:
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
 BOOK:
+  #    - "{file.chapter}/preface/emoji.md"
   - JULIA:
     - "{file.chapter}/prg/julia/julia-aws.md"
     - "{file.chapter}/prg/julia/julia-azure.md"

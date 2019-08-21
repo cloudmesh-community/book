@@ -1,4 +1,4 @@
-# Introduction to Julia for High Performance Computing :o:
+# Introduction to Julia for High Performance Computing :o2:
 
 ![No](images/no.png)
 
@@ -78,7 +78,7 @@ execute the following commands:
 
 ## Multiple Dispatch
 
-:o: THis section is empty
+:o2: THis section is empty
 
 ## Parallel Language Constructs
 
@@ -107,18 +107,18 @@ println(response)
 
 ## OpenStack in Julia
 
-:o: TBD
+:o2: TBD
 
 
 	
 
 ## Azure in Julia
 
-:o: TBD there is a separate file for this, maybe we should remove teh file?
+:o2: TBD there is a separate file for this, maybe we should remove teh file?
 
 ## FaaS in Julia
 
-:o: TBD
+:o2: TBD
 
 ## References
 

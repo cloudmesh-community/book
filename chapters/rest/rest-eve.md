@@ -521,7 +521,7 @@ these information into an string then populate a class called Computer
 and try to save the object like wise.
 
 
-## Towards cmd5 extensions to manage eve and mongo :o:
+## Towards cmd5 extensions to manage eve and mongo :o2:
 
 ![No](images/no.png)
 

@@ -245,7 +245,7 @@ github.
 
 </div>
 
-### Assembling the Pi Cluster :o:
+### Assembling the Pi Cluster :o2:
 
 ![No](images/no.png)
 
@@ -263,7 +263,7 @@ TODO: replace the images with one that has white background
 </div>
 
 
-### Virtual Raspberry Cluster :o:
+### Virtual Raspberry Cluster :o2:
 
 ![No](images/no.png)
 

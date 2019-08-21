@@ -1,32 +1,30 @@
-all: communicate
+NAME=communicate
+HOME=../..
 
-# pdf
+all: epub pdf
 
-communicate: clean version
+epub: clean version
 	mkdir -p dest
-	bookmanager communicate.yaml get
-	mv dest/vonLaszewski-communicate.epub ../../docs
-	open ../../docs/vonLaszewski-communicate.epub
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME).yaml get
+	mv dest/vonLaszewski-$(NAME).epub $(HOME)/docs
 
 pdf:
 	ebook-convert \
-	  ../../docs/vonLaszewski-communicate.epub \
-	  ../../docs/vonLaszewski-communicate.pdf
+	  $(HOME)/docs/vonLaszewski-$(NAME).epub \
+	  $(HOME)/docs/vonLaszewski-$(NAME).pdf
 
 bib:
 	mkdir -p dest
-	cp ../../bib/*.bib dest
+	cp $(HOME)/bib/*.bib dest
 
 version:
-	TZ=":US/Eastern"; date > ../../chapters/version.md
+	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
 view:
-	open ../../docs/vonLaszewski-communicate.epub
+	killall Books
+	open $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 clean:
 
 	rm -rf dest
-
-
-
-

@@ -314,7 +314,7 @@ $ sudo apt-get install mosquitto mosquitto-clients
 $ pip install paho-mqtt
 ```
 
-### Raspberry Pi Setup :o:
+### Raspberry Pi Setup :o2:
 
 ![No](images/no.png)
 
