@@ -31,7 +31,7 @@ jobs:
           command: bin/check-biber.sh changed_files.log
       #      - run:
       #          name: bibtex issues
-      #          command: cd cloud; make bibtex-issues
+      #          command: cd boks/cloud; make bibtex-issues
       - run:
           name: check python epub
           command: cd books/python && make && cd ../..
