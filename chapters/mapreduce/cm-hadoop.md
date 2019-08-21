@@ -1,4 +1,4 @@
-# Hadoop Virtual Cluster Installation Using Cloudmesh :o:
+# Hadoop Virtual Cluster Installation Using Cloudmesh :o2:
 
 ![No](images/no.png)
 

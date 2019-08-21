@@ -1,4 +1,4 @@
-## Syllabus :o:
+## Syllabus :o2:
 
 ![No](images/no.png)
 

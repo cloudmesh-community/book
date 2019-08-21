@@ -1,4 +1,4 @@
-# Raspberry PI Spark Cluster :o:
+# Raspberry PI Spark Cluster :o2:
 
 ![No](images/no.png)
 
@@ -17,7 +17,7 @@ a cluster of Raspberry Pi's.
 - [ ] Some text in the later part is unclear
 
 
-## Prerequisites :o:
+## Prerequisites :o2:
 
 ![No](images/no.png)
 

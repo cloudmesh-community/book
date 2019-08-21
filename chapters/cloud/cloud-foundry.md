@@ -150,7 +150,7 @@ Gathers various application metrics from the running instances, and
 teams can access these logs and metrics to monitor, support and take
 necessary actions to keep systems up and running.
 
-## Conclusion :o:
+## Conclusion :o2:
 
 ![No](images/no.png)
 

@@ -82,11 +82,11 @@ julia> @elapsed while n > 0
 
 ## Multi-threading
 
-:o:
+:o2:
 
 ## Green-threading
 
-:o:
+:o2:
 
 ## Hadoop and Julia
 

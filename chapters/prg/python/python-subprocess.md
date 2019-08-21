@@ -30,7 +30,7 @@ for line in lines:
     print (line)
 ```
 
-## Popen Class :o:
+## Popen Class :o2:
 
 ![No](images/no.png)
 

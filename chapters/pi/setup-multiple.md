@@ -1,4 +1,4 @@
-# Setting up Large PI clusters :o:
+# Setting up Large PI clusters :o2:
 
 ![No](images/no.png) 
 ![Construction](images/construction.png)

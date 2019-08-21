@@ -511,7 +511,7 @@ Germany even reported 1.082. According to Wikipedia an unnamed Fortune
 To understand hot-cold aisles, one must take a brief foray into the
 realm of physics and energy. Specifically, understanding how a
 temperature gradient tries to equalize. The most important formula
-to know is the heat transfer equation(@eq:heat-transfer).
+to know is the heat transfer @eq:heat-transfer.
 
 $$q=h_{c}A(t_{a}-t_{s})$${#eq:heat-transfer}
 
@@ -521,7 +521,7 @@ how energy is billed. Air moving at a moderate speed will transfer
 approximately 8.47 Watts per Square Foot per Hour. A 1U server is
 19 inches wide and about 34 inches deep. Multiplying the two values gives us
 a cross section of 646 square inches, or 4.48 square feet. Plugging these values
-into our equation(@eq:heat-transfer) us:
+into our @eq:heat-transfer us:
 
 $$q=8.47*4.48*(t_{a}-t_{s}))$${#eq:heat-transfer-example}
 
@@ -577,7 +577,17 @@ does not flow into the hot isles[@hot-cold-containment].
 
 ##### Water Cooled Doors {#sec:datacenter-doors}
 
-Alternatively, or in addition ![No](images/no.png)
+Another good way of reducing the energy consumption is to install water
+cooled doors directly at he rack as shown in @fig:watercooleddoor.
+Cooling even can be actively scontrolled so that in case of idle servers
+less energy is spend to conduct the cooling. THere are many vendors that
+provide such cooling solutions.
+
+
+![Active Rear Door [link](https://www.mainlinecomputer.com/t/product-lines/cabinets-and-racks/rear-door-heat-exchangers/chilled-doorr-high-density-rack-cooling-system/)](images/active-rear-door-rack-cooling-system-high.jpg){#fig:watercooleddoor}
+
+
+
 
 ### Workload Monitoring
 
@@ -1143,7 +1153,7 @@ Some thought on this include:
 
 Find more about this at [@nytimes-datacenter]
 
-## Renewable Energy for Data Centers :o: {#sec:energy-renewable}
+## Renewable Energy for Data Centers :o2: {#sec:energy-renewable}
 
 Explain the principal and showcase some examples:
 
@@ -1164,7 +1174,7 @@ Energy Storage:
 * Batteries
 * Store energy in other forms
 
-## Societal Shift Towards Renewables :o: {#sec:energy-society}
+## Societal Shift Towards Renewables :o2: {#sec:energy-society}
 
 Document the efforts used in society to work towards renewable
 energies. THis includes government efforts to support renewable in
@@ -1182,7 +1192,7 @@ See also
 
 * <https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
 
-## Datacenter Risks and Issues :o:
+## Datacenter Risks and Issues :o2:
 
 Data Centers may be encounter issues such as outages of a variety of
 reasons. In this section you will identify risks and issues that you
@@ -1278,3 +1288,9 @@ E.Datacenter.6:
 
 > Write about cooling technologies in datacenter rack doors so it can
 > be contributed to  @sec:datacenter-doors.
+
+E.Datacenter.7:
+
+> Review: [Nature Article](https://www.nature.com/articles/d41586-018-06610-y). 
+> Is there any more up to data data available? What lessons do we take away from the
+> article?

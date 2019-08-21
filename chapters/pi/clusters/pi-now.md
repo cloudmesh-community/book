@@ -306,7 +306,7 @@ you will need to select a set of hostnames for the PIs in your cluster. Please
 see the [Network of Pis Hostnames](#pi-network-hostnames) section for our
 recommendation on setting hostnames.
 
-### Private Network Cluster Setup with cm-burn :o:
+### Private Network Cluster Setup with cm-burn :o2:
 
 ![No](images/no.png)
 

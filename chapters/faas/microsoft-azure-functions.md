@@ -1,4 +1,4 @@
-# Microsoft Azure Function :o:
+# Microsoft Azure Function :o2:
 
 ![Construction](images/construction.png) fa18-516-08
 

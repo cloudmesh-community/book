@@ -1,4 +1,4 @@
-# Cloud Computing: Use Cases :o:
+# Cloud Computing: Use Cases :o2:
 
 ![Construction](images/construction.png) ![No](images/no.png)
 
@@ -12,7 +12,7 @@ The material provided in this ePub is related to Cloud Computing. However part o
 | [![](images/cover-tech.png)](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true) | e534, I523, I423 | Cloud Technologies |
 
 
-## Earth Science :o:
+## Earth Science :o2:
 
 ![Construction](images/construction.png) ![No](images/no.png)
 
@@ -49,7 +49,7 @@ that generate and distribute the various NASA EOS datasets
 
 ![SIPS & DAAC Centers [@nasa-eosdis-cumulus]](images/use-cases-es-sips-daac-centers.png){#fig:sips-daac-centers}
 
-### Big Data :o:
+### Big Data :o2:
 
 ![Construction](images/construction.png) ![No](images/no.png)
 
@@ -189,7 +189,7 @@ the Earth Science community for all stakeholders to leverage these cloud
 resources in some capacity so as to enable and facilitate the continuation of
 science discovery in this age of big data.
 
-## Bioinformatics :o:
+## Bioinformatics :o2:
 
 ![Construction](images/construction.png) ![No](images/no
 .png)

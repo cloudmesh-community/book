@@ -1,6 +1,6 @@
 #REST in julia
 
-:o: text is missing
+:o2: text is missing
 
 ```julia
 using HTTP

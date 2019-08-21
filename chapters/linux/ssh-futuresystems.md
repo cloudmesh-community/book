@@ -44,7 +44,7 @@ Please, check your email for further updates. You can also refresh this
 page and see if the boxes in your account status information are all
 green. Then you can continue.
 
-### Testing your FutureSystems ssh key :o:
+### Testing your FutureSystems ssh key :o2:
 
 ![No](images/no.png)
 
