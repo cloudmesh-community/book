@@ -1,4 +1,4 @@
-## Modifying the Pi Image without a PI :o:
+## Modifying the Pi Image without a PI :o2:
 
 TODO: status: 75
 
@@ -60,7 +60,7 @@ The customized image will be in a subdirectory called
 to remove the `mountpoint` directory and move the
 `make-pi-images.pyoutput`.
 
-#### TODO: Automated Cluster SD-Card Script :o:
+#### TODO: Automated Cluster SD-Card Script :o2:
 
 ![No](images/no.png)
 

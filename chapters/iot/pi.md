@@ -203,13 +203,13 @@ describe how to install and configure VNC
 Sensors
 -------
 
-### Grove Sensors :o:
+### Grove Sensors :o2:
 
 ![No](images/no.png)
 
 we already have draft
 
-### Non Grove Sensors :o:
+### Non Grove Sensors :o2:
 
 ![No](images/no.png) 
 

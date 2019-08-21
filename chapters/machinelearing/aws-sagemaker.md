@@ -1,4 +1,4 @@
-# AWS SageMaker :o:
+# AWS SageMaker :o2:
 
 ![No](images/no.png)
 

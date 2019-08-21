@@ -1,4 +1,4 @@
-# Cloud Computing :o:
+# Cloud Computing :o2:
 
 ![No](images/no.png)
 

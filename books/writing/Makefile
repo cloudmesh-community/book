@@ -1,30 +1,30 @@
-CONTENT=writing
+NAME=writing
+HOME=../..
 
 all: epub pdf
 
-
 epub: clean version
 	mkdir -p dest
-	bookmanager $(CONTENT).yaml get
-	mv dest/vonLaszewski-$(CONTENT).epub ../../docs
-	open ../../docs/vonLaszewski-$(CONTENT).epub
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME).yaml get
+	mv dest/vonLaszewski-$(NAME).epub $(HOME)/docs
 
 pdf:
 	ebook-convert \
-	  ../../docs/vonLaszewski-$(CONTENT).epub \
-	  ../../docs/vonLaszewski-$(CONTENT).pdf
+	  $(HOME)/docs/vonLaszewski-$(NAME).epub \
+	  $(HOME)/docs/vonLaszewski-$(NAME).pdf
 
 bib:
 	mkdir -p dest
-	cp ../../bib/*.bib dest
+	cp $(HOME)/bib/*.bib dest
 
 version:
-	TZ=":US/Eastern"; date > ../../chapters/version.md
+	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
 view:
-	open ../../docs/vonLaszewski-$(CONTENT).epub
+	killall Books
+	open $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 clean:
 
 	rm -rf dest
-

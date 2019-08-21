@@ -1,4 +1,4 @@
-# Cluster Setup :o:
+# Cluster Setup :o2:
 
 ![No](images/no.png)
 

@@ -1,4 +1,4 @@
-# Spring Function as a Service :o:
+# Spring Function as a Service :o2:
 
 ![No](images/no.png) ![Question](images/question.png)
 

@@ -1,4 +1,4 @@
-# Automated Headless Configuration of a Pi Cluster :o:
+# Automated Headless Configuration of a Pi Cluster :o2:
 
 ![No](images/no.png)
 

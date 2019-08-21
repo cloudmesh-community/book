@@ -1,4 +1,4 @@
-# Manage VM guests with virsh :o:
+# Manage VM guests with virsh :o2:
 
 ![No](images/no.png) 
 ![Question](images/question.png)

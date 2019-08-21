@@ -409,7 +409,7 @@ Pybox provides a way to work with Box files from the command
 line. Documentation on how to set up and use pybox can be found at
 <https://github.com/hzheng/pybox>
 
-## Cloudmesh :o:
+## Cloudmesh :o2:
 
 ![No](images/no.png)
 

@@ -1,4 +1,4 @@
-# CircleCi :o:
+# CircleCi :o2:
 
 ![No](images/no.png)
 

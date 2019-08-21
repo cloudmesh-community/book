@@ -276,7 +276,7 @@ the Python dependencies).
 
 ### Writing Handlers
 
-:o: describe how to write and upload handlers
+:o2: describe how to write and upload handlers
 
 
 ### Cluster Directory
@@ -363,13 +363,13 @@ always mapped within a lambda container.
 
 ## Configuration
 
-:o: document the configuration parameters and how they interact.
+:o2: document the configuration parameters and how they interact.
 Also describe how to use the packages.txt file in a handler directory to 
 specify dependencies.
 
 ## Architecture
 
-:o: concise description of the architecture.
+:o2: concise description of the architecture.
 
 
 

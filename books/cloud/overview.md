@@ -30,7 +30,7 @@ Please be aware that some of the class material is based on Python and
 Linux. YOu will need no knowledge of them as you can pick it up while
 reading this book.
 
-* Linux  :o: to be added
+* Linux  :o2: to be added
 * [Python](https://laszewski.github.io/book/python/)
 * [Scientific writing with Markdown](https://laszewski.github.io/book/writing/)
 
@@ -67,7 +67,7 @@ The book is organized as follows:
 : We will showcase you on a very popular service such as GitHub how to
   easily interface with REST services in Python.
 
-: :o: This chapter also includes information on how to achieve this with
+: :o2: This chapter also includes information on how to achieve this with
   `eve`, but this framework is no longer supported. In a future
   version of the document we will remove this eve section.
 
@@ -106,7 +106,7 @@ The book is organized as follows:
 : In addition we will introduce you to elementary command line tools and
   programs to access this infrastructure.
 
-: :o: A new section will be added pointing you to the cloudmesh API
+: :o2: A new section will be added pointing you to the cloudmesh API
   which can become a project for students using this book in
   class.
 
@@ -133,7 +133,7 @@ The book is organized as follows:
   which is a version of Map/Reduce that could perform even faster then
   Spark.
 
-: :o: In fact we have here two sections that need to be delineated a bit
+: :o2: In fact we have here two sections that need to be delineated a bit
   batter which we hope we can do with your help.
 
 **Container**
@@ -152,7 +152,7 @@ The book is organized as follows:
   showcase Singularity allowing you to use containers within a batch
   queuing system.
 
-: :o: you will help us improving this section if you elect to conduct
+: :o2: you will help us improving this section if you elect to conduct
   a project on comet.
 
 : We conclude the section with letting you know how to run tensorflow

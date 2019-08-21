@@ -1,4 +1,4 @@
-# Assignments :o:
+# Assignments :o2:
 
 ![No](images/no.png)
 

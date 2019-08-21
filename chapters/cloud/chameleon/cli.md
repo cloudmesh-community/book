@@ -131,7 +131,7 @@ You will see an output similar to
     | 1fe5138b-300b-4b30-8d22-e7287... | CC-CentOS7       | ACTIVE |         |
     ...
 
-## Creating SSH keys :o:
+## Creating SSH keys :o2:
 
 ![No](images/no.png)
 

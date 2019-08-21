@@ -1,25 +1,29 @@
-all: e516 pdf
+NAME=e516
+HOME=../..
 
-e516: clean version
+all: epub pdf
+
+epub: clean version
 	mkdir -p dest
-	bookmanager e516.yaml get
-	mv dest/vonLaszewski-e516-e516.epub ../../docs
-	open ../../docs/vonLaszewski-e516-e516.epub
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME).yaml get
+	mv dest/vonLaszewski-$(NAME).epub $(HOME)/docs
 
 pdf:
 	ebook-convert \
-	  ../../docs/vonLaszewski-e516-e516.epub \
-	  ../../docs/vonLaszewski-e516-e516.pdf
+	  $(HOME)/docs/vonLaszewski-$(NAME).epub \
+	  $(HOME)/docs/vonLaszewski-$(NAME).pdf
 
 bib:
 	mkdir -p dest
-	cp ../../bib/*.bib dest
+	cp $(HOME)/bib/*.bib dest
 
 version:
-	TZ=":US/Eastern"; date > ../../chapters/version.md
+	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
 view:
-	open ../../docs/vonLaszewski-e516-e516.epub
+	killall Books
+	open $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 clean:
 

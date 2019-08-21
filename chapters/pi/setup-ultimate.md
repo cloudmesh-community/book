@@ -482,7 +482,7 @@ after 20 seconds:
 $ sudo dhclient -r wlan0; sleep 10; sudo dhclient wlan0
 ```
 
-### Wireless Network at IU :o:
+### Wireless Network at IU :o2:
 
 ![No](images/no.png) {#s-wireless-at-iu}
 

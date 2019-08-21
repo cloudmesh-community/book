@@ -309,7 +309,7 @@ activate it via the configuration menu. For a more automated
 configuration, we will provide more information in the Raspberry PI
 section.
 
-### SSH on Windows :o:
+### SSH on Windows :o2:
 
 ![No](images/no.png) ![Question](images/question.png)
 
@@ -394,7 +394,7 @@ command that we described earlier.
 	$ ssh-add
 
 
-## SSH Port Forwarding :o:
+## SSH Port Forwarding :o2:
 
 ![No](images/no.png) ![Question](images/question.png)
 

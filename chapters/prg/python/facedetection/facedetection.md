@@ -1,4 +1,4 @@
-# NIST Pedestrian and Face Detection  :o: {#s-face}
+# NIST Pedestrian and Face Detection  :o2: {#s-face}
 
 ![No](images/no.png)
 
