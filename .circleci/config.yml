@@ -23,6 +23,9 @@ jobs:
       - run:
           name: requirements.txt
           command: pip install -r requirements.txt
+      - run
+        name: book manager version
+        command: bookmanager version
       - run:
           name: changed files
           command: git diff-tree --no-commit-id --name-only -r HEAD > changed_files.log && cat changed_files.log
@@ -31,13 +34,13 @@ jobs:
           command: bin/check-biber.sh changed_files.log
       #      - run:
       #          name: bibtex issues
-      #          command: cd boks/cloud; make bibtex-issues
+      #          command: cd books/cloud; make bibtex-issues
       - run:
           name: check python epub
-          command: cd books/python && make && cd ../..
+          command: cd books/python && make epub && cd ../..
       - run:
           name: check cloud epub
-          command: cd books/cloud && make && cd ../..
+          command: cd books/cloud && make epub && cd ../..
       - run:
           name: check bigdata epub
           command: cd books/big-data-applications && make && cd ../..
