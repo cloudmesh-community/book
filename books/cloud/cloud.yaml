@@ -134,4 +134,4 @@ BOOK:
     - "{file.chapter}/prg/go/go-cloud.md"
     - "{file.chapter}/prg/go/go-links.md"
   - REFERENCES:
-      - "{file.bookmanager}/empty.md"
+      - "{file.chapter}/empty.md"
