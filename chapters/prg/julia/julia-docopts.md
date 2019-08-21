@@ -5,7 +5,7 @@ Docopts in Julia are similar to Python, Ruby, and other languages.
 ## Installation
 
 Again, most of Julia's packages that are not in the base code are
-contained within git repositories. [@getting-started]. To get started
+contained within git repositories. [@julia-getting-started]. To get started
 with DocOpts in Julia, issue the following command within the Julia
 REPL:
 
