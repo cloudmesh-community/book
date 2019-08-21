@@ -438,7 +438,7 @@ driver supports MongoDB versions 2.6, 3.0, 3.2, 3.4, 3.6, and 4.0
 [@www-github]. MongoDB and Python represent a compatible fit considering 
 that BSON (binary JSON) used in this NoSQL database is very similar 
 to Python dictionaries, which makes the collaboration between the two 
-even more appealing [@www-slideshare]. For this reason, dictionaries 
+even more appealing [@www-mongodb-slideshare]. For this reason, dictionaries 
 are the recommended tools to be used in PyMongo when representing 
 documents [@www-gearheart]. 
 

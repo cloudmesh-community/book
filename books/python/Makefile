@@ -1,6 +1,8 @@
 NAME=python
 HOME=../..
 
+include ../Makefile.bibtex
+
 all: epub pdf
 
 epub: clean version

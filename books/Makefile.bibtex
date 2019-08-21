@@ -1,0 +1,30 @@
+bibtex: bibtex-duplicate bibtex-cat bibtex-error bibtex-datamodel
+
+references:
+	cat $(HOME)/bib/*.bib > dest/all.bib
+
+bibtex-issues: references
+	mkdir -p dest
+	cd dest; rm -f *.blg *_bibertool.bib
+	cd dest; cat -n all.bib
+	cd dest; biber -V --tool all.bib | fgrep -v Datamodel | fgrep -v INFO | fgrep -v Duplicate | fgrep -v Overwriting | fgrep -v ISBN
+
+bibtex-duplicate: references
+	-cd dest; biber -V --tool all.bib | fgrep Duplicate
+
+bibtex-cat:
+	cd dest; cat -n all.bib
+
+bibtex-error:
+	-cd dest; biber -V --tool all.bib | fgrep ERROR
+
+bibtex-datamodel:
+	-cd dest; biber -V --tool all.bib | fgrep Datamodel
+
+bibtex-other:
+	-cd dest; biber -V --tool all.bib | fgrep -v Datamodel
+
+bibtex-junk:
+	-cd dest; biber -V --tool all.bib | fgrep junk
+
+
