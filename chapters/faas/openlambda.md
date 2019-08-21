@@ -143,14 +143,12 @@ $ ./bin/admin kill -cluster=my-cluster
 $ rm -r my-cluster
 ```
 
-## Admin Tool
+## Administration
 
 The `admin` tool is used to manage OpenLambda clusters. This tool
 manages state via a `cluster` directory on the local file system.
 Note that only a single OpenLambda worker per machine is currently
 supported.
-
-### Admin Tool Commands
 
 The simplest admin command, `worker-exec`, allows you to launch a
 foreground OpenLambda process. For example:
@@ -192,14 +190,14 @@ $ admin new --cluster=<ROOT>
 ```
 
 For OpenLambda, a local cluster's name is the same as the file
-location.  Thus, <ROOT> should refer to a local directory that will be
+location.  Thus, `<ROOT>` should refer to a local directory that will be
 created for all OpenLambda files.  The layout of these files in the
-<ROOT> directory is described in detail below.  You will need to pass
+`<ROOT>` directory is described in detail below.  You will need to pass
 the cluster name/location to all future admin commands that manage the
 cluster.
 
 The `<ROOT>/config/template.json` file in the cluster located at
-"<ROOT>" will contain many configuration options specified as
+`<ROOT>` will contain many configuration options specified as
 keys/values in JSON.  These setting will be used for every new
 OpenLambda worker.  You can modify these values by specifying override
 values (again in JSON) using the `setconf` command. For example:
@@ -220,8 +218,8 @@ $ ./admin workers --cluster=<NAME> --num-workers=<NUM> --port=<PORT>
 ```
 
 This will create a specified number of workers listening on ports
-starting at the given value.  For example, suppose <NUM>=3 and
-<PORT>=8080.  The `workers` command will create three workers
+starting at the given value.  For example, suppose `<NUM>=3` and
+`<PORT>=8080`.  The `workers` command will create three workers
 listening on ports 8080, 8081, and 8082.  The `workers` command is
 basically a convenience wrapper around the `worker-exec` command.  The
 `workers` command does three things for you: (1) creates a config file
@@ -252,7 +250,7 @@ generate the KEY and SECRET randomly yourself if you wish (or you may
 use some other hard-to-guess SECRET).  Keep these values handy for
 later uploading handlers.
 
-The "<ROOT>/config/template.json" file specifies registry mode and
+The `<ROOT>/config/template.json` file specifies registry mode and
 various registry options.  You may manually set these, but as a
 convenience, the `registry` command will automatically populate the
 configuration file for you when you launch the registry process.
@@ -278,7 +276,11 @@ the Python dependencies).
 
 ### Writing Handlers
 
+:o: describe how to write and upload handlers
+
+
 ### Cluster Directory
+
 Suppose you just ran the following:
 
 ```bash
@@ -361,26 +363,14 @@ always mapped within a lambda container.
 
 ## Configuration
 
-TODO(Tyler): document the configuration parameters and how they interact.
+:o: document the configuration parameters and how they interact.
 Also describe how to use the packages.txt file in a handler directory to 
 specify dependencies.
 
 ## Architecture
 
-TODO(Ed): concise description of the architecture.
+:o: concise description of the architecture.
 
-## License. 
 
-This project is licensed under the Apache License - see the LICENSE.md file 
-for details.
 
-* TODO: (Tyler): describe how to write and upload handlers
-
-* TODO: (Tyler): document the configuration parameters and how they
-  interact. Also describe how to use the packages.txt file in a
-  handler directory to specify dependencies.
-
-Architecture
-
-* TODO: (Ed): concise description of the architecture.
 
