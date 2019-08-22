@@ -9,7 +9,6 @@ Goals:
 * [ ] set the network configuration
 * [ ] change the default password
 
-
 ## Overview
 
 When creating large clusters it is not convenient to log in by hand in each PI. Typically to avoid this. One configures the PI via PXE boot. However in this setup we do not use PXE boot, but try to burn an individualized OS that contains from the beginning on the individualized hostname, an ssh key (and the public key is shared with all other images that are burned this way, as well as the network configuration.
@@ -89,7 +88,6 @@ data:
 
 The meaning of the attributes is rather simple. Under images we specify a number of images that we could chose and are downloaded onto the computer that burns the SD-cards if they are not present. The cluster base hostname is defined by the attribute `hostname` and the first worker node to be specified has the postfix defined by start. We define the last number also in the yaml file, while we will look between the start and the end number. The number of leading blanks is defined by the start and end numbers. A special node called `lead` is specified that is the lead node and all worker nodes are accessible by this lead node. Furthermore. the lead node will be used to monitor the cluster. If the start number includes the lead ode the lead node will be configured. The attribute range specifies which SD-cards are configured. Note this could be a subset of the entire cluster defined by start and end.
 
-
 ### Gregor: Manual page cmd5 may be easier than click.
 
     modify_sdcard -fetch [Raspbian|dexter|https://downloads.raspberrypi.org/raspbian_lite_latest]  - fetched the image
@@ -97,7 +95,6 @@ The meaning of the attributes is rather simple. Under images we specify a number
     modify_sdcard -ssh [enable|disable] enables or disables ssh
     modify_sdcard -sshkey [~/.ssh/id_rsa.pub]  puts the default key for login
     modify_sdcard -name NAME puts the given name on the image
-
 
 TODO: Loop to create multiple images, handle exception of existing mount point and output directory
 

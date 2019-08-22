@@ -20,11 +20,8 @@ Additional items we like to work on are listed here
         [[ePub](https://github.com/progit/progit2/releases/download/2.1.61/progit.epub)]
         [[mobi](https://github.com/progit/progit2/releases/download/2.1.61/progit.mobi)]
 
-
 Please add TODOs or better, pick some and do them. Additional todos
 are files as github issues.
-
-
 
 ### Integrate old class links
 
@@ -32,7 +29,6 @@ If you observe something missing let us know.
 
 -   <https://github.com/bigdata-i523>
 -   <https://raw.githubusercontent.com/bigdata-i523/sample-hid000/master/README.md>
-
 
 ### Integrate student contributions
 
@@ -62,11 +58,7 @@ Others see:
 
 <https://piazza.com/class/j5wll7vzylg25j?cid=722>
 
-
-
-
 ### Others Volumes need to be integrated into the assignments:
-
 
 1. (This document) Handbook of Clouds and Big Data, Gregor von Laszewski, Geoffrey C. Fox, and Judy Qiu, Fall 2017, <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
 
