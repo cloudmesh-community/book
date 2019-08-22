@@ -71,13 +71,13 @@ local$ sudo apt-get update
 ```
 Once installed execute the following command to make sure the installation is
  done properly
- 
+
  ```bash
  local$ sudo systemctl status docker
  ```
- 
+
  This should give you an output similar to the next.
- 
+
  ```bash
   docker.service - Docker Application Container Engine
     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
@@ -87,7 +87,7 @@ Once installed execute the following command to make sure the installation is
      Tasks: 39
 
  ```
- 
+
 ## Installation for Windows 10
 
 Docker needs Microsoft's Hyper-V to be enabled, but it will impact running the virtual machines
@@ -140,7 +140,7 @@ Once executed you should see an output similar to
 ```bash
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
-78445dd45222: Pull complete 
+78445dd45222: Pull complete
 Digest: sha256:c5515758d4c5e1e838e9cd307f6c6a .....
 Status: Downloaded newer image for
         hello-world:latest
@@ -153,12 +153,12 @@ To generate this message, Docker took the following
 steps:
 
 1. The Docker client contacted the Docker daemon.
-2. The Docker daemon pulled the "hello-world" image 
+2. The Docker daemon pulled the "hello-world" image
    from the Docker Hub.
-3. The Docker daemon created a new container from that 
-   image which runs the executable that produces the 
+3. The Docker daemon created a new container from that
+   image which runs the executable that produces the
    output you are currently reading.
-4. The Docker daemon streamed that output to the Docker 
+4. The Docker daemon streamed that output to the Docker
    client, which sent it to your terminal.
 
 To try something more ambitious, you can run an Ubuntu

@@ -653,7 +653,7 @@ before Feb 15, 2018
     resource that you would like to specify. Simply go to:
 
     * <https://docs.google.com/document/d/12FUtHlEzQwxc3hjyki3RbU0iMfBrcyoSMKeq3aEDPk/edit?usp=sharing>
-    
+
     and add your name to one of the resource. Make sure there is only
     one name for each resource even if you work in a team.
 
@@ -858,7 +858,7 @@ Learning Outcome:
 
 **This is for online and residential students.**
 
-Residential students with a substantial number of sections explaining  
+Residential students with a substantial number of sections explaining
 such details as installing a
 kubernetes cluster on PI or docker swarm or some other larger topic are
 exempt from this assignment. However, if you are working towards an A+
@@ -903,7 +903,7 @@ Learning Outcome:
 
 -   Learn Markdown is not about WYSIWYG
 
--   In your project you will need to provide 
+-   In your project you will need to provide
     section in which you explain to execute your project. This
     assignment helps you on how to do that.
 

@@ -21,15 +21,15 @@ Naveen Kaul
 <http://cyberaide.org/papers/vonLaszewski-cloud-vol-9.pdf#page=27&zoom=100,0,96>
 
 
-## About 
+## About
 
 We provide step-by-step instructions on installing a Spark cluster on
 a pre-installed hadoop on a cluster of raspberry pi. To start we
 assume you have Hadoop installed. This is achieved by following the
-instructions provided 
+instructions provided
 in
 
-> ![Warning](images/warning.png) *This link needs to be changed, we also need to identify if the hadoop 
+> ![Warning](images/warning.png) *This link needs to be changed, we also need to identify if the hadoop
 > install for pi is different from the regular hadoop install.*
 
 * <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
@@ -43,7 +43,7 @@ $ cd ~
 ```
 
 
-## Download 
+## Download
 
 Download the most recent version from the Apache website (we use here
 version 2.3.0).
@@ -56,21 +56,21 @@ version 2.3.0).
 
 ---
 
-* [[Apache Spark](https://www.apache.org/dyn/closer.lua/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz)] 
+* [[Apache Spark](https://www.apache.org/dyn/closer.lua/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz)]
 
 Run the command
 
-```bash 
-wget http://apache.claz.org/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz 
+```bash
+wget http://apache.claz.org/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
 ```
 
 ## Installation
 
 Create the folder for storing spark install files
 
-```bash 
+```bash
 $ sudo mkdir -p /opt/spark-2.3.0
-$ sudo chown -R hduser:hadoop /opt/spark-2.3.0 
+$ sudo chown -R hduser:hadoop /opt/spark-2.3.0
 ```
 
 Unzip the tar fle into destination folder
@@ -79,33 +79,33 @@ Unzip the tar fle into destination folder
 
 Update the `PATH` variable
 
-```bash 
+```bash
 $ echo "export SPARK_HOME=/opt/spark-2.3.0" >> ~\.bashrc
 $ echo "export PATH=$PATH:$SPARK_HOME/bin" >> ~\.bashrc
 $ echo "export PATH=$PATH:$SPARK_HOME/sbin" >> ~\.bashrc
-$ source ~/.bashrc 
+$ source ~/.bashrc
 ```
 
 Copy the template from `spark-env.sh.template` to `spark-env.sh`
 
-```bash 
-$ cp $SPARK_HOME/spark-env.sh.template $SPARK_HOME/spark-env.sh 
+```bash
+$ cp $SPARK_HOME/spark-env.sh.template $SPARK_HOME/spark-env.sh
 ```
 
 Edit spark-env.sh file to change configurations
 
 
-```bash 
-$ nano $SPARK_HOME/spark-env.sh 
+```bash
+$ nano $SPARK_HOME/spark-env.sh
 ```
 
 Edit slaves file on master node
 
-```bash 
+```bash
 $ cd $SPARK_HOME/conf
 $ cp slaves.template slaves
 $ nano slaves
-``` 
+```
 
 Update the configurations
 
@@ -133,19 +133,19 @@ Add the hostnames to the file
 
 ---
 
-## Test Setup	
+## Test Setup
 
 Run `spark-shell` from the command line. You will have succeed if you
 see something like this
 
-```bash 
+```bash
 Welcome to
       ____              __
      / __/__  ___ _____/ /__
     _\ \/ _ \/ _ `/ __/  '_/
    /___/ .__/\_,_/_/ /_/\_\   version 2.3.0
       /_/
-         
+
 Using Scala version 2.11.8 (Java HotSpot(TM) Client VM, Java 1.8.0_65)
 ```
 
@@ -156,7 +156,7 @@ Repeat previous steps on all worker/slave nodes
 Alternative to running previous steps for each worker node, you can run
 the the following command on each worked node to create spark directory
 
-```bash 
+```bash
 $ sudo mkdir -p /opt/spark-2.3.0`
 $ sudo chown -R hduser:hadoop /opt/spark-2.3.0
 ```
@@ -170,7 +170,7 @@ $ rsync -avxP /opt/spark-2.3.0 hduser@pislave:/opt
 Run the previous command only after creating the /opt/spark-2.3.0 on
 all worker nodes
 
-```bash 
+```bash
 $ sudo mkdir -p /opt/spark-2.3.0
 $ sudo chown -R hduser:hadoop /opt/spark-2.3.0
 ```
@@ -180,7 +180,7 @@ $ sudo chown -R hduser:hadoop /opt/spark-2.3.0
 Next you need to set the spark home and add it to your path on all
 worker nodes
 
-```bash 
+```bash
 $ echo "export SPARK_HOME=/opt/spark-2.3.0"
 $ echo "export PATH=$PATH:$SPARK_HOME/bin"
 $ source ~/.bashrc
@@ -191,13 +191,13 @@ master command on the master and the salve command on the slaves
 
 Run this on the master:
 
-```bash 
-$SPARK_HOME/sbin/start_master.sh 
+```bash
+$SPARK_HOME/sbin/start_master.sh
 ```
 Run this on the slave:
 
-```bash 
-$SPARK_HOME/sbin/start_slaves.sh 
+```bash
+$SPARK_HOME/sbin/start_slaves.sh
 ```
 
 To test it out use the following URL:

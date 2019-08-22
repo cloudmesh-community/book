@@ -23,7 +23,7 @@ Result will look like
 output.pagerank/part-r-00000
 ```
 
-The head of the result will look like 
+The head of the result will look like
 
 ```bash
 head output.pagerank/part-r-00000
@@ -70,9 +70,9 @@ $ hadoop fs -put PageRankDataGenerator/pagerank5000g50.input.0 input.pagerank
 ```bash
 $ hadoop jar dist/HadoopPageRankMooc.jar indiana.cgl.hadoop.pagerank.HadoopPageRank input.pagerank output.pagerank 5000 1
 ```
-        
+
 Result
 
 ```bash
 $ hadoop fs -cat output.pagerank/part-r-00000
-```		
+```

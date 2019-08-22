@@ -28,7 +28,7 @@ It can be installed with
 $ go get github.com/docopt/docopt-go
 ```
 
-A sample programs are located at 
+A sample programs are located at
 
 * <https://github.com/docopt/docopt.go/blob/master/examples/options/>
 
@@ -60,7 +60,7 @@ Options:
   --drifting    Drifting mine.
 
 ARGUMENTS:
-  NAME     The name of the VM` 
+  NAME     The name of the VM`
 
 	  arguments, _ := docopt.ParseDoc(usage)
 	  fmt.Println(arguments)

@@ -1,12 +1,12 @@
 # Emacs
 
-Emacs is one of the most powerfull editors. It originated from MIT AI Lab's 
-Incompatible Timesharing System (ITS) while profiding a collection of 
-macros used for editing. The name *Emacs* originates as an abbreviation for 
-*Editor MACroS*. modern version of Emacs was rewritten in 1984 and since 
+Emacs is one of the most powerfull editors. It originated from MIT AI Lab's
+Incompatible Timesharing System (ITS) while profiding a collection of
+macros used for editing. The name *Emacs* originates as an abbreviation for
+*Editor MACroS*. modern version of Emacs was rewritten in 1984 and since
 than has been evolved and maintained.
 
-A number of extensive documentation is available at the following links 
+A number of extensive documentation is available at the following links
 according to the GNU Emacs Home page.
 
 * [GNU Emacs manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html)
@@ -50,7 +50,7 @@ a wrong key:
 
 * `C-/` If you executed a command and Emacs has modified your buffer,
   use `C-/` to undo that change.
- 
+
 | Key         | Description |
 | ----------- | ----------------------------------------- |
 | ---         | **Saving and Exiting** |
@@ -93,7 +93,7 @@ Modes
 > "Every buffer has an associated major mode, which alters certain
 > behaviors, key bindings, and text display in that buffer. The idea is to
 > customize the appearance and features available based on the contents of
-> the buffer." 
+> the buffer."
 
 modes are typically activated by ending such as `.py`,
 `.java`, `.rst`, ...
@@ -175,8 +175,8 @@ while previewing the update on change in another window.
 
 ## LateXMk and Emacs
 
-LatexMk allows one to outomatically compike and preview a document 
-in case theire source is changed. THus if you run LateXMk and edit 
-your files for example with emacs, The PDF viewer such as skim will 
+LatexMk allows one to outomatically compike and preview a document
+in case theire source is changed. THus if you run LateXMk and edit
+your files for example with emacs, The PDF viewer such as skim will
 automatically update the document.
 This is similar to overleaf, but much faster and without collaborators editing the same file.

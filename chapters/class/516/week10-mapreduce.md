@@ -1,4 +1,4 @@
-# Week 10: Map Reduce 
+# Week 10: Map Reduce
 
 # Lab Activity Python Map reduce
 

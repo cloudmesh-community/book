@@ -7,13 +7,13 @@
 * Review IaaS servise by prominent cloud providers.
 * Understand how to write Python programs on managing virtual machines with libcloud.
 * Understand how to write Python programs on managing data services with libcloud.
-* Experiment with cloud providers while practially testing them. 
+* Experiment with cloud providers while practially testing them.
 
 > ![Warning](images/warning.png) *Be careful with your allocation.*
 
 ---
 
-[NIST](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf) defines the term 
+[NIST](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf) defines the term
 
 *Infrastructure as a Service (IaaS)* as follows:
 
@@ -52,7 +52,7 @@ This includes
 * Azure
 * Google
 
-Additionally, we also have 
+Additionally, we also have
 
 * Watson
 

@@ -1,1 +1,1 @@
-# Week 4: Cloud Architectures 
+# Week 4: Cloud Architectures

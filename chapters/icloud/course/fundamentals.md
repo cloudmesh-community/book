@@ -124,7 +124,7 @@ Part D - Defining Clouds III
 Part E - Virtualization
 --------------------------------------
 
-In this section we cover 
+In this section we cover
 
 -   Virtualization Technologies, Hypervisors and the different
     approaches
@@ -139,7 +139,7 @@ In this section we cover
 Part F - Technology Hypecycle I
 ----------------------------------------------
 
-In this section we cover  the Technology Hypecycle and focus on 
+In this section we cover  the Technology Hypecycle and focus on
 
 -   Gartner's Hypecycles and especially that for emerging technologies
     in 2017 and 2016

@@ -38,19 +38,19 @@ files installed:
 
 : To install Java on the PI please use the following commands
 
-  ```bash 
+  ```bash
   pi$ sudo add-apt-repository ppa:webupd8team/java
   pi$ sudo apt-get update
   pi$ sudo apt-get install oracle-java8-installer
   pi$ echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~\.bashrc
-  pi$ source ~/.bashrc 
-  ``` 
+  pi$ source ~/.bashrc
+  ```
 
 **Scala**:
 
 : To install Scala you can use the following commands
 
-  ```bash 
+  ```bash
   pi$ sudo apt-get install scala
   ```
 
@@ -63,15 +63,15 @@ files installed:
 
   IN our example we assume we use 3 hosts. The hosts will be added to
   the file `/etc/hosts`. Please use IP numbers for your network
-  configuration. For us this is 
+  configuration. For us this is
 
-   ```bash 
+   ```bash
 	192.168.10.2		pi-master
 	192.168.10.3		pi-slave0
 	192.168.10.4	 	pi-slave1
    ```
 
-## Download 
+## Download
 
 Download the most recent version of Spark from the Apache website (we use here
 version 2.3.2).
@@ -84,19 +84,19 @@ version 2.3.2).
 
 ---
 
-* [[Apache Spark Latest Download](http://spark.apache.org/downloads.html)] 
+* [[Apache Spark Latest Download](http://spark.apache.org/downloads.html)]
 
 After the download is completed run the command
 
-```bash 
-pi$ wget https://www.apache.org/dyn/closer.lua/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz 
+```bash
+pi$ wget https://www.apache.org/dyn/closer.lua/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz
 ```
 
 ## Installation
 
 Create the folder for storing spark install files
 
-```bash 
+```bash
 pi$ sudo mkdir -p /opt/spark-2.3.0
 ```
 
@@ -108,17 +108,17 @@ pi$ bash tar -xzf spark-2.3.2-bin-hadoop2.7.tgz -C /opt/spark-2.3.0 --strip-comp
 
 Update the `PATH` variable
 
-```bash 
+```bash
 pi$ echo "export SPARK_HOME=/opt/spark-2.3.2" >> ~\.bashrc
 pi$ echo "export PATH=$PATH:$SPARK_HOME/bin" >> ~\.bashrc
 pi# echo "export PATH=$PATH:$SPARK_HOME/sbin" >> ~\.bashrc
-pi$ source ~/.bashrc 
+pi$ source ~/.bashrc
 ```
 
 Copy the template from `spark-env.sh.template` to `spark-env.sh`
 
-```bash 
-pi$ cp $SPARK_HOME/conf/spark-env.sh.template $SPARK_HOME/conf/spark-env.sh 
+```bash
+pi$ cp $SPARK_HOME/conf/spark-env.sh.template $SPARK_HOME/conf/spark-env.sh
 ```
 
 Edit `spark-env.sh` file to change the configurations and add the
@@ -133,10 +133,10 @@ export SPARK_WORKER_CORES=1
 
 Now edit slaves file on master node
 
-```bash 
+```bash
 cp $SPARK_HOME/conf/slaves.template $SPARK_HOME/conf/slaves
 vi $SPARK_HOME/conf/slaves
-``` 
+```
 
 And add the following content. (Change this according to the number of slaves you configure).
 
@@ -149,7 +149,7 @@ Note: The previously mentioned slaves are of the same names of the
 hostnames specified in the /etc/hosts file in the prerequisites
 section.
 
-## Run Spark	
+## Run Spark
 
 Now that you've followed the installation steps completely you can
 start the Spark cluster.  Since the SSH server configurations have
@@ -159,20 +159,20 @@ mentioned in the ```/etc/hosts``` file and setup the whole cluster.
 
 Run this on the master:
 
-```bash 
-$SPARK_HOME/sbin/start-all.sh 
+```bash
+$SPARK_HOME/sbin/start-all.sh
 ```
 
-You can now view the Spark cluster information in the Spark Master UI:  
+You can now view the Spark cluster information in the Spark Master UI:
 
 ```http://master_IP:8080```
 
-You can run the following command on the master to stop the cluster. 
-```bash 
-$SPARK_HOME/sbin/stop-all.sh 
+You can run the following command on the master to stop the cluster.
+```bash
+$SPARK_HOME/sbin/stop-all.sh
 ```
 
-![No](images/no.png) 
+![No](images/no.png)
 
 > ![Warning](images/warning.png) *see also the file `pi-spark-orig.md` as it still contains
 > useful information such as the output when running pi spark.*
@@ -186,15 +186,15 @@ to duplicated work
 * Phase 1: add keys: here you add keys to the hosts in the network
   using python hostlists as already demonstrated in cm4
 
-  `cm4 deploy keys --hosts HOSTNAMES [--key FILEANME]` uses the publick key 
+  `cm4 deploy keys --hosts HOSTNAMES [--key FILEANME]` uses the publick key
 
 * Phase 2: deploy spark: This deployes spark on the different hosts
 
-  `cm4 deploy spark --hosts HOSTNAMES` 
+  `cm4 deploy spark --hosts HOSTNAMES`
 
 * Phase 3: test spark: This runs a simple test to see if things work
 
-  `cm4 test spark --hosts HOSTNAMES` 
+  `cm4 test spark --hosts HOSTNAMES`
 
 For the implementation either ansible could be used, or simply a queue
 in python executing the various commands or shell scripts.

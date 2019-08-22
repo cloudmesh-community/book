@@ -27,7 +27,7 @@ Chameleon is broadly available to members of the US Computer Science
 research community and its international collaborators working in the
 open community on cloud research.  By emphasizing "open" we mean that
 the expectation is that any research performed on Chameleon will result
-in publication in a broadly available journal or conference. 
+in publication in a broadly available journal or conference.
 
 ### What are the best practices for Chameleon usage?
 
@@ -41,7 +41,7 @@ Best Practices for using Chameleon bare metal partitions:
     reservations (e.g., for a work day or two when you actually
     develop). Always release the reservation if you will not use the
     testbed for an extended period of time (e.g., when you leave for the
-    weekend or holidays). 
+    weekend or holidays).
 
 -   Automation is your Friend: You can always snapshot your work/images
     between sessions using the [snapshotting
@@ -65,7 +65,7 @@ Best Practices for using Chameleon bare metal partitions:
 ### Are there any limitations on Chameleon usage?
 
 We have two types of limitations, introduced to promote fair resource
-usage to all: 
+usage to all:
 
 -   Allocation: Chameleon projects are limited to a per-project
     allocation currently set to 20,000 service units for 6 months.
@@ -154,7 +154,7 @@ following groups:
 -   International research institutions: to promote intellectual
     exchange and federation with institutions abroad we support a
     limited number of international PIs with ongoing, active
-    collaborations with scientists in the US. 
+    collaborations with scientists in the US.
 
 -   NSF Graduate Student Fellows: While in most cases, a graduate
     student is ineligible to be PI of an allocation request, an
@@ -172,7 +172,7 @@ following groups:
     allocation as PI.
 
 We do occasionally provide case-by-case exceptions to this guideline in
-well-justified cases. 
+well-justified cases.
 
 If are eligible to be PI, in order to apply for a project  you need to
 make sure that your Chameleon profile reflects your status. You can do
@@ -382,7 +382,7 @@ reproduce the research of others or as a basis for their own research.
 appliances on the [Chameleon Appliance
 Catalog](https://www.chameleoncloud.org/appliances/) in order to get an
 idea of the categories you will want to contribute and what others have
-done. 
+done.
 
 Once you are ready to proceed, an appliance can be contributed to
 Chameleon in the following steps:
@@ -422,7 +422,7 @@ enter your template instead in the dedicated text box.
 
 As always, if you encounter any problems or want to share with us
 additional improvements we should do to the process, please do not
-hesitate to [submit a ticket](https://www.chameleoncloud.org/help/). 
+hesitate to [submit a ticket](https://www.chameleoncloud.org/help/).
 
 ### How can I manage an appliance on Chameleon Appliance Catalog?
 

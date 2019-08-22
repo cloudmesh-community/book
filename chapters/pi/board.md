@@ -14,7 +14,7 @@ We will give a small introduction to the platform next.
 ## Raspberry PI 3 B
 
 Till February 2018 the Raspberry PI 3 B was the newest model. Within
-this class we have access to about 100 of them. The Raspberry PI 3 B is shown in @fig:pi3 
+this class we have access to about 100 of them. The Raspberry PI 3 B is shown in @fig:pi3
 
 ![Raspberry PI 3B](images/pi-3.jpg){#fig:pi3}
 
@@ -84,7 +84,7 @@ The PI 3B, 3B+ and Zero come with a number of pins that can be used to
 attach sensors. It is convenient to have the pinout available for your
 project. Hence we provide a pinout layout in @fig:pi-layout. Other
 Pis will have a differnt pinout and you will have to locate them on
-the internet. 
+the internet.
 
 ![Pinout](images/rasp3.jpg){#fig:pi-layout}
 

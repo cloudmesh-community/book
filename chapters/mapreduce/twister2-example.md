@@ -1,11 +1,11 @@
 # Twister2 Examples
 
-Twister documentation lists several examples[@www-twister2-examples] that users can leverage to better understand the 
+Twister documentation lists several examples[@www-twister2-examples] that users can leverage to better understand the
 Twister2 API's. Currently there are several Communication API examples and Task API examples available in the Twister2
 documentation. In this section we will go through how an example can be executed with Twister2.
 
 ## Submitting a Job
-In order to run an example users need to submit the example to Twister2 using the `twister` command. This command 
+In order to run an example users need to submit the example to Twister2 using the `twister` command. This command
 is found inside the bin directory of the distribution.
 
 

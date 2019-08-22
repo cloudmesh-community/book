@@ -33,44 +33,44 @@ Components:
 
 2. Cluster Volumes - Volume can store upto 64 TB of data replicated
    across availability zones.
-   
+
 ## Amazon DocumentDB Features and Benefits
 
-* *MongoDB-compatible*: Implemented using the Apache 2.0 open source 
-  MongoDB 3.6 API by emulating the responses that a MongoDB client 
-  expects from a MongoDB server. This allows you to use your existing 
+* *MongoDB-compatible*: Implemented using the Apache 2.0 open source
+  MongoDB 3.6 API by emulating the responses that a MongoDB client
+  expects from a MongoDB server. This allows you to use your existing
   MongoDB drivers and tools with Amazon DocumentDB.
-  
-* *Highly available*: Designed for 99.99% availability with six copies 
-  of data across three AWS Availability Zones (AZs). Switchs to read 
+
+* *Highly available*: Designed for 99.99% availability with six copies
+  of data across three AWS Availability Zones (AZs). Switchs to read
   replica in the event of a failure–typically in less than 30 seconds.
   Data is automatically backed up in S3 for 35 days.
-  
-* *Performance at scale*: It uses a distributed, fault-tolerant, 
-  self-healing storage system that auto-scales up to 64 TB per database 
-  cluster. Reduces database I/O by writing only database changes to 
+
+* *Performance at scale*: It uses a distributed, fault-tolerant,
+  self-healing storage system that auto-scales up to 64 TB per database
+  cluster. Reduces database I/O by writing only database changes to
   the storage layer
-  
-* *Highly secure*: Provides multiple levels of security for your database, 
+
+* *Highly secure*: Provides multiple levels of security for your database,
   including network isolation using Amazon VPC, encryption at rest using
-  keys you create and control through AWS Key Management Service (KMS), 
-  and encryption-in-transit using Transport Layer Security (TLS). 
-  
-* *Fully managed*: Automatically and continuously monitors and backs up 
-   your database to Amazon S3, enabling point-in-time recovery 
-   (up to the second for the last 35 days). Integrates with Amazon CloudWatch, 
-   so you can monitor over 20 key operational metrics for your database 
+  keys you create and control through AWS Key Management Service (KMS),
+  and encryption-in-transit using Transport Layer Security (TLS).
+
+* *Fully managed*: Automatically and continuously monitors and backs up
+   your database to Amazon S3, enabling point-in-time recovery
+   (up to the second for the last 35 days). Integrates with Amazon CloudWatch,
+   so you can monitor over 20 key operational metrics for your database
    instances via the AWS Management Console.
-  
+
 ##  AWS Document database Pricing
 
-* *On-Demand Instance Pricing*: No commitments and pay by hour 
+* *On-Demand Instance Pricing*: No commitments and pay by hour
 * *Database Storage and IOs* : Storage is billed in per GB-month increments and IOs are billed in per million request increments.
 * *Backup Storage* : Cost associated with cluster backups and any customer-initiated cluster snapshots.
 
 ## How to provision Document database
 
-User needs to have a AWS account to use the Document DB service. First step is to create a AWS account. Once created login to the account. 
+User needs to have a AWS account to use the Document DB service. First step is to create a AWS account. Once created login to the account.
 
 An AWS account can be created using the link below
 
@@ -82,7 +82,7 @@ Login to the AWS account using the link below.
 
 [AWS Console URL](https://aws.amazon.com/console/).
 
-Upon successful login, select Document DB from the Database section or 
+Upon successful login, select Document DB from the Database section or
 alternatively, you can type DocumentDB in the search bar to look up.
 
 ![AWS DocumentDB](images/documentdb-0.png){#fig:aws-DocumentDB-console}
@@ -107,7 +107,7 @@ Once done click the create cluster button
 
 ### Step 3: Cluster creation process
 
-Once all the required configuration has been entered and create cluster is clicked. Document DB 
+Once all the required configuration has been entered and create cluster is clicked. Document DB
 creates the clusters with the number of instance that was provided as part of cluster configuration.
 It takes sometime depending on the number of instances in the cluster.
 
@@ -125,7 +125,7 @@ All the cluster instances that got created in the process as per configuration c
 
 ### Step 4: Cluster summary and connection information from Mongo and Application.
 
-Cluster Information along with the required connection information from Mongo and for 
+Cluster Information along with the required connection information from Mongo and for
 application is available to connect.
 
 ![AWS DocumentDB](images/documentdb-6.png){#fig:aws-cluster connection Information}

@@ -28,7 +28,7 @@ build a quick frame form Lego pieces such as a
 - A number of connector pins
   [[link]](https://www.brickowl.com/catalog/lego-technic-pin-with-lengthwise-friction-ridges-and-center-slots-2780)
   [[link]](https://www.brickowl.com/catalog/lego-long-pin-with-friction-6558)
-  
+
 The cost is about $0.25 per piece = $2.74 per pi.
 
 So if we are having 100 pis we end up with $274. However

@@ -7,7 +7,7 @@ provide such REST sinterfaces. This is valid for IaaS, PaaS, and SaaS.
 Instead of using a REST service for IaaS, let us here inspect a REST
 service for the Github.com platform.
 
-Its interfaces are documented nicely at 
+Its interfaces are documented nicely at
 
 * <https://developer.github.com/v3/>
 
@@ -82,11 +82,11 @@ Let us assume we have a program called `issues.py` that prints the
 table in markdown format
 
 ```bash
-$ python issues.py 
+$ python issues.py
 ```
 
 
-An example for such a program is listes at. 
+An example for such a program is listes at.
 
 * <https://github.com/cloudmesh-community/book/blob/master/bin/issues.py>
 
@@ -194,7 +194,7 @@ intermediary file we see a list of items such as
         "author_association": "CONTRIBUTOR",
         "body": "Develop a section about Virtualization"
     },
-    
+
 ...
 ]
 ```
@@ -218,21 +218,21 @@ E.github.issues.1:
 
 E.github.issues.2:
 
-> In the simple program we hardcoded the number of page requests. 
+> In the simple program we hardcoded the number of page requests.
 > How can we find out exactly how many pages we need to retrieve?
 > Implement your solution
 
 E.github.issues.3:
 
-> Be inspired by the many REST interfaces. How can they be used 
+> Be inspired by the many REST interfaces. How can they be used
 > to mine interesting things.
 
 E.github.issues.4:
 
-> Can you create a project, author, or technology map based on 
-> information that is available in github. For example python 
-> projects may include a requirements file, or developers may 
-> work on some projects together, but others do other 
+> Can you create a project, author, or technology map based on
+> information that is available in github. For example python
+> projects may include a requirements file, or developers may
+> work on some projects together, but others do other
 > projects with others can you create a network?
 
 E.github.issues.5:

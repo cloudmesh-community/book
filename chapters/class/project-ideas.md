@@ -18,14 +18,14 @@ so please look at the volumes):
 3. [Projects in Big Data Software and Applications, Gregor von Laszewski, Spring 2017](https://github.com/cloudmesh/sp17-i524/blob/master/project/projects.pdf) (196 pages)
    * *Automated Sharded MongoDB Deployment and Benchmarking for Big Data Analysis*, Mark McCombe, Gregor von Laszewski
 4. [Cloud and Big Data Technologies Vol 9, Gregor von Laszewski, Spring 2018](http://cyberaide.org/papers/vonLaszewski-cloud-vol-9.pdf) (189 pages)
-   * *Location based crime data search and analysis with Spark UDF*, 
+   * *Location based crime data search and analysis with Spark UDF*,
      Kadupitiya Kadupitige, Gregor von Laszewski
-   * *Big Data Reference Architecture using Python Celery*, 
+   * *Big Data Reference Architecture using Python Celery*,
      Sabra Ossen, Gregor von Laszewski
    * *Benchmarking a Sentiment Analysis Algorithm Using Hadoop
-     on Multiple Platforms*, 
+     on Multiple Platforms*,
      Min Chen, Bertolt Sobolik, Gregor von Laszewski
-   * *Leveraging REST for cloud portability*, 
+   * *Leveraging REST for cloud portability*,
      Michael Robinson, Sushant Athaley, Harshad Pitkar
 
 One important policy we have in the class is that all projects must be
@@ -77,7 +77,7 @@ Please register your project idea you need to do two things. Fist you
 file a github issue with the title
 
 	Project: Coursenumber: Meaningful Project title
-	
+
 You assign it to all team members in your project. An abstract is
 submitted in that issue that describes what you do in your
 project. The course number is the number of your course. We will be
@@ -95,15 +95,15 @@ to contribute to this. This is done in collaboration with NIST. Other
 projects include the deployment of cloud clusters This might includes
 the following technology tech
 
-1. Slurm/mpi 
-2. Docker 
-3. Docker swarm 
-4. Kubernetes 
-5. Ssh worker 
-6. OpenFaas 
-7. OpenWhisk 
-8. Hadoop 
-9. Spark. 
+1. Slurm/mpi
+2. Docker
+3. Docker swarm
+4. Kubernetes
+5. Ssh worker
+6. OpenFaas
+7. OpenWhisk
+8. Hadoop
+9. Spark.
 
 Naturally they need to be *reproducible* deployments. To test out such
 projects, you will also need to demonstrate a benchmark on an
@@ -143,19 +143,19 @@ would be a scalability test.
 
 #### Project Type B: Reproducible Raspberry PI Projects
 
-The raspberry PI projects are divided topically by class. 
+The raspberry PI projects are divided topically by class.
 In this project you will be developing or leveraging form an existing
 tutorial developed as part of the class. You will be focusing on how to
 create for each tem member on one of the following technologies
 
-1. Slurm/mpi 
-2. Docker 
-3. Docker swarm 
-4. Kubernetes 
-5. Ssh worker 
-6. OpenFaas 
-7. OpenWhisk 
-8. Hadoop 
+1. Slurm/mpi
+2. Docker
+3. Docker swarm
+4. Kubernetes
+5. Ssh worker
+6. OpenFaas
+7. OpenWhisk
+8. Hadoop
 9. Spark
 
 You will create a reproducible deployment and work towards the
@@ -196,7 +196,7 @@ the set up procedure is excellent, and includes automated deployment
 scripts with minimal input by hand (this requires programming).
 
 
-#### Project Type C: Reproducible Data Analysis 
+#### Project Type C: Reproducible Data Analysis
 
 This project requires you to use one cloud IaaS resource such as
 chameleon, Futuresystems Echo, AWS, or Azure. You will be deploying on
@@ -276,7 +276,7 @@ Hadoop was recently updated to Hadoop 3.0. Develop reproducible
 deployment scripts for a variety of infrastructures (container, PI,
 OpenStack, AWS, Azure, google, ...)
 
-Start with docker. 
+Start with docker.
 
 -   <https://github.com/sequenceiq/hadoop-docker/blob/master/Dockerfile>
 

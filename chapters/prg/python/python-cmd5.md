@@ -194,7 +194,7 @@ E.CMD5.4
 > If you have useful extensions that you like us to add by default,
 >  please work with us.
 
-E.CMD5.5 
+E.CMD5.5
 
 > At this time one needs to quote in some commands the `"` in the
 > shell command line. Develop and test code that fixes this.

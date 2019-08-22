@@ -192,7 +192,7 @@ The spelling of `README.yml` is` README.yml` and not
 
 please correct if needed. We will not grade any assignments if your
 README.yaml or notebook.md is misspelled or missing or is not
-following our simple format. 
+following our simple format.
 
 ## How to open the ePub from Github?
 
@@ -293,7 +293,7 @@ in question forget to read the posts in piazza?
 ## What if i committed a wrong file to github, a.g. a private key?
 
 The answer to this question is more complicated than you think. Thus
-the best way to deal with it is to 
+the best way to deal with it is to
 
 AVOID IT:
 

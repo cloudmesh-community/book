@@ -1,7 +1,7 @@
 HBase WordCount
 ===============
 
- 
+
 
 \TODO{Hyungro: fix hyperlinks, use exercise instead or project where
   appropriate}
@@ -75,7 +75,7 @@ So, while similar to Hadoop WordCount (See [Useful
 Links](#link_exercise4)), the differences are that data is stored on
 HBase and URI is the \"filename\" that contains all the text content.
 
-### Mapper, Reducer and Main Program 
+### Mapper, Reducer and Main Program
 
 Now we are going to implement the HBase WordCount. Our implementation
 consists of three main parts:
@@ -115,10 +115,10 @@ static class WcMapper extends TableMapper<Text, LongWritable> {
         public void map(ImmutableBytesWritable row, Result result, Context context) throws IOException, InterruptedException {
             byte[] contentBytes = result.getValue(Constants.CF_DETAILS_BYTES, Constants.QUAL_CONTENT_BYTES);
             String content = Bytes.toString(contentBytes);
-            
+
             // TODO: write your implementation for counting words in each row, and generating a <word, count> pair
             // Hint: use the "getWordFreq" function to count the frequencies of words in content
- 
+
         }
 }
 ```
@@ -149,19 +149,19 @@ public static class WcReducer extends TableReducer<Text, LongWritable, Immutable
     public void reduce(Text word, Iterable<LongWritable> freqs, Context context)
                 throws IOException, InterruptedException {
         /*TODO: write your implementation for getting the final count of each word
-        and putting it into the word count table 
-        Hint -- the schema of the WordCountTable is: 
-           rowkey: a word, column family: "frequencies", 
+        and putting it into the word count table
+        Hint -- the schema of the WordCountTable is:
+           rowkey: a word, column family: "frequencies",
            column name: "count", cell value: count of the word
         Check iu.pti.hbaseapp.Constants for the constant values to use.
     */
         long totalFreq = 0;
      }
 }
- 
+
 ```
 
-### Main program 
+### Main program
 
 The main function has been provided as standard initialization, although
 you can modify it to suit your own style. Hint: the provided code is
@@ -180,14 +180,14 @@ code.
 $ cd /root/MoocHomeworks/HBaseWordCount/
 $ vim src/iu/pti/hbaseapp/clueweb09/WordCountClueWeb09.java
 uend{lstlisting}
- 
+
 \subsection{Compile and run your code}
 For your convenience, we have provided a one-click script
 compileAndExecWordCount.sh for compiling and execution. Standard error messages
 such as "compile errors, execution errors, etc." will be redirected on the
 screen. You may debug it based on the returned messages.
 
-\begin{lstlisting}[language=bash] 
+\begin{lstlisting}[language=bash]
 $ cd /root/MoocHomeworks/HBaseWordCount
 $ ./compileAndExecWordCount.sh
 ```

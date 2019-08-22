@@ -22,7 +22,7 @@ following:
 
 -   Complete source code
 
--   
+-
 
     A document with the following details:
 
@@ -49,7 +49,7 @@ You are required to turn in the following items in a zip file
 
 -   The source code of Hadoop PageRank you implemented.
 
--   
+-
 
     Technical report (username_HadoopPageRank_report.docx) that contains:
 

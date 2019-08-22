@@ -53,7 +53,7 @@ Languages
 
 * [R](https://cran.r-project.org/doc/contrib/Short-refcard.pdf)
 
-Python 
+Python
 
 * [Python](https://dzone.com/refcardz/core-python)
 * [PythonData](https://dzone.com/refcardz/data-mining-discovering-and)

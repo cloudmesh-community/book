@@ -248,8 +248,8 @@ After the write process has completed, macOS may inform you that \*The
 disk you inserted was not readable by this computer\*. Do not select
 Initialise. Instead, select Eject and remove the USB device.
 
-## Ubuntu on an USB stick for Windows 10 :o2: :question: 
- 
+## Ubuntu on an USB stick for Windows 10 :o2: :question:
+
 See exercise Development.Server.1
 
 Material for this directions were taken from a detailed tutorial

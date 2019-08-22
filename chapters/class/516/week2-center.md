@@ -1,4 +1,4 @@
-# Week 2: Cloud Data Centers 
+# Week 2: Cloud Data Centers
 
 ## Lab Activities
 

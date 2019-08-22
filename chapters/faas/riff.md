@@ -1,6 +1,6 @@
 # Riff :o2:
 
-![No](images/no.png) 
+![No](images/no.png)
 
 ![Question](images/question.png)
 

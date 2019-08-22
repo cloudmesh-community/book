@@ -10,7 +10,7 @@ the `assignments` folder. The three assignments are:
 * Chapter contributions
 * Project
 
-To conduct these assignments you will need a number of accounts. 
+To conduct these assignments you will need a number of accounts.
 
 
 ## Account Creation
@@ -58,7 +58,7 @@ tests and exams. They showcase your understanding of the field.
 
 :  Sample sections contributed by students include:
 
-   * Section [Microsoft Nafik Data Center](#sec:natick) 
+   * Section [Microsoft Nafik Data Center](#sec:natick)
    * Section [Lambda Expressions](#lambda-expressions)
 
 **Chapter with Example:**
@@ -120,11 +120,11 @@ that may interrest you.
 
 
 
-## Mini Projects that could Substitute a Chapter 
+## Mini Projects that could Substitute a Chapter
 
 In some special cases it is possible to substitute the chapter and/or
 section contributions with an additional mini project, that however
-still has to be documented. An example of such a mini project is our 
+still has to be documented. An example of such a mini project is our
 `cm-burn` command that creates Raspberry PI OS based on
 manipulation of the file system
 
@@ -136,7 +136,7 @@ project does not substitute the class project.
 
 A mini project may be related to topics such as:
 
-* Raspberry PI 
+* Raspberry PI
 * Sechi Disk Partial Image Analysis
 * NIST OpenAPI definition and implementation
 
@@ -145,7 +145,7 @@ Mini projects must be suggested and approved by Dr. Gregor von Laszewski.
 If you choose the *Cloudmesh Version 4* project, you are allowed to
 substitute Sections and Mini Chapters with a single large project that
 requires less documentation. However, you must contribute to this
-project in a significant way. The project link is 
+project in a significant way. The project link is
 
 * <https://github.com/cloudmesh-community/cm>
 
@@ -178,7 +178,7 @@ License:
   project. If your project uses different licenses, please add a
   README.md file that describes which packages are used and what
   licenses these packages have.
-    
+
 Project Report:
 
 : A project report is to be delivered and continuously improved
@@ -204,7 +204,7 @@ Project Report:
   A single page has about 1000 words in ACM format. References are managed in
   bibtex as documented in:
 
-  * <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true> 
+  * <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true>
 
 Project Code:
 
@@ -219,7 +219,7 @@ Project Code:
 Data:
 
 : Data is to be hosted on IU's Google drive, if needed. If you have
-  larger data, it should be downloaded from the internet. It is 
+  larger data, it should be downloaded from the internet. It is
   your responsibility to develop a download program. The data **must**
   not be stored in GitHub. You are expected to write a python
   program that downloads the data either from the Web or IU's data
@@ -278,7 +278,7 @@ automate most of the steps.
 
 You have plenty of time to execute a wonderful project but you need to
 work consistently on it. Starting one week before the deadline will
-not work. 
+not work.
 
 The deliverables included need to be updated according to your
 specific project throughout the semester, for example if you do Edge
@@ -304,7 +304,7 @@ deliverables will include the following:
 - For python use a requirements.txt file and develop a `setup.py` so
   your code can be installed with `pip install .`
 
-- For docker use a Dockerfile 
+- For docker use a Dockerfile
 
 - Write a report that typically includes the following sections:
 
@@ -365,7 +365,7 @@ it with a **significant** larger programming contribution.
 In addition to interfacing with clouds via an API, we are also
 interested in displaying the interactions in Javascript. So if you have
 Javascript skills this may be a good opportunity for you to contribute
-to the project with your previous knowledge. 
+to the project with your previous knowledge.
 
 ## Submission of sections and chapters and projects
 
@@ -380,10 +380,10 @@ to be graded and have included all hids for people that contributed to that
 section.
 
 In addition, simply add them to your README.yml file in your github repo.
-Add the following to it (I am using a18-516-18 as example). 
+Add the following to it (I am using a18-516-18 as example).
 
 Please look at <https://github.com/cloudmesh-community/fa18-516-18> and <https://raw.githubusercontent.com/cloudmesh-community/fa18-523-62/master/README.yml>
-for an examples. Please note that if you work in a group, the code and report is supposed to be only stored 
+for an examples. Please note that if you work in a group, the code and report is supposed to be only stored
 in the first hid mentioned in the group field. If you store it in multiple directories your project will be rejected.
 
     section:
@@ -426,7 +426,7 @@ working example. Depending on class, your format may be slightly
 different. We will inform you if additional format changes are needed
 throughout the semester.
 
-## Participation 
+## Participation
 
 In addition to these artifacts, there will also be a participation
 component in class that will be determined based on your productive

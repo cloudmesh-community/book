@@ -53,7 +53,7 @@ installed python 7 different times on his macOS machine, while another
 student had 3 different installations, all of which conflicted with each
 other as they were not set up properly and the students did not even
 realize that they were using Python incorrectly on their computer due to
-setup issues and conflicting libraries. 
+setup issues and conflicting libraries.
 
 We recommend that you inspect if you have a files such as `~/.bashrc` or
 `~/.bashrc_profile` in your home directory and identify if it activates
@@ -144,10 +144,10 @@ pyenv
 Next we recommend to update pip
 
 ```bash
-$ ENV2 
-$ pip install pip -U 
+$ ENV2
+$ pip install pip -U
 $ ENV3
-$ pip install pip -U 
+$ pip install pip -U
 ```
 
 ### Installation pyenv via Homebrew
@@ -198,7 +198,7 @@ the command succeeds:
     $ sudo pip install virtualenvwrapper
 
     $ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-    $ git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv   
+    $ git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
     $ git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
 
     $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
@@ -207,12 +207,12 @@ the command succeeds:
 You can also install pyenv using curl command in following way:
 
     curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
-    
-Then install its dependencies: 
+
+Then install its dependencies:
 
     sudo apt-get update && sudo apt-get upgrade
-    sudo apt-get install -y make build-essential libssl-dev 
-    sudo apt-get install -y zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev 
+    sudo apt-get install -y make build-essential libssl-dev
+    sudo apt-get install -y zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev
     sudo apt-get install -y wget curl llvm libncurses5-dev git
 
 Now that you have installed pyenv it is not yet activated in your
@@ -276,7 +276,7 @@ now easy. Simply use the following commands:
     (ENV2) $ pyenv activate ENV3
     (ENV3) $ pyenv activate ENV2
     (ENV2) $ pyenv deactivate ENV2
-    (2.7.16) $ 
+    (2.7.16) $
 
 To make it even easier, you can add the following lines to your
 `.bash_profile` file:
@@ -315,7 +315,7 @@ onto the ENV3 environment. Than you need to execute the following steps:
     pip install pip -U
 
 With the pi install command, we make sure we have the newest version
-of pip. In case you get an error, you may have to update xcode as 
+of pip. In case you get an error, you may have to update xcode as
 follows and try again:
 
       xcode-select --install
@@ -349,7 +349,7 @@ install it, with *pyenv*.
 ### Miniconda
 
 > ![](images/warning.png){height=12pt}
-> *This section about miniconda is experimental and has not been 
+> *This section about miniconda is experimental and has not been
 > tested. We are looking for contributors that help completing
 > it. If you use anaconda or miniconda we recommend to manage it via
 > pyenv.*
@@ -429,7 +429,7 @@ installed:
     2.7.16/envs/ENV2
     3.7.1
     3.7.1/envs/ENV3
-    ENV2 
+    ENV2
     ENV3
     * anaconda3-4.3.1 (set by PYENV_VERSION environment variable)
 

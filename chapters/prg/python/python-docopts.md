@@ -13,7 +13,7 @@ It can be installed with
 $ pip install docopt
 ```
 
-A sample programs are located at 
+A sample programs are located at
 
 * <https://github.com/docopt/docopt/blob/master/examples/options_example.py>
 
@@ -21,7 +21,7 @@ A sample program of using doc opts for our purposes loks as follows
 
 
 ```python
-"""Cloudmesh VM management 
+"""Cloudmesh VM management
 
 Usage:
   cm-go vm start NAME [--cloud=CLOUD]
@@ -38,7 +38,7 @@ Options:
   --drifting    Drifting mine.
 
 ARGUMENTS:
-  NAME     The name of the VM` 
+  NAME     The name of the VM`
 """
 from docopt import docopt
 

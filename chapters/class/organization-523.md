@@ -34,7 +34,7 @@ are truly outstanding.
 
 The content for this class will be available through a series of
 documents that will be regularly updated and are linked from this
-document. All communication is done with Piazza. 
+document. All communication is done with Piazza.
 issues.
 
 
@@ -43,7 +43,7 @@ First Week
 
 In the first week we will be introducing you how we communicate to you.
 Naturally you need to register for the class. Once you register you need
-to set up a number of services. 
+to set up a number of services.
 
 
 Access to Clouds
@@ -195,7 +195,7 @@ to help as co-author.
 Parallel Tracks
 ---------------
 
-In this class we have three parallel tracks. 
+In this class we have three parallel tracks.
 
 ### Track 1: Practice
 
@@ -217,7 +217,7 @@ enough knowledge so you can conduct a project with it. We will build
 on these technologies to introduce you to python libraries that can be
 used for big data. Not every section in the Python chapter will need
 to be used in this class. At minimum you must understand python
-classes, and the map reduce function. 
+classes, and the map reduce function.
 
 ### Track 2: Theory
 
@@ -267,7 +267,7 @@ if you write a document about "Big Data in Baseball", you do not spend
 1.5 pages to describe what big data is and only half a page where
 baseball fits in. What you should do is focus on the topic. A chapter
 could also include some practical lessons with real programming
-lessons. 
+lessons.
 
 
 ### Track 4: Term Paper/Project

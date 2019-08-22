@@ -2,9 +2,9 @@
 
 As an interactive, dynamically-typed language, there are many ways to run and
 interact with Julia code, including directly in a browser using
-<https://www.Juliabox.com>, which requires no installation. 
+<https://www.Juliabox.com>, which requires no installation.
 
-### Dependencies: 
+### Dependencies:
 
 First check to make sure that you have the required dependencies installed:
 <https://github.com/JuliaLang/julia#required-build-tools-and-external-libraries>

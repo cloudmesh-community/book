@@ -69,7 +69,7 @@ has a racing stripe and if the author thinks the car is fast or
 not @tbl:fast-car.
 
 : Car Data {#tbl:fast-car}
-  
+
 | Car Name |              Horsepower (HP) |  Racing Stripe (Yes or No)|  Fast (Yes or No)  |
 |  ------------------- | ----------------- | ------------------------- | ------------------ |
 | Toyota Prius                    | 120      |               0               |       0          |
@@ -234,13 +234,13 @@ to our selected player.
 
 In the python prompt type:
 
-    most_similar_to_player 
+    most_similar_to_player
 
 The most similar player to your selected player should appear.
 
 ## Machine Learning and Cloud Services
 
-### Introduction and Regression 
+### Introduction and Regression
 
 This video lecture covers logistic and linear regression models in
 additon to clustering models. The  algorithims for the three methods
@@ -249,7 +249,7 @@ techinqies are introduced including WebPlotviz and matplotlib.
 
 [![Video](images/video.png) Introduction to Machine Learning for Cloud Services and Regression 10:55](https://www.youtube.com/watch?v=VdgGy0266Sk&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2&t=0s)
 
-### K-means Clustering 
+### K-means Clustering
 
 Video lecture and slides cover an introduction to K-means clusters.
 
@@ -271,11 +271,11 @@ Video lecture and slides cover clustering examples.
 ### General Clustering with Examples
 
 Video lecture and slides take a generalized apprach to clustering with
-examples from Dr. Geoffery Fox's research. 
+examples from Dr. Geoffery Fox's research.
 
 [![Video](images/video.png) General Clustering and Research Examples 22:28](https://www.youtube.com/watch?v=1Tn6LyiIhzw&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=5)
 
-### In Depth Example with four centers 
+### In Depth Example with four centers
 
 Video lecture and slides use 1000 data points and four artifical
 centers to provide and in depth example of clustering. Code provided.
@@ -330,7 +330,7 @@ to get the data into the appropriate format once downloaded.
                 ftrain.write(line)
             else:
                 ftest.write(line)
-            count = count + 1        
+            count = count + 1
 
     def get_data(filename):
         data = load_svmlight_file(filename)
@@ -378,13 +378,13 @@ the partitioning percentage.
     @app.route('/api/get/data/test')
     def gettestdata():
         Xtest, ytest = get_data("iris.scale_test")
-        
+
         return "Return Xtest and Ytest arrays"
-        
+
     @app.route('/api/get/data/train')
     def gettraindata():
         Xtrain, ytrain = get_data("iris.scale_train")
-        
+
         return "Return Xtrain and Ytrain arrays"
 
 The last bit of code is the implementation of SVM into a RESTful API
@@ -457,7 +457,7 @@ show up, this was noticed in the url sections.
                 ftrain.write(line)
             else:
                 ftest.write(line)
-            count = count + 1        
+            count = count + 1
 
     def get_data(filename):
         data = load_svmlight_file(filename)
@@ -482,13 +482,13 @@ show up, this was noticed in the url sections.
     @app.route('/api/get/data/test')
     def gettestdata():
         Xtest, ytest = get_data("iris.scale_test")
-        
+
         return "Return Xtest and Ytest arrays"
 
     @app.route('/api/get/data/train')
     def gettraindata():
         Xtrain, ytrain = get_data("iris.scale_train")
-        
+
         return "Return Xtrain and Ytrain arrays"
 
     @app.route('/api/experiment/svm')
@@ -541,7 +541,7 @@ defined ratio entered through the url.
                 ftrain.write(line)
             else:
                 ftest.write(line)
-            count = count + 1 
+            count = count + 1
 
 Now for defining the endpoint, naturally it starts the same way as the
 static version however now we must add a part that allows for the user

@@ -28,14 +28,14 @@ Course material will be distributed as ePubs. Howevr you will be
 required to research also some topics on the on teh internet. Cloud
 Computing is such an evolving field that changes frequently. To allow
 you to learn the newest things, we ask you to help us updating the ePub
-and to use additional resources as appropriate. 
+and to use additional resources as appropriate.
 
 The list includes:
 
 * Introduction to Python
-* Using Markdown for Academic Papers 
+* Using Markdown for Academic Papers
 * Plagiarism Certificate
-* ... 
+* ...
 * ![](images/tech-cover.jpg){width=50px} [Cloud Technologies, Gregor von Laszewski](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)
 
 * <https://github.com/cloudmesh-community/proceedings-fa18/tree/master/project-report>
@@ -43,14 +43,14 @@ The list includes:
   A single page has about 1000 words in ACM format. References are managed in
   bibtex as documented in:
 
-* <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true> 
+* <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true>
 
 
 ## Help
 
 If you take our class, please use piazza to ask for help. This is
 important as questions may be answered by different TAs based on
-expertise. Please, do not send e-mail to the instructors. TAs are 
+expertise. Please, do not send e-mail to the instructors. TAs are
 not allowed to answer e-mail send to them personally.
 
 ## How to Take this Class
@@ -67,14 +67,14 @@ are two different ways on how you can take this class.
 * Way 2: *Linear form.* The lecture notes are just like a book in the
   syllabus table. We add sections in a logical fashion to the book
   once they become available. The section form a linear progression
-  and you can go through the book in linear fashion. 
+  and you can go through the book in linear fashion.
 
 Please note that we have set asside a recommended set of weekly
 *Lab activities*. These are integrated into your final grade, so it is
 important to do them. They also will let us know if you have any issues
 and if you participate in this class. As such your activity will be
-integrated in a participation grade. You certainly can work ahead. Lab 
-activities are simply graded with pass fail. 
+integrated in a participation grade. You certainly can work ahead. Lab
+activities are simply graded with pass fail.
 
 Typically,  Lab activities are supposed to be completed within one week
 as it allerts us of problems you might have that we can than address.
@@ -83,10 +83,10 @@ Lab activities will not receive any credit if you are a residential
 student and the activity has not been completed within one week.
 However, residential students  will get two **Delay a Lab for One
 Week** passes that you can apply to any of the Labs and stil get credit.
-  
+
 If you are an online student we recommend that you finish the Labs also
 in the same week. However, you will get eight **Delay a Lab for One
-Week** passes that you can apply to any of the Labs. 
+Week** passes that you can apply to any of the Labs.
 
 
 Please not that if you would need to postone a lab for two weeks, you
@@ -94,7 +94,7 @@ need to use two passes. Lab passes expire one month before the last day
 of class. You will have to complete all labs by that time. No credit
 will be given if this dealine is missed for any delayed Labs as TAs must
 focus their attention on project support.
-   
+
 ## Assignments
 
 Besides the Lab's, we have only three main assignments in this class.
@@ -127,7 +127,7 @@ A section is a small document (usually about 200 words but no less) that
 explains a topic which is not yet in the handbook or improves an
 existing section significantly. It is typically multi-paragraphs long
 and can even include an example if needed. Sections can be theoretical,
-or explain a programming related aspects including an example. 
+or explain a programming related aspects including an example.
 Typically an A student contributes 2 such sections.
 
 Sample sections contributed by students include:
@@ -145,7 +145,7 @@ easier to write more than less. You will be contributing a unique and
 **significant** chapter that can be used by other students in the class
 and introduces the reader to a general topic related to the topic of the
 class.
-  
+
 Chapters can be theoretical, but most often students prefer the creation
 of practical contributions.  When doing a practical section, it is
 expected to develop a practical example demonstrating how to use a
@@ -173,7 +173,7 @@ sample of a student contributed chapter is
 
 The objective of the project is to define a clear problem statement
 and create a framework to address that problem as it relates to cloud
-computing. 
+computing.
 
 A project is the major activity that you chose as part of your class.
 This includes a project report* or *manual* and working project code.
@@ -186,7 +186,7 @@ detailed discussion is to be held on what has been improved.
 In this class it is especially important to address the reproducibility
 of the deployment. A test and benchmark, possibly including a
 *downloadable* dataset, must be used to verify the correctness of your
-approach. 
+approach.
 
 
 #### License
@@ -196,7 +196,7 @@ Apache 2.0 License. You will be required to add a LICENCE.txt file and
 describe how other software, if used, can be reused in your project. If
 your project uses different licenses, please add a README.md file that
 describes which packages are used and what licenses these packages have.
-    
+
 #### Project Report
 
 A project report is to be delivered and continuously improved throughout
@@ -212,23 +212,23 @@ required:
 -    800 words, one student in the project
 -   1200 words, two students in the project
 -   1600 words, three students in the project
-  
+
 The report is written in markdown and checked into github.
 A Report could be substituted by a manual and benchmarks.
-  
+
 
 For certain projects, the requirement of a report can be waved or is
-reduced while replacing it with more programming activities. This includes 
+reduced while replacing it with more programming activities. This includes
 
 * Any project that enhances cloudmesh
 * Building a large cloud cluster with Rasperri Pi's
-* Any Application project showcasing NIST big data reference architecture 
+* Any Application project showcasing NIST big data reference architecture
   use (there is a hard deadline of the NIST project by Dec 1st).
 
-However you still have to do a manual and usage examples, benchmarks and 
+However you still have to do a manual and usage examples, benchmarks and
 pytests for them.
 
-  
+
 #### Project Code
 
 This is the **documented** and **reproducible** code and scripts that
@@ -293,28 +293,28 @@ automate most of the steps.
 
 You have plenty of time to execute a wonderful project but you need to
 work consistently on it. Starting one week before the deadline will
-not work. 
+not work.
 
-In general your deliverables will include the following 
+In general your deliverables will include the following
 (We will address and explain them in a Lab):
 
 - Provide benchmarks.
 
 - Take results in a cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
-  created and deployed based on your documentation. 
+  created and deployed based on your documentation.
 
 - Each team member must provide a benchmark on their computer and a
-  cloud IaaS, where the cloud is different from each team member. 
-  
+  cloud IaaS, where the cloud is different from each team member.
+
 - We require you rto write one or more pytest's that deploys, run,
   kill, view, clean that deploys your environment, runs application,
-  kills it, views the result and cleans up after wards. 
+  kills it, views the result and cleans up after wards.
 
 - For python use a requirements.txt file and develop a `setup.py` so
-  your code can be installed with `pip install .` 
+  your code can be installed with `pip install .`
 
-- For docker use a Dockerfile 
+- For docker use a Dockerfile
 
 - (If not exempt) write a report that typically includes the following sections:
 
@@ -349,7 +349,7 @@ In general your deliverables will include the following
 Sections and subsections are to be added to the `book` github repo. Do
 a pull request. Initially they will be managed in your own github repo
 that we will set up for you. They will be added to the book after they
-have been reviewed and approved. 
+have been reviewed and approved.
 
 The headline of the section needs to be marked with a
 ![Construction](images/construction.png) if you are working on it and marked with a ![Smiley](images/smile.png) if you want it
@@ -357,10 +357,10 @@ to be graded and have included all hids for people that contributed to that
 section.
 
 In addition, simply add them to your README.yml file in your github repo.
-Add the following to it (I am using a18-516-18 as example). 
+Add the following to it (I am using a18-516-18 as example).
 
 Please look at <https://github.com/cloudmesh-community/fa18-516-18> and <https://raw.githubusercontent.com/cloudmesh-community/fa18-523-62/master/README.yml>
-for an examples. Please note that if you work in a group, the code and report is supposed to be only stored 
+for an examples. Please note that if you work in a group, the code and report is supposed to be only stored
 in the first hid mentioned in the group field. If you store it in multiple directories your project will be rejected.
 
     section:
@@ -398,7 +398,7 @@ make sure you use the list and attribute organization with proper dash
 placement. Work with the TAs if you have difficulties. If you copy, only
 copy from the raw content in github..
 
-## Participation 
+## Participation
 
 In addition to these artifacts, there will also be a participation
 component in class that will be determined based on your productive

@@ -18,12 +18,12 @@ trends in the following presentation.
 
 * [![Video](images/video.png) Definition of Cloud Computing](https://youtu.be/2ifRjHbJWK8)
 
-This includes the following 
+This includes the following
 
 ## Defining the term Cloud Computing
 
 In this presentation we review three definitions of cloud
-computing. This includes the definitions by 
+computing. This includes the definitions by
 
 * NIST
 * Wikipedia
@@ -46,7 +46,7 @@ current job offerings as data engineer is 13% versus 1% for data
 scientists. As this class is targeted towards bringing the engineering
 component towards the data scientists, computer scientists, and
 application developer, This class is ideally suited for increasing
-your marketability. 
+your marketability.
 
 ## You must be that TALLL
 
@@ -54,7 +54,7 @@ We close this class with Gregor’s TALLL principle to succeed in Cloud
 Computing:
 
 
-You must be that TALLL to survive in Cloud Computing and Big Data 
+You must be that TALLL to survive in Cloud Computing and Big Data
 
 This principle includes the following characteristics
 
@@ -64,7 +64,7 @@ Trend Awareness (TA)
 
 Longevity Planning (L)
 
-: We need to be able to reproduce our services and results (e.g. can we reproduce them still in six month).  
+: We need to be able to reproduce our services and results (e.g. can we reproduce them still in six month).
 
 Leap Detection (L)
 

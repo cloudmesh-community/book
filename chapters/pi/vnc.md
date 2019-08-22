@@ -14,15 +14,15 @@ connect wirelessly, our setup is slightly different. The easiest way that
 we found is to update the Raspbian OS as follows. In a terminal type
 
     sudo apt-get update
-    sudo apt-get install realvnc-vnc-server 
+    sudo apt-get install realvnc-vnc-server
     sudo apt-get install realvnc-vnc-viewer
 
 Next you enable the VNC server in the configuration panel via the
 Raspbian GUI by selecting
 
-     Menu > 
-        Preferences > 
-           Raspberry Pi Configuration > 
+     Menu >
+        Preferences >
+           Raspberry Pi Configuration >
               Interfaces.
 
 Here you toggle the VNC service to enabled. As we are already at it in

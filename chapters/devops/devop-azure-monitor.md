@@ -3,7 +3,7 @@
 
 |          |                                       |
 | -------- | ------------------------------------- |
-| title    | DevOp - Azure Monitor                 | 
+| title    | DevOp - Azure Monitor                 |
 | status   | 10                                    |
 | section  | DevOp                                 |
 | keywords | DevOp, Azure Monitor				   |

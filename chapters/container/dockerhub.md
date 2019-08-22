@@ -16,7 +16,7 @@ download (pull), build, test and store their images for easy
 deployment on any host they may
 have [@hid-sp18-405-tutorial-dockerhub-overview].
 
-## Create Docker ID and Log In 
+## Create Docker ID and Log In
 
 A log-in is not necessary for pulling Docker images from the Hub but
 it is necessary for pushing images to dockerhub for sharing. Thus to
@@ -32,7 +32,7 @@ variable DOCKERHUB to indicate yourusername. It is easiset if you set it in
 your shell with
 
 ```bash
-local$ export DOCKERHUB=<PUT YOUR DOCKER USERNAME HERE> 
+local$ export DOCKERHUB=<PUT YOUR DOCKER USERNAME HERE>
 ```
 
 ## Searching for Docker Images
@@ -57,8 +57,8 @@ you will see output similar to:
 
 ...
 
-If you do not want to use sudo with docker command each time you need to add 
-the current user into the docker group. You can do that using the following 
+If you do not want to use sudo with docker command each time you need to add
+the current user into the docker group. You can do that using the following
 command.
 
 ```bash
@@ -66,7 +66,7 @@ local$ sudo usermod -aG docker ${USER}
 local$ su - ${USER}
 ```
 
-This will prompt you to enter the password for the current user. Now you 
+This will prompt you to enter the password for the current user. Now you
 should be able to execute the previous command without using sudo.
 
 
@@ -130,7 +130,7 @@ When creating a new repository, you can choose to put it in your Docker
 ID namespace, or that of any organization that you are in the owners
 team [@hid-sp18-405-tutorial-dockerhub-repository].
 
-As an example, we created a repository cloudtechnology with the namespace 
+As an example, we created a repository cloudtechnology with the namespace
 `$DOCKERHUB` (here `DOCKERHUB` is your docker hub username). Hence the full name
  is `$DOCKERHUB`/cloudtechnology
 
@@ -139,13 +139,13 @@ As an example, we created a repository cloudtechnology with the namespace
 To push an image to the repository created, the following steps can be
 followed.
 
-First, log into Docker Hub from the command line by specifying the username. 
+First, log into Docker Hub from the command line by specifying the username.
 If you encounter permission issues please use `sudo` in front of the command
 
 ```bash
 $ docker login --username=$DOCKERHUB
 ```
-          
+
 Enter the password when prompted. If everything worked you will get
 a message similar to:
 
@@ -167,7 +167,7 @@ the result looks similar to:
 | centos        | latest | 26cb1244b171 | 2 weeks ago | 195MB  |
 | centos        | latest | 2d194b392dd1 | 2 weeks ago | 195MB  |
 
-Here, the the image with ID 1f26a5f7a1b4 is the one to push to Docker Hub. 
+Here, the the image with ID 1f26a5f7a1b4 is the one to push to Docker Hub.
 You can choose another image instead if you like.
 
 Third, tag the image
@@ -190,23 +190,23 @@ Fourth, now the list of images will look something like
 | centos           | latest   | 26cb1244b171 | 2 w ago  |  195MB |
 | centos           | latest   | 2d194b392dd1 | 2 w ago  |  195MB |
 
-Fifth, Now you can see an images under the name `$DOCKERHUB/cloudmesh`, we 
+Fifth, Now you can see an images under the name `$DOCKERHUB/cloudmesh`, we
 now need to push this image to the repository that we created on the docker hub
-website. For that execute the following command. 
+website. For that execute the following command.
 
 ```bash
 $ docker push $DOCKERHUB/cloudmesh
 ```
 
-It shows something similar to, to make sure you can check on docker hub if the 
+It shows something similar to, to make sure you can check on docker hub if the
 images that was pushed is listed in the repository that we created.
 
 ```bash
 The push refers to repository [docker.io/$DOCKERHUB/cloudmesh]
-18f9479cfc2c: Pushed 
-e9ddee98220b: Pushed 
+18f9479cfc2c: Pushed
+e9ddee98220b: Pushed
 ...
-db584c622b50: Mounted from library/ubuntu 
+db584c622b50: Mounted from library/ubuntu
 a94e0d5a7c40: Mounted from library/ubuntu
 ...
 v1.0: digest: sha256:305b0f911077d9d6aab4b447b... size: 3463
@@ -223,7 +223,7 @@ Please remember that the USERNAME is the username for the user that
 makes this image publically available. If you are the user you will
 see the value being the one from $DOCKERHUB, If not you will see here
 the username of the user uploading the image
-          
+
 ## Resources
 
 * The offical

@@ -7,10 +7,10 @@ to the PI with a virtual display redirection.
 
 ## Default Display Setup
 
-The raspberry pi comes with a defualt setup and any modern HDMI enabled 
-TV or monitor will most likely work out of the box without any modifications. 
-Just plug the HDMI cable in and start the Pi and you will probably see some 
-boot messages and after a while see the splash screen for your installed 
+The raspberry pi comes with a defualt setup and any modern HDMI enabled
+TV or monitor will most likely work out of the box without any modifications.
+Just plug the HDMI cable in and start the Pi and you will probably see some
+boot messages and after a while see the splash screen for your installed
 operating system.
 
 ## Automatic Display Detection
@@ -37,10 +37,10 @@ with the correct resolution in the configuration file.
 
 ### How it works
 
-To achieve this we have developed the file 
+To achieve this we have developed the file
 [displaydetect.py](https://raw.githubusercontent.com/cloudmesh/cloudmesh-pi/master/displaydetect.py)
 that automatically detects and set the display for the pi. To
-integrate it in the Raspbian OS please follow these steps 
+integrate it in the Raspbian OS please follow these steps
 
 1. Install the display detect script. Run this as root:
 
@@ -162,7 +162,7 @@ for the raspberry.
 > ![Warning](images/warning.png) *We recommend not to use the WiFi and the ethernet adapter at the same
 > time as it can come to issues when you boot them up while they are
 > both connected.*
- 
+
 
 ## Exercises
 

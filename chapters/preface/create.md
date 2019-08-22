@@ -8,13 +8,13 @@ However the easiest way is to use our docker container as described in
 
 ## Docker {#sec:docker-create-book}
 
-We recommend the docker creation method for 
+We recommend the docker creation method for
 
 * Ubuntu
 * Windows 10
 * macOSX
 
-### Using OSX 
+### Using OSX
 
 The easiest way to create a system that can compile the book on macOS,
 is to use a docker container. To do so you will need to first install
@@ -52,7 +52,7 @@ documented there.
 Please note that we have not integrated pandoc-mermaid and
 pandoc-index at this time in our docker image. If you like to
 contribute them, please try it and make a pull request once you got
-them to work. 
+them to work.
 
 In case you want to create or recreate the image from our
 [Dockerfile](https://github.com/cloudmesh-community/book/blob/master/Dockerfile)
@@ -155,10 +155,10 @@ things. In case you add new images you need to use
 $ make new
 ```
 
-otherwise you can just use 
+otherwise you can just use
 
 ```
-$ make 
+$ make
 ```
 
 The structure of the books is maintained in the yaml file
@@ -169,7 +169,7 @@ have to say
 ```bash
 $ make clean
 $ make update
-$ make 
+$ make
 $ make view
 ```
 
@@ -197,7 +197,7 @@ $ make draft
 $ make view
 ```
 
-to create the draft sections only and view them. 
+to create the draft sections only and view them.
 
 To conveniently call them in a lazy fashion in a terminal you could
 use the following two aliases.
@@ -227,7 +227,7 @@ $ cd ..
 $ cp -r 222 gregor
 ```
 
-Now edit the file chapters.yaml and copy the section with `BOOK_222=` to 
+Now edit the file chapters.yaml and copy the section with `BOOK_222=` to
 `BOOK_gregor=`. Make modifications to the outline as you see fit.
 
 Now you can create the book with

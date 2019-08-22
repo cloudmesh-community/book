@@ -46,7 +46,7 @@ variables['verbose'] = 10
 
 ## Banner
 
-In case you need a banner you can do this with 
+In case you need a banner you can do this with
 
 ```python
 from cloudmesh.common.util import banner
@@ -67,7 +67,7 @@ class example(object):
     def doit(self):
         HEADING()
         print ("Hallo")
-```        
+```
 
 The infocation of the function doit prints a banner with the name
 information. The reason we did not do it as a decorator is that you can

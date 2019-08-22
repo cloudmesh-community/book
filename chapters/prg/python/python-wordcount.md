@@ -15,7 +15,7 @@ consist of random numbers rather than the words of an actual language:
 
     '''Usage: generate_nums.py [-h] NUM_LISTS INTS_PER_LIST MIN_INT MAX_INT DEST_DIR
 
-    Generate random lists of integers and save them 
+    Generate random lists of integers and save them
     as 1.txt, 2.txt, etc.
 
     Arguments:
@@ -34,7 +34,7 @@ consist of random numbers rather than the words of an actual language:
     from docopt import docopt
 
 
-    def generate_random_lists(num_lists, 
+    def generate_random_lists(num_lists,
                               ints_per_list, min_int, max_int):
         return [[random.randint(min_int, max_int) \
             for i in range(ints_per_list)] for i in range(num_lists)]
@@ -53,9 +53,9 @@ consist of random numbers rather than the words of an actual language:
        if not os.path.exists(dest_dir):
           os.makedirs(dest_dir)
 
-       lists = generate_random_lists(num_lists, 
-                                     ints_per_list, 
-                                     min_int, 
+       lists = generate_random_lists(num_lists,
+                                     ints_per_list,
+                                     min_int,
                                      max_int)
        curr_list = 1
        for lst in lists:
@@ -135,7 +135,7 @@ We can use reduce to apply the same function cumulatively to the items
 of a sequence. For example, to find the total of the numbers in our
 list, we could use `reduce` as follows:
 
-    def add(x, y): 
+    def add(x, y):
         return x + y
 
     print(reduce(add, nums))
@@ -157,7 +157,7 @@ With this in mind, we can reimplement the wordcount example as follows:
     many times each word
     appears in the collection.
 
-    Arguments: 
+    Arguments:
        DATA_DIR  A directory with documents (.txt files).
 
     Options:
@@ -262,7 +262,7 @@ E.python.wordcount.1:
 
 > Run the three different programs (serial, serial w/ map and reduce,
 > parallel) and answer the following questions:
-> 
+>
 > 1. Is there any performance difference between the different versions
 >    of the program?
 > 2. Does user time significantly differ from real time for any of the

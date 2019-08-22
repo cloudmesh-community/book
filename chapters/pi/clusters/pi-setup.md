@@ -8,7 +8,7 @@ TODO: We should at this time assume we have an OS.
 Download the latest Raspbian Jessie Lite image from
 
 	https://www.raspberrypi.org/downloads/raspbian/
-	
+
 
 Please note that Raspbian Jessie Lite image contains the only the bare
 minimum amount of packages.
@@ -38,7 +38,7 @@ Now insert the SD card, networking and power etc.
 
 ## Starting Pi :o2:
 
-![No](images/no.png) 
+![No](images/no.png)
 
 Once you boot up the Raspberry Pi, Connect using SSH
 

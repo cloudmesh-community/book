@@ -17,8 +17,8 @@ of the built-in turtle import that you need.
 
     import turtle
 
-    window = turtle.Screen() 
-    robot = turtle.Turtle() 
+    window = turtle.Screen()
+    robot = turtle.Turtle()
 
     robot.forward(50)   # Moves forward 50 pixels
     robot.right(90)     # Rotate clockwise by 90 degrees

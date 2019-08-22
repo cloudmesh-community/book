@@ -37,37 +37,37 @@ Dask emphasizes the following virtues:
 The section is structured in a number of subsections addressing the
 following topics:
 
-Foundations: 
+Foundations:
 
 : an explanation of what Dask is, how it works, and how to use lower
   level primitives to set up computations. Casual users may wish to
   skip this section, although we consider it useful knowledge for all
   users.
-             
-Distributed Features: 
+
+Distributed Features:
 
 : information on running Dask on the distributed scheduler, which
   enables scale-up to distributed settings and enhanced monitoring of
   task operations. The distributed scheduler is now generally the
   recommended engine for executing task work, even on single
   workstations or laptops.
-             
-Collections: 
+
+Collections:
 
 : convenient abstractions giving a familiar feel to big data.
-       
-       
-Bags: 
+
+
+Bags:
 
 : Python iterators with a functional paradigm, such as found in
   func/iter-tools and toolz - generalize lists/generators to big data;
   this will seem very familiar to users of PySpark's RDD
 
-Array: 
+Array:
 
 : massive multi-dimensional numerical data, with Numpy functionality
 
-Dataframe: 
+Dataframe:
 
 : massive tabular data, with Pandas functionality
 
@@ -115,7 +115,7 @@ Here we have used the delayed annotation to show that we want these
 functions to operate lazily - to save the set of inputs and execute
 only on demand.
 
-## Dask Bag 
+## Dask Bag
 
 Dask-bag excels in processing data that can be represented as a
 sequence of arbitrary inputs. We'll refer to this as "messy" data,
@@ -234,7 +234,7 @@ summary.result()
 For more details on Concurrent Features by Dask check
 <https://dask.pydata.org/en/latest/futures.html>
 
-## Dask Array 
+## Dask Array
 
 Dask arrays implement a subset of the NumPy interface on large arrays
 using blocked algorithms and task scheduling.  These behave like numpy
@@ -247,7 +247,7 @@ chunks for processing.
 
 ```
 import dask.array as da
-f = h5py.File('myfile.hdf5')             
+f = h5py.File('myfile.hdf5')
 x = da.from_array(f['/big-data'], chunks=(1000, 1000))
 x - x.mean(axis=1).compute()
 ```
@@ -271,8 +271,8 @@ following code, save 'student.csv' file in your machine.
 
 
 ```
-import pandas as pd                     
-df = pd.read_csv('student.csv')      
+import pandas as pd
+df = pd.read_csv('student.csv')
 d = df.groupby(df.HID).Serial_No.mean()
 print(d)
 ```
@@ -289,7 +289,7 @@ print(d)
     201     9
     202    10
     Name: Serial_No, dtype: int64
-    
+
 
 
 ```
@@ -311,7 +311,7 @@ print (dt)
     201     9.0
     202    10.0
     Name: Serial_No, dtype: float64
-    
+
 
 For more details on Dask DataFrame check <https://dask.pydata.org/en/latest/dataframe.html>
 

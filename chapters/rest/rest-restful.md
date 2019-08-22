@@ -24,7 +24,7 @@ happens in this example.
     from flask import Flask
     from flask_restful import reqparse, abort
     from flask_restful import Api, Resource
-    
+
     app = Flask(__name__)
     api = Api(app)
 
@@ -91,4 +91,4 @@ happens in this example.
     if __name__ == '__main__':
         app.run(debug=True)
 ```
-        
+

@@ -38,7 +38,7 @@ To use crontab follow these steps
    ```bash
    $ crontab -e
    ```
-   
+
    If you are doing this for the first time, you will be asked to chose
    an editor. Please, choose your favorite editor
 2. To run the program at boot time, add the following line to the at the end

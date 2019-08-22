@@ -23,7 +23,7 @@ features:
 * Security
 
 
-## Installation 
+## Installation
 
 First we need to make sure the Raspberry Pi is up to date so we can
 install a recent version of docker.  The automated script maintained
@@ -38,18 +38,18 @@ pi$ curl -sSL https://get.docker.com | sh
 
 In order for us to start the docker daemon at the next boot, we add it
 as follows:
-			
+
 ```bash
 pi$ sudo systemctl enable docker
 ```
-    
+
 Now if we reboot, the Docker daemon will start. In case you like to
 avoid the first reboot, you can use the command:
 
 ```bash
 pi$ sudo systemctl start docker
 ```
-      
+
 Naturally you do not have to do this after you reboot the next time.
 
 The Docker client can only be used by `root` or members of the
@@ -59,7 +59,7 @@ user) to the docker group using:
 ```bash
 pi$ sudo usermod -aG docker pi
 ```
-	
+
 After executing the previous command, we log out of the terminal restart
 it so we are sure the user permissions are available in the shell we
 use.
@@ -70,7 +70,7 @@ docker image with the command:
 ```bash
 pi$ docker run hello-world
 ```
-	
+
 If Docker is installed properly, we will see a `Hello from Docker!`
 message.
 
@@ -90,7 +90,7 @@ of Pis. Here we assume that we start from such a network. The Pi's have all
 different names, and are registered on the network. Each Pi has the public key
 installed from the machine where you will login from for setting up the swarm.
 
-Let us assume the names of the hosts are stored in a shell variable called 
+Let us assume the names of the hosts are stored in a shell variable called
 
 	hostnames = (red00 red01 red02 red03 red04)
 
@@ -112,14 +112,14 @@ do
 done
 ```
 
-Save this script in a file called `docker-install.sh` and set the executable rights with 
+Save this script in a file called `docker-install.sh` and set the executable rights with
 
 	chmod u+x docker-install.sh
-	   
-When we execute it with 
+
+When we execute it with
 
 	$ docker-install.sh
-	
+
 It will sequentially install docker on each host. This is not very
 efficient and only works for a small number of hosts.
 
@@ -173,7 +173,7 @@ The following table is copied from the
 
 
 .<div class="smalltable">
-	
+
 | Purpose| Command |
 | ---- | ------------ |
 | **Image** | |
@@ -184,7 +184,7 @@ The following table is copied from the
 | Remove an image | docker image rm ${IMAGE_ID} |
 | Remove unused images | docker image prune |
 | Remove all images | docker image rm $(docker image ls -aq) |
-| **Containers** | | 
+| **Containers** | |
 | Run a container | docker container run |
 | List of running containers | docker container ls |
 | List of all containers | docker container ls -a |
@@ -206,7 +206,7 @@ The following table is copied from the
 
 Swarm.1
 
-: Your task is is to identify technologies to execute the Installation 
+: Your task is is to identify technologies to execute the Installation
   in parallel. Suitable technologies include
 
   * psh
@@ -218,14 +218,14 @@ Swarm.1
   We like that the class is split up in groups and each group develops this
   solution. Naturally you can test this first with not installing docker, but
   with a simple command such as `uname -a`
-  
+
 Swarm.2
 
-: Develop a python cloudmesh command called 
+: Develop a python cloudmesh command called
 
   `cms swarm config hostnames.yaml`
-  
-  where the yaml file looks something like  
+
+  where the yaml file looks something like
 
   ```yaml
   manager: <ip00>
@@ -235,7 +235,7 @@ Swarm.2
   - <ip03>
   ```
 
-  Similarly create other convenient functions such as 
-  
+  Similarly create other convenient functions such as
+
   * `cms swarm kill`, which kills the swarm
   * `cms swarm ls`, which gives details about the swarm

@@ -1,6 +1,6 @@
 # Visualization :o2:
 
-![No](images/no.png) 
+![No](images/no.png)
 
 All tools must be free.
 

@@ -1,11 +1,11 @@
-# Week 6: Virtualization II - AWs, Azure, Google 
+# Week 6: Virtualization II - AWs, Azure, Google
 
 ## Lab Activity Aws
 
 * configuration
 * list images
 * list flavors
-* boot a vm 
+* boot a vm
 * list vms
 * terminate the vm
 
@@ -14,7 +14,7 @@
 * configuration
 * list images
 * list flavors
-* boot a vm 
+* boot a vm
 * list vms
 * terminate the vm
 
@@ -23,6 +23,6 @@
 * configuration
 * list images
 * list flavors
-* boot a vm 
+* boot a vm
 * list vms
 * terminate the vm

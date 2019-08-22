@@ -2,17 +2,17 @@
 
 ## Introduction
 
-Git pull requests allow developers to submit work or changes they have 
-done to a repository, The developers can then check the changes that 
+Git pull requests allow developers to submit work or changes they have
+done to a repository, The developers can then check the changes that
 have been proposed in the pull request, discuss and make changes if
 needed. After the content off the pull request has been agreed upon
 it can be merged to the repository to add the information or changes in
-the pull request into the repository. 
+the pull request into the repository.
 
 ## How to create a pull request
 
-In this document we will see how we can create a pull request for the 
-Cloudmesh technologies repo that is located at 
+In this document we will see how we can create a pull request for the
+Cloudmesh technologies repo that is located at
 
 * <https://github.com/cloudmesh/technologies>
 
@@ -49,11 +49,11 @@ the Github documentation -
 [Cloning a repository](https://help.github.com/articles/cloning-a-repository/).
 Make sure that you clone your version of the technologies repo.
 
-## Adding an upstream 
+## Adding an upstream
 
 Before we can start working on our copy of the git repo it is good to add
-an upstream (a link to the original repo) so that we can get all the 
-latest changes in the original repository into our copy. Use the following 
+an upstream (a link to the original repo) so that we can get all the
+latest changes in the original repository into our copy. Use the following
 commands to add an upstream to `cloudmesh/technologies`. First go into the
 folder which contains your git repo that you cloned and execute the
 following command.
@@ -82,7 +82,7 @@ upstream	https://github.com/cloudmesh/technologies.git (push)
 
 Now you can make changes to your repo as with any normal git repository.
 However to make sure you have the latest copy from the original execute
-the following command before you start making changes. This will pull the 
+the following command before you start making changes. This will pull the
 latest changes from the original `cloudmesh/technologies` into your local
 copy
 
@@ -110,11 +110,11 @@ pull request, which will look similar to @fig:pullrequest.
 Once you click on the `Create pull request` button you will be given an
 option to add a title and a comment for the pull request. Once you complete
 the details and submit the pull request will appear in the original
-`cloudmesh/technologies` repo. 
+`cloudmesh/technologies` repo.
 
 **Note: Make sure you see the `Able to merge` sign before you submit the
 pull request, otherwise your pull will not be able to directly merged to
 the original repo. If you do not see this that means you have not properly
 done the `git pull upstream master` command before you made the changes**
 
-[![Video](images/video.png) git example on CL 10:09](https://youtu.be/8wyTtG0PsgM) 
+[![Video](images/video.png) git example on CL 10:09](https://youtu.be/8wyTtG0PsgM)

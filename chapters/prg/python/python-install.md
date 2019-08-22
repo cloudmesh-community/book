@@ -11,9 +11,9 @@
 ---
 
 
-In this setion we explain how to install python 3.7.4 on a computer. 
+In this setion we explain how to install python 3.7.4 on a computer.
 Likely much of the code will work with earlier versions, but we do
-the development in Python on the newest version of python available at 
+the development in Python on the newest version of python available at
 <https://www.python.org/downloads> .
 
 ## Hardware
@@ -41,7 +41,7 @@ Python 3.7 is installed in ubuntu 19.04. Therefore, it already fulfills
 the prerequisits. However we recommend that you update to the newest
 version of python and pip. However we recommend that you update the the
 newest version of python. Please visit:
-<https://www.python.org/downloads> 
+<https://www.python.org/downloads>
 
 ## Prerequisits macOS
 
@@ -138,7 +138,7 @@ rm get-pip.py
 ### System Install
 
 Python 3.7 can be installed on Windows 10 using:
-<https://www.python.org/downloads> 
+<https://www.python.org/downloads>
 
 ### Linux Subsystem Install
 

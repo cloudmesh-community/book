@@ -15,8 +15,8 @@
 
 ## Introduction to Scikit-learn
 
-Scikit learn is a Machine Learning specific library used in Python. Library can be used for data mining and analysis. It is built on top of NumPy, matplotlib and SciPy. Scikit Learn features Dimensionality reduction, clustering, regression and classification algorithms. 
-It also features model selection using grid search, cross validation and metrics. 
+Scikit learn is a Machine Learning specific library used in Python. Library can be used for data mining and analysis. It is built on top of NumPy, matplotlib and SciPy. Scikit Learn features Dimensionality reduction, clustering, regression and classification algorithms.
+It also features model selection using grid search, cross validation and metrics.
 
 Scikit learn also enables users to preprocess the data which can then be used for machine learning using modules like preprocessing and feature extraction.
 
@@ -40,10 +40,10 @@ Supervised Learning is used in machine learning when we already know a set of ou
 
 Problems can be of two types
 
-1. Classification : Training data belongs to three or four classes/categories and based on the label we want to predict 
+1. Classification : Training data belongs to three or four classes/categories and based on the label we want to predict
    the  class/category for the unlabeled data.
-2. Regression : Training data consists of vectors without any corresponding target values. Clustering can be used for 
-   these  type of datasets to determine discover groups of similar examples. Another way is density 
+2. Regression : Training data consists of vectors without any corresponding target values. Clustering can be used for
+   these  type of datasets to determine discover groups of similar examples. Another way is density
    estimation  which determine the distribution of data within the input space. Histogram is the most basic form.
 
 ## Unsupervised Learning
@@ -53,10 +53,10 @@ Unsupervised Learning is used in machine learning when we have the training set 
 Few of them are listed here
 
 1. Clustering : Discover groups of similar characteristics.
-2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high 
+2. Density Estimation : Finding the distribution of data within the provided input or changing the data from a high
    dimensional  space to two or three dimension.
 
-## Building a end to end pipeline for Supervised machine learning using Scikit-learn 
+## Building a end to end pipeline for Supervised machine learning using Scikit-learn
 
 A data pipeline is a set of processing components that are sequenced to produce
 meaningful data. Pipelines are commonly used in Machine learning, since there is
@@ -76,7 +76,7 @@ transformed and modeled for machine learning.
 3. Get the data that can be used to make the system learn to solve the problem
    definition.
 4. Discover and Visualize the data to gain insights
-5. Feature engineering and prepare the data 
+5. Feature engineering and prepare the data
 6. Fine tune your model
 7. Evaluate your solution using metrics
 8. Once proven launch and maintain the model.
@@ -103,10 +103,10 @@ data.isnull().values.any()
 
 Here is the example of few of the visual data analysis methods.
 
-### Bar plot 
+### Bar plot
 
-A bar chart or graph is a graph with rectangular bars or bins that are used to plot 
-categorical values. Each bar in the graph represents a categorical variable and the 
+A bar chart or graph is a graph with rectangular bars or bins that are used to plot
+categorical values. Each bar in the graph represents a categorical variable and the
 height of the bar is proportional to the value represented by it.
 
 Bar graphs are used:
@@ -147,7 +147,7 @@ cmap = sns.diverging_palette(220, 10, as_cmap=True)
 
 # draw the heatmap with the mask and correct aspect ratio
 sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3,
-            square=True, 
+            square=True,
             linewidths=.5, cbar_kws={"shrink": .5}, ax=ax);
 ```
 
@@ -225,7 +225,7 @@ Sample function to seperate out Numerical and categorical attributes.
 ```python
 from sklearn.base import BaseEstimator, TransformerMixin
 
-# Create a class to select numerical or categorical columns 
+# Create a class to select numerical or categorical columns
 # since Scikit-Learn doesn't handle DataFrames yet
 class DataFrameSelector(BaseEstimator, TransformerMixin):
     def __init__(self, attribute_names):
@@ -239,11 +239,11 @@ class DataFrameSelector(BaseEstimator, TransformerMixin):
 ### Feature Creation / Additional Feature Engineering
 
 
-During EDA we identified that there are transactions where the balances do not 
-tally after the transaction is completed.We believe this could potentially be 
-cases where fraud is occurring. To account for this error in the transactions, 
-we define two new features"errorBalanceOrig" and "errorBalanceDest", calculated 
-by adjusting the amount with the before and after balances for the Originator 
+During EDA we identified that there are transactions where the balances do not
+tally after the transaction is completed.We believe this could potentially be
+cases where fraud is occurring. To account for this error in the transactions,
+we define two new features"errorBalanceOrig" and "errorBalanceDest", calculated
+by adjusting the amount with the before and after balances for the Originator
 and Destination accounts.
 
 
@@ -254,7 +254,7 @@ pipeline.
 from sklearn.base import BaseEstimator, TransformerMixin
 
 # column index
-amount_ix, oldbalanceOrg_ix, newbalanceOrig_ix, oldbalanceDest_ix, newbalanceDest_ix = 0, 1, 2, 3, 4 
+amount_ix, oldbalanceOrg_ix, newbalanceOrig_ix, oldbalanceDest_ix, newbalanceDest_ix = 0, 1, 2, 3, 4
 
 class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
     def __init__(self): # no *args or **kargs
@@ -263,8 +263,8 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
         return self  # nothing else to do
     def transform(self, X, y=None):
         errorBalanceOrig = X[:,newbalanceOrig_ix] +  X[:,amount_ix] -  X[:,oldbalanceOrg_ix]
-        errorBalanceDest = X[:,oldbalanceDest_ix] +  X[:,amount_ix]-  X[:,newbalanceDest_ix] 
-        
+        errorBalanceDest = X[:,oldbalanceDest_ix] +  X[:,amount_ix]-  X[:,newbalanceDest_ix]
+
         return np.c_[X, errorBalanceOrig, errorBalanceDest]
 ```
 
@@ -299,14 +299,14 @@ num_attribs = list(X_train_num)
 cat_attribs = list(X_train_cat)
 
 num_pipeline = Pipeline([
-        ('selector', DataFrameSelector(num_attribs)),        
-        ('attribs_adder', CombinedAttributesAdder()),       
+        ('selector', DataFrameSelector(num_attribs)),
+        ('attribs_adder', CombinedAttributesAdder()),
         ('std_scaler', StandardScaler())
     ])
 
 cat_pipeline = Pipeline([
         ('selector', DataFrameSelector(cat_attribs)),
-        ('cat_encoder', CategoricalEncoder(encoding="onehot-dense"))            
+        ('cat_encoder', CategoricalEncoder(encoding="onehot-dense"))
     ])
 
 ```
@@ -392,7 +392,7 @@ test_time = time.time() - start
 
 ### K Means
 
-This algorithm is used when we are not aware of the labels and one needs to be created based on the features of objects. Example will be to divide a group of people into differnt subgroups based on common theme or attribute. 
+This algorithm is used when we are not aware of the labels and one needs to be created based on the features of objects. Example will be to divide a group of people into differnt subgroups based on common theme or attribute.
 
 The main disadvantage of K-mean is that you need to know exactly the number of clusters or groups which is required. It takes a lot of iteration to come up with the best K.
 
@@ -463,11 +463,11 @@ test_time = time.time() - start
 
 ### Neural networks
 
-Neural network works based on weights of connections between neurons.  Weights are trained and based on that the neural network can be utilized to predict the class or a quantity. They are resource and memory intensive. 
+Neural network works based on weights of connections between neurons.  Weights are trained and based on that the neural network can be utilized to predict the class or a quantity. They are resource and memory intensive.
 
 Few cases where it can be applied.
 
-1. Applied to unsupervised learning tasks, such as feature extraction. 
+1. Applied to unsupervised learning tasks, such as feature extraction.
 2. Extracts features from raw images or speech with much less human intervention
 
 ### Deep Learning using Keras
@@ -511,28 +511,28 @@ Random search provide a statistical distribution for each hyperparameter from wh
 ```python
 grid_param = [
                 [{   #LogisticRegression
-                   'model__penalty':['l1','l2'], 
+                   'model__penalty':['l1','l2'],
                    'model__C': [0.01, 1.0, 100]
                 }],
-       
+
                 [{#keras
                     'model__optimizer': optimizer,
                     'model__loss': loss
                 }],
-    
+
                 [{  #SVM
                    'model__C' :[0.01, 1.0, 100],
                    'model__gamma': [0.5, 1],
                    'model__max_iter':[-1]
                 }],
-            
-                [{   #XGBClassifier 
+
+                [{   #XGBClassifier
                     'model__min_child_weight': [1, 3, 5],
                     'model__gamma': [0.5],
                     'model__subsample': [0.6, 0.8],
                     'model__colsample_bytree': [0.6],
                     'model__max_depth': [3]
-                
+
                 }]
             ]
 ```
@@ -564,7 +564,7 @@ MLA = [
         keras_model,
         SVC(),
         XGBClassifier()
-        
+
       ]
 
 #create table to compare MLA metrics
@@ -579,28 +579,28 @@ for alg in MLA:
     MLA_name = alg.__class__.__name__
     MLA_compare.loc[row_index, 'Name'] = MLA_name
     #MLA_compare.loc[row_index, 'Parameters'] = str(alg.get_params())
-    
-  
+
+
     full_pipeline_with_predictor = Pipeline([
         ("preparation", full_pipeline),  # combination of numerical and categorical pipelines
-        ("model", alg)  
+        ("model", alg)
     ])
-    
+
     grid_search = GridSearchCV(full_pipeline_with_predictor, grid_param[row_index], cv=4, verbose=2, scoring='f1', return_train_score=True)
-       
+
     grid_search.fit(X_train[X_model_col], y_train)
     y_pred = grid_search.predict(X_test)
-     
+
     MLA_compare.loc[row_index, 'Accuracy_Score'] = np.round(accuracy_score(y_pred, y_test), 3)
     MLA_compare.loc[row_index, 'ROC_AUC_score'] = np.round(metrics.roc_auc_score(y_test, y_pred),3)
     MLA_compare.loc[row_index,'Score'] = np.round(grid_search.score(X_test, y_test),3)
-    
-    negative_mse = grid_search.best_score_ 
+
+    negative_mse = grid_search.best_score_
     scores = np.sqrt(-negative_mse)
     final_mse = mean_squared_error(y_test, y_pred)
-    final_rmse = np.sqrt(final_mse)    
+    final_rmse = np.sqrt(final_mse)
     MLA_compare.loc[row_index, 'final_rmse'] = final_rmse
-    
+
     confusion_matrix_var = confusion_matrix(y_test, y_pred)
     TP = confusion_matrix_var[1, 1]
     TN = confusion_matrix_var[0, 0]
@@ -610,14 +610,14 @@ for alg in MLA:
     MLA_compare.loc[row_index,'Recall_Score'] = np.round(metrics.recall_score(y_test, y_pred), 5)
     MLA_compare.loc[row_index,'Precision_Score'] = np.round(metrics.precision_score(y_test, y_pred), 5)
     MLA_compare.loc[row_index,'F1_Score'] = np.round(f1_score(y_test,y_pred), 5)
-   
-    
+
+
     MLA_compare.loc[row_index, 'mean_test_score'] = grid_search.cv_results_['mean_test_score'].mean()
     MLA_compare.loc[row_index, 'mean_fit_time'] = grid_search.cv_results_['mean_fit_time'].mean()
-    
-    Model_Scores.loc[row_index,'MLA Name'] = MLA_name    
+
+    Model_Scores.loc[row_index,'MLA Name'] = MLA_name
     Model_Scores.loc[row_index,'ML Score'] = np.round(metrics.roc_auc_score(y_test, y_pred),3)
-    
+
     #Collect Mean Test scores for statistical significance test
     test_scores.append(grid_search.cv_results_['mean_test_score'])
     row_index+=1
@@ -629,7 +629,7 @@ for alg in MLA:
 
 ### ROC AUC Score
 
-AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. It tells how much model is capable of distinguishing between classes. Higher the AUC, better the model is at predicting 0s as 0s and 1s as 1s. 
+AUC - ROC curve is a performance measurement for classification problem at various thresholds settings. ROC is a probability curve and AUC represents degree or measure of separability. It tells how much model is capable of distinguishing between classes. Higher the AUC, better the model is at predicting 0s as 0s and 1s as 1s.
 
 ![scikit-learn](images/scikit-learn-rocauccurve.png){#fig:scikit-learn-rocauccurve}
 
@@ -664,7 +664,7 @@ In this section we demonstrate how simple it is to use k-means in scikit learn.
 
 ```python
     np.random.seed(42)
-    
+
     digits = load_digits()
     data = scale(digits.data)
 ```

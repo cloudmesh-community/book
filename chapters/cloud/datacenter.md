@@ -250,8 +250,8 @@ operations.
 ### Data Center Energy Costs
 
 One of the easiest to monitor metrics for a datacenter is the cost
-of energy used to operate all of the equipment. Energy is one of 
-the largest costs a datacenter incurs during its operation as all of 
+of energy used to operate all of the equipment. Energy is one of
+the largest costs a datacenter incurs during its operation as all of
 the servers, networking, and cooling equipment require power 24/7. For
 electricity, billing is usually measured in terms of kilowatt hours
 (kWh) and kilowatts (kW). Depending on circumstances, there may also be
@@ -260,14 +260,14 @@ they are beyond the scope of this book.
 
 To provide a quick understanding, it is best to understand the relation
 between kilowatt hours and kilowatts. kWh is typically referred to as
-consumption while kW is referred to as demand and it's important to 
-understand how these two concepts relate to each other. The easiest 
+consumption while kW is referred to as demand and it's important to
+understand how these two concepts relate to each other. The easiest
 analogy to describe the relationship is to think of kilowatts (demand)
 as the size of a water pipe while kilowatt-hours (consumption) is how
 much water has passed through the pipe. If a server requires 1.2 kW to
 operate then, after an hour has passed, it will have consumed 1.2 kWh.
 However, if the server operates at 1.2 kW for 30 minutes and then goes
-idle and drops to 0.3 kW for another 30 minutes, then total power 
+idle and drops to 0.3 kW for another 30 minutes, then total power
 consumed will be:
 
 $$kWh=0.3*30/60+1.2*30/60=0.75$${#eq:Energy-Calculation}
@@ -275,16 +275,16 @@ $$kWh=0.3*30/60+1.2*30/60=0.75$${#eq:Energy-Calculation}
 Energy costs for a datacenter, then, are composed of two things:
 charges for energy and charges for demand. Energy is the amount of total
 energy consumed by the datacenter and will be the total kWh multiplied
-by the cost per kWh. Demand is somewhat more complicated: it is the 
+by the cost per kWh. Demand is somewhat more complicated: it is the
 highest total consumption measured in a 15 minute period. Taking the
 previous example, if a datacenter has 1,000 servers, the total energy
 consumption would be 750 kWh in the hour, but the demand charge would be
 based off of 1,200 kW (or 1.2 MW).
 
-The costs, then, are how the utility company recoups its expanses: the 
+The costs, then, are how the utility company recoups its expanses: the
 charge per kWh is it recouping the generation cost while the kW charge
 is recouping the cost of transmission and distribution (T&D). Typically,
-the demand charge is much higher and will depend on utility constraints - 
+the demand charge is much higher and will depend on utility constraints -
 if a utility is challenged on the T&D front, expect these costs to be over
 $6-$10/kW. If the assumed cost-per-kWh is $0.12 and cost-per-kW is $8,
 the cost to run our servers for a month would be:
@@ -298,7 +298,7 @@ charges can have a tremendous payback: had the servers simply consumed
 been halved to $4,800 while the energy costs remained the same. This is
 also why server virtualization can have a positive impact on energy costs:
 by having fewer servers running at a higher utiliziation, the demand charge
-will tend to level itself out as, on average, each server will be more 
+will tend to level itself out as, on average, each server will be more
 fully utilizied. For example, it's better to pay for 500 servers at
 100% utilization than 1000 servers at 50% utilization even though the amount
 of work done is the same since, if the 1,000 servers momentarily all operate
@@ -562,16 +562,16 @@ setup in a data center.
 
 #### Containment
 
-While modern data centers employ highly sophisticated mechanisms to be as 
+While modern data centers employ highly sophisticated mechanisms to be as
 energy efficient as possible. One such mechanism which can be seen as a
 improvement on top of the Hot-Cold isle arrange is to use either hot isle
-containment or cold isle containment. Using a containment system can remove the 
+containment or cold isle containment. Using a containment system can remove the
 issue with free flowing air.
 
 As the name somewhat implies in cold air containment, the data centers is
 designed so that only cold air goes into the cold isle, this makes sure that
 the system only draws in cold air for cooling purposes. Conversely in hot isle
-containment design, the hot isle is contained so that the hot air collected 
+containment design, the hot isle is contained so that the hot air collected
 in the hot isle is drawn out by the cooling system and so that the cold air
 does not flow into the hot isles[@hot-cold-containment].
 
@@ -1186,7 +1186,7 @@ benefit of the society:
 * Corporations: Google, AWS, IBM, ...
 
 Also look at the US state of California and others that project
-renewable energy. 
+renewable energy.
 
 See also
 
@@ -1226,7 +1226,7 @@ Find other such examples. Find some with different categories
 
 **Exercises**
 
-**Prerequisit**: Knowledge about plagiarism. 
+**Prerequisit**: Knowledge about plagiarism.
 
 **E.Datacenter.1:** Carbon footprint of a data center
 
@@ -1291,6 +1291,6 @@ E.Datacenter.6:
 
 E.Datacenter.7:
 
-> Review: [Nature Article](https://www.nature.com/articles/d41586-018-06610-y). 
+> Review: [Nature Article](https://www.nature.com/articles/d41586-018-06610-y).
 > Is there any more up to data data available? What lessons do we take away from the
 > article?

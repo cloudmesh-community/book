@@ -1,6 +1,6 @@
 # Setting up Large PI clusters :o2:
 
-![No](images/no.png) 
+![No](images/no.png)
 ![Construction](images/construction.png)
 
 ## cm-burn
@@ -21,7 +21,7 @@ cm-burn —-name  red[5-7] \
         —-ips 192.168.1.[5-7] \
         —-image 2018-06-27-raspbian-stretch
 ```
-        
+
 This command creates 3 SD cards where the hostnames `red5`, `red6`, `red 7`
 with the network addresses `192.168.1.5`, `192.168.1.6`,
 and `192.168.1.7`. The public key is added to the authorized_keys file
@@ -81,7 +81,7 @@ execute commands such as
 sudo apt-get update
 ```
 
-Certainly you can even have a much simpler setup by just attaching a keyboard, mouse and monitor/TV to your `master`. 
+Certainly you can even have a much simpler setup by just attaching a keyboard, mouse and monitor/TV to your `master`.
 This will allow you to directly work on the master node, not needing any additional hardware.
 
 ## Setting up a Cluster of Clusters with cm-burn
@@ -95,7 +95,7 @@ This is depicted in the Figure Cluster of Clusters
 Each cluster is naemed cluster01-clusterNN. The hostnames are node followed by 3 zeros padded with the node number
 There is a correlation between the cluster number and the node numbers in the following interval
 
-a cluster has the nodes 
+a cluster has the nodes
 
 ```
 [(clustername - 1) * 5 + 1, (clustername - 1) * 5 + 5]
@@ -121,7 +121,7 @@ The easiest way to duplicate the SD card is simply to clone it with
 the build in SD Card copier. This program can be found in the menu
 under Accessories.
 
-![SD Card Copier](images/sdcc.png) 
+![SD Card Copier](images/sdcc.png)
 
 Figure: SD Card Copier
 
@@ -148,17 +148,17 @@ TODO: Python3
 ```sudo dd bs=1M if=~/.cloudmesh/images/imagename.img of=mmcblk0 status=progress conv=fsync```
 
 
-### OSX 
+### OSX
 
 #### Card Burning
 
 On OSX a good program is to use etcher for burning the images on disk:
 
-* <https://etcher.io> 
+* <https://etcher.io>
 
 To access it form the commandline you can also use
 
-* <https://etcher.io/cli> 
+* <https://etcher.io/cli>
 
 #### File System Management
 Unfortunately, the free versions of writing the ext file system are no
@@ -171,7 +171,7 @@ unfortunately only supports read access, see Appendix)
 To easily read and write ext file systems, please install extFS which
 can be downloaded from
 
-* <https://www.paragon-software.com/home/extfs-mac> 
+* <https://www.paragon-software.com/home/extfs-mac>
 
 The purchase price of the software is $39.95.
 
@@ -180,7 +180,7 @@ burning on a raspberry pi.
 
 TODO: PYTHON3 use pyenv
 
-Tip: An alternative would be using virtualbox and using a virtual machine 
+Tip: An alternative would be using virtualbox and using a virtual machine
 to avoid purchasing extFS.
 
 ## Windows
@@ -189,7 +189,7 @@ to avoid purchasing extFS.
 #### Elevate permissions for Python.exe in Windows
 
 * Create a shortcut for python.exe
-* Change the shortcut target into something like C:\xxx\...\python.exe  
+* Change the shortcut target into something like C:\xxx\...\python.exe
 * Click "advance..." in the property panel of the shortcut, and click
   the option "run as administrator"
 
@@ -209,12 +209,12 @@ It's necessary to burn the raspbian image to the SD card with this executable ma
 
 Download the Open source ext3/4 file system driver for Windows installer from
 
-* <http://www.ext2fsd.com> 
+* <http://www.ext2fsd.com>
 * Open Ext2fsd exe
 * The burned image in the previous step in SD card will have 2 partition
 * FAT32 partition will be assigned with the Drive letter - Boot Drive
-* Assign Drive Letter for EXT4 (Right click on the EXT4, 
-  Assign letter.  
+* Assign Drive Letter for EXT4 (Right click on the EXT4,
+  Assign letter.
   The drive letter will be used while running cm-burn) - Root Drive
 * Setting Automount of this EXT4
 * F3 or Tools->Ext2 Volume Management
@@ -222,7 +222,7 @@ Download the Open source ext3/4 file system driver for Windows installer from
 * The previous instructions needed for the Ext2fsd to reserve the Drive Letters and any raspbian image burned to SD will be auto mounted to the specific reserved drive letters. These drive letters need to be specified while using cm-burn
 
 
-## Installation 
+## Installation
 
 ### Install on your OS
 
@@ -231,7 +231,7 @@ you like to use for using the cm-burn program you need to install
 it. The program is written in python3 which we assume you have
 installed and is your default python in your terminal.
 
-To install cm-burn, please execute 
+To install cm-burn, please execute
 ```
 git clone https://github.com/cloudmesh-community/cm-burn.git
 cd cm-burn
@@ -295,10 +295,10 @@ Options:
   --ips=IPS     th ips in hostlist format
 
 Location of the images to be stored for reuse:
-  
+
   ~/.cloudmesh/images
   ~/.cloudmesh/inventory
-  
+
 
 Description:
   cm-burn create [--image=IMAGE] [--group=GROUP] [--names=HOSTS]
@@ -358,17 +358,17 @@ mkdir boot
 cp  ../*.img 00.img
 brew cask install osxfuse
 brew install ext4fuse
-hdiutil mount 00.img 
+hdiutil mount 00.img
 ```
 
-This will return 
+This will return
 ```
-/dev/disk3          	FDisk_partition_scheme         	
+/dev/disk3          	FDisk_partition_scheme
 /dev/disk3s1        	Windows_FAT_32                 	/Volumes/boot
-/dev/disk3s2        	Linux          
+/dev/disk3s2        	Linux
 ```
 
-We can now access the boot partition with 
+We can now access the boot partition with
 
 ```
 ls /Volumes/boot/
@@ -383,12 +383,12 @@ sudo mkdir /Volumes/Linux
 sudo ext4fuse /dev/disk2s2 /Volumes/Linux -o allow_other
 ext4fuse /dev/disk2s2 linux
 less linux/etc/hosts
-sudo umount /Volumes/Linux 
+sudo umount /Volumes/Linux
 ```
 
 ### Activate SSH
 
-see method 3 in <https://www.raspberrypi.org/documentation/remote-access/ssh> 
+see method 3 in <https://www.raspberrypi.org/documentation/remote-access/ssh>
 
 Draft:
 
@@ -407,7 +407,7 @@ change /etc/hostname
 
 ### Activate Network
 
-see <https://www.raspberrypi.org/learning/networking-lessons/rpi-static-ip-address> 
+see <https://www.raspberrypi.org/learning/networking-lessons/rpi-static-ip-address>
 
 ### Change default password
 
@@ -422,7 +422,7 @@ Get rid of the x; leave the colons on either side. This will eliminate the need 
 You probably then want to create a new password by using the passwd command after you log in.
 
 The right thing to do is to create a new hash and store it in place of x.
-not yet sure how that can be done a previous student from the class may have been aboe to do that 
+not yet sure how that can be done a previous student from the class may have been aboe to do that
 Bertholt is firstname.
 
 could this work? <https://unix.stackexchange.com/questions/81240/manually-generate-password-for-etc-shadow>
@@ -435,11 +435,11 @@ RemoveDrive.exe needs to be downloaded to c:\Tools from the following path and t
 
 * <https://www.uwe-sieber.de/drivetools_e.html>
 
-See also 
+See also
 
 * <https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-psdrive?view=powershell-6>
 
-Gregor thinks that unmounting is much easier in an aelevated command prompt using 
+Gregor thinks that unmounting is much easier in an aelevated command prompt using
 
 ```
 mountvol <Drive Letter>: /d
@@ -487,14 +487,14 @@ mountvol <Drive Letter>: /d
 /dev/disk3 (external, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:     FDisk_partition_scheme                        *31.9 GB    disk3
-   
-   
+
+
  ```
- 
- 
+
+
  ## Experiment DIY multiSDCard writer
- 
-We intend to experiment to build a multiSD card writer via USB. 
+
+We intend to experiment to build a multiSD card writer via USB.
 We will attempt to do this for OSX initially, therefore we like to order the following product
 
 * [USB Hub 3.0 Splitter, LYFNLOVE 7 Port USB Data](https://www.amazon.com/Splitter-LYFNLOVE-Charging-Individual-Switches/dp/B072LW1RGG/ref=sr_1_9?ie=UTF8&qid=1534418434&sr=8-9&keywords=usb+3.0+hub)

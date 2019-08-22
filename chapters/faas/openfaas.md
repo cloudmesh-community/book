@@ -75,7 +75,7 @@ For windows faas-cli.exe need to be downloaded from this link
 https://github.com/openfaas/faas-cli/releases
 
 
-### Deploy OpenFaas 
+### Deploy OpenFaas
 
 OpenFaas gives the option to use yaml(.yml) file for configuring the
 functions and the image will be built by OpenFaas automatically.
@@ -107,7 +107,7 @@ following url
 
 ## OpenFaaS Function with Python
 
-This section illustrates how to create a simple Python function with OpenFaaS. 
+This section illustrates how to create a simple Python function with OpenFaaS.
 
 Following are the the steps involved in creating and deploying a
 function with OpenFaaS
@@ -122,7 +122,7 @@ Installing OpenFaas:
 
 OpenFaaS installation guide can be viewed on this web page:
 
-* <https://docs.openfaas.com/deployment>  
+* <https://docs.openfaas.com/deployment>
 
 
 Installing CLI:
@@ -162,7 +162,7 @@ def handle(req):
     print("Python Function: " + req)
 ```
 
-Functions need to be specified in a YAML file created to indicate what to build and deploy onto the OpenFaas cluster. 
+Functions need to be specified in a YAML file created to indicate what to build and deploy onto the OpenFaas cluster.
 YAML file should be created as follows
 
 ```
@@ -182,7 +182,7 @@ YAML file description is as follows
 * *gateway*- Location to specify a remote gateway, the programming
   language, and location of the handler within the filesystem.
 * *functions* - This block defines the functions in our stack.
-* *lang* - Programming language used. 
+* *lang* - Programming language used.
 * *handler* - This is the folder / path fo the handler.py file and any
   other source code
 * *image* - This is the Docker image name. If it is being pushed to

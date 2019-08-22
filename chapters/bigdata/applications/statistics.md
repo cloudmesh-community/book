@@ -24,7 +24,7 @@ to this section with non plagiarized subsections explaining these topics
 for credit.
 
 ![No](images/no.png) Topics identified by a :?: can be contributed by students. If you are interested,
-use piazza for announcing your willingness to do so. 
+use piazza for announcing your willingness to do so.
 
 Mean, minimum, maximum:
 

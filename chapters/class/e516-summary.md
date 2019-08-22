@@ -6,7 +6,7 @@
 
 * Obtain an overview of the topics we explore.
 * Identify topics that you are especially interested in.
-* The main deliverable of this class is a project. 
+* The main deliverable of this class is a project.
 * You **must** dedicate sufficient time on continuous basis for this class.
 
 ---
@@ -40,14 +40,14 @@ or even your Laptop.
 
 Topics of interest include:
 
-* Cloud Computing 
+* Cloud Computing
 * Cloud Computing Architectures
 
   * NIST Big Data Architecture
   * Federated Cloud Computing
   * Multi Cloud and Hybrid Cloud Architectures
   * HPC in the Cloud
-  
+
 * Cloud and Edge Computing
 
   * Example: Environmental Autonomous Robot Boat
@@ -66,7 +66,7 @@ We are using for class communication piazza and github. As all
 projects are supposed to be done as open source projects, we will use
 github for managing them.
 
-Please see 
+Please see
 [Class Communication](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-communicate.epub)
 for more details.
 
@@ -89,14 +89,14 @@ for more details.
     * PaaS
     * SaaS
 
-* Data Centers 
+* Data Centers
 
   * Evolution of the Data Center
   * Today's Data Center
   * Academic Data Centers
 
 * NIST Big Data Reference Architecture
-  
+
   * Composable Services
   * NIST Big Data Reference Architecture
 
@@ -111,7 +111,7 @@ for more details.
     * How to manage infrastructure
     * How to use infrastructure
     * GUI vs commandline vs programming
-    * Overview of commercial and educational IaaS 
+    * Overview of commercial and educational IaaS
 
   * OpenStack
 
@@ -146,8 +146,8 @@ for more details.
   * Introduction to virtualization
 
     * Qemu
-    * KVM 
-    
+    * KVM
+
   * Virtual machines
 
     * Virtual Box
@@ -215,7 +215,7 @@ for more details.
 
   * MQTT
   * GraphQL
-  
+
 * Go for the Cloud Computing
 
   * Introduction to Go
@@ -225,7 +225,7 @@ for more details.
 * Julia for Cloud Computing
 
   * > ![Warning](images/warning.png) *We may not have time to cover this topic.*
-    
+
     However this could be chosen
     by a student as Chapter and section contribution.
 
@@ -256,7 +256,7 @@ for more details.
 
 We try to set up a 1-2 hour class with certification on Wednesday or
 Thursday Aug. 22 or Aug. 23, 2018. Certification means you could go to
-the maker lab by yourself outside of the class. 
+the maker lab by yourself outside of the class.
 
 ## Assignments
 
@@ -269,7 +269,7 @@ Notebook
 
 Bio
 
-: You will develop a formal Bio and post it to Piazza. 
+: You will develop a formal Bio and post it to Piazza.
 
 Chapters
 
@@ -301,7 +301,7 @@ Section
     section shows practically how to do the installation
   * Heroku. This section  provides guidance on how to use Heroku
   * Improvement of existing class sections are allowed
-  
+
   A section must be a reasonable contribution to the class and related
   to cloud or edge computing. Multiple small sections could
   be a reasonable contribution. Typically sections are correlated
@@ -318,7 +318,7 @@ Projects
   material. However in this case you need to distinguish your
   contribution from the regular section and chapter assignment
 
-  The project types include 
+  The project types include
 
   * Project Type A: Build a cloud out of Raspberry PIs while
     enabling and showcasing an application in nKubernetes, Hadoop,

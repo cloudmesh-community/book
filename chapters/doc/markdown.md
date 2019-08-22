@@ -20,7 +20,7 @@ To convert the markdown to other formats with `pandoc`
     ## Sub-heading {#sec:unique-sub-heading-label-without-spaces}
 
     ### Sub Sub Heading heading
-     
+
     Paragraphs are separated
     by a blank line. This is important. There must be one after the heading also
 
@@ -55,27 +55,27 @@ To convert the markdown to other formats with `pandoc`
     Images must all be local and must not have an http reference
     All images must be placed in a directory called images/ as
 	shown in @fig:labelwithoutspaces.
-    
+
     ![This is the caption](images/example.png){#fig:labelwithoutspaces}
-    
+
     Any figure used in the text must be referred to with a figure
 	cation and label. Images can not be embedded in itemized lists.
-	
-    Quotes are in our publications not only done with "quote" but also 
-    with `>` in front of each quoted line, it must be clearly indicated 
+
+    Quotes are in our publications not only done with "quote" but also
+    with `>` in front of each quoted line, it must be clearly indicated
     before or after from which source:
-    
+
     > "This is a quote" [@label].
-    
+
     Please note that the period is after the label. Alternatively you can say
-    
-    In [@label] we find the following list of properties.(use an appropriate starting 
+
+    In [@label] we find the following list of properties.(use an appropriate starting
     sentence):
-    
+
     > * item1
     > * item1
-    
-    Please note that we have not used quotes here as it is confusing in lists, 
+
+    Please note that we have not used quotes here as it is confusing in lists,
     but it is clear from the `>` that we still quote.
 
 Frequent errors we see are:
@@ -93,7 +93,7 @@ Frequent errors we see are:
 * not using 80 char block formatting (makes it easier to correct
   things and display in different editors)
 * trying to do to fancy things that are not supported in markdown
- 
+
 
 
 ## Editors
@@ -133,8 +133,8 @@ Dilinger
 Markdown plus
 
 : > ![Warning](images/warning.png) *We are not using the many extensions that are provided by
-  > markdown plus.*  
-  
+  > markdown plus.*
+
   We recommend that you use emacs or PyCharm. However,
   those that want to do advanced markdown outside the class may
   benefit from markdown plus.  Markdown plus has lots of extensions.
@@ -151,7 +151,7 @@ Markdown plus
   $ open dist/index.html
   ```
 Remarkable
- 
+
 : see <https://remarkableapp.github.io/>
 
 Visualstudio
@@ -230,13 +230,13 @@ Mermaid is a graph generation tool that lets you create graphs and
 diagrams with the help of a description language. It includes graphviz
 and UML like diagrams, as well as gantt charts
 
-A live editor is available at 
+A live editor is available at
 
   * [Mermaid live editor](https://mermaidjs.github.io/mermaid-live-editor/)
 
 A markdown plugin for pandoc is available
 
-* Mermaid 
+* Mermaid
 * <https://github.com/raghur/mermaid-filter>
 
 Installation is done with
@@ -347,8 +347,8 @@ properly
 
 ### Urls in markdown
 
-Urls must be wrapped in proper markdown syntax this is done through 
-`[text](url)` or `<url>` work. If you just use the url in the text without the `<>` 
+Urls must be wrapped in proper markdown syntax this is done through
+`[text](url)` or `<url>` work. If you just use the url in the text without the `<>`
 it will not render properly
 
 
@@ -361,7 +361,7 @@ use `*italic*` and `**bold**` only.
 
 ### Hyperreferences to other sections in markdown
 
-PLease note that you must not 
+PLease note that you must not
 
 ```
 # This is my header {#s-this-is-my-label}
@@ -372,7 +372,7 @@ Now, I can refer to [Section](#s-this-is-my-label). References, must not have sp
 
 ### Code in markdown
 
-Code in markdown is easy to integrate with 
+Code in markdown is easy to integrate with
 
 
 	```python
@@ -397,17 +397,17 @@ as prefix which indicates the prompt sign.
 
 ### Citations in markdown
 
-As we manage many references it is unnecessary to duplicate them. 
-You can reuse them from others. IF you use them and notice errors, we 
-require you to not only fix them in your bib, but also in the bib where 
-you found it. Furthermore, we like you to use the same label and do not 
+As we manage many references it is unnecessary to duplicate them.
+You can reuse them from others. IF you use them and notice errors, we
+require you to not only fix them in your bib, but also in the bib where
+you found it. Furthermore, we like you to use the same label and do not
 use a different label.
 
 The best way to manage bibliographies is with jabref or emacs. We have
 seen students that try to avoid them while making their life
 unnecessarily complicated.
 
-You must make sure that your bibliography entries are syntactically correct 
+You must make sure that your bibliography entries are syntactically correct
 which either emace or jabref can do.
 
 We will deduct points every time we notice that a bibliography is
@@ -416,7 +416,7 @@ artifact into a bib file. For papers it is placed in a file called
 `paper.bib`, for reports it is places in a file called
 `report.bib`. The markdown file is accordingly called `paper.md` or
 `report.md` all images must be placed in an `images/` directory
- 
+
 
 When you cite Then you can cite a references you can simply do this
 with for example `[@www-google]`. Please not that citation keys must
@@ -511,7 +511,7 @@ using the right tool.
 
 ### Using pandoc to check your files
 
-It is easy to install pandoc on your operating system. Please see the Pandoc web page and 
+It is easy to install pandoc on your operating system. Please see the Pandoc web page and
 install it.
 
 Once installed and you have in a directory the files
@@ -522,7 +522,7 @@ report.bib
 images/test.png
 ```
 
-You can easily generate for example a ePub, PDF, or html output with 
+You can easily generate for example a ePub, PDF, or html output with
 Make sure to also install pandoc-crossref
 
 ```bash

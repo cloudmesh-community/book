@@ -214,7 +214,7 @@ following in your `.bash_profile` file:
 ```bash
 alias e=open_emacs
 alias rm='rm -i'
-alias mv='mv -i' 
+alias mv='mv -i'
 alias h='history'
 ```
 
@@ -271,7 +271,7 @@ In addition we can define variables in a makefile such as
 ```
     HELLO="Hello World"
 
-    hello: 
+    hello:
         @echo $(HELLO)
 ```
 

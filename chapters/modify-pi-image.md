@@ -12,7 +12,7 @@ Goals:
 
 ## Overview
 
-When creating large clusters it is not convenient to log in by hand in each PI. Typically to avoid this. One configures the PI via PXE boot. However in this setup we do not use PXE boot, but try to burn an individualized OS that contains from the beginning on the individualized hostname, an ssh key (and the public key is shared with all other images that are burned this way, as well as the network configuration. 
+When creating large clusters it is not convenient to log in by hand in each PI. Typically to avoid this. One configures the PI via PXE boot. However in this setup we do not use PXE boot, but try to burn an individualized OS that contains from the beginning on the individualized hostname, an ssh key (and the public key is shared with all other images that are burned this way, as well as the network configuration.
 
 ## Approach
 
@@ -30,7 +30,7 @@ generated unique name.
 
 ---
 
-First create a directory and download the [latest build of Raspbian Lite](https://downloads.raspberrypi.org/raspbian_lite_latest). The last step is to download a script that is located at 
+First create a directory and download the [latest build of Raspbian Lite](https://downloads.raspberrypi.org/raspbian_lite_latest). The last step is to download a script that is located at
 
 * <https://github.com/cloudmesh-community/hid-sp18-419/blob/master/project-code/pi-config/make-pi-images.py>
 
@@ -42,7 +42,7 @@ $ wget -O os-images/pi-img.zip https://downloads.raspberrypi.org/raspbian_lite_l
 $ wget -O os-images/pi-img.zip https://sourceforge.net/projects/dexterindustriesraspbianflavor/files/latest/download
 $ unzip -d os-images/master os-images/pi-img.zip
 $ cd os-images
-$ wget https://github.com/cloudmesh-community/hid-sp18-419/blob/master/project-code/pi-config/make-pi-images.py) 
+$ wget https://github.com/cloudmesh-community/hid-sp18-419/blob/master/project-code/pi-config/make-pi-images.py)
 ```
 
 To run the make-pi-images.py script execute the following command
@@ -81,23 +81,23 @@ data:
        start: 0001
        end:   0005
        lead:  0000
-       range: 0002-0004 
+       range: 0002-0004
    ssh: enable
    sshkey: ~/.ssh/id_rsa.pub
-   passwd:  readline 
+   passwd:  readline
 ```
-       
+
 The meaning of the attributes is rather simple. Under images we specify a number of images that we could chose and are downloaded onto the computer that burns the SD-cards if they are not present. The cluster base hostname is defined by the attribute `hostname` and the first worker node to be specified has the postfix defined by start. We define the last number also in the yaml file, while we will look between the start and the end number. The number of leading blanks is defined by the start and end numbers. A special node called `lead` is specified that is the lead node and all worker nodes are accessible by this lead node. Furthermore. the lead node will be used to monitor the cluster. If the start number includes the lead ode the lead node will be configured. The attribute range specifies which SD-cards are configured. Note this could be a subset of the entire cluster defined by start and end.
-       
-       
+
+
 ### Gregor: Manual page cmd5 may be easier than click.
 
     modify_sdcard -fetch [Raspbian|dexter|https://downloads.raspberrypi.org/raspbian_lite_latest]  - fetched the image
     modify_sdcard -burn IMAGE   - puts the given image on the sd card
-    modify_sdcard -ssh [enable|disable] enables or disables ssh 
+    modify_sdcard -ssh [enable|disable] enables or disables ssh
     modify_sdcard -sshkey [~/.ssh/id_rsa.pub]  puts the default key for login
     modify_sdcard -name NAME puts the given name on the image
-    
+
 
 TODO: Loop to create multiple images, handle exception of existing mount point and output directory
 
@@ -117,6 +117,6 @@ set up the VM to use the SD card device on the Mac. Instruction on how
 to do this are
 [here](https://superuser.com/questions/373463/how-to-access-an-sd-card-from-a-virtual-machine).
 
-Some information on how to burn an SD image without using Etcher can be found 
-[here](https://www.macworld.co.uk/how-to/mac/how-to-set-up-raspberry-pi-3-with-mac-3637490/). 
+Some information on how to burn an SD image without using Etcher can be found
+[here](https://www.macworld.co.uk/how-to/mac/how-to-set-up-raspberry-pi-3-with-mac-3637490/).
 

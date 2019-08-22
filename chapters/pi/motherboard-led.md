@@ -13,7 +13,7 @@ Naturally this ac be done via a remote command if your ssh keys are
 uploaded and your originating computer is added to the
 authorized_keys. Now you can can control them via ssh
 
-	ssh pi@red03 "echo 1 > led; sudo cp led /sys/class/leds/led0/brightness"		
+	ssh pi@red03 "echo 1 > led; sudo cp led /sys/class/leds/led0/brightness"
 	ssh pi@red03 "echo 0 > led; sudo cp led /sys/class/leds/led0/brightness"
 
 This is extremely useful as it allows us to check if we the OS is

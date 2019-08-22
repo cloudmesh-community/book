@@ -48,18 +48,18 @@ complete list lease visit the Microsoft Web page via this
 [link](https://azure.microsoft.com/en-us/services/#compute).
 
 
-###  Virtual Machine Infrastructure as a Services 
+###  Virtual Machine Infrastructure as a Services
 
 Source: <https://support.microsoft.com/en-us/allproducts>
 
-Microsoft offers core IaaS 
+Microsoft offers core IaaS
 [Compute](https://azure.microsoft.com/en-us/product-categories/compute/ "Compute")
 compute resources. This includes the following services:
 
 -
     [Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/
     "Virtual Machines") to provision Windows and Linux
-    virtual machines 
+    virtual machines
 -
     [Virtual Machine Scale Sets](https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/
     "Virtual Machine Scale Sets") to  manage and scale
@@ -71,7 +71,7 @@ compute resources. This includes the following services:
 
 Microsoft offers
 [Containers](https://azure.microsoft.com/en-us/overview/containers/)
-to allow for the development of 
+to allow for the development of
 containerized applications. This includes:
 
 -
@@ -127,14 +127,14 @@ Storage is offered through a variety of
     [Azure Database Migration Service](https://azure.microsoft.com/en-us/services/database-migration/
     "Azure Database Migration Service") simplifies on-premises
     database migration to the cloud
-- 
+-
     [Redis Cache](https://azure.microsoft.com/en-us/services/cache/
     "Redis Cache") which provides a Redis Cache as a service to
     support high-throughput and  low-latency data access
 -
     [SQL Server Stretch Database](https://azure.microsoft.com/en-us/services/sql-server-stretch-database/
     "SQL Server Stretch Database") which supports dynamically
-    stretch on-premises SQL server databases to 
+    stretch on-premises SQL server databases to
     Azure
 
 ### Networking
@@ -160,24 +160,24 @@ sign on from IU to proceed. If you use another e-mail you can
 certainly do that and you free account sis not associated with the IU
 account. This could be your Skype account or some other e-mail.  After
 registration you will be provided with 12 months of free usage of a
-few selected services and $200 credits for 30 days. At the end of 30 days, 
-Azure disables your subscription. Your subscription is disabled to protect 
-you from accidentally incurring charges for usage beyond the credit and free 
-services included with your subscription. To continue using Azure services, 
-you must upgrade your subscription to a Pay-As-You-Go subscription. 
-After you upgrade, your subscription still has access to free services for 12 months. 
+few selected services and $200 credits for 30 days. At the end of 30 days,
+Azure disables your subscription. Your subscription is disabled to protect
+you from accidentally incurring charges for usage beyond the credit and free
+services included with your subscription. To continue using Azure services,
+you must upgrade your subscription to a Pay-As-You-Go subscription.
+After you upgrade, your subscription still has access to free services for 12 months.
 You only get charged for usage beyond the free services and quantities.
-The Azure Student Account requires that you to activate the account after 30 days of use. 
-If you do not activate, you will lose access to your Azure Student Account 
+The Azure Student Account requires that you to activate the account after 30 days of use.
+If you do not activate, you will lose access to your Azure Student Account
 and can not use the services.
 
-The Azure student account FAQ will likely answer questions you might have pertaining 
-to an Azure Student Account, what you will have access to, how long you will enjoy access, 
-and additional general overview information including terms of the account. 
-<https://azure.microsoft.com/en-us/free/free-account-students-faq> 
+The Azure student account FAQ will likely answer questions you might have pertaining
+to an Azure Student Account, what you will have access to, how long you will enjoy access,
+and additional general overview information including terms of the account.
+<https://azure.microsoft.com/en-us/free/free-account-students-faq>
 
-Once you have set up the Azure Student account, you will gain access the Azure environment 
-through the Azure Portal <https://portal.azure.com>. To log in, 
+Once you have set up the Azure Student account, you will gain access the Azure environment
+through the Azure Portal <https://portal.azure.com>. To log in,
 please use the credentials you determined during the set up.
 
 
@@ -216,7 +216,7 @@ Source: <https://docs.microsoft.com/en-us/azure/virtual-machines/windows/media/q
 
 ## Create a Ubuntu Server 18.04 LTS Virtual Machine in Azure
 
-Here are the steps to create a Ubuntu Server 18.04 LTS Virtual Machine in Azure. 
+Here are the steps to create a Ubuntu Server 18.04 LTS Virtual Machine in Azure.
 
 To start, go to the Azure Portal <https://portal.azure.com>.
 
@@ -255,7 +255,7 @@ The next configuration section is `Disks`:(see @fig:disks).
 
 ![disks](images/disks.png){#fig:disks}
 
-Choose the default configurations settings or modify to your liking the `OS disk type`. 
+Choose the default configurations settings or modify to your liking the `OS disk type`.
 This example uses the `Standard SSD` option.
 
 For `Networking` you can choose all the default configuration settings or modify to your liking:(see @fig:networking).
@@ -274,16 +274,16 @@ Once the new VM has been created, Naviagate back to the `Virtual machines` and n
 
 ![newvmaftercreation](images/newvmaftercreation.png){#fig:newvmaftercreation}
 
-After creation the virtual machine will be in a `running` status. 
-You will want to decide if you want your virtual machine in a `running` status, 
-else stop the VM so that you do not waste resources. 
+After creation the virtual machine will be in a `running` status.
+You will want to decide if you want your virtual machine in a `running` status,
+else stop the VM so that you do not waste resources.
 
-## Remote access the Virtual Machine 
-To remote access a virtual machine, you can use a client application like Putty: 
+## Remote access the Virtual Machine
+To remote access a virtual machine, you can use a client application like Putty:
 <https://www.putty.org> .
 
-To use Putty and access the virtual machine, you can configure DNS name in Azure 
-instead of using an IP. This is performed in the Virtual Machine configuration under 
+To use Putty and access the virtual machine, you can configure DNS name in Azure
+instead of using an IP. This is performed in the Virtual Machine configuration under
 `DNS name`:(see @fig:dns).
 
 ![dns](images/dns.png){#fig:dns}
@@ -295,7 +295,7 @@ You can chose a `static` IP setting or a `dynamic` IP (This example uses a stati
 
 To apply the setting,  click `save`.
 
-Note: If you have not configured the `port` that connection will use, 
+Note: If you have not configured the `port` that connection will use,
 then connection will not be successful.
 
 In your Virtual machine settings click `Connect` and review the connection settings.
@@ -303,29 +303,29 @@ This example shows the designated `port 22` to be the port that will remote conn
 
 ![connectandport](images/conncetandport.png){#fig:connectandport}
 
-To learn more about working with ports you can review the following: 
+To learn more about working with ports you can review the following:
 <https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nsg-quickstart-portal>
 
-Next, to connect to the virtual machine, lauch the Putty client and enter 
+Next, to connect to the virtual machine, lauch the Putty client and enter
 the DNS name of the virtual machine to connect to the virtual machine:(see @fig:putty).
 
 ![putty](images/putty.png){#fig:putty}
 
-The first time the environment is accessed Putty, 
-Putty will prompt to cache your servers host key. 
+The first time the environment is accessed Putty,
+Putty will prompt to cache your servers host key.
 Select `Yes` when prompted:(see @fig:cacheputtykey).
 
 ![cacheputtykey](images/cacheputtykey.png){#fig:cacheputtykey}
 
 After the key is cached, it will be remember the next time you access the VM with the Putty client.
-After the VM is successfully accessed in Puty, you will be prompted to enter your server credentials 
+After the VM is successfully accessed in Puty, you will be prompted to enter your server credentials
 as specified in the virtual machine setup.
 
 Once credentials are provided, you will be logged into your virtual machine:(see @fig:loggedinviaputty).
 
 ![loggedinviaputty](images/loggedinviaputty.png){#fig:loggedinviaputty}
 
-To learn more about connecting to Azure virtual machines you can visit: 
+To learn more about connecting to Azure virtual machines you can visit:
 <https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon>
 
 ## Starting a VM

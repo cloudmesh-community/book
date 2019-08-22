@@ -43,7 +43,7 @@ The required scripts are stored in the
 [Cloudmesh Community Pi](https://github.com/cloudmesh-community/pi) repository
 and must be copied to each Raspberry Pi in order to run. This guide assumes that
 each Pi has internet access which is required to download the necessary tools.
-The first steps to setup the Pi tools is listed on the 
+The first steps to setup the Pi tools is listed on the
 [README.md](https://github.com/cloudmesh-community/pi/blob/master/README.md)
 for the Pi tools repository. We will repeat those steps here for convenience.
 
@@ -248,7 +248,7 @@ configuration changes necessary for Kubernetes.
 
 ### System configuration {#pi-kubernetes-system-config}
 
-Kubernetes is not compatible with SWAP memory and as of version 1.8 it will 
+Kubernetes is not compatible with SWAP memory and as of version 1.8 it will
 [fail if swap is enabled on a node](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.8.md#before-upgrading),
 therefore we need to disable swap memory on Raspbian. It is possible that
 disabling swap on the Pi could cause other issues, especially due to the low
@@ -433,9 +433,9 @@ Master](#pi-kubernetes-join-workers) for more details.
 Now that you have the Kubernetes cluster running you can deploy pods on the
 cluster. For production use of Kubernetes it is recommended to use a Controller
 which will manage the details of deploying pods to nodes and ensuring
-replication and self-healing. Please see the 
+replication and self-healing. Please see the
 [Kubernetes Pod Overview](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/#pods-and-controllers)
-section of the Kubernetes documentation for information on creating 
+section of the Kubernetes documentation for information on creating
 [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/),
 [StatefulSets](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 or

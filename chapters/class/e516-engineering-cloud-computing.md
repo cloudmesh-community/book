@@ -6,7 +6,7 @@
 
 * <https://github.com/cloudmesh-community/book/blob/master/syllabus/e516.pdf>
 
-Sample chapters can be reached if you download teh PDF document locally and click on the links.  
+Sample chapters can be reached if you download teh PDF document locally and click on the links.
 
 ---
 
@@ -34,15 +34,15 @@ Sample chapters can be reached if you download teh PDF document locally and clic
   enhance your knowledge from online resources and additional
   literature. You will need access to a "modern" computer that allows
   using virtual machines and/or containers. If such a system is not
-  available to you can also use cloud vms we provide and if you opt 
-  to do so one or more Raspberry's PI. All residential students will 
+  available to you can also use cloud vms we provide and if you opt
+  to do so one or more Raspberry's PI. All residential students will
   have access to a total
   of 200 Raspberry PIs. Online students can opt to purchase one or
   more based on our materials list that we will release throughout the
   semester. All students will have access to a cloud.
-* This page is maintained and updated at 
+* This page is maintained and updated at
   [e516: Engineering Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md)
-* Course Description URL: 
+* Course Description URL:
   <https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-engineering-cloud-computing.md>
 * [Registrar information and Other related classes](https://github.com/cloudmesh-community/book/blob/master/chapters/class/fall2019.md)
 
@@ -64,7 +64,7 @@ disciplines.
 The course has the following objectives:
 
 * Provide a basic introduction to cloud computing
-* Introduce the concept of cloud data centers 
+* Introduce the concept of cloud data centers
 * Get familiar with cloud infrastructure as a Service such as
   OpenStack, Azure, or AWS
 * Get familiar with cloud infrastructure such as Docker and Kubernetes
@@ -119,17 +119,17 @@ include a simple deployment and runtime instruction set.
 The main deliverable of the class is a project. The project is
 assessed through the following artifacts:
 
-1. Deployment and install instructions, 
+1. Deployment and install instructions,
 2. Project report (typically 2-3 pages per month, tutorial and
-   chapters can be reused if possible), 
-3. Working project code that can be installed and executed in reproducible manner by a third party 
+   chapters can be reused if possible),
+3. Working project code that can be installed and executed in reproducible manner by a third party
 4. Code developed by the project team distributed in github.com
-5. Project progress notes checked into github throughout the semester. Each 
+5. Project progress notes checked into github throughout the semester. Each
    week the project progress is reported and will be integrated
    into the final grade.
 6. three discussions or progress reports with the instructors about your project
 
-The grade distribution is as follows 
+The grade distribution is as follows
 
 * 10% Comprehension Activities
 * 10% Sections

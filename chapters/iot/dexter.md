@@ -22,7 +22,7 @@ Make sure to check if there is a newer version
 DexterOS:
 
 *
-<https://www.dexterindustries.com/dexteros/get-dexteros-operating-system-for-raspberry-pi-robotics> 
+<https://www.dexterindustries.com/dexteros/get-dexteros-operating-system-for-raspberry-pi-robotics>
 
 * <https://www.dexterindustries.com/download/dexteros>
 
@@ -46,7 +46,7 @@ Detailed information on how to generate an SD card while using your OS
 is provided at
 
 *
-<https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card> 
+<https://www.dexterindustries.com/howto/install-raspbian-for-robots-image-on-an-sd-card>
 
 ### Github
 

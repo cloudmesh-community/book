@@ -3,7 +3,7 @@
 ---
 
 > ![Warning](images/warning.png) Please note that NIST has temporarily removed the
-> Fingerprint data set. We unfortunately do not have a copy of the dataste. 
+> Fingerprint data set. We unfortunately do not have a copy of the dataste.
 > If you have one, please notify us
 ---
 

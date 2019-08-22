@@ -34,8 +34,8 @@ To install boto with its latest release, use
 ```bash
 $ pip install boto3
 ```
-    
-To install boto from source, use 
+
+To install boto from source, use
 
 ```bash
 $ git clone https://github.com/boto/boto3.git
@@ -60,12 +60,12 @@ $ python setup.py install
 An initial setup is required to be able to access AWS EC2 from BOTO wherein you
 provide the key and region details. You can find the key details from IAM
 console on AWS.
-	
+
 ## Boto configuration
 
-BOTO can be configured in two ways, either by using the aws configure 
-command if you have AWS Command line interface installed or simply by manually 
-creating and editing the `~/.aws/credentials` file to include 
+BOTO can be configured in two ways, either by using the aws configure
+command if you have AWS Command line interface installed or simply by manually
+creating and editing the `~/.aws/credentials` file to include
 important parameters highlighted next.
 
 ```python
@@ -90,7 +90,7 @@ EC2 instance, the same can be maintained by creating a config file.
 ## EC2 interface of Boto
 
 
-####  Create connection 
+####  Create connection
 
 To access EC2 instance, first import the required package.
 
@@ -107,8 +107,8 @@ identify the user.
 
 ```python
 connection = boto3.ec2.connect_to_region(
-    '<region name>', 
-    aws_access_key_id='<access key>', 
+    '<region name>',
+    aws_access_key_id='<access key>',
     aws_secret_access_key='<secret key'>)
 ```
 
@@ -121,12 +121,12 @@ The code to list the running instances (if you have some) is very simple:
 
 ```python
 import boto3
-	
+
 ec2 = boto3.client('ec2')
 response = ec2.describe_instances()
 print(response)
 ```
-	
+
 #### Launch a new instance
 
 To launch a new instance with default properties
@@ -163,7 +163,7 @@ Up and running instances can be stopped. Thw `stop_instances` function of connec
 object enables multiple instances to be stopped in one command.
 
 ```python
-connection.stop_instances(instance_ids=['<id1>','<id2>', ...]) 
+connection.stop_instances(instance_ids=['<id1>','<id2>', ...])
 ```
 
 #### Terminate instance
@@ -172,22 +172,22 @@ To terminate one or more instances simultaneously, use the `terminate_instances`
 function.
 
 ```python
-connection.terminate_instances(instance_ids=['<id1>','<id2>', ..]) 
+connection.terminate_instances(instance_ids=['<id1>','<id2>', ..])
 ```
 
 ### Reboot instances
 
-The next example showcases how to reboot an instance, which is copied from 
+The next example showcases how to reboot an instance, which is copied from
 <http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html>
 
 ```python
-# Code copied form 
+# Code copied form
 # http://boto3.readthedocs.io/en/latest/guide/ec2-example-managing-instances.html
 import boto3
 from botocore.exceptions import ClientError
-	
+
 ec2 = boto3.client('ec2')
-	
+
 try:
     ec2.reboot_instances(InstanceIds=['INSTANCE_ID'], DryRun=True)
 except ClientError as e:
@@ -204,7 +204,7 @@ except ClientError as e:
 ## Amazon S3 interface of Boto
 
 
-####  Create connection 
+####  Create connection
 
 Import required packages
 
@@ -213,7 +213,7 @@ import boto3.s3
 from boto3.s3.key import Key
 ```
 
-Create a connection 
+Create a connection
 
 ```python
 connection = boto.connect_s3('<access-key>','<secret-key>')
@@ -255,16 +255,16 @@ file can be found inside the bucket in which new key is created.
 
 #### List all buckets
 
-One account can have maximum 100 buckets in which data objects can be stored. 
+One account can have maximum 100 buckets in which data objects can be stored.
 
 ```python
 result = connection.get_all_buckets()
 ```
-    
+
 The `get_all_buckets` function of S3Connection lists all the buckets within account.
 It returns ResultSet object which has list of all buckets.
-    
- 
+
+
 
 #### List all objects in a bucket
 
@@ -281,7 +281,7 @@ for key in bucket.list():
 
 #### Delete object
 
-To delete any data object from bucket, delete_key function of bucket is used. 
+To delete any data object from bucket, delete_key function of bucket is used.
 
 ```python
 k = Key(<bucket-name>, <file-name>)
@@ -294,10 +294,10 @@ To delete a bucket, provide a bucket name and call the `delete_bucket` function 
 S3Connection object.
 
 ```python
-connection.delete_bucket('<bucket-name>') 
+connection.delete_bucket('<bucket-name>')
 ```
 
-## References 
+## References
 
 * <https://github.com/boto/boto3>
 * <https://boto3.readthedocs.io/en/latest/guide/quickstart.html#installation>
@@ -308,16 +308,16 @@ connection.delete_bucket('<bucket-name>')
 
 E.boto.cloudmesh.1:
 
-> will will nw create a cloudmesh tool that manages virtual machines on the 
-  commandline. For that we copy the code published at 
+> will will nw create a cloudmesh tool that manages virtual machines on the
+  commandline. For that we copy the code published at
 
-> * <https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2-example-managing-instances.html>. 
+> * <https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2-example-managing-instances.html>.
 
-> Modify this code using docopts and look at samples in 
-> 
+> Modify this code using docopts and look at samples in
+>
 > * <https://github.com/cloudmesh-community/cm>
 
-> where we use libcloud. The code from Amazon is.  
+> where we use libcloud. The code from Amazon is.
 
 ```python
 import sys
@@ -356,7 +356,7 @@ else:
     except ClientError as e:
         print(e)
 ```
-        
+
 E.boto.cloudmesh.2:
 
 > Integrate, start, stop, rebot, and other useful functions

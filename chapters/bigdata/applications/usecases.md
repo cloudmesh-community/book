@@ -389,7 +389,7 @@ links and notify us of the outdated links.
 -   [On line 51 Use Cases](http://bigdatawg.nist.gov/usecases.php)
 -   [Summary of Requirements
     Subgroup](http://bigdatawg.nist.gov/_uploadfiles/M0245_v5_6066621242.docx)
-    
+
 -   ~~[Use Case 6 Mendeley](http://mendeley.com%20http//dev.mendeley.com)~~ **(this link does not exist any longer)**
 -   ~~[Use Case 7 Netflix](http://www.slideshare.net/xamat/building-largescale-realworld-recommender-systems-recsys2012-tutoria)~~
 -   Use Case 8 Search
@@ -416,7 +416,7 @@ links and notify us of the outdated links.
 -   Use Case 15 Intelligence Data Processing and Analysis
     -   <http://www.afcea-aberdeen.org/files/presentations/AFCEAAberdeen_DCGSA_COLWells_PS.pdf>,
     -   <http://stids.c4i.gmu.edu/STIDS2011/papers/STIDS2011_CR_T1_SalmenEtAl.pdf>,
-    
+
     -   ~~<http://stids.c4i.gmu.edu/papers/STIDSPapers/STIDS2012/_T14/_SmithEtAl/_HorizontalIntegrationOfWarfighterIntel.pdf>,~~
     -   ~~<https://www.youtube.com/watch?v=l4Qii7T8zeg>~~
     -  ~~<http://dcgsa.apg.army.mil/>~~
@@ -425,7 +425,7 @@ links and notify us of the outdated links.
     -   [Logical observation identifiers names and
         codes](http://loinc.org/)
     -   [Indiana Health Information Exchange](http://www.ihie.org/)
-    
+
     -   ~~[Institute of Medicine Learning Healthcare
         System](http://www.iom.edu/Activities/Quality/LearningHealthcare.aspx)~~
 -   Use Case 17
@@ -499,7 +499,7 @@ links and notify us of the outdated links.
 -   Use Case 42 ENVRI, Common Operations of Environmental Research
     Infrastructure
     -   [ENVRI Project website](http://envri.eu/)
-    -   ~~[ENVRI Reference Model](http://confluence.envri.eu:8090/display/ERM/Start)~~ 
+    -   ~~[ENVRI Reference Model](http://confluence.envri.eu:8090/display/ERM/Start)~~
     -   ~~[ENVRI deliverable D3.2 : Analysis of common requirements of
         Environmental Research
         Infrastructures](http://confluence.envri.eu:8090/download/attachments/327687/D3.3%20Analysis%20of%20Requirements%20V1.0.pdf?version=1&modificationDate=1366965933706&api=v2)~~

@@ -15,7 +15,7 @@ Some Introductory Material about go can be found at
 * <http://courses.cs.vt.edu/cs5204/fall11-kafura/Overheads/Go.pptx>
 * <https://en.wikipedia.org/wiki/Kahn_process_networks>
 
-## The GO Language 
+## The GO Language
 
 Information that deals with describing the Go language are
 

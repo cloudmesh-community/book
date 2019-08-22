@@ -69,7 +69,7 @@ background like cosmic rays.
 
 -   <http://grids.ucs.indiana.edu/ptliupages/publications/Where%20does%20all%20the%20data%20come%20from%20v7.pdf> [@fox2011does]
 -   <http://www.sciencedirect.com/science/article/pii/S037026931200857X> [@aad2012observation]
--   <http://www.nature.com/news/specials/lhc/interactive.html> 
+-   <http://www.nature.com/news/specials/lhc/interactive.html>
 
 Looking for Higgs Particles: Python Event Counting for Signal and
 Background (Part 2)
@@ -184,7 +184,7 @@ answers.
 
 ### Resources
 
--   <http://indico.cern.ch/event/20453/session/6/contribution/15?materialId=slides> 
+-   <http://indico.cern.ch/event/20453/session/6/contribution/15?materialId=slides>
 -   ~~<http://www.atlas.ch/photos/events.html>~~ (this link is outdated)
 -   <https://cms.cern/> [@cms]
 

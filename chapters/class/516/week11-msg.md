@@ -1,4 +1,4 @@
-# Week 11: Messaging 
+# Week 11: Messaging
 
 # Lab Activity MQTT
 

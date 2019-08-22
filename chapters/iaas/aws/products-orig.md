@@ -2,22 +2,22 @@
 
 ### Compute
 
--   [Amazon EC2](https://aws.amazon.com/ec2/?nc2=h_m1) 
--   [Amazon EC2 Auto 
-    Scaling](https://aws.amazon.com/ec2/autoscaling/?nc2=h_m1) 
--   [Amazon Elastic Container Service](/ecs/?nc2=h_m1) 
--   [Amazon Elastic Container Service for Kubernetes](/eks/?nc2=h_m1) 
--   [Amazon Elastic Container Registry](/ecr/?nc2=h_m1) 
--   [Amazon Lightsail](/lightsail/?nc2=h_m1) 
--   [AWS Batch](https://aws.amazon.com/batch/?nc2=h_m1) 
--   [AWS Elastic 
-    Beanstalk](https://aws.amazon.com/elasticbeanstalk/?nc2=h_m1) 
--   [AWS Fargate](/fargate/?nc2=h_m1) 
--   [AWS Lambda](/lambda/?nc2=h_m1) 
--   [AWS Serverless Application 
-    Repository](https://aws.amazon.com/serverless/serverlessrepo/?nc2=h_m1) 
--   [Elastic Load 
-    Balancing](https://aws.amazon.com/elasticloadbalancing/?nc2=h_m1) 
+-   [Amazon EC2](https://aws.amazon.com/ec2/?nc2=h_m1)
+-   [Amazon EC2 Auto
+    Scaling](https://aws.amazon.com/ec2/autoscaling/?nc2=h_m1)
+-   [Amazon Elastic Container Service](/ecs/?nc2=h_m1)
+-   [Amazon Elastic Container Service for Kubernetes](/eks/?nc2=h_m1)
+-   [Amazon Elastic Container Registry](/ecr/?nc2=h_m1)
+-   [Amazon Lightsail](/lightsail/?nc2=h_m1)
+-   [AWS Batch](https://aws.amazon.com/batch/?nc2=h_m1)
+-   [AWS Elastic
+    Beanstalk](https://aws.amazon.com/elasticbeanstalk/?nc2=h_m1)
+-   [AWS Fargate](/fargate/?nc2=h_m1)
+-   [AWS Lambda](/lambda/?nc2=h_m1)
+-   [AWS Serverless Application
+    Repository](https://aws.amazon.com/serverless/serverlessrepo/?nc2=h_m1)
+-   [Elastic Load
+    Balancing](https://aws.amazon.com/elasticloadbalancing/?nc2=h_m1)
 -   [VMware Cloud on AWS](https://aws.amazon.com/vmware/?nc2=h_m1)
 
 ### Storage

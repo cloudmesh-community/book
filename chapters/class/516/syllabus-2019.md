@@ -1,4 +1,4 @@
-# Syllabus Engineering Cloud Computing 
+# Syllabus Engineering Cloud Computing
 
 
 ---
@@ -65,7 +65,7 @@ and others can be achieved through their free tier,
 | 15   | Projects Due |
 | 16   | Project Improvements |
 
-For each of the topics you will find one or more relevant chapters or 
+For each of the topics you will find one or more relevant chapters or
 sections in our online book.
 
 ## Attendance
@@ -80,16 +80,16 @@ This course will not have exams. Instead, we have the following graded
 assignment categories:
 
 * Lab Assignments (pass/fail) are assignments that will be
-  conducted on a weekly basis. They will help you making sure you 
-  not only understand the material theoretically, but try them out. 
-  
+  conducted on a weekly basis. They will help you making sure you
+  not only understand the material theoretically, but try them out.
+
 * Cloud Technology Review and Examples (Graded): (This can be
   substituted for more programming in your project). This is a document
   about a Cloud technology that is not yet included in our handbook to
   introduce an interested party to it. It should not contain
   advertisements but be a rational description of the technology with
   examples that you have tried yourself. You will have to give a non
-  plagiarized presentation and document about it. 
+  plagiarized presentation and document about it.
 
 * Project Assignments (Graded): The most important part of the class for
   which you will be working throughout the semester. Up to three
@@ -105,21 +105,21 @@ for your project.
 
   A description of what your project is about and how it
   relates to cloud computing and address:
-  
+
   * What is the problem you try to address?
   * What are you doing to address this problem?
   * How are you addressing this problem?
   * What is the architecture that adresses the problem that you will implement?
-  
+
 * Code and Documentation Review
 
   * You will be asked to have a meeting with the TA's and/or instructor
     to showcase your code and have at least one review prior to your
-    final submission. 
-  
-  * This will take usually take place through the Lab hours on regular basis. 
+    final submission.
+
+  * This will take usually take place through the Lab hours on regular basis.
   * A first project discussion must have been done at least once at midterm time.
-  
+
 * Final Project Submission
 
   * All code and documentation must be checked into GitHub well before
