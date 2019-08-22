@@ -31,8 +31,7 @@ our cloud. This will require you to make sure a TA can replicate it.
 
 Let us now focus on using virtual box.
 
-Installation
------------
+## Installation
 
 First you will need to install virtualbox. It is easy to install and
 details can be found at
@@ -80,15 +79,14 @@ diskspace.
 
 Please let us know the smallest configuration that works.
 
-Guest additions
----------------
+## Guest additions
 
 The virtual guest additions allow you to easily do the following tasks:
 
--   Resize the windows of the vm
+- Resize the windows of the vm
 
--   Copy and paste content between the Guest operating system and the
-    host operating system windows.
+- Copy and paste content between the Guest operating system and the
+  host operating system windows.
 
 This way you can use many native programs on you host and copy contents
 easily into for example a terminal or an editor that you run in the Vm.
@@ -104,11 +102,11 @@ tab with
 
 OSX to Vbox:
 
-:   command c shift CONTRL v
+: command c shift CONTRL v
 
 Vbox to OSX:
 
-:   shift CONTRL v shift CONTRL v
+: shift CONTRL v shift CONTRL v
 
 On Windows the key combination is naturally different. Please consult
 your windows manual. If you let us know TAs will add the information
