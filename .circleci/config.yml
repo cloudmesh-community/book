@@ -43,10 +43,10 @@ jobs:
           command: cd books/cloud && make epub && cd ../..
       - run:
           name: check bigdata epub
-          command: cd books/big-data-applications && make && cd ../..
+          command: cd books/big-data-applications && make epub && cd ../..
       - run:
           name: add line numbers to references.bib
-          command: cat -n bpooks/big-data-applications/dest/references.bib > references.bib
+          command: cat -n books/big-data-applications/dest/references.bib > references.bib
       - store_artifacts:
           path: references.bib
           destination: references.bib
