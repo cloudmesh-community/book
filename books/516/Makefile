@@ -30,4 +30,4 @@ clean:
 	rm -rf dest
 
 authors:
-	../../bin/authors.py > ../chapters/authors.md
+	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
