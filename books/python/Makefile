@@ -28,7 +28,7 @@ view:
 	open $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 authors:
-	../bin/authors.py > ../chapters/authors.md
+	../../bin/authors.py > ../chapters/authors.md
 
 clean:
 
