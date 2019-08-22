@@ -85,7 +85,7 @@ EC2 instance, the same can be maintained by creating a config file.
 
 ## Boto configuration with cloudmesh
 
-![No](images/no.png) please also document here how to use the cloudmesh4.yaml file
+![No](images/no.png) please also document here how to use the cloudmesh.yaml file
 
 ## EC2 interface of Boto
 
