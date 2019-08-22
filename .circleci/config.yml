@@ -23,9 +23,9 @@ jobs:
       - run:
           name: requirements.txt
           command: pip install -r requirements.txt
-      - run
-        name: book manager version
-        command: bookmanager version
+      - run:
+          name: book manager version
+          command: bookmanager version
       - run:
           name: changed files
           command: git diff-tree --no-commit-id --name-only -r HEAD > changed_files.log && cat changed_files.log
