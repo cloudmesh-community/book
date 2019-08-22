@@ -16,7 +16,7 @@ implementations of intelligent systems and their use in desktop and cloud soluti
   enhance your knowledge from online resources and additional
   literature. You will need access to a *modern* computer that allows
   using virtual machines and/or containers. If such a system is not
-  available to you can also use IU computers or cloud virtual machines. 
+  available to you can also use IU computers or cloud virtual machines.
   The later have to be requested.
 * Course Description: [Link](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e222-syllabus.md)
 
@@ -83,7 +83,7 @@ interested the following could be chosen by you as project.
   * Project (if elected): Document the build a 100 node Raspberry PI
     Cluster
 	* Project: Environmental Robot Boat
-	
+
 ## Grading
 
 | Grade Item    | Percentage  |
@@ -127,7 +127,7 @@ We have explained how to use piazza which we will be using for class communicati
 that missed that lecture are responsible for working with TAs to catch up.
 
 
- 
+
 ### Course Topics - Intelligent Systems Engineering II
 
 #### Administration (Week 1)
@@ -137,7 +137,7 @@ that missed that lecture are responsible for working with TAs to catch up.
   * Github
   * Chameleon Cloud (optional)
   * Piazza
-  
+
 * ![No](images/no.png) Survey
 
 #### Scientific Writing (Week 1)
@@ -146,25 +146,25 @@ that missed that lecture are responsible for working with TAs to catch up.
 * Plagiarism (Due Week 3)
 * ![No](images/no.png) Scientific Writing with Markdown
 * ![No](images/no.png) bibtex
-* ![No](images/no.png) jabref 
+* ![No](images/no.png) jabref
 * Project Report (Due two weeks before semester ends)
-  
+
 
 #### Introduction to Cloud Computing
 
-* Introduction - Part A 
-* Introduction - Part B - Defining Clouds I 
-* Introduction - Part C - Defining Clouds II 
-* Introduction - Part D - Defining Clouds III 
-* Introduction - Part E - Virtualization 
-* Introduction - Part F - Technology Hypecycle I 
-* Introduction - Part G - Technology Hypecycle II 
-* Introduction - Part H - IaaS I 
-* Introduction - Part I - IaaS II 
-* Introduction - Part J - Cloud Software 
-* Introduction - Part K - Applications I 
-* Introduction - Part M - Applications III 
-* Introduction - Part N - Parallelism 
+* Introduction - Part A
+* Introduction - Part B - Defining Clouds I
+* Introduction - Part C - Defining Clouds II
+* Introduction - Part D - Defining Clouds III
+* Introduction - Part E - Virtualization
+* Introduction - Part F - Technology Hypecycle I
+* Introduction - Part G - Technology Hypecycle II
+* Introduction - Part H - IaaS I
+* Introduction - Part I - IaaS II
+* Introduction - Part J - Cloud Software
+* Introduction - Part K - Applications I
+* Introduction - Part M - Applications III
+* Introduction - Part N - Parallelism
 * Introduction - Part O - Storage Released
 * Introduction - Part P - HPC in the Cloud Released
 * Introduction - Part Q - Analytics and Simulation Released
@@ -174,23 +174,23 @@ that missed that lecture are responsible for working with TAs to catch up.
 * Introduction - Part U - Fault Tolerance
 
 #### IaaS
- 
+
 * Virtual Machines
-    
+
   * Cloudmesh CM4 - Virtualbox ![No](images/no.png)
   * Assignment
-       
+
 * Containers
-    
+
   * Docker ![No](images/no.png)
   * Assignment
 
-#### Project  
-  
+#### Project
+
 * Assignment: AI REST Services ![No](images/no.png)
 
 * REST
-    
+
   * Eve
   * OpenAPI
   * Assignment
@@ -202,11 +202,11 @@ that missed that lecture are responsible for working with TAs to catch up.
   * Hadoop ![No](images/no.png) gcf
   * Spark ![No](images/no.png) gcf
   * Twister ![No](images/no.png) gcf
- 
+
 #### Python Programming for Beginners
 
 * Python ![No](images/no.png)
-  
+
   * Assignment
   * Why not anaconda?
   * Using python 3.7
@@ -217,22 +217,22 @@ that missed that lecture are responsible for working with TAs to catch up.
   * Scipy :+1:
   * OpenCV :+1:
   * ScikitLearn :+1:
-    
+
 * Linux
-   
+
    * Assignment
    * SSH :+1: ![No](images/no.png)
 
- 
-#### Artificial Intelligence 
+
+#### Artificial Intelligence
 
 See #sec:ai
 * :+1: overview of AI for this class
-* ![No](images/no.png) :+1: Theory 
+* ![No](images/no.png) :+1: Theory
 * ![No](images/no.png) :+1: Unsupervised Learning
 * ![No](images/no.png) :1+: Deep Learning
-* ![No](images/no.png) :+1: Forecasting 
-  
+* ![No](images/no.png) :+1: Forecasting
+
 
 
 ### Week 3. REST for Cloud computing
@@ -246,7 +246,7 @@ An introduction to rest is provided in Section 34. It also provides a video reco
 that was presented in class.
 
 #### Overview of REST
- 
+
 Next, we present you with information on how to easily create a rest service with FlaskRESTFUL
 a library that makes the creation of web services in python using an object oriented approach
 easy. A Lab was held that introduced you to developing such a service
@@ -376,7 +376,7 @@ section.
 * Writing a Scientific Article or Conference Paper Week 3
 * Introduction to LATEX Week 3
 * Managing Bibliographies Week 4
-* Set up the git repository 
+* Set up the git repository
 
 If a paper is plagiarized you will receive an **F** and it is reported based on
 University policies.
@@ -432,7 +432,7 @@ Cloud
 The course has the following objectives:
 
 * Provide a basic introduction to cloud computing
-* Introduce the concept of cloud data centers 
+* Introduce the concept of cloud data centers
 * Get familiar with cloud infrastructure as a Service such as
   OpenStack, Azure, or AWS
 * Get familiar with cloud infrastructure such as Docker and Kubernetes
@@ -531,7 +531,7 @@ The topics are subject to change.
 |   | Week 16 | 15 | Project Selection | Project selection for inclusion in the Proceedings |
 
 
- 
+
 
 [arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
 [gregor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md
@@ -573,9 +573,9 @@ The topics are subject to change.
 [swagger.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger.md
 [swagger-spec.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-spec.md
 [swagger-codegen.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-codegen.md
-[mqtt.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md 
+[mqtt.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md
 [graphql.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/graphql.md
-[go-cloud.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cloud.md 
+[go-cloud.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cloud.md
 [go-rest.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-rest.md
 [go-intro.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-intro.md
 [go-cmd.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cmd.md
@@ -625,19 +625,19 @@ include a simple deployment and runtime instruction set.
 The main deliverable of the class is a project. The project is
 assessed through the following artifacts:
 
-1. Deployment and install instructions, 
+1. Deployment and install instructions,
 2. Project report (typically 2-3 pages per month, tutorial and
-   chapters can be reused if possible), 
+   chapters can be reused if possible),
 3. Working project code that can be installed and executed in
-   reproducible manner by a third party 
+   reproducible manner by a third party
 4. Code developed by the project team distributed in github.com
-5. Project progress notes checked into github throughout the semester. Each 
+5. Project progress notes checked into github throughout the semester. Each
    week the project progress is reported and will be integrated
    into the final grade.
-6. Discussions or progress reports with the instructors can be conducted on 
+6. Discussions or progress reports with the instructors can be conducted on
    online and residential class hours.
 
-The grade distribution is as follows 
+The grade distribution is as follows
 
 * 10% Comprehension Activities
 * 10% Sections
@@ -662,7 +662,7 @@ evaluate mayor and minor issues that you may be able to fix without
 penalty. Larger changes will receive a grade penalty. The last fix
 (upon approval) possible will be 2 weeks before semester end without
 penalty. It is recommended that you are available till the last day of
-class. 
+class.
 
 
 ## Assignments
@@ -680,11 +680,11 @@ class.
 
 
 
-## Calendar 
+## Calendar
 
-  
-|  Assignment #  | Event |     | Date 
-| --- | ----- | --- | --- 
+
+|  Assignment #  | Event |     | Date
+| --- | ----- | --- | ---
 |    | Full Term           | | 16 Weeks |
 |   | *Begins*            | | Week 1 |
 | 1, 2 | **Bio, Notebook** | assigned | Week 1 |
@@ -703,7 +703,7 @@ class.
 |   | *Ends*              |  | Week 16 |
 
 
-* TA's must be available till all grades have been submitted. 
+* TA's must be available till all grades have been submitted.
 * Bio: a formal 3 paragraph Bio
 * Notebook: a markdown in which you record your progress of
   this class in bullet form
@@ -721,8 +721,8 @@ models used. It is best to complete the course within one semester.
 
 ## Other classes I423, I523, I524, B649, E516, E616 (ok)
 
-IU offers other undergraduate classes in this topic area such as I423. If you are interested in taking it, 
-please see when they are taught.  Additional graduate level classes related which can also be taken  
+IU offers other undergraduate classes in this topic area such as I423. If you are interested in taking it,
+please see when they are taught.  Additional graduate level classes related which can also be taken
 only by special permission including:
 
 * CSCI B-649 Cloud Computing is the same as E516 but for computer science students.

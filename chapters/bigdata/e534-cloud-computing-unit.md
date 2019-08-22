@@ -2,7 +2,7 @@
 
 :orange_book: Full Slide Deck https://drive.google.com/open?id=1e61jrgTSeG8wQvQ2v6Zsp5AA31KCZPEQ
 
-This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWildAVdoH5hYY/edit?usp=sharing  
+This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWildAVdoH5hYY/edit?usp=sharing
 
 ## Overall Summary
 
@@ -167,9 +167,9 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## The Future:
 
-  ![Video](images/video.png) Video https://drive.google.com/open?id=1A20g-rTYe0EKxMSX0HI4D8UyUDcq9IJc  
+  ![Video](images/video.png) Video https://drive.google.com/open?id=1A20g-rTYe0EKxMSX0HI4D8UyUDcq9IJc
 
-  :orange_book: Slides https://drive.google.com/open?id=1_vFA_SLsf4PQ7ATIxXpGPIPHawqYlV9K  
+  :orange_book: Slides https://drive.google.com/open?id=1_vFA_SLsf4PQ7ATIxXpGPIPHawqYlV9K
 
   1. Gartner cloud computing hypecycle and priority matrix
   2. Hyperscale computing
@@ -180,6 +180,6 @@ This page https://docs.google.com/document/d/1D8bEzKe9eyQfbKbpqdzgkKnFMCBT1lWild
 
 ## Fault Tolerance
 
-  ![Video](images/video.png) Video https://drive.google.com/open?id=11hJA3BuT6pS9Ovv5oOWB3QOVgKG8vD24  
+  ![Video](images/video.png) Video https://drive.google.com/open?id=11hJA3BuT6pS9Ovv5oOWB3QOVgKG8vD24
 
   :orange_book: Slides https://drive.google.com/open?id=1oNztdHQPDmj24NSGx1RzHa7XfZ5vqUZg

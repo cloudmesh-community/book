@@ -5,7 +5,7 @@ Acknowledgement: This section was copied and modified with permission from
 
 
 In Chameleon cloud it is possible to launch a virtual Hadoop cluster on
-bare-metal InfiniBand nodes with SR-IOV. 
+bare-metal InfiniBand nodes with SR-IOV.
 
 
 The CentOS 7 SR-IOV RDMA-Hadoop is based on a CentOS 7 Virtual
@@ -121,8 +121,8 @@ VM image small, extra initialization will be executed when launching VM
 automatically, which includes:
 
 
-* Detect Mellanox SR-IOV drivers, download and install it if nonexistent 
-* Detect Java package installed, download and install if non-existent 
+* Detect Mellanox SR-IOV drivers, download and install it if nonexistent
+* Detect Java package installed, download and install if non-existent
 * Detect RDMA-Hadoop package installed, download and install if non-existent
 
 After finishing the extra initialization procedure, you should be able
@@ -138,7 +138,7 @@ launch-hadoop-cluster.sh script to launch VMs, you can do this by
 running the kill-vms.sh script as shown next. This script will kill all
 launched VMs and also delete all the created network ports.
 
-    [root@host]$ cd /home/cc                                                                 
+    [root@host]$ cd /home/cc
     [root@host]$ ./kill-vms.sh <ips-file> <openstack-credentials-file>
     \end{vernatim}
 

@@ -95,7 +95,7 @@ opened PuTTYgen, you will be presented with a a key generator window
 Figure [\[F:putty-key\]](#F:putty-key){reference-type="ref"
 reference="F:putty-key"}).
 
-\FIGURE{htb} 
+\FIGURE{htb}
        {0.5}
        {images/chameleon/putty2.png}
        {Key generation window}
@@ -108,7 +108,7 @@ reference="F:putty-pass"}) will then ask you to move your mouse around
 the program's blank space to generate "randomness" for your key. You
 must enter a "Key passphrase" and then confirm the passphrase.
 
-\FIGURE{htb} 
+\FIGURE{htb}
        {0.5}
        {images/chameleon/putty3.png}
        {Key generation window}

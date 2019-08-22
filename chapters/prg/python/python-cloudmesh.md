@@ -62,7 +62,7 @@ In that directory we store a file similar to the following file:
       email: laszewski@gmail.com
     cloudmesh:
       default:
-      - chameleon 
+      - chameleon
       active:
       - chameleon
     clouds:
@@ -129,7 +129,7 @@ There are some special properties of this file that we need to discuss.
     cloud with python libraries such as libcloud. Each cloud type will
     have different parameters.
 
--   
+-
 
 ## Storage
 
@@ -219,7 +219,7 @@ When defining the following cloud context
 
 ``` {.python}
 class Cloud (object):
-        
+
     def __init__(self, name):
         self.name = name
 

@@ -78,7 +78,7 @@ conduct support. We establish the following principals:
 
 * instructors of this class will attempt within reason to find
   suitable times for you to attend an online hour in case you are an
-  online student. 
+  online student.
 
 ### Office Hour Calendar
 
@@ -110,7 +110,7 @@ Class Material
 As the class material will evolve during the semester it is obvious that
 some content will be improved and material will be added. This benefits
 everyone. To stay up to date, please, revisit this document on weekly
-basis. This is practice in any class. 
+basis. This is practice in any class.
 
 HID
 ---
@@ -131,7 +131,7 @@ we can create a openly accessible directory for you in which you can
 collaborate with the students of this class. The directories are only
 used to store the artifacts of the class. As all artifacts are
 supposed to be open source github.com  provides us with the service
-that millions of professionals and researchers use for their work. 
+that millions of professionals and researchers use for their work.
 
 Notebook
 --------
@@ -317,7 +317,7 @@ loans. Please plan ahead and avoid an incomplete.
 
 The incomplete request needs to be off the following format in piazza:
 
-    Subject: 
+    Subject:
         INCOMPLETE REQUEST: HID000: Lastname, Firstname
 
     Body:

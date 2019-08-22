@@ -26,7 +26,7 @@ $
 >  $ This is a bash text
 >  ```
 
-[@las14cloudmeshmultiple] 
+[@las14cloudmeshmultiple]
 
 > References are indicated with a number and are included in the >
 reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
@@ -41,12 +41,12 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 > with `:o2:` or if you like to use the image with `![No](images/no.png)`.
 
 
-[![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U) 
+[![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U)
 
-> Example for a video with the `![Video](images/video.png)` emoji. Use it in markdown with 
+> Example for a video with the `![Video](images/video.png)` emoji. Use it in markdown with
 > `[![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U)`
 
-[![Presentation](images/presentation.png) Slides 10](TBD) 
+[![Presentation](images/presentation.png) Slides 10](TBD)
 
 > Example for slides with the `![Presentation](images/presentation.png)` emoji. These slides may or
 > may not include audio.
@@ -77,7 +77,7 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 
 [![Smiley](images/smile.png)]()
 
-> Sections marked by the contributor with this emoji `![Smiley](images/smile.png)` 
+> Sections marked by the contributor with this emoji `![Smiley](images/smile.png)`
 > when they are ready to be reviewed.
 
 [![Comment](images/comment.png)]()
@@ -104,26 +104,26 @@ MS Edge
 This is the list of emojis that canbe converted to PDF. So if you like a
 PDF, please limit your emojis to
 
-`:cloud:` :cloud: 
-`:o2:` :o2: 
-`:relaxed:` :relaxed: 
-`:sunny:` :sunny: 
-`:baseball:` :baseball: 
-`:spades:` :spades: 
-`:hearts:` :hearts: 
-`:clubs:` :clubs: 
-`:diamonds:` :diamonds: 
-`:hotsprings:` :hotsprings: 
-`:warning:` :warning: 
-`:parking:` :parking: 
-`:a:` :a: 
-`:b:` :b: 
-`:recycle:` :recycle: 
-`:copyright:` :copyright: 
-`:registered:` :registered: 
-`:tm:` :tm: 
-`:bangbang:` :bangbang: 
-`:interrobang:` :interrobang: 
+`:cloud:` :cloud:
+`:o2:` :o2:
+`:relaxed:` :relaxed:
+`:sunny:` :sunny:
+`:baseball:` :baseball:
+`:spades:` :spades:
+`:hearts:` :hearts:
+`:clubs:` :clubs:
+`:diamonds:` :diamonds:
+`:hotsprings:` :hotsprings:
+`:warning:` :warning:
+`:parking:` :parking:
+`:a:` :a:
+`:b:` :b:
+`:recycle:` :recycle:
+`:copyright:` :copyright:
+`:registered:` :registered:
+`:tm:` :tm:
+`:bangbang:` :bangbang:
+`:interrobang:` :interrobang:
 `:scissors:` :scissors:
 `:phone:` :phone:
 
@@ -135,7 +135,7 @@ number. We show such a reference pointer while referring to
 
 ![Figure example](images/code.png){#fig:code-example width=1in}
 
-Figures must be written in the md as 
+Figures must be written in the md as
 
 ```markdown
 ![Figure example](images/code.png){#fig:code-example width=1in}
@@ -180,11 +180,11 @@ Equations can be written as
 
 ```$$a^2+b^2=c^2$${#eq:pythagoras}```
 
-and used in text: 
+and used in text:
 
 $$a^2+b^2=c^2$${#eq:pythagoras}
 
-It will render as: As we see in @eq:pythagoras. 
+It will render as: As we see in @eq:pythagoras.
 
 The equation number is optional. Inline equations just use one dollar
 sign and do not need an equation number:
@@ -197,11 +197,11 @@ This is the Pythagoras theorem: $a^2+b^2=c^2$.
 
 ## Tables {#sec:tables}
 
-Tables can be placed in text as follows: 
+Tables can be placed in text as follows:
 
 ```
 : Sample Data Table {#tbl:sample-table}
-  
+
 x   y   z
 --- --- ---
 1   2   3
@@ -211,4 +211,4 @@ x   y   z
 As usual make sure the label is unique. When compiling it will
 result in an error if labels are not unique. Additionally there are
 several md table generators available on the internet and make
-creating table more efficient. 
+creating table more efficient.

@@ -110,7 +110,7 @@ public static class Map extends Mapper<LongWritable,
            value.set(tokenizer.nextToken());
            context.write(value, new IntWritable(1));
        }
-}           
+}
 ```
 
 Here we have created a class Map which extends Mapper from MapReduce

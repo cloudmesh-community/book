@@ -8,7 +8,7 @@ case of multi-processing, the memory heaps of processes are separate
 and independent, therefore the communication between the processes are
 a little bit more complex.
 
-## Multi-threading in Python 
+## Multi-threading in Python
 
 Threading in Python is perfect for I/O operations where the process is
 expected to be idle regularly, e.g. web scraping. This is a very
@@ -38,14 +38,14 @@ import threading
 
 def hello_thread(thread_num):
     print ("Hello from Thread ", thread_num)
-    
+
 if __name__ == '__main__':
     for thread_num in range(5):
         t = threading.Thread(target=hello_thread,arg=(thread_num,))
         t.start()
 ```
 
-This is the output of the previous example: 
+This is the output of the previous example:
 
 ``` python
 In [1]: %run threading.py
@@ -76,24 +76,24 @@ the `lock`. If the other threads need to work with that variable, they
 have to wait until the other thread is done and the variable is
 "unlocked".
 
-We illustrate this with a simple example: 
+We illustrate this with a simple example:
 
 ```python
 import threading
 
 global counter
-counter = 0 
+counter = 0
 
 def incrementer1():
-    global counter 
+    global counter
     for j in range(2):
         for i in range(3):
-            counter += 1 
+            counter += 1
             print("Greeter 1 incremented the counter by 1")
         print ("Counter is %d"%counter)
-    
+
 def incrementer2():
-    global counter 
+    global counter
     for j in range(2):
         for i in range(3):
             counter += 1
@@ -101,7 +101,7 @@ def incrementer2():
         print ("Counter is now %d"%counter)
 
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     t1 = threading.Thread(target = incrementer1)
     t2 = threading.Thread(target = incrementer2)
 
@@ -128,7 +128,7 @@ previous code is different in every run. This is an example output:
 
 
 ```bash
-$ python3 lock_example.py 
+$ python3 lock_example.py
 Greeter 1 incremented the counter by 1
 Greeter 1 incremented the counter by 1
 Greeter 1 incremented the counter by 1
@@ -158,20 +158,20 @@ import threading
 increment_by_3_lock = threading.Lock()
 
 global counter
-counter = 0 
+counter = 0
 
 def incrementer1():
-    global counter 
-    for j in range(2):    
+    global counter
+    for j in range(2):
         increment_by_3_lock.acquire(True)
         for i in range(3):
-            counter += 1 
+            counter += 1
             print("Greeter 1 incremented the counter by 1")
         print ("Counter is %d"%counter)
         increment_by_3_lock.release()
 
 def incrementer2():
-    global counter 
+    global counter
     for j in range(2):
         increment_by_3_lock.acquire(True)
         for i in range(3):
@@ -180,7 +180,7 @@ def incrementer2():
         print ("Counter is %d"%counter)
         increment_by_3_lock.release()
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     t1 = threading.Thread(target = incrementer1)
     t2 = threading.Thread(target = incrementer2)
 
@@ -190,11 +190,11 @@ if __name__ == '__main__':
 ```
 
 
-No matter how many times you run this code, the output would always be in the correct order: 
+No matter how many times you run this code, the output would always be in the correct order:
 
 
 ```bash
-$ python3 lock_example.py 
+$ python3 lock_example.py
 Greeter 1 incremented the counter by 1
 Greeter 1 incremented the counter by 1
 Greeter 1 incremented the counter by 1
@@ -235,9 +235,9 @@ Similar to `threading` module which was employing `thread` (aka
 `_thread`) under the hood, `multiprocessing` employs the `Process`
 class. Consider the following example:
 
-```python 
-from multiprocessing import Process 
-import os 
+```python
+from multiprocessing import Process
+import os
 
 def greeter (name):
     proc_idx = os.getpid()
@@ -264,8 +264,8 @@ last for loop and using the `join` method, we tell Python to wait for
 the processes to terminate. This is one of the possible outputs of the
 code:
 
-```bash 
-$ python3 process_example.py 
+```bash
+$ python3 process_example.py
 Process 23451: Hello Harry!
 Process 23452: Hello George!
 Process 23453: Hello Dirk!
@@ -291,7 +291,7 @@ greeter example using `Pool.map`:
 
 ```python
 from multiprocessing import Pool
-import os 
+import os
 
 def greeter(name):
     pid = os.getpid()
@@ -303,7 +303,7 @@ if __name__ == '__main__':
     sync_map = pool.map(greeter,names)
     print("Done!")
 	```
-	
+
 As you can see, we have seven names here but we do not want to
 dedicate each greeting to a separate process. Instead we do the whole
 job of "greeting seven people" using "two processes". We create a pool
@@ -312,8 +312,8 @@ iterable called `names` to the `greeter` function using
 `pool.map(greeter,names)`.  As we expected, the greetings in the
 output will be printed from three different processes:
 
-```bash 
-$ python poolmap_example.py 
+```bash
+$ python poolmap_example.py
 Process 30585: Hello Jenna!
 Process 30586: Hello David!
 Process 30587: Hello Marry!
@@ -339,7 +339,7 @@ immediately. We now implement the previous example using `map_async`:
 
 ```python
 from multiprocessing import Pool
-import os 
+import os
 
 def greeter(name):
     pid = os.getpid()
@@ -359,7 +359,7 @@ line. The `wait()` method tells your script to wait for the result of
 `map_async` before terminating:
 
 ```bash
-$ python poolmap_example.py 
+$ python poolmap_example.py
 Done!
 Process 30740: Hello Jenna!
 Process 30741: Hello David!
@@ -398,15 +398,15 @@ from multiprocessing import Process, Lock, Value
 import time
 
 global counter
-counter = 0 
+counter = 0
 
 def incrementer1():
     global counter
     for j in range(2):
         for i in range(3):
-            counter += 1 
+            counter += 1
         print ("Greeter1: Counter is %d"%counter)
-    
+
 def incrementer2():
     global counter
     for j in range(2):
@@ -415,7 +415,7 @@ def incrementer2():
         print ("Greeter2: Counter is %d"%counter)
 
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
 
     t1 = Process(target = incrementer1 )
     t2 = Process(target = incrementer2 )
@@ -428,7 +428,7 @@ example in `threading` section. Now, take a look at the strange
 output:
 
 ```bash
-$ python communication_example.py 
+$ python communication_example.py
 Greeter1: Counter is 3
 Greeter1: Counter is 6
 Greeter2: Counter is 3
@@ -451,7 +451,7 @@ different data types. In the following sub-sections, we cover both
 `Value` and `Array` since they are both lightweight, yet useful,
 approaches.
 
-#### Value 
+#### Value
 
 The following example re-implements the broken example in the previous
 section. We fix the strange output, by using both `Lock` and `Value`:
@@ -468,11 +468,11 @@ def incrementer1(counter):
     for j in range(3):
         increment_by_3_lock.acquire(True)
         for i in range(3):
-            counter.value += 1 
+            counter.value += 1
             time.sleep(0.1)
         print ("Greeter1: Counter is %d"%counter.value)
         increment_by_3_lock.release()
-    
+
 def incrementer2(counter):
     for j in range(3):
         increment_by_3_lock.acquire(True)
@@ -483,7 +483,7 @@ def incrementer2(counter):
         increment_by_3_lock.release()
 
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
 
     counter = Value('i',0)
     t1 = Process(target = incrementer1, args=(counter,))
@@ -506,8 +506,8 @@ increment the `counter` since counter is not an Python integer anymore
 but a `ctypes` signed integer where we can access its value using the
 `value` attribute. The output of the code is now as we expected:
 
-```bash 
-$ python mp_lock_example.py 
+```bash
+$ python mp_lock_example.py
 Greeter2: Counter is 3
 Greeter2: Counter is 6
 Greeter1: Counter is 9
@@ -537,13 +537,13 @@ def incrementer1(counter_and_names):
     for j in range(2):
         increment_by_3_lock.acquire(True)
         for i in range(3):
-            counter.value += 1 
+            counter.value += 1
             time.sleep(0.1)
         name_idx = counter.value//3 -1
         print ("Greeter1: Greeting {0}! Counter is {1}".format(names.value[name_idx],counter.value))
         increment_by_3_lock.release()
-    
-def incrementer2(counter_and_names):    
+
+def incrementer2(counter_and_names):
     counter=  counter_and_names[0]
     names = counter_and_names[1]
     for j in range(2):
@@ -556,7 +556,7 @@ def incrementer2(counter_and_names):
         increment_by_3_lock.release()
 
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     counter = Value('i',0)
     names = Array (c_char_p,4)
     names.value = ['James','Tom','Sam', 'Larry']
@@ -579,8 +579,8 @@ first two lines in the both functions. Finally we changed the print
 statement in a way that each process greets a particular name. The
 output of the example is:
 
-```bash 
-$ python3 mp_lock_example.py 
+```bash
+$ python3 mp_lock_example.py
 Greeter2: Greeting James! Counter is 3
 Greeter2: Greeting Tom! Counter is 6
 Greeter1: Greeting Sam! Counter is 9

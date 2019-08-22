@@ -1,6 +1,6 @@
 # What is IBM Watson and why is it important?
 
-In years past we traditionally typed our questions into a query based search engine and it would return relevant content.  As we start interacting with our devices more in conversation through natural language processing, we need an answer to a question - not a list of relevant information.  We need the power of question answering (QA) technology.  
+In years past we traditionally typed our questions into a query based search engine and it would return relevant content.  As we start interacting with our devices more in conversation through natural language processing, we need an answer to a question - not a list of relevant information.  We need the power of question answering (QA) technology.
 
 IBM's Watson's is well known for its ability to play and successfully win the popular gameshow, jeopardy!  IBM startled the world in 2011 when Watson beat Jeopardy! pros Ken Jennings and Brad Rutter over several rounds.  Watson completed the formidable task by combining 15 terabytes of human knowledge with a variety of computer disciplines including automated reasoning, natural language processing, knowledge representation, information retrieval and machine learning.
 
@@ -14,7 +14,7 @@ There are a breadth of services available.  Watson Discovery is used to mine thr
 
 While The next section walks through how to create a free account,  let's continue with an example of leveraging a foundation and building on-top with Watson Assistant Basic.  Please see steps: @fig:1WatsonAssistentBasic, @fig:2WatsonAssistentBasicCode, @fig:3WatsonAssistent3steps, @fig:4Watsoneditsample, @fig:5Watsonaddingexample, @fig:6Watsoncustomizesettings
 
-Instead of starting with a blank page IBM steps are put in place and working examples can be customized.  
+Instead of starting with a blank page IBM steps are put in place and working examples can be customized.
 
 ![Step 1](images/1WatsonAssistentBasic.PNG){#fig:1WatsonAssistentBasic}
 

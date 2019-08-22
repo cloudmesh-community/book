@@ -24,7 +24,7 @@ code.
 
 ## Technology Summaries
 
-We are maintaining a large list of [technologies]{.index} related to clouds and Big Data at 
+We are maintaining a large list of [technologies]{.index} related to clouds and Big Data at
 
 * <https://github.com/cloudmesh/technologies>
 
@@ -43,7 +43,7 @@ related to it. We post here the existence of this document also for
 516 students. They can voluntarily improve or add sections if they
 like which will go into their discussion credit.
 
-Please use the following indicators to mark the progress of summaries that you are working on. 
+Please use the following indicators to mark the progress of summaries that you are working on.
 
 ![Smiley](images/smile.png) ready for review
 

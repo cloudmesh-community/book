@@ -19,17 +19,17 @@ using pip.
 Updating Pip
 -------------
 
-It is important that you have the newest version of pip installed for your 
-version of python. Let us assume your python is registered with python and 
-you use pyenv, than you can update 
-pip with 
+It is important that you have the newest version of pip installed for your
+version of python. Let us assume your python is registered with python and
+you use pyenv, than you can update
+pip with
 
 ```bash
 pip install -U pip
 ```
 
 without interfering with a potential system wide installed version of p
-ip that may be needed by the system default version of python. See the 
+ip that may be needed by the system default version of python. See the
 section about pyenv for more details
 
 Using pip to Install Packages

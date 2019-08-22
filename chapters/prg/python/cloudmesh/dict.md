@@ -11,7 +11,7 @@ from cloudmesh.common.dotdict import dotdict
 
 data = {
     "name": "Gregor"
-} 
+}
 
 data = dotdict(data)
 ```
@@ -22,7 +22,7 @@ Now you can either call
 data["name"]
 ```
 
-or 
+or
 
 ```python
 data.name
@@ -58,9 +58,9 @@ data = {
     "address": {
         "city": "Bloomington",
         "state": "IN"
-        
+
     }
-} 
+}
 
 flat = FlatDict(data)
 
@@ -68,7 +68,7 @@ flat = FlatDict(data)
 
 This will be converted to a dict with the following structure.
 
-```python 
+```python
 
 flat = {
     "name": "Gregor"

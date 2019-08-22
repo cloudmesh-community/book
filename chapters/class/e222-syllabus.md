@@ -16,7 +16,7 @@ implementations of intelligent systems and their use in desktop and cloud soluti
   enhance your knowledge from online resources and additional
   literature. You will need access to a *modern* computer that allows
   using virtual machines and/or containers. If such a system is not
-  available to you can also use IU computers or cloud virtual machines. 
+  available to you can also use IU computers or cloud virtual machines.
   The later have to be requested.
 * Course Description: [Link](https://github.com/cloudmesh-community/book/blob/master/chapters/class/e222-syllabus.md)
 
@@ -78,8 +78,8 @@ models used. It is best to complete the course within one semester.
 
 ## Other classes I423, I523, I524, B649, E516, E616 (ok)
 
-IU offers other undergraduate classes in this topic area such as I423. If you are interested in taking it, 
-please see when they are taught.  Additional graduate level classes related which can also be taken  
+IU offers other undergraduate classes in this topic area such as I423. If you are interested in taking it,
+please see when they are taught.  Additional graduate level classes related which can also be taken
 only by special permission including:
 
 * CSCI B-649 Cloud Computing is the same as E516 but for computer science students.
@@ -146,7 +146,7 @@ lecture, it is in your responsibility to inform yourself what was
 being taught. Attendance and participation will be graded as well as
 the update to notebook.md will be graded.
 
-In the following calendar we put in the last day of the week 
+In the following calendar we put in the last day of the week
 when the assignments are typically due
 
 ## Covered Topics
@@ -182,10 +182,10 @@ Currently, the topics covered in the class include the following.
 
 We will provide an overview of this class.
 
-*Logistic:* Get familiar with the class structure. 
-   
+*Logistic:* Get familiar with the class structure.
+
 *Read:* Preface; Class Overview; Start reviewing your python knowledge
-   
+
 *Assignment Accounts:* Find a computer you can do the class
 programming on (tablet and chrombook will not suffice).  Get an
 account on piazza.com with your @iu.edu name Get an account on
@@ -201,7 +201,7 @@ posted on Piazza).
 *Assignment notebook:* Once you get your github directory, update the
 file `notebook.md`. Mind the spelling notebook is lowercase. Use
 simple markdown bullet lists to record your activities.
-   
+
 *Assignment Development Environment:* (Multiweek assignment, to be
 completed in the firts month) It is important that you have a
 development environment to conduct the class assignments. We
@@ -211,14 +211,14 @@ document.  Please consult additional resources form the Web and
 utilize the Lab hours.
 
 
-### Week 1 and 2. Review of Python for Intelligent Systems Engineering 
+### Week 1 and 2. Review of Python for Intelligent Systems Engineering
 
 * Theory: basic Python Language
 * Theory: pyenv, setup.py, modules
 * Practice: Living without anaconda
 
 * Python specific topics include:
-  
+
   * Assignment: Install Python and use it throughut the semester
   * Why not anaconda?
   * Using python 3.7
@@ -230,10 +230,10 @@ utilize the Lab hours.
   * OpenCV :+1:
   * ScikitLearn :+1:
 
-  
+
   *Report:* Create an empty report based on our template in
   github. The TAs may do this with you in the Lab.
-  
+
   *Github Pull Requests*: Find a spelling error in the class material
   and create a pull request to correct it.
 
@@ -269,7 +269,7 @@ Focus on OpenAPI example posted in the NIST github repository
   of the deliverables must be larger than what one team member can
   achieve. It is an advantage to work in a team as you can check each
   other.
-  
+
   If a team member does not contribute to the project, the team has
   the right to exclude the non working team member with consultation
   of the instructors. We will have a joint meeting with the team to
@@ -292,7 +292,7 @@ See the separet ePub for more information:
 notes and internet resources.  Note that we use pandoc markdown
 that may not render properly in github, especially when it comes to
 figure captions, references, and bibliography. (You have till the
-end of the month). Install and use jabref. 
+end of the month). Install and use jabref.
 
 *Report:* Learn bibtex and create references in report.bib that you
  use in report.md. Make sure that you do only one report per team and
@@ -303,8 +303,8 @@ end of the month). Install and use jabref.
   project.  This is not a proposal. The workds *I* and *project*,
  *report* must not be used.  It is essentially a snapshot of your
   final report. Discuss with the TAs in the Lab how to define a
-  project. 
-  
+  project.
+
   *Github:* make sure your team mates have access to your project
    directory.
 
@@ -312,18 +312,18 @@ end of the month). Install and use jabref.
 
 * Theory:
 
-   * Introduction - Part A 
-   * Introduction - Part B - Defining Clouds I 
-   * Introduction - Part C - Defining Clouds II 
-   * Introduction - Part D - Defining Clouds III 
-   * Introduction - Part E - Virtualization 
-   * Introduction - Part F - Technology Hypecycle I 
-   * Introduction - Part G - Technology Hypecycle II 
-   * Introduction - Part H - IaaS I 
-   * Introduction - Part I - IaaS II 
-   * Introduction - Part J - Cloud Software 
-   * Introduction - Part K - Applications I 
-   * Introduction - Part M - Applications III 
+   * Introduction - Part A
+   * Introduction - Part B - Defining Clouds I
+   * Introduction - Part C - Defining Clouds II
+   * Introduction - Part D - Defining Clouds III
+   * Introduction - Part E - Virtualization
+   * Introduction - Part F - Technology Hypecycle I
+   * Introduction - Part G - Technology Hypecycle II
+   * Introduction - Part H - IaaS I
+   * Introduction - Part I - IaaS II
+   * Introduction - Part J - Cloud Software
+   * Introduction - Part K - Applications I
+   * Introduction - Part M - Applications III
    * Introduction - Part N - Parallelism
    * Introduction - Part O - Storage Released
    * Introduction - Part P - HPC in the Cloud Released
@@ -342,7 +342,7 @@ end of the month). Install and use jabref.
   project.  This is not a proposal. The words *I* and *project*,
   *report* must not be used.  It is essentially a snapshot of your
   final report.
-  
+
 * *Week 7:  Project Update due:* A multi-paragraph description about the data
   that you use for your project is to be added to your report. This
   includes details about the data. IN a documented program you show
@@ -394,10 +394,10 @@ Background about Hadoop, Spark and Twister
 See #sec:ai
 
 * Overview of AI for this class
-* Theory 
+* Theory
 * Unsupervised Learning
 * Deep Learning
-* Forecasting 
+* Forecasting
 
 * *Week 12: Project update:* Identify analysis algorithms for your project and
   apply them.  Experiment with what you can do with the data
@@ -405,7 +405,7 @@ See #sec:ai
 * *Week 13: Project update:* Identify analysis algorithms for your project and
   apply them.  Experiment with what you can do with the data. Start
   benchmarks.
-  
+
 * *Week 14: Project update:* Focus on your project report and finalize
   it. The project report must include references in bibtex
   format. Double-check integration in proceedings.
@@ -415,22 +415,22 @@ See #sec:ai
      As the Project will take time to grade all projects are due two
      weeks (yes, you read correctly) before the semester ends.  The
      project will have the following artifacts:
-     
+
      * completed project report
      * completed project code
      * completed instructions on you to replicate your project on
        someone else's computer or a cloud service
-       
+
      * any other outstanding task.
 
 * *Week 16: Apr 26*
 
   * Project improvement if needed (majority should be finished)
   * Make sure your project report is showing up correctly in the proceedings
-  
+
 ### Cloud Edge Computing
 
-If time allows we may in addition also cover. 
+If time allows we may in addition also cover.
 
   * Theory: Raspberry PI as Platform
 

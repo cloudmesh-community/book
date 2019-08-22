@@ -1,7 +1,7 @@
 Harp MiniBatch Kmeans
 =====================
 
- 
+
 
 \TODO{Hyungro: check hyperlinks}
 The goal for this exercise is to implement Harp Mini-batch Kmeans from

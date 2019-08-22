@@ -206,7 +206,7 @@ to help as co-author.
 Parallel Tracks
 ---------------
 
-In this class we have three parallel tracks. 
+In this class we have three parallel tracks.
 
 ### Track 1: Practice
 

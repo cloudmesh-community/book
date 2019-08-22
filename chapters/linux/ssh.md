@@ -5,7 +5,7 @@
 ![](images/learning.png) **Learning Objectives**
 
 * This is one of the most important sections of the book, studdy it carefully.
-* learn how to use [SSH]{.index} keys 
+* learn how to use [SSH]{.index} keys
 * Learn how to use ssh-add and ssh-keycahin so you only have to type in your password once
 * Understand that each computer needs its own ssh key
 
@@ -43,10 +43,10 @@ from your laptop. For more information please also consult with the
 The first thing you will need to do is to create a public private
 key pair. Before you do this check whether there are already keys on
 the computer you are using:
-	
+
 	ls ~/.ssh
 
-If there are files named id_rsa.pub or id_dsa.pub, then the keys are set up 
+If there are files named id_rsa.pub or id_dsa.pub, then the keys are set up
 already, and we can skip the generating keys step. However you must
 know the passphrase of the key. If you forgot it you will need to
 recreate the key. However you will lose any ability to connect with
@@ -56,7 +56,7 @@ be careful.
 To generate a key pair use the command
 [ssh-keygen](http://linux.die.net/man/1/ssh-keygen).  This program is
 commonly available on most UNIX systems and most recently even
-Windows 10. 
+Windows 10.
 
 To generate the key, please type:
 
@@ -65,7 +65,7 @@ $ ssh-keygen -t rsa -C <comment>
 ```
 
 The comment will remind you where the key has been created, you could
-for example use the hostname on which you created the key. 
+for example use the hostname on which you created the key.
 
 In the following text we will use *localname* to indicate the username
 on your computer on which you execute the command.
@@ -73,7 +73,7 @@ on your computer on which you execute the command.
 The command requires the interaction of the user. The first question
 is:
 
-    Enter file in which to save the key (/home/localname/.ssh/id_rsa): 
+    Enter file in which to save the key (/home/localname/.ssh/id_rsa):
 
 We recommend using the default location ~/.ssh/ and the default name
 id_rsa. To do so, just press the enter key.
@@ -112,7 +112,7 @@ and:
 If executed correctly, you will see some output similar to:
 
     Generating public/private rsa key pair.
-    Enter file in which to save the key (/home/localname/.ssh/id_rsa): 
+    Enter file in which to save the key (/home/localname/.ssh/id_rsa):
     Enter passphrase (empty for no passphrase):
     Enter same passphrase again:
     Your identification has been saved in /home/localname/.ssh/id_rsa.
@@ -156,7 +156,7 @@ To see what is in the .ssh directory, please use
 ```bash
 $ ls ~/.ssh
 ```
-    
+
 Typically you will se a list of files such as
 
 ```
@@ -383,7 +383,7 @@ can copy the file manually over SSH:
 
 Now try:
 
-	$ ssh user@host 
+	$ ssh user@host
 
 and you will not be prompted for a password. However, if you set a
 passphrase when creating your SSH key, you will be asked to enter the
@@ -408,7 +408,7 @@ which services can be relayed. Because the connection is encrypted,
 SSH tunneling is useful for transmitting information that uses an
 unencrypted protocol.
 
-            
+
 ### Prerequisites
 
 * Before you begin, you need to check if forwarding is allowed on the
@@ -418,18 +418,18 @@ unencrypted protocol.
 
 If you are using the OpenSSH server:
 
-	$ vi /etc/ssh/sshd_config 
+	$ vi /etc/ssh/sshd_config
 
 and look and change the following:
 
-    AllowTcpForwarding = Yes 
+    AllowTcpForwarding = Yes
     GatewayPorts = Yes
 
 Set the `GatewaysPorts` variable only if you are going to use remote
 port forwarding (discussed later in this tutorial). Then, you need to
 restart the server for the change to take effect.
 
-### How to Restart the Server 
+### How to Restart the Server
 
 If you are on:
 
@@ -439,7 +439,7 @@ If you are on:
    $ sudo systemctl restart sshd
    $ sudo service sshd restart
    ```
-   
+
   Note that depending on your distribution, you may have to change the
   service to ssh instead of sshd.
 
@@ -449,14 +449,14 @@ If you are on:
   $ sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
   $ sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
   ```
-  
+
 * Windows and want to set up a SSH server, have a look at MSYS2 or Cygwin.
 
 ### Types of Port Forwarding
 
 There are three types of SSH Port forwarding:
 
-### Local Port Forwarding 
+### Local Port Forwarding
 
 Local port forwarding lets you connect from your local computer to
 another server. It allows you to forward traffic on a port of your
@@ -545,12 +545,12 @@ $ sudo vim /etc/ssh/sshd_config
 and restart SSH
 
 	$ sudo service ssh restart
-	
+
 After completing the previous steps you should be able to connect to the server
 remotely, even from your local machine. `ssh -R` first creates an SSH
 tunnel that forwards traffic from the server on port 9000 to your
 local machine on port 3000.
-		
+
 ### Dynamic Port Forwarding
 
 Dynamic port forwarding turns your SSH client into a SOCKS proxy
@@ -575,9 +575,9 @@ proxy.
 
 Defaults and other configurations can be added to a configuration file
 that is placed in the system.  The ssh program on a host receives its configuration
- from 
+ from
 
-* the command line options 
+* the command line options
 * a user-specific configuration file: `~/.ssh/config`
 * a system-wide configuration file: `/etc/ssh/ssh_config`
 

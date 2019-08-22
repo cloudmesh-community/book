@@ -1,7 +1,7 @@
 HBase FreqIndexBuilder
 ======================
 
- 
+
 
 \TODO{Hyungro: fix exercise and replace project where appropriate.}
 Write an HBase FreqIndexBuilder program to build an inverted index table

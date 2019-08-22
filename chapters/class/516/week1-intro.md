@@ -1,4 +1,4 @@
-# Week 1: Course Introduction 
+# Week 1: Course Introduction
 
 ## Resources
 

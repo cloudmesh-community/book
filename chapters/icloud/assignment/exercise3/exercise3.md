@@ -1,7 +1,7 @@
 Hadoop Blast
 ============
 
- 
+
 
 By this point you should have gone over the sections concerning Hadoop
 Setup and a few Hadoop programs. Now you are going to blend these
@@ -154,7 +154,7 @@ format.
 
 ``` {.bash language="bash"}
 $ cd /root/MoocHomeworks/HadoopBlast/
-$ ./compileAndExecHadoopBlast.sh 
+$ ./compileAndExecHadoopBlast.sh
 ```
 
 View the result

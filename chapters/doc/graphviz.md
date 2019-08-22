@@ -88,7 +88,7 @@ Graphviz.1:
 
 Graphviz.2:
 
-: Develop a REST service that takes a graph as input and returns a URL of the rendered graph while storing the output onto a data server. The data server is another rest service, from which the result can be picked up. 
+: Develop a REST service that takes a graph as input and returns a URL of the rendered graph while storing the output onto a data server. The data server is another rest service, from which the result can be picked up.
 
 Graphviz.3:
 

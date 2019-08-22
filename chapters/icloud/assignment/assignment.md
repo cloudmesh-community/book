@@ -4,7 +4,7 @@ Exercises
 Exercise 0 - Identify Technologies
 ----------------------------------
 
- 
+
 
 Exercise 0 will require you to identify the different software
 tools/technologies included in the given attachment and then group them
@@ -40,7 +40,7 @@ Exercise 5 - HBase Index Builder
 
 INPUT: section/icloud/assignment/exercise5/exercise5
 
-Exercise 6 - Search Engine 
+Exercise 6 - Search Engine
 ---------------------------
 
 INPUT: section/icloud/assignment/exercise6/exercise6

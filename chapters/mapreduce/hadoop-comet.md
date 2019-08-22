@@ -20,9 +20,9 @@ The Hadoop distribution on Gordon is located in /opt/hadoop and usage
 examples are found in /opt/hadoop/contrib/myHadoop. The examples
 include:
 
-* Simple - a simple setup and usage example 
+* Simple - a simple setup and usage example
 * TestDFS - Depth-first
-search (DFS) benchmark 
+search (DFS) benchmark
 * TeraSort - sorting benchmark
 
 Configuration and Runtime Details

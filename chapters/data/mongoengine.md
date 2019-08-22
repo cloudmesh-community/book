@@ -13,7 +13,7 @@ Mongoengine can be installed by running:
 ```bash
     $ pip install mongo engine
 ```
-    
+
 This will install six, pymongo and mongoengine.
 
 To connect to mongoldb use connect () function by specifying mongoldb
@@ -39,11 +39,11 @@ a schema we create a class that inherits from document.
 ```python
 from mongoengine import *
 
-class Student(Document): 
+class Student(Document):
     first_name = StringField(max_length=50)
     last_name = StringField(max_length=50)
 ```
-       
+
 ![No](images/no.png) TODO: Can you fix the code sections and look at the examples we
 provided.
 
@@ -58,9 +58,9 @@ create a class text and link it to student by using Reference field
 
 ```python
 class Text(Document):
-    title = StringField(max_length=120, required=True)  
-    author = ReferenceField(Student)  
-    meta = {'allow_inheritance': True} 
+    title = StringField(max_length=120, required=True)
+    author = ReferenceField(Student)
+    meta = {'allow_inheritance': True}
 
 class OnlyText(Text):
     content = StringField()
@@ -71,7 +71,7 @@ class ImagePost(Text):
 class LinkPost(Text):
     link_url = StringField()
 ```
-   
+
 MongoDb supports adding tags to individual texts rather then storing
 them separately and then having them referenced.Similarly Comments can
 also be stored directly in a Text.
@@ -90,10 +90,10 @@ For accessing data: if we need to get titles.
 for text in OnlyText.objects:
     print(text.title)
 ```
-    
+
 Searching texts with tags.
 
 ```python
-for text in Text.objects(tags='mongodb'): 
+for text in Text.objects(tags='mongodb'):
     print(text.title)
 ```

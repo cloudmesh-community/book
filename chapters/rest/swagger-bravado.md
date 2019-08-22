@@ -7,7 +7,7 @@ and it aims to replace Swagger-Codegen.
 We assume that you already understand the concept of REST API service
 and you have some knowledge on Swagger-Codegen.
 
-## Some important features afforded by Bravado 
+## Some important features afforded by Bravado
 
 - Swagger models as Python types (no need to deal with JSON).
 - Dynamically generated client - no code generation needed!

@@ -67,7 +67,7 @@ through the material you will be able to:
 -   use Python
 -   use the interactive Python interface
 -   understand the basic syntax of Python
--   write and run Python programs 
+-   write and run Python programs
 -   have an overview of the standard library
 -   install Python libraries using pyenv for multipython interpreter development.
 

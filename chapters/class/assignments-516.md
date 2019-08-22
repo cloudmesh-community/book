@@ -1,4 +1,4 @@
-# Assignments 
+# Assignments
 
 ## Due dates
 
@@ -19,7 +19,7 @@ License:
     project. If your project uses different licenses, please add in a
     README.md file which packages are used and which license these
     packages have.
-    
+
 Sections:
 
 : Sections are written in markdown and include information on a
@@ -38,7 +38,7 @@ Technology or Review Paper :
   application, or topic that is not yet covered in other technology
   papers delivered by previous students of this class. A review paper
   is a paper that reviews a specific topic related to this class.
-  
+
   In either case includes useful information that provides an overview
   of what you are trying to describe and analyses its relationship to
   the class topic. Be mindful about plagiarism. The paper is written
@@ -48,7 +48,7 @@ Technology or Review Paper :
 
   Note: that for the 2018 we decided to just us Markdown and not LaTeX.
   We will calculate the exact number of words needed.
-  
+
 Project:
 
 : We refer with the term project to the major activity that you chose
@@ -79,15 +79,15 @@ Term Paper:
 
   We estimate that a single page is between 1000-1200 words.
   Please note that for 2018 the format will be markdown, so the word
-  count will be used instead. 
-  
+  count will be used instead.
+
 Project Report:
 
 : A project report is an enhanced topic paper that includes not just
   the analysis of a topic, but an actual code, with **benchmark** and
   demonstrated application use. Obviously it is longer than a
   term paper and includes descriptions about reproducibility of
-  the application. A README is provided that describes in sectione 
+  the application. A README is provided that describes in sectione
   how others can reproduce your project and run it.  Term papers
   should have the quality to be publishable either in a workshop or as
   part of the handbook. The format is discussed in the Section
@@ -100,7 +100,7 @@ Project Report:
 
   We estimate that a single page is between 1000-1200 words.
   Please note that for 2018 the format will be markdown, so the word
-  count will be used instead. 
+  count will be used instead.
 
 Project Code:
 
@@ -174,7 +174,7 @@ In case you chose a term paper your maximum grade for the
 *entire* class will be an A-.
 
 
-##### Deliverables 
+##### Deliverables
 
 - Find a data set with reasonable size (this may depend on your
   resources and needs to include a benchmark in your paper for
@@ -189,7 +189,7 @@ In case you chose a term paper your maximum grade for the
 
 - Take results in two different cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
-  created and deployed based on your documentation. 
+  created and deployed based on your documentation.
 
 - Create a Makefile with the tags deploy, run, kill, view, clean that
   deploys your environment, runs application, kills it, views the
@@ -200,7 +200,7 @@ In case you chose a term paper your maximum grade for the
 
 - For python use a requirements.txt file also
 
-- For docker use a Dockerfile also 
+- For docker use a Dockerfile also
 
 - Write a report that includes the following sections
 

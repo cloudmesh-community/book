@@ -21,18 +21,18 @@ If your access to the victor host has been verified, try to login to the
 docker swarm head node. To conveniently do this let us define some Linux
 environment variables to simplify the access and the material presented
 here. You can place them even in your `.bashrc` or `.bash_profile` so
-the information gets populated whenever you start a new terminal.If you 
+the information gets populated whenever you start a new terminal.If you
 directly edit the files make sure to execute the `source` command to refresh
  the environment variables for the current session using `source .bashrc`
-or `source .bash_profile`. Or you can close the current shell and reopen a 
-new one. 
+or `source .bash_profile`. Or you can close the current shell and reopen a
+new one.
 
 ```bash
 local$ export ECHO=149.165.150.76
 local$ export FS_USER=<put your futersystem account name here>
 ```
 
-Now you can use the two variables that were set to login to the Echo serer, 
+Now you can use the two variables that were set to login to the Echo serer,
 using the following command
 
 ```bash
@@ -74,7 +74,7 @@ echo$ docker service create --name notebook_test -p 9001:8888 \
     jupyter/datascience-notebook start-notebook.sh
     --NotebookApp.password=NOTEBOOK_PASS_HASH
 ```
-    
+
 The NOTEBOOK_PASS_HASH can be generated in python:
 
 ```python

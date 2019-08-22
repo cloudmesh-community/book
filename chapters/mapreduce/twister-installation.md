@@ -3,9 +3,9 @@
 ## Prerequisites
 
 Because Twister2 is still in the early stages of development a binary release is not available as of yet, therefore to
-try out Twister2 users need to first build the binaries from the source code. 
+try out Twister2 users need to first build the binaries from the source code.
 
--   Operating System : 
+-   Operating System :
     * Twister2 is tested and known to work on,
     * Red Hat Enterprise Linux Server release 7
     * Ubuntu 14.05, Ubuntu 16.10 and Ubuntu 18.10
@@ -39,11 +39,11 @@ Execute the following commands to install Maven locally.
       mkdir -p ~/cloudmesh/bin/maven
       cd ~/cloudmesh/bin/maven
       wget http://mirrors.ibiblio.org/apache/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz
-      tar xzf apache-maven-3.5.2-bin.tar.gz  
+      tar xzf apache-maven-3.5.2-bin.tar.gz
 
 Adding environmental variables
 
-      emacs ~/.bashrc  
+      emacs ~/.bashrc
 
 Add the following line at the end of the file.
 
@@ -55,7 +55,7 @@ Add the following line at the end of the file.
 
 ### OpenMPI Installation
 
-When you compile Twister2 it will automatically download and compile OpenMPI 3.1.2 with it. If you don't like this 
+When you compile Twister2 it will automatically download and compile OpenMPI 3.1.2 with it. If you don't like this
 version of OpenMPI and wants to use your own version, you can compile OpenMPI using following instructions.
 
 * We recommend using OpenMPI 3.1.2
@@ -72,11 +72,11 @@ LD_LIBRARY_PATH=$BUILD/lib:$LD_LIBRARY_PATH
 export BUILD OMPI_312 PATH LD_LIBRARY_PATH
 ```
 
-* The instructions to build OpenMPI depend on the platform. Therefore, we highly recommend looking into 
+* The instructions to build OpenMPI depend on the platform. Therefore, we highly recommend looking into
 the `$OMPI_1101/INSTALL` file. Platform specific build files are available in `$OMPI_1101/contrib/platform` directory.
 
-* In general, please specify `--prefix=$BUILD` and `--enable-mpi-java` as arguments to configure script. 
-If Infiniband is available (highly recommended) specify `--with-verbs=<path-to-verbs-installation>`. Usually, the path 
+* In general, please specify `--prefix=$BUILD` and `--enable-mpi-java` as arguments to configure script.
+If Infiniband is available (highly recommended) specify `--with-verbs=<path-to-verbs-installation>`. Usually, the path
 to verbs installation is `/usr`. In summary, the following commands will build OpenMPI for a Linux system.
 
 ```bash
@@ -85,7 +85,7 @@ cd $OMPI_312
 make -j 8;make install
 ```
 
-* If everything goes well `mpirun --version` will show `mpirun (Open MPI) 3.1.2`. Execute the following command 
+* If everything goes well `mpirun --version` will show `mpirun (Open MPI) 3.1.2`. Execute the following command
 to instal `$OMPI_312/ompi/mpi/java/java/mpi.jar` as a Maven artifact.
 
 ```bash

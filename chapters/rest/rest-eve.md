@@ -40,7 +40,7 @@ $ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu \
 $ sudo apt-get update
 $ sudo apt-get install -y mongodb-org
 ```
-    
+
 ## macOS install of MongoDB
 
 On macOS you can use the command
@@ -127,7 +127,7 @@ DOMAIN = {
 }
 RESOURCE_METHODS = ['GET', 'POST']
 ```
-    
+
 The DOMAIN object specifies the format of a `student` object that we are
 using as part of our REST service. In addition we can specify
 `RESOURCE_METHODS` which methods are activated for the REST service.
@@ -350,14 +350,14 @@ The following information will be returned:
 
 ```
 {
-  "firstname": "Albert", 
-  "lastname": "Zweistain", 
-  "university": "Indiana University", 
-  "email": "albert@example.com", 
+  "firstname": "Albert",
+  "lastname": "Zweistain",
+  "university": "Indiana University",
+  "email": "albert@example.com",
   "username": "albert"
 }
 ```
-    
+
 This example illustrates how easy it is to create REST services in
 python while combining information from a dict with information
 retrieved from the system. The important part is to understand the
@@ -386,7 +386,7 @@ class Student(object):
         self.university = university
         self.email = email
         self.username = 'undefined'
-     def get(self): 
+     def get(self):
        return self.__dict__
      def setUsername(self, name):
        self.username = name
@@ -406,9 +406,9 @@ import getpass
  app = Eve()
   @app.route('/student/albert', methods=['GET'])
 def processor():
-    student = Student("Albert", 
-                      "Zweistein", 
-                      "Indiana University", 
+    student = Student("Albert",
+                      "Zweistein",
+                      "Indiana University",
                       "albert@example.edu")
 
     response = Response()
@@ -420,7 +420,7 @@ def processor():
     except:
         response.headers["status"] = 500
 
-    response.data = json.dumps(student.get())        
+    response.data = json.dumps(student.get())
     return response
 
 if __name__ == '__main__':

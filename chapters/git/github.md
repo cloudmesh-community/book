@@ -369,18 +369,18 @@ course.
 ## Contributing to the Document
 
 It is relatively easy to contribute to the document if you understand how to use github.
-The first thing you will need to do is to create a fork of the repository. The easiest 
-way to do this is to visit the URL 
+The first thing you will need to do is to create a fork of the repository. The easiest
+way to do this is to visit the URL
 
 *  <https://github.com/cloudmesh-community/book>
 
-Towards the upper right corner you will find a link called **Fork**. Click on it and chose 
-into which account you like to fork the original repository. Next you will create a colne 
-from your corked directory. You will see in your fork a green clone button. You will see a 
-URL that you can copy into your terminal. If the links does not include your username, it is 
+Towards the upper right corner you will find a link called **Fork**. Click on it and chose
+into which account you like to fork the original repository. Next you will create a colne
+from your corked directory. You will see in your fork a green clone button. You will see a
+URL that you can copy into your terminal. If the links does not include your username, it is
 the wrong link.
 
-In your terminal you now say 
+In your terminal you now say
 
 ```bash
 git colne  https://github.com/<yourusername>/book
@@ -401,9 +401,9 @@ Note you will push into your local directory.
 
 ### Stay up to date with the original repo
 
-Form time to time you will see that others are contributing to the original repo. 
+Form time to time you will see that others are contributing to the original repo.
 To stay up to date you want to not only sync from your local copy, but also from the original repo.
-To link your repo with what is called the upstream you need to do the following once, so you can issue 
+To link your repo with what is called the upstream you need to do the following once, so you can issue
 `git pull` tha also pulls from the upstream
 
 Make sure you have upstream repo defined:
@@ -489,7 +489,7 @@ those tutorials. We found the following useful
 
 ## Exercises
 
-E.Github.1: 
+E.Github.1:
 
 > How do you set your favorite editor as a default with github config
 
@@ -657,7 +657,7 @@ that lists todo's status if you use them in the issue description.
 
 ## Glossary
 
-The Glossary is copied from 
+The Glossary is copied from
 
 * https://cdcvs.fnal.gov/redmine/projects/cet-is-public/wiki/GitTipsAndTricks#A-suggested-work-flow-for-distributed-projects-NoSY
 
@@ -726,8 +726,8 @@ Un-tracked
 
 ## Example commands
 
-To work in your local directory you can use the following commands. 
-Please note that these commands do not upload your work to github, but 
+To work in your local directory you can use the following commands.
+Please note that these commands do not upload your work to github, but
 only introduce version control within your local files.
 
 The command list is copied from
@@ -787,11 +787,11 @@ Create (but do not switch to) a new local branch based on the current branch:
 Change to an existing local branch:
 
     $ git checkout <branch>
-    
+
 Merge another branch into the current one:
 
     $ git merge <branch>
-    
+
 ### Interacting with the remote
 
 Get the current list of remotes (including URIs) with
@@ -802,7 +802,7 @@ Get the current list of defined branches with
 
     $ git branch -a
 
-Change to (creating if necessary) a local branch tracking an existing remote 
+Change to (creating if necessary) a local branch tracking an existing remote
 branch of the same name:
 
     $ git checkout <branch>
@@ -811,12 +811,12 @@ Update your local repository ref database without altering the current working a
 
     $ git fetch <remote>
 
-Update your current local branch with respect to your repository's current 
+Update your current local branch with respect to your repository's current
 idea of a remote branch's status:
 
     $ git merge <branch>
 
-Pull remote ref information from all remotes and merge local branches with their 
+Pull remote ref information from all remotes and merge local branches with their
 remote tracking branches (if applicable):
 
     $ git pull
@@ -832,4 +832,4 @@ Push changes to the remote tracking branch:
 Push all changes to all tracking branches:
 
     $ git push --all
-    
+

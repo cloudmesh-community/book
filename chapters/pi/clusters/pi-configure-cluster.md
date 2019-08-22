@@ -4,7 +4,7 @@
 
 Our goal is perform the following configuration automatically:
 
-* [Enable ssh](https://www.raspberrypi.org/documentation/remote-access/ssh/) 
+* [Enable ssh](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 permanently (initial ssh access will be enabled when we burn the SD cards)
 * Change the password
 * Set up one of the Pis as a DHCP server
@@ -20,13 +20,13 @@ flag.
 
 * [Assemble a Pi Cluster](assemble-pi-cluster.md)
 * [Burn SD cards with names changed and ssh enabled](modify-pi-image.md)
-* Install `expect` on computer running `configure-pi.sh`. On a Mac, this is done with 
+* Install `expect` on computer running `configure-pi.sh`. On a Mac, this is done with
 `brew install expect`. On Unix, use `apt-get install expect` or `yum install expect`.
 More information on `expect` can be found [here](https://likegeeks.com/expect-command/).
 
 ## Setting up DHCP
 
-> ![Warning](images/warning.png) *The information presented here insecure!* 
+> ![Warning](images/warning.png) *The information presented here insecure!*
 
 TODO: Find out if cluster should be set up with or without internet
 enabled. Tutorial for getting Pi on IU Secure
@@ -56,7 +56,7 @@ bertoltksiphone.hsd1.in.comcast.net (192.168.1.126) at e4:9a:79:7f:19:55 on en0 
 broadcasthost (255.255.255.255) at ff:ff:ff:ff:ff:ff on en0 ifscope [ethernet]
 ```
 
-When internet sharing is off I get: 
+When internet sharing is off I get:
 
 ```
 (2.7.16) BKS-MBP:~ bsobolik$ arp -a

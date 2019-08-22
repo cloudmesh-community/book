@@ -9,7 +9,7 @@ The full example for this is available in
 
 * <https://github.com/cloudmesh-community/nist/tree/master/examples/flask-connexion-swagger>
 
-An extensive documentation is avalable at 
+An extensive documentation is avalable at
 
 * <https://media.readthedocs.org/pdf/connexion/latest/connexion.pdf>
 
@@ -17,7 +17,7 @@ This example will return dynamically the cpu information of a computer to
 demonstrate how simple it is to generate in python a REST service from an
 OpenAPI specification.
 
-Our requirements.txt file includes 
+Our requirements.txt file includes
 
 ```
 flask
@@ -54,43 +54,43 @@ The yaml file looks as follows
 
 ```
 swagger: "2.0"
-info: 
+info:
   version: "0.0.1"
   title: "cpuinfo"
   description: "A simple service to get cpuinfo as an example of using swagger-2.0 specification and codegen"
   termsOfService: "http://swagger.io/terms/"
-  contact: 
+  contact:
     name: "Cloudmesh REST Service Example"
-  license: 
+  license:
     name: "Apache"
 host: "localhost:8080"
 basePath: "/cloudmesh"
-schemes: 
+schemes:
   - "http"
-consumes: 
+consumes:
   - "application/json"
-produces: 
+produces:
   - "application/json"
-paths: 
+paths:
   /cpu:
     get:
       tags:
         - CPU
       operationId: cpu.get_processor_name
       description: "Returns cpu information of the hosting server"
-      produces: 
+      produces:
         - "application/json"
-      responses: 
+      responses:
         "200":
           description: "CPU info"
-          schema: 
+          schema:
             $ref: "#/definitions/CPU"
 definitions:
   CPU:
     type: "object"
-    required: 
+    required:
       - "model"
-    properties: 
+    properties:
       model:
       type: "string"
  ```
@@ -180,7 +180,7 @@ $ connexion run cpu.yaml --stub --debug
 
 In some cases it may be useful to develop the API without having yet developed
 methods that you call with the OperationI. In this case it is useful to run a
-mock service. YOu can invoce such a service with 
+mock service. YOu can invoce such a service with
 
 ```bash
 $ connexion run cpu.yaml --mock=all -v
@@ -207,7 +207,7 @@ OpenAPI.Conexion.3:
 
 > Implement a swagger specification of an issue related to the NIST
 > BDRA. Implement it. Please remember this could prepare you for a
-> project good topics include: 
+> project good topics include:
 
 > * virtual compute service interfacing with aws, azure, google or openstack
 > * virtual directory service interfacing with google drive, box,
@@ -223,12 +223,12 @@ OpenAPI.Conexion.3:
 OpenAPI.Conexion.4:
 
 > Develop instructions on how to integrate the OpenAPI service framework in a
-> WSGI based Web service. Chose a service you like so that the service could 
+> WSGI based Web service. Chose a service you like so that the service could
 > run in production.
 
 OpenAPI.Conexion.5:
 
-> Develop instructions on how to integrate the OpenAPI service framework in 
+> Develop instructions on how to integrate the OpenAPI service framework in
 > Tornado so the service could run in production.
 
 

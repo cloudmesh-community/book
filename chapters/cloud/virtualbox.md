@@ -71,7 +71,7 @@ A video to showcase such an install is available at:
 
 [![Video](images/video.png) Using Ubuntu in Virtualbox (8:08) ](https://youtu.be/NWibDntN2M4)
 
-> ![Warning](images/warning.png) *Please note that the video shows the version 16.04. You should however 
+> ![Warning](images/warning.png) *Please note that the video shows the version 16.04. You should however
 > use the newest version which at this time is 18.04.*
 
 If you specify your machine too small you will not be able to install

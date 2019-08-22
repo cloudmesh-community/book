@@ -1,16 +1,16 @@
 # Sensors ![Smiley](images/smile.png) fa18-523-84
 
 
-This section contains the wiring diagrams and associated classes for sensors that can be used with the Raspberry Pi.  In addition to the individual sensors an example project is also included.  Before getting started with sensors for the Raspberry Pi you will need to ensure that the Pi is set up with python3 and has the latest version of Raspbian installed.  Instructions for setting up the Raspberry Pi can be found [here.](https://github.com/cloudmesh-community/book/blob/master/chapters/iot/pi.md)  
+This section contains the wiring diagrams and associated classes for sensors that can be used with the Raspberry Pi.  In addition to the individual sensors an example project is also included.  Before getting started with sensors for the Raspberry Pi you will need to ensure that the Pi is set up with python3 and has the latest version of Raspbian installed.  Instructions for setting up the Raspberry Pi can be found [here.](https://github.com/cloudmesh-community/book/blob/master/chapters/iot/pi.md)
 
 DS18B20 Temperature Sensor
 --------------------------
 
-The DS18B20 is a thermoresistive temperature sensor and can be found in many of the sensor kits referenced in this book.  To set up the DS18B20 connect the jumper wires as shown in @fig:ds18b20_setup.  If you have an individual sensor instead of a sensor module you will need to use a 4.7k ohm resistor as shown in the diagram.  The resistor allows the one wire interface to work properly and should be used to avoid damage to the sensor [@DS18B20_resistor].  If you have a DS18B20 module it may already include a resistor and you will not need to add another.  Be sure to check before setting up your sensor. 
+The DS18B20 is a thermoresistive temperature sensor and can be found in many of the sensor kits referenced in this book.  To set up the DS18B20 connect the jumper wires as shown in @fig:ds18b20_setup.  If you have an individual sensor instead of a sensor module you will need to use a 4.7k ohm resistor as shown in the diagram.  The resistor allows the one wire interface to work properly and should be used to avoid damage to the sensor [@DS18B20_resistor].  If you have a DS18B20 module it may already include a resistor and you will not need to add another.  Be sure to check before setting up your sensor.
 
 ![DS18B20 Setup](images/DS18B20_setup.png){#fig:ds18b20_setup}
 
-Once you have set up the wiring of the DS18B20 you will need to set up the one wire interface.  This can be done with the following steps [@DS18B20_code_setup].  
+Once you have set up the wiring of the DS18B20 you will need to set up the one wire interface.  This can be done with the following steps [@DS18B20_code_setup].
 
 1. In a terminal enter:  ``` sudo nano /boot/config.txt ```
 2. Scroll to the bottom of this text file and enter ``` dtoverlay=w1–gpio ```
@@ -26,9 +26,9 @@ The temperature and humidity sensor used in this example is the DHT11 sensor whi
 
 To set up the DHT11 sensor connect jumper wires to the Raspberry Pi as shown in @fig:dht11_setup.  Ensure that the ground wire of the DHT11 is connected to the ground rail of the breadboard or a ground pin on the Raspberry Pi.  The VCC wire of the DHT11 should be connected to 3.3v from the Raspberry Pi.  To receive data the middle pin should be connected to one of the GPIO pins on the Raspberry Pi.  In this example and associated code we connect the data wire to GPIO 4 on the Raspberry Pi as shown in @fig:dht11_setup.
 
-![DHT11 Setup](images/DHT11_setup.png){#fig:dht11_setup}  
+![DHT11 Setup](images/DHT11_setup.png){#fig:dht11_setup}
 
-Once you have checked that the DHT11 is set up correctly you will need to set up the Adafruit_DHT module for python.  The sample python class utilizes the Adafruit_DHT module which can be set up by executing the following code in a terminal on your Raspberry Pi [@Adafruit_setup].  
+Once you have checked that the DHT11 is set up correctly you will need to set up the Adafruit_DHT module for python.  The sample python class utilizes the Adafruit_DHT module which can be set up by executing the following code in a terminal on your Raspberry Pi [@Adafruit_setup].
 
 ```bash
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
@@ -38,7 +38,7 @@ sudo apt-get install build-essential python-dev
 sudo python setup.py install
 ```
 
-Once you have set up the Adafruit_DHT module you can use the python class to display the temperature and humidity reading to the terminal.  
+Once you have set up the Adafruit_DHT module you can use the python class to display the temperature and humidity reading to the terminal.
 
 [Temperature & Humidity Sensor Class](https://github.com/cloudmesh-community/fa18-523-84/blob/master/paper/code/temp_humid.py)
 
@@ -56,7 +56,7 @@ Once you have set up the light sensor you can use the light_sensor class to retr
 Capacitive Touch Sensor Module
 ------------------------------
 
-In this example we are using a [momentary capacitive touch sensor](https://www.adafruit.com/product/1374).  The sensor kits mentioned in this book will also contain this sensor.  To set up the touch sensor connect the wires to the Raspberry Pi as shown in @fig:touch_setup.  
+In this example we are using a [momentary capacitive touch sensor](https://www.adafruit.com/product/1374).  The sensor kits mentioned in this book will also contain this sensor.  To set up the touch sensor connect the wires to the Raspberry Pi as shown in @fig:touch_setup.
 
 ![Touch Sensor Setup](images/touch_setup.png){#fig:touch_setup}
 
@@ -67,7 +67,7 @@ Once you have set up the sensor you can use the touch_sensor class to execute an
 Relay Module
 ----------------------
 
-The relay module can be used as a switch to complete a circuit.  The module can be purchased as an individual component or may be included on a board with 2, 4 or more relay switches.  In this example we will be using a two channel relay module. To set up the relay module connect the wires to the Raspberry Pi as shown in @fig:relay_setup.  
+The relay module can be used as a switch to complete a circuit.  The module can be purchased as an individual component or may be included on a board with 2, 4 or more relay switches.  In this example we will be using a two channel relay module. To set up the relay module connect the wires to the Raspberry Pi as shown in @fig:relay_setup.
 
 ![Relay Module Setup](images/relay_setup.png){#fig:relay_setup}
 
@@ -94,9 +94,9 @@ TODO: which compass sensor
 The default pins are defined in variants/nodemcu/pins_arduino.h as GPIO
 
 ```
-    SDA=4 
+    SDA=4
     SCL=5
-    D1=5 
+    D1=5
     D2=4.
 ```
 
@@ -122,7 +122,7 @@ Prerequisites:
  * 4 female to female jumper wires
  * 24 male to male jumper wires
  * 12 male to female jumper wires
- 
+
 If using the LED's you will want the additional components listed next:
 
   * Three 4.7k ohm resistors
@@ -144,7 +144,7 @@ Once the thermostat_setup.sh script has finished running there will be a new dir
   * ```python3 light_sensor.py``` Should show either 1 or 0 depending on if light is detected.
   * ```python3 relay_switch.py``` Connected to the LED's this should turn the LED's on and off.
   * ```python3 touch_sensor.py``` When the sensor is touched "Hey!" should be printed to the terminal.
-  
+
 Once you have tested the components and have ensured that they work you can run ```python3 smart_therm_not_connected.py``` to start the smart thermostat.  The code should print the current system status to the terminal.
 
 [Smart Thermostat Code](https://github.com/cloudmesh-community/fa18-523-84/blob/master/paper/code/smart_therm_not_connected.py)

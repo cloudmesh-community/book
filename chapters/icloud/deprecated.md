@@ -1,4 +1,4 @@
-Deprecated 
+Deprecated
 ==========
 
 ## Applying for FutureSystems Account

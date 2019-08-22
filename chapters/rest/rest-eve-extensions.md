@@ -52,7 +52,7 @@ On windows 10, you need to do the following steps:
   you elect Windows 10. You could be using the online documentation
   provided by starting it on Windows, or running it in a docker
   container.
-  
+
 On macOS you can use home-brew and install it with:
 
     $ brew update

@@ -22,7 +22,7 @@ to do so.
 * <https://hackernoon.com/raspberry-pi-headless-install-462ccabd75d0>
 
 *
-<https://installvirtual.com/enable-ssh-in-raspberry-pi-without-monitor> 
+<https://installvirtual.com/enable-ssh-in-raspberry-pi-without-monitor>
 
 According to
 

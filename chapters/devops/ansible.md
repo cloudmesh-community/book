@@ -24,7 +24,7 @@ in an automated fashion that integrate with your DevOps strategies.
 
 ### Prerequisite
 
-We assume you 
+We assume you
 
 -   can install Ubuntu 18.04 virtual machine on VirtualBox
 
@@ -98,14 +98,14 @@ We are using the `apt` attribute to indicate all software packages that
 need to be installed. Dependent on the distribution of the operating
 system it will find the correct module installer without your
 knowledge. Thus an ansible playbook could also work for multiple
-different OSes. 
+different OSes.
 
 Ansible relies on various kinds of modules to fulfil tasks on the remote
 servers. These modules are developed for particular tasks and take in
-related arguments. For instance, when we use `apt` module, we 
+related arguments. For instance, when we use `apt` module, we
 need to tell which package we intend to install. That is why we provide
 a value for the `name=` argument. The first `-name` attribute is just
-a comment that will be printed when this task is executed. 
+a comment that will be printed when this task is executed.
 
 ### Run the playbook
 
@@ -163,7 +163,7 @@ to extend it via new features called role next
 
 Role is an important concept used often in large Ansible projects.
 You divide a series of tasks into different groups. Each group
-corresponds to certain role within the project. 
+corresponds to certain role within the project.
 
 For example, if your project is to deploy a web site, you may need to
 install the back end database, the web server that responses HTTP
@@ -285,7 +285,7 @@ execute the playbook.
 
 You should be able to extend the Ansible playbook for your
 needs. Configuration tools like Ansible are important components to
-master the cloud environment. 
+master the cloud environment.
 
 ## Ansible Galaxy
 
@@ -471,18 +471,18 @@ We can run this playbook like so:
 
     $ ansible-playbook -i inventory.txt -c ssh enable-root-access.yaml
 
-    PLAY [ansible-test] *********************************************************** 
+    PLAY [ansible-test] ***********************************************************
 
-    GATHERING FACTS *************************************************************** 
+    GATHERING FACTS ***************************************************************
     ok: [10.23.2.105]
     ok: [10.23.2.104]
 
-    TASK: [Enable root login] ***************************************************** 
+    TASK: [Enable root login] *****************************************************
     changed: [10.23.2.104]
     changed: [10.23.2.105]
 
-    PLAY RECAP ******************************************************************** 
-    10.23.2.104                : ok=2    changed=1    unreachable=0    failed=0   
+    PLAY RECAP ********************************************************************
+    10.23.2.104                : ok=2    changed=1    unreachable=0    failed=0
     10.23.2.105                : ok=2    changed=1    unreachable=0    failed=0
 
 #### Hosts and Users
@@ -579,56 +579,56 @@ We use `ansible-playbook` command to run our playbook:
 
     $ ansible-playbook -i inventory.txt -c ssh mongodb.yaml
 
-    PLAY [ansible-test] *********************************************************** 
+    PLAY [ansible-test] ***********************************************************
 
-    GATHERING FACTS *************************************************************** 
+    GATHERING FACTS ***************************************************************
     ok: [10.23.2.104]
     ok: [10.23.2.105]
 
-    TASK: [Import the public key used by the package management system] *********** 
+    TASK: [Import the public key used by the package management system] ***********
     changed: [10.23.2.104]
     changed: [10.23.2.105]
 
-    TASK: [Add MongoDB repository] ************************************************ 
+    TASK: [Add MongoDB repository] ************************************************
     changed: [10.23.2.104]
     changed: [10.23.2.105]
 
-    TASK: [install mongodb] ******************************************************* 
+    TASK: [install mongodb] *******************************************************
     changed: [10.23.2.104]
     changed: [10.23.2.105]
 
-    NOTIFIED: [start mongodb] ***************************************************** 
+    NOTIFIED: [start mongodb] *****************************************************
     ok: [10.23.2.105]
     ok: [10.23.2.104]
 
-    PLAY RECAP ******************************************************************** 
-    10.23.2.104                : ok=5    changed=3    unreachable=0    failed=0   
+    PLAY RECAP ********************************************************************
+    10.23.2.104                : ok=5    changed=3    unreachable=0    failed=0
     10.23.2.105                : ok=5    changed=3    unreachable=0    failed=0
 
 If you rerun the playbook, you should see that nothing changed:
 
-    $ ansible-playbook -i inventory.txt -c ssh mongodb.yaml 
+    $ ansible-playbook -i inventory.txt -c ssh mongodb.yaml
 
-    PLAY [ansible-test] *********************************************************** 
+    PLAY [ansible-test] ***********************************************************
 
-    GATHERING FACTS *************************************************************** 
+    GATHERING FACTS ***************************************************************
     ok: [10.23.2.105]
     ok: [10.23.2.104]
 
-    TASK: [Import the public key used by the package management system] *********** 
+    TASK: [Import the public key used by the package management system] ***********
     ok: [10.23.2.104]
     ok: [10.23.2.105]
 
-    TASK: [Add MongoDB repository] ************************************************ 
+    TASK: [Add MongoDB repository] ************************************************
     ok: [10.23.2.104]
     ok: [10.23.2.105]
 
-    TASK: [install mongodb] ******************************************************* 
+    TASK: [install mongodb] *******************************************************
     ok: [10.23.2.105]
     ok: [10.23.2.104]
 
-    PLAY RECAP ******************************************************************** 
-    10.23.2.104                : ok=4    changed=0    unreachable=0    failed=0   
+    PLAY RECAP ********************************************************************
+    10.23.2.104                : ok=4    changed=0    unreachable=0    failed=0
     10.23.2.105                : ok=4    changed=0    unreachable=0    failed=0
 
 #### Sanity Check: Test MongoDB
@@ -645,7 +645,7 @@ Let's try to run 'mongo' to enter mongodb shell.:
             http://docs.mongodb.org/
     Questions? Try the support group
             http://groups.google.com/group/mongodb-user
-    > 
+    >
 
 #### Terms
 

@@ -1,7 +1,7 @@
 Participation
 =============
 
- 
+
 
 All files are ONLY accessible by instructors. Public access should be
 given based on a class schedule.

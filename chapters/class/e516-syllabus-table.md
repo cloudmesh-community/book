@@ -18,7 +18,7 @@ The book can be used as reference material in that case.
 
 Legend markings
 
-* Class released + 
+* Class released +
 * Class under development - or ![No](images/no.png)
 
 
@@ -91,8 +91,8 @@ Legend markings
 
 ## Assignments Timeline
 
-Students must conduct all assignments listed here. They must conduct one project of type A, B, C, or E. The project 
-is selected in the first 3 weeks of the semester and conducted throughout the rest of the semester. 
+Students must conduct all assignments listed here. They must conduct one project of type A, B, C, or E. The project
+is selected in the first 3 weeks of the semester and conducted throughout the rest of the semester.
 
 |     | Week  | Unit | Title  | Description |
 | --- |------ | --- | ------- | --------------------- |

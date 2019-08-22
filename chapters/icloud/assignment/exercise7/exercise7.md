@@ -1,7 +1,7 @@
 Harp PageRank
 =============
 
- 
+
 
 For this exercise you will implement PageRank on Harp framework.
 

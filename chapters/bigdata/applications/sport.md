@@ -128,15 +128,15 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 ### Resources
 
 \TODO{These resources have not all been checked to see if they still
-  exist this is currently in progress} 
+  exist this is currently in progress}
 -   <http://www.slideshare.net/Tricon_Infotech/big-data-for-big-sports> [@www-slideshare-tricon-infotech]
--   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling> [@www-slideshare-sports] 
+-   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling> [@www-slideshare-sports]
 -   <http://www.slideshare.net/elew/sport-analytics-innovation> [@www-slideshare-elew-sport-analytics]
 -   <http://www.wired.com/2013/02/catapault-smartball/> [@www-wired-smartball]
 -   <http://www.sloansportsconference.com/wp-content/uploads/2014/06/Automated_Playbook_Generation.pdf> [@www-sloansportsconference-automated-playbook]
 -   <http://autoscout.adsc.illinois.edu/publications/football-trajectory-dataset/> [@www-autoscout-illinois-football-trajectory]
 -   <http://www.sloansportsconference.com/wp-content/uploads/2012/02/Goldsberry_Sloan_Submission.pdf> [@sloansportconference-goldsberry]
--   <http://gamesetmap.com/> [@gamesetmap] 
+-   <http://gamesetmap.com/> [@gamesetmap]
 -   <http://www.slideshare.net/BrandEmotivity/sports-analytics-innovation-summit-data-powered-storytelling> [@www-slideshare-sports-datapowered]
 -   <http://www.sloansportsconference.com/> [@www-sloansportsconferences]
 -   <http://sabr.org/> [@www-sabr]
@@ -156,7 +156,7 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   <http://battingleadoff.com/2014/01/08/comparing-the-three-war-measures-part-ii/> [@battingleadoff-baseball-player]
 -   <http://en.wikipedia.org/wiki/Coefficient_of_determination> [@www-wiki-coefficient-of-determination]
 -   <http://www.sloansportsconference.com/wp-content/uploads/2014/02/2014_SSAC_Data-driven-Method-for-In-game-Decision-Making.pdf> [@ganeshapillai2014data]
--   <https://courses.edx.org/courses/BUx/SABR101x/2T2014/courseware/10e616fc7649469ab4457ae18df92b20/> 
+-   <https://courses.edx.org/courses/BUx/SABR101x/2T2014/courseware/10e616fc7649469ab4457ae18df92b20/>
 -   <http://vincegennaro.mlblogs.com/> [@www-vincegennaro-mlblogs]
 -   <https://www.youtube.com/watch?v=H-kx-x_d0Mk> [@www-youtube-watch]
 -   <http://www.baseballprospectus.com/article.php?articleid=13109> [@www-baseball-prospectus-spinning-yarn]
@@ -171,6 +171,6 @@ Tennis, Horse Racing, and Continued Emphasis on Spatial Visualization.
 -   ~~<http://www.sportvision.com/media/pitchfx-how-it-works>~~
 -   ~~<http://www.sportvision.com/baseball/fieldfx>~~
 -   ~~<http://www.sportvision.com/baseball/hitfx>~~
--   ~~<http://www.trakus.com/technology.asp#tNetText>~~ 
--   ~~<http://www.sloansportsconference.com/?page_id=481&sort_cate=Research%20Paper>~~ 
+-   ~~<http://www.trakus.com/technology.asp#tNetText>~~
+-   ~~<http://www.sloansportsconference.com/?page_id=481&sort_cate=Research%20Paper>~~
 -   ~~<http://www.liveathos.com/apparel/app>~~

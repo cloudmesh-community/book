@@ -13,7 +13,7 @@ form cloudmesh.common3.Shell import Shell
 
 result = Shell.run("ls -lisa")
 print (result)
-``` 
+```
 
 The nice thing about this function is that the return result will be
 converted to a string which yuo may often need to do. This allows you to
@@ -59,7 +59,7 @@ class subprocess.Popen(
 )
 ```
 
-The following program demonstrates how to start the Unnix command 
+The following program demonstrates how to start the Unnix command
 `ls -lisa`.
 
 ## Subprocess communicate()
@@ -72,16 +72,16 @@ stdout, stderr = process.communicate()
 print(stdout)
 print(stderr)
 ```
-	
+
 `process.communicate()` reads the input and output from the process.
 `stderr` will only get populated if there is some error. `stdout` is the
 output for this process. Please note that the content of the output in
 python 3 is returned as binary.
 
 The `communicate()` method returns a tuple (stdoutdata, stderrdata).
-`Popen.communicate()` interacts with process: 
+`Popen.communicate()` interacts with process:
 
-1. Send data to stdin. 
+1. Send data to stdin.
 2. Read data from stdout and stderr, until end-of-file is reached.
 3. Wait for process to terminate.
 
@@ -95,7 +95,7 @@ subprocess.call(args, *,
                 stdout=None,
 				stderr=None,
 				shell=False)
-## Run the command described by args. 
+## Run the command described by args.
 ## Wait for command to complete, then return the returncode attribute.
 ```
 
@@ -126,11 +126,11 @@ string which we can later print. Method definition is as follows:
 
 ```python
 subprocess.check_output(
-    args, 
-    *, 
-    stdin=None, 
-    stderr=None, 
-    shell=False, 
+    args,
+    *,
+    stdin=None,
+    stderr=None,
+    shell=False,
     universal_newlines=False
 )
 
@@ -152,8 +152,8 @@ If we want to get the standard error output, use stderr = subprocess.STDOUT
 
 ```python
 >>> subprocess.check_output(
-    "ls non_existent_file; exit 0", 
-    stderr=subprocess.STDOUT, 
+    "ls non_existent_file; exit 0",
+    stderr=subprocess.STDOUT,
     shell=True)
 
 # ls: non_existent_file: No such file or directory\n'
@@ -164,11 +164,11 @@ If we want to get the standard error output, use stderr = subprocess.STDOUT
 If we get a non-zero return code, then it will raise a
 CalledProcessError. This object will have return code in returncode
 attribute and output will be in output attribute.
-	
+
 ```python
 >>> subprocess.check_output("exit 1", shell=True)
 Traceback (most recent call last):
-   
+
 subprocess.CalledProcessError: Command 'exit 1' returned non-zero exit status 1
 
 Exception subprocess.CalledProcessError
@@ -196,7 +196,7 @@ returns a non-zero exit status.
   Do not use stdout=PIPE or stderr=PIPE with this function as that can
   deadlock based on the child process output volume. Use Popen with
   the communicate() method when you need pipes.
-	
+
 
 ## Popen Constructor
 
@@ -204,25 +204,25 @@ The process creation and its management is handled by this class -
 Popen. Its signature is as follows:
 
 ```python
-class subprocess.Popen(args, 
-                       bufsize=0, 
-                       executable=None, 
-                       stdin=None, 
-                       stdout=None, 
-                       stderr=None, 
-                       preexec_fn=None, 
-                       close_fds=False, 
-                       shell=False, 
-                       cwd=None, 
-                       env=None, 
-                       universal_newlines=False, 
-                       startupinfo=None, 
+class subprocess.Popen(args,
+                       bufsize=0,
+                       executable=None,
+                       stdin=None,
+                       stdout=None,
+                       stderr=None,
+                       preexec_fn=None,
+                       close_fds=False,
+                       shell=False,
+                       cwd=None,
+                       env=None,
+                       universal_newlines=False,
+                       startupinfo=None,
                        creationflags=0)
 ```
 This will execute a child program in a new process. The arguments to
 Popen is as follows:
 
-* args are a sequence of program arguments or it can be a single string. 
+* args are a sequence of program arguments or it can be a single string.
 
 If the arguments is a sequence, then by default, the first item in args
 is the program to execute. If args is a string, the interpretation is
@@ -245,12 +245,12 @@ Source: <https://docs.python.org/2/library/subprocess.html>
 /bin/vikings -input eggs.txt -output "spam spam.txt" -cmd "echo '$MONEY'"
 >>> args = shlex.split(command_line)
 >>> print(args)
-['/bin/vikings', 
- '-input', 
- 'eggs.txt', 
- '-output', 
- 'spam spam.txt', 
- '-cmd', 
+['/bin/vikings',
+ '-input',
+ 'eggs.txt',
+ '-output',
+ 'spam spam.txt',
+ '-cmd',
  "echo '$MONEY'"]
 >>> p = subprocess.Popen(args) ## Success!
 ```
@@ -304,7 +304,7 @@ traceback information from the child’s point of view.
 
 ## Security
 
-Its very important for the application to handle security aspect explicitly. 
+Its very important for the application to handle security aspect explicitly.
 
 ## Popen Objects
 
@@ -318,7 +318,7 @@ Its very important for the application to handle security aspect explicitly.
   > `stdout=PIPE` and/or `stderr=PIPE` and the child process generates
   > enough output to a pipe such that it blocks waiting for the OS pipe
   > buffer to accept more data. Use `communicate()` to avoid that.*
-	
+
 * `Popen.communicate(input=None)`: Interact with process: Send data to
   stdin. Read data from stdout and stderr, until end-of-file is
   reached. Wait for process to terminate. The optional input argument
@@ -332,13 +332,13 @@ Its very important for the application to handle security aspect explicitly.
   stdout=PIPE and/or stderr=PIPE too.  The data read is buffered in
   memory, so do not use this method if the data size is large or
   unlimited.
-	
+
 * `Popen.send_signal(signal)`: Sends the signal signal to the child.
 
 	On Windows, SIGTERM is an alias for terminate(). CTRL_C_EVENT
     and CTRL_BREAK_EVENT can be sent to processes started with a
     creationflags parameter which includes `CREATE_NEW_PROCESS_GROUP`.
-	
+
 * `Popen.terminate()`: Stop the child. On Posix OSs the method sends
   SIGTERM to the child. On Windows the Win32 API function
   TerminateProcess() is called to stop the child.
@@ -351,7 +351,7 @@ The following attributes are also available:
 > ![](images/warning.png) *Use `communicate()` rather than< .stdin.write, .stdout.read or
 > .stderr.read to avoid deadlocks due to any of the other OS pipe
 > buffers filling up and blocking the child process.*
-	
+
 * `Popen.stdin`: If the stdin argument was PIPE, this attribute is a
   file object that provides input to the child process. Otherwise, it
   is None.

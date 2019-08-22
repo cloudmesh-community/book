@@ -15,7 +15,7 @@ GraphQL allows clients to request they need while specifing attributes
 in the query without thinking
 much about the API implementation. It simplifies access and reduces traffic
 as the application has control over the data it needs and
-its format. Hence GraphQL reduces the network traffic as 
+its format. Hence GraphQL reduces the network traffic as
 only the necessary data is transfered from server to client.
 
 Unlike REST APIs, which require often loading data via multiple
@@ -37,7 +37,7 @@ throughout the chapter
 
 ### Install Graphene
 
-In this chapter, we will use [Graphene](https://graphene-python.org/) 
+In this chapter, we will use [Graphene](https://graphene-python.org/)
 which is a library for implementing GraphQL APIs in Python. Use `pip`
 to install [Graphene]{.index}
 
@@ -47,15 +47,15 @@ $ pip install graphene==2.0.1 graphene-django==2.0.0
 
 ### Install Django
 
-For the purpose of demonstrating in this chapter, we will use Django as 
-Python web framework.  Django is a popular Python web framework which 
+For the purpose of demonstrating in this chapter, we will use Django as
+Python web framework.  Django is a popular Python web framework which
 already comes with a lot of boilerplate code. It is mature and has a very
 large community.  It has inbuilt support for Object Relational Mapping
 which is based on Database Code-First approach. Please refer
 [@www-djangoproject] for more Django information.
 Use `pip` to install Django
 
-```bash 
+```bash
 $ pip install django==2.0.2 django-filter==1.1.0
 ```
 
@@ -76,7 +76,7 @@ For MacOS, you can even use `homebrew` to install it
 brew cask install graphiql
 ```
 
-Commercial GraphQL browsers are available from 
+Commercial GraphQL browsers are available from
 
 * [Insomnia](https://insomnia.rest/graphql/)
 * [Altair](https://altair.sirmuel.design/)
@@ -107,7 +107,7 @@ Here is how a simple GraphQL query would look like
 ```graphql
 {
     author {
-        name 
+        name
         publication_count
         coauthors {
             name
@@ -258,8 +258,8 @@ specific to either `VirtualMachine` or `Container`.
 
 ## GraphQL Query
 
-An application asks for data from server in form of a GraphQL *query*. 
-A GraphQL query can have different fields and arguments and in this 
+An application asks for data from server in form of a GraphQL *query*.
+A GraphQL query can have different fields and arguments and in this
 section we describe how to use them.
 
 ### Fields
@@ -482,7 +482,7 @@ and it can be used in the query like this
 }
 ```
 
-which will result in the response 
+which will result in the response
 
 ```json
 {
@@ -514,8 +514,8 @@ a value of `true` to it.
 }
 ```
 
-This variable is passed as an argument `showOwnerInfo` to the query. 
-This argument is in turn passed to `@include` directive to determine 
+This variable is passed as an argument `showOwnerInfo` to the query.
+This argument is in turn passed to `@include` directive to determine
 whether to include the `ownerInfo` sub-query.
 
 ```graphql
@@ -530,7 +530,7 @@ whether to include the `ownerInfo` sub-query.
 }
 ```
 
-Since we have defined `showOwnerInfo` as `true`, the response 
+Since we have defined `showOwnerInfo` as `true`, the response
 includes `ownerInfo` data.
 
 ```json
@@ -619,8 +619,8 @@ In an application we need to validate the user input. If it is invalid
 we can use the `GraphQLError` class or Python exceptions to raise
 validation errors.
 
-Let us take an example of mutation query. We want to validate whether 
-repository name is empty or not. We can use `GraphQLError` to raise 
+Let us take an example of mutation query. We want to validate whether
+repository name is empty or not. We can use `GraphQLError` to raise
 validation error from our mutation function like this
 
 ```python
@@ -636,8 +636,8 @@ def mutate(self, info, url, name, full_name, description):
 
 ## GraphQL in Python
 
-We will cover a basic server implementation with schema and queries 
-to fetch and mutate data. 
+We will cover a basic server implementation with schema and queries
+to fetch and mutate data.
 
 To develop a GraphQL server in Python we will use `Django` as Python
 web framework and the `Graphene` library which alllows us to develop
@@ -679,7 +679,7 @@ you to execute your queries in it.
 
 ## Developing your own GraphQL Server
 
-If you want to create GraphQL server while using django as the web 
+If you want to create GraphQL server while using django as the web
 server backend yourself, you can start with following steps
 
 ```bash
@@ -721,14 +721,14 @@ GRAPHENE = {
 
 ### GraphQL server implementation
 
-Clients can request for data to GraphQL server via GraphQL queries. 
+Clients can request for data to GraphQL server via GraphQL queries.
 They can also use mutations to insert data into GraphQL server's database.
-Django follows the principle of separating different modules in a project 
-into apps. For this example, we will have two apps, one for Users and 
-one for Repositories. For the demo purpose, we have decided not use 
+Django follows the principle of separating different modules in a project
+into apps. For this example, we will have two apps, one for Users and
+one for Repositories. For the demo purpose, we have decided not use
 backend such as MongoDB but instead we will use SQLite.
 
-Django provides `startapp` utility to create blank app with some 
+Django provides `startapp` utility to create blank app with some
 biolerplate code.
 
 Go to the root dir of project and execute the following command which
@@ -842,7 +842,7 @@ are able to isolate schema to their apps.
 
 ```python
 import graphene
-  
+
 import Repositories.schema
 
 
@@ -934,7 +934,7 @@ Similar to a query, you can add a mutation to create your own data. To
 achieve this, add a
 `CreateRepository` class for new repository object which will inherit
 from graphene's Mutation class. This class will accept a new
-repository as 
+repository as
 an argument. Please see the following code snippet which is
 added to `repositories/models.py`.
 
@@ -990,7 +990,7 @@ mutation {
 }
 ```
 
-This will insert a new repository *repository-test* and also 
+This will insert a new repository *repository-test* and also
 immediately return its inserted data fields (`url`, `name`, `fullName`,
 `description`).
 
@@ -1061,8 +1061,8 @@ class Mutation(users.schema.Mutation, repositories.schema.Mutation, graphene.Obj
     token_auth = graphql_jwt.ObtainJSONWebToken.Field()
 ```
 
-Run the server using `runserver` command and fire the token mutation 
-providing username and password. You can either run this mutation on 
+Run the server using `runserver` command and fire the token mutation
+providing username and password. You can either run this mutation on
 *GraphiQL* or using `curl` command.
 
 For *GraphiQL* run this on query panel.
@@ -1100,7 +1100,7 @@ This will create a token for us to use in our subsequent calls.
 The JWT library comes with a built-in directive called *login_required*.
 You can add this to any of your Query resolvers to prevent
 unauthenticated access. We have annotated it to the `resolve_repositories` which
-means it will throw authentication error to query which does not have 
+means it will throw authentication error to query which does not have
 JWT token passed. Whenever a valid JWT token is present in the query, it is
 considered as authenticated or logged in request, and data will be served
 only to these queries.
@@ -1162,7 +1162,7 @@ curl -X POST \
 http://localhost:8000/graphql/  | python -m json.tool
 ```
 
-The result obtained from running this command is: 
+The result obtained from running this command is:
 
 ```json
 {"data":{"repositories":[
@@ -1179,7 +1179,7 @@ The result obtained from running this command is:
 #### Expiration of JWT tokens
 
 JWT tokens have a time-to-life and expire after a while. This is
-controlled by the 
+controlled by the
 GraphQL server and is usually communicated to the client in
 transparent documented fashion.
 
@@ -1194,7 +1194,7 @@ the GraphQL authentication page at [@medium-graphql].
 ### GitHub API v4
 
 GraphQL has made already an impact in the cloud services community. In
-addition to Facebook, Twitter and Pinterest, *Github* is now also providing 
+addition to Facebook, Twitter and Pinterest, *Github* is now also providing
 a GraphQL interface, making it an ideal example for us.
 
 GitHub has implemented as part of its API v4 also GraphQL which allows you to query
@@ -1202,16 +1202,16 @@ or mutate data of repositories that you can access via
 `github.com`. To demonstrate its use, we will use *GraphiQL*.
 
 To access the information, we need an OAuth token to access GitHub
-API. You can generate an OAuth token by following the steps listed at 
+API. You can generate an OAuth token by following the steps listed at
 
 * <https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/>
 
-Next we demonstrate the use of Github within a GraphQL browser called 
+Next we demonstrate the use of Github within a GraphQL browser called
 Open *GraphiQL*. First you need to click edit headers at upper-right
 corner and add a new header with key *Authorization* and value *Bearer
 your_token*.
 
-Next you enter the URL 
+Next you enter the URL
 
 * <https://api.github.com/graphql>
 
@@ -1228,7 +1228,7 @@ query {
 }
 ```
 
-The query gives the following response 
+The query gives the following response
 
 ```json
 {
@@ -1256,7 +1256,7 @@ query($number_of_repositories:Int!) {
 }
 ```
 
-To limit the responses we can define a 
+To limit the responses we can define a
 use the variable `number_of_repositories`
 
 ```json
@@ -1303,7 +1303,7 @@ query
 }
 ```
 
-The query gives the following response 
+The query gives the following response
 
 ```json
 {
@@ -1394,9 +1394,9 @@ type Car {
     make: String
     description: String @deprecated(reason: "Field is deprecated!")
 }
-``` 
+```
 
-  
+
 ## Disadvantages of Using GraphQL
 
 GraphQL query can get very complex. A client may not necessarily know
@@ -1457,13 +1457,13 @@ E.GraphQL.3: OpenStack VMS
 
 > Develop a GraphQL server that returns the information of running
 > virtual machines on OpenStack
-> 
+>
 
 E.GraphQL.4: OpenStack Azure
 
 > Develop a GraphQL server that returns the information of running
 > virtual machines on OpenStack
-> 
+>
 
 E.GraphQL.5: OpenStack Aws
 

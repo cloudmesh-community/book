@@ -1,9 +1,9 @@
-# Docker Flask REST Service 
+# Docker Flask REST Service
 
 We discuss how to use Docker to deploy a REST service designed using
 Python Flask.
 
-# Creating the Image 
+# Creating the Image
 
 ```console
 $ mkdir -p ~/cloudmesh/containers/docker-flask
@@ -46,7 +46,7 @@ includes the following content:
 FROM tiangolo/uwsgi-nginx-flask:flask
 COPY ./app /app
 ```
-    
+
 The Dockerfile contains the `FROM` command which downloads a parent
 image in which we install the rest of our services. The image is
 hosted on Dockerhub
@@ -95,7 +95,7 @@ if __name__ == "__main__":
     app.run(host="127.0.0.1", debug=True, port=80)
 ```
 
-To build the container, please use the commands 
+To build the container, please use the commands
 
 ```console
 $ cd ~/cloudmesh/containers/docker-flask
@@ -120,7 +120,7 @@ Successfully tagged sample-flask-rest-app:latest
 Note: Changing any content inside the app folder must be
       updated in the container by rebuilding the image.
 ```
-      
+
 
 ## Running the Docker Image
 
@@ -154,12 +154,12 @@ argument specifying an absolute path to a configuration file for
 improved security.
 
 'Supervisord is running as root and it is searching '
-2018-02-19 18:07:46,198 CRIT Supervisor running as root 
+2018-02-19 18:07:46,198 CRIT Supervisor running as root
            (no user in config file)
 2018-02-19 18:07:46,198 WARN Included extra file
            "/etc/supervisor/conf.d/supervisord.conf" during parsing
 2018-02-19 18:07:46,204 INFO RPC interface 'supervisor' initialized
-2018-02-19 18:07:46,204 CRIT Server 'unix_http_server' 
+2018-02-19 18:07:46,204 CRIT Server 'unix_http_server'
            running without any
            HTTP authentication checking
 2018-02-19 18:07:46,204 INFO supervisord started with pid 7
@@ -169,7 +169,7 @@ improved security.
 [uWSGI] getting INI configuration from /etc/uwsgi/uwsgi.ini
 *** Starting uWSGI 2.0.15 (64bit) on [Mon Feb 19 18:07:47 2018] ***
 compiled with version: 4.9.2 on 04 February 2018 16:11:35
-os: Linux-4.4.0-112-generic #135-Ubuntu SMP 
+os: Linux-4.4.0-112-generic #135-Ubuntu SMP
     Fri Jan 19 11:48:36 UTC 2018
 nodename: 7f9706084219
 machine: x86_64
@@ -184,25 +184,25 @@ lock engine: pthread robust mutexes
 thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
 uWSGI running as root, you can use --uid/--gid/--chroot options
-*** WARNING: you are running uWSGI as root !!! 
-    (use the --uid flag) *** 
+*** WARNING: you are running uWSGI as root !!!
+    (use the --uid flag) ***
 Python version: 2.7.14 (default, Dec 12 2017, 16:55:09)  [GCC 4.9.2]
-*** Python threads support is disabled. You can enable it 
+*** Python threads support is disabled. You can enable it
     with --enable-threads ***
 Python main interpreter initialized at 0x1eed1b0
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 1237056 bytes (1208 KB) for 16 cores
 *** Operational MODE: preforking ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter
      0x1eed1b0 pid: 11 (default app)
 *** uWSGI is running in multiple interpreter mode ***
 spawned uWSGI master process (pid: 11)
 spawned uWSGI worker 1 (pid: 14, cores: 1)
 spawned uWSGI worker 2 (pid: 15, cores: 1)
-2018-02-19 18:07:48,357 INFO success: nginx entered RUNNING 
+2018-02-19 18:07:48,357 INFO success: nginx entered RUNNING
   state, process has stayed up for > than 1 seconds (startsecs)
-2018-02-19 18:07:48,358 INFO success: uwsgi entered RUNNING 
+2018-02-19 18:07:48,358 INFO success: uwsgi entered RUNNING
   state, process has stayed up for > than 1 seconds (startsecs)
 ```
 
@@ -212,13 +212,13 @@ Now you can go in your web browser to the URL
 
  <http://127.0.0.1:80>
 
-To see the status of the container you can sue the command 
+To see the status of the container you can sue the command
 
 ```console
 $ docker ps -a
 ```
 
-Note the CONTAINER ID. To sopt the container with a particular ID, use 
+Note the CONTAINER ID. To sopt the container with a particular ID, use
 
 ```
 $ docker stop dc8cccf22216
@@ -226,7 +226,7 @@ $ docker stop dc8cccf22216
 
 To delete the docker container image, you must first sop all instances
 using it and the remove the image. YOu can see the images with the
-command 
+command
 
 
 ```console

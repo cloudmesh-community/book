@@ -33,7 +33,7 @@ Then you can login to the kubernetes head node by running:
 $ ssh $FS_USER@$ECHOK8S
 ```
 
-**NOTE: If you have access to victor but not the kubernetes system, your 
+**NOTE: If you have access to victor but not the kubernetes system, your
 project may not have been authorized to access the kubernetes cluster.
 Send a ticket to FutureSystems ticket system to request this.**
 
@@ -51,7 +51,7 @@ if the kubectl command works for you. Naturally it will also list the pods.
 
 ## Example Use
 
-The following command runs an image called Nginx with two replicas, Nginx is 
+The following command runs an image called Nginx with two replicas, Nginx is
 a popular web sever which is well known as a high performance load balancer.
 
 ```bash
@@ -59,9 +59,9 @@ $ kubectl run nginx --replicas=2 --image=nginx --port=80
 ```
 
 As a result of this one deployment was created, and two PODs are
-created and started. If you encounter and error stating that the deployment 
-already exists when executing the previous command that is because the 
-command has already been executed. To see the deployment, please use the 
+created and started. If you encounter and error stating that the deployment
+already exists when executing the previous command that is because the
+command has already been executed. To see the deployment, please use the
 command, this command should work even if you noticed the error mentioned.
 
 ```bash
@@ -102,7 +102,7 @@ $ kubectl get pods -o wide
 ```
 
 Please note the IP address field. Make sure you are using the IP address that
-is listed when you execute the command since the IP address may have changed. 
+is listed when you execute the command since the IP address may have changed.
 Now if we try to access the nginx homepage with wget (or curl)
 
 ```bash
@@ -117,9 +117,9 @@ we see the following output:
     HTTP request sent, awaiting response... 200 OK
     Length: 612 [text/html]
     Saving to: 'index.html'
-    
+
     index.html    100%[=========>]     612  --.-KB/s    in 0s
-    
+
     2018-02-20 14:05:59 (38.9 MB/s) - 'index.html' saved [612/612]
 ```
 
@@ -129,7 +129,7 @@ from within the cluster.
 Next we need to start thinking about how we
 access this web server from outside the cluster. We can explicitly
 exposing the service with the following command. You can change the name that
-is set using `--name` to what you want. Given that is adheres to the 
+is set using `--name` to what you want. Given that is adheres to the
 naming standards. If the name you enter is already in the system your command
  will return an error saying the service already exists.
 

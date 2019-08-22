@@ -1,6 +1,6 @@
 # Easy Plug
 
-Copied from: 
+Copied from:
 
 * http://wiki.keyestudio.com/index.php/Ks0099_keyestudio_EASY_plug_Control_Board
 
@@ -77,7 +77,7 @@ void loop() {
   if(command=='a') {
     int i;
     for (i = pin_from; i <= pin_to; i++){
-      Light(i);    
+      Light(i);
       Serial.print("Led ");
       Serial.println(i);
       delay(100);
@@ -120,32 +120,32 @@ EASY plug Bluetooth Module| 1
 EASY plug 1602 I2C Module| 1
 EASY plug I2C 8x8 LED Matrix| 1
 
- 
- 
-## Command Language 
+
+
+## Command Language
 
 on PORT
 
-*  switches PORT on 
-  
+*  switches PORT on
+
 off PORT
 
 *  switches port off
-  
+
 on all
 
 *   switches all ports on
-   
+
 off all
 
 *   switches all ports off
-   
+
 dance
 
 *   goes serially through ports and switches them on and off
 
 
-``` 
+```
 String command;
 
 
@@ -178,7 +178,7 @@ void Light(int pin, int action){
 }
 
 void wait_for_input() {
-  while (Serial.available()==0) { } 
+  while (Serial.available()==0) { }
 }
 
 void setup() {
@@ -191,32 +191,32 @@ void setup() {
 
 
 void loop() {
- 
+
   Serial.print("command:");
   wait_for_input();
-  command=Serial.readString();  
+  command=Serial.readString();
   Serial.println (command);
 
-   if (command=="dance") {     
+   if (command=="dance") {
       for (int i = pin_from; i <= pin_to; i++) {
         Light(i,1);
         delay(100);
-        Light(i,0);    
+        Light(i,0);
         Serial.print("Led ");
         Serial.println(i);
         delay(100);
       }
     } else {
-      
+
       int action;
       String action_name = getValue(command, ' ', 0);
       String port_name = getValue(command, ' ', 1);
 
       action = action_name == "on";
-    
+
       if (port_name == "all") {
         for (int i = pin_from; i <= pin_to; i++){
-          Light(i,action);   
+          Light(i,action);
           Serial.print("Led ");
           Serial.println(i);
         }

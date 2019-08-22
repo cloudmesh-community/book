@@ -11,14 +11,14 @@ content.
 We have made good experiences with the following readers:
 
 
-* **macOSX**: [Books](https://www.apple.com/apple-books), which is a build 
+* **macOSX**: [Books](https://www.apple.com/apple-books), which is a build
   in ebook reader
 * **Windows 10**:
   [Microsoft edge](https://www.microsoft.com/en-us/windows/microsoft-edge),
-  but it must be the newest version, as older versions have bugs. 
+  but it must be the newest version, as older versions have bugs.
   Alternatively use [calibre](https://calibre-ebook.com/)
 * **Linux**: [calibre](https://calibre-ebook.com/)
 
-If your have an iPad or Tablet with enough memory, you may also be able 
+If your have an iPad or Tablet with enough memory, you may also be able
 to use them.
 

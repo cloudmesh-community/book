@@ -2,7 +2,7 @@
 
 
 The following people have contributed to some chapters and documents
-hosted at 
+hosted at
 
 * <https://github.com/cloudmesh-community/book>
 
@@ -29,7 +29,7 @@ lastname, firstname
   Rashmi, Ray;
   Sobolik, Bertolt;
   Sriramullu, Anand;
-  Whitson, Tim; 
+  Whitson, Tim;
   Zayin, Eliyah
 
 

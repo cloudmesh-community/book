@@ -1326,7 +1326,7 @@ Studies](https://aws.amazon.com/solutions/case-studies/?icmpid=docs_menu)
 Kindle](https://aws.amazon.com/documentation/kindle/?icmpid=docs_menu)
 * [AWS Documentation Archive](https://aws.amazon.com/documentation/)
 
- 
+
 [Compute](/products/compute/?nc2=h_l3_db)
 -   [Amazon EC2](https://aws.amazon.com/ec2/?nc2=h_m1)
 -   [Amazon EC2 Auto

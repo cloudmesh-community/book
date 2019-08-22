@@ -16,12 +16,12 @@ The Apache Software Foundation [@www-apachespark] describes Spark as:
 
 
 It's main goal is to help alleviate one of the most critical problems that face most data scientists in the era of 'big
-data', which is that using lots of data requires one to be able to manage the data lifecycle at scale. With gigabytes, 
-or even terabytes, of new arriving on a daily basis, the capabilities of a single computer are quickly outstripped or 
+data', which is that using lots of data requires one to be able to manage the data lifecycle at scale. With gigabytes,
+or even terabytes, of new arriving on a daily basis, the capabilities of a single computer are quickly outstripped or
 would taken an incredibly long time to process.
 
 To alleviate this issue, Spark was developed first as a research project and then open-sourced into a standalone project
-in 2010 and later adopted by the Apache Software Foundation in 2013. Since then, Spark has become one of the leading 
+in 2010 and later adopted by the Apache Software Foundation in 2013. Since then, Spark has become one of the leading
 technologies for processing data at scale utilizing commodity hardware. At its core, Spark aims to accomplish three
 things [@www-apachesparkhistory]:
 
@@ -32,7 +32,7 @@ in a distributed manner.
 
 By not tying itself to any one piece of hardware or requiring 100% uptime to process data successfully, Spark provides
 the user with the flexibility of using as much or as little computing resources that's neccesary to accomplish a task,
-allows for off-the-shelf components to be used in developing the cluster to reduce costs, and provides users with a 
+allows for off-the-shelf components to be used in developing the cluster to reduce costs, and provides users with a
 familiar dataset based approach to interacting with data, but at a much larger scale.
 
 ## The Building Pieces of a Spark Cluster
@@ -84,15 +84,15 @@ The first method utilizes a mathematical construct: a directed acyclic graph (DA
 directed - step A can lead to step B but step B cannot lead back to step A - and acyclic - the steps in the graph do not
 contain any loops. When a task is running, Spark keeps track of this DAG and can reconstruct data from a failed node by
 simply repeating the steps on the DAG that lead up to the failed point and then continuing on from there. The second
-method leads from the first: in order to avoid long recalculation chains, RDDs are immutable and cannot be changed. 
+method leads from the first: in order to avoid long recalculation chains, RDDs are immutable and cannot be changed.
 Rather, new copies of the RDD are created when actions are performed.
 
 Finally, with the above two methods in mind, it's important to note one tradeoff Spark made when it came to performance
-and how it relates to the immutability of RDDs. One of the common complaints about Hadoop and MapReduce was that it 
+and how it relates to the immutability of RDDs. One of the common complaints about Hadoop and MapReduce was that it
 wrote the entire dataset out to disk after each step in the graph, which made things slow but allowed for large datasets
 to be active as they mostly existed on disk where space is measured in terabytes. Spark, instead, keeps RDDs resident in
 memory, which makes is much quicker. The tradeoff, then, is increased speed at the cost of more expensive storage (RAM
-instead of hard disk) [www-sparkrdd]. 
+instead of hard disk) [www-sparkrdd].
 
 ### Distributed
 
@@ -104,19 +104,19 @@ observations/records to be shuffled across the network. One of the key optimizat
 cause unnecessary shuffles or providing hints to Spark to keep observations/records logically organized.
 
 To take a real life example, imagine that a Spark cluster contains customer purchase data that has been distributed
-amongst all of the workers such that a customer's data is equally split across the entire cluster. If the cluster is 
-asked how much the customer has spent, that question can be answered without shuffling any data: each worker will sum 
-up the amount it has for that customer and report it to the cluster manager. The manager will them sum the sums from the 
+amongst all of the workers such that a customer's data is equally split across the entire cluster. If the cluster is
+asked how much the customer has spent, that question can be answered without shuffling any data: each worker will sum
+up the amount it has for that customer and report it to the cluster manager. The manager will them sum the sums from the
 workers to arrive at the total. However, if we want to know the distinct list of items the customer has ordered, then
-shuffling the data is  required as the list may not fit inside of the cluster manager's memory - so the workers have to 
-tell each of the other workers the distinct list it has and then collapse the list down before returning it to the 
-cluster manager as a new RDD. It's important to keep track of commands that may cause a shuffle. A more exhaustive 
+shuffling the data is  required as the list may not fit inside of the cluster manager's memory - so the workers have to
+tell each of the other workers the distinct list it has and then collapse the list down before returning it to the
+cluster manager as a new RDD. It's important to keep track of commands that may cause a shuffle. A more exhaustive
 discussion can be found in the documentation [@www-apacheshuffle].
 
 ## Installing Spark
 
 The underlying core technology behind Spark is Java. Any system that can run Java can run Spark if the user follows the
-correct steps. Linux and Mac OS X have fairly direct install paths while Windows is slightly more involved. No matter 
+correct steps. Linux and Mac OS X have fairly direct install paths while Windows is slightly more involved. No matter
 the platform, however, Spark requires three pieces: Java, Scala, and Spark itself. Many guides are available online and
 a quick synopsis of each is presented below.
 
@@ -138,9 +138,9 @@ $ sudo apt-get install scala
 ```
 
 Scala's install can be verified simply by entering a Scala prompt via `scala`. To quit, use `:q`. Last, Spark can be
-installed by downloading the latest version from https://spark.apache.org/downloads.html. It's easiest to use a 
-pre-built version with Hadoop included. Once the TGZ compressed file is downloaded, extract it with `tar xvf 
-spark-VERSION-bin-hadoopVERSION.tgz`. After the folder is extracted, you can `cd` into it, navigate into the bin 
+installed by downloading the latest version from https://spark.apache.org/downloads.html. It's easiest to use a
+pre-built version with Hadoop included. Once the TGZ compressed file is downloaded, extract it with `tar xvf
+spark-VERSION-bin-hadoopVERSION.tgz`. After the folder is extracted, you can `cd` into it, navigate into the bin
 directory and run Spark via `./spark-shell`. If all has gone well, a Spark prompt should appear.
 
 ### Mac OS X
@@ -153,7 +153,7 @@ $ /usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/in
 ```
 
 You may be prompted for your administrator password.  Once homebrew has been installed, the rest of the installation
-follows along similarly to the Ubuntu install in the previous section with the only addition being the installation of 
+follows along similarly to the Ubuntu install in the previous section with the only addition being the installation of
 xcode-select:
 
 ```bash
@@ -168,11 +168,11 @@ shell via `spark-shell`.
 
 ### Windows
 
-The installation for Windows operating systems is a bit more involved in comparison to Ubuntu and OS X. While the 
+The installation for Windows operating systems is a bit more involved in comparison to Ubuntu and OS X. While the
 software is almost the same (Scala isn't required), there are additional path variables that need to be created in order
-for all of the pieces to be able to find each other. A helpful article by Michael Galarnyk [@www-sparkwindows] best 
+for all of the pieces to be able to find each other. A helpful article by Michael Galarnyk [@www-sparkwindows] best
 describes how to get Spark up-and-running on Windows. As with the two prior systems, installation begins with installing
-[Java](https://www.java.com/en/) by downloading it and running the Windows installer. Next, download the latest 
+[Java](https://www.java.com/en/) by downloading it and running the Windows installer. Next, download the latest
 pre-built version of [Apache Spark](http://spark.apache.org/downloads.html) and extract the TGZ and TAR files to some
 place convenient (e.g. C:\Spark\). Finally, download WinUtils from
 [GitHub](https://github.com/steveloughran/winutils/blob/master/hadoop-2.6.0/bin/winutils.exe?raw=true). This utility
@@ -180,7 +180,7 @@ program offers pre-built Hadoop binaries that are required for Spark to launch. 
 folder's \bin\ directory.
 
 Finally, once all of the pieces are installed, environment variables must be set up so that each of the pieces can
-find each other and Spark can be launched. To add these variables, open the Windows menu and type 'Environment' and 
+find each other and Spark can be launched. To add these variables, open the Windows menu and type 'Environment' and
 select 'Edit system environment variables'. In the window that opens, click on 'New...' and add the following variables:
 
 * SPARK_HOME : C:\path\to\spark\spark-2.1.0-bin-hadoop2.7
@@ -225,13 +225,13 @@ This will set up a convenience object representing the Spark cluster:
 <class 'pyspark.sql.session.SparkSession'>
 ```
 
-From there, the user can begin using Spark commands and issuing requests to the 'cluster' and extracting data. One may 
+From there, the user can begin using Spark commands and issuing requests to the 'cluster' and extracting data. One may
 ask themselves why bother going through with setting up Spark just to use it locally. The primary reason is two fold:
 it provides a simple environment for development and it still provides advantages over native Python code. The second
-benefit is realized with how Spark operates: it creates one worker thread per core. By utilizing Spark, data can be 
-processed using multi-core systems much faster than Python's native single threaded performance. Likewise, Spark 
+benefit is realized with how Spark operates: it creates one worker thread per core. By utilizing Spark, data can be
+processed using multi-core systems much faster than Python's native single threaded performance. Likewise, Spark
 speedups, such as using multiple threads to read different parts of a file being imported can be extremely beneficial.
-For example, whereas Python would take around 60-120 seconds to read in and process a 4GB file, Spark can do it in 
+For example, whereas Python would take around 60-120 seconds to read in and process a 4GB file, Spark can do it in
 30-60 seconds, depending on setup (disk I/O eventually saturates).
 
 Launching a Spark cluster is fairly straightforward once Spark has been successfully installed on each of the cluster's
@@ -253,9 +253,9 @@ java classes where applicable
 ...
 ```
 
-In the above section, our master node launched with a public IP address of 192.168.56.1 and is listening for worker 
+In the above section, our master node launched with a public IP address of 192.168.56.1 and is listening for worker
 nodes on port 7077. The note about the 'MasterUI' starting on port 8080 provides a pointer to the web-based Spark UI
-that lists which applications are running, which nodes are connected, and what errors (if any) have occurred. It 
+that lists which applications are running, which nodes are connected, and what errors (if any) have occurred. It
 provides a convenient way to check on the health of the cluster without having to launch a whole new application. In the
 above scenario, visiting http:\\192.168.56.1:8080 would bring up the Master UI for the cluster.
 
@@ -279,7 +279,7 @@ The master node should also show that a new worker node has connected and regist
 ```
 
 With the cluster up-and-running, the user can then have their computer (the driver) connect to it an issue commands to
-the cluster to read files, manipulate data, and store results. 
+the cluster to read files, manipulate data, and store results.
 
 ```python
 conf = SparkConf().setAppName("My First Spark App").setMaster("spark://192.168.56.1:7077").set("spark.driver.host",
@@ -287,9 +287,9 @@ conf = SparkConf().setAppName("My First Spark App").setMaster("spark://192.168.5
 sc   = SparkContext(conf=conf)
 ```
 
-With the above bit of Python, we're doing 3 things. First, we are creating our application's name, which is what will be 
-presented in the Master UI if a user looks to see what the cluster is currently processing (helpful for debugging if 
-things get stuck). Second, we're telling our Spark Context to use a remote Master node. By default, Spark will use the 
+With the above bit of Python, we're doing 3 things. First, we are creating our application's name, which is what will be
+presented in the Master UI if a user looks to see what the cluster is currently processing (helpful for debugging if
+things get stuck). Second, we're telling our Spark Context to use a remote Master node. By default, Spark will use the
 local computer as both Master and Worker node but here, instead, we're telling it to use the cluster that was set up in
 the previous steps. Third, we're telling Spark what IP address hosts the driver. The driver is what is issuing commands
 to the cluster and the cluster must know where to find the driver in order to return results from the master and worker
@@ -300,7 +300,7 @@ use.
 
 ### Basic File I/O
 
-Spark supports many different file formats including text, CSV, JSON, and parquet files. The only significant hurdle 
+Spark supports many different file formats including text, CSV, JSON, and parquet files. The only significant hurdle
 when reading in data is that all elements of the cluster must have access to the resource - either placed on a network
 storage device that all nodes can access via the same URI or on each node at some common path (e.g. /spark/data/). To
 read a file into an RDD, one can use:
@@ -323,8 +323,8 @@ my_json_data = sc.textFile('/path/to/the/data.json').map(lambda x: json.loads(x)
 
 The preceding code introduces three new concepts that are important to cover. The first is reading in data from a text
 file via the `textFile()` method. This function will read in a text file and split it along newline characters. If doing
-a textual analysis, it would be necessary to split the lines into words, but you do not need to bother splitting the 
-text into lines. Further, Spark will split the file automatically amongst worker threads so that each thread reads a 
+a textual analysis, it would be necessary to split the lines into words, but you do not need to bother splitting the
+text into lines. Further, Spark will split the file automatically amongst worker threads so that each thread reads a
 part of the file, greatly reducing the time it takes to load large quantities data - assuming the disk I/O supports the
 speeds. The second concept is the introduction of Spark's SQLContext. As the name suggests, Spark supports querying
 datasets via SQL commands. This provides a simple way to access data in Spark that is, hopefully, familiar to end users.
@@ -337,11 +337,11 @@ results = sql.sql("SELECT SUM(some_field) FROM data")
 results.show()
 ```
 
-The final concept introduced is the idea of mapping functions. The `map()` function takes another function as an 
+The final concept introduced is the idea of mapping functions. The `map()` function takes another function as an
 argument - here, it's a lambda expression but a function defined using `def` could also be passed. This functionality is
 incredibly powerful as Python functions will be serialized, distributed to the cluster, and then executed there -
-meaning that the full power of the cluster can be leveraged without having to worry about parallelizing the code by 
-hand. User Defined Functions are covered in a later section.  
+meaning that the full power of the cluster can be leveraged without having to worry about parallelizing the code by
+hand. User Defined Functions are covered in a later section.
 
 ### Resilient Distributed Dataset
 
@@ -358,13 +358,13 @@ min_len_words = words.filter(lambda x: len(x[0]) > 3)
 counts = min_len_words.reduceByKey(lambda a, b: a + b).sortBy(lambda word: word[1], False)
 counts.show()
 
-```  
+```
 
 There's quite a bit to unpack here, so the program will be examined line-by-line:
 
 The line `words = lines.flatMap(lambda line: line.split(" ")).map(lambda word: (word, 1))` takes the lines that were
-read in during the previous line and calls `flatMap()`. The `flatMap()` function takes data that is wide and makes it 
-long. For example, the phrase "I like Spark!" would be split into one entry with three elements (I, like, Spark!). The 
+read in during the previous line and calls `flatMap()`. The `flatMap()` function takes data that is wide and makes it
+long. For example, the phrase "I like Spark!" would be split into one entry with three elements (I, like, Spark!). The
 `flatMap()` call, instead, produces three entries with 1 element. The call to `map()` then changes the three entries
 to have two elements: the word and the number 1 occupying index 0 and 1, respectively. The third line calls `filter()`.
 As the name suggests, this function removes entries that do not meet a given criteria (our lambda function). Finally,
@@ -375,22 +375,22 @@ program could easily be adjusted to find the maximum line length by removing the
 simply adjusting the lambda expression. Then the `sortBy()` function orders the data in ascending sequence and creates
 a final RDD named counts.
 
-Two important notes: the first is that the first four lines of code are not run until the `counts.show()` line is 
+Two important notes: the first is that the first four lines of code are not run until the `counts.show()` line is
 executed. This is due to Spark's lazy evaluation nature - it defers work until it has to return data to the user. This
 allows it to optimize calls and avoid unnecessary work. For example, if our first step after reading the data is to
 remove all lines containing 'DELETE', that step will be combined into reading the text file - avoiding the overhead
-of creating the entry just to discard it. Finally, it's important to note that all of the lambda expressions can be 
+of creating the entry just to discard it. Finally, it's important to note that all of the lambda expressions can be
 replaced with user functions, covered later. It is, therefore, possible to impalement much more complex logic that would
-otherwise look rather messy if crammed into a single lambda. 
+otherwise look rather messy if crammed into a single lambda.
 
 ### RDDs as a Dataframe
 
 One of the main shortcomings of Spark was how unwieldy RDDs could be as the user is required to keep the data mapped
 out in their head rather than accessing things via column names or more direct field names. In particular, as the Data
 Science field developed and the Pandas library became more popular, the shortcomings of RDDs in comparison to dataframes
-became more apparent. To fix this issue, Apache eliminated a dataframe class that emulates many of the features 
-available to other data analysis libraries. This change made Spark datasets much easier to handle and less prone to 
-error as the user was able to focus more on what was contained in the data rather than keeping it organized in their 
+became more apparent. To fix this issue, Apache eliminated a dataframe class that emulates many of the features
+available to other data analysis libraries. This change made Spark datasets much easier to handle and less prone to
+error as the user was able to focus more on what was contained in the data rather than keeping it organized in their
 head.
 
 Extending the previous section, the main advantage of dataframes over RDDs is that they use named columns. Rather than
@@ -423,12 +423,12 @@ my_csv_data.describe("field")
 >>> +-------+------------------+
 ```
 
-While it is beyond the scope of this book to describe every function and feature, one can go into Spark understanding 
+While it is beyond the scope of this book to describe every function and feature, one can go into Spark understanding
 that all common data manipulation functions and analyses are implemented as simple functions that should be familiar.
 
 ### User Defined Functions
 
-User Defined Functions, as the name suggests, are functions that users define and are then distributed to the Spark 
+User Defined Functions, as the name suggests, are functions that users define and are then distributed to the Spark
 cluster to be applied against the data. UDFs provide incredible flexibility when it comes to customizing operations and
 allows for unique situations to be handled by simply passing in a function that handles the situation cleanly rather
 than cobbling together several functions to try and emulate the user's need. While some examples may be trivial:
@@ -439,7 +439,7 @@ from pyspark.sql.types import StringType
 
 def upper_case(line):
     return line.upper()
-    
+
 dataset_with_upper = dataset_without_upper.withColumn("uppercase", udf(lambda z: upper_case(z), StringType()))
 ```
 
@@ -454,7 +454,7 @@ from pyspark.sql.types import StringType
 def calculate_grade(scores):
     total_score = scores[0] + scores[1] + scores[2]
     grade = total_score / 300
-    
+
     if grade > 0.60:
         return "Pass"
     else:
@@ -462,7 +462,7 @@ def calculate_grade(scores):
 
 grade_udf = udf(lambda arr: calculate_grade(arr), StringType())
 
-dataset_with_grade = dataset_without_grade.withColumn("grade", grade_udf(array('Test1', 'Test2', 'Test3'), 
+dataset_with_grade = dataset_without_grade.withColumn("grade", grade_udf(array('Test1', 'Test2', 'Test3'),
 IntegerType()))
 ```
 
@@ -476,9 +476,9 @@ efficient manner.
 An important note for this section: Spark's mllib library has been deprecated in favor of the ml library. Older articles
 may make reference to mllib and, if possible, should be written to use the newer and better supported ml library.
 
-If one has used scikit-learn and pandas, then Spark's machine learning library should seem very familiar. The primary 
-difference between passing a Pandas dataframe to scikit-learn for analysis and using Spark's ml library is that the 
-features for each entry must be vectorized first as a new column. Otherwise, things can be handled very similarly to 
+If one has used scikit-learn and pandas, then Spark's machine learning library should seem very familiar. The primary
+difference between passing a Pandas dataframe to scikit-learn for analysis and using Spark's ml library is that the
+features for each entry must be vectorized first as a new column. Otherwise, things can be handled very similarly to
 scikit-learn:
 
 ```python
@@ -517,7 +517,7 @@ https://github.com/cloudmesh/cloudmesh-emr. The command handles the full life cy
 submitting programs to be run, and then shutting down the cluster. This eases the burden of having to acquire equipment,
 get Spark installed and running on all of them, and then managing the servers. The ideal scenario is to have a program
 that has been tested on a local computer using a small subset of the data and a local copy of Spark and then deploy the
-final program against the full dataset on a Spark cluster. The power of Cloudmesh lies in that a lot of the details of 
+final program against the full dataset on a Spark cluster. The power of Cloudmesh lies in that a lot of the details of
 setting up the cluster, monitoring it, and issuing commands are abstracted away into a commandline interface. The main
 analysis lifecycle would normally consist of three phases that can be implemented in four simple commands:
 
@@ -532,7 +532,7 @@ The first command will start a 10 node cluster with 1 master node and 9 worker n
 with only 1 vCore as they will start up the main Spark daemon but then be unable to start any worker threads - leading
 to a useless server. The next command uploads the Spark program to an S3 bucket the user has created. For more advanced
 needs, please see [cloudmesh-storage](https://github.com/cloudmesh/cloudmesh-storage). The third command then submits
-the application to the Spark cluster to be run - it's important to note that, for convenience, Amazon sets up a 's3' 
+the application to the Spark cluster to be run - it's important to note that, for convenience, Amazon sets up a 's3'
 file path and permissions to read and write to buckets on the account. This means the Spark program should, for example,
 read data as `sc.textFile('s3://path/to/file/on/s3/data.txt')` and save data to an s3 path. Finally, the stop command
 will shutdown the cluster.
@@ -543,7 +543,7 @@ by utilizing the copy function, though that usage scenario is somewhat rare.
 
 ### OpenAPI
 
-Finally, cloudmesh-emr can be run as an OpenAPI rest service. The user can launch the service by navigating to the 
+Finally, cloudmesh-emr can be run as an OpenAPI rest service. The user can launch the service by navigating to the
 cloudmesh-emr directory and calling:
 
 ```bash

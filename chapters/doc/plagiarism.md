@@ -152,7 +152,7 @@ Table: Plagiarism [@www-plagiarism-pattern]
 
 
   Table: Three patterns of non-plagiarism [@www-plagiarism-pattern]
-  
+
   Name Type Description
   ------------------------------------------------------- ---------------- -------------------------------------------------------------------------------------------------------------------------
   [Correct Quote](patternCorrectQuote.html)               non-plagiarism   takes another's words verbatim and acknowledges with quotation marks, full in-text citation with locator, and reference
@@ -205,4 +205,4 @@ Plagiarism.3:
   through experience that some student that have not taken the
   certification have issues with this topic. Please note, that the
   test requires you to prepare for it with the material that is
-  provided on the education web page. 
+  provided on the education web page.

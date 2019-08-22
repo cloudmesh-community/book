@@ -34,7 +34,7 @@ The list includes:
 
 
 * Introduction to Python
-* Using Markdown for Academic Papers 
+* Using Markdown for Academic Papers
 * Plagiarism Certificate
 
 ## Help
@@ -57,7 +57,7 @@ are two different ways on how you can take this class.
 * Way 2: *Chronological order.* The lecture notes are ordered
 * chronological. Thus you can follow our lecture alos in chronological
 * order.
-  
+
 Please note that we have set aside a recommended set of weekly Lab
 activities. The activities are pass-fail and will be integrated in your
 grade. You are certainly allowed to work ahead, but please be aware that
@@ -71,23 +71,23 @@ Lab activities will not receive any credit if you are a residential
 student and the activity has not been completed within one week.
 However, residential students  will get two **Delay a Lab for One
 Week** passes that you can apply to any of the Labs and still get credit.
-  
+
 If you are an online student we recommend that you finish the Labs also
 in one week. However, you will get eight **Delay a Lab for One
-Week** passes that you can apply to any of the Labs. 
+Week** passes that you can apply to any of the Labs.
 
 Please note that if you would need to postone a lab for two weeks, you
 need to use two passes. Lab passes expire one month before the last day
 of class. You will have to complete all labs by that time. No credit
 will be given at that time if this deadline is missed for any delayed
-Labs as TAs must focus their attention on project support. 
+Labs as TAs must focus their attention on project support.
 
 Lab passes do not apply to other assignments and due dates.
-   
+
 ## Assignments
 
 Besides the Lab's, we have only two main assignments in this class.
-The Lab's will prepare you towards achieving these assignments. 
+The Lab's will prepare you towards achieving these assignments.
 
 ### Technology Review
 
@@ -98,7 +98,7 @@ The Lab's will prepare you towards achieving these assignments.
 
 As part of cloud engineering you will be exposed to a large set of
 technologies. To sharpen your skills in analyzing and evaluating these
-technologies, you will be asked to prepare a technology review. 
+technologies, you will be asked to prepare a technology review.
 
 This includes a substantial written document that can be added as a
 chapter to the lecture notes. The review must be done on a topic that is
@@ -109,7 +109,7 @@ other related technologies. In addition you will have to develop an
 example showcasing how to use the technology. The minimal length of a
 review is about 800 words.
 
-An example for a Technology review is the section about 
+An example for a Technology review is the section about
 
 * GraphQL
 
@@ -121,7 +121,7 @@ nature. Sample sections contributed by students include:
    * Section Lambda Expressions in *Introduction to Python*
 
 
-> ![Warning](images/warning.png) *It is expected from you that you self identify review 
+> ![Warning](images/warning.png) *It is expected from you that you self identify review
 > yourself, as this shows competence in the area of cloud
 > computing. If however you do not know what to select, you must attend
 > an online hour with us in which we identify a topic with
@@ -135,7 +135,7 @@ nature. Sample sections contributed by students include:
 
 The objective of the project is to define a clear problem statement
 and create a framework to address that problem as it relates to cloud
-computing. 
+computing.
 
 A project is the major activity that you chose as part of your class.
 This includes a project report* or *manual* and working project code.
@@ -148,7 +148,7 @@ detailed discussion is to be held on what has been improved and is different.
 In this class it is especially important to address the reproducibility
 of the deployment. A test and benchmark, possibly including a
 *downloadable* dataset, must be used to verify the correctness of your
-approach. 
+approach.
 
 
 #### License
@@ -158,7 +158,7 @@ Apache 2.0 License. You will be required to add a LICENCE.txt file and
 describe how other software, if used, can be reused in your project. If
 your project uses different licenses, please add a README.md file that
 describes which packages are used and what licenses these packages have.
-    
+
 #### Project Report
 
 A project report is to be delivered and continuously improved throughout
@@ -173,25 +173,25 @@ required:
 
 -    800 words, one student in the project
 -   1200 words, two students in the project
--   1400 words, three students in the project  
+-   1400 words, three students in the project
 
 Projects with more students are expected to do more programming. The
 report is written in markdown and checked into GitHub. A Report could be
 substituted by a manual and benchmarks.
-  
+
 For certain projects, the requirement of a report can be waved or is
 significantly reduced while replacing it with more programming
 activities. This includes
 
 * Any project that enhances cloudmesh
 * Building a large cloud cluster with Raspberry Pi's
-* Any Application project showcasing NIST big data reference architecture 
+* Any Application project showcasing NIST big data reference architecture
   use (there is a hard deadline of the NIST project by Dec 1st).
 
-However you still have to do a manual and usage examples, benchmarks and 
+However you still have to do a manual and usage examples, benchmarks and
 `pytest`s for them.
 
-  
+
 #### Project Code
 
 You are expected to deliver a **documented** and **reproducible** code
@@ -201,7 +201,7 @@ locally** and may not be uploaded to services such as DockerHub. You
 can, however, reuse approved vendor uploaded images such as from ubuntu
 or centos or other linux distributions. All code, scripts, and
 documentation must be uploaded to github.com under the class specific
-GitHub directory. 
+GitHub directory.
 
 
 #### Project Data
@@ -256,34 +256,34 @@ automate most of the steps.
 
 You have plenty of time to execute a wonderful project but you need to
 work consistently on it. Starting one week before the deadline will
-not work. 
+not work.
 
 The bets way to asure reproducibility is to use `pytest`. We will
 discuss how to do that in class.
 
 
-#### List of Deliverables 
+#### List of Deliverables
 
-In general your deliverables will include the following 
+In general your deliverables will include the following
 (We will address and explain them in a Lab):
 
 - Provide benchmarks.
 
 - Take results in a cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
-  created and deployed based on your documentation. 
+  created and deployed based on your documentation.
 
 - Each team member must provide a benchmark on their computer and a
-  cloud IaaS, where the cloud is different from each team member. 
-  
+  cloud IaaS, where the cloud is different from each team member.
+
 - We require you to write one or more pytest's that deploys, run,
   kill, view, clean that deploys your environment, runs application,
-  kills it, views the result and cleans up after wards. 
+  kills it, views the result and cleans up after wards.
 
 - For python use a requirements.txt file and develop a `setup.py` so
-  your code can be installed with `pip install .` 
+  your code can be installed with `pip install .`
 
-- For docker use a Dockerfile 
+- For docker use a Dockerfile
 
 #### Example Outline of a Report
 
@@ -321,13 +321,13 @@ details in one of our labs.
 
 
 
-## Submission 
+## Submission
 
 All submissions are conducted via GitHub if not otherwise instructed.
 Technology reviews are to be added to the `book` GitHub repo with the
-help of pull requests. The TA's will work with you to integrate them. 
- 
-As we are working continuously throughout the semester you must indicate your activities in a 
+help of pull requests. The TA's will work with you to integrate them.
+
+As we are working continuously throughout the semester you must indicate your activities in a
 README.yml file in your GitHub repo. The GitHub Repo we will define for you in the first 2 weeks of the semester.
 
 
@@ -368,15 +368,15 @@ compare your yaml file carefully with the `README.yml` examples. Make sure
 you do the indentation with 2 spaces, do not use the TAB character and
 make sure you use the list and attribute organization with proper dash
 placement. Work with the TAs if you have difficulties. If you copy, only
-copy from the raw content in GitHub. If you work on more 
+copy from the raw content in GitHub. If you work on more
 
 ## Bonus Projects
 
 This class will not have any bonus projects, as all additional
 activities should be put in your project or chapter contribution.
-However, we will recognize extraordinary efforts in these activities. 
+However, we will recognize extraordinary efforts in these activities.
 
-## Participation 
+## Participation
 
 In addition to these artifacts, there will also be a participation
 component in class that will be determined based on your productive

@@ -180,7 +180,7 @@ trees.
 -   ~~<http://healthinformatics.wikispaces.com/file/view/cloud_computing.ppt>~~ (this link does not exist any longer)
 -   <https://www.mckinsey.com/~/media/mckinsey/industries/healthcare%20systems%20and%20services/our%20insights/the%20big%20data%20revolution%20in%20us%20health%20care/the_big_data_revolution_in_healthcare.ashx> [@www-mckinsey-industries-healthcare]
 -   ~~<https://partner.microsoft.com/download/global/40193764>~~ (this link does not exist any longer)
--   <https://ec.europa.eu/eip/ageing/file/353/download_en?token=8gECi1RO> 
+-   <https://ec.europa.eu/eip/ageing/file/353/download_en?token=8gECi1RO>
 -   ~~<http://www.liveathos.com/apparel/app>~~
 -   <http://debategraph.org/Poster.aspx?aID=77> [@debategraph-poster]
 -   ~~<http://www.oerc.ox.ac.uk/downloads/presentations-from-events/microsoftworkshop/gannon>~~(this link does not exist any longer)

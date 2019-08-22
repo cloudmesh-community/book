@@ -36,19 +36,19 @@ Method 1: PyCharm Installation on ubuntu using umake
 Once umake command is run, use the next command to install Pycharm community edition:
 
     umake ide pycharm
-    
+
 If you want to remove PyCharm installed using umake command, use this:
 
     umake -r ide pycharm
-    
+
 Method 2: PyCharm installation on ubuntu using PPA
 
     sudo add-apt-repository ppa:mystic-mirage/pycharm
     sudo apt-get update
     sudo apt-get install pycharm-community
-    
+
 PyCharm also has a Professional (paid) version which can be installed using following command:
 
     sudo apt-get install pycharm
-    
+
 Once installed, go to your VM dashboard and search for PyCharm.

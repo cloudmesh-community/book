@@ -1,15 +1,14 @@
 # Romeo
 
+Apply for an account on futuresyste,s.org and make sure you uploaded
+your public key
 
-Apply for an account on futuresyste,s.org and make sure you uploaded your public key
-
-Than with your `user` name log in as 
+Than with your `user` name log in as
 
 ```
 ssh user@juliet.futuresystems.org
 user@juliet.futuresystems.org: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,hostbased).
 ```
-
 
 There are two separate GPU partitions in slurm, these can be seen in the
 output of the 'sinfo' command:
@@ -20,7 +19,7 @@ romeo         up   infinite      4  gpu:8    mix r-[001-004]
 volta         up   infinite      2  gpu:8    mix r-[005-006]
 ```
 
-* `romeo` partition has K-80 GPUs. 
+* `romeo` partition has K-80 GPUs.
 * `volta` partition has V-100 GPUs
 
 GPUs in these partitions are defined in Slurm as "generic reservable"

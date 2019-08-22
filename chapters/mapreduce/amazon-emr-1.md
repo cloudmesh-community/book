@@ -22,7 +22,7 @@ Components Of EMR:
 - Storage
 - EC2 instance
 - Clusters
-- Security 
+- Security
 - KMS
 
 ## Why EMR?

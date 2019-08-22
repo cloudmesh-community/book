@@ -18,7 +18,7 @@ links, to allow users to examine the effects of a distributed cloud.
 
   ------------------------------------ ----------------------------
   Standard Cloud Units (SCUs)          Homogeneous Hardware Types
-  Number of Nodes per Rack:            
+  Number of Nodes per Rack:
   Local Storage per homogeneous SCU:   128TB (configurable)
   Network Switch:                      OpenFlow Compliant
   TACC/UC Distributed Cloud            100Gbps Internet2 links

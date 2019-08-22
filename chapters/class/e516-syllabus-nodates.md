@@ -51,7 +51,7 @@ disciplines.
 The course has the following objectives:
 
 * Provide a basic introduction to cloud computing
-* Introduce the concept of cloud data centers 
+* Introduce the concept of cloud data centers
 * Get familiar with cloud infrastructure as a Service such as
   OpenStack, Azure, or AWS
 * Get familiar with cloud infrastructure such as Docker and Kubernetes
@@ -150,7 +150,7 @@ The topics are subject to change.
 |   | Week 16 | 15 | Project Selection | Project selection for inclusion in the Proceedings |
 
 
- 
+
 
 [arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
 [gregor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md
@@ -192,9 +192,9 @@ The topics are subject to change.
 [swagger.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger.md
 [swagger-spec.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-spec.md
 [swagger-codegen.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/rest/swagger-codegen.md
-[mqtt.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md 
+[mqtt.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/mqtt.md
 [graphql.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/msg/graphql.md
-[go-cloud.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cloud.md 
+[go-cloud.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cloud.md
 [go-rest.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-rest.md
 [go-intro.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-intro.md
 [go-cmd.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/go-cmd.md
@@ -244,19 +244,19 @@ include a simple deployment and runtime instruction set.
 The main deliverable of the class is a project. The project is
 assessed through the following artifacts:
 
-1. Deployment and install instructions, 
+1. Deployment and install instructions,
 2. Project report (typically 2-3 pages per month, tutorial and
-   chapters can be reused if possible), 
+   chapters can be reused if possible),
 3. Working project code that can be installed and executed in
-   reproducible manner by a third party 
+   reproducible manner by a third party
 4. Code developed by the project team distributed in github.com
-5. Project progress notes checked into github throughout the semester. Each 
+5. Project progress notes checked into github throughout the semester. Each
    week the project progress is reported and will be integrated
    into the final grade.
-6. Discussions or progress reports with the instructors can be conducted on 
+6. Discussions or progress reports with the instructors can be conducted on
    online and residential class hours.
 
-The grade distribution is as follows 
+The grade distribution is as follows
 
 * 10% Comprehension Activities
 * 10% Sections
@@ -281,7 +281,7 @@ evaluate mayor and minor issues that you may be able to fix without
 penalty. Larger changes will receive a grade penalty. The last fix
 (upon approval) possible will be 2 weeks before semester end without
 penalty. It is recommended that you are available till the last day of
-class. 
+class.
 
 
 
@@ -301,11 +301,11 @@ class.
 
 
 
-## Calendar 
+## Calendar
 
-  
-|  Assignment #  | Event |     | Date 
-| --- | ----- | --- | --- 
+
+|  Assignment #  | Event |     | Date
+| --- | ----- | --- | ---
 |    | Full Term           | | 16 Weeks |
 |   | *Begins*            | | Week 1 |
 | 1, 2 | **Bio, Notebook** | assigned | Week 1 |
@@ -324,7 +324,7 @@ class.
 |   | *Ends*              |  | Week 16 |
 
 
-* TA's must be available till all grades have been submitted. 
+* TA's must be available till all grades have been submitted.
 * Bio: a formal 3 paragraph Bio
 * Notebook: a markdown in which you record your progress of
   this class in bullet form
@@ -340,7 +340,7 @@ significant additional work on your behalf as your project may need
 significant updates on infrastructure, technology, or even programming
 models used. It is best to complete the course within one semester.
 
-## Other classes I523, I524, B649, E516, E616 
+## Other classes I523, I524, B649, E516, E616
 
 ### I524 = B649 = E516
 

@@ -3,7 +3,7 @@
 
 E.Docker.Swarm.1: Documentation
 
-> Develop a section in the handbook that deploys a Docker Swarm cluster 
+> Develop a section in the handbook that deploys a Docker Swarm cluster
 > on a number of
 > ubuntu machines. Note that this may actually be easier as docker and
 > docker swarm are distributed with recent versions of ubuntu. Just in
@@ -31,10 +31,10 @@ E.SingleNodeHadoop:
 > 1. Create a Dockerfile that deploys hadoop in a container
 > 2. Develop sample applications and tests to test your cluster. You can
 >      use wordcount or similar.
-> 
+>
 > you will find a comprehensive installation instruction that sets up a
 > hadoop cluster on a single node at
-> 
+>
 > * <https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html>
 
 E.MultiNodeHadoop:
@@ -46,12 +46,12 @@ E.MultiNodeHadoop:
 > 1. Create docker compose and Dockerfiles that deploys hadoop in kubernetes
 > 2. Develop sample applications and tests to test your cluster. You can
 >    use wordcount or similar.
-> 
+>
 > you will find a comprehensive installation instruction that sets up a
 > hadoop cluster in a distributed environment at
-> 
+>
 > * <https://hadoop.apache.org/docs/r3.0.0/hadoop-project-dist/hadoop-common/ClusterSetup.html>
-> 
+>
 > You can use this set of
 > instructions or identify other resources on the internet that allow the
 > creation of a hadoop cluster on kubernetes. Alternatively you can use docker compose

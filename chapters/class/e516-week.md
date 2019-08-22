@@ -105,7 +105,7 @@ The assignments are listed in @sec:exercises-energy
 Please also pick from either assignments one. As this is a group
 assignment, please improve with the group.
 
-* E.Datacenter.5 
+* E.Datacenter.5
 * E.Datacenter.6
 
 ### Remarks: Sections
@@ -449,7 +449,7 @@ configuration file.  The script must demonstrate that a command can be
 run on your vm with ssh.Starting and stopping the VM via the GUI does
 not count. This must be done by Mar 15
 
-## Week 10: Docker Cluster Nov 1 - Nov 8 
+## Week 10: Docker Cluster Nov 1 - Nov 8
 
 See @sec:docker-cluster for an introduction to terminology and
 mechanisms for managing multiple containers across multiple hosts. Get
@@ -481,10 +481,10 @@ time to continue to work on your project.
 ## Project Due Date Dec 1
 
 YOur project will be reviewed and based on feedback you need to
-improve it. Last day to submit improvements is Dec 13. 
+improve it. Last day to submit improvements is Dec 13.
 
 
-## Week 13: Go or Julia Dec 1 - Dec 6 
+## Week 13: Go or Julia Dec 1 - Dec 6
 
 This week allows you to experiment with either Go or Julia. Please,
 select one and try to develop a RES service in either one of the languages.

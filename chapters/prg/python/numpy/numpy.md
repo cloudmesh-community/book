@@ -17,13 +17,13 @@ If NumPy has already been installed, you can update to the most
 recent version using:
 
     $ pip install -U numpy
-    
+
 You can verify that NumPy is installed by trying to use it in
 a Python program:
-    
+
     import numpy as np
 
-Note that, by convention, we import NumPy using the alias 'np' - 
+Note that, by convention, we import NumPy using the alias 'np' -
 whenever you see 'np' sprinkled in example Python code, it's a
 good bet that it is using NumPy.
 
@@ -82,7 +82,7 @@ For example:
     print(a)
     >>>[2]
 
-In this example, it makes sense that 6+7=13. But how does 
+In this example, it makes sense that 6+7=13. But how does
 13+245=2? Put simply, the object type (uint8) simply ran out of
 space to store the value and wrapped back around to the beginning.
 An 8-bit number is only capable of storing 2^8, or 256, unique values.
@@ -103,7 +103,7 @@ Here, our addition caused our array, 'a', to be upscaled to use
 uint16 instead of uint8. Finally, NumPy offers convenience functions
 akin to Python's range() function to create arrays of sequential
 numbers:
-    
+
     X = np.arange(0.2,1,.1)
     print(X)
     >>>array([0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9], dtype=float32)
@@ -146,10 +146,10 @@ to iterate through an array:
 
 Arrays are, also, mutable and can be changed easily:
 
-    a[0] = 42                 
-    print(a) 
+    a[0] = 42
+    print(a)
     >>>array([42, 2, 3])
-    
+
 NumPy also includes incredibly powerful broadcasting features. This
 makes it very simple to perform mathematical operations on arrays
 that also makes intuitive sense:
@@ -158,9 +158,9 @@ that also makes intuitive sense:
     >>>array([3, 6, 9])
     a**2
     >>>array([1, 4, 9], dtype=int32)
-    
+
 Arrays can also interact with other arrays:
-    
+
     b = np.array([2, 3, 4])
     print(a * b)
     >>>array([ 2,  6, 12])
@@ -219,7 +219,7 @@ https://docs.scipy.org/doc/numpy/reference/routines.math.html
 As one can imagine, accessing elements one-at-a-time is both slow
 and can potentially require many lines of code to iterate over
 every dimension in the matrix. Thankfully, NumPy incorporate a very
-powerful slicing engine that allows us to access ranges of elements 
+powerful slicing engine that allows us to access ranges of elements
 easily:
 
     m[1, :]
@@ -234,21 +234,21 @@ can also use indexing to request elements within a given range:
     >>>[0 1 2 3 4 5 6 7 8 9]
     a[4:8]
     >>>array([4, 5, 6, 7])
-   
+
 Here, we asked NumPy to give us elements 4 through 7 (ranges in Python
 are inclusive at the start and non-inclusive at the end). We can even
 go backwards:
 
     a[-5:]
     >>>array([5, 6, 7, 8, 9])
-    
+
 In the previous example, the negative value is asking NumPy to return
 the last 5 elements of the array. Had the argument been ':-5', NumPy
 would've returned everything BUT the last five elements:
 
     a[:-5]
     >>>array([0, 1, 2, 3, 4])
-    
+
 Becoming more familiar with NumPy's accessor conventions will allow
 you write more efficient, clearer code as it is easier to read a
 simple one-line accessor than it is a multi-line, nested loop when
@@ -269,7 +269,7 @@ to code written by users:
 NumPy arrays and matrices contain many useful aggregating functions
 such as max(), min(), mean(), etc These functions are usually able
 to run an order of magnitude faster than looping through the object,
-so it's important to understand what functions are available to 
+so it's important to understand what functions are available to
 avoid 'reinventing the wheel.' In addition, many of the functions
 are able to sum or average across axes, which make them extremely
 useful if your data has inherent grouping. To return to a previous
@@ -319,7 +319,7 @@ using simple Mean-Squared-Error (MSE):
 Finally, more advanced functions are easily available to users via the
 linalg library of NumPy as:
 
-    from numpy import linalg 
+    from numpy import linalg
 
     A = np.diag((1,2,3))
 
@@ -330,7 +330,7 @@ linalg library of NumPy as:
 
 ## NumPy Resources
 
-* <https://docs.scipy.org/doc/numpy> 
+* <https://docs.scipy.org/doc/numpy>
 * <http://cs231n.github.io/python-numpy-tutorial/#numpy>
 * <https://docs.scipy.org/doc/numpy-1.15.1/reference/routines.linalg.html>
 * <https://en.wikipedia.org/wiki/Mean_squared_error>

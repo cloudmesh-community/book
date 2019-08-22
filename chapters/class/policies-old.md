@@ -170,7 +170,7 @@ The notebook is maintained in your class github.com repository in your
 hid project folder (you will establish thi sin the first week of
 class). It is a file called notebook.md that uses *markdown* as
 format.  While using markdown, you can either edit it locally and upload to
-github, or directly edit it via the git hub Web editor. 
+github, or directly edit it via the git hub Web editor.
 
 You will be responsible to set up and maintaining the notebook.md and
 update it accordingly. We suggest that you prepare sections such as:
@@ -220,7 +220,7 @@ turn it to a positive experience.
 ### Incomplete
 
 Incomplete's have to be explicitly requested in piazza through a private
-mail to *instructors*. 
+mail to *instructors*.
 
 Incomplete's will receive **two fractional grade reductions**: A will become
 B+, A- will become B, and so forth. There is enough time in the course
@@ -248,7 +248,7 @@ plan ahead.
 
 The incomplete request needs to be off the following format in piazza:
 
-    Subject: 
+    Subject:
         HID-FA18-000: INCOMPLETE REQUEST: Lastname, Firstname
 
     Body:
@@ -271,7 +271,7 @@ The incomplete request needs to be off the following format in piazza:
         URL technology-8: TBD
         URL technology-9: TBD
         URL technology-10: TBD
-        
+
 
         URL prg assignment: TBD
 
@@ -453,7 +453,7 @@ not read the handbook and instead of delivering a superior project or
 document the quality was poor as the both team members did not work
 and assumed the other one would do the work for them naturally it is a
 disastrous plan to have others work for you and instead do little
-work while delegating your tasks and overburden your team members. 
+work while delegating your tasks and overburden your team members.
 
 
 ### Exercises

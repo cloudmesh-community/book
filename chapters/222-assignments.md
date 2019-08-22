@@ -36,7 +36,7 @@ related to intelligent systems engeneering. Thos that like to go for
 an A+ are also expected to contribute significantly to this document
 or have a truly outstanding project.  This is done in Sections,
 Examples, and Chapters, or excelent Project reports and code.
- 
+
 **Section:**
 
 : A section is a small section that explains a topic that
@@ -95,9 +95,9 @@ A list of topics identified by students is maintained in a spreadsheet.
 
 See <https://piazza.com/class/jgxybbf5rnx5qd?cid=201> for details.
 
-You are expected to signup in this spreadsheet. THis is done to 
-ab=void overlap and foster uniqueness of the assignment for sections 
-and chapters. 
+You are expected to signup in this spreadsheet. THis is done to
+ab=void overlap and foster uniqueness of the assignment for sections
+and chapters.
 
 ## Project
 
@@ -115,7 +115,7 @@ License:
   project. If your project uses different licenses, please add in a
   README.md file which packages are used and which license these
   packages have.
-    
+
 Project Report:
 
 : A project report is an enhanced topic paper that includes not just
@@ -137,7 +137,7 @@ Project Report:
   Notation of the handbook. We use bibtex for bibliographies. Please
   be reminded that images and tables as well as code is excluded from
   the page length. Make sure that your text is mostly developed by
-  midterm time. 
+  midterm time.
 
 Project Code:
 
@@ -209,9 +209,9 @@ deliverabl;es will be different:
 
 - Take results in two different cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
-  created and deployed based on your documentation. 
+  created and deployed based on your documentation.
 
-- Each team member must provide a benchmark on their computer and a cloud IaaS, 
+- Each team member must provide a benchmark on their computer and a cloud IaaS,
   where the cloud is different from each team member.
 
 - Create a Makefile with the tags deploy, run, kill, view, clean that
@@ -223,7 +223,7 @@ deliverabl;es will be different:
 
 - For python use a requirements.txt file also
 
-- For docker use a Dockerfile also 
+- For docker use a Dockerfile also
 
 - Write a report that includes the following sections
 
@@ -283,7 +283,7 @@ install the software but to develop a framework that allows us to
 easily share this resource with other users.
 
 A documentation has to be written for this project so others can
-replicate your cluster build. A good start for this is to look at 
+replicate your cluster build. A good start for this is to look at
 our  `cm-burn` command that creates Raspberry PI OS based on
 manipulation of the file system
 
@@ -306,19 +306,19 @@ to be graded. and have all hids for people that contribute to that
 section.
 
 In addition, simply add them to your README.yml file in your github repo.
-Add the following to it (I am using a18-516-18 as example). 
+Add the following to it (I am using a18-516-18 as example).
 
 Please look at <https://github.com/cloudmesh-community/fa18-516-18> and <https://raw.githubusercontent.com/cloudmesh-community/fa18-523-62/master/README.yml>
-for an examples. Please note that in case you work in a group the code and report is supposed to be only stored 
+for an examples. Please note that in case you work in a group the code and report is supposed to be only stored
 in the first hid mentioned in the group field. If you store it in multiple directories your project will be rejected.
 
     section:
         - title: title of the section 1
           url: https://github.com/cloudmesh-community/book/chapters/...
         - title: title of the section 2
-          url: https://github.com/cloudmesh-community/book/chapters/...    
+          url: https://github.com/cloudmesh-community/book/chapters/...
         - title: title of the section 3
-          url: https://github.com/cloudmesh-community/book/chapters/...         
+          url: https://github.com/cloudmesh-community/book/chapters/...
     chapter:
         - title: title of the chapter
           url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md

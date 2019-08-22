@@ -1,4 +1,4 @@
-# Week 7: Multi Cloud Environment 
+# Week 7: Multi Cloud Environment
 
 
 ## Lab Activity Multi-Cloud Configuration
