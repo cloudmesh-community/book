@@ -14,7 +14,7 @@ efforts in cloudmesh client and cmd3.
 
 The source code for cmd5 is located in github:
 
--   <https://github.com/cloudmesh/cmd5>
+* <https://github.com/cloudmesh/cmd5>
 
 ### Creating a Python Development Environment
 
@@ -131,7 +131,7 @@ the command in:
 
 An example for the bar command is presented at:
 
--   <https://github.com/cloudmesh/cloudmesh-bar/blob/master/cloudmesh/bar/command/bar.py>
+* <https://github.com/cloudmesh/cloudmesh-bar/blob/master/cloudmesh/bar/command/bar.py>
 
 It shows how simple the command definition is (bar.py):
 
@@ -187,12 +187,12 @@ E. CMD5.2
 E.CMD5.3
 
 > Write a new command and experiment with docopt syntax and argument
->  interpretation of the dict with if conditions.
+> interpretation of the dict with if conditions.
 
 E.CMD5.4
 
 > If you have useful extensions that you like us to add by default,
->  please work with us.
+> please work with us.
 
 E.CMD5.5
 

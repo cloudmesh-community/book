@@ -47,7 +47,8 @@ Method 2: PyCharm installation on ubuntu using PPA
     sudo apt-get update
     sudo apt-get install pycharm-community
 
-PyCharm also has a Professional (paid) version which can be installed using following command:
+PyCharm also has a Professional (paid) version which can be installed
+using following command:
 
     sudo apt-get install pycharm
 

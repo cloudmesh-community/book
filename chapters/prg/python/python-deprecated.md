@@ -1,5 +1,4 @@
-
-## Pyenv in a docker container
+# Pyenv in a docker container
 
 We provide a simple docker container on docker hub that is based on
 ubuntu 18.04 that has pyenv, python 2.7.16 and python 3.7.1
@@ -21,7 +20,7 @@ container> ENV3
 
 where container indicates that the command is executed
 
-### Creating the container locally
+## Creating the container locally
 
 This section is only needed if you like to recreate the image or
 modify the Dockerfile.
@@ -39,7 +38,6 @@ $ make image
 ```
 
 This will create an image locally. with
-
 
 ```bash
 $ make login

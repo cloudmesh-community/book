@@ -10,7 +10,7 @@ $ python
 You will see something like the following:
 
 ```python
-python
+$ python
 Python 3.7.1 (default, Nov 24 2018, 14:27:15)
 [Clang 10.0.0 (clang-1000.11.45.5)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -26,10 +26,10 @@ are following along you will not need to type in the prompt.
 
 This interactive python process does the following:
 
--   *read* your input commands
--   *evaluate* your command
--   *print* the result of evaluation
--   *loop* back to the beginning.
+* *read* your input commands
+* *evaluate* your command
+* *print* the result of evaluation
+* *loop* back to the beginning.
 
 This is why you may see the interactive loop referred to as a **REPL**:
 **R**ead-**E**valuate-**P**rint-**L**oop.
@@ -88,9 +88,9 @@ from __future__ import print_function, division
 
 The first of these imports allows us to use the print function to output
 text to the screen, instead of the print statement, which Python 2 uses.
-This is simply a [design
-decision](https://www.python.org/dev/peps/pep-3105/) that better
-reflects Python's underlying philosophy.
+This is simply a 
+[design decision](https://www.python.org/dev/peps/pep-3105/)
+that better reflects Python's underlying philosophy.
 
 Other functions such as the division also behave differently. Thus we
 use
@@ -99,8 +99,9 @@ use
 from __future__ import division
 ```
 
-This import makes sure that the [division
-operator](https://www.python.org/dev/peps/pep-0238/) behaves in a way a
+This import makes sure that the 
+[division operator](https://www.python.org/dev/peps/pep-0238/)
+behaves in a way a
 newcomer to the language might find more intuitive. In Python 2,
 division / is *floor division* when the arguments are integers, meaning
 that the following

@@ -117,7 +117,7 @@ JSON format and click Test the Function (see @fig:TriggerEvent)
 ![Result](images/markdown-img-paste-20181031132838134.png){#fig:Result}
 
 
-**Step 12**: Let's run one more Test (see @fig:TestAgain)
+**Step 12**: Let us run one more Test (see @fig:TestAgain)
 
 ![Another Test](images/markdown-img-paste-20181031132912372.png){#fig:TestAgain}
 
@@ -127,7 +127,7 @@ JSON format and click Test the Function (see @fig:TriggerEvent)
 ![Expected Result For Test](images/markdown-img-paste-20181031132940621.png){#fig:ExpectedResultForTest}
 
 
-**Step 14**: Let's test our function deployment using url. Click on the function name (see @fig:DeploymentUrl)
+**Step 14**: Let us test our function deployment using url. Click on the function name (see @fig:DeploymentUrl)
 
 ![Deployment Url](images/markdown-img-paste-20181031133107580.png){#fig:DeploymentUrl}
 

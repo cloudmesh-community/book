@@ -552,7 +552,7 @@ elements is fast**. If you are familiar with different data structures
 from a Computer Science class, the Python list is implemented by an
 array, while the set is implemented by a hash table.
 
-We will demonstrate this with an example. Let's say we have a list and a
+We will demonstrate this with an example. Let us say we have a list and a
 set of the same number of elements (approximately 100 thousand):
 
 ``` python
@@ -832,7 +832,7 @@ Files in which Python code is stored are called **module**s. You can
 execute a Python module form the command line like you just did, or you
 can import it in other Python code using the import statement.
 
-Let's write a more involved Python program that will receive as input
+Let us write a more involved Python program that will receive as input
 the lengths of the three sides of a triangle, and will output whether
 they define a valid triangle. A triangle is valid if the length of each
 side is less than the sum of the lengths of the other two sides and

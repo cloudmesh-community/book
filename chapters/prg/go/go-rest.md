@@ -80,7 +80,7 @@ func main() {
 ```
 
 Packages are explained here:
-* fmt is what we'll be using to print to STDOUT (the console)
+* fmt is what we will be using to print to STDOUT (the console)
 * log is used to log when the server exits
 * encoding/json is for creating our JSON responses
 * net/http will give us the representations of HTTP requests, responses, and be responsible for running our server

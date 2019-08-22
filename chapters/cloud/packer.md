@@ -227,7 +227,7 @@ we've refactored the `ssh_username` and `image_name` to the `variables`
 section since those variable hold values that can be reused in both the
 Google Compute and AWS builders.
 
-Let's rerun packer:
+Let us rerun packer:
 
 ```
 packer build -var 'google_project_id=my_project_id' e516.json

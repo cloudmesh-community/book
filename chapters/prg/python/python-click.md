@@ -4,13 +4,13 @@ Click allows developers to create composable command line interfaces. It
 aims to simplify the the process of writing command line tools.
 Highlights include:
 
--   arbitrary nesting of commands
--   automatic help page generation
--   supports of lazy loading of subcommands at runtime
+* arbitrary nesting of commands
+* automatic help page generation
+* supports of lazy loading of subcommands at runtime
 
 The following example take from the click Web page at
 
--   <http://click.pocoo.org/>
+* <http://click.pocoo.org/>
 
 illustrates the use of click
 
@@ -74,5 +74,5 @@ click-shell is an extension allowing to run click commands in a shell
 
 ## Links
 
--   <http://click.pocoo.org>
--   <https://github.com/clarkperkins/click-shell>
+* <http://click.pocoo.org>
+* <https://github.com/clarkperkins/click-shell>
