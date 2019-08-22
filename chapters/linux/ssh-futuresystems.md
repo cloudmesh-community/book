@@ -4,19 +4,21 @@
 
 ![](images/learning.png) **Learning Objectives**
 
-* Obtain a Future system account so you can use kubernetes or dockerswarm or other services offered by FutureSystems.
+* Obtain a Future system account so you can use kubernetes or
+  dockerswarm or other services offered by FutureSystems.
 * Note that we no longer support OpenStack in FutureSystems.
 
 ---
 
-Next, you need to upload the key to the portal. You must be logged into the portal to do so.
+Next, you need to upload the key to the portal. You must be logged into
+the portal to do so.
 
 Step 1: Log into the portal
 
 ![image](images/portalLogin_0.png)
 
 Step 2: Click in the "ssh key" button or go directly to
-    <https://portal.futuresystems.org/my/ssh-keys>
+<https://portal.futuresystems.org/my/ssh-keys>
 
 ![image](images/portalsshkey.png)
 
@@ -25,17 +27,17 @@ Step 3: Click in the "add a public key" link.
 ![image](images/portalclikaddkey_0.png)
 
 Step 4: Paste your ssh key into the box marked Key. Use a text editor to
-    open the 	`id_rsa.pub`. Copy the entire contents of this file into
-    the ssh key field as part of your profile information. Many errors
-    are introduced by users in this step as they do not paste and copy
-    correctly.
+open the `id_rsa.pub`. Copy the entire contents of this file into
+the ssh key field as part of your profile information. Many errors are
+introduced by users in this step as they do not paste and copy
+correctly.
 
 ![image](images/portalkeypaste_0.png)
 
-Step 5: Click the submit button. **IMPORTANT**: Leave the Title field blank.
-    Make sure that when you paste your key, it does not contain newlines
-    or carriage returns that may have been introduced by incorrect
-    pasting and copying. If so, please remove them.
+Step 5: Click the submit button. **IMPORTANT**: Leave the Title field
+blank. Make sure that when you paste your key, it does not contain
+newlines or carriage returns that may have been introduced by incorrect
+pasting and copying. If so, please remove them.
 
 At this point, you have uploaded your key. However, you will still need
 to wait till all accounts have been set up to use the key, or if you did
@@ -56,7 +58,9 @@ minutes to update the ssh keys.
 
 To log into india simply type the usual ssh command such as:
 
-    $ ssh portalname@india.futuresystems.org
+```bash
+$ ssh portalname@india.futuresystems.org
+```
 
 The first time you ssh into a machine you will see a message like this:
 
