@@ -507,7 +507,7 @@ print(model.summary.r2)
 Spark supports a wide variety of machine learning algorithms such as support vector machines, logistic regression, naive
 bayes, and k-means clustering. All of these models are able to harness Spark's distributed nature and can handle large
 amounts of data quickly and in an efficient manner. As can be seen the preceding bit of code, it only takes a few lines
-to start a large number of servers working on a problem. In the next section, we'll make it even easier by abstracting
+to start a large number of servers working on a problem. In the next section, we will make it even easier by abstracting
 away a lot of the server maintenance via Cloudmesh-EMR.
 
 ## Spark via Cloudmesh

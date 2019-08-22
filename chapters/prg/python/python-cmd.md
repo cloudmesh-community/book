@@ -11,8 +11,7 @@ cmd module contains a public class, Cmd, designed to be used as a base class for
 shells and other
 command interpreters.
 
-Hello, World with cmd
----------------------
+## Hello, World with cmd
 
 This example shows a very simple command interpreter that simply
 responds to the greet command.
@@ -81,10 +80,9 @@ in this example:
 * The shell application is started by calling the cmdloop method of
     the class.
 
-A More Involved Example
------------------------
+## A More Involved Example
 
-Let's look at a little more involved example. Save the following code in
+Let us look at a little more involved example. Save the following code in
 a file called calculator.py.
 
     from __future__ import print_function, division

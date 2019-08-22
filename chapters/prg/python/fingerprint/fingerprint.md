@@ -218,7 +218,7 @@ DATASET_SHA256 = '4db6a8f3f9dc14c504180cbf67cdf35167a109280f121c901be37a80ac13c4
 ```
 
 We'll define how to download the dataset. This function is general
-enough that it could be used to retrieve most files, but we'll default
+enough that it could be used to retrieve most files, but we will default
 it to use the values from previous.
 
 ```python

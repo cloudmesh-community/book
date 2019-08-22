@@ -26,8 +26,8 @@ different for you.
 
 If you go to the previous link to data.gov for Bloomington, you will see
 that the citations data is organized per quarter, so there are a total
-of four files. Previously, we downloaded the data for the first quarter. Go
-ahead and download the remaining three files with `wget`.
+of four files. Previously, we downloaded the data for the first quarter.
+Go ahead and download the remaining three files with `wget`.
 
 In this example, we will use three modules, `numpy`, `pandas` and
 `matplotlib`. If you set up `virtualenv` as described in the Python
@@ -137,7 +137,7 @@ functions in the previous `datetime` module linked.
 
 ## Plotting with Matplotlib and NumPy
 
-Let's say we want to see how many citations were given each day of the
+Let us say we want to see how many citations were given each day of the
 week. We gather the data first:
 
     >>> days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
@@ -222,7 +222,7 @@ the `matplotlib` gallery has many useful code examples.
 
 ### Numpy
 
--   <http://www.numpy.org/%7D>
+* <http://www.numpy.org/%7D>
 
 According to the Numpy Web page "NumPy is a package for scientific
 computing with Python. It contains a powerful N-dimensional array
@@ -234,7 +234,7 @@ Tutorial: <https://docs.scipy.org/doc/numpy-dev/user/quickstart.html>
 
 ### MatplotLib
 
--   <http://matplotlib.org/>
+* <http://matplotlib.org/>
 
 According the the Matplotlib Web page, "matplotlib is a python 2D
 plotting library which produces publication quality figures in a variety
@@ -247,7 +247,7 @@ Matplotlib Gallery: <http://matplotlib.org/gallery.html>
 
 ### Pandas
 
--   <http://pandas.pydata.org/>
+* <http://pandas.pydata.org/>
 
 According to the Pandas Web page, "Pandas is a library library providing
 high-performance, easy-to-use data structures and data analysis tools
@@ -265,18 +265,18 @@ Pandas Cheat Sheet:
 
 ### Scipy
 
--   <https://www.scipy.org/>
+* <https://www.scipy.org/>
 
 According to the Web page, SciPy (pronounced *Sigh Pie*) is a
 Python-based ecosystem of open-source software for mathematics, science,
 and engineering. In particular, these are some of the core packages:
 
--   NumPy
--   IPython
--   Pandas
--   Matplotlib
--   Sympy
--   SciPy library
+* NumPy
+* IPython
+* Pandas
+* Matplotlib
+* Sympy
+* SciPy library
 
 It is thus an agglomeration of useful packages and will probably suffice
 for your projects in case you use Python.
@@ -285,7 +285,7 @@ for your projects in case you use Python.
 
 #### ggplot
 
--   <http://ggplot.yhathq.com/>
+* <http://ggplot.yhathq.com/>
 
 According to the ggplot python Web page ggplot is a plotting system for
 Python based on R's ggplot2. It allows to quickly generate some plots
@@ -294,23 +294,23 @@ matplotlib directly.
 
 #### seaborn
 
--   <http://www.data-analysis-in-python.org/t_seaborn.html>
+* <http://www.data-analysis-in-python.org/t_seaborn.html>
 
 The good library for plotting is called seaborn which is build on top of
 matplotlib. It provides high level templates for common statistical
 plots.
 
--   Gallery:
+* Gallery:
     <http://stanford.edu/~mwaskom/software/seaborn/examples/index.html>
--   Original Tutorial:
+* Original Tutorial:
     <http://stanford.edu/~mwaskom/software/seaborn/tutorial.html>
--   Additional Tutorial:
+* Additional Tutorial:
     <https://stanford.edu/~mwaskom/software/seaborn/tutorial/distributions.html>
 
 Here are some examples from a previous class:
 
--   <https://github.com/bigdata-i523/hid231/blob/master/experiment/seaborn/seaborn-exercises.ipynb>
--   <https://github.com/bigdata-i523/hid231/blob/master/experiment/learning-jupyter/learning_jupyter_notebook.ipynb>
+* <https://github.com/bigdata-i523/hid231/blob/master/experiment/seaborn/seaborn-exercises.ipynb>
+* <https://github.com/bigdata-i523/hid231/blob/master/experiment/learning-jupyter/learning_jupyter_notebook.ipynb>
 
 [\[E:ipynb-export\]]{#E:ipynb-export label="E:ipynb-export"} Take these
 examples and create sections in latex that can be added to the book.
@@ -330,9 +330,9 @@ cms ipynb [url=URL | file=FILE] --output FILENAME
 Bokeh is an interactive visualization library with focus on web browsers
 for display. Its goal is to provide a similar experience as D3.js
 
--   URL: <http://bokeh.pydata.org/>
+* URL: <http://bokeh.pydata.org/>
 
--   Gallery: <http://bokeh.pydata.org/en/latest/docs/gallery.html>
+* Gallery: <http://bokeh.pydata.org/en/latest/docs/gallery.html>
 
 #### pygal
 
@@ -340,38 +340,38 @@ Pygal is a simple API to produce graphs that can be easily embedded into
 your Web pages. It contains annotations when you hover over data points.
 It also allows to present the data in a table.
 
--   <http://pygal.org/>
+* <http://pygal.org/>
 
 #### Network and Graphs
 
--   igraph: <http://www.pythonforsocialscientists.org/t_igraph.html>
+* igraph: <http://www.pythonforsocialscientists.org/t_igraph.html>
 
--   networkx: <https://networkx.github.io/>
+* networkx: <https://networkx.github.io/>
 
 ### REST
 
--   django REST Framework <http://www.django-rest-framework.org/>
+* django REST Framework <http://www.django-rest-framework.org/>
 
--   flask
+* flask
     <https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask>
 
--   requests
+* requests
     <https://realpython.com/blog/python/api-integration-in-python/>
 
--   urllib2 <http://rest.elkstein.org/2008/02/using-rest-in-python.html>
+* urllib2 <http://rest.elkstein.org/2008/02/using-rest-in-python.html>
     (not recommended)
 
--   web
+* web
     <http://www.dreamsyssoft.com/python-scripting-tutorial/create-simple-rest-web-service-with-python.php>
     (not recommended)
 
--   bottle <http://bottlepy.org/docs/dev/index.html>
+* bottle <http://bottlepy.org/docs/dev/index.html>
 
--   falcon <https://falconframework.org/>
+* falcon <https://falconframework.org/>
 
--   eve <http://python-eve.org/>
+* eve <http://python-eve.org/>
 
--   <https://code.tutsplus.com/tutorials/building-rest-apis-using-eve--cms-22961>
+* <https://code.tutsplus.com/tutorials/building-rest-apis-using-eve--cms-22961>
 
 ## Parsing Data
 
@@ -387,11 +387,11 @@ parses the notebook.md file and check it upon correctness.
 
 An example for a notebook.md file is located here
 
--   <https://raw.githubusercontent.com/bigdata-i523/sample-hid000/master/notebook.md>
+* <https://raw.githubusercontent.com/bigdata-i523/sample-hid000/master/notebook.md>
 
 The following code may inspire you
 
--   <https://github.com/bigdata-i523/hid203/tree/master/experiment>
+* <https://github.com/bigdata-i523/hid203/tree/master/experiment>
 
 We like to implement the following functionality and use docopts to
 document the command.
@@ -429,7 +429,7 @@ all videos in that file and sums up the total viewing time. Previously
 the document was stored in RST and the code from a previous student may
 inspire you. Can you recreate it for LaTeX?
 
--   <https://github.com/bigdata-i523/hid107/blob/master/cloudmesh/bar/command/mycommand.py>
+* <https://github.com/bigdata-i523/hid107/blob/master/cloudmesh/bar/command/mycommand.py>
 
     cms class video list FILENAME
     --output=\[tabular\|longtable\|csv\|txt\]
@@ -461,7 +461,7 @@ the dynamic task schedulers.
 
 More information can be found at:
 
--   <https://dask.pydata.org>
+* <https://dask.pydata.org>
 
 Conduct a performance study that showcases the difference of doing
 parallel calculations in Dask, calculations in a framework such as

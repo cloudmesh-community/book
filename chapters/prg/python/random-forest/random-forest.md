@@ -19,7 +19,7 @@ import pandas as pd
 import numpy as np
 ```
 
-Now we'll load our data. pandas makes it easy!
+Now we will load our data. pandas makes it easy!
 
 
 ```python

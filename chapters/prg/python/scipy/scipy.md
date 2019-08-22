@@ -101,7 +101,7 @@ How does this look as a histogram? See @fig:scipy-output_23_0, @fig:scipy-output
 
 ![Histogram 1](images/output_23_0.png){#fig:scipy-output_23_0}
 
-Let's add some titles.
+Let us add some titles.
 
     plt.clf() # clear out the previous plot
 
@@ -127,7 +127,7 @@ in LaTeX. There we use the caption to describe what the figure is about.
 
 ![Histogram 3](images/output_27_0.png){#fig:scipy-output_27_0}
 
-Let's try out some linear regression, or curve fitting. See @#fig:scipy-output_30_0
+Let us try out some linear regression, or curve fitting. See @#fig:scipy-output_30_0
 
     import random
 

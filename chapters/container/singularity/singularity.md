@@ -121,7 +121,7 @@ results:
 [![Video](images/video.png) Singularity - configure and build in VirtualBox VM (CentOS 7)](https://asciinema.org/a/129867)
 
 Next we configure and build the package. To configure, enter the following
-command (we'll leave out the command prompts):
+command (we will leave out the command prompts):
 
 ```bash
 ./configure
@@ -322,7 +322,7 @@ Bootstrapping a Singularity container allows you to use what is called a 'defini
 file' so you can reproduce the resulting container configurations on
 demand.
 
-Let's say you want to create a container with Ubuntu, but you may want
+Let us say you want to create a container with Ubuntu, but you may want
 to create variations on the configurations without having to repeat a
 long list of commands manually. First, we need our definitions file.
 Given next is the contents of a definitions file which should suffice for our
@@ -451,7 +451,7 @@ is:
 `[test_user@comet-ln3 ~]$ module load singularity`
 
 You may issue the previous command from any directory on Comet. Recall that
-we added a `hello_world.sh` script to our centos7.img container. Let's
+we added a `hello_world.sh` script to our centos7.img container. Let us
 try executing that script with the following command:
 
 ` [test_user@comet-ln3 ~]$ singularity exec /oasis/scratch/comet/test_user/temp_project/singularity/centos7.img /hello_world.sh `

@@ -47,10 +47,10 @@ Exercises
 
 Econda.1:
 
--   Write installation instructions for an operating system of your
+* Write installation instructions for an operating system of your
     choice and add to this documentation.
 
 Econda.2:
 
--   Replicate the previous steps, so you can type in ENV2 and ENV3 in your
+* Replicate the previous steps, so you can type in ENV2 and ENV3 in your
     terminals to switch between python 2 and 3.

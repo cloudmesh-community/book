@@ -99,7 +99,6 @@ subprocess.call(args, *,
 ## Wait for command to complete, then return the returncode attribute.
 ```
 
-
 ```python
 subprocess.call(['ls', '-l'])
 ```
@@ -197,7 +196,6 @@ returns a non-zero exit status.
   deadlock based on the child process output volume. Use Popen with
   the communicate() method when you need pipes.
 
-
 ## Popen Constructor
 
 The process creation and its management is handled by this class -
@@ -219,6 +217,7 @@ class subprocess.Popen(args,
                        startupinfo=None,
                        creationflags=0)
 ```
+
 This will execute a child program in a new process. The arguments to
 Popen is as follows:
 
@@ -232,7 +231,6 @@ is recommended to pass args as a sequence.
 On Unix, if args is a string, the string is interpreted as the name or
 path of the program to execute. However, this can only be done if not
 passing arguments to the program.
-
 
 Note that `shlex.split()` can be useful when determining the correct
 tokenization for args, especially in complex cases:
@@ -282,7 +280,6 @@ strings. Parsing the string after conversion uses the following rules:
 The shell argument is by default set to False, this argument specifies
 whether to use the shell as the program to execute. If shell is True,
 it is recommended to pass args as a string rather than as a sequence.
-
 
 ## Exceptions in Subprocess
 
@@ -348,7 +345,8 @@ Its very important for the application to handle security aspect explicitly.
 
 The following attributes are also available:
 
-> ![](images/warning.png) *Use `communicate()` rather than< .stdin.write, .stdout.read or
+> ![](images/warning.png) *Use `communicate()` rather than 
+> .stdin.write, .stdout.read or
 > .stderr.read to avoid deadlocks due to any of the other OS pipe
 > buffers filling up and blocking the child process.*
 

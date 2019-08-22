@@ -37,15 +37,15 @@ unless otherwise specified.
 
 Learning outcome:
 
--   You can manage assignments with any system you like
+* You can manage assignments with any system you like
 
--   You can manage your own events in CANVAS and continue CANVAS to
-    notify you of events. You are responsible of entering these events
-    in CANVAS.
+* You can manage your own events in CANVAS and continue CANVAS to
+  notify you of events. You are responsible of entering these events
+  in CANVAS.
 
--   A better way of managing your tasks is to use github issues.
+* A better way of managing your tasks is to use github issues.
 
--   Alternatively you can use your own calendar system
+* Alternatively you can use your own calendar system
 
 Assignments E222
 ----------------
@@ -78,22 +78,22 @@ $\mapsto$](https://docs.google.com/document/d/1pNK94qoRfZkill_JrGAzjd8aQ6Aar0pEX
 
 Learning Outcomes:
 
--   This is a cloud class that will use a number of cloud based systems.
-    You can by using them identify differences, advantages, and
-    disadvantages.
+* This is a cloud class that will use a number of cloud based systems.
+  You can by using them identify differences, advantages, and
+  disadvantages.
 
--   in contrast to IU services which typically are done via SSO the
-    community cloud services provide you with many different accounts,
-    you will be needing to find a system on how to manage these
-    accounts.
+* in contrast to IU services which typically are done via SSO the
+  community cloud services provide you with many different accounts,
+  you will be needing to find a system on how to manage these
+  accounts.
 
--   Just like in a class the professor communicates to all students and
-    encourages a dialog. Piazza simulates this isn some form for online
-    students. It is important not to just read the piazza e-mails, but
-    to actually visit every post you get by using the click here link
-    and inspect the post. The answer from students to questions such as
-    do i need to read all questions is the same as in a live lecture, do
-    I need to listen to the instructor? I am sure you know the answer.
+* Just like in a class the professor communicates to all students and
+  encourages a dialog. Piazza simulates this isn some form for online
+  students. It is important not to just read the piazza e-mails, but
+  to actually visit every post you get by using the click here link
+  and inspect the post. The answer from students to questions such as
+  do i need to read all questions is the same as in a live lecture, do
+  I need to listen to the instructor? I am sure you know the answer.
 
 ### Cloud Accounts
 
@@ -106,20 +106,20 @@ google documents This assignment does not have to be conducted for
 anyone that has access to our google documents for bios, and the
 technology list
 
--   What is the difference between umail.iu.edu and iu.edu? Tip: the
-    answer is provided in the IU knowledge base
+* What is the difference between umail.iu.edu and iu.edu? Tip: the
+  answer is provided in the IU knowledge base
 
--   Login via the iu.edu account and not the umail.iu.edu account to
-    google and open the document for the bio. Paste the bio into the
-    document.
+* Login via the iu.edu account and not the umail.iu.edu account to
+  google and open the document for the bio. Paste the bio into the
+  document.
 
--   Explain why IU has two different google services and logins. As we
-    use cloud in this class, it is important to understand this and what
-    implication this has. This is not just an assignment to give you
-    access to the service, but to make you think why this works like
-    this.
+* Explain why IU has two different google services and logins. As we
+  use cloud in this class, it is important to understand this and what
+  implication this has. This is not just an assignment to give you
+  access to the service, but to make you think why this works like
+  this.
 
--   Can you imagine a different way this ought to work?
+* Can you imagine a different way this ought to work?
 
 Learning Outcome:
 

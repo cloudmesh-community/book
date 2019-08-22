@@ -1,3 +1,5 @@
+# Advanced Topics
+
 ## Non Blocking Threads
 
 ![No](images/no.png) Students can contribute this section
@@ -7,6 +9,7 @@
 ![No](images/no.png) Students can contribute this section
 
 see:
+
 * <https://docs.python.org/3/library/queue.html>
 
 ## Scheduler
@@ -14,6 +17,7 @@ see:
 ![No](images/no.png) Students can contribute this section
 
 see:
+
 * <https://docs.python.org/3/library/sched.html>
 
 ## Python SSL

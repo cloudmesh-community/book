@@ -212,7 +212,7 @@ In Java we have the concept of `intefaces` where an `interface` contains only th
 one supertype, you can use `trait`s.
 Traits can not be instantiated but classes and objects (an `object` in Scala, which is defined by the kwyword `object` is just a singleton class) can extend traits.
 
-Subtypying in Scala is simialr to that of Java. Let's modify our code and add the entity `Employee` as a subclass of `Person`:
+Subtypying in Scala is simialr to that of Java. Let us modify our code and add the entity `Employee` as a subclass of `Person`:
 
 ```python
 class Person(val firstName : String, val lastName : String){

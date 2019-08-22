@@ -10,7 +10,6 @@
 
 ---
 
-
 In this setion we explain how to install python 3.7.4 on a computer.
 Likely much of the code will work with earlier versions, but we do
 the development in Python on the newest version of python available at
@@ -34,7 +33,6 @@ can certainly do python on a $35 Rapbperry PI, but you probably will not
 be able to run PyCharm. There are many alternative editors with less
 Memory footprint avialable.
 
-
 ## Prerequisits Ubuntu 19.04
 
 Python 3.7 is installed in ubuntu 19.04. Therefore, it already fulfills
@@ -51,7 +49,7 @@ You want a number of useful tool on your macOS. They are not installed
 by default, but are available via Xcode. First you need to install xcode
 from
 
--   <https://apps.apple.com/us/app/xcode/id497799835>
+* <https://apps.apple.com/us/app/xcode/id497799835>
 
 Next you need to install macOS xcode command line tools:
 
@@ -134,7 +132,6 @@ python get-pip.py
 rm get-pip.py
 ```
 
-
 ### System Install
 
 Python 3.7 can be installed on Windows 10 using:
@@ -144,11 +141,11 @@ Python 3.7 can be installed on Windows 10 using:
 
 To activate the Linux Subsystem, please follow the instructions at
 
--   <https://docs.microsoft.com/en-us/windows/wsl/install-win10>
+* <https://docs.microsoft.com/en-us/windows/wsl/install-win10>
 
 A suitable distribution would be
 
--   <https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab>
+* <https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab>
 
 However as it uses an older version of python you will ahve to update
 it.
