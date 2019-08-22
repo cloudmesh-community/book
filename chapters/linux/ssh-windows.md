@@ -1,6 +1,4 @@
-
-SSH on Windows
---------------
+# SSH on Windows 
 
 For this class we recommend that you use a virtual machine via virtual
 box and use the Linux ssh instructions. The information here is just
@@ -17,9 +15,8 @@ as ssh. At this time it may be worth while to try the OpenSSH Client
 available for Windows, although it is in beta. If you like to use other
 methods we have included alternatives.
 
-### OpenSSH Client (Beta)
+## OpenSSH Client on Windows
 
-\TODO{provide us with screenshots of the  windows.}
 In case you need access to ssh Microsoft has fortunately updated their
 software to be able to run it directly from the Windows commandline
 including PowerShell.
@@ -28,10 +25,12 @@ However it is as far as we know not activated by default so you need to
 follow some setup scripts. Also this software is considered beta and its
 development and issues can be found at
 
-<https://github.com/PowerShell/Win32-OpenSSH>
-<https://github.com/PowerShell/Win32-OpenSSH/issues>
-What you have to do is to install it by going to `Settings > Apps` and
-click `Manage optional features` under `Apps & features`.
+* <https://github.com/PowerShell/openssh-portable>
+
+Fortunately, the software is already distributed with Winodws 10, but
+may not yet been activated. What you have to do is to install it by
+going to `Settings > Apps` and click `Manage optional features` under
+`Apps & features`.
 
 Next, Click on the `Add feature`. You will be presented with a list in
 which you scroll down, till you find `OpenSSH Client (Beta)`. Click on
@@ -47,7 +46,42 @@ login to other resources
 
     PS C:\Users\gregor> ssh myname@computer.example.com
 
-### Using SSH from Cygwin
+see also the 
+[MS SSH Guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+for the newest up dates.
+
+Due to the availability of SSH on Windows 10, we no longer recommend
+using Cygwin SSH, PuTTY or Chocolatey. However we kept thise sections
+here for completness.
+
+## GitBash
+
+A realy great tool for Windows is made avalable via 
+
+* <https://gitforwindows.org/>
+
+Here you can find gitbash that provides you with a terminal in which you
+can natively execute linux commands such as `cd`, `ls` and many more. It
+also includes `ssh` and `ssh-keygen`. which you will need if you want o
+interface with Linux machines hosted in a cloud.
+
+You can also enable the Git GUI as you may be used to doing things form
+GUI's. However soon you will find out why in this class we typicaly do
+not much via GUIs. However if you like them you can also integrate git
+in the Windows Explorer. This could be beneficial fo you during
+development of your project or keep up with what others do on git.
+
+### Makefiles on Windows
+
+Makefiles can easily be accessed also on windows while installing
+gitbash. Please reed to the internet or search in this handbook for more
+information about gitbash. 
+
+:o2: Please contribute to this section on how to install make on wondows
+natively. Here is some information to start with 
+[Make on Windows](https://stackoverflow.com/questions/32127524/how-to-install-and-use-make-in-windows)
+
+## Using SSH from Cygwin
 
 One established way of using ssh is from using cygwin.
 
@@ -68,7 +102,7 @@ yourself a new username and use this if you like to use cygwin.
 You can selectively install from the cygwin setup terminal which
 software you like to use, obviously you may want to use ssh
 
-### SSH from putty
+## SSH from putty
 
 As you will see the process is somewhat cumbersome and when you compare
 it with the commandline tools available, we do recommend using them
@@ -127,7 +161,7 @@ Openstack.
 At this time, the public key has been created and copied. Now you can
 use the public key and upload it to systems you like to login to.
 
-### Chocolatey
+## Chocolatey
 
 Another approach is to use it in Powershell with the help of chocolatey.
 Other options may be better suited for you and we leave it up to you to
@@ -166,26 +200,18 @@ of packages can be found at
 <https://chocolatey.org/packages>
 Packages of interest include
 
--   emacs: choco install emacs
--   pandoc: choco install pandoc
--   LaTeX: choco install miktex
--   jabref: choco install jabref
--   pycharm: choco install pycharm-community
--   lyx: choco install lyx
--   python 2: choco install python2
--   python 3: choco install python
--   pip: choco install pip
--   virtualbox: choco install virtualbox
--   vagrant: choco install vagrant
+* emacs: choco install emacs
+* pandoc: choco install pandoc
+* LaTeX: choco install miktex
+* jabref: choco install jabref
+* pycharm: choco install pycharm-community
+* lyx: choco install lyx
+* python 2: choco install python2
+* python 3: choco install python
+* pip: choco install pip
+* virtualbox: choco install virtualbox
+* vagrant: choco install vagrant
 
 Before installing any of them evaluate if you need them and identify
 security risks.
 
-
-
-SSH.4
-
-: What is the output of a key that has a passphrase when executing the
-  following command. Test it out on your key
-
-      $ grep ENCRYPTED ~/.ssh/id_rsa

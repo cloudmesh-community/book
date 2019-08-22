@@ -1,4 +1,4 @@
-# Linux {#sec:linux}
+# Linux Shell {#sec:linux}
 
 ---
 
@@ -9,16 +9,13 @@
 
 ---
 
-Now that you have Linux or a Linux like environment (such as `gitbash`)
-on your computer it is time to learn a number of useful commands to
-interact with the system.
+In this chapter we introduce you to a number of useful shell commands. You may ask:
+ 
+"Why is he so keen on telling me all about shells as I do have a beautiful GUI?"
 
-In order for this task to enhance your knowledge you are encouraged to
-find additional material and are required to complete the table of
-useful Linux commands. You will do this as team and create pull
-requests improving and completing this documentation. The TAs will
-provide a mapping between students and commands to be documented. If
-you find additional commands that aught to be listed here, please add.
+You will soon learn that A GUI may not be that suitable if you like to
+manage 10, 100, 1000, 10000, ... virtual machines. A commandline
+interface could be mcuh simpler and would allow scripting.
 
 
 ## History
@@ -36,7 +33,7 @@ replacement for UNIX.
 ## Shell
 
 One of the most important features for us will be to access the computer
-with the help of a *shell*. The [shell]{.index} is typically run in what is called
+with the help of a *shell*. The shell is typically run in what is called
 a terminal and allows interaction to the computer with commandline
 programs.
 
@@ -56,7 +53,8 @@ commands that you may als find even as a RefCard.
 
 We provide in the next table a number of useful commands that you want
 to explore. For more information simply type man and the name of the
-command.
+command. If you find a useful command that is missing, please add it
+with a Git pull request.
 
 .<div class="smalltable">
 
@@ -164,6 +162,55 @@ command.
 
 </div>
 
+## The command man
+
+On Linux you find a rich set of manual pages for thes commands. Try to
+pick one and execute:
+
+```bash
+$ man ls
+```
+
+You will see somthing like this
+
+```
+
+LS(1)                     BSD General Commands Manual                    LS(1)
+
+NAME
+     ls -- list directory contents
+
+SYNOPSIS
+     ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1] [file ...]
+
+DESCRIPTION
+     
+     For each operand that names a file of a type other than directory,
+     ls displays its name as well as any requested, associated
+     information.  For each operand that names a file of type directory,
+     ls displays the names of files contained within that directory, as
+     well as any requested, associated information.
+
+     If no operands are given, the contents of the current directory are
+     displayed.  If more than one operand is given, non-directory
+     operands are displayed first; directory and non-directory operands
+     are sorted separately and in lexicographical order.
+
+     The following options are available:
+
+     -@      Display extended attribute keys and sizes in long (-l) output.
+
+     -1      (The numeric digit ``one''.)  Force output to be one entry
+             per line.  This is the default when output is not to a terminal.
+
+     -A      List all entries except for . and ...  Always set for the
+             super-user.
+
+     -a      Include directory entries whose names begin with a dot (.).
+
+
+     ... on purpose cut ... instead try it yourslef
+```
 ## Multi-command execution
 
 One of the important features is that one can execute multiple commands
@@ -209,18 +256,14 @@ short cuts.
 Usage of a particular command and all the attributes associated with it,
 use `man` command. Avoid using `rm -r` command to delete files
 recursively. A good way to avoid accidental deletion is to include the
-following in your `.bash_profile` file:
+following in the file  `.bash_profile` on macOS or `.bashrc` on other
+platforms:
 
 ```bash
-alias e=open_emacs
 alias rm='rm -i'
 alias mv='mv -i'
 alias h='history'
 ```
-
-More Information
-
-<https://cloudmesh.github.io/classes/lesson/linux/refcards.html>
 
 ## Makefile
 
@@ -286,12 +329,6 @@ we just use the most elementary makefiles.
 For more information we recommend you to find out about it on the
 internet. A convenient reference card sis available
 at <http://www.cs.jhu.edu/~joanne/unixRC.pdf>.
-
-### Makefiles on Windows
-
-Makefiles can easily be accessed also on windows while installing
-gitbash. Please reed to the internet or search in this handbook for more
-information about gitbash.
 
 ## chmod
 

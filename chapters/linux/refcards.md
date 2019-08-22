@@ -4,7 +4,8 @@
 
 ![](images/learning.png) **Learning Objectives**
 
-* Obtain quickly information about technical aspects with the help of [reference cards]{.index}.
+* Obtain quickly information about technical aspects with the help of 
+  reference cards.
 
 ---
 
@@ -37,7 +38,6 @@ Linux
 * [Linux](http://www.cs.jhu.edu/~joanne/unixRC.pdf)
 * [Makefile](http://www.tofgarion.net/lectures/IN323/refcards/refcardMakeIN323.pdf)
 * [Git](https://education.github.com/git-cheat-sheet-education.pdf)
-
 
 Cloud/Virtualization
 

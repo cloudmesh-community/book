@@ -1,5 +1,4 @@
-Tools
-=====
+# Tools
 
 -   **Terminal**: On macOS, when you navigate to the search magnification
     glass, you can type in *terminal* to start it. A terminal allows you
@@ -51,8 +50,7 @@ Tools
 -   [40 OSX Terminal
     Tricks](https://computers.tutsplus.com/tutorials/40-terminal-tips-and-tricks-you-never-thought-you-needed--mac-51192)
 
-Markdown
---------
+## Markdown
 
 MarkDown is a format convention that produces nicely formatted text with
 simple ASCII text. Markdown has very good support for editors that
@@ -113,8 +111,7 @@ To qoute textc precede it with a "\>".
 Other syntax options can be found in the Format drop-down at the top of
 the screen between View and Plug-ins of macdown.
 
-Aquamacs
---------
+## Aquamacs
 
 There are many different versions of emacs available on OSX. Aquamacs is
 often used as it integrates nicely with the OSX GUI interface.
@@ -144,8 +141,7 @@ to get out without issue. Other Keyboard Shortcuts include:
 -   to delete the whole line from the position of the cursor to the end,
     press `CTRL-k`.
 
-Bash
-----
+## Bash
 
 Bash is pre-installed in OSX. A *bash* script contains *commands* in
 plain text. In order to create a bash script please decide for a
@@ -184,8 +180,7 @@ into the terminal. You will see it prints
 
     Hello World
 
-Arduino
--------
+## Arduino
 
 This installation is optional. In the event that there is a TTY error,
 you will need to install Arduino, since your Mac may be missing some
@@ -193,8 +188,7 @@ drivers that are included in Arduino. Simply go to
 [Arduino](https://www.arduino.cc/en/guide/macOSX) and follow the
 installation instructions.
 
-OSX Terminal
-------------
+## OSX Terminal
 
 [CoolTerm](https://learn.sparkfun.com/tutorials/terminal-basics/coolterm-windows-mac-linux)
 

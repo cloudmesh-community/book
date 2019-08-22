@@ -4,9 +4,10 @@
 
 ![](images/learning.png) **Learning Objectives**
 
-* This is one of the most important sections of the book, studdy it carefully.
-* learn how to use [SSH]{.index} keys
-* Learn how to use ssh-add and ssh-keycahin so you only have to type in your password once
+* This is a very important sections of the book, studdy it carefully.
+* learn how to use SSH keys
+* Learn how to use ssh-add and ssh-keycahin so you only have to type 
+  in your password once
 * Understand that each computer needs its own ssh key
 
 ---
@@ -130,17 +131,21 @@ If executed correctly, you will see some output similar to:
 Once, you have generated your key, you should have them in the `.ssh`
 directory. You can check it by:
 
-    $ cat ~/.ssh/id_rsa.pub
+```bash
+$ cat ~/.ssh/id_rsa.pub
+```
 
 If everything is normal, you will see something like:
 
-    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCXJH2iG2FMHqC6T/U7uB8kt
-    6KlRh4kUOjgw9sc4Uu+Uwe/kshuispauhfsjhfm,anf6787sjgdkjsgl+EwD0
-    thkoamyi0VvhTVZhj61pTdhyl1t8hlkoL19JVnVBPP5kIN3wVyNAJjYBrAUNW
-    4dXKXtmfkXp98T3OW4mxAtTH434MaT+QcPTcxims/hwsUeDAVKZY7UgZhEbiE
-    xxkejtnRBHTipi0W03W05TOUGRW7EuKf/4ftNVPilCO4DpfY44NFG1xPwHeim
-    Uk+t9h48pBQj16FrUCp0rS02Pj+4/9dNeS1kmNJu5ZYS8HVRhvuoTXuAY/UVc
-    ynEPUegkp+qYnR user@myemail.edu
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCXJH2iG2FMHqC6T/U7uB8kt
+6KlRh4kUOjgw9sc4Uu+Uwe/kshuispauhfsjhfm,anf6787sjgdkjsgl+EwD0
+thkoamyi0VvhTVZhj61pTdhyl1t8hlkoL19JVnVBPP5kIN3wVyNAJjYBrAUNW
+4dXKXtmfkXp98T3OW4mxAtTH434MaT+QcPTcxims/hwsUeDAVKZY7UgZhEbiE
+xxkejtnRBHTipi0W03W05TOUGRW7EuKf/4ftNVPilCO4DpfY44NFG1xPwHeim
+Uk+t9h48pBQj16FrUCp0rS02Pj+4/9dNeS1kmNJu5ZYS8HVRhvuoTXuAY/UVc
+ynEPUegkp+qYnR user@myemail.edu
+```
 
 The directory `~/.ssh` will also contain the private key `id_rsa` which you
 must not share or copy to another computer.
@@ -256,11 +261,15 @@ public key. To use the key across terminal shells you can start an ssh agent.
 
 To start the agent please use the following command:
 
-    eval `ssh-agent`
+```bash
+$ eval `ssh-agent`
+```
 
 or use
 
-    eval "$(ssh-agent -s)"
+```bash
+$ eval "$(ssh-agent -s)"
+```
 
 It is important that you use the backquote, located under the tilde
 (US keyboard), rather than the single quote. Once the agent is started
@@ -268,11 +277,15 @@ it will print a PID that you can use to interact with later
 
 To add the key use the command
 
-    ssh-add
+```bash
+$ ssh-add
+```
 
 To remove the agent use the command
 
-    kill $SSH_AGENT_PID
+```bash
+kill $SSH_AGENT_PID
+```
 
 To execute the command upon logout, place it in your `.bash_logout`
 (assuming you use bash).
@@ -280,15 +293,18 @@ To execute the command upon logout, place it in your `.bash_logout`
 On OSX you can also add the key permanently to the keychain if you do
 toe following:
 
-    ssh-add -K ~/.ssh/id_rsa
+```bash
+ssh-add -K ~/.ssh/id_rsa
+```
 
 Modify the file `.ssh/config` and add the following lines:
 
-    Host *
-      UseKeychain yes
-      AddKeysToAgent yes
-      IdentityFile ~/.ssh/id_rsa
-
+```
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+```
 
 ### Using SSH on Mac OS X
 
@@ -372,27 +388,33 @@ machine. To dod so the public key needs to be added to the
 The easiest way to do tis is to use the command
 `ssh-copy-id`.
 
-	$ ssh-copy-id user@host
+```bash
+$ ssh-copy-id user@host
+```
 
 Note that the first time you will have to authenticate with your password.
 
 Alternatively, if the ssh-copy-id is not available on your system, you
 can copy the file manually over SSH:
 
-	$ cat ~/.ssh/id_rsa.pub | ssh user@host 'cat >> .ssh/authorized_keys'
+```bash
+$ cat ~/.ssh/id_rsa.pub | ssh user@host 'cat >> .ssh/authorized_keys'
+```
 
 Now try:
 
-	$ ssh user@host
-
+```bash
+$ ssh user@host
+```
 and you will not be prompted for a password. However, if you set a
 passphrase when creating your SSH key, you will be asked to enter the
 passphrase at that time (and whenever else you log in in the future).
 To avoid typing in the password all the time we use the ssh-add
 command that we described earlier.
 
-	$ ssh-add
-
+```bash
+$ ssh-add
+```
 
 ## SSH Port Forwarding :o2:
 
@@ -590,46 +612,46 @@ Next we provide an example on how to use a config file
 
 Use SSH keys
 
--   You will need to use ssh keys to access remote machines
+* You will need to use ssh keys to access remote machines
 
 No blank passphrases
 
--   In most cases you must use a passphrase with your key. In fact if we
-    find that you use passwordless keys to futuresystems and to
-    chameleon cloud resources, we may elect to give you an *F* for the
-    assignment in question. There are some exceptions, but they will be
-    clearly communicated to you in class. You will as part of your cloud
-    drivers license test explain how you gain access to futuresystems
-    and chameleon to explicitly explain this point and provide us with
-    reasons what you can not do.
+* In most cases you must use a passphrase with your key. In fact if we
+  find that you use passwordless keys to futuresystems and to
+  chameleon cloud resources, we may elect to give you an*F* for the
+  assignment in question. There are some exceptions, but they will be
+  clearly communicated to you in class. You will as part of your cloud
+  drivers license test explain how you gain access to futuresystems
+  and chameleon to explicitly explain this point and provide us with
+  reasons what you can not do.
 
 A key for each server
 
--   Under no circumstances copy the same private key on multiple
-    servers. This violates security best practices. Create for each
-    server a new private key and use their public keys to gain access to
-    the appropriate server.
+* Under no circumstances copy the same private key on multiple
+  servers. This violates security best practices. Create for each
+  server a new private key and use their public keys to gain access to
+  the appropriate server.
 
 Use SSH agent
 
--   So as to not to type in all the time the passphrase for a key, we
-    recommend using ssh-agent to manage the login. This will be part of
-    your cloud drivers license.
+* So as to not to type in all the time the passphrase for a key, we
+  recommend using ssh-agent to manage the login. This will be part of
+  your cloud drivers license.
 
-    But shut down the ssh-agent if not in use
+  But shut down the ssh-agent if not in use
 
 keep an offline backup, put encrypt the drive
 
--   You may for some of our projects need to make backups of private
-    keys on other servers you set up. If you like to make a backup you
-    can do so on a USB stick, but make sure that access to the stick is
-    encrypted. Do not store anything else on that key and look it in a
-    safe place. If you lose the stick, recreate all keys on all
-    machines.
+* You may for some of our projects need to make backups of private
+  keys on other servers you set up. If you like to make a backup you
+  can do so on a USB stick, but make sure that access to the stick is
+  encrypted. Do not store anything else on that key and look it in a
+  safe place. If you lose the stick, recreate all keys on all
+  machines.
 
 
 ### References
 
--   [The Secure Shell: The Definitive Guide, 2 Ed (O'Reilly and
-    Associates)](http://shop.oreilly.com/product/9780596008956.do)
+* [The Secure Shell: The Definitive Guide, 2 Ed (O'Reilly and
+  Associates)](http://shop.oreilly.com/product/9780596008956.do)
 

@@ -31,8 +31,8 @@ BOOK:
       - "{file.chapter}/linux/perl.md"
       - "{file.chapter}/linux/refcards.md"
       - "{file.chapter}/linux/ssh.md"
-      - "{file.chapter}/linux/ssh-excerise.md"
       - "{file.chapter}/linux/ssh-futuresystems.md"
       - "{file.chapter}/linux/ssh-windows.md"
+      - "{file.chapter}/linux/ssh-excerise.md"
   - REFERENCES:
       - "{file.chapter}/empty.md"
