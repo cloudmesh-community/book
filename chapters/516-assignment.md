@@ -48,7 +48,6 @@ disadvantages of often working with outdated libraries. As developer of
 future software you may want to avoid this. If you use python from
 python.org we recommend that you use venv.
 
-
 ### Lab Activity Questionnaire
 
 In this activity you will be filling out a form with information about
@@ -56,16 +55,8 @@ you so we can asses show to best integrate you in this class.
 
 It will allso help us assess if you have done the Lab
 
-
-
-
-
-
 all other activities are geard
 towards supporting these assignments.
-
-
-
 
 ## Mini Projects that could Substitute a Chapter
 
@@ -101,7 +92,6 @@ not expect that the documentation is up to date. Residential students
 most frequently chose this as option. All programming in the project
 is done in python and weekly updates are discussed in meetings or in
 github.
-
 
 ## Project: Virtual Cluster
 
