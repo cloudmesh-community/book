@@ -353,39 +353,39 @@ Silk](https://aws.amazon.com/documentation/silk/?icmpid=docs_menu)
 (US)](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/welcome.html)
 
 
-###### AWS General Reference 
+###### AWS General Reference
 
-* [Regions and 
-Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) 
-* [Security 
-Credentials](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html) 
-* [ARNs & Service 
-Namespaces](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) 
-* [Service 
-Limits](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) 
-* [AWS 
-Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html) 
+* [Regions and
+Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html)
+* [Security
+Credentials](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html)
+* [ARNs & Service
+Namespaces](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)
+* [Service
+Limits](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)
+* [AWS
+Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
 
-###### AWS Management Console 
+###### AWS Management Console
 
-* [Resource 
-Groups](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/resource-groups.html) 
-* [Tag 
-Editor](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/tag-editor.html) 
+* [Resource
+Groups](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/resource-groups.html)
+* [Tag
+Editor](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/tag-editor.html)
 
 
 
-###### Resources 
+###### Resources
 
-* [AWS Quick Starts](https://aws.amazon.com/quickstart/) 
-* [AWS Whitepapers](https://aws.amazon.com/whitepapers/?icmpid=docs_menu) 
+* [AWS Quick Starts](https://aws.amazon.com/quickstart/)
+* [AWS Whitepapers](https://aws.amazon.com/whitepapers/?icmpid=docs_menu)
 * [AWS Training &
-Certification](https://aws.amazon.com/training/?icmpid=docs_menu) 
-* [AWS Case 
-Studies](https://aws.amazon.com/solutions/case-studies/?icmpid=docs_menu) 
-* [AWS Documentation on 
-Kindle](https://aws.amazon.com/documentation/kindle/?icmpid=docs_menu) 
-* [AWS Documentation Archive](https://aws.amazon.com/documentation/) 
+Certification](https://aws.amazon.com/training/?icmpid=docs_menu)
+* [AWS Case
+Studies](https://aws.amazon.com/solutions/case-studies/?icmpid=docs_menu)
+* [AWS Documentation on
+Kindle](https://aws.amazon.com/documentation/kindle/?icmpid=docs_menu)
+* [AWS Documentation Archive](https://aws.amazon.com/documentation/)
 
 
 

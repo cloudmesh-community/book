@@ -60,7 +60,7 @@ Spark Environment Variables
 
 Open up bashrc file and add environmental variables as follows.
 
-    emacs ~/.bashrc  
+    emacs ~/.bashrc
 
 Go to the last line and add the following content.
 
@@ -128,7 +128,7 @@ Then download Spark 2.3.2 as follows.
 
 Now extract the file,
 
-      tar xzf spark-2.3.2-bin-without-hadoop.tgz  
+      tar xzf spark-2.3.2-bin-without-hadoop.tgz
 
 Then add the environmental variables,
 
@@ -137,7 +137,7 @@ If you have already installed Spark with Hadoop by following section
 reference="s:s:install-spark-with-hadoop"} please update the current
 SPARK HOME variable with the new path.
 
-      emacs ~/.bashrc  
+      emacs ~/.bashrc
 
 Go to the last line and add the following content.
 

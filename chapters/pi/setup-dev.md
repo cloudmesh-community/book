@@ -15,7 +15,7 @@ $ apt-get install <program>
 
 Other editors include `emacs`, `vim`, `gedit` and so on. If you are concerned
 about space, use `vi` which is pre-installed. If you like to use other
-editors use the command we can install them respectively with 
+editors use the command we can install them respectively with
 
 ```bash
 $ apt-get install emacs
@@ -76,7 +76,7 @@ $ sudo -s
 $ bash configure
 $ make altinstall
 ```
-    
+
 ## Python IDLE
 
 Click Menu -> Programming -> Python 3 (IDLE), and you'll get a new

@@ -118,27 +118,27 @@ change python version
 Upgrade setuptools for pip install with
 
         $ pip3 install --upgrade setuptools
-        
+
 
 Test your python version with
 
         $ python --version
-        
+
 
 Check your python version alternatives
 
         $ update-alternatives --list python
-        
+
 
 If python2.7 is not in your alternatives, add it with
 
         $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
-        
+
 
 If python3.4 is not in your alternatives, add it with
 
         $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.4 2
-        
+
 
 Now make python3.4 to your default with
 
@@ -181,7 +181,7 @@ matplotlib\
 scipy\
 scikitlearn
 
-### cloudmesh-pi 
+### cloudmesh-pi
 
 cloudmesh-pi is a repository for our GrovePi module classes. These
 classes require Dexter software, so you need to either have Raspbian for
@@ -211,7 +211,7 @@ we already have draft
 
 ### Non Grove Sensors :o2:
 
-![No](images/no.png) 
+![No](images/no.png)
 
 Elegoo as example
 
@@ -249,7 +249,7 @@ VLC on macOS
 
 -   <http://www.mybigideas.co.uk/RPi/RPiCamera/>
 
--    
+-
 
     Camera on Pi
     ------------
@@ -292,13 +292,13 @@ reboot
 
     sudo i2cdetect -y 1
              0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-    00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
-    10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-    20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-    30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-    40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-    50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-    60: -- -- -- -- -- -- -- -- 68 -- -- -- -- -- -- -- 
+    00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+    10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    60: -- -- -- -- -- -- -- -- 68 -- -- -- -- -- -- --
     70: -- -- -- -- -- -- -- --
 
 create a file /etc/udev/rules.d/90-i2c.rules and add the line:
@@ -309,7 +309,7 @@ note: does not work
 
 instead we do
 
-    sudo chmod 666 /dev/i2c-1 
+    sudo chmod 666 /dev/i2c-1
 
 Set the I2C bus speed to 400KHz by adding to /boot/config.txt:
 
@@ -361,7 +361,7 @@ Compile RTIMULib Apps
     sudo make install
 
 
-    cd /home/pi/github/RTIMULib2/Linux/RTIMULibDemo    
+    cd /home/pi/github/RTIMULib2/Linux/RTIMULibDemo
     qmake clean
     make clean
     qmake

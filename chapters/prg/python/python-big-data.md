@@ -201,7 +201,7 @@ If we want to save the figure as PDF instead, we need to use the
 `PdfPages` module together with `savefig()`:
 
     >>> import matplotlib.patches as mpatches
-    >>> from matplotlib.backends.backend_pdf import PdfPages   
+    >>> from matplotlib.backends.backend_pdf import PdfPages
     >>> pp = PdfPages('hist.pdf')
     >>> fig.savefig(pp, format='pdf')
     >>> pp.close()

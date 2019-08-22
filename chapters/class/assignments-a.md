@@ -80,7 +80,7 @@ other accounts.
    You should remove the comments in your README.yml
 
 Naturally, we want you to learn about the various systems. The one you will
-need to use immediately is piazza. 
+need to use immediately is piazza.
 
 10. Learn about Piazza: please see [piazza](#piazza) for more details.
 
@@ -119,7 +119,7 @@ experience in piazza about your update. You must use the 64 bit
 version. If your OS doe snot support 64 bit, you need to make sure you
 update to 64 bit. Please consult the Windows documentation on
 this. Whatever you do, make a backup first. It may be easier to boot
-from an external HDD directly into ubuntu. 
+from an external HDD directly into ubuntu.
 
 > ![Warning](images/warning.png) *macOS users have typically an easy time as all TAs have access
 > to macOS machines. However the version must be the latest version. We do
@@ -130,7 +130,7 @@ from an external HDD directly into ubuntu.
 #### Outcomes
 
 Obviously this assignment has some implicit tasks and learning
-outcomes such as 
+outcomes such as
 
 * Learn how to use piazza.
 * Learn how to use github.
@@ -167,7 +167,7 @@ tasked to do the following:
    * <https://github.com/cloudmesh/technologies/issues>
 
    For each technology that you will add or improve you will add a new
-   issue. You will be using the title 
+   issue. You will be using the title
 
    ```Tech: Technology name```
 
@@ -360,7 +360,7 @@ Cloud Resources:
     -   AWS (you will be responsible for charges)
     -   Azure (you will be responsible for charges)
     -   virtualbox if you have a powerful computer and like to prototype
-    -   Raspberry PI's 
+    -   Raspberry PI's
     -   other clouds, please confirm with us.
 
     Access to clouds must be scripted and a cmd5 extension must be
@@ -405,7 +405,7 @@ project.
 
 - Take results in two different cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
-  created and deployed based on your documentation. 
+  created and deployed based on your documentation.
 
 - Create a Makefile with the tags deploy, run, kill, view, clean that
   deploys your environment, runs application, kills it, views the
@@ -416,7 +416,7 @@ project.
 
 - For python use a requirements.txt file also
 
-- For docker use a Dockerfile also 
+- For docker use a Dockerfile also
 
 - Write a report that includes the following sections
 
@@ -473,7 +473,7 @@ In case you chose a term Paper for I524 your maximum grade for the
 
 - Take results in two different cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
-  created and deployed based on your documentation. 
+  created and deployed based on your documentation.
 
 - Create a Makefile with the tags deploy, run, kill, view, clean that
   deploys your environment, runs application, kills it, views the
@@ -484,7 +484,7 @@ In case you chose a term Paper for I524 your maximum grade for the
 
 - For python use a requirements.txt file also
 
-- For docker use a Dockerfile also 
+- For docker use a Dockerfile also
 
 - Write a report that includes the following sections
 

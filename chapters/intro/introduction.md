@@ -39,7 +39,7 @@ Source: <https://www.domo.com/blog/data-never-sleeps-4-0/>
 ![Internet Population -> Future Data](Picture7.png)
 
 ![Internet vs World Population -> Future Data](Picture8.png)
- 
+
 
 ![Picture9.png](Picture9.png)
 

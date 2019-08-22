@@ -35,7 +35,7 @@ E.FaaS.6: GESTALT
 > Evaluate if it is important to have a section on GESTALT. If so provide
 > documentation and an example.
 
-E.FaaS.7: Chose your own 
+E.FaaS.7: Chose your own
 
 > Which FaaS framework do you find important? Write about it or improve an
 > existing section if it is already in the book. Make sure to provide an

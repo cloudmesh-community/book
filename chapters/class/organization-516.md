@@ -26,14 +26,14 @@ are truly outstanding.
 
 The content for this class will be available through a series of
 documents that will be regularly updated and are linked from this
-document. All communication is done with Piazza. 
+document. All communication is done with Piazza.
 
 
 ## First Week
 
 In the first week we will be introducing you how we communicate to you.
 Naturally you need to register for the class. Once you register you need
-to set up a number of services. 
+to set up a number of services.
 
 
 ## IoT Hardware
@@ -171,11 +171,11 @@ or
 
 or
 
-> "I wanted to sincerely thank you for all the guidance you provided 
-> in this course. My learning in cloud computing has enhanced a 
+> "I wanted to sincerely thank you for all the guidance you provided
+> in this course. My learning in cloud computing has enhanced a
 > lot because of this course and also because of your continuous guidance. ... "
 
-or 
+or
 
 > "Thanks to the material you thauhgt I got a job at Intel. ..."
 
@@ -183,8 +183,8 @@ Furthermore, you should know that the way we teach the class has also
 been adopted in STEM classes. As a result a team coached by Gregor von
 Laszewski won an award at the FLL Robotics World Championship. The
 certainly had lots of fun and integrated their own ideas into the
-project that won the award. This year the team has also won the best 
-presentation award in Indiana State, showcasing that presenting your 
+project that won the award. This year the team has also won the best
+presentation award in Indiana State, showcasing that presenting your
 results is an important aspect that others recognize earlly on.
 
 ### Uniqueness
@@ -202,7 +202,7 @@ to help as co-author.
 
 ## Parallel Tracks
 
-In this class we have three parallel tracks. 
+In this class we have three parallel tracks.
 
 ### Track 1: Practice
 
@@ -249,7 +249,7 @@ include naturally Cloud computing.
 
 This track will introduce you into how to write a sections, a chapter,
 and examples while conducting proper bibliography management. Knowing how to write is a
-preparation for your term project. 
+preparation for your term project.
 
 You will be writing a section of substantial length and
 difficulty using markdown.

@@ -16,7 +16,7 @@ E.SSH.3:
 > Please update them. Make sure to blend out your username and
 > fingerprints in the images. or invent some ...
 
-E.SSH.4 
+E.SSH.4
 
 : Get an account on futuresystems.org (if you are authorized to do
   so). Upload your key to <https://futuresystems.org>. Login to

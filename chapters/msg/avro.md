@@ -20,10 +20,10 @@ data with example modified from Apache Avro 1.8.2 Getting Started
 ## Download, Unzip and Install
 
 Please download the following zipped file
-[avro-python3-1.8.2.tar.gz](http://mirrors.sonic.net/apache/avro/avro-1.8.2/py3). 
+[avro-python3-1.8.2.tar.gz](http://mirrors.sonic.net/apache/avro/avro-1.8.2/py3).
 
-Unzip it and conduct the install 
-    
+Unzip it and conduct the install
+
 ```bash
 $ tar xvf avro-1.8.2.tar.gz
 $ cd avro-1.8.2
@@ -32,8 +32,8 @@ $ python setup.py install
 
 To check successful installation, import avro in python without error
 message:
-    
-```bash    
+
+```bash
 $ python
 >>> import avro
 ```
@@ -65,7 +65,7 @@ defined, which together with the name attribute defines the full name
 of the schema (cloudmesh.avro.Student in this case).
 
 
-## Serializing 
+## Serializing
 
 The following piece of python code illustrates serialization of some
 data
@@ -105,18 +105,18 @@ The code does the following:
   ```python
   schema = avro.schema.parse(open("student.avsc", "rb").read())
   ```
-  
+
   to:
 
   ```python
   schema = avro.schema.Parse(open("student.avsc", "rb").read())
   ```
-  
+
   since the method name has a different case in Python3.
 
 ## Deserializing
 
-The following python code illustrates deserialization 
+The following python code illustrates deserialization
 
     from avro.datafile import DataFileReader
     from avro.io import DatumReader
@@ -138,7 +138,7 @@ The output should look like:
 
 ```json
 {'name': 'Albert Zweistein',
- 'hid': 'hid-sp18-405', 
+ 'hid': 'hid-sp18-405',
  'age': 29,
  'project_name': 'hadoop with docker'
 }

@@ -238,7 +238,7 @@ then change it to another port:
 ports:
   - "8080:80"
   ```
-  
+
 After that, you should be able to run `make quick-start` successfully and then you can check the status of the running docker containers using:
 
 ```bash

@@ -1,4 +1,4 @@
-# Docopts 
+# Docopts
 
 Docopts in Julia are similar to Python, Ruby, and other languages.
 
@@ -13,7 +13,7 @@ REPL:
 Pkg.add("DocOpt")
 ```
 
-A list of the all approved packages is available at 
+A list of the all approved packages is available at
 
 <https://github.com/JuliaLang/METADATA.jl>
 

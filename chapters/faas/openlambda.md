@@ -364,7 +364,7 @@ always mapped within a lambda container.
 ## Configuration
 
 :o2: document the configuration parameters and how they interact.
-Also describe how to use the packages.txt file in a handler directory to 
+Also describe how to use the packages.txt file in a handler directory to
 specify dependencies.
 
 ## Architecture

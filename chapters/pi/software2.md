@@ -9,7 +9,7 @@ Please improve the sections.
 Targeted at the very beginner to Web programming, we will not use this
 here.
 
-* <https://googlecreativelab.github.io/coder> 
+* <https://googlecreativelab.github.io/coder>
 
 provide a section
 
@@ -173,4 +173,4 @@ Light scheme
 
 in /etc/grafana/grafana.ini uncomment line and set
 
-    default_theme = light 
+    default_theme = light

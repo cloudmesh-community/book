@@ -1,6 +1,6 @@
 # Language {#sec:python-language}
 
-## Statements and Strings 
+## Statements and Strings
 
 Let us explore the syntax of Python while starting with a print statement
 
@@ -188,7 +188,7 @@ fall_start = '08-21-2018'
 
 Convert the string to datetime format
 
-``` python 
+``` python
 datetime.strptime(fall_start, '%m-%d-%Y') \#
 datetime.datetime(2017, 8, 21, 0, 0)
 ```
@@ -197,11 +197,11 @@ Creating a list of strings as dates
 
 ``` python
 class_dates = [
-    '8/25/2017', 
-    '9/1/2017', 
-    '9/8/2017', 
-    '9/15/2017', 
-    '9/22/2017', 
+    '8/25/2017',
+    '9/1/2017',
+    '9/8/2017',
+    '9/15/2017',
+    '9/22/2017',
     '9/29/2017']
 ```
 
@@ -222,7 +222,7 @@ parse(fall_start) # datetime.datetime(2017, 8, 21, 0, 0)
 Use parse() on every element of the Class_dates string.
 
 ``` python
-[parse(x) for x in class_dates] 
+[parse(x) for x in class_dates]
 # [datetime.datetime(2017, 8, 25, 0, 0),
 #  datetime.datetime(2017, 9, 1, 0, 0),
 #  datetime.datetime(2017, 9, 8, 0, 0),
@@ -246,13 +246,13 @@ group of Series objects that share an index (the column names).
 import pandas as pd
 data = {
   'dates': [
-    '8/25/2017 18:47:05.069722', 
-    '9/1/2017 18:47:05.119994', 
-    '9/8/2017 18:47:05.178768', 
-    '9/15/2017 18:47:05.230071', 
-    '9/22/2017 18:47:05.230071', 
-    '9/29/2017 18:47:05.280592'], 
-  'complete': [1, 0, 1, 1, 0, 1]} 
+    '8/25/2017 18:47:05.069722',
+    '9/1/2017 18:47:05.119994',
+    '9/8/2017 18:47:05.178768',
+    '9/15/2017 18:47:05.230071',
+    '9/22/2017 18:47:05.230071',
+    '9/29/2017 18:47:05.280592'],
+  'complete': [1, 0, 1, 1, 0, 1]}
 df = pd.DataFrame(
   data,
   columns = ['dates','complete'])
@@ -379,7 +379,7 @@ names = [
 names[0]
 # 'Albert'
 # access the third element of the list
-names[2] 
+names[2]
 # 'Liz'
 ```
 
@@ -389,10 +389,10 @@ second before last element has index *-2* and so on:
 
 ``` python
 # access the last element of the list
-names[-1] 
+names[-1]
 # 'Abby'
 # access the second last element of the list
-names[-2] 
+names[-2]
 # 'John'
 ```
 
@@ -401,7 +401,7 @@ beginning and end of the slice separated by a colon
 
 ``` python
 # the middle elements, excluding first and last
-names[1:-1] 
+names[1:-1]
 # ['Jane', 'Liz', 'John']
 ```
 
@@ -433,7 +433,7 @@ names
 
 Find the index of the first occurrence of an element with 'index':
 
-``` python 
+``` python
 names.index('Liz') \# 2
 ```
 
@@ -517,7 +517,7 @@ unique_names[0]
 However, we can convert a set to a list easily:
 
 ``` python
-unique_names = list(unique_names) 
+unique_names = list(unique_names)
 unique_names [`Lincoln', `John', `Albert', `Liz', `Lindsay']
 unique_names[0]
 # `Lincoln'
@@ -568,10 +568,10 @@ Python module to time 100 operations that test for the existence of a
 member in either the list or set:
 
 ``` python
-timeit.timeit('random.randint(0, sys.maxint) in nums', 
+timeit.timeit('random.randint(0, sys.maxint) in nums',
               setup='import random; nums=%s' % str(nums_set), number=100)
 # 0.0004038810729980469
-timeit.timeit('random.randint(0, sys.maxint) in nums', 
+timeit.timeit('random.randint(0, sys.maxint) in nums',
               setup='import random; nums=%s' % str(nums_list), number=100)
 # 0.398054122924804
 ```
@@ -603,7 +603,7 @@ print("person['Age']: ", person['Age'])
 A convenient for to print by named attributes is
 
 ```
-print("{Name} {Age}'.format(**data)) 
+print("{Name} {Age}'.format(**data))
 ```
 This form of printing with the format statement and a reference to data
 increases readability of the print statements.
@@ -655,9 +655,9 @@ Both methods return lists. Notice, however, that the order in which the
 elements appear in the returned lists (Age, Name, Class) is different
 from the order in which we listed the elements when we declared the
 dictionary initially (Name, Age, Class). It is important to keep this in
-mind: 
+mind:
 
-> ![](images/warning.png) *You cannot 
+> ![](images/warning.png) *You cannot
 > make any assumptions about the order in which
 > the elements of a dictionary will be returned by the keys() and
 > values() methods*.
@@ -682,7 +682,7 @@ die_rolls = [
 ]
 # die_rolls
 # ['heads', 'tails', 'heads',
-#  'tails', 'heads', 'heads', 
+#  'tails', 'heads', 'heads',
    'tails', 'heads', 'heads', 'heads']
 ```
 
@@ -866,7 +866,7 @@ if __name__ == '__main__':
       a, b, c, valid_triangle
   ))
 ```
-      
+
 
 Assuming we save the program in a file called `check_triangle.py`, we can
 run it like so:
@@ -910,13 +910,13 @@ As oppose to normal functions in Python which are defined using the `def`
 keyword, lambda functions in Python are anonymous functions which do not have a
 name and are defined using the `lambda` keyword. The generic syntax of a lambda
 function is in form of`lambda arguments: expression`, as shown in the following
-example: 
+example:
 
 ``` python
 greeter = lambda x: print('Hello %s!'%x)
 print(greeter('Albert'))
 ```
-As you could probably guess, the result is: 
+As you could probably guess, the result is:
 
 ``` python
 Hello Albert!
@@ -925,14 +925,14 @@ Hello Albert!
 Now consider the following examples:
 
 ``` python
-power2 = lambda x: x ** 2 
+power2 = lambda x: x ** 2
 ```
 The `power2` function defined in the expression, is equivalent to the
-following definition: 
+following definition:
 
 ``` python
 def power2(x):
-    return x ** 2 
+    return x ** 2
 ```
 
 Lambda functions are useful for when you need a function for a short period of
@@ -944,7 +944,7 @@ that rhyme together. We want to filter the words that contain the word
 `name`. To achieve this, we pass the function `lambda x: 'name' in x` as the
 first argument. This lambda function returns `True` if the word `name` exists as
 a sub-string in the string `x`. The second argument of `filter` function is the
-array of names, i.e. `all_names`. 
+array of names, i.e. `all_names`.
 
 
 ``` python
@@ -954,7 +954,7 @@ print(filtered_names)
 # ['surname', 'rename', 'nickname']
 ```
 
-As you can see, the names are successfully filtered as we expected. 
+As you can see, the names are successfully filtered as we expected.
 
 In Python3, filter function returns a filter object or the iterator
 which gets lazily evaluated which means neither we can access the
@@ -964,12 +964,12 @@ the length of the filter object.
 
 ``` python
 list_a = [1, 2, 3, 4, 5]
-filter_obj = filter(lambda x: x % 2 == 0, list_a) 
+filter_obj = filter(lambda x: x % 2 == 0, list_a)
 # Convert the filer obj to a list
-even_num = list(filter_obj) 
-print(even_num) 
+even_num = list(filter_obj)
+print(even_num)
 # Output: [2, 4]
-```	
+```
 
 In Python, we can have a small usually a single liner anonymous
 function called Lambda function which can have any number of arguments
@@ -985,12 +985,12 @@ lambda arguments : expression
 ```
 
 For an example: a function in python
-	
 
-``` python	
+
+``` python
 def multiply(a, b):
 	return a*b
-		
+
 #call the function
 multiply(3*5) #outputs: 15
 ```
@@ -1002,11 +1002,11 @@ Lambda equivalent for this function would be:
 
 ``` python
 multiply = Lambda a, b : a*b
-	
+
 print(multiply(3, 5))
 # outputs: 15
 ```
-	
+
 Here a and b are the 2 arguments and a*b is the expression whose value
 is returned as an output.
 
@@ -1039,17 +1039,17 @@ Example:
 ```python
 def multiply(x):
 	return x * 2
-    
-map(multiply2, [2, 4, 6, 8])  
+
+map(multiply2, [2, 4, 6, 8])
 # Output [4, 8, 12, 16]
 ```
 
 If we want to write same function using Lambda
 
 ```python
-map(lambda x: x*2, [2, 4, 6, 8])  
+map(lambda x: x*2, [2, 4, 6, 8])
 # Output [4, 8, 12, 16]
-``` 
+```
 
 ### dictionary
 
@@ -1068,10 +1068,10 @@ map and lambda functions in following way:
 ```python
 map(lambda x : x['movie'], dict_movies)  # Output: ['avengers', 'superman']
 map(lambda x : x['comic'],  dict_movies)  # Output: ['marvel', 'dc']
-map(lambda x : x['movie'] == "avengers", dict_movies)  
+map(lambda x : x['movie'] == "avengers", dict_movies)
 # Output: [True, False]
 ```
-	
+
 In Python3, map function returns an iterator or map object which gets
 lazily evaluated which means neither we can access the elements of the
 map object with index nor we can use len() to find the length of the
@@ -1080,13 +1080,13 @@ to list as shown next:
 
 ```python
 map_output = map(lambda x: x*2, [1, 2, 3, 4])
-print(map_output) 
+print(map_output)
 # Output: map object: <map object at 0x04D6BAB0>
 list_map_output = list(map_output)
 print(list_map_output) # Output: [2, 4, 6, 8]
-```	
+```
 
-## Iterators 
+## Iterators
 
 In Python, an iterator protocol is defined using two methods:
 `__iter()__` and `next()`. The former returns the iterator object and
@@ -1103,7 +1103,7 @@ create a new class that follows the iterator protocol. We then use the
 class to generate `log2` of numbers:
 
 ``` python
-from math import log2 
+from math import log2
 
 class LogTwo:
     "Implements an iterator of log two"
@@ -1113,13 +1113,13 @@ class LogTwo:
 
     def __iter__(self):
         self.current_num = 1
-        return self 
+        return self
 
     def __next__(self):
         if self.current_num <= self.last:
             result = log2(self.current_num)
-            self.current_num += 1 
-            return result 
+            self.current_num += 1
+            return result
         else:
             raise StopIteration
 
@@ -1136,14 +1136,14 @@ its `__iter()__` function to a variable called `i`. Then by calling
 the `next()` function four times, we get the following output:
 
 ```bash
-$ python iterator.py 
+$ python iterator.py
 0.0
 1.0
 1.584962500721156
 2.0
 ```
 
-As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively. 
+As you probably noticed, the lines are `log2()` of 1, 2, 3, 4 respectively.
 
 
 ## Generators
@@ -1165,9 +1165,9 @@ def multiplyBy10(numbers):
 	for i in numbers:
 		result.append(i*10)
 	return result
-		
+
 new_numbers = multiplyBy10([1,2,3,4,5])
-	
+
 print new_numbers  #Output: [10, 20, 30, 40 ,50]
 ```
 
@@ -1177,9 +1177,9 @@ Now, if we want to use Generators here then we will make following changes.
 def multiplyBy10(numbers):
 	for i in numbers:
 		yield(i*10)
-		
+
 new_numbers = multiplyBy10([1,2,3,4,5])
-	
+
 print new_numbers  #Output: Generators object
 ```
 
@@ -1198,7 +1198,7 @@ has no 6th element to print.
 ```python
 print next(new_numbers)  #Output: 1
 ```
-	
+
 ### Generators using for loop
 
 If we now want to print the complete list of squared values then we
@@ -1208,13 +1208,13 @@ can just do:
 def multiplyBy10(numbers):
 	for i in numbers:
 		yield(i*10)
-		
-new_numbers = multiplyBy10([1,2,3,4,5])
-	
-for num in new_numbers:
-	print num  
 
-```				
+new_numbers = multiplyBy10([1,2,3,4,5])
+
+for num in new_numbers:
+	print num
+
+```
 
 The output will be:
 
@@ -1235,7 +1235,7 @@ can replace the complete function def with just:
 new_numbers = [x*10 for x in [1,2,3,4,5]]
 print new_numbers  #Output: [10, 20, 30, 40 ,50]
 ```
-	
+
 Here the point to note is square brackets [] in line 1 is very
 important. If we change it to () then again we will start getting
 Generators object.
@@ -1253,7 +1253,7 @@ can convert it into a list and then print it.
 new_numbers = (x*10 for x in [1,2,3,4,5])
 print list(new_numbers)  #Output: [10, 20, 30, 40 ,50]
 ```
-	
+
 But here if we convert this into a list then we loose on performance,
 which we will just see next.
 
@@ -1274,16 +1274,16 @@ returns the result[people] for 1 million.
 
 ``` python
 names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
-majors = ['Math', 
-          'CompScience', 
-          'Arts', 
-          'Business', 
+majors = ['Math',
+          'CompScience',
+          'Arts',
+          'Business',
           'Economics']
 
 # prints the memory before we run the function
 memory = mem_profile.memory_usage_resource()
 print (f'Memory (Before): {memory}Mb')
-	
+
 def people_list(people):
 	result = []
 	for i in range(people):
@@ -1297,13 +1297,13 @@ def people_list(people):
 
 t1 = time.clock()
 people = people_list(10000000)
-t2 = time.clock()		
+t2 = time.clock()
 
 # prints the memory after we run the function
 memory = mem_profile.memory_usage_resource()
 print (f'Memory (After): {memory}Mb')
 print ('Took {time} seconds'.format(time=t2-t1))
-	
+
 #Output
 Memory (Before): 15Mb
 Memory (After): 318Mb
@@ -1314,17 +1314,17 @@ I am just giving approximate values to compare it with next execution
 but we just try to run it we will see a serious consumption of memory
 with good amount of time taken.
 
-``` python	
+``` python
 names = ['John', 'Jack', 'Adam', 'Steve', 'Rick']
-majors = ['Math', 
-          'CompScience', 
-          'Arts', 
-          'Business', 
+majors = ['Math',
+          'CompScience',
+          'Arts',
+          'Business',
           'Economics']
 
 # prints the memory before we run the function
 memory = mem_profile.memory_usage_resource()
-print (f'Memory (Before): {memory}Mb')	
+print (f'Memory (Before): {memory}Mb')
 def people_generator(people):
 	for i in xrange(people):
 		person = {
@@ -1333,16 +1333,16 @@ def people_generator(people):
             'major' : randon.choice(majors)
         }
 		yield person
-			
+
 t1 = time.clock()
 people = people_list(10000000)
-t2 = time.clock()		
+t2 = time.clock()
 
 # prints the memory after we run the function
 memory = mem_profile.memory_usage_resource()
 print (f'Memory (After): {memory}Mb')
 print ('Took {time} seconds'.format(time=t2-t1))
-	
+
 #Output
 Memory (Before): 15Mb
 Memory (After): 15Mb

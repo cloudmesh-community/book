@@ -2,19 +2,19 @@
 
 ![No](images/no.png)
 
-Amazon SageMaker is a fully managed machine learning service. Using Amazon SageMaker, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment. 
+Amazon SageMaker is a fully managed machine learning service. Using Amazon SageMaker, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment.
 
 Amazon SageMaker provides following advantages:
 
-- An integrated Jupyter authoring notebook instance for easy access to your data sources 
+- An integrated Jupyter authoring notebook instance for easy access to your data sources
   for exploration and analysis, so you do not have to manage servers
-- Common machine learning algorithms that are optimized to run efficiently against 
+- Common machine learning algorithms that are optimized to run efficiently against
   extremely large data in a distributed environment
-- Native support for bring-your-own-algorithms and frameworks, Amazon SageMaker 
+- Native support for bring-your-own-algorithms and frameworks, Amazon SageMaker
   offers flexible distributed training options that adjust to your specific workflows
-- Deploy a model into a secure and scalable environment by launching it with a one 
+- Deploy a model into a secure and scalable environment by launching it with a one
   click from the Amazon SageMaker console
-- Training and hosting are billed by minutes of usage, with 
+- Training and hosting are billed by minutes of usage, with
   no minimum fees and no upfront commitments.
 
 ## Machine Learning with Amazon SageMaker
@@ -23,7 +23,7 @@ We explained a typical machine learning workflow and summarizes how you accompli
 
 In general, machine learning is all about you *teach* a computer to make predictions, or inferences. As a first step, you use an algorithm and example data to train a model. Then you integrate your model into your application to generate inferences in real time and at scale. In a production environment, a model typically learns from millions of example data items and produces inferences in hundreds to less than 20 milliseconds.
 
-The following ![No](images/no.png) use proper image notation with caption and citation as discussed in notation.md 
+The following ![No](images/no.png) use proper image notation with caption and citation as discussed in notation.md
 diagram illustrates the typical workflow for creating a machine learning model:
 
 ![AWS SageMaker](images/machine_learning_workflow.png)
@@ -40,7 +40,7 @@ Data scientists: often spend a lot of time exploring and preprocessing, or "wran
 
 - Prepare or transform: the data—To improve performance, you might perform additional data transformations. For example, you might choose to combine attributes. If your model predicts the conditions that require de-icing an aircraft instead of using temperature and humidity attributes separately, you might combine those attributes into a new attribute to get a better model.
 
-In Amazon SageMaker, you preprocess example data in a Jupyter notebook on your notebook instance. You use your notebook to fetch your dataset, explore it and prepare it for model training. 
+In Amazon SageMaker, you preprocess example data in a Jupyter notebook on your notebook instance. You use your notebook to fetch your dataset, explore it and prepare it for model training.
 
 Train a model—Model training includes both training and evaluating the model, as follows:
 
@@ -49,7 +49,7 @@ Train a model—Model training includes both training and evaluating the model, 
 
 You also need compute resources for training. Depending on the size of your training dataset and how quickly you need the results, you can use resources ranging from a single, small general-purpose instance to a distributed cluster of GPU instances. For more information, refer the sub-section Train a Model with Amazon SageMaker.
 
- 
+
 Evaluating the model—After you've trained your model, you evaluate it to determine whether the accuracy of the inferences is acceptable. In Amazon SageMaker, you use either the AWS SDK for Python (Boto) or the high-level Python library that Amazon SageMaker provides to send requests to the model for inferences.
 
 You use a Jupyter notebook in your Amazon SageMaker notebook instance to train and evaluate your model.
@@ -120,7 +120,7 @@ bucket = 'bucket-name' # Use the name of your s3 bucket here
 
 Now download the MNIST dataset to your notebook instance. Then review the data, transform it, and upload it to your S3 bucket.
 
-You transform the data by changing its format from numpy.array to RecordIO. The RecordIO format is more efficient for the algorithms provided by Amazon SageMaker. 
+You transform the data by changing its format from numpy.array to RecordIO. The RecordIO format is more efficient for the algorithms provided by Amazon SageMaker.
 
 #### MNIST dataset
 

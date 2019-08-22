@@ -45,7 +45,7 @@
    year={2014},
    month=feb,
    url={https://github.com/JuliaPy/PyCall.jl}
-}	
+}
 
 @Article{@parallel-computing-julia,
    authors={Kulyabov, D. S.; Gevorkyan, M. N.; Korolkova, A. V.; Sevastianov, L. A.},

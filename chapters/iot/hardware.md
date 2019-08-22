@@ -126,7 +126,7 @@ Optionally you may want to get additional sensors such as wheel Encoders
     contribute by creating documentation we distribute in class for
     points)
 
--   -   
+-   -
 
 Sensor Kit
 ----------

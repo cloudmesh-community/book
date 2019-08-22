@@ -1,9 +1,9 @@
 # Cloud Foundry - Open Source PaaS
- 
+
 ---
- 
+
 Keywords: Cloud Foundry, Open Source, PaaS
- 
+
 ---
 
 ## Cloud Foundry Overview
@@ -33,7 +33,7 @@ infrastructure-agnostic architecture, Cloud Foundry, as shown in
 Services* [@Badola2015].
 
 ![No](images/no.png) Image needs to be replaced as no longer available
- 
+
 ![Cloud Foundry - Open PaaS [@harris_2011]](images/Cloud-Foundry-as-Open-PaaS.jpg){#fig:OpenPaaS}
 
 ### Category: Clouds

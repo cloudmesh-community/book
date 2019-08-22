@@ -132,9 +132,9 @@ In Ubuntu the environmental variables are setup in a file called bashrc
 at it can be accessed the following way
 
     emacs ~/.bashrc
-  
+
   Now add the following to your `~/.bashrc` file
-  
+
     export JAVA_HOME=~/cloudmesh/bin/jdk1.8.0_191
     export HADOOP_HOME=~/cloudmesh/bin/hadoop-3.1.1
     export YARN_HOME=$HADOOP_HOME

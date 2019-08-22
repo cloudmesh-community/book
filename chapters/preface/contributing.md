@@ -8,16 +8,16 @@ everything is stored in github in the following directory:
 
 Content can be contributed via pull requests that are either created
 while you directly edit the content via the github Web interface, or a
-cloned version of the document. 
+cloned version of the document.
 
 For simplicity we focus on contribution via the Web interface. Naturally
 you need to have a github.com account and login. After you have found a
 text that you like to improve, please edit it via the Web interface and
 than generate a pull request. We will than review the request and
-approve or comment on it. To make it even easier the ebook contains 
+approve or comment on it. To make it even easier the ebook contains
 
-* cloud :cloud: or 
-* github ![Github](images/github.png) 
+* cloud :cloud: or
+* github ![Github](images/github.png)
 
 symbols that
 indicate the start of a document that you can modify. You can simply

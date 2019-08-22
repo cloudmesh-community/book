@@ -18,10 +18,10 @@ The Producers continually push data to Kinesis data streams and the consumers pr
 
 ## Amazon Kinesis Limitations
 
-Note the following constraints in using Amazon Kinesis Streams 
+Note the following constraints in using Amazon Kinesis Streams
 - The maximum  data blob size  (the data payload before Base64-encoding) in a record is 1 megabyte (MB).
 - One shard can be a maximum of 1000 PUT records/second.
-- By default, data streams collected are accessible up to 24 hours. However, by enabling extended data retention, data can be available up to 7 days. 
+- By default, data streams collected are accessible up to 24 hours. However, by enabling extended data retention, data can be available up to 7 days.
 
 ## Setting up for Amazon Kinesis Data Streams
 
@@ -40,12 +40,12 @@ Step1 - Login to AWS and create the Kinesis data streams
 A Kinesis stream is an ordered sequence of data records. To add data to a Kinesis stream, configure producers using the Streams PUT API or the Amazon Kinesis Producer Library (KPL).
 
 Step2 – Click the create stream and fill the required fields such as stream name and number of shared and then click on create button.
- 
+
 
 ![AWS CreateKenesisStream](images/CreateKinesisStream.png?raw=true)
 
 ![AWS DataStreamDetails](images/DataStreamDetails.png?raw=true)
- 
+
 
 Step3 – Set up users on kinesis stream. Create new users and assign a policy to each user.
 

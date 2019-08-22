@@ -24,7 +24,7 @@ Detailed documentation for it is located
 * <https://www.vagrantup.com/docs/index.html>
 
 
-A list of *boxes* is available from 
+A list of *boxes* is available from
 
 * <https://app.vagrantup.com/boxes/search>
 
@@ -44,7 +44,7 @@ download and install the appropriate version:
 ### macOS
 
 On MacOS, download the dmg image, and click on it. You will find a pkg
-in it that you double click. After installation vagrant is installed in 
+in it that you double click. After installation vagrant is installed in
 
 * `/usr/local/bin/vagrant`
 
@@ -65,13 +65,13 @@ in the terminal command or in your `~/.bash_profile`
 
 ### Windows :o2:
 
-![No](images/no.png) ![Question](images/question.png) 
+![No](images/no.png) ![Question](images/question.png)
 
 ![Question](images/question.png) students contribute
 
 ### Linux :o2:
 
-![No](images/no.png) ![Question](images/question.png) 
+![No](images/no.png) ![Question](images/question.png)
 
 ![Question](images/question.png) students contribute
 
@@ -85,7 +85,7 @@ host$ vagrant up
 host$ vagrant ssh
 ```
 
-Once you are logged in you can test the version of python with 
+Once you are logged in you can test the version of python with
 
 ```bash
 vagrant@ubuntu-bionic:~$ sudo apt-get update
@@ -101,7 +101,7 @@ vagrant@ubuntu-bionic:~$ sudo apt-get install python3-pip
 ```
 
 To install the light weight idle development environment in case you do
-not want o use pyCharm, please use 
+not want o use pyCharm, please use
 
 ```bash
 vagrant@ubuntu-bionic:~$ sudo apt-get install idle-python
@@ -121,7 +121,7 @@ exit command
 ```
 
 It does not terminate the VM. You can use from your host system the
-commands such as 
+commands such as
 
 ```bash
 host$ vagrant status

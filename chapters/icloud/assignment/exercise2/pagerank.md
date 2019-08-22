@@ -1,9 +1,9 @@
 # QuickStart to PageRank
 
-This assignment provides a PageRank tutorial running on Docker Hadoop. 
+This assignment provides a PageRank tutorial running on Docker Hadoop.
 
 ## Description
-	  
+
 PageRank calculates a numerical value for each element of a hyperlinked set of
 webpages, which reflects the probability that a random surfer will access that
 page. The process of PageRank can be understood as a Markov Chain which
@@ -231,7 +231,7 @@ Hadoop CleanUptResults starts...
 ########################################################
 ```
 
-## Result 
+## Result
 
 The script also downloaded result files from HDFS to your local directory.
 ```

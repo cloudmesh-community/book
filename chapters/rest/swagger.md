@@ -80,13 +80,13 @@ Let us assume the json schema looks like:
 The output the swagger toolbox creates is
 
     ---
-      required: 
+      required:
         - "host"
         - "command"
-      properties: 
-        host: 
+      properties:
+        host:
           type: "string"
-        command: 
+        command:
           type: "string"
 
 As you can see it is far from complete, but it could be used to get you

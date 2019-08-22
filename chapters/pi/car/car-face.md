@@ -1,9 +1,9 @@
 # Raspberry Pi Robot Car with Face Recognition and Identification
 
-| Mani Kumar Kagita 
-| mkagita@iu.edu 
-| Indiana University - Bloomington 
-| hid: SP18-711 
+| Mani Kumar Kagita
+| mkagita@iu.edu
+| Indiana University - Bloomington
+| hid: SP18-711
 
 Keywords: I523, HID319, SP18-711, Robot Car, Face Recognition
 
@@ -127,7 +127,7 @@ human face in an image with multiple images in the database. Face
 recognition techniques have more advantages than any other biometrics.
 With well-sophisticated algorithms and coding, face recognition has a
 high recognition rate or high identification rate of more than
-90% [@riddhi2013]. @fig:face-recognition shows the various levels 
+90% [@riddhi2013]. @fig:face-recognition shows the various levels
 of face recognition process [@viola2001].
 
 
@@ -438,7 +438,7 @@ Setup as follows:
             "subject_id":"User",
             "gallery_name":"MyGallery"
             }
-            
+
 
 With the completed steps, Kairos face recognition application will be
 created and ready for face recognition from the images.
@@ -482,7 +482,7 @@ The captured image is to be sent to Kairos for face recognition and so
 we will set the resolution to a lower level. This will help to send the
 image faster over the network without any delay.
 
-    ## initialize the camera 
+    ## initialize the camera
     #camera capture
     camera = PiCamera()
     camera.resolution = (160, 120)
@@ -518,14 +518,14 @@ detection[]{label="F:sideview2"}](images/Face-detect-sideview2.png)
     time.sleep(0.1)
     lastTime = time.time()*1000.0
     ## capture frames from the camera
-    for frame in camera.capture_continuous(rawCapture, \ 
+    for frame in camera.capture_continuous(rawCapture, \
     	format="bgr", use_video_port=True):
-    	## grab the raw NumPy array representing the image, 
-    	## then initialize the timestamp and 
+    	## grab the raw NumPy array representing the image,
+    	## then initialize the timestamp and
     	## occupied/unoccupied text
         image = frame.array
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        
+
         ## Detect faces in the image
         faces = faceCascade.detectMultiScale(
         	gray,
@@ -551,12 +551,12 @@ detection[]{label="F:sideview2"}](images/Face-detect-sideview2.png)
     	os.system('espeak "Human face detected"')
     	inputImage= "./foo.jpg"
     	del camera
-    	break 
-    	## clear the stream in preparation for the 
+    	break
+    	## clear the stream in preparation for the
     	#next frame
         rawCapture.truncate(0)
-        
-    	## if the `q` key was pressed, break from 
+
+    	## if the `q` key was pressed, break from
     	#the loop
         if key == ord("q"):
             del camera
@@ -588,7 +588,7 @@ platform.
             'gallery_name': KairosGallery,
             'subject_id': name
         }
-        r = requests.post('http://api.kairos.com/enroll', \ 
+        r = requests.post('http://api.kairos.com/enroll', \
             headers=headers, data=json.dumps(data))
         print(r.text)
         return(None)
@@ -600,13 +600,13 @@ platform.
 
         #def recognize(self, image_path):
         ##    return self.__recognizeKairos(image_path)
-        
+
         def recognizeKairos(self, image):
             with open(image, "rb") as image_file:
                 encoded_string = base64.b64encode\
                 (image_file.read())
             with open(self.config, "rb") as config_file:
-                config = json.loads \ 
+                config = json.loads \
                 (config_file.read())
             data = {
                 "image": encoded_string,
@@ -625,7 +625,7 @@ variables. When the image is recognized, a success transaction message
 will be obtained from Kairos along with subject id and face id.
 
     try:
-        r = requests.post("https://api.kairos.com/recognize", \ 
+        r = requests.post("https://api.kairos.com/recognize", \
                      headers=headers, data=json.dumps(data))
         data = r.json()
         print data
@@ -673,7 +673,7 @@ corresponding events, then Robot car will greet the user with his name.
     if __name__ == "__main__":
         r = Recognize(KAIROS, "kairos_config.json")
         x = r.recognizeKairos(inputImage)
-        
+
         #print x
         #print x["person"]
         #print x[0]["person"]
@@ -681,15 +681,15 @@ corresponding events, then Robot car will greet the user with his name.
         #print string1
         os.system('espeak "Hello...""{}"'.format(string1))
         if x[0]["person"] == "unidentified":
-            os.system('espeak "Please enter your \ 
+            os.system('espeak "Please enter your \
                       name to Register"')
-            nameToRegister = raw_input("Please enter \ 
+            nameToRegister = raw_input("Please enter \
                             your name to Register :")
             binaryData = open(inputImage, 'rb').read()
             print('Enrolling to Kairos')
             trainKairos(binaryData, nameToRegister)
-            print "You are now Registered as :", \ 
-            nameToRegister os.system('espeak \ 
+            print "You are now Registered as :", \
+            nameToRegister os.system('espeak \
             "Hello...""{}"'.format(nameToRegister))
             exit()
 
@@ -700,7 +700,7 @@ corresponding events, then Robot car will greet the user with his name.
 
     GPIO.setmode(GPIO.BOARD)
 
-    #Connecting two wheel motors to Raspberry Pi GPIO 
+    #Connecting two wheel motors to Raspberry Pi GPIO
     #Left Motor (Motor 1) connections
     Motor1A = 16 #(GPIO 23 - Pin 16)
     Motor1B = 18 #(GPIO 24 - Pin 18)
@@ -723,10 +723,10 @@ corresponding events, then Robot car will greet the user with his name.
     def forward():
     	GPIO.output(Motor1A,GPIO.HIGH)
     	GPIO.output(Motor1B,GPIO.LOW)
-    	GPIO.output(Motor1Enable,GPIO.HIGH) 
+    	GPIO.output(Motor1Enable,GPIO.HIGH)
     	GPIO.output(Motor2A,GPIO.HIGH)
     	GPIO.output(Motor2B,GPIO.LOW)
-    	GPIO.output(Motor2Enable,GPIO.HIGH) 
+    	GPIO.output(Motor2Enable,GPIO.HIGH)
 
     	sleep(2)
 
@@ -777,16 +777,16 @@ corresponding events, then Robot car will greet the user with his name.
 
 ### Controling Robot Car using webserver
 
-    from flask import Flask, render_template, \ 
+    from flask import Flask, render_template, \
     request, redirect, url_for, make_response
     import RPi.GPIO as GPIO
     import motors
 
     #set up GPIO
-    GPIO.setmode(GPIO.BOARD) 
+    GPIO.setmode(GPIO.BOARD)
 
     #set up flask server
-    app = Flask(__name__) 
+    app = Flask(__name__)
 
     #when the root IP is selected, return index.html page
     @app.route('/')
@@ -794,12 +794,12 @@ corresponding events, then Robot car will greet the user with his name.
 
     	return render_template('index.html')
 
-    #recieve which pin to change from the button press on \ 
+    #recieve which pin to change from the button press on \
     #index.html
-    #each button returns a number that triggers a command in \ 
+    #each button returns a number that triggers a command in \
     #this function
     #
-    #Uses methods from motors.py to send commands to the GPIO \ 
+    #Uses methods from motors.py to send commands to the GPIO \
     ## to operate the motors
     @app.route('/<changepin>', methods=['POST'])
     def reroute(changepin):
@@ -822,7 +822,7 @@ corresponding events, then Robot car will greet the user with his name.
     	return(response)
 
     #set up the server in debug mode to the port 8000
-    app.run(debug=True, host='0.0.0.0', port=8000) 
+    app.run(debug=True, host='0.0.0.0', port=8000)
 
 ## Applications
 

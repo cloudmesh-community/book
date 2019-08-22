@@ -1,6 +1,6 @@
-# Week 3: Python for Cloud Computing 
+# Week 3: Python for Cloud Computing
 
-Start of Project Selection 
+Start of Project Selection
 
 
 ## Lab Activities
@@ -12,11 +12,11 @@ Start of Project Selection
 python -m venv ~/ENV3
 ```
 
-* How do you activate the virtual env in your OS? 
+* How do you activate the virtual env in your OS?
 
 * How do you modify your `.bashrc` file?
 
-* Why do you need to use `venv` for this class? 
+* Why do you need to use `venv` for this class?
 
   - This is the same answer as why people use venv?
 
@@ -30,10 +30,10 @@ This Lab has only to be done by those useing anaconda.
   us assume you start 1000 vms all using anacondaconda. What is the overhead in
   wasted space on these machines if you just wanted to use as simple
   regular python program on these VMs?
-  
+
 * How do you find out how much space is used by your program and its
   libraries?
- 
+
 * How do you switch between anaconda and regular python 3.7.4
 
 * What is the difference between conda, miniconda, anaconda?
@@ -41,7 +41,7 @@ This Lab has only to be done by those useing anaconda.
 
 ### Dicts
 
-We like to remind you about dicts in python. 
+We like to remind you about dicts in python.
 
 Read up upon dicts and experiment with them.
 
@@ -49,8 +49,8 @@ Read up upon dicts and experiment with them.
 
 ### f-Strings in Python 3
 
-Python 3 provides some very nice way of using variable names as part 
-of string manupulations. 
+Python 3 provides some very nice way of using variable names as part
+of string manupulations.
 
 * Locate the PEP 498 and study it:
 <https://docs.python.org/3/whatsnew/3.6.html#whatsnew36-pep498>
@@ -75,13 +75,13 @@ d = {"test": "Gregor"}
 VERBOSE(d)
 ```
 
-In one of the examples `locals()` is used. 
+In one of the examples `locals()` is used.
 
 * WHat does loacls do?
 * What does ** in the format statement do?
 
 
-### Classes 
+### Classes
 
 * What is self in classes?
 * Why does self needs to be used in regular method definitions?

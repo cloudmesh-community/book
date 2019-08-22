@@ -1,5 +1,5 @@
 ## Kubernetes Cluster in Raspberry Pi - automation
-This section of the tutorial is targeting to automate the Kubernetes cluster setup in 
+This section of the tutorial is targeting to automate the Kubernetes cluster setup in
 Raspberry pi.
 
 # opt_setup.sh
@@ -22,13 +22,13 @@ It needs four params:
    - dns server ip
 
 ``
-sh dhcp_setup.sh <hostname> <nodeIP> <routerIP> <dnsIP> 
+sh dhcp_setup.sh <hostname> <nodeIP> <routerIP> <dnsIP>
 ``
 
 # docker_setup.sh
 
 Now Install docker and turn off the swap memory.
-This shell will reboot the node per recommendation of the references. 
+This shell will reboot the node per recommendation of the references.
 
 ``
 sh docker_setup.sh

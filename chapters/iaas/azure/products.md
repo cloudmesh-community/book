@@ -127,7 +127,7 @@ any variety, volume, or velocity
 
 Source: <https://support.microsoft.com/en-us/allproducts>
 
-Core IaaS 
+Core IaaS
 [Compute](https://azure.microsoft.com/en-us/product-categories/compute/ "Compute")
 access to cloud resources.
 
@@ -206,7 +206,7 @@ Source: <https://support.microsoft.com/en-us/allproducts>
 [Databases](https://azure.microsoft.com/en-us/product-categories/databases/
 "Databases") - Support rapid growth and innovate faster with secure,
  enterprise-grade, and fully managed database services
- 
+
 -
     [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/ "Azure Cosmos DB") - Globally distributed,
     multi-model database for any
@@ -636,7 +636,7 @@ Source: <https://support.microsoft.com/en-us/allproducts>
 
 Protect your enterprise from advanced threats across hybrid cloud
 workloads
- 
+
 -
     [Security Center](https://azure.microsoft.com/en-us/services/security-center/) -
     Unify security management and enable advanced threat protection

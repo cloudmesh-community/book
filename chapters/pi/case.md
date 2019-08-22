@@ -1,4 +1,4 @@
-# Pi Cluster Form Factor 
+# Pi Cluster Form Factor
 
 In this chapter we will discuss a number of opportunities to build small
 scale compute and cloud cluster resources using Raspberry Pi's.
@@ -165,7 +165,7 @@ following links:
 * <http://www.newark.com/bitscope/bb04b/quattro-pi-board-raspberry-pi/dp/95Y0643>
 * <http://linuxgizmos.com/rpi-expansion-boards-support-up-to-40-pi-clusters/>
 
-## Build Your Own 5 Node Pi Cluster 
+## Build Your Own 5 Node Pi Cluster
 
 To experiment with building an elementary cluster one does not need to
 have a big budget. Such clusters are often dedicated to research tasks

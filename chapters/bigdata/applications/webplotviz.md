@@ -8,34 +8,34 @@ You can find more information about PlotViz at the [PlotViz Section](plotviz.md)
 
 ## Motivation
 
-The motivation of WebPlotViz is similar to PlotViz which is that the human eye 
-is very good at pattern recognition and can see structure in data. Although 
-most Big data is higher dimensional than 3, all data can be transformed by 
-dimension reduction techniques to 3D and one can check analysis like clustering 
+The motivation of WebPlotViz is similar to PlotViz which is that the human eye
+is very good at pattern recognition and can see structure in data. Although
+most Big data is higher dimensional than 3, all data can be transformed by
+dimension reduction techniques to 3D and one can check analysis like clustering
 and/or see structure missed in a computer analysis.
 
 ## How to use
 
 In order to use WebPlotViz you need to host the application as a server, this
-can be done on you local machine or a application server. The source code for 
-WebPlotViz can be found at the git hub repo [WebPlotViz git Repo](https://github.com/DSC-SPIDAL/WebPViz). 
+can be done on you local machine or a application server. The source code for
+WebPlotViz can be found at the git hub repo [WebPlotViz git Repo](https://github.com/DSC-SPIDAL/WebPViz).
 
 However there is a online version that is hosted on Indiana university servers
 that you can access and use. The online version is available at [WebPlotViz](https://spidal-gw.dsc.soic.indiana.edu/)
 
-In order to use the services of WebPlotViz you would need to first create a 
-simple account by providing your email and a password. Once the account is 
-created you can login and upload files to WebPlotViz to be visualized. 
+In order to use the services of WebPlotViz you would need to first create a
+simple account by providing your email and a password. Once the account is
+created you can login and upload files to WebPlotViz to be visualized.
 
 ## Uploading files to WebPlotViz
 
 While WebPlotViz does accept several file formats as inputs, we will look at the
-most simple and easy to use format that users can use. Files are uploaded as 
+most simple and easy to use format that users can use. Files are uploaded as
 ".txt" files with the following structure. Each value is separated by a space.
 
 Index x_val y_val z_val cluster_id label
 
-Example file: 
+Example file:
 
 0  0.155117377  0.011486086  -0.078151964  1  l1\
 1  0.148366394  0.010782429  -0.076370584  2  l2\
@@ -51,15 +51,15 @@ Example file:
 
 Once you have the data file properly formatted you can upload the file through
 the WebPlotViz GUI. Once you login to your account you should see a Green
-"Upload" button on the top left corner. Once you press it you would see a 
-form that would allow you to choose the file, provide a description and select a 
+"Upload" button on the top left corner. Once you press it you would see a
+form that would allow you to choose the file, provide a description and select a
 group to which the file needs to be categorized into. If you do not want to
 assign a group you can simply use the default group which is picked by default
 
-Once you have uploaded the file the file should appear in the list of plots 
-under the heading "Artifacts". Then you can click on the name or the "View" 
+Once you have uploaded the file the file should appear in the list of plots
+under the heading "Artifacts". Then you can click on the name or the "View"
 link to view the plot. Clicking on "View" will directly take you to the full
-view of the plot while clicking on the name will show and summary of the plot 
+view of the plot while clicking on the name will show and summary of the plot
 with a smaller view of the plot (Plot controls are not available in the smaller
 view). You can view how the sample dataset looks like after uploading at the
 following link. @fig:webpviz-11 shows a screen shot of the plot.
@@ -77,14 +77,14 @@ will allow you to control all the settings of the clusters.
 
 ## Features
 
-WebPlotViz has many features that allows the users to control and customize 
+WebPlotViz has many features that allows the users to control and customize
 the plots, Other than simple 2D/3D plots, WebPlotViz also supports time series
 plots and Tree structures. The examples section will show case examples for each
 of these. The data formats required for these plots are not covered here.
 
 ![WebPlotViz Features labeled](../../images/webplotviz_label.png){#fig:webpviz-labled}
 
-Some of the features are labeled in @fig:webpviz-labled. Please note that @fig:webpviz-labled 
+Some of the features are labeled in @fig:webpviz-labled. Please note that @fig:webpviz-labled
 shows an time series plot so the controls for playback shown in the figure are not
 available in single plots.
 
@@ -93,13 +93,13 @@ page of the hosted WebPlotViz site [WebPlotViz](https://spidal-gw.dsc.soic.india
 
 ## Examples
 
-Now we will take a look at a couple of examples that were visualized using 
-WebPlotViz. 
+Now we will take a look at a couple of examples that were visualized using
+WebPlotViz.
 
 ### Fungi gene sequence clustering example
 
-The following example is a plot from clustering done on a set on fungi gene 
-sequence data. 
+The following example is a plot from clustering done on a set on fungi gene
+sequence data.
 
 [Fungi Gene Sequence Plot](https://spidal-gw.dsc.soic.indiana.edu/public/resultsets/703979151)
 

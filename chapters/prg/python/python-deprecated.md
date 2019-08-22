@@ -9,17 +9,17 @@ it.
 To run the container and loginto the command prompt please use
 
 ```bash
-$ docker run --rm -it cloudmesh/pyenv:1.0  /bin/bash 
+$ docker run --rm -it cloudmesh/pyenv:1.0  /bin/bash
 ```
 
-To switch between the python versions use the command 
+To switch between the python versions use the command
 
 ```bash
 container> ENV2
 container> ENV3
 ```
 
-where container indicates that the command is executed 
+where container indicates that the command is executed
 
 ### Creating the container locally
 

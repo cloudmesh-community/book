@@ -47,7 +47,7 @@ This course recommends using virtualenvs in Python. It is therefore important to
 note that Pycall "uses the virtualenv it was built with by default, even if you
 switch virtualenvs." [@www-pycall]. This applies to virtual environments created
 using [`venv`] and [`virtualenv`]. Python virtual environments created by conda
-are not currently supported. 
+are not currently supported.
 
 To continue interoperability with Julia while using a different virtualenv,
 Pycall recommends switching virualenvs and running `rm(Pkg.dir("PyCall","deps",
@@ -69,8 +69,8 @@ $ # start Julia
 
 ### Java in Julia
 Julia interacts with Java through the use of the JavaCall.jl package.
-[@javacall] "Static and instance method with primitve or object arguments and 
-return values are callable." [@www-javacall]. 
+[@javacall] "Static and instance method with primitve or object arguments and
+return values are callable." [@www-javacall].
 
 **Installation**
 

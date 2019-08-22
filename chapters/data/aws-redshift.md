@@ -19,10 +19,10 @@ The architecture of AWS RedShift in a warehouse is best described in [@AmazonRed
 Client applications interact with the leader node of the RedShift cluster, which in turn talks to the compute nodes. Fast interconnect network exists between nodes of the cluster. The cluster can be scaled up or down, changing the number of nodes.
 A compute node is paritioned into slices (memory + disk, of each node). A portion of the workload is executed by the slice. Data is stored on the compute nodes. There is no separation of compute and storage.
 
-Nodes can consist of 2 node types Dense Storage (DS) that consist of HDDs (hard disks) for high data volumes, or Dense Compute (DC) that consist of SSDs (solid state disks) for medium to low data volumes, but higher performance. Storage is locally attached to the machines. 
+Nodes can consist of 2 node types Dense Storage (DS) that consist of HDDs (hard disks) for high data volumes, or Dense Compute (DC) that consist of SSDs (solid state disks) for medium to low data volumes, but higher performance. Storage is locally attached to the machines.
 
-RedShift stores data in the form of Tables, and supports SQL Queries against the data. It has foreign keys and constraints like other relational databases. Columnar storage allows for repeated values (for example country or state identifiers) to be stored using column compression (and stored only once). Such an arrangement works best with Star Schemas or Fact and Dimension data models. 
-RedShift supports very efficient import from S3 to allow for the loading part of the ETL processes. 
+RedShift stores data in the form of Tables, and supports SQL Queries against the data. It has foreign keys and constraints like other relational databases. Columnar storage allows for repeated values (for example country or state identifiers) to be stored using column compression (and stored only once). Such an arrangement works best with Star Schemas or Fact and Dimension data models.
+RedShift supports very efficient import from S3 to allow for the loading part of the ETL processes.
 To allow for optimal data retrieval, and data collocation, RedShift provides for 3 table optimization mechanisms. These mechanisms are important especially for larger tables (typically those with > 100M rows)
 * Sort Keys : AWS RedShift does not support Indexes, but has sort keys instead. Data on the disk is stored in the sorted order of the sort-keys. Examples of sort-keys could be zip codes, or dates, or join columns. These can be decided based on the kinds of queries.
 * Distribution Keys : To decide which rows go into which node slices of the cluster, AWS RedShift uses distribution keys. Designing the distribution keys should target collocation of rows from joining tables, and also target even data distribution among slices of the cluster (to allow for parallel query execution).
@@ -30,7 +30,7 @@ To allow for optimal data retrieval, and data collocation, RedShift provides for
 
 ## Query Processing in AWS RedShift
 
-The query syntax is very similar to PostgreSQL. So much, that you can use a PostgreSQL JDBC driver to interact with RedShift, but for production usage, better to use the Amazon JDBC driver. Amazon says in the documentation that RedShift is based on PostgreSQL 8.x. 
+The query syntax is very similar to PostgreSQL. So much, that you can use a PostgreSQL JDBC driver to interact with RedShift, but for production usage, better to use the Amazon JDBC driver. Amazon says in the documentation that RedShift is based on PostgreSQL 8.x.
 
 The leader node processes queries, creates the parse tree and execution plan. The query is send to the compute node, only when the data required by the query is present on that compute node. Each compute node execute the query fragments, and send the result back to the leader node, that does the final aggregation.
 When a query gets fired again, the leader node may retrieve results from the results cache instead of re-executing the query.
@@ -113,7 +113,7 @@ cmd> <path_to_terraform>\terraform apply DESTmyredshiftcluster.tfplan
 
 DB Tools like SQL-Workbench [@SQLClientSQLWorkb19], and Squirrel SQL [@SQLClientSQuirreL1] can used to interact with RedShift (and most other databases), by downloading the RedShift JDBC driver, and configuring it in the tool.
 
-The AWS Console page for the RedShift cluster displays the JDBC connection string that can be used. 
+The AWS Console page for the RedShift cluster displays the JDBC connection string that can be used.
 
 Here is a sample schema creation script that can be used to create tables and populate them in AWS RedShift. (This is modified from Oracle's demo EMP/DEPT script).
 

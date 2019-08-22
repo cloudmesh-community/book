@@ -11,7 +11,7 @@ You will see something like the following:
 
 ```python
 python
-Python 3.7.1 (default, Nov 24 2018, 14:27:15) 
+Python 3.7.1 (default, Nov 24 2018, 14:27:15)
 [Clang 10.0.0 (clang-1000.11.45.5)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
@@ -40,12 +40,12 @@ There are many different types beyond what we have seen so far, such as
 **dictionaries**s, **list**s, **set**s. One handy way of using the
 interactive python is to get the type of a value using type():
 
-```python 
->>> type(42) 
-<type 'int'> 
->>> type('hello') 
-<type 'str'> 
->>> type(3.14) 
+```python
+>>> type(42)
+<type 'int'>
+>>> type('hello')
+<type 'str'>
+>>> type(3.14)
 <type 'float'>
 ```
 
@@ -95,7 +95,7 @@ reflects Python's underlying philosophy.
 Other functions such as the division also behave differently. Thus we
 use
 
-```python 
+```python
 from __future__ import division
 ```
 
@@ -105,12 +105,12 @@ newcomer to the language might find more intuitive. In Python 2,
 division / is *floor division* when the arguments are integers, meaning
 that the following
 
-```python 
+```python
 (5 / 2 == 2) is True
 ```
 
 In Python 3, division / is a floating point division, thus
 
-```python 
+```python
 (5 / 2 == 2.5) is True
 ```

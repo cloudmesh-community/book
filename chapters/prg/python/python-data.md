@@ -20,7 +20,7 @@ for standard data to use either json or yaml.
 import pickle
 
 flavor = {
-    "small": 100, 
+    "small": 100,
     "medium": 1000,
     "large": 10000
     }
@@ -39,7 +39,7 @@ flavor = pickle.load( open( "data.p", "rb" ) )
 To read text files into a variable called content you can use
 
 ```python
-content = open('filename.txt', 'r').read() 
+content = open('filename.txt', 'r').read()
 ```
 
 You can also use the following code while using the convenient `with`
@@ -88,7 +88,7 @@ Using pandas you can read them as follows.
 
 ```python
 import pandas as pd
-df = pd.read_csv("example.csv") 
+df = pd.read_csv("example.csv")
 ```
 
 There are many other modules and libraries that include CSV read
@@ -140,9 +140,9 @@ with open('strings.json') as f:
     content = json.load(f)
 ```
 
-### XML 
+### XML
 
-XML format is extensively used to transport data across the web. It has a hierarchical data format, and can be represented in the form of  a tree. 
+XML format is extensively used to transport data across the web. It has a hierarchical data format, and can be represented in the form of  a tree.
 
 A Sample XML data looks like:
 
@@ -156,7 +156,7 @@ A Sample XML data looks like:
 </data>
 ```
 
-Python provides the ElementTree XML API to parse and create XML data. 
+Python provides the ElementTree XML API to parse and create XML data.
 
 Importing XML data from a file:
 
@@ -195,7 +195,7 @@ Modifying XML data using ElementTree:
   tree.write('output.xml')
   ```
 
-Other Python modules used for parsing XML data include 
+Other Python modules used for parsing XML data include
 
 * minidom: <https://docs.python.org/3/library/xml.dom.minidom.html>
 * BeautifulSoup: <https://www.crummy.com/software/BeautifulSoup/>
@@ -278,9 +278,9 @@ To install Beautiful Soup, use `pip` command as follows:
 $ pip install beautifulsoup4
 ```
 
-In order to process HTML documents, a parser is required. Beautiful Soup 
-supports the HTML parser included in Python’s standard library, but it also 
-supports a number of third-party Python parsers like the `lxml` parser which 
+In order to process HTML documents, a parser is required. Beautiful Soup
+supports the HTML parser included in Python’s standard library, but it also
+supports a number of third-party Python parsers like the `lxml` parser which
 is commonly used [@www-beautifulsoup].
 
 Following command can be used to install `lxml` parser
@@ -289,7 +289,7 @@ Following command can be used to install `lxml` parser
 $ pip install lxml
 ```
 
-To begin with, we import the package and instantiate an object as follows 
+To begin with, we import the package and instantiate an object as follows
 for a html document `html_handle`:
 
 ```python
@@ -297,13 +297,13 @@ from bs4 import BeautifulSoup
 soup = BeautifulSoup(html_handle, `lxml`)
 ```
 
-Now, we will discuss a few functions, attributes and methods of Beautiful Soup. 
+Now, we will discuss a few functions, attributes and methods of Beautiful Soup.
 
 **prettify function**
 
-`prettify()` method will turn a Beautiful Soup parse tree into a nicely 
+`prettify()` method will turn a Beautiful Soup parse tree into a nicely
 formatted Unicode string, with a separate line for each HTML/XML tag and string.
-It is analgous to `pprint()` function. The object created above can be viewed 
+It is analgous to `pprint()` function. The object created above can be viewed
 by printing the prettfied version of the document as follows:
 
 ```python
@@ -312,8 +312,8 @@ print(soup.prettify())
 
 **tag Object**
 
-A `tag` object refers to tags in the HTML document. It is possible to go down to  
-the inner levels of the DOM tree. To access a tag `div` under the tag `body`, 
+A `tag` object refers to tags in the HTML document. It is possible to go down to
+the inner levels of the DOM tree. To access a tag `div` under the tag `body`,
 it can be done as follows:
 
 ```python
@@ -321,13 +321,13 @@ body_div = soup.body.div
 print(body_div.prettify())
 ```
 
-The `attrs` attribute of the tag object returns a dictionary of all the defined 
+The `attrs` attribute of the tag object returns a dictionary of all the defined
 attributes of the HTML tag as keys.
 
 
 **has_attr() method**
 
-To check if a `tag` object has a specific attribute, `has_attr()` method can 
+To check if a `tag` object has a specific attribute, `has_attr()` method can
 be used.
 
 ```python
@@ -338,15 +338,15 @@ if body_div.has_attr('p'):
 **tag object attributes**
 
 * `name` - This attribute returns the name of the tag selected.
-* `attrs` - This attribute returns a dictionary of all the defined attributes 
+* `attrs` - This attribute returns a dictionary of all the defined attributes
   of the HTML tag as keys.
-* `contents` - This attribute returns a list of contents enclosed within the 
+* `contents` - This attribute returns a list of contents enclosed within the
   HTML tag
-* `string` - This attribute which returns the text enclosed within the HTML 
+* `string` - This attribute which returns the text enclosed within the HTML
   tag. This returns `None` if there are multiple children
-* `strings` - This overcomes the limitation of `string` and returns a 
+* `strings` - This overcomes the limitation of `string` and returns a
   generator of all strings enclosed within the given tag
-  
+
 Following code showcases usage of the above discussed attributes:
 
 ```python
@@ -367,7 +367,7 @@ for s in body_tag.strings:
 
 **Searching the Tree**
 
-* `find()` function takes a filter expression as argument and returns 
+* `find()` function takes a filter expression as argument and returns
   the first match found
 * `findall()` function returns a list of all the matching elements
 
@@ -419,7 +419,7 @@ openssl installed on your system, this can be achieved as follows.
     # Step 1. Creating a file with data
     echo "Big Data is the future." > file.txt
 
-    # Step 2. Create the pem 
+    # Step 2. Create the pem
     openssl rsa -in ~/.ssh/id_rsa -pubout  > ~/.ssh/id_rsa.pub.pem
 
     # Step 3. look at the pem file to illustrate how it looks like (optional)

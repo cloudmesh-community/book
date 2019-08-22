@@ -2,7 +2,7 @@
 
 ---
 
-> ![Warning](images/warning.png) *The issues are automatically created from Github Issues. Please change them directly 
+> ![Warning](images/warning.png) *The issues are automatically created from Github Issues. Please change them directly
 in github.*
 
 Do not modify the table. or this file

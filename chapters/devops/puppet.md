@@ -21,7 +21,7 @@ as shown in @fig:InfrastructureAsCode.
 ![Infrastructure As Code [@hid-sp18-523-puppetimages]](images/IAC.jpg){#fig:InfrastructureAsCode}
 
 
-Puppet uses push and pull configuration in centralized manner 
+Puppet uses push and pull configuration in centralized manner
 as shown in @fig:push-pull-config.
 
 ![push-pull-config Image [@hid-sp18-523-puppetimages]](images/push-pull-configuration.jpg){#fig:push-pull-config}
@@ -39,12 +39,12 @@ configuration.
 
 ## Master slave architecture
 
-Puppet uses master slave architecture as shown in @fig:master-slave. 
-Puppet server is called as master node and client nodes are called as puppet 
-agent. Agents poll server at regular interval and pulls updated  configuration 
-from master. Puppet Master is highly available. It supports multi master 
-architecture. If one master goes down backup  master stands up to serve 
-infrastructure. 
+Puppet uses master slave architecture as shown in @fig:master-slave.
+Puppet server is called as master node and client nodes are called as puppet
+agent. Agents poll server at regular interval and pulls updated  configuration
+from master. Puppet Master is highly available. It supports multi master
+architecture. If one master goes down backup  master stands up to serve
+infrastructure.
 
 #### Workflow
 
@@ -85,7 +85,7 @@ Prerequisite - Atleast 4 GB RAM, Ubuntu box ( standalone or VM )
 
 First, we need to make sure that Puppet master and agent is able
 to communicate with each other. Agent should be able to connect
-with master using name. 
+with master using name.
 
 configure Puppet server name and map with its ip address
 
@@ -104,8 +104,8 @@ try to connect
 
 press `<ctrl> + O` to Save and `<ctrl> + X` to exit
 
-Next, we will install Puppet on Ubuntu  server. 
-We will execute the following commands to pull from official 
+Next, we will install Puppet on Ubuntu  server.
+We will execute the following commands to pull from official
 Puppet Labs Repository
 
 ```bash
@@ -138,28 +138,28 @@ JAVA_ARGS="-Xms3g -Xmx3g -XX:MaxPermSize=256m"
 ```
 
 press `<ctrl> + O` to Save and `<ctrl> + X` to exit
- 
-By default Puppet server is configured to use port 8140 to 
+
+By default Puppet server is configured to use port 8140 to
 communicate with agents. We need to make sure that firewall
-allows to communicate on this port 
+allows to communicate on this port
 
 ```bash
 $ sudo ufw allow 8140
 ```
 
-next, we start Puppet server 
+next, we start Puppet server
 
 ```bash
 $ sudo systemctl start puppetserver
 ```
 
-Verify server has started 
+Verify server has started
 
 ```
 $ sudo systemctl status puppetserver
 ```
 
-we would see "active(running)" if server has started successfully 
+we would see "active(running)" if server has started successfully
 
 ```
 $ sudo systemctl status puppetserver
@@ -202,7 +202,7 @@ configure Puppet agent to start at boot time
 $ sudo systemctl enable puppet
 ```
 
-next, we need to change Puppet agent config file so that 
+next, we need to change Puppet agent config file so that
 it can connect to Puppet master and communicate
 
 ```bash
@@ -221,34 +221,34 @@ server = <my-puppet-server>
 server = <my-puppet-server>
 ```
 
-*Note: my-puppet-server is the name that we have set up in 
+*Note: my-puppet-server is the name that we have set up in
  /etc/hosts file while installing Puppet server. And certname
  is the name of the certificate*
- 
- Puppet agent sends certificate signing request to Puppet server 
+
+ Puppet agent sends certificate signing request to Puppet server
  when it connects first time. After signing request, Puppet server
  trusts and identifies agent for managing.
- 
- execute following command on Puppet Master in order to see all 
+
+ execute following command on Puppet Master in order to see all
  incoming cerficate signing requests
- 
+
  ```bash
  $ sudo /opt/puppetlabs/bin/puppet cert list
  ```
- 
+
  we will see something like
- 
+
  ```
  $ sudo /opt/puppetlabs/bin/puppet cert list
   "puppet-agent" (SHA256) 7B:C1:FA:73:7A:35:00:93:AF:9F:42:05:77:9B:
   05:09:2F:EA:15:A7:5C:C9:D7:2F:D7:4F:37:A8:6E:3C:FF:6B
 ```
- 
+
 * Note that puppet-agent is the name that we have configured for certname
 in puppet.conf file*
 
 After validating that request is from valid and trusted agent, we sign
-the request 
+the request
 
 ```bash
 $ sudo /opt/puppetlabs/bin/puppet cert sign puppet-agent
@@ -262,15 +262,15 @@ Signing Certificate Request for:
   "puppet-agent" (SHA256) 7B:C1:FA:73:7A:35:00:93:AF:9F:42:05:77:9B:05:09:2F:
   EA:15:A7:5C:C9:D7:2F:D7:4F:37:A8:6E:3C:FF:6B
 Notice: Signed certificate request for puppet-agent
-Notice: Removing file Puppet::SSL::CertificateRequest puppet-agent 
+Notice: Removing file Puppet::SSL::CertificateRequest puppet-agent
 at '/etc/puppetlabs/puppet/ssl/ca/requests/puppet-agent.pem'
 ```
- 
-Next, we will verify installation and make sure that Puppet server
-is able to push configuration to agent. Puppet uses domian specific language 
-code written in manifests ( .pp ) file 
 
-create default manifest site.pp file 
+Next, we will verify installation and make sure that Puppet server
+is able to push configuration to agent. Puppet uses domian specific language
+code written in manifests ( .pp ) file
+
+create default manifest site.pp file
 
 ```bash
 $ sudo nano /etc/puppetlabs/code/environments/production/manifests/site.pp
@@ -288,8 +288,8 @@ file {'/tmp/it_works.txt':                        # resource type file and filen
 
 domain specific language is used to create it_works.txt file inside /tmp
 directory on agent node. ensure directive make sure that file is present.
-It creates one if file is removed. mode directive specifies that process 
-has write permission on file to make changes. content directive is used to 
+It creates one if file is removed. mode directive specifies that process
+has write permission on file to make changes. content directive is used to
 define content of the changes applied [hid-sp18-523-open]
 
 next, we test the installation on single node
@@ -298,7 +298,7 @@ next, we test the installation on single node
 sudo /opt/puppetlabs/bin/puppet agent --test
 ```
 
-successfull verification will display 
+successfull verification will display
 
 ```
 Info: Using configured environment 'production'
@@ -306,16 +306,16 @@ Info: Retrieving pluginfacts
 Info: Retrieving plugin
 Info: Caching catalog for puppet-agent
 Info: Applying configuration version '1548305548'
-Notice: /Stage[main]/Main/File[/tmp/it_works.txt]/content: 
+Notice: /Stage[main]/Main/File[/tmp/it_works.txt]/content:
 --- /tmp/it_works.txt    2019-01-27 02:32:49.810181594 +0000
 +++ /tmp/puppet-file20190124-9628-1vy51gg    2019-01-27 02:52:28.717734377 +0000
 @@ -0,0 +1 @@
 +it works!
 
 Info: Computing checksum on file /tmp/it_works.txt
-Info: /Stage[main]/Main/File[/tmp/it_works.txt]: Filebucketed /tmp/it_works.txt 
+Info: /Stage[main]/Main/File[/tmp/it_works.txt]: Filebucketed /tmp/it_works.txt
 to puppet with sum d41d8cd98f00b204e9800998ecf8427e
-Notice: /Stage[main]/Main/File[/tmp/it_works.txt]/content: content 
+Notice: /Stage[main]/Main/File[/tmp/it_works.txt]/content: content
 changed '{md5}d41d8cd98f00b204e9800998ecf8427e' to '{md5}0375aad9b9f3905d3c545b500e871aca'
 Info: Creating state file /opt/puppetlabs/puppet/cache/state/state.yaml
 Notice: Applied catalog in 0.13 seconds
@@ -325,11 +325,11 @@ Notice: Applied catalog in 0.13 seconds
 ## Installation of Puppet Enterprise
 
 
-First, download `ubuntu-<version and arch>.tar.gz` and CPG 
-signature file on Ubuntu VM  
+First, download `ubuntu-<version and arch>.tar.gz` and CPG
+signature file on Ubuntu VM
 
 
-Second, we import Puppet public key 
+Second, we import Puppet public key
 
 ```bash
 $ wget -O - https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub | gpg --import
@@ -339,7 +339,7 @@ we will see ouput as
 
 ```
 --2019-02-03 14:02:54--  https://downloads.puppetlabs.com/puppet-gpg-signing-key.pub
-Resolving downloads.puppetlabs.com 
+Resolving downloads.puppetlabs.com
 (downloads.puppetlabs.com)... 2600:9000:201a:b800:10:d91b:7380:93a1
 , 2600:9000:201a:800:10:d91b:7380:93a1, 2600:9000:201a:be00:10:d91b:7380:93a1, ...
 Connecting to downloads.puppetlabs.com (downloads.puppetlabs.com)
@@ -348,11 +348,11 @@ HTTP request sent, awaiting response... 200 OK
 Length: 3139 (3.1K) [binary/octet-stream]
 Saving to: ‘STDOUT’
 
--                   100%[===================>]   3.07K  --.-KB/s    in 0s      
+-                   100%[===================>]   3.07K  --.-KB/s    in 0s
 
 2019-02-03 14:02:54 (618 MB/s) - written to stdout [3139/3139]
 
-gpg: key 7F438280EF8D349F: "Puppet, Inc. Release Key 
+gpg: key 7F438280EF8D349F: "Puppet, Inc. Release Key
 (Puppet, Inc. Release Key) <release@puppet.com>" not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
@@ -369,7 +369,7 @@ we will see successful output as
 ```
 pub   rsa4096 2016-08-18 [SC] [expires: 2021-08-17]
       6F6B 1550 9CF8 E59E 6E46  9F32 7F43 8280 EF8D 349F
-uid           [ unknown] Puppet, Inc. Release Key 
+uid           [ unknown] Puppet, Inc. Release Key
 (Puppet, Inc. Release Key) <release@puppet.com>
 sub   rsa4096 2016-08-18 [E] [expires: 2021-08-17]
 ```
@@ -386,7 +386,7 @@ successful output will show as
 gpg: assuming signed data in 'puppet-enterprise-2019.0.2-ubuntu-18.04-amd64.tar.gz'
 gpg: Signature made Fri 25 Jan 2019 02:03:23 PM EST
 gpg:                using RSA key 7F438280EF8D349F
-gpg: Good signature from "Puppet, Inc. Release Key 
+gpg: Good signature from "Puppet, Inc. Release Key
 (Puppet, Inc. Release Key) <release@puppet.com>" [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
@@ -419,49 +419,49 @@ guided installation or text based installation
 ```
 ~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
 $ sudo ./puppet-enterprise-installer
-~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64 
+~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
 ~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
 =============================================================
     Puppet Enterprise Installer
 =============================================================
 
 ## Installer analytics are enabled by default.
-## To disable, set the DISABLE_ANALYTICS environment variable and rerun 
-this script. 
+## To disable, set the DISABLE_ANALYTICS environment variable and rerun
+this script.
 For example, "sudo DISABLE_ANALYTICS=1 ./puppet-enterprise-installer".
-## If puppet_enterprise::send_analytics_data is set to false in your 
+## If puppet_enterprise::send_analytics_data is set to false in your
 existing pe.conf, this is not necessary and analytics will be disabled.
 
 Puppet Enterprise offers three different methods of installation.
 
 [1] Express Installation (Recommended)
 
-This method will install PE and provide you with a link at the end 
+This method will install PE and provide you with a link at the end
 of the installation to reset your PE console admin password
 
-Make sure to click on the link and reset your password before proceeding 
+Make sure to click on the link and reset your password before proceeding
 to use PE
 
 [2] Text-mode Install
 
-This method will open your EDITOR (vi) with a PE config file (pe.conf) 
+This method will open your EDITOR (vi) with a PE config file (pe.conf)
 for you to edit before you proceed with installation.
 
-The pe.conf file is a HOCON formatted file that declares parameters 
+The pe.conf file is a HOCON formatted file that declares parameters
 and values needed to install and configure PE.
 We recommend that you review it carefully before proceeding.
 
 [3] Graphical-mode Install
 
-This method will install and configure a temporary webserver to walk 
+This method will install and configure a temporary webserver to walk
 you through the various configuration options.
 
-NOTE: This method requires you to be able to access port 3000 on this 
+NOTE: This method requires you to be able to access port 3000 on this
 machine from your desktop web browser.
 
 =============================================================
 
- How to proceed? [1]: 
+ How to proceed? [1]:
 
 -------------------------------------------------------------------
 ```
@@ -473,17 +473,17 @@ when successfull, we will see output as
 ```
 ## We're preparing the Web Installer...
 
-2019-02-02T20:01:39.677-05:00 Running command: 
+2019-02-02T20:01:39.677-05:00 Running command:
 mkdir -p /opt/puppetlabs/puppet/share/installer/installer
-2019-02-02T20:01:39.685-05:00 Running command: 
-cp -pR /home/ritesh/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64/* 
+2019-02-02T20:01:39.685-05:00 Running command:
+cp -pR /home/ritesh/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64/*
 /opt/puppetlabs/puppet/share/installer/installer/
 
 ## Go to https://<localhost>:3000 in your browser to continue installation.
 
 ```
 
-By default Puppet Enterprise server uses 3000 port. Make sure that 
+By default Puppet Enterprise server uses 3000 port. Make sure that
 firewall allows communication on port 3000
 
 ```bash
@@ -501,13 +501,13 @@ This can be configured in confile file also.
 
 Enter console admin password
 
-Click continue 
+Click continue
 
 we will get confirm the plan screen with following information
 
 ```
 The Puppet master component
-Hostname 
+Hostname
 ritesh-ubuntu-pe
 DNS aliases
 <mypserver>
@@ -517,7 +517,7 @@ click continue and verify installer validation screen.
 click `Deploy Now` button
 
 Puppet enterprise will be installed and will display message
-on screen 
+on screen
 
 ```
 Puppet agent ran sucessfully
@@ -538,11 +538,11 @@ Following message will be displayed if successfull.
 
 ```
 2019-02-02T22:08:12.662-05:00 - [Notice]: Applied catalog in 339.28 seconds
-2019-02-02T22:08:13.856-05:00 - [Notice]: 
+2019-02-02T22:08:13.856-05:00 - [Notice]:
 Sent analytics: pe_installer - install_finish - succeeded
-* /opt/puppetlabs/puppet/bin/puppet infrastructure configure  
---detailed-exitcodes --environmentpath /opt/puppetlabs/server/data/environments 
---environment enterprise --no-noop --install=2019.0.2 --install-method='repair'  
+* /opt/puppetlabs/puppet/bin/puppet infrastructure configure
+--detailed-exitcodes --environmentpath /opt/puppetlabs/server/data/environments
+--environment enterprise --no-noop --install=2019.0.2 --install-method='repair'
 * returned: 2
 
 ## Puppet Enterprise configuration complete!
@@ -551,33 +551,33 @@ Sent analytics: pe_installer - install_finish - succeeded
 Documentation: https://puppet.com/docs/pe/2019.0/pe_user_guide.html
 Release notes: https://puppet.com/docs/pe/2019.0/pe_release_notes.html
 
-If this is a monolithic configuration, run 'puppet agent -t' to complete the 
+If this is a monolithic configuration, run 'puppet agent -t' to complete the
 setup of this system.
 
-If this is a split configuration, install or upgrade the remaining PE components, 
-and then run puppet agent -t on the Puppet master, PuppetDB, and PE console, 
+If this is a split configuration, install or upgrade the remaining PE components,
+and then run puppet agent -t on the Puppet master, PuppetDB, and PE console,
 in that order.
 ~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64
-2019-02-02T22:08:14.805-05:00 Running command: /opt/puppetlabs/puppet/bin/puppet 
+2019-02-02T22:08:14.805-05:00 Running command: /opt/puppetlabs/puppet/bin/puppet
 agent --enable
 ~/pe/puppet-enterprise-2019.0.2-ubuntu-18.04-amd64$
 ```
 
-This is called as monolithic installation as all components of 
-Puppet Enterprise such as Puppet master, PuppetDB and Console are 
+This is called as monolithic installation as all components of
+Puppet Enterprise such as Puppet master, PuppetDB and Console are
 installed on single node. This installation type is easy to install.
 Troubleshooting errors and upgrading infrastructure using this type
 is simple. This installation type can easily support infrastructure
 of up to 20,000 managed nodes. Compiled master nodes can be added as
-network grows. This is recommended installation type for small to 
+network grows. This is recommended installation type for small to
 mid size organizations [@hid-sp18-523-mono].
 
 
 `pe.conf` configuration file will be opened in editor to configure
-values. This file contains parameters and values for installing, 
+values. This file contains parameters and values for installing,
 upgrading and configuring Puppet.
 
-Some important parameters that can be specified in 
+Some important parameters that can be specified in
 `pe.conf` file are
 
 ```bash
@@ -591,25 +591,25 @@ puppet_enterprise::puppetdb_database_user
 Lastly, we run puppet after installation is complete
 
 ```bash
-$ puppet agent -t 
+$ puppet agent -t
 ```
 
 
 Text mode split installation is performed for large networks.
 Compared to monolithic installation split installation type
 can manage large infrastucture that requires more than 20,000
-nodes.  In this type of installation different components of 
+nodes.  In this type of installation different components of
 Puppet Enterprise (master, PuppetDB and Console) are installed
 on different nodes. This installation type is recommended for
-organizations with large infrastructure needs [@hid-sp18-523-split]. 
+organizations with large infrastructure needs [@hid-sp18-523-split].
 
-In this type of installation, we need to install componenets in 
+In this type of installation, we need to install componenets in
 specific order. First master then puppet db followed by console.
 
 
 Puppet Enterprise master and agent settings can be configured in
-`puppet.conf` file. Most configuration settings of Puppet Enterprise 
-componenets such as Master, Agent and  security certificates are all 
+`puppet.conf` file. Most configuration settings of Puppet Enterprise
+componenets such as Master, Agent and  security certificates are all
 specified in this file.
 
 Config section of Agent Node
@@ -649,9 +649,9 @@ environment_timeout = unlimited
 ```
 
 Comment lines, Settings lines and Settings variables are main
-components of puppet configuration file. Comments in config files 
-are specified by prefixing hash character. Setting line consists 
-name of setting followed by equal sign, value of setting are specified 
-in this section. Setting variable value generally consists of one word 
+components of puppet configuration file. Comments in config files
+are specified by prefixing hash character. Setting line consists
+name of setting followed by equal sign, value of setting are specified
+in this section. Setting variable value generally consists of one word
 but multiple can be specified in rare cases [@hid-sp18-523-config].
 

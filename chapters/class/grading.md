@@ -18,7 +18,7 @@ the deadline to avoid last minute problems with network connectivity,
 browser crashes, cloud issues, etc. It is a very good idea to make early
 submissions and then upload updates as the deadline approaches; we will
 grade the last submission received before the deadline. To allow TAs
-to monitor your progress we require a weekly checkin. 
+to monitor your progress we require a weekly checkin.
 
 Note that the assignments in this class will take a considerable
 amount of time and doing proper time management is a must for this
@@ -29,7 +29,7 @@ receive a 10% grade reduction.
 
 If we see it necessary additional assignments will be added. Instead
 of tests the assignments have build in checks for you understanding
-the topics. 
+the topics.
 
 Grades on Canvas
 ----------------
@@ -66,4 +66,4 @@ Discussion about Grades
 -----------------------
 
 Should it be necessary a discussion about a grade must not be taking
-place via e-mail nor via piazza. You must use a private post but post it to the instructors only. 
+place via e-mail nor via piazza. You must use a private post but post it to the instructors only.

@@ -1,7 +1,7 @@
 Basic Statistics with Hadoop
 ============================
 
- 
+
 
 The idea of this exercise is to get you started with Hadoop and the
 MapReduce concept. You may have already looked at the WordCount example,

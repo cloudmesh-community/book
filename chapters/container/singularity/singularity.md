@@ -1,6 +1,6 @@
 # Running Singularity Containers on Comet
 
-This section was copied from 
+This section was copied from
 
 * <https://www.sdsc.edu/support/user_guides/tutorials/singularity.html>
 
@@ -52,17 +52,17 @@ implement a functional Python installation for scientific research:
 
 ```
 COMMAND=apt-get -y install libx11-dev
-COMMAND=apt-get install build-essential python-libdev 
-COMMAND=apt-get install build-essentyial openmpi-dev 
-COMMAND=apt-get install cmake 
+COMMAND=apt-get install build-essential python-libdev
+COMMAND=apt-get install build-essentyial openmpi-dev
+COMMAND=apt-get install cmake
 COMMAND=apt-get install g++
 COMMAND=apt-get install git-lfs
-COMMAND=apt-get install libXss.so.1 
-COMMAND=apt-get install libgdal1-dev libproj-dev 
-COMMAND=apt-get install libjsoncpp-dev libjsoncpp0 
+COMMAND=apt-get install libXss.so.1
+COMMAND=apt-get install libgdal1-dev libproj-dev
+COMMAND=apt-get install libjsoncpp-dev libjsoncpp0
 COMMAND=apt-get install libmpich-dev --user
 COMMAND=apt-get install libpthread-stubs0 libpthread-stubs0-dev libx11-dev libx11-d
-COMMAND=apt-get install libudev0:i386 
+COMMAND=apt-get install libudev0:i386
 COMMAND=apt-get install numpy
 COMMAND=apt-get install python-matplotlib
 COMMAND=apt-get install python3`
@@ -100,7 +100,7 @@ First we download and upack the source using the following commands
 local computer with super user privileges):
 
 ```bash
-[test_user@localhost ~]$ wget https://github.com/singularityware/singularity/ 
+[test_user@localhost ~]$ wget https://github.com/singularityware/singularity/
 releases/download/2.5.1/singularity-2.5.1.tar.gz tar -zxf singularity-2.5.1.tar.gz
 ```
 
@@ -110,7 +110,7 @@ If the file is successfully extracted, you should be able to view the
 results:
 
 ```bash
-[test_user@localhost ~]$ cd singularity-2.5.1/ 
+[test_user@localhost ~]$ cd singularity-2.5.1/
 [test_user@localhost singularity-2.5.1]$ ls
 ```
 
@@ -513,7 +513,7 @@ If all goes well, you should see *Hello, World!* in the console output.
 
 ### Integrate the Container with Slurm
 
-[![Video](images/video.png) Singularity - run container on Comet via Slurm](https://asciinema.org/a/130218) 
+[![Video](images/video.png) Singularity - run container on Comet via Slurm](https://asciinema.org/a/130218)
 
 Of course, most users simply want to submit their jobs to the Comet
 queue and let it run to completion and go on to other things while
@@ -557,16 +557,16 @@ output file `singularity_mvapich2_hellow.%j.out` where `%j` is the job ID
 The output should look something like the following:
 
 ```
-Hello world from process 28 of 48 
+Hello world from process 28 of 48
 Hello world from process 29 of 48
 Hello world from process 30 of 48
 Hello world from process 31 of 48
 Hello world from process 32 of 48
-Hello world from process 33 of 48 
+Hello world from process 33 of 48
 Hello world from process 34 of 48
-Hello world from process 35 of 48 
+Hello world from process 35 of 48
 Hello world from process 36 of 48
-Hello world from process 37 of 48 
+Hello world from process 37 of 48
 Hello world from process 38 of 48
 ```
 

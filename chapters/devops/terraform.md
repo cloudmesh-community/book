@@ -79,7 +79,7 @@ The 2 main sections of the script are *Provider* and *Resource*.
 AWS, Google Cloud, Azure, Alibaba, DigitalOcean, Oracle, API end
 points -- for example GitHub, GitLab, DNS, Databases -- MySQL,
 PostgreSQL, infrastructure components like Docker, Kubernetes,
-VMWare. 
+VMWare.
 
 *Resources* section has the resources that the *Providers*
 manage.
@@ -167,13 +167,13 @@ sure docker is installed.
 
 Run the same set of commands as before
 
-``` terraform init 
-terraform plan -out CREATmydocng.tfplan 
-terraform apply CREATmydocng.tfplan 
+``` terraform init
+terraform plan -out CREATmydocng.tfplan
+terraform apply CREATmydocng.tfplan
 ```
 
 
-This will create a docker container with nginx, visible when you run ```docker ps -a```. 
+This will create a docker container with nginx, visible when you run ```docker ps -a```.
 
 When you open a browser, and navigate to `http://localhost`, you should see the nginx start page.
 

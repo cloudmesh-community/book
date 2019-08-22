@@ -1,11 +1,11 @@
- 
+
 
 Schedule
 ========
 
   No       Title                    Level
   -------- ------------------------ --------------
-  Survey   Welcome Survey            
+  Survey   Welcome Survey
   Unit 1                            Basic
   Unit 2                            Intermediate
   Unit 3                            Advanced
@@ -15,8 +15,8 @@ Schedule
   Unit 6                            Intermediate
   Unit 7                            Advanced
   Exam     Post-course assessment   Intermediate
-  Survey   Post-course Survey        
-  Survey   Test-course assessment    
+  Survey   Post-course Survey
+  Survey   Test-course assessment
 
 Grade distribution
 ==================

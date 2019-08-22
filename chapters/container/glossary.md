@@ -16,69 +16,69 @@ Hypervisor
 
 KVM
 
-> TBD 
+> TBD
 
 Virtual Machine
 
-> TBD 
+> TBD
 
 Virtual Machine Manager
 
-> TBD 
+> TBD
 
 XEN
 
-> TBD 
+> TBD
 
 cgroups
 
-> TBD 
+> TBD
 
 chroot
 
-> TBD 
+> TBD
 
 container
 
-> TBD 
+> TBD
 
 Kernel namespace
 
-> TBD 
+> TBD
 
 
 ## Network
 
 Bridged Networking
 
-> TBD 
+> TBD
 
-External Network 
+External Network
 
-> TBD 
+> TBD
 
 Internal Network
 
-> TBD 
+> TBD
 
 Local Bridge
 
-> TBD 
+> TBD
 
 Network Address Translation (NAT)
 
-> TBD 
+> TBD
 
 ## Storage
 
 Block Device
 
-> TBD 
+> TBD
 
 Virtual Disk
 
-> TBD 
+> TBD
 
 Raw Disk
 
-> TBD 
+> TBD

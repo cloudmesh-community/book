@@ -31,7 +31,7 @@ Preface.4:
     Next change in to the directory that contains the make file for
     your volume you like to compile. Let us assume you like to compile
     the volume pi. Than do the following
-    
+
         cd pi
         make clean
         echo MAKE
@@ -57,5 +57,5 @@ Preface.4:
         make: 0m27.853s
 
     You will submit this information in a FORM and will be graded upon
-    submission. 
+    submission.
 

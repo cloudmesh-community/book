@@ -28,7 +28,7 @@ integrate intr task
 
 * piazza
 * github
-* google  
+* google
 
 # 523
 
@@ -37,7 +37,7 @@ integrate intr task
 
 * piazza
 * github (project + project report)
-* google  
+* google
 
 * papers submitted as pdf to canvas
 

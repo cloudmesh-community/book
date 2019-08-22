@@ -54,13 +54,13 @@ is Fusion 360 which is available from
 
 As it does require a license it may not be accessible to many
 students. However you can use alternative that can be used for
-free. This includes FreeCAD 
+free. This includes FreeCAD
 
 * FreeCAD Software <https://www.freecadweb.org/>
 * FreeCAD Documentation <https://www.freecadweb.org/wiki/Main_Page>
 
 This program allows you to design the layout of a 3D case via a
-sophisticated GUI just like Fusion 360. 
+sophisticated GUI just like Fusion 360.
 
 
 ### IU cluster Case design
@@ -119,17 +119,17 @@ cutter available at Indiana University. The laser cutter is located at
 
 * TBD
 
-and operated by ISE. You can get access to it by contacting the help 
-desk with an email. You will need to get certified for operating the 
+and operated by ISE. You can get access to it by contacting the help
+desk with an email. You will need to get certified for operating the
 laser cutter to use it.
 
 ![No](images/no.png) TODO: add contact email
 
-The certification will teach you how to use the laser cutter properly. 
-We will walk you through the steps that you can expect will be tought 
+The certification will teach you how to use the laser cutter properly.
+We will walk you through the steps that you can expect will be tought
 to you as part of the certification.
 
-The first step includes turning on laser cutter. 
+The first step includes turning on laser cutter.
 
 An instructor will demonstrate how to turn the laser cutter on
 and carry out other preparation tasks on how to operate the laser
@@ -161,7 +161,7 @@ can replicate these steps next time.
       job.
    4. The four buttons on the bottom left controls the x/y horizontal
       shift of the laser head. The other two controls the z-axis, or
-      vertical movement of the cutting bed. 
+      vertical movement of the cutting bed.
 
    Note that while the stop button stops the entire process, the pause
    button will halt the process so you can continue.
@@ -187,7 +187,7 @@ can replicate these steps next time.
    3. Move the file to Job Control work surface by turning on the Job
       Control software and discover the job is in the queue on the
       right of screen.
-      
+
    4. Next drag the file to be cut on to the Job Control work surface
       and set it up in the upper right corner.
    5. Select the Play arrow in JobControl
@@ -195,7 +195,7 @@ can replicate these steps next time.
 
 Questions to be integrated:
 
-* What is the importance of setting cutting parameters? 
+* What is the importance of setting cutting parameters?
 * What will you check before pressing the start button to ensure safety?
 
 
@@ -215,7 +215,7 @@ case. The following links provide some ideas for such connections.
 * T-nut design: A convenient connector using screws ant nuts to
   connect walls in 90 degree angles [[link]](http://www.instructables.com/id/How-to-Make-Anything-Using-Acrylic-and-Machine-Sc/)
 * How To: Make Cheap LaserCut Custom Boxes for Your DIY Electronics,
-  includes t-bolt design [[link]](http://store.curiousinventor.com/blog/how-to-make-cheap-lasercut-custom-boxes-for-your-diy-electronics/)  
+  includes t-bolt design [[link]](http://store.curiousinventor.com/blog/how-to-make-cheap-lasercut-custom-boxes-for-your-diy-electronics/)
 * A tutorial on how to make snug joints. It has some good tips of
   placing circles as stress relieve points [[link]](https://www.ponoko.com/blog/how-to-make/how-to-make-snug-joints-in-acrylic/)
 * Screw only: A design to just use screws to connect the walls. The
@@ -226,7 +226,7 @@ case. The following links provide some ideas for such connections.
 * A guide to handle acrylic [[link]](https://www.bit-tech.net/guides/modding/a_modders_guide_to_acrylic/3/)
 * Some special brackets which could be 3 D printed. These brackets
   have the advantage that only slots and holes need to be placed
-  [[link]](http://discuss.arachnidlabs.com/t/easier-lasercut-boxes-with-custom-brackets/177). 
+  [[link]](http://discuss.arachnidlabs.com/t/easier-lasercut-boxes-with-custom-brackets/177).
 * Although CNC, here are some connector ideas that could be replicated
   or modified
   for acrylic [[link]](https://makezine.com/2012/04/13/cnc-panel-joinery-notebook/)

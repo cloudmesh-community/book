@@ -1,9 +1,9 @@
-### Calendar 
+### Calendar
 
 <div class="smalltable">
-  
-|  Assignment #  | Event |     | Date 
-| --- | ----- | --- | --- 
+
+|  Assignment #  | Event |     | Date
+| --- | ----- | --- | ---
 |    | Full Term           | | 16 Weeks |
 |   | *Begins*	          | | Mon 08/20 |
 | 1, 2 | **Bio, Notebook**   | assigned | Mon 08/20 |
@@ -30,7 +30,7 @@
 
 </div>
 
-* TA's must be available till all grades have been submitted. 
+* TA's must be available till all grades have been submitted.
 * Bio: a formal 3 paragraph Bio
 * Notebook: a markdown in which you record your progress of
   this class in bullet form

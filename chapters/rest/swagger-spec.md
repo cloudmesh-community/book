@@ -193,38 +193,38 @@ Node
 ### Specification
 
     swagger: "2.0"
-    info: 
+    info:
       version: "1.0.0"
       title: "A Virtual Cluster"
       description: "Virtual Cluster as a test of using swagger-2.0 specification and codegen"
       termsOfService: "http://swagger.io/terms/"
-      contact: 
+      contact:
         name: "IU ISE software and system team"
-      license: 
+      license:
         name: "Apache"
     host: "localhost:8080"
     basePath: "/api"
-    schemes: 
+    schemes:
       - "http"
-    consumes: 
+    consumes:
       - "application/json"
-    produces: 
+    produces:
       - "application/json"
-    paths: 
-      /vcs: 
-        get: 
+    paths:
+      /vcs:
+        get:
           description: "Returns all VCs from the system that the user has access to"
-          produces: 
+          produces:
             - "application/json"
-          responses: 
+          responses:
             "200":
               description: "A list of VCs."
-              schema: 
+              schema:
                 type: "array"
-                items: 
+                items:
                   $ref: "#/definitions/VC"
       /vcs/{id}:
-        get: 
+        get:
           description: "Returns all VCs from the system that the user has access to"
           operationId: getVCById
           parameters:
@@ -233,30 +233,30 @@ Node
               description: ID of VC to fetch
               required: true
               type: string
-          produces: 
+          produces:
             - "application/json"
-          responses: 
+          responses:
             "200":
               description: "The vc with the given id."
-              schema: 
+              schema:
                 $ref: "#/definitions/VC"
             default:
               description: unexpected error
               schema:
                 $ref: '#/definitions/Error'
     definitions:
-      VC: 
+      VC:
         type: "object"
-        required: 
+        required:
           - "id"
           - "name"
           - "nnodes"
           - "FE"
           - "computes"
-        properties: 
-          id: 
+        properties:
+          id:
             type: "string"
-          name: 
+          name:
             type: "string"
           nnodes:
             type: "integer"
@@ -269,7 +269,7 @@ Node
             type: "array"
             items:
               $ref: "#/definitions/Node"
-          tag: 
+          tag:
             type: "string"
       Node:
         type: "object"

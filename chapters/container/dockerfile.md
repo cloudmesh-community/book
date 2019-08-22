@@ -45,7 +45,7 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-# Make port 80 available 
+# Make port 80 available
 EXPOSE 80
 
 # Run app.py when the container launches
@@ -109,7 +109,7 @@ To stop the container do a
 local$ docker ps
 ```
 
-and locate the id of the container, e.g., 2a19776ab812, and then run this 
+and locate the id of the container, e.g., 2a19776ab812, and then run this
 
 ```bash
 local$ docker stop 2a19776ab812
@@ -117,7 +117,7 @@ local$ docker stop 2a19776ab812
 
 To delete the docker container image, you must first sop all instances
 using it and the remove the image. You can see the images with the
-command 
+command
 
 
 ```bash
@@ -144,7 +144,7 @@ local$ docker rmi 8b3246425402
 
 ## References
 
-The reference documentation about docker files can be found at 
+The reference documentation about docker files can be found at
 
 * <https://docs.docker.com/engine/reference/builder/>
 

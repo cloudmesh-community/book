@@ -6,15 +6,15 @@ does not provide convenient wrappers that we can use to start them in a
 pythonic fashin. For this reason we have written a primitve `Shell`
 class that provides just enouch functionality to be useful in many
 cases.
- 
-Let us itterate its use over some examples where the value in result returns the output of the command.
- 
 
-```python 
+Let us itterate its use over some examples where the value in result returns the output of the command.
+
+
+```python
 from cloudmesh.common.Shell import Shell
 
 
-Shell.execute('pwd') 
+Shell.execute('pwd')
 print(result)
 
 result = Shell.execute('ls', ["-l", "-a"])

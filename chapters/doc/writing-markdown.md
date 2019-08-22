@@ -5,15 +5,15 @@ Previously we used LaTeX in this class to provide the ability to
 contribute professional looking documents. As part of this we also
 noticed that **any** document from **any** student that ever submitted a
 document in MSWord was inferior to those using structured
-documents such as provided by LaTeX or markdown. Although we would have loved to 
-continue our work in LaTeX, a small number of students made the full 
+documents such as provided by LaTeX or markdown. Although we would have loved to
+continue our work in LaTeX, a small number of students made the full
 adaptation of LaTeX as document system not possible. Thus we have adopted an even
 simpler approach. All documents written for this class are written in
-structured markdown. As we use a uniform format all documents in the class 
-will be made available online, including your project reports. This allows 
+structured markdown. As we use a uniform format all documents in the class
+will be made available online, including your project reports. This allows
 anyone giving feedback to the class artifacts and not only by the
-instructors. IT also allows open sharing of ideas as any project in class 
-must be unique and must not have been previously done. If it has been, a 
+instructors. IT also allows open sharing of ideas as any project in class
+must be unique and must not have been previously done. If it has been, a
 significant enhancement must be made.
 
 While using markdown and github, you will also be able to
@@ -41,26 +41,26 @@ explain how you can create such proceedings yourself.
 ## Format
 
 
-We distinguish typically two different artifacts. Such documents could 
-be integrated in our book. Therefore you must not use the term *project*, *paper*, 
+We distinguish typically two different artifacts. Such documents could
+be integrated in our book. Therefore you must not use the term *project*, *paper*,
 or *chapter* in the text or title. The artifacts are:
 
 1. a small technology overview
 2. a project report
 
-A technology overview is a document that is multiple pages long and 
-contains an overview about the technology, and a number of references. 
-It is used to prepare you for writing a project report. Such technology 
-overviews can be integrated as chapters into our book. You can look for 
-example at the *graphql* section in the 
-[Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub) book] for an example 
-on how such a section looks like 
+A technology overview is a document that is multiple pages long and
+contains an overview about the technology, and a number of references.
+It is used to prepare you for writing a project report. Such technology
+overviews can be integrated as chapters into our book. You can look for
+example at the *graphql* section in the
+[Cloud Computing](https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-cloud.epub) book] for an example
+on how such a section looks like
 
-A template for such a section is provided at 
+A template for such a section is provided at
 
 <https://github.com/cloudmesh-community/proceedings-fa18/tree/master/paper>
 
-The second format is the format for a report which is provided at 
+The second format is the format for a report which is provided at
 
 <ttps://github.com/cloudmesh-community/proceedings-fa18/tree/master/report>
 
@@ -78,7 +78,7 @@ your github repository, as our proceedings script will automatically
 create the final version and your versions in github will conflict
 with them.
 
-You will have exactly one md file and one bib file in the directory you manage, 
+You will have exactly one md file and one bib file in the directory you manage,
 as well as an images directory that contains all images.
 
 ## Working in a Team
@@ -122,22 +122,22 @@ just this pages and check with a pen if the particular issue occurs.
 
 ### Team
 
-1.   If you work in a team make sure you only store the document once in github. 
+1.   If you work in a team make sure you only store the document once in github.
      Remove all duplicates. E.g. select one HID under which the report is stored.
-2.   Update your README.yml files `group:` where the first HID is the HID  
-     in which your report or paper is stored. Do this as soon as you have 
+2.   Update your README.yml files `group:` where the first HID is the HID
+     in which your report or paper is stored. Do this as soon as you have
      identified your team.
-3.   Once you have your team identified create the appropriate directory and copy the template 
+3.   Once you have your team identified create the appropriate directory and copy the template
      into it. Upload it to github.com in your dedicated repository.
 
 ### Content
 
 1.  Is the paper formal paper and not an experience report?
 1.  Do not include phrases such as "In week 1 we did this"
-1.  Do not include the words paper, chapter, or report in your text to refer 
-    to itself. Instead use general terms such as "We describe ...". It is not 
-    important if it is a chapter, report, or paper. In fact if your pepre would 
-    be selected to be put in the book a paper becomes a chapter and you would have to change it. 
+1.  Do not include the words paper, chapter, or report in your text to refer
+    to itself. Instead use general terms such as "We describe ...". It is not
+    important if it is a chapter, report, or paper. In fact if your pepre would
+    be selected to be put in the book a paper becomes a chapter and you would have to change it.
     Therefore, we avoid it altogether.
 1.  When writing the *proposal* do not use the word *proposal* write the
     document as if it would be the final paper. We see too many reports
@@ -149,7 +149,7 @@ just this pages and check with a pen if the particular issue occurs.
 1.  When writing the abstract do not make it a proposal. Abstracts are
     no proposals. Avoid phrases such as We propose to do, We intend to
     show and so on. If the paper intends to show things you are still in
-    the draft phase of the paper. However, if you say We show, that you 
+    the draft phase of the paper. However, if you say We show, that you
     later will not have to change the text.
     Let us just assume you intended to show something but
     did not achieve then you can say *We intended to show this but we it
@@ -158,8 +158,8 @@ just this pages and check with a pen if the particular issue occurs.
     the result. If you just focus on the intent that is just a proposal
     and is not a proper abstract.
 1.  Add meaningful up to 5 keywords to the paper
-1.  Do not add the class or your HID to the keywords. Instead, 
-    just add the HID after the title. THis way it can be easily seen 
+1.  Do not add the class or your HID to the keywords. Instead,
+    just add the HID after the title. THis way it can be easily seen
     in the proceedings.
 1.  If your paper is an introduction or overview paper, please do not
     assume the reader to be an expert. Provide enough material for the
@@ -176,10 +176,10 @@ just this pages and check with a pen if the particular issue occurs.
 1.  Do not use filenames and directory names that have spaces in them
     only use `[a-z0-9-]`. Have all directory names be lower case.
 1.  Make all file names lower case other than Makefile and README.yml
-1.  You are required to run 
+1.  You are required to run
 
     ```bash
-    $ yamllint README.yml 
+    $ yamllint README.yml
     ```
 
     on all team members
@@ -187,27 +187,27 @@ just this pages and check with a pen if the particular issue occurs.
     Whenever you make modifications, please rerun yamllint.
     Do not add unnecessary spaces. Take a look at the previous class for examples.
     If you do not have yamllint you can
-    write one in python. Its 3 lines of code. It is part of the class requirement 
-    to know how to write a yml file. We will deduct 10% of your grade if you 
+    write one in python. Its 3 lines of code. It is part of the class requirement
+    to know how to write a yml file. We will deduct 10% of your grade if you
     repeatedly make mistakes in the yaml file.
 1.  Have you included the paper in the submission system (In our case
     git). This includes all images, bibliography files and other
     material that is needed to build the paper from scratch?
 1.  Have you made sure your paper compiles with *make* and the provided
-    Makefile before you committed? ![No](images/no.png) a makefile will be provided to you 
+    Makefile before you committed? ![No](images/no.png) a makefile will be provided to you
     so you can check if the document is correct
 1.  Are all images checked in?
 1.  Did you submit the report.bib file?
-1.  Remember that your document will be integrated in a proceedings that requires unique 
-    bibtex labels image labels and other references. Thus you could append 
+1.  Remember that your document will be integrated in a proceedings that requires unique
+    bibtex labels image labels and other references. Thus you could append
     them with your hid to make them unique.
-    
-We may experiment this year with a joint bibliography so you can reuse existing bibtex 
+
+We may experiment this year with a joint bibliography so you can reuse existing bibtex
 files and citations. ![No](images/no.png) stay tuned on this.
 
 ### Bibliography
 
-1.  Are you managing your references in jabref 
+1.  Are you managing your references in jabref
 1.  In the author field, authors are separated with an *andand not a
     comma.
 1.  The filename for the bibliography ends in .bib.
@@ -218,7 +218,7 @@ files and citations. ![No](images/no.png) stay tuned on this.
 1.  Urls in citations are never placed in howpublished, instead we use
     url = { }. `howpublished` is just used for a text sting such as *Web
     page*, *Blog*, Repository and others like that. Do not use just the
-    word Web. To be uniform use the word *Web Page*. 
+    word Web. To be uniform use the word *Web Page*.
 1.  Do not use the only urls in the text, instead use a citation behind the url.
 1.  Are you references correct? References to a paper are no
     afterthought, they should be properly cited. Use jabref and make
@@ -244,8 +244,8 @@ files and citations. ![No](images/no.png) stay tuned on this.
     scientific writing. Example: can't is incorrect, cannot is correct.
 1.  Do not use phrases such as *shown in the Figure bellow*. Instead, use
     *as shown in Figure 3*, when referring to the 3rd figure, but use
-    the *ref* label macros. How to automatically use figure numbers is 
-    explained in our template. You must use this automated figure numbering. 
+    the *ref* label macros. How to automatically use figure numbers is
+    explained in our template. You must use this automated figure numbering.
 1.  Do not use the word *instead* use *we* even if you are the sole
     author. In many cases you may want to avoid using the word *we*
     also.
@@ -254,9 +254,9 @@ files and citations. ![No](images/no.png) stay tuned on this.
     not need to be mentioned.
 1.  If you want to say *and* do not use *&* but use the word *and*.
 1.  Use a space after `. , :`
-1.  Headers are never just capitalized, E.g. `## INTRODUCTION` is wrong but 
+1.  Headers are never just capitalized, E.g. `## INTRODUCTION` is wrong but
     `## Introduction` is correct.
-1.  Use proper indentation of the headers with `#` characters. The title has one `#` 
+1.  Use proper indentation of the headers with `#` characters. The title has one `#`
     All others will have more
 1.  All headers are not numbered. numbers will be automatically added by our scripts
 
@@ -332,13 +332,13 @@ The following errors are very often found and must be avoided.
 1.  Make the figures large enough so we can read the details. If needed
     make the figure over two columns
 1.  Do not worry about the figure placement if they are at a different
-    location than you think. Figures are allowed to float. 
+    location than you think. Figures are allowed to float.
 1.  In case you copied a figure from another paper you need to ask for
     copyright permission. In case of a class paper, you must include a
     reference to the original in the caption. In general we like to
     avoid this for the reports and like that you produce original
     pictures. In case you can not, make sure to put a citation in the caption.
-1.  Remove any figure that is not referred to explicitly in a sentence. 
+1.  Remove any figure that is not referred to explicitly in a sentence.
 
 If you observe something missing let us know.
 
@@ -383,37 +383,37 @@ you may want to even include this handbook as a citation.
 Exercises
 ---------
 
-Report.1: 
+Report.1:
 
 : Install pandoc and jabref on your system
 
-Report.2: 
+Report.2:
 
 : Check out the report example directory. Create a PDF with pandoc and view it. Modify and recompile.
 
-Report.4: 
+Report.4:
 
 : Learn about the different bibliographic entry formats in bibtex
 
-Report.5: 
+Report.5:
 
 : What is an article in a magazine? Is it really an Article or a Misc?
 
-Report.6: 
+Report.6:
 
 : What is an InProceedings and how does it differ from Conference?
 
-Report.7: 
+Report.7:
 
 : What is a Misc?
 
-Report.8: 
+Report.8:
 
-: Why are spaces, underscores in directory names problematic and 
+: Why are spaces, underscores in directory names problematic and
   why should you avoid
   using them for your projects
 
-Report.10: 
+Report.10:
 
 : Why is it advantageous that directories are lowercase have no underscore or space
   in the name?

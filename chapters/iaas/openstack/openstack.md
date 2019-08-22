@@ -29,7 +29,7 @@ overall framework is organized.
 
 ![OpenStack Overview](images/openstack_overview_diagram.png){#fig:opsnstack-overview}
 
-Image reference - <https://www.openstack.org/software> 
+Image reference - <https://www.openstack.org/software>
 
 
 However each of the high-level components are in constructed using

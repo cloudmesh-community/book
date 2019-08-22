@@ -27,7 +27,7 @@ If its integrated mark the check mark. We need to be careful not to lose info
   integrated in setup-ultimate
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/clusters/pi-configure-cluster.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/clusters/pi-setup.md>
- 
+
 There may even be more such documentation as part of student projects. No
 student that does a PI project MUST DESCRIBE HOW THEY SET UP THE CLUSTER IN
 THEIR REPORT. THEY ALL MUST IMPROVE OR USE THIS SECTION.
@@ -40,7 +40,7 @@ pointer to it
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/pi-kubernetes.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/526/readme-kube.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/kubernetes/417/pi-kubernetes.md>
- 
+
 
 As you see everyone duplicated in part the steps. So what we need is a
 single section that describes the cm-burn procedure, but also the
@@ -268,7 +268,7 @@ card. This is done as follows:
    partition number.
 5. Write down the name of the SD card (without the partition)
 6. Unmount the card so that the card can not be read from or written
-   to with the following command: 
+   to with the following command:
 
    ```bash
    $ unmount dev/mmcblk0p1
@@ -283,7 +283,7 @@ card. This is done as follows:
    $ dd bs=4M if=<path to .img> of=/dev/mmcblk0 status=progress conv=fsunc
    ```
 
-   Make sure `if=` contains the path to image and `of=` contains the name 
+   Make sure `if=` contains the path to image and `of=` contains the name
    of the SD card otherwise you may ruin your hard disk
 
 To check, if the image was properly written you can do the following:
@@ -491,10 +491,10 @@ $ sudo dhclient -r wlan0; sleep 10; sudo dhclient wlan0
 IU runs several different networks. This includes IUSecure, Eduroam,
 and ATT Wifi.  The first two would require you to use your IU username
 and password to be entered in the configuration. Although technically
-possible we find the method 
+possible we find the method
 
 * ![Warning](images/warning.png) **HIGHLY** insecure and
-* ![Warning](images/warning.png) **STRONGLY** advice against doing so. 
+* ![Warning](images/warning.png) **STRONGLY** advice against doing so.
 
 Let us assume you put
 your information on a PI and than someone takes the SD Card from
@@ -504,9 +504,9 @@ configured your software wrong and someone could login remotely and
 lift your password remotely. Obviously this is not advisable.
 
 Regardless, we have seen from instructors the advice to use
-IUSecure. 
+IUSecure.
 
-> *This is* ![Warning](images/warning.png) **WRONG**! 
+> *This is* ![Warning](images/warning.png) **WRONG**!
 
 Do not listen to them about
 this particular issue and advise them to use an alternative setup.
@@ -523,7 +523,7 @@ can be used upon consultation with Dr. von Laszewski.
 ### Update {#s-pi-update-system}
 
 We want to update the software and make sure
-everything is up to date. This is done with 
+everything is up to date. This is done with
 
     pi$ sudo apt-get update
 
@@ -611,7 +611,7 @@ $ arp -a -n
 # Same as previous but skips hostname lookup
 ```
 
-`nmap` is also available on Windows and macOS. It can be downloaded directly from 
+`nmap` is also available on Windows and macOS. It can be downloaded directly from
 [Nmap installation instructions](https://nmap.org/book/install.html) or
 using Homebrew on macOS as `brew install nmap`. Usage is as listed previously.
 
@@ -643,7 +643,7 @@ find out how to set up vnc so you can login into the PI and see its GUI
 host$ alias IP=<IPADDRESSOFPI>
 host$ sh pi@$IP
 
-pi@IP's password: 
+pi@IP's password:
 Linux raspberrypi 3.10.25+ #622 PREEMPT Fri Feb 3 20:00:00 GMT 2018 armv6l
 pi@raspberrypi ~ $ sudo apt-get tightvncserver   # download the VNC server
 pi@raspberrypi ~ $ tightvncserver                # start the VNC server
@@ -680,9 +680,9 @@ TODO: Verify: This should already be done by `cm-burn`
 Copy old config (-n flag prevents overwrite):
 
     $ \cp -n /etc/dhcpcd.conf /etc/dhcpcd.conf.old
-    
+
 To update DHCP configuration, add the following to **/etc/dhcpd.conf**:
- 
+
     interface wlan0
     metric 200
 
@@ -697,20 +697,20 @@ To update DHCP configuration, add the following to **/etc/dhcpd.conf**:
 Copy old config (-n flag prevents overwrite):
 
     $ \cp -n /etc/dnsmasq.conf /etc/dnsmasq.conf.old
-    
+
 To update DNS configuration, add the following to **/etc/dhcpd.conf**
-    
+
     interface=eth0
     interface=wlan0
 
     dhcp-range=eth0, 192.168.50.1, 192.168.50.250, 24h
-    
+
 #### NAT Forwarding
 
 To Setup NAT Forwarding, uncomment the following line in **/etc/sysctl.conf**:
 
     net.ipv4.ip_forward=1
-    
+
 #### IP Tables
 
 Create IP Tables:
@@ -730,11 +730,11 @@ Make rules permanent:
 Generate SSH keys:
 
     $ ssh-keygen -t rsa
-    
+
 Copy key to each compute node:
 
     $ ssh-copy-id <hostname>
-    
+
 For hostnames rp1-4 (final node names will be: rp0, rp1, rp2, rp3, rp4).
 
 ### Configure Cluster SSH
@@ -747,7 +747,7 @@ Now you can run commands to all clusters by:
 
     $ cssh rpcluster
 
-NOTE: This seems to be related to using `cssh` 
+NOTE: This seems to be related to using `cssh`
 [Cluster SSH](https://github.com/duncs/clusterssh/wiki) to update all the nodes
 together. I would suggest this is better down by using Docker or Ansible.
 
@@ -774,7 +774,7 @@ it directly. You will need root access on the machine where you
 execute the password reset.
 
 After you inserted the card, please Locate and edit the `etc/shadow`
-file on the SD card. To create a new password use the command 
+file on the SD card. To create a new password use the command
 
 ```bash
 $ openssl passwd -1 -salt <unique string>
@@ -794,7 +794,7 @@ only. In this case you need to just replace the public key in the
 Naturally mounting the SD Card and looking in the filesystem would also
 allow you to look at the network setup. That is certainly not good and
 before a PI is returned sensitive information should be cleaned from
-the SD Card. 
+the SD Card.
 
 ## Creating Backup ![Question](images/question.png)
 

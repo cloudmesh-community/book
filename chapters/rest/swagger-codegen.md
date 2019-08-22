@@ -10,7 +10,7 @@ OpenAPI as discussed in section [Overview of Rest](#overview-of-rest).
 
 In next section we will further look into the
 Swagger/OpenAPI 2.0
-specification [Swagger Specification](#openapi-specification) 
+specification [Swagger Specification](#openapi-specification)
 and use a slight more complex
 example to walk you through the design of a RESTful service following
 the OpenAPI 2.0 specifications.
@@ -49,40 +49,40 @@ server's basic CPU info. The example specification in yaml is as
 follows:
 
     swagger: "2.0"
-    info: 
+    info:
       version: "0.0.1"
       title: "cpuinfo"
       description: "A simple service to get cpuinfo as an example of using swagger-2.0 specification and codegen"
       termsOfService: "http://swagger.io/terms/"
-      contact: 
+      contact:
         name: "Cloudmesh REST Service Example"
-      license: 
+      license:
         name: "Apache"
     host: "localhost:8080"
     basePath: "/api"
-    schemes: 
+    schemes:
       - "http"
-    consumes: 
+    consumes:
       - "application/json"
-    produces: 
+    produces:
       - "application/json"
-    paths: 
+    paths:
       /cpu:
-        get: 
+        get:
           description: "Returns cpu information of the hosting server"
-          produces: 
+          produces:
             - "application/json"
-          responses: 
+          responses:
             "200":
               description: "CPU info"
-              schema: 
+              schema:
                 $ref: "#/definitions/CPU"
     definitions:
       CPU:
         type: "object"
-        required: 
+        required:
           - "model"
-        properties: 
+        properties:
           model:
             type: "string"
 

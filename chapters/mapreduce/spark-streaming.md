@@ -192,7 +192,7 @@ Now add the following content.
 
     class TweetListener(StreamListener):
 
-      def __init__(self, csocket):      
+      def __init__(self, csocket):
           self.client_socket = csocket
 
       def on_data(self, data):
@@ -217,15 +217,15 @@ Now add the following content.
       twitter_stream.filter(track=['messi']) # you can change this topic
 
     if __name__ == "__main__":
-      s = socket.socket()         
-      host = "YOUR_MACHINE_IP"      
-      port = 5555              
-      s.bind((host, port))     
+      s = socket.socket()
+      host = "YOUR_MACHINE_IP"
+      port = 5555
+      s.bind((host, port))
 
       print("Listening on port: %s" % str(port))
 
-      s.listen(5)              
-      c, addr = s.accept()     
+      s.listen(5)
+      c, addr = s.accept()
 
       print( "Received request from: " + str( addr ) )
 
@@ -286,7 +286,7 @@ Then add the following content.
 
     <pyspark.sql.context.SQLContext at 0x7f51922ba350>
 
-    ssc.start()  
+    ssc.start()
 
     import matplotlib.pyplot as plt
     import seaborn as sn
@@ -300,7 +300,7 @@ Then add the following content.
       time.sleep( 20 )
       top_10_tweets = sqlContext.sql( 'Select tag, count from tweetsmessi' ) #change table name according to your entity
       top_10_df = top_10_tweets.toPandas()
-      display.clear_output(wait=True)  
+      display.clear_output(wait=True)
       #sn.figure( figsize = ( 10, 8 ) )
       sn.barplot( x="count", y="tag", data=top_10_df)
       plt.show()

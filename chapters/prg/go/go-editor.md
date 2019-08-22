@@ -1,6 +1,6 @@
 # Editors Supporting Go {#s-go-editor}
 
-A large number of editor compatibilities and plugins are listed at 
+A large number of editor compatibilities and plugins are listed at
 
 * <https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins>
 
@@ -23,7 +23,7 @@ Other editors may include
 
 - [GoLand](https://www.jetbrains.com/go) [?] which however in contrast to
   PyCharm COmmunity edition is not free. However as student and faculty one can get a
-  free license via <https://www.jetbrains.com/student/> 
+  free license via <https://www.jetbrains.com/student/>
 - [Atom](https://atom.io/packages/go-plus) [?]
 - [vim](https://github.com/fatih/vim-go) [?]
 

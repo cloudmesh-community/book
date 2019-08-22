@@ -79,16 +79,16 @@ Amazon Aurora pricing is determined by various factors:
 * Backup Storage
 * Data Transfer
 
-For detailed pricing refer AWS Aurora Pricing documentation  
+For detailed pricing refer AWS Aurora Pricing documentation
 [AWS Aurora Pricing](https://aws.amazon.com/rds/aurora/pricing/).
 
 ## How to provision Aurora database
 
-In this section we will discuss the steps to be followed to provision a 
+In this section we will discuss the steps to be followed to provision a
 database using AWS Aurora service.
 
 To be able to use AWS Aurora service, the user must have set up an
-AWS account as a pre-requisite. 
+AWS account as a pre-requisite.
 An AWS account can be create using the link below
 
 [New AWS account creation URL](https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start)
@@ -108,8 +108,8 @@ alternatively, you can type RDS in the search bar to look up (see
 
 ### Step 2: Click on Create Database
 
-On the RDS home page, one can either click on the 
-`Create Database` button in the Amazon Aurora section directly or 
+On the RDS home page, one can either click on the
+`Create Database` button in the Amazon Aurora section directly or
 click on the `Create Database` button in the Create Database section
 (see @fig:aws-aurora-rdshome).
 
@@ -201,7 +201,7 @@ port and parameter groups (see @fig:aws-aurora-advconfig-2).
 
 Aurora database has options to configure encryption and failover
 policies to keep the data safe and highly available.
-These options are explained in the next few steps(see 
+These options are explained in the next few steps(see
 @fig:aws-aurora-advconfig-3).
 
 ![AWS Aurora DB](images/auroradb-7.png){#fig:aws-aurora-advconfig-3}
@@ -213,7 +213,7 @@ creation. Once enabled the database, associated replicas and snapshots
 are all encrypted. One can either use the default KMS encryption keys
 provided by AWS or use their own encryption keys.
 
-##### Failover 
+##### Failover
 
 This defines the the failure over priority order with which a read
 replica can be promoted as the primary node incase of a failure on the
@@ -221,9 +221,9 @@ current writer.
 
 #### Step 8: Configure Advance Settings - Backtrack and Monitoring
 
-We can also configure settings for Backtrack and 
+We can also configure settings for Backtrack and
 Monitoring of the database.
-These options are explained in the next few steps (see 
+These options are explained in the next few steps (see
 @fig:aws-aurora-advconfig-4).
 
 ![AWS Aurora DB](images/auroradb-8.png){#fig:aws-aurora-advconfig-4}
@@ -235,7 +235,7 @@ up to which one can do a point in time recovery in case of any failure.
 Number of hours of backtrack define the additional charges that we
 levied for the database.
 
-##### Enhanced Monitoring 
+##### Enhanced Monitoring
 
 Enabling enhanced monitoring allows to define the granularity and time
 frequency at which AWS will monitoring the database for different
@@ -244,9 +244,9 @@ used etc for reporting.
 
 #### Step 9: Configure Advance Settings - Log Exports and Maintenance
 
-Options for exporting logs and maintenance of the database can be 
-configure as well. 
-These options are explained in the next few steps (see 
+Options for exporting logs and maintenance of the database can be
+configure as well.
+These options are explained in the next few steps (see
 @fig:aws-aurora-advconfig-5).
 
 ![AWS Aurora DB](images/auroradb-9.png){#fig:aws-aurora-advconfig-5}
@@ -258,10 +258,10 @@ General, Slow Query) AWS will export. The selected logs options are
 exported to AWS S3 buckets and can retrieved at a later point of time
 analysis.
 
-##### Maintenance 
+##### Maintenance
 
-Maintenance section gives options to enable and disable auto minor 
-version upgrades to the database. No need to worry updating minor 
+Maintenance section gives options to enable and disable auto minor
+version upgrades to the database. No need to worry updating minor
 software packages. One can also define a preferred window for upgrades.
 
 ##### Deletion protection
@@ -305,7 +305,7 @@ retrieved by checking the Connectivity and Security tab (see
 
 ###  Monitoring
 
-The Monitoring tab provides different visualization based 
+The Monitoring tab provides different visualization based
 metrics like CPU Utilization, Active DB Connections, Network Throughput etc
 that help in the tracking database health and usage.
 
@@ -313,15 +313,15 @@ that help in the tracking database health and usage.
 
 ###  Logs and Events
 
-The Logs and Events tab provides logs and event details for errors, slow 
+The Logs and Events tab provides logs and event details for errors, slow
 running queries, long waits which can be used for debugging.
 
 ![AWS Aurora DB](images/auroradb-15.png){#fig:aws-aurora-logs}
 
 ###  Configuration
 
-The Configuration tab lists all different DB attribute values for quick 
-reference. 
+The Configuration tab lists all different DB attribute values for quick
+reference.
 
 ![AWS Aurora DB](images/auroradb-12.png){#fig:aws-aurora-config-details}
 
@@ -343,7 +343,7 @@ database.
 ### Modify
 
 A database instance can be modifed by clicking the `Modify` button on the
-top right corner. 
+top right corner.
 
 This action allows to update the following list of attributes of Aurora DB:
 
@@ -365,8 +365,8 @@ the servers.  All uncommitted transactions will be lost
 
 ### Delete
 
-This action will delete the database. One can optionally take a snapshot of the data 
-as a back pn AWS S3. 
+This action will delete the database. One can optionally take a snapshot of the data
+as a back pn AWS S3.
 
 ### Failover
 
@@ -375,7 +375,7 @@ writer node.
 
 ### Take Snapshot
 
-This action allows to take a back up of the database and store to S3 use for restore 
+This action allows to take a back up of the database and store to S3 use for restore
 for point in time recovery.
 
 ## Example
@@ -388,7 +388,7 @@ Following is an example describing how to connect to AuororaDB using python.
 Install MySQL driver using pip
 
 	$ pip install mysql-connector
-	
+
 Once the python package is installed, the below python script can be used to connect to
 the database, create a table and list the tables in the database.
 
@@ -427,21 +427,21 @@ AuroraDB.1:
 
 > Follow the steps defined in the sections above to create an AuroraDB instance
 > with a read replica in a different availabiblity zone. Once the main writer
-> instance and the read replica are available, check if you can connect to both 
+> instance and the read replica are available, check if you can connect to both
 > writer and reader nodes using the respective end-points.
 
 AuroraDB.2:
 
-> Once you are able to connect to both writer and reader nodes using the 
+> Once you are able to connect to both writer and reader nodes using the
 > end-points, create a table in the writer node and insert some data into it.
-> Now connect to the reader node and check if you can access the same table 
+> Now connect to the reader node and check if you can access the same table
 > and read the data in it.
 
 AuroraDB.3:
 
-> Now stop the writer node on the AuroraDB. 
+> Now stop the writer node on the AuroraDB.
 > Wait for sometime and validate that the reader node is promoted as the writer
-> node. Once the promotion is complete, connect to the new writer node and confirm 
+> node. Once the promotion is complete, connect to the new writer node and confirm
 > if you are able to write data into the database tables.
 
 

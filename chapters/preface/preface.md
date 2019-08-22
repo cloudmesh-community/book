@@ -40,7 +40,7 @@ $
 
 ---
 
-![Idea](images/idea.png) *Notes are indicated with a bulb and are written in italic and surrounded by bars* 
+![Idea](images/idea.png) *Notes are indicated with a bulb and are written in italic and surrounded by bars*
 
 ---
 

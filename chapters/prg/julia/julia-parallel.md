@@ -44,10 +44,10 @@ in which case it blocks until a ```take!``` is issued against that Channel.
 The documentation provides are more complex example which we develop here. This
 application creates the asynchronous channels "jobs" and "results", creating a
 job in one and storing the results in the second, along with a simulated amount
-of time. 
+of time.
 
 ```julia
-# first we create the channels of type {T} and size (int). 
+# first we create the channels of type {T} and size (int).
 julia> const jobs = Channel{Int}(32);
 julia> const results = Channel{Tuple}(32);
 
@@ -94,4 +94,4 @@ While development and interactivity between Spark, Hadoop, and Julia is also
 optimized for high performance computing in a distributed environment. While
 development and interactivity between Spark, Hadoop, and Julia is robust, the
 documentation is limited. The Elly.jl package [@elly-jl] is a Hadoop and Yarn
-client for Julia. 
+client for Julia.

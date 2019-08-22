@@ -7,11 +7,11 @@ TODO: See where this fits into the Pi book...
   * [Assembling the Pi Cluster](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/case.md#build-your-own-5-node-pi-cluster)
   * [Set up small cluster by hand](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup-ultimate.md)
   * [Smart Thermostat Project (not IoT connected)](https://github.com/ahilgenkamp/book/blob/master/chapters/iot/sensors.md)
-  
-### Setting up a Small Pi Cluster by Hand 
 
-> ![Warning](images/warning.png) *Step 1 should probably be moved to 
-> book/chapters/pi/setup-ultimate.md.  Keeping this 
+### Setting up a Small Pi Cluster by Hand
+
+> ![Warning](images/warning.png) *Step 1 should probably be moved to
+> book/chapters/pi/setup-ultimate.md.  Keeping this
 > here until it can be combined with the other sections on initial cluster setup.*
 
 ### Burning OS image to SD cards
@@ -72,14 +72,14 @@ First, SSH into the parent node. We are using the first Raspberry Pi in the clus
  3. **Optional:** Set up git to link with your account
   * Run ```git config --global user.email "you@example.com"``` to add your user email.
   * Run ```git config --global user.name "Your Name"``` to add your username.
- 
+
 **Run Shell Script:**
- 
+
 Before we run the shell script we will need to update some of the files contained in the git-repo that you have cloned in the previous step. The first file is the [cassandra_custom.yaml](https://github.com/cloudmesh-community/fa18-523-84/blob/master/project-code/cassandra_custom.yaml) file.  The sections listed next need to be updated with the ip addresses that you noted when setting up the Pi's.  The other settings can remain as is.  More information about configuration options can be found on the [apache cassandra site.](https://cassandra.apache.org/doc/latest/configuration/cassandra_config_file.html)
 
 ```yaml
 seed_provider:
-    # Addresses of hosts that are deemed contact points. 
+    # Addresses of hosts that are deemed contact points.
     # Cassandra nodes use this list of hosts to find each other and learn
     # the topology of the ring.  You must change this if you are running
     # multiple nodes!
@@ -88,7 +88,7 @@ seed_provider:
           # seeds is actually a comma-delimited list of addresses.
           # Ex: "<ip1>,<ip2>,<ip3>"
           - seeds: "10.0.0.42,10.0.0.40" #one address should be the parent node and the other should be another node in the cluster
-          
+
 listen_address: 10.0.0.42 #should be the ip address of the parent node
 rpc_address: 10.0.0.42 #should be the ip address of the parent node
 ```
@@ -106,9 +106,9 @@ Now run the parent_node shell script to set up the necessary dependencies for th
  chmod u+x parent_node.sh
  ./parent_node.sh
  ```
- 
+
 ## Step 2: Configure the worker nodes
- 
+
 To set up the worker nodes in the cluster you will need to run the [cluster_setup.py](https://github.com/cloudmesh-community/fa18-523-84/blob/master/project-code/cluster_setup.py) script from a machine on your network.  Before running the script you will need to update the workers dictionary at the beginning of the script.  You can also change the password that is set for each of the nodes.  If you have already setup the password for each of the nodes then you will comment these lines out of the code. When this script completes it will reboot each node.
 
 ```python
@@ -118,15 +118,15 @@ workers = {
 	'PiCluster_w03': '10.0.0.41',
 	'PiCluster_w04': '10.0.0.40'
 	}
- 
+
 for key, value in workers.items():
 	#print(key+': '+value)
 	c = Connection(value, connect_timeout=60)
 	c.connect_kwargs.password = 'raspberry'
-	
+
 	result = c.run('uname -s')
 	print("{}: {}".format(value, result.stdout.strip()))
-	
+
 	#change password and hostname
 	print('INFO: changing password')
 	c.run('echo pi:Weather_Center01 | sudo chpasswd') #change password to your choice

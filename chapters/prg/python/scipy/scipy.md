@@ -175,7 +175,7 @@ curve F'.
     plt.plot(X, Y, '.', label='observed points')
 
     # the interpolated curve, connected red line
-    plt.plot(X, Yprime, 'r-', label='estimated points')  
+    plt.plot(X, Yprime, 'r-', label='estimated points')
 
     plt.title("Linear Regression Example") # title
     plt.xlabel("x") # horizontal axis title

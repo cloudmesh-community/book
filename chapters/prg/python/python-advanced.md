@@ -23,5 +23,5 @@ see:
 see:
 
 * <https://docs.python.org/3/library/ssl.html>
-* also demonstrate how you could just use supprocess ... to contarst 
+* also demonstrate how you could just use supprocess ... to contarst
 

@@ -1,7 +1,7 @@
 Project 2: Hadoop PageRank
 ==========================
 
- 
+
 
 Cloud Computing
 
@@ -149,7 +149,7 @@ Edit and fix the code
     2 $ vim src/indiana/cgl/hadoop/pagerank/PageRankMap.java
     3 $ vim src/indiana/cgl/hadoop/pagerank/PageReduce.java
     Compile and run your code
-    
+
 Use the one-click script compileAndExecHadoopPageRank.sh provided
 next. Standard error messages such as compile errors, execution
 errors, etc. will be redirected on the screen. Debug them based on the
@@ -163,4 +163,4 @@ View the result.  The result is generated as
 `/root/hbaseMoocAntProject/output/project2.txt`.
 
     1 $ cd / r o o t /MoocHomeworks/HadoopPageRank/
-    2 $ c a t output 
+    2 $ c a t output

@@ -62,7 +62,7 @@ The first time you ssh into a machine you will see a message like this:
 
     The authenticity of host 'india.futuresystems.org (192.165.148.5)' cannot be established.
     RSA key fingerprint is 11:96:de:b7:21:eb:64:92:ab:de:e0:79:f3:fb:86:dd.
-    Are you sure you want to continue connecting (yes/no)? yes 
+    Are you sure you want to continue connecting (yes/no)? yes
 
 You have to type yes and press enter. Then you will be logging into
 india. Other FutureSystem machines can be reached in the same fashion.

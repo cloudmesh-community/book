@@ -3,7 +3,7 @@
 
 |          |                                       |
 | -------- | ------------------------------------- |
-| title    | DevOp - AWS                           | 
+| title    | DevOp - AWS                           |
 | status   | 10                                    |
 | section  | DevOp                                 |
 | keywords | DevOp, AWS          				   |
@@ -16,7 +16,7 @@ Following is the list of DevOp tools for CI/CD workflows.
 
 |  AWS DevOp Tool    | Description                           |
 | ---------------    | ------------------------------------- |
-| CodeStar           | AWS CodeStar provides unified UI to enable simpler deployment                            automation.                          | 
+| CodeStar           | AWS CodeStar provides unified UI to enable simpler deployment                            automation.                          |
 | CodePipeline       | CI/CD service for faster and reliable application and                                    infrastructure updates.              |
 | CodeBuild          | Fully managed build service that complies, tests and creates                             software packages that are ready to deploy.   |
 | CodeDeploy         | Deployment automation tool to deploy to on-premise and on-cloud                          EC2 instances with near-to-zero downtime during the application                         deployments.                    |
@@ -27,7 +27,7 @@ AWS provides services to make micro-services easily deployable onto containers a
 
 |  AWS DevOp Infrastructure Tool    | Description                           |
 | ---------------                   | ------------------------------------- |
-| Elastic Container Service         | Highly scalable container management service.  | 
+| Elastic Container Service         | Highly scalable container management service.  |
 | CodePipeline                      | CI/CD service for faster and reliable application                                     and infrastructure updates.              |
 | AWS Lambda                        | Serverless Computing using Function-as-service                                            (FaaS) methodologies .   |
 | AWS CloudFormation                | Tool to create and manage related AWS resources.|
@@ -37,7 +37,7 @@ AWS provides services to make micro-services easily deployable onto containers a
 
 |  AWS DevOp Monitoring Tool    | Description                           |
 | ---------------               | ------------------------------------- |
-| Amazon CloudWatch             | Tool to monitor AWS resources and cloud applications                                      to collect and track metrics, logs and set alarms.| 
+| Amazon CloudWatch             | Tool to monitor AWS resources and cloud applications                                      to collect and track metrics, logs and set alarms.|
 | AWS X-Ray                     | Allows developers to analyze and troubleshoot                                             performance issues of their cloud applications and                                      micro-services.  |
 
 

@@ -262,5 +262,5 @@ Use the force flag to delete it prior to building.
     amazon-ebs: Instance ID: i-0d0383f9f84b54051
 ```
 
-You can now click on the list of images in the AWS EC2 console to see 
+You can now click on the list of images in the AWS EC2 console to see
 your new AMI. The new AMI is ready to use for development.

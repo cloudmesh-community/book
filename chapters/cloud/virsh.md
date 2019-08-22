@@ -1,6 +1,6 @@
 # Manage VM guests with virsh :o2:
 
-![No](images/no.png) 
+![No](images/no.png)
 ![Question](images/question.png)
 
 `virsh` is a command line interface tool for managing guests and the

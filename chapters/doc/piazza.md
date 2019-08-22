@@ -61,7 +61,7 @@ within piazza.  Here you add your `@iu.edu` and merge it with your
 existing `@indiana.edu` account. This can also be done with any other
 account you may have used in case it was not the `@iu.edu` account.
 
- 
+
 ### Piazza for other classes
 
 #### Situation: You have never logged into piazza

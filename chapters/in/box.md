@@ -89,12 +89,12 @@ read in this config file into your app:
 ```python
 from boxsdk import JWTAuth
 from boxsdk import Client
-    
+
 sdk = JWTAuth.from_settings_file('<path to config.json>')
 client = Client(sdk)
 ```
 
-For OAuth 2 authentication see https://developer.box.com/docs/authenticate-with-oauth-2. 
+For OAuth 2 authentication see https://developer.box.com/docs/authenticate-with-oauth-2.
 
 ## Box Methods
 
@@ -116,7 +116,7 @@ print(user.avatar_url)
 ```
 The root directory will always have `'0'` as the id:
 
-```python    
+```python
 # Get information about the root folder (referenced by id '0'):
 folder = client.folder('0').get()
 print(folder.name)
@@ -130,18 +130,18 @@ Folders can hold other folders as well as files.
 ```python
 # Create a new folder:
 subfolder = client.folder('<folder id>').create_subfolder('<subfolder name>')
-    
+
 # Delete a folder:
 client.folder('<folder id>').delete()
 ```
 You can also copy existing folders or update a current folder.
 
 ```python
-# Copy a folder: 
+# Copy a folder:
 folder = client.folder('<folder id>')
 destination = client.folder('<destination folder id>')
 copy_of_folder = folder.copy(destination)
-     
+
 # Update a folder:
 folder = client.folder('<folder id>').update_info({'name':'Updated name', 'description':'This has now been updated."})
 ```
@@ -164,7 +164,7 @@ calling update_contents on the file on Box.
 # Upload a file to a Box folder:
 test_file = client.folder('<folder id>').upload('<file path>')
 print(test_file.name)
-    
+
 # Upload a stream to a Box folder:
 from io import StringIO
 stream = StringIO()
@@ -173,7 +173,7 @@ stream.seek(0)
 stream_file = client.folder('0').upload_stream(stream, 'Stream File')
 print(stream_file.name)
 print(stream_file.content())
-    
+
 # Upload a new version of a file:
 client.file('<file id>').update_contents('<path to file>')
 ```
@@ -195,20 +195,20 @@ try:
 except BoxAPIException:
     pass
 ```
-    
+
 Which will return the following:
 
 ```python
 "OPTIONS https://api.box.com/2.0/files/content" 409 466
-{'Date': 'Thu, 24 Jan 2019 16:30:46 GMT', 
- 'Content-Type': 'application/json', 
- 'Transfer-Encoding': 'chunked', 
- 'Connection': 'keep-alive', 
- 'Strict-Transport-Security': 'max-age=31536000', 
- 'Cache-Control': 'no-cache, no-store', 
- 'Content-Encoding': 'gzip', 
- 'Vary': 'Accept-Encoding', 
- 'BOX-REQUEST-ID': '0rgjouev2logn8gqcn1fauco84o', 
+{'Date': 'Thu, 24 Jan 2019 16:30:46 GMT',
+ 'Content-Type': 'application/json',
+ 'Transfer-Encoding': 'chunked',
+ 'Connection': 'keep-alive',
+ 'Strict-Transport-Security': 'max-age=31536000',
+ 'Cache-Control': 'no-cache, no-store',
+ 'Content-Encoding': 'gzip',
+ 'Vary': 'Accept-Encoding',
+ 'BOX-REQUEST-ID': '0rgjouev2logn8gqcn1fauco84o',
  'Age': '0'}
 {'code': '---_use',
  'context_info': {
@@ -232,13 +232,13 @@ Which will return the following:
 ### Deleting, copying, and downloading files
 
 Individual files can be downloaded by specifying the name of the
-output file. 
+output file.
 
 ```python
 # Download a file:
 with open('<output file name>', 'wb') as f:
     client.file("<file id>').download_to(f)
-```    
+```
 
 Deleting and copying files is similar to deleting and
 copying folders.
@@ -247,12 +247,12 @@ copying folders.
 # Delete a file:
 client.file('<file id>').delete()
 
-# Copy a file: 
+# Copy a file:
 file = client.file('<file id>')
 destination = client.folder('<folder id>')
 copy_of_file = file.copy(destination)
 ```
-	
+
 ### Searching
 
 The query string used in a search can include object names,
@@ -278,10 +278,10 @@ url = client.file('<file id>').get_shared_link()
 url = client.file('<file id>').shared_link['url']
 ```
 
-## Project management 
+## Project management
 
-Box offers some limited project management tools, including groups, collaborations, and tasks. 
-Note: you can create another user to test out project management tools as follows: 
+Box offers some limited project management tools, including groups, collaborations, and tasks.
+Note: you can create another user to test out project management tools as follows:
 
 ```python
 test_user = client.create_user('test user', login=None)
@@ -290,7 +290,7 @@ print(user.id)
 
 ### Collaborations
 
-A collaboration object gives a user specified permissions for the defined files and folders. The collaboration object itself returns information about the users, files, and roles of the collaboration. 
+A collaboration object gives a user specified permissions for the defined files and folders. The collaboration object itself returns information about the users, files, and roles of the collaboration.
 
 ```python
 collaboration = client.collaboration('<collab id>').get()
@@ -299,13 +299,13 @@ print(collab.item['type'])
 ```
 
 Roles include editor, viewer, previewer, uploader, previewer uploader,
-viewer uploader, or co-owner. 
+viewer uploader, or co-owner.
 
 ```python
 # Create a new collaboration
 from boxsdk.object.collaboration import CollaborationRole
 user = client.user(user_id='<user id>')
-collab = client.folder(folder_id='<folder id>').collaborate(user, CollaborationRole.VIEWER) 
+collab = client.folder(folder_id='<folder id>').collaborate(user, CollaborationRole.VIEWER)
 ```
 
 Updating and deleting a collaboration is similar to other box objects.
@@ -316,7 +316,7 @@ from boxsdk.object.collaboration import CollaborationRole
 collaboration = client.collaboration(collab_id='<collaboration id>')
 updated_collaboration = collaboration.update_info(CollaborationRole.EDITOR)
 
-# Delete a collaboration 
+# Delete a collaboration
 client.collaboration(collab_id='<collaboraiton id>').delete()
 ```
 
@@ -324,7 +324,7 @@ client.collaboration(collab_id='<collaboraiton id>').delete()
 
 A group object can be used instead of a user in collaborations. The
 `get()` call to a group object returns basic information about the group
-and does not include a member list. 
+and does not include a member list.
 
 ```python
 # Create, update, or delete a group
@@ -336,7 +336,7 @@ client.group(group_id='<group id>').delete()
 user = client.user(user_id='<user id>')
 member = client.group(group_id='<group id>').add_member(user)
 
-group = client.group(group_id='<group id>').get() 
+group = client.group(group_id='<group id>').get()
     {
     "type": "group",
     "id": "255224",
@@ -372,7 +372,7 @@ memberships = client.user(user_id='<user id>').get_group_memberships()
 for m in memberships:
     print(m.group.name)
 ```
-	
+
 You can see all collaboration objects a group has by calling
 `get_collaborations` on a group object:
 
@@ -416,12 +416,12 @@ line. Documentation on how to set up and use pybox can be found at
 Box file storage can now be used from within the Cloudmesh library. Once you have created you config file, you must add the path to your cloudmesh yaml file under box credentials. The Cloudmesh command line library offers six functions for file storage: get, put, search, list, create directory, and delete. Once you have installed Cloudmesh, type `cms` into the command line to start the shell. Every box command should start with the following:
 
 ```bash
-$ storage --storage=box 
+$ storage --storage=box
 ```
 
 ### Get
 
-To download a file from Box with Cloudmesh, you must specify the cloud folder or file to be downloaded and the local folder to download to. To download all the contents of a folder, simply specify a folder on the cloud and use the recursive option. 
+To download a file from Box with Cloudmesh, you must specify the cloud folder or file to be downloaded and the local folder to download to. To download all the contents of a folder, simply specify a folder on the cloud and use the recursive option.
 
 ```bash
 $ storage --storage=box get /test_folder/test_file.txt ~/test_folder --recursive
@@ -429,7 +429,7 @@ $ storage --storage=box get /test_folder/test_file.txt ~/test_folder --recursive
 
 ### Put
 
-The put command uploads files from your local host to the cloud. If you specify a file as the source, the file will be uploaded if no such file exists on the cloud or updated if a copy already exists on the cloud. If the source is a directory and recursive is specified, Cloudmesh will upload all the contents of the source directory to the cloud. 
+The put command uploads files from your local host to the cloud. If you specify a file as the source, the file will be uploaded if no such file exists on the cloud or updated if a copy already exists on the cloud. If the source is a directory and recursive is specified, Cloudmesh will upload all the contents of the source directory to the cloud.
 
 ```bash
 $ storage --storage=box put ~/test_folder /uploads --recursive
@@ -437,7 +437,7 @@ $ storage --storage=box put ~/test_folder /uploads --recursive
 
 ### Search
 
-To search for a file through Cloudmesh, you must specify a directory in which to search and the file or folder name you are searching for. If recursive is specified, Cloudmesh will search all child directories of the original directory. 
+To search for a file through Cloudmesh, you must specify a directory in which to search and the file or folder name you are searching for. If recursive is specified, Cloudmesh will search all child directories of the original directory.
 
 ```bash
 $ storage --storage=box search /uploads last_upload.txt --recursive
@@ -445,7 +445,7 @@ $ storage --storage=box search /uploads last_upload.txt --recursive
 
 ### List
 
-The list command lists all the contents of a cloud directory. If recursive is specified, it will list the contents of all child directories as well. 
+The list command lists all the contents of a cloud directory. If recursive is specified, it will list the contents of all child directories as well.
 
 ```bash
 $ storage --storage=box list /uploads --recursive
@@ -453,7 +453,7 @@ $ storage --storage=box list /uploads --recursive
 
 ### Create a directory
 
-To create a new directory, you must specify the path of the new directory you would like to create, including its parent directory. 
+To create a new directory, you must specify the path of the new directory you would like to create, including its parent directory.
 
 ```bash
 $ storage --storage=box create dir /test_folder/new_folder
@@ -461,12 +461,12 @@ $ storage --storage=box create dir /test_folder/new_folder
 
 ### Delete
 
-The delete command can delete files or folders from your cloud file storage. Deleting a folder will delete its contents as well. 
+The delete command can delete files or folders from your cloud file storage. Deleting a folder will delete its contents as well.
 
 ```bash
 $ storage --storage=box delete /uploads/last_upload.txt
 ```
 
-Finally, if you have set the storage variable to box, you can omit the `--storage=box` from your command line calls. 
+Finally, if you have set the storage variable to box, you can omit the `--storage=box` from your command line calls.
 
 ![No](images/no.png) openapi
