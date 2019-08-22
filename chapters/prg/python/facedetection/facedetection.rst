@@ -1412,14 +1412,14 @@ how it works.
 Import cv2
 ~~~~~~~~~~
 
-Let's import opencv python module and we will use images from the online
+Let us import opencv python module and we will use images from the online
 database image-net.org to test OpenCV image recognition.
 
 .. code:: ipython2
 
     import cv2
 
-Let's download a mailbox image with a red color to see if opencv
+Let us download a mailbox image with a red color to see if opencv
 identifies the shape with a color. The example file in this tutorial is:
 
 .. code:: ipython2
@@ -1534,7 +1534,7 @@ INRIA Person Dataset
 ~~~~~~~~~~~~~~~~~~~~
 
 We use INRIA Person dataset to detect upright people and faces in images
-in this example. Let's download it first.
+in this example. Let us download it first.
 
 .. code:: ipython2
 

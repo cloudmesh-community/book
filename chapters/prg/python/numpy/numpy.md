@@ -46,7 +46,7 @@ with varying dimensions.
 
 ## Data Types: The Basic Building Blocks
 
-Before we delve into arrays and matrices, we'll start off with
+Before we delve into arrays and matrices, we will start off with
 the most basic element of those: a single value. NumPy can
 represent data utilizing many different standard datatypes such
 as uint8 (an 8-bit **u**signed **int**eger), float64 (a 64-bit

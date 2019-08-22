@@ -171,9 +171,9 @@ reproduce your project and run it. Remember that tables and figures do
 not count towards the paper length. The following minimal length is
 required:
 
--    800 words, one student in the project
--   1200 words, two students in the project
--   1400 words, three students in the project
+*  800 words, one student in the project
+* 1200 words, two students in the project
+* 1400 words, three students in the project
 
 Projects with more students are expected to do more programming. The
 report is written in markdown and checked into GitHub. A Report could be

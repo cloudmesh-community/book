@@ -1,12 +1,11 @@
 # Plotting with matplotlib {#sec:matplotlib}
 
-
 A brief overview of plotting with matplotlib along with examples is
 provided. First matplotlib must be installed, which can be accomplished
 with pip install as follows:
 
 ```bash
-pip install matplotlib
+$ pip install matplotlib
 ```
 
 We will start by plotting a simple line graph using built in numpy
@@ -128,7 +127,11 @@ reference="T:fast-cars"}.
 ```python
 import matplotlib.pyplot as plt
 
-x = [' Toyota Prius', 'Tesla Roadster ', ' Bugatti Veyron', ' Honda Civic ', ' Lamborghini Aventador ']
+x = [' Toyota Prius',
+     'Tesla Roadster ',
+     ' Bugatti Veyron',
+     ' Honda Civic ',
+     ' Lamborghini Aventador ']
 horse_power = [120, 288, 1200, 158, 695]
 
 x_pos = [i for i, _ in enumerate(x)]

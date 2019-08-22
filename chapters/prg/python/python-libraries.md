@@ -3,8 +3,8 @@
 Often you may need functionality that is not present in Python's
 standard library. In this case you have two option:
 
--   implement the features yourself
--   use a third-party library that has the desired features.
+* implement the features yourself
+* use a third-party library that has the desired features.
 
 Often you can find a previous implementation of what you need. Since
 this is a common situation, there is a service supporting it: the
@@ -16,8 +16,7 @@ allow us to illustrate the use if virtual environments using the pyenv
 or virtualenv command, and installing and uninstalling PyPi packages
 using pip.
 
-Updating Pip
--------------
+## Updating Pip
 
 It is important that you have the newest version of pip installed for your
 version of python. Let us assume your python is registered with python and
@@ -32,10 +31,9 @@ without interfering with a potential system wide installed version of p
 ip that may be needed by the system default version of python. See the
 section about pyenv for more details
 
-Using pip to Install Packages
------------------------------
+## Using pip to Install Packages
 
-Let's now look at another important tool for Python development: the
+Let us now look at another important tool for Python development: the
 Python Package Index, or PyPI for short. PyPI provides a large set of
 third-party python packages. If you want to do something in python,
 first check pypi, as odd are someone already ran into the problem and
@@ -62,8 +60,7 @@ You can skip '--trusted-host pypi.python.org' option if you have
 
 :   patched urllib3 on Python 2.7.9.
 
-GUI
----
+## GUI
 
 ### GUIZero
 
@@ -90,7 +87,7 @@ pip install pygame
 A hello world program for kivy is included in the cloudmesh.robot
 repository. Which you can fine here
 
--   <https://github.com/cloudmesh/cloudmesh.robot/tree/master/projects/kivy>
+* <https://github.com/cloudmesh/cloudmesh.robot/tree/master/projects/kivy>
 
 To run the program, please download it or execute it in cloudmesh.robot
 as follows:
@@ -104,8 +101,7 @@ To create stand alone packages with kivy, please see:
 
     -  https://kivy.org/docs/guide/packaging-osx.html
 
-Formatting and Checking Python Code
------------------------------------
+## Formatting and Checking Python Code
 
 First, get the bad code:
 
@@ -124,8 +120,7 @@ hand would be a time-consuming and error-prone process. Luckily, this is
 a common problem so there exist a couple packages to help in this
 situation.
 
-Using autopep8
---------------
+## Using autopep8
 
 We can now run the bad code through autopep8 to fix formatting problems:
 
@@ -148,14 +143,12 @@ $ autopep8 -i file.py # update in place
 If you use pyCharm you have the ability to use a similar function while
 pressing on Inspect Code.
 
-Writing Python 3 Compatible Code
---------------------------------
+## Writing Python 3 Compatible Code
 
 To write python 2 and 3 compatible code we recommend that you take a
 look at: <http://python-future.org/compatible_idioms.html>
 
-Using Python on FutureSystems
------------------------------
+## Using Python on FutureSystems
 
 This is only important if you use Futuresystems resources.
 
@@ -171,8 +164,7 @@ This will make the python and virtualenv commands available to you.
 The details of what the module load command does are described in the
 future lesson modules.
 
-Ecosystem
----------
+## Ecosystem
 
 ### pypi
 
@@ -204,9 +196,9 @@ The basic installation of python is provided by python.org. However
 others claim to have alternative environments that allow you to install
 python. This includes
 
--   [Canopy](https://store.enthought.com/downloads/#default)
--   [Anaconda](https://www.continuum.io/downloads)
--   [IronPython](http://ironpython.net/)
+* [Canopy](https://store.enthought.com/downloads/#default)
+* [Anaconda](https://www.continuum.io/downloads)
+* [IronPython](http://ironpython.net/)
 
 Typically they include not only the python compiler but also several
 useful packages. It is fine to use such environments for the class, but
@@ -272,16 +264,15 @@ an individual.
 We have however in regards to using other python version additional
 bonus projects such as
 
--   deploy run and document cloudmesh on ironpython
--   deploy run and document cloudmesh on anaconda, develop script to
-    generate a conda package form github
--   deploy run and document cloudmesh on canopy, develop script to
-    generate a conda package form github
--   deploy run and document cloudmesh on ironpython
--   other documentation that would be useful
+* deploy run and document cloudmesh on ironpython
+* deploy run and document cloudmesh on anaconda, develop script to
+  generate a conda package form github
+* deploy run and document cloudmesh on canopy, develop script to
+  generate a conda package form github
+* deploy run and document cloudmesh on ironpython
+* other documentation that would be useful
 
-Resources
----------
+## Resources
 
 If you are unfamiliar with programming in Python, we also refer you to
 some of the numerous online resources. You may wish to start with [Learn
@@ -293,26 +284,26 @@ wiki page contains a long list of [references for
 learning](https://wiki.python.org/moin/BeginnersGuide/Programmers) as
 well. Additional resources include:
 
--   <https://virtualenvwrapper.readthedocs.io>
--   <https://github.com/yyuu/pyenv>
--   <https://amaral.northwestern.edu/resources/guides/pyenv-tutorial>
--   <https://godjango.com/96-django-and-python-3-how-to-setup-pyenv-for-multiple-pythons/>
--   <https://www.accelebrate.com/blog/the-many-faces-of-python-and-how-to-manage-them/>
--   <http://ivory.idyll.org/articles/advanced-swc/>
--   <http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html>
--   <http://www.youtube.com/watch?v=0vJJlVBVTFg>
--   <http://www.korokithakis.net/tutorials/python/>
--   <http://www.afterhoursprogramming.com/tutorial/Python/Introduction/>
--   <http://www.greenteapress.com/thinkpython/thinkCSpy.pdf>
--   <https://docs.python.org/3.3/tutorial/modules.html>
--   <https://www.learnpython.org/en/Modules/_and/_Packages>
--   <https://docs.python.org/2/library/datetime.html>
--   <https://chrisalbon.com/python/strings/_to/_datetime.html>
+* <https://virtualenvwrapper.readthedocs.io>
+* <https://github.com/yyuu/pyenv>
+* <https://amaral.northwestern.edu/resources/guides/pyenv-tutorial>
+* <https://godjango.com/96-django-and-python-3-how-to-setup-pyenv-for-multiple-pythons/>
+* <https://www.accelebrate.com/blog/the-many-faces-of-python-and-how-to-manage-them/>
+* <http://ivory.idyll.org/articles/advanced-swc/>
+* <http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html>
+* <http://www.youtube.com/watch?v=0vJJlVBVTFg>
+* <http://www.korokithakis.net/tutorials/python/>
+* <http://www.afterhoursprogramming.com/tutorial/Python/Introduction/>
+* <http://www.greenteapress.com/thinkpython/thinkCSpy.pdf>
+* <https://docs.python.org/3.3/tutorial/modules.html>
+* <https://www.learnpython.org/en/Modules/_and/_Packages>
+* <https://docs.python.org/2/library/datetime.html>
+* <https://chrisalbon.com/python/strings/_to/_datetime.html>
 
 A very long list of useful information are also available from
 
--   <https://github.com/vinta/awesome-python>
--   <https://github.com/rasbt/python_reference>
+* <https://github.com/vinta/awesome-python>
+* <https://github.com/rasbt/python_reference>
 
 This list may be useful as it also contains links to data visualization
 and manipulation libraries, and AI tools and libraries. Please note that
@@ -327,8 +318,7 @@ the URL input area
 <https://cloudmesh.github.io/classes/lesson/prg/Jupyter-NumPy-tutorial-I523-F2017.ipynb>
 Then hit Go.
 
-Exercises
----------
+## Exercises
 
 E.Python.Lib.1:
 
@@ -342,14 +332,14 @@ E.Python.Lib.1:
 
 E:Python.Lib.2:
 
-> 1.  Create a pyenv or virtualenv ~/ENV
+> 1. Create a pyenv or virtualenv ~/ENV
 
-> 2.  Modify your ~/.bashrc shell file to activate your environment upon
->     login.
+> 2. Modify your ~/.bashrc shell file to activate your environment upon
+>    login.
 
-> 3.  Install the docopt python package using pip
+> 3. Install the docopt python package using pip
 
-> 4.  Write a program that uses docopt to define a commandline program.
+> 4. Write a program that uses docopt to define a commandline program.
 >    Hint: modify the iterate program.
 
-> 5.  Demonstrate the program works.
+> 5. Demonstrate the program works.

@@ -3,8 +3,8 @@
 In this chapter we will be using some advanced Python features to
 enhance Cloudmesh. Cloudmesh is supposed to easily manage multiple
 clouds. We will be explicitly using python 3 and do not worry about
-backwards compatibility. It is a reimplementation of earlier versions of
-cloudmesh, including cloudmesh client.
+backwards compatibility. It is a reimplementation of earlier versions
+of cloudmesh, including cloudmesh client.
 
 We will be developing it as community so that new features can be
 integrated and loaded on demand while adding an extensible package
@@ -123,13 +123,11 @@ reuse methods. What your are not supposed to do is to reimplement yaml.
 
 There are some special properties of this file that we need to discuss.
 
--   clouds are listed in the clouds section
+* clouds are listed in the clouds section
 
--   the credentials section to each cloud defines how to connect to the
-    cloud with python libraries such as libcloud. Each cloud type will
-    have different parameters.
-
--
+* the credentials section to each cloud defines how to connect to the
+  cloud with python libraries such as libcloud. Each cloud type will
+  have different parameters.
 
 ## Storage
 

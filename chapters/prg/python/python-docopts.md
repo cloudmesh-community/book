@@ -19,7 +19,6 @@ A sample programs are located at
 
 A sample program of using doc opts for our purposes loks as follows
 
-
 ```python
 """Cloudmesh VM management
 

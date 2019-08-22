@@ -72,7 +72,7 @@ cmd> terraform apply DESTmyec2.tfplan
 
 These steps would destroy the EC2 instance.
 
-Let's walk through the basic script to help understand the overall working of Terraform.
+Let us walk through the basic script to help understand the overall working of Terraform.
 
 The 2 main sections of the script are *Provider* and *Resource*.
 *Providers* could be cloud providers -- including all the major ones -

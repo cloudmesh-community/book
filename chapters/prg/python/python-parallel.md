@@ -118,14 +118,19 @@ by 3 twice (counter is incremented by 6 in each function call). If you
 run the previous code, you should be really lucky if you get the
 following as part of your output:
 
-```bash Counter is now 3 Counter is now 6 Counter is now 9 Counter is
-now 12 ``` The reason is the conflict that happens between threads
+```bash
+Counter is now 3
+Counter is now 6
+Counter is now 9
+Counter is now 12
+```
+
+The reason is the conflict that happens between threads
 while incrementing the `counter` in the nested for loop. As you
 probably noticed, the first level for loop is equivalent of adding 3
 to the counter and the conflict that might happen is not effective on
 that level but the nested for loop. Accordingly, the output of the
 previous code is different in every run. This is an example output:
-
 
 ```bash
 $ python3 lock_example.py
@@ -189,9 +194,8 @@ if __name__ == '__main__':
 
 ```
 
-
-No matter how many times you run this code, the output would always be in the correct order:
-
+No matter how many times you run this code, the output would always be
+in the correct order:
 
 ```bash
 $ python3 lock_example.py
@@ -288,7 +292,6 @@ immediately.
 We illustrate the `Pool.map` method by re-implementing our previous
 greeter example using `Pool.map`:
 
-
 ```python
 from multiprocessing import Pool
 import os
@@ -302,7 +305,7 @@ if __name__ == '__main__':
     pool = Pool(processes=3)
     sync_map = pool.map(greeter,names)
     print("Done!")
-	```
+```
 
 As you can see, we have seven names here but we do not want to
 dedicate each greeting to a separate process. Instead we do the whole
@@ -455,7 +458,6 @@ approaches.
 
 The following example re-implements the broken example in the previous
 section. We fix the strange output, by using both `Lock` and `Value`:
-
 
 ```python
 from multiprocessing import Process, Lock, Value

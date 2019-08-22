@@ -246,12 +246,12 @@ how it works.
 
 #### Import cv2
 
-Let's import opencv python module and we will use images from the online
+Let us import opencv python module and we will use images from the online
 database image-net.org to test OpenCV image recognition. See @fig:facedetection_46_0, @fig:facedetection_49_0
 
     import cv2
 
-Let's download a mailbox image with a red color to see if opencv
+Let us download a mailbox image with a red color to see if opencv
 identifies the shape with a color. The example file in this tutorial is:
 
     $ curl http://farm4.static.flickr.com/3061/2739199963_ee78af76ef.jpg > mailbox.jpg
@@ -348,7 +348,7 @@ For more information, see the next useful links.
 #### INRIA Person Dataset
 
 We use INRIA Person dataset to detect upright people and faces in images
-in this example. Let's download it first.
+in this example. Let us download it first.
 
     $ curl ftp://ftp.inrialpes.fr/pub/lear/douze/data/INRIAPerson.tar > INRIAPerson.tar
 

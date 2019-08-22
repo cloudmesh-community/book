@@ -191,9 +191,9 @@ Project Report:
   project and run it. Remember that tables and figures do not count towards
   the paper length. The following length is required:
 
-  -   6 pages (ACM format), one student in the project
-  -   8 pages (ACM format), two students in the project
-  -   10 pages (ACM format), three students in the project
+  * 6 pages (ACM format), one student in the project
+  * 8 pages (ACM format), two students in the project
+  * 10 pages (ACM format), three students in the project
 
   Please note that we no longer use the ACM format but, instead, use
   markdown. All project reports are to be delivered in markdown. A

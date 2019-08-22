@@ -516,7 +516,7 @@ to know is the heat transfer @eq:heat-transfer.
 $$q=h_{c}A(t_{a}-t_{s})$${#eq:heat-transfer}
 
 Here, *q* is the amount of heat transferred for a given amount of time.
-For this example, we'll calculate it as W/hour as that is, conveniently,
+For this example, we will calculate it as W/hour as that is, conveniently,
 how energy is billed. Air moving at a moderate speed will transfer
 approximately 8.47 Watts per Square Foot per Hour. A 1U server is
 19 inches wide and about 34 inches deep. Multiplying the two values gives us

@@ -633,7 +633,7 @@ If you rerun the playbook, you should see that nothing changed:
 
 #### Sanity Check: Test MongoDB
 
-Let's try to run 'mongo' to enter mongodb shell.:
+Let us try to run 'mongo' to enter mongodb shell.:
 
     $ ssh ubuntu@$IP
     $ mongo

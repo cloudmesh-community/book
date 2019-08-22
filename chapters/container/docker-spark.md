@@ -115,7 +115,7 @@ $ docker run -i -t -h sandbox sequenceiq/spark-native-yarn /etc/bootstrap.sh -ba
 
 This will take you to the interactive mode.
 
-Let's run a sample KMeans example. This is already built with Spark.
+Let us run a sample KMeans example. This is already built with Spark.
 
 Here we specify the data data set from a local folder inside the image
 and we run the sample class KMeans in the sample package. The sample
@@ -163,7 +163,7 @@ $ ./bin/spark-submit --class sample.WordCount --master execution-context:org.apa
 
 ## Interactive Examples
 
-Here we need a new image to work on. Let's run the following command.
+Here we need a new image to work on. Let us run the following command.
 This will pull the necessary repositories from docker hub, as we do not
 have most of the dependencies related to it. This can take a few minutes
 to download everything.

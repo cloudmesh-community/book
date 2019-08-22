@@ -92,9 +92,9 @@ df = pd.read_csv("example.csv")
 ```
 
 There are many other modules and libraries that include CSV read
-functions. IN case you need to split a single line by comma, you may
+functions. In case you need to split a single line by comma, you may
 also use the `split` function. However, remember it swill split at every
-comma, including those contained in quotes. SO this method although
+comma, including those contained in quotes. So this method although
 looking originally convenient has limitations.
 
 ### Excel spread sheets
@@ -142,7 +142,9 @@ with open('strings.json') as f:
 
 ### XML
 
-XML format is extensively used to transport data across the web. It has a hierarchical data format, and can be represented in the form of  a tree.
+XML format is extensively used to transport data across the web. It has
+a hierarchical data format, and can be represented in the form of  a
+tree.
 
 A Sample XML data looks like:
 
@@ -270,7 +272,8 @@ More details about it are provided in the documentation page
 
 ![No](images/no.png) TODO: Students can contribute a section
 
-Beautiful Soup is a python library to parse, process and edit HTML documents.
+Beautiful Soup is a python library to parse, process and edit HTML
+documents.
 
 To install Beautiful Soup, use `pip` command as follows:
 
@@ -279,9 +282,9 @@ $ pip install beautifulsoup4
 ```
 
 In order to process HTML documents, a parser is required. Beautiful Soup
-supports the HTML parser included in Python’s standard library, but it also
-supports a number of third-party Python parsers like the `lxml` parser which
-is commonly used [@www-beautifulsoup].
+supports the HTML parser included in Python’s standard library, but it
+also supports a number of third-party Python parsers like the `lxml`
+parser which is commonly used [@www-beautifulsoup].
 
 Following command can be used to install `lxml` parser
 
@@ -289,22 +292,24 @@ Following command can be used to install `lxml` parser
 $ pip install lxml
 ```
 
-To begin with, we import the package and instantiate an object as follows
-for a html document `html_handle`:
+To begin with, we import the package and instantiate an object as
+follows for a html document `html_handle`:
 
 ```python
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(html_handle, `lxml`)
 ```
 
-Now, we will discuss a few functions, attributes and methods of Beautiful Soup.
+Now, we will discuss a few functions, attributes and methods of
+Beautiful Soup.
 
 **prettify function**
 
 `prettify()` method will turn a Beautiful Soup parse tree into a nicely
-formatted Unicode string, with a separate line for each HTML/XML tag and string.
-It is analgous to `pprint()` function. The object created above can be viewed
-by printing the prettfied version of the document as follows:
+formatted Unicode string, with a separate line for each HTML/XML tag and
+string. It is analgous to `pprint()` function. The object created above
+can be viewed by printing the prettfied version of the document as
+follows:
 
 ```python
 print(soup.prettify())
@@ -312,23 +317,23 @@ print(soup.prettify())
 
 **tag Object**
 
-A `tag` object refers to tags in the HTML document. It is possible to go down to
-the inner levels of the DOM tree. To access a tag `div` under the tag `body`,
-it can be done as follows:
+A `tag` object refers to tags in the HTML document. It is possible to go
+down to the inner levels of the DOM tree. To access a tag `div` under
+the tag `body`, it can be done as follows:
 
 ```python
 body_div = soup.body.div
 print(body_div.prettify())
 ```
 
-The `attrs` attribute of the tag object returns a dictionary of all the defined
-attributes of the HTML tag as keys.
+The `attrs` attribute of the tag object returns a dictionary of all the
+defined attributes of the HTML tag as keys.
 
 
 **has_attr() method**
 
-To check if a `tag` object has a specific attribute, `has_attr()` method can
-be used.
+To check if a `tag` object has a specific attribute, `has_attr()` method
+can be used.
 
 ```python
 if body_div.has_attr('p'):
@@ -338,7 +343,8 @@ if body_div.has_attr('p'):
 **tag object attributes**
 
 * `name` - This attribute returns the name of the tag selected.
-* `attrs` - This attribute returns a dictionary of all the defined attributes
+* `attrs` - This attribute returns a dictionary of all the defined 
+  attributes
   of the HTML tag as keys.
 * `contents` - This attribute returns a list of contents enclosed within the
   HTML tag
@@ -457,7 +463,7 @@ see: <https://www.tutorialspoint.com/python/python_database_access.htm>
 
 ## SQLite
 
-;o: TODO: Students can contribute to this section
+:o2: TODO: Students can contribute to this section
 
 <https://www.sqlite.org/index.html>
 

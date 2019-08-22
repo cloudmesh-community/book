@@ -1291,7 +1291,7 @@ for user in cloudmesh_community.objects:
 MongoEngine also has a capability of query filtering
 which means that a keyword can be used within the called
 *QuerySet* object to retrieve specific information
-[@www-querying]. Let's say one would like to iterate over
+[@www-querying]. Let us say one would like to iterate over
 *cloudmesh_community* students that are natives of Indiana.
 To achieve this, one would use the following command:
 

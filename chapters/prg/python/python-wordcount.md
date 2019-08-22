@@ -66,7 +66,8 @@ consist of random numbers rather than the words of an actual language:
 
 Notice that we are using the
 [docopt](https://pypi.python.org/pypi/docopt) module that you should be
-familiar with from the Section [Python DocOpts](#s-python-docopts} to make the script easy to run from the command line.
+familiar with from the Section [Python DocOpts](#s-python-docopts}
+to make the script easy to run from the command line.
 
 You can generate a document collection with this script as follows:
 
@@ -271,7 +272,6 @@ E.python.wordcount.1:
 >    example, starting with 1. What is the performance gain when you goal
 >    from 1 to 2 processes? From 2 to 3? When do you stop seeing
 >    improvement? (this will depend on your machine architecture)
-
 
 ## References
 
