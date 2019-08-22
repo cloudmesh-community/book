@@ -1,4 +1,4 @@
-## Modifying the Pi Image without a PI :o2:
+# Modifying the Pi Image without a PI :o2:
 
 TODO: status: 75
 
@@ -11,15 +11,22 @@ Goals:
 
 ## Overview
 
-When creating large clusters it is not convenient to log in by hand in each PI. Typically to avoid this. One configures the PI via PXE boot. However in this setup we do not use PXE boot, but try to burn an individualized OS that contains from the beginning on the individualized hostname, an ssh key (and the public key is shared with all other images that are burned this way, as well as the network configuration.
+When creating large clusters it is not convenient to log in by hand in
+each PI. Typically to avoid this. One configures the PI via PXE boot.
+However in this setup we do not use PXE boot, but try to burn an
+individualized OS that contains from the beginning on the individualized
+hostname, an ssh key (and the public key is shared with all other images
+that are burned this way, as well as the network configuration.
 
 ## Approach
 
-The goal is to change the hostname on the Stretch Lite images before
-we burn the SD cards so that we can use `arp -a` to populate a
-database matching hostnames to MAC addresses. We need to modify both
-sectors. In the first sector, we want to add an empty file called ssh so that we can ssh into the pi. In the second sector we change the hostname in `/etc/hostname` from `raspberrypi` to a dynamically
-generated unique name.
+The goal is to change the hostname on the Stretch Lite images before we
+burn the SD cards so that we can use `arp -a` to populate a database
+matching hostnames to MAC addresses. We need to modify both sectors. In
+the first sector, we want to add an empty file called ssh so that we can
+ssh into the pi. In the second sector we change the hostname in
+`/etc/hostname` from `raspberrypi` to a dynamically generated unique
+name.
 
 ---
 
@@ -29,11 +36,14 @@ generated unique name.
 
 ---
 
-First create a directory and download the [latest build of Raspbian Lite](https://downloads.raspberrypi.org/raspbian_lite_latest). The last step is to download a script that is located at
+First create a directory and download the
+[latest build of Raspbian Lite](https://downloads.raspberrypi.org/raspbian_lite_latest).
+The last step is to download a script that is located at
 
 * <https://github.com/cloudmesh-community/hid-sp18-419/blob/master/project-code/pi-config/make-pi-images.py>
 
-Please look at the details of this script as it uses some fairly advanced features.
+Please look at the details of this script as it uses some fairly
+advanced features.
 
 ```
 $ mkdir os-images
@@ -50,8 +60,8 @@ To run the make-pi-images.py script execute the following command
 $ sudo python make-pi-images.py 2018-03-13-raspbian-stretch-lite.img
 ```
 
-NOTE: the most current build of Raspbian Lite at the time of writing
-is in the previous command.  You will need to replace it with the name of
+NOTE: the most current build of Raspbian Lite at the time of writing is
+in the previous command.  You will need to replace it with the name of
 the current file that came out of the zip archive.
 
 The customized image will be in a subdirectory called
@@ -59,7 +69,7 @@ The customized image will be in a subdirectory called
 to remove the `mountpoint` directory and move the
 `make-pi-images.pyoutput`.
 
-#### TODO: Automated Cluster SD-Card Script :o2:
+### TODO: Automated Cluster SD-Card Script :o2:
 
 ![No](images/no.png)
 
@@ -69,7 +79,8 @@ to remove the `mountpoint` directory and move the
 
 ---
 
-First we are creating a configuration file that describes our cluster. It is written in yaml and loos as follows:
+First we are creating a configuration file that describes our cluster.
+It is written in yaml and loos as follows:
 
 ```yaml
 data:
@@ -86,9 +97,21 @@ data:
    passwd:  readline
 ```
 
-The meaning of the attributes is rather simple. Under images we specify a number of images that we could chose and are downloaded onto the computer that burns the SD-cards if they are not present. The cluster base hostname is defined by the attribute `hostname` and the first worker node to be specified has the postfix defined by start. We define the last number also in the yaml file, while we will look between the start and the end number. The number of leading blanks is defined by the start and end numbers. A special node called `lead` is specified that is the lead node and all worker nodes are accessible by this lead node. Furthermore. the lead node will be used to monitor the cluster. If the start number includes the lead ode the lead node will be configured. The attribute range specifies which SD-cards are configured. Note this could be a subset of the entire cluster defined by start and end.
+The meaning of the attributes is rather simple. Under images we specify
+a number of images that we could chose and are downloaded onto the
+computer that burns the SD-cards if they are not present. The cluster
+base hostname is defined by the attribute `hostname` and the first
+worker node to be specified has the postfix defined by start. We define
+the last number also in the yaml file, while we will look between the
+start and the end number. The number of leading blanks is defined by the
+start and end numbers. A special node called `lead` is specified that is
+the lead node and all worker nodes are accessible by this lead node.
+Furthermore. the lead node will be used to monitor the cluster. If the
+start number includes the lead ode the lead node will be configured. The
+attribute range specifies which SD-cards are configured. Note this could
+be a subset of the entire cluster defined by start and end.
 
-### Gregor: Manual page cmd5 may be easier than click.
+### Gregor: Manual page cmd5 may be easier than click
 
     modify_sdcard -fetch [Raspbian|dexter|https://downloads.raspberrypi.org/raspbian_lite_latest]  - fetched the image
     modify_sdcard -burn IMAGE   - puts the given image on the sd card
