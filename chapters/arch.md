@@ -23,18 +23,20 @@ implementations.
 We start our observation with some a depiction of some of the
 important architectural models motivating the current state of
 information technology services we provide in
-@fig:evolution-computer-arch.  The
-are computers used primarily by large organizations for critical applications; bulk data processing, such as census, industry and consumer statistics, enterprise resource planning; and transaction processing.
-The term originally referred to the large cabinets called "main frames" that housed the central processing unit and main memory of early computers.
-has been updated by von Laszewski to include the mobile computing and
-the internet of things phase that is bringing rapid changes to how we
-perceive and use the cloud in the near future.
+@fig:evolution-computer-arch.  The are computers used primarily by
+large organizations for critical applications; bulk data processing,
+such as census, industry and consumer statistics, enterprise resource
+planning; and transaction processing.  The term originally referred to
+the large cabinets called "main frames" that housed the central
+processing unit and main memory of early computers.  has been updated
+by von Laszewski to include the mobile computing and the internet of
+things phase that is bringing rapid changes to how we perceive and use
+the cloud in the near future.
 
 ![Evolution of Compute Architectures](images/compute-phase.png){#fig:evolution-computer-arch}
 
 We define the following terminology based on the evolution of compute
-architectures:
-
+architectures.
 
 ### Mainframe Computing
 
@@ -42,19 +44,19 @@ Mainframe computing is using the larger and more reliable computers,
 like IBM System z9, to run the critical applications, bulk data processing,
 enterprise resource planning and business transaction procesings.
 
-> According to [Wikipedia](https://en.wikipedia.org/wiki/Mainframe_comp),
-> the term mainframe originally referred to the large cabinets called
-> "main frames" that housed the central processing unit and main memory of
-> early computers. 
-> Later, the term was used to distinguish high-end
-> commercial machines from less powerful units. Most large-scale computer
-> system architectures were established in the 1960s, but continue to
-> evolve. Mainframe computers are used primarily by large organizations
-> for critical applications; bulk data processing, such as census,
-> industry and consumer statistics, enterprise resource planning; and
-> transaction processing. The term originally referred to the large
-> cabinets called "main frames" that housed the central processing unit
-> and main memory of early computers.
+> According to
+> [Wikipedia](https://en.wikipedia.org/wiki/Mainframe_comp), the term
+> mainframe originally referred to the large cabinets called "main
+> frames" that housed the central processing unit and main memory of
+> early computers.  Later, the term was used to distinguish high-end
+> commercial machines from less powerful units. Most large-scale
+> computer system architectures were established in the 1960s, but
+> continue to evolve. Mainframe computers are used primarily by large
+> organizations for critical applications; bulk data processing, such
+> as census, industry and consumer statistics, enterprise resource
+> planning; and transaction processing. The term originally referred
+> to the large cabinets called "main frames" that housed the central
+> processing unit and main memory of early computers.
 
 Some key attributes of Mainframes that disstingishes it from other
 computers include its larger size, speed, throughput, power and
@@ -101,16 +103,15 @@ computing, but introduced an approach that through the introduction of
 virtual organizations lead to the following definition
 
 > A production Grid is a shared computing infrastructure of hardware,
-software, and knowledge resources that allows the coordinated resource
-sharing and problem solving in dynamic, multi-institutional virtual
-organizations to enable sophisticated international scientific and
-business-oriented collaborations.
+> software, and knowledge resources that allows the coordinated
+> resource sharing and problem solving in dynamic, multi-institutional
+> virtual organizations to enable sophisticated international
+> scientific and business-oriented collaborations.
 
 This definition is certainly including services that are today offered
 by the Cloud. Hence in the early days of cloud computing there was a
 large debate occurring if cloud is just another term for Grid. In
-[Cloud Computing and Grid Computing 360-Degree Compared]
-(http://datasys.cs.iit.edu/publications/2008_GCE08_Clouds_Grids.pdf)
+[Cloud Computing and Grid Computing 360-Degree Compared](http://datasys.cs.iit.edu/publications/2008_GCE08_Clouds_Grids.pdf)
 an analysis is conducted between the different architecture models
 outlining that collective resources and connectivity protocols
 introduced by the Grid community have been replaced by the cloud with
@@ -132,8 +133,6 @@ This certainly resulted in independent development, while cloud
 computing has today consumed Grids. Tools such as the GLobus toolkit
 are no longer widely used, and the development has shifted to the
 support of data services only.
-
-
 
 ### Internet Computing
 
@@ -181,7 +180,6 @@ Internet of Things Computing refers to
 > data to be integrated into a network with sensors and actuators
 > reacting upon sensory and other data.
 
-
 ### Edge Computing
 
 In addition, we need to point out two additional terms that we will
@@ -209,7 +207,6 @@ FoG Computing refers to
 > tha ability to conduct the analysis closer to the edge saving
 > valuable resources while not needing to transmit all data to the
 > data center although it will be analyzed
-
 
 ## As a Servise Architecture Model
 
@@ -239,65 +236,63 @@ architecture view of the cloud.
 When we analyse these functions for example for Amazon Web services we
 find the following
 
-- Compute
-- Storage
-- Databases
-- Migration
-- Networking & Content Delivery
-- Developer Tools
-- Management Tools
-- Media Services
-- Security, Identity & Compliance
-- Machine Learning
-- Analytics
-- Mobile
-- Augmented reality and Virtual Reality
-- Application Integration
-- Customer Engagement
-- Business Productivity
-- Desktop & App Streaming
-- Internet of Things
-- Game Development
-- AWS Marketplace Software
-- AWS Cost Management
+* Compute
+* Storage
+* Databases
+* Migration
+* Networking & Content Delivery
+* Developer Tools
+* Management Tools
+* Media Services
+* Security, Identity & Compliance
+* Machine Learning
+* Analytics
+* Mobile
+* Augmented reality and Virtual Reality
+* Application Integration
+* Customer Engagement
+* Business Productivity
+* Desktop & App Streaming
+* Internet of Things
+* Game Development
+* AWS Marketplace Software
+* AWS Cost Management
 
 From this we derive that for the initial contact to the customer the
 functionality is put in foreground, rather than the distinction
 between SaaS, PaaS, and IaaS. If we sort these services into the as a
 Service mode we find:
 
+* IaaS
 
-- IaaS
+  * Compute
+  * Storage
+  * Databases
+  * Migration
+  * Networking & Content Delivery
 
-  - Compute
-  - Storage
-  - Databases
-  - Migration
-  - Networking & Content Delivery
-
-- PaaS
-  - Developer Tools
-  - Management Tools
-  - Media Services
-  - Security, Identity & Compliance
-  - Machine Learning
-  - Analytics
-  - Mobile
-  - Augmented reality and Virtual Reality
-  - Application Integration
-  - Customer Engagement
-  - Business Productivity
-  - Desktop & App Streaming
-  - Game Development
-  - AWS Marketplace Software
-  - AWS Cost Management
-  - Internet of Things
+* PaaS
+  * Developer Tools
+  * Management Tools
+  * Media Services
+  * Security, Identity & Compliance
+  * Machine Learning
+  * Analytics
+  * Mobile
+  * Augmented reality and Virtual Reality
+  * Application Integration
+  * Customer Engagement
+  * Business Productivity
+  * Desktop & App Streaming
+  * Game Development
+  * AWS Marketplace Software
+  * AWS Cost Management
+  * Internet of Things
 
 We observe that AWS focusses on providing infrastructure and
 platformes so others can provide integrated service to its customers.
 
 Other examples for product lists such as the one from Azure are provided in the Appendix.
-
 
 ## NIST Cloud Architecture
 
@@ -305,8 +300,6 @@ In the introduction we have extensively discussed the NIST cloud
 architecture. A Nice visual representation is provided in @fig:nist-cloud-arch.
 
 ![Visual representation of the NIST Cloud Architecture [Source](https://downloads.cloudsecurityalliance.org/assets/research/security-guidance/csaguide.v3.0.pdf)](images/nist-vis-arch.png){#fig:nist-cloud-arch}
-
-
 
 ## Cloud Security Alliance Reference Architecture
 
@@ -324,7 +317,8 @@ the field and ask questions specific to your company or academic
 project.  You may also find an answer to your question in the white
 papers, reports, tools, trainings, and services they have available.
 
-The group of industry experts based use the following guiding principles to when publishing their reference Architecture.
+The group of industry experts based use the following guiding
+principles to when publishing their reference Architecture.
 
 * Define protections that enable trust in the cloud.
 * Develop cross-platform capabilities and patterns for proprietary and
@@ -349,9 +343,6 @@ An overview of the architecture is shown in the diagram from the Cloud
 Security Alliance. See @fig:csa-arch
 
 ![Cloud Security Alliance Reference Architecture [Source](https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf)](images/csa-architecture.png){#fig:csa-arch}
-
-
-
 
 ## Multicloud Architectures
 
