@@ -13,6 +13,7 @@ metadata:
   stylesheet: "epub.css"
   dest: "./dest/book"
   filename: "vonLaszewski-pi.epub"
+  rights: (c) Gregor von Laszewski, 2018, 2019
 git:
   "community": "https://raw.githubusercontent.com/cloudmesh-community"
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"

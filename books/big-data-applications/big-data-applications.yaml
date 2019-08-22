@@ -13,6 +13,7 @@ metadata:
   stylesheet: "epub.css"
   dest: "./dest/book"
   filename: "vonLaszewski-big-data-applications.epub"
+  rights: (c) Indiana University, Gregor von Laszewski, Geoffrey Fox, 2018, 2019
 git:
   "community": "https://raw.githubusercontent.com/cloudmesh-222"
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
