@@ -44,6 +44,7 @@ RUN yes | pacman -S pandoc-crossref
 
 RUN yes | pacman -S which
 RUN yes | pacman -S openssh
+RUN yes | pacman -S calibre --force
 #
 # INSTALL npm
 #
