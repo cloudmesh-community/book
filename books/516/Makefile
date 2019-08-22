@@ -3,7 +3,7 @@ HOME=../..
 
 all: epub pdf
 
-epub: clean version
+epub: clean version authors
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
@@ -28,3 +28,6 @@ view:
 clean:
 
 	rm -rf dest
+
+authors:
+	../bin/authors.py > ../chapters/authors.md

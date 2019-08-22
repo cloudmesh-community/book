@@ -3,7 +3,7 @@ HOME=../..
 
 include ../Makefile.bibtex
 
-all: epub pdf
+all: epub pdf authors
 
 epub: clean version
 	mkdir -p dest
@@ -26,6 +26,9 @@ version:
 view:
 	killall Books
 	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+
+authors:
+	../bin/authors.py > ../chapters/authors.md
 
 clean:
 

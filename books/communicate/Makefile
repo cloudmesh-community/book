@@ -3,7 +3,7 @@ HOME=../..
 
 all: epub pdf
 
-epub: clean version
+epub: clean version authors
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
@@ -24,6 +24,9 @@ version:
 view:
 	killall Books
 	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+
+authors:
+	../bin/authors.py > ../chapters/authors.md
 
 clean:
 
