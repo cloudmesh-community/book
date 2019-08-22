@@ -41,6 +41,9 @@ RUN pip install emoji
 RUN yes | pacman -S pandoc
 RUN yes | pacman -S pandoc-citeproc
 RUN yes | pacman -S pandoc-crossref
+
+RUN yes | pacman -S which
+RUN yes | pacman -S openssh
 #
 # INSTALL npm
 #

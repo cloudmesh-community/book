@@ -1,5 +1,5 @@
 NAME=book
-
+VERSION=0.2.19
 ######################################################################
 # DOCKER
 ######################################################################
@@ -7,13 +7,13 @@ NAME=book
 #--no-cache=true
 
 image:
-	docker build  -t cloudmesh/$(NAME):0.2.19 .
+	docker build  -t cloudmesh/$(NAME):$(VERSION) .
 
 shell:
-	docker run --rm -it cloudmesh/$(NAME):0.2.19  /bin/bash
+	docker run --rm -it cloudmesh/$(NAME):$(VERSION)  /bin/bash
 
 cms:
-	docker run --rm -it cloudmesh/$(NAME):0.2.19
+	docker run --rm -it cloudmesh/$(NAME):$(VERSION)
 
 dockerclean:
 	-docker kill $$(docker ps -q)
@@ -21,7 +21,7 @@ dockerclean:
 	-docker rmi $$(docker images -q)
 
 push:
-	docker push cloudmesh/$(NAME):0.2.19
+	docker push cloudmesh/$(NAME):$(VERSION)
 
 run:
-	docker run cloudmesh/$(NAME):0.2.19 /bin/sh -c "cd technologies; git pull; make"
+	docker run cloudmesh/$(NAME):$(VERSION) /bin/sh -c "cd technologies; git pull; make"
