@@ -20,7 +20,7 @@
    url={https://github.com/JuliaCloud/AWSCore.jl},
 }
 
-@Misc{www-infoworld,
+@Misc{www-infoworld-julia,
    author={Krill, P.},
    title={New Julia language seeks to be the C for scientists},
    howpublished={Web Page},
