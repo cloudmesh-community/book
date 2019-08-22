@@ -10,7 +10,6 @@ As part of the class you will need a number of [accounts]{.index}
 * piazza.com
 * github.com
 
-
 Optional accounts include (only apply for them if you know you need
 them.  Note that applying for some accounts may take 1 - 2 weeks to
 complete, you should have identified before the middle of the semester
@@ -28,7 +27,6 @@ In our piazza we have details how to submit them to us. We split the
 submission in multiple sub-assignments as the github.com and piazza.com
 are needed within the first week.
 
-
 ## Sections, Chapters, Examples
 
 As part of the class, we expect you to get familiar with topics
@@ -45,10 +43,10 @@ Examples, and Chapters, or excelent Project reports and code.
   include an example if needed. Example sections that have been
   provided are for example the Lambda section in the python chapter
 
-:  Sample of student contributed sections include:
+: Sample of student contributed sections include:
 
-   * [Project Natic](#S:natick)
-   * [Lambda Expressions](#lambda-expressions)
+  * [Project Natic](#S:natick)
+  * [Lambda Expressions](#lambda-expressions)
 
 ![No](images/no.png) please fix links
 
@@ -78,18 +76,17 @@ Examples, and Chapters, or excelent Project reports and code.
   particular technology. Typically it is a console session or a
   program. Examples augment chapters and Sections.
 
-
-> ![](../images/warning.png) *It is expected from you that you self identify a section
-> or a chapter as this shows competence in the area of cloud
-> computing. If however you do not know what to select, you must attend
-> an online hour with us in which we identify sections and chapters with
-> you. The emphasize here is that we do not decide them for you, but we
-> identify them with you.*
+> ![](../images/warning.png) *It is expected from you that you self
+> identify a section or a chapter as this shows competence in the area
+> of cloud computing. If however you do not know what to select, you
+> must attend an online hour with us in which we identify sections and
+> chapters with you. The emphasize here is that we do not decide them
+> for you, but we identify them with you.*
 
 Sample Topics that could form a section or chapter are clearly marked
-with a ![Question](images/question.png). There are plenty in the handbook, but you are
-welcome to define your own contributions. Discuss them with us in the
-online hours.
+with a ![Question](images/question.png). There are plenty in the
+handbook, but you are welcome to define your own
+contributions. Discuss them with us in the online hours.
 
 A list of topics identified by students is maintained in a spreadsheet.
 
@@ -127,9 +124,9 @@ Project Report:
   not count towards the paper length. The following length is
   required:
 
-  -   4 pages, one student in the project
-  -   6 pages, two students in the project
-  -   8 pages, three students in the project
+  * 4 pages, one student in the project
+  * 6 pages, two students in the project
+  * 8 pages, three students in the project
 
   We estimate that a single page is between 1000-1200 words.
   Please note that for 2018 the format will be markdown, so the word
@@ -156,8 +153,6 @@ Data:
     your responsibility to develop a download program. The data **must**
     not be stored in github. You will be expected to write a python
     program that downloads the data.
-
-
 
 Work Breakdown:
 
@@ -205,27 +200,27 @@ The deliverables include but need to be updated according to your
 specific project, for example if you do Edge Computing some
 deliverabl;es will be different:
 
-- Provide benchmarks.
+* Provide benchmarks.
 
-- Take results in two different cloud services and your local PC (ex:
+* Take results in two different cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
   created and deployed based on your documentation.
 
-- Each team member must provide a benchmark on their computer and a cloud IaaS,
-  where the cloud is different from each team member.
+* Each team member must provide a benchmark on their computer and a
+  cloud IaaS, where the cloud is different from each team member.
 
-- Create a Makefile with the tags deploy, run, kill, view, clean that
+* Create a Makefile with the tags deploy, run, kill, view, clean that
   deploys your environment, runs application, kills it, views the
   result and cleans up after wards. You are allowed to have different
   makefiles for the different clouds and different directories. Keep
   the code and directory structure clean and document how to reproduce
   your results.
 
-- For python use a requirements.txt file also
+* For python use a requirements.txt file also
 
-- For docker use a Dockerfile also
+* For docker use a Dockerfile also
 
-- Write a report that includes the following sections
+* Write a report that includes the following sections
 
   * Abstract
   * Introduction
@@ -240,7 +235,7 @@ deliverabl;es will be different:
   * Conclusion
   * (Work Breakdown)
 
-- Your paper will not have a *Future Work* section as this implies
+* Your paper will not have a *Future Work* section as this implies
   that you will do work in future and your paper is incomplte, instead
   you can use an optional "Limitations" section.
 
@@ -254,8 +249,6 @@ show upload of data, sbmission of parameters including the function to
 be executed, potential development of a GUI for the service.
 
 We will work with you to solidify the project throughout the semester.
-
-
 
 ## Alternate Project: Virtual Cluster
 
@@ -273,7 +266,7 @@ progress has to be shown to Gregor von Laszewski.
 The residential students have been assigned this task, but online
 students can join and contribute.
 
-## Alternative Project: 100 node Raspberry Pi cluster.
+## Alternative Project: 100 node Raspberry Pi cluster
 
 In this project you will be developing a 100 node Raspberry PI
 cluster. THis includes putting the hardware together, and developing
@@ -301,40 +294,44 @@ Gregor von Laszewski or the TAs is needed to showcase progress.
 
 Sections and subsections are to be added to the `book` github repo. Do
 a pull request.  The headline of the section needs to be marked with a
-![Construction](images/construction.png) if you still work on it, marked with a ![Smiley](images/smile.png) if you want it
-to be graded. and have all hids for people that contribute to that
-section.
+![Construction](images/construction.png) if you still work on it,
+marked with a ![Smiley](images/smile.png) if you want it to be
+graded. and have all hids for people that contribute to that section.
 
 In addition, simply add them to your README.yml file in your github repo.
 Add the following to it (I am using a18-516-18 as example).
 
-Please look at <https://github.com/cloudmesh-community/fa18-516-18> and <https://raw.githubusercontent.com/cloudmesh-community/fa18-523-62/master/README.yml>
-for an examples. Please note that in case you work in a group the code and report is supposed to be only stored
-in the first hid mentioned in the group field. If you store it in multiple directories your project will be rejected.
+Please look at <https://github.com/cloudmesh-community/fa18-516-18>
+and
+<https://raw.githubusercontent.com/cloudmesh-community/fa18-523-62/master/README.yml>
+for an examples. Please note that in case you work in a group the code
+and report is supposed to be only stored in the first hid mentioned in
+the group field. If you store it in multiple directories your project
+will be rejected.
 
-    section:
-        - title: title of the section 1
-          url: https://github.com/cloudmesh-community/book/chapters/...
-        - title: title of the section 2
-          url: https://github.com/cloudmesh-community/book/chapters/...
-        - title: title of the section 3
-          url: https://github.com/cloudmesh-community/book/chapters/...
-    chapter:
-        - title: title of the chapter
-          url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md
-          group: fa18-523-62 fa18-523-69
-          keyword: whatever
-    project:
-        - title: title of the project
-          url: url in your hid space or that of your partner
-          group: fa18-523-62 fa18-523-69
-          keyword: kubernetes, NIST, Database
-          code: the url to the code
-    other:
-        - activity: spell checked md document
-          url: put url here
-
+```
+section:
+    - title: title of the section 1
+      url: https://github.com/cloudmesh-community/book/chapters/...
+    - title: title of the section 2
+      url: https://github.com/cloudmesh-community/book/chapters/...
+    - title: title of the section 3
+      url: https://github.com/cloudmesh-community/book/chapters/...
+chapter:
+    - title: title of the chapter
+      url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md
+      group: fa18-523-62 fa18-523-69
+      keyword: whatever
+project:
+    - title: title of the project
+      url: url in your hid space or that of your partner
+      group: fa18-523-62 fa18-523-69
+      keyword: kubernetes, NIST, Database
+      code: the url to the code
+other:
+    - activity: spell checked md document
+      url: put url here
+```
 
 You **MUST** run yamllint on the README.yml file. YAML errors will
-give point deductions
-
+give point deductions.
