@@ -319,7 +319,7 @@ MongoDB <---> REST <---> OpenAPI <---> client
 For your convenience we have provided a simple mongodb management
 command in cloudmesh. Please explore it and if you find issues with it
 improve it. It requires that you fill out the
-`~/.cloudmesh/cloudmesh4.yaml` file.
+`~/.cloudmesh/cloudmesh.yaml` file.
 
 For more information, see also
 

@@ -106,7 +106,7 @@ configuration file. To make things easy for now, we assume the credentials
 are stored in a yaml file that is stores in ~/.cloudmesh/cloudmesh.4.yaml.
 An example is listed at
 
-* <https://github.com/cloudmesh-community/cm/blob/master/cloudmesh/etc/cloudmesh4.yaml>
+* <https://raw.githubusercontent.com/cloudmesh/cloudmesh-configuration/master/cloudmesh/configuration/etc/cloudmesh.yaml>
 
 With the help of this yaml file it is now easy to manage credentials for
 multiple clouds. We provide next a simple example on how to get the
@@ -160,13 +160,13 @@ After you obtain the connection, it can be used to invoke various services
 #### Amazon AWS
 
 o get a driver via libcloud for AWS you first have to set up the
-cloudmesh4.yaml file and install the convenience methods from cloudmesh as
+cloudmesh.yaml file and install the convenience methods from cloudmesh as
 documented in
 
 * <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
 
 This will provide you with a convenient config method that reads the Azure
-configuration parameters from the cloudmesh4.yaml file which you need to
+configuration parameters from the cloudmesh.yaml file which you need to
 place in `~/.cloudmesh`
 
 ```python
@@ -206,13 +206,13 @@ Please note that libcloud has multiple drivers to interact with Azure. The
 following is an example using the classic method.
 
 To get a driver via libcloud for azure you first have to set up the
-cloudmesh4.yaml file and install the convenience methods from cloudmesh as
+cloudmesh.yaml file and install the convenience methods from cloudmesh as
 documented in
 
 * <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
 
 This will provide you with a convenient config method that reads the Azure
-configuration parameters from the cloudmesh4.yaml file which you need to
+configuration parameters from the cloudmesh.yaml file which you need to
 place in `~/.cloudmesh`
 
 ```python
@@ -288,13 +288,13 @@ pprint(connection.__dict__)
 #### OpenStack
 
 To get a driver via libcloud for OpenStack you first have to set up the
-cloudmesh4.yaml file and install the convenience methods from cloudmesh as
+cloudmesh.yaml file and install the convenience methods from cloudmesh as
 documented in
 
 * <https://cloudmesh-community.github.io/cm/install.html#installation-via-pip-development>
 
 This will provide you with a convenient config method that reads the Azure
-configuration parameters from the cloudmesh4.yaml file which you need to
+configuration parameters from the cloudmesh.yaml file which you need to
 place in `~/.cloudmesh`
 
 ```python
@@ -452,7 +452,7 @@ passwords on your publicly accessible Github account.
    that you have made. For example maybe you can use a new directory
    on your desktop
 
-2. Copy the cm.py and `cloudmesh4.yaml` files into this folder. Just to
+2. Copy the cm.py and `cloudmesh.yaml` files into this folder. Just to
    make sure you are not working with the files under the git repo you
    should delete the cloudmesh.yaml file in that is in your local git
    repo.
@@ -528,7 +528,7 @@ where you can also define access controls.
 List Containers function list all the containers of buckets available
 for the user in that particular region.
 
-![No](images/no.png) TODO change this example to use the cloudmesh4.yaml file
+![No](images/no.png) TODO change this example to use the cloudmesh.yaml file
 
 ```python
 from libcloud.storage.types import Provider
@@ -549,7 +549,7 @@ List container objects function shows the list of all objects in that
 container. Please note the output could be large depending on the
 files present in the bucket.
 
-![No](images/no.png) TODO change this example to use the cloudmesh4.yaml file
+![No](images/no.png) TODO change this example to use the cloudmesh.yaml file
 
 ```python
 from libcloud.storage.types import Provider
@@ -574,7 +574,7 @@ print(d)
 Upload a file helps in uploading a local file to S3 bucket.
 
 
-![No](images/no.png) TODO change this example to use the cloudmesh4.yaml file
+![No](images/no.png) TODO change this example to use the cloudmesh.yaml file
 
 ```python
 from libcloud.storage.types import Provider

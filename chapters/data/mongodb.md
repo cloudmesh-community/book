@@ -82,7 +82,7 @@ result = test()
 
 When you invoke the function it will automatically store the
 information into MongoDB.  Naturally this requires that the
-`~/.cloudmesh/cloudmesh4.yaml` file is properly configured.
+`~/.cloudmesh/cloudmesh.yaml` file is properly configured.
 
 ## MongoDB
 
