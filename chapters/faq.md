@@ -43,7 +43,7 @@ will be listed.
 
 See: <https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559>
 
-## When contributing to the book my name is not listed properly or not at all
+## When contributing to the book my name is not listed
 
 The following reasons exist:
 
@@ -99,7 +99,8 @@ Here is the workflow on how to read such technical sections
 
 6. Carefully execute the relevant portions for you
 
-> ![Warning](images/warning.png) *AS ALWAYS THERE IS NO GUARANTEE THAT WHAT THE CODE WORKS
+> ![Warning](images/warning.png) *AS ALWAYS THERE IS NO GUARANTEE THAT
+> WHAT THE CODE WORKS
 > OR COULD NOT DESTROY SOMETHING. MAKE SURE TO HAVE A BACKUP. IF IN
 > DOUBT RUN IN A VIRTUAL MACHINE IF YOU CAN.*
 
@@ -153,7 +154,7 @@ $ ruby-e "require 'yaml';puts YAML.load_file('./README.yml')"
 
 YAML validation in visual studio can be achieved also
 
-*  <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml>
+* <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml>
 
 ## Download the ePub ferquently
 
@@ -170,8 +171,8 @@ lates version which starts with 42
 
 ## Spelling of filenames in github
 
-Most of our scripts require proper spellingg including proper capitalization.
-The spelling of `notebook.md` is `notebook.md`
+Most of our scripts require proper spellingg including proper
+capitalization. The spelling of `notebook.md` is `notebook.md`
 
 not
 
@@ -179,7 +180,7 @@ not
 
 Please, correct if you did not use lower case
 
-The spelling of `README.yml` is` README.yml` and not
+The spelling of `README.yml` is ` README.yml` and not
 
 `README.md` (which needs to be removed) or `readme.yaml`
 
@@ -201,23 +202,27 @@ browser and clicking on it will automatically open your ePub browser.
 
 a) The assignment is discussed in Chapter 1 of the lecture notes
 
-b) Examples of what other students have done are in the Example Artifacts section
+b) Examples of what other students have done are in the Example
+   Artifacts section
 
 Please look at both sections
 
 In this class we addressed 3 assignment that  related to your grade
 
-Tech summaries - they have been assigned to you
-in <https://piazza.com/class/jl6rxey6w413gi?cid=89>
-to show to the TAs that you work on them use the nomenclature that is discussed in the preface of the technology handbook. Put yours hid in the "headline" and a smiley when done, If you work on it put in a hand.
-Project - look at examples in the example artifact sections
-A paper has typically the following sections
+Tech summaries - they have been assigned to you in
+<https://piazza.com/class/jl6rxey6w413gi?cid=89> to show to the TAs that
+you work on them use the nomenclature that is discussed in the preface
+of the technology handbook. Put yours hid in the "headline" and a smiley
+when done, If you work on it put in a hand. Project - look at examples
+in the example artifact sections A paper has typically the following
+sections
 
 Theory
 Implementation (e.g. Python)
 Benchmark
 
 A more detailed outline is
+
 * Paper
 * Title
 * Abstract
@@ -285,13 +290,15 @@ the best way to deal with it is to
 
 AVOID IT:
 
-a) first do github adds file by fill with git add. Avoid using adds on AND DO NOT USE
+a) first do github adds file by fill with git add. Avoid using adds on
+   AND DO NOT USE
 
 ```
  git add .                  # <<<<<<< DO NOT USE
 ```
 
-b) only use ssh keys in ~/.ssh **NEVER** place keys in directories that are managed by git
+b) only use ssh keys in ~/.ssh **NEVER** place keys in directories that
+are managed by git
 
 **YOU CAN NOT EASILY DELETE FILES FROM GIT:**
 

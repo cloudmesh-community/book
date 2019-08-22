@@ -39,8 +39,8 @@ The list includes:
 
 * <https://github.com/cloudmesh-community/proceedings-fa18/tree/master/project-report>
 
-  A single page has about 1000 words in ACM format. References are managed in
-  bibtex as documented in:
+  A single page has about 1000 words in ACM format. References are
+  managed in bibtex as documented in:
 
 * <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true>
 
@@ -129,8 +129,8 @@ Typically an A student contributes 2 such sections.
 
 Sample sections contributed by students include:
 
-   * Section Microsoft Nafik Data Center in the Datacenter Chapter
-   * Section Lambda Expressions in *Introduction to Python*
+* Section Microsoft Nafik Data Center in the Datacenter Chapter
+* Section Lambda Expressions in *Introduction to Python*
 
 ### Chapter with Example
 
@@ -202,15 +202,16 @@ reproduce your project and run it. Remember that tables and figures do
 not count towards the paper length. The following minimal length is
 required:
 
--    800 words, one student in the project
--   1200 words, two students in the project
--   1600 words, three students in the project
+* 800 words, one student in the project
+* 1200 words, two students in the project
+* 1600 words, three students in the project
 
 The report is written in markdown and checked into github.
 A Report could be substituted by a manual and benchmarks.
 
 For certain projects, the requirement of a report can be waved or is
-reduced while replacing it with more programming activities. This includes
+reduced while replacing it with more programming activities. This
+includes
 
 * Any project that enhances cloudmesh
 * Building a large cloud cluster with Rasperri Pi's
@@ -287,25 +288,26 @@ not work.
 In general your deliverables will include the following
 (We will address and explain them in a Lab):
 
-- Provide benchmarks.
+* Provide benchmarks.
 
-- Take results in a cloud services and your local PC (ex:
+* Take results in a cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
   created and deployed based on your documentation.
 
-- Each team member must provide a benchmark on their computer and a
+* Each team member must provide a benchmark on their computer and a
   cloud IaaS, where the cloud is different from each team member.
 
-- We require you rto write one or more pytest's that deploys, run,
+* We require you rto write one or more pytest's that deploys, run,
   kill, view, clean that deploys your environment, runs application,
   kills it, views the result and cleans up after wards.
 
-- For python use a requirements.txt file and develop a `setup.py` so
+* For python use a requirements.txt file and develop a `setup.py` so
   your code can be installed with `pip install .`
 
-- For docker use a Dockerfile
+* For docker use a Dockerfile
 
-- (If not exempt) write a report that typically includes the following sections:
+* (If not exempt) write a report that typically includes the following
+  sections:
 
   * Abstract
   * Introduction
@@ -345,33 +347,35 @@ to be graded and have included all hids for people that contributed to that
 section.
 
 In addition, simply add them to your README.yml file in your github repo.
-Add the following to it (I am using a18-516-18 as example).
+Add the following to it (I am using a18*516-18 as example).
 
 Please look at <https://github.com/cloudmesh-community/fa18-516-18> and <https://raw.githubusercontent.com/cloudmesh-community/fa18-523-62/master/README.yml>
 for an examples. Please note that if you work in a group, the code and report is supposed to be only stored
 in the first hid mentioned in the group field. If you store it in multiple directories your project will be rejected.
 
-    section:
-        - title: title of the section 1
-          url: https://github.com/cloudmesh-community/book/chapters/...
-        - title: title of the section 2
-          url: https://github.com/cloudmesh-community/book/chapters/...
-        - title: title of the section 3
-          url: https://github.com/cloudmesh-community/book/chapters/...
-    chapter:
-        - title: title of the chapter
-          url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md
+```
+section:
+    - title: title of the section 1
+      url: https://github.com/cloudmesh-community/book/chapters/...
+    - title: title of the section 2
+      url: https://github.com/cloudmesh-community/book/chapters/...
+    - title: title of the section 3
+      url: https://github.com/cloudmesh-community/book/chapters/...
+chapter:
+    - title: title of the chapter
+      url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md
 group: fa18flys-523-62 fa18-523-69
-          keyword: whatever
-    project:
-        - title: title of the project
-          url: url in your hid space or that of your partner
-          group: fa18-523-62 fa18-523-69
-          keyword: kubernetes, NIST, Database
-          code: the url to the code
-    other:
-        - activity: spell checked md document
-          url: put url here
+      keyword: whatever
+project:
+    - title: title of the project
+      url: url in your hid space or that of your partner
+      group: fa18-523-62 fa18-523-69
+      keyword: kubernetes, NIST, Database
+      code: the url to the code
+other:
+    - activity: spell checked md document
+      url: put url here
+```
 
 You **MUST** run yamllint on the README.yml file. YAML errors will cause
 point deductions. Any invalid yaml file will result in point deductions.
