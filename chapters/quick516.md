@@ -8,7 +8,6 @@ programming language does not have to be pythin as it can easily be
 learned throughout the semester. No background in cloud computing is
 needed.
 
-
 ## Time Commitment
 
 Any class at an university requires a significant time commitment. Due
@@ -44,7 +43,6 @@ The list includes:
   bibtex as documented in:
 
 * <https://github.com/cloudmesh-community/book/blob/master/vonLaszewski-writing-markdown.epub?raw=true>
-
 
 ## Help
 
@@ -87,7 +85,6 @@ Week** passes that you can apply to any of the Labs and stil get credit.
 If you are an online student we recommend that you finish the Labs also
 in the same week. However, you will get eight **Delay a Lab for One
 Week** passes that you can apply to any of the Labs.
-
 
 Please not that if you would need to postone a lab for two weeks, you
 need to use two passes. Lab passes expire one month before the last day
@@ -156,7 +153,6 @@ sample of a student contributed chapter is
 
 * GraphQL
 
-
 > ![Warning](images/warning.png) *It is expected from you that you self identify a section
 > or a chapter as this shows competence in the area of cloud
 > computing. If however you do not know what to select, you must attend
@@ -166,8 +162,6 @@ sample of a student contributed chapter is
 > to enormous cost or licensing issues need to get prior
 > approval. Naturally, the technology you write about needs to be related
 > to cloud computing.*
-
-
 
 ### Project
 
@@ -187,7 +181,6 @@ In this class it is especially important to address the reproducibility
 of the deployment. A test and benchmark, possibly including a
 *downloadable* dataset, must be used to verify the correctness of your
 approach.
-
 
 #### License
 
@@ -216,7 +209,6 @@ required:
 The report is written in markdown and checked into github.
 A Report could be substituted by a manual and benchmarks.
 
-
 For certain projects, the requirement of a report can be waved or is
 reduced while replacing it with more programming activities. This includes
 
@@ -228,7 +220,6 @@ reduced while replacing it with more programming activities. This includes
 However you still have to do a manual and usage examples, benchmarks and
 pytests for them.
 
-
 #### Project Code
 
 This is the **documented** and **reproducible** code and scripts that
@@ -239,7 +230,6 @@ images such as from ubuntu or centos or other linux distributions. All
 code, scripts, and documentation must be uploaded to github.com under
 the class specific github directory. Reproducability must be shown with
 pytests.
-
 
 #### Project Data
 
@@ -282,7 +272,6 @@ sure your file is validated. You can even create your own checks with
 tools such as biber.
 
 ### Project Deliverables
-
 
 In general, any project must be deployable by the TA. If it takes hours
 to deploy your project, please talk to us before final
@@ -343,7 +332,6 @@ In general your deliverables will include the following
 
   ```* [done, Gregor] This was gregors task to showcase how to mark it```
 
-
 ## Submission of sections and chapters and projects
 
 Sections and subsections are to be added to the `book` github repo. Do
@@ -385,7 +373,6 @@ group: fa18flys-523-62 fa18-523-69
         - activity: spell checked md document
           url: put url here
 
-
 You **MUST** run yamllint on the README.yml file. YAML errors will cause
 point deductions. Any invalid yaml file will result in point deductions.
 Please keep your yaml file valid at any time. Our scripts depend on it.
@@ -408,6 +395,4 @@ spelling, grammer or content. We can see from the github history if
 you conducted such improvements. Make sure that technical
 contributions, work on all OSes and are not just targeting a
 single OS if the improvement is of general nature (exceptions apply).
-
-
 
