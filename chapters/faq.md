@@ -12,7 +12,6 @@ FAQ is only for one class we will be especially mark it.
 No. The class book will be our main source of information not just a
 collection of FAQ's.
 
-
 ## Piazza
 
 ### Why are some FAQs that are on piazza not here?
@@ -30,7 +29,6 @@ another section, TA's will mark the FAQ in piazza, so you can make sure
 which FAQs are already in the book. We recommend to look in the book
 as there could be information in it that you otherwise missed.
 
-
 ## How do I find all FAQ's in Piazza?
 
 Two ways exist
@@ -45,8 +43,6 @@ will be listed.
 
 See: <https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=114491559>
 
-
-
 ## When contributing to the book my name is not listed properly or not at all
 
 The following reasons exist:
@@ -56,7 +52,6 @@ The following reasons exist:
 
 2. if it does not show up correctly and only shows your github name,
    which you can see in the contributor section or with
-
 
 ```bash
 $ git shortlog -s -e
@@ -76,7 +71,6 @@ case you use a commandline tool with git init (see our notes on this)
 If you use the GUI you may need to go to the account settings and
 associate a first name lastname, I however do not know ho to do that,
 so if you kwon reply ti this
-
 
 ## How to read the technical sections of the lecture notes
 
@@ -166,7 +160,6 @@ YAML validation in visual studio can be achieved also
 Please be reminded that the ePub is updated frequently and we
 recommend that you download it before you read.
 
-
 I myself have integrated an ePub reader in my Web browser so that
 every time I click on the View Raw in github, I get the most up to
 date version.
@@ -202,7 +195,6 @@ file. Than you can open that.
 However, If you use edge or integrated your ePub viewer in your
 browser and clicking on it will automatically open your ePub browser.
 
-
 ## Assignment Summary
 
 ![No](images/no.png) outdated
@@ -211,12 +203,9 @@ a) The assignment is discussed in Chapter 1 of the lecture notes
 
 b) Examples of what other students have done are in the Example Artifacts section
 
-
 Please look at both sections
 
-
 In this class we addressed 3 assignment that  related to your grade
-
 
 Tech summaries - they have been assigned to you
 in <https://piazza.com/class/jl6rxey6w413gi?cid=89>
@@ -227,7 +216,6 @@ A paper has typically the following sections
 Theory
 Implementation (e.g. Python)
 Benchmark
-
 
 A more detailed outline is
 * Paper
@@ -297,9 +285,7 @@ the best way to deal with it is to
 
 AVOID IT:
 
-
 a) first do github adds file by fill with git add. Avoid using adds on AND DO NOT USE
-
 
 ```
  git add .                  # <<<<<<< DO NOT USE
@@ -308,7 +294,6 @@ a) first do github adds file by fill with git add. Avoid using adds on AND DO NO
 b) only use ssh keys in ~/.ssh **NEVER** place keys in directories that are managed by git
 
 **YOU CAN NOT EASILY DELETE FILES FROM GIT:**
-
 
 c) as you may already know despite you deleting a file from git it is
 still in the git history. Also there are bad characters out there so
@@ -358,5 +343,4 @@ l) if you use them on public clouds that cost money, shut down all
 machines that use them. I would not start them again but instead use
 new once. It may be time to drop everything and do this first. Sorry
 for making you now panic.
-
 

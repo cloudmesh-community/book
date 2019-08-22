@@ -48,4 +48,3 @@ about $8. When it comes to the power supply, make sure to buy one that
 has a power switch included. This helps when rebooting. To enable this
 solution please see Section [A Single Pi](#a-single-pi).
 
-
