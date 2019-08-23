@@ -1,10 +1,14 @@
 # Week 1: Course Introduction
 
-## Resources
+## Assignments
 
-## Lab Activities
+All graded class assignments are posted at
 
 * <https://iu.instructure.com/courses/1822529/assignments>
+
+We provide in this document all activities we do in each week
+
+## Lab Activities
 
 * Post your professional bio to piazza
 * Setup your computer
@@ -62,8 +66,6 @@ you so we can asses show to best integrate you in this class.
 
 It will also help us assess if you have done the Lab
 
-:o2: TBD
+:o2: We anticipate it will be posted on Tuesday 27, 2019
 
-### Plagiarizm Certificate
 
-:o2: TBD
