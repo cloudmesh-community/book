@@ -7,3 +7,7 @@
 ### Data Center Carbon Footprint
 
 ### Carbon Footprint
+
+### Plagiarizm Certificate
+
+:o2: TBD
