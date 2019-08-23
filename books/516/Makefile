@@ -1,9 +1,17 @@
 NAME=e516
 HOME=../..
 
-all: epub pdf
+all: epub pdf authors
 
-epub: clean version authors
+draft: clean version
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME)-draft.yaml get
+	mv dest/vonLaszewski-$(NAME)-draft.epub $(HOME)/docs
+	killall Books
+	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+
+epub: clean version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
@@ -25,9 +33,11 @@ view:
 	killall Books
 	open $(HOME)/docs/vonLaszewski-$(NAME).epub
 
+authors:
+	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
+
 clean:
 
 	rm -rf dest
 
-authors:
-	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
+include ../Makefile.bibtex
