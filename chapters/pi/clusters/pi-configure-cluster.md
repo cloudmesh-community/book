@@ -1,6 +1,6 @@
 # Automated Headless Configuration of a Pi Cluster :o2:
 
-![No](images/no.png)
+:o2:
 
 Our goal is perform the following configuration automatically:
 

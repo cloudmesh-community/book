@@ -1,7 +1,7 @@
 
 ## Preparing the SD card :o2:
 
-![No](images/no.png)
+:o2:
 
 TODO: We should at this time assume we have an OS.
 
@@ -15,7 +15,7 @@ minimum amount of packages.
 
 ## Download Etcher :o2:
 
-![No](images/no.png)
+:o2:
 
 * <https://etcher.io/>
 
@@ -24,7 +24,7 @@ SD card.  Before ejecting the SD card do the following.
 
 ## Enable SSH on the SD Card :o2:
 
-![No](images/no.png)
+:o2:
 
 To prevent Raspberry Pis from being hacked the RPi foundation have now
 disabled SSH on the default image. So, create a text file in /boot/
@@ -38,7 +38,7 @@ Now insert the SD card, networking and power etc.
 
 ## Starting Pi :o2:
 
-![No](images/no.png)
+:o2:
 
 Once you boot up the Raspberry Pi, Connect using SSH
 

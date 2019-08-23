@@ -2,9 +2,15 @@
 
 ## Resources
 
-## Teachning Activities
-
 ## Lab Activities
+
+* <https://iu.instructure.com/courses/1822529/assignments>
+
+* Post your professional bio to piazza
+* Setup your computer
+* Create the cloud accounds and fill out the form
+* Install python on your computer (python 3.7.3 or 3.7.4)
+* Update pip
 
 ### Account Creation
 
@@ -28,10 +34,6 @@ Optional accounts (apply once you need them, some are time limited):
 A survey is to be filled out in the first week of class. It includes
 your github.com account that we need to create your github directory
 in which you will submit your open source project.
-
-### Plagiarizm Certificate
-
-TBD
 
 ### Bio
 
@@ -60,3 +62,8 @@ you so we can asses show to best integrate you in this class.
 
 It will also help us assess if you have done the Lab
 
+:o2: TBD
+
+### Plagiarizm Certificate
+
+:o2: TBD

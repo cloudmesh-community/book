@@ -1,6 +1,6 @@
 # Gestalt :o2:
 
-![No](images/no.png)  ![Question](images/question.png)
+:o2:  ![Question](images/question.png)
 
-![No](images/no.png) TODO students can contribute this section
+:o2: TODO students can contribute this section
 
