@@ -9,7 +9,7 @@ draft: clean version
 	bookmanager $(NAME)-draft.yaml get
 	mv dest/vonLaszewski-$(NAME)-draft.epub $(HOME)/docs
 	killall Books
-	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+	open $(HOME)/docs/vonLaszewski-$(NAME)-draft.epub
 
 epub: clean version
 	mkdir -p dest
