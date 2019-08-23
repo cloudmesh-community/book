@@ -98,4 +98,12 @@ Please note that improving the document in GitHub via pull requests will
 get you credits. This is an easy opportunity for you to get an excellent
 grade.
 
+## Ongoing Agenda
+
+![Construction](images/warning.png)  We will add here on a weely basis
+the topics and Labs that we will cover in the commig week(s). Please be
+awere that jsut as in regular lectures we add the agenda items and
+follow the Syllabus. We may change the order of the topics covered in
+the syllabus as appropriate.
+
 
