@@ -1,12 +1,11 @@
-# Overview
+# Quick Tips
 
 ## Requirements
 
-We recommend that you know one programming language using object
-oriented programming. Although most activities are done in Python, this
-programming language does not have to be Python as it can easily be
-learned throughout the semester. No background in cloud computing is
-needed.
+We recommend that you know one programming language. Although most
+activities are done in Python, this programming language does not have
+to be Python as it can easily be learned throughout the semester. No
+background in cloud computing is needed.
 
 
 ## Time Commitment
@@ -19,23 +18,22 @@ programming experience spend up to 12 hours.
 
 ## Course Material List
 
-Course material will be distributed as ePubs. However you will be
-required to research also some topics on the on the internet. Cloud
-Computing is such an evolving field that changes are very frequently.
-and it is essential to integrate online material into your course
-activities. We also ask you to help
-us updating the ePub and to use additional resources as appropriate.
+Course material will be distributed as ePubs, PDF, Video or
+Presentations. However you will be required to research some topics on
+the on the internet as Cloud Computing ia arapidly evolving field and we
+find the most up to date information on the Web.  We also ask you
+to help us updating the ePub and to use additional resources as
+appropriate.
 
 The list includes:
 
 * Cloud Computing, Gregor von Laszewski, Ed. 2019 [@las19cloudcomputing]
 * Cloud Technologies, Gregor von Laszewski [@las19technologies]
 * Project Report Format, Gregor von Laszewski [@e516-report-sample]
+* Introduction to Python [@las19python]
+* Linux for Cloud Computing [@las19linux]
+* Scientific Writing with Markdown [@las19writing]
 
-
-* Introduction to Python
-* Using Markdown for Academic Papers
-* Plagiarism Certificate
 
 ## Help
 
@@ -51,8 +49,9 @@ and time schedules. To be most flexible and adress all students there
 are two different ways on how you can take this class.
 
 * Way 1: *Free form.* Here you simply look at the Syllabus table for the
-  semester and identify whatever section you feel like reading. However,
-  make sure you conduct our weekly **Lab activities**.
+  semester and identify whatever section you feel like reading (when it
+  becomes available). However, make sure you conduct our weekly **Lab
+  activities**.
 
 * Way 2: *Chronological order.* The lecture notes are ordered
 * chronological. Thus you can follow our lecture alos in chronological
@@ -98,9 +97,10 @@ The Lab's will prepare you towards achieving these assignments.
 
 As part of cloud engineering you will be exposed to a large set of
 technologies. To sharpen your skills in analyzing and evaluating these
-technologies, you will be asked to prepare a technology review.
+technologies, you will be asked to prepare a technology review that is
+being added to a class proceedings.
 
-This includes a substantial written document that can be added as a
+This includes a substantial non-plagiarized document that can be added as a
 chapter to the lecture notes. The review must be done on a topic that is
 not yet included in our book. The review will not include advertisement
 statements form those that have developed the technology, but will
@@ -109,9 +109,9 @@ other related technologies. In addition you will have to develop an
 example showcasing how to use the technology. The minimal length of a
 review is about 800 words.
 
-An example for a Technology review is the section about
+An example for such a section is 
 
-* GraphQL
+* GraphQL in the Cloud Computing book
 
 Alternatively you can prepare several different smaller sections (at
 least 5) that may not have an example in it but are more of descriptive
@@ -121,7 +121,7 @@ nature. Sample sections contributed by students include:
    * Section Lambda Expressions in *Introduction to Python*
 
 
-> ![Warning](images/warning.png) *It is expected from you that you self identify review
+> ![Warning](images/warning.png) *It is expected from you that you self identify a section
 > yourself, as this shows competence in the area of cloud
 > computing. If however you do not know what to select, you must attend
 > an online hour with us in which we identify a topic with
@@ -176,8 +176,10 @@ required:
 * 1400 words, three students in the project
 
 Projects with more students are expected to do more programming. The
-report is written in markdown and checked into GitHub. A Report could be
-substituted by a manual and benchmarks.
+report is written in markdown and checked into GitHub.  The report will
+be made available in a class proceedings. A Report could be substituted
+by a manual and benchmarks. In this case a one page extended abstract
+has to be written, that includes the ling to the manual.
 
 For certain projects, the requirement of a report can be waved or is
 significantly reduced while replacing it with more programming
@@ -245,6 +247,8 @@ will deduct points if you submit an invalid *BibTex* file to GitHub. So
 please make sure your file is validated. You can even create your own
 checks with tools such as `biber`.
 
+We will teach you what to do it is easy.
+
 #### Reproducibility
 
 In general, any project must be deployable by the TA. If it takes hours
@@ -261,33 +265,32 @@ not work.
 The bets way to asure reproducibility is to use `pytest`. We will
 discuss how to do that in class.
 
+We will teach you what to do it is easy.
+
 
 #### List of Deliverables
 
 In general your deliverables will include the following
 (We will address and explain them in a Lab):
 
-- Provide benchmarks.
-
-- Take results in a cloud services and your local PC (ex:
+* Provide benchmarks.
+* Take results in a cloud services and your local PC (ex:
   Chameleon Cloud, echo kubernetes). Make sure your system can be
   created and deployed based on your documentation.
-
-- Each team member must provide a benchmark on their computer and a
+* Each team member must provide a benchmark on their computer and a
   cloud IaaS, where the cloud is different from each team member.
-
-- We require you to write one or more pytest's that deploys, run,
+* We require you to write one or more pytest's that deploys, run,
   kill, view, clean that deploys your environment, runs application,
   kills it, views the result and cleans up after wards.
-
-- For python use a requirements.txt file and develop a `setup.py` so
+* For python use a requirements.txt file and develop a `setup.py` so
   your code can be installed with `pip install .`
+* For docker use a Dockerfile
 
-- For docker use a Dockerfile
+We will teach you what to do ...
 
 #### Example Outline of a Report
 
-- (If not exempt) write a report that typically includes the following
+* (If not exempt) write a report that typically includes the following
 sections:
 
   * Abstract
@@ -303,7 +306,7 @@ sections:
   * Conclusion
   * (Work Breakdown)
 
-* Your paper will **not** have a *Future Work* section as this implies
+* Your report will **not** have a *Future Work* section as this implies
    that you will do work in future and your paper is incomplete. Hence
    we would not grade it. Instead, you can use an optional "Limitations"
    section.
@@ -320,15 +323,15 @@ In case you have an exemption for the project report you need to use
 details in one of our labs.
 
 
-
 ## Submission
 
 All submissions are conducted via GitHub if not otherwise instructed.
 Technology reviews are to be added to the `book` GitHub repo with the
 help of pull requests. The TA's will work with you to integrate them.
 
-As we are working continuously throughout the semester you must indicate your activities in a
-README.yml file in your GitHub repo. The GitHub Repo we will define for you in the first 2 weeks of the semester.
+As we are working continuously throughout the semester you must indicate
+your activities in a README.yml file in your GitHub repo. The GitHub
+Repo we will define for you in the first 2 weeks of the semester.
 
 
 An example for the README.yaml file is shown next
@@ -370,10 +373,13 @@ make sure you use the list and attribute organization with proper dash
 placement. Work with the TAs if you have difficulties. If you copy, only
 copy from the raw content in GitHub. If you work on more
 
+We will teach you what to do it is easy.
+
+
 ## Bonus Projects
 
 This class will not have any bonus projects, as all additional
-activities should be put in your project or chapter contribution.
+activities should be put in your project or chapter/review contribution.
 However, we will recognize extraordinary efforts in these activities.
 
 ## Participation
@@ -386,6 +392,4 @@ spelling, grammer or content. We can see from the GitHub history if
 you conducted such improvements. Make sure that technical
 contributions, work on all OSes and are not just targeting a
 single OS if the improvement is of general nature (exceptions apply).
-
-
 
