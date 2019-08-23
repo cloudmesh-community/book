@@ -318,67 +318,12 @@ the `Terminal` application.
 All Linux versions come with ssh and can be used right from the
 terminal.
 
-### Using SSH on Raspberry Pi 3
+### Using SSH on Raspberry Pi 3/4
 
 SSH is available on Raspbian. However, to ssh into the PI you have to
-activate it via the configuration menu. For a more automated
-configuration, we will provide more information in the Raspberry PI
-section.
+activate it via the configuration menu.
 
-### SSH on Windows :o2:
-
-![No](images/no.png) ![Question](images/question.png)
-
-> ![Warning](images/warning.png) *This section is outdated and should be replaced with
-> information from SSH in powershell and the new ubuntu running in windows.*
-
-* <https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/>
-
-
-
-In case you need access to ssh Microsoft has fortunately updated their
-software to be able to run it directly from the Windows commandline
-including PowerShell.
-
-However it is as far as we know not activated by default so you need to
-follow some setup scripts. Also this software is considered beta and its
-development and issues can be found at
-
-<https://github.com/PowerShell/Win32-OpenSSH>
-<https://github.com/PowerShell/Win32-OpenSSH/issues>
-What you have to do is to install it by going to
-
-    Settings > Apps
-
-and click
-
-    Manage optional features
-
-under
-
-    Apps & features
-
-
-Next, Click on the `Add feature`. You will be presented with a list in
-which you scroll down, till you find `OpenSSH Client (Beta)`. Click on
-it and invoke `Install`.
-
-After the install has completed, you can use the `ssh` command. Just
-type it in the commandshell or PowerShell
-
-    PS C:\Users\gregor> ssh
-
-Naturally you can now use it just as on Linux or OSX. and use it to
-login to other resources
-
-    PS C:\Users\gregor> ssh myname@example.com
-
-## SSH and putty
-
-We no longer recommend the use of putty and instead you should be
-using SSH over Powershell for this class.
-
-### Access a Remote Machine
+### Accessing a Remote Machine
 
 Once the key pair is generated, you can use it to access a remote
 machine. To dod so the public key needs to be added to the
@@ -406,6 +351,7 @@ Now try:
 ```bash
 $ ssh user@host
 ```
+
 and you will not be prompted for a password. However, if you set a
 passphrase when creating your SSH key, you will be asked to enter the
 passphrase at that time (and whenever else you log in in the future).
@@ -418,11 +364,7 @@ $ ssh-add
 
 ## SSH Port Forwarding :o2:
 
-![No](images/no.png) ![Question](images/question.png)
-
-> ![Warning](images/warning.png) *this section has not been vetted yet*
-
-TODO: Add images to illustrate the concepts
+:o2: TODO: Add images to illustrate the concepts
 
 SSH Port forwarding (SSH tunneling) creates an encrypted secure
 connection between a local computer and a remote computer through

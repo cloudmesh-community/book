@@ -1,4 +1,4 @@
-# SSH on Windows 
+# SSH and Bash on Windows 
 
 For this class we recommend that you use a virtual machine via virtual
 box and use the Linux ssh instructions. The information here is just
@@ -15,9 +15,9 @@ as ssh. At this time it may be worth while to try the OpenSSH Client
 available for Windows, although it is in beta. If you like to use other
 methods we have included alternatives.
 
+
 ## OpenSSH Client on Windows
 
-In case you need access to ssh Microsoft has fortunately updated their
 software to be able to run it directly from the Windows commandline
 including PowerShell.
 
