@@ -1,6 +1,6 @@
 # Introduction to Julia for High Performance Computing :o2:
 
-![No](images/no.png)
+:o2:
 
 ---
 
@@ -32,7 +32,7 @@ require translation into lower languages like C or Java."Using LLVM, a compiler
 developed by University  of Illinois at Urbana-Champaign and enhanced by the
 likes of Apple and Google, Karpinski and company built the language so that it
 compiles straight to machine code on the fly, as it runs" [@www-wired-julia].
-![No](images/no.png) ambiguous ref label
+:o2: ambiguous ref label
 
 "Julia features optional typing, multiple dispatch, and good performance,
 achieved using type inference and just-in-time (JIT) compilation, implemented
@@ -61,7 +61,7 @@ available.
 ## Module Management
 
 Julia provides module and package management similar to Python's ```pip``` with
-the ```Pkg.add("")``` function. [@julia-getting-started] ![No](images/no.png) ambiguous ref label
+the ```Pkg.add("")``` function. [@julia-getting-started] :o2: ambiguous ref label
 
 
  To use a package
@@ -74,7 +74,7 @@ execute the following commands:
 	using Winston
 	plot(rand(100))
 ```
-[@julia-getting-started] ![No](images/no.png) ambiguous ref label
+[@julia-getting-started] :o2: ambiguous ref label
 
 
 ## Multiple Dispatch
@@ -128,4 +128,4 @@ println(response)
 * <https://codehandbook.org/make-rest-api-calls-julia/>
 * <https://github.com/essenciary/Genie.j}
 
-![No](images/no.png) bibtex  missing
+:o2: bibtex  missing

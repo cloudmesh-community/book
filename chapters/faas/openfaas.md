@@ -1,6 +1,6 @@
 # OpenFaaS :o2:
 
-![No](images/no.png) ![Construction](images/construction.png) :fa18-516-23:
+:o2: ![Construction](images/construction.png) :fa18-516-23:
 
 OpenFaas is a framework for building serverless functions on docker
 containers and follows the same workflow as micro services.  Since,

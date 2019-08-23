@@ -1,6 +1,6 @@
 # Artificial Intelligence Service with REST :o2:
 
-![No](images/no.png) {#sec:ai}
+:o2: {#sec:ai}
 
 ## Unsupervised Learning
 

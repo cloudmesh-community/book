@@ -134,13 +134,9 @@ IaaS
 It is allowable to use
 
 -   virtualbox
-
 -   chameleon cloud
-
 -   futuresystems
-
 -   AWS (your own cost)
-
 -   Azure (your own cost)
 
 for your projects. Note that on powerful desktop machines even
@@ -161,42 +157,24 @@ See also
 <https://docs.google.com/document/d/1KylDsRBmVbCZSqGpRbzYwdzUGKFi92bkATwU03of5gw>
 
 -   deploy Apache Spark on top of Hadoop
-
 -   deploy Apache Pig on top of Hadoop
-
 -   deploy Apache Storm
-
 -   deploy Apache Flink
-
 -   deploy a Tensorflow cluster
-
 -   deploy a PostgreSQL cluster
-
 -   deploy a MongoDB cluster
-
 -   deploy a CouchDB cluster
-
 -   deploy a Memcached cluster
-
 -   deploy a MySQL cluster
-
 -   deploy a Redis cluster
-
 -   deploy a Mesos cluster
-
 -   deploy a Hadoop cluster
-
 -   deploy a docker swarm cluster
-
 -   deploy NIST Fingerprint Matching
-
 -   deploy NIST Human Detection and Face Detection
-
 -   deploy NIST Live Twitter Analysis
-
 -   deploy NIST Big Data Analytics for Healthcare Data and Health
     Informatics
-
 -   deploy NIST Data Warehousing and Data mining
 
 Deployment projects must have EASY installation setup just as we
@@ -239,37 +217,22 @@ just a simple replication of what others have done before.
 ### Example projects
 
 -   analysis of US Census data
-
 -   analysis of Uber ride sharing GPS data
-
 -   analysis of Health Care data
-
 -   analysis of images for Human Face detection
-
 -   analysis of streaming Twitter data
-
 -   analysis of airline prices, flights, etc
-
 -   analysis of network graphs (social networks, disease networks,
     protein networks, etc)
-
 -   analysis of music files for recommender engines
-
 -   analysis of NIST Fingerprint Matching
-
 -   analysis of NIST Human Detection and Face Detection
-
 -   analysis of NIST Live Twitter Analysis
-
 -   analysis of NIST Big Data Analytics for Healthcare Data and Health
     Informatics
-
 -   analysis of NIST Data Warehousing and Data mining
-
 -   author disambiguity problem in academic papers
-
 -   application of a k-means algorithm
-
 -   application of a MDS
 
 Project Idea: World wide road kill
@@ -289,16 +252,12 @@ android that allows a user while driving to
 
 -   call a number to report roadkill via voice and submitting the gps
     coordinates
-
 -   have a button on the phone that allows the gps coordinates to be
     collected and allow upload either live, or when the user presses
     another button.
-
 -   have provisions in the application that allow you to augment the
     data
-
 -   have an html page that displays the data
-
 -   test it out within users of this class (remember we have world wide
     audience)
 
@@ -333,20 +292,13 @@ Some ideas:
 
 -   Develop a graph view application in JS that showcases dependencies
     between coauthors, institutions
-
 -   Derive probabilities for the publications written by an author given
     they are the same
-
 -   Utilize dependency graphs as given by online databases
-
 -   Utilize the and or topic/abstract/full text to identify similarity
-
 -   Utilize keywords in the title
-
 -   Utilize references of the paper
-
 -   Prepare some vizualization of your result
-
 -   Prepare som interactive vizualization
 
 A possible good start is a previous project published at
@@ -356,5 +308,4 @@ A possible good start is a previous project published at
 There are also some screenshots available:
 
 -   <https://github.com/scienceimpact/bibliometric/blob/master/Project%20Screenshots/Relationship_Authors_Publications.PNG>
-
 -   <https://github.com/scienceimpact/bibliometric/blob/master/Project%20Screenshots/Relationship_Authors_Publications2_Clusters.PNG>
