@@ -484,9 +484,9 @@ $ sudo dhclient -r wlan0; sleep 10; sudo dhclient wlan0
 
 ### Wireless Network at IU :o2:
 
-![No](images/no.png) {#s-wireless-at-iu}
+:o2: {#s-wireless-at-iu}
 
-![No](images/no.png) TODO: Update with new IU public wireless information
+:o2: TODO: Update with new IU public wireless information
 
 IU runs several different networks. This includes IUSecure, Eduroam,
 and ATT Wifi.  The first two would require you to use your IU username
@@ -565,7 +565,7 @@ with our convenient tools and scripts such as `cm-burn`.
 System Preparation without Monitor
 ----------------------------------
 
-![No](images/no.png) there is lots of duplication here to the ultimate setup
+:o2: there is lots of duplication here to the ultimate setup
 
 ### hostname
 
@@ -753,7 +753,7 @@ together. I would suggest this is better down by using Docker or Ansible.
 
 ### PXE Boot
 
-![No](images/no.png)
+:o2:
 
 
 

@@ -1,6 +1,6 @@
 # SLURM :o2:
 
-![No](images/no.png)
+:o2:
 
 This may be inspiring
 

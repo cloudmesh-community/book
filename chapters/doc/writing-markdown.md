@@ -164,7 +164,7 @@ just this pages and check with a pen if the particular issue occurs.
 1.  If your paper is an introduction or overview paper, please do not
     assume the reader to be an expert. Provide enough material for the
     paper to be useful for an introduction into the topic.
-1.  A typical report has about ![No](images/no.png) number of words
+1.  A typical report has about :o2: number of words
 1.  If your paper limit is x number of words but you want to hand in > x + x 10
     words this is an issue. If however you page limit is 2 pages and you hand in
     4 or 6 pages that is no issue.
@@ -194,7 +194,7 @@ just this pages and check with a pen if the particular issue occurs.
     git). This includes all images, bibliography files and other
     material that is needed to build the paper from scratch?
 1.  Have you made sure your paper compiles with *make* and the provided
-    Makefile before you committed? ![No](images/no.png) a makefile will be provided to you
+    Makefile before you committed? :o2: a makefile will be provided to you
     so you can check if the document is correct
 1.  Are all images checked in?
 1.  Did you submit the report.bib file?
@@ -203,7 +203,7 @@ just this pages and check with a pen if the particular issue occurs.
     them with your hid to make them unique.
 
 We may experiment this year with a joint bibliography so you can reuse existing bibtex
-files and citations. ![No](images/no.png) stay tuned on this.
+files and citations. :o2: stay tuned on this.
 
 ### Bibliography
 

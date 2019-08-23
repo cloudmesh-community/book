@@ -102,7 +102,7 @@ tests and exams. They showcase your understanding of the field.
 > to cloud computing.*
 
 Sample Topics that could form a section or chapter are clearly marked
-with a ![Question](images/question.png) or a ![No](images/no.png). and are integrated in the github
+with a ![Question](images/question.png) or a :o2:. and are integrated in the github
 issues, see [Section Gitissues](#sec:gitissues-list). There will be
 plenty in the handbook, but you are welcome to define your own
 contributions. Discuss them with us in the online hours. To guarantee

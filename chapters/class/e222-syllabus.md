@@ -37,7 +37,7 @@ An introduction video is available at:
 
 ## Representative bibliography
 
-![No](images/no.png) add and replace new lecture notes
+:o2: add and replace new lecture notes
 
 1. Cloud Computing for Science and Engineering By Ian Foster and Dennis B. Gannon
 * <https://mitpress.mit.edu/books/cloud-computing-science-and-engineering>
@@ -353,7 +353,7 @@ end of the month). Install and use jabref.
   uses a REST service to obtain data for your analysis. Identify how
   to do benchmarks and time the execution of your project. Add planed
   benchmarks to tour report. Do not use the word *plan* or *will*
-  write it in such a form as if it were done. Instead put a ![No](images/no.png) on
+  write it in such a form as if it were done. Instead put a :o2: on
   benchmarks that you will that you wrok on
 
 * *Week 9: Project update:* Study matplotlib and bokeah and identify how to

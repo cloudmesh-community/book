@@ -159,7 +159,7 @@ Cloud Computing refers to
 We have provided a lecture about the definition of cloud computing
 previously.
 
-![No](images/no.png) include a link to the lecture.
+:o2: include a link to the lecture.
 
 ### Mobile Computing
 

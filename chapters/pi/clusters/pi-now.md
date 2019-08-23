@@ -308,7 +308,7 @@ recommendation on setting hostnames.
 
 ### Private Network Cluster Setup with cm-burn :o2:
 
-![No](images/no.png)
+:o2:
 
 Cm-burn does not currently support setting up the master node in a private
 network cluster. When it is enhanced to support this we will add the

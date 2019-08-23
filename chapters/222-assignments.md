@@ -48,7 +48,7 @@ Examples, and Chapters, or excelent Project reports and code.
   * [Project Natic](#S:natick)
   * [Lambda Expressions](#lambda-expressions)
 
-![No](images/no.png) please fix links
+:o2: please fix links
 
 **Chapter:**
 

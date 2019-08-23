@@ -1,6 +1,6 @@
 # Raspberry PI Hadoop Cluster :o2:
 
-![No](images/no.png)
+:o2:
 
 ## Todo
 

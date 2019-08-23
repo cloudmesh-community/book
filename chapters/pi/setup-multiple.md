@@ -1,6 +1,6 @@
 # Setting up Large PI clusters :o2:
 
-![No](images/no.png)
+:o2:
 ![Construction](images/construction.png)
 
 ## cm-burn

@@ -270,7 +270,7 @@ with <https://www.crummy.com/software/BeautifulSoup/>
 More details about it are provided in the documentation page
 <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>
 
-![No](images/no.png) TODO: Students can contribute a section
+:o2: TODO: Students can contribute a section
 
 Beautiful Soup is a python library to parse, process and edit HTML
 documents.
@@ -397,7 +397,7 @@ print(a_tag_elems)
 
 ### ConfigParser
 
-![No](images/no.png) TODO: Students can contribute a section
+:o2: TODO: Students can contribute a section
 
 * <https://pymotw.com/2/ConfigParser/>
 
@@ -457,7 +457,7 @@ methods `encrypt` and `decrypt`.
 
 ## Database Access
 
-![No](images/no.png) TODO: Students: define conventional database access section
+:o2: TODO: Students: define conventional database access section
 
 see: <https://www.tutorialspoint.com/python/python_database_access.htm>
 
