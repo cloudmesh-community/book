@@ -148,9 +148,9 @@ meaningful name like: `KerberosSecurityConfiguration`. Then select
 
 
 
-![Set up Kerberos 1 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-1.png){#fig:aws-emr-1}
+![Set up Kerberos 1 [@www-aws-emr]](images/EMR-Console-1.png){#fig:aws-emr-1}
 
-![Set up Kerberos 2 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-2.png){#fig:aws-emr-2}
+![Set up Kerberos 2 [@www-aws-emr]](images/EMR-Console-2.png){#fig:aws-emr-2}
 
 
 ### Create the EMR cluster
@@ -162,7 +162,7 @@ Go to the AWS Console (ensure that the URL references your default region)
 Click `Create cluster` (see Figure @fig:aws-emr-3)
 
 
-![Set up EMR 1 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-3.png){#fig:aws-emr-3}
+![Set up EMR 1 [@www-aws-emr]](images/EMR-Console-3.png){#fig:aws-emr-3}
 
 
 * Select your desired EMR version
@@ -174,7 +174,7 @@ Click `Create cluster` (see Figure @fig:aws-emr-3)
 
 Next, create a cluster (see Figure @fig:aws-emr-4)
 
-![Set up EMR 2 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-4.png){#fig:aws-emr-4}
+![Set up EMR 2 [@www-aws-emr]](images/EMR-Console-4.png){#fig:aws-emr-4}
 
 
 * Under `Advanced Options` select `Security` and then YourKerberosSecurityConfiguration
@@ -182,7 +182,7 @@ Next, create a cluster (see Figure @fig:aws-emr-4)
 
 (See Figure @fig:aws-emr-5)
 
-![Set up EMR 3 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-5.png){#fig:aws-emr-5}
+![Set up EMR 3 [@www-aws-emr]](images/EMR-Console-5.png){#fig:aws-emr-5}
 
 
 ### View status and terminate EMR cluster
@@ -192,7 +192,7 @@ naviagting to `>Services>EMR>Clusters` within the AWS Console.
 
 See Figure @fig:aws-emr-6.
 
-![Set up EMR 4 [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-6.png){#fig:aws-emr-6}
+![Set up EMR 4 [@www-aws-emr]](images/EMR-Console-6.png){#fig:aws-emr-6}
 
 
 ## Run an example Spark job on an EMR cluster
@@ -304,7 +304,7 @@ Go to the AWS Console (ensure that the URL references your default region)
 Navigate to the S3 bucket and folder you specified for the output (see Figure
 @fig:aws-emr-7)
 
-![Set up EMR [@fa18-516-22-AWS-EMR-1]](images/EMR-Console-7.png){#fig:aws-emr-7}
+![Set up EMR [@www-aws-emr]](images/EMR-Console-7.png){#fig:aws-emr-7}
 
 
 ## Conclusion

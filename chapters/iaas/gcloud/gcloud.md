@@ -324,7 +324,7 @@ Customize Figure:
 With Activity Stream, you will be able to understand all the activities that occur across your GCP resources in one place.
 See what your teammates are updating in any project to track down issues and audit access. Easily filter through the feed to find exactly what you need.
 
-![@Activity Example](images/activity.png){#fig:gcloud-activity-example}
+![Activity Example](images/activity.png){#fig:gcloud-activity-example}
 
 
 ### Search across Cloud Console
