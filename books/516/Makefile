@@ -3,7 +3,7 @@ HOME=../..
 
 all: epub pdf authors
 
-draft: clean version
+draft: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-draft.yaml get
@@ -11,7 +11,7 @@ draft: clean version
 	killall Books
 	open $(HOME)/docs/vonLaszewski-$(NAME)-draft.epub
 
-epub: clean version
+epub: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
@@ -35,6 +35,11 @@ view:
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
+
+fonts:
+	#mkdir -p dest/book/
+	#-cp -r ../../../bookmanager/bookmanager/template/epub/fonts dest/book/fonts
+	echo "ignoring font embedding"
 
 clean:
 

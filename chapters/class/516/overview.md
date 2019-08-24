@@ -7,7 +7,6 @@ activities are done in Python, this programming language does not have
 to be Python as it can easily be learned throughout the semester. No
 background in cloud computing is needed.
 
-
 ## Time Commitment
 
 Any class at an university requires a significant time commitment. Due
@@ -33,7 +32,6 @@ The list includes:
 * Introduction to Python [@las19python]
 * Linux for Cloud Computing [@las19linux]
 * Scientific Writing with Markdown [@las19writing]
-
 
 ## Help
 
@@ -82,6 +80,8 @@ will be given at that time if this deadline is missed for any delayed
 Labs as TAs must focus their attention on project support.
 
 Lab passes do not apply to other assignments and due dates.
+
+
 
 ## Assignments
 
@@ -197,14 +197,13 @@ However you still have to do a manual and usage examples, benchmarks and
 #### Project Code
 
 You are expected to deliver a **documented** and **reproducible** code
-and unit tests that allows a TA to replicate the project with ease. In
+with unit tests that allows a TA to replicate the project with ease. In
 case you use vm or container images, they must be created from **scratch
 locally** and may not be uploaded to services such as DockerHub. You
 can, however, reuse approved vendor uploaded images such as from ubuntu
 or centos or other linux distributions. All code, scripts, and
 documentation must be uploaded to github.com under the class specific
 GitHub directory.
-
 
 #### Project Data
 
@@ -392,4 +391,3 @@ spelling, grammer or content. We can see from the GitHub history if
 you conducted such improvements. Make sure that technical
 contributions, work on all OSes and are not just targeting a
 single OS if the improvement is of general nature (exceptions apply).
-
