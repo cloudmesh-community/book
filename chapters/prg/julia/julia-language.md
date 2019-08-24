@@ -1,7 +1,6 @@
 # Introduction to Julia for High Performance Computing :o2:
 
-![No](images/no.png)
-
+![Julia logo](images/julia.png)
 ---
 
 ![](images/learning.png) **Learning Objectives**
@@ -13,7 +12,7 @@
 
 ---
 
-![Julia logo](images/julia.png)
+
 
 "Julia walks like Python and runs like C." [@www-julialang]
 
