@@ -1,7 +1,7 @@
 NAME=e516
 HOME=../..
 
-all: epub pdf authors
+all: syllabus epub pdf authors
 
 draft: clean fonts version
 	mkdir -p dest
@@ -10,6 +10,14 @@ draft: clean fonts version
 	mv dest/vonLaszewski-$(NAME)-draft.epub $(HOME)/docs
 	killall Books
 	open $(HOME)/docs/vonLaszewski-$(NAME)-draft.epub
+
+syllabus: clean fonts version
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME)-syllabus.yaml get
+	mv dest/vonLaszewski-$(NAME)-syllabus.epub $(HOME)/docs
+	#killall Books
+	#open $(HOME)/docs/vonLaszewski-$(NAME)-syllabus.epub
 
 epub: clean fonts version
 	mkdir -p dest
