@@ -35,11 +35,11 @@ BOOK:
     - "{file.chapter}/class/516/week1-intro.md"
   - APPENDIX:
     - "{file.chapter}/preface/reader.md"
-    - "{file.chapter}/preface/corrections.md"
-    - "{file.chapter}/authors.md"
-    - "{file.chapter}/preface/create.md"
-    - "{file.chapter}/preface/notation.md"
-    - "{file.chapter}/preface/updates.md"
+#    - "{file.chapter}/preface/corrections.md"
+#    - "{file.chapter}/authors.md"
+#    - "{file.chapter}/preface/create.md"
+#    - "{file.chapter}/preface/notation.md"
+#    - "{file.chapter}/preface/updates.md"
 #    - "{file.chapter}/preface/emoji.md"
   - REFERENCES:
     - "{file.chapter}/empty.md"

@@ -1,4 +1,4 @@
-NAME=syllabus
+NAME=e516-syllabus
 HOME=../..
 
 all: epub pdf

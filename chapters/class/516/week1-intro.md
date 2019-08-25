@@ -8,6 +8,13 @@ All graded class assignments are posted at
 
 We provide in this document all activities we do in each week
 
+## Lecture Material
+
+First material Will be released Tues Aug. 27
+
+For now Start with the Lab activities as they take some time to
+complete.
+
 ## Lab Activities
 
 * Post your professional bio to piazza
@@ -15,20 +22,23 @@ We provide in this document all activities we do in each week
 * Create the cloud accounds and fill out the form
 * Install python on your computer (python 3.7.3 or 3.7.4)
 * Update pip
+* Install an ePub Reader
+  * macOS: Build in use Books
+  * Windows 10: Build in use edge
+  * others: [Calibre](https://forms.gle/w6ryzEm56rQmwWT38)
 
 ### Account Creation
 
-As part of the class you will need a number of [accounts]{.index}. This
+As part of the class you will need a number of accounts. This
 includes:
-
-Required accounts:
 
 * piazza.com (used for communication)
 * github.com (used for project and other class artifacts)
 * chameleoncloud.org (free cloud account)
+* futuresystems.org (GPU & container)
 
 After you created the accounts, please fill out the following form so we
-can set up the class accounts and in case of github we create you a
+can set up the class accounts and in cqase of github we create you a
 class repository for you.
 
 * [Cloud Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
@@ -41,14 +51,12 @@ Optional accounts (apply once you need them, some are time limited):
 * Watson from IBM (optional)
 * google Iaas (optional)
 
-A survey is to be filled out in the first week of class. It includes
-your github.com account that we need to create your github directory
-in which you will submit your open source project.
+We will never ask you for your passwords
 
 ### Bio
 
 This activity serves two purposes. First, it tells us we can communicate
-with you within piazza, and second, you can introduce yourself to others
+with you within [Piazza](https://piazza.com/class/jzkfveoqwri3e4), and second, you can introduce yourself to others
 in piazza to potentially build project or study teams.
 
 ### Python 3.7.4
@@ -64,10 +72,7 @@ disadvantages of often working with outdated libraries. As developer of
 future software you may want to avoid this. If you use python from
 python.org we recommend that you use venv.
 
-
 ### Questionnaire
-
-
 
 In this activity you will be filling out a form with information about
 you so we can asses show to best integrate you in this class. It is not
