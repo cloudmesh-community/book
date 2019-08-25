@@ -27,6 +27,12 @@ Required accounts:
 * github.com (used for project and other class artifacts)
 * chameleoncloud.org (free cloud account)
 
+After you created the accounts, please fill out the following form so we
+can set up the class accounts and in case of github we create you a
+class repository for you.
+
+* [Cloud Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
+
 Optional accounts (apply once you need them, some are time limited):
 
 * google.com (optional)
@@ -61,11 +67,10 @@ python.org we recommend that you use venv.
 
 ### Questionnaire
 
+
+
 In this activity you will be filling out a form with information about
-you so we can asses show to best integrate you in this class.
+you so we can asses show to best integrate you in this class. It is not
+important that you know any of the technologies we ask you about.
 
-It will also help us assess if you have done the Lab
-
-:o2: We anticipate it will be posted on Tuesday 27, 2019
-
-
+* [Background Questionnaire](https://forms.gle/w6ryzEm56rQmwWT38)
