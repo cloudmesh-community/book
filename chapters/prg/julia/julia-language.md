@@ -1,4 +1,4 @@
-# Introduction to Julia for High Performance Computing :o2:
+# Introduction to Julia for High Performance Computing
 
 ![Julia logo](images/julia.png)
 ---
@@ -6,7 +6,7 @@
 ![](images/learning.png) **Learning Objectives**
 
 * Get up and running with Julia
-* Understand parallelization in Julia
+* Learn basic AWS API functionality in Julia
 * Learn about REST services in Julia
 * Interact with external programs in Julia
 
@@ -17,7 +17,7 @@
 "Julia walks like Python and runs like C." [@www-julialang]
 
 Because Julia is a relatively new programming language and documentation is
-sparse, much of this chapter has been adapted from <[https://julialang.org>[@www-julialang]
+sparse, much of this chapter has been adapted from <https://julialang.org> [@www-julialang]
 
 ## Introduction
 
