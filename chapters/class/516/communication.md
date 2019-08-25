@@ -1,5 +1,20 @@
 # Communication
 
+## Class Material
+
+Most class material is distributed as ePubs or PDF. ePub renders on many
+computers nicely, thus we recommend you use ePub instead of PDFs Please
+Install an ePub Reader if your system does not have one.
+
+  * macOS: Build in use Books
+  * Windows 10: Build in use edge
+  * others: [Calibre](https://forms.gle/w6ryzEm56rQmwWT38)
+
+Naturally you can read the ePubs also on your tablet computers if you
+have one with lots ofe memory. Please be aware that the documents will
+be updated weekly and you need to doenload them accordigngly. MAke sure
+you clear teh cache if your prowser prevents the download.
+
 ## Piazza
 
 This class uses piazza for communication. It is your responsibility to

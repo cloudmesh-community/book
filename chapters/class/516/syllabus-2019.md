@@ -35,6 +35,14 @@ and frameworks.
 The course does not have required readings. We will provide the
 following references as pointers to what we will discuss:
 
+* [Cloud Computing](https://laszewski.github.io/book/cloud/)
+* [Linux](https://laszewski.github.io/book/linux/)
+* [Python](https://laszewski.github.io/book/python/)
+* [Markdown](https://laszewski.github.io/book/writing/)
+
+However, please rmemeber we will select topics and include material that
+is or may not be covered in these books. The books will evolve during
+the semester.
 
 ## Tools
 
