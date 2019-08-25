@@ -17,29 +17,36 @@ On Ubuntu, you can easily install the required packages using the following
 command [@www-julialang]:
 
 ```bash
-> sudo apt-get install build-essential libatomic1 python gfortran perl wget m4
-> cmake pkg-config
+$ sudo apt-get install build-essential libatomic1 python gfortran perl wget m4
+$ cmake pkg-config
 ```
 
 To install Julia locally, first download and extract the appropriate 32 or 64-
 bit binary installation package at <https://julialang.org/downloads/> into a
-directory of your choice. Extract the tarball or gzip binary file.  You can then add Julia home to your PATH, or include a soft reference as follows: 
+directory of your choice. Extract the tarball or gzip binary file.  
 
 ```bash
-> export PATH="$(pwd)/julia:$PATH"
+$ wget https://julialang-s3.julialang.org/bin/linux/x64/1.0/julia-1.0.1-linux-x86_64.tar.gz
+$ tar xvfz julia-1.0.1-linux-x86_64.tar.gz
+```
+
+You can then add Julia home to your PATH, or include a soft reference as follows: 
+
+```bash
+$ export PATH="$(pwd)/julia:$PATH"
 ``` 
 
 Alternatively, bring the REPL into scope by editing your ```/etc/environment``` file. Finally, you can create a "hard" link with the following command:  
 
 ```bash
-> sudo ln -s ~/JuliaPro-0.6.2.1/Julia/bin/julia /usr/local/bin/julia
+$ sudo ln -s ~/JuliaPro-0.6.2.1/Julia/bin/julia /usr/local/bin/julia
 ```
 
-Where the last ```julia``` is input into bash to start the REPL.  Creating a link will enable you to call different versions of Julia directly from the bash or shell.  For instance, if both Julia 0.6 and Julia 1.1 are required, it is possible to create separate links to both as follows:
+Where the last ```julia``` is input into bash to start the REPL.  Creating a link will enable you to call different versions of Julia directly from the bash or shell.  For instance, if both Julia 0.6 and Julia 1.0 are required, it is possible to create separate links to both as follows:
 
 ```bash
-> sudo ln -s ~/JuliaPro-0.6.2.1/Julia/bin/julia /usr/local/bin/julia0.6
-> sudo ln -s ~/JuliaPro-1.1.3/Julia/bin/julia /usr/local/bin/julia1.1
+$ sudo ln -s ~/JuliaPro-0.6.2.1/Julia/bin/julia /usr/local/bin/julia0.6
+$ sudo ln -s ~/JuliaPro-1.1.3/Julia/bin/julia /usr/local/bin/julia1.0
 ```
 
 [@www-julialang]
