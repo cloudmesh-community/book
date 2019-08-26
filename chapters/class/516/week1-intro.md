@@ -12,8 +12,13 @@ We provide in this document all activities we do in each week
 
 First material Will be released Tues Aug. 27
 
-For now Start with the Lab activities as they take some time to
-complete.
+Please review the following chapters in the book 
+[Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]:
+
+* Chapter: Preface, ePub Readers
+* Chapter: Overview
+* Chapter: Definition of Cloud Computing
+
 
 ## Lab Activities
 
@@ -36,6 +41,8 @@ includes:
 * github.com (used for project and other class artifacts)
 * chameleoncloud.org (free cloud account)
 * futuresystems.org (GPU & container)
+
+  * Please join this [project](https://portal.futuresystems.org/project/fg-569)
 
 After you created the accounts, please fill out the following form so we
 can set up the class accounts and in cqase of github we create you a
