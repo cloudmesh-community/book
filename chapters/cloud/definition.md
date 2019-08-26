@@ -1,4 +1,4 @@
-# Definition of Cloud Computing {#sec:cloud-definition}
+# DEFINITION OF CLOUD COMPUTING {#sec:cloud-definition}
 
 ---
 
@@ -7,18 +7,16 @@
 * Compare different definitions of cloud computing.
 * Review the History of cloud computing.
 * Identify trends.
-* The current hot job is *data engineer* which is sought after more than data scientists (a new trend). You have chosen the right course :smile:
+* The current hot job is *data engineer* which is sought after more
+  than data scientists (a new trend). You have chosen the right course
+  :relaxed:
 * Be TALLL to be successful in cloud computing.
 
----
+Videos:
 
-We are looking at some of the definitions of cloud computing and
-trends in the following presentation.
+* [![Video](images/presentation.png) Definition of Cloud Computing 2019](https://youtu.be/KaQte-2elVo)
 
-
-* [![Video](images/video.png) Definition of Cloud Computing](https://youtu.be/2ifRjHbJWK8)
-
-This includes the following
+----
 
 ## Defining the term Cloud Computing
 
@@ -38,7 +36,7 @@ that include Infrastructure-, Platform- and Software- as a Service.
 These enhancements especially are targeting Function-, and Container
 as a Service.
 
-## Job as a Data Engineer
+## Job as a Cloud/Data Engineer
 
 We look at some job related trends that especially focus on the newest
 hot job description called **Data Engineer**. It is motivated that
@@ -53,18 +51,19 @@ your marketability.
 We close this class with Gregor’s TALLL principle to succeed in Cloud
 Computing:
 
-
 You must be that TALLL to survive in Cloud Computing and Big Data
 
 This principle includes the following characteristics
 
 Trend Awareness (TA)
 
-: We need to be aware not only what is currently a trend, but what will be future trends
+: We need to be aware not only what is currently a trend, but what
+  will be future trends
 
 Longevity Planning (L)
 
-: We need to be able to reproduce our services and results (e.g. can we reproduce them still in six month).
+: We need to be able to reproduce our services and results (e.g. can
+  we reproduce them still in six month).
 
 Leap Detection (L)
 
@@ -72,6 +71,7 @@ Leap Detection (L)
 
 Learning Willingness (L)
 
-: We need to constantly learn to keep up as technology changes every 6 month
+: We need to constantly learn to keep up as technology changes every 6
+  month
 
 Naturally this principal can be applied to other disciplines.
