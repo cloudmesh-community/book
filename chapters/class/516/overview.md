@@ -26,7 +26,7 @@ appropriate.
 
 The list includes:
 
-* Cloud Computing, Gregor von Laszewski, Ed. 2019 [@las19cloudcomputing]
+* [Cloud Computing](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]
 * Cloud Technologies, Gregor von Laszewski [@las19technologies]
 * Project Report Format, Gregor von Laszewski [@e516-report-sample]
 * Introduction to Python [@las19python]
@@ -52,8 +52,8 @@ are two different ways on how you can take this class.
   activities**.
 
 * Way 2: *Chronological order.* The lecture notes are ordered
-* chronological. Thus you can follow our lecture alos in chronological
-* order.
+  chronological. Thus you can follow our lecture alos in chronological
+  order.
 
 Please note that we have set aside a recommended set of weekly Lab
 activities. The activities are pass-fail and will be integrated in your
