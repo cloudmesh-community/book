@@ -105,3 +105,42 @@ julia> using Genie
 julia> Genie.newapp("testGenieapp")
 ```
 
+The ```.newapp()``` method creates the project directory and starts the server. Adding routes and functionality can be done either via the REPL or by editing the ```routes.jl``` file directly.  For instance, the ```somefloats()``` function above could be added directly into the ```routes.jl``` file as in the above example.  
+
+Additionally, we can add a ```lib``` directory into the root directory and include pre-written code or modules in the app.  In the following examples, Julia will be used to retrieve data from a website, then split that data into train and test sets.  
+
+#### Getting data: 
+
+Syntax in Julia for gathering, reading, and parsing data is similar to that in Python. For the purposes of this text, we will download and process the famouns Iris dataset using the RDatasets package in Julia.  For a complete list of the R datasets, check the following website:  <https://github.com/JuliaStats/RDatasets.jl>.  To begin, bring the RDatasets into scope by adding the following lines of code to your ```routes.jl``` file.  
+
+```julia
+include("RDatasets")
+using RDatasets
+```
+
+Next, define the frame of a simple function as follows: *Note there is no colon after the parameter parenthesis*
+
+```julia
+# routes.jl
+route("/traintest") do
+  data = shuffleobs(dataset("datasets", "iris"), obsdim=1)
+  train, test = splitobs(data, at = 0.7, obsdim=1)
+  train, test
+end
+```
+
+Now we can activate the environment and start the app.  
+*Note: ensure the project directory is the current working directory.  In Atom IDE, this can be set by selecting in the menu: Julia -> Working Directory -> Select.  
+
+```
+# enter package mode by typing right bracket
+julia> ]
+pkg> activate .
+
+#backspace to get back to Julia REPL
+julia> using Genie
+julia> Genie.loadapp()
+julia> startup()
+```
+
+
