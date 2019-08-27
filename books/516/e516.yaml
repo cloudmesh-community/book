@@ -29,10 +29,12 @@ BOOK:
   - SYLLABUS:
     - "{file.chapter}/class/516/syllabus-2019.md"
   - OVERVIEW:
+      - "{file.chapter}/class/516/summary.md"
     - "{file.chapter}/class/516/communication.md"
-    - "{file.chapter}/class/516/overview.md"
+      - "{file.chapter}/class/516/quicktips.md"
   - WEEKLY_AGENDA:
     - "{file.chapter}/class/516/week1-intro.md"
+    - "{file.chapter}/class/516/weekn.md"
   - APPENDIX:
     - "{file.chapter}/preface/reader.md"
 #    - "{file.chapter}/preface/corrections.md"

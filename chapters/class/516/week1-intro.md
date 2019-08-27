@@ -10,9 +10,13 @@ We provide in this document all activities we do in each week
 
 ## Lecture Material
 
-First material Will be released Tues Aug. 27
 
-Please review the following chapters in the book 
+Please watch the following video and
+
+* [![Video](images/video.png)Overview Engineering Cloud Computing 2019](https://drive.google.com/file/d/1ApJW5ipDO64ISnjiBuwHIqEnO-HIFa68/view?usp=sharing)
+
+Next, review the following chapters in the book 
+
 [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]:
 
 * Chapter: Preface, ePub Readers
@@ -22,15 +26,20 @@ Please review the following chapters in the book
 
 ## Lab Activities
 
+Summary: 
+
 * Post your professional bio to piazza
 * Setup your computer
-* Create the cloud accounds and fill out the form
+* Create the cloud accounts and fill out the form [Cloud Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
 * Install python on your computer (python 3.7.3 or 3.7.4)
 * Update pip
 * Install an ePub Reader
   * macOS: Build in use Books
   * Windows 10: Build in use edge
   * others: [Calibre](https://forms.gle/w6ryzEm56rQmwWT38)
+
+Next we provide some more details. If you have questions ask on 
+[Piazza](https://piazza.com/class/jzkfveoqwri3e4)
 
 ### Account Creation
 
