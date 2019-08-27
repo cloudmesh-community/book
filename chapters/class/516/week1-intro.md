@@ -13,7 +13,7 @@ We provide in this document all activities we do in each week
 
 Please watch the following video and
 
-* [![Video](images/video.png)Overview Engineering Cloud Computing 2019](https://drive.google.com/file/d/1ApJW5ipDO64ISnjiBuwHIqEnO-HIFa68/view?usp=sharing)
+* [![Video](images/video.png)Overview Engineering Cloud Computing 2019](https://www.youtube.com/watch?v=PU93waozGJk)
 
 Next, review the following chapters in the book 
 
