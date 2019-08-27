@@ -40,7 +40,7 @@ following references as pointers to what we will discuss:
 * [Python](https://laszewski.github.io/book/python/)
 * [Markdown](https://laszewski.github.io/book/writing/)
 
-However, please rmemeber we will select topics and include material that
+However, please remember we will select topics and include material that
 is or may not be covered in these books. The books will evolve during
 the semester.
 
