@@ -24,7 +24,7 @@ still graded and need to be handed in on time.
 ## Course Material List
 
 Course material will be distributed as ePubs. Howevr you will be
-required to research also some topics on the on teh internet. Cloud
+required to research also some topics on the internet. Cloud
 Computing is such an evolving field that changes frequently. To allow
 you to learn the newest things, we ask you to help us updating the ePub
 and to use additional resources as appropriate.
