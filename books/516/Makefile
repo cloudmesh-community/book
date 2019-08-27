@@ -8,7 +8,7 @@ draft: clean fonts version
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-draft.yaml get
 	mv dest/vonLaszewski-$(NAME)-draft.epub $(HOME)/docs
-	killall Books
+	-killall Books
 	open $(HOME)/docs/vonLaszewski-$(NAME)-draft.epub
 
 syllabus: clean fonts version
@@ -38,7 +38,7 @@ version:
 	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
 view:
-	killall Books
+	-killall Books
 	open $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 authors:
