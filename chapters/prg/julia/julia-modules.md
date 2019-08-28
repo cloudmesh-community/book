@@ -1,8 +1,8 @@
-##Packages and Modules
+## Packages and Modules
 
 Julia utilizes packages, modules, and functions.  Packages are comprised of Modules, Modules are comprised of functions, and the concept of functions is similar to that in many other programming languages and will not be covered in depth in this section.  <https://docs.julialang.org/en/v1/manual/modules/index.html>
 
-###Installing Registered Modules
+### Installing Registered Modules
 
 To install modules via the REPL, it is easiest to enter the ```Pkg``` mode by typing the right bracket ```]```.  Then, using the ```add``` command, bring packages and modules into scope. This avoids using dot notation and extra typing. 
 
@@ -30,7 +30,7 @@ end
 end
 ```
 
-###Custom Modules
+### Custom Modules
 
 Julia makes using not only official registered packages simple, but affords users the opportunity to create and utilize their own packages and modules using both ```git``` and local file structures. 
 

@@ -1,4 +1,4 @@
-##REST in julia
+## REST in julia
 
 The basic structure for creating a GET REST function in Julia is as follows. This can be typed directly in the REPL: 
 
