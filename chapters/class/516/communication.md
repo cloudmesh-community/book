@@ -18,7 +18,7 @@ you clear teh cache if your prowser prevents the download.
 ## Piazza
 
 This class uses piazza for communication. It is your responsibility to
-enroll in the Piazza for the class. A link to our PIazza is provided in
+enroll in the Piazza for the class. A link to our Piazza is provided in
 CANVAS. PIazza works just like a forum in which you can ask questions or
 post notes. In case of a question STudent sand teachers can formulate
 answers. A thread system in the question can be used to gather the
