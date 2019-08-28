@@ -89,10 +89,10 @@ To prepare to setup a Pi cluster you will need to choose whether you will be
 setting up each Raspberry Pi by hand or by using the tools and scripts that we
 have developed to make this task easier and less error prone. The primary tool
 that will save time in setting up a Pi cluster is
-[cm-burn](https://github.com/cloudmesh-community/cm-burn) which was
+[cm-burn](https://github.com/cloudmesh/cm-burn) which was
 introduced in the section [Burn an SD Card with cm-burn](#pi-cm-burn-sd-card).
 The installation and setup instructions for cm-burn can be found in the
-[cm-burn README.md](https://github.com/cloudmesh-community/cm-burn/blob/master/README.md).
+[cm-burn README.md](https://github.com/cloudmesh/cm-burn/blob/master/README.md).
 Once you have `cm-burn` successfully installed you can use the instructions here
 to setup your cluster. We have also developed some scripts to help setup a Pi
 cluster in the
