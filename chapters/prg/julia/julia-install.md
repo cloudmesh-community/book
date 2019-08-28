@@ -53,9 +53,7 @@ $ sudo ln -s ~/JuliaPro-1.1.3/Julia/bin/julia /usr/local/bin/julia1.0
 
 #### Windows
 
-Download the appropriate installer file from <https://julialang.org/downloads/> and run the installer.  
-
-You should now be able to activate Julia in your Bash or Shell session by typing
+Download the appropriate installer file from <https://julialang.org/downloads/> and run the installer.  You should now be able to activate Julia in your Bash or Shell session by typing
 
 ```bash
 $ julia
