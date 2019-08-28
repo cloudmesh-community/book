@@ -16,7 +16,7 @@ The duplicated sections we are aware of include:
 
 If its integrated mark the check mark. We need to be careful not to lose info
 
-* [ ] <https://github.com/cloudmesh-community/cm-burn/blob/master/README.md>
+* [ ] <https://github.com/cloudmesh/cm-burn/blob/master/README.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup.md>
 * [x] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup-dev.md>
   Now only contains information for a development environment. It needs to be
@@ -106,14 +106,14 @@ are demonstrated in the section about burning SD Cards in Linux.
 A very convenient program to create an SD card for a Raspberry Pi is
 using the program `cm-burn`. The program is available from
 
-* <https://github.com/cloudmesh-community/cm-burn>
+* <https://github.com/cloudmesh/cm-burn>
 
 It can be installed with
 
 ```console
 mkdir -p cloudmesh-community
 cd cloudmesh-community
-git clone https://github.com/cloudmesh-community/cm-burn.git
+git clone https://github.com/cloudmesh/cm-burn.git
 cd cm-burn
 pip install .
 ```
@@ -135,7 +135,7 @@ costs about $20 USD and the macOS version called
 costs about $40 USD. Linux supports ext natively and is fully supported by
 cm-burn. Detailed information on how to use cm-burn is provided at
 
-* <https://github.com/cloudmesh-community/cm-burn/blob/master/README.md>
+* <https://github.com/cloudmesh/cm-burn/blob/master/README.md>
 
 To use `cm-burn` you must first download an image of the Raspberry Pi OS
 Raspbian Stretch from <https://www.raspberrypi.org/downloads/raspbian/>. We have
