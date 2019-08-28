@@ -12,7 +12,7 @@ Install an ePub Reader if your system does not have one.
 
 Naturally you can read the ePubs also on your tablet computers if you
 have one with lots ofe memory. Please be aware that the documents will
-be updated weekly and you need to doenload them accordigngly. MAke sure
+be updated weekly and you need to doenload them accordigngly. Make sure
 you clear teh cache if your prowser prevents the download.
 
 ## Piazza
