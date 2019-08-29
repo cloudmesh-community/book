@@ -97,7 +97,7 @@ python.org we recommend that you use venv.
 ### Questionnaire
 
 In this activity you will be filling out a form with information about
-you so we can asses show to best integrate you in this class. It is not
+you so we can assess how to best integrate you in this class. It is not
 important that you know any of the technologies we ask you about.
 
 * [Background Questionnaire](https://forms.gle/w6ryzEm56rQmwWT38)
