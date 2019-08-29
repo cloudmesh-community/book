@@ -4,10 +4,13 @@ from pprint import pprint
 import requests
 from textwrap import dedent
 from pathlib import Path
+import time
+
+repos = [
+    ["fa19-516-000", "Gregor von Laszewski", "laszewsk"]
+]
 
 config = Config()
-
-# pprint (config.data)
 
 g = Github(config["cloudmesh.github.user"],
            config["cloudmesh.github.password"])
@@ -22,6 +25,16 @@ org = g.get_organization("cloudmesh-community")
 
 # pprint (dir(org))
 
+
+# for t in org.get_teams():
+#    pprint (t)
+
+
+ta_team = org.get_team(2631498)
+
+# pprint (team)
+
+# sys.exit()
 # for r in org.get_repos():
 #    print (r)
 
@@ -35,14 +48,12 @@ org = g.get_organization("cloudmesh-community")
 ##  print("Project Name:",json[i]['name'])
 #  print("Project URL:",json[i]['svn_url'],"\n")
 
-repos = [
-    ["fa19-516-000", "Gregor von Laszewski", "laszewsk"]
-]
 
 for r in repos:
     name = r[0]
     description = r[1]
     firstname, lastname = description.split(" ", 1)
+    username = r[2]
     print("creating", name, description)
     repo = org.create_repo(name,
                            description=description,
@@ -69,4 +80,9 @@ for r in repos:
     repo.create_file(".gitignore", "create the .gitignore", gitignore,
                      branch="master")
 
-#    team = org.create_team("ta", name)
+    try:
+        repo.add_to_collaborators(username, permission="write")
+    except Exception as e:
+        pass
+    ta_team.add_to_repos(repo)
+    ta_team.set_repo_permission(repo, "write")
