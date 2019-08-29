@@ -11,16 +11,16 @@ Install an ePub Reader if your system does not have one.
   * others: [Calibre](https://forms.gle/w6ryzEm56rQmwWT38)
 
 Naturally you can read the ePubs also on your tablet computers if you
-have one with lots ofe memory. Please be aware that the documents will
-be updated weekly and you need to doenload them accordigngly. Make sure
-you clear teh cache if your prowser prevents the download.
+have one with lots of memory. Please be aware that the documents will
+be updated weekly and you need to download them accordigngly. Make sure
+you clear the cache if your browser prevents the download.
 
 ## Piazza
 
 This class uses piazza for communication. It is your responsibility to
 enroll in the Piazza for the class. A link to our Piazza is provided in
-CANVAS. PIazza works just like a forum in which you can ask questions or
-post notes. In case of a question STudent sand teachers can formulate
+CANVAS. Piazza works just like a forum in which you can ask questions or
+post notes. In case of a question students and teachers can formulate
 answers. A thread system in the question can be used to gather the
 answer.
 
@@ -66,7 +66,7 @@ post a formal Bio.
 ## Evolving Document
 
 This document is improved throughout the semester with weekly
-activities. We recommend that you regular download a new version. Be
+activities. We recommend that you regularly download a new version. Be
 aware that some browsers or ePub readers may cache the previous version.
 Thus make sure to check out the newest version.
 
@@ -84,8 +84,8 @@ throughout the semester the way on how to interact with it was changed
 dramatically. Now if you would have had a book, the entire chapter about
 Azure would have been outdated. However, within less than a week, we
 were able to replace the content so everyone in class can benefit from
-our updates very quickly. Not only that, because our materil is online
-you will likely fiond an updated versiso in future even after your class
+our updates very quickly. Not only that, because our material is online
+you will likely find an updated version in future even after your class
 is completed. No printed text book can provide this service.
 
 We have the following books in ePub and PDF available. The ePub version
@@ -115,9 +115,9 @@ grade.
 
 ## Ongoing Agenda
 
-![Construction](images/warning.png)  We will add here on a weely basis
-the topics and Labs that we will cover in the commig week(s). Please be
-awere that jsut as in regular lectures we add the agenda items and
+![Construction](images/warning.png)  We will add here on a weekly basis
+the topics and Labs that we will cover in the coming week(s). Please be
+aware that just as in regular lectures we add the agenda items and
 follow the Syllabus. We may change the order of the topics covered in
 the syllabus as appropriate.
 
