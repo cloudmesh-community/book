@@ -1,4 +1,4 @@
-# AWS Elastic Map Reduce (EMR) :o2:
+# AWS Elastic Map Reduce (EMR)
 
 ![No](images/no.png)
 
@@ -18,7 +18,7 @@
 ## Introduction
 
 EMR is an Amazon product that allows for the creation of clusters of
-Elastic Compute Cloud (EC2) instances. EMR allows user to take advantage
+Elastic Compute Cloud (EC2) instances [@www-amazon-emr]. EMR allows user to take advantage
 of distributed computing capabilities. As the name suggests this product
 is designed to allow users to easily scale their cluster to meet their
 computing needs.
@@ -30,7 +30,7 @@ such as SPARK and HBase.
 
 ## Prerequisites
 
-:o2: use ref
+Official prerequisites are listed here: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs-prerequisites.html
 
 * [AWS Account](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#creating-an-account)
 * [AWS Key Pair](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#setting-up-key-pair)
