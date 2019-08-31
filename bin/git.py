@@ -7,7 +7,10 @@ from pathlib import Path
 import time
 
 repos = [
-    ["fa19-516-000", "Gregor von Laszewski", "laszewsk"]
+["fa19-516-156", "Manikandan Nagarajan", "ManiNagarajan20"],
+["fa19-516-157", "Chenxu Wang",	"wang542"],
+["fa19-516-158", "Daivik Dayanand", "Daivik1997"]
+#    ["fa19-516-000", "Gregor von Laszewski", "laszewsk"]
 ]
 
 config = Config()

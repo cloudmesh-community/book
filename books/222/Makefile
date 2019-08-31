@@ -1,31 +1,40 @@
 NAME=222
+HOME=../..
 
-all: book pdf
+all: epub pdf authors
 
-book: clean version  authors
+epub: clean fonts version
 	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
-	mv dest/vonLaszewski-$(NAME).epub ../../docs
+	mv dest/vonLaszewski-$(NAME).epub $(HOME)/docs
 
 pdf:
 	ebook-convert \
-	  ../../docs/vonLaszewski-$(NAME).epub \
-	  ../../docs/vonLaszewski-$(NAME).pdf
+	  $(HOME)/docs/vonLaszewski-$(NAME).epub \
+	  $(HOME)/docs/vonLaszewski-$(NAME).pdf
 
 bib:
 	mkdir -p dest
-	cp ../../bib/*.bib dest
+	cp $(HOME)/bib/*.bib dest
 
 version:
-	TZ=":US/Eastern"; date > ../../chapters/version.md
+	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
 view:
-	killall Books
+	-killall Books
 	open $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
 
+fonts:
+	#mkdir -p dest/book/
+	#-cp -r ../../../bookmanager/bookmanager/template/epub/fonts dest/book/fonts
+	echo "ignoring font embedding"
+
 clean:
 
 	rm -rf dest
+
+include ../Makefile.bibtex
