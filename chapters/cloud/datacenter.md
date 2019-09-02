@@ -148,14 +148,16 @@ In general a data center will have the following components.
   * Environmental Control Units
   * Physical Security Systems
 
-* Information Technology Equipment: Naturally the facility will host the IT equipment including the following:
+* Information Technology Equipment: Naturally the facility will host
+  the IT equipment including the following:
 
   * Servers
   * Network Services
   * Disks
   * Data Backup Services
 
-* Operations staff: The facility will need to be staffed with the various groups that support such data centers. It includes
+* Operations staff: The facility will need to be staffed with the
+  various groups that support such data centers. It includes
 
   * IT Staff
   * Security and Facility Staff
@@ -163,8 +165,8 @@ In general a data center will have the following components.
 
   With regards to the number of people serving such a facility it is
   obvious that through automation is quite low. According to
-  [@www-datacenter-staffing] proper
-  data center staffing is a key to a reliable operation (see @fig:datacenter-staff-impact).
+  [@www-datacenter-staffing] proper data center staffing is a key to a
+  reliable operation (see @fig:datacenter-staff-impact).
 
   According to @fig:datacenter-staff-impact
   operational sustainability contains three elements of operational
@@ -226,7 +228,8 @@ Hence Data Center IaaS advantages include
 * Increased flexibility
 * Increased support
 * Rapid deployment
-* Decrease management: Outsourcing expertise that is not related to core business
+* Decrease management: Outsourcing expertise that is not related to
+  core business
 
 Datacenter disadvantages include
 
@@ -242,9 +245,9 @@ Datacenter disadvantages include
 ## Data Center Metrics
 
 One of the most important factor to ensure smooth operation and
-offering of services is to employ metrics that will be able to
-provide significant impacting the operations. Having metrics allows
-the staff to monitor and adapt to dynamic situations but also to plan
+offering of services is to employ metrics that will be able to provide
+significant impacting the operations. Having metrics allows the staff
+to monitor and adapt to dynamic situations but also to plan
 operations.
 
 ### Data Center Energy Costs
@@ -297,9 +300,9 @@ charges can have a tremendous payback: had the servers simply consumed
 750 kW over the course of the hour, then our demand charges would've
 been halved to $4,800 while the energy costs remained the same. This is
 also why server virtualization can have a positive impact on energy costs:
-by having fewer servers running at a higher utiliziation, the demand charge
+by having fewer servers running at a higher utilization, the demand charge
 will tend to level itself out as, on average, each server will be more
-fully utilizied. For example, it's better to pay for 500 servers at
+fully utilized. For example, it's better to pay for 500 servers at
 100% utilization than 1000 servers at 50% utilization even though the amount
 of work done is the same since, if the 1,000 servers momentarily all operate
 at 100% utilization for even a brief amount of time in a month, the demand
@@ -538,12 +541,13 @@ $$1,328.2=8.47*4.48*(100-65)$$
 
 $$664.0=8.47*4.48*(100-82.5))$$
 
-From the previous listing, we can see that a 35 degree delta allows the center to dissipate
-1,300 Watts of waste heat from a 1U server while a 17.5 degree delta
-allows us to only dissipate 664 Watts of energy. If a server is consuming
-more than 664 Watts, it'll continue to get warmer and warmer until it
-eventually reaches a temperature differential high enough to create an
-equillibrium (or reaches a thermal throttle and begins to reduce performance).
+From the previous listing, we can see that a 35 degree delta allows
+the center to dissipate 1,300 Watts of waste heat from a 1U server
+while a 17.5 degree delta allows us to only dissipate 664 Watts of
+energy. If a server is consuming more than 664 Watts, it'll continue
+to get warmer and warmer until it eventually reaches a temperature
+differential high enough to create an equilibrium (or reaches a
+thermal throttle and begins to reduce performance).
 
 To combat this, engineers developed the idea of designating
 alternating aisles as either hot or cold. All servers in a given aisle
@@ -579,8 +583,8 @@ does not flow into the hot isles[@hot-cold-containment].
 
 Another good way of reducing the energy consumption is to install water
 cooled doors directly at he rack as shown in @fig:watercooleddoor.
-Cooling even can be actively scontrolled so that in case of idle servers
-less energy is spend to conduct the cooling. THere are many vendors that
+Cooling even can be actively controlled so that in case of idle servers
+less energy is spend to conduct the cooling. There are many vendors that
 provide such cooling solutions.
 
 
@@ -694,13 +698,13 @@ We like to emphasize several examples where such monitoring is helpful:
   against other student members.
 * In commercial clouds you will be charged money. Therefore, it is
   less likely that you forget to shutdown your machine
-* In case you use github carelessly and post your cloud passwords or
+* In case you use GitHub carelessly and post your cloud passwords or
   any other passwords in it, you will find that within five minutes your
   cloud account will be compromised. There are individuals on the
-  network that cleverly mine github for such security lapses and will
+  network that cleverly mine GitHub for such security lapses and will
   use your password if you indeed have stored them in it. In fact
-  github's deletion of a file does not delete the history, so as a non
-  expert deleting the password form github is not sufficient. You will
+  GitHub's deletion of a file does not delete the history, so as a non
+  expert deleting the password form GitHub is not sufficient. You will
   have to either delete and rewrite the history, but definitely in this
   case you will need to reset the password. Monitoring the public cloud
   usage in the data center is important not only in your region but
@@ -747,8 +751,10 @@ SAR, Sweden, and a second AWS GovCloud Region in the US (see
 
 ![AWS regions [@www-aws-infrastructure]](images/datacenter-aws-region.png){#fig:datacenter-aws-region}
 
-Amazon strives to achieve high availability through multiple availability zones,
-improved continuity with replication between regions, meeting compliance and data residency requirements as well as providing geographic expansion. See @fig:datacenter-azure-region
+Amazon strives to achieve high availability through multiple
+availability zones, improved continuity with replication between
+regions, meeting compliance and data residency requirements as well as
+providing geographic expansion. See @fig:datacenter-azure-region
 
 The regions and number of availability zones are as follows:
 
@@ -988,7 +994,7 @@ Hence IU offers very important but needed services
 
 * Karst for traditional supercomputing
 * Jetstream for production use with focus on virtual machines
-* Futuresystems for state-of-the-art research experiment environments
+* Futuresystems for research experiment environments
   with access to bare metal.
 
 ### Shipping Containers
@@ -1066,7 +1072,7 @@ conducted or encouraged we would see a completely different scenario.
 The scenarios are identified  that will significantly impact the prediction:
 
 * **improved management** increases energy-efficiency through
-  operational operational or technological changes with minimal
+  operational or technological changes with minimal
   investment. Strategies include improving the least efficient
   components.
 
@@ -1098,7 +1104,7 @@ and underwater surfaces by organisms such as barnacles and algae.
 
 The PUE (Power Usage Effectiveness) of Phase1 vessel was 1.07 which is
 very efficient and a perfect WUE (Water Usage Effectiveness) of
-exactly 0, while land data centers consume ~ 4.8 liters of water per
+exactly 0, while land data centers consume ~4.8 liters of water per
 KWH. This vessel consumed computer power equivalent to 300 Desktop PCs
 and was of 38000 lbs and it operated for 105 days.
 
@@ -1226,7 +1232,7 @@ Find other such examples. Find some with different categories
 
 **Exercises**
 
-**Prerequisit**: Knowledge about plagiarism.
+**Prerequisite**: Knowledge about plagiarism.
 
 **E.Datacenter.1:** Carbon footprint of a data center
 
@@ -1234,12 +1240,22 @@ Find other such examples. Find some with different categories
 
 **E.Datacenter.2:** Carbon footprint of data centers
 
+**E.Datacenter.2.a:** Table
+
 > World wide we have many data centers. Your task will be to find the
 > carbon emission of a data center and its cost in $ based on energy
-> use on a yearly basis. Add your findings to the following table.
-> Make sure you avoid redundant reporting and find a new datacenter. A
-> google doc will be provided to coordinate with the class
-> participants
+> use on a yearly basis. Make sure you avoid redundant reporting and
+> find a new datacenter. Add your data to the table in this [link](https://docs.google.com/spreadsheets/d/1gh869zfjA4sVxL8-ga0af2_HLTTuOoD1IReuRSrbq4I/edit?usp=sharing)
+under the Sheet *DataCenter*
+
+**E.Datacenter.2.b:** Table
+
+place a file in your repository called *datacenter.md* (note the
+spelling all lower case) and describe details about you data center
+without plagiarizing. Provide references to back up your data and
+description.
+
+TAs will integrate your information into the following table
 
 **Table:** Cost of the data center
 
@@ -1264,25 +1280,41 @@ Find other such examples. Find some with different categories
 > We will ask you anonymously to report your carbon footprint via a
 > form we will prepare in future. As the time to do this is less than
 > 2 minutes, We ask all students to report their footprint.
-
-Please use the calculator at:
-
-* <http://carbonfootprint.c2es.org/>
-
+>
+> Please use the calculator at:
+>
+> * <http://carbonfootprint.c2es.org/>
+>
+> Add your data to the table in this
+> [link](https://docs.google.com/spreadsheets/d/1gh869zfjA4sVxL8-ga0af2_HLTTuOoD1IReuRSrbq4I/edit?usp=sharing)
+> under the Sheet *CarbonFootPrint*
 
 E.Datacenter.4:
 
 > Pick a renewal energy from @sec:energy-renewable  and describe what
-> it is. Find data centers that use this energy form. Create a section
-> and contribute it to the datacenter.md file. As this is a group
-> assignment please work on at least one energy form.
+> it is. Find data centers that use this energy form.
+> Include the information in your hid directory under the file
+> datacenter.md.
+>
+> You will do the energy form based on taking the last digit from your
+> HID and getting the modulo and looking up the value in this table
+>
+> 0. Solar
+> 1. Wind
+> 2. Hydro
+> 3. Thermal
+> 4. Recyclers
+> 5. Others
+>
+> If this number is 0, please use 5. Other
+
 
 E.Datacenter.5:
 
 > Pick a country, state, or company from @sec:energy-society and
 > summarize their efforts towards renewable energy and impacts within
 > the society. Create a section and contribute it to the datacenter.md
-> file.
+> file. Use internet resources and cite them.
 
 E.Datacenter.6:
 
@@ -1292,5 +1324,15 @@ E.Datacenter.6:
 E.Datacenter.7:
 
 > Review: [Nature Article](https://www.nature.com/articles/d41586-018-06610-y).
-> Is there any more up to data data available? What lessons do we take away from the
+> Is there any more up to data available? What lessons do we take away from the
 > article?
+
+E.Datacenter.8:
+
+> Find major data center outages and discuss the *concrete* impact on
+> the internet and user community. Concrete means here not users of
+> the center xyz lost services, but can you identify how many users or
+> how many services were impacted and which? Is there a cost revenue
+> loss projected somewhere? If you find an outage do significant
+> research on it. For example other metrics could include what media
+> impact did this outage have?
