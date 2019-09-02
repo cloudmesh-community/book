@@ -1297,7 +1297,7 @@ E.Datacenter.4:
 > datacenter.md.
 >
 > You will do the energy form based on taking the last digit from your
-> HID and getting the modulo and looking up the value in this table
+> HID and getting the modulo 6 and looking up the value in this table
 >
 > 0. Solar
 > 1. Wind
@@ -1306,7 +1306,8 @@ E.Datacenter.4:
 > 4. Recyclers
 > 5. Others
 >
-> If this number is 0, please use 5. Other
+> If your modulo is undefined please use 5 (e.g. if your digit at the
+> end of your hid 0)
 
 
 E.Datacenter.5:
@@ -1336,3 +1337,9 @@ E.Datacenter.8:
 > loss projected somewhere? If you find an outage do significant
 > research on it. For example other metrics could include what media
 > impact did this outage have?
+
+
+E.Datacenter.9:
+
+> We encourage you to contribute to this section if you like and enjoy
+> doing so.
