@@ -24,7 +24,7 @@ Mindstorms.
 However, there are some things to consider. If you use many programs on
 your desktop and run them all at the same time you will find that in
 up-to-date operating systems you will find your self quickly out of
-memmory. THis is especially true if you use editors such as pyCHarm
+memmory. This is especially true if you use editors such as PyCharm
 which we highly recommend. Furthermore, as you likely have lots of disk
 access, make sure to use a fast HDD or better an SSD.
 
