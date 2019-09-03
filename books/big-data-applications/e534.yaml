@@ -1,21 +1,21 @@
 ---
 metadata:
   image: "cover.png"
-  title: "Big Data Applications"
-  subtitle: "e534"
+  title: "E534 - Big Data Applications"
+  subtitle: "Lecture Notes"
   author: "Geoffrey C. Fox\nGregor von Laszewski"
   subauthor: ""
   email: "laszewski@gmail.com"
-  url: "https://cloudmesh-community.github.io/book/vonlaszewski-523.epub"
+  url: "https://cloudmesh-community.github.io/book/vonlaszewski-e534.epub"
   description: "Proposed Lecture content (subject to change)"
   abstract: "Proposed Lecture content (subject to change)"
   keywords: "Cloud, virtual machines, containers, cloud engenering"
   stylesheet: "epub.css"
   dest: "./dest/book"
-  filename: "vonLaszewski-523.epub"
+  filename: "vonLaszewski-e534.epub"
   rights: (c) Indiana University, Gregor von Laszewski, Geoffrey Fox, 2018, 2019
 git:
-  "community": "https://raw.githubusercontent.com/cloudmesh-523"
+  "community": "https://raw.githubusercontent.com/cloudmesh-community"
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
 file:
@@ -26,8 +26,10 @@ file:
 BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"
+    - "{git.credit}/disclaimer.md"
   - WEEK_1:
-    - "{file.chapter}/bigdata/week1.md"
+    - "{file.chapter}/bigdata/week1-a.md"
+#    - "{file.chapter}/bigdata/week1-b.md"
 #    - "{file.chapter}/preface/corrections.md"
 #    - "{file.chapter}/authors.md"
 #    - "{file.chapter}/preface/create.md"
