@@ -261,7 +261,7 @@ You have plenty of time to execute a wonderful project but you need to
 work consistently on it. Starting one week before the deadline will
 not work.
 
-The bets way to asure reproducibility is to use `pytest`. We will
+The best way to assure reproducibility is to use `pytest`. We will
 discuss how to do that in class.
 
 We will teach you what to do it is easy.
