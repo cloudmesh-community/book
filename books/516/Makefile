@@ -3,6 +3,15 @@ HOME=../..
 
 all: syllabus epub pdf authors
 
+
+proceedings: clean fonts version
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME)-proceedings.yaml get
+	mv dest/vonLaszewski-$(NAME)-proceedings.epub $(HOME)/docs
+	-killall Books
+	open $(HOME)/docs/vonLaszewski-$(NAME)-proceedings.epub
+
 draft: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
