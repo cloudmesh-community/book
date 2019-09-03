@@ -115,7 +115,7 @@ supercomputers, but also Web server infrastructure and these days even
 private clouds that support the organizational users. In case of the
 latter we speak about supporting the *long tail about science*.
 
-The later is driven by the 80%-20% rule. E.g. 20% of the users use 80%
+The latter is driven by the 80%-20% rule. E.g. 20% of the users use 80%
 of the compute power. This means that the top 20% of scientists are
 served by the leadership class super computers in the nation, while
 the rest are either served by other servers, cloud offerings through
@@ -124,15 +124,15 @@ research and public clouds.
 
 ## Data Center Infrastructure
 
-Due to the data and the server needs in th cloud and in research such
+Due to the data and the server needs in the cloud and in research such
 data centers may look very different. Some focus on large scale
 computational resources, some on commodity hardware offered to the
 community. The size of them is also very different. While a
-supercomputing center as part of a University was one of the largest
+supercomputing center as part of a university was one of the largest
 such data centers two decades ago, they dwarf the centers now deployed
-by industry to server the long tail of customers.
+by industry to serve the long tail of customers.
 
-In general a data center will have the following components.
+In general a data center will have the following components:
 
 * Facility: the entire data center will be hosted in a building.  The
   building may have specific requirements related to security,
@@ -179,7 +179,7 @@ Another interesting observation is the root cause of incidents in a
 data center. Everyone has probably experienced some outage, so it is
 important to identify where they come from in order to prevent them.
 As we see in @fig:datacenter-outage not every error is caused by an
-operational issue. External, installation, design and manufacturer
+operational issue. External, installation, design, and manufacturer
 issues are together the largest issue for datacenter incidents (see
 @fig:datacenter-outage). Figure Outage. According to the Uptime
 Institute Abnormal Incident Reports (AIRs) database, the root cause of
@@ -200,7 +200,7 @@ data centers.
  facilities to megascale or hyperscale filling large ware houses.
 
 * **Variation in cost per server**: Although many data centers
-  standardize their components, specialized services my be afford not on
+  standardize their components, specialized services may be offered not on
   a 1K server, but on a 50K server.
 
 * **Variation in Infrastructure:** Servers in centers serve a variation
@@ -213,7 +213,7 @@ data centers.
   been trended by environmental awareness, not only by the operators,
   but by the community in which such centers operate.
 
-* **Reliability:** Although through operation l efforts the data center
+* **Reliability:** Although through operational efforts the data center
   can be made more reliable, failure still can happen. Examples are
 
 * <https://www.zdnet.com/article/microsoft-south-central-u-s-datacenter-outage-takes-down-a-number-of-cloud-services/>
@@ -284,7 +284,7 @@ previous example, if a datacenter has 1,000 servers, the total energy
 consumption would be 750 kWh in the hour, but the demand charge would be
 based off of 1,200 kW (or 1.2 MW).
 
-The costs, then, are how the utility company recoups its expanses: the
+The costs, then, are how the utility company recoups its expenses: the
 charge per kWh is it recouping the generation cost while the kW charge
 is recouping the cost of transmission and distribution (T&D). Typically,
 the demand charge is much higher and will depend on utility constraints -
@@ -342,7 +342,7 @@ Peaker plant:
 * Peaking power plants, also known as peaker plants, and
   occasionally just *peakers*, are power plants that generally run
   only when there is a high demand, known as peak demand, for
-  electricity.Because they supply power only occasionally, the power
+  electricity. Because they supply power only occasionally, the power
   supplied commands a much higher price per kilowatt hour than base
   load power. Peak load power plants are dispatched in combination
   with base load power plants, which supply a dependable and
