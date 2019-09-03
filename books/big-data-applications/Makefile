@@ -1,5 +1,6 @@
 NAME=big-data-applications
 HOME=../..
+WEEK=523
 
 all: epub pdf
 
@@ -27,6 +28,18 @@ view:
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
+
+week: clean version authors
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(WEEK).yaml get
+	mv dest/vonLaszewski-$(WEEK).epub $(HOME)/docs
+
+pdf-week:
+	ebook-convert \
+	  $(HOME)/docs/vonLaszewski-$(WEEK).epub \
+          $(HOME)/docs/vonLaszewski-$(WEEK).pdf
+
 
 clean:
 
