@@ -1,9 +1,5 @@
 # Week 1
 
-## Bigdata Applications and Analytics
-
-### Cloud Computing Unit for BDAA Course 
-
 #### A). Summary of Course 
 
 [![Image](images/e534cu2019summaryofcourse.jpg)](https://www.youtube.com/watch?v=bd9KXMUsQGM&list=PLy0VLh_GFyz-dNRQYeX0OMnq7AeB_CeN0&index=2&t=0s){width=20%}
