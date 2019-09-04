@@ -41,5 +41,6 @@ are published as epub or pdf.
 
 Yes, consult the help in your epub reader
 
+## I could not find an answer to an assignment?
 
-
+In some cases it will take you a considerable effort to research the answer. An example is the Datacenter question about energy consumption or cost. It is not expected that google may return a result. yo may need to consider other publications such as google scholar, or professional journals. If you after some hour you have not found an answer, maybe the answer there exists not such information. Check waht other students have done and ask them how they found the information. Remember this class is a community.
