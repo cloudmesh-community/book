@@ -30,26 +30,40 @@ how much i created in one minute instead. Such depictions include
 samples of data created as a part of popular cloud services or the
 internet in general.
 
+
+
+
 One such popular depiction is *Data Never Sleeps* (see
-@fig:data-never-sleeps). It has been produced a number of times over
-the years and is now at version 6.0 released in 2017. If you identify
-a newer version, please let us know. It is worth while to study this
-image in detail and identify some of the data that you can relate to
-of service you use. It is also a possible indication to study other
-services that are mentioned. A staggering 3.8Mil google searches are
+@fig:data-never-sleeps). It has been produced a number of times over the
+years and is now at version 7.0 released in 2019. If you identify a
+newer version, please let us know.
+
+Observations for 2019:  It is worth while to study this image
+in detail and identify some of the data that you can relate to of
+service you use. It is also a possible indication to study other
+services that are mentioned. For the data for 2019 we observe that a
+staggering ~4.5Mil google searches are executed every minute which is
+slightly lower than the number of videos watched on youtube. 18Mil text
+messages are send every minute. Naturally the numbers are averages over
+time.
+
+![Data Never Sleeps  [@www-image-data-never-sleeps-7]](images/data-never-sleeps-7.jpg){#fig:data-never-sleeps-7}
+
+
+In contrast in 2017 we observed: A staggering 3.8Mil google searches are
 executed every minute. Surprisingly the weather channel receives over
 18Mil forecast requests which is even higher than the 12Mil text
 messages send every minute. Youtube certainly serving a significant
-number of users by 4.3Mil videos watched every minute. Naturally the
-numbers are averages over time.
+number of users by 4.3Mil videos watched every minute. 
 
 ![Data Never Sleeps  [@www-image-data-never-sleeps-6]](images/data-never-sleeps-6.png){#fig:data-never-sleeps}
 
 A different source publishes what is happening on the internet in a
-minute, but we have been able to locate a version from 2018 (see @fig:internet-minutes-2018). While
-some data seems the same, others are slightly different. For example
-this graph has a lower count for Google searches, while the number of
-text messages send is significantly higher in contrast to @fig:data-never-sleeps.
+minute, but we have been able to locate a version from 2018 (see
+@fig:internet-minutes-2018). While some data seems the same, others are
+slightly different. For example this graph has a lower count for Google
+searches, while the number of text messages send is significantly higher
+in contrast to @fig:data-never-sleeps.
 
 ![Internet Minute 2018 [@www-internet-minute-2017-2018]](images/internet-minute-2018.jpg){#fig:internet-minutes-2018}
 
