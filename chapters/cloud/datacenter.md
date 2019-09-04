@@ -50,7 +50,7 @@ time.
 ![Data Never Sleeps  [@www-image-data-never-sleeps-7]](images/data-never-sleeps-7.jpg){#fig:data-never-sleeps-7}
 
 
-In contrast in 2017 we observed: A staggering 3.8Mil google searches are
+In contrast in 2017 we observed: A 3.8Mil google searches are
 executed every minute. Surprisingly the weather channel receives over
 18Mil forecast requests which is even higher than the 12Mil text
 messages send every minute. Youtube certainly serving a significant
