@@ -139,6 +139,17 @@ class often come from a wide variety of backgrounds and experiences. As
 such, the instructor reserves the right to change the content of the
 course to accommodate the needs and expectations of the students.
 
+## Grade Breakdown
+
+* 70% Project
+* 10% Chapter
+* 10% Assignments
+* 10% Particpation
+
+There is no exam or midterm in this class, however there will be a
+project review at midterm time.
+
+
 ## Project Examples
 
 * <https://cloudmesh.github.io/cloudmesh-manual/projects/index.html>
