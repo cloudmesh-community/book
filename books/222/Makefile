@@ -1,6 +1,8 @@
 NAME=222
 HOME=../..
 
+include ../makefile.sys
+
 all: epub pdf authors
 
 epub: clean fonts version
@@ -23,7 +25,7 @@ version:
 
 view:
 	-killall Books
-	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md

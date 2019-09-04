@@ -1,3 +1,5 @@
+OS=$(shell ../../bin/sysinfo.py)
+
 ifeq ($(OS), osx)
 OPEN_EPUB=open
 endif
