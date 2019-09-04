@@ -1,9 +1,0 @@
-ifeq ($(OS), osx)
-OPEN_EPUB=open
-endif
-ifeq ($(OS), linux)
-OPEN_EPUB=xdg-open
-endif
-ifeq ($(OS), windows)
-OPEN_EPUB=open
-endif

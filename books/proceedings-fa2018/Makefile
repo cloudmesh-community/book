@@ -1,6 +1,8 @@
 NAME=proceedings-fa2018
 HOME=../..
 
+include ../makefile.sys
+
 all: epub pdf authors
 
 epub: clean version
@@ -22,8 +24,8 @@ version:
 	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
 view:
-	killall Books
-	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+	-killall Books
+	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md

@@ -2,6 +2,8 @@ NAME=big-data-applications
 HOME=../..
 WEEK=e534
 
+include ../makefile.sys
+
 all: epub pdf
 
 epub: clean version authors
@@ -24,7 +26,7 @@ version:
 
 view:
 	killall Books
-	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
@@ -44,8 +46,8 @@ pdf-week:
           $(HOME)/docs/vonLaszewski-$(WEEK).pdf
 
 w:
-	killall Books
-	open $(HOME)/docs/vonLaszewski-$(WEEK).epub
+	-killall Books
+	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(WEEK).epub
 
 g: week w
 	-echo done
