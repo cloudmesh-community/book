@@ -18,8 +18,8 @@ programming experience spend up to 12 hours.
 ## Course Material List
 
 Course material will be distributed as ePubs, PDF, Video or
-Presentations. However you will be required to research some topics on
-the on the internet as Cloud Computing ia arapidly evolving field and we
+Presentations. However you will be required to research some topics 
+on the internet as Cloud Computing ia arapidly evolving field and we
 find the most up to date information on the Web.  We also ask you
 to help us updating the ePub and to use additional resources as
 appropriate.
@@ -261,7 +261,7 @@ You have plenty of time to execute a wonderful project but you need to
 work consistently on it. Starting one week before the deadline will
 not work.
 
-The bets way to asure reproducibility is to use `pytest`. We will
+The best way to assure reproducibility is to use `pytest`. We will
 discuss how to do that in class.
 
 We will teach you what to do it is easy.

@@ -33,6 +33,15 @@ All products here and their links can be found on
 We have copied the information form that location and made them
 conveniently available in this section.
 
+### Overview
+
+A list of the Google Cloud Services is shown in @fig:gcloud-poster.
+
+
+![Google Cloud Services [Source](https://github.com/gregsramblings/google-cloud-4-words/blob/master/Poster-lowres.png)](images/Poster-lowres.png){#fig:gcloud-poster}
+
+
+
 ### AI and Machine Learning
 
 Google offers many machine learning and artificial intelligence tools,
