@@ -189,3 +189,29 @@ To make sure you have an up to date version of pip issue the command
 ```bash
 pip install pip -U
 ```
+
+## Install Python 3.7 via Anaconda
+
+### Download `conda` installer
+
+Miniconda is recommended here. Download an installer for Windows, macOS, and Linux from this page: https://docs.conda.io/en/latest/miniconda.html
+
+### Install `conda`
+
+Follow instructions to install `conda` for your operating systems:
+
+* Windows. https://conda.io/projects/conda/en/latest/user-guide/install/windows.html
+* macOS. https://conda.io/projects/conda/en/latest/user-guide/install/macos.html
+* Linux. https://conda.io/projects/conda/en/latest/user-guide/install/linux.html
+
+### Install Python 3.7 via `conda`
+
+```shell script
+conda create -n ENV3 python=3.7
+```
+
+### Activate and use Python 3.7
+
+```shell script
+conda activate ENV3
+```
