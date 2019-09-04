@@ -1,7 +1,18 @@
 NAME=e516
 HOME=../..
 
+include ../makefile.sys
+
 all: syllabus epub pdf authors
+
+
+proceedings: clean fonts version
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME)-proceedings.yaml get
+	mv dest/vonLaszewski-$(NAME)-proceedings.epub $(HOME)/docs
+	-killall Books
+	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME)-proceedings.epub
 
 draft: clean fonts version
 	mkdir -p dest
@@ -9,7 +20,7 @@ draft: clean fonts version
 	bookmanager $(NAME)-draft.yaml get
 	mv dest/vonLaszewski-$(NAME)-draft.epub $(HOME)/docs
 	-killall Books
-	open $(HOME)/docs/vonLaszewski-$(NAME)-draft.epub
+	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME)-draft.epub
 
 syllabus: clean fonts version
 	mkdir -p dest
@@ -17,7 +28,7 @@ syllabus: clean fonts version
 	bookmanager $(NAME)-syllabus.yaml get
 	mv dest/vonLaszewski-$(NAME)-syllabus.epub $(HOME)/docs
 	#killall Books
-	#open $(HOME)/docs/vonLaszewski-$(NAME)-syllabus.epub
+	#$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME)-syllabus.epub
 
 epub: clean fonts version
 	mkdir -p dest
@@ -39,7 +50,7 @@ version:
 
 view:
 	-killall Books
-	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md

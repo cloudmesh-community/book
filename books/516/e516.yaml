@@ -34,6 +34,7 @@ BOOK:
     - "{file.chapter}/class/516/quicktips.md"
   - WEEKLY_AGENDA:
     - "{file.chapter}/class/516/week1-intro.md"
+    - "{file.chapter}/class/516/week2-center.md"    
     - "{file.chapter}/class/516/weekn.md"
   - APPENDIX:
     - "{file.chapter}/preface/reader.md"
