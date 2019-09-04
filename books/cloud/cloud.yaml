@@ -41,15 +41,19 @@ BOOK:
     - "{file.chapter}/nist/bdra.md"
   - REST:
     - "{file.chapter}/rest/rest.md"
-    - "{file.chapter}/rest/swagger.md"
-    - "{file.chapter}/rest/swagger-spec.md"
-    - "{file.chapter}/rest/swagger-introspection.md"
-    - "{file.chapter}/rest/swagger-codegen.md"
-    - "{file.chapter}/rest/rest-restful.md"
-    - "{file.chapter}/rest/rest-eve.md"
-    - "{file.chapter}/rest/rest-haetos.md"
-    - "{file.chapter}/rest/rest-eve-extensions.md"
-    - "{file.chapter}/rest/rest-django.md"
+    - OPENAPI_3.0:
+      - "{file.chapter}/rest/rest-spec.md"
+      - "{file.chapter}/rest/swagger-introspection.md"
+    - OPENAPI_2.0:
+      - "{file.chapter}/rest/swagger.md"
+      - "{file.chapter}/rest/swagger-spec.md"
+      - "{file.chapter}/rest/swagger-introspection-2-0.md"
+      - "{file.chapter}/rest/swagger-codegen.md"
+      - "{file.chapter}/rest/rest-restful.md"
+      - "{file.chapter}/rest/rest-eve.md"
+      - "{file.chapter}/rest/rest-haetos.md"
+      - "{file.chapter}/rest/rest-eve-extensions.md"
+      - "{file.chapter}/rest/rest-django.md"
     - "{file.chapter}/prg/github.md"
   - "{file.chapter}/graphql/graphql.md"
   - HYPERVISOR:
