@@ -4,7 +4,7 @@
 
 * <https://piazza.com/class/jzkfveoqwri3e4>
 
-## Where to find the Weekly Agenda
+## Where to find the weekly agenda?
 
 We have a lecture notes (likely the documentation you just read). If you
 have not yet created a shortcut in your browser for this document,
