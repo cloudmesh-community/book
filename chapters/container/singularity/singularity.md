@@ -5,7 +5,7 @@ This section was copied from
 * <https://www.sdsc.edu/support/user_guides/tutorials/singularity.html>
 
 and modified. To use it you will need an account on comet which can be
-obtained via XSEDE. IN case you use this material as part of a class
+obtained via XSEDE. In case you use this material as part of a class
 please contact your teacher for more information.
 
 ## Background
