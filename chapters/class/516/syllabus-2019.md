@@ -117,7 +117,8 @@ for your project.
   * What is the problem you try to address?
   * What are you doing to address this problem?
   * How are you addressing this problem?
-  * What is the architecture that adresses the problem that you will implement?
+  * What is the architecture that adresses the problem that you will 
+    implement?
 
 * Code and Documentation Review
 
@@ -125,8 +126,10 @@ for your project.
     to showcase your code and have at least one review prior to your
     final submission.
 
-  * This will take usually take place through the Lab hours on regular basis.
-  * A first project discussion must have been done at least once at midterm time.
+  * This will take usually take place through the Lab hours on regular 
+    basis.
+  * A first project discussion must have been done at least once at 
+    midterm time.
 
 * Final Project Submission
 
@@ -148,7 +151,6 @@ course to accommodate the needs and expectations of the students.
 
 There is no exam or midterm in this class, however there will be a
 project review at midterm time.
-
 
 ## Project Examples
 
