@@ -1,0 +1,42 @@
+---
+metadata:
+  image: "cover.png"
+  title: "FA19 Proceedings\nCloud Computing\nEngineering"
+  subtitle: "e516"
+  author: 'Gregor von Laszewski'
+  subauthor: ""
+  email: "laszewski@gmail.com"
+  url: "https://github.com/cyberaide/bookmanager"
+  description: "The lecture notes for e516"
+  abstract: "Lecture notes for e516"
+  keywords: "Cloud, Cloud Computing"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-e516-proceedings.epub"
+  rights: (c) Gregor von Laszewski, 2018, 2019
+git:
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+  #  "community": "file://../../.."
+  "community": "https://raw.githubusercontent.com/cloudmesh-community"
+BOOK:
+  - PREFACE:
+      - "{file.chapter}/version.md"
+      - "{git.credit}/disclaimer.md"
+  - DATACENTER:
+      - "{file.community}/fa19-516-143/master/datacenter.md"
+      - "{file.community}/fa19-516-163/master/datacenter.md"
+      - "{file.community}/fa19-516-166/master/datacenter.md"
+  #    - "{file.chapter}/preface/corrections.md"
+  #    - "{file.chapter}/authors.md"
+  #    - "{file.chapter}/preface/create.md"
+  #    - "{file.chapter}/preface/notation.md"
+  #    - "{file.chapter}/preface/updates.md"
+  #    - "{file.chapter}/preface/emoji.md"
+  - REFERENCES:
+      - "{file.chapter}/empty.md"
