@@ -1,6 +1,7 @@
 NAME=python
 HOME=../..
 
+include ../makefile.sys
 include ../Makefile.bibtex
 
 all: epub pdf authors
@@ -25,7 +26,7 @@ version:
 
 view:
 	killall Books
-	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
