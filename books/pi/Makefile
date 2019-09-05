@@ -1,6 +1,8 @@
 NAME=pi
 HOME=../..
 
+include ../makefile.sys
+
 all: epub pdf
 
 epub: clean version authors
@@ -23,7 +25,7 @@ version:
 
 view:
 	killall Books
-	open $(HOME)/docs/vonLaszewski-$(NAME).epub
+	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME).epub
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md

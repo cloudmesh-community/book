@@ -132,10 +132,44 @@ python get-pip.py
 rm get-pip.py
 ```
 
-### System Install
+### Prerequisite Windows 10
 
 Python 3.7 can be installed on Windows 10 using:
 <https://www.python.org/downloads>
+
+For 3.7.4  can go to the
+[download[https://www.python.org/downloads/release/python-374/] and
+download one of the different files for Windows.
+
+Let us assume you choe the Web based installer, than you click on the
+file in the edge browser (make sure the account you use has
+administrative priviledges). Follow the instructions that the installer
+gives. Important is that you select at one point "[x] Add to Path".
+There will be an empty checkmark about this that you will click on.
+
+Once it is installed. chose a terminal and execute
+
+```bash
+python --version
+```
+
+or 
+
+```bash
+python --version
+```
+
+
+However if you have installed conda for another class you need to read up
+on how to install 3.7.4 python in conda or identify how to run conda and
+python.org at the same time. We  see often others giving the wrong
+instalation instructions while they do just make sure they can do their
+course or activity. 
+
+An alternative is to use python from within the Linux Subsystem. But
+that has some limitations and you will need to explore how to exxess the
+file system in the subssytem to have a smooth integration between your
+Windows host so you can for example use pyCharm. 
 
 ### Linux Subsystem Install
 
@@ -163,6 +197,8 @@ directory:
 
 Follow these steps first:
 
+First cd to your home directory. Then execute
+
 ```bash
 python3 -m venv  ~/ENV3
 source ~/ENV3/bin/activate
@@ -188,4 +224,31 @@ To make sure you have an up to date version of pip issue the command
 
 ```bash
 pip install pip -U
+```
+
+## Install Python 3.7 via Anaconda
+
+### Download `conda` installer
+
+Miniconda is recommended here. Download an installer for Windows, macOS,
+and Linux from this page: <https://docs.conda.io/en/latest/miniconda.html>
+
+### Install `conda`
+
+Follow instructions to install `conda` for your operating systems:
+
+* Windows. <https://conda.io/projects/conda/en/latest/user-guide/install/windows.html>
+* macOS. <https://conda.io/projects/conda/en/latest/user-guide/install/macos.html>
+* Linux. <https://conda.io/projects/conda/en/latest/user-guide/install/linux.html>
+
+### Install Python 3.7 via `conda`
+
+```shell script
+conda create -n ENV3 python=3.7
+```
+
+### Activate and use Python 3.7
+
+```shell script
+conda activate ENV3
 ```
