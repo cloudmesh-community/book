@@ -1,0 +1,5 @@
+numpy
+flask
+connexion[swagger-ui]
+scikit-learn
+

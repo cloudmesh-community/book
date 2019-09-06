@@ -2,7 +2,6 @@ NAME=python
 HOME=../..
 
 include ../makefile.sys
-include ../Makefile.bibtex
 
 all: epub pdf authors
 
@@ -34,3 +33,5 @@ authors:
 clean:
 
 	rm -rf dest
+
+include ../Makefile.bibtex

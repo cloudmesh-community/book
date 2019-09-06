@@ -53,46 +53,39 @@ from `cpu.py`
 The yaml file looks as follows
 
 ```
-swagger: "2.0"
+openapi: 3.0.2
 info:
-  version: "0.0.1"
-  title: "cpuinfo"
-  description: "A simple service to get cpuinfo as an example of using swagger-2.0 specification and codegen"
-  termsOfService: "http://swagger.io/terms/"
-  contact:
-    name: "Cloudmesh REST Service Example"
+  title: cpuinfo
+  description: A simple service to get cpuinfo as an example of using OpenAPI 3.0
   license:
-    name: "Apache"
-host: "localhost:8080"
-basePath: "/cloudmesh"
-schemes:
-  - "http"
-consumes:
-  - "application/json"
-produces:
-  - "application/json"
+    name: Apache 2.0
+  version: 0.0.1
+
+servers:
+  - url: http://localhost:8080/cloudmesh
+
 paths:
   /cpu:
     get:
-      tags:
-        - CPU
+      summary: Returns cpu information of the hosting server
       operationId: cpu.get_processor_name
-      description: "Returns cpu information of the hosting server"
-      produces:
-        - "application/json"
       responses:
-        "200":
-          description: "CPU info"
-          schema:
-            $ref: "#/definitions/CPU"
-definitions:
-  CPU:
-    type: "object"
-    required:
-      - "model"
-    properties:
-      model:
-      type: "string"
+        '200':
+          description: cpu info
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/cpu"
+
+components:
+  schemas:
+    cpu:
+      type: "object"
+      required:
+        - "model"
+      properties:
+        model:
+          type: "string"
  ```
 
 Here we simply implement a get method and associate is with the URL
