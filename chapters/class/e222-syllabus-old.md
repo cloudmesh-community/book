@@ -95,7 +95,7 @@ interested the following could be chosen by you as project.
 
 ## Representative bibliography
 
-![No](images/no.png) add and replace new lecture notes
+:o2: add and replace new lecture notes
 
 1. Cloud Computing for Science and Engineering By Ian Foster and Dennis B. Gannon
 * <https://mitpress.mit.edu/books/cloud-computing-science-and-engineering>
@@ -115,7 +115,7 @@ com/cloudmesh/sp17-i524/blob/master/paper1/proceedings.pdf
 * <https://github.com/cloudmesh/sp17-i524/blob/master/project/projects.pdf>
 9. Gregor von Laszewski, Geoffrey C. Fox, Cloud COmputing and Big Data  <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
 
-![No](images/no.png) add new ePubs here from cloudmesh community
+:o2: add new ePubs here from cloudmesh community
 
 ## EVERYTHING FROM HERE ON TO BE REPLACED.
 
@@ -138,15 +138,15 @@ that missed that lecture are responsible for working with TAs to catch up.
   * Chameleon Cloud (optional)
   * Piazza
 
-* ![No](images/no.png) Survey
+* :o2: Survey
 
 #### Scientific Writing (Week 1)
 
 * Bio (Due Week 1)
 * Plagiarism (Due Week 3)
-* ![No](images/no.png) Scientific Writing with Markdown
-* ![No](images/no.png) bibtex
-* ![No](images/no.png) jabref
+* :o2: Scientific Writing with Markdown
+* :o2: bibtex
+* :o2: jabref
 * Project Report (Due two weeks before semester ends)
 
 
@@ -177,17 +177,17 @@ that missed that lecture are responsible for working with TAs to catch up.
 
 * Virtual Machines
 
-  * Cloudmesh CM4 - Virtualbox ![No](images/no.png)
+  * Cloudmesh CM4 - Virtualbox :o2:
   * Assignment
 
 * Containers
 
-  * Docker ![No](images/no.png)
+  * Docker :o2:
   * Assignment
 
 #### Project
 
-* Assignment: AI REST Services ![No](images/no.png)
+* Assignment: AI REST Services :o2:
 
 * REST
 
@@ -199,13 +199,13 @@ that missed that lecture are responsible for working with TAs to catch up.
 
 * Background about Hadoop, Spark and Twister
 
-  * Hadoop ![No](images/no.png) gcf
-  * Spark ![No](images/no.png) gcf
-  * Twister ![No](images/no.png) gcf
+  * Hadoop :o2: gcf
+  * Spark :o2: gcf
+  * Twister :o2: gcf
 
 #### Python Programming for Beginners
 
-* Python ![No](images/no.png)
+* Python :o2:
 
   * Assignment
   * Why not anaconda?
@@ -221,17 +221,17 @@ that missed that lecture are responsible for working with TAs to catch up.
 * Linux
 
    * Assignment
-   * SSH :+1: ![No](images/no.png)
+   * SSH :+1: :o2:
 
 
 #### Artificial Intelligence
 
 See #sec:ai
 * :+1: overview of AI for this class
-* ![No](images/no.png) :+1: Theory
-* ![No](images/no.png) :+1: Unsupervised Learning
-* ![No](images/no.png) :1+: Deep Learning
-* ![No](images/no.png) :+1: Forecasting
+* :o2: :+1: Theory
+* :o2: :+1: Unsupervised Learning
+* :o2: :1+: Deep Learning
+* :o2: :+1: Forecasting
 
 
 
@@ -290,7 +290,7 @@ recommend that you use virtual box and use ubuntu. We have provided an extensive
 for you to achieve this. Please consult additional resources form the Web
 The material includes:
 
-![No](images/no.png) Tyler: please include links to the sections
+:o2: Tyler: please include links to the sections
 
 * Install virtual box
 * Install ubuntu on the virtual box
@@ -363,7 +363,7 @@ Other weeks are not yet included here but will cover Artificial Intelligence.
 
 ####\ Assignments
 
-All assignments are summarized in the Section ![No](images/no.png) but are posted earlier in piazza.com in the pinned
+All assignments are summarized in the Section :o2: but are posted earlier in piazza.com in the pinned
 section.
 
 #### Communication Track

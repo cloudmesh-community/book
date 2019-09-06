@@ -2,11 +2,11 @@
 
 ## Non Blocking Threads
 
-![No](images/no.png) Students can contribute this section
+:o2: Students can contribute this section
 
 ## Queue
 
-![No](images/no.png) Students can contribute this section
+:o2: Students can contribute this section
 
 see:
 
@@ -14,7 +14,7 @@ see:
 
 ## Scheduler
 
-![No](images/no.png) Students can contribute this section
+:o2: Students can contribute this section
 
 see:
 
@@ -22,7 +22,7 @@ see:
 
 ## Python SSL
 
-![No](images/no.png) Students can contribute this section
+:o2: Students can contribute this section
 
 see:
 

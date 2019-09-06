@@ -435,7 +435,7 @@ successfully, and the actual data.
 
 ##  REST API Using a Client Application
 
-![No](images/no.png) This example is not tested. Please provide feedback and improve.
+:o2: This example is not tested. Please provide feedback and improve.
 
 In the Section [Rest Services with Eve](#rest-services-with-eve) we
 created our own REST API application using Python Eve. Now once the
@@ -523,7 +523,7 @@ and try to save the object like wise.
 
 ## Towards cmd5 extensions to manage eve and mongo :o2:
 
-![No](images/no.png)
+:o2:
 
 > ![Warning](images/warning.png) *Part of this section related to management of the mongo db
 > serviceis done by the cm4 command we will be developping as part of

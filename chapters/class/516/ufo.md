@@ -8,7 +8,7 @@ still has to be documented. An example of such a mini project is our
 `cm-burn` command that creates Raspberry PI OS based on
 manipulation of the file system
 
-* <https://github.com/cloudmesh-community/cm-burn>
+* <https://github.com/cloudmesh/cm-burn>
 
 Please note that this is not less work than developing a chapter
 and/or sections. You still will have to do a class project as the mini

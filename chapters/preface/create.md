@@ -3,7 +3,10 @@
 In case you wish to create the ePub from source, we have included this
 section.
 
-However the easiest way is to use our docker container as described in
+The creation of the book is based on
+[bookmanager](https://pypi.org/project/cyberaide-bookmanager/).
+
+The easiest way is to use our docker container as described in
 @sec:docker-create-book.
 
 ## Docker {#sec:docker-create-book}
@@ -46,6 +49,12 @@ To open an interactive shell into the image you say
 $ make shell
 ```
 
+The container image includes 
+
+* [Python 3.7.4](https://python.org)
+* [Pandoc 2.7.3](https://pandoc.org/)
+* [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc/blob/master/man/pandoc-citeproc.1.md)
+
 Now you can skip to @sec:create-book and compile the book just as
 documented there.
 
@@ -69,10 +78,11 @@ faster than the container) you need to make sure you have an up to date
 environment.
 
 Please note, that you must have at least Pandoc version 2.5 installed as
-earlier versions will not work. We recommend that you use Python version
-3.7.4 to run the scripts needed to assamble the document. However
-eralier version of Python 3 may also work, but are not tested. You can
-check the versions with
+earlier versions will not work. We recommend that you use pandoc version
+2.7.3 or newer. We recommend that you use Python version 3.7.4 to run
+the scripts needed to assamble the document. However eralier version of
+Python 3 may also work, but are not tested. You can check the versions
+with
 
 ```bash
 $ pandoc --version
@@ -113,7 +123,7 @@ instructions in @sec:docker-create-book.
 
 ## Creating a Book {#sec:create-book}
 
-Oncw you have decided for one of the methods, you can create a book.
+Once you have decided for one of the methods, you can create a book.
 
 To create a book, you have to first check out the book source from
 github with if you have not yet done so (for example if you were to
@@ -126,20 +136,20 @@ git clone git@github.com:cloudmesh-community/book.git
 Books are organized in directories. We currently have created the
 following directories
 
-    ./book/cloud/
-    ./book/big-data-applications/
-    ./book/pi
-    ./book/writing
-    ./book/222
-    ./book/516
+    ./book/books/cloud/
+    ./book/books/big-data-applications/
+    ./book/books/pi
+    ./book/books/writing
+    ./book/books/222
+    ./book/books/516
 
 To compile a book go to the directory and make it. Let us assume you
 like to create the cloud book for cloud
 
 ```bash
 $ git clone https://github.com/cloudmesh-community/book.git
-$ cd cloud
-$ make new
+$ cd book/books/cloud
+$ make
 ```
 
 To view it you say
@@ -152,26 +162,17 @@ After you have done modifications, you need to do one of two
 things. In case you add new images you need to use
 
 ```
-$ make new
-```
-
-otherwise you can just use
-
-```
 $ make
 ```
 
-The structure of the books is maintained in the yaml file
-`chapters.yaml`. You can add this chapter to the yaml file, but
-discuss this first with Gregor. In case you add a new chapter, you
-have to say
+The structure of the books is maintained in the yaml file in the
+directory where you execute the make in. It typically has the form
+`NAMEOFDIR.yaml`. Simply do an ls in the directory to see its anme or
+inspect the Makefile. You can add new chapters to the yaml file, but
+discuss this first with Gregor. TYpicallly, we have for incomming or
+draft chapters a special `draft` book to make sure the integration is
+done smoothly first in the draft.
 
-```bash
-$ make clean
-$ make update
-$ make
-$ make view
-```
 
 ## Publishing the Book to GitHub
 
@@ -184,31 +185,31 @@ To publish the book say
 $ make publish
 ```
 
+## Creating  Drafts
 
-## Creating Unpublished Drafts
-
-Developers of the manual can modify the `Makefile` and locate the
-variable `DRAFT=` to add additional sections and chapters they work
-on, but should not yet been distributed with the main publication.
-Simply add them to the list and say
+Drafts are maintained in the draft folder
 
 ```bash
-$ make draft
-$ make view
+$ cd book/books/cloud
+$ make
 ```
 
-to create the draft sections only and view them.
+We recommend that you use the following tools to clean up your files.
 
-To conveniently call them in a lazy fashion in a terminal you could
-use the following two aliases.
+* [mdl](https://github.com/markdownlint/markdownlint) - markdownlint to cleanup your markdown
+* [biber](http://biblatex-biber.sourceforge.net/) - to cleanup your bibtex file
+
+We still only use bibtex and not biblatex, but can use biber for doing
+some verification. Once you have installed them, you can verify your documents with.
 
 ```bash
-alias m='make; make view'
-alias d='make draft; make view'
+mdl filename.md
+biber -V -tool filename.bib
 ```
 
-This allows you to typ `m` for the main volume and `q` for the draft.
-Please note that all artifacts are written into the dest folder.
+Please remember that we have many thausends of refernces in our bib
+folder, so before you add a duplicate entry, please check in that
+forlder. An easy way to do this is to use jabref loading the bibfiles.
 
 
 ## Creating a New Book
@@ -216,26 +217,24 @@ Please note that all artifacts are written into the dest folder.
 Let us assume you like to create a new book. The easiest way to start is
 to copy from an existing book. However, make sure not to copy old files
 in dest. Let us assume you like to call the book gregor and you coppy
-from the 222 directory.
+from the python directory.
 
 You have to do the following
 
 ```bash
-$ cd 222
+$ cd book/books/python
 $ make clean
 $ cd ..
-$ cp -r 222 gregor
+$ cp -r python gregor
+$ cd ../gregor
+$ mv python.yaml gregor.yaml
 ```
 
-Now edit the file chapters.yaml and copy the section with `BOOK_222=` to
-`BOOK_gregor=`. Make modifications to the outline as you see fit.
-
-Now you can create the book with
+edit the Makefile and replace the NAME with gregor. make modifications
+to the table of contents in that yaml file and then compile with 
 
 ```bash
-$ cd gregor
-$ make update
-$ make new
+$ make
 ```
 
 ## Managing Images
@@ -258,5 +257,10 @@ The label `#fig:cloud-myimage` must be unique in all of the documents.
 While adding the directory cloud before the image name this is the case
 in our example.
 
+## Managing Refernces
 
+Referncesa are all managed in bibtex format while using pandoc-crosreff
+to cite them. There are many examples of the different entry types
+available in the bib directory. DO not duplicte entries, instead reuse
+them. Make sure you have a unique and meaningful label. 
 

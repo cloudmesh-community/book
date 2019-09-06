@@ -529,7 +529,7 @@ Make sure to also install pandoc-crossref
 $ pandoc --verbose --filter pandoc-crossref -f markdown+header_attributes -f markdown+smart -f markdown+emoji --indented-code-classes=bash,python,yaml -o paper.epub paper.md
 ```
 
-![No](images/no.png) Assignment: provide documentation for Linux, OSX, Windows to do this.
+:o2: Assignment: provide documentation for Linux, OSX, Windows to do this.
 
 A sample report is available at:
 

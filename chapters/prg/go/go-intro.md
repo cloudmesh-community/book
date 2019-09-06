@@ -66,7 +66,7 @@ In order to to use Go we recommend that you have a computer fulfilling
 the following requirements:
 
 - Have the most up to date version of Go installed
-- Be familiar with the Linux command line as showcased in @sec:linux
+- Be familiar with the Linux command line as showcased in [@las19linux]
 - Familiarity with a text editor such as emacs, which we prefer as it
   supports nicely not only Go but any other language or document
   format we typically use in our activities. Alternatives are

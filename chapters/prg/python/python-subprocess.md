@@ -32,8 +32,6 @@ for line in lines:
 
 ## Popen Class :o2:
 
-![No](images/no.png)
-
 If you need more featureful interaction you may have to use the Popen class.
 
 Internally starting subprocesses is facilitated with the `Popen` class.

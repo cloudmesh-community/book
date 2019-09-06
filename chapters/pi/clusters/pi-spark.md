@@ -1,6 +1,6 @@
 # Raspberry PI Spark Cluster :o2:
 
-![No](images/no.png)
+:o2:
 
 
 We provide step-by-step instructions on installing a Spark cluster on
@@ -19,7 +19,7 @@ a cluster of Raspberry Pi's.
 
 ## Prerequisites :o2:
 
-![No](images/no.png)
+:o2:
 
 In [Network of Pis](#pi-now-main) section we explained how to set up a network
 of Pis. Here we assume that we start from such a network. We assume that you
@@ -172,7 +172,7 @@ You can run the following command on the master to stop the cluster.
 $SPARK_HOME/sbin/stop-all.sh
 ```
 
-![No](images/no.png)
+:o2:
 
 > ![Warning](images/warning.png) *see also the file `pi-spark-orig.md` as it still contains
 > useful information such as the output when running pi spark.*

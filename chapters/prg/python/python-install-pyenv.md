@@ -255,7 +255,7 @@ $ pyenv install -l
 ```
 
 However, for us we only need to worry about python 2.7.16 and python
-3.7.1. You can now install different versions of python into your
+3.7.4. You can now install different versions of python into your
 local environment with the following commands:
 
 ```bash
@@ -467,8 +467,8 @@ pyenv versions
 system
 2.7.16
 2.7.16/envs/ENV2
-3.7.1
-3.7.1/envs/ENV3
+3.7.4
+3.7.4/envs/ENV3
 ENV2
 ENV3
 * anaconda3-4.3.1 (set by PYENV_VERSION environment variable)
