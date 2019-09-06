@@ -33,7 +33,11 @@ BOOK:
     - "{file.chapter}/bigdata/week2.md"
   - WEEK_3:
     - "{file.chapter}/bigdata/week3.md"
-  #
+  - Assignments:
+    - "{file.chapter}/bigdata/assignments/index.md"
+  - Github:
+      - "{file.chapter}/bigdata/github/index.md"
+#
 #    - "{file.chapter}/bigdata/week1.md"
 #    - "{file.chapter}/preface/corrections.md"
 #    - "{file.chapter}/authors.md"
