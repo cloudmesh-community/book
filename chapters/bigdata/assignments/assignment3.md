@@ -1,6 +1,6 @@
 # Assignment 3
 
-In the second assignment, you will be working on [Week 3](../week3.md)
+In the second assignment, you will be working on (see @sec:534-week3)
 lecture videos. Objectives are as follows.
 
 1. Summarize what you have understood. (2 page)
