@@ -1,6 +1,8 @@
 ## Installing Julia
 
-To find the correct installation file for a given platform, visit <https://julialang.org/downloads/>.  There are several ways to run and interact with Julia: 
+To find the correct installation file for a given platform, visit <https://julialang.org/downloads/>.  There are several
+ways to run and interact with Julia:
+
 - In the terminal using the Julia REPL
 - In a browser using JuliaBox with Jupyter Notebooks
 - Using Docker images provided on DockerHub and provided by the Docker community
@@ -36,13 +38,16 @@ You can then add Julia home to your PATH, or include a soft reference as follows
 $ export PATH="$(pwd)/julia:$PATH"
 ``` 
 
-Alternatively, bring the REPL into scope by editing your ```/etc/environment``` file. Finally, you can create a "hard" link with the following command:  
+Alternatively, bring the REPL into scope by editing your ```/etc/environment``` file. Finally, you can create a "hard"
+link with the following command:
 
 ```bash
 $ sudo ln -s ~/JuliaPro-0.6.2.1/Julia/bin/julia /usr/local/bin/julia
 ```
 
-Where the last ```julia``` is input into bash to start the REPL.  Creating a link will enable you to call different versions of Julia directly from the bash or shell.  For instance, if both Julia 0.6 and Julia 1.0 are required, it is possible to create separate links to both as follows:
+Where the last ```julia``` is input into bash to start the REPL.  Creating a link will enable you to call different
+versions of Julia directly from the bash or shell.  For instance, if both Julia 0.6 and Julia 1.0 are required, it is
+possible to create separate links to both as follows:
 
 ```bash
 $ sudo ln -s ~/JuliaPro-0.6.2.1/Julia/bin/julia /usr/local/bin/julia0.6
@@ -53,7 +58,8 @@ $ sudo ln -s ~/JuliaPro-1.1.3/Julia/bin/julia /usr/local/bin/julia1.0
 
 #### Windows
 
-Download the appropriate installer file from <https://julialang.org/downloads/> and run the installer.  You should now be able to activate Julia in your Bash or Shell session by typing
+Download the appropriate installer file from <https://julialang.org/downloads/> and run the installer.  You should now
+be able to activate Julia in your Bash or Shell session by typing
 
 ```bash
 $ julia
@@ -61,4 +67,7 @@ $ julia
 
 ### JuliaBox
 
-Additionally, a user can interact with Julia directly in a browser by using <https://www.Juliabox.com>.  This method requires no installation, and provides the familiar look and feel of Jupyter Notebooks without installing any additional software.  This method allows creation and local storage of Jupyter Notebooks for later use in JuliaBox.  Type the URL into a browser, log in or create an account, and select the tier or subscription level to begin. 
+Additionally, a user can interact with Julia directly in a browser by using <https://www.Juliabox.com>.  This method
+requires no installation, and provides the familiar look and feel of Jupyter Notebooks without installing any additional
+software.  This method allows creation and local storage of Jupyter Notebooks for later use in JuliaBox.  Type the URL
+into a browser, log in or create an account, and select the tier or subscription level to begin.
