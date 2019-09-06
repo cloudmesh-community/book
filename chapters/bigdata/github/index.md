@@ -26,14 +26,17 @@ hid is your homework id assigned.
 
 ### Step 2
 
-The red colored box shows where you need to navigate next. Click on issues. 
-![Git Repo View](../images/assignments/git/gitissue1.png)
+In @fig:github-repo the red colored box shows where you need to navigate
+next. Click on issues.
+
+![Git Repo View](../images/assignments/git/gitissue1.png){#fig:github-repo} 
 
 ### Step 3
 
-Git issue list looks like this. The inputs in this are dummy values we used to test
-the module. In your repo, things will be readable and identified based on week. 
-This way you know what you need to do this week. 
+Git issue list looks like this. The inputs in this are dummy values we
+used to test the module. In your repo, things will be readable and
+identified based on week. This way you know what you need to do this
+week.
 
 ![Git Repo View](../images/assignments/git/gitissue-list.png)
 
