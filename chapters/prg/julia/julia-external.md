@@ -1,7 +1,8 @@
 
 ## 19.3.1 External programs
 
-Several implementations provide the ability to access Julia through external programs such as Python, C, and Java, and vice versa.
+Several implementations provide the ability to access Julia through external programs such as Python, C, and Java, and
+vice versa.
 
 ### Resources
 
@@ -11,7 +12,10 @@ Javacall package
 
 ### Python
 
-Julia and Python express similar syntax, and both are dynamically-typed. The Pycall package  enables interoperability between the two languages, extending Julia functionality and reach while maintaining its desirable qualities. This package creates the ability to call Python functions and import Python modules from Julia, among other functions. [@www-pycall].
+Julia and Python express similar syntax, and both are dynamically-typed. The Pycall package  enables interoperability
+between the two languages, extending Julia functionality and reach while maintaining its desirable qualities. This
+package creates the ability to call Python functions and import Python modules from Julia, among other functions.
+[@www-pycall].
 
 #### Installation
 
@@ -40,7 +44,11 @@ julia> sin(fill(1.0, (2,2)))
 
 **Pycall in Virtualenvs**
 
-This course recommends using virtualenvs in Python. It is therefore important to note that Pycall "uses the virtualenv it was built with by default, even if you switch virtualenvs." [@www-pycall]. This applies to virtual environments created using [`venv`] and [`virtualenv`]. Python virtual environments created by conda are not currently supported. To continue interoperability with Julia while using a different virtualenv, Pycall recommends switching virualenvs and running:
+This course recommends using virtualenvs in Python. It is therefore important to note that Pycall "uses the virtualenv
+it was built with by default, even if you switch virtualenvs." [@www-pycall]. This applies to virtual environments
+created using [`venv`] and [`virtualenv`]. Python virtual environments created by conda are not currently supported. To
+continue interoperability with Julia while using a different virtualenv, Pycall recommends switching virualenvs and
+running:
 
 ```julia
 julia>rm(Pkg.dir("PyCall","deps","PYTHON")); Pkg.build("PyCall")`
@@ -63,9 +71,10 @@ pyimport("sys").executable
 ```
 
 
-### Java in Julia
-Julia interacts with Java through the use of the JavaCall.jl package.
-[@javacall] "Static and instance method with primitve or object arguments and return values are callable." [@www-javacall].
+### Java in Julia 
+
+Julia interacts with Java through the use of the JavaCall.jl package. [@javacall] "Static and instance method with
+primitve or object arguments and return values are callable." [@www-javacall].
 
 ####Installation
 
