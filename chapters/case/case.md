@@ -1,6 +1,6 @@
 ## IU 100 Node Cluster Case :o2:
 
-![No](images/no.png)
+:o2:
 
 At Indiana University we have currently about 200 Raspberry Pi's
 available for students that work with us as part of classes.
@@ -123,7 +123,7 @@ and operated by ISE. You can get access to it by contacting the help
 desk with an email. You will need to get certified for operating the
 laser cutter to use it.
 
-![No](images/no.png) TODO: add contact email
+:o2: TODO: add contact email
 
 The certification will teach you how to use the laser cutter properly.
 We will walk you through the steps that you can expect will be tought

@@ -48,7 +48,7 @@ Examples, and Chapters, or excelent Project reports and code.
   * [Project Natic](#S:natick)
   * [Lambda Expressions](#lambda-expressions)
 
-![No](images/no.png) please fix links
+:o2: please fix links
 
 **Chapter:**
 
@@ -280,7 +280,7 @@ replicate your cluster build. A good start for this is to look at
 our  `cm-burn` command that creates Raspberry PI OS based on
 manipulation of the file system
 
-* <https://github.com/cloudmesh-community/cm-burn>
+* <https://github.com/cloudmesh/cm-burn>
 * <https://github.com/cloudmesh-community/cm>
 
 Substantial contributions are expected beyond the hardware build. We

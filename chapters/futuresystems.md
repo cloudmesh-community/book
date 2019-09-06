@@ -1,6 +1,6 @@
 # Romeo
 
-Apply for an account on futuresyste,s.org and make sure you uploaded
+Apply for an account on futuresystems.org and make sure you uploaded
 your public key
 
 Than with your `user` name log in as

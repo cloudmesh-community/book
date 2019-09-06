@@ -1,6 +1,6 @@
 ## Syllabus :o2:
 
-![No](images/no.png)
+:o2:
 
 > ![Warning](images/warning.png) *This document is under construction and will change.*
 

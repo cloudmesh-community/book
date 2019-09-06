@@ -19,7 +19,7 @@ The book can be used as reference material in that case.
 Legend markings
 
 * Class released +
-* Class under development - or ![No](images/no.png)
+* Class under development - or :o2:
 
 
 
@@ -98,10 +98,10 @@ is selected in the first 3 weeks of the semester and conducted throughout the re
 | --- |------ | --- | ------- | --------------------- |
 | + | 1  | A0 | Survey             | Fill out the Survey before Friday in the firts week |
 | + | 2  | A0 | Bio                | Post your formal Bio into Piazza |
-| + | ![No](images/no.png)  | A1 | Sections           | Contribute significant sections. Do not  develop redundant or duplicated content. |
-| + | ![No](images/no.png)  | A2 | Chapter            | Contribute a significant chapter that may use your section to the class documentation. Do not develop redundant or duplicated content. |
-| + | ![No](images/no.png)  | A3 | Project Report draft due | Develop a draft for the project. This is a hard deadline as we integrate your draft into a proceedings over the berak.  |
-| + | ![No](images/no.png)  | A3 | Project Type A     | Build a cloud clustert out of Raspberry PIs |
+| + | :o2:  | A1 | Sections           | Contribute significant sections. Do not  develop redundant or duplicated content. |
+| + | :o2:  | A2 | Chapter            | Contribute a significant chapter that may use your section to the class documentation. Do not develop redundant or duplicated content. |
+| + | :o2:  | A3 | Project Report draft due | Develop a draft for the project. This is a hard deadline as we integrate your draft into a proceedings over the berak.  |
+| + | :o2:  | A3 | Project Type A     | Build a cloud clustert out of Raspberry PIs |
 | + | 13 |    | Project Type B     | Build a Significant OpenAPI REST Service |
 | + | 13 |    | Project Type C     | Contribute to the new Cloudmesh  code |
 | + | 13 |    | Project Type D     | Your own Project Type A, B, C, D (upon approval) |

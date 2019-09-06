@@ -1,21 +1,69 @@
 # Week 1: Course Introduction
 
-## Resources
+## Assignments
 
-## Teachning Activities
+All graded class assignments are posted at
+
+* <https://iu.instructure.com/courses/1822529/assignments>
+
+We provide in this document all activities we do in each week
+
+## Online Meeting Recording
+
+The first online meeting for week 1 which will be repeated on Thursday
+8-9:30pm has been recorded and is available at 
+
+* [![Video](images/video.png) Online Meeting Recording for Week 1](https://www.youtube.com/watch?v=k5218WUo6Cc)
+
+## Class Videos
+
+Please watch the following video and
+
+* [![Video](images/video.png) Overview Engineering Cloud Computing 2019](https://www.youtube.com/watch?v=PU93waozGJk)
+
+Next, review the following chapters in the book 
+
+[Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]:
+
+* Chapter: Preface, ePub Readers
+* Chapter: Overview
+* Chapter: Definition of Cloud Computing (and its videos)
+
 
 ## Lab Activities
 
+Summary: 
+
+* Post your professional bio to piazza
+* Setup your computer
+* Create the cloud accounts and fill out the form [Cloud Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
+* Install python on your computer (python 3.7.3 or 3.7.4)
+* Update pip
+* Install an ePub Reader
+  * macOS: Build in use Books
+  * Windows 10: Build in use edge
+  * others: [Calibre](https://forms.gle/w6ryzEm56rQmwWT38)
+
+Next we provide some more details. If you have questions ask on 
+[Piazza](https://piazza.com/class/jzkfveoqwri3e4)
+
 ### Account Creation
 
-As part of the class you will need a number of [accounts]{.index}. This
+As part of the class you will need a number of accounts. This
 includes:
-
-Required accounts:
 
 * piazza.com (used for communication)
 * github.com (used for project and other class artifacts)
 * chameleoncloud.org (free cloud account)
+* futuresystems.org (GPU & container)
+
+  * Please join this [project](https://portal.futuresystems.org/project/fg-569)
+
+After you created the accounts, please fill out the following form so we
+can set up the class accounts and in cqase of github we create you a
+class repository for you.
+
+* [Cloud Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
 
 Optional accounts (apply once you need them, some are time limited):
 
@@ -25,18 +73,12 @@ Optional accounts (apply once you need them, some are time limited):
 * Watson from IBM (optional)
 * google Iaas (optional)
 
-A survey is to be filled out in the first week of class. It includes
-your github.com account that we need to create your github directory
-in which you will submit your open source project.
-
-### Plagiarizm Certificate
-
-TBD
+We will never ask you for your passwords
 
 ### Bio
 
 This activity serves two purposes. First, it tells us we can communicate
-with you within piazza, and second, you can introduce yourself to others
+with you within [Piazza](https://piazza.com/class/jzkfveoqwri3e4), and second, you can introduce yourself to others
 in piazza to potentially build project or study teams.
 
 ### Python 3.7.4
@@ -52,11 +94,10 @@ disadvantages of often working with outdated libraries. As developer of
 future software you may want to avoid this. If you use python from
 python.org we recommend that you use venv.
 
-
 ### Questionnaire
 
 In this activity you will be filling out a form with information about
-you so we can asses show to best integrate you in this class.
+you so we can assess how to best integrate you in this class. It is not
+important that you know any of the technologies we ask you about.
 
-It will also help us assess if you have done the Lab
-
+* [Background Questionnaire](https://forms.gle/w6ryzEm56rQmwWT38)

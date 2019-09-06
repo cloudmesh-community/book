@@ -26,9 +26,9 @@ file:
 BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"
-    - "{file.chapter}/preface/corrections.md"
+#    - "{file.chapter}/preface/corrections.md"
     - "{file.chapter}/authors.md"
-    - "{file.chapter}/preface/create.md"
+#    - "{file.chapter}/preface/create.md"
     - "{file.chapter}/preface/reader.md"
     - "{file.chapter}/preface/notation.md"
   - ORGANIZATION:
@@ -51,31 +51,31 @@ BOOK:
     - "{file.chapter}/bigdata/applications/radar.md"
     - "{file.chapter}/bigdata/applications/web.md"
     - "{file.chapter}/bigdata/applications/health.md"
-    - TECHNOLOGIES:
-      - "{file.chapter}/bigdata/applications/statistics.md"
-      - "{file.chapter}/bigdata/applications/kmeans.md"
-      - "{file.chapter}/bigdata/applications/plotviz.md"
-  - DEVTOOLS:
-    - "{file.chapter}/linux/refcards.md"
-    - "{file.chapter}/cloud/virtualbox.md"
-    - "{file.chapter}/cloud/vagrant.md"
-    - "{file.chapter}/cloud/packer.md"
-    - "{file.chapter}/os/ubuntu-usb-osx.md"
-    - GITHUB:
-      - "{file.chapter}/git/github.md"
-      - "{file.chapter}/git/gitpullreqest.md"
-      - "{file.chapter}/git/git-tools.md"
-    - LINUX:
-      - "{file.chapter}/linux/linux.md"
-      - "{file.chapter}/linux/ssh.md"
-      - "{file.chapter}/linux/ssh-futuresystems.md"
-      - "{file.chapter}/linux/ssh-excerise.md"
-    - PYTHON:
-      - "{file.chapter}/bigdata/python.md"
-  - FAQ:
-    - "{file.chapter}/faq.md"
-    - "{file.chapter}/faq-523.md"
-  - GLOSSARY:
-    - "{file.chapter}/container/glossary.md"
+  - TECHNOLOGIES:
+    - "{file.chapter}/bigdata/applications/statistics.md"
+    - "{file.chapter}/bigdata/applications/kmeans.md"
+    - "{file.chapter}/bigdata/applications/plotviz.md"
+#  - DEVTOOLS:
+#    - "{file.chapter}/linux/refcards.md"
+#    - "{file.chapter}/cloud/virtualbox.md"
+#    - "{file.chapter}/cloud/vagrant.md"
+#    - "{file.chapter}/cloud/packer.md"
+#    - "{file.chapter}/os/ubuntu-usb-osx.md"
+#    - GITHUB:
+#      - "{file.chapter}/git/github.md"
+#      - "{file.chapter}/git/gitpullreqest.md"
+#      - "{file.chapter}/git/git-tools.md"
+#    - LINUX:
+#      - "{file.chapter}/linux/linux.md"
+#      - "{file.chapter}/linux/ssh.md"
+#      - "{file.chapter}/linux/ssh-futuresystems.md"
+#      - "{file.chapter}/linux/ssh-excerise.md"
+#    - PYTHON:
+#      - "{file.chapter}/bigdata/python.md"
+#  - FAQ:
+#    - "{file.chapter}/faq.md"
+#    - "{file.chapter}/faq-523.md"
+#  - GLOSSARY:
+#    - "{file.chapter}/container/glossary.md"
   - REFERENCES:
       - "{file.chapter}/empty.md"

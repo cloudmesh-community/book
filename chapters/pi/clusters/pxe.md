@@ -1,6 +1,6 @@
 # PXE Booting :o2:
 
-![No](images/no.png)
+:o2:
 
 TODO: Problem description
 
