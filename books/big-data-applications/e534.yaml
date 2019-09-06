@@ -33,7 +33,7 @@ BOOK:
       - "{file.chapter}/bigdata/week1-c.md"
   - WEEK_3:
       - "{file.chapter}/bigdata/week1-a.md"
-
+  #
 #    - "{file.chapter}/bigdata/week1-b.md"
 #    - "{file.chapter}/preface/corrections.md"
 #    - "{file.chapter}/authors.md"
