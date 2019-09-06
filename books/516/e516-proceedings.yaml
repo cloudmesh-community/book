@@ -30,8 +30,11 @@ BOOK:
       - "{git.credit}/disclaimer.md"
   - DATACENTER:
       - "{file.community}/fa19-516-143/master/datacenter.md"
+      - "{file.community}/fa19-516-144/master/datacenter.md"
       - "{file.community}/fa19-516-163/master/datacenter.md"
+      - "{file.community}/fa19-516-165/master/datacenter.md"
       - "{file.community}/fa19-516-166/master/datacenter.md"
+      - "{file.community}/fa19-516-167/master/datacenter.md"
   #    - "{file.chapter}/preface/corrections.md"
   #    - "{file.chapter}/authors.md"
   #    - "{file.chapter}/preface/create.md"
