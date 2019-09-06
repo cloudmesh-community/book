@@ -566,7 +566,7 @@ mutation CreateRepositoryForCommunity($community: Community!, $repository: Repos
     "community": "cloudmesh-community",
     "repository": {
         "name": "cm-burn",
-        "url": "https://github.com/cloudmesh-community/cm-burn"
+        "url": "https://github.com/cloudmesh/cm-burn"
     }
 }
 ```
@@ -578,7 +578,7 @@ The response will be as follow, indicating that a repository has been added.
     "data": {
         "createRepository": {
             "name": "cm-burn",
-            "url": "https://github.com/cloudmesh-community/cm-burn"
+            "url": "https://github.com/cloudmesh/cm-burn"
         }
     }
 }
@@ -804,7 +804,7 @@ Repository.objects.create(name="cm",
     description="Cloudmesh v4")
 Repository.objects.create(name="cm-burn",
     full_name="cloudmesh-community/cm-burn",
-    url="https://github.com/cloudmesh-community/cm-burn",
+    url="https://github.com/cloudmesh/cm-burn",
     description="Burns many SD cards so we can build a Raspberry PI cluster")
 exit()
 ```
@@ -920,7 +920,7 @@ In the right pane you will see following output
       {
         "name": "cm-burn",
         "fullName": "cloudmesh-community/cm-burn",
-        "url": "https://github.com/cloudmesh-community/cm-burn",
+        "url": "https://github.com/cloudmesh/cm-burn",
         "description": "Burns many SD cards so we can build a Raspberry PI cluster"
       }
     ]
@@ -1169,7 +1169,7 @@ The result obtained from running this command is:
   {"url":"https://github.com/cloudmesh-community/boat"},
   {"url":"https://github.com/cloudmesh-community/book"},
   {"url":"https://github.com/cloudmesh-community/cm"},
-  {"url":"https://github.com/cloudmesh-community/cm-burn"},
+  {"url":"https://github.com/cloudmesh/cm-burn"},
   {"url":"https://github.com/cloudmesh-community/vineet-test-1"},
   {"url":"https://github.com/cloudmesh-community/vineet-test"}
   ]}

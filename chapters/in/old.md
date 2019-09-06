@@ -1,4 +1,4 @@
-FirstProgram.java ![No](images/no.png)
+FirstProgram.java :o2:
 =====================
 
 FirstProgram.java:

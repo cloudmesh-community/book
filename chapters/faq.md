@@ -198,7 +198,7 @@ browser and clicking on it will automatically open your ePub browser.
 
 ## Assignment Summary
 
-![No](images/no.png) outdated
+:o2: outdated
 
 a) The assignment is discussed in Chapter 1 of the lecture notes
 
@@ -237,7 +237,7 @@ A more detailed outline is
 
 ## Auto 80 char
 
-![No](images/no.png) outdated
+:o2: outdated
 
 Those that use emcas could experiment with the following. I do not
 know if this works well yet.
@@ -254,7 +254,7 @@ emacs -batch test.md --eval '(fill-region (point-min) (point-max))' -f save-buff
 
 ## Useful FAQs for residential and online students
 
-![No](images/no.png) this is outdated.
+:o2: this is outdated.
 
 You will know if this post applies to you.
 

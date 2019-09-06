@@ -160,8 +160,7 @@ password. You will need the account for upcoming assignments.
 Fill out the form so we can activate your accounts. You will need the
 account for upcoming assignments.
 
-[E222 Account Collection Form
-$\mapsto$](https://goo.gl/forms/W0MdgoJoY8F6Vt9Q2)
+[E222 Account Collection Form $\mapsto$](https://goo.gl/forms/W0MdgoJoY8F6Vt9Q2)
 
 Learning Outcome:
 

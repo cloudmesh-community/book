@@ -1,6 +1,6 @@
 # Setting up Large PI clusters :o2:
 
-![No](images/no.png)
+:o2:
 ![Construction](images/construction.png)
 
 ## cm-burn
@@ -233,7 +233,7 @@ installed and is your default python in your terminal.
 
 To install cm-burn, please execute
 ```
-git clone https://github.com/cloudmesh-community/cm-burn.git
+git clone https://github.com/cloudmesh/cm-burn.git
 cd cm-burn
 pip install .
 ```
@@ -242,7 +242,7 @@ In future it will also be hosted on pypi and you will be able to
 install it with
 
 ```
-pip install git+https://github.com/cloudmesh-community/cm-burn
+pip install git+https://github.com/cloudmesh/cm-burn
 ```
 To check if the program works please issue the command
 
@@ -266,7 +266,7 @@ cloudmesh:
 #### Manual page
 
 
-1. git clone https://github.com/cloudmesh-community/cm-burn
+1. git clone https://github.com/cloudmesh/cm-burn
 2. cd cm-burn
 3. python setup.py install
 4. Copy the Raspberyy PI images to be burned under ~/.cloudmesh/images

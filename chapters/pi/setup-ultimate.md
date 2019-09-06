@@ -16,7 +16,7 @@ The duplicated sections we are aware of include:
 
 If its integrated mark the check mark. We need to be careful not to lose info
 
-* [ ] <https://github.com/cloudmesh-community/cm-burn/blob/master/README.md>
+* [ ] <https://github.com/cloudmesh/cm-burn/blob/master/README.md>
 * [ ] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup.md>
 * [x] <https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup-dev.md>
   Now only contains information for a development environment. It needs to be
@@ -106,14 +106,14 @@ are demonstrated in the section about burning SD Cards in Linux.
 A very convenient program to create an SD card for a Raspberry Pi is
 using the program `cm-burn`. The program is available from
 
-* <https://github.com/cloudmesh-community/cm-burn>
+* <https://github.com/cloudmesh/cm-burn>
 
 It can be installed with
 
 ```console
 mkdir -p cloudmesh-community
 cd cloudmesh-community
-git clone https://github.com/cloudmesh-community/cm-burn.git
+git clone https://github.com/cloudmesh/cm-burn.git
 cd cm-burn
 pip install .
 ```
@@ -135,7 +135,7 @@ costs about $20 USD and the macOS version called
 costs about $40 USD. Linux supports ext natively and is fully supported by
 cm-burn. Detailed information on how to use cm-burn is provided at
 
-* <https://github.com/cloudmesh-community/cm-burn/blob/master/README.md>
+* <https://github.com/cloudmesh/cm-burn/blob/master/README.md>
 
 To use `cm-burn` you must first download an image of the Raspberry Pi OS
 Raspbian Stretch from <https://www.raspberrypi.org/downloads/raspbian/>. We have
@@ -484,9 +484,9 @@ $ sudo dhclient -r wlan0; sleep 10; sudo dhclient wlan0
 
 ### Wireless Network at IU :o2:
 
-![No](images/no.png) {#s-wireless-at-iu}
+:o2: {#s-wireless-at-iu}
 
-![No](images/no.png) TODO: Update with new IU public wireless information
+:o2: TODO: Update with new IU public wireless information
 
 IU runs several different networks. This includes IUSecure, Eduroam,
 and ATT Wifi.  The first two would require you to use your IU username
@@ -565,7 +565,7 @@ with our convenient tools and scripts such as `cm-burn`.
 System Preparation without Monitor
 ----------------------------------
 
-![No](images/no.png) there is lots of duplication here to the ultimate setup
+:o2: there is lots of duplication here to the ultimate setup
 
 ### hostname
 
@@ -753,7 +753,7 @@ together. I would suggest this is better down by using Docker or Ansible.
 
 ### PXE Boot
 
-![No](images/no.png)
+:o2:
 
 
 

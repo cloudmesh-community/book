@@ -116,7 +116,7 @@ a while. till the LAptop has assigned an IP address. Furthermore you
 may need to allow the Laptop to assign DHCP addresses when you plug in
 the ethernet cable.
 
-![No](images/no.png) we could need your help here telling us how you do this for your
+:o2: we could need your help here telling us how you do this for your
 machine.
 
 After some time you will see that the Laptop has assigned an ip
@@ -157,7 +157,7 @@ In order to avoid always having to do the first step and getting
 different ip addresses, we recommend that you set up a static address
 for the raspberry.
 
-![No](images/no.png) please help identifying how to do this
+:o2: please help identifying how to do this
 
 > ![Warning](images/warning.png) *We recommend not to use the WiFi and the ethernet adapter at the same
 > time as it can come to issues when you boot them up while they are

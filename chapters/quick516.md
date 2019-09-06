@@ -23,18 +23,17 @@ still graded and need to be handed in on time.
 
 ## Course Material List
 
-Course material will be distributed as ePubs. Howevr you will be
-required to research also some topics on the on teh internet. Cloud
-Computing is such an evolving field that changes frequently. To allow
-you to learn the newest things, we ask you to help us updating the ePub
+Course material will be distributed as ePubs. Howevr you will be required to
+research also some topics on the internet. Cloud Computing is such an evolving
+field that changes frequently and often the internet is the best resource. To
+allow you to learn the newest things, we ask you to help us updating the ePub
 and to use additional resources as appropriate.
 
 The list includes:
 
-* Introduction to Python
-* Using Markdown for Academic Papers
-* Plagiarism Certificate
-* ...
+* Introduction to Python for cCLoud Computing
+* Introdcution to Linux for Cloud Computing
+* Plagiarism Certificate from IU
 * ![](images/tech-cover.jpg){width=50px} [Cloud Technologies, Gregor von Laszewski](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)
 
 * <https://github.com/cloudmesh-community/proceedings-fa18/tree/master/project-report>
@@ -60,14 +59,14 @@ are two different ways on how you can take this class.
 * Way 1: *Free form.* The preferred way for most students. Here you
   simply look at the Syllabus table for the semester and identify
   whatever section you feel like reading. However, make sure you follow
-  our weekly **Lab activities**.
+  our weekly **Lab activities** and readings.
 
 * Way 2: *Linear form.* The lecture notes are just like a book in the
   syllabus table. We add sections in a logical fashion to the book
   once they become available. The section form a linear progression
   and you can go through the book in linear fashion.
 
-Please note that we have set asside a recommended set of weekly
+Please note that we have set aside a recommended set of weekly
 *Lab activities*. These are integrated into your final grade, so it is
 important to do them. They also will let us know if you have any issues
 and if you participate in this class. As such your activity will be
@@ -86,7 +85,7 @@ If you are an online student we recommend that you finish the Labs also
 in the same week. However, you will get eight **Delay a Lab for One
 Week** passes that you can apply to any of the Labs.
 
-Please not that if you would need to postone a lab for two weeks, you
+Please not that if you would need to postpone a lab for two weeks, you
 need to use two passes. Lab passes expire one month before the last day
 of class. You will have to complete all labs by that time. No credit
 will be given if this dealine is missed for any delayed Labs as TAs must

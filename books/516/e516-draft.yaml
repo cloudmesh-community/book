@@ -1,0 +1,67 @@
+---
+metadata:
+  image: "cover.png"
+  title: "DRAFT - Cloud Computing\nEngineering"
+  subtitle: "e516"
+  author: 'Gregor von Laszewski'
+  subauthor: ""
+  email: "laszewski@gmail.com"
+  url: "https://github.com/cyberaide/bookmanager"
+  description: "The lecture notes for e516"
+  abstract: "Lecture notes for e516"
+  keywords: "pandoc"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-e516-draft.epub"
+  rights: (c) Gregor von Laszewski, 2018, 2019
+git:
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - PREFACE:
+    - "{file.chapter}/version.md"    
+    - "{git.credit}/disclaimer.md"
+  - SYLLABUS:
+    - "{file.chapter}/class/516/syllabus-2019.md"
+  - OVERVIEW:
+    - "{file.chapter}/class/516/communication.md"
+    - "{file.chapter}/class/516/overview.md"
+  - DETAILS:
+    - "{file.chapter}/class/516/week1-intro.md"
+    - "{file.chapter}/class/516/week2-center.md"
+    - "{file.chapter}/class/516/week4-arch.md"
+    - "{file.chapter}/class/516/week5-virt-1.md"
+    - "{file.chapter}/class/516/week6-virt-2.md"
+    - "{file.chapter}/class/516/week7-multi.md"
+    - "{file.chapter}/class/516/week8-midterm.md"
+    - "{file.chapter}/class/516/week9-container.md"
+    - "{file.chapter}/class/516/week10-mapreduce.md"
+    - "{file.chapter}/class/516/week11-msg.md"
+    - "{file.chapter}/class/516/week12-REST.md"
+    - "{file.chapter}/class/516/week13-GO.md"
+  - OVERVIEW_2:
+    - "{file.chapter}/class/e516-syllabus-table.md"
+    - "{file.chapter}/class/organization-516.md"
+    - "{file.chapter}/class/plagiarism.md"
+    - "{file.chapter}/cloud/gregor.md"
+    - "{file.chapter}/class/e516-engineering-cloud-computing.md"
+    - "{file.chapter}/class/policies.md"
+    - "{file.chapter}/class/e516-summary.md"
+    - "{file.chapter}/class/volumes.md"
+  - GITHUB_ISSUES:
+    - "{file.chapter}/issues/issues.md"
+  - APPENDIX:
+    - PREFACE:
+      - "{file.chapter}/preface/reader.md"
+#      - "{file.chapter}/preface/corrections.md"
+#      - "{file.chapter}/authors.md"
+#      - "{file.chapter}/preface/create.md"
+#      - "{file.chapter}/preface/notation.md"
+#      - "{file.chapter}/preface/updates.md"
+  - REFERENCES:
+    - "{file.chapter}/empty.md"

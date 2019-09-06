@@ -44,11 +44,11 @@ the services explicitly for now.
 
 On ubuntu, you need to do the following steps:
 
-![No](images/no.png) TODO: Section can be contributed by student.
+:o2: TODO: Section can be contributed by student.
 
 On windows 10, you need to do the following steps:
 
-![No](images/no.png) TODO: Section can be contributed by student. If
+:o2: TODO: Section can be contributed by student. If
   you elect Windows 10. You could be using the online documentation
   provided by starting it on Windows, or running it in a docker
   container.

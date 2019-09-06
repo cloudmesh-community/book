@@ -35,6 +35,14 @@ and frameworks.
 The course does not have required readings. We will provide the
 following references as pointers to what we will discuss:
 
+* [Cloud Computing](https://laszewski.github.io/book/cloud/)
+* [Linux](https://laszewski.github.io/book/linux/)
+* [Python](https://laszewski.github.io/book/python/)
+* [Markdown](https://laszewski.github.io/book/writing/)
+
+However, please remember we will select topics and include material that
+is or may not be covered in these books. The books will evolve during
+the semester.
 
 ## Tools
 
@@ -109,7 +117,8 @@ for your project.
   * What is the problem you try to address?
   * What are you doing to address this problem?
   * How are you addressing this problem?
-  * What is the architecture that adresses the problem that you will implement?
+  * What is the architecture that adresses the problem that you will 
+    implement?
 
 * Code and Documentation Review
 
@@ -117,8 +126,10 @@ for your project.
     to showcase your code and have at least one review prior to your
     final submission.
 
-  * This will take usually take place through the Lab hours on regular basis.
-  * A first project discussion must have been done at least once at midterm time.
+  * This will take usually take place through the Lab hours on regular 
+    basis.
+  * A first project discussion must have been done at least once at 
+    midterm time.
 
 * Final Project Submission
 
@@ -130,6 +141,16 @@ Please note that the syllabus is subject to change. Students in this
 class often come from a wide variety of backgrounds and experiences. As
 such, the instructor reserves the right to change the content of the
 course to accommodate the needs and expectations of the students.
+
+## Grade Breakdown
+
+* 70% Project
+* 10% Chapter
+* 10% Assignments
+* 10% Particpation
+
+There is no exam or midterm in this class, however there will be a
+project review at midterm time.
 
 ## Project Examples
 

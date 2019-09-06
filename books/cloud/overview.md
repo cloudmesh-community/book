@@ -7,9 +7,9 @@
 
 * Gain an overview what currently is in this book
 * Review the high level goals
-* Be aware that this book is not complete and is worked on as we speack
+* Be aware that this book is not complete and is worked on as we speak
 * Be aware to check out the book on a weekly basis to stay up to date
-* Be aware that additional material is dictributed in separate books 
+* Be aware that additional material is distributed in separate books 
   such as Linux, Python, and Writing in Markdown.
 * Be aware that books you may purchase may already be outdated by the 
   time you order them.
@@ -27,15 +27,26 @@ to split out its contents as to make the core cloud engineering book
 smaller. In case you take one of our classes using the book, we expect
 that you pick up the material covered also by these additional books.
 Please be aware that some of the class material is based on Python and
-Linux. YOu will need no knowledge of them as you can pick it up while
+Linux. You will need no knowledge of them as you can pick it up while
 reading this book.
 
-* Linux  :o2: to be added
-* [Python](https://laszewski.github.io/book/python/)
-* [Scientific writing with Markdown](https://laszewski.github.io/book/writing/)
-
+* [Cloud Computing](https://laszewski.github.io/book/cloud/)
+* [Linux for Cloud Computing](https://laszewski.github.io/book/linux/)
+* [Python for Cloud Computing](https://laszewski.github.io/book/python/)
+* [Scientific Writing with Markdown](https://laszewski.github.io/book/writing/)
 
 The book is organized as follows:
+
+**Definition of Cloud Computing**
+
+: We will start with the definition of what cloud computing is and
+  motivate why it is important to not only know technologies such as
+  AI or ML or Databases. We present you with evidence that Clouds are
+  absolutely relevant to todays technologies. We see furthermore a
+  trend to utilize AI and ML services on in the cloud. Technologies
+  such as virtual machine and containers and Function as a Service are
+  essential to the repertoire of a modern Cloud or Data
+  engineer. There is more than ML ... :relaxed:
 
 
 **Data Center**
@@ -73,13 +84,13 @@ The book is organized as follows:
 
 **GraphQL**
 
-: In this chapter we will intorduce you to GraphQL whic alloes you to
+: In this chapter we will introduce you to GraphQL which allows you to
   access data through a query language. It allows clients to easily
   formulate queries that retrieve desired data. Restrictions to the
   queries can be formulated to download what is needed. Other features
   include a type system. Github has added in addition to its REST service
-  also a GraphQL interface. YOu will have the opertunity to explore
-  GraphQl while interfaceing with GitHub.
+  also a GraphQL interface. YOu will have the opportunity to explore
+  GraphQl while interfacing with GitHub.
 
 **Hypervisors**
 
@@ -134,7 +145,7 @@ The book is organized as follows:
   Spark.
 
 : :o2: In fact we have here two sections that need to be delineated a bit
-  batter which we hope we can do with your help.
+  better which we hope we can do with your help.
 
 **Container**
 
@@ -160,24 +171,34 @@ The book is organized as follows:
 
 **Serverless Computing**
 
-: Recently a new paradim in cloud computing has been introcuced. Instead
+: Recently a new paradigm in cloud computing has been introduced. Instead
   of using virtual machines or containers functions with limited resource
   requirements are specified that can than be executed on function capable
   execution services hosted by cloud providers.
 
 : We will introduce you to this concept and showcase you some examples of
-  FaaS services and farmeworks.
+  FaaS services and frameworks.
 
 **Messaging Services**
 
 : Many devices in the cloud need to communicate with each other. In this
   chapter we look into how we can provide alternatives to REST services
   that provide messaging capabilities. We will focus on MQTT which is
-  ovetn used to connect cloud edge deveices between each other and the cloud.
+  often used to connect cloud edge devices between each other and the cloud.
 
 **GO**
 
-: Go is a programming language used by Google and has been most famiously
+: Go is a programming language used by Google and has been most famously
   used to implement Kubernetes. IN this chapter we introduce you to the
   elementary features of Go, but take also a closer look on how we can
   define REST services, use OpenAPI, and interface with clouds.
+
+**Cloud AI Services**
+
+: As part of the class we will be exploring AI services that are offered
+  as part of clouds. You will be able if interested to use them in your
+  projects. YOu will be developing also as part of this class AI services
+  that you develop that can be hosted in the cloud and reused by others.
+  While using cross-platform specifications, clients for Java, Python,
+  Scala, Go, and other programming languages will be automatically created
+  for you. This will allow others to reuse your services.

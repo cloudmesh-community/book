@@ -71,7 +71,7 @@ to remove the `mountpoint` directory and move the
 
 ### TODO: Automated Cluster SD-Card Script :o2:
 
-![No](images/no.png)
+:o2:
 
 ---
 
