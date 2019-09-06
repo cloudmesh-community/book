@@ -1,7 +1,4 @@
-# AWS Elastic Map Reduce (EMR)
-
-![No](images/no.png)
-
+# AWS Elastic Map Reduce (AWS EMR)
 
 ---
 
@@ -23,10 +20,74 @@ of distributed computing capabilities. As the name suggests this product
 is designed to allow users to easily scale their cluster to meet their
 computing needs.
 
+Amazon EMR facilitates you to analyze and process vast(huge) amounts of
+data by distributing the computational work across a cluster of virtual
+servers running in the AWS Cloud. The EMR cluster is managed using an
+open-source framework called Hadoop. Amazon EMR lets you focus on
+crunching or analyzing your data without having to worry about
+time-consuming setup, management, and tuning of Hadoop clusters or the
+compute capacity they rely on unlike other Hadoop distributors like
+Cloudera, Hortonworks etc.,
+
+## Why EMR?
+
+The following are reasons given by Amazon for using EMR:
+
+* Easy to Use: Launch cluster in a 5 to 10 minutes time as many
+  cluster of nodes as you need
+* Pay as you go: Pay an hourly rate (with AWS latest pricing model,
+  customers can choose to pay in minutes)
+* Flexible: Easily Add/ Remove capacity(Auto scale out and in anytime)
+* Reliable: Spend less time for monitoring and can utilize in-built
+  AWS tools which will reduce overhead
+* Secure: Manage firewall (VPC both private and subnet)
+
+
 EMR clusters can be created through relatively simple web interfaces or
 can be created through code using CLI. EMR Clusters can be configured
 for size and can be provisioned with open-source distributed frameworks
-such as SPARK and HBase.
+such as SPARK and HBase, Presto, Flink and etc. Interact with data in AWS data stores such as
+Amazon S3, DynamoDB and etc.
+
+Components Of EMR:
+
+- Storage
+- EC2 instance
+- Clusters
+- Security
+- KMS
+
+
+## Understanding Clusters and Nodes
+
+The component of Amazon EMR is the cluster. A cluster is a collection
+of Amazon Elastic Compute Cloud (Amazon EC2) instances. Each instance
+in the cluster is called a node. Each node has a role within the
+cluster, referred to as the node type. Amazon EMR also installs
+different software components on each node type, giving each node a
+role in a distributed application like Apache Hadoop.
+
+The node types in Amazon EMR are as follows:
+
+- Master node: A node that manages the cluster by running software
+  components to coordinate the distribution of data and tasks among other
+  nodes for processing. The master node tracks the status of tasks and
+  monitors the health of the cluster. Every cluster has a master node, and
+  it is possible to create a single-node cluster with only the master
+  node.
+
+- Core node: A node with software components that run tasks and store
+  data in the Hadoop Distributed File System (HDFS) on your
+  cluster. Multi-node clusters have at least one core node.
+
+- Task node: A node with software components that only runs tasks and
+  does not store data in HDFS. Task nodes are optional.
+
+The following diagram represents a cluster with one master node and
+four core nodes.
+
+![Cluster and Nodes [@www-aws-emr]](images/cluster-node-types.png){#fig:aws-emr-cluster-nodes}
+
 
 ## Prerequisites
 
@@ -133,6 +194,7 @@ apply while your cluster is up).
 ```bash
 aws emr terminate-clusters --cluster-ids your-cluster-id
 ```
+
 ## Creating EMR Cluster Using AWS Web Console
 
 ### Set up authentication
@@ -312,4 +374,3 @@ Navigate to the S3 bucket and folder you specified for the output (see Figure
 AWS EMR is a powerful tool for distributive processing. It is easy to
 use from wither the command line utilizing AWS CLI or through the AWS
 Console web interface.
-
