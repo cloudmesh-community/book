@@ -28,13 +28,21 @@ BOOK:
     - "{file.chapter}/version.md"
     - "{git.credit}/disclaimer.md"
   - WEEK_1:
-    - "{file.chapter}/bigdata/week1-b.md"
+    - "{file.chapter}/bigdata/week1.md"
   - WEEK_2:
-      - "{file.chapter}/bigdata/week1-c.md"
+    - "{file.chapter}/bigdata/week2.md"
   - WEEK_3:
-      - "{file.chapter}/bigdata/week1-a.md"
-  #
-#    - "{file.chapter}/bigdata/week1-b.md"
+    - "{file.chapter}/bigdata/week3.md"
+  - ASSIGNMENTS:
+      - "{file.chapter}/bigdata/assignments/index.md"
+      - WEEKLY_ASSIGNMENTS:
+        - "{file.chapter}/bigdata/assignments/assignment1.md"
+        - "{file.chapter}/bigdata/assignments/assignment2.md"
+        - "{file.chapter}/bigdata/assignments/assignment3.md"
+  - GITHUB:
+      - "{file.chapter}/bigdata/github/index.md"
+#
+#    - "{file.chapter}/bigdata/week1.md"
 #    - "{file.chapter}/preface/corrections.md"
 #    - "{file.chapter}/authors.md"
 #    - "{file.chapter}/preface/create.md"
