@@ -1,4 +1,4 @@
-# Part I
+# Part I Motivation I
 
 ## Motivation
 
@@ -22,7 +22,7 @@ clouds) Gartner’s Hypecycles and especially that for emerging technologies in
 2019 The phases of hypecycles Priority Matrix with benefits and adoption time
 Initial discussion of 2019 Hypecycle for Emerging Technologies
 
-[![Image](images/motivation/technologyhypercycle_1.jpg){width=20%}](https://www.youtube.com/watch?v=-QLxzyB1tvQ&list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L&index=4&t=0s)
+[![Image](images/motivation/technologyhypercycle_1.jpg){width=20%}](https://www.youtube.com/watch?v=25mXsHAiSeU&list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L&index=2)
 
 ### 01B) Technology Hypecycle II 
 
@@ -32,7 +32,7 @@ cycles while areas like deep learning have several entries (as in fact do
 clouds) Gartner’s Hypecycles and especially that for emerging technologies in
 2019 Details of 2019 Emerging Technology and related (AI, Cloud) Hypecycles
 
-[![Image](images/motivation/technologyhypercycle_2.jpg){width=20%}](https://www.youtube.com/watch?v=-QLxzyB1tvQ&list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L&index=4&t=0s)
+[![Image](images/motivation/technologyhypercycle_2.jpg){width=20%}](https://youtu.be/-QLxzyB1tvQ?list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L)
 
 ### 01C) Technology Hypecycle III 
 
@@ -45,7 +45,7 @@ Presentation and details of 2015 in Unit 1B (Journey to Digital Business). 1A in
 2018 also discusses 2017 Data Center Infrastructure removed as this hype cycle
 disappeared in later years.
 
-[![Image](images/motivation/technologyhypercycle_3.jpg){width=20%}](https://www.youtube.com/watch?v=TIb9eUrQAtk&list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L&index=5&t=0s)
+[![Image](images/motivation/technologyhypercycle_3.jpg){width=20%}](https://youtu.be/TIb9eUrQAtk?list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L)
 
 ## 01D) Technology Hypecycle IV 
 
@@ -146,11 +146,11 @@ See 2018 Presentation (same as 2017 for lesson 13) and Cloud Unit 2019-I) this y
 
 ## 14) Parallel Computing and MapReduce Software Ecosystems
 
-[![Image](images/motivation/parallelcomputingandmapreduce.jpg){width=20%}]()
+[![Image](images/motivation/parallelcomputingandmapreduce.jpg){width=20%}](https://youtu.be/QMnjgR8NihY?list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L)
 
 ## 15) Online education and data science education Removed.
 
-You can find it in the 2017 version
+You can find it in the 2017 version. In [Week 2](week2.md) you can see more about this. 
 
 [![Image](images/motivation/motivationconclusion.jpg){width=20%}](https://www.youtube.com/watch?v=QMnjgR8NihY&list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L&index=20&t=0s)
 
