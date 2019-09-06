@@ -1,4 +1,4 @@
-# Week 2
+# Part III
 
 ## A. Summary of Course 
 
