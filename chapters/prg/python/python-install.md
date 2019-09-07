@@ -242,12 +242,12 @@ Follow instructions to install `conda` for your operating systems:
 
 ### Install Python 3.7 via `conda`
 
-```shell script
+```bash
 $ conda create -n ENV3 python=3.7
 ```
 
 ### Activate and use Python 3.7
 
-```shell script
+```bash
 $ conda activate ENV3
 ```
