@@ -47,7 +47,7 @@ disappeared in later years.
 
 [![Image](images/motivation/technologyhypercycle_3.jpg){width=20%}](https://youtu.be/TIb9eUrQAtk?list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L)
 
-## 01D) Technology Hypecycle IV 
+### 01D) Technology Hypecycle IV 
 
 Today clouds and big data have got through the hype cycle (they have emerged)
 but features like blockchain, serverless and machine learning are on recent hype
