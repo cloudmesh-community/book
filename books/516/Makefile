@@ -61,7 +61,6 @@ fonts:
 	echo "ignoring font embedding"
 
 clean:
-
 	rm -rf dest
 
 include ../Makefile.bibtex

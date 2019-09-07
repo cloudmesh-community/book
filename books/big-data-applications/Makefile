@@ -13,7 +13,7 @@ epub: clean version authors
 	mv dest/vonLaszewski-$(NAME).epub $(HOME)/docs
 
 pdf:
-	ebook-convert \
+	ebook-convert --markdown-extensions \
 	  $(HOME)/docs/vonLaszewski-$(NAME).epub \
 	  $(HOME)/docs/vonLaszewski-$(NAME).pdf
 
