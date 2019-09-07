@@ -243,11 +243,16 @@ Follow instructions to install `conda` for your operating systems:
 ### Install Python 3.7 via `conda`
 
 ```bash
+$ cd ~
 $ conda create -n ENV3 python=3.7
 ```
 
-### Activate and use Python 3.7
+After you installed and created the ENV3 you need to activate it. This
+can be done with
 
 ```bash
 $ conda activate ENV3
 ```
+
+If you like to activate it when you start a new terminal, please add
+this line to your `.bashrc` or `.bash_profile`
