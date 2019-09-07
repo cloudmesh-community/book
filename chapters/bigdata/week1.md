@@ -48,7 +48,7 @@ disappeared in later years.
 
 [![Video](images/motivation/technologyhypercycle_3.jpg){width=20%}](https://youtu.be/TIb9eUrQAtk?list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L)
 
-## 01D) Technology Hypecycle IV 
+### 01D) Technology Hypecycle IV 
 
 Today clouds and big data have got through the hype cycle (they have emerged)
 but features like blockchain, serverless and machine learning are on recent hype
@@ -151,7 +151,7 @@ See 2018 Presentation (same as 2017 for lesson 13) and Cloud Unit 2019-I) this y
 
 ## 15) Online education and data science education Removed.
 
-You can find it in the 2017 version. In [Week 2](week2.md) you can see more about this. 
+You can find it in the 2017 version. In @sec:534-week2 you can see more about this. 
 
 [![Video](images/motivation/motivationconclusion.jpg){width=20%}](https://www.youtube.com/watch?v=QMnjgR8NihY&list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L&index=20&t=0s)
 
