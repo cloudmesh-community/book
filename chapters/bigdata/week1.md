@@ -150,7 +150,7 @@ See 2018 Presentation (same as 2017 for lesson 13) and Cloud Unit 2019-I) this y
 
 ## 15) Online education and data science education Removed.
 
-You can find it in the 2017 version. In [Week 2](week2.md) you can see more about this. 
+You can find it in the 2017 version. In @sec:534-week2 you can see more about this. 
 
 [![Image](images/motivation/motivationconclusion.jpg){width=20%}](https://www.youtube.com/watch?v=QMnjgR8NihY&list=PLy0VLh_GFyz_TQhQjKnx-Ef7i2Bfhi15L&index=20&t=0s)
 
