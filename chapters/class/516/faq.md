@@ -79,3 +79,13 @@ when the python assignment starts you are a python expert also.
 
 Atetnd the online hours and ask questions there or watch the recorded
 online meetings as we explained it there also.
+
+## Where do I find the github directory?
+
+See <https://github.com/cloudmesh-community> and search for your name.
+
+## Where can I find the hid directory?
+
+We often refer to the github directory as the hid directory, see *Where
+to find the github directory?*
+
