@@ -78,8 +78,9 @@ We will never ask you for your passwords
 ### Bio
 
 This activity serves two purposes. First, it tells us we can communicate
-with you within [Piazza](https://piazza.com/class/jzkfveoqwri3e4), and second, you can introduce yourself to others
-in piazza to potentially build project or study teams.
+with you within [Piazza](https://piazza.com/class/jzkfveoqwri3e4), and
+second, you can introduce yourself to others in piazza to potentially
+build project or study teams.
 
 ### Python 3.7.4
 
