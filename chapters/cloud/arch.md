@@ -399,7 +399,7 @@ various aspects of cloudcomputing while demonstrating integrated use patterns.
 
 ## Resources
 
-* <http://www.lifl.fr/iwaise12/presentations/tata.pdf>
+* [@www-tata12] <http://www.lifl.fr/iwaise12/presentations/tata.pdf>
 * <https://media.amazonwebservices.com/AWS_Cloud_Best_Practices.pdf>
 * <http://staff.polito.it/alessandro.mantelero/cloud_computing/Sun_Wp2009.pdf>
 * <https://resources.sei.cmu.edu/asset_files/Presentation/2010_017_001_23337.pdf>
