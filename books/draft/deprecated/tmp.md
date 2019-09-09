@@ -149,7 +149,7 @@ The course has the following objectives:
   ✅     09/10           4       Architectures    \- [NIST Big Data Reference
                                                  Architecture](#nist-big-data-reference-architecture)[☁️](https://github.com/cloudmesh-community/book/blob/master/chapters/nist/bdra.md)
 
-  🆕     09/13                                    \- [Cloud Architectures](#s-cloud-architectures) [☁️](https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md)
+  🆕     09/13                                    \- [Cloud Architectures](#s-cloud-architectures) [☁️](https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/arch.md)
 
   ✅     09/15                                    \- [NIST Big Data Reference
                                                  Architecture](#nist-big-data-reference-architecture)[☁️](https://github.com/cloudmesh-community/book/blob/master/chapters/nist/bdra.md)

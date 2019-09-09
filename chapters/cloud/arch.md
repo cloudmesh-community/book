@@ -159,8 +159,6 @@ Cloud Computing refers to
 We have provided a lecture about the definition of cloud computing
 previously.
 
-:o2: include a link to the lecture.
-
 ### Mobile Computing
 
 Mobile Computing refers to

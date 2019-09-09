@@ -24,7 +24,7 @@ BOOK_516
 │   └── chapters/class/volumes.md
 ├── chapters/class/e516-definition.md
 ├── chapters/cloud/datacenter.md
-├── chapters/arch.md
+├── chapters/cloud/arch.md
 ├── chapters/nist/bdra.md
 ├── chapters/rest/rest.md
 │   ├── chapters/rest/swagger.md
