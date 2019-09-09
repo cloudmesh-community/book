@@ -37,9 +37,9 @@ BOOK:
   - DATACENTER:
     - "{file.chapter}/cloud/datacenter.md"
   - ARCHITECTURE:
-      - "{file.chapter}/cloud/arch.md"
+    - "{file.chapter}/cloud/arch.md"
     - "{file.chapter}/nist/bdra.md"
-      - "{file.chapter}/cloud/arch-scheduling.md"
+    - "{file.chapter}/cloud/arch-scheduling.md"
   - REST:
     - "{file.chapter}/rest/rest.md"
     - OPENAPI_3.0:
