@@ -495,7 +495,7 @@ The topics are subject to change.
 |   |           |     |                    | - [Secchi Disk](#s-secchi-disk)[![Github](images/github.png)][secchi.md] |
 |   | Week 4    | 4   |                    | [Data Center][datacenter.md] |
 |   | Week 5    | 5   | Architectures      | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[![Github](images/github.png)][bdra.md] |
-|   |           |     |                    | - [Cloud Architectures](#s-cloud-architectures) [![Github](images/github.png)][arch.md]
+|   |           |     |                    | - [Cloud Architectures](#s-cloud-architectures) [![Github](images/github.png)][cloud/arch.md]
 |   |           |     |                    | - [NIST Big Data Reference Architecture](#nist-big-data-reference-architecture)[![Github](images/github.png)][bdra.md] |
 |   | Week 6    | 6   | Virtualization     | [Virtualization, Qemu, KVM, Virtual machines](#s-virtualization)[![Github](images/github.png)][virtualization.md] |
 |   |           |     | Virtualization I   | - [Qemu](#s-qemu)[![Github](images/github.png)][qemu.md] |
@@ -533,7 +533,7 @@ The topics are subject to change.
 
 
 
-[arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
+[cloud/arch.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/arch.md
 [gregor.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/gregor.md
 [e516-summary.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-summary.md
 [e516-definition.md]: https://github.com/cloudmesh-community/book/blob/master/chapters/class/e516-definition.md
