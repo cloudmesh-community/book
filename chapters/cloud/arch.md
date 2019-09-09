@@ -400,9 +400,9 @@ various aspects of cloudcomputing while demonstrating integrated use patterns.
 ## Resources
 
 * [@www-tata12] <http://www.lifl.fr/iwaise12/presentations/tata.pdf>
-* <https://media.amazonwebservices.com/AWS_Cloud_Best_Practices.pdf>
-* <http://staff.polito.it/alessandro.mantelero/cloud_computing/Sun_Wp2009.pdf>
-* <https://resources.sei.cmu.edu/asset_files/Presentation/2010_017_001_23337.pdf>
-* <https://www.oracle.com/technetwork/articles/entarch/orgeron-top-10-cloud-1957407.pdf>
-* <http://www.oracle.com/technetwork/topics/entarch/oracle-wp-cloud-ref-arch-1883533.pdf>
-* <https://pdfs.semanticscholar.org/cecd/c193b73ec1e7b42d132b3c340e6dd348d3f4.pdf>
+* [@wwwvaria2010architecting] <https://media.amazonwebservices.com/AWS_Cloud_Best_Practices.pdf>
+* [@wwwsun09] <http://staff.polito.it/alessandro.mantelero/cloud_computing/Sun_Wp2009.pdf>
+* [@wwwkaefer10] <https://resources.sei.cmu.edu/asset_files/Presentation/2010_017_001_23337.pdf>
+* [@wwwoctave12] <https://www.oracle.com/technetwork/articles/entarch/orgeron-top-10-cloud-1957407.pdf>
+* [@wwworacle09] <http://www.oracle.com/technetwork/topics/entarch/oracle-wp-cloud-ref-arch-1883533.pdf>
+* [@wwwcloudcomputing] <https://pdfs.semanticscholar.org/cecd/c193b73ec1e7b42d132b3c340e6dd348d3f4.pdf>
