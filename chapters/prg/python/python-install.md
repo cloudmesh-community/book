@@ -240,13 +240,17 @@ Follow instructions to install `conda` for your operating systems:
 * macOS. <https://conda.io/projects/conda/en/latest/user-guide/install/macos.html>
 * Linux. <https://conda.io/projects/conda/en/latest/user-guide/install/linux.html>
 
-### Install Python 3.7 via `conda`
+### Install Python 3.7.4 via `conda`
 
 ```bash
 $ cd ~
-$ conda create -n ENV3 python=3.7
+$ conda create -n ENV3 python=3.7.4
+$ conda activate ENV3
+$ conda install -c anaconda pip
+$ conda deactivate ENV3
 ```
 
+It is very important to make sure you have a newer version of pip installed.
 After you installed and created the ENV3 you need to activate it. This
 can be done with
 
