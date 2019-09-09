@@ -164,8 +164,9 @@ over time.
 information is not valuable then we may not need to store it. This is
 recently been seen as a trend as some companies have transitioned data
 sets to the community as they do not provide value to the service
-provider to justify its prolonged maintenance. (![No](images/no.png) Look for an
-example) In other cases the data has become so valuable and that the
+provider to justify its prolonged maintenance. 
+
+In other cases the data has become so valuable and that the
 services offered have been reduced for example as they provide too
 many resource needs by the community. A good example is Google scholar
 that used to have much more liberal use and today its services are
@@ -188,24 +189,23 @@ dealt with the issue of *horizontal scaling*, which is defined by
 adding more nodes or other resources to a cluster. Such resources may
 include
 
-* shared disk file systems
-* distributed file systems
+* shared disk file systems,
+* distributed file systems,
 * distributed data processing and concurrency frameworks, such as
   Concurrent sequential processes, workflows, MPI, map/reduce, or shared
-  memory
-* resource negotiation to establish quality of service
-* data movement
-* and data tiers (as showcased in high energy physics) ![No](images/no.png) add ref to
-  Ligo and Atlas
+  memory,
+* resource negotiation to establish quality of service,
+* data movement,
+* and data tiers (as showcased in high energy physics Ligo [@www-ligo-data-grid] and Atlas)
 
 In addition to the horizontal scaling issues we also have to worry
 about the *vertical scaling* issues, this is how the overall sytem
 architecture fits together to adress an end-to-end use case. In such
 efforts we look at
 
-* interface designs
-* workflows between components and services
-* privacy of data and other security issues
+* interface designs,
+* workflows between components and services,
+* privacy of data and other security issues,
 * reusability within other use-cases.
 
 
@@ -223,7 +223,9 @@ Although we have been used to the term cloud wile using virtualized
 resources and the term Grid by offering a network of supercomputers in
 a virtual organization, We should not forget that Cloud service
 providers also offer High performance computers resources for some of
-their most advanced users. ![No](images/no.png) add reference. Naturally such resources
+their most advanced users. 
+
+Naturally such resources
 can be used not only for numerical intensif computations but also for
 big data applications as the Physics community has demonstrated.
 
