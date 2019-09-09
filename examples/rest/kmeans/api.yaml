@@ -90,12 +90,3 @@ paths:
               schema:
                 type: string
                 format: binary
-
-
-
-
-
-
-
-
-
