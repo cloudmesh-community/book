@@ -1205,7 +1205,7 @@ benefit of the society:
 * Island
 * Corporations: Google, AWS, IBM, ...
 
-Also look at the US stattate of California and others that project
+Also look at the US state of California and others that project
 renewable energy.
 
 See also
