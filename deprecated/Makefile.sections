@@ -77,7 +77,7 @@ CHAPTER_516=\
   chapters/class/e516-definition.md\
   chapters/cloud/use_cases.md\
   chapters/cloud/datacenter.md\
-  chapters/arch.md\
+  chapters/cloud/arch.md\
   chapters/nist/bdra.md\
   chapters/rest/rest.md\
   chapters/rest/swagger-codegen.md\
