@@ -3,10 +3,55 @@
 Start of Project Selection
 
 
+## Online Meeting Recording
+
+This meeting will take place Sep 10, 2019, 8-9pm EST
+
+## Lecture Material
+
+## Project selection
+
+You will be selecting a cloud related project over the next 2 weeks that
+you will be conducting till the end of the semester. The mroject must
+have the following requirements:
+
+* programming is conducted in python if another programming language is
+  used, please contact us and moivate the use
+
+* the project must use OpenAPI 3.0 to define a REST service
+
+* the project must use conexion to automatically generate the rest
+  servive (please do not use swagger codegen).
+
+* The project must use at least 1 + n clouds for each team member. Where
+  n is the number of team members with maximum 3 team members.
+
+* The code must use pytests
+
+* The code must use cms sys generate
+
+* The code must use the cloudmesh benchmark class
+
+* If an AI service is sued we recommend to use scikit learn or Kearos
+  and contrast it with AI services offered by cloud providers.
+
+* You must provide a report with meaningful benchmarks
+
+Ceryain projects will have custom deliverables that we will define 
+
 ## Lab Activities
+
+We ahve the following goals
+
+* install python 3.7.4 on your computer. YOU can either use python.org,
+* conda, or pyenv. Which you chose is your choice. For this calss the
+* prefereed way of installing python is from python.org.
+
 
 ### Venv in python 3
 
+This Lab is inly to be chose by those using python 3 from python.org
+which is our prefereed enviroenment.
 
 ```
 python -m venv ~/ENV3
@@ -20,7 +65,7 @@ python -m venv ~/ENV3
 
   - This is the same answer as why people use venv?
 
-### Anaconda
+### Conda
 
 This Lab has only to be done by those useing anaconda.
 
@@ -91,10 +136,11 @@ In one of the examples `locals()` is used.
 
 ### StopWatch
 
+We like you to write a python program using cloudmesh stopwatch
+
 ### Benchmark
 
-### Computer System
-
+We like you to write a python program using cloudmesh stopwatch
 
 
 ### CMD5
@@ -104,9 +150,15 @@ In one of the examples `locals()` is used.
 * What is the purpose of cmd5?
 * Generate your own command in cmd5. Call the command
 
+### Generate a new cms command
+
+`cms sys generate command mycommand`
+
+use something useful
+
 ### Python Modules
 
 * What is a setup.py file
 * What is the difference between `pip install .` and `pip install -e .`
 * How do I uninstall a python module?
-* My python is broken, What do you do now?
+* My python virtual environment is broken, What do you do now?
