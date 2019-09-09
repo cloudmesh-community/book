@@ -89,3 +89,15 @@ See <https://github.com/cloudmesh-community> and search for your name.
 We often refer to the github directory as the hid directory, see *Where
 to find the github directory?*
 
+## Why you should not read the Piazza mail but use `Click Here` instead?
+
+Piazza sends you e-mails. The frequency can be controlled by you in the
+piazza settings. However, sometimes we do make corrections to the post
+after you received the e-mail. To prevent any issues, we do recommend
+that instead of reading the e-mail you just use the click here feature
+which is placed on top of each mail.
+
+This way you are up to date instead of looking at a potenially outdated
+e-mail. I activated e-mail notifications so you have the best f these
+two modes.
+
