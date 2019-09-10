@@ -15,9 +15,9 @@ Original file is located at
 an image classification problem. MNIST contains a set of pictures
 """
 
-! python3 --version
+# ! python3 --version
 
-! pip install tensorflow-gpu==1.14.0
+# ! pip install tensorflow-gpu==1.14.0
 
 """## Import Libraries"""
 
