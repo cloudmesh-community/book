@@ -119,7 +119,7 @@ This can be completed at a later time
 * Why does `self` needs to be used in regular method definitions in classes?
 * What can I do with __init__ and why is it used?
 * What is `cls` and `@classmethods`?
-* Why would one use `@statucmethod`?
+* Why would one use `@statusmethod`?
 
 #### Python Modules
 
