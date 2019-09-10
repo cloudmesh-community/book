@@ -141,7 +141,6 @@ In the book [Introduction to Python for Cloud Computing](https://laszewski.githu
 * E.Cloudmesh.Common.3
 * E.Cloudmesh.Common.4
 * E.Cloudmesh.Common.5
-
 * E.Cloudmesh.Shell.1
 * E.Cloudmesh.Shell.2
 * E.Cloudmesh.Shell.3
@@ -224,4 +223,27 @@ you must provide us with scripts, dockerfiles, makefiles or similar
 that create the images. You are allowed to use images hosted by major
 vendors such as an ubuntu19.04 image or on chameleon cloud the images
 starting with cc-* and so on ...
+
+## Working Ahead
+
+Obviously we will be introducing you to some more advanced concepts that
+are not yet finalized in the books. You can certainly use documents form
+the internet to learn about such concepts.
+
+Concepts we will need are listed in the Syllabus.  
+
+On the python side, we will introduce you to 
+
+* pytest
+* github API as an example for a REST service
+* Libcloud
+* Azure python API
+* AWS boto
+* ...
+
+On the cloudmesh side (still developed by current set of students we will introiduce you to 
+
+* cloudmesh.yaml as preliminary documented in the cloudmesh manual
+* cloudmesh cloud bundle (untested)
+* cloudmesh storage bundle (untested)
 
