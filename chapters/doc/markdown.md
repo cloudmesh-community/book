@@ -77,6 +77,14 @@ To convert the markdown to other formats with `pandoc`
 
     Please note that we have not used quotes here as it is confusing in lists,
     but it is clear from the `>` that we still quote.
+    
+    URL's can be written as
+    
+    [Google](http://www.google.com)
+    
+    or
+    
+    <http://www.google.com>
 
 Frequent errors we see are:
 
