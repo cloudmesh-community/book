@@ -54,9 +54,9 @@ To convert the markdown to other formats with `pandoc`
 
     Images must all be local and must not have an http reference
     All images must be placed in a directory called images/ as
-	shown in @fig:labelwithoutspaces.
+	shown in @fig:unique-labelwithoutspaces.
 
-    ![This is the caption](images/example.png){#fig:labelwithoutspaces}
+    ![This is the caption](images/example.png){#fig:unique-labelwithoutspaces}
 
     Any figure used in the text must be referred to with a figure
 	cation and label. Images can not be embedded in itemized lists.
@@ -77,6 +77,14 @@ To convert the markdown to other formats with `pandoc`
 
     Please note that we have not used quotes here as it is confusing in lists,
     but it is clear from the `>` that we still quote.
+    
+    URL's can be written as
+    
+    [Google](http://www.google.com)
+    
+    or
+    
+    <http://www.google.com>
 
 Frequent errors we see are:
 
