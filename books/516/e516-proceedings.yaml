@@ -29,6 +29,7 @@ BOOK:
       - "{file.chapter}/version.md"
       - "{git.credit}/disclaimer.md"
   - DATACENTER:
+      - "{file.community}/fa19-516-140/master/datacenter.md"
       - "{file.community}/fa19-516-141/master/datacenter.md"
       - "{file.community}/fa19-516-143/master/datacenter.md"
       - "{file.community}/fa19-516-144/master/datacenter.md"
