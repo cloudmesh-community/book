@@ -9,6 +9,9 @@ Original file is located at
 # Deep Learning Lesson 1: MNIST Classification
 """
 
+# pip install cloudmesh-common
+
+from cloudmesh.common.StopWatch import StopWatch
 
 
 """In this lesson we discuss in how to create a simple IPython Notebook to solve
@@ -18,6 +21,9 @@ an image classification problem. MNIST contains a set of pictures
 # ! python3 --version
 
 # ! pip install tensorflow-gpu==1.14.0
+
+
+StopWatch.start("runtime")
 
 """## Import Libraries"""
 
@@ -167,14 +173,22 @@ The batch size determines the number of elements used per minibatch in optimizin
 
 # Compile and Train
 
+
 # loss function for one-hot vector
 # use of adam optimizer
 # accuracy is good metric for classification tasks
+
+StopWatch.start("compile")
 model.compile(loss='categorical_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])
+StopWatch.stop("compile")
+
 # train the network
+StopWatch.start("fit")
 model.fit(x_train, y_train, epochs=100, batch_size=batch_size)
+StopWatch.stop("fit")
+
 
 """## Testing 
 
@@ -203,3 +217,8 @@ Include codes or observations you made on those sections.
 
 [Orignal Source to Source Code](https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras)
 """
+
+StopWatch.stop("runtime")
+
+
+StopWatch.benchmark.print()
