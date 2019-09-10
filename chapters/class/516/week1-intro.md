@@ -23,7 +23,7 @@ Please watch the following video and
 
 Next, review the following chapters in the book 
 
-[Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]:
+[Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
 
 * Chapter: Preface, ePub Readers
 * Chapter: Overview
