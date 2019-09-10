@@ -115,11 +115,11 @@ In one of the examples `locals()` is used.
 
 This can be completed at a later time
 
-* What is self in classes?
-* Why does self needs to be used in regular method definitions?
+* What is `self` in classes?
+* Why does `self` needs to be used in regular method definitions in classes?
 * What can I do with __init__ and why is it used?
-* What is cls and @classmethods?
-* Why would one use @statucmethod?
+* What is `cls` and `@classmethods`?
+* Why would one use `@statucmethod`?
 
 #### Python Modules
 
