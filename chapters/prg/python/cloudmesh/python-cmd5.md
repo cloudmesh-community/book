@@ -16,55 +16,22 @@ The source code for cmd5 is located in github:
 
 * <https://github.com/cloudmesh/cmd5>
 
-### Creating a Python Development Environment
+We have discussed in @sec:cloudmesh-cms-install how to install cloudmesh
+as developer and have access to the source code in a directory called
+`cm`. As you read this document we assume you are a developer and can
+skip the next section.
 
-We recommend that you use a virtualenv either with virtualenv or pyenv.
-This is in detail documented in the
-Section [\[S:managing-multiple-python-versions-with-pyenv\]](#S:managing-multiple-python-versions-with-pyenv){reference-type="ref"
-reference="S:managing-multiple-python-versions-with-pyenv"}.
 
 ### Installation from source
 
-Cmd5 can be easily deployed with pip:
+WARNING: DO NOT EXECUTE THIS IF YOU ARE A DEVELOPER OR YOUR ENVIRONMENT
+WILL NOT PROPERLY WORK. 
+ 
+If you were a user of cloudmesh you can install it however with 
 
 ```bash
 $ pip install cloudmesh-cmd5
 ```
-
-In case you would like to generate easily new cmd5 commands we also
-recommend you install the cloudmesh sys command with:
-
-```bash
-$ pip install cloudmesh-sys
-```
-
-In case you like to work with the source please clone the following
-directories from github:
-
-```bash
-mkdir -p ~/github
-cd ~/github
-
-git clone https://github.com/cloudmesh/cloudmesh-common.git
-git clone https://github.com/cloudmesh/cloudmesh-cmd5.git
-git clone https://github.com/cloudmesh/cloudmesh-sys.git
-
-cd ~/github/cloudmesh.common
-python setup.py install
-pip install .
-
-cd ~/github/cloudmesh-cmd5
-python setup.py install
-pip install .
-
-cd ~/github/cloudmesh-sys
-python setup.py install
-pip install .
-```
-
-The common directory contains some useful libraries, the cmd5 repository
->contains the shell, while the sys directory contains a command to
-generate extensions to cloudmesh.
 
 ### Execution
 
@@ -103,19 +70,20 @@ One of the most important features of CMD5 is its ability to extend it
 with new commands. This is done via packaged name spaces. We recommend
 you name is cloudmesh-mycommand, where mycommand is the name of the
 command that you like to create. This can easily be done while using the
-*sys* command:
+sys* cloudmesh command (we suggest you use a different name than
+`gregor` maybe your firstname):
 
 ```bash
-$ cms sys command generate mycommand
+$ cms sys command generate gregor
 ```
 
-It will download a template from cloudmesh called cloudmesh-bar and
-generate a new directory cloudmesh-mycommand with all the needed files
+It will download a template from cloudmesh called `cloudmesh-bar` and
+generate a new directory `cloudmesh-gregor` with all the needed files
 to create your own command and register it dynamically with cloudmesh.
 All you have to do is to cd into the directory and install the code:
 
 ```bash
-$ cd cloudmesh-mycommand
+$ cd cloudmesh-gregor
 $ python setup.py install
 # pip install .
 ```
@@ -127,28 +95,25 @@ develop API libraries outside of the cloudmesh shell command and reuse
 them in order to keep the command code as small as possible. We place
 the command in:
 
-    cloudmsesh/mycommand/command/mycommand.py
+    cloudmsesh/mycommand/command/gregor.py
 
-An example for the bar command is presented at:
+Now you can go ahead and modify your command in that directory. It will
+look  similar to (if you used the command name `gregor`):
 
-* <https://github.com/cloudmesh/cloudmesh-bar/blob/master/cloudmesh/bar/command/bar.py>
-
-It shows how simple the command definition is (bar.py):
 
     from __future__ import print_function
     from cloudmesh.shell.command import command
     from cloudmesh.shell.command import PluginCommand
 
-    class BarCommand(PluginCommand):
+    class GregorCommand(PluginCommand):
 
         @command
-        def do_bar(self, args, arguments):
+        def do_gregor(self, args, arguments):
             """
             ::
               Usage:
-                    command -f FILE
-                    command FILE
-                    command list
+                    gregor -f FILE
+                    gregor list
               This command does some useful things.
               Arguments:
                   FILE   a file name
@@ -156,11 +121,14 @@ It shows how simple the command definition is (bar.py):
                   -f      specify the file
             """
             print(arguments)
+            if arguments.FILE:
+               print("You have used file: ", arguments.FILE)
+            return ""
 
 An important difference to other CMD solutions is that our commands can
-leverage (besides the standard definition), docopts as a way to define
+leverage (besides the standard definition), `docopts` as a way to define
 the manual page. This allows us to use arguments as dict and use simple
-if conditions to interpret the command. Using docopts has the advantage
+if conditions to interpret the command. Using `docopts` has the advantage
 that contributors are forced to think about the command and its options
 and document them from the start. Previously we did not use but argparse
 and click. However we noticed that for our contributors both systems
@@ -174,27 +142,18 @@ to introduce a separate help method as would normally be needed in CMD
 while reducing the effort it takes to contribute new commands in a
 dynamic fashion.
 
-### Exercises
+### Bug: Quotes
 
-E.CMD5.1
+We have one bug in cmd5 that relates to the use of quotes on the commandline
 
-> Install cmd5 on your computer.
+For example you need to say 
 
-E. CMD5.2
+```bash
+$ cms gregor -f \"file name with spaces\"
+```
 
-> Write a new command with your firstname as the command name.
+If you like to help us fix this that would be great. it requires the use
+of [shlex](https://docs.python.org/3/library/shlex.html). Unfortuantly
+we did not yet time to fix this "feature".
 
-E.CMD5.3
 
-> Write a new command and experiment with docopt syntax and argument
-> interpretation of the dict with if conditions.
-
-E.CMD5.4
-
-> If you have useful extensions that you like us to add by default,
-> please work with us.
-
-E.CMD5.5
-
-> At this time one needs to quote in some commands the `"` in the
-> shell command line. Develop and test code that fixes this.
