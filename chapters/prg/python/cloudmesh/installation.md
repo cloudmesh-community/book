@@ -7,7 +7,7 @@ developers to easily interact with them we have written a convenient
 `cloudmesh-installer` program.
 
 As developer you must also use a python virtual environment to avoid
-affection you system wide python installation. THis can be achieved while
+affection you system wide python installation. This can be achieved while
 using Python3 from python.org or via conda. We do recommend that you use
 python.org as this is the vanilla python that most developers in the
 world use. COnda is often used by users of python if they only want to

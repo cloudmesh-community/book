@@ -1,0 +1,39 @@
+---
+metadata:
+  image: "cover.png"
+  title: "Draft\nIntroduction to Python"
+  subtitle: "for Cloud Computing"
+  author: 'Gregor von Laszewski'
+  subauthor: "Editor"
+  email: "laszewski@gmail.com"
+  url: "https://cloudmesh-community.github.io/book/vonLaszewski-python.epub"
+  description: "Book creator"
+  abstract: "my abstract"
+  keywords: "pandoc"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  rights: (c) Gregor von Laszewski, 2018, 2019
+  filename: "vonLaszewski-python-draft.epub"
+git:
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - CLOUDMESH:
+    - "{file.chapter}/prg/python/cloudmesh/introduction.md"
+    - "{file.chapter}/prg/python/cloudmesh/installation.md"
+    - "{file.chapter}/prg/python/cloudmesh/console.md"
+    - "{file.chapter}/prg/python/cloudmesh/dict.md"
+    - "{file.chapter}/prg/python/cloudmesh/shell.md"
+    - "{file.chapter}/prg/python/cloudmesh/stopwatch.md"
+    - "{file.chapter}/prg/python/cloudmesh/python-cmd5.md"
+    - "{file.chapter}/prg/python/cloudmesh/exercises.md"
+#    - "{file.chapter}/prg/python/cloudmesh/config.md"
+#    - "{file.chapter}/prg/python/cloudmesh/inventory.md"
+#    - "{file.chapter}/prg/python/cloudmesh/python-cloudmesh.md"
+  - REFERENCES:
+    - "{file.chapter}/empty.md"

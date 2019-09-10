@@ -124,7 +124,7 @@ d = {"sample": "value"}
 print("MYDEBUG:")
 pprint (d)
 
-or with print
+# or with print
 
 print("MYDEBUG:", d)
 ```
