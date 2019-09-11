@@ -3,7 +3,7 @@ metadata:
   image: "cover.png"
   title: "FA19 Proceedings\nCloud Computing\nEngineering"
   subtitle: "e516"
-  author: 'Gregor von Laszewski'
+  author: "Gregor von Laszewski"
   subauthor: ""
   email: "laszewski@gmail.com"
   url: "https://github.com/cyberaide/bookmanager"
