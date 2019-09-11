@@ -164,33 +164,27 @@ template that was used to deploy this stack.
 
 The NFS share appliance deploys:
 
--   an NFS server instance, that exports the directory /exports/example
-    to any instance running on Chameleon bare-metal,
-
--   one or several NFS client instances, which configure /etc/fstab to
-    mount this NFS share to /mnt (and can subsequently read from and
-    write to it).
+* an NFS server instance, that exports the directory /exports/example
+  to any instance running on Chameleon bare-metal,
+* one or several NFS client instances, which configure /etc/fstab to
+  mount this NFS share to /mnt (and can subsequently read from and
+  write to it).
 
 This template is reproduced further next, and includes inline comments
 starting with the \# character. There are three main sections:
 
--   resources,
-
--   parameters,
-
--   outputs.
+* resources,
+* parameters,
+* outputs.
 
 The resources section is the most important part of the template: it
 defines which OpenStack resources to create and configure. Inside this
 section you can see four resources defined:
 
--   nfs_server_floating_ip
-
--   nfs_server
-
--   nfs_server_ip_association
-
--   nfs_clients
+* nfs_server_floating_ip
+* nfs_server
+* nfs_server_ip_association
+* nfs_clients
 
 The first resource, nfs_server_floating_ip, creates a floating IP on
 the ext-net public network. It is not attached to any instance yet.
@@ -337,13 +331,10 @@ appliance](https://www.chameleoncloud.org/appliances/26/) is reproduced
 next. It is similar to the NFS share appliance, except that it deploys
 only a single client. You can see that it has four resources defined:
 
--   nfs_server_floating_ip
-
--   nfs_server
-
--   nfs_server_ip_association
-
--   nfs_client
+* nfs_server_floating_ip
+* nfs_server
+* nfs_server_ip_association
+* nfs_client
 
 The nfs_client instance mounts the NFS directory shared by the
 nfs_server instance, just like in our earlier example.
@@ -561,15 +552,11 @@ You may want to write a whole new template, rather than customizing an
 existing one. Each template should follow the same layout and be
 composed of the following sections:
 
--   Heat template version
-
--   Description
-
--   Resources
-
--   Parameters
-
--   Outputs
+* Heat template version
+* Description
+* Resources
+* Parameters
+* Outputs
 
 ### Heat template version
 
@@ -608,25 +595,16 @@ is available.
 However, only a subset of them are supported by Chameleon, and some are
 limited to administrative use. We recommend that you only use:
 
--   OS::Glance::Image
-
--   OS::Heat::ResourceGroup
-
--   OS::Heat::SoftwareConfig
-
--   OS::Heat::SoftwareDeployment
-
--   OS::Heat::SoftwareDeploymentGroup
-
--   OS::Neutron::FloatingIP
-
--   OS::Neutron::FloatingIPAssociation
-
--   OS::Neutron::Port (advanced users only)
-
--   OS::Nova::Keypair
-
--   OS::Nova::Server
+* OS::Glance::Image
+* OS::Heat::ResourceGroup
+* OS::Heat::SoftwareConfig
+* OS::Heat::SoftwareDeployment
+* OS::Heat::SoftwareDeploymentGroup
+* OS::Neutron::FloatingIP
+* OS::Neutron::FloatingIPAssociation
+* OS::Neutron::Port (advanced users only)
+* OS::Nova::Keypair
+* OS::Nova::Server
 
 If you know of another resource that you would like to use and think it
 should be supported by the OpenStack services on Chameleon bare-metal,
@@ -697,17 +675,17 @@ information that is not yet known at this time.
 In practice, this means that in a client-server deployment, only one of
 these pattern will be possible:
 
--   The server has to be deployed first, and once it is deployed, the
-    clients can be launched and contextualized with information from the
-    server. The server will not know about the clients unless there is a
-    mechanism (not managed by Heat) for the client to contact the
-    server.
+* The server has to be deployed first, and once it is deployed, the
+  clients can be launched and contextualized with information from the
+  server. The server will not know about the clients unless there is a
+  mechanism (not managed by Heat) for the client to contact the
+  server.
 
--   The clients have to be deployed first, and once they are deployed,
-    the server can be launched and contextualized with information from
-    the clients. The clients will not know about the server unless there is
-    a mechanism (not managed by Heat) for the server to contact the
-    clients.
+* The clients have to be deployed first, and once they are deployed,
+  the server can be launched and contextualized with information from
+  the clients. The clients will not know about the server unless there is
+  a mechanism (not managed by Heat) for the server to contact the
+  clients.
 
 This limitation was already apparent in our NFS share appliance: this is
 why the server instance exports the file system to all bare-metal
@@ -731,14 +709,12 @@ will automatically have these agents installed.
 
 This contextualization is performed with several Heat resources:
 
--   `OS::Heat::SoftwareConfig`. This resource describes code to run on
-    an instance. It can be configured with inputs and provide outputs.
-
--   `OS::Heat::SoftwareDeployment`. This resource applies a
-    SoftwareConfig to a specific instance.
-
--   `OS::Heat::SoftwareDeploymentGroup`. This resource applies a
-    SoftwareConfig to a specific group of instances.
+* `OS::Heat::SoftwareConfig`. This resource describes code to run on
+   an instance. It can be configured with inputs and provide outputs.
+* `OS::Heat::SoftwareDeployment`. This resource applies a
+  SoftwareConfig to a specific instance.
+* `OS::Heat::SoftwareDeploymentGroup`. This resource applies a
+  SoftwareConfig to a specific group of instances.
 
 The template next illustrates how it works. It launches a group of
 instances that will automatically populates their /etc/hosts file with
@@ -845,14 +821,14 @@ There are two SoftwareConfig resources.
 
 The first SoftwareConfig, export_hosts, uses the factor tool to extract
 IP address and hostname into a single line (in the format expected for
-/etc/hosts) and writes it to a special path
-(\${heat_outputs_path}.hosts). This prompts Heat to assign the content
+`/etc/hosts`) and writes it to a special path
+(`${heat_outputs_path}.hosts`). This prompts Heat to assign the content
 of this file to the output with the name hosts.
 
 The second SoftwareConfig, populate_hosts, takes as input a variable
 named hosts, and applies a script that reads the variable from the
 environment, parses it with ast.literal_eval (as it is formatted as a
-Python dict), and writes each value of the dictionary to /etc/hosts.
+Python dict), and writes each value of the dictionary to `/etc/hosts`.
 
 The SoftwareDeploymentGroup resources export_hosts_sdg and
 populate_hosts_sdg apply each SoftwareConfig to the instance
@@ -862,8 +838,10 @@ Finally, the instance ResourceGroup is configured so that each instance
 uses the following contextualization method instead of a user-data
 script:
 
-              user_data_format: SOFTWARE_CONFIG
-              software_config_transport: POLL_SERVER_HEAT
+```
+user_data_format: SOFTWARE_CONFIG
+software_config_transport: POLL_SERVER_HEAT
+```
 
 You can follow the same template pattern to configure your own
 deployment requiring all-to-all information exchange.

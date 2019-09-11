@@ -24,8 +24,19 @@ links, to allow users to examine the effects of a distributed cloud.
   TACC/UC Distributed Cloud            100Gbps Internet2 links
   ------------------------------------ ----------------------------
 
-[Detailed information in Chameleon cloud Resource Discovery
+As chameleon cloud updates their hardware we recommend to take a look at
+their hardware portal page. This page provides detailed information
+through their [Chameleon cloud Resource Discovery
 Portal](https://www.chameleoncloud.org/user/discovery/)
+
+Unfortunately, Chameleon Cloud only uses 42 (as of Sep 11 2019) of its
+nodes with Infiniband connections. Previous efforts such as FutureGrid
+were able to utilize all 128 nodes connected via Infiniband. However
+FutureGrid is no longer active. If you need better network performance
+you can use SDSC's comet that provides virtual clusters while the nodes
+are connected all to Infiniband. However, comet does not use OpenStack,
+but provides a very convenient command ine tool while leveraging
+cloudmesh.
 
 ## Standard Cloud Units
 
@@ -130,8 +141,3 @@ For more information on how you can reserve these nodes, see the
 section](https://www.chameleoncloud.org/docs/bare-metal-user-guide/#heterogeneous_hardware)
 of the bare metal user's guide.
 
-## Live updates
-
-You can browse detailed information about the resources offered for bare
-metal reconfiguration in the [Resource Discovery
-Portal](https://www.chameleoncloud.org/user/discovery/).
