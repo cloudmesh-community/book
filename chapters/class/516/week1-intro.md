@@ -60,7 +60,7 @@ includes:
   * Please join this [project](https://portal.futuresystems.org/project/fg-569)
 
 After you created the accounts, please fill out the following form so we
-can set up the class accounts and in cqase of github we create you a
+can set up the class accounts and in case of github we create you a
 class repository for you.
 
 * [Cloud Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
