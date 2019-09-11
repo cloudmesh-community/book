@@ -1,4 +1,4 @@
-esources
+# Resources
 
 You can also visit the Chameleon Web page as there is more information
 about other topics that we may not need to worry about. This mostly
