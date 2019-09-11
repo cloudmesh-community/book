@@ -19,7 +19,7 @@ programming experience spend up to 12 hours.
 
 Course material will be distributed as ePubs, PDF, Video or
 Presentations. However you will be required to research some topics 
-on the internet as Cloud Computing ia arapidly evolving field and we
+on the internet as Cloud Computing is a arapidly evolving field and we
 find the most up to date information on the Web.  We also ask you
 to help us updating the ePub and to use additional resources as
 appropriate.
@@ -43,7 +43,7 @@ TAs are not allowed to answer e-mail send to them personally.
 ## How to Take this Class
 
 This class is attended by students with greatly different backgrounds
-and time schedules. To be most flexible and adress all students there
+and time schedules. To be most flexible and address all students there
 are two different ways on how you can take this class.
 
 * Way 1: *Free form.* Here you simply look at the Syllabus table for the
@@ -52,7 +52,7 @@ are two different ways on how you can take this class.
   activities**.
 
 * Way 2: *Chronological order.* The lecture notes are ordered
-  chronological. Thus you can follow our lecture alos in chronological
+  chronological. Thus you can follow our lecture also in chronological
   order.
 
 Please note that we have set aside a recommended set of weekly Lab
