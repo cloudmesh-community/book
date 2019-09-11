@@ -57,7 +57,7 @@ only install the shell and some common API's.
 
 ```bash
 $ cloudmesh-installer git clone cms
-$ cloudmesh-installer git install cms -e
+$ cloudmesh-installer install cms -e
 ```
 
 These commands download and install cloudmesh shell into your
