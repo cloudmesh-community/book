@@ -1,21 +1,3 @@
-# Chameleon Cloud Security Warning {#sec:chameleon-resources}
-
-> ![Warning](images/warning.png) **Chameleon cloud promotes insecure use of ssh while
-> suggesting passphrase less keys.** This is **very dangerous** due to
-> the fact that someone could gain access to your computer and if a
-> password less key is stolen easy access to other systems can be
-> achieved. Instead you must use whenever possible passphrases and use
-> ssh agent and ssh add!
-
-To show you tis insecue practice, we quote from their
-[Web page](https://chameleoncloud.readthedocs.io/en/latest/getting-started/faq.html?highlight=ssh#faq-ssh):
-
-> You will receive a message “Enter same passphrase again:” so just
-> leave it blank and press enter.
-
-Hence do not use their advise that is mentioned multiple times in their
-documentation. Follow ours, and use a passphrase!
-
 # Resources
 
 YOu can also visit the Chameleon Web page as there is also more
