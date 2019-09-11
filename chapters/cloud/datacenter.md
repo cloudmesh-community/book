@@ -703,7 +703,7 @@ We like to emphasize several examples where such monitoring is helpful:
   shut down VMs although they are not used because research clouds are
   offered to us for free. In fact, this situation happened to us
   recently while using another cloud and such monitoring capacities were
-  not available to us (on jetstream). The user used up simple handedly
+  not available to us (on jetstream). The user single-handedly used up
   the entire allocation that was supposed to be shared with 30 other
   users in the same project. All accounts of all users were quasi
   deactivated as the entire project they belonged to were deactivated.
@@ -728,7 +728,7 @@ We like to emphasize several examples where such monitoring is helpful:
 In addition to FutureGrid, we like to point out Comet (see other
 sections). It contains an exception for VM monitoring as it uses a
 regular batch queuing system to manage the jobs. Monitoring of the
-jobs is conducted through existing HPC tools
+jobs is conducted through existing HPC tools.
 
 #### Workload of Containers
 
@@ -816,8 +816,8 @@ locations (see @fig:datacenters-google):
   Carolina; Mayes County, Oklahoma; Montgomery County, Tennessee; The
   Dalles, Oregon
 * **South America:** Quilicura, Chile
-* **Asia**: Changhua County, Taiwan; Singapore
-* **Europe:* Dublin, Ireland; Eemshaven, Netherlands; Hamina, Finland;
+* **Asia:** Changhua County, Taiwan; Singapore
+* **Europe:** Dublin, Ireland; Eemshaven, Netherlands; Hamina, Finland;
   St Ghislain, Belgium
 
 
@@ -982,9 +982,10 @@ clusters and servers. See @fig:datacenter-iu
 
 ![IU Data Center](images/datacenter-iu.jpg){#fig:datacenter-iu}
 
-On the research cluster side it offers Karst:
+On the research cluster side it offers Karst and Carbonate:
 
-* <https://kb.iu.edu/d/bezu>
+* <https://kb.iu.edu/d/bezu> (Karst)
+* <https://kb.iu.edu/d/aolp> (Carbonate)
 
 One of the special systems located in the data center and managed by
 the Digital Science Center is called Futuresystems, which provides a
