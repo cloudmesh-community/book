@@ -16,6 +16,10 @@ technical issues as the command line tools generate full debugging
 messages in case of issues and copy and past into help windows is much
 easier and efficient than copy and past incomplete screenshots.
 
+One important factor for using cloudmesh shell is that it not only works
+for chameleon cloud but also for AWS and Azure. We are hoping to add
+Google also which is already in our preliminary code.
+
 ## Instalation of Cloudmesh Client
 
 We discuss how to install cloudmesh in the [Cloudmesh manual][https://cloudmesh.github.io/cloudmesh-manual/installation/install.html]
@@ -39,7 +43,8 @@ are not taking any of our classes and you do not have a github directory
 that we created for you, please use
 
 ```bash
-path: /Users/grey/.cloudmesh/name.yaml schema: accountname-{counter}
+path: /Users/grey/.cloudmesh/name.yaml 
+schema: accountname-{counter}
 counter: 1
 ```
 

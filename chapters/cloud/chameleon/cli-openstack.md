@@ -4,6 +4,10 @@ OpenStack itself provides a new integrated openstack commandline client.
 This client can use configuration file that allows us to interact with
 the cloud while using the stored passsword and username.
 
+However, we recommend that you just use the cloudmesh shell documented
+in @sec:chameleon-cm-cli as it not only allows you to interact with
+chamelon cloud, but also with AWS and Azure and infuture also Google
+cloud.
 
 ### Creating OpenStack RC via the editor
 
