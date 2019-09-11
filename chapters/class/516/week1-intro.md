@@ -86,7 +86,7 @@ build project or study teams.
 
 Please set up a computer on which you can do Python development. We
 recommend that you use python from <http://python.org>. We will not
-provide any support for conda, as conda has hundrest of libraries that
+provide any support for conda, as conda has hundreds of libraries that
 we are not interested in using. Also note that conda modifies your
 environment without telling you. Certainly you can use virtualbox, or
 containers in case you like to isolate your development environment from
