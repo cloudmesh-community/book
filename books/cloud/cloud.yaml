@@ -32,7 +32,7 @@ BOOK:
     - "{file.chapter}/authors.md"
     - "{file.chapter}/preface/notation.md"
     - "{file.chapter}/preface/updates.md"
-  - "file://./overview.md"
+  - "{file.chapter}/class/516/overview.md"
   - "{file.chapter}/cloud/definition.md"
   - DATACENTER:
     - "{file.chapter}/cloud/datacenter.md"
