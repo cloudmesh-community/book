@@ -63,11 +63,11 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 [![Ok](images/ok.png)]()
 
 > A section is release when it is marked with this emoji in the
-> syllabus. Usie it in markdown with `![Ok](images/ok.png)`.
+> syllabus. Use it in markdown with `![Ok](images/ok.png)`.
 
 [![Question](images/question.png)]()
 
-> Indicates opportunities for contributions. Usie it in markdown with
+> Indicates opportunities for contributions. Use it in markdown with
 > `![Question](images/question.png)`.
 
 [![Construction](images/construction.png)]()
