@@ -1,5 +1,4 @@
-# OVERVIEW
-
+# OVERVIEW {#sec:book-overview}
 
 ---
 
@@ -166,7 +165,7 @@ The book is organized as follows:
 : :o2: you will help us improving this section if you elect to conduct
   a project on comet.
 
-: We conclude the section with letting you know how to run tensorflow
+: We conclude the section with letting you know how to run Tensorflow
   via singularity,
 
 **Serverless Computing**
