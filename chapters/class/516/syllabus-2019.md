@@ -26,7 +26,7 @@ This class will introduce you to state-of-the-art cloud computing
 concepts an engineering approaches. This will include virtual machines,
 containers and Map/Reduce. The course will have a Lab in which you can
 practically explore these concepts. You will for example have the option
-to create a cloud as part of this cours and explore cloud computing tools
+to create a cloud as part of this course and explore cloud computing tools
 and frameworks.
 
 
