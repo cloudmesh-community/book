@@ -2,7 +2,7 @@
 
 This is a more involved example which uses OpenAPI 3.0 specification to invoke 
 [![Video](images/video.png) K-means Clustering](https://www.youtube.com/watch?v=aGRdp4TKc4c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2) 
-routine in scikit-learn [@scik2]. 
+routine in scikit-learn [@scik2]. Scikit-learn k-means user-guide can be found [here](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html).  
 
 This involves the following. 
 * Upload a file with points to create the k-means clustering model.
