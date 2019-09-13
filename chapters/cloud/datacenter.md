@@ -22,13 +22,13 @@ significant amount of data will be in such centers.
 
 ### How much data?
 
-One of the issues we have is to actually comprehending how much data is
-actually created. As humans the total sum created over a year is hard
-to imagine and put into a perspective that can easily be understood.
-In order to visualize the data produced we find often Graphics about
-how much i created in one minute instead. Such depictions include
-samples of data created as a part of popular cloud services or the
-internet in general.
+One of the issues we have is to comprehend how much data is created. 
+It's hard to imagine and put into a perspective how much total data 
+is created over a year, a month, a week, a day or even just an hour. 
+Instead to easily visualize the amount of data produced we often find 
+graphics easier to comprehend that shows how much data was generated in 
+a minute. Such depictions usually include examples of data generated as 
+a part of popular cloud services or the internet in general.
 
 
 
