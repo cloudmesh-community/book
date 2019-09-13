@@ -13,17 +13,17 @@ We provide in this document all activities we do in each week
 The first online meeting for week 1 which will be repeated on Thursday
 8-9:30pm has been recorded and is available at 
 
-* [![Video](images/video.png) Online Meeting Recording for Week 1](https://www.youtube.com/watch?v=k5218WUo6Cc)
+* [![Video](images/video.png) Online Meeting Recording for Week 1 (1:29:39)](https://www.youtube.com/watch?v=k5218WUo6Cc)
 
 ## Class Videos
 
 Please watch the following video and
 
-* [![Video](images/video.png) Overview Engineering Cloud Computing 2019](https://www.youtube.com/watch?v=PU93waozGJk)
+* [![Video](images/video.png) Overview Engineering Cloud Computing 2019 (21:05)](https://www.youtube.com/watch?v=PU93waozGJk)
 
 Next, review the following chapters in the book 
 
-[Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]:
+[Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
 
 * Chapter: Preface, ePub Readers
 * Chapter: Overview
@@ -60,7 +60,7 @@ includes:
   * Please join this [project](https://portal.futuresystems.org/project/fg-569)
 
 After you created the accounts, please fill out the following form so we
-can set up the class accounts and in cqase of github we create you a
+can set up the class accounts and in case of github we create you a
 class repository for you.
 
 * [Cloud Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
@@ -86,7 +86,7 @@ build project or study teams.
 
 Please set up a computer on which you can do Python development. We
 recommend that you use python from <http://python.org>. We will not
-provide any support for conda, as conda has hundrest of libraries that
+provide any support for conda, as conda has hundreds of libraries that
 we are not interested in using. Also note that conda modifies your
 environment without telling you. Certainly you can use virtualbox, or
 containers in case you like to isolate your development environment from

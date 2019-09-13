@@ -1,4 +1,4 @@
-# Week 3 - 16
+# Week N - 16
 
 The agenda for the next weeks will likely follow the Syllabus.
 Adjustments may need to be made based on pace of the class.
