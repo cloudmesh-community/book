@@ -4,7 +4,7 @@
 
 The online meeting recording from Tue Sep 3, 2019 is available from this link:
 
-* [![Video](images/video.png) Online Meeting Recording for Week 2](https://www.youtube.com/watch?v=kezPx0QHrt8)
+* [![Video](images/video.png) Online Meeting Recording for Week 2 (48:38)](https://www.youtube.com/watch?v=kezPx0QHrt8)
 
 This meeting lasted actually half an hour later, but included duplicated
 questions that we removed.
@@ -13,8 +13,8 @@ questions that we removed.
 
 A new version of the following books have been released:
 
-* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/e516/)[@las19e516]:
-* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]:
+* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/e516/) [@las19e516]:
+* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
 
 Please read the section in [Cloud Computing](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]:
 about **Data Centers**. We decided not to do a video as the material

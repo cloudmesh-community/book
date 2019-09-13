@@ -1,14 +1,14 @@
-# OpenStack Command Line Interface {#sec:chameleon-cli}
+# Cloudmesh OpenStack Command Line Interface {#sec:chameleon-cm-cli}
 
 OpenStack on Chameleon delivers KVM based compute resources to provision
 virtual machines. It provides various image types on which we can deploy
 tools and software needed for the class and projects. We will you
 through the basic steps of getting access to OpenStack Chameleon cloud
-under the class allocation. Next, we will introduce you to the command
-line tools which you can use in your projects. Naturally using the GUI
+under the class allocation. Next, we will introduce you the cloudmesh 
+command line tools which you can use in your projects. Naturally using the GUI
 for your projects is not sufficient as setting up your environment will
 need steps to be executed by hand which is not sufficient. It is a goal
-of this class that you create your environment ins a reproducible
+of this class that you create your environment in a reproducible
 fashion via scripts. Hence, although the Web interface called OpenStack
 Horizon is initially attractive, we should make sure to move on to the
 commandline interfaces. Furthermore, it is often difficult to resolve
@@ -16,218 +16,192 @@ technical issues as the command line tools generate full debugging
 messages in case of issues and copy and past into help windows is much
 easier and efficient than copy and past incomplete screenshots.
 
+One important factor for using cloudmesh shell is that it not only works
+for chameleon cloud but also for AWS and Azure. We are hoping to add
+Google also which is already in our preliminary code.
 
-## OpenStack RC File
+## Instalation of Cloudmesh Client
 
-We will use the Nova command line tools for Chameleon OpenStack and to
-authorize our account on the command line tools. To do so, you will need
-an openstack RC file.
+We discuss how to install cloudmesh in the [Cloudmesh manual][https://cloudmesh.github.io/cloudmesh-manual/installation/install.html]
 
-### Creating OpenStack RC via the editor
+We assume that your public key is located at `~/.ssh/id_rsa.pub` 
 
-The easiest way is to create this file by hand while copying the
-following lines into the file `~/.cloudmesh/chameleon/cc-openrc.sh`.
-Make sure that you place the file in a location you easily be found:
+We assume you have the file `~/.cloudmesh/cloudmesh.yaml` that is
+created during the instalation process. Please also make sure that the
+file `~/.cloudmesh/names.yaml` Is properly configured for the class.
+Typically it will look like
 
-    $ mkdir -p ~/.cloudmesh/chameleon
+```
+path: /Users/grey/.cloudmesh/name.yaml
+schema: NNN-accountname-{counter}
+counter: 1
+```
 
-The easiest way is to download a template from pur book with
+Where NNN is the last three gigits from your hid that we place in github
+and for accountname, please chose your chameleon account name. If you
+are not taking any of our classes and you do not have a github directory
+that we created for you, please use
 
-    $ wget https://raw.githubusercontent.com/cloudmesh/book/master/examples/chameleon/cc-openrc.sh -O ~/.cloudmesh/chameleon/cc-openrc.sh
+```bash
+path: /Users/grey/.cloudmesh/name.yaml 
+schema: accountname-{counter}
+counter: 1
+```
 
-The 'cc-openrc.sh' looks as follows:
+instead. Whenever you start a new vm, the counter of the
+vm gets increased, guranteeing a unique virtual machine name across all
+colaborators and your own virtual machines.
 
-    #!/bin/bash
+We also assume you have called the command 
 
-    export CC_PROJECTID="CH-819337"
-    export CC_PREFIX="albert-111" # repalce with your username and hid number
+```bash
+cms init
+```
 
-    export OS_AUTH_URL=https://openstack.tacc.chameleoncloud.org:5000/v2.0
-    # With Keystone you pass the keystone password.
-    echo "Please enter your OpenStack Password: "
-    read -sr OS_PASSWORD_INPUT
-    export OS_PASSWORD=$OS_PASSWORD_INPUT
-
-    export OS_TENANT_ID=$CC_PROJECTID
-    export OS_TENANT_NAME=$CC_PROJECTID
-    export OS_PROJECT_NAME=$CC_PROJECTID
-    export OS_USERNAME="<put your chameleon cloud username here>"
-
-
-    export OS_REGION_NAME="RegionOne"
-    if [ -z "$OS_REGION_NAME" ]; then unset OS_REGION_NAME; fi
-
-Please make sur to replace `<put your chameleon cloud username here>`
-with your chameleon cloud username. Now whenever you need top access
-chameleon cloud you can use the command
-
-    $ source ~/.cloudmesh/chameleon/cc-openrc.sh
+and are running the MongoDB cloudmesh service which you can check with
 
 
-To simplify the configuration and documentation, we have included two
-shell environment variables. The first one is `CC_PROJECT`, that
-specifies the project number. The second one is a prefix that you will
-use for VMS and keys as we are using a shared project. This way we can
-see which VMS and which keys have been uploaded and keep the names of
-them unique.
+```bash
+$ cms admin mongo status
+```
 
-    $ export CC_PROJECT=CH-819337
-    $ export CC_PREFIX=albert-111
+Once you install cloudmesh you need to modify the
+`~/.cloudmesh/cloudmesh.yaml` file to add your username and password.
+Make sure to properly protect this file as discussed in the manual.
 
+To add the username and password, you can use an editor, or execute on
+the commandline with the commands
 
-### Creating OpenStack RC via the GUI
+```bash
+$ cms config set chameleon.OS_USERNAME=YOURUSERNAME
+$ cms config set chameleon.OS_PASSWORD=YOURPASSWORD
+```
 
-In case you do not want to use the commandline option to obtain an RC
-sample, you can obtain the OpenStack RC file with the OpenStack
-Dashboard.
+They will change the values in the yaml file at
 
-<https://openstack.tacc.chameleoncloud.org/dashboard>
-
-Login and chose your project number for this project. Confirm your
-project number and find **Access & Security** on the left menu. The
-Access & Security page has tabs and choose **API Access** to download
-credentials on a local machine. Click **Download OpenStack RC File** to
-download *CH-\$PROJECTID-openrc.sh* file on your machine (see
-@fig:chameleon-access). Every time you use nova command line tools, the
-file should be loaded on your terminal.
-
-![Access and Security GUI](images/openstack-chameleon-openrc.png){#fig:chameleon-access}
-
-    $ mkdir -p ~/.cloudmesh/chameleon
-    $ mv ~/Downloads/CH-$CC_PROJECT-openrc.sh ~/.cloudmesh/chameleon/cc-openrc.sh
+* `cloudmesh.cloud.chameleon.credentials.`
 
 
-Just as in the previous section please add the following to your
-openrc.sh file while adapting it appropriately.
+Next test out if you can see some images with 
 
-    $ export CC_PROJECT=CH-819337
-    $ export CC_PREFIX=albert-111
+```bash
+cms image list --refresh
+```
 
-Once you *source* the file, you can use nova command line tools without
-sourcing it again. The environment variables are enabled while your
-terminal is alive. In case you have not stored the original RC file in
-the Downloads folder, please copy it from that location instead.
+You will see a table similar to 
 
-## CLI to Manage Virtual Machines
+```
++--------------------------+--------------+--------------+-------------+--------+-----------+
+| Name                     | Size (Bytes) | MinDisk (GB) | MinRam (MB) | Status | Driver    |
++--------------------------+--------------+--------------+-------------+--------+-----------+
+| CC-Ubuntu18.04           | 982843392    | 0            | 0           | ACTIVE | openstack |
+| CC-Ubuntu16.04           | 844759040    | 0            | 0           | ACTIVE | openstack |
+| CC-Ubuntu18.04-20190822  | 982056960    | 0            | 0           | ACTIVE | openstack |
+| CC-Ubuntu16.04-20190822  | 844824576    | 0            | 0           | ACTIVE | openstack |
+...
+```
 
-OpenStack provides a commandline tool called *nova* to manage virtual
-machines. To install it please use the command
-
-    $ pip install python-openstackclient
-
-To see if your configuration works and the command is installed, make
-sure you have the `cc-openrc.sh` file and sourced it. Than issue the
-command
-
-    $ nova image-list
+To see the flavors or sizes, you can use
 
 
-You will see an output similar to
+```bash
+cms flavor list flavor --refresh
+```
 
-    +----------------------------------+------------------+--------+---------+
-    | ID                               | Name             | Status | Server  |
-    +----------------------------------+------------------+--------+---------+
-    | be46bd5a-c4a5-4495-ad30-35618... | CC-C7-autologin  | ACTIVE |         |
-    | 1fe5138b-300b-4b30-8d22-e7287... | CC-CentOS7       | ACTIVE |         |
-    ...
+Which will return something like 
 
-## Creating SSH keys :o2:
+```
++----------------+-------+-------+------+
+| Name           | VCPUS | RAM   | Disk |
++----------------+-------+-------+------+
+| m1.tiny        | 1     | 512   | 1    |
+| m1.small       | 1     | 2048  | 20   |
+| m1.medium      | 2     | 4096  | 40   |
+| m1.large       | 4     | 8192  | 80   |
+| m1.xlarge      | 8     | 16384 | 160  |
+| storage.medium | 1     | 4096  | 2048 |
+| m1.xxlarge     | 8     | 32768 | 160  |
+| m1.xxxlarge    | 16    | 32768 | 160  |
++----------------+-------+-------+------+
+```
 
-![No](images/no.png)
-
-Naturally you will need an ssh key. If you do not have an existing SSH
-keypair, you can create one. Please see
-Section ??[\[C:ssh\]](#C:ssh){reference-type="ref" reference="C:ssh"}?? for
-more details:
-
-    $ ssh-keygen -t rsa -C albert@example.edu
+Cloudmesh reads the preset variables in the cloudmesh.yaml file to start
+new virtual machines. To see them you can look at the yaml file or use the command
 
 
-## KeyPair Registration
+```bash
+$ cms config get chameleon.default
+```
 
-Once you have completed the installation of nova, you also need to
-register a ssh keypair with openstack to be able to log into the virtual
-machines that you start. To register your public key, use:
+To start a VM simply use
 
-    $ nova keypair-add --pub-key ~/.ssh/id_rsa.pub $CC_PREFIX-key
+```bash
+cms vm boot
+```
 
-Once you register your key, you can confirm if your key registration has
-been successful by listing the keys:
+You will see something similar to
 
-    $ nova keypair-list
+```
+# ----------------------------------------------------------------------
+# Create Server
+# ----------------------------------------------------------------------
 
-You will see an output similar to:
+    Name:     benchmark-gregor-vm-684
+    User:     cc
+    IP:       129.114.33.243
+    Image:    CC-Ubuntu14.04
+    Size:     m1.small
+    Public:   True
+    Key:      gregor
+    location: None
+    timeout:  360
+    secgroup: default
+    group:    cloudmesh
+    groups:   ['cloudmesh']
+```
 
-    +-----------------+-------------------------------------------------+
-    | Name            | Fingerprint                                     |
-    +-----------------+-------------------------------------------------+
-    | $CC_PREFIX-key | cf:04:06:aa:8b:76:af:77:aa:0a:b5:87:ff:0f:ba:97 |
-    +-----------------+-------------------------------------------------+
 
-## Start a new VM instance
+To log into the vm you can use 
 
-To start new instances you can use the *nova boot* command. It will
-start a VM instance. You can use some parameters to specify which base
-image and a server size we will use with a name. We use *CC-Ubuntu16.04*
-base image in this section which is an official Ubuntu 16.04 image
-provided by Chameleon project.
+```bash
+cms ssh
+```
 
-    $ nova boot --image CC-Ubuntu16.04 --key-name $CC_PREFIX-key --flavor m1.small $CC_PREFIX-01
+To set a different vm, you could use the command line parameters that you can find out with 
 
-where the 01 indicates the instance number. Note that we will be
-terminating and deleting any VM in our project that does not follow this
-naming convention.
+```bash
+cms vm help
+```
+
+but in case you always want to use the same parameters it is much mor
+conveneint to use our `config set` command with
+
+```bash
+$ cms config set cloud.chameleon.default.size=CC-Ubuntu18.04
+$ cms config set cloud.chameleon.default.image=m1.small
+$ cms config set cloud.chameleon.default.username=cc
+```
+
+On chameleon cloud images with CC are cameleon cloud santioned images.
+They include some monitoring extensions and use the username `cc` for
+login.
+
+
 
 ## Floating IP Address
 
-If your new VM instance is up and running, it needs an external ip
-address which is also called floating IP address. A floating IP allows
-you to get access to this VM from the internet. Note that chameleon has
-a limited number of floating IP addresses and it is best to return them
-if not in use. If chameleon runs out of floating IP addresses, please
-submit a ticket to chameleon. However in many cases the VM may only need
-a an internal IP address as a default. In case you need to access
-others, you could even tunnel all connections through a single floating
-IP. naturally this would limit data transfers in and out of chameleon,
-but is a recommended way to deal with limited floating IPs.
+We have configured cloudmesh to automatically assign a floating ip
+address so you can use that to log into the vm.
 
-Let us showcase how to associate a floating IP address and access it via
-SSH.
+to view it, you can use the command
 
-     nova floating-ip-create ext-net
-     +---------------+----------------+-----------+----------+---------+
-     | Id            | IP             | Server Id | Fixed IP | Pool    |
-     +---------------+----------------+-----------+----------+---------+
-     | 13dc309e- ... | 129.114.111.37 | -         | -        | ext-net |
-     +---------------+----------------+-----------+----------+---------+
+```bash
+$ cms vm list --refresh
+```
 
-Now we have a IP address to assign to a VM instance. In this section,
-we will associate *129.114.111.37* to our albert-111-01 VM instance by:
+To delete the vm simply say 
 
-    $ nova floating-ip-associate albert-111-01 129.114.111.37
+```bash
+$ cms vm delete
+```
 
-Once you completed this step, you are now able to SSH into your VM
-instance. Confirm *ACTIVE* state in your VM to get access.
-
-    | f19e1... | albert-111-01 | ACTIVE | - | Running | $CC_PROJECT-net= |
-    |          |                        |   |         |    192.168.0.13, |
-    |          |                        |   |         |   129.114.111.37 |
-
-where 111 is the number from your hid and 01 is the instance number
-
-    $ ssh cc@129.114.111.37
-
-Note that *cc* is login name your VM if you start a VM with the official
-Chameleon cloud image.
-
-## Termination of VM Instance
-
-If you completed your work on your VM instance, you have to terminate
-your VM and release a floating IP address associated with. For example,
-we terminate our first instance and the IP address by:
-
-    $ nova delete $CC_PREFIX-01
-    $ nova floating-ip-delete 129.114.111.37
-
-Please note that when using delete you will delete the VM. In case you
-still need to use it use `stop` and to restart it use `start` instead.
