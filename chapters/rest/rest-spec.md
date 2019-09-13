@@ -226,6 +226,7 @@ According to the current OAS 3.0, supported authentication methods are,
 
 
 
+
 ## RAML
 
 ## Tinyspec
