@@ -13,13 +13,13 @@ We provide in this document all activities we do in each week
 The first online meeting for week 1 which will be repeated on Thursday
 8-9:30pm has been recorded and is available at 
 
-* [![Video](images/video.png) Online Meeting Recording for Week 1](https://www.youtube.com/watch?v=k5218WUo6Cc)
+* [![Video](images/video.png) Online Meeting Recording for Week 1 (1:29:39)](https://www.youtube.com/watch?v=k5218WUo6Cc)
 
 ## Class Videos
 
 Please watch the following video and
 
-* [![Video](images/video.png) Overview Engineering Cloud Computing 2019](https://www.youtube.com/watch?v=PU93waozGJk)
+* [![Video](images/video.png) Overview Engineering Cloud Computing 2019 (21:05)](https://www.youtube.com/watch?v=PU93waozGJk)
 
 Next, review the following chapters in the book 
 
