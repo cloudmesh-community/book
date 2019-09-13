@@ -6,7 +6,11 @@ Start of Project Selection
 
 ## Online Meeting Recording
 
-This meeting will take place Sep 10, 2019, 8-9pm EST
+This meeting took place Sep 10, 2019, 8-9pm EST
+
+* [![Video](images/video.png) Online Meeting Recording for Week 3 (1:54:01)](https://www.youtube.com/watch?v=DD5rBVk3kZw)
+
+
 
 ## Lecture Material
 
