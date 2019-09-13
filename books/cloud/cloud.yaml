@@ -86,7 +86,7 @@ BOOK:
     - HADOOP_ECOSYSTEM:
       - ELASTIC_MAP_REDUCE:
         - "{file.chapter}/mapreduce/aws-emr.md"
-        - "{file.chapter}/mapreduce/amazon-emr-1.md"
+#        - "{file.chapter}/mapreduce/amazon-emr-1.md"
       - TWISTER:
         - "{file.chapter}/mapreduce/twister.md"
         - "{file.chapter}/mapreduce/twister-installation.md"
