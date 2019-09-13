@@ -105,20 +105,19 @@ This trend is continuing.
 
 ## Cloud Data Centers
 
-A *data center* is a facility that hosts the information technology
-related to servers and data serving a large number of customers. data
-centers evolved from the need to originally have large rooms as the
-original computers filled in the early days of the compute revolution
-filled rooms. Once multiple computers were added to such facilities
-super computer centers created for research purposes. With the
-introduction of the internet and offering services such as Web
-hosting large business oriented server rooms were created. The need
-for increased facilities was even accelerated by the development of
-virtualization and servers being rented to customers in shared
-facilities. As the need of web hosting still is important but has
-been taken over by cloud data centers, the terms internet data center,
-and cloud data center are no longer used to distinguish it. Instead we
-use today just the term *data center*. There may be still an important
+A *data center* is a facility that hosts large number of the computing 
+machines and serves lot of customers.  Data centers evolved from the 
+need to have large rooms for inital computers which were huge in size. 
+Later multiple computers were added to such facilities creating 
+super computer centers which were used for research purposes. With 
+advent of the internet and service offering such as Web hosting 
+large business oriented server rooms were created.  The need for 
+data centers was further accelerated by the development of 
+virtualization and servers being rented to customers in shared facilities.  
+Need of web hosting is still important but has been taken over 
+by cloud data centers. The terms internet data center,
+and cloud data center are now used interchangeably. Instead we
+just use the term *data center*. There may be still an important
 difference between research data centers offered in academia and
 industry that focus on providing computationally potent clusters focus
 on numerical computation. Such data centers are typically centered
