@@ -31,7 +31,6 @@ data.name
 This is espacially useful in if conditions as it may be easier to read and write
 
 ```python
-
 if data.name is "Gregor":
 
     print("this is quite readable")
@@ -39,10 +38,13 @@ if data.name is "Gregor":
 
 and is the same as
 
+```python
 if data["name"] is "Gregor":
 
     print("this is quite readable")
 ```
+
+For more features, see API: [dotdict](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=dotdict#module-cloudmesh.common.dotdict)
 
 
 ## FlatDict
@@ -77,3 +79,51 @@ flat = {
 }
 ```
 
+For more features, see API: [dotdict](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=flatdict#module-cloudmesh.common.FlatDict)
+
+
+## Printing Dicts
+
+In case we want to print dicts and lists of dicts in various formats, we
+have included a simple `Printer` that can print a dict in yaml, json,
+table, and csv format.
+
+The function can even guess from the passssed parameters what the input format is
+and uses the appropriate internal function.
+
+A common example is 
+
+```python
+self.data = [
+    {
+        "name": "Gregor",
+        "address": {
+            "street": "Funny Lane 11",
+            "city": "Cloudville"
+        }
+    },
+    {
+        "name": "Albert",
+        "address": {
+            "street": "Memory Lane 1901",
+            "city": "Cloudnine"
+        }
+    }
+]
+
+
+pprint (self.data)
+
+table = Printer.flatwrite(self.data,
+                    sort_keys=["name"],
+                    order=["name", "address.street", "address.city"],
+                    header=["Name", "Street", "City"],
+                    output='table')
+
+print(table)
+```
+
+
+For more features, see API: [Printer](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=flatdict#module-cloudmesh.common.Printer)
+
+More examples are available in the source code as [tests](https://github.com/cloudmesh/cloudmesh-common/tree/master/tests) 

@@ -1,5 +1,4 @@
-# OVERVIEW
-
+# OVERVIEW {#sec:book-overview}
 
 ---
 
@@ -89,7 +88,7 @@ The book is organized as follows:
   formulate queries that retrieve desired data. Restrictions to the
   queries can be formulated to download what is needed. Other features
   include a type system. Github has added in addition to its REST service
-  also a GraphQL interface. YOu will have the opportunity to explore
+  also a GraphQL interface. You will have the opportunity to explore
   GraphQl while interfacing with GitHub.
 
 **Hypervisors**
@@ -122,7 +121,7 @@ The book is organized as follows:
   class.
 
 : Important to note is that the appendix contains very useful
-  information that augments this section. THis includes a more detailed
+  information that augments this section. This includes a more detailed
   list of services for some IaaS providers as well as information on
   how to use chameleon cloud which has been adapted by us for this
   chapter.
@@ -131,8 +130,8 @@ The book is organized as follows:
 **Map/Reduce**
 
 : In this chapter we discuss about the background of Mapreduce along
-  with Hadoop and core components of Hadoop. We will also introduce
-  you in this section to Spark.
+  with Hadoop and it's core components. We will also introduce Spark to
+  you in this section to Spark.	  you in this section.
 
 : You will be presented on how you can use the systems on a single
   resource so you can explore them more easily, but we will also let
@@ -166,7 +165,7 @@ The book is organized as follows:
 : :o2: you will help us improving this section if you elect to conduct
   a project on comet.
 
-: We conclude the section with letting you know how to run tensorflow
+: We conclude the section with letting you know how to run Tensorflow
   via singularity,
 
 **Serverless Computing**
@@ -189,16 +188,18 @@ The book is organized as follows:
 **GO**
 
 : Go is a programming language used by Google and has been most famously
-  used to implement Kubernetes. IN this chapter we introduce you to the
-  elementary features of Go, but take also a closer look on how we can
+  used to implement Kubernetes. In this chapter we introduce you to the
+  elementary features of Go and also take a closer look on how we can
   define REST services, use OpenAPI, and interface with clouds.
 
 **Cloud AI Services**
 
-: As part of the class we will be exploring AI services that are offered
-  as part of clouds. You will be able if interested to use them in your
-  projects. YOu will be developing also as part of this class AI services
-  that you develop that can be hosted in the cloud and reused by others.
+: As part of the class we will be exploring AI services that are 
+  are hosted in cloud and offered as service.
+  If interested you 
+  will be able  to use them in your projects. As part of this class
+  you will also be developing AI services and those can be hosted 
+  in the cloud and reused by others.
   While using cross-platform specifications, clients for Java, Python,
   Scala, Go, and other programming languages will be automatically created
   for you. This will allow others to reuse your services.

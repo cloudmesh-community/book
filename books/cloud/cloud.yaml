@@ -3,7 +3,7 @@ metadata:
   image: "cover.png"
   title: "Cloud Computing"
   subtitle: ""
-  author: 'Gregor von Laszewski'
+  author: "Gregor von Laszewski"
   subauthor: "Editor"
   email: "laszewski@gmail.com"
   url: "https://cloudmesh-community.github.io/book/vonlaszewski-cloud.epub"
@@ -32,7 +32,7 @@ BOOK:
     - "{file.chapter}/authors.md"
     - "{file.chapter}/preface/notation.md"
     - "{file.chapter}/preface/updates.md"
-  - "file://./overview.md"
+  - "{file.chapter}/class/516/overview.md"
   - "{file.chapter}/cloud/definition.md"
   - DATACENTER:
     - "{file.chapter}/cloud/datacenter.md"

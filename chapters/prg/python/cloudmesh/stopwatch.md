@@ -9,13 +9,12 @@ a convenient format.
 from cloudmesh.common.StopWatch import StopWatch
 import os
 
-watch = StopWatch()
 
-watch.start("test")
+StopWatch.start("test")
 os.sleep(1)
-watch.stop("test")
+StopWatch.stop("test")
 
-print (watch["test"])
+print (StopWatch.get("test"))
 ```
 
 To print them, you can aslo use
@@ -23,3 +22,5 @@ To print them, you can aslo use
 ```python
 Stopwatch.benchmark.print()
 ```
+
+For more features, please seee [StopWatch](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=stopwatch#module-cloudmesh.common.StopWatch)

@@ -1,13 +1,14 @@
 # Shell
 
 Python provides a sophisticated method for starting backen processe.
-However in moany cases it is quite complex to interact with it. It also
+However in many cases it is quite complex to interact with it. It also
 does not provide convenient wrappers that we can use to start them in a
-pythonic fashin. For this reason we have written a primitve `Shell`
-class that provides just enouch functionality to be useful in many
+pythonic fashion. For this reason we have written a primitive `Shell`
+class that provides just enough functionality to be useful in many
 cases.
 
-Let us itterate its use over some examples where the value in result returns the output of the command.
+Let us iterate its use over some examples where the value in result
+returns the output of the command.
 
 
 ```python
@@ -37,7 +38,11 @@ result = Shell.pwd()
 print(result)
 ```
 
-The list includes (naturally the commands must be avilable on your OS.
+The list includes (naturally the commands must be available on your OS.
+If the shell command is not available on your OS, please help us
+improving the code to either provide functions that work on your OS or
+develop with us platform independent functionality of a subset of the
+functionality for the shell command that we may benefit from.
 
 * `VBoxManage(cls, *args)`
 * `bash(cls, *args)`
@@ -91,3 +96,5 @@ The list includes (naturally the commands must be avilable on your OS.
 * `vagrant(cls, *args)`
 * `version(cls, name)`
 * `which(cls, command)`
+
+For more features, please see [Shell](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=shell#module-cloudmesh.common.Shell)
