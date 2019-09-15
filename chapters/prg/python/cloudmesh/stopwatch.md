@@ -7,20 +7,20 @@ a convenient format.
 
 ```python
 from cloudmesh.common.StopWatch import StopWatch
-import os
+from time import sleep
 
 
 StopWatch.start("test")
-os.sleep(1)
+sleep(1)
 StopWatch.stop("test")
 
 print (StopWatch.get("test"))
 ```
 
-To print them, you can aslo use
+To print them, you can also use:
 
 ```python
-Stopwatch.benchmark.print()
+StopWatch.benchmark.print()
 ```
 
 For more features, please seee [StopWatch](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=stopwatch#module-cloudmesh.common.StopWatch)
