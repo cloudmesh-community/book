@@ -27,7 +27,7 @@ skip the next section.
 WARNING: DO NOT EXECUTE THIS IF YOU ARE A DEVELOPER OR YOUR ENVIRONMENT
 WILL NOT PROPERLY WORK. 
  
-If you were a user of cloudmesh you can install it however with 
+However, if you are a user of cloudmesh you can install it with 
 
 ```bash
 $ pip install cloudmesh-cmd5
@@ -80,7 +80,7 @@ $ cms sys command generate gregor
 It will download a template from cloudmesh called `cloudmesh-bar` and
 generate a new directory `cloudmesh-gregor` with all the needed files
 to create your own command and register it dynamically with cloudmesh.
-All you have to do is to cd into the directory and install the code:
+All you have to do is to `cd` into the directory and install the code:
 
 ```bash
 $ cd cloudmesh-gregor
