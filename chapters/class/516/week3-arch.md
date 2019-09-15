@@ -40,7 +40,7 @@ For the ungraded activities, no submission is needed.
 
 #### Review: venv in python 3
 
-This Lab is inly to be chose by those using python 3 from python.org
+This lab is only to be chose by those using python 3 from python.org
 which is our preferred environment.
 
 ```
@@ -55,7 +55,7 @@ Please understand the following concepts (no submission needed):
 
 #### Review: Conda
 
-This Lab has only to be done by those using anaconda/conda.
+This lab only has to be done by those using anaconda/conda.
 
 * What problems may you encounter when using anaconda as python developer?
 
@@ -77,7 +77,7 @@ This Lab has only to be done by those using anaconda/conda.
 
 We like to remind you about dicts in python.
 
-Read up upon dicts and experiment with them.
+Read up on dicts and experiment with them.
 
 * How do you merge the content of two dicts?
 
