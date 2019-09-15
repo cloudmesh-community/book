@@ -15,13 +15,13 @@
 ---
 
 In this Chapter we like to introduce you to cloudmesh which provides you
-with aa number of convenient methods to interface with the local system,
+with a number of convenient methods to interface with the local system,
 but also with cloud services. We will start while focussing on some
 simple API's and than gradually introduce the cloudmesh shell which not
 only provides a shell, but also a commandline interface so you can use
 cloudmesh from a terminal. This dual ability is quite useful as we can
-write cloudmesh scripts, but can also invoce the functionality from the
-terminal. THis is quite an important distinction towards other tools
+write cloudmesh scripts, but can also invoke the functionality from the
+terminal. This is quite an important distinction towards other tools
 that only allow commandline interfaces.
 
 Moreover we also sho you that it is easy to create new commands and add
