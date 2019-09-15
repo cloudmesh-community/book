@@ -10,8 +10,8 @@ As a developer you must also use a python virtual environment to avoid
 affecting your system wide python installation. This can be achieved while
 using Python3 from python.org or via conda. We do recommend that you use
 python.org as this is the vanilla python that most developers in the
-world use. Conda is often used by users of python if they only want to
-use bleeding-edge prepackaged python tools and libraries.
+world use. Conda is often used by users of python if they not need to
+use bleeding-edge but older prepackaged python tools and libraries.
 
 ## Prerequisite
 
