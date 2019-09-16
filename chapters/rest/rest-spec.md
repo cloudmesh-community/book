@@ -7,9 +7,9 @@ architectural style for creating Web services. A REST API specification
 would defines the attributes and constraints to be used in the web
 service. There have been multiple specifications that have been in use
 such as  [OpenAPI (formally called
-Swagger)](https://github.com/OAI/OpenAPI-Specification),
-[RAML](https://raml.org/), and [API
-Blueprint](https://apiblueprint.org/).
+Swagger)](https://github.com/OAI/OpenAPI-Specification) [:o2:],
+[RAML](https://raml.org/) [:o2:], and [API
+Blueprint](https://apiblueprint.org/) [:o2:].
 
 
    
@@ -18,10 +18,10 @@ Blueprint](https://apiblueprint.org/).
 Over the years, Open API specification has become the most popular with
 a much larger community behind it. Therefore, this section would focus
 on the latest specification, [OpenAPI 3.0 (OAS
-3.0)](https://swagger.io/blog/news/announcing-openapi-3-0/).
+3.0)](https://swagger.io/blog/news/announcing-openapi-3-0/) [:o2:].
 
 According to the [OAS
-documentation](https://swagger.io/docs/specification/about/), it allows
+documentation](https://swagger.io/docs/specification/about/) [:o2:], it allows
 users to,
 
 * Describe endpoints and operations on each endpoint
@@ -30,13 +30,13 @@ users to,
 * Describe contact, license, terms of use and other information  
 
 API specifications can be written in YAML or JSON. OAS also comes with a
-rich toolkit that includes [Swagger Editor](http://editor.swagger.io/),
-[Swagger UI](https://swagger.io/swagger-ui/) and [Swagger
-Codegen](https://github.com/swagger-api/swagger-codegen), that creates
+rich toolkit that includes [Swagger Editor](http://editor.swagger.io/) [:o2:],
+[Swagger UI](https://swagger.io/swagger-ui/) [:o2:] and [Swagger
+Codegen](https://github.com/swagger-api/swagger-codegen) [:o2:], that creates
 an end-to-end development environment, even for the users who are new to
 OAS.
 
-Section [OpenAPI Specification](#openapi-spec) details more on the OAS
+Section [OpenAPI Specification](#openapi-spec) [:o2:] details more on the OAS
 2.0 specification.
 
 ### Open API 3.0 Specification (OAS 3.0) 
@@ -45,7 +45,7 @@ Section [OpenAPI Specification](#openapi-spec) details more on the OAS
 
 OAS 3.0 key definitions can be depicted in the following figure.  
 
-![Components of OAS 3.0 [[source]](https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/)](images/openapi3.png){width=75%}
+![Components of OAS 3.0 [[source]](https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/) [:o2:]](images/openapi3.png){width=75%}
 
 Basic structure of the definitions would look like this. 
 
@@ -262,19 +262,33 @@ According to the current OAS 3.0, supported authentication methods are,
 
 ## RAML
 
+[:o2:]
+
+paragraph with intro, pointer to example, 
+
+point out that OpenAPI seem to have even RAML people as so OpenAPI seems
+the one we want to use and not RAML
+
+there are tools to convert this.
+
 ## Tinyspec
 
-* <https://www.toptal.com/api-developers/5-new-things-rest-specification>
+Is this even useful?
+
+* <https://www.toptal.com/api-developers/5-new-things-rest-specification> [:o2:]
 
 ## JsonAPI
 
-* <https://jsonapi.org/>
-* <https://jsonapi.org/format/>
+* <https://jsonapi.org/> [:o2:]
+* <https://jsonapi.org/format/> [:o2:]
 
 
 ## Tools
 
+[:o2:] see in rest.md, the link to resttools, put this here also
+
+
 ### Conexion
 
-* <https://github.com/zalando/connexion>
-* <https://github.com/zalando/connexion/tree/master/examples/openapi3/helloworld/openapi>
+* <https://github.com/zalando/connexion> [:o2:]
+* <https://github.com/zalando/connexion/tree/master/examples/openapi3/helloworld/openapi> [:o2:]
