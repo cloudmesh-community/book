@@ -1,21 +1,20 @@
 # Shell
 
-Python provides a sophisticated method for starting backen processe.
+Python provides a sophisticated method for starting background processes.
 However in many cases it is quite complex to interact with it. It also
 does not provide convenient wrappers that we can use to start them in a
 pythonic fashion. For this reason we have written a primitive `Shell`
 class that provides just enough functionality to be useful in many
 cases.
 
-Let us iterate its use over some examples where the value in result
-returns the output of the command.
+Let us review some examples where `result` is set to the 
+output of the command being executed.
 
 
 ```python
 from cloudmesh.common.Shell import Shell
 
-
-Shell.execute('pwd')
+result = Shell.execute('pwd')
 print(result)
 
 result = Shell.execute('ls', ["-l", "-a"])
@@ -25,7 +24,7 @@ result = Shell.execute('ls', "-l -a")
 print(result)
 ```
 
-For many commands we also provide build in functions`
+For many common commands, we provide built-in functions. For example:
 
 ```python
 result = Shell.ls("-aux")
