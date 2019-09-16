@@ -20,7 +20,7 @@ print (StopWatch.get("test"))
 To print them, you can also use:
 
 ```python
-StopWatch.benchmark.print()
+StopWatch.benchmark()
 ```
 
 For more features, please seee [StopWatch](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=stopwatch#module-cloudmesh.common.StopWatch)
