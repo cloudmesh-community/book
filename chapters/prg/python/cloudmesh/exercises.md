@@ -2,11 +2,11 @@
 
 When doing your assignment, make sure you label the programs
 appropriately with comments that clearly identify the assignment. 
-Plase all assignments in a folder on github named "cloudmesh-exercises"
+Place all assignments in a folder on github named "cloudmesh-exercises"
 
 For example name the program solving E.Cloudmesh.Common.1
 `e-cloudmesh-1.py` and so on. For more complex assignments you can name
-thame as you like, as long as in the file you have a comment such as 
+them as you like, as long as in the file you have a comment such as 
 
 ```# fa19-516-000 E.Cloudmesh.Common.1```
 
@@ -18,24 +18,24 @@ your git repository of your working program.
 
 E.Cloudmesh.Common.1
 
-> Develop a program that demonstartes the use of `banner`, 
+> Develop a program that demonstrates the use of `banner`, 
 > `HEADING`, and `VERBOSE`.
 
 E.Cloudmesh.Common.2
 
-> Develop a program that demonstartes the use of `dotdict`.
+> Develop a program that demonstrates the use of `dotdict`.
 
 E.Cloudmesh.Common.3
 
-> Develop a program that demonstartes the use of `FlatDict`.
+> Develop a program that demonstrates the use of `FlatDict`.
 
 E.Cloudmesh.Common.4
 
-> Develop a program that demonstartes the use of `cloudmesh.common.Shell`.
+> Develop a program that demonstrates the use of `cloudmesh.common.Shell`.
 
 E.Cloudmesh.Common.5
 
-> Develop a program that demonstartes the use of `cloudmesh.common.StopWatch`.
+> Develop a program that demonstrates the use of `cloudmesh.common.StopWatch`.
 
 
 ## Cloudmesh Shell
