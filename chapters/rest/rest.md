@@ -29,10 +29,8 @@ RESTful applications use HTTP requests to (a) post data while creating
 and/or updating it, (b) read data while making queries, and (c) delete
 data.
 
-REST was first introduced in a thesis from Fielding [:o2:]:
-
-* <https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm>
-
+REST was first introduced in a [thesis from Roy T. Fielding](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
+[@fielding2000architectural].
 
 Hence REST can use HTTP for the four CRUD operations:
 
@@ -48,7 +46,8 @@ support these operations. As REST introduces collections and items we
 need to implement the CRUD functions for them. We distinguish single
 resources and collection of resources. The semantics for accessing them
 is explained next illustrating how to implement them with HTTP methods
-(see [:o2:] <https://en.wikipedia.org/wiki/Representational_state_transfer>).
+(See [REST on Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)
+[@restwiki]).
 
 ### Collection of Resources
 
@@ -114,20 +113,20 @@ REST Specification Frameworks:
 
 : These are frameworks that help defining rest servicice through
   specifications to generate REST services in a language and framework
-  independent way. This includes for example Swagger 2.0 [:o2:], 
-  OpenAPI 3.0 [:o2:], and RAML [:o2:].
+  independent way. This includes for example Swagger 2.0 [@swagger2spec], 
+  OpenAPI 3.0 [@oai-spec], and RAML [@raml-spec].
 
 REST programming language support:
 
 : These tools and services are targeting a particular programming
-  language. Such tools include Python Restful [:o2:], Flask Rest [:o2:],
-  and Django Rest Services [:o2:], some of which we will explore in more
+  language. Such tools include Python Restful [:o2:], Flask Rest [@flaskrestful],
+  and Django Rest Services [@djangorest], some of which we will explore in more
   detail.
 
 REST documentation based tools:
 
 : These tools are primarily focusing on documenting REST specifications.
-  Such tools include Swagger [:o2], which we will explore in more 
+  Such tools include Swagger [@swagger], which we will explore in more 
   detail.
 
 REST design support tools:
@@ -136,12 +135,11 @@ REST design support tools:
   REST services while abstracting on top of the programming languages
   and define reusable specifications that can be used to create
   clients and servers for particular technology targets. Such tools
-  include also swagger [:o2:] as additional tools are available that can
-  generate code from OpenAPI specifications [:o2], which we will explore in
-  more detail.
+  include also swagger [@swagger] as additional tools are available that can
+  generate code from OpenAPI specifications [@swagger-codegen], which we will 
+  explore in more detail.
 
-A list of such efforts is available at 
-
-[:o2:] <https://openapi.tools/>
+A list of such efforts is available at [OpenAPI Tools](https://openapi.tools/)
+[@openapitools]
 
 

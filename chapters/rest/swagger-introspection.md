@@ -7,9 +7,9 @@ the implementation of the server.
 
 The full example for this is available in
 
-* <https://github.com/cloudmesh-community/nist/tree/master/examples/flask-connexion-swagger>
+* <https://github.com/cloudmesh-community/book/tree/master/examples/rest/cpu>
 
-An extensive documentation is avalable at
+An extensive documentation is available at
 
 * <https://media.readthedocs.org/pdf/connexion/latest/connexion.pdf>
 
@@ -52,7 +52,7 @@ from `cpu.py`
 
 The yaml file looks as follows
 
-```
+```yaml
 openapi: 3.0.2
 info:
   title: cpuinfo
