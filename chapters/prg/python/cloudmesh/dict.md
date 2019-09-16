@@ -64,7 +64,7 @@ data = {
     }
 }
 
-flat = FlatDict(data)
+flat = FlatDict(data, sep=".")
 
 ```
 
@@ -79,7 +79,9 @@ flat = {
 }
 ```
 
-For more features, see API: [dotdict](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=flatdict#module-cloudmesh.common.FlatDict)
+With `sep` you can change the sepaerator between the nested dict
+attributes. For more features, see API:
+[dotdict](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=flatdict#module-cloudmesh.common.FlatDict)
 
 
 ## Printing Dicts
