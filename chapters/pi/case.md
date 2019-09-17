@@ -66,7 +66,7 @@ Additional information can be found at:
 
 * <https://www.raspberrypi.org/magpi/clusterhat-review-cluster-hat-kit/>
 
-## Cluster Case With Cooling (5 Pi) {#temp-cluster}
+## Cluster Case With Cooling (5 Pi's) {#temp-cluster}
 
 Many instructions on the Web exist describing how to build clusters with
 3 or more Pi's. One of the considerations that we have to think about is
@@ -107,7 +107,7 @@ screws to affix the walls to each other. The case layout can be found at:
 
 * <http://climbers.net/sbc/diy-raspberry-pi-3-cluster-2017/>
 
-## Octapi (8 Pi) {#s-octapi}
+## Octapi (8 Pi's) {#s-octapi}
 
 A set of instructions on building an is available at
 
@@ -116,7 +116,7 @@ A set of instructions on building an is available at
 ![Octapi](images/octapi-system.png)
 
 
-## Bitscope Case (40 Pi)
+## Bitscope Case (40 Pi's)
 
 
 A company from Australia called BitScope Designs offers a number of
@@ -135,7 +135,7 @@ however as we can store 40 Pis in them and they can share the
 power-supply and reduce cabling we think this case is quite interesting
 overall due to its price-point of $20 per Pi.
 
-## BitScope Cluster (144 Pi)
+## BitScope Cluster (144 Pi's)
 
 * <https://www.youtube.com/watch?v=78H-4KqVvrg>
 
@@ -164,6 +164,20 @@ following links:
 * <http://my.bitscope.com/store/?p=view\&i=item+7>
 * <http://www.newark.com/bitscope/bb04b/quattro-pi-board-raspberry-pi/dp/95Y0643>
 * <http://linuxgizmos.com/rpi-expansion-boards-support-up-to-40-pi-clusters/>
+
+## Oracle Cluster (1060 Pi's)
+
+Oracle has displayed at Oracle World 2019 a 1060 node Raspberry Pi Cluster.
+
+
+![Oracle 1060 Pi Cluster [source](https://imgur.com/gallery/wx1hZ5D)](images/oracle-pi-1060.jpg)
+
+More images are available at this
+(link)[https://imgur.com/gallery/wx1hZ5D]. the supercomputer features
+scores of racks with 21 Raspberry Pi 3 B+ boards each. The system is
+used to demonstrate Oracle Autonomous Linux
+[source](https://www.tomshardware.com/news/oracle-raspberry-pi-supercomputer,40412.html).
+
 
 ## Build Your Own 5 Node Pi Cluster
 
