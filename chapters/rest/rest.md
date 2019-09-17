@@ -1,6 +1,5 @@
 # REST {#sec:rest}
 
-
 ---
 
 ![](images/learning.png) **Learning Objectives**
@@ -113,7 +112,7 @@ REST Specification Frameworks:
 
 : These are frameworks that help defining rest servicice through
   specifications to generate REST services in a language and framework
-  independent way. This includes for example Swagger 2.0 [@swagger2spec], 
+  independent way. This includes for example Swagger 2.0 [@swagger2spec],
   OpenAPI 3.0 [@oai-spec], and RAML [@raml-spec].
 
 REST programming language support:
