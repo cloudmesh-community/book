@@ -28,14 +28,14 @@ called horizon so you can. verify your activities easily in case you
 have issues with the command line tools. However, our main goal will be
 that you use command line tools to interact with Chameleon cloud.
 
-Whatever you do after you are dine with the VMs you need to terminate
-them so you do not unnecessarily wast compute time.
+Whatever you do after you are done with the VMs you need to terminate
+them so you do not unnecessarily waste compute time.
 
 ## Naming of vms
 
 Your HID is of the form fa16-516-NNN or similar for other classes.
 Please note that the number is unique across classes. This identifies
-you and if you start a vm in a shred space such as chameleon we can use
+you and if you start a vm in a shared space such as chameleon we can use
 it to identify people and notify them easily.
 
 Thus pleas use the following naming scheme
@@ -58,7 +58,7 @@ released.
 
 :warning: Information in how to use it will be added here. This
 information does not yet exist. as we usually use cloudmesh anyways as
-it is more convenient. We just want mention it exists and point to the
+it is more convenient. We just want to mention it exists and point to the
 manual page.
 
 ## OpenStack Python API
