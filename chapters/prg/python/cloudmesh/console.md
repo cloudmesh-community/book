@@ -1,7 +1,7 @@
 # Output
 
 Cloudmesh provides a number of convenient API's to make output easier
-or mor fancyful. 
+or more fancyful. 
 
 These API's include
 
@@ -12,11 +12,11 @@ These API's include
 
 ## Console {#sec:cloudmesh-console}
 
-Print is the usual function to output to the terminal. However often we
+Print is the usual function to output to the terminal. However, often we
 like to have colored output that helps us in the notification to the
 user. For this reason we have a simple `Console` class that has several
-build in features. you can even switch and devine your own color
-schemas.
+built-in features. You can even switch and define your own color
+schemes.
 
 ```python
 from cloudmesh.common.console import Console
@@ -76,33 +76,35 @@ A particular useful function is `HEADING()` which prints the method name.
 
 from cloudmesh.common.util import HEADING
 
-class example(object):
+class Example(object):
 
     def doit(self):
         HEADING()
-        print ("Hallo")
+        print ("Hello")
 ```
 
 The invocation of the `HEADING()` function doit prints a banner with the name
 information. The reason we did not do it as a decorator is that you can
-place the HEADIn in an arbitrary location of the method body.
+place the `HEADING()` function in an arbitrary location of the method body.
 
 For more features, see API: [Heading](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=heading#cloudmesh.common.util.HEADING)
 
 ## VERBOSE
 
 VERBOSE is a very useful method allowing you to print a
-dictionary. NOt only will it print the dict, but it will also provide
+dictionary. Not only will it print the dict, but it will also provide
 you with the information in which file it is used and which line
-number. It even will print the name of the dict that you use in your
+number. It will even print the name of the `dict` that you use in your
 code.
 
 To use this you will have to enable the debugging methods for
 cloudmesh as discused in @sec:cloudmesh-console
 
 ```python
-d = {"sample": "value"}
-VERBOSE(d)
+from cloudmesh.common.debug import VERBOSE
+
+m = {"key": "value"}
+VERBOSE(m)
 ```
 
 For more features, please see [VERBOSE](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=verbose#cloudmesh.common.debug.VERBOSE)
@@ -111,11 +113,11 @@ For more features, please see [VERBOSE](https://cloudmesh.github.io/cloudmesh-ma
 
 ## Using print and pprint
 
-In many cases it may just be sufficient to use `print` and `pprint` for
-debugging. But as the code is big and you may forgot where you placed
-print statements ore the print statements are added by others, we
-recommend that you use the VERBOSE function instead. However if you
-use `print` or `pprint` we recommend to put a unique prefix in it such as
+In many cases it may be sufficient to use `print` and `pprint` for
+debugging. However, as the code is big and you may forget where you placed
+print statements or the print statements may have been added by others, we
+recommend that you use the VERBOSE function. If you use `print` or `pprint`
+we recommend using a unique prefix, such as:
 
 ```python
 from pprint import pprint
