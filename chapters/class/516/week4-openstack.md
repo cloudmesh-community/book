@@ -1,26 +1,21 @@
-# Week 4: Openstack :warning:
+# Week 4: Openstack
 
----
+## Video
 
-:warning::warning::warning::warning::warning::warning::warning::warning::warning::warning::warning::warning::warning::warning::warning:
+:warning: A Video that showcases hwo to start VMs in Chameleon CLoud via Horizon
+and Cloudmesh will be added.
 
-This section is not yet complete and is
-being updated. We included it so you can see what we will be doing next
-so you can work ahead. However, be advised that the content still can
-change.
+## Lecture Material
 
----
+* A Book for [Chameleon Cloud](https://laszewski.github.io/book/chameleon/) is available
 
+A new version of the following books have been released:
 
-# Lecture Material
+* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/e516/) [@las19e516]
+* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
+* [Introduction to Python for Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/python/) [@las19python]
 
-* A Book for OpenStack will be added
-* Material about OpenStack will be made available here
-
-* :warning: The Python book will be updated
-* :warning: The cloud book will be updated. 
-
-# Lab: OpenStack
+## Lab: OpenStack
 
 This week we will be learning how to manage virtual machines on
 OpenStack. You are requested to explore the GUI interface which is
@@ -50,29 +45,23 @@ we will run out of node hours for the class if we do so.
 
 ## Horizon
 
-:warning: Information in how to use it will be added here. This
-information is already in our git book repo but has not yet been
-released.
+The information on ho to use it is available in the Chameleon book.
 
-## OpenStack Command line Client
+A video of the meeting on Tuesday 17 Sep will be made available
 
-:warning: Information in how to use it will be added here. This
-information does not yet exist. as we usually use cloudmesh anyways as
-it is more convenient. We just want to mention it exists and point to the
-manual page.
-
-## OpenStack Python API
-
-:warning: Information in how to use it will be added here. This
-information does not yet exists, but is used in the OpenStack provider
-for cloudmesh.
 
 ## Cloudmesh OpenStack interface
 
-In this section (which will be moved) and made an exercise we will be
-discussing how to set up cloudmesh to interface with chameleon cloud.
+The information on ho to use it is available in the Chameleon book.
 
-### Installation
+A video of the meeting on Tuesday 17 Sep will be made available
+
+## OpenStack Command line Client
+
+The information on ho to use it is available in the Chameleon book.
+
+
+### Installation of Cloudmesh Cloud Bundle
 
 :warning: Do these only after you have completed the cloudmesh shell
 related assignment from last week.
@@ -103,7 +92,7 @@ $ cms help
 
 ### SSH
 
-:warning: If not done yet set up ssh with 
+Make sure you have a password protected ssh key
 
 ```
 $ ssh-keygen
@@ -111,30 +100,24 @@ $ ssh-keygen
 
 ### Configuration
 
-:warning: Here we will explain how to configure Chameleon cloud access
-with `~/.cloudmesh/cloudmesh.yaml`
+1. Change the username and password for the chameleon cloud in  `~/.cloudmesh/cloudmesh.yaml`
 
-:warning: we need to explain how to set up the VM naming schema with 
-`~/.cloudmesh/names.yaml`:
-
-```
-path: /Users/grey/.cloudmesh/name.yaml
-schema: NNN-gregor-{counter}
-counter: 1
-```
-
-:warning: We need an easy command line program to change the schema. This
-could be developed by a student.
-
-:warning: Explain how to configure images and flavor in the
-`cloudmesh.yaml` file
-
+2. Change the password in the mongodb section
+3. Change the information in the profile section
 
 ### Cloudmesh Mongo 
 
-Explain how to set up Mongo
+Setting up cloudmesh Mongo is discussed in the cloudmesh manual. W
+esuggest you do the one discussed in the distribution section for your
+system. It is actually build into cloudmesh, but before you do it, we
+suggest you backup yor machine.
 
-Explain `cms init` and that it wipes the db and should only be used once
+```bash
+$ cms admin mongo install
+```
+
+Once you set it up use  `cms init` which wipes the db and should only be
+used once
 
 ```bash
 $ cms init
@@ -150,11 +133,9 @@ $ cms start
 $ cms stop
 ```
 
-:warning: show how to use status
-
 ### Start a VM
 
-:warning: Explain that OpenStack could be over-utilized and that a VM may
+OpenStack could be over-utilized and that a VM may
 not start before a timeout. Gregor observed 70% success rate.
 
 Task: whenever you start a vm, please keep a record if it started or not
@@ -176,14 +157,14 @@ Use the commands
 ```bash
 cms set cloud=chameleon
 cms image list --refresh
-cms flavor list --refresh
+cms flavor list --refresh 
 cms vm boot
 cms image list --refresh
 ```
 
 :warning: Explain the difference between `--refresh` and not using it.
 
-### Working with the VM
+## Working with the VM
 
 Log into the vm with 
 
@@ -191,9 +172,9 @@ Log into the vm with
 cms ssh
 ```
 
-:exercise: lets assume you start 3 vms how do you log in in each one of
-them. Explain. Explore the manual pages. Use the list command.
+## Exercise 
 
-### Notes
+1. Start a vm with Horizon, login, and terminate it
+2. Start a vm with Cloudmesh, login, and terminate it
+3. Use robo3T or a similar program to brows in the Cloudmesh MongoDB
 
-:warning: explain `cc` user
