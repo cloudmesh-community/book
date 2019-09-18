@@ -257,6 +257,221 @@ See Figure @fig:aws-emr-6.
 ![Set up EMR 4 [@www-aws-emr]](images/EMR-Console-6.png){#fig:aws-emr-6}
 
 
+### Submit Work to a Cluster
+
+When you run a cluster on Amazon EMR, you have several options as to how
+you specify the work that needs to be done.
+
+Provide the entire definition of the work to be done in functions that
+you specify as steps when you create a cluster. This is typically done
+for clusters that process a set amount of data and then terminate when
+processing is complete.
+
+Create a long-running cluster and use the Amazon EMR console, the Amazon
+EMR API, or the AWS CLI to submit steps, which may contain one or more
+jobs.
+
+Create a cluster, connect to the master node and other nodes as required
+using SSH, and use the interfaces that the installed applications
+provide to perform tasks and submit queries, either scripted or
+interactively.
+
+### Processing Data
+
+When you launch your cluster, you choose the frameworks and applications
+to install for your data processing needs. To process data in your
+Amazon EMR cluster, you can submit jobs or queries directly to installed
+applications, or you can run steps in the cluster.
+
+- Submitting Jobs Directly to Applications:
+
+  You can submit jobs and interact directly with the software that is
+  installed in your Amazon EMR cluster. To do this, you typically
+  connect to the master node over a secure connection and access the
+  interfaces and tools that are available for the software that runs
+  directly on your cluster. For more information, see Connect to the
+  Cluster.
+
+- Running Steps to Process Data
+
+  You can submit one or more ordered steps to an Amazon EMR cluster.
+  Each step is a unit of work that contains instructions to manipulate
+  data for processing by software installed on the cluster.
+
+The following is an example process using four steps:
+
+1. Submit an input dataset for processing.
+2. Process the output of the first step by using a Pig program.
+3. Process a second input dataset by using a Hive program.
+4. Write an output dataset.
+
+Generally, when you process data in Amazon EMR, the input is data stored as files in your chosen underlying file system, 
+such as Amazon S3 or HDFS. This data passes from one step to the next in the processing sequence. The final step writes 
+the output data to a specified location, such as an Amazon S3 bucket.
+
+Steps are run in the following sequence:
+
+1. A request is submitted to begin processing steps.
+2. The state of all steps is set to PENDING.
+3. When the first step in the sequence starts, its state changes to
+   RUNNING. The other steps remain in the PENDING state.
+4. After the first step completes, its state changes to COMPLETED.
+5. The next step in the sequence starts, and its state changes to
+   RUNNING. When it completes, its state changes to COMPLETED.
+6. This pattern repeats for each step until they all complete and
+   processing ends.
+
+The following diagram represents the step sequence and change of state
+for the steps as they are processed.
+
+![Cluser and Nodes](images/step-sequence.png)
+
+If a step fails during processing, its state changes to
+TERMINATED_WITH_ERRORS. You can determine what happens next for each
+step. By default, any remaining steps in the sequence are set to
+CANCELLED and do not run. You can also choose to ignore the failure and
+allow remaining steps to proceed, or to terminate the cluster
+immediately.
+
+The following diagram represents the step sequence and default change of
+state when a step fails during processing.
+
+![Cluser and Nodes](images/step-sequence-failed.png)
+
+## AWS Storage
+
+S3
+- Cloud based storage
+- Using EMRFS can directly connects s3 storage
+- Accessible from any where
+
+Instance Store
+- Local storage
+- Data will be lost on start and stop EC2 instances
+
+EBS
+- Network attached storage
+- Data preserved on start and stop
+- Accessible only through EC2 instances
+
+## Create EMR in AWS
+
+### Create the buckets
+
+- Login to AWS console and create the buckets at
+  https://aws.amazon.com/console/. To create the buckets, go to
+  services (see @fig:aws-console-page, @fig:aws-login-page), click on S3 under
+  Storage, @fig:aws-s3-page, @fig:aws-s3-bucket-page, @fig:aws-s3-create-bucket. Click
+  on Create bucket button and then provide all the details to complete
+  bucket creation.
+- AWS Console
+
+![AWS Console](images/aws_console.JPG){#fig:aws-console-page}
+
+
+- AWS Login
+
+![AWS Login](images/aws_login.JPG){#fig:aws-login-page}
+
+- S3 – Amazon Storage
+
+![Amazon Storage](images/storage_s3.JPG){#fig:aws-s3-page}
+
+- S3 – Create buckets
+
+![S3 buckets](images/create_bucket.JPG){#fig:aws-s3-bucket-page}
+
+![S3 buckets1](images/create_bucket_1.JPG){#fig:aws-s3-create-bucket}
+
+### Create Key Pairs
+
+- Login to AWS console, go to services, click on EC2 under compute.
+  Select the Key pairs resoure, click on Create Key Pair and provide Key
+  Pair name to complete the Key pairs creation. See @fig:aws-keypair-page
+
+- Download the. pem file once Key value pair is created. This is needed
+  to access AWS Hadoop environment from client machine. This need to be
+  imported in Putty to access your AWS environemnt. See @fig:aws-create-keypair
+
+#### Create Key Value Pair Screen shots
+
+![AMS Key Value Pair](images/key-value-pair.JPG){#fig:aws-keypair-page}
+
+![AMS Key Value Pair1](images/key-value-pair-1.JPG){#fig:aws-create-keypair}
+
+
+## Create Step Execution – Hadoop Job
+
+Login to AWS console, go to services and then select EMR. Click on
+Create Cluster. The cluster configuration provides details to complete
+to complete step execution creation. See: @fig:aws-emr-page,
+@fig:aws-create-emr-page, @fig:emr-step-exe-page, @fig:step-cluster-page,
+@fig:step-cluster1-page.
+
+- Cluster name (Example: HadoopJobStepExecutionCluster)
+- Select Logging check box and provide S3 folder location
+  (Example: s3://bigdata-raviAndOrlyiuproject/logs/)
+- Select launch mode as Step execution
+- Select the step type and complete the step configuration
+- Complete Software Configuration
+- Complete Hardware Configuration
+- Complete Security and access
+- And then click on create cluster button
+- Once job started, if there are no errors output file will be created
+  in the output directory.
+
+#### Screen shots
+
+![AWS EMR](images/aws_emr.JPG){#fig:aws-emr-page}
+
+![AWS Create EMR](images/create_emr.JPG){#fig:aws-create-emr-page}
+
+![AWS Config EMR](images/emr-step-execution.JPG){#fig:emr-step-exe-page}
+
+![AWS Create Cluster](images/step_cluster.JPG){#fig:step-cluster-page}
+
+![AWS Create Cluster1](images/step_cluster_1.JPG){#fig:step-cluster1-page}
+
+## Create a Hive Cluster
+
+Login to AWS console, go to services and then select EMR. Click on
+Create Cluster. The cluster configuration provides details to complete.
+See, @fig:hive-cluster1-page, @fig:hive-cluster2-page, @fig:hive-cluster3-page.
+
+- Cluster name (Example: MyFirstCluster-Hive)
+- Select Logging check box selected and provide S3 folder location
+- Select launch mode as Cluster
+- Complete software configuration (select hive application)  and click
+  on create cluster
+
+### Create a Hive Cluster - Screen shots
+
+![Hive Cluser](images/hive_cluster1.JPG){#fig:hive-cluster1-page}
+
+![Hive Cluser1](images/hive_cluster2.JPG){#fig:hive-cluster2-page}
+
+![Hive Cluser2](images/hive_cluster_2.JPG){#fig:hive-cluster3-page}
+
+## Create a Spark Cluster
+
+Login to AWS console, go to services and then select EMR. Click on
+Create Cluster. The cluster configuration provides details to complete.
+See, @fig:spark-cluster1-page, @fig:spark-cluster2-page, @fig:spark-cluster3-page.
+
+- Cluster name (Example: My Cluster - Spark)
+- Select Logging check box selected and provide S3 folder location
+- Select launch mode as Cluster
+- Complete software configuration and click on create cluster
+- Select application as Spark
+
+### Create a Spark Cluster - Screenshots
+
+![Spark Cluser](images/spark_cluster1.JPG){#fig:spark-cluster1-page}
+
+![Spark Cluser](images/spark_cluster2.JPG){#fig:spark-cluster2-page}
+
+![Spark Cluser](images/spark_cluster3.JPG){#fig:spark-cluster3-page}
+
 ## Run an example Spark job on an EMR cluster
 
 ### Spark Job Description
