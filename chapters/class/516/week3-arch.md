@@ -40,7 +40,7 @@ For the ungraded activities, no submission is needed.
 
 #### Review: venv in python 3
 
-This Lab is inly to be chose by those using python 3 from python.org
+This lab is only to be chose by those using python 3 from python.org
 which is our preferred environment.
 
 ```
@@ -55,7 +55,7 @@ Please understand the following concepts (no submission needed):
 
 #### Review: Conda
 
-This Lab has only to be done by those using anaconda/conda.
+This lab only has to be done by those using anaconda/conda.
 
 * What problems may you encounter when using anaconda as python developer?
 
@@ -77,7 +77,7 @@ This Lab has only to be done by those using anaconda/conda.
 
 We like to remind you about dicts in python.
 
-Read up upon dicts and experiment with them.
+Read up on dicts and experiment with them.
 
 * How do you merge the content of two dicts?
 
@@ -154,20 +154,20 @@ In the book [Introduction to Python for Cloud Computing](https://laszewski.githu
 ## Project selection
 
 You will be selecting a cloud related project over the next 2 weeks that
-you will be conducting till the end of the semester. The project must
+you will be developing until the end of the semester. The project must
 have the following requirements:
 
-* Programming is conducted in python if another programming language is
-  used, please contact us and motivate the use. You will aslo have to do
-  part of your programming to for example coordinated the deployment or
+* Programming should be done using python, if another programming language
+  is used, please contact us and justify the use. You will also have to do
+  part of your programming to, for example, coordinated the deployment or
   the benchmark likely in python.
 
 * The project must use OpenAPI 3.0 to define a REST service. We will
   teach you how to do that in a future activity.
 
 * The project must use conexion to automatically generate the rest
-  service (please do not use swagger codegen). We will
-  teach you how to do that in a future activity.
+  service (please do not use swagger codegen). We will teach you how to 
+  do that in a future activity.
 
 * The project must use at least 1 + n clouds for each team member. Where
   n is the number of team members with maximum 3 team members. We will

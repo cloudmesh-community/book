@@ -42,11 +42,11 @@ BOOK:
     - "{file.chapter}/cloud/arch-scheduling.md"
   - REST:
     - "{file.chapter}/rest/rest.md"
-    - AI:
-      - "{file.chapter}/rest/rest-ai.md"
     - OPENAPI_3.0:
       - "{file.chapter}/rest/rest-spec.md"
       - "{file.chapter}/rest/swagger-introspection.md"
+    - AI:
+        - "{file.chapter}/rest/rest-ai.md"
     - OPENAPI_2.0:
       - "{file.chapter}/rest/swagger.md"
       - "{file.chapter}/rest/swagger-spec.md"
