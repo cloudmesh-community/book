@@ -1,5 +1,8 @@
 # OpenStack Horizon Graphical User Interface {#sec:chameleon-horizon}
 
+* [![Video](images/video.png) Horizon, Starting a VM](https://www.youtube.com/watch?v=ofAVUX1gvUg)
+
+
 ## Configure resources
 
 Once your lease is started, you are almost ready to start an instance.
