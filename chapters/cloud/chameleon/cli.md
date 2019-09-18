@@ -20,6 +20,10 @@ One important factor for using cloudmesh shell is that it not only works
 for chameleon cloud but also for AWS and Azure. We are hoping to add
 Google also which is already in our preliminary code.
 
+
+* [![Video](images/video.png) Cloudmesh Commandline Interface Demonstration](https://www.youtube.com/watch?v=GgNUXYaB7kQ)
+
+
 ## Instalation of Cloudmesh Client
 
 We discuss how to install cloudmesh in the [Cloudmesh manual][https://cloudmesh.github.io/cloudmesh-manual/installation/install.html]
