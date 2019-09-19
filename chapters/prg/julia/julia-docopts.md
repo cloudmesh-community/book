@@ -1,6 +1,6 @@
 # Docopts
 
-Docopts in Julia are similar to Python, Ruby, and other languages.
+Docopts in Julia are similar to Python, Ruby, and other languages.  
 
 ## Installation
 
@@ -11,11 +11,11 @@ Again, most of Julia's packages that are not in the base code are contained with
 Pkg.add("DocOpt")
 ```
 
-Usage example is given from the following website:
+Usage example is given from the following website: <https://github.com/docopt/DocOpt.jl>
+[@docopt-jl].  Create a file called ```naval-fate.jl```:
 
-<https://github.com/docopt/DocOpt.jl>
-
-```Julia
+```julia
+#dir/naval-fate.jl
 doc = """Naval Fate.
 https://github.com/JuliaLang/METADATA.jl
 
@@ -33,10 +33,12 @@ Options:
   --speed=<kn>  Speed in knots [default: 10].
   --moored      Moored (anchored) mine.
   --drifting    Drifting mine.
+```
 
-"""
 
-using DocOpt  # import docopt function
+In the same directory as ```naval-fate.jl```, run the following in the Julia REPL: 
 
-args = docopt(doc, version=v"2.0.0")
+```julia
+julia> using DocOpt  # import docopt function
+julia> args = docopt(doc, version=v"2.0.0")
 ```

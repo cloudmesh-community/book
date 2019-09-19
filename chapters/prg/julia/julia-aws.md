@@ -3,7 +3,7 @@
 There are two Julia libraries that provide programmatic interface with AWS: AWS.jl and AWSCore.jl. We will focus on
 AWSCore.jl, as it is under active development and provides more infrastructure types and high-level packages. We include
 a note about AWS.jl for completeness. The following information can be found at
-<https://juliacloud.github.io/AWSCore.jl/build/index.html>
+<https://juliacloud.github.io/AWSCore.jl/build/index.html> [@awscore-julia]
 
 ## AWSCore.jl
 
@@ -18,7 +18,7 @@ region variables.  Credentials can be gathered either from the default ```/.aws/
 as environment variables as discussed elsewhere in this chapter.
 
 AWSCore will attempt to read in credentials from (in order) Environment Variables, an ```~/.aws/credentials``` file, or
-EC2 Instance Credentials which can be set via the AWS CLI. Note that the third method is not recommended!*
+EC2 Instance Credentials which can be set via the AWS CLI. *Note that the third method is not recommended!*
  
 Here, we use an AWS Credentials file located ```~/.aws/credentials``` (Ubuntu).  Ensure that the user has appropriate
 permissions to create, delete, and modify AWS objects and services. We begin with a simple script that will allow
@@ -35,36 +35,38 @@ Assuming Julia is properly installed, simply type the command for the executable
 ```julia0.6```. This will start a Julia REPL inside the JuliaApp directory just created. Open a text/file editor to edit
 the julia-app.jl file:
 
-```emacs julia-app.jl```
+```bash
+$ emacs julia-app.jl
+```
 
 Julia is comparable to Python in its import statements in that to use a particular package or library, the user must
 specify that package prior to its use.  With the blank ```.jl``` open, import and initialize the following packages:
 
 ```julia
-> Pkg.add("AWSCore")
-> Pkg.add("AWSS3")
-> using AWSS3
-> using AWSCore.Services
+julia> Pkg.add("AWSCore")
+julia> Pkg.add("AWSS3")
+julia> using AWSS3
+julia> using AWSCore.Services
 ```
 
 Now include in the script the AWS_Config() argument, which typically contains AWS Credentials and a Region parameter:
 
 ```julia
-> aws = AWSCore.aws_config()
+julia> aws = AWSCore.aws_config()
 ```
 
 Before proceeding, save the file and run the script in the opened Julia REPL.  Make sure that the working directory is
 the same as where your script is located by issuing in Julia ```pwd()```.  To run the script, type in the Julia REPL:
 
 ```julia
-> import Pkg
-> include("julia-app.jl")
+julia> import Pkg
+julia> include("julia-app.jl")
 ```
 
 Read AWS credentials into your environment session by adding the following command to your script: 
 
 ```julia
-> aws = aws_config()
+julia> aws = aws_config()
 ```
 
 ### S3 Containers
@@ -75,8 +77,8 @@ services is: ```s3_create_bucket(credentials, bucketname```).  Add the following
 complies with AWS bucket naming conventions:
 
 ```julia
-s3_create_bucket(aws, "<bucket.name>")
-s3_enable_versioning(aws, "<bucket.name>")
+julia> s3_create_bucket(aws, "<bucket.name>")
+julia> s3_enable_versioning(aws, "<bucket.name>")
 ```
 
 #### Listing buckets and Objects
@@ -88,7 +90,7 @@ example, add in the ```s3_list_buckets(credentials)``` or ```list_objects(creden
 #### Adding objects to existing bucket
 
 ```julia
-> s3_put(aws, "<bucket.name>", "key", "Hello!")
+julia> s3_put(aws, "<bucket.name>", "key", "Hello!")
 ```
 
 ## AWS.jl
