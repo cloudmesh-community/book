@@ -46,7 +46,7 @@ jobs:
           command: pwd
       - run:
           name: ls
-          command: ls dest
+          command: ls /root/project/books/cloud/dest
       #- run:
       #    name: check bigdata epub
       #    command: cd books/big-data-applications && make epub && cd ../..
