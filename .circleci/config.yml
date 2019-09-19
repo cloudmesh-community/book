@@ -52,7 +52,7 @@ jobs:
       #    command: cd books/big-data-applications && make epub && cd ../..
       - run:
           name: add line numbers to references.bib
-          command: cat -n /root/project/books/cloud/dest/all.bib > references.bib
+          command: cat -n /root/project/books/cloud/dest/all.bib > /root/project/books/cloud/dest/references.bib
       - store_artifacts:
-          path: references.bib
+          path: /root/project/books/cloud/dest/references.bib
           destination: references.bib
