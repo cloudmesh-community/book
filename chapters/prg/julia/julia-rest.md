@@ -21,7 +21,7 @@ This example can be extended to include POST, PUT, and DELETE functions quickly.
 turn to Genie.  <https://github.com/GenieFramework/Genie.jl>.  There are several other web frameworks for Julia,
 including Mux.jl (<https://github.com/JuliaWeb/Mux.jl>), and HTTP.jl (<https://github.com/JuliaWeb/HTTP.jl>).
 
-### Genie
+### Genie.jl
 
 "Genie is a full-stack MVC web framework that provides a streamlined and efficient workflow for developing modern web
 applications. It builds on Julia's strengths (high-level, high-performance, dynamic, JIT compiled), exposing a rich API
@@ -36,32 +36,31 @@ To install Genie, in the Julia REPL in Atom IDE, issue the following command:
 julia> import Pkg; Pkg.add("Genie")
 ```
 
-This step only needs to be completed once. 
+This step only needs to be completed once per environment. 
 
 #### API Backend
 
 Extending functionality for the app is similar to development in Django and Rails.  See
 <https://genieframework.github.io/Genie.jl/guides/Simple_API_backend.html> for more detailed information.
 
-In the example below, we create the API backend to retrieve data through REPL interaction with Genie.
-
-In the REPL, we create and edit a new file called for this example ```rest.jl```.  *Note*: The current working directory
-can be checked with ```pwd()``` and changed with ```cd("path\\to\\files")```.  In the Atom editor, add the following to
-a new file named ```rest.jl```:
+In the example below, we create the API backend to retrieve data through REPL interaction with Genie.  In the REPL, we
+create and edit a new file called for this example ```rest.jl```.  *Note*: The current working directory can be checked
+with ```pwd()``` and changed with ```cd("path\\to\\files")```.  In the Atom editor, add the following to a new file
+named ```rest.jl```:
 
 ```julia
 #rest.jl
-using Genie
-import Genie.Router: route
-import Genie.Renderer: json
+julia> using Genie
+julia> import Genie.Router: route
+julia> import Genie.Renderer: json
 
-Genie.config.run_as_server = true
+julia> Genie.config.run_as_server = true
 
-route("/") do
+julia> route("/") do
   (:message => "Hi there!") |> json
 end
 
-Genie.startup()
+julia> Genie.startup()
 ```
 Now the server can be started and accessed at <https://127.0.0.1:8000> via the REPL:
 
@@ -81,7 +80,9 @@ route("/echo", method = POST) do
 end
 
 route("/send") do
-  response = HTTP.request("POST", "http://localhost:8000/echo", [("Content-Type", "application/json")], """{"message":"hello", "repeat":3}""")
+  response = HTTP.request("POST", "http://localhost:8000/echo", [("Content-Type", "application/json")],
+  """{"message":"hello", "repeat":3}""")
+
 
   response.body |> String |> json
 end
@@ -92,7 +93,7 @@ Genie.AppServer.startup(async = false)
 Save the above code above in the current project directory. Then from the REPL or IDE REPL, run the script again: 
 
 ```julia    
-include("rest.jl")
+julia> include("rest.jl")
 ```
 
 #### Adding Parameters to the URL
@@ -150,7 +151,7 @@ code to your ```routes.jl``` file.
 
 ```julia
 #routes.jl
-using RDatasets
+julia> using RDatasets
 ```
 
 Next, define the frame of a simple function as follows: *Note* there is no colon after the parameter parenthesis as in

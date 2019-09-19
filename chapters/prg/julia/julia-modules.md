@@ -2,14 +2,19 @@
 
 Julia utilizes packages, modules, and functions.  Packages are comprised of Modules, Modules are comprised of functions,
 and the concept of functions is similar to that in many other programming languages and will not be covered in depth in
-this section.  <https://docs.julialang.org/en/v1/manual/modules/index.html>
+this section.  See  <https://docs.julialang.org/en/v1/manual/modules/index.html> for more information. 
 
 ### Installing Registered Modules
 
 To install modules via the REPL, it is easiest to enter the ```Pkg``` mode by typing the right bracket ```]```.  Then,
 using the ```add``` command, bring packages and modules into scope. This avoids using dot notation and extra typing.
 
-```julia julia>] pkg> add MLDataUtils backspace to exit Pkg mode julia> using MLDataUtils ```
+```julia 
+julia> ] 
+pkg> add MLDataUtils 
+# backspace to exit Pkg mode 
+julia> using MLDataUtils 
+```
 
 Now the MLDataUtils module is available in the project environment. Check the status of all packages installed in the
 current environment by entering ```Pkg``` mode, then typing ```status```.  This should list all available packages.
@@ -24,6 +29,8 @@ accessed and used via the REPL.  A complete list of official packages is availab
 The syntax of a module is typically as follows: 
 
 ```julia
+#dir/julia-lib.jl
+
 module myJuliaLib
 function some_func()
     do_something
@@ -35,12 +42,10 @@ end
 ### Custom Modules
 
 Julia makes using not only official registered packages simple, but affords users the opportunity to create and utilize
-their own packages and modules using both ```git``` and local file structures.
-
-To develop custom modules and bring them into a project, create the module to be "exported" and modify the
-```LOAD_PATH``` variable to include the filepath (or URL if hosted on git)where the module file is.  In the example
-below, if the ```myJuliaLib``` module is in the ```\path\to\app``` directory, add the path into the environment variable
-as follows:
+their own packages and modules using both ```git``` and local file structures. To develop custom modules and bring them
+into a project scope, create the module to be "exported" and modify the ```LOAD_PATH``` variable to include the filepath
+(or URL if hosted on git) where the module file is.  In the example below, if the ```myJuliaLib``` module is in the
+```\path\to\app``` directory, add the path into the environment variable as follows:
 
 ```julia
 #first check the LOAD_PATH var: 
@@ -67,5 +72,3 @@ julia> push!(LOAD_PATH, https://github.com/mygitrepo.git)4-element Array{String,
  "@stdlib"                                                     
  "mygitrepo.git"
 ```
-
- 
