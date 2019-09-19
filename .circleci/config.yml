@@ -40,13 +40,13 @@ jobs:
       #    command: cd books/python && make epub && cd ../..
       - run:
           name: check cloud epub
-          command: cd books/cloud && make epub && cd ../..
+          command: cd books/cloud && make epub
       #- run:
       #    name: check bigdata epub
       #    command: cd books/big-data-applications && make epub && cd ../..
       - run:
           name: add line numbers to references.bib
-          command: cat -n books/cloud/dest/all.bib > references.bib
+          command: cat -n dest/all.bib > references.bib
       - store_artifacts:
           path: references.bib
           destination: references.bib
