@@ -1,6 +1,5 @@
 
-## 19.3.1 External programs
-
+## External programs
 
 Several implementations provide the ability to access Julia through external programs such as Python, C, and Java, and
 vice versa.
@@ -9,11 +8,9 @@ vice versa.
 
 Pycall package by Steven G. Johnson <https://github.com/JuliaPy/PyCall.jl.>
 
-Javacall package
-
 ### Python
 
-Julia and Python express similar syntax, and both are dynamically-typed. The Pycall package  enables interoperability
+Julia and Python express similar syntax, and both are dynamically-typed. The Pycall package enables interoperability
 between the two languages, extending Julia functionality and reach while maintaining its desirable qualities. This
 package creates the ability to call Python functions and import Python modules from Julia, among other functions.
 [@www-pycall].
@@ -27,9 +24,9 @@ Start Julia, and run `Pkg.add("Pycall")`.
 To access Python with Julia, we use the Julia syntax ```using Pycall```. Here is a simple example [@www-pycall]:
 
 ```julia
-using PyCall
-math = pyimport("math")
-math.sin(math.pi / 4) 
+julia> using PyCall
+julia> math = pyimport("math")
+julia> math.sin(math.pi / 4) 
 # returns ≈ 1/√2 = 0.70710678...
 ```
 
@@ -56,9 +53,9 @@ julia>rm(Pkg.dir("PyCall","deps","PYTHON")); Pkg.build("PyCall")`
 ```
 
 ```bash
-# activate virtual environment in system shell
+# activate virtual environment in system shell and start Julia
 $ source PATH/TO/bin/activate  
-$ Julia
+$ julia
 ```
 
 ```julia
@@ -67,14 +64,14 @@ julia> ENV["PYCALL_JL_RUNTIME_PYTHON"] = Sys.which("python")
 
 julia> using PyCall
 
-pyimport("sys").executable
+julia> pyimport("sys").executable
 "PATH/TO/bin/python3"
 ```
 
 
 ### Java in Julia 
 
-Julia interacts with Java through the use of the JavaCall.jl package. [@javacall] "Static and instance method with
+Julia interacts with Java through the use of the JavaCall.jl package. [@www-javacall] "Static and instance method with
 primitve or object arguments and return values are callable." [@www-javacall].
 
 ####Installation
