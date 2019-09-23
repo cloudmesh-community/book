@@ -47,13 +47,13 @@ BOOK:
       - "{file.chapter}/rest/swagger-introspection.md"
       - "{file.chapter}/rest/rest-ai.md"
     - "{file.chapter}/rest/rest-restful.md"
+    - "{file.chapter}/rest/rest-django.md"
     - "{file.chapter}/prg/github.md"
     - "{file.chapter}/rest/swagger.md"
     - REST_WITH_EVE:
       - "{file.chapter}/rest/rest-eve.md"
       - "{file.chapter}/rest/rest-haetos.md"
       - "{file.chapter}/rest/rest-eve-extensions.md"
-      - "{file.chapter}/rest/rest-django.md"
     - OPENAPI_2.0:
       - "{file.chapter}/rest/swagger-spec.md"
       - "{file.chapter}/rest/swagger-introspection-2-0.md"

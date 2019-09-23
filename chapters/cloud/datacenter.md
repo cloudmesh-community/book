@@ -1205,7 +1205,10 @@ society:
 
 but it also includes commitments by Corporations such as
  
-* Google, AWS, IBM, ...
+* [Google](https://blog.google/outreach-initiatives/sustainability/our-biggest-renewable-energy-purchase-ever/), 
+  [AWS](https://aws.amazon.com/about-aws/sustainability/), 
+  [IBM](https://www.ibm.com/ibm/green/data_center.html), 
+  ...
 
 Also look at the US state of California and others that project
 renewable energy.
