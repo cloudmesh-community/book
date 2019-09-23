@@ -1,4 +1,4 @@
-# REST {#sec:rest}
+# Introduction to REST {#sec:rest}
 
 ---
 
@@ -12,12 +12,6 @@
 ---
 
 
-## Overview of REST
-
-This section is accompanied by a video about REST in which we present
-some additional information.
-
-[![Video](images/video.png) REST 36:02](https://youtu.be/xjFuA6q5N_U)
 
 REST stands for **RE**presentational **S**tate **T**ransfer. REST is an
 architecture style for designing networked applications. It is based on
@@ -118,9 +112,8 @@ REST Specification Frameworks:
 REST programming language support:
 
 : These tools and services are targeting a particular programming
-  language. Such tools include Python Restful [:o2:], Flask Rest [@flaskrestful],
-  and Django Rest Services [@djangorest], some of which we will explore in more
-  detail.
+  language. Such tools include Flask Rest [@flaskrestful], and Django Rest
+  Services [@djangorest], some of which we will explore in more detail.
 
 REST documentation based tools:
 

@@ -42,7 +42,7 @@ RUN cabal update
 RUN stack setup
 ENV PATH="$HOME/root/.local/bin:$HOME/.cabal/bin:${PATH}"
 
-ENV SOFTWARE=pandoc-2.5
+ENV SOFTWARE=pandoc-2.7.3
 RUN cd $HOME
 RUN wget http://hackage.haskell.org/package/${SOFTWARE}/${SOFTWARE}.tar.gz
 RUN tar xvzf ${SOFTWARE}.tar.gz
@@ -50,7 +50,7 @@ RUN cd ${SOFTWARE}
 #RUN stack init
 #RUN stack install
 
-#ENV SOFTWARE=pandoc-citeproc-0.15.0.1
+#ENV SOFTWARE=pandoc-citeproc-0.16.2
 #RUN cd $HOME
 #RUN wget http://hackage.haskell.org/package/${SOFTWARE}/${SOFTWARE}.tar.gz
 #RUN tar xvzf ${SOFTWARE}.tar.gz
@@ -58,7 +58,7 @@ RUN cd ${SOFTWARE}
 #RUN stack init
 #RUN stack install
 
-#ENV SOFTWARE=pandoc-crossref-0.3.4.0
+#ENV SOFTWARE=pandoc-crossref-0.3.4.1
 #RUN cd $HOME
 #RUN wget http://hackage.haskell.org/package/${SOFTWARE}/${SOFTWARE}.tar.gz
 #RUN tar xvzf ${SOFTWARE}.tar.gz

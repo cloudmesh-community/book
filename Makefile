@@ -10,7 +10,7 @@ image:
 	docker build  -t cloudmesh/$(NAME):$(VERSION) .
 
 shell:
-	docker run --rm -it cloudmesh/$(NAME):$(VERSION)  /bin/bash
+	docker run -v `pwd`:/book -w /book --rm -it cloudmesh/book:${VERSION}  /bin/bash
 
 cms:
 	docker run --rm -it cloudmesh/$(NAME):$(VERSION)
@@ -25,3 +25,4 @@ push:
 
 run:
 	docker run cloudmesh/$(NAME):$(VERSION) /bin/sh -c "cd technologies; git pull; make"
+

@@ -45,19 +45,20 @@ BOOK:
     - OPENAPI_3.0:
       - "{file.chapter}/rest/rest-spec.md"
       - "{file.chapter}/rest/swagger-introspection.md"
-    - AI:
-        - "{file.chapter}/rest/rest-ai.md"
-    - OPENAPI_2.0:
-      - "{file.chapter}/rest/swagger.md"
-      - "{file.chapter}/rest/swagger-spec.md"
-      - "{file.chapter}/rest/swagger-introspection-2-0.md"
-      - "{file.chapter}/rest/swagger-codegen.md"
-      - "{file.chapter}/rest/rest-restful.md"
+      - "{file.chapter}/rest/rest-ai.md"
+    - "{file.chapter}/rest/rest-restful.md"
+    - "{file.chapter}/prg/github.md"
+    - "{file.chapter}/rest/swagger.md"
+    - REST_WITH_EVE:
       - "{file.chapter}/rest/rest-eve.md"
       - "{file.chapter}/rest/rest-haetos.md"
       - "{file.chapter}/rest/rest-eve-extensions.md"
       - "{file.chapter}/rest/rest-django.md"
-    - "{file.chapter}/prg/github.md"
+    - OPENAPI_2.0:
+      - "{file.chapter}/rest/swagger-spec.md"
+      - "{file.chapter}/rest/swagger-introspection-2-0.md"
+      - "{file.chapter}/rest/swagger-codegen.md"
+    - "{file.chapter}/rest/rest-excersises.md"
   - "{file.chapter}/graphql/graphql.md"
   - HYPERVISOR:
     - "{file.chapter}/cloud/virtualization.md"
