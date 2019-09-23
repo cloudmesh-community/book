@@ -77,10 +77,6 @@ The book is organized as follows:
 : We will showcase you on a very popular service such as GitHub how to
   easily interface with REST services in Python.
 
-: :o2: This chapter also includes information on how to achieve this with
-  `eve`, but this framework is no longer supported. In a future
-  version of the document we will remove this eve section.
-
 **GraphQL**
 
 : In this chapter we will introduce you to GraphQL which allows you to
@@ -116,9 +112,9 @@ The book is organized as follows:
 : In addition we will introduce you to elementary command line tools and
   programs to access this infrastructure.
 
-: :o2: A new section will be added pointing you to the cloudmesh API
-  which can become a project for students using this book in
-  class.
+: In this section we will also provide you with information about
+  multicloud management with cloudmesh which makes it extremly easy to
+  switch between and use services from multiple cloud.s
 
 : Important to note is that the appendix contains very useful
   information that augments this section. This includes a more detailed
