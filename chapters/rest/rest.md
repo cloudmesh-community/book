@@ -101,7 +101,7 @@ DELETE
 
 :   Delete the addressed member of the collection.
 
-### REST Tool Classification
+### REST Tool Classification {#sec:rest_classification}
 
 Due to the well defined structure that REST provides a number of tools
 have been created that manage the creation of the specification for rest
