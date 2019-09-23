@@ -1,8 +1,24 @@
+dist: xenial
+
+sudo: required
+
+language: python
+
+python:
+  - "3.7"
+#  - "3.8-dev"  # 3.8 development branch
+#  - "nightly"  # nightly build
+
 install:
+  - whoami
+  - pwd
+  - ls
+  - pwd
+  - python --version
   - sudo apt-get update
+
+todo:
   - sudo apt-get install graphviz
-  - sudo apt-get install python-pip
-  - sudo pip install --upgrade pip
   - wget https://hackage.haskell.org/package/pandoc-2.2.3.2/pandoc-2.2.3.2.tar.gz
   - git clone https://github.com/jgm/pandoc-citeproc.git
   - wget -qO- https://get.haskellstack.org/ | sh
@@ -17,16 +33,12 @@ install:
   - npm install -g pandoc-index
   - npm install --global mermaid-filter
   - sudo pip install pandoc-fignos
+  - pandoc --version
+
 
 env:
   - PATH=$PATH:~/.local/bin
 
 script:
-  - pwd
-  - cd ~/build/cloudmesh-community/book/big-data-applications
-  - pandoc --version
-  - make
   - cd ~/build/cloudmesh-community/book/cloud
-  - pandoc --version
-  - make images    
   - make
