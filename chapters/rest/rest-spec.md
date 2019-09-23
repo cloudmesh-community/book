@@ -5,8 +5,8 @@ architectural style for creating Web services. A REST API specification
 would defines the attributes and constraints to be used in the web
 service. There have been multiple specifications that have been in use
 such as [OpenAPI (formally called Swagger)](https://github.com/OAI/OpenAPI-Specification) 
-[@oai-spec], [RAML](https://raml.org/) [@raml-spec], and [API
-Blueprint](https://apiblueprint.org/) [@apiblue-spec].
+[@oai-spec], [RAML](https://raml.org/) [@raml-spec], [tinyspec](https://github.com/Ajaxy/tinyspec)
+[@tinyspec], and [API Blueprint](https://apiblueprint.org/) [@apiblue-spec].
 
 
    
@@ -105,7 +105,8 @@ fields under *info*.
 ```yaml
 info:
   title: cpuinfo
-  description: A simple service to get cpuinfo as an example of using OpenAPI 3.0
+  description: 
+      A simple service to get cpuinfo as an example of using OpenAPI 3.0
   license:
     name: Apache 2.0
   version: 0.0.1
@@ -285,37 +286,136 @@ According to the current OAS 3.0, supported authentication methods are,
 
 ## RAML
 
-[:o2:] under development
+[RAML](https://raml.org/) [@raml-spec] (RESTful API Modeling Language) is a 
+specification proposed in 2013 and it is based on YAML format. The specification 
+is managed by the RAML Worker Group. It initially came out as a proprietary 
+vendor language (specification) but later was open-sourced. As of Sep 2019, the 
+latest specification is [RAML 1.0](https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md)
+[@raml_spec_1]. 
 
-paragraph with intro, pointer to example, 
+Following is an example RAML specification from the [RAML.org](https://github.com/raml-org/raml-examples/blob/master/helloworld/helloworld.raml) 
 
-point out that OpenAPI seem to have even RAML people as so OpenAPI seems
-the one we want to use and not RAML
+```yaml
+#%RAML 1.0
+title: Hello world # required title
 
-there are tools to convert this.
+/helloworld: # optional resource
+  get: # HTTP method declaration
+    responses: # declare a response
+      200: # HTTP status code
+        body: # declare content of response
+          application/json: # media type
+            type: | # structural definition of a response (schema or type)
+              {
+                "title": "Hello world Response",
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string"
+                  }
+                }
+              }
+            example: | # example of how a response looks
+              {
+                "message": "Hello world"
+              }
+```
 
-## Tinyspec
-[:o2:] under development
+In the current context, the industry seems to be adopting OpenAPI more than 
+RAML. Consequently, some of the main contributors of RAML such as MuleSoft have 
+joined the Open API Initiative since 2017. Hence, it is safe to conclude that 
+Open API would be the dominant REST API specification in the web services domain.
 
-Is this even useful?
+Furthermore, there are tools available to switch between the specifications, 
+such as [RAML Web API Parser](https://github.com/raml-org/webapi-parser) which 
+can convert RAML to Open API and vice-versa. 
 
-* <https://www.toptal.com/api-developers/5-new-things-rest-specification> [:o2:]
+
+## API Blueprint 
+
+[API Blueprint](https://apiblueprint.org/) [@apiblue-spec] is another 
+specification available currently which uses Markdown syntax. As of Sep, 2019 
+the latest version available is 1A-rev9.
+
+
 
 ## JsonAPI
-[:o2:] under development
 
-* <https://jsonapi.org/> [:o2:]
-* <https://jsonapi.org/format/> [:o2:]
+As the name suggests, [JSON API](https://jsonapi.org)[@jsonapi] attempts to 
+leverage web services specifications using JSON format. It reached a stable 
+version 1.0 in May, 2015, but there have been no revisions since then.
+
+
+## Tinyspec
+
+[Tinyspec](https://github.com/Ajaxy/tinyspec)[@tinyspec] is a lightweight 
+alternative to Open API. It has not being able to enter into the mainstream thus 
+far, unfortunately. 
+
 
 
 ## Tools
-[:o2:] under development
 
-[:o2:] see in rest.md, the link to resttools, put this here also
+There are a number of tools available in the REST webservices specification 
+domain. A classification of REST tools can be found in the [@sec:rest_classification]
+section. 
+
+### Connexion
+
+[Connexion](https://github.com/zalando/connexion)[@connexion] is one such tool 
+that is based on Open API and it is widely used in the Python environment. This 
+framework allows users to define webservices in Open API and then map those 
+services to Python functions conveniently. We would be using Connexion when we 
+create REST services using introspection [@sec:openapi-introspection].
+
+Here is an example from the [Connexion official website](https://github.com/zalando/connexion/blob/master/examples/openapi3/helloworld/openapi/helloworld-api.yaml) 
+[@connexion]. 
+
+```yaml
+openapi: "3.0.0"
+
+info:
+  title: Hello World
+  version: "1.0"
+servers:
+  - url: http://localhost:9090/v1.0
+
+paths:
+  /greeting/{name}:
+    post:
+      summary: Generate greeting
+      description: Generates a greeting message.
+      operationId: hello.post_greeting
+      responses:
+        200:
+          description: greeting response
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "hello dave!"
+      parameters:
+        - name: name
+          in: path
+          description: Name of the person to greet.
+          required: true
+          schema:
+            type: string
+            example: "dave"
+```
+
+This service would map to the following *post_greeting* Python function. 
+
+```python
+import connexion
 
 
-### Conexion
-[:o2:] under development
+def post_greeting(name: str) -> str:
+    return 'Hello {name}'.format(name=name)
 
-* <https://github.com/zalando/connexion> [:o2:]
-* <https://github.com/zalando/connexion/tree/master/examples/openapi3/helloworld/openapi> [:o2:]
+if __name__ == '__main__':
+    app = connexion.FlaskApp(__name__, port=9090, specification_dir='openapi/')
+    app.add_api('helloworld-api.yaml', arguments={'title': 'Hello World Example'})
+    app.run()
+```
+
