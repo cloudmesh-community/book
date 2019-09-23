@@ -6,13 +6,13 @@ routine in scikit-learn [@scik2]. Scikit-learn k-means user-guide can be found
 Scikit-learn K-Means package [@scikitlearn-kmeans].  
 
 This involves the following. 
+
 * Upload a file with points to create the k-means clustering model.
 * Method to call scikit-learn KMeans module 
-* Upload a file with points that need to be predicted and return a file with the 
-predicted cluster IDs. 
+* Upload a file with points that need to be predicted and return a file 
+  with the predicted cluster IDs. 
 * Additionally, scikit-learn KMeans module provides routines to get the cluster 
-centers, labels, etc. which can also be 
-exposed as REST services.   
+  centers, labels, etc. which can also be exposed as REST services.   
 
 To create the REST services, we would be using OpenAPI 3.0 REST service via
  introspection.  
@@ -20,6 +20,7 @@ To create the REST services, we would be using OpenAPI 3.0 REST service via
 ## Service Endpoints (paths) 
 
 ###  kmeans/upload 
+
 A POST request with a file containing points to create the k-means clustering
  model. POST content would be *multipart/form-data*.  
 
@@ -209,21 +210,18 @@ Files of this example can be found
 [here](https://github.com/cloudmesh-community/book/tree/master/examples/rest/kmeans).
 
 * Open API 3 service definitions - 
-[api.yaml](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/api.yaml)
-
+  [api.yaml](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/api.yaml)
 * Flask server - 
-[server.py](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/server.py) 
-
+  [server.py](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/server.py) 
 * Kmeans service implementation - 
-[kmeans.py](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/kmeans.py)
-
+  [kmeans.py](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/kmeans.py)
 * Python requirements - 
-[requirements.txt](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/requirements.txt)
-
+  [requirements.txt](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/requirements.txt)
 * Example files 
-[model.csv](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/model.csv) 
-and 
-[predict.csv](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/predict.csv) 
+  [model.csv](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/model.csv) 
+  and 
+  [predict.csv](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/predict.csv) 
+
 
 ## Running the example 
 
@@ -260,19 +258,17 @@ curl -X POST "http://localhost:8080/kmeans/predict" -H "accept: text/csv" -H "Co
 ```
 
 * Additionally, you can access the Swagger UI for *kmeans* service in your Flask 
-server from [here](http://localhost:8080/kmeans/ui/)
+  server from [here](http://localhost:8080/kmeans/ui/)
 
 ## Notes
 
 * Above services can easily be combined together in the backend to accept a 
-model file, together with a prediction input 
-
+  model file, together with a prediction input 
 * File and to return the predicted output file (synchronous operation). But 
-usually, we can expect AI jobs to be long running, hence the services would need 
-to be handled asynchronously. 
-
+  usually, we can expect AI jobs to be long running, hence the services would need 
+  to be handled asynchronously. 
 * Additionally, once a model is fitted, users should be able to reuse the model 
-for multiple predictions. Hence it is sensible to separate out model fitting and 
-predictions into separate services.        
+  for multiple predictions. Hence it is sensible to separate out model fitting and 
+  predictions into separate services.        
 
 

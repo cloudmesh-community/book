@@ -191,12 +191,12 @@ have the following requirements:
 * You will have to write a report. We will discuss with you how to do
  that in a future lecture.
 
-Please note that the above requirements also hold tru if you use,
-technologies such as Hadoop, spark, kubernetes, AWS, Azure, Google,
+Please note that the above requirements also hold true if you use
+technologies such as Hadoop, Spark, Kubernetes, AWS, Azure, Google,
 OpenStack, ...
 
 Certain projects will have custom deliverables that we will refine with
-you once you have chosen such a project. For example if you were to chose a 
+you once you have chosen such a project. For example, if you were to chose a 
 cloudmesh project you will be asked to develop a manual instead of a report.
 
 A preliminary list of projects is available at.
