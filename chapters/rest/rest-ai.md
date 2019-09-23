@@ -149,7 +149,7 @@ input points.
 2.000000000000000000e+00
 ```
  
- ### Path *kmeans/predict* 
+### Path *kmeans/predict* 
  
  A POST request with a file containing the points to be predicted and the 
  corresponding Job ID as *multipart/form-data*. 
