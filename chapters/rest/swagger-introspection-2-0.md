@@ -159,7 +159,7 @@ make demo
 
 our demo is run.
 
-## Verification {#sec:swagger-verify}
+## Verification {#sec:swagger-verify-2}
 
 It is important to be able to verify if a yaml file is correct. To identify
 this, the easiest method is to use the swagger editor. There is an online verion
