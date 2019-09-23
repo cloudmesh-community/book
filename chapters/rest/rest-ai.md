@@ -17,9 +17,9 @@ This involves the following.
 To create the REST services, we would be using OpenAPI 3.0 REST service via
  introspection.  
 
-## Service Endpoints (paths) 
+## Service Endpoints/ Paths 
 
-###  kmeans/upload 
+###  Path *kmeans/upload* 
 
 A POST request with a file containing points to create the k-means clustering
  model. POST content would be *multipart/form-data*.  
@@ -38,9 +38,11 @@ For an example consider the following 6 points in XY dimensions,
 
 Curl command: 
 
-```
-curl -X POST "http://localhost:8080/kmeans/upload" -H "accept: application/json" 
--H "Content-Type: multipart/form-data" -F "file=@model.csv;type=text/csv"
+```bash
+$ curl -X POST "http://localhost:8080/kmeans/upload" \
+        -H "accept: application/json" \ 
+        -H "Content-Type: multipart/form-data" \ 
+        -F "file=@model.csv;type=text/csv"
 ```
 
 Service implementation would look like this. File content will be received as a 
@@ -77,7 +79,7 @@ the models and the predicted outputs.
 }
 ```
 
-### kmeans/fit
+### Path *kmeans/fit*
 
 A POST request with a *JSON* body containing Job ID and model parameters that 
 need to passed on to the scikit-learn KMeans model initialization such as, 
@@ -96,8 +98,11 @@ Example:
 
 curl command:
 
-```
-curl -X POST "http://localhost:8080/kmeans/fit" -H "accept: text/csv" -H "Content-Type: application/json" -d "{\"job_id\":0,\"model_params\":{\"n_clusters\":3}}"
+```bash
+$ curl -X POST "http://localhost:8080/kmeans/fit" \
+        -H "accept: text/csv" \
+        -H "Content-Type: application/json" \
+        -d "{\"job_id\":0,\"model_params\":{\"n_clusters\":3}}"
 ```
   
  Service implementation looks like this. POST request body will be populated as 
@@ -144,7 +149,7 @@ input points.
 2.000000000000000000e+00
 ```
  
- ### kmeans/predict 
+ ### Path *kmeans/predict* 
  
  A POST request with a file containing the points to be predicted and the 
  corresponding Job ID as *multipart/form-data*. 
@@ -162,8 +167,12 @@ Points to be predicted
 
 curl command:
 
-```
-curl -X POST "http://localhost:8080/kmeans/predict" -H "accept: text/csv" -H "Content-Type: multipart/form-data" -F "job_id=0" -F "file=@predict.csv;type=text/csv"
+```bash
+$ curl -X POST "http://localhost:8080/kmeans/predict" \
+        -H "accept: text/csv" \
+        -H "Content-Type: multipart/form-data" \ 
+        -F "job_id=0" \
+        -F "file=@predict.csv;type=text/csv"
 ```
 
 Service implementation looks like this. Note that there is a strange behavior in 
@@ -229,32 +238,42 @@ Files of this example can be found
 * Activate the Python3 venv used for *Cloudmesh* 
 * Install requirements.txt 
 
-```
-pip install -r requirements.txt
+```bash
+$ pip install -r requirements.txt
 ```
 
 * Start the server 
 
-```
-python server.py
+```bash
+$ python server.py
 ```
 
 * Upload a file 
 
-```
-curl -X POST "http://localhost:8080/kmeans/upload" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "file=@model.csv;type=text/csv"
+```bash 
+$ curl -X POST "http://localhost:8080/kmeans/upload" \
+    -H "accept: application/json" \
+    -H "Content-Type: multipart/form-data" \
+    -F "file=@model.csv;type=text/csv"
 ```
 
 * Fit the kmeans model 
 
-```
-curl -X POST "http://localhost:8080/kmeans/fit" -H "accept: text/csv" -H "Content-Type: application/json" -d "{\"job_id\":0,\"model_params\":{\"n_clusters\":3}}"
+```bash
+$ curl -X POST "http://localhost:8080/kmeans/fit" \
+    -H "accept: text/csv" \
+    -H "Content-Type: application/json" \
+    -d "{\"job_id\":0,\"model_params\":{\"n_clusters\":3}}"
 ```
 
 * Predict using the fitted kmeans model 
 
-```
-curl -X POST "http://localhost:8080/kmeans/predict" -H "accept: text/csv" -H "Content-Type: multipart/form-data" -F "job_id=0" -F "file=@predict.csv;type=text/csv"
+```bash
+$ curl -X POST "http://localhost:8080/kmeans/predict" \
+    -H "accept: text/csv" \
+    -H "Content-Type: multipart/form-data" \
+    -F "job_id=0" \
+    -F "file=@predict.csv;type=text/csv"
 ```
 
 * Additionally, you can access the Swagger UI for *kmeans* service in your Flask 
@@ -265,10 +284,10 @@ curl -X POST "http://localhost:8080/kmeans/predict" -H "accept: text/csv" -H "Co
 * Above services can easily be combined together in the backend to accept a 
   model file, together with a prediction input 
 * File and to return the predicted output file (synchronous operation). But 
-  usually, we can expect AI jobs to be long running, hence the services would need 
-  to be handled asynchronously. 
+  usually, we can expect AI jobs to be long running, hence the services would 
+  need to be handled asynchronously. 
 * Additionally, once a model is fitted, users should be able to reuse the model 
-  for multiple predictions. Hence it is sensible to separate out model fitting and 
-  predictions into separate services.        
+  for multiple predictions. Hence it is sensible to separate out model fitting 
+  and predictions into separate services.        
 
 
