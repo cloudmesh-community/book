@@ -6,13 +6,16 @@ routine in scikit-learn [@scik2]. Scikit-learn k-means user-guide can be found
 Scikit-learn K-Means package [@scikitlearn-kmeans].  
 
 This involves the following. 
+
 * Upload a file with points to create the k-means clustering model.
+
 * Method to call scikit-learn KMeans module 
+
 * Upload a file with points that need to be predicted and return a file with the 
 predicted cluster IDs. 
+
 * Additionally, scikit-learn KMeans module provides routines to get the cluster 
-centers, labels, etc. which can also be 
-exposed as REST services.   
+centers, labels, etc. which can also be exposed as REST services.   
 
 To create the REST services, we would be using OpenAPI 3.0 REST service via
  introspection.  
@@ -20,6 +23,7 @@ To create the REST services, we would be using OpenAPI 3.0 REST service via
 ## Service Endpoints (paths) 
 
 ###  kmeans/upload 
+
 A POST request with a file containing points to create the k-means clustering
  model. POST content would be *multipart/form-data*.  
 
@@ -224,6 +228,7 @@ Files of this example can be found
 [model.csv](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/model.csv) 
 and 
 [predict.csv](https://github.com/cloudmesh-community/book/blob/master/examples/rest/kmeans/predict.csv) 
+
 
 ## Running the example 
 
