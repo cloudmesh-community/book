@@ -789,7 +789,7 @@ Azure claims to have more global
 [regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
 [@www-azure-regions] than any other cloud provider. They motivate this
 by their advertisement to bring and applications to the users around
-the world. The goal is similar as other commercial hyprescale
+the world. The goal is similar as other commercial hyper-scale
 providers by introducing preserving data residency, and offering
 comprehensive compliance and resilience. As of Aug 29, 2018 Azure
 supports 54 regions worldwide. These regions can currently be accessed
@@ -942,7 +942,7 @@ can run at the same time traditional super computing jobs such as MPI
 based programs, as well as jobs that utilize virtual machines. With
 its availability of >46000 cores it provides one of the larges NSF
 sponsored cloud environment. Through its ability to provide bare metal
-provisioning and the access to infiniband between all virtual machines
+provisioning and the access to Infiniband between all virtual machines
 it is an ideal machine for exploring performance oriented
 virtualization techniques.
 
@@ -1174,9 +1174,11 @@ Some thought on this include:
 
 Find more about this at [@nytimes-datacenter]
 
-## Renewable Energy for Data Centers :o2: {#sec:energy-renewable}
+## Renewable Energy for Data Centers {#sec:energy-renewable}
 
-Explain the principal and showcase some examples:
+Due to the high energy consumption of data-centers, especially of
+hyper-scale data centers. It is prudent to evaluate renewable energies
+for the operation of such data centers. In particular this includes:
 
 * Solar: <https://9to5google.com/2019/01/17/largest-ever-solar-farms-google/>
 * Wind: <https://www.datacenterknowledge.com/wind-powered-data-centers>
@@ -1188,39 +1190,49 @@ Explain the principal and showcase some examples:
 * Recyclers:
   <https://www.datacenterknowledge.com/data-centers-that-recycle-waste-heat>
 
-What other aspects exist:
-
-Energy Storage:
+Other aspects may include the storage of energy including:
 
 * Batteries
-* Store energy in other forms
+* Store energy in other forms such as potential energy.
 
-## Societal Shift Towards Renewables :o2: {#sec:energy-society}
+## Societal Shift Towards Renewables {#sec:energy-society}
 
-Document the efforts used in society to work towards renewable
-energies. THis includes government efforts to support renewable in
-benefit of the society:
+We find a world wide trend in society to shift towards renewables. This
+includes government efforts to support renewable in benefit of the
+society:
 
-* Germany
-* China
-* Island
-* Corporations: Google, AWS, IBM, ...
+* Germany, China, Island, and many more, 
+
+but it also includes commitments by Corporations such as
+ 
+* Google, AWS, IBM, ...
 
 Also look at the US state of California and others that project
 renewable energy.
 
-See also
+Information about this is provided for example in 
 
 * <https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2018/Jan/IRENA_2017_Power_Costs_2018.pdf>
 
-## Datacenter Risks and Issues :o2:
+We predict that any country not being heavily committed in renewable
+energies will fall behind while missing out on research opportunities
+in renewable energies themselfs. Today the cost of renewable energy
+producing power plants have so drastically improved they are not only
+producing less green house gasses but are today even cheaper to
+operate and build than combustion based energy producing power plants.
+
+
+## Datacenter Risks and Issues 
 
 Data Centers may be encounter issues such as outages of a variety of
 reasons. In this section you will identify risks and issues that you
 encounter as part of information you find on the Web or literature.
 
-You task will be to classify and describe the types of outages you
-encounter and will back them up with a reference.
+
+It is important that we recognize that datacenter outages can happen
+and thus such outages must be build into the operations of the cloud
+services that are offered to the customers to assure an expectation
+level of quality of service.
 
 Here is an example:
 
@@ -1233,13 +1245,12 @@ Here is an example:
 * Cost impact > $160 million
 * [Reference](https://www.datacenterknowledge.com/archives/2017/03/02/aws-outage-that-broke-the-internet-caused-by-mistyped-command/)
 
-Find other such examples. Find some with different categories
-
 *
   [FACEBOOK, WHATSAPP, INSTAGRAM DOWN? WORLD'S BIGGEST SOCIAL NETWORKS SUFFER OUTAGES AND STOP LOADING IMAGES, Newsweek](https://www.newsweek.com/facebook-whatsapp-instagram-down-offline-outages-social-media-not-working-1447367)
 
 
 ![Instagram Outage [Ref](https://downdetector.com/status/instagram/map/?ref=DJ-D-L-CC-)](images/instagram-outage-jul-3-2019.png){#fig:inst-outage}
+
 
 
 ## Exercises {#sec:exercises-energy}
