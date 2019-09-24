@@ -48,6 +48,64 @@ After finishing all these steps, you are good to move forward to MapReduce progr
 
 ## Lab Activity: Python MapReduce
 
-# Lab Activity Map/Reduce on the cloud
+### Python Word Count in MapReduce
+
+```python
+#!/usr/bin/env python
+
+import sys
+for line in sys.stdin:
+    line = line.strip()
+words = line.split()
+for word in words:
+    print('%s\t%s' % (word, 1))
+```
+
+This code is used as Mapper.
+
+```python
+#!/usr/bin/env python
+
+from operator import itemgetter
+import sys
+current_word = None
+current_count = 0
+word = None
+for line in sys.stdin:
+    line = line.strip()
+    word, count = line.split('\t', 1)
+    try:
+        count = int(count)
+        except ValueError:
+    continue
+if current_word == word:
+    current_count += count
+else:
+    if current_word:
+        print('%s\t%s' % (current_word, current_count))
+        current_count = count
+        current_word = word
+    if current_word == word:
+        print('%s\t%s' % (current_word, current_count))
+```
+
+This code is used as Reducer.
+
+**Please note these code snippets are used to demonstrate the idea of Mapper and Reducer in Python. It leaves some bugs by
+ intentions. Please debug the above code or write your own version of MapReduce.**
+ 
+### Run Hadoop MapReduce in Python
+
+```shell script
+bin/hadoop jar <path_to_hadoop_libs>/hadoop-*streaming*.jar \
+-file /<path_to_mapper>/mapper.py \
+-mapper /<path_to_mapper>/mapper.py \
+-file /<path_to_reducer>/reducer.py  \
+-reducer /<path_to_reducer>/reducer.py  \
+-input <input_file_path> \
+-output <output_file_path>
+``` 
+
+# Lab Activity MapReduce on the cloud
 
 
