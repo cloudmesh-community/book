@@ -64,7 +64,8 @@ example and deploying the service in the Chameleon Cloud.
 You may need to install [py-cpuinfo](https://pypi.org/project/py-cpuinfo/0.2.3/) 
 library to help you collect information for the service implementation. 
 
-1. Change 
+1. Change the *cpu* GET method, to work in a operating system invariant way
+   (i.e. use python libraries to determine the CPU name, rather than system calls) 
 
 1. Add a GET method to get cache size of the CPU. URL parameter *{level}* should 
   specify the cache level.        
