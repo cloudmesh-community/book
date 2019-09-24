@@ -2,8 +2,32 @@
 
 ## Video
 
-:warning: A Video that showcases hwo to start VMs in Chameleon CLoud via Horizon
-and Cloudmesh will be added.
+
+A Video briefly summerizing an introduction to cloudmesh for multi cloud
+environments including pointedts to projects related to virtual
+directories, compute services, and virtual clusters
+
+* [![Video](images/video.png) Cloudmesh Version 4 (44:01)](https://www.youtube.com/watch?v=VhgGIE2lTpQ)
+
+A video on how to start an login into a virtual machine on Horizon is
+presented next:
+
+* [![Video](images/video.png) OpenStack Horizon (10:49)](https://www.youtube.com/watch?v=ofAVUX1gvUg)
+
+A video how to start vms with cloudmesh is available here:
+
+* [![Video](images/video.png) Cloudmesh cms vm boot (15:07)](https://www.youtube.com/watch?v=GgNUXYaB7kQ)
+
+A Video on explaining the internals of cloudmesh is avalable here:
+
+* TBD
+
+In case you have not yet created an ssh key, the following video is
+useful. THis can be replicated on any LInux, macOS and Windows 10
+mashine, in case of Windows 10 use gitbash
+
+* [![Video](images/video.png) SSH keygen (4:07)](https://www.youtube.com/watch?v=pQb2VV1zNIc)
+
 
 ## Lecture Material
 
