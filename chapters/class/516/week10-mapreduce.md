@@ -1,5 +1,7 @@
 # Week 10: MapReduce
 
+:o2: under construction
+
 ## Lecture Material
 
 A new version of the following books have been released:
@@ -48,6 +50,8 @@ After finishing all these steps, you are good to move forward to MapReduce progr
 
 ## Lab Activity: Python MapReduce
 
-# Lab Activity Map/Reduce on the cloud
+:o2: TBD
 
+## Lab Activity Map/Reduce on the Cloud
 
+:o2: TBD
