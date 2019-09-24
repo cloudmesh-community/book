@@ -1,10 +1,12 @@
 # Week 5: Virtualization I - OpenStack
 
-# Lab Activity Chameleon Cloud Account
+:o2: under construction
 
-# Lab Activity Horizon
+## Lab Activity Chameleon Cloud Account
 
-# Lab Activity Cloudmesh
+## Lab Activity Horizon
+
+## Lab Activity Cloudmesh
 
 * configuration
 * list images
