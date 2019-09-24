@@ -102,7 +102,7 @@ This code is used as Reducer.
  
 ### Run Hadoop MapReduce in Python
 
-```shell script
+```bash
 bin/hadoop jar <path_to_hadoop_libs>/hadoop-*streaming*.jar \
 -file /<path_to_mapper>/mapper.py \
 -mapper /<path_to_mapper>/mapper.py \
@@ -141,7 +141,7 @@ Configure all Hadoop daemons:
 
 Configure Namenode to use parallelGC and a 4GB Java Heap, the following statement should be added in hadoop-env.sh:
 
-```shell script
+```bash
 export HDFS_NAMENODE_OPTS="-XX:+UseParallelGC -Xmx4g"
 ```
 
@@ -158,7 +158,7 @@ must be formatted. Format a new distributed filesystem as hdfs.
 
 ### Run Hadoop MapReduce in Python
 
-```shell script
+```bash
 $ bin/hadoop jar <path_to_hadoop_libs>/hadoop-*streaming*.jar \
     -file /<path_to_mapper>/mapper.py \
     -mapper /<path_to_mapper>/mapper.py \
