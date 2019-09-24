@@ -146,6 +146,7 @@ paths:
 ```
 
 **Operation ID**:
+
 When using introspection for REST services, we would need to point to the 
 operation that would ultimately carry out the request. This operation is 
 specified by the *operationID*.

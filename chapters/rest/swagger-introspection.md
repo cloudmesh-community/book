@@ -169,6 +169,23 @@ A terminal based command may als be helpful, but is a bit difficult to read.
 $ connexion run cpu.yaml --stub --debug
 ```
 
+## Swagger-UI 
+
+Swagger comes with a convenient UI to invoke REST API calls using the web 
+browser rather than relying on the curl commands. 
+
+Once the request and response definitions are properly specified, you can start 
+the server by, 
+
+```bash
+$ python server.py
+``` 
+
+Then the UI would also be spawned under the service URL *http://\[service url\]/ui/*
+
+Example: <http://localhost:8080/cloudmesh/ui/>
+
+
 ## Mock service
 
 In some cases it may be useful to develop the API without having yet developed
