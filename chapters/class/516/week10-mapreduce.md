@@ -17,7 +17,36 @@ Watch these online videos for Hadoop MapReduce:
 * [![Video](images/video.png) Hadoop 12:57 Hadoop  C](https://youtu.be/BaRHay32I80?t=18)
 * [![Video](images/video.png) Hadoop 15:14 Hadoop  D](https://youtu.be/MYOosbF6-dA?t=20)
 
-# Lab Activity Python Map reduce
+## Lab Activity: Hadoop Installation
+
+The following exercises will guide you to install Hadoop on a single node and then run a MapReduce job in Python. Please 
+figure out the required command lines. These commands are available in the book sections: [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
+
+### Exercises:
+
+* Install prerequisite software
+    * Install Java
+    * Install SSH
+    * Install Maven
+* Configure programming environments
+    * `JAVA_HOME`
+    * `core-site.xml`
+    * `hdfs-site.xml`
+    * SSh localhost without a passphrase
+* Start Hadoop HDFS
+    * Format HDFS filesystem
+    * Start NameNode and DataNode via command lines
+    * Check NameNode status via Web Interface: NameNode - http://localhost:9870/
+* Start Hadoop YARN
+    * Configure
+        * `mapred-site.xml`
+        * `yarn-site.xml`
+    * Start YARN via command line
+    * Check YARN status via Web Interface: ResourceManager - http://localhost:8088/
+    
+After finishing all these steps, you are good to move forward to MapReduce programming.
+
+## Lab Activity: Python MapReduce
 
 # Lab Activity Map/Reduce on the cloud
 
