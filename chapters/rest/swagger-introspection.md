@@ -1,4 +1,4 @@
-# OpenAPI REST Service via Introspection {#sec:openapi-introspection}
+# OpenAPI 3.0 REST Service via Introspection {#sec:openapi-introspection}
 
 The simplest way to create an OpenAPI service is to use the conexion
 service and read in the specification from its yaml file. It will than
