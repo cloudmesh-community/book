@@ -38,8 +38,8 @@ BOOK:
     - "{file.chapter}/class/516/week3-arch.md"
     - "{file.chapter}/class/516/week4-openstack.md"
     - "{file.chapter}/class/516/weekn.md"
-    - "{file.chapter}/class/516/week10-mapreduce.md"
     - "{file.chapter}/class/516/week12-REST.md"
+    - "{file.chapter}/class/516/week10-mapreduce.md"
   - APPENDIX:
     - "{file.chapter}/class/516/faq.md"
     - "{file.chapter}/preface/reader.md"
