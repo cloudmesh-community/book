@@ -1,5 +1,7 @@
 # Week 12: REST
 
+:o2: under construction
+
 ## Lecture Material 
 
 A new version of the following books have been released:
