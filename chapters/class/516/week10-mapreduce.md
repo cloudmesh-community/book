@@ -106,6 +106,58 @@ bin/hadoop jar <path_to_hadoop_libs>/hadoop-*streaming*.jar \
 -output <output_file_path>
 ``` 
 
-# Lab Activity MapReduce on the cloud
+## Lab Activity: MapReduce on the cloud
 
+### Hadoop Cluster Setup
 
+Hadoop’s Java configuration is driven by two types of important configuration files:
+
+* Read-only default configuration - core-default.xml, hdfs-default.xml, yarn-default.xml and mapred-default.xml.
+* Site-specific configuration - etc/hadoop/core-site.xml, etc/hadoop/hdfs-site.xml, etc/hadoop/yarn-site.xml and etc/hadoop/mapred-site.xml.
+
+Additionally, you can control the Hadoop scripts found in the bin/ directory of the distribution, by setting site-specific values via the etc/hadoop/hadoop-env.sh and etc/hadoop/yarn-env.sh.
+
+To configure the Hadoop cluster you will need to configure the environment in which the Hadoop daemons execute as well as the configuration parameters for the Hadoop daemons.
+
+HDFS daemons are NameNode, SecondaryNameNode, and DataNode. YARN daemons are ResourceManager, NodeManager, and WebAppProxy. If MapReduce is to be used, then the MapReduce Job History Server will also be running. For large installations, these are generally running on separate hosts.
+
+### Configuration
+
+Configure all Hadoop daemons:
+
+* NameNode: HDFS_NAMENODE_OPTS
+* DataNode:	HDFS_DATANODE_OPTS
+* Secondary NameNode: HDFS_SECONDARYNAMENODE_OPTS
+* ResourceManager: YARN_RESOURCEMANAGER_OPTS
+* NodeManager: YARN_NODEMANAGER_OPTS
+* WebAppProxy: YARN_PROXYSERVER_OPTS
+* Map Reduce Job History Server: MAPRED_HISTORYSERVER_OPTS
+
+Configure Namenode to use parallelGC and a 4GB Java Heap, the following statement should be added in hadoop-env.sh:
+
+```shell script
+export HDFS_NAMENODE_OPTS="-XX:+UseParallelGC -Xmx4g"
+```
+
+### Operating the Hadoop Cluster
+
+To start a Hadoop cluster you will need to start both the HDFS and YARN cluster. The first time you bring up HDFS, it 
+must be formatted. Format a new distributed filesystem as hdfs.
+
+* Format NameNode (on a dedicate node in the cluster)
+* Start NameNode (on a dedicate node in the cluster)
+* Start DataNode (on each node of the cluster)
+* Start ResourceManager (on a dedicate node in the cluster)
+* Start NodeManager (on each node of the cluster)
+
+### Run Hadoop MapReduce in Python
+
+```shell script
+bin/hadoop jar <path_to_hadoop_libs>/hadoop-*streaming*.jar \
+-file /<path_to_mapper>/mapper.py \
+-mapper /<path_to_mapper>/mapper.py \
+-file /<path_to_reducer>/reducer.py  \
+-reducer /<path_to_reducer>/reducer.py  \
+-input <input_file_path> \
+-output <output_file_path>
+``` 
