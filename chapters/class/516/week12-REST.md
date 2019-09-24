@@ -2,6 +2,8 @@
 
 :o2: under construction
 
+:o2: markdown in this section is not valid
+
 ## Lecture Material 
 
 A new version of the following books have been released:
