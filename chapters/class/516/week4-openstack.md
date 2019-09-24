@@ -2,6 +2,12 @@
 
 ## Video
 
+In case you have not yet created an ssh key, the following video is
+useful. This can be replicated on any Linux, macOS and Windows 10
+mashine, in case of Windows 10 use gitbash
+
+* [![Video](images/video.png) SSH keygen (4:07)](https://www.youtube.com/watch?v=pQb2VV1zNIc)
+
 
 A Video briefly summerizing an introduction to cloudmesh for multi cloud
 environments including pointedts to projects related to virtual
@@ -18,15 +24,34 @@ A video how to start vms with cloudmesh is available here:
 
 * [![Video](images/video.png) Cloudmesh cms vm boot (15:07)](https://www.youtube.com/watch?v=GgNUXYaB7kQ)
 
-A Video on explaining the internals of cloudmesh is avalable here:
+A number of videos on explaining the internals of cloudmesh is avalable here:
 
-* TBD
 
-In case you have not yet created an ssh key, the following video is
-useful. THis can be replicated on any LInux, macOS and Windows 10
-mashine, in case of Windows 10 use gitbash
+The first video introduces you to cloudmesh common a library to execute
+commands on your os oand interact with it
 
-* [![Video](images/video.png) SSH keygen (4:07)](https://www.youtube.com/watch?v=pQb2VV1zNIc)
+* [![Video](images/video.png) cloudmesh-common (13:40)](https://www.youtube.com/watch?v=o9AcgNheVls)
+
+The second video explains details about cloudmesh commpute and also
+tells you about what is expected for the project to be developed.
+However the video does not yet explain how to do a virtual cluster from
+the Providers, which is one goal for this semester.
+
+* [![Video](images/video.png) cloudmesh-cloud (15:09)](https://www.youtube.com/watch?v=sghmbRldyKQ)
+
+
+The third video tells you about the cloudmesh-storage project that is 
+supposed to be don in the project, thi inclused
+
+* better tests
+* completion of additional providers
+* using of Processpool and mongodb for managing files to be copied
+* the creation of a REST servoce that includes the pool to allow copy
+  from one cloud to another.
+
+* [![Video](images/video.png) cloudmesh-storage (8:03)](https://www.youtube.com/watch?v=eKPMD7qDXSc)
+
+
 
 
 ## Lecture Material
