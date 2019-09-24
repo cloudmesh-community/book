@@ -35,14 +35,16 @@ projects much easier in the long run.
 ## Exercise 
 
 1. Find a cloud you like and identify the native Python API (but not 
-   libcloud, in case of openstack use the openstack sdk which is new).
+   libcloud, in case of openstack use the openstack sdk which is new
+   and not nova and the other api's).
 2. Demonstrate a Python program to list images, flavors and virtual 
-   machines
+   machines. You can create a vm via the GUI on your cloud, name it
+   with your firstname.
 3. When it comes to credential management, please use cloudmesh.yaml 
    and Config(). Learn how to do that. Under NO CIRCUMSTANCES post your 
-   passwords or add files to github that include your passwords or other credentials.
-4. Develop a python program that adds keys and security goups 
-5. Showcase that you can ssh into the vm
+   passwords or add files to GitHub that include your passwords or other credentials.
+4. Develop a python program that adds keys and security groups (difficult).
+5. Showcase that you can ssh into the vm (difficult)
 
-This exercise can be done openly in class and everyone cac share code
+This exercise can be done openly in class and everyone can share code
 with everyone, as long as you acknowledge the student with name and hid.
