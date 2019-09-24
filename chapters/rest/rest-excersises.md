@@ -1,33 +1,35 @@
-# Excersises
+# Exercises
 
 E.OpenAPI.1:
 
 > In Section
-> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
-> schema.  The question relates to termsOfService: Investigate what
+> [OpenAPI 3.0 REST Service via Introspection](#sec:openapi-introspection), we 
+> introduced a schema.  The question relates to termsOfService: Investigate what
 > the termOfService attribute is and suggest a better value. Discuss
 > on piazza.
 
 E.OpenAPI.2:
 
 > In Section
-> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
-> schema.  The question relates to model: What is the meaning of model
-> under the definitions?
+> [OpenAPI 3.0 REST Service via Introspection](#sec:openapi-introspection), we 
+> introduced a schema.  The question relates to model: What is the meaning of 
+> model under the definitions?
 
 E.OpenAPI.3:
 
 > In Section
-> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
-> schema.  The question relates to \$ref: what is the meaning of the
+> [OpenAPI 3.0 REST Service via Introspection](#sec:openapi-introspection), we 
+> introduced a schema.  The question relates to \$ref: what is the meaning of the
 > \$ref. Discuss on piazza, come up with a student answer in class.
 
 E.OpenAPI.4:
 
 > In Section
-> [Step 1: Define Your REST Service](#step-1-define-your-rest-service), we introduced a
+> [OpenAPI 3.0 REST Service via Introspection](#sec:openapi-introspection), we introduced a
 > schema.  What does the response 200 mean. Do you need other
 > responses?
+
+E.OpenAPI.5:
 
 > After you have gone through the entire section and verified it works
 > for you add create a more sophisticated schema and add more
