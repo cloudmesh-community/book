@@ -54,4 +54,116 @@ After finishing all these steps, you are good to move forward to MapReduce progr
 
 ## Lab Activity Map/Reduce on the Cloud
 
-:o2: TBD
+### Python Word Count in MapReduce
+
+```python
+#!/usr/bin/env python
+
+import sys
+for line in sys.stdin:
+    line = line.strip()
+words = line.split()
+for word in words:
+    print('%s\t%s' % (word, 1))
+```
+
+This code is used as Mapper.
+
+```python
+#!/usr/bin/env python
+
+from operator import itemgetter
+import sys
+current_word = None
+current_count = 0
+word = None
+for line in sys.stdin:
+    line = line.strip()
+    word, count = line.split('\t', 1)
+    try:
+        count = int(count)
+        except ValueError:
+    continue
+if current_word == word:
+    current_count += count
+else:
+    if current_word:
+        print('%s\t%s' % (current_word, current_count))
+        current_count = count
+        current_word = word
+    if current_word == word:
+        print('%s\t%s' % (current_word, current_count))
+```
+
+This code is used as Reducer.
+
+**Please note these code snippets are used to demonstrate the idea of Mapper and Reducer in Python. It leaves some bugs by
+ intentions. Please debug the above code or write your own version of MapReduce.**
+ 
+### Run Hadoop MapReduce in Python
+
+```shell script
+bin/hadoop jar <path_to_hadoop_libs>/hadoop-*streaming*.jar \
+-file /<path_to_mapper>/mapper.py \
+-mapper /<path_to_mapper>/mapper.py \
+-file /<path_to_reducer>/reducer.py  \
+-reducer /<path_to_reducer>/reducer.py  \
+-input <input_file_path> \
+-output <output_file_path>
+``` 
+
+## Lab Activity: MapReduce on the cloud
+
+### Hadoop Cluster Setup
+
+Hadoop’s Java configuration is driven by two types of important configuration files:
+
+* Read-only default configuration - core-default.xml, hdfs-default.xml, yarn-default.xml and mapred-default.xml.
+* Site-specific configuration - etc/hadoop/core-site.xml, etc/hadoop/hdfs-site.xml, etc/hadoop/yarn-site.xml and etc/hadoop/mapred-site.xml.
+
+Additionally, you can control the Hadoop scripts found in the bin/ directory of the distribution, by setting site-specific values via the etc/hadoop/hadoop-env.sh and etc/hadoop/yarn-env.sh.
+
+To configure the Hadoop cluster you will need to configure the environment in which the Hadoop daemons execute as well as the configuration parameters for the Hadoop daemons.
+
+HDFS daemons are NameNode, SecondaryNameNode, and DataNode. YARN daemons are ResourceManager, NodeManager, and WebAppProxy. If MapReduce is to be used, then the MapReduce Job History Server will also be running. For large installations, these are generally running on separate hosts.
+
+### Configuration
+
+Configure all Hadoop daemons:
+
+* NameNode: HDFS_NAMENODE_OPTS
+* DataNode:	HDFS_DATANODE_OPTS
+* Secondary NameNode: HDFS_SECONDARYNAMENODE_OPTS
+* ResourceManager: YARN_RESOURCEMANAGER_OPTS
+* NodeManager: YARN_NODEMANAGER_OPTS
+* WebAppProxy: YARN_PROXYSERVER_OPTS
+* Map Reduce Job History Server: MAPRED_HISTORYSERVER_OPTS
+
+Configure Namenode to use parallelGC and a 4GB Java Heap, the following statement should be added in hadoop-env.sh:
+
+```shell script
+export HDFS_NAMENODE_OPTS="-XX:+UseParallelGC -Xmx4g"
+```
+
+### Operating the Hadoop Cluster
+
+To start a Hadoop cluster you will need to start both the HDFS and YARN cluster. The first time you bring up HDFS, it 
+must be formatted. Format a new distributed filesystem as hdfs.
+
+* Format NameNode (on a dedicate node in the cluster)
+* Start NameNode (on a dedicate node in the cluster)
+* Start DataNode (on each node of the cluster)
+* Start ResourceManager (on a dedicate node in the cluster)
+* Start NodeManager (on each node of the cluster)
+
+### Run Hadoop MapReduce in Python
+
+```shell script
+$ bin/hadoop jar <path_to_hadoop_libs>/hadoop-*streaming*.jar \
+    -file /<path_to_mapper>/mapper.py \
+    -mapper /<path_to_mapper>/mapper.py \
+    -file /<path_to_reducer>/reducer.py  \
+    -reducer /<path_to_reducer>/reducer.py  \
+    -input <input_file_path> \
+    -output <output_file_path>
+``` 
