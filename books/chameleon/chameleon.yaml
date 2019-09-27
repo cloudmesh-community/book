@@ -1,0 +1,44 @@
+---
+metadata:
+  image: "cover.png"
+  title: "OpenStack"
+  subtitle: "with Chameloen Cloud"
+  author: "The Chameleon Cloud Team\nand\nGregor von Laszewski"
+  subauthor: ""
+  email: "laszewski@gmail.com"
+  url: "https://github.com/cyberaide/bookmanager"
+  description: "The lecture notes for e516"
+  abstract: "Lecture notes for e516"
+  keywords: "Cloud, Cloud Computing"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-chameleon.epub"
+  rights: (c) Gregor von Laszewski, 2018, 2019
+git:
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - PREFACE:
+    - "{file.chapter}/version.md"    
+    - "{git.credit}/disclaimer.md"
+  - CHAMELEON_CLOUD:
+    - "{file.chapter}/cloud/chameleon/warning.md"
+    - "{file.chapter}/cloud/chameleon/resources.md"
+    - "{file.chapter}/cloud/chameleon/hardware.md"
+    - "{file.chapter}/cloud/chameleon/charge.md"
+    - "{file.chapter}/cloud/chameleon/start.md"
+    - "{file.chapter}/cloud/chameleon/user-guide.md"
+    - "{file.chapter}/cloud/chameleon/cli.md"
+    - "{file.chapter}/cloud/chameleon/cli-openstack.md"
+    - "{file.chapter}/cloud/chameleon/horizon.md"
+    - "{file.chapter}/cloud/chameleon/heat.md"
+    - "{file.chapter}/cloud/chameleon/baremetal.md"
+    - "{file.chapter}/cloud/chameleon/faq.md"
+  - REFERENCES:
+    - "{file.chapter}/empty.md"
+

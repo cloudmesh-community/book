@@ -148,7 +148,7 @@ times when no more resources are available. If the error persists,
 please [open a ticket with our help
 desk](https://www.chameleoncloud.org/user/help/).
 
-### Why cannot I ping or SSH to my instance?
+### Why can I not ping or SSH to my instance?
 
 While the possibility that the system is being taking over by nanites
 should not be discounted too easily, it is always prudent to first check

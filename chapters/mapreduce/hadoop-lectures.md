@@ -11,7 +11,7 @@ Hadoop and MapReduce
 In this section we discuss about the usage Hadoop MapReduce
 architecture.
 
-[![Video](images/video.png) Hadoop 13:19 Hadoop  B](https://youtu.be/-N5PpD2sy3Q)
+[![Video](images/video.png) Hadoop 13:19 Hadoop  B](https://youtu.be/-N5PpD2sy3Q?t=17)
 
 
 Hadoop EcoSystem
@@ -20,7 +20,7 @@ Hadoop EcoSystem
 In this section we discuss about the Hadoop EcoSystem and the
 architecture.
 
-[![Video](images/video.png) Hadoop 12:57 Hadoop  C](https://youtu.be/BaRHay32I80)
+[![Video](images/video.png) Hadoop 12:57 Hadoop  C](https://youtu.be/BaRHay32I80?t=18)
 
 
 Hadoop Components
@@ -28,7 +28,7 @@ Hadoop Components
 
 In this section we discuss about Hadoop Components in detail.
 
-[![Video](images/video.png) Hadoop 15:14 Hadoop  D](https://youtu.be/MYOosbF6-dA)
+[![Video](images/video.png) Hadoop 15:14 Hadoop  D](https://youtu.be/MYOosbF6-dA?t=20)
 
 
 Hadoop and the Yarn Resource Manager
@@ -39,7 +39,7 @@ components added to the Hadoop framework in case of improving the
 performance and minimizing fault tolerance.
 
 
-[![Video](images/video.png) Hadoop 14:55 Hadoop  E](https://youtu.be/DVbtubsKrdg)
+[![Video](images/video.png) Hadoop 14:55 Hadoop  E](https://youtu.be/DVbtubsKrdg?t=40)
 
 
 PageRank
@@ -51,4 +51,4 @@ earliest stages of the Google.inc. In this section we discuss about the
 theoretical background about this problem and we discuss how this can be
 solved using the map reduce concepts.
 
-[![Video](images/video.png) Hadoop 25:41 Hadoop F](https://youtu.be/qr6mU04d69o)
+[![Video](images/video.png) Hadoop 25:41 Hadoop F](https://youtu.be/qr6mU04d69o?t=30)

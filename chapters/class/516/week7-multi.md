@@ -1,5 +1,6 @@
 # Week 7: Multi Cloud Environment
 
+:o2: under construction
 
 ## Lab Activity Multi-Cloud Configuration
 

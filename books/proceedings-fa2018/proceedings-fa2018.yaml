@@ -3,7 +3,7 @@ metadata:
   image: "cover.png"
   title: "Proceedings Fall2019\nEngineering Cloud \nComputing"
   subtitle: ""
-  author: 'Gregor von Laszewski'
+  author: "Gregor von Laszewski"
   subauthor: "Editor"
   email: "laszewski@gmail.com"
   url: "https://cloudmesh-community.github.io/book/vonlaszewski-proceedings-fa2018.epub"

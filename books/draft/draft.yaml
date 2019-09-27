@@ -3,7 +3,7 @@ metadata:
   image: "cover.png"
   title: "Cloud Computing"
   subtitle: ""
-  author: 'Gregor von Laszewski'
+  author: "Gregor von Laszewski"
   subauthor: "Editor"
   email: "laszewski@gmail.com"
   url: "https://cloudmesh-community.github.io/book/vonlaszewski-draft.epub"
@@ -26,18 +26,17 @@ file:
 BOOK:
   #    - "{file.chapter}/preface/emoji.md"
   - JULIA:
-    - "{file.chapter}/prg/julia/julia-aws.md"
-    - "{file.chapter}/prg/julia/julia-azure.md"
+    - "{file.chapter}/prg/julia/julia-language.md"
+    - "{file.chapter}/prg/julia/julia-install.md"
+    - "{file.chapter}/prg/julia/julia-ide.md"
+    - "{file.chapter}/prg/julia/julia-modules.md"
     - "{file.chapter}/prg/julia/julia-docopts.md"
     - "{file.chapter}/prg/julia/julia-external.md"
-    - "{file.chapter}/prg/julia/julia-ide.md"
-    - "{file.chapter}/prg/julia/julia-install.md"
-    - "{file.chapter}/prg/julia/julia-language.md"
-    - "{file.chapter}/prg/julia/julia-modules.md"
+    - "{file.chapter}/prg/julia/julia-parallel.md"
+    - "{file.chapter}/prg/julia/julia-aws.md"
+    - "{file.chapter}/prg/julia/julia-rest.md"
     - "{file.chapter}/prg/julia/julia-network.md"
     - "{file.chapter}/prg/julia/julia-opttype.md"
-    - "{file.chapter}/prg/julia/julia-parallel.md"
-    - "{file.chapter}/prg/julia/julia-rest.md"
   - SCALA:
     - "{file.chapter}/prg/scala/scala.md"
   - DEVTOOLS:
@@ -91,7 +90,6 @@ BOOK:
     - "{file.chapter}/class/policies.md"
     - "{file.chapter}/class/e516-summary.md"
     - "{file.chapter}/class/volumes.md"
-    - "{file.chapter}/class/e516-definition.md"
   - GRAPHICS:
     - "{file.chapter}/doc/graphviz.md"
   - ART:

@@ -3,7 +3,7 @@ metadata:
   image: "cover.png"
   title: "DRAFT - Cloud Computing\nEngineering"
   subtitle: "e516"
-  author: 'Gregor von Laszewski'
+  author: "Gregor von Laszewski"
   subauthor: ""
   email: "laszewski@gmail.com"
   url: "https://github.com/cyberaide/bookmanager"
@@ -34,7 +34,8 @@ BOOK:
   - DETAILS:
     - "{file.chapter}/class/516/week1-intro.md"
     - "{file.chapter}/class/516/week2-center.md"
-    - "{file.chapter}/class/516/week4-arch.md"
+    - "{file.chapter}/class/516/week3-arch.md"
+    - "{file.chapter}/class/516/week4-openstack.md"
     - "{file.chapter}/class/516/week5-virt-1.md"
     - "{file.chapter}/class/516/week6-virt-2.md"
     - "{file.chapter}/class/516/week7-multi.md"
