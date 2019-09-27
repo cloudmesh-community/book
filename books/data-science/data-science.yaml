@@ -1,9 +1,9 @@
 ---
 metadata:
   image: "cover.png"
-  title: "Introduction to Python"
+  title: "Introduction to DataScience"
   subtitle: "for Cloud Computing"
-  author: "Gregor von Laszewski"
+  author: "Vibhatha\nFiox\nGregor von Laszewski"
   subauthor: "Editor"
   email: "laszewski@gmail.com"
   url: "https://cloudmesh-community.github.io/book/vonLaszewski-python.epub"
@@ -13,7 +13,7 @@ metadata:
   stylesheet: "epub.css"
   dest: "./dest/book"
   rights: (c) Gregor von Laszewski, 2018, 2019
-  filename: "vonLaszewski-python.epub"
+  filename: "vonLaszewski-data-science.epub"
 git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
