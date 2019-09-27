@@ -14,24 +14,29 @@ The major Swagger tools of interest are:
 
 Swagger Core
 
-:   includes libraries for working with Swagger specifications
-    <https://github.com/swagger-api/swagger-core>.
+: includes libraries for working with Swagger specifications
+  <https://github.com/swagger-api/swagger-core>.
 
 Swagger Codegen
 
-:   allows to generate code from the specifications to develop Client
-    SDKs, servers, and documentation.
-    <https://github.com/swagger-api/swagger-codegen>
+: allows to generate code from the specifications to develop Client
+  SDKs, servers, and documentation.
+  <https://github.com/swagger-api/swagger-codegen>
 
 Swagger UI
 
-:   is an HTML5 based UI for exploring and interacting with the
-    specified APIs <https://github.com/swagger-api/swagger-ui>
+: is an HTML5 based UI for exploring and interacting with the
+  specified APIs <https://github.com/swagger-api/swagger-ui>
 
 Swagger Editor
 
-:   is a Web-browser based editor for composing specifications using
-    YAML <https://github.com/swagger-api/swagger-editor>
+: is a Web-browser based editor for composing specifications using
+  YAML <https://github.com/swagger-api/swagger-editor>
+
+Swagger Hub
+
+: is a Web service to collaborativly develop and host OpenAPI specifications 
+  <https://swagger.io/tools/swaggerhub/>
 
 The developed APIs can be hosted and further developed on an online
 repository named SwaggerHub <https://app.swaggerhub.com/home> The
@@ -44,7 +49,7 @@ Windows.
 notify us about other tools that you find and would like us to mention
 here.
 
-### Swagger Toolbox
+### Converting Json Examples to OpenAPI YAML Models
 
 Swagger toolbox is a utility that can convert json to swagger compatible
 yaml models. It is hosted online at
@@ -53,7 +58,7 @@ yaml models. It is hosted online at
 
 The source code to this tool is available on github at
 
-.
+* <https://github.com/essuraj/swagger-toolbox>
 
 It is important to make sure that the json model is properly configured.
 As such each datatype must be wrapped in "quotes" and the last element
@@ -94,3 +99,4 @@ started.
 
 Based on this tool develop a rest service to which you send a schema in
 JSON format from which you get back the YAML model.
+

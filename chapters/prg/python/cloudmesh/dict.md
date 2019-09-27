@@ -2,7 +2,7 @@
 
 ## Dotdict
 
-For simple dictionaries we sometimes like to simplify the notation with a . instead of using the `[]`:
+For simple dictionaries we sometimes like to simplify the notation with a `.` instead of using the `[]`:
 
 You can achieve this with dotdict
 
@@ -64,7 +64,7 @@ data = {
     }
 }
 
-flat = FlatDict(data)
+flat = FlatDict(data, sep=".")
 
 ```
 
@@ -79,7 +79,9 @@ flat = {
 }
 ```
 
-For more features, see API: [dotdict](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=flatdict#module-cloudmesh.common.FlatDict)
+With `sep` you can change the sepaerator between the nested dict
+attributes. For more features, see API:
+[dotdict](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html?highlight=flatdict#module-cloudmesh.common.FlatDict)
 
 
 ## Printing Dicts
@@ -88,13 +90,16 @@ In case we want to print dicts and lists of dicts in various formats, we
 have included a simple `Printer` that can print a dict in yaml, json,
 table, and csv format.
 
-The function can even guess from the passssed parameters what the input format is
+The function can even guess from the passed parameters what the input format is
 and uses the appropriate internal function.
 
 A common example is 
 
 ```python
-self.data = [
+from pprint import pprint
+from cloudmesh.common.Printer import Printer
+
+data = [
     {
         "name": "Gregor",
         "address": {
@@ -112,13 +117,13 @@ self.data = [
 ]
 
 
-pprint (self.data)
+pprint(data)
 
-table = Printer.flatwrite(self.data,
-                    sort_keys=["name"],
-                    order=["name", "address.street", "address.city"],
-                    header=["Name", "Street", "City"],
-                    output='table')
+table = Printer.flatwrite(data,
+                          sort_keys=["name"],
+                          order=["name", "address.street", "address.city"],
+                          header=["Name", "Street", "City"],
+                          output='table')
 
 print(table)
 ```

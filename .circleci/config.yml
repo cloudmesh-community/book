@@ -24,7 +24,7 @@ jobs:
           name: requirements.txt
           command: pip install -r requirements.txt
       - run:
-          name: book manager version
+          name: bookmanager version
           command: bookmanager version
       - run:
           name: changed files
@@ -35,18 +35,28 @@ jobs:
       #      - run:
       #          name: bibtex issues
       #          command: cd books/cloud; make bibtex-issues
-      - run:
-          name: check python epub
-          command: cd books/python && make epub && cd ../..
+      #- run:
+      #    name: check python epub
+      #    command: cd books/python && make epub && cd ../..
       - run:
           name: check cloud epub
-          command: cd books/cloud && make epub && cd ../..
+          command: cd books/cloud && make epub
       - run:
-          name: check bigdata epub
-          command: cd books/big-data-applications && make epub && cd ../..
+          name: pwd
+          command: pwd
+      - run:
+          name: ls
+          command: ls /root/project/books/cloud/dest
+      #- run:
+      #    name: check bigdata epub
+      #    command: cd books/big-data-applications && make epub && cd ../..
       - run:
           name: add line numbers to references.bib
-          command: cat -n books/big-data-applications/dest/all.bib > references.bib
+          command: cat -n /root/project/books/cloud/dest/all.bib > /root/project/books/cloud/dest/references.bib
       - store_artifacts:
-          path: references.bib
+          path: /root/project/books/cloud/dest/references.bib
           destination: references.bib
+      -run:
+          name: cat
+          command: cat /root/project/books/cloud/dest/references.bib
+

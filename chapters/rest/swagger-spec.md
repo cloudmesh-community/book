@@ -1,4 +1,4 @@
-# OpenAPI Specification {#sec:openapi-spec}
+# OpenAPI 2.0 Specification {#sec:openapi-spec}
 
 Swagger provides through its specification the definition of REST
 services through a YAML or JSON document.

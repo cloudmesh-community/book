@@ -3,7 +3,7 @@ metadata:
   image: "cover.png"
   title: "Cloud Computing"
   subtitle: ""
-  author: 'Gregor von Laszewski'
+  author: "Gregor von Laszewski"
   subauthor: "Editor"
   email: "laszewski@gmail.com"
   url: "https://cloudmesh-community.github.io/book/vonlaszewski-cloud.epub"
@@ -32,7 +32,7 @@ BOOK:
     - "{file.chapter}/authors.md"
     - "{file.chapter}/preface/notation.md"
     - "{file.chapter}/preface/updates.md"
-  - "file://./overview.md"
+  - "{file.chapter}/class/516/overview.md"
   - "{file.chapter}/cloud/definition.md"
   - DATACENTER:
     - "{file.chapter}/cloud/datacenter.md"
@@ -42,22 +42,23 @@ BOOK:
     - "{file.chapter}/cloud/arch-scheduling.md"
   - REST:
     - "{file.chapter}/rest/rest.md"
-    - AI:
-      - "{file.chapter}/rest/rest-ai.md"
     - OPENAPI_3.0:
       - "{file.chapter}/rest/rest-spec.md"
       - "{file.chapter}/rest/swagger-introspection.md"
-    - OPENAPI_2.0:
-      - "{file.chapter}/rest/swagger.md"
-      - "{file.chapter}/rest/swagger-spec.md"
-      - "{file.chapter}/rest/swagger-introspection-2-0.md"
-      - "{file.chapter}/rest/swagger-codegen.md"
-      - "{file.chapter}/rest/rest-restful.md"
+      - "{file.chapter}/rest/rest-ai.md"
+    - "{file.chapter}/rest/rest-restful.md"
+    - "{file.chapter}/rest/rest-django.md"
+    - "{file.chapter}/prg/github.md"
+    - "{file.chapter}/rest/swagger.md"
+    - REST_WITH_EVE:
       - "{file.chapter}/rest/rest-eve.md"
       - "{file.chapter}/rest/rest-haetos.md"
       - "{file.chapter}/rest/rest-eve-extensions.md"
-      - "{file.chapter}/rest/rest-django.md"
-    - "{file.chapter}/prg/github.md"
+    - OPENAPI_2.0:
+      - "{file.chapter}/rest/swagger-spec.md"
+      - "{file.chapter}/rest/swagger-introspection-2-0.md"
+      - "{file.chapter}/rest/swagger-codegen.md"
+    - "{file.chapter}/rest/rest-excersises.md"
   - "{file.chapter}/graphql/graphql.md"
   - HYPERVISOR:
     - "{file.chapter}/cloud/virtualization.md"
@@ -77,6 +78,7 @@ BOOK:
     - HADOOP:
       - "{file.chapter}/mapreduce/hadoop-lectures.md"
       - "{file.chapter}/mapreduce/hadoop-installation.md"
+      - "{file.chapter}/mapreduce/hadoop-hdfs.md"
       - "{file.chapter}/mapreduce/cm-hadoop.md"
     - SPARK:
       - "{file.chapter}/mapreduce/spark-lectures.md"
@@ -86,7 +88,7 @@ BOOK:
     - HADOOP_ECOSYSTEM:
       - ELASTIC_MAP_REDUCE:
         - "{file.chapter}/mapreduce/aws-emr.md"
-        - "{file.chapter}/mapreduce/amazon-emr-1.md"
+#        - "{file.chapter}/mapreduce/amazon-emr-1.md"
       - TWISTER:
         - "{file.chapter}/mapreduce/twister.md"
         - "{file.chapter}/mapreduce/twister-installation.md"
