@@ -33,6 +33,10 @@ BOOK:
     - "{file.chapter}/bigdata/week2.md"
   - WEEK_3:
     - "{file.chapter}/bigdata/week3.md"
+  - WEEK_4:
+      - "{file.chapter}/bigdata/week4.md"
+  - WEEK_5:
+      - "{file.chapter}/bigdata/week5.md"
   - ASSIGNMENTS:
       - "{file.chapter}/bigdata/assignments/index.md"
       - WEEKLY_ASSIGNMENTS:
