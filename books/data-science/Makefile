@@ -1,4 +1,4 @@
-NAME=python
+NAME=data-science
 HOME=../..
 
 include ../makefile.sys
