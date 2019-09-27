@@ -34,6 +34,7 @@ BOOK:
   - FIRST_STEPS:
     - "{file.chapter}/prg/python/python-interactive.md"
     - "{file.chapter}/prg/python/python-editor.md"
+    - "{file.chapter}/prg/python/google-colab/python-google-colab.md"
   - LANGUAGE:
     - "{file.chapter}/prg/python/python.md"
   - CLOUDMESH:
