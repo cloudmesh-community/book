@@ -34,7 +34,7 @@ BOOK:
   - WEEK_3:
     - "{file.chapter}/bigdata/week3.md"
   - WEEK_4:
-      - "{file.chapter}/bigdata/week4.md"
+      - "{file.chapter}/prg/python/google-colab/python-google-colab.md"
   - WEEK_5:
       - "{file.chapter}/bigdata/week5.md"
   - ASSIGNMENTS:

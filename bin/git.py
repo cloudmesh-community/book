@@ -41,7 +41,8 @@ repos = [
 #["fa19-523-211","Yu-Hsi Chiang", "chiayuhs0718"]
 
 
-["fa19-523-212", "Josiah Clemons", "JLemon1"]
+# ["fa19-523-212", "Josiah Clemons", "JLemon1"]
+
 
 #["fa19-516-159", "Austin Zebrowski", "azebrowski"],
 #"fa19-516-160","Shreyans Jain", "toshreyansjain"],
@@ -59,6 +60,8 @@ repos = [
 #["fa19-516-156", "Manikandan Nagarajan", "ManiNagarajan20"],
 #["fa19-516-157", "Chenxu Wang",	"wang542"],
 #["fa19-516-158", "Daivik Dayanand", "Daivik1997"]
+["fa19-516-174", "Sahithi Ancha", "sahancha"]
+
 #    ["fa19-516-000", "Gregor von Laszewski", "laszewsk"]
 ]
 
