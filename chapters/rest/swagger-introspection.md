@@ -1,4 +1,4 @@
-# OpenAPI REST Service via Introspection {#sec:openapi-introspection}
+# OpenAPI 3.0 REST Service via Introspection {#sec:openapi-introspection}
 
 The simplest way to create an OpenAPI service is to use the conexion
 service and read in the specification from its yaml file. It will than
@@ -7,9 +7,9 @@ the implementation of the server.
 
 The full example for this is available in
 
-* <https://github.com/cloudmesh-community/nist/tree/master/examples/flask-connexion-swagger>
+* <https://github.com/cloudmesh-community/book/tree/master/examples/rest/cpu>
 
-An extensive documentation is avalable at
+An extensive documentation is available at
 
 * <https://media.readthedocs.org/pdf/connexion/latest/connexion.pdf>
 
@@ -52,7 +52,7 @@ from `cpu.py`
 
 The yaml file looks as follows
 
-```
+```yaml
 openapi: 3.0.2
 info:
   title: cpuinfo
@@ -168,6 +168,23 @@ A terminal based command may als be helpful, but is a bit difficult to read.
 ```bash
 $ connexion run cpu.yaml --stub --debug
 ```
+
+## Swagger-UI 
+
+Swagger comes with a convenient UI to invoke REST API calls using the web 
+browser rather than relying on the curl commands. 
+
+Once the request and response definitions are properly specified, you can start 
+the server by, 
+
+```bash
+$ python server.py
+``` 
+
+Then the UI would also be spawned under the service URL *http://\[service url\]/ui/*
+
+Example: <http://localhost:8080/cloudmesh/ui/>
+
 
 ## Mock service
 

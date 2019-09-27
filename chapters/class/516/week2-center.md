@@ -4,7 +4,7 @@
 
 The online meeting recording from Tue Sep 3, 2019 is available from this link:
 
-* [![Video](images/video.png) Online Meeting Recording for Week 2](https://www.youtube.com/watch?v=kezPx0QHrt8)
+* [![Video](images/video.png) Online Meeting Recording for Week 2 (48:38)](https://www.youtube.com/watch?v=kezPx0QHrt8)
 
 This meeting lasted actually half an hour later, but included duplicated
 questions that we removed.

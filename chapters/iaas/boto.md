@@ -2,6 +2,9 @@
 
 ![Construction](images/construction.png)
 
+:o2: This section has some features missing and does not yet use cloudmesh v4
+
+
 Boto is a software development kit (SDK) that provides AWS interface for Python
 applications. It enables to write applications in Python that make use of Amazon
 Web Services.
