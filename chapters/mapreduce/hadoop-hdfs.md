@@ -96,3 +96,11 @@ bin/hadoop dfs -cat /foodir/myfile.txt
 
 * HDFS Java API: https://hadoop.apache.org/core/docs/current/api/
 * HDFS source code: https://hadoop.apache.org/hdfs/version_control.html
+
+
+## Exercises
+
+* Hadoop Installation on your own Laptop/Desktop
+* Hadoop MapReduce programming in Python
+* Hadoop Installation on a cluster (at least two nodes in the cluster)
+* Run MapReduce in a cluster
