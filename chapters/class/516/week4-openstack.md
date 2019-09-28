@@ -4,7 +4,7 @@
 
 In case you have not yet created an ssh key, the following video is
 useful. This can be replicated on any Linux, macOS and Windows 10
-mashine, in case of Windows 10 use gitbash
+machine, in case of Windows 10 use gitbash
 
 * [![Video](images/video.png) SSH keygen (4:07)](https://www.youtube.com/watch?v=pQb2VV1zNIc)
 
@@ -28,7 +28,7 @@ A number of videos on explaining the internals of cloudmesh is avalable here:
 
 
 The first video introduces you to cloudmesh common a library to execute
-commands on your os oand interact with it
+commands on your os and interact with it
 
 * [![Video](images/video.png) cloudmesh-common (13:40)](https://www.youtube.com/watch?v=o9AcgNheVls)
 
@@ -41,12 +41,12 @@ the Providers, which is one goal for this semester.
 
 
 The third video tells you about the cloudmesh-storage project that is 
-supposed to be don in the project, thi inclused
+supposed to be don in the project, this includes
 
 * better tests
 * completion of additional providers
 * using of Processpool and mongodb for managing files to be copied
-* the creation of a REST servoce that includes the pool to allow copy
+* the creation of a REST service that includes the pool to allow copy
   from one cloud to another.
 
 * [![Video](images/video.png) cloudmesh-storage (8:03)](https://www.youtube.com/watch?v=eKPMD7qDXSc)
@@ -94,20 +94,20 @@ we will run out of node hours for the class if we do so.
 
 ## Horizon
 
-The information on ho to use it is available in the Chameleon book.
+The information on how to use Horizon is available in the Chameleon book.
 
 A video of the meeting on Tuesday 17 Sep will be made available
 
 
 ## Cloudmesh OpenStack interface
 
-The information on ho to use it is available in the Chameleon book.
+The information on howto use it is available in the Chameleon book.
 
 A video of the meeting on Tuesday 17 Sep will be made available
 
 ## OpenStack Command line Client
 
-The information on ho to use it is available in the Chameleon book.
+The information on how to use it is available in the Chameleon book.
 
 
 ### Installation of Cloudmesh Cloud Bundle
@@ -156,9 +156,9 @@ $ ssh-keygen
 
 ### Cloudmesh Mongo 
 
-Setting up cloudmesh Mongo is discussed in the cloudmesh manual. W
-esuggest you do the one discussed in the distribution section for your
-system. It is actually build into cloudmesh, but before you do it, we
+Setting up cloudmesh Mongo is discussed in the cloudmesh manual. We
+suggest you do the one discussed in the distribution section for your
+system. It is actually built into cloudmesh, but before you do it, we
 suggest you backup yor machine.
 
 ```bash
