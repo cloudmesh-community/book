@@ -6,10 +6,10 @@ Here we summarize the Projects and teams. Place the document in your github fold
 
 | HID	| Status |	Names |	Project| 
 | ---- | ---- | ---- | ---- |
-| 160 | approved |	Shreyans |	Azure to Google Cloudmesh Storage Provider for Virtual Directories: see cloudmesh-storage to start. develop OpenAPI REST services for it|
-| 152 | approved | Pratibha	| Google to/form AWS: Cloudmesh Storage Provider for Virtual Directories: see cloudmesh-storage to start. develop OpenAPI REST services for it| 
-| 162	| approved | Shivani | Oracle to/from ? Storage Service (Residential) 534, (see: cloudmesh-storage), Provide a REST service for it based on OpenAPI that uses the cloudmesh API you develop. see also Python, implement virtual directory from local first |
-| 155	| approved | Ketan	| Azure to/form AWS blob Storage Service, (see: cloudmesh-storage), Provide a REST service for it based on OpenAPI that uses the cloudmesh API you develop. |
+| [160](https://github.com/cloudmesh-community/fa19-516-160/blob/master/project/report.md) | approved |	Shreyans |	Azure to Google Cloudmesh Storage Provider for Virtual Directories: see cloudmesh-storage to start. develop OpenAPI REST services for it|
+| [152](https://github.com/cloudmesh-community/fa19-516-152/blob/master/project/report.md) | approved | Pratibha	| Google to/form AWS: Cloudmesh Storage Provider for Virtual Directories: see cloudmesh-storage to start. develop OpenAPI REST services for it| 
+| [162](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md)	| approved | Shivani | Oracle to/from ? Storage Service (Residential) 534, (see: cloudmesh-storage), Provide a REST service for it based on OpenAPI that uses the cloudmesh API you develop. see also Python, implement virtual directory from local first |
+| [155](https://github.com/cloudmesh-community/fa19-516-155/blob/master/project/report.md)	| approved | Ketan	| Azure to/form AWS blob Storage Service, (see: cloudmesh-storage), Provide a REST service for it based on OpenAPI that uses the cloudmesh API you develop. |
 | all |	 | |  if this works technically we should be able to coppy between all clouds as we have all services for each cloud and each speaks the same protocol |
 
 
@@ -19,7 +19,7 @@ Here we summarize the Projects and teams. Place the document in your github fold
 
 | HID	| Status |	Names |	Project| 
 | ---- | ---- | ---- | ---- |
-| fa19-516-162	| approved	| Shivani | 	516: Oracle Compute Service (Residential), see also Python
+| 162	| approved	| Shivani | 	516: Oracle Compute Service (Residential), see also Python
 | 165	| approved	| Zhi	| Google Compute Service, gregor will set up new repo for this, you can start identifying python API and implement functions to list images, flavors, start vms upload keys and security groups, once repo is set up you need to start uploading your contributions on weekly basis
 | 170	| approved	| Chenxu |	Azure Cloudmesh Compute - The secgroup command is not working, extensive testing needs to be done. As this project is mostly finished, you will compare the performance from Azure with other clouds such as OpenStack, AWS, and possibly Oracle, and Google once they become available. You would help improve any of the missing clouds once secgroup is done (Oracle, Google). IT is best to start right away with this and learn how to start vms in Azure.
 | 169	| approved	| Harsh	| Developing Cloudmesh interfaces for Google Cloud Platform. The two cloud implementation to be demonstrated using GCP and AWS |
