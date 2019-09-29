@@ -29,6 +29,7 @@ BOOK:
     - "{file.chapter}/version.md"
     - "{git.credit}/disclaimer.md"
   - REPORTS:
+    - "https://raw.githubusercontent.com/cloudmesh-community/book/master/books/516/reports.md"
     - "{file.community}/fa19-516-140/master/project/report.md"
     - "{file.community}/fa19-516-144/master/project/report.md"
     - "{file.community}/fa19-516-147/master/project/report.md"
