@@ -50,7 +50,7 @@ NIST BigDataInterface reference implementation for data base absractions on 2 cl
 | ---- | ---- | ---- | ---- |
 | 167 | approved |Bill	|Cloudmesh Virtual Directory Life Cycle Service, This needs to run on 2 clouds + locally.  TTL = time to live is one, attribute for lifecycle management. Bi9ll explained this is more than ttl.
 | 166 |	approved |Brian Funk	| Cloudmesh Frugal with AWS, Azure, and Google Cloud.
-| 159 | TBD | Austin Zebrowski | Apache Airflow data pipelining between HDFS and Amazon Redshift
+| [159](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) | TBD | Austin Zebrowski | Apache Airflow data pipelining between HDFS and Amazon Redshift
 | 171 | TBD	| Jagadesh	| Title missing |
 | 144 | 
 | 172 | TBD	| Andrew Holland
