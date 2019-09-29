@@ -1,7 +1,5 @@
 # Report List
 
-TBD. table
-
 Here we summarize the Projects and teams. Place the document in your github folder under project/report.md. Please make sure to use proper markdown and not githubs common mark. Once the reports are created they will at one point also show up in the proceedings.
 
 ## CLOUD STORAGE-STORAGE-LOCAL PROJECTS
