@@ -30,7 +30,7 @@ Here we summarize the Projects and teams. Place the document in your github fold
 | HID	| Status |	Names |	Project| 
 | ---- | ---- | ---- | ---- |
 | [148](https://github.com/cloudmesh-community/fa19-516-148/blob/master/project/report.md)	| approved |	Sub|	Federated Kubernetes Cluster with Raspberry PI
-| [158](https://github.com/cloudmesh-community/fa19-516-158/blob/master/project/report.md) [150](https://github.com/cloudmesh-community/fa19-516-150/blob/master/project/report.md)	| approved	| Daivik Akshay	Raspberry Pi Cloud Cluster for Spark, Raspberry Pi Cloud Cluster for Hadoop
+| [158](https://github.com/cloudmesh-community/fa19-516-158/blob/master/project/report.md) [150](https://github.com/cloudmesh-community/fa19-516-150/blob/master/project/report.md)	| approved	| Daivik Akshay	| Raspberry Pi Cloud Cluster for Spark, Raspberry Pi Cloud Cluster for Hadoop
 
 ## DATABASE ABSTRACTION PROJECTS
 
@@ -54,10 +54,7 @@ NIST BigDataInterface reference implementation for data base absractions on 2 cl
 | [172](https://github.com/cloudmesh-community/fa19-516-172/blob/master/project/report.md) | TBD	| Andrew Holland
 |     | TBD | Nayeem	
 |     |     |    | Introduce Encryption Functionality for Cloudmesh Configuration File
-| [161](https://github.com/cloudmesh-community/fa19-516-161/blob/master/project/report.md) | approved |	Jim Nelson	Batch Processing using Kubernetes and Cloudmesh
-batch processing - of r programs - virtual cluster for batch
-processing r programs in kubernetes / vms cloudmesh may help.
-gregor suggests to use kubernetes to do batch jobs on it. Possibly cloudmeh-flow would help, but we do the jobs on cubernetes, while the bactch jobs are formulated as workflows.
+| [161](https://github.com/cloudmesh-community/fa19-516-161/blob/master/project/report.md) | approved |	Jim Nelson	| Batch Processing using Kubernetes and Cloudmesh batch processing - of r programs - virtual cluster for batch processing r programs in kubernetes / vms cloudmesh may help. gregor suggests to use kubernetes to do batch jobs on it. Possibly cloudmeh-flow would help, but we do the jobs on cubernetes, while the bactch jobs are formulated as workflows.
 | [153](https://github.com/cloudmesh-community/fa19-516-153/blob/master/project/report.md) [164](https://github.com/cloudmesh-community/fa19-516-164/blob/master/project/report.md)	| approved |	Anish, Siddhesh	| Hadoop/Spark Cluster abstraction layer - dynamically changing available machines/storage available to hadoop/spark instances using orchestration tool and command line
 | [174](https://github.com/cloudmesh-community/fa19-516-174/blob/master/project/report.md) | TBD |		Sahithi	R
 | [151](https://github.com/cloudmesh-community/fa19-516-151/blob/master/project/report.md) | approved | Qiwei Liu, Yanting, Chenxu	Cloudmesh Cloud AI Services.
