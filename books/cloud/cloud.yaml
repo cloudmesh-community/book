@@ -79,6 +79,7 @@ BOOK:
       - "{file.chapter}/mapreduce/hadoop-lectures.md"
       - "{file.chapter}/mapreduce/hadoop-installation.md"
       - "{file.chapter}/mapreduce/hadoop-hdfs.md"
+      - "{file.chapter}/mapreduce/hadoop-hbase.md"
       - "{file.chapter}/mapreduce/cm-hadoop.md"
     - SPARK:
       - "{file.chapter}/mapreduce/spark-lectures.md"
