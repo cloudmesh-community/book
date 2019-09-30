@@ -4,17 +4,13 @@ Here we summarize the Projects and teams. Place the document in your github fold
 
 ## CLOUD STORAGE-STORAGE-LOCAL PROJECTS
 
-<div class="smalltable">
-
 | HID	| Status |	Names |	Project| 
-| - | -- | --- | --------------- |
+|-|--|---|---------------|
 | [160](https://github.com/cloudmesh-community/fa19-516-160/blob/master/project/report.md) | approved |	Shreyans |	Azure to Google Cloudmesh Storage Provider for Virtual Directories: see cloudmesh-storage to start. develop OpenAPI REST services for it|
 | [152](https://github.com/cloudmesh-community/fa19-516-152/blob/master/project/report.md) | approved | Pratibha	| Google to/form AWS: Cloudmesh Storage Provider for Virtual Directories: see cloudmesh-storage to start. develop OpenAPI REST services for it| 
 | [162](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md)	| approved | Shivani | Oracle to/from ? Storage Service (Residential) 534, (see: cloudmesh-storage), Provide a REST service for it based on OpenAPI that uses the cloudmesh API you develop. see also Python, implement virtual directory from local first |
 | [155](https://github.com/cloudmesh-community/fa19-516-155/blob/master/project/report.md)	| approved | Ketan	| Azure to/form AWS blob Storage Service, (see: cloudmesh-storage), Provide a REST service for it based on OpenAPI that uses the cloudmesh API you develop. |
 | all |	 | |  if this works technically we should be able to coppy between all clouds as we have all services for each cloud and each speaks the same protocol |
-
-</div>
 
 
 ## CLOUDMESH COMPUTE PROJECTS
