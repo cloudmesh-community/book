@@ -7,13 +7,21 @@ will at one point also show up in the proceedings.
 
 ## CLOUD STORAGE-STORAGE-LOCAL PROJECTS
 
+* see cloudmesh-storage to start. 
+* all need to contribute to the local provider
+* see the commandline interface.
+* develop Python API.
+* develop OpenAPI REST services for it.
+* if this works technically we should be able to copy between all clouds as we have 
+  all services for each cloud and each speaks the same protocol. This means your benchmark must include all clouds
+
+
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
-| [160] | approved |	Shreyans |	[Azure to Google Cloudmesh Storage Provider for Virtual Directories](https://github.com/cloudmesh-community/fa19-516-160/blob/master/project/report.md): see cloudmesh-storage to start. develop OpenAPI REST services for it|
-| [152] | approved | Pratibha	| [Google to/form AWS: Cloudmesh Storage Provider for Virtual Directories](https://github.com/cloudmesh-community/fa19-516-152/blob/master/project/report.md): see cloudmesh-storage to start. develop OpenAPI REST services for it| 
-| [162]	| approved | Shivani | [Oracle to/from ? Storage Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) (Residential) 534, (see: cloudmesh-storage), Provide a REST service for it based on OpenAPI that uses the cloudmesh API you develop. see also Python, implement virtual directory from local first |
-| [155]	| approved | Ketan	| [Azure to/form AWS blob Storage Service](https://github.com/cloudmesh-community/fa19-516-155/blob/master/project/report.md), (see: cloudmesh-storage), Provide a REST service for it based on OpenAPI that uses the cloudmesh API you develop. |
-| all   |	       | |  if this works technically we should be able to coppy between all clouds as we have all services for each cloud and each speaks the same protocol |
+| [160] | approved |	Shreyans |	[Azure to Google Cloudmesh Storage Provider for Virtual Directories](https://github.com/cloudmesh-community/fa19-516-160/blob/master/project/report.md) |
+| [152] | approved | Pratibha	| [Google to/form AWS: Cloudmesh Storage Provider for Virtual Directories](https://github.com/cloudmesh-community/fa19-516-152/blob/master/project/report.md) | 
+| [162]	| approved | Shivani | [Oracle to/from ? Storage Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) (Residential) 534|
+| [155]	| approved | Ketan	| [Azure to/form AWS blob Storage Service](https://github.com/cloudmesh-community/fa19-516-155/blob/master/project/report.md)  |
 
 [160]: https://github.com/cloudmesh-community/fa19-516-160
 [152]: https://github.com/cloudmesh-community/fa19-516-152
