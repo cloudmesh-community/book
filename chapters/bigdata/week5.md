@@ -84,7 +84,6 @@ and in change in shape of background
 
 ## Unit 10 
 
-https://www.youtube.com/playlist?list=PLy0VLh_GFyz-Er5TNFj1I8ihPOXnhicj0
 In this unit we discuss;
 
 E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson:
@@ -165,8 +164,6 @@ and insufficient statistics with a Python example in getting incorrect answers.
 [![Video](images/physics/physics-10.6.png){width=20%}](https://youtu.be/n4jlUrGwgic?list=PLy0VLh_GFyz-Er5TNFj1I8ihPOXnhicj0)
 
 ## Unit 11
-
-https://www.youtube.com/playlist?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs
 
 In this section we discuss;
 
