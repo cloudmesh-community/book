@@ -1,6 +1,6 @@
-# Assignment 3
+# Assignment 4
 
-In the third assignment, you will be working on (see @sec:534-week3)
+In the fourth assignment, you will be working on (see @sec:534-week5)
 lecture videos. Objectives are as follows.
 
 1. Summarize what you have understood. (2 page)
@@ -17,7 +17,7 @@ you can reach a TA to learn how to do that. We will try to include some
 chapters on how to do this in our handbook. Submissions are in pdf
 format only.
 
-[Go to Canvas](https://iu.instructure.com/courses/1824048/assignments/9785089)
+[Go to Canvas](https://iu.instructure.com/courses/1824048/assignments/9826766)
 
 
 

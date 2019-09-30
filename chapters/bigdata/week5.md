@@ -1,398 +1,250 @@
-# Week 5 {#sec:534-week5}
-
-## Deep Learning Lesson 1: MNIST Classification Version 1
-
-## Using Cloudmesh Common
-
-Here we do a simple benchmark. We calculate compile time, train time, test time and data loading time for this example.
-Installing cloudmesh-common library is the first step.
-
-
-```python
-!pip install cloudmesh-common
-```
-
-    Collecting cloudmesh-common
-    [?25l  Downloading https://files.pythonhosted.org/packages/42/72/3c4aabce294273db9819be4a0a350f506d2b50c19b7177fb6cfe1cbbfe63/cloudmesh_common-4.2.13-py2.py3-none-any.whl (55kB)
-    [K     |████████████████████████████████| 61kB 4.1MB/s
-    [?25hRequirement already satisfied: future in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (0.16.0)
-    Collecting pathlib2 (from cloudmesh-common)
-      Downloading https://files.pythonhosted.org/packages/e9/45/9c82d3666af4ef9f221cbb954e1d77ddbb513faf552aea6df5f37f1a4859/pathlib2-2.3.5-py2.py3-none-any.whl
-    Requirement already satisfied: python-dateutil in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (2.5.3)
-    Collecting simplejson (from cloudmesh-common)
-    [?25l  Downloading https://files.pythonhosted.org/packages/e3/24/c35fb1c1c315fc0fffe61ea00d3f88e85469004713dab488dee4f35b0aff/simplejson-3.16.0.tar.gz (81kB)
-    [K     |████████████████████████████████| 81kB 10.6MB/s
-    [?25hCollecting python-hostlist (from cloudmesh-common)
-      Downloading https://files.pythonhosted.org/packages/3d/0f/1846a7a0bdd5d890b6c07f34be89d1571a6addbe59efe59b7b0777e44924/python-hostlist-1.18.tar.gz
-    Requirement already satisfied: pathlib in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (1.0.1)
-    Collecting colorama (from cloudmesh-common)
-      Downloading https://files.pythonhosted.org/packages/4f/a6/728666f39bfff1719fc94c481890b2106837da9318031f71a8424b662e12/colorama-0.4.1-py2.py3-none-any.whl
-    Collecting oyaml (from cloudmesh-common)
-      Downloading https://files.pythonhosted.org/packages/00/37/ec89398d3163f8f63d892328730e04b3a10927e3780af25baf1ec74f880f/oyaml-0.9-py2.py3-none-any.whl
-    Requirement already satisfied: humanize in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (0.5.1)
-    Requirement already satisfied: psutil in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (5.4.8)
-    Requirement already satisfied: six in /usr/local/lib/python3.6/dist-packages (from pathlib2->cloudmesh-common) (1.12.0)
-    Requirement already satisfied: pyyaml in /usr/local/lib/python3.6/dist-packages (from oyaml->cloudmesh-common) (3.13)
-    Building wheels for collected packages: simplejson, python-hostlist
-      Building wheel for simplejson (setup.py) ... [?25l[?25hdone
-      Created wheel for simplejson: filename=simplejson-3.16.0-cp36-cp36m-linux_x86_64.whl size=114018 sha256=a6f35adb86819ff3de6c0afe475229029305b1c55c5a32b442fe94cda9500464
-      Stored in directory: /root/.cache/pip/wheels/5d/1a/1e/0350bb3df3e74215cd91325344cc86c2c691f5306eb4d22c77
-      Building wheel for python-hostlist (setup.py) ... [?25l[?25hdone
-      Created wheel for python-hostlist: filename=python_hostlist-1.18-cp36-none-any.whl size=38517 sha256=71fbb29433b52fab625e17ef2038476b910bc80b29a822ed00a783d3b1fb73e4
-      Stored in directory: /root/.cache/pip/wheels/56/db/1d/b28216dccd982a983d8da66572c497d6a2e485eba7c4d6cba3
-    Successfully built simplejson python-hostlist
-    Installing collected packages: pathlib2, simplejson, python-hostlist, colorama, oyaml, cloudmesh-common
-    Successfully installed cloudmesh-common-4.2.13 colorama-0.4.1 oyaml-0.9 pathlib2-2.3.5 python-hostlist-1.18 simplejson-3.16.0
+# Physics with Big Data Applications {#sec:534-week5}
 
+E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson Part I (Unit 8)
+Section Units 9-11 Summary: This section starts by describing the LHC accelerator at CERN and evidence found by the
+experiments suggesting existence of a Higgs Boson. The huge number of authors on a paper, remarks on histograms and
+Feynman diagrams is followed by an accelerator picture gallery. The next unit is devoted to Python experiments looking
+at histograms of Higgs Boson production with various forms of shape of signal and various background and with various
+event totals. Then random variables and some simple principles of statistics are introduced with explanation as to why
+they are relevant to Physics counting experiments. The unit introduces Gaussian (normal) distributions and explains why
+they seen so often in natural phenomena. Several Python illustrations are given. Random Numbers with their Generators
+and Seeds lead to a discussion of Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods.
+The Central Limit Theorem concludes discussion.
 
+## Unit 8:
 
-In this lesson we discuss in how to create a simple IPython Notebook to solve
-an image classification problem. MNIST contains a set of pictures
+### 8.1 - Looking for Higgs: 1. Particle and Counting Introduction 1
 
+We return to particle case with slides used in introduction and stress that particles often manifested as bumps in histograms and those bumps need to be large enough to stand out from background in a statistically significant fashion.
 
+[![Video](images/physics/physics-8.1.png){width=20%}](https://youtu.be/L0wIh0Z-ZwI?list=PLy0VLh_GFyz9xQWimvDcKEx_crcYy-B5O)
 
-```python
-! python3 --version
-```
+### 8.2 - Looking for Higgs: 2. Particle and Counting Introduction 2
 
-    Python 3.6.8
+We give a few details on one LHC experiment ATLAS. Experimental physics papers have a staggering number of authors and quite big budgets. Feynman diagrams describe processes in a fundamental fashion.
 
+[![Video](images/physics/physics-8.2.png){width=20%}](https://youtu.be/ulX3oIiAusI?list=PLy0VLh_GFyz9xQWimvDcKEx_crcYy-B5O)
 
+### 8.3 - Looking for Higgs: 3. Particle Experiments
 
-```python
-! pip install tensorflow-gpu==1.14.0
-```
+We give a few details on one LHC experiment ATLAS. Experimental physics papers have a staggering number of authors and quite big budgets. Feynman diagrams describe processes in a fundamental fashion
 
-    Collecting tensorflow-gpu==1.14.0
-    [?25l  Downloading https://files.pythonhosted.org/packages/76/04/43153bfdfcf6c9a4c38ecdb971ca9a75b9a791bb69a764d652c359aca504/tensorflow_gpu-1.14.0-cp36-cp36m-manylinux1_x86_64.whl (377.0MB)
-    [K     |████████████████████████████████| 377.0MB 77kB/s
-    [?25hRequirement already satisfied: six>=1.10.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.12.0)
-    Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.15.0)
-    Requirement already satisfied: protobuf>=3.6.1 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (3.7.1)
-    Requirement already satisfied: keras-applications>=1.0.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.0.8)
-    Requirement already satisfied: gast>=0.2.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.2.2)
-    Requirement already satisfied: astor>=0.6.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.8.0)
-    Requirement already satisfied: absl-py>=0.7.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.8.0)
-    Requirement already satisfied: wrapt>=1.11.1 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.11.2)
-    Requirement already satisfied: wheel>=0.26 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.33.6)
-    Requirement already satisfied: tensorflow-estimator<1.15.0rc0,>=1.14.0rc0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.14.0)
-    Requirement already satisfied: tensorboard<1.15.0,>=1.14.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.14.0)
-    Requirement already satisfied: numpy<2.0,>=1.14.5 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.16.5)
-    Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.1.0)
-    Requirement already satisfied: keras-preprocessing>=1.0.5 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.1.0)
-    Requirement already satisfied: google-pasta>=0.1.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.1.7)
-    Requirement already satisfied: setuptools in /usr/local/lib/python3.6/dist-packages (from protobuf>=3.6.1->tensorflow-gpu==1.14.0) (41.2.0)
-    Requirement already satisfied: h5py in /usr/local/lib/python3.6/dist-packages (from keras-applications>=1.0.6->tensorflow-gpu==1.14.0) (2.8.0)
-    Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.6/dist-packages (from tensorboard<1.15.0,>=1.14.0->tensorflow-gpu==1.14.0) (3.1.1)
-    Requirement already satisfied: werkzeug>=0.11.15 in /usr/local/lib/python3.6/dist-packages (from tensorboard<1.15.0,>=1.14.0->tensorflow-gpu==1.14.0) (0.15.6)
-    Installing collected packages: tensorflow-gpu
-    Successfully installed tensorflow-gpu-1.14.0
+[![Video](images/physics/physics-8.3.png){width=20%}](https://youtu.be/BW12d780qT8?list=PLy0VLh_GFyz9xQWimvDcKEx_crcYy-B5O)
 
+### 8.4 - Looking for Higgs:  4. Accelerator Picture Gallery of Big Science
 
-## Import Libraries
+This lesson gives a small picture gallery of accelerators. Accelerators, detection chambers and magnets in tunnels and a large underground laboratory used fpr experiments where you need to be shielded from background like cosmic rays.
 
-Note: https://python-future.org/quickstart.html
+[![Video](images/physics/physics-8.4.png){width=20%}](https://youtu.be/WLJIxWWMYi8?list=PLy0VLh_GFyz9xQWimvDcKEx_crcYy-B5O)
 
 
-```python
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
 
-import time
+## Unit 9
 
-import numpy as np
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout
-from keras.utils import to_categorical, plot_model
-from keras.datasets import mnist
+This unit is devoted to Python experiments with Geoffrey looking at 
+histograms of Higgs Boson production with various forms of shape of 
+signal and various background and with various event totals
 
-from cloudmesh.common.StopWatch import StopWatch
 
-```
+### 9.1 - Looking for Higgs II: 1: Class Software 
 
-    Using TensorFlow backend.
+We discuss how this unit uses Java (deprecated) and Python on both a backend server
+(FutureGrid - closed!) or a local client. We point out useful book on
+Python for data analysis. This lesson is deprecated. Follow current
+technology for class
 
+[![Video](images/physics/physics-9.1.png){width=20%}](https://youtu.be/tOFJEUM-Vww?list=PLy0VLh_GFyz-3jA9KSt9N1fcuZoGfpZnR)
 
-## Pre-process data
 
-### Load data
+### 9.2 - Looking for Higgs II: 2: Event Counting 
 
-First we load the data from the inbuilt mnist dataset from Keras
+We define ''event counting'' data collection environments. We discuss the python and Java
+code to generate events according to a particular scenario (the
+important idea of Monte Carlo data). Here a sloping background plus
+either a Higgs particle generated similarly to LHC observation or one
+observed with better resolution (smaller measurement error).
 
+[![Video](images/physics/physics-9.2.png){width=20%}](https://youtu.be/h8-szCeFugQ?list=PLy0VLh_GFyz-3jA9KSt9N1fcuZoGfpZnR)
 
-```python
-StopWatch.start("data-load")
-(x_train, y_train), (x_test, y_test) = mnist.load_data()
-StopWatch.stop("data-load")
-```
+### 9.3 - Looking for Higgs II: 3: With Python examples of Signal plus Background 
 
-    Downloading data from https://s3.amazonaws.com/img-datasets/mnist.npz
-    11493376/11490434 [==============================] - 1s 0us/step
+This uses Monte Carlo data both to generate data like the
+experimental observations and explore effect of changing amount of data
+and changing measurement resolution for Higgs.
 
+[![Video](images/physics/physics-9.3.png){width=20%}](https://youtu.be/bl2f0tAzLj4?list=PLy0VLh_GFyz-3jA9KSt9N1fcuZoGfpZnR)
 
-### Identify Number of Classes
+### 9.4 - Looking for Higgs II: 4: Change shape of background & number of Higgs Particles 
 
-As this is a number classification problem. We need to know how many classes are there.
-So we'll count the number of unique labels.
+This lesson continues the examination of Monte Carlo
+data looking at effect of change in number of Higgs particles produced
+and in change in shape of background
 
+[![Video](images/physics/physics-9.4.png){width=20%}](https://youtu.be/bw3fd5cfQhk?list=PLy0VLh_GFyz-3jA9KSt9N1fcuZoGfpZnR)
 
-```python
-num_labels = len(np.unique(y_train))
-```
+## Unit 10 
 
-### Convert Labels To One-Hot Vector
+https://www.youtube.com/playlist?list=PLy0VLh_GFyz-Er5TNFj1I8ihPOXnhicj0
+In this unit we discuss;
 
-**|Exercise:** Understand what is an one-hot vector?
+E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson:
+Big Data Higgs Unit 10: Looking for Higgs Particles Part III: Random
+Variables, Physics and Normal Distributions Section Units 9-11 Summary:
+This section starts by describing the LHC accelerator at CERN and
+evidence found by the experiments suggesting existence of a Higgs Boson.
+The huge number of authors on a paper, remarks on histograms and Feynman
+diagrams is followed by an accelerator picture gallery. The next unit is
+devoted to Python experiments looking at histograms of Higgs Boson
+production with various forms of shape of signal and various background
+and with various event totals. Then random variables and some simple
+principles of statistics are introduced with explanation as to why they
+are relevant to Physics counting experiments. The unit introduces
+Gaussian (normal) distributions and explains why they seen so often in
+natural phenomena. Several Python illustrations are given. Random
+Numbers with their Generators and Seeds lead to a discussion of Binomial
+and Poisson Distribution. Monte-Carlo and accept-reject methods. The
+Central Limit Theorem concludes discussion. Big Data Higgs Unit 10:
+Looking for Higgs Particles Part III: Random Variables, Physics and
+Normal Distributions Overview: Geoffrey introduces random variables and
+some simple principles of statistics and explains why they are relevant
+to Physics counting experiments. The unit introduces Gaussian (normal)
+distributions and explains why they seen so often in natural phenomena.
+Several Python illustrations are given. Java is currently not available
+in this unit.
 
+### 10.1 - Statistics Overview and Fundamental Idea: Random Variables 
 
-```python
-y_train = to_categorical(y_train)
-y_test = to_categorical(y_test)
-```
+We go through the many different areas of statistics covered in the Physics
+unit. We define the statistics concept of a random variable.
 
-## Image Reshaping
+[![Video](images/physics/physics-10.1.png){width=20%}](https://youtu.be/jCgY6MEfLWI?list=PLy0VLh_GFyz-Er5TNFj1I8ihPOXnhicj0)
 
-The training model is designed by considering the data as a vector.
-This is a model dependent modification. Here we assume the image is
-a squared shape image.
+### 10.2 - Physics and Random Variables I
 
+We describe the DIKW pipeline for the analysis of this type of physics experiment 
+and go through details of analysis pipeline for the LHC ATLAS experiment. 
+We give examples of event displays showing the final state particles 
+seen in a few events. We illustrate how physicists decide whats going 
+on with a plot of expected Higgs production experimental cross sections 
+(probabilities) for signal and background.
 
-```python
-image_size = x_train.shape[1]
-input_size = image_size * image_size
-```
+[![Video](images/physics/physics-10.2.png){width=20%}](https://youtu.be/Tn3GBxgplxg?list=PLy0VLh_GFyz-Er5TNFj1I8ihPOXnhicj0)
 
-## Resize and Normalize
+### 10.3 - Physics and Random Variables II
 
-The next step is to continue the reshaping to a fit into a vector
-and normalize the data. Image values are from 0 - 255, so an
-easy way to normalize is to divide by the maximum value.
+We describe the DIKW pipeline for the analysis of this type of physics
+experiment and go through details of analysis pipeline for the LHC ATLAS
+experiment. We give examples of event displays showing the final state
+particles seen in a few events. We illustrate how physicists decide
+whats  going on with a plot of expected Higgs production experimental
+cross sections (probabilities) for signal and background.
 
-**|Execrcise: Suggest another way to normalize the data preserving the accuracy or improving the accuracy.**
+[![Video](images/physics/physics-10.3.png){width=20%}](https://youtu.be/qWEjp0OtvdA?list=PLy0VLh_GFyz-Er5TNFj1I8ihPOXnhicj0)
 
+### 10.4 - Statistics of Events with Normal Distributions
 
-```python
-x_train = np.reshape(x_train, [-1, input_size])
-x_train = x_train.astype('float32') / 255
-x_test = np.reshape(x_test, [-1, input_size])
-x_test = x_test.astype('float32') / 255
-```
+We introduce Poisson and Binomial distributions and define independent 
+identically distributed (IID) random variables. We give the law of 
+large numbers defining the errors in counting and leading to Gaussian 
+distributions for many things. We demonstrate this in Python experiments.
 
-## Create a Keras Model
+[![Video](images/physics/physics-10.4.png){width=20%}](https://youtu.be/LMBtpWOOQLo?list=PLy0VLh_GFyz-Er5TNFj1I8ihPOXnhicj0)
 
-Keras is a neural network library. Most important thing with Keras is the way we design the neural network.
+### 10.5 - Gaussian Distributions
 
-In this model we have a couple of ideas to understand.
+We introduce the Gaussian distribution and give Python examples of the 
+fluctuations in counting Gaussian distributions.
 
-**|Exercise MNIST_V1.1: Find out what is a dense layer?**
+[![Video](images/physics/physics-10.5.png){width=20%}](https://youtu.be/LWIbPa-P5W0?list=PLy0VLh_GFyz-Er5TNFj1I8ihPOXnhicj0)
 
-A simple model can be initiated by using an **Sequential** instance in Keras.
-For this instance we add a single layer.
+### 10.6 - Using Statistics
 
-1. Dense Layer
-2. Activation Layer (Softmax is the activation function)
+We discuss the significance of a standard deviation and role of biases 
+and insufficient statistics with a Python example in getting incorrect answers.
 
-Dense layer and the layer followed by it is fully connected.
-For instance the number of hidden units used here is 64
-and the following layer is a dense layer followed by an activation
-layer.
+[![Video](images/physics/physics-10.6.png){width=20%}](https://youtu.be/n4jlUrGwgic?list=PLy0VLh_GFyz-Er5TNFj1I8ihPOXnhicj0)
 
-**|Execrcise MNIST_V1.2: Find out what is the use of an activation function. Find out why, softmax was used as the last layer.**
+## Unit 11
 
+https://www.youtube.com/playlist?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs
 
+In this section we discuss;
 
-```python
-batch_size = 4
-hidden_units = 64
+E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson: 
+Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers, 
+Distributions and Central Limit Theorem
+Section Units 9-11 Summary: This section starts by describing the 
+LHC accelerator at CERN and evidence found by the experiments suggesting 
+existence of a Higgs Boson. The huge number of authors on a paper, 
+remarks on histograms and Feynman diagrams is followed by an accelerator 
+picture gallery. The next unit is devoted to Python experiments looking 
+at histograms of Higgs Boson production with various forms of shape of 
+signal and various background and with various event totals. Then random 
+variables and some simple principles of statistics are introduced with 
+explanation as to why they are relevant to Physics counting experiments. 
+The unit introduces Gaussian (normal) distributions and explains why they 
+seen so often in natural phenomena. Several Python illustrations are given. 
+Random Numbers with their Generators and Seeds lead to a discussion of 
+Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods. 
+The Central Limit Theorem concludes discussion.
+Big Data Higgs Unit 11: Looking for Higgs Particles Part IV: Random Numbers, 
+Distributions and Central Limit Theorem
+Unit Overview: Geoffrey discusses Random Numbers with their Generators 
+and Seeds. It introduces Binomial and Poisson Distribution. Monte-Carlo 
+and accept-reject methods are discussed. The Central Limit Theorem and 
+Bayes law concludes discussion. Python and Java (for student - not 
+reviewed in class) examples and Physics applications are given.
 
-model = Sequential()
-model.add(Dense(hidden_units, input_dim=input_size))
-model.add(Dense(num_labels))
-model.add(Activation('softmax'))
-model.summary()
-plot_model(model, to_file='mnist_v1.png', show_shapes=True)
-```
 
-    WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:66: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+### 11.1 - Generators and Seeds I
 
-    WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:541: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+We define random numbers and describe how to generate them on the computer 
+giving Python examples. We define the seed used to define to specify how to start generation.
 
-    WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4432: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+[![Video](images/physics/physics-11.1.png){width=20%}](https://youtu.be/r80Sk_KVG2s?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs)
 
-    Model: "sequential_1"
-    _________________________________________________________________
-    Layer (type)                 Output Shape              Param #
-    =================================================================
-    dense_1 (Dense)              (None, 64)                50240
-    _________________________________________________________________
-    dense_2 (Dense)              (None, 10)                650
-    _________________________________________________________________
-    activation_1 (Activation)    (None, 10)                0
-    =================================================================
-    Total params: 50,890
-    Trainable params: 50,890
-    Non-trainable params: 0
-    _________________________________________________________________
+### 11.2 - Generators and Seeds II
 
+We define random numbers and describe how to generate them on the computer 
+giving Python examples. We define the seed used to define to specify how to start generation.
 
+[![Video](images/physics/physics-11.2.png){width=20%}](https://youtu.be/9QY5qkQj2Ag?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs)
 
+### 11.3 - Binomial Distribution
 
+We define binomial distribution and give LHC data as an eaxmple of where this distribution valid.
 
-![images](images/deeplearning/lab1/output_20_1.png)
+[![Video](images/physics/physics-11.3.png){width=20%}](https://youtu.be/DPd-eVI_twQ?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs)
 
+### 11.4 - Accept-Reject
 
+We introduce an advanced method -- accept/reject -- for generating random variables with arbitrary distrubitions.
 
-## Compile and Train
+[![Video](images/physics/physics-11.4.png){width=20%}](https://youtu.be/GfshkKMKCj8?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs)
 
-A keras model need to be compiled before it can be used to train
-the model. In the compile function, you can provide the optimization
-that you want to add, metrics you expect and the type of loss function
-you need to use.
+### 11.5 - Monte Carlo Method
 
-Here we use the adam optimizer, a famous optimizer used in neural networks.
+We define Monte Carlo method which usually uses accept/reject method in typical case for distribution.
 
-**Exercise: Find 3 other optimizers used on neural networks.**
+[![Video](images/physics/physics-11.5.png){width=20%}](https://youtu.be/kIQ-BTyDfOQ?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs)
 
-The loss funtion we have used is the categorical_crossentropy.
+### 11.6 - Poisson Distribution
 
-**Exercise: Find other loss functions provided in keras. Your answer can limit to 1 or more.**
+We extend the Binomial to the Poisson distribution and give a set of amusing examples from Wikipedia.
 
-Once the model is compiled, then the fit function is called upon passing the number of epochs,
-traing data and batch size.
+[![Video](images/physics/physics-11.6.png){width=20%}](https://youtu.be/WFvgsVo-k4s?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs)
 
-The batch size determines the number of elements used per minibatch in optimizing the function.
+### 11.7 - Central Limit Theorem
 
-**Note: Change the number of epochs, batch size and see what happens.**
+We introduce Central Limit Theorem and give examples from Wikipedia.
 
-**Exercise: Figure out a way to plot the loss function value. You can use any method you like.**
+[![Video](images/physics/physics-11.7.png){width=20%}](https://youtu.be/ZO53iKlPn7c?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs)
 
+### 11.8 - Interpretation of Probability: Bayes v. Frequency
 
+This lesson describes difference between Bayes and frequency views of 
+probability. Bayes's law of conditional probability is derived and applied 
+to Higgs example to enable information about Higgs from multiple channels 
+and multiple experiments to be accumulated.
 
-```python
-StopWatch.start("compile")
-model.compile(loss='categorical_crossentropy',
-              optimizer='adam',
-              metrics=['accuracy'])
-StopWatch.stop("compile")
-StopWatch.start("train")
-model.fit(x_train, y_train, epochs=1, batch_size=batch_size)
-StopWatch.stop("train")
-```
-
-    WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/optimizers.py:793: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
-
-    WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3576: The name tf.log is deprecated. Please use tf.math.log instead.
-
-    WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/math_grad.py:1250: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
-    Instructions for updating:
-    Use tf.where in 2.0, which has the same broadcast rule as np.where
-    WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:1033: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
-
-    Epoch 1/1
-    60000/60000 [==============================] - 20s 336us/step - loss: 0.3717 - acc: 0.8934
-
-
-## Testing
-
-Now we can test the trained model. Use the evaluate function by passing
-test data and batch size and the accuracy and the loss value can be retrieved.
-
-**Exercise: Try to optimize the network by changing the number of epochs, batch size and record the best accuracy that you can gain**
-
-
-```python
-StopWatch.start("test")
-loss, acc = model.evaluate(x_test, y_test, batch_size=batch_size)
-print("\nTest accuracy: %.1f%%" % (100.0 * acc))
-StopWatch.stop("test")
-```
-
-    10000/10000 [==============================] - 1s 138us/step
-
-    Test accuracy: 91.0%
-
-
-
-```python
-StopWatch.benchmark()
-```
-
-
-    +---------------------+------------------------------------------------------------------+
-    | Machine Attribute   | Value                                                            |
-    +---------------------+------------------------------------------------------------------+
-    | BUG_REPORT_URL      | "https://bugs.launchpad.net/ubuntu/"                             |
-    | DISTRIB_CODENAME    | bionic                                                           |
-    | DISTRIB_DESCRIPTION | "Ubuntu 18.04.3 LTS"                                             |
-    | DISTRIB_ID          | Ubuntu                                                           |
-    | DISTRIB_RELEASE     | 18.04                                                            |
-    | HOME_URL            | "https://www.ubuntu.com/"                                        |
-    | ID                  | ubuntu                                                           |
-    | ID_LIKE             | debian                                                           |
-    | NAME                | "Ubuntu"                                                         |
-    | PRETTY_NAME         | "Ubuntu 18.04.3 LTS"                                             |
-    | PRIVACY_POLICY_URL  | "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy" |
-    | SUPPORT_URL         | "https://help.ubuntu.com/"                                       |
-    | UBUNTU_CODENAME     | bionic                                                           |
-    | VERSION             | "18.04.3 LTS (Bionic Beaver)"                                    |
-    | VERSION_CODENAME    | bionic                                                           |
-    | VERSION_ID          | "18.04"                                                          |
-    | cpu_count           | 2                                                                |
-    | mac_version         |                                                                  |
-    | machine             | ('x86_64',)                                                      |
-    | mem_active          | 973.8 MiB                                                        |
-    | mem_available       | 11.7 GiB                                                         |
-    | mem_free            | 5.1 GiB                                                          |
-    | mem_inactive        | 6.3 GiB                                                          |
-    | mem_percent         | 8.3%                                                             |
-    | mem_total           | 12.7 GiB                                                         |
-    | mem_used            | 877.3 MiB                                                        |
-    | node                | ('8281485b0a16',)                                                |
-    | platform            | Linux-4.14.137+-x86_64-with-Ubuntu-18.04-bionic                  |
-    | processor           | ('x86_64',)                                                      |
-    | processors          | Linux                                                            |
-    | python              | 3.6.8 (default, Jan 14 2019, 11:02:34)                           |
-    |                     | [GCC 8.0.1 20180414 (experimental) [trunk revision 259383]]      |
-    | release             | ('4.14.137+',)                                                   |
-    | sys                 | linux                                                            |
-    | system              | Linux                                                            |
-    | user                |                                                                  |
-    | version             | #1 SMP Thu Aug 8 02:47:02 PDT 2019                               |
-    | win_version         |                                                                  |
-    +---------------------+------------------------------------------------------------------+
-    +-----------+-------+---------------------+-----+-------------------+------+--------+-------------+-------------+
-    | timer     | time  | start               | tag | node              | user | system | mac_version | win_version |
-    +-----------+-------+---------------------+-----+-------------------+------+--------+-------------+-------------+
-    | data-load | 1.335 | 2019-09-27 13:37:41 |     | ('8281485b0a16',) |      | Linux  |             |             |
-    | compile   | 0.047 | 2019-09-27 13:37:43 |     | ('8281485b0a16',) |      | Linux  |             |             |
-    | train     | 20.58 | 2019-09-27 13:37:43 |     | ('8281485b0a16',) |      | Linux  |             |             |
-    | test      | 1.393 | 2019-09-27 13:38:03 |     | ('8281485b0a16',) |      | Linux  |             |             |
-    +-----------+-------+---------------------+-----+-------------------+------+--------+-------------+-------------+
-
-    timer,time,starttag,node,user,system,mac_version,win_version
-    data-load,1.335,None,('8281485b0a16',),,Linux,,
-    compile,0.047,None,('8281485b0a16',),,Linux,,
-    train,20.58,None,('8281485b0a16',),,Linux,,
-    test,1.393,None,('8281485b0a16',),,Linux,,
-
-
-
-## Final Note
-
-This programme can be defined as a hello world programme in deep learning.
-Objective of this exercise is not to teach you the depths of deep learning.
-But to teach you basic concepts that may need to design a simple network to
-solve a problem. Before running the whole code, read all the instructions
-before a code section. Solve all the problems noted in bold text with Exercise keyword.
-Write your answers and submit a PDF by following the **Assignment 4**.
-Include codes or observations you made on those sections.
-
-
-### Reference:
-
-[Mnist Database](https://en.wikipedia.org/wiki/MNIST_database)
-
-[Advanced Deep Learning Models](https://github.com/PacktPublishing/Advanced-Deep-Learning-with-Keras)
-
-[Minist Deep Learning](http://deeplearning.net/tutorial/gettingstarted.html)
+[![Video](images/physics/physics-11.8.png){width=20%}](https://youtu.be/jzDkExAQI9M?list=PLy0VLh_GFyz_I7ILsaGab-NNhLuiqVpIs)
