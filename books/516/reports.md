@@ -4,6 +4,8 @@ Here we summarize the Projects and teams. Place the document in your github fold
 
 ## CLOUD STORAGE-STORAGE-LOCAL PROJECTS
 
+<div class="smalltable">
+
 | HID	| Status |	Names |	Project| 
 | ---- | ---- | ---- | ---- |
 | [160](https://github.com/cloudmesh-community/fa19-516-160/blob/master/project/report.md) | approved |	Shreyans |	Azure to Google Cloudmesh Storage Provider for Virtual Directories: see cloudmesh-storage to start. develop OpenAPI REST services for it|
@@ -12,10 +14,12 @@ Here we summarize the Projects and teams. Place the document in your github fold
 | [155](https://github.com/cloudmesh-community/fa19-516-155/blob/master/project/report.md)	| approved | Ketan	| Azure to/form AWS blob Storage Service, (see: cloudmesh-storage), Provide a REST service for it based on OpenAPI that uses the cloudmesh API you develop. |
 | all |	 | |  if this works technically we should be able to coppy between all clouds as we have all services for each cloud and each speaks the same protocol |
 
+</div>
 
 
 ## CLOUDMESH COMPUTE PROJECTS
 
+<div class="smalltable">
 
 | HID	| Status |	Names |	Project| 
 | ---- | ---- | ---- | ---- |
@@ -24,26 +28,34 @@ Here we summarize the Projects and teams. Place the document in your github fold
 | [170](https://github.com/cloudmesh-community/fa19-516-170/blob/master/project/report.md)	| approved	| Chenxu |	Azure Cloudmesh Compute - The secgroup command is not working, extensive testing needs to be done. As this project is mostly finished, you will compare the performance from Azure with other clouds such as OpenStack, AWS, and possibly Oracle, and Google once they become available. You would help improve any of the missing clouds once secgroup is done (Oracle, Google). IT is best to start right away with this and learn how to start vms in Azure.
 | [169](https://github.com/cloudmesh-community/fa19-516-169/blob/master/project/report.md)	| approved	| Harsh	| Developing Cloudmesh interfaces for Google Cloud Platform. The two cloud implementation to be demonstrated using GCP and AWS |
 
+</div>
+
 ## PI PROJECTS
 
-
+<div class="smalltable">
+  
 | HID	| Status |	Names |	Project| 
 | ---- | ---- | ---- | ---- |
 | [148](https://github.com/cloudmesh-community/fa19-516-148/blob/master/project/report.md)	| approved |	Sub|	Federated Kubernetes Cluster with Raspberry PI
 | [158](https://github.com/cloudmesh-community/fa19-516-158/blob/master/project/report.md) [150](https://github.com/cloudmesh-community/fa19-516-150/blob/master/project/report.md)	| approved	| Daivik Akshay	| Raspberry Pi Cloud Cluster for Spark, Raspberry Pi Cloud Cluster for Hadoop
 
+</div>
+
 ## DATABASE ABSTRACTION PROJECTS
 
+<div class="smalltable">
+  
 | HID	| Status |	Names |	Project| 
 | ---- | ---- | ---- | ---- |
 | [147](https://github.com/cloudmesh-community/fa19-516-147/blob/master/project/report.md)	| approved	| Harsha	| Abstract database management on Multicloud environments for the NIST Big Data Reference Architecture AWS, Azure
-| [141](https://github.com/cloudmesh-community/fa19-516-141/blob/master/project/report.md)	| approved| 	Bala, Mani	| Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, SQL
+| [141](https://github.com/cloudmesh-community/fa19-516-141/blob/master/project/report.md)	| approved| 	Bala, Mani	| Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, SQL NIST BigDataInterface reference implementation for data base absractions on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo)
 
-NIST BigDataInterface reference implementation for data base absractions on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo)
-
+</div>
 
 ## OTHER PROJECTS
 
+<div class="smalltable">
+  
 | HID	| Status |	Names |	Project| 
 | ---- | ---- | ---- | ---- |
 | [167](https://github.com/cloudmesh-community/fa19-516-167/blob/master/project/report.md) | approved |Bill	|Cloudmesh Virtual Directory Life Cycle Service, This needs to run on 2 clouds + locally.  TTL = time to live is one, attribute for lifecycle management. Bi9ll explained this is more than ttl.
@@ -61,3 +73,5 @@ NIST BigDataInterface reference implementation for data base absractions on 2 cl
 | [140](https://github.com/cloudmesh-community/fa19-516-140/blob/master/project/report.md) | approved but some details are missing| Mohamed Elfateh	| Cognitive Response Simulation using Cloudmesh Cloud AI Services
 | [146](https://github.com/cloudmesh-community/fa19-516-146/blob/master/project/report.md) [163](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) | TBD | John Hoerr, Kenneth Jones| Serverless API Performance Analysis
 | [168](https://github.com/cloudmesh-community/fa19-516-168/blob/master/project/report.md)	| 	Deepak Deopura | TBD| 	AWS to/from Azure data transfer using APIs. -Extended version can be push data in SQL base warehouse (for example snowflake warehouse. It may be out of scope for now for this project purpose.
+
+</div>
