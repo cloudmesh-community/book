@@ -46,7 +46,7 @@ BOOK:
       - "{file.chapter}/prg/python/python-data.md"
       - "{file.chapter}/prg/python/python-matplotlib.md"
       - "{file.chapter}/prg/python/python-docopts.md"
-      - "{file.chapter}/prg/python/python-cmd5.md"
+      - "{file.chapter}/prg/python/cloudmesh/python-cmd5.md"
       - "{file.chapter}/prg/python/python-cmd.md"
       - "{file.chapter}/prg/python/opencv/opencv.md"
       - "{file.chapter}/prg/python/opencv/secchi.md"
