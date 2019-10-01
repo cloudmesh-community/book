@@ -47,7 +47,7 @@ jobs:
       - store_artifacts:
           path: /root/project/books/cloud/dest/references.bib
           destination: references.bib
-      -run:
+      - run:
           name: cat
           command: cat /root/project/books/cloud/dest/references.bib
 
