@@ -77,7 +77,8 @@ will at one point also show up in the proceedings.
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
 | [147]	| approved	| Harsha	| [Abstract database management on Multicloud environments for the NIST Big Data Reference Architecture AWS, Azure](https://github.com/cloudmesh-community/fa19-516-147/blob/master/project/report.md) |
-| [141] | approved| 	Bala, Mani	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, SQL NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-141/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
+| [141] | approved| 	Bala	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, SQL NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-141/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
+| [156] | approved| 	Manikandan Nagarajan	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, SQL NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-156/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
 
 ## OTHER PROJECTS
 
