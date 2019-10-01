@@ -1,0 +1,62 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cloudmesh/book:latest
+    steps:
+      - checkout
+      - run:
+          name: where
+          command: ls; pwd
+      - run:
+          name: which python
+          command: which python
+      - run:
+          name: python version
+          command: python --version
+      - run:
+          name: pip version
+          command: pip --version
+      - run:
+          name: pandoc version
+          command: pandoc --version
+      - run:
+          name: requirements.txt
+          command: pip install -r requirements.txt
+      - run:
+          name: bookmanager version
+          command: bookmanager version
+      - run:
+          name: changed files
+          command: git diff-tree --no-commit-id --name-only -r HEAD > changed_files.log && cat changed_files.log
+      - run:
+          name: biber
+          command: bin/check-biber.sh changed_files.log
+      #      - run:
+      #          name: bibtex issues
+      #          command: cd books/cloud; make bibtex-issues
+      #- run:
+      #    name: check python epub
+      #    command: cd books/python && make epub && cd ../..
+      - run:
+          name: check cloud epub
+          command: cd books/cloud && make epub
+      - run:
+          name: pwd
+          command: pwd
+      - run:
+          name: ls
+          command: ls /root/project/books/cloud/dest
+      #- run:
+      #    name: check bigdata epub
+      #    command: cd books/big-data-applications && make epub && cd ../..
+      - run:
+          name: add line numbers to references.bib
+          command: cat -n /root/project/books/cloud/dest/all.bib > /root/project/books/cloud/dest/references.bib
+      - store_artifacts:
+          path: /root/project/books/cloud/dest/references.bib
+          destination: references.bib
+      -run:
+          name: cat
+          command: cat /root/project/books/cloud/dest/references.bib
+
