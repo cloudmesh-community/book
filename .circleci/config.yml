@@ -11,9 +11,9 @@ jobs:
       - run:
           name: where
           command: ls; pwd
-      - run:
-          name: which python
-          command: which python
+      #- run:
+      #    name: which python
+      #    command: which python
       - run:
           name: python version
           command: python --version
