@@ -44,10 +44,10 @@ jobs:
       - run:
           name: add line numbers to references.bib
           command: cat -n /root/project/books/cloud/dest/all.bib > /root/project/books/cloud/dest/references.bib
-      - store_artifacts:
-          path: /root/project/books/cloud/dest/references.bib
-          destination: references.bib
       - run:
           name: cat
           command: cat /root/project/books/cloud/dest/references.bib
+      - store_artifacts:
+          path: /root/project/books/cloud/dest/references.bib
+          destination: references.bib
 
