@@ -15,13 +15,13 @@ metadata:
   filename: "vonLaszewski-222.epub"
   rights: (c) Gregor von Laszewski, 2018, 2019
 git:
-  "community": "https://raw.githubusercontent.com/cloudmesh-222"
+  "community": "https://raw.githubusercontent.com/cloudmesh-community"
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
 file:
   "bookmanager": "file://../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
-  "github": "https://github.com/cloudmesh-222/book/blob/master/chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
 BOOK:
   - PREFACE:
@@ -46,7 +46,7 @@ BOOK:
       - "{file.chapter}/prg/python/python-data.md"
       - "{file.chapter}/prg/python/python-matplotlib.md"
       - "{file.chapter}/prg/python/python-docopts.md"
-      - "{file.chapter}/prg/python/python-cmd5.md"
+      - "{file.chapter}/prg/python/cloudmesh/python-cmd5.md"
       - "{file.chapter}/prg/python/python-cmd.md"
       - "{file.chapter}/prg/python/opencv/opencv.md"
       - "{file.chapter}/prg/python/opencv/secchi.md"

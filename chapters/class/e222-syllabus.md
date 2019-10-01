@@ -37,8 +37,6 @@ An introduction video is available at:
 
 ## Representative bibliography
 
-:o2: add and replace new lecture notes
-
 1. Cloud Computing for Science and Engineering By Ian Foster and Dennis B. Gannon
 * <https://mitpress.mit.edu/books/cloud-computing-science-and-engineering>
 2. (This document) Handbook of Clouds and Big Data, Gregor von Laszewski, Geoffrey C.
@@ -56,7 +54,7 @@ com/cloudmesh/sp17-i524/blob/master/paper1/proceedings.pdf
 8. Big Data Projects, Gregor von Laszewski, Spring 2017,
 * <https://github.com/cloudmesh/sp17-i524/blob/master/project/projects.pdf>
 9. Gregor von Laszewski, Geoffrey C. Fox, Cloud Computing and Big Data  <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
-
+10. Introduction to Python for cloud Computing <https://laszewski.github.io/book/python/>
 
 ## Grading
 
@@ -76,7 +74,7 @@ significant additional work on your behalf as your project may need
 significant updates on infrastructure, technology, or even programming
 models used. It is best to complete the course within one semester.
 
-## Other classes I423, I523, I524, B649, E516, E616 (ok)
+## Other classes I423, I523, I524, B649, E516, E616
 
 IU offers other undergraduate classes in this topic area such as I423. If you are interested in taking it,
 please see when they are taught.  Additional graduate level classes related which can also be taken
@@ -111,9 +109,9 @@ responsible to
 
 1. listen to the online lectures and understand them.
 2. identify additional material that may help you in understanding the
-    lectures. This could include additional resources on the internet
+   lectures. This could include additional resources on the internet
 3. Contribute to the material by correcting errors and updates you may
-    find.
+   find.
 
 Please note that we try to keep the material up to date with your
 help. However, in our field software and documentation changes quickly
@@ -222,13 +220,12 @@ utilize the Lab hours.
   * Assignment: Install Python and use it throughut the semester
   * Why not anaconda?
   * Using python 3.7
-  * pyenv
   * pip
   * Language
-  * Numpy :+1:
-  * Scipy :+1:
-  * OpenCV :+1:
-  * ScikitLearn :+1:
+  * Numpy 
+  * Scipy 
+  * OpenCV 
+  * ScikitLearn 
 
 
   *Report:* Create an empty report based on our template in
@@ -240,7 +237,7 @@ utilize the Lab hours.
 ### Week 2. Review of Linux shell for OSX, Linux, and Windows
 
 * Theory: Basic Linux Shell
-* Practice: SSH :+1:
+* Practice: SSH
 * Assignment: ssh key generation on your computer, upload to github.com
 
 ### Week 3. Introduction to REST
