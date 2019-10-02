@@ -20,7 +20,7 @@ will at one point also show up in the proceedings.
 |-|--|---|---------------|
 | [160] | approved |	Shreyans |	[Azure to Google Cloudmesh Storage Provider for Virtual Directories](https://github.com/cloudmesh-community/fa19-516-160/blob/master/project/report.md) |
 | [152] | approved | Pratibha	| [Google to/form AWS: Cloudmesh Storage Provider for Virtual Directories](https://github.com/cloudmesh-community/fa19-516-152/blob/master/project/report.md) | 
-| [162]	| approved | Shivani | [Oracle to/from ? Storage Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) (Residential) 534|
+| [162]	| approved | Shivani | [Oracle to/from Local Storage Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) (Residential) 534|
 | [155]	| approved | Ketan	| [Azure to/form AWS blob Storage Service](https://github.com/cloudmesh-community/fa19-516-155/blob/master/project/report.md)  |
 
 [140]: https://github.com/cloudmesh-community/fa19-516-140
@@ -60,7 +60,7 @@ will at one point also show up in the proceedings.
 
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
-| [162]	| approved	| Shivani | 516: [Oracle Compute Service]((https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md)) Residential, see also Python |
+| [162]	| approved	| Shivani | 516: [Oracle Compute Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) Residential, see also Python |
 | [165]	| approved	| Zhi	  | [Google Compute Service](https://github.com/cloudmesh-community/fa19-516-165/blob/master/project/report.md) |
 | [170]	| approved	| Chenxu  |	[Azure Cloudmesh Compute](https://github.com/cloudmesh-community/fa19-516-170/blob/master/project/report.md) |
 | [169]	| approved	| Harsh	  | [Developing Cloudmesh interfaces for Google Cloud Platform](https://github.com/cloudmesh-community/fa19-516-169/blob/master/project/report.md) |
