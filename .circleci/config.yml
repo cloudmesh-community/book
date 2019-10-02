@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cloudmesh/bookmanager:0.2.24
+      - image: cloudmesh/book
     steps:
       - checkout
       - run:
