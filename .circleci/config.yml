@@ -5,9 +5,9 @@ jobs:
       - image: cloudmesh/book
     steps:
       - checkout
-      - run:
-          name: lsb_release
-          command: lsb_release -a
+      #- run:
+      #    name: lsb_release
+      #    command: lsb_release -a
       - run:
           name: where
           command: ls; pwd
