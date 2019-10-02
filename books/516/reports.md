@@ -93,7 +93,7 @@ will at one point also show up in the proceedings.
 
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
-| [163] [146] | TBD | John Hoerr, Kenneth Jones| [Serverless API Performance Analysis]((https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md)) |
+| [163] [146] | TBD | John Hoerr, Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
 | [159] | TBD | Austin Zebrowski | [Apache Airflow data pipelining between HDFS and Amazon Redshift](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) |
 | [171] | TBD	| Jagadesh	| [Title missing](https://github.com/cloudmesh-community/fa19-516-171/blob/master/project/report.md) |
 | [144] | TBD	| Nayeem|  no project selected, security?| 
