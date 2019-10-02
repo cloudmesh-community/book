@@ -20,7 +20,7 @@ will at one point also show up in the proceedings.
 |-|--|---|---------------|
 | [160] | approved |	Shreyans |	[Azure to Google Cloudmesh Storage Provider for Virtual Directories](https://github.com/cloudmesh-community/fa19-516-160/blob/master/project/report.md) |
 | [152] | approved | Pratibha	| [Google to/form AWS: Cloudmesh Storage Provider for Virtual Directories](https://github.com/cloudmesh-community/fa19-516-152/blob/master/project/report.md) | 
-| [162]	| approved | Shivani | [Oracle to/from ? Storage Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) (Residential) 534|
+| [162]	| approved | Shivani | [Oracle to/from Local Storage Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) (Residential) 534|
 | [155]	| approved | Ketan	| [Azure to/form AWS blob Storage Service](https://github.com/cloudmesh-community/fa19-516-155/blob/master/project/report.md)  |
 
 [140]: https://github.com/cloudmesh-community/fa19-516-140
@@ -60,10 +60,10 @@ will at one point also show up in the proceedings.
 
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
-| [162]	| approved	| Shivani | 516: [Oracle Compute Service]((https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md)) Residential, see also Python |
+| [162]	| approved	| Shivani | 516: [Oracle Compute Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) Residential, see also Python |
 | [165]	| approved	| Zhi	  | [Google Compute Service](https://github.com/cloudmesh-community/fa19-516-165/blob/master/project/report.md) |
 | [170]	| approved	| Chenxu  |	[Azure Cloudmesh Compute](https://github.com/cloudmesh-community/fa19-516-170/blob/master/project/report.md) |
-| [169]	| approved	| Harsh	  | [Developing Cloudmesh interfaces for Google Cloud Platform]((https://github.com/cloudmesh-community/fa19-516-169/blob/master/project/report.md) |
+| [169]	| approved	| Harsh	  | [Developing Cloudmesh interfaces for Google Cloud Platform](https://github.com/cloudmesh-community/fa19-516-169/blob/master/project/report.md) |
 
 ## PI PROJECTS
 
@@ -76,8 +76,9 @@ will at one point also show up in the proceedings.
  
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
-| [147]	| approved	| Harsha	| [Abstract database management on Multicloud environments for the NIST Big Data Reference Architecture AWS, Azure](https://github.com/cloudmesh-community/fa19-516-147/blob/master/project/report.md) |
-| [141]	:o2: missing hid | approved| 	Bala, Mani	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, SQL NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-141/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
+| [147]	| approved	| Harsha	| [Abstract database management on Multicloud environments for the NIST Big Data Reference Architecture Azure, Google, SQL](https://github.com/cloudmesh-community/fa19-516-147/blob/master/project/report.md) |
+| [141] | approved| 	Bala	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Oracle, SQL NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-141/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
+| [156] | please contact | 	Manikandan Nagarajan	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-156/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
 
 ## OTHER PROJECTS
 
@@ -92,7 +93,7 @@ will at one point also show up in the proceedings.
 
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
-| [146] [163](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) | TBD | John Hoerr, Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-146/blob/master/project/report.md) |
+| [163] [146] | TBD | John Hoerr, Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
 | [159] | TBD | Austin Zebrowski | [Apache Airflow data pipelining between HDFS and Amazon Redshift](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) |
 | [171] | TBD	| Jagadesh	| [Title missing](https://github.com/cloudmesh-community/fa19-516-171/blob/master/project/report.md) |
 | [144] | TBD	| Nayeem|  no project selected, security?| 
