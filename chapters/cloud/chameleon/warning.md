@@ -6,7 +6,7 @@
 > to your computer and if a password less key is stolen easy access to
 > other systems can be achieved. Instead you must use whenever
 > possible passphrases and use ssh agent and ssh add! The same
-> bets-practice security rules that you use on your laptop must apply
+> best-practice security rules that you use on your laptop must apply
 > on resources that you place in a cloud!
 
 To show you this insecue practice, we quote from their
