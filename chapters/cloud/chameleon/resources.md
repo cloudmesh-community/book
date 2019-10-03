@@ -40,7 +40,7 @@ The register web page is available at:
 
 <https://www.chameleoncloud.org/user/register/>
 
-For more details, please als consult the chameleon chapter in the
+For more details, please also consult the chameleon chapter in the
 handbook.
 
 ## Join a Project
@@ -72,7 +72,7 @@ has added you, you will be able to use VM's on Chameleon cloud.
 
 ## Usage Restriction
 
-As using VM's in a shared environment has ain impact on resources for
+As using VM's in a shared environment has an impact on resources for
 all, you are **REQUIRED** to shut down your resources after you are not
 using them anymore. Furthermore, before the class is over and we assign
 grades you must terminate your instances and free all ip addresses.
@@ -84,7 +84,7 @@ you keep the machines running you will use energy and have an impact on
 the environment. **Be a team player** and be environmentally conscious
 by shutting  down your non used instances. The way we use chameleon
 cloud is as a large team. As such please avoid deleting other peoples
-VM's. All vms that do not follow a particular namig scheme ar subject to
+VM's. All vms that do not follow a particular naming scheme are subject to
 deletion at any time.
 
 The pattern of the vms must follow:
