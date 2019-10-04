@@ -34,15 +34,24 @@ BOOK:
   - WEEK_3:
     - "{file.chapter}/bigdata/week3.md"
   - WEEK_4:
-      - "{file.chapter}/prg/python/google-colab/python-google-colab.md"
-  - WEEK_5:
       - "{file.chapter}/bigdata/week5.md"
+  - WEEK_5:
+      - "{file.chapter}/prg/python/google-colab/python-google-colab.md"
+  - WEEK_6:
+      - "{file.chapter}/bigdata/week6.md"
+  - WEEK_7:
+      - "{file.chapter}/bigdata/week7.md"
+  - WEEK_8:
+      - "{file.chapter}/bigdata/week8.md"
   - ASSIGNMENTS:
       - "{file.chapter}/bigdata/assignments/index.md"
       - WEEKLY_ASSIGNMENTS:
         - "{file.chapter}/bigdata/assignments/assignment1.md"
         - "{file.chapter}/bigdata/assignments/assignment2.md"
         - "{file.chapter}/bigdata/assignments/assignment3.md"
+        - "{file.chapter}/bigdata/assignments/assignment4.md"
+        - "{file.chapter}/bigdata/assignments/assignment5.md"
+        - "{file.chapter}/bigdata/assignments/assignment6.md"
   - GITHUB:
       - "{file.chapter}/bigdata/github/index.md"
 #

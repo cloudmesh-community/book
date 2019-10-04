@@ -19,6 +19,7 @@ RUN yes | pacman -Sy graphviz
 RUN yes | pacman -Sy make
 RUN yes | pacman -Sy biber
 RUN yes | pacman -Sy emacs
+RUN yes | pacman -Sy lsb-release
 
 ENV PATH="${PATH}:/usr/bin/vendor_perl"
 #
