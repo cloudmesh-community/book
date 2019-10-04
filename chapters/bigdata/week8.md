@@ -28,6 +28,9 @@ Heuristics.
 
 [![Video](images/deeplearning/lectures/part1/lec-1.png){width=20%}](https://youtu.be/JvnzgbNGBM4?list=PLy0VLh_GFyz-jjQgNx09ccB-6Pa7E7aLM)
 
+[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1t6LcpCGwWxfrIvys-zJQWNq-yeu9oju2)
+
+
 ### First Deep Learning Example
 
 FirstDL: Your First Deep Learning Example FirstDL Lesson gives an
@@ -37,6 +40,8 @@ Multilayer Perceptron using Keras+Tensorflow running on Google Colab
 
 [![Video](images/deeplearning/lectures/part1/lec-2.png){width=20%}](https://youtu.be/jchO2kWv5Do?list=PLy0VLh_GFyz-jjQgNx09ccB-6Pa7E7aLM)
 
+[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1SCkRn2TLqQekAZoPM4hg8V884DqgQxOn)
+
 ### Deep Learning Basics
 
 DLBasic: Basic Terms Used in Deep Learning DLBasic lesson reviews
@@ -45,6 +50,8 @@ Tanh, Softmax), Loss Function, Optimizer, Stochastic Gradient Descent,
 Back Propagation, One-hot Vector, Vanishing Gradient, Hyperparameter
 
 [![Video](images/deeplearning/lectures/part1/lec-3.png){width=20%}](https://youtu.be/3OLRON81K_g?list=PLy0VLh_GFyz-jjQgNx09ccB-6Pa7E7aLM)
+
+[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1PJ_aVc-Na8ZFdgmH02s3Wod7FOjGIdoS)
 
 ### Deep Learning Types
 
@@ -57,3 +64,5 @@ Transformer and Sequence to Sequence methods, GAN Generative Adversarial
 Network, (D)RL (Deep) Reinforcement Learning.
 
 [![Video](images/deeplearning/lectures/part1/lec-4.png){width=20%}](https://youtu.be/hlCc2JaC_Q4?list=PLy0VLh_GFyz-jjQgNx09ccB-6Pa7E7aLM)
+
+[![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1tEPdWN9vPn2gxONwFrEPkvm8YmsGVGd_)
