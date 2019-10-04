@@ -55,6 +55,10 @@ library to help you collect information for the service implementation.
 
 1. Change the *cpu* GET method, to work in a operating system invariant way
    (i.e. use python libraries to determine the CPU name, rather than system calls) 
+   
+1. Play around with *py-cpuinfo* library in Ubuntu environment just to get an 
+    idea about the information you could retrieve. I suggest you spawn an Ubuntu 
+    18.04 container on your local machine for this. 
 
 1. Add a GET method to get cache size of the CPU. URL parameter *{level}* should 
   specify the cache level.        
@@ -89,16 +93,18 @@ library to help you collect information for the service implementation.
     and curl.
  
  5. Create a **m1.small** instance in Chameleon Cloud with **ubuntu
-    18.04** image. Deploy your new web service in the cloud instance.
+    18.04** image. Deploy your new web service in the cloud instance.  You 
+    should use *cloudmesh* commands to start these VMs. 
     
- 6. Use *[swagger editor](https://editor.swagger.io/)* or curl to call
-    the webservice in the cloud from your own laptop.
+ 6. Use curl to call the webservice in the cloud. (You are NOT expected to 
+    expose the service through the public IP address)
     
  7. Capture the outputs for each service paths in a meaningful way
     (images, screenshots, etc) and compile a Markdown file. The Markdown
     should include, the new cpu.yaml file, server.py, and cpu.py files
-    together with outputs. Furthermore, you may include improvements to the
-    service such as handling malformed requests, etc.
+    together with outputs. Furthermore, you should include the *cloudmesh* 
+    commands that you have used in the process and you may include improvements 
+    to the service such as handling malformed requests, etc.
  
  8. In the Markdown file, discuss what are the ways you could add
     security for these services (You do NOT need to implement this).
