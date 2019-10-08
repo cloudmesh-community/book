@@ -1,2 +1,10 @@
-# Week 8: Cloud Technology Presentation - Project Review
+# Week 8: Project Review 
+
+Make sure to have made major progress in your project
+
+Document it in
+
+* github by updating report.bib
+* github by checking in your current code
+
 
