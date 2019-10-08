@@ -17,10 +17,16 @@ Watch these online videos for Hadoop MapReduce:
 * [![Video](images/video.png) Hadoop 12:57 Hadoop  C](https://youtu.be/BaRHay32I80?t=18)
 * [![Video](images/video.png) Hadoop 15:14 Hadoop  D](https://youtu.be/MYOosbF6-dA?t=20)
 
+
+**Note: All Map Reduce/Hadoop Lab activities are optoional**
+
 ## Lab Activity: Hadoop Installation
 
-The following exercises will guide you to install Hadoop on a single node and then run a MapReduce job in Python. Please 
-figure out the required command lines. These commands are available in the book sections: [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
+The following exercises will guide you to install Hadoop on a single
+node and then run a MapReduce job in Python. Please figure out the
+required command lines. These commands are available in the book
+sections: [Cloud Computing, Gregor von Laszewski, Ed.
+2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
 
 ### Exercises:
 
@@ -48,7 +54,23 @@ After finishing all these steps, you are good to move forward to MapReduce progr
 
 ## Lab Activity: Python MapReduce
 
-:o2: TBD
+See in the [map Section of the Python book](https://cloudmesh-community.github.io/book/vonLaszewski-python.epub):
+
+
+The basic syntax of the map function expects a function
+object and any number of iterables like a list or dictionary. It executes
+the function object for each element in the sequence and returns a list
+of the elements modified by the function object. 
+
+```
+def multiply(x):
+   return x * 2
+
+map(multiply2, [2, 4, 6, 8]
+
+# Output [4, 8, 12, 16]
+```
+
 
 ## Lab Activity Map/Reduce on the Cloud
 
@@ -80,8 +102,8 @@ for line in sys.stdin:
     word, count = line.split('\t', 1)
     try:
         count = int(count)
-        except ValueError:
-    continue
+    except ValueError:
+        continue
 if current_word == word:
     current_count += count
 else:
@@ -116,14 +138,24 @@ bin/hadoop jar <path_to_hadoop_libs>/hadoop-*streaming*.jar \
 
 Hadoop’s Java configuration is driven by two types of important configuration files:
 
-* Read-only default configuration - core-default.xml, hdfs-default.xml, yarn-default.xml and mapred-default.xml.
-* Site-specific configuration - etc/hadoop/core-site.xml, etc/hadoop/hdfs-site.xml, etc/hadoop/yarn-site.xml and etc/hadoop/mapred-site.xml.
+* Read-only default configuration - core-default.xml, 
+  hdfs-default.xml, yarn-default.xml and mapred-default.xml.
+* Site-specific configuration - etc/hadoop/core-site.xml, 
+  etc/hadoop/hdfs-site.xml, etc/hadoop/yarn-site.xml and 
+  etc/hadoop/mapred-site.xml.
 
-Additionally, you can control the Hadoop scripts found in the bin/ directory of the distribution, by setting site-specific values via the etc/hadoop/hadoop-env.sh and etc/hadoop/yarn-env.sh.
+Additionally, you can control the Hadoop scripts found in the bin/
+directory of the distribution, by setting site-specific values via the
+etc/hadoop/hadoop-env.sh and etc/hadoop/yarn-env.sh.
 
-To configure the Hadoop cluster you will need to configure the environment in which the Hadoop daemons execute as well as the configuration parameters for the Hadoop daemons.
+To configure the Hadoop cluster you will need to configure the
+environment in which the Hadoop daemons execute as well as the
+configuration parameters for the Hadoop daemons.
 
-HDFS daemons are NameNode, SecondaryNameNode, and DataNode. YARN daemons are ResourceManager, NodeManager, and WebAppProxy. If MapReduce is to be used, then the MapReduce Job History Server will also be running. For large installations, these are generally running on separate hosts.
+HDFS daemons are NameNode, SecondaryNameNode, and DataNode. YARN daemons
+are ResourceManager, NodeManager, and WebAppProxy. If MapReduce is to be
+used, then the MapReduce Job History Server will also be running. For
+large installations, these are generally running on separate hosts.
 
 ### Configuration
 
@@ -137,7 +169,8 @@ Configure all Hadoop daemons:
 * WebAppProxy: YARN_PROXYSERVER_OPTS
 * Map Reduce Job History Server: MAPRED_HISTORYSERVER_OPTS
 
-Configure Namenode to use parallelGC and a 4GB Java Heap, the following statement should be added in hadoop-env.sh:
+Configure Namenode to use parallelGC and a 4GB Java Heap, the following
+statement should be added in hadoop-env.sh:
 
 ```bash
 export HDFS_NAMENODE_OPTS="-XX:+UseParallelGC -Xmx4g"
@@ -145,8 +178,9 @@ export HDFS_NAMENODE_OPTS="-XX:+UseParallelGC -Xmx4g"
 
 ### Operating the Hadoop Cluster
 
-To start a Hadoop cluster you will need to start both the HDFS and YARN cluster. The first time you bring up HDFS, it 
-must be formatted. Format a new distributed filesystem as hdfs.
+To start a Hadoop cluster you will need to start both the HDFS and YARN
+cluster. The first time you bring up HDFS, it must be formatted. Format
+a new distributed filesystem as hdfs.
 
 * Format NameNode (on a dedicate node in the cluster)
 * Start NameNode (on a dedicate node in the cluster)
