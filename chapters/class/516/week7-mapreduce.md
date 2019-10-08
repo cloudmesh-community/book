@@ -1,4 +1,4 @@
-# Week 10: MapReduce
+# Week 7: MapReduce
 
 ## Lecture Material
 
