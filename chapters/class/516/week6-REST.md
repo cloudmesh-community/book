@@ -1,4 +1,4 @@
-# Week 12: REST
+# Week 6: REST
 
 
 ## Lecture Material 
