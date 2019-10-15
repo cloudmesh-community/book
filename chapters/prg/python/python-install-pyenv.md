@@ -107,7 +107,7 @@ $ pyenv virtualenv 2.7.16 ENV2
 
 To automatically access them from your shell we integrate them into bash
 by editing the bash configuration files. Make sure that on Linux you add
-to the `~/.bashrc` file and on macOS to the file `~/.bash_profile`.
+to the `~/.bashrc` file and on macOS to the file `~/.bash_profile` or `.zprofile`.
 
 ```
 export PYENV_ROOT="$HOME/.pyenv"
@@ -240,8 +240,8 @@ $ which pyenv
 If you see a response pyenv is installed and you can proceed with the
 next steps.
 
-Please remember whenever you modify `.bashrc` or `.bash_profile` you
-need to start a new terminal.
+Please remember whenever you modify `.bashrc` or `.bash_profile` or
+`.zprofile` you need to start a new terminal.
 
 ### Using pyenv
 
@@ -308,7 +308,7 @@ now easy. Simply use the following commands:
 ```
 
 To make it even easier, you can add the following lines to your
-`.bash_profile` file:
+`.bash_profile` or or `.zprofile` file:
 
 ```
 alias ENV2="pyenv activate ENV2"
@@ -427,7 +427,7 @@ pyenv install anaconda3-4.3.1
 ```
 
 To switch more easily we recommend that you use the following in your
-`.bash_profile` file:
+`.bash_profile` or `.zprofile` file:
 
 ```bash
 alias ANA="pyenv activate anaconda3-4.3.1"
@@ -486,11 +486,10 @@ To activate it you can now use:
 $ pyenv ANA
 ```
 
-However, anaconda may modify your `.bashrc` or `.bash_profile` files and
-may result in incompatibilities with other python versions. For this
-reason we recommend not to use it. If you find ways to get it to work
-reliably with other versions, please let us know and we update this
-tutorial.
+However, anaconda may modify your `.bashrc` or `.bash_profile` or or `.zprofile`
+files and may result in incompatibilities with other python versions. For this
+reason we recommend not to use it. If you find ways to get it to work reliably
+with other versions, please let us know and we update this tutorial.
 
 ## Exercises
 
