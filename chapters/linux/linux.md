@@ -251,12 +251,12 @@ short cuts.
 
 </div>
 
-## bashrc and bash_profile
+## bashrc, bash_profile or zprofile
 
 Usage of a particular command and all the attributes associated with it,
 use `man` command. Avoid using `rm -r` command to delete files
 recursively. A good way to avoid accidental deletion is to include the
-following in the file  `.bash_profile` on macOS or `.bashrc` on other
+following in the file  `.bash_profile` or `.zprofile` on macOS or `.bashrc` on other
 platforms:
 
 ```bash

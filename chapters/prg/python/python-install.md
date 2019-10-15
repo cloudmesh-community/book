@@ -260,3 +260,5 @@ $ conda activate ENV3
 
 If you like to activate it when you start a new terminal, please add
 this line to your `.bashrc` or `.bash_profile`
+
+If you use zsh please add it to `.zprofile` instead.

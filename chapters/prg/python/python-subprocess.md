@@ -104,12 +104,12 @@ subprocess.call(['ls', '-l'])
 Here we simple pass a list and asure that the commands and arguments are
 elements in the list.
 
-As you will execute the commands in a shell, you may also sometimes
-interrested in loading the environment that you have set up with
-`.bashrc` or  `.bash_profile`. For this reason you can pass along the
-`shell` flag and set it to `True`. On Linux the default shell is
-`/bin/sh` and on Windows it is `cmd.exe`. In this case you can either
-use a string which will be parsed accordingly or use a list
+As you will execute the commands in a shell, you may also sometimes interrested
+in loading the environment that you have set up with `.bashrc` or 
+`.bash_profile` or `.zprofile`. For this reason you can pass along the `shell`
+flag and set it to `True`. On Linux the default shell is `/bin/sh` and on
+Windows it is `cmd.exe`. In this case you can either use a string which will be
+parsed accordingly or use a list
 
 ```python
 subprocess.call('ls -lisa', shell=True)
