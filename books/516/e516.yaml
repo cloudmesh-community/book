@@ -41,6 +41,7 @@ BOOK:
     - "{file.chapter}/class/516/week6-REST.md"
     - "{file.chapter}/class/516/week7-mapreduce.md"
     - "{file.chapter}/class/516/week8-midterm.md"
+    - "{file.chapter}/class/516/week9-container.md"
     - "{file.chapter}/class/516/weekn.md"
   - APPENDIX:
     - "{file.chapter}/class/516/faq.md"

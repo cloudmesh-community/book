@@ -113,6 +113,7 @@ BOOK:
       - "{file.chapter}/container/kubernetes-intro.md"
       - "{file.chapter}/container/kubernetes-fs.md"
     - "{file.chapter}/container/singularity/singularity.md"
+    - "{file.chapter}/container/resources.md"
     - "{file.chapter}/container/exercise.md"
   - SERVERLESS:
     - "{file.chapter}/faas/introduction.md"
