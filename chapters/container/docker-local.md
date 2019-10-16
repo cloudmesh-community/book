@@ -1,5 +1,9 @@
 # Running Docker Locally
 
+:warning: Please verify if the instructions are still up to date. Rapid changes
+could mean they can be outdated quickly. Also we assume the ubuntu instalations
+may have changed and may be different between 18.04 and 19.04.
+
 The official installation documentation for docker can be found by
 visiting the following Web page:
 
@@ -95,7 +99,7 @@ Docker needs Microsoft's Hyper-V to be enabled, but it will impact running the v
 Steps to Install
 
 * Download Docker for Windows(Community Edition) from the following link
-https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe
+  <https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe>
 * Follow the Wizard steps in the installer
 * Launch docker
 * Docker usually lauches automatically during windows startup.

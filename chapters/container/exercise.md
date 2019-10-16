@@ -1,5 +1,71 @@
 # Exercises
 
+E.Docker.1: MongoDB Container
+
+> Develop a docker file that uses the mongo distribution from Dockerhub 
+> and starts a MongoDB database on the regular port while communicating 
+> to your container.
+>
+> What are the parameters on the command line that you need to define?
+
+E.Docker.2: MongoDB Container with authentication
+
+> Develop a MongoDB container that includes an outhenticated user. You
+> must use the cloudmesh.yaml file for specifying the information for the 
+> admin user and password. 
+>
+> 1. How do you add the user?
+> 2. How do you start the container?
+> 3. Showcase the use of the authentication with a simple script or pytest.
+
+> You are allowed tou sue docker compose, but make sure you read the
+> password ond username from the yaml file. YoU must not configure it by
+> hand in the compose yaml file. You can use cloudmesh commands to read
+> the username and password.
+
+> ```
+> cms config value cloudmesh.data.mongo.MONGO_USERNAME
+> cms config value cloudmesh.data.mongo.MONGO_PASSWORD
+> ```
+
+E.Docker.3: Cloudmesh Container
+
+> In this assignment we will explore the use of two containers. We will be
+> leveraging the asisgnment E.Docker.2.
+>
+> First, you wil lstart the authenticated docker MongoDB container
+
+> You will be writing an additional dockerfile, that creates cloudmesh in
+> a docker container. Upon start the parameter passed to the container
+> will be executed in the container. You will use the .ssh and .cloudmesh
+> directory from your native file system.
+>
+>For hints, please look at 
+>
+> * <https://github.com/cloudmesh/cloudmesh-cloud/blob/master/docker/ubuntu-19.04/Dockerfile>
+> * <https://github.com/cloudmesh/cloudmesh-cloud/blob/master/docker/ubuntu-19.04/Makefile>
+> 
+> To jump start you try 
+>
+> ```
+> make image
+> make shell
+>```
+>
+> Explore! Understand what is done in the Makefile
+>
+> Questions:
+> 
+> 1. How would you need to modify the Dockerfile to complete it?
+> 2. Whay did we outcomment the MongoDB related tasks in the Dockerfile?
+> 3. How do we need to establish communication to the MongoDB container
+> 4. Could docker compose help, or would it be too complicated, e.g. what 
+>    if the mongo container already runs?
+> 5. Why would it be dangerous to store the cloudmesh.yaml file inside 
+>    the container? Hint: DockerHub.
+> 6. Why should you at this time not upload images to DockerHub?
+
+
 
 E.Docker.Swarm.1: Documentation
 

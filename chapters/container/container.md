@@ -33,9 +33,9 @@ serverless computing will increase in importance over the next years
 
 ## Docker
 
-In order for us to use containers, we go beyond the historical motivation
-that was introduced in a previous section and focus on Docker a
-predominant technology for containers on Windows, Linux, and macOS
+In order for us to use containers, we go beyond the historical
+motivation that was introduced in a previous section and focus on Docker
+a predominant technology for containers on Windows, Linux, and macOS
 
 [![Video](images/video.png) Container 40:09 Container C](https://youtu.be/A2b-LrnoMqg)
 
@@ -46,16 +46,3 @@ allowing us to run multiple containers on multiple servers building a
 cluster of containers.
 
 [![Video](images/video.png) Container 50:14 Container D](https://youtu.be/V41oi2Bh8Cc)
-
-## Resources
-
-* Container Orchestration Tools: Compare Kubernetes vs Docker Swarm <https://platform9.com/blog/compare-kubernetes-vs-docker-swarm/>
-* Gentle introduction to Containers <https://www.slideshare.net/jpetazzo/introduction-docker-linux-containers-lxc>
-
-### Tutorialspoint
-
-Several tutorials on docker that can help you understand the concepts in more detail
-
-* <https://www.tutorialspoint.com/docker/index.htm>
-* <https://www.tutorialspoint.com/docker/docker_tutorial.pdf>
-* <https://www.tutorialspoint.com/docker/docker_pdf_version.htm>
