@@ -98,7 +98,7 @@ will at one point also show up in the proceedings.
 |-|--|---|---------------|
 | [163] [146] | approved | John Hoerr, Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
 | [159] | approved | Austin Zebrowski | [Apache Airflow data pipelining between HDFS and Amazon Redshift and Cloudmesh](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) |
-| [171] | TBD	| Jagadesh	| [Title missing](https://github.com/cloudmesh-community/fa19-516-171/blob/master/project/report.md) |
+| [171] | TBD	| Jagadesh	| [Abstract Streaming Interfaces for the NIST Big data Architecture](https://github.com/cloudmesh-community/fa19-516-171/blob/master/project/report.md) |
 | [144] | TBD	| Nayeem|  Progress is unclear. | 
 | [174] | TBD |	Sahithi	R | [title missing](https://github.com/cloudmesh-community/fa19-516-174/blob/master/project/report.md) |
 | [151] | approved, participants unclear | Qiwei Liu, Yanting, Chenxu	| [Cloudmesh Cloud AI Services](https://github.com/cloudmesh-community/fa19-516-151/blob/master/project/report.md)  |
