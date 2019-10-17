@@ -63,7 +63,7 @@ will at one point also show up in the proceedings.
 
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
-| [162]	| approved	| Shivani | 516: [Oracle Compute Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) Residential, see also Python |
+| [162]	| approved	| Shivani | 516: [Oracle Compute Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) Residential |
 | [165]	| approved	| Zhi	  | [Google Compute Service](https://github.com/cloudmesh-community/fa19-516-165/blob/master/project/report.md) |
 | [170]	| approved	| Chenxu  |	[Azure Cloudmesh Compute](https://github.com/cloudmesh-community/fa19-516-170/blob/master/project/report.md) |
 | [169]	| approved	| Harsh	  | [Developing Cloudmesh interfaces for Google Cloud Platform](https://github.com/cloudmesh-community/fa19-516-169/blob/master/project/report.md) |
