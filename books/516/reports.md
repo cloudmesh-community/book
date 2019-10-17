@@ -54,7 +54,10 @@ will at one point also show up in the proceedings.
 [168]: https://github.com/cloudmesh-community/fa19-516-168
 [169]: https://github.com/cloudmesh-community/fa19-516-169
 [170]: https://github.com/cloudmesh-community/fa19-516-170
-
+[171]: https://github.com/cloudmesh-community/fa19-516-171
+[172]: https://github.com/cloudmesh-community/fa19-516-172
+[173]: https://github.com/cloudmesh-community/fa19-516-173
+[174]: https://github.com/cloudmesh-community/fa19-516-174
 
 ## CLOUDMESH COMPUTE PROJECTS
 
