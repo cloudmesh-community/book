@@ -91,12 +91,7 @@ will at one point also show up in the proceedings.
 | [166] | approved | Brian Funk	| [Cloudmesh Frugal with AWS, Azure, and Google Cloud.](https://github.com/cloudmesh-community/fa19-516-166/blob/master/project/report.md) |
 | [168]	| approved | Deepak Deopura | [AWS to/from Azure data transfer using APIs](https://github.com/cloudmesh-community/fa19-516-168/blob/master/project/report.md). -Extended version can be push data in SQL base warehouse (for example snowflake warehouse. It may be out of scope for now for this project purpose. |
 | [144] | approved	| Andrew Holland | [Introduce Encryption Functionality for Cloudmesh Configuration File](https://github.com/cloudmesh-community/fa19-516-144/blob/master/project/report.md) |
-
-## PROJECTS NEEDING IMPROVEMENTS
-
-| HID	| Status |	Names |	Project| 
-|-|--|---|---------------|
-| [163] [146] | approved | John Hoerr, Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
+| [146] | approved | Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
 | [159] | approved | Austin Zebrowski | [Apache Airflow data pipelining between HDFS and Amazon Redshift and Cloudmesh](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) |
 | [171] | TBD	| Jagadesh	| [Abstract Streaming Interfaces for the NIST Big data Architecture](https://github.com/cloudmesh-community/fa19-516-171/blob/master/project/report.md) |
 | [144] | TBD	| Nayeem|  Progress is unclear. | 
