@@ -81,7 +81,7 @@ will at one point also show up in the proceedings.
 |-|--|---|---------------|
 | [147]	| approved	| Harsha	| [Abstract database management on Multicloud environments for the NIST Big Data Reference Architecture Azure, Google, SQL](https://github.com/cloudmesh-community/fa19-516-147/blob/master/project/report.md) |
 | [141] | approved| 	Bala	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Oracle, SQL NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-141/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
-| [156] | please contact | 	Manikandan Nagarajan	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-156/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
+| [156] | approved | 	Manikandan Nagarajan	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-156/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
 
 ## OTHER PROJECTS
 
@@ -96,11 +96,11 @@ will at one point also show up in the proceedings.
 
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
-| [163] [146] | TBD | John Hoerr, Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
-| [159] | TBD | Austin Zebrowski | [Apache Airflow data pipelining between HDFS and Amazon Redshift](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) |
+| [163] [146] | approved | John Hoerr, Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
+| [159] | approved | Austin Zebrowski | [Apache Airflow data pipelining between HDFS and Amazon Redshift and Cloudmesh](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) |
 | [171] | TBD	| Jagadesh	| [Title missing](https://github.com/cloudmesh-community/fa19-516-171/blob/master/project/report.md) |
-| [144] | TBD	| Nayeem|  no project selected, security?| 
-| [174] | TBD |		Sahithi	R | [title missing](https://github.com/cloudmesh-community/fa19-516-174/blob/master/project/report.md) |
+| [144] | TBD	| Nayeem|  Progress is unclear. | 
+| [174] | TBD |	Sahithi	R | [title missing](https://github.com/cloudmesh-community/fa19-516-174/blob/master/project/report.md) |
 | [151] | approved, participants unclear | Qiwei Liu, Yanting, Chenxu	| [Cloudmesh Cloud AI Services](https://github.com/cloudmesh-community/fa19-516-151/blob/master/project/report.md)  |
 | [140] | approved but some details are missing| Mohamed Elfateh	| [Cognitive Response Simulation using Cloudmesh Cloud AI Services](https://github.com/cloudmesh-community/fa19-516-140/blob/master/project/report.md) |
 | [153] [164](https://github.com/cloudmesh-community/fa19-516-164/blob/master/project/report.md)	| approved |	Anish, Siddhesh	| [Hadoop/Spark Cluster abstraction layer](https://github.com/cloudmesh-community/fa19-516-153/blob/master/project/report.md) - dynamically changing available machines/storage available to hadoop/spark instances using orchestration tool and command line  |
