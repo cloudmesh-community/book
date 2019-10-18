@@ -744,7 +744,7 @@ this in future sections in more detail.
 ## Example Data Centers
 
 In this section we will be giving some data center examples while
-looking at some of the mayor cloud providers.
+looking at some of the major cloud providers.
 
 ### AWS
 
