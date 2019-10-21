@@ -54,13 +54,16 @@ will at one point also show up in the proceedings.
 [168]: https://github.com/cloudmesh-community/fa19-516-168
 [169]: https://github.com/cloudmesh-community/fa19-516-169
 [170]: https://github.com/cloudmesh-community/fa19-516-170
-
+[171]: https://github.com/cloudmesh-community/fa19-516-171
+[172]: https://github.com/cloudmesh-community/fa19-516-172
+[173]: https://github.com/cloudmesh-community/fa19-516-173
+[174]: https://github.com/cloudmesh-community/fa19-516-174
 
 ## CLOUDMESH COMPUTE PROJECTS
 
 | HID	| Status |	Names |	Project| 
 |-|--|---|---------------|
-| [162]	| approved	| Shivani | 516: [Oracle Compute Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) Residential, see also Python |
+| [162]	| approved	| Shivani | 516: [Oracle Compute Service](https://github.com/cloudmesh-community/fa19-516-162/blob/master/project/report.md) Residential |
 | [165]	| approved	| Zhi	  | [Google Compute Service](https://github.com/cloudmesh-community/fa19-516-165/blob/master/project/report.md) |
 | [170]	| approved	| Chenxu  |	[Azure Cloudmesh Compute](https://github.com/cloudmesh-community/fa19-516-170/blob/master/project/report.md) |
 | [169]	| approved	| Harsh	  | [Developing Cloudmesh interfaces for Google Cloud Platform](https://github.com/cloudmesh-community/fa19-516-169/blob/master/project/report.md) |
@@ -78,7 +81,7 @@ will at one point also show up in the proceedings.
 |-|--|---|---------------|
 | [147]	| approved	| Harsha	| [Abstract database management on Multicloud environments for the NIST Big Data Reference Architecture Azure, Google, SQL](https://github.com/cloudmesh-community/fa19-516-147/blob/master/project/report.md) |
 | [141] | approved| 	Bala	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Oracle, SQL NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-141/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
-| [156] | please contact | 	Manikandan Nagarajan	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-156/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
+| [156] | approved | 	Manikandan Nagarajan	| [Abstract database management on Multicloud environments for the NIST Big Dara Refernce Architecture AWS, Azure, Mongo, NIST BigDataInterface reference implementation for data base absractions](https://github.com/cloudmesh-community/fa19-516-156/blob/master/project/report.md) on 2 clouds with 2 differnt technologies, one is a SQL based the othe is a NoSQPL based (mongo) |
 
 ## OTHER PROJECTS
 
@@ -88,17 +91,12 @@ will at one point also show up in the proceedings.
 | [166] | approved | Brian Funk	| [Cloudmesh Frugal with AWS, Azure, and Google Cloud.](https://github.com/cloudmesh-community/fa19-516-166/blob/master/project/report.md) |
 | [168]	| approved | Deepak Deopura | [AWS to/from Azure data transfer using APIs](https://github.com/cloudmesh-community/fa19-516-168/blob/master/project/report.md). -Extended version can be push data in SQL base warehouse (for example snowflake warehouse. It may be out of scope for now for this project purpose. |
 | [144] | approved	| Andrew Holland | [Introduce Encryption Functionality for Cloudmesh Configuration File](https://github.com/cloudmesh-community/fa19-516-144/blob/master/project/report.md) |
-
-## PROJECTS NEEDING IMPROVEMENTS
-
-| HID	| Status |	Names |	Project| 
-|-|--|---|---------------|
-| [163] [146] | TBD | John Hoerr, Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
-| [159] | TBD | Austin Zebrowski | [Apache Airflow data pipelining between HDFS and Amazon Redshift](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) |
-| [171] | TBD	| Jagadesh	| [Title missing](https://github.com/cloudmesh-community/fa19-516-171/blob/master/project/report.md) |
-| [144] | TBD	| Nayeem|  no project selected, security?| 
-| [174] | TBD |		Sahithi	R | [title missing](https://github.com/cloudmesh-community/fa19-516-174/blob/master/project/report.md) |
-| [151] | approved, participants unclear | Qiwei Liu, Yanting, Chenxu	| [Cloudmesh Cloud AI Services](https://github.com/cloudmesh-community/fa19-516-151/blob/master/project/report.md)  |
+| [146] | approved | Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
+| [159] | approved | Austin Zebrowski | [Apache Airflow data pipelining between HDFS and Amazon Redshift and Cloudmesh](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) |
+| [171] | TBD	| Jagadesh	| [Abstract Streaming Interfaces for the NIST Big data Architecture](https://github.com/cloudmesh-community/fa19-516-171/blob/master/project/report.md) |
+| [144] | TBD	| Nayeem|  Progress is unclear. | 
+| [174] | TBD |	Sahithi	R | [title missing](https://github.com/cloudmesh-community/fa19-516-174/blob/master/project/report.md) |
+| [151] | approved, participants unclear | Qiwei Liu, Yanting Wan	| [Cloudmesh Cloud AI Services](https://github.com/cloudmesh-community/fa19-516-151/blob/master/project/report.md)  |
 | [140] | approved but some details are missing| Mohamed Elfateh	| [Cognitive Response Simulation using Cloudmesh Cloud AI Services](https://github.com/cloudmesh-community/fa19-516-140/blob/master/project/report.md) |
 | [153] [164](https://github.com/cloudmesh-community/fa19-516-164/blob/master/project/report.md)	| approved |	Anish, Siddhesh	| [Hadoop/Spark Cluster abstraction layer](https://github.com/cloudmesh-community/fa19-516-153/blob/master/project/report.md) - dynamically changing available machines/storage available to hadoop/spark instances using orchestration tool and command line  |
 | [161] | approved, too limited with focus on R, needs to do more than R | Jim Nelson	| [Batch Processing using Kubernetes and Cloudmesh batch processing](https://github.com/cloudmesh-community/fa19-516-161/blob/master/project/report.md) virtual cluster for batch processing of arbitrary programs including R. Possibly cloudmeh-flow would help, but we do the jobs on cubernetes, while the bactch jobs are formulated as workflows.  |
