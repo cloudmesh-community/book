@@ -11,7 +11,7 @@
 
 ---
 
-While we have introduce in our introductory section a number of
+While we have introduced in our introductory section a number of
 definitions for cloud computing, as well as an architectural view for
 clouds based on the *as a Service* model, we will look a bit closer at
 other alternative views. These views are in some cases important as
@@ -20,7 +20,7 @@ implementations.
 
 ## Evolution of Compute Architectures
 
-We start our observation with a depiction of some of the
+We start our observation with some a depiction of some of the
 important architectural models motivating the current state of
 information technology services we provide in
 @fig:evolution-computer-arch.  The are computers used primarily by
@@ -42,7 +42,7 @@ architectures.
 
 Mainframe computing is using the larger and more reliable computers,
 like IBM System z9, to run the critical applications, bulk data processing,
-enterprise resource planning and business transaction procesings.
+enterprise resource planning and business transaction processing.
 
 > According to
 > [Wikipedia](https://en.wikipedia.org/wiki/Mainframe_comp), the term
@@ -58,11 +58,11 @@ enterprise resource planning and business transaction procesings.
 > to the large cabinets called "main frames" that housed the central
 > processing unit and main memory of early computers.
 
-Some key attributes of Mainframes that disstingishes it from other
+Some key attributes of Mainframes that distingishes it from other
 computers include its larger size, speed, throughput, power and
-environmental requirements, and pperating system. Furthermore, we find
-that they have  inbuilt redundency to address high uptimes as required
-by buisiness applications. Even some of the eraliest Mainfraims
+environmental requirements, and operating system. Furthermore, we find
+that they have inbuilt redundency to address high uptimes as required
+by business applications. Even some of the earliest Mainfraims
 supported fast I/O and computation via virtualization. The concept of
 hot swapping of hardware help these machines to run without faliure for
 years.
@@ -92,7 +92,7 @@ We refer to Intranet and Server Computing as an environment in which
 
 and its evolution is defined in
 [The Grid-Idea and Its Evolution](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.61.196&rep=rep1&type=pdf). The
-original definition of Grid computing has been summarise as follows:
+original definition of Grid computing has been summarised as follows:
 
 > A computational Grid is a hardware and software infrastructure that
 > provides dependable, consistent, pervasive, and inexpensive access
@@ -208,8 +208,8 @@ FoG Computing refers to
 
 ## As a Servise Architecture Model
 
-The *as a Service* architecture was one of the earliest definition of
-cloud architecture while focussing on the service aspect provided by
+The *as a Service* architecture was one of the earliest definitions of
+cloud architecture while focusing on the service aspect provided by
 the cloud. the layers such as IaaS, PaaS, and SaaS provide a layered
 architecture view while separating infrastructure, platform, and
 services. This allows a separation of concerns typically between
@@ -226,7 +226,7 @@ to represent it.
 When we inspect prominent providers such as Amazon, Azure, and Google,
 we find that on their Web pages they do provide their customers an
 alternative view that is motivated by exposing numerous products to
-the customers grouped by functions. Thes services are often in the
+the customers grouped by functions. These services are often in the
 hundrest. To achieve the exposure of the products in a meaningful
 fashion, they introduce a functional view motivation a functional
 architecture view of the cloud.
@@ -287,8 +287,8 @@ Service mode we find:
   * AWS Cost Management
   * Internet of Things
 
-We observe that AWS focusses on providing infrastructure and
-platformes so others can provide integrated service to its customers.
+We observe that AWS focuses on providing infrastructure and
+platforms so others can provide integrated service to its customers.
 
 Other examples for product lists such as the one from Azure are provided in the Appendix.
 
@@ -316,7 +316,7 @@ project.  You may also find an answer to your question in the white
 papers, reports, tools, trainings, and services they have available.
 
 The group of industry experts based use the following guiding
-principles to when publishing their reference Architecture.
+principles when publishing their reference Architecture.
 
 * Define protections that enable trust in the cloud.
 * Develop cross-platform capabilities and patterns for proprietary and
@@ -358,13 +358,13 @@ to use multiple cloud vendors at the same time.
 
 One of the earliest such tools is Cloudmesh.org, which is lead by von
 Laszewski. The tool was developed at a time when AWS and Nimbus, and
-Eucalyptus where predominant players. At that time OpenStack was just
+Eucalyptus where predominant players. At that time OpenStack had just
 transitioned from a NASA project to a community development.
 
-FutureGrid ws one of the earliest academic cloud offerings to explore
+FutureGrid was one of the earliest academic cloud offerings to explore
 the effectiveness of the different cloud infrastructure solutions. It
 was clear that a unifying framework and abstraction layer was needed
-allowing us to utilize the easily. In fact cloudmesh did not only
+allowing us to utilize them easily. In fact cloudmesh did not only
 provide a REST based API, but also a commandline shell allowing to
 switch between clouds with a single variable. It also provided bare
 metal provisioning before OpenStack even offered it. Through an
@@ -372,7 +372,7 @@ evolution of developments the current cloudmesh architecture that
 allows multicloud services is depicted in the next figure. We still
 distinguish the IaaS level which included not only IaaS Abstractions,
 but also Containers, and HPC services. Platforms are typically
-integrad=ted through DevOps that can be hosted on the IaaS. Examples
+integrated through DevOps that can be hosted on the IaaS. Examples
 are Hadoop, and Spark The services are exposed through a client API
 hiding much of the internals to the user. A portal and application
 services have successfully demonstrated the feasibility of this
@@ -385,7 +385,7 @@ cloudmesh from the ground up by only using python 3 as implementation
 language, integration of containers, and REST services based on
 OpenAPI. Local data to manage the different services are hosted in a
 mongo DB database and exposed through portable containers, so that a
-single crosplatform environment exists as part of the project
+single cross-platform environment exists as part of the project
 deliverables.
 
 Students from e516 can and are in fact expected to participate
