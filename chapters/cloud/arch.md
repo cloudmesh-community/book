@@ -5,7 +5,7 @@
 ![](images/learning.png) **Learning Objectives**
 
 * Reveiew classical architectural models leading up to cloud computing.
-* Review some mayor cloud architecture views.
+* Review some major cloud architecture views.
 * Visualize the NIST cloud architecture
 * Discuss an architecture for multicloud frameworks.
 
