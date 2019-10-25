@@ -102,6 +102,7 @@ BOOK:
       - "{file.chapter}/container/docker-local.md"
       - "{file.chapter}/container/dockerfile.md"
       - "{file.chapter}/container/dockerhub.md"
+      - "{file.chapter}/container/docker-compose.md"
     - DOCKER_PAAS:
       - "{file.chapter}/container/SECTION-DOCKER-PAAS.md"
       - "{file.chapter}/container/docker-swarm.md"
