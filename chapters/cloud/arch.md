@@ -20,7 +20,7 @@ implementations.
 
 ## Evolution of Compute Architectures
 
-We start our observation with some a depiction of some of the
+We start our observation with a depiction of some of the
 important architectural models motivating the current state of
 information technology services we provide in
 @fig:evolution-computer-arch.  The are computers used primarily by
