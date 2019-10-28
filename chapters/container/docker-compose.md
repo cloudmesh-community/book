@@ -18,7 +18,7 @@ Using Compose is basically a four-step process:
 
 ### Install on MacOS
 
-Go go this link to download a desktop version:
+Go to this link to download a desktop version:
 https://docs.docker.com/docker-for-mac/install/
 
 ### Install on Linux
@@ -34,6 +34,19 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-
 ```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
+
+### Install on Windows
+
+#### System Requirements
+
+Windows 10 64-bit: Pro, Enterprise, or Education (Build 15063 or later).
+Hyper-V and Containers Windows features must be enabled.
+The following hardware prerequisites are required to successfully run Client Hyper-V on Windows 10:
+64 bit processor with Second Level Address Translation (SLAT), 4GB system RAM,
+BIOS-level hardware virtualization support must be enabled in the BIOS settings.
+
+Go to this link to download a desktop verion:
+https://hub.docker.com/?overlay=onboarding
 
 ### Test the installation
 
@@ -143,7 +156,7 @@ volumes:
 
 ### Configurations
 
-#### build
+#### `build`
 
 Configuration options that are applied at build time.
 
@@ -156,7 +169,7 @@ services:
     build: ./dir
 ```
 
-#### CONTEXT
+#### `context`
 Either a path to a directory containing a Dockerfile, or a url to a git repository.
 
 Compose builds and tags it with a generated name, and uses that image thereafter.
@@ -166,7 +179,7 @@ build:
   context: ./dir
 ```
 
-#### ARGS
+#### `ARGS`
 
 Add build arguments, which are environment variables accessible only during the build process.
 
@@ -183,7 +196,7 @@ build:
     gitcommithash: cdc3b19
 ```
 
-#### command
+#### `command`
 
 Override the default command.
 
@@ -191,7 +204,7 @@ Override the default command.
 command: bundle exec thin -p 3000
 ```
 
-#### depends_on
+#### `depends_on`
 Express dependency between services, Service dependencies cause the following behaviors:
 
 ```yaml
