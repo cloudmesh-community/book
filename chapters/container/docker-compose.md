@@ -2,53 +2,82 @@
 
 ## Introduction
 
-Compose is a tool for defining and running multi-container Docker applications. With Compose, a YAML file is used to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.
+Docker compose is a tool for defining and running multi-container
+using docker container to package them as an application. Docker
+compose uses a YAML file to specify the dependencies between the
+containers and their configuration. The nice feature is taht with a
+single command you create and start all the services from your
+configuration file and can maage the application including shutting it
+down.
 
-Using Compose is basically a four-step process:
+Using docker compose includes a four-step process:
 
-1. Define your app’s environment with a `Dockerfile` so it can be reproduced anywhere.
+1. Define your application's environment with a `Dockerfile` so it can be
+   reproduced anywhere.
 
-2. Define the services that make up your app in `docker-compose.yml` so they can be run together in an isolated environment.
+2. Define the services that make up your application in a
+   `docker-compose.yml` file so they can be specified in a single file
+   and run with simple docker compose commands.
 
-3. Run `docker-compose up` and Compose starts and runs your entire app.
+3. To start the application use the command `docker-compose up`
 
-4. Run `docker-compose down` to shutdown your entire app.
+4. To shut down the application use the command `docker-compose down`
 
 ## Installation
 
+Docker compose can be installed on Windows 10  EDU/PRO, Linux, and
+macOS.
+
 ### Install on MacOS
 
-Go to this link to download a desktop version:
-https://docs.docker.com/docker-for-mac/install/
+For macOS please go to this link to download a desktop version:
+
+* <https://docs.docker.com/docker-for-mac/install/>
 
 ### Install on Linux
 
-1. Run this command to download the current stable release of Docker Compose:
+On Linux you can run the command.
 
 ```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
-2. Apply executable permissions to the binary:
+Please note that you use the newest version which can be found on the
+download Web page. After downloading, make sure that you apply
+executable permissions to binary:
 
 ```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-### Install on Windows
+### Install on Windows 10
 
 #### System Requirements
 
-Windows 10 64-bit: Pro, Enterprise, or Education (Build 15063 or later).
-Hyper-V and Containers Windows features must be enabled.
-The following hardware prerequisites are required to successfully run Client Hyper-V on Windows 10:
-64 bit processor with Second Level Address Translation (SLAT), 4GB system RAM,
-BIOS-level hardware virtualization support must be enabled in the BIOS settings.
+In case you use Windows you need the follwing minimal requirements:
+
+* Windows 10 64-bit
+* Pro, Enterprise, or Education (Build 15063 or later).
+* Hyper-V and Containers Windows features must be enabled.
+
+The following hardware prerequisites are required to successfully run
+Client Hyper-V on Windows 10:
+
+* 64 bit processor with Second Level Address Translation (SLAT)
+* 4GB system RAM,
+* BIOS-level hardware,
+* Virtualization support must be enabled in the BIOS settings.
 
 Go to this link to download a desktop verion:
-https://hub.docker.com/?overlay=onboarding
+
+* <https://hub.docker.com/?overlay=onboarding>
 
 ### Test the installation
+
+It is important that you test your instalation before you move
+forward.This can be done on the commandline with the command. More
+involved tests can be conducted while using the simple example
+depicted in this section.
 
 ```bash
 $ docker-compose --version
@@ -57,7 +86,17 @@ docker-compose version 1.24.1, build 1110ad01
 
 ## Docker Compose File Directives
 
-Docker-compose file a yaml file with specific formats. Here shows an example to start a `redis` cache server, `postgresql` as a database server, and `vote`, `result`, `worker`, `visualizer` as either the frontend or backend services.
+To use docker compose, you will need a file that contains 
+specifications of the containers and their dependencies.
+We will demonstrate this concept with a simple example. 
+
+We are starting a `redis` cache server, a `postgresql` database
+server, and containers `vote`, `result`, `worker`, `visualizer` to
+provide frontend an backend services that interacte with the
+containers.
+
+After you have reviewed the yaml file, we will explain the different
+parts in more detail.
 
 ```yaml
 version: "3.7"
@@ -154,13 +193,12 @@ volumes:
   db-data:
 ```
 
-### Configurations
+### Configuration
 
 #### `build`
 
-Configuration options that are applied at build time.
-
-build can be specified either as a string containing a path to the build context:
+The `build` attribute specifies either a string containing a path to the
+build context:
 
 ```yaml
 version: "3.7"
@@ -170,9 +208,11 @@ services:
 ```
 
 #### `context`
-Either a path to a directory containing a Dockerfile, or a url to a git repository.
 
-Compose builds and tags it with a generated name, and uses that image thereafter.
+The `context` attribute introduces either a path to a directory
+containing a Dockerfile, or a url to a git repository. This
+information is used during the build phase.
+
 
 ```yaml
 build:
@@ -181,7 +221,8 @@ build:
 
 #### `ARGS`
 
-Add build arguments, which are environment variables accessible only during the build process.
+The `ARGS` attribute introduces environment variables accessible only
+during the build process.
 
 ```yaml
 ARG buildno
@@ -198,14 +239,18 @@ build:
 
 #### `command`
 
-Override the default command.
+The `command` attribute overrides the default command.
 
 ```yaml
 command: bundle exec thin -p 3000
 ```
 
 #### `depends_on`
-Express dependency between services, Service dependencies cause the following behaviors:
+
+The `depends_on` attribute introduces dependencies between
+services. The container that depends on other containers, waits for
+them to become available. In the following example the web serviec
+depends on the db and redis services:
 
 ```yaml
 version: "3.7"
@@ -220,8 +265,12 @@ services:
   db:
     image: postgres
 ```
+	
 #### image
-Specify the image to start the container from. Can either be a repository/tag or a partial image ID.
+
+The `image` attribute specifies the image for the container.  You can
+either use a repository/tag or a partial image ID to identify the
+image
 
 ```yaml
 image: redis
@@ -231,9 +280,8 @@ image: mongo
 
 #### ports
 
-Expose ports.
-
-Note: Port mapping is incompatible with `network_mode: host`.
+The `ports` attribute expose ports ports of teh container. However,
+please note that the port mapping is incompatible with `network_mode: host`.
 
 ```yaml
 ports:
@@ -249,9 +297,12 @@ ports:
 
 #### volumes
 
-Mount host paths or named volumes, specified as sub-options to a service.
+The `volume` attribute mounts ahost paths or named volumes. A volume
+is specified as sub-options to a service.
 
-You can mount a host path as part of a definition for a single service, and there is no need to define it in the top level `volumes` key.
+You can mount a host path as part of a definition for a single
+service, and there is no need to define it in the top level `volumes`
+key.
 
 ## Usages
 
@@ -272,15 +323,18 @@ services:
     - "27017:27017"
 ```
 
-By default, “web” service can reach “mongo” service by using the service’s name. That is why we configured the database URI to `mongodb://mongo:27017`.
+By default, `web` service can reach the `mongo` service by using the
+service’s name as we configured the database URI to be
 
-To run the two dockers using the compose file execute the command:
+`mongodb://mongo:27017`.
+
+To start the two docker containers you can use the command:
 
 ```bash
 $ docker-compose up
 ```
 
-We can close both dockers with:
+We can close both docker containers with:
 
 ```bash
 $ docker-compose down
