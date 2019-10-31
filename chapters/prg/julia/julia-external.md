@@ -1,25 +1,24 @@
-
-## External programs
+# External programs
 
 Several implementations provide the ability to access Julia through external programs such as Python, C, and Java, and
 vice versa.
 
-### Resources
+## Resources
 
 Pycall package by Steven G. Johnson <https://github.com/JuliaPy/PyCall.jl.>
 
-### Python
+## Python
 
 Julia and Python express similar syntax, and both are dynamically-typed. The Pycall package enables interoperability
 between the two languages, extending Julia functionality and reach while maintaining its desirable qualities. This
 package creates the ability to call Python functions and import Python modules from Julia, among other functions.
 [@www-pycall].
 
-#### Installation
+### Installation
 
 Start Julia, and run `Pkg.add("Pycall")`.
 
-#### Import Python Modules
+### Import Python Modules
 
 To access Python with Julia, we use the Julia syntax ```using Pycall```. Here is a simple example [@www-pycall]:
 
@@ -27,7 +26,7 @@ To access Python with Julia, we use the Julia syntax ```using Pycall```. Here is
 julia> using PyCall
 julia> math = pyimport("math")
 julia> math.sin(math.pi / 4) 
-# returns ≈ 1/√2 = 0.70710678...
+ returns ≈ 1/√2 = 0.70710678...
 ```
 
 
@@ -53,7 +52,7 @@ julia>rm(Pkg.dir("PyCall","deps","PYTHON")); Pkg.build("PyCall")`
 ```
 
 ```bash
-# activate virtual environment in system shell and start Julia
+ activate virtual environment in system shell and start Julia
 $ source PATH/TO/bin/activate  
 $ julia
 ```
@@ -69,18 +68,18 @@ julia> pyimport("sys").executable
 ```
 
 
-### Java in Julia 
+## Java in Julia 
 
-Julia interacts with Java through the use of the JavaCall.jl package. [@www-javacall] "Static and instance method with
+Julia interacts with Java through the use of the `JavaCall.jl` package. [@www-javacall] "Static and instance method with
 primitve or object arguments and return values are callable." [@www-javacall].
 
-####Installation
+### Installation
 
 ```julia
 julia> Pkg.add("JavaCall")
 ```
 
-####Usage
+### Usage
 
 ```julia
 julia> using JavaCall
@@ -101,5 +100,6 @@ julia> jcall(gurl, "getHost", JString,())
 julia> j_u_arrays = @jimport java.util.Arrays
 JavaObject{:java.util.Arrays} (constructor with 2 methods)
 
-julia> jcall(j_u_arrays, "binarySearch", jint, (Array{jint,1}, jint), [10,20,30,
-40,50,60], 40)
+julia> jcall(j_u_arrays, "binarySearch", jint, (Array{jint,1}, jint), 
+       [10,20,30,40,50,60], 40)
+```

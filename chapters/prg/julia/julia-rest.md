@@ -2,7 +2,7 @@
 
 The basic structure for creating a GET REST function in Julia is as follows. This can be typed directly in the REPL: 
 
-```julia
+```
 using HTTP
 function make_API_call(url)
     try
@@ -32,7 +32,7 @@ supports Julia 1.0 and above.
 
 To install Genie, in the Julia REPL in Atom IDE, issue the following command: 
 
-```julia
+```
 julia> import Pkg; Pkg.add("Genie")
 ```
 
@@ -48,7 +48,7 @@ create and edit a new file called for this example ```rest.jl```.  *Note*: The c
 with ```pwd()``` and changed with ```cd("path\\to\\files")```.  In the Atom editor, add the following to a new file
 named ```rest.jl```:
 
-```julia
+```
 #rest.jl
 julia> using Genie
 julia> import Genie.Router: route
@@ -64,7 +64,7 @@ julia> Genie.startup()
 ```
 Now the server can be started and accessed at <https://127.0.0.1:8000> via the REPL:
 
-```julia
+```
 julia> include("rest.jl")
 ```
 
@@ -72,7 +72,7 @@ julia> include("rest.jl")
 Now we have the template for a running server, which can be expanded.  The output of the code below will GET a JSON
 object. In the ```rest.jl``` file, add the following code.
 
-```julia
+```
 #rest.jl
 route("/echo", method = POST) do
   message = jsonpayload()
@@ -92,7 +92,7 @@ Genie.AppServer.startup(async = false)
 
 Save the above code above in the current project directory. Then from the REPL or IDE REPL, run the script again: 
 
-```julia    
+```    
 julia> include("rest.jl")
 ```
 
@@ -100,7 +100,7 @@ julia> include("rest.jl")
  
 We can also pass in parameters via URL. For instance, a string to filter or pass into a function.  
 
-```julia
+```
 #rest.jl
 Base.convert(::Type{Float64}, s::SubString{String}) = parse(Float64, s)
 route("/somefloats/:x::Float64/:y::Float64") do
@@ -115,7 +115,7 @@ Then start the server by running the script, and request  <http://localhost:8000
 Genie provides scalability and ease of management through a web framework similar to Rails and Django.  To create the
 framework for a new app, issue the following commands in the REPL:
 
-```julia
+```
 julia> mkdir("directory-name")
 julia> cd("directory-name")
 julia> using Genie
@@ -125,7 +125,7 @@ julia> Genie.newapp("TestGenieApp")
 Verify the app was created by typing <https://127.0.0.1:8000> in a browser. The Genie welcome mat should appear. To shut
 down the server, type ```ctrl + c```.  To restart the app via the IDE REPL, type:
 
-```julia
+```
 julia> startup()
 ```
 
@@ -149,7 +149,7 @@ sets.  For a complete list of the data available in Rdatasets, visit the followi
 <https://github.com/JuliaStats/RDatasets.jl>.  To begin, bring the RDatasets into scope by adding the following lines of
 code to your ```routes.jl``` file.
 
-```julia
+```
 #routes.jl
 julia> using RDatasets
 ```
@@ -157,7 +157,7 @@ julia> using RDatasets
 Next, define the frame of a simple function as follows: *Note* there is no colon after the parameter parenthesis as in
 Python.
 
-```julia
+```
 # routes.jl
 route("/getdata") do
   data = data = dataset("datasets","iris")
@@ -172,7 +172,7 @@ re-activated. Ensure the project directory is the current working directory.  In
 in the menu: Julia -> Working Directory -> Select.  Then, access the ```Pkg``` mode by typing the right bracket ```]```.
 
 
-```julia
+```
 # enter package mode by typing right bracket
 julia>]
 #activate the environment for the current working directory:
@@ -196,7 +196,7 @@ app one step further, we can place custom modules and/or packages into the ```/l
 the custom content in the ```lib``` filepath into the ```LOAD_PATH``` environment variable recursively and automatically
 load dependencies.  Add the filepath:
 
-```julia
+```
 julia> mkdir("lib")
 ```
 

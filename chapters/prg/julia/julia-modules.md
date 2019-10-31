@@ -9,7 +9,7 @@ this section.  See  <https://docs.julialang.org/en/v1/manual/modules/index.html>
 To install modules via the REPL, it is easiest to enter the ```Pkg``` mode by typing the right bracket ```]```.  Then,
 using the ```add``` command, bring packages and modules into scope. This avoids using dot notation and extra typing.
 
-```julia 
+``` 
 julia> ] 
 pkg> add MLDataUtils 
 # backspace to exit Pkg mode 
