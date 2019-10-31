@@ -1,11 +1,20 @@
 # Introduction to Julia for High Performance Computing
 
-(images/learning.png) 
 
-**Learning Objectives**
+---
 
-* Get up and running with Julia Learn basic AWS API functionality in Julia Learn about REST services in Julia Interact
-* with external programs in Julia
+![](images/learning.png) **Learning Objectives**
+
+
+* Get up and running with Julia 
+* Learn basic AWS API functionality in Julia 
+* Learn about REST services in Julia 
+* Interact with external programs in Julia
+
+---
+
+
+
 
 "Julia walks like Python and runs like C." [@www-julialang]
 
