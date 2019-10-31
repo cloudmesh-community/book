@@ -1,5 +1,7 @@
 ## Installing Julia
 
+:o2: this section is outdated
+
 To find the correct installation file for a given platform, visit
 <https://julialang.org/downloads/>.  There are several ways to run and
 interact with Julia:
