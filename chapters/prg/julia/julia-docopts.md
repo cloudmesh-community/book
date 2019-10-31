@@ -1,18 +1,21 @@
 # Docopts
 
-Docopts in Julia are similar to Python, Ruby, and other languages.  
+Docopts in Julia are similar to Python, Ruby, and other languages.
 
 ## Installation
 
-Again, most of Julia's packages that are not in the base code are contained within git repositories.
-[@julia-getting-started]. To get started with DocOpts in Julia, issue the following command within the Julia REPL:
+Again, most of Julia's packages that are not in the base code are
+contained within git repositories.  [@julia-getting-started]. To get
+started with DocOpts in Julia, issue the following command within the
+Julia REPL:
 
 ```julia
 Pkg.add("DocOpt")
 ```
 
-Usage example is given from the following website: <https://github.com/docopt/DocOpt.jl>
-[@docopt-jl].  Create a file called ```naval-fate.jl```:
+Usage example is given from the following website:
+<https://github.com/docopt/DocOpt.jl> [@docopt-jl].  Create a file
+called `naval-fate.jl`:
 
 ```julia
 #dir/naval-fate.jl
@@ -36,7 +39,8 @@ Options:
 ```
 
 
-In the same directory as ```naval-fate.jl```, run the following in the Julia REPL: 
+In the same directory as `naval-fate.jl`, run the following in the
+Julia REPL:
 
 ```julia
 julia> using DocOpt  # import docopt function
