@@ -32,7 +32,7 @@ the Julia Dev environment.    First, create a new directory called "Julia App" a
 ```
 
 Assuming Julia is properly installed, simply type the command for the executable created earlier. For instance,
-```julia0.6```. This will start a Julia REPL inside the JuliaApp directory just created. Open a text/file editor to edit
+```0.6```. This will start a Julia REPL inside the JuliaApp directory just created. Open a text/file editor to edit
 the julia-app.jl file:
 
 ```bash
@@ -42,7 +42,7 @@ $ emacs julia-app.jl
 Julia is comparable to Python in its import statements in that to use a particular package or library, the user must
 specify that package prior to its use.  With the blank ```.jl``` open, import and initialize the following packages:
 
-```julia
+```
 julia> Pkg.add("AWSCore")
 julia> Pkg.add("AWSS3")
 julia> using AWSS3
@@ -51,7 +51,7 @@ julia> using AWSCore.Services
 
 Now include in the script the AWS_Config() argument, which typically contains AWS Credentials and a Region parameter:
 
-```julia
+```
 julia> aws = AWSCore.aws_config()
 ```
 
