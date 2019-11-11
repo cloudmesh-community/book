@@ -1,4 +1,4 @@
-# Google Cloud Functions :smiley fa18-516-08
+# Google Cloud Functions
 
 ---
 

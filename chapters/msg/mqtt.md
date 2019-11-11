@@ -314,9 +314,9 @@ $ sudo apt-get install mosquitto mosquitto-clients
 $ pip install paho-mqtt
 ```
 
-### Raspberry Pi Setup :o2:
+### Raspberry Pi Setup 
 
-![No](images/no.png)
+If you have experimented with the Raspberry P and MQTT, you can contribute to this section.
 
 #### Broker
 
@@ -475,10 +475,15 @@ machines and clients can subscribe to the data and visualize it.
 
 E.MQTT.3:
 
+> Develop install instructions and examples on how to use MQTT on
+> Raspberry PI.
+
+E.MQTT.4:
+
 > Develop a broker with a variety of topics that collects data from a
 Raspberry Pi or Raspberry PI cluster and visualize it.
 
-E.MQTT.4:
+E.MQTT.5:
 
 > Explore hosted services for MQTT while at the same time remembering that
 they could pose a security risk. Can any of the online services be used

@@ -414,8 +414,8 @@ and manage guest virtual machines such as Windows, Linux, BSD, OSx86
 and even in part also macOS (on Apple hardware). Hence it makes it for
 us a very valuable tool while being able to run virtual machines on a
 local desktop or computer to simulate cloud resources without
-charging cost. In addition we find command line tools such as vagrant
-(see Section ?? ![No](images/no.png)) that make the use convenient while not having to
+charging cost. In addition we find command line tools such as Vagrant
+ that make the use convenient while not having to
 utilize the GUI or the more complex virtual box command interfaces. A
 guest additions package allows compatibility with the host OS, to for
 example allow window management between host and guest OS.
@@ -481,5 +481,5 @@ many networks into a unifying network, and internal network
 virtualization that provides network functionality to the processes
 and containers running on a single server.
 
-![No](images/no.png) We will not cover this topic in this introductory class. However
-students can contribute a section or chapter
+Note, that we will not cover this topic in this introductory class.
+However students can contribute a section or chapter

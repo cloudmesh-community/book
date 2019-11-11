@@ -1,6 +1,10 @@
 # Installation of Hadoop {#s-hadoop-installation}
 
-![No](images/no.png) THis section was checked for hadoop 3.1.1 in Ubuntu 18.04. We also describe the installation of the Yarn resource manager. We assume that you have ssh, and rsync installed and use emacs as editor.
+This section is using Hadoop version 3.1.1 in Ubuntu 18.04. We also
+describe the installation of the Yarn resource manager. We assume that
+you have ssh, and rsync installed and use emacs as editor.
+
+If you use a newer version, and like to update this text please help
 
 
 
