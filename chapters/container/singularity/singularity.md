@@ -578,27 +578,19 @@ Singularity containers designed specifically for the Comet environment.
 
 [Learn more about these containers for Comet](about_comet_singularity_containers.html).
 
-![No](images/no.png) the html sholuld be converted to markdown. use pandoc. This also
-needs to be downloaded from the SDSC page
-
-![No](images/no.png) what is this?
-
-[News Flash!]{style="color: #d31820; font-family: Tauri, sans-serif; font-size: 30px;"}
-
-Now there's an easier way to run a Singularity container on Comet ...
-
-![No](images/no.png) I think this need sto be updated to the just easier way?
-
-### PULL IT!
+An easy way to pull images from the singularity hub on comment is provided in
+the next video:
 
 [![Video](images/video.png) Singularity - pull from singularity-hub on Comet](https://asciinema.org/a/129906)
 
-Comet now supports the capability to pull a container directly from any properly
-configured remote singularity hub. For example, the following command
-can pull a container from the hpcdevops singularity hub straight to an
-empty container located on Comet:
+Comet supports the capability to pull a container directly from any properly
+configured remote singularity hub. For example, the following command can pull a
+container from the hpcdevops singularity hub straight to an empty container
+located on Comet:
 
-`[test_user@comet-06-04 ~]$ singularity pull shub://hpcdevops/singularity-hello-world:master`
+```bash
+comet$ singularity pull shub://hpcdevops/singularity-hello-world:master
+```
 
 The resulting container should be named something like
 singularity-hello-world.img.
