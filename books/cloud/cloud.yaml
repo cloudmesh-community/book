@@ -146,5 +146,6 @@ BOOK:
     - "{file.chapter}/prg/go/go-openapi.md"
     - "{file.chapter}/prg/go/go-cloud.md"
     - "{file.chapter}/prg/go/go-links.md"
+    - "{file.chapter}/prg/go/go-excerises.md"
   - REFERENCES:
       - "{file.chapter}/empty.md"

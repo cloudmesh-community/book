@@ -1434,7 +1434,16 @@ the other. Github shows that both can be used.
 
 ## Excersises
 
+
 E.GraphQL.1:
+
+> GIthub provides a good playground for experimenting with GrapohQL.
+> Develop a command in python that lists all repositories of an organization.
+> Expand upon this while listing through options all members of each repository.
+> build your own extension. Use docopts or easier just us `cloudmesh sys generate` 
+> to create a command `cms git list ORGANIZATION [--users]`
+
+E.GraphQL.2:
 
 > The chapter shows you how to develop a GraphQL server with
 > Django. Instead of Django we like you to use Flask. Develop a
@@ -1448,34 +1457,34 @@ E.GraphQL.1:
 > * <https://github.com/graphql-python/graphene-mongo/tree/master/examples/flask_mongoengine>
 > * <https://graphene-mongo.readthedocs.io/en/latest/tutorial.html>
 
-E.GraphQL.2:
+E.GraphQL.3:
 
 > Develop a GraphQL server and client that queries your CPU
 > information through a dynamic query using a resolver
 
-E.GraphQL.3: OpenStack VMS
+E.GraphQL.4: OpenStack VMS
 
 > Develop a GraphQL server that returns the information of running
 > virtual machines on OpenStack
 >
 
-E.GraphQL.4: OpenStack Azure
+E.GraphQL.5: OpenStack Azure
 
 > Develop a GraphQL server that returns the information of running
 > virtual machines on OpenStack
 >
 
-E.GraphQL.5: OpenStack Aws
+E.GraphQL.6: OpenStack Aws
 
 > Develop a GraphQL server that returns the information of running
 > virtual machines on OpenStack
 >
 
-E.GraphQL.6: Cloud Service
+E.GraphQL.7: Cloud Service
 
 > Pick a Cloud Service and develop a GraphQL interface for it.
 
-E.GraphQL.7: Cloudmesh
+E.GraphQL.8: Cloudmesh
 
 > Develop a cloudmesh framework that uses all previous clouds while
 > returning the information of all running VMS in a Web page. YOu are

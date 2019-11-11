@@ -1,7 +1,4 @@
-# Manage VM guests with virsh :o2:
-
-![No](images/no.png)
-![Question](images/question.png)
+# Manage VM guests with virsh
 
 `virsh` is a command line interface tool for managing guests and the
 hypervisor.
@@ -20,3 +17,11 @@ To display the guest list and their current states with virsh:
 The --inactive option lists inactive domains (domains thxsat have been
 defined but are not currently active). The --all domain lists all
 domains, whether active or not.
+
+A manual page can be found on line at
+
+* <https://linux.die.net/man/1/virsh>
+
+A practical example of using virsh is provided at
+
+* [Redhat Customer Portal: CHAPTER 26. MANAGING GUESTS WITH VIRSH](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/virtualization/chap-virtualization-managing_guests_with_virsh)
