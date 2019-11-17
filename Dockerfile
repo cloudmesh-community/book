@@ -39,13 +39,13 @@ RUN pip install emoji
 #
 # INSTALL PANDOC
 #
-RUN yes | pacman -S pandoc
-RUN yes | pacman -S pandoc-citeproc
-RUN yes | pacman -S pandoc-crossref
+RUN yes | pacman -Sy pandoc
+RUN yes | pacman -Sy pandoc-citeproc
+RUN yes | pacman -Sy pandoc-crossref
 
-RUN yes | pacman -S which
-RUN yes | pacman -S openssh
-RUN yes | pacman -S calibre --force
+RUN yes | pacman -Sy which
+RUN yes | pacman -Sy openssh
+RUN yes | pacman -Sy calibre 
 
 RUN pip install cyberaide-bookmanager
 #
