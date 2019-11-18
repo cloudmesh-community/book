@@ -1,8 +1,5 @@
 # Apache OpenWhisk {#s-openwhisk}
 
-![No](images/no.png) this section includes many refernces to other tools, that need
-bibtex refernces.
-
 Apache OpenWhisk is a Function as a Service (FaaS), aka Serverless
 computing, platform used to execute code in response of an events via
 triggers by managing the infrastructure, servers and scaling. The
@@ -26,7 +23,7 @@ the OpenWhisk API or CLI.
 
 ## OpenWhisk Workflow
 
-OpenWhisk uses Nginx, Kafka, Docker and CouchDB as internal
+OpenWhisk uses Nginx[@nginx], Kafka[@www-kafka], Docker[@docker] and CouchDB[@apache_couchdb] as internal
 components. To understand the role of each of these components, let's
 review an action invocation trace in the system. Remember the main
 outcome of OpenWhisk (or Serverless architecture in general) is to
@@ -299,7 +296,7 @@ command: /bin/sh -c "exec /init.sh --id 0 >> /home/owuser/controller-local_logs.
 ## Hello World in OpenWhisk
 
 OpenWhisk provides a command line tool called
-[openwhisk-cli](https://github.com/apache/incubator-openwhisk-cli)
+[openwhisk-cli](https://github.com/apache/incubator-openwhisk-cli)[@openwhisk_cli]
 which is used for controlling the platform. As part of the `make
 quick-start` command that we previously used for starting the platform, the
 account credentials will automatically be written into the

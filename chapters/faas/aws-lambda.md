@@ -25,7 +25,7 @@ AWS does not share how the internals of AWS Lambda work in detail but
 as with any general FaaS framework it should be leveraging various
 container technologies underneath. You can get a better understanding
 on how the internals of a FaaS framework is organized by looking at
-the [OpenWhisk Section](openwhisk.md)
+the [OpenWhisk Section](#s-openwhisk.md)
 
 ## AWS Lambda Features
 
@@ -50,12 +50,11 @@ allow users to tie together different events that happen in the echo
 system with the FaaS application. In this regard AWS Lambda supports
 many event sources, mainly from the AWS echo system. AWS documentation
 provides a complete list of supported event sources at
-[AWS Lambda event sources](https://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html).
+[AWS Lambda event sources](https://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html)[@aws-amazon-lambda].
 For example a developer can configure an function to be invoked when a
 S3 bucket is updated, or configure an function to be invoked based on
 inputs received by Amazon Alexa, etc.
 
-![No](images/no.png) use also bibtex
 
 ## Understanding Function limitations
 
@@ -67,9 +66,8 @@ based on the FaaS vendor. However the reason for most of the
 limitations are to maintain performance requirements. We will discuss
 several major limits next. For a complete list of limits in AWS
 Lambda please refer to the limits documentation
-[AWS Lambda Function Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
+[AWS Lambda Function Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)[@aws-amazon-lambda]
 
-![No](images/no.png) use also bibtex
 
 ### Execution Time
 
@@ -94,18 +92,15 @@ If new users want to experiment with AWS lambda, AWS does provide a
 free tier for AWS Lambda, which include 1 million function invocations
 per month. You can find a more detailed description of the free tier
 in the AWS docs
-[AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/).
+[AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/)[@aws-amazon-lambda].
 
-![No](images/no.png) use also bibtex
 
 ## Writing your fist Lambda function
 
 With the GUI interface it is relatively easy to try out your first
 Serverless function with AWS Lambda. Please follow the steps defined
 at
-[How to run your first AWS Lambda function in the cloud](../iaas/aws/aws-lambda.md#how-to-run-your-first-aws-lambda-function-in-the-cloud---example) (this link does not exsit any longer)
-
-![No](images/no.png) use also bibtex
+[How to run your first AWS Lambda function in the cloud](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)[@aws-amazon-lambda]
 
 
 ## AWS Lambda Usecases {#s-aws-lambda-applictaions}
@@ -118,7 +113,7 @@ been loaded into the system and automatically manages the computing
 resources required by that code. According to the the Lambda product page
 
 > “AWS Lambda lets you run code without provisioning or managing
-> servers.” [Aws](https://aws.amazon.com/lambda/) (![No](images/no.png) refernce to bibtex)
+> servers.” [Aws](https://aws.amazon.com/lambda/)[@aws-amazon-lambda] 
 
 For example, one of the use-cases would be that everytime AWS Lambda
 could resize the picture, after it is uploaded onto AWS S3 system and
