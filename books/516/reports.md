@@ -94,8 +94,8 @@ will at one point also show up in the proceedings.
 | [146] | approved | Kenneth Jones| [Serverless API Performance Analysis](https://github.com/cloudmesh-community/fa19-516-163/blob/master/project/report.md) |
 | [159] | approved | Austin Zebrowski | [Apache Airflow data pipelining between HDFS and Amazon Redshift and Cloudmesh](https://github.com/cloudmesh-community/fa19-516-159/blob/master/project/report.md) |
 | [171] | TBD	| Jagadesh	| [Abstract Streaming Interfaces for the NIST Big data Architecture](https://github.com/cloudmesh-community/fa19-516-171/blob/master/project/report.md) |
-| [144] | TBD	| Nayeem|  Progress is unclear. | 
-| [174] | TBD |	Sahithi	R | [title missing](https://github.com/cloudmesh-community/fa19-516-174/blob/master/project/report.md) |
+| [172] | approved	| Nayeem|  [Cloudmesh key group management](https://github.com/cloudmesh-community/fa19-516-172/blob/master/project/report.md) | 
+| [174] | approved |	Sahithi	R | [title missing](https://github.com/cloudmesh-community/fa19-516-174/blob/master/project/report.md) |
 | [151] | approved, participants unclear | Qiwei Liu, Yanting Wan	| [Cloudmesh Cloud AI Services](https://github.com/cloudmesh-community/fa19-516-151/blob/master/project/report.md)  |
 | [140] | approved but some details are missing| Mohamed Elfateh	| [Cognitive Response Simulation using Cloudmesh Cloud AI Services](https://github.com/cloudmesh-community/fa19-516-140/blob/master/project/report.md) |
 | [153] [164](https://github.com/cloudmesh-community/fa19-516-164/blob/master/project/report.md)	| approved |	Anish, Siddhesh	| [Hadoop/Spark Cluster abstraction layer](https://github.com/cloudmesh-community/fa19-516-153/blob/master/project/report.md) - dynamically changing available machines/storage available to hadoop/spark instances using orchestration tool and command line  |
