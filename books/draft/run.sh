@@ -12,6 +12,6 @@ cat $(HOME)/bib/*.bib > dest/all.bib
 bookmanager $(NAME).yaml get
 
 #ebook-convert \
-#$(HOME)/docs/vonLaszewski-$(NAME).epub \
-#$(HOME)/docs/vonLaszewski-$(NAME).pdf
+#$(FINAL)/docs/vonLaszewski-$(NAME).epub \
+#$(FINAL)/docs/vonLaszewski-$(NAME).pdf
 

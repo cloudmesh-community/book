@@ -1,6 +1,7 @@
 NAME=big-data-applications
 HOME=../..
 WEEK=e534
+FINAL=$(HOME)/../pub
 
 include ../makefile.sys
 
@@ -10,12 +11,12 @@ epub: clean version authors
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
-	mv dest/vonLaszewski-$(NAME).epub $(HOME)/docs
+	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
 pdf:
 	ebook-convert \
-	  $(HOME)/docs/vonLaszewski-$(NAME).epub \
-	  $(HOME)/docs/vonLaszewski-$(NAME).pdf
+	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
+	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf
 
 bib:
 	mkdir -p dest
@@ -26,7 +27,7 @@ version:
 
 view:
 	killall Books
-	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME).epub
+	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME).epub
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
@@ -38,16 +39,16 @@ epub-week: clean version authors
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(WEEK).yaml get
-	mv dest/vonLaszewski-$(WEEK).epub $(HOME)/docs
+	mv dest/vonLaszewski-$(WEEK).epub $(FINAL)/docs
 
 pdf-week:
 	ebook-convert \
-	  $(HOME)/docs/vonLaszewski-$(WEEK).epub \
-          $(HOME)/docs/vonLaszewski-$(WEEK).pdf
+	  $(FINAL)/docs/vonLaszewski-$(WEEK).epub \
+          $(FINAL)/docs/vonLaszewski-$(WEEK).pdf
 
 w:
 	-killall Books
-	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(WEEK).epub
+	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(WEEK).epub
 
 g: week w
 	-echo done

@@ -1,5 +1,6 @@
 NAME=222
 HOME=../..
+FINAL=$(HOME)/../pub
 
 include ../makefile.sys
 
@@ -9,12 +10,12 @@ epub: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
-	mv dest/vonLaszewski-$(NAME).epub $(HOME)/docs
+	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
 pdf:
 	ebook-convert \
-	  $(HOME)/docs/vonLaszewski-$(NAME).epub \
-	  $(HOME)/docs/vonLaszewski-$(NAME).pdf
+	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
+	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf
 
 bib:
 	mkdir -p dest
@@ -25,7 +26,7 @@ version:
 
 view:
 	-killall Books
-	$(OPEN_EPUB) $(HOME)/docs/vonLaszewski-$(NAME).epub
+	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME).epub
 
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
