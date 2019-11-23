@@ -52,6 +52,8 @@ BOOK:
     - "{file.community}/fa19-516-168/master/project/report.md"
     - "{file.community}/fa19-516-169/master/project/report.md"
     - "{file.community}/fa19-516-171/master/project/report.md"
+    - "{file.community}/fa19-516-172/master/project/report.md"
+    - "{file.community}/fa19-516-174/master/project/report.md"
   - DATACENTER:
     - "{file.community}/fa19-516-140/master/datacenter.md"
     - "{file.community}/fa19-516-141/master/datacenter.md"
@@ -86,6 +88,8 @@ BOOK:
     - "{file.community}/fa19-516-169/master/datacenter.md"
     - "{file.community}/fa19-516-170/master/datacenter.md"
     - "{file.community}/fa19-516-171/master/datacenter.md"
+    - "{file.community}/fa19-516-172/master/datacenter.md"
+    - "{file.community}/fa19-516-174/master/datacenter.md"
   #    - "{file.chapter}/preface/corrections.md"
   #    - "{file.chapter}/authors.md"
   #    - "{file.chapter}/preface/create.md"
