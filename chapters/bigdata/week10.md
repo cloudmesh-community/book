@@ -44,7 +44,7 @@ networks. Here we discuss a brief history on CNN.
 [![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1oedasSs6tBFLYyaskes0gZEhTz2Sva57Qb2Kv2ruiXU)
 
 
-## Section 4
+## Deep Learning Algorithms Part 4
 
 In this lesson we continue our study on CNN by understanding how
 historical findings supported the upliftment of the Convolutional Neural
@@ -56,7 +56,7 @@ applications in various fields.
 [![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1N9V7ehwKuA2fZN-bGX6m-DLkeTBpNiYpZAGQu6IqkeU)
 
 
-## Section 5
+## Deep Learning Algorithms Part 5
 
 In this lesson we discuss about auto-encoders. This is one of the highly
 used deep learning based models in signal denoising, image denoising.
@@ -67,7 +67,7 @@ Here we portray how an auto-encoder can be used to do such tasks.
 [![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1MoQQOb5a8ptUSLrBCm2dT8P0yrZat6beKv1CDjJn44I)
 
 
-## Section 6
+## Deep Learning Algorithms Part 6
 
 In this lesson we discuss one of the most famous deep neural network
 architecture, Generative Adversarial Networks. This deep learning model
