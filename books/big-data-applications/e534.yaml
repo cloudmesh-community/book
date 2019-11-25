@@ -43,6 +43,10 @@ BOOK:
       - "{file.chapter}/bigdata/week7.md"
   - WEEK_8:
       - "{file.chapter}/bigdata/week8.md"
+  - WEEK_9:
+      - "{file.chapter}/bigdata/week9.md"
+  - WEEK_10:
+      - "{file.chapter}/bigdata/week10.md"
   - ASSIGNMENTS:
       - "{file.chapter}/bigdata/assignments/index.md"
       - WEEKLY_ASSIGNMENTS:
@@ -52,6 +56,8 @@ BOOK:
         - "{file.chapter}/bigdata/assignments/assignment4.md"
         - "{file.chapter}/bigdata/assignments/assignment5.md"
         - "{file.chapter}/bigdata/assignments/assignment6.md"
+        - "{file.chapter}/bigdata/assignments/assignment7.md"
+        - "{file.chapter}/bigdata/assignments/assignment8.md"
   - GITHUB:
       - "{file.chapter}/bigdata/github/index.md"
 #
