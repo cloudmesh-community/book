@@ -79,3 +79,12 @@ to generate best counterfits.
 
 [![Image](images/presentation.png)Slides](https://drive.google.com/open?id=1dHvLXgdjZLE-W-Ic0AdK-nYO9pvij4jcruHxTmNJx74)
 
+# Additional Material 
+
+We have included more information on different types of deep neural
+networks and their usage. A summary of all the topics discussed under
+deep learning can be found in the following slide deck. Please refer it
+to get more information. Some of these information can help for writing
+term papers and projects. 
+
+[![Image](images/presentation.png)Slides](https://docs.google.com/presentation/d/192NZBZNR4VVOIE8GdoJNm01o5AvY9tP1lWCdEA-Qy8Q/edit?usp=sharing)
