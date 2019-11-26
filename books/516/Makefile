@@ -41,7 +41,7 @@ epub: clean fonts version
 	bookmanager $(NAME).yaml get
 	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
-ci: clean fonts version
+dest: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get

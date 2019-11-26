@@ -21,7 +21,7 @@ bib:
 	mkdir -p dest
 	cp $(HOME)/bib/*.bib dest
 
-ci: clean fonts version
+dest: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
