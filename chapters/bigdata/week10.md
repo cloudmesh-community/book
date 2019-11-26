@@ -45,7 +45,7 @@ networks. Here we discuss a brief history on CNN.
 
 
 ## Deep Learning Algorithms Part 4
-
+ 
 In this lesson we continue our study on CNN by understanding how
 historical findings supported the upliftment of the Convolutional Neural
 Networks. And also we discuss why CNN has been used for various
