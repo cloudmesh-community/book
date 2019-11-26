@@ -25,6 +25,7 @@ dest: clean fonts version
 	  dest/vonLaszewski-$(NAME).epub \
 	  dest/vonLaszewski-$(NAME).pdf
 
+"
 bib:
 	mkdir -p dest
 	cp $(HOME)/bib/*.bib dest
