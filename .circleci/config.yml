@@ -37,7 +37,7 @@ jobs:
           command: bin/check-biber.sh changed_files.log
       - run:
           name: check cloud epub
-          command: cd books/cloud && make epub
+          command: cd books/cloud && make dest
       - run:
           name: pwd
           command: pwd

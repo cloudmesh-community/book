@@ -24,6 +24,15 @@ pdf:
 	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf
 
+
+dest: clean fonts version
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME).yaml get
+	ebook-convert \
+	  dest/vonLaszewski-$(NAME).epub \
+	  dest/vonLaszewski-$(NAME).pdf
+
 bib:
 	mkdir -p dest
 	cp $(HOME)/bib/*.bib dest
