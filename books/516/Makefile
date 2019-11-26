@@ -1,10 +1,12 @@
 NAME=e516
 HOME=../..
 FINAL=$(HOME)/../pub
+THIS=.
+
 
 include ../makefile.sys
 
-all: syllabus epub pdf authors
+all: syllabus epub pdf authors publish
 
 
 proceedings: clean fonts version
@@ -19,7 +21,7 @@ draft: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-draft.yaml get
-	mv dest/vonLaszewski-$(NAME)-draft.epub $(FINALE)/docs
+	mv dest/vonLaszewski-$(NAME)-draft.epub $(FINAL)/docs
 	-killall Books
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-draft.epub
 
@@ -28,6 +30,8 @@ syllabus: clean fonts version
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-syllabus.yaml get
 	mv dest/vonLaszewski-$(NAME)-syllabus.epub $(FINAL)/docs
+	-killall Books
+	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-syllabus.epub
 	#killall Books
 	#$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-syllabus.epub
 
@@ -36,6 +40,14 @@ epub: clean fonts version
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
 	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+
+ci: clean fonts version
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME).yaml get
+	ebook-convert \
+	  dest/vonLaszewski-$(NAME).epub \
+	  dest/vonLaszewski-$(NAME).pdf
 
 pdf:
 	ebook-convert \

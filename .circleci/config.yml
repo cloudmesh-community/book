@@ -33,14 +33,11 @@ jobs:
           name: changed files
           command: git diff-tree --no-commit-id --name-only -r HEAD > changed_files.log && cat changed_files.log
       - run:
-          name: mkdir pub/docs
-          command: mkdir -p  /root/project/pub/docs
-      - run:
           name: biber
           command: bin/check-biber.sh changed_files.log
       - run:
           name: check cloud epub
-          command: cd books/cloud && make epub
+          command: cd books/cloud && make ci
       - run:
           name: pwd
           command: pwd

@@ -21,6 +21,14 @@ bib:
 	mkdir -p dest
 	cp $(HOME)/bib/*.bib dest
 
+ci: clean fonts version
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME).yaml get
+	ebook-convert \
+	  dest/vonLaszewski-$(NAME).epub \
+	  dest/vonLaszewski-$(NAME).pdf
+
 version:
 	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
