@@ -21,9 +21,9 @@ dest: clean version authors
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
-	ebook-convert \
-	  dest/vonLaszewski-$(NAME).epub \
-	  dest/vonLaszewski-$(NAME).pdf
+	# ebook-convert \
+	#  dest/vonLaszewski-$(NAME).epub \
+	#  dest/vonLaszewski-$(NAME).pdf
 
 bib:
 	mkdir -p dest
