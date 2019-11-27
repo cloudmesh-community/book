@@ -17,7 +17,7 @@ pdf:
 	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf
 
-dest: clean fonts version
+dest: clean version authors
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
