@@ -1,17 +1,14 @@
 # Apache OpenWhisk {#s-openwhisk}
 
-![No](images/no.png) this section includes many refernces to other tools, that need
-bibtex refernces.
-
-Apache OpenWhisk is a Function as a Service (FaaS), aka Serverless
-computing, platform used to execute code in response of an events via
-triggers by managing the infrastructure, servers and scaling. The
-advantage of OpenWhisk over traditional long-running VM or container
+Apache OpenWhisk [@www-openwhisk] is a Function as a Service (FaaS), aka
+Serverless computing, platform used to execute code in response of an
+events via triggers by managing the infrastructure, servers and scaling.
+The advantage of OpenWhisk over traditional long-running VM or container
 approach is that there is lack of resiliency-related overhead in
 OpenWhisk. OpenWhisk is inherently scalable since the actions are
-executed on demand. OpenWhisk also helps the developers to focus only
-on coding by taking care of infrastructure-related tasks like
-monitoring and patching.
+executed on demand. OpenWhisk also helps the developers to focus only on
+coding by taking care of infrastructure-related tasks like monitoring
+and patching.
 
 The developers provide the code written in the desired programming
 language for the desired action and this code will be executed in
@@ -26,15 +23,17 @@ the OpenWhisk API or CLI.
 
 ## OpenWhisk Workflow
 
-OpenWhisk uses Nginx, Kafka, Docker and CouchDB as internal
-components. To understand the role of each of these components, let's
-review an action invocation trace in the system. Remember the main
-outcome of OpenWhisk (or Serverless architecture in general) is to
-execute the user's code inside the system and return the result. The
-workflow of the OpenWhisk is illustrated in the figure
-@fig:openwhisk-workflow
+OpenWhisk [@www-openwhisk] uses Nginx [@www-ngnix], Kafka [@www-kafka],
+Docker [@www-docker] and CouchDB [@www-couchdb] as internal components.
+To understand the role of each of these components, let's review an
+action invocation trace in the system. Remember the main outcome of
+OpenWhisk (or Serverless architecture in general) is to execute the
+user's code inside the system and return the result. The workflow of the
+OpenWhisk is illustrated in the figure @fig:openwhisk-workflow
 
-![OpenWhisk workFlow](images/openwhisk_workflow.png){#fig:openwhisk-workflow}
+
+![OpenWhisk workflow](images/openwhisk_workflow.png){#fig:openwhisk-workflow}
+
 
 We will review the role of each components in the OpenWhisk workflow.
 
@@ -96,7 +95,7 @@ steps as well.
 
 Naturally some notion of authentication is essentially required for
 the system. This authentication is performed by the Controller via
-CouchDB. The CouchDB instance has a specific database, namely
+CouchDB [@www-couchdb]. The CouchDB instance has a specific database, namely
 `subjects` which contains the credentials and corresponding
 privileges. The credentials that corresponds to a request are verified
 against the `subjects` database and if the user's privileges satisfies
