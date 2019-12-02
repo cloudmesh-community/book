@@ -1,4 +1,4 @@
-# Google Cloud Functions
+# Google Cloud Functions {#sec:google-cloud-functions}
 
 ---
 
