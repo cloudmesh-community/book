@@ -1,10 +1,8 @@
 # Kubeless
 
-![No](images/no.png) add bibtex
-
 ## Introduction
 
-Kubeless is an Serverless or FaaS framework that has been developed as a
+Kubeless[@kubeless] is an Serverless or FaaS framework that has been developed as a
 Kubernetes native framework. Kubeless is designed using services and features
 that are provided natively on the Kubernetes framework. It uses Kubernetes
 Custom Resource Definition to define functions

@@ -10,7 +10,7 @@
 ---
 
 
-AWS Lambda [@www-awslambda] is considered as one of the earliest FaaS
+AWS Lambda [@aws-amazon-lambda] is considered as one of the earliest FaaS
 implementations made available to end users. AWS Lambda provides a rich
 set of features that can be leveraged by users to build programs and
 applications on top of the FaaS framework. AWS Lambda supports many

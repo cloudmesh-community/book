@@ -1,9 +1,6 @@
 # Apache OpenWhisk {#s-openwhisk}
 
-![No](images/no.png) this section includes many refernces to other tools, that need
-bibtex refernces.
-
-Apache OpenWhisk is a Function as a Service (FaaS), aka Serverless
+Apache OpenWhisk[@openwhisk] is a Function as a Service (FaaS), aka Serverless
 computing, platform used to execute code in response of an events via
 triggers by managing the infrastructure, servers and scaling. The
 advantage of OpenWhisk over traditional long-running VM or container
@@ -26,7 +23,7 @@ the OpenWhisk API or CLI.
 
 ## OpenWhisk Workflow
 
-OpenWhisk uses Nginx, Kafka, Docker and CouchDB as internal
+OpenWhisk uses Nginx[@nginx], Kafka[@www-kafka], Docker[@docker] and CouchDB[@apache_couchdb] as internal
 components. To understand the role of each of these components, let's
 review an action invocation trace in the system. Remember the main
 outcome of OpenWhisk (or Serverless architecture in general) is to
