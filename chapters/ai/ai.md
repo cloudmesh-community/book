@@ -130,7 +130,7 @@ player in the dataset to the selected player using k nearest neighbors.
 The following is set up for you to execute in a python command prompt
 line by line for instructional purposes.
 
-    # This code was adopted from Dataquest - K nearest neighbors in Python:
+    # This code was adopted from Dataquest - K nearest neighbors:
     # Written by: Vik Paruchuri
     import pandas
     import math

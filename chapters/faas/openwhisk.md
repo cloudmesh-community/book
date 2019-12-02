@@ -299,7 +299,7 @@ command: /bin/sh -c "exec /init.sh --id 0 >> /home/owuser/controller-local_logs.
 ## Hello World in OpenWhisk
 
 OpenWhisk provides a command line tool called
-[openwhisk-cli](https://github.com/apache/incubator-openwhisk-cli)
+[openwhisk-cli](https://github.com/apache/incubator-openwhisk-cli) [@www-openwhisk-cli]
 which is used for controlling the platform. As part of the `make
 quick-start` command that we previously used for starting the platform, the
 account credentials will automatically be written into the

@@ -1,4 +1,4 @@
-# AWS Lambda {#s-aws-lambda}
+# AWS Lambda {#sec:aws-lambda}
 
 ---
 
@@ -10,9 +10,9 @@
 ---
 
 
-AWS Lambda is considered as one of the earliest FaaS implementations
-made available to end users. AWS Lambda provides a rich set of
-features that can be leveraged by users to build programs and
+AWS Lambda [@www-awslambda] is considered as one of the earliest FaaS
+implementations made available to end users. AWS Lambda provides a rich
+set of features that can be leveraged by users to build programs and
 applications on top of the FaaS framework. AWS Lambda supports many
 event types that developers can use to orchestrate their FaaS
 applications. And in line with the FaaS model AWS Lambda only charges
@@ -29,7 +29,7 @@ the [OpenWhisk Section](openwhisk.md)
 
 ## AWS Lambda Features
 
-AWS Lambda provides many features that allows the creation of an FaaS
+AWS Lambda [@www-aws-lambda] provides many features that allows the creation of an FaaS
 application to be straight forward. An FaaS application normally
 consist of a set of functions and a set of events that activate or
 invoke those functions. AWS Lambda supports several programing
@@ -50,12 +50,11 @@ allow users to tie together different events that happen in the echo
 system with the FaaS application. In this regard AWS Lambda supports
 many event sources, mainly from the AWS echo system. AWS documentation
 provides a complete list of supported event sources at
-[AWS Lambda event sources](https://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html).
+[AWS Lambda event sources](https://docs.aws.amazon.com/lambda/latest/dg/invoking-lambda-function.html) [@www-aws-lambda-services].
 For example a developer can configure an function to be invoked when a
 S3 bucket is updated, or configure an function to be invoked based on
 inputs received by Amazon Alexa, etc.
 
-![No](images/no.png) use also bibtex
 
 ## Understanding Function limitations
 
@@ -67,9 +66,7 @@ based on the FaaS vendor. However the reason for most of the
 limitations are to maintain performance requirements. We will discuss
 several major limits next. For a complete list of limits in AWS
 Lambda please refer to the limits documentation
-[AWS Lambda Function Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
-
-![No](images/no.png) use also bibtex
+[AWS Lambda Function Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html) [@www-awslambda-limits].
 
 ### Execution Time
 
@@ -94,21 +91,16 @@ If new users want to experiment with AWS lambda, AWS does provide a
 free tier for AWS Lambda, which include 1 million function invocations
 per month. You can find a more detailed description of the free tier
 in the AWS docs
-[AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/).
-
-![No](images/no.png) use also bibtex
+[AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/) [@www-aws-lambda-pricing].
 
 ## Writing your fist Lambda function
 
 With the GUI interface it is relatively easy to try out your first
 Serverless function with AWS Lambda. Please follow the steps defined
-at
-[How to run your first AWS Lambda function in the cloud](../iaas/aws/aws-lambda.md#how-to-run-your-first-aws-lambda-function-in-the-cloud---example) (this link does not exsit any longer)
-
-![No](images/no.png) use also bibtex
+in [@sec:aws-lambda-example].
 
 
-## AWS Lambda Usecases {#s-aws-lambda-applictaions}
+## AWS Lambda Usecases {#sec:aws-lambda-applictaions}
 
 
 AWS Lambda is an event-driven, serverless computing platform provided
@@ -118,7 +110,7 @@ been loaded into the system and automatically manages the computing
 resources required by that code. According to the the Lambda product page
 
 > “AWS Lambda lets you run code without provisioning or managing
-> servers.” [Aws](https://aws.amazon.com/lambda/) (![No](images/no.png) refernce to bibtex)
+> servers.” [Aws](https://aws.amazon.com/lambda/) [@www-aws-lambda]
 
 For example, one of the use-cases would be that everytime AWS Lambda
 could resize the picture, after it is uploaded onto AWS S3 system and
@@ -155,14 +147,15 @@ different ways: an HTTP request, a new document upload to S3, a
 scheduled Job, an AWS Kinesis data stream, or a notification from AWS
 Simple Notification Service (SNS).
 
-## AWS Lambda Example
+## AWS Lambda Example {#sec:aws-lambda-example}
 
 Let us create our first Lambda function.
 
-Step 1: The very first thing we need is an AWS account. (There is
-already a section on this, please go through that to understand how to
-create an AWS account -
-[Creating AWS account](aws.md#creating-an-account)
+Step 1: The very first thing we need is an AWS account. A comprehensive
+guide aboutr this can be found in the 
+[Cloudmesh manual](https://cloudmesh.github.io/cloudmesh-manual/accounts/aws.html)
+[@www-aws-account-creation].
+
 
 Step 2: We will be writing a function that we call `isPalindrome`,
 which will check if the string is palindrome or not.
