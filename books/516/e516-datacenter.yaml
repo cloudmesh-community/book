@@ -48,16 +48,17 @@ BOOK:
       - "{file.community}/fa19-516-148/master/project/report.md"
       - "{file.community}/fa19-516-158/master/project/report.md"
       - "{file.community}/fa19-516-153/master/project/report.md"
-    - NIST_DATABASE:
+    - NISTDATABASE:
       - "{file.community}/fa19-516-147/master/project/report.md"
       - "{file.community}/fa19-516-141/master/project/report.md"
-    - NIST_CLOUD_SERVICES:
+      - "{file.community}/fa19-516-156/master/project/report.md"
+    - NISTCLOUDSERVICES:
       - "{file.community}/fa19-516-151/master/project/report.md"
       - "{file.community}/fa19-516-140/master/project/report.md"
     - OTHER:
       - "{file.community}/fa19-516-165/master/project/report.md"
       - "{file.community}/fa19-516-159/master/project/report.md"
-    - REPORT_MISSING:
+    - REPORTMISSING:
       - "{file.community}/fa19-516-174/master/project/report.md"
     - INACTIVE:
       - "{file.community}/fa19-516-161/master/project/report.md"
