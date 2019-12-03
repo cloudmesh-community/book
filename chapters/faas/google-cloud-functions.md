@@ -1,4 +1,4 @@
-# Google Cloud Functions
+# Google Cloud Functions {#sec:google-cloud-functions}
 
 ---
 
@@ -35,7 +35,7 @@ For Node.js 6 runtime environment refer to the page
 
 For Node.js 8 runtime environment refer to the page
 
-* https://cloud.google.com/functions/docs/concepts/nodejs-8-runtime>
+* <https://cloud.google.com/functions/docs/concepts/nodejs-8-runtime>
 
 ## Google Cloud Function Example
 

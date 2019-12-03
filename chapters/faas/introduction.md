@@ -35,12 +35,12 @@ logic can now live within these functions.
 
 ## Faas provider
 
-* AWS Lambda <https://aws.amazon.com/lambda>
-* Azure Functions <https://azure.microsoft.com/en-us/services/functions>
-* IBM Cloud Functions <https://console.bluemix.net/openwhisk>
-* Google Cloud Functions <https://cloud.google.com/functions>
-* Iron.io <https://www.iron.io>
-* Webtask.io <https://webtask.io>
+* [AWS Lambda](https://aws.amazon.com/lambda)[@aws-amazon-lambda]
+* [Azure Functions](https://azure.microsoft.com/en-us/services/functions)[@azure-serverless-computing]
+* [IBM Cloud Functions](https://cloud.ibm.com/functions/)[@ibm-cloud-functions]
+* [Google Cloud Functions](https://cloud.google.com/functions)[@google_cloud_functions]
+* [Iron.io](https://www.iron.io)[@iron_io]
+* [Webtask.io](https://webtask.io)[@webtask_io]
 
 Other than the providers there are also several open source FaaS
 offerings that are available to be used. One of the most complete and
@@ -48,12 +48,13 @@ popular open source option would be Apache OpenWhisk, which was
 developed by IBM and later open sourced. IBM currently deploys
 OpenWhisk in IBM cloud and offers it as a IBM Cloud functions.
 
-* OpenWhisk <https://github.com/apache/incubator-openwhisk>
-* Funktion  <https://github.com/funktionio/funktion>
-* Iron Functions <https://github.com/iron-io/functions>
-* Kubeless <https://github.com/kubeless/kubeless>
-* Fission <https://github.com/fission/fission>
-* FaaS-netes <https://github.com/alexellis/faas-netes>
+* [OpenWhisk](https://github.com/apache/incubator-openwhisk)[@openwhisk]
+* [Funktion](https://github.com/funktionio/funktion) [@funktion]
+* [Iron Functions](https://github.com/iron-io/functions)[@iron_functions]
+* [Kubeless](https://github.com/kubeless/kubeless)[@kubeless]
+* [Fission](https://github.com/fission/fission)[@fission]
+* [FaaS-netes](https://github.com/alexellis/faas-netes)[@faas-netes]
+
 
 There are many articles and tutorials online that provide very good
 information regarding FaaS. Given next are some such resources that provide
@@ -61,11 +62,11 @@ introductions and some example usecase's of FaaS
 
 ## Resources
 
-* <https://stackify.com/function-as-a-service-serverless-architecture>
-* <https://en.wikipedia.org/wiki/Serverless_computing>
-* <https://azure.microsoft.com/en-us/overview/serverless-computing>
-* <https://aws.amazon.com/serverless>
-* <https://aws.amazon.com/lambda>
+* <https://stackify.com/function-as-a-service-serverless-architecture>[@function_as_a_service]
+* <https://en.wikipedia.org/wiki/Serverless_computing>[@serverless_computing]
+* <https://azure.microsoft.com/en-us/overview/serverless-computing>[@azure_serverless_computing]
+* <https://aws.amazon.com/serverless>[@aws-amazon-serverless]
+* <https://aws.amazon.com/lambda>[@aws-amazon-lambda]
 * <https://www.infoworld.com/article/3093508/cloud-computing/what-serverless-computing-really-means.html>
 * <https://techbeacon.com/aws-lambda-serverless-apps-5-things-you-need-know-about-serverless-computing>
 * <https://blog.alexellis.io/introducing-functions-as-a-service>

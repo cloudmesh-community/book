@@ -5,13 +5,13 @@ support serverless computing such as AWS Lambda, Google Cloud
 Functions (Alpha) and Azure Function. Serverless computing introduces
 many new research challenges in the areas of sandboxing, session
 management, load balancing, and databases. To facilitate work in
-these areas, OpenLambda is building an open-source serverless
+these areas, OpenLambda[@open_lambda] is building an open-source serverless
 computing platform.
 
 Serverless Computation with OpenLambda PDF slide material is available
 at:
 
-* <https://open-lambda.org/resources/slides/ol-first-meeting.pdf>.
+* <https://open-lambda.org/resources/slides/ol-first-meeting.pdf>[@open_lambda]
 
 Communication is available at the following Slack Development Channel
 (You will need to create an account if you do not already have one):
@@ -36,11 +36,11 @@ OpenLambda is an Apache-licensed serverless computing project, written
 in Go and based on Linux containers. The primary goal of OpenLambda
 is to enable exploration of new approaches to serverless computing.
 Our research agenda is described in more detail in a
-[HotCloud '16 paper]<https://www.usenix.org/system/files/conference/hotcloud16/hotcloud16_hendrickson.pdf>.
+[HotCloud '16 paper]<https://www.usenix.org/system/files/conference/hotcloud16/hotcloud16_hendrickson.pdf>[@hendrickson2016serverless].
 
 All detail about getting started, installation, configuration,
 adminstration and licensing has been sourced from
-<https://github.com/open-lambda/open-lambda>
+<https://github.com/open-lambda/open-lambda>[@open_lambda]
 
 ## Getting Started
 
@@ -361,6 +361,7 @@ output in the above locations, you will need to write files to the
 function-A or function-B) because that is where scratch space is
 always mapped within a lambda container.
 
+<!---
 ## Configuration
 
 :o2: document the configuration parameters and how they interact.
@@ -370,6 +371,7 @@ specify dependencies.
 ## Architecture
 
 :o2: concise description of the architecture.
+-->
 
 
 

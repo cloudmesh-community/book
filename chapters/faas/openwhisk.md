@@ -1,9 +1,16 @@
 # Apache OpenWhisk {#s-openwhisk}
 
+<<<<<<< HEAD
 Apache OpenWhisk [@www-openwhisk] is a Function as a Service (FaaS), aka
 Serverless computing, platform used to execute code in response of an
 events via triggers by managing the infrastructure, servers and scaling.
 The advantage of OpenWhisk over traditional long-running VM or container
+=======
+Apache OpenWhisk[@openwhisk] is a Function as a Service (FaaS), aka Serverless
+computing, platform used to execute code in response of an events via
+triggers by managing the infrastructure, servers and scaling. The
+advantage of OpenWhisk over traditional long-running VM or container
+>>>>>>> 316295a214df12cfeea3ba3ba2d4a8bf6f59df4c
 approach is that there is lack of resiliency-related overhead in
 OpenWhisk. OpenWhisk is inherently scalable since the actions are
 executed on demand. OpenWhisk also helps the developers to focus only on
@@ -23,6 +30,7 @@ the OpenWhisk API or CLI.
 
 ## OpenWhisk Workflow
 
+<<<<<<< HEAD
 OpenWhisk [@www-openwhisk] uses Nginx [@www-ngnix], Kafka [@www-kafka],
 Docker [@www-docker] and CouchDB [@www-couchdb] as internal components.
 To understand the role of each of these components, let's review an
@@ -33,6 +41,15 @@ OpenWhisk is illustrated in the figure @fig:openwhisk-workflow
 
 
 ![OpenWhisk workflow](images/openwhisk_workflow.png){#fig:openwhisk-workflow}
+=======
+OpenWhisk uses Nginx[@nginx], Kafka[@www-kafka], Docker[@docker] and CouchDB[@apache_couchdb] as internal
+components. To understand the role of each of these components, let's
+review an action invocation trace in the system. Remember the main
+outcome of OpenWhisk (or Serverless architecture in general) is to
+execute the user's code inside the system and return the result. The
+workflow of the OpenWhisk is illustrated in the figure
+@fig:openwhisk-workflow
+>>>>>>> 316295a214df12cfeea3ba3ba2d4a8bf6f59df4c
 
 
 We will review the role of each components in the OpenWhisk workflow.
