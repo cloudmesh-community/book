@@ -8,6 +8,10 @@ include ../makefile.sys
 
 all: syllabus epub pdf authors publish
 
+update:
+	cd ../../..; cloudmesh-installer git pull 516
+	cd ../../..; cloudmesh-installer git pull storage
+
 
 proceedings: clean fonts version
 	mkdir -p dest

@@ -36,7 +36,6 @@ BOOK:
       - "{file.community}/fa19-516-160/master/project/report.md"
       - "{file.community}/fa19-516-152/master/project/report.md"
       - "{file.community}/fa19-516-155/master/project/report.md"
-      - "{file.community}/fa19-516-168/master/project/report.md"
       - "{file.community}/fa19-516-171/master/project/report.md"
     - SERVICES:
       - "{file.community}/fa19-516-167/master/project/report.md"
@@ -57,10 +56,12 @@ BOOK:
     - OTHER:
       - "{file.community}/fa19-516-165/master/project/report.md"
       - "{file.community}/fa19-516-159/master/project/report.md"
-    - REPORT_MISSING:
+    - 1:
       - "{file.community}/fa19-516-174/master/project/report.md"
-    - INACTIVE:
+    - 2:
       - "{file.community}/fa19-516-161/master/project/report.md"
+    - TODO:
+      - "{file.community}/fa19-516-168/master/project/report.md"
 #    - "{file.community}/fa19-516-163/master/project/report.md"
   #  - FORMAT:
   #    - "{file.chapter}/preface/corrections.md"
