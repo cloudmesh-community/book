@@ -1,6 +1,6 @@
 # OpenFaaS 
 
-OpenFaas[@openfass] is a framework for building serverless functions on docker
+OpenFaas [@openfass] is a framework for building serverless functions on docker
 containers and follows the same workflow as micro services.  Since,
 OpenFaas uses Docker and Kubernetes technologies, it will give lot of
 hosting options ranging from a laptop to large-scale cloud systems Any

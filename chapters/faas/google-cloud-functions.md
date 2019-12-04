@@ -90,7 +90,7 @@ Palindrome string. NOTE: This is not an optimized Python code, it is
 just used here for demonstration purpose. This function can be
 optimized further with Python standards style writing.(see @fig:PythonCode)
 
-![:Write Python Function](images/markdown-img-paste-2018103113223371.png){#fig:PythonCode}
+![Write Python Function](images/markdown-img-paste-2018103113223371.png){#fig:PythonCode}
 
 
 **Step 8**: The function is created and deployed in the next page (see

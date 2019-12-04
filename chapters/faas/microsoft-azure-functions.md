@@ -1,4 +1,4 @@
-# Microsoft Azure Function :o2:
+# Microsoft Azure Function
 
  Microsoft Azure Functions [@azure_serverless_computing] is the Microsoft's take 
  on serverless computing. Similar to its counterparts such as AWS Lambda ([@sec:aws-lambda]), 

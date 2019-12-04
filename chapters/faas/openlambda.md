@@ -276,7 +276,9 @@ the Python dependencies).
 
 ### Writing Handlers
 
-:o2: describe how to write and upload handlers
+The function handler field refers to a folder where the function's source code 
+can be found, it must always be a folder and not a filename. Please refer 
+OpenLambda documentation [@open_lambda].
 
 
 ### Cluster Directory
