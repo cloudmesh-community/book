@@ -44,6 +44,7 @@ BOOK:
     - "{file.chapter}/class/516/week9-container.md"
     - "{file.chapter}/class/516/week11-messaging.md"
     - "{file.chapter}/class/516/week12-go.md"
+    - "{file.chapter}/class/516/week13-faas.md"
     - "{file.chapter}/class/516/weekn.md"
   - APPENDIX:
     - "{file.chapter}/class/516/faq.md"

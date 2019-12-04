@@ -6,7 +6,7 @@ THIS=.
 
 include ../makefile.sys
 
-all: syllabus epub pdf authors publish
+all: syllabus epub pdf authors
 
 update:
 	cd ../../..; cloudmesh-installer git pull 516
