@@ -24,6 +24,7 @@ file:
   "base": "../../chapters"
   #  "community": "file://../../.."
   "community": "https://raw.githubusercontent.com/cloudmesh-community"
+  "cloudmesh": "https://raw.githubusercontent.com/cloudmesh"
 BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"
@@ -38,7 +39,7 @@ BOOK:
       - "{file.community}/fa19-516-155/master/project/report.md"
       - "{file.community}/fa19-516-171/master/project/report.md"
     - SERVICES:
-      - "{file.community}/fa19-516-167/master/project/report.md"
+      - "{file.cloudmesh}/storagelifecycle/master/README.md"
       - "{file.community}/fa19-516-166/master/project/report.md"
     - SECURITY:
       - "{file.community}/fa19-516-144/master/project/report.md"
