@@ -31,8 +31,12 @@ BOOK:
     - "{git.credit}/disclaimer.md"
   - REPORTS:
     - COMPUTE:
-      - "{file.community}/fa19-516-162/master/project/report.md"
+      - ORACLE:
+        - "{file.community}/fa19-516-162/master/project/report.md"
+        - "{file.cloudmesh}/cloudmesh-manual/master/docs-source/source/accounts/oracle/account.md"
+        - "{file.community}/fa19-516-162/master/project/mnist-example.md"
       - "{file.community}/fa19-516-169/master/project/report.md"
+      - "{file.community}/fa19-516-157/master/project/report.md"
     - STORAGE:
       - "{file.community}/fa19-516-160/master/project/report.md"
       - "{file.community}/fa19-516-152/master/project/report.md"
