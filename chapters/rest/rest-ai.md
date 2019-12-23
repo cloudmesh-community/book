@@ -1,6 +1,6 @@
 # REST AI services Example {#sec:restai-kmeans}
 
-This is a more involved example which uses OpenAPI 3.0 specification to invoke 
+Now we present a more involved example which uses OpenAPI 3.0 specification to invoke 
 [![Video](images/video.png) K-means Clustering](https://www.youtube.com/watch?v=aGRdp4TKc4c&list=PLy0VLh_GFyz9fRbuhUS59rUThN_G1VCdX&index=2) 
 routine in scikit-learn [@scik2]. Scikit-learn k-means user-guide can be found 
 Scikit-learn K-Means package [@scikitlearn-kmeans].  
@@ -14,15 +14,13 @@ This involves the following.
 * Additionally, scikit-learn KMeans module provides routines to get the cluster 
   centers, labels, etc. which can also be exposed as REST services.   
 
-To create the REST services, we would be using OpenAPI 3.0 REST service via
- introspection.  
+To create the REST services, we would be using OpenAPI 3.0 REST service via introspection.  
 
 ## Service Endpoints/ Paths 
 
 ###  Path *kmeans/upload* 
 
-A POST request with a file containing points to create the k-means clustering
- model. POST content would be *multipart/form-data*.  
+A POST request with a file containing points to create the k-means clustering model. POST content would be *multipart/form-data*.  
 
 
 For an example consider the following 6 points in XY dimensions,
@@ -45,10 +43,9 @@ $ curl -X POST "http://localhost:8080/kmeans/upload" \
         -F "file=@model.csv;type=text/csv"
 ```
 
-Service implementation would look like this. File content will be received as a 
+Service implementation would look like this. The file content is received as a 
 [*werkzeug.datastructures.FileStorage*](https://werkzeug.palletsprojects.com/en/0.15.x/datastructures/#werkzeug.datastructures.FileStorage) 
-object in *Flask*, which can be used to stream into the filesystem. Backend
- keeps two dicts to map Job ID to file and vise-versa (*inputs* and *inputs_r*). 
+sobject in *Flask*, which can be used to stream into the filesystem. The backend keeps two dicts to map Job ID to file and vise-versa (*inputs* and *inputs_r*). 
  
 ```python
 def upload_file(file=None):
@@ -68,9 +65,7 @@ def upload_file(file=None):
     return jsonify({'job_id': job_id, 'filename': filename})
 ```
 
-If the request is successful, a *JSON* will be returned with the file name and 
-the associated job ID. Job ID can be considered ID that would connect, inputs to 
-the models and the predicted outputs. 
+If the request is successful, a *JSON* will be returned with the file name and the associated job ID. Job ID can be considered ID that would connect, inputs to the models, and the predicted outputs. 
 
 ```
 {
@@ -81,8 +76,7 @@ the models and the predicted outputs.
 
 ### Path *kmeans/fit*
 
-A POST request with a *JSON* body containing Job ID and model parameters that 
-need to passed on to the scikit-learn KMeans model initialization such as, 
+A POST request with a *JSON* body containing Job ID and model parameters that need to pass on to the scikit-learn KMeans model initialization such as, 
 number of clusters (n_clusters), maximum iterations (max_iter), etc. 
 
 Example:
@@ -105,9 +99,7 @@ $ curl -X POST "http://localhost:8080/kmeans/fit" \
         -d "{\"job_id\":0,\"model_params\":{\"n_clusters\":3}}"
 ```
   
- Service implementation looks like this. POST request body will be populated as 
- a dict and passed on to the method by  Flask (*body*). Once the model is 
- fitted, it will be put into a in memory dict (*models*) against its Job ID. 
+ Service implementation looks like this. POST request body will be populated as a dict and passed on to the method by  Flask (*body*). Once the model is fitted, it will be put into an in-memory dict (*models*) against its Job ID. 
  Labels will be written to disk as a file, and the content will be returned as a 
  CSV. 
   
@@ -137,8 +129,7 @@ def kmeans_fit(body):
     return send_file(labels)
 ```
   
-The response CSV file will be returned with the corresponding labels for the 
-input points. 
+The response CSV file will be returned with the corresponding labels for the input points. 
 
  ```
 1.000000000000000000e+00
@@ -151,8 +142,7 @@ input points.
  
 ### Path *kmeans/predict* 
  
- A POST request with a file containing the points to be predicted and the 
- corresponding Job ID as *multipart/form-data*. 
+ A POST request with a file containing the points to be predicted and the corresponding Job ID as *multipart/form-data*. 
  
  ```
 job_id=0
@@ -178,7 +168,7 @@ $ curl -X POST "http://localhost:8080/kmeans/predict" \
 Service implementation looks like this. Note that there is a strange behavior in 
 *Flask* with *Connextion* where the file content will be passed on to the
  *file* object as a [*werkzeug.datastructures.FileStorage*](https://werkzeug.palletsprojects.com/en/0.15.x/datastructures/#werkzeug.datastructures.FileStorage) 
-object but the Job ID is passed as a dict to *body* object.  
+object, but the Job ID is passed as a dict to *body* object.  
 
 ```python
 def kmeans_predict(body, file=None):
@@ -205,7 +195,7 @@ def kmeans_predict(body, file=None):
 ```
 
 
-The response would send out the corresponding labels of the passed points as a 
+The response would send out the corresponding labels of the passing points as a 
 CSV file. 
 
 ```
@@ -281,13 +271,10 @@ $ curl -X POST "http://localhost:8080/kmeans/predict" \
 
 ## Notes
 
-* Above services can easily be combined together in the backend to accept a 
+* Above services can easily be combined in the backend to accept a 
   model file, together with a prediction input 
 * File and to return the predicted output file (synchronous operation). But 
-  usually, we can expect AI jobs to be long running, hence the services would 
-  need to be handled asynchronously. 
-* Additionally, once a model is fitted, users should be able to reuse the model 
-  for multiple predictions. Hence it is sensible to separate out model fitting 
-  and predictions into separate services.        
+  usually, we can expect AI jobs to be long-running, hence the services would need to be handled asynchronously. 
+* Additionally, once a model is fitted, users should be able to reuse the model for multiple predictions. Hence it is sensible to separate model fitting and predictions into separate services.        
 
 

@@ -2,7 +2,7 @@
 
 RESTful services have undoubtedly become the de-facto software
 architectural style for creating Web services. A REST API specification
-would defines the attributes and constraints to be used in the web
+would define the attributes and constraints to be used in the web
 service. There have been multiple specifications that have been in use
 such as [OpenAPI (formally called Swagger)](https://github.com/OAI/OpenAPI-Specification) 
 [@oai-spec], [RAML](https://raml.org/) [@raml-spec], [tinyspec](https://github.com/Ajaxy/tinyspec)
@@ -39,13 +39,12 @@ specification.
 
 ### Open API 3.0 Specification (OAS 3.0) 
 
-OAS 3.0 key definitions can be depicted in the following figure.  
+OAS 3.0 key definitions are depicted in @fig:oas3-spec
 
 ![Components of OAS 3.0 [Source](https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/)](images/openapi3.png){#fig:oas3-spec}
 
-Basic structure of the definitions would look like this. The sample REST 
-service, exposes *http://localhost:8080/cloudmesh* basepath. Under that base 
-path, an endpoint has been exposed as *cloudmesh/cpu* which would return CPU 
+The basic structure of the definitions would look like this. The sample REST 
+service exposes *http://localhost:8080/cloudmesh* basepath. Under that base path, an endpoint has been exposed as *cloudmesh/cpu*, which would return CPU 
 information of the server. It uses a predefined schema to return the results, 
 which is defined under the *components/schemas*. See the Section [OpenAPI REST 
 Service via Introspection](#sec:openapi-introspection}) for the detailed example. 
@@ -147,9 +146,7 @@ paths:
 
 **Operation ID**:
 
-When using introspection for REST services (using Connexion), we would need to 
-point to the operation that would ultimately carry out the request. This 
-operation is specified by the *operationID*.
+When using introspection for REST services (using Connexion), we would need to point to the operation that would ultimately carry out the request. This operation is specified by the *operationID*.
 
 ```yaml
 ...
@@ -186,7 +183,7 @@ paths:
  
 **Request Body**:
 
-When a request is sent with a body, such as *POST*, that will be
+When a request is sent with a body, such as *POST*, that is
 specified in the *requestBody* under a *path*.
 
 ```yaml
@@ -277,7 +274,7 @@ security:
 
 According to the current OAS 3.0, supported authentication methods are, 
 
-* HTTP authentication: Basic, Bearer, and so on.
+* HTTP authentication: Basic, Bearer, and others.
 * API key as a header or query parameter or in cookies
 * OAuth2
 * OpenID Connect Discovery
@@ -288,9 +285,7 @@ According to the current OAS 3.0, supported authentication methods are,
 ## RAML
 
 [RAML](https://raml.org/) [@raml-spec] (RESTful API Modeling Language) is a 
-specification proposed in 2013 and it is based on YAML format. The specification 
-is managed by the RAML Worker Group. It initially came out as a proprietary 
-vendor language (specification) but later was open-sourced. As of Sep 2019, the 
+specification proposed in 2013, and it is based on YAML format. The specification is managed by the RAML Worker Group. It initially came out as a proprietary vendor language (specification) but later was open-sourced. As of Sep 2019, the 
 latest specification is [RAML 1.0](https://github.com/raml-org/raml-spec/blob/master/versions/raml-10/raml-10.md)
 [@raml_spec_1]. 
 
@@ -304,7 +299,7 @@ title: Hello world # required title
   get: # HTTP method declaration
     responses: # declare a response
       200: # HTTP status code
-        body: # declare content of response
+        body: # declare the content of the response
           application/json: # media type
             type: | # structural definition of a response (schema or type)
               {
@@ -323,51 +318,39 @@ title: Hello world # required title
 ```
 
 In the current context, the industry seems to be adopting OpenAPI more than 
-RAML. Consequently, some of the main contributors of RAML such as MuleSoft have 
-joined the Open API Initiative since 2017. Hence, it is safe to conclude that 
+RAML. Consequently, some of the main contributors of RAML, such as MuleSoft, have joined the Open API Initiative since 2017. Hence, it is safe to conclude that 
 Open API would be the dominant REST API specification in the web services domain.
 
 Furthermore, there are tools available to switch between the specifications, 
-such as [RAML Web API Parser](https://github.com/raml-org/webapi-parser) which 
-can convert RAML to Open API and vice-versa. 
+such as [RAML Web API Parser](https://github.com/raml-org/webapi-parser), which can convert RAML to Open API and vice-versa. 
 
 
 ## API Blueprint 
 
-[API Blueprint](https://apiblueprint.org/) [@apiblue-spec] is another 
-specification available currently which uses Markdown syntax. As of Sep, 2019 
+[API Blueprint](https://apiblueprint.org/) [@apiblue-spec] is another specification available currently which uses Markdown syntax. As of Sep 2019 
 the latest version available is 1A-rev9.
 
 
 
 ## JsonAPI
 
-As the name suggests, [JSON API](https://jsonapi.org)[@jsonapi] attempts to 
-leverage web services specifications using JSON format. It reached a stable 
-version 1.0 in May, 2015, but there have been no revisions since then.
+As the name suggests, [JSON API](https://jsonapi.org)[@jsonapi] attempts to leverage web services specifications using JSON format. It reached a stable 
+version 1.0 in May 2015, but there have been no revisions since then.
 
 
 ## Tinyspec
 
 [Tinyspec](https://github.com/Ajaxy/tinyspec)[@tinyspec] is a lightweight 
-alternative to Open API. It has not being able to enter into the mainstream thus 
-far, unfortunately. 
-
-
+alternative to Open API. It has not been able to enter into the mainstream. 
 
 ## Tools
 
-There are a number of tools available in the REST webservices specification 
-domain. A classification of REST tools can be found in the [@sec:rest_classification]
+There are a number of tools available in the REST Web services specification domain. A classification of REST tools can be found in the [@sec:rest_classification]
 section. 
 
 ### Connexion
 
-[Connexion](https://github.com/zalando/connexion)[@connexion] is one such tool 
-that is based on Open API and it is widely used in the Python environment. This 
-framework allows users to define webservices in Open API and then map those 
-services to Python functions conveniently. We would be using Connexion when we 
-create REST services using introspection [@sec:openapi-introspection].
+[Connexion](https://github.com/zalando/connexion)[@connexion] is one such tool that is based on Open API, and it is widely used in the Python environment. This framework allows users to define Web services in Open API and then map those services to Python functions conveniently. We would be using Connexion when we create REST services using introspection [@sec:openapi-introspection].
 
 Here is an example from the [Connexion official website](https://github.com/zalando/connexion/blob/master/examples/openapi3/helloworld/openapi/helloworld-api.yaml) 
 [@connexion]. 

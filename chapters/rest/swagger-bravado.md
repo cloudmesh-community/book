@@ -1,164 +1,102 @@
-# Swagger-bravado, a fork of Swagger-py maintained by Yelp
+# OpenAPI REST Services with Swagger {#sec:swagger}
 
-In this section, we are discussing a Yelp maintained fork of
-Swagger. Bravado is a python client library for Swagger 2.0 services
-and it aims to replace Swagger-Codegen.
+Swagger <https://swagger.io/> is a tool for developing API
+specifications based on the OpenAPI Specification (OAS). It allows not
+only the specification but the generation of code based on the
+specification in a variety of languages.
 
-We assume that you already understand the concept of REST API service
-and you have some knowledge on Swagger-Codegen.
+Swagger itself has several tools which together build a framework
+for developing REST services for a variety of languages.
 
-## Some important features afforded by Bravado
+## Swagger Tools
 
-- Swagger models as Python types (no need to deal with JSON).
-- Dynamically generated client - no code generation needed!
-- Swagger Schema is v2.0 compatible.
+The primary Swagger tools of interest are:
 
-To understand the features and advantages of Bravado, it is better to
-start with some practice.
+Swagger Core
 
-### Installation
+: includes libraries for working with Swagger specifications
+  <https://github.com/swagger-api/swagger-core>.
 
-You can start easily in a python environment with this command to
-install the latest version of Bravado:
+Swagger Codegen
 
-	$ pip install --upgrade bravado
+: allows generating code from the specifications to develop Client
+  SDKs, servers, and documentation.
+  <https://github.com/swagger-api/swagger-codegen>
 
-### First try
+Swagger UI
 
-After you have installed the bravado packages, here is a simple
-example for you to make the first try, you could run you code in a
-python environment:
+: is an HTML5 based UI for exploring and interacting with the
+  specified APIs <https://github.com/swagger-api/swagger-ui>
 
-	from bravado.client import SwaggerClient
-	client = SwaggerClient.from_url("http://petstore.swagger.io/v2/swagger.json")
-	pet = client.pet.getPetById(petId=42).result()
+Swagger Editor
 
-This piece of code shows an example that how to setup a bravado client
-and test its property. If you were lucky, and pet Id with 42 was
-present, you will get back a result. It will be a dynamically created
-instance of bravado.model.Pet with attributes category, etc. You can
-even try `pet.category.id` or `pet.tags[0]`.  A sample response should be:
+: is a Web-browser based editor for composing specifications using
+  YAML <https://github.com/swagger-api/swagger-editor>
 
-	Pet(category=Category(id=0L, name=u''), status=u'', name=u'', tags=[Tag(id=0L, name=u'')], photoUrls=[u''], id=2)
+Swagger Hub
 
-### Try to make a POST call
+: is a Web service to collaboratively develop and host OpenAPI specifications 
+  <https://swagger.io/tools/swaggerhub/>
 
-Here we will demonstrate how bravado hides all the JSON handling from the user.
+The developed APIs can be hosted and further developed on an online
+repository named SwaggerHub <https://app.swaggerhub.com/home> The
+convenient online editor is available which also can be installed
+locally on a variety of operating systems including macOS, Linux, and
+Windows.
 
-	Pet = client.get_model('Pet')
-	Category = client.get_model('Category')
-	pet = Pet(id=42, name="tommy", category=Category(id=24))
-	client.pet.addPet(body=pet).result()
+## Swagger Community Tools
 
-### Example with Basic Authentication
+notify us about other tools that you find and would like us to mention
+here.
 
-Here is example code on how to request authentication from client side:
+### Converting Json Examples to OpenAPI YAML Models
 
+Swagger toolbox is a utility that can convert JSON to swagger compatible
+YAML models. It is hosted online at
 
-	from bravado.requests_client import RequestsClient
-	from bravado.client import SwaggerClient
+* <https://swagger-toolbox.firebaseapp.com/>
 
-	http_client = RequestsClient()
-	http_client.set_basic_auth(
-   		 'api.yourhost.com',
-    	'username', 'password'
-	)
-	client = SwaggerClient.from_url(
-   		 'http://petstore.swagger.io/v2/swagger.json',
-    	  http_client=http_client,
-	)
-	pet = client.pet.getPetById(petId=42).result()
+The source code to this tool is available on GitHub at
 
+* <https://github.com/essuraj/swagger-toolbox>
 
-### Asynchronous client
+It is crucial to make sure that the JSON model is configured correctly.
+As such, each data type must be wrapped in "quotes" and the last element
+must not have a `,` behind it.
 
-Bravado also provides an out of the box asynchronous http client with
-an optional timeout parameter. Before you could utilize the function
-as an asynchronous http client, you need to install your library as
-following command:
+In case you have large models, we recommend that you gradually add more
+and more features so that it is easier to debug in case of an error.
+This tool is not designed to provide back a full-featured OpenAPI, but
+help you get started deriving one.
 
-	$ pip install bravado[fido]
+Let us look at a small example. Let us assume we want to create a REST
+service to execute a command on the remote service. We know this may not
+be a good idea if it is not secured correctly, so be extra careful. A good
+way to simulate this is just to use a return string instead of executing
+the command.
 
-Then here is an example on how to configure a timeout option:
+Let us assume the JSON schema looks like:
 
+    {
+       "host": "string",
+       "command": "string"
+    }
 
-	from bravado.client import SwaggerClient
-	from bravado.fido_client import FidoClient
+The output the swagger toolbox creates is
 
-	client = SwaggerClient.from_url(
-   		 'http://petstore.swagger.io/v2/swagger.json',
-    	FidoClient()
-	)
+    ---
+      required:
+        - "host"
+        - "command"
+      properties:
+        host:
+          type: "string"
+        command:
+          type: "string"
 
-	result = client.pet.getPetById(petId=42).result(timeout=4)
+As you can see it is far from complete, but it could be used to get you
+started.
 
-
-### Simple Returning without any model
-
-If you want to get the result without specifying any models, you could
-try the following code:
-
-	from bravado.client import SwaggerClient
-	from bravado.fido_client import FidoClient
-
-	client = SwaggerClient.from_url(
-   		 'http://petstore.swagger.io/v2/swagger.json',
-    	config={'use_models': False}
-	)
-
-	result = client.pet.getPetById(petId=42).result(timeout=4)
-
-You can get the result as this:
-
-	{
-   	 	'category': {
-        	'id': 0L,
-        	'name': u''
-    	},
-    	'id': 2,
-    	'name': u'',
-    	'photoUrls': [u''],
-    	'status': u'',
-    	'tags': [
-        	{'id': 0L, 'name': u''}
-    	]
-	}
-
-## Configuration
-
-### Configuration on Client Side
-
-You can configure certain behaviours when creating a
-SwaggerClient. Here is a sample skeleton code for configuration:
-
-	from bravado.client import SwaggerClient, SwaggerFormat
-
-	mysuperformat = SwaggerFormat(...)
-
-	config = {
-   		# === bravado config ===
-
-	    #Determines what is returned by the service call.
-    	'also_return_response': False,
-
-	    # === bravado-core config ====
-
-   		#  validate incoming responses
-    	'validate_responses': True,
-
-	    # validate outgoing requests
-   		'validate_requests': True,
-
-    	# validate the swagger spec
-    	'validate_swagger_spec': True,
-
-    	# Use models (Python classes) instead of dicts for #/definitions/{models}
-    	'use_models': True,
-
-    	# List of user-defined formats
-    	'formats': [my_super_duper_format],
-
-	}
-
-	client = SwaggerClient.from_url(..., config=config)
+Based on this tool develop a rest service to which you send a schema in
+JSON format from which you get back the YAML model.
 

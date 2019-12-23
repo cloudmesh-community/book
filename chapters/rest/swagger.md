@@ -2,15 +2,15 @@
 
 Swagger <https://swagger.io/> is a tool for developing API
 specifications based on the OpenAPI Specification (OAS). It allows not
-only the specification, but the generation of code based on the
+only the specification but the generation of code based on the
 specification in a variety of languages.
 
-Swagger itself has a number of tools which together build a framework
+Swagger itself has several tools which together build a framework
 for developing REST services for a variety of languages.
 
 ## Swagger Tools
 
-The major Swagger tools of interest are:
+The primary Swagger tools of interest are:
 
 Swagger Core
 
@@ -19,7 +19,7 @@ Swagger Core
 
 Swagger Codegen
 
-: allows to generate code from the specifications to develop Client
+: allows generating code from the specifications to develop Client
   SDKs, servers, and documentation.
   <https://github.com/swagger-api/swagger-codegen>
 
@@ -35,7 +35,7 @@ Swagger Editor
 
 Swagger Hub
 
-: is a Web service to collaborativly develop and host OpenAPI specifications 
+: is a Web service to collaboratively develop and host OpenAPI specifications 
   <https://swagger.io/tools/swaggerhub/>
 
 The developed APIs can be hosted and further developed on an online
@@ -51,31 +51,31 @@ here.
 
 ### Converting Json Examples to OpenAPI YAML Models
 
-Swagger toolbox is a utility that can convert json to swagger compatible
-yaml models. It is hosted online at
+Swagger toolbox is a utility that can convert JSON to swagger compatible
+YAML models. It is hosted online at
 
 * <https://swagger-toolbox.firebaseapp.com/>
 
-The source code to this tool is available on github at
+The source code to this tool is available on GitHub at
 
 * <https://github.com/essuraj/swagger-toolbox>
 
-It is important to make sure that the json model is properly configured.
-As such each datatype must be wrapped in "quotes" and the last element
+It is crucial to make sure that the JSON model is configured correctly.
+As such, each datatype must be wrapped in "quotes" and the last element
 must not have a `,` behind it.
 
 In case you have large models, we recommend that you gradually add more
 and more features so that it is easier to debug in case of an error.
-This tool is not designed to provide back a full featured OpenAPI, but
-help you getting started deriving one.
+This tool is not designed to provide back a full-featured OpenAPI, but
+help you get started deriving one.
 
 Let us look at a small example. Let us assume we want to create a REST
 service to execute a command on the remote service. We know this may not
-be a good idea if it is not properly secured, so be extra careful. A good
-way to simulate this is to just use a return string instead of executing
+be a good idea if it is not secured correctly, so be extra careful. A good
+way to simulate this is just to use a return string instead of executing
 the command.
 
-Let us assume the json schema looks like:
+Let us assume the JSON schema looks like:
 
     {
        "host": "string",

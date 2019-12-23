@@ -1,23 +1,21 @@
 # Flask RESTful Services
 
-Flask is a micro services framework allowing to write web services in
+Flask is a microservices framework allowing us to write web services in
 python quickly. One of its extensions is Flask-RESTful. It adds for
-building REST APIs based on a class definition making it relatively
-simple. Through this interface we can than integrate with your existing
+building REST APIs based on a class definition, making it relatively
+simple. Through this interface, we can then integrate with your existing
 Object Relational Models and libraries. As Flask-RESTful leverages the
-main features from Flask an extensive set of documentation is available
-allowing you to get started quickly and thoroughly. The Web page
+main features from Flask, an extensive set of documentation is available, allowing you to get started quickly and thoroughly. The Web page
 contains extensive documentation:
 
 * <https://flask-restful.readthedocs.io/en/latest/>
 
-We will provide a simple example that showcases some *hard coded* data
-to be served as a rest service. It will be easy to replace this for
-example with functions and methods that obtain such information
+We provide a simple example that showcases some *hardcoded* data
+to be served as a rest service. It is easy to replace this, for
+example, with functions and methods that obtain such information
 dynamically from the operating system.
 
-This example has not been tested. We like that the class defines a
-beautiful example to contribute to this section and explains what
+This example has not been tested. We like that the class defines a beautiful example to contribute to this section and explains what
 happens in this example.
 
 ```

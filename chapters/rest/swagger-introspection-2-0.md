@@ -1,8 +1,7 @@
 # OpenAPI REST Service via Introspection {#sec:openapi-introspection-2}
 
 The simplest way to create an OpenAPI service is to use the conexion
-service and read in the specification from its yaml file. It will than
-be introspected and dynamically methods are created that are used for
+service and read in the specification from its YAML file. It is then introspected, and dynamically methods are created that are used for
 the implementation of the server.
 
 The full example for this is available in
@@ -13,7 +12,7 @@ An extensive documentation is avalable at
 
 * <https://media.readthedocs.org/pdf/connexion/latest/connexion.pdf>
 
-This example will return dynamically the cpu information of a computer to
+This example returns the cpu information of a computer to dynamically
 demonstrate how simple it is to generate in python a REST service from an
 OpenAPI specification.
 
@@ -50,7 +49,7 @@ This will run our REST service under the assumption we have a
 `cpu.yaml` and a `cpu.py` files as our yaml file calls out methods
 from `cpu.py`
 
-The yaml file looks as follows
+The YAML file looks as follows.
 
 ```
 swagger: "2.0"
@@ -95,12 +94,12 @@ definitions:
       type: "string"
  ```
 
-Here we simply implement a get method and associate is with the URL
-/cpu. The operationid, defines the method that we call which as we
-used the local directory is included in the file `cpu.py`. This is
+Here we implement a get method and associate is with the URL
+/cpu. The operationid, defines the method that we call which, as we
+used the local directory, is included in the file `cpu.py`. This is
 controlled by the prefix in the operation id.
 
-A very simple function to return the cpu information is defined in
+A straightforward function to return the CPU information is defined in
 `cpu.py` which we list next
 
 ```python
@@ -129,26 +128,26 @@ We have implemented this function to return a jsonified information
 from the dict pinfo.
 
 To simplify working with this example, we also provide a makefile for
-OSX that allows us to call the server and the call to the servoer in
+OSX that allows us to call the server and the call to the server in
 two different terminals
 
 ```
 define terminal
-	osascript -e 'tell application "Terminal" to do script "cd $(PWD); $1"'
+   osascript -e 'tell application "Terminal" to do script "cd $(PWD); $1"'
 endef
 
 install:
-	pip install -r requirements.txt
+   pip install -r requirements.txt
 
 demo:
-	$(call terminal, python server.py)
-	sleep 3
-	@echo "==============================================================================="
-	@echo "Get the info"
-	@echo "==============================================================================="
-	curl http://localhost:8080/cloudmesh/cpu
-	@echo
-	@echo "==============================================================================="
+   $(call terminal, python server.py)
+   sleep 3
+   @echo "==============================================================================="
+   @echo "Get the info"
+   @echo "==============================================================================="
+   curl http://localhost:8080/cloudmesh/cpu
+   @echo
+   @echo "==============================================================================="
 ```
 
 When we call
@@ -161,16 +160,16 @@ our demo is run.
 
 ## Verification {#sec:swagger-verify-2}
 
-It is important to be able to verify if a yaml file is correct. To identify
-this, the easiest method is to use the swagger editor. There is an online verion
+It is important to be able to verify if a YAML file is correct. To identify
+this, the easiest method is to use the swagger editor. There is an online version
 available at:
 
 * <https://editor.swagger.io/>
 
-Go to the Web site, remove the current petstore example and simply paste your yaml file in it.
-Debug meessages will be helping you to correct things.
+Go to the Web site, remove the current petstore example, and paste your YAML file in it.
+Debug messages are helping you to correct things.
 
-A terminal based command may als be helpful, but is a bit difficult to read.
+A terminal-based command may also be helpful but is a bit difficult to read.
 
 ```bash
 $ connexion run cpu.yaml --stub --debug
@@ -178,9 +177,9 @@ $ connexion run cpu.yaml --stub --debug
 
 ## Mock service
 
-In some cases it may be useful to develop the API without having yet developed
-methods that you call with the OperationI. In this case it is useful to run a
-mock service. YOu can invoce such a service with
+In some cases, it may be useful to develop the API without having yet developed
+methods that you call with the OperationI. In this case, it is useful to run a
+mock service. YOu can invoke such a service with
 
 ```bash
 $ connexion run cpu.yaml --mock=all -v
@@ -190,18 +189,18 @@ $ connexion run cpu.yaml --mock=all -v
 
 OpenAPI.Conexion.1:
 
-> Modify the makefile so it works also on ubuntu, but do not disable
+> Modify the makefile, so it also works on ubuntu, but do not disable
 > the ability to run it correctly on OSX. Tip use if's in makefiles
 > base on the OS. You can look at the makefiles that create this book
-> as example. find alternatives to sarting a terminal in Linux.
+> as an example. Find alternatives to starting a terminal in Linux.
 
 OpenAPI.Conexion.2:
 
-> Modify the makefile so it works also on Windows 10, but do not
+> Modify the makefile, so it also works on Windows 10, but do not
 > disable the ability to run it correctly on OSX. Tip use ifs in
 > makefiles. You can look at the makefiles that create this book as
-> example. Find alternatives to start a powershell or cmd.exe in
-> windows. Maybe you need to use gitbash.
+> example. Find alternatives to start a PowerShell or cmd.exe in
+> windows. Maybe you need to use GitBash.
 
 OpenAPI.Conexion.3:
 
@@ -209,12 +208,12 @@ OpenAPI.Conexion.3:
 > BDRA. Implement it. Please remember this could prepare you for a
 > project good topics include:
 
-> * virtual compute service interfacing with aws, azure, google or openstack
+> * virtual compute service interfacing with AWS, azure, google or OpenStack
 > * virtual directory service interfacing with google drive, box,
->   github, iCloud, ftp, scp, and others
+>   GitHub, iCloud, FTP, scp, and others
 
 > As there are so many possibilities to contribute, come up in class with
-> one specification and than implement it for different providers. The
+> one specification and then implement it for different providers. The
 > difficulty here is that it is not done for one IaaS, but for all of
 > them and all can be integrated.
 
