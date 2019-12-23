@@ -14,20 +14,17 @@
 
 ## Motivation: Data
 
-Before we go into more details of a data center we like to motivate why
-we need them.  Here we start with looking at the amount of data that
+Before we go into more details of a data center, we like to motivate why
+we need them.  Here we start by looking at the amount of data that
 recently got created and provide one of many motivational aspects. Not
-all data will or should be stored in data centers. However a
-significant amount of data will be in such centers.
+all data will or should be stored in data centers. However, a
+significant amount of data is in such centers.
 
 ### How much data?
 
 One of the issues we have is to comprehend how much data is created. 
-It's hard to imagine and put into a perspective how much total data 
-is created over a year, a month, a week, a day or even just an hour. 
-Instead to easily visualize the amount of data produced we often find 
-graphics easier to comprehend that shows how much data was generated in 
-a minute. Such depictions usually include examples of data generated as 
+It's hard to imagine and put into a perspective how much total data is created over a year, a month, a week, a day, or even just an hour. 
+Instead of easily visualize the amount of data produced, we often find graphics easier to comprehend that shows how much data was generated in a minute. Such depictions usually include examples of data generated as 
 a part of popular cloud services or the internet in general.
 
 
@@ -38,22 +35,22 @@ One such popular depiction is *Data Never Sleeps* (see
 years and is now at version 7.0 released in 2019. If you identify a
 newer version, please let us know.
 
-Observations for 2019:  It is worth while to study this image
+Observations for 2019:  It is worthwhile to study this image
 in detail and identify some of the data that you can relate to of
-service you use. It is also a possible indication to study other
+the service you use. It is also a possible indication to study other
 services that are mentioned. For the data for 2019 we observe that a
-staggering ~4.5Mil google searches are executed every minute which is
+staggering ~4.5Mil google searches are executed every minute, which is
 slightly lower than the number of videos watched on youtube. 18Mil text
-messages are send every minute. Naturally the numbers are averages over
+messages are sent every minute. Naturally, the numbers are averages over
 time.
 
 ![Data Never Sleeps  [@www-image-data-never-sleeps-7]](images/data-never-sleeps-7.jpg){#fig:data-never-sleeps-7}
 
 
-In contrast in 2017 we observed: A 3.8Mil google searches are
+In contrast, in 2017, we observed: A 3.8Mil google searches are
 executed every minute. Surprisingly the weather channel receives over
-18Mil forecast requests which is even higher than the 12Mil text
-messages send every minute. Youtube certainly serving a significant
+18Mil forecast requests, which is even higher than the 12Mil text
+messages send every minute. Youtube indeed is serving a significant
 number of users by 4.3Mil videos watched every minute. 
 
 ![Data Never Sleeps  [@www-image-data-never-sleeps-6]](images/data-never-sleeps-6.png){#fig:data-never-sleeps}
@@ -61,14 +58,14 @@ number of users by 4.3Mil videos watched every minute.
 A different source publishes what is happening on the internet in a
 minute, but we have been able to locate a version from 2018 (see
 @fig:internet-minutes-2018). While some data seems the same, others are
-slightly different. For example this graph has a lower count for Google
-searches, while the number of text messages send is significantly higher
+slightly different. For example, this graph has a lower count for Google
+searches, while the number of text messages sent is significantly higher
 in contrast to @fig:data-never-sleeps.
 
 ![Internet Minute 2018 [@www-internet-minute-2017-2018]](images/internet-minute-2018.jpg){#fig:internet-minutes-2018}
 
 While reviewing the image from last year from the same author, we find
-not only increases, but also declines. Looking at facebook showcases a
+not only increases but also declines. Looking at facebook showcases a
 loss of 73000 logins per minute. This loss is substantial. We can see
 that facebook services are replaced by other services that are more
 popular with the younger generation who tend to pick up new services
@@ -78,9 +75,8 @@ quickly (see @fig:internet-minutes-2017-2018).
 ![Internet Minute 2017-2018 [@www-internet-minute-2017-2018]](images/internet-minute-2017-2018.jpg){#fig:internet-minutes-2017-2018}
 
 
-It is also interesting to compare such trends over a longer period of
-time (see @fig:google-search-per-year, @fig:big-data-trend-2012). An
-example is provided by looking at Google searches
+It is also interesting to compare such trends over a more extended period (see @fig:google-search-per-year, @fig:big-data-trend-2012). An
+example is provided by looking at Google searches.
 
 * <http://www.internetlivestats.com/google-search-statistics/>.
 
@@ -106,18 +102,18 @@ This trend is continuing.
 ## Cloud Data Centers
 
 A *data center* is a facility that hosts the information technology
-related to servers and data serving a large number of customers. data
-centers evolved from the need to originally have large rooms as the
-original computers filled in the early days of the compute revolution
+related to servers and data serving a large number of customers. Data
+centers evolved from the need to initially have large rooms as the
+original computers filled in the early days of the computer revolution
 filled rooms. Once multiple computers were added to such facilities
-super computer centers created for research purposes. With the
+supercomputer centers created for research purposes. With the
 introduction of the internet and offering services such as Web
-hosting large business oriented server rooms were created. The need
+hosting large business-oriented server rooms were created. The need
 for increased facilities was even accelerated by the development of
 virtualization and servers being rented to customers in shared
-facilities. As the need of web hosting still is important but has
+facilities. As the need for web hosting still is essential but has
 been taken over by cloud data centers, the terms internet data center,
-and cloud data center are no longer used to distinguish it. Instead we
+and cloud data center are no longer used to distinguish it. Instead, we
 use today just the term *data center*. There may be still an important
 difference between research data centers offered in academia and
 industry that focus on providing computationally potent clusters focus
@@ -125,20 +121,20 @@ on numerical computation. Such data centers are typically centered
 around the governance around a smaller number of users that are either
 part of an organization or a virtual organization. However, we see
 that even in the research community data centers not only host
-supercomputers, but also Web server infrastructure and these days even
-private clouds that support the organizational users. In case of the
-latter we speak about supporting the *long tail about science*.
+supercomputers but also Web server infrastructure and these days, even
+private clouds that support the organizational users. In the case of the
+latter, we speak about supporting the *long tail about science*.
 
-The latter is driven by the 80%-20% rule. E.g. 20% of the users use 80%
+The latter is driven by the 80%-20% rule. E.g., 20% of the users use 80%
 of the compute power. This means that the top 20% of scientists are
-served by the leadership class super computers in the nation, while
+served by the leadership class supercomputers in the nation, while
 the rest are either served by other servers, cloud offerings through
 research and public clouds.
 
 
 ## Data Center Infrastructure
 
-Due to the data and the server needs in the cloud and in research such
+Due to the data and the server needs in the cloud and in research, such
 data centers may look very different. Some focus on large scale
 computational resources, some on commodity hardware offered to the
 community. The size of them is also very different. While a
@@ -146,14 +142,14 @@ supercomputing center as part of a university was one of the largest
 such data centers two decades ago, they dwarf the centers now deployed
 by industry to serve the long tail of customers.
 
-In general a data center will have the following components:
+In general, a data center has the following components:
 
-* Facility: the entire data center will be hosted in a building.  The
+* Facility: the entire data centers is hosted in a building.  The
   building may have specific requirements related to security,
   environmental concerns, or even the integration into the local
-  community with for example providing heat to surrounding residences.
+  community with, for example, providing heat to surrounding residences.
 
-* Support infrastructure: This building will include a significant
+* Support infrastructure: This building includes a significant
   number of support infrastructure that addresses for example
   continuous power supply, air conditioning, and security For this
   reason you find in such centers
@@ -163,22 +159,20 @@ In general a data center will have the following components:
   * Physical Security Systems
 
 * Information Technology Equipment: Naturally the facility will host
-  the IT equipment including the following:
+  the IT equipment, including the following:
 
   * Servers
   * Network Services
   * Disks
   * Data Backup Services
 
-* Operations staff: The facility will need to be staffed with the
-  various groups that support such data centers. It includes
+* Operations staff: The facility needs to be staffed with the various groups that support such data centers. It includes
 
   * IT Staff
   * Security and Facility Staff
   * Support Infrastructure Staff
 
-  With regards to the number of people serving such a facility it is
-  obvious that through automation is quite low. According to
+  With regards to the number of people serving such a facility, it is obvious that automation is quite low. According to
   [@www-datacenter-staffing] proper data center staffing is a key to a
   reliable operation (see @fig:datacenter-staff-impact).
 
@@ -191,13 +185,13 @@ In general a data center will have the following components:
 
 Another interesting observation is the root cause of incidents in a
 data center. Everyone has probably experienced some outage, so it is
-important to identify where they come from in order to prevent them.
-As we see in @fig:datacenter-outage not every error is caused by an
+crucial to identify where they come from to prevent them.
+As we see in @fig:datacenter-outage, not every error is caused by an
 operational issue. External, installation, design, and manufacturer
 issues are together the largest issue for datacenter incidents (see
 @fig:datacenter-outage). Figure Outage. According to the Uptime
 Institute Abnormal Incident Reports (AIRs) database, the root cause of
-39% of data center incidents falls into the operational area
+39% of data center incidents fall into the operational area
 [@www-datacenter-staffing].
 
 
@@ -207,11 +201,11 @@ Institute Abnormal Incident Reports (AIRs) database, the root cause of
 
 ## Data Center Characteristics
 
-Next we identify a number of characteristics when looking at different
+Next, we identify several characteristics when looking at different
 data centers.
 
 * **Variation in Size**: Data centers range in size from small *edge*
- facilities to megascale or hyperscale filling large ware houses.
+ facilities to megascale or hyper scale filling large warehouses.
 
 * **Variation in cost per server**: Although many data centers
   standardize their components, specialized services may be offered not on
@@ -220,10 +214,10 @@ data centers.
 * **Variation in Infrastructure:** Servers in centers serve a variation
   of needs and motivate different infrastructure: Use cases, Web
   Server, E-mail, Machine Learning, Pleasantly Parallel problem,
-  traditional super computing jobs.
+  traditional supercomputing jobs.
 
 * **Energy Cost:** Data centers use a lot of energy. The energy cost
-  varies per region.  A motivation to reduce energy use and cost is also
+  varies per region.  A motivation to reduce energy use and the cost is also
   been trended by environmental awareness, not only by the operators,
   but by the community in which such centers operate.
 
@@ -249,7 +243,7 @@ Datacenter disadvantages include
 
 * Loss of control of the HW
 * Loss of control of the data
-* Model is preferring many users
+* Many users share resources
 * Software to control infrastructure is not accessible
 * Variations in performance due to sharing
 * Integration requires effort beyond login
@@ -258,40 +252,39 @@ Datacenter disadvantages include
 
 ## Data Center Metrics
 
-One of the most important factor to ensure smooth operation and
-offering of services is to employ metrics that will be able to provide
-significant impacting the operations. Having metrics allows the staff
+One of the essential factors in ensuring smooth operation and
+the offering of services is to employ metrics that are able to provide significant impacting the operations. Having metrics allows the staff
 to monitor and adapt to dynamic situations but also to plan
 operations.
 
 ### Data Center Energy Costs
 
-One of the easiest to monitor metrics for a datacenter is the cost
+One of the easiest to monitor metrics for a data center is the cost
 of energy used to operate all of the equipment. Energy is one of
-the largest costs a datacenter incurs during its operation as all of
+the highest costs a datacenter incurs during its operation as all of
 the servers, networking, and cooling equipment require power 24/7. For
-electricity, billing is usually measured in terms of kilowatt hours
+electricity, billing is usually measured in terms of kilowatt-hours
 (kWh) and kilowatts (kW). Depending on circumstances, there may also be
 costs for public purpose programs, cost recovery, and stranded costs, but
 they are beyond the scope of this book.
 
 To provide a quick understanding, it is best to understand the relation
-between kilowatt hours and kilowatts. kWh is typically referred to as
-consumption while kW is referred to as demand and it's important to
+between kilowatt-hours and kilowatts. kWh is typically referred to as
+consumption while kW is referred to as demand, and it's important to
 understand how these two concepts relate to each other. The easiest
 analogy to describe the relationship is to think of kilowatts (demand)
 as the size of a water pipe while kilowatt-hours (consumption) is how
 much water has passed through the pipe. If a server requires 1.2 kW to
-operate then, after an hour has passed, it will have consumed 1.2 kWh.
+operate, then, after an hour has passed, it will have consumed 1.2 kWh.
 However, if the server operates at 1.2 kW for 30 minutes and then goes
-idle and drops to 0.3 kW for another 30 minutes, then total power
+idle and drops to 0.3 kW for another 30 minutes, then the total power
 consumed will be:
 
 $$kWh=0.3*30/60+1.2*30/60=0.75$${#eq:Energy-Calculation}
 
-Energy costs for a datacenter, then, are composed of two things:
+Energy costs for a data center, then, are composed of two things:
 charges for energy and charges for demand. Energy is the amount of total
-energy consumed by the datacenter and will be the total kWh multiplied
+energy consumed by the data center and will be the total kWh multiplied
 by the cost per kWh. Demand is somewhat more complicated: it is the
 highest total consumption measured in a 15 minute period. Taking the
 previous example, if a datacenter has 1,000 servers, the total energy
@@ -314,7 +307,7 @@ charges can have a tremendous payback: had the servers simply consumed
 750 kW over the course of the hour, then our demand charges would've
 been halved to $4,800 while the energy costs remained the same. This is
 also why server virtualization can have a positive impact on energy costs:
-by having fewer servers running at a higher utilization, the demand charge
+by having fewer servers running at higher utilization, the demand charge
 will tend to level itself out as, on average, each server will be more
 fully utilized. For example, it's better to pay for 500 servers at
 100% utilization than 1000 servers at 50% utilization even though the amount
@@ -324,7 +317,7 @@ charge for the datacenter will be much higher.
 
 ### Data Center Carbon Footprint
 
-Scientists world wide have identified a link between carbon emission
+Scientists worldwide have identified a link between carbon emission
 and global warming. As the energy consumption of a data center is
 substantial, it is prudent to estimate the overall carbon emission.
 Schneider Electric (formerly APC) has provided a report on how to
@@ -335,8 +328,8 @@ valuable information. It defines key terms such as
 Carbon dioxide emissions coefficient (*carbon footprint*):
 
 * With the increasing demand of data, bandwidth and high performance
-  systems, there is substantial amount of power consumption. This
-  leads to high amount of greenhouses gases emission into the
+  systems, there is a substantial amount of power consumption. This
+  leads to a high amount of greenhouses gases emission into the
   atmosphere, released due to any kind of basic activities like driving
   a vehicle or running a power plant.
 
@@ -346,18 +339,13 @@ Carbon dioxide emissions coefficient (*carbon footprint*):
 
    Data centers in total used 91 billion kilowatt-hours (kWh) of
    electrical energy in 2013, and they will use 139 billion kWh by
-   2020. Currently, data centers consume up to 3 percent of all
-   global electricity production while producing 200 million metric tons
-   of carbon dioxide. Since world is moving towards cloud, causing more
-   and more data center capacity leading more to power consumption.
+   2020. Currently, data centers consume up to 3 percent of all global electricity production while producing 200 million metric tons of carbon dioxide. Since the world is moving towards the cloud, causing more and more data center capacity leading more to power consumption.
 
 Peaker plant:
 
 * Peaking power plants, also known as peaker plants, and
-  occasionally just *peakers*, are power plants that generally run
-  only when there is a high demand, known as peak demand, for
-  electricity. Because they supply power only occasionally, the power
-  supplied commands a much higher price per kilowatt hour than base
+  occasionally just *peakers*, are power plants that generally run only when there is a high demand, known as peak demand, for electricity. Because they supply power only occasionally, the power
+  supplied commands a much higher price per kilowatt-hour than base
   load power. Peak load power plants are dispatched in combination
   with base load power plants, which supply a dependable and
   consistent amount of electricity, to meet the minimum demand.
@@ -779,7 +767,7 @@ The regions and number of availability zones are as follows:
   Ningxia (3)
 * Region: Europe Frankfurt (3), Ireland (3), London (3), Paris (3)
   South America São Paulo (3)
-* Region Gov Cloud: AWS GovCloud (US-West) (3)
+* Region Gov Cloud: AWS GovCloud (US-West) (3)
 * New Region (coming soon): Bahrain, Hong Kong SAR, China, Sweden, AWS
   GovCloud (US-East)
 

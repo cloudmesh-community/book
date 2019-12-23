@@ -7,14 +7,14 @@
 * Review classical architectural models leading up to cloud computing.
 * Review some mayor cloud architecture views.
 * Visualize the NIST cloud architecture
-* Discuss an architecture for multicloud frameworks.
+* Discuss an architecture for multi-cloud frameworks.
 
 ---
 
 While we have introduced in our introductory section a number of
 definitions for cloud computing, as well as an architectural view for
-clouds based on the *as a Service* model, we will look a bit closer at
-other alternative views. These views are in some cases important as
+clouds based on the *as a Service* model, we look a bit closer at
+other alternative views. These views are in some cases necessary as
 they provide appropriate abstractions for more detailed
 implementations.
 
@@ -23,13 +23,12 @@ implementations.
 We start our observation with some a depiction of some of the
 important architectural models motivating the current state of
 information technology services we provide in
-@fig:evolution-computer-arch.  The are computers used primarily by
+@fig:evolution-computer-arch.  They are computers used primarily by
 large organizations for critical applications; bulk data processing,
 such as census, industry and consumer statistics, enterprise resource
 planning; and transaction processing.  The term originally referred to
-the large cabinets called "main frames" that housed the central
-processing unit and main memory of early computers.  has been updated
-by von Laszewski to include the mobile computing and the internet of
+the large cabinets called "mainframes" that housed the central processing unit and main memory of early computers. It has been updated
+by von Laszewski to include mobile computing and the internet of
 things phase that is bringing rapid changes to how we perceive and use
 the cloud in the near future.
 
@@ -40,13 +39,13 @@ architectures.
 
 ### Mainframe Computing
 
-Mainframe computing is using the larger and more reliable computers,
+Mainframe computing originated on the principle of using more massive and more reliable computers,
 like IBM System z9, to run the critical applications, bulk data processing,
 enterprise resource planning and business transaction processing.
 
 > According to
 > [Wikipedia](https://en.wikipedia.org/wiki/Mainframe_comp), the term
-> mainframe originally referred to the large cabinets called "main
+> mainframe initially referred to the large cabinets called "main
 > frames" that housed the central processing unit and main memory of
 > early computers.  Later, the term was used to distinguish high-end
 > commercial machines from less powerful units. Most large-scale
@@ -55,37 +54,36 @@ enterprise resource planning and business transaction processing.
 > organizations for critical applications; bulk data processing, such
 > as census, industry and consumer statistics, enterprise resource
 > planning; and transaction processing. The term originally referred
-> to the large cabinets called "main frames" that housed the central
+> to the large cabinets called "mainframes" that housed the central
 > processing unit and main memory of early computers.
 
-Some key attributes of Mainframes that distingishes it from other
-computers include its larger size, speed, throughput, power and
+Some key attributes of Mainframes that distinguishes it from other
+computers include its larger size, speed, throughput, power, and
 environmental requirements, and operating system. Furthermore, we find
-that they have inbuilt redundency to address high uptimes as required
+that they have inbuilt redundancy to address high uptimes as required
 by business applications. Even some of the earliest Mainfraims
 supported fast I/O and computation via virtualization. The concept of
-hot swapping of hardware help these machines to run without faliure for
+hot-swapping of hardware helps these machines to run without failure for
 years.
 
 ### PC Computing
 
-The term PC is short for personal computer. The first PCs were
-introduced by IBM to the market. PCs need an operating system such as
+The term PC is short for a personal computer. IBM introduced the first PCs to the market. PCs need an operating system such as
 Windows, macOS, or Linux
 
 PC Computing refers to
 
 > an era where consumers predominantly used personal computers to
-> conduct their work. Such computers were mostly stand alone without
+> conduct their work. Such computers were mostly stand-alone without
 > network as early networks were not available to consumers.
 
 ### Intranet and Server Computing
 
 We refer to Intranet and Server Computing as an environment in which
 
-> the computers are part of an private network, also called, intranet,
+> the computers are part of a private network, also called, intranet,
 > that is contained within an enterprise and later on also
-> homes. Intranets are able to connect many local resources within a
+> homes. Intranets can connect many local resources within a
 > Local but also a wide area network
 
 ### Grid Computing Computing
@@ -98,18 +96,18 @@ original definition of Grid computing has been summarised as follows:
 > provides dependable, consistent, pervasive, and inexpensive access
 > to high-end computational capabilities. [@foster-book]
 
-However, in the paper we also define that Grids were not just about
+However, we also define that Grids were not just about
 computing, but introduced an approach that through the introduction of
 virtual organizations lead to the following definition
 
 > A production Grid is a shared computing infrastructure of hardware,
 > software, and knowledge resources that allows the coordinated
-> resource sharing and problem solving in dynamic, multi-institutional
+> resource sharing and problem-solving in dynamic, multi-institutional
 > virtual organizations to enable sophisticated international
 > scientific and business-oriented collaborations.
 
-This definition is certainly including services that are today offered
-by the Cloud. Hence in the early days of cloud computing there was a
+This definition is undoubted including services that are today offered
+by the cloud. Hence in the early days of cloud computing, there was a
 large debate occurring if cloud is just another term for Grid. In
 [Cloud Computing and Grid Computing 360-Degree Compared](http://datasys.cs.iit.edu/publications/2008_GCE08_Clouds_Grids.pdf)
 an analysis is conducted between the different architecture models
@@ -117,7 +115,7 @@ outlining that collective resources and connectivity protocols
 introduced by the Grid community have been replaced by the cloud with
 platform and unified resources.
 
-To provide a very simple but possibly incomplete comparison, Cloud
+To provide a very simple but possibly incomplete comparison, cloud
 computing integrated infrastructure such as supercomputers and other
 large scale resources through unified protocols. The effort was
 initially provided by research institutions but have been introduced
@@ -129,32 +127,32 @@ common tasks such as Web hosting, we see a clear difference:
 * business focused on serving originally millions of users with the
   need to run only a view data or compute services.
 
-This certainly resulted in independent development, while cloud
-computing has today consumed Grids. Tools such as the GLobus toolkit
+This indeed resulted in independent development, while cloud
+computing has today consumed Grids. Tools such as the Globus toolkit
 are no longer widely used, and the development has shifted to the
 support of data services only.
 
 ### Internet Computing
 
-With the ocurance of the WWW protocols, internet commuting brought to
+With the occurrence of the WWW protocols, internet commuting brought to
 the consumers a global computer network providing a variety of
 information and communication facilities.
 
 Internet Computing refers to
 
-> the infrastructure that enables sharing of data, within the WWWW community.
+> the infrastructure that enables sharing of data within the WWWW community.
 
 Internet computing also comprises early infrastructures such as AOL,
-which poularized the term *you got mail*
+which popularized the term *you got mail*
 
 ### Cloud Computing
 
 Cloud Computing refers to
 
-> delivery of services such as database, server, network storage and others over the internet so the
-> user doesnot have to maintain a datacenter and only pays for services in use.
-> This reduces the cost and increases the productivity as services can be available in
-> minutes on demand with state of the art security and no hardware datacenter staff needed on the users side.
+> delivery of services such as database, server, network storage, and others over the internet so the
+> user does not have to maintain a data center and only pays for services in use.
+> This reduces the cost and increases productivity as services can be available in
+> minutes on-demand with state of the art security and no hardware datacenter staff needed on the users' side.
 
 We have provided a lecture about the definition of cloud computing
 previously.
@@ -181,7 +179,7 @@ Internet of Things Computing refers to
 ### Edge Computing
 
 In addition, we need to point out two additional terms that we will
-integrate in this image. Edge Computing and Fog Computing.  Currently
+integrate into this image. Edge Computing and Fog Computing.  Currently
 there is still some debate about what these terms are, but we will
 follow the following definitions:
 
@@ -190,27 +188,27 @@ Edge Computing refers to
 > computing conducted on the very edge of infrastructure. This means
 > that data that is not needed in the data center can be calculated
 > and analyzed on the edge devices instead. No interaction between
-> cloud services is needed. Only the absolute required data is send to
+> cloud services is needed. Only the absolute required data is sent to
 > the cloud.
 
 ### Fog Computing
 
 FoG Computing refers to
 
-> computing conducted in-between the cloud and the edge devices. This
+> computing conducted in-between the cloud and edge devices. This
 > could be for example part of a smart network, that hosts a small set
 > of analytics capabilities, so that the data does not have to travel
 > back to the data center, but the edge device is not powerful enough
 > to do the calculation. Thus a Fog computing infrastructure provides
-> tha ability to conduct the analysis closer to the edge saving
+> the ability to conduct the analysis closer to the edge saving
 > valuable resources while not needing to transmit all data to the
 > data center although it will be analyzed
 
-## As a Servise Architecture Model
+## As a Service Architecture Model
 
 The *as a Service* architecture was one of the earliest definitions of
 cloud architecture while focusing on the service aspect provided by
-the cloud. the layers such as IaaS, PaaS, and SaaS provide a layered
+the cloud. The layers, such as IaaS, PaaS, and SaaS, provide a layered
 architecture view while separating infrastructure, platform, and
 services. This allows a separation of concerns typically between
 infrastructure providers, platform developers, and software architects
@@ -224,14 +222,14 @@ to represent it.
 ## Product or Functional Based Model
 
 When we inspect prominent providers such as Amazon, Azure, and Google,
-we find that on their Web pages they do provide their customers an
+we find that on their Web pages, they do provide their customers an
 alternative view that is motivated by exposing numerous products to
 the customers grouped by functions. These services are often in the
-hundrest. To achieve the exposure of the products in a meaningful
-fashion, they introduce a functional view motivation a functional
+hundreds. To achieve the exposure of the products in a meaningful
+fashion, they introduce a functional view, motivation a functional
 architecture view of the cloud.
 
-When we analyse these functions for example for Amazon Web services we
+When we analyze these functions for example for Amazon Web services we
 find the following
 
 * Compute
@@ -256,8 +254,8 @@ find the following
 * AWS Marketplace Software
 * AWS Cost Management
 
-From this we derive that for the initial contact to the customer the
-functionality is put in foreground, rather than the distinction
+From this, we derive that for the initial contact to the customer the
+functionality is put in the foreground, rather than the distinction
 between SaaS, PaaS, and IaaS. If we sort these services into the as a
 Service mode we find:
 
@@ -294,7 +292,7 @@ Other examples for product lists such as the one from Azure are provided in the 
 
 ## NIST Cloud Architecture
 
-In the introduction we have extensively discussed the NIST cloud
+In the introduction, we have extensively discussed the NIST cloud
 architecture. A Nice visual representation is provided in @fig:nist-cloud-arch.
 
 ![Visual representation of the NIST Cloud Architecture [Source](https://downloads.cloudsecurityalliance.org/assets/research/security-guidance/csaguide.v3.0.pdf)](images/nist-vis-arch.png){#fig:nist-cloud-arch}
@@ -309,13 +307,13 @@ adoption.
 This is a great organization to lean on if you have open questions
 about architecture and the best way to secure it.  There are working
 groups that look across 38 domains of Cloud Security. These groups
-meet actively and they cover current topics, opportunities and ask
-relevant questions.  It is a great place to networks with experts in
+meet actively, and they cover current topics, opportunities, and ask
+relevant questions.  It is a place for networks with experts in
 the field and ask questions specific to your company or academic
 project.  You may also find an answer to your question in the white
-papers, reports, tools, trainings, and services they have available.
+papers, reports, tools, training, and services they have available.
 
-The group of industry experts based use the following guiding
+The group of industry experts use the following guiding
 principles when publishing their reference Architecture.
 
 * Define protections that enable trust in the cloud.
@@ -325,9 +323,8 @@ principles when publishing their reference Architecture.
   resiliency to the customer/consumer.
 * Provide direction to secure information that is protected by regulations.
 * The Architecture must facilitate proper and efficient
-   identification, authentication, authorization, administration and
-   auditability.
-* Centralize security policy, maintenance operation and oversight functions.
+   identification, authentication, authorization, administration and auditability.
+* Centralize security policy, maintenance operation, and oversight functions.
 * Access to information must be secure yet still easy to obtain.
 * Delegate or Federate access control where appropriate.
 * Must be easy to adopt and consume, supporting the design of security patterns
@@ -337,7 +334,7 @@ principles when publishing their reference Architecture.
   protection, including network, operating system, and application
   security needs.
 
-An overview of the architecture is shown in the diagram from the Cloud
+An overview of the architecture is shown in the diagram from the cloud
 Security Alliance. See @fig:csa-arch
 
 ![Cloud Security Alliance Reference Architecture [Source](https://downloads.cloudsecurityalliance.org/initiatives/tci/TCI_Reference_Architecture_v2.0.pdf)](images/csa-architecture.png){#fig:csa-arch}
@@ -347,30 +344,29 @@ Security Alliance. See @fig:csa-arch
 One of the issues we see today is that it is unrealistic to assume
 clouds are only provided by one vendor, or that they have all the same
 interface. Each vendor is advertising their special services to
-distinguish themselves from the competitors. For the end user and the
+distinguish themselves from the competitors. For the end-user and the
 developer that projects the problem of vendor lockin. However, we need
-to be aware of efforts that allow an easy of such vendor lockin while
-for example providing multi cloud solutions.  Such solutions integrate
+to be aware of efforts that allow an easy of such vendor lock-in while, 
+for example, providing multi-cloud solutions.  Such solutions integrate
 multiple vendors and technologies into a single architecture allowing
-to use multiple cloud vendors at the same time.
+them to use multiple cloud vendors at the same time.
 
 ### Cloudmesh Architecture
 
 One of the earliest such tools is Cloudmesh.org, which is lead by von
 Laszewski. The tool was developed at a time when AWS and Nimbus, and
-Eucalyptus where predominant players. At that time OpenStack had just
+Eucalyptus where predominant players. At that time, OpenStack had just
 transitioned from a NASA project to a community development.
 
 FutureGrid was one of the earliest academic cloud offerings to explore
-the effectiveness of the different cloud infrastructure solutions. It
+the effectiveness of different cloud infrastructure solutions. It
 was clear that a unifying framework and abstraction layer was needed
-allowing us to utilize them easily. In fact cloudmesh did not only
-provide a REST based API, but also a commandline shell allowing to
+allowing us to utilize them easily. In fact, Cloudmesh did provide not only a REST based API, but also a command line shell allowing to
 switch between clouds with a single variable. It also provided bare
 metal provisioning before OpenStack even offered it. Through an
-evolution of developments the current cloudmesh architecture that
-allows multicloud services is depicted in the next figure. We still
-distinguish the IaaS level which included not only IaaS Abstractions,
+evolution of developments, the current Cloudmesh architecture that
+allows multi-cloud services is depicted in the next figure. We still
+distinguish the IaaS level, which included not only IaaS Abstractions,
 but also Containers, and HPC services. Platforms are typically
 integrated through DevOps that can be hosted on the IaaS. Examples
 are Hadoop, and Spark The services are exposed through a client API
@@ -380,11 +376,11 @@ approach (see @fig:cloudmesh-arch).
 
 ![Cloudmesh Arch [@las14cloudmeshmultiple]](images/arch-cloudmesh.png){#fig:cloudmesh-arch}
 
-Within the hour e516 class we will be developing a modern version of
-cloudmesh from the ground up by only using python 3 as implementation
+Within our e516 class, we are developing a modern version of
+Cloudmesh from the ground up by only using python 3 as implementation
 language, integration of containers, and REST services based on
 OpenAPI. Local data to manage the different services are hosted in a
-mongo DB database and exposed through portable containers, so that a
+MongoDB database and exposed through portable containers, so that a
 single cross-platform environment exists as part of the project
 deliverables.
 
@@ -395,7 +391,7 @@ Volume 8 of the NIST Big data reference architecture, which is
 discussed elsewhere.
 
 The advantage of developing such an environment is that we can look at
-various aspects of cloudcomputing while demonstrating integrated use patterns.
+various aspects of cloud computing while demonstrating integrated use patterns.
 
 ## Resources
 
