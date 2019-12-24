@@ -1,7 +1,6 @@
 # Preface
 
-This collection of documents will help in creating cloud based
-clusters and as part of the classes taught it IU.
+This collection of documents uses a straightforward notation. If you need to find out how we do it, simply click on a cloud to view the source.
 
 
 
@@ -10,7 +9,7 @@ clusters and as part of the classes taught it IU.
 
 ![Github](images/github.png)
 
-> If you click on the ![Github](images/github.png) in a heading, you can go directly to the document in github that contains the next content. This is convenient to fix errors or make additions to the content.
+> If you click on the ![Github](images/github.png) in a heading, you can go directly to the document in GitHub that contains the content in that section. This is convenient to fix errors or make additions to the content.
 
 $
 
@@ -28,7 +27,7 @@ $
 
 ![No](images/no.png)
 
-> Chapters marked with an ![No](images/no.png) are not yet complete or have some issue
+> Chapters marked with a ![No](images/no.png) are not yet complete or have some issue
 > that we know about. These chapters need to be fixed.
 
 

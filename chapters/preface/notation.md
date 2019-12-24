@@ -1,21 +1,21 @@
 # Notation {#sec:notation}
 
 The material here uses the following notation. This is especially
-helpful, if you contribute content, so we keep the content consistent.
+helpful if you contribute content, so we keep the content consistent.
 
 if you like to see the details on how to create them in the markdown
-documents, you will have to look at the file source while clicking on
+documents, you can to look at the file source while clicking on
 the cloud in the heading of the Notation section (@sec:notation). This
-will bring you to the markdown tex, but you will still have to look at
+brings you to the markdown text. However, to see it  you still have to look at
 the [raw content](https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters/preface/notation.md)
 to see the details.
 
 :cloud: or ![Github](images/github.png) `![Github](images/github.png)`
 
 > If you click on the :cloud: or ![Github](images/github.png) in a heading, you can go directly to the >
-document in github that contains the next content. This is > convenient
-to fix errors or make additions to the content. The cloud will be
-automatically added upon inclusion of a new markdown file that includes
+document in GitHub that contains the next content. This is > convenient
+to fix errors or make additions to the content. The cloud is
+automatically added upon the inclusion of a new markdown file that includes
 in its first line a section header.
 
 $
@@ -31,7 +31,7 @@ $
 > References are indicated with a number and are included in the >
 reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 `[@las14cloudmeshmultiple]`. References must be added to the
-`refernces.bib` file in BibTex format.
+`references.bib` file in BibTex format.
 
 :o2: or [![No](images/no.png)]()
 
@@ -98,10 +98,10 @@ Other emojis
 > Other emojis can be found at
 <https://gist.github.com/rxaviers/7360908>. However, note that emojis
 may not be viewable in other formats or on all platforms. We know that
-some emojis do not show in calibre, but they do show in macOS iBooks and
+some emojis do not show in Calibre, but they do show in macOS iBooks and
 MS Edge
 
-This is the list of emojis that canbe converted to PDF. So if you like a
+This is the list of emojis that can be converted to PDF. So if you like a
 PDF, please limit your emojis to
 
 `:cloud:` :cloud:
@@ -129,7 +129,7 @@ PDF, please limit your emojis to
 
 ## Figures
 
-Figures have a caption and can be refereed to in the ePub simple with a
+Figures have a caption and can be referred to in the ePub simple with a
 number. We show such a reference pointer while referring to
 @fig:code-example.
 
@@ -143,30 +143,30 @@ Figures must be written in the md as
 
 Note that the text must be in one line and must not be broken up even if
 it is longer than 80 characters. You can refer to them with
-`@fig:code-example`. Please note in order for numbering to work figure
+`@fig:code-example`. Please note for numbering to work, figure
 references must include the `#fig:` followed by a unique identifier.
-Please note that identifiers must be really unique and that identifies
+Please note that identifiers must be unique and that identifies
 such as `#fig:cloud` or similar simple identifiers are a poor choice and
-will likely not work. To check, please list all lines with an identifier
+will likely not work. To check, please list all lines with an identifier, 
 such as.
 
 ```bash
 $ grep -R "#fig:" chapters
 ```
 
-and see if your identifier is truly unique.
+and see if your identifier is genuinely unique.
 
 ## Hyperlinks in the document
 
 To create hyperlinks in the document other than images, we need to
 use proper markdown syntax in the source. This is achieved with a
-refernce for example in sections headers. Let us discuss the
-refernce header for this section, e.g. Notation. We have augmented
+reference, for example, in sections headers. Let us discuss the
+reference header for this section, e.g., Notation. We have augmented
 the section header as follows:
 
 ```# Notation {#sec:notation}```
 
-Now we can use the refernce in the text as follows:
+Now we can use the reference in the text as follows:
 
 ```In @sec:notation we explain ...```
 
@@ -197,7 +197,7 @@ This is the Pythagoras theorem: $a^2+b^2=c^2$.
 
 ## Tables {#sec:tables}
 
-Tables can be placed in text as follows:
+Tables can be placed in the text as follows:
 
 ```
 : Sample Data Table {#tbl:sample-table}
@@ -208,7 +208,6 @@ x   y   z
 4   5   42
 ```
 
-As usual make sure the label is unique. When compiling it will
-result in an error if labels are not unique. Additionally there are
+As usual, make sure the label is unique. When compiling, it results in an error if labels are not unique. Additionally, there are
 several md table generators available on the internet and make
 creating table more efficient.

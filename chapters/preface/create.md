@@ -6,7 +6,7 @@ section.
 The creation of the book is based on
 [bookmanager](https://pypi.org/project/cyberaide-bookmanager/).
 
-The easiest way is to use our docker container as described in
+The easiest way is to use our Docker container as described in
 @sec:docker-create-book.
 
 ## Docker {#sec:docker-create-book}
@@ -15,13 +15,13 @@ We recommend the docker creation method for
 
 * Ubuntu
 * Windows 10
-* macOSX
+* macOS
 
 ### Using OSX
 
 The easiest way to create a system that can compile the book on macOS,
-is to use a docker container. To do so you will need to first install
-docker on macOS while following the simple instructions at
+is to use a docker container. To do so, you need first to install
+Docker on macOS while following the simple instructions at
 
 * <https://docs.docker.com/docker-for-mac/install/>
 
@@ -30,10 +30,10 @@ Once you have docker installed, you can follow the instructions in
 
 ### Using the Docker Image
 
-In case you have docker installed on your computer you can create
+In case you have docker installed on your computer, you can create
 ePubs with our docker image. To create that image by hand, we have
-included a simple makefile. Alternatively you can use our image from
-dockerhub if you like, it is based on ubuntu and uses our
+included a simple makefile. Alternatively, you can use our image from
+dockerhub if you like, it is based on Ubuntu and uses our
 [Dockerfile](https://github.com/cloudmesh-community/book/blob/master/Dockerfile).
 
 First, you need to download the repository:
@@ -43,7 +43,7 @@ $ git clone https://github.com/cloudmesh-community/book.git
 cd book
 ```
 
-To open an interactive shell into the image you say
+To open an interactive shell into the image, you say
 
 ```bash
 $ make shell
@@ -77,11 +77,11 @@ In case you like to use your native environment (which is typically
 faster than the container) you need to make sure you have an up to date
 environment.
 
-Please note, that you must have at least Pandoc version 2.5 installed as
-earlier versions will not work. We recommend that you use pandoc version
-2.7.3 or newer. We recommend that you use Python version 3.7.4 to run
-the scripts needed to assamble the document. However eralier version of
-Python 3 may also work, but are not tested. You can check the versions
+Please note that you must have at least Pandoc version 2.5 installed as
+earlier versions do not work. We recommend that you use pandoc version
+2.7.3 or newer. We recommend that you use Python version 3.7.4 or newer to run
+the scripts needed to assemble the document. However, earlier versions of
+Python 3 may also work but are not tested. You can check the versions
 with
 
 ```bash
@@ -104,29 +104,29 @@ $ git clone https://github.com/cloudmesh-community/book.git
 $ cd book
 ```
 
-Next you have to create the virtual machine with
+Next, you have to create the virtual machine with
 
 ```bash
 $ vagrant up
 ```
 
-You can loginto the VM with
+You can login to the VM with
 
 ```bash
 $ vagrant ssh
 ```
 
-The book folder will be mounted in the VM and you can can follow the
+The book folder is mounted in the VM and you can follow the
 instructions in @sec:docker-create-book.
 
 
 
 ## Creating a Book {#sec:create-book}
 
-Once you have decided for one of the methods, you can create a book.
+Once you have decided on one of the methods, you can create a book.
 
-To create a book, you have to first check out the book source from
-github with if you have not yet done so (for example if you were to
+To create a book, you have first to check out the book source from
+GitHub with if you have not yet done so (for example if you were to
 use the docker container method):
 
 ```bash
@@ -143,7 +143,7 @@ following directories
     ./book/books/222
     ./book/books/516
 
-To compile a book go to the directory and make it. Let us assume you
+To compile a book, go to the directory and make it. Let us assume you
 like to create the cloud book for cloud
 
 ```bash
@@ -167,9 +167,9 @@ $ make
 
 The structure of the books is maintained in the yaml file in the
 directory where you execute the make in. It typically has the form
-`NAMEOFDIR.yaml`. Simply do an ls in the directory to see its anme or
-inspect the Makefile. You can add new chapters to the yaml file, but
-discuss this first with Gregor. TYpicallly, we have for incomming or
+`NAMEOFDIR.yaml`. Simply do an ls in the directory to see its name or
+inspect the Makefile. You can add new chapters to the YAML file, but
+discuss this first with Gregor. Typically, we have for incoming or
 draft chapters a special `draft` book to make sure the integration is
 done smoothly first in the draft.
 
@@ -200,26 +200,26 @@ We recommend that you use the following tools to clean up your files.
 * [biber](http://biblatex-biber.sourceforge.net/) - to cleanup your bibtex file
 
 We still only use bibtex and not biblatex, but can use biber for doing
-some verification. Once you have installed them, you can verify your documents with.
+some verification. Once you have installed them, you can verify your documents with
 
 ```bash
 mdl filename.md
 biber -V -tool filename.bib
 ```
 
-Please remember that we have many thausends of refernces in our bib
+Please remember that we have many thousands of references in our bib
 folder, so before you add a duplicate entry, please check in that
-forlder. An easy way to do this is to use jabref loading the bibfiles.
+folder. An easy way to do this is to use jabref loading the bibfiles.
 
 
 ## Creating a New Book
 
 Let us assume you like to create a new book. The easiest way to start is
 to copy from an existing book. However, make sure not to copy old files
-in dest. Let us assume you like to call the book gregor and you coppy
+in dest. Let us assume you like to call the book gregor and you copy
 from the python directory.
 
-You have to do the following
+You have to do the following.
 
 ```bash
 $ cd book/books/python
@@ -231,7 +231,7 @@ $ mv python.yaml gregor.yaml
 ```
 
 edit the Makefile and replace the NAME with gregor. make modifications
-to the table of contents in that yaml file and then compile with 
+to the table of contents in that YAML file and then compile with 
 
 ```bash
 $ make
@@ -247,20 +247,20 @@ level as your contribution, but in a directory called images. E.g.
 ./chapters/cloud/images/myimage.md
 ```
 
-In the document the image is than refered to as
+In the document, the image is then referred to as
 
 ```
 ![My imaage caption](images/myimage.md){#fig:cloud-myimage}
 ```
 
 The label `#fig:cloud-myimage` must be unique in all of the documents.
-While adding the directory cloud before the image name this is the case
+While adding the directory cloud before the image name, this is the case
 in our example.
 
-## Managing Refernces
+## Managing References
 
-Referncesa are all managed in bibtex format while using pandoc-crosreff
+References are all managed in bibtex format while using pandoc-crosreff
 to cite them. There are many examples of the different entry types
-available in the bib directory. DO not duplicte entries, instead reuse
+available in the bib directory. Do not duplicate entries, instead reuse
 them. Make sure you have a unique and meaningful label. 
 

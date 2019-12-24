@@ -1,42 +1,42 @@
 Contributing
 ------------
 
-The document is managed in LaTeX and is stored on github. Thus creating
+The document is managed in LaTeX and is stored on GitHub. Thus creating
 of the document is rather simple.
 
 ### Requirements
 
-We assume you are using a an OS on which you have installed and can
+We assume you are using an OS on which you have installed and can
 execute pdflatex. Operating systems such as Linux, OSX, or Windows can
-be set up for it. On Windows we recommend that you also install gitbash
+be set up for it. On Windows, we recommend that you also install gitbash
 and have make installed.
 
 We assume that you are familiar with git and have git installed.
 
 ### Setting up Git
 
-These instructions assume that you are using git from the commandline.
+These instructions assume that you are using git from the command line.
 For Linux or OSX, please follow our instructions on how to install it
 which is provided as part of the lessons.
 
-If you use windows you can install git for windows
+If you use Windows, you can install git for windows
 <https://git-for-windows.github.io/> and than you can open up Gitbash in
 your classes directory.
 
-It is important that you have set up git correctly, otherwise your pull
-request may not show up properly. First you need to initialize your
+It is important that you have set up git correctly; otherwise, your pull
+request may not show up properly. First, you need to initialize your
 directory for use with Git:
 
     git init
 
-Next you need to set your user name and email to get credit for your
+Next, you need to set your user name and email to get credit for your
 work:
 
     git config --global user.name "Firstname Lastname"
     git config --global user.email yourusername@iu.edu
 
-Where you need to replace the firstname, lastname and the email with
-your information. Next you need to pull the information down from your
+Where you need to replace the firstname, lastname, and the email with
+your information. Next, you need to pull the information down from your
 forked repository. You will need to enter your Github username and
 password when prompted:
 
@@ -51,7 +51,7 @@ fork from the web browser.
 
     git clone https://github.com/cloudmesh/book
 
-Next we need to switch into the development branch called *dev*
+Next, we need to switch into the development branch called *dev*
 
 Using the GITUSERNAME will guarantee that you first If you clone, you
 need to make sure you clone from your fork.
@@ -61,7 +61,7 @@ the file:
 
     Makefile
 
-This makefiles has som convenient targets include that allow you to
+This makefile has som convenient targets include that allows you to
 create the handbook. This is achieved most easily with
 
     make g
@@ -73,7 +73,7 @@ editing the rst files with a plain text editor.
 
 When you have changes to commit to the repository, you will first have
 to set the origin for the changes. You only need to do this the first
-time you commit changes, so do not worry about this step every time you
+the time you commit changes, so do not worry about this step every time you
 push your changes:
 
     git remote add origin https://github.com/username/classes.git
@@ -87,33 +87,33 @@ did:
 
     git commit -m "A message indicating what you changed"
 
-Finally you can push your changes up to Github:
+Finally, you can push your changes up to Github:
 
     git push -u origin master
 
 Once you have done that, open up a browser and go to your forked project
 on Github. When you have verified that the changes are there, you can
 issue a pull request for your work to be integrated into the original
-repository by clicking the *Pull Request* field in the right hand corner
+repository by clicking the *Pull Request* field in the right-hand corner
 beneath the topics.
 
 ### Adding bibliographic references
 
 We use a single reference file formatted in *bibtex*. The file is located
 in docs/source/refs.bib. We use sphinx-bibtex to manage the references in
-rst pages. However, it has the disadvantage that we can only have on
+rst pages. However, it has the disadvantage that we can only have one
 reference section per bib file. In order to simplify management as we may
-cite the same references in different files it is not useful to develop a
-bib file for each rst file. Instead we developed the following pragmatic
+cite the same references in different files, it is not useful to develop a
+bib file for each rst file. Instead, we developed the following pragmatic
 approach.
 
 Here is the process that we automatically apply in the *Makefile*
 
 -   We identify all rst files that have the cite command in it.
 -   We copy the refs.bib file into the same directory as the originating
-    rst file. Lets assume the file is called *filename.rst*
--   We than rename in the file for this directory to *filename-tmp.bib*
-    indicating it is not checked into github
+    rst file. Let us assume the file is called *filename.rst*
+-   We then rename in the file for this directory to *filename-tmp.bib*
+    indicating it is not checked into GitHub
 -   In gitignore we have a rule that excludes them
 
 The only thing you have to do in order to use references is to make the
@@ -135,7 +135,7 @@ recommend you use:
 
 ### Exercise
 
-To do this assignment you need to learn about making small changes and
+To do this assignment, you need to learn about making small changes and
 how to document them with 'gitchangelog':
 
 -   if you fix a spelling error: your commit message must:
@@ -220,5 +220,5 @@ EContrib.4:
 
 EContrib.5:
 
-:   Why do we ask you to do multiple pull requests? What could be the
+:   Why do we ask you to make multiple pull requests? What could be the
     consequence if you make hundreds of changes in one pull request?
