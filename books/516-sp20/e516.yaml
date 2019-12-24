@@ -1,0 +1,59 @@
+---
+metadata:
+  image: "cover.png"
+  title: "Cloud Computing\nEngineering"
+  subtitle: "e516"
+  author: "Gregor von Laszewski"
+  subauthor: ""
+  email: "laszewski@gmail.com"
+  url: "https://cloudmesh-community.github.io/pub/vonlaszewski-e516.epub"
+  description: "The lecture notes for e516"
+  abstract: "Lecture notes for e516"
+  keywords: "Cloud, Cloud Computing"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-e516.epub"
+  rights: (c) Gregor von Laszewski, 2018, 2019
+git:
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - PREFACE:
+    - "{file.chapter}/version.md"    
+    - "{git.credit}/disclaimer.md"
+  - SYLLABUS:
+    - "{file.chapter}/class/516/syllabus-2019.md"
+  - OVERVIEW:
+    - "{file.chapter}/class/516/summary.md"
+    - "{file.chapter}/class/516/communication.md"
+    - "{file.chapter}/class/516/quicktips.md"
+  - WEEKLY_AGENDA:
+    - "{file.chapter}/class/516/week1-intro.md"
+    - "{file.chapter}/class/516/week2-center.md"    
+    - "{file.chapter}/class/516/week3-arch.md"
+    - "{file.chapter}/class/516/week4-openstack.md"
+    - "{file.chapter}/class/516/week5-compute.md"
+    - "{file.chapter}/class/516/week6-REST.md"
+    - "{file.chapter}/class/516/week7-mapreduce.md"
+    - "{file.chapter}/class/516/week8-midterm.md"
+    - "{file.chapter}/class/516/week9-container.md"
+    - "{file.chapter}/class/516/week11-messaging.md"
+    - "{file.chapter}/class/516/week12-go.md"
+    - "{file.chapter}/class/516/week13-faas.md"
+    - "{file.chapter}/class/516/weekn.md"
+  - APPENDIX:
+    - "{file.chapter}/class/516/faq.md"
+    - "{file.chapter}/preface/reader.md"
+#    - "{file.chapter}/preface/corrections.md"
+#    - "{file.chapter}/authors.md"
+#    - "{file.chapter}/preface/create.md"
+#    - "{file.chapter}/preface/notation.md"
+#    - "{file.chapter}/preface/updates.md"
+#    - "{file.chapter}/preface/emoji.md"
+  - REFERENCES:
+    - "{file.chapter}/empty.md"

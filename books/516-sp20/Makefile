@@ -1,4 +1,4 @@
-NAME=e516
+NAME=e516-sp20
 HOME=../..
 FINAL=$(HOME)/../pub
 THIS=.
