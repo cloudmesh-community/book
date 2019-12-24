@@ -50,19 +50,14 @@ BOOK:
       - "{file.community}/fa19-516-159/master/project/report.md"
     - SECURITY:
       - "{file.community}/fa19-516-144/master/project/report.md"
-    - CLUSTER:
-# cleanup Sub
-      - "{file.community}/fa19-516-148/master/project/report.md"
-# others
-      - "{file.community}/fa19-516-158/master/project/report.md"
     - RSTUDIO:
       - "{file.community}/fa19-516-165/master/project/report.md"
     - NIST:
       - NIST_DATABASE:
         - "{file.community}/fa19-516-147/master/project/report.md"
-      - NIST_CLOUD_SERVICES:
-        - "{file.community}/fa19-516-151/master/project/report.md"
-        - "{file.community}/fa19-516-140/master/project/report.md"
+        - CLOUDMESH_AI_SERVICE:
+          - "{file.community}/fa19-516-151/master/project/report.md"
+          - "{file.cloudmesh}/cloudmesh-analytics/master/manual.md"
   #  - FORMAT:
   #    - "{file.chapter}/preface/corrections.md"
   #    - "{file.chapter}/authors.md"

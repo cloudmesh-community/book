@@ -29,26 +29,37 @@ BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"
     - "{git.credit}/disclaimer.md"
-  - REPORTS:
-    - TODO:
-# Others
-      - "{file.community}/fa19-516-141/master/project/report.md"
-      - "{file.community}/fa19-516-153/master/project/report.md"
-      - "{file.community}/fa19-516-172/master/project/report.md"
-      - "{file.community}/fa19-516-169/master/project/report.md"
+  - OPEN_PROJECTS:
+#   Deployement Of Databases in Multiple Cloud
+    - "{file.community}/fa19-516-158/master/project/report.md"
+  - ONGOING_PROJECTS:
+    - CLOUDMESH_PI_KUBERNETES:
+      - "{file.community}/fa19-516-148/master/project/report.md"
+      - "{file.community}/fa19-516-148/master/project/docker.md"
+      - "{file.community}/fa19-516-148/master/project/pi-setup.md"
+      - "{file.community}/fa19-516-148/master/project/sdcard-setup.md"
+      - "{file.cloudmesh}/cloudmesh_pi_burn/master/README.md"
+      - "{file.cloudmesh}/cloudmesh_pi_burn/master/cm-pi-burn.md"
+      #     Deployement Of Databases in Multiple Cloud
+    - "{file.community}/fa19-516-141/master/project/report.md"
+#   Spark Cluster Management Abstraction Layer
+    - "{file.community}/fa19-516-153/master/project/report.md"
+#   Group Key Management for Cloudmesh
+    - "{file.community}/fa19-516-172/master/project/report.md"
+#   Cloudmesh Compute Project for Google Cloud Platform (GCP)
+    - "{file.community}/fa19-516-169/master/project/report.md"
 # Sahiti
+    - NIST_AI_SERVICE:
       - "{file.community}/fa19-516-174/master/project/report.md"
+    - DATAWAREHOUS:
+# Deepack: Cloudmesh Mutiple-cloud Datawarehouse
       - "{file.community}/fa19-516-168/master/project/report.md"
-# Jim Nelson
-#      - "{file.community}/fa19-516-161/master/project/report.md"
-#
-#    - "{file.community}/fa19-516-163/master/project/report.md"
-  #  - FORMAT:
-  #    - "{file.chapter}/preface/corrections.md"
-  #    - "{file.chapter}/authors.md"
-  #    - "{file.chapter}/preface/create.md"
-  #    - "{file.chapter}/preface/notation.md"
-  #    - "{file.chapter}/preface/updates.md"
-  #    - "{file.chapter}/preface/emoji.md"
+    - FORMAT:
+      - "{file.chapter}/preface/corrections.md"
+#     - "{file.chapter}/authors.md"
+      - "{file.chapter}/preface/create.md"
+      - "{file.chapter}/preface/notation.md"
+      - "{file.chapter}/preface/updates.md"
+      - "{file.chapter}/preface/emoji.md"
   - REFERENCES:
       - "{file.chapter}/empty.md"
