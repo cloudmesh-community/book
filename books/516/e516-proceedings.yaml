@@ -35,10 +35,12 @@ BOOK:
         - "{file.community}/fa19-516-162/master/project/report.md"
         - "{file.cloudmesh}/cloudmesh-manual/master/docs-source/source/accounts/oracle/account.md"
         - "{file.community}/fa19-516-162/master/project/mnist-example.md"
-      - "{file.community}/fa19-516-169/master/project/report.md"
       - "{file.community}/fa19-516-157/master/project/report.md"
     - STORAGE:
-      - "{file.community}/fa19-516-160/master/project/report.md"
+# Shrayans
+      - GOOGLE:
+        - "{file.community}/fa19-516-160/master/project/report.md"
+#        - "{file.cloudmesh}/cloudmesh-manual/master/docs-source/source/accounts/google/account.md"
       - "{file.community}/fa19-516-152/master/project/report.md"
       - "{file.community}/fa19-516-155/master/project/report.md"
       - "{file.community}/fa19-516-171/master/project/report.md"
@@ -47,14 +49,13 @@ BOOK:
       - "{file.community}/fa19-516-166/master/project/report.md"
     - SECURITY:
       - "{file.community}/fa19-516-144/master/project/report.md"
-      - "{file.community}/fa19-516-172/master/project/report.md"
     - CLUSTER:
+# cleanup Sub
       - "{file.community}/fa19-516-148/master/project/report.md"
+# others
       - "{file.community}/fa19-516-158/master/project/report.md"
-      - "{file.community}/fa19-516-153/master/project/report.md"
     - NIST_DATABASE:
       - "{file.community}/fa19-516-147/master/project/report.md"
-      - "{file.community}/fa19-516-141/master/project/report.md"
     - NIST_CLOUD_SERVICES:
       - "{file.community}/fa19-516-151/master/project/report.md"
       - "{file.community}/fa19-516-140/master/project/report.md"
@@ -62,6 +63,11 @@ BOOK:
       - "{file.community}/fa19-516-165/master/project/report.md"
       - "{file.community}/fa19-516-159/master/project/report.md"
     - TODO:
+# Others
+      - "{file.community}/fa19-516-141/master/project/report.md"
+      - "{file.community}/fa19-516-153/master/project/report.md"
+      - "{file.community}/fa19-516-172/master/project/report.md"
+      - "{file.community}/fa19-516-169/master/project/report.md"
 # Sahiti
       - "{file.community}/fa19-516-174/master/project/report.md"
       - "{file.community}/fa19-516-168/master/project/report.md"
