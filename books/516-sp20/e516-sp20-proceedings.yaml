@@ -55,11 +55,11 @@ BOOK:
 # Deepack: Cloudmesh Mutiple-cloud Datawarehouse
       - "{file.community}/fa19-516-168/master/project/report.md"
     - FORMAT:
-      - "{file.chapter}/preface/corrections.md"
+#     - "{file.chapter}/preface/corrections.md"
 #     - "{file.chapter}/authors.md"
       - "{file.chapter}/preface/create.md"
       - "{file.chapter}/preface/notation.md"
-      - "{file.chapter}/preface/updates.md"
-      - "{file.chapter}/preface/emoji.md"
+#     - "{file.chapter}/preface/updates.md"
+#     - "{file.chapter}/preface/emoji.md"
   - REFERENCES:
       - "{file.chapter}/empty.md"
