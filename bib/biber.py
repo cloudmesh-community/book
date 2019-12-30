@@ -3,7 +3,7 @@ import os
 import sys
 from cloudmesh.common.util import str_banner
 from multiprocessing import pool
-from cloudmesh.common3.Shell import Shell
+from cloudmesh.common.Shell import Shell
 import time
 from multiprocessing import Pool
 

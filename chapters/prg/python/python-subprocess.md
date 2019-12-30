@@ -9,7 +9,7 @@ subprocess.
 The easiset way to use subprocesses is simply to use the cloudmesh `Shell`.
 
 ```python
-form cloudmesh.common3.Shell import Shell
+form cloudmesh.common.Shell import Shell
 
 result = Shell.run("ls -lisa")
 print (result)
