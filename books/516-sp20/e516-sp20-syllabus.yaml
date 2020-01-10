@@ -1,0 +1,28 @@
+---
+metadata:
+  image: "cover.png"
+  title: "e516 - Engineering Cloud \nComputing"
+  subtitle: "for Engineering, Data Science, \nand Computer Science Students"
+  author: "Gregor von Laszewski"
+  subauthor: "Editor"
+  email: "laszewski@gmail.com"
+  url: "https://cloudmesh-community.github.io/book/vonlaszewski-cloud.epub"
+  description: "Proposed Lecture content (subject to change)"
+  abstract: "Proposed Lecture content (subject to change)"
+  keywords: "Cloud, virtual machines, containers, cloud engenering"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-e516-sp20-syllabus.epub"
+  rights: (c) Gregor von Laszewski, 2020
+git:
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+BOOK:
+  - SYLLABUS:
+      - "{file.chapter}/version.md"
+      - "{file.chapter}/class/516/syllabus-2020.md"
