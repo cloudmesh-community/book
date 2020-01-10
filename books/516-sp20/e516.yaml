@@ -1,19 +1,19 @@
 ---
 metadata:
   image: "cover.png"
-  title: "Cloud Computing\nEngineering"
+  title: "Lecture Notes\nCloud Computing\nEngineering"
   subtitle: "e516"
   author: "Gregor von Laszewski"
   subauthor: ""
   email: "laszewski@gmail.com"
-  url: "https://cloudmesh-community.github.io/pub/vonlaszewski-e516.epub"
+  url: "https://cloudmesh-community.github.io/pub/vonLaszewski-e516-sp20.epub"
   description: "The lecture notes for e516"
   abstract: "Lecture notes for e516"
   keywords: "Cloud, Cloud Computing"
   stylesheet: "epub.css"
   dest: "./dest/book"
-  filename: "vonLaszewski-e516.epub"
-  rights: (c) Gregor von Laszewski, 2018, 2019
+  filename: "vonLaszewski-e516-sp20.epub"
+  rights: (c) Gregor von Laszewski, 2020
 git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
@@ -27,7 +27,8 @@ BOOK:
     - "{file.chapter}/version.md"    
     - "{git.credit}/disclaimer.md"
   - SYLLABUS:
-    - "{file.chapter}/class/516/syllabus-2019.md"
+    - "{file.chapter}/class/516/syllabus-2020.md"
+    - "{file.chapter}/class/516/calendar-2020.md"
   - OVERVIEW:
     - "{file.chapter}/class/516/summary.md"
     - "{file.chapter}/class/516/communication.md"

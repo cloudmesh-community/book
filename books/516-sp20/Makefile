@@ -6,7 +6,9 @@ THIS=.
 
 include ../makefile.sys
 
-all: syllabus epub pdf authors
+all: authors syllabus epub pdf
+	-killall Books
+	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME).epub
 
 update:
 	cd ../../..; cloudmesh-installer git pull 516
@@ -33,10 +35,8 @@ syllabus: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-syllabus.yaml get
-	mv dest/vonLaszewski-$(NAME)-syllabus.epub $(FINAL)/docs
-	-killall Books
-	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-syllabus.epub
-	#killall Books
+	mv dest/vonLaszewski-$(NAME)-syllabus.epub $(FINAL)/docs/vonLaszewski-$(NAME)-syllabus.epub
+	#-killall Books
 	#$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-syllabus.epub
 
 epub: clean fonts version
