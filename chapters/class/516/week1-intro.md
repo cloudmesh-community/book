@@ -1,19 +1,16 @@
 # Week 1: Course Introduction
 
+We provide in this document all activities we do in each week
+
 ## Assignments
 
 All graded class assignments are posted at
 
+<!--
 * <https://iu.instructure.com/courses/1822529/assignments>
+-->
 
-We provide in this document all activities we do in each week
-
-## Online Meeting Recording
-
-The first online meeting for week 1 which will be repeated on Thursday
-8-9:30pm has been recorded and is available at 
-
-* [![Video](images/video.png) Online Meeting Recording for Week 1 (1:29:39)](https://www.youtube.com/watch?v=k5218WUo6Cc)
+* <https://iu.instructure.com/courses/1858708/assignments>
 
 ## Class Videos
 
@@ -102,3 +99,18 @@ you so we can assess how to best integrate you in this class. It is not
 important that you know any of the technologies we ask you about.
 
 * [Background Questionnaire](https://forms.gle/w6ryzEm56rQmwWT38)
+
+## Online Meeting Recording
+
+This reqording is from last year, but still usefull. However the links
+in that presentation have been changed. We will be recording a new
+lecture in the first week of the class.
+
+* [![Video](images/video.png) Online Meeting Recording for Week 1 (1:29:39)](https://www.youtube.com/watch?v=k5218WUo6Cc)
+
+<!--
+
+The first online meeting for week 1 which will be repeated on Thursday
+8-9:30pm has been recorded and is available at 
+-->
+

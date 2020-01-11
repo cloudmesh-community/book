@@ -1,4 +1,5 @@
-NAME=222
+NAME=222-2020
+#NAME=222
 HOME=../..
 FINAL=$(HOME)/../pub
 

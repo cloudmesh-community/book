@@ -29,16 +29,16 @@ project in a significant way. The project link is
 
 * <https://github.com/cloudmesh-community/cm>
 
-and contains an alpha version which is currently worked on. Please do
+and contains an alpha version that is currently worked on. Please do
 not expect that the documentation is up to date. Residential students
-most frequently chose this as option. All programming in the project
-is done in python and weekly updates are discussed in meetings or in
-github.
+most frequently chose this as an option. All programming in the project
+is done in python, and weekly updates are discussed in meetings or in
+GitHub.
 
 
 ## Project: Virtual Cluster
 
-As previously stated, all students can contribute and participate on
+As previously stated, all students can contribute and participate in
 the creation of the Cloud service mesh project called Cloudmesh
 Version 4 that we will be using throughout the class to improve and
 interface with cloud and container frameworks.  This project is
@@ -48,17 +48,17 @@ managed at:
 
 Residential students will work on this project and meet in a
 discussion group to work on it while having weekly assigned tasks they
-define with us. Online students are welcome to join this project and
+define with us. Online students are welcome to join this project, and
 their tasks will be discussed in online hours. You will also need
 weekly time to work on it.  Online students that are in the
-Bloomington area, are welcome to join our residential meetings (Please
+Bloomington area are welcome to join our residential meetings (Please
 contact Gregor via piazza).
 
-Work on cloudmesh cm4, cm-burn or the NIST REST Specification document
+Work on Cloudmesh, cm-burn or the NIST REST Specification document
 can reduce the project report deliverable (in size) while substituting
 it with a **significant** larger programming contribution.
 
-* In case of cm4 we may write collaboratively a report but focus on
+* In case of Cloudmesh we may write a report collaboratively but focus on
   the manual first
 * In case of cm-burn we will work on a report that we publish in the
   Raspberry community
@@ -67,5 +67,5 @@ it with a **significant** larger programming contribution.
 
 In addition to interfacing with clouds via an API, we are also
 interested in displaying the interactions in Javascript. So if you have
-Javascript skills this may be a good opportunity for you to contribute
+Javascript skills this may be an excellent opportunity for you to contribute
 to the project with your previous knowledge.
