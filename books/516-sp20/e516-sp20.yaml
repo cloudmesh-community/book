@@ -28,6 +28,7 @@ BOOK:
     - "{git.credit}/disclaimer.md"
   - SYLLABUS:
     - "{file.chapter}/class/516/syllabus-2020.md"
+    - "{file.chapter}/class/516/calendar-2020.md"
   - OVERVIEW:
     - "{file.chapter}/class/516/summary.md"
     - "{file.chapter}/class/516/communication.md"

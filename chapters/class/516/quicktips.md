@@ -4,8 +4,8 @@
 
 We recommend that you know one programming language. Although most
 activities are done in Python, this programming language does not have
-to be Python, as it can easily and quickly be learned throughout the semester. No
-background in cloud computing is needed.
+to be Python, as it can easily and quickly be learned throughout the
+semester. No background in cloud computing is needed.
 
 ## Time Commitment
 
@@ -26,18 +26,24 @@ appropriate.
 The list includes:
 
 * [Cloud Computing](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]
-* Cloud Technologies, Gregor von Laszewski [@las19technologies]
-* Project Report Format, Gregor von Laszewski [@e516-report-sample]
 * Introduction to Python [@las19python]
 * Linux for Cloud Computing [@las19linux]
 * Scientific Writing with Markdown [@las19writing]
+
+
+Other documents may include:
+
+* Cloud Technologies, Gregor von Laszewski [@las19technologies]
+* Project Report Format, Gregor von Laszewski [@e516-report-sample]
+
 
 ## Help
 
 If you take our class, please use piazza to ask for help. This is
 important as different Teaching Assistants may answer questions
 (TAs) based on expertise. Please, do not send e-mail to the instructors.
-TAs are not allowed to answer e-mail send to them personally.
+TAs are **not allowed** to answer e-mail send to them personally.
+On piazza alwas use send to *instructors*.
 
 ## How to Take this Class
 
@@ -45,22 +51,23 @@ This class is attended by students with greatly different backgrounds
 and time schedules. To be most flexible and address all students there
 are two different ways on how you can take this class.
 
-* Way 1: *Free form.* Here you simply look at the Syllabus table for the
-  semester and identity whatever section you feel like reading (when it becomes available). However, make sure you conduct our weekly **Lab
-  activities**.
-
-* Way 2: *Chronological order.* The lecture notes are ordered
+* Way 1: *Chronological order.* The lecture notes are ordered
   chronological. Thus you can follow our lecture also in chronological
   order.
+  
+* Way 2: *Free form.* Here you simply look at the Syllabus table for the
+  semester and identity whatever section you feel like reading (when 
+  it becomes available). However, make sure you conduct our weekly **Lab
+  activities**.
 
-Please note that we have set aside a recommended set of weekly Lab
+Please note that we have set aside regular Lab
 activities. The activities are pass-fail and will be integrated into your
 grade. You are certainly allowed to work ahead, but please be aware that
 based on feedback and observation, we may make modifications to the Labs.
 
 Typically,  Lab activities are supposed to be completed within one week
 as it alerts us of problems, you might have that we can then address.
-This assures us that we know you will have no issues with your project.
+Labs assure us that we know you will have no issues with your project.
 
 Lab activities will not receive any credit if you are a residential
 student, and the activity has not been completed within one week.
@@ -83,7 +90,7 @@ Lab passes do not apply to other assignments and due dates.
 
 ## Assignments
 
-Besides the Lab's, we have only two main assignments in this class.
+Besides the Lab's, we have only a few assignments in this class.
 The Lab's will prepare you towards achieving these assignments.
 
 ### Technology Review
@@ -95,16 +102,16 @@ The Lab's will prepare you towards achieving these assignments.
 
 As part of cloud engineering, you will be exposed to a large set of
 technologies. To sharpen your skills in analyzing and evaluating these
-technologies, you will be asked to prepare a technology review that is
-being added to a class proceeding.
+technologies, you will be asked to prepare a number of technology
+reviews that are being added to a class proceeding.
 
-This includes a substantial non-plagiarized document that can be added as a
-chapter to the lecture notes. The review must be done on a topic that is
-not yet included in our book. The review will not include advertisement
-statements form those that have developed the technology but will
-qualitatively describe the technology and potentially contrast it to
-other related technologies. In addition, you will have to develop an
-example showcasing how to use the technology. The minimal length of a
+This includes writing a substantial non-plagiarized document that can be
+added as a chapter to the lecture notes. The review must be done on a
+topic that is not yet included in our book. The review will not include
+advertisement statements form those that have developed the technology
+but will qualitatively describe the technology and potentially contrast
+it to other related technologies. In addition, you will have to develop
+an example showcasing how to use the technology. The minimal length of a
 review is about 800 words.
 
 An example of such a section is 
@@ -148,6 +155,17 @@ of the deployment. A test and benchmark, possibly including a
 *downloadable* dataset, must be used to verify the correctness of your
 approach.
 
+The project must demonstrate 
+
+1. The use of multiple clouds or cloud services.
+2. The implementation of an abstarct interface to these clouds or services.
+3. The implementation of an OpenAPI Specification and interface.
+4. The implementation of an easy deployment. 
+5. The implementation of a benchmark.
+6. The easy replication of the project from source from your short documentationion 
+   (via the AI's).
+7. The integration of the project into cloudmesh commands. This is super easy.
+
 
 #### License
 
@@ -158,6 +176,21 @@ your project uses different licenses, please add a README.md file that
 describes which packages are used and what licenses these packages have.
 
 #### Project Report
+
+
+
+> For certain projects, the requirement of a report can be waved or is
+> significantly reduced while replacing it with more programming
+> activities. This includes
+
+> * Any project that enhances Cloudmesh
+> * Building a large cloud cluster with Raspberry Pi's (while contributing a manual or a chapter about it)
+> * Any Application project showcasing NIST big data reference architecture use.
+
+> However you still have to do a manual and usage examples, benchmarks and
+> `pytest`s for them.
+
+For all others teh following guidline exists:
 
 A project report is to be delivered and continuously improved throughout
 the semester in GitHub. It includes not just the analysis of a topic,
@@ -176,19 +209,9 @@ required:
 Projects with more students are expected to do more programming. The
 report is written in markdown and checked into GitHub.  The report will
 be made available in a class proceeding. A Report could be substituted
-by a manual and benchmarks. In this case, a one-page extended abstract
-has to be written, which includes the link to the manual.
-
-For certain projects, the requirement of a report can be waved or is
-significantly reduced while replacing it with more programming
-activities. This includes
-
-* Any project that enhances Cloudmesh
-* Building a large cloud cluster with Raspberry Pi's (while contributing a manual or a chapter about it)
-* Any Application project showcasing NIST big data reference architecture use.
-
-However you still have to do a manual and usage examples, benchmarks and
-`pytest`s for them.
+by a manual and benchmarks upon approval. In this case, a one-page
+extended abstract has to be written, which includes the link to the
+manual.
 
 
 #### Project Code
@@ -212,18 +235,20 @@ downloads the data either from the Web or IU's data storage.
 
 #### Work Breakdown
 
-This is an appendix to the document that describes in a bullet list who
-did what in the project. If you are a team of one, such a section is not
-needed. This section comes after the references. It does not count
-towards the page length of the document. It must include explicit URLs
-to the git history that documents the statistics to demonstrate more
-than one student has worked on the project. If you can not provide such
-a statistic or all check-ins have been made by a single student, the
-project has shown that they have not adequately used git. Thus, points
-will be deducted from the project. Furthermore, if we detect that a
-student has not contributed to a project, we may invite the student to
-give a detailed oral presentation of the project, including a
-demonstration of the examples in real-time.
+
+This is a separate document called breackdown.md that is included in
+your project directory It describes in a bullet list who did what in the
+project. If you are a team of one, such a document is not needed.  It
+does not count towards the page length of the document. It must include
+explicit URLs to the git history that documents the statistics to
+demonstrate more than one student has worked on the project. If you can
+not provide such a statistic or all check-ins have been made by a single
+student, the project has shown that they have not adequately used git.
+Thus, points will be deducted from the project. Furthermore, if we
+detect that a student has not contributed to a project, we may invite
+the student to give a detailed oral presentation of the project,
+including a demonstration of the examples in real-time to determine the
+project grade.
 
 #### Bibliography
 
@@ -248,15 +273,16 @@ We will teach you what to do. It is easy.
 #### Reproducibility
 
 In general, any project must be deployable by the TA. If it takes hours
-to deploy your project, please talk to us before the final
-submission. This should not be the case. Also, if it takes 100 steps,
+to deploy your project, please talk to us before the final submission.
+This should not be the case. Also, if it takes 100 steps to do by hand,
 we are sure you can automate them, as you are likely doing something
-wrong or have not thought about the engineering aspect of cloud computing where as we tend to
-automate most of the steps.
+wrong or have not thought about the engineering aspect of cloud
+computing where as we tend to automate most of the steps. A part of your
+grade will be how much your project is automated.
 
 You have plenty of time to execute a wonderful project, but you need to
 work consistently on it. Starting one week before the deadline will
-not work.
+be desatourous.
 
 The best way to assure reproducibility is to use `pytest`. We will
 discuss how to do that in class.
@@ -381,7 +407,7 @@ However, we will recognize extraordinary efforts in these activities.
 
 In addition to these artifacts, there will also be a participation
 component in class that will be determined based on your productive
-contributions to piazza to help others that have questions and
+contributions to Piazza to help others that have questions and
 contributions to the books too, for example, improve sections with
 spelling, grammar or content. We can see from the GitHub history if
 you conducted such improvements. Make sure that technical

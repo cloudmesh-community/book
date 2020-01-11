@@ -17,24 +17,32 @@
 
 
 
-In this book, we provide many chapters that will allow you to quickly and 
-easily get knowledge in cloud computing on theoretical and practical
-levels.
+In this book, we provide many chapters that will allow you to quickly
+and easily get knowledge in cloud computing on theoretical and practical
+levels. To reduce the size of the online books, we have split them up in
+a number of topical books that you will be using as part of this class.
 
-Although the following was originally covered in this book, we decided
-to split out its contents to make the core cloud engineering book
-smaller. In case you take one of our classes using the book, we expect
-that you pick up the material also covered by these additional books.
-Please be aware that some of the class material is based on Python and
-Linux. You will need no knowledge of them as you can pick it up while
-reading this book.
+We expect that you pick up the material discussed in these books as
+needed. Our main books include:
 
-* [Cloud Computing](https://laszewski.github.io/book/cloud/)
-* [Linux for Cloud Computing](https://laszewski.github.io/book/linux/)
-* [Python for Cloud Computing](https://laszewski.github.io/book/python/)
-* [Scientific Writing with Markdown](https://laszewski.github.io/book/writing/)
+* [Linux for Cloud Computing](https://laszewski.github.io/book/linux/) [@las19linux]
 
-The book is organized as follows:
+  This book Gives an elementary overview of Linux features we will use.
+
+* [Python for Cloud Computing](https://laszewski.github.io/book/python/) [@las19python]
+
+  This book Gives an elementary overview of Python features we will use.
+
+* [Scientific Writing with Markdown](https://laszewski.github.io/book/writing/) [@las19writing]
+
+  This book Gives an elementary overview of Markdown features we will use.
+
+
+The main book discusses aspects around clouds and is published at
+
+* [Cloud Computing](https://laszewski.github.io/book/cloud/) [@las19technologies]
+
+The book contains the following content:
 
 **Definition of Cloud Computing**
 
@@ -116,7 +124,9 @@ The book is organized as follows:
 
 **Map/Reduce**
 
-: In this chapter, we discuss the background of Mapreduce along with Hadoop and its core components. We also introduce Spark to you in this section.
+: In this chapter, we discuss the background of Mapreduce along with 
+  Hadoop and its core components. We also introduce Spark to you in this 
+  section.
 
 : You will be presented on how you can use the systems on a single
   resource so you can explore them more easily, but we will also let
@@ -125,14 +135,14 @@ The book is organized as follows:
 : We conclude this section with some important Map/Reduce frameworks
   used as part of the larger Map/Reduce ecosystem such as AWS Elastic
   Map/Reduce (AWS EMR). This also includes a discussion about Twister2
-  which is a version of Map/Reduce that could perform even faster then
+  which is a version of Map/Reduce that could perform even faster than
   Spark.
 
 **Container**
 
 : In the container chapter, we introduce you to the basic concepts of a container and delineate it from virtual machines as we have introduced you earlier. We start the chapter with an introduction to Docker and then introduce you to how to manage clusters capable of running many containers with the help of docker swarm and
   Kubernetes.  To showcase you its use on other PaaS and applications,
-  we even show you how to run Hadoop with docker as well as how to conduct a PageRank analysis.  Kubernetes is discussed in its own section.
+  we even show you how to run Hadoop with Docker as well as how to conduct a PageRank analysis.  Kubernetes is discussed in its own section.
 
 : As many academic datacenters do run queuing systems, we will also
   showcase Singularity allowing you to use containers within a batch
@@ -145,7 +155,7 @@ The book is organized as follows:
 
 : Recently a new paradigm in cloud computing has been introduced. Instead
   of using virtual machines or containers functions with limited resource
-  requirements have specified that can then be executed on function capable
+  requirements have specified that can then be executed on functions capable
   execution services hosted by cloud providers.
 
 : We introduce you to this concept and showcase you some examples of
@@ -153,12 +163,14 @@ The book is organized as follows:
 
 **Messaging Services**
 
-: Many devices in the cloud need to communicate with each other. In this chapter, we look into how we can provide alternatives to REST services that provide messaging capabilities. We focus on MQTT which is
+: Many devices in the cloud need to communicate with each other. In 
+  this chapter, we look into how we can provide alternatives to REST services that provide messaging capabilities. We focus on MQTT, which is
   often used to connect cloud edge devices between each other and the cloud.
 
 **GO**
 
-: Go is a programming language used by Google and has been used to implement Kubernetes. In this chapter, we introduce you to the
+: Go is a programming language used by Google and has been used to 
+  implement Kubernetes. In this chapter, we introduce you to the
   elementary features of Go and also take a closer look at how we can
   define REST services, use OpenAPI, and interface with clouds.
 

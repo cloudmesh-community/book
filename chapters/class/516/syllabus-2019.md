@@ -5,7 +5,7 @@
 
 ![](images/learning.png) **Learning Objectives**
 
-* Get a quick overview what the class is about
+* Get a quick overview of what the class is about
 
 ---
 
@@ -18,30 +18,29 @@
 ## Audience
 
 * We recommend you know one programming language.
-* Knowledge of python is of advantage but not required. Python is easy.
+* Knowledge of Python is of advantage but not required. Python is easy.
 
 ## Course summary
 
 This class will introduce you to state-of-the-art cloud computing
 concepts an engineering approaches. This will include virtual machines,
 containers and Map/Reduce. The course will have a Lab in which you can
-practically explore these concepts. You will for example have the option
+practically explore these concepts. You will, for example, have the option
 to create a cloud as part of this course and explore cloud computing tools
 and frameworks.
 
 
 ## References
 
-The course does not have required readings. We will provide the
-following references as pointers to what we will discuss:
+The course does not have a required commercial book. However, we will extensively relate to online material. This also includes:
 
 * [Cloud Computing](https://laszewski.github.io/book/cloud/)
 * [Linux](https://laszewski.github.io/book/linux/)
 * [Python](https://laszewski.github.io/book/python/)
 * [Markdown](https://laszewski.github.io/book/writing/)
 
-However, please remember we will select topics and include material that
-is or may not be covered in these books. The books will evolve during
+We will select topics from these books but also include material that
+is or may not be covered in these books. The books are evolving during
 the semester.
 
 ## Tools
@@ -62,7 +61,7 @@ and others can be achieved through their free tier,
 | 4    | Cloud Architectures |
 | 5    | Virtualization I - OpenStack |
 | 6    | Virtualization II - AWS, Azure, Google |
-| 7    | Multi Cloud Environment |
+| 7    | Multi-Cloud Environment |
 | 8    | Cloud Technology Presentation - Project Review|
 | 9    | Containers - Docker, Kubernetes|
 | 10   | Map Reduce |
@@ -73,7 +72,7 @@ and others can be achieved through their free tier,
 | 15   | Projects Due |
 | 16   | Project Improvements |
 
-For each of the topics you will find one or more relevant chapters or
+For each of the topics, you will find one or more relevant chapters or
 sections in our online book.
 
 ## Attendance
@@ -88,8 +87,8 @@ This course will not have exams. Instead, we have the following graded
 assignment categories:
 
 * Lab Assignments (pass/fail) are assignments that will be
-  conducted on a weekly basis. They will help you making sure you
-  not only understand the material theoretically, but try them out.
+  conducted on a regular basis. They will help you making sure you
+  not only understand the material theoretically but try them out.
 
 * Cloud Technology Review and Examples (Graded): (This can be
   substituted for more programming in your project). This is a document
@@ -100,8 +99,7 @@ assignment categories:
   plagiarized presentation and document about it.
 
 * Project Assignments (Graded): The most important part of the class for
-  which you will be working throughout the semester. Up to three
-  students can work in a project. In case of group projects, the project
+  which you will be working on throughout the semester. Up to three students can work on a project. In the case of group projects, the project
   deliverables are increased.
 
 The project has three submissions that are spread throughout the
@@ -117,7 +115,7 @@ for your project.
   * What is the problem you try to address?
   * What are you doing to address this problem?
   * How are you addressing this problem?
-  * What is the architecture that adresses the problem that you will 
+  * What is the architecture that addresses the problem that you will 
     implement?
 
 * Code and Documentation Review
@@ -149,7 +147,7 @@ course to accommodate the needs and expectations of the students.
 * 10% Assignments
 * 10% Particpation
 
-There is no exam or midterm in this class, however there will be a
+There is no exam or midterm in this class. However, there will be a
 project review at midterm time.
 
 ## Project Examples

@@ -2,18 +2,18 @@
 
 ## Class Material
 
-Most class material is distributed as ePubs and PDF. ePubs renders on
-many computers very nicely. Thus we recommend you use ePub instead of
-the PDF versions of our documents. Please install an ePub Reader if your
-system does not have one.
+Most class material is distributed as ePubs and PDF or resources on the
+Web. Our ePubs render on many computers very nicely. Thus we recommend you
+use ePub instead of the PDF versions of our documents. Please install an
+ePub Reader if your system does not have one.
 
-  * macOS: has a build ePub reader callesd Books. 
+  * macOS: has a build ePub reader called Books. 
   * Windows 10: [Calibre](https://calibre-ebook.com/)
   * Linux: [Calibre](https://calibre-ebook.com/)
   * Others: Linux: [Calibre](https://calibre-ebook.com/)
   
 Naturally, you can read the ePubs also on your tablets instead of on your
-computers, if you have a tabler with lots of memory.
+computers, if you have a tablet with lots of memory.
 
 Please be aware that the documents will be updated weekly, and you need
 to download them accordingly. Make sure you clear the cache if your
@@ -37,8 +37,8 @@ answer.
 
 You will get a grade for participation in the class discussions on
 Piazza. Please note that we do not recommend you go from CANVAS to
-Piazza as CANVAS has a bad layout and in fact, does not allow you to see
-the Piazza Hyperlinks. Instead, go to Piazza directly.
+Piazza as CANVAS has an bad HTML layout and in fact, does not allow you to see
+the Piazza hyperlinks. Instead, go to Piazza directly. Use our link.
 
 ## Class Resources
 
@@ -61,8 +61,9 @@ The link to the meeting information is at
 
 ## Assignments
 
-All Assignments are links in the piazza resource page as a simple link
-to CANVAS in the resources page:
+All assignments will be posted in our lecture notes. Graded assignments
+will also appear in CANVAS. You can find the link to them in our
+resource section:
 
 * <https://piazza.com/iu/spring2020/e516spring2020/resources>
 
@@ -87,18 +88,9 @@ Thus make sure to check out the newest version.
 
 This class does not use books from publishers as cloud computing is
 constantly changing, and by the time you place the purchase order, the
-book may already be outdated. Instead, we have prepared online books that
-are continually evolving.
-
-We like to illustrate on a simple example of what happened to us in the
-past. We prepared with great detail information about Azure. However,
-throughout the semester, the way on how to interact with it was changed
-dramatically. Now if you would have had a book, the entire chapter about
-Azure would have been outdated. However, within less than a week, we
-were able to replace the content, so everyone in the class can benefit from
-our updates very quickly. Not only that, because our material is online,
-you will likely find an updated version in the future even after your class
-is completed. No printed textbook can provide this service.
+book may already be outdated. Instead, we have prepared online books
+that are continually evolving. It is even expected that tools or
+services you use will evolve during the semester. 
 
 We have the following books in ePub and PDF available. The ePub version
 is our preferred version:
