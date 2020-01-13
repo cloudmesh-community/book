@@ -1,4 +1,4 @@
-# Week 5: Cloud VM Compute Service
+# Week 5: Cloud VM Compute Service :o2:
 
 ## Videos
 

@@ -1,4 +1,4 @@
-# Week 12: GO
+# Week 12: GO :o2:
 
 As you have noticed cloud computing has a lot to do with parallel
 computing, servers, and messaging.

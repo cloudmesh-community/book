@@ -1,4 +1,4 @@
-# Week 3: Cloud Computing Architectures
+# Week 3: Cloud Computing Architectures  :o2:
 
 Start of Project Selection
 

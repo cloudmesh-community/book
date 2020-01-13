@@ -1,4 +1,4 @@
-# Week 13: FaaS
+# Week 13: FaaS :o2:
 
 Recently you have heard abouut Function as a Service. We will provide
 some introductory material and discuss some concrete

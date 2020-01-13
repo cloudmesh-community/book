@@ -1,4 +1,4 @@
-# Week 2: Cloud Data Centers
+# Week 2: Cloud Data Centers :o2:
 
 ## Online Meeting Recording
 
@@ -33,6 +33,7 @@ Do the following assignments:
 Optional:
 
 * E.Datacenter.9
+
 
 ## Lab Activities
 
@@ -99,6 +100,16 @@ owner:
   community: 516
   semester: fa19
 ```
+
+### Ubuntu Multipass
+
+Install ubuntu multipass on your computer. Note that you must have at
+least 8GB of main memory on your computer. However you may need to close
+chrome or pycharm. Please monitor your consumption of memory to
+determine if you like to buy more memory for your computer and upgrade
+it. A computer with 4GB is likely not to be usable for this assignment
+in that case use chameloncloud and learn OpenStack as an alternative.
+
 
 ### Optional: Plagiarism Certificate
 

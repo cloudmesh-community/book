@@ -139,13 +139,15 @@ documentation for your project.
     the semester is over. This allows us to give you feedback for
     improvements.
     
-In addition to these major milestones, you will have a weekly project
-discussion and update to report on every week starting from the midterm.
+In addition to these major milestones, you will have a project
+discussion and update to report on every week starting from the midterm
+date.
 
-Please note that the syllabus is subject to change. Students in this
-class often come from a wide variety of backgrounds and experiences. As
-such, the instructor reserves the right to change the content of the
-course to accommodate the needs and expectations of the students.
+Please note that the syllabus is subject to change. We may also change
+the order. Students in this class often come from a wide variety of
+backgrounds and experiences. As such, the instructor reserves the right
+to change the content of the course to accommodate the needs and
+expectations of the students.
 
 ## Grade Breakdown
 
@@ -154,13 +156,24 @@ course to accommodate the needs and expectations of the students.
 * 10% Assignments
 * 10% Particpation
 
-There is no exam or midterm in this class, however, there will be a
-project review at midterm time. During the last two weeks of the
-semetser, intensive reviews are conducted.
+There is no written exam for the midterm or final in this class.
+However, there will be a project review at midterm and final time.
+During the last two weeks of the semetser, intensive reviews are
+conducted. Please do not assume that after you have handed in your
+project, you are done. You have the ability to improve it based on
+feedback.
+
+The deliverables for midterm and project reviewes are discussed
+elsewhere
 
 ## Project Examples
 
+A small list of project examples are available at:
+
 * <https://cloudmesh.github.io/cloudmesh-manual/projects/index.html>
+
+We will add to this list as the semester progresses. We like you to
+identify a project within the firts month of the semester.
 
 ## Statement on Academic Misconduct
 

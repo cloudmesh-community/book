@@ -1,4 +1,4 @@
-# Week 6: Virtualization II - AWs, Azure, Google
+# Week 6: Virtualization II - AWs, Azure, Google :o2:
 
 :o2: under construction
 

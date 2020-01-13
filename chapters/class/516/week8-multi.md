@@ -1,4 +1,4 @@
-# Week 7: Multi Cloud Environment
+# Week 7: Multi Cloud Environment :o2:
 
 :o2: under construction
 

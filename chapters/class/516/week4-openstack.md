@@ -1,4 +1,4 @@
-# Week 4: Openstack
+# Week 4: Openstack :o2:
 
 ## Video
 

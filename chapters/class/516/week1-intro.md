@@ -2,6 +2,9 @@
 
 We provide in this document all the activities we do in each week.
 
+Sections marked with a :o2: are not yet released and are likely to be
+modified. 
+
 ## Assignments
 
 All graded class assignments are posted at
@@ -14,7 +17,7 @@ All graded class assignments are posted at
 
 ## Class Videos
 
-Please watch the following video and
+Please watch the following video
 
 * [![Video](images/video.png) Overview Engineering Cloud Computing 2019 (21:05)](https://www.youtube.com/watch?v=PU93waozGJk)
 
@@ -31,15 +34,18 @@ Next, review the following chapters in the book
 
 Summary: 
 
-* Post your professional bio to Piazza
-* Setup your computer
-* Create the cloud accounts and fill out the form [Cloud Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
-* Install python on your computer (Python 3.8)
-* Update pip
-* Install an ePub Reader
-  * macOS: Build-in use Books
-  * Windows 10: Build in use edge
-  * others: [Calibre](https://forms.gle/w6ryzEm56rQmwWT38)
+* [ ] Create an account on <https:github.com>
+* [ ] Fill out the form [Class Survey](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
+* [ ] Post your professional bio to Piazza
+* [ ] Setup your computer
+
+  * [ ] Install python on your computer (Python 3.8)
+  * [ ] Update pip
+  * Install an ePub Reader
+
+    * macOS: Build-in use Books
+    * Windows 10: Build in use edge
+    * others: [Calibre](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
 
 Next, we provide some more details. If you have questions, ask on 
 [Piazza](https://piazza.com/class/jzkfveoqwri3e4)
@@ -51,7 +57,9 @@ includes:
 
 * piazza.com (used for communication)
 * github.com (used for the project and other class artifacts)
-* chameleoncloud.org (free cloud account)
+* chameleoncloud.org (free cloud account) <https://www.chameleoncloud.org/user/register/>
+
+<!--
 * futuresystems.org (GPU & container)
 
   * Please join this [project](https://portal.futuresystems.org/project/fg-569)
@@ -60,7 +68,8 @@ After you created the accounts, please fill out the following form so we
 can set up the class accounts and in case of GitHub we create you a
 class repository for you.
 
-* [Cloud Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
+* [Class Survey](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
+-->
 
 Optional accounts (apply once you need them, some are time limited):
 
@@ -71,6 +80,15 @@ Optional accounts (apply once you need them, some are time limited):
 * google Iaas (optional)
 
 We will never ask you for your passwords.
+
+### Questionnaire
+
+In this activity, you will be filling out a form with information about
+you so we can assess how to integrate you in this class best. It is not
+important that you know any of the technologies we ask you about.
+
+* [Class Survey](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
+
 
 ### Bio
 
@@ -99,16 +117,9 @@ you use have an appropriate python version. We will not accept any
 project targeting Python 2 or smaller than Python 3.7.4. You must use
 pip version 19.3.1 or newer.
 
-### Questionnaire
 
-In this activity, you will be filling out a form with information about
-you so we can assess how to integrate you in this class best. It is not
-important that you know any of the technologies we ask you about.
 
-:o2: Questionaire is not yet set up!
-* [Background Questionnaire](https://forms.gle/w6ryzEm56rQmwWT38)
-
-## Online Meeting Recording
+## Online Meeting Recording :o2:
 
 This recording is from last year, but still useful. However, the links
 in that presentation have been changed. We will be recording a new

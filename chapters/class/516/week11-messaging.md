@@ -1,4 +1,4 @@
-# Week 11: GraphQL and Messaging
+# Week 11: GraphQL and Messaging :o2:
 
 
 ## Lecture Material

@@ -1,4 +1,4 @@
-# Week 9: Containers - Docker
+# Week 9: Containers - Docker :o2:
 
 
 ## Lecture Material

@@ -1,4 +1,4 @@
-# Week 7: MapReduce
+# Week 7: MapReduce :o2:
 
 ## Lecture Material
 
