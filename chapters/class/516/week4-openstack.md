@@ -120,7 +120,7 @@ Compute:
 ```bash
 $ cd cm
 $ cloudmesh-installer git clone cloud
-$ cloudmesh-installer install cloud -e
+$ cloudmesh-installer install cloud
 ```
 
 The next is optional and only for those that chose a cloudmesh storage
@@ -130,7 +130,7 @@ installation of the `compute` bundle.
 ```bash
 $ cd cm
 $ cloudmesh-installer git clone storage
-$ cloudmesh-installer install storage -e
+$ cloudmesh-installer install storage
 ```
 
 To see the available commands type

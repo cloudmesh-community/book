@@ -1,12 +1,14 @@
-# Multipass
+# Multipass :o2:
 
-TODO Write what multipass is
+:o2: Assignment Write what multipass is
+
+* <https://multipass.run/>
 
 ## Install 
 
 Follow the install instructions as documented at
 
-* ...
+* <https://multipass.run/docs>
 
 ## Sudo
 
@@ -92,3 +94,42 @@ Make sure they are purged
 Find other images
 
     multipass find
+
+
+## Excersises
+
+E.Multipass.1: 
+
+> What is Primary in multipass
+
+E.Multipass.2: 
+
+> What is snapcraft in multipass 
+
+E.Multipass.3:
+
+> How do you write a bibtex entry for <https://multipass.run/>
+
+> Tip: see: <https://github.com/cloudmesh-community/book/blob/master/bib/refs.bib>
+
+> Answer:
+
+> TBD
+
+E.Multipass.4:
+
+> Provide mor extensive examples for find.
+>
+> * <https://multipass.run/docs/find-command>
+> * <https://launchpad.net/ubuntu/+series>
+> 
+> Provide a list which are supported on your system.
+
+E.Multipass.5:
+
+> Explain cloud-init. Provide an example
+
+E.Multipass.6:
+
+> Install MikroK8s in multipass and provide a users guide
+

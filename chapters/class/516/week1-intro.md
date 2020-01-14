@@ -23,7 +23,7 @@ Please watch the following video
 
 Next, review the following chapters in the book 
 
-[Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
+[Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
 
 * Chapter: Preface, ePub Readers
 * Chapter: Overview
@@ -44,7 +44,7 @@ Summary:
   * Install an ePub Reader
 
     * macOS: Build-in use Books
-    * Windows 10: Build in use edge
+    * Windows 10: [Calibre](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
     * others: [Calibre](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
 
 Next, we provide some more details. If you have questions, ask on 
