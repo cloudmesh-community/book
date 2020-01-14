@@ -110,7 +110,11 @@ E.Multipass.3:
 
 > How do you write a bibtex entry for <https://multipass.run/>
 
-> Tip: see: <https://github.com/cloudmesh-community/book/blob/master/bib/refs.bib>
+> Add all bibtex entries (e.g. the urls you see in multipass.md) into
+> <https://github.com/cloudmesh-community/book/blob/master/bib/multipass.bib>
+
+> Tip: see: <https://github.com/cloudmesh-community/book/blob/master/bib/refs.bib> 
+> for examples.
 
 > Answer:
 
