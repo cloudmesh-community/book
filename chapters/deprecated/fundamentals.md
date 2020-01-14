@@ -29,6 +29,7 @@ Cloud Computing: From Parallel Processing to the Internet of Things.
 
 [![Video](images/video.png) Cloud 8:31 TBD](https://www.youtube.com/watch?v=5lKj8_nqj9k){
 Youtube}
+
 Data Center Model
 -----------------
 

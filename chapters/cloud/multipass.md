@@ -34,79 +34,83 @@ After that line add your user to the list of sudoers as follows:
 
 Launch an instance with 
 
-    multipass launch --name ubuntu-lts
+    $ multipass launch --name ubuntu-lts
 
 Execute a command in the instance with 
 
-    multipass exec ubuntu-lts -- lsb_release -a
+    $ multipass exec ubuntu-lts -- lsb_release -a
 
 List all instances with and specify the output in a particular format
 
-    multipass list
-    multipass list --format yaml
-    multipass list --format json
-    multipass list --format csv
+    $ multipass list
+    $ multipass list --format yaml
+    $ multipass list --format json
+    $ multipass list --format csv
     
 Stop the instance with 
     
-    multipass stop ubuntu-lts
+    $ multipass stop ubuntu-lts
 
 Make sure its stopped
 
-    multipass list --format yaml
+    $ multipass list --format yaml
 
 Start the instance
 
-    multipass start ubuntu-lts
+    $ multipass start ubuntu-lts
 
 Make sure its started
 
-    multipass list --format yaml
+    $ multipass list --format yaml
 
 Stop it again
 
-    multipass stop ubuntu-lts
+    $ multipass stop ubuntu-lts
 
 Start the primary
 
-    multipass start 
+    $ multipass start 
 
 List the running instances
 
-    multipass list --format yaml
+    $ multipass list --format yaml
 
 Delete all instances
 
-    multipass delete --all
+    $ multipass delete --all
 
 Make sure they are deleted
 
-    multipass list --format yaml
+    $ multipass list --format yaml
 
 Purge the instances
 
-    multipass purge
+    $ multipass purge
 
 Make sure they are purged
 
-    multipass list --format yaml
+    $ multipass list --format yaml
 
 Find other images
 
-    multipass find
+    $ multipass find
 
 
 ## Excersises
 
-E.Multipass.1: 
+E.Multipass.1:
 
-> What is Primary in multipass
+> Add instalation instruction for your operating system to this document.
 
 E.Multipass.2: 
 
+> What is Primary in multipass
+
+E.Multipass.3: 
+
 > What is snapcraft in multipass 
 
-E.Multipass.3:
+E.Multipass.4:
 
 > How do you write a bibtex entry for <https://multipass.run/>
 
@@ -120,7 +124,7 @@ E.Multipass.3:
 
 > TBD
 
-E.Multipass.4:
+E.Multipass.5:
 
 > Provide mor extensive examples for find.
 >
@@ -129,11 +133,11 @@ E.Multipass.4:
 > 
 > Provide a list which are supported on your system.
 
-E.Multipass.5:
+E.Multipass.6:
 
 > Explain cloud-init. Provide an example
 
-E.Multipass.6:
+E.Multipass.7:
 
 > Install MikroK8s in multipass and provide a users guide
 

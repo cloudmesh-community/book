@@ -304,7 +304,7 @@ of the virtual machine you are staring such as RAM, Storage,
 processing power. However since we are using instance that are free
 tier eligible we will only be able to use "EC2 Micro instances". You
 can also select a OS that you want to be started as the virtual
-machine. We will select "Ubuntu Server 16.04 LTS" as our Operating
+machine. We will select "Ubuntu Server 18.04 LTS" as our Operating
 system. press the blue select button to do so.
 
 ![Launch Instance](images/launch_instance.png){#fig:launch-instance}

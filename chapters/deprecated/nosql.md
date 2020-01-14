@@ -79,6 +79,7 @@ MongoDB
 
 \TODO{Add MongoDB overview. This was completed as a tech abstract so
   some material should be leveraged from that}
+  
 Indexing Applications
 ---------------------
 

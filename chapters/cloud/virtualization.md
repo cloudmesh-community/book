@@ -455,7 +455,7 @@ summarize support for full- and paravirtualization
 |     | XEN | KVM | VirtualBox | VMWare |
 | --- | ---: | ---: | ---: | ---: |
 | Paravirtualization | yes | no | no | no |
-|Full virtualization | yes | yes | yes |yes |
+| Full virtualization | yes | yes | yes |yes |
 
 ### Selected Storage Virtualization Software and Tools
 

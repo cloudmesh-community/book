@@ -64,6 +64,8 @@ BOOK:
     - "{file.chapter}/cloud/virtualization.md"
     - "{file.chapter}/cloud/qemu.md"
     - "{file.chapter}/cloud/virsh.md"
+    - "{file.chapter}/cloud/multipass.md"
+    - "{file.chapter}/cloud/vagrant.md"
   - IAAS:
     - "{file.chapter}/iaas/iaas.md"
     - "{file.chapter}/iaas/aws/aws.md"

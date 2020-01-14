@@ -117,9 +117,6 @@ These appliances provide Chameleon-specific customizations, such as
 login using the cc account, the cc-checks utility to verify hardware
 against our resource registry, gathering of metrics, etc.
 
-Since 2016, we also provide and support Ubuntu 14.04 and 16.04
-appliances with the same functionality.
-
 ## Bare Metal Troubleshooting
 
 ### Why are my Bare Metal instances failing to launch?

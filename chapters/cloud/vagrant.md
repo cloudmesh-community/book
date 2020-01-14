@@ -1,4 +1,4 @@
-# Vagrant {#sec:vagrant}
+# Vagrant {#sec:vagrant} :o2:
 
 ---
 
@@ -65,13 +65,9 @@ in the terminal command or in your `~/.bash_profile`
 
 ### Windows :o2:
 
-![No](images/no.png) ![Question](images/question.png)
-
 ![Question](images/question.png) students contribute
 
 ### Linux :o2:
-
-![No](images/no.png) ![Question](images/question.png)
 
 ![Question](images/question.png) students contribute
 

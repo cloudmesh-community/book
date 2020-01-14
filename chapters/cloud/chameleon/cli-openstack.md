@@ -188,7 +188,7 @@ provided by Chameleon project.
 
 ```bash
 $ openstack server create \
-   --image CC-Ubuntu16.04 \
+   --image CC-Ubuntu18.04 \
    --key-name ${CC_PREFIX}-key \
    --flavor m1.small \
    ${CC_PREFIX}-01
