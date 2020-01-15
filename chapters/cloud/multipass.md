@@ -174,15 +174,15 @@ E.Multipass.3:
 E.Multipass.4:
 
 > How do you write a bibtex entry for <https://multipass.run/>
-
+>
 > Add all bibtex entries (e.g. the URLs you see in multipass.md) into
 > <https://github.com/cloudmesh-community/book/blob/master/bib/multipass.bib>
-
+>
 > Tip: see: <https://github.com/cloudmesh-community/book/blob/master/bib/refs.bib> 
 > for examples.
-
+>
 > Answer:
-
+>
 > Provided by students
 
 E.Multipass.5:
@@ -199,40 +199,38 @@ E.Multipass.5:
 > OSX: using hyperkit
 >
 
-```
-Image             Aliases    Version   Description
-snapcraft:core    core16     20200115  Snapcraft builder for Core 16
-snapcraft:core18             20200115  Snapcraft builder for Core 18
-16.04             xenial     20200108  Ubuntu 16.04 LTS
-18.04             bionic,lts 20200107  Ubuntu 18.04 LTS
-```
+| Image             | Aliases    | Version   | Description |
+| ----------------- | ---------- | --------- | ----------- | 
+| snapcraft:core    | core16     | 20200115  | Snapcraft builder for Core 16 |
+| snapcraft:core18  |            | 20200115  | Snapcraft builder for Core 18 |
+| 16.04             | xenial     | 20200108  | Ubuntu 16.04 LTS |
+| 18.04             | bionic,lts | 20200107  | Ubuntu 18.04 LTS |
 
 >
 > OSX: using virtualbox
 >
 
-```
-Image                   Aliases           Version          Description
-16.04                   xenial            20200108         Ubuntu 16.04 LTS
-18.04                   bionic,lts        20200107         Ubuntu 18.04 LTS
-```
+
+| Image             | Aliases    | Version   | Description |
+| ----------------- | ---------- | --------- | ----------- | 
+| 16.04             | xenial     | 20200108  | Ubuntu 16.04 LTS |
+| 18.04             | bionic,lts | 20200107  | Ubuntu 18.04 LTS |
 
 >
 > Linux:
 >
 
-```
-Image            Aliases      Version   Description
-snapcraft:core   core16       20200115  Snapcraft builder for Core 16
-snapcraft:core18              20200115  Snapcraft builder for Core 18
-core             core16       20190806  Ubuntu Core 16
-core18                        20190806  Ubuntu Core 18
-16.04            xenial       20200108  Ubuntu 16.04 LTS
-18.04            bionic,lts   20200107  Ubuntu 18.04 LTS
-19.04            disco        20200109  Ubuntu 19.04
-19.10            eoan         20200107  Ubuntu 19.10
-daily:20.04      devel,focal  20200113  Ubuntu 20.04 LTS
-```
+| Image             | Aliases     | Version   | Description |
+| ----------------- | ----------- | --------- | ----------- | 
+| snapcraft:core    | core16      | 20200115  | Snapcraft builder for Core 16 |
+| snapcraft:core18  |             | 20200115  | Snapcraft builder for Core 18 |
+| core              | core16      | 20190806  | Ubuntu Core 16 |
+| core18            |             | 20190806  | Ubuntu Core 18 |
+| 16.04             | xenial      | 20200108  | Ubuntu 16.04 LTS |
+| 18.04             | bionic,lts  | 20200107  | Ubuntu 18.04 LTS |
+| 19.04             | disco       | 20200109  | Ubuntu 19.04 |
+| 19.10             | eoan        | 20200107  | Ubuntu 19.10 |
+| daily:20.04       | devel,focal | 20200113  | Ubuntu 20.04 LTS |
 
 >
 > Windows:
@@ -247,3 +245,15 @@ E.Multipass.7:
 
 > Install MikroK8s in multipass and provide a users guide
 
+E.Multipass.8:
+
+> Measure the performance of fetching and launching the image with the 
+> different hypervisors on your system. Report the results in a table with 
+> a timer for each hypervisor and distinguish faetching and launching times. 
+> Measure also the time to execute a command in the VM.
+>
+> The table will have the columns
+>
+> Image, Hypervisor, Fetch, Launch, Execute 
+>
+> Make sure to purge the images between tests.
