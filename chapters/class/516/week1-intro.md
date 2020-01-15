@@ -35,7 +35,7 @@ Next, review the following chapters in the book
 Summary: 
 
 * [ ] Create an account on <https:github.com>
-* [ ] Fill out the form [Class Survey](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
+* [ ] Fill out the [Class Survey](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
 * [ ] Post your professional bio to Piazza
 * [ ] Setup your computer
 
@@ -47,8 +47,9 @@ Summary:
     * Windows 10: [Calibre](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
     * others: [Calibre](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
 
-Next, we provide some more details. If you have questions, ask on 
-[Piazza](https://piazza.com/class/jzkfveoqwri3e4)
+If you have questions, ask on
+[Piazza](https://piazza.com/class/jzkfveoqwri3e4) Next, we provide some
+more details of each of the assignments in this summary.
 
 ### Account Creation
 
@@ -81,7 +82,7 @@ Optional accounts (apply once you need them, some are time limited):
 
 We will never ask you for your passwords.
 
-### Questionnaire
+### Survey
 
 In this activity, you will be filling out a form with information about
 you so we can assess how to integrate you in this class best. It is not

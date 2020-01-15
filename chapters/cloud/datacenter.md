@@ -75,6 +75,16 @@ quickly (see @fig:internet-minutes-2017-2018).
 ![Internet Minute 2017-2018 [@www-internet-minute-2017-2018]](images/internet-minute-2017-2018.jpg){#fig:internet-minutes-2017-2018}
 
 
+The newest such graph for 2019 is available (see @fig:internet-minutes-2018-2019).
+
+![Internet Minute 2018-2019 [@www-internet-minute-2018-2019]](images/internet-minute-2018-2019.jpg){#fig:internet-minutes-2018-2019}
+
+:o2: What do you observe? Create a pull request with your observations between the changes from 2018-2019
+
+ONe of the obvious observations is that the hours watched on Netflix
+have drastically increased. This seems to also reflect the trend
+reported as *cord cutting* as reported from the cable companies.
+
 It is also interesting to compare such trends over a more extended period (see @fig:google-search-per-year, @fig:big-data-trend-2012). An
 example is provided by looking at Google searches.
 

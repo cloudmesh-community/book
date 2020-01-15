@@ -1,13 +1,4 @@
-# Week 2: Cloud Data Centers :o2:
-
-## Online Meeting Recording
-
-The online meeting recording from Tue Sep 3, 2019 is available from this link:
-
-* [![Video](images/video.png) Online Meeting Recording for Week 2 (48:38)](https://www.youtube.com/watch?v=kezPx0QHrt8)
-
-This meeting lasted actually half an hour later, but included duplicated
-questions that we removed.
+# Week 2: Cloud Data Centers
 
 ## Lecture Material
 
@@ -21,7 +12,16 @@ about **Data Centers**. We decided not to do a video as the material
 in this section frequently changes and videos became too quickly
 outdated. 
 
+
 Do the following assignments:
+
+Due: two weeks, share your findings on PIazza and improve based on the
+discussions and other students contributions. We recommend you start in
+the first week. Gregor will than integrate the contributions into a
+document that we can than use in the second week for improvements.
+Please lso note that this assignment is used for you to learn markdown
+with refernces, links and bibtex entries. Note that github does not
+support this version of markdown.
 
 * E.Datacenter.2.a
 * E.Datacenter.2.b
@@ -34,44 +34,18 @@ Optional:
 
 * E.Datacenter.9
 
+Optional :o2:
+
+We may post on Piazza examples from last semester that you can leverage
+and improve. Remember thay may already be outdated by now and could need
+updates. IT will take us some time to publish them. But you can find
+them already yourself if you look in previous students repos.
 
 ## Lab Activities
 
-* Make sure you have completed the application for the chameleon cloud 
-  as we will use that in our lab soon.
-  
-* Make sure you have Python set up. Read up on virtualized python
- environments as used in python 3.7.4. Its super simple. Understand
- what the command
-
- ```bash
- $ cd ~ 
- $ python -m venv ENV3
- $ source ENV3/bin/activate
- ```
- 
- Those using Windows, please find out ho to do it on Windows, provide a
- document venv-windows.md in your HID directory describing it.
- 
- Those using conda/anaconda, please find out ho to do it with
- conda/anaconda, provide a document venv-conda.md in your HID directory
- describing it.
- 
- Make sure you create a separate venv for this class called ENV3 that we
- will use for this class and should not be used for other classes as we
- do not want to create side effects. Please also be aware that at times
- it may be necessary to delete your python environment in case you do
- something wrong and it would be unwise to combine all your python
- activities into one python install.
- 
- You will not receive any points for just installing python, without
- being able to create a virtualized python deployment.
- 
- Our Python book and the internet will help. This feature is build into
- Python 3! so it is super easy to use.
-
-
 ### Receive your HID
+
+Due: one week (needs survey to be filled out)
 
 Make sure you have received an HID on github. Look it up at 
 
@@ -84,6 +58,8 @@ to convenient tools so you can develop your programs more easily in
 github.
 
 ### README.yml
+
+Due: one week
 
 Make sure the information in your README.yaml file is accurate. Make
 sure to change the value in community and use your class number. This
@@ -101,17 +77,111 @@ owner:
   semester: fa19
 ```
 
+### Chameleon Cloud
+
+Due: Now
+
+Make sure you have completed the application for the chameleon cloud as
+we will use that in our lab soon.
+
+### Review Python
+
+Due: throughout the semester
+
+This activity will go on throughout the entire semester. You do not have
+to be a Python expert within one day, but if you have knowledge gaps,
+pleaase review and consult our Python Book. Start with the language features.
+
+* [Python for Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/python/) [@las19python]:
+
+
+### Setup your Computer
+
+#### Python
+
+Due: One Week
+
+Make sure you have Python set up. Read up on virtualized python
+environments as used in python 3.8. Its super simple. Understand what
+the command
+
+```bash
+$ cd ~ 
+$ python -m venv ENV3
+$ source ENV3/bin/activate
+```
+ 
+Those using Windows, please find out ho to do it on Windows, provide a
+document venv-windows.md in your HID directory describing it.
+
+Those using conda/anaconda, please find out ho to do it with
+conda/anaconda, provide a document venv-conda.md in your HID directory
+describing it.
+
+Make sure you create a separate venv for this class called ENV3 that we
+will use for this class and should not be used for other classes as we
+do not want to create side effects. Please also be aware that at times
+it may be necessary to delete your python environment in case you do
+something wrong and it would be unwise to combine all your python
+activities into one python install.
+
+As you can see this is super easy.
+
+We recommend pycharm for an IDE if you have not yet picked one. Pycharm
+automated code improvements will be used for most of our projects. It
+realy helps you! We will teach you trhoughout the semester how to use
+it.
+
 ### Ubuntu Multipass
+
+Due: one week
+
+Locate the Section about Multipass in the book
+
+* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
+
+and read it.
 
 Install ubuntu multipass on your computer. Note that you must have at
 least 8GB of main memory on your computer. However you may need to close
 chrome or pycharm. Please monitor your consumption of memory to
 determine if you like to buy more memory for your computer and upgrade
-it. A computer with 4GB is likely not to be usable for this assignment
-in that case use chameloncloud and learn OpenStack as an alternative.
+it. A computer with 4GB is likely not to be usable for this assignment.
+
+In case you do not have a compter on which you can execute this, please
+contuct us in Piazza. You may have to do more work than other students.
+
+For example (a) you amy have tos immediatly start using chameleon cloud
+and learn OpenStack as an alternative; (b) you may need to use virtual
+box; (c) or you may have to buy yourself a cheap upto date computer on
+which you can execute the class. You must be able to be
+superuser/administrotor of that computer. The computer must support
+virtual machines and docker.
+
+Please also note that if you have Windows Home 10 on your system, you
+need to upgrade it to Pro or EDU. Make sure to configure it as 64 bit.
+
+It is in your responsibility to have proper equipment. 
+
+Analogy: when you play Tennis you get yourself a tennis racket and you do
+not show up with a pingpong paddle to play it. 
+
 
 
 ### Optional: Plagiarism Certificate
+
+Due: optional, but if you do not underatsnd what plagiarism is please find out.
+
+
+---
+
+[![Warning](images/warning.png)]()
+
+At IU you are required to know these concepts before you take any
+class. Thus the excuse: "I did not know that this is plagiarism" does
+not apply to any class at IU including this one.
+
+---
 
 When writing contributions that can be integrated into the class
 material, it is important that it is not plagiarized. It is most
@@ -129,13 +199,13 @@ rules at IU.
  
 For this reason we included this material also in part in the Book
 
-* Scientific Writing with Markdown
+* [Scientific Writing with Markdown](https://laszewski.github.io/book/writing/)
 
 Please read the chapter about Plagiarism.
 
 Please be aware that we may conduct superior plagiarism tests. Our tests
-are even better than  "Turn-it-in" while we are able to identified
-"translations" from other languages, copies of text from non-public
+are even better than  *Turn-it-in* while we are able to identified
+*translations* from other languages, copies of text from non-public
 external university servers, and company archives that turn-it-in does
 not check. IU has a strict policy that we must follow.
 Plagiarism/cheating could lead to expulsion from the university. The
@@ -144,3 +214,16 @@ IU rules. You must know what it is prior to you taking a course at IU.
  
 It is not subject of this class to teach you what plagiarism is. We do
 this just to remind you to avoid any uncertainty about it.
+
+## Online Meeting Recording :o2:
+
+:o2: this is a recoding from last semester. A new  recording will be
+published here for this semester once it becomes available.
+
+The online meeting recording from Tue Sep 3, 2019 is available from this
+link:
+
+* [![Video](images/video.png) Online Meeting Recording for Week 2 (48:38)](https://www.youtube.com/watch?v=kezPx0QHrt8)
+
+This meeting lasted actually half an hour later, but included duplicated
+questions that we removed.
