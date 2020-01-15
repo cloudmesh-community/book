@@ -262,3 +262,34 @@ E.Multipass.8:
 > The pytest can be shared among all students. Discuss on Piazza 
 > how to do it. Use a cloudmesh shell variable for the HYPERVISOR type.
 >
+
+E.Multipass.9a:
+
+> What is k3s?
+>
+> Tip: <https://k3s.io/>
+> Tip: <https://rancher.com/docs/k3s/latest/en/>
+
+
+E.Multipass.9b:
+
+> Create a cloudmesh command to start a k3s cluster 
+> Leverage the template disucussed at
+> <https://medium.com/better-programming/local-k3s-cluster-made-easy-with-multipass-108bf6ce577c>
+>
+> use 
+>
+> `cloudmesh sys command generate k3s`
+> 
+> To generate the command such as
+>
+> cms k3s [--hypervisor=hyperkit] --names=\"node[0-3]\" deploy
+>
+> where the first note is assumed to be the master. THis commands deploys 
+> on your local computer a 3 node kubernetes cluster.
+>
+> Extend the 
+> commandlist to include
+>
+> start, stop, purge, delete, ... and so on. Discuss with others in class
+> what commands should be implemented.
