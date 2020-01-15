@@ -136,6 +136,26 @@ Find other images
 $ multipass find
 ```
 
+To switch to a different VM support you can use
+
+OSX: (default is hyperkit)
+
+```bash
+sudo multipass set local.driver=hyperkit
+sudo multipass set local.driver=virtualbox
+```
+
+Windows: (default is hyperv, it must be enabled.)
+
+```bash
+multipass set local.driver=hyperv
+multipass set local.driver=virtualbox
+```
+
+You have to reboot for the feature to take effect in Windows. If you
+have Windows 10 Home you must use virtualbox. Please get Windows Pro or
+EDU instead.
+
 ## Exercises
 
 E.Multipass.1:
@@ -176,12 +196,31 @@ E.Multipass.5:
 >
 > Solution:
 >
-> OSX:
+> OSX: using hyperkit
 >
-> * ...
+
+```
+Image             Aliases    Version   Description
+snapcraft:core    core16     20200115  Snapcraft builder for Core 16
+snapcraft:core18             20200115  Snapcraft builder for Core 18
+16.04             xenial     20200108  Ubuntu 16.04 LTS
+18.04             bionic,lts 20200107  Ubuntu 18.04 LTS
+```
+
+>
+> OSX: using virtualbox
+>
+
+```
+Image                   Aliases           Version          Description
+16.04                   xenial            20200108         Ubuntu 16.04 LTS
+18.04                   bionic,lts        20200107         Ubuntu 18.04 LTS
+```
+
 >
 > Linux:
 >
+
 ```
 Image            Aliases      Version   Description
 snapcraft:core   core16       20200115  Snapcraft builder for Core 16
@@ -194,11 +233,11 @@ core18                        20190806  Ubuntu Core 18
 19.10            eoan         20200107  Ubuntu 19.10
 daily:20.04      devel,focal  20200113  Ubuntu 20.04 LTS
 ```
+
 >
 > Windows:
 >
 > * ...
-
 
 E.Multipass.6:
 
