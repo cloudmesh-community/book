@@ -257,3 +257,8 @@ E.Multipass.8:
 > Image, Hypervisor, Fetch, Launch, Execute 
 >
 > Make sure to purge the images between tests.
+>
+> Use a pytest and cloudmesh Benchmark for creating the Benchmarks.
+> The pytest can be shared among all students. Discuss on Piazza 
+> how to do it. Use a cloudmesh shell variable for the HYPERVISOR type.
+>
