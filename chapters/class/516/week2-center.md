@@ -166,7 +166,10 @@ It is in your responsibility to have proper equipment.
 Analogy: when you play Tennis you get yourself a tennis racket and you do
 not show up with a pingpong paddle to play it. 
 
+Do Assignments:
 
+* E.Multipass.1
+* E.Multipass.5
 
 ### Optional: Plagiarism Certificate
 
