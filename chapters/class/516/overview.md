@@ -86,7 +86,7 @@ The book contains the following content:
   formulate queries that retrieve desired data. Restrictions to the queries can be formulated to download what is needed. Other features
   include a type system. Github has added in addition to its REST service
   also a GraphQL interface. You have the opportunity to explore
-  GraphQl while interfacing with GitHub.
+  GraphQL while interfacing with GitHub.
 
 **Hypervisors**
 
