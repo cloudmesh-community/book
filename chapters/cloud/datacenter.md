@@ -446,7 +446,7 @@ arising from build and teardown phase as well as operational upgrades.
 
 One of the frequent measurements in data centers that is used is the
 Power usage effectiveness or PUE in short. It is a measurement to
-identify how much energy is ued for the computing equipment versus
+identify how much energy is used for the computing equipment versus
 other energy costs such as air conditioning.
 
 Formally we define it as
