@@ -492,7 +492,7 @@ This metric comes also with some drawbacks:
   that the energy use to cool a data center in colder climates is
   less than in warmer climates. However, this may actually be a good
   side-effect as this will likely result in less cooling needs sand
-  therefor energy costs.
+  therefore energy costs.
 * It also forces large data centers with many shared servers in
   contrast to small data centers where operational cost may become
   relevant.
