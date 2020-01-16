@@ -1,4 +1,4 @@
-# Vagrant {#sec:vagrant} :o2:
+# Vagrant :o2: {#sec:vagrant} 
 
 ---
 
@@ -9,12 +9,12 @@
 
 ---
 
-A convenient tool to interface with Virtual Box is vagrant.Vagrant
+A convenient tool to interface with Virtual Box is vagrant. Vagrant
 allows us to manage virtual machines directly from the commandline. It
-support also other providers and can be used to start virtual machines
+also support other providers and can be used to start virtual machines
 and even containers. The latest version of vagrant includes the
 ability to automatically fetch a virtual machine image and start it on
-your local computer. It assumes that you have virtual box installed.
+your local computer. It assumes that you have virtualbox installed.
 Some key concepts and advertisement are located at
 
 * <https://www.vagrantup.com/intro/index.html>:
@@ -29,7 +29,7 @@ A list of *boxes* is available from
 * <https://app.vagrantup.com/boxes/search>
 
 One image we will typically use is Ubuntu 18.04. Please note that
-older version may not be suitable for class and we will not support
+older versions may not be suitable for class, and we will not support
 any questions about them. This image is located at
 
 * <https://app.vagrantup.com/ubuntu/boxes/bionic64>
@@ -43,7 +43,7 @@ download and install the appropriate version:
 
 ### macOS
 
-On MacOS, download the dmg image, and click on it. You will find a pkg
+On MacOS, download the dmg image and click on it. You will find a pkg
 in it that you double click. After installation vagrant is installed in
 
 * `/usr/local/bin/vagrant`
@@ -73,7 +73,7 @@ in the terminal command or in your `~/.bash_profile`
 
 ## Usage
 
-To download, start and login into install the 18.04:
+To download, start and login into install the 18.04 image:
 
 ```
 host$ vagrant init ubuntu/bionic64
@@ -96,14 +96,14 @@ vagrant@ubuntu-bionic:~$ sudo apt-get install python3.7
 vagrant@ubuntu-bionic:~$ sudo apt-get install python3-pip
 ```
 
-To install the light weight idle development environment in case you do
+To install the lightweight idle development environment in case you do
 not want o use pyCharm, please use
 
 ```bash
 vagrant@ubuntu-bionic:~$ sudo apt-get install idle-python
 ```
 
-So that you do not have to always use the number 3, you can also set
+So that you do not have always to use the number 3, you can also set
 an alias with
 
 ```bash
