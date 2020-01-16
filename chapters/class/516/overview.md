@@ -177,7 +177,7 @@ The book contains the following content:
 **Cloud AI Services**
 
 : As part of the class, we explore AI services that are 
-  are hosted in clouds and offered as service.
+  hosted in clouds and offered as service.
   If interested, you can use them in your projects. As part of this class
   you can develop AI services which can be hosted 
   in the cloud and reused by others.
