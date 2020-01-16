@@ -105,7 +105,7 @@ The book contains the following content:
 **IaaS**
 
 : In the IaaS chapter, we review many of the services
-  offered by providers usch as AWS, Azure, Google, and OpenStack that
+  offered by providers such as AWS, Azure, Google, and OpenStack that
   is used by some academic clouds such as Chameleon cloud.
 
 : In addition, we introduce you to elementary command-line tools and
@@ -141,7 +141,7 @@ The book contains the following content:
 **Container**
 
 : In the container chapter, we introduce you to the basic concepts of a container and delineate it from virtual machines as we have introduced you earlier. We start the chapter with an introduction to Docker and then introduce you to how to manage clusters capable of running many containers with the help of docker swarm and
-  Kubernetes.  To showcase you its use on other PaaS and applications,
+  Kubernetes.  To demonstrate its use on other PaaS and applications,
   we even show you how to run Hadoop with Docker as well as how to conduct a PageRank analysis.  Kubernetes is discussed in its own section.
 
 : As many academic datacenters do run queuing systems, we will also
@@ -154,9 +154,9 @@ The book contains the following content:
 **Serverless Computing**
 
 : Recently a new paradigm in cloud computing has been introduced. Instead
-  of using virtual machines or containers functions with limited resource
-  requirements have specified that can then be executed on functions capable
-  execution services hosted by cloud providers.
+  of using virtual machines or container functions with limited resource
+  requirements, you can define functions that are run 
+  on execution services hosted by cloud providers.
 
 : We introduce you to this concept and showcase you some examples of
   FaaS services and frameworks.
