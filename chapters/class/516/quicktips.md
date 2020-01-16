@@ -252,7 +252,7 @@ downloads the data either from the Web or IU's data storage.
 
 *Only needed when you have 2 or more members in your team.*
 
-This is a separate document called `breackdown.md` that is included in
+This is a separate document called `breakdown.md` that is included in
 your project directory. It describes in a bullet list who did what in
 the project. If you are a team of one, such a document is not needed. It
 does not count towards the page length of the document. It must include
