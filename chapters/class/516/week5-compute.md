@@ -8,8 +8,8 @@ Watch the videos from week 4 related to Cloudmesh
 
 A new version of the following books have been released:
 
-* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/e516/) [@las19e516]
-* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
+* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/e516/) [@las19e516]
+* [Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
 
 Please read the chapter in the book [Cloud Computing](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
 about 

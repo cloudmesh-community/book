@@ -60,9 +60,9 @@ supposed to be don in the project, this includes
 
 A new version of the following books have been released:
 
-* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/e516/) [@las19e516]
-* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
-* [Introduction to Python for Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/python/) [@las19python]
+* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/e516/) [@las19e516]
+* [Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
+* [Introduction to Python for Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/python/) [@las19python]
 
 ## Lab: OpenStack
 

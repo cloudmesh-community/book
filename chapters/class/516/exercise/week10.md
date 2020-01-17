@@ -2,7 +2,7 @@
 
 - [ ] Read Week 10 Section *Hadoop* in Lecture Notes
 - [ ] Watch Video Hadoop MapReduce and HDFS
-- [ ] Read in the Book [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/)
+- [ ] Read in the Book [Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/cloud/)
   - [ ] Chapter: Hadoop
   - [ ] Chapter: Hadoop (HDFS)
   - [ ] Chapter: MapReduce

@@ -5,10 +5,10 @@
 
 A new version of the following books have been released:
 
-* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/e516/) [@las19e516]
-* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
+* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/e516/) [@las19e516]
+* [Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
 * [Chameleon Cloud](https://laszewski.github.io/book/chameleon/)
-* [Introduction to Python for Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/python/) [@las19python]
+* [Introduction to Python for Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/python/) [@las19python]
 
 Go through Chapter **REST** of the 
 [Cloud Computing](https://laszewski.github.io/book/cloud/)

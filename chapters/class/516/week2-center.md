@@ -4,8 +4,8 @@
 
 A new version of the following books have been released:
 
-* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/e516/) [@las19e516]:
-* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
+* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/e516/) [@las19e516]:
+* [Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
 
 Please read the section in [Cloud Computing](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]:
 about **Data Centers**. We decided not to do a video as the material
@@ -92,7 +92,7 @@ This activity will go on throughout the entire semester. You do not have
 to be a Python expert within one day, but if you have knowledge gaps,
 pleaase review and consult our Python Book. Start with the language features.
 
-* [Python for Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/python/) [@las19python]:
+* [Python for Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/python/) [@las19python]:
 
 
 ### Setup your Computer
@@ -138,7 +138,7 @@ Due: one week
 
 Locate the Section about Multipass in the book
 
-* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
+* [Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]:
 
 and read it.
 

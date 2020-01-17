@@ -5,8 +5,8 @@
 
 A new version of the following books have been released:
 
-* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/e516/) [@las19e516]
-* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
+* [e516 Lecture Notes Engineering Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/e516/) [@las19e516]
+* [Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
 
 Please read the chapter in the book [Cloud Computing](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
 about GraphQL and Messaging.
@@ -32,7 +32,7 @@ GraphQl and the other is called MQTT.
 
 The information about them are included in the book:
 
-* [Cloud Computing, Gregor von Laszewski, Ed. 2019](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
+* [Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing]
 
 Please locate the chapters and read
 

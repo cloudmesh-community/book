@@ -19,7 +19,7 @@ All graded class assignments are posted at
 
 Please watch the following video
 
-* [![Video](images/video.png) Overview Engineering Cloud Computing 2019 (21:05)](https://www.youtube.com/watch?v=PU93waozGJk)
+* [![Video](images/video.png) Overview Engineering Cloud Computing (21:05)](https://www.youtube.com/watch?v=PU93waozGJk)
 
 Next, review the following chapters in the book 
 
