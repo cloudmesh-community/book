@@ -102,7 +102,7 @@ pleaase review and consult our Python Book. Start with the language features.
 Due: One Week
 
 Make sure you have Python set up. Read up on virtualized python
-environments as used in python 3.8. Its super simple. Understand what
+environments as used in Python 3.8. Its super simple. Understand what
 the command
 
 ```bash

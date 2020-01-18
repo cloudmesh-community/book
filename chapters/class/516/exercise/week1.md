@@ -9,9 +9,9 @@
 - [ ] Lab   
   - [ ] Post bio to piazza
   - [ ] Fill out survey
-  - [ ] [Accounts](https://forms.gle/UFr5FcdPcVFwcMvk8)
+  - [ ] Accounts
     - [ ] Piazza
     - [ ] Github
     - [ ] Futuresystems
     - [ ] Chameloncloud
-  - [ ] [Background Questionnaire](https://forms.gle/w6ryzEm56rQmwWT38)
+  - [ ] Background Sruvey

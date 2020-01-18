@@ -111,12 +111,18 @@ disadvantages while often working with outdated libraries. As the developer of
 future software, you certainly want to avoid this. If you use python from
 python.org we require you that you use venv.
 
-The manual may have references to older versions of python. Also it
-could be that some services do not work in newer python versions yet. It
-will be your responsibility to find that out and makes sure the services
-you use have an appropriate python version. We will not accept any
-project targeting Python 2 or smaller than Python 3.7.4. You must use
-pip version 19.3.1 or newer.
+The manual may have references to older versions of python. Also it could be
+that some services do not work in newer python versions yet. It will be your
+responsibility to find that out and makes sure the services you use have an
+appropriate python version. We will not accept any project targeting Python 2 or
+smaller than Python 3.7.4. You must use pip version 19.3.1 or newer. As it may
+be that newer versions of Python come out during the semester, we like that you
+install the newest version. At time this note was written this is 3.8.1. SO, if
+a newer version comes out, please install this.
+
+It may be that some cloud services may not work with that version. IN that case
+it is your responsibility to use or install in parallel a version of python that
+works.
 
 
 
