@@ -3,7 +3,7 @@
 The material here uses the following notation. This is especially
 helpful, if you contribute content, so we keep the content consistent.
 
-if you like to see the details on how to create them in the markdown
+If you like to see the details on how to create them in the markdown
 documents, you will have to look at the file source while clicking on
 the cloud in the heading of the Notation section (@sec:notation). This
 will bring you to the markdown tex, but you will still have to look at
