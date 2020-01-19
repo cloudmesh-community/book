@@ -59,8 +59,8 @@ The book contains the following content:
 **Data Center**
 
 : This chapter explains to you why we need cloud
-  data centers, how a cloud data center look likes and which environmental
-  the impact such data centers have.
+  data centers, how a cloud data center looks like and which environmental
+  impact such data centers have.
 
 **Architecture**
 
