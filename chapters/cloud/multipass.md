@@ -29,7 +29,12 @@ To install `multipass` using `snap` via the command line, open up a terminal/com
 sudo snap install multipass --classic
 ```
 
-## Sudo on OSX
+### OSX
+
+We recommend that you conduct the package based install, but you can
+also do the brew install if you have used brew for other activities.
+
+#### Sudo on OSX
 
 On OSX, you need to be in the sudoer's list. Please consult on the Net to
 understand what `sudo` is. We recommend that you create a separate user
@@ -49,6 +54,9 @@ After that line, add your username to the list of sudoers as follows:
 
     username ALL=(ALL) ALL
     
+### Windows 10
+
+:o2: TO BO COMPLETED BY STUDENT
     
 ## Experimenting with Multipass
 
