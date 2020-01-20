@@ -12,6 +12,5 @@
   - [ ] Accounts
     - [ ] Piazza
     - [ ] Github
-    - [ ] Futuresystems
     - [ ] Chameloncloud
   - [ ] Background Sruvey

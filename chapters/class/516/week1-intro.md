@@ -128,14 +128,15 @@ works.
 
 ## Online Meeting Recording :o2:
 
-This recording is from last year, but still useful. However, the links
-in that presentation have been changed. We will be recording a new
-lecture in the first week of the class.
 
-* [![Video](images/video.png) Online Meeting Recording for Week 1 (1:29:39)](https://www.youtube.com/watch?v=k5218WUo6Cc)
+* [![Video](images/video.png) Online Meeting Recording for Week 1 2020 (1:29:39)](https://www.youtube.com/watch?v=CPeUsvn5tgs)
 
-<!--
-The first online meeting for week 1 which will be repeated on Thursday
-8-9:30pm has been recorded and is available at 
--->
+* [![Video](images/video.png) Accepting the GitHub invitation if you can not find it in e-mail, and creation of GitHub issues ToDo lists (1:29:39)](https://www.youtube.com/watch?v=HIM7d8TFZRs)
+
+
+
+Recodrdings from past years
+
+* [![Video](images/video.png) Online Meeting Recording for Week 1 2019 (1:29:39)](https://www.youtube.com/watch?v=k5218WUo6Cc)
+
 
