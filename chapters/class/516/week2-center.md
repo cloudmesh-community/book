@@ -16,11 +16,11 @@ outdated.
 Do the following assignments:
 
 Due: two weeks, share your findings on PIazza and improve based on the
-discussions and other students contributions. We recommend you start in
+discussions and other students' contributions. We recommend you start in
 the first week. Gregor will than integrate the contributions into a
-document that we can than use in the second week for improvements.
-Please lso note that this assignment is used for you to learn markdown
-with refernces, links and bibtex entries. Note that github does not
+document that we can then use in the second week for improvements.
+Please also note that this assignment is used for you to learn markdown
+with references, links, and BibTeX entries. Note that GitHub does not
 support this version of markdown.
 
 * E.Datacenter.2.a
@@ -37,9 +37,9 @@ Optional:
 Optional :o2:
 
 We may post on Piazza examples from last semester that you can leverage
-and improve. Remember thay may already be outdated by now and could need
-updates. IT will take us some time to publish them. But you can find
-them already yourself if you look in previous students repos.
+and improve. Remember, they may already be outdated by now and could need
+updates. It will take us some time to publish them. But you can find
+them already yourself if you look in previous students' repositories.
 
 ## Lab Activities
 
@@ -47,24 +47,24 @@ them already yourself if you look in previous students repos.
 
 Due: one week (needs survey to be filled out)
 
-Make sure you have received an HID on github. Look it up at 
+Make sure you have received an HID on GitHub. Look it up at 
 
 * <https://github.com/cloudmesh-community>
 
-Make sure to accept the github invitation and try add a file. You can
+Make sure to accept the GitHub invitation and try to add a file. You can
 use either the GUI way with *Create new File* or if you are familiar
-with github use the command line tools. Next week we will introduce you
+with GitHub use the command line tools. Next week we will introduce you
 to convenient tools so you can develop your programs more easily in
-github.
+GitHub.
 
 ### README.yml
 
 Due: one week
 
 Make sure the information in your README.yaml file is accurate. Make
-sure to change the value in community and use your class number. This
-will be either 516 or 649. Please note whan we ask you for your hid
-number it is the entire hid number not just the last three digits.
+sure to change the value in the community attribute and use your class number. This
+will be either e516 or b649 or similar. Please note when we ask you for your hid
+number, it is the entire hid number, not just the last three digits.
 
 
 ```
@@ -73,8 +73,8 @@ owner:
   firstname: Gregor
   lastname: von Laszewski
   hid: hid-000
-  community: 516
-  semester: fa19
+  community: e516
+  semester: sp20
 ```
 
 ### Chameleon Cloud
@@ -90,10 +90,11 @@ Due: throughout the semester
 
 This activity will go on throughout the entire semester. You do not have
 to be a Python expert within one day, but if you have knowledge gaps,
-pleaase review and consult our Python Book. Start with the language features.
+please review and consult our Python Book. Start with the language features.
 
 * [Python for Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/python/) [@las19python]:
 
+We typically use Python 3.8; the book may be a bit outdated in that aspect.
 
 ### Setup your Computer
 
@@ -111,10 +112,10 @@ $ python -m venv ENV3
 $ source ENV3/bin/activate
 ```
  
-Those using Windows, please find out ho to do it on Windows, provide a
+Those using Windows, please find out how to do it on Windows, provide a
 document venv-windows.md in your HID directory describing it.
 
-Those using conda/anaconda, please find out ho to do it with
+Those using conda/anaconda, please find out how to do it with
 conda/anaconda, provide a document venv-conda.md in your HID directory
 describing it.
 
@@ -125,11 +126,11 @@ it may be necessary to delete your python environment in case you do
 something wrong and it would be unwise to combine all your python
 activities into one python install.
 
-As you can see this is super easy.
+As you can see, this is super easy.
 
-We recommend pycharm for an IDE if you have not yet picked one. Pycharm
+We recommend PyCharm for an IDE if you have not yet picked one. PyCharm
 automated code improvements will be used for most of our projects. It
-realy helps you! We will teach you trhoughout the semester how to use
+really helps you! We will teach you throughout the semester how to use
 it.
 
 ### Ubuntu Multipass
@@ -143,17 +144,17 @@ Locate the Section about Multipass in the book
 and read it.
 
 Install ubuntu multipass on your computer. Note that you must have at
-least 8GB of main memory on your computer. However you may need to close
-chrome or pycharm. Please monitor your consumption of memory to
+least 8GB of main memory on your computer. However, you may need to close
+chrome or PyCharm. Please monitor your consumption of memory to
 determine if you like to buy more memory for your computer and upgrade
 it. A computer with 4GB is likely not to be usable for this assignment.
 
-In case you do not have a compter on which you can execute this, please
-contuct us in Piazza. You may have to do more work than other students.
+In case you do not have a computer on which you can execute this, please
+consult with us in Piazza. You may have to do more work than other students.
 
-For example (a) you amy have tos immediatly start using chameleon cloud
-and learn OpenStack as an alternative; (b) you may need to use virtual
-box; (c) or you may have to buy yourself a cheap upto date computer on
+For example (a) you may have to immediately start using chameleon cloud
+and learn OpenStack as an alternative; (b) you may need to use a virtual
+box; (c) or you may have to buy yourself a cheap up to date computer on
 which you can execute the class. You must be able to be
 superuser/administrotor of that computer. The computer must support
 virtual machines and docker.
@@ -161,9 +162,9 @@ virtual machines and docker.
 Please also note that if you have Windows Home 10 on your system, you
 need to upgrade it to Pro or EDU. Make sure to configure it as 64 bit.
 
-It is in your responsibility to have proper equipment. 
+It is in your responsibility to have the proper equipment. 
 
-Analogy: when you play Tennis you get yourself a tennis racket and you do
+Analogy: When you play tennis, you get yourself a tennis racket, and you do
 not show up with a pingpong paddle to play it. 
 
 Do Assignments:
@@ -173,7 +174,7 @@ Do Assignments:
 
 ### Optional: Plagiarism Certificate
 
-Due: optional, but if you do not underatsnd what plagiarism is please find out.
+Due: optional, but if you do not understand what plagiarism is, please find out.
 
 
 ---
@@ -192,22 +193,22 @@ important that you not just copy content from Web pages, but make
 appropriate modifications and provide credit to where you found this
 information.
 
-As you certainly will have learned form other classes what plagiarism is
-and how not to plagiarize you will probably be fine. However, we often
-find one or two studnets in a class that do not know what it is. Therefore
+As you certainly will have learned from other classes what plagiarism is
+and how not to plagiarize, you will probably be fine. However, we often
+find one or two students in a class that does not know what it is. Therefore
 we **STRONGLY RECOMMEND** that you take the plagiarism certificate
 offered by IU. This has the advantage that you can show it in other
 classes and show you are informed. Please also read the code of conduct
 rules at IU.
  
-For this reason we included this material also in part in the Book
+For this reason, we included this material also in part in the Book
 
 * [Scientific Writing with Markdown](https://laszewski.github.io/book/writing/)
 
 Please read the chapter about Plagiarism.
 
 Please be aware that we may conduct superior plagiarism tests. Our tests
-are even better than  *Turn-it-in* while we are able to identified
+are even better than  *Turn-it-in* while we are able to identify
 *translations* from other languages, copies of text from non-public
 external university servers, and company archives that turn-it-in does
 not check. IU has a strict policy that we must follow.
@@ -215,12 +216,12 @@ Plagiarism/cheating could lead to expulsion from the university. The
 argument *I did not know what plagiarism is* does not count according to
 IU rules. You must know what it is prior to you taking a course at IU.
  
-It is not subject of this class to teach you what plagiarism is. We do
+It is not the subject of this class to teach you what plagiarism is. We do
 this just to remind you to avoid any uncertainty about it.
 
 ## Online Meeting Recording :o2:
 
-:o2: this is a recoding from last semester. A new  recording will be
+:o2: this is a recording from last semester. A new recording will be
 published here for this semester once it becomes available.
 
 The online meeting recording from Tue Sep 3, 2019 is available from this
@@ -228,5 +229,5 @@ link:
 
 * [![Video](images/video.png) Online Meeting Recording for Week 2 (48:38)](https://www.youtube.com/watch?v=kezPx0QHrt8)
 
-This meeting lasted actually half an hour later, but included duplicated
+This meeting lasted actually half an hour later but included duplicated
 questions that we removed.
