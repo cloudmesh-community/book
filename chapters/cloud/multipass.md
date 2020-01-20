@@ -136,7 +136,7 @@ For full details see the [find command docs](https://multipass.run/docs/find-com
 
 Find can also take the name of the image that you can identify just with
 the find option. Please be aware that based on the OS you may se more or
-less image options. as discussed in E.Multipass.5
+less image options. as discussed in E.Multipass.5.
 
 To switch to a different VM support you can use
 
