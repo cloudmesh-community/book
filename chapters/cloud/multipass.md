@@ -130,11 +130,19 @@ Make sure they are purged
 $ multipass list --format yaml
 ```
 
-Find other images
+`multipass find` can be used to find other available images.
 
-```bash
-$ multipass find
-```
+For full details see the [find command docs](https://multipass.run/docs/find-command)
+
+**Examples**
+
+| Find Command      | Description |
+| ----------------- | ------------------------------------- | 
+| `multipass find`  | Find other images |
+| `multipass find default` | Find the default image |
+| `multipass find lts` | Find the current LTS image |
+| `multipass find bionic` | Find the Bionic Beaver image |
+
 
 To switch to a different VM support you can use
 
