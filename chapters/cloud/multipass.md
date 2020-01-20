@@ -19,6 +19,15 @@ Follow the install instructions as documented at
 
 * <https://multipass.run/docs>
 
+### Ubuntu 18.04
+
+On Ubuntu 18.04, `multipass` is provided as a [snap](https://snapcraft.io/) application.
+`snap` is part of the core Ubuntu 18.04 system so no additional setup is requied.
+To install `multipass` using `snap` via the command line, open up a terminal/command line window and execute this command.
+
+```
+sudo snap install multipass --classic
+```
 
 ## Sudo on OSX
 
