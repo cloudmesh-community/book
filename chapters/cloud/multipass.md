@@ -57,7 +57,13 @@ After that line, add your username to the list of sudoers as follows:
 ### Windows 10
 
 :o2: TO BO COMPLETED BY STUDENT
-    
+
+To download and install Multipass on a Windows 10 Edu machine, go to 
+*<https://multipass.run/>*
+The download link will be present about halfway down the page. Click the link, and follow the instructions from the installer.
+
+In order for your installation to run properly, you must ensure that your machine has HyperV enabled. To check this, use the Windows search feature(Windows+S on your keyboard) to find "Turn Windows features on or off." Find HyperV and ensure it is enabled. If your machine did not already have it enabled, you must restart your computer so the changes will take effect.
+
 ## Experimenting with Multipass
 
 Now let us experiment with multipass. Launch an instance with 
