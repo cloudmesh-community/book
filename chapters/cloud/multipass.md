@@ -56,7 +56,14 @@ After that line, add your username to the list of sudoers as follows:
     
 ### Windows 10
 
-:o2: TO BO COMPLETED BY STUDENT
+#### 64-bit Windows 10 Education or Windows 10 Pro
+
+Multipass requires Hyper-V to be enabled on Windows machines. To enable Hyper-V, launch an elevated Powershell and execute the following:
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+```
+
+Then, visit <https://multipass.run/> and click "Download Multipass for Windows" to download the executable installer. Follow the prompts in the installer to complete installation. It is recommended to check the option to add multipass to PATH for easy access from Powershell.
     
 ## Experimenting with Multipass
 
