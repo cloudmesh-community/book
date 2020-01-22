@@ -185,8 +185,15 @@ EDU instead.
 
 E.Multipass.1:
 
-> Add installation instruction for your operating system to this
-> document.
+   OS: Windows 10 Pro:
+   
+   Download and install multipass exe for windows at 
+   <https://github.com/canonical/multipass/releases/download/v1.0.0/multipass-1.0.0+win-win64.exe>
+   After installation verify at cmd prompt
+   ```bash
+    C:\>multipass version
+   ```
+
 
 E.Multipass.2: 
 
