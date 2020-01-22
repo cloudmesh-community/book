@@ -289,7 +289,7 @@ However, if the server operates at 1.2 kW for 30 minutes and then goes
 idle and drops to 0.3 kW for another 30 minutes, then the total power
 consumed will be:
 
-$$kWh=0.3*30/60+1.2*30/60=0.75$${#eq:Energy-Calculation}
+$$kWh=0.3\*30/60+1.2\*30/60=0.75$${#eq:Energy-Calculation}
 
 Energy costs for a data center, then, are composed of two things:
 charges for energy and charges for demand. Energy is the amount of total
@@ -308,8 +308,8 @@ if a utility is challenged on the T&D front, expect these costs to be over
 $6-$10/kW. If the assumed cost-per-kWh is $0.12 and cost-per-kW is $8,
 the cost to run our servers for a month would be:
 
-$$kWh=0.75*24*30*0.12*1000=64,800$${#eq:kWh-Cost-Calculation}
-$$kW=1.2*8*1000=9,600$${#eq:kW-Cost-Calculation}
+$$kWh=0.75\*24\*30\*0.12*1000=64,800$${#eq:kWh-Cost-Calculation}
+$$kW=1.2\*8\*1000=9,600$${#eq:kW-Cost-Calculation}
 
 This would total to $74,400. It's important to note that fixing demand
 charges can have a tremendous payback: had the servers simply consumed
