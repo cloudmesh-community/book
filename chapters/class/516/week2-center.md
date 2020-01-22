@@ -9,7 +9,7 @@ A new version of the following books have been released:
 
 Please read the section in [Cloud Computing](https://laszewski.github.io/book/cloud/)[@las19cloudcomputing]:
 about **Data Centers**. We decided not to do a video as the material
-in this section frequently changes and videos became too quickly
+in this section frequently changes, and videos became too quickly
 outdated. 
 
 
@@ -157,7 +157,7 @@ and learn OpenStack as an alternative; (b) you may need to use a virtual
 box; (c) or you may have to buy yourself a cheap up to date computer on
 which you can execute the class. You must be able to be
 superuser/administrotor of that computer. The computer must support
-virtual machines and docker.
+virtual machines and Docker.
 
 Please also note that if you have Windows Home 10 on your system, you
 need to upgrade it to Pro or EDU. Make sure to configure it as 64 bit.
