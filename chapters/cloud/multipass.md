@@ -56,13 +56,32 @@ After that line, add your username to the list of sudoers as follows:
     
 ### Windows 10
 
-:o2: TO BO COMPLETED BY STUDENT
+#### Hyper-V 
 
-To download and install Multipass on a Windows 10 Edu machine, go to 
-*<https://multipass.run/>*
-The download link will be present about halfway down the page. Click the link, and follow the instructions from the installer.
+:o2: This documentation is unclear. E.g. we get different solutions that seem to contradict each other.
 
-In order for your installation to run properly, you must ensure that your machine has HyperV enabled. To check this, use the Windows search feature(Windows+S on your keyboard) to find "Turn Windows features on or off." Find HyperV and ensure it is enabled. If your machine did not already have it enabled, you must restart your computer so the changes will take effect.
+
+This instructions work for 64-bit Windows 10 Education or Windows 10 Pro using Hyper-V. 
+Hyper-V must be activated in the Bios. Please consult with your hardware manual to activate it.
+
+In order for your installation to run properly, you must ensure that your machine has 
+HyperV enabled. To check this, use the Windows search feature (Windows+S on your keyboard) to 
+find "Turn Windows features on or off." Find HyperV and ensure it is enabled. 
+If your machine did not already have it enabled, you must restart your computer so the changes will take effect.
+
+
+To enable Hyper-V for multipass, launch an elevated Powershell with administrative rights
+and execute the following:
+
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+```
+
+Then, visit <https://multipass.run/> and click "Download Multipass for Windows" to 
+download the executable installer. 
+Follow the prompts in the installer to complete installation. It is recommended to 
+check the option to add multipass to PATH for easy access from Powershell.
+    
 
 ## Experimenting with Multipass
 
