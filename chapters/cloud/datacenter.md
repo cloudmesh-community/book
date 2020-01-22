@@ -346,9 +346,7 @@ Carbon dioxide emissions coefficient (*carbon footprint*):
   > distribution losses incurred during delivery of the electricity to
   > its point of use."
 
-   Data centers in total used 91 billion kilowatt-hours (kWh) of
-   electrical energy in 2013, and they will use 139 billion kWh by
-   2020. Currently, data centers consume up to 3 percent of all global electricity production while producing 200 million metric tons of carbon dioxide. Since the world is moving towards the cloud, causing more and more data center capacity leading more to power consumption.
+   Data centers in total used 91 billion kilowatt-hours (kWh) of electrical energy in 2013, and they will use 139 billion kWh by 2020. Currently, data centers consume up to 3 percent of all global electricity production while producing 200 million metric tons of carbon dioxide. Since the world is moving towards the cloud, causing more and more data center capacity leading more to power consumption.
 
 Peaker plant:
 
@@ -435,7 +433,7 @@ a data center with cheap energy is a key factor. To estimate both
 costs in terms of price and carbon emission, Schneider provides a
 convenient Carbon estimate calculator based on energy consumption.
 
-* <https://www.schneider-electric.com/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-carbon-footprint-comparison-calculator/tool.html>
+* <https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-carbon-footprint-comparison-calculator/>
 * <http://it-resource.schneider-electric.com/digital-tools/calculator-data-center-carbon>
 
 If we calculate the total cost, we need naturally add all costs
