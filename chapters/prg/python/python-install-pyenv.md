@@ -4,18 +4,18 @@
 
 ![](images/learning.png) **Learning Objectives**
 
-* Understand why we need to worry about python 3.7 and 2.7
+* Understand why we need to worry about python 3.8 and 2.7
 * Use pyenv to support both versions
 * Understand the limitations of anaconda/conda for developers
 
 ---
 
 We are living in an interesting junction point in the development of
-Python. In January 2019, it is encouraged that Python developers swoth
-from python version 2.7 to python version 3.7.
+Python. In January 2019, it is encouraged that Python developers switch
+from python version 2.7 to python version 3.8.
 
 However there may be the requirement when you still need to develop code
-not only in python 3.7 but also in python 2.7. To facilitate this
+not only in python 3.8 but also in python 2.7. To facilitate this
 multi-python version development, the best tool we know about capable of
 doing so is *pyenv*. We will explain you in this section how to install
 both versions with the help of pyenv.
@@ -24,7 +24,7 @@ Python is easy to install and very good instructions for most platforms
 can be found on the python.org Web page. We see two different versions:
 
 * Python 2.7.16
-* Python 3.7.4
+* Python 3.8.1
 
 To manage python modules, it is useful to have
 [pip](https://pypi.python.org/pypi/pip) package installation tool on
@@ -61,11 +61,11 @@ character at the beginning of the line, start a new terminal and see if
 the terminal shell still works. Than you can follow our instructions
 here while using an install on pyenv.
 
-## Managing 2.7 and 3.7 Python Versions without Pyenv
+## Managing 2.7 and 3.8 Python Versions without Pyenv
 
 If you need to have more than one python version installed and do not
 want or can use pyenv, we recommend you download and install python
-2.7.16 and 3.7.4 from python.org
+2.7.16 and 3.8.1 from python.org
 (<https://www.python.org/downloads/>)
 
 YOu can than use either `python2` or `python3` to invoke the python
@@ -96,12 +96,12 @@ $ curl https://pyenv.run | bash
 ```
 
 Now you can install different python versions on your system such as
-python 2.7 and 3.7 with a few commands:
+python 2.7 and 3.8 with a few commands:
 
 ```bash
-$ pyenv install 3.7.4
+$ pyenv install 3.8.1
 $ pyenv install 2.7.16
-$ pyenv virtualenv 3.7.4 ENV3
+$ pyenv virtualenv 3.8.1 ENV3
 $ pyenv virtualenv 2.7.16 ENV2
 ```
 
@@ -136,7 +136,7 @@ ENV3
 ```
 
 We recommend that you do this towards the end of your file. Than look up
-our convenience methods to set an ALIAS and install Python 3.7.4 via
+our convenience methods to set an ALIAS and install Python 3.8.1 via
 pyenv
 
 Next we recommend to update pip
@@ -255,19 +255,19 @@ $ pyenv install -l
 ```
 
 However, for us we only need to worry about python 2.7.16 and python
-3.7.4. You can now install different versions of python into your
+3.8.1. You can now install different versions of python into your
 local environment with the following commands:
 
 ```bash
 $ pyenv update
 $ pyenv install 2.7.16
-$ pyenv install 3.7.4
+$ pyenv install 3.8.1
 ```
 
 You can set the global python default version with:
 
 ```bash
-$ pyenv global 3.7.4
+$ pyenv global 3.8.1
 ```
 
 Type the following to determine which version you activated:
@@ -287,11 +287,11 @@ the following commands:
 
 ```bash
 $ pyenv virtualenv 2.7.16 ENV2
-$ pyenv virtualenv 3.7.4 ENV3
+$ pyenv virtualenv 3.8.1 ENV3
 ```
 
 In the example, ENV2 would represent python 2.7.16 while ENV3
-would represent python 3.7.4. Often it is easier to type the alias
+would represent python 3.8.1. Often it is easier to type the alias
 rather than the explicit version.
 
 #### Switching Environments
@@ -345,8 +345,8 @@ onto the ENV3 environment. Than you need to execute the following steps:
 ```bash
 $ pyenv deactivate
 $ pyenv uninstall ENV3
-$ pyenv install 3.7.4
-$ pyenv virtualenv 3.7.4 ENV3
+$ pyenv install 3.8.1
+$ pyenv virtualenv 3.8.1 ENV3
 $ ENV3
 $ pip install pip -U
 ```
@@ -467,8 +467,8 @@ pyenv versions
 system
 2.7.16
 2.7.16/envs/ENV2
-3.7.4
-3.7.4/envs/ENV3
+3.8.1
+3.8.1/envs/ENV3
 ENV2
 ENV3
 * anaconda3-4.3.1 (set by PYENV_VERSION environment variable)
@@ -495,7 +495,7 @@ with other versions, please let us know and we update this tutorial.
 
 E.Python.Install.1:
 
-> Install Python 3.7.4
+> Install Python 3.8.1
 
 E.Python.Install.1:
 
