@@ -33,46 +33,37 @@ can certainly do Python on a $35-$55 Raspberry PI, but you probably will not
 be able to run PyCharm. There are many alternative editors with less
 Memory footprint available.
 
-## Prerequisites for Ubuntu
+## Python 3.8
 
-:o2: Assignment: which version of Python is installed in which version of ubuntu
-by default? Please provide the info for, 18.04, 19.10. Provide instructions on
-how to install the newest python version 3.8 released on python.org from the
-command line.
+Here we discuss how to install Python 3.8 or newer on your operating
+system. For our class we do require a new version of python. PLease be
+aware that many operating systems come with an outdated version that
+will not be sufficient for our work.
 
-Python 3.7 is installed in ubuntu 19.10. Therefore, it already fulfills
-the prerequisites. However, we recommend that you update to the newest
-version of Python and pip. However, we recommend that you update the
-newest version of Python. Please visit:
-<https://www.python.org/downloads>
+### Python 3.8 on macOS
 
-## Prerequisites macOS
-
-### Installation from the Apple App Store
-
-You want a number of useful tools on your macOS. They are not installed
-by default but are available via Xcode. First, you need to install XCode
-from
+You want a number of useful tools on your macOS. This includes git, make
+and a c compiler. All this can be installed with Xcode whcih is
+available from
 
 * <https://apps.apple.com/us/app/xcode/id497799835>
 
-Next, you need to install macOS XCode command-line tools:
+Once you have installed it, you need to install macOS XCode command-line
+tools:
 
 ```bash
 $ xcode-select --install
 ```
 
-### Installation from python.org
-
-The easiest installation of Python for Cloudmesh is to use the installation
+The easiest installation of Python is to use the installation
 from <https://www.python.org/downloads>. Please, visit the page and
 follow the instructions. After this install, you have
 python3 available from the command-line.
 
-### Installation from Homebrew
+### Python 3.8 on macOS via Homebrew
 
-Homebrew may not provide you with the newest version, so we recommend using the
-install from python.org if you can.
+Homebrew may not provide you with the newest version, so we recommend
+using the install from python.org if you can.
 
 An alternative installation is provided from Homebrew. To use this
 install method, you need to install Homebrew first. Start the process by
@@ -90,12 +81,28 @@ $ brew install python
 ```
 
 
-## Prerequisites Python 3.8 on Ubuntu 18.04
+## Python 3.8 on Ubuntu 19.10
 
-We recommend you update your Ubuntu version to 19.10 and follow the
-instructions for that version instead, as it is significantly easier. If
-you, however, are not able to do so, the following instructions may be
-helpful.
+IN ubuntu 19.10 you have to compile Python from the sources as no official release is yet available.
+
+Please download it from:
+ 
+* <https://www.python.org/downloads>
+
+place the code in a directory and change to that directory.
+
+Than say 
+
+```
+tar -xvf Python-3.8.1.tgz
+cd Python-3.8.0/
+./configure
+make
+sudo make altinstall
+python3.8 -version
+```
+
+## Python 3.8 on Ubuntu 18.04
 
 We first need to make sure that the correct version of the Python3 is
 installed. The default version of Python on Ubuntu 18.04 is 3.6.
@@ -143,6 +150,7 @@ You can install the pip for the virtual environment with the commands:
 $ curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 $ python get-pip.py
 $ rm get-pip.py
+$ pip install -U pip
 ```
 
 ## Prerequisite Windows 10
@@ -166,15 +174,17 @@ python --version
 
 However, if you have installed conda for some reason, you need to read up
 on how to install 3.8 Python in conda or identify how to run conda and
-python.org at the same time. We often see others giving the wrong
+python.org at the same time. We often see others are giving the wrong
 installation instructions.
+
+
+### Python in the Linux Subsystem
 
 An alternative is to use Python from within the Linux Subsystem. But
 that has some limitations, and you will need to explore how to access the
 file system in the subsystem to have a smooth integration between your
 Windows host so you can, for example, use PyCharm. 
 
-### Linux Subsystem Install
 
 To activate the Linux Subsystem, please follow the instructions at
 
@@ -187,7 +197,7 @@ A suitable distribution would be
 However, as it uses an older version of Python, you will have to update
 it. We also find on the MongoDB web page that MongoDB is not supported in Linux Subsystem.
 
-## Prerequisite venv
+## Using venv
 
 This step is needed if you have not yet already installed a
 `venv` for Python to make sure you are not interfering with your system
@@ -209,8 +219,12 @@ $ python3 -m venv  ~/ENV3
 $ source ~/ENV3/bin/activate
 ```
 
-You can add at the end of your .bashrc (ubuntu) or .bash\_profile
-(macOS) file the line
+You can add at the end of your `.bashrc` (ubuntu) or `.bash_profile` or
+.zprofile` (macOS) file the line
+
+
+If you like to activate it when you start a new terminal, please add
+this line to your `.bashrc` or `.bash_profile` or .zprofile` file.
 
 ```bash
 $ source ~/ENV3/bin/activate
@@ -231,12 +245,14 @@ To make sure you have an up to date version of pip issue the command
 $ pip install pip -U
 ```
 
-## Install Python 3.7 via Anaconda
+## Install Python 3.8 via Anaconda 
 
-:o2: We are not recommending ether to use conda or anaconda. If you do so, it is
-in your responsibility to update the information in this section in regards to
-it. We will check your python installation, and if you use conda and anaconda you
-need to work on completing this section.
+We are not recommending ether to use conda or anaconda. If you do
+so, it is in your responsibility to update the information in this
+section in regards to it. 
+
+:o2: We will check your python installation, and if
+you use conda and anaconda you need to work on completing this section.
 
 ### Download `conda` installer
 
@@ -251,7 +267,7 @@ Follow instructions to install `conda` for your operating systems:
 * macOS. <https://conda.io/projects/conda/en/latest/user-guide/install/macos.html>
 * Linux. <https://conda.io/projects/conda/en/latest/user-guide/install/linux.html>
 
-### Install Python via `conda`
+### Install Python via `conda` 
 
 To install Python 3.8.1 in a virtual environment with conda please use 
 
@@ -275,3 +291,21 @@ If you like to activate it when you start a new terminal, please add
 this line to your `.bashrc` or `.bash_profile`
 
 If you use zsh please add it to `.zprofile` instead.
+
+## Version test
+
+Regardless which version you install, you must do a version test to make
+sure you have the correct python and pip versions:
+
+```bash
+$ python --version
+$ pip --version
+```
+
+If you installed everything correctly you should see 
+
+```
+Python 3.8.1
+pip 20.0.1
+```
+
