@@ -589,22 +589,23 @@ referred to as *dict*.
 A dictionary represents a key value store:
 
 ``` python
-person = {
-  'Name': 'Albert',
-  'Age': 100,
-  'Class': 'Scientist'
+computer = {
+  'name': 'mycomputer',
+  'memory': 16,
+  'kind': 'Laptop'
   }
-print("person['Name']: ", person['Name'])
-# person['Name']:  Albert
-print("person['Age']: ", person['Age'])
-# person['Age']:  100
+print("computer['name']: ", computer['name'])
+# computer['name']:  mycomputer
+print("computer['memory']: ", computer['memory'])
+# computer['Age']:  16
 ```
 
 A convenient for to print by named attributes is
 
 ```
-print("{Name} {Age}'.format(**data))
+print("{name} {memory}'.format(**computer))
 ```
+
 This form of printing with the format statement and a reference to data
 increases readability of the print statements.
 
@@ -612,33 +613,33 @@ increases readability of the print statements.
 You can delete elements with the following commands:
 
 ``` python
-del person['Name'] # remove entry with key 'Name'
-# person
+del computer['name'] # remove entry with key 'name'
+# computer
 # {'Age': 100, 'Class': 'Scientist'}
-person.clear()     # remove all entries in dict
-# person
+computer.clear()     # remove all entries in dict
+# computer
 # {}
-del person         # delete entire dictionary
-# person
+del computer         # delete entire dictionary
+# computer
 # Traceback (most recent call last):
 #  File "<stdin>", line 1, in <module>
-#  NameError: name 'person' is not defined
+#  NameError: name 'computer' is not defined
 ```
 
 You can iterate over a dict:
 
 ``` python
-person = {
-  'Name': 'Albert',
-  'Age': 100,
-  'Class': 'Scientist'
+computer = {
+  'name': 'mycomputer',
+  'memory': 16,
+  'kind': 'Laptop'
   }
-for item in person:
-  print(item, person[item])
+for item in computer:
+  print(item, computer[item])
 
-# Age 100
-# Name Albert
-# Class Scientist
+# name mycomputer
+# memory 16
+# kind laptop
 ```
 
 ### Dictionary Keys and Values
@@ -647,14 +648,13 @@ You can retrieve both the keys and values of a dictionary using the
 keys() and values() methods of the dictionary, respectively:
 
 ``` python
-person.keys() # ['Age', 'Name', 'Class']
-person.values() # [100, 'Albert', 'Scientist']
+computer.keys() # ['name', 'memory', 'kind']
+computer.values() # ['mycomputer', 'memory', 'kind']
 ```
 
-Both methods return lists. Notice, however, that the order in which the
-elements appear in the returned lists (Age, Name, Class) is different
-from the order in which we listed the elements when we declared the
-dictionary initially (Name, Age, Class). It is important to keep this in
+Both methods return lists. Please remember howver that the keys and
+order in which the elements are returned are not necessarily the same.
+It is important to keep this in
 mind:
 
 > ![](images/warning.png) *You cannot
@@ -664,10 +664,7 @@ mind:
 
 However, you can assume that if you call `keys()` and `values()` in
 sequence, the order of elements will at least correspond in both
-methods. In the example Age corresponds to 100, Name to `Albert`,
-and Class to Scientist, and you will observe the same correspondence in
-general as long as *`keys()` and `values()` are called one right after the
-other*.
+methods.
 
 ### Counting with Dictionaries
 
@@ -694,10 +691,10 @@ heads and tails we have in the list:
 
 ``` python
 counts = {'heads': 0, 'tails': 0}
-for outcome in coin_flips:
+for outcome in die_rolls:
    assert outcome in counts
    counts[outcome] += 1
-print('Probability of heads: %.2f' % (counts['heads'] / len(coin_flips)))
+print('Probability of heads: %.2f' % (counts['heads'] / len(die_rolls)))
 # Probability of heads: 0.70
 
 print('Probability of tails: %.2f' % (counts['tails'] / sum(counts.values())))
@@ -809,7 +806,7 @@ OOP](https://docs.python.org/2.7/tutorial/classes.html).
 Now write this simple program and save it:
 
 ``` python
-print("Hello world!")
+print("Hello Cloud!")
 ```
 
 As a check, make sure the file contains the expected contents on the
@@ -817,7 +814,7 @@ command line:
 
 ```bash
 $ cat hello.py
-print("Hello world!")
+print("Hello Cloud!")
 ```
 
 To execute your program pass the file as a parameter to the python
@@ -825,7 +822,7 @@ command:
 
 ```bash
 $ python hello.py
-Hello world!
+Hello Cloud!
 ```
 
 Files in which Python code is stored are called **module**s. You can
