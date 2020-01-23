@@ -1,4 +1,6 @@
-# Pyenv in a docker container
+# Pyenv in a docker container :o2:
+
+:o2: this section has become outdated in January 2020. Please help us working an an updated section
 
 We provide a simple docker container on docker hub that is based on
 ubuntu 18.04 that has pyenv, python 2.7.16 and python 3.7.1
