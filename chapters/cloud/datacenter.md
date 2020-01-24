@@ -1193,7 +1193,7 @@ We find a worldwide trend in society to shift towards renewables. This
 includes government efforts to support renewable in benefit of the
 society:
 
-* Germany, China, Island, and many more, 
+* Germany, China, Iceland, and many more, 
 
 but it also includes commitments by Corporations such as
  
@@ -1219,7 +1219,7 @@ operate and build than combustion-based energy-producing power plants.
 
 ## Datacenter Risks and Issues 
 
-Data Centers may be encounter issues such as outages of a variety of
+Data Centers may encounter issues such as outages of a variety of
 reasons. In this section, you will identify risks and issues that you
 encounter as part of the information you find on the Web or literature.
 
