@@ -25,7 +25,8 @@ skip the next section.
 ### Installation from source
 
 WARNING: DO NOT EXECUTE THIS IF YOU ARE A DEVELOPER OR YOUR ENVIRONMENT
-WILL NOT PROPERLY WORK. 
+WILL NOT PROPERLY WORK. YOU LIKELY HAVE ALREAD INSTALLED CMD5 IF YOU
+USED THE CLOUDMESH INSTALLER.
  
 However, if you are a user of cloudmesh you can install it with 
 

@@ -33,6 +33,10 @@ dest: clean fonts version
 	  dest/vonLaszewski-$(NAME).epub \
 	  dest/vonLaszewski-$(NAME).pdf
 
+publish:
+	cd $(FINAL); git commit -m "update python book" \
+	  docs/vonLaszewski-$(NAME).epub \
+	  docs/vonLaszewski-$(NAME).pdf; git push
 bib:
 	mkdir -p dest
 	cp $(HOME)/bib/*.bib dest

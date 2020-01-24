@@ -84,9 +84,10 @@ We will never ask you for your passwords.
 
 ### Survey
 
-In this activity, you will be filling out a form with information about
-you so we can assess how to integrate you in this class best. It is not
-important that you know any of the technologies we ask you about.
+In this activity, you will be filling out a form with information
+about you so we can assess how to integrate you in this class best. It
+is not important that you know any of the technologies we ask you
+about.
 
 * [Class Survey](https://forms.gle/4Zpi2vzpZ5kFSoD1A)
 
@@ -117,10 +118,10 @@ responsibility to find that out and makes sure the services you use have an
 appropriate python version. We will not accept any project targeting Python 2 or
 smaller than Python 3.7.4. You must use pip version 19.3.1 or newer. As it may
 be that newer versions of Python come out during the semester, we like that you
-install the newest version. At time this note was written this is 3.8.1. SO, if
+install the newest version. At time this note was written this is 3.8.1. If
 a newer version comes out, please install this.
 
-It may be that some cloud services may not work with that version. IN that case
+It may be that some cloud services may not work with that version. In that case
 it is your responsibility to use or install in parallel a version of python that
 works.
 
@@ -129,7 +130,7 @@ works.
 ## Online Meeting Recording :o2:
 
 
-* [![Video](images/video.png) Online Meeting Recording for Week 1 2020 (1:29:39)](https://www.youtube.com/watch?v=CPeUsvn5tgs)
+* [![Video](images/video.png) Online Meeting Recording for Week 1 2020 (1:29:39)](https://www.youtube.com/watch?v=m-Zgg2iTlkQ)
 
 * [![Video](images/video.png) Accepting the GitHub invitation if you can not find it in e-mail, and creation of GitHub issues ToDo lists (1:29:39)](https://www.youtube.com/watch?v=HIM7d8TFZRs)
 

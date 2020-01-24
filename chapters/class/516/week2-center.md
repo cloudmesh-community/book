@@ -229,5 +229,5 @@ link:
 
 * [![Video](images/video.png) Online Meeting Recording for Week 2 (48:38)](https://www.youtube.com/watch?v=kezPx0QHrt8)
 
-This meeting lasted actually half an hour later but included duplicated
+This meeting lasted actually half an hour longer but included duplicated
 questions that we removed.

@@ -1,16 +1,10 @@
 # Week 3: Cloud Computing Architectures  :o2:
 
-Start of Project Selection
-
-
-
-## Online Meeting Recording
-
-This meeting took place Sep 10, 2019, 8-9pm EST
-
-* [![Video](images/video.png) Online Meeting Recording for Week 3 (1:54:01)](https://www.youtube.com/watch?v=DD5rBVk3kZw)
-
-
+Goals:
+   
+* Start of Chapter Selection  
+* Start of Project Selection
+* Review Python
 
 ## Lecture Material
 
@@ -23,39 +17,41 @@ A new version of the following books have been released:
 Reading Assignments:
 
 1. Read in the book [Cloud Computing](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing] the chapter about Cloud Architectures.
-2. Read in the book [Introduction to Python for Cloud Computing](https://laszewski.github.io/book/python/) [@las19python] the chapter about Cloudmesh
-
+2. Read in the book [Introduction to Python for Cloud Computing](https://laszewski.github.io/book/python/) [@las19python] the chabpter about the Python langugae
+3. Focus your on refreshhing your python knowledge about lists, set, dict, and classes.
 
 ## Lab Activities
 
-We have the following goals
+You should in the first week of the class set up python 3.8 on your
+computer. If you have not yet done so, please do. We recommend that  you
+use python from python.org. If you use conda or anaconda it is up to you
+to figure out how to do this. You can post gudes to that in piazza and
+we will include them possibly in future lecture notes.
 
-* install python 3.7.4 on your computer. YOU can either use python.org,
-  `conda`, or `pyenv`. Which you chose is your choice. For this class the
-  preferred way of installing python is from python.org.
+Whatever you do you **must** use a python virtual venv.
 
-### Ungraded Activities
+### Review: venv in python 3 (Graded)
 
-For the ungraded activities, no submission is needed.
+To create a venv please use the command
 
-#### Review: venv in python 3
-
-This lab is only to be chose by those using python 3 from python.org
-which is our preferred environment.
-
-```
-python -m venv ~/ENV3
+```bash
+$ python -m venv ~/ENV3
 ```
 
 Please understand the following concepts (no submission needed):
 
 * How do you activate the virtual env in your OS?
-* How do you modify your `.bashrc` file?
-* Why do you need to use `venv` for this class?
+* How do you modify your `.bashrc` file so that the python venv is loaded automatically upon start of a new terminal?
+* In case you use zsh either switch to bash or describe how do you modify zsh so that the python venv is loaded.
+* Why do you need to use `venv` for this class? Provide a one paragraph answer in your notebook.md file.
 
-#### Review: Conda
+### Review: Anaconda (Graded)
 
-This lab only has to be done by those using anaconda/conda.
+This lab only has to be done by those using anaconda/conda. Thos using
+python from python.org do not have to do this assingment.
+
+Please
+provide your answers in the notebook.md file.
 
 * What problems may you encounter when using anaconda as python developer?
 
@@ -72,6 +68,8 @@ This lab only has to be done by those using anaconda/conda.
 * What is the difference between conda, miniconda, anaconda?
 
 * Why do you want to use a virtual environment even for conda/anaconda?
+
+### Python Language review
 
 #### Dicts
 
@@ -117,7 +115,7 @@ In one of the examples `locals()` is used.
 
 #### Classes 
 
-This can be completed at a later time
+This can be completed at a later time throughout the class
 
 * What is `self` in classes?
 * Why does `self` needs to be used in regular method definitions in classes?
@@ -127,7 +125,7 @@ This can be completed at a later time
 
 #### Python Modules
 
-This can be completed at a later time
+This can be completed at a later time throughout the class
 
 * What is a setup.py file
 * What is the difference between `pip install .` and `pip install -e .`
@@ -149,9 +147,61 @@ In the book [Introduction to Python for Cloud Computing](https://laszewski.githu
 * E.Cloudmesh.Shell.2
 * E.Cloudmesh.Shell.3
 
+## Chapter Selection
+
+As part of this class you will be conducting a technology review while
+writing a chapter that looks at a topic related to cloud computing.
+The chapter is written in markdown and placed in your HID directory at
+
+```
+chapter/report.md
+```
+
+please note that all charaters of the filename are lower case.
+
+This years topic focusses mostly around *Cloud AI Services* but we also
+accept other topics that you may find interesting and are not covered in
+substantial length in any of our books.
+
+We have posted here some initial ideas for chapter contributions.
+Remember that you **nust** not write an introductory paragraph to your
+contributions as they are most likely already covered in the books.
+Instead, you **must only** focus on the topic at hand. 
+
+So please visit the link and select a topic or suggest your own
+
+<https://docs.google.com/spreadsheets/d/1QxlFCSQI66-zR9H6uI9-N5F99fi23o3enrU51QJdQ7c/edit?usp=sharing >
+
+Please only fill out the white lines and leave the yellow once
+untouched. If there are more than two people in a category, please
+coordinate with each other how to write it while only providing a single
+document. Depending on what the topic is about, you may have to expand
+it. Please note that this is a multipage activity and not a one-sentence
+activity. References must be included as proper references at the end,
+we will teach you in time on how to do that, Examples are given in the
+markdown book.
+
+All chapters need to include
+
+* a writeup that intriduces the technology without plagiarizm and 
+  advertisement calims by the developers of that technology.
+* an example on how to use it that can be replicated and you have 
+  tried yourself if possible.
+* refernces in bibtex format
+
+Due dates:
+
+* Feb 3rd: Last date to proposa a chapter 
+* Feb 10th: Last date to submit the first draft 
+* Feb 17: Last date to return a peer review 
+  (you get a grade from the author of the chapter, 
+   the reviewer will asl check your examples)
+* Feb 24: Last date the hand in the final version of the chapter 
 
 
-## Project selection
+## Project Selection
+
+Deadline: Feb 10 last day to hand in your project proposal
 
 You will be selecting a cloud related project over the next 2 weeks that
 you will be developing until the end of the semester. The project must
@@ -209,12 +259,12 @@ introduce you gradually in all aspects as part of the class to deliver a
 successful project.
 
 Those wanting to chose the Raspberry PI Cluster or the Robot Boat, please
-contact instructors via piazza. We want to set up a meeting in MESH to
+contact the instructors via piazza. We want to set up a meeting to
 better discuss this project. 
 
 When it comes to the scope of the project, remember a project takes up
 to 12 weeks to be completed. It is not allowed to just search on
-`github` or another book and "replicate" a project done by someone
+`github` or another book and *replicate* a project done by someone
 else. Your project must have a novel component. Please note this class
 is called Engineering Cloud Computing we must see clearly an aspect
 that you engineer the cloud, e.g. the setup of a reproducible cloud
@@ -231,7 +281,7 @@ starting with cc-* and so on ...
 ## Working Ahead
 
 Obviously we will be introducing you to some more advanced concepts that
-are not yet finalized in the books. You can certainly use documents form
+are not yet finalized in the books. You can certainly use documents from
 the internet to learn about such concepts.
 
 Concepts we will need are listed in the Syllabus.  
@@ -240,14 +290,23 @@ On the python side, we will introduce you to
 
 * pytest
 * github API as an example for a REST service
-* Libcloud
 * Azure python API
 * AWS boto
+* OpenstackSDK API
+* Google cloud API
 * ...
 
-On the cloudmesh side (still developed by current set of students we will introiduce you to 
+On the cloudmesh side we will introduce you soon to
 
 * cloudmesh.yaml as preliminary documented in the cloudmesh manual
-* cloudmesh cloud bundle (untested)
-* cloudmesh storage bundle (untested)
+* cloudmesh cloud bundle
+* cloudmesh storage bundle
+
+## Online Meeting Recording
+
+:o2: This is a recording from last year
+
+This meeting took place Sep 10, 2019, 8-9pm EST
+
+* [![Video](images/video.png) Online Meeting Recording for Week 3 (1:54:01)](https://www.youtube.com/watch?v=DD5rBVk3kZw)
 

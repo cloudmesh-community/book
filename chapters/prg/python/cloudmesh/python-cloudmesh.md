@@ -1,4 +1,4 @@
-# Draft: Enhanced Cloudmesh
+# Draft: Enhanced Cloudmesh :o2:
 
 In this chapter we will be using some advanced Python features to
 enhance Cloudmesh. Cloudmesh is supposed to easily manage multiple

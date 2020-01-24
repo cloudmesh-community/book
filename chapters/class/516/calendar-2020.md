@@ -29,10 +29,10 @@ for the official calendar.
 | Week | Date | Graded Assignmants |
 |------|------|---------------|
 | 1    | 13 Jan - 19 Jan | Piazza, Bio, Survey |
-| 2    | 20 Jan - 26 Jan | Technology Chapter Selection |
-| 3    | 27 Jan- 2 Feb | Technology Chapter Update, Project Idea Discussions |
-| 4    | 3 Feb - 9 Feb | Technology Chapter Update, Project Idea Discussions  |
-| 5    | 10 Feb - 16 Feb | Technology Final Submission | 
+| 2    | 20 Jan - 26 Jan | Python3.8, Multipass, HID, github  |
+| 3    | 27 Jan - 2 Feb | Technology Chapter and Project Update |
+| 4    | 3 Feb - 9 Feb | Technology Chapter and Project Update |
+| 5    | 10 Feb - 16 Feb | Technology Chapter and Project Update |
 | 6    | 17 Feb - 23 Feb  | Project Proposal |
 | 7    | 24 Feb - 1 Mar | Project Update |
 | 8    | 2 Mar  - 8 Mar | Project Update |
@@ -52,3 +52,20 @@ can identify what has to be done.
 
 Please consult the weekly lecture notes for the complete list of
 activities.
+
+Deadlines:
+
+* Feb 3: Last day to propose the chapter
+* Feb 10: Last day to submit the first version of the chapter
+* Feb 10: Last day to submit your project proposal
+* Feb 17: Last day to submit your peer review of another students chapter
+* Feb 24: Last day to improve your own chapter
+
+Planned Deaddlines:
+
+* Apr 26: First Project review of the almost final project
+* May 3 - 8: opportunity to improve. 
+  Remember that we have a lot of projects, so not everyone can 
+  submit on the 8th.
+* Mar 8: Last day to submit your midterm project report
+
