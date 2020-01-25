@@ -1020,7 +1020,7 @@ The current trend, however, is to build mega or hyperscale data centers.
 One of the driving factors in cloud computing and the rise of large
 scale data centers is the ability to use server virtualization to
 place more than one server on the same hardware. Formerly the services
-were hosted on their own servers. Today they are managed on the sae
+were hosted on their own servers. Today they are managed on the same
 hardware although they look to the customer like separate servers.
 
 As a result we find the following advantages:
@@ -1155,7 +1155,7 @@ vessel impacts the actual ecosystem itself.
 
 Some thought on this include:
 
-1. How doe the vessel increase the surrounding water temperature and
+1. How does the vessel increase the surrounding water temperature and
    effects the ecosystem
 2. If places in saltwater, corrosion can occur that may not only
    effect the vessel, but also the ecosystem
