@@ -221,13 +221,15 @@ this just to remind you to avoid any uncertainty about it.
 
 ## Online Meeting Recording :o2:
 
-:o2: this is a recording from last semester. A new recording will be
-published here for this semester once it becomes available.
+New Recordings:
+
+* Meeting a: markdown, github, pycharm and markdown (25:27) <https://youtu.be/uGTlDwff41c>
+* Meeting b:   multipass, pycharm,  questions (1:31:48) <https://youtu.be/30CdNYN7gHs>
+
+Older recording:
 
 The online meeting recording from Tue Sep 3, 2019 is available from this
 link:
 
 * [![Video](images/video.png) Online Meeting Recording for Week 2 (48:38)](https://www.youtube.com/watch?v=kezPx0QHrt8)
 
-This meeting lasted actually half an hour longer but included duplicated
-questions that we removed.
