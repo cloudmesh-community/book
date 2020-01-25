@@ -127,7 +127,7 @@ works.
 
 
 
-## Online Meeting Recording :o2:
+## Online Meeting Recording
 
 
 * [![Video](images/video.png) Online Meeting Recording for Week 1 2020 (1:29:39)](https://www.youtube.com/watch?v=m-Zgg2iTlkQ)

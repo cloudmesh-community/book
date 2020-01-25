@@ -219,14 +219,12 @@ IU rules. You must know what it is prior to you taking a course at IU.
 It is not the subject of this class to teach you what plagiarism is. We do
 this just to remind you to avoid any uncertainty about it.
 
-## Online Meeting Recording :o2:
-
-New Recordings:
+## Online Meeting Recording
 
 * Meeting a: markdown, github, pycharm and markdown (25:27) <https://youtu.be/uGTlDwff41c>
 * Meeting b:   multipass, pycharm,  questions (1:31:48) <https://youtu.be/30CdNYN7gHs>
 
-Older recording:
+Recodrdings from past years
 
 The online meeting recording from Tue Sep 3, 2019 is available from this
 link:

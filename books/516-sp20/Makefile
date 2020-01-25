@@ -10,6 +10,11 @@ all: authors syllabus epub pdf
 	-killall Books
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME).epub
 
+publish:
+	$(shell cd $(FINAL); git commit -m "update 516" docs/vonLaszewski-$(NAME).epub)
+	$(shell cd $(FINAL); git commit -m "update 516" docs/vonLaszewski-$(NAME).pdf)
+	$(shell cd $(FINAL); git push)
+
 update:
 	cd ../../..; cloudmesh-installer git pull 516
 	cd ../../..; cloudmesh-installer git pull storage

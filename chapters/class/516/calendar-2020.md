@@ -9,9 +9,9 @@ catch up or work ahead.
 
 Spring 2020
 
-See
-<https://registrar.indiana.edu/official-calendar/official-calendar-spring.shtml>
-for the official calendar.
+The official calendar is posted at 
+
+* <https://registrar.indiana.edu/official-calendar/official-calendar-spring.shtml>
 
 * Begins	Mon, Jan 13
 * MLK Jr. Day	Mon, Jan 20
@@ -53,16 +53,15 @@ can identify what has to be done.
 Please consult the weekly lecture notes for the complete list of
 activities.
 
-Deadlines:
+## Deadlines
 
+* Feb 3: Data Center Assignment due
 * Feb 3: Last day to propose the chapter
+* Feb 10: `cloudmesh sys generate command` assignment due
 * Feb 10: Last day to submit the first version of the chapter
 * Feb 10: Last day to submit your project proposal
 * Feb 17: Last day to submit your peer review of another students chapter
 * Feb 24: Last day to improve your own chapter
-
-Planned Deaddlines:
-
 * Apr 26: First Project review of the almost final project
 * May 3 - 8: opportunity to improve. 
   Remember that we have a lot of projects, so not everyone can 

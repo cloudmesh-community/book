@@ -1,10 +1,12 @@
-# Week 3: Cloud Computing Architectures  :o2:
+# Week 3: Cloud Computing Architectures
 
 Goals:
    
 * Start of Chapter Selection  
 * Start of Project Selection
 * Review Python
+* Use cloudmesh-installer
+* Generate a command with cms sys
 
 ## Lecture Material
 
@@ -17,18 +19,30 @@ A new version of the following books have been released:
 Reading Assignments:
 
 1. Read in the book [Cloud Computing](https://laszewski.github.io/book/cloud/) [@las19cloudcomputing] the chapter about Cloud Architectures.
-2. Read in the book [Introduction to Python for Cloud Computing](https://laszewski.github.io/book/python/) [@las19python] the chabpter about the Python langugae
-3. Focus your on refreshhing your python knowledge about lists, set, dict, and classes.
+2. Read in the book [Introduction to Python for Cloud Computing](https://laszewski.github.io/book/python/) [@las19python] the chapter about the Python langugae
+3. Focus on refreshing your python knowledge about lists, set, dict, and classes.
+4. Deadlines in the [e516 Lecture Notes Engineering Cloud Computing](https://laszewski.github.io/book/e516/) [@las19e516] were updated.
 
 ## Lab Activities
 
-You should in the first week of the class set up python 3.8 on your
-computer. If you have not yet done so, please do. We recommend that  you
-use python from python.org. If you use conda or anaconda it is up to you
-to figure out how to do this. You can post gudes to that in piazza and
-we will include them possibly in future lecture notes.
+You should have set up in the first week of the class set up python 3.8
+on your computer. If you have not yet done so, please do. We recommend
+that you use python from python.org. 
 
-Whatever you do you **must** use a python virtual venv.
+We found out over the last two weeks that some students rely on anaconda
+for other classes but do not know how to use in anaconda a virtual env. Please find out.
+ 
+If you can not, we found it may be easier to create for this class a
+different user as your other teachers may have given you wrong
+instructions on how to install python or anaconda. To avoid this, you
+may just start fresh in a new user and do this class in that user. Make
+sure the user has administrative privileges.
+
+E.g., If you use conda or anaconda it is up to you to figure out how to
+do this. You can post guides to that in piazza, and we will try to
+include them in future lecture notes.
+
+Whatever you do, you **must** use a python virtual environment. 
 
 ### Review: venv in python 3 (Graded)
 
@@ -41,17 +55,18 @@ $ python -m venv ~/ENV3
 Please understand the following concepts (no submission needed):
 
 * How do you activate the virtual env in your OS?
-* How do you modify your `.bashrc` file so that the python venv is loaded automatically upon start of a new terminal?
-* In case you use zsh either switch to bash or describe how do you modify zsh so that the python venv is loaded.
-* Why do you need to use `venv` for this class? Provide a one paragraph answer in your notebook.md file.
+* How do you modify your `.bashrc` file so that the python venv is loaded automatically upon the start of a new terminal?
+* In case you use zsh, either switch to bash or describe how do you modify zsh so that the python venv is loaded.
+* Why do you need to use `venv` for this class? Provide a one-paragraph answer in your notebook.md file.
 
 ### Review: Anaconda (Graded)
 
-This lab only has to be done by those using anaconda/conda. Thos using
-python from python.org do not have to do this assingment.
+Due: before the semester break
 
-Please
-provide your answers in the notebook.md file.
+This lab only has to be done by those using anaconda/conda. Those using
+python from python.org do not have to do this assignment.
+
+Please provide your answers in the notebook.md file.
 
 * What problems may you encounter when using anaconda as python developer?
 
@@ -63,11 +78,16 @@ provide your answers in the notebook.md file.
 * How do you find out how much space is used by your program and its
   libraries?
 
-* How do you switch between anaconda and regular python 3.7.4
+* How do you switch between anaconda and regular python 3.8.1
 
 * What is the difference between conda, miniconda, anaconda?
 
+* Does anaconda provide a virtual environment?
+
 * Why do you want to use a virtual environment even for conda/anaconda?
+
+* Is anaconda modifying your bashrc, zshprofile, or registry?
+
 
 ### Python Language review
 
@@ -97,7 +117,7 @@ print (msg)
 
 ```python
 def f(test):
-    msg = f"This is a test {test}".format(**locals())
+    msg = "This is a test {test}".format(**locals())
     print (msg)
 ```
 
@@ -109,11 +129,11 @@ VERBOSE(d)
 
 In one of the examples `locals()` is used.
 
-* What does locals do?
+* What does locals() do?
 * What does ** in the format statement do?
 
 
-#### Classes 
+#### Python Classes 
 
 This can be completed at a later time throughout the class
 
@@ -122,17 +142,23 @@ This can be completed at a later time throughout the class
 * What can I do with __init__ and why is it used?
 * What is `cls` and `@classmethods`?
 * Why would one use `@statusmethod`?
+* Write a Provider.py class to interface with multipass. If you can for 
+  some reason not use multipass, emulate its behavior 
+  wile using print statements.
 
 #### Python Modules
 
 This can be completed at a later time throughout the class
 
-* What is a setup.py file
+* What is a setup.py file (use google)
 * What is the difference between `pip install .` and `pip install -e .`
 * How do I uninstall a python module?
 * My python virtual environment is broken, What do you do now?
-
-We will be discussing these question in the Labs (online/and residential).
+* Use the command `cms sys generate comamnd` and create a new command. 
+  Inspect the code that is generated. Take a look at setup.py
+  We create this all for you automatically ;-)
+  
+We will be discussing these questions in the Labs (online/and residential).
 
 ### Graded Activities
 
@@ -157,14 +183,14 @@ The chapter is written in markdown and placed in your HID directory at
 chapter/report.md
 ```
 
-please note that all charaters of the filename are lower case.
+Please note that all characters of the filename are lower case.
 
-This years topic focusses mostly around *Cloud AI Services* but we also
+This year's topic focusses mostly around *Cloud AI Services* but we also
 accept other topics that you may find interesting and are not covered in
 substantial length in any of our books.
 
 We have posted here some initial ideas for chapter contributions.
-Remember that you **nust** not write an introductory paragraph to your
+Remember that you **must** not write an introductory paragraph to your
 contributions as they are most likely already covered in the books.
 Instead, you **must only** focus on the topic at hand. 
 
@@ -177,25 +203,24 @@ untouched. If there are more than two people in a category, please
 coordinate with each other how to write it while only providing a single
 document. Depending on what the topic is about, you may have to expand
 it. Please note that this is a multipage activity and not a one-sentence
-activity. References must be included as proper references at the end,
-we will teach you in time on how to do that, Examples are given in the
+activity. References must be included as proper references at the end; we will teach you in time on how to do that. Examples are given in the
 markdown book.
 
 All chapters need to include
 
-* a writeup that intriduces the technology without plagiarizm and 
-  advertisement calims by the developers of that technology.
+* a writeup that introduces the technology without plagiarism and 
+  advertisement claims by the developers of that technology.
 * an example on how to use it that can be replicated and you have 
-  tried yourself if possible.
-* refernces in bibtex format
+  tried yourself, if possible.
+* references in BibTeX format
 
 Due dates:
 
-* Feb 3rd: Last date to proposa a chapter 
+* Feb 3rd: Last date to propose a chapter 
 * Feb 10th: Last date to submit the first draft 
 * Feb 17: Last date to return a peer review 
   (you get a grade from the author of the chapter, 
-   the reviewer will asl check your examples)
+   the reviewer will also check your examples)
 * Feb 24: Last date the hand in the final version of the chapter 
 
 
@@ -203,17 +228,18 @@ Due dates:
 
 Deadline: Feb 10 last day to hand in your project proposal
 
-You will be selecting a cloud related project over the next 2 weeks that
+You will be selecting a cloud-related project over the next 2 weeks that
 you will be developing until the end of the semester. The project must
 have the following requirements:
 
-* Programming should be done using python, if another programming language
-  is used, please contact us and justify the use. You will also have to do
-  part of your programming to, for example, coordinated the deployment or
-  the benchmark likely in python.
+* Programming must be done using python if another programming language
+  is used, please contact us and justify the use. You will also have to do part of your programming to, for example, coordinated the deployment or
+  the benchmark likely in python. We also accept
+  JavaScript if you like to develop a GUI for Cloudmesh. 
+  We also have some start using electron.
 
 * The project must use OpenAPI 3.0 to define a REST service. We will
-  teach you how to do that in a future activity.
+  teach you how to do that in future activities.
 
 * The project must use conexion to automatically generate the rest
   service (please do not use swagger codegen). We will teach you how to 
@@ -253,10 +279,10 @@ A preliminary list of projects is available at.
 
 * <https://cloudmesh.github.io/cloudmesh-manual/projects/>
 
-We will add additional project ideas once the become available. Please
-note that we consider the cloudmesh related projects easy as we
-introduce you gradually in all aspects as part of the class to deliver a
-successful project.
+Others are also posted in piazza. We will add additional project ideas
+once they become available. Please note that we consider the Cloudmesh
+related projects easy as we introduce you gradually in all aspects as
+part of the class to deliver a successful project.
 
 Those wanting to chose the Raspberry PI Cluster or the Robot Boat, please
 contact the instructors via piazza. We want to set up a meeting to
@@ -280,11 +306,11 @@ starting with cc-* and so on ...
 
 ## Working Ahead
 
-Obviously we will be introducing you to some more advanced concepts that
+Obviously, we will be introducing you to some more advanced concepts that
 are not yet finalized in the books. You can certainly use documents from
 the internet to learn about such concepts.
 
-Concepts we will need are listed in the Syllabus.  
+The concepts we will need are listed in the Syllabus.  
 
 On the python side, we will introduce you to 
 
@@ -296,7 +322,7 @@ On the python side, we will introduce you to
 * Google cloud API
 * ...
 
-On the cloudmesh side we will introduce you soon to
+On the Cloudmesh side we will introduce you soon to
 
 * cloudmesh.yaml as preliminary documented in the cloudmesh manual
 * cloudmesh cloud bundle
