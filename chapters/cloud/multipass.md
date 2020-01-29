@@ -21,9 +21,11 @@ Follow the install instructions as documented at
 
 ### Ubuntu 18.04
 
-On Ubuntu 18.04, `multipass` is provided as a [snap](https://snapcraft.io/) application.
-`snap` is part of the core Ubuntu 18.04 system so no additional setup is requied.
-To install `multipass` using `snap` via the command line, open up a terminal/command line window and execute this command.
+On Ubuntu 18.04, `multipass` is provided as a
+[snap](https://snapcraft.io/) application. `snap` is part of the core
+Ubuntu 18.04 system so no additional setup is requied. To install
+`multipass` using `snap` via the command line, open up a
+terminal/command line window and execute this command.
 
 ```
 sudo snap install multipass --classic
@@ -56,32 +58,41 @@ After that line, add your username to the list of sudoers as follows:
     
 ### Windows 10
 
-#### Hyper-V 
+#### Windows 10 EDU and Pro with Hyper-V 
 
-:o2: This documentation is unclear. E.g. we get different solutions that seem to contradict each other.
+This instructions work for 64-bit Windows 10 Education or Windows 10 Pro
+using Hyper-V. 
 
+The easisest is to visit <https://multipass.run/> and click `Download
+Multipass for Windows` to download the executable installer. Nexts in an
+elevated shell that you start sthrough `WINDOWS-X` you can install
+multipass and it wil configure Hyper-V for you on your machine, after
+which your have to reboot.
 
-This instructions work for 64-bit Windows 10 Education or Windows 10 Pro using Hyper-V. 
-Hyper-V must be activated in the Bios. Please consult with your hardware manual to activate it.
+If this doe s not work conduct the following.
 
-In order for your installation to run properly, you must ensure that your machine has 
-HyperV enabled. To check this, use the Windows search feature (Windows+S on your keyboard) to 
-find "Turn Windows features on or off." Find HyperV and ensure it is enabled. 
-If your machine did not already have it enabled, you must restart your computer so the changes will take effect.
+Hyper-V must be activated in the Bios. In WIndows 1909, this can be
+achieved within Powershell and you will be asked the first time you
+strat multipass in powershell. If this does not work, please set it in
+your Bios. Some machines may not support Hyper-V in which case you can
+use Virtualbox as driver.
 
-
-To enable Hyper-V for multipass, launch an elevated Powershell with administrative rights
-and execute the following:
+YOu can also check and set the Hyper-V on and of through the 
+`WINDOWS+S` (on your keyboard) and find `Turn Windows features on or
+off`. Find HyperV and ensure it is enabled. If your machine did not
+already have it enabled, you must restart your computer so the changes
+will take effect. Alternatively, enable Hyper-V for multipass by
+launching an elevated Powershell with administrative rights and execute
+the following:
 
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 ```
 
-Then, visit <https://multipass.run/> and click "Download Multipass for Windows" to 
-download the executable installer. 
-Follow the prompts in the installer to complete installation. It is recommended to 
-check the option to add multipass to PATH for easy access from Powershell.
-    
+#### Windows 10 Home with Virtualbox
+
+See: <https://multipass.run/docs/installing-on-windows> 
+You must have virtualbox installed befor you can set the provider.
 
 ## Experimenting with Multipass
 
