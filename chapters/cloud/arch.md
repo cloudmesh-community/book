@@ -5,7 +5,7 @@
 ![](images/learning.png) **Learning Objectives**
 
 * Review classical architectural models leading up to cloud computing.
-* Review some mayor cloud architecture views.
+* Review some major cloud architecture views.
 * Visualize the NIST cloud architecture
 * Discuss an architecture for multi-cloud frameworks.
 
@@ -140,10 +140,10 @@ information and communication facilities.
 
 Internet Computing refers to
 
-> the infrastructure that enables sharing of data within the WWWW community.
+> the infrastructure that enables sharing of data within the WWW community.
 
 Internet computing also comprises early infrastructures such as AOL,
-which popularized the term *you got mail*
+which popularized the term *you got mail*.
 
 ### Cloud Computing
 
@@ -172,7 +172,7 @@ Mobile Computing refers to
 Internet of Things Computing refers to
 
 > devices that are interconnected via the internet while they are
-> embedded in *things* or common objects. The dives send and receive
+> embedded in *things* or common objects. The divices send and receive
 > data to be integrated into a network with sensors and actuators
 > reacting upon sensory and other data.
 
@@ -243,6 +243,7 @@ find the following
 * Security, Identity & Compliance
 * Machine Learning
 * Analytics
+* Blockchain
 * Mobile
 * Augmented reality and Virtual Reality
 * Application Integration
@@ -253,6 +254,9 @@ find the following
 * Game Development
 * AWS Marketplace Software
 * AWS Cost Management
+* Robotics
+* Game Tech
+* Quantum Technologies
 
 From this, we derive that for the initial contact to the customer the
 functionality is put in the foreground, rather than the distinction
@@ -274,6 +278,7 @@ Service mode we find:
   * Security, Identity & Compliance
   * Machine Learning
   * Analytics
+  * Blockchain
   * Mobile
   * Augmented reality and Virtual Reality
   * Application Integration
@@ -284,6 +289,9 @@ Service mode we find:
   * AWS Marketplace Software
   * AWS Cost Management
   * Internet of Things
+  * Robotics
+  * Game Tech
+  * Quantum Technologies
 
 We observe that AWS focuses on providing infrastructure and
 platforms so others can provide integrated service to its customers.
