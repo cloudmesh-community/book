@@ -215,15 +215,18 @@ EDU instead.
 
 E.Multipass.1:
 
-   OS: Windows 10 Pro:
+> OS: Windows 10 Pro:
    
-   Download and install multipass exe for windows at 
-   <https://github.com/canonical/multipass/releases/download/v1.0.0/multipass-1.0.0+win-win64.exe>
-   After installation verify at cmd prompt
-   ```bash
-    C:\>multipass version
-   ```
+> Download and install multipass exe for windows at 
+> <https://github.com/canonical/multipass/releases/download/v1.0.0/multipass-1.0.0+win-win64.exe>
+> After installation verify at cmd prompt
+> ```bash
+>  C:\>multipass version
+> ```
 
+E.Multipass.1.a:
+
+Improve the Multipass installation instructions presented here for your OS.
 
 E.Multipass.2: 
 
@@ -313,6 +316,16 @@ E.Multipass.7:
 
 E.Multipass.8:
 
+>
+> For this assignment we will be using and improving [cloudmesh-multipass](https://github.com/cloudmesh/cloudmesh-multipass)
+>
+> 1. make sure the Provider.py has all important functionality
+> 1. make sure that all functionality is exposed throuth the multipass provider
+> 1. research pytests as used in cloudmesh-cloud
+> 1. develop a pytest that can be run by anyone but results in a table using Benchmarks from cloudmesh
+> 1. split the work up if needed among the class participants. Also if you are the first to develop 
+>    the pytest you get additional points
+>
 > Measure the performance of fetching and launching the image with the 
 > different hypervisors on your system. Report the results in a table with 
 > a timer for each hypervisor and distinguish faetching and launching times. 
@@ -359,3 +372,19 @@ E.Multipass.9b:
 >
 > start, stop, purge, delete, ... and so on. Discuss with others in class
 > what commands should be implemented.
+
+E.Multipass.10:
+
+>
+> For this assignment we will be using and improving [cloudmesh-multipass](https://github.com/cloudmesh/cloudmesh-multipass)
+>
+> Look at the the abstract class in
+> 
+> * <https://github.com/cloudmesh/cloudmesh-cloud/blob/master/cloudmesh/abstractclass/ComputeNodeABC.py>
+>
+> Improve the multipass provider while inheriting from ComputeNodeABC.py 
+> and implement as many of the functions as you can and needed. Many need 
+> not to be implemented though.
+> First, provide a list of methoids that you need to implement and than complete it.
+> The entire class is allowed to collaborate with each other. Do pull requests into the Repository.
+>

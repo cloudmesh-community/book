@@ -18,7 +18,7 @@ git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
 file:
-  "bookmanager": "file://../../bookmanager/bookmanager/template"
+  "bookmanager": "f3ile://../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
@@ -29,6 +29,22 @@ BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"
     - "{git.credit}/disclaimer.md"
+  - DATACENTER:
+    - "{file.community}/sp20-516-220/master/datacenter.md"
+    - "{file.community}/sp20-516-223/master/datacenter.md"
+    - "{file.community}/sp20-516-224/master/datacenter.md"
+    - "{file.community}/sp20-516-226/master/datacenter.md"
+    - "{file.community}/sp20-516-227/master/datacenter.md"
+    - "{file.community}/sp20-516-229/master/datacenter.md"
+    - "{file.community}/sp20-516-232/master/datacenter.md"
+    - "{file.community}/sp20-516-235/master/datacenter.md"
+    - "{file.community}/sp20-516-237/master/datacenter.md"
+    - "{file.community}/sp20-516-240/master/datacenter.md"
+    - "{file.community}/sp20-516-243/master/datacenter.md"
+    - "{file.community}/sp20-516-244/master/datacenter.md"
+    - "{file.community}/sp20-516-246/master/datacenter.md"
+    - "{file.community}/sp20-516-251/master/datacenter.md"
+    - "{file.community}/sp20-516-252/master/datacenter.md"
   - OPEN_PROJECTS:
 #   Deployement Of Databases in Multiple Cloud
     - "{file.community}/fa19-516-158/master/project/report.md"

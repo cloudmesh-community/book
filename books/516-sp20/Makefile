@@ -2,7 +2,8 @@ NAME=e516-sp20
 HOME=../..
 FINAL=$(HOME)/../pub
 THIS=.
-
+export FINAL
+export NAME
 
 include ../makefile.sys
 
@@ -10,10 +11,12 @@ all: authors syllabus epub pdf
 	-killall Books
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME).epub
 
-publish:
-	$(shell cd $(FINAL); git commit -m "update 516" docs/vonLaszewski-$(NAME).epub)
-	$(shell cd $(FINAL); git commit -m "update 516" docs/vonLaszewski-$(NAME).pdf)
-	$(shell cd $(FINAL); git push)
+#publish:
+#	$(shell cd $(FINAL); git commit -m "update 516" docs/vonLaszewski-$(NAME).epub)
+#	$(shell cd $(FINAL); git commit -m "update 516" docs/vonLaszewski-$(NAME).pdf)
+#	$(shell cd $(FINAL); git push)
+#	$(shell cd $(FINAL); echo $(NAME).epub)
+#	$(shell cd $(FINAL); echo $(NAME).pdf)
 
 update:
 	cd ../../..; cloudmesh-installer git pull 516
