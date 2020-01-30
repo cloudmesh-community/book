@@ -4,10 +4,10 @@
 
 ![No](images/no.png)
 
-Packer is an open source tool for creating identical machine images
+Packer is an open-source tool for creating identical machine images
 for multiple platforms from a single source configuration. Packer runs
 on every major operating system, and creates machine images for
-multiple platforms in parallel form configuration specufications.
+multiple platforms in parallel form configuration specifications.
 
 Some key concepts are located at
 
@@ -22,7 +22,8 @@ Use cases for packer is located at
 * <https://www.packer.io/intro/use-cases.html>
 
 ## Installation
-Installation instructions for all platforms is located at
+
+Installation instructions for all platforms are located at
 
 * <https://www.packer.io/intro/getting-started/install.html>
 
@@ -39,7 +40,7 @@ commands to install and upgrade software dependencies:
 1. alias `python` to `python3`
 
 Let us assume that the VM is now in a desirable state for the purpose
-of doing development on a large number of virtual machines and you
+of doing development on a large number of virtual machines, and you
 want to distribute it to the rest of your team or community so that
 all are using the same environment. You could simply send your team
 members a copy of your Ubuntu 18.04 VirtualBox VM assuming they will
@@ -49,7 +50,7 @@ AWS and another on OpenStack. In this case, they will each need to
 figure out how to import a VirtualBox VM into the respective cloud
 vendor they're utilizing. Packer can help this situation by codifying
 the state of the development environment with a single configuration
-file which can then be used to create images in different cloud
+file, which can then be used to create images in different cloud
 environments.
 
 Assuming packer has been installed, let's create a packer JSON file
@@ -57,7 +58,7 @@ that will build an Ubuntu 18.04 image and provision it as we did
 manually using Vagrant. In this example, we will create the image in
 Google Compute Platform.
 
-First download your Google Cloud credentials according to the
+First, download your Google Cloud credentials according to the
 documentation at
 
 * <https://www.packer.io/docs/builders/googlecompute.html#running-without-a-compute-engine-service-account>
@@ -66,7 +67,7 @@ Save the credential file as `accounts.json`. Also, determine the
 project ID you will use in your Google Cloud Platform account. In this
 example, we will use `my_project_id` for our project ID.
 
-Next save the following JSON to a file named `e516.json`:
+Next, save the following JSON to a file named `e516.json`:
 
 ```json
 {
@@ -101,7 +102,7 @@ Next save the following JSON to a file named `e516.json`:
 The packer file format specifies 3 sections, `variables`, `builders`
 and `provisioners`. The `variables` section allows you to declare
 variables that are to be used in the rest of the document. By
-declaring a variable in this section, for example `google_project_id`,
+declaring a variable in this section, for example, `google_project_id`,
 it allows the user to pass in the value of that variable via the
 packer command line.
 
@@ -113,11 +114,11 @@ found here:
 
 In our example, we define the builder for Google Cloud Platform which
 requires our credential file (account.json), our project ID, base
-image name, ssh username and zone.
+image name, ssh username, and zone.
 
 Finally, the `provisioners` section allows the user to customize the
 base image defined in the `builders` section. In our example, we
-simply use the `shell` provisioner which allows us to type in shell
+simply use the `shell` provisioner, which allows us to type in shell
 commands to provision the image as we want it. Here we install
 python3.7, python3-pip and idle-python3.7.  We also write out an
 aliases file so that upon login, the user can access python3.7 using

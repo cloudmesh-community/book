@@ -1,31 +1,31 @@
 # Virtual Box {#s:virtualbox}
 
-For development purposes we recommend that you use for this class an
+For development purposes, we recommend that you use for this class an
 Ubuntu virtual machine that you set up with the help of virtualbox. We
 recommend that you use the current version of ubuntu and do not install
-or reuse a version that you have set up years ago.
+or reuse a version that you set up years ago.
 
-As access to cloud resources requires some basic knowledge of linux and
-security we will restrict access to our cloud services to those that
-have demonstrated responsible use on their own computers. Naturally as
-it is your own computer you must make sure you follow proper security.
+As the access to cloud resources requires some basic knowledge of Linux and
+security, we will restrict access to our cloud services to those that
+have demonstrated responsible use on their own computers. Naturally, as
+it is your own computer, you must make sure you follow proper security.
 We have seen in the past students carelessly working with virtual
 machines and introducing security vulnerabilities on our clouds just
 because "it was not their computer." Hence, we will allow using of cloud
-resources only if you have demonstrated that you responsibly use a linux
+resources only if you have demonstrated that you responsibly use a Linux
 virtual machine on your own computer. Only after you have successfully
-used ubuntu in a virtual machine you will be allowed to use virtual
+used ubuntu in a virtual machine, you will be allowed to use virtual
 machines on clouds.
 
-A *cloud drivers license test* will be conducted. Only after you pass it
-we wil let you gain access to the cloud infrastructure. We will announce
+A *cloud driver's license test* will be conducted. Only after you pass it
+we will let you gain access to the cloud infrastructure. We will announce
 this test. Before you have not passed the test, you will not be able to
-use the clouds. Furthermore, you do not have to ask us for join requests
+use the clouds. Furthermore, you do not have to ask us to join requests
 to cloud projects before you have not passed the test. Please be
 patient. Only students enrolled in the class can get access to the
 cloud.
 
-If you however have access to other clouds yourself you are welcome to
+If you, however, have access to other clouds yourself you are welcome to
 use the, However, be reminded that projects need to be reproducible, on
 our cloud. This will require you to make sure a TA can replicate it.
 
@@ -33,7 +33,7 @@ Let us now focus on using virtual box.
 
 ## Installation
 
-First you will need to install virtualbox. It is easy to install and
+First, you will need to install virtualbox. It is easy to install and
 details can be found at
 
 * <https://www.virtualbox.org/wiki/Downloads>
@@ -47,13 +47,13 @@ Please note some hardware you may have may be too old or has too little
 resources to be useful. We have heard from students that the following
 is a minimal setup for the desktop machine:
 
--   multi core processor or better allowing to run hypervisors
+-   multi-core processor or better allowing to run hypervisors
 
 -   8 GB system memory
 
 -   50 GB of free hard drive space
 
-For virtual machines you may need multiple, while the minimal
+For virtual machines, you may need multiple, while the minimal
 configuration may not work for all cases.
 
 As configuration we often use
@@ -81,7 +81,7 @@ Please let us know the smallest configuration that works.
 
 ## Guest additions
 
-The virtual guest additions allow you to easily do the following tasks:
+The virtual guest additions allow you to do the following tasks easily:
 
 - Resize the windows of the vm
 
@@ -89,7 +89,7 @@ The virtual guest additions allow you to easily do the following tasks:
   host operating system windows.
 
 This way you can use many native programs on you host and copy contents
-easily into for example a terminal or an editor that you run in the Vm.
+easily into, for example, a terminal or an editor that you run in the Vm.
 
 A video is located at
 
@@ -108,8 +108,8 @@ Vbox to OSX:
 
 : shift CONTRL v shift CONTRL v
 
-On Windows the key combination is naturally different. Please consult
-your windows manual. If you let us know TAs will add the information
+On Windows, the key combination is naturally different. Please consult
+your Windows manual. If you let us know, TAs will add the information
 here.
 
 Exercises

@@ -1,10 +1,10 @@
 # Virtual Machine Management with QEMU {#sec:qemu-kvm}
 
-In this section we provide a short example on how to use QUEMU.  We
-will be starting with the instalation, then create a virtual hard
-disk, install ubuntu on the disk and start the virtual machine. Next
-we will demonstrate how we can emulate a Raspery Pi with QEMU.
-Lastly, we sho how to use virsh.
+In this section, we provide a short example on how to use QUEMU.  We
+will be starting with the installation, then create a virtual hard
+disk, install ubuntu on the disk and start the virtual machine. Next,
+we will demonstrate how we can emulate a Raspberry Pi with QEMU.
+Lastly, we show how to use virsh.
 
 ## Install QEMU
 
@@ -19,7 +19,7 @@ On OSX QEMU can be installed with Homebrew
 ## Create a Virtual Hard Disk with QEMU
 
 To create an image file with the size of 10GB and `qcow2` format
-(default format for QEMU images), run:
+(the default format for QEMU images), run:
 
     $ qemu-img create -f qcow2 testing-image.img 10G
 
@@ -66,7 +66,7 @@ Explain the previous command part by part:
 
 > This is a very important option. It allows us to use the KVM
 > technology to emulate the architecture we want. Without it, QEMU will
-> use software rendering which is very slow. That is why we must use
+> use software rendering, which is very slow. That is why we must use
 > this option, just make sure that the virtualization options are
 > enabled from your computer BIOS.
 
@@ -74,7 +74,7 @@ Explain the previous command part by part:
 
 > If we want to use more than 1 core for the emulated operating system,
 > we can use this option. We chose to use 3 cores to run the virtual
-> image which will make it faster. You should change this number
+> image, which will make it faster. You should change this number
 > according to your computer's CPU.
 
 `-net nic -net user`:
@@ -84,7 +84,7 @@ Explain the previous command part by part:
 
 `-hda testing-image.img`:
 
-> Here we specified the path for the hard drive which will be used. In
+> Here, we specified the path for the hard drive, which will be used. In
 > our case, it was the testing-image.img file which we created before.
 
 `-cdrom ubuntu-16.04.iso`:
@@ -96,7 +96,7 @@ Start Ubuntu with QEMU
 ----------------------
 
 Now, if you want to just boot from the image file without the ISO file
-(for example if you have finished installing and now you always want to
+(for example, if you have finished installing and now you always want to
 boot the installed system), you can just remove the `-cdrom` option:
 
     $ qemu-system-x86_64 -m 1024 -boot d -enable-kvm -smp 3 -net nic -net user -hda testing-image.img
@@ -106,7 +106,7 @@ boot the installed system), you can just remove the `-cdrom` option:
 Emulate Raspberry Pi with QEMU
 ------------------------------
 
-First you have to download a pre-built kernel
+First, you have to download a pre-built kernel
 
     $ wget https://raw.githubusercontent.com/dhruvvyas90/qemu-rpi-kernel/master/kernel-qemu-4.4.34-jessie
 
@@ -127,7 +127,7 @@ $ qemu-system-arm -kernel ./kernel-qemu-4.4.34-jessie \
     -no-reboot -serial stdio
 ```
 
-Pleaee not that
+Please not that
 
 * `kernel-qemu-4.4.34-jessie` is the pre-built kernel file.
 * `raspbian-stretch-lite.img` is the Raspbian image file.

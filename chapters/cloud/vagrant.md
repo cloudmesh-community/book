@@ -10,8 +10,8 @@
 ---
 
 A convenient tool to interface with Virtual Box is vagrant. Vagrant
-allows us to manage virtual machines directly from the commandline. It
-also support other providers and can be used to start virtual machines
+allows us to manage virtual machines directly from the command-line. It
+also supports other providers and can be used to start virtual machines
 and even containers. The latest version of vagrant includes the
 ability to automatically fetch a virtual machine image and start it on
 your local computer. It assumes that you have virtualbox installed.
@@ -103,7 +103,7 @@ not want o use pyCharm, please use
 vagrant@ubuntu-bionic:~$ sudo apt-get install idle-python
 ```
 
-So that you do not have always to use the number 3, you can also set
+So that you do not always have to use the number 3, you can also set
 an alias with
 
 ```bash

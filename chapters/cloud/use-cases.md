@@ -4,7 +4,7 @@
 
 ## Big Data
 
-The material provided in this ePub is related to Cloud Computing. However part of our motivation to use cloud computing is to deal with Big Data. For that purpose we have a separate class which is documented in the following volumes. The first volume provides an overview. The second volume lists some technologies relevant for big data.
+The material provided in this ePub is related to Cloud Computing. However, part of our motivation to use cloud computing is to deal with Big Data. For that purpose, we have a separate class that is documented in the following volumes. The first volume provides an overview. The second volume lists some technologies relevant to big data.
 
 | Link | CLass | Description |
 | --- | --- | --------------------------|
@@ -20,13 +20,13 @@ The Earth Observing System Data and Information System (EOSDIS) and the Earth
 Science Data and Information System (ESDIS) provide key core capabilities for
 NASA's Earth Science Data Systems (ESDS) Program.
 
-According to <https://earthdata.nasa.gov/about>, EOSDIS *"provides end-to-end
-capabilities for managing NASA’s Earth science data from various sources –
+According to <https://earthdata.nasa.gov/about>, EOSDIS * "provides end-to-end
+capabilities for managing NASA's Earth science data from various sources –
 satellites, aircraft, field measurements, and various other programs*" and
 "*provides capabilities for command and control, scheduling, data capture
-and initial (Level 0) processing"* for the Earth-Observing System (EOS)
+and initial (Level 0) processing "* for the Earth-Observing System (EOS)
 satellites NASA manages. The ESDIS project, on the other hand, manages the
-downstream processes and capabilities which include *"generation of higher level
+downstream processes and capabilities which include * "generation of higher level
 (Level 1-4) science data products for EOS missions; archiving and distribution
 of data products from EOS and other satellite missions, as well as aircraft
 and field measurement campaigns"* [@earthdata-about]. @fig:use-cases-es-esdops
@@ -35,10 +35,10 @@ operations [@earthdata-about].
 
 ![Earth Science Data Operations [@earthdata-about]](images/use-cases-es-esdops.jpg){#fig:use-cases-es-esdops}
 
-Traditionally, higher level products (those used by end users) are produced by
+Traditionally, higher-level products (those used by end-users) are produced by
 a Science Investigator-led Processing System (SIPS) usually hosted and
 operated at on-premise facilities belonging to the Science and Instrument
-Team's affiliate research center. Furthermore, these higher level products are
+Team's affiliate research center. Furthermore, these higher-level products are
 then ingested and cataloged by an affiliate Distributed Active Archive Center
 (DAAC) for the purpose of providing public distribution, access, and discovery
 to these datasets. Historically, these DAACs provide their capability using
@@ -54,24 +54,24 @@ that generate and distribute the various NASA EOS datasets
 ![Construction](images/construction.png) ![No](images/no.png)
 
 For NASA, technological advancements in satellite instrumentation,
-communication and other fields has resulted in the current and upcoming
+communication, and other fields have resulted in the current and upcoming
 deluge of remote sensing Earth science data. In 2012, Skytland wrote:
 
-*We (NASA) have deep space spacecraft that sends back data in the order of
+*We (NASA) have deep-space spacecraft that sends back data in the order of
 MB/s. Then we have earth orbiters that can send back data in GB/s per second.
 In our current missions, data is transferred with radio frequency, which is
 relatively slow. In the future, NASA will employ technology such as optical
 (laser) communication to increase the download and mean a 1000x increase in
-the volume of data. This is much more then we can handle today and this is
+the volume of data. This is much more then we can handle today, and this is
 what we are starting to prepare for now. We are planning missions today that
-will easily stream more than **24TB’s** a day.* [@nasa-big-data]
+will easily stream more than ** 24TB's** a day.* [@nasa-big-data]
 
-Note that the **24TB's** only refers to the Level 0 (raw) data streamed from
+Note that the ** 24TB's** only refers to the Level 0 (raw) data streamed from
 the satellite. Not accounted for is the post-processing of that Level 0 into
 higher-level data products by the SIPSs.
 
 One such mission is the upcoming NASA/Indian Space Research Organisation (ISRO)
-Synthetic Aperture Radar (NISAR) mission that is currently schedule to launch
+Synthetic Aperture Radar (NISAR) mission that is currently scheduled to launch
 in 2021 @fig:nisar-satellite:
 
 *Using advanced radar imaging that will provide an unprecedented, detailed
@@ -93,46 +93,46 @@ Note the **Daily Data Acquisition Volume** (Level 0) and **Daily Production
 Volume** (Level 1-4) for NISAR. The total daily volume produced by the mission
 will be a little less than **90TB**. NISAR Program Scientist Craig Dobson notes
 that as much as 140PB of data will be generated by NISAR over its 3-year mission
-and *"places considerable demands on the logistics of shipping data and on
+and *" places considerable demands on the logistics of shipping data and on
 computational speed and efficiency"* [@getting-ready-for-nisar]. Additionally,
-Skytland notes that *"as our wealth of data increases, the challenge of
+Skytland notes that * "as our wealth of data increases, the challenge of
 indexing, searching, transferring, and so on all increase exponentially as
-well"* [@nasa-big-data]. @fig:eosdis-growth shows EOSDIS current holdings
+well "* [@nasa-big-data]. @fig:eosdis-growth shows EOSDIS current holdings
 and projected growth [@nasa-eosdis-cumulus].
 
 ![EOSDIS Holdings and Projected Growth [@nasa-eosdis-cumulus]](images/use-cases-es-datavols-growth.png){#fig:eosdis-growth}
 
 ### Science End Users
 
-Not to be forgotten are the scientists and science end users who ultimately
+Not to be forgotten are the scientists and science end-users who ultimately
 use the final data products to perform analysis and produce scientific
 publications or other high-level, high-value derived products. Traditionally,
-these science end users would perform their analysis on-premise either on a
-desktop, a laptop, an HPC/HEC cluster, or other compute resource managed by
-the end user themselves or by their affiliate organization. Obviously before
+these science end-users would perform their analysis on-premise either on a
+desktop, a laptop, an HPC/HEC cluster, or other compute resources managed by
+the end-user themselves or by their affiliate organization. Obviously, before
 they can perform their analysis, they would have to search for the particular
 granules of a product that pertains to their study and download them locally.
 Historically, granule file sizes for these product granules tend to be in the
-tens or hundreds of MBs and so downloading them from the DAACs don't usually
-take up a significant amount of time. However with the upcoming NISAR mission,
-this will change. Chris Stoner, the Project Office Manager at NASA’s Alaska
+tens or hundreds of MBs and so downloading them from the DAACs do not usually
+take up a significant amount of time. However, with the upcoming NISAR mission,
+this will change. Chris Stoner, the Project Office Manager at NASA's Alaska
 Satellite Facility (ASF) Distributed Active Archive Center (DAAC) which will
 serve as the DAAC for NISAR, notes that:
 
-*"The file sizes are large and the overall volume of data will be huge. This
+* "The file sizes are large and the overall volume of data will be huge. This
 means we have to do something different to ensure that NISAR data users have
 a good user experience and are able to do their research."* [@getting-ready-for-nisar]
 
 In the case of NISAR, each scene (file granule) will take up about 25GB
-compressed and typical science end users of SAR data usually *"download
-hundreds or sometimes thousands of scenes for their research"* [@getting-ready-for-nisar]. As such, downloading the data needed to perform
+compressed and typical science end-users of SAR data usually * "download
+hundreds or sometimes thousands of scenes for their research "* [@getting-ready-for-nisar]. As such, downloading the data needed to perform
 an analysis now becomes a huge bottleneck to the process of conducting
 research.
 
 ### Role of Cloud: Data Lake
 
 In addition to the big data volumes of upcoming missions and the bottlenecks
-they cause for end users, Skytland notes that *"the increasing complexity of
+they cause for end-users, Skytland notes that * "the increasing complexity of
 instruments and algorithms, increasing rate of technology refresh, and the
 decreasing budget environment, all play a significant factor"* [@nasa-big-data]
 in NASA's challenges for the future of Earth Science missions.
@@ -143,13 +143,13 @@ built for scale and fault tolerance in a pay-as-you-go costing model. Coupled
 with the potential for major cost-saving by using discounted compute (e.g. AWS
 spot pricing, preemptible VMs, and so on), cloud computing will play a
 significant role in providing a solution to many of NASA's challenges. If the
-SIPSs, DAACs and science end users all made a move off-premise and went "all-in"
+SIPSs, DAACs and science end-users all made a move off-premise and went "all-in"
 into a cloud vendor, at the risk of **vendor lock-in**, then many of the
 technical challenges of scaling to NISAR volumes can be offloaded to the cloud
 vendors themselves.
 
 Central to this is the concept of a **data lake** where data producers, data
-service providers, and end users all adapt their previously on-premise
+service providers, and end-users all adapt their previously on-premise
 resources, infrastructure, and analysis tools over to cloud-native
 implementations. The essential premise is that all stakeholders must buy into
 moving their compute to the data; no longer moving the data to their compute.
@@ -179,14 +179,14 @@ Moving forward, NASA's challenges for future missions are significant.
 Innovation in sensor, instrument and communication technology continues to move
 at a frantic pace and the end result will be an explosion in the total volume of
 data produced for future Earth Science missions. This big data problem presents
-challenges of scale for the all stakeholders: data producers (SIPSs), data
-service providers (DAACs), and science end users. However, commercial cloud
+challenges of scale for all stakeholders: data producers (SIPSs), data
+service providers (DAACs), and science end-users. However, commercial cloud
 vendors such as AWS, Microsoft Azure, and Google Compute Platform have built
 upon their infrastructure and years of experience scaling web resources for
 millions of users to provide cloud computing services that abstract away the
 underlying technical issues of massive scaling. It would be of great benefit to
 the Earth Science community for all stakeholders to leverage these cloud
-resources in some capacity so as to enable and facilitate the continuation of
+resources in some capacity to enable and facilitate the continuation of
 science discovery in this age of big data.
 
 ## Bioinformatics :o2:
