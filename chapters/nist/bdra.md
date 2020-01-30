@@ -114,41 +114,41 @@ needs to know and the newest job trends that we observed.
 To identify what big data is we find the following characteristics
 
 **Volume**: Big for data means lots of bytes. This could be achieved
-in many different ways. Typically we look at tha actual size of a data
+in many different ways. Typically we look at the actual size of a data
 set, but also how this data set is stored for example in many
 thousands of smaller files that are part of the data set. It is clear
-that in many of such cases analysis of a large volume of data will
+that in many such cases analysis of a large volume of data will
 impact the architectural design for storage, but also the workflow on
 how this data is processed.
 
-**Velocity**: We see often that big data is associated with high data
+**Velocity**: We often see that big data is associated with high data
 flow rates caused by for example streaming data. It can however also
 be caused by functions that are applied to large volumes of data and
-need to be integrated quickly to return the result as fast as posible.
-Needs for real time processing as part of the quality of service
-offered contribute also to this. Examples of IoT devices that
+need to be integrated quickly to return the result as fast as possible.
+Needs for real-time processing as part of the quality of service
+offered also contribute to this. Examples of IoT devices that
 integrate not only data in the cloud, but also on the edge need to be
 considered.
 
-**Variety**: In todays world we have many different data resources
+**Variety**: In today's world, we have many different data resources
 that motivate sophisticated data mashup strategies. Big data hence not
 only deals with information from one source but a variety of sources.
 The architectures and services utilized are multiple and needed to
-enable automated analysis while incorporating various data source.
+enable automated analysis while incorporating various data sources.
 
 Another aspect of variety is that data can be structured or
 unstructured. NIST finds this aspect so important that they included
 its own section for it.
 
-**Variability**: Any data over time will change. Naturally that is not
+**Variability**: Any data over time will change. Naturally, that is not
 an exception in Big data where data may be a time to live or needs to
 be updated in order not to be stale or obsolete. Hence one of the
 characteristics that big data could exhibit is that its data be
 variable and is prone to changes.
 
 
-In addition to these general observations we also have to adress
-important characteristics that are attached with the Data itself. This
+In addition to these general observations, we also have to address
+important characteristics that are attached to the Data itself. This
 includes
 
 **Veracity**: Veracity refers to the accuracy of the data. Accuracy
