@@ -4,7 +4,7 @@ Previous architecture views were concerned about high-level interactions
 such as the view projected by NIST that introduces a service model based
 on infrastructure, platform, and application.
 
-However, such a view may provide too little detail to develop meaningful services that uses cloud resources in a multi-cloud environment. For
+However, such a view may provide too little detail to develop meaningful services that use cloud resources in a multi-cloud environment. For
 this reason von Laszewski has devised a Y diagram that showcases the
 interaction between the different layers more clearly we like to refer
 the reader to the Y-cloud scheduling diagram.
