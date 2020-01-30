@@ -172,7 +172,7 @@ Mobile Computing refers to
 Internet of Things Computing refers to
 
 > devices that are interconnected via the internet while they are
-> embedded in *things* or common objects. The dives send and receive
+> embedded in *things* or common objects. The device send and receive
 > data to be integrated into a network with sensors and actuators
 > reacting upon sensory and other data.
 
