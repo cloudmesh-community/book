@@ -3,7 +3,7 @@
 The material here uses the following notation. This is especially
 helpful if you contribute content, so we keep the content consistent.
 
-if you like to see the details on how to create them in the markdown
+If you like to see the details on how to create them in the markdown
 documents, you can to look at the file source while clicking on
 the cloud in the heading of the Notation section (@sec:notation). This
 brings you to the markdown text. However, to see it  you still have to look at
@@ -12,11 +12,11 @@ to see the details.
 
 :cloud: or ![Github](images/github.png) `![Github](images/github.png)`
 
-> If you click on the :cloud: or ![Github](images/github.png) in a heading, you can go directly to the >
-document in GitHub that contains the next content. This is > convenient
-to fix errors or make additions to the content. The cloud is
-automatically added upon the inclusion of a new markdown file that includes
-in its first line a section header.
+> If you click on the :cloud: or ![Github](images/github.png) in a
+> heading, you can go directly to the document in GitHub that contains the
+> next content. This is convenient to fix errors or make additions to the
+> content. The cloud is automatically added upon the inclusion of a new
+> markdown file that includes in its first line a section header.
 
 $
 
@@ -28,10 +28,10 @@ $
 
 [@las14cloudmeshmultiple]
 
-> References are indicated with a number and are included in the >
-reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
-`[@las14cloudmeshmultiple]`. References must be added to the
-`references.bib` file in BibTex format.
+> References are indicated with a number and are included in the 
+> reference chapter [@las14cloudmeshmultiple]. Use it in markdown with 
+> `[@las14cloudmeshmultiple]`. References must be added to the
+> `references.bib` file in BibTex format.
 
 :o2: or [![No](images/no.png)]()
 
@@ -96,13 +96,13 @@ reference chapter [@las14cloudmeshmultiple]. Use it in markdown with >
 Other emojis
 
 > Other emojis can be found at
-<https://gist.github.com/rxaviers/7360908>. However, note that emojis
-may not be viewable in other formats or on all platforms. We know that
-some emojis do not show in Calibre, but they do show in macOS iBooks and
-MS Edge
+> <https://gist.github.com/rxaviers/7360908>. However, note that emojis
+> may not be viewable in other formats or on all platforms. We know that
+> some emojis do not show in Calibre, but they do show in macOS iBooks and
+> MS Edge
 
-This is the list of emojis that can be converted to PDF. So if you like a
-PDF, please limit your emojis to
+> This is the list of emojis that can be converted to PDF. So if you like a
+> PDF, please limit your emojis to
 
 `:cloud:` :cloud:
 `:o2:` :o2:
@@ -208,6 +208,7 @@ x   y   z
 4   5   42
 ```
 
-As usual, make sure the label is unique. When compiling, it results in an error if labels are not unique. Additionally, there are
-several md table generators available on the internet and make
-creating table more efficient.
+As usual, make sure the label is unique. When compiling, it results in
+an error if labels are not unique. Additionally, there are several md
+table generators available on the internet and make creating table more
+efficient.
