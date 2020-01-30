@@ -176,8 +176,8 @@ significantly scaled back for public users.
 ## Big Data and the Cloud
 
 While looking at the characteristics of Big Data it is obvious that
-Big data is on the one hand a motivator for cloud computing, but on
-the other hand existing Big Data frameworks are a motivator for
+Big data is, on the one hand, a motivator for cloud computing, but on
+the other hand, existing Big Data frameworks are a motivator for
 developing Big Data Architectures a certain way.
 
 Hence we have to always look from both sides towards the creation of
@@ -199,9 +199,9 @@ include
 * and data tiers (as showcased in high energy physics Ligo [@www-ligo-data-grid] and Atlas)
 
 In addition to the horizontal scaling issues we also have to worry
-about the *vertical scaling* issues, this is how the overall sytem
-architecture fits together to adress an end-to-end use case. In such
-efforts we look at
+about the *vertical scaling* issues, this is how the overall system
+architecture fits together to address an end-to-end use case. In such
+efforts, we look at
 
 * interface designs,
 * workflows between components and services,
@@ -209,24 +209,24 @@ efforts we look at
 * reusability within other use-cases.
 
 
-Naturally the cloud offers the ability to *cloudify* existing
+Naturally, the cloud offers the ability to *cloudify* existing
 relational databases as cloud services while leveraging the increased
 performance and special hardware and software support that may be
-otherwise unaffordable for an individual user. However we see also the
+otherwise unaffordable for an individual user. However, we also see the
 explosive growth of non sql databases because some of them can more
 effectively deal with the characteristics of big data than traditional
-mostly weel structured data bases. In addition many of these
+mostly well structured databases. In addition many of these
 frameworks are able to introduce advanced capability such as
 distributed and reliable service integration.
 
-Although we have been used to the term cloud wile using virtualized
+Although we have been used to the term cloud while using virtualized
 resources and the term Grid by offering a network of supercomputers in
 a virtual organization, We should not forget that Cloud service
 providers also offer High performance computers resources for some of
 their most advanced users. 
 
 Naturally such resources
-can be used not only for numerical intensif computations but also for
+can be used not only for numerical intensive computations but also for
 big data applications as the Physics community has demonstrated.
 
 
@@ -235,17 +235,17 @@ big data applications as the Physics community has demonstrated.
 When looking at the number of devices that are being added daily to
 the global IT infrastructure we observe that cellphones and soon
 Internet of Things (IoT) devices will produce the bulk of all data.
-However not all data will be moved to the cloud and lots of data will
-be analyzed locally on the devices or even not being considered to be
-uploaded to the cloud either because it project to low or to high
-value to be moved. However a considerable portion will put new
-constraints on our services we offer in the cloud and any architecture
-addressing this must be properly deal with scaling early on in the
+However, not all data will be moved to the cloud and lots of data will
+be analyzed locally on the devices or even not considered to be
+uploaded to the cloud either because it projects to low or too high
+value to be moved. However, a considerable portion will put new
+constraints on the services we offer in the cloud and any architecture
+addressing this must properly deal with scaling early on in the
 architectural design process.
 
 ## Reference Architecture
 
-Next we present the Big data reference architecture. It is Depicted
+Next, we present the Big data reference architecture. It is Depicted
 in @fig:nist-arch. According to the document (Volume 2) the five
 main components representing the central roles include
 
@@ -290,18 +290,18 @@ big data:
 2. Data Organization and Distribution systems such as offered in Indexed Storage and File Systems
 3. Processing engines offering batch, interactive, and streaming services to provide computing and analytics activities
 
-Messaging and communication takes place between these layer while resource management is used to address efficiency.
+Messaging and communication take place between these layers while resource management is used to address efficiency.
 
 Frameworks such as Spark and Hadoop include components form multiple
-of these categories to create a vertical integrated system. Often they
+of these categories to create a vertically integrated system. Often they
 are offered by a service provider. However, one needs to be reminded
 that such offerings may not be tailored to the individual use-case and
-inefficiencies could be prevalent because the service offer is
+inefficiencies could be prevalent because either the service offered is
 outdated, or it is not explicitly tuned to the problem at hand.
 
 ## Application Providers
 
-The underlaying infrastructure is reused by big data application providers supporting services and task such as
+The underlying infrastructure is reused by big data application providers supporting services and task such as
 
 * Data collections
 * Data curation
@@ -309,7 +309,7 @@ The underlaying infrastructure is reused by big data application providers suppo
 * Data Visualization
 * Data Access
 
-Through the interplay between these services data consumer sand data producers can be served.
+Through the interplay between these services data, consumers and data producers can be served.
 
 ## Fabric
 
@@ -317,4 +317,4 @@ Security and general management are part of the governing fabric in which such a
 
 ## Interface definitions
 
-The interface definitions for the BDRA are specified in Volume 8. We are in the second phase of our document specification while we switch from our pure Resource descripyion to an OpenAPI specification. Before we can provide more details we need to introduce you to REST which is an essential technology for many moder cloud computing services.
+The interface definitions for the BDRA are specified in Volume 8. We are in the second phase of our document specification while we switch from our pure Resource description to an OpenAPI specification. Before we can provide more details we need to introduce you to REST which is an essential technology for many more cloud computing services.
