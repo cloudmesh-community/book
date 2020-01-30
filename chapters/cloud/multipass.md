@@ -1,6 +1,6 @@
 # Multipass
 
-Multipass is a command line tool to manage Ubuntu virtual machines on a
+Multipass is a command-line tool to manage Ubuntu virtual machines on a
 computer from the command line. With the help of multipass, we can
 simulate a cloud that manages virtual machines on your computer.
 
@@ -23,7 +23,7 @@ Follow the install instructions as documented at
 
 On Ubuntu 18.04, `multipass` is provided as a
 [snap](https://snapcraft.io/) application. `snap` is part of the core
-Ubuntu 18.04 system so no additional setup is requied. To install
+Ubuntu 18.04 system so no additional setup is required. To install
 `multipass` using `snap` via the command line, open up a
 terminal/command line window and execute this command.
 
@@ -34,7 +34,7 @@ sudo snap install multipass --classic
 ### OSX
 
 We recommend that you conduct the package based install, but you can
-also do the brew install if you have used brew for other activities.
+also, do the brew install if you have used brew for other activities.
 
 #### Sudo on OSX
 
@@ -44,11 +44,11 @@ with such privileges and use that for trying it out instead of using
 your main account. To add this user to `sudo`, conduct the following steps.
 
 
-First, login as administrator and edit the file 
+First, login as an administrator and edit the file 
 
-	/etc/sudoers
+   /etc/sudoers
 
-In that file find the following line: 
+In that file, find the following line: 
 
     %admin ALL=(ALL) ALL 
 
@@ -60,22 +60,22 @@ After that line, add your username to the list of sudoers as follows:
 
 #### Windows 10 EDU and Pro with Hyper-V 
 
-This instructions work for 64-bit Windows 10 Education or Windows 10 Pro
+These instructions work for 64-bit Windows 10 Education or Windows 10 Pro
 using Hyper-V. 
 
-The easisest is to visit <https://multipass.run/> and click `Download
-Multipass for Windows` to download the executable installer. Nexts in an
-elevated shell that you start sthrough `WINDOWS-X` you can install
-multipass and it wil configure Hyper-V for you on your machine, after
-which your have to reboot.
+The easiest is to visit <https://multipass.run/> and click `Download
+Multipass for Windows` to download the executable installer. Next in an
+an elevated shell that you start through `WINDOWS-X` you can install
+multipass and it will configure Hyper-V for you on your machine, after
+which you have to reboot.
 
-If this doe s not work conduct the following.
+If this doe s not work, conduct the following.
 
-Hyper-V must be activated in the Bios. In WIndows 1909, this can be
-achieved within Powershell and you will be asked the first time you
-strat multipass in powershell. If this does not work, please set it in
-your Bios. Some machines may not support Hyper-V in which case you can
-use Virtualbox as driver.
+Hyper-V must be activated in the Bios. In Windows 1909, this can be
+achieved within Powershell, and you will be asked the first time you
+start multipass in PowerShell. If this does not work, please set it in
+your Bios. Some machines may not support Hyper-V, in which case you can
+use Virtualbox as the driver.
 
 YOu can also check and set the Hyper-V on and of through the 
 `WINDOWS+S` (on your keyboard) and find `Turn Windows features on or
@@ -92,7 +92,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 #### Windows 10 Home with Virtualbox
 
 See: <https://multipass.run/docs/installing-on-windows> 
-You must have virtualbox installed befor you can set the provider.
+You must have Virtualbox installed before you can set the provider.
 
 ## Experimenting with Multipass
 
@@ -188,10 +188,10 @@ $ multipass list --format yaml
 For full details see the [find command docs](https://multipass.run/docs/find-command)
 
 Find can also take the name of the image that you can identify just with
-the find option. Please be aware that based on the OS you may se more or
-less image options. as discussed in E.Multipass.5.
+the find option. Please be aware that based on the OS you may see more or
+fewer image options as discussed in E.Multipass.5.
 
-To switch to a different VM support you can use
+To switch to a different VM support, you can use
 
 OSX: (default is hyperkit)
 
@@ -208,7 +208,7 @@ multipass set local.driver=virtualbox
 ```
 
 You have to reboot for the feature to take effect in Windows. If you
-have Windows 10 Home you must use virtualbox. Please get Windows Pro or
+have Windows 10 Home, you must use Virtualbox. Please get Windows Pro or
 EDU instead.
 
 ## Exercises
@@ -320,7 +320,7 @@ E.Multipass.8:
 > For this assignment we will be using and improving [cloudmesh-multipass](https://github.com/cloudmesh/cloudmesh-multipass)
 >
 > 1. make sure the Provider.py has all important functionality
-> 1. make sure that all functionality is exposed throuth the multipass provider
+> 1. make sure that all functionality is exposed through the multipass provider
 > 1. research pytests as used in cloudmesh-cloud
 > 1. develop a pytest that can be run by anyone but results in a table using Benchmarks from cloudmesh
 > 1. split the work up if needed among the class participants. Also if you are the first to develop 
@@ -328,7 +328,7 @@ E.Multipass.8:
 >
 > Measure the performance of fetching and launching the image with the 
 > different hypervisors on your system. Report the results in a table with 
-> a timer for each hypervisor and distinguish faetching and launching times. 
+> a timer for each hypervisor and distinguish fetching and launching times. 
 > Measure also the time to execute a command in the VM.
 >
 > The table will have the columns
@@ -353,7 +353,7 @@ E.Multipass.9a:
 E.Multipass.9b:
 
 > Create a cloudmesh command to start a k3s cluster 
-> Leverage the template disucussed at
+> Leverage the template discussed at
 > <https://medium.com/better-programming/local-k3s-cluster-made-easy-with-multipass-108bf6ce577c>
 >
 > use 
@@ -364,11 +364,11 @@ E.Multipass.9b:
 >
 > cms k3s [--hypervisor=hyperkit] --names=\"node[0-3]\" deploy
 >
-> where the first note is assumed to be the master. THis commands deploys 
-> on your local computer a 3 node kubernetes cluster.
+> where the first note is assumed to be the master. This command deploys 
+> on your local computer, a 3 node Kubernetes cluster.
 >
 > Extend the 
-> commandlist to include
+> command list to include
 >
 > start, stop, purge, delete, ... and so on. Discuss with others in class
 > what commands should be implemented.
@@ -378,13 +378,13 @@ E.Multipass.10:
 >
 > For this assignment we will be using and improving [cloudmesh-multipass](https://github.com/cloudmesh/cloudmesh-multipass)
 >
-> Look at the the abstract class in
+> Look at the abstract class in
 > 
 > * <https://github.com/cloudmesh/cloudmesh-cloud/blob/master/cloudmesh/abstractclass/ComputeNodeABC.py>
 >
 > Improve the multipass provider while inheriting from ComputeNodeABC.py 
-> and implement as many of the functions as you can and needed. Many need 
-> not to be implemented though.
-> First, provide a list of methoids that you need to implement and than complete it.
-> The entire class is allowed to collaborate with each other. Do pull requests into the Repository.
+> and implement as many of the functions as you can and need. Many need 
+> not to be implemented, though.
+> First, provide a list of methods that you need to implement and then complete it.
+> The entire class is allowed to collaborate with each other. Make pull requests into the Repository.
 >

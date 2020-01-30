@@ -20,7 +20,7 @@ Videos:
 
 ## Defining the term Cloud Computing
 
-In this presentation we review three definitions of cloud
+In this presentation, we review three definitions of cloud
 computing. This includes the definitions by
 
 * NIST
@@ -32,18 +32,18 @@ computing. This includes the definitions by
 We review some of the historical aspects that lead to cloud computing
 and especially look into more recent trends. These trends motivate
 that we need to look at enhancements to the traditional  Service Model
-that include Infrastructure-, Platform- and Software- as a Service.
+that includes Infrastructure-, Platform- and Software- as a Service.
 These enhancements especially are targeting Function-, and Container
 as a Service.
 
 ## Job as a Cloud/Data Engineer
 
-We look at some job related trends that especially focus on the newest
+We look at some job-related trends that especially focus on the newest
 hot job description called **Data Engineer**. It is motivated that
 current job offerings as data engineer is 13% versus 1% for data
 scientists. As this class is targeted towards bringing the engineering
 component towards the data scientists, computer scientists, and
-application developer, This class is ideally suited for increasing
+application developers, This class is ideally suited for increasing
 your marketability.
 
 ## You must be that TALLL
@@ -74,4 +74,4 @@ Learning Willingness (L)
 : We need to constantly learn to keep up as technology changes every 6
   month
 
-Naturally this principal can be applied to other disciplines.
+Naturally, this principle can be applied to other disciplines.
