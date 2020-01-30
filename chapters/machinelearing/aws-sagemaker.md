@@ -67,74 +67,130 @@ preprocess data, you typically do the following:
   attributes separately, you might combine those attributes into a new
   attribute to get a better model.
 
-In Amazon SageMaker, you preprocess example data in a Jupyter notebook on your notebook instance. You use your notebook to fetch your dataset, explore it and prepare it for model training.
+In Amazon SageMaker, you preprocess example data in a Jupyter notebook
+on your notebook instance. You use your notebook to fetch your dataset,
+explore it and prepare it for model training.
 
-Train a model—Model training includes both training and evaluating the model, as follows:
+Train a model—Model training includes both training and evaluating the
+model, as follows:
 
-* Training the model: To train a model, you need an algorithm. The algorithm you choose depends on a number of factors. For a quick, out-of-the-box solution, you might be able to use one of the algorithms that Amazon SageMaker provides.
+* Training the model: To train a model, you need an algorithm. The
+  algorithm you choose depends on a number of factors. For a quick,
+  out-of-the-box solution, you might be able to use one of the
+  algorithms that Amazon SageMaker provides.
 
 
-You also need compute resources for training. Depending on the size of your training dataset and how quickly you need the results, you can use resources ranging from a single, small general-purpose instance to a distributed cluster of GPU instances. For more information, refer the sub-section Train a Model with Amazon SageMaker.
+You also need compute resources for training. Depending on the size of
+your training dataset and how quickly you need the results, you can use
+resources ranging from a single, small general-purpose instance to a
+distributed cluster of GPU instances. For more information, refer the
+sub-section Train a Model with Amazon SageMaker.
 
 
-Evaluating the model—After you've trained your model, you evaluate it to determine whether the accuracy of the inferences is acceptable. In Amazon SageMaker, you use either the AWS SDK for Python (Boto) or the high-level Python library that Amazon SageMaker provides to send requests to the model for inferences.
+Evaluating the model—After you've trained your model, you evaluate it to
+determine whether the accuracy of the inferences is acceptable. In
+Amazon SageMaker, you use either the AWS SDK for Python (Boto) or the
+high-level Python library that Amazon SageMaker provides to send
+requests to the model for inferences.
 
-You use a Jupyter notebook in your Amazon SageMaker notebook instance to train and evaluate your model.
+You use a Jupyter notebook in your Amazon SageMaker notebook instance to
+train and evaluate your model.
 
-* Deploy the model: You traditionally re-engineer a model before you integrate it with your application and deploy it. With Amazon SageMaker hosting services, you can deploy your model independently, decoupling it from your application code. For more information, see Deploy a Model on Amazon SageMaker Hosting Services.
+* Deploy the model: You traditionally re-engineer a model before you
+  integrate it with your application and deploy it. With Amazon
+  SageMaker hosting services, you can deploy your model independently,
+  decoupling it from your application code. For more information, see
+  Deploy a Model on Amazon SageMaker Hosting Services.
 
-Machine learning is a continuous cycle. After deploying a model, you monitor the inferences, then collect "ground truth," and evaluate the model to identify drift. You then increase the accuracy of your inferences by updating your training data to include the newly collected ground truth, by retraining the model with the new dataset. As more and more example data becomes available, you continue retraining your model to increase accuracy.
+Machine learning is a continuous cycle. After deploying a model, you
+monitor the inferences, then collect "ground truth," and evaluate the
+model to identify drift. You then increase the accuracy of your
+inferences by updating your training data to include the newly collected
+ground truth, by retraining the model with the new dataset. As more and
+more example data becomes available, you continue retraining your model
+to increase accuracy.
 
 
 ## Get Start with SageMaker
 
-In this section, we will explain on how you create your first Amazon SageMaker notebook instance, and train a model. You train the model using an algorithm provided by Amazon SageMaker, deploy it, and validate it by sending inference requests to the model's endpoint.
+In this section, we will explain on how you create your first Amazon
+SageMaker notebook instance, and train a model. You train the model
+using an algorithm provided by Amazon SageMaker, deploy it, and validate
+it by sending inference requests to the model's endpoint.
 
-You use this notebook instance for all kind of machine learning models that are available as part of AWS SageMaker notebook instance or customer machine learning libraries.
+You use this notebook instance for all kind of machine learning models
+that are available as part of AWS SageMaker notebook instance or
+customer machine learning libraries.
 
 ### Train a Model with Amazon SageMaker
 
-To train a model in Amazon SageMakar, you can Download the MNIST dataset to your Amazon SageMaker notebook instance, then review the data and preprocess it. For efficient training, you convert the dataset from the numpy.array format to the RecordIO protobuf format. A numpy.array is an n-dimensional array object that the NumPy scientific computing library uses. RecordIO protobuf is a binary data format that the Amazon SageMaker K-Means algorithm expects as input.
+To train a model in Amazon SageMakar, you can Download the MNIST dataset
+to your Amazon SageMaker notebook instance, then review the data and
+preprocess it. For efficient training, you convert the dataset from the
+numpy.array format to the RecordIO protobuf format. A numpy.array is an
+n-dimensional array object that the NumPy scientific computing library
+uses. RecordIO protobuf is a binary data format that the Amazon
+SageMaker K-Means algorithm expects as input.
 
 * Start an Amazon SageMaker training job.
 
 * Deploy the model in Amazon SageMaker.
 
-* Validate the model by sending inference requests to the model's endpoint. You send images of handwritten, single-digit numbers. The model returns the number of the cluster (0 through 9) that the images belong to.
+* Validate the model by sending inference requests to the model's
+  endpoint. You send images of handwritten, single-digit numbers. The
+  model returns the number of the cluster (0 through 9) that the images
+  belong to.
 
-Important to note that, for model training, deployment, and validation, you can use either of the following:
+Important to note that, for model training, deployment, and validation,
+you can use either of the following:
 
 * The high-level Python library provided by Amazon SageMaker
 
 * The AWS SDK for Python (Boto)
 
-The high-level library abstracts several implementation details, and is easy to use. This exercise provides separate code examples using both libraries. If you're a first-time Amazon SageMaker user, we recommend that you use the high-level Python library.
+The high-level library abstracts several implementation details, and is
+easy to use. This exercise provides separate code examples using both
+libraries. If you're a first-time Amazon SageMaker user, we recommend
+that you use the high-level Python library.
 
 Basically, there are two ways to practice this exercise:
 
-Follow the steps to create, deploy, and validate the model. You create a Jupyter notebook in your Amazon SageMaker notebook instance, and copy code, paste it into the notebook, and run it.
+Follow the steps to create, deploy, and validate the model. You create a
+Jupyter notebook in your Amazon SageMaker notebook instance, and copy
+code, paste it into the notebook, and run it.
 
-If you're familiar with using sample notebooks, open and run the following example notebooks that Amazon SageMaker provides in the SageMaker Python SDK section of the SageMaker Examples tab of your notebook instance:
+If you're familiar with using sample notebooks, open and run the
+following example notebooks that Amazon SageMaker provides in the
+SageMaker Python SDK section of the SageMaker Examples tab of your
+notebook instance:
 
 1. kmeans_mnist.ipynb
-
-2. kmeans_mnist_lowlevel.ipynb
+1. kmeans_mnist_lowlevel.ipynb
 
 ### Create a Jupyter Notebook and Initialize Variables
 
-Now, create a Jupyter notebook in your Amazon SageMaker notebook instance and initialize variables.
+Now, create a Jupyter notebook in your Amazon SageMaker notebook
+instance and initialize variables.
 
-To create a Jupyter notebook ,sign in to the Amazon SageMaker console at https://console.aws.amazon.com/sagemaker/.
+To create a Jupyter notebook ,sign in to the Amazon SageMaker console at
+https://console.aws.amazon.com/sagemaker/.
 
-Open the notebook instance, by choosing Open next to its name. The Jupyter notebook server page appears:
+Open the notebook instance, by choosing Open next to its name. The
+Jupyter notebook server page appears:
 
 ![AWS SageMaker](images/sagemaker-jupyter-home-page-ex.png)
 
-* To create a notebook, in the Files tab, choose New, and conda_python3. This pre-installed environment includes the default Anaconda installation and Python 3.
+* To create a notebook, in the Files tab, choose New, and conda_python3.
+  This pre-installed environment includes the default Anaconda
+  installation and Python 3.
 
-* In the Jupyter notebook, under File, choose Save as, and name the notebook.
+* In the Jupyter notebook, under File, choose Save as, and name the
+  notebook.
 
-Copy the following Python code and paste it into your notebook. Add the name of the S3 bucket that you created in Set Up Amazon SageMaker, and run the code. The get_execution_role function retrieves the IAM role you created when you created your notebook instance.
+Copy the following Python code and paste it into your notebook. Add the
+name of the S3 bucket that you created in Set Up Amazon SageMaker, and
+run the code. The get_execution_role function retrieves the IAM role you
+created when you created your notebook instance.
 
 
 ```python
@@ -145,17 +201,23 @@ bucket = 'bucket-name' # Use the name of your s3 bucket here
 
 ### Download, Explore, and Transform the Training Data
 
-Now download the MNIST dataset to your notebook instance. Then review the data, transform it, and upload it to your S3 bucket.
+Now download the MNIST dataset to your notebook instance. Then review
+the data, transform it, and upload it to your S3 bucket.
 
-You transform the data by changing its format from numpy.array to RecordIO. The RecordIO format is more efficient for the algorithms provided by Amazon SageMaker.
+You transform the data by changing its format from numpy.array to
+RecordIO. The RecordIO format is more efficient for the algorithms
+provided by Amazon SageMaker.
 
 #### MNIST dataset
 
-To download the MNIST dataset, copy and paste the following code into the notebook and run it:
+To download the MNIST dataset, copy and paste the following code into
+the notebook and run it:
 
+
+``` python
 %%time
 import pickle, gzip, numpy, urllib.request, json
-``` python
+
 # Load the dataset
 urllib.request.urlretrieve("http://deeplearning.net/data/mnist/mnist.pkl.gz", "mnist.pkl.gz")
 with gzip.open('mnist.pkl.gz', 'rb') as f:
@@ -163,7 +225,8 @@ with gzip.open('mnist.pkl.gz', 'rb') as f:
 ```
 The above code does the following:
 
-* Downloads the MNIST dataset (mnist.pkl.gz) from the deeplearning.net website to your Amazon SageMaker notebook instance.
+* Downloads the MNIST dataset (mnist.pkl.gz) from the deeplearning.net
+  website to your Amazon SageMaker notebook instance.
 
 * Unzips the file and reads the following three datasets into the notebook's memory:
 
@@ -175,7 +238,10 @@ The above code does the following:
 
 #### Training Dataset
 
-Typically, you explore training data to determine what you need to clean up and which transformations to apply to improve model training. For this exercise, you don't need to clean up the MNIST dataset. Simply display one of the images in the train_set dataset.
+Typically, you explore training data to determine what you need to clean
+up and which transformations to apply to improve model training. For
+this exercise, you don't need to clean up the MNIST dataset. Simply
+display one of the images in the train_set dataset.
 
 ```
 %matplotlib inline
@@ -195,17 +261,21 @@ show_digit(train_set[0][30], 'This is a {}'.format(train_set[1][30]))
 
 ```
 
-The code uses the matplotlib library to get and display the 31st image from the training dataset.
+The code uses the matplotlib library to get and display the 31st image
+from the training dataset.
 
 # Amazon SageMaker Examples
 
-This repository contains example notebooks that show how to apply machine learning and deep learning in [Amazon SageMaker](https://aws.amazon.com/sagemaker)
+This repository contains example notebooks that show how to apply
+machine learning and deep learning in [Amazon
+SageMaker](https://aws.amazon.com/sagemaker)
 
 ## Examples
 
 ### Introduction to Ground Truth Labeling Jobs
 
-These examples provide quick walkthroughs to get you up and running with the labeling job workflow for Amazon SageMaker Ground Truth.
+These examples provide quick walkthroughs to get you up and running with
+the labeling job workflow for Amazon SageMaker Ground Truth.
 
 * [From Unlabeled Data to a Deployed Machine Learning Model: A SageMaker Ground Truth Demonstration for Image Classification](ground_truth_labeling_jobs/from_unlabeled_data_to_deployed_machine_learning_model_ground_truth_demo_image_classification) is an end-to-end example that starts with an unlabeled dataset, labels it using the Ground Truth API, analyzes the results, trains an image classification neural net using the annotated dataset, and finally uses the trained model to perform batch and online inference.
 * [Ground Truth Object Detection Tutorial](ground_truth_labeling_jobs/ground_truth_object_detection_tutorial) is a similar end-to-end example but for an object detection task.
@@ -330,14 +400,19 @@ These examples show you to write idiomatic TensorFlow or MXNet and then train or
 
 #### Pre-Built Machine Learning Framework Containers
 
-These examples show you how to build Machine Learning models with frameworks like Apache Spark or Scikit-learn using SageMaker Python SDK.
+These examples show you how to build Machine Learning models with
+frameworks like Apache Spark or Scikit-learn using SageMaker Python SDK.
 
 * [Inference with SparkML Serving](sagemaker-python-sdk/sparkml_serving_emr_mleap_abalone) shows how to build an ML model with Apache Spark using Amazon EMR on Abalone dataset and deploy in SageMaker with SageMaker SparkML Serving.
 * [Pipeline Inference with Scikit-learn and LinearLearner](sagemaker-python-sdk/scikit_learn_inference_pipeline) builds a ML pipeline using Scikit-learn preprocessing and LinearLearner algorithm in single endpoint
 
 ### Using Amazon SageMaker with Apache Spark
 
-These examples show how to use Amazon SageMaker for model training, hosting, and inference through Apache Spark using [SageMaker Spark](https://github.com/aws/sagemaker-spark). SageMaker Spark allows you to interleave Spark Pipeline stages with Pipeline stages that interact with Amazon SageMaker.
+These examples show how to use Amazon SageMaker for model training,
+hosting, and inference through Apache Spark using [SageMaker
+Spark](https://github.com/aws/sagemaker-spark). SageMaker Spark allows
+you to interleave Spark Pipeline stages with Pipeline stages that
+interact with Amazon SageMaker.
 
 * [MNIST with SageMaker PySpark](sagemaker-spark/pyspark_mnist)
 
@@ -354,5 +429,9 @@ These examples show how to use Amazon SageMaker for model training, hosting, and
 
 *Will these examples work outside of Amazon SageMaker Notebook Instances?*
 
-* Although most examples utilize key Amazon SageMaker functionality like distributed, managed training or real-time hosted endpoints, these notebooks can be run outside of Amazon SageMaker Notebook Instances with minimal modification (updating IAM role definition and installing the necessary libraries).
+* Although most examples utilize key Amazon SageMaker functionality like
+  distributed, managed training or real-time hosted endpoints, these
+  notebooks can be run outside of Amazon SageMaker Notebook Instances
+  with minimal modification (updating IAM role definition and installing
+  the necessary libraries).
 
