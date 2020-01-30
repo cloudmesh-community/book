@@ -4,7 +4,7 @@ Previous architecture views were concerned about high-level interactions
 such as the view projected by NIST that introduces a service model based
 on infrastructure, platform, and application.
 
-However, such a view my provide too little detail to develop meaningful services that uses cloud resources in a multi-cloud environment. For
+However, such a view may provide too little detail to develop meaningful services that uses cloud resources in a multi-cloud environment. For
 this reason von Laszewski has devised a Y diagram that showcases the
 interaction between the different layers more clearly we like to refer
 the reader to the Y-cloud scheduling diagram.
@@ -15,7 +15,7 @@ models integrated into the Taxonomy. It includes:
 
 * **Physical Model**: that represents major physical resource layers to
   enable a hierarchical scheduling strategy across multiple data
-  centers, data centers, racks, servers, and computing cores.
+  centers, racks, servers, and computing cores.
 
 * **Resource Model**: that represents models that the scheduling
   algorithm addresses including containers and functions, virtual
@@ -31,7 +31,7 @@ models integrated into the Taxonomy. It includes:
   leveraging established or new scheduling algorithms for these
   models.
 
-To for example develop scheduling algorithms a layered approach can be
+For example, to develop scheduling algorithms, a layered approach can be
 chosen to separate concerns between different layers while utilizing an
 abstracting services, the models project in each layer.
 
