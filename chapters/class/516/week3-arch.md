@@ -141,10 +141,9 @@ This can be completed at a later time throughout the class
 * Why does `self` needs to be used in regular method definitions in classes?
 * What can I do with __init__ and why is it used?
 * What is `cls` and `@classmethods`?
-* Why would one use `@statusmethod`?
-* Write a Provider.py class to interface with multipass. If you can for 
-  some reason not use multipass, emulate its behavior 
-  wile using print statements.
+* Why would one use `@staticmethod`?
+* Write a Provider.py class to interface with multipass. If you can for some reason not use multipass, emulate its behavior 
+  while using print statements.
 
 #### Python Modules
 
@@ -196,7 +195,7 @@ Instead, you **must only** focus on the topic at hand.
 
 So please visit the link and select a topic or suggest your own
 
-<https://docs.google.com/spreadsheets/d/1QxlFCSQI66-zR9H6uI9-N5F99fi23o3enrU51QJdQ7c/edit?usp=sharing >
+<https://docs.google.com/spreadsheets/d/1QxlFCSQI66-zR9H6uI9-N5F99fi23o3enrU51QJdQ7c/edit?usp=sharing>
 
 Please only fill out the white lines and leave the yellow once
 untouched. If there are more than two people in a category, please
