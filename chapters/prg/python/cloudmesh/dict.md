@@ -56,7 +56,7 @@ contain dicts within dicts. For this we can use `FlatDict`.
 from cloudmesh.common.Flatdict import FlatDict
 
 data = {
-    "name": "Gregor"
+    "name": "Gregor",
     "address": {
         "city": "Bloomington",
         "state": "IN"
