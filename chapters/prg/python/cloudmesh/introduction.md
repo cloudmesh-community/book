@@ -24,7 +24,7 @@ write cloudmesh scripts, but can also invoke the functionality from the
 terminal. This is quite an important distinction towards other tools
 that only allow commandline interfaces.
 
-Moreover we also sho you that it is easy to create new commands and add
+Moreover we also show you that it is easy to create new commands and add
 them dynamically to the cloudmesh shell via simple pip installs. 
 
 Cloudmesh is an evolving project and you have the opportunity to improve
