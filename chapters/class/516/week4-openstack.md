@@ -1,5 +1,11 @@
 # Week 4: Openstack :o2:
 
+:o2: please note that the link to Openstack has changed, this is not reflected in the videos. Please use the new link
+
+<https://kvm.tacc.chameleoncloud.org/project/>
+
+:o2: please note that you have not yet been added to openstack
+
 ## Video
 
 In case you have not yet created an ssh key, the following video is
