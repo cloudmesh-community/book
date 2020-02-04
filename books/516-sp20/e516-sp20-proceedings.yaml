@@ -45,15 +45,23 @@ BOOK:
     - "{file.community}/sp20-516-246/master/datacenter.md"
     - "{file.community}/sp20-516-251/master/datacenter.md"
     - "{file.community}/sp20-516-252/master/datacenter.md"
+  - DATACENTER_NEW:
+    - "{file.community}/sp20-516-222/master/datacenter.md"
+    - "{file.community}/sp20-516-231/master/datacenter.md"
+    - "{file.community}/sp20-516-233/master/datacenter.md"
+    - "{file.community}/sp20-516-234/master/datacenter.md"
+    - "{file.community}/sp20-516-236/master/datacenter.md"
+    - "{file.community}/sp20-516-238/master/datacenter.md"
+    - "{file.community}/sp20-516-239/master/datacenter.md"
   - OPEN_PROJECTS:
 #   Deployement Of Databases in Multiple Cloud
     - "{file.community}/fa19-516-158/master/project/report.md"
   - ONGOING_PROJECTS:
     - CLOUDMESH_PI_KUBERNETES:
       - "{file.community}/fa19-516-148/master/project/report.md"
-      - "{file.community}/fa19-516-148/master/project/docker.md"
-      - "{file.community}/fa19-516-148/master/project/pi-setup.md"
       - "{file.community}/fa19-516-148/master/project/sdcard-setup.md"
+      - "{file.community}/fa19-516-148/master/project/pi-setup.md"
+      - "{file.community}/fa19-516-148/master/project/docker.md"
       - "{file.cloudmesh}/cloudmesh_pi_burn/master/README.md"
       - "{file.cloudmesh}/cloudmesh_pi_burn/master/cm-pi-burn.md"
       #     Deployement Of Databases in Multiple Cloud

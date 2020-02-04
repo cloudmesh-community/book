@@ -1,11 +1,16 @@
 # AWS SageMaker :o2:
 
-Amazon SageMaker is a fully managed machine learning service. Using
-Amazon SageMaker, data scientists and developers can quickly and
-easily build and train machine learning models, and then directly
+:o2: This writeup has to be checked for plagiarism.
+
+:o2: grammar
+
+:o2: BibTeX refs
+
+According to Amazon, SageMaker is a fully managed machine learning service. Using
+Amazon SageMaker, data scientists and developers can build and train machine learning models, and then directly
 deploy them into a production-ready hosted environment.
 
-Amazon SageMaker provides following advantages:
+Amazon SageMaker claims to provide the following advantages:
 
 * An integrated Jupyter authoring notebook instance for easy access to your data sources
   for exploration and analysis, so you do not have to manage servers
@@ -20,25 +25,25 @@ Amazon SageMaker provides following advantages:
 
 ## Machine Learning with Amazon SageMaker
 
-We explained a typical machine learning workflow and summarizes how you
+To introduce SageMaker, we explain a typical machine learning workflow and summarize how you
 accomplish those tasks with Amazon SageMaker.
 
 In general, machine learning is all about you *teach* a computer to make
-predictions, or inferences. As a first step, you use an algorithm and
+predictions or inferences. As a first step, you use an algorithm and
 example data to train a model. Then you integrate your model into your
-application to generate inferences in real time and at scale. In a
+application to generate inferences in real-time and at scale. In a
 production environment, a model typically learns from millions of
 example data items and produces inferences in hundreds to less than 20
 milliseconds.
 
-The following ![No](images/no.png) use proper image notation with
-caption and citation as discussed in notation.md diagram illustrates the
-typical workflow for creating a machine learning model:
+The following 
 
-![AWS SageMaker](images/machine_learning_workflow.png)
+![AWS SageMaker](images/machine_learning_workflow.png){#fig:aws-sagemaker}
 
-As the above diagram illustrates, you typically perform the following
-activities:
+@fig:aws-sagemaker illustrates the task of a typical
+example activity:
+
+:o2: this does not make sense, no connection
 
 Generate example data—To train a model, you need example data. The type
 of data that you need depends on the business problem that you want the
@@ -69,7 +74,7 @@ preprocess data, you typically do the following:
 
 In Amazon SageMaker, you preprocess example data in a Jupyter notebook
 on your notebook instance. You use your notebook to fetch your dataset,
-explore it and prepare it for model training.
+explore it, and prepare it for model training.
 
 Train a model—Model training includes both training and evaluating the
 model, as follows:
@@ -82,8 +87,8 @@ model, as follows:
 
 You also need compute resources for training. Depending on the size of
 your training dataset and how quickly you need the results, you can use
-resources ranging from a single, small general-purpose instance to a
-distributed cluster of GPU instances. For more information, refer the
+resources ranging from a single, small general-purpose instance to
+a distributed cluster of GPU instances. For more information, refer the
 sub-section Train a Model with Amazon SageMaker.
 
 
@@ -113,7 +118,7 @@ to increase accuracy.
 
 ## Get Start with SageMaker
 
-In this section, we will explain on how you create your first Amazon
+In this section, we will explain how you create your first Amazon
 SageMaker notebook instance, and train a model. You train the model
 using an algorithm provided by Amazon SageMaker, deploy it, and validate
 it by sending inference requests to the model's endpoint.
@@ -148,7 +153,7 @@ you can use either of the following:
 
 * The AWS SDK for Python (Boto)
 
-The high-level library abstracts several implementation details, and is
+The high-level library abstracts several implementation details and is
 easy to use. This exercise provides separate code examples using both
 libraries. If you're a first-time Amazon SageMaker user, we recommend
 that you use the high-level Python library.
@@ -172,7 +177,7 @@ notebook instance:
 Now, create a Jupyter notebook in your Amazon SageMaker notebook
 instance and initialize variables.
 
-To create a Jupyter notebook ,sign in to the Amazon SageMaker console at
+To create a Jupyter notebook, sign in to the Amazon SageMaker console at
 https://console.aws.amazon.com/sagemaker/.
 
 Open the notebook instance, by choosing Open next to its name. The
@@ -182,9 +187,9 @@ Jupyter notebook server page appears:
 
 * To create a notebook, in the Files tab, choose New, and conda_python3.
   This pre-installed environment includes the default Anaconda
-  installation and Python 3.
+  installation, and Python 3.
 
-* In the Jupyter notebook, under File, choose Save as, and name the
+* In the Jupyter notebook, under `File`, choose Save as, and name the
   notebook.
 
 Copy the following Python code and paste it into your notebook. Add the
@@ -202,9 +207,9 @@ bucket = 'bucket-name' # Use the name of your s3 bucket here
 ### Download, Explore, and Transform the Training Data
 
 Now download the MNIST dataset to your notebook instance. Then review
-the data, transform it, and upload it to your S3 bucket.
+the data, transform it and upload it to your S3 bucket.
 
-You transform the data by changing its format from numpy.array to
+You transform the data by changing its format from numpy array to
 RecordIO. The RecordIO format is more efficient for the algorithms
 provided by Amazon SageMaker.
 
@@ -226,7 +231,7 @@ with gzip.open('mnist.pkl.gz', 'rb') as f:
 The above code does the following:
 
 * Downloads the MNIST dataset (mnist.pkl.gz) from the deeplearning.net
-  website to your Amazon SageMaker notebook instance.
+  Web site to your Amazon SageMaker notebook instance.
 
 * Unzips the file and reads the following three datasets into the notebook's memory:
 
@@ -299,7 +304,7 @@ These examples provide a gentle introduction to machine learning concepts as the
 
 ### SageMaker Automatic Model Tuning
 
-These examples introduce SageMaker's hyperparameter tuning functionality which helps deliver the best possible predictions by running a large number of training jobs to determine which hyperparameter values are the most impactful.
+These examples introduce SageMaker's hyperparameter tuning functionality, which helps deliver the best possible predictions by running a large number of training jobs to determine which hyperparameter values are the most impactful.
 
 * [XGBoost Tuning](hyperparameter_tuning/xgboost_direct_marketing) shows how to use SageMaker hyperparameter tuning to improve your model fits for the [Targeted Direct Marketing](introduction_to_applying_machine_learning/xgboost_direct_marketing) task.
 * [TensorFlow Tuning](hyperparameter_tuning/tensorflow_mnist) shows how to use SageMaker hyperparameter tuning with the pre-built TensorFlow container and MNIST dataset.
@@ -310,7 +315,7 @@ These examples introduce SageMaker's hyperparameter tuning functionality which h
 
 ### Introduction to Amazon Algorithms
 
-These examples provide quick walkthroughs to get you up and running with Amazon SageMaker's custom developed algorithms.  Most of these algorithms can train on distributed hardware, scale incredibly well, and are faster and cheaper than popular alternatives.
+These examples provide quick walkthroughs to get you up and running with Amazon SageMaker's custom-developed algorithms.  Most of these algorithms can train on distributed hardware, scale incredibly well, and are faster and cheaper than popular alternatives.
 
 * [k-means](sagemaker-python-sdk/1P_kmeans_highlevel) is our introductory example for Amazon SageMaker.  It walks through the process of clustering MNIST images of handwritten digits using Amazon SageMaker k-means.
 * [Factorization Machines](introduction_to_amazon_algorithms/factorization_machines_mnist) showcases Amazon SageMaker's implementation of the algorithm to predict whether a handwritten digit from the MNIST dataset is a 0 or not using a binary classifier.
@@ -319,7 +324,7 @@ These examples provide quick walkthroughs to get you up and running with Amazon 
 * [Neural Topic Model (NTM)](introduction_to_amazon_algorithms/ntm_synthetic) uses Amazon SageMaker Neural Topic Model (NTM) to uncover topics in documents from a synthetic data source, where topic distributions are known.
 * [Principal Components Analysis (PCA)](introduction_to_amazon_algorithms/pca_mnist) uses Amazon SageMaker PCA to calculate eigendigits from MNIST.
 * [Seq2Seq](introduction_to_amazon_algorithms/seq2seq_translation_en-de) uses the Amazon SageMaker Seq2Seq algorithm that's built on top of [Sockeye](https://github.com/awslabs/sockeye), which is a sequence-to-sequence framework for Neural Machine Translation based on MXNet.  Seq2Seq implements state-of-the-art encoder-decoder architectures which can also be used for tasks like Abstractive Summarization in addition to Machine Translation.  This notebook shows translation from English to German text.
-* [Image Classification](introduction_to_amazon_algorithms/imageclassification_caltech) includes full training and transfer learning examples of Amazon SageMaker's Image Classification algorithm.  This uses a ResNet deep convolutional neural network to classify images from the caltech dataset.
+* [Image Classification](introduction_to_amazon_algorithms/imageclassification_caltech) includes full training and transfer learning examples of Amazon SageMaker's Image Classification algorithm.  This uses a ResNet deep convolutional neural network to classify images from the Caltech dataset.
 * [XGBoost for regression](introduction_to_amazon_algorithms/xgboost_abalone) predicts the age of abalone ([Abalone dataset](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/regression.html)) using regression from Amazon SageMaker's implementation of [XGBoost](https://github.com/dmlc/xgboost).
 * [XGBoost for multi-class classification](introduction_to_amazon_algorithms/xgboost_mnist) uses Amazon SageMaker's implementation of [XGBoost](https://github.com/dmlc/xgboost) to classify handwritten digits from the MNIST dataset as one of the ten digits using a multi-class classifier. Both single machine and distributed use-cases are presented.
 * [DeepAR for time series forecasting](introduction_to_amazon_algorithms/deepar_synthetic) illustrates how to use the Amazon SageMaker DeepAR algorithm for time series forecasting on a synthetically generated data set.
@@ -330,11 +335,11 @@ These examples provide quick walkthroughs to get you up and running with Amazon 
 * [Object2Vec for multi-label classification](introduction_to_amazon_algorithms/object2vec_multilabel_genre_classification) shows how ObjectToVec algorithm can train on data consisting of pairs of sequences and singleton tokens using the setting of genre prediction of movies based on their plot descriptions.
 * [Object2Vec for sentence similarity](introduction_to_amazon_algorithms/object2vec_sentence_similarity) explains how to train Object2Vec using sequence pairs as input using sentence similarity analysis as the application.
 * [IP Insights for suspicious logins](introduction_to_amazon_algorithms/ipinsights_login) shows how to train IP Insights on a login events for a web server to identify suspicious login attempts.
-* [Semantic Segmentation](introduction_to_amazon_algorithms/semantic_segmentation_pascalvoc) shows how to train a semantic segmentation algorithm using the Amazon SageMaker Semantic Segmentation algorithm. It also demonstrates how to host the model and produce segmentaion masks and probability of segmentation.
+* [Semantic Segmentation](introduction_to_amazon_algorithms/semantic_segmentation_pascalvoc) shows how to train a semantic segmentation algorithm using the Amazon SageMaker Semantic Segmentation algorithm. It also demonstrates how to host the model and produce segmentation masks and probability of segmentation.
 
 ### Amazon SageMaker RL
 
-The following provide examples demonstrating different capabilities of Amazon SageMaker RL.
+Next, we provide examples demonstrating different capabilities of Amazon SageMaker RL.
 
 * [Cartpole using Coach](reinforcement_learning/rl_cartpole_coach) demonstrates the simplest usecase of Amazon SageMaker RL using Intel's RL Coach.
 * [AWS DeepRacer](reinforcement_learning/rl_deepracer_robomaker_coach_gazebo) demonstrates AWS DeepRacer trainig using RL Coach in the Gazebo environment.
@@ -359,13 +364,13 @@ These examples provide more thorough mathematical treatment on a select group of
 
 ### Advanced Amazon SageMaker Functionality
 
-These examples that showcase unique functionality available in Amazon SageMaker.  They cover a broad range of topics and will utilize a variety of methods, but aim to provide the user with sufficient insight or inspiration to develop within Amazon SageMaker.
+These examples showcase unique functionality available in Amazon SageMaker.  They cover a broad range of topics and utilize a variety of methods, but aim to provide the user with sufficient insight or inspiration to develop within Amazon SageMaker.
 
-* [Data Distribution Types](advanced_functionality/data_distribution_types) showcases the difference between two methods for sending data from S3 to Amazon SageMaker Training instances.  This has particular implication for scalability and accuracy of distributed training.
-* [Encrypting Your Data](advanced_functionality/handling_kms_encrypted_data) shows how to use Server Side KMS encrypted data with Amazon SageMaker training. The IAM role used for S3 access needs to have permissions to encrypt and decrypt data with the KMS key.
+* [Data Distribution Types](advanced_functionality/data_distribution_types) showcases the difference between two methods for sending data from S3 to Amazon SageMaker Training instances.  This has implications for scalability and accuracy of distributed training.
+* [Encrypting Your Data](advanced_functionality/handling_kms_encrypted_data) shows how to use Server Side KMS encrypted data with Amazon SageMaker training. The IAM role used for S3 access needs to have permission to encrypt and decrypt data with the KMS key.
 * [Using Parquet Data](advanced_functionality/parquet_to_recordio_protobuf) shows how to bring [Parquet](https://parquet.apache.org/) data sitting in S3 into an Amazon SageMaker Notebook and convert it into the recordIO-protobuf format that many SageMaker algorithms consume.
 * [Connecting to Redshift](advanced_functionality/working_with_redshift_data) demonstrates how to copy data from Redshift to S3 and vice-versa without leaving Amazon SageMaker Notebooks.
-* [Bring Your Own XGBoost Model](advanced_functionality/xgboost_bring_your_own_model) shows how to use Amazon SageMaker Algorithms containers to bring a pre-trained model to a realtime hosted endpoint without ever needing to think about REST APIs.
+* [Bring Your Own XGBoost Model](advanced_functionality/xgboost_bring_your_own_model) shows how to use Amazon SageMaker Algorithms containers to bring a pre-trained model to a real-time hosted endpoint without ever needing to think about REST APIs.
 * [Bring Your Own k-means Model](advanced_functionality/kmeans_bring_your_own_model) shows how to take a model that's been fit elsewhere and use Amazon SageMaker Algorithms containers to host it.
 * [Bring Your Own R Algorithm](advanced_functionality/r_bring_your_own) shows how to bring your own algorithm container to Amazon SageMaker using the R language.
 * [Installing the R Kernel](advanced_functionality/install_r_kernel) shows how to install the R kernel into an Amazon SageMaker Notebook Instance.

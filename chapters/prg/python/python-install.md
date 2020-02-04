@@ -83,7 +83,7 @@ $ brew install python
 
 ## Python 3.8 on Ubuntu 19.10
 
-IN ubuntu 19.10 you have to compile Python from the sources as no official release is yet available.
+In ubuntu 19.10 you have to compile Python from the sources as no official release is yet available.
 
 Please download it from:
  
@@ -99,7 +99,7 @@ cd Python-3.8.0/
 ./configure
 make
 sudo make altinstall
-python3.8 -version
+python3.8 --version
 ```
 
 ## Python 3.8 on Ubuntu 18.04

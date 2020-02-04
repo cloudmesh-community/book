@@ -329,7 +329,14 @@ On the Cloudmesh side we will introduce you soon to
 
 ## Online Meeting Recording
 
-:o2: This is a recording from last year
+
+Lab meeting: 
+
+* [![Video](images/video.png) Online Meeting Recording discussing Projects, bibtex jabref, cloudmesh  (1:05:40)](https://www.youtube.com/watch?v=Vm65mP8st9I)
+
+* :o2: more videos to come they are currently uploading
+
+This is a recording from last year
 
 This meeting took place Sep 10, 2019, 8-9pm EST
 
