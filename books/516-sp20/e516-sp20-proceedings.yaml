@@ -29,30 +29,69 @@ BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"
     - "{git.credit}/disclaimer.md"
+  - CLOUD_AI_SERVICES:
+    - OVERVIEW:
+      - "{file.community}/sp20-516-239/master/chapter/ai-services-overview.md"
+    - GOOGLE:
+      - "{file.community}/sp20-516-240/master/chapter/ai-google.md"
+      - "{file.community}/sp20-516-247/master/chapter/ai-google-gaming.md"
+      - "{file.community}/sp20-516-240/master/chapter/ai-google-automl.md"
+      - "{file.community}/sp20-516-247/master/chapter/ai-google-gaming.md"
+    - AWS:
+      - "{file.community}/sp20-516-223/master/chapter/ai-aws-overview.md"
+      - "{file.community}/sp20-516-223/master/chapter/ai-aws-robomaker.md"
+      - "{file.community}/sp20-516-227/master/chapter/ai-aws-comprehend.md"
+      - "{file.community}/sp20-516-236/master/chapter/ai-aws-polly.md"
+      - "{file.community}/book/master/chapters/machinelearing/aws-sagemaker.md"
+      - "{file.community}/sp20-516-250/master/chapter/aws-sagemaker-groundtruth.md"
+      - "{file.community}/sp20-516-255/master/chapter/ai-aws-forecast.md"
+      - "{file.community}/sp20-516-253/master/chapter/ai-aws-rekognition.md"
+    - AZURE:
+      - "{file.community}/sp20-516-243/master/chapter/ai-azure-overview.md"
+      - "{file.community}/sp20-516-238/master/chapter/ai-azure-bot.md"
+    - IBM:
+      - "{file.community}/sp20-516-230/master/chapter/ai-ibm-overview.md"
+    - ORACLE:
+      - "{file.community}/sp20-516-226/master/chapter/ai-oracle-overview.md"
+    - HARDWARE:
+      - "{file.community}/sp20-516-244/master/chapter/ai-google-coral.md"
+  - HYPERVISOR:
+      - "{file.community}/sp20-516-233/master/chapter/hyperv.md"
+  - CLOUD_VOLUME:
+      - "{file.community}/sp20-516-222/master/chapter/cloud-volume.md"
+      - "{file.community}/sp20-516-222/master/chapter/volume-aws.md"
+      - "{file.community}/sp20-516-222/master/chapter/volume-oracle.md"
+#      - "{file.community}/sp20-516-248/master/chapter/volume-azure.md"
+#      - "{file.community}/sp20-516-248/master/chapter/volume-google.md"
+  - KUBERBETES:
+      - "{file.community}/sp20-516-231/master/chapter/k8-scheduler.md"
+      - "{file.community}/sp20-516-237/master/chapter/k8-scheduling-pods.md"
+      - "{file.community}/sp20-516-232/master/chapter/k8-advanced-scheduling.md"
   - DATACENTER:
     - "{file.community}/sp20-516-220/master/datacenter.md"
+    - "{file.community}/sp20-516-222/master/datacenter.md"
     - "{file.community}/sp20-516-223/master/datacenter.md"
     - "{file.community}/sp20-516-224/master/datacenter.md"
     - "{file.community}/sp20-516-226/master/datacenter.md"
     - "{file.community}/sp20-516-227/master/datacenter.md"
     - "{file.community}/sp20-516-229/master/datacenter.md"
+    - "{file.community}/sp20-516-230/master/datacenter.md"
+    - "{file.community}/sp20-516-231/master/datacenter.md"
     - "{file.community}/sp20-516-232/master/datacenter.md"
+    - "{file.community}/sp20-516-233/master/datacenter.md"
+    - "{file.community}/sp20-516-234/master/datacenter.md"
     - "{file.community}/sp20-516-235/master/datacenter.md"
+    - "{file.community}/sp20-516-236/master/datacenter.md"
     - "{file.community}/sp20-516-237/master/datacenter.md"
+    - "{file.community}/sp20-516-238/master/datacenter.md"
+    - "{file.community}/sp20-516-239/master/datacenter.md"
     - "{file.community}/sp20-516-240/master/datacenter.md"
+    - "{file.community}/sp20-516-241/master/datacenter.md"
     - "{file.community}/sp20-516-243/master/datacenter.md"
     - "{file.community}/sp20-516-244/master/datacenter.md"
     - "{file.community}/sp20-516-246/master/datacenter.md"
     - "{file.community}/sp20-516-251/master/datacenter.md"
     - "{file.community}/sp20-516-252/master/datacenter.md"
-  - DATACENTER_NEW:
-    - "{file.community}/sp20-516-222/master/datacenter.md"
-    - "{file.community}/sp20-516-231/master/datacenter.md"
-    - "{file.community}/sp20-516-233/master/datacenter.md"
-    - "{file.community}/sp20-516-234/master/datacenter.md"
-    - "{file.community}/sp20-516-236/master/datacenter.md"
-    - "{file.community}/sp20-516-238/master/datacenter.md"
-    - "{file.community}/sp20-516-239/master/datacenter.md"
   - OPEN_PROJECTS:
 #   Deployement Of Databases in Multiple Cloud
     - "{file.community}/fa19-516-158/master/project/report.md"

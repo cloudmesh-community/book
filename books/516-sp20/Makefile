@@ -22,21 +22,27 @@ update:
 	cd ../../..; cloudmesh-installer git pull 516
 	cd ../../..; cloudmesh-installer git pull storage
 
+killepub:
+ifeq ($(OS), osx)
+	-killall Books
+endif
+
+p:
+	make -f Makefile proceedings
+	make -f Makefile viewp
 
 proceedings: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-proceedings.yaml get
 	mv dest/vonLaszewski-$(NAME)-proceedings.epub $(FINAL)/docs
-	-killall Books
-	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-proceedings.epub
 
 draft: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-draft.yaml get
 	mv dest/vonLaszewski-$(NAME)-draft.epub $(FINAL)/docs
-	-killall Books
+	make -f Makefile killeub
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-draft.epub
 
 syllabus: clean fonts version
@@ -44,7 +50,8 @@ syllabus: clean fonts version
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-syllabus.yaml get
 	mv dest/vonLaszewski-$(NAME)-syllabus.epub $(FINAL)/docs/vonLaszewski-$(NAME)-syllabus.epub
-	#-killall Books
+	#make -f Makefile killeub
+
 	#$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-syllabus.epub
 
 epub: clean fonts version
@@ -73,8 +80,13 @@ bib:
 version:
 	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
+
+viewp:
+	make -f Makefile killeub
+	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-proceedings.epub
+
 view:
-	-killall Books
+	make -f Makefile killeub
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME).epub
 
 authors:

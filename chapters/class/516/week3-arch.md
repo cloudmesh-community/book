@@ -332,9 +332,13 @@ On the Cloudmesh side we will introduce you soon to
 
 Lab meeting: 
 
-* [![Video](images/video.png) Online Meeting Recording discussing Projects, bibtex jabref, cloudmesh  (1:05:40)](https://www.youtube.com/watch?v=Vm65mP8st9I)
+1. [![Video](images/video.png) Online Meeting Recording discussing Projects, multipass,  cloudmesh  (2:16:40)](https://www.youtube.com/watch?v=I-k8QuuFfJY)
+2. [![Video](images/video.png) Online Meeting Recording discussing Projects, Twillo project discussion, bibtex jabref, cloudmesh  (1:05:40)](https://www.youtube.com/watch?v=Vm65mP8st9I)
 
-* :o2: more videos to come they are currently uploading
+I have only written down some of the topics, if you find additional
+topics we talked about, please correct them via a pull request in github.
+
+FYI. Twillo has not been chosen by the student.
 
 This is a recording from last year
 
