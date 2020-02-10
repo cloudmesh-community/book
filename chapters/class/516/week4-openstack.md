@@ -1,10 +1,27 @@
-# Week 4: Openstack :o2:
+# Week 4: Openstack
 
-:o2: please note that the link to Openstack has changed, this is not reflected in the videos. Please use the new link
+---
+
+![Video](images/warning.png) Please note that the link to Openstack has
+changed, this is not reflected in the videos. Please use the new link
 
 <https://kvm.tacc.chameleoncloud.org/project/>
 
-:o2: please note that you have not yet been added to openstack
+![Video](images/warning.png) Please note that we simplified the
+cloudmesh-instaler as many students forgot to specify the -e option.
+We have simply ommitted the -e from the new cloudmesh-installer
+
+Make sure to always update things with 
+
+```bash
+cd cm
+pip install cloudmesh-installer -U
+cloudmesh-installer pull BUNDLE
+```
+
+Where bundle is the name of the bundle you like to update
+
+---
 
 ## Video
 
