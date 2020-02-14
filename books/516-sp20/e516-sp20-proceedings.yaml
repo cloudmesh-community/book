@@ -34,7 +34,6 @@ BOOK:
       - "{file.community}/sp20-516-239/master/chapter/ai-services-overview.md"
     - GOOGLE:
       - "{file.community}/sp20-516-240/master/chapter/ai-google.md"
-      - "{file.community}/sp20-516-247/master/chapter/ai-google-gaming.md"
       - "{file.community}/sp20-516-240/master/chapter/ai-google-automl.md"
       - "{file.community}/sp20-516-247/master/chapter/ai-google-gaming.md"
     - AWS:
