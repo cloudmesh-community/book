@@ -71,6 +71,38 @@ in the terminal command or in your `~/.bash_profile`
 
 ![Question](images/question.png) students contribute
 
+Vagrant can be installed on linux through multiple ways. Before you install vagrant on Linux, first make sure VirtualBox is installed.
+
+On Ubuntu, you can install using 
+
+* apt install
+
+```bash
+
+sudo apt install vagrant
+
+```
+
+* Manual Zip Download
+
+Download the zip file for linux from <https://www.vagrantup.com/downloads.html> and unzip the zip file.
+
+* Automated Zip Download
+
+Alternatively, you can use the following bash commands to pick the latest zip and unzip it to ~/software folder.
+
+``` bash
+export VAGRANT_URL=https://www.vagrantup.com/downloads.html
+#Curl and extract the zip file url from the download page
+export VAGRANT_FILE_URL=`curl $VAGRANT_URL 2>&1 | grep -o -E 'href="([^"#]+)"' | cut -d'"' -f2 | grep -E 'vagrant_[0-9.]*_linux_amd64.zip'`
+
+wget -O ~/Downloads/vagrant_latest_amd64.zip $VAGRANT_FILE_URL
+#Unzip the file into ~/softwares folder.
+unzip -d ~/software ~/Downloads/vagrant_latest_amd64.zip
+#Add vagrant to path
+export PATH=$PATH:~/software
+```
+
 ## Usage
 
 To download, start and login into install the 18.04 image:
