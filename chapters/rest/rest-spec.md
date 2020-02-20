@@ -98,7 +98,7 @@ openapi: 3.0.2
 
 Next, metadata can be specified under *info* field such as *title*,
 *version*, *description*, etc. Additionally, license, contact
-information can also be specified. *tile* and *version* are mandatory
+information can also be specified. *title* and *version* are mandatory
 fields under *info*.
 
 ```yaml
