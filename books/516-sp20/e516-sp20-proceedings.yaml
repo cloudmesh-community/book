@@ -39,7 +39,7 @@ BOOK:
     - AWS:
       - "{file.community}/sp20-516-223/master/chapter/ai-aws-overview.md"
       - "{file.community}/sp20-516-223/master/chapter/ai-aws-robomaker.md"
-      - "{file.community}/sp20-516-227/master/chapter/ai-aws-comprehend.md"
+#broken      - "{file.community}/sp20-516-227/master/chapter/ai-aws-comprehend.md"
       - "{file.community}/sp20-516-236/master/chapter/ai-aws-polly.md"
       - "{file.community}/book/master/chapters/machinelearing/aws-sagemaker.md"
       - "{file.community}/sp20-516-250/master/chapter/aws-sagemaker-groundtruth.md"
@@ -64,8 +64,8 @@ BOOK:
 #      - "{file.community}/sp20-516-248/master/chapter/volume-google.md"
   - KUBERBETES:
       - "{file.community}/sp20-516-231/master/chapter/k8-scheduler.md"
-      - "{file.community}/sp20-516-237/master/chapter/k8-scheduling-pods.md"
-      - "{file.community}/sp20-516-232/master/chapter/k8-advanced-scheduling.md"
+#broken      - "{file.community}/sp20-516-237/master/chapter/k8-scheduling-pods.md"
+#broken      - "{file.community}/sp20-516-232/master/chapter/k8-advanced-scheduling.md"
   - DATACENTER:
     - "{file.community}/sp20-516-220/master/datacenter.md"
     - "{file.community}/sp20-516-222/master/datacenter.md"

@@ -30,7 +30,7 @@ on your computer. If you have not yet done so, please do. We recommend
 that you use python from python.org. 
 
 We found out over the last two weeks that some students rely on anaconda
-for other classes but do not know how to use in anaconda a virtual env. Please find out.
+for other classes but do not know how to use it in anaconda a virtual env. Please find out.
  
 If you can not, we found it may be easier to create for this class a
 different user as your other teachers may have given you wrong
@@ -88,6 +88,8 @@ Please provide your answers in the notebook.md file.
 
 * Is anaconda modifying your bashrc, zshprofile, or registry?
 
+* Showcase how to install cloudmesh under andaconda.
+
 
 ### Python Language review
 
@@ -135,10 +137,10 @@ In one of the examples `locals()` is used.
 
 #### Python Classes 
 
-This can be completed at a later time throughout the class
+This can be completed at a later time throughout the class:
 
 * What is `self` in classes?
-* Why does `self` needs to be used in regular method definitions in classes?
+* Why does `self` need to be used in regular method definitions in classes?
 * What can I do with __init__ and why is it used?
 * What is `cls` and `@classmethods`?
 * Why would one use `@staticmethod`?
@@ -147,7 +149,7 @@ This can be completed at a later time throughout the class
 
 #### Python Modules
 
-This can be completed at a later time throughout the class
+This can be completed at a later time throughout the class:
 
 * What is a setup.py file (use google)
 * What is the difference between `pip install .` and `pip install -e .`
@@ -225,15 +227,14 @@ Due dates:
 
 ## Project Selection
 
-Deadline: Feb 10 last day to hand in your project proposal
+Deadline: Feb 16 last day to hand in your project proposal
 
 You will be selecting a cloud-related project over the next 2 weeks that
 you will be developing until the end of the semester. The project must
 have the following requirements:
 
 * Programming must be done using python if another programming language
-  is used, please contact us and justify the use. You will also have to do part of your programming to, for example, coordinated the deployment or
-  the benchmark likely in python. We also accept
+  is used, please contact us and justify the use. You will also have to do part of your programming, to, for example, coordinated the deployment or the benchmark likely in python. We also accept
   JavaScript if you like to develop a GUI for Cloudmesh. 
   We also have some start using electron.
 
@@ -244,7 +245,7 @@ have the following requirements:
   service (please do not use swagger codegen). We will teach you how to 
   do that in a future activity.
 
-* The project must use at least 1 + n clouds for each team member. Where
+* The project must use at least 1 + n clouds for each team member. where
   n is the number of team members with maximum 3 team members. We will
   teach you how to do that in a future activity.
 
@@ -261,9 +262,8 @@ have the following requirements:
   and contrast it with AI services offered by cloud providers. This will
   be discussed in upcoming lectures.
 
-* You must provide a report with meaningful benchmarks. 
-
-* You will have to write a report. We will discuss with you how to do
+* You must provide a report with meaningful benchmarks. The report is 
+  written in markdown. We will discuss with you how to do
  that in a future lecture.
 
 Please note that the above requirements also hold true if you use
@@ -273,12 +273,13 @@ OpenStack, ...
 Certain projects will have custom deliverables that we will refine with
 you once you have chosen such a project. For example, if you were to chose a 
 cloudmesh project you will be asked to develop a manual instead of a report.
+However, you still have to do the benchmarks.
 
 A preliminary list of projects is available at.
 
 * <https://cloudmesh.github.io/cloudmesh-manual/projects/>
 
-Others are also posted in piazza. We will add additional project ideas
+Others are also posted in Piazza. We will add additional project ideas
 once they become available. Please note that we consider the Cloudmesh
 related projects easy as we introduce you gradually in all aspects as
 part of the class to deliver a successful project.
@@ -292,12 +293,12 @@ to 12 weeks to be completed. It is not allowed to just search on
 `github` or another book and *replicate* a project done by someone
 else. Your project must have a novel component. Please note this class
 is called Engineering Cloud Computing we must see clearly an aspect
-that you engineer the cloud, e.g. the setup of a reproducible cloud
+that you engineer the cloud, e.g., the setup of a reproducible cloud
 environment is mandatory. Please ask questions and understand
 this. While you are able to use all services, all images must be
-created from scratch and we must be able to reproduce them. We will
+created from scratch, and we must be able to reproduce them. We will
 decline all projects that point us to images that you ask us to
-download and uploaded by you on github, dockerhub or similar. Instead
+download and uploaded by you on github, dockerhub or similar. Instead,
 you must provide us with scripts, dockerfiles, makefiles or similar
 that create the images. You are allowed to use images hosted by major
 vendors such as an ubuntu19.04 image or on chameleon cloud the images
@@ -314,7 +315,7 @@ The concepts we will need are listed in the Syllabus.
 On the python side, we will introduce you to 
 
 * pytest
-* github API as an example for a REST service
+* GitHub API as an example for a REST service
 * Azure python API
 * AWS boto
 * OpenstackSDK API
@@ -335,14 +336,12 @@ Lab meeting:
 1. [![Video](images/video.png) Online Meeting Recording discussing Projects, multipass,  cloudmesh  (2:16:40)](https://www.youtube.com/watch?v=I-k8QuuFfJY)
 2. [![Video](images/video.png) Online Meeting Recording discussing Projects, Twillo project discussion, bibtex jabref, cloudmesh  (1:05:40)](https://www.youtube.com/watch?v=Vm65mP8st9I)
 
-I have only written down some of the topics, if you find additional
+I have only written down some of the topics if you find additional
 topics we talked about, please correct them via a pull request in github.
 
 FYI. Twillo has not been chosen by the student.
 
-This is a recording from last year
-
-This meeting took place Sep 10, 2019, 8-9pm EST
+This is a recording from last year. This meeting took place Sep 10, 2019, 8-9pm EST
 
 * [![Video](images/video.png) Online Meeting Recording for Week 3 (1:54:01)](https://www.youtube.com/watch?v=DD5rBVk3kZw)
 
