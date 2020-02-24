@@ -133,12 +133,12 @@ Figures have a caption and can be referred to in the ePub simple with a
 number. We show such a reference pointer while referring to
 @fig:code-example.
 
-![Figure example](images/code.png){#fig:code-example width=1in}
+![Figure example [@las14cloudmeshmultiple]](images/code.png){#fig:code-example width=1in}
 
 Figures must be written in the md as
 
 ```markdown
-![Figure example](images/code.png){#fig:code-example width=1in}
+![Figure example [@las14cloudmeshmultiple]](images/code.png){#fig:code-example width=1in}
 ```
 
 Note that the text must be in one line and must not be broken up even if
@@ -148,7 +148,13 @@ references must include the `#fig:` followed by a unique identifier.
 Please note that identifiers must be unique and that identifies
 such as `#fig:cloud` or similar simple identifiers are a poor choice and
 will likely not work. To check, please list all lines with an identifier, 
-such as.
+such as. Also not that if the image is copied form the internet you must 
+not use the http link, but you must copy the image into the images folder. 
+In addition for these images you must create a bibtex entru to the 
+source where this image originated from. This applies also to images 
+that you reused in other papers of yours. However if you have created 
+the image yoruslef and it is not just a redrawing of somone elses work, 
+you do not need a citation.
 
 ```bash
 $ grep -R "#fig:" chapters
