@@ -474,10 +474,9 @@ potentially on different pages dependent on your output device.
 
 ### Why must I avoid screenshots for terminal output?
 
-Please note that is is not allowed to use screenshots of terminals and
-we must use Copy and paste and use markdown code mode to frame it.
-Obfiously we can search in text, but not in eimages as part of epub or
-markdown.
+Please note that is is not allowed to use
+screenshots of terminals and we must use Copy and paste and use markdown code mode to frame it. 
+Obfiously we can search in text, but not in eimages as part of epub or markdown. 
 
 ## Epub and Document Related Questions
 
