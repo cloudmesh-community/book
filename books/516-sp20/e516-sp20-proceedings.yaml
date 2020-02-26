@@ -54,8 +54,6 @@ BOOK:
       - "{file.community}/sp20-516-229/master/chapter/ai-oracle-overview.md"
       - "{file.community}/sp20-516-229/master/chapter/ai-oracle-machine-learning.md"
       - "{file.community}/sp20-516-229/master/chapter/ai-oracle-data-science.md"
-    - HARDWARE:
-      - "{file.community}/sp20-516-244/master/chapter/ai-google-coral.md"
   - HYPERVISOR:
       - "{file.community}/sp20-516-233/master/chapter/hyperv.md"
   - CLOUD_VOLUME:
@@ -88,7 +86,6 @@ BOOK:
     - "{file.community}/sp20-516-240/master/datacenter.md"
     - "{file.community}/sp20-516-241/master/datacenter.md"
     - "{file.community}/sp20-516-243/master/datacenter.md"
-    - "{file.community}/sp20-516-244/master/datacenter.md"
     - "{file.community}/sp20-516-246/master/datacenter.md"
     - "{file.community}/sp20-516-251/master/datacenter.md"
     - "{file.community}/sp20-516-252/master/datacenter.md"
