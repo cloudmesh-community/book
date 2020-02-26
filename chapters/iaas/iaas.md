@@ -4,9 +4,9 @@
 
 ![](images/learning.png) **Learning Objectives**
 
-* Review IaaS servise by prominent cloud providers.
-* Understand how to write Python programs on managing virtual machines with libcloud.
-* Understand how to write Python programs on managing data services with libcloud.
+* Review IaaS service by prominent cloud providers.
+* Understand how to write Python programs on managing virtual machines with python-client apis.
+* Understand how to write Python programs on managing data services with python-client apis.
 * Experiment with cloud providers while practially testing them.
 
 > ![Warning](images/warning.png) *Be careful with your allocation.*
@@ -43,7 +43,7 @@ We distinguish the following categories of infrastructure:
 We also like to remind you that such IaaS as parts of clouds can
 either be accessed public, private or in a hybrid fashion.
 
-Within the next view section we will focus on some of the main
+In the next few sections we will focus on some of the main
 providers of IaaS.
 
 This includes
@@ -52,18 +52,18 @@ This includes
 * Azure
 * Google
 
-Additionally, we also have
+Additionally, we also explore
 
 * Watson
 
-which although provides IaaS focusses more on delivering AI platforms
+which provides IaaS focusing more on delivering AI platforms
 and related services to the community.
 
-On the research side wi will be focussing on
+On the research side, we will focus on
 
 * Chameleon Cloud.
 
-Some of the services listed provide a free small contingent of IaaS
+Some of the services listed above provide a free small contingent of IaaS
 offerings that you can use. The use of this free tier will be
 sufficient to conduct this class.
 
