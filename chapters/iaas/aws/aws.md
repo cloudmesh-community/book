@@ -68,33 +68,23 @@ Amazon offers the following container based services
 
 ### Serverless Compute using AWS Lambda
 
- In addition to these services a number of additional compute services
-Serverless computing or FaaS is a new cloud computing paradigm that
-has are offered which you can find in the Appendix. This includes
-gained popularity recently.  Serverless Computing with AWS Lambda.
 Serverless computing or Function as a Service (FaaS) is a new cloud
-computing paradigm that has gained popularity recently. AWS Lambda was
-one of the first serverless computing services that was made available
-to the public, Serverless computing allows users to run small
+computing paradigm that has gained popularity recently. 
+AWS Lambda was one of the first serverless computing services that was made available to the public. 
+Serverless computing allows users to run small
 functions in the cloud without having to worry about resource
 requirements. More information regarding AWS Lambda can be found in
 the following document
 
 * <https://aws.amazon.com/lambda/>
 
-### Serverless Compute using AWS Lambda
-
-Serverless computing or FaaS is a new cloud computing paradigm that has
-gained popularity recently.
-
-
-
+A list of Serverless computing or FaaS offered can be fount in the Appendix.
 
 ### Storage
 
 AWS provides many storage services that users can leverage for developing
-applications and solutions. The next list showcases AWS storage
-services. Amazon offers the following storage services
+applications and solutions. The following list showcases AWS storage
+services offered by Amazon.
 
 * [Amazon Simple Storage Service
 (S3)](https://aws.amazon.com/s3/?nc2=h_mo)
@@ -111,9 +101,9 @@ Marketplace](https://aws.amazon.com/marketplace/b/2649337011/ref=mkt_ste_l2_S3CD
 ### Databases
 
 
-AWS also provides many data base solutions. AWS has both SQL based
-databases and NoSQL based databases. The next list shows the database
-services that AWS offers. And other database related services
+AWS also provides many database solutions. AWS has both SQL based
+databases and NoSQL based databases. The following list shows the database
+services offered by Amazon.
 
 * [Amazon Aurora](https://aws.amazon.com/rds/aurora/?nc2=h_mo)
 * [Amazon RDS](https://aws.amazon.com/rds/?nc2=h_mo)
@@ -129,14 +119,14 @@ Marketplace](https://aws.amazon.com/marketplace/search/results/ref=mkt_ste_l2_da
 
 
 ## Locations
-As the following figure shows: @fig:aws-locations.
+As the following figure shows: @fig:aws-locations Amazon has data centers in many regions accross the world. 
 
 ![AWS-Locations [Source](https://aws.amazon.com/)](images/aws-locations.png){#fig:aws-locations}
 
 
 
 
-## Creating an account
+## Creating an AWS account
 
 In order to create a AWS account you will need the following
 
@@ -153,7 +143,7 @@ including your email address as shown in the image: @fig:aws-signup.
 
 Next you will be asked to provide further details such as your name,
 address and phone number. After the additional details have been
-provided. AWS will ask for credit/debit card details as shown: @fig:payment-information.
+provided, AWS will ask for credit/debit card details as shown: @fig:payment-information.
 They require this information to verify your identity and make sure
 they have a method to charge you if needed. However no charges will be
 applied to your credit/debit card unless you use the AWS services and
@@ -176,7 +166,7 @@ services that are available to you through AWS as shown in the image
 
 ### Introduction
 
-Amazon's CLI allows for programatic interaction with AWS product through the command line. CLI provide many pre-built functions that allow for interaction with Amazon's Elastic Compute Cloud (EC2) instances and S3 storage.
+Amazon's CLI allows for programatic interaction with AWS services through the command line. CLI provide many pre-built functions that allow for interaction with Amazon's Elastic Compute Cloud (EC2) instances and S3 storage.
 
 ### Prerequisites
 * [Linux](https://github.com/cloudmesh-community/book/blob/master/chapters/linux/linux.md)
@@ -186,14 +176,14 @@ Amazon's CLI allows for programatic interaction with AWS product through the com
 * [AWS Key Pair](https://github.com/cloudmesh-community/book/blob/master/chapters/iaas/aws/aws.md#setting-up-key-pair)
 
 #### Install CLI
-Run the follwoing code to install CLI.
+Run the following code to install AWS CLI.
 
 ```bash
 pip install awscli
 ```
 
 #### Configure CLI
-Using the following code to configure AWS using. You will need to specify four parameters:
+Use the following code to configure AWS CLI. You will need to specify four parameters:
 
 1. AWS Access Key ID
 2. AWS Secret Access Key
@@ -245,7 +235,7 @@ and learning purposes. For example under the free tier you are able to
 use 750 hours of EC2 resources per month for the first 12 months after
 account creation. However it is important to make note of important
 details that are included in the limits. For example for the 750 hours
-of free EC2 usage, you can only use "EC2 Micro" instances, using any
+of free EC2 usage, you can only use "EC2 Micro" instances, and using any
 other instance type for your EC2 machine will not fall under the free
 tier agreement and you will be charged for them, see picture: @fig:free-tier. To view all the AWS
 free tier details visit [AWS Free Tier](https://aws.amazon.com/free/)
@@ -388,13 +378,6 @@ documents.
   <https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html>
 * S3: <https://docs.aws.amazon.com/cli/latest/reference/s3/index.html>
 
-Amazon Web Services (AWS) is a cloud platform that provides a large
-number os services for individuals and enterprises. You can get an
-overview of the AWS offering at
-[Amazon Web Services Overview](aws.md). This section will guide
-through the processes of creating an AWS account and explain the free
-tier details so that you can leverage the tools and products available
-in AWS for your work and research.
 
 
 ## Access from Python
@@ -404,7 +387,7 @@ in AWS for your work and research.
 
 Boto is a Python software development kit specifically targeting
 Amazon Web Services (AWS). It allows access to services such as S3 and
-EC2. It is using object oriented programming paradigms ta access the
+EC2. It is using object oriented programming paradigms to access the
 lower level services. The advantage is that it is written just for
 Amazon and thus we assume it will be developed with high quality due
 to its specialization. However this is also its limitation as in
