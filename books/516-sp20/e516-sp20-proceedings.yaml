@@ -51,7 +51,9 @@ BOOK:
     - IBM:
       - "{file.community}/sp20-516-230/master/chapter/ai-ibm-overview.md"
     - ORACLE:
-      - "{file.community}/sp20-516-226/master/chapter/ai-oracle-overview.md"
+      - "{file.community}/sp20-516-229/master/chapter/ai-oracle-overview.md"
+      - "{file.community}/sp20-516-229/master/chapter/ai-oracle-machine-learning.md"
+      - "{file.community}/sp20-516-229/master/chapter/ai-oracle-data-science.md"
     - HARDWARE:
       - "{file.community}/sp20-516-244/master/chapter/ai-google-coral.md"
   - HYPERVISOR:
@@ -65,13 +67,12 @@ BOOK:
   - KUBERBETES:
       - "{file.community}/sp20-516-231/master/chapter/k8-scheduler.md"
 #broken      - "{file.community}/sp20-516-237/master/chapter/k8-scheduling-pods.md"
-#broken      - "{file.community}/sp20-516-232/master/chapter/k8-advanced-scheduling.md"
+      - "{file.community}/sp20-516-232/master/chapter/k8-advanced-scheduling.md"
   - DATACENTER:
     - "{file.community}/sp20-516-220/master/datacenter.md"
     - "{file.community}/sp20-516-222/master/datacenter.md"
     - "{file.community}/sp20-516-223/master/datacenter.md"
     - "{file.community}/sp20-516-224/master/datacenter.md"
-    - "{file.community}/sp20-516-226/master/datacenter.md"
     - "{file.community}/sp20-516-227/master/datacenter.md"
     - "{file.community}/sp20-516-229/master/datacenter.md"
     - "{file.community}/sp20-516-230/master/datacenter.md"
