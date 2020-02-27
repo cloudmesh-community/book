@@ -22,7 +22,7 @@ file:
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
-  "manualfaq": "file://../../../cloudmesh-manual/master/docs-source/source/faq/"
+  "manualfaq": "file://../../../cloudmesh-manual/docs-source/source/faq/"
 BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"    
