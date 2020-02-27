@@ -1,4 +1,4 @@
-# Week 5: Cloud VM Compute Service :o2:
+# Week 5: Cloud VM Compute Service
 
 ## Videos
 
@@ -43,8 +43,9 @@ projects much easier in the long run.
 ## Exercise Cloud API
 
 This assignment may take 2 weeks to complete dependent on experience of 
-studnets with Python. 
-
+studnets with Python. Chose an API related to one of the clouds you chose for your project. 
+Please remember that we do have cloudmesh and a significan amount of Providers exist. 
+You are allowed to reuse the cloudmesh providers.
 
 * CloudAPI.1: Find a cloud you like and identify the native Python API (but not 
   libcloud, in case of openstack use the openstack sdk which is new

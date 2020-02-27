@@ -1,6 +1,6 @@
 # What is IBM Watson and why is it important?
 
-In years past we traditionally typed our questions into a query based search engine and it would return relevant content.  As we start interacting with our devices more in conversation through natural language processing, we need an answer to a question - not a list of relevant information.  We need the power of question answering (QA) technology.
+In past years we traditionally typed our questions into a query based search engine and it would return relevant content.  As we start interacting with our devices more in conversation through natural language processing, we need an answer to a question - not a list of relevant information.  We need the power of question answering (QA) technology.
 
 IBM's Watson's is well known for its ability to play and successfully win the popular gameshow, jeopardy!  IBM startled the world in 2011 when Watson beat Jeopardy! pros Ken Jennings and Brad Rutter over several rounds.  Watson completed the formidable task by combining 15 terabytes of human knowledge with a variety of computer disciplines including automated reasoning, natural language processing, knowledge representation, information retrieval and machine learning.
 
@@ -78,7 +78,7 @@ account. Since you did not provide any credit/debit card information
 when creating the account, by default you will have a Lite account.
 The lite plan does apply usage caps for services offered under the
 plan. If you need to expand and remove such limits you would have to
-upgrade to a payed account However the free quotas are typically more
+upgrade to a payed account. However the free quotas are typically more
 than sufficient for testing and learning purposes. For example under
 the Lite plan you can use the "Watson Assistant" service with caps
 such as 10K API calls per month.

@@ -1,4 +1,4 @@
-# Week 6: REST :o2:
+# Week 6: REST
 
 
 ## Lecture Material 

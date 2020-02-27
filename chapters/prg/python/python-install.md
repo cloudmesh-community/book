@@ -130,8 +130,7 @@ Now we will create a new virtual environment:
 ```bash
 $ python3.8 -m venv --without-pip ~/ENV3
 ```
-
-The edit the `~/.bashrc` file and add the following line at the end:
+Now you must edit the `~/.bashrc` file and add the following line at the end:
 
 ```bash
 alias ENV3="source ~/ENV3/bin/activate"
