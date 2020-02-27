@@ -17,7 +17,7 @@ As the install by some of these tools may be too complicated to the
 novice developer, and user, it is possible to create a container that
 includes all needed tools to start bookmanager via docker easily.
 
-## Creaating the COnteiner from scratch
+## Creaating the Container from Scratch
 
 For this to work, we have developed a Dockerfile that is not only used
 to run bookmanager, but also to explain to you how this Dockerfile works

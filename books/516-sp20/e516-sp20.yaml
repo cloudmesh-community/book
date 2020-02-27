@@ -22,6 +22,7 @@ file:
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
+  "manualfaq": "file://../../../cloudmesh-manual/master/docs-source/source/faq/"
 BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"    
@@ -56,5 +57,8 @@ BOOK:
 #    - "{file.chapter}/preface/notation.md"
 #    - "{file.chapter}/preface/updates.md"
 #    - "{file.chapter}/preface/emoji.md"
+    - "{file.manualfaq}/install.md"
+    - "{file.manualfaq}/windows.md"
+    - "{file.manualfaq}/chameleon.md"
   - REFERENCES:
     - "{file.chapter}/empty.md"

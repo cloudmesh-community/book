@@ -82,7 +82,7 @@ version:
 
 
 viewp:
-	make -f Makefile killeub
+	@make -f Makefile killeub | true
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-proceedings.epub
 
 view:
