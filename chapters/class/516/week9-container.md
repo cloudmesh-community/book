@@ -1,4 +1,4 @@
-# Week 9: Containers - Docker :o2:
+# Week 9: Containers - Docker
 
 
 ## Lecture Material
@@ -24,7 +24,14 @@ Do the following assignments with all its questions:
 
 Place your solutions in your github hid directory 
 
-## Lab Activity Container REST service
+## Lab Bookmanager 
+
+Read the section in the Container chapter about book manager. Do assignments
+
+* E.container.bookmanager.1
+* E.container.bookmanager.2
+
+## Optional Lab Activity Container REST service (as part of many projects)
 
 Develop a simple REST service using OpenAPI. Use the "Introspection"
 principal with the conexion web service. Develop a container that runs
