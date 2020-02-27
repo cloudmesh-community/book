@@ -1,4 +1,4 @@
-# Week 8: Project Review  :o2:
+# Week 8: Project Review
 
 Make sure to have made major progress in your project
 
