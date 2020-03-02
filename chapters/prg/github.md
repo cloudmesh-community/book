@@ -1,8 +1,8 @@
 # Github REST Services {#sec:Github-REST}
 
-In this section we want to explore a more features of REST
+In this section we want to explore more features of REST
 services and how to access them. Naturally many cloud services
-provide such REST sinterfaces. This is valid for IaaS, PaaS, and SaaS.
+provide such REST interfaces. This is valid for IaaS, PaaS, and SaaS.
 
 Instead of using a REST service for IaaS, let us here inspect a REST
 service for the Github.com platform.
@@ -18,6 +18,7 @@ We see that Github offers many resources that can be accessed by the users which
 * Gists
 * Git Data
 * GitHub Apps
+* Interactions
 * Issues
 * Migrations
 * Miscellaneous
@@ -30,9 +31,9 @@ We see that Github offers many resources that can be accessed by the users which
 * Teams
 * Users
 
-Most likely we forgot the one or the other Resource that we can access
-via REST. It will be out of scope for us to explore all of these
-issues, so let us focus on how we for example access Github Issues. In
+Most likely we forgot one or more Resources that we can access
+via REST. It will be out of scope for us to explore all of the
+resources, so let us focus on how we for example access Github Issues. In
 fact we will use the script that we use to create issue tables for
 this book to showcase how easy the interaction is and to retrieve
 the information.
