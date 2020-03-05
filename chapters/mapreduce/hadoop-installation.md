@@ -109,10 +109,7 @@ Now execute the following commands to download and install java
 
     mkdir -p ~/cloudmesh/bin
     cd ~/cloudmesh/bin
-    wget -c --header "Cookie: \
-    oraclelicense=accept-securebackup-cookie" \
-    "http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz"
-     tar xvzf jdk-8u191-linux-x64.tar.gz
+    wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie", "https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz"
 
 
 Please note that users must accept Oracle OTN license before downloading JDK.
