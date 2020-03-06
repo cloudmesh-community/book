@@ -109,13 +109,19 @@ Now execute the following commands to download and install java
 
     mkdir -p ~/cloudmesh/bin
     cd ~/cloudmesh/bin
-    wget -c --header "Cookie: \
-    oraclelicense=accept-securebackup-cookie" \
-    "http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz"
-     tar xvzf jdk-8u191-linux-x64.tar.gz
 
+Once you make this bin file you must go to the Oracle website to download the
+java jdk tar file directly from their site. You must create an Oracle account to
+download any packages from this page, it is no longer possible to bypass the
+webpage with a wget due to Oracle requiring users to login to download the jdk
+files.
+
+This book suggests downloading the [Java 8
+SDK](https://www.oracle.com/java/technologies/javase-downloads.html)
 
 Please note that users must accept Oracle OTN license before downloading JDK.
+
+If you already have an Oracle account you could use a wget command if you happen to know your AuthParam. This is unnecessary though unless you are attempting to automate this download in the future for some reason.
 
 ## Installation of Hadoop
 
