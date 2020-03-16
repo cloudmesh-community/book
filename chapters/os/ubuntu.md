@@ -32,7 +32,7 @@ Some projects may use a Raspberry PI. We do recommend that you use Rasbian, but 
 
 ## Linux For Beginners
 
-* see our handbook
+* [Introduction to Linux, Gregor von Laszewski](https://laszewski.github.io/book/linux/)
 * [Linux for beginners](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
 
 ## Update
