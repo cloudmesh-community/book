@@ -58,7 +58,7 @@ Not needed for this class
 ## Containers
 
 * [Running Containers on Windows](https://ubuntu.com/tutorials/tutorial-windows-ubuntu-hyperv-containers#1-overview)
-* [GPU with LXD](GPU data processing inside LXD)
+* [GPU data processing inside LXD](https://ubuntu.com/tutorials/gpu-data-processing-inside-lxd#1-overview)
 * [Install MicroK8s on Windows using Multipass](https://ubuntu.com/tutorials/install-microk8s-on-windows#1-overview)
 * [Install MicroK8s on a Mac using Multipass](https://ubuntu.com/tutorials/install-microk8s-on-mac-os#1-overview)
 * [Install a local Kubernetes with MicroK8s](https://ubuntu.com/tutorials/install-a-local-kubernetes-with-microk8s#1-overview)
