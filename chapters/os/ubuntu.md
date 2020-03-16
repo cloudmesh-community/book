@@ -66,7 +66,7 @@ Not needed for this class
 
 ## OpenStack
 
-* [OpenStack with MicroStack]
+* [OpenStack with MicroStack](https://ubuntu.com/tutorials/microstack-get-started#1-overview)
 * [Install single-server OpenStack with conjure-up](https://ubuntu.com/tutorials/install-openstack-with-conjure-up#1-overview)
  
  
