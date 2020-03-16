@@ -4,7 +4,7 @@
 
 ## Burning Ubunty on a USB Stick
 
-We recommend yo use ubuntu 19.04 if you can. If you need another version
+We recommend yo use ubuntu 19.10 if you can. If you need another version
 based on your project you may need to have to resinstall that so make
 sure yo make a backup.
 
