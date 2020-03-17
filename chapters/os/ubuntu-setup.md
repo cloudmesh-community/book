@@ -1,5 +1,7 @@
 # Ubuntu Setup
 
+Prerequisit Ubuntu 19.10
+
 Note this is an experimental Ubuntu setup on a vanilla 
 Ubuntu machine. Although we have not tried this, this also 
 works in a docker container (excluding graphics programs and 
