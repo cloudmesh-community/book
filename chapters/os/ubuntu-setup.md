@@ -196,13 +196,34 @@ Then in real vnc, esablish a connection to
 
 ## OpenStack
 
-Does not work
-
+The instruction on their Web Page does not work
 
 ``` bash
 $ sudo snap install microstack --classic --edge
 $ sudo microstack.init --auto
 ```
+
+Instead try 
+
+```bash
+$  sudo snap refresh microstack --devmode --edge
+$ sudo microstack.init --auto
+```
+
+Now go to you web browser and type in 
+
+10.20.20.1
+
+username: admin
+password: keystone
+
+Chnage your password in horizon
+
+Now you have your own openstack on your computer. However we have not 
+done any configuration. For the class we recommend to use chameleon 
+cloud as everything is set up there.
+
+
 
 
 ## Docker
