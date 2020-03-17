@@ -52,7 +52,7 @@ $ sudo apt install nvidia-driver-435
 ## Git
 
 ``` bash
-   22  sudo apt-get install git
+$ sudo apt-get install git
 ```
 
 ## SSH Server
