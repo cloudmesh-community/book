@@ -93,6 +93,17 @@ A screenshot copied from [3] is includes in @fig:kubeflow-graph.
 ![Kubeflow Graph](images/pipelines-xgboost-graph.png)
 
 
+#
+
+what is workflow. 
+
+what is pipeline. pipline for devops and function
+ 
+compare to:
+
+* argo 
+* google cloud dataflow
+
 
 ## References
 

@@ -162,3 +162,65 @@ $ cms flavor list --refresh
 $ cms image list --refresh
 ```
 
+## VNC (Optional)
+
+If you need to connect to this ubuntu via a remote app from another
+computer and need the Desktop
+
+Opion A: tightvnc
+
+``` bash
+sudo apt install tightvncserver
+```
+
+``` bash
+sudo apt install tigervnc-standalone-server tigervnc-common
+```
+
+Using it. start 
+
+``` bash
+vncserver
+```
+
+Use 
+
+```
+ssh -L 5901:127.0.0.1:5901 -N -f -l username hostname
+```
+
+Then in real vnc, esablish a connection to
+
+`localhost:5901`
+
+
+## OpenStack
+
+Does not work
+
+
+``` bash
+$ sudo snap install microstack --classic --edge
+$ sudo microstack.init --auto
+```
+
+
+## Docker
+
+``` bash
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo docker run hello-world
+```
