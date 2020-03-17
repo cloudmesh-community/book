@@ -1,6 +1,6 @@
 # Ubuntu Setup
 
-Prerequisit Ubuntu 19.10
+Prerequisit Ubuntu 19.10, it will likely work also with 18.04
 
 Note this is an experimental Ubuntu setup on a vanilla 
 Ubuntu machine. Although we have not tried this, this also 
