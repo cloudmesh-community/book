@@ -245,3 +245,50 @@ sudo add-apt-repository \
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 ```
+
+## Monitoring
+
+Here we introduce you to some commanlins sensor tools for Linux
+
+Some additional tools can be found here:
+
+* <https://linoxide.com/monitoring-2/10-tools-monitor-cpu-performance-usage-linux-command-line/>
+
+### Top
+
+```bash
+$ top
+```
+
+![Top](images/top.png)
+
+
+### Temperature Sensors
+
+```bash
+sudo apt install lm-sensors hddtemp
+sudo sensors-detect
+sudo /etc/init.d/kmod start
+sensors
+```
+
+Continious watching 
+
+``` bash
+watch -n 1 sensors
+```
+
+
+![Nmon](images/sensors.png)
+
+
+### NMon
+
+``` bash
+sudo apt-get install nmon
+nmon
+```
+
+![Nmon](images/nmon.png)
+
+
