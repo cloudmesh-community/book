@@ -12,10 +12,9 @@ software and systems.
 
 ## Products
 
-Microsoft offers a large number of services. We included the from
-Microsoft a number of services in the appendix, with convenient links to
-them.
-
+Microsoft offers a large number of services. We included a number of services from
+Microsoft in the appendix, with convenient links to them.
+ 
 The services are organized in the following categories:
 
 -   AI + Machine Learning
@@ -37,13 +36,13 @@ The services are organized in the following categories:
 -   Storage
 -   Web
 
-We focus next on the
+We will focus next on the
 
 * compute,
 * container, and
 * data resources
 
-For a more elaborate list please consult our Appendix. To see the
+For a more elaborate list please consult the Appendix. To see the
 complete list lease visit the Microsoft Web page via this
 [link](https://azure.microsoft.com/en-us/services/#compute).
 
@@ -148,7 +147,7 @@ will need to go to
 
 * [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/)
 
-You will see an image such as: @fig:registration.
+as shown in the image @fig:registration.
 
 ![Registration](images/reg.png){#fig:registration}
 
@@ -157,7 +156,7 @@ year account. You will have to either create a new Microsoft account
 or use the one from Indiana University which will be your IU id
 followed by the @iu.edu domain. You will be redirected to the single
 sign on from IU to proceed. If you use another e-mail you can
-certainly do that and you free account sis not associated with the IU
+certainly do that and your free account will not be associated with the IU
 account. This could be your Skype account or some other e-mail.  After
 registration you will be provided with 12 months of free usage of a
 few selected services and $200 credits for 30 days. At the end of 30 days,
@@ -167,7 +166,7 @@ services included with your subscription. To continue using Azure services,
 you must upgrade your subscription to a Pay-As-You-Go subscription.
 After you upgrade, your subscription still has access to free services for 12 months.
 You only get charged for usage beyond the free services and quantities.
-The Azure Student Account requires that you to activate the account after 30 days of use.
+The Azure Student Account requires you to activate the account after 30 days of use.
 If you do not activate, you will lose access to your Azure Student Account
 and can not use the services.
 
