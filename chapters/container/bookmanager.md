@@ -96,9 +96,7 @@ commands similar to it. Maybe nmake works, please let us know.
 In the container, you need to do the following:
 
 ```
-/cm# cd book
-
-/cm/book# cd books/516-sp20/
+/cm# cd book/books/516-sp20/
 
 /cm/book/books/516-sp20# ls -1
 
