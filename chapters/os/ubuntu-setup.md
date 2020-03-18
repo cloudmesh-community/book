@@ -206,8 +206,9 @@ $ sudo microstack.init --auto
 Instead try 
 
 ```bash
-$  sudo snap refresh microstack --devmode --edge
+$ sudo snap refresh microstack --devmode --edge
 $ sudo microstack.init --auto
+$ sudo snap alias microstack.openstack openstack
 ```
 
 Now go to you web browser and type in 
@@ -223,8 +224,23 @@ Now you have your own openstack on your computer. However we have not
 done any configuration. For the class we recommend to use chameleon 
 cloud as everything is set up there.
 
+Disable
 
+```
+sudo snap disable microstack
+```
 
+Enable
+
+```
+sudo snap enable microstack
+```
+
+Access on a remote server
+
+```
+$ sudo ssh -N -L 8001:10.20.20.1:80 <user>@<server-ip>
+```
 
 ## Docker
 
@@ -292,3 +308,17 @@ nmon
 ![Nmon](images/nmon.png)
 
 
+### Monitoring NVIDIA GPU
+
+```
+watch -n 2 nvidia-smi
+````
+
+![Nmon](images/nvidia-smi.png)
+
+### Glances
+
+```
+$ curl -L https://bit.ly/glances | /bin/bash
+$ glances
+```
