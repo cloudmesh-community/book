@@ -18,7 +18,7 @@ Watch these online videos for Hadoop MapReduce:
 * [![Video](images/video.png) Hadoop 15:14 Hadoop  D](https://youtu.be/MYOosbF6-dA?t=20)
 
 
-**Note: All Map Reduce/Hadoop Lab activities are optoional**
+**Note: All Map Reduce/Hadoop Lab activities are optional**
 
 ## Lab Activity: Hadoop Installation
 
