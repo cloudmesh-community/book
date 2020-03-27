@@ -51,6 +51,8 @@ BOOK:
       - "{file.community}/sp20-516-238/master/chapter/ai-azure-bot.md"
     - IBM:
       - "{file.community}/sp20-516-230/master/chapter/ai-ibm-overview.md"
+      - "{file.community}/sp20-516-230/master/chapter/ai-ibm-consulting-services.md"
+      - "{file.community}/sp20-516-252/master/chapter/ai-ibm-watson-machinelearning.md"
     - ORACLE:
       - "{file.community}/sp20-516-229/master/chapter/ai-oracle-overview.md"
       - "{file.community}/sp20-516-229/master/chapter/ai-oracle-machine-learning.md"

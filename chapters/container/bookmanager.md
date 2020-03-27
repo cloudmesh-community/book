@@ -96,11 +96,9 @@ commands similar to it. Maybe nmake works, please let us know.
 In the container, you need to do the following:
 
 ```
-/cm# cd book
+/cm# cd book/books/516-sp20/
 
-/cm/book# cd books/cd 516-sp20/
-
-:/cm/book/books/516-sp20# ls -1
+/cm/book/books/516-sp20# ls -1
 
     Makefile
     dest
@@ -112,7 +110,7 @@ In the container, you need to do the following:
     e516.yaml
     reports.md
 
-:/cm/book/books/516-sp20# time make proceedings
+/cm/book/books/516-sp20# time make proceedings
 ```
  
 
