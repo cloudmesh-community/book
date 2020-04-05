@@ -23,12 +23,12 @@ it is necessary for pushing images to dockerhub for sharing. Thus to
 store images on Docker hub you need to create an account by visiting
 [Docker Hub Web page](https://hub.docker.com/). Dockerhub offers in
 general a free account, but it has restrictions. The free account
-allows you to share images that you distriuute publically, but it only
+allows you to share images that you distribute publically, but it only
 allows one private Docker Hub Repository.  In case you need more, you
 will need to upgrade to a paid plan.
 
 For the rest of the tutorial we assume that you use the environment
-variable DOCKERHUB to indicate yourusername. It is easiset if you set it in
+variable DOCKERHUB to indicate your username. It is easiest if you set it in
 your shell with
 
 ```bash
