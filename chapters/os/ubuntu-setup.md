@@ -298,6 +298,18 @@ watch -n 1 sensors
 ![Nmon](images/sensors.png)
 
 
+### Loadavg
+
+```
+cat /proc/loadavg
+```
+
+### Sysstat
+
+```
+apt-get install sysstat
+```
+
 ### NMon
 
 ``` bash
@@ -321,4 +333,188 @@ watch -n 2 nvidia-smi
 ```
 $ curl -L https://bit.ly/glances | /bin/bash
 $ glances
+```
+
+### CPU Info
+
+```
+$ lscpu
+```
+
+## AI
+
+
+## CUDA
+
+This seems not be needed as it was already installed?
+
+If NVIDIA Card 
+
+``` bash
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
+sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
+sudo apt-key add /var/cuda-repo-10-2-local-10.2.89-440.33.01/7fa2af80.pub
+sudo apt-get update
+sudo apt-get -y install cuda
+```
+
+### PyTorch
+
+
+```
+$ pip install torch torchvision
+```
+
+## Benchmark
+
+* <https://linuxconfig.org/how-to-benchmark-your-linux-system>
+
+### Sysbench
+
+```
+sudo apt install sysbench
+```
+
+```
+$ sysbench cpu run
+sysbench 1.0.17 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  1764.17
+
+General statistics:
+    total time:                 10.0003s
+    total number of events:     17644
+
+Latency (ms):
+         min:                       0.56
+         avg:                       0.57
+         max:                       0.70
+         95th percentile:           0.57
+         sum:                    9998.87
+
+Threads fairness:
+    events (avg/stddev):         17644.0000/0.00
+    execution time (avg/stddev): 9.9989/0.00
+```
+
+```
+$ sysbench memory run
+sysbench 1.0.17 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 86544533 (8653618.73 per second)
+
+84516.15 MiB transferred (8450.80 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0000s
+    total number of events:              86544533
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    0.01
+         95th percentile:                        0.00
+         sum:                                 4856.67
+
+Threads fairness:
+    events (avg/stddev):           86544533.0000/0.00
+    execution time (avg/stddev):   4.8567/0.00
+```
+
+### Geekbench
+
+Will send in the free version information to its web server
+
+``` bash
+wget http://cdn.geekbench.com/Geekbench-5.1.0-Linux.tar.gz
+tar xvf Geekbench-5.1.0-Linux.tar.gz 
+```
+
+Than you get a link such as
+
+* <https://browser.geekbench.com/v5/cpu/1491413>
+* <https://browser.geekbench.com/v5/cpu/1491459>
+
+## Phoronix-test-suite
+ 
+```
+$ phoronix-test-suite install john-the-ripper
+$ phoronix-test-suite run john-the-ripper
+$ phoronix-test-suite install luxmark
+$ phoronix-test-suite run luxmark
+```
+
+See also 
+
+* <https://linuxconfig.org/benchmark-your-graphics-card-on-linux>
+
+
+## Kubeflow
+
+```
+sudo snap install microk8s --classic
+
+microk8s v1.17.3 from Canonical✓ installed
+
+$ sudo microk8s.status --wait-ready
+microk8s is running
+addons:
+cilium: disabled
+dashboard: disabled
+dns: disabled
+fluentd: disabled
+gpu: disabled
+helm3: disabled
+helm: disabled
+ingress: disabled
+istio: disabled
+jaeger: disabled
+juju: disabled
+knative: disabled
+kubeflow: disabled
+linkerd: disabled
+metallb: disabled
+metrics-server: disabled
+prometheus: disabled
+rbac: disabled
+registry: disabled
+storage: disabled
+
+$ sudo microk8s.enable dns dashboard registry
+```
+
+To disable
+
+```
+$ sudo microk8s.disable dns dashboard registry
 ```
