@@ -1,0 +1,88 @@
+---
+metadata:
+  image: "cover.png"
+  title: "SP20 Proceedings\nCloud Computing\nEngineering"
+  subtitle: "e516"
+  author: "Gregor von Laszewski"
+  subauthor: ""
+  email: "laszewski@gmail.com"
+  url: "https://cloudmesh-community.github.io/pub/vonlaszewski-e516-sp20-proceedings.epub"
+  description: "The lecture notes for e516"
+  abstract: "Lecture notes for e516"
+  keywords: "Cloud, Cloud Computing"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-e516-sp20-proceedings.epub"
+  rights: (c) Gregor von Laszewski, 2018, 2019
+git:
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+file:
+  "bookmanager": "f3ile://../../bookmanager/bookmanager/template"
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "base": "../../chapters"
+  #  "community": "file://../../.."
+  "community": "https://raw.githubusercontent.com/cloudmesh-community"
+  "cloudmesh": "https://raw.githubusercontent.com/cloudmesh"
+BOOK:
+  - PREFACE:
+    - "{file.chapter}/version.md"
+    - "{git.credit}/disclaimer.md"
+  - DATACENTER:
+#    - "{file.community}/sp20-516-220/master/datacenter.md"
+#    - "{file.community}/sp20-516-223/master/datacenter.md"
+#    - "{file.community}/sp20-516-224/master/datacenter.md"
+#    - "{file.community}/sp20-516-226/master/datacenter.md"
+#    - "{file.community}/sp20-516-227/master/datacenter.md"
+#    - "{file.community}/sp20-516-229/master/datacenter.md"
+     - "{file.community}/sp20-516-232/master/datacenter.md"
+#    - "{file.community}/sp20-516-235/master/datacenter.md"
+#    - "{file.community}/sp20-516-237/master/datacenter.md"
+#    - "{file.community}/sp20-516-240/master/datacenter.md"
+#    - "{file.community}/sp20-516-243/master/datacenter.md"
+#    - "{file.community}/sp20-516-244/master/datacenter.md"
+#    - "{file.community}/sp20-516-246/master/datacenter.md"
+#    - "{file.community}/sp20-516-251/master/datacenter.md"
+#    - "{file.community}/sp20-516-252/master/datacenter.md"
+  - DATACENTER_NEW:
+    - "{file.community}/sp20-516-222/master/datacenter.md"
+    - "{file.community}/sp20-516-231/master/datacenter.md"
+    - "{file.community}/sp20-516-233/master/datacenter.md"
+    - "{file.community}/sp20-516-234/master/datacenter.md"
+    - "{file.community}/sp20-516-236/master/datacenter.md"
+    - "{file.community}/sp20-516-238/master/datacenter.md"
+  - OPEN_PROJECTS:
+#   Deployement Of Databases in Multiple Cloud
+    - "{file.community}/fa19-516-158/master/project/report.md"
+  - ONGOING_PROJECTS:
+    - CLOUDMESH_PI_KUBERNETES:
+      - "{file.community}/fa19-516-148/master/project/report.md"
+      - "{file.community}/fa19-516-148/master/project/sdcard-setup.md"
+      - "{file.community}/fa19-516-148/master/project/pi-setup.md"
+      - "{file.community}/fa19-516-148/master/project/docker.md"
+      - "{file.cloudmesh}/cloudmesh_pi_burn/master/README.md"
+      - "{file.cloudmesh}/cloudmesh_pi_burn/master/cm-pi-burn.md"
+      #     Deployement Of Databases in Multiple Cloud
+    - "{file.community}/fa19-516-141/master/project/report.md"
+#   Spark Cluster Management Abstraction Layer
+    - "{file.community}/fa19-516-153/master/project/report.md"
+#   Group Key Management for Cloudmesh
+    - "{file.community}/fa19-516-172/master/project/report.md"
+#   Cloudmesh Compute Project for Google Cloud Platform (GCP)
+    - "{file.community}/fa19-516-169/master/project/report.md"
+# Sahiti
+    - NIST_AI_SERVICE:
+      - "{file.community}/fa19-516-174/master/project/report.md"
+    - DATAWAREHOUS:
+# Deepack: Cloudmesh Mutiple-cloud Datawarehouse
+      - "{file.community}/fa19-516-168/master/project/report.md"
+    - FORMAT:
+#     - "{file.chapter}/preface/corrections.md"
+#     - "{file.chapter}/authors.md"
+      - "{file.chapter}/preface/create.md"
+      - "{file.chapter}/preface/notation.md"
+#     - "{file.chapter}/preface/updates.md"
+#     - "{file.chapter}/preface/emoji.md"
+  - REFERENCES:
+      - "{file.chapter}/empty.md"
