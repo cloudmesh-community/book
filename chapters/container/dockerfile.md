@@ -15,7 +15,7 @@ at
 
 ## Specification
 
-It os best to start with an empty directory in which we create a
+It is best to start with an empty directory in which we create a
 Dockerfile.
 
 ```bash
@@ -83,7 +83,7 @@ if __name__ == '__main__':
 ```
 
 
-To build the container, we can use the following command:
+To build the container image, we can use the following command:
 
 ```bash
 local$ docker build -t students .
@@ -115,8 +115,8 @@ and locate the id of the container, e.g., 2a19776ab812, and then run this
 local$ docker stop 2a19776ab812
 ```
 
-To delete the docker container image, you must first sop all instances
-using it and the remove the image. You can see the images with the
+To delete the docker container image, you must first stop all instances
+using it and then remove the image. You can see the images with the
 command
 
 
@@ -126,7 +126,7 @@ local$ docker images
 
 Then you can locate all containers using that image while looking in
 the IMAGE column or using a simple fgrep in case you have many
-images. stop the containers using that image and that you can say
+images. Stop the containers using that image and then you can say
 
 
 ```bash
