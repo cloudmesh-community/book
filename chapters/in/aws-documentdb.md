@@ -72,13 +72,13 @@ Components:
 
 User needs to have a AWS account to use the Document DB service. First step is to create a AWS account. Once created login to the account.
 
-An AWS account can be created using the link below
+An AWS account can be created using the link:
 
 [AWS account creation URL](https://portal.aws.amazon.com/billing/signup?redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start)
 
 ### Step 1: Login to the AWS console.
 
-Login to the AWS account using the link below.
+Login to the AWS account using the link:
 
 [AWS Console URL](https://aws.amazon.com/console/).
 
@@ -113,34 +113,34 @@ It takes sometime depending on the number of instances in the cluster.
 
 You will see a Cluster being created message
 
-![AWS DocumentDB](images/documentdb-4.png){#fig:aws-cluster creation}
+![AWS DocumentDB](images/documentdb-4.png){#fig:aws-cluster-creation}
 
 Once the cluster is created , you can see the status as available.
 
-![AWS DocumentDB](images/documentdb-5.png){#fig:aws-cluster available}
+![AWS DocumentDB](images/documentdb-5.png){#fig:aws-cluster-available}
 
 All the cluster instances that got created in the process as per configuration can be seen in the details.
 
-![AWS DocumentDB](images/documentdb-9.png){#fig:aws-cluster Instances}
+![AWS DocumentDB](images/documentdb-9.png){#fig:aws-cluster-Instances}
 
 ### Step 4: Cluster summary and connection information from Mongo and Application.
 
 Cluster Information along with the required connection information from Mongo and for
 application is available to connect.
 
-![AWS DocumentDB](images/documentdb-6.png){#fig:aws-cluster connection Information}
+![AWS DocumentDB](images/documentdb-6.png){#fig:aws-cluster-connection-Information}
 
 ### Step 5: Cluster Details.
 
 Cluster configuration and status along with backup , maintenance details and security network information can be viewed in cluster details section
 
-![AWS DocumentDB](images/documentdb-7.png){#fig:aws-cluster details}
+![AWS DocumentDB](images/documentdb-7.png){#fig:aws-cluster-details}
 
 ### Step 6: Cloudwatch Information on the clusters.
 
 Cloudwatch provides differnt type of metrics to keep a tab on the clusters
 
-![AWS DocumentDB](images/documentdb-8.png){#fig:aws-cluster cloudwatch}
+![AWS DocumentDB](images/documentdb-8.png){#fig:aws-cluster-cloudwatch}
 
 ## How to connect to Document Database
 
