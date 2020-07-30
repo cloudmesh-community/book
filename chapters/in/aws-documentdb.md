@@ -97,11 +97,11 @@ alternatively, you can type DocumentDB in the search bar to look up.
 2. Specify the compute and memory capacity of the instance.
 3. Select the number of instances to be deployed in your cluster.
 
-![AWS DocumentDB](images/documentdb-2.png){#fig:aws-create cluster page}
+![AWS DocumentDB](images/documentdb-2.png){#fig:aws-create-cluster-page}
 
 Enter Authentication information if required.
 
-![AWS DocumentDB](images/documentdb-3.png){#fig:aws-create cluster authentication section}
+![AWS DocumentDB](images/documentdb-3.png){#fig:aws-create-cluster-authentication-section}
 
 Once done click the create cluster button
 
