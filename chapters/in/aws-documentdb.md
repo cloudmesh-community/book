@@ -1,4 +1,4 @@
-# AWS DocumentDB (hid: sp19-516-134)
+# AWS DocumentDB
 
 ---
 
