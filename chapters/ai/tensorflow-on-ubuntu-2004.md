@@ -11,6 +11,7 @@ Next, make sure you have created a propper python 3 virtual env as to not interf
 
 ```
 python3 -m venv ~/ENV3
+pip install pip -U
 source ~/ENV38/bin/activate
 ```
 
