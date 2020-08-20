@@ -119,7 +119,10 @@ The following is an example process using four steps:
 3. Process a second input dataset by using a Hive program.
 4. Write an output dataset.
 
-Generally, when you process data in Amazon EMR, the input is data stored as files in your chosen underlying file system, such as Amazon S3 or HDFS. This data passes from one step to the next in the processing sequence. The final step writes the output data to a specified location, such as an Amazon S3 bucket.
+Generally, when you process data in Amazon EMR, the input is data stored 
+as files in your chosen underlying file system, such as Amazon S3 or HDFS. 
+This data passes from one step to the next in the processing sequence. The 
+final step writes the output data to a specified location, such as an Amazon S3 bucket.
 
 Steps are run in the following sequence:
 
