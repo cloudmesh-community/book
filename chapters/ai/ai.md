@@ -1,6 +1,4 @@
-# Artificial Intelligence Service with REST :o2:
-
-:o2: {#sec:ai}
+# Artificial Intelligence Service with REST {#sec:ai}
 
 ## Unsupervised Learning
 
@@ -25,15 +23,14 @@ given to the reason why we apply a specific algorithm.
 KMeans is one of the most straight forward unsupervised learning
 algorithms.
 
-slides[AI (40) Unsupervised Learning](https://drive.google.com/file/d/1r62DpK-yK0L_v_KEBnmP6tdLfQFD7Lok/view?usp=sharing)
+[Slides: AI (40) Unsupervised Learning](https://drive.google.com/file/d/1r62DpK-yK0L_v_KEBnmP6tdLfQFD7Lok/view?usp=sharing)
 
 
 ## Lab:Practice on AI
 
 Keywords: Docker, REST Service, Spark
 
-slides
-[Practice on AI (40) REST services](https://drive.google.com/file/d/1pD4zbrFKkS7d6SsxIw33NIoDHQLIedXn/view?usp=sharing)
+[Slides: Practice on AI (40) REST services](https://drive.google.com/file/d/1pD4zbrFKkS7d6SsxIw33NIoDHQLIedXn/view?usp=sharing)
 
 ## k-NN
 
@@ -341,7 +338,7 @@ browser, preferably google, and following the URL next to the code.
 
 Now Open the application in your browser with
 
-    http://127.0.0.1:5000/
+    <http://127.0.0.1:5000/>
 
 The first API endpoint we define is the endpoint to download the
 data, which is done by the following lines of code. Note the URL is
