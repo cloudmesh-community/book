@@ -1,12 +1,4 @@
-# DevOp - AWS :exclamation: fa18-516-11
-
-
-|          |                                       |
-| -------- | ------------------------------------- |
-| title    | DevOp - AWS                           |
-| status   | 10                                    |
-| section  | DevOp                                 |
-| keywords | DevOp, AWS          				   |
+# DevOps with AWS
 
 AWS cloud offering comes with end-to-end scalable and most performant support for DevOps, all the way from automatic deployment and monitoring of infrastructure-as-code to our cloud-applications-code. AWS provides various DevOp tools to make the deployment and support automation as simple as possible.
 

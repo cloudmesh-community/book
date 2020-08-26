@@ -8,7 +8,7 @@ structured and systematic way. Manual rolling back of infrastructure
 to previous version of software is cumbersome, time consuming and
 error prone.  Puppet is configuration management tool that simplifies
 complex task of deploying new software, applying software updates and
-rollback software packages in large cluster efficiently. Puppet does
+rollback software packages in large cluster. Puppet does
 this through Infrastructure as Code (IAC). Code is written for
 infrastructure on one central location and is pushed to nodes in all
 environments (Dev, Test, Production) using puppet tool.  Configuration

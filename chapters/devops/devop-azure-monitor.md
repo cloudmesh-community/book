@@ -1,12 +1,4 @@
-# DevOp - Azure Monitor :exclamation: fa18-516-11
-
-
-|          |                                       |
-| -------- | ------------------------------------- |
-| title    | DevOp - Azure Monitor                 |
-| status   | 10                                    |
-| section  | DevOp                                 |
-| keywords | DevOp, Azure Monitor				   |
+# DevOps with Azure Monitor 
 
 Microsoft provides unified tool called Azure Monitor for end-to-end
 monitoring of the infrastructure and deployed applications. Azure
@@ -14,8 +6,7 @@ Monitor can greatly help Dev-Op teams by proactively and reactively
 monitoring the applications for bug tracking, health-check and provide
 metrics that can hint on various scalability aspects.
 
-![Azure Monitor [@azure-monitor]](images/devop-azure-monitor.png){#fig:azure-monitor}
-
+![Azure Monitor [@azure-monitor]](images/devops-azure-monitor.jpg){#fig:azuremonitor}
 
 Azure Monitor accommodates applications developed in various
 programming languages - .NET, Java, Node.JS, Python and various

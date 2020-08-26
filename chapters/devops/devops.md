@@ -1,5 +1,4 @@
-DevOps
-======
+# DevOps
 
 When we work with cloud infrastructure and at the same time deploy
 platforms and software we become in essence our own system
@@ -16,7 +15,7 @@ We quote form <https://en.wikipedia.org/wiki/DevOps>:
 
 > DevOps is a set of practices intended to reduce the time between
 > committing a change to a system and the change being placed into
-> normal production, while ensuring high quality.[8]
+> normal production, while ensuring high quality [8].
 
 > [8] Bass, Len; Weber, Ingo; Zhu, Liming. DevOps: A Software Architect's
   Perspective. ISBN 978-0134049847.

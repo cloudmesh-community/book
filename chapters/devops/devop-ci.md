@@ -1,6 +1,4 @@
-# DevOp - Continuous Improvement
-
-![No](images/no.png)
+# DevOps - Continuous Improvement
 
 Deploying enterprise applications has been always challenging. Without
 consistent and reliable processes and practices, it would be
@@ -42,18 +40,20 @@ At high level, we can think of a simple pipeline to achieve consistent
 and scalable deployment process.  *CI/CD* and Continuous Monitoring
 Pipeline:
 
-*Step 1 - Continuous Development - Plan, Code, Build and Test:*
-Planning, Coding, building the deployable artifacts - code,
-configuration, database, etc.  and let them go through the various
-types of tests with all the dimensions - technical to business and
-internal to external, as automated as possible. All these aspects come
-under Continuous Development.
+* Step 1 - Continuous Development - Plan, Code, Build and Test:
 
-*Step 2 - Continuous Improvement - Deploy, Operate and Monitor:*
-Once deployed to production, how these applications get operated - bug
-and health-checks, performance and scalability along with various high
-monitoring - infrastructure and cold delays due to on-demand
-VM/container instantiations by the cloud offerings due to the nature
-of the dynamic scalability of the deployment and selected hosting
-options. Making necessary adjustments to improve the overall
-experience is essentially called Continuous Improvement.
+  Planning, Coding, building the deployable artifacts - code,
+  configuration, database, etc.  and let them go through the various
+  types of tests with all the dimensions - technical to business and
+  internal to external, as automated as possible. All these aspects
+  come under Continuous Development.
+
+* Step 2 - Continuous Improvement - Deploy, Operate and Monitor:
+
+  Once deployed to production, how these applications get operated -
+  bug and health-checks, performance and scalability along with
+  various high monitoring - infrastructure and cold delays due to
+  on-demand VM/container instantiations by the cloud offerings due to
+  the nature of the dynamic scalability of the deployment and selected
+  hosting options. Making necessary adjustments to improve the overall
+  experience is essentially called Continuous Improvement.
