@@ -1,33 +1,46 @@
 # Physics with Big Data Applications {#sec:534-week5}
 
-E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson Part I (Unit 8)
-Section Units 9-11 Summary: This section starts by describing the LHC accelerator at CERN and evidence found by the
-experiments suggesting existence of a Higgs Boson. The huge number of authors on a paper, remarks on histograms and
-Feynman diagrams is followed by an accelerator picture gallery. The next unit is devoted to Python experiments looking
-at histograms of Higgs Boson production with various forms of shape of signal and various background and with various
-event totals. Then random variables and some simple principles of statistics are introduced with explanation as to why
-they are relevant to Physics counting experiments. The unit introduces Gaussian (normal) distributions and explains why
-they seen so often in natural phenomena. Several Python illustrations are given. Random Numbers with their Generators
-and Seeds lead to a discussion of Binomial and Poisson Distribution. Monte-Carlo and accept-reject methods.
-The Central Limit Theorem concludes discussion.
+E534 2019 Big Data Applications and Analytics Discovery of Higgs Boson
+Part I (Unit 8) Section Units 9-11 Summary: This section starts by
+describing the LHC accelerator at CERN and evidence found by the
+experiments suggesting existence of a Higgs Boson. The huge number of
+authors on a paper, remarks on histograms and Feynman diagrams is
+followed by an accelerator picture gallery. The next unit is devoted
+to Python experiments looking at histograms of Higgs Boson production
+with various forms of shape of signal and various background and with
+various event totals. Then random variables and some simple principles
+of statistics are introduced with explanation as to why they are
+relevant to Physics counting experiments. The unit introduces Gaussian
+(normal) distributions and explains why they seen so often in natural
+phenomena. Several Python illustrations are given. Random Numbers with
+their Generators and Seeds lead to a discussion of Binomial and
+Poisson Distribution. Monte-Carlo and accept-reject methods.  The
+Central Limit Theorem concludes discussion.
 
 ## Unit 8:
 
 ### 8.1 - Looking for Higgs: 1. Particle and Counting Introduction 1
 
-We return to particle case with slides used in introduction and stress that particles often manifested as bumps in histograms and those bumps need to be large enough to stand out from background in a statistically significant fashion.
+We return to particle case with slides used in introduction and stress
+that particles often manifested as bumps in histograms and those bumps
+need to be large enough to stand out from background in a
+statistically significant fashion.
 
 [![Video](images/physics/physics-8.1.png){width=20%}](https://youtu.be/L0wIh0Z-ZwI?list=PLy0VLh_GFyz9xQWimvDcKEx_crcYy-B5O)
 
 ### 8.2 - Looking for Higgs: 2. Particle and Counting Introduction 2
 
-We give a few details on one LHC experiment ATLAS. Experimental physics papers have a staggering number of authors and quite big budgets. Feynman diagrams describe processes in a fundamental fashion.
+We give a few details on one LHC experiment ATLAS. Experimental
+physics papers have a staggering number of authors and quite big
+budgets. Feynman diagrams describe processes in a fundamental fashion.
 
 [![Video](images/physics/physics-8.2.png){width=20%}](https://youtu.be/ulX3oIiAusI?list=PLy0VLh_GFyz9xQWimvDcKEx_crcYy-B5O)
 
 ### 8.3 - Looking for Higgs: 3. Particle Experiments
 
-We give a few details on one LHC experiment ATLAS. Experimental physics papers have a staggering number of authors and quite big budgets. Feynman diagrams describe processes in a fundamental fashion
+We give a few details on one LHC experiment ATLAS. Experimental
+physics papers have a staggering number of authors and quite big
+budgets. Feynman diagrams describe processes in a fundamental fashion
 
 [![Video](images/physics/physics-8.3.png){width=20%}](https://youtu.be/BW12d780qT8?list=PLy0VLh_GFyz9xQWimvDcKEx_crcYy-B5O)
 

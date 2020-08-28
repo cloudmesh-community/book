@@ -23,17 +23,18 @@ lab.
 !pip install cloudmesh-common
 ```
 
+```
     Collecting cloudmesh-common
-    [?25l  Downloading https://files.pythonhosted.org/packages/42/72/3c4aabce294273db9819be4a0a350f506d2b50c19b7177fb6cfe1cbbfe63/cloudmesh_common-4.2.13-py2.py3-none-any.whl (55kB)
-    [K     |████████████████████████████████| 61kB 4.1MB/s
-    [?25hRequirement already satisfied: future in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (0.16.0)
+     Downloading https://files.pythonhosted.org/packages/42/72/3c4aabce294273db9819be4a0a350f506d2b50c19b7177fb6cfe1cbbfe63/cloudmesh_common-4.2.13-py2.py3-none-any.whl (55kB)
+        |████████████████████████████████| 61kB 4.1MB/s
+    Requirement already satisfied: future in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (0.16.0)
     Collecting pathlib2 (from cloudmesh-common)
       Downloading https://files.pythonhosted.org/packages/e9/45/9c82d3666af4ef9f221cbb954e1d77ddbb513faf552aea6df5f37f1a4859/pathlib2-2.3.5-py2.py3-none-any.whl
     Requirement already satisfied: python-dateutil in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (2.5.3)
     Collecting simplejson (from cloudmesh-common)
-    [?25l  Downloading https://files.pythonhosted.org/packages/e3/24/c35fb1c1c315fc0fffe61ea00d3f88e85469004713dab488dee4f35b0aff/simplejson-3.16.0.tar.gz (81kB)
-    [K     |████████████████████████████████| 81kB 10.6MB/s
-    [?25hCollecting python-hostlist (from cloudmesh-common)
+      Downloading https://files.pythonhosted.org/packages/e3/24/c35fb1c1c315fc0fffe61ea00d3f88e85469004713dab488dee4f35b0aff/simplejson-3.16.0.tar.gz (81kB)
+         |████████████████████████████████| 81kB 10.6MB/s
+    Collecting python-hostlist (from cloudmesh-common)
       Downloading https://files.pythonhosted.org/packages/3d/0f/1846a7a0bdd5d890b6c07f34be89d1571a6addbe59efe59b7b0777e44924/python-hostlist-1.18.tar.gz
     Requirement already satisfied: pathlib in /usr/local/lib/python3.6/dist-packages (from cloudmesh-common) (1.0.1)
     Collecting colorama (from cloudmesh-common)
@@ -45,17 +46,17 @@ lab.
     Requirement already satisfied: six in /usr/local/lib/python3.6/dist-packages (from pathlib2->cloudmesh-common) (1.12.0)
     Requirement already satisfied: pyyaml in /usr/local/lib/python3.6/dist-packages (from oyaml->cloudmesh-common) (3.13)
     Building wheels for collected packages: simplejson, python-hostlist
-      Building wheel for simplejson (setup.py) ... [?25l[?25hdone
+      Building wheel for simplejson (setup.py) ... done
       Created wheel for simplejson: filename=simplejson-3.16.0-cp36-cp36m-linux_x86_64.whl size=114018 sha256=a6f35adb86819ff3de6c0afe475229029305b1c55c5a32b442fe94cda9500464
       Stored in directory: /root/.cache/pip/wheels/5d/1a/1e/0350bb3df3e74215cd91325344cc86c2c691f5306eb4d22c77
-      Building wheel for python-hostlist (setup.py) ... [?25l[?25hdone
+      Building wheel for python-hostlist (setup.py) ... done
       Created wheel for python-hostlist: filename=python_hostlist-1.18-cp36-none-any.whl size=38517 sha256=71fbb29433b52fab625e17ef2038476b910bc80b29a822ed00a783d3b1fb73e4
       Stored in directory: /root/.cache/pip/wheels/56/db/1d/b28216dccd982a983d8da66572c497d6a2e485eba7c4d6cba3
     Successfully built simplejson python-hostlist
     Installing collected packages: pathlib2, simplejson, python-hostlist, colorama, oyaml, cloudmesh-common
     Successfully installed cloudmesh-common-4.2.13 colorama-0.4.1 oyaml-0.9 pathlib2-2.3.5 python-hostlist-1.18 simplejson-3.16.0
 
-
+```
 
 In this lesson we discuss in how to create a simple IPython Notebook to solve
 an image classification problem. MNIST contains a set of pictures
@@ -75,9 +76,9 @@ an image classification problem. MNIST contains a set of pictures
 ```
 
     Collecting tensorflow-gpu==1.14.0
-    [?25l  Downloading https://files.pythonhosted.org/packages/76/04/43153bfdfcf6c9a4c38ecdb971ca9a75b9a791bb69a764d652c359aca504/tensorflow_gpu-1.14.0-cp36-cp36m-manylinux1_x86_64.whl (377.0MB)
-    [K     |████████████████████████████████| 377.0MB 77kB/s
-    [?25hRequirement already satisfied: six>=1.10.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.12.0)
+      Downloading https://files.pythonhosted.org/packages/76/04/43153bfdfcf6c9a4c38ecdb971ca9a75b9a791bb69a764d652c359aca504/tensorflow_gpu-1.14.0-cp36-cp36m-manylinux1_x86_64.whl (377.0MB)
+         |████████████████████████████████| 377.0MB 77kB/s
+    Requirement already satisfied: six>=1.10.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.12.0)
     Requirement already satisfied: grpcio>=1.8.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.15.0)
     Requirement already satisfied: protobuf>=3.6.1 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (3.7.1)
     Requirement already satisfied: keras-applications>=1.0.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.0.8)
@@ -86,16 +87,16 @@ an image classification problem. MNIST contains a set of pictures
     Requirement already satisfied: absl-py>=0.7.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.8.0)
     Requirement already satisfied: wrapt>=1.11.1 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.11.2)
     Requirement already satisfied: wheel>=0.26 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.33.6)
-    Requirement already satisfied: tensorflow-estimator<1.15.0rc0,>=1.14.0rc0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.14.0)
-    Requirement already satisfied: tensorboard<1.15.0,>=1.14.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.14.0)
-    Requirement already satisfied: numpy<2.0,>=1.14.5 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.16.5)
+    Requirement already satisfied: tensorflow-estimator 1.15.0rc0,>=1.14.0rc0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.14.0)
+    Requirement already satisfied: tensorboard 1.15.0,>=1.14.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.14.0)
+    Requirement already satisfied: numpy 2.0,>=1.14.5 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.16.5)
     Requirement already satisfied: termcolor>=1.1.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.1.0)
     Requirement already satisfied: keras-preprocessing>=1.0.5 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (1.1.0)
     Requirement already satisfied: google-pasta>=0.1.6 in /usr/local/lib/python3.6/dist-packages (from tensorflow-gpu==1.14.0) (0.1.7)
     Requirement already satisfied: setuptools in /usr/local/lib/python3.6/dist-packages (from protobuf>=3.6.1->tensorflow-gpu==1.14.0) (41.2.0)
     Requirement already satisfied: h5py in /usr/local/lib/python3.6/dist-packages (from keras-applications>=1.0.6->tensorflow-gpu==1.14.0) (2.8.0)
-    Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.6/dist-packages (from tensorboard<1.15.0,>=1.14.0->tensorflow-gpu==1.14.0) (3.1.1)
-    Requirement already satisfied: werkzeug>=0.11.15 in /usr/local/lib/python3.6/dist-packages (from tensorboard<1.15.0,>=1.14.0->tensorflow-gpu==1.14.0) (0.15.6)
+    Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.6/dist-packages (from tensorboard 1.15.0,>=1.14.0->tensorflow-gpu==1.14.0) (3.1.1)
+    Requirement already satisfied: werkzeug>=0.11.15 in /usr/local/lib/python3.6/dist-packages (from tensorboard 1.15.0,>=1.14.0->tensorflow-gpu==1.14.0) (0.15.6)
     Installing collected packages: tensorflow-gpu
     Successfully installed tensorflow-gpu-1.14.0
 
@@ -303,7 +304,9 @@ StopWatch.stop("train")
 
     WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3576: The name tf.log is deprecated. Please use tf.math.log instead.
 
-    WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/math_grad.py:1250: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+    WARNING:tensorflow:From
+    /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/math_grad.py:1250:
+    add_dispatch_support. locals.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
     Instructions for updating:
     Use tf.where in 2.0, which has the same broadcast rule as np.where
     WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:1033: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
