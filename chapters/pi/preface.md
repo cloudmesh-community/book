@@ -1,4 +1,4 @@
-## About
+# About
 
 This document has been created form our document collection to target
 the creation of Cloud Clusters with Raspberry PI's.
