@@ -1,6 +1,6 @@
-## Exercise
+# Exercise
 
-### Single Raspberry Pi Temperature
+## Single Raspberry Pi Temperature
 
 You have been presented in Section
 [Cluster Case With Cooling (5 Pi)](#cluster-case-with-cooling-5-pi)
@@ -47,7 +47,7 @@ Pi.Single.5
 : Identify how to use the VPN server so you can use your Laptop
 instead of a TV or computer monitor. Write a section
 
-### Small Pi Cluster
+## Small Pi Cluster
 
 In this set of exercises we will be building a small Raspberry Pi
 cluster. All of you will have to do exercise Pi.Cluster.Build as well
@@ -90,7 +90,7 @@ Pi.Cluster.Spark
   acknowledged and credit. Work with others in class to coordinate a
   single section.
 
-### Cluster Case
+## Cluster Case
 
 In this exercise you will be designing a cluster case so you can put
 the Pi's in a professional looking case that also protects the
@@ -117,7 +117,7 @@ PI.case.n
   place the cases. Make sure to organize power and allow for easy
   access to the cases and the pis within the case.
 
-### Cluster Case Lego
+## Cluster Case Lego
 
 Pi.lego 1
 
