@@ -1,3 +1,7 @@
+# Azure 
+
+## Azure Links
+
 -   [See
     more](https://azure.microsoft.com/en-us/services/#web "See more")
 
@@ -63,10 +67,7 @@
 -   [[Legal ](https://azure.microsoft.com/en-us/support/legal/
     "Legal") - View legal terms and
     conditions]
--   [More]
 
-
-]
 -   [Virtual Machines - Provision Windows and Linux
     virtual machines in
     seconds](https://azure.microsoft.com/en-us/services/virtual-machines/
@@ -112,44 +113,37 @@ popular Azure products
     more](https://azure.microsoft.com/en](https://azure.microsoft.com/en-us/overview/ai-platform/) -us/services/#featured "See more")
 
 
-Azure products
-==============
+## Azure products
 
 Browse or search for Azure products
 
 
 
 
-AI + Machine Learning
----------------------
+## AI + Machine Learning
 
 [Learn more
 [link](https://azure.microsoft.com/en](https://azure.microsoft.com/en-us/services/machine-learning-studio/) -us/services/machine-learning-services/)
 
-Machine Learning Services
--------------------------
+## Machine Learning Services
 
 Bring AI to everyone with an end-to-end, scalable, trusted platform with
 experimentation and model management
 
-[link
 
-Machine Learning Studio
------------------------
+## Machine Learning Studio
 
 Easily build, deploy, and manage predictive analytics solutions
 
 [link](https://azure.microsoft.com/en-us/services/databricks/)
 
-Azure Databricks
-----------------
+## Azure Databricks
 
 Fast, easy, and collaborative Apache Spark-based analytics platform
 
 [link](https://azure.microsoft.com/en-us/services/batch-ai/)
 
-Azure Batch AI
---------------
+## Azure Batch AI
 
 Easily experiment and train your deep learning and AI models in parallel
 at scale
@@ -157,16 +151,14 @@ at scale
 
 [link](https://azure.microsoft.com/en-us/services/bot-service/)
 
-Azure Bot Service
------------------
+## Azure Bot Service
 
 Intelligent, serverless bot service that scales on demand
 
 
 [link](https://azure.microsoft.com/en-us/services/genomics/)
 
-Microsoft Genomics
-------------------
+## Microsoft Genomics
 
 Power genome sequencing & research insights
 
