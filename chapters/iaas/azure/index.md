@@ -118,8 +118,6 @@ popular Azure products
 Browse or search for Azure products
 
 
-
-
 ## AI + Machine Learning
 
 [Learn more
@@ -130,1713 +128,1379 @@ Browse or search for Azure products
 Bring AI to everyone with an end-to-end, scalable, trusted platform with
 experimentation and model management
 
-
 ## Machine Learning Studio
 
 Easily build, deploy, and manage predictive analytics solutions
 
-[link](https://azure.microsoft.com/en-us/services/databricks/)
-
 ## Azure Databricks
+
+[link](https://azure.microsoft.com/en-us/services/databricks/)
 
 Fast, easy, and collaborative Apache Spark-based analytics platform
 
-[link](https://azure.microsoft.com/en-us/services/batch-ai/)
-
 ## Azure Batch AI
+
+[link](https://azure.microsoft.com/en-us/services/batch-ai/)
 
 Easily experiment and train your deep learning and AI models in parallel
 at scale
 
+## Azure Bot Service
 
 [link](https://azure.microsoft.com/en-us/services/bot-service/)
 
-## Azure Bot Service
-
 Intelligent, serverless bot service that scales on demand
-
-
-[link](https://azure.microsoft.com/en-us/services/genomics/)
 
 ## Microsoft Genomics
 
+[link](https://azure.microsoft.com/en-us/services/genomics/)
+
 Power genome sequencing & research insights
 
+## Cognitive Services
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/)
 
-Cognitive Services
-------------------
-
 Add smart API capabilities to enable contextual interactions
 
+## Azure Search
 
 [link](https://azure.microsoft.com/en-us/services/search/)
 
-Azure Search
-------------
-
 Fully-managed search-as-a-service
 
+XXXXXXXX
+
+## Bing Autosuggest
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/autosuggest/)
 
-Bing Autosuggest
-----------------
-
 Give your app intelligent autosuggest options for searches
 
+## Bing Custom Search
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/bing-custom-search/)
 
-Bing Custom Search
-------------------
+An easy-to-use, ad-free, commercial-grade search tool that lets you deliver the results you want
 
-An easy-to-use, ad-free, commercial-grade search tool that lets you
-deliver the results you want
-
+## Bing Entity Search
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/bing-entity-search-api/)
-
-Bing Entity Search
-------------------
 
 Enrich your experiences by identifying and augmenting entity information
 from the web
 
+## Bing Image Search
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/)
 
-Bing Image Search
------------------
-
 Search for images and get comprehensive results
 
+## Bing News Search
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/bing-news-search-api/)
 
-Bing News Search
-----------------
-
 Search for news and get comprehensive results
 
+## Bing Speech
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/speech/)
 
-Bing Speech
------------
-
 Convert speech to text and back again to understand user intent
 
+## Bing Spell Check
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/spell-check/)
 
-Bing Spell Check
-----------------
-
 Detect and correct spelling mistakes in your app
 
+## Bing Video Search
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/bing-video-search-api/)
 
-Bing Video Search
------------------
-
 Search for videos and get comprehensive results
 
+## Bing Web Search
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/bing-web-search-api/)
 
-Bing Web Search
----------------
-
 Get enhanced search details from billions of web documents
 
+## Computer Vision
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/)
 
-Computer Vision
----------------
-
 Distill actionable information from images
 
+## Content Moderator
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/content-moderator/)
 
-Content Moderator
------------------
-
 Automated image, text, and video moderation
 
+## Custom Speech
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/custom-speech-service/)
-
-Custom Speech
--------------
 
 Overcome speech recognition barriers like speaking style, background
 noise, and vocabulary
 
+## Custom Vision
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/)
-
-Custom Vision
--------------
 
 Easily customize your own state-of-the-art computer vision models for
 your unique use case
 
+## Emotion
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/emotion/)
 
-Emotion
--------
-
 Personalize user experiences with emotion recognition
 
+## Face
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/face/)
 
-Face
-----
-
 Detect, identify, analyze, organize, and tag faces in photos
 
-
-[link](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/)
-
-Language Understanding
-----------------------
+[link](https://
+## Language Understanding
+azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/)
 
 Teach your apps to understand commands from your users
 
+## Linguistic Analysis
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/linguistic-analysis-api/)
-
-Linguistic Analysis
--------------------
 
 Simplify complex language concepts and parse text with the Linguistic
 Analysis API
 
+## QnA Maker
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/)
 
-QnA Maker
----------
-
 Distill information into conversational, easy-to-navigate answers
 
+## Speaker Recognition
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/speaker-recognition/)
 
-Speaker Recognition
--------------------
-
 Use speech to identify and verify individual speakers
 
+## Text Analytics
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/)
 
-Text Analytics
---------------
-
 Easily evaluate sentiment and topics to understand what users want
 
+## Translator Speech
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/translator-speech-api/)
 
-Translator Speech
------------------
-
 Easily conduct real-time speech translation with a simple REST API call
 
+## Translator Text
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/)
 
-Translator Text
----------------
-
 Easily conduct machine translation with a simple REST API call
 
+## Video Indexer
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/video-indexer/)
 
-Video Indexer
--------------
-
 Unlock video insights
 
+## Web Language Model
 
 [link](https://azure.microsoft.com/en-us/services/cognitive-services/web-language-model/)
-
-Web Language Model
-------------------
 
 Use the power of predictive language models trained on web-scale data
 
 
-[link](https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/)
+## Data Science Virtual Machines
 
-Data Science Virtual Machines
------------------------------
+## Analytics
+[link](https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/)
 
 Rich pre-configured environment for AI development
 
-
-Analytics
----------
-
-
 [Learn more](https://azure.microsoft.com/en-us/product-categories/analytics/)
 
+## Stream Analytics
 
 [link](https://azure.microsoft.com/en-us/services/stream-analytics/)
 
-Stream Analytics
-----------------
-
 Real-time data stream processing from millions of IoT devices
 
+## SQL Data Warehouse
 
 [link](https://azure.microsoft.com/en-us/services/sql-data-warehouse/)
 
-SQL Data Warehouse
-------------------
-
 Elastic data warehouse as a service with enterprise-class features
 
+## Azure Databricks
 
 [link](https://azure.microsoft.com/en-us/services/databricks/)
 
-Azure Databricks
-----------------
-
 Fast, easy, and collaborative Apache Spark-based analytics platform
 
+## HDInsight
 
 [link](https://azure.microsoft.com/en-us/services/hdinsight/)
 
-HDInsight
----------
-
 Provision cloud Hadoop, Spark, R Server, HBase, and Storm clusters
 
+## Data Factory
 
 [link](https://azure.microsoft.com/en-us/services/data-factory/)
 
-Data Factory
-------------
-
 Hybrid data integration at enterprise scale, made easy
 
+## Data Lake Analytics
 
 [link](https://azure.microsoft.com/en-us/services/data-lake-analytics/)
 
-Data Lake Analytics
--------------------
-
 Distributed analytics service that makes big data easy
 
+## Event Hubs
 
 [link](https://azure.microsoft.com/en-us/services/event-hubs/)
 
-Event Hubs
-----------
-
 Receive telemetry from millions of devices
 
+## Power BI Embedded
 
 [link](https://azure.microsoft.com/en-us/services/power-bi-embedded/)
-
-Power BI Embedded
------------------
 
 Embed fully interactive, stunning data visualizations in your
 applications
 
+## Azure Analysis Services
 
 [link](https://azure.microsoft.com/en-us/services/analysis-services/)
 
-Azure Analysis Services
------------------------
-
 Enterprise-grade analytics engine as a service
 
+## Apache Spark for Azure HDInsight
 
 [link](https://azure.microsoft.com/en-us/services/hdinsight/apache-spark/)
 
-Apache Spark for Azure HDInsight
---------------------------------
-
 Apache Spark in the cloud for mission critical deployments
 
+## Apache Storm for HDInsight
 
 [link](https://azure.microsoft.com/en-us/services/hdinsight/apache-storm/)
 
-Apache Storm for HDInsight
---------------------------
-
 Real-time stream processing made easy for big data
 
+## R Server for HDInsight
 
 [link](https://azure.microsoft.com/en-us/services/hdinsight/r-server/)
-
-R Server for HDInsight
-----------------------
 
 Predictive analytics, machine learning, and statistical modeling for big
 data
 
+## Log Analytics
 
 [link](https://azure.microsoft.com/en-us/services/log-analytics/)
 
-Log Analytics
--------------
-
 Collect, search, and visualize machine data from on-premises and cloud
 
+## Data Catalog
 
 [link](https://azure.microsoft.com/en-us/services/data-catalog/)
 
-Data Catalog
-------------
-
 Get more value from your enterprise data assets
 
+## Azure Data Lake Storage
+
+## Compute
 
 [link](https://azure.microsoft.com/en-us/services/storage/data-lake-storage/)
 
-Azure Data Lake Storage
------------------------
-
 Massively scalable data lake storage
-
-
-Compute
--------
-
 
 [Learn more](https://azure.microsoft.com/en-us/product-categories/compute/)
 
+## Virtual Machines
 
 [link](https://azure.microsoft.com/en-us/services/virtual-machines/)
 
-Virtual Machines
-----------------
-
 Provision Windows and Linux virtual machines in seconds
 
+## App Service
 
 [link](https://azure.microsoft.com/en-us/services/app-service/)
 
-App Service
------------
-
 Quickly create powerful cloud apps for web and mobile
 
+## Functions
 
 [link](https://azure.microsoft.com/en-us/services/functions/)
 
-Functions
----------
-
 Process events with serverless code
 
+## Batch
 
 [link](https://azure.microsoft.com/en-us/services/batch/)
 
-Batch
------
-
 Cloud-scale job scheduling and compute management
 
+## Container Instances
 
 [link](https://azure.microsoft.com/en-us/services/container-instances/)
 
-Container Instances
--------------------
-
 Easily run containers on Azure without managing servers
 
+## Azure Batch AI
 
 [link](https://azure.microsoft.com/en-us/services/batch-ai/)
-
-Azure Batch AI
---------------
 
 Easily experiment and train your deep learning and AI models in parallel
 at scale
 
+## Service Fabric
 
 [link](https://azure.microsoft.com/en-us/services/service-fabric/)
 
-Service Fabric
---------------
-
 Develop microservices and orchestrate containers on Windows or Linux
 
+## Virtual Machine Scale Sets
 
 [link](https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/)
 
-Virtual Machine Scale Sets
---------------------------
-
 Manage and scale up to thousands of Linux and Windows virtual machines
 
+## Azure Kubernetes Service (AKS)
 
 [link](https://azure.microsoft.com/en-us/services/kubernetes-service/)
 
-Azure Kubernetes Service (AKS)
-------------------------------
-
 Simplify the deployment, management, and operations of Kubernetes
 
+## Cloud Services
 
 [link](https://azure.microsoft.com/en-us/services/cloud-services/)
 
-Cloud Services
---------------
-
 Create highly-available, infinitely-scalable cloud applications and APIs
 
+## Web Apps
 
 [link](https://azure.microsoft.com/en-us/services/app-service/web/)
 
-Web Apps
---------
-
 Quickly create and deploy mission critical web apps at scale
 
+## Mobile Apps
 
 [link](https://azure.microsoft.com/en-us/services/app-service/mobile/)
 
-Mobile Apps
------------
-
 Build and host the backend for any mobile app
 
+## API Apps
 
 [link](https://azure.microsoft.com/en-us/services/app-service/api/)
 
-API Apps
---------
-
 Easily build and consume Cloud APIs
 
+## Linux Virtual Machines
 
 [link](https://azure.microsoft.com/en-us/services/virtual-machines/linux-and-open/)
 
-Linux Virtual Machines
-----------------------
-
 Provision virtual machines for Ubuntu, Red Hat, and more
 
+## SQL Server on Virtual Machines
 
 [link](https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/)
 
-SQL Server on Virtual Machines
-------------------------------
-
 Host enterprise SQL Server apps in the cloud
 
+## SAP HANA on Azure Large Instances
 
 [link](https://azure.microsoft.com/en-us/services/virtual-machines/sap-hana/)
 
-SAP HANA on Azure Large Instances
----------------------------------
-
 Run the largest SAP HANA workloads of any hyperscale cloud provider
 
+## Azure CycleCloud
+
+## Containers
 
 [link](https://azure.microsoft.com/en-us/features/azure-cyclecloud/)
-
-Azure CycleCloud
-----------------
 
 Create, manage, operate, and optimize HPC and big compute clusters of
 any scale
 
-
-Containers
-----------
-
-
 [Learn more](https://azure.microsoft.com/en-us/overview/containers/)
 
+## App Service
 
 [link](https://azure.microsoft.com/en-us/services/app-service/)
 
-App Service
------------
-
 Quickly create powerful cloud apps for web and mobile
 
+## Batch
 
 [link](https://azure.microsoft.com/en-us/services/batch/)
 
-Batch
------
-
 Cloud-scale job scheduling and compute management
 
+## Container Registry
 
 [link](https://azure.microsoft.com/en-us/services/container-registry/)
 
-Container Registry
-------------------
-
 Store and manage container images across all types of Azure deployments
 
+## Container Instances
 
 [link](https://azure.microsoft.com/en-us/services/container-instances/)
 
-Container Instances
--------------------
-
 Easily run containers on Azure without managing servers
 
+## Service Fabric
 
 [link](https://azure.microsoft.com/en-us/services/service-fabric/)
 
-Service Fabric
---------------
-
 Develop microservices and orchestrate containers on Windows or Linux
 
+## Azure Kubernetes Service (AKS)
 
 [link](https://azure.microsoft.com/en-us/services/kubernetes-service/)
 
-Azure Kubernetes Service (AKS)
-------------------------------
-
 Simplify the deployment, management, and operations of Kubernetes
 
+## Web Apps
 
 [link](https://azure.microsoft.com/en-us/services/app-service/web/)
 
-Web Apps
---------
-
 Quickly create and deploy mission critical web apps at scale
 
+## Mobile Apps
 
 [link](https://azure.microsoft.com/en-us/services/app-service/mobile/)
 
-Mobile Apps
------------
-
 Build and host the backend for any mobile app
 
+## API Apps
 
 [link](https://azure.microsoft.com/en-us/services/app-service/api/)
 
-API Apps
---------
-
 Easily build and consume Cloud APIs
 
+## Web App for Containers
+
+## Databases
 
 [link](https://azure.microsoft.com/en-us/services/app-service/containers/)
-
-Web App for Containers
-----------------------
 
 Easily deploy and run containerized web apps that scale with your
 business
 
-
-
-Databases
----------
-
-
 [Learn more](https://azure.microsoft.com/en-us/product-categories/databases/)
 
+## Azure SQL Database
 
 [link](https://azure.microsoft.com/en-us/services/sql-database/)
 
-Azure SQL Database
-------------------
-
 Managed relational SQL Database as a service
 
+## Azure Cosmos DB
 
 [link](https://azure.microsoft.com/en-us/services/cosmos-db/)
 
-Azure Cosmos DB
----------------
-
 Globally distributed, multi-model database for any scale
 
+## SQL Data Warehouse
 
 [link](https://azure.microsoft.com/en-us/services/sql-data-warehouse/)
 
-SQL Data Warehouse
-------------------
-
 Elastic data warehouse as a service with enterprise-class features
 
+## Data Factory
 
 [link](https://azure.microsoft.com/en-us/services/data-factory/)
 
-Data Factory
-------------
-
 Hybrid data integration at enterprise scale, made easy
 
+## Redis Cache
 
 [link](https://azure.microsoft.com/en-us/services/cache/)
 
-Redis Cache
------------
-
 Power applications with high-throughput, low-latency data access
 
+## SQL Server Stretch Database
 
 [link](https://azure.microsoft.com/en-us/services/sql-server-stretch-database/)
 
-SQL Server Stretch Database
----------------------------
-
 Dynamically stretch on-premises SQL Server databases to Azure
 
+## SQL Server on Virtual Machines
 
 [link](https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/)
 
-SQL Server on Virtual Machines
-------------------------------
-
 Host enterprise SQL Server apps in the cloud
 
+## Table Storage
 
 [link](https://azure.microsoft.com/en-us/services/storage/tables/)
 
-Table Storage
--------------
-
 NoSQL key-value store using semi-structured datasets
 
+## Azure Database for PostgreSQL
 
 [link](https://azure.microsoft.com/en-us/services/postgresql/)
 
-Azure Database for PostgreSQL
------------------------------
-
 Managed PostgreSQL database service for app developers
 
+## Azure Database for MySQL
 
 [link](https://azure.microsoft.com/en-us/services/mysql/)
 
-Azure Database for MySQL
-------------------------
-
 Managed MySQL database service for app developers
 
+## Azure Database Migration Service
+
+## Developer Tools
 
 [link](https://azure.microsoft.com/en-us/services/database-migration/)
 
-Azure Database Migration Service
---------------------------------
-
 Simplify on-premises database migration to the cloud
-
-
-
-
-Developer Tools
----------------
-
 
 [Learn more](https://azure.microsoft.com/en-us/product-categories/developer-tools/)
 
+## Visual Studio
 
 [link](https://azure.microsoft.com/en-us/products/visual-studio/)
-
-Visual Studio
--------------
 
 The powerful and flexible environment for developing applications in the
 cloud
 
+## Visual Studio Code
 
 [link](https://azure.microsoft.com/en-us/products/visual-studio-code/)
 
-Visual Studio Code
-------------------
-
 A powerful, lightweight code editor for cloud development
 
+## SDKs
 
 [link](https://azure.microsoft.com/en-us/downloads/)
 
-SDKs
-----
-
 Get the SDKs and command-line tools you need
 
+## Azure DevOps
 
 [link](https://azure.microsoft.com/en-us/services/devops/)
 
-Azure DevOps
-------------
-
 Services for teams to share code, track work, and ship software
 
+## CLIs
 
 [link](https://azure.microsoft.com/en-us/tools/)
-
-CLIs
-----
 
 Build, deploy, diagnose, and manage multi-platform, scalable apps and
 services
 
-[link](https://azure.microsoft.com/en-us/services/devops/pipelines/)
+## Azure Pipelines
 
-Azure Pipelines
----------------
+[link](https://azure.microsoft.com/en-us/services/devops/pipelines/)
 
 Continuously build, test, and deploy to any platform and cloud
 
-[link](https://azure.microsoft.com/en-us/services/lab-services/)
+## Azure Lab Services
 
-Azure Lab Services
-------------------
+[link](https://azure.microsoft.com/en-us/services/lab-services/)
 
 Set up labs for classrooms, trials, development and testing, and other
 scenarios
 
-[link](https://azure.microsoft.com/en-us/services/devtest-lab/)
+## Azure DevTest Labs
 
-Azure DevTest Labs
-------------------
+[link](https://azure.microsoft.com/en-us/services/devtest-lab/)
 
 Quickly create environments using reusable templates and artifacts
 
+## Developer tool integrations
+
 [link](https://azure.microsoft.com/en-us/products/developer-tool-integrations/)
 
-Developer tool integrations
----------------------------
+Maven --- with Azure
 
-Use the development tools you know---including Eclipse, IntelliJ, and
-Maven---with Azure
-
-
-DevOps
-------
+## DevOps
 
 [Learn more](https://azure.microsoft.com/en-us/product-categories/devops/)
 
-[link](https://azure.microsoft.com/en-us/services/devops/)
+## Azure DevOps
 
-Azure DevOps
-------------
+[link](https://azure.microsoft.com/en-us/services/devops/)
 
 Services for teams to share code, track work, and ship software
 
-[link](https://azure.microsoft.com/en-us/services/devops/pipelines/)
+## Azure Pipelines
 
-Azure Pipelines
----------------
+[link](https://azure.microsoft.com/en-us/services/devops/pipelines/)
 
 Continuously build, test, and deploy to any platform and cloud
 
-[link](https://azure.microsoft.com/en-us/services/devops/boards/)
+## Azure Boards
 
-Azure Boards
-------------
+[link](https://azure.microsoft.com/en-us/services/devops/boards/)
 
 Plan, track, and discuss work across your teams
 
-[link](https://azure.microsoft.com/en-us/services/devops/repos/)
+## Azure Repos
 
-Azure Repos
------------
+[link](https://azure.microsoft.com/en-us/services/devops/repos/)
 
 Get unlimited, cloud-hosted private Git repos for your project
 
-[link](https://azure.microsoft.com/en-us/services/devops/artifacts/)
+## Azure Artifacts
 
-Azure Artifacts
----------------
+[link](https://azure.microsoft.com/en-us/services/devops/artifacts/)
 
 Create, host, and share packages with your team
 
-[link](https://azure.microsoft.com/en-us/services/devops/test-plans/)
+## Azure Test Plans
 
-Azure Test Plans
-----------------
+[link](https://azure.microsoft.com/en-us/services/devops/test-plans/)
 
 Test and ship with confidence with a manual and exploratory testing
 toolkit
 
-[link](https://azure.microsoft.com/en-us/services/devtest-lab/)
+## Azure DevTest Labs
 
-Azure DevTest Labs
-------------------
+[link](https://azure.microsoft.com/en-us/services/devtest-lab/)
 
 Quickly create environments using reusable templates and artifacts
 
-[link](https://azure.microsoft.com/en-us/products/devops-tool-integrations/)
+## DevOps tool integrations
 
-DevOps tool integrations
-------------------------
+[link](https://azure.microsoft.com/en-us/products/devops-tool-integrations/)
 
 Use your favorite DevOps tools with Azure
 
-[link](https://azure.microsoft.com/en-us/services/application-insights/)
+## Application Insights
 
-Application Insights
---------------------
+## Identity
+
+[link](https://azure.microsoft.com/en-us/services/application-insights/)
 
 Detect, triage, and diagnose issues in your web apps and services
 
-
-Identity
---------
-
 [Learn more](https://azure.microsoft.com/en-us/product-categories/identity/)
+
+## Azure Active Directory
 
 [link](https://azure.microsoft.com/en-us/services/active-directory/)
 
-Azure Active Directory
-----------------------
-
 Synchronize on-premises directories and enable single sign-on
+
+## Azure Information Protection
 
 [link](https://azure.microsoft.com/en-us/services/information-protection/)
 
-Azure Information Protection
-----------------------------
-
-Better protect your sensitive information---anytime, anywhere
+## Azure Active Directory Domain Services
 
 [link](https://azure.microsoft.com/en-us/services/active-directory-ds/)
 
-Azure Active Directory Domain Services
---------------------------------------
-
 Join Azure virtual machines to a domain without domain controllers
+
+## Azure Active Directory B2C
+
+## Integration
 
 [link](https://azure.microsoft.com/en-us/services/active-directory-b2c/)
 
-Azure Active Directory B2C
---------------------------
-
 Consumer identity and access management in the cloud
-
-Integration
------------
-
 
 [Learn more](https://azure.microsoft.com/en-us/product-categories/integration/)
 
-[link](https://azure.microsoft.com/en-us/services/event-grid/)
+## Event Grid
 
-Event Grid
-----------
+[link](https://azure.microsoft.com/en-us/services/event-grid/)
 
 Get reliable event delivery at massive scale
 
-[link](https://azure.microsoft.com/en-us/services/logic-apps/)
+## Logic Apps
 
-Logic Apps
-----------
+[link](https://azure.microsoft.com/en-us/services/logic-apps/)
 
 Automate the access and use of data across clouds without writing code
 
-[link](https://azure.microsoft.com/en-us/services/api-management/)
+## API Management
 
-API Management
---------------
+[link](https://azure.microsoft.com/en-us/services/api-management/)
 
 Publish APIs to developers, partners, and employees securely and at
 scale
 
-[link](https://azure.microsoft.com/en-us/services/service-bus/)
+## Service Bus
 
-Service Bus
------------
+## Internet of Things
+
+[link](https://azure.microsoft.com/en-us/services/service-bus/)
 
 Connect across private and public cloud environments
 
-Internet of Things
-------------------
-
 [Learn more](https://azure.microsoft.com/en-us/overview/iot/)
+
+## IoT Hub
 
 [link](https://azure.microsoft.com/en-us/services/iot-hub/)
 
-IoT Hub
--------
-
 Connect, monitor and manage billions of IoT assets
+
+## IoT Edge
 
 [link](https://azure.microsoft.com/en-us/services/iot-edge/)
 
-IoT Edge
---------
-
 Extend cloud intelligence and analytics to edge devices
 
-[link](https://azure.microsoft.com/en-us/services/iot-central/)
+## IoT Central
 
-IoT Central
------------
+[link](https://azure.microsoft.com/en-us/services/iot-central/)
 
 Experience the simplicity of SaaS for IoT, with no cloud expertise
 required
 
-[link](https://azure.microsoft.com/en-us/features/iot-accelerators/)
+## IoT solution accelerators
 
-IoT solution accelerators
--------------------------
+[link](https://azure.microsoft.com/en-us/features/iot-accelerators/)
 
 Create fully customizable solutions with templates for common IoT
 scenarios
 
-[link](https://azure.microsoft.com/en-us/services/azure-sphere/)
+## Azure Sphere
 
-Azure Sphere
-------------
+[link](https://azure.microsoft.com/en-us/services/azure-sphere/)
 
 Securely connect MCU-powered devices from the silicon to the cloud
 
-[link](https://azure.microsoft.com/en-us/services/time-series-insights/)
+## Time Series Insights
 
-Time Series Insights
---------------------
+[link](https://azure.microsoft.com/en-us/services/time-series-insights/)
 
 Explore and analyze time-series data from IoT devices
 
-[link](https://azure.microsoft.com/en-us/services/azure-maps/)
+## Azure Maps
 
-Azure Maps
-----------
+[link](https://azure.microsoft.com/en-us/services/azure-maps/)
 
 Simple and secure location APIs provide geospatial context to data
 
-[link](https://azure.microsoft.com/en-us/services/functions/)
+## Functions
 
-Functions
----------
+[link](https://azure.microsoft.com/en-us/services/functions/)
 
 Process events with serverless code
 
-[link](https://azure.microsoft.com/en-us/services/event-grid/)
+## Event Grid
 
-Event Grid
-----------
+[link](https://azure.microsoft.com/en-us/services/event-grid/)
 
 Get reliable event delivery at massive scale
 
-[link](https://azure.microsoft.com/en-us/services/windows-10-iot-core/)
+## Windows 10 IoT Core Services
 
-Windows 10 IoT Core Services
-----------------------------
+[link](https://azure.microsoft.com/en-us/services/windows-10-iot-core/)
 
 Long-term OS support and services to manage device updates and assess
 device health
 
-[link](https://azure.microsoft.com/en-us/services/machine-learning-services/)
+## Machine Learning Services
 
-Machine Learning Services
--------------------------
+[link](https://azure.microsoft.com/en-us/services/machine-learning-services/)
 
 Bring AI to everyone with an end-to-end, scalable, trusted platform with
 experimentation and model management
 
-[link](https://azure.microsoft.com/en-us/services/machine-learning-studio/)
+## Machine Learning Studio
 
-Machine Learning Studio
------------------------
+[link](https://azure.microsoft.com/en-us/services/machine-learning-studio/)
 
 Easily build, deploy, and manage predictive analytics solutions
 
-[link](https://azure.microsoft.com/en-us/services/stream-analytics/)
+## Stream Analytics
 
-Stream Analytics
-----------------
+[link](https://azure.microsoft.com/en-us/services/stream-analytics/)
 
 Real-time data stream processing from millions of IoT devices
 
-[link](https://azure.microsoft.com/en-us/services/logic-apps/)
+## Logic Apps
 
-Logic Apps
-----------
+[link](https://azure.microsoft.com/en-us/services/logic-apps/)
 
 Automate the access and use of data across clouds without writing code
 
-[link](https://azure.microsoft.com/en-us/services/notification-hubs/)
+## Notification Hubs
 
-Notification Hubs
------------------
+[link](https://azure.microsoft.com/en-us/services/notification-hubs/)
 
 Send push notifications to any platform from any back end
 
-[link](https://azure.microsoft.com/en-us/services/cosmos-db/)
+## Azure Cosmos DB
 
-Azure Cosmos DB
----------------
+[link](https://azure.microsoft.com/en-us/services/cosmos-db/)
 
 Globally distributed, multi-model database for any scale
 
-[link](https://azure.microsoft.com/en-us/services/api-management/)
+## API Management
 
-API Management
---------------
+## Management Tools
+
+[link](https://azure.microsoft.com/en-us/services/api-management/)
 
 Publish APIs to developers, partners, and employees securely and at
 scale
 
-Management Tools
-----------------
-
-
 [Learn more](https://azure.microsoft.com/en-us/product-categories/management-tools/)
+
+## Backup
 
 [link](https://azure.microsoft.com/en-us/services/backup/)
 
-Backup
-------
-
 Simple and reliable server backup to the cloud
+
+## Application Insights
 
 [link](https://azure.microsoft.com/en-us/services/application-insights/)
 
-Application Insights
---------------------
-
 Detect, triage, and diagnose issues in your web apps and services
+
+## Site Recovery
 
 [link](https://azure.microsoft.com/en-us/services/site-recovery/)
 
-Site Recovery
--------------
-
 Orchestrate protection and recovery of private clouds
+
+## Azure Advisor
 
 [link](https://azure.microsoft.com/en-us/services/advisor/)
 
-Azure Advisor
--------------
-
 Your personalized Azure best practices recommendation engine
+
+## Scheduler
 
 [link](https://azure.microsoft.com/en-us/services/scheduler/)
 
-Scheduler
----------
-
 Run your jobs on simple or complex recurring schedules
+
+## Automation
 
 [link](https://azure.microsoft.com/en-us/services/automation/)
 
-Automation
-----------
-
 Simplify cloud management with process automation
+
+## Traffic Manager
 
 [link](https://azure.microsoft.com/en-us/services/traffic-manager/)
 
-Traffic Manager
----------------
-
 Route incoming traffic for high performance and availability
+
+## Log Analytics
 
 [link](https://azure.microsoft.com/en-us/services/log-analytics/)
 
-Log Analytics
--------------
-
 Collect, search, and visualize machine data from on-premises and cloud
+
+## Azure Monitor
 
 [link](https://azure.microsoft.com/en-us/services/monitor/)
 
-Azure Monitor
--------------
-
 Highly granular and real-time monitoring data for any Azure resource
+
+## Network Watcher
 
 [link](https://azure.microsoft.com/en-us/services/network-watcher/)
 
-Network Watcher
----------------
-
 Network performance monitoring and diagnostics solution
 
-[link](https://azure.microsoft.com/en-us/features/service-health/)
+## Azure Service Health
 
-Azure Service Health
---------------------
+[link](https://azure.microsoft.com/en-us/features/service-health/)
 
 Personalized guidance and support for when issues in Azure services
 affect you
 
-[link](https://azure.microsoft.com/en-us/features/azure-portal/)
+## Microsoft Azure portal
 
-Microsoft Azure portal
-----------------------
+[link](https://azure.microsoft.com/en-us/features/azure-portal/)
 
 Build, manage, and monitor all Azure products in a single, unified
 console
 
-[link](https://azure.microsoft.com/en-us/features/resource-manager/)
+## Azure Resource Manager
 
-Azure Resource Manager
-----------------------
+[link](https://azure.microsoft.com/en-us/features/resource-manager/)
 
 Simplify how you manage your app resources
 
-[link](https://azure.microsoft.com/en-us/features/cloud-shell/)
+## Cloud Shell
 
-Cloud Shell
------------
+[link](https://azure.microsoft.com/en-us/features/cloud-shell/)
 
 Streamline Azure administration with a browser-based shell
 
-[link](https://azure.microsoft.com/en-us/features/azure-portal/mobile-app/)
+## Azure Mobile App
 
-Azure Mobile App
-----------------
+[link](https://azure.microsoft.com/en-us/features/azure-portal/mobile-app/)
 
 Stay connected to your Azure resources---anytime, anywhere
 
-[link](https://azure.microsoft.com/en-us/services/azure-policy/)
+## Azure Policy
 
-Azure Policy
-------------
+[link](https://azure.microsoft.com/en-us/services/azure-policy/)
 
 Implement corporate governance and standards at scale for Azure
 resources
 
-[link](https://azure.microsoft.com/en-us/services/cost-management/)
+## Cost Management
 
-Cost Management
----------------
+[link](https://azure.microsoft.com/en-us/services/cost-management/)
 
 Optimize what you spend on the cloud, while maximizing cloud potential
 
-[link](https://azure.microsoft.com/en-us/services/managed-applications/)
+## Azure Managed Applications
 
-Azure Managed Applications
---------------------------
+[link](https://azure.microsoft.com/en-us/services/managed-applications/)
 
 Simplify management of cloud offerings
 
-[link](https://azure.microsoft.com/en-us/services/azure-migrate/)
+## Azure Migrate
 
-Azure Migrate
--------------
+## Media
+
+[link](https://azure.microsoft.com/en-us/services/azure-migrate/)
 
 Easily discover, assess, right-size, and migrate your on-premises VMs to
 Azure
 
-Media
------
+## Media Services
 
 [link](https://azure.microsoft.com/en-us/services/media-services/)
 
-Media Services
---------------
-
 Encode, store, and stream video and audio at scale
+
+## Encoding
 
 [link](https://azure.microsoft.com/en-us/services/media-services/encoding/)
 
-Encoding
---------
-
 Studio grade encoding at cloud scale
 
-[link](https://azure.microsoft.com/en-us/services/media-services/live-on-demand/)
+## Live and On-Demand Streaming
 
-Live and On-Demand Streaming
-----------------------------
+[link](https://azure.microsoft.com/en-us/services/media-services/live-on-demand/)
 
 Deliver content to virtually all devices with scale to meet business
 needs
 
-[link](https://azure.microsoft.com/en-us/services/media-services/media-player/)
+## Azure Media Player
 
-Azure Media Player
-------------------
+[link](https://azure.microsoft.com/en-us/services/media-services/media-player/)
 
 A single layer for all your playback needs
 
-[link](https://azure.microsoft.com/en-us/services/media-services/content-protection/)
+## Content Protection
 
-Content Protection
-------------------
+[link](https://azure.microsoft.com/en-us/services/media-services/content-protection/)
 
 Securely deliver content using AES, PlayReady, Widevine, and Fairplay
 
-[link](https://azure.microsoft.com/en-us/services/media-services/media-analytics/)
+## Media Analytics
 
-Media Analytics
----------------
+[link](https://azure.microsoft.com/en-us/services/media-services/media-analytics/)
 
 Uncover insights from video files with speech and vision services
 
-[link](https://azure.microsoft.com/en-us/services/cognitive-services/video-indexer/)
+## Video Indexer
 
-Video Indexer
--------------
+## Migration
+
+[link](https://azure.microsoft.com/en-us/services/cognitive-services/video-indexer/)
 
 Unlock video insights
 
-Migration
----------
-
 [Learn more](https://azure.microsoft.com/en-us/migration/)
+
+## Site Recovery
 
 [link](https://azure.microsoft.com/en-us/services/site-recovery/)
 
-Site Recovery
--------------
-
 Orchestrate protection and recovery of private clouds
+
+## Cost Management
 
 [link](https://azure.microsoft.com/en-us/services/cost-management/)
 
-Cost Management
----------------
-
 Optimize what you spend on the cloud, while maximizing cloud potential
+
+## Azure Database Migration Service
 
 [link](https://azure.microsoft.com/en-us/services/database-migration/)
 
-Azure Database Migration Service
---------------------------------
-
 Simplify on-premises database migration to the cloud
 
-[link](https://azure.microsoft.com/en-us/services/azure-migrate/)
+## Azure Migrate
 
-Azure Migrate
--------------
+[link](https://azure.microsoft.com/en-us/services/azure-migrate/)
 
 Easily discover, assess, right-size, and migrate your on-premises VMs to
 Azure
 
-[link](https://azure.microsoft.com/en-us/services/storage/databox/)
+## Data Box
 
-Data Box
---------
+## Mobile
+
+[link](https://azure.microsoft.com/en-us/services/storage/databox/)
 
 Secure, ruggedized appliance for Azure data transfer
 
-
-Mobile
-------
+## App Service
 
 [link](https://azure.microsoft.com/en-us/services/app-service/)
 
-App Service
------------
-
 Quickly create powerful cloud apps for web and mobile
+
+## Azure Maps
 
 [link](https://azure.microsoft.com/en-us/services/azure-maps/)
 
-Azure Maps
-----------
-
 Simple and secure location APIs provide geospatial context to data
+
+## Notification Hubs
 
 [link](https://azure.microsoft.com/en-us/services/notification-hubs/)
 
-Notification Hubs
------------------
-
 Send push notifications to any platform from any back end
+
+## Web Apps
 
 [link](https://azure.microsoft.com/en-us/services/app-service/web/)
 
-Web Apps
---------
-
 Quickly create and deploy mission critical web apps at scale
+
+## Mobile Apps
 
 [link](https://azure.microsoft.com/en-us/services/app-service/mobile/)
 
-Mobile Apps
------------
-
 Build and host the backend for any mobile app
+
+## API Apps
 
 [link](https://azure.microsoft.com/en-us/services/app-service/api/)
 
-API Apps
---------
-
 Easily build and consume Cloud APIs
+
+## Azure Mobile App
 
 [link](https://azure.microsoft.com/en-us/features/azure-portal/mobile-app/)
 
-Azure Mobile App
-----------------
-
 Stay connected to your Azure resources---anytime, anywhere
+
+## Visual Studio App Center
 
 [link](https://azure.microsoft.com/en-us/services/app-center/)
 
-Visual Studio App Center
-------------------------
-
 Ship apps faster by automating application lifecycles
+
+## Xamarin
 
 [link](https://azure.microsoft.com/en-us/features/xamarin/)
 
-Xamarin
--------
-
 Create cloud-powered mobile apps faster
 
-[link](https://azure.microsoft.com/en-us/services/app-service/containers/)
+## Web App for Containers
 
-Web App for Containers
-----------------------
+## Networking
+
+[link](https://azure.microsoft.com/en-us/services/app-service/containers/)
 
 Easily deploy and run containerized web apps that scale with your
 business
 
-Networking
-----------
-
 [Learn more](https://azure.microsoft.com/en-us/product-categories/networking/)
+
+## Content Delivery Network
 
 [link](https://azure.microsoft.com/en-us/services/cdn/)
 
-Content Delivery Network
-------------------------
-
 Ensure secure, reliable content delivery with broad global reach
+
+## ExpressRoute
 
 [link](https://azure.microsoft.com/en-us/services/expressroute/)
 
-ExpressRoute
-------------
-
 Dedicated private network fiber connections to Azure
+
+## Azure DNS
 
 [link](https://azure.microsoft.com/en-us/services/dns/)
 
-Azure DNS
----------
-
 Host your DNS domain in Azure
 
-[link](https://azure.microsoft.com/en-us/services/virtual-network/)
+## Virtual Network
 
-Virtual Network
----------------
+[link](https://azure.microsoft.com/en-us/services/virtual-network/)
 
 Provision private networks, optionally connect to on-premises
 datacenters
 
-[link](https://azure.microsoft.com/en-us/services/traffic-manager/)
+## Traffic Manager
 
-Traffic Manager
----------------
+[link](https://azure.microsoft.com/en-us/services/traffic-manager/)
 
 Route incoming traffic for high performance and availability
 
-[link](https://azure.microsoft.com/en-us/services/load-balancer/)
+## Load Balancer
 
-Load Balancer
--------------
+[link](https://azure.microsoft.com/en-us/services/load-balancer/)
 
 Deliver high availability and network performance to your applications
 
-[link](https://azure.microsoft.com/en-us/services/vpn-gateway/)
+## VPN Gateway
 
-VPN Gateway
------------
+[link](https://azure.microsoft.com/en-us/services/vpn-gateway/)
 
 Establish secure, cross-premises connectivity
 
-[link](https://azure.microsoft.com/en-us/services/application-gateway/)
+## Application Gateway
 
-Application Gateway
--------------------
+[link](https://azure.microsoft.com/en-us/services/application-gateway/)
 
 Build secure, scalable, and highly available web front ends in Azure
 
-[link](https://azure.microsoft.com/en-us/services/ddos-protection/)
+## Azure DDoS Protection
 
-Azure DDoS Protection
----------------------
+[link](https://azure.microsoft.com/en-us/services/ddos-protection/)
 
 Protect your applications from Distributed Denial of Service (DDoS)
 attacks
 
-[link](https://azure.microsoft.com/en-us/services/network-watcher/)
+## Network Watcher
 
-Network Watcher
----------------
+[link](https://azure.microsoft.com/en-us/services/network-watcher/)
 
 Network performance monitoring and diagnostics solution
 
-[link](https://azure.microsoft.com/en-us/services/azure-firewall/)
+## Azure Firewall
 
-Azure Firewall
---------------
+[link](https://azure.microsoft.com/en-us/services/azure-firewall/)
 
 Native firewalling capabilities with built-in high availability,
 unrestricted cloud scalability, and zero maintenance
 
-[link](https://azure.microsoft.com/en-us/services/virtual-wan/)
+## Virtual WAN
 
-Virtual WAN
------------
+## Security
+
+[link](https://azure.microsoft.com/en-us/services/virtual-wan/)
 
 Optimize and automate branch to branch connectivity through Azure
 
-
-Security
---------
-
 [Learn more](https://azure.microsoft.com/en-us/product-categories/security/)
+
+## Azure Active Directory
 
 [link](https://azure.microsoft.com/en-us/services/active-directory/)
 
-Azure Active Directory
-----------------------
-
 Synchronize on-premises directories and enable single sign-on
+
+## Azure Information Protection
 
 [link](https://azure.microsoft.com/en-us/services/information-protection/)
 
-Azure Information Protection
-----------------------------
-
 Better protect your sensitive information---anytime, anywhere
+
+## Azure Active Directory Domain Services
 
 [link](https://azure.microsoft.com/en-us/services/active-directory-ds/)
 
-Azure Active Directory Domain Services
---------------------------------------
-
 Join Azure virtual machines to a domain without domain controllers
+
+## Key Vault
 
 [link](https://azure.microsoft.com/en-us/services/key-vault/)
 
-Key Vault
----------
-
 Safeguard and maintain control of keys and other secrets
 
-[link](https://azure.microsoft.com/en-us/services/security-center/)
+## Security Center
 
-Security Center
----------------
+[link](https://azure.microsoft.com/en-us/services/security-center/)
 
 Unify security management and enable advanced threat protection across
 hybrid cloud workloads
 
-[link](https://azure.microsoft.com/en-us/services/vpn-gateway/)
+## VPN Gateway
 
-VPN Gateway
------------
+[link](https://azure.microsoft.com/en-us/services/vpn-gateway/)
 
 Establish secure, cross-premises connectivity
 
-[link](https://azure.microsoft.com/en-us/services/application-gateway/)
+## Application Gateway
 
-Application Gateway
--------------------
+[link](https://azure.microsoft.com/en-us/services/application-gateway/)
 
 Build secure, scalable, and highly available web front ends in Azure
 
-[link](https://azure.microsoft.com/en-us/services/ddos-protection/)
+## Azure DDoS Protection
 
-Azure DDoS Protection
----------------------
+[link](https://azure.microsoft.com/en-us/services/ddos-protection/)
 
 Protect your applications from Distributed Denial of Service (DDoS)
 attacks
 
-[link](https://azure.microsoft.com/en-us/features/azure-advanced-threat-protection/)
+## Azure Advanced Threat Protection
 
-Azure Advanced Threat Protection
---------------------------------
+## Storage
+
+[link](https://azure.microsoft.com/en-us/features/azure-advanced-threat-protection/)
 
 Detect and investigate advanced attacks on-premises and in the cloud
 
-Storage
--------
-
 [Learn more](https://azure.microsoft.com/en-us/product-categories/storage/)
+
+## Storage
 
 [link](https://azure.microsoft.com/en-us/services/storage/)
 
-Storage
--------
-
 Durable, highly available, and massively scalable cloud storage
+
+## Backup
 
 [link](https://azure.microsoft.com/en-us/services/backup/)
 
-Backup
-------
-
 Simple and reliable server backup to the cloud
+
+## StorSimple
 
 [link](https://azure.microsoft.com/en-us/services/storsimple/)
 
-StorSimple
-----------
-
 Lower costs with an enterprise hybrid cloud storage solution
+
+## Azure Data Lake Storage
 
 [link](https://azure.microsoft.com/en-us/services/storage/data-lake-storage/)
 
-Azure Data Lake Storage
------------------------
-
 Massively scalable data lake storage
+
+## Blob Storage
 
 [link](https://azure.microsoft.com/en-us/services/storage/blobs/)
 
-Blob Storage
-------------
-
 REST-based object storage for unstructured data
+
+## Disk Storage
 
 [link](https://azure.microsoft.com/en-us/services/storage/disks/)
 
-Disk Storage
-------------
-
 Persistent, secured disk options supporting virtual machines
+
+## Managed Disks
 
 [link](https://azure.microsoft.com/en-us/services/managed-disks/)
 
-Managed Disks
--------------
-
 Persistent, secured disk storage for Azure virtual machines
+
+## Queue Storage
 
 [link](https://azure.microsoft.com/en-us/services/storage/queues/)
 
-Queue Storage
--------------
-
 Effectively scale apps according to traffic
+
+## File Storage
 
 [link](https://azure.microsoft.com/en-us/services/storage/files/)
 
-File Storage
-------------
-
 File shares that use the standard SMB 3.0 protocol
+
+## Data Box
 
 [link](https://azure.microsoft.com/en-us/services/storage/databox/)
 
-Data Box
---------
-
 Secure, ruggedized appliance for Azure data transfer
+
+## Storage Explorer
 
 [link](https://azure.microsoft.com/en-us/features/storage-explorer/)
 
-Storage Explorer
-----------------
-
 View and interact with Azure Storage resources
+
+## Archive Storage
 
 [link](https://azure.microsoft.com/en-us/services/storage/archive/)
 
-Archive Storage
----------------
-
 Industry leading price point for storing rarely accessed data
+
+## Azure NetApp Files
 
 [link](https://azure.microsoft.com/en-us/services/storage/netapp/)
 
-Azure NetApp Files
-------------------
+## Web
 
 Powerful, hybrid network file system (NFS) file shares
 
-Web
----
-
 [Learn more](https://azure.microsoft.com/en-us/product-categories/web/)
+
+## App Service
 
 [link](https://azure.microsoft.com/en-us/services/app-service/)
 
-App Service
------------
-
 Quickly create powerful cloud apps for web and mobile
+
+## Content Delivery Network
 
 [link](https://azure.microsoft.com/en-us/services/cdn/)
 
-Content Delivery Network
-------------------------
-
 Ensure secure, reliable content delivery with broad global reach
+
+## Notification Hubs
 
 [link](https://azure.microsoft.com/en-us/services/notification-hubs/)
 
-Notification Hubs
------------------
-
 Send push notifications to any platform from any back end
 
-[link](https://azure.microsoft.com/en-us/services/api-management/)
+## API Management
 
-API Management
---------------
+[link](https://azure.microsoft.com/en-us/services/api-management/)
 
 Publish APIs to developers, partners, and employees securely and at
 scale
 
-[link](https://azure.microsoft.com/en-us/services/search/)
+## Azure Search
 
-Azure Search
-------------
+[link](https://azure.microsoft.com/en-us/services/search/)
 
 Fully-managed search-as-a-service
 
-[link](https://azure.microsoft.com/en-us/services/app-service/web/)
+## Web Apps
 
-Web Apps
---------
+[link](https://azure.microsoft.com/en-us/services/app-service/web/)
 
 Quickly create and deploy mission critical web apps at scale
 
-[link](https://azure.microsoft.com/en-us/services/app-service/mobile/)
+## Mobile Apps
 
-Mobile Apps
------------
+[link](https://azure.microsoft.com/en-us/services/app-service/mobile/)
 
 Build and host the backend for any mobile app
 
-[link](https://azure.microsoft.com/en-us/services/app-service/api/)
+## API Apps
 
-API Apps
---------
+[link](https://azure.microsoft.com/en-us/services/app-service/api/)
 
 Easily build and consume Cloud APIs
 
-[link](https://azure.microsoft.com/en-us/services/app-service/containers/)
+## Web App for Containers
 
-Web App for Containers
-----------------------
+[link](https://azure.microsoft.com/en-us/services/app-service/containers/)
 
 Easily deploy and run containerized web apps that scale with your
 business
 
+## Azure SignalR Service
+
 [link](https://azure.microsoft.com/en-us/services/signalr-service/)
 
-Azure SignalR Service
----------------------
-
-Microsoft Azure
+## Microsoft Azure
 
 [Microsoft Azure](https://azure.microsoft.com/en-us/)
 
@@ -1854,8 +1518,7 @@ Microsoft Azure
 -   [Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/)
 -   [Datacenters](https://azure.microsoft.com/en-us/global-infrastructure/)
 
-
-Community
+### Community
 
 [Community](https://azure.microsoft.com/en-us/blog/)
 
@@ -1869,7 +1532,7 @@ Community
 -   [Students](https://azure.microsoft.com/en-us/free/students/)
 -   [Startups](https://startups.microsoft.com/)
 
-Support
+### Support
 
 [Support](https://azure.microsoft.com/en-us/support/options/)
 
@@ -1877,8 +1540,7 @@ Support
 -   [Azure Status Dashboard](https://azure.microsoft.com/en-us/status/)
 -   [Support](https://azure.microsoft.com/en-us/support/options/)
 
-
-Account
+### Account
 
 [Account](https://azure.microsoft.com/en-us/account/)
 
@@ -1890,7 +1552,7 @@ Account
 -   [Privacy data
     management](https://azure.microsoft.com/en-us/privacy-data-management/)
 
-Trust Center
+### Trust Center
 
 [Trust
 Center](https://azure.microsoft.com/en-us/overview/trusted-cloud/)
@@ -1898,5 +1560,4 @@ Center](https://azure.microsoft.com/en-us/overview/trusted-cloud/)
 -   [Security](https://go.microsoft.com/fwlink/?LinkId=717954&clcid=0x409)
 -   [Privacy](https://go.microsoft.com/fwlink/?LinkId=717953&clcid=0x409)
 -   [Compliance](https://go.microsoft.com/fwlink/?LinkId=837787&clcid=0x409)
-
 
