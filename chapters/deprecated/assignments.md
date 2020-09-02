@@ -1,5 +1,4 @@
-Assignments
-===========
+# Assignments
 
 Lessons may include a number of Exercises. However you do not have to do
 all of them. We list hire all defined assignments for this class and
