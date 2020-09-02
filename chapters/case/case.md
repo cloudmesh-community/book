@@ -1,4 +1,4 @@
-## IU 100 Node Cluster Case :o2:
+# IU 100 Node Cluster Case
 
 :o2:
 
@@ -32,7 +32,7 @@ Next we provide an introduction on how to use the Laser cutter
 at IU. The last part of this section includes a list of links and some
 images of clusters designed by others.
 
-### Designing a Case with CAD
+## Designing a Case with CAD
 
 We believe the best program for us to design a case for the cluster is
 OpenSCAD. Links and tutorials to the software can be found here:
@@ -63,7 +63,7 @@ This program allows you to design the layout of a 3D case via a
 sophisticated GUI just like Fusion 360.
 
 
-### IU cluster Case design
+## IU cluster Case design
 
 We have designed the following cases
 
@@ -101,7 +101,7 @@ Once you have designed the 5 node cluster, you will also need to
 design a shelf in which you can place them. Power plugs need to be
 added. so you can power the PI within the cluster.
 
-### Laser Cutter
+## Laser Cutter
 
 With a laser cutter we can create very precise cases.  First, you will
 need an overview of what a laser cutter is. There are many good
@@ -199,7 +199,7 @@ Questions to be integrated:
 * What will you check before pressing the start button to ensure safety?
 
 
-### Cases and Parts Designed by the Community
+## Cases and Parts Designed by the Community
 
 A 3D model of the Raspberry PI is available at
 
