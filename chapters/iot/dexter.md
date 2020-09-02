@@ -1,8 +1,6 @@
-Dexter
-======
+# Dexter
 
-Creating an SD Card
--------------------
+## Creating an SD Card
 
 ### macOS
 
