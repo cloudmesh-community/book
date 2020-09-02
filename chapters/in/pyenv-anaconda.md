@@ -1,5 +1,4 @@
- Anaconda
-========
+# Anaconda
 
 We do not recommend that you use anaconda as it may
 
@@ -42,8 +41,7 @@ Let us now create virtualenv for anaconda:
     $ pyenv virtualenv anaconda2-4.3.1 ANA2
     $ pyenv virtualenv anaconda3-4.3.1 ANA3
 
-Exercises
-=========
+## Exercises
 
 Econda.1:
 
