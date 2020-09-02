@@ -1,4 +1,4 @@
-## To Do
+# To Do
 
 Todos are integrated in the text marked with `TODO`. A TODO should have
 the form
@@ -30,7 +30,7 @@ If you observe something missing let us know.
  * <https://github.com/bigdata-i523>
  * <https://raw.githubusercontent.com/bigdata-i523/sample-hid000/master/README.md>
 
-### Integrate student contributions
+## Integrate student contributions
 
 Evaluate and potentially integrate the following contributions
 
@@ -59,7 +59,7 @@ Others see:
 
 <https://piazza.com/class/j5wll7vzylg25j?cid=722>
 
-### Others Volumes need to be integrated into the assignments
+## Others Volumes need to be integrated into the assignments
 
 1. (This document) Handbook of Clouds and Big Data, Gregor von Laszewski, Geoffrey C. Fox, and Judy Qiu, Fall 2017, <http://cyberaide.org/papers/vonLaszewski-bigdata.pdf>
 
@@ -72,7 +72,7 @@ Technology papers
 5. [Vol 7, Gregor von Laszewski, Spring 2018](http://cyberaide.org/papers/vonLaszewski-cloud-vol-7.pdf)
 6. [Cloud and Big Data Technologies Vol 8, Gregor von Laszewski, Spring 2018](http://cyberaide.org/papers/vonLaszewski-cloud-vol-8.pdf)
 
-### Tutorial about spark and kubernetes
+## Tutorial about spark and kubernetes
 
 - <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-1>
 - <http://blog.madhukaraphatak.com/scaling-spark-with-kubernetes-part-2>
@@ -93,7 +93,7 @@ Technology papers
 
 3 committed people can work on this.
 
-### Docker Cluster on PI Video
+## Docker Cluster on PI Video
 
 The following video is pretty interesting as it shows many of the steps
 that are needed to create a docker cluster. This is regardless if you
