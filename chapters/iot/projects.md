@@ -1,5 +1,4 @@
-Projects
-========
+# Projects
 
 Please see the introduction to the IoT section to get started.
 
