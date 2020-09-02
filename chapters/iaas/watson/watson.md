@@ -1,4 +1,6 @@
-# What is IBM Watson and why is it important?
+# IBM Watson
+
+## What is IBM Watson and why is it important?
 
 In past years we traditionally typed our questions into a query based search engine and it would return relevant content.  As we start interacting with our devices more in conversation through natural language processing, we need an answer to a question - not a list of relevant information.  We need the power of question answering (QA) technology.
 
