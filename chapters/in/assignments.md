@@ -1,5 +1,4 @@
-Assignments
-===========
+# Assignments
 
 The assignments are listed in chronological order. All assignments
 posted here are supposed to be conducted by you. There is a slight delay
@@ -47,8 +46,7 @@ Learning outcome:
 
 * Alternatively you can use your own calendar system
 
-Assignments E222
-----------------
+## Assignments E222
 
 [\[s:e222-assignments\]]{#s:e222-assignments label="s:e222-assignments"}
 
@@ -954,8 +952,7 @@ Learning Outcome:
 
 -   Learn how to use virtual machines or containers or both.
 
-Assignments I523
-----------------
+## Assignments I523
 
 ### Open Source Efforts
 
