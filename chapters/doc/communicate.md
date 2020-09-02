@@ -1,4 +1,4 @@
-## General Remarks about Communication
+# General Remarks about Communication
 
 Please do not use the e-mail of TA's and Instructors to communicate
 with them. They are **NOT** allowed to answer any questions send to
