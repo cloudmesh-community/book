@@ -1,5 +1,4 @@
-Piazza
-------
+# Piazza
 
 We use Piazza (<https://piazza.com>) because questions and answers on
 Piazza are community-edited and provides the opportunity not only for
@@ -25,7 +24,7 @@ A good document about piazza is available at
 
 -   <https://piazza.com/pdfs/piazza_product_introduction.pdf>
 
-### Access to Piazza from Canvas
+## Access to Piazza from Canvas
 
 Piazza is one of the recommended IU supported technologies within
 CANVAS. It replaces the CANVAS discussion groups with superior
@@ -37,7 +36,7 @@ next four subsections. Please read **ALL** of them **CAREFULLY**, decide
 which applies tou you and follow the instructions. If you have
 improvements to this instructions, please let us know.
 
-### Piazza for 516
+## Piazza for 516
 
 Due to a bug in canvas the piazza location for 516 could not be
 crosslisted to CANVAS. Thus we simply add the following link to it
@@ -62,9 +61,9 @@ existing `@indiana.edu` account. This can also be done with any other
 account you may have used in case it was not the `@iu.edu` account.
 
 
-### Piazza for other classes
+## Piazza for other classes
 
-#### Situation: You have never logged into piazza
+### Situation: You have never logged into piazza
 
 First, Click the Piazza link on the left navigation of your Canvas
 course.
@@ -95,14 +94,14 @@ Forth, if all goes well you see the Success screen
 
 ![image](images/piazza/image2.png)
 
-#### Situation: You have logged into piazza and used your default IU e-mail
+### Situation: You have logged into piazza and used your default IU e-mail
 
 1.  Click the Piazza link on the left navigation of your Canvas course.
 2.  You will be automatically enrolled in the course Piazza site and
     logged in.
 3.  Start using Piazza.
 
-#### Situation: You have logged into piazza and you used another non IU e-mail
+### Situation: You have logged into piazza and you used another non IU e-mail
 
 1.  Click the Piazza link on the left navigation of your Canvas course.
 2.  Proceed as in \#1. This will create your new Piazza account
@@ -112,7 +111,7 @@ Forth, if all goes well you see the Success screen
     email address or merge two
     accounts](https://www.google.com/url?q=http://support.piazza.com/customer/portal/articles/1646661-add-an-email-address-or-merge-two-accounts&sa=D&ust=1502127148503000&usg=AFQjCNHyBFh3TMAtSDpFordYOfH0IE6kPA).
 
-#### Situation: You have multiple accounts in piazza
+### Situation: You have multiple accounts in piazza
 
 1.  If one of your multiple accounts corresponds with your default IU
     email address, you will be automatically enrolled in the course
@@ -137,7 +136,7 @@ to
 
 "Ricci, Margaret P" \<[](mailto:mricci@iu.edu)\>
 
-### Verify you are on Piazza via a post
+## Verify you are on Piazza via a post
 
 Post in the **bio** folder a short introduction about yourself. One that
 you could include in a paper.
@@ -148,7 +147,7 @@ image at <https://laszewski.github.io/_images/gregor.jpg>
 Use the subject line *Biography: Firstname Lastname* and post it into
 the bio folder.
 
-### Making Piazza Work
+## Making Piazza Work
 
 In order for Piazza to work students and instructors need to participate
 
@@ -173,7 +172,7 @@ your responsibility to enroll in Piazza to make it work for you.
 Instructions are posted in this document. (Grade discussion will be done
 in CANVAS)
 
-### Towards good questions
+## Towards good questions
 
 Naturally when you ask a question you need to do it in a reasonable form
 and provide sufficient information so that the question can be answered.
@@ -220,7 +219,7 @@ The previous bad question will simply be commented on (if at all):
 It is in your responsibility to figure out which information is missing.
 You need to modify the original post and.
 
-### Guide on how to ask good questions
+## Guide on how to ask good questions
 
 This guide is adapted from
 
@@ -293,7 +292,7 @@ Steps to getting your question answered on piazza
     for the help you have been given. It will make you welcome in the
     forum the next time you go there for help.
 
-### Piazza class Links
+## Piazza class Links
 
 > ![Warning](images/warning.png) *Using the direct links listed in the next two sections, can
 > lead to you not getting proper access via Canvas. If you click on
@@ -305,7 +304,7 @@ Steps to getting your question answered on piazza
 If you have questions about this contact Margaret Ricci (mricci@iu.edu).
 
 
-#### Current Classes
+### Current Classes
 
 ---
 
@@ -319,7 +318,7 @@ If you have questions about this contact Margaret Ricci (mricci@iu.edu).
 | E516 | Fall | 2018 | [piazza home link](https://piazza.com/iu/fall2018/516/home) |
 
 
-#### Previous Classes
+### Previous Classes
 
 | Class | Semester | Year  | Link |
 | :------ | :------ | -----:| ------ |
@@ -330,7 +329,7 @@ If you have questions about this contact Margaret Ricci (mricci@iu.edu).
 | I524 | Spring | 2017 | [piazza home link](https://piazza.com/class/ix39m27czn5uw) |
 | I523 | Fall | 2016 | [piazza home link](https://piazza.com/class/irqfvh1ctrg2vt) |
 
-### Piazza Curation
+## Piazza Curation
 
 We are using Piazza in a curated fashion.  This means that we try to
 file posts into folders and delete messages that are not relevant or
@@ -378,7 +377,7 @@ the `assignments` folder, but instead use `help`.
 In case you decide to post privately and the information is useful for
 others also, the message will be published to the class.
 
-### Read the Originals, not just the e-mail
+## Read the Originals, not just the e-mail
 
 Piazza provides a convenient mechanism to update you through e-mail when
 an answer is changed or when someone posts.
@@ -397,7 +396,7 @@ part of the post and potentially answers your question in full. It is not
 sufficient to participate in this class while only reading email, you
 should participate while visiting piazza and actively contribute to it.
 
-### Exercises
+## Exercises
 
 Piazza.1
 
