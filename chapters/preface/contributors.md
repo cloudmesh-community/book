@@ -1,4 +1,4 @@
-## Contributors
+# Contributors
 
 
 The following people have contributed to some chapters and documents
