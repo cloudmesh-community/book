@@ -1,3 +1,5 @@
+# Deprecated
+
 In case you use containers in ubuntu we recommend that you use the
 docker container to compile the book as discussed in
 @sec:docker-create-book.
