@@ -1,4 +1,4 @@
-## Contributing
+# Contributing
 
 The document is written in markdown and managed with a Makefile
 developed by Gregor von Laszewski. Contributing  content is easy as
