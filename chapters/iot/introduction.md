@@ -1,5 +1,4 @@
-Introduction
-============
+# Introduction
 
 Internet of Things is one of the driving forces in the modernisation
 of today's world. It is based on connecting *things* to the internet
