@@ -1,5 +1,4 @@
-Internet of Things
-==================
+# Internet of Things
 
 -   5 Video lectures (46 minutes 21 seconds)
 
