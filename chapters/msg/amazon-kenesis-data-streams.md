@@ -1,6 +1,4 @@
-# Amazon Kinesis Data streams ![Construction](images/construction.png)
-
-Comment: This section needs to be improved
+# Amazon Kinesis Data Streams
 
 We provide high level overview on Amazon Kinesis and focus on an example that details setting up Amazon Kinesis data stream.
 Amazon kinesis is used to collect and process large streams of data records in a real time. Amazon kinesis data streams application reads data from a Kinesis data stream as records. Kinesis applications can use the kinesis client libraries and they can run on Amazon EC2 instances.
