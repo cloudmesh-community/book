@@ -1,8 +1,6 @@
-Raspberry PI 3
-==============
+# Raspberry PI 3
 
-Installation
-------------
+## Installation
 
 ### Erasing the SD Card
 
@@ -67,13 +65,11 @@ software.
 
 1.  Eject your sd card and insert it into your raspberry pi.
 
-Configure
----------
+## Configure
 
 ### Prepare OS
 
-Update
-------
+## Update
 
 The following are essential updates:
 
@@ -109,8 +105,7 @@ source
 
 ### Update to Python 3.6.1
 
-change python version
----------------------
+## Change python version
 
 -   \[https://linuxconfig.org/how-to-change-from-default-to-alternative-python-version-on-debian-linux\]
     (https://linuxconfig.org/how-to-change-from-default-to-alternative-python-version-on-debian-linux)
@@ -146,8 +141,7 @@ Now make python3.4 to your default with
 
 Select python3.4
 
-install 3.6.1
--------------
+## install 3.6.1
 
 To install python 3.6.1, follow steps 1 and 2. This is unnecessary for
 our purposes.
@@ -155,8 +149,7 @@ our purposes.
 -   [better get
     3.6.1](https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f)
 
-install cloudmesh-pi
---------------------
+## install cloudmesh-pi
 
 pip install cloudmesh-pi
 
@@ -200,8 +193,7 @@ If you have Raspbian for Robots, run the following in your terminal:
 
 describe how to install and configure VNC
 
-Sensors
--------
+## Sensors
 
 ### Grove Sensors :o2:
 
@@ -240,8 +232,7 @@ Connect the cable
 You will see the activity LEDs flash while the OS installs. Depending on
 your SD-Card this can take up to 40-60 minutes.
 
-VLC on macOS
-----------
+## VLC on macOS
 
 -   <http://www.videolan.org/vlc/index.en_GB.html>
 
@@ -251,8 +242,7 @@ VLC on macOS
 
 -
 
-    Camera on Pi
-    ------------
+## Camera on Pi
 
     sudo apt-get install vlc
 
@@ -260,23 +250,19 @@ VLC on macOS
 
 -   <https://www.hackster.io/bestd25/pi-car-016e66>
 
-Streaming video
----------------
+## Streaming video
 
 -   <https://blog.miguelgrinberg.com/post/stream-video-from-the-raspberry-pi-camera-to-web-browsers-even-on-ios-and-android>
 
-Linux Commandline
------------------
+## Linux Commandline
 
 -   <http://www.computerworld.com/article/2598082/linux/linux-linux-command-line-cheat-sheet.html>
 
-Enable SPI
-----------
+## Enable SPI
 
 go to the configuration interfaces and enable
 
-RTIMUlib2
----------
+## RTIMUlib2
 
 git clone https://github.com/RTIMULib/RTIMULib2.git cd RTIMULib
 
@@ -344,8 +330,7 @@ In terminal
     sudo make install
     sudo ldconfig
 
-Compile RTIMULib Apps
----------------------
+## Compile RTIMULib Apps
 
     cd /home/pi/github/RTIMULib2/Linux/RTIMULibCal
     make clean; make -j4
@@ -374,8 +359,7 @@ Compile RTIMULib Apps
     make -j4
     sudo make install
 
-Camera
-------
+## Camera
 
 -   [Camera
     Tutorial](https://www.raspberrypi.org/learning/getting-started-with-picamera/worksheet/)
@@ -411,8 +395,7 @@ command line has (cv) in front
     unzip opencv.zip
     unzip opencv_contrib.zip
 
-Lessons and Projects
---------------------
+## Lessons and Projects
 
 -   [Gui](https://www.raspberrypi.org/learning/getting-started-with-guis/worksheet/)\
 
@@ -424,8 +407,7 @@ Lessons and Projects
 -   [Pi car
     flask](https://circuitdigest.com/microcontroller-projects/web-controlled-raspberry-pi-surveillance-robot)
 
-OTHER TO BE INTEGRATED
-----------------------
+## OTHER TO BE INTEGRATED
 
 ### PI emulator on Windows
 
@@ -438,8 +420,7 @@ experiences with
 
 -   [scratch](https://github.com/DexterInd/GrovePi/tree/master/Software/Scratch)
 
-Web Server
-----------
+## Web Server
 
 -   [Web Server
     Flask](https://www.raspberrypi.org/learning/python-web-server-with-flask/worksheet/)
