@@ -1,8 +1,6 @@
-Distributed Message Queues
-==========================
+# Distributed Message Queues
 
-AMPQ
-----
+## AMPQ
 
 * <https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol>
 
@@ -32,4 +30,3 @@ Comparision
 
 Kafka:
 
-NATS?
