@@ -1,5 +1,4 @@
-How to Run VMs (IaaS)
-=====================
+# How to Run VMs (IaaS)
 
 -   17 Video lectures (2 hours 7 minutes 9 seconds)
 
