@@ -1,5 +1,4 @@
-How to Run Iterative MapReduce (PaaS)
-=====================================
+# How to Run Iterative MapReduce (PaaS)
 
 -   12 Video lectures (1 hour 37 minutes 32 seconds)
 
