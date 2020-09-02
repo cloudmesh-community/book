@@ -1,5 +1,4 @@
-Hardware for IoT Projects
-=========================
+# Hardware for IoT Projects
 
 When teaching programming you may find yourself in a situation that
 things can be done on your computer, but you may not want to install
@@ -86,8 +85,7 @@ less powerful and do not contain built-in Bluetooth or WiFi.
 -   We tried the Windows IoT package and were not impressed by it. This
     is not an issue of the Raspberry, but the Windows IoT platform
 
-ESP8266 Robot Car Kit
----------------------
+## ESP8266 Robot Car Kit
 
 The ESP8266 has many variants. Some of which are difficult to interface
 with. However, this does not apply for the ESP8266 NodeMCU. This board
@@ -126,10 +124,8 @@ Optionally you may want to get additional sensors such as wheel Encoders
     contribute by creating documentation we distribute in class for
     points)
 
--   -
 
-Sensor Kit
-----------
+## Sensor Kit
 
 It is fun to attach sensors to your IoT board. There are many kits
 available and we encourage you to do comparisons. One such kit is
@@ -143,8 +139,7 @@ recommend that you get a breadboard as it makes experimenting easier.
 -   \$5.68 [small bread board and
     wires](https://www.amazon.com/Elegoo-Premium-Female-tie-points-breadboard/dp/B06XB8TZVC/ref=sr_1_23?s=electronics&ie=UTF8&qid=1499251600&sr=1-23&keywords=elegoo)
 
-Fish Kit
---------
+## Fish Kit
 
 -   \$29.99
     [shark](https://www.amazon.com/Swimmer-Inflatable-Flying-Replacement-Balloon/dp/B00658LN3E/ref=pd_bxgy_21_img_2?_encoding=UTF8&pd_rd_i=B00658LN3E&pd_rd_r=F71N2YCYE6Z0BCCEPQJC&pd_rd_w=AwYab&pd_rd_wg=rHTnv&psc=1&refRID=F71N2YCYE6Z0BCCEPQJC)
@@ -171,8 +166,7 @@ Fish Kit
 
 -   paper clips
 
-Alternative components
-----------------------
+## Alternative components
 
 ### Esp8266 Alternatives
 
@@ -221,8 +215,7 @@ Raspberry PI. No soldering iron and no breadboards are required.
 -   [Grove
     Cable](http://www.switchdoc.com/2016/02/tutorial-intro-to-grove-connectors-for-arduinoraspberry-pi-projects/)
 
-Alternative Hardware and Sensors
---------------------------------
+## Alternative Hardware and Sensors
 
 In this section we will list a number of alternative hardware products
 that we are exploring. If you have used them, please help us improving
