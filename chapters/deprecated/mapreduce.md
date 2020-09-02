@@ -1,5 +1,4 @@
-How to Run MapReduce (PaaS)
-===========================
+# How to Run MapReduce (PaaS)
 
 -   15 Video lectures (1 hour 58 minutes 4 seconds)
 
