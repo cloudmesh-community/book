@@ -1,5 +1,4 @@
-Software Projects
-=================
+# Software Projects
 
 **Contents**
 
@@ -102,8 +101,7 @@ All software projects must:
     > This shows how A changes with regards to B, indicating that under
     > conditions X, Y, Z, Alpha is 42 times better than otherwise.
 
-Deployment Projects
--------------------
+## Deployment Projects
 
 Deployment projects focuses on automated software deployments on
 multiple nodes using automation tools such as Ansible, Chef, Puppet,
@@ -128,8 +126,7 @@ each cluster size.
 The program used for demonstration can be simple and straightforward.
 This is not the focus of this type of project.
 
-IaaS
-----
+## IaaS
 
 It is allowable to use
 
@@ -193,8 +190,7 @@ Deployment project will not only deploy the framework, but either provide
 a sophisticated benchmark while doing a simple analysis using the
 deployed software.
 
-Analytics Projects
-------------------
+## Analytics Projects
 
 Analytics projects focus on data exploration. For this type of projects,
 you should focus on analysis of a dataset (see datasets for starting
@@ -235,8 +231,7 @@ just a simple replication of what others have done before.
 -   application of a k-means algorithm
 -   application of a MDS
 
-Project Idea: World wide road kill
-----------------------------------
+## Project Idea: World wide road kill
 
 This project can also be executed as bonus project to gather information
 about the feasibility of existing databases.
@@ -273,8 +268,7 @@ something similar, maybe potholes ..
 Gregor would like to get this project or at least the database search
 query staffed.
 
-Project Idea: Author disambiguity problem
-----------------------------------------
+## Project Idea: Author disambiguity problem
 
 Given millions of publications how do we identify if an author of paper
 a with the name Will Smith is the sam as the author of paper 2 with the
