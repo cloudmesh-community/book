@@ -1,6 +1,6 @@
-## AWS Products
+# AWS Products
 
-### Compute
+## Compute
 
 -   [Amazon EC2](https://aws.amazon.com/ec2/?nc2=h_m1)
 -   [Amazon EC2 Auto
@@ -20,7 +20,7 @@
     Balancing](https://aws.amazon.com/elasticloadbalancing/?nc2=h_m1)
 -   [VMware Cloud on AWS](https://aws.amazon.com/vmware/?nc2=h_m1)
 
-### Storage
+## Storage
 
 -   [Amazon Simple Storage Service
     (S3)](https://aws.amazon.com/s3/?nc2=h_m1)
@@ -35,7 +35,7 @@
 -   [AWS Snowball Edge](https://aws.amazon.com/snowball-edge/?nc2=h_m1)
 -   [AWS Snowmobile](https://aws.amazon.com/snowmobile/?nc2=h_m1)
 
-### Database
+## Database
 
 -   [Amazon Aurora](https://aws.amazon.com/rds/aurora/?nc2=h_m1)
 -   [Amazon RDS](https://aws.amazon.com/rds/?nc2=h_m1)
@@ -46,7 +46,7 @@
 -   [AWS Database Migration
     Service](https://aws.amazon.com/dms/?nc2=h_m1)
 
-### Migration
+## Migration
 
 -   [AWS Migration Hub](https://aws.amazon.com/migration-hub/?nc2=h_m1)
 -   [AWS Application Discovery
@@ -59,7 +59,7 @@
 -   [AWS Snowball Edge](https://aws.amazon.com/snowball-edge/?nc2=h_m1)
 -   [AWS Snowmobile](https://aws.amazon.com/snowmobile/?nc2=h_m1)
 
-### Networking & Content Delivery
+## Networking & Content Delivery
 
 -   [Amazon VPC](https://aws.amazon.com/vpc/?nc2=h_m1)
 -   [Amazon VPC
@@ -71,7 +71,7 @@
 -   [Elastic Load
     Balancing](https://aws.amazon.com/elasticloadbalancing/?nc2=h_m1)
 
-### Developer Tools
+## Developer Tools
 
 -   [AWS CodeStar](https://aws.amazon.com/codestar/?nc2=h_m1)
 -   [AWS CodeCommit](https://aws.amazon.com/codecommit/?nc2=h_m1)
@@ -83,7 +83,7 @@
 -   [AWS Tools &
     SDKs](https://aws.amazon.com/getting-started/resource-center/tools-sdks/?nc2=h_m1)
 
-### Management Tools
+## Management Tools
 
 -   [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/?nc2=h_m1)
 -   [AWS Auto Scaling](https://aws.amazon.com/autoscaling/?nc2=h_m1)
@@ -105,7 +105,7 @@
 -   [AWS Managed
     Services](https://aws.amazon.com/managed-services/?nc2=h_m1)
 
-### Media Services
+## Media Services
 
 -   [Amazon Elastic
     Transcoder](https://aws.amazon.com/elastictranscoder/?nc2=h_m1)
@@ -122,7 +122,7 @@
 -   [AWS Elemental
     MediaTailor](https://aws.amazon.com/mediatailor/?nc2=h_m1)
 
-### Machine Learning
+## Machine Learning
 
 -   [Amazon SageMaker](https://aws.amazon.com/sagemaker/?nc2=h_a1)
 -   [Amazon Comprehend](https://aws.amazon.com/comprehend/?nc2=h_a1)
@@ -138,7 +138,7 @@
 -   [Apache MXNet on AWS](https://aws.amazon.com/mxnet/?nc2=h_m1)
 -   [TensorFlow on AWS](https://aws.amazon.com/tensorflow/?nc2=h_m1)
 
-### Analytics
+## Analytics
 
 -   [Amazon Athena](https://aws.amazon.com/athena/?nc2=h_m1)
 -   [Amazon EMR](https://aws.amazon.com/emr/?nc2=h_m1)
@@ -151,7 +151,7 @@
 -   [AWS Data Pipeline](https://aws.amazon.com/datapipeline/?nc2=h_m1)
 -   [AWS Glue](https://aws.amazon.com/glue/?nc2=h_m1)
 
-### Security, Identity & Compliance
+## Security, Identity & Compliance
 
 -   [AWS Identity and Access Management
     (IAM)](https://aws.amazon.com/iam/?nc2=h_m1)
@@ -178,7 +178,7 @@
 -   [AWS WAF](https://aws.amazon.com/waf/?nc2=h_m1)
 -   [AWS Artifact](https://aws.amazon.com/artifact/?nc2=h_m1)
 
-### Mobile Services
+## Mobile Services
 
 -   [AWS Mobile Hub](https://aws.amazon.com/mobilehub/?nc2=h_m1)
 -   [Amazon API Gateway](https://aws.amazon.com/api-gateway/?nc2=h_m1)
@@ -187,11 +187,11 @@
 -   [AWS Device Farm](https://aws.amazon.com/device-farm/?nc2=h_m1)
 -   [AWS Mobile SDK](https://aws.amazon.com/mobile/sdk/?nc2=h_m1)
 
-### AR & VR
+## AR & VR
 
 -   [Amazon Sumerian](https://aws.amazon.com/sumerian/?nc2=h_m1)
 
-### Application Integration
+## Application Integration
 
 -   [Amazon MQ](https://aws.amazon.com/amazon-mq/?nc2=h_m1)
 -   [Amazon Simple Queue Service
@@ -202,26 +202,26 @@
 -   [AWS Step
     Functions](https://aws.amazon.com/step-functions/?nc2=h_m1)
 
-### Customer Engagement
+## Customer Engagement
 
 -   [Amazon Connect](https://aws.amazon.com/connect/?nc2=h_m1)
 -   [Amazon Pinpoint](https://aws.amazon.com/pinpoint/?nc2=h_m1)
 -   [Amazon Simple Email Service
     (SES)](https://aws.amazon.com/ses/?nc2=h_m1)
 
-### Business Productivity
+## Business Productivity
 
 -   [Alexa for Business](/alexaforbusiness/?nc2=h_m1)
 -   [Amazon Chime](https://aws.amazon.com/chime/?nc2=h_m1)
 -   [Amazon WorkDocs](https://aws.amazon.com/workdocs/?nc2=h_m1)
 -   [Amazon WorkMail](https://aws.amazon.com/workmail/?nc2=h_m1)
 
-### Desktop & App Streaming
+## Desktop & App Streaming
 
 -   [Amazon WorkSpaces](https://aws.amazon.com/workspaces/?nc2=h_m1)
 -   [Amazon AppStream 2.0](https://aws.amazon.com/appstream2/?nc2=h_m1)
 
-### Internet of Things
+## Internet of Things
 
 -   [AWS IoT Core](https://aws.amazon.com/iot-core/?nc2=h_iot)
 -   [Amazon FreeRTOS](https://aws.amazon.com/freertos/?nc2=h_iot)
@@ -234,16 +234,16 @@
 -   [AWS IoT Device
     Management](https://aws.amazon.com/iot-device-management/?nc2=h_iot)
 
-### ame Development
+## Game Development
 -   [Amazon GameLift
 
 -   [Amazon Lumberyard](https://aws.amazon.com/lumberyard/?nc2=h_m1)
 
-### Software
+## Software
 
 -   [AWS Marketplace](https://aws.amazon.com/marketplace/)
 
-### AWS Cost Management
+## AWS Cost Management
 
 -   [AWS Cost
     Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/?nc2=h_m1)
