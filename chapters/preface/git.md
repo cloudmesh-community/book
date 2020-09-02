@@ -1,4 +1,4 @@
-## Class Git
+# Class Git
 
 This class uses git to manage all assignment submissions. We use the
 publicly available github.com. The class git is hosted at
