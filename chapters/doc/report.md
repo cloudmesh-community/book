@@ -1,5 +1,4 @@
-Report Format
--------------
+# Report Format
 
 We provide a uniform **trivial high quality** report format for this
 class that is slightly modified from its original. This was necessary
@@ -86,7 +85,7 @@ report.tex
 
 :   This file must not be modified.
 
-### Parallel Editing
+## Parallel Editing
 
 In most cases you will be able to work in groups on class
 projects. This allows you to develop the report collaboratively via
@@ -97,7 +96,7 @@ development. Thus we do not encourage using of sharelatex and
 overleaf. Instead we recommend you use git directly and communicate
 with each other in case yo work in a team.
 
-### Time management
+## Time management
 
 Obviously doing a project takes time
 
@@ -113,7 +112,7 @@ Obviously doing a project takes time
     use for example cloudmesh cmd5 commands and scripts that help you
     developing commands semi-automatically.
 
-### Report Checklist
+## Report Checklist
 
 This partial list may serve as a reminder on how to make sure your
 paper is properly developed. It is based on a collection of issues we
@@ -219,7 +218,7 @@ observed over time done by students developing reports.
     IN how published you put a noun in that describes what it is. E.g.
     Webpage, Git repository, ...
 
-### Exercise
+## Exercise
 
 Report.1:
 
