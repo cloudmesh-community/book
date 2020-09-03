@@ -3,7 +3,7 @@ metadata:
   image: "cover.png"
   title: "Lecture Notes\nIntelligent Systems\nEngineering"
   subtitle: "e222 Spring 2020"
-  author: "Tyler Balson\nGregor von Laszewski\nGeoffrey C. Fox"
+  author: "Geoffrey C. Fox\nGregor von Laszewski"
   subauthor: "Editor"
   email: "laszewski@gmail.com"
   url: "https://cloudmesh-community.github.io/pub/vonlaszewski-222-2020.epub"
