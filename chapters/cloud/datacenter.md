@@ -92,7 +92,7 @@ The graph for 2019 is available (see @fig:internet-minutes-2018-2019).
 
 The graph for 2019 is available (see @fig:internet-minutes-2018-2019).
 
-![Internet Minute 2019-2020 [@www-internet-minute-2019-2020]](images/internet-minute-2019-2020.jpg){#fig:internet-minutes-2018-2019}
+![Internet Minute 2019-2020 [@www-internet-minute-2019-2020]](images/internet-minute-2019-2020.jpg){#fig:internet-minutes-2019-2020}
 
 What do you observe? Create a pull request with your observations
 between the changes from 2018-2019
