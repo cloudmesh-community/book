@@ -31,9 +31,17 @@ a part of popular cloud services or the internet in general.
 
 
 One such popular depiction is *Data Never Sleeps* (see
-@fig:data-never-sleeps). It has been produced a number of times over the
-years and is now at version 7.0 released in 2019. If you identify a
+@fig:data-never-sleeps).
+
+
+It has been produced a number of times over the
+years and is now at version 8.0 released in 2020. If you identify a
 newer version, please let us know.
+
+Observations for 2020:
+
+
+![Data Never Sleeps  [@www-image-data-never-sleeps-8]](images/data-never-sleeps-8.jpg){#fig:data-never-sleeps-8}
 
 Observations for 2019:  It is worthwhile to study this image
 in detail and identify some of the data that you can relate to
