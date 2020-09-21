@@ -38,7 +38,10 @@ It has been produced a number of times over the
 years and is now at version 8.0 released in 2020. If you identify a
 newer version, please let us know.
 
-Observations for 2020:
+Observations for 2020: We observer that TikTok has become a world-wide service popular
+by the younger generation. Due to COVID-19 services such as DoorDash
+have become popular. Some services such as Netflix have switched units
+in the new chart. Thus comarision needs to be taken from other data.
 
 
 ![Data Never Sleeps  [@www-image-data-never-sleeps-8]](images/data-never-sleeps-8.jpg){#fig:data-never-sleeps-8}
@@ -83,11 +86,19 @@ quickly (see @fig:internet-minutes-2017-2018).
 ![Internet Minute 2017-2018 [@www-internet-minute-2017-2018]](images/internet-minute-2017-2018.jpg){#fig:internet-minutes-2017-2018}
 
 
-The newest such graph for 2019 is available (see @fig:internet-minutes-2018-2019).
+The graph for 2019 is available (see @fig:internet-minutes-2018-2019).
 
 ![Internet Minute 2018-2019 [@www-internet-minute-2018-2019]](images/internet-minute-2018-2019.jpg){#fig:internet-minutes-2018-2019}
 
-:o2: What do you observe? Create a pull request with your observations between the changes from 2018-2019
+The graph for 2019 is available (see @fig:internet-minutes-2018-2019).
+
+![Internet Minute 2019-2020 [@www-internet-minute-2019-2020]](images/internet-minute-2019-2020.jpg){#fig:internet-minutes-2018-2019}
+
+What do you observe? Create a pull request with your observations
+between the changes from 2018-2019
+
+What do you observe? Create a pull request with your observations between the changes from 2019-2020
+
 
 One of the obvious observations is that the hours watched on Netflix
 have drastically increased. This seems also to reflect the trend
