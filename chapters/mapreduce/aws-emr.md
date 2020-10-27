@@ -499,7 +499,6 @@ aws s3 mb s3://test-analysis-bucket `--region us-east-2`
 Create a `WordCount.py` file with the following code.
 
 ```python
-from __future__ import print_function
 from pyspark import SparkContext
 import sys
 if __name__ == "__main__":

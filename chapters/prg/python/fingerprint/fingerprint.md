@@ -69,9 +69,6 @@ the following steps will accomplish this:
 3.  Store the results in a database
 4.  Generate a plot to identify likely matches.
 
-```python
-from __future__ import print_function
-```
 
 ```python
 import urllib

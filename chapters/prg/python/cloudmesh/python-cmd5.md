@@ -102,7 +102,6 @@ Now you can go ahead and modify your command in that directory. It will
 look  similar to (if you used the command name `gregor`):
 
 
-    from __future__ import print_function
     from cloudmesh.shell.command import command
     from cloudmesh.shell.command import PluginCommand
 

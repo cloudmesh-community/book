@@ -1598,10 +1598,9 @@ Face Detection Python Code Snippet
 
 Now, we detect faces from the first five images using the classifier.
 
-.. code:: ipython2
+.. code:: ipython
 
     # import the necessary packages
-    from __future__ import print_function
     import numpy as np
     import cv2
     from os import listdir

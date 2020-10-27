@@ -300,7 +300,6 @@ Under the directory *swagger_example/client/cpu* you will find a
 README.md file which serves as API documentation with the example client
 code in it. E.g., if we save the following code into a `.py` file:
 
-    from __future__ import print_function
     import time
     import swagger_client
     from swagger_client.rest import ApiException

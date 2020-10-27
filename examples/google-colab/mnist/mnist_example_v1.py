@@ -29,10 +29,6 @@ an image classification problem. MNIST contains a set of pictures
 Note: https://python-future.org/quickstart.html
 """
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-
 import time 
 
 import numpy as np

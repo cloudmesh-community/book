@@ -19,7 +19,6 @@ responds to the greet command.
 In order to demonstrate commands provided by cmd, let's save the
 following program in a file called helloworld.py.
 
-    from __future__ import print_function, division
     import cmd
 
 
@@ -85,7 +84,6 @@ in this example:
 Let us look at a little more involved example. Save the following code in
 a file called calculator.py.
 
-    from __future__ import print_function, division
     import cmd
 
 
@@ -158,7 +156,6 @@ Help Messages
 Notice that all commands presently show up as undocumented. To remedy
 this, we can define help_ methods for each command:
 
-    from __future__ import print_function, division
     import cmd
 
 

@@ -378,7 +378,6 @@ training from here:
 Now, we detect faces from the first five images using the classifier. See @fig:facedetection_59_0, @fig:facedetection_59_1, @fig:facedetection_59_2, @fig:facedetection_59_3, @fig:facedetection_59_4, @fig:facedetection_59_5, @fig:facedetection_59_6, @fig:facedetection_59_7, @fig:facedetection_59_8, @fig:facedetection_59_9, @fig:facedetection_59_10
 
     # import the necessary packages
-    from __future__ import print_function
     import numpy as np
     import cv2
     from os import listdir

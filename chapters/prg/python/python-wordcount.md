@@ -29,7 +29,6 @@ consist of random numbers rather than the words of an actual language:
       -h --help
     '''
 
-    from __future__ import print_function
     import os, random, logging
     from docopt import docopt
 
@@ -89,7 +88,6 @@ A first serial implementation of wordcount is straightforward:
       -h --help
     '''
 
-    from __future__ import division, print_function
     import os, glob, logging
     from docopt import docopt
 
@@ -165,7 +163,6 @@ With this in mind, we can reimplement the wordcount example as follows:
        -h --help
     '''
 
-    from __future__ import division, print_function
     import os, glob, logging
     from docopt import docopt
 
@@ -220,7 +217,6 @@ parallelize the implementation using Python's `multiprocessing` API:
        -h --help
     '''
 
-    from __future__ import division, print_function
     import os, glob, logging
     from docopt import docopt
     from wordcount_mapreduce import count_words, merge_counts

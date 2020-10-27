@@ -46,7 +46,6 @@ From the same directory where you saved the citations data, let's start
 the Python interpreter and load the citations data for Q1 2016
 
     $ python
-    >>> from __future__ import division, print_function
     >>> import numpy as np
     >>> import pandas as pd
     >>> import matplotlib.pyplot as plt
