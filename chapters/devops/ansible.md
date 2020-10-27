@@ -1,4 +1,10 @@
-# Ansible
+---
+title: "Ansible"
+linkTitle: "Ansible"
+description: >
+  Ansible is an open-source IT automation DevOps engine allowing you to manage and configure many compute resources in a scalable, consistent and reliable way.
+  
+---
 
 ## Introduction to Ansible
 

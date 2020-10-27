@@ -4,7 +4,8 @@ FINAL=$(HOME)/../pub
 
 include ../makefile.sys
 
-all: epub pdf
+all: epub
+# pdf
 
 epub: clean version authors
 	mkdir -p dest
