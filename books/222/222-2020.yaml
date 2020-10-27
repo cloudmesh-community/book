@@ -16,12 +16,12 @@ metadata:
   rights: (c) Gregor von Laszewski, 2020
 git:
   "community": "https://raw.githubusercontent.com/cloudmesh-community"
-  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
-  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/main/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/main/bookmanager/template"
 file:
   "bookmanager": "file://../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
-  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/main/chapters"
   "base": "../../chapters"
 BOOK:
   - PREFACE:

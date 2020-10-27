@@ -15,12 +15,12 @@ metadata:
   filename: "vonLaszewski-e516-fa19-proceedings.epub"
   rights: (c) Gregor von Laszewski, 2018, 2019
 git:
-  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
-  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/main/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/main/bookmanager/template"
 file:
   "bookmanager": "file://../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
-  "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/main/chapters"
   "base": "../../chapters"
   #  "community": "file://../../.."
   "community": "https://raw.githubusercontent.com/cloudmesh-community"
@@ -33,19 +33,19 @@ BOOK:
     - COMPUTE:
       - ORACLE:
         - "{file.community}/fa19-516-162/master/project/report.md"
-        - "{file.cloudmesh}/cloudmesh-manual/master/docs-source/source/accounts/oracle/account.md"
+        - "{file.cloudmesh}/cloudmesh-manual/main/docs-source/source/accounts/oracle/account.md"
         - "{file.community}/fa19-516-162/master/project/mnist-example.md"
       - "{file.community}/fa19-516-157/master/project/report.md"
     - STORAGE:
 # Shrayans
       - GOOGLE:
         - "{file.community}/fa19-516-160/master/project/report.md"
-#        - "{file.cloudmesh}/cloudmesh-manual/master/docs-source/source/accounts/google/account.md"
+#        - "{file.cloudmesh}/cloudmesh-manual/main/docs-source/source/accounts/google/account.md"
       - "{file.community}/fa19-516-152/master/project/report.md"
       - "{file.community}/fa19-516-155/master/project/report.md"
       - "{file.community}/fa19-516-171/master/project/report.md"
     - SERVICES:
-      - "{file.cloudmesh}/storagelifecycle/master/README.md"
+      - "{file.cloudmesh}/storagelifecycle/main/README.md"
       - "{file.community}/fa19-516-166/master/project/report.md"
     - SECURITY:
       - "{file.community}/fa19-516-144/master/project/report.md"

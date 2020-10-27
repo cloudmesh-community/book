@@ -4,7 +4,7 @@ TODO: See where this fits into the Pi book...
 
 ## Prerequisites:
 
-  * [Assembling the Pi Cluster](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/case.md#build-your-own-5-node-pi-cluster)
+  * [Assembling the Pi Cluster](https://github.com/cloudmesh-community/book/blob/main/chapters/pi/case.md#build-your-own-5-node-pi-cluster)
   * [Set up small cluster by hand](https://github.com/cloudmesh-community/book/blob/master/chapters/pi/setup-ultimate.md)
   * [Smart Thermostat Project (not IoT connected)](https://github.com/ahilgenkamp/book/blob/master/chapters/iot/sensors.md)
 

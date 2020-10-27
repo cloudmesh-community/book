@@ -123,7 +123,7 @@ These lectures can be taken any time when needed.
 
 | Date     | Unit    | Title             | Description
 | :----------- |:------- |:----------------- |:---------------------------
-| + anytime  | 1       | [Scientific Writing with markdown](https://github.com/cloudmesh-community/book/raw/master/vonLaszewski-writing-1.epub) |
+| + anytime  | 1       | [Scientific Writing with markdown](https://github.com/cloudmesh-community/book/raw/main/vonLaszewski-writing-1.epub) |
 | + anytime  |         | Plagiarism      | How to avoid plagiarism and cheating
 | + anytime  |         | Markdown        | How to use markdown
 | + anytime  | 1       | [Scientific Writing II](http://cyberaide.org/papers/vonLaszewski-latex.pdf) |

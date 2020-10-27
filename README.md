@@ -8,17 +8,17 @@ Link |  Class | Description
 [<img src="images/file.png">](vonLaszewski-cloud.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for class E516, E416, B649
 [<img src="images/file.png">](vonLaszewski-pi.epub?raw=true)| E516, E416, B649 | Evolving Lecture notes for Raspberry PI Clusters for class E516, E416, B649
 [<img src="images/file.png">](vonLaszewski-bigdata-application.epub?raw=true)| e534, I523, I423 | Evolving Lecture notes for class e534, I523, I423
-[<img src="images/file.png">](https://github.com/cloudmesh/technologies/blob/master/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies
+[<img src="images/file.png">](https://github.com/cloudmesh/technologies/blob/main/vonLaszewski-cloud-technologies.epub?raw=true)| e534, I523, I423 | Cloud Technologies
 [<img src="images/file.png">](vonLaszewski-e222.epub?raw=true)| e222 | Intelligent Systems Engineering II
 [<img src="images/file.png">](vonLaszewski-writing-markdown.epub?raw=true)| all | Scientific Writing with Markdown
 [<img src="images/file.png">](vonLaszewski-writing-1.epub?raw=true)| all | Scientific Writing I 
 [<img src="images/file.png">](http://cyberaide.org/papers/vonLaszewski-latex.pdf)| all | Scientific Writing II 
 [<img src="images/file.png">](vonLaszewski-communicate.epub?raw=true)| all | Class Communication Services (update version can be found in the Lecture notes for the class)
 [:books: Bibliographies I](bib) | all | BibTeX files directory I as used in all but the Cloud Technologies ePub
-[:books: Bibliographies II - Cloud Technologies](https://github.com/cloudmesh/technologies/tree/master/bib) | all | BibTeX files directory II  as used in the Cloud Technologies ePub
+[:books: Bibliographies II - Cloud Technologies](https://github.com/cloudmesh/technologies/tree/main/bib) | all | BibTeX files directory II  as used in the Cloud Technologies ePub
 
 
-https://github.com/cloudmesh-community/book/blob/master/
+https://github.com/cloudmesh-community/book/blob/main/
 
 # Cloudmesh Community ePup Publication Framework
 
