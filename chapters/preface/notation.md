@@ -62,7 +62,7 @@ $
 
 [![Ok](images/ok.png)]()
 
-> A section is release when it is marked with this emoji in the
+> A section is released when it is marked with this emoji in the
 > syllabus. Use it in markdown with `![Ok](images/ok.png)`.
 
 [![Question](images/question.png)]()
