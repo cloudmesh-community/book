@@ -28,7 +28,7 @@ BOOK:
     - "{git.credit}/disclaimer.md"
   - INTRODUCTION:
     - "{file.chapter}/prg/python/python-intro.md"
-  - INSTALATION:
+  - INSTALLATION:
     - "{file.chapter}/prg/python/python-install.md"
     - "{file.chapter}/prg/python/python-install-pyenv.md"
   - FIRST_STEPS:
