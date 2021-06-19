@@ -60,7 +60,7 @@ from <https://www.python.org/downloads>. Please, visit the page and
 follow the instructions. After this install, you have
 python3 available from the command-line.
 
-### Python 3.8 on macOS via Homebrew
+### Python 3.9 on macOS via Homebrew
 
 Homebrew may not provide you with the newest version, so we recommend
 using the install from python.org if you can.
@@ -81,28 +81,7 @@ $ brew install python
 ```
 
 
-## Python 3.8 on Ubuntu 19.10
-
-In ubuntu 19.10 you have to compile Python from the sources as no official release is yet available.
-
-Please download it from:
- 
-* <https://www.python.org/downloads>
-
-place the code in a directory and change to that directory.
-
-Than say 
-
-```
-tar -xvf Python-3.8.1.tgz
-cd Python-3.8.0/
-./configure
-make
-sudo make altinstall
-python3.8 --version
-```
-
-## Python 3.8 on Ubuntu 18.04
+## Python 3.8 on Ubuntu 20.04
 
 We first need to make sure that the correct version of the Python3 is
 installed. The default version of Python on Ubuntu 18.04 is 3.6.
@@ -114,21 +93,21 @@ You can get the version while doing the following steps:
 $ sudo apt-get update
 $ sudo apt install software-properties-common
 $ sudo add-apt-repository ppa:deadsnakes/ppa -y
-$ sudo apt-get install python3.8 python3-dev -y
+$ sudo apt-get install python3.9 python3-dev -y
 ```
 
 Now you can verify the version with 
 
 ```bash
-$ python3.8 --version
+$ python3.9 --version
 ```
 
-which should be `3.8.1` or newer.
+which should be `3.9.5` or newer.
 
 Now we will create a new virtual environment:
 
 ```bash
-$ python3.8 -m venv --without-pip ~/ENV3
+$ python3.9 -m venv --without-pip ~/ENV3
 ```
 Now you must edit the `~/.bashrc` file and add the following line at the end:
 
@@ -154,7 +133,7 @@ $ pip install -U pip
 
 ## Prerequisite Windows 10
 
-Python 3.8 can be installed on Windows 10 using:
+Python 3.9.5 can be installed on Windows 10 using:
 <https://www.python.org/downloads>
 
 
@@ -172,7 +151,7 @@ python --version
 
 
 However, if you have installed conda for some reason, you need to read up
-on how to install 3.8 Python in conda or identify how to run conda and
+on how to install 3.9.5 Python in conda or identify how to run conda and
 python.org at the same time. We often see others are giving the wrong
 installation instructions.
 
@@ -244,7 +223,7 @@ To make sure you have an up to date version of pip issue the command
 $ pip install pip -U
 ```
 
-## Install Python 3.8 via Anaconda 
+## Install Python 3.9 via Anaconda 
 
 We are not recommending ether to use conda or anaconda. If you do
 so, it is in your responsibility to update the information in this
@@ -268,11 +247,11 @@ Follow instructions to install `conda` for your operating systems:
 
 ### Install Python via `conda` 
 
-To install Python 3.8.1 in a virtual environment with conda please use 
+To install Python 3.9.5 in a virtual environment with conda please use 
 
 ```bash
 $ cd ~
-$ conda create -n ENV3 python=3.8.1
+$ conda create -n ENV3 python=3.9.5
 $ conda activate ENV3
 $ conda install -c anaconda pip
 $ conda deactivate ENV3
@@ -304,7 +283,8 @@ $ pip --version
 If you installed everything correctly you should see 
 
 ```
-Python 3.8.1
-pip 20.0.1
+Python 3.9.5
+pip 21.1.2
 ```
 
+r newer
