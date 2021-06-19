@@ -131,6 +131,8 @@ def convert(file, tags, author, d, w, index, url, crossref):
                 if "{#" in line:
                     line, label = line.split("{#")
                 # Make alttext caption
+            elif line.startswith("#") and "{" in line:
+                line = line.split("{")[0]
 
 
             result.append(line)
