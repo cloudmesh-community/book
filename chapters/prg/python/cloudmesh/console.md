@@ -91,6 +91,8 @@ For more features, see API: [Heading](https://cloudmesh.github.io/cloudmesh-manu
 
 ## VERBOSE
 
+*Note: VERBOSE is not supported in jupyter notebooks*
+
 VERBOSE is a very useful method allowing you to print a
 dictionary. Not only will it print the dict, but it will also provide
 you with the information in which file it is used and which line
