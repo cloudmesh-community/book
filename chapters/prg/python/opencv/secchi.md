@@ -53,17 +53,19 @@ have improved instructions, pleas elt us know. However we do not want
 to install it via Anaconda out of the obvious reason that anaconda
 installs to many other things.
 
-    import os, sys
-    from os.path import expanduser
-    os.path
-    home = expanduser("~")
-    sys.path.append('/usr/local/Cellar/opencv/3.3.1_1/lib/python3.6/site-packages/')
-    sys.path.append(home + '/.pyenv/versions/OPENCV/lib/python3.6/site-packages/')
-    import cv2
-    cv2.__version__
-    ! pip install numpy > tmp.log
-    ! pip install matplotlib >> tmp.log
-    %matplotlib inline
+```python
+import os, sys
+from os.path import expanduser
+os.path
+home = expanduser("~")
+sys.path.append('/usr/local/Cellar/opencv/3.3.1_1/lib/python3.6/site-packages/')
+sys.path.append(home + '/.pyenv/versions/OPENCV/lib/python3.6/site-packages/')
+import cv2
+cv2.__version__
+! pip install numpy > tmp.log
+! pip install matplotlib >> tmp.log
+%matplotlib inline
+```
 
 ## Step 1: Record the video
 
@@ -76,37 +78,39 @@ and videos if you are interested in analyzing them. See @fig:secchi-histogram
 
 For now we just selected 4 images from the video
 
-    import cv2
-    import matplotlib.pyplot as plt
+```python
+import cv2
+import matplotlib.pyplot as plt
 
-    img1 = cv2.imread('secchi/secchi1.png')
-    img2 = cv2.imread('secchi/secchi2.png')
-    img3 = cv2.imread('secchi/secchi3.png')
-    img4 = cv2.imread('secchi/secchi4.png')
+img1 = cv2.imread('secchi/secchi1.png')
+img2 = cv2.imread('secchi/secchi2.png')
+img3 = cv2.imread('secchi/secchi3.png')
+img4 = cv2.imread('secchi/secchi4.png')
 
-    figures = []
-    fig = plt.figure(figsize=(18, 16))
-    for i in range(1,13):
-        figures.append(fig.add_subplot(4,3,i))
-    count = 0
-    for img in [img1,img2,img3,img4]:
-        figures[count].imshow(img)
+figures = []
+fig = plt.figure(figsize=(18, 16))
+for i in range(1,13):
+  figures.append(fig.add_subplot(4,3,i))
+count = 0
+for img in [img1,img2,img3,img4]:
+  figures[count].imshow(img)
 
-        color = ('b','g','r')
-        for i,col in enumerate(color):
-            histr = cv2.calcHist([img],[i],None,[256],[0,256])
-            figures[count+1].plot(histr,color = col)
+  color = ('b','g','r')
+  for i,col in enumerate(color):
+      histr = cv2.calcHist([img],[i],None,[256],[0,256])
+      figures[count+1].plot(histr,color = col)
 
-        figures[count+2].hist(img.ravel(),256,[0,256])
+  figures[count+2].hist(img.ravel(),256,[0,256])
 
-        count += 3
+  count += 3
 
-    print("Legend")
-    print("First column = image of Secchi disk")
-    print("Second column = histogram of colors in image")
-    print("Third column = histogram of all values")
+print("Legend")
+print("First column = image of Secchi disk")
+print("Second column = histogram of colors in image")
+print("Third column = histogram of all values")
 
-    plt.show()
+plt.show()
+```
 
 ![Histogram](images/secchi/output_9_1.png){#fig:secchi-histogram}
 
@@ -115,56 +119,61 @@ For now we just selected 4 images from the video
 
 See @fig:secchi-output_13_0, @fig:secchi-output_14_0, @fig:secchi-output_15_0, @fig:secchi-output_16_0
 
+```python
+def threshold(img):
+  ret,thresh = cv2.threshold(img,150,255,cv2.THRESH_BINARY)
+  plt.subplot(1,2,1), plt.imshow(img, cmap='gray')
+  plt.subplot(1,2,2), plt.imshow(thresh, cmap='gray')
 
-    def threshold(img):
-        ret,thresh = cv2.threshold(img,150,255,cv2.THRESH_BINARY)
-        plt.subplot(1,2,1), plt.imshow(img, cmap='gray')
-        plt.subplot(1,2,2), plt.imshow(thresh, cmap='gray')
+threshold(img1)
+threshold(img2)
+threshold(img3)
+threshold(img4)
+```
 
-    threshold(img1)
+![Threshold 1, `threshold(img1)`](images/secchi/output_13_0.png){#fig:secchi-output_13_0}
 
-![Threshold 1](images/secchi/output_13_0.png){#fig:secchi-output_13_0}
+![Threshold 2, `threshold(img2)`](images/secchi/output_14_0.png){#fig:secchi-output_14_0}
 
-    threshold(img2)
+![Threshold 3, `threshold(img3)`](images/secchi/output_15_0.png){#fig:secchi-output_15_0}
 
-![Threshold 2](images/secchi/output_14_0.png){#fig:secchi-output_14_0}
-
-    threshold(img3)
-
-![Threshold 3](images/secchi/output_15_0.png){#fig:secchi-output_15_0}
-
-    threshold(img4)
-
-![Threshold 4](images/secchi/output_16_0.png){#fig:secchi-output_16_0}
+![Threshold 4, `threshold(img4)`](images/secchi/output_16_0.png){#fig:secchi-output_16_0}
 
 ### Edge Detection
 
-See @fig:secchi-output_19_0, @fig:secchi-output_20_0, @fig:secchi-output_21_0, @fig:secchi-output_22_0, @fig:secchi-output_26_1. Edge detection using Canny edge detection algorithm
+See @fig:secchi-output_19_0, 
+@fig:secchi-output_20_0, 
+@fig:secchi-output_21_0, 
+@fig:secchi-output_22_0, 
+@fig:secchi-output_26_1. 
+Edge detection using Canny edge detection algorithm
 
-    def find_edge(img):
-        edges = cv2.Canny(img,50,200)
-        plt.subplot(121),plt.imshow(img,cmap = 'gray')
-        plt.subplot(122),plt.imshow(edges,cmap = 'gray')
+```python
+def find_edge(img):
+  edges = cv2.Canny(img,50,200)
+  plt.subplot(121),plt.imshow(img,cmap = 'gray')
+  plt.subplot(122),plt.imshow(edges,cmap = 'gray')
 
-    find_edge(img1)
+find_edge(img1)
+find_edge(img2)
+find_edge(img3)
+find_edge(img4)
+```
 
-![Edge Detection 1](images/secchi/output_19_0.png){#fig:secchi-output_19_0}
 
-    find_edge(img2)
+![Edge Detection 1, `find_edge(img1)`](images/secchi/output_19_0.png){#fig:secchi-output_19_0}
 
-![Edge Detection 2](images/secchi/output_20_0.png){#fig:secchi-output_20_0}
+![Edge Detection 2, `find_edge(img2)`](images/secchi/output_20_0.png){#fig:secchi-output_20_0}
 
-    find_edge(img3)
+![Edge Detection 3, `find_edge(img3)`](images/secchi/output_21_0.png){#fig:secchi-output_21_0}
 
-![Edge Detection 3](images/secchi/output_21_0.png){#fig:secchi-output_21_0}
-
-    find_edge(img4)
-
-![Edge Detection 4](images/secchi/output_22_0.png){#fig:secchi-output_22_0}
+![Edge Detection 4, , `find_edge(img4)`](images/secchi/output_22_0.png){#fig:secchi-output_22_0}
 
 ### Black and white
 
-    bw1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
-    plt.imshow(bw1, cmap='gray')
+```python
+bw1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
+plt.imshow(bw1, cmap='gray')
+```
 
 ![Back White conversion](images/secchi/output_26_1.png){#fig:secchi-output_26_1}
