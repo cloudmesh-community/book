@@ -5,24 +5,24 @@
 ![](images/learning.png) **Learning Objectives**
 
 * Provide some simple calculations so we can test cloud services.
-* Show case some elementary OpenCV functions
+* Showcase some elementary OpenCV functions
 * Show an environmental image analysis application using Secchi disks
 
 ---
 
 OpenCV (Open Source Computer Vision Library) is a library of thousands
 of algorithms for various applications in computer vision and machine
-learning. It has C++, C, Python, Java and MATLAB interfaces and supports
-Windows, Linux, Android and Mac OS. In this section, we will explain
-basic features of this library, including the implementation of a simple
+learning. It has C++, C, Python, Java, and MATLAB interfaces and supports
+Windows, Linux, Android, and Mac OS. In this section, we will explain
+the basic features of this library, including the implementation of a simple
 example.
 
 Overview
 --------
 
-OpenCV has countless functions for image and videos processing. The
+OpenCV has many functions for image and video processing. The
 pipeline starts with reading the images, low-level operations on pixel
-values, preprocessing e.g. denoising, and then multiple steps of
+values, preprocessing e.g. denoising, and then multiple steps of
 higher-level operations which vary depending on the application. OpenCV
 covers the whole pipeline, especially providing a large set of library
 functions for high-level operations. A simpler library for image
@@ -162,10 +162,10 @@ Additional Features
 -------------------
 
 OpenCV has implementations of many machine learning techniques such as
-KMeans and Support Vector Machines, that can be put into use with only a
+KMeans and Support Vector Machines can be put into use with only a
 few lines of code. It also has functions especially for video analysis,
-feature detection, object recognition and many more. You can find out
-more about them in their website
+feature detection, object recognition, and many more. You can find out
+more about them on their website
 
 [OpenCV](<https://docs.opencv.org/3.0-beta/index.html>
 was initially developed for C++ and still has a focus on that
