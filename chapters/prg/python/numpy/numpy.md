@@ -31,22 +31,21 @@ good bet that it is using NumPy.
 
 At its core, NumPy is a container for n-dimensional data. Typically,
 1-dimensional data is called an array and 2-dimensional data is called
-a matrix. Beyond 2-dimenions would be considered a multidimensional
-array. Examples where you'll encounter these dimenions may include:
+a matrix. Beyond 2-dimensions would be considered a multidimensional
+array. Examples, where you'll encounter these dimensions, may include:
 
-* 1 Dimensional: time series data such as audio, stock prices, or
-  a single observation in a dataset.
+* 1 Dimensional: time-series data such as audio, stock prices, or a single observation in a dataset.
 * 2 Dimensional: connectivity data between network nodes, user-product
   recommendations, and database tables.
 * 3+ Dimensional: network latency between nodes over time, video
-  (RGB+time), and version controlled datasets.
+  (RGB+time), and version-controlled datasets.
 
 All of these data can be placed into NumPy's array object, just
 with varying dimensions.
 
 ## Data Types: The Basic Building Blocks
 
-Before we delve into arrays and matrices, we will start off with
+Before we delve into arrays and matrices, we will start with
 the most basic element of those: a single value. NumPy can
 represent data utilizing many different standard datatypes such
 as uint8 (an 8-bit **u**signed **int**eger), float64 (a 64-bit
@@ -60,16 +59,16 @@ only contain values between 0 and 255. This, however, contrasts
 with float64 which can express any value from +/- 1.80e+308. So
 why wouldn't we just always use float64s? Though they allow us
 to be more expressive in terms of numbers, they also consume
-more memory. If we were working with a 12 megapixel image,
+more memory. If we were working with a 12-megapixel image,
 for example, storing that image using uint8 values would require
 3000 * 4000 * 8 = 96 million bits, or 91.55 MB of memory. If we
 were to store the same image utilizing float64, our image would
 consume 8 times as much memory: 768 million bits or 732.42 MB.
-It's important use the right datatype for the job to avoid
-consuming unneccessary resources or slowing down processing.
+It is important to use the right data type for the job to avoid
+consuming unnecessary resources or slowing down processing.
 
 Finally, while NumPy will conveniently convert between datatypes,
-one must be aware of overflows when using smaller datatypes.
+one must be aware of overflows when using smaller data types.
 For example:
 
     a = np.array([6], dtype=np.uint8)
