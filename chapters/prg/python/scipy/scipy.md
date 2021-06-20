@@ -1,11 +1,11 @@
 # Scipy {#s-scipy}
 
-SciPy is a library built around numpy and has a number of off-the-shelf
+SciPy is a library built around NumPy and has a number of off-the-shelf
 algorithms and operations implemented. These include algorithms from
 calculus (such as integration), statistics, linear algebra,
 image-processing, signal processing, machine learning.
 
-To achieve this, SciPy bundels a number of useful open-source software
+To achieve this, SciPy bundles a number of useful open-source software
 for mathematics, science, and engineering. It includes the following
 packages:
 
@@ -36,9 +36,9 @@ pandas,
 Introduction
 ------------
 
-First we add the usual scientific computing modules with the typical
+First, we add the usual scientific computing modules with the typical
 abbreviations, including sp for scipy. We could invoke scipy's
-statistical package as sp.stats, but for the sake of laziness we
+statistical package as sp.stats, but for the sake of laziness, we
 abbreviate that too.
 
     import numpy as np # import numpy
@@ -127,7 +127,7 @@ in LaTeX. There we use the caption to describe what the figure is about.
 
 ![Histogram 3](images/output_27_0.png){#fig:scipy-output_27_0}
 
-Let us try out some linear regression, or curve fitting. See @#fig:scipy-output_30_0
+Let us try out some linear regression or curve fitting. See @#fig:scipy-output_30_0
 
     import random
 
@@ -186,10 +186,10 @@ curve F'.
     # comment out so that you can save the figure
     #plt.show()
 
-To save images into a PDF file for inclusion into LaTeX documents you
+To save images into a PDF file for inclusion into LaTeX documents you
 can save the images as follows. Other formats such as png are also
 possible, but the quality is naturally not sufficient for inclusion in
-papers and documents. For that you certainly want to use PDF. The save
+papers and documents. For that, you certainly want to use PDF. The save
 of the figure has to occur before you use the `show()` command. See @fig:scipy-output_40_0
 
     plt.savefig("regression.pdf", bbox_inches='tight')
