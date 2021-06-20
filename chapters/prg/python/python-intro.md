@@ -14,7 +14,7 @@
 -   Understand why we do not use `anaconda`
 -   Get familiar with `pyenv`
 
-------------------------------------------------------------------------
+---
 
 Portions of this lesson have been adapted from the [official Python
 Tutorial](https://docs.python.org/2/tutorial/) copyright [Python
