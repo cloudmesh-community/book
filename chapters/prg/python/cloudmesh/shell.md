@@ -1,9 +1,9 @@
 # Shell
 
 Python provides a sophisticated method for starting background processes.
-However in many cases it is quite complex to interact with it. It also
+However, in many cases, it is quite complex to interact with it. It also
 does not provide convenient wrappers that we can use to start them in a
-pythonic fashion. For this reason we have written a primitive `Shell`
+pythonic fashion. For this reason, we have written a primitive `Shell`
 class that provides just enough functionality to be useful in many
 cases.
 
@@ -37,10 +37,10 @@ result = Shell.pwd()
 print(result)
 ```
 
-The list includes (naturally the commands must be available on your OS.
+The list includes (naturally the commands that must be available on your OS.
 If the shell command is not available on your OS, please help us
 improving the code to either provide functions that work on your OS or
-develop with us platform independent functionality of a subset of the
+develop with us platform-independent functionality of a subset of the
 functionality for the shell command that we may benefit from.
 
 * `VBoxManage(cls, *args)`

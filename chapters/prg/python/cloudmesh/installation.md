@@ -6,12 +6,12 @@ distributed in different topical repositories and in order for
 developers to easily interact with them we have written a convenient
 `cloudmesh-installer` program.
 
-As a developer you must also use a python virtual environment to avoid
-affecting your system wide python installation. This can be achieved while
-using Python3 from python.org or via conda. We do recommend that you use
+As a developer, you must also use a python virtual environment to avoid
+affecting your system-wide Python installation. This can be achieved while
+using Python3 from python.org or via conda. However, we do recommend that you use
 python.org as this is the vanilla python that most developers in the
-world use. Conda is often used by users of python if they not need to
-use bleeding-edge but older prepackaged python tools and libraries.
+world use. Conda is often used by users of Python if they do not need to
+use bleeding-edge but older prepackaged Python tools and libraries.
 
 ## Prerequisite
 
@@ -37,7 +37,7 @@ python virtual env as discussed previously. If not you may impact your
 system negatively. Please note that we are not responsible for fixing
 your computer. Naturally, you can also use a virtual machine, if you prefer.
 It is also important that we create a uniform development environment. In
-our case we create an empty directory called `cm` in which we place the
+our case, we create an empty directory called `cm` in which we place the
 bundle.
 
 ```bash
@@ -53,7 +53,7 @@ $ cloudmesh-installer bundles
 ```
 
 We will start with the basic cloudmesh functionality at this time and
-only install the shell and some common API's.
+only install the shell and some common APIs.
 
 ```bash
 $ cloudmesh-installer git clone cms

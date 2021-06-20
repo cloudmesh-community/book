@@ -4,7 +4,7 @@
 
 For simple dictionaries we sometimes like to simplify the notation with a `.` instead of using the `[]`:
 
-You can achieve this with dotdict
+You can achieve this with `dotdict`
 
 ```python
 from cloudmesh.common.dotdict import dotdict
@@ -28,7 +28,7 @@ or
 data.name
 ```
 
-This is espacially useful in if conditions as it may be easier to read and write
+This is especially useful in if conditions as it may be easier to read and write
 
 ```python
 if data.name is "Gregor":
@@ -49,8 +49,8 @@ For more features, see API: [dotdict](https://cloudmesh.github.io/cloudmesh-manu
 
 ## FlatDict
 
-In some cases it is useful to be able to flatten out dictionaries that
-contain dicts within dicts. For this we can use `FlatDict`.
+In some cases, it is useful to be able to flatten out dictionaries that
+contain dicts within dicts. For this, we can use `FlatDict`.
 
 ```
 from cloudmesh.common.Flatdict import FlatDict

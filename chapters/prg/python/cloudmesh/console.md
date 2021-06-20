@@ -1,7 +1,7 @@
 # Output
 
-Cloudmesh provides a number of convenient API's to make output easier
-or more fancyful. 
+Cloudmesh provides a number of convenient API's to make the output easier
+or more fanciful. 
 
 These API's include
 
@@ -14,16 +14,14 @@ These API's include
 
 Print is the usual function to output to the terminal. However, often we
 like to have colored output that helps us in the notification to the
-user. For this reason we have a simple `Console` class that has several
+user. For this reason, we have a simple `Console` class that has several
 built-in features. You can even switch and define your own color
 schemes.
 
 ```python
 from cloudmesh.common.console import Console
 
-
 msg = "my message"
-
 Console.ok(msg) # prins a green message
 Console.error(msg) # prins a red message proceeded with ERROR
 Console.msg(msg) # prins a regular black message
@@ -36,8 +34,8 @@ to include the traceback in the output.
 Console.error(msg, prefix=True, traceflag=True)
 ```
 
-The prefix can be switched on and off with the prefix flag, while the
-traceflag switches on and of if the trace should be set.
+The prefix can be switched on and off with the `prefix` flag, while the
+`traceflag` switches on and of if the trace should be set.
 
 The verbosity of the output is controlled via variables that are stored
 in the `~/.cloudmesh` directory.
@@ -50,7 +48,6 @@ variables = Variables()
 variables['debug'] = True
 variables['trace'] = True
 variables['verbose'] = 10
-
 ```
 
 For more features, see API: [Console](https://cloudmesh.github.io/cloudmesh-manual/api/cloudmesh.common.html#module-cloudmesh.common.console)
@@ -70,7 +67,7 @@ For more features, see API: [Banner](https://cloudmesh.github.io/cloudmesh-manua
 
 ## Heading
 
-A particular useful function is `HEADING()` which prints the method name.
+A particularly useful function is `HEADING()` which prints the method name.
 
 ```python
 
@@ -100,7 +97,7 @@ number. It will even print the name of the `dict` that you use in your
 code.
 
 To use this you will have to enable the debugging methods for
-cloudmesh as discused in @sec:cloudmesh-console
+cloudmesh as discussed in @sec:cloudmesh-console
 
 ```python
 from cloudmesh.common.debug import VERBOSE
@@ -115,7 +112,7 @@ For more features, please see [VERBOSE](https://cloudmesh.github.io/cloudmesh-ma
 
 ## Using print and pprint
 
-In many cases it may be sufficient to use `print` and `pprint` for
+In many cases, it may be sufficient to use `print` and `pprint` for
 debugging. However, as the code is big and you may forget where you placed
 print statements or the print statements may have been added by others, we
 recommend that you use the VERBOSE function. If you use `print` or `pprint`

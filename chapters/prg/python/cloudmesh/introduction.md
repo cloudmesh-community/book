@@ -14,21 +14,21 @@
 
 ---
 
-In this Chapter we like to introduce you to cloudmesh which provides you
+In this chapter, we like to introduce you to cloudmesh which provides you
 with a number of convenient methods to interface with the local system,
 but also with cloud services. We will start while focussing on some
-simple API's and than gradually introduce the cloudmesh shell which not
-only provides a shell, but also a commandline interface so you can use
+simple APIs and then gradually introduce the cloudmesh shell which not
+only provides a shell but also a command line interface so you can use
 cloudmesh from a terminal. This dual ability is quite useful as we can
 write cloudmesh scripts, but can also invoke the functionality from the
-terminal. This is quite an important distinction towards other tools
-that only allow commandline interfaces.
+terminal. This is quite an important distinction from other tools
+that only allow command line interfaces.
 
-Moreover we also show you that it is easy to create new commands and add
+Moreover, we also show you that it is easy to create new commands and add
 them dynamically to the cloudmesh shell via simple pip installs. 
 
 Cloudmesh is an evolving project and you have the opportunity to improve
-it if you see some features missing.
+if you see some features missing.
 
 The manual of cloudmesh can be found at 
 

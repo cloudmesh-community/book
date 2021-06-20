@@ -2,16 +2,15 @@
 
 When doing your assignment, make sure you label the programs
 appropriately with comments that clearly identify the assignment. 
-Place all assignments in a folder on github named "cloudmesh-exercises"
+Place all assignments in a folder on GitHub named "cloudmesh-exercises"
 
-For example name the program solving E.Cloudmesh.Common.1
+For example, name the program solving E.Cloudmesh.Common.1
 `e-cloudmesh-1.py` and so on. For more complex assignments you can name
 them as you like, as long as in the file you have a comment such as 
 
 ```# fa19-516-000 E.Cloudmesh.Common.1```
 
-at the beginning of the file. Please **do not store** any screenshots in
-your git repository of your working program.
+at the beginning of the file. Please **do not store** any screenshots in your GitHub repository of your working program.
 
 
 ## Cloudmesh Common

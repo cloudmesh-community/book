@@ -1,15 +1,12 @@
 # Inventory
 
-WARNING: This command has not yet been tested. Help us doing so and
-improve it.
-
-Sometimes its necessary to maintain a simple inventory. Naturally if you
+Sometimes it is necessary to maintain a simple inventory. Naturally, if you
 know python you can do this with dicts. However to manage a large number
 of items with repeated values its is of advantage to do this from the
-commandline.
+command line.
 
 We have written such a tool that lets you easily manage the resources in
-a table format. If you need atditional features, help us improving it or
+a table format. If you need additional features, help us improve them or
 tell us about your needs.
 
 
@@ -19,7 +16,7 @@ Your inventory will be located at
 
 `~/.cloudmesh/inventory.yaml`
 
-You can also change the yaml file by hand, but the cm command is more convenient.
+You can also change the YAML file by hand, but the cm command is more convenient.
 
 An example file will look as follows:
 
@@ -74,7 +71,7 @@ Arguments:
   FORMAT    The format of the output is either txt,
             yaml, dict, table [default: table].
 
-  OWNERS    a comma separated list of owners for this resource
+  OWNERS    a comma-separated list of owners for this resource
 
   LABEL     a unique label for this resource
 
@@ -82,7 +79,7 @@ Arguments:
 
   PROJECT   a string that identifies the project
 
-  SOURCE    a single host name to clone from
+  SOURCE    a single hostname to clone from
 
   COMMENT   a comment
 
@@ -99,14 +96,11 @@ Description:
       delete -- deletes objects from the table
 
       clone -- copies the content of an existing object
-               and creates new once with it
+               and creates new ones with it
 
-      set   -- sets for the specified objects the attribute
-               to the given value or values. If multiple values
-               are used the values are assigned to the and
-               objects in order. See examples
+      set   -- sets for the specified objects the attribute to the given value or values. If multiple values are used the values are assigned to the and objects in order. See examples
 
-      map   -- allows to set attibutes on a set of objects
+      map   -- allows setting attributes on a set of objects
                with a set of values
 
 Examples:
@@ -114,7 +108,7 @@ Examples:
   cm inventory add x[0-3] --service=openstack
 
       adds hosts x0, x1, x2, x3 and puts the string
-      openstack into the service column
+      OpenStack into the service column
 
   cm lits
 

@@ -1,14 +1,14 @@
-# Draft: Enhanced Cloudmesh :o2:
+# Enhanced Cloudmesh
 
-In this chapter we will be using some advanced Python features to
+In this chapter, we will be using some advanced Python features to
 enhance Cloudmesh. Cloudmesh is supposed to easily manage multiple
 clouds. We will be explicitly using python 3 and do not worry about
-backwards compatibility. It is a reimplementation of earlier versions
-of cloudmesh, including cloudmesh client.
+backward compatibility. It is a reimplementation of earlier versions
+of cloudmesh.
 
-We will be developing it as community so that new features can be
+We will be developing it as a community so that new features can be
 integrated and loaded on demand while adding an extensible package
-management system based on pythons shared namespace. To do so we will
+management system based on Python shared namespace. To do so we will
 rely on `cmd5` that includes a generate command to add new packages on
 demand. We will not use all features of cmd5.
 
@@ -20,7 +20,7 @@ Configuration:
 > multi-cloud environment.
 
 Database: \> of virtual machines and clouds so that they can be managed
-across \> different clouds in a multi cloud environment
+across \> different clouds in a multi-cloud environment
 
 API Classes: \> so that we can use python as a convenient programming
 environment.
@@ -28,14 +28,14 @@ environment.
 Context: \> libraries so that in python we can easily apply context for
 clouds \> and virtual machines on a block of statements
 
-Command Shell: \> so that we can similar to matlab and other shells
+Command Shell: \> so that we can similar to MatLab and other shells
 execute multiple \> commands
 
-REST Services: \> so that we can access the features form other
+REST Services: \> so that we can access the features from other
 programming \> environments and different programming languages.
 
 Parallel Services: \> so that we can issue commands in parallel and
-manage virtual \> machines in a multi cloud environment.
+manage virtual \> machines in a multi-cloud environment.
 
 ## Configuration
 
@@ -43,9 +43,9 @@ As we are developing a multi-cloud environment, we need some mechanism
 to define the clouds easily. To make our development effort simpler, we
 like to point out that the configuration file must be stored in a
 particular location relative to the home directory. We store the file in
-`~/.cloudmesh/class.yaml`. Additionally we store our cloud passwords in
+`~/.cloudmesh/class.yaml`. Additionally, we store our cloud passwords in
 this file in cleartext and thus we must make sure our machine is not
-compromised and that we properly protect the file. On a unix system you
+compromised and that we properly protect the file. On a Linux system you
 do this with:
 
     mkdir ~/.cloudmesh
@@ -109,46 +109,44 @@ Important to note is that this file defines multiple clouds and uses the
 attribute value TBD for password and username which you may want to
 change. However, we also would like to support a mode that when the
 password is defined to be TBD that it is asked from the terminal. This
-way we do not necessarily have to store the password here. In future we
-will enhance this file to be encrypted and decrypted with a password
-protected ssh key.
+way we do not necessarily have to store the password here. In the future, we
+will enhance this file to be encrypted and decrypted with a password-protected ssh key.
 
-The file is a yaml file as the typical configuration in python is not
+The file is a YAML file as the typical configuration in python is not
 suitable to easily store hierarchical data. YAML is also more readable
-than json so it provides a really good way of defining the configuration
-data. Problematic with yaml readers however are that they typically do
-not preserver the read order. Your task will be to write a *short* yaml
+than JSON so it provides a really good way of defining the configuration
+data. Problematic with YAML readers however is that they typically do
+not preserver the reading order. Your task will be to write a *short* YAML
 configuration reader that preserves the order. You are encouraged to
-reuse methods. What your are not supposed to do is to reimplement yaml.
+reuse methods. What you are not supposed to do is to reimplement YAML.
 
 There are some special properties of this file that we need to discuss.
 
 * clouds are listed in the clouds section
 
-* the credentials section to each cloud defines how to connect to the
-  cloud with python libraries such as libcloud. Each cloud type will
+* the credentials section to each cloud defines how to connect to the cloud with python libraries such as libcloud. Each cloud type will
   have different parameters.
 
 ## Storage
 
 As we need to store some of the data we must identify a suitable
 database for storing information about virtual machines and other
-information related to the clouds. Although shelve comes in mind, we
-found out that it is not compatible between python 2 and 3 which may be
-an issue in future. Also when considering services such as mongodb they
+information related to the clouds. Although shelve comes to mind, we
+found out that it is not compatible between Python 2 and 3 which may be
+an issue in the future. Also when considering services such as MongoDB they
 have to be started and properly secured. This naturally can be done with
-containers. We also do not want to use large frameworks such as django
-which come with build in object models as they are not lightweight.
-Hence, we start we just use a file based sql database as provided with
+containers. We also do not want to use large frameworks such as Django
+which come with build-in object models as they are not lightweight.
+Hence, we start just use a file-based SQL database as provided with
 sqlite3.
 
 ### sqlite3
 
-While we keep the configuration in the configuration yaml file we intend
+While we keep the configuration in the configuration YAML file we intend
 to create a database entry for virtual machines we start in the cloud.
-In order to store hierarchical information that we may obtain in dict
+To store hierarchical information that we may obtain in dict
 format from a virtual machine we can easily create flattened out data
-structures, by simple connecting the attribute names and separate them
+structures, by simply connecting the attribute names and separate them
 by `_`.
 
 Let us assume we want to store an object of the following form:
@@ -173,7 +171,7 @@ A table that could store such an object could be
         data_flavor: text
     );
 
-Obviously, we could create the table automatically from recursively
+Obviously, we could create the table automatically by recursively
 iterating through the dict to make our approach generalized for any
 dict. As for the primary key, we simply assume it is always the id which
 is an integer that always increases and is stored in the database. as a
@@ -188,7 +186,7 @@ class Database (object):
       # implement me
 ```
 
-Additionally we want to create convenience methods for adding, deleting,
+Additionally, we want to create convenient methods for adding, deleting,
 and searching information
 
 ### Context
@@ -203,9 +201,9 @@ with open('/tmp/gregor.txt', 'wt') as f:
 ```
 
 If we look at this example it is desirable to develop at least two
-context for multicloud environments. The first is to manage virtual
+contexts for multicloud environments. The first is to manage virtual
 machines on named clouds and issue action on it, such as *start, stop,
-suspend, resume, delete*. In the other context we like to issue such
+suspend, resume, delete*. In the other context, we like to issue such
 action on named virtual machines.
 
 To illustrate what we have in mind, please take a look at our initial
@@ -242,4 +240,4 @@ with Cloud(cloud) as c:
 
 It is obvious that through this abstraction we can formulate a templated
 behavior such as starting a virtual machine and through the switch of a
-single variable (`cloud`) issue the command on other clouds.
+single variable (`cloud`) issues the command on other clouds.
