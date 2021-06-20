@@ -10,7 +10,7 @@
 
 ---
 
-In this section we explain how to install python 3.8 on a computer.
+In this section, we explain how to install python 3.8 on a computer.
 Likely much of the code will work with earlier versions, but we do
 the development in Python on the newest version of Python available at
 <https://www.python.org/downloads> .
@@ -23,27 +23,26 @@ Mindstorms.
 
 However, there are some things to consider. If you use many programs on
 your desktop and run them all at the same time, you will find that in
-up-to-date operating systems, you will find your self quickly out of
-memory. This is especially true if you use editors such as PyCharm
-, which we highly recommend. Furthermore, as you likely have lots of disk
+up-to-date operating systems, you will find yourself quickly out of
+memory. This is especially true if you use editors such as PyCharm, which we highly recommend. Furthermore, as you likely have lots of disk
 access, make sure to use a fast HDD or better an SSD.
 
 A typical modern developer PC or Laptop has *16GB RAM* and an *SSD*. You
 can certainly do Python on a $35-$55 Raspberry PI, but you probably will not
 be able to run PyCharm. There are many alternative editors with less
-Memory footprint available.
+memory footprint available.
 
-## Python 3.8
+## Python 3.9
 
-Here we discuss how to install Python 3.8 or newer on your operating
-system. For our class we do require a new version of python. PLease be
-aware that many operating systems come with an outdated version that
-will not be sufficient for our work.
+Here we discuss how to install Python 3.9 or newer on your operating system. It
+is typically advantageous to use a newer version of python so you can leverage
+the latest features. Please be aware that many operating systems come with
+older versions that may or may not work for you. YOu always can start with the
+version that is installed and if you run into issues update later.
 
-### Python 3.8 on macOS
+### Python 3.9 on macOS
 
-You want a number of useful tools on your macOS. This includes git, make
-and a c compiler. All this can be installed with Xcode whcih is
+You want a number of useful tools on your macOS. This includes git, make, and a c compiler. All this can be installed with Xcode which is
 available from
 
 * <https://apps.apple.com/us/app/xcode/id497799835>
@@ -55,10 +54,10 @@ tools:
 $ xcode-select --install
 ```
 
-The easiest installation of Python is to use the installation
-from <https://www.python.org/downloads>. Please, visit the page and
-follow the instructions. After this install, you have
-python3 available from the command-line.
+The easiest installation of Python is to use the installation from
+<https://www.python.org/downloads>. Please, visit the page and follow the
+instructions to install the python `.pkg` file. After this install, you have
+python3 available from the command line.
 
 ### Python 3.9 on macOS via Homebrew
 
@@ -81,12 +80,11 @@ $ brew install python
 ```
 
 
-## Python 3.8 on Ubuntu 20.04
+## Python 3.9 on Ubuntu 20.04
 
-We first need to make sure that the correct version of the Python3 is
-installed. The default version of Python on Ubuntu 18.04 is 3.6.
-However, this version is insufficient for us and **must** be updated.
-You can get the version while doing the following steps:
+The default version of Python on Ubuntu 20.04 is 3.8. However, you can benefit
+from newer version while either installing them through python.org or adding 
+them as follows:
 
 
 ```bash
@@ -150,10 +148,14 @@ python --version
 ```
 
 
-However, if you have installed conda for some reason, you need to read up
-on how to install 3.9.5 Python in conda or identify how to run conda and
+However, if you have installed conda for some reason, you need to read up on
+how to install 3.9.5 Python in conda or identify how to run conda and
 python.org at the same time. We often see others are giving the wrong
-installation instructions.
+installation instructions. Please also be aware that when you uninstall conda
+it is not sufficient t just delete it. You will have t make sure that you usnet
+the system variables automatically set at install time. THi includes.
+modifications on Linux and or Mac in .zprofile, .bashrc and .bash_profile. In
+windows, PATH and other environment variables may have been modified.
 
 
 ### Python in the Linux Subsystem
@@ -172,8 +174,8 @@ A suitable distribution would be
 
 * <https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab>
 
-However, as it uses an older version of Python, you will have to update
-it. We also find on the MongoDB web page that MongoDB is not supported in Linux Subsystem.
+However, as it may use an older version of Python, you may want to update
+it as previously discussed
 
 ## Using venv
 
@@ -226,7 +228,7 @@ $ pip install pip -U
 ## Install Python 3.9 via Anaconda 
 
 We are not recommending ether to use conda or anaconda. If you do
-so, it is in your responsibility to update the information in this
+so, it is your responsibility to update the information in this
 section in regards to it. 
 
 :o2: We will check your python installation, and if
@@ -272,7 +274,7 @@ If you use zsh please add it to `.zprofile` instead.
 
 ## Version test
 
-Regardless which version you install, you must do a version test to make
+Regardless of which version you install, you must do a version test to make
 sure you have the correct python and pip versions:
 
 ```bash
@@ -287,4 +289,4 @@ Python 3.9.5
 pip 21.1.2
 ```
 
-r newer
+or newer
