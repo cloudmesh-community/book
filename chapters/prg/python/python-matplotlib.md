@@ -1,14 +1,14 @@
 # Plotting with matplotlib {#sec:matplotlib}
 
 A brief overview of plotting with matplotlib along with examples is
-provided. First matplotlib must be installed, which can be accomplished
+provided. First, matplotlib must be installed, which can be accomplished
 with pip install as follows:
 
 ```bash
 $ pip install matplotlib
 ```
 
-We will start by plotting a simple line graph using built in numpy
+We will start by plotting a simple line graph using built in NumPy
 functions for sine and cosine. This first step is to import the proper
 libraries shown next.
 
@@ -17,7 +17,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-Next we will define the values for the x axis, we do this with the
+Next, we will define the values for the x-axis, we do this with the
 linspace option in numpy. The first two parameters are the starting and
 ending points, these must be scalars. The third parameter is optional and
 defines the number of samples to be generated between the starting and
@@ -62,7 +62,7 @@ displaying the plot defined.
 plt.show()
 ```
 
-Additionally we can add the sine line to out line graph by entering the
+Additionally, we can add the sine line to outline graph by entering the
 following.
 
 ```python
@@ -71,7 +71,7 @@ plt.plot(x,sin)
 
 Invoking plt.show() now will show a figure with both sine and cosine
 lines displayed. Now that we have a figure generated it would be useful
-to label the x and y axis and provide a title. This is done by the
+to label the x and y-axis and provide a title. This is done by the
 following three commands:
 
 ```python
@@ -89,14 +89,14 @@ is defined in the initial plt.plot(x,y) instance, next is an example.
 plt.plot(x,cos, label="cosine")
 ```
 
-Then in order to display the legend the following command is issued:
+Then in order to display the legend, the following command is issued:
 
 ```python
 plt.legend(loc='upper right')
 ```
 
 The location is specified by using upper or lower and left or right.
-Naturally all these commands can be combined and put in a file with the
+Naturally, all these commands can be combined and put in a file with the
 .py extension and run from the command line.
 
 ```python
@@ -160,7 +160,7 @@ An example of using a predefined style is shown next.
 plt.style.use('seaborn')
 ```
 
-Up to this point we have only showcased how to display figures through
+Up to this point, we have only showcased how to display figures through
 python output, however web browsers are a popular way to display
 figures. One example is Bokeh, the following lines can be entered in a
 python shell and the figure is outputted to a browser.

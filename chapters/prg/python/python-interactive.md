@@ -28,7 +28,7 @@ This interactive python process does the following:
 
 * *read* your input commands
 * *evaluate* your command
-* *print* the result of evaluation
+* *print* the result of the evaluation
 * *loop* back to the beginning.
 
 This is why you may see the interactive loop referred to as a **REPL**:
@@ -65,7 +65,7 @@ go up/down line-by-line, or q to exit.
 
 Although the interactive mode provides a convenient tool to test
 things out you will see quickly that for our class we want to use the
-python interpreter from the commandline. Let us assume the program is
+python interpreter from the command line. Let us assume the program is
 called `prg.py`. Once you have written it in that file you simply can call it with
 
 ```bash

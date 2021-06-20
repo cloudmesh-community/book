@@ -1,12 +1,12 @@
 # Subprocess
 
-A module which allows us to start a new process and connect to their
+A module that allows us to start a new process and connect to their
 input, output, error nodes and get the return values is called a
 subprocess.
 
 ## Cloudmesh Subprocess
 
-The easiset way to use subprocesses is simply to use the cloudmesh `Shell`.
+The easiest way to use subprocesses is simply to use the cloudmesh `Shell`.
 
 ```python
 form cloudmesh.common.Shell import Shell
@@ -16,7 +16,7 @@ print (result)
 ```
 
 The nice thing about this function is that the return result will be
-converted to a string which yuo may often need to do. This allows you to
+converted to a string which you may often need to do. This allows you to
 also convert the result into a list with the split function:
 
 ```python
@@ -57,7 +57,8 @@ class subprocess.Popen(
 )
 ```
 
-The following program demonstrates how to start the Unnix command
+The following program demonstrates how to start the Unix command
+
 `ls -lisa`.
 
 ## Subprocess communicate()
@@ -80,19 +81,19 @@ The `communicate()` method returns a tuple (stdoutdata, stderrdata).
 `Popen.communicate()` interacts with process:
 
 1. Send data to stdin.
-2. Read data from stdout and stderr, until end-of-file is reached.
-3. Wait for process to terminate.
+2. Read data from stdout and stderr, until the end-of-file is reached.
+3. Wait for the process to terminate.
 
 ## Subprocess call()
 
-The convenient `call()` method simplifies ineraction with subprocesses.
+The convenient `call()` method simplifies interaction with subprocesses.
 
 ```python
 subprocess.call(args, *,
                 stdin=None,
                 stdout=None,
-				stderr=None,
-				shell=False)
+            stderr=None,
+            shell=False)
 ## Run the command described by args.
 ## Wait for command to complete, then return the returncode attribute.
 ```
@@ -101,14 +102,14 @@ subprocess.call(args, *,
 subprocess.call(['ls', '-l'])
 ```
 
-Here we simple pass a list and asure that the commands and arguments are
+Here we simply pass a list and ensure that the commands and arguments are
 elements in the list.
 
-As you will execute the commands in a shell, you may also sometimes interrested
+As you will execute the commands in a shell, you may also sometimes interested
 in loading the environment that you have set up with `.bashrc` or 
-`.bash_profile` or `.zprofile`. For this reason you can pass along the `shell`
-flag and set it to `True`. On Linux the default shell is `/bin/sh` and on
-Windows it is `cmd.exe`. In this case you can either use a string which will be
+`.bash_profile` or `.zprofile`. For this reason, you can pass along the `shell`
+flag and set it to `True`. On Linux, the default shell is `/bin/sh`, and on
+Windows it is `cmd.exe`. In this case, you can either use a string that will be
 parsed accordingly or use a list
 
 ```python
@@ -159,8 +160,7 @@ If we want to get the standard error output, use stderr = subprocess.STDOUT
 ## Getting the return code (OR exit status)
 
 If we get a non-zero return code, then it will raise a
-CalledProcessError. This object will have return code in returncode
-attribute and output will be in output attribute.
+CalledProcessError. This object will have a return code attribute and an output attribute.
 
 ```python
 >>> subprocess.check_output("exit 1", shell=True)
@@ -182,7 +182,7 @@ returns a non-zero exit status.
   check_output(). Otherwise, None.
 
 * `subprocess.PIPE`: Special value that can be used as the stdin,
-  stdout or stderr argument to Popen and indicates that a pipe to the
+  stdout, or stderr argument to Popen and indicates that a pipe to the
   standard stream should be opened. Most useful with
   Popen.communicate().
 
@@ -190,9 +190,7 @@ returns a non-zero exit status.
   argument to Popen and indicates that standard error should go into
   the same handle as standard output.
 
-  Do not use stdout=PIPE or stderr=PIPE with this function as that can
-  deadlock based on the child process output volume. Use Popen with
-  the communicate() method when you need pipes.
+  Do not use stdout=PIPE or stderr=PIPE with this function as that can deadlock based on the child process output volume. Use Popen with the communicate() method when you need pipes.
 
 ## Popen Constructor
 
@@ -221,7 +219,7 @@ Popen is as follows:
 
 * args are a sequence of program arguments or it can be a single string.
 
-If the arguments is a sequence, then by default, the first item in args
+If the argument is a sequence, then by default, the first item in args
 is the program to execute. If args is a string, the interpretation is
 platform-dependent which will see next. Unless stated specifically, it
 is recommended to pass args as a sequence.
@@ -261,17 +259,15 @@ On Windows, if args is a sequence then it will be converted to a
 string. This is because the underlying CreateProcess() operates on
 strings. Parsing the string after conversion uses the following rules:
 
-1. Arguments are delimited by white space, which is either a space or
-   a tab.
+1. Arguments are delimited by white space, which is either space or a tab.
 2. A string surrounded by double quotation marks is interpreted as a
-   single argument, regardless of white space contained within. A
+   single argument, regardless of the whitespace contained within. A
    quoted string can be embedded in an argument.
 3. A double quotation mark preceded by a backslash is interpreted as a
    literal double quotation mark.
-4. Backslashes are interpreted literally, unless they immediately
+4. Backslashes are interpreted literally unless they immediately
    precede a double quotation mark.
-5. If backslashes immediately precede a double quotation mark, every
-   pair of backslashes is interpreted as a literal backslash. If the
+5. If backslashes immediately precede a double quotation mark, every pair of backslashes is interpreted as a literal backslash. If the
    number of backslashes is odd, the last backslash escapes the next
    double quotation mark as described in rule 3.
 
@@ -281,7 +277,7 @@ it is recommended to pass args as a string rather than as a sequence.
 
 ## Exceptions in Subprocess
 
-If a child process raises any exception before the new program starts,
+If a child process raises an exception before the new program starts,
 that exception will be raised again in the parent
 process. Additionally, the exception object will have one extra
 attribute called child_traceback, which is a string containing
@@ -299,7 +295,7 @@ traceback information from the child’s point of view.
 
 ## Security
 
-Its very important for the application to handle security aspect explicitly.
+It is very important for the application to handle the security aspect explicitly.
 
 ## Popen Objects
 
@@ -315,14 +311,10 @@ Its very important for the application to handle security aspect explicitly.
   > buffer to accept more data. Use `communicate()` to avoid that.*
 
 * `Popen.communicate(input=None)`: Interact with process: Send data to
-  stdin. Read data from stdout and stderr, until end-of-file is
-  reached. Wait for process to terminate. The optional input argument
-  should be a string to be sent to the child process, or None, if no
-  data should be sent to the child.  communicate() returns a tuple
+  stdin. Read data from stdout and stderr, until end-of-file is reached. Wait for the process to terminate. The optional input argument should be a string to be sent to the child process, or None if no data should be sent to the child.  communicate() returns a tuple
   (stdoutdata, stderrdata).
 
-  Note that if you want to send data to the process’s stdin, you need
-  to create the Popen object with stdin=PIPE. Similarly, to get
+  Note that if you want to send data to the process’s stdin, you need to create the Popen object with stdin=PIPE. Similarly, to get
   anything other than None in the result tuple, you need to give
   stdout=PIPE and/or stderr=PIPE too.  The data read is buffered in
   memory, so do not use this method if the data size is large or
@@ -330,7 +322,7 @@ Its very important for the application to handle security aspect explicitly.
 
 * `Popen.send_signal(signal)`: Sends the signal signal to the child.
 
-	On Windows, SIGTERM is an alias for terminate(). CTRL_C_EVENT
+   On Windows, SIGTERM is an alias for terminate(). CTRL_C_EVENT
     and CTRL_BREAK_EVENT can be sent to processes started with a
     creationflags parameter which includes `CREATE_NEW_PROCESS_GROUP`.
 
@@ -361,11 +353,10 @@ The following attributes are also available:
   process. Otherwise, it is None.
 
 * `Popen.pid`: The process ID of the child process. If you set the
-  shell argument to True, this is the process ID of thespawned shell.
+  shell argument to True, this is the process ID of the spawned shell.
 
 * `Popen.returncode`: The child return code, set by poll() and wait()
-  (and indirectly by communicate()). A None value indicates that the
-  process hasn’t terminated yet.
+  (and indirectly by communicate()). A None value indicates that the process hasn’t terminated yet.
 
 A negative value `-N` indicates that the child was terminated by signal
 N (Unix only).

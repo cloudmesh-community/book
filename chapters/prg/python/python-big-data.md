@@ -3,10 +3,10 @@
 ## An Example with Pandas, NumPy and Matplotlib
 
 In this example, we will download some traffic citation data for the
-city of Bloomington, IN, load it into Python and generate a histogram.
+city of Bloomington, IN, load it into Python, and generate a histogram.
 In doing so, you will be exposed to important Python libraries for
 working with big data such as [numpy](www.numpy.org),
-[pandas](pandas.pydata.org) and [matplotlib](matplotlib.org).
+[pandas](pandas.pydata.org), and [matplotlib](matplotlib.org).
 
 ## Set Up Directories and Get Test Data
 
@@ -25,11 +25,11 @@ Depending on your directory organization, the previous might be slightly
 different for you.
 
 If you go to the previous link to data.gov for Bloomington, you will see
-that the citations data is organized per quarter, so there are a total
+that the citation data is organized per quarter, so there are a total
 of four files. Previously, we downloaded the data for the first quarter.
 Go ahead and download the remaining three files with `wget`.
 
-In this example, we will use three modules, `numpy`, `pandas` and
+In this example, we will use three modules, `numpy`, `pandas`, and
 `matplotlib`. If you set up `virtualenv` as described in the Python
 tutorial \<python_intro\>, the first two of these are already installed
 for you. To install `matplotlib`, make sure you've activated your
@@ -223,7 +223,7 @@ the `matplotlib` gallery has many useful code examples.
 
 * <http://www.numpy.org/%7D>
 
-According to the Numpy Web page "NumPy is a package for scientific
+According to the Numpy Web page, "NumPy is a package for scientific
 computing with Python. It contains a powerful N-dimensional array
 object, sophisticated (broadcasting) functions, tools for integrating
 C/C++ and Fortran code, useful linear algebra, Fourier transform, and
@@ -235,7 +235,7 @@ Tutorial: <https://docs.scipy.org/doc/numpy-dev/user/quickstart.html>
 
 * <http://matplotlib.org/>
 
-According the the Matplotlib Web page, "matplotlib is a python 2D
+According to the matplotlib Web page, "matplotlib is a python 2D
 plotting library which produces publication quality figures in a variety
 of hardcopy formats and interactive environments across platforms.
 matplotlib can be used in python scripts, the python and ipython shell
@@ -248,7 +248,7 @@ Matplotlib Gallery: <http://matplotlib.org/gallery.html>
 
 * <http://pandas.pydata.org/>
 
-According to the Pandas Web page, "Pandas is a library library providing
+According to the Pandas Web page, "Pandas is a library providing
 high-performance, easy-to-use data structures and data analysis tools
 for the Python programming language."
 
@@ -278,7 +278,7 @@ and engineering. In particular, these are some of the core packages:
 * SciPy library
 
 It is thus an agglomeration of useful packages and will probably suffice
-for your projects in case you use Python.
+for your projects in case, you use Python.
 
 ### Graphics
 
@@ -286,8 +286,8 @@ for your projects in case you use Python.
 
 * <http://ggplot.yhathq.com/>
 
-According to the ggplot python Web page ggplot is a plotting system for
-Python based on R's ggplot2. It allows to quickly generate some plots
+According to the `ggplot` Python Web page ggplot is a plotting system for
+Python-based on R's ggplot2. It allows to quickly generate some plots
 quickly with little effort. Often it may be easier to use than
 matplotlib directly.
 
@@ -295,8 +295,8 @@ matplotlib directly.
 
 * <http://www.data-analysis-in-python.org/t_seaborn.html>
 
-The good library for plotting is called seaborn which is build on top of
-matplotlib. It provides high level templates for common statistical
+Is a  library for plotting is called seaborn which is build on top of
+matplotlib. It provides high-level templates for common statistical
 plots.
 
 * Gallery:
@@ -326,7 +326,7 @@ cms ipynb [url=URL | file=FILE] --output FILENAME
 
 #### Bokeh
 
-Bokeh is an interactive visualization library with focus on web browsers
+Bokeh is an interactive visualization library with a focus on web browsers
 for display. Its goal is to provide a similar experience as D3.js
 
 * URL: <http://bokeh.pydata.org/>
@@ -337,7 +337,7 @@ for display. Its goal is to provide a similar experience as D3.js
 
 Pygal is a simple API to produce graphs that can be easily embedded into
 your Web pages. It contains annotations when you hover over data points.
-It also allows to present the data in a table.
+It also allows presenting the data in a table.
 
 * <http://pygal.org/>
 
@@ -437,7 +437,7 @@ inspire you. Can you recreate it for LaTeX?
 
 Write a tool that extracts the information for video length.
 
-Write a tool that finds all youtube urls that are not in a video latex
+Write a tool that finds all youtube URLs that are not in a video latex
 macro.
 
 ### Dask
@@ -447,11 +447,11 @@ modern processor architectures.
 
 Dask provides a *dynamic task scheduling* which is optimized for
 computation. It is similar to other frameworks such as Airflow, Luigi,
-Celery, or Make. However it is specializing in optimized interactive
+Celery, or Make. However, it is specializing in optimized interactive
 computational workloads.
 
 Furthermore, Dask targets Big Data *collections* such as parallel
-arrays, dataframes, and lists. These collections ar commonly found in
+arrays, dataframes, and lists. These collections are commonly found in
 NumPy, Pandas, or Python iterators to larger-than-memory or distributed
 environments. While using the Dask implementation we can replace the
 original imports from the appropriate framework, replace them with Dask
@@ -462,6 +462,6 @@ More information can be found at:
 
 * <https://dask.pydata.org>
 
-Conduct a performance study that showcases the difference of doing
+Conduct a performance study that showcases the difference between doing
 parallel calculations in Dask, calculations in a framework such as
 SciPy, and regular unthreaded python code.

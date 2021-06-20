@@ -1,8 +1,8 @@
 # DocOpts {#s-python-docopts}
 
-When we want to design commandline arguments for python programs we have
+When we want to design command line arguments for python programs we have
 many options. However, as our approach is to create documentation
-first, docopts provides also a good apprach for Python. The code for it is
+first, docopts provides also a good approach for Python. The code for it is
 located at
 
 * <https://github.com/docopt/docopt>
@@ -13,11 +13,11 @@ It can be installed with
 $ pip install docopt
 ```
 
-A sample programs are located at
+Sample programs are located at
 
 * <https://github.com/docopt/docopt/blob/master/examples/options_example.py>
 
-A sample program of using doc opts for our purposes loks as follows
+A sample program of using doc opts for our purposes looks as follows
 
 ```python
 """Cloudmesh VM management

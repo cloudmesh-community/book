@@ -1,12 +1,12 @@
 # cmd Module
 
 If you consider using this module, you may instead want to use cloudmesh cmd5 instead as it provides some very nice
-features that are not included in cmd. However to do the basics, cmd will do.
+features that are not included in cmd. However, to do the basics, cmd will do.
 
 The Python cmd module is useful for any more involved command-line
 application. It is used in the [Cloudmesh
 Project](http://cloudmesh.github.io/), for example, and students have found it helpful in their projects to develop
-quickly high quality command line tools with documentation so that others can replicate and use the programs.  The Python
+quickly high-quality command line tools with documentation so that others can replicate and use the programs.  The Python
 cmd module contains a public class, Cmd, designed to be used as a base class for command processors such as interactive
 shells and other
 command interpreters.
@@ -65,18 +65,14 @@ user-defined command prompt. After you have executed your program,
 commands defined in your class can be used. Take note of the following
 in this example:
 
-* The methods of the class of the form do_xxx implement the shell
-  commands, with xxx being the name of the command. For example, in
-  the `HelloWorld` class, the function do_greet maps to the greet on
-  the command line.
+* The methods of the class of the form do_xxx implement the shell commands, with xxx being the name of the command. For example, in the `HelloWorld` class, the function do_greet maps to the greet on the command line.
 
 * The EOF command is a special command that is executed when you press CTRL-D on your keyboard.
 
-* As soon as any command method returns True the shell application
-    exits. Thus, in this example the shell is exited by pressing CTRL-D,
+* As soon as any command method returns True the shell application exits. Thus, in this example, the shell is exited by pressing CTRL-D,
     since the do_EOF method is the only one that returns True.
 
-* The shell application is started by calling the cmdloop method of
+* The shell application is started by calling the `cmdloop` method of
     the class.
 
 ## A More Involved Example
@@ -141,13 +137,12 @@ A session with this program might look like this:
     -12.0
     calc >>> bye, bye
 
-In this case we are using the prompt and intro class variables to
+In this case, we are using the prompt and intro class variables to
     define what the default prompt looks like and a welcome message when
     the command interpreter is invoked.
 
-In the `add` and `subtract` commands we are using the strip and split
-    methods to parse all arguments. If you want to get fancy, you can
-    use Python modules like getopts or argparse for this, but this is
+In the `add` and `subtract` commands we are using the strip and split methods to parse all arguments. If you want to get fancy, you can
+    use Python modules like `getopts` or `argparse` for this, but this is
     not necessary in this simple example.
 
 Help Messages

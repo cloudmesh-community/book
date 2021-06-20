@@ -1,14 +1,14 @@
 # Python Click
 
 Click allows developers to create composable command line interfaces. It
-aims to simplify the the process of writing command line tools.
+aims to simplify the process of writing command line tools.
 Highlights include:
 
 * arbitrary nesting of commands
 * automatic help page generation
-* supports of lazy loading of subcommands at runtime
+* supports lazy loading of subcommands at runtime
 
-The following example take from the click Web page at
+The following example is taken from the click Web page at
 
 * <http://click.pocoo.org/>
 
@@ -44,7 +44,7 @@ To obtain the man page you can say:
     $ python hello.py --help
     Usage: hello.py [OPTIONS]
 
-        Simple program that greets NAME for a total of COUNT times.
+        A simple program that greets NAME for a total of COUNT times.
 
         Options:
             --count INTEGER  Number of greetings.

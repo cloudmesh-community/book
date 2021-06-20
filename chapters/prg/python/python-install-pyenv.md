@@ -4,7 +4,7 @@
 
 ![](images/learning.png) **Learning Objectives**
 
-* Understand why we need to worry about python 3.9 and 2.7
+* Understand why we need to worry about Python 3.9 and 2.7
 * Use pyenv to support both versions
 * Understand the limitations of anaconda/conda for developers
 
@@ -14,7 +14,7 @@ We are living in an interesting junction point in the development of
 Python. In January 2019, it is encouraged that Python developers switch
 from python version 2.7 to python version 3.9.
 
-However there may be the requirement when you still need to develop code
+However, there may be a requirement when you still need to develop code
 not only in python 3.8 but also in python 2.7. To facilitate this
 multi-python version development, the best tool we know about capable of
 doing so is *pyenv*. We will explain you in this section how to install
@@ -31,7 +31,7 @@ To manage python modules, it is useful to have
 your system.
 
 We assume that you have a computer with python installed. The version of
-python however may not be the newest version. Please check with
+Python however may not be the newest version. Please check with
 
 ```bash
 $ python --version
@@ -39,26 +39,26 @@ $ python --version
 
 which version of python you run. If it is not the newest version, we
 use  *pyenv* to install a newer version so you do
-not effect the default version of python from your system.
+not affect the default version of python from your system.
 
 ## Disabling wrong python installs
 
 While working with students we have seen at times that they take other
 classes either at universities or online that teach them how to program
 in python. Unfortunately, they seem to often ignore to teach you how to
-properly install Python. I just recently had a students that had
+properly install Python. I just recently had a student that had
 installed python 7 different times on his macOS machine, while another
 student had 3 different installations, all of which conflicted with each
 other as they were not set up properly and the students did not even
 realize that they were using Python incorrectly on their computer due to
 setup issues and conflicting libraries.
 
-We recommend that you inspect if you have a files such as `~/.bashrc` or
+We recommend that you inspect if you have a file such as `~/.bashrc` or
 `~/.bashrc_profile` in your home directory and identify if it activates
 various versions of python on your computer. If so you could try to
 deactivate them while out-commenting the various versions with the \#
 character at the beginning of the line, start a new terminal and see if
-the terminal shell still works. Than you can follow our instructions
+the terminal shell still works. Then you can follow our instructions
 here while using an install on pyenv.
 
 ## Managing 2.7 and 3.9.5 Python Versions without Pyenv
@@ -68,7 +68,7 @@ want or can use pyenv, we recommend you download and install python
 2.7.16 and 3.9.5 from python.org
 (<https://www.python.org/downloads/>)
 
-YOu can than use either `python2` or `python3` to invoke the python
+You can than use either `python2` or `python3` to invoke the python
 interpreter.
 
 ## Managing Multiple Python Versions with Pyenv
@@ -135,11 +135,11 @@ alias ENV3="pyenv activate ENV3"
 ENV3
 ```
 
-We recommend that you do this towards the end of your file. Than look up
+We recommend that you do this towards the end of your file. Than lookup
 our convenience methods to set an ALIAS and install Python 3.9.5 via
-pyenv
+`pyenv`.
 
-Next we recommend to update pip
+Next, we recommend updating pip
 
 ```bash
 $ ENV2
@@ -150,8 +150,8 @@ $ pip install pip -U
 
 ### Installation pyenv via Homebrew
 
-On macOS you can install pyenv also via Homebrew. Before installing
-anything on your computer make sure you have enough space. Use in the
+On macOS, you can install `pyenv` also via Homebrew. Before installing
+anything on your computer, make sure you have enough space. Use in the
 terminal the command:
 
 ```bash
@@ -161,7 +161,7 @@ $ df -h
 which gives your an overview of your file system. If you do not have
 enough space, please make sure you free up unused files from your drive.
 
-In many occasions it is beneficial to use readline as it provides nice
+On many occasions, it is beneficial to use `readline` as it provides nice
 editing features for the terminal and xz for completion. First, make
 sure you have xcode installed:
 
@@ -169,12 +169,15 @@ sure you have xcode installed:
 $ xcode-select --install
 ```
 
-On Mojave you will get an error that zlib is not installed. THis is due to that
-the header files are not properly installed. To do this you can say
+---
+*The next tip is only televean for older systems. 
+On Mojave you will get an error that zlib is not installed. This is due to that
+the header files are not properly installed. To do this you can say*
 
 ```bash
 $ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 ```
+---
 
 Next install homebrew, pyenv, pyenv-virtualenv and pyenv-virtualwrapper.
 Additionally install readline and some compression tools:
@@ -185,7 +188,7 @@ $ brew update
 $ brew install readline xz
 ```
 
-To install pyenv with homebrew execute in the terminal:
+To install `pyenv` with homebrew execute in the terminal:
 
 ```bash
 brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper
@@ -193,10 +196,10 @@ brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper
 
 ### Install pyenv on Ubuntu 18.04
 
-The following steps will install pyenv in a new ubuntu 18.04
+The following steps will install `pyenv` in a new ubuntu 18.04
 distribution.
 
-Start up a terminal and execute in the terminal the following commands.
+Startup a terminal and execute in the terminal the following commands.
 We recommend that you do it one command at a time so you can observe if
 the command succeeds:
 
@@ -214,7 +217,7 @@ $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 ```
 
-You can also install pyenv using curl command in following way:
+You can also install `pyenv` using the `curl` command in the following way:
 
 ```bash
 $ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
@@ -231,7 +234,7 @@ $ sudo apt-get install -y wget curl llvm libncurses5-dev git
 
 Now that you have installed pyenv it is not yet activated in your
 current terminal. The easiest thing to do is to start a new terminal and
-typ in:
+type in:
 
 ```bash
 $ which pyenv
@@ -337,10 +340,10 @@ You will see the updated list.
 
 #### Updating to a new version of Python with pyenv
 
-Naturally python itself evolves and new versions will become available
+Naturally, python itself evolves and new versions will become available
 via pyenv. To facilitate such a new version you need to first install
 it into pyenv. Let us assume you had an old version of python installed
-onto the ENV3 environment. Than you need to execute the following steps:
+onto the ENV3 environment. Then you need to execute the following steps:
 
 ```bash
 $ pyenv deactivate
@@ -368,8 +371,8 @@ reference="s:set-up-the-shell"}. :o2:
 
 While in others on the internet or in your classes may have taught you
 to use anaconda, We will avoid it as it has several disadvantages for
-edevelopers. The reason for this is that it installs many packages that
-you are likely not to use. In fact installing anaconda on your VM will
+developers. The reason for this is that it installs many packages that
+you are likely not to use. Installing anaconda on your VM will
 waste space and time and you should look into other installs.
 
 We do not recommend that you use anaconda or miniconda as it may
@@ -377,8 +380,8 @@ We do not recommend that you use anaconda or miniconda as it may
 : interfere with your default python interpreters and setup.
 
 Please note that beginners to python should always use anaconda or
-miniconda only after they have installed pyenv and use it. For this class
-neither anaconda nor miniconda is required. In fact we do not recommend
+miniconda only after they have installed pyenv and use it. For this class,
+neither anaconda nor miniconda is required. In fact, we do not recommend
 it. We keep this section as we know that other classes at IU may use
 anaconda. We are not aware if these classes teach you the right way to
 install it, with *pyenv*.
@@ -387,8 +390,8 @@ install it, with *pyenv*.
 
 > ![](images/warning.png){height=12pt}
 > *This section about miniconda is experimental and has not been
-> tested. We are looking for contributors that help completing
-> it. If you use anaconda or miniconda we recommend to manage it via
+> tested. We are looking for contributors that help to complete
+> it. If you use anaconda or miniconda we recommend managing it via
 > pyenv.*
 
 To install mini conda you can use the following commands:
@@ -488,7 +491,7 @@ $ pyenv ANA
 
 However, anaconda may modify your `.bashrc` or `.bash_profile` or or `.zprofile`
 files and may result in incompatibilities with other python versions. For this
-reason we recommend not to use it. If you find ways to get it to work reliably
+reason, we recommend not to use it. If you find ways to get it to work reliably
 with other versions, please let us know and we update this tutorial.
 
 ## Exercises

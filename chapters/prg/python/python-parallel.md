@@ -1,7 +1,7 @@
 # Parallel Computing in Python {#s-python-parallel}
 
-In this module we will review the available Python modules that can be
-used for parallel computing. The parallel computing can be in form of
+In this module, we will review the available Python modules that can be
+used for parallel computing. Parallel computing can be in the form of
 either multi-threading or multi-processing. In multi-threading
 approach, the threads run in the same shared memory heap whereas in
 case of multi-processing, the memory heaps of processes are separate
@@ -12,18 +12,18 @@ a little bit more complex.
 
 Threading in Python is perfect for I/O operations where the process is
 expected to be idle regularly, e.g. web scraping. This is a very
-useful feature because several applications and script might spend the
-majority of their runtime on waiting for network or data I/O. In
+useful feature because several applications and scripts might spend the
+majority of their runtime waiting for network or data I/O. In
 several cases, e.g. web scraping, the resources, i.e. downloading from
-different websites, are most of the time independent. Therefore the
+different websites, are most of the time-independent. Therefore the
 processor can download in parallel and join the result at the end.
 
 ### `Thread` vs `Threading`
 
 There are two built-in modules in Python that are related to
 threading, namely `thread` and `threading`. The former module is
-deprecated for sometime in `Python 2`, and in `Python 3` it is renamed
-to `_thread` for the sake of backwards incompatibilities. The
+deprecated for some time in `Python 2`, and in `Python 3` it is renamed
+to `_thread` for the sake of backward incompatibilities. The
 `_thread` module provides low-level threading API for multi-threading
 in Python, whereas the module `threading` builds a high-level
 threading interface on top of it.
@@ -57,9 +57,9 @@ Hello from Thread  4
 ```
 
 In case you are not familiar with the `if __name__ == '__main__:'`
-statement, what it does is basically making sure that the code nested
+statement, what it does is making sure that the code nested
 under this condition will be run only if you run your module as a
-program and it will not run in case your module is imported in another
+program and it will not run in case your module is imported into another
 file.
 
 ### Locks
@@ -67,8 +67,8 @@ file.
 As mentioned prior, the memory space is shared between the
 threads. This is at the same time beneficial and problematic: it is
 beneficial in a sense that the communication between the threads
-becomes easy, however, you might experience strange outcome if you let
-several threads change same variable without caution, e.g. thread 2
+becomes easy, however, you might experience a strange outcome if you let
+several threads change the same variable without caution, e.g. thread 2
 changes variable `x` while thread 1 is working with it. This is when
 `lock` comes into play. Using `lock`, you can allow only one thread to
 work with a variable. In other words, only a single thread can hold
@@ -127,7 +127,7 @@ Counter is now 12
 
 The reason is the conflict that happens between threads
 while incrementing the `counter` in the nested for loop. As you
-probably noticed, the first level for loop is equivalent of adding 3
+probably noticed, the first level for loop is equivalent to adding 3
 to the counter and the conflict that might happen is not effective on
 that level but the nested for loop. Accordingly, the output of the
 previous code is different in every run. This is an example output:
@@ -225,11 +225,11 @@ might be a better approach.
 ## Multi-processing in Python
 
 We already mentioned that multi-threading might not be sufficient in
-many applications and we might need to use `multiprocessing` sometime,
-or better to say most of the times. That is why we are dedicating this
+many applications and we might need to use `multiprocessing` sometimes,
+or better to say most of the time. That is why we are dedicating this
 subsection to this particular module. This module provides you with an
 API for spawning processes the way you spawn threads using `threading`
-module. Moreover, there are some functionalities that are not even
+module. Moreover, some functionalities are not even
 available in `threading` module, e.g. the `Pool` class which allows
 you to run a batch of jobs using a *pool* of worker processes.
 
@@ -281,7 +281,7 @@ Process 23454: Hello David!
 Consider the `Pool` class as a pool of worker processes. There are
 several ways for assigning jobs to the `Pool` class and we will
 introduce the most important ones in this section. These methods are
-categorized as `blocking` or `non-blocking`. The former means that
+categorized as `blocking` or `non-blocking. The former means that
 after calling the API, it blocks the thread/process until it has the
 result or answer ready and the control returns only when the call
 completes. In the `non-blockin` on the other hand, the control returns
@@ -308,7 +308,7 @@ if __name__ == '__main__':
 ```
 
 As you can see, we have seven names here but we do not want to
-dedicate each greeting to a separate process. Instead we do the whole
+dedicate each greeting to a separate process. Instead, we do the whole
 job of "greeting seven people" using "two processes". We create a pool
 of 3 processes with `Pool(processes=3)` syntax and then we map an
 iterable called `names` to the `greeter` function using
@@ -448,11 +448,11 @@ Nevertheless, there are several ways that `Process`es from
 appropriate for inter-process message passing. To be more specific,
 `Pipe` is useful for process-to-process scenarios while `Queue` is
 more appropriate for process**es**-toprocess**es** ones. `Value` and
-`Array` are both used to provide a synchronized access to a shared
+`Array` are both used to provide synchronized access to a shared
 data (very much like shared memory) and `Managers` can be used on
 different data types. In the following sub-sections, we cover both
 `Value` and `Array` since they are both lightweight, yet useful,
-approaches.
+approach.
 
 #### Value
 
@@ -504,7 +504,7 @@ defines the initialization value. In this case we are assigning a
 signed integer in the shared memory initialized to size 0 to the
 `counter` variable. We then modified our two functions and pass this
 *shared* variable as an argument. Finally, we change the way we
-increment the `counter` since counter is not an Python integer anymore
+increment the `counter` since the counter is not a Python integer anymore
 but a `ctypes` signed integer where we can access its value using the
 `value` attribute. The output of the code is now as we expected:
 
@@ -568,16 +568,16 @@ if __name__ == '__main__':
     t1.start()
 ```
 
-In this example we created a `multiprocessing.Array()` object and
+In this example, we created a `multiprocessing.Array()` object and
 assigned it to a variable called `names`. As we mentioned before, the
 first argument is the `ctype` data type and since we want to create an
-array of strings with length of 4 (second argument), we imported the
+array of strings with a length of 4 (second argument), we imported the
 `c_char_p` and passed it as the first argument.
 
 Instead of passing the arguments separately, we merged both the
 `Value` and `Array` objects in a tuple and passed the tuple to the
 functions. We then modified the functions to unpack the objects in the
-first two lines in the both functions. Finally we changed the print
+first two lines in both functions. Finally, we changed the print
 statement in a way that each process greets a particular name. The
 output of the example is:
 
