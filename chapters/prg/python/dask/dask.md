@@ -8,12 +8,8 @@ which can then be solved concurrently.
 
 Dask is composed of two components:
 
-1. *Dynamic task scheduling optimized for computation.* This is
-   similar to Airflow, Luigi, Celery, or Make, but optimized for
-   interactive computational workloads.
-2. *Big Data collections* like parallel arrays, dataframes, and lists
-   that extend common interfaces like NumPy, Pandas, or Python
-   iterators to larger-than-memory or distributed environments. These
+1. *Dynamic task scheduling optimized for computation.* This is similar to Airflow, Luigi, Celery, or Make, but optimized for interactive computational workloads.
+2. *Big Data collections* like parallel arrays, dataframes, and lists that extend common interfaces like NumPy, Pandas, or Python iterators to larger-than-memory or distributed environments. These
    parallel collections run on top of the dynamic task schedulers.
 
 
@@ -74,7 +70,7 @@ Dataframe:
 
 ## How Dask Works
 
-Dask is computation tool for larger-than-memory datasets, parallel
+Dask is a computation tool for larger-than-memory datasets, parallel
 execution or delayed/background execution.
 
 We can summarize the basics of Dask as follows:
@@ -145,7 +141,7 @@ dask.bag = map, filter, toolz + parallel execution
 ```
 
 You can create a Bag from a Python sequence, from files, from data on
-S3, etc..
+S3, etc.
 
 
 ```
@@ -170,7 +166,7 @@ b = db.read_text('s3://dask-data/nyc-taxi/2015/yellow_tripdata_2015-01.csv')
 
 Bag objects hold the standard functional API found in projects like
 the Python standard library, toolz, or pyspark, including map, filter,
-groupby, etc..
+groupby, etc.
 
 As with Array and DataFrame objects, operations on Bag objects create
 new bags. Call the .compute() method to trigger execution.
@@ -199,14 +195,13 @@ Dask supports a real-time task framework that extends Python’s
 concurrent.futures interface. This interface is good for arbitrary
 task scheduling, like dask.delayed, but is immediate rather than lazy,
 which provides some more flexibility in situations where the
-computations may evolve over time. These features depend on the second
-generation task scheduler found in dask.distributed (which, despite
+computations may evolve. These features depend on the second-generation task scheduler found in dask.distributed (which, despite
 its name, runs very well on a single machine).
 
 Dask allows us to simply construct graphs of tasks with
 dependencies. We can find that graphs can also be created
-automatically for us using functional, Numpy or Pandas syntax on data
-collections. None of this would be very useful, if there weren't also
+automatically for us using functional, Numpy, or Pandas syntax on data
+collections. None of this would be very useful if there weren't also
 a way to execute these graphs, in a parallel and memory-aware
 way. Dask comes with four available schedulers:
 
@@ -391,7 +386,7 @@ df_hdf = dd.read_hdf(target, '/data')
 df_hdf.head()
 ```
 
-For more information of Dask DataFrame Storage, click <http://dask.pydata.org/en/latest/dataframe-create.html>
+For more information on Dask DataFrame Storage, click <http://dask.pydata.org/en/latest/dataframe-create.html>
 
 ## Links
 
