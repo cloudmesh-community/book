@@ -24,7 +24,7 @@ the last several years and models for them have improved along with
 Histograms of Oriented Gradients (HOG) for Human Detection \[1\]. OpenCV
 is a Computer Vision library including the SVM classifier and the HOG
 object detector for pedestrian detection and INRIA Person Dataset \[2\]
-is one of popular samples for both training and testing purposes. In
+is one of the popular samples for both training and testing purposes. In
 this document, we deploy Apache Spark on Mesos clusters to train and
 apply detection models from OpenCV using Python API.
 
@@ -33,7 +33,7 @@ apply detection models from OpenCV using Python API.
 This dataset contains positive and negative images for training and test
 purposes with annotation files for upright persons in each image. 288
 positive test images, 453 negative test images, 614 positive training
-images and 1218 negative training images are included along with
+images, and 1218 negative training images are included along with
 normalized 64x128 pixel formats. 970MB dataset is available to download
 \[3\].
 
@@ -52,9 +52,9 @@ There are reasons why we use Ansible:
 -   Expandable: Leverages Python (default) but modules can be written in
     any language
 
--   Agentless: no setup required on managed node
+-   Agentless: no setup required on a managed node
 
--   Security: Allows deployment from user space; uses ssh for
+-   Security: Allows deployment from userspace; uses ssh for
     authentication
 
 -   Flexibility: only requires ssh access to privileged user
@@ -65,11 +65,11 @@ There are reasons why we use Ansible:
 -   Modularity: Single Ansible Role (should) contain all required
     commands and variables to deploy software package independently
 
--   Sharing and portability: roles are available from source (github,
-    bitbucket, gitlab, etc) or the Ansible Galaxy portal
+-   Sharing and portability: roles are available from the source (GitHub,
+    bitbucket, GitLab, etc) or the Ansible Galaxy portal
 
-We use Ansible roles to install software packages for Humand and Face
-Detection which requires to run OpenCV Python libraries on Apache Mesos
+We use Ansible roles to install software packages for Human and Face
+Detection which requires running OpenCV Python libraries on Apache Mesos
 with a cluster configuration. Dataset is also downloaded from the web
 using an ansible role.
 
@@ -77,18 +77,18 @@ using an ansible role.
 
 Ansible is to deploy applications and build clusters for
 batch-processing large datasets towards target machines e.g. VM
-instances on OpenStack and we use ansible roles with *include* directive
+instances on OpenStack and we use Ansible roles with *include* directive
 to organize layers of big data software stacks (BDSS). Ansible provides
 abstractions by Playbook Roles and reusability by Include statements. We
 define X application in X Ansible Role, for example, and use include
 statements to combine with other applications e.g. Y or Z. The layers
-exist in sub directories (see next) to add modularity to your Ansible
+exist in subdirectories (see next) to add modularity to your Ansible
 deployment. For example, there are five roles used in this example that
 are Apache Mesos in a scheduler layer, Apache Spark in a processing
-layer, a OpenCV library in an application layer, INRIA Person Dataset in
-a dataset layer and a python script for human and face detection in an
+layer, an OpenCV library in an application layer, INRIA Person Dataset in
+a dataset layer, and a python script for human and face detection in an
 analytics layer. If you have an additional software package to add, you
-can simply add a new role in a main ansible playbook with *include*
+can simply add a new role in the main Ansible playbook with *include*
 directive. With this, your Ansible playbook maintains simple but
 flexible to add more roles without having a large single file which is
 getting difficult to read when it deploys more applications on multiple
@@ -113,7 +113,7 @@ digits in the filename indicate an order of roles to be run.
 It is assumed that virtual machines are created by cloudmesh, the cloud
 management software. For example on OpenStack,
 
-`cm cluster create -N=6`
+`cm cluster create -N=6`
 
 command starts a set of virtual machine instances. The number of
 machines and groups for clusters e.g. namenodes and datanodes are
@@ -138,7 +138,7 @@ master (leader) host for a job submission. Other roles for OpenCV, INRIA
 Person Dataset and Human and Face Detection Python applications are
 followed by.
 
-The following software are expected in the stacks according to the
+The following software is expected in the stacks according to the
 [github](https://github.com/futuresystems/pedestrian-and-face-detection):
 
 -   mesos cluster (master, worker)
@@ -192,7 +192,7 @@ deployment on OpenStack.
 
 #### Cloning Pedestrian Detection Repository from Github
 
-Roles are included as submodules which require `--recursive` option to
+Roles are included as submodules that require `--recursive` option to
 checkout them all.
 
     $ git clone --recursive https://github.com/futuresystems/pedestrian-and-face-detection.git
@@ -208,7 +208,7 @@ Change the following variable with actual ip addresses:
     10.0.5.71
     10.0.5.72"""
 
-Create a `inventory.txt` file with the variable in your local directory.
+Create an `inventory.txt` file with the variable in your local directory.
 
     !printf "$sample_inventory" > inventory.txt
     !cat inventory.txt
@@ -231,7 +231,7 @@ may encounter 'FAILURE' in the previous ping test.
 
 #### Ansible Playbook
 
-We use a main ansible playbook to deploy software packages for NIST
+We use a main Ansible playbook to deploy software packages for NIST
 Pedestrian and Face detection which includes: - mesos - spark -zookeeper
 - opencv - INRIA Person dataset - Python script for the detection
 
@@ -319,7 +319,7 @@ found
 ![Masked image](images/facedetection_49_0.png){#fig:facedetection_49_0}
 
 The red color mailbox is left alone in the image which we wanted to find
-in this example by opencv functions. You can try other images with
+in this example by OpenCV functions. You can try other images with
 different colors to detect the different shape of objects using
 findContours and inRange from opencv.
 
@@ -497,12 +497,12 @@ directory.
 
 Spark provides a special object 'sc' to connect between a spark cluster
 and functions in python code. Therefore, we can run python functions in
-parallel to detet objects in this example.
+parallel to detect objects in this example.
 
 -   *map* function is used to process pedestrian and face detection per
     image from the parallelize() function of 'sc' spark context.
 
--   *collect* fonction merges results in an array.
+-   *collect* function merges results in an array.
 
 
     def apply_batch(imagePath):
@@ -536,7 +536,7 @@ function to process in a spark cluster.
 
 #### Collect Function
 
-The result of each map process is merged to an array.
+The result of each map process is merged into an array.
 
     result = pdc.collect()
 
