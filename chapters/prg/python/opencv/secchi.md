@@ -1,7 +1,7 @@
 # Secchi Disk {#sec:secchi-disk}
 
 We are developing an autonomous robot boat that you can be part of
-developing within this class. The robot bot is actually measuring
+developing within this class. The robot bot is measuring
 turbidity or water clarity. Traditionally this has been done with a
 Secchi disk. The use of the Secchi disk is as follows:
 
@@ -11,19 +11,19 @@ Secchi disk. The use of the Secchi disk is as follows:
    map
 
 One of the things we can do is take a video of the measurement instead
-of a human recording them. Than we can analyse the video automatically
+of a human recording them. Then we can analyze the video automatically
 to see how deep a disk was lowered. This is a classical image analysis
 program. You are encouraged to identify algorithms that can identify
-the depth. The most simplest seems to be to do a histogram at a
-variety of depth steps, and measure when the histogram no longer
-changes significantly. The depth at that image will be the measurement
+the depth. The simplest seems to be to do a histogram at a
+variety of depth steps and measure when the histogram no longer
+changes significantly. The depth of that image will be the measurement
 we look for.
 
-Thus if we analyse the images we need to look at the image and
+Thus if we analyze the images we need to look at the image and
 identify the numbers on the measuring tape, as well as the visibility
 of the disk.
 
-To show case how such a disk looks like we refer to the image
+To showcase how such a disk looks like we refer to the image
 showcasing different Secchi disks. For our purpose the black-white
 contrast Secchi disk works well. See @fig:secchi-field-test-disk
 
@@ -36,8 +36,8 @@ More information about Secchi Disk can be found at:
 
 We have included next a couple of examples while using some obviously
 useful OpenCV methods. Surprisingly, the use of the edge detection
-that comes in mind first to identify if we still can see the disk,
-seems to complicated to use for analysis. We at this time believe the
+that comes to mind first to identify if we still can see the disk,
+seems too complicated to use for analysis. We at this time believe the
 histogram will be sufficient.
 
 Please inspect our examples.
@@ -45,13 +45,13 @@ Please inspect our examples.
 
 ## Setup for OSX
 
-First lest setup the OpenCV environment for OSX. Naturally you will
+First lest setup the OpenCV environment for OSX. Naturally, you will
 have to update the versions based on your versions of python. When we
-tried the install of OpenCV on MacOS, the setup was slightly more
+tried the install of OpenCV on macOS, the setup was slightly more
 complex than other packages. This may have changed by now and if you
-have improved instructions, pleas elt us know. However we do not want
+have improved instructions, please let us know. However, we do not want
 to install it via Anaconda out of the obvious reason that anaconda
-installs to many other things.
+installs too many other things.
 
 ```python
 import os, sys
@@ -71,12 +71,12 @@ cv2.__version__
 
 Record the video on the robot
 
-We have actually done this for you and will provide you with images
+We have done this for you and will provide you with images
 and videos if you are interested in analyzing them. See @fig:secchi-histogram
 
 ## Step 2: Analyse the images from the Video
 
-For now we just selected 4 images from the video
+For now, we just selected 4 images from the video
 
 ```python
 import cv2
