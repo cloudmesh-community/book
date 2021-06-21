@@ -14,7 +14,7 @@ an integrated unit tester, and integration with git.
 
 ## Python in 45 minutes
 
-Below is an additional community YouTube video about the Python 
+Next is an additional community YouTube video about the Python 
 programming language. Naturally, there are many alternatives to this
 video, but it is probably a good start. It also uses PyCharm
 which we recommend.
