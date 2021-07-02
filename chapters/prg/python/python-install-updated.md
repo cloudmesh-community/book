@@ -83,7 +83,14 @@ This tutorial uses Ubuntu, but it should work on other Linux distros, as well.
    
 5. Next prepare your system
 
-Note: If you want to check how much disk space you have, press the Files icon on the left (on the taskbar) and click `Other Locations`. You may have to scroll down on the sidebar in order to see it. It should say how much GB is available. Remember, 1 GB = 1000 MB and 1 MB = 1000 KB.
+Note: If you want to check how much disk space you have, you can use 
+
+```bash
+$ df -h /
+Filesystem       Size   Used  Avail Capacity iused       ifree %iused  Mounted on
+/dev/disk1s5s1  1.8Ti   14Gi  387Gi     4%  553757 19538475003    0%   /
+```
+The space under Avail will be your available spave. Make sure you have sufficient space
 
 ```bash
 $ sudo apt-get update
