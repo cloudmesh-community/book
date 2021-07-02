@@ -82,42 +82,30 @@ This tutorial uses Ubuntu, but it should work on other Linux distros, as well.
 4. Open a terminal by pressing the Windows key, or by clicking the grid on the bottom left of your screen. Type `terminal`. Click on the `Terminal` result that appears.
    
 5. Next prepare your system
- 
+
+Note: If you want to check how much disk space you have, press the Files icon on the left (on the taskbar) and click `Other Locations`. You may have to scroll down on the sidebar in order to see it. It should say how much GB is available. Remember, 1 GB = 1000 MB and 1 MB = 1000 KB.
+
 ```bash
 $ sudo apt-get update
-$ sudo apt-get install libssl-dev openssl make gcc
+# sudo apt install -y wget curl
+$ sudo apt install -y install openssl libssl-dev
+$ sudo apt install -y build-essential zlib1g-dev libncurses5-dev 
+$ sudo apt install -y libgdbm-dev libnss3-dev  libreadline-dev libffi-dev libsqlite3-dev libbz2-dev
 ``` 
 
-and press Enter nad typ in y, when appropriate. You are then asked if you are okay with a certain amount of disk space being taken up. Type `y`, which stands for Yes, and then press Enter.
-
-   1. If you want to check how much disk space you have, press the Files icon on the left (on the taskbar) and click `Other Locations`. You may have to scroll down on the sidebar in order to see it. It should say how much GB is available. Remember, 1 GB = 1000 MB and 1 MB = 1000 KB.
-
-      
-8. After this finishes, type `cd /opt` and press Enter. Then, remember which version you read on the Python webpage (the latest version). Type 
+8. After this finishes, type `cd /opt` and press Enter. Then, remember which version you read on the Python webpage (the latest version) and add it as environment variable `PV` to your terminal so we can more easily execute command that include the version number. Type 
   
    ```bash
-   $ sudo wget https://www.python.org/ftp/python/x.x.x/Python-x.x.x.tgz
-   $ sudo tar xzvf Python-x.x.x.tgz
-   $ cd Python-x.x.x
-   $ ./configure
+   $ PV=3.9.6
+   $ sudo wget https://www.python.org/ftp/python/$PV/Python-$PV.tgz
+   $ sudo tar xzvf Python-$PV.tgz
+   $ cd Python-$PV
+   $ ./configure --enable-optimizations
    $ make
-   $ sudo make install
+   $ sudo make alitinstall
    ``` 
-   
-PLEASE NOTE THAT GREGOR BELIEVES THE NEXT STEP SHOUDL BE not what is described in 12, but 
-
-```
-sudo make alitinstall
-```
-
-THis needs t be verified and researched.
-
-12. Once the installation finishes, type `sudo ln -fs /opt/Python-x.x.x/Python /usr/bin/pythonx.x`. Notice that `x.x.x` should be replaced with the full version number and `x.x` should have the first two numbers in the version number. Press Enter.
- 
-13. Confirm Python's successful installation by typing `pythonx.x --version`; be sure to replace x.x with the first two numbers of the version number. It should output the latest version number. Congratulations!
-
     
-Credit to bobbyiliev for making the required commands publicly available. The commands are available here, as well: https://www.digitalocean.com/community/questions/how-to-install-a-specific-python-version-on-ubuntu
+19. Confirm Python's successful installation by typing `pythonx.x --version`; be sure to replace x.x with the first two numbers of the version number. It should output the latest version number. Congratulations!
 
 ## Python venv
 
