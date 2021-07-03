@@ -8,7 +8,7 @@ Jacques Fleischer and Gregor von Laszewski
 
 We have provided a convenient 2-minute YouTube video that walks you through the steps. Please note that when a newer version of Python becomes available to update the version numbers accordingly.
 
-* [![Video](https://raw.githubusercontent.com/cloudmesh-community/book/main/images/video.png) Windows Python Installation Video Tutorial](https://youtu.be/T6UYyu5XVMc)
+* [![Video](https://raw.githubusercontent.com/cloudmesh-community/book/main/images/video.png) (2:16) Windows Python Installation Video Tutorial](https://youtu.be/T6UYyu5XVMc)
 
 
 The video showcases the following steps:
