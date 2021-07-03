@@ -74,7 +74,7 @@ You can skip to the 1:00 minute mark if you are in a hurry.)
 Click the following image to be redirected to a 9-minute YouTube walkthrough. (Linux's tutorial is the longest, but it is worth it.)
 This tutorial uses Ubuntu, but it should work on other Linux distros, as well.
 
-* [![Video](https://raw.githubusercontent.com/cloudmesh-community/book/main/images/video.png) Linux Python Installation Video Tutorial](https://youtu.be/4vXyD_hjHNI)
+* [![Video](https://raw.githubusercontent.com/cloudmesh-community/book/main/images/video.png) (9:13) Linux Python Installation Video Tutorial](https://youtu.be/4vXyD_hjHNI)
 * Naturally we recommend that you read all of the licensing information.
 
 
