@@ -8,7 +8,7 @@ Jacques Fleischer and Gregor von Laszewski
 
 We have provided a convenient 2-minute YouTube video that walks you through the steps. Please note that when a newer version of Python becomes available to update the version numbers accordingly.
 
-* [Windows Python Installation Video Tutorial](https://youtu.be/T6UYyu5XVMc)
+* [![Video](https://raw.githubusercontent.com/cloudmesh-community/book/main/images/video.png) Windows Python Installation Video Tutorial](https://youtu.be/T6UYyu5XVMc)
 
 
 The video showcases the following steps:
@@ -44,7 +44,7 @@ The video showcases the following steps:
 Click the following image to be redirected to a 5-minute YouTube walkthrough. (Yes, Mac's video is a little longer, but do not fret!
 You can skip to the 1:00 minute mark if you are in a hurry.)
 
-[Mac Python Installation Video Tutorial](https://youtu.be/TttmzM-EDmk)
+* [[Video](https://raw.githubusercontent.com/cloudmesh-community/book/main/images/video.png) Mac Python Installation Video Tutorial](https://youtu.be/TttmzM-EDmk)
 
 
 1. First, open the url <https://www.python.org/downloads/> in any web browser. 
@@ -74,7 +74,7 @@ You can skip to the 1:00 minute mark if you are in a hurry.)
 Click the following image to be redirected to a 9-minute YouTube walkthrough. (Linux's tutorial is the longest, but it is worth it.)
 This tutorial uses Ubuntu, but it should work on other Linux distros, as well.
 
-[Linux Python Installation Video Tutorial](https://youtu.be/4vXyD_hjHNI)
+* [![Video](https://raw.githubusercontent.com/cloudmesh-community/book/main/images/video.png) Linux Python Installation Video Tutorial](https://youtu.be/4vXyD_hjHNI)
 
 
 1. First, open the url <https://www.python.org/downloads/> in any web browser.
