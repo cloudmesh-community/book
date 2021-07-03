@@ -8,9 +8,7 @@ Jacques Fleischer and Gregor von Laszewski
 
 We have provided a convenient 2-minute YouTube video that walks you through the steps. Please note that when a newer version of Python becomes available to update the version numbers accordingly.
 
-{{% youtube T6UYyu5XVMc %}}
-
-[Windows Python Installation Video Tutorial](https://youtu.be/T6UYyu5XVMc)
+* [Windows Python Installation Video Tutorial](https://youtu.be/T6UYyu5XVMc)
 
 
 The video showcases the following steps:
@@ -46,8 +44,6 @@ The video showcases the following steps:
 Click the following image to be redirected to a 5-minute YouTube walkthrough. (Yes, Mac's video is a little longer, but do not fret!
 You can skip to the 1:00 minute mark if you are in a hurry.)
 
-{{% youtube TttmzM-EDmk %}}
-
 [Mac Python Installation Video Tutorial](https://youtu.be/TttmzM-EDmk)
 
 
@@ -77,8 +73,6 @@ You can skip to the 1:00 minute mark if you are in a hurry.)
 
 Click the following image to be redirected to a 9-minute YouTube walkthrough. (Linux's tutorial is the longest, but it is worth it.)
 This tutorial uses Ubuntu, but it should work on other Linux distros, as well.
-
-{{% youtube 4vXyD_hjHNI %}}
 
 [Linux Python Installation Video Tutorial](https://youtu.be/4vXyD_hjHNI)
 
