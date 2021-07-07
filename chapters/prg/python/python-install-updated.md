@@ -93,7 +93,7 @@ $ df -h /
 Filesystem       Size   Used  Avail Capacity iused       ifree %iused  Mounted on
 /dev/disk1s5s1  1.8Ti   14Gi  387Gi     4%  553757 19538475003    0%   /
 ```
-The space under Avail will be your available spave. Make sure you have sufficient space.
+The value under Avail will be your available space. Make sure you have sufficient space.
 
 ```bash
 $ sudo apt-get update
