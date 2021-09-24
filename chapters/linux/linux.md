@@ -56,119 +56,109 @@ to explore. For more information simply type man and the name of the
 command. If you find a useful command that is missing, please add it
 with a Git pull request.
 
-hhhhhh
 
 ------------------------------------------------------------------------
- Command    | Description   |
---------------------------------- | ---------------------------------
+ Command    | Description   
+--------------------------------- | --------------------------------- 
 man *command*                     | manual page for the *command*     
 apropos *text*                    | list all commands that have text in it  
 ls                                | Directory listing                 
-
-
-
-|------------------------------------------------------------------------|
-| Command    | Description   |
-| --------------------------------- | --------------------------------- |
-| man *command*                     | manual page for the *command*     |
-| apropos *text*                    | list all commands that have text in it  |
-| ls                                | Directory listing                 |
-| ls -lisa                          | list details                      |
-| tree                              | list the directories in graphical form |
-| cd *dirname*                      | Change directory to *dirname*     |
-| mkdir *dirname*                   | create the directory              |
-| rmdir *dirname*                   | delete the directory              |
-| pwd                               | print working directory           |
-| rm *file*                         | remove the file                   |
-| cp *a* *b*                        | copy file *a* to *b*              |
-| mv *a* *b*                        | move/rename file *a* to *b*       |
-| cat *a*                           | print content of file*a*          |
-| cat -n *filename*                 | print content of file*a* with     |
-|                                   | line numbers                      |
-| less *a*                          | print paged content of file *a*   |
-| head -5 *a*                       | Display first 5 lines of file *a* |
-| tail -5 *a*                       | Display last 5 lines of file *a*  |
-| du -hs .                          | show in human readable form the space used by the current directory |
-| df -h                             | show the details of the disk file system |
-| wc *filename*                     | counts the word in a file         |
-| sort *filename*                   | sorts the file                    |
-| uniq *filename*                   | displays only uniq entries in the file |
-| tar -xvf *dir*                    | tars up a compressed version of the directory  |
-| rsync                             | faster, flexible replacement for rcp                      |
-| gzip *filename*                   | compresses the file               |
-| gunzip *filename*                 | compresses the file               |
-| bzip2 *filename*                  | compresses the file with          |
-|                                   | block-sorting                     |
-| bunzip2 *filename*                | uncompresses the file with         block-sorting                     |
-| clear                             | clears the terminal screen        |
-| touch *filename*                  | change file access and             modification times or if file      does not exist creates file       |
-| who                               | displays a list of users that are  currently logged on, for each      user the login name, date and time   of login, tty name, and hostname   if not local are displayed        |
-| whoami                            | displays the users effective id    see also id                       |
-| echo -n *string*                  | write specified arguments to       standard output                   |
-| date                              | displays or sets date & time,      when invoked without arguments     the current date and time are      displayed                         |
-| logout                            | exit a given session              |
-| exit                              | when issued at the shell prompt     the shell will exit and terminate  any running jobs within the shell |
-| kill                              | terminate or signal a process by   sending a signal to the specified  process usually by the pid        |
-| ps                                | displays a header line followed    by all processes that have         controlling terminals             |
-| sleep                             | suspends execution for an          interval of time specified in      seconds                           |
-| uptime                            | displays how long the system has   been running                      |
-| time *command*                    | times the command execution in     seconds                           |
-| find */ \[-name\] file-name.txt*  | searches a specified path or       directory with a given expression  that tells the find utility what   to find, if used as shown the      find utility would search the       entire drive for a file named      file-name.txt                     |
-| diff                              | compares files line by line       |
-| hostname                          | prints the name of the current     host system                       |
-| which                             | locates a program file in the      users path                        |
-| tail                              | displays the last part of the      file                              |
-| head                              | displays the first lines of a      file                              |
-| top                               | displays a sorted list of system   processes                         |
-| locate *filename*                 | finds the path of a file          |
-| grep *'word'* *filename*          | finds all lines with the word in   it                                |
-| grep -v *'word'* *filename*       | finds all lines without the word   in it                             |
-| chmod ug+rw *filename*            | change file modes or Access Control Lists. In this example user and group are changed to read and write |
-| chown                             | change file owner and group                                  |
-| history                           | a build-in command to list the past commands                     |
-| sudo                              |  execute a command as another user   |
-| su                                | substitute user identity                       |
-| uname                             | print the operating system name   |
-| set -o emacs                      | tells the shell to use Emacs commands.                         |
-| chmod go-rwx *file*               | changes the permission of the file                              |
-| chown *username* *file*           | changes the ownership of the file |
-| chgrp *group* *file*              | changes the group of a file       |
-| fgrep *text* *filename*           | searches the text in the given     file                              |
-| grep -R *text* .                 | recursively searches for xyz in    all files                         |
-| find . -name *.py                | find all files with `.py` at the   end                               |
-| ps                                | list the running processes        |
-| kill -9 1234                      | kill the process with the id 1234 |
-| at                                | que commands for later execution                    |
-| cron                              | daemon to execute scheduled commands   |
-| crontab                           | manage the time table for execution commands with cron                     |
-| mount /dev/cdrom /mnt/cdrom       | mount a filesystem from a cd rom   to /mnt/cdrom                     |
-| users                             | list the logged in users                     |
-| who                               | display who is logged in                      |
-| whoami                            | print the user id                      |
-| dmesg                             | display the system message buffer                      |
-| last                              | indicate last logins of users and ttys                      |
-| uname                             | print operating system name                      |
-| date                              | prints the current date and time  |
-| time *command*                    | prints the sys, real and user      time                              |
-| shutdown -h "shut down"           | shutdown the computer                      |
-| ping                              | ping a host                     |
-| netstat                           | show network status                    |
-| hostname                          | print name of current host system                      |
-| traceroute                        | print the route packets take to network host                      |
-| ifconfig                          | configure network interface parameters                     |
-| host                              | DNS lookup utility                     |
-| whois                             | Internet domain name and network number directory service                      |
-| dig                               | DNS lookup utility                      |
-| wget                              | non-interactive network downloader                      |
-| curl                              | transfer a URL                      |
-| ssh                               | remote login program                      |
-| scp                               | remote file copy program                      |
-| sftp                              | secure file transfer program                      |
-| watch *command* | run any designated command at regular intervals |
-| awk | program that you can use to select particular records in a file and perform operations on them |
-| sed | stream editor used to perform basic text transformations |
-| xargs | program that can be used to build and execute commands from STDIN |
-| cat *some_file.json* \| python -m json.tool | quick and easy JSON validator |
+ls -lisa                          | list details                      
+tree                              | list the directories in graphical form 
+cd *dirname*                      | Change directory to *dirname*     
+mkdir *dirname*                   | create the directory              
+rmdir *dirname*                   | delete the directory              
+pwd                               | print working directory           
+rm *file*                         | remove the file                   
+cp *a* *b*                        | copy file *a* to *b*              
+mv *a* *b*                        | move/rename file *a* to *b*       
+cat *a*                           | print content of file*a*          
+cat -n *filename*                 | print content of file*a* with     
+                                  | line numbers                      
+less *a*                          | print paged content of file *a*   
+head -5 *a*                       | Display first 5 lines of file *a* 
+tail -5 *a*                       | Display last 5 lines of file *a*  
+du -hs .                          | show in human readable form the space used by the current directory 
+df -h                             | show the details of the disk file system 
+wc *filename*                     | counts the word in a file         
+sort *filename*                   | sorts the file                    
+uniq *filename*                   | displays only uniq entries in the file 
+tar -xvf *dir*                    | tars up a compressed version of the directory  
+rsync                             | faster, flexible replacement for rcp                      
+gzip *filename*                   | compresses the file               
+gunzip *filename*                 | compresses the file               
+bzip2 *filename*                  | compresses the file with          
+                                  | block-sorting                     
+bunzip2 *filename*                | uncompresses the file with         block-sorting                     
+clear                             | clears the terminal screen        
+touch *filename*                  | change file access and             modification times or if file      does not exist creates file       
+who                               | displays a list of users that are  currently logged on, for each      user the login name, date and time   of login, tty name, and hostname   if not local are displayed        
+whoami                            | displays the users effective id    see also id                       
+echo -n *string*                  | write specified arguments to       standard output                   
+date                              | displays or sets date & time,      when invoked without arguments     the current date and time are      displayed                         
+logout                            | exit a given session              
+exit                              | when issued at the shell prompt     the shell will exit and terminate  any running jobs within the shell 
+kill                              | terminate or signal a process by   sending a signal to the specified  process usually by the pid        
+ps                                | displays a header line followed    by all processes that have         controlling terminals             
+sleep                             | suspends execution for an          interval of time specified in      seconds                           
+uptime                            | displays how long the system has   been running                      
+time *command*                    | times the command execution in     seconds                           
+find */ \[-name\] file-name.txt*  | searches a specified path or       directory with a given expression  that tells the find utility what   to find, if used as shown the      find utility would search the       entire drive for a file named      file-name.txt                     
+diff                              | compares files line by line       
+hostname                          | prints the name of the current     host system                       
+which                             | locates a program file in the      users path                        
+tail                              | displays the last part of the      file                              
+head                              | displays the first lines of a      file                              
+top                               | displays a sorted list of system   processes                         
+locate *filename*                 | finds the path of a file          
+grep *'word'* *filename*          | finds all lines with the word in   it                                
+grep -v *'word'* *filename*       | finds all lines without the word   in it                             
+chmod ug+rw *filename*            | change file modes or Access Control Lists. In this example user and group are changed to read and write 
+chown                             | change file owner and group                                  
+history                           | a build-in command to list the past commands                     
+sudo                              |  execute a command as another user   
+su                                | substitute user identity                       
+uname                             | print the operating system name   
+set -o emacs                      | tells the shell to use Emacs commands.                         
+chmod go-rwx *file*               | changes the permission of the file                              
+chown *username* *file*           | changes the ownership of the file 
+chgrp *group* *file*              | changes the group of a file       
+fgrep *text* *filename*           | searches the text in the given     file                              
+grep -R *text* .                 | recursively searches for xyz in    all files                         
+find . -name *.py                | find all files with `.py` at the   end                               
+ps                                | list the running processes        
+kill -9 1234                      | kill the process with the id 1234 
+at                                | que commands for later execution                    
+cron                              | daemon to execute scheduled commands   
+crontab                           | manage the time table for execution commands with cron                     
+mount /dev/cdrom /mnt/cdrom       | mount a filesystem from a cd rom   to /mnt/cdrom                     
+users                             | list the logged in users                     
+who                               | display who is logged in                      
+whoami                            | print the user id                      
+dmesg                             | display the system message buffer                      
+last                              | indicate last logins of users and ttys                      
+uname                             | print operating system name                      
+date                              | prints the current date and time  
+time *command*                    | prints the sys, real and user      time                              
+shutdown -h "shut down"           | shutdown the computer                      
+ping                              | ping a host                     
+netstat                           | show network status                    
+hostname                          | print name of current host system                      
+traceroute                        | print the route packets take to network host                      
+ifconfig                          | configure network interface parameters                     
+host                              | DNS lookup utility                     
+whois                             | Internet domain name and network number directory service                      
+dig                               | DNS lookup utility                      
+wget                              | non-interactive network downloader                      
+curl                              | transfer a URL                      
+ssh                               | remote login program                      
+scp                               | remote file copy program                      
+sftp                              | secure file transfer program                      
+watch *command* | run any designated command at regular intervals 
+awk | program that you can use to select particular records in a file and perform operations on them 
+sed | stream editor used to perform basic text transformations 
+xargs | program that can be used to build and execute commands from STDIN 
+cat *some_file.json* \| python -m json.tool | quick and easy JSON validator
 
 
 ## The command man
