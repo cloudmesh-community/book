@@ -103,7 +103,7 @@ ps                                | displays a header line followed    by all pr
 sleep                             | suspends execution for an          interval of time specified in      seconds                           
 uptime                            | displays how long the system has   been running                      
 time *command*                    | times the command execution in     seconds                           
-find */ \[-name\] file-name.txt*  | searches a specified path or       directory with a given expression  that tells the find utility what   to find, if used as shown the      find utility would search the       entire drive for a file named      file-name.txt                     
+find */ \[-name\] file-name.txt*  | searches a specified path or       directory with a given expression  that tells the find utility what   to find, if used as shown the      find utility would search the       entire drive for a file named      file-name.txt
 diff                              | compares files line by line       
 hostname                          | prints the name of the current     host system                       
 which                             | locates a program file in the      users path                        
@@ -124,8 +124,8 @@ chmod go-rwx *file*               | changes the permission of the file
 chown *username* *file*           | changes the ownership of the file 
 chgrp *group* *file*              | changes the group of a file       
 fgrep *text* *filename*           | searches the text in the given     file                              
-grep -R *text* .                 | recursively searches for xyz in    all files                         
-find . -name *.py                | find all files with `.py` at the   end                               
+grep -R *text* .                  | recursively searches for xyz in    all files                         
+find . -name *.py                 | find all files with `.py` at the   end                               
 ps                                | list the running processes        
 kill -9 1234                      | kill the process with the id 1234 
 at                                | que commands for later execution                    
