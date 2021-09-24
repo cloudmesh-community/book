@@ -4,13 +4,23 @@ FINAL=$(HOME)/../pub
 
 include ../makefile.sys
 
-all: epub pdf authors
+all: epub ppdf authors
 
 epub: clean version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
-	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+	# mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+
+ppdf: epub
+	bookmanager $(NAME).yaml md
+	cd dest; sed -i 's/:cloud:/cloud/g' book.md
+	cd dest; sed -i 's/smalltable//g' book.md
+	touch ./dest/linux.tex
+	cp title-latex.md dest
+	#cd dest; pandoc -s book.md --toc --number-sections --from markdown-auto_identifiers  -o linux.tex; xelatex --interaction=nonstopmode  linux.tex
+	cd dest; pandoc -s --template ../../../latex/eisvogel --toc --number-sections --from markdown-auto_identifiers  title-latex.md book.md  -o linux.tex
+	cd dest; xelatex --interaction=nonstopmode  linux.tex
 
 pdf:
 	ebook-convert \

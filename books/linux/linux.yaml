@@ -25,7 +25,7 @@ file:
 BOOK:
   - PREFACE:
       - "{file.chapter}/version.md"
-      - "{git.credit}/disclaimer.md"
+#      - "{git.credit}/disclaimer.md"
   - INTRODUCTION:
       - "{file.chapter}/linux/linux.md"
       - "{file.chapter}/linux/perl.md"
@@ -34,6 +34,7 @@ BOOK:
       - "{file.chapter}/linux/ssh-windows.md"
       - "{file.chapter}/linux/ssh-windows.md"
       - "{file.chapter}/linux/zsh.md"
+      - "{file.chapter}/linux/recording.md"      
       - "{file.chapter}/linux/ssh-excerise.md"
   - REFERENCES:
       - "{file.chapter}/empty.md"

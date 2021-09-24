@@ -10,7 +10,7 @@ metadata:
   description: "Book creator"
   abstract: "my abstract"
   keywords: "pandoc"
-  stylesheet: "epub.css"
+  stylesheet: "epub-small.css"
   dest: "./dest/book"
   rights: (c) Gregor von Laszewski, 2018-2021
   filename: "vonLaszewski-mpi.epub"

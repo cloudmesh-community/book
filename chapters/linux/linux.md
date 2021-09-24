@@ -56,8 +56,18 @@ to explore. For more information simply type man and the name of the
 command. If you find a useful command that is missing, please add it
 with a Git pull request.
 
-.<div class="smalltable">
+hhhhhh
 
+------------------------------------------------------------------------
+ Command    | Description   |
+--------------------------------- | ---------------------------------
+man *command*                     | manual page for the *command*     
+apropos *text*                    | list all commands that have text in it  
+ls                                | Directory listing                 
+
+
+
+|------------------------------------------------------------------------|
 | Command    | Description   |
 | --------------------------------- | --------------------------------- |
 | man *command*                     | manual page for the *command*     |
@@ -160,7 +170,6 @@ with a Git pull request.
 | xargs | program that can be used to build and execute commands from STDIN |
 | cat *some_file.json* \| python -m json.tool | quick and easy JSON validator |
 
-</div>
 
 ## The command man
 
@@ -218,7 +227,7 @@ in the shell.
 
 To execute command 2 once command 1 has finished use
 
-    command1; command2
+   command1; command2
 
 To execute command 2 as soon as command 1 forwards output to stdout use
 
@@ -233,7 +242,6 @@ To execute command 1 in the background use
 These shortcuts will come in handy. Note that many overlap with emacs
 short cuts.
 
-.<div class="smalltable">
 
 |  Keys       | Description |
 |  ---------- | -------------------------------------------------------- |
@@ -249,7 +257,6 @@ short cuts.
 |  Ctrl + y   | Paste from the special clipboard |
 |  Ctrl + d   | Logout of current session, similar to exit |
 
-</div>
 
 ## bashrc, bash_profile or zprofile
 
@@ -289,8 +296,8 @@ Let us define a target called hello that prints out the string "Hello
 World".
 
 ```
-    hello:
-        @echo "Hello World"
+hello:
+    @echo "Hello World"
 ```
 
 Important to remember is that the commands after a target are not
@@ -302,8 +309,8 @@ the best features of targets is that they can depend on other targets.
 Thus, iw we define
 
 ```
-    hallo: hello
-        @echo "Hallo World"
+hallo: hello
+    @echo "Hallo World"
 ```
 
 our makefile will first execute hello and than all commands in hallo. As
@@ -312,10 +319,10 @@ you can see this can be very useful for defining simple dependencies.
 In addition we can define variables in a makefile such as
 
 ```
-    HELLO="Hello World"
+HELLO="Hello World"
 
-    hello:
-        @echo $(HELLO)
+hello:
+    @echo $(HELLO)
 ```
 
 and can use them in our text with \$ invocations.
