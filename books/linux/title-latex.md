@@ -1,15 +1,6 @@
 ---
-title: "Linux"
-author: [Gregor von Laszewski, <laszewski@gmail.com>]
-date: \today
-keywords: [Linux]
-titlepage: true
-titlepage-color: "22065e"
-titlepage-text-color: "ffffff"
-toc-own-page: true
-footnotes-pretty: true
-footer-left: "."
 header-includes:
+  - \usepackage{geometry}
   - \usepackage{fullpage}
   - \usepackage[english]{babel}
   - \usepackage[utf8]{inputenc}
@@ -19,10 +10,8 @@ header-includes:
   - \renewcommand\familydefault{\sfdefault}
   - \usepackage{fancyhdr}
   - \pagestyle{fancy}
-  - \fancyhf{}
-  - \rhead{Overleaf}
-  - \lhead{Guides and tutorials}
   - \rfoot{Page \thepage}
+  - \lhead{}  
   - \usepackage{xcolor}
   - \usepackage{mdframed}
   - \definecolor{light-gray}{gray}{0.95}

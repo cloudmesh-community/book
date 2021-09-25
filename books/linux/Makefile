@@ -22,7 +22,7 @@ ppdf:
 	cp -r ../../images .
 	cp -r ../../chapters/linux/images .
 	#cd dest; pandoc -s book.md --toc --number-sections --from markdown-auto_identifiers  -o linux.tex; sy
-	pandoc -s --toc --number-sections --from markdown-auto_identifiers  --listings title-latex.md dest/book.md  -o dest/linux.tex 
+	pandoc -s --number-sections --from markdown-auto_identifiers  --listings title-latex.md title.tex dest/book.md  -o dest/linux.tex 
 	sed -i 's/\\begin{center}\\rule{0.5\\linewidth}{0.5pt}\\end{center}/\\hrulefill/g' dest/linux.tex
 	pdflatex dest/linux.tex
 	# bibtex   dest/linux
