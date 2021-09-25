@@ -24,7 +24,8 @@ file:
   "base": "../../chapters"
 BOOK:
   - PREFACE:
-      - "{file.chapter}/version.md"
+      - "{file.chapter}/empty.md"  
+#      - "{file.chapter}/version.md"
 #      - "{git.credit}/disclaimer.md"
   - INTRODUCTION:
       - "{file.chapter}/linux/linux.md"

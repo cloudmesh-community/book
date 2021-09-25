@@ -1,8 +1,10 @@
-# Linux Shell {#sec:linux}
+# Linux Shell
+
+`{#sec:linux}`
 
 ---
 
-![](images/learning.png) **Learning Objectives**
+![Learning Objectives Image](images/learning.png) **Learning Objectives**
 
 * Be able to know the basic commands to work in a [Linux]{.index} terminal.
 * Get familiar with Linux Commands

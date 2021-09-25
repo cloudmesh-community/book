@@ -38,6 +38,14 @@ $ google-chrome /tmp/test.html
 
 ## Screencapture
 
-OSX SHIT-COMMAND - 4 Screen capture
+To capture an image in OSX, please use
 
-commandline: screencapture a.gif
+```
+OSX SHIT-COMMAND - 4
+```
+
+To do it from the commandline you can use
+
+```bash
+screencapture a.gif
+```

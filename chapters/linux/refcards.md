@@ -2,7 +2,7 @@
 
 ---
 
-![](images/learning.png) **Learning Objectives**
+![Learning Objective Image](images/learning.png) **Learning Objectives**
 
 * Obtain quickly information about technical aspects with the help of 
   reference cards.

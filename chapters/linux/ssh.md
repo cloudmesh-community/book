@@ -2,7 +2,7 @@
 
 ---
 
-![](images/learning.png) **Learning Objectives**
+![Learning Objective Image](images/learning.png) **Learning Objectives**
 
 * This is a very important sections of the book, studdy it carefully.
 * learn how to use SSH keys
@@ -176,17 +176,20 @@ In case you need to change your change passphrase, you can simply run
 and input (old and) new passphrases. There is no need to re-generate
 keys:
 
-    ssh-keygen -p
+```bash
+$ ssh-keygen -p
+```
 
 You will see the following output once you have completed that step:
 
-    Enter file in which the key is (/home/localname/.ssh/id_rsa):
-    Enter old passphrase:
-    Key has comment '/home/localname/.ssh/id_rsa'
-    Enter new passphrase (empty for no passphrase):
-    Enter same passphrase again:
-    Your identification has been saved with the new passphrase.
-
+```
+Enter file in which the key is (/home/localname/.ssh/id_rsa):
+Enter old passphrase:
+Key has comment '/home/localname/.ssh/id_rsa'
+Enter new passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved with the new passphrase.
+```
 
 ## ssh-add
 
@@ -219,7 +222,9 @@ adds the following default files if they do exist:
 To add a key you can provide the path of the key file as an
 argument to ssh-add. For example,
 
-    ssh-add ~/.ssh/id_rsa
+```bash
+$ssh-add ~/.ssh/id_rsa
+```
 
 would add the file `~/.ssh/id_rsa`
 
@@ -382,12 +387,16 @@ unencrypted protocol.
 
 If you are using the OpenSSH server:
 
-	$ vi /etc/ssh/sshd_config
+```bash
+$ vi /etc/ssh/sshd_config
+```
 
 and look and change the following:
 
-    AllowTcpForwarding = Yes
-    GatewayPorts = Yes
+```
+AllowTcpForwarding = Yes
+GatewayPorts = Yes
+```
 
 Set the `GatewaysPorts` variable only if you are going to use remote
 port forwarding (discussed later in this tutorial). Then, you need to
@@ -400,9 +409,9 @@ If you are on:
 * Linux, depending upon the init system used by your distribution, run:
 
   ```bash
-   $ sudo systemctl restart sshd
-   $ sudo service sshd restart
-   ```
+  $ sudo systemctl restart sshd
+  $ sudo service sshd restart
+  ```
 
   Note that depending on your distribution, you may have to change the
   service to ssh instead of sshd.
@@ -508,7 +517,9 @@ $ sudo vim /etc/ssh/sshd_config
 
 and restart SSH
 
-	$ sudo service ssh restart
+```bash
+$ sudo service ssh restart
+```
 
 After completing the previous steps you should be able to connect to the server
 remotely, even from your local machine. `ssh -R` first creates an SSH
@@ -538,8 +549,8 @@ proxy.
 ### ssh config
 
 Defaults and other configurations can be added to a configuration file
-that is placed in the system.  The ssh program on a host receives its configuration
- from
+that is placed in the system.  The ssh program on a host receives its
+configuration from
 
 * the command line options
 * a user-specific configuration file: `~/.ssh/config`

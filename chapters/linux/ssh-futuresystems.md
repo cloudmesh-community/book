@@ -2,7 +2,7 @@
 
 ---
 
-![](images/learning.png) **Learning Objectives**
+![Learning Objective Image](images/learning.png) **Learning Objectives**
 
 * Obtain a Future system account so you can use kubernetes or
   dockerswarm or other services offered by FutureSystems.
@@ -12,18 +12,18 @@
 Next, you need to upload the key to the portal. You must be logged into
 the portal to do so.
 
-Step 1: Log into the portal <https://portal.futuresystems.org/>
+* Step 1: Log into the portal <https://portal.futuresystems.org/>
 
 
-Step 2: Click on the "MY ACCOUNT" link.
+* Step 2: Click on the "MY ACCOUNT" link.
 
-Step 3: Click on "EDIT"
+* Step 3: Click on "EDIT"
 
-Step 4: Paste your ssh key into the box marked Public SSH Key. Use a
-text editor to open the `id_rsa.pub`. Copy the entire contents of this
-file into the ssh key field as part of your profile information. Many
-errors are introduced by users in this step as they do not paste and
-copy correctly.
+* Step 4: Paste your ssh key into the box marked Public SSH Key. Use a
+  text editor to open the `id_rsa.pub`. Copy the entire contents of
+  this file into the ssh key field as part of your profile
+  information. Many errors are introduced by users in this step as
+  they do not paste and copy correctly.
 
 If you need to add keys, use the Add another item button
 
@@ -50,9 +50,11 @@ $ ssh portalname@india.futuresystems.org
 
 The first time you ssh into a machine you will see a message like this:
 
-    The authenticity of host 'india.futuresystems.org (192.165.148.5)' cannot be established.
-    RSA key fingerprint is 11:96:de:b7:21:eb:64:92:ab:de:e0:79:f3:fb:86:dd.
-    Are you sure you want to continue connecting (yes/no)? yes
+```
+The authenticity of host 'india.futuresystems.org (192.165.148.5)' cannot be established.
+RSA key fingerprint is 11:96:de:b7:21:eb:64:92:ab:de:e0:79:f3:fb:86:dd.
+Are you sure you want to continue connecting (yes/no)? yes
+```
 
 You have to type yes and press enter. Then you will be logging into
 india. Other FutureSystem machines can be reached in the same fashion.

@@ -39,12 +39,16 @@ it and invoke `Install`.
 After the install has completed, you can use the `ssh` command. Just
 type it in the commandshell or PowerShell
 
-    PS C:\Users\gregor> ssh
+```
+PS C:\Users\gregor> ssh
+```
 
 Naturally you can now use it just as on Linux or macOS. and use it to
 login to other resources
 
-    PS C:\Users\gregor> ssh myname@computer.example.com
+```
+PS C:\Users\gregor> ssh myname@computer.example.com
+```
 
 see also the 
 [MS SSH Guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
@@ -116,37 +120,32 @@ Although PuTTY has been out there for many years and served the
 community well, it is not following the standard ssh command line syntax
 when invoked from a command shell.
 
-    putty -ssh user@host.name
+```
+putty -ssh user@host.name
+```
 
 In addition to using ssh, it also provides a copy command.
 
-    pscp user@host.name:"\"remote filename with spaces\"" local_filename
+```
+pscp user@host.name:"\"remote filename with spaces\"" local_filename
+```
 
 Putty is best known for its GUI configuration application to manage
 several machines as demonstrated next. Once you have downloaded it and
 opened PuTTYgen, you will be presented with a a key generator window
 (images provided by chameleon cloud) (see
-Figure [\[F:putty-key\]](#F:putty-key){reference-type="ref"
-reference="F:putty-key"}).
+Figure @fig:putty-key).
 
-\FIGURE{htb}
-       {0.5}
-       {images/chameleon/putty2.png}
-       {Key generation window}
-       {F:putty-key}
+![Key generation window](images/putty2.png){#fig:putty-key width=0.5} 
+
 
 To generate a key you click the *Generate* button which is blue. The
 PuTTY Key Generator (see
-Figure [\[F:putty-pass\]](#F:putty-pass){reference-type="ref"
-reference="F:putty-pass"}) will then ask you to move your mouse around
+Figure @fig:putty-pass will then ask you to move your mouse around
 the program's blank space to generate "randomness" for your key. You
 must enter a "Key passphrase" and then confirm the passphrase.
 
-\FIGURE{htb}
-       {0.5}
-       {images/chameleon/putty3.png}
-       {Key generation window}
-       {F:putty-pass}
+![Key generation window](images/putty3.png){#fig:putty-pass width=0.5}
 
 Next you need to save both the public and private keys into a file of
 your choice using the "Save public key" and "Save private key" buttons.
@@ -182,7 +181,9 @@ The installation is sufficiently explained at
 Once installed you have a command choco and you should make sure you
 have the newest version with:
 
-    choco upgrade chocolatey
+```
+choco upgrade chocolatey
+```
 
 Now you can browse packages at
 
@@ -192,7 +193,9 @@ Select the one that most suits you and satisfies your security
 requirements as well as your architecture. Lets assume you chose the
 Microsoft port, than you can install it with:
 
-    choco install openssh
+```
+choco install openssh
+```
 
 Naturally, you can also install cygwin and ptty over chocolatey. A list
 of packages can be found at
