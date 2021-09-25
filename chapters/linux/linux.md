@@ -333,7 +333,13 @@ at <http://www.cs.jhu.edu/~joanne/unixRC.pdf>.
 
 The chmod command stand for *change mode* and changes the access
 permissions for a given file system object(s). It uses the following
-syntax: `chmod [options] mode[,mode] file1 [file2…]`. The option
+syntax:
+
+```
+chmod [options] mode[,mode] file1 [file2...]
+```
+
+. The option
 parameters modify how the process runs, including what information is
 outputted to the shell:
 
@@ -348,11 +354,16 @@ outputted to the shell:
 | `--version` | Show version information |
 
 Modes specify which rights to give to which users. Potential users
-include the user who owns the file, users in the file’s Group, other
-users not in the file’s Group, and all, and are abbreviated as `u`,
+include the user who owns the file, users in the file's Group, other
+users not in the file's Group, and all, and are abbreviated as `u`,
 `g`, `o`, and `a` respectively. More than one user can be specified in
 the same command, such as
-`chmod –v ug(operator)(permissions) file.txt `.
+
+```bash
+$ chmod ug+rw file.txt
+```
+
+
 If no user is specified, the command defaults to
 `a`. Next, a `+` or `-` indicates whether permissions should be added
 or removed for the selected user(s). The permissions are as follows:
@@ -373,7 +384,7 @@ More than one permission can be also be used in the same command as
 follows:
 
 ```bash
-$ chmod –v o+rw file.txt
+$ chmod -v o+rw file.txt
 ```
 
 Multiple files can also be specified:

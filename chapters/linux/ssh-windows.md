@@ -209,7 +209,6 @@ Packages of interest include
 * jabref: choco install jabref
 * pycharm: choco install pycharm-community
 * lyx: choco install lyx
-* python 2: choco install python2
 * python 3: choco install python
 * pip: choco install pip
 * virtualbox: choco install virtualbox

@@ -8,7 +8,7 @@ all: epub ppdf authors
 
 epub: clean version
 	mkdir -p dest
-	cat $(HOME)/bib/*.bib refernces.bib > dest/all.bib
+	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
 	# mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
@@ -20,9 +20,13 @@ ppdf:
 	touch ./dest/linux.tex
 	cp title-latex.md dest
 	cp -r ../../images .
-	#cd dest; pandoc -s book.md --toc --number-sections --from markdown-auto_identifiers  -o linux.tex; xelatex --interaction=nonstopmode  linux.tex
-	pandoc -s --toc --number-sections --from markdown-auto_identifiers  dest/book.md  -o dest/linux.tex 
+	cp -r ../../chapters/linux/images .
+	#cd dest; pandoc -s book.md --toc --number-sections --from markdown-auto_identifiers  -o linux.tex; sy
+	pandoc -s --toc --number-sections --from markdown-auto_identifiers  --listings title-latex.md dest/book.md  -o dest/linux.tex 
 	sed -i 's/\\begin{center}\\rule{0.5\\linewidth}{0.5pt}\\end{center}/\\hrulefill/g' dest/linux.tex
+	pdflatex dest/linux.tex
+	# bibtex   dest/linux
+	pdflatex dest/linux.tex
 	pdflatex dest/linux.tex
 
 	# xelatex --interaction=nonstopmode  dest/linux.tex
@@ -56,5 +60,6 @@ authors:
 
 clean:
 	rm -rf dest
+	rm -f *.aux *.ou *.log
 
 include ../Makefile.bibtex
