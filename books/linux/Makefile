@@ -15,11 +15,12 @@ epub: clean version
 ppdf: 
 	bookmanager $(NAME).yaml get
 	bookmanager $(NAME).yaml md
-	sed -i 's/:cloud:/cloud/g' dest/book.md
+	sed -i 's/:cloud://g' dest/book.md
 	sed -i 's/smalltable//g' dest/book.md
 	touch ./dest/linux.tex
 	cp title-latex.md dest
 	cp -r ../../images .
+	cp -r images dest
 	cp -r ../../chapters/linux/images .
 	#cd dest; pandoc -s book.md --toc --number-sections --from markdown-auto_identifiers  -o linux.tex; sy
 	pandoc -s --number-sections --from markdown-auto_identifiers  --listings title-latex.md title.tex dest/book.md  -o dest/linux.tex 
