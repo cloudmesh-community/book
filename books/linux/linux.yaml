@@ -33,7 +33,6 @@ BOOK:
       - "{file.chapter}/linux/refcards.md"
       - "{file.chapter}/linux/ssh.md"
       - "{file.chapter}/linux/ssh-windows.md"
-      - "{file.chapter}/linux/ssh-windows.md"
       - "{file.chapter}/linux/zsh.md"
       - "{file.chapter}/linux/recording.md"      
       - "{file.chapter}/linux/ssh-excerise.md"

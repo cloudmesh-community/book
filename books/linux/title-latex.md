@@ -21,5 +21,6 @@ header-includes:
   - \let\origurl\url
   - \renewcommand{\url}[1]{\href{#1}{\color{blue}\origurl{#1}}}
   - \let\orighref\href
-  - \renewcommand{\href}[2]{\orighref{#1}{#2~\faExternalLink}}
+  - \renewcommand{\href}[2]{\orighref{#1}{\color{blue}#2~\faExternalLink}}
+  - \renewcommand{\hypertarget}[2]{#1} 
 ...

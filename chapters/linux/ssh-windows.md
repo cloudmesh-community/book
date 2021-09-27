@@ -133,19 +133,19 @@ pscp user@host.name:"\"remote filename with spaces\"" local_filename
 Putty is best known for its GUI configuration application to manage
 several machines as demonstrated next. Once you have downloaded it and
 opened PuTTYgen, you will be presented with a a key generator window
-(images provided by chameleon cloud) (see
-Figure @fig:putty-key).
+(see
+Figure @fig:puttykey).
 
-![Key generation window](images/putty2.png){#fig:putty-key width=0.5} 
+![Key generation window](images/putty2.png){#fig:puttykey width=50%}
 
 
 To generate a key you click the *Generate* button which is blue. The
 PuTTY Key Generator (see
-Figure @fig:putty-pass will then ask you to move your mouse around
+Figure @fig:puttypass will then ask you to move your mouse around
 the program's blank space to generate "randomness" for your key. You
 must enter a "Key passphrase" and then confirm the passphrase.
 
-![Key generation window](images/putty3.png){#fig:putty-pass width=0.5}
+![Key generation window](images/putty3.png){#fig:puttypass width=50%}
 
 Next you need to save both the public and private keys into a file of
 your choice using the "Save public key" and "Save private key" buttons.

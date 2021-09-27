@@ -43,13 +43,13 @@ There are many good tutorials out there that explain why one needs a
 linux shell and not just a GUI. Randomly we picked the first one that
 came up with a google query. This is not an endorsement for the material
 we point to, but could be a worth while read for someone that has no
-experience in Shell programming:
+experience in Shell programming [@www-learning-shell]:
 
 <http://linuxcommand.org/lc3_learning_the_shell.php>
 
 Certainly you are welcome to use other resources that may suite you
 best. We will however summarize in table form a number of useful
-commands that you may als find even as a RefCard.
+commands that you may als find even as a RefCard [@www-linux-cheatsheet].
 
 <http://www.cheat-sheets.org/#Linux>
 

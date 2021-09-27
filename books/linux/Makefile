@@ -12,9 +12,11 @@ epub: clean version
 	bookmanager $(NAME).yaml get
 	# mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
-ppdf: 
+ppdf: clean
 	bookmanager $(NAME).yaml get
 	bookmanager $(NAME).yaml md
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	# sed -i 's/:cloud:/\\faExternalLink/g' dest/book.md
 	sed -i 's/:cloud://g' dest/book.md
 	sed -i 's/smalltable//g' dest/book.md
 	touch ./dest/linux.tex
@@ -23,9 +25,10 @@ ppdf:
 	cp -r images dest
 	cp -r ../../chapters/linux/images .
 	#cd dest; pandoc -s book.md --toc --number-sections --from markdown-auto_identifiers  -o linux.tex; sy
-	pandoc -s --number-sections --from markdown-auto_identifiers  --listings title-latex.md title.tex dest/book.md  -o dest/linux.tex 
+	# pandoc -s  --bibliography dest/all.bib --citeproc --csl dest/book/ieee-with-url.csl --number-sections --from markdown-auto_identifiers  --listings title-latex.md title.tex dest/book.md  -o dest/linux.tex
+	pandoc -s --citeproc --from markdown-auto_identifiers --csl dest/book/ieee-with-url.csl --number-sections --listings --bibliography dest/all.bib  title-latex.md title.tex dest/book.md  -o dest/linux.tex 
 	sed -i 's/\\begin{center}\\rule{0.5\\linewidth}{0.5pt}\\end{center}/\\hrulefill/g' dest/linux.tex
-	pdflatex dest/linux.tex
+	pdflatex dest/linux.tex 
 	# bibtex   dest/linux
 	pdflatex dest/linux.tex
 	pdflatex dest/linux.tex
