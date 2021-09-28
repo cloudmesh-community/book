@@ -154,7 +154,7 @@ python.org at the same time. We often see others are giving the wrong
 installation instructions. Please also be aware that when you uninstall conda
 it is not sufficient t just delete it. You will have t make sure that you usnet
 the system variables automatically set at install time. THi includes.
-modifications on Linux and or Mac in .zprofile, .bashrc and .bash_profile. In
+modifications on Linux and or Mac in `.zprofile`, `.bashrc` and `.bash_profile`. In
 windows, PATH and other environment variables may have been modified.
 
 
@@ -204,7 +204,7 @@ You can add at the end of your `.bashrc` (ubuntu) or `.bash_profile` or
 
 
 If you like to activate it when you start a new terminal, please add
-this line to your `.bashrc` or `.bash_profile` or .zprofile` file.
+this line to your `.bashrc` or `.bash_profile` or `.zprofile` file.
 
 ```bash
 $ source ~/ENV3/bin/activate
