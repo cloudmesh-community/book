@@ -10,39 +10,42 @@
 
 ---
 
-In this section, we explain how to install python 3.8 on a computer.
+In this section, we explain how to install python 3.9 on a computer.
 Likely much of the code will work with earlier versions, but we do
 the development in Python on the newest version of Python available at
 <https://www.python.org/downloads> .
 
 ## Hardware
 
-Python does not require any special hardware. We have installed Python
+In general, using Python does not require any special hardware. We have installed Python
 not only on PC's and Laptops but also on Raspberry PI's and Lego
 Mindstorms.
 
-However, there are some things to consider. If you use many programs on
-your desktop and run them all at the same time, you will find that in
-up-to-date operating systems, you will find yourself quickly out of
-memory. This is especially true if you use editors such as PyCharm, which we highly recommend. Furthermore, as you likely have lots of disk
-access, make sure to use a fast HDD or better an SSD.
+However, there are some things to consider when developing code. If you use many programs on
+your desktop and run them all at the same time, you discover  that in
+a up-to-date operating systems you will quickly run out of
+memory. This is not really a Python issue, but caused by other programs you may run on your computer
+This is especially true if you use Web browsers and editors such as PyCharm, which we highly recommend.
+Furthermore, as you likely have lots of disk
+access, make sure to use a fast HDD we recommend using SSDs or NVMe storage.
 
 A typical modern developer PC or Laptop has *16GB RAM* and an *SSD*. You
-can certainly do Python on a $35-$55 Raspberry PI, but you probably will not
+can certainly do Python on a $35-$75 Raspberry PI, but you probably will not
 be able to run PyCharm. There are many alternative editors with less
-memory footprint available.
+memory footprint available. 
 
 ## Python 3.9
 
 Here we discuss how to install Python 3.9 or newer on your operating system. It
-is typically advantageous to use a newer version of python so you can leverage
+is typically advantageous to use a newer version of Python, so you can leverage
 the latest features. Please be aware that many operating systems come with
-older versions that may or may not work for you. YOu always can start with the
+older versions that may or may not work for you. You always can start with the
 version that is installed and if you run into issues update later.
 
 ### Python 3.9 on macOS
 
-You want a number of useful tools on your macOS. This includes git, make, and a c compiler. All this can be installed with Xcode which is
+First,  you want tio install a number of useful tools on your macOS. 
+This includes git, make, and a c compiler. All this can be installed with Xcode which is
 available from
 
 * <https://apps.apple.com/us/app/xcode/id497799835>
@@ -61,19 +64,20 @@ python3 available from the command line.
 
 ### Python 3.9 on macOS via Homebrew
 
+Homebrew provides you with an alternative installation. However we noticed that 
 Homebrew may not provide you with the newest version, so we recommend
 using the install from python.org if you can.
 
-An alternative installation is provided from Homebrew. To use this
+To use this
 install method, you need to install Homebrew first. Start the process by
-installing Python 3 using `homebrew`. Install `homebrew` using the
-instruction in their [web page](https://brew.sh/#install):
+installing first `homebrew`. Install `homebrew` using the
+instruction documented on their [web page](https://brew.sh/#install):
 
 ```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Then you should be able to install Python using:
+Now you can install Python using:
 
 ```bash
 $ brew install python
@@ -131,9 +135,8 @@ $ pip install -U pip
 
 ## Prerequisite Windows 10
 
-Python 3.9.5 can be installed on Windows 10 using:
+Python 3.9.7 can be installed on Windows 10 using:
 <https://www.python.org/downloads>
-
 
 Let us assume you choose the Web-based installer than you click on the
 file in the edge browser (make sure the account you use has
@@ -153,15 +156,15 @@ how to install 3.9.5 Python in conda or identify how to run conda and
 python.org at the same time. We often see others are giving the wrong
 installation instructions. Please also be aware that when you uninstall conda
 it is not sufficient t just delete it. You will have t make sure that you usnet
-the system variables automatically set at install time. THi includes.
+the system variables automatically set at install time. This includes.
 modifications on Linux and or Mac in `.zprofile`, `.bashrc` and `.bash_profile`. In
 windows, PATH and other environment variables may have been modified.
 
 
 ### Python in the Linux Subsystem
 
-An alternative is to use Python from within the Linux Subsystem. But
-that has some limitations, and you will need to explore how to access the
+An alternative is to use Python from within the Linux Subsystem. It
+has some limitations, and you will need to explore how to access the
 file system in the subsystem to have a smooth integration between your
 Windows host so you can, for example, use PyCharm. 
 
@@ -225,21 +228,15 @@ To make sure you have an up to date version of pip issue the command
 $ pip install pip -U
 ```
 
-## Install Python 3.9 via Anaconda 
+## Install Python 3.9 via Anaconda or Miniconda
 
 We are not recommending ether to use conda or anaconda. If you do
 so, it is your responsibility to update the information in this
-section in regards to it. 
+section in regards to it.
 
-:o2: We will check your python installation, and if
-you use conda and anaconda you need to work on completing this section.
-
-### Download `conda` installer
-
-Miniconda is recommended here. Download an installer for Windows, macOS,
+To install python with Miniconda, you will first need to install it.
+You can download an installer for Windows, macOS,
 and Linux from this page: <https://docs.conda.io/en/latest/miniconda.html>
-
-### Install `conda`
 
 Follow instructions to install `conda` for your operating systems:
 
@@ -249,11 +246,12 @@ Follow instructions to install `conda` for your operating systems:
 
 ### Install Python via `conda` 
 
-To install Python 3.9.5 in a virtual environment with conda please use 
+Once you have installed conda, you can 
+install Python 3.9 in a virtual environment with conda please use 
 
 ```bash
 $ cd ~
-$ conda create -n ENV3 python=3.9.5
+$ conda create -n ENV3 python=3.9
 $ conda activate ENV3
 $ conda install -c anaconda pip
 $ conda deactivate ENV3
@@ -282,7 +280,7 @@ $ python --version
 $ pip --version
 ```
 
-If you installed everything correctly you should see 
+If you installed everything correctly you should see the version you have such as 
 
 ```
 Python 3.9.5
