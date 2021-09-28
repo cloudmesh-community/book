@@ -213,8 +213,34 @@ this line to your `.bashrc` or `.bash_profile` or `.zprofile` file.
 $ source ~/ENV3/bin/activate
 ```
 
-so the environment is always loaded. Now you are ready to install
-Cloudmesh.
+### How to Automatically Start Git Bash in venv on Windows
+
+On Windows the Git Bash can be set to automatically use this venv by issuing these commands:
+
+```bash
+$ cd ~
+$ vi .bashrc
+```
+
+Press the `i` key and then type
+
+```vim
+source ~/ENV3/Scripts/activate
+```
+
+After typing this command press `Enter` and then press the `Esc` key
+
+```vim
+:wq
+```
+
+After typing this command press `Enter`. Now every time a new instance of Git Bash is launched,
+it will automatically be within a virtual environment. The first time Git Bash is restarted after
+configuring this, it will show an error, but this is normal.
+
+### Confirm Python is installed
+
+Now you are ready to install Cloudmesh.
 
 Check if you have the right version of Python installed with
 
