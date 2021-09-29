@@ -323,10 +323,10 @@ the `Terminal` application.
 All Linux versions come with ssh and can be used right from the
 terminal.
 
-### Using SSH on Raspberry Pi 3/4
+### Using SSH on Raspberry Pi
 
-SSH is available on Raspbian. However, to ssh into the PI you have to
-activate it via the configuration menu.
+SSH is available on RaspbianOS. However, to ssh into the PI you have to
+activate it via the configuration menu. Or use our convenient cloudmesh SDCard bruner.q 
 
 ### Accessing a Remote Machine
 
