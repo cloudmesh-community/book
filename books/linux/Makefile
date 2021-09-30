@@ -16,7 +16,7 @@ epub: clean version
 	bookmanager $(NAME).yaml epub
 	# cp dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
-ppdf: clean
+pdf: clean
 	mkdir dest
 	bookmanager $(NAME).yaml get
 	cat $(HOME)/bib/*.bib > dest/all.bib
@@ -85,7 +85,7 @@ ooo:
 
 	# xelatex --interaction=nonstopmode  dest/linux.tex
 
-pdf:
+epub-pdf:
 	ebook-convert \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf
