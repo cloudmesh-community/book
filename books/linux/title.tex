@@ -1,7 +1,11 @@
+
 \definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
-\definecolor{namecolor}{cmyk}{1,.50,0,.10} 
+\definecolor{namecolor}{cmyk}{1,.50,0,.10}
+
 \begin{titlepage}
-\newgeometry{left=7.5cm} %defines the geometry for the titlepage
+
+\newgeometry{left=7.5cm}
+
 \pagecolor{titlepagecolor}
 \noindent
 %\includegraphics[width=2cm]{logo.jpg}\\[-1em]
@@ -17,15 +21,25 @@
 \noindent
 {\huge \textsf{cloudmesh.org}}
 \vskip\baselineskip
+
+\advance\currenthour by -4
+
 \noindent
-\textsf{\today}
+\textsf{\today} \textsf{\currenttime}
+
+
+
 \end{titlepage}
 
-\restoregeometry
 \nopagecolor
+
+
+\restoregeometry
+
 
 \clearpage
 \setcounter{tocdepth}{6}
+
 \tableofcontents
 
 \clearpage

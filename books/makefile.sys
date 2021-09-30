@@ -9,3 +9,13 @@ endif
 ifeq ($(OS), windows)
 OPEN_EPUB=open
 endif
+
+USER_ID=$(shell id -u)
+GROUP_ID=$(shell id -g)
+PWD=$(shell pwd)
+CONTAINER=docker run --rm --volume "${PWD}/dest:/root" --user ${USER_ID}:${GROUP_ID} cloudmesh/bookmanager:latest
+PANDOC=${CONTAINER} pandoc
+PDFLATEX=${CONTAINER} pdflatex
+XELATEX=${CONTAINER} xelatex
+BOOKMANAGER=${CONTAINER} bookmanager
+PANDOC-NATIVE=pandoc

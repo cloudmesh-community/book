@@ -69,8 +69,8 @@ can natively execute linux commands such as `cd`, `ls` and many more. It
 also includes `ssh` and `ssh-keygen`. which you will need if you want o
 interface with Linux machines hosted in a cloud.
 
-You can also enable the Git GUI as you may be used to doing things form
-GUI's. However soon you will find out why in this class we typicaly do
+You can also enable the Git GUI as you may be used to doing things from
+GUIs. However soon you will find out why in this class we typicaly do
 not much via GUIs. However if you like them you can also integrate git
 in the Windows Explorer. This could be beneficial fo you during
 development of your project or keep up with what others do on git.
@@ -120,45 +120,45 @@ Although PuTTY has been out there for many years and served the
 community well, it is not following the standard ssh command line syntax
 when invoked from a command shell.
 
-```
-putty -ssh user@host.name
+```bash
+$ putty -ssh user@host.name
 ```
 
 In addition to using ssh, it also provides a copy command.
 
-```
-pscp user@host.name:"\"remote filename with spaces\"" local_filename
+```bash
+$ scp user@host.name:"remote filename with spaces" local_filename
 ```
 
 Putty is best known for its GUI configuration application to manage
 several machines as demonstrated next. Once you have downloaded it and
-opened PuTTYgen, you will be presented with a a key generator window
-(see
-Figure @fig:puttykey).
+opened PuTTYgen, you will be presented with a key generator window
+(see @fig:puttykey).
 
-![Key generation window](images/putty2.png){#fig:puttykey width=50%}
+![Key generation window](images/putty2.png){#fig:puttykey}
 
 
-To generate a key you click the *Generate* button which is blue. The
+To generate a key you click the `Generate` button which is blue. The
 PuTTY Key Generator (see
-Figure @fig:puttypass will then ask you to move your mouse around
-the program's blank space to generate "randomness" for your key. You
-must enter a "Key passphrase" and then confirm the passphrase.
+@fig:puttypass will then ask you to move your mouse around
+the program's blank space to generate *randomness* for your key. You
+must enter a `Key passphrase` and then confirm the passphrase.
 
-![Key generation window](images/putty3.png){#fig:puttypass width=50%}
+![Key generation window](images/putty3.png){#fig:puttypass}
 
 Next you need to save both the public and private keys into a file of
-your choice using the "Save public key" and "Save private key" buttons.
-We suggest you name something obvious like "public_key.pub" and
-"private_key" so that you can distinguish between the two.
+your choice using the `Save public key` and `Save private key` buttons.
+We suggest you name something that is based on the encryption method, such as 
+ `id_rsa.pub` and
+`id_rsa` so that you can identify them easily and use a convention that is 
+widely accepted.
 
-Before closing this window, select the entire public key and copy it
-with "Control-C". Please note that everything should be copied,
-including "ssh-rsa". This will be used when importing the key pair to
-Openstack.
-
-At this time, the public key has been created and copied. Now you can
-use the public key and upload it to systems you like to login to.
+**Tip:** In case you need to copy the public key into a different program or service,
+select the entire public key and copy it
+with `Control-C`. Please note that everything should be copied,
+including `ssh-rsa`.  At this time, the public key has been created and copied. 
+Now you can
+use the public key and paste it into a program that may need it.
 
 ## Chocolatey
 
@@ -181,7 +181,7 @@ The installation is sufficiently explained at
 Once installed you have a command choco and you should make sure you
 have the newest version with:
 
-```
+```bash
 choco upgrade chocolatey
 ```
 
@@ -193,7 +193,7 @@ Select the one that most suits you and satisfies your security
 requirements as well as your architecture. Lets assume you chose the
 Microsoft port, than you can install it with:
 
-```
+```bash
 choco install openssh
 ```
 
