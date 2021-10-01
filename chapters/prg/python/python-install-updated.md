@@ -106,7 +106,7 @@ $ sudo apt install -y libgdbm-dev libnss3-dev  libreadline-dev libffi-dev libsql
 5. After this finishes, type `cd /opt` and press Enter. Then, remember which version you read on the Python webpage (the latest version) and add it as environment variable `PV` to your terminal so we can more easily execute commands that include the version number. Type: 
   
    ```bash
-   $ PV=3.9.6
+   $ export PV=3.9.7
    $ sudo wget https://www.python.org/ftp/python/$PV/Python-$PV.tgz
    $ sudo tar xzvf Python-$PV.tgz
    $ cd Python-$PV
