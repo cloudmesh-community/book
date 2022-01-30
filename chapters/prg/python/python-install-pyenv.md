@@ -4,18 +4,23 @@
 
 ![](images/learning.png) **Learning Objectives**
 
-* Understand why we need to worry about Python 3.9 and 2.7
+* Understand why we need to worry about Python 3.10.2 and 2.7
 * Use pyenv to support both versions
 * Understand the limitations of anaconda/conda for developers
 
 ---
 
 We are living in an interesting junction point in the development of
-Python. In January 2019, it is encouraged that Python developers switch
-from python version 2.7 to python version 3.9.
+Python. Since January 2019, it is encouraged that Python developers switch
+from python version 2.7 to python version 3.10.2.
 
-However, there may be a requirement when you still need to develop code
-not only in python 3.8 but also in python 2.7. To facilitate this
+However, there may be a small number of projects that require to
+develop code not only in python 3.10.2 but also in python 2.7. This
+number will become smaller and smaller.  However pyenv can als be used
+for developing in different versions of python3. Thus this section may
+be useful for these developers also.
+
+To facilitate this
 multi-python version development, the best tool we know about capable of
 doing so is *pyenv*. We will explain you in this section how to install
 both versions with the help of pyenv.
@@ -24,7 +29,7 @@ Python is easy to install and very good instructions for most platforms
 can be found on the python.org Web page. We see two different versions:
 
 * Python 2.7.16
-* Python 3.9.5
+* Python 3.10.2
 
 To manage python modules, it is useful to have
 [pip](https://pypi.python.org/pypi/pip) package installation tool on
@@ -61,11 +66,11 @@ character at the beginning of the line, start a new terminal and see if
 the terminal shell still works. Then you can follow our instructions
 here while using an install on pyenv.
 
-## Managing 2.7 and 3.9.5 Python Versions without Pyenv
+## Managing 2.7 and 3.10.2 Python Versions without Pyenv
 
 If you need to have more than one python version installed and do not
 want or can use pyenv, we recommend you download and install python
-2.7.16 and 3.9.5 from python.org
+2.7.16 and 3.10.2 from python.org
 (<https://www.python.org/downloads/>)
 
 You can than use either `python2` or `python3` to invoke the python
@@ -99,9 +104,9 @@ Now you can install different python versions on your system such as
 python 2.7 and 3.8 with a few commands:
 
 ```bash
-$ pyenv install 3.9.5
+$ pyenv install 3.10.2
 $ pyenv install 2.7.16
-$ pyenv virtualenv 3.9.5 ENV3
+$ pyenv virtualenv 3.10.2 ENV3
 $ pyenv virtualenv 2.7.16 ENV2
 ```
 
@@ -136,7 +141,7 @@ ENV3
 ```
 
 We recommend that you do this towards the end of your file. Than lookup
-our convenience methods to set an ALIAS and install Python 3.9.5 via
+our convenience methods to set an ALIAS and install Python 3.10.2 via
 `pyenv`.
 
 Next, we recommend updating pip
@@ -168,16 +173,6 @@ sure you have xcode installed:
 ```bash
 $ xcode-select --install
 ```
-
----
-*The next tip is only televean for older systems. 
-On Mojave you will get an error that zlib is not installed. This is due to that
-the header files are not properly installed. To do this you can say*
-
-```bash
-$ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
-```
----
 
 Next install homebrew, pyenv, pyenv-virtualenv and pyenv-virtualwrapper.
 Additionally install readline and some compression tools:
@@ -258,19 +253,19 @@ $ pyenv install -l
 ```
 
 However, for us we only need to worry about python 2.7.16 and python
-3.9.5. You can now install different versions of python into your
+3.10.2. You can now install different versions of python into your
 local environment with the following commands:
 
 ```bash
 $ pyenv update
 $ pyenv install 2.7.16
-$ pyenv install 3.9.5
+$ pyenv install 3.10.2
 ```
 
 You can set the global python default version with:
 
 ```bash
-$ pyenv global 3.9.5
+$ pyenv global 3.10.2
 ```
 
 Type the following to determine which version you activated:
@@ -290,11 +285,11 @@ the following commands:
 
 ```bash
 $ pyenv virtualenv 2.7.16 ENV2
-$ pyenv virtualenv 3.9.5 ENV3
+$ pyenv virtualenv 3.10.2 ENV3
 ```
 
 In the example, ENV2 would represent python 2.7.16 while ENV3
-would represent python 3.9.5. Often it is easier to type the alias
+would represent python 3.10.2. Often it is easier to type the alias
 rather than the explicit version.
 
 #### Switching Environments
@@ -348,8 +343,8 @@ onto the ENV3 environment. Then you need to execute the following steps:
 ```bash
 $ pyenv deactivate
 $ pyenv uninstall ENV3
-$ pyenv install 3.9.5
-$ pyenv virtualenv 3.9.5 ENV3
+$ pyenv install 3.10.2
+$ pyenv virtualenv 3.10.2 ENV3
 $ ENV3
 $ pip install pip -U
 ```
@@ -470,8 +465,8 @@ pyenv versions
 system
 2.7.16
 2.7.16/envs/ENV2
-3.9.5
-3.9.5/envs/ENV3
+3.10.2
+3.10.2/envs/ENV3
 ENV2
 ENV3
 * anaconda3-4.3.1 (set by PYENV_VERSION environment variable)
@@ -498,7 +493,7 @@ with other versions, please let us know and we update this tutorial.
 
 E.Python.Install.1:
 
-> Install Python 3.9.5
+> Install Python 3.10.2
 
 E.Python.Install.1:
 

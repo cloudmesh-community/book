@@ -80,7 +80,7 @@ be ready to learn more about the various Python library modules.
 
 In order to conduct this lesson you need
 
-* A computer with Python 3.8.1
+* A computer with Python 3.10.2 ro newer
 * Familiarity with command line usage
 * A text editor such as [PyCharm](https://www.jetbrains.com/pycharm/),
   emacs, vi, or others. You should identify which works best for you

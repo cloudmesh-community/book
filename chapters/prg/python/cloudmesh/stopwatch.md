@@ -9,7 +9,6 @@ a convenient format.
 from cloudmesh.common.StopWatch import StopWatch
 from time import sleep
 
-
 StopWatch.start("test")
 sleep(1)
 StopWatch.stop("test")

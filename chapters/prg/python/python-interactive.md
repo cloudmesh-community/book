@@ -11,10 +11,9 @@ You will see something like the following:
 
 ```python
 $ python
-Python 3.9.5 (v3.9.5:0a7dcbdb13, May  3 2021, 13:17:02) 
-[Clang 6.0 (clang-600.0.57)] on darwin
+Python 3.10.2 (main, Jan 18 2022, 10:10:24) [GCC 9.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>>
+>>> 
 ```
 
 The `>>>` is the prompt used by the interpreter. This is similar to bash

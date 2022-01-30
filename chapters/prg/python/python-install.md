@@ -10,7 +10,7 @@
 
 ---
 
-In this section, we explain how to install python 3.9 on a computer.
+In this section, we explain how to install python 3.10 on a computer.
 Likely much of the code will work with earlier versions, but we do
 the development in Python on the newest version of Python available at
 <https://www.python.org/downloads> .
@@ -68,10 +68,9 @@ Homebrew provides you with an alternative installation. However we noticed that
 Homebrew may not provide you with the newest version, so we recommend
 using the install from python.org if you can.
 
-To use this
-install method, you need to install Homebrew first. Start the process by
-installing first `homebrew`. Install `homebrew` using the
-instruction documented on their [web page](https://brew.sh/#install):
+To use this install method, you need to install Homebrew first. Start
+the process by installing first `homebrew`. Install `homebrew` using
+the instruction documented on their [web page](https://brew.sh/#install):
 
 ```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -86,9 +85,18 @@ $ brew install python@3.10
 
 ## Python 3.10 on Ubuntu 20.04
 
-The default version of Python on Ubuntu 20.04 is 3.8. However, you can benefit
-from newer version while either installing them through python.org or adding 
-them as follows:
+The default version of Python on Ubuntu 20.04 may note yet be
+3.01.2. Thus we recommend to check it with
+
+```bash
+$ python3 --version
+$ python3.10 --version
+```
+
+If one ov the versions returns 3.10.2 you are all set. However if not
+we recommend you update your python version as you can benefit from
+newer version while either installing them through python.org or
+adding them as follows:
 
 
 ```bash
@@ -275,9 +283,10 @@ After typing this command press `Enter` and then press the `Esc` key
 :wq
 ```
 
-After typing this command press `Enter`. Now every time a new instance of Git Bash is launched,
-it will automatically be within a virtual environment. The first time Git Bash is restarted after
-configuring this, it will show an error, but this is normal.
+After typing this command press `Enter`. Now every time a new instance
+of Git Bash is launched, it will automatically be within a virtual
+environment. The first time Git Bash is restarted after configuring
+this, it will show an error, but this is normal.
 
 ### Confirm Python is installed
 
@@ -295,7 +304,7 @@ To make sure you have an up to date version of pip issue the command
 $ pip install pip -U
 ```
 
-## Install Python 3.9 via Anaconda or Miniconda
+## Install Python 3.10 via Anaconda or Miniconda
 
 We are not recommending ether to use conda or anaconda. If you do
 so, it is your responsibility to update the information in this
@@ -314,11 +323,11 @@ Follow instructions to install `conda` for your operating systems:
 ### Install Python via `conda` 
 
 Once you have installed conda, you can 
-install Python 3.9 in a virtual environment with conda please use 
+install Python 3.10 in a virtual environment with conda please use 
 
 ```bash
 $ cd ~
-$ conda create -n ENV3 python=3.9
+$ conda create -n ENV3 python=3.10
 $ conda activate ENV3
 $ conda install -c anaconda pip
 $ conda deactivate ENV3
@@ -350,8 +359,14 @@ $ pip --version
 If you installed everything correctly you should see the version you have such as 
 
 ```
-Python 3.9.5
-pip 21.1.2
+Python 3.10.2
+pip 21.3.1
 ```
 
 or newer.
+
+If you see an older version of pip you can updat eit with
+
+```bash
+pip install pip -U
+```

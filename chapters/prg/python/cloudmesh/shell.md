@@ -24,6 +24,20 @@ result = Shell.execute('ls', "-l -a")
 print(result)
 ```
 
+Sometimes it may just be more convenient to use a string instead of
+the array for passing the command. Here you can use
+
+```python
+from cloudmesh.common.Shell import Shell
+
+result = Shell.run('pwd')
+print(result)
+
+result = Shell.run('ls -l -a")
+print(result)
+```
+
+
 For many common commands, we provide built-in functions. For example:
 
 ```python
