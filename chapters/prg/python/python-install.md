@@ -34,15 +34,15 @@ can certainly do Python on a $35-$75 Raspberry PI, but you probably will not
 be able to run PyCharm. There are many alternative editors with less
 memory footprint available. 
 
-## Python 3.9
+## Python 3.10
 
-Here we discuss how to install Python 3.9 or newer on your operating system. It
+Here we discuss how to install Python 3.10 or newer on your operating system. It
 is typically advantageous to use a newer version of Python, so you can leverage
 the latest features. Please be aware that many operating systems come with
 older versions that may or may not work for you. You always can start with the
 version that is installed and if you run into issues update later.
 
-### Python 3.9 on macOS
+### Python 3.10 on macOS
 
 First,  you want tio install a number of useful tools on your macOS. 
 This includes git, make, and a c compiler. All this can be installed with Xcode which is
@@ -62,7 +62,7 @@ The easiest installation of Python is to use the installation from
 instructions to install the python `.pkg` file. After this install, you have
 python3 available from the command line.
 
-### Python 3.9 on macOS via Homebrew
+### Python 3.10 on macOS via Homebrew
 
 Homebrew provides you with an alternative installation. However we noticed that 
 Homebrew may not provide you with the newest version, so we recommend
@@ -80,11 +80,11 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 Now you can install Python using:
 
 ```bash
-$ brew install python
+$ brew install python@3.10
 ```
 
 
-## Python 3.9 on Ubuntu 20.04
+## Python 3.10 on Ubuntu 20.04
 
 The default version of Python on Ubuntu 20.04 is 3.8. However, you can benefit
 from newer version while either installing them through python.org or adding 
@@ -92,24 +92,25 @@ them as follows:
 
 
 ```bash
-$ sudo apt-get update
-$ sudo apt install software-properties-common
+$ sudo apt-get update -y
+$ sudo apt-get upgrade -y
+$ sudo apt install software-properties-common -y
 $ sudo add-apt-repository ppa:deadsnakes/ppa -y
-$ sudo apt-get install python3.9 python3-dev -y
+$ sudo apt-get install python3.10 python3-dev -y
 ```
 
 Now you can verify the version with 
 
 ```bash
-$ python3.9 --version
+$ python3.10 --version
 ```
 
-which should be `3.9.5` or newer.
+which should be `3.10.2` or newer.
 
 Now we will create a new virtual environment:
 
 ```bash
-$ python3.9 -m venv --without-pip ~/ENV3
+$ python3.10 -m venv --without-pip ~/ENV3
 ```
 Now you must edit the `~/.bashrc` file and add the following line at the end:
 
@@ -133,9 +134,49 @@ $ rm get-pip.py
 $ pip install -U pip
 ```
 
-## Prerequisite Windows 10
+## Python 3.10.2 on Ubuntu 20.04 from Source
 
-Python 3.9.7 can be installed on Windows 10 using:
+We can also install python from source. We have seen perfomance
+improvements in some systems when we compilled it from source compared
+to conda and other prebuild python versions. The compilation includes
+a parameter CORES that indicates how many parallel cores are use. By
+default we use all of them, however to reduce load you can for example
+use just half of them. YOu can find out the number of cores with
+
+```bash
+nproc
+```
+
+Here the full instalation script
+
+```bash
+$ PYTHON_VESRION="3.10.2"
+$ CORES=`nproc`
+$ sudo apt-get update -y
+$ sudo apt-get upgrade -y
+$ sudo apt install -y build-essential zlib1g-dev libncurses5-dev
+$ sudo apt install -y libgdbm-dev libnss3-dev libssl-dev libreadline-dev
+$ sudo apt install -y libffi-dev libsqlite3-dev wget libbz2-dev
+$ cd /tmp
+$ wget https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tgz
+$ tar -xf Python-$PYTHON_VERSION.tgz
+$ cd Python-$PYTHON_VERSION
+$ ./configure --enable-optimizations
+$ make -j $CORES
+$ sudo make altinstall
+$ python3.10 --version
+$ sudo apt install python3-pip
+$ python3.10 -m venv ~/ENV3
+$ pip install pip -U
+$ which python
+$ which pip
+```
+
+The which commands should have the directory anme ENV3 in it.
+
+## Python 3.10.2 on Windows 10
+
+Python 3.10.2 can be installed on Windows 10 using:
 <https://www.python.org/downloads>
 
 Let us assume you choose the Web-based installer than you click on the
@@ -152,10 +193,10 @@ python --version
 
 
 However, if you have installed conda for some reason, you need to read up on
-how to install 3.9.5 Python in conda or identify how to run conda and
+how to install 3.10.2 Python in conda or identify how to run conda and
 python.org at the same time. We often see others are giving the wrong
 installation instructions. Please also be aware that when you uninstall conda
-it is not sufficient t just delete it. You will have t make sure that you usnet
+it is not sufficient to just delete it. You will have to make sure that you unset
 the system variables automatically set at install time. This includes.
 modifications on Linux and or Mac in `.zprofile`, `.bashrc` and `.bash_profile`. In
 windows, PATH and other environment variables may have been modified.

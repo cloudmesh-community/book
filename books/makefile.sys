@@ -4,11 +4,13 @@ ifeq ($(OS), osx)
 OPEN_EPUB=open
 endif
 ifeq ($(OS), linux)
-OPEN_EPUB=xdg-open
+OPEN_EPUB=ebook-viewer
 endif
 ifeq ($(OS), windows)
 OPEN_EPUB=open
 endif
+
+
 
 USER_ID=$(shell id -u)
 GROUP_ID=$(shell id -g)

@@ -10,13 +10,14 @@ epub: clean version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
+	bookmanager $(NAME).yaml epub	
 	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
 draft: clean version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-draft.yaml get
-	open dest/vonLaszewski-$(NAME)-draft.epub
+	$(OPEN_EPUB) dest/vonLaszewski-$(NAME)-draft.epub
 
 
 pdf:
@@ -45,7 +46,7 @@ version:
 	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
 
 view:
-	killall Books
+	-killall Books
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME).epub
 
 authors:
