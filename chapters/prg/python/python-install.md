@@ -306,21 +306,35 @@ $ pip install pip -U
 
 ## Install Python 3.10 via Anaconda or Miniconda
 
-We are not recommending ether to use conda or anaconda. If you do
-so, it is your responsibility to update the information in this
-section in regards to it.
+We are not recommending ether to use conda or anaconda. If you do so, it is
+your responsibility to update the information in this section in regards to it.
 
-To install python with Miniconda, you will first need to install it.
-You can download an installer for Windows, macOS,
-and Linux from this page: <https://docs.conda.io/en/latest/miniconda.html>
 
-Follow instructions to install `conda` for your operating systems:
+Anaconda is a popular and large distribution of the python ecosystem frequently used by Data
+Scientists.  Unlike the other python installers, anaconda installs additional tools beyond what
+is normally considered part of python - such as the conda package management system and an
+opinionated set of preinstalled packages.  Some practitioners consider these additional package
+installs as bloat as it increases the installation footprint of python to include several
+third-party packages, which a user may not need.
+
+Miniconda, in contrast installs only what is required to execute the conda packaging system,
+allowing users to build their own anaconda distribution from scratch without the additional
+libraries.
+
+As of writing, only the conda-forge channel for anaconda supports python versions greater than
+3.10. 
+While you can change channels during install to install the latest versions of python, it is
+generally not recommended as anaconda does not guarantee that all of its libraries will work 
+properly with the community version of python.
+
+Installing anaconda is straightforward, and all it requires is for users to go through their
+guided procedures based on what OS you are using.  You can find the latest instructions at
 
 * Windows. <https://conda.io/projects/conda/en/latest/user-guide/install/windows.html>
-* macOS. <https://conda.io/projects/conda/en/latest/user-guide/install/macos.html>
+* MacOS. <https://conda.io/projects/conda/en/latest/user-guide/install/macos.html>
 * Linux. <https://conda.io/projects/conda/en/latest/user-guide/install/linux.html>
 
-### Install Python via `conda` 
+### Installing Python via `conda`
 
 Once you have installed conda, you can 
 install Python 3.10 in a virtual environment with conda please use 
@@ -331,42 +345,80 @@ $ conda create -n ENV3 python=3.10
 $ conda activate ENV3
 $ conda install -c anaconda pip
 $ conda deactivate ENV3
-```
 
-It is very important to make sure you have a newer version of pip installed.
-After you installed and created the ENV3 you need to activate it. This
-can be done with
+TODO: or is it ????
 
 ```bash
-$ conda activate ENV3
+$ conda create -n ENV3 -c conda-forge python=3.10.2 pip
 ```
 
-If you like to activate it when you start a new terminal, please add
-this line to your `.bashrc` or `.bash_profile`
+Optionally, you can omit the python version to get the latest
+community version as well.
 
-If you use zsh please add it to `.zprofile` instead.
+It is very important that you run the latest version of pip along with
+python.  Failure to do so may result in errors when installing
+packages designed to use newer versions of pip.
 
-## Version test
+### Configuring `conda` to be on the path
 
-Regardless of which version you install, you must do a version test to make
-sure you have the correct python and pip versions:
+There are many ways to place the `conda` command onto your path.  To
+prevent polluting the command line path, we choose to only expose the
+`conda` command and none of the environment's underlying binaries.
+This can be done by doing the following for each OS.
+
+#### Windows
+
+Run the following at the command line.
+```batch
+setx PATH <path_to_conda_install>\condabin;%PATH%
+```
+
+If you are using git-bash or equivalent, follow the Linux/MacOS
+instructions.
+
+#### Linux / MacOS
+
+Add the following line to your .bashrc, .bash_profile, or .zprofile
+
+```bash
+source <path_to_conda_install>/etc/profile.d/conda.sh
+```
+
+Once the above steps have been completed, you must activate your
+environment for the newly installed version of python and pip are made
+available.  You will need to run this command each time you open a new
+command window, or you can make it active by default by appending the
+line to your bash configuration located at `~/.bashrc`,
+`~/.bash_profile`, or your Zsh profile located at `~/.zprofile`.
+
+```bash
+conda activate ENV3
+```
+### Version Test
+
+Regardless of which version you install, you must do a version test to make sure you have the correct
+python and pip versions:
 
 ```bash
 $ python --version
 $ pip --version
 ```
 
-If you installed everything correctly you should see the version you have such as 
+If you installed everything correctly, you should see the below versions or newer for each tool:
 
 ```
 Python 3.10.2
 pip 21.3.1
 ```
 
-or newer.
+If you see an older version of pip, you can update it with
 
-If you see an older version of pip you can updat eit with
+```
+pip install -U pip
+```
 
-```bash
-pip install pip -U
+Or with conda,
+
+```
+conda update -c conda-forge pip
 ```
