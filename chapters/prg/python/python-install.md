@@ -334,30 +334,21 @@ guided procedures based on what OS you are using.  You can find the latest instr
 * MacOS. <https://conda.io/projects/conda/en/latest/user-guide/install/macos.html>
 * Linux. <https://conda.io/projects/conda/en/latest/user-guide/install/linux.html>
 
-### Installing Python via `conda`
+---
 
-Once you have installed conda, you can 
-install Python 3.10 in a virtual environment with conda please use 
+![](images/warning.png) **conda init**
 
-```bash
-$ cd ~
-$ conda create -n ENV3 python=3.10
-$ conda activate ENV3
-$ conda install -c anaconda pip
-$ conda deactivate ENV3
+When installing Anaconda, it is important to not add it to the path or by running
+`conda init`.  Doing either of these two steps will modify your command prompts and
+system configuration to register the `(base)` environment of anaconda by default,
+which will adversely interact with other versions of python installed outside of
+anaconda.  This can result in unexpected command execution or runtime errors.
 
-TODO: or is it ????
+Instead, later in the instructions will configure your system to only expose the
+conda command and not add any additional commands and keeping your path clear of
+any unintentional binaries.
 
-```bash
-$ conda create -n ENV3 -c conda-forge python=3.10.2 pip
-```
-
-Optionally, you can omit the python version to get the latest
-community version as well.
-
-It is very important that you run the latest version of pip along with
-python.  Failure to do so may result in errors when installing
-packages designed to use newer versions of pip.
+---
 
 ### Configuring `conda` to be on the path
 
@@ -394,6 +385,58 @@ line to your bash configuration located at `~/.bashrc`,
 ```bash
 conda activate ENV3
 ```
+
+#### Activating, Inspecting, and Deactivating Conda
+
+In following the above procedures, only the conda command will be exposed
+at the command line.  To activate our ENV3 environment, run
+
+```bash
+conda activate ENV3
+```
+
+This will augment your current command prompt to use this python environment
+and all of it's dependencies.  Your command prompt will also change to indicate
+that you are running within this environment by prepending `(ENV3)` to your
+prompt.
+
+Note that doing this will also expose any anaconda managed programs to your
+command line (such as openssl and sqlite3).  You can see details on your
+environment by running the command `conda info`.  This shows you many important
+troubleshooting details about your environment, including its name, the path
+where the environment has been configured, and key paths to conda's configuration.
+
+Additionally, you can inspect the current packages installed in the environment
+by running the command `conda list`, which will show both conda packages and python
+packages, their version and build, and the channel (or source) they were installed
+(main, conda-forge, and pypi are the most commonly seen).
+
+When you are done using this conda environment and the software packages it has
+installed, you can deactivate the environment by running
+
+```bash
+conda deactivate
+```
+
+and your shell will remove the conda environment from your current shell's path.
+
+
+### Installing Python via `conda`
+
+Once you have installed conda, you can 
+install Python 3.10 in a virtual environment with conda please use 
+
+```bash
+$ conda create -n ENV3 -c conda-forge python=3.10.2 pip
+```
+
+Optionally, you can omit the python version to get the latest
+community version as well.
+
+It is very important that you run the latest version of pip along with
+python.  Failure to do so may result in errors when installing
+packages designed to use newer versions of pip.
+
 ### Version Test
 
 Regardless of which version you install, you must do a version test to make sure you have the correct
