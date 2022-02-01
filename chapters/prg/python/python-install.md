@@ -306,33 +306,39 @@ $ pip install pip -U
 
 ## Install Python 3.10 via Anaconda or Miniconda
 
-We are not recommending ether to use conda or anaconda. If you do so, it is
-your responsibility to update the information in this section in regards to it.
+We are not recommending ether to use conda or anaconda. If you do so,
+it is your responsibility to update the information in this section in
+regards to it.
 
 
-Anaconda is a popular and large distribution of the python ecosystem frequently used by Data
-Scientists.  Unlike the other python installers, anaconda installs additional tools beyond what
-is normally considered part of python - such as the conda package management system and an
-opinionated set of preinstalled packages.  Some practitioners consider these additional package
-installs as bloat as it increases the installation footprint of python to include several
+Anaconda is a popular and large distribution of the python ecosystem
+frequently used by Data Scientists.  Unlike the other python
+installers, anaconda installs additional tools beyond what is normally
+considered part of python - such as the conda package management
+system and an opinionated set of preinstalled packages.  Some
+practitioners consider these additional package installs as bloat as
+it increases the installation footprint of python to include several
 third-party packages, which a user may not need.
 
-Miniconda, in contrast installs only what is required to execute the conda packaging system,
-allowing users to build their own anaconda distribution from scratch without the additional
-libraries.
+Miniconda, in contrast installs only what is required to execute the
+conda packaging system, allowing users to build their own anaconda
+distribution from scratch without the additional libraries.
 
-As of writing, only the conda-forge channel for anaconda supports python versions greater than
-3.10. 
-While you can change channels during install to install the latest versions of python, it is
-generally not recommended as anaconda does not guarantee that all of its libraries will work 
-properly with the community version of python.
+As of writing, only the conda-forge channel for anaconda supports
+python versions greater than 3.10.  While you can change channels
+during install to install the latest versions of python, it is
+generally not recommended as anaconda does not guarantee that all of
+its libraries will work properly with the community version of python.
 
-Installing anaconda is straightforward, and all it requires is for users to go through their
-guided procedures based on what OS you are using.  You can find the latest instructions at
+Installing anaconda is straightforward, and all it requires is for
+users to go through their guided procedures based on what OS you are
+using.  You can find the latest instructions for
 
-* Windows. <https://conda.io/projects/conda/en/latest/user-guide/install/windows.html>
-* MacOS. <https://conda.io/projects/conda/en/latest/user-guide/install/macos.html>
-* Linux. <https://conda.io/projects/conda/en/latest/user-guide/install/linux.html>
+* [Windows](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html)
+* [MacOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html)
+* [Linux](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+
+in the conda instalation quide
 
 ---
 
