@@ -26,6 +26,7 @@ BOOK:
   - PREFACE:
     - "{file.chapter}/version.md"
     - "{git.credit}/disclaimer.md"
+    - "{file.chapter}/authors.md"
   - INTRODUCTION:
     - "{file.chapter}/prg/python/python-intro.md"
   - INSTALLATION:

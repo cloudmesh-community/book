@@ -48,7 +48,14 @@ name_string = '\n> '.join(textwrap.wrap(', '.join(names),79, initial_indent="> "
 print("# Contributors")
 print()
 
-msg = """Contributors are sorted by the first letter of their combined
+msg = """This book has recieved contributions by many people.  As this book
+is part of a larger collection of material, you als may find outhors
+that have not directly contributed to this document.  As the book is
+part of a larger collection of information, it is too difficult to
+distinguish individual contributions and to check the contribution to
+this volume. 
+
+Contributors are sorted by the first letter of their combined
 Firstname and Lastname and if not available by their github ID.
 
 Please, note that the authors are identified through git logs in
