@@ -375,6 +375,24 @@ Add the following line to your .bashrc, .bash_profile, or .zprofile
 source <path_to_conda_install>/etc/profile.d/conda.sh
 ```
 
+### Installing Python via `conda`
+
+Once you have installed conda, you can  install Python 3.10 in a virtual environment
+with conda please use 
+
+```bash
+$ conda create -n ENV3 -c conda-forge python=3.10.2 pip
+```
+
+Optionally, you can omit the python version to get the latest
+community version as well.
+
+It is very important that you run the latest version of pip along with
+python.  Failure to do so may result in errors when installing
+packages designed to use newer versions of pip.
+
+#### Activating, Inspecting, and Deactivating Conda
+
 Once the above steps have been completed, you must activate your
 environment for the newly installed version of python and pip are made
 available.  You will need to run this command each time you open a new
@@ -382,14 +400,7 @@ command window, or you can make it active by default by appending the
 line to your bash configuration located at `~/.bashrc`,
 `~/.bash_profile`, or your Zsh profile located at `~/.zprofile`.
 
-```bash
-conda activate ENV3
-```
-
-#### Activating, Inspecting, and Deactivating Conda
-
-In following the above procedures, only the conda command will be exposed
-at the command line.  To activate our ENV3 environment, run
+To activate our `ENV3` environment, run
 
 ```bash
 conda activate ENV3
@@ -420,23 +431,6 @@ conda deactivate
 
 and your shell will remove the conda environment from your current shell's path.
 
-
-### Installing Python via `conda`
-
-Once you have installed conda, you can 
-install Python 3.10 in a virtual environment with conda please use 
-
-```bash
-$ conda create -n ENV3 -c conda-forge python=3.10.2 pip
-```
-
-Optionally, you can omit the python version to get the latest
-community version as well.
-
-It is very important that you run the latest version of pip along with
-python.  Failure to do so may result in errors when installing
-packages designed to use newer versions of pip.
-
 ### Version Test
 
 Regardless of which version you install, you must do a version test to make sure you have the correct
@@ -465,3 +459,4 @@ Or with conda,
 ```
 conda update -c conda-forge pip
 ```
+
