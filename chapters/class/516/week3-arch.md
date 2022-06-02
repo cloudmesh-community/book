@@ -25,7 +25,7 @@ Reading Assignments:
 
 ## Lab Activities
 
-You should have set up in the first week of the class set up python 3.8
+You should have set up in the first week of the class set up python 3.10.4
 on your computer. If you have not yet done so, please do. We recommend
 that you use python from python.org. 
 
@@ -78,7 +78,7 @@ Please provide your answers in the notebook.md file.
 * How do you find out how much space is used by your program and its
   libraries?
 
-* How do you switch between anaconda and regular python 3.8.1
+* How do you switch between anaconda and regular python 3.10.4
 
 * What is the difference between conda, miniconda, anaconda?
 

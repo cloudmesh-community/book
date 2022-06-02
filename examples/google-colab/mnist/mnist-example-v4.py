@@ -131,15 +131,15 @@ dropout = 0.45
 
 # model is a 3-layer MLP with ReLU and dropout after each layer
 model = Sequential()
-model.add(Dense(hidden_units, input_dim=input_size))
-model.add(Activation('relu'))
-model.add(Dropout(dropout))
-model.add(Dense(hidden_units))
-model.add(Activation('relu'))
-model.add(Dropout(dropout))
-model.add(Dense(num_labels))
+model.add_directory(Dense(hidden_units, input_dim=input_size))
+model.add_directory(Activation('relu'))
+model.add_directory(Dropout(dropout))
+model.add_directory(Dense(hidden_units))
+model.add_directory(Activation('relu'))
+model.add_directory(Dropout(dropout))
+model.add_directory(Dense(num_labels))
 # this is the output for one-hot vector
-model.add(Activation('softmax'))
+model.add_directory(Activation('softmax'))
 model.summary()
 plot_model(model, to_file='mlp-mnist.png', show_shapes=True)
 

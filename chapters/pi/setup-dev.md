@@ -64,14 +64,15 @@ If you want to upgrade to the latest python version you can build it from source
 as follows
 
 ```bash
+$ export VERSTION=3.10.4
 $ sudo apt-get install build-essential checkinstall
 $ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev
 $ sudo apt-get install libssl-dev libsqlite3-dev tk-dev libgdbm-dev
 $ sudo apt-get install libc6-dev libbz2-dev
 $ cd /usr/src
-$ wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
-$ sudo tar xzf Python-3.6.5.tgz
-$ cd Python-3.6.5
+$ wget https://www.python.org/ftp/python/$VERSTION/Python-$VERSION.tgz
+$ sudo tar xzf Python-$VERSION.tgz
+$ cd Python-$VERSION
 $ sudo -s
 $ bash configure
 $ make altinstall
@@ -80,7 +81,7 @@ $ make altinstall
 ## Python IDLE
 
 Click Menu -> Programming -> Python 3 (IDLE), and you'll get a new
-window called 'Python 3.6.5 Shell:'. This Shell works just like Python
+window called 'Python 3.10.4 Shell:'. This Shell works just like Python
 on the command line. Enter print("Hello World") to see the message.
 
 ## Go

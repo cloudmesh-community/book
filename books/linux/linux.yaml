@@ -22,6 +22,7 @@ file:
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
+  "mpi": "file://../../../cloudmesh-mpi/docs"
 BOOK:
 #  - PREFACE:
 #      - "{file.chapter}/empty.md"
@@ -36,5 +37,7 @@ BOOK:
       - "{file.chapter}/linux/zsh.md"
       - "{file.chapter}/linux/recording.md"
       - "{file.chapter}/linux/ssh-excerise.md"
+      - MPI:
+          - "{file.mpi}/report-mpi.md"
   - REFERENCES:
       - "{file.chapter}/empty.md"

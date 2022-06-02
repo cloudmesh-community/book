@@ -35,7 +35,7 @@ This activity serves two purposes. First, it tells us we can communicate
 with you within piazza, and second, you can introduce yourself to others
 in piazza to potentially build project or study teams.
 
-### Lab Activity Python 3.7.4
+### Lab Activity Python 3.10.4
 
 Please set up a computer on which you can do Python development. We
 recommend that you use python from <http://python.org>. We will not

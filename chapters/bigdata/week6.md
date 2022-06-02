@@ -217,16 +217,14 @@ layer.
 **|Execrcise MNIST_V1.2.0: Find out what is the use of an activation
 function. Find out why, softmax was used as the last layer.**
 
-
-
 ```python
 batch_size = 4
 hidden_units = 64
 
 model = Sequential()
-model.add(Dense(hidden_units, input_dim=input_size))
-model.add(Dense(num_labels))
-model.add(Activation('softmax'))
+model.add_directory(Dense(hidden_units, input_dim=input_size))
+model.add_directory(Dense(num_labels))
+model.add_directory(Activation('softmax'))
 model.summary()
 plot_model(model, to_file='mnist_v1.png', show_shapes=True)
 ```

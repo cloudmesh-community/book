@@ -94,7 +94,7 @@ please review and consult our Python Book. Start with the language features.
 
 * [Python for Cloud Computing, Gregor von Laszewski](https://laszewski.github.io/book/python/) [@las19python]:
 
-We typically use Python 3.8; the book may be a bit outdated in that aspect.
+We typically use Python 3.10.4; the book may be a bit outdated in that aspect.
 
 ### Setup your Computer
 
@@ -103,7 +103,7 @@ We typically use Python 3.8; the book may be a bit outdated in that aspect.
 Due: One Week
 
 Make sure you have Python set up. Read up on virtualized python
-environments as used in Python 3.8. Its super simple. Understand what
+environments as used in Python 3.10.4. Its super simple. Understand what
 the command
 
 ```bash

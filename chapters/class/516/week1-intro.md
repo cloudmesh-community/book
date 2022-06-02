@@ -99,7 +99,7 @@ with you within [Piazza](https://piazza.com/class/jzkfveoqwri3e4), and
 second, you can introduce yourself to others in Piazza to potentially
 build project or study teams.
 
-### Python 3.8
+### Python 3.10
 
 Please set up a computer on which you can do Python development. We
 recommend that you use python from <http://python.org>. We will not
@@ -116,9 +116,9 @@ The manual may have references to older versions of python. Also it could be
 that some services do not work in newer python versions yet. It will be your
 responsibility to find that out and makes sure the services you use have an
 appropriate python version. We will not accept any project targeting Python 2 or
-smaller than Python 3.7.4. You must use pip version 19.3.1 or newer. As it may
+smaller than Python 3.9.4. You must use pip version 19.3.1 or newer. As it may
 be that newer versions of Python come out during the semester, we like that you
-install the newest version. At time this note was written this is 3.8.1. If
+install the newest version. At time this note was written this is 3.10.4. If
 a newer version comes out, please install this.
 
 It may be that some cloud services may not work with that version. In that case
