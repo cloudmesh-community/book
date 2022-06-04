@@ -13,7 +13,7 @@ with bibliography management. Instead of Word helping the student it
 provided the illusion to be easier than LaTeX but when adding up the
 time spend on the paper we found that LaTeX actually saved time. This
 has been especially true with the advent of collaborative editing
-services such as sharelatex [@www-sharelatex] and
+services such as
 overleaf [@www-overleaf].
 
 In this section we provide you with a professional template that is used
@@ -115,8 +115,8 @@ Today research is done in potentially large research teams. This also
 include the writing of a document. There are multiple ways this is done
 these days and depends on the system you chose.
 
-In MSWord you can use onedrive, while for LaTeX you can use sharelatex
-and overleaf. However, in many cases the use of github is possible as
+In MSWord you can use onedrive, while for LaTeX you can use 
+overleaf. However, in many cases the use of github is possible as
 the same groups that develop the code are also familiar with github.
 Thus we provide you here also with the introduction on how to write a
 document in github while group members can contribute.
@@ -127,10 +127,6 @@ LaTeX and git:
 
 :   This option will likely safe you time as you can use jabref also for
     managing collaborative bibliographies and
-
-sharelatex:
-
-:   an online tool to write latex documents
 
 overleaf:
 

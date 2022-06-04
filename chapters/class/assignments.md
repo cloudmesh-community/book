@@ -452,8 +452,8 @@ applies:
 Report Format:
 
 :   All reports will be using the our common format. This format is not
-    the same as the ACM format, so if you use systems such as overleaf
-    or sharelatex, you need to upload it and use it there.
+    the same as the ACM format, so if you use systems such as overleaf, 
+    you need to upload it and use it there.
 
     The format for LaTeX and Word found here:
 

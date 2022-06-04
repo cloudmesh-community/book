@@ -26,5 +26,5 @@ give a good introduction of share latex and jabref
 The best way to start with a document is our template at
 
 [\[E:Documentation.1\]]{#E:Documentation.1 label="E:Documentation.1"}
-Watch the three lectures about How to write a paper, ShareLaTeX, and
+Watch the three lectures about How to write a paper, Overleaf, and
 jabref.

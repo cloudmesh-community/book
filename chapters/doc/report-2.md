@@ -54,7 +54,7 @@ and having a superior bibliography management you will save yourself
 many hours of work that you will face while fighting with Word. We got
 feedback from those that tried it and they thanked us later.
 Furthermore, in case you are in a team, you can use either git while
-collaboratively developing the LaTeX document, use sharelatex, or
+collaboratively developing the LaTeX document, use
 overleaf.
 
 However, we allow you to use word under the following conditions:
@@ -92,15 +92,15 @@ For LaTeX you will encounter a much more smooth experience.
 
 5.  Git wil be used to submit all documents.
 
-6.  You are allowed to use sharelatex or overleaf so you do not have to
+6.  You are allowed to use overleaf so you do not have to
     install LaTeX on your computer, but see 5. and the next paragraph.
 
 Whatever format you use, your final submission must be in **the class**
-git. We will not review any documents stored on sharelatex or overleaf
+git. We will not review any documents stored on overleaf
 or in any git repository not belonging to the class. Your final
 submission will include the bibliography file(s) as a separate
 document(s). All images must be placed in an images folder and submitted
-in your repository with the originals. When using sharelatex or overleaf
+in your repository with the originals. When using overleaf
 you must replicate the directory layout carefully from our template and
 include your final documents in git with a Makefile that can recreate
 the document. It is in your responsibility that this works. We will

@@ -130,34 +130,55 @@ quotes but refer to their Web page but instead copied the tables with
 a reference. Naturally we do not want to be accused of plagiarize in a
 chapter about plagiarism.
 
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 30%;
+}
+table th:nth-of-type(3) {
+    width: 30%;
+}
+</style>
+
 Table: Plagiarism [@www-plagiarism-pattern]
 
-  Name                                                           Plagiarism Type                                      Reason
-  -------------------------------------------------------------- ---------------------------------------------------- -------------------------------------------------------------------
-  [Clueless Quote](patternCluelessQuote.html)                    word-for-word                                        no quotes, no citation, no reference
-  [Crafty Cover-up](patternCraftyCoverUp.html)                   proper paraphrase but word-for-word                  also present
-  [Cunning Cover-up](patternCunningCoverUp.html)                 paraphrasing                                         no citation, no reference
-  [Deceptive Dupe](patternDeceptiveDupe.html)                    word-for-word                                        no quotes, no citation, but has reference
-  [Delinked Dupe](patternDisconnectedDupe.html)                  word-for-word                                        no reference, even though quotes and citation
-  [Devious Dupe](patternDeviousDupe.html)                        correct quote but word-for-word                      also present
-  [Dippy Dupe](patternDippyDupe.html)                            word-for-word                                        quotes missing, even though full citation and reference
-  [Disguised Dupe](patternDisguisedDupe.html)                    looks like proper para, but actually word-for-word   no quotes, no locator
-  [Double Trouble](patternDoubleTrouble.html)                    word-for-word and paraphrasing                       although has reference
-  [Linkless Loser](patternLostLoser.html)                        word-for-word                                        citation and reference lacking, although has quotes and locator
-  [Lost Locator](patternLostLocator.html)                        word-for-word                                        missing locator, although has quotes, citation, and reference
-  [Placeless Paraphrase](patternPointlessParaphrase.html)        paraphrasing                                         no reference, although citation present
-  [Severed Cite](patternSeveredCite.html)                        paraphrasing                                         reference but no citation
-  [Shirking Cite](patternShirkingCite.html)                      word-for-word                                        lacks locator and reference, although quotes and citation present
-  [Triple D--Disguised Disconnected Dupe](patternTripleD.html)   word-for-word                                        looks like proper para, but no quotes, no reference, no locator
+Name                                                           Plagiarism Type                                      Reason
+-------------------------------------------------------------- ---------------------------------------------------- ------------------------------------------
+[Clueless Quote](patternCluelessQuote.html)                    word-for-word                                        no quotes, no citation, no reference
+[Crafty Cover-up](patternCraftyCoverUp.html)                   proper paraphrase but word-for-word                  also present
+[Cunning Cover-up](patternCunningCoverUp.html)                 paraphrasing                                         no citation, no reference
+[Deceptive Dupe](patternDeceptiveDupe.html)                    word-for-word                                        no quotes, no citation, but has reference
+[Delinked Dupe](patternDisconnectedDupe.html)                  word-for-word                                        no reference, even though quotes 
+                                                                                                                    and citation
+[Devious Dupe](patternDeviousDupe.html)                        correct quote but word-for-word                      also present
+[Dippy Dupe](patternDippyDupe.html)                            word-for-word                                        quotes missing, even though full citation 
+                                                                                                                    and reference
+[Disguised Dupe](patternDisguisedDupe.html)                    looks like proper para,                              no quotes, no locator
+                                                               but actually word-for-word                          
+[Double Trouble](patternDoubleTrouble.html)                    word-for-word and paraphrasing                       although has reference
+[Linkless Loser](patternLostLoser.html)                        word-for-word                                        citation and reference lacking, although 
+                                                                                                                    has quotes and locator
+[Lost Locator](patternLostLocator.html)                        word-for-word                                        missing locator, although has quotes, 
+                                                                                                                    citation, and reference
+[Placeless Paraphrase](patternPointlessParaphrase.html)        paraphrasing                                         no reference, although citation present
+[Severed Cite](patternSeveredCite.html)                        paraphrasing                                         reference but no citation
+[Shirking Cite](patternShirkingCite.html)                      word-for-word                                        lacks locator and reference, although 
+                                                                                                                    quotes and citation present
+[Triple D--Disguised Disconnected Dupe](patternTripleD.html)   word-for-word                                        looks like proper para, but no quotes, 
+                                                                                                                    no reference, no locator
 
 
-  Table: Three patterns of non-plagiarism [@www-plagiarism-pattern]
+Table: Three patterns of non-plagiarism [@www-plagiarism-pattern]
 
-  Name Type Description
-  ------------------------------------------------------- ---------------- -------------------------------------------------------------------------------------------------------------------------
-  [Correct Quote](patternCorrectQuote.html)               non-plagiarism   takes another's words verbatim and acknowledges with quotation marks, full in-text citation with locator, and reference
-  [Proper Paraphrase](patternProperParaphrase.html)       non-plagiarism   summarizes another's words and acknowledges with in-text citation and reference
-  [Parroted Paraphrase](patternMindlessParaphrase.html)   non-plagiarism   appears to be paraphrasing, and technically may not be plagiarism ...
+Name Type Description
+------------------------------------------------------- ---------------- -------------------------------------------------------------------------------------------------------------------------
+[Correct Quote](patternCorrectQuote.html)               non-plagiarism   takes another's words verbatim and acknowledges with quotation marks, 
+                                                                         full in-text citation with locator, and reference
+[Proper Paraphrase](patternProperParaphrase.html)       non-plagiarism   summarizes another's words and acknowledges with in-text citation 
+                                                                         and reference
+[Parroted Paraphrase](patternMindlessParaphrase.html)   non-plagiarism   appears to be paraphrasing, and technically may not be plagiarism ...
 
 
 ## Citation Styles

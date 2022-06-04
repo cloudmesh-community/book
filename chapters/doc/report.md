@@ -92,7 +92,7 @@ projects. This allows you to develop the report collaboratively via
 github.com.  Learning how to do this properly is part of the class
 goals. The rule is commit and pull frequently. The reason we want you
 to use git directly is also to prepare you for parallel code
-development. Thus we do not encourage using of sharelatex and
+development. Thus we do not encourage using of
 overleaf. Instead we recommend you use git directly and communicate
 with each other in case yo work in a team.
 

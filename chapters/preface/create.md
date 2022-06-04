@@ -40,7 +40,7 @@ First, you need to download the repository:
 
 ```bash
 $ git clone https://github.com/cloudmesh-community/book.git
-cd book
+$ cd book
 ```
 
 To open an interactive shell into the image, you say

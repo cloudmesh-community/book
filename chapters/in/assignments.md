@@ -959,7 +959,7 @@ Learning Outcome:
 **Linux Foundation Project Summary** Go to the Web Page of the Linux
 Foundation, pick a projects (the TAs may randomly assign it for you).
 For the project write within one week a 1-page summary using our Paper
-format. We recommend that you use sharelatex. Please use
+format. We recommend that you use overleaf. Please use
 \<iuusername\>\@iu.edu as login.
 
 The link for the project is located at
@@ -969,13 +969,13 @@ resources. Focus on the Project, you only have one back to write. Images
 , references, and tables to not count towards the one page. All images
 will be placed at the end of the paper by our template. You can write in
 a group, but each member must be lead on one paper. You can use
-sharelatex to write the paper collaboratively.
+overleaf to write the paper collaboratively.
 
 Learning outcomes:
 
 -   Learn about open source linux projects
 
--   Learn how to use sharelatex
+-   Learn how to use overleaf
 
 -   Learn how easy it is to write a paper in latex while using our
     template
@@ -989,7 +989,7 @@ Learning outcomes:
 
 -   Learn from others
 
--   Learn how to use sharelatex
+-   Learn how to use overleaf
 
 -   Learn how easy it is to write a paper in latex while using our
     template
