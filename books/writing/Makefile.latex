@@ -1,0 +1,116 @@
+NAME=writing
+OPTIONS=--filter=pandoc-include --filter=pandoc-xnos
+USER_ID=$(shell id -u)
+GROUP_ID=$(shell id -g)
+PWD=$(shell pwd)
+PANDOC=docker run --rm --volume "${PWD}/..:/data" --user ${USER_ID}:${GROUP_ID}
+PANDOC-NATIVE=pandoc
+HOME= $(realpath ../../..)
+TARGET=vonLaszewski-writing-latex
+
+CHAPTERS=latex/title.md dest/book.md
+
+define banner
+	@echo
+	@echo "############################################################"
+	@echo "# $(1) "
+	@echo "############################################################"
+endef
+
+
+
+.PHONY: clean pdf
+
+all: install pdf clean
+
+install:
+	pip install cyberaide-bookmanager
+
+pdf:
+	$(call banner, "CREATE ${NAME} PDF DOCUMENT")
+	${PANDOC-NATIVE}  -s --toc \
+        --filter pandoc-crossref \
+    	-M "crossrefYaml=./latex/pandoc-crossref-config.yaml" \
+        --indented-code-classes=bash,python,yaml   \
+        --include-in-header latex/listings-setup.tex \
+		-t latex -V geometry:margin=1in --number-sections \
+		--listings \
+        --citeproc --metadata link-citations=true \
+    	--csl=/home/green/Desktop/cm/book/books/writing/dest/book/ieee-with-url.csl \
+		--template eisvogel \
+		--bibliography="dest/all.bib" \
+		latex/metadata.yaml \
+		${CHAPTERS} \
+		-o tmp.tex
+	python -c 'print(open("tmp.tex").read().replace("{:cloud:}","{\\faGithub}").replace(":o2:","\\faBug").replace("\\lstinline!\\faBug!",":o2:"))' > tmp1.tex
+	mv tmp1.tex ${TARGET}.tex
+	pdflatex ${TARGET}.tex
+	bibtex ${TARGET}.tex
+	pdflatex ${TARGET}.tex
+	pdflatex ${TARGET}.tex
+	mv ${TARGET}.pdf ${HOME}/doc/${TARGET}.pdf
+	gopen ${HOME}/doc/${TARGET}.pdf
+
+#\usepackage{halloweenmath}
+
+cover:
+	bookmanager format/mpi.yaml cover
+
+
+epub-mpi: cover
+	$(call banner, "CREATE MPI EPUB DOCUMENT")
+	${PANDOC} \
+		cloudmesh/pandoc -s \
+		--toc \
+		--number-sections \
+		chapters/metadata-mpi.yaml tmp-3.md \
+		-o ../docs/report-mpi.epub \
+		--css format/epub.css \
+		--epub-cover-image=dest/book/cover.png
+	rm -rf dest
+
+shell:
+	${PANDOC} -it -u root --entrypoint bash cloudmesh/pandoc:latest
+
+image:
+	docker build -t cloudmesh/pandoc:latest .
+
+clean:
+	@rm -f *.toc *.aux *.log rm tmp-?.md
+
+
+##### TO GEBERATE NATIVELY
+
+native: md-native pdf-native
+
+md-native:
+	pandoc ${OPTIONS} chapters/report-mpi.md -o tmp-1.md
+	pandoc ${OPTIONS} tmp-1.md  -o tmp-2.md
+	pandoc ${OPTIONS} tmp-2.md  -o tmp-3.md
+	pandoc --number-sections chapters/title-mpi.md tmp-3.md -o ../docs/report-mpi.md
+
+
+pdf-native: md-native
+	pandoc -s \
+                --include-in-header listings-setup.tex \
+		-t latex -V geometry:margin=1in --number-sections \
+                --listings \
+		--toc chapters/metadata-mpi.yaml \
+		../docs/report-mpi.md -o report-mpi.pdf
+
+native-pdf-mpi: md-mpi
+	pandoc title-latex.md tmp-3.md -o ../docs/report-mpi.pdf --template ./format/eisvogel/eisvogel --listings --number-sections --csl=format/ieee-with-url.csl --citeproc --bibliography references.bib
+
+
+
+epub-native:
+	$(call banner, "CREATE MPI EPUB DOCUMENT")
+	${PANDOC-NATIVE} \
+		--verbose \
+		-s \
+		--toc \
+		--number-sections \
+		chapters/metadata-mpi.yaml tmp-3.md \
+		-o ../docs/report-mpi.epub \
+		--css format/epub.css
+

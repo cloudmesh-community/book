@@ -4,18 +4,32 @@ FINAL=$(HOME)/../pub
 
 include ../makefile.sys
 
-all: epub pdf
+.PHONY: latex
 
-epub: clean version authors
+all: epub pdf authors
+
+latex: epub
+	make -f Makefile.latex pdf
+
+epub: clean version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
+	bookmanager $(NAME).yaml epub
 	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+
+draft: clean version
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	bookmanager $(NAME)-draft.yaml get
+	$(OPEN_EPUB) dest/vonLaszewski-$(NAME)-draft.epub
+
 
 pdf:
 	ebook-convert \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf
+
 
 dest: clean fonts version
 	mkdir -p dest
@@ -25,6 +39,10 @@ dest: clean fonts version
 	  dest/vonLaszewski-$(NAME).epub \
 	  dest/vonLaszewski-$(NAME).pdf
 
+publish:
+	cd $(FINAL); git commit -m "update python book" \
+	  docs/vonLaszewski-$(NAME).epub \
+	  docs/vonLaszewski-$(NAME).pdf; git push
 bib:
 	mkdir -p dest
 	cp $(HOME)/bib/*.bib dest
@@ -42,3 +60,5 @@ authors:
 clean:
 
 	rm -rf dest
+
+include ../Makefile.bibtex
