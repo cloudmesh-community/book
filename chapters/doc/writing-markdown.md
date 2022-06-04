@@ -60,11 +60,7 @@ A template for such a section is provided at
 
 <https://github.com/cloudmesh-community/proceedings-fa18/tree/master/paper>
 
-The second format is the format for a report which is provided at
-
-<ttps://github.com/cloudmesh-community/proceedings-fa18/tree/master/report>
-
-and you will be using for your project report. To use them you must
+To use this template you must
 copy the md files precisely as a raw file and not just copy and paste
 from the rendered github output.  We provide in the markdown section
 presice documentation on how to add images, citations and references.

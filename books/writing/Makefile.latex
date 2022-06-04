@@ -6,7 +6,7 @@ PWD=$(shell pwd)
 PANDOC=docker run --rm --volume "${PWD}/..:/data" --user ${USER_ID}:${GROUP_ID}
 PANDOC-NATIVE=pandoc
 HOME= $(realpath ../../..)
-TARGET=vonLaszewski-writing-latex
+TARGET=vonLaszewski-writing
 
 CHAPTERS=latex/title.md dest/book.md
 
@@ -45,7 +45,7 @@ pdf:
 	python -c 'print(open("tmp.tex").read().replace("{:cloud:}","{\\faGithub}").replace(":o2:","\\faBug").replace("\\lstinline!\\faBug!",":o2:"))' > tmp1.tex
 	mv tmp1.tex ${TARGET}.tex
 	pdflatex ${TARGET}.tex
-	bibtex ${TARGET}.tex
+	# bibtex ${TARGET}
 	pdflatex ${TARGET}.tex
 	pdflatex ${TARGET}.tex
 	mv ${TARGET}.pdf ${HOME}/doc/${TARGET}.pdf

@@ -212,7 +212,7 @@ x   y   z
 --- --- ---
 1   2   3
 4   5   42
-```
+--- --- ---
 
 As usual, make sure the label is unique. When compiling, it results in
 an error if labels are not unique. Additionally, there are several md

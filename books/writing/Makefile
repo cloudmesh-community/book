@@ -6,10 +6,12 @@ include ../makefile.sys
 
 .PHONY: latex
 
-all: epub pdf authors
 
 latex: epub
 	make -f Makefile.latex pdf
+
+#all: epub pdf authors
+all: epub authors
 
 epub: clean version
 	mkdir -p dest
@@ -48,7 +50,10 @@ bib:
 	cp $(HOME)/bib/*.bib dest
 
 version:
-	TZ=":US/Eastern"; date > $(HOME)/chapters/version.md
+	echo "# Version" >  $(HOME)/chapters/version.md
+	echo "" >>  $(HOME)/chapters/version.md
+	TZ=":US/Eastern"; date >> $(HOME)/chapters/version.md
+	echo "" >>  $(HOME)/chapters/version.md
 
 view:
 	-killall Books

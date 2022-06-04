@@ -24,7 +24,7 @@ file:
   "base": "../../chapters"
 BOOK:
   - PREFACE:
-      - "{file.chapter}/version.md"
+      - "{file.chapter}/doc/bugs.md"
       - "{file.chapter}/preface/create.md"
       - "{file.chapter}/preface/reader.md"
       - "{file.chapter}/preface/notation.md"
