@@ -72,7 +72,7 @@ all:
 	${CONVERT} --file=${BASE}/python-docopts.md  --tags="python" ${AUTHOR} --d=${DEST}/python/libraries --w=28 \
 		--url=${URL}/prg/python/python-docopts.md
 	${CONVERT} --file=${BASE}/opencv/opencv.md  --tags="python" ${AUTHOR} --d=${DEST}/python/libraries --w=29 \
-		--url=${URL}/prg/python/python-opencv.md
+		--url=${URL}/prg/python/opencv/python-opencv.md
 	${CONVERT} --file=${BASE}/opencv/secchi.md  --tags="python" ${AUTHOR} --d=${DEST}/python/libraries --w=30 \
 		--url=${URL}/prg/python/opencv/secchi.md
 	# - DATA:

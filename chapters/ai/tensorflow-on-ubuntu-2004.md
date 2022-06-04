@@ -1,13 +1,15 @@
 # Tensorflwow on Ubuntu 20.04
 
-We describe how to install tensorflow on Ubuntu 20.04. As of August 7th there is no officially released 
-version of tensorflow for Ubuntu 20.04. We describe how you can achieve it with little effort.
+We describe how to install tensorflow on Ubuntu 20.04. As of August 7th there
+is no officially released version of tensorflow for Ubuntu 20.04. We describe
+how you can achieve it with little effort.
 
 If you have improvements to this install, please create a pull request.
 
 First, make sure you have an up to date Ubuntu 20.04.
 
-Next, make sure you have created a propper python 3 virtual env as to not interfere with your system python.
+Next, make sure you have created a propper python 3 virtual env as to not
+interfere with your system python.
 
 ```
 python3 -m venv ~/ENV3
@@ -16,8 +18,8 @@ source ~/ENV38/bin/activate
 ```
 
 
-Now go to the Nvidia Web page and download CudNN 7.6.5 tgz file. You will need to create a an Account to log in.
-Than you can download the file from:
+Now go to the Nvidia Web page and download CudNN 7.6.5 tgz file. You will need
+to create a an Account to log in. Than you can download the file from:
 
 ```
 mkdir tmp
