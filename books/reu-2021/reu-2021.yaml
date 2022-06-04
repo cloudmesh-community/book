@@ -1,0 +1,31 @@
+---
+metadata:
+  image: "cover.png"
+  title: "Proceedings 2021 FAMU REU"
+  subtitle: "supported by Cybertraining-DSC"
+  author: "Gregor von Laszewski,\nYohn Jairo Parra Bautista,\nCarlos Theran, Geoffrey C. Fox\nRichard Alo, Byron Greene"
+  subauthor: "Editors"
+  email: "Contact: laszewski@gmail.com"
+  url: "https://cybertraining-dsc.github.io/docs/pub/reu2021.pdf"
+  description: "REU 2021 Project reports"
+  abstract: "The project reports from the 2021 REU"
+  keywords: "REU, AI, Cloud"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-reu-2021.epub"
+  rights: (c) Gregor von Laszewski, 2021
+git:
+  "community": "https://raw.githubusercontent.com/cloudmesh-community"
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/main/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/main/bookmanager/template"
+file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/main/chapters"
+  "base": "../../chapters"
+BOOK:
+  - PREFACE:
+    - "{file.chapter}/version.md"
+    - "{git.credit}/disclaimer.md"
+  - REFERENCES:
+    - "{file.chapter}/empty.md"

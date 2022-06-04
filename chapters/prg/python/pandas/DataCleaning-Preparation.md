@@ -1,13 +1,17 @@
-
 # Data Cleaning and Preparation
-### Resources:
+
+### Resources
+
 Chapter 7 in 'Python for Data Analysis' by Wes McKinney (2017, O'Reilly)
+
 * https://github.com/wesm/pydata-book
 
 Chapter 3 in 'Python Data Science Handbook' by Jake VanderPlas (2016, O'Reilly)
+
 * https://jakevdp.github.io/PythonDataScienceHandbook/
 
 ## Dataset: 2015 NSDUH
+
 * National Survey on Drug Abuse and Health (NSDUH) 2015
 * Substance Abuse and Mental Health Services Administration
 * Center for Behavioral Health Statistics and Quality, October 27, 2016
@@ -15,6 +19,7 @@ Chapter 3 in 'Python Data Science Handbook' by Jake VanderPlas (2016, O'Reilly)
 
 
 ## Step1: Load the data
+
 * Import python modules
 * load data file and save as DataFrame object
 * Subset dataframe by column

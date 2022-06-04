@@ -1,0 +1,31 @@
+---
+metadata:
+  image: "cover.png"
+  title: "2021 AI First Engineering"
+  subtitle: "Proceedings"
+  author: "Geoffrey C. Fox\nGregor von Laszewski\n"
+  subauthor: "Editors"
+  email: "Contact: laszewski@gmail.com"
+  url: "https://cybertraining-dsc.github.io/pub/docs/ai2021.pdf"
+  description: "2021 Project reports"
+  abstract: "The project reports from 2021"
+  keywords: "AI, Cloud"
+  stylesheet: "epub.css"
+  dest: "./dest/book"
+  filename: "vonLaszewski-ai-first-2021.epub"
+  rights: (c) Gregor von Laszewski, 2021
+git:
+  "community": "https://raw.githubusercontent.com/cloudmesh-community"
+  "book": "https://raw.githubusercontent.com/cloudmesh-community/book/main/chapters"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/main/bookmanager/template"
+file:
+  "bookmanager": "file://../../bookmanager/bookmanager/template"
+  "chapter": "file://../../chapters"
+  "github": "https://github.com/cloudmesh-community/book/blob/main/chapters"
+  "base": "../../chapters"
+BOOK:
+  - PREFACE:
+    - "{file.chapter}/version.md"
+    - "{git.credit}/disclaimer.md"
+  - REFERENCES:
+    - "{file.chapter}/empty.md"
