@@ -48,8 +48,8 @@ pdf:
 	# bibtex ${TARGET}
 	pdflatex ${TARGET}.tex
 	pdflatex ${TARGET}.tex
-	mv ${TARGET}.pdf ${HOME}/doc/${TARGET}.pdf
-	gopen ${HOME}/doc/${TARGET}.pdf
+	mv ${TARGET}.pdf ${HOME}/pub/docs/${TARGET}.pdf
+	gopen ${HOME}/pub/docs/${TARGET}.pdf
 
 #\usepackage{halloweenmath}
 

@@ -8,7 +8,5 @@ header-includes: |
     \hypersetup{colorlinks,linkcolor=blue,urlcolor=blue}
     \newtcolorbox{myquote}{colback=gray!5!white,colframe=gray!75!black}
     \renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
-abstract: |
-	  A booklet about how to use markdown to write scientific papers and reports.
-	  For more information, please contact: <laszewski@gmail.com>
+abstract: ""
 ---

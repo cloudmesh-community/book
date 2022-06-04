@@ -510,7 +510,7 @@ $else$
 \usepackage{etoolbox}
 \makeatletter
 \providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+  \apptocmd{\@title}{\par {\tiny #1 \par}}{}{}
 }
 \makeatother
 $endif$
