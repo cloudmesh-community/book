@@ -1,7 +1,7 @@
 ---
 metadata:
   image: "cover.png"
-  title: "Class Communication"
+  title: "Open Surce Project Communication"
   subtitle: "Introduction to GitHub"
   author: "Gregor von Laszewski"
   subauthor: "Editor"
@@ -23,9 +23,11 @@ file:
   "chapter": "file://../../chapters"
   "github": "https://github.com/cloudmesh-community/book/blob/master/chapters"
   "base": "../../chapters"
+  "mpi": "https://raw.githubusercontent.com/cloudmesh/cloudmesh-mpi/main/docs"
 BOOK:
   - COMMUNICATION:
     - "{file.chapter}//doc/communicate.md"
+    - "{file.mpi}//report-group.md"
     # - "{file.chapter}//doc/piazza.md"
     - "{file.chapter}//git/github.md"
     - "{file.chapter}//preface/git.md"
