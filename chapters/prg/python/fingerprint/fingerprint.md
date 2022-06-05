@@ -588,7 +588,7 @@ print('|Gallery|=', len(gallery))
 
 ```
 Generating samples = 4 = 400 CPU times: user 2 ms, sys: 0 ns, total: 2
-ms Wall time: 993 µs
+ms Wall time: 993 micros
 ```
 
 We can now compute the matching scores between the probe and gallery

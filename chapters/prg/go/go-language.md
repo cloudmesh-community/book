@@ -40,7 +40,7 @@ Making a program to be able to run multiple tasks simultaneously is known as con
 ### GoRoutines (execution)
 
 A GoRoutine in the Go programming language is a lightweight thread
-that is managed by Go runtime. If you just put ‘go’ before a function,
+that is managed by Go runtime. If you just put `go` before a function,
 it means that it will execute concurrently with the rest of the code.
 
 To create a goroutine we use the keyword go followed by a function invocation:

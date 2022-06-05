@@ -388,7 +388,7 @@ University policies.
 * SaaS - SaaS with REST
 
 Evaluation Paper1: Create a paper about a cloud technology with our give class template in the
-git repository. If a paper is plagiarized you will receive an ‘‘F’’ and it is reported based on
+git repository. If a paper is plagiarized you will receive an `F` and it is reported based on
 University policies. The paper is in a directory called paper1. All images are in the directory
 paper1/images, the report is in report.tex, the content is in content.tex. It follows the template
 we provided. Submission of report.pdf is not allowed. We will create the report and check

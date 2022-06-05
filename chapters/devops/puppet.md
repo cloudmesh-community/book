@@ -346,7 +346,7 @@ Connecting to downloads.puppetlabs.com (downloads.puppetlabs.com)
 |2600:9000:201a:b800:10:d91b:7380:93a1|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 3139 (3.1K) [binary/octet-stream]
-Saving to: ‘STDOUT’
+Saving to: 'STDOUT'
 
 -                   100%[===================>]   3.07K  --.-KB/s    in 0s
 

@@ -270,7 +270,7 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
 
 ## Creating Training and Testing datasets
 
-Training set includes the set of input examples that the model will be fit into or trained on by adjusting the parameters.
+Training set includes the set of input examples that the model will be fit into or trained on by adjusting the parameters.
 Testing dataset is critical to test the generalizability of the model . By using this set, we can get the working accuracy of our model.
 
 Testing set should not be exposed to model unless model training has not been completed. This way the results from testing will be more reliable.
@@ -416,7 +416,7 @@ results
 
 ### Support Vector Machines
 
-SVM is a supervised ML technique and used for pattern recognition and classification problems when your data has exactly two classes.
+SVM is a supervised ML technique and used for pattern recognition and classification problems when your data has exactly two classes.
 Its popular in text classification problems.
 
 Few cases where SVM can be used is

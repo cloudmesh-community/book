@@ -148,7 +148,7 @@ $ mongodb.service - An object/document-oriented database
   Main PID: 2312 (mongod)
      Tasks: 23 (limit: 1153)
     CGroup: /system.slice/mongodb.service
-           └─2312 /usr/bin/mongod --unixSocketPrefix=/run/mongodb --config /etc/mongodb.conf
+           - 2312 /usr/bin/mongod --unixSocketPrefix=/run/mongodb --config /etc/mongodb.conf
 ```
 
 To verify the configuration, more specifically the installed version, server,

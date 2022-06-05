@@ -8,7 +8,7 @@ metadata:
   email: "laszewski@gmail.com"
   url: "https://cloudmesh-community.github.io/pub/vonLaszewski-python.epub"
   description: "Book creator"
-  abstract: "my abstract"
+  abstract: ""
   keywords: "pandoc"
   stylesheet: "epub.css"
   dest: "./dest/book"

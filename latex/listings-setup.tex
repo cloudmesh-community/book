@@ -1,0 +1,24 @@
+\usepackage{listings}
+\newcommand{\passthrough}[1]{#1}
+\usepackage{xpatch,realboxes}
+\usepackage{xcolor}
+\definecolor{Light}{HTML}{F4F4F4}
+
+\lstset{
+    basicstyle=\ttfamily,
+    extendedchars=true
+    numbers=left,
+    numberstyle=\tiny\ttfamily,
+    backgroundcolor=\color[RGB]{240,240,240},
+    showstringspaces=false,
+    tabsize=2,
+    columns=fixed,
+    frame=trbl,
+    % frameround=tttt,
+    framesep=7pt,
+    breaklines=true, postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
+
+\makeatletter
+\xpretocmd\lstinline{\Colorbox{Light}\bgroup\appto\lst@DeInit{\egroup}}{}{}
+\makeatother

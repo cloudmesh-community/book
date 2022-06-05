@@ -22,7 +22,7 @@ done from unix shell or cmd line. In this case we are connecting to a
 database named student_db.
 
 ```python
-from mongo engine import * connect (‘student_db’)
+from mongo engine import * connect ('student_db')
 ```
 
 If mongodb is running on a port different from default port , port

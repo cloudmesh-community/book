@@ -217,8 +217,8 @@ permissions.  (see @fig:aws-lambda-policy)
 ![Policy](images/aws_lambda_4.png){#fig:aws-lambda-policy}
 
 Step 9: For Memory, 128 megabytes is more than enough for our simple
-function. As for the 3 second timeout, this means that — should the
-function not return within 3 seconds - AWS will shut it down and
+function. As for the 3 second timeout, this means that should the
+function not return within 3 seconds AWS will shut it down and
 return an error. Three seconds is also more than enough. Leave the
 rest of the advanced settings unchanged (see @fig:aws-lambda-settings).
 

@@ -281,7 +281,7 @@ Process 23454: Hello David!
 Consider the `Pool` class as a pool of worker processes. There are
 several ways for assigning jobs to the `Pool` class and we will
 introduce the most important ones in this section. These methods are
-categorized as `blocking` or `non-blocking. The former means that
+categorized as `blocking` or `non-blocking`. The former means that
 after calling the API, it blocks the thread/process until it has the
 result or answer ready and the control returns only when the call
 completes. In the `non-blockin` on the other hand, the control returns
