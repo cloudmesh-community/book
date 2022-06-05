@@ -269,7 +269,7 @@ In case you are allowed to use word The following applies in addition
 
 7.  Make sure you use .docx and not .doc
 
-If you have other things to add, send them via piazza and we will add
+If you have other things to add, send them via slack and we will add
 them here.
 
 README.md

@@ -2,18 +2,19 @@
 metadata:
   image: "cover.png"
   title: "Class Communication"
-  subtitle: ""
+  subtitle: "Introduction to GitHub"
   author: "Gregor von Laszewski"
   subauthor: "Editor"
   email: "laszewski@gmail.com"
   url: "https://cloudmesh-community.github.io/pub/vonlaszewski-communicate.epub"
   description: "Practical information to communicate in the class"
-  abstract: "Practical information to communicate in the class"
+  abstract: ""
   keywords: "communication"
   stylesheet: "epub.css"
   dest: "./dest/book"
   filename: "vonLaszewski-communicate.epub"
   rights: (c) Gregor von Laszewski, 2018, 2019
+  date: 04 June, 2022
 git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
@@ -25,7 +26,7 @@ file:
 BOOK:
   - COMMUNICATION:
     - "{file.chapter}//doc/communicate.md"
-    - "{file.chapter}//doc/piazza.md"
+    # - "{file.chapter}//doc/piazza.md"
     - "{file.chapter}//git/github.md"
     - "{file.chapter}//preface/git.md"
   - PRESENTATIONS:

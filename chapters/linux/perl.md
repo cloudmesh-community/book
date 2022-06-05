@@ -15,7 +15,7 @@ perl -lpe 's/\s*$//' FILENAME
 Replace wrong quote
 
 ```perl
-perl -i -p -e "s/’/'/g;"  *.md
+perl -i -p -e "s/'/'/g;"  *.md
 ```
 
 Remove `^M` from file

@@ -37,7 +37,5 @@ BOOK:
       - "{file.chapter}/linux/zsh.md"
       - "{file.chapter}/linux/recording.md"
       - "{file.chapter}/linux/ssh-excerise.md"
-      - MPI:
-          - "{file.mpi}/report-mpi.md"
   - REFERENCES:
       - "{file.chapter}/empty.md"

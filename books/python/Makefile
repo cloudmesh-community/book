@@ -15,7 +15,7 @@ epub: clean version
 
 p: epub
 	bookmanager $(NAME).yaml pdf
-	#mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+	cp dest/vonLaszewski-$(NAME).pdf $(FINAL)/docs
 
 
 draft: clean version

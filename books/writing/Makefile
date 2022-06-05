@@ -18,7 +18,7 @@ epub: clean version
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
 	bookmanager $(NAME).yaml epub
-	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+	cp dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
 draft: clean version
 	mkdir -p dest
@@ -26,6 +26,9 @@ draft: clean version
 	bookmanager $(NAME)-draft.yaml get
 	$(OPEN_EPUB) dest/vonLaszewski-$(NAME)-draft.epub
 
+p: epub
+	bookmanager $(NAME).yaml pdf
+	cp dest/vonLaszewski-$(NAME).pdf $(FINAL)/docs
 
 pdf:
 	ebook-convert \

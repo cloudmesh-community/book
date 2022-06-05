@@ -16,6 +16,10 @@ epub: clean version
 	bookmanager $(NAME).yaml epub
 	# cp dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
+p: epub
+	bookmanager $(NAME).yaml pdf
+	#mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+
 pdf: clean
 	mkdir dest
 	bookmanager $(NAME).yaml get
