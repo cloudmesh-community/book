@@ -17,7 +17,7 @@ proceedings: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-proceedings.yaml get
-	mv dest/vonLaszewski-$(NAME)-proceedings.epub $(FINAL)/docs
+	cp dest/vonLaszewski-$(NAME)-proceedings.epub $(FINAL)/docs
 	-killall Books
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-proceedings.epub
 
@@ -25,7 +25,7 @@ draft: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-draft.yaml get
-	mv dest/vonLaszewski-$(NAME)-draft.epub $(FINAL)/docs
+	cp dest/vonLaszewski-$(NAME)-draft.epub $(FINAL)/docs
 	-killall Books
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-draft.epub
 
@@ -33,7 +33,7 @@ syllabus: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME)-syllabus.yaml get
-	mv dest/vonLaszewski-$(NAME)-syllabus.epub $(FINAL)/docs
+	cp dest/vonLaszewski-$(NAME)-syllabus.epub $(FINAL)/docs
 	-killall Books
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME)-syllabus.epub
 	#killall Books
@@ -43,7 +43,7 @@ epub: clean fonts version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
-	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+	cp dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
 dest: clean fonts version
 	mkdir -p dest
@@ -53,7 +53,12 @@ dest: clean fonts version
 	  dest/vonLaszewski-$(NAME).epub \
 	  dest/vonLaszewski-$(NAME).pdf
 
-pdf:
+pdf: epub
+	bookmanager $(NAME).yaml pdf
+	cp dest/vonLaszewski-$(NAME).pdf $(FINAL)/docs
+
+
+epub-:
 	ebook-convert \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf

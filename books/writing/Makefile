@@ -26,11 +26,11 @@ draft: clean version
 	bookmanager $(NAME)-draft.yaml get
 	$(OPEN_EPUB) dest/vonLaszewski-$(NAME)-draft.epub
 
-p: epub
+pdf: epub
 	bookmanager $(NAME).yaml pdf
 	cp dest/vonLaszewski-$(NAME).pdf $(FINAL)/docs
 
-pdf:
+epub-pdf:
 	ebook-convert \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf

@@ -11,7 +11,7 @@ You will see something like the following:
 
 ```python
 $ python
-Python 3.10.2 (main, Jan 18 2022, 10:10:24) [GCC 9.3.0] on linux
+Python 3.10.5 (main, Jan 18 2022, 10:10:24) [GCC 9.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```

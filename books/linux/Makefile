@@ -16,11 +16,11 @@ epub: clean version
 	bookmanager $(NAME).yaml epub
 	# cp dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
-p: epub
+pdf: epub
 	bookmanager $(NAME).yaml pdf
-	#mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+	cp dest/vonLaszewski-$(NAME).pdf $(FINAL)/docs
 
-pdf: clean
+old-pdf: clean
 	mkdir dest
 	bookmanager $(NAME).yaml get
 	cat $(HOME)/bib/*.bib > dest/all.bib
@@ -47,11 +47,6 @@ pdf: clean
 	    -o vonLaszewski-linux.pdf \
 	    title-latex.md title.tex book.md
 
-
-
-
-
-
 xxx:
 	${PANDOC} --toc --toc-depth=6  --number-sections --verbose \
 	    --filter pandoc-crossref \
@@ -67,7 +62,6 @@ xxx:
 	    book/REFERENCES/HEADER-REFERENCES.md \
 	    book/REFERENCES/empty.md \
 	    book/metadata.txt
-
 
 ooo:
 

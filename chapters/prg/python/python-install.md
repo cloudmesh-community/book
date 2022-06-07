@@ -93,7 +93,7 @@ $ python3 --version
 $ python3.10 --version
 ```
 
-If one ov the versions returns 3.10.2 you are all set. However if not
+If one ov the versions returns 3.10.5 you are all set. However if not
 we recommend you update your python version as you can benefit from
 newer version while either installing them through python.org or
 adding them as follows:
@@ -113,12 +113,12 @@ Now you can verify the version with
 $ python3.10 --version
 ```
 
-which should be `3.10.2` or newer.
+which should be `3.10.5` or newer.
 
 Now we will create a new virtual environment:
 
 ```bash
-$ python3.10 -m venv --without-pip ~/ENV3
+$ python3.10 -m venv ~/ENV3
 ```
 Now you must edit the `~/.bashrc` file and add the following line at the end:
 
@@ -133,16 +133,7 @@ Now activate the virtual environment using:
 $ source ~/.bashrc
 ```
 
-You can install the pip for the virtual environment with the commands:
-
-```bash
-$ curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-$ python get-pip.py
-$ rm get-pip.py
-$ pip install -U pip
-```
-
-## Python 3.10.2 on Ubuntu 20.04 from Source
+## Python 3.10.5 on Ubuntu 20.04 from Source
 
 We can also install python from source. We have seen perfomance
 improvements in some systems when we compilled it from source compared
@@ -158,7 +149,7 @@ nproc
 Here the full instalation script
 
 ```bash
-$ PYTHON_VESRION="3.10.2"
+$ PYTHON_VESRION="3.10.5"
 $ CORES=`nproc`
 $ sudo apt-get update -y
 $ sudo apt-get upgrade -y
@@ -182,9 +173,9 @@ $ which pip
 
 The which commands should have the directory anme ENV3 in it.
 
-## Python 3.10.2 on Windows 10
+## Python 3.10.5 on Windows 10
 
-Python 3.10.2 can be installed on Windows 10 using:
+Python 3.10.5 can be installed on Windows 10 using:
 <https://www.python.org/downloads>
 
 Let us assume you choose the Web-based installer than you click on the
@@ -201,7 +192,7 @@ python --version
 
 
 However, if you have installed conda for some reason, you need to read up on
-how to install 3.10.2 Python in conda or identify how to run conda and
+how to install 3.10.5 Python in conda or identify how to run conda and
 python.org at the same time. We often see others are giving the wrong
 installation instructions. Please also be aware that when you uninstall conda
 it is not sufficient to just delete it. You will have to make sure that you unset
@@ -387,7 +378,7 @@ Once you have installed conda, you can  install Python 3.10 in a virtual environ
 with conda please use 
 
 ```bash
-$ conda create -n ENV3 -c conda-forge python=3.10.2 pip
+$ conda create -n ENV3 -c conda-forge python=3.10.5 pip
 ```
 
 Optionally, you can omit the python version to get the latest
@@ -450,7 +441,7 @@ $ pip --version
 If you installed everything correctly, you should see the below versions or newer for each tool:
 
 ```
-Python 3.10.2
+Python 3.10.5
 pip 21.3.1
 ```
 

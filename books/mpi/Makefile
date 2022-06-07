@@ -10,7 +10,7 @@ epub: clean version
 	mkdir -p dest
 	cat $(HOME)/bib/*.bib > dest/all.bib
 	bookmanager $(NAME).yaml get
-	mv dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+	cp dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
 
 draft: clean version
 	mkdir -p dest
@@ -18,8 +18,11 @@ draft: clean version
 	bookmanager $(NAME)-draft.yaml get
 	open dest/vonLaszewski-$(NAME)-draft.epub
 
+pdf: epub
+	bookmanager $(NAME).yaml pdf
+	cp dest/vonLaszewski-$(NAME).pdf $(FINAL)/docs
 
-pdf:
+epub-pdf:
 	ebook-convert \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
 	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf

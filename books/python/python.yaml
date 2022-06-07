@@ -31,7 +31,7 @@ BOOK:
     - "{file.chapter}/prg/python/python-intro.md"
   - INSTALLATION:
     - "{file.chapter}/prg/python/python-install.md"
-    - "{file.chapter}/prg/python/python-install-pyenv.md"
+    # - "{file.chapter}/prg/python/python-install-pyenv.md"
   - FIRST_STEPS:
     - "{file.chapter}/prg/python/python-interactive.md"
     - "{file.chapter}/prg/python/python-editor.md"
