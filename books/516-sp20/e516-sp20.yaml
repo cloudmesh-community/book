@@ -16,7 +16,7 @@ metadata:
   rights: (c) Gregor von Laszewski, 2020
 git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
-  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/master/bookmanager/template"
+  "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/main/bookmanager/template"
 file:
   "bookmanager": "file://../../bookmanager/bookmanager/template"
   "chapter": "file://../../chapters"
