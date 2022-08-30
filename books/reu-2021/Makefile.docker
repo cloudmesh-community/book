@@ -1,0 +1,76 @@
+NAME=reu-2021
+#NAME=222
+REU_BOOK_DIR=$(realpath .)
+BOOK=${CM}/book
+FINAL=${CM}/pub
+UID=$(shell id -u)
+GID=$(shell id -g)
+PWD=$(shell pwd)
+HOME=$(shell echo $$HOME | sed 's,\\\,/,g')
+VERSION=latest
+# FIRST_DIR=/cm
+FIRST_DIR=/cm/book/books/reu-2021
+WIN_FIRST_DIR=//cm//book//books//reu-2021
+CM=$(shell find ~ -type d -name 'cm' | head -n 1)
+USERNAME=$(shell basename $$HOME)
+# BOOKMANAGER_COMMAND=bookmanager
+BOOKMANAGER_COMMAND=docker run --user ${UID}:${GID} --volume="${CM}:/cm" --workdir=$(FIRST_DIR) -it cloudmesh/bookmanager:latest bookmanager
+
+ifeq ($(OS),Windows_NT)     # is Windows_NT on XP, 2000, 7, Vista, 10...
+    detected_OS=Windows
+    BOOKMANAGER_COMMAND=docker run --volume="//c//Users//${USERNAME}//cm://cm" --workdir=$(WIN_FIRST_DIR) -it cloudmesh/bookmanager:latest bookmanager
+else
+    detected_OS=$(shell uname)  # same as "uname -s"
+endif
+include ../makefile.sys
+
+all: epub pdf authors
+
+epub: clean fonts version
+	mkdir -p dest
+	cat $(HOME)/cm/book/bib/*.bib > dest/all.bib
+	$(BOOKMANAGER_COMMAND) $(NAME).yaml get
+	$(BOOKMANAGER_COMMAND) $(NAME).yaml epub
+	cp dest/vonLaszewski-$(NAME).epub $(FINAL)/docs
+
+pdf: epub
+	$(BOOKMANAGER_COMMAND) $(NAME).yaml pdf
+	cp dest/vonLaszewski-$(NAME).pdf $(FINAL)/docs
+
+epub-pdf:
+	ebook-convert \
+	  $(FINAL)/docs/vonLaszewski-$(NAME).epub \
+	  $(FINAL)/docs/vonLaszewski-$(NAME).pdf
+
+dest: clean fonts version
+	mkdir -p dest
+	cat $(HOME)/bib/*.bib > dest/all.bib
+	$(BOOKMANAGER_COMMAND) $(NAME).yaml get
+	ebook-convert \
+	  dest/vonLaszewski-$(NAME).epub \
+	  dest/vonLaszewski-$(NAME).pdf
+
+bib:
+	mkdir -p dest
+	cp $(HOME)/bib/*.bib dest
+
+version:
+	TZ=":US/Eastern"; date > $(HOME)/cm/book/chapters/version.md
+
+view:
+	-killall Books
+	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME).epub
+
+authors:
+	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
+
+fonts:
+	#mkdir -p dest/book/
+	#-cp -r ../../../bookmanager/bookmanager/template/epub/fonts dest/book/fonts
+	echo "ignoring font embedding"
+
+clean:
+
+	rm -rf dest
+
+include ../Makefile.bibtex
