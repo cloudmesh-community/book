@@ -67,7 +67,7 @@ prefs = {
 options.add_experimental_option('prefs', prefs)
 options.add_argument('kiosk-printing')
 
-driver = webdriver.Chrome(executable_path="chromedriver.exe", options=options)
+driver = webdriver.Chrome(options=options)
 
 driver.get("https://cybertraining-dsc.github.io/report/printview/")
 driver.minimize_window()
@@ -80,14 +80,12 @@ driver.quit()
 Shell.run('mv "Reports _ Cybertraining.pdf" "Reports_Cybertraining.pdf"')
 #Shell.open('./Reports_Cybertraining.pdf')
 
-current_dir = Shell.map_filename('~/cm/book/books/reu-2021').path
-os.chdir(current_dir)
 dest_dir = Shell.map_filename('./dest').path
-if os.path.exists(dest_dir):
-    Shell.run('rm -rf ./dest')
 
-Shell.mkdir('dest')
-Shell.run('make -f Makefile.docker epub')
+r = Shell.run('docker version')
+if 'not found' not in str(r):
+    Shell.run('make -f Makefile.docker epub')
+
 Shell.copy('./dest/book/cover.png', '.')
 #Shell.run('wget -O reu2021.pdf
 # https://cybertraining-dsc.github.io/docs/pub/reu2021.pdf')
@@ -98,7 +96,7 @@ Shell.run('img2pdf cover.png -o cover.pdf')
 # pdfs = ['cover.pdf', 'Reports_Cybertraining.pdf']
 
 try:
-    r = Shell.run('gs')
+    r = Shell.run('gs -h')
 except Exception as e:
     Console.error('gs not installed. Attempting install now')
     if os_is_linux():
