@@ -8,3 +8,7 @@ emoji
 ebooklib
 cyberaide-bookmanager
 PyGithub
+chromedriver_autoinstaller
+selenium
+ghostscript
+img2pdf

@@ -32,7 +32,19 @@ def readfile(filename):
         return stream.read()
 
 requiers = """
+oyaml
+treelib
+docopt
+mkdocs
+emoji
+ebooklib
+cyberaide-bookmanager
+PyGithub
 recommonmark
+chromedriver_autoinstaller
+selenium
+ghostscript
+img2pdf
 """.splitlines()
 
 requiers_cloudmesh = """
