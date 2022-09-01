@@ -72,7 +72,6 @@ driver = webdriver.Chrome(options=options)
 driver.get("https://cybertraining-dsc.github.io/report/printview/")
 driver.minimize_window()
 
-# This gets saved in my downloads folder
 driver.execute_script("print();return false;")
 
 driver.quit()
@@ -91,8 +90,6 @@ Shell.copy('./dest/book/cover.png', '.')
 # https://cybertraining-dsc.github.io/docs/pub/reu2021.pdf')
 
 Shell.run('img2pdf cover.png -o cover.pdf')
-# Shell.run('gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress '
-#           '-sOutputFile=REU2021.pdf cover.pdf Reports_Cybertraining.pdf')
 # pdfs = ['cover.pdf', 'Reports_Cybertraining.pdf']
 
 try:
