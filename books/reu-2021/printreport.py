@@ -34,8 +34,6 @@ driver.minimize_window()
 options = webdriver.ChromeOptions()
 options.headless = False
 
-options.add_argument("--kiosk")
-
 current_dir = Shell.map_filename('.').path
 current_dir = pathlib.Path(current_dir).as_posix()
 
@@ -64,6 +62,7 @@ prefs = {
     "download.safebrowsing.enabled": True
 }
 options.add_experimental_option('prefs', prefs)
+options.add_argument("--kiosk")
 options.add_argument('--kiosk-printing')
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
 options.add_argument('--disable-software-rasterizer')
