@@ -34,7 +34,6 @@ driver.minimize_window()
 options = webdriver.ChromeOptions()
 options.headless = False
 
-options.add_argument("--kiosk-printing")
 options.add_argument("--kiosk")
 
 current_dir = Shell.map_filename('.').path
@@ -65,9 +64,13 @@ prefs = {
     "download.safebrowsing.enabled": True
 }
 options.add_experimental_option('prefs', prefs)
-options.add_argument('kiosk-printing')
+options.add_argument('--kiosk-printing')
+options.add_experimental_option("excludeSwitches", ["enable-logging"])
+options.add_argument('--disable-software-rasterizer')
 
 driver = webdriver.Chrome(options=options)
+
+driver.set_script_timeout(60)
 
 driver.get("https://cybertraining-dsc.github.io/report/printview/")
 driver.minimize_window()
@@ -81,8 +84,16 @@ Shell.run('mv "Reports _ Cybertraining.pdf" "Reports_Cybertraining.pdf"')
 
 dest_dir = Shell.map_filename('./dest').path
 
-r = Shell.run('docker version')
-if 'not found' not in str(r):
+i_can_run_docker = True
+r = None
+try:
+    r = Shell.run('docker version')
+except Exception as e:
+    i_can_run_docker = False
+    print(e.output)
+    if 'must be run with elevated privileges' in str(e.output):
+        Console.error('Terminal must be admin. Assuming dest dir exists...')
+if 'not found' not in str(r) and i_can_run_docker:
     Shell.run('make -f Makefile.docker epub')
 
 Shell.copy('./dest/book/cover.png', '.')
