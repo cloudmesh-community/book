@@ -62,6 +62,9 @@ view:
 	-killall Books
 	$(OPEN_EPUB) $(FINAL)/docs/vonLaszewski-$(NAME).epub
 
+view-pdf:
+	gopen $(FINAL)/docs/vonLaszewski-$(NAME).pdf
+
 authors:
 	$(HOME)/bin/authors.py > $(HOME)/chapters/authors.md
 

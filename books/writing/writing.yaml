@@ -13,7 +13,7 @@ metadata:
   stylesheet: "epub.css"
   dest: "./dest/book"
   filename: "vonLaszewski-writing.epub"
-  rights: (c) Gregor von Laszewski, 2018, 2019
+  rights: (c) Gregor von Laszewski, 2018-2022
 git:
   "book": "https://raw.githubusercontent.com/cloudmesh-community/book/master/chapters"
   "credit": "https://raw.githubusercontent.com/cyberaide/bookmanager/main/bookmanager/template"

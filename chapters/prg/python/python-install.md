@@ -34,6 +34,24 @@ can certainly do Python on a $35-$75 Raspberry PI, but you probably will not
 be able to run PyCharm. There are many alternative editors with less
 memory footprint available. 
 
+## Python 3.11 from Source
+
+To install Python 3.11 from source you can use the following commands.
+Please note that the parameter behind -j specifies a paralelism for the compile. 
+Please only use the number of processors for your computer.
+
+```bash
+cd
+mkdir tmp
+cd tmp
+wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz
+tar xvf Python-3.11.0.tgz 
+cd Python-3.11.0/
+./configure --enable-optimizations
+make -S -j 16
+sudo make altinstall
+```
+
 ## Python 3.10
 
 Here we discuss how to install Python 3.10 or newer on your operating system. It
